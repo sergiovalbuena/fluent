@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
 import { Progress } from '@/components/ui/progress'
 import { ArrowRight, BookOpen, ChevronRight, Flame, Star, Target, Zap } from 'lucide-react'
@@ -22,12 +22,12 @@ type Module = {
 const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
 const weekActivity = [0, 0, 0, 0, 0, 0, 0]
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.06, duration: 0.4, ease: 'easeOut' },
+    transition: { delay: i * 0.06, duration: 0.4, ease: [0.25, 0.1, 0.25, 1] },
   }),
 }
 
