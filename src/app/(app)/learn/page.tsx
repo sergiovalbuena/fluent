@@ -1,76 +1,77 @@
 import { createClient } from '@/lib/supabase/server'
-import Link from 'next/link'
-import { Progress } from '@/components/ui/progress'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { PathMap, type PathNode } from '@/components/learn/path-map'
+
+const LANGUAGE_NAMES: Record<string, { name: string; flag: string }> = {
+  es: { name: 'Spanish', flag: '🇪🇸' },
+  fr: { name: 'French', flag: '🇫🇷' },
+  pt: { name: 'Portuguese', flag: '🇧🇷' },
+  en: { name: 'English', flag: '🇺🇸' },
+  de: { name: 'German', flag: '🇩🇪' },
+  it: { name: 'Italian', flag: '🇮🇹' },
+  ja: { name: 'Japanese', flag: '🇯🇵' },
+  zh: { name: 'Chinese', flag: '🇨🇳' },
+}
 
 export default async function LearnPage() {
   const supabase = await createClient()
 
-  const { data: lessons } = await supabase
+  // Resolve user's active language (fallback to 'es')
+  const { data: { user } } = await supabase.auth.getUser()
+  let languageCode = 'es'
+  if (user) {
+    const { data: activeLang } = await supabase
+      .from('user_languages')
+      .select('language_code')
+      .eq('user_id', user.id)
+      .eq('is_active', true)
+      .maybeSingle()
+    if (activeLang?.language_code) languageCode = activeLang.language_code
+  }
+
+  const { data } = await supabase
     .from('modules')
     .select('*, lessons(id)')
-    .eq('language_code', 'es')
+    .eq('language_code', languageCode)
     .eq('is_published', true)
     .order('order_index')
 
-  const lessonsWithProgress = (lessons ?? []).map((m: {
+  const modules = data ?? []
+
+  const nodes: PathNode[] = modules.map((m: {
     id: string
     slug: string
     title: string
-    description: string | null
     icon: string
-    icon_color: string
-    lessons: Array<{ id: string }>
-  }) => ({
-    ...m,
-    totalExercises: m.lessons?.length ?? 0,
-    completedExercises: 0,
+    lessons: { id: string }[]
+  }, i: number) => ({
+    id: m.id,
+    slug: m.slug,
+    title: m.title,
+    icon: m.icon,
     progress: 0,
+    state: i === 0 ? 'current' : 'available',
   }))
 
-  return (
-    <div className="flex flex-col min-h-screen">
-      <AppTopbar title="All Lessons" subtitle={`Spanish · ${lessonsWithProgress.length} lessons`} />
+  const lang = LANGUAGE_NAMES[languageCode] ?? { name: languageCode.toUpperCase(), flag: '🌐' }
 
-      <main className="flex-1 p-4 md:p-8">
-        <div className="max-w-5xl mx-auto">
-          {lessonsWithProgress.length === 0 && (
-            <div className="flex flex-col items-center justify-center py-24 gap-4 text-center">
-              <span className="text-5xl">📚</span>
-              <h2 className="text-xl font-bold">No lessons yet</h2>
-              <p className="text-muted-foreground text-sm">Check back soon for new content.</p>
-            </div>
-          )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-            {lessonsWithProgress.map((lesson: {
-              id: string; slug: string; icon: string; title: string; description: string | null
-              completedExercises: number; totalExercises: number; progress: number
-            }) => (
-              <Link key={lesson.id} href={`/learn/${lesson.slug}`}>
-                <div className="flex flex-col bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all overflow-hidden group">
-                  <div className="w-full bg-primary/5 aspect-video flex items-center justify-center text-5xl group-hover:bg-primary/10 transition-colors">
-                    {lesson.icon}
-                  </div>
-                  <div className="p-4 space-y-3">
-                    <div>
-                      <p className="font-bold text-base">{lesson.title}</p>
-                      {lesson.description && (
-                        <p className="text-muted-foreground text-xs mt-0.5 line-clamp-2">{lesson.description}</p>
-                      )}
-                    </div>
-                    <div className="space-y-1.5">
-                      <div className="flex justify-between text-xs">
-                        <span className="text-muted-foreground">{lesson.completedExercises}/{lesson.totalExercises} exercises</span>
-                        <span className="text-primary font-bold">{lesson.progress}%</span>
-                      </div>
-                      <Progress value={lesson.progress} className="h-1.5 bg-primary/10 [&>div]:bg-primary" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
+  return (
+    <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
+      <AppTopbar
+        title="Learning Path"
+        subtitle={`${lang.flag} ${lang.name}`}
+      />
+
+      <main className="flex-1">
+        {nodes.length === 0 ? (
+          <div className="flex flex-col items-center justify-center py-24 gap-4 text-center px-4">
+            <span className="text-5xl">📚</span>
+            <h2 className="text-xl font-bold">No lessons yet</h2>
+            <p className="text-muted-foreground text-sm">Check back soon for new content.</p>
           </div>
-        </div>
+        ) : (
+          <PathMap nodes={nodes} languageName={lang.name} languageFlag={lang.flag} />
+        )}
       </main>
     </div>
   )
