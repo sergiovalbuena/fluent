@@ -1,8 +1,11 @@
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
-import { HowItWorks } from '@/components/landing/how-it-works'
-import { CountUpStats } from '@/components/landing/stats'
-import { Features } from '@/components/landing/features'
+
+const CountUpStats = dynamic(() => import('@/components/landing/stats').then(m => ({ default: m.CountUpStats })))
+const Features = dynamic(() => import('@/components/landing/features').then(m => ({ default: m.Features })))
+const HowItWorks = dynamic(() => import('@/components/landing/how-it-works').then(m => ({ default: m.HowItWorks })))
 
 const languages = [
   { flag: '🇪🇸', name: 'Spanish', available: true },
@@ -155,10 +158,14 @@ export default function LandingPage() {
       </section>
 
       {/* ── STATS BAR ── */}
-      <CountUpStats />
+      <Suspense fallback={null}>
+        <CountUpStats />
+      </Suspense>
 
       {/* ── FEATURES ── */}
-      <Features />
+      <Suspense fallback={null}>
+        <Features />
+      </Suspense>
 
       {/* ── LANGUAGES ── */}
       <section id="languages" className="py-20 md:py-28 bg-white/50 dark:bg-slate-800/20">
@@ -198,7 +205,9 @@ export default function LandingPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <HowItWorks />
+      <Suspense fallback={null}>
+        <HowItWorks />
+      </Suspense>
 
       {/* ── CTA BANNER ── */}
       <section className="py-20 md:py-28">
