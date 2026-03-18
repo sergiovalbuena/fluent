@@ -19,7 +19,7 @@ export default async function DashboardPage() {
     user
       ? supabase
           .from('user_profiles')
-          .select('streak_count, total_xp')
+          .select('streak_count, total_xp, display_name')
           .eq('user_id', user.id)
           .maybeSingle()
       : Promise.resolve({ data: null }),
@@ -87,6 +87,7 @@ export default async function DashboardPage() {
   return (
     <DashboardContent
       modules={modules}
+      displayName={profileResult.data?.display_name ?? user?.email?.split('@')[0] ?? 'there'}
       stats={{
         streak: profileResult.data?.streak_count ?? 0,
         totalXp: profileResult.data?.total_xp ?? 0,
