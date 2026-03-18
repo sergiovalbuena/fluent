@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { useParams, useRouter } from 'next/navigation'
+import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
@@ -359,6 +360,17 @@ export default function LessonPage() {
 
   // ── Navigation ────────────────────────────────────────────────────────────
 
+  const { resolvedTheme } = useTheme()
+  const isDark = resolvedTheme === 'dark'
+
+  // Dark-mode aware surface colors
+  const surfaceBg      = isDark ? '#1e1a18' : '#ffffff'
+  const borderDefault  = isDark ? 'rgba(255,255,255,0.09)' : '#e2e8f0'
+  const correctBg      = isDark ? 'rgba(34,197,94,0.14)'   : '#f0fdf4'
+  const correctText    = isDark ? '#4ade80'                 : '#15803d'
+  const incorrectBg    = isDark ? 'rgba(239,68,68,0.14)'   : '#fef2f2'
+  const incorrectText  = isDark ? '#f87171'                 : '#b91c1c'
+
   const activityIdx  = ACTIVITIES.findIndex(a => a.key === activity)
   const currentMeta  = ACTIVITIES[activityIdx] ?? ACTIVITIES[0]
   const nextActivity = ACTIVITIES[activityIdx + 1] ?? null
@@ -660,8 +672,8 @@ export default function LessonPage() {
               <div
                 className="w-full flex-1 max-h-72 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-5 p-8 text-center select-none cursor-pointer transition-all duration-300"
                 style={{
-                  backgroundColor: phraseRevealed ? currentMeta.light : '#fff',
-                  border: `1.5px solid ${phraseRevealed ? `${currentMeta.accent}40` : '#f1f5f9'}`,
+                  backgroundColor: phraseRevealed ? `${currentMeta.accent}14` : surfaceBg,
+                  border: `1.5px solid ${phraseRevealed ? `${currentMeta.accent}45` : borderDefault}`,
                 }}
                 onClick={() => !phraseRevealed && setPhraseRevealed(true)}
               >
@@ -746,7 +758,7 @@ export default function LessonPage() {
               {/* Question card */}
               <div
                 className="rounded-3xl p-5 border shadow-sm"
-                style={{ backgroundColor: currentMeta.light, borderColor: `${currentMeta.accent}25` }}
+                style={{ backgroundColor: `${currentMeta.accent}10`, borderColor: `${currentMeta.accent}25` }}
               >
                 <p className="text-base md:text-lg font-bold leading-snug">{questions[qIndex].question}</p>
               </div>
@@ -758,22 +770,22 @@ export default function LessonPage() {
                   const isCorrect  = i === questions[qIndex].correct
                   const show       = checked
 
-                  let borderColor = '#e2e8f0'
-                  let bgColor     = '#fff'
+                  let borderColor = borderDefault
+                  let bgColor     = surfaceBg
                   let textColor   = 'inherit'
-                  let badgeBg     = '#f1f5f9'
-                  let badgeColor  = '#94a3b8'
+                  let badgeBg     = isDark ? 'rgba(255,255,255,0.08)' : '#f1f5f9'
+                  let badgeColor  = isDark ? '#94a3b8' : '#94a3b8'
 
                   if (!show && isSelected) {
                     borderColor = currentMeta.accent
-                    bgColor     = `${currentMeta.accent}12`
+                    bgColor     = `${currentMeta.accent}14`
                     badgeBg     = currentMeta.accent
                     badgeColor  = '#fff'
                   } else if (show && isCorrect) {
-                    borderColor = COLOR_CORRECT; bgColor = '#f0fdf4'; textColor = '#15803d'
+                    borderColor = COLOR_CORRECT; bgColor = correctBg; textColor = correctText
                     badgeBg     = COLOR_CORRECT; badgeColor = '#fff'
                   } else if (show && isSelected && !isCorrect) {
-                    borderColor = COLOR_INCORRECT; bgColor = '#fef2f2'; textColor = '#b91c1c'
+                    borderColor = COLOR_INCORRECT; bgColor = incorrectBg; textColor = incorrectText
                     badgeBg     = COLOR_INCORRECT; badgeColor = '#fff'
                   }
 
@@ -1001,9 +1013,9 @@ export default function LessonPage() {
                 <div
                   className="rounded-2xl p-3 border text-sm font-semibold text-center"
                   style={{
-                    backgroundColor: arrangeIsCorrect ? '#f0fdf4' : '#fef2f2',
+                    backgroundColor: arrangeIsCorrect ? correctBg : incorrectBg,
                     borderColor: arrangeIsCorrect ? COLOR_CORRECT : COLOR_INCORRECT,
-                    color: arrangeIsCorrect ? '#15803d' : '#b91c1c',
+                    color: arrangeIsCorrect ? correctText : incorrectText,
                   }}
                 >
                   {arrangeIsCorrect
@@ -1024,9 +1036,9 @@ export default function LessonPage() {
                       disabled={arrangeChecked || isPicked}
                       className="px-3 py-1.5 rounded-xl text-sm font-semibold border-2 transition-all active:scale-95"
                       style={{
-                        borderColor: isPicked ? '#e2e8f0' : `${currentMeta.accent}60`,
-                        backgroundColor: isPicked ? '#f8fafc' : 'white',
-                        color: isPicked ? '#cbd5e1' : 'inherit',
+                        borderColor: isPicked ? borderDefault : `${currentMeta.accent}60`,
+                        backgroundColor: isPicked ? (isDark ? 'rgba(255,255,255,0.03)' : '#f8fafc') : surfaceBg,
+                        color: isPicked ? (isDark ? '#475569' : '#cbd5e1') : 'inherit',
                         opacity: isPicked ? 0.4 : 1,
                       }}
                     >
@@ -1102,7 +1114,7 @@ export default function LessonPage() {
               {/* Prompt card */}
               <div
                 className="rounded-3xl p-6 border shadow-sm text-center"
-                style={{ backgroundColor: currentMeta.light, borderColor: `${currentMeta.accent}25` }}
+                style={{ backgroundColor: `${currentMeta.accent}10`, borderColor: `${currentMeta.accent}25` }}
               >
                 <p className="text-xl md:text-2xl font-bold leading-snug">{translateItems[translateIndex].prompt}</p>
                 {translateItems[translateIndex].hint && (
@@ -1133,9 +1145,9 @@ export default function LessonPage() {
                 <div
                   className="rounded-2xl p-4 border text-sm"
                   style={{
-                    backgroundColor: translateIsCorrect ? '#f0fdf4' : '#fef2f2',
+                    backgroundColor: translateIsCorrect ? correctBg : incorrectBg,
                     borderColor: translateIsCorrect ? COLOR_CORRECT : COLOR_INCORRECT,
-                    color: translateIsCorrect ? '#15803d' : '#b91c1c',
+                    color: translateIsCorrect ? correctText : incorrectText,
                   }}
                 >
                   {translateIsCorrect ? (
