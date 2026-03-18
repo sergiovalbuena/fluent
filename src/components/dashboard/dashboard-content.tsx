@@ -16,8 +16,15 @@ export type Module = {
   progress: number
 }
 
+export type DashboardStats = {
+  streak: number
+  totalXp: number
+  lessonsCompleted: number
+  avgAccuracy: number | null
+  weekActivity: number[]
+}
+
 const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
-const weekActivity = [0, 0, 0, 0, 0, 0, 0]
 
 // Bento stagger container
 const bentoContainer: Variants = {
@@ -33,7 +40,7 @@ const bentoTile: Variants = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.52, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.52, ease: [0.22, 1, 0.36, 1] as const },
   },
 }
 
@@ -41,13 +48,15 @@ const bentoTile: Variants = {
 const card =
   'bg-white dark:bg-[#2c1a12] rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_8px_rgba(0,0,0,0.06),_0_1px_2px_rgba(0,0,0,0.04)]'
 
-export function DashboardContent({ modules }: { modules: Module[] }) {
+export function DashboardContent({ modules, stats }: { modules: Module[]; stats: DashboardStats }) {
   const current = modules[0] ?? null
   const allModules = modules
 
   const hour = new Date().getHours()
   const greeting =
     hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening'
+
+  const weekDaysActive = stats.weekActivity.filter(v => v > 0).length
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
@@ -108,7 +117,7 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
                           className="h-full bg-primary rounded-full"
                           initial={{ width: 0 }}
                           animate={{ width: `${current.progress}%` }}
-                          transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                          transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
                         />
                       </div>
                     </div>
@@ -125,7 +134,6 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
 
           {/* ─────────────────────────────────────────────────────────────────
               STREAK TILE
-              1/2 cols mobile · 1/4 cols desktop
           ───────────────────────────────────────────────────────────────── */}
           <motion.div variants={bentoTile} className="col-span-1">
             <div className={`${card} relative overflow-hidden p-5 flex flex-col items-center justify-center gap-1 min-h-[192px]`}>
@@ -133,11 +141,13 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
               <div className="absolute bottom-0 inset-x-0 h-0.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
               <span className="text-[2.5rem] leading-none mb-1 select-none">🔥</span>
-              <p className="text-[2.5rem] font-bold leading-none text-slate-900 dark:text-white">0</p>
+              <p className="text-[2.5rem] font-bold leading-none text-slate-900 dark:text-white">{stats.streak}</p>
               <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-0.5">day streak</p>
-              <p className="text-[10px] text-slate-400 dark:text-slate-500 text-center mt-3 px-3 leading-relaxed">
-                Complete a lesson to start your streak
-              </p>
+              {stats.streak === 0 && (
+                <p className="text-[10px] text-slate-400 dark:text-slate-500 text-center mt-3 px-3 leading-relaxed">
+                  Complete a lesson to start your streak
+                </p>
+              )}
             </div>
           </motion.div>
 
@@ -150,7 +160,7 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
                 <Zap size={15} className="text-yellow-500" />
               </div>
               <div>
-                <p className="text-2xl font-bold leading-none text-slate-900 dark:text-white">0</p>
+                <p className="text-2xl font-bold leading-none text-slate-900 dark:text-white">{stats.totalXp}</p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">Total XP</p>
               </div>
             </div>
@@ -165,7 +175,7 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
                 <BookOpen size={15} className="text-blue-500" />
               </div>
               <div>
-                <p className="text-2xl font-bold leading-none text-slate-900 dark:text-white">0</p>
+                <p className="text-2xl font-bold leading-none text-slate-900 dark:text-white">{stats.lessonsCompleted}</p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">Lessons done</p>
               </div>
             </div>
@@ -180,7 +190,9 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
                 <Target size={15} className="text-emerald-500" />
               </div>
               <div>
-                <p className="text-2xl font-bold leading-none text-slate-900 dark:text-white">—</p>
+                <p className="text-2xl font-bold leading-none text-slate-900 dark:text-white">
+                  {stats.avgAccuracy != null ? `${stats.avgAccuracy}%` : '—'}
+                </p>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">Accuracy</p>
               </div>
             </div>
@@ -188,7 +200,6 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
 
           {/* ─────────────────────────────────────────────────────────────────
               ACTIVITY CHART — Weekly
-              2/2 mobile · 1/4 desktop (sits in the same stat row)
           ───────────────────────────────────────────────────────────────── */}
           <motion.div variants={bentoTile} className="col-span-1 md:col-span-1">
             <div className={`${card} p-4 md:p-5 flex flex-col gap-3`}>
@@ -196,13 +207,13 @@ export function DashboardContent({ modules }: { modules: Module[] }) {
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
                   This week
                 </p>
-                <span className="text-[10px] text-slate-400 dark:text-slate-500">0/7</span>
+                <span className="text-[10px] text-slate-400 dark:text-slate-500">{weekDaysActive}/7</span>
               </div>
               <div className="flex items-end gap-1 h-8">
-                {weekActivity.map((v, i) => (
-                  <div key={DAYS[i]} className="flex flex-col items-center gap-0.5 flex-1">
+                {stats.weekActivity.map((v, i) => (
+                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-0.5 flex-1">
                     <div
-                      style={{ height: `${Math.max((v / 1) * 26, 3)}px` }}
+                      style={{ height: `${Math.max((v / Math.max(...stats.weekActivity, 1)) * 26, 3)}px` }}
                       className={`w-full rounded-[3px] transition-all ${
                         v > 0 ? 'bg-primary' : 'bg-slate-100 dark:bg-white/[0.06]'
                       }`}

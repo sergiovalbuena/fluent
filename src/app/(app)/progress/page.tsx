@@ -1,45 +1,101 @@
-'use client'
-
+import { createClient } from '@/lib/supabase/server'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { BookOpen, Flame, Star, Target, TrendingUp, Zap } from 'lucide-react'
 import Link from 'next/link'
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-// Placeholder data — will be replaced with real Supabase data once auth is active
-const streak = 0
-const longestStreak = 0
-const totalXp = 0
-const totalCompleted = 0
-const avgScore = 0
-const wordsLearned = 0
-const dailyValues = [0, 0, 0, 0, 0, 0, 0]
-const maxVal = Math.max(...dailyValues, 1)
-
-const recentProgress: Array<{
-  id: string
-  completed_at: string | null
-  score: number | null
-  lesson: { title: string; type: string; module: { title: string } } | null
-}> = []
-
 const LESSON_TYPE_ICON: Record<string, string> = {
   vocabulary: '🗂️',
   phrases: '💬',
   qa: '❓',
   story: '📖',
+  arrange: '🔀',
+  translate: '✍️',
 }
 
-const milestones = [
-  { id: 'first-lesson',  label: '1st Lesson',  target: 1,   icon: '🎯', achieved: totalCompleted >= 1 },
-  { id: 'ten-lessons',   label: '10 Lessons',  target: 10,  icon: '📚', achieved: totalCompleted >= 10 },
-  { id: 'fifty-xp',      label: '50 XP',       target: 50,  icon: '⭐', achieved: totalXp >= 50 },
-  { id: 'week-streak',   label: '7-Day Streak', target: 7,  icon: '🔥', achieved: longestStreak >= 7 },
-  { id: 'fifty-words',   label: '50 Words',    target: 50,  icon: '🗂️', achieved: wordsLearned >= 50 },
-  { id: 'hundred-xp',   label: '100 XP',       target: 100, icon: '🏆', achieved: totalXp >= 100 },
-]
+type ProgressRow = {
+  lesson_id: string
+  completed_at: string | null
+  score: number | null
+  lesson: { title: string; type: string; module: { title: string } } | null
+}
 
-export default function ProgressPage() {
+export default async function ProgressPage() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  let streak = 0
+  let longestStreak = 0
+  let totalXp = 0
+  let totalCompleted = 0
+  let avgScore = 0
+  let wordsLearned = 0
+  let dailyValues = [0, 0, 0, 0, 0, 0, 0]
+  let recentProgress: ProgressRow[] = []
+
+  if (user) {
+    const [profileResult, progressResult] = await Promise.all([
+      supabase
+        .from('user_profiles')
+        .select('streak_count, longest_streak, total_xp')
+        .eq('user_id', user.id)
+        .maybeSingle(),
+      supabase
+        .from('user_progress')
+        .select('lesson_id, completed_at, score, lesson:lessons(title, type, module:modules(title))')
+        .eq('user_id', user.id)
+        .order('completed_at', { ascending: false }),
+    ])
+
+    streak = profileResult.data?.streak_count ?? 0
+    longestStreak = profileResult.data?.longest_streak ?? 0
+    totalXp = profileResult.data?.total_xp ?? 0
+
+    const allProgress = (progressResult.data ?? []) as unknown as ProgressRow[]
+    recentProgress = allProgress.slice(0, 10)
+
+    totalCompleted = allProgress.filter(p => p.completed_at !== null).length
+
+    const scores = allProgress
+      .filter(p => p.score !== null)
+      .map(p => p.score as number)
+    avgScore = scores.length > 0
+      ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
+      : 0
+
+    const vocabDone = allProgress.filter(p => p.lesson?.type === 'vocabulary' && p.completed_at).length
+    wordsLearned = vocabDone * 8
+
+    // Weekly activity (current week Mon–Sun)
+    const today = new Date()
+    const dow = today.getDay()
+    const startOfWeek = new Date(today)
+    startOfWeek.setDate(today.getDate() - ((dow + 6) % 7))
+    startOfWeek.setHours(0, 0, 0, 0)
+
+    dailyValues = [0, 0, 0, 0, 0, 0, 0]
+    allProgress.forEach(p => {
+      if (!p.completed_at) return
+      const d = new Date(p.completed_at)
+      if (d >= startOfWeek) {
+        const idx = (d.getDay() + 6) % 7
+        dailyValues[idx]++
+      }
+    })
+  }
+
+  const maxVal = Math.max(...dailyValues, 1)
+
+  const milestones = [
+    { id: 'first-lesson',  label: '1st Lesson',   target: 1,   icon: '🎯', achieved: totalCompleted >= 1 },
+    { id: 'ten-lessons',   label: '10 Lessons',   target: 10,  icon: '📚', achieved: totalCompleted >= 10 },
+    { id: 'fifty-xp',      label: '50 XP',        target: 50,  icon: '⭐', achieved: totalXp >= 50 },
+    { id: 'week-streak',   label: '7-Day Streak', target: 7,   icon: '🔥', achieved: longestStreak >= 7 },
+    { id: 'fifty-words',   label: '50 Words',     target: 50,  icon: '🗂️', achieved: wordsLearned >= 50 },
+    { id: 'hundred-xp',   label: '100 XP',        target: 100, icon: '🏆', achieved: totalXp >= 100 },
+  ]
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
@@ -85,12 +141,12 @@ export default function ProgressPage() {
           {/* ── Stats grid ── */}
           <div className="grid grid-cols-2 gap-3">
             {[
-              { id: 'streak',   icon: Flame,      label: 'Day Streak',   value: streak,         suffix: '',      color: 'text-orange-500', bg: 'bg-orange-500/10' },
-              { id: 'xp',       icon: Zap,        label: 'Total XP',     value: totalXp,        suffix: '',      color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
-              { id: 'lessons',  icon: BookOpen,   label: 'Lessons Done', value: totalCompleted, suffix: '',      color: 'text-blue-500',   bg: 'bg-blue-500/10'   },
-              { id: 'accuracy', icon: Target,     label: 'Avg Accuracy', value: avgScore,       suffix: '%',     color: 'text-green-500',  bg: 'bg-green-500/10'  },
-              { id: 'words',    icon: Star,       label: 'Words Learned',value: wordsLearned,   suffix: '',      color: 'text-purple-500', bg: 'bg-purple-500/10' },
-              { id: 'best',     icon: TrendingUp, label: 'Best Streak',  value: longestStreak,  suffix: ' days', color: 'text-primary',    bg: 'bg-primary/10'    },
+              { id: 'streak',   icon: Flame,      label: 'Day Streak',    value: streak,         suffix: '',      color: 'text-orange-500', bg: 'bg-orange-500/10' },
+              { id: 'xp',       icon: Zap,        label: 'Total XP',      value: totalXp,        suffix: '',      color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
+              { id: 'lessons',  icon: BookOpen,   label: 'Lessons Done',  value: totalCompleted, suffix: '',      color: 'text-blue-500',   bg: 'bg-blue-500/10'   },
+              { id: 'accuracy', icon: Target,     label: 'Avg Accuracy',  value: avgScore,       suffix: '%',     color: 'text-green-500',  bg: 'bg-green-500/10'  },
+              { id: 'words',    icon: Star,       label: 'Words Learned', value: wordsLearned,   suffix: '',      color: 'text-purple-500', bg: 'bg-purple-500/10' },
+              { id: 'best',     icon: TrendingUp, label: 'Best Streak',   value: longestStreak,  suffix: ' days', color: 'text-primary',    bg: 'bg-primary/10'    },
             ].map(s => (
               <div
                 key={s.id}
@@ -158,8 +214,8 @@ export default function ProgressPage() {
             <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">Recent Lessons</h2>
             {recentProgress.length > 0 ? (
               <div className="space-y-2">
-                {recentProgress.slice(0, 10).map(p => (
-                  <div key={p.id} className="flex items-center gap-3 bg-white dark:bg-slate-800/50 p-4 rounded-2xl border border-primary/5">
+                {recentProgress.map(p => (
+                  <div key={p.lesson_id} className="flex items-center gap-3 bg-white dark:bg-slate-800/50 p-4 rounded-2xl border border-primary/5">
                     <div className="size-10 rounded-xl bg-primary/10 flex items-center justify-center text-lg shrink-0">
                       {LESSON_TYPE_ICON[p.lesson?.type ?? ''] ?? '📝'}
                     </div>
