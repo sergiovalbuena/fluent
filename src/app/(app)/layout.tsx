@@ -6,7 +6,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
       <SidebarNav />
       {/* Offset for sidebar on md+, bottom padding on mobile */}
-      <div className="md:ml-16 lg:ml-56 pb-24 md:pb-0 min-h-screen transition-all duration-300">
+      <div className="md:ml-[60px] pb-24 md:pb-0 min-h-screen">
         {children}
       </div>
       <BottomNav />

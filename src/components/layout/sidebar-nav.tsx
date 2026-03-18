@@ -1,58 +1,85 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, BarChart2, User, RefreshCw, Home } from 'lucide-react'
+import { BookOpen, BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
-import { cn } from '@/lib/utils'
+import {
+  Sidebar,
+  SidebarBody,
+  SidebarLink,
+  useSidebar,
+  type SidebarLinkItem,
+} from '@/components/ui/sidebar'
 
-const navItems = [
-  { href: '/dashboard', icon: Home, label: 'Home' },
-  { href: '/learn', icon: BookOpen, label: 'Lessons' },
-  { href: '/review', icon: RefreshCw, label: 'Review' },
-  { href: '/progress', icon: BarChart2, label: 'Progress' },
-  { href: '/profile', icon: User, label: 'Profile' },
+const navLinks: SidebarLinkItem[] = [
+  { href: '/dashboard', icon: <Home size={20} strokeWidth={1.8} />, label: 'Home' },
+  { href: '/learn', icon: <BookOpen size={20} strokeWidth={1.8} />, label: 'Lessons' },
+  { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: 'Play' },
+  { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: 'Gems' },
+  { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: 'MarIA' },
+  { href: '/review', icon: <RefreshCw size={20} strokeWidth={1.8} />, label: 'Review' },
+  { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: 'Progress' },
+  { href: '/profile', icon: <User size={20} strokeWidth={1.8} />, label: 'Profile' },
 ]
 
-export function SidebarNav() {
+function SidebarContent() {
   const pathname = usePathname()
+  const { open, animate } = useSidebar()
 
   return (
-    <aside className="hidden md:flex fixed left-0 top-0 h-full flex-col border-r border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f] z-30 w-16 lg:w-56 transition-all duration-300">
+    <div className="flex flex-col h-full">
       {/* Logo */}
-      <div className="flex items-center gap-3 px-3 lg:px-5 py-5 border-b border-primary/10">
+      <Link href="/dashboard" className="flex items-center gap-3 px-3 py-5 border-b border-primary/10 mb-2 shrink-0">
         <div className="size-9 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-lg shrink-0">
           F
         </div>
-        <span className="hidden lg:block text-lg font-bold tracking-tight">Fluent</span>
-      </div>
+        <motion.span
+          animate={{
+            opacity: animate ? (open ? 1 : 0) : 1,
+            width: animate ? (open ? 'auto' : 0) : 'auto',
+          }}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
+          className="overflow-hidden whitespace-nowrap text-lg font-bold tracking-tight"
+        >
+          Fluent
+        </motion.span>
+      </Link>
 
-      {/* Nav Items */}
-      <nav className="flex-1 flex flex-col gap-1 p-2 lg:p-3 pt-4">
-        {navItems.map(({ href, icon: Icon, label }) => {
-          const isActive = pathname === href || (href !== '/dashboard' && pathname.startsWith(href + '/'))
+      {/* Nav links */}
+      <nav className="flex-1 flex flex-col gap-1 px-2 pt-1">
+        {navLinks.map(link => {
+          const isActive =
+            pathname === link.href ||
+            (link.href !== '/dashboard' && pathname.startsWith(link.href + '/'))
           return (
-            <Link
-              key={href}
-              href={href}
-              className={cn(
-                'flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all font-medium text-sm',
-                isActive
-                  ? 'bg-primary text-white shadow-md shadow-primary/20'
-                  : 'text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary'
-              )}
-            >
-              <Icon size={20} strokeWidth={isActive ? 2.5 : 1.8} className="shrink-0" />
-              <span className="hidden lg:block">{label}</span>
-            </Link>
+            <SidebarLink
+              key={link.href}
+              link={link}
+              active={isActive}
+            />
           )
         })}
       </nav>
 
       {/* Bottom */}
-      <div className="p-2 lg:p-3 border-t border-primary/10 flex justify-center lg:justify-start lg:px-4">
+      <div className="px-3 pb-4 pt-2 border-t border-primary/10">
         <ThemeToggle />
       </div>
-    </aside>
+    </div>
+  )
+}
+
+export function SidebarNav() {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <Sidebar open={open} setOpen={setOpen}>
+      <SidebarBody className="border-r border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
+        <SidebarContent />
+      </SidebarBody>
+    </Sidebar>
   )
 }

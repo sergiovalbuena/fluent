@@ -1,12 +1,14 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
+import { motion, type MotionProps, AnimatePresence, usePresence, useAnimate } from 'framer-motion'
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
+  Layers, Headphones, Keyboard, Heart, Plus,
 } from 'lucide-react'
 import Link from 'next/link'
 import { AppTopbar } from '@/components/layout/app-topbar'
@@ -143,6 +145,302 @@ function shuffleArray<T>(arr: T[]): T[] {
   return a
 }
 
+// ─── Bento Block primitive ────────────────────────────────────────────────────
+type BlockProps = { className?: string; children?: React.ReactNode } & MotionProps
+
+const Block = ({ className, children, ...rest }: BlockProps) => (
+  <motion.div
+    variants={{
+      initial: { scale: 0.5, y: 50, opacity: 0 },
+      animate: { scale: 1, y: 0, opacity: 1 },
+    }}
+    transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
+    whileTap={{ scale: 0.97 }}
+    className={cn(
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      className
+    )}
+    {...rest}
+  >
+    {children}
+  </motion.div>
+)
+
+// ─── Vocabulary Word List (VanishList-inspired) ───────────────────────────────
+
+type VocabEntry = {
+  id: string | number
+  word: string
+  translation: string
+  learned: boolean
+  favorite: boolean
+}
+
+function VocabRow({
+  entry,
+  onToggleLearned,
+  onToggleFavorite,
+}: {
+  entry: VocabEntry
+  onToggleLearned: (id: VocabEntry['id']) => void
+  onToggleFavorite: (id: VocabEntry['id']) => void
+}) {
+  const [isPresent, safeToRemove] = usePresence()
+  const [scope, animate] = useAnimate()
+
+  useEffect(() => {
+    if (!isPresent) {
+      const exit = async () => {
+        animate('span', { color: '#6ee7b7' }, { duration: 0.1 })
+        await animate(scope.current, { scale: 1.02 }, { duration: 0.1 })
+        await animate(scope.current, { opacity: 0, x: 20 }, { delay: 0.6, duration: 0.2 })
+        safeToRemove()
+      }
+      exit()
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPresent])
+
+  return (
+    <motion.div
+      ref={scope}
+      layout
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.18 }}
+      className="flex items-center gap-3 px-5 py-3 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-primary/[0.03] dark:hover:bg-primary/[0.04] transition-colors group"
+    >
+      <input
+        type="checkbox"
+        checked={entry.learned}
+        onChange={() => onToggleLearned(entry.id)}
+        className="size-4 shrink-0 rounded accent-primary cursor-pointer"
+      />
+      <span className={cn(
+        'flex-1 font-semibold text-sm transition-colors',
+        entry.learned
+          ? 'line-through text-slate-300 dark:text-slate-600'
+          : 'text-slate-900 dark:text-white'
+      )}>
+        {entry.word}
+      </span>
+      <span className={cn(
+        'text-sm transition-colors shrink-0',
+        entry.learned
+          ? 'text-slate-300 dark:text-slate-600'
+          : 'text-slate-400 dark:text-slate-500'
+      )}>
+        {entry.translation}
+      </span>
+      <button
+        onClick={() => onToggleFavorite(entry.id)}
+        className="shrink-0 ml-1 p-0.5 rounded transition-transform active:scale-90"
+      >
+        <Heart
+          size={14}
+          className={cn(
+            'transition-colors',
+            entry.favorite
+              ? 'fill-rose-500 text-rose-500'
+              : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400'
+          )}
+        />
+      </button>
+    </motion.div>
+  )
+}
+
+function VocabWordList({ initialWords }: { initialWords: VocabEntry[] }) {
+  const [entries, setEntries] = useState<VocabEntry[]>(initialWords)
+  const [showForm, setShowForm] = useState(false)
+  const [newWord, setNewWord] = useState('')
+  const [newTranslation, setNewTranslation] = useState('')
+
+  const toggleLearned  = (id: VocabEntry['id']) =>
+    setEntries(pv => pv.map(e => e.id === id ? { ...e, learned: !e.learned } : e))
+
+  const toggleFavorite = (id: VocabEntry['id']) =>
+    setEntries(pv => pv.map(e => e.id === id ? { ...e, favorite: !e.favorite } : e))
+
+  const handleAdd = () => {
+    if (!newWord.trim() || !newTranslation.trim()) return
+    setEntries(pv => [
+      ...pv,
+      { id: Date.now(), word: newWord.trim(), translation: newTranslation.trim(), learned: false, favorite: false },
+    ])
+    setNewWord('')
+    setNewTranslation('')
+    setShowForm(false)
+  }
+
+  const learnedCount  = entries.filter(e => e.learned).length
+  const favCount      = entries.filter(e => e.favorite).length
+
+  return (
+    <div className="flex flex-col h-full min-h-0">
+      {/* Header */}
+      <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Word List</p>
+        <div className="flex items-center gap-3">
+          {favCount > 0 && (
+            <span className="flex items-center gap-1 text-[10px] font-semibold text-rose-400">
+              <Heart size={9} className="fill-rose-400" /> {favCount}
+            </span>
+          )}
+          <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
+            {learnedCount} / {entries.length} learned
+          </span>
+        </div>
+      </div>
+
+      {/* Scrollable list */}
+      <div className="flex-1 overflow-y-auto min-h-0">
+        <AnimatePresence initial={false}>
+          {entries.map(entry => (
+            <VocabRow
+              key={entry.id}
+              entry={entry}
+              onToggleLearned={toggleLearned}
+              onToggleFavorite={toggleFavorite}
+            />
+          ))}
+        </AnimatePresence>
+      </div>
+
+      {/* Add form + button */}
+      <div className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
+        <AnimatePresence>
+          {showForm && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="overflow-hidden"
+            >
+              <div className="p-4 flex flex-col gap-2">
+                <input
+                  value={newWord}
+                  onChange={e => setNewWord(e.target.value)}
+                  onKeyDown={e => e.key === 'Enter' && handleAdd()}
+                  placeholder="Word (e.g. La casa)"
+                  className="w-full rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-slate-50 dark:bg-white/[0.04] px-3 py-2 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-primary/40"
+                />
+                <input
+                  value={newTranslation}
+                  onChange={e => setNewTranslation(e.target.value)}
+                  onKeyDown={e => e.key === 'Enter' && handleAdd()}
+                  placeholder="Translation (e.g. The house)"
+                  className="w-full rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-slate-50 dark:bg-white/[0.04] px-3 py-2 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-primary/40"
+                />
+                <button
+                  onClick={handleAdd}
+                  className="w-full rounded-xl bg-primary text-white text-sm font-bold py-2 hover:opacity-90 active:scale-95 transition-all"
+                >
+                  Add Word
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <button
+          onClick={() => setShowForm(f => !f)}
+          className="w-full flex items-center justify-center gap-1.5 py-3 text-xs font-bold text-slate-400 hover:text-primary transition-colors"
+        >
+          <Plus size={13} className={cn('transition-transform duration-200', showForm ? 'rotate-45' : 'rotate-0')} />
+          {showForm ? 'Cancel' : 'Add word'}
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// ─── Q&A Question List ────────────────────────────────────────────────────────
+
+function QAQuestionList({ questions, onStartQuiz }: { questions: QAQuestion[]; onStartQuiz: () => void }) {
+  return (
+    <div className="flex flex-col h-full min-h-0">
+      <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Questions</p>
+        <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
+          {questions.length} questions
+        </span>
+      </div>
+      <div className="flex-1 overflow-y-auto min-h-0">
+        {questions.map((q, i) => (
+          <div
+            key={i}
+            className="flex items-start gap-3 px-5 py-3.5 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-purple-500/[0.03] dark:hover:bg-purple-500/[0.04] transition-colors"
+          >
+            <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums pt-0.5">{i + 1}</span>
+            <div className="flex-1 min-w-0">
+              <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{q.question}</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{q.options.length} options</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
+        <button
+          onClick={onStartQuiz}
+          className="w-full flex items-center justify-center gap-1.5 py-3 text-xs font-bold text-purple-500 hover:text-purple-600 transition-colors"
+        >
+          <ArrowRight size={13} />
+          Start quiz
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// ─── Phrase List ──────────────────────────────────────────────────────────────
+
+function PhraseList({ phrases, onPractice }: { phrases: Phrase[]; onPractice: () => void }) {
+  return (
+    <div className="flex flex-col h-full min-h-0">
+      {/* Header */}
+      <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Phrase List</p>
+        <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
+          {phrases.length} phrases
+        </span>
+      </div>
+
+      {/* Scrollable list */}
+      <div className="flex-1 overflow-y-auto min-h-0">
+        {phrases.map((p, i) => (
+          <div
+            key={i}
+            className="flex items-start gap-3 px-5 py-3.5 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-blue-500/[0.03] dark:hover:bg-blue-500/[0.04] transition-colors group"
+          >
+            <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums pt-0.5">{i + 1}</span>
+            <div className="flex-1 min-w-0">
+              <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{p.phrase}</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{p.translation}</p>
+            </div>
+            <button
+              onClick={() => toast.info('Audio coming soon')}
+              className="shrink-0 mt-0.5 text-slate-300 dark:text-slate-600 group-hover:text-slate-400 transition-colors"
+            >
+              <Volume2 size={13} />
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {/* Practice CTA */}
+      <div className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
+        <button
+          onClick={onPractice}
+          className="w-full flex items-center justify-center gap-1.5 py-3 text-xs font-bold text-blue-500 hover:text-blue-600 transition-colors"
+        >
+          <ArrowRight size={13} />
+          Start practice
+        </button>
+      </div>
+    </div>
+  )
+}
+
 const ACTIVITIES = [
   { key: 'vocabulary', label: 'Vocab',    Icon: BookOpen,      accent: '#ff8052', light: '#fff4f0' },
   { key: 'phrases',    label: 'Phrases',  Icon: MessageSquare, accent: '#3b82f6', light: '#eff6ff' },
@@ -155,8 +453,6 @@ const ACTIVITIES = [
 // Hoisted constants
 const COLOR_CORRECT            = '#22c55e'
 const COLOR_INCORRECT          = '#ef4444'
-const COLOR_CONNECTOR_PAST     = '#86efac'
-const COLOR_CONNECTOR_INACTIVE = '#e2e8f0'
 
 // ─── Shared sub-components ────────────────────────────────────────────────────
 
@@ -221,11 +517,13 @@ export default function LessonPage() {
   const [vocabFlipped, setVocabFlipped] = useState(false)
 
   // Phrases
+  const [phraseMode,     setPhraseMode]     = useState<'overview' | 'practice'>('overview')
   const [phraseIndex,    setPhraseIndex]    = useState(0)
   const [phraseRevealed, setPhraseRevealed] = useState(false)
   const [phraseDone,     setPhraseDone]     = useState(false)
 
   // Q&A
+  const [qaMode,       setQaMode]       = useState<'overview' | 'quiz'>('overview')
   const [qIndex,       setQIndex]       = useState(0)
   const [selected,     setSelected]     = useState<number | null>(null)
   const [checked,      setChecked]      = useState(false)
@@ -477,171 +775,335 @@ export default function LessonPage() {
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
       <AppTopbar back={{ href: `/learn/${slug}`, label: lesson.title }} />
 
-      {/* ── Activity stepper ── */}
-      <div className="bg-white dark:bg-slate-900 border-b border-black/5 dark:border-white/5 px-4 py-3.5">
-        <div className="max-w-lg mx-auto flex items-center">
-          {ACTIVITIES.slice(0, 4).map((a, i) => {
-            const isCurrent = a.key === activity
-            const isPast    = i < activityIdx && activityIdx < 4
-            const Icon      = a.Icon
-            return (
-              <div key={a.key} className="flex items-center flex-1">
-                <Link
-                  href={`/learn/${slug}/${a.key}`}
-                  className={cn('flex items-center gap-1.5 transition-opacity', !isCurrent && 'opacity-50 hover:opacity-80')}
-                >
-                  <div
-                    className={cn(
-                      'size-7 rounded-full flex items-center justify-center transition-all',
-                      !isCurrent && !isPast && 'bg-slate-100 dark:bg-slate-800',
-                    )}
-                    style={{
-                      backgroundColor: isCurrent ? a.accent : isPast ? COLOR_CORRECT : undefined,
-                      color: (isCurrent || isPast) ? '#fff' : undefined,
-                    }}
-                  >
-                    {isPast
-                      ? <Check size={11} />
-                      : <Icon size={11} className={!isCurrent && !isPast ? 'text-slate-400' : ''} />
-                    }
-                  </div>
-                  <span
-                    className="text-[11px] font-bold hidden sm:block"
-                    style={{ color: isCurrent ? a.accent : isPast ? COLOR_CORRECT : undefined }}
-                  >
-                    {a.label}
-                  </span>
-                </Link>
-                {i < 3 && (
-                  <div
-                    className="flex-1 h-px mx-2"
-                    style={{ backgroundColor: i < activityIdx && activityIdx < 4 ? COLOR_CONNECTOR_PAST : COLOR_CONNECTOR_INACTIVE }}
-                  />
-                )}
-              </div>
-            )
-          })}
-        </div>
-      </div>
 
       {/* ══════════════════════════════════════════════════════════════════════
           VOCABULARY
       ══════════════════════════════════════════════════════════════════════ */}
       {activity === 'vocabulary' && (
-        <div className="flex-1 flex flex-col items-center p-5 md:p-8 gap-5 max-w-lg mx-auto w-full">
-          {words.length === 0 ? (
-            <EmptyState message="No vocabulary in this lesson." />
-          ) : vocabIndex >= words.length ? (
-            <CompletionCard
-              icon="🎯"
-              title="All words reviewed!"
-              subtitle={`${words.length} words covered`}
-              nextLabel={nextLabel}
-              onNext={() => handleActivityComplete(100)}
-              onRestart={() => { setVocabIndex(0); setVocabFlipped(false) }}
-            />
-          ) : (
-            <>
-              {/* Progress bar */}
-              <div className="w-full">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
-                    Vocabulary
-                  </span>
-                  <span className="text-[11px] font-bold" style={{ color: currentMeta.accent }}>
-                    {vocabIndex + 1} / {words.length}
-                  </span>
-                </div>
-                <div className="w-full h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: `${currentMeta.accent}20` }}>
-                  <div
-                    className="h-full rounded-full transition-all duration-500"
-                    style={{ width: `${(vocabIndex / words.length) * 100}%`, backgroundColor: currentMeta.accent }}
-                  />
-                </div>
-              </div>
+        <div className="flex-1 px-3 md:px-5 py-4 md:py-6 overflow-y-auto">
+          <motion.div
+            initial="initial"
+            animate="animate"
+            transition={{ staggerChildren: 0.05 }}
+            className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+          >
 
-              {/* 3D Flip Card */}
-              <div
-                className="w-full flex-1 max-h-80 cursor-pointer select-none"
-                style={{ perspective: '1200px' }}
-                onClick={() => setVocabFlipped(f => !f)}
+            {/* ── HEADER ────────────────────────────────────────────────────── */}
+            <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+              <div>
+                <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+                  Vocabulary
+                </span>
+                <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
+                  {lesson.title}
+                </h1>
+              </div>
+              <div className="text-right shrink-0 ml-4">
+                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{words.length}</p>
+                <p className="text-[11px] font-semibold text-slate-400">words</p>
+              </div>
+            </Block>
+
+            {/* ── NAV: other activities ────────────────────────────────────── */}
+            <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-blue-500/40 p-0 min-h-[96px]">
+              <Link href={`/learn/${slug}/phrases`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                <MessageSquare size={22} className="text-blue-500 mx-auto" />
+                <p className="font-bold text-xs text-blue-500 text-center">Phrases</p>
+              </Link>
+            </Block>
+            <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-purple-500/40 p-0 min-h-[96px]">
+              <Link href={`/learn/${slug}/qa`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                <HelpCircle size={22} className="text-purple-500 mx-auto" />
+                <p className="font-bold text-xs text-purple-500 text-center">Q&amp;A</p>
+              </Link>
+            </Block>
+            <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-emerald-500/40 p-0 min-h-[96px]">
+              <Link href={`/learn/${slug}/story`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                <BookMarked size={22} className="text-emerald-500 mx-auto" />
+                <p className="font-bold text-xs text-emerald-500 text-center">Story</p>
+              </Link>
+            </Block>
+
+            {/* ── WORD LIST — col-6 row-span-4, animated VanishList ────────── */}
+            <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+              <VocabWordList
+                initialWords={words.map((w, i) => ({
+                  id: `${w.word}-${i}`,
+                  word: w.word,
+                  translation: w.translation,
+                  learned: false,
+                  favorite: false,
+                }))}
+              />
+            </Block>
+
+            {/* ── FLASHCARDS ───────────────────────────────────────────────── */}
+            <Block
+              whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+              className="col-span-6 md:col-span-3 bg-primary dark:bg-primary border-primary/20 p-0 min-h-[140px]"
+            >
+              <Link href={`/learn/${slug}/flashcards`} className="grid h-full place-content-center gap-3 p-5 min-h-[140px]">
+                <Layers size={28} className="text-white mx-auto" />
+                <div className="text-center">
+                  <p className="font-bold text-sm text-white">Flashcards</p>
+                  <p className="text-[11px] text-white/60 mt-0.5">Flip &amp; memorize</p>
+                </div>
+              </Link>
+            </Block>
+
+            {/* ── LISTENING CHALLENGE ──────────────────────────────────────── */}
+            <Block
+              whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+              className="col-span-6 md:col-span-3 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[140px]"
+            >
+              <button
+                onClick={() => toast.info('Listening Challenge — coming soon!')}
+                className="grid h-full place-content-center gap-3 p-5 min-h-[140px] w-full"
               >
-                <div
-                  className="relative w-full h-full transition-transform duration-500"
-                  style={{ transformStyle: 'preserve-3d', transform: vocabFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
-                >
-                  {/* Front */}
-                  <div
-                    className="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-black/5 flex flex-col items-center justify-center gap-5 p-8"
-                    style={{ backfaceVisibility: 'hidden' }}
-                  >
-                    <span className="text-8xl">{words[vocabIndex].emoji}</span>
-                    <h2 className="text-4xl font-bold tracking-tight text-center">{words[vocabIndex].word}</h2>
-                    <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                      <RotateCcw size={10} />
-                      <span>tap to reveal</span>
-                    </div>
-                  </div>
+                <Headphones size={28} className="text-white mx-auto" />
+                <div className="text-center">
+                  <p className="font-bold text-sm text-white">Listening</p>
+                  <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
+                </div>
+              </button>
+            </Block>
 
-                  {/* Back */}
-                  <div
-                    className="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-black/5 flex flex-col items-center justify-center gap-4 p-8"
-                    style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
-                  >
-                    <span className="text-7xl">{words[vocabIndex].emoji}</span>
-                    <div className="text-center space-y-1">
-                      <p className="text-3xl font-bold" style={{ color: currentMeta.accent }}>
-                        {words[vocabIndex].translation}
-                      </p>
-                      <p className="text-base text-muted-foreground">{words[vocabIndex].word}</p>
-                    </div>
-                    {words[vocabIndex].example && (
-                      <div className="rounded-2xl px-4 py-2 max-w-xs text-center" style={{ backgroundColor: `${currentMeta.accent}12` }}>
-                        <p className="text-xs text-muted-foreground italic">&ldquo;{words[vocabIndex].example}&rdquo;</p>
-                      </div>
-                    )}
-                    <button
-                      onClick={e => { e.stopPropagation(); toast.info('Audio coming soon') }}
-                      className="text-muted-foreground/40 hover:text-muted-foreground transition-colors"
-                    >
-                      <Volume2 size={16} />
-                    </button>
+            {/* ── MONKEYTYPE ───────────────────────────────────────────────── */}
+            <Block
+              whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+              className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
+            >
+              <button
+                onClick={() => toast.info('MonkeyType — coming soon!')}
+                className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+              >
+                <Keyboard size={26} className="text-white mx-auto" />
+                <p className="font-bold text-xs text-white text-center">MonkeyType</p>
+              </button>
+            </Block>
+
+            {/* ── TYPE × 3 ─────────────────────────────────────────────────── */}
+            <Block
+              whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+              className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
+            >
+              <button
+                onClick={() => toast.info('Type × 3 — coming soon!')}
+                className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+              >
+                <PenLine size={26} className="text-white mx-auto" />
+                <p className="font-bold text-xs text-white text-center">Type × 3</p>
+              </button>
+            </Block>
+
+            {/* ── NEXT: PHRASES ────────────────────────────────────────────── */}
+            <Block
+              whileHover={{ scale: 1.02 }}
+              className="col-span-12 md:col-span-6 p-0 overflow-hidden border-blue-500/20 min-h-[100px]"
+              style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' }}
+            >
+              <Link href={`/learn/${slug}/phrases`} className="flex items-center justify-between gap-4 px-6 py-5 h-full min-h-[100px]">
+                {/* Left: flow steps */}
+                <div className="flex flex-col gap-2">
+                  <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/60">
+                    <ArrowRight size={10} />
+                    Next up
+                  </span>
+                  <p className="text-xl font-bold text-white leading-tight">Phrases</p>
+                  {/* Progress path */}
+                  <div className="flex items-center gap-1.5 mt-0.5">
+                    {[
+                      { label: 'Vocab',   Icon: BookOpen,      done: true  },
+                      { label: 'Phrases', Icon: MessageSquare, done: false },
+                      { label: 'Q&A',     Icon: HelpCircle,    done: false },
+                      { label: 'Story',   Icon: BookMarked,    done: false },
+                    ].map((step, i) => (
+                      <React.Fragment key={step.label}>
+                        {i > 0 && <div className={`w-3 h-px ${step.done ? 'bg-white/60' : 'bg-white/20'}`} />}
+                        <div className={`flex items-center gap-1 text-[10px] font-semibold ${step.done ? 'text-white' : i === 1 ? 'text-white' : 'text-white/35'}`}>
+                          <step.Icon size={9} className={step.done ? 'text-white' : i === 1 ? 'text-white' : 'text-white/35'} />
+                          <span className="hidden sm:inline">{step.label}</span>
+                        </div>
+                      </React.Fragment>
+                    ))}
                   </div>
                 </div>
-              </div>
+                {/* Right: arrow */}
+                <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
+                  <ArrowRight size={18} className="text-white" />
+                </div>
+              </Link>
+            </Block>
 
-              {/* CTA buttons */}
-              <div
-                className="w-full flex flex-col gap-3 transition-all duration-300"
-                style={{ opacity: vocabFlipped ? 1 : 0, pointerEvents: vocabFlipped ? 'auto' : 'none' }}
-              >
-                <button
-                  onClick={() => { setVocabFlipped(false); setVocabIndex(i => i + 1) }}
-                  className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 text-white text-base font-bold active:scale-95 transition-transform shadow-lg"
-                  style={{ backgroundColor: currentMeta.accent, boxShadow: `0 8px 24px ${currentMeta.accent}35` }}
-                >
-                  <Check size={18} /> Got it!
-                </button>
-                <button
-                  onClick={() => { setVocabFlipped(false); setVocabIndex(i => i + 1) }}
-                  className="w-full flex items-center justify-center gap-2 h-12 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-500 text-sm font-semibold active:scale-95 transition-transform"
-                >
-                  Still learning…
-                </button>
-              </div>
-            </>
-          )}
+          </motion.div>
         </div>
       )}
 
       {/* ══════════════════════════════════════════════════════════════════════
           PHRASES
       ══════════════════════════════════════════════════════════════════════ */}
-      {activity === 'phrases' && (
-        <div className="flex-1 flex flex-col items-center p-5 md:p-8 gap-5 max-w-lg mx-auto w-full">
+      {/* ── PHRASES — BENTO OVERVIEW ─────────────────────────────────────── */}
+      {activity === 'phrases' && phraseMode === 'overview' && (
+        <div className="flex-1 px-3 md:px-5 py-4 md:py-6 overflow-y-auto">
           {phrases.length === 0 ? (
             <EmptyState message="No phrases in this lesson." />
-          ) : phraseDone ? (
+          ) : (
+            <motion.div
+              initial="initial"
+              animate="animate"
+              transition={{ staggerChildren: 0.05 }}
+              className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+            >
+              {/* Header */}
+              <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                <div>
+                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-blue-500 bg-blue-500/10 px-2.5 py-1 rounded-full">
+                    Phrases
+                  </span>
+                  <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
+                    {lesson.title}
+                  </h1>
+                </div>
+                <div className="text-right shrink-0 ml-4">
+                  <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{phrases.length}</p>
+                  <p className="text-[11px] font-semibold text-slate-400">phrases</p>
+                </div>
+              </Block>
+
+              {/* ── NAV: other activities ──────────────────────────────────── */}
+              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-primary/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/vocabulary`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <BookOpen size={22} className="text-primary mx-auto" />
+                  <p className="font-bold text-xs text-primary text-center">Vocab</p>
+                </Link>
+              </Block>
+              <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-purple-500/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/qa`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <HelpCircle size={22} className="text-purple-500 mx-auto" />
+                  <p className="font-bold text-xs text-purple-500 text-center">Q&amp;A</p>
+                </Link>
+              </Block>
+              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-emerald-500/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/story`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <BookMarked size={22} className="text-emerald-500 mx-auto" />
+                  <p className="font-bold text-xs text-emerald-500 text-center">Story</p>
+                </Link>
+              </Block>
+
+              {/* Phrase list */}
+              <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+                <PhraseList
+                  phrases={phrases}
+                  onPractice={() => { setPhraseIndex(0); setPhraseRevealed(false); setPhraseDone(false); setPhraseMode('practice') }}
+                />
+              </Block>
+
+              {/* Practice */}
+              <Block
+                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-blue-500 dark:bg-blue-600 border-blue-400/20 p-0 min-h-[140px]"
+              >
+                <button
+                  onClick={() => { setPhraseIndex(0); setPhraseRevealed(false); setPhraseDone(false); setPhraseMode('practice') }}
+                  className="grid h-full place-content-center gap-3 p-5 min-h-[140px] w-full"
+                >
+                  <MessageSquare size={28} className="text-white mx-auto" />
+                  <div className="text-center">
+                    <p className="font-bold text-sm text-white">Practice</p>
+                    <p className="text-[11px] text-white/60 mt-0.5">Flip &amp; review</p>
+                  </div>
+                </button>
+              </Block>
+
+              {/* Listening */}
+              <Block
+                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[140px]"
+              >
+                <button
+                  onClick={() => toast.info('Listening Challenge — coming soon!')}
+                  className="grid h-full place-content-center gap-3 p-5 min-h-[140px] w-full"
+                >
+                  <Headphones size={28} className="text-white mx-auto" />
+                  <div className="text-center">
+                    <p className="font-bold text-sm text-white">Listening</p>
+                    <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
+                  </div>
+                </button>
+              </Block>
+
+              {/* MonkeyType */}
+              <Block
+                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('MonkeyType — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+                >
+                  <Keyboard size={26} className="text-white mx-auto" />
+                  <p className="font-bold text-xs text-white text-center">MonkeyType</p>
+                </button>
+              </Block>
+
+              {/* Type × 3 */}
+              <Block
+                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('Type × 3 — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+                >
+                  <PenLine size={26} className="text-white mx-auto" />
+                  <p className="font-bold text-xs text-white text-center">Type × 3</p>
+                </button>
+              </Block>
+
+              {/* Next: Q&A */}
+              <Block
+                whileHover={{ scale: 1.02 }}
+                className="col-span-12 md:col-span-6 p-0 overflow-hidden border-purple-500/20 min-h-[100px]"
+                style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)' }}
+              >
+                <Link href={`/learn/${slug}/qa`} className="flex items-center justify-between gap-4 px-6 py-5 h-full min-h-[100px]">
+                  <div className="flex flex-col gap-2">
+                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/60">
+                      <ArrowRight size={10} />
+                      Next up
+                    </span>
+                    <p className="text-xl font-bold text-white leading-tight">Q&amp;A</p>
+                    <div className="flex items-center gap-1.5 mt-0.5">
+                      {[
+                        { label: 'Vocab',   Icon: BookOpen,      done: true  },
+                        { label: 'Phrases', Icon: MessageSquare, done: true  },
+                        { label: 'Q&A',     Icon: HelpCircle,    done: false },
+                        { label: 'Story',   Icon: BookMarked,    done: false },
+                      ].map((step, i) => (
+                        <React.Fragment key={step.label}>
+                          {i > 0 && <div className={`w-3 h-px ${step.done ? 'bg-white/60' : 'bg-white/20'}`} />}
+                          <div className={`flex items-center gap-1 text-[10px] font-semibold ${step.done ? 'text-white' : i === 2 ? 'text-white' : 'text-white/35'}`}>
+                            <step.Icon size={9} className={step.done ? 'text-white' : i === 2 ? 'text-white' : 'text-white/35'} />
+                            <span className="hidden sm:inline">{step.label}</span>
+                          </div>
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
+                    <ArrowRight size={18} className="text-white" />
+                  </div>
+                </Link>
+              </Block>
+            </motion.div>
+          )}
+        </div>
+      )}
+
+      {/* ── PHRASES — PRACTICE MODE ──────────────────────────────────────────── */}
+      {activity === 'phrases' && phraseMode === 'practice' && (
+        <div className="flex-1 flex flex-col items-center p-5 md:p-8 gap-5 max-w-lg mx-auto w-full">
+          {phraseDone ? (
             <CompletionCard
               icon="💬"
               title="All phrases reviewed!"
@@ -652,18 +1114,23 @@ export default function LessonPage() {
             />
           ) : (
             <>
-              {/* Progress */}
+              {/* Back + progress */}
               <div className="w-full">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">Phrases</span>
-                  <span className="text-[11px] font-bold" style={{ color: currentMeta.accent }}>
+                  <button
+                    onClick={() => setPhraseMode('overview')}
+                    className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground hover:text-blue-500 transition-colors flex items-center gap-1"
+                  >
+                    ← Phrases
+                  </button>
+                  <span className="text-[11px] font-bold text-blue-500">
                     {phraseIndex + 1} / {phrases.length}
                   </span>
                 </div>
-                <div className="w-full h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: `${currentMeta.accent}20` }}>
+                <div className="w-full h-1.5 rounded-full overflow-hidden bg-blue-500/20">
                   <div
-                    className="h-full rounded-full transition-all duration-500"
-                    style={{ width: `${(phraseIndex / phrases.length) * 100}%`, backgroundColor: currentMeta.accent }}
+                    className="h-full rounded-full transition-all duration-500 bg-blue-500"
+                    style={{ width: `${(phraseIndex / phrases.length) * 100}%` }}
                   />
                 </div>
               </div>
@@ -672,8 +1139,8 @@ export default function LessonPage() {
               <div
                 className="w-full flex-1 max-h-72 rounded-3xl shadow-xl flex flex-col items-center justify-center gap-5 p-8 text-center select-none cursor-pointer transition-all duration-300"
                 style={{
-                  backgroundColor: phraseRevealed ? `${currentMeta.accent}14` : surfaceBg,
-                  border: `1.5px solid ${phraseRevealed ? `${currentMeta.accent}45` : borderDefault}`,
+                  backgroundColor: phraseRevealed ? '#3b82f614' : surfaceBg,
+                  border: `1.5px solid ${phraseRevealed ? '#3b82f645' : borderDefault}`,
                 }}
                 onClick={() => !phraseRevealed && setPhraseRevealed(true)}
               >
@@ -685,7 +1152,7 @@ export default function LessonPage() {
                   </div>
                 ) : (
                   <div className="flex flex-col items-center gap-2">
-                    <p className="text-lg font-semibold" style={{ color: currentMeta.accent }}>
+                    <p className="text-lg font-semibold text-blue-500">
                       {phrases[phraseIndex].translation}
                     </p>
                     <button
@@ -708,8 +1175,8 @@ export default function LessonPage() {
                     if (phraseIndex + 1 >= phrases.length) setPhraseDone(true)
                     else { setPhraseIndex(i => i + 1); setPhraseRevealed(false) }
                   }}
-                  className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 text-white text-base font-bold active:scale-95 transition-transform"
-                  style={{ backgroundColor: currentMeta.accent, boxShadow: `0 8px 24px ${currentMeta.accent}35` }}
+                  className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 text-white text-base font-bold active:scale-95 transition-transform bg-blue-500"
+                  style={{ boxShadow: '0 8px 24px #3b82f635' }}
                 >
                   {phraseIndex + 1 >= phrases.length ? 'All done!' : 'Next phrase'} <ArrowRight size={16} />
                 </button>
@@ -719,14 +1186,168 @@ export default function LessonPage() {
         </div>
       )}
 
-      {/* ══════════════════════════════════════════════════════════════════════
-          Q&A
-      ══════════════════════════════════════════════════════════════════════ */}
-      {activity === 'qa' && (
-        <div className="flex-1 flex flex-col p-5 md:p-8 gap-4 max-w-lg mx-auto w-full">
+      {/* ── Q&A — BENTO OVERVIEW ─────────────────────────────────────────────── */}
+      {activity === 'qa' && qaMode === 'overview' && (
+        <div className="flex-1 px-3 md:px-5 py-4 md:py-6 overflow-y-auto">
           {questions.length === 0 ? (
             <EmptyState message="No questions in this lesson." />
-          ) : qaDone ? (
+          ) : (
+            <motion.div
+              initial="initial"
+              animate="animate"
+              transition={{ staggerChildren: 0.05 }}
+              className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+            >
+              {/* Header */}
+              <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                <div>
+                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-purple-500 bg-purple-500/10 px-2.5 py-1 rounded-full">
+                    Q&amp;A
+                  </span>
+                  <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
+                    {lesson.title}
+                  </h1>
+                </div>
+                <div className="text-right shrink-0 ml-4">
+                  <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{questions.length}</p>
+                  <p className="text-[11px] font-semibold text-slate-400">questions</p>
+                </div>
+              </Block>
+
+              {/* ── NAV: other activities ──────────────────────────────────── */}
+              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-primary/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/vocabulary`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <BookOpen size={22} className="text-primary mx-auto" />
+                  <p className="font-bold text-xs text-primary text-center">Vocab</p>
+                </Link>
+              </Block>
+              <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-blue-500/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/phrases`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <MessageSquare size={22} className="text-blue-500 mx-auto" />
+                  <p className="font-bold text-xs text-blue-500 text-center">Phrases</p>
+                </Link>
+              </Block>
+              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-emerald-500/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/story`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <BookMarked size={22} className="text-emerald-500 mx-auto" />
+                  <p className="font-bold text-xs text-emerald-500 text-center">Story</p>
+                </Link>
+              </Block>
+
+              {/* Questions list */}
+              <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+                <QAQuestionList
+                  questions={questions}
+                  onStartQuiz={() => { setQIndex(0); setSelected(null); setChecked(false); setCorrectCount(0); setQaDone(false); setQaMode('quiz') }}
+                />
+              </Block>
+
+              {/* Start Quiz */}
+              <Block
+                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-purple-600 dark:bg-purple-700 border-purple-500/20 p-0 min-h-[140px]"
+              >
+                <button
+                  onClick={() => { setQIndex(0); setSelected(null); setChecked(false); setCorrectCount(0); setQaDone(false); setQaMode('quiz') }}
+                  className="grid h-full place-content-center gap-3 p-5 min-h-[140px] w-full"
+                >
+                  <HelpCircle size={28} className="text-white mx-auto" />
+                  <div className="text-center">
+                    <p className="font-bold text-sm text-white">Start Quiz</p>
+                    <p className="text-[11px] text-white/60 mt-0.5">Test yourself</p>
+                  </div>
+                </button>
+              </Block>
+
+              {/* Listening */}
+              <Block
+                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[140px]"
+              >
+                <button
+                  onClick={() => toast.info('Listening Challenge — coming soon!')}
+                  className="grid h-full place-content-center gap-3 p-5 min-h-[140px] w-full"
+                >
+                  <Headphones size={28} className="text-white mx-auto" />
+                  <div className="text-center">
+                    <p className="font-bold text-sm text-white">Listening</p>
+                    <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
+                  </div>
+                </button>
+              </Block>
+
+              {/* MonkeyType */}
+              <Block
+                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('MonkeyType — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+                >
+                  <Keyboard size={26} className="text-white mx-auto" />
+                  <p className="font-bold text-xs text-white text-center">MonkeyType</p>
+                </button>
+              </Block>
+
+              {/* Type × 3 */}
+              <Block
+                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+                className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('Type × 3 — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+                >
+                  <PenLine size={26} className="text-white mx-auto" />
+                  <p className="font-bold text-xs text-white text-center">Type × 3</p>
+                </button>
+              </Block>
+
+              {/* Next: Story */}
+              <Block
+                whileHover={{ scale: 1.02 }}
+                className="col-span-12 md:col-span-6 p-0 overflow-hidden border-emerald-500/20 min-h-[100px]"
+                style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }}
+              >
+                <Link href={`/learn/${slug}/story`} className="flex items-center justify-between gap-4 px-6 py-5 h-full min-h-[100px]">
+                  <div className="flex flex-col gap-2">
+                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/60">
+                      <ArrowRight size={10} />
+                      Next up
+                    </span>
+                    <p className="text-xl font-bold text-white leading-tight">Story</p>
+                    <div className="flex items-center gap-1.5 mt-0.5">
+                      {[
+                        { label: 'Vocab',   Icon: BookOpen,      done: true  },
+                        { label: 'Phrases', Icon: MessageSquare, done: true  },
+                        { label: 'Q&A',     Icon: HelpCircle,    done: true  },
+                        { label: 'Story',   Icon: BookMarked,    done: false },
+                      ].map((step, i) => (
+                        <React.Fragment key={step.label}>
+                          {i > 0 && <div className={`w-3 h-px ${step.done ? 'bg-white/60' : 'bg-white/20'}`} />}
+                          <div className={`flex items-center gap-1 text-[10px] font-semibold ${step.done ? 'text-white' : 'text-white'}`}>
+                            <step.Icon size={9} />
+                            <span className="hidden sm:inline">{step.label}</span>
+                          </div>
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
+                    <ArrowRight size={18} className="text-white" />
+                  </div>
+                </Link>
+              </Block>
+            </motion.div>
+          )}
+        </div>
+      )}
+
+      {/* ── Q&A — QUIZ MODE ──────────────────────────────────────────────────── */}
+      {activity === 'qa' && qaMode === 'quiz' && (
+        <div className="flex-1 flex flex-col p-5 md:p-8 gap-4 max-w-lg mx-auto w-full">
+          {qaDone ? (
             <CompletionCard
               icon={correctCount === questions.length ? '🏆' : correctCount >= Math.ceil(questions.length / 2) ? '⭐' : '💪'}
               title={correctCount === questions.length ? 'Perfect score!' : `${correctCount} / ${questions.length} correct`}
@@ -737,29 +1358,29 @@ export default function LessonPage() {
             />
           ) : (
             <>
-              {/* Progress */}
+              {/* Back + progress */}
               <div className="w-full">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
-                    Question {qIndex + 1} of {questions.length}
-                  </span>
-                  <span className="text-[11px] font-bold" style={{ color: currentMeta.accent }}>
-                    {correctCount} correct
+                  <button
+                    onClick={() => setQaMode('overview')}
+                    className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground hover:text-purple-500 transition-colors flex items-center gap-1"
+                  >
+                    ← Q&amp;A
+                  </button>
+                  <span className="text-[11px] font-bold text-purple-500">
+                    {qIndex + 1} / {questions.length} · {correctCount} correct
                   </span>
                 </div>
-                <div className="w-full h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: `${currentMeta.accent}20` }}>
+                <div className="w-full h-1.5 rounded-full overflow-hidden bg-purple-500/20">
                   <div
-                    className="h-full rounded-full transition-all duration-500"
-                    style={{ width: `${(qIndex / questions.length) * 100}%`, backgroundColor: currentMeta.accent }}
+                    className="h-full rounded-full transition-all duration-500 bg-purple-500"
+                    style={{ width: `${(qIndex / questions.length) * 100}%` }}
                   />
                 </div>
               </div>
 
               {/* Question card */}
-              <div
-                className="rounded-3xl p-5 border shadow-sm"
-                style={{ backgroundColor: `${currentMeta.accent}10`, borderColor: `${currentMeta.accent}25` }}
-              >
+              <div className="rounded-3xl p-5 border shadow-sm bg-purple-500/10 border-purple-500/25">
                 <p className="text-base md:text-lg font-bold leading-snug">{questions[qIndex].question}</p>
               </div>
 
@@ -777,16 +1398,14 @@ export default function LessonPage() {
                   let badgeColor  = isDark ? '#94a3b8' : '#94a3b8'
 
                   if (!show && isSelected) {
-                    borderColor = currentMeta.accent
-                    bgColor     = `${currentMeta.accent}14`
-                    badgeBg     = currentMeta.accent
-                    badgeColor  = '#fff'
+                    borderColor = '#8b5cf6'; bgColor = '#8b5cf614'
+                    badgeBg = '#8b5cf6'; badgeColor = '#fff'
                   } else if (show && isCorrect) {
                     borderColor = COLOR_CORRECT; bgColor = correctBg; textColor = correctText
-                    badgeBg     = COLOR_CORRECT; badgeColor = '#fff'
+                    badgeBg = COLOR_CORRECT; badgeColor = '#fff'
                   } else if (show && isSelected && !isCorrect) {
                     borderColor = COLOR_INCORRECT; bgColor = incorrectBg; textColor = incorrectText
-                    badgeBg     = COLOR_INCORRECT; badgeColor = '#fff'
+                    badgeBg = COLOR_INCORRECT; badgeColor = '#fff'
                   }
 
                   return (
@@ -795,21 +1414,13 @@ export default function LessonPage() {
                       onClick={() => !checked && setSelected(i)}
                       disabled={checked}
                       className="w-full text-left px-4 py-3.5 rounded-2xl border-2 font-semibold text-sm transition-all flex items-center gap-3 active:scale-[0.98]"
-                      style={{
-                        borderColor, backgroundColor: bgColor, color: textColor,
-                        opacity: show && !isSelected && !isCorrect ? 0.45 : 1,
-                      }}
+                      style={{ borderColor, backgroundColor: bgColor, color: textColor, opacity: show && !isSelected && !isCorrect ? 0.45 : 1 }}
                     >
                       <span
                         className="size-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 transition-all"
                         style={{ backgroundColor: badgeBg, color: badgeColor }}
                       >
-                        {show && isCorrect
-                          ? <Check size={13} />
-                          : show && isSelected && !isCorrect
-                            ? <X size={13} />
-                            : String.fromCharCode(65 + i)
-                        }
+                        {show && isCorrect ? <Check size={13} /> : show && isSelected && !isCorrect ? <X size={13} /> : String.fromCharCode(65 + i)}
                       </span>
                       {option}
                     </button>
@@ -819,10 +1430,7 @@ export default function LessonPage() {
 
               {/* Explanation */}
               {checked && questions[qIndex].explanation && (
-                <div
-                  className="rounded-2xl p-4 border text-sm leading-relaxed"
-                  style={{ backgroundColor: `${currentMeta.accent}0d`, borderColor: `${currentMeta.accent}30`, color: currentMeta.accent }}
-                >
+                <div className="rounded-2xl p-4 border text-sm leading-relaxed bg-purple-500/[0.08] border-purple-500/30 text-purple-600 dark:text-purple-400">
                   {questions[qIndex].explanation}
                 </div>
               )}
@@ -832,8 +1440,8 @@ export default function LessonPage() {
                 <button
                   onClick={() => selected !== null && setChecked(true)}
                   disabled={selected === null}
-                  className="w-full flex items-center justify-center rounded-2xl h-14 text-white text-base font-bold transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:active:scale-100"
-                  style={{ backgroundColor: currentMeta.accent, boxShadow: selected !== null ? `0 8px 24px ${currentMeta.accent}35` : 'none' }}
+                  className="w-full flex items-center justify-center rounded-2xl h-14 text-white text-base font-bold transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:active:scale-100 bg-purple-600"
+                  style={{ boxShadow: selected !== null ? '0 8px 24px #8b5cf635' : 'none' }}
                 >
                   Check Answer
                 </button>
@@ -842,11 +1450,8 @@ export default function LessonPage() {
                   onClick={() => {
                     const correct = selected === questions[qIndex].correct
                     if (correct) setCorrectCount(c => c + 1)
-                    if (qIndex + 1 >= questions.length) {
-                      setQaDone(true)
-                    } else {
-                      setQIndex(i => i + 1); setSelected(null); setChecked(false)
-                    }
+                    if (qIndex + 1 >= questions.length) { setQaDone(true) }
+                    else { setQIndex(i => i + 1); setSelected(null); setChecked(false) }
                   }}
                   className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 text-white text-base font-bold active:scale-95 transition-transform"
                   style={{
@@ -865,78 +1470,170 @@ export default function LessonPage() {
       )}
 
       {/* ══════════════════════════════════════════════════════════════════════
-          STORY
+          STORY — BENTO
       ══════════════════════════════════════════════════════════════════════ */}
       {activity === 'story' && (
-        <div className="flex-1 flex flex-col p-5 md:p-8 gap-5 max-w-lg mx-auto w-full">
-          <div className="flex items-center justify-between">
-            <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">Story</span>
-            {(content.highlightedWords?.length ?? 0) > 0 && (
-              <span className="text-[11px] font-bold" style={{ color: currentMeta.accent }}>
-                {content.highlightedWords!.length} key words
-              </span>
-            )}
-          </div>
+        <div className="flex-1 px-3 md:px-5 py-4 md:py-6 overflow-y-auto">
+          {!content.story ? (
+            <EmptyState message="No story in this lesson." />
+          ) : (
+            <motion.div
+              initial="initial"
+              animate="animate"
+              transition={{ staggerChildren: 0.05 }}
+              className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+            >
+              {/* Header */}
+              <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                <div>
+                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-emerald-600 bg-emerald-500/10 px-2.5 py-1 rounded-full">
+                    Story
+                  </span>
+                  <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
+                    {lesson.title}
+                  </h1>
+                </div>
+                {(content.highlightedWords?.length ?? 0) > 0 && (
+                  <div className="text-right shrink-0 ml-4">
+                    <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{content.highlightedWords!.length}</p>
+                    <p className="text-[11px] font-semibold text-slate-400">key words</p>
+                  </div>
+                )}
+              </Block>
 
-          {content.story ? (
-            <>
-              <div className="bg-white dark:bg-slate-800 rounded-3xl border border-black/5 shadow-sm p-6 md:p-8">
+              {/* ── NAV: other activities ──────────────────────────────────── */}
+              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-primary/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/vocabulary`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <BookOpen size={22} className="text-primary mx-auto" />
+                  <p className="font-bold text-xs text-primary text-center">Vocab</p>
+                </Link>
+              </Block>
+              <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-blue-500/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/phrases`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <MessageSquare size={22} className="text-blue-500 mx-auto" />
+                  <p className="font-bold text-xs text-blue-500 text-center">Phrases</p>
+                </Link>
+              </Block>
+              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-purple-500/40 p-0 min-h-[96px]">
+                <Link href={`/learn/${slug}/qa`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
+                  <HelpCircle size={22} className="text-purple-500 mx-auto" />
+                  <p className="font-bold text-xs text-purple-500 text-center">Q&amp;A</p>
+                </Link>
+              </Block>
+
+              {/* Story text — left col, row 2 */}
+              <Block className="col-span-12 md:col-span-6 md:col-start-1 p-6 md:p-8 overflow-y-auto shadow-[0_2px_8px_rgba(0,0,0,0.05)]" style={{ maxHeight: '36rem' }}>
                 <TextGenerateEffect
                   words={content.story}
                   duration={0.4}
                   filter={true}
                   highlightedWords={content.highlightedWords}
-                  highlightColor={currentMeta.accent}
+                  highlightColor="#10b981"
                 />
-              </div>
+              </Block>
 
-              {(content.highlightedWords?.length ?? 0) > 0 && (
-                <div
-                  className="rounded-2xl border p-4"
-                  style={{ backgroundColor: `${currentMeta.accent}08`, borderColor: `${currentMeta.accent}25` }}
+              {/* Listening — right col, row 2 (grid-flow-dense backfills the gap) */}
+              <Block
+                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+                className="col-span-4 md:col-span-6 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('Listening Challenge — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
                 >
-                  <p className="text-[11px] font-bold uppercase tracking-widest mb-2.5" style={{ color: currentMeta.accent }}>
-                    Key words
-                  </p>
+                  <Headphones size={26} className="text-white mx-auto" />
+                  <div className="text-center">
+                    <p className="font-bold text-sm text-white">Listening</p>
+                    <p className="text-[11px] text-white/60 mt-0.5">Hear the story</p>
+                  </div>
+                </button>
+              </Block>
+
+              {/* Key words — left col, row 3 */}
+              {(content.highlightedWords?.length ?? 0) > 0 && (
+                <Block className="col-span-12 md:col-span-6 md:col-start-1 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mb-3">Key words</p>
                   <div className="flex flex-wrap gap-2">
                     {content.highlightedWords!.map((w, i) => (
                       <span
                         key={i}
-                        className="text-xs font-semibold px-2.5 py-1 rounded-full"
-                        style={{ backgroundColor: `${currentMeta.accent}18`, color: currentMeta.accent }}
+                        className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
                       >
                         {w}
                       </span>
                     ))}
                   </div>
-                </div>
+                </Block>
               )}
 
-              <div className="space-y-2">
-                <label className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
-                  Write your own sentence
-                </label>
+              {/* MonkeyType — right col, row 3 */}
+              <Block
+                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+                className="col-span-4 md:col-span-6 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('MonkeyType — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+                >
+                  <Keyboard size={26} className="text-white mx-auto" />
+                  <p className="font-bold text-xs text-white text-center">MonkeyType</p>
+                </button>
+              </Block>
+
+              {/* Write your sentence — left col, row 4 */}
+              <Block className="col-span-12 md:col-span-6 md:col-start-1 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Write your own sentence</p>
                 <textarea
                   value={storyInput}
                   onChange={e => setStoryInput(e.target.value)}
                   placeholder="Try using one of the key words…"
-                  className="w-full p-4 rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm resize-none h-24 focus:outline-none transition-colors"
-                  onFocus={e => (e.target.style.borderColor = `${currentMeta.accent}80`)}
-                  onBlur={e => (e.target.style.borderColor = '')}
+                  className="w-full p-3 rounded-2xl border-2 border-slate-200 dark:border-white/[0.08] bg-slate-50 dark:bg-white/[0.04] text-sm resize-none h-24 focus:outline-none focus:border-emerald-500/60 transition-colors text-slate-900 dark:text-white placeholder:text-slate-400"
                 />
-              </div>
-            </>
-          ) : (
-            <EmptyState message="No story in this lesson." />
-          )}
+              </Block>
 
-          <button
-            onClick={() => handleFinishLesson(100)}
-            disabled={saving}
-            className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 bg-primary text-white text-base font-bold active:scale-95 transition-transform shadow-lg shadow-primary/25 mt-auto disabled:opacity-60"
-          >
-            {saving ? 'Saving…' : 'Finish Lesson 🎉'}
-          </button>
+              {/* Type × 3 — right col, row 4 */}
+              <Block
+                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+                className="col-span-4 md:col-span-6 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
+              >
+                <button
+                  onClick={() => toast.info('Type × 3 — coming soon!')}
+                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
+                >
+                  <PenLine size={26} className="text-white mx-auto" />
+                  <p className="font-bold text-xs text-white text-center">Type × 3</p>
+                </button>
+              </Block>
+
+              {/* Finish lesson */}
+              <Block
+                whileHover={{ scale: 1.015 }}
+                className="col-span-12 p-0 overflow-hidden border-primary/20 min-h-[80px]"
+                style={{ background: 'linear-gradient(135deg, #ff8052 0%, #ff5c2b 100%)' }}
+              >
+                <button
+                  onClick={() => handleFinishLesson(100)}
+                  disabled={saving}
+                  className="w-full flex items-center justify-between gap-4 px-8 py-5 disabled:opacity-60"
+                >
+                  <div className="flex flex-col gap-0.5 text-left">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">All done!</span>
+                    <span className="text-xl font-bold text-white">{saving ? 'Saving…' : 'Finish Lesson 🎉'}</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-1.5 text-white/70 text-xs font-semibold">
+                      {[BookOpen, MessageSquare, HelpCircle, BookMarked].map((Icon, i) => (
+                        <Icon key={i} size={14} className="text-white/80" />
+                      ))}
+                    </div>
+                    <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
+                      <Check size={18} className="text-white" />
+                    </div>
+                  </div>
+                </button>
+              </Block>
+            </motion.div>
+          )}
         </div>
       )}
 
