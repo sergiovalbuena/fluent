@@ -2,6 +2,13 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
+import { FloatingNav } from '@/components/ui/floating-navbar'
+import {
+  IconHome,
+  IconLayoutGrid,
+  IconLanguage,
+  IconInfoCircle,
+} from '@tabler/icons-react'
 
 const CountUpStats = dynamic(() => import('@/components/landing/stats').then(m => ({ default: m.CountUpStats })))
 const Features = dynamic(() => import('@/components/landing/features').then(m => ({ default: m.Features })))
@@ -21,27 +28,45 @@ const languages = [
 
 
 export default function LandingPage() {
+  const navItems = [
+    {
+      name: 'Home',
+      link: '/',
+      icon: <IconHome size={15} className="text-slate-500 dark:text-slate-300" />,
+    },
+    {
+      name: 'Features',
+      link: '#features',
+      icon: <IconLayoutGrid size={15} className="text-slate-500 dark:text-slate-300" />,
+    },
+    {
+      name: 'Languages',
+      link: '#languages',
+      icon: <IconLanguage size={15} className="text-slate-500 dark:text-slate-300" />,
+    },
+    {
+      name: 'How it works',
+      link: '#how-it-works',
+      icon: <IconInfoCircle size={15} className="text-slate-500 dark:text-slate-300" />,
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f] text-slate-900 dark:text-slate-100 font-display">
 
-      {/* ── NAV ── */}
-      <header className="sticky top-0 z-50 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#23140f]/80 backdrop-blur-md">
+      {/* ── FLOATING NAV ── */}
+      <FloatingNav
+        navItems={navItems}
+        className="pr-2"
+      />
+
+      {/* ── TOP BAR (logo + CTA) — always visible ── */}
+      <header className="sticky top-0 z-40 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#23140f]/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="size-8 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm">
-              F
-            </div>
+            <div className="size-8 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm">F</div>
             <span className="text-lg font-bold tracking-tight">Fluent</span>
           </Link>
-
-          {/* Nav links — hidden on mobile */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">Features</a>
-            <a href="#languages" className="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">Languages</a>
-            <a href="#how-it-works" className="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary transition-colors">How it works</a>
-          </nav>
-
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <Link href="/login" className="hidden sm:block text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors px-3 py-1.5">
