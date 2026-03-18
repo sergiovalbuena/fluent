@@ -1,8 +1,8 @@
 'use client'
 
+import { memo, useRef } from 'react'
 import { useMotionValue, motion, useSpring, useTransform } from 'framer-motion'
-import { useRef } from 'react'
-import { FiArrowRight } from 'react-icons/fi'
+import { ArrowRight } from 'lucide-react'
 
 type FeatureItem = {
   heading: string
@@ -59,7 +59,7 @@ const features: FeatureItem[] = [
 
 interface LinkProps extends FeatureItem {}
 
-const FeatureLink = ({ heading, subheading, emoji, gradient, href }: LinkProps) => {
+const FeatureLink = memo(({ heading, subheading, emoji, gradient, href }: LinkProps) => {
   const ref = useRef<HTMLAnchorElement | null>(null)
 
   const x = useMotionValue(0)
@@ -130,11 +130,11 @@ const FeatureLink = ({ heading, subheading, emoji, gradient, href }: LinkProps) 
         transition={{ type: 'spring' }}
         className="relative z-10 p-4"
       >
-        <FiArrowRight className="text-3xl md:text-4xl text-primary" />
+        <ArrowRight className="text-3xl md:text-4xl text-primary" />
       </motion.div>
     </motion.a>
   )
-}
+})
 
 export function Features() {
   return (

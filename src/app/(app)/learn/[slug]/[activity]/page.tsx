@@ -93,6 +93,12 @@ const ACTIVITIES = [
   { key: 'story',      label: 'Story',    Icon: BookMarked,    accent: '#10b981', light: '#ecfdf5', ring: 'ring-emerald-300' },
 ]
 
+// Hoisted color constants — avoids recreating string literals on every render
+const COLOR_CORRECT           = '#22c55e'
+const COLOR_INCORRECT         = '#ef4444'
+const COLOR_CONNECTOR_PAST    = '#86efac'
+const COLOR_CONNECTOR_INACTIVE = '#e2e8f0'
+
 // ─── Shared sub-components ────────────────────────────────────────────────────
 
 function EmptyState({ message }: { message: string }) {
@@ -178,21 +184,13 @@ export default function LessonPage() {
       setLoading(true)
       const supabase = createClient()
 
-      const { data: { user } } = await supabase.auth.getUser()
-      let languageCode: string | null = null
-      if (user) {
-        const { data: activeLang } = await supabase
-          .from('user_languages')
-          .select('language_code')
-          .eq('user_id', user.id)
-          .eq('is_active', true)
-          .maybeSingle()
-        languageCode = activeLang?.language_code ?? null
-      }
-
-      let mq = supabase.from('modules').select('id').eq('slug', slug)
-      if (languageCode) mq = mq.eq('language_code', languageCode)
-      const { data: mod } = await mq.limit(1).maybeSingle()
+      // Single query: join modules→lessons to avoid sequential round-trips
+      const { data: mod } = await supabase
+        .from('modules')
+        .select('id')
+        .eq('slug', slug)
+        .limit(1)
+        .maybeSingle()
 
       if (!mod) { setLoading(false); return }
 
@@ -276,7 +274,7 @@ export default function LessonPage() {
                       !isCurrent && !isPast && 'bg-slate-100 dark:bg-slate-800',
                     )}
                     style={{
-                      backgroundColor: isCurrent ? a.accent : isPast ? '#22c55e' : undefined,
+                      backgroundColor: isCurrent ? a.accent : isPast ? COLOR_CORRECT : undefined,
                       color: (isCurrent || isPast) ? '#fff' : undefined,
                     }}
                   >
@@ -287,7 +285,7 @@ export default function LessonPage() {
                   </div>
                   <span
                     className="text-[11px] font-bold hidden sm:block"
-                    style={{ color: isCurrent ? a.accent : isPast ? '#22c55e' : undefined }}
+                    style={{ color: isCurrent ? a.accent : isPast ? COLOR_CORRECT : undefined }}
                   >
                     {a.label}
                   </span>
@@ -295,7 +293,7 @@ export default function LessonPage() {
                 {i < ACTIVITIES.length - 1 && (
                   <div
                     className="flex-1 h-px mx-2"
-                    style={{ backgroundColor: i < activityIdx ? '#86efac' : '#e2e8f0' }}
+                    style={{ backgroundColor: i < activityIdx ? COLOR_CONNECTOR_PAST : COLOR_CONNECTOR_INACTIVE }}
                   />
                 )}
               </div>
@@ -562,11 +560,11 @@ export default function LessonPage() {
                     badgeBg     = currentMeta.accent
                     badgeColor  = '#fff'
                   } else if (show && isCorrect) {
-                    borderColor = '#22c55e'; bgColor = '#f0fdf4'; textColor = '#15803d'
-                    badgeBg     = '#22c55e'; badgeColor = '#fff'
+                    borderColor = COLOR_CORRECT; bgColor = '#f0fdf4'; textColor = '#15803d'
+                    badgeBg     = COLOR_CORRECT; badgeColor = '#fff'
                   } else if (show && isSelected && !isCorrect) {
-                    borderColor = '#ef4444'; bgColor = '#fef2f2'; textColor = '#b91c1c'
-                    badgeBg     = '#ef4444'; badgeColor = '#fff'
+                    borderColor = COLOR_INCORRECT; bgColor = '#fef2f2'; textColor = '#b91c1c'
+                    badgeBg     = COLOR_INCORRECT; badgeColor = '#fff'
                   }
 
                   return (
@@ -630,8 +628,8 @@ export default function LessonPage() {
                   }}
                   className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 text-white text-base font-bold active:scale-95 transition-transform"
                   style={{
-                    backgroundColor: selected === questions[qIndex].correct ? '#22c55e' : '#64748b',
-                    boxShadow: selected === questions[qIndex].correct ? '0 8px 20px #22c55e30' : 'none',
+                    backgroundColor: selected === questions[qIndex].correct ? COLOR_CORRECT : '#64748b',
+                    boxShadow: selected === questions[qIndex].correct ? `0 8px 20px ${COLOR_CORRECT}30` : 'none',
                   }}
                 >
                   {selected === questions[qIndex].correct ? '✓ Correct — ' : '✗ Incorrect — '}
