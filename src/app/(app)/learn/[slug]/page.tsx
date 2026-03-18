@@ -2,7 +2,7 @@ import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowRight, Volume2, BookOpen, MessageSquare, HelpCircle, BookMarked } from 'lucide-react'
+import { ArrowRight, Volume2, BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine } from 'lucide-react'
 import { AppTopbar } from '@/components/layout/app-topbar'
 
 interface PageProps {
@@ -54,6 +54,22 @@ const EXERCISE_META: Record<string, {
     border: 'border-emerald-500/20',
     description: 'Read & write in context',
   },
+  arrange: {
+    label: 'Arrange',
+    Icon: Shuffle,
+    color: 'text-amber-500',
+    bg: 'bg-amber-500/10',
+    border: 'border-amber-500/20',
+    description: 'Build the sentence in order',
+  },
+  translate: {
+    label: 'Translate',
+    Icon: PenLine,
+    color: 'text-pink-500',
+    bg: 'bg-pink-500/10',
+    border: 'border-pink-500/20',
+    description: 'Write the translation yourself',
+  },
 }
 
 const getModuleBySlug = cache(async (slug: string) => {
@@ -90,6 +106,8 @@ export default async function LessonPage({ params }: PageProps) {
   const phrasesEx = exerciseList.find(e => e.type === 'phrases')
   const qaEx = exerciseList.find(e => e.type === 'qa')
   const storyEx = exerciseList.find(e => e.type === 'story')
+  const arrangeEx = exerciseList.find(e => e.type === 'arrange')
+  const translateEx = exerciseList.find(e => e.type === 'translate')
 
   const vocabItems: VocabItem[] = (vocabEx?.content as { items?: VocabItem[] })?.items ?? []
   const phraseItems: PhraseItem[] = (phrasesEx?.content as { items?: PhraseItem[] })?.items ?? []
@@ -233,6 +251,52 @@ export default async function LessonPage({ params }: PageProps) {
     </Link>
   ) : null
 
+  const arrangeMeta = EXERCISE_META.arrange
+  const arrangeCount = (arrangeEx?.content as { sentences?: unknown[] })?.sentences?.length ?? 0
+  const arrangeCard = arrangeEx ? (
+    <Link href={`/learn/${slug}/arrange`}>
+      <div className={`group bg-white dark:bg-slate-800/60 rounded-2xl border ${arrangeMeta.border} hover:shadow-md transition-all p-5 h-full flex flex-col gap-4 cursor-pointer`}>
+        <div className="flex items-start justify-between">
+          <div className="flex items-center gap-3">
+            <div className={`size-10 rounded-xl ${arrangeMeta.bg} flex items-center justify-center`}>
+              <arrangeMeta.Icon size={18} className={arrangeMeta.color} />
+            </div>
+            <div>
+              <p className="font-bold text-sm">{arrangeMeta.label}</p>
+              <p className="text-[11px] text-muted-foreground">{arrangeCount} sentences · {arrangeMeta.description}</p>
+            </div>
+          </div>
+          <div className={`size-7 rounded-full ${arrangeMeta.bg} flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shrink-0`}>
+            <ArrowRight size={13} className={arrangeMeta.color} />
+          </div>
+        </div>
+      </div>
+    </Link>
+  ) : null
+
+  const translateMeta = EXERCISE_META.translate
+  const translateCount = (translateEx?.content as { items?: unknown[] })?.items?.length ?? 0
+  const translateCard = translateEx ? (
+    <Link href={`/learn/${slug}/translate`}>
+      <div className={`group bg-white dark:bg-slate-800/60 rounded-2xl border ${translateMeta.border} hover:shadow-md transition-all p-5 h-full flex flex-col gap-4 cursor-pointer`}>
+        <div className="flex items-start justify-between">
+          <div className="flex items-center gap-3">
+            <div className={`size-10 rounded-xl ${translateMeta.bg} flex items-center justify-center`}>
+              <translateMeta.Icon size={18} className={translateMeta.color} />
+            </div>
+            <div>
+              <p className="font-bold text-sm">{translateMeta.label}</p>
+              <p className="text-[11px] text-muted-foreground">{translateCount} exercises · {translateMeta.description}</p>
+            </div>
+          </div>
+          <div className={`size-7 rounded-full ${translateMeta.bg} flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shrink-0`}>
+            <ArrowRight size={13} className={translateMeta.color} />
+          </div>
+        </div>
+      </div>
+    </Link>
+  ) : null
+
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
 
@@ -292,6 +356,8 @@ export default async function LessonPage({ params }: PageProps) {
               {phrasesCard}
               {qaCard}
               {storyCard}
+              {arrangeCard}
+              {translateCard}
             </div>
           </div>
 
