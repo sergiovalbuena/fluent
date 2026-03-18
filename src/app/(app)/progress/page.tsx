@@ -31,12 +31,12 @@ const LESSON_TYPE_ICON: Record<string, string> = {
 }
 
 const milestones = [
-  { label: '1st Lesson', target: 1, icon: '🎯', achieved: totalCompleted >= 1 },
-  { label: '10 Lessons', target: 10, icon: '📚', achieved: totalCompleted >= 10 },
-  { label: '50 XP', target: 50, icon: '⭐', achieved: totalXp >= 50 },
-  { label: '7-Day Streak', target: 7, icon: '🔥', achieved: longestStreak >= 7 },
-  { label: '50 Words', target: 50, icon: '🗂️', achieved: wordsLearned >= 50 },
-  { label: '100 XP', target: 100, icon: '🏆', achieved: totalXp >= 100 },
+  { id: 'first-lesson',  label: '1st Lesson',  target: 1,   icon: '🎯', achieved: totalCompleted >= 1 },
+  { id: 'ten-lessons',   label: '10 Lessons',  target: 10,  icon: '📚', achieved: totalCompleted >= 10 },
+  { id: 'fifty-xp',      label: '50 XP',       target: 50,  icon: '⭐', achieved: totalXp >= 50 },
+  { id: 'week-streak',   label: '7-Day Streak', target: 7,  icon: '🔥', achieved: longestStreak >= 7 },
+  { id: 'fifty-words',   label: '50 Words',    target: 50,  icon: '🗂️', achieved: wordsLearned >= 50 },
+  { id: 'hundred-xp',   label: '100 XP',       target: 100, icon: '🏆', achieved: totalXp >= 100 },
 ]
 
 export default function ProgressPage() {
@@ -85,15 +85,15 @@ export default function ProgressPage() {
           {/* ── Stats grid ── */}
           <div className="grid grid-cols-2 gap-3">
             {[
-              { icon: Flame, label: 'Day Streak', value: streak, suffix: '', color: 'text-orange-500', bg: 'bg-orange-500/10' },
-              { icon: Zap, label: 'Total XP', value: totalXp, suffix: '', color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
-              { icon: BookOpen, label: 'Lessons Done', value: totalCompleted, suffix: '', color: 'text-blue-500', bg: 'bg-blue-500/10' },
-              { icon: Target, label: 'Avg Accuracy', value: avgScore, suffix: '%', color: 'text-green-500', bg: 'bg-green-500/10' },
-              { icon: Star, label: 'Words Learned', value: wordsLearned, suffix: '', color: 'text-purple-500', bg: 'bg-purple-500/10' },
-              { icon: TrendingUp, label: 'Best Streak', value: longestStreak, suffix: ' days', color: 'text-primary', bg: 'bg-primary/10' },
+              { id: 'streak',   icon: Flame,      label: 'Day Streak',   value: streak,         suffix: '',      color: 'text-orange-500', bg: 'bg-orange-500/10' },
+              { id: 'xp',       icon: Zap,        label: 'Total XP',     value: totalXp,        suffix: '',      color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
+              { id: 'lessons',  icon: BookOpen,   label: 'Lessons Done', value: totalCompleted, suffix: '',      color: 'text-blue-500',   bg: 'bg-blue-500/10'   },
+              { id: 'accuracy', icon: Target,     label: 'Avg Accuracy', value: avgScore,       suffix: '%',     color: 'text-green-500',  bg: 'bg-green-500/10'  },
+              { id: 'words',    icon: Star,       label: 'Words Learned',value: wordsLearned,   suffix: '',      color: 'text-purple-500', bg: 'bg-purple-500/10' },
+              { id: 'best',     icon: TrendingUp, label: 'Best Streak',  value: longestStreak,  suffix: ' days', color: 'text-primary',    bg: 'bg-primary/10'    },
             ].map(s => (
               <div
-                key={s.label}
+                key={s.id}
                 className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 p-4 flex items-center gap-3"
               >
                 <div className={`size-10 rounded-xl ${s.bg} flex items-center justify-center shrink-0`}>
@@ -117,7 +117,7 @@ export default function ProgressPage() {
             </div>
             <div className="flex items-end justify-between gap-2 h-24">
               {dailyValues.map((val, i) => (
-                <div key={i} className="flex flex-col items-center gap-1.5 flex-1">
+                <div key={DAYS[i]} className="flex flex-col items-center gap-1.5 flex-1">
                   <div
                     style={{ height: `${Math.max((val / maxVal) * 80, 6)}px` }}
                     className={`w-full rounded-t-lg transition-all ${val > 0 ? 'bg-primary' : 'bg-slate-100 dark:bg-slate-700'}`}
@@ -139,7 +139,7 @@ export default function ProgressPage() {
             <div className="grid grid-cols-3 gap-3">
               {milestones.map(m => (
                 <div
-                  key={m.label}
+                  key={m.id}
                   className={`flex flex-col items-center gap-2 p-4 rounded-2xl border text-center transition-all ${
                     m.achieved
                       ? 'bg-primary/10 border-primary/20'

@@ -4,10 +4,23 @@ import { DashboardContent, type Module } from '@/components/dashboard/dashboard-
 export default async function DashboardPage() {
   const supabase = await createClient()
 
+  // Resolve user's active language (fallback to 'es')
+  const { data: { user } } = await supabase.auth.getUser()
+  let languageCode = 'es'
+  if (user) {
+    const { data: activeLang } = await supabase
+      .from('user_languages')
+      .select('language_code')
+      .eq('user_id', user.id)
+      .eq('is_active', true)
+      .maybeSingle()
+    if (activeLang?.language_code) languageCode = activeLang.language_code
+  }
+
   const { data } = await supabase
     .from('modules')
     .select('*, lessons(id)')
-    .eq('language_code', 'es')
+    .eq('language_code', languageCode)
     .eq('is_published', true)
     .order('order_index')
 

@@ -27,14 +27,14 @@ export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
 
   const current = LANGUAGES.find(l => l.code === active) ?? LANGUAGES[0]
 
-  // Close on outside click
+  // Close on outside click — ref is stable (useRef), setOpen is stable (useState setter)
   useEffect(() => {
     function handler(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
     }
     document.addEventListener('mousedown', handler)
     return () => document.removeEventListener('mousedown', handler)
-  }, [])
+  }, [setOpen])
 
   function select(code: string) {
     setActive(code)
