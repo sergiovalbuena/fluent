@@ -60,6 +60,13 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
   const firstName = displayName.split(' ')[0]
   const weekDaysActive = stats.weekActivity.filter(v => v > 0).length
   const maxActivity = Math.max(...stats.weekActivity, 1)
+  const todayIdx = (new Date().getDay() + 6) % 7 // Mon=0, Sun=6
+  const totalSessions = stats.weekActivity.reduce((a, b) => a + b, 0)
+
+  // Shared hover for gradient cards
+  const gradientHover = { rotate: '0deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
+  const gradientHoverTiltL = { rotate: '2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
+  const gradientHoverTiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
@@ -105,10 +112,9 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               VIDEO CLIP (row-span-2)
           ────────────────────────────────────────────────────────────────── */}
           <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer border-indigo-900/30"
-            style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #1e3a5f 100%)' }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.02, filter: 'brightness(1.14) saturate(1.12)' }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => {}}
+            style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #1e3a5f 100%)' }}
           >
             {/* Fake thumbnail grain */}
             <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
@@ -148,7 +154,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               STREAK
           ────────────────────────────────────────────────────────────────── */}
           <Block
-            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltL}
             className="col-span-3 md:col-span-2 border-orange-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-default"
             style={{ background: 'linear-gradient(135deg, #ff8052 0%, #ef4444 100%)' }}
           >
@@ -161,7 +167,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               QUICK PRACTICE
           ────────────────────────────────────────────────────────────────── */}
           <Block
-            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltR}
             className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
             style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)' }}
           >
@@ -223,7 +229,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* SHORT STORY */}
           <Block
-            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltL}
             className="col-span-6 md:col-span-2 border-indigo-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
             style={{ background: 'linear-gradient(135deg, #4338ca 0%, #1d4ed8 100%)' }}
           >
@@ -236,7 +242,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* LESSONS DONE */}
           <Block
-            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltR}
             className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-default"
             style={{ background: 'linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%)' }}
           >
@@ -247,7 +253,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* DAILY CHALLENGE */}
           <Block
-            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltL}
             className="col-span-6 md:col-span-2 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
             style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' }}
           >
@@ -260,7 +266,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* MUSIC TIME */}
           <Block
-            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltR}
             className="col-span-6 md:col-span-2 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
             style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)' }}
           >
@@ -313,33 +319,70 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               WEEKLY ACTIVITY CHART — left side row 2 (col-span-8)
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-8 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <div className="flex items-center justify-between mb-5">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
-                This week
-              </p>
-              <span className="text-[11px] font-semibold text-slate-400 dark:text-slate-500 tabular-nums">
-                {weekDaysActive} / 7 days
-              </span>
+          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+            {/* Header */}
+            <div className="flex items-start justify-between mb-5">
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-0.5">
+                  This week
+                </p>
+                <p className="text-2xl font-bold text-slate-900 dark:text-white tabular-nums leading-none">
+                  {totalSessions}
+                  <span className="text-sm font-semibold text-slate-400 dark:text-slate-500 ml-1.5">sessions</span>
+                </p>
+              </div>
+              <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
+                <span className="size-1.5 rounded-full bg-primary" />
+                <span className="text-[11px] font-bold text-primary tabular-nums">{weekDaysActive} / 7 days</span>
+              </div>
             </div>
-            <div className="flex items-end gap-2 h-14">
-              {stats.weekActivity.map((v, i) => (
-                <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1">
-                  <motion.div
-                    style={{ height: `${Math.max((v / maxActivity) * 44, 4)}px` }}
-                    className={cn(
-                      'w-full rounded-md',
-                      v > 0 ? 'bg-primary' : 'bg-slate-100 dark:bg-white/[0.06]'
-                    )}
-                    initial={{ scaleY: 0, originY: 1 }}
-                    animate={{ scaleY: 1 }}
-                    transition={{ delay: 0.4 + i * 0.04, duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
-                  />
-                  <span className="text-[9px] font-bold text-slate-400 dark:text-slate-500">
-                    {DAYS[i]}
-                  </span>
-                </div>
-              ))}
+
+            {/* Chart */}
+            <div className="flex items-end gap-2 md:gap-3 h-24">
+              {stats.weekActivity.map((v, i) => {
+                const isToday = i === todayIdx
+                const barH = Math.max((v / maxActivity) * 80, 6)
+                return (
+                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-2 flex-1 group">
+                    {/* Value label */}
+                    <motion.span
+                      className={cn(
+                        'text-[10px] font-bold tabular-nums transition-colors',
+                        v > 0 ? 'text-primary' : 'text-transparent'
+                      )}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5 + i * 0.06 }}
+                    >
+                      {v > 0 ? v : '·'}
+                    </motion.span>
+
+                    {/* Bar */}
+                    <motion.div
+                      style={{ height: `${barH}px` }}
+                      className={cn(
+                        'w-full rounded-lg transition-all',
+                        isToday && v > 0
+                          ? 'bg-primary shadow-sm shadow-primary/30'
+                          : v > 0
+                          ? 'bg-primary/60'
+                          : 'bg-slate-100 dark:bg-white/[0.06]'
+                      )}
+                      initial={{ scaleY: 0, originY: '100%' }}
+                      animate={{ scaleY: 1 }}
+                      transition={{ delay: 0.35 + i * 0.06, duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
+                    />
+
+                    {/* Day label */}
+                    <span className={cn(
+                      'text-[10px] font-bold',
+                      isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500'
+                    )}>
+                      {DAYS[i]}
+                    </span>
+                  </div>
+                )
+              })}
             </div>
           </Block>
 
@@ -350,7 +393,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* Play */}
           <Block
-            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltR}
             className="col-span-6 md:col-span-3 border-indigo-500/20 p-0 min-h-[120px]"
             style={{ background: 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)' }}
           >
@@ -362,7 +405,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* MarIA */}
           <Block
-            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltL}
             className="col-span-6 md:col-span-3 border-rose-400/20 p-0 min-h-[120px]"
             style={{ background: 'linear-gradient(135deg, #e11d48 0%, #db2777 100%)' }}
           >
@@ -374,7 +417,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* Gems */}
           <Block
-            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltR}
             className="col-span-6 md:col-span-3 border-amber-300/30 p-0 min-h-[120px]"
             style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #ea580c 100%)' }}
           >
@@ -386,7 +429,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
 
           {/* Review */}
           <Block
-            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            whileHover={gradientHoverTiltL}
             className="col-span-6 md:col-span-3 border-teal-400/20 p-0 min-h-[120px]"
             style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0284c7 100%)' }}
           >
