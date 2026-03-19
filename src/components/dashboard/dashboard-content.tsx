@@ -266,13 +266,13 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               LESSONS — wider card (row-span-2 alongside This Week)
           ────────────────────────────────────────────────────────────────── */}
           <Block className="col-span-12 md:col-span-4 md:row-span-2 p-5 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-4 shrink-0">
               <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lessons</p>
               <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
                 View all <ChevronRight size={12} />
               </Link>
             </div>
-            <div className="flex flex-col gap-2.5 flex-1 overflow-y-auto">
+            <div className="flex flex-col gap-2.5 overflow-y-auto flex-1 pr-1 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:transparent [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-primary/20">
               {modules.map(m => (
                 <Link key={m.id} href={`/learn/${m.slug}`}>
                   <motion.div
