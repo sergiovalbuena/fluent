@@ -82,11 +82,12 @@ function SidebarContent({ modules }: { modules: Module[] }) {
 
         {/* Lessons collapsible — second position */}
         <SidebarGroup className="mt-0.5">
-          <button
+          <Link
+            href="/learn"
             onClick={() => setLessonsOpen(v => !v)}
             className={cn(
               'flex items-center gap-3 w-full px-3 py-2.5 rounded-xl transition-all font-medium text-sm',
-              anyLessonActive && !lessonsOpen
+              anyLessonActive || pathname === '/learn'
                 ? 'bg-primary/10 text-primary'
                 : 'text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary',
             )}
@@ -113,7 +114,7 @@ function SidebarContent({ modules }: { modules: Module[] }) {
             >
               <ChevronDown size={14} />
             </m.span>
-          </button>
+          </Link>
 
           <AnimatePresence initial={false}>
             {lessonsOpen && (

@@ -181,16 +181,18 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
-              STREAK
+              MARIA
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={gradientHoverTiltL}
-            className="col-span-3 md:col-span-2 border-orange-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-default"
-            style={{ background: 'linear-gradient(135deg, #ff8052 0%, #ef4444 100%)' }}
+            className="col-span-3 md:col-span-2 border-rose-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #e11d48 0%, #db2777 100%)' }}
           >
-            <span className="text-[2rem] leading-none select-none">🔥</span>
-            <p className="text-[1.75rem] font-bold leading-none text-white tabular-nums">{stats.streak}</p>
-            <p className="text-[10px] font-bold text-white/70 mt-0.5">day streak</p>
+            <Link href="/maria" className="flex flex-col items-center gap-1 w-full">
+              <Bot size={22} className="text-white" />
+              <p className="text-[13px] font-bold text-white text-center leading-tight">MarIA</p>
+              <p className="text-[10px] font-semibold text-white/70">AI tutor</p>
+            </Link>
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
