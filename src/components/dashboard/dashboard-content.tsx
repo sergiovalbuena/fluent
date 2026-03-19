@@ -33,7 +33,7 @@ const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
 
 // ── Block primitive ────────────────────────────────────────────────────────────
 // Mirrors the RevealBento pattern: spring pop entrance + optional tilt hover.
-type BlockProps = { className?: string; children?: React.ReactNode } & MotionProps
+type BlockProps = { className?: string; children?: React.ReactNode; onClick?: () => void } & MotionProps
 
 const Block = ({ className, children, ...rest }: BlockProps) => (
   <motion.div
