@@ -1,95 +1,248 @@
-import { ThemeToggle } from '@/components/ui/theme-toggle'
-import Link from 'next/link'
-import { Gamepad2, Zap, Trophy, Shuffle, Headphones, PenLine } from 'lucide-react'
+'use client'
 
-const activities = [
+import Link from 'next/link'
+import { motion, type MotionProps } from 'framer-motion'
+import {
+  Zap, Shuffle, Headphones, PenLine, Trophy,
+  Star, Gamepad2, Target, type LucideIcon,
+} from 'lucide-react'
+import { cn } from '@/lib/utils'
+import { AppTopbar } from '@/components/layout/app-topbar'
+
+// ── Block primitive (mirrors dashboard) ───────────────────────────────────────
+type BlockProps = { className?: string; children?: React.ReactNode } & MotionProps
+const Block = ({ className, children, ...rest }: BlockProps) => (
+  <motion.div
+    variants={{
+      initial: { scale: 0.5, y: 50, opacity: 0 },
+      animate: { scale: 1, y: 0, opacity: 1 },
+    }}
+    transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
+    className={cn(
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      className
+    )}
+    {...rest}
+  >
+    {children}
+  </motion.div>
+)
+
+// ── Data ──────────────────────────────────────────────────────────────────────
+type Game = {
+  icon: LucideIcon
+  title: string
+  description: string
+  gradient: string
+  border: string
+  difficulty: 1 | 2 | 3
+  tag: string
+  href: string
+}
+
+const GAMES: Game[] = [
   {
     icon: Zap,
     title: 'Speed Round',
-    description: 'Match words as fast as you can before time runs out.',
-    color: 'bg-yellow-400/10 text-yellow-500',
-    tag: 'Coming soon',
+    description: 'Match words before time runs out',
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)',
+    border: 'border-amber-400/20',
+    difficulty: 3,
+    tag: 'Fast & Furious',
+    href: '/play/speedround',
   },
   {
     icon: Shuffle,
     title: 'Word Scramble',
-    description: 'Unscramble jumbled letters to form the correct word.',
-    color: 'bg-blue-400/10 text-blue-500',
-    tag: 'Coming soon',
+    description: 'Unscramble letters to find the word',
+    gradient: 'linear-gradient(135deg, #3b82f6 0%, #4338ca 100%)',
+    border: 'border-blue-400/20',
+    difficulty: 2,
+    tag: 'Brain Teaser',
+    href: '/play/wordscramble',
   },
   {
     icon: Headphones,
-    title: 'Listening Challenge',
-    description: 'Listen to audio and pick the right translation.',
-    color: 'bg-purple-400/10 text-purple-500',
-    tag: 'Coming soon',
+    title: 'Listening',
+    description: 'Hear it, then pick the right answer',
+    gradient: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)',
+    border: 'border-violet-400/20',
+    difficulty: 2,
+    tag: 'Ear Training',
+    href: '/play/listening',
   },
   {
     icon: PenLine,
     title: 'Fill in the Blank',
-    description: 'Complete sentences by choosing the missing word.',
-    color: 'bg-green-400/10 text-green-500',
-    tag: 'Coming soon',
-  },
-  {
-    icon: Trophy,
-    title: 'Daily Challenge',
-    description: 'A new set of activities every day. Earn bonus XP!',
-    color: 'bg-primary/10 text-primary',
-    tag: 'Coming soon',
+    description: 'Complete the sentence correctly',
+    gradient: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)',
+    border: 'border-emerald-500/20',
+    difficulty: 1,
+    tag: 'Writing',
+    href: '/play/filltheblank',
   },
 ]
 
+// ── Hover presets ─────────────────────────────────────────────────────────────
+const tiltL = { rotate: '2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
+const tiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
+const lift  = { scale: 1.02, filter: 'brightness(1.06)' } as const
+
+// ── Page ──────────────────────────────────────────────────────────────────────
 export default function PlayPage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="flex items-center p-4 justify-between sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
-        <h1 className="text-xl font-bold">Play &amp; Practice</h1>
-        <ThemeToggle />
-      </header>
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+      <AppTopbar title="Play & Practice" />
 
-      <main className="flex-1 flex flex-col p-5 gap-6 max-w-lg mx-auto w-full">
-        {/* Hero */}
-        <div className="flex flex-col items-center text-center gap-3 pt-4 pb-2">
-          <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-            <Gamepad2 size={34} className="text-primary" />
-          </div>
-          <div className="space-y-1">
-            <h2 className="text-2xl font-bold">Games &amp; Activities</h2>
-            <p className="text-muted-foreground text-sm max-w-xs">
-              Learn through play. Practice vocabulary and grammar with fun mini-games.
-            </p>
-          </div>
-        </div>
+      <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
+        <motion.div
+          initial="initial"
+          animate="animate"
+          transition={{ staggerChildren: 0.05 }}
+          className="mx-auto max-w-6xl grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+        >
 
-        {/* Activity cards */}
-        <div className="flex flex-col gap-3">
-          {activities.map(({ icon: Icon, title, description, color, tag }) => (
+          {/* ── Daily Challenge — featured hero ─────────────────────────────── */}
+          <Block
+            whileHover={lift}
+            className="col-span-12 md:col-span-8 border-emerald-500/20 relative overflow-hidden cursor-pointer min-h-[200px]"
+            style={{ background: 'linear-gradient(160deg, #064e3b 0%, #059669 55%, #0d9488 100%)' }}
+          >
+            {/* Grain texture */}
             <div
-              key={title}
-              className="flex items-start gap-4 bg-primary/5 rounded-2xl p-4 opacity-80"
-            >
-              <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 ${color}`}>
-                <Icon size={22} />
+              className="absolute inset-0 opacity-[0.03] pointer-events-none"
+              style={{
+                backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+                backgroundSize: 'cover',
+              }}
+            />
+            {/* Trophy watermark */}
+            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none">
+              <Trophy size={110} className="text-white/[0.05]" />
+            </div>
+
+            <div className="relative p-6 md:p-8 flex flex-col gap-4 h-full">
+              {/* Label + XP badge */}
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/55">
+                  <span className="size-1.5 rounded-full bg-emerald-300 animate-pulse" />
+                  Daily Challenge
+                </span>
+                <span className="ml-auto text-[11px] font-bold bg-white/15 border border-white/10 text-white px-2.5 py-0.5 rounded-full">
+                  +50 XP
+                </span>
               </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2">
-                  <span className="font-bold text-sm">{title}</span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary px-2 py-0.5 rounded-full">
-                    {tag}
-                  </span>
+
+              {/* Title */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                  Today's Challenge
+                </h2>
+                <p className="text-sm text-white/55 mt-1">
+                  5 mini-games · Earn bonus XP · Resets daily
+                </p>
+              </div>
+
+              {/* Progress bar */}
+              <div>
+                <div className="flex items-center justify-between mb-1.5">
+                  <span className="text-[10px] font-bold text-white/45 uppercase tracking-wider">Progress</span>
+                  <span className="text-[10px] font-bold text-white/65 tabular-nums">0 / 5</span>
                 </div>
-                <p className="text-muted-foreground text-xs mt-0.5">{description}</p>
+                <div className="h-1.5 rounded-full bg-white/10 overflow-hidden">
+                  <div className="h-full w-0 bg-white/40 rounded-full" />
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className="mt-auto pt-1">
+                <button className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/15 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-colors">
+                  Coming Soon
+                  <Star size={13} className="text-yellow-300" />
+                </button>
               </div>
             </div>
-          ))}
-        </div>
+          </Block>
 
-        <Link href="/dashboard" className="mt-auto">
-          <button className="w-full bg-primary text-white font-bold px-6 py-3 rounded-xl active:scale-95 transition-transform">
-            Back to Learning
-          </button>
-        </Link>
+          {/* ── Game Stats ──────────────────────────────────────────────────── */}
+          <Block className="col-span-12 md:col-span-4 p-5 flex flex-col gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Game Stats</p>
+
+            <div className="flex flex-col gap-3 flex-1 justify-center">
+              {(
+                [
+                  { label: 'Total Game XP', value: '0', Icon: Star },
+                  { label: 'Games Played', value: '0', Icon: Gamepad2 },
+                  { label: 'Best Streak', value: '0', Icon: Target },
+                ] as const
+              ).map(({ label, value, Icon }) => (
+                <div key={label} className="flex items-center gap-3">
+                  <div className="size-9 rounded-xl bg-primary/[0.08] flex items-center justify-center shrink-0">
+                    <Icon size={16} className="text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{label}</p>
+                    <p className="text-lg font-bold text-slate-900 dark:text-white tabular-nums leading-tight mt-0.5">
+                      {value}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-3 border-t border-black/[0.05] dark:border-white/[0.05]">
+              <p className="text-[10px] text-slate-400 dark:text-slate-500 text-center">
+                Games launching soon ✨
+              </p>
+            </div>
+          </Block>
+
+          {/* ── Game tiles ──────────────────────────────────────────────────── */}
+          {GAMES.map(({ icon: Icon, title, description, gradient, border, difficulty, tag, href }, i) => (
+            <Link key={title} href={href} className="col-span-6 md:col-span-3">
+              <Block
+                whileHover={i % 2 === 0 ? tiltL : tiltR}
+                className={cn(
+                  'relative overflow-hidden cursor-pointer min-h-[170px] flex flex-col h-full',
+                  border
+                )}
+                style={{ background: gradient }}
+              >
+                {/* Difficulty dots — top right */}
+                <div className="absolute top-3.5 right-3.5 flex items-center gap-0.5">
+                  {([1, 2, 3] as const).map(d => (
+                    <div
+                      key={d}
+                      className={cn(
+                        'size-1.5 rounded-full',
+                        d <= difficulty ? 'bg-white/65' : 'bg-white/18'
+                      )}
+                    />
+                  ))}
+                </div>
+
+                <div className="flex flex-col gap-2.5 p-4 h-full">
+                  {/* Category tag */}
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-white/45 pr-10">
+                    {tag}
+                  </span>
+
+                  {/* Icon */}
+                  <div className="size-11 rounded-2xl bg-white/15 flex items-center justify-center">
+                    <Icon size={22} className="text-white" />
+                  </div>
+
+                  {/* Title + description */}
+                  <div className="mt-auto">
+                    <p className="text-sm font-bold text-white leading-tight">{title}</p>
+                    <p className="text-[11px] text-white/50 mt-0.5 leading-snug">{description}</p>
+                  </div>
+                </div>
+              </Block>
+            </Link>
+          ))}
+
+        </motion.div>
       </main>
     </div>
   )
