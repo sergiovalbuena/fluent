@@ -42,14 +42,6 @@ type Game = {
   href: string
 }
 
-type ComingSoonGame = {
-  icon: LucideIcon
-  title: string
-  description: string
-  gradient: string
-  tag: string
-}
-
 const ACTIVE_GAMES: Game[] = [
   {
     icon: Zap,
@@ -131,14 +123,56 @@ const ACTIVE_GAMES: Game[] = [
     tag: 'Strategy',
     href: '/play/tictactoe',
   },
-]
-
-const COMING_SOON: ComingSoonGame[] = [
-  { icon: Keyboard, title: 'MonkeyType',  description: 'Type Spanish words as fast as you can',   gradient: 'linear-gradient(135deg, #4d7c0f, #65a30d)', tag: 'Speed Typing' },
-  { icon: BookOpen, title: 'FlashCards',  description: 'Flip through vocabulary flashcards',       gradient: 'linear-gradient(135deg, #b45309, #d97706)', tag: 'Vocabulary'   },
-  { icon: BookOpen, title: 'Type × 3',    description: 'Reinforce words by typing them 3 times',   gradient: 'linear-gradient(135deg, #0369a1, #0284c7)', tag: 'Repetition'   },
-  { icon: BookOpen, title: 'Short Story', description: 'Read a micro-story and answer questions',   gradient: 'linear-gradient(135deg, #9a3412, #c2410c)', tag: 'Reading'      },
-  { icon: Play,     title: 'Short Video', description: 'Watch a clip and test your comprehension',  gradient: 'linear-gradient(135deg, #7f1d1d, #b91c1c)', tag: 'Watching'     },
+  {
+    icon: Keyboard,
+    title: 'MonkeyType',
+    description: 'Type Spanish words as fast as you can',
+    gradient: 'linear-gradient(135deg, #4d7c0f 0%, #65a30d 100%)',
+    border: 'border-lime-500/20',
+    difficulty: 3,
+    tag: 'Speed Typing',
+    href: '/play/monkeytype',
+  },
+  {
+    icon: BookOpen,
+    title: 'FlashCards',
+    description: 'Flip cards to test your vocabulary',
+    gradient: 'linear-gradient(135deg, #b45309 0%, #d97706 100%)',
+    border: 'border-amber-500/20',
+    difficulty: 1,
+    tag: 'Vocabulary',
+    href: '/play/flashcards',
+  },
+  {
+    icon: PenLine,
+    title: 'Type × 3',
+    description: 'Type each word 3 times to remember it',
+    gradient: 'linear-gradient(135deg, #0369a1 0%, #0284c7 100%)',
+    border: 'border-sky-500/20',
+    difficulty: 2,
+    tag: 'Repetition',
+    href: '/play/typex3',
+  },
+  {
+    icon: BookOpen,
+    title: 'Short Story',
+    description: 'Read a story and test your comprehension',
+    gradient: 'linear-gradient(135deg, #9a3412 0%, #c2410c 100%)',
+    border: 'border-orange-500/20',
+    difficulty: 2,
+    tag: 'Reading',
+    href: '/play/shortstory',
+  },
+  {
+    icon: Play,
+    title: 'Short Video',
+    description: 'Watch Spanish lessons on YouTube',
+    gradient: 'linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%)',
+    border: 'border-red-500/20',
+    difficulty: 1,
+    tag: 'Watching',
+    href: '/play/shortvideo',
+  },
 ]
 
 // ── Hover presets ─────────────────────────────────────────────────────────────
@@ -298,53 +332,6 @@ export default function PlayPage() {
                 </div>
               </Block>
             </Link>
-          ))}
-
-          {/* ── Coming Soon label ────────────────────────────────────────────── */}
-          <motion.p
-            variants={{
-              initial: { opacity: 0, y: 10 },
-              animate: { opacity: 1, y: 0 },
-            }}
-            className="col-span-12 text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 px-1 pt-2"
-          >
-            Coming Soon
-          </motion.p>
-
-          {/* ── Coming Soon tiles ────────────────────────────────────────────── */}
-          {COMING_SOON.map(({ icon: Icon, title, description, gradient, tag }) => (
-            <div key={title} className="col-span-6 md:col-span-3 opacity-70">
-              <Block
-                whileHover={{ scale: 1.02 }}
-                className="relative overflow-hidden min-h-[170px] flex flex-col h-full border-white/10"
-                style={{ background: gradient }}
-              >
-                {/* Soon badge — top right */}
-                <div className="absolute top-3.5 right-3.5">
-                  <span className="bg-white/20 text-white/60 text-[9px] font-bold px-2 py-0.5 rounded-full">
-                    Soon
-                  </span>
-                </div>
-
-                <div className="flex flex-col gap-2.5 p-4 h-full">
-                  {/* Category tag */}
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-white/45 pr-12">
-                    {tag}
-                  </span>
-
-                  {/* Icon */}
-                  <div className="size-11 rounded-2xl bg-white/15 flex items-center justify-center">
-                    <Icon size={22} className="text-white" />
-                  </div>
-
-                  {/* Title + description */}
-                  <div className="mt-auto">
-                    <p className="text-sm font-bold text-white leading-tight">{title}</p>
-                    <p className="text-[11px] text-white/50 mt-0.5 leading-snug">{description}</p>
-                  </div>
-                </div>
-              </Block>
-            </div>
           ))}
 
         </motion.div>
