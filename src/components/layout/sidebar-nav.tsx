@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot, ChevronDown } from 'lucide-react'
+import { BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot, ChevronDown, BookOpen } from 'lucide-react'
 import { motion as m, AnimatePresence } from 'framer-motion'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import {
@@ -17,12 +17,13 @@ import {
 } from '@/components/ui/sidebar'
 import { cn } from '@/lib/utils'
 
-const mainLinks: SidebarLinkItem[] = [
+type Module = { slug: string; title: string; icon: string }
+
+const topLinks: SidebarLinkItem[] = [
   { href: '/dashboard', icon: <Home size={20} strokeWidth={1.8} />, label: 'Home' },
 ]
 
-const lessonLinks: SidebarLinkItem[] = [
-  { href: '/learn', icon: <BookOpen size={20} strokeWidth={1.8} />, label: 'Lessons' },
+const bottomLinks: SidebarLinkItem[] = [
   { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: 'Play' },
   { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: 'Gems' },
   { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: 'MarIA' },
@@ -36,16 +37,15 @@ const profileLink: SidebarLinkItem = {
   label: 'Profile',
 }
 
-function SidebarContent() {
+function SidebarContent({ modules }: { modules: Module[] }) {
   const pathname = usePathname()
   const { open: sidebarOpen, animate } = useSidebar()
   const [lessonsOpen, setLessonsOpen] = useState(true)
 
-  const isActive = (link: SidebarLinkItem) =>
-    pathname === link.href ||
-    (link.href !== '/dashboard' && pathname.startsWith(link.href + '/'))
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(href + '/')
 
-  const anyLessonActive = lessonLinks.some(isActive)
+  const anyLessonActive = modules.some(m => isActive(`/learn/${m.slug}`))
 
   return (
     <div className="flex flex-col h-full">
@@ -66,17 +66,22 @@ function SidebarContent() {
         </m.span>
       </Link>
 
-      {/* Main nav */}
-      <nav className="flex-1 flex flex-col px-2 pt-1 overflow-y-auto">
+      {/* Nav */}
+      <nav className="flex-1 flex flex-col px-2 pt-1 overflow-y-auto gap-0.5">
+
+        {/* Home */}
         <SidebarGroup>
-          {mainLinks.map(link => (
-            <SidebarLink key={link.href} link={link} active={isActive(link)} />
+          {topLinks.map(link => (
+            <SidebarLink
+              key={link.href}
+              link={link}
+              active={pathname === '/dashboard'}
+            />
           ))}
         </SidebarGroup>
 
-        {/* Lessons collapsible group */}
-        <SidebarGroup className="mt-1">
-          {/* Trigger */}
+        {/* Lessons collapsible — second position */}
+        <SidebarGroup className="mt-0.5">
           <button
             onClick={() => setLessonsOpen(v => !v)}
             className={cn(
@@ -110,7 +115,6 @@ function SidebarContent() {
             </m.span>
           </button>
 
-          {/* Dropdown items */}
           <AnimatePresence initial={false}>
             {lessonsOpen && (
               <m.div
@@ -122,19 +126,37 @@ function SidebarContent() {
                 className="overflow-hidden"
               >
                 <div className="ml-3 pl-3 border-l border-primary/15 flex flex-col gap-0.5 py-1">
-                  {lessonLinks.map(link => (
-                    <SidebarLink key={link.href} link={link} active={isActive(link)} />
+                  {modules.map(mod => (
+                    <SidebarLink
+                      key={mod.slug}
+                      link={{
+                        href: `/learn/${mod.slug}`,
+                        icon: <span className="text-base leading-none">{mod.icon}</span>,
+                        label: mod.title,
+                      }}
+                      active={isActive(`/learn/${mod.slug}`)}
+                    />
                   ))}
+                  {modules.length === 0 && (
+                    <p className="px-3 py-2 text-xs text-slate-400">No lessons yet</p>
+                  )}
                 </div>
               </m.div>
             )}
           </AnimatePresence>
         </SidebarGroup>
+
+        {/* Rest of links */}
+        <SidebarGroup className="mt-0.5">
+          {bottomLinks.map(link => (
+            <SidebarLink key={link.href} link={link} active={isActive(link.href)} />
+          ))}
+        </SidebarGroup>
       </nav>
 
       {/* Footer — Profile + Theme */}
       <SidebarFooter>
-        <SidebarLink link={profileLink} active={isActive(profileLink)} />
+        <SidebarLink link={profileLink} active={isActive('/profile')} />
         <div className="mt-1 px-1">
           <ThemeToggle />
         </div>
@@ -143,13 +165,13 @@ function SidebarContent() {
   )
 }
 
-export function SidebarNav() {
+export function SidebarNav({ modules }: { modules: Module[] }) {
   const [open, setOpen] = useState(false)
 
   return (
     <Sidebar open={open} setOpen={setOpen}>
       <SidebarBody className="border-r border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
-        <SidebarContent />
+        <SidebarContent modules={modules} />
       </SidebarBody>
     </Sidebar>
   )
