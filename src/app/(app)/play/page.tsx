@@ -4,7 +4,9 @@ import Link from 'next/link'
 import { motion, type MotionProps } from 'framer-motion'
 import {
   Zap, Shuffle, Headphones, PenLine, Trophy,
-  Star, Gamepad2, Target, type LucideIcon,
+  Star, Gamepad2, Target, Mic, Music, LayoutGrid, Grid3x3,
+  Keyboard, BookOpen, Play,
+  type LucideIcon,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
@@ -40,7 +42,15 @@ type Game = {
   href: string
 }
 
-const GAMES: Game[] = [
+type ComingSoonGame = {
+  icon: LucideIcon
+  title: string
+  description: string
+  gradient: string
+  tag: string
+}
+
+const ACTIVE_GAMES: Game[] = [
   {
     icon: Zap,
     title: 'Speed Round',
@@ -81,6 +91,54 @@ const GAMES: Game[] = [
     tag: 'Writing',
     href: '/play/filltheblank',
   },
+  {
+    icon: Mic,
+    title: 'Dictation',
+    description: 'Listen and type what you hear',
+    gradient: 'linear-gradient(135deg, #9f1239 0%, #e11d48 100%)',
+    border: 'border-rose-500/20',
+    difficulty: 3,
+    tag: 'Listen & Type',
+    href: '/play/dictation',
+  },
+  {
+    icon: Music,
+    title: 'Music Time',
+    description: 'Fill in the missing lyric word',
+    gradient: 'linear-gradient(135deg, #7e22ce 0%, #c026d3 100%)',
+    border: 'border-purple-500/20',
+    difficulty: 2,
+    tag: 'Lyrics',
+    href: '/play/musictime',
+  },
+  {
+    icon: LayoutGrid,
+    title: 'Matching',
+    description: 'Flip cards to pair words and translations',
+    gradient: 'linear-gradient(135deg, #0e7490 0%, #0d9488 100%)',
+    border: 'border-cyan-500/20',
+    difficulty: 2,
+    tag: 'Memory',
+    href: '/play/matching',
+  },
+  {
+    icon: Grid3x3,
+    title: 'Tic Tac Toe',
+    description: 'Answer questions to earn your turn',
+    gradient: 'linear-gradient(135deg, #4338ca 0%, #7c3aed 100%)',
+    border: 'border-indigo-500/20',
+    difficulty: 1,
+    tag: 'Strategy',
+    href: '/play/tictactoe',
+  },
+]
+
+const COMING_SOON: ComingSoonGame[] = [
+  { icon: Keyboard, title: 'MonkeyType',  description: 'Type Spanish words as fast as you can',   gradient: 'linear-gradient(135deg, #4d7c0f, #65a30d)', tag: 'Speed Typing' },
+  { icon: BookOpen, title: 'FlashCards',  description: 'Flip through vocabulary flashcards',       gradient: 'linear-gradient(135deg, #b45309, #d97706)', tag: 'Vocabulary'   },
+  { icon: BookOpen, title: 'Type × 3',    description: 'Reinforce words by typing them 3 times',   gradient: 'linear-gradient(135deg, #0369a1, #0284c7)', tag: 'Repetition'   },
+  { icon: BookOpen, title: 'Short Story', description: 'Read a micro-story and answer questions',   gradient: 'linear-gradient(135deg, #9a3412, #c2410c)', tag: 'Reading'      },
+  { icon: Play,     title: 'Short Video', description: 'Watch a clip and test your comprehension',  gradient: 'linear-gradient(135deg, #7f1d1d, #b91c1c)', tag: 'Watching'     },
 ]
 
 // ── Hover presets ─────────────────────────────────────────────────────────────
@@ -197,8 +255,8 @@ export default function PlayPage() {
             </div>
           </Block>
 
-          {/* ── Game tiles ──────────────────────────────────────────────────── */}
-          {GAMES.map(({ icon: Icon, title, description, gradient, border, difficulty, tag, href }, i) => (
+          {/* ── Active game tiles ────────────────────────────────────────────── */}
+          {ACTIVE_GAMES.map(({ icon: Icon, title, description, gradient, border, difficulty, tag, href }, i) => (
             <Link key={title} href={href} className="col-span-6 md:col-span-3">
               <Block
                 whileHover={i % 2 === 0 ? tiltL : tiltR}
@@ -240,6 +298,53 @@ export default function PlayPage() {
                 </div>
               </Block>
             </Link>
+          ))}
+
+          {/* ── Coming Soon label ────────────────────────────────────────────── */}
+          <motion.p
+            variants={{
+              initial: { opacity: 0, y: 10 },
+              animate: { opacity: 1, y: 0 },
+            }}
+            className="col-span-12 text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 px-1 pt-2"
+          >
+            Coming Soon
+          </motion.p>
+
+          {/* ── Coming Soon tiles ────────────────────────────────────────────── */}
+          {COMING_SOON.map(({ icon: Icon, title, description, gradient, tag }) => (
+            <div key={title} className="col-span-6 md:col-span-3 opacity-70">
+              <Block
+                whileHover={{ scale: 1.02 }}
+                className="relative overflow-hidden min-h-[170px] flex flex-col h-full border-white/10"
+                style={{ background: gradient }}
+              >
+                {/* Soon badge — top right */}
+                <div className="absolute top-3.5 right-3.5">
+                  <span className="bg-white/20 text-white/60 text-[9px] font-bold px-2 py-0.5 rounded-full">
+                    Soon
+                  </span>
+                </div>
+
+                <div className="flex flex-col gap-2.5 p-4 h-full">
+                  {/* Category tag */}
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-white/45 pr-12">
+                    {tag}
+                  </span>
+
+                  {/* Icon */}
+                  <div className="size-11 rounded-2xl bg-white/15 flex items-center justify-center">
+                    <Icon size={22} className="text-white" />
+                  </div>
+
+                  {/* Title + description */}
+                  <div className="mt-auto">
+                    <p className="text-sm font-bold text-white leading-tight">{title}</p>
+                    <p className="text-[11px] text-white/50 mt-0.5 leading-snug">{description}</p>
+                  </div>
+                </div>
+              </Block>
+            </div>
           ))}
 
         </motion.div>
