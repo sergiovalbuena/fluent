@@ -223,7 +223,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 p-4 cursor-pointer"
+            className="col-span-3 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 p-4 cursor-pointer self-start"
             style={{ minHeight: '88px', background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
           >
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
@@ -238,7 +238,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-default"
+            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-default self-start"
             style={{ minHeight: '88px' }}
           >
             <BookOpen size={22} className="text-indigo-500" />
@@ -251,7 +251,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-violet-400/30"
+            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-violet-400/30 self-start"
             style={{ minHeight: '88px', background: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)' }}
           >
             <Link href="/review" className="flex flex-col items-center gap-1 w-full">
@@ -266,7 +266,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-pink-400/30"
+            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-pink-400/30 self-start"
             style={{ minHeight: '88px', background: 'linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)' }}
           >
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
