@@ -4,30 +4,45 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { BookOpen, BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { motion as m } from 'framer-motion'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import {
   Sidebar,
   SidebarBody,
   SidebarLink,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarFooter,
   useSidebar,
   type SidebarLinkItem,
 } from '@/components/ui/sidebar'
 
-const navLinks: SidebarLinkItem[] = [
+const mainLinks: SidebarLinkItem[] = [
   { href: '/dashboard', icon: <Home size={20} strokeWidth={1.8} />, label: 'Home' },
+]
+
+const lessonLinks: SidebarLinkItem[] = [
   { href: '/learn', icon: <BookOpen size={20} strokeWidth={1.8} />, label: 'Lessons' },
   { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: 'Play' },
   { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: 'Gems' },
   { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: 'MarIA' },
   { href: '/review', icon: <RefreshCw size={20} strokeWidth={1.8} />, label: 'Review' },
   { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: 'Progress' },
-  { href: '/profile', icon: <User size={20} strokeWidth={1.8} />, label: 'Profile' },
 ]
+
+const profileLink: SidebarLinkItem = {
+  href: '/profile',
+  icon: <User size={20} strokeWidth={1.8} />,
+  label: 'Profile',
+}
 
 function SidebarContent() {
   const pathname = usePathname()
   const { open, animate } = useSidebar()
+
+  const isActive = (link: SidebarLinkItem) =>
+    pathname === link.href ||
+    (link.href !== '/dashboard' && pathname.startsWith(link.href + '/'))
 
   return (
     <div className="flex flex-col h-full">
@@ -36,7 +51,7 @@ function SidebarContent() {
         <div className="size-9 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-lg shrink-0">
           F
         </div>
-        <motion.span
+        <m.span
           animate={{
             opacity: animate ? (open ? 1 : 0) : 1,
             width: animate ? (open ? 'auto' : 0) : 'auto',
@@ -45,29 +60,32 @@ function SidebarContent() {
           className="overflow-hidden whitespace-nowrap text-lg font-bold tracking-tight"
         >
           Fluent
-        </motion.span>
+        </m.span>
       </Link>
 
-      {/* Nav links */}
-      <nav className="flex-1 flex flex-col gap-1 px-2 pt-1">
-        {navLinks.map(link => {
-          const isActive =
-            pathname === link.href ||
-            (link.href !== '/dashboard' && pathname.startsWith(link.href + '/'))
-          return (
-            <SidebarLink
-              key={link.href}
-              link={link}
-              active={isActive}
-            />
-          )
-        })}
+      {/* Main nav */}
+      <nav className="flex-1 flex flex-col px-2 pt-1 overflow-y-auto">
+        <SidebarGroup>
+          {mainLinks.map(link => (
+            <SidebarLink key={link.href} link={link} active={isActive(link)} />
+          ))}
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Lessons</SidebarGroupLabel>
+          {lessonLinks.map(link => (
+            <SidebarLink key={link.href} link={link} active={isActive(link)} />
+          ))}
+        </SidebarGroup>
       </nav>
 
-      {/* Bottom */}
-      <div className="px-3 pb-4 pt-2 border-t border-primary/10">
-        <ThemeToggle />
-      </div>
+      {/* Footer — Profile + Theme */}
+      <SidebarFooter>
+        <SidebarLink link={profileLink} active={isActive(profileLink)} />
+        <div className="mt-1 px-1">
+          <ThemeToggle />
+        </div>
+      </SidebarFooter>
     </div>
   )
 }

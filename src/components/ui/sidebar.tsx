@@ -113,6 +113,36 @@ function MobileSidebar({ children }: { children: React.ReactNode }) {
   )
 }
 
+// ─── SidebarGroup ─────────────────────────────────────────────────────────────
+
+export function SidebarGroup({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <div className={cn('flex flex-col gap-0.5', className)}>{children}</div>
+}
+
+export function SidebarGroupLabel({ children }: { children: React.ReactNode }) {
+  const { open, animate } = useSidebar()
+  return (
+    <motion.p
+      animate={{
+        opacity: animate ? (open ? 1 : 0) : 1,
+        height: animate ? (open ? 'auto' : 0) : 'auto',
+      }}
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
+      className="overflow-hidden px-3 pt-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 whitespace-nowrap"
+    >
+      {children}
+    </motion.p>
+  )
+}
+
+export function SidebarFooter({ children, className }: { children: React.ReactNode; className?: string }) {
+  return (
+    <div className={cn('mt-auto border-t border-primary/10 px-2 py-3', className)}>
+      {children}
+    </div>
+  )
+}
+
 // ─── SidebarLink ──────────────────────────────────────────────────────────────
 
 export type SidebarLinkItem = {
