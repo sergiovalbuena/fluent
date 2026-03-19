@@ -104,7 +104,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               VIDEO CLIP (row-span-2)
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer bg-indigo-950 border-indigo-900/40"
+          <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer border-indigo-900/30"
+            style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #1e3a5f 100%)' }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => {}}
@@ -148,7 +149,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 bg-primary border-primary/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-default"
+            className="col-span-3 md:col-span-2 border-orange-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-default"
+            style={{ background: 'linear-gradient(135deg, #ff8052 0%, #ef4444 100%)' }}
           >
             <span className="text-[2rem] leading-none select-none">🔥</span>
             <p className="text-[1.75rem] font-bold leading-none text-white tabular-nums">{stats.streak}</p>
@@ -160,7 +162,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 bg-amber-500 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
+            className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)' }}
           >
             <Link href="/review" className="flex flex-col items-center gap-1 w-full">
               <Zap size={22} className="text-white" />
@@ -221,7 +224,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* SHORT STORY */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 bg-indigo-700 border-indigo-600/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            className="col-span-6 md:col-span-2 border-indigo-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #4338ca 0%, #1d4ed8 100%)' }}
           >
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
               <BookMarked size={20} className="text-white" />
@@ -233,7 +237,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* LESSONS DONE */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 bg-sky-500 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-default"
+            className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-default"
+            style={{ background: 'linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%)' }}
           >
             <BookOpen size={20} className="text-white" />
             <p className="text-[1.5rem] font-bold leading-none text-white tabular-nums">{stats.lessonsCompleted}</p>
@@ -243,7 +248,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* DAILY CHALLENGE */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 bg-emerald-600 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            className="col-span-6 md:col-span-2 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' }}
           >
             <Link href="/review" className="flex flex-col items-center gap-1 w-full">
               <Trophy size={20} className="text-white" />
@@ -255,7 +261,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* MUSIC TIME */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 bg-violet-600 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            className="col-span-6 md:col-span-2 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)' }}
           >
             <Link href="/play" className="flex flex-col items-center gap-1 w-full">
               <Music size={20} className="text-white" />
@@ -344,7 +351,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* Play */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
+            className="col-span-6 md:col-span-3 border-indigo-500/20 p-0 min-h-[120px]"
+            style={{ background: 'linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)' }}
           >
             <Link href="/play" className="grid h-full place-content-center gap-3 p-6 min-h-[120px]">
               <Gamepad2 size={36} className="text-white mx-auto" />
@@ -355,7 +363,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* MarIA */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
+            className="col-span-6 md:col-span-3 border-rose-400/20 p-0 min-h-[120px]"
+            style={{ background: 'linear-gradient(135deg, #e11d48 0%, #db2777 100%)' }}
           >
             <Link href="/maria" className="grid h-full place-content-center gap-3 p-6 min-h-[120px]">
               <Bot size={36} className="text-white mx-auto" />
@@ -366,18 +375,20 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* Gems */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-3 bg-amber-400 dark:bg-amber-500 border-amber-300/40 p-0 min-h-[120px]"
+            className="col-span-6 md:col-span-3 border-amber-300/30 p-0 min-h-[120px]"
+            style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #ea580c 100%)' }}
           >
             <Link href="/gems" className="grid h-full place-content-center gap-3 p-6 min-h-[120px]">
-              <Gem size={36} className="text-amber-950 mx-auto" />
-              <p className="font-bold text-sm text-amber-950 text-center tracking-wide">Gems</p>
+              <Gem size={36} className="text-white mx-auto" />
+              <p className="font-bold text-sm text-white text-center tracking-wide">Gems</p>
             </Link>
           </Block>
 
           {/* Review */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-3 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[120px]"
+            className="col-span-6 md:col-span-3 border-teal-400/20 p-0 min-h-[120px]"
+            style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0284c7 100%)' }}
           >
             <Link href="/review" className="grid h-full place-content-center gap-3 p-6 min-h-[120px]">
               <RefreshCw size={36} className="text-white mx-auto" />
