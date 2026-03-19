@@ -218,68 +218,61 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             )}
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              SHORT STORY
-          ────────────────────────────────────────────────────────────────── */}
+          {/* ── 4 compact cards — left side, row 1 (col-span-2 each = 8 total) ── */}
+
+          {/* SHORT STORY */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 p-4 cursor-pointer self-start"
-            style={{ minHeight: '88px', background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
+            className="col-span-6 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            style={{ background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
           >
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
-              <BookMarked size={22} className="text-white" />
-              <p className="text-[13px] font-bold text-white text-center leading-tight">Short Story</p>
-              <p className="text-[10px] font-semibold text-white/75">5 min read</p>
+              <BookMarked size={20} className="text-indigo-300" />
+              <p className="text-[12px] font-bold text-white text-center leading-tight">Short Story</p>
+              <p className="text-[10px] font-semibold text-indigo-300/80">5 min · 🇪🇸</p>
             </Link>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              STAT — Lessons done
-          ────────────────────────────────────────────────────────────────── */}
+          {/* LESSONS DONE */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-default self-start"
-            style={{ minHeight: '88px' }}
+            className="col-span-6 md:col-span-2 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
           >
-            <BookOpen size={22} className="text-indigo-500" />
-            <p className="text-[1.75rem] font-bold leading-none text-slate-900 dark:text-white tabular-nums">{stats.lessonsCompleted}</p>
-            <p className="text-[10px] font-bold text-slate-400 mt-0.5">lessons done</p>
+            <BookOpen size={20} className="text-indigo-500" />
+            <p className="text-[1.5rem] font-bold leading-none text-slate-900 dark:text-white tabular-nums">{stats.lessonsCompleted}</p>
+            <p className="text-[10px] font-semibold text-slate-500 dark:text-slate-400">Lessons done</p>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              DAILY CHALLENGE
-          ────────────────────────────────────────────────────────────────── */}
+          {/* DAILY CHALLENGE */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-violet-400/30 self-start"
-            style={{ minHeight: '88px', background: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)' }}
+            className="col-span-6 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' }}
           >
             <Link href="/review" className="flex flex-col items-center gap-1 w-full">
-              <Trophy size={22} className="text-white" />
-              <p className="text-[13px] font-bold text-white text-center leading-tight">Daily Challenge</p>
-              <p className="text-[10px] font-semibold text-white/75">5 questions</p>
+              <Trophy size={20} className="text-emerald-200" />
+              <p className="text-[12px] font-bold text-white text-center leading-tight">Daily Challenge</p>
+              <p className="text-[10px] font-semibold text-emerald-200/80">New today</p>
             </Link>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              MUSIC TIME
-          ────────────────────────────────────────────────────────────────── */}
+          {/* MUSIC TIME */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-pink-400/30 self-start"
-            style={{ minHeight: '88px', background: 'linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)' }}
+            className="col-span-6 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #db2777 100%)' }}
           >
-            <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
-              <Music size={22} className="text-white" />
-              <p className="text-[13px] font-bold text-white text-center leading-tight">Music Time</p>
-              <p className="text-[10px] font-semibold text-white/75">listen & learn</p>
+            <Link href="/play" className="flex flex-col items-center gap-1 w-full">
+              <Music size={20} className="text-purple-200" />
+              <p className="text-[12px] font-bold text-white text-center leading-tight">Music Time</p>
+              <p className="text-[10px] font-semibold text-purple-200/80">3 songs</p>
             </Link>
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
-              LESSONS — wider card (row-span-2 alongside This Week)
+              LESSONS — right side, col-span-4 row-span-2
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-4 md:row-span-2 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]" style={{ maxHeight: '420px' }}>
+          <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]" style={{ maxHeight: '420px' }}>
             <div className="flex items-center justify-between mb-4 shrink-0">
               <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lessons</p>
               <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
@@ -316,7 +309,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
-              WEEKLY ACTIVITY CHART — reduced width
+              WEEKLY ACTIVITY CHART — left side row 2 (col-span-8)
           ────────────────────────────────────────────────────────────────── */}
           <Block className="col-span-12 md:col-span-8 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
             <div className="flex items-center justify-between mb-5">
