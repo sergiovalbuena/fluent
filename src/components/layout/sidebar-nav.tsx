@@ -3,19 +3,19 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot } from 'lucide-react'
-import { motion as m } from 'framer-motion'
+import { BookOpen, BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot, ChevronDown } from 'lucide-react'
+import { motion as m, AnimatePresence } from 'framer-motion'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import {
   Sidebar,
   SidebarBody,
   SidebarLink,
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarFooter,
   useSidebar,
   type SidebarLinkItem,
 } from '@/components/ui/sidebar'
+import { cn } from '@/lib/utils'
 
 const mainLinks: SidebarLinkItem[] = [
   { href: '/dashboard', icon: <Home size={20} strokeWidth={1.8} />, label: 'Home' },
@@ -38,11 +38,14 @@ const profileLink: SidebarLinkItem = {
 
 function SidebarContent() {
   const pathname = usePathname()
-  const { open, animate } = useSidebar()
+  const { open: sidebarOpen, animate } = useSidebar()
+  const [lessonsOpen, setLessonsOpen] = useState(true)
 
   const isActive = (link: SidebarLinkItem) =>
     pathname === link.href ||
     (link.href !== '/dashboard' && pathname.startsWith(link.href + '/'))
+
+  const anyLessonActive = lessonLinks.some(isActive)
 
   return (
     <div className="flex flex-col h-full">
@@ -53,8 +56,8 @@ function SidebarContent() {
         </div>
         <m.span
           animate={{
-            opacity: animate ? (open ? 1 : 0) : 1,
-            width: animate ? (open ? 'auto' : 0) : 'auto',
+            opacity: animate ? (sidebarOpen ? 1 : 0) : 1,
+            width: animate ? (sidebarOpen ? 'auto' : 0) : 'auto',
           }}
           transition={{ duration: 0.2, ease: 'easeInOut' }}
           className="overflow-hidden whitespace-nowrap text-lg font-bold tracking-tight"
@@ -71,11 +74,61 @@ function SidebarContent() {
           ))}
         </SidebarGroup>
 
-        <SidebarGroup>
-          <SidebarGroupLabel>Lessons</SidebarGroupLabel>
-          {lessonLinks.map(link => (
-            <SidebarLink key={link.href} link={link} active={isActive(link)} />
-          ))}
+        {/* Lessons collapsible group */}
+        <SidebarGroup className="mt-1">
+          {/* Trigger */}
+          <button
+            onClick={() => setLessonsOpen(v => !v)}
+            className={cn(
+              'flex items-center gap-3 w-full px-3 py-2.5 rounded-xl transition-all font-medium text-sm',
+              anyLessonActive && !lessonsOpen
+                ? 'bg-primary/10 text-primary'
+                : 'text-slate-500 dark:text-slate-400 hover:bg-primary/10 hover:text-primary',
+            )}
+          >
+            <BookOpen size={20} strokeWidth={1.8} className="shrink-0" />
+            <m.span
+              animate={{
+                opacity: animate ? (sidebarOpen ? 1 : 0) : 1,
+                width: animate ? (sidebarOpen ? 'auto' : 0) : 'auto',
+              }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              className="flex-1 overflow-hidden whitespace-nowrap text-left"
+            >
+              Lessons
+            </m.span>
+            <m.span
+              animate={{
+                opacity: animate ? (sidebarOpen ? 1 : 0) : 1,
+                width: animate ? (sidebarOpen ? 'auto' : 0) : 'auto',
+                rotate: lessonsOpen ? 180 : 0,
+              }}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              className="overflow-hidden shrink-0"
+            >
+              <ChevronDown size={14} />
+            </m.span>
+          </button>
+
+          {/* Dropdown items */}
+          <AnimatePresence initial={false}>
+            {lessonsOpen && (
+              <m.div
+                key="lessons-dropdown"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+                className="overflow-hidden"
+              >
+                <div className="ml-3 pl-3 border-l border-primary/15 flex flex-col gap-0.5 py-1">
+                  {lessonLinks.map(link => (
+                    <SidebarLink key={link.href} link={link} active={isActive(link)} />
+                  ))}
+                </div>
+              </m.div>
+            )}
+          </AnimatePresence>
         </SidebarGroup>
       </nav>
 
