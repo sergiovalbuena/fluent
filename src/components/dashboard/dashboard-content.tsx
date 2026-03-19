@@ -62,6 +62,14 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
   const maxActivity = Math.max(...stats.weekActivity, 1)
   const todayIdx = (new Date().getDay() + 6) % 7 // Mon=0, Sun=6
   const totalSessions = stats.weekActivity.reduce((a, b) => a + b, 0)
+  const bestDayIdx = stats.weekActivity.indexOf(maxActivity)
+  const avgPerActiveDay = weekDaysActive > 0 ? Math.round(totalSessions / weekDaysActive) : 0
+  // Consecutive days ending at today (or yesterday if today is 0)
+  let currentRun = 0
+  for (let i = todayIdx; i >= 0; i--) {
+    if (stats.weekActivity[i] > 0) currentRun++
+    else break
+  }
 
   // Shared hover for gradient cards
   const gradientHover = { rotate: '0deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
@@ -105,6 +113,28 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                   ? `You're on a ${stats.streak}-day streak — keep it up! 🔥`
                   : 'Ready to learn something new today?'}
               </p>
+
+              {/* CTAs — Resume leads (solid), Quick Practice follows (ghost) */}
+              <div className="flex items-center gap-2 mt-5">
+                <Link href={current ? `/learn/${current.slug}` : '/learn'}>
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="flex items-center gap-1.5 bg-primary text-white text-xs font-bold px-4 py-2 rounded-xl shadow-sm shadow-primary/25 hover:shadow-primary/40 transition-shadow"
+                  >
+                    Resume <ArrowRight size={13} />
+                  </motion.button>
+                </Link>
+                <Link href="/review">
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="flex items-center gap-1.5 border border-primary/25 text-primary text-xs font-bold px-4 py-2 rounded-xl hover:bg-primary/8 transition-colors"
+                  >
+                    <Zap size={12} /> Quick Practice
+                  </motion.button>
+                </Link>
+              </div>
             </div>
           </Block>
 
@@ -319,17 +349,12 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               WEEKLY ACTIVITY CHART — left side row 2 (col-span-8)
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+
             {/* Header */}
-            <div className="flex items-start justify-between mb-5">
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-0.5">
-                  This week
-                </p>
-                <p className="text-2xl font-bold text-slate-900 dark:text-white tabular-nums leading-none">
-                  {totalSessions}
-                  <span className="text-sm font-semibold text-slate-400 dark:text-slate-500 ml-1.5">sessions</span>
-                </p>
+            <div className="flex items-center justify-between mb-4 shrink-0">
+              <div className="flex items-baseline gap-2">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">This week</p>
               </div>
               <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
                 <span className="size-1.5 rounded-full bg-primary" />
@@ -337,47 +362,63 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               </div>
             </div>
 
-            {/* Chart */}
-            <div className="flex items-end gap-2 md:gap-3 h-24">
+            {/* Stats row */}
+            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0">
+              <div className="flex flex-col gap-0.5">
+                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">sessions</p>
+              </div>
+              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
+                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">avg / active day</p>
+              </div>
+              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
+                <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
+                  {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
+                </p>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">
+                  {currentRun > 0 ? 'day run' : 'best day'}
+                </p>
+              </div>
+            </div>
+
+            {/* Chart — flex-1 so it fills remaining height, no dead space */}
+            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0">
               {stats.weekActivity.map((v, i) => {
                 const isToday = i === todayIdx
-                const barH = Math.max((v / maxActivity) * 80, 6)
+                const isBest = i === bestDayIdx && v > 0
+                const pct = v / maxActivity
                 return (
-                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-2 flex-1 group">
+                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
                     {/* Value label */}
                     <motion.span
-                      className={cn(
-                        'text-[10px] font-bold tabular-nums transition-colors',
-                        v > 0 ? 'text-primary' : 'text-transparent'
-                      )}
+                      className={cn('text-[10px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.5 + i * 0.06 }}
                     >
-                      {v > 0 ? v : '·'}
+                      {v > 0 ? v : '0'}
                     </motion.span>
 
-                    {/* Bar */}
-                    <motion.div
-                      style={{ height: `${barH}px` }}
-                      className={cn(
-                        'w-full rounded-lg transition-all',
-                        isToday && v > 0
-                          ? 'bg-primary shadow-sm shadow-primary/30'
-                          : v > 0
-                          ? 'bg-primary/60'
+                    {/* Bar wrapper — full height container so bar grows from bottom */}
+                    <div className="flex-1 w-full flex items-end">
+                      <motion.div
+                        style={{ height: `${Math.max(pct * 100, v > 0 ? 8 : 4)}%` }}
+                        className={cn(
+                          'w-full rounded-lg',
+                          isToday && v > 0 ? 'bg-primary shadow-sm shadow-primary/30'
+                          : isBest ? 'bg-primary/75'
+                          : v > 0 ? 'bg-primary/45'
                           : 'bg-slate-100 dark:bg-white/[0.06]'
-                      )}
-                      initial={{ scaleY: 0, originY: '100%' }}
-                      animate={{ scaleY: 1 }}
-                      transition={{ delay: 0.35 + i * 0.06, duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
-                    />
+                        )}
+                        initial={{ scaleY: 0, originY: '100%' }}
+                        animate={{ scaleY: 1 }}
+                        transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
+                      />
+                    </div>
 
                     {/* Day label */}
-                    <span className={cn(
-                      'text-[10px] font-bold',
-                      isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500'
-                    )}>
+                    <span className={cn('text-[10px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
                       {DAYS[i]}
                     </span>
                   </div>
