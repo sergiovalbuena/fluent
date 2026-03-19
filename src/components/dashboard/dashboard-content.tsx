@@ -4,8 +4,8 @@ import React from 'react'
 import { motion, type MotionProps } from 'framer-motion'
 import Link from 'next/link'
 import {
-  ArrowRight, BookOpen, ChevronRight, Target, Zap,
-  Bot, Gem, Gamepad2, RefreshCw,
+  ArrowRight, BookOpen, ChevronRight, Zap,
+  Bot, Gem, Gamepad2, RefreshCw, BookMarked,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
@@ -219,19 +219,32 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
-              STAT — XP
-              col-span-6 mobile · col-span-4 desktop
+              SHORT STORY
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <div className="size-10 rounded-2xl bg-amber-400/10 flex items-center justify-center">
-              <Zap size={18} className="text-amber-500" />
+          <Block
+            className="col-span-6 md:col-span-4 relative overflow-hidden p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+            style={{ background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
+          >
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-indigo-300">
+                <BookMarked size={11} /> Short Story
+              </span>
+              <span className="text-[10px] font-semibold text-indigo-400">🇪🇸 ES</span>
             </div>
-            <div className="mt-4">
-              <p className="text-3xl font-bold leading-none text-slate-900 dark:text-white tabular-nums">
-                {stats.totalXp.toLocaleString()}
+            <div className="my-3">
+              <p className="text-sm font-medium text-white/90 leading-relaxed line-clamp-3 italic">
+                "Era una tarde tranquila en el mercado cuando Elena vio algo que cambiaría su vida para siempre…"
               </p>
-              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">Total XP</p>
             </div>
+            <Link href="/learn">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="w-full flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white font-bold py-2 rounded-xl text-xs backdrop-blur-sm"
+              >
+                Read story <ArrowRight size={12} />
+              </motion.button>
+            </Link>
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
@@ -250,25 +263,48 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
-              STAT — Accuracy
+              LESSONS — wider card (row-span-2 alongside This Week)
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <div className="size-10 rounded-2xl bg-teal-500/10 flex items-center justify-center">
-              <Target size={18} className="text-teal-500" />
+          <Block className="col-span-12 md:col-span-4 md:row-span-2 p-5 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+            <div className="flex items-center justify-between mb-4">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lessons</p>
+              <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
+                View all <ChevronRight size={12} />
+              </Link>
             </div>
-            <div className="mt-4">
-              <p className="text-3xl font-bold leading-none text-slate-900 dark:text-white tabular-nums">
-                {stats.avgAccuracy != null ? `${stats.avgAccuracy}%` : '—'}
-              </p>
-              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">Accuracy</p>
+            <div className="flex flex-col gap-2.5 flex-1 overflow-y-auto">
+              {modules.map(m => (
+                <Link key={m.id} href={`/learn/${m.slug}`}>
+                  <motion.div
+                    whileHover={{ x: 3 }}
+                    transition={{ duration: 0.15 }}
+                    className="flex items-center gap-3 p-2.5 rounded-2xl hover:bg-primary/[0.06] dark:hover:bg-primary/[0.08] transition-colors"
+                  >
+                    <div className="size-9 rounded-xl bg-[#f6f4f2] dark:bg-white/[0.06] flex items-center justify-center text-lg shrink-0">
+                      {m.icon}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-semibold text-xs text-slate-900 dark:text-white truncate">{m.title}</p>
+                      <div className="flex items-center gap-2 mt-1">
+                        <div className="flex-1 h-1 bg-slate-100 dark:bg-white/[0.08] rounded-full overflow-hidden">
+                          <div className="h-full bg-primary rounded-full" style={{ width: `${m.progress}%` }} />
+                        </div>
+                        <span className="text-[10px] font-bold text-primary tabular-nums shrink-0">{m.progress}%</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
+              {modules.length === 0 && (
+                <p className="text-xs text-slate-400 text-center mt-4">No lessons yet</p>
+              )}
             </div>
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
-              WEEKLY ACTIVITY CHART
-              col-span-12 full width
+              WEEKLY ACTIVITY CHART — reduced width
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+          <Block className="col-span-12 md:col-span-8 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
             <div className="flex items-center justify-between mb-5">
               <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
                 This week
@@ -347,53 +383,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </Link>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              ALL MODULES
-              col-span-12 full width
-          ────────────────────────────────────────────────────────────────── */}
-          {modules.length > 0 && (
-            <Block className="col-span-12 p-5 md:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white">All Lessons</h3>
-                <Link
-                  href="/learn"
-                  className="flex items-center gap-1 text-primary text-xs font-semibold hover:opacity-70 transition-opacity"
-                >
-                  View all <ChevronRight size={13} />
-                </Link>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
-                {modules.map(m => (
-                  <motion.div key={m.id} whileHover={{ y: -2 }} transition={{ duration: 0.18 }}>
-                    <Link href={`/learn/${m.slug}`}>
-                      <div className="group flex items-center gap-3.5 p-3 rounded-2xl bg-[#f6f4f2] dark:bg-white/[0.03] hover:bg-primary/[0.06] dark:hover:bg-primary/[0.08] border border-transparent hover:border-primary/[0.12] transition-all duration-200 cursor-pointer">
-                        <div className="size-10 rounded-xl bg-white dark:bg-white/10 flex items-center justify-center text-xl shrink-0 shadow-sm">
-                          {m.icon}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-sm text-slate-900 dark:text-white truncate leading-tight">
-                            {m.title}
-                          </p>
-                          <div className="flex items-center gap-2 mt-1.5">
-                            <div className="flex-1 h-1 bg-slate-200 dark:bg-white/[0.08] rounded-full overflow-hidden">
-                              <div
-                                className="h-full bg-primary rounded-full transition-all"
-                                style={{ width: `${m.progress}%` }}
-                              />
-                            </div>
-                            <span className="text-[10px] font-bold text-primary shrink-0 tabular-nums">
-                              {m.progress}%
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
-            </Block>
-          )}
 
         </motion.div>
       </main>
