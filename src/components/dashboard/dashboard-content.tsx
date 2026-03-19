@@ -5,7 +5,7 @@ import { motion, type MotionProps } from 'framer-motion'
 import Link from 'next/link'
 import {
   ArrowRight, BookOpen, ChevronRight, Zap,
-  Bot, Gem, Gamepad2, RefreshCw, BookMarked,
+  Bot, Gem, Gamepad2, RefreshCw, BookMarked, Trophy, Music,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
@@ -222,44 +222,58 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               SHORT STORY
           ────────────────────────────────────────────────────────────────── */}
           <Block
-            className="col-span-6 md:col-span-4 relative overflow-hidden p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
-            style={{ background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
+            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            className="col-span-3 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 p-4 cursor-pointer"
+            style={{ minHeight: '88px', background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
           >
-            <div className="flex items-center justify-between">
-              <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-indigo-300">
-                <BookMarked size={11} /> Short Story
-              </span>
-              <span className="text-[10px] font-semibold text-indigo-400">🇪🇸 ES</span>
-            </div>
-            <div className="my-3">
-              <p className="text-sm font-medium text-white/90 leading-relaxed line-clamp-3 italic">
-                "Era una tarde tranquila en el mercado cuando Elena vio algo que cambiaría su vida para siempre…"
-              </p>
-            </div>
-            <Link href="/learn">
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="w-full flex items-center justify-center gap-2 bg-white/10 border border-white/20 text-white font-bold py-2 rounded-xl text-xs backdrop-blur-sm"
-              >
-                Read story <ArrowRight size={12} />
-              </motion.button>
+            <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
+              <BookMarked size={22} className="text-white" />
+              <p className="text-[13px] font-bold text-white text-center leading-tight">Short Story</p>
+              <p className="text-[10px] font-semibold text-white/75">5 min read</p>
             </Link>
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
               STAT — Lessons done
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <div className="size-10 rounded-2xl bg-indigo-500/10 flex items-center justify-center">
-              <BookOpen size={18} className="text-indigo-500" />
-            </div>
-            <div className="mt-4">
-              <p className="text-3xl font-bold leading-none text-slate-900 dark:text-white tabular-nums">
-                {stats.lessonsCompleted}
-              </p>
-              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">Lessons done</p>
-            </div>
+          <Block
+            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-default"
+            style={{ minHeight: '88px' }}
+          >
+            <BookOpen size={22} className="text-indigo-500" />
+            <p className="text-[1.75rem] font-bold leading-none text-slate-900 dark:text-white tabular-nums">{stats.lessonsCompleted}</p>
+            <p className="text-[10px] font-bold text-slate-400 mt-0.5">lessons done</p>
+          </Block>
+
+          {/* ──────────────────────────────────────────────────────────────────
+              DAILY CHALLENGE
+          ────────────────────────────────────────────────────────────────── */}
+          <Block
+            whileHover={{ rotate: '2.5deg', scale: 1.07 }}
+            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-violet-400/30"
+            style={{ minHeight: '88px', background: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)' }}
+          >
+            <Link href="/review" className="flex flex-col items-center gap-1 w-full">
+              <Trophy size={22} className="text-white" />
+              <p className="text-[13px] font-bold text-white text-center leading-tight">Daily Challenge</p>
+              <p className="text-[10px] font-semibold text-white/75">5 questions</p>
+            </Link>
+          </Block>
+
+          {/* ──────────────────────────────────────────────────────────────────
+              MUSIC TIME
+          ────────────────────────────────────────────────────────────────── */}
+          <Block
+            whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
+            className="col-span-3 md:col-span-2 flex flex-col items-center justify-center gap-1 p-4 cursor-pointer border-pink-400/30"
+            style={{ minHeight: '88px', background: 'linear-gradient(135deg, #ec4899 0%, #f43f5e 100%)' }}
+          >
+            <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
+              <Music size={22} className="text-white" />
+              <p className="text-[13px] font-bold text-white text-center leading-tight">Music Time</p>
+              <p className="text-[10px] font-semibold text-white/75">listen & learn</p>
+            </Link>
           </Block>
 
           {/* ──────────────────────────────────────────────────────────────────
