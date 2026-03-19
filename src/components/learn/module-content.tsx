@@ -6,7 +6,7 @@ import Link from 'next/link'
 import {
   ArrowRight, BookOpen, MessageSquare, HelpCircle,
   BookMarked, Shuffle, PenLine, Zap, Headphones, Gem, Bot,
-  PlayCircle, Layers,
+  PlayCircle, Layers, Star,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -31,6 +31,25 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
   </motion.div>
 )
 
+// ── Stars mini row ─────────────────────────────────────────────────────────────
+function StarsRow({ stars }: { stars: number }) {
+  return (
+    <div className="flex items-center gap-0.5">
+      {[1, 2, 3].map(n => (
+        <Star
+          key={n}
+          size={12}
+          className={
+            n <= stars
+              ? 'fill-amber-400 text-amber-400'
+              : 'fill-slate-200 text-slate-200 dark:fill-slate-700 dark:text-slate-700'
+          }
+        />
+      ))}
+    </div>
+  )
+}
+
 // ── Neutral activity card (unified design) ────────────────────────────────────
 // Icon top-left, arrow top-right (hover), title + subtitle, optional micro-preview
 interface ActivityCardProps {
@@ -40,18 +59,22 @@ interface ActivityCardProps {
   iconColor: string
   title: string
   subtitle: string
+  stars?: number
   preview?: React.ReactNode
 }
 
-const ActivityCard = ({ href, icon: Icon, iconBg, iconColor, title, subtitle, preview }: ActivityCardProps) => (
+const ActivityCard = ({ href, icon: Icon, iconBg, iconColor, title, subtitle, stars, preview }: ActivityCardProps) => (
   <Link href={href} className="block h-full">
     <div className="flex flex-col h-full gap-3 group">
       <div className="flex items-start justify-between">
         <div className={cn('size-10 rounded-2xl flex items-center justify-center', iconBg)}>
           <Icon size={18} className={iconColor} />
         </div>
-        <div className={cn('size-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shrink-0', iconBg)}>
-          <ArrowRight size={13} className={iconColor} />
+        <div className="flex items-center gap-2 shrink-0">
+          {stars !== undefined && <StarsRow stars={stars} />}
+          <div className={cn('size-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity', iconBg)}>
+            <ArrowRight size={13} className={iconColor} />
+          </div>
         </div>
       </div>
       <div className="flex-1">
@@ -88,6 +111,7 @@ export interface ModuleContentData {
   hasStory: boolean
   hasArrange: boolean
   hasTranslate: boolean
+  starsMap?: Record<string, number>
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -97,7 +121,15 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
     vocabItems, phraseItems, qaItems, storyText,
     arrangeCount, translateCount,
     hasVocab, hasPhrases, hasQA, hasStory, hasArrange, hasTranslate,
+    starsMap = {},
   } = data
+
+  // ── Module progress calculation ───────────────────────────────────────────
+  const activityFlags = [hasVocab, hasPhrases, hasQA, hasStory, hasArrange, hasTranslate]
+  const activityKeys  = ['vocabulary', 'phrases', 'qa', 'story', 'arrange', 'translate']
+  const totalActivities = activityFlags.filter(Boolean).length
+  const completedActivities = activityKeys.filter((k, i) => activityFlags[i] && (starsMap[k] ?? 0) > 0).length
+  const progressPct = totalActivities > 0 ? Math.round((completedActivities / totalActivities) * 100) : 0
 
   return (
     <motion.div
@@ -134,13 +166,14 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
         <div className="relative mt-5">
           <div className="mb-4 max-w-xs">
             <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
-              <span>Progress</span><span>0%</span>
+              <span>Progress</span>
+              <span>{completedActivities} / {totalActivities} activities</span>
             </div>
             <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-primary rounded-full"
                 initial={{ width: 0 }}
-                animate={{ width: '0%' }}
+                animate={{ width: `${progressPct}%` }}
                 transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
               />
             </div>
@@ -153,7 +186,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
                 className="flex items-center gap-2 bg-primary text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-sm shadow-primary/30"
               >
                 <PlayCircle size={15} />
-                Start Lesson
+                {progressPct > 0 ? 'Continue' : 'Start Lesson'}
               </motion.button>
             </Link>
           )}
@@ -168,7 +201,14 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
           whileHover={{ rotate: '2.5deg', scale: 1.07 }}
           className="flex-1 bg-primary dark:bg-primary border-primary/20 p-0 min-h-[140px]"
         >
-          <Link href={`/learn/${slug}/flashcards`} className="grid h-full place-content-center gap-3 p-6 min-h-[140px]">
+          <Link href={`/learn/${slug}/vocabulary`} className="relative grid h-full place-content-center gap-3 p-6 min-h-[140px]">
+            {(starsMap['vocabulary'] ?? 0) > 0 && (
+              <div className="absolute top-3 right-3 flex items-center gap-0.5">
+                {[1, 2, 3].map(n => (
+                  <Star key={n} size={11} className={n <= (starsMap['vocabulary'] ?? 0) ? 'fill-white text-white' : 'fill-white/25 text-white/25'} />
+                ))}
+              </div>
+            )}
             <Layers size={34} className="text-white mx-auto" />
             <div className="text-center">
               <p className="font-bold text-sm text-white">Flashcards</p>
@@ -184,8 +224,15 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
         >
           <Link
             href={hasQA ? `/learn/${slug}/qa` : `/learn/${slug}/${firstExType ?? ''}`}
-            className="grid h-full place-content-center gap-3 p-6 min-h-[140px]"
+            className="relative grid h-full place-content-center gap-3 p-6 min-h-[140px]"
           >
+            {(starsMap['qa'] ?? 0) > 0 && (
+              <div className="absolute top-3 right-3 flex items-center gap-0.5">
+                {[1, 2, 3].map(n => (
+                  <Star key={n} size={11} className={n <= (starsMap['qa'] ?? 0) ? 'fill-white text-white' : 'fill-white/25 text-white/25'} />
+                ))}
+              </div>
+            )}
             <HelpCircle size={34} className="text-white mx-auto" />
             <div className="text-center">
               <p className="font-bold text-sm text-white">Q&amp;A Quiz</p>
@@ -212,6 +259,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
             iconColor="text-indigo-500"
             title="Vocabulary"
             subtitle={`${vocabItems.length} words`}
+            stars={starsMap['vocabulary']}
             preview={
               vocabItems.length > 0 ? (
                 <div className="flex flex-wrap gap-1">
@@ -239,6 +287,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
             iconColor="text-teal-500"
             title="Phrases"
             subtitle={`${phraseItems.length} expressions`}
+            stars={starsMap['phrases']}
             preview={
               phraseItems[0] ? (
                 <p className="text-[11px] text-slate-400 italic truncate">
@@ -259,6 +308,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
             iconColor="text-amber-600"
             title="Story"
             subtitle="Read & write in context"
+            stars={starsMap['story']}
             preview={
               storyText ? (
                 <p className="text-[11px] text-slate-400 italic line-clamp-2">
@@ -280,7 +330,18 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
           whileHover={{ rotate: '2.5deg', scale: 1.07 }}
           className="col-span-12 md:col-span-4 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[120px]"
         >
-          <Link href={`/learn/${slug}/arrange`} className="grid h-full place-content-center gap-2.5 p-5 min-h-[120px]">
+          <Link href={`/learn/${slug}/arrange`} className="relative grid h-full place-content-center gap-2.5 p-5 min-h-[120px]">
+            {(starsMap['arrange'] ?? 0) > 0 && (
+              <div className="absolute top-3 right-3 flex items-center gap-0.5">
+                {[1, 2, 3].map(n => (
+                  <Star
+                    key={n}
+                    size={11}
+                    className={n <= (starsMap['arrange'] ?? 0) ? 'fill-white text-white' : 'fill-white/30 text-white/30'}
+                  />
+                ))}
+              </div>
+            )}
             <Shuffle size={30} className="text-white mx-auto" />
             <div className="text-center">
               <p className="font-bold text-sm text-white">Arrange</p>
@@ -299,6 +360,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
             iconColor="text-rose-500"
             title="Translate"
             subtitle={`${translateCount} exercises · Write yourself`}
+            stars={starsMap['translate']}
           />
         </Block>
       )}

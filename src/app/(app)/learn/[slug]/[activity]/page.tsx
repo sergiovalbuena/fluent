@@ -495,6 +495,33 @@ function CompletionCard({
   )
 }
 
+// ─── Points & Progression v1 ──────────────────────────────────────────────────
+
+// Skills awarded per lesson activity type
+const SKILL_MAP: Record<string, Partial<Record<'speaking' | 'vocabulary' | 'listening' | 'grammar', number>>> = {
+  vocabulary: { vocabulary: 3 },
+  phrases:    { vocabulary: 2, speaking: 1 },
+  qa:         { grammar: 2, vocabulary: 1 },
+  story:      { listening: 3, vocabulary: 1 },
+  arrange:    { grammar: 3 },
+  translate:  { grammar: 2, speaking: 1 },
+}
+
+// Stars based on how many distinct activities completed + score threshold for 3★
+function calcStars(activitiesCompleted: string[], score: number): 1 | 2 | 3 {
+  if (activitiesCompleted.length >= 3 && score >= 80) return 3
+  if (activitiesCompleted.length >= 2) return 2
+  return 1
+}
+
+// Gems per activity: +1 for repeat, +2 for perfect score
+function calcGems(score: number, isRepeat: boolean): number {
+  let gems = 0
+  if (isRepeat) gems += 1
+  if (score === 100) gems += 2
+  return gems
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function LessonPage() {
@@ -510,7 +537,13 @@ export default function LessonPage() {
   const [saving,   setSaving]   = useState(false)
 
   // Result screen
-  const [resultData, setResultData] = useState<{ score: number; xpEarned: number } | null>(null)
+  const [resultData, setResultData] = useState<{
+    score: number
+    xpEarned: number
+    gemsEarned: number
+    stars: 1 | 2 | 3
+    milestoneBonusXp: number
+  } | null>(null)
 
   // Vocabulary
   const [vocabIndex,   setVocabIndex]   = useState(0)
@@ -607,52 +640,130 @@ export default function LessonPage() {
 
   // ── DB helpers ────────────────────────────────────────────────────────────
 
-  async function saveProgress(score: number) {
-    if (!lessonId || !moduleId) return
+  async function saveProgress(score: number): Promise<{ stars: 1 | 2 | 3; gems: number; isFirstCompletion: boolean }> {
     const supabase = createClient()
     const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return
+
+    const fallbackStars = calcStars([activity], score)
+    if (!user || !lessonId || !moduleId) {
+      return { stars: fallbackStars, gems: calcGems(score, false), isFirstCompletion: true }
+    }
+
+    const { data: existing } = await supabase
+      .from('user_progress')
+      .select('attempts, stars, best_score, activities_completed, completed_at')
+      .eq('user_id', user.id)
+      .eq('lesson_id', lessonId)
+      .maybeSingle()
+
+    const isRepeat        = (existing?.attempts ?? 0) > 0
+    const isFirstCompletion = !existing?.completed_at
+    const prevActivities  = existing?.activities_completed ?? []
+    const updatedActivities = prevActivities.includes(activity)
+      ? prevActivities
+      : [...prevActivities, activity]
+
+    const newStars  = calcStars(updatedActivities, score)
+    const newGems   = calcGems(score, isRepeat)
+    const finalStars = Math.max(newStars, existing?.stars ?? 0) as 1 | 2 | 3
+
     await supabase.from('user_progress').upsert({
       user_id: user.id,
       lesson_id: lessonId,
       module_id: moduleId,
       completed_at: new Date().toISOString(),
       score,
-      attempts: 1,
+      best_score: Math.max(score, existing?.best_score ?? 0),
+      stars: finalStars,
+      gems_earned: newGems,
+      activities_completed: updatedActivities,
+      attempts: (existing?.attempts ?? 0) + 1,
+      updated_at: new Date().toISOString(),
     }, { onConflict: 'user_id,lesson_id' })
+
+    return { stars: finalStars, gems: newGems, isFirstCompletion }
   }
 
-  async function updateXpAndStreak(score: number): Promise<number> {
+  async function updateXpAndStreak(
+    score: number,
+    gemsEarned: number,
+    stars: 1 | 2 | 3,
+    isFirstCompletion: boolean,
+  ): Promise<{ xpEarned: number; gemsEarned: number; milestoneBonusXp: number }> {
     const supabase = createClient()
     const { data: { user } } = await supabase.auth.getUser()
-    if (!user) return 10
+    if (!user) return { xpEarned: 10, gemsEarned, milestoneBonusXp: 0 }
 
     const { data: profile } = await supabase
       .from('user_profiles')
-      .select('total_xp, streak_count, longest_streak, last_activity_date')
+      .select('total_xp, total_gems, streak_count, longest_streak, last_activity_date, last_streak_milestone, skills')
       .eq('user_id', user.id)
       .maybeSingle()
 
-    const today = new Date().toISOString().split('T')[0]
+    const today   = new Date().toISOString().split('T')[0]
     const isNewDay = profile?.last_activity_date !== today
-    const newStreak = isNewDay ? (profile?.streak_count ?? 0) + 1 : (profile?.streak_count ?? 0)
-    const xpEarned = score >= 80 ? 20 : score >= 60 ? 15 : 10
+    const prevStreak = profile?.streak_count ?? 0
+    const newStreak  = isNewDay ? prevStreak + 1 : prevStreak
+
+    // XP formula v1
+    let xpEarned = 10                          // core activity
+    if (isFirstCompletion) xpEarned += 20      // lesson completion bonus
+    if (stars === 3)       xpEarned += 10      // 3-star bonus
+    if (isNewDay)          xpEarned += 5       // streak day bonus
+
+    // Streak milestone bonuses (awarded once per milestone, reset on streak break)
+    const lastMilestone  = profile?.last_streak_milestone ?? 0
+    let milestoneBonusXp = 0
+    let newMilestone     = lastMilestone
+    if      (newStreak >= 14 && lastMilestone < 14) { milestoneBonusXp = 50; newMilestone = 14 }
+    else if (newStreak >= 7  && lastMilestone < 7)  { milestoneBonusXp = 20; newMilestone = 7  }
+    else if (newStreak >= 3  && lastMilestone < 3)  { milestoneBonusXp = 10; newMilestone = 3  }
+    xpEarned += milestoneBonusXp
+
+    // Skill gains
+    const skillGains     = SKILL_MAP[activity] ?? {}
+    const currentSkills  = (profile?.skills ?? { speaking: 0, vocabulary: 0, listening: 0, grammar: 0 }) as Record<string, number>
+    const updatedSkills  = {
+      speaking:   (currentSkills.speaking   ?? 0) + (skillGains.speaking   ?? 0),
+      vocabulary: (currentSkills.vocabulary ?? 0) + (skillGains.vocabulary ?? 0),
+      listening:  (currentSkills.listening  ?? 0) + (skillGains.listening  ?? 0),
+      grammar:    (currentSkills.grammar    ?? 0) + (skillGains.grammar    ?? 0),
+    }
 
     await supabase.from('user_profiles').update({
-      total_xp: (profile?.total_xp ?? 0) + xpEarned,
-      streak_count: newStreak,
-      longest_streak: Math.max(newStreak, profile?.longest_streak ?? 0),
-      last_activity_date: today,
+      total_xp:             (profile?.total_xp  ?? 0) + xpEarned,
+      total_gems:           (profile?.total_gems ?? 0) + gemsEarned,
+      streak_count:          newStreak,
+      longest_streak:        Math.max(newStreak, profile?.longest_streak ?? 0),
+      last_activity_date:    today,
+      last_streak_milestone: newMilestone,
+      skills:                updatedSkills,
     }).eq('user_id', user.id)
 
-    return xpEarned
+    // Daily activity record for charts
+    const { data: todayActivity } = await supabase
+      .from('user_activity')
+      .select('xp_earned, lessons_completed')
+      .eq('user_id', user.id)
+      .eq('activity_date', today)
+      .maybeSingle()
+
+    await supabase.from('user_activity').upsert({
+      user_id:           user.id,
+      activity_date:     today,
+      xp_earned:         (todayActivity?.xp_earned        ?? 0) + xpEarned,
+      lessons_completed: (todayActivity?.lessons_completed ?? 0) + 1,
+      updated_at:        new Date().toISOString(),
+    }, { onConflict: 'user_id,activity_date' })
+
+    return { xpEarned, gemsEarned, milestoneBonusXp }
   }
 
   async function handleFinishLesson(score = 100) {
     setSaving(true)
-    await saveProgress(score)
-    const xpEarned = await updateXpAndStreak(score)
-    setResultData({ score, xpEarned })
+    const { stars, gems, isFirstCompletion } = await saveProgress(score)
+    const { xpEarned, gemsEarned, milestoneBonusXp } = await updateXpAndStreak(score, gems, stars, isFirstCompletion)
+    setResultData({ score, xpEarned, gemsEarned, stars, milestoneBonusXp })
     setSaving(false)
   }
 
@@ -761,6 +872,9 @@ export default function LessonPage() {
         <ResultScreen
           score={resultData.score}
           xpEarned={resultData.xpEarned}
+          gemsEarned={resultData.gemsEarned}
+          stars={resultData.stars}
+          milestoneBonusXp={resultData.milestoneBonusXp}
           onContinue={() => router.push('/learn')}
           onRestart={() => {
             setResultData(null)
