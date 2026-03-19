@@ -104,8 +104,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               VIDEO CLIP (row-span-2)
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer shadow-[0_2px_12px_rgba(0,0,0,0.08)]"
-            style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 50%, #1e3a5f 100%)' }}
+          <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer bg-indigo-950 border-indigo-900/40"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => {}}
@@ -149,7 +148,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 bg-primary dark:bg-primary border-primary/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-default"
+            className="col-span-3 md:col-span-2 bg-primary border-primary/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-default"
           >
             <span className="text-[2rem] leading-none select-none">🔥</span>
             <p className="text-[1.75rem] font-bold leading-none text-white tabular-nums">{stats.streak}</p>
@@ -161,13 +160,12 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-3 md:col-span-2 border-amber-400/30 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
-            style={{ background: 'linear-gradient(135deg, #fbbf24 0%, #f97316 100%)' }}
+            className="col-span-3 md:col-span-2 bg-amber-500 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
           >
             <Link href="/review" className="flex flex-col items-center gap-1 w-full">
               <Zap size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">Quick Practice</p>
-              <p className="text-[10px] font-semibold text-white/80">2 min</p>
+              <p className="text-[10px] font-semibold text-white/70">2 min</p>
             </Link>
           </Block>
 
@@ -223,49 +221,46 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* SHORT STORY */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
-            style={{ background: 'linear-gradient(150deg, #1e1b4b 0%, #3730a3 100%)' }}
+            className="col-span-6 md:col-span-2 bg-indigo-700 border-indigo-600/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
           >
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
-              <BookMarked size={20} className="text-indigo-300" />
+              <BookMarked size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">Short Story</p>
-              <p className="text-[10px] font-semibold text-indigo-300/80">5 min · 🇪🇸</p>
+              <p className="text-[10px] font-semibold text-white/60">5 min · 🇪🇸</p>
             </Link>
           </Block>
 
           {/* LESSONS DONE */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+            className="col-span-6 md:col-span-2 bg-sky-500 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-default"
           >
-            <BookOpen size={20} className="text-indigo-500" />
-            <p className="text-[1.5rem] font-bold leading-none text-slate-900 dark:text-white tabular-nums">{stats.lessonsCompleted}</p>
-            <p className="text-[10px] font-semibold text-slate-500 dark:text-slate-400">Lessons done</p>
+            <BookOpen size={20} className="text-white" />
+            <p className="text-[1.5rem] font-bold leading-none text-white tabular-nums">{stats.lessonsCompleted}</p>
+            <p className="text-[10px] font-semibold text-white/70">Lessons done</p>
           </Block>
 
           {/* DAILY CHALLENGE */}
           <Block
             whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
-            style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' }}
+            className="col-span-6 md:col-span-2 bg-emerald-600 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
           >
             <Link href="/review" className="flex flex-col items-center gap-1 w-full">
-              <Trophy size={20} className="text-emerald-200" />
+              <Trophy size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">Daily Challenge</p>
-              <p className="text-[10px] font-semibold text-emerald-200/80">New today</p>
+              <p className="text-[10px] font-semibold text-white/70">New today</p>
             </Link>
           </Block>
 
           {/* MUSIC TIME */}
           <Block
             whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-            className="col-span-6 md:col-span-2 relative overflow-hidden flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
-            style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #db2777 100%)' }}
+            className="col-span-6 md:col-span-2 bg-violet-600 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
           >
             <Link href="/play" className="flex flex-col items-center gap-1 w-full">
-              <Music size={20} className="text-purple-200" />
+              <Music size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">Music Time</p>
-              <p className="text-[10px] font-semibold text-purple-200/80">3 songs</p>
+              <p className="text-[10px] font-semibold text-white/70">3 songs</p>
             </Link>
           </Block>
 
