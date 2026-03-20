@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BarChart2, User, RefreshCw, Home, Gamepad2, Gem, Bot, ChevronDown, BookOpen } from 'lucide-react'
+import { BarChart2, User, Home, Gamepad2, Gem, Bot, ChevronDown, BookOpen, Video, Users } from 'lucide-react'
 import { motion as m, AnimatePresence } from 'framer-motion'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import {
@@ -27,7 +27,8 @@ const bottomLinks: SidebarLinkItem[] = [
   { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: 'Play' },
   { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: 'Gems' },
   { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: 'MarIA' },
-  { href: '/review', icon: <RefreshCw size={20} strokeWidth={1.8} />, label: 'Review' },
+  { href: '/videos', icon: <Video size={20} strokeWidth={1.8} />, label: 'Videos' },
+  { href: '/community', icon: <Users size={20} strokeWidth={1.8} />, label: 'Community' },
   { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: 'Progress' },
 ]
 
@@ -41,6 +42,10 @@ function SidebarContent({ modules }: { modules: Module[] }) {
   const pathname = usePathname()
   const { open: sidebarOpen, animate } = useSidebar()
   const [lessonsOpen, setLessonsOpen] = useState(true)
+
+  useEffect(() => {
+    if (!sidebarOpen) setLessonsOpen(false)
+  }, [sidebarOpen])
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(href + '/')
@@ -126,7 +131,7 @@ function SidebarContent({ modules }: { modules: Module[] }) {
                 transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
                 className="overflow-hidden"
               >
-                <div className="ml-3 pl-3 border-l border-primary/15 flex flex-col gap-0.5 py-1">
+                <div className="ml-3 pl-3 border-l border-primary/15 flex flex-col gap-0.5 py-1 max-h-52 overflow-y-auto scrollbar-none">
                   {modules.map(mod => (
                     <SidebarLink
                       key={mod.slug}

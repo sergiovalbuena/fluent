@@ -1,9 +1,9 @@
 'use client'
 
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 // ─── Context ──────────────────────────────────────────────────────────────────
@@ -80,16 +80,15 @@ function DesktopSidebar({ children, className, ...props }: React.ComponentProps<
 
 function MobileSidebar({ children }: { children: React.ReactNode }) {
   const { open, setOpen } = useSidebar()
+
+  useEffect(() => {
+    const handler = () => setOpen(true)
+    window.addEventListener('open-mobile-sidebar', handler)
+    return () => window.removeEventListener('open-mobile-sidebar', handler)
+  }, [setOpen])
+
   return (
     <>
-      {/* Hamburger — only visible if you want a mobile sidebar instead of bottom nav */}
-      <div className="md:hidden flex items-center justify-between px-4 py-4">
-        <Menu
-          className="text-slate-600 dark:text-slate-300 cursor-pointer"
-          size={22}
-          onClick={() => setOpen(true)}
-        />
-      </div>
       <AnimatePresence>
         {open && (
           <motion.div

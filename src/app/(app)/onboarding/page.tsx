@@ -5,7 +5,9 @@ import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ChevronRight, Check, ArrowLeft } from 'lucide-react'
+import { ArrowLeft, Check, ChevronRight } from 'lucide-react'
+
+// ── Data ──────────────────────────────────────────────────────────────────────
 
 const NATIVE_LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -44,28 +46,44 @@ const DAILY_GOALS = [
   { minutes: 20, label: 'Intensive', description: '20 min / day', emoji: '⚡' },
 ]
 
-const STEP_LABELS = ['Language', 'Learning', 'Motivation', 'Goal']
+const REMINDER_TIMES = [
+  { time: '7:00 AM', label: 'Early Bird', icon: '🌅' },
+  { time: '8:00 AM', label: 'Morning', icon: '☀️' },
+  { time: '12:00 PM', label: 'Midday', icon: '🌤️' },
+  { time: '6:00 PM', label: 'After Work', icon: '🌆' },
+  { time: '8:00 PM', label: 'Evening', icon: '🌙' },
+  { time: '10:00 PM', label: 'Night Owl', icon: '🦉' },
+]
+
+// ── Step metadata ─────────────────────────────────────────────────────────────
+
+const STEPS = [
+  { label: 'Language', emoji: '🌏', title: "What's your native language?", subtitle: 'We\'ll adapt the content for you' },
+  { label: 'Learn', emoji: '📚', title: 'What do you want to learn?', subtitle: 'Pick the language you\'re excited about' },
+  { label: 'Reason', emoji: '⚡', title: "What's driving you?", subtitle: 'Knowing your why helps us keep you motivated' },
+  { label: 'Goal', emoji: '🎯', title: 'Set your daily goal', subtitle: 'Consistency beats intensity — pick what fits your life' },
+  { label: 'Remind', emoji: '⏰', title: 'When should we remind you?', subtitle: 'We\'ll send a gentle nudge at your chosen time' },
+]
+
+// ── Animations ────────────────────────────────────────────────────────────────
 
 const slideVariants = {
-  enter: (dir: number) => ({
-    x: dir > 0 ? 60 : -60,
-    opacity: 0,
-  }),
+  enter: (dir: number) => ({ x: dir > 0 ? 60 : -60, opacity: 0 }),
   center: { x: 0, opacity: 1 },
-  exit: (dir: number) => ({
-    x: dir > 0 ? -60 : 60,
-    opacity: 0,
-  }),
+  exit: (dir: number) => ({ x: dir > 0 ? -60 : 60, opacity: 0 }),
 }
+
+// ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function OnboardingPage() {
   const router = useRouter()
-  const [step, setStep] = useState(0) // 0-indexed: 0, 1, 2, 3
+  const [step, setStep] = useState(0)
   const [direction, setDirection] = useState(1)
   const [nativeLanguage, setNativeLanguage] = useState('')
   const [learningLanguage, setLearningLanguage] = useState('')
   const [motivation, setMotivation] = useState('')
   const [dailyGoal, setDailyGoal] = useState(10)
+  const [reminderTime, setReminderTime] = useState('8:00 AM')
   const [saving, setSaving] = useState(false)
 
   function goNext() {
@@ -83,6 +101,7 @@ export default function OnboardingPage() {
     !!learningLanguage,
     !!motivation,
     true,
+    true,
   ][step]
 
   async function handleComplete() {
@@ -99,6 +118,7 @@ export default function OnboardingPage() {
       native_language_code: nativeLanguage,
       motivation,
       daily_goal_minutes: dailyGoal,
+      reminder_time: reminderTime,
       display_name: user.user_metadata?.display_name ?? user.email?.split('@')[0] ?? 'Learner',
       streak_count: 0,
       longest_streak: 0,
@@ -133,27 +153,47 @@ export default function OnboardingPage() {
     router.push('/learn')
   }
 
+  const currentStep = STEPS[step]
+
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
+
       {/* Header */}
-      <div className="px-6 pt-8 pb-4 text-center">
-        <div className="text-4xl mb-3">🌍</div>
-        <h1 className="text-2xl font-bold">Welcome to Fluent</h1>
-        <p className="text-muted-foreground text-sm mt-1">
-          {['What&apos;s your native language?', 'What do you want to learn?', 'What&apos;s your reason?', 'How much time per day?'][step]}
-        </p>
+      <div className="px-6 pt-10 pb-6">
+        {/* Logo mark */}
+        <div className="flex justify-center mb-6">
+          <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <span className="text-3xl">{currentStep.emoji}</span>
+          </div>
+        </div>
+
+        {/* Step text */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={step}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="text-center"
+          >
+            <h1 className="text-2xl font-bold leading-tight">{currentStep.title}</h1>
+            <p className="text-sm text-muted-foreground mt-1.5">{currentStep.subtitle}</p>
+          </motion.div>
+        </AnimatePresence>
       </div>
 
-      {/* Step dots */}
-      <div className="flex justify-center gap-2 mb-6">
-        {STEP_LABELS.map((label, i) => (
-          <div key={label} className="flex flex-col items-center gap-1">
-            <div
-              className={`h-2 w-10 rounded-full transition-all duration-300 ${
-                i < step ? 'bg-primary' : i === step ? 'bg-primary' : 'bg-slate-200 dark:bg-slate-700'
-              }`}
-            />
-          </div>
+      {/* Step pill indicators */}
+      <div className="flex justify-center gap-1.5 mb-6 px-6">
+        {STEPS.map((s, i) => (
+          <div
+            key={s.label}
+            className={`h-1.5 rounded-full transition-all duration-400 ${
+              i <= step
+                ? 'bg-primary'
+                : 'bg-slate-200 dark:bg-slate-700'
+            } ${i === step ? 'w-8' : 'w-5'}`}
+          />
         ))}
       </div>
 
@@ -170,6 +210,7 @@ export default function OnboardingPage() {
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0 overflow-y-auto px-4 pb-4"
           >
+
             {/* Step 0 — Native language */}
             {step === 0 && (
               <div className="space-y-2">
@@ -177,14 +218,14 @@ export default function OnboardingPage() {
                   <button
                     key={lang.code}
                     onClick={() => setNativeLanguage(lang.code)}
-                    className={`w-full flex items-center gap-4 p-4 rounded-xl border-2 transition-all ${
+                    className={`w-full flex items-center gap-4 p-4 rounded-2xl border-2 transition-all ${
                       nativeLanguage === lang.code
-                        ? 'border-primary bg-primary/5'
-                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50'
+                        ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
+                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     }`}
                   >
                     <span className="text-2xl">{lang.flag}</span>
-                    <span className="font-semibold flex-1 text-left">{lang.name}</span>
+                    <span className="font-semibold flex-1 text-left text-sm">{lang.name}</span>
                     {nativeLanguage === lang.code && (
                       <div className="size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
                         <Check size={13} className="text-white" />
@@ -203,17 +244,17 @@ export default function OnboardingPage() {
                     key={lang.code}
                     onClick={() => setLearningLanguage(lang.code)}
                     disabled={lang.code === nativeLanguage}
-                    className={`flex flex-col items-center gap-2 p-4 rounded-xl border-2 transition-all ${
+                    className={`flex flex-col items-center gap-2.5 p-5 rounded-2xl border-2 transition-all ${
                       learningLanguage === lang.code
-                        ? 'border-primary bg-primary/5'
+                        ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
                         : lang.code === nativeLanguage
-                        ? 'border-slate-100 bg-slate-50 dark:border-slate-800 dark:bg-slate-800/20 opacity-40'
-                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50'
+                        ? 'border-slate-100 bg-slate-50 dark:border-slate-800 dark:bg-slate-800/20 opacity-30'
+                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     }`}
                   >
                     <span className="text-3xl">{lang.flag}</span>
                     <p className="font-bold text-sm">{lang.name}</p>
-                    <p className="text-[10px] text-muted-foreground text-center leading-tight">{lang.description}</p>
+                    <p className="text-[11px] text-muted-foreground text-center leading-tight">{lang.description}</p>
                     {learningLanguage === lang.code && (
                       <div className="size-5 rounded-full bg-primary flex items-center justify-center">
                         <Check size={11} className="text-white" />
@@ -233,14 +274,14 @@ export default function OnboardingPage() {
                     onClick={() => setMotivation(m.code)}
                     className={`flex flex-col items-center gap-2.5 p-5 rounded-2xl border-2 transition-all ${
                       motivation === m.code
-                        ? 'border-primary bg-primary/5'
-                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50'
+                        ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
+                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     }`}
                   >
                     <span className="text-3xl">{m.icon}</span>
                     <div className="text-center">
                       <p className="font-bold text-sm">{m.label}</p>
-                      <p className="text-[10px] text-muted-foreground mt-0.5">{m.description}</p>
+                      <p className="text-[11px] text-muted-foreground mt-0.5">{m.description}</p>
                     </div>
                     {motivation === m.code && (
                       <div className="size-5 rounded-full bg-primary flex items-center justify-center">
@@ -261,8 +302,8 @@ export default function OnboardingPage() {
                     onClick={() => setDailyGoal(g.minutes)}
                     className={`relative w-full flex items-center gap-4 p-5 rounded-2xl border-2 transition-all ${
                       dailyGoal === g.minutes
-                        ? 'border-primary bg-primary/5'
-                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50'
+                        ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
+                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     }`}
                   >
                     {g.recommended && (
@@ -272,8 +313,8 @@ export default function OnboardingPage() {
                     )}
                     <span className="text-2xl">{g.emoji}</span>
                     <div className="text-left">
-                      <p className="font-bold">{g.label}</p>
-                      <p className="text-sm text-muted-foreground">{g.description}</p>
+                      <p className="font-bold text-sm">{g.label}</p>
+                      <p className="text-xs text-muted-foreground">{g.description}</p>
                     </div>
                     {dailyGoal === g.minutes && (
                       <div className="ml-auto size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
@@ -282,19 +323,70 @@ export default function OnboardingPage() {
                     )}
                   </button>
                 ))}
+
+                {/* Progress tip */}
+                <div className="flex items-start gap-3 bg-primary/5 border border-primary/10 rounded-2xl p-4 mt-2">
+                  <span className="text-lg mt-0.5">💡</span>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Even 5 minutes a day adds up to over 30 hours of practice per year. Consistency is the key to fluency.
+                  </p>
+                </div>
               </div>
             )}
+
+            {/* Step 4 — Reminder time */}
+            {step === 4 && (
+              <div className="space-y-3 max-w-sm mx-auto">
+                <div className="grid grid-cols-2 gap-3">
+                  {REMINDER_TIMES.map(r => (
+                    <button
+                      key={r.time}
+                      onClick={() => setReminderTime(r.time)}
+                      className={`flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all ${
+                        reminderTime === r.time
+                          ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
+                          : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
+                      }`}
+                    >
+                      <span className="text-2xl">{r.icon}</span>
+                      <div className="text-center">
+                        <p className="font-bold text-sm">{r.label}</p>
+                        <p className="text-xs text-muted-foreground">{r.time}</p>
+                      </div>
+                      {reminderTime === r.time && (
+                        <div className="size-5 rounded-full bg-primary flex items-center justify-center">
+                          <Check size={11} className="text-white" />
+                        </div>
+                      )}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Skip option */}
+                <button
+                  onClick={() => setReminderTime('Off')}
+                  className={`w-full p-4 rounded-2xl border-2 transition-all text-sm font-medium text-muted-foreground ${
+                    reminderTime === 'Off'
+                      ? 'border-primary bg-primary/5 text-primary'
+                      : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
+                  }`}
+                >
+                  🔕 &nbsp; Skip reminders for now
+                </button>
+              </div>
+            )}
+
           </motion.div>
         </AnimatePresence>
       </div>
 
       {/* Footer CTA */}
-      <div className="p-4 border-t border-primary/10 space-y-2">
-        {step === 3 ? (
+      <div className="p-4 pt-2 border-t border-primary/10 space-y-2">
+        {step === STEPS.length - 1 ? (
           <button
             onClick={handleComplete}
             disabled={saving}
-            className="w-full flex items-center justify-center gap-2 rounded-xl h-12 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20 disabled:opacity-60"
+            className="w-full flex items-center justify-center gap-2 rounded-2xl h-13 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20 disabled:opacity-60"
           >
             {saving ? 'Setting up...' : "Let's Start Learning 🚀"}
           </button>
@@ -302,7 +394,7 @@ export default function OnboardingPage() {
           <button
             onClick={goNext}
             disabled={!canContinue}
-            className="w-full flex items-center justify-center gap-2 rounded-xl h-12 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex items-center justify-center gap-2 rounded-2xl h-13 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Continue
             <ChevronRight size={18} />
@@ -319,6 +411,7 @@ export default function OnboardingPage() {
           </button>
         )}
       </div>
+
     </div>
   )
 }

@@ -7,7 +7,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  let modules: { slug: string; title: string; icon: string }[] = []
+  let languageCode = 'es'
 
   if (user) {
     const { data: langData } = await supabase
@@ -17,17 +17,17 @@ export default async function AppLayout({ children }: { children: React.ReactNod
       .eq('is_active', true)
       .maybeSingle()
 
-    const languageCode = langData?.language_code ?? 'es'
-
-    const { data } = await supabase
-      .from('modules')
-      .select('slug, title, icon')
-      .eq('language_code', languageCode)
-      .eq('is_published', true)
-      .order('order_index')
-
-    modules = data ?? []
+    if (langData?.language_code) languageCode = langData.language_code
   }
+
+  const { data: modulesData } = await supabase
+    .from('modules')
+    .select('slug, title, icon')
+    .eq('language_code', languageCode)
+    .eq('is_published', true)
+    .order('order_index')
+
+  const modules = modulesData ?? []
 
   return (
     <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">

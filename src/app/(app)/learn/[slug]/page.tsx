@@ -52,6 +52,36 @@ export default async function LessonPage({ params }: PageProps) {
   const arrangeCount               = (arrangeEx?.content as { sentences?: unknown[] })?.sentences?.length ?? 0
   const translateCount             = (translateEx?.content as { items?: unknown[] })?.items?.length ?? 0
 
+  // Fetch user progress for star display
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  const lessonIds = exerciseList.map(e => e.id)
+  let progressMap: Record<string, { stars: number; best_score: number }> = {}
+
+  if (user && lessonIds.length > 0) {
+    const { data: progressRows } = await supabase
+      .from('user_progress')
+      .select('lesson_id, stars, best_score')
+      .eq('user_id', user.id)
+      .in('lesson_id', lessonIds)
+
+    if (progressRows) {
+      progressMap = Object.fromEntries(
+        progressRows.map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score }])
+      )
+    }
+  }
+
+  // Build per-type star counts
+  const starsMap: Record<string, number> = {}
+  if (vocabEx)     starsMap['vocabulary'] = progressMap[vocabEx.id]?.stars     ?? 0
+  if (phrasesEx)   starsMap['phrases']    = progressMap[phrasesEx.id]?.stars   ?? 0
+  if (qaEx)        starsMap['qa']         = progressMap[qaEx.id]?.stars        ?? 0
+  if (storyEx)     starsMap['story']      = progressMap[storyEx.id]?.stars     ?? 0
+  if (arrangeEx)   starsMap['arrange']    = progressMap[arrangeEx.id]?.stars   ?? 0
+  if (translateEx) starsMap['translate']  = progressMap[translateEx.id]?.stars ?? 0
+
   const data: ModuleContentData = {
     slug,
     title: lesson.title,
@@ -72,6 +102,7 @@ export default async function LessonPage({ params }: PageProps) {
     hasStory: !!storyEx,
     hasArrange: !!arrangeEx,
     hasTranslate: !!translateEx,
+    starsMap,
   }
 
   return (

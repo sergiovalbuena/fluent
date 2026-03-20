@@ -50,10 +50,6 @@ export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
         className="flex items-center gap-2 bg-white dark:bg-slate-800 border border-primary/10 hover:border-primary/30 transition-colors px-3 py-1.5 rounded-full cursor-pointer"
       >
         <span className="text-base leading-none">{current.flag}</span>
-        <span className="hidden sm:block text-xs font-bold">{current.name}</span>
-        <span className="hidden sm:block text-[10px] bg-primary/10 text-primary font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider leading-none">
-          Active
-        </span>
         <ChevronDown
           size={12}
           className={`text-muted-foreground transition-transform duration-200 ${open ? 'rotate-180' : ''}`}

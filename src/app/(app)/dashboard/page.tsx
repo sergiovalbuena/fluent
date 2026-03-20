@@ -1,12 +1,32 @@
 import { createClient } from '@/lib/supabase/server'
-import { DashboardContent, type Module } from '@/components/dashboard/dashboard-content'
+import { DashboardContent } from '@/components/dashboard/dashboard-content'
+import type { LearnModule } from '@/components/learn/learn-content'
+
+type ProgressRow = {
+  completed_at: string
+  score: number | null
+  module_id: string
+  stars: number
+  has_crown: boolean
+  gems_earned: number
+}
+
+function computeModuleStars(
+  lessonsCompleted: number,
+  totalLessons: number,
+  minStars: number,
+): 0 | 1 | 2 | 3 {
+  if (lessonsCompleted === 0 || totalLessons === 0) return 0
+  if (lessonsCompleted >= totalLessons && minStars >= 3) return 3
+  if (lessonsCompleted >= totalLessons) return 2
+  return 1
+}
 
 export default async function DashboardPage() {
   const supabase = await createClient()
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  // Fetch language, profile, and progress in parallel
   const [activeLangResult, profileResult, progressResult] = await Promise.all([
     user
       ? supabase
@@ -26,45 +46,42 @@ export default async function DashboardPage() {
     user
       ? supabase
           .from('user_progress')
-          .select('completed_at, score')
+          .select('completed_at, score, module_id, stars, has_crown, gems_earned')
           .eq('user_id', user.id)
           .not('completed_at', 'is', null)
       : Promise.resolve({ data: [] }),
   ])
 
   const languageCode = activeLangResult.data?.language_code ?? 'es'
+  const allProgress = (progressResult.data ?? []) as ProgressRow[]
 
-  // Compute weekly activity (Mon–Sun of current week)
+  // ── Weekly activity ────────────────────────────────────────────────────────
   const today = new Date()
-  const dow = today.getDay() // 0=Sun
+  const dow = today.getDay()
   const startOfWeek = new Date(today)
   startOfWeek.setDate(today.getDate() - ((dow + 6) % 7))
   startOfWeek.setHours(0, 0, 0, 0)
 
   const weekActivity = [0, 0, 0, 0, 0, 0, 0]
-  const allProgress = progressResult.data ?? []
-  allProgress.forEach((p: { completed_at: string }) => {
+  allProgress.forEach((p) => {
     const d = new Date(p.completed_at)
     if (d >= startOfWeek) {
-      const idx = (d.getDay() + 6) % 7 // Mon=0, Sun=6
+      const idx = (d.getDay() + 6) % 7
       weekActivity[idx]++
     }
   })
 
-  // If no real activity this week, show demo data so the chart looks alive
   const hasActivityThisWeek = weekActivity.some(v => v > 0)
-  const displayActivity = hasActivityThisWeek
-    ? weekActivity
-    : [3, 5, 8, 7, 6, 4, 2]
+  const displayActivity = hasActivityThisWeek ? weekActivity : [3, 5, 8, 7, 6, 4, 2]
 
   const scores = allProgress
-    .map((p: { score: number | null }) => p.score)
+    .map(p => p.score)
     .filter((s): s is number => s !== null)
   const avgAccuracy = scores.length > 0
     ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
     : null
 
-  // Fetch modules (depends on languageCode)
+  // ── Modules with full state ─────────────────────────────────────────────────
   const { data } = await supabase
     .from('modules')
     .select('*, lessons(id)')
@@ -72,23 +89,70 @@ export default async function DashboardPage() {
     .eq('is_published', true)
     .order('order_index')
 
-  const modules: Module[] = (data ?? []).map((m: {
-    id: string
-    slug: string
-    title: string
-    icon: string
-    description?: string
-    lessons: { id: string }[]
-  }) => ({
-    id: m.id,
-    slug: m.slug,
-    title: m.title,
-    icon: m.icon,
-    description: m.description,
-    totalLessons: m.lessons?.length ?? 0,
-    completedLessons: 0,
-    progress: 0,
-  }))
+  const raw = data ?? []
+
+  // Aggregate progress per module
+  const moduleProgressMap = new Map<string, {
+    completed: number
+    minStars: number
+    hasCrown: boolean
+    gemsEarned: number
+  }>()
+
+  for (const row of allProgress) {
+    const existing = moduleProgressMap.get(row.module_id)
+    if (existing) {
+      existing.completed++
+      existing.minStars = Math.min(existing.minStars, row.stars)
+      existing.gemsEarned += row.gems_earned
+      if (row.has_crown) existing.hasCrown = true
+    } else {
+      moduleProgressMap.set(row.module_id, {
+        completed: 1,
+        minStars: row.stars,
+        hasCrown: row.has_crown,
+        gemsEarned: row.gems_earned,
+      })
+    }
+  }
+
+  const modulesBase = raw.map((m: {
+    id: string; slug: string; title: string; icon: string; lessons: { id: string }[]
+  }) => {
+    const prog = moduleProgressMap.get(m.id)
+    const totalLessons = m.lessons?.length ?? 0
+    const lessonsCompleted = Math.min(prog?.completed ?? 0, totalLessons)
+    const stars = computeModuleStars(lessonsCompleted, totalLessons, prog?.minStars ?? 0)
+    const hasCrown = prog?.hasCrown ?? false
+    const gemsEarned = prog?.gemsEarned ?? 0
+    const progress = totalLessons > 0 ? Math.round((lessonsCompleted / totalLessons) * 100) : 0
+    return { id: m.id, slug: m.slug, title: m.title, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
+  })
+
+  // Compute state (completed → current → available → locked)
+  let lastCompletedIdx = -1
+  for (let i = modulesBase.length - 1; i >= 0; i--) {
+    const m = modulesBase[i]
+    if (m.lessonsCompleted >= m.totalLessons && m.totalLessons > 0) {
+      lastCompletedIdx = i
+      break
+    }
+  }
+  const currentIdx = lastCompletedIdx + 1
+
+  const modules: LearnModule[] = modulesBase.map((m, i) => {
+    let state: LearnModule['state']
+    if (m.lessonsCompleted >= m.totalLessons && m.totalLessons > 0) {
+      state = 'completed'
+    } else if (i === currentIdx) {
+      state = 'current'
+    } else if (i === currentIdx + 1) {
+      state = 'available'
+    } else {
+      state = 'locked'
+    }
+    return { ...m, state }
+  })
 
   return (
     <DashboardContent
