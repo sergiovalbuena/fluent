@@ -156,7 +156,7 @@ const STEP_META: Record<StepKey, { emoji: string; title: string; subtitle: strin
   native:      { emoji: '🌏', title: "What's your native language?",  subtitle: "We'll adapt the content for you" },
   learn:       { emoji: '📚', title: 'What do you want to learn?',    subtitle: "Pick the language you're excited about" },
   motivation:  { emoji: '⚡', title: "What's driving you?",           subtitle: 'Knowing your why shapes your entire experience' },
-  destination: { emoji: '✈️', title: 'Where are you headed?',         subtitle: 'We'll tailor your survival kit to your destination' },
+  destination: { emoji: '✈️', title: 'Where are you headed?',         subtitle: "We'll tailor your survival kit to your destination" },
   timeline:    { emoji: '📅', title: 'When is your trip?',            subtitle: "We'll set the right pace based on your timeline" },
   kit:         { emoji: '🆘', title: 'Your Survival Kit',             subtitle: 'The 5 phrases that will save you. Learn them now.' },
   goal:        { emoji: '🎯', title: 'Set your daily goal',           subtitle: 'Consistency beats intensity — pick what fits your life' },
