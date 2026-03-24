@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { BottomNav } from '@/components/layout/bottom-nav'
 import { SidebarNav } from '@/components/layout/sidebar-nav'
+import { GemsToastProvider } from '@/components/ui/gems-toast'
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
@@ -37,6 +38,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         {children}
       </div>
       <BottomNav />
+      <GemsToastProvider />
     </div>
   )
 }
