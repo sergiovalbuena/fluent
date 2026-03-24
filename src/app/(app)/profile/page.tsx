@@ -75,26 +75,6 @@ const achievements = [
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-function calcLevel(xp: number) {
-  const level      = Math.floor(xp / 100)
-  const xpInLevel  = xp % 100
-  const pct        = xpInLevel   // out of 100
-  return { level, xpInLevel, pct }
-}
-
-function levelTitle(level: number) {
-  if (level >= 10) return 'Advanced'
-  if (level >= 3)  return 'Intermediate'
-  if (level >= 1)  return 'Elementary'
-  return 'Beginner'
-}
-
-function levelEmoji(level: number) {
-  if (level >= 10) return '🚀'
-  if (level >= 3)  return '⚡'
-  if (level >= 1)  return '📚'
-  return '🌱'
-}
 
 function initials(name: string | null) {
   if (!name) return 'FL'
@@ -185,7 +165,6 @@ export default function ProfilePage() {
   const streakCount        = profile?.streak_count ?? 0
   const totalXp            = profile?.total_xp ?? 0
   const isLoggedIn         = !!userId
-  const { level, xpInLevel, pct } = calcLevel(totalXp)
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -215,33 +194,18 @@ export default function ProfilePage() {
                 </p>
                 <div className="flex items-center gap-1.5 mt-1.5">
                   <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-bold">
-                    {levelEmoji(level)} {levelTitle(level)}
-                  </span>
-                  <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-bold">
                     {streakCount} 🔥
                   </span>
-                </div>
-
-                {/* XP progress bar */}
-                <div className="mt-3">
-                  <div className="flex justify-between text-[10px] font-bold text-white/50 mb-1">
-                    <span>Lv.{level} → Lv.{level + 1}</span>
-                    <span>{xpInLevel} / 100 XP</span>
-                  </div>
-                  <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-white rounded-full transition-all duration-700"
-                      style={{ width: `${pct}%` }}
-                    />
-                  </div>
+                  <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-bold">
+                    {totalXp} XP ⚡
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="relative mt-5 grid grid-cols-3 gap-3 text-center">
+            <div className="relative mt-5 grid grid-cols-2 gap-3 text-center">
               {[
                 { value: String(streakCount), label: 'Day Streak' },
                 { value: String(totalXp),     label: 'Total XP'   },
-                { value: '—',                 label: 'Words'       },
               ].map(s => (
                 <div key={s.label} className="bg-white/10 rounded-2xl py-3">
                   <p className="text-xl font-bold">{s.value}</p>

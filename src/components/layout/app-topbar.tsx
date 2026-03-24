@@ -4,9 +4,27 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { LanguageSwitcher } from '@/components/dashboard/language-switcher'
-import { ChevronLeft, Flame, Star, Gem } from 'lucide-react'
+import { ChevronLeft, Flame, Star, Gem, Zap } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import type { RealtimeChannel } from '@supabase/supabase-js'
+
+function useActiveBoost() {
+  const [label, setLabel] = useState<string | null>(null)
+  useEffect(() => {
+    const check = () => {
+      const now = Date.now()
+      const xp = Number(localStorage.getItem('fluent_boost_xp_expires') ?? 0)
+      const gems = Number(localStorage.getItem('fluent_boost_gems_expires') ?? 0)
+      if (xp > now) { setLabel('2× XP'); return }
+      if (gems > now) { setLabel('2× Gems'); return }
+      setLabel(null)
+    }
+    check()
+    const id = setInterval(check, 5000)
+    return () => clearInterval(id)
+  }, [])
+  return label
+}
 
 interface AppTopbarProps {
   title?: string
@@ -55,7 +73,8 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
     }
   }, [])
 
-  const level = Math.floor(stats.xp / 100)
+
+  const activeBoost = useActiveBoost()
 
   return (
     <header className="sticky top-0 z-20 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#23140f]/80 backdrop-blur-md">
@@ -91,21 +110,24 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
         <div className="flex items-center gap-2 ml-auto mr-3">
           <LanguageSwitcher />
 
+          {/* Active boost pill */}
+          {activeBoost && (
+            <div className="flex items-center gap-1 bg-yellow-400/20 text-yellow-600 dark:text-yellow-300 px-2.5 py-1 rounded-full text-[10px] font-black animate-pulse">
+              <Zap size={10} />
+              {activeBoost}
+            </div>
+          )}
+
           {/* Streak */}
           <div className="flex items-center gap-1.5 bg-orange-500/10 text-orange-500 px-3 py-1 rounded-full text-xs font-bold">
             <Flame size={12} />
             {stats.streak}
           </div>
 
-          {/* Level + XP */}
-          <div className="hidden sm:flex items-center gap-0 bg-yellow-500/10 rounded-full overflow-hidden text-xs font-bold">
-            <span className="text-yellow-700 dark:text-yellow-300 px-2.5 py-1 bg-yellow-500/20">
-              Lv.{level}
-            </span>
-            <div className="flex items-center gap-1.5 text-yellow-600 dark:text-yellow-400 px-2.5 py-1">
-              <Star size={12} />
-              {stats.xp} XP
-            </div>
+          {/* XP */}
+          <div className="hidden sm:flex items-center gap-1.5 bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 px-3 py-1 rounded-full text-xs font-bold">
+            <Star size={12} />
+            {stats.xp} XP
           </div>
 
           {/* Gems */}

@@ -664,7 +664,11 @@ export default function LessonPage() {
       : [...prevActivities, activity]
 
     const newStars  = calcStars(updatedActivities, score)
-    const newGems   = calcGems(score, isRepeat)
+    const gemsBoostActive = typeof window !== 'undefined'
+      ? (Number(localStorage.getItem('fluent_boost_gems_expires') ?? 0) > Date.now())
+      : false
+    const rawGems  = calcGems(score, isRepeat)
+    const newGems  = gemsBoostActive ? rawGems * 2 : rawGems
     const finalStars = Math.max(newStars, existing?.stars ?? 0) as 1 | 2 | 3
 
     await supabase.from('user_progress').upsert({
@@ -701,9 +705,15 @@ export default function LessonPage() {
       .maybeSingle()
 
     const today   = new Date().toISOString().split('T')[0]
-    const isNewDay = profile?.last_activity_date !== today
+    const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1)
+    const yesterdayStr = yesterday.toISOString().split('T')[0]
+    const isNewDay  = profile?.last_activity_date !== today
     const prevStreak = profile?.streak_count ?? 0
-    const newStreak  = isNewDay ? prevStreak + 1 : prevStreak
+    // Only continue streak if last activity was yesterday; otherwise reset to 1
+    const streakContinues = profile?.last_activity_date === yesterdayStr
+    const newStreak = isNewDay
+      ? (streakContinues || prevStreak === 0 ? prevStreak + 1 : 1)
+      : prevStreak
 
     // XP formula v1
     let xpEarned = 10                          // core activity
@@ -711,13 +721,21 @@ export default function LessonPage() {
     if (stars === 3)       xpEarned += 10      // 3-star bonus
     if (isNewDay)          xpEarned += 5       // streak day bonus
 
-    // Streak milestone bonuses (awarded once per milestone, reset on streak break)
+    // Active boost: 2× XP if boost is live (stored in localStorage on client — checked server-side via header is not feasible, so we pass it from client)
+    const xpBoostActive = typeof window !== 'undefined'
+      ? (Number(localStorage.getItem('fluent_boost_xp_expires') ?? 0) > Date.now())
+      : false
+    if (xpBoostActive) xpEarned *= 2
+
+    // Streak milestone bonuses (awarded once per milestone; reset when streak breaks)
     const lastMilestone  = profile?.last_streak_milestone ?? 0
+    // If streak broke (reset to 1), reset milestone tracker too
+    const milestoneBasis = (isNewDay && !streakContinues && prevStreak > 0) ? 0 : lastMilestone
     let milestoneBonusXp = 0
-    let newMilestone     = lastMilestone
-    if      (newStreak >= 14 && lastMilestone < 14) { milestoneBonusXp = 50; newMilestone = 14 }
-    else if (newStreak >= 7  && lastMilestone < 7)  { milestoneBonusXp = 20; newMilestone = 7  }
-    else if (newStreak >= 3  && lastMilestone < 3)  { milestoneBonusXp = 10; newMilestone = 3  }
+    let newMilestone     = milestoneBasis
+    if      (newStreak >= 14 && milestoneBasis < 14) { milestoneBonusXp = 50; newMilestone = 14 }
+    else if (newStreak >= 7  && milestoneBasis < 7)  { milestoneBonusXp = 20; newMilestone = 7  }
+    else if (newStreak >= 3  && milestoneBasis < 3)  { milestoneBonusXp = 10; newMilestone = 3  }
     xpEarned += milestoneBonusXp
 
     // Skill gains

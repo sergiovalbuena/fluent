@@ -57,21 +57,24 @@ export default async function LessonPage({ params }: PageProps) {
   const { data: { user } } = await supabase.auth.getUser()
 
   const lessonIds = exerciseList.map(e => e.id)
-  let progressMap: Record<string, { stars: number; best_score: number }> = {}
+  let progressMap: Record<string, { stars: number; best_score: number; has_crown: boolean }> = {}
 
   if (user && lessonIds.length > 0) {
     const { data: progressRows } = await supabase
       .from('user_progress')
-      .select('lesson_id, stars, best_score')
+      .select('lesson_id, stars, best_score, has_crown')
       .eq('user_id', user.id)
       .in('lesson_id', lessonIds)
 
     if (progressRows) {
       progressMap = Object.fromEntries(
-        progressRows.map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score }])
+        progressRows.map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score, has_crown: r.has_crown ?? false }])
       )
     }
   }
+
+  const allThreeStars = lessonIds.length > 0 && lessonIds.every(id => (progressMap[id]?.stars ?? 0) >= 3)
+  const hasCrown = lessonIds.some(id => progressMap[id]?.has_crown)
 
   // Build per-type star counts
   const starsMap: Record<string, number> = {}
@@ -103,6 +106,8 @@ export default async function LessonPage({ params }: PageProps) {
     hasArrange: !!arrangeEx,
     hasTranslate: !!translateEx,
     starsMap,
+    allThreeStars,
+    hasCrown,
   }
 
   return (

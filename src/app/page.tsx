@@ -15,14 +15,45 @@ const Features = dynamic(() => import('@/components/landing/features').then(m =>
 const HowItWorks = dynamic(() => import('@/components/landing/how-it-works').then(m => ({ default: m.HowItWorks })))
 
 const languages = [
-  { flag: '🇪🇸', name: 'Spanish', available: true },
-  { flag: '🇫🇷', name: 'French', available: true },
-  { flag: '🇧🇷', name: 'Portuguese', available: true },
-  { flag: '🇩🇪', name: 'German', available: false },
-  { flag: '🇮🇹', name: 'Italian', available: false },
-  { flag: '🇯🇵', name: 'Japanese', available: false },
-  { flag: '🇨🇳', name: 'Chinese', available: false },
-  { flag: '🇺🇸', name: 'English', available: true },
+  { flag: '🇪🇸', name: 'Spanish',    available: true  },
+  { flag: '🇫🇷', name: 'French',     available: true  },
+  { flag: '🇧🇷', name: 'Portuguese', available: true  },
+  { flag: '🇩🇪', name: 'German',     available: true  },
+  { flag: '🇮🇹', name: 'Italian',    available: true  },
+  { flag: '🇯🇵', name: 'Japanese',   available: true  },
+  { flag: '🇨🇳', name: 'Chinese',    available: false },
+  { flag: '🇰🇷', name: 'Korean',     available: false },
+]
+
+const testimonials = [
+  {
+    name: 'Sofia R.',
+    flag: '🇧🇷',
+    role: 'Traveled to Spain',
+    text: 'I learned enough Spanish in 2 weeks to order food, ask for directions, and make friends. The survival kit saved me on day one.',
+    stars: 5,
+  },
+  {
+    name: 'Thomas K.',
+    flag: '🇩🇪',
+    role: 'Business traveler',
+    text: 'The structured modules and daily streaks kept me consistent. I went from zero to holding basic conversations in French in 3 months.',
+    stars: 5,
+  },
+  {
+    name: 'Yuki M.',
+    flag: '🇯🇵',
+    role: 'Language enthusiast',
+    text: 'MarIA, the AI tutor, is a game changer. It corrects my mistakes with context, not just rules. My Portuguese sounds natural now.',
+    stars: 5,
+  },
+  {
+    name: 'Ana C.',
+    flag: '🇲🇽',
+    role: 'Student',
+    text: 'I tried Duolingo, Babbel, everything. Fluent is the first app that made me actually remember what I learned. The story mode is brilliant.',
+    stars: 5,
+  },
 ]
 
 
@@ -92,16 +123,16 @@ export default function LandingPage() {
             {/* Left: Copy */}
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
-                🌍 Language Learning Reimagined
+                🌍 6 Languages · AI Tutor · Free to start
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
-                Learn any language,{' '}
-                <span className="text-primary">one lesson</span>{' '}
-                at a time.
+                Speak a new language{' '}
+                <span className="text-primary">in 10 minutes</span>{' '}
+                a day.
               </h1>
               <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed max-w-lg">
-                Fluent makes language learning effective and enjoyable. Structured modules,
-                interactive quizzes, flashcards, and real stories — all in 10 minutes a day.
+                Fluent combines structured lessons, real conversations with an AI tutor, and a travel
+                survival kit — so you actually use the language from day one.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Link href="/dashboard">
@@ -192,24 +223,58 @@ export default function LandingPage() {
         <Features />
       </Suspense>
 
+      {/* ── TESTIMONIALS ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-14">
+            <p className="text-primary text-xs font-bold uppercase tracking-widest mb-3">Real learners</p>
+            <h2 className="text-3xl md:text-4xl font-bold">What people are saying</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {testimonials.map(t => (
+              <div key={t.name} className="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-primary/5 shadow-sm">
+                <div className="flex gap-0.5 mb-4">
+                  {Array.from({ length: t.stars }).map((_, i) => (
+                    <span key={i} className="text-amber-400 text-sm">★</span>
+                  ))}
+                </div>
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">
+                  &ldquo;{t.text}&rdquo;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="size-9 rounded-full bg-primary/10 flex items-center justify-center text-lg shrink-0">
+                    {t.flag}
+                  </div>
+                  <div>
+                    <p className="font-bold text-sm">{t.name}</p>
+                    <p className="text-xs text-slate-400">{t.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── LANGUAGES ── */}
       <section id="languages" className="py-20 md:py-28 bg-white/50 dark:bg-slate-800/20">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="text-center mb-14">
-            <p className="text-primary text-xs font-bold uppercase tracking-widest mb-3">Growing catalog</p>
+            <p className="text-primary text-xs font-bold uppercase tracking-widest mb-3">6 languages available now</p>
             <h2 className="text-3xl md:text-4xl font-bold">Choose your language</h2>
             <p className="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">
-              Start with Spanish, French, or Portuguese today. More languages launching soon.
+              Spanish, French, Portuguese, German, Italian, and Japanese — all fully available today.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {languages.map(lang => (
-              <div
+              <a
                 key={lang.name}
+                href={lang.available ? '/dashboard' : undefined}
                 className={`relative bg-white dark:bg-slate-800 rounded-2xl p-5 border text-center transition-all ${
                   lang.available
-                    ? 'border-primary/10 hover:border-primary/30 hover:shadow-md cursor-pointer'
-                    : 'border-slate-100 dark:border-slate-700 opacity-50'
+                    ? 'border-primary/10 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 cursor-pointer'
+                    : 'border-slate-100 dark:border-slate-700 opacity-40 cursor-default'
                 }`}
               >
                 <div className="text-4xl mb-3">{lang.flag}</div>
@@ -223,7 +288,7 @@ export default function LandingPage() {
                     Coming soon
                   </span>
                 )}
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -242,9 +307,9 @@ export default function LandingPage() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2" />
             <div className="relative">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to become fluent?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Your first lesson takes 5 minutes.</h2>
               <p className="text-white/80 text-lg mb-8 max-w-md mx-auto">
-                Join thousands of learners. Start your first lesson in under a minute.
+                No downloads, no credit card. Just pick a language and start speaking from day one.
               </p>
               <Link href="/dashboard">
                 <button className="bg-white text-primary font-bold px-10 py-4 rounded-xl text-base hover:bg-white/90 transition-all active:scale-95 shadow-xl">

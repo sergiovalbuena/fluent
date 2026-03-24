@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion, type MotionProps } from 'framer-motion'
-import { ArrowLeft, Zap, Star, Gem, Flame, TrendingUp, Brain } from 'lucide-react'
+import { ArrowLeft, Zap, Star, Gem, Flame, Brain } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
@@ -117,35 +117,10 @@ export default function PointsPage() {
             </p>
           </Block>
 
-          {/* ── Level System ──────────────────────────────────────────────────── */}
-          <SectionLabel>Level System</SectionLabel>
+          {/* ── XP Sources ────────────────────────────────────────────────────── */}
+          <SectionLabel>XP Sources</SectionLabel>
 
-          <Block
-            className="col-span-12 md:col-span-7 relative overflow-hidden p-5 md:p-6"
-            style={{ background: 'linear-gradient(135deg, #92400e 0%, #b45309 100%)' }}
-          >
-            <div className="absolute right-4 bottom-4 pointer-events-none select-none">
-              <TrendingUp size={64} className="text-white/[0.07]" />
-            </div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mb-3">How levels work</p>
-            <div className="font-mono text-white/80 text-sm space-y-1.5 bg-black/20 rounded-xl p-4 mb-4">
-              <p><span className="text-amber-300">level</span> = <span className="text-white/60">total_xp</span> ÷ <span className="text-amber-300">100</span></p>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {[
-                { level: 1, xp: '0 XP' },
-                { level: 2, xp: '100 XP' },
-                { level: 3, xp: '200 XP' },
-              ].map(({ level, xp }) => (
-                <div key={level} className="bg-white/10 rounded-xl p-3 text-center">
-                  <p className="text-lg font-bold text-white">Lv.{level}</p>
-                  <p className="text-[11px] text-white/50">{xp}</p>
-                </div>
-              ))}
-            </div>
-          </Block>
-
-          <Block className="col-span-12 md:col-span-5 p-5 md:p-6 flex flex-col gap-1">
+          <Block className="col-span-12 p-5 md:p-6 flex flex-col gap-1">
             <div className="flex items-center gap-2 mb-3">
               <div className="size-8 rounded-xl bg-amber-500/10 flex items-center justify-center">
                 <Zap size={16} className="text-amber-500" />

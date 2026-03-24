@@ -6,7 +6,7 @@ import Link from 'next/link'
 import {
   ArrowRight, BookOpen, MessageSquare, HelpCircle,
   BookMarked, Shuffle, PenLine, Zap, Headphones, Gem, Bot,
-  PlayCircle, Layers, Star,
+  PlayCircle, Layers, Star, Crown, Lock,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -112,6 +112,8 @@ export interface ModuleContentData {
   hasArrange: boolean
   hasTranslate: boolean
   starsMap?: Record<string, number>
+  allThreeStars?: boolean
+  hasCrown?: boolean
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -122,6 +124,8 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
     arrangeCount, translateCount,
     hasVocab, hasPhrases, hasQA, hasStory, hasArrange, hasTranslate,
     starsMap = {},
+    allThreeStars = false,
+    hasCrown = false,
   } = data
 
   // ── Module progress calculation ───────────────────────────────────────────
@@ -438,6 +442,61 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
         <Link href="/play" className="grid h-full place-content-center gap-2 p-4 min-h-[100px]">
           <PenLine size={26} className="text-white mx-auto" />
           <p className="font-bold text-xs text-white text-center">Fill Blank</p>
+        </Link>
+      </Block>
+
+      {/* ════════════════════════════════════════════════════════════════════
+          ROW 6 — Crown Challenge (full width)
+      ════════════════════════════════════════════════════════════════════ */}
+
+      <Block
+        whileHover={allThreeStars ? { y: -4, scale: 1.01 } : {}}
+        className={cn(
+          'col-span-12 p-0 min-h-[90px] relative overflow-hidden',
+          hasCrown
+            ? 'bg-gradient-to-r from-amber-400 to-yellow-500 border-amber-300/40'
+            : allThreeStars
+            ? 'bg-gradient-to-r from-amber-500 to-orange-600 border-amber-400/30'
+            : 'bg-slate-100 dark:bg-white/[0.03] border-slate-200/60 dark:border-white/[0.04]'
+        )}
+      >
+        <Link
+          href={allThreeStars ? `/learn/${slug}/mastery` : '#'}
+          className="flex items-center justify-between h-full px-6 py-4 min-h-[90px]"
+          onClick={!allThreeStars ? (e) => e.preventDefault() : undefined}
+        >
+          <div className="flex items-center gap-4">
+            <div className={cn(
+              'size-12 rounded-2xl flex items-center justify-center',
+              hasCrown ? 'bg-white/30' : allThreeStars ? 'bg-white/20' : 'bg-slate-200 dark:bg-white/10'
+            )}>
+              {allThreeStars
+                ? <Crown size={24} className="text-white" />
+                : <Lock size={22} className="text-slate-400 dark:text-slate-500" />
+              }
+            </div>
+            <div>
+              <p className={cn(
+                'font-bold text-sm',
+                (hasCrown || allThreeStars) ? 'text-white' : 'text-slate-500 dark:text-slate-400'
+              )}>
+                {hasCrown ? '👑 Crown Earned!' : 'Crown Challenge'}
+              </p>
+              <p className={cn(
+                'text-[11px] mt-0.5',
+                (hasCrown || allThreeStars) ? 'text-white/70' : 'text-slate-400 dark:text-slate-500'
+              )}>
+                {hasCrown
+                  ? 'Module mastered — you can use this in real life'
+                  : allThreeStars
+                  ? 'All lessons at ⭐⭐⭐ — take the mastery quiz!'
+                  : 'Earn ⭐⭐⭐ on all lessons to unlock'}
+              </p>
+            </div>
+          </div>
+          {allThreeStars && !hasCrown && (
+            <ArrowRight size={20} className="text-white/70 shrink-0" />
+          )}
         </Link>
       </Block>
 

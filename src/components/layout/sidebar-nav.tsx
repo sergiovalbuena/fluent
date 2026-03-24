@@ -16,29 +16,12 @@ import {
   type SidebarLinkItem,
 } from '@/components/ui/sidebar'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 
 type Module = { slug: string; title: string; icon: string }
 
-const topLinks: SidebarLinkItem[] = [
-  { href: '/dashboard', icon: <Home size={20} strokeWidth={1.8} />, label: 'Home' },
-]
-
-const bottomLinks: SidebarLinkItem[] = [
-  { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: 'Play' },
-  { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: 'Gems' },
-  { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: 'MarIA' },
-  { href: '/videos', icon: <Video size={20} strokeWidth={1.8} />, label: 'Videos' },
-  { href: '/community', icon: <Users size={20} strokeWidth={1.8} />, label: 'Community' },
-  { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: 'Progress' },
-]
-
-const profileLink: SidebarLinkItem = {
-  href: '/profile',
-  icon: <User size={20} strokeWidth={1.8} />,
-  label: 'Profile',
-}
-
 function SidebarContent({ modules }: { modules: Module[] }) {
+  const t = useTranslations('nav')
   const pathname = usePathname()
   const { open: sidebarOpen, animate } = useSidebar()
   const [lessonsOpen, setLessonsOpen] = useState(true)
@@ -51,6 +34,25 @@ function SidebarContent({ modules }: { modules: Module[] }) {
     pathname === href || pathname.startsWith(href + '/')
 
   const anyLessonActive = modules.some(m => isActive(`/learn/${m.slug}`))
+
+  const topLinks: SidebarLinkItem[] = [
+    { href: '/dashboard', icon: <Home size={20} strokeWidth={1.8} />, label: t('home') },
+  ]
+
+  const bottomLinks: SidebarLinkItem[] = [
+    { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: t('play') },
+    { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: t('gems') },
+    { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: t('maria') },
+    { href: '/videos', icon: <Video size={20} strokeWidth={1.8} />, label: t('videos') },
+    { href: '/community', icon: <Users size={20} strokeWidth={1.8} />, label: t('community') },
+    { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: t('progress') },
+  ]
+
+  const profileLink: SidebarLinkItem = {
+    href: '/profile',
+    icon: <User size={20} strokeWidth={1.8} />,
+    label: t('profile'),
+  }
 
   return (
     <div className="flex flex-col h-full">
@@ -106,7 +108,7 @@ function SidebarContent({ modules }: { modules: Module[] }) {
               transition={{ duration: 0.2, ease: 'easeInOut' }}
               className="flex-1 overflow-hidden whitespace-nowrap text-left"
             >
-              Lessons
+              {t('lessons')}
             </m.span>
             <m.span
               animate={{
