@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-})
+export const dynamic = 'force-dynamic'
 
 const SYSTEM_PROMPT = `You are MarIA, a warm, encouraging AI language tutor built into the Fluent language learning app.
 
@@ -39,6 +37,8 @@ export async function POST(req: NextRequest) {
       { status: 503 },
     )
   }
+
+  const openai = new OpenAI({ apiKey })
 
   const body = await req.json() as {
     messages: { role: 'user' | 'assistant'; content: string }[]
