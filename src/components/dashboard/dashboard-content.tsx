@@ -153,6 +153,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             whileTap={{ scale: 0.98 }}
             style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #1e3a5f 100%)' }}
           >
+            <div className="absolute -bottom-4 -right-4 text-[5rem] leading-none opacity-[0.1] select-none pointer-events-none">📺</div>
             {/* Fake thumbnail grain */}
             <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
               style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
@@ -192,10 +193,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={gradientHoverTiltL}
-            className="col-span-3 md:col-span-2 border-rose-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
+            className="col-span-3 md:col-span-2 border-rose-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #e11d48 0%, #db2777 100%)' }}
           >
-            <Link href="/maria" className="flex flex-col items-center gap-1 w-full">
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🤖</div>
+            <Link href="/maria" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Bot size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">MarIA</p>
               <p className="text-[10px] font-semibold text-white/70">AI tutor</p>
@@ -207,10 +209,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           ────────────────────────────────────────────────────────────────── */}
           <Block
             whileHover={gradientHoverTiltR}
-            className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer"
+            className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)' }}
           >
-            <Link href="/review" className="flex flex-col items-center gap-1 w-full">
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">⚡</div>
+            <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Zap size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">Quick Practice</p>
               <p className="text-[10px] font-semibold text-white/70">2 min</p>
@@ -220,8 +223,10 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               CONTINUE LEARNING — bottom-right
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[120px]">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Continue Learning</p>
+          <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[120px] relative overflow-hidden">
+            <div className="absolute -bottom-4 -right-4 text-[4.5rem] leading-none opacity-[0.05] dark:opacity-[0.07] select-none pointer-events-none">📚</div>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 relative z-10">Continue Learning</p>
+            <div className="relative z-10 flex flex-col flex-1 justify-between">
             {current ? (
               <>
                 <div className="flex items-center gap-2.5 my-3">
@@ -262,6 +267,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                 </motion.button>
               </Link>
             )}
+            </div>
           </Block>
 
           {/* ── 4 compact cards — left side, row 1 (col-span-2 each = 8 total) ── */}
@@ -269,10 +275,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* SHORT STORY */}
           <Block
             whileHover={gradientHoverTiltL}
-            className="col-span-6 md:col-span-2 border-indigo-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            className="col-span-6 md:col-span-2 border-indigo-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #4338ca 0%, #1d4ed8 100%)' }}
           >
-            <Link href="/learn" className="flex flex-col items-center gap-1 w-full">
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">📖</div>
+            <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
               <BookMarked size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">Short Story</p>
               <p className="text-[10px] font-semibold text-white/60">5 min · 🇪🇸</p>
@@ -296,10 +303,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* DAILY CHALLENGE */}
           <Block
             whileHover={gradientHoverTiltL}
-            className="col-span-6 md:col-span-2 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            className="col-span-6 md:col-span-2 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' }}
           >
-            <Link href="/review" className="flex flex-col items-center gap-1 w-full">
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🏆</div>
+            <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Trophy size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">Daily Challenge</p>
               <p className="text-[10px] font-semibold text-white/70">New today</p>
@@ -309,10 +317,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* MUSIC TIME */}
           <Block
             whileHover={gradientHoverTiltR}
-            className="col-span-6 md:col-span-2 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer"
+            className="col-span-6 md:col-span-2 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)' }}
           >
-            <Link href="/play" className="flex flex-col items-center gap-1 w-full">
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🎵</div>
+            <Link href="/play" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Music size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">Music Time</p>
               <p className="text-[10px] font-semibold text-white/70">3 songs</p>
@@ -322,8 +331,9 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               LESSONS — right side, col-span-4 row-span-2
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]" style={{ maxHeight: '420px' }}>
-            <div className="flex items-center justify-between mb-3 shrink-0">
+          <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] relative" style={{ maxHeight: '420px' }}>
+            <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">🗺️</div>
+            <div className="flex items-center justify-between mb-3 shrink-0 relative z-10">
               <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lessons</p>
               <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
                 View all <ChevronRight size={12} />
@@ -339,10 +349,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           {/* ──────────────────────────────────────────────────────────────────
               WEEKLY ACTIVITY CHART — left side row 2 (col-span-8)
           ────────────────────────────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[280px]">
+          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[280px] relative overflow-hidden">
+            <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">📈</div>
 
             {/* Header */}
-            <div className="flex items-center justify-between mb-4 shrink-0">
+            <div className="flex items-center justify-between mb-4 shrink-0 relative z-10">
               <div className="flex items-baseline gap-2">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">This week</p>
               </div>
@@ -353,7 +364,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0">
+            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0 relative z-10">
               <div className="flex flex-col gap-0.5">
                 <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
                 <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">sessions</p>
@@ -373,7 +384,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </div>
 
             {/* Chart — flex-1 so it fills remaining height, no dead space */}
-            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0">
+            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0 relative z-10">
               {stats.weekActivity.map((v, i) => {
                 const isToday = i === todayIdx
                 const isBest = i === bestDayIdx && v > 0
