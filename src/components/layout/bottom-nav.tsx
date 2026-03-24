@@ -27,10 +27,10 @@ export function BottomNav() {
             <button
               key={item.label}
               onClick={item.action}
-              className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors"
+              className="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-muted-foreground hover:text-primary transition-colors"
             >
               <Icon size={22} strokeWidth={1.5} />
-              <span className="text-[10px] font-bold uppercase tracking-wider">{item.label}</span>
+              <span className="text-[11px] font-bold uppercase tracking-wider">{item.label}</span>
             </button>
           )
         }
@@ -42,12 +42,12 @@ export function BottomNav() {
             key={item.href}
             href={item.href}
             className={cn(
-              'flex flex-col items-center gap-1 transition-colors',
+              'flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] transition-colors',
               isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary'
             )}
           >
             <Icon size={22} strokeWidth={isActive ? 2.5 : 1.5} />
-            <span className="text-[10px] font-bold uppercase tracking-wider">{item.label}</span>
+            <span className="text-[11px] font-bold uppercase tracking-wider">{item.label}</span>
           </Link>
         )
       })}

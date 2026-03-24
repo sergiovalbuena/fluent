@@ -169,7 +169,7 @@ export function GemsPageContent({ totalGems: initialGems, userId }: { totalGems:
 
           {/* Balance */}
           <Block className="col-span-12 md:col-span-4 p-5 flex flex-col gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{t('balance')}</p>
+            <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{t('balance')}</p>
             <div className="flex-1 flex flex-col justify-center gap-1">
               <div className="flex items-end gap-2">
                 <p className="text-4xl font-bold text-slate-900 dark:text-white tabular-nums leading-none">{gems}</p>
@@ -184,10 +184,10 @@ export function GemsPageContent({ totalGems: initialGems, userId }: { totalGems:
                   transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 />
               </div>
-              <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1">{t('milestone_progress', { count: gems })}</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">{t('milestone_progress', { count: gems })}</p>
             </div>
             <div className="pt-3 border-t border-black/[0.05] dark:border-white/[0.05]">
-              <p className="text-[10px] text-slate-400 dark:text-slate-500 text-center">{t('earn_hint')}</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 text-center">{t('earn_hint')}</p>
             </div>
           </Block>
 

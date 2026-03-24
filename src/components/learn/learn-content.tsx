@@ -358,7 +358,7 @@ function MapNode({ mod }: { mod: LearnModule }) {
           'bg-white dark:bg-white/[0.08] border border-black/[0.07] dark:border-white/[0.07] shadow-[0_3px_0_rgba(0,0,0,0.06)] dark:shadow-[0_3px_0_rgba(0,0,0,0.3)]',
       )}>
         <p className={cn(
-          'text-[10px] font-bold leading-tight line-clamp-2',
+          'text-[11px] font-bold leading-tight line-clamp-2',
           (isCurrent || isDone) ? 'text-white'
             : isLocked ? 'text-slate-400'
             : 'text-slate-700 dark:text-slate-100',
@@ -373,7 +373,7 @@ function MapNode({ mod }: { mod: LearnModule }) {
         )}
 
         {isCurrent && mod.totalLessons > 0 && (
-          <p className="text-[9px] text-white/65 mt-0.5 font-medium tabular-nums">
+          <p className="text-[10px] text-white/65 mt-0.5 font-medium tabular-nums">
             {mod.lessonsCompleted}/{mod.totalLessons}
           </p>
         )}
@@ -438,12 +438,12 @@ function BonusMapNode({ activity }: { activity: BonusActivity }) {
           : 'bg-amber-400 shadow-[0_3px_0_#d97706]',
       )}>
         <p className={cn(
-          'text-[9px] font-black leading-tight line-clamp-1 uppercase tracking-wide',
+          'text-[10px] font-black leading-tight line-clamp-1 uppercase tracking-wide',
           activity.locked ? 'text-amber-500/70 dark:text-amber-400/60' : 'text-white',
         )}>
           {activity.title}
         </p>
-        <p className={cn('text-[8px] font-medium mt-px', activity.locked ? 'text-amber-400/50 dark:text-amber-500/40' : 'text-white/70')}>
+        <p className={cn('text-[9px] font-medium mt-px', activity.locked ? 'text-amber-400/50 dark:text-amber-500/40' : 'text-white/70')}>
           optional
         </p>
       </div>
@@ -551,12 +551,12 @@ function CrownChallengeNode({ challenge }: { challenge: CrownChallenge }) {
           : 'bg-violet-600 shadow-[0_3px_0_#4c1d95]',
       )}>
         <p className={cn(
-          'text-[9px] font-black leading-tight uppercase tracking-wide line-clamp-1',
+          'text-[10px] font-black leading-tight uppercase tracking-wide line-clamp-1',
           challenge.locked ? 'text-violet-500/70 dark:text-violet-400/60' : 'text-white',
         )}>
           Crown
         </p>
-        <p className={cn('text-[8px] font-medium mt-px', challenge.locked ? 'text-violet-400/50 dark:text-violet-500/40' : 'text-white/70')}>
+        <p className={cn('text-[9px] font-medium mt-px', challenge.locked ? 'text-violet-400/50 dark:text-violet-500/40' : 'text-white/70')}>
           optional
         </p>
       </div>
@@ -824,7 +824,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
               <span className="text-2xl leading-none shrink-0">{current.icon}</span>
 
               <div className="flex-1 min-w-0">
-                <p className="text-[9px] font-black text-white/60 uppercase tracking-widest leading-none mb-0.5">
+                <p className="text-[10px] font-black text-white/60 uppercase tracking-widest leading-none mb-0.5">
                   {current.lessonsCompleted > 0 ? 'Continue' : 'Start'}
                 </p>
                 <p className="text-sm font-bold text-white truncate leading-tight">{current.title}</p>
@@ -832,7 +832,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
                   {current.stars > 0
                     ? <StarRow stars={current.stars} size={9} />
                     : current.totalLessons > 0 && (
-                      <p className="text-[9px] text-white/55 font-medium">
+                      <p className="text-[10px] text-white/55 font-medium">
                         {current.lessonsCompleted}/{current.totalLessons} lessons
                       </p>
                     )

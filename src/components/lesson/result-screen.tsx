@@ -78,7 +78,7 @@ export function ResultScreen({ score, xpEarned, gemsEarned, stars, milestoneBonu
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const, delay: 0.15 }}
       >
-        <span className="text-8xl">{emoji}</span>
+        <span className="text-6xl md:text-8xl">{emoji}</span>
 
         <div className="text-center space-y-1">
           <h2 className="text-3xl font-bold">{headline}</h2>
@@ -112,21 +112,21 @@ export function ResultScreen({ score, xpEarned, gemsEarned, stars, milestoneBonu
         </div>
 
         {/* Rewards row */}
-        <div className="flex items-center gap-3 flex-wrap justify-center">
+        <div className="flex items-center gap-2 flex-wrap justify-center">
           {score < 100 && (
-            <div className="flex flex-col items-center gap-1 bg-white dark:bg-slate-800 rounded-2xl px-5 py-3 shadow-sm border border-black/5">
+            <div className="flex flex-col items-center gap-1 bg-white dark:bg-slate-800 rounded-2xl px-4 py-3 shadow-sm border border-black/5">
               <span className="text-2xl font-bold">{score}%</span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{t('your_score')}</span>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">{t('your_score')}</span>
             </div>
           )}
-          <div className="flex flex-col items-center gap-1 bg-primary/10 rounded-2xl px-5 py-3 border border-primary/20">
+          <div className="flex flex-col items-center gap-1 bg-primary/10 rounded-2xl px-4 py-3 border border-primary/20">
             <span className="text-2xl font-bold text-primary">+{xpEarned}</span>
-            <span className="text-[10px] font-bold uppercase tracking-wider text-primary/70">{t('xp_earned')}</span>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-primary/70">{t('xp_earned')}</span>
           </div>
           {gemsEarned > 0 && (
-            <div className="flex flex-col items-center gap-1 bg-amber-400/10 rounded-2xl px-5 py-3 border border-amber-400/20">
+            <div className="flex flex-col items-center gap-1 bg-amber-400/10 rounded-2xl px-4 py-3 border border-amber-400/20">
               <span className="text-2xl font-bold text-amber-500">+{gemsEarned}</span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-amber-500/70">{t('gems_earned')}</span>
+              <span className="text-[11px] font-bold uppercase tracking-wider text-amber-500/70">{t('gems_earned')}</span>
             </div>
           )}
         </div>

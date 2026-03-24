@@ -83,8 +83,8 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
         {back ? (
           <div className="flex items-center gap-1.5">
             <Link href={back.href}>
-              <button className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors">
-                <ChevronLeft size={18} />
+              <button className="w-11 h-11 rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors">
+                <ChevronLeft size={20} />
               </button>
             </Link>
             {back.label && (
@@ -112,7 +112,7 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
 
           {/* Active boost pill */}
           {activeBoost && (
-            <div className="flex items-center gap-1 bg-yellow-400/20 text-yellow-600 dark:text-yellow-300 px-2.5 py-1 rounded-full text-[10px] font-black animate-pulse">
+            <div className="flex items-center gap-1 bg-yellow-400/20 text-yellow-600 dark:text-yellow-300 px-2.5 py-1 rounded-full text-[11px] font-black animate-pulse">
               <Zap size={10} />
               {activeBoost}
             </div>

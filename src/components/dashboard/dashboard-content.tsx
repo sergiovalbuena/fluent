@@ -85,7 +85,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               <span className="text-[7rem] md:text-[9rem] leading-none opacity-[0.065] dark:opacity-[0.055] translate-x-4 md:translate-x-8">👋</span>
             </div>
             <div className="relative">
-              <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
+              <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
                 {greeting}
               </span>
               <h2 className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 dark:text-white">
@@ -110,7 +110,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                       <BookOpen size={20} className="shrink-0" />
                     )}
                     <div className="flex-1 min-w-0 text-left">
-                      <p className="text-[9px] font-black uppercase tracking-widest text-white/55 leading-none mb-1">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-white/55 leading-none mb-1">
                         {t('resume')}
                       </p>
                       <p className="text-sm font-bold text-white leading-tight truncate">
@@ -146,7 +146,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
             />
             <div className="relative p-4 pb-0">
-              <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/50">
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-white/50">
                 <span className="size-1.5 rounded-full bg-red-400 animate-pulse" />
                 {t('video_clip')}
               </span>
@@ -179,7 +179,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/maria" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Bot size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">MarIA</p>
-              <p className="text-[10px] font-semibold text-white/70">{t('ai_tutor')}</p>
+              <p className="text-[11px] font-semibold text-white/70">{t('ai_tutor')}</p>
             </Link>
           </Block>
 
@@ -193,14 +193,14 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Zap size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">{t('quick_practice')}</p>
-              <p className="text-[10px] font-semibold text-white/70">{tc('two_min')}</p>
+              <p className="text-[11px] font-semibold text-white/70">{tc('two_min')}</p>
             </Link>
           </Block>
 
           {/* CONTINUE LEARNING */}
           <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[120px] relative overflow-hidden">
             <div className="absolute -bottom-4 -right-4 text-[4.5rem] leading-none opacity-[0.05] dark:opacity-[0.07] select-none pointer-events-none">📚</div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 relative z-10">{t('continue_learning')}</p>
+            <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 relative z-10">{t('continue_learning')}</p>
             <div className="relative z-10 flex flex-col flex-1 justify-between">
             {current ? (
               <>
@@ -255,7 +255,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
               <BookMarked size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('short_story')}</p>
-              <p className="text-[10px] font-semibold text-white/60">{tc('five_min')} · 🇪🇸</p>
+              <p className="text-[11px] font-semibold text-white/60">{tc('five_min')} · 🇪🇸</p>
             </Link>
           </Block>
 
@@ -268,7 +268,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/travel" className="flex flex-col items-center gap-1 w-full relative z-10">
               <span className="text-xl leading-none">✈️</span>
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('travel_mode')}</p>
-              <p className="text-[10px] font-semibold text-white/70">{t('survival_kit')}</p>
+              <p className="text-[11px] font-semibold text-white/70">{t('survival_kit')}</p>
             </Link>
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🌍</div>
           </Block>
@@ -283,7 +283,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Trophy size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('daily_challenge')}</p>
-              <p className="text-[10px] font-semibold text-white/70">{t('new_today')}</p>
+              <p className="text-[11px] font-semibold text-white/70">{t('new_today')}</p>
             </Link>
           </Block>
 
@@ -297,7 +297,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/play" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Music size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('music_time')}</p>
-              <p className="text-[10px] font-semibold text-white/70">{tc('three_songs')}</p>
+              <p className="text-[11px] font-semibold text-white/70">{tc('three_songs')}</p>
             </Link>
           </Block>
 
@@ -305,7 +305,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] relative" style={{ maxHeight: '420px' }}>
             <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">🗺️</div>
             <div className="flex items-center justify-between mb-3 shrink-0 relative z-10">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{t('continue_learning')}</p>
+              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{t('continue_learning')}</p>
               <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
                 {tc('view_all')} <ChevronRight size={12} />
               </Link>
@@ -322,7 +322,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">📈</div>
 
             <div className="flex items-center justify-between mb-4 shrink-0 relative z-10">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">{t('this_week')}</p>
+              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">{t('this_week')}</p>
               <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
                 <span className="size-1.5 rounded-full bg-primary" />
                 <span className="text-[11px] font-bold text-primary tabular-nums">{t('days_active', { count: weekDaysActive })}</span>
@@ -332,17 +332,17 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <div className="grid grid-cols-3 gap-3 mb-4 shrink-0 relative z-10">
               <div className="flex flex-col gap-0.5">
                 <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{t('sessions')}</p>
+                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('sessions')}</p>
               </div>
               <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
                 <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{t('avg_active_day')}</p>
+                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('avg_active_day')}</p>
               </div>
               <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
                 <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
                   {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
                 </p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">
+                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
                   {currentRun > 0 ? t('day_run') : t('best_day')}
                 </p>
               </div>
@@ -356,7 +356,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                 return (
                   <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
                     <motion.span
-                      className={cn('text-[10px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
+                      className={cn('text-[11px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.5 + i * 0.06 }}
@@ -378,7 +378,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                         transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
                       />
                     </div>
-                    <span className={cn('text-[10px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
+                    <span className={cn('text-[11px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
                       {DAYS[i]}
                     </span>
                   </div>

@@ -211,7 +211,7 @@ export default function ProfilePage() {
               ].map(s => (
                 <div key={s.label} className="bg-white/10 rounded-2xl py-3">
                   <p className="text-xl font-bold">{s.value}</p>
-                  <p className="text-[10px] text-white/70 font-medium mt-0.5">{s.label}</p>
+                  <p className="text-[11px] text-white/70 font-medium mt-0.5">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -251,7 +251,7 @@ export default function ProfilePage() {
                     }`}
                   >
                     <span className="text-2xl">{a.icon}</span>
-                    <p className="text-[10px] font-bold text-center leading-tight">{a.label}</p>
+                    <p className="text-[11px] font-bold text-center leading-tight">{a.label}</p>
                   </div>
                 ))}
               </div>

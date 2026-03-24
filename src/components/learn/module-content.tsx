@@ -157,7 +157,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
           </span>
         </div>
         <div className="relative">
-          <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-4">
+          <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-4">
             {languageCode?.toUpperCase()} · {exerciseCount} activities
           </span>
           <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white mb-1">
@@ -268,12 +268,12 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
               vocabItems.length > 0 ? (
                 <div className="flex flex-wrap gap-1">
                   {vocabItems.slice(0, 3).map(w => (
-                    <span key={w.word} className="text-[10px] font-semibold bg-indigo-500/8 text-indigo-500 px-1.5 py-0.5 rounded-full">
+                    <span key={w.word} className="text-[11px] font-semibold bg-indigo-500/8 text-indigo-500 px-1.5 py-0.5 rounded-full">
                       {w.icon ? `${w.icon} ` : ''}{w.word}
                     </span>
                   ))}
                   {vocabItems.length > 3 && (
-                    <span className="text-[10px] text-slate-400">+{vocabItems.length - 3}</span>
+                    <span className="text-[11px] text-slate-400">+{vocabItems.length - 3}</span>
                   )}
                 </div>
               ) : undefined
