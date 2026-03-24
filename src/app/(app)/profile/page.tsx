@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
 import type { UserProfile } from '@/lib/types/database'
+import { useTranslations } from 'next-intl'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
   Sheet,
@@ -106,6 +107,7 @@ function RowInner({ icon: Icon, label, value }: {
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function ProfilePage() {
+  const t = useTranslations('profile')
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -159,7 +161,7 @@ export default function ProfilePage() {
   }
 
   // ── Derived display values ───────────────────────────────────────────────────
-  const currentThemeLabel  = !mounted ? 'System' : theme === 'light' ? 'Light' : theme === 'dark' ? 'Dark' : 'System'
+  const currentThemeLabel  = !mounted ? t('system') : theme === 'light' ? t('light') : theme === 'dark' ? t('dark') : t('system')
   const currentGoalLabel   = DAILY_GOALS.find(g => g.value === dailyGoal)?.label ?? '10 min'
   const displayName        = profile?.display_name ?? 'Learner'
   const streakCount        = profile?.streak_count ?? 0
@@ -171,7 +173,7 @@ export default function ProfilePage() {
 
       {/* Header */}
       <header className="flex items-center px-4 md:px-8 py-4 md:py-5 sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
-        <h1 className="text-xl md:text-2xl font-bold">Profile</h1>
+        <h1 className="text-xl md:text-2xl font-bold">{t('title')}</h1>
       </header>
 
       <main className="flex-1 p-4 md:p-8">
@@ -190,7 +192,7 @@ export default function ProfilePage() {
               <div className="flex-1 min-w-0">
                 <h2 className="text-lg font-bold leading-tight">{displayName}</h2>
                 <p className="text-sm text-white/70">
-                  {profile ? `Joined ${joinedDate(profile.created_at)}` : 'Not signed in'}
+                  {profile ? `${t('joined')} ${joinedDate(profile.created_at)}` : t('not_signed_in')}
                 </p>
                 <div className="flex items-center gap-1.5 mt-1.5">
                   <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-bold">
@@ -204,8 +206,8 @@ export default function ProfilePage() {
             </div>
             <div className="relative mt-5 grid grid-cols-2 gap-3 text-center">
               {[
-                { value: String(streakCount), label: 'Day Streak' },
-                { value: String(totalXp),     label: 'Total XP'   },
+                { value: String(streakCount), label: t('day_streak') },
+                { value: String(totalXp),     label: t('total_xp')   },
               ].map(s => (
                 <div key={s.label} className="bg-white/10 rounded-2xl py-3">
                   <p className="text-xl font-bold">{s.value}</p>
@@ -223,8 +225,8 @@ export default function ProfilePage() {
                   <LogIn size={18} className="text-primary" />
                 </div>
                 <div className="flex-1">
-                  <p className="font-bold text-sm">Sign in to save progress</p>
-                  <p className="text-xs text-muted-foreground">Sync your streak, XP and lessons across devices</p>
+                  <p className="font-bold text-sm">{t('sign_in_cta')}</p>
+                  <p className="text-xs text-muted-foreground">{t('sign_in_desc')}</p>
                 </div>
                 <ChevronRight size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
@@ -234,7 +236,7 @@ export default function ProfilePage() {
           {/* ── Achievements ── */}
           <section>
             <div className="flex items-center justify-between mb-3 px-1">
-              <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Achievements</h3>
+              <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">{t('achievements')}</h3>
               <span className="text-xs text-muted-foreground">0 / {achievements.length}</span>
             </div>
             <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 p-4">
@@ -254,7 +256,7 @@ export default function ProfilePage() {
                 ))}
               </div>
               <p className="text-xs text-muted-foreground text-center mt-4">
-                Complete lessons to unlock achievements
+                {t('complete_lessons')}
               </p>
             </div>
           </section>
@@ -265,12 +267,12 @@ export default function ProfilePage() {
               <Trophy size={18} className="text-yellow-500" />
             </div>
             <div className="flex-1">
-              <p className="font-bold text-sm">Leaderboard</p>
-              <p className="text-xs text-muted-foreground">Compete with other learners worldwide</p>
+              <p className="font-bold text-sm">{t('leaderboard')}</p>
+              <p className="text-xs text-muted-foreground">{t('leaderboard_desc')}</p>
             </div>
             <div className="flex items-center gap-1 text-xs font-bold text-yellow-500">
               <Star size={12} />
-              Soon
+              {t('soon')}
             </div>
           </div>
 
@@ -281,8 +283,8 @@ export default function ProfilePage() {
                 <Settings2 size={18} className="text-primary" />
               </div>
               <div className="flex-1">
-                <p className="font-bold text-sm">Profile Setup</p>
-                <p className="text-xs text-muted-foreground">Redo your language & learning preferences</p>
+                <p className="font-bold text-sm">{t('profile_setup')}</p>
+                <p className="text-xs text-muted-foreground">{t('profile_setup_desc')}</p>
               </div>
               <ChevronRight size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
             </div>
@@ -290,18 +292,18 @@ export default function ProfilePage() {
 
           {/* ── Account ── */}
           <section>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">Account</h3>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">{t('account')}</h3>
             <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 divide-y divide-primary/5 overflow-hidden">
 
               {/* App Language */}
               <Sheet open={langSheetOpen} onOpenChange={setLangSheetOpen}>
                 <button className="w-full text-left cursor-pointer" onClick={() => setLangSheetOpen(true)}>
-                  <RowInner icon={Globe} label="App Language" value={`${appLang.flag} ${appLang.name}`} />
+                  <RowInner icon={Globe} label={t('native_language')} value={`${appLang.flag} ${appLang.name}`} />
                 </button>
                 <SheetContent side="bottom" className="rounded-t-3xl max-h-[80vh] flex flex-col">
                   <SheetHeader className="px-6 pt-2 pb-2">
-                    <SheetTitle className="text-base font-bold">App Language</SheetTitle>
-                    <p className="text-xs text-muted-foreground">Choose the language for the app interface</p>
+                    <SheetTitle className="text-base font-bold">{t('native_language')}</SheetTitle>
+                    <p className="text-xs text-muted-foreground">{t('native_language')}</p>
                   </SheetHeader>
                   <div className="overflow-y-auto px-4 pb-8 space-y-2 flex-1">
                     {APP_LANGUAGES.map(lang => (
@@ -334,7 +336,7 @@ export default function ProfilePage() {
               {/* Notifications */}
               <DropdownMenu>
                 <DropdownMenuTrigger className="w-full text-left cursor-pointer">
-                  <RowInner icon={Bell} label="Notifications" value={notifications} />
+                  <RowInner icon={Bell} label={t('notifications')} value={notifications} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="min-w-36">
                   {['Off', 'Daily', 'Smart'].map(option => (
@@ -356,19 +358,19 @@ export default function ProfilePage() {
               {/* Theme */}
               <DropdownMenu>
                 <DropdownMenuTrigger className="w-full text-left cursor-pointer">
-                  <RowInner icon={Moon} label="Theme" value={currentThemeLabel} />
+                  <RowInner icon={Moon} label={t('theme')} value={currentThemeLabel} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="min-w-36">
                   <DropdownMenuItem className="justify-between" onClick={() => setTheme('light')}>
-                    <span className="flex items-center gap-2"><Sun size={13} />Light</span>
+                    <span className="flex items-center gap-2"><Sun size={13} />{t('light')}</span>
                     {theme === 'light' && <Check size={13} className="text-primary" />}
                   </DropdownMenuItem>
                   <DropdownMenuItem className="justify-between" onClick={() => setTheme('dark')}>
-                    <span className="flex items-center gap-2"><Moon size={13} />Dark</span>
+                    <span className="flex items-center gap-2"><Moon size={13} />{t('dark')}</span>
                     {theme === 'dark' && <Check size={13} className="text-primary" />}
                   </DropdownMenuItem>
                   <DropdownMenuItem className="justify-between" onClick={() => setTheme('system')}>
-                    <span className="flex items-center gap-2"><Monitor size={13} />System</span>
+                    <span className="flex items-center gap-2"><Monitor size={13} />{t('system')}</span>
                     {(theme === 'system' || !theme) && <Check size={13} className="text-primary" />}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -379,13 +381,13 @@ export default function ProfilePage() {
 
           {/* ── Learning ── */}
           <section>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">Learning</h3>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">{t('learning_section')}</h3>
             <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 divide-y divide-primary/5 overflow-hidden">
 
               {/* Daily Goal */}
               <DropdownMenu>
                 <DropdownMenuTrigger className="w-full text-left cursor-pointer">
-                  <RowInner icon={BookOpen} label="Daily Goal" value={currentGoalLabel} />
+                  <RowInner icon={BookOpen} label={t('daily_goal')} value={currentGoalLabel} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="min-w-44">
                   {DAILY_GOALS.map(g => (
@@ -407,7 +409,7 @@ export default function ProfilePage() {
               {/* Reminder Time */}
               <DropdownMenu>
                 <DropdownMenuTrigger className="w-full text-left cursor-pointer">
-                  <RowInner icon={Clock} label="Reminder Time" value={reminderTime} />
+                  <RowInner icon={Clock} label={t('reminder_time')} value={reminderTime} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="min-w-36">
                   {REMINDER_TIMES.map(time => (
@@ -442,13 +444,13 @@ export default function ProfilePage() {
 
           {/* ── Support ── */}
           <section>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">Support</h3>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">{t('support')}</h3>
             <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 divide-y divide-primary/5 overflow-hidden">
               <Link href="/help-center" className="block">
-                <RowInner icon={HelpCircle} label="Help Center" />
+                <RowInner icon={HelpCircle} label={t('help_center')} />
               </Link>
               <Link href="/privacy-policy" className="block">
-                <RowInner icon={Shield} label="Privacy Policy" />
+                <RowInner icon={Shield} label={t('privacy_policy')} />
               </Link>
             </div>
           </section>
@@ -457,12 +459,12 @@ export default function ProfilePage() {
           {isLoggedIn && (
             <div className="flex items-center gap-2 justify-center text-xs text-muted-foreground pb-1">
               <Zap size={11} className="text-primary" />
-              <span>Settings sync automatically to your account</span>
+              <span>{t('sync_note')}</span>
             </div>
           )}
 
           <p className="text-center text-xs text-muted-foreground pb-4">
-            Fluent v1.0.0 · Made with ❤️
+            {t('version')}
           </p>
 
         </div>

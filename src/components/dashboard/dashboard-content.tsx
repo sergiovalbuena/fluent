@@ -10,6 +10,7 @@ import {
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { PathTrail, type LearnModule } from '@/components/learn/learn-content'
+import { useTranslations } from 'next-intl'
 
 export type DashboardStats = {
   streak: number
@@ -22,7 +23,6 @@ export type DashboardStats = {
 const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
 
 // ── Block primitive ────────────────────────────────────────────────────────────
-// Mirrors the RevealBento pattern: spring pop entrance + optional tilt hover.
 type BlockProps = { className?: string; children?: React.ReactNode; onClick?: () => void } & MotionProps
 
 const Block = ({ className, children, ...rest }: BlockProps) => (
@@ -44,9 +44,12 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
 
 // ── Dashboard ─────────────────────────────────────────────────────────────────
 export function DashboardContent({ modules, stats, displayName = 'there' }: { modules: LearnModule[]; stats: DashboardStats; displayName?: string }) {
+  const t = useTranslations('dashboard')
+  const tc = useTranslations('common')
+
   const current = modules.find(m => m.state === 'current') ?? modules.find(m => m.state === 'available') ?? modules[0] ?? null
   const hour = new Date().getHours()
-  const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening'
+  const greeting = hour < 12 ? t('greeting_morning') : hour < 18 ? t('greeting_afternoon') : t('greeting_evening')
   const firstName = displayName.split(' ')[0]
   const weekDaysActive = stats.weekActivity.filter(v => v > 0).length
   const maxActivity = Math.max(...stats.weekActivity, 1)
@@ -54,21 +57,19 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
   const totalSessions = stats.weekActivity.reduce((a, b) => a + b, 0)
   const bestDayIdx = stats.weekActivity.indexOf(maxActivity)
   const avgPerActiveDay = weekDaysActive > 0 ? Math.round(totalSessions / weekDaysActive) : 0
-  // Consecutive days ending at today (or yesterday if today is 0)
   let currentRun = 0
   for (let i = todayIdx; i >= 0; i--) {
     if (stats.weekActivity[i] > 0) currentRun++
     else break
   }
 
-  // Shared hover for gradient cards
   const gradientHover = { rotate: '0deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
   const gradientHoverTiltL = { rotate: '2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
   const gradientHoverTiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
-      <AppTopbar title="Dashboard" />
+      <AppTopbar title={t('title')} />
 
       <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
         <motion.div
@@ -78,18 +79,10 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           className="mx-auto max-w-6xl grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
         >
 
-          {/* ──────────────────────────────────────────────────────────────────
-              HERO — Welcome
-              col-span-12 mobile · col-span-8 desktop
-          ────────────────────────────────────────────────────────────────── */}
-          {/* ──────────────────────────────────────────────────────────────────
-              HERO — Welcome (row-span-2)
-          ────────────────────────────────────────────────────────────────── */}
+          {/* HERO */}
           <Block className="col-span-12 md:col-span-5 md:row-span-2 relative overflow-hidden p-6 md:p-8 flex flex-col justify-center shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
             <div className="absolute right-0 top-0 bottom-0 w-32 md:w-44 flex items-center justify-end overflow-hidden pointer-events-none select-none">
-              <span className="text-[7rem] md:text-[9rem] leading-none opacity-[0.065] dark:opacity-[0.055] translate-x-4 md:translate-x-8">
-                👋
-              </span>
+              <span className="text-[7rem] md:text-[9rem] leading-none opacity-[0.065] dark:opacity-[0.055] translate-x-4 md:translate-x-8">👋</span>
             </div>
             <div className="relative">
               <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
@@ -100,13 +93,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               </h2>
               <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-[16rem]">
                 {stats.streak > 0
-                  ? `You're on a ${stats.streak}-day streak — keep it up! 🔥`
-                  : 'Ready to learn something new today?'}
+                  ? t('streak_active', { count: stats.streak })
+                  : t('streak_start')}
               </p>
 
-              {/* CTAs */}
               <div className="flex items-stretch gap-2 mt-5">
-                {/* Resume — primary, shows exact module context */}
                 <Link href={current ? `/learn/${current.slug}` : '/learn'} className="flex-[3] min-w-0">
                   <motion.button
                     whileHover={{ scale: 1.02, y: -1 }}
@@ -120,17 +111,16 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                     )}
                     <div className="flex-1 min-w-0 text-left">
                       <p className="text-[9px] font-black uppercase tracking-widest text-white/55 leading-none mb-1">
-                        Resume
+                        {t('resume')}
                       </p>
                       <p className="text-sm font-bold text-white leading-tight truncate">
-                        {current ? current.title : 'Browse Lessons'}
+                        {current ? current.title : t('browse_lessons')}
                       </p>
                     </div>
                     <ArrowRight size={15} className="shrink-0 text-white/70" />
                   </motion.button>
                 </Link>
 
-                {/* Quick Practice — secondary, shine effect, two-line label */}
                 <Link href="/review" className="flex-[2] min-w-0">
                   <motion.button
                     whileHover={{ scale: 1.03 }}
@@ -138,36 +128,29 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                     className="w-full h-full flex flex-col items-center justify-center gap-1.5 animate-background-shine bg-[linear-gradient(110deg,#2a1207,45%,#ff8052,55%,#2a1207)] bg-[length:200%_100%] text-white font-bold px-4 rounded-xl border border-primary/30 shadow-sm shadow-primary/20"
                   >
                     <Zap size={14} />
-                    <span className="text-sm font-bold">Quick Practice</span>
+                    <span className="text-sm font-bold">{t('quick_practice')}</span>
                   </motion.button>
                 </Link>
               </div>
             </div>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              VIDEO CLIP (row-span-2)
-          ────────────────────────────────────────────────────────────────── */}
+          {/* VIDEO CLIP */}
           <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer border-indigo-900/30"
             whileHover={{ scale: 1.02, filter: 'brightness(1.14) saturate(1.12)' }}
             whileTap={{ scale: 0.98 }}
             style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #1e3a5f 100%)' }}
           >
             <div className="absolute -bottom-4 -right-4 text-[5rem] leading-none opacity-[0.1] select-none pointer-events-none">📺</div>
-            {/* Fake thumbnail grain */}
             <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
               style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
             />
-
-            {/* Top label */}
             <div className="relative p-4 pb-0">
               <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/50">
                 <span className="size-1.5 rounded-full bg-red-400 animate-pulse" />
-                Video Clip
+                {t('video_clip')}
               </span>
             </div>
-
-            {/* Center play button */}
             <div className="flex-1 flex flex-col items-center justify-center gap-3 p-4">
               <div className="size-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center backdrop-blur-sm">
                 <svg viewBox="0 0 24 24" className="size-6 fill-white ml-0.5" xmlns="http://www.w3.org/2000/svg">
@@ -175,22 +158,18 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                 </svg>
               </div>
               <div className="text-center">
-                <p className="text-sm font-bold text-white leading-snug">Daily Lesson</p>
-                <p className="text-[11px] text-white/50 mt-0.5">5 min · Spanish</p>
+                <p className="text-sm font-bold text-white leading-snug">{t('daily_lesson')}</p>
+                <p className="text-[11px] text-white/50 mt-0.5">{tc('five_min')} · Spanish</p>
               </div>
             </div>
-
-            {/* Bottom */}
             <div className="relative p-4 pt-0">
               <div className="w-full flex items-center justify-center gap-1.5 py-2 rounded-xl bg-white/10 border border-white/10 text-white text-xs font-bold">
-                Coming soon
+                {tc('coming_soon')}
               </div>
             </div>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              MARIA
-          ────────────────────────────────────────────────────────────────── */}
+          {/* MARIA */}
           <Block
             whileHover={gradientHoverTiltL}
             className="col-span-3 md:col-span-2 border-rose-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
@@ -200,13 +179,11 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <Link href="/maria" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Bot size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">MarIA</p>
-              <p className="text-[10px] font-semibold text-white/70">AI tutor</p>
+              <p className="text-[10px] font-semibold text-white/70">{t('ai_tutor')}</p>
             </Link>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              QUICK PRACTICE
-          ────────────────────────────────────────────────────────────────── */}
+          {/* QUICK PRACTICE */}
           <Block
             whileHover={gradientHoverTiltR}
             className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
@@ -215,17 +192,15 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">⚡</div>
             <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Zap size={22} className="text-white" />
-              <p className="text-[13px] font-bold text-white text-center leading-tight">Quick Practice</p>
-              <p className="text-[10px] font-semibold text-white/70">2 min</p>
+              <p className="text-[13px] font-bold text-white text-center leading-tight">{t('quick_practice')}</p>
+              <p className="text-[10px] font-semibold text-white/70">{tc('two_min')}</p>
             </Link>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              CONTINUE LEARNING — bottom-right
-          ────────────────────────────────────────────────────────────────── */}
+          {/* CONTINUE LEARNING */}
           <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[120px] relative overflow-hidden">
             <div className="absolute -bottom-4 -right-4 text-[4.5rem] leading-none opacity-[0.05] dark:opacity-[0.07] select-none pointer-events-none">📚</div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 relative z-10">Continue Learning</p>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 relative z-10">{t('continue_learning')}</p>
             <div className="relative z-10 flex flex-col flex-1 justify-between">
             {current ? (
               <>
@@ -251,7 +226,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                       whileTap={{ scale: 0.97 }}
                       className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2 rounded-xl text-xs shadow-sm shadow-primary/30"
                     >
-                      Resume <ArrowRight size={13} />
+                      {t('resume')} <ArrowRight size={13} />
                     </motion.button>
                   </Link>
                 </div>
@@ -263,14 +238,12 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                   whileTap={{ scale: 0.97 }}
                   className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2 rounded-xl text-xs shadow-sm shadow-primary/30"
                 >
-                  Browse Lessons <ArrowRight size={13} />
+                  {t('browse_lessons')} <ArrowRight size={13} />
                 </motion.button>
               </Link>
             )}
             </div>
           </Block>
-
-          {/* ── 4 compact cards — left side, row 1 (col-span-2 each = 8 total) ── */}
 
           {/* SHORT STORY */}
           <Block
@@ -281,12 +254,12 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">📖</div>
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
               <BookMarked size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">Short Story</p>
-              <p className="text-[10px] font-semibold text-white/60">5 min · 🇪🇸</p>
+              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('short_story')}</p>
+              <p className="text-[10px] font-semibold text-white/60">{tc('five_min')} · 🇪🇸</p>
             </Link>
           </Block>
 
-          {/* TRAVEL BRANCH */}
+          {/* TRAVEL MODE */}
           <Block
             whileHover={gradientHoverTiltR}
             className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer overflow-hidden relative"
@@ -294,8 +267,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           >
             <Link href="/travel" className="flex flex-col items-center gap-1 w-full relative z-10">
               <span className="text-xl leading-none">✈️</span>
-              <p className="text-[12px] font-bold text-white text-center leading-tight">Travel Mode</p>
-              <p className="text-[10px] font-semibold text-white/70">Survival kit</p>
+              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('travel_mode')}</p>
+              <p className="text-[10px] font-semibold text-white/70">{t('survival_kit')}</p>
             </Link>
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🌍</div>
           </Block>
@@ -309,8 +282,8 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🏆</div>
             <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Trophy size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">Daily Challenge</p>
-              <p className="text-[10px] font-semibold text-white/70">New today</p>
+              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('daily_challenge')}</p>
+              <p className="text-[10px] font-semibold text-white/70">{t('new_today')}</p>
             </Link>
           </Block>
 
@@ -323,20 +296,18 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🎵</div>
             <Link href="/play" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Music size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">Music Time</p>
-              <p className="text-[10px] font-semibold text-white/70">3 songs</p>
+              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('music_time')}</p>
+              <p className="text-[10px] font-semibold text-white/70">{tc('three_songs')}</p>
             </Link>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              LESSONS — right side, col-span-4 row-span-2
-          ────────────────────────────────────────────────────────────────── */}
+          {/* LESSONS */}
           <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] relative" style={{ maxHeight: '420px' }}>
             <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">🗺️</div>
             <div className="flex items-center justify-between mb-3 shrink-0 relative z-10">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Lessons</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{t('continue_learning')}</p>
               <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
-                View all <ChevronRight size={12} />
+                {tc('view_all')} <ChevronRight size={12} />
               </Link>
             </div>
             <div className="overflow-y-auto min-h-0 flex-1 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:transparent [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-primary/20">
@@ -346,44 +317,37 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </div>
           </Block>
 
-          {/* ──────────────────────────────────────────────────────────────────
-              WEEKLY ACTIVITY CHART — left side row 2 (col-span-8)
-          ────────────────────────────────────────────────────────────────── */}
+          {/* WEEKLY ACTIVITY */}
           <Block className="col-span-12 md:col-span-8 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[280px] relative overflow-hidden">
             <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">📈</div>
 
-            {/* Header */}
             <div className="flex items-center justify-between mb-4 shrink-0 relative z-10">
-              <div className="flex items-baseline gap-2">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">This week</p>
-              </div>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">{t('this_week')}</p>
               <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
                 <span className="size-1.5 rounded-full bg-primary" />
-                <span className="text-[11px] font-bold text-primary tabular-nums">{weekDaysActive} / 7 days</span>
+                <span className="text-[11px] font-bold text-primary tabular-nums">{t('days_active', { count: weekDaysActive })}</span>
               </div>
             </div>
 
-            {/* Stats row */}
             <div className="grid grid-cols-3 gap-3 mb-4 shrink-0 relative z-10">
               <div className="flex flex-col gap-0.5">
                 <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">sessions</p>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{t('sessions')}</p>
               </div>
               <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
                 <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">avg / active day</p>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{t('avg_active_day')}</p>
               </div>
               <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
                 <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
                   {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
                 </p>
                 <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">
-                  {currentRun > 0 ? 'day run' : 'best day'}
+                  {currentRun > 0 ? t('day_run') : t('best_day')}
                 </p>
               </div>
             </div>
 
-            {/* Chart — flex-1 so it fills remaining height, no dead space */}
             <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0 relative z-10">
               {stats.weekActivity.map((v, i) => {
                 const isToday = i === todayIdx
@@ -391,7 +355,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                 const pct = v / maxActivity
                 return (
                   <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
-                    {/* Value label */}
                     <motion.span
                       className={cn('text-[10px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
                       initial={{ opacity: 0 }}
@@ -400,8 +363,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                     >
                       {v > 0 ? v : '0'}
                     </motion.span>
-
-                    {/* Bar wrapper — full height container so bar grows from bottom */}
                     <div className="flex-1 w-full flex items-end">
                       <motion.div
                         style={{ height: `${Math.max(pct * 100, v > 0 ? 8 : 4)}%` }}
@@ -417,8 +378,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                         transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
                       />
                     </div>
-
-                    {/* Day label */}
                     <span className={cn('text-[10px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
                       {DAYS[i]}
                     </span>
@@ -427,8 +386,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               })}
             </div>
           </Block>
-
-
 
         </motion.div>
       </main>
