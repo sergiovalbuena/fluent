@@ -279,15 +279,18 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </Link>
           </Block>
 
-          {/* LESSONS DONE */}
+          {/* TRAVEL BRANCH */}
           <Block
             whileHover={gradientHoverTiltR}
-            className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-default"
-            style={{ background: 'linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%)' }}
+            className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer overflow-hidden relative"
+            style={{ background: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%)' }}
           >
-            <BookOpen size={20} className="text-white" />
-            <p className="text-[1.5rem] font-bold leading-none text-white tabular-nums">{stats.lessonsCompleted}</p>
-            <p className="text-[10px] font-semibold text-white/70">Lessons done</p>
+            <Link href="/travel" className="flex flex-col items-center gap-1 w-full relative z-10">
+              <span className="text-xl leading-none">✈️</span>
+              <p className="text-[12px] font-bold text-white text-center leading-tight">Travel Mode</p>
+              <p className="text-[10px] font-semibold text-white/70">Survival kit</p>
+            </Link>
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🌍</div>
           </Block>
 
           {/* DAILY CHALLENGE */}
