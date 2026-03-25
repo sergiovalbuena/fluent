@@ -8,8 +8,9 @@ import { motion, type MotionProps, AnimatePresence, usePresence, useAnimate } fr
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
-  Layers, Headphones, Keyboard, Heart, Plus,
+  Layers, Headphones, Keyboard, Heart, Plus, Bookmark,
 } from 'lucide-react'
+import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
 import Link from 'next/link'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
@@ -180,10 +181,14 @@ function VocabRow({
   entry,
   onToggleLearned,
   onToggleFavorite,
+  bookmarked,
+  onToggleBookmark,
 }: {
   entry: VocabEntry
   onToggleLearned: (id: VocabEntry['id']) => void
   onToggleFavorite: (id: VocabEntry['id']) => void
+  bookmarked: boolean
+  onToggleBookmark: (entry: VocabEntry) => void
 }) {
   const [isPresent, safeToRemove] = usePresence()
   const [scope, animate] = useAnimate()
@@ -246,11 +251,33 @@ function VocabRow({
           )}
         />
       </button>
+      <button
+        onClick={() => onToggleBookmark(entry)}
+        className="shrink-0 p-0.5 rounded transition-transform active:scale-90"
+      >
+        <Bookmark
+          size={14}
+          className={cn(
+            'transition-colors',
+            bookmarked
+              ? 'fill-primary text-primary'
+              : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400'
+          )}
+        />
+      </button>
     </motion.div>
   )
 }
 
-function VocabWordList({ initialWords }: { initialWords: VocabEntry[] }) {
+function VocabWordList({
+  initialWords,
+  isSaved,
+  onToggleBookmark,
+}: {
+  initialWords: VocabEntry[]
+  isSaved: (type: SavedItemType, original: string) => boolean
+  onToggleBookmark: (item: SaveItem) => void
+}) {
   const [entries, setEntries] = useState<VocabEntry[]>(initialWords)
   const [showForm, setShowForm] = useState(false)
   const [newWord, setNewWord] = useState('')
@@ -302,6 +329,8 @@ function VocabWordList({ initialWords }: { initialWords: VocabEntry[] }) {
               entry={entry}
               onToggleLearned={toggleLearned}
               onToggleFavorite={toggleFavorite}
+              bookmarked={isSaved('word', entry.word)}
+              onToggleBookmark={(e) => onToggleBookmark({ type: 'word', original: e.word, translation: e.translation, languageCode: '' })}
             />
           ))}
         </AnimatePresence>
@@ -394,7 +423,17 @@ function QAQuestionList({ questions, onStartQuiz }: { questions: QAQuestion[]; o
 
 // ─── Phrase List ──────────────────────────────────────────────────────────────
 
-function PhraseList({ phrases, onPractice }: { phrases: Phrase[]; onPractice: () => void }) {
+function PhraseList({
+  phrases,
+  onPractice,
+  isSaved,
+  onToggleBookmark,
+}: {
+  phrases: Phrase[]
+  onPractice: () => void
+  isSaved: (type: SavedItemType, original: string) => boolean
+  onToggleBookmark: (item: SaveItem) => void
+}) {
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Header */}
@@ -422,6 +461,20 @@ function PhraseList({ phrases, onPractice }: { phrases: Phrase[]; onPractice: ()
               className="shrink-0 mt-0.5 text-slate-300 dark:text-slate-600 group-hover:text-slate-400 transition-colors"
             >
               <Volume2 size={13} />
+            </button>
+            <button
+              onClick={() => onToggleBookmark({ type: 'phrase', original: p.phrase, translation: p.translation, languageCode: '' })}
+              className="shrink-0 mt-0.5 transition-colors"
+            >
+              <Bookmark
+                size={13}
+                className={cn(
+                  'transition-colors',
+                  isSaved('phrase', p.phrase)
+                    ? 'fill-primary text-primary'
+                    : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400'
+                )}
+              />
             </button>
           </div>
         ))}
@@ -530,11 +583,14 @@ export default function LessonPage() {
   const slug     = params.slug     as string
   const activity = params.activity as string
 
-  const [lesson,   setLesson]   = useState<{ title: string; content: LessonContent } | null>(null)
-  const [lessonId, setLessonId] = useState('')
-  const [moduleId, setModuleId] = useState('')
-  const [loading,  setLoading]  = useState(true)
-  const [saving,   setSaving]   = useState(false)
+  const [lesson,       setLesson]       = useState<{ title: string; content: LessonContent } | null>(null)
+  const [lessonId,     setLessonId]     = useState('')
+  const [moduleId,     setModuleId]     = useState('')
+  const [languageCode, setLanguageCode] = useState('')
+  const [loading,      setLoading]      = useState(true)
+  const [saving,       setSaving]       = useState(false)
+
+  const { isSaved, toggle: toggleSaved } = useSavedItems(languageCode)
 
   // Result screen
   const [resultData, setResultData] = useState<{
@@ -614,12 +670,13 @@ export default function LessonPage() {
 
       const { data: mod } = await supabase
         .from('modules')
-        .select('id')
+        .select('id, language_code')
         .eq('slug', slug)
         .limit(1)
         .maybeSingle()
 
       if (!mod) { setLoading(false); return }
+      setLanguageCode(mod.language_code)
 
       const { data } = await supabase
         .from('lessons')
@@ -966,6 +1023,8 @@ export default function LessonPage() {
                   learned: false,
                   favorite: false,
                 }))}
+                isSaved={isSaved}
+                onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
               />
             </Block>
 
@@ -1127,6 +1186,8 @@ export default function LessonPage() {
                 <PhraseList
                   phrases={phrases}
                   onPractice={() => { setPhraseIndex(0); setPhraseRevealed(false); setPhraseDone(false); setPhraseMode('practice') }}
+                  isSaved={isSaved}
+                  onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
                 />
               </Block>
 
@@ -1687,12 +1748,19 @@ export default function LessonPage() {
                   <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mb-3">Key words</p>
                   <div className="flex flex-wrap gap-2">
                     {content.highlightedWords!.map((w, i) => (
-                      <span
+                      <button
                         key={i}
-                        className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        onClick={() => toggleSaved({ type: 'story_word', original: w, translation: '', languageCode, sourceLessonId: lessonId })}
+                        className={cn(
+                          'flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full transition-all active:scale-95',
+                          isSaved('story_word', w)
+                            ? 'bg-primary/15 text-primary'
+                            : 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-500/25'
+                        )}
                       >
                         {w}
-                      </span>
+                        <Bookmark size={10} className={isSaved('story_word', w) ? 'fill-primary' : ''} />
+                      </button>
                     ))}
                   </div>
                 </Block>
