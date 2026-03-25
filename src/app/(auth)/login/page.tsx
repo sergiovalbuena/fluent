@@ -63,6 +63,15 @@ export default function LoginPage() {
           <span className="text-xs text-muted-foreground">or</span>
           <Separator className="flex-1" />
         </div>
+        {/* Demo account shortcut */}
+        <button
+          type="button"
+          onClick={() => { setEmail('demo@fluent.app'); setPassword('demo1234') }}
+          className="w-full flex items-center justify-center gap-2 rounded-lg border border-dashed border-primary/30 bg-primary/5 hover:bg-primary/10 hover:border-primary/50 transition-all py-2 text-sm font-semibold text-primary"
+        >
+          <span>🎮</span> Try Demo Account
+        </button>
+
         <form onSubmit={handleEmailLogin} className="space-y-3">
           <div className="space-y-1">
             <Label htmlFor="email">Email</Label>
