@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -80,6 +81,10 @@ function DesktopSidebar({ children, className, ...props }: React.ComponentProps<
 
 function MobileSidebar({ children }: { children: React.ReactNode }) {
   const { open, setOpen } = useSidebar()
+  const pathname = usePathname()
+
+  // Close on navigation
+  useEffect(() => { setOpen(false) }, [pathname, setOpen])
 
   useEffect(() => {
     const handler = () => setOpen(true)
@@ -88,15 +93,25 @@ function MobileSidebar({ children }: { children: React.ReactNode }) {
   }, [setOpen])
 
   return (
-    <>
-      <AnimatePresence>
-        {open && (
+    <AnimatePresence>
+      {open && (
+        <>
+          {/* Backdrop — click to close */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-[99] bg-black/40 backdrop-blur-sm md:hidden"
+            onClick={() => setOpen(false)}
+          />
+          {/* Drawer — 80% width */}
           <motion.div
             initial={{ x: '-100%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: '-100%', opacity: 0 }}
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-[100] flex flex-col bg-[#f8f6f5] dark:bg-[#23140f] p-6 md:hidden"
+            className="fixed inset-y-0 left-0 w-[80%] z-[100] flex flex-col bg-[#f8f6f5] dark:bg-[#23140f] p-6 md:hidden"
           >
             <button
               className="self-end mb-6 text-slate-400 hover:text-primary"
@@ -106,9 +121,9 @@ function MobileSidebar({ children }: { children: React.ReactNode }) {
             </button>
             {children}
           </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+        </>
+      )}
+    </AnimatePresence>
   )
 }
 

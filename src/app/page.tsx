@@ -1,14 +1,7 @@
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { ThemeToggle } from '@/components/ui/theme-toggle'
-import { FloatingNav } from '@/components/ui/floating-navbar'
-import {
-  IconHome,
-  IconLayoutGrid,
-  IconLanguage,
-  IconInfoCircle,
-} from '@tabler/icons-react'
+import { LandingHeader } from '@/components/landing/landing-header'
 
 const CountUpStats = dynamic(() => import('@/components/landing/stats').then(m => ({ default: m.CountUpStats })))
 const Features = dynamic(() => import('@/components/landing/features').then(m => ({ default: m.Features })))
@@ -59,58 +52,10 @@ const testimonials = [
 
 
 export default function LandingPage() {
-  const navItems = [
-    {
-      name: 'Home',
-      link: '/',
-      icon: <IconHome size={15} className="text-slate-500 dark:text-slate-300" />,
-    },
-    {
-      name: 'Features',
-      link: '#features',
-      icon: <IconLayoutGrid size={15} className="text-slate-500 dark:text-slate-300" />,
-    },
-    {
-      name: 'Languages',
-      link: '#languages',
-      icon: <IconLanguage size={15} className="text-slate-500 dark:text-slate-300" />,
-    },
-    {
-      name: 'How it works',
-      link: '#how-it-works',
-      icon: <IconInfoCircle size={15} className="text-slate-500 dark:text-slate-300" />,
-    },
-  ]
-
   return (
     <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f] text-slate-900 dark:text-slate-100 font-display">
 
-      {/* ── FLOATING NAV ── */}
-      <FloatingNav
-        navItems={navItems}
-        className="pr-2"
-      />
-
-      {/* ── TOP BAR (logo + CTA) — always visible ── */}
-      <header className="sticky top-0 z-40 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#23140f]/80 backdrop-blur-md">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="size-8 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm">F</div>
-            <span className="text-lg font-bold tracking-tight">Fluent</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <ThemeToggle />
-            <Link href="/login" className="hidden sm:block text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors px-3 py-1.5">
-              Sign in
-            </Link>
-            <Link href="/dashboard">
-              <button className="bg-primary text-white text-sm font-bold px-4 py-2 rounded-xl shadow-md shadow-primary/20 hover:bg-primary/90 transition-colors active:scale-95">
-                Get Started
-              </button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      <LandingHeader />
 
       {/* ── HERO ── */}
       <section className="relative overflow-hidden">
@@ -135,7 +80,7 @@ export default function LandingPage() {
                 survival kit — so you actually use the language from day one.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <Link href="/dashboard">
+                <Link href="/login">
                   <button className="w-full sm:w-auto bg-primary text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-primary/25 hover:bg-primary/90 transition-all active:scale-95 text-base">
                     Start for free →
                   </button>
@@ -270,7 +215,7 @@ export default function LandingPage() {
             {languages.map(lang => (
               <a
                 key={lang.name}
-                href={lang.available ? '/dashboard' : undefined}
+                href={lang.available ? '/login' : undefined}
                 className={`relative bg-white dark:bg-slate-800 rounded-2xl p-5 border text-center transition-all ${
                   lang.available
                     ? 'border-primary/10 hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 cursor-pointer'
@@ -311,7 +256,7 @@ export default function LandingPage() {
               <p className="text-white/80 text-lg mb-8 max-w-md mx-auto">
                 No downloads, no credit card. Just pick a language and start speaking from day one.
               </p>
-              <Link href="/dashboard">
+              <Link href="/login">
                 <button className="bg-white text-primary font-bold px-10 py-4 rounded-xl text-base hover:bg-white/90 transition-all active:scale-95 shadow-xl">
                   Start for free →
                 </button>
