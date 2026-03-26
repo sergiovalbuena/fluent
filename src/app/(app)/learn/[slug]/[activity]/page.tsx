@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
@@ -8,9 +8,10 @@ import { motion, type MotionProps, AnimatePresence, usePresence, useAnimate } fr
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
-  Layers, Headphones, Keyboard, Heart, Plus, Bookmark,
+  Layers, Headphones, Keyboard, Plus, Bookmark, Zap, RotateCw, Star,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
+import { useVocabMastery } from '@/hooks/use-vocab-mastery'
 import Link from 'next/link'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
@@ -167,31 +168,335 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
   </motion.div>
 )
 
+// ─── Word Challenge Modal ─────────────────────────────────────────────────────
+
+const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
+// Punctuation the user shouldn't need to type — auto-inserted
+const SKIPPABLE = /^[¿¡.,!?;:'"()\-–—…«»]+$/
+
+function autoAdvance(current: string, target: string): string {
+  let s = current
+  while (s.length < target.length && SKIPPABLE.test(target[s.length])) {
+    s += target[s.length]
+  }
+  return s
+}
+
+type ChallengeRound = 1 | 2 | 3
+
+const ROUND_LABELS: Record<ChallengeRound, string> = {
+  1: 'Full word',
+  2: '50% hidden',
+  3: 'Almost blind',
+}
+
+function buildHintSet(target: string, round: ChallengeRound): Set<number> {
+  const s = new Set<number>()
+  if (round === 1) return s // all chars shown as MonkeyType pending
+  target.split('').forEach((ch, i) => {
+    if (ch === ' ') { s.add(i); return }
+    if (round === 2 && i % 2 === 0) s.add(i)
+    if (round === 3 && i === 0) s.add(i)
+  })
+  return s
+}
+
+function WordChallengeModal({ word, translation, onClose, onMastered }: {
+  word: string
+  translation: string
+  onClose: () => void
+  onMastered?: () => void
+}) {
+  const [round, setRound]         = useState<ChallengeRound>(1)
+  const [stars, setStars]         = useState(0)
+  const [typed, setTyped]         = useState('')
+  const [shake, setShake]         = useState(false)
+  const [roundDone, setRoundDone] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  const target  = word
+  const hintSet = useMemo(() => buildHintSet(target, round), [target, round])
+
+  // Focus input on mount + round change
+  useEffect(() => { setTimeout(() => inputRef.current?.focus(), 80) }, [round])
+
+  // Escape to close, Enter to advance when round is done
+  useEffect(() => {
+    const h = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+      if (e.key === 'Enter' && roundDone) advanceRound()
+    }
+    window.addEventListener('keydown', h)
+    return () => window.removeEventListener('keydown', h)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [onClose, roundDone, round])
+
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    if (roundDone) return
+    const val = e.target.value
+    if (val.length > typed.length) {
+      const targetChar = target[typed.length]
+      const typedChar  = val[val.length - 1]
+      if (norm(typedChar) !== norm(targetChar)) {
+        setShake(true)
+        setTimeout(() => setShake(false), 380)
+        return
+      }
+      const advanced = autoAdvance(typed + typedChar, target)
+      setTyped(advanced)
+      if (advanced.length === target.length) {
+        setRoundDone(true)
+        setStars(s => s + 1)
+      }
+    }
+  }, [roundDone, target, typed])
+
+  const advanceRound = () => {
+    if (round === 3) { onMastered?.(); onClose(); return }
+    setRound(r => (r + 1) as ChallengeRound)
+    setTyped(autoAdvance('', target))
+    setRoundDone(false)
+  }
+
+  // Build char display items
+  const charItems = target.split('').map((ch, i) => {
+    const isTyped  = i < typed.length
+    const isCursor = i === typed.length
+    const isHint   = hintSet.has(i)
+
+    if (ch === ' ') return { display: '\u00A0', cls: 'w-4' }
+
+    if (isTyped) {
+      const ok = norm(typed[i]) === norm(ch)
+      return { display: ch, cls: ok ? 'text-lime-400' : 'text-red-400' }
+    }
+
+    if (round === 1) {
+      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/25' }
+    }
+
+    if (isHint) {
+      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/30' }
+    }
+
+    return { display: '·', cls: isCursor ? 'text-white/60' : 'text-white/20' }
+  })
+
+  const progress = typed.length / target.length
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        key="challenge-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        style={{ background: 'rgba(5,14,0,0.92)', backdropFilter: 'blur(6px)' }}
+        onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
+      >
+        <motion.div
+          key={round}
+          initial={{ scale: 0.93, opacity: 0, y: 14 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          exit={{ scale: 0.93, opacity: 0, y: 14 }}
+          transition={{ type: 'spring', stiffness: 420, damping: 32 }}
+          className="relative w-full max-w-md rounded-3xl p-8 flex flex-col items-center gap-5"
+          style={{ background: '#0a1a05', border: '1px solid rgba(132,204,22,0.15)' }}
+        >
+          {/* Close */}
+          <button
+            onClick={onClose}
+            className="absolute top-4 right-4 p-1.5 rounded-full text-white/25 hover:text-white/60 transition-colors"
+          >
+            <X size={15} />
+          </button>
+
+          {/* Header: label + stars */}
+          <div className="flex flex-col items-center gap-2 w-full">
+            <div className="flex items-center gap-2 text-lime-400/60 text-[10px] font-bold uppercase tracking-widest">
+              <Zap size={10} />
+              Word Challenge
+            </div>
+            {/* Stars */}
+            <div className="flex items-center gap-2">
+              {([1, 2, 3] as ChallengeRound[]).map(s => (
+                <motion.span
+                  key={s}
+                  animate={stars >= s
+                    ? { scale: [1, 1.5, 1] }
+                    : { scale: 1 }
+                  }
+                  transition={{ duration: 0.4 }}
+                >
+                  <Star
+                    size={22}
+                    className={cn(
+                      'transition-all',
+                      stars >= s
+                        ? 'fill-yellow-400 text-yellow-400'
+                        : 'fill-transparent text-white/20',
+                    )}
+                  />
+                </motion.span>
+              ))}
+            </div>
+            {/* Round pill */}
+            <div className="flex items-center gap-2">
+              {([1, 2, 3] as ChallengeRound[]).map(r => (
+                <div
+                  key={r}
+                  className={cn(
+                    'h-1 rounded-full transition-all duration-300',
+                    r < round ? 'w-6 bg-lime-400' :
+                    r === round ? 'w-10 bg-lime-400/80' : 'w-6 bg-white/15',
+                  )}
+                />
+              ))}
+            </div>
+            <p className="text-white/35 text-[11px] font-semibold">
+              Round {round} · {ROUND_LABELS[round]}
+            </p>
+          </div>
+
+          {/* Translation */}
+          <div className="text-center">
+            <p className="text-white/35 text-xs mb-1">Type this in Spanish</p>
+            <p className="text-white text-xl font-bold">{translation}</p>
+          </div>
+
+          {/* Word display */}
+          <motion.div
+            animate={shake ? { x: [0, -9, 9, -6, 6, -3, 3, 0] } : {}}
+            transition={{ duration: 0.38 }}
+            className="flex gap-0.5 flex-wrap justify-center min-h-[2.5rem] items-center"
+          >
+            {charItems.map(({ display, cls }, i) => (
+              <span key={i} className={cn('text-3xl font-bold tracking-wide transition-colors duration-75', cls)}>
+                {display}
+              </span>
+            ))}
+          </motion.div>
+
+          {/* Progress bar */}
+          <div className="w-full h-1 rounded-full bg-white/10 overflow-hidden">
+            <motion.div
+              className={cn('h-full rounded-full', roundDone ? 'bg-lime-400' : 'bg-lime-400/50')}
+              animate={{ width: `${progress * 100}%` }}
+              transition={{ duration: 0.08 }}
+            />
+          </div>
+
+          {/* Hidden input */}
+          <input
+            ref={inputRef}
+            value={typed}
+            onChange={handleChange}
+            className="opacity-0 absolute pointer-events-none w-0 h-0"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck={false}
+          />
+
+          {/* Bottom status */}
+          <AnimatePresence mode="wait">
+            {roundDone ? (
+              <motion.div
+                key="done"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                className="flex flex-col items-center gap-3"
+              >
+                <p className="text-lime-400 font-bold text-sm">
+                  {round === 1 ? '⭐ Round 1 done!' : round === 2 ? '⭐⭐ Halfway there!' : '⭐⭐⭐ ¡Dominado!'}
+                </p>
+                <button
+                  onClick={advanceRound}
+                  className="px-7 py-2.5 rounded-2xl text-sm font-bold text-black hover:scale-105 active:scale-95 transition-all"
+                  style={{ background: '#a3e635' }}
+                >
+                  {round < 3 ? 'Next Round →' : 'Done!'}
+                </button>
+              </motion.div>
+            ) : (
+              <motion.p
+                key="hint"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="text-white/20 text-xs"
+              >
+                {typed.length === 0 ? 'Start typing…' : `${typed.length} / ${target.length}`}
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
+
 // ─── Vocabulary Word List (VanishList-inspired) ───────────────────────────────
+
+const ARTICLES = /^(el|la|los|las|un|una|unos|unas)\s+/i
+
+function splitArticle(word: string): { article: string; main: string } | null {
+  const m = word.match(ARTICLES)
+  if (!m) return null
+  return { article: m[0].trimEnd(), main: word.slice(m[0].length) }
+}
 
 type VocabEntry = {
   id: string | number
   word: string
   translation: string
   learned: boolean
-  favorite: boolean
+}
+
+const LANG_LOCALE: Record<string, string> = {
+  es: 'es-ES', fr: 'fr-FR', pt: 'pt-BR', de: 'de-DE',
+  it: 'it-IT', ja: 'ja-JP', zh: 'zh-CN', ko: 'ko-KR',
+}
+
+function speakWord(word: string, langCode: string) {
+  if (typeof window === 'undefined' || !window.speechSynthesis) return
+  window.speechSynthesis.cancel()
+  const u = new SpeechSynthesisUtterance(word)
+  u.lang = LANG_LOCALE[langCode] ?? langCode
+  u.rate = 0.85
+  window.speechSynthesis.speak(u)
 }
 
 function VocabRow({
   entry,
   onToggleLearned,
-  onToggleFavorite,
   bookmarked,
   onToggleBookmark,
+  onChallenge,
+  mastered,
+  langCode,
 }: {
   entry: VocabEntry
   onToggleLearned: (id: VocabEntry['id']) => void
-  onToggleFavorite: (id: VocabEntry['id']) => void
   bookmarked: boolean
   onToggleBookmark: (entry: VocabEntry) => void
+  onChallenge: (entry: VocabEntry) => void
+  mastered: boolean
+  langCode: string
 }) {
+  const [speaking, setSpeaking] = useState(false)
   const [isPresent, safeToRemove] = usePresence()
   const [scope, animate] = useAnimate()
+
+  const handleSpeak = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    setSpeaking(true)
+    speakWord(entry.word, langCode)
+    setTimeout(() => setSpeaking(false), 1000)
+  }
 
   useEffect(() => {
     if (!isPresent) {
@@ -218,7 +523,7 @@ function VocabRow({
       <input
         type="checkbox"
         checked={entry.learned}
-        onChange={() => onToggleLearned(entry.id)}
+        onChange={(e) => { e.stopPropagation(); onToggleLearned(entry.id) }}
         className="size-4 shrink-0 rounded accent-primary cursor-pointer"
       />
       <span className={cn(
@@ -227,36 +532,67 @@ function VocabRow({
           ? 'line-through text-slate-300 dark:text-slate-600'
           : 'text-slate-900 dark:text-white'
       )}>
-        {entry.word}
+        {(() => {
+          const parts = splitArticle(entry.word)
+          if (!parts) return entry.word
+          return (
+            <>
+              <span className="opacity-35 font-medium">{parts.article} </span>
+              {parts.main}
+            </>
+          )
+        })()}
       </span>
       <span className={cn(
-        'text-sm transition-colors shrink-0',
+        'text-sm transition-all shrink-0',
         entry.learned
           ? 'text-slate-300 dark:text-slate-600'
-          : 'text-slate-400 dark:text-slate-500'
+          : 'text-slate-400 dark:text-slate-500 group-hover:opacity-0 group-hover:transition-none'
       )}>
         {entry.translation}
       </span>
+      {mastered ? (
+        <motion.span
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+          className="shrink-0"
+          title="Mastered"
+        >
+          <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+        </motion.span>
+      ) : (
+        <button
+          type="button"
+          onClick={(e) => { e.stopPropagation(); onChallenge(entry) }}
+          className="shrink-0 hidden group-hover:flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+        >
+          <Zap size={10} />
+          Challenge
+        </button>
+      )}
       <button
-        onClick={() => onToggleFavorite(entry.id)}
-        className="shrink-0 ml-1 p-0.5 rounded transition-transform active:scale-90"
+        type="button"
+        onClick={handleSpeak}
+        className="shrink-0 p-2 rounded-lg hover:bg-sky-500/10 active:scale-90 transition-all"
       >
-        <Heart
+        <Volume2
           size={14}
           className={cn(
             'transition-colors',
-            entry.favorite
-              ? 'fill-rose-500 text-rose-500'
-              : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400'
+            speaking
+              ? 'text-sky-400'
+              : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400',
           )}
         />
       </button>
       <button
-        onClick={() => onToggleBookmark(entry)}
-        className="shrink-0 p-0.5 rounded transition-transform active:scale-90"
+        type="button"
+        onClick={(e) => { e.stopPropagation(); onToggleBookmark(entry) }}
+        className="shrink-0 p-2 -mr-1 rounded-lg hover:bg-primary/10 active:scale-90 transition-all"
       >
         <Bookmark
-          size={14}
+          size={15}
           className={cn(
             'transition-colors',
             bookmarked
@@ -273,35 +609,47 @@ function VocabWordList({
   initialWords,
   isSaved,
   onToggleBookmark,
+  languageCode,
+  onMasteredCountChange,
 }: {
   initialWords: VocabEntry[]
   isSaved: (type: SavedItemType, original: string) => boolean
   onToggleBookmark: (item: SaveItem) => void
+  languageCode: string
+  onMasteredCountChange?: (count: number) => void
 }) {
   const [entries, setEntries] = useState<VocabEntry[]>(initialWords)
   const [showForm, setShowForm] = useState(false)
   const [newWord, setNewWord] = useState('')
   const [newTranslation, setNewTranslation] = useState('')
+  const [challengeEntry, setChallengeEntry] = useState<VocabEntry | null>(null)
 
-  const toggleLearned  = (id: VocabEntry['id']) =>
+  const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode)
+
+  // Notify parent when count changes — outside setState, safe
+  useEffect(() => {
+    onMasteredCountChange?.(masteredCount)
+  }, [masteredCount, onMasteredCountChange])
+
+  const toggleLearned = (id: VocabEntry['id']) =>
     setEntries(pv => pv.map(e => e.id === id ? { ...e, learned: !e.learned } : e))
 
-  const toggleFavorite = (id: VocabEntry['id']) =>
-    setEntries(pv => pv.map(e => e.id === id ? { ...e, favorite: !e.favorite } : e))
+  const handleMastered = useCallback((word: string) => {
+    markMastered(word)
+  }, [markMastered])
 
   const handleAdd = () => {
     if (!newWord.trim() || !newTranslation.trim()) return
     setEntries(pv => [
       ...pv,
-      { id: Date.now(), word: newWord.trim(), translation: newTranslation.trim(), learned: false, favorite: false },
+      { id: Date.now(), word: newWord.trim(), translation: newTranslation.trim(), learned: false },
     ])
     setNewWord('')
     setNewTranslation('')
     setShowForm(false)
   }
 
-  const learnedCount  = entries.filter(e => e.learned).length
-  const favCount      = entries.filter(e => e.favorite).length
+  const learnedCount = entries.filter(e => e.learned).length
 
   return (
     <div className="flex flex-col h-full min-h-0">
@@ -309,11 +657,6 @@ function VocabWordList({
       <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
         <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Word List</p>
         <div className="flex items-center gap-3">
-          {favCount > 0 && (
-            <span className="flex items-center gap-1 text-[10px] font-semibold text-rose-400">
-              <Heart size={9} className="fill-rose-400" /> {favCount}
-            </span>
-          )}
           <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
             {learnedCount} / {entries.length} learned
           </span>
@@ -328,9 +671,11 @@ function VocabWordList({
               key={entry.id}
               entry={entry}
               onToggleLearned={toggleLearned}
-              onToggleFavorite={toggleFavorite}
               bookmarked={isSaved('word', entry.word)}
               onToggleBookmark={(e) => onToggleBookmark({ type: 'word', original: e.word, translation: e.translation, languageCode: '' })}
+              onChallenge={setChallengeEntry}
+              mastered={isMastered(entry.word)}
+              langCode={languageCode}
             />
           ))}
         </AnimatePresence>
@@ -379,13 +724,44 @@ function VocabWordList({
           {showForm ? 'Cancel' : 'Add word'}
         </button>
       </div>
+
+      {/* Challenge modal */}
+      {challengeEntry && (
+        <WordChallengeModal
+          word={challengeEntry.word}
+          translation={challengeEntry.translation}
+          onClose={() => setChallengeEntry(null)}
+          onMastered={() => handleMastered(challengeEntry.word)}
+        />
+      )}
     </div>
   )
 }
 
 // ─── Q&A Question List ────────────────────────────────────────────────────────
 
-function QAQuestionList({ questions, onStartQuiz }: { questions: QAQuestion[]; onStartQuiz: () => void }) {
+function QAQuestionList({
+  questions,
+  onStartQuiz,
+  isSaved,
+  onToggleBookmark,
+  languageCode,
+  onMasteredCountChange,
+}: {
+  questions: QAQuestion[]
+  onStartQuiz: () => void
+  isSaved: (type: SavedItemType, original: string) => boolean
+  onToggleBookmark: (item: SaveItem) => void
+  languageCode: string
+  onMasteredCountChange?: (count: number) => void
+}) {
+  const [challengeQ, setChallengeQ] = useState<QAQuestion | null>(null)
+  const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode, 'qa')
+
+  useEffect(() => {
+    onMasteredCountChange?.(masteredCount)
+  }, [masteredCount, onMasteredCountChange])
+
   return (
     <div className="flex flex-col h-full min-h-0">
       <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
@@ -398,13 +774,57 @@ function QAQuestionList({ questions, onStartQuiz }: { questions: QAQuestion[]; o
         {questions.map((q, i) => (
           <div
             key={i}
-            className="flex items-start gap-3 px-5 py-3.5 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-purple-500/[0.03] dark:hover:bg-purple-500/[0.04] transition-colors"
+            className="flex items-center gap-3 px-5 py-3 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-purple-500/[0.03] dark:hover:bg-purple-500/[0.04] transition-colors group"
           >
-            <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums pt-0.5">{i + 1}</span>
+            <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums">{i + 1}</span>
             <div className="flex-1 min-w-0">
               <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{q.question}</p>
-              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{q.options.length} options</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5 group-hover:opacity-0 group-hover:transition-none transition-all">
+                {q.options[q.correct]}
+              </p>
             </div>
+            {isMastered(q.question) ? (
+              <motion.span
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+                className="shrink-0"
+                title="Mastered"
+              >
+                <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+              </motion.span>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setChallengeQ(q)}
+                className="shrink-0 hidden group-hover:flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+              >
+                <Zap size={10} />
+                Challenge
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); speakWord(q.question, languageCode) }}
+              className="shrink-0 p-2 rounded-lg hover:bg-sky-500/10 active:scale-90 transition-all"
+            >
+              <Volume2 size={14} className="text-slate-300 dark:text-slate-600 group-hover:text-slate-400 transition-colors" />
+            </button>
+            <button
+              type="button"
+              onClick={() => onToggleBookmark({ type: 'phrase', original: q.question, translation: q.options[q.correct], languageCode: '' })}
+              className="shrink-0 p-2 -mr-1 rounded-lg hover:bg-primary/10 active:scale-90 transition-all"
+            >
+              <Bookmark
+                size={14}
+                className={cn(
+                  'transition-colors',
+                  isSaved('phrase', q.question)
+                    ? 'fill-primary text-primary'
+                    : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400'
+                )}
+              />
+            </button>
           </div>
         ))}
       </div>
@@ -417,6 +837,15 @@ function QAQuestionList({ questions, onStartQuiz }: { questions: QAQuestion[]; o
           Start quiz
         </button>
       </div>
+
+      {challengeQ && (
+        <WordChallengeModal
+          word={challengeQ.options[challengeQ.correct]}
+          translation={challengeQ.question}
+          onClose={() => setChallengeQ(null)}
+          onMastered={() => markMastered(challengeQ.question)}
+        />
+      )}
     </div>
   )
 }
@@ -428,12 +857,23 @@ function PhraseList({
   onPractice,
   isSaved,
   onToggleBookmark,
+  languageCode,
+  onMasteredCountChange,
 }: {
   phrases: Phrase[]
   onPractice: () => void
   isSaved: (type: SavedItemType, original: string) => boolean
   onToggleBookmark: (item: SaveItem) => void
+  languageCode: string
+  onMasteredCountChange?: (count: number) => void
 }) {
+  const [challengePhrase, setChallengePhrase] = useState<Phrase | null>(null)
+  const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode, 'phrase')
+
+  useEffect(() => {
+    onMasteredCountChange?.(masteredCount)
+  }, [masteredCount, onMasteredCountChange])
+
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Header */}
@@ -449,25 +889,49 @@ function PhraseList({
         {phrases.map((p, i) => (
           <div
             key={i}
-            className="flex items-start gap-3 px-5 py-3.5 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-blue-500/[0.03] dark:hover:bg-blue-500/[0.04] transition-colors group"
+            className="flex items-center gap-3 px-5 py-3 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-blue-500/[0.03] dark:hover:bg-blue-500/[0.04] transition-colors group"
           >
-            <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums pt-0.5">{i + 1}</span>
+            <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums">{i + 1}</span>
             <div className="flex-1 min-w-0">
               <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{p.phrase}</p>
-              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">{p.translation}</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5 group-hover:opacity-0 group-hover:transition-none transition-all">
+                {p.translation}
+              </p>
             </div>
+            {isMastered(p.phrase) ? (
+              <motion.span
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+                className="shrink-0"
+                title="Mastered"
+              >
+                <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+              </motion.span>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setChallengePhrase(p)}
+                className="shrink-0 hidden group-hover:flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+              >
+                <Zap size={10} />
+                Challenge
+              </button>
+            )}
             <button
-              onClick={() => toast.info('Audio coming soon')}
-              className="shrink-0 mt-0.5 text-slate-300 dark:text-slate-600 group-hover:text-slate-400 transition-colors"
+              type="button"
+              onClick={(e) => { e.stopPropagation(); speakWord(p.phrase, languageCode) }}
+              className="shrink-0 p-2 rounded-lg hover:bg-sky-500/10 active:scale-90 transition-all"
             >
-              <Volume2 size={13} />
+              <Volume2 size={14} className="text-slate-300 dark:text-slate-600 group-hover:text-slate-400 transition-colors" />
             </button>
             <button
+              type="button"
               onClick={() => onToggleBookmark({ type: 'phrase', original: p.phrase, translation: p.translation, languageCode: '' })}
-              className="shrink-0 mt-0.5 transition-colors"
+              className="shrink-0 p-2 -mr-1 rounded-lg hover:bg-primary/10 active:scale-90 transition-all"
             >
               <Bookmark
-                size={13}
+                size={14}
                 className={cn(
                   'transition-colors',
                   isSaved('phrase', p.phrase)
@@ -490,6 +954,15 @@ function PhraseList({
           Start practice
         </button>
       </div>
+
+      {challengePhrase && (
+        <WordChallengeModal
+          word={challengePhrase.phrase}
+          translation={challengePhrase.translation}
+          onClose={() => setChallengePhrase(null)}
+          onMastered={() => markMastered(challengePhrase.phrase)}
+        />
+      )}
     </div>
   )
 }
@@ -602,8 +1075,11 @@ export default function LessonPage() {
   } | null>(null)
 
   // Vocabulary
-  const [vocabIndex,   setVocabIndex]   = useState(0)
-  const [vocabFlipped, setVocabFlipped] = useState(false)
+  const [vocabIndex,     setVocabIndex]     = useState(0)
+  const [vocabFlipped,   setVocabFlipped]   = useState(false)
+  const [masteredCount,       setMasteredCount]       = useState(0)
+  const [masteredPhraseCount, setMasteredPhraseCount] = useState(0)
+  const [masteredQACount,     setMasteredQACount]     = useState(0)
 
   // Phrases
   const [phraseMode,     setPhraseMode]     = useState<'overview' | 'practice'>('overview')
@@ -990,6 +1466,19 @@ export default function LessonPage() {
               <div className="text-right shrink-0 ml-4">
                 <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{words.length}</p>
                 <p className="text-[11px] font-semibold text-slate-400">words</p>
+                {masteredCount > 0 && (
+                  <motion.div
+                    key={masteredCount}
+                    initial={{ opacity: 0, y: 4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex items-center justify-end gap-1 mt-0.5"
+                  >
+                    <Star size={11} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+                    <span className="text-[11px] font-bold text-yellow-600 dark:text-yellow-400">
+                      {masteredCount} mastered
+                    </span>
+                  </motion.div>
+                )}
               </div>
             </Block>
 
@@ -1014,17 +1503,18 @@ export default function LessonPage() {
             </Block>
 
             {/* ── WORD LIST — col-6 row-span-4, animated VanishList ────────── */}
-            <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+            <Block whileTap={{}} className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
               <VocabWordList
                 initialWords={words.map((w, i) => ({
                   id: `${w.word}-${i}`,
                   word: w.word,
                   translation: w.translation,
                   learned: false,
-                  favorite: false,
                 }))}
                 isSaved={isSaved}
                 onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
+                languageCode={languageCode}
+                onMasteredCountChange={setMasteredCount}
               />
             </Block>
 
@@ -1158,6 +1648,19 @@ export default function LessonPage() {
                 <div className="text-right shrink-0 ml-4">
                   <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{phrases.length}</p>
                   <p className="text-[11px] font-semibold text-slate-400">phrases</p>
+                  {masteredPhraseCount > 0 && (
+                    <motion.div
+                      key={masteredPhraseCount}
+                      initial={{ opacity: 0, y: 4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="flex items-center justify-end gap-1 mt-0.5"
+                    >
+                      <Star size={11} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+                      <span className="text-[11px] font-bold text-yellow-600 dark:text-yellow-400">
+                        {masteredPhraseCount} mastered
+                      </span>
+                    </motion.div>
+                  )}
                 </div>
               </Block>
 
@@ -1182,12 +1685,14 @@ export default function LessonPage() {
               </Block>
 
               {/* Phrase list */}
-              <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+              <Block whileTap={{}} className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
                 <PhraseList
                   phrases={phrases}
                   onPractice={() => { setPhraseIndex(0); setPhraseRevealed(false); setPhraseDone(false); setPhraseMode('practice') }}
                   isSaved={isSaved}
                   onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
+                  languageCode={languageCode}
+                  onMasteredCountChange={setMasteredPhraseCount}
                 />
               </Block>
 
@@ -1404,6 +1909,19 @@ export default function LessonPage() {
                 <div className="text-right shrink-0 ml-4">
                   <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{questions.length}</p>
                   <p className="text-[11px] font-semibold text-slate-400">questions</p>
+                  <AnimatePresence>
+                    {masteredQACount > 0 && (
+                      <motion.div
+                        key={masteredQACount}
+                        initial={{ opacity: 0, y: 4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="flex items-center justify-end gap-1 mt-1"
+                      >
+                        <Star size={11} className="fill-yellow-500 text-yellow-500" />
+                        <span className="text-[11px] font-bold text-yellow-500 tabular-nums">{masteredQACount} mastered</span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </Block>
 
@@ -1432,6 +1950,10 @@ export default function LessonPage() {
                 <QAQuestionList
                   questions={questions}
                   onStartQuiz={() => { setQIndex(0); setSelected(null); setChecked(false); setCorrectCount(0); setQaDone(false); setQaMode('quiz') }}
+                  isSaved={isSaved}
+                  onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
+                  languageCode={languageCode}
+                  onMasteredCountChange={setMasteredQACount}
                 />
               </Block>
 

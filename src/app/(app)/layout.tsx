@@ -3,6 +3,7 @@ import { BottomNav } from '@/components/layout/bottom-nav'
 import { SidebarNav } from '@/components/layout/sidebar-nav'
 import { GemsToastProvider } from '@/components/ui/gems-toast'
 import { IntlProvider } from '@/components/providers/intl-provider'
+import { TopbarProvider } from '@/components/providers/topbar-provider'
 import type { AbstractIntlMessages } from 'next-intl'
 
 const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
@@ -59,6 +60,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   return (
     <IntlProvider locale={uiLocale} messages={messages}>
+    <TopbarProvider>
       <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
         <SidebarNav modules={modules} />
         {/* Offset for sidebar on md+, bottom padding on mobile */}
@@ -68,6 +70,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         <BottomNav />
         <GemsToastProvider />
       </div>
+    </TopbarProvider>
     </IntlProvider>
   )
 }

@@ -1,12 +1,11 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { LanguageSwitcher } from '@/components/dashboard/language-switcher'
 import { ChevronLeft, Flame, Star, Gem, Zap } from 'lucide-react'
-import { createClient } from '@/lib/supabase/client'
-import type { RealtimeChannel } from '@supabase/supabase-js'
+import { useTopbarStats } from '@/components/providers/topbar-provider'
 
 function useActiveBoost() {
   const [label, setLabel] = useState<string | null>(null)
@@ -33,47 +32,7 @@ interface AppTopbarProps {
 }
 
 export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
-  const [stats, setStats] = useState({ streak: 0, xp: 0, gems: 0 })
-  const channelRef = useRef<RealtimeChannel | null>(null)
-
-  useEffect(() => {
-    const supabase = createClient()
-
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      if (!user) return
-
-      // Initial fetch
-      supabase
-        .from('user_profiles')
-        .select('streak_count, total_xp, total_gems')
-        .eq('user_id', user.id)
-        .maybeSingle()
-        .then(({ data }) => {
-          if (data) setStats({ streak: data.streak_count, xp: data.total_xp, gems: data.total_gems })
-        })
-
-      // Realtime: refresh whenever the profile row is updated (e.g. post-lesson)
-      channelRef.current = supabase
-        .channel(`topbar-${user.id}`)
-        .on(
-          'postgres_changes',
-          { event: 'UPDATE', schema: 'public', table: 'user_profiles', filter: `user_id=eq.${user.id}` },
-          (payload) => {
-            const d = payload.new as { streak_count: number; total_xp: number; total_gems: number }
-            setStats({ streak: d.streak_count, xp: d.total_xp, gems: d.total_gems })
-          },
-        )
-        .subscribe()
-    })
-
-    return () => {
-      if (channelRef.current) {
-        createClient().removeChannel(channelRef.current)
-      }
-    }
-  }, [])
-
-
+  const stats = useTopbarStats()
   const activeBoost = useActiveBoost()
 
   return (
