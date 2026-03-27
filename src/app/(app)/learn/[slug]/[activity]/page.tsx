@@ -2483,14 +2483,27 @@ export default function LessonPage() {
               </Block>
 
               {/* Story text — left col, row 2 */}
-              <Block className="col-span-12 md:col-span-6 md:col-start-1 p-6 md:p-8 overflow-y-auto shadow-[0_2px_8px_rgba(0,0,0,0.05)]" style={{ maxHeight: '36rem' }}>
-                <TextGenerateEffect
-                  words={content.story}
-                  duration={0.4}
-                  filter={true}
-                  highlightedWords={content.highlightedWords}
-                  highlightColor="#10b981"
-                />
+              <Block className="col-span-12 md:col-span-6 md:col-start-1 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                {/* Card header with Challenge button */}
+                <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-primary/5">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Story</p>
+                  <button
+                    onClick={() => setShowStoryChallenge(true)}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-500 dark:text-indigo-400 text-xs font-bold transition-all active:scale-95"
+                  >
+                    <Keyboard size={12} />
+                    Challenge
+                  </button>
+                </div>
+                <div className="p-6 md:p-8 overflow-y-auto" style={{ maxHeight: '32rem' }}>
+                  <TextGenerateEffect
+                    words={content.story}
+                    duration={0.4}
+                    filter={true}
+                    highlightedWords={content.highlightedWords}
+                    highlightColor="#10b981"
+                  />
+                </div>
               </Block>
 
               {/* Listening — right col, row 2 (grid-flow-dense backfills the gap) */}
@@ -2534,22 +2547,6 @@ export default function LessonPage() {
                 </Block>
               )}
 
-              {/* Story Challenge — right col, row 3 */}
-              <Block
-                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-                className="col-span-4 md:col-span-6 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
-              >
-                <button
-                  onClick={() => setShowStoryChallenge(true)}
-                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-                >
-                  <Keyboard size={26} className="text-white mx-auto" />
-                  <div className="text-center">
-                    <p className="font-bold text-sm text-white">Challenge</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Type the story</p>
-                  </div>
-                </button>
-              </Block>
 
               {/* Write your sentence — left col, row 4 */}
               <Block className="col-span-12 md:col-span-6 md:col-start-1 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
