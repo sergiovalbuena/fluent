@@ -2542,9 +2542,9 @@ export default function LessonPage() {
                   <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Story</p>
                   <button
                     onClick={() => setShowStoryChallenge(true)}
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-500 dark:text-indigo-400 text-xs font-bold transition-all active:scale-95"
+                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
                   >
-                    <Keyboard size={12} />
+                    <Zap size={10} />
                     Challenge
                   </button>
                 </div>
