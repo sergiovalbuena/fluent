@@ -462,18 +462,19 @@ function splitStory(text: string): string[] {
   return raw.filter(Boolean)
 }
 
-function StoryChallengeModal({ storyText, onClose }: {
+function StoryChallengeModal({ storyText, languageCode, onClose }: {
   storyText: string
+  languageCode: string
   onClose: () => void
 }) {
   const phrases   = useMemo(() => splitStory(storyText), [storyText])
-  const [round, setRound]         = useState<ChallengeRound>(1)
-  const [phraseIdx, setPhraseIdx] = useState(0)
-  const [typed, setTyped]         = useState(() => autoAdvance('', splitStory(storyText)[0] ?? ''))
-  const [shake, setShake]         = useState(false)
+  const [round, setRound]           = useState<ChallengeRound>(1)
+  const [phraseIdx, setPhraseIdx]   = useState(0)
+  const [typed, setTyped]           = useState(() => autoAdvance('', splitStory(storyText)[0] ?? ''))
+  const [shake, setShake]           = useState(false)
   const [phraseDone, setPhraseDone] = useState(false)
-  const [stars, setStars]         = useState(0)
-  const [allDone, setAllDone]     = useState(false)
+  const [stars, setStars]           = useState(0)
+  const [allDone, setAllDone]       = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const target  = phrases[phraseIdx] ?? ''
@@ -484,9 +485,8 @@ function StoryChallengeModal({ storyText, onClose }: {
   const advancePhrase = useCallback(() => {
     const isLastPhrase = phraseIdx >= phrases.length - 1
     if (!isLastPhrase) {
-      const next = phrases[phraseIdx + 1]
       setPhraseIdx(i => i + 1)
-      setTyped(autoAdvance('', next))
+      setTyped(autoAdvance('', phrases[phraseIdx + 1]))
       setPhraseDone(false)
     } else if (round < 3) {
       setRound(r => (r + 1) as ChallengeRound)
@@ -524,21 +524,43 @@ function StoryChallengeModal({ storyText, onClose }: {
     }
   }, [phraseDone, target, typed])
 
-  const charItems = target.split('').map((ch, i) => {
-    const isTyped  = i < typed.length
-    const isCursor = i === typed.length
-    const isHint   = hintSet.has(i)
-    if (ch === ' ') return { display: '\u00A0', cls: 'w-2' }
-    if (isTyped) {
-      const ok = norm(typed[i]) === norm(ch)
-      return { display: ch, cls: ok ? 'text-lime-400' : 'text-red-400' }
-    }
-    if (round === 1) return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/25' }
-    if (isHint)      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/30' }
-    return { display: '·', cls: isCursor ? 'text-white/60' : 'text-white/20' }
-  })
+  // Group characters into word segments so words never break mid-line
+  const wordSegments = useMemo(() => {
+    type Seg = { type: 'word'; chars: { display: string; cls: string; isCursor: boolean }[] } | { type: 'space' }
+    const segs: Seg[] = []
+    let word: { display: string; cls: string; isCursor: boolean }[] = []
 
-  const progress = target.length ? typed.length / target.length : 0
+    target.split('').forEach((ch, i) => {
+      const isTyped  = i < typed.length
+      const isCursor = i === typed.length
+      const isHint   = hintSet.has(i)
+
+      if (ch === ' ') {
+        if (word.length) { segs.push({ type: 'word', chars: word }); word = [] }
+        segs.push({ type: 'space' })
+        return
+      }
+
+      let display: string
+      let cls: string
+      if (isTyped) {
+        const ok = norm(typed[i]) === norm(ch)
+        display = ch; cls = ok ? 'text-lime-400' : 'text-red-400'
+      } else if (round === 1) {
+        display = ch; cls = isCursor ? 'text-white/70' : 'text-white/25'
+      } else if (isHint) {
+        display = ch; cls = isCursor ? 'text-white/70' : 'text-white/30'
+      } else {
+        display = '·'; cls = isCursor ? 'text-white/60' : 'text-white/20'
+      }
+      word.push({ display, cls, isCursor })
+    })
+    if (word.length) segs.push({ type: 'word', chars: word })
+    return segs
+  }, [target, typed, hintSet, round])
+
+  const cursorInSpace = typed.length < target.length && target[typed.length] === ' '
+  const progress      = target.length ? typed.length / target.length : 0
   const totalProgress = (phraseIdx + (phraseDone ? 1 : progress)) / phrases.length
 
   return (
@@ -620,20 +642,51 @@ function StoryChallengeModal({ storyText, onClose }: {
             </motion.div>
           ) : (
             <>
-              {/* Chars */}
+              {/* Audio button */}
+              <button
+                onClick={() => speakWord(target, languageCode)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/40 hover:text-white/70 text-xs font-semibold transition-all active:scale-95 -mb-2"
+              >
+                <Volume2 size={13} />
+                Escuchar frase
+              </button>
+
+              {/* Words — no mid-word line breaks */}
               <motion.div
                 animate={shake ? { x: [0, -9, 9, -6, 6, -3, 3, 0] } : {}}
                 transition={{ duration: 0.38 }}
-                className="flex gap-0.5 flex-wrap justify-center min-h-[3rem] items-center px-2"
+                className="flex flex-wrap justify-center gap-x-1.5 gap-y-2 items-center px-2 min-h-[3rem]"
               >
-                {charItems.map(({ display, cls }, i) => (
-                  <span key={i} className={cn('text-xl font-bold tracking-wide transition-colors duration-75', cls)}>
-                    {display}
-                  </span>
-                ))}
+                {wordSegments.map((seg, wi) => {
+                  if (seg.type === 'space') return null
+                  return (
+                    <span key={wi} className="inline-flex whitespace-nowrap relative">
+                      {seg.chars.map(({ display, cls, isCursor }, ci) => (
+                        <span key={ci} className={cn('relative text-xl font-bold tracking-wide transition-colors duration-75', cls)}>
+                          {display}
+                          {isCursor && !phraseDone && (
+                            <motion.span
+                              animate={{ opacity: [1, 0, 1] }}
+                              transition={{ repeat: Infinity, duration: 0.85 }}
+                              className="absolute -right-px top-[8%] bottom-[4%] w-[2px] bg-lime-400/70 rounded-full"
+                            />
+                          )}
+                        </span>
+                      ))}
+                      {/* cursor between words (space position) */}
+                      {cursorInSpace && wi === wordSegments.filter(s => s.type === 'word').indexOf(seg) && (
+                        <motion.span
+                          animate={{ opacity: [1, 0, 1] }}
+                          transition={{ repeat: Infinity, duration: 0.85 }}
+                          className="absolute -right-1 top-[8%] bottom-[4%] w-[2px] bg-lime-400/70 rounded-full"
+                        />
+                      )}
+                    </span>
+                  )
+                })}
               </motion.div>
 
-              {/* Overall progress bar (across all phrases) */}
+              {/* Overall progress bar */}
               <div className="w-full h-1 rounded-full bg-white/10 overflow-hidden">
                 <motion.div
                   className={cn('h-full rounded-full', phraseDone ? 'bg-lime-400' : 'bg-lime-400/50')}
@@ -652,7 +705,7 @@ function StoryChallengeModal({ storyText, onClose }: {
                 {phraseDone ? (
                   <motion.div key="done" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="flex flex-col items-center gap-3">
                     <p className="text-lime-400 font-bold text-sm">
-                      {phraseIdx < phrases.length - 1 ? `✓ Next phrase` :
+                      {phraseIdx < phrases.length - 1 ? '✓ ¡Correcto!' :
                         round === 1 ? '⭐ Round 1 done!' :
                         round === 2 ? '⭐⭐ Halfway there!' : '⭐⭐⭐ ¡Dominado!'}
                     </p>
@@ -661,12 +714,12 @@ function StoryChallengeModal({ storyText, onClose }: {
                       className="px-7 py-2.5 rounded-2xl text-sm font-bold text-black hover:scale-105 active:scale-95 transition-all"
                       style={{ background: '#a3e635' }}
                     >
-                      {phraseIdx < phrases.length - 1 ? 'Next →' : round < 3 ? 'Next Round →' : 'Done!'}
+                      {phraseIdx < phrases.length - 1 ? 'Siguiente →' : round < 3 ? 'Next Round →' : 'Done!'}
                     </button>
                   </motion.div>
                 ) : (
                   <motion.p key="hint" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-white/20 text-xs">
-                    {typed.length === 0 ? 'Start typing…' : `${typed.length} / ${target.length} chars`}
+                    {typed.length === 0 ? 'Empieza a escribir…' : `${typed.length} / ${target.length} caracteres`}
                   </motion.p>
                 )}
               </AnimatePresence>
@@ -2577,6 +2630,7 @@ export default function LessonPage() {
               {showStoryChallenge && content.story && (
                 <StoryChallengeModal
                   storyText={content.story}
+                  languageCode={languageCode}
                   onClose={() => setShowStoryChallenge(false)}
                 />
               )}
