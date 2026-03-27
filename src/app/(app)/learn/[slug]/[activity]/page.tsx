@@ -8,7 +8,7 @@ import { motion, type MotionProps, AnimatePresence, usePresence, useAnimate } fr
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
-  Layers, Headphones, Keyboard, Plus, Bookmark, Zap, RotateCw, Star,
+  Layers, Headphones, Keyboard, Plus, Bookmark, Zap, RotateCw, Star, Languages,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
 import { useVocabMastery } from '@/hooks/use-vocab-mastery'
@@ -56,6 +56,7 @@ interface LessonContent {
   phrases?: Phrase[]
   questions?: QAQuestion[]
   story?: string
+  storyTranslation?: string
   highlightedWords?: string[]
   arrangeSentences?: ArrangeSentence[]
   translateItems?: TranslateItem[]
@@ -69,6 +70,7 @@ interface RawContent {
   questions?: Array<{ question: string; options: string[]; correct: string | number; explanation?: string }>
   sentences?: Array<{ words: string[]; translation: string }>
   text?: string
+  translation?: string
   highlighted_words?: string[]
 }
 
@@ -104,7 +106,7 @@ function normalizeContent(raw: RawContent, lessonType: string): LessonContent {
     }
   }
   if (lessonType === 'story') {
-    return { story: raw.text, highlightedWords: raw.highlighted_words }
+    return { story: raw.text, storyTranslation: raw.translation, highlightedWords: raw.highlighted_words }
   }
   if (lessonType === 'arrange') {
     return {
@@ -1388,8 +1390,9 @@ export default function LessonPage() {
   const [qaDone,       setQaDone]       = useState(false)
 
   // Story
-  const [storyInput, setStoryInput]           = useState('')
-  const [showStoryChallenge, setShowStoryChallenge] = useState(false)
+  const [storyInput, setStoryInput]                   = useState('')
+  const [showStoryChallenge, setShowStoryChallenge]   = useState(false)
+  const [showTranslation, setShowTranslation]         = useState(false)
 
   // Arrange
   const [arrangeIndex,      setArrangeIndex]      = useState(0)
@@ -2537,25 +2540,75 @@ export default function LessonPage() {
 
               {/* Story text — left col, row 2 */}
               <Block className="col-span-12 md:col-span-6 md:col-start-1 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                {/* Card header with Challenge button */}
-                <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-primary/5">
+                {/* Card header */}
+                <div className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-primary/5 gap-2 flex-wrap">
                   <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Story</p>
-                  <button
-                    onClick={() => setShowStoryChallenge(true)}
-                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
-                  >
-                    <Zap size={10} />
-                    Challenge
-                  </button>
+                  <div className="flex items-center gap-1.5">
+                    {/* Audio — full story */}
+                    <button
+                      onClick={() => speakWord(content.story ?? '', languageCode)}
+                      className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/8 hover:bg-slate-200 dark:hover:bg-white/12 active:scale-95 transition-all"
+                    >
+                      <Volume2 size={10} />
+                      Audio
+                    </button>
+                    {/* Translation toggle */}
+                    <button
+                      onClick={() => setShowTranslation(v => !v)}
+                      className={cn(
+                        'flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold active:scale-95 transition-all',
+                        showTranslation
+                          ? 'text-blue-600 dark:text-blue-400 bg-blue-500/15 hover:bg-blue-500/20'
+                          : 'text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/8 hover:bg-slate-200 dark:hover:bg-white/12'
+                      )}
+                    >
+                      <Languages size={10} />
+                      Traducción
+                    </button>
+                    {/* Challenge */}
+                    <button
+                      onClick={() => setShowStoryChallenge(true)}
+                      className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+                    >
+                      <Zap size={10} />
+                      Challenge
+                    </button>
+                  </div>
                 </div>
-                <div className="p-6 md:p-8 overflow-y-auto" style={{ maxHeight: '32rem' }}>
-                  <TextGenerateEffect
-                    words={content.story}
-                    duration={0.4}
-                    filter={true}
-                    highlightedWords={content.highlightedWords}
-                    highlightColor="#10b981"
-                  />
+                {/* Sentence-by-sentence body */}
+                <div className="p-6 md:p-8 overflow-y-auto space-y-4" style={{ maxHeight: '32rem' }}>
+                  {splitStory(content.story ?? '').map((sentence, si) => {
+                    const translationSentences = content.storyTranslation
+                      ? splitStory(content.storyTranslation)
+                      : []
+                    const tr = translationSentences[si]
+                    // highlight key words in the sentence
+                    const hw = content.highlightedWords ?? []
+                    const parts = sentence.split(new RegExp(`(${hw.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi'))
+                    return (
+                      <div key={si}>
+                        <p className="text-slate-800 dark:text-slate-100 text-base leading-relaxed font-medium">
+                          {hw.length > 0
+                            ? parts.map((part, pi) =>
+                                hw.some(w => w.toLowerCase() === part.toLowerCase())
+                                  ? <span key={pi} className="text-emerald-600 dark:text-emerald-400 font-semibold">{part}</span>
+                                  : <span key={pi}>{part}</span>
+                              )
+                            : sentence
+                          }
+                        </p>
+                        {showTranslation && tr && (
+                          <motion.p
+                            initial={{ opacity: 0, y: -4 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="text-slate-400 dark:text-slate-500 text-sm mt-1 leading-relaxed italic"
+                          >
+                            {tr}
+                          </motion.p>
+                        )}
+                      </div>
+                    )
+                  })}
                 </div>
               </Block>
 
