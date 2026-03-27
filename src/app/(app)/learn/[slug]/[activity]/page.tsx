@@ -1179,6 +1179,7 @@ export default function LessonPage() {
 
     const fallbackStars = calcStars([activity], score)
     if (!user || !lessonId || !moduleId) {
+      console.warn('[saveProgress] skipped — missing context', { hasUser: !!user, lessonId, moduleId })
       return { stars: fallbackStars, gems: calcGems(score, false), isFirstCompletion: true }
     }
 
@@ -1204,7 +1205,7 @@ export default function LessonPage() {
     const newGems  = gemsBoostActive ? rawGems * 2 : rawGems
     const finalStars = Math.max(newStars, existing?.stars ?? 0) as 1 | 2 | 3
 
-    await supabase.from('user_progress').upsert({
+    const { error: upsertError } = await supabase.from('user_progress').upsert({
       user_id: user.id,
       lesson_id: lessonId,
       module_id: moduleId,
@@ -1217,6 +1218,11 @@ export default function LessonPage() {
       attempts: (existing?.attempts ?? 0) + 1,
       updated_at: new Date().toISOString(),
     }, { onConflict: 'user_id,lesson_id' })
+
+    if (upsertError) {
+      console.error('[saveProgress] upsert failed:', upsertError)
+      toast.error('Could not save progress — ' + upsertError.message)
+    }
 
     return { stars: finalStars, gems: newGems, isFirstCompletion }
   }
@@ -1340,7 +1346,7 @@ export default function LessonPage() {
 
   // Saves progress and navigates to the next activity (for non-final activities)
   async function handleActivityComplete(score: number) {
-    void saveProgress(score) // fire-and-forget
+    await saveProgress(score)
     router.push(nextHref)
   }
 
