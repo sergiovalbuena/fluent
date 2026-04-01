@@ -27,7 +27,13 @@ export default async function DashboardPage() {
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  const [activeLangResult, profileResult, progressResult] = await Promise.all([
+  const startOfWeekStr = (() => {
+    const d = new Date()
+    d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7))
+    return d.toISOString().split('T')[0]
+  })()
+
+  const [activeLangResult, profileResult, progressResult, activityResult] = await Promise.all([
     user
       ? supabase
           .from('user_languages')
@@ -50,29 +56,26 @@ export default async function DashboardPage() {
           .eq('user_id', user.id)
           .not('completed_at', 'is', null)
       : Promise.resolve({ data: [] }),
+    user
+      ? supabase
+          .from('user_activity')
+          .select('activity_date, lessons_completed')
+          .eq('user_id', user.id)
+          .gte('activity_date', startOfWeekStr)
+      : Promise.resolve({ data: [] }),
   ])
 
   const languageCode = activeLangResult.data?.language_code ?? 'es'
   const allProgress = (progressResult.data ?? []) as ProgressRow[]
 
-  // ── Weekly activity ────────────────────────────────────────────────────────
-  const today = new Date()
-  const dow = today.getDay()
-  const startOfWeek = new Date(today)
-  startOfWeek.setDate(today.getDate() - ((dow + 6) % 7))
-  startOfWeek.setHours(0, 0, 0, 0)
-
+  // ── Weekly activity from user_activity (1 session = 1 activity completed) ──
   const weekActivity = [0, 0, 0, 0, 0, 0, 0]
-  allProgress.forEach((p) => {
-    const d = new Date(p.completed_at)
-    if (d >= startOfWeek) {
-      const idx = (d.getDay() + 6) % 7
-      weekActivity[idx]++
-    }
+  const weekRows = (activityResult.data ?? []) as { activity_date: string; lessons_completed: number }[]
+  weekRows.forEach((row) => {
+    const d = new Date(row.activity_date + 'T00:00:00Z')
+    const idx = (d.getUTCDay() + 6) % 7
+    weekActivity[idx] += row.lessons_completed
   })
-
-  const hasActivityThisWeek = weekActivity.some(v => v > 0)
-  const displayActivity = hasActivityThisWeek ? weekActivity : [3, 5, 8, 7, 6, 4, 2]
 
   const scores = allProgress
     .map(p => p.score)
@@ -163,7 +166,7 @@ export default async function DashboardPage() {
         totalXp: profileResult.data?.total_xp ?? 0,
         lessonsCompleted: allProgress.length,
         avgAccuracy,
-        weekActivity: displayActivity,
+        weekActivity: weekActivity,
       }}
     />
   )

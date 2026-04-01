@@ -59,17 +59,36 @@ export default async function LessonPage({ params }: PageProps) {
   const lessonIds = exerciseList.map(e => e.id)
   let progressMap: Record<string, { stars: number; best_score: number; has_crown: boolean }> = {}
 
-  if (user && lessonIds.length > 0) {
-    const { data: progressRows } = await supabase
-      .from('user_progress')
-      .select('lesson_id, stars, best_score, has_crown')
-      .eq('user_id', user.id)
-      .in('lesson_id', lessonIds)
+  let masteredWords = 0
+  let masteredPhrases = 0
+  let masteredQA = 0
 
-    if (progressRows) {
+  if (user && lessonIds.length > 0) {
+    const [progressResult, masteryResult] = await Promise.all([
+      supabase
+        .from('user_progress')
+        .select('lesson_id, stars, best_score, has_crown')
+        .eq('user_id', user.id)
+        .in('lesson_id', lessonIds),
+      supabase
+        .from('user_vocab_mastery')
+        .select('word')
+        .eq('user_id', user.id)
+        .eq('language_code', lesson.language_code),
+    ])
+
+    if (progressResult.data) {
       progressMap = Object.fromEntries(
-        progressRows.map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score, has_crown: r.has_crown ?? false }])
+        progressResult.data.map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score, has_crown: r.has_crown ?? false }])
       )
+    }
+
+    if (masteryResult.data) {
+      for (const row of masteryResult.data) {
+        if (row.word.startsWith('phrase:')) masteredPhrases++
+        else if (row.word.startsWith('qa:')) masteredQA++
+        else masteredWords++
+      }
     }
   }
 
@@ -108,6 +127,9 @@ export default async function LessonPage({ params }: PageProps) {
     starsMap,
     allThreeStars,
     hasCrown,
+    masteredWords,
+    masteredPhrases,
+    masteredQA,
   }
 
   return (

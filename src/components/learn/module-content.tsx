@@ -5,8 +5,8 @@ import { motion, type MotionProps } from 'framer-motion'
 import Link from 'next/link'
 import {
   ArrowRight, BookOpen, MessageSquare, HelpCircle,
-  BookMarked, Shuffle, PenLine, Zap, Headphones, Gem, Bot,
-  PlayCircle, Layers, Star, Crown, Lock,
+  BookMarked, Shuffle, PenLine, Zap, Headphones,
+  PlayCircle, Layers, Star, Crown, Lock, ChevronRight,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -20,7 +20,6 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
       animate: { scale: 1, y: 0, opacity: 1 },
     }}
     transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
-    whileTap={{ scale: 0.97 }}
     className={cn(
       'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
       className
@@ -31,14 +30,14 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
   </motion.div>
 )
 
-// ── Stars mini row ─────────────────────────────────────────────────────────────
-function StarsRow({ stars }: { stars: number }) {
+// ── Stars row ──────────────────────────────────────────────────────────────────
+function StarsRow({ stars, size = 11 }: { stars: number; size?: number }) {
   return (
     <div className="flex items-center gap-0.5">
       {[1, 2, 3].map(n => (
         <Star
           key={n}
-          size={12}
+          size={size}
           className={
             n <= stars
               ? 'fill-amber-400 text-amber-400'
@@ -49,42 +48,6 @@ function StarsRow({ stars }: { stars: number }) {
     </div>
   )
 }
-
-// ── Neutral activity card (unified design) ────────────────────────────────────
-// Icon top-left, arrow top-right (hover), title + subtitle, optional micro-preview
-interface ActivityCardProps {
-  href: string
-  icon: React.ElementType
-  iconBg: string
-  iconColor: string
-  title: string
-  subtitle: string
-  stars?: number
-  preview?: React.ReactNode
-}
-
-const ActivityCard = ({ href, icon: Icon, iconBg, iconColor, title, subtitle, stars, preview }: ActivityCardProps) => (
-  <Link href={href} className="block h-full">
-    <div className="flex flex-col h-full gap-3 group">
-      <div className="flex items-start justify-between">
-        <div className={cn('size-10 rounded-2xl flex items-center justify-center', iconBg)}>
-          <Icon size={18} className={iconColor} />
-        </div>
-        <div className="flex items-center gap-2 shrink-0">
-          {stars !== undefined && <StarsRow stars={stars} />}
-          <div className={cn('size-7 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity', iconBg)}>
-            <ArrowRight size={13} className={iconColor} />
-          </div>
-        </div>
-      </div>
-      <div className="flex-1">
-        <p className="font-bold text-sm text-slate-900 dark:text-white">{title}</p>
-        <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">{subtitle}</p>
-      </div>
-      {preview && <div className="mt-auto">{preview}</div>}
-    </div>
-  </Link>
-)
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 export type VocabItem  = { word: string; translation: string; icon?: string }
@@ -114,9 +77,332 @@ export interface ModuleContentData {
   starsMap?: Record<string, number>
   allThreeStars?: boolean
   hasCrown?: boolean
+  masteredWords?: number
+  masteredPhrases?: number
+  masteredQA?: number
 }
 
-// ── Component ─────────────────────────────────────────────────────────────────
+// ── Core activity card ────────────────────────────────────────────────────────
+// Signature: top accent bar (activity color) + icon pill + real content preview
+// Coherence: same surface, padding, radius, border, typography across all 4
+
+type ActivityVariant = 'vocabulary' | 'phrases' | 'qa' | 'story'
+
+const VARIANT_TOKENS: Record<ActivityVariant, {
+  bar: string        // top accent bar bg
+  iconBg: string     // icon container bg
+  iconColor: string  // icon + text color
+  chipBg: string     // preview chip bg (vocabulary)
+}> = {
+  vocabulary: {
+    bar:       'bg-indigo-500',
+    iconBg:    'bg-indigo-500/[0.10]',
+    iconColor: 'text-indigo-500',
+    chipBg:    'bg-indigo-500/[0.08] text-indigo-600 dark:text-indigo-400',
+  },
+  phrases: {
+    bar:       'bg-teal-500',
+    iconBg:    'bg-teal-500/[0.10]',
+    iconColor: 'text-teal-600 dark:text-teal-400',
+    chipBg:    '',
+  },
+  qa: {
+    bar:       'bg-violet-500',
+    iconBg:    'bg-violet-500/[0.10]',
+    iconColor: 'text-violet-500',
+    chipBg:    '',
+  },
+  story: {
+    bar:       'bg-amber-500',
+    iconBg:    'bg-amber-500/[0.10]',
+    iconColor: 'text-amber-600 dark:text-amber-400',
+    chipBg:    '',
+  },
+}
+
+interface CoreCardProps {
+  href: string
+  icon: React.ElementType
+  variant: ActivityVariant
+  label: string
+  total: number
+  unit: string
+  mastered: number
+  stars: number
+  available: boolean
+}
+
+function CoreCard({ href, icon: Icon, variant, label, total, unit, mastered, stars, available }: CoreCardProps) {
+  if (!available) return null
+  const t = VARIANT_TOKENS[variant]
+
+  return (
+    <Link href={href} className="block group h-full">
+      <motion.div
+        whileHover={{ y: -4, scale: 1.015 }}
+        whileTap={{ scale: 0.97 }}
+        className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#2c1a12] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none cursor-pointer"
+      >
+        {/* Top accent bar */}
+        <div className={cn('h-[3px] w-full shrink-0', t.bar)} />
+
+        <div className="flex flex-col flex-1 gap-3 p-4">
+          {/* Icon (left) + stars + count (right) */}
+          <div className="flex items-start justify-between gap-2">
+            <div className={cn('size-10 rounded-xl flex items-center justify-center shrink-0', t.iconBg)}>
+              <Icon size={18} className={t.iconColor} />
+            </div>
+            <div className="flex flex-col items-end gap-1 pt-0.5">
+              <StarsRow stars={stars} size={15} />
+              <p className="text-[11px] font-semibold tabular-nums">
+                {mastered > 0
+                  ? <><span className="text-primary font-bold">{mastered}</span><span className="text-slate-400 dark:text-slate-500"> / {total} {unit}</span></>
+                  : <span className="text-slate-400 dark:text-slate-500">{total} {unit}</span>
+                }
+              </p>
+            </div>
+          </div>
+
+          {/* Title */}
+          <div className="flex-1 flex items-end">
+            <p className="font-bold text-[13px] text-slate-900 dark:text-white leading-snug">{label}</p>
+          </div>
+        </div>
+      </motion.div>
+    </Link>
+  )
+}
+
+// ── Mini activity card (bottom row) ──────────────────────────────────────────
+interface MiniCardProps {
+  href: string
+  icon: React.ElementType
+  label: string
+  bg: string
+  stars?: number
+  tilt?: string
+}
+
+function MiniCard({ href, icon: Icon, label, bg, stars, tilt = '2.5deg' }: MiniCardProps) {
+  return (
+    <Link href={href} className="shrink-0">
+      <motion.div
+        whileHover={{ rotate: tilt, scale: 1.07, filter: 'brightness(1.1) saturate(1.1)' }}
+        whileTap={{ scale: 0.96 }}
+        className={cn(
+          'relative flex flex-col items-center justify-center gap-2 p-4 rounded-2xl min-w-[100px] min-h-[96px] cursor-pointer',
+          bg
+        )}
+      >
+        {stars !== undefined && stars > 0 && (
+          <div className="absolute top-2 right-2 flex items-center gap-0.5">
+            {[1, 2, 3].map(n => (
+              <Star key={n} size={9} className={n <= stars ? 'fill-white text-white' : 'fill-white/25 text-white/25'} />
+            ))}
+          </div>
+        )}
+        <Icon size={24} className="text-white" />
+        <p className="text-[11px] font-bold text-white text-center leading-tight">{label}</p>
+      </motion.div>
+    </Link>
+  )
+}
+
+// ── Crown Challenge band (inside Hero, full width) ────────────────────────────
+// Three states: locked → unlocked → crowned
+// Signature: per-activity star tracker in locked state (shows exactly what's missing)
+
+interface CrownBandProps {
+  slug: string
+  allThreeStars: boolean
+  hasCrown: boolean
+  starsMap: Record<string, number>
+  hasVocab: boolean
+  hasPhrases: boolean
+  hasQA: boolean
+  hasStory: boolean
+}
+
+const CORE_ACTIVITY_META = [
+  { key: 'vocabulary', label: 'Vocab',   flag: 'hasVocab'   },
+  { key: 'phrases',    label: 'Phrases', flag: 'hasPhrases' },
+  { key: 'qa',         label: 'Q&A',     flag: 'hasQA'      },
+  { key: 'story',      label: 'Story',   flag: 'hasStory'   },
+] as const
+
+function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhrases, hasQA, hasStory }: CrownBandProps) {
+  const flagMap = { hasVocab, hasPhrases, hasQA, hasStory }
+  const activeCore = CORE_ACTIVITY_META.filter(a => flagMap[a.flag])
+  const threeStarCount = activeCore.filter(a => (starsMap[a.key] ?? 0) >= 3).length
+  const totalCore = activeCore.length
+  const progressPct = totalCore > 0 ? Math.round((threeStarCount / totalCore) * 100) : 0
+
+  // ── CROWNED ──────────────────────────────────────────────────────────────
+  if (hasCrown) {
+    return (
+      <div className="relative overflow-hidden rounded-b-3xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500" />
+        <div className="absolute inset-0 opacity-[0.06]"
+          style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.75\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
+        />
+        {/* Large crown watermark */}
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.18]">
+          <Crown size={72} className="text-white" />
+        </div>
+        <div className="relative flex items-center gap-4 px-6 md:px-8 py-5">
+          <div className="size-12 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+            <Crown size={22} className="text-white" />
+          </div>
+          <div>
+            <p className="font-bold text-base text-white leading-tight">Module Mastered</p>
+            <p className="text-[12px] text-white/70 mt-1">You can use this in real life · Crown earned</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // ── UNLOCKED — all ⭐⭐⭐, ready to challenge ──────────────────────────────
+  if (allThreeStars) {
+    return (
+      <Link href={`/learn/${slug}/mastery`} className="block group">
+        <motion.div
+          whileHover={{ scale: 1.005 }}
+          className="relative overflow-hidden rounded-b-3xl"
+        >
+          {/* Deep gold gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600" />
+          {/* Shine overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-transparent" />
+          {/* Crown watermark — large, atmospheric */}
+          <motion.div
+            animate={{ opacity: [0.12, 0.2, 0.12], scale: [1, 1.04, 1] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none"
+          >
+            <Crown size={88} className="text-white" />
+          </motion.div>
+          <div className="relative flex items-center justify-between px-6 md:px-8 py-5 md:py-6">
+            <div className="flex items-center gap-4">
+              <motion.div
+                animate={{ boxShadow: ['0 0 0px rgba(251,191,36,0)', '0 0 20px rgba(251,191,36,0.6)', '0 0 0px rgba(251,191,36,0)'] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+                className="size-12 rounded-2xl bg-white/20 flex items-center justify-center shrink-0"
+              >
+                <Crown size={22} className="text-white" />
+              </motion.div>
+              <div>
+                <p className="font-black text-base text-white leading-tight tracking-tight">Crown Challenge</p>
+                <p className="text-[12px] text-white/80 mt-0.5 font-medium">All ⭐⭐⭐ earned — you're ready for the ultimate test</p>
+              </div>
+            </div>
+            <motion.div
+              whileHover={{ scale: 1.05, x: 2 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-2 bg-white text-amber-600 font-black text-[12px] px-4 py-2 rounded-xl shrink-0 shadow-lg shadow-amber-900/30"
+            >
+              Begin <ChevronRight size={13} />
+            </motion.div>
+          </div>
+        </motion.div>
+      </Link>
+    )
+  }
+
+  // ── LOCKED — the main state, needs the most craft ─────────────────────────
+  // Dark atmospheric band: creates desire by showing the prize behind a barrier
+  // Progress bar: the primary motivator — shows exactly how close they are
+  // Activity pills: shows which specific activities still need work
+  return (
+    <div className="relative overflow-hidden rounded-b-3xl">
+      {/* Dark warm background — atmospheric, mysterious */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1c0a05] via-[#230e07] to-[#1a0803]" />
+      {/* Subtle warm vignette from center */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_50%,rgba(255,128,82,0.07),transparent_70%)]" />
+      {/* Crown watermark — dimly visible, creates desire */}
+      <motion.div
+        animate={{ opacity: [0.07, 0.13, 0.07] }}
+        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 pointer-events-none select-none"
+      >
+        <Crown size={96} className="text-amber-400" />
+      </motion.div>
+
+      <div className="relative px-6 md:px-8 py-5 md:py-6 flex flex-col gap-4">
+
+        {/* Header row */}
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="size-10 rounded-xl bg-white/[0.08] flex items-center justify-center shrink-0">
+              <Lock size={16} className="text-white/50" />
+            </div>
+            <div>
+              <p className="font-black text-[14px] text-white/90 leading-tight tracking-tight">Crown Challenge</p>
+              <p className="text-[11px] text-white/45 mt-0.5 font-medium">
+                Master all activities to unlock the ultimate test
+              </p>
+            </div>
+          </div>
+          {/* Progress fraction */}
+          <div className="text-right shrink-0">
+            <span className="text-[11px] font-bold text-white/40 tabular-nums">{threeStarCount}<span className="text-white/25">/{totalCore}</span></span>
+          </div>
+        </div>
+
+        {/* Progress bar — the main motivator */}
+        <div className="flex flex-col gap-2">
+          <div className="h-[5px] w-full rounded-full bg-white/[0.08] overflow-hidden">
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400"
+              initial={{ width: 0 }}
+              animate={{ width: `${progressPct}%` }}
+              transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
+            />
+          </div>
+
+          {/* Activity pills — stars per activity */}
+          <div className="flex items-center gap-2">
+            {activeCore.map(a => {
+              const s = starsMap[a.key] ?? 0
+              const done = s >= 3
+              return (
+                <div
+                  key={a.key}
+                  className={cn(
+                    'flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors',
+                    done
+                      ? 'bg-amber-500/[0.18] border border-amber-500/25'
+                      : 'bg-white/[0.06] border border-white/[0.06]'
+                  )}
+                >
+                  <span className={cn('text-[10px] font-bold', done ? 'text-amber-400' : 'text-white/40')}>
+                    {a.label}
+                  </span>
+                  <div className="flex items-center gap-[2px]">
+                    {[1, 2, 3].map(n => (
+                      <Star
+                        key={n}
+                        size={8}
+                        className={
+                          n <= s
+                            ? 'fill-amber-400 text-amber-400'
+                            : 'fill-white/15 text-white/15'
+                        }
+                      />
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+// ── Main component ─────────────────────────────────────────────────────────────
 export function ModuleContentView({ data }: { data: ModuleContentData }) {
   const {
     slug, title, description, icon, languageCode, exerciseCount, firstExType,
@@ -126,379 +412,235 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
     starsMap = {},
     allThreeStars = false,
     hasCrown = false,
+    masteredWords = 0,
+    masteredPhrases = 0,
+    masteredQA = 0,
   } = data
 
-  // ── Module progress calculation ───────────────────────────────────────────
   const activityFlags = [hasVocab, hasPhrases, hasQA, hasStory, hasArrange, hasTranslate]
   const activityKeys  = ['vocabulary', 'phrases', 'qa', 'story', 'arrange', 'translate']
-  const totalActivities = activityFlags.filter(Boolean).length
+  const totalActivities     = activityFlags.filter(Boolean).length
   const completedActivities = activityKeys.filter((k, i) => activityFlags[i] && (starsMap[k] ?? 0) > 0).length
   const progressPct = totalActivities > 0 ? Math.round((completedActivities / totalActivities) * 100) : 0
+
+  const coreCards: CoreCardProps[] = [
+    {
+      href: `/learn/${slug}/vocabulary`,
+      icon: BookOpen,
+      variant: 'vocabulary',
+      label: 'Vocabulary',
+      total: vocabItems.length,
+      unit: 'words',
+      mastered: masteredWords,
+      stars: starsMap['vocabulary'] ?? 0,
+      available: hasVocab,
+    },
+    {
+      href: `/learn/${slug}/phrases`,
+      icon: MessageSquare,
+      variant: 'phrases',
+      label: 'Phrases',
+      total: phraseItems.length,
+      unit: 'phrases',
+      mastered: masteredPhrases,
+      stars: starsMap['phrases'] ?? 0,
+      available: hasPhrases,
+    },
+    {
+      href: `/learn/${slug}/qa`,
+      icon: HelpCircle,
+      variant: 'qa',
+      label: 'Q&A Quiz',
+      total: qaItems.length,
+      unit: 'questions',
+      mastered: masteredQA,
+      stars: starsMap['qa'] ?? 0,
+      available: hasQA,
+    },
+    {
+      href: `/learn/${slug}/story`,
+      icon: BookMarked,
+      variant: 'story',
+      label: 'Story',
+      total: storyText ? storyText.split(/\s+/).filter(Boolean).length : 0,
+      unit: 'words',
+      mastered: 0,
+      stars: starsMap['story'] ?? 0,
+      available: hasStory,
+    },
+  ]
+
+  const availableCoreCards = coreCards.filter(c => c.available)
 
   return (
     <motion.div
       initial="initial"
       animate="animate"
       transition={{ staggerChildren: 0.05 }}
-      className="grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+      className="flex flex-col gap-3 md:gap-4"
     >
 
-      {/* ════════════════════════════════════════════════════════════════════
-          ROW 1 — Hero (8) + [Flashcard + Q&A stacked] (4)
-          Mobile: 12 + 12  ·  Desktop: 8 + 4
-      ════════════════════════════════════════════════════════════════════ */}
+      {/* ══════════════════════════════════════════════════════════════════════
+          HERO CARD — full width, module info + 4 core activities inside
+      ══════════════════════════════════════════════════════════════════════ */}
+      <Block className="col-span-12 relative overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
 
-      {/* HERO */}
-      <Block className="col-span-12 md:col-span-8 relative overflow-hidden p-6 md:p-8 min-h-[200px] flex flex-col justify-between shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
-        {/* Emoji watermark */}
-        <div className="absolute right-0 top-0 bottom-0 w-40 md:w-56 flex items-center justify-end overflow-hidden pointer-events-none select-none">
-          <span className="text-[8rem] md:text-[10rem] leading-none opacity-[0.065] dark:opacity-[0.055] translate-x-6 md:translate-x-10">
-            {icon}
-          </span>
-        </div>
-        <div className="relative">
-          <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-4">
-            {languageCode?.toUpperCase()} · {exerciseCount} activities
-          </span>
-          <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white mb-1">
-            {title}
-          </h1>
-          {description && (
-            <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md">{description}</p>
-          )}
-        </div>
-        <div className="relative mt-5">
-          <div className="mb-4 max-w-xs">
-            <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
-              <span>Progress</span>
-              <span>{completedActivities} / {totalActivities} activities</span>
+        {/* Top: module info */}
+        <div className="relative p-6 md:p-8 pb-5 md:pb-6">
+          {/* Emoji watermark */}
+          <div className="absolute right-0 top-0 bottom-0 w-40 md:w-56 flex items-center justify-end overflow-hidden pointer-events-none select-none">
+            <span className="text-[8rem] md:text-[10rem] leading-none opacity-[0.06] dark:opacity-[0.05] translate-x-6 md:translate-x-10">
+              {icon}
+            </span>
+          </div>
+
+          <div className="relative flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+            <div>
+              <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
+                {languageCode?.toUpperCase()} · {exerciseCount} activities
+              </span>
+              <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white mb-1">
+                {title}
+              </h1>
+              {description && (
+                <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md">{description}</p>
+              )}
             </div>
-            <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
-              <motion.div
-                className="h-full bg-primary rounded-full"
-                initial={{ width: 0 }}
-                animate={{ width: `${progressPct}%` }}
-                transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
-              />
+
+            <div className="flex items-center gap-4 shrink-0">
+              {/* Progress */}
+              <div className="min-w-[140px]">
+                <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
+                  <span>Progress</span>
+                  <span>{completedActivities}/{totalActivities}</span>
+                </div>
+                <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
+                  <motion.div
+                    className="h-full bg-primary rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${progressPct}%` }}
+                    transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] as const }}
+                  />
+                </div>
+              </div>
+
+              {firstExType && (
+                <Link href={`/learn/${slug}/${firstExType}`}>
+                  <motion.button
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.96 }}
+                    className="flex items-center gap-2 bg-primary text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-sm shadow-primary/30 shrink-0"
+                  >
+                    <PlayCircle size={15} />
+                    {progressPct > 0 ? 'Continue' : 'Start'}
+                  </motion.button>
+                </Link>
+              )}
             </div>
           </div>
-          {firstExType && (
-            <Link href={`/learn/${slug}/${firstExType}`}>
-              <motion.button
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-                className="flex items-center gap-2 bg-primary text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-sm shadow-primary/30"
-              >
-                <PlayCircle size={15} />
-                {progressPct > 0 ? 'Continue' : 'Start Lesson'}
-              </motion.button>
-            </Link>
-          )}
         </div>
+
+        {/* Divider */}
+        <div className="mx-6 md:mx-8 h-px bg-black/[0.04] dark:bg-white/[0.05]" />
+
+        {/* Bottom: 4 core activity cards */}
+        <div className="p-4 md:p-6 pb-4">
+          <div className={cn(
+            'grid gap-3',
+            availableCoreCards.length === 4 ? 'grid-cols-2 md:grid-cols-4'
+            : availableCoreCards.length === 3 ? 'grid-cols-3'
+            : availableCoreCards.length === 2 ? 'grid-cols-2'
+            : 'grid-cols-1'
+          )}>
+            {availableCoreCards.map(card => (
+              <CoreCard key={card.href} {...card} />
+            ))}
+          </div>
+        </div>
+
+        {/* Crown Challenge — integrated at the bottom of the hero */}
+        <CrownBand
+          slug={slug}
+          allThreeStars={allThreeStars}
+          hasCrown={hasCrown}
+          starsMap={starsMap}
+          hasVocab={hasVocab}
+          hasPhrases={hasPhrases}
+          hasQA={hasQA}
+          hasStory={hasStory}
+        />
+
       </Block>
 
-      {/* RIGHT COLUMN — two tiles stacked, match hero height on desktop */}
-      <div className="col-span-12 md:col-span-4 flex flex-col gap-3 md:gap-4">
+      {/* ══════════════════════════════════════════════════════════════════════
+          MINI CARDS ROW — all in one horizontal line
+      ══════════════════════════════════════════════════════════════════════ */}
+      <div className="flex gap-3 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
-        {/* FLASHCARD TILE */}
-        <Block
-          whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-          className="flex-1 bg-primary dark:bg-primary border-primary/20 p-0 min-h-[140px]"
-        >
-          <Link href={`/learn/${slug}/vocabulary`} className="relative grid h-full place-content-center gap-3 p-6 min-h-[140px]">
-            {(starsMap['vocabulary'] ?? 0) > 0 && (
-              <div className="absolute top-3 right-3 flex items-center gap-0.5">
-                {[1, 2, 3].map(n => (
-                  <Star key={n} size={11} className={n <= (starsMap['vocabulary'] ?? 0) ? 'fill-white text-white' : 'fill-white/25 text-white/25'} />
-                ))}
-              </div>
-            )}
-            <Layers size={34} className="text-white mx-auto" />
-            <div className="text-center">
-              <p className="font-bold text-sm text-white">Flashcards</p>
-              <p className="text-[11px] text-white/60 mt-0.5">{vocabItems.length} words to study</p>
-            </div>
-          </Link>
-        </Block>
+        <MiniCard
+          href={`/learn/${slug}/flashcards`}
+          icon={Layers}
+          label="Flashcards"
+          bg="bg-[#ff8052]"
+          stars={starsMap['vocabulary']}
+          tilt="2.5deg"
+        />
 
-        {/* Q&A TILE */}
-        <Block
-          whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-          className="flex-1 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[140px]"
-        >
-          <Link
-            href={hasQA ? `/learn/${slug}/qa` : `/learn/${slug}/${firstExType ?? ''}`}
-            className="relative grid h-full place-content-center gap-3 p-6 min-h-[140px]"
-          >
-            {(starsMap['qa'] ?? 0) > 0 && (
-              <div className="absolute top-3 right-3 flex items-center gap-0.5">
-                {[1, 2, 3].map(n => (
-                  <Star key={n} size={11} className={n <= (starsMap['qa'] ?? 0) ? 'fill-white text-white' : 'fill-white/25 text-white/25'} />
-                ))}
-              </div>
-            )}
-            <HelpCircle size={34} className="text-white mx-auto" />
-            <div className="text-center">
-              <p className="font-bold text-sm text-white">Q&amp;A Quiz</p>
-              <p className="text-[11px] text-white/60 mt-0.5">
-                {hasQA ? `${qaItems.length} questions` : 'Test yourself'}
-              </p>
-            </div>
-          </Link>
-        </Block>
-
-      </div>
-
-      {/* ════════════════════════════════════════════════════════════════════
-          ROW 2 — Vocab (4) + Phrases (4) + Story (4)
-          Mobile: 6 + 6 + 12  ·  Desktop: 4 + 4 + 4
-      ════════════════════════════════════════════════════════════════════ */}
-
-      {hasVocab && (
-        <Block whileHover={{ y: -6, scale: 1.02 }} className="col-span-6 md:col-span-4 p-5 min-h-[160px] shadow-[0_2px_8px_rgba(0,0,0,0.05)] cursor-pointer">
-          <ActivityCard
-            href={`/learn/${slug}/vocabulary`}
-            icon={BookOpen}
-            iconBg="bg-indigo-500/10"
-            iconColor="text-indigo-500"
-            title="Vocabulary"
-            subtitle={`${vocabItems.length} words`}
-            stars={starsMap['vocabulary']}
-            preview={
-              vocabItems.length > 0 ? (
-                <div className="flex flex-wrap gap-1">
-                  {vocabItems.slice(0, 3).map(w => (
-                    <span key={w.word} className="text-[11px] font-semibold bg-indigo-500/8 text-indigo-500 px-1.5 py-0.5 rounded-full">
-                      {w.icon ? `${w.icon} ` : ''}{w.word}
-                    </span>
-                  ))}
-                  {vocabItems.length > 3 && (
-                    <span className="text-[11px] text-slate-400">+{vocabItems.length - 3}</span>
-                  )}
-                </div>
-              ) : undefined
-            }
+        {hasArrange && (
+          <MiniCard
+            href={`/learn/${slug}/arrange`}
+            icon={Shuffle}
+            label="Arrange"
+            bg="bg-teal-500"
+            stars={starsMap['arrange']}
+            tilt="-2.5deg"
           />
-        </Block>
-      )}
+        )}
 
-      {hasPhrases && (
-        <Block whileHover={{ y: -6, scale: 1.02 }} className="col-span-6 md:col-span-4 p-5 min-h-[160px] shadow-[0_2px_8px_rgba(0,0,0,0.05)] cursor-pointer">
-          <ActivityCard
-            href={`/learn/${slug}/phrases`}
-            icon={MessageSquare}
-            iconBg="bg-teal-500/10"
-            iconColor="text-teal-500"
-            title="Phrases"
-            subtitle={`${phraseItems.length} expressions`}
-            stars={starsMap['phrases']}
-            preview={
-              phraseItems[0] ? (
-                <p className="text-[11px] text-slate-400 italic truncate">
-                  &ldquo;{phraseItems[0].phrase}&rdquo;
-                </p>
-              ) : undefined
-            }
-          />
-        </Block>
-      )}
+        <MiniCard
+          href="/play"
+          icon={Zap}
+          label="Speed Round"
+          bg="bg-orange-500"
+          tilt="2.5deg"
+        />
 
-      {hasStory && (
-        <Block whileHover={{ y: -6, scale: 1.02 }} className="col-span-12 md:col-span-4 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)] cursor-pointer">
-          <ActivityCard
-            href={`/learn/${slug}/story`}
-            icon={BookMarked}
-            iconBg="bg-amber-500/10"
-            iconColor="text-amber-600"
-            title="Story"
-            subtitle="Read & write in context"
-            stars={starsMap['story']}
-            preview={
-              storyText ? (
-                <p className="text-[11px] text-slate-400 italic line-clamp-2">
-                  &ldquo;{storyText.slice(0, 80)}{storyText.length > 80 ? '…' : ''}&rdquo;
-                </p>
-              ) : undefined
-            }
-          />
-        </Block>
-      )}
+        <MiniCard
+          href="/play"
+          icon={Shuffle}
+          label="Scramble"
+          bg="bg-indigo-500"
+          tilt="-2.5deg"
+        />
 
-      {/* ════════════════════════════════════════════════════════════════════
-          ROW 3 — Arrange (4) + Translate (8)
-          Mobile: 12 + 12  ·  Desktop: 4 + 8
-      ════════════════════════════════════════════════════════════════════ */}
+        <MiniCard
+          href="/play"
+          icon={Headphones}
+          label="Listen"
+          bg="bg-violet-600"
+          tilt="2.5deg"
+        />
 
-      {hasArrange && (
-        <Block
-          whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-          className="col-span-12 md:col-span-4 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[120px]"
-        >
-          <Link href={`/learn/${slug}/arrange`} className="relative grid h-full place-content-center gap-2.5 p-5 min-h-[120px]">
-            {(starsMap['arrange'] ?? 0) > 0 && (
-              <div className="absolute top-3 right-3 flex items-center gap-0.5">
-                {[1, 2, 3].map(n => (
-                  <Star
-                    key={n}
-                    size={11}
-                    className={n <= (starsMap['arrange'] ?? 0) ? 'fill-white text-white' : 'fill-white/30 text-white/30'}
-                  />
-                ))}
-              </div>
-            )}
-            <Shuffle size={30} className="text-white mx-auto" />
-            <div className="text-center">
-              <p className="font-bold text-sm text-white">Arrange</p>
-              <p className="text-[11px] text-white/60 mt-0.5">{arrangeCount} sentences</p>
-            </div>
-          </Link>
-        </Block>
-      )}
+        <MiniCard
+          href="/play"
+          icon={PenLine}
+          label="Fill Blank"
+          bg="bg-emerald-600"
+          tilt="-2.5deg"
+        />
 
-      {hasTranslate && (
-        <Block whileHover={{ y: -6, scale: 1.02 }} className="col-span-12 md:col-span-8 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)] cursor-pointer">
-          <ActivityCard
+        {hasTranslate && (
+          <MiniCard
             href={`/learn/${slug}/translate`}
             icon={PenLine}
-            iconBg="bg-rose-500/10"
-            iconColor="text-rose-500"
-            title="Translate"
-            subtitle={`${translateCount} exercises · Write yourself`}
+            label="Translate"
+            bg="bg-rose-500"
             stars={starsMap['translate']}
+            tilt="2.5deg"
           />
-        </Block>
-      )}
-
-      {/* ════════════════════════════════════════════════════════════════════
-          ROW 4 — MarIA (6) + Gems (6)
-          Mobile: 6 + 6  ·  Desktop: 6 + 6
-      ════════════════════════════════════════════════════════════════════ */}
-
-      <Block
-        whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-        className="col-span-6 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
-      >
-        <Link href="/maria" className="grid h-full place-content-center gap-2.5 p-5 min-h-[120px]">
-          <Bot size={30} className="text-white mx-auto" />
-          <div className="text-center">
-            <p className="font-bold text-sm text-white">MarIA</p>
-            <p className="text-[11px] text-white/70 mt-0.5">AI Tutor</p>
-          </div>
-        </Link>
-      </Block>
-
-      <Block
-        whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-        className="col-span-6 bg-amber-400 dark:bg-amber-500 border-amber-300/40 p-0 min-h-[120px]"
-      >
-        <Link href="/gems" className="grid h-full place-content-center gap-2.5 p-5 min-h-[120px]">
-          <Gem size={30} className="text-amber-950 mx-auto" />
-          <div className="text-center">
-            <p className="font-bold text-sm text-amber-950">Gems</p>
-            <p className="text-[11px] text-amber-950/50 mt-0.5">Tips &amp; notes</p>
-          </div>
-        </Link>
-      </Block>
-
-      {/* ════════════════════════════════════════════════════════════════════
-          ROW 5 — 4 Play tiles (3+3+3+3)
-          Mobile: 6+6+6+6 (2 per row)  ·  Desktop: 3+3+3+3 (all 4 in one row)
-      ════════════════════════════════════════════════════════════════════ */}
-
-      <Block
-        whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-        className="col-span-6 md:col-span-3 bg-orange-500 dark:bg-orange-600 border-orange-400/20 p-0 min-h-[100px]"
-      >
-        <Link href="/play" className="grid h-full place-content-center gap-2 p-4 min-h-[100px]">
-          <Zap size={26} className="text-white mx-auto" />
-          <p className="font-bold text-xs text-white text-center">Speed Round</p>
-        </Link>
-      </Block>
-
-      <Block
-        whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-        className="col-span-6 md:col-span-3 bg-indigo-500 dark:bg-indigo-600 border-indigo-400/20 p-0 min-h-[100px]"
-      >
-        <Link href="/play" className="grid h-full place-content-center gap-2 p-4 min-h-[100px]">
-          <Shuffle size={26} className="text-white mx-auto" />
-          <p className="font-bold text-xs text-white text-center">Scramble</p>
-        </Link>
-      </Block>
-
-      <Block
-        whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-        className="col-span-6 md:col-span-3 bg-violet-600 dark:bg-violet-700 border-violet-400/20 p-0 min-h-[100px]"
-      >
-        <Link href="/play" className="grid h-full place-content-center gap-2 p-4 min-h-[100px]">
-          <Headphones size={26} className="text-white mx-auto" />
-          <p className="font-bold text-xs text-white text-center">Listen</p>
-        </Link>
-      </Block>
-
-      <Block
-        whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-        className="col-span-6 md:col-span-3 bg-emerald-600 dark:bg-emerald-700 border-emerald-400/20 p-0 min-h-[100px]"
-      >
-        <Link href="/play" className="grid h-full place-content-center gap-2 p-4 min-h-[100px]">
-          <PenLine size={26} className="text-white mx-auto" />
-          <p className="font-bold text-xs text-white text-center">Fill Blank</p>
-        </Link>
-      </Block>
-
-      {/* ════════════════════════════════════════════════════════════════════
-          ROW 6 — Crown Challenge (full width)
-      ════════════════════════════════════════════════════════════════════ */}
-
-      <Block
-        whileHover={allThreeStars ? { y: -4, scale: 1.01 } : {}}
-        className={cn(
-          'col-span-12 p-0 min-h-[90px] relative overflow-hidden',
-          hasCrown
-            ? 'bg-gradient-to-r from-amber-400 to-yellow-500 border-amber-300/40'
-            : allThreeStars
-            ? 'bg-gradient-to-r from-amber-500 to-orange-600 border-amber-400/30'
-            : 'bg-slate-100 dark:bg-white/[0.03] border-slate-200/60 dark:border-white/[0.04]'
         )}
-      >
-        <Link
-          href={allThreeStars ? `/learn/${slug}/mastery` : '#'}
-          className="flex items-center justify-between h-full px-6 py-4 min-h-[90px]"
-          onClick={!allThreeStars ? (e) => e.preventDefault() : undefined}
-        >
-          <div className="flex items-center gap-4">
-            <div className={cn(
-              'size-12 rounded-2xl flex items-center justify-center',
-              hasCrown ? 'bg-white/30' : allThreeStars ? 'bg-white/20' : 'bg-slate-200 dark:bg-white/10'
-            )}>
-              {allThreeStars
-                ? <Crown size={24} className="text-white" />
-                : <Lock size={22} className="text-slate-400 dark:text-slate-500" />
-              }
-            </div>
-            <div>
-              <p className={cn(
-                'font-bold text-sm',
-                (hasCrown || allThreeStars) ? 'text-white' : 'text-slate-500 dark:text-slate-400'
-              )}>
-                {hasCrown ? '👑 Crown Earned!' : 'Crown Challenge'}
-              </p>
-              <p className={cn(
-                'text-[11px] mt-0.5',
-                (hasCrown || allThreeStars) ? 'text-white/70' : 'text-slate-400 dark:text-slate-500'
-              )}>
-                {hasCrown
-                  ? 'Module mastered — you can use this in real life'
-                  : allThreeStars
-                  ? 'All lessons at ⭐⭐⭐ — take the mastery quiz!'
-                  : 'Earn ⭐⭐⭐ on all lessons to unlock'}
-              </p>
-            </div>
-          </div>
-          {allThreeStars && !hasCrown && (
-            <ArrowRight size={20} className="text-white/70 shrink-0" />
-          )}
-        </Link>
-      </Block>
+
+      </div>
 
     </motion.div>
   )

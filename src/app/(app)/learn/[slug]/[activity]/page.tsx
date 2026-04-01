@@ -1327,10 +1327,10 @@ const SKILL_MAP: Record<string, Partial<Record<'speaking' | 'vocabulary' | 'list
   translate:  { grammar: 2, speaking: 1 },
 }
 
-// Stars based on how many distinct activities completed + score threshold for 3★
-function calcStars(activitiesCompleted: string[], score: number): 1 | 2 | 3 {
-  if (activitiesCompleted.length >= 3 && score >= 80) return 3
-  if (activitiesCompleted.length >= 2) return 2
+// Stars based on score: ≥80 → 3★, ≥60 → 2★, else 1★
+function calcStars(score: number): 1 | 2 | 3 {
+  if (score >= 80) return 3
+  if (score >= 60) return 2
   return 1
 }
 
@@ -1469,13 +1469,22 @@ export default function LessonPage() {
     load()
   }, [slug, activity])
 
+  // Register vocabulary as a session once the lesson id is ready
+  const vocabSavedRef = useRef(false)
+  useEffect(() => {
+    if (activity !== 'vocabulary' || !lessonId || vocabSavedRef.current) return
+    vocabSavedRef.current = true
+    saveProgress(100)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activity, lessonId])
+
   // ── DB helpers ────────────────────────────────────────────────────────────
 
   async function saveProgress(score: number): Promise<{ stars: 1 | 2 | 3; gems: number; isFirstCompletion: boolean }> {
     const supabase = createClient()
     const { data: { user } } = await supabase.auth.getUser()
 
-    const fallbackStars = calcStars([activity], score)
+    const fallbackStars = calcStars(score)
     if (!user || !lessonId || !moduleId) {
       console.warn('[saveProgress] skipped — missing context', { hasUser: !!user, lessonId, moduleId })
       return { stars: fallbackStars, gems: calcGems(score, false), isFirstCompletion: true }
@@ -1488,14 +1497,14 @@ export default function LessonPage() {
       .eq('lesson_id', lessonId)
       .maybeSingle()
 
-    const isRepeat        = (existing?.attempts ?? 0) > 0
+    const isRepeat          = (existing?.attempts ?? 0) > 0
     const isFirstCompletion = !existing?.completed_at
-    const prevActivities  = existing?.activities_completed ?? []
+    const prevActivities    = existing?.activities_completed ?? []
     const updatedActivities = prevActivities.includes(activity)
       ? prevActivities
       : [...prevActivities, activity]
 
-    const newStars  = calcStars(updatedActivities, score)
+    const newStars  = calcStars(score)
     const gemsBoostActive = typeof window !== 'undefined'
       ? (Number(localStorage.getItem('fluent_boost_gems_expires') ?? 0) > Date.now())
       : false
@@ -1521,6 +1530,22 @@ export default function LessonPage() {
       console.error('[saveProgress] upsert failed:', upsertError)
       toast.error('Could not save progress — ' + upsertError.message)
     }
+
+    // Record session — any activity completion counts
+    const activityDate = new Date().toISOString().split('T')[0]
+    const { data: todayRow } = await supabase
+      .from('user_activity')
+      .select('lessons_completed, xp_earned')
+      .eq('user_id', user.id)
+      .eq('activity_date', activityDate)
+      .maybeSingle()
+    await supabase.from('user_activity').upsert({
+      user_id:           user.id,
+      activity_date:     activityDate,
+      lessons_completed: (todayRow?.lessons_completed ?? 0) + 1,
+      xp_earned:         todayRow?.xp_earned ?? 0,
+      updated_at:        new Date().toISOString(),
+    }, { onConflict: 'user_id,activity_date' })
 
     return { stars: finalStars, gems: newGems, isFirstCompletion }
   }
@@ -1595,19 +1620,18 @@ export default function LessonPage() {
       skills:                updatedSkills,
     }).eq('user_id', user.id)
 
-    // Daily activity record for charts
-    const { data: todayActivity } = await supabase
+    // Update xp_earned in user_activity (session count already recorded in saveProgress)
+    const { data: existingActivity } = await supabase
       .from('user_activity')
       .select('xp_earned, lessons_completed')
       .eq('user_id', user.id)
       .eq('activity_date', today)
       .maybeSingle()
-
     await supabase.from('user_activity').upsert({
       user_id:           user.id,
       activity_date:     today,
-      xp_earned:         (todayActivity?.xp_earned        ?? 0) + xpEarned,
-      lessons_completed: (todayActivity?.lessons_completed ?? 0) + 1,
+      xp_earned:         (existingActivity?.xp_earned ?? 0) + xpEarned,
+      lessons_completed: existingActivity?.lessons_completed ?? 1,
       updated_at:        new Date().toISOString(),
     }, { onConflict: 'user_id,activity_date' })
 
@@ -1853,34 +1877,6 @@ export default function LessonPage() {
               </button>
             </Block>
 
-            {/* ── MONKEYTYPE ───────────────────────────────────────────────── */}
-            <Block
-              whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-              className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
-            >
-              <button
-                onClick={() => toast.info('MonkeyType — coming soon!')}
-                className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-              >
-                <Keyboard size={26} className="text-white mx-auto" />
-                <p className="font-bold text-xs text-white text-center">MonkeyType</p>
-              </button>
-            </Block>
-
-            {/* ── TYPE × 3 ─────────────────────────────────────────────────── */}
-            <Block
-              whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-              className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
-            >
-              <button
-                onClick={() => toast.info('Type × 3 — coming soon!')}
-                className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-              >
-                <PenLine size={26} className="text-white mx-auto" />
-                <p className="font-bold text-xs text-white text-center">Type × 3</p>
-              </button>
-            </Block>
-
             {/* ── NEXT: PHRASES ────────────────────────────────────────────── */}
             <Block
               whileHover={{ scale: 1.02 }}
@@ -2031,34 +2027,6 @@ export default function LessonPage() {
                     <p className="font-bold text-sm text-white">Listening</p>
                     <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
                   </div>
-                </button>
-              </Block>
-
-              {/* MonkeyType */}
-              <Block
-                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-                className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
-              >
-                <button
-                  onClick={() => toast.info('MonkeyType — coming soon!')}
-                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-                >
-                  <Keyboard size={26} className="text-white mx-auto" />
-                  <p className="font-bold text-xs text-white text-center">MonkeyType</p>
-                </button>
-              </Block>
-
-              {/* Type × 3 */}
-              <Block
-                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-                className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
-              >
-                <button
-                  onClick={() => toast.info('Type × 3 — coming soon!')}
-                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-                >
-                  <PenLine size={26} className="text-white mx-auto" />
-                  <p className="font-bold text-xs text-white text-center">Type × 3</p>
                 </button>
               </Block>
 
@@ -2292,34 +2260,6 @@ export default function LessonPage() {
                     <p className="font-bold text-sm text-white">Listening</p>
                     <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
                   </div>
-                </button>
-              </Block>
-
-              {/* MonkeyType */}
-              <Block
-                whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-                className="col-span-6 md:col-span-3 bg-indigo-600 dark:bg-indigo-700 border-indigo-500/20 p-0 min-h-[120px]"
-              >
-                <button
-                  onClick={() => toast.info('MonkeyType — coming soon!')}
-                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-                >
-                  <Keyboard size={26} className="text-white mx-auto" />
-                  <p className="font-bold text-xs text-white text-center">MonkeyType</p>
-                </button>
-              </Block>
-
-              {/* Type × 3 */}
-              <Block
-                whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-                className="col-span-6 md:col-span-3 bg-rose-500 dark:bg-rose-600 border-rose-400/20 p-0 min-h-[120px]"
-              >
-                <button
-                  onClick={() => toast.info('Type × 3 — coming soon!')}
-                  className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
-                >
-                  <PenLine size={26} className="text-white mx-auto" />
-                  <p className="font-bold text-xs text-white text-center">Type × 3</p>
                 </button>
               </Block>
 
