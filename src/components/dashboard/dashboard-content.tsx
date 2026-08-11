@@ -113,7 +113,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                       <p className="text-[10px] font-black uppercase tracking-widest text-white/55 leading-none mb-1">
                         {t('resume')}
                       </p>
-                      <p className="text-sm font-bold text-white leading-tight truncate">
+                      <p className="text-sm font-bold text-white leading-tight line-clamp-2">
                         {current ? current.title : t('browse_lessons')}
                       </p>
                     </div>
@@ -121,7 +121,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                   </motion.button>
                 </Link>
 
-                <Link href="/review" className="flex-[2] min-w-0">
+                <Link href="/play" className="flex-[2] min-w-0">
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
@@ -135,37 +135,73 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </div>
           </Block>
 
-          {/* VIDEO CLIP */}
-          <Block className="col-span-12 md:col-span-3 md:row-span-2 relative overflow-hidden flex flex-col min-h-[180px] cursor-pointer border-indigo-900/30"
-            whileHover={{ scale: 1.02, filter: 'brightness(1.14) saturate(1.12)' }}
-            whileTap={{ scale: 0.98 }}
-            style={{ background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #1e3a5f 100%)' }}
-          >
-            <div className="absolute -bottom-4 -right-4 text-[5rem] leading-none opacity-[0.1] select-none pointer-events-none">📺</div>
-            <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
-              style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
-            />
-            <div className="relative p-4 pb-0">
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-white/50">
-                <span className="size-1.5 rounded-full bg-red-400 animate-pulse" />
-                {t('video_clip')}
-              </span>
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-center gap-3 p-4">
-              <div className="size-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center backdrop-blur-sm">
-                <svg viewBox="0 0 24 24" className="size-6 fill-white ml-0.5" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 5.14v14l11-7-11-7z" />
-                </svg>
-              </div>
-              <div className="text-center">
-                <p className="text-sm font-bold text-white leading-snug">{t('daily_lesson')}</p>
-                <p className="text-[11px] text-white/50 mt-0.5">{tc('five_min')} · Spanish</p>
+          {/* WEEKLY ACTIVITY */}
+          <Block className="col-span-12 md:col-span-7 md:row-span-2 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[280px] relative overflow-hidden">
+            <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">📈</div>
+
+            <div className="flex items-center justify-between mb-4 shrink-0 relative z-10">
+              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">{t('this_week')}</p>
+              <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
+                <span className="size-1.5 rounded-full bg-primary" />
+                <span className="text-[11px] font-bold text-primary tabular-nums">{t('days_active', { count: weekDaysActive })}</span>
               </div>
             </div>
-            <div className="relative p-4 pt-0">
-              <div className="w-full flex items-center justify-center gap-1.5 py-2 rounded-xl bg-white/10 border border-white/10 text-white text-xs font-bold">
-                {tc('coming_soon')}
+
+            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0 relative z-10">
+              <div className="flex flex-col gap-0.5">
+                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
+                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('sessions')}</p>
               </div>
+              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
+                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
+                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('avg_active_day')}</p>
+              </div>
+              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
+                <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
+                  {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
+                </p>
+                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
+                  {currentRun > 0 ? t('day_run') : t('best_day')}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0 relative z-10">
+              {stats.weekActivity.map((v, i) => {
+                const isToday = i === todayIdx
+                const isBest = i === bestDayIdx && v > 0
+                const pct = v / maxActivity
+                return (
+                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
+                    <motion.span
+                      className={cn('text-[11px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5 + i * 0.06 }}
+                    >
+                      {v > 0 ? v : '0'}
+                    </motion.span>
+                    <div className="flex-1 w-full flex items-end">
+                      <motion.div
+                        style={{ height: `${Math.max(pct * 100, v > 0 ? 8 : 4)}%` }}
+                        className={cn(
+                          'w-full rounded-lg',
+                          isToday && v > 0 ? 'bg-primary shadow-sm shadow-primary/30'
+                          : isBest ? 'bg-primary/75'
+                          : v > 0 ? 'bg-primary/45'
+                          : 'bg-slate-100 dark:bg-white/[0.06]'
+                        )}
+                        initial={{ scaleY: 0, originY: '100%' }}
+                        animate={{ scaleY: 1 }}
+                        transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
+                      />
+                    </div>
+                    <span className={cn('text-[11px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
+                      {DAYS[i]}
+                    </span>
+                  </div>
+                )
+              })}
             </div>
           </Block>
 
@@ -187,10 +223,10 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           <Block
             whileHover={gradientHoverTiltR}
             className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #b45309 0%, #c2410c 100%)' }}
           >
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">⚡</div>
-            <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
+            <Link href="/play" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Zap size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">{t('quick_practice')}</p>
               <p className="text-[11px] font-semibold text-white/70">{tc('two_min')}</p>
@@ -263,7 +299,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           <Block
             whileHover={gradientHoverTiltR}
             className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer overflow-hidden relative"
-            style={{ background: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #0369a1 0%, #0284c7 100%)' }}
           >
             <Link href="/travel" className="flex flex-col items-center gap-1 w-full relative z-10">
               <span className="text-xl leading-none">✈️</span>
@@ -277,10 +313,10 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
           <Block
             whileHover={gradientHoverTiltL}
             className="col-span-6 md:col-span-2 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #047857 0%, #0f766e 100%)' }}
           >
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🏆</div>
-            <Link href="/review" className="flex flex-col items-center gap-1 w-full relative z-10">
+            <Link href="/challenge" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Trophy size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('daily_challenge')}</p>
               <p className="text-[11px] font-semibold text-white/70">{t('new_today')}</p>
@@ -301,11 +337,25 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             </Link>
           </Block>
 
+          {/* VIDEO CLIP (coming soon) */}
+          <Block
+            className="col-span-6 md:col-span-2 border-indigo-900/30 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 relative overflow-hidden"
+            style={{ background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)' }}
+          >
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">📺</div>
+            <span className="inline-flex items-center gap-1 text-[9px] font-bold uppercase tracking-widest text-white/40 relative z-10">
+              <span className="size-1 rounded-full bg-white/40" />
+              {tc('coming_soon')}
+            </span>
+            <p className="text-[12px] font-bold text-white text-center leading-tight relative z-10">{t('video_clip')}</p>
+            <p className="text-[11px] font-semibold text-white/60 relative z-10">{t('daily_lesson')}</p>
+          </Block>
+
           {/* LESSONS */}
           <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] relative" style={{ maxHeight: '420px' }}>
             <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">🗺️</div>
             <div className="flex items-center justify-between mb-3 shrink-0 relative z-10">
-              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{t('continue_learning')}</p>
+              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{t('learning_path')}</p>
               <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
                 {tc('view_all')} <ChevronRight size={12} />
               </Link>
@@ -314,76 +364,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               <div className="max-w-[220px] mx-auto pt-2 pb-4">
                 <PathTrail modules={modules} />
               </div>
-            </div>
-          </Block>
-
-          {/* WEEKLY ACTIVITY */}
-          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[280px] relative overflow-hidden">
-            <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">📈</div>
-
-            <div className="flex items-center justify-between mb-4 shrink-0 relative z-10">
-              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">{t('this_week')}</p>
-              <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
-                <span className="size-1.5 rounded-full bg-primary" />
-                <span className="text-[11px] font-bold text-primary tabular-nums">{t('days_active', { count: weekDaysActive })}</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0 relative z-10">
-              <div className="flex flex-col gap-0.5">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
-                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('sessions')}</p>
-              </div>
-              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
-                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('avg_active_day')}</p>
-              </div>
-              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
-                <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
-                  {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
-                </p>
-                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
-                  {currentRun > 0 ? t('day_run') : t('best_day')}
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0 relative z-10">
-              {stats.weekActivity.map((v, i) => {
-                const isToday = i === todayIdx
-                const isBest = i === bestDayIdx && v > 0
-                const pct = v / maxActivity
-                return (
-                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
-                    <motion.span
-                      className={cn('text-[11px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.5 + i * 0.06 }}
-                    >
-                      {v > 0 ? v : '0'}
-                    </motion.span>
-                    <div className="flex-1 w-full flex items-end">
-                      <motion.div
-                        style={{ height: `${Math.max(pct * 100, v > 0 ? 8 : 4)}%` }}
-                        className={cn(
-                          'w-full rounded-lg',
-                          isToday && v > 0 ? 'bg-primary shadow-sm shadow-primary/30'
-                          : isBest ? 'bg-primary/75'
-                          : v > 0 ? 'bg-primary/45'
-                          : 'bg-slate-100 dark:bg-white/[0.06]'
-                        )}
-                        initial={{ scaleY: 0, originY: '100%' }}
-                        animate={{ scaleY: 1 }}
-                        transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
-                      />
-                    </div>
-                    <span className={cn('text-[11px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
-                      {DAYS[i]}
-                    </span>
-                  </div>
-                )
-              })}
             </div>
           </Block>
 
