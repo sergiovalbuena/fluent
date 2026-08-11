@@ -153,7 +153,7 @@ function ModuleTooltip({ mod }: { mod: LearnModule }) {
   const isLocked = mod.state === 'locked'
 
   return (
-    <div className={cn(
+    <div aria-hidden="true" className={cn(
       'absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50',
       'pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150',
       'bg-white dark:bg-[#2a1a12] rounded-2xl',
@@ -236,7 +236,7 @@ function ModuleTooltip({ mod }: { mod: LearnModule }) {
 
 function BonusTooltip({ activity }: { activity: BonusActivity }) {
   return (
-    <div className={cn(
+    <div aria-hidden="true" className={cn(
       'absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50',
       'pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150',
       'bg-white dark:bg-[#2a1a12] rounded-2xl px-3 py-3',
@@ -460,7 +460,7 @@ const CROWN_LOOP = 4
 
 function CrownChallengeTooltip({ challenge }: { challenge: CrownChallenge }) {
   return (
-    <div className={cn(
+    <div aria-hidden="true" className={cn(
       'absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50',
       'pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150',
       'bg-white dark:bg-[#2a1a12] rounded-2xl px-3 py-3',
