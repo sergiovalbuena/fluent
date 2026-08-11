@@ -4,12 +4,12 @@ import React from 'react'
 import { motion, type MotionProps } from 'framer-motion'
 import Link from 'next/link'
 import {
-  ArrowRight, BookOpen, ChevronRight, Zap,
+  ArrowRight, BookOpen, Zap,
   Bot, BookMarked, Trophy, Music,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
-import { PathTrail, type LearnModule } from '@/components/learn/learn-content'
+import { type LearnModule } from '@/components/learn/learn-content'
 import { useTranslations } from 'next-intl'
 
 export type DashboardStats = {
@@ -351,20 +351,18 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
             <p className="text-[11px] font-semibold text-white/60 relative z-10">{t('daily_lesson')}</p>
           </Block>
 
-          {/* LESSONS */}
-          <Block className="col-span-12 md:col-span-4 md:row-span-2 md:col-start-9 p-5 flex flex-col overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] relative" style={{ maxHeight: '420px' }}>
-            <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">🗺️</div>
-            <div className="flex items-center justify-between mb-3 shrink-0 relative z-10">
-              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{t('learning_path')}</p>
-              <Link href="/learn" className="flex items-center gap-1 text-primary text-[11px] font-semibold hover:opacity-70 transition-opacity">
-                {tc('view_all')} <ChevronRight size={12} />
-              </Link>
-            </div>
-            <div className="overflow-y-auto min-h-0 flex-1 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:transparent [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-primary/20">
-              <div className="max-w-[220px] mx-auto pt-2 pb-4">
-                <PathTrail modules={modules} />
-              </div>
-            </div>
+          {/* LEARNING PATH */}
+          <Block
+            whileHover={gradientHoverTiltL}
+            className="col-span-6 md:col-span-2 border-cyan-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
+            style={{ background: 'linear-gradient(135deg, #0e7490 0%, #115e59 100%)' }}
+          >
+            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🗺️</div>
+            <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
+              <BookOpen size={20} className="text-white" />
+              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('learning_path')}</p>
+              <p className="text-[11px] font-semibold text-white/70">{tc('view_all')}</p>
+            </Link>
           </Block>
 
         </motion.div>
