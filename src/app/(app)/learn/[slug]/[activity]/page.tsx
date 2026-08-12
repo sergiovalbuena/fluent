@@ -204,15 +204,16 @@ function buildHintSet(target: string, round: ChallengeRound): Set<number> {
   return s
 }
 
-function WordChallengeModal({ word, translation, onClose, onMastered }: {
+function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spanish', onClose, onMastered }: {
   word: string
   translation: string
+  promptLabel?: string
   onClose: () => void
   onMastered?: () => void
 }) {
   const [round, setRound]         = useState<ChallengeRound>(1)
   const [stars, setStars]         = useState(0)
-  const [typed, setTyped]         = useState('')
+  const [typed, setTyped]         = useState(() => autoAdvance('', word))
   const [shake, setShake]         = useState(false)
   const [roundDone, setRoundDone] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -234,23 +235,55 @@ function WordChallengeModal({ word, translation, onClose, onMastered }: {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [onClose, roundDone, round])
 
+  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (roundDone || e.key !== 'Backspace') return
+    e.preventDefault() // deletion is handled entirely below, not via native input diffing
+    setTyped(t => {
+      if (t.length === 0) return t
+      let newLen = t.length - 1
+      while (newLen > 0 && SKIPPABLE.test(target[newLen - 1])) newLen--
+      if (inputRef.current) inputRef.current.value = t.slice(0, newLen)
+      return t.slice(0, newLen)
+    })
+  }, [roundDone, target])
+
   const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     if (roundDone) return
     const val = e.target.value
-    if (val.length > typed.length) {
-      const targetChar = target[typed.length]
-      const typedChar  = val[val.length - 1]
-      if (norm(typedChar) !== norm(targetChar)) {
-        setShake(true)
-        setTimeout(() => setShake(false), 380)
-        return
+
+    if (val.length <= typed.length) {
+      // Deletions are handled in handleKeyDown; resync defensively for any
+      // other edit path (select-all + delete, cut, etc.)
+      e.target.value = typed
+      return
+    }
+
+    // Validate every newly-inserted character in order — handles autocomplete,
+    // IME composition, or paste inserting more than one character at once
+    let next = typed
+    const added = val.slice(typed.length)
+    for (const ch of added) {
+      if (next.length >= target.length) break
+      if (norm(ch) === norm(target[next.length])) {
+        next = autoAdvance(next + ch, target)
+        continue
       }
-      const advanced = autoAdvance(typed + typedChar, target)
-      setTyped(advanced)
-      if (advanced.length === target.length) {
-        setRoundDone(true)
-        setStars(s => s + 1)
+      // Redundant punctuation the user typed that auto-advance already
+      // inserted for them (e.g. a comma right before the cursor) — ignore it
+      // instead of treating it as a mistake
+      if (SKIPPABLE.test(ch) && next.length > 0 && norm(ch) === norm(target[next.length - 1])) {
+        continue
       }
+      setShake(true)
+      setTimeout(() => setShake(false), 380)
+      break
+    }
+
+    setTyped(next)
+    e.target.value = next // keep the native input in sync so the next keystroke diffs correctly
+    if (next.length === target.length) {
+      setRoundDone(true)
+      setStars(s => s + 1)
     }
   }, [roundDone, target, typed])
 
@@ -294,7 +327,7 @@ function WordChallengeModal({ word, translation, onClose, onMastered }: {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-[8vh] overflow-y-auto"
         style={{ background: 'rgba(5,14,0,0.92)', backdropFilter: 'blur(6px)' }}
         onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
       >
@@ -362,10 +395,16 @@ function WordChallengeModal({ word, translation, onClose, onMastered }: {
             </p>
           </div>
 
-          {/* Translation */}
+          {/* Prompt — context only, not what you type */}
           <div className="text-center">
-            <p className="text-white/35 text-xs mb-1">Type this in Spanish</p>
+            <p className="text-white/35 text-xs mb-1">{promptLabel}</p>
             <p className="text-white text-xl font-bold">{translation}</p>
+          </div>
+
+          {/* Type-here indicator — makes it unambiguous which text below is the target */}
+          <div className="flex items-center gap-1.5 text-lime-400/70 -mb-1">
+            <Zap size={10} />
+            <p className="text-[10px] font-bold uppercase tracking-widest">Type this</p>
           </div>
 
           {/* Word display */}
@@ -395,6 +434,7 @@ function WordChallengeModal({ word, translation, onClose, onMastered }: {
             ref={inputRef}
             value={typed}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             className="opacity-0 absolute pointer-events-none w-0 h-0"
             autoComplete="off"
             autoCorrect="off"
@@ -511,19 +551,51 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
     return () => window.removeEventListener('keydown', h)
   }, [onClose, phraseDone, advancePhrase])
 
+  const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (phraseDone || e.key !== 'Backspace') return
+    e.preventDefault() // deletion is handled entirely below, not via native input diffing
+    setTyped(t => {
+      if (t.length === 0) return t
+      let newLen = t.length - 1
+      while (newLen > 0 && SKIPPABLE.test(target[newLen - 1])) newLen--
+      if (inputRef.current) inputRef.current.value = t.slice(0, newLen)
+      return t.slice(0, newLen)
+    })
+  }, [phraseDone, target])
+
   const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     if (phraseDone) return
     const val = e.target.value
-    if (val.length > typed.length) {
-      const targetChar = target[typed.length]
-      const typedChar  = val[val.length - 1]
-      if (norm(typedChar) !== norm(targetChar)) {
-        setShake(true); setTimeout(() => setShake(false), 380); return
-      }
-      const advanced = autoAdvance(typed + typedChar, target)
-      setTyped(advanced)
-      if (advanced.length === target.length) setPhraseDone(true)
+
+    if (val.length <= typed.length) {
+      // Deletions are handled in handleKeyDown; resync defensively for any
+      // other edit path (select-all + delete, cut, etc.)
+      e.target.value = typed
+      return
     }
+
+    // Validate every newly-inserted character in order — handles autocomplete,
+    // IME composition, or paste inserting more than one character at once
+    let next = typed
+    const added = val.slice(typed.length)
+    for (const ch of added) {
+      if (next.length >= target.length) break
+      if (norm(ch) === norm(target[next.length])) {
+        next = autoAdvance(next + ch, target)
+        continue
+      }
+      // Redundant punctuation the user typed that auto-advance already
+      // inserted for them (e.g. a comma right before the cursor) — ignore it
+      // instead of treating it as a mistake
+      if (SKIPPABLE.test(ch) && next.length > 0 && norm(ch) === norm(target[next.length - 1])) {
+        continue
+      }
+      setShake(true); setTimeout(() => setShake(false), 380); break
+    }
+
+    setTyped(next)
+    e.target.value = next // keep the native input in sync so the next keystroke diffs correctly
+    if (next.length === target.length) setPhraseDone(true)
   }, [phraseDone, target, typed])
 
   // Group characters into word segments so words never break mid-line
@@ -570,7 +642,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
       <motion.div
         key="story-challenge-overlay"
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-[8vh] overflow-y-auto"
         style={{ background: 'rgba(5,14,0,0.92)', backdropFilter: 'blur(6px)' }}
         onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
       >
@@ -698,7 +770,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
               </div>
 
               <input
-                ref={inputRef} value={typed} onChange={handleChange}
+                ref={inputRef} value={typed} onChange={handleChange} onKeyDown={handleKeyDown}
                 className="opacity-0 absolute pointer-events-none w-0 h-0"
                 autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false}
               />
@@ -1134,8 +1206,9 @@ function QAQuestionList({
 
       {challengeQ && (
         <WordChallengeModal
-          word={challengeQ.options[challengeQ.correct]}
-          translation={challengeQ.question}
+          word={challengeQ.question}
+          translation={challengeQ.options[challengeQ.correct]}
+          promptLabel="Answer"
           onClose={() => setChallengeQ(null)}
           onMastered={() => markMastered(challengeQ.question)}
         />

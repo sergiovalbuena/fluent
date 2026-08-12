@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Crown, Lock, Star, CheckCircle2, XCircle, ChevronRight, Trophy } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -32,10 +33,10 @@ function buildOptions(items: QuizItem[], correct: string): string[] {
   return shuffle([correct, ...wrong])
 }
 
-type Phase = 'locked' | 'intro' | 'quiz' | 'result'
+type Phase = 'locked' | 'crowned' | 'intro' | 'quiz' | 'result'
 
 export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeStars, hasCrown, userId, lessonIds }: Props) {
-  const [phase, setPhase] = useState<Phase>(hasCrown ? 'result' : allThreeStars ? 'intro' : 'locked')
+  const [phase, setPhase] = useState<Phase>(hasCrown ? 'crowned' : allThreeStars ? 'intro' : 'locked')
   const [current, setCurrent] = useState(0)
   const [selected, setSelected] = useState<string | null>(null)
   const [score, setScore] = useState(0)
@@ -111,6 +112,38 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
           <span>All lessons must have 3 stars</span>
         </div>
       </div>
+    )
+  }
+
+  if (phase === 'crowned') {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="flex flex-col items-center justify-center min-h-[60vh] text-center gap-6"
+      >
+        <div className="w-24 h-24 rounded-3xl bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-5xl">
+          👑
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold text-foreground mb-2">Crown Earned</h2>
+          <p className="text-muted-foreground max-w-sm">
+            You&apos;ve already mastered <strong>{moduleTitle}</strong>. Replay the challenge anytime for practice — it won&apos;t affect your Crown.
+          </p>
+        </div>
+        <button
+          onClick={() => { setCurrent(0); setSelected(null); setScore(0); setPhase('quiz') }}
+          className="flex items-center gap-2 bg-primary text-white font-bold px-8 py-3 rounded-2xl hover:bg-primary/90 transition-colors"
+        >
+          Replay Challenge <ChevronRight size={18} />
+        </button>
+        <Link
+          href="/learn"
+          className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Back to Modules
+        </Link>
+      </motion.div>
     )
   }
 

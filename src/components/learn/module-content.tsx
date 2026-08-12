@@ -208,8 +208,9 @@ function MiniCard({ href, icon: Icon, label, bg, stars, tilt = '2.5deg' }: MiniC
   )
 }
 
-// ── Crown Challenge band (inside Hero, full width) ────────────────────────────
-// Three states: locked → unlocked → crowned
+// ── Crown Challenge card (standalone, full width) ──────────────────────────────
+// Three states: locked → unlocked → crowned — all three are clickable so the
+// challenge stays a live, replayable destination even after it's been earned.
 // Signature: per-activity star tracker in locked state (shows exactly what's missing)
 
 interface CrownBandProps {
@@ -237,28 +238,42 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
   const totalCore = activeCore.length
   const progressPct = totalCore > 0 ? Math.round((threeStarCount / totalCore) * 100) : 0
 
-  // ── CROWNED ──────────────────────────────────────────────────────────────
+  // ── CROWNED — still a live link so the challenge can be replayed anytime ──
   if (hasCrown) {
     return (
-      <div className="relative overflow-hidden rounded-b-3xl">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500" />
-        <div className="absolute inset-0 opacity-[0.06]"
-          style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.75\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
-        />
-        {/* Large crown watermark */}
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.18]">
-          <Crown size={72} className="text-white" />
-        </div>
-        <div className="relative flex items-center gap-4 px-6 md:px-8 py-5">
-          <div className="size-12 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-            <Crown size={22} className="text-white" />
+      <Link href={`/learn/${slug}/mastery`} className="block group">
+        <motion.div
+          whileHover={{ scale: 1.005 }}
+          className="relative overflow-hidden rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500" />
+          <div className="absolute inset-0 opacity-[0.06]"
+            style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.75\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
+          />
+          {/* Large crown watermark */}
+          <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.18]">
+            <Crown size={72} className="text-white" />
           </div>
-          <div>
-            <p className="font-bold text-base text-white leading-tight">Module Mastered</p>
-            <p className="text-[12px] text-white/70 mt-1">You can use this in real life · Crown earned</p>
+          <div className="relative flex items-center justify-between gap-4 px-6 md:px-8 py-5 md:py-6">
+            <div className="flex items-center gap-4">
+              <div className="size-12 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
+                <Crown size={22} className="text-white" />
+              </div>
+              <div>
+                <p className="font-bold text-base text-white leading-tight">Module Mastered</p>
+                <p className="text-[12px] text-white/70 mt-1">You can use this in real life · Crown earned</p>
+              </div>
+            </div>
+            <motion.div
+              whileHover={{ scale: 1.05, x: 2 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-2 bg-white/20 group-hover:bg-white text-white group-hover:text-amber-600 font-black text-[12px] px-4 py-2 rounded-xl shrink-0 transition-colors"
+            >
+              Replay <ChevronRight size={13} />
+            </motion.div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </Link>
     )
   }
 
@@ -268,7 +283,7 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
       <Link href={`/learn/${slug}/mastery`} className="block group">
         <motion.div
           whileHover={{ scale: 1.005 }}
-          className="relative overflow-hidden rounded-b-3xl"
+          className="relative overflow-hidden rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
         >
           {/* Deep gold gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600" />
@@ -314,7 +329,7 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
   // Progress bar: the primary motivator — shows exactly how close they are
   // Activity pills: shows which specific activities still need work
   return (
-    <div className="relative overflow-hidden rounded-b-3xl">
+    <div className="relative overflow-hidden rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
       {/* Dark warm background — atmospheric, mysterious */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1c0a05] via-[#230e07] to-[#1a0803]" />
       {/* Subtle warm vignette from center */}
@@ -361,7 +376,7 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
           </div>
 
           {/* Activity pills — stars per activity */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 overflow-x-auto pb-0.5 -mx-1 px-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {activeCore.map(a => {
               const s = starsMap[a.key] ?? 0
               const done = s >= 3
@@ -369,7 +384,7 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
                 <div
                   key={a.key}
                   className={cn(
-                    'flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors',
+                    'flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors shrink-0',
                     done
                       ? 'bg-amber-500/[0.18] border border-amber-500/25'
                       : 'bg-white/[0.06] border border-white/[0.06]'
@@ -543,8 +558,12 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
         {/* Divider */}
         <div className="mx-6 md:mx-8 h-px bg-black/[0.04] dark:bg-white/[0.05]" />
 
-        {/* Bottom: 4 core activity cards */}
-        <div className="p-4 md:p-6 pb-4">
+        {/* Bottom: 4 core activity cards — these are the essential, non-optional work */}
+        <div className="p-4 md:p-6 pb-5">
+          <div className="flex items-center gap-2 mb-3 px-1">
+            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Essential</span>
+            <span className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">— master all 4 to unlock the Crown Challenge</span>
+          </div>
           <div className={cn(
             'grid gap-3',
             availableCoreCards.length === 4 ? 'grid-cols-2 md:grid-cols-4'
@@ -558,24 +577,31 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
           </div>
         </div>
 
-        {/* Crown Challenge — integrated at the bottom of the hero */}
-        <CrownBand
-          slug={slug}
-          allThreeStars={allThreeStars}
-          hasCrown={hasCrown}
-          starsMap={starsMap}
-          hasVocab={hasVocab}
-          hasPhrases={hasPhrases}
-          hasQA={hasQA}
-          hasStory={hasStory}
-        />
-
       </Block>
+
+      {/* ══════════════════════════════════════════════════════════════════════
+          CROWN CHALLENGE — standalone card, own visual weight
+      ══════════════════════════════════════════════════════════════════════ */}
+      <CrownBand
+        slug={slug}
+        allThreeStars={allThreeStars}
+        hasCrown={hasCrown}
+        starsMap={starsMap}
+        hasVocab={hasVocab}
+        hasPhrases={hasPhrases}
+        hasQA={hasQA}
+        hasStory={hasStory}
+      />
 
       {/* ══════════════════════════════════════════════════════════════════════
           MINI CARDS ROW — all in one horizontal line
       ══════════════════════════════════════════════════════════════════════ */}
-      <div className="flex gap-3 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+      <div>
+        <div className="flex items-center gap-2 mb-2 px-1">
+          <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500">Bonus Practice</span>
+          <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600">— optional extra reps</span>
+        </div>
+        <div className="flex gap-3 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
         <MiniCard
           href={`/learn/${slug}/flashcards`}
@@ -640,6 +666,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
           />
         )}
 
+        </div>
       </div>
 
     </motion.div>
