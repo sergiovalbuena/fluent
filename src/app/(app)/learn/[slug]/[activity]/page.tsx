@@ -339,6 +339,7 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
           transition={{ type: 'spring', stiffness: 420, damping: 32 }}
           className="relative w-full max-w-md rounded-3xl p-8 flex flex-col items-center gap-5"
           style={{ background: '#0a1a05', border: '1px solid rgba(132,204,22,0.15)' }}
+          onClick={() => { if (!roundDone) inputRef.current?.focus() }}
         >
           {/* Close */}
           <button
@@ -931,10 +932,10 @@ function VocabRow({
         <button
           type="button"
           onClick={(e) => { e.stopPropagation(); onChallenge(entry) }}
-          className="shrink-0 hidden group-hover:flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+          className="shrink-0 flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
         >
           <Zap size={10} />
-          Challenge
+          <span className="hidden md:inline">Challenge</span>
         </button>
       )}
       <button
@@ -1163,10 +1164,10 @@ function QAQuestionList({
               <button
                 type="button"
                 onClick={() => setChallengeQ(q)}
-                className="shrink-0 hidden group-hover:flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+                className="shrink-0 flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
               >
                 <Zap size={10} />
-                Challenge
+                <span className="hidden md:inline">Challenge</span>
               </button>
             )}
             <button
@@ -1279,10 +1280,10 @@ function PhraseList({
               <button
                 type="button"
                 onClick={() => setChallengePhrase(p)}
-                className="shrink-0 hidden group-hover:flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+                className="shrink-0 flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
               >
                 <Zap size={10} />
-                Challenge
+                <span className="hidden md:inline">Challenge</span>
               </button>
             )}
             <button
