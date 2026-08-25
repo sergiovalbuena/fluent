@@ -8,7 +8,8 @@ import { motion, type MotionProps, AnimatePresence, usePresence, useAnimate } fr
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
-  Layers, Headphones, Keyboard, Plus, Bookmark, Zap, RotateCw, Star, Languages,
+  Layers, Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
+  type LucideIcon,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
 import { useVocabMastery } from '@/hooks/use-vocab-mastery'
@@ -161,7 +162,7 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
     transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
     whileTap={{ scale: 0.97 }}
     className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
       className
     )}
     {...rest}
@@ -300,28 +301,41 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
     const isCursor = i === typed.length
     const isHint   = hintSet.has(i)
 
-    if (ch === ' ') return { display: '\u00A0', cls: 'w-4' }
+    if (ch === ' ') return { display: '\u00A0', cls: 'w-4', isSpace: true }
 
     if (isTyped) {
       const ok = norm(typed[i]) === norm(ch)
-      return { display: ch, cls: ok ? 'text-lime-400' : 'text-red-400' }
+      return { display: ch, cls: ok ? 'text-lime-400' : 'text-red-400', isSpace: false }
     }
 
     if (round === 1) {
-      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/25' }
+      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/25', isSpace: false }
     }
 
     if (isHint) {
-      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/30' }
+      return { display: ch, cls: isCursor ? 'text-white/70' : 'text-white/30', isSpace: false }
     }
 
-    return { display: '·', cls: isCursor ? 'text-white/60' : 'text-white/20' }
+    return { display: '·', cls: isCursor ? 'text-white/60' : 'text-white/20', isSpace: false }
   })
+
+  // Group chars into word segments so a wrap never lands inside a word
+  const wordGroups: { display: string; cls: string }[][] = []
+  {
+    let currentWord: { display: string; cls: string }[] = []
+    for (const item of charItems) {
+      if (item.isSpace) {
+        if (currentWord.length) { wordGroups.push(currentWord); currentWord = [] }
+      } else {
+        currentWord.push(item)
+      }
+    }
+    if (currentWord.length) wordGroups.push(currentWord)
+  }
 
   const progress = typed.length / target.length
 
   return (
-    <AnimatePresence>
       <motion.div
         key="challenge-overlay"
         initial={{ opacity: 0 }}
@@ -343,7 +357,7 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
         >
           {/* Close */}
           <button
-            onClick={onClose}
+            onClick={(e) => { e.stopPropagation(); onClose() }}
             className="absolute top-4 right-4 p-1.5 rounded-full text-white/25 hover:text-white/60 transition-colors"
           >
             <X size={15} />
@@ -408,15 +422,19 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
             <p className="text-[10px] font-bold uppercase tracking-widest">Type this</p>
           </div>
 
-          {/* Word display */}
+          {/* Word display — grouped by word so a line wrap never breaks a word */}
           <motion.div
             animate={shake ? { x: [0, -9, 9, -6, 6, -3, 3, 0] } : {}}
             transition={{ duration: 0.38 }}
-            className="flex gap-0.5 flex-wrap justify-center min-h-[2.5rem] items-center"
+            className="flex gap-x-3 gap-y-1 flex-wrap justify-center min-h-[2.5rem] items-center"
           >
-            {charItems.map(({ display, cls }, i) => (
-              <span key={i} className={cn('text-3xl font-bold tracking-wide transition-colors duration-75', cls)}>
-                {display}
+            {wordGroups.map((word, wi) => (
+              <span key={wi} className="inline-flex gap-0.5">
+                {word.map(({ display, cls }, ci) => (
+                  <span key={ci} className={cn('text-3xl font-bold tracking-wide transition-colors duration-75', cls)}>
+                    {display}
+                  </span>
+                ))}
               </span>
             ))}
           </motion.div>
@@ -478,7 +496,6 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
           </AnimatePresence>
         </motion.div>
       </motion.div>
-    </AnimatePresence>
   )
 }
 
@@ -820,7 +837,6 @@ type VocabEntry = {
   id: string | number
   word: string
   translation: string
-  learned: boolean
 }
 
 const LANG_LOCALE: Record<string, string> = {
@@ -839,7 +855,6 @@ function speakWord(word: string, langCode: string) {
 
 function VocabRow({
   entry,
-  onToggleLearned,
   bookmarked,
   onToggleBookmark,
   onChallenge,
@@ -847,7 +862,6 @@ function VocabRow({
   langCode,
 }: {
   entry: VocabEntry
-  onToggleLearned: (id: VocabEntry['id']) => void
   bookmarked: boolean
   onToggleBookmark: (entry: VocabEntry) => void
   onChallenge: (entry: VocabEntry) => void
@@ -887,18 +901,7 @@ function VocabRow({
       transition={{ duration: 0.18 }}
       className="flex items-center gap-3 px-5 py-3 border-b border-black/[0.03] dark:border-white/[0.03] hover:bg-primary/[0.03] dark:hover:bg-primary/[0.04] transition-colors group"
     >
-      <input
-        type="checkbox"
-        checked={entry.learned}
-        onChange={(e) => { e.stopPropagation(); onToggleLearned(entry.id) }}
-        className="size-4 shrink-0 rounded accent-primary cursor-pointer"
-      />
-      <span className={cn(
-        'flex-1 font-semibold text-sm transition-colors',
-        entry.learned
-          ? 'line-through text-slate-300 dark:text-slate-600'
-          : 'text-slate-900 dark:text-white'
-      )}>
+      <span className="flex-1 font-semibold text-sm text-slate-900 dark:text-white transition-colors">
         {(() => {
           const parts = splitArticle(entry.word)
           if (!parts) return entry.word
@@ -910,34 +913,29 @@ function VocabRow({
           )
         })()}
       </span>
-      <span className={cn(
-        'text-sm transition-all shrink-0',
-        entry.learned
-          ? 'text-slate-300 dark:text-slate-600'
-          : 'text-slate-400 dark:text-slate-500 group-hover:opacity-0 group-hover:transition-none'
-      )}>
+      <span className="text-sm transition-all shrink-0 text-slate-400 dark:text-slate-500 group-hover:opacity-0 group-hover:transition-none">
         {entry.translation}
       </span>
-      {mastered ? (
-        <motion.span
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-          className="shrink-0"
-          title="Mastered"
-        >
-          <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-        </motion.span>
-      ) : (
+      <div className="shrink-0 flex items-center gap-1">
+        {mastered && (
+          <motion.span
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+            title="Mastered"
+          >
+            <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+          </motion.span>
+        )}
         <button
           type="button"
           onClick={(e) => { e.stopPropagation(); onChallenge(entry) }}
-          className="shrink-0 flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+          className="flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
         >
           <Zap size={10} />
           <span className="hidden md:inline">Challenge</span>
         </button>
-      )}
+      </div>
       <button
         type="button"
         onClick={handleSpeak}
@@ -985,10 +983,7 @@ function VocabWordList({
   languageCode: string
   onMasteredCountChange?: (count: number) => void
 }) {
-  const [entries, setEntries] = useState<VocabEntry[]>(initialWords)
-  const [showForm, setShowForm] = useState(false)
-  const [newWord, setNewWord] = useState('')
-  const [newTranslation, setNewTranslation] = useState('')
+  const [entries] = useState<VocabEntry[]>(initialWords)
   const [challengeEntry, setChallengeEntry] = useState<VocabEntry | null>(null)
 
   const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode)
@@ -998,25 +993,9 @@ function VocabWordList({
     onMasteredCountChange?.(masteredCount)
   }, [masteredCount, onMasteredCountChange])
 
-  const toggleLearned = (id: VocabEntry['id']) =>
-    setEntries(pv => pv.map(e => e.id === id ? { ...e, learned: !e.learned } : e))
-
   const handleMastered = useCallback((word: string) => {
     markMastered(word)
   }, [markMastered])
-
-  const handleAdd = () => {
-    if (!newWord.trim() || !newTranslation.trim()) return
-    setEntries(pv => [
-      ...pv,
-      { id: Date.now(), word: newWord.trim(), translation: newTranslation.trim(), learned: false },
-    ])
-    setNewWord('')
-    setNewTranslation('')
-    setShowForm(false)
-  }
-
-  const learnedCount = entries.filter(e => e.learned).length
 
   return (
     <div className="flex flex-col h-full min-h-0">
@@ -1025,7 +1004,7 @@ function VocabWordList({
         <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Word List</p>
         <div className="flex items-center gap-3">
           <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
-            {learnedCount} / {entries.length} learned
+            {masteredCount} / {entries.length} mastered
           </span>
         </div>
       </div>
@@ -1037,7 +1016,6 @@ function VocabWordList({
             <VocabRow
               key={entry.id}
               entry={entry}
-              onToggleLearned={toggleLearned}
               bookmarked={isSaved('word', entry.word)}
               onToggleBookmark={(e) => onToggleBookmark({ type: 'word', original: e.word, translation: e.translation, languageCode: '' })}
               onChallenge={setChallengeEntry}
@@ -1048,59 +1026,18 @@ function VocabWordList({
         </AnimatePresence>
       </div>
 
-      {/* Add form + button */}
-      <div className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
-        <AnimatePresence>
-          {showForm && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="overflow-hidden"
-            >
-              <div className="p-4 flex flex-col gap-2">
-                <input
-                  value={newWord}
-                  onChange={e => setNewWord(e.target.value)}
-                  onKeyDown={e => e.key === 'Enter' && handleAdd()}
-                  placeholder="Word (e.g. La casa)"
-                  className="w-full rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-slate-50 dark:bg-white/[0.04] px-3 py-2 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-primary/40"
-                />
-                <input
-                  value={newTranslation}
-                  onChange={e => setNewTranslation(e.target.value)}
-                  onKeyDown={e => e.key === 'Enter' && handleAdd()}
-                  placeholder="Translation (e.g. The house)"
-                  className="w-full rounded-xl border border-black/[0.06] dark:border-white/[0.08] bg-slate-50 dark:bg-white/[0.04] px-3 py-2 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-primary/40"
-                />
-                <button
-                  onClick={handleAdd}
-                  className="w-full rounded-xl bg-primary text-white text-sm font-bold py-2 hover:opacity-90 active:scale-95 transition-all"
-                >
-                  Add Word
-                </button>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-        <button
-          onClick={() => setShowForm(f => !f)}
-          className="w-full flex items-center justify-center gap-1.5 py-3 text-xs font-bold text-slate-400 hover:text-primary transition-colors"
-        >
-          <Plus size={13} className={cn('transition-transform duration-200', showForm ? 'rotate-45' : 'rotate-0')} />
-          {showForm ? 'Cancel' : 'Add word'}
-        </button>
-      </div>
-
       {/* Challenge modal */}
-      {challengeEntry && (
-        <WordChallengeModal
-          word={challengeEntry.word}
-          translation={challengeEntry.translation}
-          onClose={() => setChallengeEntry(null)}
-          onMastered={() => handleMastered(challengeEntry.word)}
-        />
-      )}
+      <AnimatePresence>
+        {challengeEntry && (
+          <WordChallengeModal
+            key="word-challenge"
+            word={challengeEntry.word}
+            translation={challengeEntry.translation}
+            onClose={() => setChallengeEntry(null)}
+            onMastered={() => handleMastered(challengeEntry.word)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   )
 }
@@ -1150,26 +1087,26 @@ function QAQuestionList({
                 {q.options[q.correct]}
               </p>
             </div>
-            {isMastered(q.question) ? (
-              <motion.span
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                className="shrink-0"
-                title="Mastered"
-              >
-                <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-              </motion.span>
-            ) : (
+            <div className="shrink-0 flex items-center gap-1">
+              {isMastered(q.question) && (
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+                  title="Mastered"
+                >
+                  <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+                </motion.span>
+              )}
               <button
                 type="button"
                 onClick={() => setChallengeQ(q)}
-                className="shrink-0 flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+                className="flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
               >
                 <Zap size={10} />
                 <span className="hidden md:inline">Challenge</span>
               </button>
-            )}
+            </div>
             <button
               type="button"
               onClick={(e) => { e.stopPropagation(); speakWord(q.question, languageCode) }}
@@ -1205,15 +1142,18 @@ function QAQuestionList({
         </button>
       </div>
 
-      {challengeQ && (
-        <WordChallengeModal
-          word={challengeQ.question}
-          translation={challengeQ.options[challengeQ.correct]}
-          promptLabel="Answer"
-          onClose={() => setChallengeQ(null)}
-          onMastered={() => markMastered(challengeQ.question)}
-        />
-      )}
+      <AnimatePresence>
+        {challengeQ && (
+          <WordChallengeModal
+            key="word-challenge"
+            word={challengeQ.question}
+            translation={challengeQ.options[challengeQ.correct]}
+            promptLabel="Answer"
+            onClose={() => setChallengeQ(null)}
+            onMastered={() => markMastered(challengeQ.question)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   )
 }
@@ -1266,26 +1206,26 @@ function PhraseList({
                 {p.translation}
               </p>
             </div>
-            {isMastered(p.phrase) ? (
-              <motion.span
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                className="shrink-0"
-                title="Mastered"
-              >
-                <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-              </motion.span>
-            ) : (
+            <div className="shrink-0 flex items-center gap-1">
+              {isMastered(p.phrase) && (
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+                  title="Mastered"
+                >
+                  <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
+                </motion.span>
+              )}
               <button
                 type="button"
                 onClick={() => setChallengePhrase(p)}
-                className="shrink-0 flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
+                className="flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-lime-600 dark:text-lime-400 bg-lime-500/10 hover:bg-lime-500/20 active:scale-95 transition-all"
               >
                 <Zap size={10} />
                 <span className="hidden md:inline">Challenge</span>
               </button>
-            )}
+            </div>
             <button
               type="button"
               onClick={(e) => { e.stopPropagation(); speakWord(p.phrase, languageCode) }}
@@ -1323,14 +1263,17 @@ function PhraseList({
         </button>
       </div>
 
-      {challengePhrase && (
-        <WordChallengeModal
-          word={challengePhrase.phrase}
-          translation={challengePhrase.translation}
-          onClose={() => setChallengePhrase(null)}
-          onMastered={() => markMastered(challengePhrase.phrase)}
-        />
-      )}
+      <AnimatePresence>
+        {challengePhrase && (
+          <WordChallengeModal
+            key="word-challenge"
+            word={challengePhrase.phrase}
+            translation={challengePhrase.translation}
+            onClose={() => setChallengePhrase(null)}
+            onMastered={() => markMastered(challengePhrase.phrase)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   )
 }
@@ -1355,6 +1298,124 @@ function EmptyState({ message }: { message: string }) {
     <div className="flex-1 flex items-center justify-center py-20">
       <p className="text-muted-foreground text-center text-sm">{message}</p>
     </div>
+  )
+}
+
+// ─── Activity Hero — full-width header, styled like the module hero ──────────
+
+interface ActivityHeroTab {
+  href: string
+  icon: LucideIcon
+  label: string
+  iconColorClass: string
+  iconBgClass: string
+  barClass: string
+  active?: boolean
+}
+
+function ActivityHero({
+  icon: Icon, iconColorClass, badgeLabel, badgeColorClass, title,
+  count, unit, masteredCount, activities,
+}: {
+  icon: LucideIcon
+  iconColorClass: string
+  badgeLabel: string
+  badgeColorClass: string
+  title: string
+  count?: number
+  unit?: string
+  masteredCount?: number
+  activities: ActivityHeroTab[]
+}) {
+  const masteryPct = count && count > 0 && masteredCount != null
+    ? Math.round((masteredCount / count) * 100)
+    : 0
+
+  return (
+    <Block className="col-span-12 relative overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] p-0">
+      <div className="relative p-6 md:p-8 pb-5 md:pb-6">
+        {/* Icon watermark */}
+        <div className="absolute right-0 top-0 bottom-0 w-40 md:w-56 flex items-center justify-end overflow-hidden pointer-events-none select-none">
+          <Icon
+            size={160}
+            strokeWidth={1.5}
+            className={cn('opacity-[0.06] dark:opacity-[0.05] translate-x-6 md:translate-x-10', iconColorClass)}
+          />
+        </div>
+
+        <div className="relative flex flex-col gap-5">
+          {/* Row 1: badge + title — mirrors the module hero's title row */}
+          <div>
+            <span className={cn('inline-flex items-center text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3', badgeColorClass)}>
+              {badgeLabel}
+            </span>
+            <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white">
+              {title}
+            </h1>
+          </div>
+
+          {/* Row 2: progress — mirrors the module hero's Progress row */}
+          {count != null && (
+            <div className="flex items-center gap-4 md:justify-end">
+              <div className="min-w-[140px]">
+                <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
+                  <span>{unit}</span>
+                  <span>{masteredCount != null ? `${masteredCount}/${count}` : count}</span>
+                </div>
+                {masteredCount != null && (
+                  <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
+                    <motion.div
+                      className="h-full bg-primary rounded-full"
+                      initial={{ width: 0 }}
+                      animate={{ width: `${masteryPct}%` }}
+                      transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="mx-6 md:mx-8 h-px bg-black/[0.04] dark:bg-white/[0.05]" />
+
+      {/* Bottom: all 4 activities — same card language as the module's Essential row.
+          The active one gets a diagonal gradient fill so it reads as "you are here". */}
+      <div className="p-4 md:p-6 pb-5">
+        <div className="grid grid-cols-4 gap-2 md:gap-3">
+          {activities.map(a => a.active ? (
+            <div
+              key={a.href}
+              className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#202638] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none"
+            >
+              <div className={cn('h-[3px] w-full shrink-0', a.barClass)} />
+              <div className="flex flex-col items-center justify-center gap-2 p-3 md:p-4 flex-1">
+                <div className={cn('size-10 rounded-xl flex items-center justify-center shrink-0', a.barClass)}>
+                  <a.icon size={18} className="text-white" />
+                </div>
+                <p className={cn('font-bold text-[13px] text-center', a.iconColorClass)}>{a.label}</p>
+              </div>
+            </div>
+          ) : (
+            <Link key={a.href} href={a.href} className="block group h-full">
+              <motion.div
+                whileHover={{ y: -4, scale: 1.015 }}
+                whileTap={{ scale: 0.97 }}
+                className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#202638] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none cursor-pointer"
+              >
+                <div className="flex flex-col items-center justify-center gap-2 p-3 md:p-4 flex-1">
+                  <div className={cn('size-10 rounded-xl flex items-center justify-center shrink-0', a.iconBgClass)}>
+                    <a.icon size={18} className={a.iconColorClass} />
+                  </div>
+                  <p className="font-bold text-[13px] text-center text-slate-400 dark:text-slate-500">{a.label}</p>
+                </div>
+              </motion.div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </Block>
   )
 }
 
@@ -1803,7 +1864,7 @@ export default function LessonPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
+      <div className="flex items-center justify-center min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
         <div className="flex flex-col items-center gap-3">
           <div className="size-14 rounded-3xl bg-primary/10 flex items-center justify-center">
             <BookOpen size={26} className="text-primary animate-pulse" />
@@ -1839,7 +1900,7 @@ export default function LessonPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
+    <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
       <AppTopbar back={{ href: `/learn/${slug}`, label: lesson.title }} />
 
 
@@ -1855,54 +1916,22 @@ export default function LessonPage() {
             className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
           >
 
-            {/* ── HEADER ────────────────────────────────────────────────────── */}
-            <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-              <div>
-                <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full">
-                  Vocabulary
-                </span>
-                <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
-                  {lesson.title}
-                </h1>
-              </div>
-              <div className="text-right shrink-0 ml-4">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{words.length}</p>
-                <p className="text-[11px] font-semibold text-slate-400">words</p>
-                {masteredCount > 0 && (
-                  <motion.div
-                    key={masteredCount}
-                    initial={{ opacity: 0, y: 4 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="flex items-center justify-end gap-1 mt-0.5"
-                  >
-                    <Star size={11} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-                    <span className="text-[11px] font-bold text-yellow-600 dark:text-yellow-400">
-                      {masteredCount} mastered
-                    </span>
-                  </motion.div>
-                )}
-              </div>
-            </Block>
-
-            {/* ── NAV: other activities ────────────────────────────────────── */}
-            <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-blue-500/40 p-0 min-h-[96px]">
-              <Link href={`/learn/${slug}/phrases`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                <MessageSquare size={22} className="text-blue-500 mx-auto" />
-                <p className="font-bold text-xs text-blue-500 text-center">Phrases</p>
-              </Link>
-            </Block>
-            <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-purple-500/40 p-0 min-h-[96px]">
-              <Link href={`/learn/${slug}/qa`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                <HelpCircle size={22} className="text-purple-500 mx-auto" />
-                <p className="font-bold text-xs text-purple-500 text-center">Q&amp;A</p>
-              </Link>
-            </Block>
-            <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-emerald-500/40 p-0 min-h-[96px]">
-              <Link href={`/learn/${slug}/story`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                <BookMarked size={22} className="text-emerald-500 mx-auto" />
-                <p className="font-bold text-xs text-emerald-500 text-center">Story</p>
-              </Link>
-            </Block>
+            <ActivityHero
+              icon={BookOpen}
+              iconColorClass="text-indigo-500"
+              badgeLabel="Vocabulary"
+              badgeColorClass="text-indigo-500 bg-indigo-500/10"
+              title={lesson.title}
+              count={words.length}
+              unit="words"
+              masteredCount={masteredCount}
+              activities={[
+                { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500', active: true },
+                { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
+                { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500' },
+                { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500' },
+              ]}
+            />
 
             {/* ── WORD LIST — col-6 row-span-4, animated VanishList ────────── */}
             <Block whileTap={{}} className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
@@ -1911,7 +1940,6 @@ export default function LessonPage() {
                   id: `${w.word}-${i}`,
                   word: w.word,
                   translation: w.translation,
-                  learned: false,
                 }))}
                 isSaved={isSaved}
                 onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
@@ -1951,45 +1979,6 @@ export default function LessonPage() {
               </button>
             </Block>
 
-            {/* ── NEXT: PHRASES ────────────────────────────────────────────── */}
-            <Block
-              whileHover={{ scale: 1.02 }}
-              className="col-span-12 md:col-span-6 p-0 overflow-hidden border-blue-500/20 min-h-[100px]"
-              style={{ background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)' }}
-            >
-              <Link href={`/learn/${slug}/phrases`} className="flex items-center justify-between gap-4 px-6 py-5 h-full min-h-[100px]">
-                {/* Left: flow steps */}
-                <div className="flex flex-col gap-2">
-                  <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/60">
-                    <ArrowRight size={10} />
-                    Next up
-                  </span>
-                  <p className="text-xl font-bold text-white leading-tight">Phrases</p>
-                  {/* Progress path */}
-                  <div className="flex items-center gap-1.5 mt-0.5">
-                    {[
-                      { label: 'Vocab',   Icon: BookOpen,      done: true  },
-                      { label: 'Phrases', Icon: MessageSquare, done: false },
-                      { label: 'Q&A',     Icon: HelpCircle,    done: false },
-                      { label: 'Story',   Icon: BookMarked,    done: false },
-                    ].map((step, i) => (
-                      <React.Fragment key={step.label}>
-                        {i > 0 && <div className={`w-3 h-px ${step.done ? 'bg-white/60' : 'bg-white/20'}`} />}
-                        <div className={`flex items-center gap-1 text-[10px] font-semibold ${step.done ? 'text-white' : i === 1 ? 'text-white' : 'text-white/35'}`}>
-                          <step.Icon size={9} className={step.done ? 'text-white' : i === 1 ? 'text-white' : 'text-white/35'} />
-                          <span className="hidden sm:inline">{step.label}</span>
-                        </div>
-                      </React.Fragment>
-                    ))}
-                  </div>
-                </div>
-                {/* Right: arrow */}
-                <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
-                  <ArrowRight size={18} className="text-white" />
-                </div>
-              </Link>
-            </Block>
-
           </motion.div>
         </div>
       )}
@@ -2009,54 +1998,22 @@ export default function LessonPage() {
               transition={{ staggerChildren: 0.05 }}
               className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
             >
-              {/* Header */}
-              <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                <div>
-                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-blue-500 bg-blue-500/10 px-2.5 py-1 rounded-full">
-                    Phrases
-                  </span>
-                  <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
-                    {lesson.title}
-                  </h1>
-                </div>
-                <div className="text-right shrink-0 ml-4">
-                  <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{phrases.length}</p>
-                  <p className="text-[11px] font-semibold text-slate-400">phrases</p>
-                  {masteredPhraseCount > 0 && (
-                    <motion.div
-                      key={masteredPhraseCount}
-                      initial={{ opacity: 0, y: 4 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="flex items-center justify-end gap-1 mt-0.5"
-                    >
-                      <Star size={11} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-                      <span className="text-[11px] font-bold text-yellow-600 dark:text-yellow-400">
-                        {masteredPhraseCount} mastered
-                      </span>
-                    </motion.div>
-                  )}
-                </div>
-              </Block>
-
-              {/* ── NAV: other activities ──────────────────────────────────── */}
-              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-primary/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/vocabulary`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <BookOpen size={22} className="text-primary mx-auto" />
-                  <p className="font-bold text-xs text-primary text-center">Vocab</p>
-                </Link>
-              </Block>
-              <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-purple-500/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/qa`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <HelpCircle size={22} className="text-purple-500 mx-auto" />
-                  <p className="font-bold text-xs text-purple-500 text-center">Q&amp;A</p>
-                </Link>
-              </Block>
-              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-emerald-500/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/story`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <BookMarked size={22} className="text-emerald-500 mx-auto" />
-                  <p className="font-bold text-xs text-emerald-500 text-center">Story</p>
-                </Link>
-              </Block>
+              <ActivityHero
+                icon={MessageSquare}
+                iconColorClass="text-teal-600 dark:text-teal-400"
+                badgeLabel="Phrases"
+                badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
+                title={lesson.title}
+                count={phrases.length}
+                unit="phrases"
+                masteredCount={masteredPhraseCount}
+                activities={[
+                  { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
+                  { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500', active: true },
+                  { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500' },
+                  { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500' },
+                ]}
+              />
 
               {/* Phrase list */}
               <Block whileTap={{}} className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
@@ -2104,41 +2061,6 @@ export default function LessonPage() {
                 </button>
               </Block>
 
-              {/* Next: Q&A */}
-              <Block
-                whileHover={{ scale: 1.02 }}
-                className="col-span-12 md:col-span-6 p-0 overflow-hidden border-purple-500/20 min-h-[100px]"
-                style={{ background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)' }}
-              >
-                <Link href={`/learn/${slug}/qa`} className="flex items-center justify-between gap-4 px-6 py-5 h-full min-h-[100px]">
-                  <div className="flex flex-col gap-2">
-                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/60">
-                      <ArrowRight size={10} />
-                      Next up
-                    </span>
-                    <p className="text-xl font-bold text-white leading-tight">Q&amp;A</p>
-                    <div className="flex items-center gap-1.5 mt-0.5">
-                      {[
-                        { label: 'Vocab',   Icon: BookOpen,      done: true  },
-                        { label: 'Phrases', Icon: MessageSquare, done: true  },
-                        { label: 'Q&A',     Icon: HelpCircle,    done: false },
-                        { label: 'Story',   Icon: BookMarked,    done: false },
-                      ].map((step, i) => (
-                        <React.Fragment key={step.label}>
-                          {i > 0 && <div className={`w-3 h-px ${step.done ? 'bg-white/60' : 'bg-white/20'}`} />}
-                          <div className={`flex items-center gap-1 text-[10px] font-semibold ${step.done ? 'text-white' : i === 2 ? 'text-white' : 'text-white/35'}`}>
-                            <step.Icon size={9} className={step.done ? 'text-white' : i === 2 ? 'text-white' : 'text-white/35'} />
-                            <span className="hidden sm:inline">{step.label}</span>
-                          </div>
-                        </React.Fragment>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
-                    <ArrowRight size={18} className="text-white" />
-                  </div>
-                </Link>
-              </Block>
             </motion.div>
           )}
         </div>
@@ -2242,54 +2164,22 @@ export default function LessonPage() {
               transition={{ staggerChildren: 0.05 }}
               className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
             >
-              {/* Header */}
-              <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                <div>
-                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-purple-500 bg-purple-500/10 px-2.5 py-1 rounded-full">
-                    Q&amp;A
-                  </span>
-                  <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
-                    {lesson.title}
-                  </h1>
-                </div>
-                <div className="text-right shrink-0 ml-4">
-                  <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{questions.length}</p>
-                  <p className="text-[11px] font-semibold text-slate-400">questions</p>
-                  <AnimatePresence>
-                    {masteredQACount > 0 && (
-                      <motion.div
-                        key={masteredQACount}
-                        initial={{ opacity: 0, y: 4 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="flex items-center justify-end gap-1 mt-1"
-                      >
-                        <Star size={11} className="fill-yellow-500 text-yellow-500" />
-                        <span className="text-[11px] font-bold text-yellow-500 tabular-nums">{masteredQACount} mastered</span>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </Block>
-
-              {/* ── NAV: other activities ──────────────────────────────────── */}
-              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-primary/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/vocabulary`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <BookOpen size={22} className="text-primary mx-auto" />
-                  <p className="font-bold text-xs text-primary text-center">Vocab</p>
-                </Link>
-              </Block>
-              <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-blue-500/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/phrases`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <MessageSquare size={22} className="text-blue-500 mx-auto" />
-                  <p className="font-bold text-xs text-blue-500 text-center">Phrases</p>
-                </Link>
-              </Block>
-              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-emerald-500/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/story`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <BookMarked size={22} className="text-emerald-500 mx-auto" />
-                  <p className="font-bold text-xs text-emerald-500 text-center">Story</p>
-                </Link>
-              </Block>
+              <ActivityHero
+                icon={HelpCircle}
+                iconColorClass="text-violet-500"
+                badgeLabel="Q&A"
+                badgeColorClass="text-violet-500 bg-violet-500/10"
+                title={lesson.title}
+                count={questions.length}
+                unit="questions"
+                masteredCount={masteredQACount}
+                activities={[
+                  { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
+                  { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
+                  { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500', active: true },
+                  { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500' },
+                ]}
+              />
 
               {/* Questions list */}
               <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
@@ -2337,41 +2227,6 @@ export default function LessonPage() {
                 </button>
               </Block>
 
-              {/* Next: Story */}
-              <Block
-                whileHover={{ scale: 1.02 }}
-                className="col-span-12 md:col-span-6 p-0 overflow-hidden border-emerald-500/20 min-h-[100px]"
-                style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }}
-              >
-                <Link href={`/learn/${slug}/story`} className="flex items-center justify-between gap-4 px-6 py-5 h-full min-h-[100px]">
-                  <div className="flex flex-col gap-2">
-                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/60">
-                      <ArrowRight size={10} />
-                      Next up
-                    </span>
-                    <p className="text-xl font-bold text-white leading-tight">Story</p>
-                    <div className="flex items-center gap-1.5 mt-0.5">
-                      {[
-                        { label: 'Vocab',   Icon: BookOpen,      done: true  },
-                        { label: 'Phrases', Icon: MessageSquare, done: true  },
-                        { label: 'Q&A',     Icon: HelpCircle,    done: true  },
-                        { label: 'Story',   Icon: BookMarked,    done: false },
-                      ].map((step, i) => (
-                        <React.Fragment key={step.label}>
-                          {i > 0 && <div className={`w-3 h-px ${step.done ? 'bg-white/60' : 'bg-white/20'}`} />}
-                          <div className={`flex items-center gap-1 text-[10px] font-semibold ${step.done ? 'text-white' : 'text-white'}`}>
-                            <step.Icon size={9} />
-                            <span className="hidden sm:inline">{step.label}</span>
-                          </div>
-                        </React.Fragment>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="shrink-0 size-10 rounded-full bg-white/15 flex items-center justify-center">
-                    <ArrowRight size={18} className="text-white" />
-                  </div>
-                </Link>
-              </Block>
             </motion.div>
           )}
         </div>
@@ -2516,43 +2371,21 @@ export default function LessonPage() {
               transition={{ staggerChildren: 0.05 }}
               className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
             >
-              {/* Header */}
-              <Block className="col-span-12 md:col-span-6 px-6 py-5 flex items-center justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                <div>
-                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-emerald-600 bg-emerald-500/10 px-2.5 py-1 rounded-full">
-                    Story
-                  </span>
-                  <h1 className="text-xl font-bold text-slate-900 dark:text-white mt-2 leading-tight">
-                    {lesson.title}
-                  </h1>
-                </div>
-                {(content.highlightedWords?.length ?? 0) > 0 && (
-                  <div className="text-right shrink-0 ml-4">
-                    <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{content.highlightedWords!.length}</p>
-                    <p className="text-[11px] font-semibold text-slate-400">key words</p>
-                  </div>
-                )}
-              </Block>
-
-              {/* ── NAV: other activities ──────────────────────────────────── */}
-              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-primary/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/vocabulary`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <BookOpen size={22} className="text-primary mx-auto" />
-                  <p className="font-bold text-xs text-primary text-center">Vocab</p>
-                </Link>
-              </Block>
-              <Block whileHover={{ scale: 1.07, rotate: '-2.5deg' }} className="col-span-4 md:col-span-2 border-blue-500/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/phrases`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <MessageSquare size={22} className="text-blue-500 mx-auto" />
-                  <p className="font-bold text-xs text-blue-500 text-center">Phrases</p>
-                </Link>
-              </Block>
-              <Block whileHover={{ scale: 1.07, rotate: '2.5deg' }} className="col-span-4 md:col-span-2 border-purple-500/40 p-0 min-h-[96px]">
-                <Link href={`/learn/${slug}/qa`} className="grid h-full place-content-center gap-1.5 p-4 min-h-[96px]">
-                  <HelpCircle size={22} className="text-purple-500 mx-auto" />
-                  <p className="font-bold text-xs text-purple-500 text-center">Q&amp;A</p>
-                </Link>
-              </Block>
+              <ActivityHero
+                icon={BookMarked}
+                iconColorClass="text-amber-600 dark:text-amber-400"
+                badgeLabel="Story"
+                badgeColorClass="text-amber-600 dark:text-amber-400 bg-amber-500/10"
+                title={lesson.title}
+                count={(content.highlightedWords?.length ?? 0) > 0 ? content.highlightedWords!.length : undefined}
+                unit="key words"
+                activities={[
+                  { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
+                  { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
+                  { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500' },
+                  { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500', active: true },
+                ]}
+              />
 
               {/* Story text — left col, row 2 */}
               {(() => {

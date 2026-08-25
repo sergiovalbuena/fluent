@@ -120,7 +120,7 @@ export default function FlashCardsPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen" style={{ background: '#120800' }}>
+    <div className="flex flex-col min-h-screen" style={{ background: '#0a0c14' }}>
       <AppTopbar title="FlashCards" back={{ href: '/play', label: 'Games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full">

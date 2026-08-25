@@ -69,7 +69,7 @@ export function ResultScreen({ score, xpEarned, gemsEarned, stars, milestoneBonu
   const headline = score === 100 ? t('perfect_score') : score >= 80 ? t('excellent') : score >= 60 ? t('well_done') : t('keep_going')
 
   return (
-    <div className="relative flex-1 flex flex-col items-center justify-center gap-8 py-16 px-6 overflow-hidden bg-[#f8f6f5] dark:bg-[#23140f]">
+    <div className="relative flex-1 flex flex-col items-center justify-center gap-8 py-16 px-6 overflow-hidden bg-[#f8f6f5] dark:bg-[#1b2030]">
       <Confetti />
 
       <motion.div

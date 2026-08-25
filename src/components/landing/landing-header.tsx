@@ -35,7 +35,7 @@ export function LandingHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#23140f]/80 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#1b2030]/80 backdrop-blur-md">
         <div className="max-w-6xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
@@ -74,7 +74,7 @@ export function LandingHeader() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 8, scale: 0.96 }}
                     transition={{ duration: 0.16, ease: 'easeOut' }}
-                    className="absolute right-0 top-full mt-2 w-56 bg-white dark:bg-[#2c1a12] border border-primary/10 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50"
+                    className="absolute right-0 top-full mt-2 w-56 bg-white dark:bg-[#202638] border border-primary/10 rounded-2xl shadow-2xl shadow-black/10 overflow-hidden z-50"
                   >
                     <div className="p-1.5">
                       <p className="px-3 pt-2 pb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">Select language</p>
@@ -132,7 +132,7 @@ export function LandingHeader() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -12, opacity: 0 }}
               transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed top-16 left-0 right-0 z-50 sm:hidden bg-[#f8f6f5] dark:bg-[#23140f] border-b border-primary/10 shadow-xl"
+              className="fixed top-16 left-0 right-0 z-50 sm:hidden bg-[#f8f6f5] dark:bg-[#1b2030] border-b border-primary/10 shadow-xl"
             >
               <nav className="flex flex-col px-4 py-3 gap-0.5">
                 {navLinks.map(l => (

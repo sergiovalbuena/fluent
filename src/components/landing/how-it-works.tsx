@@ -274,7 +274,7 @@ export function HowItWorks() {
   const [featureInView, setFeatureInView] = useState<FeatureType>(features[0])
 
   return (
-    <section id="how-it-works" className="bg-[#f8f6f5] dark:bg-[#23140f]">
+    <section id="how-it-works" className="bg-[#f8f6f5] dark:bg-[#1b2030]">
       {/* Section header */}
       <div className="max-w-6xl mx-auto px-4 md:px-8 pt-20 md:pt-28 pb-4 text-center">
         <p className="text-primary text-xs font-bold uppercase tracking-widest mb-3">Simple process</p>

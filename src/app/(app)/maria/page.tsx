@@ -205,7 +205,7 @@ export default function MariaPage() {
   const hasMessages = messages.length > 1
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title="MarIA" />
 
       <div className="flex-1 flex flex-col max-w-3xl mx-auto w-full px-3 md:px-5 py-4 gap-3">
@@ -269,7 +269,7 @@ export default function MariaPage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.08 }}
-          className="flex-1 flex flex-col rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12] overflow-hidden min-h-[400px]"
+          className="flex-1 flex flex-col rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638] overflow-hidden min-h-[400px]"
         >
           {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-3">

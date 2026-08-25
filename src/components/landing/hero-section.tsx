@@ -197,7 +197,7 @@ export default function HeroSection() {
             className="relative hidden lg:block"
           >
             {/* Phone card */}
-            <div className="relative bg-[#1a0d07] rounded-3xl border border-white/[0.08] shadow-2xl overflow-hidden">
+            <div className="relative bg-[#131722] rounded-3xl border border-white/[0.08] shadow-2xl overflow-hidden">
               {/* App header */}
               <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/[0.06]">
                 <div className="flex items-center gap-2">
@@ -245,7 +245,7 @@ export default function HeroSection() {
               </div>
 
               {/* Challenge modal preview */}
-              <div className="mx-4 mb-4 bg-[#0f0805] rounded-2xl border border-white/[0.06] p-4">
+              <div className="mx-4 mb-4 bg-[#080a10] rounded-2xl border border-white/[0.06] p-4">
                 <p className="text-[9px] font-bold uppercase tracking-widest text-slate-500 mb-3">Challenge Mode</p>
                 <TypingDemo />
               </div>
@@ -255,7 +255,7 @@ export default function HeroSection() {
             <motion.div
               animate={{ y: [0, -7, 0] }}
               transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
-              className="absolute -right-8 top-10 bg-white dark:bg-[#2c1a12] rounded-2xl shadow-xl border border-primary/10 px-4 py-3 text-center"
+              className="absolute -right-8 top-10 bg-white dark:bg-[#202638] rounded-2xl shadow-xl border border-primary/10 px-4 py-3 text-center"
             >
               <p className="text-[10px] text-slate-400 mb-0.5">Words mastered</p>
               <p className="text-2xl font-bold text-primary tabular-nums">245</p>
@@ -265,7 +265,7 @@ export default function HeroSection() {
             <motion.div
               animate={{ y: [0, 6, 0] }}
               transition={{ repeat: Infinity, duration: 3.6, ease: 'easeInOut', delay: 0.4 }}
-              className="absolute -left-7 bottom-14 bg-white dark:bg-[#2c1a12] rounded-2xl shadow-xl border border-primary/10 px-4 py-3"
+              className="absolute -left-7 bottom-14 bg-white dark:bg-[#202638] rounded-2xl shadow-xl border border-primary/10 px-4 py-3"
             >
               <div className="flex items-center gap-2">
                 <Flame size={20} className="text-orange-500 fill-orange-500 shrink-0" />

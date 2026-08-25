@@ -89,7 +89,7 @@ export default async function MasteryPage({ params }: PageProps) {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar back={{ href: `/learn/${slug}`, label: module.title }} />
       <main className="flex-1 px-3 md:px-6 py-4 md:py-6">
         <div className="max-w-2xl mx-auto">

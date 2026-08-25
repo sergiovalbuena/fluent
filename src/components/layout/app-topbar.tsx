@@ -36,7 +36,7 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
   const activeBoost = useActiveBoost()
 
   return (
-    <header className="sticky top-0 z-20 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#23140f]/80 backdrop-blur-md">
+    <header className="sticky top-0 z-20 border-b border-primary/10 bg-[#f8f6f5]/80 dark:bg-[#1b2030]/80 backdrop-blur-md">
       <div className="flex items-center justify-between px-4 md:px-8 h-14">
         {/* Left side */}
         {back ? (

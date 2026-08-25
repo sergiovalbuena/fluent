@@ -137,7 +137,7 @@ export default function ShortStoryPage() {
   const currentQuestion = story?.questions[questionIndex]
 
   return (
-    <div className="flex flex-col min-h-screen" style={{ background: '#120500' }}>
+    <div className="flex flex-col min-h-screen" style={{ background: '#080a10' }}>
       <AppTopbar title="Short Story" back={{ href: '/play', label: 'Games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full">

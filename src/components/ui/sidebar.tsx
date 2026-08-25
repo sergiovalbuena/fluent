@@ -111,7 +111,7 @@ function MobileSidebar({ children }: { children: React.ReactNode }) {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: '-100%', opacity: 0 }}
             transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 left-0 w-[80%] z-[100] flex flex-col bg-[#f8f6f5] dark:bg-[#23140f] p-6 md:hidden"
+            className="fixed inset-y-0 left-0 w-[80%] z-[100] flex flex-col bg-[#f8f6f5] dark:bg-[#1b2030] p-6 md:hidden"
           >
             <button
               className="self-end mb-6 text-slate-400 hover:text-primary"

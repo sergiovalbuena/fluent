@@ -50,7 +50,7 @@ export function FloatingNav({
           'fixed top-4 inset-x-0 mx-auto z-[5000] flex max-w-fit items-center justify-center gap-2 rounded-full px-4 py-2.5',
           atTop
             ? 'bg-transparent shadow-none border-transparent'
-            : 'border border-black/[0.1] dark:border-white/[0.1] bg-white/80 dark:bg-[#1c0e09]/80 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.08)]',
+            : 'border border-black/[0.1] dark:border-white/[0.1] bg-white/80 dark:bg-[#171b28]/80 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.08)]',
           'transition-[background,border,box-shadow] duration-300',
           className,
         )}

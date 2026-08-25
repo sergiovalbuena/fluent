@@ -212,7 +212,7 @@ export default function SpeedRoundPage() {
   // ── Ready Screen ─────────────────────────────────────────────────────────────
   if (phase === 'ready') {
     return (
-      <div className="flex flex-col min-h-screen" style={{ background: '#140a00' }}>
+      <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
         <AppTopbar title="Speed Round" back={{ href: '/play', label: 'Games' }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 gap-8">
           <motion.div
@@ -285,7 +285,7 @@ export default function SpeedRoundPage() {
       finalAccuracy >= 80 ? 'Blazing Fast!' : finalAccuracy >= 50 ? 'Nice Work!' : 'Keep Practicing!'
 
     return (
-      <div className="flex flex-col min-h-screen" style={{ background: '#140a00' }}>
+      <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
         <AppTopbar title="Speed Round" back={{ href: '/play', label: 'Games' }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4">
           <motion.div
@@ -350,7 +350,7 @@ export default function SpeedRoundPage() {
 
   // ── Playing Screen ─────────────────────────────────────────────────────────────
   return (
-    <div className="flex flex-col min-h-screen" style={{ background: '#140a00' }}>
+    <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
       <AppTopbar title="Speed Round" back={{ href: '/play', label: 'Games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-4 max-w-md mx-auto w-full gap-4">

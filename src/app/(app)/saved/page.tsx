@@ -101,7 +101,7 @@ function FlashcardMode({ items, onClose }: { items: SavedItem[]; onClose: () => 
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.25 }}
           onClick={() => setFlipped(f => !f)}
-          className="w-full max-w-sm bg-white dark:bg-[#2c1a12] rounded-3xl border border-black/[0.05] dark:border-white/[0.06] p-8 text-center cursor-pointer select-none shadow-[0_4px_20px_rgba(0,0,0,0.06)] active:scale-[0.98] transition-transform min-h-[200px] flex flex-col items-center justify-center gap-3"
+          className="w-full max-w-sm bg-white dark:bg-[#202638] rounded-3xl border border-black/[0.05] dark:border-white/[0.06] p-8 text-center cursor-pointer select-none shadow-[0_4px_20px_rgba(0,0,0,0.06)] active:scale-[0.98] transition-transform min-h-[200px] flex flex-col items-center justify-center gap-3"
         >
           <p className="text-2xl font-bold text-slate-900 dark:text-white">{current.original}</p>
           <AnimatePresence>
@@ -174,7 +174,7 @@ export default function SavedPage() {
 
   if (practicing) {
     return (
-      <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+      <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
         <AppTopbar title="Practice" back={{ href: '/saved' }} />
         <FlashcardMode items={filtered.length > 0 ? filtered : items} onClose={() => setPracticing(false)} />
       </div>
@@ -182,7 +182,7 @@ export default function SavedPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title="Saved" />
 
       <main className="flex-1 px-4 py-5 pb-28 md:pb-8 max-w-2xl mx-auto w-full">
@@ -220,7 +220,7 @@ export default function SavedPage() {
                     'shrink-0 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-semibold border transition-all',
                     filter === key
                       ? 'bg-primary text-white border-primary'
-                      : 'bg-white dark:bg-[#2c1a12] text-slate-500 border-slate-200 dark:border-white/[0.08] hover:border-primary/40'
+                      : 'bg-white dark:bg-[#202638] text-slate-500 border-slate-200 dark:border-white/[0.08] hover:border-primary/40'
                   )}
                 >
                   {label}
@@ -261,7 +261,7 @@ export default function SavedPage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, x: 20 }}
                   transition={{ duration: 0.18 }}
-                  className="bg-white dark:bg-[#2c1a12] rounded-2xl border border-black/[0.04] dark:border-white/[0.05] px-4 py-3.5 flex items-center gap-3"
+                  className="bg-white dark:bg-[#202638] rounded-2xl border border-black/[0.04] dark:border-white/[0.05] px-4 py-3.5 flex items-center gap-3"
                 >
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{item.original}</p>

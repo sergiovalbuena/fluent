@@ -48,7 +48,7 @@ const TESTIMONIALS = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f] text-slate-900 dark:text-slate-100 font-display">
+    <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030] text-slate-900 dark:text-slate-100 font-display">
 
       <LandingHeader />
 
@@ -84,7 +84,7 @@ export default function LandingPage() {
               <a
                 key={lang.name}
                 href={lang.available ? '/login' : undefined}
-                className={`group relative bg-white dark:bg-[#2c1a12] rounded-2xl p-5 border text-center transition-all ${
+                className={`group relative bg-white dark:bg-[#202638] rounded-2xl p-5 border text-center transition-all ${
                   lang.available
                     ? 'border-primary/8 hover:border-primary/35 hover:shadow-lg hover:shadow-primary/8 hover:-translate-y-1 cursor-pointer'
                     : 'border-slate-100 dark:border-slate-800/50 opacity-45 cursor-default'
@@ -118,7 +118,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {TESTIMONIALS.map(t => (
               <div key={t.name}
-                className="bg-white dark:bg-[#2c1a12] rounded-2xl p-6 border border-primary/5 shadow-sm hover:shadow-md hover:border-primary/15 transition-all">
+                className="bg-white dark:bg-[#202638] rounded-2xl p-6 border border-primary/5 shadow-sm hover:shadow-md hover:border-primary/15 transition-all">
                 <div className="flex gap-0.5 mb-4">
                   {Array.from({ length: t.stars }).map((_, i) => (
                     <span key={i} className="text-amber-400 text-sm">★</span>

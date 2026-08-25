@@ -21,7 +21,7 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
     }}
     transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
     className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
       className
     )}
     {...rest}
@@ -141,31 +141,29 @@ function CoreCard({ href, icon: Icon, variant, label, total, unit, mastered, sta
       <motion.div
         whileHover={{ y: -4, scale: 1.015 }}
         whileTap={{ scale: 0.97 }}
-        className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#2c1a12] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none cursor-pointer"
+        className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#202638] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none cursor-pointer"
       >
         {/* Top accent bar */}
         <div className={cn('h-[3px] w-full shrink-0', t.bar)} />
 
         <div className="flex flex-col flex-1 gap-3 p-4">
-          {/* Icon (left) + stars + count (right) */}
-          <div className="flex items-start justify-between gap-2">
-            <div className={cn('size-10 rounded-xl flex items-center justify-center shrink-0', t.iconBg)}>
-              <Icon size={18} className={t.iconColor} />
-            </div>
-            <div className="flex flex-col items-end gap-1 pt-0.5">
-              <StarsRow stars={stars} size={15} />
-              <p className="text-[11px] font-semibold tabular-nums">
-                {mastered > 0
-                  ? <><span className="text-primary font-bold">{mastered}</span><span className="text-slate-400 dark:text-slate-500"> / {total} {unit}</span></>
-                  : <span className="text-slate-400 dark:text-slate-500">{total} {unit}</span>
-                }
-              </p>
-            </div>
+          {/* Title + stars — same level */}
+          <div className="flex items-center justify-between gap-2">
+            <p className="font-bold text-base text-slate-900 dark:text-white leading-snug">{label}</p>
+            <StarsRow stars={stars} size={15} />
           </div>
 
-          {/* Title */}
-          <div className="flex-1 flex items-end">
-            <p className="font-bold text-[13px] text-slate-900 dark:text-white leading-snug">{label}</p>
+          {/* Icon + count — bigger, the card's focal point */}
+          <div className="flex-1 flex items-center justify-between gap-3">
+            <div className={cn('size-12 rounded-xl flex items-center justify-center shrink-0', t.iconBg)}>
+              <Icon size={22} className={t.iconColor} />
+            </div>
+            <p className="text-sm font-semibold tabular-nums">
+              {mastered > 0
+                ? <><span className="text-primary font-bold">{mastered}</span><span className="text-slate-400 dark:text-slate-500"> / {total} {unit}</span></>
+                : <span className="text-slate-400 dark:text-slate-500">{total} {unit}</span>
+              }
+            </p>
           </div>
         </div>
       </motion.div>
@@ -234,45 +232,36 @@ const CORE_ACTIVITY_META = [
 function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhrases, hasQA, hasStory }: CrownBandProps) {
   const flagMap = { hasVocab, hasPhrases, hasQA, hasStory }
   const activeCore = CORE_ACTIVITY_META.filter(a => flagMap[a.flag])
-  const threeStarCount = activeCore.filter(a => (starsMap[a.key] ?? 0) >= 3).length
-  const totalCore = activeCore.length
-  const progressPct = totalCore > 0 ? Math.round((threeStarCount / totalCore) * 100) : 0
 
   // ── CROWNED — still a live link so the challenge can be replayed anytime ──
   if (hasCrown) {
     return (
-      <Link href={`/learn/${slug}/mastery`} className="block group">
+      <Link href={`/learn/${slug}/mastery`} className="block group relative overflow-hidden rounded-2xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500" />
         <motion.div
-          whileHover={{ scale: 1.005 }}
-          className="relative overflow-hidden rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
+          animate={{ opacity: [0.15, 0.25, 0.15] }}
+          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500" />
-          <div className="absolute inset-0 opacity-[0.06]"
-            style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.75\' numOctaves=\'4\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")', backgroundSize: 'cover' }}
-          />
-          {/* Large crown watermark */}
-          <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none select-none opacity-[0.18]">
-            <Crown size={72} className="text-white" />
-          </div>
-          <div className="relative flex items-center justify-between gap-4 px-6 md:px-8 py-5 md:py-6">
-            <div className="flex items-center gap-4">
-              <div className="size-12 rounded-2xl bg-white/25 flex items-center justify-center shrink-0">
-                <Crown size={22} className="text-white" />
-              </div>
-              <div>
-                <p className="font-bold text-base text-white leading-tight">Module Mastered</p>
-                <p className="text-[12px] text-white/70 mt-1">You can use this in real life · Crown earned</p>
-              </div>
-            </div>
-            <motion.div
-              whileHover={{ scale: 1.05, x: 2 }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2 bg-white/20 group-hover:bg-white text-white group-hover:text-amber-600 font-black text-[12px] px-4 py-2 rounded-xl shrink-0 transition-colors"
-            >
-              Replay <ChevronRight size={13} />
-            </motion.div>
-          </div>
+          <Crown size={44} className="text-white" />
         </motion.div>
+        <div className="relative flex items-center justify-between gap-3 px-4 md:px-5 py-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="size-9 rounded-xl bg-white/25 flex items-center justify-center shrink-0">
+              <Crown size={16} className="text-white" />
+            </div>
+            <div className="min-w-0">
+              <p className="font-bold text-[13px] text-white leading-tight">Module Mastered</p>
+              <p className="text-[11px] text-white/70 truncate">Crown earned · you can use this in real life</p>
+            </div>
+          </div>
+          <motion.span
+            whileHover={{ x: 2 }}
+            className="flex items-center gap-1 text-white/90 group-hover:text-white font-bold text-[11px] shrink-0"
+          >
+            Replay <ChevronRight size={12} />
+          </motion.span>
+        </div>
       </Link>
     )
   }
@@ -280,138 +269,80 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
   // ── UNLOCKED — all ⭐⭐⭐, ready to challenge ──────────────────────────────
   if (allThreeStars) {
     return (
-      <Link href={`/learn/${slug}/mastery`} className="block group">
+      <Link href={`/learn/${slug}/mastery`} className="block group relative overflow-hidden rounded-2xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-transparent" />
         <motion.div
-          whileHover={{ scale: 1.005 }}
-          className="relative overflow-hidden rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
+          animate={{ opacity: [0.15, 0.25, 0.15], scale: [1, 1.05, 1] }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none"
         >
-          {/* Deep gold gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600" />
-          {/* Shine overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/5 to-transparent" />
-          {/* Crown watermark — large, atmospheric */}
-          <motion.div
-            animate={{ opacity: [0.12, 0.2, 0.12], scale: [1, 1.04, 1] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none"
-          >
-            <Crown size={88} className="text-white" />
-          </motion.div>
-          <div className="relative flex items-center justify-between px-6 md:px-8 py-5 md:py-6">
-            <div className="flex items-center gap-4">
-              <motion.div
-                animate={{ boxShadow: ['0 0 0px rgba(251,191,36,0)', '0 0 20px rgba(251,191,36,0.6)', '0 0 0px rgba(251,191,36,0)'] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-                className="size-12 rounded-2xl bg-white/20 flex items-center justify-center shrink-0"
-              >
-                <Crown size={22} className="text-white" />
-              </motion.div>
-              <div>
-                <p className="font-black text-base text-white leading-tight tracking-tight">Crown Challenge</p>
-                <p className="text-[12px] text-white/80 mt-0.5 font-medium">All ⭐⭐⭐ earned — you're ready for the ultimate test</p>
-              </div>
-            </div>
-            <motion.div
-              whileHover={{ scale: 1.05, x: 2 }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2 bg-white text-amber-600 font-black text-[12px] px-4 py-2 rounded-xl shrink-0 shadow-lg shadow-amber-900/30"
-            >
-              Begin <ChevronRight size={13} />
-            </motion.div>
-          </div>
+          <Crown size={48} className="text-white" />
         </motion.div>
+        <div className="relative flex items-center justify-between gap-3 px-4 md:px-5 py-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <motion.div
+              animate={{ boxShadow: ['0 0 0px rgba(251,191,36,0)', '0 0 16px rgba(251,191,36,0.6)', '0 0 0px rgba(251,191,36,0)'] }}
+              transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+              className="size-9 rounded-xl bg-white/20 flex items-center justify-center shrink-0"
+            >
+              <Crown size={16} className="text-white" />
+            </motion.div>
+            <div className="min-w-0">
+              <p className="font-black text-[13px] text-white leading-tight tracking-tight">Crown Challenge ready</p>
+              <p className="text-[11px] text-white/80 font-medium truncate">All ⭐⭐⭐ earned — take the ultimate test</p>
+            </div>
+          </div>
+          <motion.span
+            whileHover={{ scale: 1.05, x: 2 }}
+            whileTap={{ scale: 0.97 }}
+            className="flex items-center gap-1.5 bg-white text-amber-600 font-black text-[11px] px-3 py-1.5 rounded-lg shrink-0 shadow-sm"
+          >
+            Begin <ChevronRight size={12} />
+          </motion.span>
+        </div>
       </Link>
     )
   }
 
-  // ── LOCKED — the main state, needs the most craft ─────────────────────────
-  // Dark atmospheric band: creates desire by showing the prize behind a barrier
-  // Progress bar: the primary motivator — shows exactly how close they are
-  // Activity pills: shows which specific activities still need work
+  // ── LOCKED — compact motivator: icon + fraction + thin bar. No per-activity
+  // pills here — that breakdown already lives in the Essential cards below.
   return (
-    <div className="relative overflow-hidden rounded-3xl border border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
-      {/* Dark warm background — atmospheric, mysterious */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1c0a05] via-[#230e07] to-[#1a0803]" />
-      {/* Subtle warm vignette from center */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_50%,rgba(255,128,82,0.07),transparent_70%)]" />
-      {/* Crown watermark — dimly visible, creates desire */}
+    <div className="relative overflow-hidden rounded-2xl">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#131722] via-[#171b28] to-[#0d0f18]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(255,128,82,0.06),transparent_70%)]" />
       <motion.div
-        animate={{ opacity: [0.07, 0.13, 0.07] }}
+        animate={{ opacity: [0.06, 0.11, 0.06] }}
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 pointer-events-none select-none"
+        className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none"
       >
-        <Crown size={96} className="text-amber-400" />
+        <Crown size={52} className="text-amber-400" />
       </motion.div>
-
-      <div className="relative px-6 md:px-8 py-5 md:py-6 flex flex-col gap-4">
-
-        {/* Header row */}
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="size-10 rounded-xl bg-white/[0.08] flex items-center justify-center shrink-0">
-              <Lock size={16} className="text-white/50" />
-            </div>
-            <div>
-              <p className="font-black text-[14px] text-white/90 leading-tight tracking-tight">Crown Challenge</p>
-              <p className="text-[11px] text-white/45 mt-0.5 font-medium">
-                Master all activities to unlock the ultimate test
-              </p>
-            </div>
-          </div>
-          {/* Progress fraction */}
-          <div className="text-right shrink-0">
-            <span className="text-[11px] font-bold text-white/40 tabular-nums">{threeStarCount}<span className="text-white/25">/{totalCore}</span></span>
-          </div>
+      <div className="relative flex items-center gap-3 px-4 md:px-5 py-3">
+        <div className="size-9 rounded-xl bg-white/[0.08] flex items-center justify-center shrink-0">
+          <Lock size={14} className="text-white/50" />
         </div>
-
-        {/* Progress bar — the main motivator */}
-        <div className="flex flex-col gap-2">
-          <div className="h-[5px] w-full rounded-full bg-white/[0.08] overflow-hidden">
-            <motion.div
-              className="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400"
-              initial={{ width: 0 }}
-              animate={{ width: `${progressPct}%` }}
-              transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
-            />
-          </div>
-
-          {/* Activity pills — stars per activity */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-0.5 -mx-1 px-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            {activeCore.map(a => {
-              const s = starsMap[a.key] ?? 0
-              const done = s >= 3
+        <div className="flex-1 min-w-0 flex items-center justify-between gap-2">
+          <p className="font-black text-[13px] text-white/90 leading-tight tracking-tight">Crown Challenge</p>
+          <div className="flex items-center gap-1 shrink-0">
+            {activeCore.map((a, i) => {
+              const earned = (starsMap[a.key] ?? 0) >= 3
               return (
-                <div
+                <motion.span
                   key={a.key}
-                  className={cn(
-                    'flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors shrink-0',
-                    done
-                      ? 'bg-amber-500/[0.18] border border-amber-500/25'
-                      : 'bg-white/[0.06] border border-white/[0.06]'
-                  )}
+                  initial={false}
+                  animate={earned ? { scale: [1, 1.3, 1] } : { scale: 1 }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
                 >
-                  <span className={cn('text-[10px] font-bold', done ? 'text-amber-400' : 'text-white/40')}>
-                    {a.label}
-                  </span>
-                  <div className="flex items-center gap-[2px]">
-                    {[1, 2, 3].map(n => (
-                      <Star
-                        key={n}
-                        size={8}
-                        className={
-                          n <= s
-                            ? 'fill-amber-400 text-amber-400'
-                            : 'fill-white/15 text-white/15'
-                        }
-                      />
-                    ))}
-                  </div>
-                </div>
+                  <Star
+                    size={14}
+                    className={earned ? 'fill-amber-400 text-amber-400' : 'fill-white/10 text-white/20'}
+                  />
+                </motion.span>
               )
             })}
           </div>
         </div>
-
       </div>
     </div>
   )
@@ -509,20 +440,36 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
             </span>
           </div>
 
-          <div className="relative flex flex-col md:flex-row md:items-end md:justify-between gap-5">
-            <div>
-              <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
-                {languageCode?.toUpperCase()} · {exerciseCount} activities
-              </span>
-              <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white mb-1">
-                {title}
-              </h1>
-              {description && (
-                <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md">{description}</p>
-              )}
+          <div className="relative flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+              <div>
+                <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
+                  {languageCode?.toUpperCase()} · {exerciseCount} activities
+                </span>
+                <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white mb-1">
+                  {title}
+                </h1>
+                {description && (
+                  <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md">{description}</p>
+                )}
+              </div>
+
+              {/* Crown Challenge — the module's end goal, pinned beside the title */}
+              <div className="w-full md:w-[30%] md:shrink-0">
+                <CrownBand
+                  slug={slug}
+                  allThreeStars={allThreeStars}
+                  hasCrown={hasCrown}
+                  starsMap={starsMap}
+                  hasVocab={hasVocab}
+                  hasPhrases={hasPhrases}
+                  hasQA={hasQA}
+                  hasStory={hasStory}
+                />
+              </div>
             </div>
 
-            <div className="flex items-center gap-4 shrink-0">
+            <div className="flex items-center gap-4 md:justify-end">
               {/* Progress */}
               <div className="min-w-[140px]">
                 <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
@@ -578,20 +525,6 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
         </div>
 
       </Block>
-
-      {/* ══════════════════════════════════════════════════════════════════════
-          CROWN CHALLENGE — standalone card, own visual weight
-      ══════════════════════════════════════════════════════════════════════ */}
-      <CrownBand
-        slug={slug}
-        allThreeStars={allThreeStars}
-        hasCrown={hasCrown}
-        starsMap={starsMap}
-        hasVocab={hasVocab}
-        hasPhrases={hasPhrases}
-        hasQA={hasQA}
-        hasStory={hasStory}
-      />
 
       {/* ══════════════════════════════════════════════════════════════════════
           MINI CARDS ROW — all in one horizontal line

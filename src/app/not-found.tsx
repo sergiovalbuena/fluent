@@ -21,7 +21,7 @@ function FuzzyOverlay() {
 
 export default function NotFound() {
   return (
-    <div className="relative overflow-hidden min-h-screen bg-[#1c0e09] flex flex-col items-center justify-center px-6">
+    <div className="relative overflow-hidden min-h-screen bg-[#171b28] flex flex-col items-center justify-center px-6">
       <FuzzyOverlay />
 
       <div className="relative z-10 flex flex-col items-center text-center gap-0">

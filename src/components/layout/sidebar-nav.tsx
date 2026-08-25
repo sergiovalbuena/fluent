@@ -179,7 +179,7 @@ export function SidebarNav({ modules }: { modules: Module[] }) {
 
   return (
     <Sidebar open={open} setOpen={setOpen}>
-      <SidebarBody className="border-r border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
+      <SidebarBody className="border-r border-primary/10 bg-[#f8f6f5] dark:bg-[#1b2030]">
         <SidebarContent modules={modules} />
       </SidebarBody>
     </Sidebar>

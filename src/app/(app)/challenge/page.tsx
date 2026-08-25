@@ -123,7 +123,7 @@ export default function ChallengePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#23140f] p-4 md:p-8">
+    <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030] p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-6">

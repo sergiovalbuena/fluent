@@ -19,7 +19,7 @@ function ChallengeCard() {
 
   return (
     <motion.div variants={item}
-      className="col-span-12 md:col-span-7 bg-[#0f0805] border border-white/[0.07] rounded-3xl p-6 overflow-hidden">
+      className="col-span-12 md:col-span-7 bg-[#080a10] border border-white/[0.07] rounded-3xl p-6 overflow-hidden">
       <div className="flex items-start gap-3 mb-5">
         <div className="size-8 rounded-xl bg-primary/15 flex items-center justify-center shrink-0">
           <Keyboard size={15} className="text-primary" />
@@ -42,7 +42,7 @@ function ChallengeCard() {
       </div>
 
       {/* Typing area */}
-      <div className="bg-[#1a0d07] rounded-2xl p-5 border border-white/[0.05] mb-4">
+      <div className="bg-[#131722] rounded-2xl p-5 border border-white/[0.05] mb-4">
         <p className="text-center text-slate-500 text-xs mb-3">Family · 👨‍👩‍👧</p>
         <div className="flex items-center justify-center gap-0.5 text-3xl font-bold tracking-wide mb-3 select-none">
           {word.split('').map((ch, i) => (
@@ -141,7 +141,7 @@ function MarIACard() {
 function GamificationCard() {
   return (
     <motion.div variants={item}
-      className="col-span-12 md:col-span-4 bg-[#0f0805] border border-white/[0.07] rounded-3xl p-6">
+      className="col-span-12 md:col-span-4 bg-[#080a10] border border-white/[0.07] rounded-3xl p-6">
       <p className="text-white font-bold text-sm mb-4">Earn as you learn</p>
 
       <div className="grid grid-cols-3 gap-2 mb-4">
@@ -258,7 +258,7 @@ function StoriesCard() {
 function SavedCard() {
   return (
     <motion.div variants={item}
-      className="col-span-12 md:col-span-6 bg-[#0f0805] border border-white/[0.07] rounded-3xl p-6">
+      className="col-span-12 md:col-span-6 bg-[#080a10] border border-white/[0.07] rounded-3xl p-6">
       <div className="flex items-start gap-3 mb-4">
         <div className="size-8 rounded-xl bg-primary/15 flex items-center justify-center shrink-0">
           <Bookmark size={15} className="text-primary fill-primary" />
@@ -349,9 +349,9 @@ export function FeaturesBento() {
   return (
     <section id="features" className="relative">
       {/* Fade transition from light → dark */}
-      <div className="h-24 bg-gradient-to-b from-[#f8f6f5] dark:from-[#23140f] to-[#0f0805]" />
+      <div className="h-24 bg-gradient-to-b from-[#f8f6f5] dark:from-[#1b2030] to-[#080a10]" />
 
-      <div className="bg-[#0f0805] py-16 md:py-24">
+      <div className="bg-[#080a10] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="text-center mb-14">
             <p className="text-primary text-xs font-bold uppercase tracking-widest mb-3">Everything you need</p>
@@ -380,7 +380,7 @@ export function FeaturesBento() {
       </div>
 
       {/* Fade back to light */}
-      <div className="h-24 bg-gradient-to-b from-[#0f0805] to-[#f8f6f5] dark:to-[#23140f]" />
+      <div className="h-24 bg-gradient-to-b from-[#080a10] to-[#f8f6f5] dark:to-[#1b2030]" />
     </section>
   )
 }

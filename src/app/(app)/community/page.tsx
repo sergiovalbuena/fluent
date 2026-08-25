@@ -18,7 +18,7 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
     }}
     transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
     className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
       className
     )}
     {...rest}
@@ -100,7 +100,7 @@ const lift  = { scale: 1.02, filter: 'brightness(1.06)' } as const
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function CommunityPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title="Community" />
 
       <main className="flex-1 px-3 md:px-5 py-4 md:py-6">

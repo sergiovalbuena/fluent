@@ -88,7 +88,7 @@ function NodeButton({ node, index }: { node: PathNode; index: number }) {
               : node.state === 'current'
               ? 'bg-primary shadow-primary/30'
               : node.state === 'available'
-              ? 'bg-white dark:bg-[#2c1a12] border-2 border-primary/30 shadow-sm'
+              ? 'bg-white dark:bg-[#202638] border-2 border-primary/30 shadow-sm'
               : 'bg-slate-100 dark:bg-slate-800 border-2 border-dashed border-slate-300 dark:border-slate-600 opacity-50'
             }`}
         >

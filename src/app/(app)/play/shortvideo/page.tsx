@@ -198,7 +198,7 @@ export default function ShortVideoPage() {
   const currentQuestion = activeVideo?.questions[questionIndex]
 
   return (
-    <div className="flex flex-col min-h-screen" style={{ background: '#120000' }}>
+    <div className="flex flex-col min-h-screen" style={{ background: '#05060a' }}>
       <AppTopbar title="Short Video" back={{ href: '/play', label: 'Games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-2xl mx-auto w-full">

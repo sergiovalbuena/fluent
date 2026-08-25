@@ -33,7 +33,7 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
     }}
     transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
     className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
       className
     )}
     {...rest}
@@ -68,7 +68,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
   const gradientHoverTiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title={t('title')} />
 
       <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
@@ -97,40 +97,46 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                   : t('streak_start')}
               </p>
 
-              <div className="flex items-stretch gap-2 mt-5">
-                <Link href={current ? `/learn/${current.slug}` : '/learn'} className="flex-[3] min-w-0">
-                  <motion.button
-                    whileHover={{ scale: 1.02, y: -1 }}
-                    whileTap={{ scale: 0.97, y: 1 }}
-                    className="w-full h-full flex items-center gap-3 bg-primary text-white px-4 py-4 rounded-xl shadow-sm shadow-primary/25"
-                  >
-                    {current ? (
-                      <span className="text-2xl leading-none shrink-0">{current.icon}</span>
-                    ) : (
-                      <BookOpen size={20} className="shrink-0" />
-                    )}
-                    <div className="flex-1 min-w-0 text-left">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-white/55 leading-none mb-1">
-                        {t('resume')}
-                      </p>
-                      <p className="text-sm font-bold text-white leading-tight line-clamp-2">
-                        {current ? current.title : t('browse_lessons')}
-                      </p>
+              <div className="mt-5 p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.05]">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2.5">{t('continue_learning')}</p>
+                {current ? (
+                  <>
+                    <div className="flex items-center gap-2.5 mb-3">
+                      <span className="text-2xl leading-none">{current.icon}</span>
+                      <p className="font-bold text-sm text-slate-900 dark:text-white leading-snug line-clamp-2">{current.title}</p>
                     </div>
-                    <ArrowRight size={15} className="shrink-0 text-white/70" />
-                  </motion.button>
-                </Link>
-
-                <Link href="/play" className="flex-[2] min-w-0">
-                  <motion.button
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.97 }}
-                    className="w-full h-full flex flex-col items-center justify-center gap-1.5 animate-background-shine bg-[linear-gradient(110deg,#2a1207,45%,#ff8052,55%,#2a1207)] bg-[length:200%_100%] text-white font-bold px-4 rounded-xl border border-primary/30 shadow-sm shadow-primary/20"
-                  >
-                    <Zap size={14} />
-                    <span className="text-sm font-bold">{t('quick_practice')}</span>
-                  </motion.button>
-                </Link>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="flex-1 h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
+                        <motion.div
+                          className="h-full bg-primary rounded-full"
+                          initial={{ width: 0 }}
+                          animate={{ width: `${current.progress}%` }}
+                          transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
+                        />
+                      </div>
+                      <span className="text-[11px] font-semibold text-slate-400 tabular-nums shrink-0">{current.progress}%</span>
+                    </div>
+                    <Link href={`/learn/${current.slug}`}>
+                      <motion.button
+                        whileHover={{ scale: 1.02, y: -1 }}
+                        whileTap={{ scale: 0.97, y: 1 }}
+                        className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2.5 rounded-xl text-xs shadow-sm shadow-primary/30"
+                      >
+                        {t('resume')} <ArrowRight size={13} />
+                      </motion.button>
+                    </Link>
+                  </>
+                ) : (
+                  <Link href="/learn">
+                    <motion.button
+                      whileHover={{ scale: 1.02, y: -1 }}
+                      whileTap={{ scale: 0.97, y: 1 }}
+                      className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2.5 rounded-xl text-xs shadow-sm shadow-primary/30"
+                    >
+                      {t('browse_lessons')} <ArrowRight size={13} />
+                    </motion.button>
+                  </Link>
+                )}
               </div>
             </div>
           </Block>
@@ -231,54 +237,6 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
               <p className="text-[13px] font-bold text-white text-center leading-tight">{t('quick_practice')}</p>
               <p className="text-[11px] font-semibold text-white/70">{tc('two_min')}</p>
             </Link>
-          </Block>
-
-          {/* CONTINUE LEARNING */}
-          <Block className="col-span-6 md:col-span-4 p-5 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[120px] relative overflow-hidden">
-            <div className="absolute -bottom-4 -right-4 text-[4.5rem] leading-none opacity-[0.05] dark:opacity-[0.07] select-none pointer-events-none">📚</div>
-            <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 relative z-10">{t('continue_learning')}</p>
-            <div className="relative z-10 flex flex-col flex-1 justify-between">
-            {current ? (
-              <>
-                <div className="flex items-center gap-2.5 my-3">
-                  <span className="text-2xl leading-none">{current.icon}</span>
-                  <p className="font-bold text-sm text-slate-900 dark:text-white leading-snug line-clamp-2">{current.title}</p>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="flex-1 h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-full bg-primary rounded-full"
-                        initial={{ width: 0 }}
-                        animate={{ width: `${current.progress}%` }}
-                        transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
-                      />
-                    </div>
-                    <span className="text-[11px] font-semibold text-slate-400 tabular-nums shrink-0">{current.progress}%</span>
-                  </div>
-                  <Link href={`/learn/${current.slug}`}>
-                    <motion.button
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.97 }}
-                      className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2 rounded-xl text-xs shadow-sm shadow-primary/30"
-                    >
-                      {t('resume')} <ArrowRight size={13} />
-                    </motion.button>
-                  </Link>
-                </div>
-              </>
-            ) : (
-              <Link href="/learn" className="mt-auto">
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2 rounded-xl text-xs shadow-sm shadow-primary/30"
-                >
-                  {t('browse_lessons')} <ArrowRight size={13} />
-                </motion.button>
-              </Link>
-            )}
-            </div>
           </Block>
 
           {/* SHORT STORY */}

@@ -314,7 +314,7 @@ export default function OnboardingPage() {
   const destinations = DESTINATIONS[learningLanguage] ?? []
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#23140f]">
+    <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
 
       {/* Header */}
       <div className="px-6 pt-10 pb-4">

@@ -204,7 +204,7 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
             transition={{ duration: 0.25 }}
             className="space-y-4"
           >
-            <div className="bg-white dark:bg-[#2c1a12] rounded-3xl border border-black/[0.04] dark:border-white/[0.05] p-6">
+            <div className="bg-white dark:bg-[#202638] rounded-3xl border border-black/[0.04] dark:border-white/[0.05] p-6">
               <p className="text-lg font-semibold text-foreground">{q.question}</p>
             </div>
 
@@ -221,10 +221,10 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
                     disabled={selected !== null}
                     className={cn(
                       'w-full text-left px-5 py-4 rounded-2xl border-2 font-medium transition-all',
-                      !showFeedback && 'border-border bg-white dark:bg-[#2c1a12] hover:border-primary/50 hover:bg-primary/5',
+                      !showFeedback && 'border-border bg-white dark:bg-[#202638] hover:border-primary/50 hover:bg-primary/5',
                       showFeedback && isCorrect && 'border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300',
                       showFeedback && isSelected && !isCorrect && 'border-red-500 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300',
-                      showFeedback && !isSelected && !isCorrect && 'border-border bg-white dark:bg-[#2c1a12] opacity-50',
+                      showFeedback && !isSelected && !isCorrect && 'border-border bg-white dark:bg-[#202638] opacity-50',
                     )}
                   >
                     <div className="flex items-center justify-between">

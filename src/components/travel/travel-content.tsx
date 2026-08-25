@@ -149,7 +149,7 @@ export function TravelContent({ languageCode, destination }: { languageCode: str
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title="Travel Mode" back={{ href: '/dashboard' }} />
 
       <main className="flex-1 px-4 py-5 max-w-lg mx-auto w-full">

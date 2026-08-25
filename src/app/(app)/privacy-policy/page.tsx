@@ -73,7 +73,7 @@ Address: Fluent Inc., 123 Language St., San Francisco, CA 94103`,
 export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="flex items-center gap-3 px-4 md:px-8 py-4 md:py-5 sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
+      <header className="flex items-center gap-3 px-4 md:px-8 py-4 md:py-5 sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#1b2030]">
         <Link href="/profile" className="size-9 rounded-xl flex items-center justify-center hover:bg-primary/10 transition-colors">
           <ChevronLeft size={18} className="text-muted-foreground" />
         </Link>

@@ -156,7 +156,7 @@ function ModuleTooltip({ mod }: { mod: LearnModule }) {
     <div aria-hidden="true" className={cn(
       'absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50',
       'pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150',
-      'bg-white dark:bg-[#2a1a12] rounded-2xl',
+      'bg-white dark:bg-[#202638] rounded-2xl',
       'shadow-[0_8px_28px_rgba(0,0,0,0.12)] border border-black/[0.06] dark:border-white/[0.06]',
       'min-w-[148px]',
     )}>
@@ -227,7 +227,7 @@ function ModuleTooltip({ mod }: { mod: LearnModule }) {
       <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-0 h-0
         border-l-[5px] border-r-[5px] border-t-[5px]
         border-l-transparent border-r-transparent
-        border-t-white dark:border-t-[#2a1a12]" />
+        border-t-white dark:border-t-[#202638]" />
     </div>
   )
 }
@@ -239,7 +239,7 @@ function BonusTooltip({ activity }: { activity: BonusActivity }) {
     <div aria-hidden="true" className={cn(
       'absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50',
       'pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150',
-      'bg-white dark:bg-[#2a1a12] rounded-2xl px-3 py-3',
+      'bg-white dark:bg-[#202638] rounded-2xl px-3 py-3',
       'shadow-[0_8px_28px_rgba(0,0,0,0.12)] border border-amber-300/40 dark:border-amber-600/30',
       'min-w-[136px]',
     )}>
@@ -262,7 +262,7 @@ function BonusTooltip({ activity }: { activity: BonusActivity }) {
       <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-0 h-0
         border-l-[5px] border-r-[5px] border-t-[5px]
         border-l-transparent border-r-transparent
-        border-t-white dark:border-t-[#2a1a12]" />
+        border-t-white dark:border-t-[#202638]" />
     </div>
   )
 }
@@ -321,7 +321,7 @@ function MapNode({ mod }: { mod: LearnModule }) {
             initial={{ scale: 0, rotate: -15 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ type: 'spring', stiffness: 400, damping: 20, delay: 0.9 }}
-            className="absolute -top-2 -right-2 z-20 size-[18px] bg-violet-600 rounded-full flex items-center justify-center shadow-[0_2px_8px_rgba(139,92,246,0.55)] border-2 border-white dark:border-[#1c0e09]"
+            className="absolute -top-2 -right-2 z-20 size-[18px] bg-violet-600 rounded-full flex items-center justify-center shadow-[0_2px_8px_rgba(139,92,246,0.55)] border-2 border-white dark:border-[#171b28]"
           >
             <Crown size={9} className="text-white fill-white" />
           </motion.div>
@@ -336,7 +336,7 @@ function MapNode({ mod }: { mod: LearnModule }) {
             isDone    && 'bg-emerald-500 shadow-[0_5px_0_#15803d]',
             isCurrent && 'bg-primary shadow-[0_5px_0_#c4612e]',
             mod.state === 'available' &&
-              'bg-white dark:bg-[#3a2218] border-2 border-slate-200 dark:border-white/10 shadow-[0_5px_0_rgba(0,0,0,0.09)] dark:shadow-[0_5px_0_rgba(0,0,0,0.45)]',
+              'bg-white dark:bg-[#262d40] border-2 border-slate-200 dark:border-white/10 shadow-[0_5px_0_rgba(0,0,0,0.09)] dark:shadow-[0_5px_0_rgba(0,0,0,0.45)]',
             isLocked &&
               'bg-slate-100 dark:bg-slate-800/60 border-2 border-dashed border-slate-300 dark:border-slate-600 opacity-35 shadow-none',
           )}
@@ -463,7 +463,7 @@ function CrownChallengeTooltip({ challenge }: { challenge: CrownChallenge }) {
     <div aria-hidden="true" className={cn(
       'absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50',
       'pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150',
-      'bg-white dark:bg-[#2a1a12] rounded-2xl px-3 py-3',
+      'bg-white dark:bg-[#202638] rounded-2xl px-3 py-3',
       'shadow-[0_8px_28px_rgba(0,0,0,0.12)] border border-violet-300/40 dark:border-violet-600/30',
       'min-w-[148px]',
     )}>
@@ -483,7 +483,7 @@ function CrownChallengeTooltip({ challenge }: { challenge: CrownChallenge }) {
       <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px w-0 h-0
         border-l-[5px] border-r-[5px] border-t-[5px]
         border-l-transparent border-r-transparent
-        border-t-white dark:border-t-[#2a1a12]" />
+        border-t-white dark:border-t-[#202638]" />
     </div>
   )
 }
@@ -776,11 +776,11 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
   const starsPossible = totalModules * 3
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title="Learning Path" subtitle={`${languageFlag} ${languageName}`} />
 
       {/* Sticky progress strip */}
-      <div className="sticky top-0 z-20 bg-[#f6f4f2]/85 dark:bg-[#1c0e09]/85 backdrop-blur-md border-b border-black/[0.05] dark:border-white/[0.04] px-4 py-2.5">
+      <div className="sticky top-0 z-20 bg-[#f6f4f2]/85 dark:bg-[#171b28]/85 backdrop-blur-md border-b border-black/[0.05] dark:border-white/[0.04] px-4 py-2.5">
         <div className="max-w-sm mx-auto flex items-center gap-3">
           <span className="text-lg leading-none shrink-0">{languageFlag}</span>
 

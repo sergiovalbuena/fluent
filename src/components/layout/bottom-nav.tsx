@@ -19,7 +19,7 @@ export function BottomNav() {
   ]
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 border-t border-primary/10 bg-[#f8f6f5]/90 dark:bg-[#23140f]/90 backdrop-blur-md px-2 pb-6 pt-3 flex justify-around items-center z-20">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 border-t border-primary/10 bg-[#f8f6f5]/90 dark:bg-[#1b2030]/90 backdrop-blur-md px-2 pb-6 pt-3 flex justify-around items-center z-20">
       {navItems.map((item) => {
         if (item.type === 'action') {
           const Icon = item.icon

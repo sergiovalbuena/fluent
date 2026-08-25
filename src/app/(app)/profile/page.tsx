@@ -172,7 +172,7 @@ export default function ProfilePage() {
     <div className="flex flex-col min-h-screen">
 
       {/* Header */}
-      <header className="flex items-center px-4 md:px-8 py-4 md:py-5 sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
+      <header className="flex items-center px-4 md:px-8 py-4 md:py-5 sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#1b2030]">
         <h1 className="text-xl md:text-2xl font-bold">{t('title')}</h1>
       </header>
 

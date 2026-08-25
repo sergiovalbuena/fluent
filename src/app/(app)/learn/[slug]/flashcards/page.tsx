@@ -149,7 +149,7 @@ export default function FlashcardsPage() {
     <div className="flex flex-col min-h-screen">
       <AppTopbar back={{ href: `/learn/${slug}`, label: 'Flashcards' }} />
       {/* Progress sub-bar */}
-      <div className="px-4 md:px-8 py-2 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#23140f]">
+      <div className="px-4 md:px-8 py-2 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#1b2030]">
         <div className="flex justify-between items-center mb-1">
           <span className="text-xs text-muted-foreground font-medium">{currentIndex + 1} / {cards.length}</span>
           <span className="text-xs text-primary font-bold">{progress}%</span>

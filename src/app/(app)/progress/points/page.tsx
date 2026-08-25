@@ -17,7 +17,7 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
     }}
     transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
     className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#2c1a12]',
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
       className
     )}
     {...rest}
@@ -89,7 +89,7 @@ function SkillRow({ skill, activities, color }: { skill: string; activities: str
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function PointsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#1c0e09]">
+    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar back={{ href: '/progress', label: 'Progress' }} />
 
       <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
@@ -103,7 +103,7 @@ export default function PointsPage() {
           {/* ── Hero ──────────────────────────────────────────────────────────── */}
           <Block
             className="col-span-12 relative overflow-hidden flex flex-col gap-2 p-6 md:p-8"
-            style={{ background: 'linear-gradient(135deg, #1c0704 0%, #7c2d12 55%, #9a3412 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #10131c 0%, #7c2d12 55%, #9a3412 100%)' }}
           >
             <div className="absolute right-6 bottom-4 pointer-events-none select-none opacity-[0.07]">
               <Zap size={120} className="text-white" />
@@ -140,7 +140,7 @@ export default function PointsPage() {
 
           <Block
             className="col-span-12 relative overflow-hidden p-5 md:p-6"
-            style={{ background: 'linear-gradient(135deg, #1c0704 0%, #7c2d12 60%, #c2410c 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #10131c 0%, #7c2d12 60%, #c2410c 100%)' }}
           >
             <div className="absolute right-4 top-4 pointer-events-none select-none opacity-[0.08]">
               <Flame size={80} className="text-white" />
