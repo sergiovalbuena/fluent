@@ -1,4 +1,4 @@
-import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import Link from 'next/link'
 import { BookOpen, Plus, ExternalLink } from 'lucide-react'
@@ -27,7 +27,7 @@ type ModuleRow = {
 
 async function toggleModule(id: string, current: boolean) {
   'use server'
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   await supabase.from('modules').update({ is_published: !current }).eq('id', id)
   revalidatePath('/admin/modules')
 }
@@ -42,7 +42,7 @@ async function createModule(formData: FormData) {
 
   if (!title || !slug || !language_code) return
 
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
 
   // Get next order_index for this language
   const { data: existing } = await supabase
@@ -68,7 +68,7 @@ async function createModule(formData: FormData) {
 }
 
 export default async function ModulesPage() {
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   const { data } = await supabase
     .from('modules')
     .select('id, title, icon, slug, language_code, order_index, is_published, lessons(count)')

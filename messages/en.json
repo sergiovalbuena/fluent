@@ -120,6 +120,8 @@
     "display_name": "Display Name",
     "email": "Email",
     "native_language": "App Language",
+    "translation_language": "Translations in",
+    "translation_language_desc": "Language used to show the meaning of words and phrases",
     "learning": "Learning",
     "daily_goal": "Daily Goal",
     "notifications": "Notifications",

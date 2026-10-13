@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Shuffle, Trophy, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation, stripArticle } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -22,10 +24,6 @@ function shuffle<T>(arr: T[]): T[] {
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
-}
-
-function getMainWord(word: string): string {
-  return word.replace(/^(La|El|Los|Las|Un|Una)\s+/i, '').toLowerCase().trim()
 }
 
 function scrambleChars(word: string): Tile[] {
@@ -65,6 +63,7 @@ const TOTAL_ROUNDS = 10
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function WordScramblePage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [pool, setPool] = useState<WordPair[]>([])
   const [loading, setLoading] = useState(true)
   const [phase, setPhase] = useState<Phase>('ready')
@@ -85,23 +84,24 @@ export default function WordScramblePage() {
     const supabase = createClient()
     supabase
       .from('lessons')
-      .select('content')
+      .select('content, modules!inner(language_code)')
       .eq('type', 'vocabulary')
       .eq('is_published', true)
+      .eq('modules.language_code', languageCode)
       .then(({ data }) => {
         const items: WordPair[] = []
         data?.forEach((lesson) => {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
           c.items?.forEach((i) => {
-            if (i.word && i.translation && getMainWord(i.word).length >= 3) {
-              items.push({ word: i.word, translation: i.translation })
+            if (i.word && i.translation && stripArticle(i.word, languageCode).length >= 3) {
+              items.push({ word: i.word, translation: pickTranslation(i, translationLang) })
             }
           })
         })
         setPool(items)
         setLoading(false)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   const loadRound = useCallback(
     (roundIndex: number, currentPool: WordPair[], used: number[]) => {
@@ -112,7 +112,7 @@ export default function WordScramblePage() {
 
       const pickedIdx = available[Math.floor(Math.random() * available.length)]
       const pair = currentPool[pickedIdx]
-      const mw = getMainWord(pair.word)
+      const mw = stripArticle(pair.word, languageCode)
 
       setMainWord(mw)
       setClue(pair.translation)
@@ -122,7 +122,7 @@ export default function WordScramblePage() {
       setUsedIndices((prev) => [...prev, pickedIdx])
       void roundIndex // suppress unused warning
     },
-    [],
+    [languageCode],
   )
 
   function startGame() {
@@ -134,7 +134,7 @@ export default function WordScramblePage() {
     const available = pool.map((_, i) => i)
     const pickedIdx = available[Math.floor(Math.random() * available.length)]
     const pair = pool[pickedIdx]
-    const mw = getMainWord(pair.word)
+    const mw = stripArticle(pair.word, languageCode)
     setMainWord(mw)
     setClue(pair.translation)
     setBankTiles(scrambleChars(mw))

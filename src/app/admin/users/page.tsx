@@ -1,4 +1,4 @@
-import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import { Users, Zap, Gem, Flame } from 'lucide-react'
 
@@ -31,13 +31,13 @@ function formatDate(date: string): string {
 
 async function toggleAdmin(userId: string, current: boolean) {
   'use server'
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   await supabase.from('user_profiles').update({ is_admin: !current }).eq('user_id', userId)
   revalidatePath('/admin/users')
 }
 
 export default async function UsersPage() {
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
 
   const [{ data: profiles }, authResult] = await Promise.all([
     supabase.from('user_profiles')

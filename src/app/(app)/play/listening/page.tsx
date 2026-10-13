@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Headphones, Volume2, Trophy, AlertTriangle } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation, speak } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -21,16 +23,6 @@ function shuffle<T>(arr: T[]): T[] {
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
-}
-
-function speak(text: string, onEnd?: () => void) {
-  if (typeof window === 'undefined' || !window.speechSynthesis) return
-  window.speechSynthesis.cancel()
-  const utt = new SpeechSynthesisUtterance(text)
-  utt.lang = 'es-ES'
-  utt.rate = 0.85
-  if (onEnd) utt.onend = onEnd
-  window.speechSynthesis.speak(utt)
 }
 
 async function saveGameResult(correct: number, total: number) {
@@ -61,6 +53,7 @@ const TOTAL_ROUNDS = 10
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function ListeningPage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [pool, setPool] = useState<WordPair[]>([])
   const [loading, setLoading] = useState(true)
   const [speechSupported, setSpeechSupported] = useState(true)
@@ -90,21 +83,22 @@ export default function ListeningPage() {
     const supabase = createClient()
     supabase
       .from('lessons')
-      .select('content')
+      .select('content, modules!inner(language_code)')
       .eq('type', 'vocabulary')
       .eq('is_published', true)
+      .eq('modules.language_code', languageCode)
       .then(({ data }) => {
         const items: WordPair[] = []
         data?.forEach((lesson) => {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
           c.items?.forEach((i) => {
-            if (i.word && i.translation) items.push({ word: i.word, translation: i.translation })
+            if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) })
           })
         })
         setPool(items)
         setLoading(false)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   const loadRound = useCallback(
     (currentPool: WordPair[], used: number[]) => {
@@ -131,7 +125,7 @@ export default function ListeningPage() {
 
   function autoSpeak(word: string) {
     setIsPlaying(true)
-    speak(word, () => setIsPlaying(false))
+    speak(word, languageCode, { onEnd: () => setIsPlaying(false) })
   }
 
   function startGame() {
@@ -386,7 +380,7 @@ export default function ListeningPage() {
               <motion.button
                 onClick={() => {
                   setIsPlaying(true)
-                  speak(currentWord, () => setIsPlaying(false))
+                  speak(currentWord, languageCode, { onEnd: () => setIsPlaying(false) })
                 }}
                 animate={isPlaying ? { scale: [1, 1.08, 1] } : { scale: 1 }}
                 transition={

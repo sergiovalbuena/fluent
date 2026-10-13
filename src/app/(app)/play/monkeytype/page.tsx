@@ -4,6 +4,8 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { Keyboard } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -41,6 +43,7 @@ async function saveGameResult(correct: number, total: number) {
 
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function MonkeyTypePage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [pool, setPool] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
   const [phase, setPhase] = useState<Phase>('ready')
@@ -67,17 +70,17 @@ export default function MonkeyTypePage() {
   // Load vocab
   useEffect(() => {
     const supabase = createClient()
-    supabase.from('lessons').select('content').eq('type', 'vocabulary').eq('is_published', true)
+    supabase.from('lessons').select('content, modules!inner(language_code)').eq('type', 'vocabulary').eq('is_published', true).eq('modules.language_code', languageCode)
       .then(({ data }) => {
         const items: WordPair[] = []
         data?.forEach(lesson => {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: i.translation }) })
+          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) }) })
         })
         setPool(items.map(i => i.word))
         setLoading(false)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   // Scroll current word into view
   useEffect(() => {

@@ -120,6 +120,8 @@
     "display_name": "表示名",
     "email": "メールアドレス",
     "native_language": "アプリの言語",
+    "translation_language": "翻訳の言語",
+    "translation_language_desc": "単語やフレーズの意味を表示する言語",
     "learning": "学習中",
     "daily_goal": "デイリーゴール",
     "notifications": "通知",

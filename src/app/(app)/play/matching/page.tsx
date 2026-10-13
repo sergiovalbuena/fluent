@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { LayoutGrid } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -66,6 +68,7 @@ const PAIRS = 8
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function MatchingPage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [phase, setPhase] = useState<Phase>('ready')
   const [vocab, setVocab] = useState<VocabItem[]>([])
   const [cards, setCards] = useState<Card[]>([])
@@ -83,9 +86,10 @@ export default function MatchingPage() {
     const supabase = createClient()
     supabase
       .from('lessons')
-      .select('content')
+      .select('content, modules!inner(language_code)')
       .eq('type', 'vocabulary')
       .eq('is_published', true)
+      .eq('modules.language_code', languageCode)
       .then(({ data }) => {
         if (!data) return
         const items: VocabItem[] = []
@@ -93,13 +97,13 @@ export default function MatchingPage() {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
           if (c?.items) {
             for (const item of c.items) {
-              if (item.word && item.translation) items.push({ word: item.word, translation: item.translation })
+              if (item.word && item.translation) items.push({ word: item.word, translation: pickTranslation(item, translationLang) })
             }
           }
         }
         setVocab(items)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   const stopTimer = useCallback(() => {
     if (timerRef.current) {

@@ -1,31 +1,27 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useTransition } from 'react'
+import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Check, ChevronDown, Lock } from 'lucide-react'
+import { LANGUAGES, COURSE_LANGUAGES, getLanguage } from '@/lib/languages'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { setActiveLanguage } from '@/app/(app)/actions'
 
-const LANGUAGES = [
-  { code: 'es', flag: '🇪🇸', name: 'Spanish', available: true },
-  { code: 'fr', flag: '🇫🇷', name: 'French', available: true },
-  { code: 'pt', flag: '🇧🇷', name: 'Portuguese', available: true },
-  { code: 'en', flag: '🇺🇸', name: 'English', available: true },
-  { code: 'de', flag: '🇩🇪', name: 'German', available: false },
-  { code: 'it', flag: '🇮🇹', name: 'Italian', available: false },
-  { code: 'ja', flag: '🇯🇵', name: 'Japanese', available: false },
-  { code: 'zh', flag: '🇨🇳', name: 'Chinese', available: false },
-]
+const OPTIONS = LANGUAGES.map(l => ({ ...l, available: COURSE_LANGUAGES.includes(l.code) }))
 
-type Props = {
-  activeCode?: string
-  onSwitch?: (code: string) => void
-}
-
-export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
+export function LanguageSwitcher() {
+  const { languageCode } = useActiveLanguage()
   const [open, setOpen] = useState(false)
-  const [active, setActive] = useState(activeCode)
+  const [active, setActive] = useState(languageCode)
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
   const ref = useRef<HTMLDivElement>(null)
 
-  const current = LANGUAGES.find(l => l.code === active) ?? LANGUAGES[0]
+  useEffect(() => { setActive(languageCode) }, [languageCode])
+
+  const current = getLanguage(active)
 
   // Close on outside click — ref is stable (useRef), setOpen is stable (useState setter)
   useEffect(() => {
@@ -37,9 +33,21 @@ export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
   }, [setOpen])
 
   function select(code: string) {
-    setActive(code)
-    onSwitch?.(code)
     setOpen(false)
+    if (code === active) return
+    const previous = active
+    setActive(code)
+    startTransition(async () => {
+      try {
+        await setActiveLanguage(code)
+        toast.success(`Now learning ${getLanguage(code).name} ${getLanguage(code).flag}`)
+        router.push('/learn')
+        router.refresh()
+      } catch {
+        setActive(previous)
+        toast.error('Could not switch language')
+      }
+    })
   }
 
   return (
@@ -47,7 +55,9 @@ export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
       {/* Trigger pill */}
       <button
         onClick={() => setOpen(o => !o)}
-        className="flex items-center gap-2 bg-white dark:bg-slate-800 border border-primary/10 hover:border-primary/30 transition-colors px-3 py-1.5 rounded-full cursor-pointer"
+        disabled={isPending}
+        aria-label={`Learning ${current.name}. Change language`}
+        className="disabled:opacity-60 flex items-center gap-2 bg-white dark:bg-slate-800 border border-primary/10 hover:border-primary/30 transition-colors px-3 py-1.5 rounded-full cursor-pointer"
       >
         <span className="text-base leading-none">{current.flag}</span>
         <ChevronDown
@@ -73,7 +83,7 @@ export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
 
               {/* Available */}
               <div className="space-y-0.5">
-                {LANGUAGES.filter(l => l.available).map(lang => (
+                {OPTIONS.filter(l => l.available).map(lang => (
                   <button
                     key={lang.code}
                     onClick={() => select(lang.code)}
@@ -95,7 +105,7 @@ export function LanguageSwitcher({ activeCode = 'es', onSwitch }: Props) {
 
               {/* Coming soon */}
               <div className="space-y-0.5">
-                {LANGUAGES.filter(l => !l.available).map(lang => (
+                {OPTIONS.filter(l => !l.available).map(lang => (
                   <div
                     key={lang.code}
                     className="flex items-center gap-3 px-2.5 py-2 rounded-xl opacity-45 cursor-not-allowed"

@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Grid3x3, X, CheckCircle2, XCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -73,6 +75,7 @@ async function saveGameResult(correct: number, total: number) {
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function TicTacToePage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [phase, setPhase] = useState<Phase>('ready')
   const [vocab, setVocab] = useState<VocabItem[]>([])
   const [questions, setQuestions] = useState<Question[]>([])
@@ -92,9 +95,10 @@ export default function TicTacToePage() {
     const supabase = createClient()
     supabase
       .from('lessons')
-      .select('content')
+      .select('content, modules!inner(language_code)')
       .eq('type', 'vocabulary')
       .eq('is_published', true)
+      .eq('modules.language_code', languageCode)
       .then(({ data }) => {
         if (!data) return
         const items: VocabItem[] = []
@@ -102,13 +106,13 @@ export default function TicTacToePage() {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
           if (c?.items) {
             for (const item of c.items) {
-              if (item.word && item.translation) items.push({ word: item.word, translation: item.translation })
+              if (item.word && item.translation) items.push({ word: item.word, translation: pickTranslation(item, translationLang) })
             }
           }
         }
         setVocab(items)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   const currentQuestion = questions[qIndex % Math.max(questions.length, 1)]
 

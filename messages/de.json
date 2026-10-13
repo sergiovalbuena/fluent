@@ -120,6 +120,8 @@
     "display_name": "Benutzername",
     "email": "E-Mail",
     "native_language": "App-Sprache",
+    "translation_language": "Übersetzungen auf",
+    "translation_language_desc": "Sprache, in der die Bedeutung von Wörtern und Sätzen angezeigt wird",
     "learning": "Lernend",
     "daily_goal": "Tagesziel",
     "notifications": "Benachrichtigungen",

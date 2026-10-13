@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { PenLine, Trophy } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation, stripArticle } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -23,10 +25,6 @@ function shuffle<T>(arr: T[]): T[] {
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
-}
-
-function getMainWord(word: string): string {
-  return word.replace(/^(La|El|Los|Las|Un|Una)\s+/i, '').toLowerCase().trim()
 }
 
 const SKIP_WORDS = new Set([
@@ -85,6 +83,7 @@ const TOTAL_ROUNDS = 10
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function FillTheBlankPage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [phrases, setPhrases] = useState<PhrasePair[]>([])
   const [vocabPool, setVocabPool] = useState<WordPair[]>([])
   const [loading, setLoading] = useState(true)
@@ -109,14 +108,16 @@ export default function FillTheBlankPage() {
     Promise.all([
       supabase
         .from('lessons')
-        .select('content')
+        .select('content, modules!inner(language_code)')
         .eq('type', 'phrases')
-        .eq('is_published', true),
+        .eq('is_published', true)
+        .eq('modules.language_code', languageCode),
       supabase
         .from('lessons')
-        .select('content')
+        .select('content, modules!inner(language_code)')
         .eq('type', 'vocabulary')
-        .eq('is_published', true),
+        .eq('is_published', true)
+        .eq('modules.language_code', languageCode),
     ]).then(([phrasesRes, vocabRes]) => {
       // Collect phrases
       const phraseItems: PhrasePair[] = []
@@ -128,7 +129,7 @@ export default function FillTheBlankPage() {
         const arr = c.items ?? c.phrases ?? []
         arr.forEach((i) => {
           if (i.phrase && i.translation && i.phrase.split(' ').length >= 3) {
-            phraseItems.push({ phrase: i.phrase, translation: i.translation })
+            phraseItems.push({ phrase: i.phrase, translation: pickTranslation(i, translationLang) })
           }
         })
       })
@@ -138,7 +139,7 @@ export default function FillTheBlankPage() {
       vocabRes.data?.forEach((lesson) => {
         const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
         c.items?.forEach((i) => {
-          if (i.word && i.translation) vocabItems.push({ word: i.word, translation: i.translation })
+          if (i.word && i.translation) vocabItems.push({ word: i.word, translation: pickTranslation(i, translationLang) })
         })
       })
 
@@ -146,7 +147,7 @@ export default function FillTheBlankPage() {
       setVocabPool(vocabItems)
       setLoading(false)
     })
-  }, [])
+  }, [languageCode, translationLang])
 
   const loadRound = useCallback(
     (currentPhrases: PhrasePair[], currentVocab: WordPair[], used: number[]) => {
@@ -160,7 +161,7 @@ export default function FillTheBlankPage() {
       // Build distractors: Spanish words of similar length (±4 chars)
       const distractors = shuffle(
         currentVocab
-          .map((v) => getMainWord(v.word))
+          .map((v) => stripArticle(v.word, languageCode))
           .filter(
             (w) =>
               w !== blankWord_ &&
@@ -185,7 +186,7 @@ export default function FillTheBlankPage() {
         usedIdx: pickedIdx,
       }
     },
-    [],
+    [languageCode],
   )
 
   function startGame() {

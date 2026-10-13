@@ -3,6 +3,10 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
+import { useRouter } from 'next/navigation'
+import { toast } from 'sonner'
+import { getLanguage } from '@/lib/languages'
+import { setTranslationLanguage } from '@/app/(app)/actions'
 import type { UserProfile } from '@/lib/types/database'
 import { useTranslations } from 'next-intl'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
@@ -27,6 +31,7 @@ import {
   ChevronRight,
   Clock,
   Globe,
+  Languages,
   HelpCircle,
   LogIn,
   Monitor,
@@ -53,6 +58,9 @@ const APP_LANGUAGES = [
   { code: 'ko', name: 'Korean', flag: '🇰🇷' },
   { code: 'ar', name: 'Arabic', flag: '🇸🇦' },
 ]
+
+// Languages lesson content can be translated into
+const TRANSLATION_LANGUAGES = ['es', 'en', 'pt', 'fr', 'de', 'it']
 
 const DAILY_GOALS = [
   { value: 5,  label: '5 min',  desc: 'Casual 🌱' },
@@ -109,6 +117,7 @@ function RowInner({ icon: Icon, label, value }: {
 export default function ProfilePage() {
   const t = useTranslations('profile')
   const { theme, setTheme } = useTheme()
+  const router = useRouter()
   const [mounted, setMounted] = useState(false)
 
   // Auth + profile
@@ -118,6 +127,8 @@ export default function ProfilePage() {
   // Settings state (initialised from DB once loaded)
   const [appLang, setAppLang]             = useState({ code: 'en', name: 'English', flag: '🇬🇧' })
   const [langSheetOpen, setLangSheetOpen] = useState(false)
+  const [translationLang, setTranslationLang]       = useState('en')
+  const [translationSheetOpen, setTranslationSheetOpen] = useState(false)
   const [notifications, setNotifications] = useState('Off')
   const [dailyGoal, setDailyGoal]         = useState(10)
   const [reminderTime, setReminderTime]   = useState('8:00 AM')
@@ -143,6 +154,7 @@ export default function ProfilePage() {
           // Hydrate settings from DB
           const lang = APP_LANGUAGES.find(l => l.code === data.app_language_code)
           if (lang) setAppLang(lang)
+          setTranslationLang((data as UserProfile).translation_language_code ?? data.app_language_code ?? 'en')
           setNotifications(data.notification_preference ?? 'Off')
           setDailyGoal(data.daily_goal_minutes ?? 10)
           setReminderTime(data.reminder_time ?? '8:00 AM')
@@ -316,13 +328,58 @@ export default function ProfilePage() {
                         }`}
                         onClick={() => {
                           setAppLang(lang)
-                          void saveSetting('app_language_code', lang.code)
+                          void saveSetting('app_language_code', lang.code).then(() => router.refresh())
                           setLangSheetOpen(false)
                         }}
                       >
                         <span className="text-2xl">{lang.flag}</span>
                         <span className="font-medium flex-1 text-left text-sm">{lang.name}</span>
                         {appLang.code === lang.code && (
+                          <div className="size-5 rounded-full bg-primary flex items-center justify-center shrink-0">
+                            <Check size={11} className="text-white" />
+                          </div>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </SheetContent>
+              </Sheet>
+
+              {/* Translation language */}
+              <Sheet open={translationSheetOpen} onOpenChange={setTranslationSheetOpen}>
+                <button className="w-full text-left cursor-pointer" onClick={() => setTranslationSheetOpen(true)}>
+                  <RowInner
+                    icon={Languages}
+                    label={t('translation_language')}
+                    value={`${getLanguage(translationLang).flag} ${getLanguage(translationLang).name}`}
+                  />
+                </button>
+                <SheetContent side="bottom" className="rounded-t-3xl max-h-[80vh] flex flex-col">
+                  <SheetHeader className="px-6 pt-2 pb-2">
+                    <SheetTitle className="text-base font-bold">{t('translation_language')}</SheetTitle>
+                    <p className="text-xs text-muted-foreground">{t('translation_language_desc')}</p>
+                  </SheetHeader>
+                  <div className="overflow-y-auto px-4 pb-8 space-y-2 flex-1">
+                    {TRANSLATION_LANGUAGES.map(code => getLanguage(code)).map(lang => (
+                      <button
+                        key={lang.code}
+                        className={`w-full flex items-center gap-3 p-3.5 rounded-xl border-2 transition-all ${
+                          translationLang === lang.code
+                            ? 'border-primary bg-primary/5'
+                            : 'border-transparent bg-muted/30 hover:border-primary/20 dark:bg-slate-700/30'
+                        }`}
+                        onClick={() => {
+                          const previous = translationLang
+                          setTranslationLang(lang.code)
+                          setTranslationSheetOpen(false)
+                          setTranslationLanguage(lang.code)
+                            .then(() => router.refresh())
+                            .catch(() => { setTranslationLang(previous); toast.error('Could not save') })
+                        }}
+                      >
+                        <span className="text-2xl">{lang.flag}</span>
+                        <span className="font-medium flex-1 text-left text-sm">{lang.name}</span>
+                        {translationLang === lang.code && (
                           <div className="size-5 rounded-full bg-primary flex items-center justify-center shrink-0">
                             <Check size={11} className="text-white" />
                           </div>

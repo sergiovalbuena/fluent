@@ -1,4 +1,4 @@
-import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -38,14 +38,14 @@ type ModuleRow = {
 
 async function toggleLesson(id: string, current: boolean, moduleId: string) {
   'use server'
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   await supabase.from('lessons').update({ is_published: !current }).eq('id', id)
   revalidatePath(`/admin/modules/${moduleId}`)
 }
 
 async function deleteLesson(id: string, moduleId: string) {
   'use server'
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   await supabase.from('lessons').delete().eq('id', id)
   revalidatePath(`/admin/modules/${moduleId}`)
 }
@@ -56,7 +56,7 @@ async function addLesson(formData: FormData) {
   const title = formData.get('title') as string
   const moduleId = formData.get('_moduleId') as string
   if (!type || !title || !moduleId) return
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   const { data: existing } = await supabase
     .from('lessons')
     .select('order_index')
@@ -77,7 +77,7 @@ async function addLesson(formData: FormData) {
 
 async function updateLessonContent(id: string, title: string, contentJson: string, moduleId: string) {
   'use server'
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   const content = JSON.parse(contentJson) as Record<string, unknown>
   await supabase.from('lessons').update({ title, content }).eq('id', id)
   revalidatePath(`/admin/modules/${moduleId}`)
@@ -89,7 +89,7 @@ interface PageProps {
 
 export default async function ModuleDetailPage({ params }: PageProps) {
   const { id } = await params
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
 
   const [{ data: mod }, { data: lessons }] = await Promise.all([
     supabase.from('modules').select('*').eq('id', id).maybeSingle(),

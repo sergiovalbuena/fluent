@@ -31,6 +31,8 @@ export type UserProfile = {
   reminder_time: string
   motivation: string | null
   app_language_code: string
+  /** Null = same as app_language_code */
+  translation_language_code: string | null
   notification_preference: string
   skills: Skills
   last_streak_milestone: number

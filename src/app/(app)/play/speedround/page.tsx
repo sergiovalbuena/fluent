@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Zap, Clock, Trophy, Star, ChevronLeft } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -72,6 +74,7 @@ async function saveGameResult(correct: number, total: number) {
 
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function SpeedRoundPage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [pool, setPool] = useState<WordPair[]>([])
   const [loading, setLoading] = useState(true)
   const [phase, setPhase] = useState<Phase>('ready')
@@ -94,21 +97,22 @@ export default function SpeedRoundPage() {
     const supabase = createClient()
     supabase
       .from('lessons')
-      .select('content')
+      .select('content, modules!inner(language_code)')
       .eq('type', 'vocabulary')
       .eq('is_published', true)
+      .eq('modules.language_code', languageCode)
       .then(({ data }) => {
         const items: WordPair[] = []
         data?.forEach((lesson) => {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
           c.items?.forEach((i) => {
-            if (i.word && i.translation) items.push({ word: i.word, translation: i.translation })
+            if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) })
           })
         })
         setPool(items)
         setLoading(false)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   const finishGame = useCallback(
     async (finalScore: number, finalAnswered: number) => {

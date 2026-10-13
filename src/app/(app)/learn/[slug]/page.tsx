@@ -1,5 +1,7 @@
 import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
+import { getLanguageSettings } from '@/lib/active-language'
+import { pickTranslation, type Translatable } from '@/lib/languages'
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { ModuleContentView, type ModuleContentData, type VocabItem, type PhraseItem, type QAItem } from '@/components/learn/module-content'
@@ -8,12 +10,13 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-const getModuleBySlug = cache(async (slug: string) => {
+const getModuleBySlug = cache(async (slug: string, languageCode: string) => {
   const supabase = await createClient()
   return supabase
     .from('modules')
     .select('*')
     .eq('slug', slug)
+    .eq('language_code', languageCode)
     .eq('is_published', true)
     .limit(1)
     .maybeSingle()
@@ -32,7 +35,8 @@ const getLessonsByModuleId = cache(async (moduleId: string) => {
 export default async function LessonPage({ params }: PageProps) {
   const { slug } = await params
 
-  const { data: lesson } = await getModuleBySlug(slug)
+  const { languageCode, translationLang } = await getLanguageSettings()
+  const { data: lesson } = await getModuleBySlug(slug, languageCode)
   if (!lesson) notFound()
 
   const { data: exercises } = await getLessonsByModuleId(lesson.id)
@@ -45,8 +49,13 @@ export default async function LessonPage({ params }: PageProps) {
   const arrangeEx   = exerciseList.find(e => e.type === 'arrange')
   const translateEx = exerciseList.find(e => e.type === 'translate')
 
-  const vocabItems: VocabItem[]    = (vocabEx?.content as { items?: VocabItem[] })?.items ?? []
-  const phraseItems: PhraseItem[]  = (phrasesEx?.content as { items?: PhraseItem[] })?.items ?? []
+  type RawVocab  = VocabItem & Translatable
+  type RawPhrase = PhraseItem & Translatable
+  const phrasesContent = phrasesEx?.content as { items?: RawPhrase[]; phrases?: RawPhrase[] } | undefined
+  const vocabItems: VocabItem[]    = ((vocabEx?.content as { items?: RawVocab[] })?.items ?? [])
+    .map(i => ({ ...i, translation: pickTranslation(i, translationLang) }))
+  const phraseItems: PhraseItem[]  = (phrasesContent?.items ?? phrasesContent?.phrases ?? [])
+    .map(i => ({ ...i, translation: pickTranslation(i, translationLang) }))
   const qaItems: QAItem[]          = (qaEx?.content as { questions?: QAItem[] })?.questions ?? []
   const storyContent               = (storyEx?.content as { text?: string }) ?? {}
   const arrangeCount               = (arrangeEx?.content as { sentences?: unknown[] })?.sentences?.length ?? 0

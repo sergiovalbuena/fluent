@@ -1,4 +1,4 @@
-import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import Link from 'next/link'
 import { BookOpen } from 'lucide-react'
@@ -13,13 +13,13 @@ type LanguageRow = {
 
 async function toggleLanguage(code: string, current: boolean) {
   'use server'
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
   await supabase.from('languages').update({ is_available: !current }).eq('code', code)
   revalidatePath('/admin/languages')
 }
 
 export default async function LanguagesPage() {
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
 
   const [{ data: languages }, { data: moduleCounts }] = await Promise.all([
     supabase.from('languages').select('code, name, native_name, flag_emoji, is_available').order('name'),

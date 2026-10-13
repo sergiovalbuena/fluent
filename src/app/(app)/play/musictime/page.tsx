@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Music, Volume2, CheckCircle2, XCircle, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { getLanguage } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -82,6 +84,7 @@ function renderDisplayLine(displayLine: string) {
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function MusicTimePage() {
+  const { languageCode } = useActiveLanguage()
   const [phase, setPhase] = useState<Phase>('ready')
   const [rounds, setRounds] = useState<Lyric[]>([])
   const [qIndex, setQIndex] = useState(0)
@@ -95,13 +98,13 @@ export default function MusicTimePage() {
     if (!hasSpeech) return
     window.speechSynthesis.cancel()
     const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'es-ES'
+    utterance.lang = getLanguage(languageCode).speechLocale
     utterance.rate = 0.82
     utterance.onstart = () => setIsSpeaking(true)
     utterance.onend = () => setIsSpeaking(false)
     utterance.onerror = () => setIsSpeaking(false)
     window.speechSynthesis.speak(utterance)
-  }, [])
+  }, [languageCode])
 
   useEffect(() => {
     if (phase !== 'playing') return

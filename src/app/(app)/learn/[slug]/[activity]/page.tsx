@@ -18,6 +18,8 @@ import { AppTopbar } from '@/components/layout/app-topbar'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { toast } from 'sonner'
 import { cn } from '@/lib/utils'
+import { getLanguage, pickTranslation, speak, splitArticle } from '@/lib/languages'
+import { useActiveLanguage } from '@/components/providers/language-provider'
 import { ResultScreen } from '@/components/lesson/result-screen'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -63,26 +65,31 @@ interface LessonContent {
   translateItems?: TranslateItem[]
 }
 
+type RawItem = {
+  word?: string; translation?: string; translations?: Record<string, string>; icon?: string; example?: string
+  phrase?: string; prompt?: string; answer?: string; hint?: string
+}
+
 interface RawContent {
-  items?: Array<{
-    word?: string; translation?: string; icon?: string; example?: string
-    phrase?: string; prompt?: string; answer?: string; hint?: string
-  }>
+  items?: RawItem[]
+  // Some phrase lessons store their list under `phrases` instead of `items`
+  phrases?: RawItem[]
   questions?: Array<{ question: string; options: string[]; correct: string | number; explanation?: string }>
-  sentences?: Array<{ words: string[]; translation: string }>
+  sentences?: Array<{ words: string[]; translation: string; translations?: Record<string, string> }>
   text?: string
   translation?: string
+  translations?: Record<string, string>
   highlighted_words?: string[]
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function normalizeContent(raw: RawContent, lessonType: string): LessonContent {
+function normalizeContent(raw: RawContent, lessonType: string, translationLang: string): LessonContent {
   if (lessonType === 'vocabulary') {
     return {
       words: (raw.items ?? []).map(i => ({
         word: i.word ?? '',
-        translation: i.translation ?? '',
+        translation: pickTranslation(i, translationLang),
         emoji: i.icon ?? '📝',
         example: i.example,
       })),
@@ -90,9 +97,9 @@ function normalizeContent(raw: RawContent, lessonType: string): LessonContent {
   }
   if (lessonType === 'phrases') {
     return {
-      phrases: (raw.items ?? []).map(i => ({
+      phrases: (raw.items ?? raw.phrases ?? []).map(i => ({
         phrase: i.phrase ?? '',
-        translation: i.translation ?? '',
+        translation: pickTranslation(i, translationLang),
       })),
     }
   }
@@ -107,13 +114,13 @@ function normalizeContent(raw: RawContent, lessonType: string): LessonContent {
     }
   }
   if (lessonType === 'story') {
-    return { story: raw.text, storyTranslation: raw.translation, highlightedWords: raw.highlighted_words }
+    return { story: raw.text, storyTranslation: pickTranslation(raw, translationLang), highlightedWords: raw.highlighted_words }
   }
   if (lessonType === 'arrange') {
     return {
       arrangeSentences: (raw.sentences ?? []).map(s => ({
         words: s.words,
-        translation: s.translation,
+        translation: pickTranslation(s, translationLang),
       })),
     }
   }
@@ -825,32 +832,14 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
 
 // ─── Vocabulary Word List (VanishList-inspired) ───────────────────────────────
 
-const ARTICLES = /^(el|la|los|las|un|una|unos|unas)\s+/i
-
-function splitArticle(word: string): { article: string; main: string } | null {
-  const m = word.match(ARTICLES)
-  if (!m) return null
-  return { article: m[0].trimEnd(), main: word.slice(m[0].length) }
-}
-
 type VocabEntry = {
   id: string | number
   word: string
   translation: string
 }
 
-const LANG_LOCALE: Record<string, string> = {
-  es: 'es-ES', fr: 'fr-FR', pt: 'pt-BR', de: 'de-DE',
-  it: 'it-IT', ja: 'ja-JP', zh: 'zh-CN', ko: 'ko-KR',
-}
-
 function speakWord(word: string, langCode: string) {
-  if (typeof window === 'undefined' || !window.speechSynthesis) return
-  window.speechSynthesis.cancel()
-  const u = new SpeechSynthesisUtterance(word)
-  u.lang = LANG_LOCALE[langCode] ?? langCode
-  u.rate = 0.85
-  window.speechSynthesis.speak(u)
+  speak(word, langCode)
 }
 
 function VocabRow({
@@ -903,7 +892,7 @@ function VocabRow({
     >
       <span className="flex-1 font-semibold text-sm text-slate-900 dark:text-white transition-colors">
         {(() => {
-          const parts = splitArticle(entry.word)
+          const parts = splitArticle(entry.word, langCode)
           if (!parts) return entry.word
           return (
             <>
@@ -1484,6 +1473,7 @@ export default function LessonPage() {
   const router  = useRouter()
   const slug     = params.slug     as string
   const activity = params.activity as string
+  const { languageCode: activeLanguage, translationLang } = useActiveLanguage()
 
   const [lesson,       setLesson]       = useState<{ title: string; content: LessonContent } | null>(null)
   const [lessonId,     setLessonId]     = useState('')
@@ -1581,6 +1571,7 @@ export default function LessonPage() {
         .from('modules')
         .select('id, language_code')
         .eq('slug', slug)
+        .eq('language_code', activeLanguage)
         .limit(1)
         .maybeSingle()
 
@@ -1595,14 +1586,14 @@ export default function LessonPage() {
         .maybeSingle()
 
       if (data) {
-        setLesson({ title: data.title, content: normalizeContent(data.content as RawContent, data.type) })
+        setLesson({ title: data.title, content: normalizeContent(data.content as RawContent, data.type, translationLang) })
         setLessonId(data.id)
         setModuleId(data.module_id)
       }
       setLoading(false)
     }
     load()
-  }, [slug, activity])
+  }, [slug, activity, activeLanguage, translationLang])
 
   // Register vocabulary as a session once the lesson id is ready
   const vocabSavedRef = useRef(false)
@@ -2400,7 +2391,7 @@ export default function LessonPage() {
                   if (typeof window === 'undefined' || !window.speechSynthesis) return
                   window.speechSynthesis.cancel()
                   const u = new SpeechSynthesisUtterance(content.story ?? '')
-                  u.lang = LANG_LOCALE[languageCode] ?? languageCode
+                  u.lang = getLanguage(languageCode).speechLocale
                   u.rate = 0.85
                   u.onend   = () => setAudioStatus('idle')
                   u.onpause = () => setAudioStatus('paused')

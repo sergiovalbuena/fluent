@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mic, Volume2, CheckCircle2, XCircle, ChevronRight, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { getLanguage, pickTranslation } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 
@@ -61,6 +63,7 @@ const hasSpeech = typeof window !== 'undefined' && 'speechSynthesis' in window
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function DictationPage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [phase, setPhase] = useState<Phase>('ready')
   const [vocab, setVocab] = useState<VocabItem[]>([])
   const [rounds, setRounds] = useState<VocabItem[]>([])
@@ -78,9 +81,10 @@ export default function DictationPage() {
     const supabase = createClient()
     supabase
       .from('lessons')
-      .select('content')
+      .select('content, modules!inner(language_code)')
       .eq('type', 'vocabulary')
       .eq('is_published', true)
+      .eq('modules.language_code', languageCode)
       .then(({ data }) => {
         if (!data) return
         const items: VocabItem[] = []
@@ -88,25 +92,25 @@ export default function DictationPage() {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
           if (c?.items) {
             for (const item of c.items) {
-              if (item.word && item.translation) items.push({ word: item.word, translation: item.translation })
+              if (item.word && item.translation) items.push({ word: item.word, translation: pickTranslation(item, translationLang) })
             }
           }
         }
         setVocab(items)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   const speak = useCallback((text: string) => {
     if (!hasSpeech) return
     window.speechSynthesis.cancel()
     const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'es-ES'
+    utterance.lang = getLanguage(languageCode).speechLocale
     utterance.rate = 0.85
     utterance.onstart = () => { speakingRef.current = true; setIsSpeaking(true) }
     utterance.onend = () => { speakingRef.current = false; setIsSpeaking(false) }
     utterance.onerror = () => { speakingRef.current = false; setIsSpeaking(false) }
     window.speechSynthesis.speak(utterance)
-  }, [])
+  }, [languageCode])
 
   // Auto-speak when round changes
   useEffect(() => {

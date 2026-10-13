@@ -1,4 +1,4 @@
-import { createAdminClient } from '@/lib/supabase/admin'
+import { requireAdmin } from '@/lib/supabase/admin'
 import { Users, BookOpen, Trophy, Zap, TrendingUp, Globe, Flame } from 'lucide-react'
 
 function StatCard({ label, value, sub, icon: Icon, color }: {
@@ -22,7 +22,7 @@ function StatCard({ label, value, sub, icon: Icon, color }: {
 }
 
 export default async function AdminOverviewPage() {
-  const supabase = createAdminClient()
+  const supabase = await requireAdmin()
 
   // Stats
   const [

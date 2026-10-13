@@ -1,4 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
+import { getLanguageSettings } from '@/lib/active-language'
+import { pickTranslation, type Translatable } from '@/lib/languages'
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { MasteryContent } from '@/components/learn/mastery-content'
@@ -10,11 +12,13 @@ interface PageProps {
 export default async function MasteryPage({ params }: PageProps) {
   const { slug } = await params
   const supabase = await createClient()
+  const { languageCode, translationLang } = await getLanguageSettings()
 
   const { data: module } = await supabase
     .from('modules')
     .select('*')
     .eq('slug', slug)
+    .eq('language_code', languageCode)
     .eq('is_published', true)
     .maybeSingle()
 
@@ -59,21 +63,24 @@ export default async function MasteryPage({ params }: PageProps) {
 
   for (const lesson of lessonList) {
     if (lesson.type === 'vocabulary') {
-      const items = (lesson.content as { items?: { word: string; translation: string }[] })?.items ?? []
+      const items = (lesson.content as { items?: ({ word: string } & Translatable)[] })?.items ?? []
       items.slice(0, 3).forEach(item => {
+        const translation = pickTranslation(item, translationLang)
         quizItems.push({
           question: `What is "${item.word}"?`,
-          options: [item.translation],
-          answer: item.translation,
+          options: [translation],
+          answer: translation,
         })
       })
     } else if (lesson.type === 'phrases') {
-      const items = (lesson.content as { items?: { phrase: string; translation: string }[] })?.items ?? []
+      const content = lesson.content as { items?: ({ phrase: string } & Translatable)[]; phrases?: ({ phrase: string } & Translatable)[] }
+      const items = content?.items ?? content?.phrases ?? []
       items.slice(0, 2).forEach(item => {
+        const translation = pickTranslation(item, translationLang)
         quizItems.push({
           question: `Translate: "${item.phrase}"`,
-          options: [item.translation],
-          answer: item.translation,
+          options: [translation],
+          answer: translation,
         })
       })
     } else if (lesson.type === 'qa') {

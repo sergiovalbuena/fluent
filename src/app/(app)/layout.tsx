@@ -4,6 +4,8 @@ import { SidebarNav } from '@/components/layout/sidebar-nav'
 import { GemsToastProvider } from '@/components/ui/gems-toast'
 import { IntlProvider } from '@/components/providers/intl-provider'
 import { TopbarProvider } from '@/components/providers/topbar-provider'
+import { LanguageProvider } from '@/components/providers/language-provider'
+import { getLanguageSettings } from '@/lib/active-language'
 import type { AbstractIntlMessages } from 'next-intl'
 
 const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
@@ -22,29 +24,7 @@ async function getMessages(locale: string): Promise<AbstractIntlMessages> {
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
 
-  const { data: { user } } = await supabase.auth.getUser()
-
-  let languageCode = 'es'
-  let uiLocale = 'en'
-
-  if (user) {
-    const [langData, profileData] = await Promise.all([
-      supabase
-        .from('user_languages')
-        .select('language_code')
-        .eq('user_id', user.id)
-        .eq('is_active', true)
-        .maybeSingle(),
-      supabase
-        .from('user_profiles')
-        .select('app_language_code')
-        .eq('user_id', user.id)
-        .maybeSingle(),
-    ])
-
-    if (langData.data?.language_code) languageCode = langData.data.language_code
-    if (profileData.data?.app_language_code) uiLocale = profileData.data.app_language_code
-  }
+  const { languageCode, uiLocale, translationLang } = await getLanguageSettings()
 
   const [modulesResult, messages] = await Promise.all([
     supabase
@@ -60,6 +40,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   return (
     <IntlProvider locale={uiLocale} messages={messages}>
+    <LanguageProvider value={{ languageCode, translationLang }}>
     <TopbarProvider>
       <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
         <SidebarNav modules={modules} />
@@ -71,6 +52,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         <GemsToastProvider />
       </div>
     </TopbarProvider>
+    </LanguageProvider>
     </IntlProvider>
   )
 }

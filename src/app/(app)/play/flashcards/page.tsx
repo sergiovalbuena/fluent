@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { BookOpen } from 'lucide-react'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation } from '@/lib/languages'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type WordPair = { word: string; translation: string }
@@ -38,6 +40,7 @@ async function saveGameResult(correct: number, total: number) {
 
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function FlashCardsPage() {
+  const { languageCode, translationLang } = useActiveLanguage()
   const [pool, setPool] = useState<WordPair[]>([])
   const [loading, setLoading] = useState(true)
   const [phase, setPhase] = useState<Phase>('ready')
@@ -54,17 +57,17 @@ export default function FlashCardsPage() {
   // Load vocab
   useEffect(() => {
     const supabase = createClient()
-    supabase.from('lessons').select('content').eq('type', 'vocabulary').eq('is_published', true)
+    supabase.from('lessons').select('content, modules!inner(language_code)').eq('type', 'vocabulary').eq('is_published', true).eq('modules.language_code', languageCode)
       .then(({ data }) => {
         const items: WordPair[] = []
         data?.forEach(lesson => {
           const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: i.translation }) })
+          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) }) })
         })
         setPool(items)
         setLoading(false)
       })
-  }, [])
+  }, [languageCode, translationLang])
 
   function buildDeck(wordPool: WordPair[]): WordPair[] {
     const source = wordPool.length > 0 ? wordPool : [

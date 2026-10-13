@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
+import { useActiveLanguage } from '@/components/providers/language-provider'
+import { pickTranslation } from '@/lib/languages'
 import { Progress } from '@/components/ui/progress'
 import Link from 'next/link'
 import { AppTopbar } from '@/components/layout/app-topbar'
@@ -18,6 +20,7 @@ export default function FlashcardsPage() {
   const params = useParams()
   const router = useRouter()
   const slug = params.slug as string
+  const { languageCode, translationLang } = useActiveLanguage()
   const [cards, setCards] = useState<FlashCard[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -34,6 +37,7 @@ export default function FlashcardsPage() {
         .from('modules')
         .select('id')
         .eq('slug', slug)
+        .eq('language_code', languageCode)
         .eq('is_published', true)
         .limit(1)
         .maybeSingle()
@@ -51,29 +55,24 @@ export default function FlashcardsPage() {
         if (content?.items) {
           allWords.push(...content.items.map(w => ({
             word: w.word,
-            translation: w.translation,
+            translation: pickTranslation(w, translationLang),
             emoji: w.icon ?? '📝',
             example: w.example
           })))
         }
       }
 
-      // Fallback demo cards if no data
+      // No vocabulary in this module — nothing to review
       if (allWords.length === 0) {
-        allWords.push(
-          { word: 'Hola', translation: 'Hello', emoji: '👋' },
-          { word: 'Gracias', translation: 'Thank you', emoji: '🙏' },
-          { word: 'Por favor', translation: 'Please', emoji: '🤝' },
-          { word: 'Buenos días', translation: 'Good morning', emoji: '🌅' },
-          { word: 'Buenas noches', translation: 'Good night', emoji: '🌙' },
-        )
+        router.replace(`/learn/${slug}`)
+        return
       }
 
       setCards(allWords)
       setLoading(false)
     }
     loadCards()
-  }, [slug])
+  }, [slug, languageCode, translationLang, router])
 
   const currentCard = cards[currentIndex]
   const progress = cards.length > 0 ? Math.round((currentIndex / cards.length) * 100) : 0
