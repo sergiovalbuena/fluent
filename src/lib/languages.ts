@@ -86,3 +86,28 @@ export type Translatable = { translation?: string; translations?: Record<string,
 export function pickTranslation(item: Translatable, translationLang: string): string {
   return item.translations?.[translationLang] ?? item.translation ?? item.translations?.en ?? ''
 }
+
+// Q&A questions carry an optional per-language override of their text:
+// `translations: { es: { question, options?, correct?, explanation? } }`.
+// Options/correct are only overridden when they are in the translation language
+// (options in the course language stay as they are).
+
+export type RawQuestion = {
+  question: string
+  options: string[]
+  correct: string | number
+  explanation?: string
+  translations?: Record<string, Partial<Pick<RawQuestion, 'question' | 'options' | 'correct' | 'explanation'>>>
+}
+
+export function localizeQuestion(q: RawQuestion, translationLang: string) {
+  const t = q.translations?.[translationLang] ?? {}
+  const options = t.options ?? q.options
+  const correct = t.correct ?? q.correct
+  return {
+    question: t.question ?? q.question,
+    options,
+    correct: typeof correct === 'number' ? correct : options.indexOf(correct),
+    explanation: t.explanation ?? q.explanation,
+  }
+}

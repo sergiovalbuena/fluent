@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { getLanguageSettings } from '@/lib/active-language'
-import { pickTranslation, type Translatable } from '@/lib/languages'
+import { localizeQuestion, pickTranslation, type RawQuestion, type Translatable } from '@/lib/languages'
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { MasteryContent } from '@/components/learn/mastery-content'
@@ -84,13 +84,12 @@ export default async function MasteryPage({ params }: PageProps) {
         })
       })
     } else if (lesson.type === 'qa') {
-      const questions = (lesson.content as { questions?: { question: string; answer: string; options?: string[] }[] })?.questions ?? []
-      questions.slice(0, 2).forEach(q => {
-        quizItems.push({
-          question: q.question,
-          options: q.options ?? [q.answer],
-          answer: q.answer,
-        })
+      const questions = (lesson.content as { questions?: RawQuestion[] })?.questions ?? []
+      questions.slice(0, 2).forEach(raw => {
+        const q = localizeQuestion(raw, translationLang)
+        const answer = q.options[q.correct]
+        if (!answer) return
+        quizItems.push({ question: q.question, options: q.options, answer })
       })
     }
   }

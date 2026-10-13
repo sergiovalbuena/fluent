@@ -1,7 +1,7 @@
 import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { getLanguageSettings } from '@/lib/active-language'
-import { pickTranslation, type Translatable } from '@/lib/languages'
+import { localizeQuestion, pickTranslation, type RawQuestion, type Translatable } from '@/lib/languages'
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { ModuleContentView, type ModuleContentData, type VocabItem, type PhraseItem, type QAItem } from '@/components/learn/module-content'
@@ -56,7 +56,8 @@ export default async function LessonPage({ params }: PageProps) {
     .map(i => ({ ...i, translation: pickTranslation(i, translationLang) }))
   const phraseItems: PhraseItem[]  = (phrasesContent?.items ?? phrasesContent?.phrases ?? [])
     .map(i => ({ ...i, translation: pickTranslation(i, translationLang) }))
-  const qaItems: QAItem[]          = (qaEx?.content as { questions?: QAItem[] })?.questions ?? []
+  const qaItems: QAItem[]          = ((qaEx?.content as { questions?: RawQuestion[] })?.questions ?? [])
+    .map(q => localizeQuestion(q, translationLang))
   const storyContent               = (storyEx?.content as { text?: string }) ?? {}
   const arrangeCount               = (arrangeEx?.content as { sentences?: unknown[] })?.sentences?.length ?? 0
   const translateCount             = (translateEx?.content as { items?: unknown[] })?.items?.length ?? 0

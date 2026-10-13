@@ -18,7 +18,7 @@ import { AppTopbar } from '@/components/layout/app-topbar'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { toast } from 'sonner'
 import { cn } from '@/lib/utils'
-import { getLanguage, pickTranslation, speak, splitArticle } from '@/lib/languages'
+import { getLanguage, localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { ResultScreen } from '@/components/lesson/result-screen'
 
@@ -74,7 +74,7 @@ interface RawContent {
   items?: RawItem[]
   // Some phrase lessons store their list under `phrases` instead of `items`
   phrases?: RawItem[]
-  questions?: Array<{ question: string; options: string[]; correct: string | number; explanation?: string }>
+  questions?: RawQuestion[]
   sentences?: Array<{ words: string[]; translation: string; translations?: Record<string, string> }>
   text?: string
   translation?: string
@@ -105,12 +105,7 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
   }
   if (lessonType === 'qa') {
     return {
-      questions: (raw.questions ?? []).map(q => ({
-        question: q.question,
-        options: q.options,
-        correct: typeof q.correct === 'number' ? q.correct : q.options.indexOf(q.correct as string),
-        explanation: q.explanation,
-      })),
+      questions: (raw.questions ?? []).map(q => localizeQuestion(q, translationLang)),
     }
   }
   if (lessonType === 'story') {
@@ -127,7 +122,8 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
   if (lessonType === 'translate') {
     return {
       translateItems: (raw.items ?? []).map(i => ({
-        prompt: i.prompt ?? '',
+        // `translations` on a translate item holds the prompt in other languages
+        prompt: i.translations?.[translationLang] ?? i.prompt ?? '',
         answer: i.answer ?? '',
         hint: i.hint,
       })),
