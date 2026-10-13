@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 import { getLanguage } from '@/lib/languages'
 import { setTranslationLanguage } from '@/app/(app)/actions'
+import { SignOutButton } from '@/components/profile/sign-out-button'
 import type { UserProfile } from '@/lib/types/database'
 import { useTranslations } from 'next-intl'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
@@ -511,6 +512,8 @@ export default function ProfilePage() {
               </Link>
             </div>
           </section>
+
+          {isLoggedIn && <SignOutButton />}
 
           {/* ── XP info when logged in ── */}
           {isLoggedIn && (
