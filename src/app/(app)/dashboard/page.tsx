@@ -160,7 +160,14 @@ export default async function DashboardPage() {
   return (
     <DashboardContent
       modules={modules}
-      displayName={profileResult.data?.display_name ?? user?.email?.split('@')[0] ?? 'there'}
+      languageCode={languageCode}
+      displayName={
+        profileResult.data?.display_name ??
+        user?.user_metadata?.display_name ??
+        user?.user_metadata?.full_name ??
+        user?.email?.split('@')[0] ??
+        'there'
+      }
       stats={{
         streak: profileResult.data?.streak_count ?? 0,
         totalXp: profileResult.data?.total_xp ?? 0,

@@ -31,6 +31,26 @@ export function getLanguage(code: string): LanguageInfo {
   )
 }
 
+// ── Greetings ─────────────────────────────────────────────────────────────────
+// Time-of-day greeting in the language being learned (dashboard hero)
+
+const GREETINGS: Record<string, [morning: string, afternoon: string, evening: string]> = {
+  es: ['Buenos días', 'Buenas tardes', 'Buenas noches'],
+  fr: ['Bonjour', 'Bonjour', 'Bonsoir'],  // 'Bon après-midi' is a farewell, not a greeting
+  en: ['Good morning', 'Good afternoon', 'Good evening'],
+  pt: ['Bom dia', 'Boa tarde', 'Boa noite'],
+  de: ['Guten Morgen', 'Guten Tag', 'Guten Abend'],
+  it: ['Buongiorno', 'Buon pomeriggio', 'Buonasera'],
+  ja: ['おはようございます', 'こんにちは', 'こんばんは'],
+  zh: ['早上好', '下午好', '晚上好'],
+}
+
+export function getGreeting(langCode: string, hour: number): string | null {
+  const g = GREETINGS[langCode]
+  if (!g) return null
+  return hour < 12 ? g[0] : hour < 18 ? g[1] : g[2]
+}
+
 // ── Speech ────────────────────────────────────────────────────────────────────
 
 export function canSpeak(): boolean {

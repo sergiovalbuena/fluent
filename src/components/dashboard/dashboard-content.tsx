@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { type LearnModule } from '@/components/learn/learn-content'
 import { useTranslations } from 'next-intl'
+import { getGreeting } from '@/lib/languages'
 
 export type DashboardStats = {
   streak: number
@@ -43,13 +44,16 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
 )
 
 // ── Dashboard ─────────────────────────────────────────────────────────────────
-export function DashboardContent({ modules, stats, displayName = 'there' }: { modules: LearnModule[]; stats: DashboardStats; displayName?: string }) {
+export function DashboardContent({ modules, stats, displayName = 'there', languageCode }: { modules: LearnModule[]; stats: DashboardStats; displayName?: string; languageCode: string }) {
   const t = useTranslations('dashboard')
   const tc = useTranslations('common')
+  const tl = useTranslations('learn')
 
   const current = modules.find(m => m.state === 'current') ?? modules.find(m => m.state === 'available') ?? modules[0] ?? null
   const hour = new Date().getHours()
-  const greeting = hour < 12 ? t('greeting_morning') : hour < 18 ? t('greeting_afternoon') : t('greeting_evening')
+  // Greet in the language being learned; fall back to the UI language
+  const greeting = getGreeting(languageCode, hour)
+    ?? (hour < 12 ? t('greeting_morning') : hour < 18 ? t('greeting_afternoon') : t('greeting_evening'))
   const firstName = displayName.split(' ')[0]
   const weekDaysActive = stats.weekActivity.filter(v => v > 0).length
   const maxActivity = Math.max(...stats.weekActivity, 1)
@@ -122,7 +126,7 @@ export function DashboardContent({ modules, stats, displayName = 'there' }: { mo
                         whileTap={{ scale: 0.97, y: 1 }}
                         className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2.5 rounded-xl text-xs shadow-sm shadow-primary/30"
                       >
-                        {t('resume')} <ArrowRight size={13} />
+                        {current.progress === 0 ? tl('start') : t('resume')} <ArrowRight size={13} />
                       </motion.button>
                     </Link>
                   </>
