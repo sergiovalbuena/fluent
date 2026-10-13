@@ -24,7 +24,9 @@ export default function SignupPage() {
       email,
       password,
       options: {
-        data: { display_name: name }
+        data: { display_name: name },
+        // Without this, Supabase sends users to the project's Site URL after confirming
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding`,
       }
     })
     if (error) {
