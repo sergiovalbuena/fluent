@@ -971,7 +971,9 @@ function VocabWordList({
   const [entries] = useState<VocabEntry[]>(initialWords)
   const [challengeEntry, setChallengeEntry] = useState<VocabEntry | null>(null)
 
-  const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode)
+  const { isMastered, markMastered } = useVocabMastery(languageCode)
+  // Mastery is stored per language; only count this lesson's words
+  const masteredCount = entries.filter(e => isMastered(e.word)).length
 
   // Notify parent when count changes — outside setState, safe
   useEffect(() => {
@@ -1045,7 +1047,8 @@ function QAQuestionList({
   onMasteredCountChange?: (count: number) => void
 }) {
   const [challengeQ, setChallengeQ] = useState<QAQuestion | null>(null)
-  const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode, 'qa')
+  const { isMastered, markMastered } = useVocabMastery(languageCode, 'qa')
+  const masteredCount = questions.filter(q => isMastered(q.question)).length
 
   useEffect(() => {
     onMasteredCountChange?.(masteredCount)
@@ -1161,7 +1164,8 @@ function PhraseList({
   onMasteredCountChange?: (count: number) => void
 }) {
   const [challengePhrase, setChallengePhrase] = useState<Phrase | null>(null)
-  const { isMastered, markMastered, masteredCount } = useVocabMastery(languageCode, 'phrase')
+  const { isMastered, markMastered } = useVocabMastery(languageCode, 'phrase')
+  const masteredCount = phrases.filter(p => isMastered(p.phrase)).length
 
   useEffect(() => {
     onMasteredCountChange?.(masteredCount)
@@ -1591,14 +1595,17 @@ export default function LessonPage() {
     load()
   }, [slug, activity, activeLanguage, translationLang])
 
-  // Register vocabulary as a session once the lesson id is ready
+  // Vocabulary counts as completed once every word in the lesson is mastered
+  // (opening the page alone must not award progress)
   const vocabSavedRef = useRef(false)
+  const vocabWordCount = activity === 'vocabulary' ? (lesson?.content.words?.length ?? 0) : 0
   useEffect(() => {
-    if (activity !== 'vocabulary' || !lessonId || vocabSavedRef.current) return
+    if (!lessonId || vocabSavedRef.current) return
+    if (vocabWordCount === 0 || masteredCount < vocabWordCount) return
     vocabSavedRef.current = true
     saveProgress(100)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activity, lessonId])
+  }, [lessonId, vocabWordCount, masteredCount])
 
   // ── DB helpers ────────────────────────────────────────────────────────────
 
