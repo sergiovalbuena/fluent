@@ -9,6 +9,7 @@ import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
   Layers, Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
+  GraduationCap, Lightbulb,
   type LucideIcon,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
@@ -54,8 +55,17 @@ interface TranslateItem {
   hint?: string
 }
 
+interface GrammarPoint {
+  structure: string
+  example: string
+  /** What the structure is, in the translation language */
+  label: string
+}
+
 interface LessonContent {
   words?: VocabWord[]
+  grammar?: GrammarPoint[]
+  tips?: string[]
   phrases?: Phrase[]
   questions?: QAQuestion[]
   story?: string
@@ -80,6 +90,10 @@ interface RawContent {
   translation?: string
   translations?: Record<string, string>
   highlighted_words?: string[]
+  // Vocabulary lessons of generated courses also carry the lesson's grammar and tips,
+  // each text keyed by language ({ en, es })
+  grammar?: Array<{ structure: string; example: string } & Record<string, string>>
+  tips?: Array<Record<string, string>>
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -93,6 +107,12 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
         emoji: i.icon ?? '📝',
         example: i.example,
       })),
+      grammar: (raw.grammar ?? []).map(g => ({
+        structure: g.structure,
+        example: g.example,
+        label: g[translationLang] ?? g.en ?? '',
+      })),
+      tips: (raw.tips ?? []).map(t => t[translationLang] ?? t.en ?? '').filter(Boolean),
     }
   }
   if (lessonType === 'phrases') {
@@ -1805,6 +1825,8 @@ export default function LessonPage() {
 
   const content   = lesson?.content ?? {}
   const words     = content.words     ?? []
+  const grammar   = content.grammar   ?? []
+  const tips      = content.tips      ?? []
   const phrases   = content.phrases   ?? []
   const questions = content.questions ?? []
   const arrangeSentences = content.arrangeSentences ?? []
@@ -1972,6 +1994,50 @@ export default function LessonPage() {
                 </div>
               </button>
             </Block>
+
+            {/* ── GRAMMAR — structures used in this lesson ───────────────────── */}
+            {grammar.length > 0 && (
+              <Block whileTap={{}} className="col-span-12 md:col-span-6 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center gap-2">
+                  <GraduationCap size={14} className="text-indigo-500" />
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Grammar</p>
+                </div>
+                <ul className="divide-y divide-black/[0.04] dark:divide-white/[0.05]">
+                  {grammar.map((g, i) => (
+                    <li key={i} className="px-5 py-3">
+                      <p className="text-sm font-semibold text-slate-900 dark:text-white">{g.label}</p>
+                      <p className="text-[11px] text-indigo-500 mt-0.5">{g.structure}</p>
+                      <button
+                        type="button"
+                        onClick={() => speak(g.example, languageCode)}
+                        className="mt-1.5 flex items-start gap-1.5 text-left text-sm italic text-slate-600 dark:text-slate-300 hover:text-indigo-500 transition-colors"
+                      >
+                        <Volume2 size={13} className="shrink-0 mt-[3px]" />
+                        {g.example}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </Block>
+            )}
+
+            {/* ── TIPS ─────────────────────────────────────────────────────────── */}
+            {tips.length > 0 && (
+              <Block whileTap={{}} className="col-span-12 md:col-span-6 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+                <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center gap-2">
+                  <Lightbulb size={14} className="text-amber-500" />
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Tips</p>
+                </div>
+                <ul className="px-5 py-3 space-y-2.5">
+                  {tips.map((tip, i) => (
+                    <li key={i} className="flex gap-2.5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                      <span className="mt-[7px] size-1.5 shrink-0 rounded-full bg-amber-500" />
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </Block>
+            )}
 
           </motion.div>
         </div>
