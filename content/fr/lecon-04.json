@@ -1,0 +1,537 @@
+{
+  "lesson": 4,
+  "slug": "lecon-04",
+  "icon": "🔢",
+  "title": {
+    "fr": "Les nombres",
+    "es": "Los números",
+    "en": "Numbers"
+  },
+  "source": {
+    "audio": "Lecons 04.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "nombres cardinaux",
+      "example": "soixante-dix, quatre-vingts, quatre-vingt-dix",
+      "en": "Cardinal numbers",
+      "es": "Números cardinales"
+    },
+    {
+      "structure": "nombres ordinaux",
+      "example": "premier, deuxième, troisième… vingtième",
+      "en": "Ordinal numbers",
+      "es": "Números ordinales"
+    },
+    {
+      "structure": "fractions",
+      "example": "la moitié, un tiers, un quart",
+      "en": "Fractions",
+      "es": "Fracciones"
+    },
+    {
+      "structure": "être en train de + infinitif",
+      "example": "Il est en train de compter.",
+      "en": "Action in progress",
+      "es": "Acción en curso («estar» + gerundio)"
+    },
+    {
+      "structure": "c'est la … fois que",
+      "example": "C'est la troisième fois que je te le dis.",
+      "en": "\"It's the … time that\"",
+      "es": "«Es la … vez que»"
+    },
+    {
+      "structure": "passé composé avec être",
+      "example": "Je suis née en 1990.",
+      "en": "Past tense with \"être\" (agreement)",
+      "es": "Passé composé con «être» (concordancia)"
+    },
+    {
+      "structure": "impératif",
+      "example": "Coupe-le en quatre, s'il te plaît.",
+      "en": "Imperative with an object pronoun",
+      "es": "Imperativo con pronombre"
+    }
+  ],
+  "tips": [
+    {
+      "en": "70 = soixante-dix (60 + 10), 80 = quatre-vingts (4 × 20), 90 = quatre-vingt-dix (4 × 20 + 10). In Belgium and Switzerland: septante, (huitante), nonante.",
+      "es": "70 = soixante-dix (60 + 10), 80 = quatre-vingts (4 × 20), 90 = quatre-vingt-dix (4 × 20 + 10). En Bélgica y Suiza: septante, (huitante), nonante."
+    },
+    {
+      "en": "Use \"et\" in 21, 31, 41, 51, 61 and 71 (vingt et un, soixante et onze), but not in 81 or 91 (quatre-vingt-un).",
+      "es": "Se usa «et» en 21, 31, 41, 51, 61 y 71 (vingt et un, soixante et onze), pero no en 81 ni 91 (quatre-vingt-un)."
+    },
+    {
+      "en": "\"Quatre-vingts\" and \"deux cents\" take an -s only when nothing follows: quatre-vingt-trois, deux cent dix. \"Mille\" never takes -s.",
+      "es": "«Quatre-vingts» y «deux cents» llevan -s solo si no les sigue otro número: quatre-vingt-trois, deux cent dix. «Mille» nunca lleva -s."
+    },
+    {
+      "en": "Ordinals add -ième (deuxième, dixième), except \"premier / première\".",
+      "es": "Los ordinales añaden -ième (deuxième, dixième), excepto «premier / première»."
+    },
+    {
+      "en": "Birthdays use ordinals: \"mon cinquantième anniversaire\". Big amounts: \"un million de\", \"un milliard de\".",
+      "es": "Los cumpleaños usan ordinales: «mon cinquantième anniversaire». Cantidades grandes: «un million de», «un milliard de»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "onze",
+      "en": "eleven",
+      "es": "once"
+    },
+    {
+      "word": "douze",
+      "en": "twelve",
+      "es": "doce"
+    },
+    {
+      "word": "treize",
+      "en": "thirteen",
+      "es": "trece"
+    },
+    {
+      "word": "quatorze",
+      "en": "fourteen",
+      "es": "catorce"
+    },
+    {
+      "word": "quinze",
+      "en": "fifteen",
+      "es": "quince"
+    },
+    {
+      "word": "seize",
+      "en": "sixteen",
+      "es": "dieciséis"
+    },
+    {
+      "word": "dix-sept",
+      "en": "seventeen",
+      "es": "diecisiete"
+    },
+    {
+      "word": "vingt",
+      "en": "twenty",
+      "es": "veinte"
+    },
+    {
+      "word": "vingt et un",
+      "en": "twenty-one",
+      "es": "veintiuno"
+    },
+    {
+      "word": "trente",
+      "en": "thirty",
+      "es": "treinta"
+    },
+    {
+      "word": "quarante",
+      "en": "forty",
+      "es": "cuarenta"
+    },
+    {
+      "word": "cinquante",
+      "en": "fifty",
+      "es": "cincuenta"
+    },
+    {
+      "word": "soixante",
+      "en": "sixty",
+      "es": "sesenta"
+    },
+    {
+      "word": "soixante-dix",
+      "en": "seventy",
+      "es": "setenta"
+    },
+    {
+      "word": "quatre-vingts",
+      "en": "eighty",
+      "es": "ochenta"
+    },
+    {
+      "word": "quatre-vingt-dix",
+      "en": "ninety",
+      "es": "noventa"
+    },
+    {
+      "word": "cent",
+      "en": "one hundred",
+      "es": "cien"
+    },
+    {
+      "word": "deux cents",
+      "en": "two hundred",
+      "es": "doscientos"
+    },
+    {
+      "word": "mille",
+      "en": "one thousand",
+      "es": "mil"
+    },
+    {
+      "word": "un million",
+      "en": "a million",
+      "es": "un millón"
+    },
+    {
+      "word": "un milliard",
+      "en": "a billion",
+      "es": "mil millones"
+    },
+    {
+      "word": "premier / première",
+      "en": "first",
+      "es": "primero / primera"
+    },
+    {
+      "word": "deuxième",
+      "en": "second",
+      "es": "segundo"
+    },
+    {
+      "word": "troisième",
+      "en": "third",
+      "es": "tercero"
+    },
+    {
+      "word": "dixième",
+      "en": "tenth",
+      "es": "décimo"
+    },
+    {
+      "word": "la moitié",
+      "en": "half",
+      "es": "la mitad"
+    },
+    {
+      "word": "un tiers",
+      "en": "a third",
+      "es": "un tercio"
+    },
+    {
+      "word": "un quart",
+      "en": "a quarter",
+      "es": "un cuarto"
+    },
+    {
+      "word": "une douzaine",
+      "en": "a dozen",
+      "es": "una docena"
+    },
+    {
+      "word": "une demi-douzaine",
+      "en": "half a dozen",
+      "es": "media docena"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Deux plus deux est égal à quatre.",
+      "en": "Two plus two equals four.",
+      "es": "Dos más dos es igual a cuatro."
+    },
+    {
+      "phrase": "Six moins trois est égal à trois.",
+      "en": "Six minus three equals three.",
+      "es": "Seis menos tres es igual a tres."
+    },
+    {
+      "phrase": "Sept fois huit est égal à cinquante-six.",
+      "en": "Seven times eight equals fifty-six.",
+      "es": "Siete por ocho es igual a cincuenta y seis."
+    },
+    {
+      "phrase": "Cent divisé par deux est égal à cinquante.",
+      "en": "One hundred divided by two equals fifty.",
+      "es": "Cien entre dos es igual a cincuenta."
+    },
+    {
+      "phrase": "C'est la troisième fois que je te le dis !",
+      "en": "It's the third time I'm telling you!",
+      "es": "¡Es la tercera vez que te lo digo!"
+    },
+    {
+      "phrase": "Elle arrive toujours à la deuxième place.",
+      "en": "She always comes in second place.",
+      "es": "Siempre llega en segundo lugar."
+    },
+    {
+      "phrase": "Je reviens dans un quart d'heure.",
+      "en": "I'll be back in a quarter of an hour.",
+      "es": "Vuelvo en un cuarto de hora."
+    },
+    {
+      "phrase": "Un tiers de la classe parle espagnol.",
+      "en": "A third of the class speaks Spanish.",
+      "es": "Un tercio de la clase habla español."
+    },
+    {
+      "phrase": "Tu es la première personne à qui je parle.",
+      "en": "You are the first person I talk to.",
+      "es": "Eres la primera persona con la que hablo."
+    },
+    {
+      "phrase": "C'est combien ? — Trois euros.",
+      "en": "How much is it? — Three euros.",
+      "es": "¿Cuánto es? — Tres euros."
+    },
+    {
+      "phrase": "En quelle année êtes-vous né ? — Je suis né en 1985.",
+      "en": "What year were you born? — I was born in 1985.",
+      "es": "¿En qué año nació? — Nací en 1985."
+    },
+    {
+      "phrase": "Quand est ton anniversaire ? — Le 17 mars.",
+      "en": "When is your birthday? — March 17th.",
+      "es": "¿Cuándo es tu cumpleaños? — El 17 de marzo."
+    },
+    {
+      "phrase": "Je voudrais une demi-douzaine d'œufs, s'il vous plaît.",
+      "en": "I would like half a dozen eggs, please.",
+      "es": "Quisiera media docena de huevos, por favor."
+    },
+    {
+      "phrase": "Il est en train de compter les invités.",
+      "en": "He is counting the guests.",
+      "es": "Está contando a los invitados."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "How do you say 70 in France?",
+        "es": "¿Cómo se dice 70 en Francia?"
+      },
+      "options": [
+        "soixante-dix",
+        "sept-dix",
+        "soixante-sept",
+        "septante-dix"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "70 = 60 + 10. In Belgium and Switzerland people say \"septante\".",
+        "es": "70 = 60 + 10. En Bélgica y Suiza se dice «septante»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say 80?",
+        "es": "¿Cómo se dice 80?"
+      },
+      "options": [
+        "quatre-vingts",
+        "huit-dix",
+        "soixante-vingt",
+        "quatre-dix"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "80 = 4 × 20: \"quatre-vingts\".",
+        "es": "80 = 4 × 20: «quatre-vingts»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"7 × 8 = 56\"?",
+        "es": "¿Cómo se dice «7 × 8 = 56»?"
+      },
+      "options": [
+        "Sept fois huit est égal à cinquante-six.",
+        "Sept plus huit est égal à cinquante-six.",
+        "Sept moins huit est égal à cinquante-six.",
+        "Sept divisé par huit est égal à cinquante-six."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "plus (+), moins (−), fois (×), divisé par (÷).",
+        "es": "plus (+), moins (−), fois (×), divisé par (÷)."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"la moitié\"?",
+        "es": "¿Qué es «la moitié»?"
+      },
+      "options": {
+        "en": [
+          "half",
+          "a third",
+          "a quarter",
+          "a dozen"
+        ],
+        "es": [
+          "la mitad",
+          "un tercio",
+          "un cuarto",
+          "una docena"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"La moitié\" = 1/2, \"un tiers\" = 1/3, \"un quart\" = 1/4.",
+        "es": "«La moitié» = 1/2, «un tiers» = 1/3, «un quart» = 1/4."
+      }
+    },
+    {
+      "question": {
+        "en": "You want 6 eggs. What do you ask for?",
+        "es": "Quieres 6 huevos. ¿Qué pides?"
+      },
+      "options": [
+        "une demi-douzaine d'œufs",
+        "une douzaine d'œufs",
+        "deux douzaines d'œufs",
+        "un quart d'œufs"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Une douzaine = 12, une demi-douzaine = 6.",
+        "es": "Une douzaine = 12, une demi-douzaine = 6."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you talk about a 50th birthday?",
+        "es": "¿Cómo hablas de un 50.º cumpleaños?"
+      },
+      "options": [
+        "mon cinquantième anniversaire",
+        "mon cinquante anniversaire",
+        "mon cinquième anniversaire",
+        "ma cinquantaine anniversaire"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Birthdays use ordinal numbers: cinquante → cinquantième.",
+        "es": "Los cumpleaños usan ordinales: cinquante → cinquantième."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"Il est en train de compter\" mean?",
+        "es": "¿Qué significa «Il est en train de compter»?"
+      },
+      "options": {
+        "en": [
+          "He is counting (right now).",
+          "He will count.",
+          "He counted.",
+          "He can count."
+        ],
+        "es": [
+          "Está contando (ahora mismo).",
+          "Contará.",
+          "Contó.",
+          "Sabe contar."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Être en train de\" + infinitive = an action in progress.",
+        "es": "«Être en train de» + infinitivo = una acción en curso."
+      }
+    },
+    {
+      "question": {
+        "en": "Which number is written correctly?",
+        "es": "¿Qué número está bien escrito?"
+      },
+      "options": [
+        "quatre-vingt-trois",
+        "quatre-vingts-trois",
+        "quatre-vingt-et-trois",
+        "quatre-vingtrois"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Quatre-vingts\" loses its -s when another number follows.",
+        "es": "«Quatre-vingts» pierde la -s cuando le sigue otro número."
+      }
+    }
+  ],
+  "story": {
+    "title": "Léo compte tout",
+    "text": "Léo a dix ans et il adore compter. Ce matin, il est en train de compter les marches de l'escalier : il y en a quarante-deux ! Au marché, sa mère achète une douzaine d'œufs et une demi-douzaine de pommes. Léo calcule : « Six pommes à deux euros, ça fait douze euros ! » L'après-midi, il regarde le lancement d'une fusée à la télévision avec son grand-père. Ensemble, ils font le compte à rebours : « Dix, neuf, huit, sept, six, cinq, quatre, trois, deux, un, zéro ! » Ce soir, c'est le soixante-dixième anniversaire de son grand-père. « Coupe le gâteau en quatre, s'il te plaît », dit sa mère. Un quart pour chacun : c'est la première fois que Léo fait des fractions à table !",
+    "en": "Léo is ten years old and he loves counting. This morning, he is counting the steps of the staircase: there are forty-two! At the market, his mother buys a dozen eggs and half a dozen apples. Léo calculates: “Six apples at two euros, that makes twelve euros!” In the afternoon, he watches a rocket launch on TV with his grandfather. Together, they do the countdown: “Ten, nine, eight, seven, six, five, four, three, two, one, zero!” Tonight is his grandfather's seventieth birthday. “Cut the cake into four, please,” says his mother. A quarter each: it's the first time Léo has done fractions at the table!",
+    "es": "Léo tiene diez años y le encanta contar. Esta mañana está contando los escalones de la escalera: ¡hay cuarenta y dos! En el mercado, su madre compra una docena de huevos y media docena de manzanas. Léo calcula: «Seis manzanas a dos euros, ¡son doce euros!». Por la tarde, ve el lanzamiento de un cohete en la televisión con su abuelo. Juntos hacen la cuenta atrás: «¡Diez, nueve, ocho, siete, seis, cinco, cuatro, tres, dos, uno, cero!». Esta noche es el septuagésimo cumpleaños de su abuelo. «Corta el pastel en cuatro, por favor», dice su madre. Un cuarto para cada uno: ¡es la primera vez que Léo hace fracciones en la mesa!",
+    "highlighted_words": [
+      "en train de compter",
+      "quarante-deux",
+      "douzaine",
+      "demi-douzaine",
+      "soixante-dixième",
+      "quart",
+      "première fois"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Deux plus deux est égal à quatre",
+      "en": "Two plus two equals four",
+      "es": "Dos más dos es igual a cuatro"
+    },
+    {
+      "sentence": "C'est la troisième fois",
+      "en": "It's the third time",
+      "es": "Es la tercera vez"
+    },
+    {
+      "sentence": "Je voudrais une douzaine d'œufs",
+      "en": "I would like a dozen eggs",
+      "es": "Quisiera una docena de huevos"
+    },
+    {
+      "sentence": "Il est en train de compter",
+      "en": "He is counting",
+      "es": "Está contando"
+    },
+    {
+      "sentence": "Mon anniversaire est le dix-sept mars",
+      "en": "My birthday is March seventeenth",
+      "es": "Mi cumpleaños es el diecisiete de marzo"
+    },
+    {
+      "sentence": "J'habite au cinquième étage",
+      "en": "I live on the fifth floor",
+      "es": "Vivo en el quinto piso"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Un quart d'heure",
+      "en": "A quarter of an hour",
+      "es": "Un cuarto de hora"
+    },
+    {
+      "answer": "Cent divisé par deux est égal à cinquante",
+      "en": "One hundred divided by two equals fifty",
+      "es": "Cien entre dos es igual a cincuenta"
+    },
+    {
+      "answer": "Il est né en 1990",
+      "en": "He was born in 1990",
+      "es": "Nació en 1990"
+    },
+    {
+      "answer": "Une demi-douzaine de pommes",
+      "en": "Half a dozen apples",
+      "es": "Media docena de manzanas"
+    },
+    {
+      "answer": "C'est combien ?",
+      "en": "How much is it?",
+      "es": "¿Cuánto es?"
+    },
+    {
+      "answer": "Elle est en train de travailler",
+      "en": "She is working (right now)",
+      "es": "Está trabajando (ahora mismo)"
+    }
+  ]
+}

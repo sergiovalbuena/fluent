@@ -1,0 +1,573 @@
+{
+  "lesson": 51,
+  "slug": "lecon-51",
+  "icon": "🛳️",
+  "title": {
+    "fr": "Partir en croisière",
+    "es": "Hacer un crucero",
+    "en": "Going on a cruise"
+  },
+  "source": {
+    "audio": "Lecons 51.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "futur simple",
+      "example": "Ils partiront en croisière pour deux semaines. / Quand le bateau arrivera au port, nous serons séparés.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "passé composé / imparfait",
+      "example": "Il y a eu une tempête hier soir. / Les enfants jouaient sur le pont.",
+      "en": "Event vs. background",
+      "es": "Hecho frente a fondo"
+    },
+    {
+      "structure": "plus-que-parfait (récit)",
+      "example": "Nous avions attendu toute notre vie pour faire une croisière. / Nous avions économisé.",
+      "en": "Past perfect for background",
+      "es": "Pluscuamperfecto para el contexto"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Le ciel se couvrit, une tempête commença et les gens eurent peur.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    },
+    {
+      "structure": "il y a + durée",
+      "example": "On l'a vu dans la salle de jeux il y a une minute.",
+      "en": "\"ago\"",
+      "es": "«hace» (tiempo)"
+    },
+    {
+      "structure": "ne … aucun",
+      "example": "Le radar n'enregistre aucun objet étrange.",
+      "en": "\"No / not any\"",
+      "es": "«Ningún»"
+    },
+    {
+      "structure": "afin de / grâce à",
+      "example": "L'équipage essayait de dégager le pont afin de faire son travail. / Grâce aux canots de sauvetage…",
+      "en": "Purpose and positive cause",
+      "es": "Finalidad y causa positiva"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il commença, ils eurent peur) is the literary past used in written stories; in conversation, use the passé composé.",
+      "es": "El passé simple (il commença, ils eurent peur) es el pasado literario de los relatos escritos; al hablar se usa el passé composé."
+    },
+    {
+      "en": "Ship words: \"la proue\" (bow), \"la poupe\" (stern), \"le pont\" (deck), \"la cabine\" (cabin), \"le hublot\" (porthole), \"le canot de sauvetage\" (lifeboat), \"le gilet de sauvetage\" (life jacket).",
+      "es": "En el barco: «la proue» (proa), «la poupe» (popa), «le pont» (cubierta), «la cabine» (camarote), «le hublot» (ojo de buey), «le canot de sauvetage» (bote salvavidas), «le gilet de sauvetage» (chaleco salvavidas)."
+    },
+    {
+      "en": "\"Lever l'ancre\" = to weigh anchor (l'ancre = anchor; l'encre = ink!).",
+      "es": "«Lever l'ancre» = levar anclas (l'ancre = ancla; ¡l'encre = tinta!)."
+    },
+    {
+      "en": "\"Le mal de mer\" = seasickness; \"faire naufrage\" = to be shipwrecked; \"couler\" = to sink.",
+      "es": "«Le mal de mer» = mareo; «faire naufrage» = naufragar; «couler» = hundirse."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la croisière",
+      "en": "the cruise",
+      "es": "el crucero"
+    },
+    {
+      "word": "le bateau",
+      "en": "the boat / ship",
+      "es": "el barco"
+    },
+    {
+      "word": "le paquebot",
+      "en": "the cruise ship / liner",
+      "es": "el transatlántico"
+    },
+    {
+      "word": "l'équipage",
+      "en": "the crew",
+      "es": "la tripulación"
+    },
+    {
+      "word": "le capitaine",
+      "en": "the captain",
+      "es": "el capitán"
+    },
+    {
+      "word": "la cabine",
+      "en": "the cabin",
+      "es": "el camarote"
+    },
+    {
+      "word": "le pont",
+      "en": "the deck",
+      "es": "la cubierta"
+    },
+    {
+      "word": "la proue",
+      "en": "the bow",
+      "es": "la proa"
+    },
+    {
+      "word": "la poupe",
+      "en": "the stern",
+      "es": "la popa"
+    },
+    {
+      "word": "le hublot",
+      "en": "the porthole",
+      "es": "el ojo de buey"
+    },
+    {
+      "word": "la passerelle",
+      "en": "the gangway / bridge",
+      "es": "la pasarela / el puente de mando"
+    },
+    {
+      "word": "l'hélice",
+      "en": "the propeller",
+      "es": "la hélice"
+    },
+    {
+      "word": "l'ancre",
+      "en": "the anchor",
+      "es": "el ancla"
+    },
+    {
+      "word": "lever l'ancre",
+      "en": "to weigh anchor",
+      "es": "levar anclas"
+    },
+    {
+      "word": "le port",
+      "en": "the port",
+      "es": "el puerto"
+    },
+    {
+      "word": "le quai",
+      "en": "the dock",
+      "es": "el muelle"
+    },
+    {
+      "word": "naviguer",
+      "en": "to sail",
+      "es": "navegar"
+    },
+    {
+      "word": "le canot de sauvetage",
+      "en": "the lifeboat",
+      "es": "el bote salvavidas"
+    },
+    {
+      "word": "le gilet de sauvetage",
+      "en": "the life jacket",
+      "es": "el chaleco salvavidas"
+    },
+    {
+      "word": "la tempête",
+      "en": "the storm",
+      "es": "la tormenta"
+    },
+    {
+      "word": "couler",
+      "en": "to sink",
+      "es": "hundirse"
+    },
+    {
+      "word": "le naufrage",
+      "en": "the shipwreck",
+      "es": "el naufragio"
+    },
+    {
+      "word": "se noyer",
+      "en": "to drown",
+      "es": "ahogarse"
+    },
+    {
+      "word": "le mal de mer",
+      "en": "seasickness",
+      "es": "el mareo"
+    },
+    {
+      "word": "le requin",
+      "en": "the shark",
+      "es": "el tiburón"
+    },
+    {
+      "word": "le dauphin",
+      "en": "the dolphin",
+      "es": "el delfín"
+    },
+    {
+      "word": "l'iceberg",
+      "en": "the iceberg",
+      "es": "el iceberg"
+    },
+    {
+      "word": "la salle de bal",
+      "en": "the ballroom",
+      "es": "el salón de baile"
+    },
+    {
+      "word": "la piscine",
+      "en": "the pool",
+      "es": "la piscina"
+    },
+    {
+      "word": "la salle de sport",
+      "en": "the gym",
+      "es": "el gimnasio"
+    },
+    {
+      "word": "vide",
+      "en": "empty",
+      "es": "vacío"
+    },
+    {
+      "word": "suffisant / suffisante",
+      "en": "enough / sufficient",
+      "es": "suficiente"
+    },
+    {
+      "word": "le radar",
+      "en": "the radar",
+      "es": "el radar"
+    },
+    {
+      "word": "la côte",
+      "en": "the coast",
+      "es": "la costa"
+    },
+    {
+      "word": "peu profond",
+      "en": "shallow",
+      "es": "poco profundo"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Nous partons en croisière !",
+      "en": "We're going on a cruise!",
+      "es": "¡Nos vamos de crucero!"
+    },
+    {
+      "phrase": "Elle nage très bien. Moi, je ne sais pas nager.",
+      "en": "She swims very well. I can't swim.",
+      "es": "Ella nada muy bien. Yo no sé nadar."
+    },
+    {
+      "phrase": "Ils partiront en croisière pendant deux semaines.",
+      "en": "They will go on a cruise for two weeks.",
+      "es": "Se irán de crucero dos semanas."
+    },
+    {
+      "phrase": "Je t'attends sur le pont.",
+      "en": "I'll wait for you on deck.",
+      "es": "Te espero en la cubierta."
+    },
+    {
+      "phrase": "On se retrouve dans la salle de bal à vingt heures pile.",
+      "en": "Let's meet in the ballroom at 8 p.m. sharp.",
+      "es": "Nos vemos en el salón de baile a las ocho en punto."
+    },
+    {
+      "phrase": "La salle à manger est pleine : mangeons plutôt sur la terrasse.",
+      "en": "The dining room is full: let's eat on the terrace instead.",
+      "es": "El comedor está lleno: mejor comamos en la terraza."
+    },
+    {
+      "phrase": "On l'a vu dans la salle de jeux il y a une minute.",
+      "en": "He was seen in the game room a minute ago.",
+      "es": "Lo vieron en la sala de juegos hace un minuto."
+    },
+    {
+      "phrase": "Il y a eu une tempête hier soir.",
+      "en": "There was a storm last night.",
+      "es": "Anoche hubo una tormenta."
+    },
+    {
+      "phrase": "Il n'y a pas assez de canots de sauvetage !",
+      "en": "There aren't enough lifeboats!",
+      "es": "¡No hay suficientes botes salvavidas!"
+    },
+    {
+      "phrase": "Elle a passé des heures à regarder la mer par le hublot.",
+      "en": "She spent hours looking at the sea through the porthole.",
+      "es": "Se pasó horas mirando el mar por el ojo de buey."
+    },
+    {
+      "phrase": "Le capitaine nous a mariés sur le bateau.",
+      "en": "The captain married us on the ship.",
+      "es": "El capitán nos casó en el barco."
+    },
+    {
+      "phrase": "Pourquoi le canot ne s'approche-t-il pas de la côte ? — Parce que c'est peu profond.",
+      "en": "Why isn't the boat getting closer to the coast? — Because it's shallow.",
+      "es": "¿Por qué no se acerca el bote a la costa? — Porque hay poca profundidad."
+    },
+    {
+      "phrase": "Tu as vu les dauphins ? Ils nageaient devant la proue !",
+      "en": "Did you see the dolphins? They were swimming in front of the bow!",
+      "es": "¿Viste los delfines? ¡Nadaban delante de la proa!"
+    },
+    {
+      "phrase": "Tu aimerais faire une croisière ? — Oui, mais j'ai le mal de mer.",
+      "en": "Would you like to go on a cruise? — Yes, but I get seasick.",
+      "es": "¿Te gustaría hacer un crucero? — Sí, pero me mareo."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What is \"la poupe\"?",
+        "es": "¿Qué es «la poupe»?"
+      },
+      "options": {
+        "en": [
+          "the stern (back)",
+          "the bow (front)",
+          "the deck",
+          "the cabin"
+        ],
+        "es": [
+          "la popa (parte trasera)",
+          "la proa (parte delantera)",
+          "la cubierta",
+          "el camarote"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "La proue = the front.",
+        "es": "La proue = la parte delantera."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Lever l'ancre\" means…",
+        "es": "«Lever l'ancre» significa…"
+      },
+      "options": {
+        "en": [
+          "to weigh anchor",
+          "to write with ink",
+          "to raise the flag",
+          "to sink"
+        ],
+        "es": [
+          "levar anclas",
+          "escribir con tinta",
+          "izar la bandera",
+          "hundirse"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "L'ancre (anchor) ≠ l'encre (ink).",
+        "es": "L'ancre (ancla) ≠ l'encre (tinta)."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence gives the background of a story?",
+        "es": "¿Qué frase da el contexto de un relato?"
+      },
+      "options": [
+        "Nous avions économisé pendant des années.",
+        "Une tempête commença.",
+        "Le bateau coula.",
+        "On nous sauva."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus-que-parfait sets the earlier background.",
+        "es": "El pluscuamperfecto da el contexto anterior."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Les gens eurent peur.\" Spoken equivalent?",
+        "es": "«Les gens eurent peur.» ¿Equivalente oral?"
+      },
+      "options": [
+        "Les gens ont eu peur.",
+        "Les gens avaient peur.",
+        "Les gens auront peur.",
+        "Les gens ont peur."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Passé simple → passé composé.",
+        "es": "Passé simple → passé composé."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Quand le bateau ___ au port, nous descendrons.\"",
+        "es": "Completa: «Quand le bateau ___ au port, nous descendrons.»"
+      },
+      "options": [
+        "arrivera",
+        "arrive",
+        "arrivait",
+        "arriverait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future after \"quand\".",
+        "es": "Futuro tras «quand»."
+      }
+    },
+    {
+      "question": {
+        "en": "What do you wear in an emergency at sea?",
+        "es": "¿Qué te pones en una emergencia en el mar?"
+      },
+      "options": [
+        "un gilet de sauvetage",
+        "un hublot",
+        "une hélice",
+        "une ancre"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Life jacket.",
+        "es": "Chaleco salvavidas."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Le radar n'enregistre ___ objet.\"",
+        "es": "Completa: «Le radar n'enregistre ___ objet.»"
+      },
+      "options": [
+        "aucun",
+        "pas",
+        "rien",
+        "jamais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Ne … aucun + noun.",
+        "es": "Ne … aucun + sustantivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le mal de mer\" is…",
+        "es": "«Le mal de mer» es…"
+      },
+      "options": {
+        "en": [
+          "seasickness",
+          "a sea monster",
+          "pollution",
+          "a wave"
+        ],
+        "es": [
+          "el mareo",
+          "un monstruo marino",
+          "la contaminación",
+          "una ola"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Avoir le mal de mer.",
+        "es": "Avoir le mal de mer."
+      }
+    }
+  ],
+  "story": {
+    "title": "La croisière dans les fjords",
+    "text": "Mon mari et moi avions attendu toute notre vie pour faire une croisière. Quand il prit sa retraite, le moment arriva enfin. Nos enfants étaient grands, et ils n'avaient pas voulu nous accompagner. Nous avions économisé pendant des années pour faire un voyage de deux semaines dans les fjords de Norvège. Notre cabine était spacieuse et les lits étaient confortables. Tous les matins, nous marchions sur le pont, et le soir, nous dansions sur de vieilles chansons dans la salle de bal. Tout allait bien. Mais un soir, le ciel se couvrit et une terrible tempête commença. On nous demanda de retourner dans nos cabines. Tout à coup, les lumières s'éteignirent et les moteurs s'arrêtèrent. Les passagers eurent peur et commencèrent à crier. Les enfants pleuraient, et l'équipage essayait de garder tout le monde calme afin de faire son travail. Le capitaine annonça qu'il fallait mettre les gilets de sauvetage. Heureusement, il y avait assez de canots pour tout le monde, mais ce ne fut pas nécessaire : deux heures plus tard, les moteurs repartirent. Le lendemain, la mer était calme et des dauphins nageaient devant la proue. Quelle aventure !",
+    "en": "My husband and I had waited our whole lives to go on a cruise. When he retired, the moment finally came. Our children were grown up, and they hadn't wanted to come with us. We had saved for years for a two-week trip in the fjords of Norway. Our cabin was spacious and the beds were comfortable. Every morning we walked on the deck, and in the evening we danced to old songs in the ballroom. Everything was going well. But one evening, the sky clouded over and a terrible storm began. We were asked to go back to our cabins. Suddenly, the lights went out and the engines stopped. The passengers got scared and started shouting. Children were crying, and the crew was trying to keep everyone calm so they could do their job. The captain announced that we had to put on life jackets. Fortunately, there were enough lifeboats for everyone, but they weren't needed: two hours later, the engines started again. The next day, the sea was calm and dolphins were swimming in front of the bow. What an adventure!",
+    "es": "Mi marido y yo habíamos esperado toda la vida para hacer un crucero. Cuando él se jubiló, por fin llegó el momento. Nuestros hijos ya eran mayores y no habían querido acompañarnos. Habíamos ahorrado durante años para un viaje de dos semanas por los fiordos de Noruega. Nuestro camarote era espacioso y las camas, cómodas. Todas las mañanas paseábamos por la cubierta y, por la noche, bailábamos canciones antiguas en el salón de baile. Todo iba bien. Pero una noche el cielo se cubrió y empezó una tormenta terrible. Nos pidieron que volviéramos a los camarotes. De repente, se apagaron las luces y se pararon los motores. Los pasajeros tuvieron miedo y empezaron a gritar. Los niños lloraban y la tripulación intentaba mantener la calma de todos para poder hacer su trabajo. El capitán anunció que había que ponerse los chalecos salvavidas. Por suerte había botes suficientes para todos, pero no hizo falta: dos horas después, los motores arrancaron de nuevo. Al día siguiente el mar estaba en calma y unos delfines nadaban delante de la proa. ¡Menuda aventura!",
+    "highlighted_words": [
+      "avions attendu",
+      "prit sa retraite",
+      "n'avaient pas voulu",
+      "avions économisé",
+      "cabine",
+      "pont",
+      "salle de bal",
+      "se couvrit",
+      "commença",
+      "eurent peur",
+      "afin de",
+      "gilets de sauvetage",
+      "canots",
+      "proue"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Nous partons en croisière",
+      "en": "We're going on a cruise",
+      "es": "Nos vamos de crucero"
+    },
+    {
+      "sentence": "Je ne sais pas nager",
+      "en": "I can't swim",
+      "es": "No sé nadar"
+    },
+    {
+      "sentence": "Il y a eu une tempête hier",
+      "en": "There was a storm yesterday",
+      "es": "Ayer hubo una tormenta"
+    },
+    {
+      "sentence": "Les dauphins nageaient devant la proue",
+      "en": "The dolphins were swimming in front of the bow",
+      "es": "Los delfines nadaban delante de la proa"
+    },
+    {
+      "sentence": "J'ai le mal de mer",
+      "en": "I'm seasick",
+      "es": "Estoy mareado"
+    },
+    {
+      "sentence": "Mettez vos gilets de sauvetage",
+      "en": "Put on your life jackets",
+      "es": "Pónganse los chalecos salvavidas"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est ma cabine ?",
+      "en": "Where is my cabin?",
+      "es": "¿Dónde está mi camarote?"
+    },
+    {
+      "answer": "Le bateau part à midi",
+      "en": "The ship leaves at noon",
+      "es": "El barco sale a mediodía"
+    },
+    {
+      "answer": "On se voit sur le pont",
+      "en": "See you on deck",
+      "es": "Nos vemos en la cubierta"
+    },
+    {
+      "answer": "Le bateau a coulé",
+      "en": "The ship sank",
+      "es": "El barco se hundió"
+    },
+    {
+      "answer": "La mer est calme",
+      "en": "The sea is calm",
+      "es": "El mar está en calma"
+    },
+    {
+      "answer": "J'ai peur des requins",
+      "en": "I'm afraid of sharks",
+      "es": "Tengo miedo de los tiburones"
+    }
+  ]
+}

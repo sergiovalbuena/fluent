@@ -1,0 +1,571 @@
+{
+  "lesson": 53,
+  "slug": "lecon-53",
+  "icon": "🍸",
+  "title": {
+    "fr": "Au bar",
+    "es": "En el bar",
+    "en": "At the bar"
+  },
+  "source": {
+    "audio": "Lecons 53.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "impératif (nous)",
+      "example": "Prenons une bière fraîche ! Portons un toast !",
+      "en": "Let's…",
+      "es": "Imperativo con «nous»"
+    },
+    {
+      "structure": "imparfait (description)",
+      "example": "J'étais seul au comptoir. / Elle avait un grand verre à la main.",
+      "en": "Imperfect for descriptions",
+      "es": "Imperfecto para descripciones"
+    },
+    {
+      "structure": "être en train de (passé)",
+      "example": "Il était en train de devenir agressif.",
+      "en": "Ongoing change in the past",
+      "es": "Cambio en curso en el pasado"
+    },
+    {
+      "structure": "comme si + imparfait",
+      "example": "Il buvait du whisky comme si c'était de l'eau.",
+      "en": "\"As if\" + imperfect",
+      "es": "«Como si» + imperfecto"
+    },
+    {
+      "structure": "pour que / éviter que + subjonctif",
+      "example": "Elle essayait de le convaincre pour qu'il n'aille plus au bar.",
+      "en": "Purpose / avoidance + subjunctive",
+      "es": "Finalidad / evitar + subjuntivo"
+    },
+    {
+      "structure": "depuis + présent",
+      "example": "Sa femme est enceinte depuis six mois.",
+      "en": "Ongoing since",
+      "es": "Desde hace"
+    },
+    {
+      "structure": "se rendre compte que",
+      "example": "Il s'est rendu compte qu'il pouvait faire du mal à ceux qu'il aimait.",
+      "en": "\"To realize\"",
+      "es": "«Darse cuenta de que»"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "La situation devint pire. Il commença à retourner au bar.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il commença, ils eurent peur) is the literary past used in written stories; in conversation, use the passé composé.",
+      "es": "El passé simple (il commença, ils eurent peur) es el pasado literario de los relatos escritos; al hablar se usa el passé composé."
+    },
+    {
+      "en": "At the bar: \"un demi\" (a small draft beer), \"un verre de vin\", \"une carafe d'eau\" (free tap water), \"C'est ma tournée !\" (This round is on me!), \"Santé !\" (Cheers!).",
+      "es": "En el bar: «un demi» (una caña), «un verre de vin», «une carafe d'eau» (agua del grifo gratis), «C'est ma tournée !» (¡Esta ronda la pago yo!), «Santé !» (¡Salud!)."
+    },
+    {
+      "en": "\"Un enterrement de vie de garçon / de jeune fille\" = bachelor / bachelorette party.",
+      "es": "«Un enterrement de vie de garçon / de jeune fille» = despedida de soltero / soltera."
+    },
+    {
+      "en": "\"La gueule de bois\" = hangover (informal). \"Être ivre / soûl\" = to be drunk.",
+      "es": "«La gueule de bois» = la resaca (coloquial). «Être ivre / soûl» = estar borracho."
+    },
+    {
+      "en": "\"C'est offert par la maison\" = it's on the house.",
+      "es": "«C'est offert par la maison» = invita la casa."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le bar",
+      "en": "the bar",
+      "es": "el bar"
+    },
+    {
+      "word": "le pub",
+      "en": "the pub",
+      "es": "el pub"
+    },
+    {
+      "word": "le comptoir",
+      "en": "the counter",
+      "es": "la barra"
+    },
+    {
+      "word": "le barman / la barmaid",
+      "en": "the bartender",
+      "es": "el camarero / la camarera"
+    },
+    {
+      "word": "la boisson",
+      "en": "the drink",
+      "es": "la bebida"
+    },
+    {
+      "word": "la bière",
+      "en": "beer",
+      "es": "la cerveza"
+    },
+    {
+      "word": "un demi",
+      "en": "a small draft beer",
+      "es": "una caña"
+    },
+    {
+      "word": "le vin",
+      "en": "wine",
+      "es": "el vino"
+    },
+    {
+      "word": "le cocktail",
+      "en": "the cocktail",
+      "es": "el cóctel"
+    },
+    {
+      "word": "le whisky",
+      "en": "whisky",
+      "es": "el whisky"
+    },
+    {
+      "word": "l'alcool",
+      "en": "alcohol",
+      "es": "el alcohol"
+    },
+    {
+      "word": "le degré",
+      "en": "the proof / degree",
+      "es": "el grado"
+    },
+    {
+      "word": "fort / forte",
+      "en": "strong",
+      "es": "fuerte"
+    },
+    {
+      "word": "doux / douce",
+      "en": "sweet / mild",
+      "es": "dulce / suave"
+    },
+    {
+      "word": "le goût",
+      "en": "taste",
+      "es": "el sabor / el gusto"
+    },
+    {
+      "word": "goûter",
+      "en": "to taste",
+      "es": "probar"
+    },
+    {
+      "word": "trinquer / porter un toast",
+      "en": "to toast",
+      "es": "brindar"
+    },
+    {
+      "word": "Santé !",
+      "en": "Cheers!",
+      "es": "¡Salud!"
+    },
+    {
+      "word": "la tournée",
+      "en": "the round",
+      "es": "la ronda"
+    },
+    {
+      "word": "offrir",
+      "en": "to offer / buy (a drink)",
+      "es": "invitar"
+    },
+    {
+      "word": "l'enterrement de vie de garçon",
+      "en": "the bachelor party",
+      "es": "la despedida de soltero"
+    },
+    {
+      "word": "ivre / soûl",
+      "en": "drunk",
+      "es": "borracho"
+    },
+    {
+      "word": "s'enivrer",
+      "en": "to get drunk",
+      "es": "emborracharse"
+    },
+    {
+      "word": "la gueule de bois",
+      "en": "the hangover",
+      "es": "la resaca"
+    },
+    {
+      "word": "alcoolique",
+      "en": "alcoholic",
+      "es": "alcohólico"
+    },
+    {
+      "word": "le temps libre",
+      "en": "free time",
+      "es": "el tiempo libre"
+    },
+    {
+      "word": "ennuyeux / ennuyeuse",
+      "en": "boring",
+      "es": "aburrido / aburrida"
+    },
+    {
+      "word": "calme / tranquille",
+      "en": "quiet",
+      "es": "tranquilo"
+    },
+    {
+      "word": "enceinte",
+      "en": "pregnant",
+      "es": "embarazada"
+    },
+    {
+      "word": "la grossesse",
+      "en": "pregnancy",
+      "es": "el embarazo"
+    },
+    {
+      "word": "de mauvaise humeur",
+      "en": "in a bad mood",
+      "es": "de mal humor"
+    },
+    {
+      "word": "avoir sommeil",
+      "en": "to be sleepy",
+      "es": "tener sueño"
+    },
+    {
+      "word": "se rendre compte",
+      "en": "to realize",
+      "es": "darse cuenta"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Prenons une bière fraîche !",
+      "en": "Let's have a cold beer!",
+      "es": "¡Tomemos una cerveza fría!"
+    },
+    {
+      "phrase": "C'est un petit bar très tranquille.",
+      "en": "It's a very quiet little bar.",
+      "es": "Es un barecito muy tranquilo."
+    },
+    {
+      "phrase": "Cette chanson n'est pas bien pour danser.",
+      "en": "This song isn't good for dancing.",
+      "es": "Esta canción no es buena para bailar."
+    },
+    {
+      "phrase": "J'étais seul, debout au comptoir.",
+      "en": "I was alone, standing at the counter.",
+      "es": "Estaba solo, de pie en la barra."
+    },
+    {
+      "phrase": "Il était en train de parler avec cette grande fille.",
+      "en": "He was talking with that tall girl.",
+      "es": "Estaba hablando con esa chica alta."
+    },
+    {
+      "phrase": "Le barman lui a servi une boisson très forte.",
+      "en": "The bartender served him a very strong drink.",
+      "es": "El camarero le sirvió una bebida muy fuerte."
+    },
+    {
+      "phrase": "Il n'est pas venu à mon enterrement de vie de garçon.",
+      "en": "He didn't come to my bachelor party.",
+      "es": "No vino a mi despedida de soltero."
+    },
+    {
+      "phrase": "Portons un toast au futur marié !",
+      "en": "Let's toast the groom-to-be!",
+      "es": "¡Brindemos por el futuro novio!"
+    },
+    {
+      "phrase": "Il buvait du whisky comme si c'était de l'eau.",
+      "en": "He was drinking whisky as if it were water.",
+      "es": "Bebía whisky como si fuera agua."
+    },
+    {
+      "phrase": "J'ai une terrible gueule de bois.",
+      "en": "I have a terrible hangover.",
+      "es": "Tengo una resaca terrible."
+    },
+    {
+      "phrase": "En Angleterre, les bars s'appellent des pubs.",
+      "en": "In England, bars are called pubs.",
+      "es": "En Inglaterra, los bares se llaman pubs."
+    },
+    {
+      "phrase": "Tu veux une boisson ? — Pas d'alcool, merci. Je prendrai un verre d'eau.",
+      "en": "Do you want a drink? — No alcohol, thanks. I'll have a glass of water.",
+      "es": "¿Quieres algo de beber? — Sin alcohol, gracias. Tomaré un vaso de agua."
+    },
+    {
+      "phrase": "Tout le monde a à boire ? — Commandez, c'est offert par la maison !",
+      "en": "Does everyone have a drink? — Order, it's on the house!",
+      "es": "¿Todo el mundo tiene bebida? — ¡Pidan, invita la casa!"
+    },
+    {
+      "phrase": "Je n'aime pas les fêtes où on boit trop.",
+      "en": "I don't like parties where people drink too much.",
+      "es": "No me gustan las fiestas en las que se bebe demasiado."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What is \"un demi\" in a French bar?",
+        "es": "¿Qué es «un demi» en un bar francés?"
+      },
+      "options": {
+        "en": [
+          "a small draft beer",
+          "half a bottle of wine",
+          "half a cocktail",
+          "a glass of water"
+        ],
+        "es": [
+          "una caña",
+          "media botella de vino",
+          "medio cóctel",
+          "un vaso de agua"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "About 25 cl.",
+        "es": "Unos 25 cl."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Cheers!\"?",
+        "es": "¿Cómo se dice «¡Salud!»?"
+      },
+      "options": [
+        "Santé !",
+        "Bon appétit !",
+        "Félicitations !",
+        "Bonne chance !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Also \"À la vôtre !\" / \"À la tienne !\".",
+        "es": "También «À la vôtre !» / «À la tienne !»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il buvait comme si c'___ de l'eau.\"",
+        "es": "Completa: «Il buvait comme si c'___ de l'eau.»"
+      },
+      "options": [
+        "était",
+        "est",
+        "soit",
+        "serait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Comme si\" + imparfait.",
+        "es": "«Comme si» + imperfecto."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle faisait tout pour qu'il n'___ plus au bar.\"",
+        "es": "Completa: «Elle faisait tout pour qu'il n'___ plus au bar.»"
+      },
+      "options": [
+        "aille",
+        "allait",
+        "ira",
+        "irait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pour que\" + subjunctive.",
+        "es": "«Pour que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"La gueule de bois\" means…",
+        "es": "«La gueule de bois» significa…"
+      },
+      "options": {
+        "en": [
+          "a hangover",
+          "a wooden mouth",
+          "a strong drink",
+          "a bar fight"
+        ],
+        "es": [
+          "una resaca",
+          "una boca de madera",
+          "una bebida fuerte",
+          "una pelea de bar"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Informal expression.",
+        "es": "Expresión coloquial."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Sa femme est enceinte ___ six mois.\"",
+        "es": "Completa: «Sa femme est enceinte ___ six mois.»"
+      },
+      "options": [
+        "depuis",
+        "pendant",
+        "il y a",
+        "dans"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Depuis + present.",
+        "es": "Depuis + presente."
+      }
+    },
+    {
+      "question": {
+        "en": "\"C'est offert par la maison.\" Meaning?",
+        "es": "«C'est offert par la maison.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "It's on the house.",
+          "It's a house party.",
+          "It's homemade.",
+          "It's for the owner."
+        ],
+        "es": [
+          "Invita la casa.",
+          "Es una fiesta en casa.",
+          "Es casero.",
+          "Es para el dueño."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Free, paid by the bar.",
+        "es": "Gratis, lo paga el bar."
+      }
+    },
+    {
+      "question": {
+        "en": "Imperative \"nous\": \"Let's have a drink!\"",
+        "es": "Imperativo «nous»: «¡Tomemos algo!»"
+      },
+      "options": [
+        "Prenons un verre !",
+        "Prends un verre !",
+        "Prenez un verre !",
+        "Nous prenons un verre !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imperative of prendre with nous: prenons.",
+        "es": "Imperativo de prendre con nous: prenons."
+      }
+    }
+  ],
+  "story": {
+    "title": "Un ami en difficulté",
+    "text": "Mon meilleur ami, Julien, passait presque tout son temps libre dans les bars de la ville. Au début, c'était juste pour s'amuser avec les copains. Mais petit à petit, la situation devint pire : il buvait du whisky comme si c'était de l'eau, et il était en train de devenir quelqu'un d'autre. Il y a un an, il s'est marié avec Claire, une femme très gentille qui essayait de le convaincre pour qu'il n'aille plus au bar tous les soirs. Pendant quelques mois, ça a marché. Mais ensuite, il commença à retourner à ses vieilles habitudes. Claire est enceinte depuis six mois, et elle était très inquiète. Un soir, elle avait préparé un dîner spécial pour lui annoncer que c'était une fille. Elle l'attendit jusqu'à minuit. Julien n'est jamais arrivé : il s'était endormi sur une chaise du bar. C'est moi qui suis allé le chercher. Le lendemain matin, avec une terrible gueule de bois, il a vu le dîner froid sur la table et le petit mot de Claire. Il s'est enfin rendu compte qu'il pouvait faire du mal aux personnes qu'il aimait à cause de l'alcool. Depuis trois mois, il ne boit plus une goutte, et il va à un groupe de soutien. Je suis fier de lui.",
+    "en": "My best friend, Julien, used to spend almost all his free time in the bars around town. At first, it was just to have fun with friends. But little by little, the situation got worse: he drank whisky as if it were water, and he was turning into someone else. A year ago, he married Claire, a very kind woman who tried to persuade him to stop going to the bar every night. For a few months, it worked. But then he started going back to his old habits. Claire is six months pregnant, and she was very worried. One evening, she had prepared a special dinner to tell him it was a girl. She waited for him until midnight. Julien never came: he had fallen asleep on a chair in the bar. I was the one who went to get him. The next morning, with a terrible hangover, he saw the cold dinner on the table and Claire's little note. He finally realized that he could hurt the people he loved because of alcohol. He hasn't had a drop for three months, and he goes to a support group. I'm proud of him.",
+    "es": "Mi mejor amigo, Julien, pasaba casi todo su tiempo libre en los bares de la ciudad. Al principio era solo para divertirse con los amigos. Pero poco a poco la situación empeoró: bebía whisky como si fuera agua y se estaba convirtiendo en otra persona. Hace un año se casó con Claire, una mujer muy amable que intentaba convencerlo para que no fuera al bar todas las noches. Durante unos meses funcionó. Pero luego empezó a volver a sus viejas costumbres. Claire está embarazada de seis meses y estaba muy preocupada. Una noche había preparado una cena especial para anunciarle que era una niña. Lo esperó hasta medianoche. Julien no llegó nunca: se había quedado dormido en una silla del bar. Fui yo quien fue a buscarlo. A la mañana siguiente, con una resaca terrible, vio la cena fría en la mesa y la notita de Claire. Por fin se dio cuenta de que podía hacer daño a las personas que quería por culpa del alcohol. Hace tres meses que no prueba ni una gota y va a un grupo de apoyo. Estoy orgulloso de él.",
+    "highlighted_words": [
+      "temps libre",
+      "devint pire",
+      "comme si c'était de l'eau",
+      "était en train de devenir",
+      "pour qu'il n'aille plus",
+      "commença",
+      "enceinte depuis six mois",
+      "attendit",
+      "s'était endormi",
+      "gueule de bois",
+      "s'est enfin rendu compte",
+      "Depuis trois mois"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Prenons une bière",
+      "en": "Let's have a beer",
+      "es": "Tomemos una cerveza"
+    },
+    {
+      "sentence": "C'est ma tournée",
+      "en": "This round is on me",
+      "es": "Esta ronda la pago yo"
+    },
+    {
+      "sentence": "J'étais seul au comptoir",
+      "en": "I was alone at the counter",
+      "es": "Estaba solo en la barra"
+    },
+    {
+      "sentence": "Il buvait comme si c'était de l'eau",
+      "en": "He drank as if it were water",
+      "es": "Bebía como si fuera agua"
+    },
+    {
+      "sentence": "Portons un toast",
+      "en": "Let's make a toast",
+      "es": "Brindemos"
+    },
+    {
+      "sentence": "Je ne bois pas d'alcool",
+      "en": "I don't drink alcohol",
+      "es": "No bebo alcohol"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Santé !",
+      "en": "Cheers!",
+      "es": "¡Salud!"
+    },
+    {
+      "answer": "Un demi, s'il vous plaît",
+      "en": "A small beer, please",
+      "es": "Una caña, por favor"
+    },
+    {
+      "answer": "J'ai la gueule de bois",
+      "en": "I have a hangover",
+      "es": "Tengo resaca"
+    },
+    {
+      "answer": "Je prendrai un verre d'eau",
+      "en": "I'll have a glass of water",
+      "es": "Tomaré un vaso de agua"
+    },
+    {
+      "answer": "C'est offert par la maison",
+      "en": "It's on the house",
+      "es": "Invita la casa"
+    },
+    {
+      "answer": "Ce bar est très calme",
+      "en": "This bar is very quiet",
+      "es": "Este bar es muy tranquilo"
+    }
+  ]
+}

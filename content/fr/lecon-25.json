@@ -1,0 +1,595 @@
+{
+  "lesson": 25,
+  "slug": "lecon-25",
+  "icon": "🚆",
+  "title": {
+    "fr": "Les transports",
+    "es": "Los transportes",
+    "en": "Transportation"
+  },
+  "source": {
+    "audio": "Lecons 25.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "pronoms démonstratifs",
+      "example": "Est-ce que celle-ci est ta voiture ?",
+      "en": "Demonstrative pronouns (celui-ci, celle-là…)",
+      "es": "Pronombres demostrativos"
+    },
+    {
+      "structure": "comparatif",
+      "example": "Le taxi est plus lent et plus cher que le métro. / Le train est moins cher que l'avion.",
+      "en": "Comparatives",
+      "es": "Comparativos"
+    },
+    {
+      "structure": "impératif (nous / tu)",
+      "example": "Louons une voiture ! / Regarde des deux côtés avant de traverser.",
+      "en": "Imperative",
+      "es": "Imperativo"
+    },
+    {
+      "structure": "avant de + infinitif",
+      "example": "Regarde avant de traverser.",
+      "en": "\"Before doing\"",
+      "es": "«Antes de»"
+    },
+    {
+      "structure": "être sur le point de",
+      "example": "Nous sommes sur le point d'atterrir.",
+      "en": "\"About to\"",
+      "es": "«A punto de»"
+    },
+    {
+      "structure": "plus-que-parfait",
+      "example": "J'ai dit au revoir aux gens qui avaient pris soin de moi.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    },
+    {
+      "structure": "gérondif",
+      "example": "Je suis resté un an en travaillant sur un ferry.",
+      "en": "Gerund",
+      "es": "Gerundio"
+    },
+    {
+      "structure": "pour que + subjonctif",
+      "example": "Nous aidons les enfants pour qu'ils puissent voyager.",
+      "en": "\"So that\" + subjunctive",
+      "es": "«Para que» + subjuntivo"
+    },
+    {
+      "structure": "se mettre à + infinitif",
+      "example": "Je me suis mis à faire des traductions.",
+      "en": "\"To start doing\"",
+      "es": "«Ponerse a»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Transport + \"en\" when you are inside: en voiture, en bus, en train, en avion, en métro. But \"à\" for what you ride on: à pied, à vélo, à moto, à cheval.",
+      "es": "Transporte + «en» cuando vas dentro: en voiture, en bus, en train, en avion, en métro. Pero «à» si vas encima: à pied, à vélo, à moto, à cheval."
+    },
+    {
+      "en": "\"Un aller simple\" = one-way ticket; \"un aller-retour\" = return ticket.",
+      "es": "«Un aller simple» = billete de ida; «un aller-retour» = billete de ida y vuelta."
+    },
+    {
+      "en": "\"Griller / brûler un feu rouge\" = to run a red light. \"Le permis de conduire\" = driver's license.",
+      "es": "«Griller / brûler un feu rouge» = saltarse un semáforo en rojo. «Le permis de conduire» = el carné de conducir."
+    },
+    {
+      "en": "\"Décoller\" = to take off; \"atterrir\" = to land.",
+      "es": "«Décoller» = despegar; «atterrir» = aterrizar."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la voiture",
+      "en": "the car",
+      "es": "el coche / el carro"
+    },
+    {
+      "word": "le bus",
+      "en": "the bus",
+      "es": "el autobús"
+    },
+    {
+      "word": "l'autocar",
+      "en": "the coach",
+      "es": "el autocar"
+    },
+    {
+      "word": "le camion",
+      "en": "the truck",
+      "es": "el camión"
+    },
+    {
+      "word": "la moto",
+      "en": "the motorbike",
+      "es": "la moto"
+    },
+    {
+      "word": "le vélo",
+      "en": "the bicycle",
+      "es": "la bicicleta"
+    },
+    {
+      "word": "le taxi",
+      "en": "the taxi",
+      "es": "el taxi"
+    },
+    {
+      "word": "le métro",
+      "en": "the subway",
+      "es": "el metro"
+    },
+    {
+      "word": "le train",
+      "en": "the train",
+      "es": "el tren"
+    },
+    {
+      "word": "le chemin de fer",
+      "en": "the railway",
+      "es": "el ferrocarril"
+    },
+    {
+      "word": "l'avion",
+      "en": "the plane",
+      "es": "el avión"
+    },
+    {
+      "word": "le vol",
+      "en": "the flight",
+      "es": "el vuelo"
+    },
+    {
+      "word": "le bateau",
+      "en": "the boat",
+      "es": "el barco"
+    },
+    {
+      "word": "le canot",
+      "en": "the canoe / small boat",
+      "es": "la canoa / el bote"
+    },
+    {
+      "word": "le port",
+      "en": "the port",
+      "es": "el puerto"
+    },
+    {
+      "word": "l'aéroport",
+      "en": "the airport",
+      "es": "el aeropuerto"
+    },
+    {
+      "word": "la gare",
+      "en": "the train station",
+      "es": "la estación de tren"
+    },
+    {
+      "word": "la station de métro",
+      "en": "the subway station",
+      "es": "la estación de metro"
+    },
+    {
+      "word": "la station-service",
+      "en": "the gas station",
+      "es": "la gasolinera"
+    },
+    {
+      "word": "l'essence",
+      "en": "gas / petrol",
+      "es": "la gasolina"
+    },
+    {
+      "word": "l'autoroute",
+      "en": "the highway",
+      "es": "la autopista"
+    },
+    {
+      "word": "la voie",
+      "en": "the lane / the track",
+      "es": "el carril / la vía"
+    },
+    {
+      "word": "le conducteur / la conductrice",
+      "en": "the driver",
+      "es": "el conductor / la conductora"
+    },
+    {
+      "word": "le permis de conduire",
+      "en": "driver's license",
+      "es": "el carné de conducir"
+    },
+    {
+      "word": "la ceinture de sécurité",
+      "en": "seat belt",
+      "es": "el cinturón de seguridad"
+    },
+    {
+      "word": "le frein",
+      "en": "the brake",
+      "es": "el freno"
+    },
+    {
+      "word": "freiner",
+      "en": "to brake",
+      "es": "frenar"
+    },
+    {
+      "word": "conduire",
+      "en": "to drive",
+      "es": "conducir / manejar"
+    },
+    {
+      "word": "doubler",
+      "en": "to overtake",
+      "es": "adelantar"
+    },
+    {
+      "word": "traverser",
+      "en": "to cross",
+      "es": "cruzar"
+    },
+    {
+      "word": "louer",
+      "en": "to rent",
+      "es": "alquilar"
+    },
+    {
+      "word": "décoller",
+      "en": "to take off",
+      "es": "despegar"
+    },
+    {
+      "word": "atterrir",
+      "en": "to land",
+      "es": "aterrizar"
+    },
+    {
+      "word": "le billet",
+      "en": "the ticket",
+      "es": "el billete / el boleto"
+    },
+    {
+      "word": "un aller-retour",
+      "en": "a return ticket",
+      "es": "un billete de ida y vuelta"
+    },
+    {
+      "word": "l'horaire",
+      "en": "the timetable",
+      "es": "el horario"
+    },
+    {
+      "word": "la distance",
+      "en": "the distance",
+      "es": "la distancia"
+    },
+    {
+      "word": "loin / près",
+      "en": "far / near",
+      "es": "lejos / cerca"
+    },
+    {
+      "word": "rapide / lent",
+      "en": "fast / slow",
+      "es": "rápido / lento"
+    },
+    {
+      "word": "vite / lentement",
+      "en": "quickly / slowly",
+      "es": "deprisa / despacio"
+    },
+    {
+      "word": "la vitesse",
+      "en": "speed",
+      "es": "la velocidad"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Est-ce que celle-ci est ta voiture ?",
+      "en": "Is this one your car?",
+      "es": "¿Este es tu coche?"
+    },
+    {
+      "phrase": "Où va ce bus ? — À la gare.",
+      "en": "Where does this bus go? — To the station.",
+      "es": "¿Adónde va este autobús? — A la estación."
+    },
+    {
+      "phrase": "Regarde des deux côtés de la rue avant de traverser.",
+      "en": "Look both ways before crossing the street.",
+      "es": "Mira a ambos lados de la calle antes de cruzar."
+    },
+    {
+      "phrase": "J'ai perdu mon permis de conduire !",
+      "en": "I lost my driver's license!",
+      "es": "¡He perdido el carné de conducir!"
+    },
+    {
+      "phrase": "Arrête-toi à la station-service, on n'a plus d'essence.",
+      "en": "Stop at the gas station, we're out of gas.",
+      "es": "Para en la gasolinera, nos hemos quedado sin gasolina."
+    },
+    {
+      "phrase": "Appuie sur le bouton pour descendre au prochain arrêt.",
+      "en": "Press the button to get off at the next stop.",
+      "es": "Pulsa el botón para bajar en la próxima parada."
+    },
+    {
+      "phrase": "L'avion est en train de décoller.",
+      "en": "The plane is taking off.",
+      "es": "El avión está despegando."
+    },
+    {
+      "phrase": "C'est mieux si tu prends le métro : le taxi est plus lent et plus cher.",
+      "en": "It's better if you take the subway: the taxi is slower and more expensive.",
+      "es": "Es mejor que tomes el metro: el taxi es más lento y más caro."
+    },
+    {
+      "phrase": "Le train est souvent moins cher que l'avion.",
+      "en": "The train is often cheaper than the plane.",
+      "es": "El tren suele ser más barato que el avión."
+    },
+    {
+      "phrase": "Louons une voiture pour le week-end !",
+      "en": "Let's rent a car for the weekend!",
+      "es": "¡Alquilemos un coche para el fin de semana!"
+    },
+    {
+      "phrase": "Deux billets pour le vol 300 à destination de Genève, s'il vous plaît.",
+      "en": "Two tickets for flight 300 to Geneva, please.",
+      "es": "Dos billetes para el vuelo 300 con destino a Ginebra, por favor."
+    },
+    {
+      "phrase": "Vos papiers, s'il vous plaît. — Qu'est-ce que j'ai fait ? — Vous avez grillé le feu rouge.",
+      "en": "Your papers, please. — What did I do? — You ran the red light.",
+      "es": "Su documentación, por favor. — ¿Qué he hecho? — Se ha saltado el semáforo en rojo."
+    },
+    {
+      "phrase": "Attachez vos ceintures : nous sommes sur le point d'atterrir.",
+      "en": "Fasten your seat belts: we are about to land.",
+      "es": "Abróchense los cinturones: estamos a punto de aterrizar."
+    },
+    {
+      "phrase": "Ne t'arrête jamais sur la voie ferrée !",
+      "en": "Never stop on the railway track!",
+      "es": "¡No te detengas nunca en la vía del tren!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Je vais au travail ___ vélo.\"",
+        "es": "Completa: «Je vais au travail ___ vélo.»"
+      },
+      "options": [
+        "à",
+        "en",
+        "dans",
+        "par"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "À vélo, à pied, à moto; but en voiture, en train.",
+        "es": "À vélo, à pied, à moto; pero en voiture, en train."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Nous partons ___ train.\"",
+        "es": "Completa: «Nous partons ___ train.»"
+      },
+      "options": [
+        "en",
+        "à",
+        "au",
+        "par le"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "En train, en avion, en bus.",
+        "es": "En train, en avion, en bus."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"atterrir\" mean?",
+        "es": "¿Qué significa «atterrir»?"
+      },
+      "options": {
+        "en": [
+          "to land",
+          "to take off",
+          "to brake",
+          "to overtake"
+        ],
+        "es": [
+          "aterrizar",
+          "despegar",
+          "frenar",
+          "adelantar"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Décoller = to take off.",
+        "es": "Décoller = despegar."
+      }
+    },
+    {
+      "question": {
+        "en": "Which ticket lets you come back?",
+        "es": "¿Qué billete te permite volver?"
+      },
+      "options": [
+        "un aller-retour",
+        "un aller simple",
+        "un horaire",
+        "un vol"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Aller simple = one way.",
+        "es": "Aller simple = solo ida."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Le métro est ___ cher ___ le taxi.\"",
+        "es": "Completa: «Le métro est ___ cher ___ le taxi.»"
+      },
+      "options": [
+        "moins … que",
+        "moins … de",
+        "plus … de",
+        "aussi … comme"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Comparative: moins / plus / aussi … que.",
+        "es": "Comparativo: moins / plus / aussi … que."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'ai remercié les gens qui ___ soin de moi.\"",
+        "es": "Completa: «J'ai remercié les gens qui ___ soin de moi.»"
+      },
+      "options": [
+        "avaient pris",
+        "ont pris",
+        "prenaient",
+        "prendront"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus-que-parfait: an action before another past action.",
+        "es": "Pluscuamperfecto: una acción anterior a otra pasada."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Nous les aidons pour qu'ils ___ voyager.\"",
+        "es": "Completa: «Nous les aidons pour qu'ils ___ voyager.»"
+      },
+      "options": [
+        "puissent",
+        "peuvent",
+        "pourront",
+        "pouvaient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pour que\" + subjunctive.",
+        "es": "«Pour que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Which demonstrative fits: \"Tu préfères quelle voiture ? — ___.\"",
+        "es": "¿Qué demostrativo encaja: «¿Qué coche prefieres? — ___.»"
+      },
+      "options": [
+        "Celle-ci",
+        "Celui-ci",
+        "Ceux-ci",
+        "Cette-ci"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Voiture is feminine singular: celle-ci.",
+        "es": "Voiture es femenino singular: celle-ci."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le grand voyage de Malik",
+    "text": "Je m'appelle Malik Benali. Quand j'avais dix-neuf ans, j'ai décidé de quitter Marseille pour découvrir le monde. Mes parents étaient inquiets, mais ils m'ont laissé partir. D'abord, j'ai pris un ferry pour la Corse et je suis resté là-bas un an en travaillant sur les bateaux du port. En même temps, j'économisais de l'argent pour mon prochain voyage. Quand le jour du départ est arrivé, j'ai dit au revoir aux pêcheurs qui avaient pris soin de moi. Ensuite, j'ai traversé l'Europe en train : c'est moins cher que l'avion et on voit des paysages magnifiques. Un soir, à Lisbonne, j'étais en train de jouer de la guitare dans la rue quand une femme m'a proposé un travail de guide pour des touristes. Comme j'avais appris l'espagnol et l'anglais pendant mes voyages, je me suis mis à faire aussi des traductions. Plus tard, je suis parti au Canada en avion. Aujourd'hui, j'ai une petite agence de voyages à Montréal. Nous organisons des séjours pour des jeunes qui n'ont pas beaucoup d'argent, pour qu'ils puissent, eux aussi, découvrir le monde.",
+    "en": "My name is Malik Benali. When I was nineteen, I decided to leave Marseille to discover the world. My parents were worried, but they let me go. First, I took a ferry to Corsica and stayed there for a year, working on the boats in the harbor. At the same time, I was saving money for my next trip. When the day of departure came, I said goodbye to the fishermen who had taken care of me. Then, I crossed Europe by train: it's cheaper than flying and you see magnificent landscapes. One evening in Lisbon, I was playing the guitar in the street when a woman offered me a job as a tour guide. As I had learned Spanish and English during my travels, I also started doing translations. Later, I flew to Canada. Today, I have a small travel agency in Montreal. We organize trips for young people who don't have much money, so that they too can discover the world.",
+    "es": "Me llamo Malik Benali. Cuando tenía diecinueve años, decidí dejar Marsella para descubrir el mundo. Mis padres estaban preocupados, pero me dejaron ir. Primero tomé un ferry a Córcega y me quedé allí un año trabajando en los barcos del puerto. Al mismo tiempo, ahorraba dinero para mi próximo viaje. Cuando llegó el día de la partida, me despedí de los pescadores que me habían cuidado. Después crucé Europa en tren: es más barato que el avión y se ven paisajes magníficos. Una noche, en Lisboa, estaba tocando la guitarra en la calle cuando una mujer me ofreció un trabajo de guía turístico. Como había aprendido español e inglés durante mis viajes, me puse a hacer también traducciones. Más tarde me fui a Canadá en avión. Hoy tengo una pequeña agencia de viajes en Montreal. Organizamos estancias para jóvenes que no tienen mucho dinero, para que ellos también puedan descubrir el mundo.",
+    "highlighted_words": [
+      "ferry",
+      "en travaillant",
+      "avaient pris soin",
+      "en train",
+      "moins cher que",
+      "j'étais en train de",
+      "j'avais appris",
+      "je me suis mis à",
+      "en avion",
+      "pour qu'ils puissent"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je vais au travail en métro",
+      "en": "I go to work by subway",
+      "es": "Voy al trabajo en metro"
+    },
+    {
+      "sentence": "Le train est moins cher que l'avion",
+      "en": "The train is cheaper than the plane",
+      "es": "El tren es más barato que el avión"
+    },
+    {
+      "sentence": "Regarde avant de traverser",
+      "en": "Look before crossing",
+      "es": "Mira antes de cruzar"
+    },
+    {
+      "sentence": "L'avion est sur le point d'atterrir",
+      "en": "The plane is about to land",
+      "es": "El avión está a punto de aterrizar"
+    },
+    {
+      "sentence": "Louons une voiture",
+      "en": "Let's rent a car",
+      "es": "Alquilemos un coche"
+    },
+    {
+      "sentence": "Attache ta ceinture",
+      "en": "Fasten your seat belt",
+      "es": "Abróchate el cinturón"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est la gare ?",
+      "en": "Where is the train station?",
+      "es": "¿Dónde está la estación de tren?"
+    },
+    {
+      "answer": "Un aller-retour pour Lyon",
+      "en": "A return ticket to Lyon",
+      "es": "Un billete de ida y vuelta a Lyon"
+    },
+    {
+      "answer": "Je vais à pied",
+      "en": "I go on foot",
+      "es": "Voy a pie"
+    },
+    {
+      "answer": "On n'a plus d'essence",
+      "en": "We're out of gas",
+      "es": "Nos hemos quedado sin gasolina"
+    },
+    {
+      "answer": "Tu conduis trop vite",
+      "en": "You drive too fast",
+      "es": "Conduces demasiado rápido"
+    },
+    {
+      "answer": "L'avion décolle",
+      "en": "The plane is taking off",
+      "es": "El avión despega"
+    }
+  ]
+}

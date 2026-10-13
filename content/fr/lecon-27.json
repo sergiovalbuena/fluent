@@ -1,0 +1,604 @@
+{
+  "lesson": 27,
+  "slug": "lecon-27",
+  "icon": "🌷",
+  "title": {
+    "fr": "Les fleurs et le jardin",
+    "es": "Las flores y el jardín",
+    "en": "Flowers and the garden"
+  },
+  "source": {
+    "audio": "Lecons 27.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "impératif + pronom (COI)",
+      "example": "Offre-lui des iris, elle les adore ! / Offrons-lui des œillets.",
+      "en": "Imperative with indirect object",
+      "es": "Imperativo con complemento indirecto"
+    },
+    {
+      "structure": "en train de",
+      "example": "Le cactus est en train de fleurir.",
+      "en": "Action in progress",
+      "es": "Acción en curso"
+    },
+    {
+      "structure": "accord du participe passé avec avoir",
+      "example": "J'ai trouvé des graines, je les ai semées.",
+      "en": "Past participle agreement (pronoun before)",
+      "es": "Concordancia del participio (pronombre delante)"
+    },
+    {
+      "structure": "discours indirect au passé",
+      "example": "François m'a dit que les clochettes étaient toxiques.",
+      "en": "Reported speech",
+      "es": "Estilo indirecto"
+    },
+    {
+      "structure": "il me semble que",
+      "example": "Il me semble que les azalées aussi.",
+      "en": "\"It seems to me that\"",
+      "es": "«Me parece que»"
+    },
+    {
+      "structure": "pronom « en »",
+      "example": "Des mimosas ? Nous n'en avons pas.",
+      "en": "\"en\" replacing a quantity",
+      "es": "«en» que sustituye una cantidad"
+    },
+    {
+      "structure": "gérondif / participe présent",
+      "example": "en traversant le pays / des fleurs rendant la route agréable",
+      "en": "Gerund and present participle",
+      "es": "Gerundio y participio presente"
+    },
+    {
+      "structure": "superlatif",
+      "example": "les plus belles couleurs",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Flower symbolism in France: red roses = love; white = purity; yellow = friendship; chrysanthemums are for cemeteries (1 November) — never give them as a gift!",
+      "es": "Simbolismo de las flores en Francia: rosas rojas = amor; blancas = pureza; amarillas = amistad; los crisantemos son para los cementerios (1 de noviembre): ¡nunca los regales!"
+    },
+    {
+      "en": "On 1 May, people give \"un brin de muguet\" (lily of the valley) for good luck. Careful: muguet is toxic if eaten, and so are azaleas.",
+      "es": "El 1 de mayo se regala «un brin de muguet» (lirio de los valles) para dar suerte. Ojo: el muguet es tóxico si se come, y las azaleas también."
+    },
+    {
+      "en": "With \"avoir\", the past participle agrees with a direct object placed BEFORE: \"les roses que j'ai coupées\".",
+      "es": "Con «avoir», el participio concuerda con el complemento directo colocado DELANTE: «les roses que j'ai coupées»."
+    },
+    {
+      "en": "\"Fleurir\" = to bloom; \"pousser\" = to grow; \"semer\" = to sow; \"arroser\" = to water.",
+      "es": "«Fleurir» = florecer; «pousser» = crecer; «semer» = sembrar; «arroser» = regar."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la fleur",
+      "en": "the flower",
+      "es": "la flor"
+    },
+    {
+      "word": "le bouquet",
+      "en": "the bouquet",
+      "es": "el ramo"
+    },
+    {
+      "word": "la rose",
+      "en": "the rose",
+      "es": "la rosa"
+    },
+    {
+      "word": "la tulipe",
+      "en": "the tulip",
+      "es": "el tulipán"
+    },
+    {
+      "word": "l'œillet",
+      "en": "the carnation",
+      "es": "el clavel"
+    },
+    {
+      "word": "la marguerite",
+      "en": "the daisy",
+      "es": "la margarita"
+    },
+    {
+      "word": "le tournesol",
+      "en": "the sunflower",
+      "es": "el girasol"
+    },
+    {
+      "word": "la violette",
+      "en": "the violet",
+      "es": "la violeta"
+    },
+    {
+      "word": "l'orchidée",
+      "en": "the orchid",
+      "es": "la orquídea"
+    },
+    {
+      "word": "le lys",
+      "en": "the lily",
+      "es": "el lirio / la azucena"
+    },
+    {
+      "word": "l'iris",
+      "en": "the iris",
+      "es": "el iris"
+    },
+    {
+      "word": "le muguet",
+      "en": "lily of the valley",
+      "es": "el lirio de los valles / el muguete"
+    },
+    {
+      "word": "le jasmin",
+      "en": "jasmine",
+      "es": "el jazmín"
+    },
+    {
+      "word": "l'hortensia",
+      "en": "the hydrangea",
+      "es": "la hortensia"
+    },
+    {
+      "word": "le géranium",
+      "en": "the geranium",
+      "es": "el geranio"
+    },
+    {
+      "word": "le dahlia",
+      "en": "the dahlia",
+      "es": "la dalia"
+    },
+    {
+      "word": "le chrysanthème",
+      "en": "the chrysanthemum",
+      "es": "el crisantemo"
+    },
+    {
+      "word": "l'azalée",
+      "en": "the azalea",
+      "es": "la azalea"
+    },
+    {
+      "word": "le camélia",
+      "en": "the camellia",
+      "es": "la camelia"
+    },
+    {
+      "word": "le magnolia",
+      "en": "the magnolia",
+      "es": "la magnolia"
+    },
+    {
+      "word": "le mimosa",
+      "en": "mimosa",
+      "es": "la mimosa"
+    },
+    {
+      "word": "la pivoine",
+      "en": "the peony",
+      "es": "la peonía"
+    },
+    {
+      "word": "le narcisse",
+      "en": "the narcissus / daffodil",
+      "es": "el narciso"
+    },
+    {
+      "word": "le lotus",
+      "en": "the lotus",
+      "es": "el loto"
+    },
+    {
+      "word": "le nénuphar",
+      "en": "the water lily",
+      "es": "el nenúfar"
+    },
+    {
+      "word": "le cactus",
+      "en": "the cactus",
+      "es": "el cactus"
+    },
+    {
+      "word": "la graine",
+      "en": "the seed",
+      "es": "la semilla"
+    },
+    {
+      "word": "le pot de fleurs",
+      "en": "the flowerpot",
+      "es": "la maceta"
+    },
+    {
+      "word": "la pelle",
+      "en": "the shovel",
+      "es": "la pala"
+    },
+    {
+      "word": "l'arrosoir",
+      "en": "the watering can",
+      "es": "la regadera"
+    },
+    {
+      "word": "le pétale",
+      "en": "the petal",
+      "es": "el pétalo"
+    },
+    {
+      "word": "la tige",
+      "en": "the stem",
+      "es": "el tallo"
+    },
+    {
+      "word": "fleurir",
+      "en": "to bloom",
+      "es": "florecer"
+    },
+    {
+      "word": "pousser",
+      "en": "to grow",
+      "es": "crecer"
+    },
+    {
+      "word": "semer",
+      "en": "to sow",
+      "es": "sembrar"
+    },
+    {
+      "word": "planter",
+      "en": "to plant",
+      "es": "plantar"
+    },
+    {
+      "word": "arroser",
+      "en": "to water",
+      "es": "regar"
+    },
+    {
+      "word": "cueillir",
+      "en": "to pick",
+      "es": "recoger / coger"
+    },
+    {
+      "word": "le parfum",
+      "en": "the scent",
+      "es": "el perfume / el aroma"
+    },
+    {
+      "word": "le / la fleuriste",
+      "en": "the florist",
+      "es": "el / la florista"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Le cactus est en train de fleurir !",
+      "en": "The cactus is blooming!",
+      "es": "¡El cactus está floreciendo!"
+    },
+    {
+      "phrase": "Mets des gants si tu coupes des roses.",
+      "en": "Wear gloves if you cut roses.",
+      "es": "Ponte guantes si cortas rosas."
+    },
+    {
+      "phrase": "Offre-lui des iris, elle les adore.",
+      "en": "Give her irises, she loves them.",
+      "es": "Regálale lirios, le encantan."
+    },
+    {
+      "phrase": "Marie m'a offert une rose jaune, symbole de l'amitié.",
+      "en": "Marie gave me a yellow rose, a symbol of friendship.",
+      "es": "Marie me regaló una rosa amarilla, símbolo de la amistad."
+    },
+    {
+      "phrase": "Sème quelques graines dans le pot de fleurs.",
+      "en": "Sow a few seeds in the flowerpot.",
+      "es": "Siembra algunas semillas en la maceta."
+    },
+    {
+      "phrase": "J'adore le parfum des violettes.",
+      "en": "I love the scent of violets.",
+      "es": "Me encanta el aroma de las violetas."
+    },
+    {
+      "phrase": "Les marguerites sont mes fleurs préférées.",
+      "en": "Daisies are my favorite flowers.",
+      "es": "Las margaritas son mis flores favoritas."
+    },
+    {
+      "phrase": "Les tulipes étaient les fleurs préférées de ma mère.",
+      "en": "Tulips were my mother's favorite flowers.",
+      "es": "Los tulipanes eran las flores favoritas de mi madre."
+    },
+    {
+      "phrase": "François m'a dit que le muguet était toxique. — Il me semble que les azalées aussi.",
+      "en": "François told me that lily of the valley was toxic. — I think azaleas are too.",
+      "es": "François me dijo que el muguete era tóxico. — Me parece que las azaleas también."
+    },
+    {
+      "phrase": "Pourriez-vous me faire un bouquet d'iris ? — Désolée, nous n'en avons pas en ce moment.",
+      "en": "Could you make me a bouquet of irises? — Sorry, we don't have any at the moment.",
+      "es": "¿Podría hacerme un ramo de lirios? — Lo siento, ahora mismo no tenemos."
+    },
+    {
+      "phrase": "Combien coûte une douzaine d'œillets ? — Douze euros.",
+      "en": "How much is a dozen carnations? — Twelve euros.",
+      "es": "¿Cuánto cuesta una docena de claveles? — Doce euros."
+    },
+    {
+      "phrase": "C'est l'anniversaire de Julie aujourd'hui ? Offrons-lui des tulipes !",
+      "en": "Is it Julie's birthday today? Let's give her tulips!",
+      "es": "¿Hoy es el cumpleaños de Julie? ¡Regalémosle tulipanes!"
+    },
+    {
+      "phrase": "J'ai trouvé des graines, je les ai semées, et des fuchsias ont poussé.",
+      "en": "I found some seeds, I sowed them, and fuchsias grew.",
+      "es": "Encontré unas semillas, las sembré y salieron fucsias."
+    },
+    {
+      "phrase": "Quelles fleurs veux-tu pour le bouquet de la mariée ? — Des pivoines et du jasmin.",
+      "en": "What flowers do you want for the bride's bouquet? — Peonies and jasmine.",
+      "es": "¿Qué flores quieres para el ramo de la novia? — Peonías y jazmín."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Offre-___ des roses.\" (to her)",
+        "es": "Completa: «Offre-___ des roses.» (a ella)"
+      },
+      "options": [
+        "lui",
+        "la",
+        "elle",
+        "leur"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Indirect object (à elle) = lui.",
+        "es": "Complemento indirecto (à elle) = lui."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Les graines ? Je les ai ___.\"",
+        "es": "Completa: «Les graines ? Je les ai ___.»"
+      },
+      "options": [
+        "semées",
+        "semé",
+        "semés",
+        "semer"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Les\" (= les graines, feminine plural) comes before \"avoir\": agreement.",
+        "es": "«Les» (= les graines, femenino plural) va delante de «avoir»: concordancia."
+      }
+    },
+    {
+      "question": {
+        "en": "Which flower should you NOT give as a gift in France?",
+        "es": "¿Qué flor NO debes regalar en Francia?"
+      },
+      "options": [
+        "des chrysanthèmes",
+        "des roses",
+        "des tulipes",
+        "des pivoines"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Chrysanthemums are for graves on 1 November.",
+        "es": "Los crisantemos son para las tumbas el 1 de noviembre."
+      }
+    },
+    {
+      "question": {
+        "en": "Reported speech: François said: \"Le muguet est toxique.\" → François m'a dit que le muguet ___ toxique.",
+        "es": "Estilo indirecto: François dijo: «Le muguet est toxique.» → François m'a dit que le muguet ___ toxique."
+      },
+      "options": [
+        "était",
+        "est été",
+        "sera",
+        "soit"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Present becomes imparfait after a past reporting verb.",
+        "es": "El presente pasa a imperfecto tras un verbo introductor en pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Des mimosas ? Nous n'___ avons pas.\"",
+        "es": "«Des mimosas ? Nous n'___ avons pas.»"
+      },
+      "options": [
+        "en",
+        "les",
+        "y",
+        "leur"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"En\" replaces \"des mimosas\".",
+        "es": "«En» sustituye a «des mimosas»."
+      }
+    },
+    {
+      "question": {
+        "en": "What does a yellow rose symbolize?",
+        "es": "¿Qué simboliza una rosa amarilla?"
+      },
+      "options": {
+        "en": [
+          "friendship",
+          "love",
+          "death",
+          "purity"
+        ],
+        "es": [
+          "la amistad",
+          "el amor",
+          "la muerte",
+          "la pureza"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Red = love, white = purity.",
+        "es": "Roja = amor, blanca = pureza."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"arroser\" mean?",
+        "es": "¿Qué significa «arroser»?"
+      },
+      "options": {
+        "en": [
+          "to water",
+          "to sow",
+          "to pick",
+          "to bloom"
+        ],
+        "es": [
+          "regar",
+          "sembrar",
+          "recoger",
+          "florecer"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "You water with \"un arrosoir\".",
+        "es": "Se riega con «un arrosoir»."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un tournesol\"?",
+        "es": "¿Qué es «un tournesol»?"
+      },
+      "options": {
+        "en": [
+          "a sunflower",
+          "a daisy",
+          "a tulip",
+          "a cactus"
+        ],
+        "es": [
+          "un girasol",
+          "una margarita",
+          "un tulipán",
+          "un cactus"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Literally \"it turns (to the) sun\".",
+        "es": "Literalmente «gira (hacia el) sol»."
+      }
+    }
+  ],
+  "story": {
+    "title": "La fleuriste de la rue des Lilas",
+    "text": "Depuis vingt ans, Hélène est fleuriste rue des Lilas, à Bordeaux. Au printemps, sa boutique est remplie des plus belles couleurs : des tulipes, des pivoines, du jasmin… En entrant, on sent tout de suite un parfum délicieux. Ce matin, un jeune homme timide arrive. « Bonjour, je voudrais un bouquet pour ma copine. C'est notre premier rendez-vous. » « Offrez-lui des roses rouges, c'est le symbole de l'amour ! » « Euh… ce n'est peut-être pas un peu trop ? » Hélène rit : « Alors, des roses jaunes, pour l'amitié, et quelques marguerites. » Plus tard, une vieille dame demande des chrysanthèmes. « Ma mère m'a toujours dit qu'il ne fallait jamais les offrir en cadeau », explique-t-elle. « Ils sont pour le cimetière. » L'après-midi, Hélène sème des graines dans les pots devant la vitrine. Le mois dernier, elle en a semé d'autres, et les géraniums sont déjà en train de fleurir. Il me semble qu'il n'y a pas de plus joli métier, pense-t-elle en arrosant ses fleurs.",
+    "en": "For twenty years, Hélène has been a florist on Rue des Lilas in Bordeaux. In spring, her shop is full of the most beautiful colors: tulips, peonies, jasmine… As you walk in, you immediately smell a delicious scent. This morning, a shy young man arrives. “Hello, I'd like a bouquet for my girlfriend. It's our first date.” “Give her red roses, the symbol of love!” “Um… isn't that maybe a bit much?” Hélène laughs: “Then yellow roses, for friendship, and a few daisies.” Later, an old lady asks for chrysanthemums. “My mother always told me you must never give them as a gift,” she explains. “They are for the cemetery.” In the afternoon, Hélène sows seeds in the pots in front of the shop window. Last month, she sowed some others, and the geraniums are already blooming. It seems to me there's no lovelier job, she thinks while watering her flowers.",
+    "es": "Desde hace veinte años, Hélène es florista en la calle des Lilas, en Burdeos. En primavera, su tienda se llena de los colores más bonitos: tulipanes, peonías, jazmín… Al entrar, se nota enseguida un aroma delicioso. Esta mañana llega un joven tímido. «Buenos días, quisiera un ramo para mi novia. Es nuestra primera cita.» «Regálele rosas rojas, ¡son el símbolo del amor!» «Eh… ¿no será un poco demasiado?» Hélène se ríe: «Entonces, rosas amarillas, para la amistad, y unas margaritas.» Más tarde, una señora mayor pide crisantemos. «Mi madre siempre me decía que nunca había que regalarlos», explica. «Son para el cementerio.» Por la tarde, Hélène siembra semillas en las macetas delante del escaparate. El mes pasado sembró otras, y los geranios ya están floreciendo. Me parece que no hay oficio más bonito, piensa mientras riega sus flores.",
+    "highlighted_words": [
+      "plus belles couleurs",
+      "En entrant",
+      "parfum",
+      "Offrez-lui",
+      "roses rouges",
+      "roses jaunes",
+      "marguerites",
+      "m'a toujours dit qu'il ne fallait",
+      "chrysanthèmes",
+      "sème des graines",
+      "en a semé",
+      "en train de fleurir",
+      "Il me semble",
+      "en arrosant"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Le cactus est en train de fleurir",
+      "en": "The cactus is blooming",
+      "es": "El cactus está floreciendo"
+    },
+    {
+      "sentence": "Offre-lui des tulipes",
+      "en": "Give her tulips",
+      "es": "Regálale tulipanes"
+    },
+    {
+      "sentence": "Les roses rouges symbolisent l'amour",
+      "en": "Red roses symbolize love",
+      "es": "Las rosas rojas simbolizan el amor"
+    },
+    {
+      "sentence": "Je les ai semées hier",
+      "en": "I sowed them yesterday",
+      "es": "Las sembré ayer"
+    },
+    {
+      "sentence": "Nous n'en avons pas",
+      "en": "We don't have any",
+      "es": "No tenemos"
+    },
+    {
+      "sentence": "Il faut arroser les fleurs",
+      "en": "You must water the flowers",
+      "es": "Hay que regar las flores"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "J'adore les marguerites",
+      "en": "I love daisies",
+      "es": "Me encantan las margaritas"
+    },
+    {
+      "answer": "Un bouquet de roses, s'il vous plaît",
+      "en": "A bouquet of roses, please",
+      "es": "Un ramo de rosas, por favor"
+    },
+    {
+      "answer": "Le tournesol est très grand",
+      "en": "The sunflower is very tall",
+      "es": "El girasol es muy alto"
+    },
+    {
+      "answer": "Sème les graines",
+      "en": "Sow the seeds",
+      "es": "Siembra las semillas"
+    },
+    {
+      "answer": "Quelle est ta fleur préférée ?",
+      "en": "What is your favorite flower?",
+      "es": "¿Cuál es tu flor favorita?"
+    },
+    {
+      "answer": "Les fleurs sentent bon",
+      "en": "The flowers smell good",
+      "es": "Las flores huelen bien"
+    }
+  ]
+}

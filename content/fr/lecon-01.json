@@ -1,0 +1,447 @@
+{
+  "lesson": 1,
+  "slug": "lecon-01",
+  "icon": "👋",
+  "title": {
+    "fr": "Saluer et dire au revoir",
+    "es": "Saludar y despedirse",
+    "en": "Greetings and goodbyes"
+  },
+  "source": {
+    "audio": "Lecons 01.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "présent de l'indicatif",
+      "example": "Elle étudie le français à Bordeaux.",
+      "en": "Present tense",
+      "es": "Presente de indicativo"
+    },
+    {
+      "structure": "inversion interrogative",
+      "example": "Comment vas-tu ? / Quand pars-tu ?",
+      "en": "Questions with subject–verb inversion",
+      "es": "Preguntas con inversión sujeto–verbo"
+    },
+    {
+      "structure": "attendre que + subjonctif",
+      "example": "J'attends que le bus arrive.",
+      "en": "\"attendre que\" + subjunctive",
+      "es": "«attendre que» + subjuntivo"
+    },
+    {
+      "structure": "avoir peur que / craindre que + subjonctif",
+      "example": "J'ai peur que la journée soit longue.",
+      "en": "Expressing fear + subjunctive",
+      "es": "Expresar temor + subjuntivo"
+    },
+    {
+      "structure": "passé composé (négation)",
+      "example": "Je n'ai pas dormi.",
+      "en": "Past tense (passé composé), negative",
+      "es": "Pretérito perfecto (passé composé) en negativo"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Say \"bonjour\" in the morning and afternoon, \"bonsoir\" from about 6 p.m., and \"bonne nuit\" only when someone is going to bed.",
+      "es": "Se dice «bonjour» por la mañana y por la tarde, «bonsoir» a partir de las 6 de la tarde aproximadamente, y «bonne nuit» solo cuando alguien se va a dormir."
+    },
+    {
+      "en": "Use \"Comment vas-tu ?\" with friends and acquaintances, and \"Comment allez-vous ?\" with people you don't know or in formal situations.",
+      "es": "Usa «Comment vas-tu ?» con amigos y conocidos, y «Comment allez-vous ?» con desconocidos o en situaciones formales."
+    },
+    {
+      "en": "To introduce someone: \"Je vous présente…\" (formal) or \"Voici…\" (neutral).",
+      "es": "Para presentar a alguien: «Je vous présente…» (formal) o «Voici…» (neutro)."
+    },
+    {
+      "en": "To send greetings to someone: \"Dis bonjour à … de ma part\" or \"Tu salueras …\".",
+      "es": "Para mandar saludos a alguien: «Dis bonjour à … de ma part» o «Tu salueras …»."
+    },
+    {
+      "en": "\"Adieu\" is a final farewell; in everyday life, say \"au revoir\", \"à plus tard\" or \"à la prochaine\".",
+      "es": "«Adieu» es una despedida definitiva; en el día a día se dice «au revoir», «à plus tard» o «à la prochaine»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "salut",
+      "en": "hi / bye (informal)",
+      "es": "hola / chao (informal)"
+    },
+    {
+      "word": "bonjour",
+      "en": "hello / good morning",
+      "es": "hola / buenos días"
+    },
+    {
+      "word": "bon après-midi",
+      "en": "good afternoon",
+      "es": "buenas tardes"
+    },
+    {
+      "word": "bonsoir",
+      "en": "good evening",
+      "es": "buenas noches (al saludar)"
+    },
+    {
+      "word": "bonne nuit",
+      "en": "good night",
+      "es": "buenas noches (al irse a dormir)"
+    },
+    {
+      "word": "enchanté / enchantée",
+      "en": "nice to meet you",
+      "es": "encantado / encantada"
+    },
+    {
+      "word": "au revoir",
+      "en": "goodbye",
+      "es": "adiós"
+    },
+    {
+      "word": "bonne journée",
+      "en": "have a nice day",
+      "es": "que tengas un buen día"
+    },
+    {
+      "word": "adieu",
+      "en": "farewell (for good)",
+      "es": "adiós (para siempre)"
+    },
+    {
+      "word": "à plus tard",
+      "en": "see you later",
+      "es": "hasta luego"
+    },
+    {
+      "word": "à tout à l'heure",
+      "en": "see you in a bit",
+      "es": "hasta dentro de un rato"
+    },
+    {
+      "word": "à demain",
+      "en": "see you tomorrow",
+      "es": "hasta mañana"
+    },
+    {
+      "word": "à la semaine prochaine",
+      "en": "see you next week",
+      "es": "hasta la próxima semana"
+    },
+    {
+      "word": "à un de ces jours",
+      "en": "see you one of these days",
+      "es": "hasta un día de estos"
+    },
+    {
+      "word": "à la prochaine",
+      "en": "until next time",
+      "es": "hasta la próxima"
+    },
+    {
+      "word": "une connaissance",
+      "en": "an acquaintance",
+      "es": "un conocido / una conocida"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Comment ça va ?",
+      "en": "How's it going?",
+      "es": "¿Qué tal?"
+    },
+    {
+      "phrase": "Ça va ?",
+      "en": "All good?",
+      "es": "¿Todo bien?"
+    },
+    {
+      "phrase": "Comment vas-tu ?",
+      "en": "How are you? (informal)",
+      "es": "¿Cómo estás?"
+    },
+    {
+      "phrase": "Comment allez-vous ?",
+      "en": "How are you? (formal)",
+      "es": "¿Cómo está usted?"
+    },
+    {
+      "phrase": "Quoi de neuf ?",
+      "en": "What's new?",
+      "es": "¿Qué hay de nuevo?"
+    },
+    {
+      "phrase": "Comment ça se passe ?",
+      "en": "How are things going?",
+      "es": "¿Cómo te va?"
+    },
+    {
+      "phrase": "Bien, merci. Et toi ?",
+      "en": "Fine, thanks. And you?",
+      "es": "Bien, gracias. ¿Y tú?"
+    },
+    {
+      "phrase": "Pas très bien.",
+      "en": "Not very well.",
+      "es": "No muy bien."
+    },
+    {
+      "phrase": "Je vous présente Madame Leroy.",
+      "en": "Let me introduce Mrs. Leroy.",
+      "es": "Le presento a la señora Leroy."
+    },
+    {
+      "phrase": "Voici mon ami Lucas.",
+      "en": "This is my friend Lucas.",
+      "es": "Este es mi amigo Lucas."
+    },
+    {
+      "phrase": "Dis bonjour à ta mère de ma part.",
+      "en": "Say hello to your mother for me.",
+      "es": "Saluda a tu madre de mi parte."
+    },
+    {
+      "phrase": "Bonne chance ! — Merci, toi aussi.",
+      "en": "Good luck! — Thanks, you too.",
+      "es": "¡Buena suerte! — Gracias, tú también."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "It's 8 p.m. and you arrive at a dinner. What do you say?",
+        "es": "Son las 8 de la noche y llegas a una cena. ¿Qué dices?"
+      },
+      "options": [
+        "Bonsoir !",
+        "Bonjour !",
+        "Bonne nuit !",
+        "Adieu !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "After about 6 p.m. you greet with \"bonsoir\". \"Bonne nuit\" is only said when going to bed.",
+        "es": "A partir de las 6 de la tarde se saluda con «bonsoir». «Bonne nuit» solo se dice al irse a dormir."
+      }
+    },
+    {
+      "question": {
+        "en": "You meet your new boss for the first time. Which question fits best?",
+        "es": "Conoces a tu nueva jefa por primera vez. ¿Qué pregunta es la más adecuada?"
+      },
+      "options": [
+        "Comment allez-vous ?",
+        "Ça va ?",
+        "Quoi de neuf ?",
+        "Salut, ça va ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "With people you don't know, or in formal situations, use \"vous\": \"Comment allez-vous ?\"",
+        "es": "Con personas que no conoces o en situaciones formales se usa «vous»: «Comment allez-vous ?»"
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"à tout à l'heure\" mean?",
+        "es": "¿Qué significa «à tout à l'heure»?"
+      },
+      "options": {
+        "en": [
+          "see you in a bit",
+          "see you tomorrow",
+          "goodbye forever",
+          "good night"
+        ],
+        "es": [
+          "hasta dentro de un rato",
+          "hasta mañana",
+          "adiós para siempre",
+          "buenas noches"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "You say it when you'll see the person again later the same day.",
+        "es": "Se dice cuando volverás a ver a la persona más tarde, el mismo día."
+      }
+    },
+    {
+      "question": {
+        "en": "A friend asks you \"Quoi de neuf ?\". What are they asking?",
+        "es": "Un amigo te pregunta «Quoi de neuf ?». ¿Qué te está preguntando?"
+      },
+      "options": {
+        "en": [
+          "What's new?",
+          "What time is it?",
+          "Where are you going?",
+          "What's your name?"
+        ],
+        "es": [
+          "¿Qué hay de nuevo?",
+          "¿Qué hora es?",
+          "¿Adónde vas?",
+          "¿Cómo te llamas?"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Neuf\" means \"new\" here: \"Quoi de neuf ?\" = What's new?",
+        "es": "Aquí «neuf» significa «nuevo»: «Quoi de neuf ?» = ¿Qué hay de nuevo?"
+      }
+    },
+    {
+      "question": {
+        "en": "Which farewell means you won't see the person again?",
+        "es": "¿Qué despedida indica que no volverás a ver a la persona?"
+      },
+      "options": [
+        "Adieu",
+        "Au revoir",
+        "À la prochaine",
+        "À plus tard"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Adieu\" is a final farewell. In everyday life, use \"au revoir\".",
+        "es": "«Adieu» es una despedida definitiva. En el día a día se usa «au revoir»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you introduce someone formally?",
+        "es": "¿Cómo presentas a alguien de manera formal?"
+      },
+      "options": [
+        "Je vous présente Madame Leroy.",
+        "Je m'appelle Madame Leroy.",
+        "Comment allez-vous, Madame Leroy ?",
+        "Au revoir, Madame Leroy."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Je vous présente…\" introduces someone formally. Informally: \"Voici…\" or \"Je te présente…\".",
+        "es": "«Je vous présente…» sirve para presentar a alguien formalmente. De manera informal: «Voici…» o «Je te présente…»."
+      }
+    },
+    {
+      "question": {
+        "en": "Someone asks \"Comment vas-tu ?\" and you feel bad. What do you answer?",
+        "es": "Alguien te pregunta «Comment vas-tu ?» y te sientes mal. ¿Qué respondes?"
+      },
+      "options": [
+        "Pas très bien.",
+        "Enchanté.",
+        "Bonne journée.",
+        "À demain."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pas très bien\" = not very well. If you're fine: \"Bien, merci.\"",
+        "es": "«Pas très bien» = no muy bien. Si estás bien: «Bien, merci.»"
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Say hello to your sister for me\"?",
+        "es": "¿Cómo se dice «Saluda a tu hermana de mi parte»?"
+      },
+      "options": [
+        "Dis bonjour à ta sœur de ma part.",
+        "Je te présente ma sœur.",
+        "Comment va ta sœur ?",
+        "Ta sœur va bien."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"De ma part\" = from me / for me.",
+        "es": "«De ma part» = de mi parte."
+      }
+    }
+  ],
+  "story": {
+    "title": "À l'arrêt de bus",
+    "text": "Lucía est mexicaine. Cet automne, elle étudie le français à Bordeaux. Ce matin, elle attend le bus quand un garçon s'approche. « Salut ! Ça va ? Je m'appelle Hugo. » « Bonjour Hugo, enchantée. Moi, c'est Lucía. J'attends que le bus arrive pour aller à l'école. » « Tu apprends le français ? Comment ça se passe ? » « Pour l'instant, bien. Et toi, quoi de neuf ? » « Pas grand-chose. Je travaille dans une librairie près d'ici. Mais j'ai peur que la journée soit longue : je n'ai pas dormi cette nuit ! » Le bus arrive. « Courage, et bonne journée ! » « Merci, toi aussi. À la prochaine ! »",
+    "en": "Lucía is Mexican. This autumn, she is studying French in Bordeaux. This morning, she is waiting for the bus when a young man comes up to her. “Hi! How's it going? My name is Hugo.” “Hello Hugo, nice to meet you. I'm Lucía. I'm waiting for the bus to come so I can go to school.” “You're learning French? How is it going?” “So far, so good. And you, what's new?” “Not much. I work in a bookshop near here. But I'm afraid the day will be long: I didn't sleep last night!” The bus arrives. “Hang in there, and have a nice day!” “Thanks, you too. Until next time!”",
+    "es": "Lucía es mexicana. Este otoño estudia francés en Burdeos. Esta mañana está esperando el autobús cuando un chico se le acerca. «¡Hola! ¿Qué tal? Me llamo Hugo.» «Hola, Hugo, encantada. Yo soy Lucía. Estoy esperando a que llegue el autobús para ir a la escuela.» «¿Estás aprendiendo francés? ¿Cómo te va?» «Por ahora, bien. Y tú, ¿qué hay de nuevo?» «No mucho. Trabajo en una librería cerca de aquí. Pero me temo que el día va a ser largo: ¡no he dormido esta noche!» Llega el autobús. «¡Ánimo, y que tengas un buen día!» «Gracias, tú también. ¡Hasta la próxima!»",
+    "highlighted_words": [
+      "Salut",
+      "Ça va",
+      "enchantée",
+      "attends que",
+      "Comment ça se passe",
+      "quoi de neuf",
+      "peur que",
+      "bonne journée",
+      "À la prochaine"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Comment allez-vous aujourd'hui",
+      "en": "How are you today",
+      "es": "¿Cómo está usted hoy?"
+    },
+    {
+      "sentence": "Je vous présente mon ami Lucas",
+      "en": "Let me introduce my friend Lucas",
+      "es": "Le presento a mi amigo Lucas"
+    },
+    {
+      "sentence": "Bien merci et toi",
+      "en": "Fine thanks and you",
+      "es": "Bien, gracias, ¿y tú?"
+    },
+    {
+      "sentence": "Dis bonjour à ta mère",
+      "en": "Say hello to your mother",
+      "es": "Saluda a tu madre"
+    },
+    {
+      "sentence": "On se voit la semaine prochaine",
+      "en": "See you next week",
+      "es": "Nos vemos la próxima semana"
+    },
+    {
+      "sentence": "Je n'ai pas révisé pour l'examen",
+      "en": "I didn't study for the exam",
+      "es": "No he estudiado para el examen"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Bonsoir, monsieur",
+      "en": "Good evening, sir",
+      "es": "Buenas noches, señor"
+    },
+    {
+      "answer": "À demain !",
+      "en": "See you tomorrow!",
+      "es": "¡Hasta mañana!"
+    },
+    {
+      "answer": "Comment vas-tu ?",
+      "en": "How are you? (informal, \"tu\")",
+      "es": "¿Cómo estás? (informal, «tu»)"
+    },
+    {
+      "answer": "Quoi de neuf ?",
+      "en": "What's new?",
+      "es": "¿Qué hay de nuevo?"
+    },
+    {
+      "answer": "Bonne journée !",
+      "en": "Have a nice day!",
+      "es": "¡Que tengas un buen día!"
+    },
+    {
+      "answer": "J'attends que le cours commence",
+      "en": "I am waiting for the class to start",
+      "es": "Estoy esperando a que empiece la clase"
+    }
+  ]
+}

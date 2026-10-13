@@ -1,0 +1,590 @@
+{
+  "lesson": 58,
+  "slug": "lecon-58",
+  "icon": "🚙",
+  "title": {
+    "fr": "La voiture",
+    "es": "El coche",
+    "en": "The car"
+  },
+  "source": {
+    "audio": "Lecons 58.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "prépositions de lieu",
+      "example": "entre, au milieu de, devant, derrière, sous, à travers",
+      "en": "Prepositions of place",
+      "es": "Preposiciones de lugar"
+    },
+    {
+      "structure": "malgré + nom / bien que + subjonctif",
+      "example": "Malgré la pluie, la camionnette n'a pas eu de problème. / Bien qu'il n'y ait pas de circulation, certains roulaient trop vite.",
+      "en": "Concession",
+      "es": "Concesión"
+    },
+    {
+      "structure": "sauf / à part",
+      "example": "La voiture est bien, sauf le levier de vitesse.",
+      "en": "\"Except\"",
+      "es": "«Excepto»"
+    },
+    {
+      "structure": "il y a … que",
+      "example": "Il y a vingt ans que nous avons la même voiture.",
+      "en": "Duration up to now",
+      "es": "Hace … que"
+    },
+    {
+      "structure": "avant de + infinitif",
+      "example": "Avant de vérifier le moteur, essayons de démarrer encore une fois.",
+      "en": "\"Before doing\"",
+      "es": "«Antes de»"
+    },
+    {
+      "structure": "être sur le point de",
+      "example": "J'étais sur le point d'avoir un accident.",
+      "en": "\"About to\"",
+      "es": "«A punto de»"
+    },
+    {
+      "structure": "passé simple / imparfait (récit)",
+      "example": "Je roulais vers Paris quand le pneu éclata.",
+      "en": "Narrative tenses",
+      "es": "Tiempos del relato"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il trouva, elle sourit) is the literary past of written stories; in conversation, use the passé composé.",
+      "es": "El passé simple (il trouva, elle sourit) es el pasado literario de los relatos escritos; al hablar se usa el passé composé."
+    },
+    {
+      "en": "\"Bien que\" ALWAYS takes the subjunctive: \"bien qu'il pleuve\", \"bien qu'il n'y ait pas de circulation\" (the audio says \"bien qu'il n'y avait\", which is a common mistake).",
+      "es": "«Bien que» va SIEMPRE con subjuntivo: «bien qu'il pleuve», «bien qu'il n'y ait pas de circulation» (el audio dice «bien qu'il n'y avait», un error frecuente)."
+    },
+    {
+      "en": "Car parts: \"le volant\" (steering wheel), \"le capot\" (hood), \"le coffre\" (trunk), \"le pare-chocs\" (bumper), \"le rétroviseur\" (rearview mirror), \"les essuie-glaces\" (wipers), \"le clignotant\" (turn signal).",
+      "es": "Partes del coche: «le volant» (volante), «le capot» (capó), «le coffre» (maletero), «le pare-chocs» (parachoques), «le rétroviseur» (retrovisor), «les essuie-glaces» (limpiaparabrisas), «le clignotant» (intermitente)."
+    },
+    {
+      "en": "\"Avoir un accident\" (not \"s'accidenter\" in standard French); \"crever\" = to get a flat tire; \"tomber en panne\" = to break down.",
+      "es": "«Avoir un accident» (no «s'accidenter» en francés estándar); «crever» = pinchar; «tomber en panne» = averiarse."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la voiture",
+      "en": "the car",
+      "es": "el coche / el carro"
+    },
+    {
+      "word": "le cabriolet",
+      "en": "the convertible",
+      "es": "el descapotable"
+    },
+    {
+      "word": "la camionnette",
+      "en": "the van",
+      "es": "la furgoneta"
+    },
+    {
+      "word": "le monospace",
+      "en": "the minivan",
+      "es": "el monovolumen"
+    },
+    {
+      "word": "le volant",
+      "en": "the steering wheel",
+      "es": "el volante"
+    },
+    {
+      "word": "le siège",
+      "en": "the seat",
+      "es": "el asiento"
+    },
+    {
+      "word": "la ceinture de sécurité",
+      "en": "the seat belt",
+      "es": "el cinturón de seguridad"
+    },
+    {
+      "word": "la boucle",
+      "en": "the buckle",
+      "es": "la hebilla"
+    },
+    {
+      "word": "l'accélérateur",
+      "en": "the accelerator",
+      "es": "el acelerador"
+    },
+    {
+      "word": "le frein",
+      "en": "the brake",
+      "es": "el freno"
+    },
+    {
+      "word": "le frein à main",
+      "en": "the handbrake",
+      "es": "el freno de mano"
+    },
+    {
+      "word": "l'embrayage",
+      "en": "the clutch",
+      "es": "el embrague"
+    },
+    {
+      "word": "le levier de vitesse",
+      "en": "the gear stick",
+      "es": "la palanca de cambios"
+    },
+    {
+      "word": "le moteur",
+      "en": "the engine",
+      "es": "el motor"
+    },
+    {
+      "word": "le démarreur",
+      "en": "the starter",
+      "es": "el motor de arranque"
+    },
+    {
+      "word": "démarrer",
+      "en": "to start",
+      "es": "arrancar"
+    },
+    {
+      "word": "le capot",
+      "en": "the hood",
+      "es": "el capó"
+    },
+    {
+      "word": "le coffre",
+      "en": "the trunk",
+      "es": "el maletero"
+    },
+    {
+      "word": "le pare-chocs",
+      "en": "the bumper",
+      "es": "el parachoques"
+    },
+    {
+      "word": "le pare-brise",
+      "en": "the windshield",
+      "es": "el parabrisas"
+    },
+    {
+      "word": "les essuie-glaces",
+      "en": "the wipers",
+      "es": "los limpiaparabrisas"
+    },
+    {
+      "word": "le rétroviseur",
+      "en": "the rearview mirror",
+      "es": "el retrovisor"
+    },
+    {
+      "word": "les phares",
+      "en": "the headlights",
+      "es": "los faros"
+    },
+    {
+      "word": "le clignotant",
+      "en": "the turn signal",
+      "es": "el intermitente"
+    },
+    {
+      "word": "le klaxon",
+      "en": "the horn",
+      "es": "el claxon"
+    },
+    {
+      "word": "klaxonner",
+      "en": "to honk",
+      "es": "tocar el claxon"
+    },
+    {
+      "word": "le pneu",
+      "en": "the tire",
+      "es": "el neumático / la llanta"
+    },
+    {
+      "word": "le pneu crevé",
+      "en": "the flat tire",
+      "es": "el pinchazo"
+    },
+    {
+      "word": "la roue de secours",
+      "en": "the spare wheel",
+      "es": "la rueda de repuesto"
+    },
+    {
+      "word": "le réservoir",
+      "en": "the tank",
+      "es": "el depósito"
+    },
+    {
+      "word": "la boîte à gants",
+      "en": "the glove box",
+      "es": "la guantera"
+    },
+    {
+      "word": "le chauffage",
+      "en": "the heater",
+      "es": "la calefacción"
+    },
+    {
+      "word": "la plaque d'immatriculation",
+      "en": "the license plate",
+      "es": "la matrícula"
+    },
+    {
+      "word": "l'assurance",
+      "en": "the insurance",
+      "es": "el seguro"
+    },
+    {
+      "word": "la limitation de vitesse",
+      "en": "the speed limit",
+      "es": "el límite de velocidad"
+    },
+    {
+      "word": "l'amende",
+      "en": "the fine",
+      "es": "la multa"
+    },
+    {
+      "word": "la rayure",
+      "en": "the scratch",
+      "es": "el rayón"
+    },
+    {
+      "word": "tomber en panne",
+      "en": "to break down",
+      "es": "averiarse"
+    },
+    {
+      "word": "malgré",
+      "en": "despite",
+      "es": "a pesar de"
+    },
+    {
+      "word": "sauf",
+      "en": "except",
+      "es": "excepto"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Achetons une nouvelle voiture : il y a vingt ans que nous avons la même !",
+      "en": "Let's buy a new car: we've had the same one for twenty years!",
+      "es": "¡Compremos un coche nuevo: hace veinte años que tenemos el mismo!"
+    },
+    {
+      "phrase": "Avant de vérifier le moteur, essayons de démarrer encore une fois.",
+      "en": "Before checking the engine, let's try starting it once more.",
+      "es": "Antes de revisar el motor, intentemos arrancar otra vez."
+    },
+    {
+      "phrase": "Nous avons eu un accident, mais personne n'a été blessé : nous avions nos ceintures.",
+      "en": "We had an accident, but nobody was hurt: we had our seat belts on.",
+      "es": "Tuvimos un accidente, pero nadie resultó herido: llevábamos el cinturón."
+    },
+    {
+      "phrase": "Malgré la pluie, la camionnette n'a eu aucun problème.",
+      "en": "Despite the rain, the van had no problems.",
+      "es": "A pesar de la lluvia, la furgoneta no tuvo ningún problema."
+    },
+    {
+      "phrase": "La voiture est bien, sauf le levier de vitesse.",
+      "en": "The car is fine, except for the gear stick.",
+      "es": "El coche está bien, excepto la palanca de cambios."
+    },
+    {
+      "phrase": "Freine quand les feux de la voiture devant toi s'allument.",
+      "en": "Brake when the lights of the car in front of you come on.",
+      "es": "Frena cuando se enciendan las luces del coche de delante."
+    },
+    {
+      "phrase": "La carte est dans la boîte à gants.",
+      "en": "The map is in the glove box.",
+      "es": "El mapa está en la guantera."
+    },
+    {
+      "phrase": "Nous avons un pneu crevé.",
+      "en": "We have a flat tire.",
+      "es": "Tenemos un pinchazo."
+    },
+    {
+      "phrase": "J'étais sur le point d'avoir un accident.",
+      "en": "I was about to have an accident.",
+      "es": "Estuve a punto de tener un accidente."
+    },
+    {
+      "phrase": "Le frein se trouve entre l'accélérateur et l'embrayage.",
+      "en": "The brake is between the accelerator and the clutch.",
+      "es": "El freno está entre el acelerador y el embrague."
+    },
+    {
+      "phrase": "Je ne peux pas attacher ma ceinture : la boucle est cassée.",
+      "en": "I can't fasten my seat belt: the buckle is broken.",
+      "es": "No puedo abrocharme el cinturón: la hebilla está rota."
+    },
+    {
+      "phrase": "Pourquoi ta voiture ne démarre pas ? — Le démarreur est en train de lâcher.",
+      "en": "Why won't your car start? — The starter is giving out.",
+      "es": "¿Por qué no arranca tu coche? — El motor de arranque está fallando."
+    },
+    {
+      "phrase": "Pourquoi ton pare-brise est si sale ? — Mes essuie-glaces sont usés.",
+      "en": "Why is your windshield so dirty? — My wipers are worn out.",
+      "es": "¿Por qué tienes el parabrisas tan sucio? — Tengo los limpiaparabrisas gastados."
+    },
+    {
+      "phrase": "Elle conduit bien, mais elle oublie de mettre son clignotant.",
+      "en": "She drives well, but she forgets to use her turn signal.",
+      "es": "Conduce bien, pero se le olvida poner el intermitente."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Bien qu'il ___, nous partons.\"",
+        "es": "Completa: «Bien qu'il ___, nous partons.»"
+      },
+      "options": [
+        "pleuve",
+        "pleut",
+        "pleuvait",
+        "pleuvra"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Bien que\" always takes the subjunctive.",
+        "es": "«Bien que» siempre lleva subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ la neige, nous sommes arrivés à l'heure.\"",
+        "es": "Completa: «___ la neige, nous sommes arrivés à l'heure.»"
+      },
+      "options": [
+        "Malgré",
+        "Bien que",
+        "Sauf",
+        "Avant de"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Malgré\" + noun.",
+        "es": "«Malgré» + sustantivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Where is the brake?",
+        "es": "¿Dónde está el freno?"
+      },
+      "options": [
+        "entre l'accélérateur et l'embrayage",
+        "sous le capot",
+        "dans le coffre",
+        "derrière le volant"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "In a manual car.",
+        "es": "En un coche manual."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un pneu crevé\"?",
+        "es": "¿Qué es «un pneu crevé»?"
+      },
+      "options": {
+        "en": [
+          "a flat tire",
+          "a new tire",
+          "a spare tire",
+          "a broken window"
+        ],
+        "es": [
+          "un pinchazo",
+          "un neumático nuevo",
+          "una rueda de repuesto",
+          "una ventanilla rota"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Crever = to puncture.",
+        "es": "Crever = pinchar."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you keep the map in the car?",
+        "es": "¿Dónde guardas el mapa en el coche?"
+      },
+      "options": [
+        "dans la boîte à gants",
+        "dans le capot",
+        "dans le pare-chocs",
+        "dans le moteur"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "La boîte à gants = glove box.",
+        "es": "La boîte à gants = guantera."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"to have an accident\" in standard French?",
+        "es": "¿Cómo se dice «tener un accidente» en francés estándar?"
+      },
+      "options": [
+        "avoir un accident",
+        "s'accidenter",
+        "faire accident",
+        "tomber un accident"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"S'accidenter\" is not standard.",
+        "es": "«S'accidenter» no es estándar."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"La voiture est parfaite, ___ la radio.\"",
+        "es": "Completa: «La voiture est parfaite, ___ la radio.»"
+      },
+      "options": [
+        "sauf",
+        "malgré",
+        "bien que",
+        "pendant"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Sauf = except.",
+        "es": "Sauf = excepto."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"le rétroviseur\"?",
+        "es": "¿Qué es «le rétroviseur»?"
+      },
+      "options": {
+        "en": [
+          "the rearview mirror",
+          "the windshield",
+          "the trunk",
+          "the horn"
+        ],
+        "es": [
+          "el retrovisor",
+          "el parabrisas",
+          "el maletero",
+          "el claxon"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Rétro = backwards; viseur = viewer.",
+        "es": "Rétro = atrás; viseur = visor."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une nuit sur la route",
+    "text": "Je roulais vers Lyon pour un congrès. Bien qu'il n'y ait pas beaucoup de circulation sur l'autoroute, il pleuvait très fort et les essuie-glaces avaient du mal à nettoyer le pare-brise. Soudain, j'entendis un bruit terrible : un pneu venait d'éclater ! La voiture glissa vers la droite et je fus sur le point de perdre le contrôle. Heureusement, je réussis à m'arrêter sur la bande d'arrêt d'urgence. J'avais encore ma ceinture de sécurité et je n'étais pas blessée, mais j'avais très peur. J'ai allumé les feux de détresse et j'ai mis mon gilet jaune avant de sortir. Malgré la pluie, j'ai essayé de changer la roue, mais je n'arrivais pas à dévisser les écrous. Après vingt minutes, un camion s'est arrêté derrière moi. Le chauffeur, un homme très gentil, a sorti la roue de secours du coffre et l'a changée en dix minutes. « Vous devriez vérifier vos pneus plus souvent », m'a-t-il dit en souriant. Je suis arrivée à Lyon avec deux heures de retard, trempée mais saine et sauve. Le lendemain, l'assurance m'a remboursé un pneu neuf. Depuis, je vérifie toujours mes pneus avant de partir !",
+    "en": "I was driving to Lyon for a conference. Although there wasn't much traffic on the highway, it was raining very hard and the wipers were struggling to clear the windshield. Suddenly, I heard a terrible noise: a tire had just burst! The car slid to the right and I was about to lose control. Fortunately, I managed to stop on the hard shoulder. I still had my seat belt on and I wasn't hurt, but I was very scared. I turned on the hazard lights and put on my yellow vest before getting out. Despite the rain, I tried to change the wheel, but I couldn't undo the nuts. After twenty minutes, a truck stopped behind me. The driver, a very kind man, took the spare wheel out of the trunk and changed it in ten minutes. “You should check your tires more often,” he told me with a smile. I arrived in Lyon two hours late, soaked but safe and sound. The next day, the insurance paid for a new tire. Since then, I always check my tires before leaving!",
+    "es": "Iba conduciendo hacia Lyon para un congreso. Aunque no había mucho tráfico en la autopista, llovía muchísimo y a los limpiaparabrisas les costaba limpiar el parabrisas. De repente oí un ruido terrible: ¡acababa de reventar un neumático! El coche se deslizó hacia la derecha y estuve a punto de perder el control. Por suerte, conseguí detenerme en el arcén. Todavía llevaba el cinturón y no estaba herida, pero tenía mucho miedo. Encendí las luces de emergencia y me puse el chaleco amarillo antes de salir. A pesar de la lluvia, intenté cambiar la rueda, pero no conseguía aflojar las tuercas. Al cabo de veinte minutos, un camión se paró detrás de mí. El conductor, un hombre muy amable, sacó la rueda de repuesto del maletero y la cambió en diez minutos. «Debería revisar los neumáticos más a menudo», me dijo sonriendo. Llegué a Lyon con dos horas de retraso, empapada pero sana y salva. Al día siguiente, el seguro me pagó un neumático nuevo. ¡Desde entonces siempre reviso los neumáticos antes de salir!",
+    "highlighted_words": [
+      "Je roulais",
+      "Bien qu'il n'y ait pas",
+      "essuie-glaces",
+      "pare-brise",
+      "entendis",
+      "venait d'éclater",
+      "glissa",
+      "je fus sur le point de",
+      "ceinture de sécurité",
+      "avant de sortir",
+      "Malgré la pluie",
+      "roue de secours",
+      "coffre",
+      "l'assurance"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Nous avons un pneu crevé",
+      "en": "We have a flat tire",
+      "es": "Tenemos un pinchazo"
+    },
+    {
+      "sentence": "Malgré la pluie nous sommes partis",
+      "en": "Despite the rain we left",
+      "es": "A pesar de la lluvia, salimos"
+    },
+    {
+      "sentence": "Bien qu'il soit tard je conduis",
+      "en": "Although it's late I'm driving",
+      "es": "Aunque es tarde, conduzco"
+    },
+    {
+      "sentence": "La carte est dans la boîte à gants",
+      "en": "The map is in the glove box",
+      "es": "El mapa está en la guantera"
+    },
+    {
+      "sentence": "Attache ta ceinture avant de démarrer",
+      "en": "Fasten your seat belt before starting",
+      "es": "Abróchate el cinturón antes de arrancar"
+    },
+    {
+      "sentence": "La voiture est tombée en panne",
+      "en": "The car broke down",
+      "es": "El coche se averió"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Ouvrez le coffre",
+      "en": "Open the trunk",
+      "es": "Abra el maletero"
+    },
+    {
+      "answer": "La voiture ne démarre pas",
+      "en": "The car won't start",
+      "es": "El coche no arranca"
+    },
+    {
+      "answer": "Allume les phares",
+      "en": "Turn on the headlights",
+      "es": "Enciende los faros"
+    },
+    {
+      "answer": "J'ai eu un accident",
+      "en": "I had an accident",
+      "es": "He tenido un accidente"
+    },
+    {
+      "answer": "Tu roules trop vite",
+      "en": "You are driving too fast",
+      "es": "Vas demasiado rápido"
+    },
+    {
+      "answer": "Le moteur fait un bruit bizarre",
+      "en": "The engine is making a strange noise",
+      "es": "El motor hace un ruido raro"
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "lesson": 42,
+  "slug": "lecon-42",
+  "icon": "🧺",
+  "title": {
+    "fr": "À la laverie",
+    "es": "En la lavandería",
+    "en": "At the laundromat"
+  },
+  "source": {
+    "audio": "Lecons 42.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "pronoms relatifs qui / que",
+      "example": "Le linge qui est dans cette machine est à moi. / La fille que tu as invitée…",
+      "en": "Relative pronouns (subject / object)",
+      "es": "Pronombres relativos (sujeto / objeto)"
+    },
+    {
+      "structure": "pronom relatif où",
+      "example": "La laverie où je lave mon linge coûte peu.",
+      "en": "Relative \"where\"",
+      "es": "Relativo «donde»"
+    },
+    {
+      "structure": "celui / celle / ceux qui / que",
+      "example": "La meilleure laverie est celle qui est en face. / Ce sont ceux qui t'ont pris la monnaie.",
+      "en": "Demonstrative + relative",
+      "es": "Demostrativo + relativo"
+    },
+    {
+      "structure": "futur simple (devoir, avoir)",
+      "example": "Tu auras besoin de monnaie. / Tu devras laver ton linge.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "éviter que + subjonctif",
+      "example": "Une tasse de lessive, pour éviter que la machine tombe en panne.",
+      "en": "\"To avoid\" + subjunctive",
+      "es": "«Evitar que» + subjuntivo"
+    },
+    {
+      "structure": "qu'est-ce que tu veux que je fasse ?",
+      "example": "Qu'est-ce que tu veux que je fasse ?",
+      "en": "Vouloir que + subjunctive",
+      "es": "Querer que + subjuntivo"
+    },
+    {
+      "structure": "avoir l'habitude de",
+      "example": "La laverie où ma mère avait l'habitude d'aller.",
+      "en": "\"To be used to\"",
+      "es": "«Soler / tener la costumbre de»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Qui\" is the subject of the next verb; \"que\" is the object: \"la machine QUI tourne\" / \"la machine QUE j'utilise\".",
+      "es": "«Qui» es el sujeto del verbo siguiente; «que» es el objeto: «la machine QUI tourne» / «la machine QUE j'utilise»."
+    },
+    {
+      "en": "\"La laverie (automatique)\" = laundromat; \"le pressing\" = dry cleaner; \"la blanchisserie\" = laundry service.",
+      "es": "«La laverie (automatique)» = lavandería de autoservicio; «le pressing» = tintorería; «la blanchisserie» = servicio de lavandería."
+    },
+    {
+      "en": "\"Faire la lessive\" = to do the laundry; \"la lessive\" is also the detergent. \"L'eau de Javel\" = bleach.",
+      "es": "«Faire la lessive» = hacer la colada; «la lessive» también es el detergente. «L'eau de Javel» = la lejía."
+    },
+    {
+      "en": "\"Faire de la monnaie\" = to get change; \"Vous avez de la monnaie ?\" = Do you have change?",
+      "es": "«Faire de la monnaie» = conseguir cambio; «Vous avez de la monnaie ?» = ¿Tiene cambio?"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la laverie",
+      "en": "the laundromat",
+      "es": "la lavandería"
+    },
+    {
+      "word": "le pressing",
+      "en": "the dry cleaner",
+      "es": "la tintorería"
+    },
+    {
+      "word": "le linge",
+      "en": "laundry / linen",
+      "es": "la ropa (para lavar)"
+    },
+    {
+      "word": "faire la lessive",
+      "en": "to do the laundry",
+      "es": "hacer la colada"
+    },
+    {
+      "word": "la lessive",
+      "en": "detergent",
+      "es": "el detergente"
+    },
+    {
+      "word": "l'eau de Javel",
+      "en": "bleach",
+      "es": "la lejía"
+    },
+    {
+      "word": "le savon",
+      "en": "soap",
+      "es": "el jabón"
+    },
+    {
+      "word": "la machine à laver",
+      "en": "the washing machine",
+      "es": "la lavadora"
+    },
+    {
+      "word": "le sèche-linge",
+      "en": "the dryer",
+      "es": "la secadora"
+    },
+    {
+      "word": "le lavage",
+      "en": "the wash",
+      "es": "el lavado"
+    },
+    {
+      "word": "le cycle",
+      "en": "the cycle",
+      "es": "el ciclo"
+    },
+    {
+      "word": "le linge blanc / de couleur",
+      "en": "whites / colors",
+      "es": "la ropa blanca / de color"
+    },
+    {
+      "word": "laver",
+      "en": "to wash",
+      "es": "lavar"
+    },
+    {
+      "word": "sécher",
+      "en": "to dry",
+      "es": "secar"
+    },
+    {
+      "word": "repasser",
+      "en": "to iron",
+      "es": "planchar"
+    },
+    {
+      "word": "plier",
+      "en": "to fold",
+      "es": "doblar"
+    },
+    {
+      "word": "accumuler",
+      "en": "to pile up",
+      "es": "acumular"
+    },
+    {
+      "word": "la monnaie",
+      "en": "change (coins)",
+      "es": "el cambio / las monedas"
+    },
+    {
+      "word": "la pièce",
+      "en": "the coin",
+      "es": "la moneda"
+    },
+    {
+      "word": "le billet",
+      "en": "the banknote",
+      "es": "el billete"
+    },
+    {
+      "word": "la fente",
+      "en": "the coin slot",
+      "es": "la ranura"
+    },
+    {
+      "word": "rembourser",
+      "en": "to pay back",
+      "es": "devolver (dinero)"
+    },
+    {
+      "word": "prêter",
+      "en": "to lend",
+      "es": "prestar"
+    },
+    {
+      "word": "appartenir à",
+      "en": "to belong to",
+      "es": "pertenecer a"
+    },
+    {
+      "word": "tomber en panne",
+      "en": "to break down",
+      "es": "averiarse"
+    },
+    {
+      "word": "le pourboire",
+      "en": "the tip",
+      "es": "la propina"
+    },
+    {
+      "word": "de mauvaise humeur",
+      "en": "in a bad mood",
+      "es": "de mal humor"
+    },
+    {
+      "word": "s'habituer à",
+      "en": "to get used to",
+      "es": "acostumbrarse a"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Je dois aller à la laverie pour laver mon linge.",
+      "en": "I have to go to the laundromat to wash my clothes.",
+      "es": "Tengo que ir a la lavandería a lavar la ropa."
+    },
+    {
+      "phrase": "Tu auras besoin de monnaie.",
+      "en": "You will need change.",
+      "es": "Necesitarás monedas."
+    },
+    {
+      "phrase": "Le linge qui est dans cette machine m'appartient.",
+      "en": "The laundry in this machine belongs to me.",
+      "es": "La ropa que está en esta lavadora es mía."
+    },
+    {
+      "phrase": "Elle a accumulé du linge pendant un mois.",
+      "en": "She let her laundry pile up for a month.",
+      "es": "Ha acumulado ropa durante un mes."
+    },
+    {
+      "phrase": "Ce sont ceux qui t'ont pris la monnaie sur la table.",
+      "en": "They are the ones who took the change from the table.",
+      "es": "Son los que te quitaron las monedas de la mesa."
+    },
+    {
+      "phrase": "La fille qui vient de me demander du savon, c'est celle que je t'ai dit d'inviter.",
+      "en": "The girl who just asked me for soap is the one I told you to invite.",
+      "es": "La chica que me acaba de pedir jabón es la que te dije que invitaras."
+    },
+    {
+      "phrase": "La laverie où je lave mon linge coûte seulement trois euros la machine.",
+      "en": "The laundromat where I wash my clothes costs only three euros per load.",
+      "es": "La lavandería donde lavo la ropa cuesta solo tres euros por lavadora."
+    },
+    {
+      "phrase": "La meilleure laverie, c'est celle qui est en face.",
+      "en": "The best laundromat is the one opposite.",
+      "es": "La mejor lavandería es la que está enfrente."
+    },
+    {
+      "phrase": "Il y a du linge de couleur dans cette machine : ne mets pas d'eau de Javel !",
+      "en": "There are colored clothes in this machine: don't put in bleach!",
+      "es": "Hay ropa de color en esta lavadora: ¡no le eches lejía!"
+    },
+    {
+      "phrase": "Mets deux euros dans la fente pour utiliser le sèche-linge.",
+      "en": "Put two euros in the slot to use the dryer.",
+      "es": "Mete dos euros en la ranura para usar la secadora."
+    },
+    {
+      "phrase": "Combien de lessive tu mets ? — Une tasse, pour éviter que la machine tombe en panne.",
+      "en": "How much detergent do you put in? — One cup, to avoid the machine breaking down.",
+      "es": "¿Cuánto detergente pones? — Una taza, para evitar que la lavadora se averíe."
+    },
+    {
+      "phrase": "À qui appartient ce linge ? — À la fille qui vient de te demander de la monnaie.",
+      "en": "Whose laundry is this? — The girl's who just asked you for change.",
+      "es": "¿De quién es esta ropa? — De la chica que te acaba de pedir monedas."
+    },
+    {
+      "phrase": "J'étais à la laverie où ma mère avait l'habitude d'aller.",
+      "en": "I was at the laundromat my mother used to go to.",
+      "es": "Estaba en la lavandería adonde solía ir mi madre."
+    },
+    {
+      "phrase": "C'est celui qu'on a lavé deux fois ?",
+      "en": "Is it the one we washed twice?",
+      "es": "¿Es el que lavamos dos veces?"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"La machine ___ est au coin est en panne.\"",
+        "es": "Completa: «La machine ___ est au coin est en panne.»"
+      },
+      "options": [
+        "qui",
+        "que",
+        "où",
+        "dont"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Qui\" = subject of \"est\".",
+        "es": "«Qui» = sujeto de «est»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Le pull ___ tu as lavé a rétréci.\"",
+        "es": "Completa: «Le pull ___ tu as lavé a rétréci.»"
+      },
+      "options": [
+        "que",
+        "qui",
+        "où",
+        "quoi"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Que\" = object of \"as lavé\".",
+        "es": "«Que» = objeto de «as lavé»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"La laverie ___ je vais est près d'ici.\"",
+        "es": "Completa: «La laverie ___ je vais est près d'ici.»"
+      },
+      "options": [
+        "où",
+        "qui",
+        "que",
+        "dont"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Où\" for places.",
+        "es": "«Où» para lugares."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"La meilleure, c'est ___ qui est en face.\" (la laverie)",
+        "es": "Completa: «La meilleure, c'est ___ qui est en face.» (la laverie)"
+      },
+      "options": [
+        "celle",
+        "celui",
+        "ceux",
+        "celles"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Laverie is feminine singular.",
+        "es": "Laverie es femenino singular."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Qu'est-ce que tu veux que je ___ ?\"",
+        "es": "Completa: «Qu'est-ce que tu veux que je ___ ?»"
+      },
+      "options": [
+        "fasse",
+        "fais",
+        "ferai",
+        "faisais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Vouloir que + subjunctive.",
+        "es": "Vouloir que + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"le pressing\"?",
+        "es": "¿Qué es «le pressing»?"
+      },
+      "options": {
+        "en": [
+          "the dry cleaner",
+          "the iron",
+          "the dryer",
+          "the detergent"
+        ],
+        "es": [
+          "la tintorería",
+          "la plancha",
+          "la secadora",
+          "el detergente"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Laverie = self-service laundromat.",
+        "es": "Laverie = lavandería de autoservicio."
+      }
+    },
+    {
+      "question": {
+        "en": "What should you NOT put with colored clothes?",
+        "es": "¿Qué NO debes echar con la ropa de color?"
+      },
+      "options": [
+        "de l'eau de Javel",
+        "de la lessive",
+        "de l'eau",
+        "du linge"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Bleach discolors fabrics.",
+        "es": "La lejía decolora los tejidos."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Faire de la monnaie\" means…",
+        "es": "«Faire de la monnaie» significa…"
+      },
+      "options": {
+        "en": [
+          "to get change",
+          "to make money",
+          "to print coins",
+          "to save money"
+        ],
+        "es": [
+          "conseguir cambio",
+          "ganar dinero",
+          "acuñar monedas",
+          "ahorrar dinero"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "To earn money = gagner de l'argent.",
+        "es": "Ganar dinero = gagner de l'argent."
+      }
+    }
+  ],
+  "story": {
+    "title": "Jour de lessive",
+    "text": "« Sami, tu vas faire la lessive aujourd'hui ? » demande Léo. « Oui, j'irai à la laverie qui vient d'ouvrir au coin de la rue. C'est celle où il y a du wifi. » « Tu peux laver mon linge aussi ? » « Pourquoi tu ne viens pas avec moi ? Pendant que les machines tournent, on pourra discuter. » « Je ne peux pas, je dois finir un exposé. » « Bon. Alors, j'aurai besoin d'argent pour acheter plus de lessive et de monnaie pour les machines. Tu me dois déjà dix euros, tu te souviens ? » « Je sais… Ça me coûte plus cher que prévu ! » « Tu as accumulé du linge pendant trois semaines. Qu'est-ce que tu veux que je fasse ? Ce sont tes chaussettes qui sentent mauvais, pas les miennes ! » Léo rit. « D'accord, prends ce dont tu as besoin. Laisse-moi juste cinq euros. » « Et mon pourboire ? » « Tu sais quoi ? Je vais venir avec toi et je travaillerai à la laverie. Comme ça, tu ne seras pas de mauvaise humeur. » « Je ne suis pas de mauvaise humeur ! Je dois juste m'habituer à vivre avec quelqu'un qui ne fait jamais sa lessive. »",
+    "en": "“Sami, are you doing the laundry today?” asks Léo. “Yes, I'll go to the laundromat that just opened on the corner. It's the one with wifi.” “Can you wash my clothes too?” “Why don't you come with me? While the machines are running, we can chat.” “I can't, I have to finish a presentation.” “OK. Then I'll need money to buy more detergent and change for the machines. You already owe me ten euros, remember?” “I know… It's costing me more than I expected!” “You let your laundry pile up for three weeks. What do you want me to do? It's your socks that smell, not mine!” Léo laughs. “All right, take what you need. Just leave me five euros.” “And my tip?” “You know what? I'll come with you and work at the laundromat. That way, you won't be in a bad mood.” “I'm not in a bad mood! I just have to get used to living with someone who never does his laundry.”",
+    "es": "«Sami, ¿vas a hacer la colada hoy?», pregunta Léo. «Sí, iré a la lavandería que acaban de abrir en la esquina. Es la que tiene wifi.» «¿Puedes lavar mi ropa también?» «¿Por qué no vienes conmigo? Mientras dan vueltas las lavadoras, podemos charlar.» «No puedo, tengo que terminar una exposición.» «Bueno. Entonces necesitaré dinero para comprar más detergente y monedas para las máquinas. Ya me debes diez euros, ¿te acuerdas?» «Lo sé… ¡Me está saliendo más caro de lo previsto!» «Has acumulado ropa durante tres semanas. ¿Qué quieres que haga? ¡Son tus calcetines los que huelen mal, no los míos!» Léo se ríe. «Vale, coge lo que necesites. Solo déjame cinco euros.» «¿Y mi propina?» «¿Sabes qué? Voy contigo y trabajaré en la lavandería. Así no estarás de mal humor.» «¡No estoy de mal humor! Solo tengo que acostumbrarme a vivir con alguien que nunca hace la colada.»",
+    "highlighted_words": [
+      "faire la lessive",
+      "la laverie qui vient",
+      "C'est celle où",
+      "j'aurai besoin",
+      "monnaie",
+      "tu as accumulé",
+      "Qu'est-ce que tu veux que je fasse",
+      "Ce sont tes chaussettes qui",
+      "de mauvaise humeur",
+      "m'habituer",
+      "quelqu'un qui ne fait jamais"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Le linge qui est ici est à moi",
+      "en": "The laundry here is mine",
+      "es": "La ropa que está aquí es mía"
+    },
+    {
+      "sentence": "C'est celle que je préfère",
+      "en": "It's the one I prefer",
+      "es": "Es la que prefiero"
+    },
+    {
+      "sentence": "Tu auras besoin de monnaie",
+      "en": "You will need change",
+      "es": "Necesitarás monedas"
+    },
+    {
+      "sentence": "La laverie où je vais est propre",
+      "en": "The laundromat I go to is clean",
+      "es": "La lavandería adonde voy está limpia"
+    },
+    {
+      "sentence": "Qu'est-ce que tu veux que je fasse",
+      "en": "What do you want me to do",
+      "es": "¿Qué quieres que haga?"
+    },
+    {
+      "sentence": "Je dois faire la lessive",
+      "en": "I have to do the laundry",
+      "es": "Tengo que hacer la colada"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Avez-vous de la monnaie ?",
+      "en": "Do you have change?",
+      "es": "¿Tiene cambio?"
+    },
+    {
+      "answer": "Mon linge est sec",
+      "en": "My laundry is dry",
+      "es": "Mi ropa está seca"
+    },
+    {
+      "answer": "La machine est en panne",
+      "en": "The machine is broken",
+      "es": "La máquina está averiada"
+    },
+    {
+      "answer": "Ce sont ceux que je cherchais",
+      "en": "They're the ones I was looking for",
+      "es": "Son los que buscaba"
+    },
+    {
+      "answer": "Je n'ai pas de savon",
+      "en": "I don't have any soap",
+      "es": "No tengo jabón"
+    },
+    {
+      "answer": "Tu me dois dix euros",
+      "en": "You owe me ten euros",
+      "es": "Me debes diez euros"
+    }
+  ]
+}

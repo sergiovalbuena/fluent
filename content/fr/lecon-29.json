@@ -1,0 +1,603 @@
+{
+  "lesson": 29,
+  "slug": "lecon-29",
+  "icon": "🎭",
+  "title": {
+    "fr": "Le théâtre et le cinéma",
+    "es": "El teatro y el cine",
+    "en": "Theater and cinema"
+  },
+  "source": {
+    "audio": "Lecons 29.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "ça te dit de + infinitif",
+      "example": "Ça te dit d'aller au cinéma ?",
+      "en": "Suggesting an activity",
+      "es": "Proponer un plan"
+    },
+    {
+      "structure": "« ça a été » / passé composé",
+      "example": "Le premier acte a été ennuyeux, mais ça a été un bon spectacle.",
+      "en": "Evaluating past events",
+      "es": "Valorar hechos pasados"
+    },
+    {
+      "structure": "se faire + infinitif",
+      "example": "Il s'est fait siffler par le public.",
+      "en": "Causative / passive \"se faire\"",
+      "es": "«Se faire» causativo / pasivo"
+    },
+    {
+      "structure": "pronoms démonstratifs",
+      "example": "Je voulais le rôle de la princesse, pas celui de la sorcière.",
+      "en": "\"celui de / celle de\"",
+      "es": "«el de / la de»"
+    },
+    {
+      "structure": "plus-que-parfait + accord",
+      "example": "Elle a mis la robe qu'elle avait achetée pour l'occasion.",
+      "en": "Past perfect with agreement",
+      "es": "Pluscuamperfecto con concordancia"
+    },
+    {
+      "structure": "conditionnel (futur dans le passé)",
+      "example": "La pièce ne serait jouée qu'une seule fois.",
+      "en": "Future in the past",
+      "es": "Futuro en el pasado"
+    },
+    {
+      "structure": "après avoir + participe",
+      "example": "Après avoir fini le travail, elle est allée chez le coiffeur.",
+      "en": "\"After having done\"",
+      "es": "«Después de haber»"
+    },
+    {
+      "structure": "mourir d'envie de",
+      "example": "Elle mourait d'envie de voir ce spectacle.",
+      "en": "\"To be dying to\"",
+      "es": "«Morirse de ganas de»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Une pièce (de théâtre)\" = a play; \"un film\" = a movie; \"une séance\" = a screening; \"l'entracte\" = the intermission.",
+      "es": "«Une pièce (de théâtre)» = una obra; «un film» = una película; «une séance» = una sesión; «l'entracte» = el entreacto."
+    },
+    {
+      "en": "\"VO\" (version originale) = original language with subtitles; \"VF\" = dubbed into French.",
+      "es": "«VO» (version originale) = versión original subtitulada; «VF» = doblada al francés."
+    },
+    {
+      "en": "In French theaters, \"siffler\" (whistling) is a sign of disapproval, not enthusiasm!",
+      "es": "En los teatros franceses, «siffler» (silbar) es señal de desaprobación, ¡no de entusiasmo!"
+    },
+    {
+      "en": "\"Rater / louper\" = to miss (informal). \"Ça m'a plu\" = I liked it.",
+      "es": "«Rater / louper» = perderse algo (coloquial). «Ça m'a plu» = me gustó."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le théâtre",
+      "en": "the theater",
+      "es": "el teatro"
+    },
+    {
+      "word": "le cinéma",
+      "en": "the cinema",
+      "es": "el cine"
+    },
+    {
+      "word": "la pièce de théâtre",
+      "en": "the play",
+      "es": "la obra de teatro"
+    },
+    {
+      "word": "le film",
+      "en": "the movie",
+      "es": "la película"
+    },
+    {
+      "word": "la séance",
+      "en": "the screening",
+      "es": "la sesión"
+    },
+    {
+      "word": "le spectacle",
+      "en": "the show",
+      "es": "el espectáculo"
+    },
+    {
+      "word": "l'acte",
+      "en": "the act",
+      "es": "el acto"
+    },
+    {
+      "word": "la scène",
+      "en": "the stage / the scene",
+      "es": "el escenario / la escena"
+    },
+    {
+      "word": "l'acteur / l'actrice",
+      "en": "actor / actress",
+      "es": "el actor / la actriz"
+    },
+    {
+      "word": "le réalisateur / la réalisatrice",
+      "en": "the film director",
+      "es": "el director / la directora (de cine)"
+    },
+    {
+      "word": "le metteur en scène",
+      "en": "the stage director",
+      "es": "el director de escena"
+    },
+    {
+      "word": "la vedette",
+      "en": "the star",
+      "es": "la estrella"
+    },
+    {
+      "word": "le rôle",
+      "en": "the role",
+      "es": "el papel"
+    },
+    {
+      "word": "le public",
+      "en": "the audience",
+      "es": "el público"
+    },
+    {
+      "word": "les applaudissements",
+      "en": "applause",
+      "es": "los aplausos"
+    },
+    {
+      "word": "applaudir",
+      "en": "to applaud",
+      "es": "aplaudir"
+    },
+    {
+      "word": "siffler",
+      "en": "to whistle / to boo",
+      "es": "silbar / abuchear"
+    },
+    {
+      "word": "le rideau",
+      "en": "the curtain",
+      "es": "el telón"
+    },
+    {
+      "word": "les coulisses",
+      "en": "backstage",
+      "es": "los bastidores"
+    },
+    {
+      "word": "le décor",
+      "en": "the set",
+      "es": "el decorado"
+    },
+    {
+      "word": "l'écran",
+      "en": "the screen",
+      "es": "la pantalla"
+    },
+    {
+      "word": "la place",
+      "en": "the seat",
+      "es": "el asiento / la entrada"
+    },
+    {
+      "word": "la rangée",
+      "en": "the row",
+      "es": "la fila"
+    },
+    {
+      "word": "l'orchestre",
+      "en": "the stalls",
+      "es": "el patio de butacas"
+    },
+    {
+      "word": "le balcon",
+      "en": "the balcony",
+      "es": "el anfiteatro"
+    },
+    {
+      "word": "l'entracte",
+      "en": "the intermission",
+      "es": "el entreacto"
+    },
+    {
+      "word": "la bande originale",
+      "en": "the soundtrack",
+      "es": "la banda sonora"
+    },
+    {
+      "word": "les effets spéciaux",
+      "en": "special effects",
+      "es": "los efectos especiales"
+    },
+    {
+      "word": "la comédie",
+      "en": "comedy",
+      "es": "la comedia"
+    },
+    {
+      "word": "la comédie musicale",
+      "en": "musical",
+      "es": "el musical"
+    },
+    {
+      "word": "le drame",
+      "en": "drama",
+      "es": "el drama"
+    },
+    {
+      "word": "le documentaire",
+      "en": "documentary",
+      "es": "el documental"
+    },
+    {
+      "word": "le film d'action",
+      "en": "action movie",
+      "es": "la película de acción"
+    },
+    {
+      "word": "le dessin animé",
+      "en": "cartoon",
+      "es": "los dibujos animados"
+    },
+    {
+      "word": "les sous-titres",
+      "en": "subtitles",
+      "es": "los subtítulos"
+    },
+    {
+      "word": "le pop-corn",
+      "en": "popcorn",
+      "es": "las palomitas"
+    },
+    {
+      "word": "émouvant / émouvante",
+      "en": "moving",
+      "es": "conmovedor / conmovedora"
+    },
+    {
+      "word": "drôle",
+      "en": "funny",
+      "es": "gracioso"
+    },
+    {
+      "word": "ennuyeux / ennuyeuse",
+      "en": "boring",
+      "es": "aburrido / aburrida"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Toutes les places sont prises.",
+      "en": "All the seats are taken.",
+      "es": "Todas las entradas están vendidas."
+    },
+    {
+      "phrase": "Monte sur scène, c'est ton tour !",
+      "en": "Go on stage, it's your turn!",
+      "es": "¡Sal al escenario, te toca!"
+    },
+    {
+      "phrase": "C'est une grande actrice.",
+      "en": "She is a great actress.",
+      "es": "Es una gran actriz."
+    },
+    {
+      "phrase": "La salle est pleine.",
+      "en": "The theater is full.",
+      "es": "La sala está llena."
+    },
+    {
+      "phrase": "Le premier acte a été ennuyeux, mais le reste de la pièce a été très drôle.",
+      "en": "The first act was boring, but the rest of the play was very funny.",
+      "es": "El primer acto fue aburrido, pero el resto de la obra fue muy divertido."
+    },
+    {
+      "phrase": "Ça a été un film d'action très émouvant.",
+      "en": "It was a very moving action film.",
+      "es": "Fue una película de acción muy conmovedora."
+    },
+    {
+      "phrase": "Elle a gagné le prix de la meilleure réalisatrice.",
+      "en": "She won the award for best director.",
+      "es": "Ganó el premio a la mejor directora."
+    },
+    {
+      "phrase": "Le rideau s'est levé et la magie a commencé.",
+      "en": "The curtain rose and the magic began.",
+      "es": "Se levantó el telón y empezó la magia."
+    },
+    {
+      "phrase": "Il s'est fait siffler quand il a oublié son texte.",
+      "en": "He got booed when he forgot his lines.",
+      "es": "Lo abuchearon cuando olvidó su texto."
+    },
+    {
+      "phrase": "Ça te dit d'aller au cinéma ? — Oui, bonne idée !",
+      "en": "Do you feel like going to the movies? — Yes, good idea!",
+      "es": "¿Te apetece ir al cine? — ¡Sí, buena idea!"
+    },
+    {
+      "phrase": "Où veux-tu t'asseoir ? — Au milieu de la rangée.",
+      "en": "Where do you want to sit? — In the middle of the row.",
+      "es": "¿Dónde quieres sentarte? — En el centro de la fila."
+    },
+    {
+      "phrase": "Quel genre de film aimes-tu ? — Les comédies romantiques.",
+      "en": "What kind of movie do you like? — Romantic comedies.",
+      "es": "¿Qué tipo de películas te gustan? — Las comedias románticas."
+    },
+    {
+      "phrase": "Attends l'entracte pour aller aux toilettes, sinon tu vas rater la meilleure scène.",
+      "en": "Wait for the intermission to go to the restroom, otherwise you'll miss the best scene.",
+      "es": "Espera al entreacto para ir al baño, si no te vas a perder la mejor escena."
+    },
+    {
+      "phrase": "Je voulais le rôle de la princesse, pas celui de la sorcière !",
+      "en": "I wanted the role of the princess, not the witch's!",
+      "es": "¡Yo quería el papel de la princesa, no el de la bruja!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "How do you suggest going to the movies informally?",
+        "es": "¿Cómo propones ir al cine de forma informal?"
+      },
+      "options": [
+        "Ça te dit d'aller au cinéma ?",
+        "Tu dois aller au cinéma.",
+        "Va au cinéma !",
+        "Le cinéma est ouvert ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ça te dit de\" + infinitive = do you feel like…?",
+        "es": "«Ça te dit de» + infinitivo = ¿te apetece…?"
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"l'entracte\"?",
+        "es": "¿Qué es «l'entracte»?"
+      },
+      "options": {
+        "en": [
+          "the intermission",
+          "the first act",
+          "the entrance",
+          "the curtain"
+        ],
+        "es": [
+          "el entreacto",
+          "el primer acto",
+          "la entrada",
+          "el telón"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "The break between two acts.",
+        "es": "La pausa entre dos actos."
+      }
+    },
+    {
+      "question": {
+        "en": "In a French theater, if the audience \"siffle\", it means they…",
+        "es": "En un teatro francés, si el público «siffle», significa que…"
+      },
+      "options": {
+        "en": [
+          "disapprove",
+          "love the show",
+          "want an encore",
+          "are laughing"
+        ],
+        "es": [
+          "desaprueba",
+          "le encanta el espectáculo",
+          "quiere un bis",
+          "se está riendo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Whistling = booing in France.",
+        "es": "Silbar = abuchear en Francia."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle a mis la robe qu'elle avait ___.\"",
+        "es": "Completa: «Elle a mis la robe qu'elle avait ___.»"
+      },
+      "options": [
+        "achetée",
+        "acheté",
+        "achetés",
+        "acheter"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Agreement with \"que\" (= la robe) placed before \"avoir\".",
+        "es": "Concordancia con «que» (= la robe) colocado antes de «avoir»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je préfère ce rôle à ___ de la sorcière.\"",
+        "es": "Completa: «Je préfère ce rôle à ___ de la sorcière.»"
+      },
+      "options": [
+        "celui",
+        "celle",
+        "ceux",
+        "cela"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Rôle is masculine singular: celui.",
+        "es": "Rôle es masculino singular: celui."
+      }
+    },
+    {
+      "question": {
+        "en": "\"VO\" at the cinema means…",
+        "es": "«VO» en el cine significa…"
+      },
+      "options": {
+        "en": [
+          "original version (with subtitles)",
+          "dubbed version",
+          "very old film",
+          "VIP seats"
+        ],
+        "es": [
+          "versión original (subtitulada)",
+          "versión doblada",
+          "película muy antigua",
+          "asientos VIP"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "VF = dubbed into French.",
+        "es": "VF = doblada al francés."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ avoir dîné, ils sont allés au théâtre.\"",
+        "es": "Completa: «___ avoir dîné, ils sont allés au théâtre.»"
+      },
+      "options": [
+        "Après",
+        "Avant",
+        "Pendant",
+        "Depuis"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Après + past infinitive.",
+        "es": "Après + infinitivo compuesto."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il s'est fait siffler.\" Meaning?",
+        "es": "«Il s'est fait siffler.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "He got booed.",
+          "He whistled.",
+          "He made someone whistle.",
+          "He learned to whistle."
+        ],
+        "es": [
+          "Lo abuchearon.",
+          "Silbó.",
+          "Hizo silbar a alguien.",
+          "Aprendió a silbar."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Se faire\" + infinitive: something happens to the subject.",
+        "es": "«Se faire» + infinitivo: algo le pasa al sujeto."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le cadeau de Léa",
+    "text": "Aujourd'hui, c'est le quatre-vingtième anniversaire de Robert. Sa petite-fille, Léa, a décidé de l'emmener voir une comédie musicale qu'il mourait d'envie de voir depuis des années. Elle a dû acheter les places trois mois à l'avance, parce que le spectacle ne serait joué qu'une seule fois à Toulouse et que tout le monde voulait le voir. Après avoir fini son travail, Léa est passée chez le coiffeur. Elle a mis la robe bleue qu'elle avait achetée spécialement pour l'occasion. Elle est allée chercher son grand-père vers dix-neuf heures, et ils sont arrivés au théâtre à dix-neuf heures trente. La salle était pleine. Le rideau s'est levé à vingt heures pile. L'orchestre était magnifique et les décors étaient pleins de couleurs. À l'entracte, ils ont partagé un verre de champagne. « Le premier acte a été un peu long, mais les chansons m'ont beaucoup plu », a dit Robert. Le deuxième acte a été encore meilleur : drôle, émouvant et surprenant. À la fin, le public a applaudi pendant dix minutes. « C'est le plus beau cadeau de ma vie », a murmuré Robert.",
+    "en": "Today is Robert's eightieth birthday. His granddaughter, Léa, decided to take him to see a musical he had been dying to see for years. She had to buy the tickets three months in advance, because the show would be performed only once in Toulouse and everyone wanted to see it. After finishing work, Léa went to the hairdresser. She put on the blue dress she had bought especially for the occasion. She picked up her grandfather around 7 p.m., and they arrived at the theater at 7:30. The theater was full. The curtain rose at 8 p.m. sharp. The orchestra was magnificent and the sets were full of color. At the intermission, they shared a glass of champagne. “The first act was a bit long, but I really liked the songs,” said Robert. The second act was even better: funny, moving and surprising. At the end, the audience applauded for ten minutes. “It's the most beautiful gift of my life,” Robert whispered.",
+    "es": "Hoy es el ochenta cumpleaños de Robert. Su nieta, Léa, decidió llevarlo a ver un musical que se moría de ganas de ver desde hacía años. Tuvo que comprar las entradas con tres meses de antelación, porque el espectáculo solo se representaría una vez en Toulouse y todo el mundo quería verlo. Después de terminar el trabajo, Léa pasó por la peluquería. Se puso el vestido azul que se había comprado especialmente para la ocasión. Fue a buscar a su abuelo hacia las siete de la tarde y llegaron al teatro a las siete y media. La sala estaba llena. El telón se levantó a las ocho en punto. La orquesta era magnífica y los decorados estaban llenos de color. En el entreacto compartieron una copa de champán. «El primer acto ha sido un poco largo, pero las canciones me han gustado mucho», dijo Robert. El segundo acto fue todavía mejor: divertido, conmovedor y sorprendente. Al final, el público aplaudió durante diez minutos. «Es el regalo más bonito de mi vida», murmuró Robert.",
+    "highlighted_words": [
+      "comédie musicale",
+      "mourait d'envie de",
+      "à l'avance",
+      "ne serait joué qu'une seule fois",
+      "Après avoir fini",
+      "qu'elle avait achetée",
+      "Le rideau",
+      "l'entracte",
+      "a été",
+      "applaudi"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Ça te dit d'aller au cinéma",
+      "en": "Do you feel like going to the movies",
+      "es": "¿Te apetece ir al cine?"
+    },
+    {
+      "sentence": "Toutes les places sont prises",
+      "en": "All the seats are taken",
+      "es": "Todas las entradas están vendidas"
+    },
+    {
+      "sentence": "C'est une grande actrice",
+      "en": "She is a great actress",
+      "es": "Es una gran actriz"
+    },
+    {
+      "sentence": "Le film a été très émouvant",
+      "en": "The movie was very moving",
+      "es": "La película fue muy conmovedora"
+    },
+    {
+      "sentence": "Attends l'entracte",
+      "en": "Wait for the intermission",
+      "es": "Espera al entreacto"
+    },
+    {
+      "sentence": "La pièce m'a beaucoup plu",
+      "en": "I really liked the play",
+      "es": "La obra me gustó mucho"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "On va voir une comédie",
+      "en": "We're going to see a comedy",
+      "es": "Vamos a ver una comedia"
+    },
+    {
+      "answer": "La salle est pleine",
+      "en": "The theater is full",
+      "es": "La sala está llena"
+    },
+    {
+      "answer": "J'aime les films d'action",
+      "en": "I like action movies",
+      "es": "Me gustan las películas de acción"
+    },
+    {
+      "answer": "Le rideau se lève",
+      "en": "The curtain rises",
+      "es": "Se levanta el telón"
+    },
+    {
+      "answer": "Deux places, s'il vous plaît",
+      "en": "Two seats, please",
+      "es": "Dos entradas, por favor"
+    },
+    {
+      "answer": "Je veux être actrice",
+      "en": "I want to be an actress",
+      "es": "Quiero ser actriz"
+    }
+  ]
+}

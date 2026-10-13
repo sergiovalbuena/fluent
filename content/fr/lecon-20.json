@@ -1,0 +1,628 @@
+{
+  "lesson": 20,
+  "slug": "lecon-20",
+  "icon": "🏙️",
+  "title": {
+    "fr": "La ville",
+    "es": "La ciudad",
+    "en": "The city"
+  },
+  "source": {
+    "audio": "Lecons 20.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "impératif (itinéraire)",
+      "example": "Prenez le bus 59, descendez rue Voltaire, puis tournez à droite.",
+      "en": "Giving directions",
+      "es": "Dar indicaciones"
+    },
+    {
+      "structure": "devoir (obligation / conseil)",
+      "example": "Les voitures doivent s'arrêter. / Les piétons devraient marcher sur le trottoir.",
+      "en": "Must / should",
+      "es": "Deber / debería"
+    },
+    {
+      "structure": "voix passive (passé, futur proche)",
+      "example": "Cette église a été construite en 1880. / Ces immeubles vont être démolis.",
+      "en": "Passive in the past and near future",
+      "es": "Pasiva en pasado y futuro próximo"
+    },
+    {
+      "structure": "imparfait / présent",
+      "example": "Avant, ce quartier était calme ; maintenant, il est bruyant.",
+      "en": "Before vs. now",
+      "es": "Antes frente a ahora"
+    },
+    {
+      "structure": "pronom « y »",
+      "example": "J'aime la ville : on y trouve de tout.",
+      "en": "\"y\" replacing a place",
+      "es": "«y» que sustituye un lugar"
+    },
+    {
+      "structure": "il y a + durée",
+      "example": "Ma famille s'est installée ici il y a cent ans.",
+      "en": "\"ago\"",
+      "es": "«hace» (tiempo)"
+    },
+    {
+      "structure": "pendant + durée",
+      "example": "J'ai attendu le bus pendant une heure.",
+      "en": "Duration",
+      "es": "Duración"
+    },
+    {
+      "structure": "malgré + nom",
+      "example": "Malgré le bruit, j'aime la ville.",
+      "en": "\"Despite\"",
+      "es": "«A pesar de»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Directions: \"tout droit\" (straight ahead), \"à droite / à gauche\", \"au coin de la rue\", \"en face de\", \"à côté de\", \"au feu\" (at the traffic light).",
+      "es": "Indicaciones: «tout droit» (todo recto), «à droite / à gauche», «au coin de la rue», «en face de», «à côté de», «au feu» (en el semáforo)."
+    },
+    {
+      "en": "\"Le feu\" = the traffic light (and also fire). \"Un pâté de maisons\" = a block.",
+      "es": "«Le feu» = el semáforo (y también el fuego). «Un pâté de maisons» = una manzana / cuadra."
+    },
+    {
+      "en": "\"Il y a\" + duration = ago: \"il y a deux ans\". \"Depuis\" = since / for (still true now).",
+      "es": "«Il y a» + duración = hace: «il y a deux ans». «Depuis» = desde / desde hace (sigue siendo cierto)."
+    },
+    {
+      "en": "Cardinal points: le nord, le sud, l'est, l'ouest.",
+      "es": "Puntos cardinales: le nord, le sud, l'est, l'ouest."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la ville",
+      "en": "the city / town",
+      "es": "la ciudad"
+    },
+    {
+      "word": "le quartier",
+      "en": "the neighborhood",
+      "es": "el barrio"
+    },
+    {
+      "word": "le centre-ville",
+      "en": "downtown",
+      "es": "el centro"
+    },
+    {
+      "word": "un immeuble",
+      "en": "a building (apartments)",
+      "es": "un edificio (de viviendas)"
+    },
+    {
+      "word": "un bâtiment",
+      "en": "a building",
+      "es": "un edificio"
+    },
+    {
+      "word": "un gratte-ciel",
+      "en": "a skyscraper",
+      "es": "un rascacielos"
+    },
+    {
+      "word": "un appartement",
+      "en": "an apartment",
+      "es": "un apartamento"
+    },
+    {
+      "word": "la rue",
+      "en": "the street",
+      "es": "la calle"
+    },
+    {
+      "word": "l'avenue",
+      "en": "the avenue",
+      "es": "la avenida"
+    },
+    {
+      "word": "la place",
+      "en": "the square",
+      "es": "la plaza"
+    },
+    {
+      "word": "le trottoir",
+      "en": "the sidewalk",
+      "es": "la acera"
+    },
+    {
+      "word": "le piéton",
+      "en": "the pedestrian",
+      "es": "el peatón"
+    },
+    {
+      "word": "le feu",
+      "en": "the traffic light",
+      "es": "el semáforo"
+    },
+    {
+      "word": "un pâté de maisons",
+      "en": "a block",
+      "es": "una manzana / una cuadra"
+    },
+    {
+      "word": "la circulation",
+      "en": "traffic",
+      "es": "el tráfico"
+    },
+    {
+      "word": "un embouteillage",
+      "en": "a traffic jam",
+      "es": "un atasco"
+    },
+    {
+      "word": "l'arrêt de bus",
+      "en": "the bus stop",
+      "es": "la parada de autobús"
+    },
+    {
+      "word": "le bus",
+      "en": "the bus",
+      "es": "el autobús"
+    },
+    {
+      "word": "le camion",
+      "en": "the truck",
+      "es": "el camión"
+    },
+    {
+      "word": "la moto",
+      "en": "the motorbike",
+      "es": "la moto"
+    },
+    {
+      "word": "le parking",
+      "en": "the parking lot",
+      "es": "el aparcamiento"
+    },
+    {
+      "word": "la banque",
+      "en": "the bank",
+      "es": "el banco"
+    },
+    {
+      "word": "la poste",
+      "en": "the post office",
+      "es": "correos"
+    },
+    {
+      "word": "l'hôpital",
+      "en": "the hospital",
+      "es": "el hospital"
+    },
+    {
+      "word": "la pharmacie",
+      "en": "the pharmacy",
+      "es": "la farmacia"
+    },
+    {
+      "word": "l'église",
+      "en": "the church",
+      "es": "la iglesia"
+    },
+    {
+      "word": "le cinéma",
+      "en": "the cinema",
+      "es": "el cine"
+    },
+    {
+      "word": "le théâtre",
+      "en": "the theater",
+      "es": "el teatro"
+    },
+    {
+      "word": "le musée",
+      "en": "the museum",
+      "es": "el museo"
+    },
+    {
+      "word": "la bibliothèque",
+      "en": "the library",
+      "es": "la biblioteca"
+    },
+    {
+      "word": "le commissariat",
+      "en": "the police station",
+      "es": "la comisaría"
+    },
+    {
+      "word": "l'école",
+      "en": "the school",
+      "es": "la escuela"
+    },
+    {
+      "word": "le marché",
+      "en": "the market",
+      "es": "el mercado"
+    },
+    {
+      "word": "le supermarché",
+      "en": "the supermarket",
+      "es": "el supermercado"
+    },
+    {
+      "word": "la boutique",
+      "en": "the shop",
+      "es": "la tienda"
+    },
+    {
+      "word": "le parc",
+      "en": "the park",
+      "es": "el parque"
+    },
+    {
+      "word": "les habitants",
+      "en": "the inhabitants",
+      "es": "los habitantes"
+    },
+    {
+      "word": "le bruit",
+      "en": "noise",
+      "es": "el ruido"
+    },
+    {
+      "word": "bruyant / bruyante",
+      "en": "noisy",
+      "es": "ruidoso / ruidosa"
+    },
+    {
+      "word": "la pollution",
+      "en": "pollution",
+      "es": "la contaminación"
+    },
+    {
+      "word": "dangereux / dangereuse",
+      "en": "dangerous",
+      "es": "peligroso / peligrosa"
+    },
+    {
+      "word": "sûr / sûre",
+      "en": "safe",
+      "es": "seguro / segura"
+    },
+    {
+      "word": "les alentours",
+      "en": "the surroundings",
+      "es": "los alrededores"
+    },
+    {
+      "word": "le nord / le sud",
+      "en": "north / south",
+      "es": "el norte / el sur"
+    },
+    {
+      "word": "l'est / l'ouest",
+      "en": "east / west",
+      "es": "el este / el oeste"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Les piétons devraient marcher sur le trottoir.",
+      "en": "Pedestrians should walk on the sidewalk.",
+      "es": "Los peatones deberían caminar por la acera."
+    },
+    {
+      "phrase": "Quand le feu est rouge, les voitures doivent s'arrêter.",
+      "en": "When the light is red, cars must stop.",
+      "es": "Cuando el semáforo está en rojo, los coches deben detenerse."
+    },
+    {
+      "phrase": "À l'aéroport, s'il vous plaît.",
+      "en": "To the airport, please.",
+      "es": "Al aeropuerto, por favor."
+    },
+    {
+      "phrase": "La banque fermera à seize heures.",
+      "en": "The bank will close at 4 p.m.",
+      "es": "El banco cerrará a las cuatro de la tarde."
+    },
+    {
+      "phrase": "La pharmacie est à deux rues d'ici.",
+      "en": "The pharmacy is two streets from here.",
+      "es": "La farmacia está a dos calles de aquí."
+    },
+    {
+      "phrase": "Cette église a été construite en 1880.",
+      "en": "This church was built in 1880.",
+      "es": "Esta iglesia fue construida en 1880."
+    },
+    {
+      "phrase": "J'ai attendu le bus pendant une heure !",
+      "en": "I waited for the bus for an hour!",
+      "es": "¡Esperé el autobús durante una hora!"
+    },
+    {
+      "phrase": "Ces vieux immeubles vont être démolis.",
+      "en": "These old buildings are going to be demolished.",
+      "es": "Estos edificios viejos van a ser demolidos."
+    },
+    {
+      "phrase": "Avant, cet hôtel était propre ; maintenant, il est bruyant et sale.",
+      "en": "This hotel used to be clean; now it is noisy and dirty.",
+      "es": "Antes este hotel estaba limpio; ahora es ruidoso y sucio."
+    },
+    {
+      "phrase": "Le restaurant est en face de la poste.",
+      "en": "The restaurant is opposite the post office.",
+      "es": "El restaurante está enfrente de correos."
+    },
+    {
+      "phrase": "Savez-vous où se trouve l'hôpital ? — Au feu, tournez à droite et vous le verrez.",
+      "en": "Do you know where the hospital is? — At the light, turn right and you will see it.",
+      "es": "¿Sabe dónde está el hospital? — En el semáforo, gire a la derecha y lo verá."
+    },
+    {
+      "phrase": "Pour aller au musée ? — Prenez le bus 59 et descendez rue Voltaire.",
+      "en": "How do I get to the museum? — Take bus 59 and get off at rue Voltaire.",
+      "es": "¿Para ir al museo? — Tome el autobús 59 y bájese en la calle Voltaire."
+    },
+    {
+      "phrase": "Tu es arrivé dix minutes en retard ! — Il y avait un embouteillage.",
+      "en": "You arrived ten minutes late! — There was a traffic jam.",
+      "es": "¡Llegaste diez minutos tarde! — Había un atasco."
+    },
+    {
+      "phrase": "Tu habites en ville ? — Non, je préfère habiter à la campagne.",
+      "en": "Do you live in the city? — No, I prefer living in the countryside.",
+      "es": "¿Vives en la ciudad? — No, prefiero vivir en el campo."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What does \"le feu\" mean in \"Tournez à droite au feu\"?",
+        "es": "¿Qué significa «le feu» en «Tournez à droite au feu»?"
+      },
+      "options": {
+        "en": [
+          "the traffic light",
+          "the fire",
+          "the corner",
+          "the bridge"
+        ],
+        "es": [
+          "el semáforo",
+          "el fuego",
+          "la esquina",
+          "el puente"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "In the street, \"le feu\" is the traffic light.",
+        "es": "En la calle, «le feu» es el semáforo."
+      }
+    },
+    {
+      "question": {
+        "en": "Passive past: \"They built this church in 1880\" → ?",
+        "es": "Pasiva en pasado: «Construyeron esta iglesia en 1880» → ?"
+      },
+      "options": [
+        "Cette église a été construite en 1880.",
+        "Cette église a construit en 1880.",
+        "Cette église est construire en 1880.",
+        "Cette église était construisait en 1880."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "avoir été + past participle (agreement with the subject).",
+        "es": "avoir été + participio (concuerda con el sujeto)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'aime le marché : j'___ vais tous les samedis.\"",
+        "es": "Completa: «J'aime le marché : j'___ vais tous les samedis.»"
+      },
+      "options": [
+        "y",
+        "en",
+        "le",
+        "lui"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Y\" replaces a place (au marché).",
+        "es": "«Y» sustituye un lugar (au marché)."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Ma famille s'est installée ici il y a cent ans.\" Meaning?",
+        "es": "«Ma famille s'est installée ici il y a cent ans.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "My family settled here a hundred years ago.",
+          "There are a hundred people in my family.",
+          "My family will settle here in a hundred years.",
+          "My family has a hundred-year-old house."
+        ],
+        "es": [
+          "Mi familia se instaló aquí hace cien años.",
+          "Hay cien personas en mi familia.",
+          "Mi familia se instalará aquí dentro de cien años.",
+          "Mi familia tiene una casa centenaria."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il y a\" + duration = ago.",
+        "es": "«Il y a» + duración = hace."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence gives advice (not an obligation)?",
+        "es": "¿Qué frase da un consejo (no una obligación)?"
+      },
+      "options": [
+        "Les piétons devraient être prudents.",
+        "Les piétons doivent être prudents.",
+        "Les piétons sont prudents.",
+        "Les piétons seront prudents."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional of \"devoir\" = should.",
+        "es": "Condicional de «devoir» = debería."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you go to borrow books?",
+        "es": "¿Adónde vas a tomar prestados libros?"
+      },
+      "options": [
+        "à la bibliothèque",
+        "à la librairie",
+        "à la poste",
+        "au musée"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "False friend: \"la librairie\" is a bookshop.",
+        "es": "Falso amigo: «la librairie» es una librería (tienda)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ le bruit, j'adore Paris.\"",
+        "es": "Completa: «___ le bruit, j'adore Paris.»"
+      },
+      "options": [
+        "Malgré",
+        "Bien que",
+        "Parce que",
+        "Depuis"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Malgré\" + noun; \"bien que\" + subjunctive clause.",
+        "es": "«Malgré» + sustantivo; «bien que» + oración en subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un embouteillage\"?",
+        "es": "¿Qué es «un embouteillage»?"
+      },
+      "options": {
+        "en": [
+          "a traffic jam",
+          "a bottle shop",
+          "a parking lot",
+          "a crossroads"
+        ],
+        "es": [
+          "un atasco",
+          "una tienda de botellas",
+          "un aparcamiento",
+          "un cruce"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Also \"un bouchon\" (informal).",
+        "es": "También «un bouchon» (coloquial)."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le premier jour de Sami à Lyon",
+    "text": "Sami vient d'arriver à Lyon pour son nouveau travail. Il habite dans un petit appartement au cinquième étage d'un vieil immeuble, dans le quartier de la Croix-Rousse. Ce matin, il veut découvrir la ville. Il demande à une voisine : « Excusez-moi, pour aller au musée des Beaux-Arts ? » « Descendez la rue jusqu'à la place, prenez le métro ligne C, puis marchez tout droit pendant cinq minutes. Le musée est en face de l'hôtel de ville, vous ne pouvez pas le manquer. » Dans le métro, Sami regarde le plan. Il y a beaucoup de monde et de bruit. Le musée est magnifique : il a été construit il y a plus de trois cents ans. L'après-midi, il se promène le long du Rhône. Une dame âgée lui raconte : « Avant, ce quartier était plein d'usines ; maintenant, il y a des parcs et des cafés. » Le soir, Sami est fatigué, mais content. Malgré la circulation et les embouteillages, il aime déjà Lyon : on y trouve de tout !",
+    "en": "Sami has just arrived in Lyon for his new job. He lives in a small apartment on the fifth floor of an old building, in the Croix-Rousse neighborhood. This morning, he wants to explore the city. He asks a neighbor: “Excuse me, how do I get to the Fine Arts Museum?” “Go down the street to the square, take metro line C, then walk straight ahead for five minutes. The museum is opposite the town hall, you can't miss it.” In the metro, Sami looks at the map. There are a lot of people and a lot of noise. The museum is magnificent: it was built more than three hundred years ago. In the afternoon, he walks along the Rhône. An elderly lady tells him: “This area used to be full of factories; now there are parks and cafés.” In the evening, Sami is tired but happy. Despite the traffic and the jams, he already loves Lyon: you can find everything there!",
+    "es": "Sami acaba de llegar a Lyon por su nuevo trabajo. Vive en un pequeño apartamento en el quinto piso de un edificio antiguo, en el barrio de la Croix-Rousse. Esta mañana quiere descubrir la ciudad. Le pregunta a una vecina: «Disculpe, ¿para ir al Museo de Bellas Artes?» «Baje la calle hasta la plaza, tome el metro línea C y luego camine todo recto durante cinco minutos. El museo está enfrente del ayuntamiento, no tiene pérdida.» En el metro, Sami mira el plano. Hay mucha gente y mucho ruido. El museo es magnífico: fue construido hace más de trescientos años. Por la tarde pasea por la orilla del Ródano. Una señora mayor le cuenta: «Antes este barrio estaba lleno de fábricas; ahora hay parques y cafés.» Por la noche, Sami está cansado pero contento. A pesar del tráfico y los atascos, ya le encanta Lyon: ¡allí se encuentra de todo!",
+    "highlighted_words": [
+      "vient d'arriver",
+      "immeuble",
+      "quartier",
+      "Descendez",
+      "prenez",
+      "tout droit",
+      "en face de",
+      "a été construit",
+      "il y a",
+      "Avant",
+      "était",
+      "Malgré",
+      "on y trouve"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Tournez à gauche au feu",
+      "en": "Turn left at the traffic light",
+      "es": "Gire a la izquierda en el semáforo"
+    },
+    {
+      "sentence": "J'habite dans un appartement",
+      "en": "I live in an apartment",
+      "es": "Vivo en un apartamento"
+    },
+    {
+      "sentence": "La banque est en face du parc",
+      "en": "The bank is opposite the park",
+      "es": "El banco está enfrente del parque"
+    },
+    {
+      "sentence": "Cette église a été construite en 1880",
+      "en": "This church was built in 1880",
+      "es": "Esta iglesia fue construida en 1880"
+    },
+    {
+      "sentence": "Il y avait un embouteillage",
+      "en": "There was a traffic jam",
+      "es": "Había un atasco"
+    },
+    {
+      "sentence": "J'aime Paris malgré le bruit",
+      "en": "I love Paris despite the noise",
+      "es": "Me encanta París a pesar del ruido"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est l'arrêt de bus ?",
+      "en": "Where is the bus stop?",
+      "es": "¿Dónde está la parada de autobús?"
+    },
+    {
+      "answer": "Allez tout droit",
+      "en": "Go straight ahead",
+      "es": "Siga todo recto"
+    },
+    {
+      "answer": "C'est un quartier dangereux",
+      "en": "It's a dangerous neighborhood",
+      "es": "Es un barrio peligroso"
+    },
+    {
+      "answer": "La pharmacie est au coin de la rue",
+      "en": "The pharmacy is on the corner",
+      "es": "La farmacia está en la esquina"
+    },
+    {
+      "answer": "Je préfère la campagne",
+      "en": "I prefer the countryside",
+      "es": "Prefiero el campo"
+    },
+    {
+      "answer": "Le marché est plein de gens",
+      "en": "The market is full of people",
+      "es": "El mercado está lleno de gente"
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "lesson": 37,
+  "slug": "lecon-37",
+  "icon": "🚗",
+  "title": {
+    "fr": "Louer une voiture",
+    "es": "Alquilar un coche",
+    "en": "Renting a car"
+  },
+  "source": {
+    "audio": "Lecons 37.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "passé composé + déjà / jamais / toujours",
+      "example": "Tu as déjà conduit ? — Je n'ai jamais conduit. / Ils ont toujours eu des voitures de luxe.",
+      "en": "Experiences with adverbs",
+      "es": "Experiencias con adverbios"
+    },
+    {
+      "structure": "ça fait … que",
+      "example": "Ça fait des années que je voyage dans le monde.",
+      "en": "Duration up to now",
+      "es": "Duración hasta ahora"
+    },
+    {
+      "structure": "bien que + subjonctif passé",
+      "example": "Bien que tu lui aies dit de ne pas conduire, il ne t'a pas écouté.",
+      "en": "\"Although\" + past subjunctive",
+      "es": "«Aunque» + subjuntivo pasado"
+    },
+    {
+      "structure": "pour que + subjonctif",
+      "example": "Il a accéléré pour qu'on ne puisse pas le rattraper.",
+      "en": "\"So that\" + subjunctive",
+      "es": "«Para que» + subjuntivo"
+    },
+    {
+      "structure": "relative + subjonctif",
+      "example": "J'ai besoin d'une voiture qui consomme peu et qui soit sûre.",
+      "en": "Subjunctive in a relative clause (wish)",
+      "es": "Subjuntivo en una relativa (deseo)"
+    },
+    {
+      "structure": "depuis que",
+      "example": "Ils ne l'ont pas fait laver depuis qu'ils l'ont achetée.",
+      "en": "\"Since\" + clause",
+      "es": "«Desde que» + oración"
+    },
+    {
+      "structure": "venir de + infinitif",
+      "example": "Marc vient d'arriver à Paris.",
+      "en": "Recent past",
+      "es": "Pasado reciente"
+    },
+    {
+      "structure": "autant que / tant que",
+      "example": "Vous pouvez conduire autant que vous voulez.",
+      "en": "\"As much as\"",
+      "es": "«Tanto como»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "At the rental desk: \"le kilométrage illimité\" (unlimited mileage), \"l'assurance tous risques\" (full insurance), \"la caution\" (deposit), \"rendre la voiture\" (return the car).",
+      "es": "En el mostrador de alquiler: «le kilométrage illimité» (kilometraje ilimitado), «l'assurance tous risques» (seguro a todo riesgo), «la caution» (fianza), «rendre la voiture» (devolver el coche)."
+    },
+    {
+      "en": "\"Faire le plein\" = to fill up the tank; \"le réservoir est vide\" = the tank is empty; \"sans plomb\" = unleaded.",
+      "es": "«Faire le plein» = llenar el depósito; «le réservoir est vide» = el depósito está vacío; «sans plomb» = sin plomo."
+    },
+    {
+      "en": "\"Jeter un coup d'œil\" = to take a quick look.",
+      "es": "«Jeter un coup d'œil» = echar un vistazo."
+    },
+    {
+      "en": "Familiar: \"Occupe-toi de tes oignons !\" = Mind your own business!",
+      "es": "Coloquial: «Occupe-toi de tes oignons !» = ¡Métete en tus asuntos!"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "louer",
+      "en": "to rent",
+      "es": "alquilar"
+    },
+    {
+      "word": "l'agence de location",
+      "en": "the rental agency",
+      "es": "la agencia de alquiler"
+    },
+    {
+      "word": "le / la responsable",
+      "en": "the person in charge",
+      "es": "el / la responsable"
+    },
+    {
+      "word": "disponible",
+      "en": "available",
+      "es": "disponible"
+    },
+    {
+      "word": "la voiture de luxe",
+      "en": "luxury car",
+      "es": "el coche de lujo"
+    },
+    {
+      "word": "de taille moyenne",
+      "en": "mid-size",
+      "es": "de tamaño mediano"
+    },
+    {
+      "word": "spacieux / spacieuse",
+      "en": "spacious",
+      "es": "espacioso / espaciosa"
+    },
+    {
+      "word": "économique",
+      "en": "economical",
+      "es": "económico"
+    },
+    {
+      "word": "consommer",
+      "en": "to consume (fuel)",
+      "es": "consumir"
+    },
+    {
+      "word": "l'essence",
+      "en": "gasoline / petrol",
+      "es": "la gasolina"
+    },
+    {
+      "word": "sans plomb",
+      "en": "unleaded",
+      "es": "sin plomo"
+    },
+    {
+      "word": "le réservoir",
+      "en": "the tank",
+      "es": "el depósito"
+    },
+    {
+      "word": "faire le plein",
+      "en": "to fill up",
+      "es": "llenar el depósito"
+    },
+    {
+      "word": "la station-service",
+      "en": "the gas station",
+      "es": "la gasolinera"
+    },
+    {
+      "word": "l'huile",
+      "en": "oil",
+      "es": "el aceite"
+    },
+    {
+      "word": "le kilométrage",
+      "en": "mileage",
+      "es": "el kilometraje"
+    },
+    {
+      "word": "illimité / illimitée",
+      "en": "unlimited",
+      "es": "ilimitado / ilimitada"
+    },
+    {
+      "word": "l'assurance",
+      "en": "insurance",
+      "es": "el seguro"
+    },
+    {
+      "word": "la caution",
+      "en": "the deposit",
+      "es": "la fianza"
+    },
+    {
+      "word": "le pare-brise",
+      "en": "the windshield",
+      "es": "el parabrisas"
+    },
+    {
+      "word": "le frein",
+      "en": "the brake",
+      "es": "el freno"
+    },
+    {
+      "word": "freiner",
+      "en": "to brake",
+      "es": "frenar"
+    },
+    {
+      "word": "accélérer",
+      "en": "to accelerate",
+      "es": "acelerar"
+    },
+    {
+      "word": "le parking",
+      "en": "the parking lot",
+      "es": "el aparcamiento"
+    },
+    {
+      "word": "le stationnement",
+      "en": "parking",
+      "es": "el estacionamiento"
+    },
+    {
+      "word": "nettoyer",
+      "en": "to clean",
+      "es": "limpiar"
+    },
+    {
+      "word": "casser",
+      "en": "to break",
+      "es": "romper"
+    },
+    {
+      "word": "remplir",
+      "en": "to fill in / fill up",
+      "es": "rellenar / llenar"
+    },
+    {
+      "word": "jeter un coup d'œil",
+      "en": "to take a look",
+      "es": "echar un vistazo"
+    },
+    {
+      "word": "compliqué / compliquée",
+      "en": "complicated",
+      "es": "complicado / complicada"
+    },
+    {
+      "word": "loin",
+      "en": "far",
+      "es": "lejos"
+    },
+    {
+      "word": "devant",
+      "en": "in front of",
+      "es": "delante de"
+    },
+    {
+      "word": "rendre",
+      "en": "to return (something)",
+      "es": "devolver"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Ils ont loué une voiture de taille moyenne.",
+      "en": "They rented a mid-size car.",
+      "es": "Alquilaron un coche de tamaño mediano."
+    },
+    {
+      "phrase": "Le responsable m'en a parlé.",
+      "en": "The manager told me about it.",
+      "es": "El responsable me habló de ello."
+    },
+    {
+      "phrase": "Ça fait des années que je voyage dans le monde.",
+      "en": "I've been traveling the world for years.",
+      "es": "Llevo años viajando por el mundo."
+    },
+    {
+      "phrase": "Il a nettoyé cette voiture dix fois cette semaine !",
+      "en": "He has cleaned this car ten times this week!",
+      "es": "¡Ha limpiado este coche diez veces esta semana!"
+    },
+    {
+      "phrase": "Bien que tu lui aies dit de ne pas conduire, il ne t'a pas écouté.",
+      "en": "Although you told him not to drive, he didn't listen to you.",
+      "es": "Aunque le dijiste que no condujera, no te hizo caso."
+    },
+    {
+      "phrase": "Nous avons fait le plein deux fois aujourd'hui.",
+      "en": "We filled up twice today.",
+      "es": "Hemos llenado el depósito dos veces hoy."
+    },
+    {
+      "phrase": "Le kilométrage est illimité.",
+      "en": "The mileage is unlimited.",
+      "es": "El kilometraje es ilimitado."
+    },
+    {
+      "phrase": "J'ai toujours mis de l'essence sans plomb dans ma voiture.",
+      "en": "I have always put unleaded gas in my car.",
+      "es": "Siempre he puesto gasolina sin plomo en mi coche."
+    },
+    {
+      "phrase": "Il n'y a pas eu de voiture disponible de toute la semaine : elles ont toutes été louées.",
+      "en": "There was no car available all week: they were all rented.",
+      "es": "No ha habido ningún coche disponible en toda la semana: los han alquilado todos."
+    },
+    {
+      "phrase": "Il a accéléré pour qu'on ne puisse pas le rattraper.",
+      "en": "He sped up so that we couldn't catch up with him.",
+      "es": "Aceleró para que no pudiéramos alcanzarlo."
+    },
+    {
+      "phrase": "Elle a déjà conduit ? — Je crois qu'elle n'est jamais montée dans une voiture !",
+      "en": "Has she ever driven? — I think she has never even got into a car!",
+      "es": "¿Ha conducido alguna vez? — ¡Creo que nunca se ha subido a un coche!"
+    },
+    {
+      "phrase": "Ils ont lavé la voiture récemment ? — Non, pas depuis qu'ils l'ont achetée.",
+      "en": "Have they washed the car recently? — No, not since they bought it.",
+      "es": "¿Han lavado el coche últimamente? — No, desde que lo compraron, no."
+    },
+    {
+      "phrase": "Tu as fait le plein ? — Non, mais un voyant m'indique quand le réservoir est vide.",
+      "en": "Did you fill up? — No, but a light tells me when the tank is empty.",
+      "es": "¿Has llenado el depósito? — No, pero un piloto me avisa cuando está vacío."
+    },
+    {
+      "phrase": "Le mécanicien a jeté un coup d'œil à ta voiture ? — Non, pas encore.",
+      "en": "Has the mechanic taken a look at your car? — No, not yet.",
+      "es": "¿El mecánico ha echado un vistazo a tu coche? — No, todavía no."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Tu as ___ conduit en France ?\" (ever)",
+        "es": "Completa: «Tu as ___ conduit en France ?» (alguna vez)"
+      },
+      "options": [
+        "déjà",
+        "jamais",
+        "encore",
+        "toujours"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Déjà = ever / already in questions.",
+        "es": "Déjà = alguna vez / ya en preguntas."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je n'ai ___ eu d'accident.\"",
+        "es": "Completa: «Je n'ai ___ eu d'accident.»"
+      },
+      "options": [
+        "jamais",
+        "déjà",
+        "toujours",
+        "encore"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Ne … jamais = never.",
+        "es": "Ne … jamais = nunca."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Bien que tu lui ___ dit, il n'a pas écouté.\"",
+        "es": "Completa: «Bien que tu lui ___ dit, il n'a pas écouté.»"
+      },
+      "options": [
+        "aies",
+        "as",
+        "avais",
+        "auras"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Bien que\" + past subjunctive: que tu aies dit.",
+        "es": "«Bien que» + subjuntivo pasado: que tu aies dit."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je cherche une voiture qui ___ sûre.\"",
+        "es": "Completa: «Je cherche une voiture qui ___ sûre.»"
+      },
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "était"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Subjunctive after a wish for something not yet found.",
+        "es": "Subjuntivo tras un deseo de algo que aún no se ha encontrado."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"faire le plein\" mean?",
+        "es": "¿Qué significa «faire le plein»?"
+      },
+      "options": {
+        "en": [
+          "to fill up the tank",
+          "to be full after eating",
+          "to clean the car",
+          "to park"
+        ],
+        "es": [
+          "llenar el depósito",
+          "estar lleno tras comer",
+          "limpiar el coche",
+          "aparcar"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Le plein = full tank.",
+        "es": "Le plein = depósito lleno."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Ça fait des années que je conduis.\" Meaning?",
+        "es": "«Ça fait des années que je conduis.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I've been driving for years.",
+          "I drove years ago.",
+          "I haven't driven for years.",
+          "I will drive for years."
+        ],
+        "es": [
+          "Llevo años conduciendo.",
+          "Conduje hace años.",
+          "Hace años que no conduzco.",
+          "Conduciré durante años."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Ça fait … que + present = still true.",
+        "es": "Ça fait … que + presente = sigue siendo cierto."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"la caution\" at a rental agency?",
+        "es": "¿Qué es «la caution» en una agencia de alquiler?"
+      },
+      "options": {
+        "en": [
+          "the deposit",
+          "the caution sign",
+          "the insurance",
+          "the key"
+        ],
+        "es": [
+          "la fianza",
+          "la señal de precaución",
+          "el seguro",
+          "la llave"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Money held until you return the car.",
+        "es": "Dinero retenido hasta devolver el coche."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Jeter un coup d'œil\" means…",
+        "es": "«Jeter un coup d'œil» significa…"
+      },
+      "options": {
+        "en": [
+          "to take a quick look",
+          "to throw something",
+          "to hit someone",
+          "to close your eyes"
+        ],
+        "es": [
+          "echar un vistazo",
+          "tirar algo",
+          "pegar a alguien",
+          "cerrar los ojos"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Literally \"to throw a stroke of the eye\".",
+        "es": "Literalmente «lanzar un golpe de ojo»."
+      }
+    }
+  ],
+  "story": {
+    "title": "À l'agence de location",
+    "text": "Inès vient d'arriver à l'aéroport de Nice. Elle doit louer une voiture pour visiter la Provence. Le parking de l'agence est plein, et un employé s'approche. « Bonjour, je peux vous aider ? » « Oui, je voudrais louer une voiture pour deux semaines. » « Nous avons des voitures de luxe et des voitures plus simples. Vous avez déjà conduit en France ? » « Oui, ça fait des années que je voyage, mais je n'ai jamais conduit dans les montagnes. Comme je voyage seule, je n'ai pas besoin de beaucoup d'espace. Je cherche plutôt une voiture qui consomme peu et qui soit sûre. Qu'est-ce que vous me recommandez ? » « J'ai une petite citadine, toute neuve. Elle n'a fait que cinq cents kilomètres depuis qu'on l'a achetée. Si vous la louez plus d'une semaine, le kilométrage est illimité : vous pouvez conduire autant que vous voulez. Elle est livrée avec le plein, et vous pouvez la rendre dans n'importe quelle agence. » « Parfait ! Et l'assurance ? » « Bien qu'elle ne soit pas obligatoire, je vous conseille l'assurance tous risques. » « D'accord, je la prends ! »",
+    "en": "Inès has just arrived at Nice airport. She has to rent a car to visit Provence. The agency's parking lot is full, and an employee comes up to her. “Hello, can I help you?” “Yes, I'd like to rent a car for two weeks.” “We have luxury cars and simpler cars. Have you ever driven in France?” “Yes, I've been traveling for years, but I've never driven in the mountains. Since I travel alone, I don't need much space. I'm rather looking for a car that uses little gas and is safe. What do you recommend?” “I have a small city car, brand new. It has only done five hundred kilometers since we bought it. If you rent it for more than a week, the mileage is unlimited: you can drive as much as you want. It comes with a full tank, and you can return it to any of our agencies.” “Perfect! And the insurance?” “Although it isn't compulsory, I recommend full insurance.” “All right, I'll take it!”",
+    "es": "Inès acaba de llegar al aeropuerto de Niza. Tiene que alquilar un coche para visitar la Provenza. El aparcamiento de la agencia está lleno y se le acerca un empleado. «Buenos días, ¿puedo ayudarla?» «Sí, quisiera alquilar un coche para dos semanas.» «Tenemos coches de lujo y coches más sencillos. ¿Ha conducido alguna vez en Francia?» «Sí, llevo años viajando, pero nunca he conducido por la montaña. Como viajo sola, no necesito mucho espacio. Busco más bien un coche que consuma poco y que sea seguro. ¿Qué me recomienda?» «Tengo un utilitario pequeño, nuevecito. Solo ha hecho quinientos kilómetros desde que lo compramos. Si lo alquila más de una semana, el kilometraje es ilimitado: puede conducir tanto como quiera. Se entrega con el depósito lleno y puede devolverlo en cualquier agencia.» «¡Perfecto! ¿Y el seguro?» «Aunque no sea obligatorio, le aconsejo el seguro a todo riesgo.» «¡De acuerdo, me lo quedo!»",
+    "highlighted_words": [
+      "vient d'arriver",
+      "louer",
+      "Vous avez déjà conduit",
+      "ça fait des années que",
+      "je n'ai jamais conduit",
+      "qui soit sûre",
+      "depuis qu'on l'a achetée",
+      "kilométrage est illimité",
+      "autant que vous voulez",
+      "le plein",
+      "Bien qu'elle ne soit pas"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je voudrais louer une voiture",
+      "en": "I would like to rent a car",
+      "es": "Quisiera alquilar un coche"
+    },
+    {
+      "sentence": "Tu as déjà conduit en France",
+      "en": "Have you ever driven in France",
+      "es": "¿Has conducido alguna vez en Francia?"
+    },
+    {
+      "sentence": "Je n'ai jamais eu d'accident",
+      "en": "I have never had an accident",
+      "es": "Nunca he tenido un accidente"
+    },
+    {
+      "sentence": "Il faut faire le plein",
+      "en": "We need to fill up",
+      "es": "Hay que llenar el depósito"
+    },
+    {
+      "sentence": "Le kilométrage est illimité",
+      "en": "The mileage is unlimited",
+      "es": "El kilometraje es ilimitado"
+    },
+    {
+      "sentence": "Ça fait des années que je conduis",
+      "en": "I've been driving for years",
+      "es": "Llevo años conduciendo"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "La voiture est disponible",
+      "en": "The car is available",
+      "es": "El coche está disponible"
+    },
+    {
+      "answer": "Le réservoir est vide",
+      "en": "The tank is empty",
+      "es": "El depósito está vacío"
+    },
+    {
+      "answer": "Où est la station-service ?",
+      "en": "Where is the gas station?",
+      "es": "¿Dónde está la gasolinera?"
+    },
+    {
+      "answer": "Le pare-brise est cassé",
+      "en": "The windshield is broken",
+      "es": "El parabrisas está roto"
+    },
+    {
+      "answer": "Je vais rendre la voiture demain",
+      "en": "I'm going to return the car tomorrow",
+      "es": "Voy a devolver el coche mañana"
+    },
+    {
+      "answer": "Elle a toujours conduit prudemment",
+      "en": "She has always driven carefully",
+      "es": "Siempre ha conducido con prudencia"
+    }
+  ]
+}

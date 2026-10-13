@@ -1,0 +1,538 @@
+{
+  "lesson": 33,
+  "slug": "lecon-33",
+  "icon": "✈️",
+  "title": {
+    "fr": "Dans l'avion",
+    "es": "En el avión",
+    "en": "On the plane"
+  },
+  "source": {
+    "audio": "Lecons 33.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "futur simple (réguliers)",
+      "example": "L'avion atterrira dans dix minutes. L'hélicoptère décollera à six heures.",
+      "en": "Simple future (regular verbs)",
+      "es": "Futuro simple (verbos regulares)"
+    },
+    {
+      "structure": "futur simple (irréguliers)",
+      "example": "Nous aurons un atterrissage d'urgence. Je ferai n'importe quoi. Tu seras surpris.",
+      "en": "Irregular futures (avoir → aur-, être → ser-, faire → fer-)",
+      "es": "Futuros irregulares"
+    },
+    {
+      "structure": "dès que + futur",
+      "example": "Nous atterrirons dès que la tour de contrôle nous le permettra.",
+      "en": "\"As soon as\" + future",
+      "es": "«En cuanto» + futuro"
+    },
+    {
+      "structure": "si + présent → futur",
+      "example": "Je paierai les billets s'ils sont en classe économique.",
+      "en": "Real condition",
+      "es": "Condición real"
+    },
+    {
+      "structure": "n'est-ce pas ?",
+      "example": "C'est un bon avion, n'est-ce pas ?",
+      "en": "Tag questions",
+      "es": "Pregunta de confirmación"
+    },
+    {
+      "structure": "plutôt que",
+      "example": "Pourquoi voyagez-vous en classe économique plutôt qu'en première classe ?",
+      "en": "\"Rather than\"",
+      "es": "«En lugar de»"
+    },
+    {
+      "structure": "passé composé / plus-que-parfait",
+      "example": "J'avais oublié que j'avais toujours le mal de l'air.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The future stem is usually the infinitive (atterrir → j'atterrirai); -re verbs drop the -e (prendre → je prendrai). Irregular stems: aur-, ser-, fer-, ir-, pourr-, devr-, viendr-, verr-.",
+      "es": "La raíz del futuro suele ser el infinitivo (atterrir → j'atterrirai); los verbos en -re pierden la -e (prendre → je prendrai). Raíces irregulares: aur-, ser-, fer-, ir-, pourr-, devr-, viendr-, verr-."
+    },
+    {
+      "en": "Unlike Spanish, French uses the future after \"quand\" and \"dès que\" when talking about the future: \"Quand j'arriverai, je t'appellerai.\"",
+      "es": "A diferencia del español, el francés usa el futuro después de «quand» y «dès que» al hablar del futuro: «Quand j'arriverai, je t'appellerai.»"
+    },
+    {
+      "en": "\"Le mal de l'air\" = airsickness (\"le mal de mer\" = seasickness).",
+      "es": "«Le mal de l'air» = mareo en avión («le mal de mer» = mareo en barco)."
+    },
+    {
+      "en": "Cabin announcements: \"Attachez vos ceintures\", \"Redressez votre siège\", \"Les toilettes sont occupées\".",
+      "es": "Avisos en cabina: «Attachez vos ceintures», «Redressez votre siège», «Les toilettes sont occupées»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'avion",
+      "en": "the plane",
+      "es": "el avión"
+    },
+    {
+      "word": "l'hélicoptère",
+      "en": "the helicopter",
+      "es": "el helicóptero"
+    },
+    {
+      "word": "le pilote",
+      "en": "the pilot",
+      "es": "el piloto"
+    },
+    {
+      "word": "le commandant de bord",
+      "en": "the captain",
+      "es": "el comandante"
+    },
+    {
+      "word": "l'équipage",
+      "en": "the crew",
+      "es": "la tripulación"
+    },
+    {
+      "word": "l'hôtesse de l'air / le steward",
+      "en": "the flight attendant",
+      "es": "la azafata / el auxiliar de vuelo"
+    },
+    {
+      "word": "la cabine",
+      "en": "the cabin",
+      "es": "la cabina"
+    },
+    {
+      "word": "le compartiment à bagages",
+      "en": "the overhead bin",
+      "es": "el compartimento de equipaje"
+    },
+    {
+      "word": "le siège",
+      "en": "the seat",
+      "es": "el asiento"
+    },
+    {
+      "word": "le hublot",
+      "en": "the window (plane)",
+      "es": "la ventanilla"
+    },
+    {
+      "word": "le couloir",
+      "en": "the aisle",
+      "es": "el pasillo"
+    },
+    {
+      "word": "l'aile",
+      "en": "the wing",
+      "es": "el ala"
+    },
+    {
+      "word": "le moteur",
+      "en": "the engine",
+      "es": "el motor"
+    },
+    {
+      "word": "la tour de contrôle",
+      "en": "the control tower",
+      "es": "la torre de control"
+    },
+    {
+      "word": "le train d'atterrissage",
+      "en": "the landing gear",
+      "es": "el tren de aterrizaje"
+    },
+    {
+      "word": "l'atterrissage",
+      "en": "landing",
+      "es": "el aterrizaje"
+    },
+    {
+      "word": "le décollage",
+      "en": "takeoff",
+      "es": "el despegue"
+    },
+    {
+      "word": "la classe économique",
+      "en": "economy class",
+      "es": "la clase turista"
+    },
+    {
+      "word": "la première classe",
+      "en": "first class",
+      "es": "la primera clase"
+    },
+    {
+      "word": "le gilet de sauvetage",
+      "en": "the life jacket",
+      "es": "el chaleco salvavidas"
+    },
+    {
+      "word": "la ceinture de sécurité",
+      "en": "the seat belt",
+      "es": "el cinturón de seguridad"
+    },
+    {
+      "word": "le mal de l'air",
+      "en": "airsickness",
+      "es": "el mareo (en avión)"
+    },
+    {
+      "word": "les turbulences",
+      "en": "turbulence",
+      "es": "las turbulencias"
+    },
+    {
+      "word": "voler",
+      "en": "to fly",
+      "es": "volar"
+    },
+    {
+      "word": "atterrir",
+      "en": "to land",
+      "es": "aterrizar"
+    },
+    {
+      "word": "décoller",
+      "en": "to take off",
+      "es": "despegar"
+    },
+    {
+      "word": "d'urgence",
+      "en": "emergency",
+      "es": "de emergencia"
+    },
+    {
+      "word": "la couverture",
+      "en": "the blanket",
+      "es": "la manta"
+    },
+    {
+      "word": "le bruit",
+      "en": "the noise",
+      "es": "el ruido"
+    },
+    {
+      "word": "la nausée",
+      "en": "nausea",
+      "es": "las náuseas"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Attachez vos ceintures de sécurité, s'il vous plaît.",
+      "en": "Please fasten your seat belts.",
+      "es": "Abróchense el cinturón de seguridad, por favor."
+    },
+    {
+      "phrase": "Je ne prendrai pas ce petit avion : j'aurai le mal de l'air.",
+      "en": "I won't take that small plane: I'll get airsick.",
+      "es": "No tomaré esa avioneta: me voy a marear."
+    },
+    {
+      "phrase": "Mets ton sac dans le compartiment.",
+      "en": "Put your bag in the overhead bin.",
+      "es": "Pon tu bolso en el compartimento."
+    },
+    {
+      "phrase": "L'avion atterrira dans dix minutes.",
+      "en": "The plane will land in ten minutes.",
+      "es": "El avión aterrizará dentro de diez minutos."
+    },
+    {
+      "phrase": "Le mécanicien vérifiera le moteur.",
+      "en": "The mechanic will check the engine.",
+      "es": "El mecánico revisará el motor."
+    },
+    {
+      "phrase": "L'armée de l'air offrira un spectacle dimanche prochain.",
+      "en": "The air force will put on a show next Sunday.",
+      "es": "La fuerza aérea ofrecerá una exhibición el domingo que viene."
+    },
+    {
+      "phrase": "Attention, nous aurons un atterrissage d'urgence. Restez assis.",
+      "en": "Attention, we will have an emergency landing. Stay seated.",
+      "es": "Atención, haremos un aterrizaje de emergencia. Permanezcan sentados."
+    },
+    {
+      "phrase": "Je paierai les billets s'ils sont en classe économique.",
+      "en": "I'll pay for the tickets if they're in economy class.",
+      "es": "Pagaré los billetes si son en clase turista."
+    },
+    {
+      "phrase": "Nous atterrirons dès que la tour de contrôle nous le permettra.",
+      "en": "We will land as soon as the control tower allows us.",
+      "es": "Aterrizaremos en cuanto la torre de control nos lo permita."
+    },
+    {
+      "phrase": "Mademoiselle, pourriez-vous m'apporter une couverture ?",
+      "en": "Miss, could you bring me a blanket?",
+      "es": "Señorita, ¿podría traerme una manta?"
+    },
+    {
+      "phrase": "Ne vous inquiétez pas, madame : deux hôtesses s'occuperont de vos enfants.",
+      "en": "Don't worry, madam: two flight attendants will take care of your children.",
+      "es": "No se preocupe, señora: dos azafatas cuidarán de sus hijos."
+    },
+    {
+      "phrase": "Je vais acheter un petit avion. — Tu l'achèteras vraiment ? Pour quoi faire ?",
+      "en": "I'm going to buy a small plane. — Will you really buy it? What for?",
+      "es": "Voy a comprar una avioneta. — ¿De verdad la comprarás? ¿Para qué?"
+    },
+    {
+      "phrase": "Tu te sens bien ? — Non, j'avais oublié que j'avais toujours la nausée en avion.",
+      "en": "Do you feel OK? — No, I had forgotten I always feel sick on planes.",
+      "es": "¿Te encuentras bien? — No, había olvidado que siempre me mareo en avión."
+    },
+    {
+      "phrase": "Combien de temps durera le vol ? — Le pilote dit que nous arriverons dans dix heures.",
+      "en": "How long will the flight last? — The pilot says we will arrive in ten hours.",
+      "es": "¿Cuánto durará el vuelo? — El piloto dice que llegaremos dentro de diez horas."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"L'avion ___ dans dix minutes.\" (atterrir)",
+        "es": "Completa: «L'avion ___ dans dix minutes.» (atterrir)"
+      },
+      "options": [
+        "atterrira",
+        "atterrit",
+        "atterrissait",
+        "atterrirait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future: infinitive + -a.",
+        "es": "Futuro: infinitivo + -a."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the future of \"avoir\" with \"nous\"?",
+        "es": "¿Cuál es el futuro de «avoir» con «nous»?"
+      },
+      "options": [
+        "nous aurons",
+        "nous avrons",
+        "nous avons",
+        "nous aurions"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Irregular stem: aur-.",
+        "es": "Raíz irregular: aur-."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the future of \"faire\" with \"je\"?",
+        "es": "¿Cuál es el futuro de «faire» con «je»?"
+      },
+      "options": [
+        "je ferai",
+        "je fairai",
+        "je fais",
+        "je ferais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Irregular stem: fer-.",
+        "es": "Raíz irregular: fer-."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je t'appellerai dès que j'___.\"",
+        "es": "Completa: «Je t'appellerai dès que j'___.»"
+      },
+      "options": [
+        "arriverai",
+        "arrive",
+        "arrivais",
+        "arriverais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "French uses the future after \"dès que\" when the action is in the future.",
+        "es": "El francés usa futuro tras «dès que» cuando la acción es futura."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si le vol est en retard, nous ___ l'hôtel.\"",
+        "es": "Completa: «Si le vol est en retard, nous ___ l'hôtel.»"
+      },
+      "options": [
+        "appellerons",
+        "appellerions",
+        "appelions",
+        "avons appelé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + present → future.",
+        "es": "Si + presente → futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you put your bag on a plane?",
+        "es": "¿Dónde pones tu bolso en el avión?"
+      },
+      "options": [
+        "dans le compartiment à bagages",
+        "dans le train d'atterrissage",
+        "dans la tour de contrôle",
+        "sur l'aile"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le compartiment = overhead bin.",
+        "es": "Le compartiment = compartimento superior."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"le hublot\"?",
+        "es": "¿Qué es «le hublot»?"
+      },
+      "options": {
+        "en": [
+          "the plane window",
+          "the aisle",
+          "the wing",
+          "the engine"
+        ],
+        "es": [
+          "la ventanilla del avión",
+          "el pasillo",
+          "el ala",
+          "el motor"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Window seat = côté hublot; aisle seat = côté couloir.",
+        "es": "Asiento de ventanilla = côté hublot; de pasillo = côté couloir."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Plutôt qu'en première classe\" means…",
+        "es": "«Plutôt qu'en première classe» significa…"
+      },
+      "options": {
+        "en": [
+          "rather than in first class",
+          "more than first class",
+          "only in first class",
+          "before first class"
+        ],
+        "es": [
+          "en lugar de en primera clase",
+          "más que la primera clase",
+          "solo en primera clase",
+          "antes de la primera clase"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Plutôt que\" = rather than.",
+        "es": "«Plutôt que» = en lugar de."
+      }
+    }
+  ],
+  "story": {
+    "title": "Un voisin de siège",
+    "text": "« Bienvenue à bord du vol 218 à destination de Montréal. Restez assis pendant que les passagers rangent leurs bagages. Nous décollerons dans cinq minutes. Attachez vos ceintures et redressez vos sièges. Nous vous souhaitons un agréable vol. » Clara est assise côté hublot, en classe économique. À côté d'elle, un homme âgé regarde l'aile avec un grand sourire. « Excusez-moi, monsieur, quelle heure est-il ? » « Il est midi pile. C'est un bel avion, n'est-ce pas ? » Clara le regarde mieux. « Je vous connais… Vous n'êtes pas le chef Paul Morin, de la télévision ? » « Si, c'est moi ! » « Mais pourquoi voyagez-vous en classe économique plutôt qu'en première classe ? » « J'aime être près de l'aile et entendre le moteur. Et puis ici, on rencontre des gens intéressants ! » Clara rit. « Moi, je ferai n'importe quoi pour devenir cheffe un jour. » « Alors, quand nous arriverons, je vous donnerai l'adresse de mon restaurant. Si vous venez me voir, je vous montrerai la cuisine. » « Vous le ferez vraiment ? » « Bien sûr ! L'argent n'est pas tout dans la vie. »",
+    "en": "“Welcome aboard flight 218 to Montreal. Please remain seated while passengers stow their luggage. We will take off in five minutes. Fasten your seat belts and put your seats in the upright position. We wish you a pleasant flight.” Clara is sitting by the window, in economy class. Next to her, an elderly man is looking at the wing with a big smile. “Excuse me, sir, what time is it?” “It's noon sharp. It's a beautiful plane, isn't it?” Clara takes a closer look at him. “I know you… Aren't you chef Paul Morin, from TV?” “Yes, that's me!” “But why are you flying economy rather than first class?” “I like being near the wing and hearing the engine. And besides, you meet interesting people here!” Clara laughs. “I'll do anything to become a chef one day.” “Then when we arrive, I'll give you the address of my restaurant. If you come and see me, I'll show you the kitchen.” “Will you really do that?” “Of course! Money isn't everything in life.”",
+    "es": "«Bienvenidos a bordo del vuelo 218 con destino a Montreal. Permanezcan sentados mientras los pasajeros guardan su equipaje. Despegaremos dentro de cinco minutos. Abróchense los cinturones y pongan el respaldo en posición vertical. Les deseamos un feliz vuelo.» Clara está sentada junto a la ventanilla, en clase turista. A su lado, un señor mayor mira el ala con una gran sonrisa. «Disculpe, señor, ¿qué hora es?» «Son las doce en punto. Es un avión precioso, ¿verdad?» Clara lo mira mejor. «Lo conozco… ¿No es usted el chef Paul Morin, el de la televisión?» «¡Sí, soy yo!» «Pero ¿por qué viaja en clase turista en lugar de en primera?» «Me gusta estar cerca del ala y oír el motor. ¡Y además aquí se conoce a gente interesante!» Clara se ríe. «Yo haré lo que sea para ser chef algún día.» «Entonces, cuando lleguemos, le daré la dirección de mi restaurante. Si viene a verme, le enseñaré la cocina.» «¿De verdad lo hará?» «¡Por supuesto! El dinero no lo es todo en la vida.»",
+    "highlighted_words": [
+      "décollerons",
+      "Attachez vos ceintures",
+      "hublot",
+      "classe économique",
+      "n'est-ce pas",
+      "plutôt qu'en première classe",
+      "ferai",
+      "quand nous arriverons",
+      "donnerai",
+      "Si vous venez",
+      "montrerai",
+      "ferez"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "L'avion atterrira bientôt",
+      "en": "The plane will land soon",
+      "es": "El avión aterrizará pronto"
+    },
+    {
+      "sentence": "Attachez vos ceintures",
+      "en": "Fasten your seat belts",
+      "es": "Abróchense los cinturones"
+    },
+    {
+      "sentence": "Je voyagerai en classe économique",
+      "en": "I will travel in economy class",
+      "es": "Viajaré en clase turista"
+    },
+    {
+      "sentence": "Nous partirons dès que possible",
+      "en": "We will leave as soon as possible",
+      "es": "Saldremos lo antes posible"
+    },
+    {
+      "sentence": "C'est un bel avion n'est-ce pas",
+      "en": "It's a beautiful plane isn't it",
+      "es": "Es un avión precioso, ¿verdad?"
+    },
+    {
+      "sentence": "Je t'appellerai quand j'arriverai",
+      "en": "I'll call you when I arrive",
+      "es": "Te llamaré cuando llegue"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "L'avion décollera à midi",
+      "en": "The plane will take off at noon",
+      "es": "El avión despegará a mediodía"
+    },
+    {
+      "answer": "Les toilettes sont occupées",
+      "en": "The restroom is occupied",
+      "es": "El baño está ocupado"
+    },
+    {
+      "answer": "Pourriez-vous m'apporter de l'eau ?",
+      "en": "Could you bring me some water?",
+      "es": "¿Podría traerme agua?"
+    },
+    {
+      "answer": "J'ai le mal de l'air",
+      "en": "I'm airsick",
+      "es": "Estoy mareado"
+    },
+    {
+      "answer": "Nous arriverons dans deux heures",
+      "en": "We will arrive in two hours",
+      "es": "Llegaremos dentro de dos horas"
+    },
+    {
+      "answer": "Je ferai de mon mieux",
+      "en": "I will do my best",
+      "es": "Haré todo lo posible"
+    }
+  ]
+}

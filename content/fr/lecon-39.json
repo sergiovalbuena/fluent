@@ -1,0 +1,557 @@
+{
+  "lesson": 39,
+  "slug": "lecon-39",
+  "icon": "🛍️",
+  "title": {
+    "fr": "Faire les courses et du shopping",
+    "es": "Ir de compras",
+    "en": "Shopping"
+  },
+  "source": {
+    "audio": "Lecons 39.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "futur antérieur",
+      "example": "Quand tu viendras nous chercher, nous aurons fait des achats pendant une heure.",
+      "en": "Future perfect",
+      "es": "Futuro compuesto"
+    },
+    {
+      "structure": "quand + futur antérieur",
+      "example": "Quand tu auras décidé, on aura vendu les bijoux.",
+      "en": "Completed future actions",
+      "es": "Acciones futuras terminadas"
+    },
+    {
+      "structure": "futur antérieur (probabilité)",
+      "example": "Elle aura sûrement acheté la nourriture avant ton arrivée.",
+      "en": "Probability / assumption",
+      "es": "Probabilidad / suposición"
+    },
+    {
+      "structure": "conditionnel passé",
+      "example": "Tu aurais trouvé le cadeau parfait si tu avais cherché dans un autre rayon.",
+      "en": "Past conditional",
+      "es": "Condicional compuesto"
+    },
+    {
+      "structure": "avant que + subjonctif",
+      "example": "Le vendeur aura vendu la robe avant que tu puisses l'acheter.",
+      "en": "\"Before\" + subjunctive",
+      "es": "«Antes de que» + subjuntivo"
+    },
+    {
+      "structure": "aller à quelqu'un",
+      "example": "Ces pantalons ne lui iront pas.",
+      "en": "\"To fit / suit\"",
+      "es": "«Quedarle bien»"
+    },
+    {
+      "structure": "parce que / car / puisque",
+      "example": "Je n'achète rien, puisque tout est trop cher.",
+      "en": "Giving reasons",
+      "es": "Dar razones"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Faire les courses\" = grocery shopping; \"faire du shopping / des achats\" = clothes or other shopping; \"faire du lèche-vitrine\" = window-shopping.",
+      "es": "«Faire les courses» = hacer la compra; «faire du shopping / des achats» = ir de compras; «faire du lèche-vitrine» = mirar escaparates."
+    },
+    {
+      "en": "Sizes: \"la taille\" for clothes (S, M, L), \"la pointure\" for shoes (\"Vous faites quelle pointure ?\").",
+      "es": "Tallas: «la taille» para la ropa (S, M, L), «la pointure» para el calzado («Vous faites quelle pointure ?»)."
+    },
+    {
+      "en": "\"Déteindre\" = to run (colors); \"rétrécir\" = to shrink. Check the label: \"lavable en machine\".",
+      "es": "«Déteindre» = desteñir; «rétrécir» = encoger. Mira la etiqueta: «lavable en machine»."
+    },
+    {
+      "en": "In France, \"les soldes\" (sales) happen twice a year, in January and in summer, on dates set by law.",
+      "es": "En Francia, «les soldes» (rebajas) se hacen dos veces al año, en enero y en verano, en fechas fijadas por ley."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "faire les courses",
+      "en": "to do the grocery shopping",
+      "es": "hacer la compra"
+    },
+    {
+      "word": "faire du shopping",
+      "en": "to go shopping",
+      "es": "ir de compras"
+    },
+    {
+      "word": "faire du lèche-vitrine",
+      "en": "to window-shop",
+      "es": "mirar escaparates"
+    },
+    {
+      "word": "le magasin",
+      "en": "the store",
+      "es": "la tienda"
+    },
+    {
+      "word": "la grande surface",
+      "en": "the hypermarket",
+      "es": "el hipermercado"
+    },
+    {
+      "word": "le centre commercial",
+      "en": "the shopping mall",
+      "es": "el centro comercial"
+    },
+    {
+      "word": "le rayon",
+      "en": "the department / aisle",
+      "es": "la sección"
+    },
+    {
+      "word": "la vitrine",
+      "en": "the shop window",
+      "es": "el escaparate"
+    },
+    {
+      "word": "le vendeur / la vendeuse",
+      "en": "the salesperson",
+      "es": "el vendedor / la vendedora"
+    },
+    {
+      "word": "la caisse",
+      "en": "the checkout",
+      "es": "la caja"
+    },
+    {
+      "word": "acheter",
+      "en": "to buy",
+      "es": "comprar"
+    },
+    {
+      "word": "choisir",
+      "en": "to choose",
+      "es": "elegir"
+    },
+    {
+      "word": "essayer",
+      "en": "to try on",
+      "es": "probarse"
+    },
+    {
+      "word": "la cabine d'essayage",
+      "en": "the fitting room",
+      "es": "el probador"
+    },
+    {
+      "word": "la taille",
+      "en": "size (clothes)",
+      "es": "la talla"
+    },
+    {
+      "word": "la pointure",
+      "en": "shoe size",
+      "es": "el número (de calzado)"
+    },
+    {
+      "word": "petit / moyen / grand",
+      "en": "small / medium / large",
+      "es": "pequeño / mediano / grande"
+    },
+    {
+      "word": "extra-large",
+      "en": "extra large",
+      "es": "extragrande"
+    },
+    {
+      "word": "rendre / rapporter",
+      "en": "to return (an item)",
+      "es": "devolver"
+    },
+    {
+      "word": "échanger",
+      "en": "to exchange",
+      "es": "cambiar"
+    },
+    {
+      "word": "le ticket de caisse",
+      "en": "the receipt",
+      "es": "el tique de compra"
+    },
+    {
+      "word": "les soldes",
+      "en": "the sales",
+      "es": "las rebajas"
+    },
+    {
+      "word": "la réduction",
+      "en": "the discount",
+      "es": "el descuento"
+    },
+    {
+      "word": "le cadeau",
+      "en": "the gift",
+      "es": "el regalo"
+    },
+    {
+      "word": "les bijoux",
+      "en": "jewelry",
+      "es": "las joyas"
+    },
+    {
+      "word": "lavable",
+      "en": "washable",
+      "es": "lavable"
+    },
+    {
+      "word": "déteindre",
+      "en": "to run (color)",
+      "es": "desteñir"
+    },
+    {
+      "word": "rétrécir",
+      "en": "to shrink",
+      "es": "encoger"
+    },
+    {
+      "word": "deviner",
+      "en": "to guess",
+      "es": "adivinar"
+    },
+    {
+      "word": "supposer",
+      "en": "to suppose",
+      "es": "suponer"
+    },
+    {
+      "word": "attirant / attirante",
+      "en": "attractive",
+      "es": "atractivo / atractiva"
+    },
+    {
+      "word": "facile",
+      "en": "easy",
+      "es": "fácil"
+    },
+    {
+      "word": "puisque",
+      "en": "since",
+      "es": "puesto que"
+    },
+    {
+      "word": "car",
+      "en": "because / for",
+      "es": "pues / porque"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Quand tu viendras nous chercher, nous aurons fait des achats pendant une heure.",
+      "en": "When you come to pick us up, we will have been shopping for an hour.",
+      "es": "Cuando vengas a buscarnos, habremos estado de compras una hora."
+    },
+    {
+      "phrase": "Elle aura sûrement acheté la nourriture avant ton arrivée.",
+      "en": "She will surely have bought the food before you arrive.",
+      "es": "Seguramente habrá comprado la comida antes de que llegues."
+    },
+    {
+      "phrase": "Il aura apporté les vêtements des enfants quand tu seras de retour.",
+      "en": "He will have brought the children's clothes by the time you get back.",
+      "es": "Habrá traído la ropa de los niños cuando vuelvas."
+    },
+    {
+      "phrase": "Tu aurais trouvé le cadeau parfait si tu avais cherché dans un autre rayon.",
+      "en": "You would have found the perfect gift if you had looked in another department.",
+      "es": "Habrías encontrado el regalo perfecto si hubieras buscado en otra sección."
+    },
+    {
+      "phrase": "Quand tu le sortiras de la machine, la couleur aura déteint.",
+      "en": "When you take it out of the machine, the color will have run.",
+      "es": "Cuando lo saques de la lavadora, el color se habrá desteñido."
+    },
+    {
+      "phrase": "Après le lavage, ton tee-shirt aura rétréci.",
+      "en": "After the wash, your T-shirt will have shrunk.",
+      "es": "Después del lavado, tu camiseta habrá encogido."
+    },
+    {
+      "phrase": "Le vendeur aura vendu la robe avant que tu puisses l'acheter.",
+      "en": "The salesman will have sold the dress before you can buy it.",
+      "es": "El vendedor habrá vendido el vestido antes de que puedas comprarlo."
+    },
+    {
+      "phrase": "Nous serons de retour à la maison avant papa.",
+      "en": "We will be back home before Dad.",
+      "es": "Volveremos a casa antes que papá."
+    },
+    {
+      "phrase": "Auriez-vous ce tee-shirt en grande taille ? — Que pensez-vous d'un M ?",
+      "en": "Would you have this T-shirt in a large size? — What do you think of an M?",
+      "es": "¿Tendría esta camiseta en talla grande? — ¿Qué le parece una M?"
+    },
+    {
+      "phrase": "Tu vas acheter ce pantalon pour ton père ? — Je ne sais pas, il ne lui ira peut-être pas.",
+      "en": "Are you going to buy these trousers for your father? — I don't know, they may not fit him.",
+      "es": "¿Vas a comprarle este pantalón a tu padre? — No sé, quizá no le quede bien."
+    },
+    {
+      "phrase": "Vous faites quelle pointure ? — Du trente-huit.",
+      "en": "What shoe size are you? — A thirty-eight.",
+      "es": "¿Qué número calza? — Un treinta y ocho."
+    },
+    {
+      "phrase": "Je voudrais rapporter ce pull. Voici le ticket de caisse.",
+      "en": "I would like to return this sweater. Here is the receipt.",
+      "es": "Quisiera devolver este jersey. Aquí tiene el tique."
+    },
+    {
+      "phrase": "Samedi, je vais faire du lèche-vitrine avec ma sœur.",
+      "en": "On Saturday, I'm going window-shopping with my sister.",
+      "es": "El sábado voy a mirar escaparates con mi hermana."
+    },
+    {
+      "phrase": "Je n'achète rien, puisque tout est trop cher.",
+      "en": "I'm not buying anything, since everything is too expensive.",
+      "es": "No compro nada, puesto que todo es demasiado caro."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Quand tu reviendras, j'___ les cadeaux.\" (acheter)",
+        "es": "Completa: «Quand tu reviendras, j'___ les cadeaux.» (acheter)"
+      },
+      "options": [
+        "aurai acheté",
+        "achèterai",
+        "ai acheté",
+        "aurais acheté"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Futur antérieur: completed before you come back.",
+        "es": "Futur antérieur: terminado antes de que vuelvas."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Elle aura oublié son portefeuille.\" Here the futur antérieur expresses…",
+        "es": "«Elle aura oublié son portefeuille.» Aquí el futur antérieur expresa…"
+      },
+      "options": {
+        "en": [
+          "a probable assumption",
+          "an order",
+          "a wish",
+          "a habit"
+        ],
+        "es": [
+          "una suposición probable",
+          "una orden",
+          "un deseo",
+          "un hábito"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"She must have forgotten her wallet.\"",
+        "es": "«Se habrá olvidado la cartera.»"
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Tu ___ le cadeau si tu avais cherché ailleurs.\"",
+        "es": "Completa: «Tu ___ le cadeau si tu avais cherché ailleurs.»"
+      },
+      "options": [
+        "aurais trouvé",
+        "aurai trouvé",
+        "avais trouvé",
+        "trouverais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + plus-que-parfait → conditionnel passé.",
+        "es": "Si + plus-que-parfait → conditionnel passé."
+      }
+    },
+    {
+      "question": {
+        "en": "What do you ask for shoes?",
+        "es": "¿Qué preguntas para los zapatos?"
+      },
+      "options": [
+        "Quelle pointure ?",
+        "Quelle taille ?",
+        "Quel numéro de téléphone ?",
+        "Quelle mesure ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Pointure = shoe size.",
+        "es": "Pointure = número de calzado."
+      }
+    },
+    {
+      "question": {
+        "en": "What happens to a wool sweater washed too hot?",
+        "es": "¿Qué le pasa a un jersey de lana lavado demasiado caliente?"
+      },
+      "options": [
+        "Il rétrécit.",
+        "Il grandit.",
+        "Il brille.",
+        "Il sèche."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Rétrécir = to shrink.",
+        "es": "Rétrécir = encoger."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il aura vendu la robe avant que tu ___ l'acheter.\"",
+        "es": "Completa: «Il aura vendu la robe avant que tu ___ l'acheter.»"
+      },
+      "options": [
+        "puisses",
+        "peux",
+        "pourras",
+        "pouvais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avant que\" + subjunctive.",
+        "es": "«Avant que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Faire du lèche-vitrine\" means…",
+        "es": "«Faire du lèche-vitrine» significa…"
+      },
+      "options": {
+        "en": [
+          "to window-shop",
+          "to clean windows",
+          "to buy a lot",
+          "to lick ice cream"
+        ],
+        "es": [
+          "mirar escaparates",
+          "limpiar ventanas",
+          "comprar mucho",
+          "chupar un helado"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Literally \"to lick the windows\"!",
+        "es": "¡Literalmente «lamer los escaparates»!"
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Ce pantalon ne lui ___ pas.\" (fit him)",
+        "es": "Completa: «Ce pantalon ne lui ___ pas.» (le quedará bien)"
+      },
+      "options": [
+        "ira",
+        "allera",
+        "va aller à",
+        "ira à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Aller → il ira (future).",
+        "es": "Aller → il ira (futuro)."
+      }
+    }
+  ],
+  "story": {
+    "title": "Ma sœur et les soldes",
+    "text": "Demain, c'est le premier jour des soldes, et ma sœur Zoé va faire du shopping. Si je ne fais pas attention, elle aura dépensé tout son salaire avant midi ! Les vendeuses l'adorent… ou plutôt, elles adorent sa carte bancaire. Je crois qu'elle oublie tout quand elle entre dans un centre commercial. Elle achète beaucoup de vêtements, mais comme elle ne lit jamais les étiquettes, les couleurs déteignent et les pulls rétrécissent. Parfois, elle ne sait pas quoi choisir, alors elle prend tout. Ma grand-mère dit qu'elle était exactement pareille quand elle était jeune. Moi, demain à midi, j'irai dans deux magasins et j'achèterai peut-être un tee-shirt. Zoé, par contre, aura parcouru tout le centre commercial et aura rempli trois sacs. Quand je rentrerai, elle aura déjà essayé tous ses nouveaux vêtements devant le miroir. Le bon côté ? Quand elle se fatigue de ses vêtements, elle me les donne. Le problème, c'est qu'ils ne me vont presque jamais ! Si elle m'avait demandé ma taille, elle aurait pu m'acheter quelque chose. Bon, allons faire les soldes !",
+    "en": "Tomorrow is the first day of the sales, and my sister Zoé is going shopping. If I'm not careful, she'll have spent her whole salary before noon! The salespeople love her… or rather, they love her bank card. I think she forgets everything when she walks into a shopping mall. She buys a lot of clothes, but since she never reads the labels, the colors run and the sweaters shrink. Sometimes she doesn't know what to choose, so she takes everything. My grandmother says she was exactly the same when she was young. As for me, tomorrow at noon, I'll go to two stores and maybe buy a T-shirt. Zoé, on the other hand, will have gone through the whole mall and filled three bags. When I get home, she'll already have tried on all her new clothes in front of the mirror. The good side? When she gets tired of her clothes, she gives them to me. The problem is that they almost never fit me! If she had asked me my size, she could have bought me something. Well, let's go to the sales!",
+    "es": "Mañana es el primer día de rebajas y mi hermana Zoé va a ir de compras. ¡Si no tengo cuidado, se habrá gastado todo el sueldo antes de mediodía! Las vendedoras la adoran… o más bien adoran su tarjeta bancaria. Creo que se olvida de todo cuando entra en un centro comercial. Compra mucha ropa, pero como nunca lee las etiquetas, los colores destiñen y los jerséis encogen. A veces no sabe qué elegir, así que se lo lleva todo. Mi abuela dice que ella era exactamente igual cuando era joven. Yo, mañana a mediodía, iré a dos tiendas y quizá me compre una camiseta. Zoé, en cambio, habrá recorrido todo el centro comercial y habrá llenado tres bolsas. Cuando yo vuelva, ya se habrá probado toda su ropa nueva delante del espejo. ¿Lo bueno? Cuando se cansa de su ropa, me la da. El problema es que casi nunca me queda bien. Si me hubiera preguntado mi talla, podría haberme comprado algo. Bueno, ¡vamos de rebajas!",
+    "highlighted_words": [
+      "soldes",
+      "elle aura dépensé",
+      "déteignent",
+      "rétrécissent",
+      "aura parcouru",
+      "aura rempli",
+      "Quand je rentrerai",
+      "aura déjà essayé",
+      "ne me vont presque jamais",
+      "Si elle m'avait demandé",
+      "aurait pu"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Quand tu arriveras j'aurai fini mes achats",
+      "en": "When you arrive I'll have finished my shopping",
+      "es": "Cuando llegues, habré terminado mis compras"
+    },
+    {
+      "sentence": "Ce pantalon ne te va pas",
+      "en": "These trousers don't suit you",
+      "es": "Este pantalón no te queda bien"
+    },
+    {
+      "sentence": "Je voudrais rapporter cette robe",
+      "en": "I would like to return this dress",
+      "es": "Quisiera devolver este vestido"
+    },
+    {
+      "sentence": "Vous faites quelle pointure",
+      "en": "What shoe size are you",
+      "es": "¿Qué número calza?"
+    },
+    {
+      "sentence": "Mon pull a rétréci",
+      "en": "My sweater has shrunk",
+      "es": "Mi jersey ha encogido"
+    },
+    {
+      "sentence": "Allons faire du lèche-vitrine",
+      "en": "Let's go window-shopping",
+      "es": "Vamos a mirar escaparates"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je peux l'essayer ?",
+      "en": "Can I try it on?",
+      "es": "¿Me lo puedo probar?"
+    },
+    {
+      "answer": "Avez-vous une taille plus petite ?",
+      "en": "Do you have a smaller size?",
+      "es": "¿Tiene una talla más pequeña?"
+    },
+    {
+      "answer": "C'est en solde",
+      "en": "It's on sale",
+      "es": "Está rebajado"
+    },
+    {
+      "answer": "Où sont les cabines d'essayage ?",
+      "en": "Where are the fitting rooms?",
+      "es": "¿Dónde están los probadores?"
+    },
+    {
+      "answer": "Elle aura tout acheté",
+      "en": "She will have bought everything",
+      "es": "Lo habrá comprado todo"
+    },
+    {
+      "answer": "Je fais les courses le samedi",
+      "en": "I do the grocery shopping on Saturdays",
+      "es": "Hago la compra los sábados"
+    }
+  ]
+}

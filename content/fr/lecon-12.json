@@ -1,0 +1,585 @@
+{
+  "lesson": 12,
+  "slug": "lecon-12",
+  "icon": "💼",
+  "title": {
+    "fr": "Les professions et les métiers",
+    "es": "Las profesiones y los oficios",
+    "en": "Jobs and professions"
+  },
+  "source": {
+    "audio": "Lecons 12.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "féminin des professions",
+      "example": "un acteur / une actrice, un chanteur / une chanteuse",
+      "en": "Feminine forms of jobs",
+      "es": "Femenino de las profesiones"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Tu seras reçu par le meilleur chirurgien. / Je serai dessinateur.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "conditionnel",
+      "example": "J'aimerais être écologiste. / Tu devrais être poète.",
+      "en": "Conditional (wishes, advice)",
+      "es": "Condicional (deseos, consejos)"
+    },
+    {
+      "structure": "vouloir que + subjonctif",
+      "example": "Mon père voudrait que je sois médecin.",
+      "en": "Wanting someone to do something",
+      "es": "Querer que alguien haga algo"
+    },
+    {
+      "structure": "si + imparfait → conditionnel",
+      "example": "Que se passerait-il si je décidais de devenir chanteur ?",
+      "en": "Hypothesis",
+      "es": "Hipótesis"
+    },
+    {
+      "structure": "passé composé / imparfait",
+      "example": "J'ai été serveur. / Je travaille depuis que j'étais petit.",
+      "en": "Past tenses",
+      "es": "Tiempos del pasado"
+    },
+    {
+      "structure": "voix passive",
+      "example": "Un marin a été surpris par la tempête.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    },
+    {
+      "structure": "c'est … qui",
+      "example": "C'est notre agent de voyage qui l'a trouvé.",
+      "en": "Cleft sentences (emphasis)",
+      "es": "Frases enfáticas"
+    },
+    {
+      "structure": "être sur le point de",
+      "example": "J'étais sur le point de me noyer.",
+      "en": "\"To be about to\"",
+      "es": "«Estar a punto de»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "No article before a job after \"être\": \"Il est médecin\" (not \"un médecin\"). But \"C'est un bon médecin\" with an adjective.",
+      "es": "Sin artículo delante de una profesión después de «être»: «Il est médecin» (no «un médecin»). Pero «C'est un bon médecin» con adjetivo."
+    },
+    {
+      "en": "Feminine endings: -eur → -euse (vendeuse), -teur → -trice (actrice), -ien → -ienne (musicienne). Many are now also used as is: \"une médecin\", \"une professeure\".",
+      "es": "Terminaciones femeninas: -eur → -euse (vendeuse), -teur → -trice (actrice), -ien → -ienne (musicienne). Muchas se usan hoy tal cual: «une médecin», «une professeure»."
+    },
+    {
+      "en": "\"Qu'est-ce que tu fais dans la vie ?\" is the natural way to ask someone's job.",
+      "es": "«Qu'est-ce que tu fais dans la vie ?» es la forma natural de preguntar la profesión."
+    },
+    {
+      "en": "\"Aller chez le coiffeur / le médecin\" — use \"chez\" with people, \"à\" with places: \"à la banque\".",
+      "es": "«Aller chez le coiffeur / le médecin»: «chez» con personas, «à» con lugares: «à la banque»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le / la comptable",
+      "en": "accountant",
+      "es": "contable"
+    },
+    {
+      "word": "un acteur / une actrice",
+      "en": "actor / actress",
+      "es": "actor / actriz"
+    },
+    {
+      "word": "un architecte",
+      "en": "architect",
+      "es": "arquitecto"
+    },
+    {
+      "word": "un avocat / une avocate",
+      "en": "lawyer",
+      "es": "abogado / abogada"
+    },
+    {
+      "word": "un boucher / une bouchère",
+      "en": "butcher",
+      "es": "carnicero / carnicera"
+    },
+    {
+      "word": "un chauffeur",
+      "en": "driver",
+      "es": "chófer / conductor"
+    },
+    {
+      "word": "un chirurgien / une chirurgienne",
+      "en": "surgeon",
+      "es": "cirujano / cirujana"
+    },
+    {
+      "word": "un coiffeur / une coiffeuse",
+      "en": "hairdresser",
+      "es": "peluquero / peluquera"
+    },
+    {
+      "word": "un cuisinier / une cuisinière",
+      "en": "cook",
+      "es": "cocinero / cocinera"
+    },
+    {
+      "word": "un / une dentiste",
+      "en": "dentist",
+      "es": "dentista"
+    },
+    {
+      "word": "un dessinateur / une dessinatrice",
+      "en": "illustrator / draftsman",
+      "es": "dibujante"
+    },
+    {
+      "word": "un électricien",
+      "en": "electrician",
+      "es": "electricista"
+    },
+    {
+      "word": "un entraîneur",
+      "en": "coach",
+      "es": "entrenador"
+    },
+    {
+      "word": "un épicier",
+      "en": "grocer",
+      "es": "tendero"
+    },
+    {
+      "word": "un / une fleuriste",
+      "en": "florist",
+      "es": "florista"
+    },
+    {
+      "word": "un infirmier / une infirmière",
+      "en": "nurse",
+      "es": "enfermero / enfermera"
+    },
+    {
+      "word": "un ingénieur",
+      "en": "engineer",
+      "es": "ingeniero"
+    },
+    {
+      "word": "un jardinier",
+      "en": "gardener",
+      "es": "jardinero"
+    },
+    {
+      "word": "un / une journaliste",
+      "en": "journalist",
+      "es": "periodista"
+    },
+    {
+      "word": "un marin",
+      "en": "sailor",
+      "es": "marinero"
+    },
+    {
+      "word": "un mécanicien",
+      "en": "mechanic",
+      "es": "mecánico"
+    },
+    {
+      "word": "un menuisier",
+      "en": "carpenter",
+      "es": "carpintero"
+    },
+    {
+      "word": "un musicien / une musicienne",
+      "en": "musician",
+      "es": "músico / música"
+    },
+    {
+      "word": "un paysan / une paysanne",
+      "en": "farmer",
+      "es": "campesino / campesina"
+    },
+    {
+      "word": "un peintre",
+      "en": "painter",
+      "es": "pintor"
+    },
+    {
+      "word": "un pharmacien",
+      "en": "pharmacist",
+      "es": "farmacéutico"
+    },
+    {
+      "word": "un / une photographe",
+      "en": "photographer",
+      "es": "fotógrafo / fotógrafa"
+    },
+    {
+      "word": "un / une pilote",
+      "en": "pilot",
+      "es": "piloto"
+    },
+    {
+      "word": "un plombier",
+      "en": "plumber",
+      "es": "fontanero / plomero"
+    },
+    {
+      "word": "un policier / une policière",
+      "en": "police officer",
+      "es": "policía"
+    },
+    {
+      "word": "un pompier",
+      "en": "firefighter",
+      "es": "bombero"
+    },
+    {
+      "word": "un / une psychologue",
+      "en": "psychologist",
+      "es": "psicólogo / psicóloga"
+    },
+    {
+      "word": "un / une secrétaire",
+      "en": "secretary",
+      "es": "secretario / secretaria"
+    },
+    {
+      "word": "un serveur / une serveuse",
+      "en": "waiter / waitress",
+      "es": "camarero / camarera"
+    },
+    {
+      "word": "un vendeur / une vendeuse",
+      "en": "salesperson",
+      "es": "vendedor / vendedora"
+    },
+    {
+      "word": "un / une vétérinaire",
+      "en": "veterinarian",
+      "es": "veterinario / veterinaria"
+    },
+    {
+      "word": "un écrivain",
+      "en": "writer",
+      "es": "escritor"
+    },
+    {
+      "word": "un chanteur / une chanteuse",
+      "en": "singer",
+      "es": "cantante"
+    },
+    {
+      "word": "un agent de voyage",
+      "en": "travel agent",
+      "es": "agente de viajes"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Tu es une bonne dentiste et il est un excellent médecin.",
+      "en": "You are a good dentist and he is an excellent doctor.",
+      "es": "Eres una buena dentista y él es un médico excelente."
+    },
+    {
+      "phrase": "Tu seras reçu par le meilleur chirurgien.",
+      "en": "You will be seen by the best surgeon.",
+      "es": "Te atenderá el mejor cirujano."
+    },
+    {
+      "phrase": "Les infirmières aident les médecins.",
+      "en": "Nurses help doctors.",
+      "es": "Las enfermeras ayudan a los médicos."
+    },
+    {
+      "phrase": "Les pompiers sont très importants pour la ville.",
+      "en": "Firefighters are very important for the city.",
+      "es": "Los bomberos son muy importantes para la ciudad."
+    },
+    {
+      "phrase": "Tes cheveux sont trop longs : va chez le coiffeur !",
+      "en": "Your hair is too long: go to the hairdresser!",
+      "es": "Tienes el pelo demasiado largo: ¡ve a la peluquería!"
+    },
+    {
+      "phrase": "Papa, tu es le meilleur cuisinier du monde.",
+      "en": "Dad, you are the best cook in the world.",
+      "es": "Papá, eres el mejor cocinero del mundo."
+    },
+    {
+      "phrase": "Victor Hugo est un grand écrivain.",
+      "en": "Victor Hugo is a great writer.",
+      "es": "Victor Hugo es un gran escritor."
+    },
+    {
+      "phrase": "C'est notre agent de voyage qui a trouvé cet hôtel.",
+      "en": "It was our travel agent who found this hotel.",
+      "es": "Fue nuestro agente de viajes quien encontró este hotel."
+    },
+    {
+      "phrase": "Le plombier répare les tuyaux de la maison.",
+      "en": "The plumber repairs the pipes in the house.",
+      "es": "El fontanero repara las tuberías de la casa."
+    },
+    {
+      "phrase": "L'architecte dessine le bâtiment que l'ingénieur construit.",
+      "en": "The architect designs the building that the engineer builds.",
+      "es": "El arquitecto diseña el edificio que construye el ingeniero."
+    },
+    {
+      "phrase": "Il n'y a plus de lumière : appelle l'électricien.",
+      "en": "There's no more light: call the electrician.",
+      "es": "Se fue la luz: llama al electricista."
+    },
+    {
+      "phrase": "La météorologue a annoncé de la pluie pour demain.",
+      "en": "The meteorologist forecast rain for tomorrow.",
+      "es": "La meteoróloga ha anunciado lluvia para mañana."
+    },
+    {
+      "phrase": "J'étais sur le point de me noyer quand le sauveteur m'a sorti de l'eau.",
+      "en": "I was about to drown when the lifeguard pulled me out of the water.",
+      "es": "Estaba a punto de ahogarme cuando el socorrista me sacó del agua."
+    },
+    {
+      "phrase": "Qu'est-ce que tu fais dans la vie ? — Je suis comptable.",
+      "en": "What do you do for a living? — I am an accountant.",
+      "es": "¿A qué te dedicas? — Soy contable."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Which sentence is correct?",
+        "es": "¿Qué frase es correcta?"
+      },
+      "options": [
+        "Elle est avocate.",
+        "Elle est une avocate.",
+        "Elle est la avocate.",
+        "Elle est de avocate."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "No article after \"être\" + job (without adjective).",
+        "es": "Sin artículo tras «être» + profesión (sin adjetivo)."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the feminine of \"acteur\"?",
+        "es": "¿Cuál es el femenino de «acteur»?"
+      },
+      "options": [
+        "actrice",
+        "acteuse",
+        "acteure",
+        "actresse"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "-teur → -trice.",
+        "es": "-teur → -trice."
+      }
+    },
+    {
+      "question": {
+        "en": "Who repairs your car?",
+        "es": "¿Quién repara tu coche?"
+      },
+      "options": [
+        "le mécanicien",
+        "le plombier",
+        "le menuisier",
+        "l'électricien"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le plombier = pipes, le menuisier = wood, l'électricien = electricity.",
+        "es": "Le plombier = tuberías, le menuisier = madera, l'électricien = electricidad."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Ma mère voudrait que je ___ vétérinaire.\"",
+        "es": "Completa: «Ma mère voudrait que je ___ vétérinaire.»"
+      },
+      "options": [
+        "sois",
+        "suis",
+        "serai",
+        "serais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Vouloir que\" + subjunctive: être → que je sois.",
+        "es": "«Vouloir que» + subjuntivo: être → que je sois."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Que se passerait-il si je ___ de devenir chanteur ?\"",
+        "es": "Completa: «Que se passerait-il si je ___ de devenir chanteur ?»"
+      },
+      "options": [
+        "décidais",
+        "déciderais",
+        "décide",
+        "déciderai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + imparfait, then conditional (\"se passerait\").",
+        "es": "Si + imperfecto y luego condicional («se passerait»)."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you give advice: \"You should be a poet\"?",
+        "es": "¿Cómo das un consejo: «Deberías ser poeta»?"
+      },
+      "options": [
+        "Tu devrais être poète.",
+        "Tu dois être poète.",
+        "Tu seras poète.",
+        "Tu étais poète."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional of \"devoir\" = should.",
+        "es": "Condicional de «devoir» = debería."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'étais sur le point de partir.\" What does it mean?",
+        "es": "«J'étais sur le point de partir.» ¿Qué significa?"
+      },
+      "options": {
+        "en": [
+          "I was about to leave.",
+          "I had just left.",
+          "I was on the way back.",
+          "I left at the point."
+        ],
+        "es": [
+          "Estaba a punto de irme.",
+          "Me acababa de ir.",
+          "Estaba de vuelta.",
+          "Me fui al punto."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Être sur le point de\" + infinitive = to be about to.",
+        "es": "«Être sur le point de» + infinitivo = estar a punto de."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you go to get a haircut?",
+        "es": "¿Adónde vas a cortarte el pelo?"
+      },
+      "options": [
+        "chez le coiffeur",
+        "au coiffeur",
+        "à la coiffeuse",
+        "chez la coiffure"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Chez\" + person.",
+        "es": "«Chez» + persona."
+      }
+    }
+  ],
+  "story": {
+    "title": "Quel métier choisir ?",
+    "text": "Je m'appelle Lina, j'ai dix-sept ans et je me demande ce que je ferai plus tard. J'aimerais être biologiste marine, mais mon père voudrait que je sois avocate et ma mère voudrait que je devienne pharmacienne, comme elle. Ma meilleure amie dit que je serai une bonne photographe, parce que je prends toujours de belles photos. Mon grand-père pense que je devrais être écrivain, car j'invente des histoires depuis que j'étais petite. L'été dernier, j'ai été serveuse dans un café du port, et l'année d'avant, j'ai aidé un jardinier du quartier. C'est là que j'ai découvert que j'aime travailler dehors. Que se passerait-il si je décidais de faire un métier que personne n'a imaginé pour moi ? Je ne sais pas. Je veux seulement un travail qui me plaise et qui soit utile. Je voudrais que les océans soient plus propres pour les générations futures. Et si un jour je change d'avis, je pourrai toujours apprendre autre chose !",
+    "en": "My name is Lina, I'm seventeen and I wonder what I'll do later. I would like to be a marine biologist, but my father would like me to be a lawyer and my mother would like me to become a pharmacist, like her. My best friend says I'll be a good photographer, because I always take beautiful pictures. My grandfather thinks I should be a writer, because I've been making up stories since I was little. Last summer, I was a waitress in a café at the harbor, and the year before, I helped a gardener in the neighborhood. That's where I discovered that I like working outdoors. What would happen if I decided to do a job nobody imagined for me? I don't know. I just want a job that I like and that is useful. I would like the oceans to be cleaner for future generations. And if one day I change my mind, I'll always be able to learn something else!",
+    "es": "Me llamo Lina, tengo diecisiete años y me pregunto qué haré en el futuro. Me gustaría ser bióloga marina, pero mi padre querría que fuera abogada y mi madre querría que me hiciera farmacéutica, como ella. Mi mejor amiga dice que seré una buena fotógrafa, porque siempre hago fotos bonitas. Mi abuelo piensa que debería ser escritora, porque invento historias desde que era pequeña. El verano pasado fui camarera en un café del puerto y, el año anterior, ayudé a un jardinero del barrio. Fue ahí donde descubrí que me gusta trabajar al aire libre. ¿Qué pasaría si decidiera dedicarme a algo que nadie ha imaginado para mí? No lo sé. Solo quiero un trabajo que me guste y que sea útil. Me gustaría que los océanos estuvieran más limpios para las generaciones futuras. ¡Y si un día cambio de opinión, siempre podré aprender otra cosa!",
+    "highlighted_words": [
+      "ferai",
+      "J'aimerais",
+      "voudrait que je sois",
+      "serai",
+      "devrais",
+      "j'étais petite",
+      "j'ai été serveuse",
+      "C'est là que",
+      "si je décidais",
+      "qui me plaise"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Elle est infirmière à l'hôpital",
+      "en": "She is a nurse at the hospital",
+      "es": "Es enfermera en el hospital"
+    },
+    {
+      "sentence": "Tu devrais être écrivain",
+      "en": "You should be a writer",
+      "es": "Deberías ser escritor"
+    },
+    {
+      "sentence": "Mon père voudrait que je sois médecin",
+      "en": "My father would like me to be a doctor",
+      "es": "Mi padre querría que fuera médico"
+    },
+    {
+      "sentence": "Va chez le coiffeur",
+      "en": "Go to the hairdresser",
+      "es": "Ve a la peluquería"
+    },
+    {
+      "sentence": "C'est le pompier qui m'a aidé",
+      "en": "It was the firefighter who helped me",
+      "es": "Fue el bombero quien me ayudó"
+    },
+    {
+      "sentence": "J'ai été serveur l'été dernier",
+      "en": "I was a waiter last summer",
+      "es": "Fui camarero el verano pasado"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je suis ingénieur",
+      "en": "I am an engineer",
+      "es": "Soy ingeniero"
+    },
+    {
+      "answer": "Elle est vendeuse",
+      "en": "She is a salesperson",
+      "es": "Es vendedora"
+    },
+    {
+      "answer": "Qu'est-ce que tu fais dans la vie ?",
+      "en": "What do you do for a living?",
+      "es": "¿A qué te dedicas?"
+    },
+    {
+      "answer": "J'aimerais être photographe",
+      "en": "I would like to be a photographer",
+      "es": "Me gustaría ser fotógrafo"
+    },
+    {
+      "answer": "Appelle l'électricien",
+      "en": "Call the electrician",
+      "es": "Llama al electricista"
+    },
+    {
+      "answer": "Le mécanicien répare la voiture",
+      "en": "The mechanic repairs the car",
+      "es": "El mecánico repara el coche"
+    }
+  ]
+}

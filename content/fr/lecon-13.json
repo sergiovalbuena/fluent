@@ -1,0 +1,598 @@
+{
+  "lesson": 13,
+  "slug": "lecon-13",
+  "icon": "🛋️",
+  "title": {
+    "fr": "La maison : pièces et meubles",
+    "es": "La casa: habitaciones y muebles",
+    "en": "The house: rooms and furniture"
+  },
+  "source": {
+    "audio": "Lecons 13.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "impératif + pronom",
+      "example": "Mets-le dans le tiroir. / Éteins la lampe.",
+      "en": "Imperative with object pronouns",
+      "es": "Imperativo con pronombres"
+    },
+    {
+      "structure": "se trouver",
+      "example": "Ton médicament se trouve sur la table de nuit.",
+      "en": "Locating things",
+      "es": "Ubicar objetos"
+    },
+    {
+      "structure": "si + présent → futur",
+      "example": "Si tu descends, tu trouveras le sous-sol.",
+      "en": "Real condition (future)",
+      "es": "Condición real (futuro)"
+    },
+    {
+      "structure": "passé composé / imparfait",
+      "example": "Nous avons déménagé. / On ne pouvait pas inviter plus de vingt personnes.",
+      "en": "Event vs. past situation",
+      "es": "Hecho puntual frente a situación pasada"
+    },
+    {
+      "structure": "pronom relatif « dont »",
+      "example": "Le jardin dont ma mère est tombée amoureuse…",
+      "en": "Relative pronoun \"dont\"",
+      "es": "Pronombre relativo «dont»"
+    },
+    {
+      "structure": "manquer à",
+      "example": "Vous me manquez.",
+      "en": "\"I miss you\" (inverted structure)",
+      "es": "«Los extraño» (estructura invertida)"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Elle sera sèche dans une minute. / Je prendrai un bain.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Manquer\" is inverted: \"Tu me manques\" = I miss you (literally \"you are missing to me\").",
+      "es": "«Manquer» funciona al revés: «Tu me manques» = te echo de menos (literalmente «me faltas»)."
+    },
+    {
+      "en": "\"Le rez-de-chaussée\" is the ground floor; \"le premier étage\" is the floor above it.",
+      "es": "«Le rez-de-chaussée» es la planta baja; «le premier étage» es la planta de arriba."
+    },
+    {
+      "en": "With the affirmative imperative, the pronoun goes after the verb with a hyphen: \"Mets-le\", \"Donne-moi\".",
+      "es": "Con el imperativo afirmativo, el pronombre va detrás del verbo con guion: «Mets-le», «Donne-moi»."
+    },
+    {
+      "en": "\"Une cuisinière\" is both a (female) cook and a cooker/stove.",
+      "es": "«Une cuisinière» es a la vez una cocinera y una cocina (el electrodoméstico)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la porte",
+      "en": "the door",
+      "es": "la puerta"
+    },
+    {
+      "word": "la fenêtre",
+      "en": "the window",
+      "es": "la ventana"
+    },
+    {
+      "word": "le couloir",
+      "en": "the hallway",
+      "es": "el pasillo"
+    },
+    {
+      "word": "la chambre principale",
+      "en": "the master bedroom",
+      "es": "el dormitorio principal"
+    },
+    {
+      "word": "le sous-sol",
+      "en": "the basement",
+      "es": "el sótano"
+    },
+    {
+      "word": "le grenier",
+      "en": "the attic",
+      "es": "el desván"
+    },
+    {
+      "word": "l'escalier",
+      "en": "the stairs",
+      "es": "la escalera"
+    },
+    {
+      "word": "le rez-de-chaussée",
+      "en": "the ground floor",
+      "es": "la planta baja"
+    },
+    {
+      "word": "l'étage",
+      "en": "the floor (level)",
+      "es": "la planta / el piso"
+    },
+    {
+      "word": "le balcon",
+      "en": "the balcony",
+      "es": "el balcón"
+    },
+    {
+      "word": "la terrasse",
+      "en": "the terrace",
+      "es": "la terraza"
+    },
+    {
+      "word": "le jardin",
+      "en": "the garden",
+      "es": "el jardín"
+    },
+    {
+      "word": "la pelouse",
+      "en": "the lawn",
+      "es": "el césped"
+    },
+    {
+      "word": "le sol",
+      "en": "the floor",
+      "es": "el suelo"
+    },
+    {
+      "word": "le mur",
+      "en": "the wall",
+      "es": "la pared"
+    },
+    {
+      "word": "le plafond",
+      "en": "the ceiling",
+      "es": "el techo"
+    },
+    {
+      "word": "le toit",
+      "en": "the roof",
+      "es": "el tejado"
+    },
+    {
+      "word": "le fauteuil",
+      "en": "the armchair",
+      "es": "el sillón"
+    },
+    {
+      "word": "la table basse",
+      "en": "the coffee table",
+      "es": "la mesa baja"
+    },
+    {
+      "word": "la lampe",
+      "en": "the lamp",
+      "es": "la lámpara"
+    },
+    {
+      "word": "l'étagère",
+      "en": "the shelf",
+      "es": "el estante"
+    },
+    {
+      "word": "le rideau",
+      "en": "the curtain",
+      "es": "la cortina"
+    },
+    {
+      "word": "la cheminée",
+      "en": "the fireplace",
+      "es": "la chimenea"
+    },
+    {
+      "word": "l'interrupteur",
+      "en": "the light switch",
+      "es": "el interruptor"
+    },
+    {
+      "word": "la table de nuit",
+      "en": "the bedside table",
+      "es": "la mesita de noche"
+    },
+    {
+      "word": "l'armoire",
+      "en": "the wardrobe",
+      "es": "el armario"
+    },
+    {
+      "word": "le placard",
+      "en": "the cupboard",
+      "es": "el armario empotrado / la alacena"
+    },
+    {
+      "word": "le tiroir",
+      "en": "the drawer",
+      "es": "el cajón"
+    },
+    {
+      "word": "l'oreiller",
+      "en": "the pillow",
+      "es": "la almohada"
+    },
+    {
+      "word": "le coussin",
+      "en": "the cushion",
+      "es": "el cojín"
+    },
+    {
+      "word": "la couverture",
+      "en": "the blanket",
+      "es": "la manta"
+    },
+    {
+      "word": "la baignoire",
+      "en": "the bathtub",
+      "es": "la bañera"
+    },
+    {
+      "word": "la douche",
+      "en": "the shower",
+      "es": "la ducha"
+    },
+    {
+      "word": "le lavabo",
+      "en": "the washbasin",
+      "es": "el lavabo"
+    },
+    {
+      "word": "le robinet",
+      "en": "the tap",
+      "es": "el grifo"
+    },
+    {
+      "word": "le miroir",
+      "en": "the mirror",
+      "es": "el espejo"
+    },
+    {
+      "word": "le congélateur",
+      "en": "the freezer",
+      "es": "el congelador"
+    },
+    {
+      "word": "le four",
+      "en": "the oven",
+      "es": "el horno"
+    },
+    {
+      "word": "l'évier",
+      "en": "the kitchen sink",
+      "es": "el fregadero"
+    },
+    {
+      "word": "la poubelle",
+      "en": "the trash can",
+      "es": "el cubo de la basura"
+    },
+    {
+      "word": "le sèche-linge",
+      "en": "the dryer",
+      "es": "la secadora"
+    },
+    {
+      "word": "le chauffage",
+      "en": "the heating",
+      "es": "la calefacción"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Voici ma maison. Entre !",
+      "en": "Here is my house. Come in!",
+      "es": "Esta es mi casa. ¡Pasa!"
+    },
+    {
+      "phrase": "Ouvrez la porte et fermez la fenêtre.",
+      "en": "Open the door and close the window.",
+      "es": "Abran la puerta y cierren la ventana."
+    },
+    {
+      "phrase": "Éteins la lampe, s'il te plaît.",
+      "en": "Turn off the lamp, please.",
+      "es": "Apaga la lámpara, por favor."
+    },
+    {
+      "phrase": "La vue de la terrasse est magnifique.",
+      "en": "The view from the terrace is magnificent.",
+      "es": "La vista desde la terraza es magnífica."
+    },
+    {
+      "phrase": "Garde le fromage au réfrigérateur.",
+      "en": "Keep the cheese in the fridge.",
+      "es": "Guarda el queso en el refrigerador."
+    },
+    {
+      "phrase": "La salle de bains est à droite.",
+      "en": "The bathroom is on the right.",
+      "es": "El baño está a la derecha."
+    },
+    {
+      "phrase": "L'interrupteur est près de la cheminée.",
+      "en": "The light switch is near the fireplace.",
+      "es": "El interruptor está cerca de la chimenea."
+    },
+    {
+      "phrase": "Si tu descends, tu trouveras le sous-sol.",
+      "en": "If you go down, you'll find the basement.",
+      "es": "Si bajas, encontrarás el sótano."
+    },
+    {
+      "phrase": "Ton médicament se trouve sur la table de nuit.",
+      "en": "Your medicine is on the bedside table.",
+      "es": "Tu medicamento está en la mesita de noche."
+    },
+    {
+      "phrase": "Mets cette casserole dans l'évier.",
+      "en": "Put this pan in the sink.",
+      "es": "Pon esta cacerola en el fregadero."
+    },
+    {
+      "phrase": "Baisse le volume, la musique est trop forte !",
+      "en": "Turn down the volume, the music is too loud!",
+      "es": "¡Baja el volumen, la música está demasiado alta!"
+    },
+    {
+      "phrase": "Mets ta chemise dans le sèche-linge : elle sera sèche dans un moment.",
+      "en": "Put your shirt in the dryer: it'll be dry in a moment.",
+      "es": "Mete tu camisa en la secadora: estará seca en un momento."
+    },
+    {
+      "phrase": "Qui a si bien nettoyé le four ? — C'est ma mère qui l'a fait.",
+      "en": "Who cleaned the oven so well? — My mother did.",
+      "es": "¿Quién ha limpiado tan bien el horno? — Lo ha hecho mi madre."
+    },
+    {
+      "phrase": "Tu vas prendre une douche ? — Non, je prendrai un bain.",
+      "en": "Are you going to take a shower? — No, I will take a bath.",
+      "es": "¿Te vas a duchar? — No, me daré un baño."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Where do you keep ice cream?",
+        "es": "¿Dónde guardas el helado?"
+      },
+      "options": [
+        "dans le congélateur",
+        "dans le four",
+        "dans l'évier",
+        "dans le tiroir"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le congélateur keeps things frozen.",
+        "es": "Le congélateur mantiene las cosas congeladas."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"le grenier\"?",
+        "es": "¿Qué es «le grenier»?"
+      },
+      "options": {
+        "en": [
+          "the attic",
+          "the basement",
+          "the garage",
+          "the hallway"
+        ],
+        "es": [
+          "el desván",
+          "el sótano",
+          "el garaje",
+          "el pasillo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "The basement is \"le sous-sol\".",
+        "es": "El sótano es «le sous-sol»."
+      }
+    },
+    {
+      "question": {
+        "en": "Put the pronoun in the right place: \"Put it in the drawer!\"",
+        "es": "Coloca bien el pronombre: «¡Ponlo en el cajón!»"
+      },
+      "options": [
+        "Mets-le dans le tiroir !",
+        "Le mets dans le tiroir !",
+        "Mets le dans le tiroir !",
+        "Mets dans le tiroir le !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Affirmative imperative: verb + hyphen + pronoun.",
+        "es": "Imperativo afirmativo: verbo + guion + pronombre."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si tu descends, tu ___ le sous-sol.\"",
+        "es": "Completa: «Si tu descends, tu ___ le sous-sol.»"
+      },
+      "options": [
+        "trouveras",
+        "trouverais",
+        "trouvais",
+        "as trouvé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + present → future.",
+        "es": "Si + presente → futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"I miss you\" in French?",
+        "es": "¿Cómo se dice «Te echo de menos» en francés?"
+      },
+      "options": [
+        "Tu me manques.",
+        "Je te manque.",
+        "Je manque toi.",
+        "Tu manques à toi."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The person you miss is the subject: \"Tu me manques\".",
+        "es": "La persona a la que echas de menos es el sujeto: «Tu me manques»."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence describes a past situation (imparfait)?",
+        "es": "¿Qué frase describe una situación pasada (imperfecto)?"
+      },
+      "options": [
+        "Il n'y avait pas de place pour tout le monde.",
+        "Nous avons déménagé en mai.",
+        "Ma mère a choisi la chambre.",
+        "J'ai ouvert la fenêtre."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait = background or ongoing situation; passé composé = a specific event.",
+        "es": "Imperfecto = situación de fondo; passé composé = un hecho puntual."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le rez-de-chaussée\" is…",
+        "es": "«Le rez-de-chaussée» es…"
+      },
+      "options": {
+        "en": [
+          "the ground floor",
+          "the first floor up",
+          "the roof",
+          "the garden"
+        ],
+        "es": [
+          "la planta baja",
+          "el primer piso",
+          "el tejado",
+          "el jardín"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Floors above are \"le premier étage\", \"le deuxième étage\"…",
+        "es": "Las plantas de arriba son «le premier étage», «le deuxième étage»…"
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you wash the dishes?",
+        "es": "¿Dónde friegas los platos?"
+      },
+      "options": [
+        "dans l'évier",
+        "dans le lavabo",
+        "dans la baignoire",
+        "dans la douche"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "L'évier is in the kitchen; le lavabo is in the bathroom.",
+        "es": "L'évier está en la cocina; le lavabo, en el baño."
+      }
+    }
+  ],
+  "story": {
+    "title": "Lettre à Inès",
+    "text": "Chère Inès, je t'écris pour te parler de notre nouvelle maison. Nous avons déménagé à Annecy le mois dernier, dans un quartier très calme près du lac. Comment ça va à Grenoble ? Vous me manquez beaucoup ! Laisse-moi tout te raconter. Au rez-de-chaussée, il y a un grand salon avec une cheminée, la cuisine, la salle à manger et un garage. Les murs du salon sont peints en vert clair. Derrière la maison, il y a un jardin dont ma mère est tombée amoureuse tout de suite, avec des pommiers et beaucoup de fleurs. À l'étage se trouve la chambre de mes parents, avec une salle de bains et un petit balcon. Mon frère a choisi la chambre la plus grande, mais elle n'a pas de vue. Moi, j'ai une petite chambre sous le toit, avec une fenêtre qui donne sur les montagnes. Tu te souviens de nos fêtes dans l'ancien appartement ? On ne pouvait pas inviter plus de dix personnes, parce qu'il n'y avait pas de place. Maintenant, ce ne sera plus un problème ! Si tu viens cet été, tu dormiras dans la chambre d'amis. J'attends ta visite avec impatience. Bises, Margaux.",
+    "en": "Dear Inès, I'm writing to tell you about our new house. We moved to Annecy last month, to a very quiet neighborhood near the lake. How are things in Grenoble? I miss you all a lot! Let me tell you everything. On the ground floor, there is a large living room with a fireplace, the kitchen, the dining room and a garage. The living room walls are painted light green. Behind the house, there is a garden my mother fell in love with right away, with apple trees and lots of flowers. Upstairs is my parents' bedroom, with a bathroom and a small balcony. My brother chose the biggest bedroom, but it has no view. As for me, I have a small room under the roof, with a window that looks out on the mountains. Do you remember our parties in the old apartment? We couldn't invite more than ten people, because there wasn't enough room. Now it won't be a problem anymore! If you come this summer, you'll sleep in the guest room. I can't wait for your visit. Love, Margaux.",
+    "es": "Querida Inès: te escribo para hablarte de nuestra nueva casa. Nos mudamos a Annecy el mes pasado, a un barrio muy tranquilo cerca del lago. ¿Qué tal todo en Grenoble? ¡Los extraño mucho! Déjame que te lo cuente todo. En la planta baja hay un salón grande con chimenea, la cocina, el comedor y un garaje. Las paredes del salón están pintadas de verde claro. Detrás de la casa hay un jardín del que mi madre se enamoró enseguida, con manzanos y muchas flores. Arriba está el dormitorio de mis padres, con un baño y un pequeño balcón. Mi hermano eligió el dormitorio más grande, pero no tiene vistas. Yo tengo una habitación pequeña bajo el tejado, con una ventana que da a las montañas. ¿Te acuerdas de nuestras fiestas en el antiguo piso? No podíamos invitar a más de diez personas porque no había sitio. ¡Ahora ya no será un problema! Si vienes este verano, dormirás en la habitación de invitados. Espero tu visita con impaciencia. Besos, Margaux.",
+    "highlighted_words": [
+      "Nous avons déménagé",
+      "Vous me manquez",
+      "rez-de-chaussée",
+      "cheminée",
+      "dont",
+      "se trouve",
+      "balcon",
+      "toit",
+      "On ne pouvait pas",
+      "il n'y avait pas",
+      "Si tu viens",
+      "dormiras"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Ouvre les rideaux",
+      "en": "Open the curtains",
+      "es": "Abre las cortinas"
+    },
+    {
+      "sentence": "Le chat est sous le lit",
+      "en": "The cat is under the bed",
+      "es": "El gato está debajo de la cama"
+    },
+    {
+      "sentence": "Mets-le dans le tiroir",
+      "en": "Put it in the drawer",
+      "es": "Ponlo en el cajón"
+    },
+    {
+      "sentence": "Tu me manques beaucoup",
+      "en": "I miss you a lot",
+      "es": "Te echo mucho de menos"
+    },
+    {
+      "sentence": "La salle de bains est à droite",
+      "en": "The bathroom is on the right",
+      "es": "El baño está a la derecha"
+    },
+    {
+      "sentence": "Si tu viens tu dormiras ici",
+      "en": "If you come you'll sleep here",
+      "es": "Si vienes, dormirás aquí"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Ferme la porte",
+      "en": "Close the door",
+      "es": "Cierra la puerta"
+    },
+    {
+      "answer": "Le gâteau est dans le four",
+      "en": "The cake is in the oven",
+      "es": "El pastel está en el horno"
+    },
+    {
+      "answer": "Assieds-toi dans le fauteuil",
+      "en": "Sit in the armchair",
+      "es": "Siéntate en el sillón"
+    },
+    {
+      "answer": "Nous avons déménagé",
+      "en": "We have moved",
+      "es": "Nos hemos mudado"
+    },
+    {
+      "answer": "Le sol est sale",
+      "en": "The floor is dirty",
+      "es": "El suelo está sucio"
+    },
+    {
+      "answer": "Éteins la lumière",
+      "en": "Turn off the light",
+      "es": "Apaga la luz"
+    }
+  ]
+}

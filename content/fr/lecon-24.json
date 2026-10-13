@@ -1,0 +1,608 @@
+{
+  "lesson": 24,
+  "slug": "lecon-24",
+  "icon": "🏛️",
+  "title": {
+    "fr": "L'art et les musées",
+    "es": "El arte y los museos",
+    "en": "Art and museums"
+  },
+  "source": {
+    "audio": "Lecons 24.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "en + matière",
+      "example": "Cette sculpture est en bronze. / Le sarcophage est en or.",
+      "en": "Materials",
+      "es": "Materiales"
+    },
+    {
+      "structure": "voix passive",
+      "example": "La tour a été construite en pierre.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Le musée ouvrira ses portes à neuf heures.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "imparfait / passé composé",
+      "example": "Autrefois, l'art servait la religion. / Les artistes ont commencé à l'utiliser autrement.",
+      "en": "Past habit vs. change",
+      "es": "Hábito pasado frente a cambio"
+    },
+    {
+      "structure": "se rendre compte de",
+      "example": "Les rois se sont rendu compte du pouvoir de l'art.",
+      "en": "\"To realize\"",
+      "es": "«Darse cuenta de»"
+    },
+    {
+      "structure": "ne … que",
+      "example": "L'art n'est pas que de la peinture.",
+      "en": "\"not only / just\"",
+      "es": "«no solo»"
+    },
+    {
+      "structure": "pronom « y »",
+      "example": "Il y a un monastère sur la colline ; je vais t'y emmener.",
+      "en": "\"y\" with a place",
+      "es": "«y» con un lugar"
+    },
+    {
+      "structure": "conditionnel de politesse",
+      "example": "Pourriez-vous me dire quand ouvre la cathédrale ?",
+      "en": "Polite conditional",
+      "es": "Condicional de cortesía"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Many French museums are free on the first Sunday of the month, and often for EU residents under 26.",
+      "es": "Muchos museos franceses son gratuitos el primer domingo del mes, y a menudo para residentes de la UE menores de 26 años."
+    },
+    {
+      "en": "\"Le guichet\" = ticket office; \"une entrée / un billet\" = a ticket; \"tarif réduit\" = reduced price.",
+      "es": "«Le guichet» = la taquilla; «une entrée / un billet» = una entrada; «tarif réduit» = precio reducido."
+    },
+    {
+      "en": "\"Un tableau\" = a painting (the object); \"la peinture\" = paint or painting (the art).",
+      "es": "«Un tableau» = un cuadro (el objeto); «la peinture» = la pintura (material o arte)."
+    },
+    {
+      "en": "\"Se rendre compte\" does not agree in the passé composé: \"elles se sont rendu compte\".",
+      "es": "«Se rendre compte» no concuerda en el passé composé: «elles se sont rendu compte»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'art",
+      "en": "art",
+      "es": "el arte"
+    },
+    {
+      "word": "le musée",
+      "en": "the museum",
+      "es": "el museo"
+    },
+    {
+      "word": "l'exposition",
+      "en": "the exhibition",
+      "es": "la exposición"
+    },
+    {
+      "word": "la galerie",
+      "en": "the gallery",
+      "es": "la galería"
+    },
+    {
+      "word": "le tableau",
+      "en": "the painting",
+      "es": "el cuadro"
+    },
+    {
+      "word": "la peinture",
+      "en": "painting / paint",
+      "es": "la pintura"
+    },
+    {
+      "word": "la toile",
+      "en": "the canvas",
+      "es": "el lienzo"
+    },
+    {
+      "word": "le dessin",
+      "en": "the drawing",
+      "es": "el dibujo"
+    },
+    {
+      "word": "la sculpture",
+      "en": "the sculpture",
+      "es": "la escultura"
+    },
+    {
+      "word": "la statue",
+      "en": "the statue",
+      "es": "la estatua"
+    },
+    {
+      "word": "la reproduction",
+      "en": "the reproduction",
+      "es": "la reproducción"
+    },
+    {
+      "word": "la lithographie",
+      "en": "the lithograph",
+      "es": "la litografía"
+    },
+    {
+      "word": "la céramique",
+      "en": "ceramics",
+      "es": "la cerámica"
+    },
+    {
+      "word": "l'orfèvrerie",
+      "en": "goldsmithing",
+      "es": "la orfebrería"
+    },
+    {
+      "word": "le bronze",
+      "en": "bronze",
+      "es": "el bronce"
+    },
+    {
+      "word": "l'or",
+      "en": "gold",
+      "es": "el oro"
+    },
+    {
+      "word": "l'argent",
+      "en": "silver",
+      "es": "la plata"
+    },
+    {
+      "word": "la pierre",
+      "en": "stone",
+      "es": "la piedra"
+    },
+    {
+      "word": "le métal",
+      "en": "metal",
+      "es": "el metal"
+    },
+    {
+      "word": "le monument",
+      "en": "the monument",
+      "es": "el monumento"
+    },
+    {
+      "word": "la cathédrale",
+      "en": "the cathedral",
+      "es": "la catedral"
+    },
+    {
+      "word": "l'église",
+      "en": "the church",
+      "es": "la iglesia"
+    },
+    {
+      "word": "la chapelle",
+      "en": "the chapel",
+      "es": "la capilla"
+    },
+    {
+      "word": "l'abbaye",
+      "en": "the abbey",
+      "es": "la abadía"
+    },
+    {
+      "word": "le monastère",
+      "en": "the monastery",
+      "es": "el monasterio"
+    },
+    {
+      "word": "le cloître",
+      "en": "the cloister",
+      "es": "el claustro"
+    },
+    {
+      "word": "le palais",
+      "en": "the palace",
+      "es": "el palacio"
+    },
+    {
+      "word": "le château",
+      "en": "the castle",
+      "es": "el castillo"
+    },
+    {
+      "word": "la tour",
+      "en": "the tower",
+      "es": "la torre"
+    },
+    {
+      "word": "le clocher",
+      "en": "the bell tower",
+      "es": "el campanario"
+    },
+    {
+      "word": "le dôme",
+      "en": "the dome",
+      "es": "la cúpula"
+    },
+    {
+      "word": "la colonne",
+      "en": "the column",
+      "es": "la columna"
+    },
+    {
+      "word": "la voûte",
+      "en": "the vault",
+      "es": "la bóveda"
+    },
+    {
+      "word": "le sarcophage",
+      "en": "the sarcophagus",
+      "es": "el sarcófago"
+    },
+    {
+      "word": "la dynastie",
+      "en": "the dynasty",
+      "es": "la dinastía"
+    },
+    {
+      "word": "le guide",
+      "en": "the guide",
+      "es": "el guía"
+    },
+    {
+      "word": "la brochure",
+      "en": "the brochure",
+      "es": "el folleto"
+    },
+    {
+      "word": "le guichet",
+      "en": "the ticket office",
+      "es": "la taquilla"
+    },
+    {
+      "word": "l'entrée",
+      "en": "entry / ticket",
+      "es": "la entrada"
+    },
+    {
+      "word": "le gardien",
+      "en": "the museum guard",
+      "es": "el vigilante"
+    },
+    {
+      "word": "ouvert / ouverte",
+      "en": "open",
+      "es": "abierto / abierta"
+    },
+    {
+      "word": "fermé / fermée",
+      "en": "closed",
+      "es": "cerrado / cerrada"
+    },
+    {
+      "word": "gratuit / gratuite",
+      "en": "free",
+      "es": "gratuito / gratuita"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Nous nous sommes mariés dans cette chapelle.",
+      "en": "We got married in this chapel.",
+      "es": "Nos casamos en esta capilla."
+    },
+    {
+      "phrase": "Cette sculpture est en bronze.",
+      "en": "This sculpture is made of bronze.",
+      "es": "Esta escultura es de bronce."
+    },
+    {
+      "phrase": "Le plan est peut-être dans la brochure.",
+      "en": "The map is maybe in the brochure.",
+      "es": "Quizás el plano está en el folleto."
+    },
+    {
+      "phrase": "Samedi, il y a une exposition de lithographies.",
+      "en": "On Saturday, there is an exhibition of lithographs.",
+      "es": "El sábado hay una exposición de litografías."
+    },
+    {
+      "phrase": "Le plus grand monument de la ville se trouve dans le centre.",
+      "en": "The biggest monument in the city is in the center.",
+      "es": "El monumento más grande de la ciudad está en el centro."
+    },
+    {
+      "phrase": "Le monastère est fermé pour travaux de restauration.",
+      "en": "The monastery is closed for restoration work.",
+      "es": "El monasterio está cerrado por obras de restauración."
+    },
+    {
+      "phrase": "Le musée ouvrira ses portes à neuf heures.",
+      "en": "The museum will open at nine.",
+      "es": "El museo abrirá sus puertas a las nueve."
+    },
+    {
+      "phrase": "La tour a été construite en pierre.",
+      "en": "The tower was built of stone.",
+      "es": "La torre fue construida en piedra."
+    },
+    {
+      "phrase": "Les Romains ont bâti des colonnes incroyables.",
+      "en": "The Romans built incredible columns.",
+      "es": "Los romanos construyeron columnas increíbles."
+    },
+    {
+      "phrase": "Pourrais-tu me montrer les principaux musées de la ville ? — Bien sûr, allons-y !",
+      "en": "Could you show me the main museums in the city? — Of course, let's go!",
+      "es": "¿Podrías enseñarme los principales museos de la ciudad? — ¡Claro, vamos!"
+    },
+    {
+      "phrase": "Quel genre de peinture est-ce ? — C'est un peintre surréaliste.",
+      "en": "What kind of painting is it? — It's a surrealist painter.",
+      "es": "¿Qué tipo de pintura es? — Es un pintor surrealista."
+    },
+    {
+      "phrase": "Où se trouve le guichet ? — Au coin. Combien d'entrées voulez-vous ?",
+      "en": "Where is the ticket office? — In the corner. How many tickets would you like?",
+      "es": "¿Dónde está la taquilla? — En la esquina. ¿Cuántas entradas quiere?"
+    },
+    {
+      "phrase": "Désolé, ces entrées gratuites ne sont valables que le matin.",
+      "en": "Sorry, these free tickets are only valid in the morning.",
+      "es": "Lo siento, estas entradas gratuitas solo son válidas por la mañana."
+    },
+    {
+      "phrase": "Il y a un vieux monastère sur la colline. Je vais t'y emmener.",
+      "en": "There's an old monastery on the hill. I'll take you there.",
+      "es": "Hay un viejo monasterio en la colina. Te voy a llevar."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Cette statue est ___ marbre.\"",
+        "es": "Completa: «Cette statue est ___ marbre.»"
+      },
+      "options": [
+        "en",
+        "de la",
+        "avec",
+        "du"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Materials: en bronze, en or, en pierre.",
+        "es": "Materiales: en bronze, en or, en pierre."
+      }
+    },
+    {
+      "question": {
+        "en": "Passive: \"They built the tower in 1200\" → ?",
+        "es": "Pasiva: «Construyeron la torre en 1200» → ?"
+      },
+      "options": [
+        "La tour a été construite en 1200.",
+        "La tour a construit en 1200.",
+        "La tour était construire en 1200.",
+        "La tour est construisait en 1200."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "avoir été + past participle (agrees with \"la tour\").",
+        "es": "avoir été + participio (concuerda con «la tour»)."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you buy museum tickets?",
+        "es": "¿Dónde compras las entradas del museo?"
+      },
+      "options": [
+        "au guichet",
+        "au clocher",
+        "au cloître",
+        "à la voûte"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le guichet = the ticket office.",
+        "es": "Le guichet = la taquilla."
+      }
+    },
+    {
+      "question": {
+        "en": "\"L'art n'est pas que de la peinture.\" Meaning?",
+        "es": "«L'art n'est pas que de la peinture.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "Art is not only painting.",
+          "Art is not painting.",
+          "Art is only painting.",
+          "Painting is not art."
+        ],
+        "es": [
+          "El arte no es solo pintura.",
+          "El arte no es pintura.",
+          "El arte es solo pintura.",
+          "La pintura no es arte."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … pas que\" = not only.",
+        "es": "«Ne … pas que» = no solo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Le monastère ? Je vais t'___ emmener.\"",
+        "es": "Completa: «Le monastère ? Je vais t'___ emmener.»"
+      },
+      "options": [
+        "y",
+        "en",
+        "le",
+        "lui"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Y\" replaces a place.",
+        "es": "«Y» sustituye un lugar."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un tableau\" in a museum?",
+        "es": "¿Qué es «un tableau» en un museo?"
+      },
+      "options": {
+        "en": [
+          "a painting",
+          "a table",
+          "a ticket",
+          "a statue"
+        ],
+        "es": [
+          "un cuadro",
+          "una mesa",
+          "una entrada",
+          "una estatua"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Une table = a table.",
+        "es": "Une table = una mesa."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence describes a past habit?",
+        "es": "¿Qué frase describe un hábito pasado?"
+      },
+      "options": [
+        "Autrefois, l'art servait la religion.",
+        "L'art a servi la religion en 1200.",
+        "L'art servira la religion.",
+        "L'art sert la religion."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait for habits and long situations in the past.",
+        "es": "Imperfecto para hábitos y situaciones largas del pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you politely ask when the cathedral opens?",
+        "es": "¿Cómo preguntas con cortesía cuándo abre la catedral?"
+      },
+      "options": [
+        "Pourriez-vous me dire quand ouvre la cathédrale ?",
+        "Quand ouvre la cathédrale, toi ?",
+        "Dis-moi la cathédrale.",
+        "La cathédrale ouvre quand, vite ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional \"pourriez-vous\" = could you.",
+        "es": "Condicional «pourriez-vous» = ¿podría usted?"
+      }
+    }
+  ],
+  "story": {
+    "title": "Une visite au musée",
+    "text": "Dimanche dernier, Emma a emmené son petit frère Nathan au musée d'Orsay, à Paris. C'était le premier dimanche du mois, alors l'entrée était gratuite. Au guichet, il y avait une longue file d'attente. Le musée se trouve dans une ancienne gare, qui a été construite pour l'Exposition universelle de 1900. « Autrefois, les trains arrivaient ici », explique Emma. Ils ont admiré les tableaux impressionnistes, puis les sculptures en bronze et en marbre. Devant un tableau de Monet, Nathan a demandé : « Pourquoi les peintres peignaient-ils toujours la même cathédrale ? » Un guide a souri : « Monet voulait montrer la lumière à différents moments de la journée. » Emma s'est rendu compte que son frère s'intéressait vraiment à l'art. « L'art n'est pas que de la peinture, lui a-t-elle dit. C'est aussi la musique, le cinéma, la danse… » À la sortie, Nathan a voulu acheter une reproduction pour sa chambre. « La semaine prochaine, il y a une exposition de photos au Centre Pompidou. Je vais t'y emmener ! » a promis Emma.",
+    "en": "Last Sunday, Emma took her little brother Nathan to the Musée d'Orsay in Paris. It was the first Sunday of the month, so admission was free. At the ticket office, there was a long queue. The museum is in a former train station, which was built for the 1900 World's Fair. “Trains used to arrive here,” Emma explains. They admired the Impressionist paintings, then the bronze and marble sculptures. In front of a Monet painting, Nathan asked: “Why did painters always paint the same cathedral?” A guide smiled: “Monet wanted to show the light at different times of the day.” Emma realized that her brother was really interested in art. “Art isn't only painting,” she told him. “It's also music, cinema, dance…” At the exit, Nathan wanted to buy a print for his bedroom. “Next week, there's a photo exhibition at the Centre Pompidou. I'll take you there!” Emma promised.",
+    "es": "El domingo pasado, Emma llevó a su hermano pequeño Nathan al museo de Orsay, en París. Era el primer domingo del mes, así que la entrada era gratuita. En la taquilla había una larga cola. El museo está en una antigua estación, que fue construida para la Exposición Universal de 1900. «Antes los trenes llegaban aquí», explica Emma. Admiraron los cuadros impresionistas y luego las esculturas de bronce y de mármol. Delante de un cuadro de Monet, Nathan preguntó: «¿Por qué los pintores pintaban siempre la misma catedral?». Un guía sonrió: «Monet quería mostrar la luz en distintos momentos del día.» Emma se dio cuenta de que a su hermano le interesaba de verdad el arte. «El arte no es solo pintura», le dijo. «También es la música, el cine, la danza…» A la salida, Nathan quiso comprar una reproducción para su habitación. «La semana que viene hay una exposición de fotos en el Centro Pompidou. ¡Te llevaré!», le prometió Emma.",
+    "highlighted_words": [
+      "guichet",
+      "a été construite",
+      "Autrefois",
+      "tableaux",
+      "sculptures en bronze",
+      "cathédrale",
+      "s'est rendu compte",
+      "n'est pas que",
+      "reproduction",
+      "exposition",
+      "t'y emmener"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Cette statue est en bronze",
+      "en": "This statue is made of bronze",
+      "es": "Esta estatua es de bronce"
+    },
+    {
+      "sentence": "Le musée ouvrira à neuf heures",
+      "en": "The museum will open at nine",
+      "es": "El museo abrirá a las nueve"
+    },
+    {
+      "sentence": "La cathédrale a été construite en pierre",
+      "en": "The cathedral was built of stone",
+      "es": "La catedral fue construida en piedra"
+    },
+    {
+      "sentence": "L'entrée est gratuite le dimanche",
+      "en": "Entry is free on Sundays",
+      "es": "La entrada es gratuita los domingos"
+    },
+    {
+      "sentence": "Je vais t'y emmener",
+      "en": "I'll take you there",
+      "es": "Te llevaré allí"
+    },
+    {
+      "sentence": "Où se trouve le guichet",
+      "en": "Where is the ticket office",
+      "es": "¿Dónde está la taquilla?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Le musée est fermé",
+      "en": "The museum is closed",
+      "es": "El museo está cerrado"
+    },
+    {
+      "answer": "J'adore ce tableau",
+      "en": "I love this painting",
+      "es": "Me encanta este cuadro"
+    },
+    {
+      "answer": "Deux entrées, s'il vous plaît",
+      "en": "Two tickets, please",
+      "es": "Dos entradas, por favor"
+    },
+    {
+      "answer": "Nous avons besoin d'un guide",
+      "en": "We need a guide",
+      "es": "Necesitamos un guía"
+    },
+    {
+      "answer": "C'est une exposition gratuite",
+      "en": "It's a free exhibition",
+      "es": "Es una exposición gratuita"
+    },
+    {
+      "answer": "Le château est magnifique",
+      "en": "The castle is magnificent",
+      "es": "El castillo es magnífico"
+    }
+  ]
+}

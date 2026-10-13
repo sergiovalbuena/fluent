@@ -1,0 +1,553 @@
+{
+  "lesson": 28,
+  "slug": "lecon-28",
+  "icon": "📅",
+  "title": {
+    "fr": "Les rendez-vous et les visites",
+    "es": "Las citas y las visitas",
+    "en": "Appointments and visits"
+  },
+  "source": {
+    "audio": "Lecons 28.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "attendre que + subjonctif",
+      "example": "Attendez qu'ils sortent de la salle d'opération.",
+      "en": "\"Wait until\" + subjunctive",
+      "es": "«Esperar a que» + subjuntivo"
+    },
+    {
+      "structure": "avant que + subjonctif",
+      "example": "Dépêche-toi avant que les visites finissent.",
+      "en": "\"Before\" + subjunctive",
+      "es": "«Antes de que» + subjuntivo"
+    },
+    {
+      "structure": "il faut que / il est rare que + subjonctif",
+      "example": "Il faut que je m'habille. / Il est rare qu'une grippe dure si longtemps.",
+      "en": "Necessity and rarity + subjunctive",
+      "es": "Necesidad y rareza + subjuntivo"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Je serai toujours reconnaissante. / Cette fois, nous devrons arriver à l'heure.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "gérondif",
+      "example": "Je laisserai les papiers dans ton bureau en rentrant.",
+      "en": "Gerund (simultaneity)",
+      "es": "Gerundio (simultaneidad)"
+    },
+    {
+      "structure": "passé composé avec être",
+      "example": "Est-ce qu'il est venu hier ? — Oui, mais il n'est pas resté longtemps.",
+      "en": "Verbs of movement with être",
+      "es": "Verbos de movimiento con être"
+    },
+    {
+      "structure": "discours indirect",
+      "example": "Il m'a dit de rester allongée. / Il m'a demandé s'il pouvait entrer.",
+      "en": "Reported orders and questions",
+      "es": "Órdenes y preguntas en estilo indirecto"
+    },
+    {
+      "structure": "mettre du temps à",
+      "example": "J'ai mis beaucoup de temps à arriver à la porte.",
+      "en": "\"To take time to\"",
+      "es": "«Tardar en»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Un rendez-vous\" can be an appointment (doctor, bank) or a date. \"Prendre rendez-vous\" = to make an appointment.",
+      "es": "«Un rendez-vous» puede ser una cita médica o de trabajo, o una cita romántica. «Prendre rendez-vous» = pedir cita."
+    },
+    {
+      "en": "\"Fais comme chez toi\" = make yourself at home. \"Passer chez quelqu'un\" = to drop by someone's place.",
+      "es": "«Fais comme chez toi» = estás en tu casa. «Passer chez quelqu'un» = pasar por casa de alguien."
+    },
+    {
+      "en": "\"Faire la queue\" = to stand in line.",
+      "es": "«Faire la queue» = hacer cola."
+    },
+    {
+      "en": "\"Vendredi, ça vous va ?\" = Does Friday suit you? A very useful phrase for scheduling.",
+      "es": "«Vendredi, ça vous va ?» = ¿Le viene bien el viernes? Muy útil para concertar citas."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le rendez-vous",
+      "en": "appointment / date",
+      "es": "la cita"
+    },
+    {
+      "word": "la réunion",
+      "en": "the meeting",
+      "es": "la reunión"
+    },
+    {
+      "word": "la visite",
+      "en": "the visit",
+      "es": "la visita"
+    },
+    {
+      "word": "les heures de visite",
+      "en": "visiting hours",
+      "es": "el horario de visitas"
+    },
+    {
+      "word": "rendre visite à",
+      "en": "to visit (a person)",
+      "es": "visitar a alguien"
+    },
+    {
+      "word": "passer chez",
+      "en": "to drop by",
+      "es": "pasar por casa de"
+    },
+    {
+      "word": "venir",
+      "en": "to come",
+      "es": "venir"
+    },
+    {
+      "word": "revenir",
+      "en": "to come back",
+      "es": "volver"
+    },
+    {
+      "word": "retourner",
+      "en": "to go back",
+      "es": "regresar"
+    },
+    {
+      "word": "entrer",
+      "en": "to enter",
+      "es": "entrar"
+    },
+    {
+      "word": "sortir",
+      "en": "to go out",
+      "es": "salir"
+    },
+    {
+      "word": "rester",
+      "en": "to stay",
+      "es": "quedarse"
+    },
+    {
+      "word": "accompagner",
+      "en": "to accompany",
+      "es": "acompañar"
+    },
+    {
+      "word": "suivre",
+      "en": "to follow",
+      "es": "seguir"
+    },
+    {
+      "word": "continuer",
+      "en": "to continue",
+      "es": "continuar"
+    },
+    {
+      "word": "attendre",
+      "en": "to wait",
+      "es": "esperar"
+    },
+    {
+      "word": "espérer",
+      "en": "to hope",
+      "es": "esperar (tener esperanza)"
+    },
+    {
+      "word": "déposer",
+      "en": "to drop off",
+      "es": "dejar (a alguien en un lugar)"
+    },
+    {
+      "word": "occupé / occupée",
+      "en": "busy",
+      "es": "ocupado / ocupada"
+    },
+    {
+      "word": "libre",
+      "en": "free",
+      "es": "libre"
+    },
+    {
+      "word": "content / contente",
+      "en": "glad",
+      "es": "contento / contenta"
+    },
+    {
+      "word": "satisfait / satisfaite",
+      "en": "satisfied",
+      "es": "satisfecho / satisfecha"
+    },
+    {
+      "word": "reconnaissant / reconnaissante",
+      "en": "grateful",
+      "es": "agradecido / agradecida"
+    },
+    {
+      "word": "enchanté / enchantée",
+      "en": "delighted (to meet you)",
+      "es": "encantado / encantada"
+    },
+    {
+      "word": "avoir hâte de",
+      "en": "to look forward to",
+      "es": "estar deseando"
+    },
+    {
+      "word": "faire la queue",
+      "en": "to stand in line",
+      "es": "hacer cola"
+    },
+    {
+      "word": "se dépêcher",
+      "en": "to hurry",
+      "es": "darse prisa"
+    },
+    {
+      "word": "en tête à tête",
+      "en": "one-on-one / in private",
+      "es": "a solas"
+    },
+    {
+      "word": "souvent",
+      "en": "often",
+      "es": "a menudo"
+    },
+    {
+      "word": "inattendu / inattendue",
+      "en": "unexpected",
+      "es": "inesperado / inesperada"
+    },
+    {
+      "word": "frapper à la porte",
+      "en": "to knock at the door",
+      "es": "llamar a la puerta"
+    },
+    {
+      "word": "le livreur",
+      "en": "the delivery man",
+      "es": "el repartidor"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Attendez qu'ils sortent de la salle d'opération.",
+      "en": "Wait until they come out of surgery.",
+      "es": "Espere a que salgan del quirófano."
+    },
+    {
+      "phrase": "Je vous serai toujours reconnaissante de votre aide.",
+      "en": "I will always be grateful for your help.",
+      "es": "Siempre le estaré agradecida por su ayuda."
+    },
+    {
+      "phrase": "Aujourd'hui, j'ai rendez-vous chez le dentiste.",
+      "en": "Today, I have a dentist appointment.",
+      "es": "Hoy tengo cita con el dentista."
+    },
+    {
+      "phrase": "Rends visite à ta grand-mère plus souvent, s'il te plaît.",
+      "en": "Visit your grandmother more often, please.",
+      "es": "Visita a tu abuela más a menudo, por favor."
+    },
+    {
+      "phrase": "Entre, fais comme chez toi !",
+      "en": "Come in, make yourself at home!",
+      "es": "¡Pasa, estás en tu casa!"
+    },
+    {
+      "phrase": "Je laisserai les papiers dans ton bureau en rentrant.",
+      "en": "I'll leave the papers in your office on my way home.",
+      "es": "Dejaré los papeles en tu despacho al volver a casa."
+    },
+    {
+      "phrase": "Cette fois, nous devrons arriver à l'heure.",
+      "en": "This time, we will have to arrive on time.",
+      "es": "Esta vez tendremos que llegar a la hora."
+    },
+    {
+      "phrase": "Nadine te dit bonjour.",
+      "en": "Nadine says hello.",
+      "es": "Nadine te manda saludos."
+    },
+    {
+      "phrase": "Je dois te parler en tête à tête.",
+      "en": "I need to talk to you in private.",
+      "es": "Tengo que hablar contigo a solas."
+    },
+    {
+      "phrase": "Je suis allé à la banque et j'ai dû faire la queue pendant une heure.",
+      "en": "I went to the bank and had to queue for an hour.",
+      "es": "Fui al banco y tuve que hacer cola durante una hora."
+    },
+    {
+      "phrase": "Revenez plus tard, il est en réunion.",
+      "en": "Come back later, he is in a meeting.",
+      "es": "Vuelva más tarde, está en una reunión."
+    },
+    {
+      "phrase": "Pourrais-je avoir un rendez-vous jeudi ? — Désolée, il est très occupé ce jour-là. Vendredi, ça vous va ?",
+      "en": "Could I have an appointment on Thursday? — Sorry, he is very busy that day. Does Friday suit you?",
+      "es": "¿Podría tener cita el jueves? — Lo siento, ese día está muy ocupado. ¿Le viene bien el viernes?"
+    },
+    {
+      "phrase": "Dépêche-toi, on doit aller voir Marguerite avant que les visites finissent !",
+      "en": "Hurry up, we have to go see Marguerite before visiting hours end!",
+      "es": "¡Date prisa, tenemos que ir a ver a Marguerite antes de que termine el horario de visitas!"
+    },
+    {
+      "phrase": "Attends une minute, il faut que je m'habille !",
+      "en": "Wait a minute, I have to get dressed!",
+      "es": "¡Espera un minuto, tengo que vestirme!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Attendez qu'il ___.\"",
+        "es": "Completa: «Attendez qu'il ___.»"
+      },
+      "options": [
+        "sorte",
+        "sort",
+        "sortira",
+        "sortait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Attendre que\" + subjunctive.",
+        "es": "«Attendre que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Partons avant qu'il ___.\"",
+        "es": "Completa: «Partons avant qu'il ___.»"
+      },
+      "options": [
+        "pleuve",
+        "pleut",
+        "pleuvra",
+        "pleuvait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avant que\" + subjunctive.",
+        "es": "«Avant que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Which auxiliary? \"Il ___ venu hier.\"",
+        "es": "¿Qué auxiliar? «Il ___ venu hier.»"
+      },
+      "options": [
+        "est",
+        "a",
+        "était",
+        "ont"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Venir, aller, sortir, rester… use \"être\".",
+        "es": "Venir, aller, sortir, rester… usan «être»."
+      }
+    },
+    {
+      "question": {
+        "en": "Reported question: \"Puis-je entrer ?\" → Il m'a demandé ___ il pouvait entrer.",
+        "es": "Pregunta indirecta: «Puis-je entrer ?» → Il m'a demandé ___ il pouvait entrer."
+      },
+      "options": [
+        "s'",
+        "que",
+        "quoi",
+        "si que"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Yes/no questions are reported with \"si\".",
+        "es": "Las preguntas de sí/no se introducen con «si»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Fais comme chez toi.\" Meaning?",
+        "es": "«Fais comme chez toi.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "Make yourself at home.",
+          "Go home.",
+          "Do it at your place.",
+          "Your house is nice."
+        ],
+        "es": [
+          "Estás en tu casa.",
+          "Vete a casa.",
+          "Hazlo en tu casa.",
+          "Tu casa es bonita."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "A warm welcome.",
+        "es": "Una bienvenida cálida."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"to stand in line\"?",
+        "es": "¿Cómo se dice «hacer cola»?"
+      },
+      "options": [
+        "faire la queue",
+        "faire la ligne",
+        "attendre la file",
+        "rester en ligne"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Literally \"to make the tail\".",
+        "es": "Literalmente «hacer la cola»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il est rare qu'une grippe ___ si longtemps.\"",
+        "es": "Completa: «Il est rare qu'une grippe ___ si longtemps.»"
+      },
+      "options": [
+        "dure",
+        "dure-t-elle",
+        "durera",
+        "durait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il est rare que\" + subjunctive.",
+        "es": "«Il est rare que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Rendre visite à\" is used for…",
+        "es": "«Rendre visite à» se usa para…"
+      },
+      "options": {
+        "en": [
+          "visiting a person",
+          "visiting a museum",
+          "giving something back",
+          "making an appointment"
+        ],
+        "es": [
+          "visitar a una persona",
+          "visitar un museo",
+          "devolver algo",
+          "pedir cita"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "For places, use \"visiter\": visiter un musée.",
+        "es": "Para lugares se usa «visiter»: visiter un musée."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une visite inattendue",
+    "text": "Madame Arnaud a quatre-vingts ans et elle habite seule dans un petit appartement à Nantes. Un mardi matin, en descendant de son lit, elle a glissé et elle est tombée. Elle avait très mal à la jambe et son téléphone était resté dans la cuisine. Elle a essayé de se lever, mais c'était impossible. Elle a attendu qu'un voisin passe, mais personne n'est venu. D'un moment à l'autre, quelqu'un a frappé à la porte. « Livraison ! » C'était le livreur qui apportait ses courses, comme tous les mardis. « Entrez, la porte est ouverte ! » a-t-elle crié. Le jeune homme est entré et il l'a trouvée par terre. Il lui a demandé si elle pouvait bouger la jambe, puis il lui a dit de ne pas se lever. Il a appelé les secours et il est resté avec elle jusqu'à ce que l'ambulance arrive. « Il faut que je vous remercie, vous m'avez sauvée ! » lui a-t-elle dit à l'hôpital. Depuis, chaque mardi, le livreur prend cinq minutes pour boire un café avec elle. « Je vous serai toujours reconnaissante », répète Madame Arnaud.",
+    "en": "Mrs. Arnaud is eighty and lives alone in a small apartment in Nantes. One Tuesday morning, while getting out of bed, she slipped and fell. Her leg hurt a lot and her phone had stayed in the kitchen. She tried to get up, but it was impossible. She waited for a neighbor to come by, but nobody came. All of a sudden, someone knocked at the door. “Delivery!” It was the delivery man bringing her groceries, as every Tuesday. “Come in, the door is open!” she shouted. The young man came in and found her on the floor. He asked her if she could move her leg, then told her not to get up. He called the emergency services and stayed with her until the ambulance arrived. “I must thank you, you saved me!” she told him at the hospital. Since then, every Tuesday, the delivery man takes five minutes to have a coffee with her. “I will always be grateful to you,” Mrs. Arnaud repeats.",
+    "es": "La señora Arnaud tiene ochenta años y vive sola en un pequeño apartamento en Nantes. Un martes por la mañana, al bajarse de la cama, resbaló y se cayó. Le dolía mucho la pierna y el teléfono se había quedado en la cocina. Intentó levantarse, pero era imposible. Esperó a que pasara algún vecino, pero no vino nadie. De repente, alguien llamó a la puerta. «¡Reparto!» Era el repartidor que le traía la compra, como todos los martes. «¡Pase, la puerta está abierta!», gritó. El joven entró y la encontró en el suelo. Le preguntó si podía mover la pierna y luego le dijo que no se levantara. Llamó a emergencias y se quedó con ella hasta que llegó la ambulancia. «¡Tengo que darle las gracias, me ha salvado!», le dijo en el hospital. Desde entonces, cada martes, el repartidor se toma cinco minutos para tomar un café con ella. «Siempre le estaré agradecida», repite la señora Arnaud.",
+    "highlighted_words": [
+      "en descendant",
+      "elle est tombée",
+      "était resté",
+      "Elle a attendu qu'un voisin passe",
+      "personne n'est venu",
+      "a frappé à la porte",
+      "Il lui a demandé si",
+      "il lui a dit de",
+      "jusqu'à ce que",
+      "Il faut que je vous remercie",
+      "serai toujours reconnaissante"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'ai rendez-vous chez le médecin",
+      "en": "I have a doctor's appointment",
+      "es": "Tengo cita con el médico"
+    },
+    {
+      "sentence": "Attends qu'il sorte",
+      "en": "Wait until he comes out",
+      "es": "Espera a que salga"
+    },
+    {
+      "sentence": "Il est venu hier soir",
+      "en": "He came last night",
+      "es": "Vino anoche"
+    },
+    {
+      "sentence": "Fais comme chez toi",
+      "en": "Make yourself at home",
+      "es": "Estás en tu casa"
+    },
+    {
+      "sentence": "Il m'a demandé si j'étais libre",
+      "en": "He asked me if I was free",
+      "es": "Me preguntó si estaba libre"
+    },
+    {
+      "sentence": "Vendredi ça vous va",
+      "en": "Does Friday suit you",
+      "es": "¿Le viene bien el viernes?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je suis très occupée",
+      "en": "I am very busy (f)",
+      "es": "Estoy muy ocupada"
+    },
+    {
+      "answer": "Revenez plus tard",
+      "en": "Come back later",
+      "es": "Vuelva más tarde"
+    },
+    {
+      "answer": "Dépêche-toi",
+      "en": "Hurry up",
+      "es": "Date prisa"
+    },
+    {
+      "answer": "Il est en réunion",
+      "en": "He is in a meeting",
+      "es": "Está en una reunión"
+    },
+    {
+      "answer": "Enchanté de te connaître",
+      "en": "Nice to meet you",
+      "es": "Encantado de conocerte"
+    },
+    {
+      "answer": "Passe chez moi ce soir",
+      "en": "Drop by my place tonight",
+      "es": "Pasa por mi casa esta noche"
+    }
+  ]
+}

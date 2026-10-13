@@ -1,0 +1,660 @@
+{
+  "lesson": 15,
+  "slug": "lecon-15",
+  "icon": "🥖",
+  "title": {
+    "fr": "Les aliments et les boissons",
+    "es": "Los alimentos y las bebidas",
+    "en": "Food and drinks"
+  },
+  "source": {
+    "audio": "Lecons 15.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "articles partitifs",
+      "example": "du pain, de la crème, des œufs",
+      "en": "Partitive articles (some)",
+      "es": "Artículos partitivos"
+    },
+    {
+      "structure": "négation + de",
+      "example": "Il n'y a plus de sel. / Je ne veux pas de dessert.",
+      "en": "\"de\" after a negation",
+      "es": "«de» después de la negación"
+    },
+    {
+      "structure": "ne … que",
+      "example": "Elle ne boit que de l'eau.",
+      "en": "Restriction: \"only\"",
+      "es": "Restricción: «solo»"
+    },
+    {
+      "structure": "impératif + pronoms",
+      "example": "Passe-moi le sel. / Donne-lui du jus. / Offre-les aux invités.",
+      "en": "Imperative with pronouns",
+      "es": "Imperativo con pronombres"
+    },
+    {
+      "structure": "conditionnel de politesse",
+      "example": "Je voudrais un verre de vin. / Je préférerais un jus.",
+      "en": "Polite conditional",
+      "es": "Condicional de cortesía"
+    },
+    {
+      "structure": "venir de + infinitif",
+      "example": "Ces croissants viennent de sortir du four.",
+      "en": "Recent past",
+      "es": "Pasado reciente"
+    },
+    {
+      "structure": "ne cesser de + infinitif",
+      "example": "Le médecin ne cesse de me répéter que je dois faire un régime.",
+      "en": "\"to keep doing\"",
+      "es": "«no dejar de»"
+    },
+    {
+      "structure": "en train de",
+      "example": "La glace est en train de fondre.",
+      "en": "Action in progress",
+      "es": "Acción en curso"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Partitives: du (masc.), de la (fem.), de l' (vowel), des (plural). After a negation they become \"de\": \"pas de pain\".",
+      "es": "Partitivos: du (masc.), de la (fem.), de l' (vocal), des (plural). Tras una negación pasan a «de»: «pas de pain»."
+    },
+    {
+      "en": "Meals: le petit déjeuner (breakfast), le déjeuner (lunch), le goûter (afternoon snack), le dîner (dinner).",
+      "es": "Comidas: le petit déjeuner (desayuno), le déjeuner (almuerzo), le goûter (merienda), le dîner (cena)."
+    },
+    {
+      "en": "\"Mettre la table\" = to set the table; \"débarrasser la table\" = to clear it.",
+      "es": "«Mettre la table» = poner la mesa; «débarrasser la table» = quitarla."
+    },
+    {
+      "en": "\"Être au régime\" = to be on a diet; \"végétarien(ne)\" = vegetarian.",
+      "es": "«Être au régime» = estar a dieta; «végétarien(ne)» = vegetariano/a."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le petit déjeuner",
+      "en": "breakfast",
+      "es": "el desayuno"
+    },
+    {
+      "word": "le déjeuner",
+      "en": "lunch",
+      "es": "el almuerzo"
+    },
+    {
+      "word": "le dîner",
+      "en": "dinner",
+      "es": "la cena"
+    },
+    {
+      "word": "le dessert",
+      "en": "dessert",
+      "es": "el postre"
+    },
+    {
+      "word": "le pain",
+      "en": "bread",
+      "es": "el pan"
+    },
+    {
+      "word": "la baguette",
+      "en": "the baguette",
+      "es": "la baguette / la barra de pan"
+    },
+    {
+      "word": "le beurre",
+      "en": "butter",
+      "es": "la mantequilla"
+    },
+    {
+      "word": "le fromage",
+      "en": "cheese",
+      "es": "el queso"
+    },
+    {
+      "word": "le jambon",
+      "en": "ham",
+      "es": "el jamón"
+    },
+    {
+      "word": "les lardons",
+      "en": "bacon bits",
+      "es": "los taquitos de beicon"
+    },
+    {
+      "word": "les œufs",
+      "en": "eggs",
+      "es": "los huevos"
+    },
+    {
+      "word": "l'omelette",
+      "en": "the omelet",
+      "es": "la tortilla francesa"
+    },
+    {
+      "word": "la crêpe",
+      "en": "the crepe",
+      "es": "la crepe"
+    },
+    {
+      "word": "le riz",
+      "en": "rice",
+      "es": "el arroz"
+    },
+    {
+      "word": "la soupe",
+      "en": "soup",
+      "es": "la sopa"
+    },
+    {
+      "word": "la salade",
+      "en": "salad / lettuce",
+      "es": "la ensalada / la lechuga"
+    },
+    {
+      "word": "le bœuf",
+      "en": "beef",
+      "es": "la carne de res"
+    },
+    {
+      "word": "le porc",
+      "en": "pork",
+      "es": "el cerdo"
+    },
+    {
+      "word": "l'agneau",
+      "en": "lamb",
+      "es": "el cordero"
+    },
+    {
+      "word": "le poulet",
+      "en": "chicken",
+      "es": "el pollo"
+    },
+    {
+      "word": "le canard",
+      "en": "duck",
+      "es": "el pato"
+    },
+    {
+      "word": "la saucisse",
+      "en": "sausage",
+      "es": "la salchicha"
+    },
+    {
+      "word": "le steak",
+      "en": "steak",
+      "es": "el filete"
+    },
+    {
+      "word": "le gâteau",
+      "en": "cake",
+      "es": "el pastel"
+    },
+    {
+      "word": "la tarte aux pommes",
+      "en": "apple pie",
+      "es": "la tarta de manzana"
+    },
+    {
+      "word": "la glace",
+      "en": "ice cream",
+      "es": "el helado"
+    },
+    {
+      "word": "le yaourt",
+      "en": "yogurt",
+      "es": "el yogur"
+    },
+    {
+      "word": "le biscuit",
+      "en": "cookie",
+      "es": "la galleta"
+    },
+    {
+      "word": "le sel",
+      "en": "salt",
+      "es": "la sal"
+    },
+    {
+      "word": "le poivre",
+      "en": "pepper",
+      "es": "la pimienta"
+    },
+    {
+      "word": "l'huile",
+      "en": "oil",
+      "es": "el aceite"
+    },
+    {
+      "word": "le vinaigre",
+      "en": "vinegar",
+      "es": "el vinagre"
+    },
+    {
+      "word": "la moutarde",
+      "en": "mustard",
+      "es": "la mostaza"
+    },
+    {
+      "word": "le sucre",
+      "en": "sugar",
+      "es": "el azúcar"
+    },
+    {
+      "word": "l'eau minérale",
+      "en": "mineral water",
+      "es": "el agua mineral"
+    },
+    {
+      "word": "le jus d'orange",
+      "en": "orange juice",
+      "es": "el jugo de naranja"
+    },
+    {
+      "word": "le lait",
+      "en": "milk",
+      "es": "la leche"
+    },
+    {
+      "word": "le café",
+      "en": "coffee",
+      "es": "el café"
+    },
+    {
+      "word": "le thé",
+      "en": "tea",
+      "es": "el té"
+    },
+    {
+      "word": "la bière",
+      "en": "beer",
+      "es": "la cerveza"
+    },
+    {
+      "word": "le vin",
+      "en": "wine",
+      "es": "el vino"
+    },
+    {
+      "word": "le cidre",
+      "en": "cider",
+      "es": "la sidra"
+    },
+    {
+      "word": "la fourchette",
+      "en": "fork",
+      "es": "el tenedor"
+    },
+    {
+      "word": "le couteau",
+      "en": "knife",
+      "es": "el cuchillo"
+    },
+    {
+      "word": "la cuillère",
+      "en": "spoon",
+      "es": "la cuchara"
+    },
+    {
+      "word": "l'assiette",
+      "en": "plate",
+      "es": "el plato"
+    },
+    {
+      "word": "le verre",
+      "en": "glass",
+      "es": "el vaso"
+    },
+    {
+      "word": "la tasse",
+      "en": "cup",
+      "es": "la taza"
+    },
+    {
+      "word": "la serviette",
+      "en": "napkin",
+      "es": "la servilleta"
+    },
+    {
+      "word": "la nappe",
+      "en": "tablecloth",
+      "es": "el mantel"
+    },
+    {
+      "word": "le plateau",
+      "en": "tray",
+      "es": "la bandeja"
+    },
+    {
+      "word": "chaud / froid / tiède",
+      "en": "hot / cold / lukewarm",
+      "es": "caliente / frío / tibio"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "J'aime bien un bon déjeuner et un dîner léger.",
+      "en": "I like a good lunch and a light dinner.",
+      "es": "Me gusta un buen almuerzo y una cena ligera."
+    },
+    {
+      "phrase": "Je veux du pain avec du beurre.",
+      "en": "I want some bread with butter.",
+      "es": "Quiero pan con mantequilla."
+    },
+    {
+      "phrase": "La bière est faite avec de l'orge.",
+      "en": "Beer is made from barley.",
+      "es": "La cerveza se hace con cebada."
+    },
+    {
+      "phrase": "Je voudrais un verre de vin rouge, s'il vous plaît.",
+      "en": "I would like a glass of red wine, please.",
+      "es": "Quisiera una copa de vino tinto, por favor."
+    },
+    {
+      "phrase": "Mets la nappe sur la table.",
+      "en": "Put the tablecloth on the table.",
+      "es": "Pon el mantel en la mesa."
+    },
+    {
+      "phrase": "Cette soupe est froide !",
+      "en": "This soup is cold!",
+      "es": "¡Esta sopa está fría!"
+    },
+    {
+      "phrase": "Dépêche-toi, la glace est en train de fondre !",
+      "en": "Hurry up, the ice cream is melting!",
+      "es": "¡Date prisa, el helado se está derritiendo!"
+    },
+    {
+      "phrase": "Mélangez l'huile, le vinaigre, le sel, le poivre et la moutarde pour faire une vinaigrette.",
+      "en": "Mix the oil, vinegar, salt, pepper and mustard to make a vinaigrette.",
+      "es": "Mezcle el aceite, el vinagre, la sal, la pimienta y la mostaza para hacer una vinagreta."
+    },
+    {
+      "phrase": "Je ne bois que de l'eau minérale.",
+      "en": "I only drink mineral water.",
+      "es": "Solo bebo agua mineral."
+    },
+    {
+      "phrase": "Tu peux me passer le sel, s'il te plaît ? — Il n'y a plus de sel !",
+      "en": "Can you pass me the salt, please? — There's no more salt!",
+      "es": "¿Me pasas la sal, por favor? — ¡Ya no queda sal!"
+    },
+    {
+      "phrase": "Mets les crêpes sur une assiette et offre-les aux invités.",
+      "en": "Put the crepes on a plate and offer them to the guests.",
+      "es": "Pon las crepes en un plato y ofréceselas a los invitados."
+    },
+    {
+      "phrase": "Tu veux de la crème dans ton café ? — Non merci, ça va comme ça.",
+      "en": "Do you want cream in your coffee? — No thanks, it's fine like that.",
+      "es": "¿Quieres nata en el café? — No, gracias, así está bien."
+    },
+    {
+      "phrase": "Un apéritif avant le déjeuner ? — Je préférerais un jus de fruits.",
+      "en": "An aperitif before lunch? — I would prefer a fruit juice.",
+      "es": "¿Un aperitivo antes del almuerzo? — Preferiría un jugo de frutas."
+    },
+    {
+      "phrase": "Le chocolat est trop chaud ? — Non, il est tiède.",
+      "en": "Is the hot chocolate too hot? — No, it's lukewarm.",
+      "es": "¿El chocolate está demasiado caliente? — No, está tibio."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Je voudrais ___ eau, s'il vous plaît.\"",
+        "es": "Completa: «Je voudrais ___ eau, s'il vous plaît.»"
+      },
+      "options": [
+        "de l'",
+        "du",
+        "de la",
+        "des"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Before a vowel: de l'.",
+        "es": "Delante de vocal: de l'."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je ne mange pas ___ viande.\"",
+        "es": "Completa: «Je ne mange pas ___ viande.»"
+      },
+      "options": [
+        "de",
+        "de la",
+        "du",
+        "la"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "After a negation, partitives become \"de\".",
+        "es": "Tras una negación, los partitivos se convierten en «de»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Elle ne boit que du thé.\" What does it mean?",
+        "es": "«Elle ne boit que du thé.» ¿Qué significa?"
+      },
+      "options": {
+        "en": [
+          "She only drinks tea.",
+          "She doesn't drink tea.",
+          "She drinks a lot of tea.",
+          "She never drinks tea."
+        ],
+        "es": [
+          "Solo bebe té.",
+          "No bebe té.",
+          "Bebe mucho té.",
+          "Nunca bebe té."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … que\" = only.",
+        "es": "«Ne … que» = solo."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you ask someone to pass you the bread (tu)?",
+        "es": "¿Cómo pides a alguien que te pase el pan (tu)?"
+      },
+      "options": [
+        "Passe-moi le pain, s'il te plaît.",
+        "Me passe le pain, s'il te plaît.",
+        "Passe le pain moi, s'il te plaît.",
+        "Tu me passe le pain."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imperative + hyphen + moi.",
+        "es": "Imperativo + guion + moi."
+      }
+    },
+    {
+      "question": {
+        "en": "Which meal is \"le déjeuner\" in France?",
+        "es": "¿Qué comida es «le déjeuner» en Francia?"
+      },
+      "options": {
+        "en": [
+          "lunch",
+          "breakfast",
+          "dinner",
+          "snack"
+        ],
+        "es": [
+          "el almuerzo",
+          "el desayuno",
+          "la cena",
+          "la merienda"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Breakfast = le petit déjeuner.",
+        "es": "El desayuno = le petit déjeuner."
+      }
+    },
+    {
+      "question": {
+        "en": "Which one do you use to cut meat?",
+        "es": "¿Qué usas para cortar la carne?"
+      },
+      "options": [
+        "le couteau",
+        "la cuillère",
+        "la serviette",
+        "la nappe"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Couteau = knife, fourchette = fork, cuillère = spoon.",
+        "es": "Couteau = cuchillo, fourchette = tenedor, cuillère = cuchara."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Les croissants viennent de sortir du four.\" Meaning?",
+        "es": "«Les croissants viennent de sortir du four.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "The croissants have just come out of the oven.",
+          "The croissants come from the oven.",
+          "The croissants will go in the oven.",
+          "The croissants are in the oven."
+        ],
+        "es": [
+          "Los cruasanes acaban de salir del horno.",
+          "Los cruasanes vienen del horno.",
+          "Los cruasanes irán al horno.",
+          "Los cruasanes están en el horno."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Venir de\" + infinitive = just happened.",
+        "es": "«Venir de» + infinitivo = acaba de ocurrir."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you politely say \"I would prefer a coffee\"?",
+        "es": "¿Cómo dices con cortesía «Preferiría un café»?"
+      },
+      "options": [
+        "Je préférerais un café.",
+        "Je préfère café.",
+        "Je préférerai un café.",
+        "Je préférais un café."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional: préférer → je préférerais.",
+        "es": "Condicional: préférer → je préférerais."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le gourmand",
+    "text": "Je m'appelle Gaspard Moreau, j'ai cinquante ans et je suis chauffeur de taxi à Lyon. J'adore manger, surtout quand mon mari cuisine. J'aime toutes sortes de viandes : le bœuf, le canard, l'agneau… Rien que d'en parler, j'ai faim ! Au petit déjeuner, je prends généralement deux tartines avec du beurre et de la confiture, un café au lait et un jus d'orange. Si j'ai encore faim, je mange un yaourt avec des fruits. À la pause, mes collègues et moi buvons du café et partageons des croissants qui viennent de sortir du four. À midi, je mange un sandwich au jambon et des frites. Mais mon repas préféré, c'est le dîner. Je rentre vers sept heures, je me lave les mains et je me mets à table. Nous commençons par une soupe, puis il y a de la viande avec des pommes de terre et une salade. Au dessert, mon mari me sert une part de tarte aux pommes. Le problème ? Mon médecin ne cesse de me répéter que je dois manger moins gras. Alors maintenant, le soir, je ne prends que de la salade… enfin, presque !",
+    "en": "My name is Gaspard Moreau, I'm fifty and I'm a taxi driver in Lyon. I love eating, especially when my husband cooks. I like all kinds of meat: beef, duck, lamb… Just talking about it makes me hungry! For breakfast, I usually have two slices of bread with butter and jam, a coffee with milk and an orange juice. If I'm still hungry, I eat a yogurt with fruit. On our break, my colleagues and I drink coffee and share croissants that have just come out of the oven. At noon, I eat a ham sandwich and fries. But my favorite meal is dinner. I get home around seven, wash my hands and sit down at the table. We start with soup, then there's meat with potatoes and a salad. For dessert, my husband serves me a slice of apple pie. The problem? My doctor keeps telling me I must eat less fat. So now, in the evening, I only have salad… well, almost!",
+    "es": "Me llamo Gaspard Moreau, tengo cincuenta años y soy taxista en Lyon. Me encanta comer, sobre todo cuando cocina mi marido. Me gustan todo tipo de carnes: la de res, el pato, el cordero… ¡Solo de hablar de ello me entra hambre! En el desayuno suelo tomar dos tostadas con mantequilla y mermelada, un café con leche y un jugo de naranja. Si todavía tengo hambre, me como un yogur con fruta. En el descanso, mis compañeros y yo tomamos café y compartimos cruasanes recién salidos del horno. A mediodía me como un sándwich de jamón y papas fritas. Pero mi comida favorita es la cena. Vuelvo a casa hacia las siete, me lavo las manos y me siento a la mesa. Empezamos con una sopa, luego hay carne con papas y una ensalada. De postre, mi marido me sirve un trozo de tarta de manzana. ¿El problema? Mi médico no deja de repetirme que tengo que comer con menos grasa. Así que ahora, por la noche, solo tomo ensalada… bueno, ¡casi!",
+    "highlighted_words": [
+      "petit déjeuner",
+      "du beurre",
+      "de la confiture",
+      "Si j'ai encore faim",
+      "viennent de sortir",
+      "À midi",
+      "dîner",
+      "je me mets à table",
+      "ne cesse de",
+      "je ne prends que"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je voudrais du pain",
+      "en": "I would like some bread",
+      "es": "Quisiera pan"
+    },
+    {
+      "sentence": "Il n'y a plus de sel",
+      "en": "There's no more salt",
+      "es": "Ya no queda sal"
+    },
+    {
+      "sentence": "Passe-moi le sel",
+      "en": "Pass me the salt",
+      "es": "Pásame la sal"
+    },
+    {
+      "sentence": "Elle ne boit que de l'eau",
+      "en": "She only drinks water",
+      "es": "Solo bebe agua"
+    },
+    {
+      "sentence": "La glace est en train de fondre",
+      "en": "The ice cream is melting",
+      "es": "El helado se está derritiendo"
+    },
+    {
+      "sentence": "Mets la table s'il te plaît",
+      "en": "Set the table please",
+      "es": "Pon la mesa, por favor"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je veux du fromage",
+      "en": "I want some cheese",
+      "es": "Quiero queso"
+    },
+    {
+      "answer": "Ce gâteau est délicieux",
+      "en": "This cake is delicious",
+      "es": "Este pastel está delicioso"
+    },
+    {
+      "answer": "Je ne veux pas de dessert",
+      "en": "I don't want any dessert",
+      "es": "No quiero postre"
+    },
+    {
+      "answer": "Je suis végétarienne",
+      "en": "I am vegetarian (f)",
+      "es": "Soy vegetariana"
+    },
+    {
+      "answer": "Je voudrais un verre d'eau",
+      "en": "I would like a glass of water",
+      "es": "Quisiera un vaso de agua"
+    },
+    {
+      "answer": "Je déteste le foie",
+      "en": "I hate liver",
+      "es": "Odio el hígado"
+    }
+  ]
+}

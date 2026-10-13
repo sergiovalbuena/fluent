@@ -1,0 +1,593 @@
+{
+  "lesson": 31,
+  "slug": "lecon-31",
+  "icon": "🧳",
+  "title": {
+    "fr": "À l'agence de voyages",
+    "es": "En la agencia de viajes",
+    "en": "At the travel agency"
+  },
+  "source": {
+    "audio": "Lecons 31.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "il faut que + subjonctif",
+      "example": "Il faut que je parte bientôt. / Il faut que je fasse mes valises.",
+      "en": "Necessity + subjunctive",
+      "es": "Necesidad + subjuntivo"
+    },
+    {
+      "structure": "il nous faut + nom / infinitif",
+      "example": "Il nous faut bien organiser le voyage.",
+      "en": "\"We need\"",
+      "es": "«Necesitamos»"
+    },
+    {
+      "structure": "ne … que",
+      "example": "Ce n'est qu'un voyage d'affaires.",
+      "en": "\"only\"",
+      "es": "«solo»"
+    },
+    {
+      "structure": "le moins / le plus possible",
+      "example": "Nous emportons le moins de choses possible.",
+      "en": "\"As little / as much as possible\"",
+      "es": "«Lo menos / lo más posible»"
+    },
+    {
+      "structure": "impératif négatif",
+      "example": "N'emporte pas l'ordinateur ! N'oublie pas de réserver le vol.",
+      "en": "Negative imperative",
+      "es": "Imperativo negativo"
+    },
+    {
+      "structure": "voix passive",
+      "example": "Tout a été organisé par notre agent de voyages.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    },
+    {
+      "structure": "ainsi / éviter de",
+      "example": "Faisons les valises à temps : ainsi, nous éviterons d'oublier quelque chose.",
+      "en": "Consequence and avoidance",
+      "es": "Consecuencia y evitar algo"
+    },
+    {
+      "structure": "premièrement / deuxièmement / enfin",
+      "example": "Premièrement, cela rapproche la famille…",
+      "en": "Ordering ideas",
+      "es": "Ordenar ideas"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Faire ses valises / ses bagages\" = to pack; \"défaire ses valises\" = to unpack.",
+      "es": "«Faire ses valises / ses bagages» = hacer las maletas; «défaire ses valises» = deshacerlas."
+    },
+    {
+      "en": "\"Un voyage de noces\" = honeymoon; \"un voyage d'affaires\" = business trip; \"une croisière\" = cruise.",
+      "es": "«Un voyage de noces» = luna de miel; «un voyage d'affaires» = viaje de negocios; «une croisière» = crucero."
+    },
+    {
+      "en": "Hotels: \"un lit double\" (double bed), \"deux lits simples\" (twin beds), \"petit-déjeuner compris\" (breakfast included), \"taxes comprises\" (taxes included).",
+      "es": "Hoteles: «un lit double» (cama de matrimonio), «deux lits simples» (dos camas individuales), «petit-déjeuner compris» (desayuno incluido), «taxes comprises» (impuestos incluidos)."
+    },
+    {
+      "en": "\"À l'étranger\" = abroad; \"un étranger / une étrangère\" = a foreigner.",
+      "es": "«À l'étranger» = en el extranjero; «un étranger / une étrangère» = un extranjero / una extranjera."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'agence de voyages",
+      "en": "the travel agency",
+      "es": "la agencia de viajes"
+    },
+    {
+      "word": "l'agent de voyages",
+      "en": "the travel agent",
+      "es": "el agente de viajes"
+    },
+    {
+      "word": "le voyage",
+      "en": "the trip",
+      "es": "el viaje"
+    },
+    {
+      "word": "le voyage d'affaires",
+      "en": "the business trip",
+      "es": "el viaje de negocios"
+    },
+    {
+      "word": "le voyage de noces",
+      "en": "the honeymoon",
+      "es": "la luna de miel"
+    },
+    {
+      "word": "la croisière",
+      "en": "the cruise",
+      "es": "el crucero"
+    },
+    {
+      "word": "l'aventure",
+      "en": "adventure",
+      "es": "la aventura"
+    },
+    {
+      "word": "la réservation",
+      "en": "the booking",
+      "es": "la reserva"
+    },
+    {
+      "word": "réserver",
+      "en": "to book",
+      "es": "reservar"
+    },
+    {
+      "word": "annuler",
+      "en": "to cancel",
+      "es": "cancelar"
+    },
+    {
+      "word": "l'itinéraire",
+      "en": "the itinerary",
+      "es": "el itinerario"
+    },
+    {
+      "word": "le séjour",
+      "en": "the stay",
+      "es": "la estancia"
+    },
+    {
+      "word": "la destination",
+      "en": "the destination",
+      "es": "el destino"
+    },
+    {
+      "word": "le départ",
+      "en": "the departure",
+      "es": "la salida"
+    },
+    {
+      "word": "le retour",
+      "en": "the return",
+      "es": "la vuelta"
+    },
+    {
+      "word": "l'aller simple",
+      "en": "the one-way ticket",
+      "es": "el billete de ida"
+    },
+    {
+      "word": "l'aller-retour",
+      "en": "the return ticket",
+      "es": "el billete de ida y vuelta"
+    },
+    {
+      "word": "l'hôtel",
+      "en": "the hotel",
+      "es": "el hotel"
+    },
+    {
+      "word": "le chalet",
+      "en": "the chalet",
+      "es": "el chalé / la cabaña"
+    },
+    {
+      "word": "le bord de mer",
+      "en": "the seaside",
+      "es": "la costa"
+    },
+    {
+      "word": "la valise",
+      "en": "the suitcase",
+      "es": "la maleta"
+    },
+    {
+      "word": "les bagages",
+      "en": "luggage",
+      "es": "el equipaje"
+    },
+    {
+      "word": "faire ses valises",
+      "en": "to pack",
+      "es": "hacer las maletas"
+    },
+    {
+      "word": "le sac",
+      "en": "the bag",
+      "es": "la bolsa"
+    },
+    {
+      "word": "le coffre",
+      "en": "the car trunk",
+      "es": "el maletero"
+    },
+    {
+      "word": "à l'étranger",
+      "en": "abroad",
+      "es": "en el extranjero"
+    },
+    {
+      "word": "étranger / étrangère",
+      "en": "foreign / foreigner",
+      "es": "extranjero / extranjera"
+    },
+    {
+      "word": "le touriste",
+      "en": "the tourist",
+      "es": "el turista"
+    },
+    {
+      "word": "l'information",
+      "en": "information",
+      "es": "la información"
+    },
+    {
+      "word": "compris / comprise",
+      "en": "included",
+      "es": "incluido / incluida"
+    },
+    {
+      "word": "coûter",
+      "en": "to cost",
+      "es": "costar"
+    },
+    {
+      "word": "dépenser",
+      "en": "to spend",
+      "es": "gastar"
+    },
+    {
+      "word": "payer",
+      "en": "to pay",
+      "es": "pagar"
+    },
+    {
+      "word": "organiser",
+      "en": "to organize",
+      "es": "organizar"
+    },
+    {
+      "word": "prêt / prête",
+      "en": "ready",
+      "es": "listo / lista"
+    },
+    {
+      "word": "rester",
+      "en": "to stay",
+      "es": "quedarse"
+    },
+    {
+      "word": "revenir",
+      "en": "to come back",
+      "es": "volver"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "J'ai un long voyage qui m'attend ; il faut que je parte bientôt.",
+      "en": "I have a long trip ahead of me; I have to leave soon.",
+      "es": "Me espera un largo viaje; tengo que irme pronto."
+    },
+    {
+      "phrase": "Nous faisons toujours les valises la veille du départ.",
+      "en": "We always pack the day before departure.",
+      "es": "Siempre hacemos las maletas la víspera de la salida."
+    },
+    {
+      "phrase": "Le voyage coûte cher : il nous faut bien l'organiser.",
+      "en": "The trip is expensive: we need to organize it well.",
+      "es": "El viaje es caro: tenemos que organizarlo bien."
+    },
+    {
+      "phrase": "N'oublie pas de réserver notre vol !",
+      "en": "Don't forget to book our flight!",
+      "es": "¡No olvides reservar nuestro vuelo!"
+    },
+    {
+      "phrase": "On dépense beaucoup d'argent quand on part en voyage.",
+      "en": "You spend a lot of money when you travel.",
+      "es": "Se gasta mucho dinero cuando uno se va de viaje."
+    },
+    {
+      "phrase": "Ils vivent à l'étranger depuis cinq ans.",
+      "en": "They have been living abroad for five years.",
+      "es": "Viven en el extranjero desde hace cinco años."
+    },
+    {
+      "phrase": "N'emporte pas l'ordinateur : c'est un voyage pour se reposer !",
+      "en": "Don't take the computer: it's a trip to relax!",
+      "es": "No te lleves el ordenador: ¡es un viaje para descansar!"
+    },
+    {
+      "phrase": "Nous avons besoin d'informations sur la Provence.",
+      "en": "We need information about Provence.",
+      "es": "Necesitamos información sobre la Provenza."
+    },
+    {
+      "phrase": "Un aller simple pour Bordeaux, s'il vous plaît.",
+      "en": "A one-way ticket to Bordeaux, please.",
+      "es": "Un billete de ida a Burdeos, por favor."
+    },
+    {
+      "phrase": "Nous voulons partir cet été. Pouvez-vous nous faire une réservation ?",
+      "en": "We want to go away this summer. Can you make a booking for us?",
+      "es": "Queremos irnos este verano. ¿Puede hacernos una reserva?"
+    },
+    {
+      "phrase": "Pourquoi tu ne restes pas plus longtemps au Japon ? — Parce que ce n'est qu'un voyage d'affaires.",
+      "en": "Why aren't you staying longer in Japan? — Because it's only a business trip.",
+      "es": "¿Por qué no te quedas más tiempo en Japón? — Porque solo es un viaje de negocios."
+    },
+    {
+      "phrase": "Vous voulez un lit double ? — Non, deux lits simples, s'il vous plaît.",
+      "en": "Would you like a double bed? — No, two single beds, please.",
+      "es": "¿Quieren una cama de matrimonio? — No, dos camas individuales, por favor."
+    },
+    {
+      "phrase": "Nous voulons partir un week-end. Que nous conseillez-vous ? — Un chalet au bord du lac.",
+      "en": "We want to go away for a weekend. What do you recommend? — A chalet by the lake.",
+      "es": "Queremos irnos un fin de semana. ¿Qué nos recomienda? — Un chalé a orillas del lago."
+    },
+    {
+      "phrase": "Tout a été organisé par notre agent de voyages le mois dernier.",
+      "en": "Everything was organized by our travel agent last month.",
+      "es": "Todo lo organizó nuestro agente de viajes el mes pasado."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Il faut que je ___ mes valises.\"",
+        "es": "Completa: «Il faut que je ___ mes valises.»"
+      },
+      "options": [
+        "fasse",
+        "fais",
+        "ferai",
+        "faisais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Faire → que je fasse (subjunctive).",
+        "es": "Faire → que je fasse (subjuntivo)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il faut que je ___ demain matin.\" (partir)",
+        "es": "Completa: «Il faut que je ___ demain matin.» (partir)"
+      },
+      "options": [
+        "parte",
+        "pars",
+        "partirai",
+        "partais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Partir → que je parte.",
+        "es": "Partir → que je parte."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Ce n'est qu'un voyage d'affaires.\" Meaning?",
+        "es": "«Ce n'est qu'un voyage d'affaires.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "It's only a business trip.",
+          "It's not a business trip.",
+          "It's a long business trip.",
+          "It's my first business trip."
+        ],
+        "es": [
+          "Solo es un viaje de negocios.",
+          "No es un viaje de negocios.",
+          "Es un viaje de negocios largo.",
+          "Es mi primer viaje de negocios."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … que\" = only.",
+        "es": "«Ne … que» = solo."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un voyage de noces\"?",
+        "es": "¿Qué es «un voyage de noces»?"
+      },
+      "options": {
+        "en": [
+          "a honeymoon",
+          "a night trip",
+          "a business trip",
+          "a school trip"
+        ],
+        "es": [
+          "una luna de miel",
+          "un viaje nocturno",
+          "un viaje de negocios",
+          "un viaje escolar"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Les noces = the wedding.",
+        "es": "Les noces = la boda."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Don't forget your passport!\"?",
+        "es": "¿Cómo se dice «¡No olvides tu pasaporte!»?"
+      },
+      "options": [
+        "N'oublie pas ton passeport !",
+        "Oublie pas ton passeport !",
+        "Ne oublie ton passeport !",
+        "Tu n'oublies passeport !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Negative imperative: ne + verb + pas.",
+        "es": "Imperativo negativo: ne + verbo + pas."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Petit-déjeuner compris\" means…",
+        "es": "«Petit-déjeuner compris» significa…"
+      },
+      "options": {
+        "en": [
+          "breakfast included",
+          "breakfast understood",
+          "breakfast extra",
+          "no breakfast"
+        ],
+        "es": [
+          "desayuno incluido",
+          "desayuno entendido",
+          "desayuno aparte",
+          "sin desayuno"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Compris\" = included here.",
+        "es": "Aquí «compris» = incluido."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Nous emportons le ___ de choses possible.\"",
+        "es": "Completa: «Nous emportons le ___ de choses possible.»"
+      },
+      "options": [
+        "moins",
+        "peu",
+        "moindre",
+        "minimum que"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Le moins … possible\" = as little as possible.",
+        "es": "«Le moins … possible» = lo menos posible."
+      }
+    },
+    {
+      "question": {
+        "en": "\"À l'étranger\" means…",
+        "es": "«À l'étranger» significa…"
+      },
+      "options": {
+        "en": [
+          "abroad",
+          "to a stranger",
+          "strangely",
+          "at the border"
+        ],
+        "es": [
+          "en el extranjero",
+          "a un desconocido",
+          "de forma extraña",
+          "en la frontera"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Vivre à l'étranger = to live abroad.",
+        "es": "Vivre à l'étranger = vivir en el extranjero."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une famille voyageuse",
+    "text": "Chaque année, pour les vacances de février, notre famille part quelque part. Cette fois, nous allons au Maroc. Il y a deux mois, nous sommes allés à l'agence de voyages, et tout a été organisé par notre agente, Madame Leclerc : les billets d'avion, l'hôtel à Marrakech et une excursion dans le désert. « Il faut que vous fassiez vos valises à l'avance », nous a-t-elle conseillé. Alors, nous les faisons toujours trois jours avant le départ : ainsi, nous évitons d'oublier les choses importantes. Quand nous voyageons à l'étranger, nous nous habillons confortablement et nous emportons le moins de choses possible. Moi, j'aime visiter les sites historiques. Mon mari, lui, préfère engager un guide qui lui explique tout. Et nos enfants adorent jouer avec d'autres enfants qui leur apprennent de nouveaux jeux. Pour nous, voyager a trois avantages. Premièrement, cela rapproche la famille. Deuxièmement, nous apprenons quelques mots d'une autre langue. Et enfin, nous nous faisons des amis partout dans le monde !",
+    "en": "Every year, for the February holidays, our family goes somewhere. This time, we're going to Morocco. Two months ago, we went to the travel agency, and everything was organized by our agent, Mrs. Leclerc: the plane tickets, the hotel in Marrakech and an excursion into the desert. “You need to pack your suitcases in advance,” she advised us. So we always pack three days before departure: that way, we avoid forgetting important things. When we travel abroad, we dress comfortably and take as few things as possible. I like visiting historic sites. My husband prefers to hire a guide who explains everything to him. And our children love playing with other children who teach them new games. For us, traveling has three advantages. First, it brings the family closer. Second, we learn a few words of another language. And finally, we make friends all over the world!",
+    "es": "Cada año, en las vacaciones de febrero, nuestra familia se va a algún sitio. Esta vez vamos a Marruecos. Hace dos meses fuimos a la agencia de viajes y nuestra agente, la señora Leclerc, lo organizó todo: los billetes de avión, el hotel en Marrakech y una excursión al desierto. «Tienen que hacer las maletas con antelación», nos aconsejó. Así que siempre las hacemos tres días antes de salir: de este modo evitamos olvidar las cosas importantes. Cuando viajamos al extranjero, nos vestimos cómodos y llevamos lo menos posible. A mí me gusta visitar los lugares históricos. Mi marido, en cambio, prefiere contratar a un guía que se lo explique todo. Y a nuestros hijos les encanta jugar con otros niños que les enseñan juegos nuevos. Para nosotros, viajar tiene tres ventajas. Primero, une a la familia. Segundo, aprendemos algunas palabras de otro idioma. Y por último, ¡hacemos amigos en todo el mundo!",
+    "highlighted_words": [
+      "l'agence de voyages",
+      "a été organisé",
+      "Il faut que vous fassiez",
+      "ainsi",
+      "nous évitons d'oublier",
+      "à l'étranger",
+      "le moins de choses possible",
+      "Premièrement",
+      "Deuxièmement",
+      "enfin"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Il faut que je fasse mes valises",
+      "en": "I have to pack my suitcases",
+      "es": "Tengo que hacer las maletas"
+    },
+    {
+      "sentence": "N'oublie pas de réserver l'hôtel",
+      "en": "Don't forget to book the hotel",
+      "es": "No olvides reservar el hotel"
+    },
+    {
+      "sentence": "Ce n'est qu'un voyage d'affaires",
+      "en": "It's only a business trip",
+      "es": "Solo es un viaje de negocios"
+    },
+    {
+      "sentence": "Ils vivent à l'étranger",
+      "en": "They live abroad",
+      "es": "Viven en el extranjero"
+    },
+    {
+      "sentence": "Tout a été organisé par l'agence",
+      "en": "Everything was organized by the agency",
+      "es": "La agencia lo organizó todo"
+    },
+    {
+      "sentence": "Quand reviens-tu",
+      "en": "When are you coming back",
+      "es": "¿Cuándo vuelves?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je voudrais faire une réservation",
+      "en": "I would like to make a booking",
+      "es": "Quisiera hacer una reserva"
+    },
+    {
+      "answer": "Le petit-déjeuner est compris",
+      "en": "Breakfast is included",
+      "es": "El desayuno está incluido"
+    },
+    {
+      "answer": "Nous partons en croisière",
+      "en": "We're going on a cruise",
+      "es": "Nos vamos de crucero"
+    },
+    {
+      "answer": "Combien coûte le voyage ?",
+      "en": "How much does the trip cost?",
+      "es": "¿Cuánto cuesta el viaje?"
+    },
+    {
+      "answer": "Je suis prêt",
+      "en": "I am ready",
+      "es": "Estoy listo"
+    },
+    {
+      "answer": "Un aller simple, s'il vous plaît",
+      "en": "A one-way ticket, please",
+      "es": "Un billete de ida, por favor"
+    }
+  ]
+}

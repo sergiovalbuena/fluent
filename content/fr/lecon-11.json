@@ -1,0 +1,636 @@
+{
+  "lesson": 11,
+  "slug": "lecon-11",
+  "icon": "🫀",
+  "title": {
+    "fr": "Le corps humain",
+    "es": "El cuerpo humano",
+    "en": "The human body"
+  },
+  "source": {
+    "audio": "Lecons 11.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "avoir mal à / au / aux",
+      "example": "J'ai mal à la tête. / J'ai mal au bras. / J'ai mal aux pieds.",
+      "en": "Saying where it hurts",
+      "es": "Decir dónde duele"
+    },
+    {
+      "structure": "avoir l'air + adjectif",
+      "example": "Tu as l'air fatiguée.",
+      "en": "To look / seem",
+      "es": "Parecer"
+    },
+    {
+      "structure": "devoir (probabilité)",
+      "example": "Ils sont pâles, ils doivent être malades.",
+      "en": "\"devoir\" for probability",
+      "es": "«devoir» para expresar probabilidad"
+    },
+    {
+      "structure": "futur proche / futur simple",
+      "example": "Elle va avoir la grippe. / Tes os seront forts.",
+      "en": "Near future and simple future",
+      "es": "Futuro próximo y futuro simple"
+    },
+    {
+      "structure": "impératif",
+      "example": "Prends ce médicament.",
+      "en": "Imperative (advice)",
+      "es": "Imperativo (consejos)"
+    },
+    {
+      "structure": "comparatif",
+      "example": "Tu es plus grande que moi.",
+      "en": "Comparatives",
+      "es": "Comparativos"
+    },
+    {
+      "structure": "se trouver",
+      "example": "Les oreilles se trouvent de chaque côté de la tête.",
+      "en": "Locating with \"se trouver\"",
+      "es": "Ubicar con «se trouver»"
+    },
+    {
+      "structure": "passé composé",
+      "example": "J'ai beaucoup joué au volley.",
+      "en": "Past tense",
+      "es": "Pretérito perfecto"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Avoir mal à\" contracts: à + le = au (au dos), à + les = aux (aux dents).",
+      "es": "«Avoir mal à» se contrae: à + le = au (au dos), à + les = aux (aux dents)."
+    },
+    {
+      "en": "French uses the article, not the possessive, with body parts: \"Je me lave les mains\" (not \"mes mains\").",
+      "es": "En francés se usa el artículo, no el posesivo, con las partes del cuerpo: «Je me lave les mains» (no «mes mains»)."
+    },
+    {
+      "en": "Idioms: \"donner un coup de main\" (to lend a hand), \"avoir le cœur sur la main\" (to be generous), \"coûter les yeux de la tête\" (to cost a fortune).",
+      "es": "Expresiones: «donner un coup de main» (echar una mano), «avoir le cœur sur la main» (ser generoso), «coûter les yeux de la tête» (costar un ojo de la cara)."
+    },
+    {
+      "en": "Height: \"Combien tu mesures ? — Je mesure 1,70 m\" (un mètre soixante-dix).",
+      "es": "Estatura: «Combien tu mesures ? — Je mesure 1,70 m» (un mètre soixante-dix)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la tête",
+      "en": "the head",
+      "es": "la cabeza"
+    },
+    {
+      "word": "les cheveux",
+      "en": "hair",
+      "es": "el pelo"
+    },
+    {
+      "word": "le visage",
+      "en": "the face",
+      "es": "la cara"
+    },
+    {
+      "word": "la barbe",
+      "en": "the beard",
+      "es": "la barba"
+    },
+    {
+      "word": "la bouche",
+      "en": "the mouth",
+      "es": "la boca"
+    },
+    {
+      "word": "les dents",
+      "en": "teeth",
+      "es": "los dientes"
+    },
+    {
+      "word": "la langue",
+      "en": "the tongue",
+      "es": "la lengua"
+    },
+    {
+      "word": "les lèvres",
+      "en": "lips",
+      "es": "los labios"
+    },
+    {
+      "word": "le menton",
+      "en": "the chin",
+      "es": "la barbilla"
+    },
+    {
+      "word": "les oreilles",
+      "en": "ears",
+      "es": "las orejas"
+    },
+    {
+      "word": "le nez",
+      "en": "the nose",
+      "es": "la nariz"
+    },
+    {
+      "word": "les yeux",
+      "en": "eyes",
+      "es": "los ojos"
+    },
+    {
+      "word": "les sourcils",
+      "en": "eyebrows",
+      "es": "las cejas"
+    },
+    {
+      "word": "les cils",
+      "en": "eyelashes",
+      "es": "las pestañas"
+    },
+    {
+      "word": "le front",
+      "en": "the forehead",
+      "es": "la frente"
+    },
+    {
+      "word": "le cou",
+      "en": "the neck",
+      "es": "el cuello"
+    },
+    {
+      "word": "la gorge",
+      "en": "the throat",
+      "es": "la garganta"
+    },
+    {
+      "word": "les joues",
+      "en": "cheeks",
+      "es": "las mejillas"
+    },
+    {
+      "word": "la poitrine",
+      "en": "the chest",
+      "es": "el pecho"
+    },
+    {
+      "word": "les épaules",
+      "en": "shoulders",
+      "es": "los hombros"
+    },
+    {
+      "word": "le bras",
+      "en": "the arm",
+      "es": "el brazo"
+    },
+    {
+      "word": "le coude",
+      "en": "the elbow",
+      "es": "el codo"
+    },
+    {
+      "word": "le poignet",
+      "en": "the wrist",
+      "es": "la muñeca"
+    },
+    {
+      "word": "la main",
+      "en": "the hand",
+      "es": "la mano"
+    },
+    {
+      "word": "les doigts",
+      "en": "fingers",
+      "es": "los dedos"
+    },
+    {
+      "word": "le pouce",
+      "en": "the thumb",
+      "es": "el pulgar"
+    },
+    {
+      "word": "les ongles",
+      "en": "nails",
+      "es": "las uñas"
+    },
+    {
+      "word": "le ventre",
+      "en": "the belly",
+      "es": "la barriga"
+    },
+    {
+      "word": "l'estomac",
+      "en": "the stomach",
+      "es": "el estómago"
+    },
+    {
+      "word": "le dos",
+      "en": "the back",
+      "es": "la espalda"
+    },
+    {
+      "word": "les hanches",
+      "en": "hips",
+      "es": "las caderas"
+    },
+    {
+      "word": "la jambe",
+      "en": "the leg",
+      "es": "la pierna"
+    },
+    {
+      "word": "le genou",
+      "en": "the knee",
+      "es": "la rodilla"
+    },
+    {
+      "word": "la cheville",
+      "en": "the ankle",
+      "es": "el tobillo"
+    },
+    {
+      "word": "le pied",
+      "en": "the foot",
+      "es": "el pie"
+    },
+    {
+      "word": "le cœur",
+      "en": "the heart",
+      "es": "el corazón"
+    },
+    {
+      "word": "les poumons",
+      "en": "lungs",
+      "es": "los pulmones"
+    },
+    {
+      "word": "le cerveau",
+      "en": "the brain",
+      "es": "el cerebro"
+    },
+    {
+      "word": "les os",
+      "en": "bones",
+      "es": "los huesos"
+    },
+    {
+      "word": "le sang",
+      "en": "blood",
+      "es": "la sangre"
+    },
+    {
+      "word": "la peau",
+      "en": "skin",
+      "es": "la piel"
+    },
+    {
+      "word": "la vue",
+      "en": "sight",
+      "es": "la vista"
+    },
+    {
+      "word": "l'ouïe",
+      "en": "hearing",
+      "es": "el oído"
+    },
+    {
+      "word": "l'odorat",
+      "en": "smell",
+      "es": "el olfato"
+    },
+    {
+      "word": "le goût",
+      "en": "taste",
+      "es": "el gusto"
+    },
+    {
+      "word": "le toucher",
+      "en": "touch",
+      "es": "el tacto"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "J'ai mal à la tête.",
+      "en": "I have a headache.",
+      "es": "Me duele la cabeza."
+    },
+    {
+      "phrase": "Tu as l'air fatiguée.",
+      "en": "You look tired.",
+      "es": "Pareces cansada."
+    },
+    {
+      "phrase": "Elle a mal aux oreilles.",
+      "en": "Her ears hurt.",
+      "es": "Le duelen los oídos."
+    },
+    {
+      "phrase": "Il va sûrement avoir la grippe.",
+      "en": "He's surely going to get the flu.",
+      "es": "Seguro que va a tener gripe."
+    },
+    {
+      "phrase": "Mon bébé a de la fièvre. Que pourrais-je faire ?",
+      "en": "My baby has a fever. What could I do?",
+      "es": "Mi bebé tiene fiebre. ¿Qué podría hacer?"
+    },
+    {
+      "phrase": "J'ai mal au bras gauche : j'ai beaucoup joué au volley.",
+      "en": "My left arm hurts: I played a lot of volleyball.",
+      "es": "Me duele el brazo izquierdo: he jugado mucho al vóley."
+    },
+    {
+      "phrase": "Prends ce médicament et repose-toi.",
+      "en": "Take this medicine and rest.",
+      "es": "Toma este medicamento y descansa."
+    },
+    {
+      "phrase": "J'ai rendez-vous chez le médecin.",
+      "en": "I have a doctor's appointment.",
+      "es": "Tengo cita con el médico."
+    },
+    {
+      "phrase": "Bois du lait tous les jours et tes os seront forts.",
+      "en": "Drink milk every day and your bones will be strong.",
+      "es": "Bebe leche todos los días y tus huesos estarán fuertes."
+    },
+    {
+      "phrase": "Tu as mal aux dents ? Tu dois aller chez le dentiste.",
+      "en": "Do you have toothache? You must go to the dentist.",
+      "es": "¿Te duelen las muelas? Tienes que ir al dentista."
+    },
+    {
+      "phrase": "De quelle couleur sont tes yeux ? — Ils sont verts.",
+      "en": "What color are your eyes? — They are green.",
+      "es": "¿De qué color son tus ojos? — Son verdes."
+    },
+    {
+      "phrase": "Combien tu mesures ? — Je mesure un mètre soixante-cinq.",
+      "en": "How tall are you? — I am 1.65 m.",
+      "es": "¿Cuánto mides? — Mido un metro sesenta y cinco."
+    },
+    {
+      "phrase": "Ils sont pâles, ils doivent être malades.",
+      "en": "They are pale, they must be ill.",
+      "es": "Están pálidos, deben de estar enfermos."
+    },
+    {
+      "phrase": "Peux-tu me donner un coup de main ?",
+      "en": "Can you give me a hand?",
+      "es": "¿Puedes echarme una mano?"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"J'ai mal ___ dos.\"",
+        "es": "Completa: «J'ai mal ___ dos.»"
+      },
+      "options": [
+        "au",
+        "à la",
+        "aux",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Le dos\" is masculine: à + le = au.",
+        "es": "«Le dos» es masculino: à + le = au."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle a mal ___ dents.\"",
+        "es": "Completa: «Elle a mal ___ dents.»"
+      },
+      "options": [
+        "aux",
+        "au",
+        "à la",
+        "des"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plural: à + les = aux.",
+        "es": "Plural: à + les = aux."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Ils sont pâles, ils doivent être malades.\" What does \"doivent\" express here?",
+        "es": "«Ils sont pâles, ils doivent être malades.» ¿Qué expresa aquí «doivent»?"
+      },
+      "options": {
+        "en": [
+          "probability",
+          "obligation",
+          "the past",
+          "a wish"
+        ],
+        "es": [
+          "probabilidad",
+          "obligación",
+          "el pasado",
+          "un deseo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Devoir\" can mean \"must be / probably are\".",
+        "es": "«Devoir» puede significar «deben de estar / probablemente están»."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"donner un coup de main\" mean?",
+        "es": "¿Qué significa «donner un coup de main»?"
+      },
+      "options": {
+        "en": [
+          "to lend a hand",
+          "to hit someone",
+          "to shake hands",
+          "to wave"
+        ],
+        "es": [
+          "echar una mano",
+          "pegar a alguien",
+          "dar la mano",
+          "saludar con la mano"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "It's an idiom: to help someone.",
+        "es": "Es una expresión: ayudar a alguien."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sense is \"l'odorat\"?",
+        "es": "¿Qué sentido es «l'odorat»?"
+      },
+      "options": {
+        "en": [
+          "smell",
+          "hearing",
+          "taste",
+          "touch"
+        ],
+        "es": [
+          "el olfato",
+          "el oído",
+          "el gusto",
+          "el tacto"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "La vue, l'ouïe, l'odorat, le goût, le toucher.",
+        "es": "La vue, l'ouïe, l'odorat, le goût, le toucher."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you ask someone's height?",
+        "es": "¿Cómo preguntas la estatura de alguien?"
+      },
+      "options": [
+        "Combien tu mesures ?",
+        "Combien tu pèses ?",
+        "Quel âge as-tu ?",
+        "Comment es-tu ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Mesurer\" = to measure; \"peser\" = to weigh.",
+        "es": "«Mesurer» = medir; «peser» = pesar."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence is correct in French?",
+        "es": "¿Qué frase es correcta en francés?"
+      },
+      "options": [
+        "Je me lave les mains.",
+        "Je me lave mes mains.",
+        "Je lave mes mains à moi.",
+        "Je me lave la main mes."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "With body parts, use the article with a reflexive verb.",
+        "es": "Con partes del cuerpo se usa el artículo y un verbo pronominal."
+      }
+    },
+    {
+      "question": {
+        "en": "Where is the brain?",
+        "es": "¿Dónde está el cerebro?"
+      },
+      "options": [
+        "dans la tête",
+        "dans la poitrine",
+        "dans le ventre",
+        "dans le dos"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le cerveau se trouve dans la tête; le cœur et les poumons, dans la poitrine.",
+        "es": "Le cerveau se trouve dans la tête; le cœur et les poumons, dans la poitrine."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le cours de yoga",
+    "text": "Ce matin, Nora va à son premier cours de yoga. Elle a l'air un peu nerveuse. Le professeur, Bastien, sourit : « Bienvenue ! Asseyez-vous sur le tapis et fermez les yeux. » Il explique : « Respirez lentement. L'air entre par le nez et va jusqu'aux poumons. Maintenant, levez les bras au-dessus de la tête. Baissez les épaules et tournez le cou doucement. » Nora a mal au dos : hier, elle a beaucoup travaillé devant l'ordinateur. « Pliez les genoux et touchez vos pieds avec les mains. » Une autre élève rit : « Je ne peux pas, mes jambes sont trop longues ! » À la fin du cours, Bastien dit : « Si vous pratiquez tous les jours, votre corps sera plus fort et votre tête plus tranquille. » Nora se sent mieux. Elle doit être plus détendue, car son cœur bat plus lentement. « Merci pour le coup de main, Bastien. Je reviendrai la semaine prochaine ! »",
+    "en": "This morning, Nora is going to her first yoga class. She looks a bit nervous. The teacher, Bastien, smiles: “Welcome! Sit down on the mat and close your eyes.” He explains: “Breathe slowly. The air comes in through the nose and goes down to the lungs. Now, raise your arms above your head. Lower your shoulders and turn your neck gently.” Nora's back hurts: yesterday, she worked a lot at the computer. “Bend your knees and touch your feet with your hands.” Another student laughs: “I can't, my legs are too long!” At the end of the class, Bastien says: “If you practice every day, your body will be stronger and your mind calmer.” Nora feels better. She must be more relaxed, because her heart is beating more slowly. “Thanks for the help, Bastien. I'll come back next week!”",
+    "es": "Esta mañana, Nora va a su primera clase de yoga. Parece un poco nerviosa. El profesor, Bastien, sonríe: «¡Bienvenida! Siéntese en la esterilla y cierre los ojos.» Explica: «Respire despacio. El aire entra por la nariz y llega hasta los pulmones. Ahora, levante los brazos por encima de la cabeza. Baje los hombros y gire el cuello suavemente.» A Nora le duele la espalda: ayer trabajó mucho delante del ordenador. «Doble las rodillas y tóquese los pies con las manos.» Otra alumna se ríe: «¡No puedo, tengo las piernas demasiado largas!» Al final de la clase, Bastien dice: «Si practican todos los días, su cuerpo estará más fuerte y su mente más tranquila.» Nora se siente mejor. Debe de estar más relajada, porque su corazón late más despacio. «Gracias por la ayuda, Bastien. ¡Volveré la semana que viene!»",
+    "highlighted_words": [
+      "a l'air",
+      "yeux",
+      "nez",
+      "poumons",
+      "bras",
+      "tête",
+      "épaules",
+      "cou",
+      "mal au dos",
+      "genoux",
+      "pieds",
+      "mains",
+      "jambes",
+      "cœur",
+      "doit être",
+      "coup de main"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'ai mal à la tête",
+      "en": "I have a headache",
+      "es": "Me duele la cabeza"
+    },
+    {
+      "sentence": "Tu as l'air fatigué",
+      "en": "You look tired",
+      "es": "Pareces cansado"
+    },
+    {
+      "sentence": "Prends ce médicament",
+      "en": "Take this medicine",
+      "es": "Toma este medicamento"
+    },
+    {
+      "sentence": "Il doit être malade",
+      "en": "He must be ill",
+      "es": "Debe de estar enfermo"
+    },
+    {
+      "sentence": "Elle a les yeux verts",
+      "en": "She has green eyes",
+      "es": "Tiene los ojos verdes"
+    },
+    {
+      "sentence": "Je me lave les mains",
+      "en": "I wash my hands",
+      "es": "Me lavo las manos"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "J'ai mal au dos",
+      "en": "My back hurts",
+      "es": "Me duele la espalda"
+    },
+    {
+      "answer": "Elle a de la fièvre",
+      "en": "She has a fever",
+      "es": "Tiene fiebre"
+    },
+    {
+      "answer": "Je dois aller chez le médecin",
+      "en": "I have to go to the doctor",
+      "es": "Tengo que ir al médico"
+    },
+    {
+      "answer": "Ses yeux sont bleus",
+      "en": "His eyes are blue",
+      "es": "Sus ojos son azules"
+    },
+    {
+      "answer": "Il a les cheveux noirs",
+      "en": "He has black hair",
+      "es": "Tiene el pelo negro"
+    },
+    {
+      "answer": "Peux-tu me donner un coup de main ?",
+      "en": "Can you give me a hand?",
+      "es": "¿Puedes echarme una mano?"
+    }
+  ]
+}

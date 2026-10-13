@@ -1,0 +1,548 @@
+{
+  "lesson": 30,
+  "slug": "lecon-30",
+  "icon": "📞",
+  "title": {
+    "fr": "Le téléphone",
+    "es": "El teléfono",
+    "en": "The telephone"
+  },
+  "source": {
+    "audio": "Lecons 30.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "ça fait … que",
+      "example": "Ça fait une heure que tu es au téléphone !",
+      "en": "Duration up to now",
+      "es": "Duración hasta ahora («hace … que»)"
+    },
+    {
+      "structure": "impératif + pronom",
+      "example": "Réponds-y ! Laisse-le sonner. Écris-le.",
+      "en": "Imperative with pronouns",
+      "es": "Imperativo con pronombres"
+    },
+    {
+      "structure": "se tromper (de)",
+      "example": "Vous vous êtes trompé de numéro.",
+      "en": "\"To get the wrong…\"",
+      "es": "«Equivocarse de»"
+    },
+    {
+      "structure": "passé composé / imparfait",
+      "example": "Je suis rentrée épuisée ; ma fille était au téléphone, comme toujours.",
+      "en": "Event vs. background",
+      "es": "Hecho frente a contexto"
+    },
+    {
+      "structure": "plus-que-parfait",
+      "example": "C'est ma fille qui avait envoyé mon CV.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    },
+    {
+      "structure": "jusqu'à ce que + subjonctif",
+      "example": "Elle m'a regardée jusqu'à ce que je lui demande ce qui se passait.",
+      "en": "\"Until\" + subjunctive",
+      "es": "«Hasta que» + subjuntivo"
+    },
+    {
+      "structure": "discours indirect",
+      "example": "Je lui ai demandé ce qui se passait.",
+      "en": "Reported question",
+      "es": "Pregunta indirecta"
+    },
+    {
+      "structure": "même si",
+      "example": "Elle parle avec ses amis même si elle les voit tous les jours.",
+      "en": "\"Even if\"",
+      "es": "«Aunque»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "On the phone: \"Allô ?\" (hello), \"C'est de la part de qui ?\" (who's calling?), \"Ne quittez pas\" (hold on), \"Je vous le passe\" (I'll put him through).",
+      "es": "Al teléfono: «Allô ?» (¿diga?), «C'est de la part de qui ?» (¿de parte de quién?), «Ne quittez pas» (no cuelgue), «Je vous le passe» (le paso con él)."
+    },
+    {
+      "en": "\"Raccrocher au nez de quelqu'un\" = to hang up on someone.",
+      "es": "«Raccrocher au nez de quelqu'un» = colgarle el teléfono a alguien."
+    },
+    {
+      "en": "French phone numbers are read in pairs: 06 12 34 56 78 = \"zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit\".",
+      "es": "Los números de teléfono franceses se leen de dos en dos: 06 12 34 56 78 = «zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit»."
+    },
+    {
+      "en": "\"Un portable\" = a mobile phone; \"un texto / un SMS\" = a text message; \"la messagerie\" = voicemail.",
+      "es": "«Un portable» = un móvil / celular; «un texto / un SMS» = un mensaje; «la messagerie» = el buzón de voz."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le téléphone",
+      "en": "the telephone",
+      "es": "el teléfono"
+    },
+    {
+      "word": "le portable",
+      "en": "the mobile phone",
+      "es": "el móvil / el celular"
+    },
+    {
+      "word": "l'appel",
+      "en": "the call",
+      "es": "la llamada"
+    },
+    {
+      "word": "appeler",
+      "en": "to call",
+      "es": "llamar"
+    },
+    {
+      "word": "téléphoner à",
+      "en": "to phone",
+      "es": "telefonear a"
+    },
+    {
+      "word": "répondre",
+      "en": "to answer",
+      "es": "contestar"
+    },
+    {
+      "word": "sonner",
+      "en": "to ring",
+      "es": "sonar"
+    },
+    {
+      "word": "décrocher",
+      "en": "to pick up",
+      "es": "descolgar"
+    },
+    {
+      "word": "raccrocher",
+      "en": "to hang up",
+      "es": "colgar"
+    },
+    {
+      "word": "composer un numéro",
+      "en": "to dial a number",
+      "es": "marcar un número"
+    },
+    {
+      "word": "le numéro de téléphone",
+      "en": "the phone number",
+      "es": "el número de teléfono"
+    },
+    {
+      "word": "l'indicatif",
+      "en": "the area / country code",
+      "es": "el prefijo"
+    },
+    {
+      "word": "la ligne",
+      "en": "the line",
+      "es": "la línea"
+    },
+    {
+      "word": "occupé / occupée",
+      "en": "busy (line)",
+      "es": "ocupado / ocupada"
+    },
+    {
+      "word": "le répondeur",
+      "en": "the answering machine",
+      "es": "el contestador"
+    },
+    {
+      "word": "la messagerie",
+      "en": "voicemail",
+      "es": "el buzón de voz"
+    },
+    {
+      "word": "le message",
+      "en": "the message",
+      "es": "el mensaje"
+    },
+    {
+      "word": "laisser un message",
+      "en": "to leave a message",
+      "es": "dejar un mensaje"
+    },
+    {
+      "word": "le texto",
+      "en": "the text message",
+      "es": "el mensaje de texto"
+    },
+    {
+      "word": "l'annuaire",
+      "en": "the phone book",
+      "es": "la guía telefónica"
+    },
+    {
+      "word": "l'opérateur / l'opératrice",
+      "en": "the operator",
+      "es": "el operador / la operadora"
+    },
+    {
+      "word": "le poste",
+      "en": "the extension",
+      "es": "la extensión"
+    },
+    {
+      "word": "l'appel à l'étranger",
+      "en": "the international call",
+      "es": "la llamada internacional"
+    },
+    {
+      "word": "urgent / urgente",
+      "en": "urgent",
+      "es": "urgente"
+    },
+    {
+      "word": "la batterie",
+      "en": "the battery",
+      "es": "la batería"
+    },
+    {
+      "word": "recharger",
+      "en": "to charge",
+      "es": "cargar"
+    },
+    {
+      "word": "se tromper de numéro",
+      "en": "to dial the wrong number",
+      "es": "equivocarse de número"
+    },
+    {
+      "word": "déménager",
+      "en": "to move (house)",
+      "es": "mudarse"
+    },
+    {
+      "word": "Allô ?",
+      "en": "Hello? (on the phone)",
+      "es": "¿Diga? / ¿Aló?"
+    },
+    {
+      "word": "Ne quittez pas",
+      "en": "Hold on",
+      "es": "No cuelgue"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Réponds au téléphone, s'il te plaît !",
+      "en": "Answer the phone, please!",
+      "es": "¡Contesta el teléfono, por favor!"
+    },
+    {
+      "phrase": "La ligne est occupée.",
+      "en": "The line is busy.",
+      "es": "La línea está ocupada."
+    },
+    {
+      "phrase": "Les appels à l'étranger coûtent plus cher.",
+      "en": "Calls abroad cost more.",
+      "es": "Las llamadas al extranjero cuestan más."
+    },
+    {
+      "phrase": "Raccroche ! Ça fait plus d'une heure que tu parles.",
+      "en": "Hang up! You've been talking for over an hour.",
+      "es": "¡Cuelga! Llevas más de una hora hablando."
+    },
+    {
+      "phrase": "Mélissa, on t'appelle de l'étranger !",
+      "en": "Mélissa, someone's calling you from abroad!",
+      "es": "¡Mélissa, te llaman del extranjero!"
+    },
+    {
+      "phrase": "Est-ce que je peux parler à Marie ? — Désolé, vous vous êtes trompé de numéro.",
+      "en": "Can I speak to Marie? — Sorry, you have the wrong number.",
+      "es": "¿Puedo hablar con Marie? — Lo siento, se ha equivocado de número."
+    },
+    {
+      "phrase": "Peux-tu me rappeler un peu plus tard ?",
+      "en": "Can you call me back a bit later?",
+      "es": "¿Puedes llamarme un poco más tarde?"
+    },
+    {
+      "phrase": "J'ai laissé un message sur son répondeur, mais il ne m'a pas rappelé.",
+      "en": "I left a message on his answering machine, but he didn't call me back.",
+      "es": "Le dejé un mensaje en el contestador, pero no me devolvió la llamada."
+    },
+    {
+      "phrase": "Il y a un message urgent pour toi sur la ligne quatre.",
+      "en": "There's an urgent message for you on line four.",
+      "es": "Hay un mensaje urgente para ti en la línea cuatro."
+    },
+    {
+      "phrase": "Elle m'a raccroché au nez !",
+      "en": "She hung up on me!",
+      "es": "¡Me colgó!"
+    },
+    {
+      "phrase": "Allô, qui est à l'appareil ? — C'est moi, Philippe.",
+      "en": "Hello, who's speaking? — It's me, Philippe.",
+      "es": "¿Diga? ¿Quién es? — Soy yo, Philippe."
+    },
+    {
+      "phrase": "Tu peux répondre ? — Je suis occupé, laisse-le sonner.",
+      "en": "Can you answer? — I'm busy, let it ring.",
+      "es": "¿Puedes contestar? — Estoy ocupado, déjalo sonar."
+    },
+    {
+      "phrase": "Tu me donnes ton numéro ? — Oui, écris-le : zéro six, douze, trente-quatre…",
+      "en": "Will you give me your number? — Yes, write it down: 06 12 34…",
+      "es": "¿Me das tu número? — Sí, apúntalo: cero seis, doce, treinta y cuatro…"
+    },
+    {
+      "phrase": "Je voudrais parler à Madame Durand. — Elle n'habite plus ici, elle a déménagé.",
+      "en": "I would like to speak to Mrs. Durand. — She doesn't live here anymore, she moved.",
+      "es": "Quisiera hablar con la señora Durand. — Ya no vive aquí, se mudó."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What do you say when you pick up the phone in France?",
+        "es": "¿Qué dices al descolgar el teléfono en Francia?"
+      },
+      "options": [
+        "Allô ?",
+        "Bonjour, au revoir.",
+        "Salut, ça va ?",
+        "Oui, merci."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Allô\" is only used on the phone.",
+        "es": "«Allô» solo se usa al teléfono."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Ça fait une heure ___ tu parles !\"",
+        "es": "Completa: «Ça fait une heure ___ tu parles !»"
+      },
+      "options": [
+        "que",
+        "depuis",
+        "pendant",
+        "quand"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ça fait + duration + que\" + present.",
+        "es": "«Ça fait + duración + que» + presente."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Vous vous êtes trompé de numéro.\" Meaning?",
+        "es": "«Vous vous êtes trompé de numéro.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "You have the wrong number.",
+          "Your number changed.",
+          "You forgot the number.",
+          "The number is busy."
+        ],
+        "es": [
+          "Se ha equivocado de número.",
+          "Su número ha cambiado.",
+          "Ha olvidado el número.",
+          "El número está ocupado."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Se tromper de\" + noun = to get the wrong…",
+        "es": "«Se tromper de» + sustantivo = equivocarse de…"
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"raccrocher\" mean?",
+        "es": "¿Qué significa «raccrocher»?"
+      },
+      "options": {
+        "en": [
+          "to hang up",
+          "to pick up",
+          "to dial",
+          "to ring"
+        ],
+        "es": [
+          "colgar",
+          "descolgar",
+          "marcar",
+          "sonar"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Décrocher = to pick up.",
+        "es": "Décrocher = descolgar."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle m'a regardée jusqu'à ce que je lui ___ ce qui se passait.\"",
+        "es": "Completa: «Elle m'a regardée jusqu'à ce que je lui ___ ce qui se passait.»"
+      },
+      "options": [
+        "demande",
+        "demandais",
+        "ai demandé",
+        "demanderai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Jusqu'à ce que\" + subjunctive.",
+        "es": "«Jusqu'à ce que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Hold on\" on the phone?",
+        "es": "¿Cómo se dice «No cuelgue» al teléfono?"
+      },
+      "options": [
+        "Ne quittez pas.",
+        "Ne partez pas.",
+        "Ne raccrochez jamais.",
+        "Restez là."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne quittez pas\" is the standard formula.",
+        "es": "«Ne quittez pas» es la fórmula habitual."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you read 06 45 78 12 90?",
+        "es": "¿Cómo se lee 06 45 78 12 90?"
+      },
+      "options": [
+        "zéro six, quarante-cinq, soixante-dix-huit, douze, quatre-vingt-dix",
+        "zéro, six, quatre, cinq, sept, huit…",
+        "six millions…",
+        "zéro six cent quarante-cinq…"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "In pairs.",
+        "es": "De dos en dos."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Laisse-le sonner.\" What does \"le\" replace?",
+        "es": "«Laisse-le sonner.» ¿Qué sustituye «le»?"
+      },
+      "options": {
+        "en": [
+          "the phone",
+          "the message",
+          "the number",
+          "the person"
+        ],
+        "es": [
+          "el teléfono",
+          "el mensaje",
+          "el número",
+          "la persona"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Le = le téléphone.",
+        "es": "Le = le téléphone."
+      }
+    }
+  ],
+  "story": {
+    "title": "L'appel qui a changé ma vie",
+    "text": "Ma fille Chloé passe presque tout son temps libre au téléphone. Elle parle pendant des heures avec ses amies, même si elle les voit tous les jours au lycée. Il y a deux mois, j'ai perdu mon travail, et nous avons commencé à nous disputer à cause de son portable. « Ça fait trois heures que tu es au téléphone ! Raccroche ! » lui répétais-je. Un soir, je suis rentrée épuisée après une journée d'entretiens. Chloé était au téléphone, comme toujours. Je me suis énervée et j'ai crié. Elle n'a rien dit et elle m'a regardée jusqu'à ce que je lui demande ce qui se passait. Elle m'a tendu le téléphone : « Maman, sois gentille, c'est pour toi. » C'était le directeur d'une grande entreprise de la ville, le père d'une de ses amies. Il cherchait quelqu'un avec mon profil et il m'a proposé un poste ! En fait, c'était Chloé qui lui avait envoyé mon CV. Je me suis excusée auprès d'elle. Aujourd'hui, j'ai un travail que j'adore… et je ne dis plus rien quand elle est au téléphone.",
+    "en": "My daughter Chloé spends almost all her free time on the phone. She talks for hours with her friends, even though she sees them every day at school. Two months ago, I lost my job, and we started arguing about her phone. “You've been on the phone for three hours! Hang up!” I kept telling her. One evening, I came home exhausted after a day of interviews. Chloé was on the phone, as always. I got angry and shouted. She didn't say anything and looked at me until I asked her what was going on. She handed me the phone: “Mom, be nice, it's for you.” It was the director of a big company in town, the father of one of her friends. He was looking for someone with my profile and he offered me a job! In fact, it was Chloé who had sent him my résumé. I apologized to her. Today, I have a job I love… and I don't say anything anymore when she's on the phone.",
+    "es": "Mi hija Chloé pasa casi todo su tiempo libre al teléfono. Habla durante horas con sus amigas, aunque las ve todos los días en el instituto. Hace dos meses perdí mi trabajo y empezamos a discutir por su móvil. «¡Llevas tres horas al teléfono! ¡Cuelga!», le repetía. Una noche volví a casa agotada después de un día de entrevistas. Chloé estaba al teléfono, como siempre. Me enfadé y grité. Ella no dijo nada y me miró hasta que le pregunté qué pasaba. Me tendió el teléfono: «Mamá, sé amable, es para ti.» Era el director de una gran empresa de la ciudad, el padre de una de sus amigas. Buscaba a alguien con mi perfil y ¡me ofreció un puesto! De hecho, había sido Chloé quien le había enviado mi currículum. Le pedí perdón. Hoy tengo un trabajo que me encanta… y ya no digo nada cuando está al teléfono.",
+    "highlighted_words": [
+      "même si",
+      "Il y a deux mois",
+      "Ça fait trois heures que",
+      "Raccroche",
+      "était au téléphone",
+      "jusqu'à ce que je lui demande",
+      "ce qui se passait",
+      "lui avait envoyé"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "La ligne est occupée",
+      "en": "The line is busy",
+      "es": "La línea está ocupada"
+    },
+    {
+      "sentence": "Rappelle-moi plus tard",
+      "en": "Call me back later",
+      "es": "Llámame más tarde"
+    },
+    {
+      "sentence": "J'ai laissé un message",
+      "en": "I left a message",
+      "es": "He dejado un mensaje"
+    },
+    {
+      "sentence": "Vous vous êtes trompé de numéro",
+      "en": "You have the wrong number",
+      "es": "Se ha equivocado de número"
+    },
+    {
+      "sentence": "Ça fait une heure que tu parles",
+      "en": "You've been talking for an hour",
+      "es": "Llevas una hora hablando"
+    },
+    {
+      "sentence": "Elle a raccroché",
+      "en": "She hung up",
+      "es": "Ha colgado"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Réponds au téléphone",
+      "en": "Answer the phone",
+      "es": "Contesta el teléfono"
+    },
+    {
+      "answer": "Quel est ton numéro ?",
+      "en": "What's your number?",
+      "es": "¿Cuál es tu número?"
+    },
+    {
+      "answer": "J'attends ton appel",
+      "en": "I'm waiting for your call",
+      "es": "Espero tu llamada"
+    },
+    {
+      "answer": "Ne quittez pas",
+      "en": "Hold on",
+      "es": "No cuelgue"
+    },
+    {
+      "answer": "Tu ne m'as pas appelé hier",
+      "en": "You didn't call me yesterday",
+      "es": "No me llamaste ayer"
+    },
+    {
+      "answer": "Mon portable ne marche pas",
+      "en": "My phone isn't working",
+      "es": "Mi móvil no funciona"
+    }
+  ]
+}

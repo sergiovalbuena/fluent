@@ -1,0 +1,633 @@
+{
+  "lesson": 23,
+  "slug": "lecon-23",
+  "icon": "🌦️",
+  "title": {
+    "fr": "Les saisons et la météo",
+    "es": "Las estaciones y el tiempo",
+    "en": "Seasons and weather"
+  },
+  "source": {
+    "audio": "Lecons 23.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "expressions de la météo",
+      "example": "Il fait froid. Il pleut. Il y a du brouillard. Le ciel est dégagé.",
+      "en": "Weather expressions",
+      "es": "Expresiones del tiempo"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Ce mois-ci, le temps sera terrible. / L'avion n'arrivera pas à l'heure.",
+      "en": "Forecasts with the future",
+      "es": "Previsiones con el futuro"
+    },
+    {
+      "structure": "impératif (négatif)",
+      "example": "Calme-toi. Ne sors pas ! Ferme les fenêtres.",
+      "en": "Imperative",
+      "es": "Imperativo"
+    },
+    {
+      "structure": "passé composé / imparfait (récit)",
+      "example": "Je marchais sous la pluie quand j'ai levé la tête.",
+      "en": "Narrating: background vs. event",
+      "es": "Narrar: fondo frente a hecho"
+    },
+    {
+      "structure": "plus-que-parfait",
+      "example": "J'étais triste parce que j'avais raté mon train.",
+      "en": "Past perfect (had done)",
+      "es": "Pluscuamperfecto (había hecho)"
+    },
+    {
+      "structure": "comme si + plus-que-parfait",
+      "example": "C'était comme si nous nous étions toujours connus.",
+      "en": "\"As if\" + past perfect",
+      "es": "«Como si» + pluscuamperfecto"
+    },
+    {
+      "structure": "conditionnel (futur dans le passé)",
+      "example": "Je ne savais pas que cet homme serait mon mari.",
+      "en": "Future in the past",
+      "es": "Futuro en el pasado"
+    },
+    {
+      "structure": "il y a + durée",
+      "example": "Je l'ai rencontré il y a dix ans.",
+      "en": "\"ago\"",
+      "es": "«hace» (tiempo)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Most weather expressions use \"il fait\": il fait beau / chaud / froid / frais / doux. But: il pleut, il neige, il y a du vent / du brouillard.",
+      "es": "La mayoría de las expresiones del tiempo usan «il fait»: il fait beau / chaud / froid / frais / doux. Pero: il pleut, il neige, il y a du vent / du brouillard."
+    },
+    {
+      "en": "Seasons: \"au printemps\", but \"en été\", \"en automne\", \"en hiver\".",
+      "es": "Estaciones: «au printemps», pero «en été», «en automne», «en hiver»."
+    },
+    {
+      "en": "\"Frileux / frileuse\" = someone who feels the cold easily.",
+      "es": "«Frileux / frileuse» = friolero / friolera."
+    },
+    {
+      "en": "\"Trempé\" = soaked; \"être trempé jusqu'aux os\" = to be soaked to the bone.",
+      "es": "«Trempé» = empapado; «être trempé jusqu'aux os» = estar calado hasta los huesos."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le printemps",
+      "en": "spring",
+      "es": "la primavera"
+    },
+    {
+      "word": "l'été",
+      "en": "summer",
+      "es": "el verano"
+    },
+    {
+      "word": "l'automne",
+      "en": "autumn / fall",
+      "es": "el otoño"
+    },
+    {
+      "word": "l'hiver",
+      "en": "winter",
+      "es": "el invierno"
+    },
+    {
+      "word": "la saison",
+      "en": "the season",
+      "es": "la estación"
+    },
+    {
+      "word": "le climat",
+      "en": "the climate",
+      "es": "el clima"
+    },
+    {
+      "word": "la météo",
+      "en": "the weather forecast",
+      "es": "el pronóstico del tiempo"
+    },
+    {
+      "word": "le soleil",
+      "en": "the sun",
+      "es": "el sol"
+    },
+    {
+      "word": "ensoleillé / ensoleillée",
+      "en": "sunny",
+      "es": "soleado / soleada"
+    },
+    {
+      "word": "le nuage",
+      "en": "the cloud",
+      "es": "la nube"
+    },
+    {
+      "word": "nuageux / nuageuse",
+      "en": "cloudy",
+      "es": "nublado / nublada"
+    },
+    {
+      "word": "dégagé / dégagée",
+      "en": "clear (sky)",
+      "es": "despejado / despejada"
+    },
+    {
+      "word": "la pluie",
+      "en": "rain",
+      "es": "la lluvia"
+    },
+    {
+      "word": "pleuvoir",
+      "en": "to rain",
+      "es": "llover"
+    },
+    {
+      "word": "la neige",
+      "en": "snow",
+      "es": "la nieve"
+    },
+    {
+      "word": "neiger",
+      "en": "to snow",
+      "es": "nevar"
+    },
+    {
+      "word": "la glace",
+      "en": "ice",
+      "es": "el hielo"
+    },
+    {
+      "word": "geler",
+      "en": "to freeze",
+      "es": "helar"
+    },
+    {
+      "word": "gelé / gelée",
+      "en": "frozen",
+      "es": "congelado / congelada"
+    },
+    {
+      "word": "fondre",
+      "en": "to melt",
+      "es": "derretirse"
+    },
+    {
+      "word": "le brouillard",
+      "en": "fog",
+      "es": "la niebla"
+    },
+    {
+      "word": "la brume",
+      "en": "mist",
+      "es": "la bruma"
+    },
+    {
+      "word": "le vent",
+      "en": "wind",
+      "es": "el viento"
+    },
+    {
+      "word": "l'orage",
+      "en": "thunderstorm",
+      "es": "la tormenta"
+    },
+    {
+      "word": "la tempête",
+      "en": "the storm",
+      "es": "la tempestad"
+    },
+    {
+      "word": "le tonnerre",
+      "en": "thunder",
+      "es": "el trueno"
+    },
+    {
+      "word": "l'éclair",
+      "en": "lightning flash",
+      "es": "el relámpago"
+    },
+    {
+      "word": "la foudre",
+      "en": "lightning (strike)",
+      "es": "el rayo"
+    },
+    {
+      "word": "l'arc-en-ciel",
+      "en": "rainbow",
+      "es": "el arcoíris"
+    },
+    {
+      "word": "l'inondation",
+      "en": "flood",
+      "es": "la inundación"
+    },
+    {
+      "word": "l'ouragan",
+      "en": "hurricane",
+      "es": "el huracán"
+    },
+    {
+      "word": "les dégâts",
+      "en": "damage",
+      "es": "los daños"
+    },
+    {
+      "word": "le degré",
+      "en": "degree",
+      "es": "el grado"
+    },
+    {
+      "word": "la chaleur",
+      "en": "heat",
+      "es": "el calor"
+    },
+    {
+      "word": "chaud / chaude",
+      "en": "hot",
+      "es": "caliente / caluroso"
+    },
+    {
+      "word": "froid / froide",
+      "en": "cold",
+      "es": "frío / fría"
+    },
+    {
+      "word": "frais / fraîche",
+      "en": "cool / fresh",
+      "es": "fresco / fresca"
+    },
+    {
+      "word": "doux / douce",
+      "en": "mild",
+      "es": "templado / suave"
+    },
+    {
+      "word": "humide",
+      "en": "humid / damp",
+      "es": "húmedo"
+    },
+    {
+      "word": "sec / sèche",
+      "en": "dry",
+      "es": "seco / seca"
+    },
+    {
+      "word": "mouillé / mouillée",
+      "en": "wet",
+      "es": "mojado / mojada"
+    },
+    {
+      "word": "trempé / trempée",
+      "en": "soaked",
+      "es": "empapado / empapada"
+    },
+    {
+      "word": "frileux / frileuse",
+      "en": "sensitive to cold",
+      "es": "friolero / friolera"
+    },
+    {
+      "word": "se calmer",
+      "en": "to calm down",
+      "es": "calmarse"
+    },
+    {
+      "word": "avoir peur",
+      "en": "to be afraid",
+      "es": "tener miedo"
+    },
+    {
+      "word": "le parapluie",
+      "en": "the umbrella",
+      "es": "el paraguas"
+    },
+    {
+      "word": "la couverture",
+      "en": "the blanket",
+      "es": "la manta"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Dans certains pays, il y a quatre saisons : le printemps, l'été, l'automne et l'hiver.",
+      "en": "In some countries, there are four seasons: spring, summer, autumn and winter.",
+      "es": "En algunos países hay cuatro estaciones: primavera, verano, otoño e invierno."
+    },
+    {
+      "phrase": "L'hiver est la saison la plus froide.",
+      "en": "Winter is the coldest season.",
+      "es": "El invierno es la estación más fría."
+    },
+    {
+      "phrase": "Le ciel est dégagé.",
+      "en": "The sky is clear.",
+      "es": "El cielo está despejado."
+    },
+    {
+      "phrase": "Une inondation en Bretagne a laissé beaucoup de gens sans abri.",
+      "en": "A flood in Brittany left many people homeless.",
+      "es": "Una inundación en Bretaña dejó a mucha gente sin hogar."
+    },
+    {
+      "phrase": "Quand le soleil et la pluie sont ensemble, l'arc-en-ciel apparaît.",
+      "en": "When sun and rain come together, the rainbow appears.",
+      "es": "Cuando el sol y la lluvia coinciden, aparece el arcoíris."
+    },
+    {
+      "phrase": "Cet éclair m'a fait peur ! — Calme-toi.",
+      "en": "That lightning scared me! — Calm down.",
+      "es": "¡Ese relámpago me ha asustado! — Cálmate."
+    },
+    {
+      "phrase": "Je suis gelée, allume le chauffage !",
+      "en": "I'm freezing, turn on the heating!",
+      "es": "¡Estoy congelada, enciende la calefacción!"
+    },
+    {
+      "phrase": "Ce mois-ci, le temps sera terrible à cause d'un vent froid du nord.",
+      "en": "This month, the weather will be terrible because of a cold north wind.",
+      "es": "Este mes el tiempo será terrible por un viento frío del norte."
+    },
+    {
+      "phrase": "On dirait qu'il va pleuvoir. — Bien sûr, nous sommes en novembre !",
+      "en": "It looks like it's going to rain. — Of course, it's November!",
+      "es": "Parece que va a llover. — ¡Claro, estamos en noviembre!"
+    },
+    {
+      "phrase": "Ne sors pas : il y a un mètre de neige !",
+      "en": "Don't go out: there's a meter of snow!",
+      "es": "No salgas: ¡hay un metro de nieve!"
+    },
+    {
+      "phrase": "Il y a du vent. Ferme les fenêtres, sinon mes papiers vont s'envoler.",
+      "en": "It's windy. Close the windows, otherwise my papers will blow away.",
+      "es": "Hace viento. Cierra las ventanas, si no mis papeles van a salir volando."
+    },
+    {
+      "phrase": "L'avion n'arrivera pas à l'heure à cause de la tempête.",
+      "en": "The plane won't arrive on time because of the storm.",
+      "es": "El avión no llegará a su hora por la tormenta."
+    },
+    {
+      "phrase": "Est-ce qu'il y a eu beaucoup de dégâts ? — Non, heureusement.",
+      "en": "Was there a lot of damage? — No, luckily.",
+      "es": "¿Hubo muchos daños? — No, por suerte."
+    },
+    {
+      "phrase": "Tu es trempé ! — Il pleuvait à verse et j'avais oublié mon parapluie.",
+      "en": "You're soaked! — It was pouring and I had forgotten my umbrella.",
+      "es": "¡Estás empapado! — Llovía a cántaros y me había olvidado el paraguas."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"En hiver, il ___ froid.\"",
+        "es": "Completa: «En hiver, il ___ froid.»"
+      },
+      "options": [
+        "fait",
+        "est",
+        "a",
+        "y a"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Il fait froid / chaud / beau.",
+        "es": "Il fait froid / chaud / beau."
+      }
+    },
+    {
+      "question": {
+        "en": "Which season takes \"au\"?",
+        "es": "¿Qué estación lleva «au»?"
+      },
+      "options": [
+        "le printemps",
+        "l'été",
+        "l'automne",
+        "l'hiver"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Au printemps, but en été, en automne, en hiver.",
+        "es": "Au printemps, pero en été, en automne, en hiver."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence uses the plus-que-parfait?",
+        "es": "¿Qué frase usa el plus-que-parfait?"
+      },
+      "options": [
+        "J'avais oublié mon parapluie.",
+        "J'ai oublié mon parapluie.",
+        "J'oubliais mon parapluie.",
+        "J'oublierai mon parapluie."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus-que-parfait = imparfait of avoir/être + past participle.",
+        "es": "Plus-que-parfait = imperfecto de avoir/être + participio."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je marchais sous la pluie quand je l'___.\"",
+        "es": "Completa: «Je marchais sous la pluie quand je l'___.»"
+      },
+      "options": [
+        "ai vue",
+        "voyais",
+        "avais vue",
+        "verrai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Background (imparfait) interrupted by an event (passé composé).",
+        "es": "Fondo (imperfecto) interrumpido por un hecho (passé composé)."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Je ne savais pas qu'elle serait ma femme.\" What does \"serait\" express?",
+        "es": "«Je ne savais pas qu'elle serait ma femme.» ¿Qué expresa «serait»?"
+      },
+      "options": {
+        "en": [
+          "the future seen from the past",
+          "a polite request",
+          "a present hypothesis",
+          "an order"
+        ],
+        "es": [
+          "el futuro visto desde el pasado",
+          "una petición cortés",
+          "una hipótesis presente",
+          "una orden"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "The conditional can express a \"future in the past\".",
+        "es": "El condicional puede expresar un «futuro en el pasado»."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"le brouillard\"?",
+        "es": "¿Qué es «le brouillard»?"
+      },
+      "options": {
+        "en": [
+          "fog",
+          "thunder",
+          "hail",
+          "drizzle"
+        ],
+        "es": [
+          "la niebla",
+          "el trueno",
+          "el granizo",
+          "la llovizna"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Brume = mist (lighter).",
+        "es": "Brume = bruma (más ligera)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"C'était comme si nous nous ___ toujours connus.\"",
+        "es": "Completa: «C'était comme si nous nous ___ toujours connus.»"
+      },
+      "options": [
+        "étions",
+        "sommes",
+        "serions",
+        "soyons"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Comme si\" + plus-que-parfait (or imparfait).",
+        "es": "«Comme si» + plus-que-parfait (o imperfecto)."
+      }
+    },
+    {
+      "question": {
+        "en": "Someone who is always cold is…",
+        "es": "Alguien que siempre tiene frío es…"
+      },
+      "options": [
+        "frileux",
+        "trempé",
+        "doux",
+        "sec"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Frileux / frileuse.",
+        "es": "Frileux / frileuse."
+      }
+    }
+  ],
+  "story": {
+    "title": "L'abribus",
+    "text": "J'ai rencontré mon mari il y a douze ans, un soir d'automne, à Lyon. Ce jour-là, il pleuvait à verse et il y avait beaucoup de vent. J'étais de mauvaise humeur, parce que j'avais raté mon train et j'avais oublié mon parapluie. J'ai couru jusqu'à un abribus pour me protéger de l'orage. Un homme était déjà là, trempé jusqu'aux os. Tout à coup, un éclair a illuminé le ciel et le tonnerre a été si fort que j'ai crié. Il a ri, puis il m'a dit : « Calmez-vous, l'orage ne durera pas. » Nous avons commencé à parler de tout et de rien. C'était comme si nous nous étions toujours connus. Quand la pluie s'est arrêtée, un arc-en-ciel est apparu au-dessus du Rhône. Il m'a invitée à boire un chocolat chaud. À ce moment-là, je ne savais pas que cet inconnu serait l'homme de ma vie. Depuis, peu importe le temps qu'il fait : quand je le regarde, le ciel est toujours dégagé.",
+    "en": "I met my husband twelve years ago, one autumn evening, in Lyon. That day, it was pouring and very windy. I was in a bad mood, because I had missed my train and I had forgotten my umbrella. I ran to a bus shelter to protect myself from the storm. A man was already there, soaked to the bone. Suddenly, a flash of lightning lit up the sky and the thunder was so loud that I screamed. He laughed, then said to me: “Calm down, the storm won't last.” We started talking about everything and nothing. It was as if we had always known each other. When the rain stopped, a rainbow appeared over the Rhône. He invited me for a hot chocolate. At that moment, I didn't know that this stranger would be the love of my life. Since then, whatever the weather: when I look at him, the sky is always clear.",
+    "es": "Conocí a mi marido hace doce años, una tarde de otoño, en Lyon. Ese día llovía a cántaros y hacía mucho viento. Yo estaba de mal humor porque había perdido el tren y me había olvidado el paraguas. Corrí hasta una parada de autobús para protegerme de la tormenta. Ya había un hombre allí, calado hasta los huesos. De repente, un relámpago iluminó el cielo y el trueno fue tan fuerte que grité. Él se rio y luego me dijo: «Cálmese, la tormenta no durará.» Empezamos a hablar de todo y de nada. Era como si nos hubiéramos conocido siempre. Cuando paró la lluvia, apareció un arcoíris sobre el Ródano. Me invitó a tomar un chocolate caliente. En ese momento no sabía que aquel desconocido sería el hombre de mi vida. Desde entonces, haga el tiempo que haga, cuando lo miro, el cielo siempre está despejado.",
+    "highlighted_words": [
+      "il y a douze ans",
+      "d'automne",
+      "il pleuvait à verse",
+      "vent",
+      "j'avais raté",
+      "j'avais oublié",
+      "orage",
+      "trempé",
+      "éclair",
+      "tonnerre",
+      "Calmez-vous",
+      "ne durera pas",
+      "comme si nous nous étions",
+      "arc-en-ciel",
+      "serait",
+      "dégagé"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Il fait très froid aujourd'hui",
+      "en": "It's very cold today",
+      "es": "Hoy hace mucho frío"
+    },
+    {
+      "sentence": "Le ciel est dégagé",
+      "en": "The sky is clear",
+      "es": "El cielo está despejado"
+    },
+    {
+      "sentence": "J'avais oublié mon parapluie",
+      "en": "I had forgotten my umbrella",
+      "es": "Me había olvidado el paraguas"
+    },
+    {
+      "sentence": "Ne sors pas il neige",
+      "en": "Don't go out it's snowing",
+      "es": "No salgas, está nevando"
+    },
+    {
+      "sentence": "Au printemps il fait doux",
+      "en": "In spring the weather is mild",
+      "es": "En primavera hace buen tiempo"
+    },
+    {
+      "sentence": "Une tempête arrive",
+      "en": "A storm is coming",
+      "es": "Se acerca una tormenta"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Il pleut beaucoup",
+      "en": "It's raining a lot",
+      "es": "Llueve mucho"
+    },
+    {
+      "answer": "Je suis gelé",
+      "en": "I'm freezing",
+      "es": "Estoy congelado"
+    },
+    {
+      "answer": "Tu es trempé",
+      "en": "You are soaked",
+      "es": "Estás empapado"
+    },
+    {
+      "answer": "L'hiver est la saison la plus froide",
+      "en": "Winter is the coldest season",
+      "es": "El invierno es la estación más fría"
+    },
+    {
+      "answer": "Il y a du brouillard",
+      "en": "It's foggy",
+      "es": "Hay niebla"
+    },
+    {
+      "answer": "Calme-toi",
+      "en": "Calm down",
+      "es": "Cálmate"
+    }
+  ]
+}

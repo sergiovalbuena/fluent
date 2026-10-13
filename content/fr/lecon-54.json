@@ -1,0 +1,548 @@
+{
+  "lesson": 54,
+  "slug": "lecon-54",
+  "icon": "📷",
+  "title": {
+    "fr": "Le magasin de photo",
+    "es": "La tienda de fotografía",
+    "en": "The photo shop"
+  },
+  "source": {
+    "audio": "Lecons 54.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "comparatif",
+      "example": "Cette photo est plus claire que l'autre. / Son trépied a coûté moins cher.",
+      "en": "Comparatives (plus / moins / aussi … que)",
+      "es": "Comparativos"
+    },
+    {
+      "structure": "superlatif",
+      "example": "C'est la plus jolie des photos. / Ce fut le plus beau voyage de notre vie.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "meilleur / mieux",
+      "example": "Ton appareil est bon, mais le mien est meilleur. / Elle photographie mieux que moi.",
+      "en": "Better (adjective vs. adverb)",
+      "es": "Mejor (adjetivo frente a adverbio)"
+    },
+    {
+      "structure": "pronoms possessifs",
+      "example": "le mien, la tienne, les nôtres",
+      "en": "Possessive pronouns",
+      "es": "Pronombres posesivos"
+    },
+    {
+      "structure": "superlatif + subjonctif",
+      "example": "C'est la meilleure photographe que je connaisse.",
+      "en": "Subjunctive after a superlative",
+      "es": "Subjuntivo tras un superlativo"
+    },
+    {
+      "structure": "attendre que / vouloir que + subjonctif",
+      "example": "On attendra que le ciel soit plus dégagé. / Quel type de photos veux-tu que je prenne ?",
+      "en": "Subjunctive after waiting / wanting",
+      "es": "Subjuntivo tras esperar / querer"
+    },
+    {
+      "structure": "voix passive",
+      "example": "Le posemètre est utilisé pour mesurer la lumière.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Meilleur\" is an adjective (un meilleur appareil); \"mieux\" is an adverb (il photographie mieux). Never \"plus bon\".",
+      "es": "«Meilleur» es adjetivo (un meilleur appareil); «mieux» es adverbio (il photographie mieux). Nunca «plus bon»."
+    },
+    {
+      "en": "Photo words: \"l'appareil photo\" (camera), \"l'objectif\" (lens), \"le trépied\" (tripod), \"la mise au point\" (focus), \"le premier plan\" (foreground), \"flou\" (blurry).",
+      "es": "Fotografía: «l'appareil photo» (cámara), «l'objectif» (objetivo), «le trépied» (trípode), «la mise au point» (enfoque), «le premier plan» (primer plano), «flou» (borroso)."
+    },
+    {
+      "en": "\"Prendre une photo\" = to take a photo; \"développer une pellicule\" = to develop a film; \"imprimer\" = to print.",
+      "es": "«Prendre une photo» = hacer una foto; «développer une pellicule» = revelar un carrete; «imprimer» = imprimir."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'appareil photo",
+      "en": "the camera",
+      "es": "la cámara de fotos"
+    },
+    {
+      "word": "l'appareil photo numérique",
+      "en": "the digital camera",
+      "es": "la cámara digital"
+    },
+    {
+      "word": "le caméscope",
+      "en": "the camcorder",
+      "es": "la videocámara"
+    },
+    {
+      "word": "l'objectif",
+      "en": "the lens",
+      "es": "el objetivo"
+    },
+    {
+      "word": "le zoom",
+      "en": "the zoom",
+      "es": "el zoom"
+    },
+    {
+      "word": "le filtre",
+      "en": "the filter",
+      "es": "el filtro"
+    },
+    {
+      "word": "le flash",
+      "en": "the flash",
+      "es": "el flash"
+    },
+    {
+      "word": "le trépied",
+      "en": "the tripod",
+      "es": "el trípode"
+    },
+    {
+      "word": "le posemètre",
+      "en": "the light meter",
+      "es": "el fotómetro"
+    },
+    {
+      "word": "la pellicule",
+      "en": "the film roll",
+      "es": "el carrete"
+    },
+    {
+      "word": "le négatif",
+      "en": "the negative",
+      "es": "el negativo"
+    },
+    {
+      "word": "la diapositive",
+      "en": "the slide",
+      "es": "la diapositiva"
+    },
+    {
+      "word": "le projecteur",
+      "en": "the projector",
+      "es": "el proyector"
+    },
+    {
+      "word": "l'écran",
+      "en": "the screen",
+      "es": "la pantalla"
+    },
+    {
+      "word": "la pile",
+      "en": "the battery",
+      "es": "la pila"
+    },
+    {
+      "word": "la carte mémoire",
+      "en": "the memory card",
+      "es": "la tarjeta de memoria"
+    },
+    {
+      "word": "prendre une photo",
+      "en": "to take a photo",
+      "es": "hacer una foto"
+    },
+    {
+      "word": "développer",
+      "en": "to develop",
+      "es": "revelar"
+    },
+    {
+      "word": "imprimer",
+      "en": "to print",
+      "es": "imprimir"
+    },
+    {
+      "word": "régler",
+      "en": "to adjust",
+      "es": "ajustar"
+    },
+    {
+      "word": "faire la mise au point",
+      "en": "to focus",
+      "es": "enfocar"
+    },
+    {
+      "word": "le premier plan",
+      "en": "the foreground",
+      "es": "el primer plano"
+    },
+    {
+      "word": "l'arrière-plan",
+      "en": "the background",
+      "es": "el fondo"
+    },
+    {
+      "word": "le paysage",
+      "en": "the landscape",
+      "es": "el paisaje"
+    },
+    {
+      "word": "le portrait",
+      "en": "the portrait",
+      "es": "el retrato"
+    },
+    {
+      "word": "en noir et blanc",
+      "en": "in black and white",
+      "es": "en blanco y negro"
+    },
+    {
+      "word": "en couleur",
+      "en": "in color",
+      "es": "en color"
+    },
+    {
+      "word": "flou / floue",
+      "en": "blurry",
+      "es": "borroso / borrosa"
+    },
+    {
+      "word": "net / nette",
+      "en": "sharp",
+      "es": "nítido / nítida"
+    },
+    {
+      "word": "clair / sombre",
+      "en": "bright / dark",
+      "es": "claro / oscuro"
+    },
+    {
+      "word": "meilleur / meilleure",
+      "en": "better / best",
+      "es": "mejor"
+    },
+    {
+      "word": "mieux",
+      "en": "better (adverb)",
+      "es": "mejor (adverbio)"
+    },
+    {
+      "word": "le / la photographe",
+      "en": "the photographer",
+      "es": "el / la fotógrafo/a"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Achetons un appareil photo !",
+      "en": "Let's buy a camera!",
+      "es": "¡Compremos una cámara!"
+    },
+    {
+      "phrase": "Ton appareil est bon, mais le mien est meilleur.",
+      "en": "Your camera is good, but mine is better.",
+      "es": "Tu cámara es buena, pero la mía es mejor."
+    },
+    {
+      "phrase": "Sa photo est plus grande que la mienne.",
+      "en": "Her photo is bigger than mine.",
+      "es": "Su foto es más grande que la mía."
+    },
+    {
+      "phrase": "Cette photo est plus claire que l'autre.",
+      "en": "This photo is brighter than the other.",
+      "es": "Esta foto es más clara que la otra."
+    },
+    {
+      "phrase": "Cette pile dure plus longtemps que l'autre.",
+      "en": "This battery lasts longer than the other.",
+      "es": "Esta pila dura más que la otra."
+    },
+    {
+      "phrase": "Mon appareil est plus récent que le tien.",
+      "en": "My camera is newer than yours.",
+      "es": "Mi cámara es más nueva que la tuya."
+    },
+    {
+      "phrase": "Son trépied a coûté moins cher.",
+      "en": "His tripod cost less.",
+      "es": "Su trípode costó menos."
+    },
+    {
+      "phrase": "Approche-toi de l'appareil, je ne te vois pas bien.",
+      "en": "Come closer to the camera, I can't see you well.",
+      "es": "Acércate a la cámara, no te veo bien."
+    },
+    {
+      "phrase": "Prends la photo sans le flash.",
+      "en": "Take the photo without the flash.",
+      "es": "Haz la foto sin flash."
+    },
+    {
+      "phrase": "Tu peux mettre son visage au premier plan ? — Oui, c'est ce que je voulais faire.",
+      "en": "Can you put her face in the foreground? — Yes, that's what I wanted to do.",
+      "es": "¿Puedes poner su cara en primer plano? — Sí, es lo que quería hacer."
+    },
+    {
+      "phrase": "Où je mets le trépied ? — À côté de cet arbre, la vue sera meilleure.",
+      "en": "Where do I put the tripod? — Next to that tree, the view will be better.",
+      "es": "¿Dónde pongo el trípode? — Al lado de ese árbol, la vista será mejor."
+    },
+    {
+      "phrase": "Quand prendras-tu ces photos ? — On attendra que le ciel soit plus dégagé.",
+      "en": "When will you take these photos? — We'll wait until the sky is clearer.",
+      "es": "¿Cuándo harás estas fotos? — Esperaremos a que el cielo esté más despejado."
+    },
+    {
+      "phrase": "Parmi ces trois photos, laquelle est la plus jolie ? — Celle de droite.",
+      "en": "Of these three photos, which is the prettiest? — The one on the right.",
+      "es": "De estas tres fotos, ¿cuál es la más bonita? — La de la derecha."
+    },
+    {
+      "phrase": "C'est une bonne photographe ? — C'est la meilleure que je connaisse.",
+      "en": "Is she a good photographer? — She's the best I know.",
+      "es": "¿Es buena fotógrafa? — Es la mejor que conozco."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Mon appareil est ___ que le tien.\"",
+        "es": "Completa: «Mon appareil est ___ que le tien.»"
+      },
+      "options": [
+        "meilleur",
+        "plus bon",
+        "mieux",
+        "le meilleur"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Bon\" → \"meilleur\" (never \"plus bon\").",
+        "es": "«Bon» → «meilleur» (nunca «plus bon»)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle photographie ___ que moi.\"",
+        "es": "Completa: «Elle photographie ___ que moi.»"
+      },
+      "options": [
+        "mieux",
+        "meilleur",
+        "plus bien",
+        "meilleure"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Adverb: bien → mieux.",
+        "es": "Adverbio: bien → mieux."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Ta photo est belle, mais ___ est plus nette.\" (mine)",
+        "es": "Completa: «Ta photo est belle, mais ___ est plus nette.» (la mía)"
+      },
+      "options": [
+        "la mienne",
+        "le mien",
+        "ma",
+        "les miennes"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Photo is feminine: la mienne.",
+        "es": "Photo es femenino: la mienne."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"C'est le meilleur photographe que je ___.\"",
+        "es": "Completa: «C'est le meilleur photographe que je ___.»"
+      },
+      "options": [
+        "connaisse",
+        "connais",
+        "connaîtrai",
+        "connaissais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Subjunctive after a superlative.",
+        "es": "Subjuntivo tras un superlativo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"On attendra que le ciel ___ dégagé.\"",
+        "es": "Completa: «On attendra que le ciel ___ dégagé.»"
+      },
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "était"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Attendre que\" + subjunctive.",
+        "es": "«Attendre que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un trépied\"?",
+        "es": "¿Qué es «un trépied»?"
+      },
+      "options": {
+        "en": [
+          "a tripod",
+          "a lens",
+          "a flash",
+          "a film"
+        ],
+        "es": [
+          "un trípode",
+          "un objetivo",
+          "un flash",
+          "un carrete"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Three feet to hold the camera.",
+        "es": "Tres patas para sujetar la cámara."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Flou\" means…",
+        "es": "«Flou» significa…"
+      },
+      "options": {
+        "en": [
+          "blurry",
+          "bright",
+          "colorful",
+          "sharp"
+        ],
+        "es": [
+          "borroso",
+          "luminoso",
+          "colorido",
+          "nítido"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Opposite: net.",
+        "es": "Lo contrario: net."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"C'est la ___ belle photo de l'album.\"",
+        "es": "Completa: «C'est la ___ belle photo de l'album.»"
+      },
+      "options": [
+        "plus",
+        "meilleure",
+        "mieux",
+        "très"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Superlative: la plus + adjective + de.",
+        "es": "Superlativo: la plus + adjetivo + de."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le voyage le plus photogénique",
+    "text": "Ma sœur et moi sommes parties en Islande pour photographier les paysages les plus spectaculaires d'Europe. Le seul problème, c'est qu'à l'arrivée, la compagnie aérienne avait perdu nos bagages, avec tout notre matériel dedans ! Il ne nous restait que nos passeports et un peu d'argent. D'un côté, nous avions de la chance d'être là ; de l'autre, c'était vraiment difficile. Nous avons dû racheter un appareil photo, un trépied, des cartes mémoire, des piles… et des vêtements chauds. Pendant trois jours, nous avons cherché le meilleur matériel, mais quand il était de bonne qualité, il était trop cher. Finalement, un vieux photographe de Reykjavik nous a vendu son appareil : « C'est le meilleur que vous puissiez trouver ici », nous a-t-il dit. Il avait raison. Nous avons pris des photos de cascades plus hautes que des immeubles, de glaciers plus bleus que le ciel et d'aurores boréales magnifiques. Ce fut le plus beau voyage de notre vie. Et nos valises ? Elles sont arrivées le dernier jour… mais nous avons gardé l'appareil du vieux photographe. Il est meilleur que l'ancien !",
+    "en": "My sister and I went to Iceland to photograph the most spectacular landscapes in Europe. The only problem was that when we arrived, the airline had lost our luggage, with all our equipment inside! We only had our passports and a bit of money left. On the one hand, we were lucky to be there; on the other, it was really hard. We had to buy a new camera, a tripod, memory cards, batteries… and warm clothes. For three days, we looked for the best equipment, but when it was good quality, it was too expensive. Finally, an old photographer in Reykjavik sold us his camera: “It's the best one you can find here,” he told us. He was right. We took photos of waterfalls taller than buildings, glaciers bluer than the sky, and magnificent northern lights. It was the most beautiful trip of our lives. And our suitcases? They arrived on the last day… but we kept the old photographer's camera. It's better than the old one!",
+    "es": "Mi hermana y yo nos fuimos a Islandia para fotografiar los paisajes más espectaculares de Europa. El único problema fue que, al llegar, la aerolínea había perdido nuestro equipaje, ¡con todo el material dentro! Solo nos quedaban los pasaportes y un poco de dinero. Por un lado, teníamos suerte de estar allí; por otro, era muy difícil. Tuvimos que volver a comprar una cámara, un trípode, tarjetas de memoria, pilas… y ropa de abrigo. Durante tres días buscamos el mejor material, pero cuando era de buena calidad, era demasiado caro. Al final, un viejo fotógrafo de Reikiavik nos vendió su cámara: «Es la mejor que pueden encontrar aquí», nos dijo. Tenía razón. Hicimos fotos de cascadas más altas que edificios, de glaciares más azules que el cielo y de auroras boreales magníficas. Fue el viaje más bonito de nuestra vida. ¿Y nuestras maletas? Llegaron el último día… pero nos quedamos con la cámara del viejo fotógrafo. ¡Es mejor que la antigua!",
+    "highlighted_words": [
+      "les paysages les plus spectaculaires",
+      "avait perdu",
+      "Il ne nous restait que",
+      "appareil photo",
+      "trépied",
+      "le meilleur matériel",
+      "le meilleur que vous puissiez trouver",
+      "plus hautes que",
+      "plus bleus que",
+      "le plus beau voyage",
+      "meilleur que l'ancien"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Mon appareil est meilleur que le tien",
+      "en": "My camera is better than yours",
+      "es": "Mi cámara es mejor que la tuya"
+    },
+    {
+      "sentence": "C'est la plus belle photo",
+      "en": "It's the most beautiful photo",
+      "es": "Es la foto más bonita"
+    },
+    {
+      "sentence": "Prends la photo sans flash",
+      "en": "Take the photo without flash",
+      "es": "Haz la foto sin flash"
+    },
+    {
+      "sentence": "Elle photographie mieux que moi",
+      "en": "She photographs better than me",
+      "es": "Fotografía mejor que yo"
+    },
+    {
+      "sentence": "Attendons que le soleil sorte",
+      "en": "Let's wait for the sun to come out",
+      "es": "Esperemos a que salga el sol"
+    },
+    {
+      "sentence": "Cette photo est floue",
+      "en": "This photo is blurry",
+      "es": "Esta foto está borrosa"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Souriez !",
+      "en": "Smile!",
+      "es": "¡Sonrían!"
+    },
+    {
+      "answer": "Je voudrais imprimer ces photos",
+      "en": "I would like to print these photos",
+      "es": "Quisiera imprimir estas fotos"
+    },
+    {
+      "answer": "Ma photo est plus nette que la tienne",
+      "en": "My photo is sharper than yours",
+      "es": "Mi foto es más nítida que la tuya"
+    },
+    {
+      "answer": "C'est le meilleur appareil",
+      "en": "It's the best camera",
+      "es": "Es la mejor cámara"
+    },
+    {
+      "answer": "Le flash ne marche pas",
+      "en": "The flash isn't working",
+      "es": "El flash no funciona"
+    },
+    {
+      "answer": "Prends une photo de nous",
+      "en": "Take a photo of us",
+      "es": "Haznos una foto"
+    }
+  ]
+}

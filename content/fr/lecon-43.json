@@ -1,0 +1,589 @@
+{
+  "lesson": 43,
+  "slug": "lecon-43",
+  "icon": "🎓",
+  "title": {
+    "fr": "Aller à l'université",
+    "es": "Ir a la universidad",
+    "en": "Going to university"
+  },
+  "source": {
+    "audio": "Lecons 43.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "pouvoir / devoir (présent)",
+      "example": "Ils doivent être attentifs. / Je dois m'inscrire à cinq matières au minimum.",
+      "en": "Must / can",
+      "es": "Deber / poder"
+    },
+    {
+      "structure": "conditionnel (conseil, possibilité)",
+      "example": "Tu devrais étudier. / La bibliothèque pourrait être fermée.",
+      "en": "Should / could",
+      "es": "Debería / podría"
+    },
+    {
+      "structure": "conditionnel passé",
+      "example": "J'aurais pu aller à la bibliothèque. / Tu aurais pu t'inscrire plus tôt.",
+      "en": "Could have / should have",
+      "es": "Habría podido / podrías haber"
+    },
+    {
+      "structure": "devoir (probabilité)",
+      "example": "Il doit être ici. / Marie doit être à la bibliothèque.",
+      "en": "Must (probability)",
+      "es": "Deber de (probabilidad)"
+    },
+    {
+      "structure": "devoir à l'imparfait",
+      "example": "Ils devaient donner une conférence.",
+      "en": "Was supposed to",
+      "es": "Se suponía que / tenían que"
+    },
+    {
+      "structure": "avoir intérêt à",
+      "example": "Nous avons intérêt à commencer aujourd'hui.",
+      "en": "\"Had better\"",
+      "es": "«Más vale que / nos conviene»"
+    },
+    {
+      "structure": "avant que + subjonctif",
+      "example": "Pas avant que j'aie terminé le cours.",
+      "en": "\"Before\" + subjunctive",
+      "es": "«Antes de que» + subjuntivo"
+    },
+    {
+      "structure": "préférer … à …",
+      "example": "Nous préférons travailler en groupe à travailler seuls.",
+      "en": "Preferring one thing to another",
+      "es": "Preferir una cosa a otra"
+    }
+  ],
+  "tips": [
+    {
+      "en": "French grades are out of 20; 10/20 is usually the pass mark. \"Avoir la moyenne\" = to pass.",
+      "es": "En Francia las notas son sobre 20; normalmente se aprueba con 10/20. «Avoir la moyenne» = aprobar."
+    },
+    {
+      "en": "\"Passer un examen\" = to TAKE an exam; \"réussir un examen\" = to PASS; \"rater / échouer à un examen\" = to fail.",
+      "es": "«Passer un examen» = presentarse a un examen; «réussir un examen» = aprobar; «rater / échouer à un examen» = suspender."
+    },
+    {
+      "en": "\"La fac\" = informal for university; \"le rattrapage\" = resit exam; \"le / la conseiller(ère) d'orientation\" = academic advisor.",
+      "es": "«La fac» = la universidad (coloquial); «le rattrapage» = examen de recuperación; «le / la conseiller(ère) d'orientation» = orientador."
+    },
+    {
+      "en": "\"Un devoir\" = homework; \"un exposé\" = class presentation; \"un mémoire\" = thesis.",
+      "es": "«Un devoir» = deberes / trabajo; «un exposé» = exposición oral; «un mémoire» = tesina / trabajo de fin de estudios."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'université / la fac",
+      "en": "university",
+      "es": "la universidad"
+    },
+    {
+      "word": "la faculté",
+      "en": "the faculty",
+      "es": "la facultad"
+    },
+    {
+      "word": "l'étudiant / l'étudiante",
+      "en": "the student",
+      "es": "el estudiante / la estudiante"
+    },
+    {
+      "word": "le camarade de classe",
+      "en": "the classmate",
+      "es": "el compañero de clase"
+    },
+    {
+      "word": "le professeur",
+      "en": "the professor",
+      "es": "el profesor"
+    },
+    {
+      "word": "le cours",
+      "en": "the class / course",
+      "es": "la clase / el curso"
+    },
+    {
+      "word": "la matière",
+      "en": "the subject",
+      "es": "la asignatura"
+    },
+    {
+      "word": "le semestre",
+      "en": "the semester",
+      "es": "el semestre"
+    },
+    {
+      "word": "l'emploi du temps",
+      "en": "the timetable",
+      "es": "el horario"
+    },
+    {
+      "word": "s'inscrire",
+      "en": "to enroll",
+      "es": "matricularse"
+    },
+    {
+      "word": "l'inscription",
+      "en": "enrollment",
+      "es": "la matrícula"
+    },
+    {
+      "word": "l'admission",
+      "en": "admission",
+      "es": "la admisión"
+    },
+    {
+      "word": "le dossier",
+      "en": "the application file",
+      "es": "el expediente / la solicitud"
+    },
+    {
+      "word": "le délai",
+      "en": "the deadline",
+      "es": "el plazo"
+    },
+    {
+      "word": "rendre",
+      "en": "to hand in",
+      "es": "entregar"
+    },
+    {
+      "word": "l'examen",
+      "en": "the exam",
+      "es": "el examen"
+    },
+    {
+      "word": "passer un examen",
+      "en": "to take an exam",
+      "es": "presentarse a un examen"
+    },
+    {
+      "word": "réussir",
+      "en": "to pass / succeed",
+      "es": "aprobar / tener éxito"
+    },
+    {
+      "word": "rater",
+      "en": "to fail",
+      "es": "suspender"
+    },
+    {
+      "word": "le rattrapage",
+      "en": "the resit",
+      "es": "la recuperación"
+    },
+    {
+      "word": "la note",
+      "en": "the grade",
+      "es": "la nota"
+    },
+    {
+      "word": "la moyenne",
+      "en": "the average / pass mark",
+      "es": "la media / el aprobado"
+    },
+    {
+      "word": "le diplôme",
+      "en": "the degree / diploma",
+      "es": "el título"
+    },
+    {
+      "word": "obtenir son diplôme",
+      "en": "to graduate",
+      "es": "graduarse"
+    },
+    {
+      "word": "le certificat",
+      "en": "the certificate",
+      "es": "el certificado"
+    },
+    {
+      "word": "le laboratoire",
+      "en": "the laboratory",
+      "es": "el laboratorio"
+    },
+    {
+      "word": "la bibliothèque",
+      "en": "the library",
+      "es": "la biblioteca"
+    },
+    {
+      "word": "la conférence",
+      "en": "the lecture",
+      "es": "la conferencia"
+    },
+    {
+      "word": "le cahier",
+      "en": "the notebook",
+      "es": "el cuaderno"
+    },
+    {
+      "word": "le travail de groupe",
+      "en": "group work",
+      "es": "el trabajo en grupo"
+    },
+    {
+      "word": "l'exposé",
+      "en": "the presentation",
+      "es": "la exposición"
+    },
+    {
+      "word": "assister à",
+      "en": "to attend",
+      "es": "asistir a"
+    },
+    {
+      "word": "rattraper",
+      "en": "to catch up",
+      "es": "recuperar / ponerse al día"
+    },
+    {
+      "word": "le conseiller",
+      "en": "the advisor",
+      "es": "el orientador"
+    },
+    {
+      "word": "motivé / motivée",
+      "en": "motivated",
+      "es": "motivado / motivada"
+    },
+    {
+      "word": "attentif / attentive",
+      "en": "attentive",
+      "es": "atento / atenta"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "J'aurais pu aller à la bibliothèque.",
+      "en": "I could have gone to the library.",
+      "es": "Podría haber ido a la biblioteca."
+    },
+    {
+      "phrase": "Elles pourraient être en cours.",
+      "en": "They might be in class.",
+      "es": "Podrían estar en clase."
+    },
+    {
+      "phrase": "Tu devrais étudier davantage.",
+      "en": "You should study more.",
+      "es": "Deberías estudiar más."
+    },
+    {
+      "phrase": "Ils devaient s'inscrire aujourd'hui.",
+      "en": "They were supposed to enroll today.",
+      "es": "Tenían que matricularse hoy."
+    },
+    {
+      "phrase": "Arrivez à l'heure, sinon le professeur ne vous laissera pas entrer.",
+      "en": "Arrive on time, otherwise the professor won't let you in.",
+      "es": "Lleguen a tiempo, si no el profesor no los dejará entrar."
+    },
+    {
+      "phrase": "Elle ne peut pas rater géologie, sinon elle devra refaire le semestre.",
+      "en": "She can't fail geology, otherwise she will have to repeat the semester.",
+      "es": "No puede suspender Geología, si no tendrá que repetir el semestre."
+    },
+    {
+      "phrase": "Tu aurais pu t'inscrire plus tôt !",
+      "en": "You could have enrolled earlier!",
+      "es": "¡Podrías haberte matriculado antes!"
+    },
+    {
+      "phrase": "Ils ne peuvent pas s'inscrire sans leur carte d'identité.",
+      "en": "They can't enroll without their ID card.",
+      "es": "No pueden matricularse sin su documento de identidad."
+    },
+    {
+      "phrase": "Nous préférons travailler en groupe à travailler seuls.",
+      "en": "We prefer working in a group to working alone.",
+      "es": "Preferimos trabajar en grupo a trabajar solos."
+    },
+    {
+      "phrase": "Je devrais réussir l'examen, j'ai beaucoup révisé hier soir.",
+      "en": "I should pass the exam, I studied a lot last night.",
+      "es": "Debería aprobar el examen, repasé mucho anoche."
+    },
+    {
+      "phrase": "Où est Marie ? — Elle doit être à la bibliothèque.",
+      "en": "Where is Marie? — She must be at the library.",
+      "es": "¿Dónde está Marie? — Debe de estar en la biblioteca."
+    },
+    {
+      "phrase": "Je peux sortir ? — Non, pas avant que j'aie terminé le cours.",
+      "en": "Can I go out? — No, not before I have finished the class.",
+      "es": "¿Puedo salir? — No, no antes de que haya terminado la clase."
+    },
+    {
+      "phrase": "Tu t'es inscrite à temps ? — Non, j'ai dû payer un supplément.",
+      "en": "Did you enroll on time? — No, I had to pay an extra fee.",
+      "es": "¿Te matriculaste a tiempo? — No, tuve que pagar un recargo."
+    },
+    {
+      "phrase": "Si tu ne respectes pas le délai, tu ne pourras pas passer l'examen.",
+      "en": "If you don't meet the deadline, you won't be able to take the exam.",
+      "es": "Si no cumples el plazo, no podrás presentarte al examen."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "How do you give advice: \"You should study\"?",
+        "es": "¿Cómo das un consejo: «Deberías estudiar»?"
+      },
+      "options": [
+        "Tu devrais étudier.",
+        "Tu dois étudier.",
+        "Tu as dû étudier.",
+        "Tu devras étudier."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional of devoir = should.",
+        "es": "Condicional de devoir = deberías."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'aurais pu venir.\" Meaning?",
+        "es": "«J'aurais pu venir.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I could have come.",
+          "I was able to come.",
+          "I will be able to come.",
+          "I came."
+        ],
+        "es": [
+          "Podría haber venido.",
+          "Pude venir.",
+          "Podré venir.",
+          "Vine."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Conditionnel passé of pouvoir.",
+        "es": "Conditionnel passé de pouvoir."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Elle doit être à la bibliothèque.\" What does \"doit\" express?",
+        "es": "«Elle doit être à la bibliothèque.» ¿Qué expresa «doit»?"
+      },
+      "options": {
+        "en": [
+          "probability",
+          "obligation",
+          "the future",
+          "a wish"
+        ],
+        "es": [
+          "probabilidad",
+          "obligación",
+          "el futuro",
+          "un deseo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "She is probably at the library.",
+        "es": "Probablemente está en la biblioteca."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Passer un examen\" means…",
+        "es": "«Passer un examen» significa…"
+      },
+      "options": {
+        "en": [
+          "to take an exam",
+          "to pass an exam",
+          "to skip an exam",
+          "to write an exam"
+        ],
+        "es": [
+          "presentarse a un examen",
+          "aprobar un examen",
+          "saltarse un examen",
+          "redactar un examen"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "To pass = réussir.",
+        "es": "Aprobar = réussir."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Pas avant que j'___ fini.\"",
+        "es": "Completa: «Pas avant que j'___ fini.»"
+      },
+      "options": [
+        "aie",
+        "ai",
+        "avais",
+        "aurai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avant que\" + past subjunctive.",
+        "es": "«Avant que» + subjuntivo pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Nous avons intérêt à commencer.\" Meaning?",
+        "es": "«Nous avons intérêt à commencer.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "We'd better start.",
+          "We're interested in starting.",
+          "We started with interest.",
+          "We won't start."
+        ],
+        "es": [
+          "Más vale que empecemos.",
+          "Nos interesa empezar como tema.",
+          "Empezamos con interés.",
+          "No empezaremos."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avoir intérêt à\" = had better.",
+        "es": "«Avoir intérêt à» = más vale que."
+      }
+    },
+    {
+      "question": {
+        "en": "In France, what is the usual pass mark?",
+        "es": "En Francia, ¿cuál es la nota habitual para aprobar?"
+      },
+      "options": [
+        "10/20",
+        "5/10",
+        "60/100",
+        "7/10"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Grades are out of 20.",
+        "es": "Las notas son sobre 20."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Ils ___ donner une conférence, mais ils sont malades.\"",
+        "es": "Completa: «Ils ___ donner une conférence, mais ils sont malades.»"
+      },
+      "options": [
+        "devaient",
+        "doivent",
+        "devront",
+        "ont dû"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait of devoir = were supposed to.",
+        "es": "Imperfecto de devoir = se suponía que."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le projet de groupe",
+    "text": "« Écoutez, nous devons rendre le projet vendredi », dit Clara à son groupe. « Il compte pour quarante pour cent de la note finale. » « Et on dit que ce professeur note très sévèrement les derniers travaux », ajoute Mehdi. « Qu'est-ce qu'on fait ? » « Nous avons intérêt à commencer aujourd'hui. Comme ça, nous aurons aussi le temps de réviser pour l'examen. On peut se retrouver chez moi cet après-midi. » « D'accord. J'ai vraiment besoin d'une bonne note, sinon je devrai repasser la matière au rattrapage. » « Moi, je ne suis pas très motivé par ce sujet », soupire Lucas. « J'aurais dû choisir un autre cours. Je crois que je vais devoir refaire le semestre : mes résultats n'ont pas été bons. » « Le problème, c'est que pour ce projet, nous devions étudier le chapitre dix, et le professeur ne l'a pas expliqué ! » « Si nous commençons maintenant, nous pourrons nous renseigner à la bibliothèque. Je suis sûre que nous réussirons. » « Vous pourriez commencer sans moi ? Je dois assister à un cours au laboratoire. Je vous rejoins après. » « Pas de problème. Tu devrais nous trouver à la bibliothèque. »",
+    "en": "“Listen, we have to hand in the project on Friday,” Clara tells her group. “It counts for forty percent of the final grade.” “And they say this professor grades the final assignments very harshly,” Mehdi adds. “What do we do?” “We'd better start today. That way, we'll also have time to review for the exam. We can meet at my place this afternoon.” “OK. I really need a good grade, otherwise I'll have to resit the subject.” “I'm not very motivated by this topic,” sighs Lucas. “I should have chosen another course. I think I'm going to have to repeat the semester: my results haven't been good.” “The problem is that for this project we were supposed to study chapter ten, and the professor didn't explain it!” “If we start now, we can look it up at the library. I'm sure we'll succeed.” “Could you start without me? I have to attend a class at the lab. I'll join you afterwards.” “No problem. You should find us at the library.”",
+    "es": "«Escuchen, tenemos que entregar el proyecto el viernes», le dice Clara a su grupo. «Cuenta un cuarenta por ciento de la nota final.» «Y dicen que este profesor corrige con mucha dureza los últimos trabajos», añade Mehdi. «¿Qué hacemos?» «Más vale que empecemos hoy. Así también tendremos tiempo de repasar para el examen. Podemos quedar en mi casa esta tarde.» «Vale. Necesito de verdad una buena nota, si no tendré que ir a la recuperación de la asignatura.» «A mí no me motiva mucho este tema», suspira Lucas. «Debería haber elegido otro curso. Creo que voy a tener que repetir el semestre: mis resultados no han sido buenos.» «¡El problema es que para este proyecto teníamos que estudiar el capítulo diez, y el profesor no lo explicó!» «Si empezamos ahora, podremos informarnos en la biblioteca. Estoy segura de que lo conseguiremos.» «¿Podrían empezar sin mí? Tengo que asistir a una clase en el laboratorio. Me reúno con ustedes después.» «No hay problema. Deberías encontrarnos en la biblioteca.»",
+    "highlighted_words": [
+      "nous devons rendre",
+      "note",
+      "Nous avons intérêt à",
+      "sinon je devrai",
+      "rattrapage",
+      "J'aurais dû",
+      "refaire le semestre",
+      "nous devions étudier",
+      "nous pourrons",
+      "Vous pourriez",
+      "Tu devrais"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Tu devrais étudier plus",
+      "en": "You should study more",
+      "es": "Deberías estudiar más"
+    },
+    {
+      "sentence": "J'aurais pu venir plus tôt",
+      "en": "I could have come earlier",
+      "es": "Podría haber venido antes"
+    },
+    {
+      "sentence": "Elle doit être à la bibliothèque",
+      "en": "She must be at the library",
+      "es": "Debe de estar en la biblioteca"
+    },
+    {
+      "sentence": "Je dois m'inscrire avant lundi",
+      "en": "I have to enroll before Monday",
+      "es": "Tengo que matricularme antes del lunes"
+    },
+    {
+      "sentence": "Nous avons intérêt à commencer",
+      "en": "We'd better start",
+      "es": "Más vale que empecemos"
+    },
+    {
+      "sentence": "J'ai réussi l'examen",
+      "en": "I passed the exam",
+      "es": "Aprobé el examen"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je dois rendre mon devoir",
+      "en": "I have to hand in my homework",
+      "es": "Tengo que entregar mi trabajo"
+    },
+    {
+      "answer": "J'ai raté l'examen",
+      "en": "I failed the exam",
+      "es": "Suspendí el examen"
+    },
+    {
+      "answer": "Quelle est ta note ?",
+      "en": "What is your grade?",
+      "es": "¿Cuál es tu nota?"
+    },
+    {
+      "answer": "Il va obtenir son diplôme en juin",
+      "en": "He will graduate in June",
+      "es": "Se va a graduar en junio"
+    },
+    {
+      "answer": "La bibliothèque pourrait être fermée",
+      "en": "The library might be closed",
+      "es": "La biblioteca podría estar cerrada"
+    },
+    {
+      "answer": "Arrive à l'heure",
+      "en": "Arrive on time",
+      "es": "Llega a tiempo"
+    }
+  ]
+}

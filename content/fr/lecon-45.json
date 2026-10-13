@@ -1,0 +1,569 @@
+{
+  "lesson": 45,
+  "slug": "lecon-45",
+  "icon": "💍",
+  "title": {
+    "fr": "L'amour et le mariage",
+    "es": "El amor y el matrimonio",
+    "en": "Love and marriage"
+  },
+  "source": {
+    "audio": "Lecons 45.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "si + présent → futur",
+      "example": "Si tu me pardonnes, je te promets que tout ira mieux.",
+      "en": "Real condition (future)",
+      "es": "Condición real (futuro)"
+    },
+    {
+      "structure": "si + présent → futur proche",
+      "example": "Si tu continues avec cette attitude, tu vas la perdre.",
+      "en": "Condition + near future",
+      "es": "Condición + futuro próximo"
+    },
+    {
+      "structure": "futurs irréguliers",
+      "example": "Je mourrai, tu iras, elle saura, nous ferons, il faudra",
+      "en": "Irregular future stems",
+      "es": "Raíces irregulares del futuro"
+    },
+    {
+      "structure": "manquer à",
+      "example": "Tu m'as manqué toute la journée.",
+      "en": "\"To miss someone\" (inverted)",
+      "es": "«Echar de menos» (estructura invertida)"
+    },
+    {
+      "structure": "ne pas vouloir que + subjonctif",
+      "example": "Je ne veux pas que mes enfants se sentent seuls.",
+      "en": "Wishes + subjunctive",
+      "es": "Deseos + subjuntivo"
+    },
+    {
+      "structure": "plus-que-parfait + conditionnel",
+      "example": "J'avais pensé que notre amour serait pour toujours.",
+      "en": "Past expectation",
+      "es": "Expectativa en el pasado"
+    },
+    {
+      "structure": "même si",
+      "example": "Il regarde son téléphone même quand il est avec moi.",
+      "en": "\"Even if / even when\"",
+      "es": "«Aunque / incluso cuando»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Tomber amoureux / amoureuse de quelqu'un\" = to fall in love with someone; \"demander quelqu'un en mariage\" = to propose.",
+      "es": "«Tomber amoureux / amoureuse de quelqu'un» = enamorarse de alguien; «demander quelqu'un en mariage» = pedir matrimonio."
+    },
+    {
+      "en": "\"Tromper\" = to cheat on; \"se tromper\" = to be mistaken. Careful!",
+      "es": "«Tromper» = engañar (ser infiel); «se tromper» = equivocarse. ¡Cuidado!"
+    },
+    {
+      "en": "\"Tu me manques\" = I miss you (literally \"you are missing to me\").",
+      "es": "«Tu me manques» = te echo de menos (literalmente «me faltas»)."
+    },
+    {
+      "en": "\"Les contes de fées\" = fairy tales; \"pleurer à chaudes larmes\" = to cry one's eyes out.",
+      "es": "«Les contes de fées» = cuentos de hadas; «pleurer à chaudes larmes» = llorar a lágrima viva."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'amour",
+      "en": "love",
+      "es": "el amor"
+    },
+    {
+      "word": "aimer",
+      "en": "to love",
+      "es": "amar / querer"
+    },
+    {
+      "word": "tomber amoureux de",
+      "en": "to fall in love with",
+      "es": "enamorarse de"
+    },
+    {
+      "word": "être amoureux / amoureuse",
+      "en": "to be in love",
+      "es": "estar enamorado / enamorada"
+    },
+    {
+      "word": "le petit ami / la petite amie",
+      "en": "boyfriend / girlfriend",
+      "es": "el novio / la novia"
+    },
+    {
+      "word": "le fiancé / la fiancée",
+      "en": "fiancé / fiancée",
+      "es": "el prometido / la prometida"
+    },
+    {
+      "word": "se fiancer",
+      "en": "to get engaged",
+      "es": "comprometerse"
+    },
+    {
+      "word": "se marier avec",
+      "en": "to marry",
+      "es": "casarse con"
+    },
+    {
+      "word": "le mariage",
+      "en": "marriage / wedding",
+      "es": "el matrimonio / la boda"
+    },
+    {
+      "word": "l'alliance",
+      "en": "the wedding ring",
+      "es": "la alianza"
+    },
+    {
+      "word": "le mari / la femme",
+      "en": "husband / wife",
+      "es": "el marido / la mujer"
+    },
+    {
+      "word": "divorcer",
+      "en": "to divorce",
+      "es": "divorciarse"
+    },
+    {
+      "word": "embrasser",
+      "en": "to kiss",
+      "es": "besar"
+    },
+    {
+      "word": "serrer dans ses bras",
+      "en": "to hug",
+      "es": "abrazar"
+    },
+    {
+      "word": "flirter",
+      "en": "to flirt",
+      "es": "coquetear"
+    },
+    {
+      "word": "tromper",
+      "en": "to cheat on",
+      "es": "engañar"
+    },
+    {
+      "word": "trahir",
+      "en": "to betray",
+      "es": "traicionar"
+    },
+    {
+      "word": "jurer",
+      "en": "to swear",
+      "es": "jurar"
+    },
+    {
+      "word": "promettre",
+      "en": "to promise",
+      "es": "prometer"
+    },
+    {
+      "word": "pardonner",
+      "en": "to forgive",
+      "es": "perdonar"
+    },
+    {
+      "word": "se disputer",
+      "en": "to argue",
+      "es": "pelearse"
+    },
+    {
+      "word": "communiquer",
+      "en": "to communicate",
+      "es": "comunicarse"
+    },
+    {
+      "word": "la confiance",
+      "en": "trust",
+      "es": "la confianza"
+    },
+    {
+      "word": "le respect",
+      "en": "respect",
+      "es": "el respeto"
+    },
+    {
+      "word": "le bonheur",
+      "en": "happiness",
+      "es": "la felicidad"
+    },
+    {
+      "word": "le cœur",
+      "en": "the heart",
+      "es": "el corazón"
+    },
+    {
+      "word": "l'âme",
+      "en": "the soul",
+      "es": "el alma"
+    },
+    {
+      "word": "pleurer",
+      "en": "to cry",
+      "es": "llorar"
+    },
+    {
+      "word": "sourire",
+      "en": "to smile",
+      "es": "sonreír"
+    },
+    {
+      "word": "manquer à",
+      "en": "to be missed by",
+      "es": "echar de menos (estructura invertida)"
+    },
+    {
+      "word": "regretter",
+      "en": "to regret",
+      "es": "lamentar / arrepentirse"
+    },
+    {
+      "word": "jaloux / jalouse",
+      "en": "jealous",
+      "es": "celoso / celosa"
+    },
+    {
+      "word": "déprimé / déprimée",
+      "en": "depressed",
+      "es": "deprimido / deprimida"
+    },
+    {
+      "word": "le conte de fées",
+      "en": "fairy tale",
+      "es": "el cuento de hadas"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Si tu continues avec cette attitude, tu vas la perdre.",
+      "en": "If you keep up that attitude, you're going to lose her.",
+      "es": "Si sigues con esa actitud, la vas a perder."
+    },
+    {
+      "phrase": "S'ils ne communiquent pas, ils vont bientôt divorcer.",
+      "en": "If they don't communicate, they'll soon divorce.",
+      "es": "Si no se comunican, pronto se divorciarán."
+    },
+    {
+      "phrase": "Nous serons heureux si nous oublions cet incident.",
+      "en": "We will be happy if we forget this incident.",
+      "es": "Seremos felices si olvidamos este incidente."
+    },
+    {
+      "phrase": "S'il promet quelque chose, il le fait.",
+      "en": "If he promises something, he does it.",
+      "es": "Si promete algo, lo cumple."
+    },
+    {
+      "phrase": "Elle m'appellera si elle se sent seule.",
+      "en": "She'll call me if she feels lonely.",
+      "es": "Me llamará si se siente sola."
+    },
+    {
+      "phrase": "Je te croirai si tu le jures.",
+      "en": "I'll believe you if you swear it.",
+      "es": "Te creeré si lo juras."
+    },
+    {
+      "phrase": "Si tu me pardonnes, je te promets que tout ira mieux.",
+      "en": "If you forgive me, I promise everything will be better.",
+      "es": "Si me perdonas, te prometo que todo irá mejor."
+    },
+    {
+      "phrase": "Si tu te maries, je ferai la plus grande fête du monde !",
+      "en": "If you get married, I'll throw the biggest party in the world!",
+      "es": "¡Si te casas, haré la fiesta más grande del mundo!"
+    },
+    {
+      "phrase": "Je me sentirai seule si tu ne me serres pas dans tes bras.",
+      "en": "I'll feel lonely if you don't hug me.",
+      "es": "Me sentiré sola si no me abrazas."
+    },
+    {
+      "phrase": "Tu iras au mariage ? — J'irai si ma femme vient avec moi.",
+      "en": "Will you go to the wedding? — I'll go if my wife comes with me.",
+      "es": "¿Irás a la boda? — Iré si mi mujer viene conmigo."
+    },
+    {
+      "phrase": "Tu es en train de tomber amoureux d'elle ? — Si elle continue à me regarder comme ça, oui !",
+      "en": "Are you falling in love with her? — If she keeps looking at me like that, yes!",
+      "es": "¿Te estás enamorando de ella? — ¡Si sigue mirándome así, sí!"
+    },
+    {
+      "phrase": "Tu m'as manqué toute la journée.",
+      "en": "I missed you all day.",
+      "es": "Te he echado de menos todo el día."
+    },
+    {
+      "phrase": "Pourquoi es-tu si triste ? — Le mariage est annulé.",
+      "en": "Why are you so sad? — The wedding is cancelled.",
+      "es": "¿Por qué estás tan triste? — La boda se ha cancelado."
+    },
+    {
+      "phrase": "J'ai toujours rêvé de me marier avec toi.",
+      "en": "I've always dreamed of marrying you.",
+      "es": "Siempre he soñado con casarme contigo."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Si tu me le demandes, je ___ oui.\"",
+        "es": "Completa: «Si tu me le demandes, je ___ oui.»"
+      },
+      "options": [
+        "dirai",
+        "dirais",
+        "disais",
+        "ai dit"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + present → future.",
+        "es": "Si + presente → futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si elle part, je ___.\" (mourir, future)",
+        "es": "Completa: «Si elle part, je ___.» (mourir, futuro)"
+      },
+      "options": [
+        "mourrai",
+        "mourirai",
+        "mourais",
+        "meurs"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Irregular future: mourr-.",
+        "es": "Futuro irregular: mourr-."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"I miss you\"?",
+        "es": "¿Cómo se dice «Te echo de menos»?"
+      },
+      "options": [
+        "Tu me manques.",
+        "Je te manque.",
+        "Je manque toi.",
+        "Tu manques moi."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The person missed is the subject.",
+        "es": "La persona añorada es el sujeto."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Tromper quelqu'un\" means…",
+        "es": "«Tromper quelqu'un» significa…"
+      },
+      "options": {
+        "en": [
+          "to cheat on someone",
+          "to be mistaken",
+          "to trust someone",
+          "to marry someone"
+        ],
+        "es": [
+          "engañar a alguien",
+          "equivocarse",
+          "confiar en alguien",
+          "casarse con alguien"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Se tromper\" = to be mistaken.",
+        "es": "«Se tromper» = equivocarse."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je ne veux pas que mes enfants ___ tristes.\"",
+        "es": "Completa: «Je ne veux pas que mes enfants ___ tristes.»"
+      },
+      "options": [
+        "soient",
+        "sont",
+        "seront",
+        "étaient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Vouloir que + subjunctive.",
+        "es": "Vouloir que + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'avais pensé que notre amour ___ éternel.\"",
+        "es": "Completa: «J'avais pensé que notre amour ___ éternel.»"
+      },
+      "options": [
+        "serait",
+        "sera",
+        "est",
+        "soit"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future in the past = conditional.",
+        "es": "Futuro en el pasado = condicional."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Demander quelqu'un en mariage\" means…",
+        "es": "«Demander quelqu'un en mariage» significa…"
+      },
+      "options": {
+        "en": [
+          "to propose to someone",
+          "to invite someone to a wedding",
+          "to ask about a marriage",
+          "to divorce"
+        ],
+        "es": [
+          "pedirle matrimonio a alguien",
+          "invitar a alguien a una boda",
+          "preguntar por un matrimonio",
+          "divorciarse"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "He proposed = il l'a demandée en mariage.",
+        "es": "Le pidió matrimonio = il l'a demandée en mariage."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"une alliance\"?",
+        "es": "¿Qué es «une alliance»?"
+      },
+      "options": {
+        "en": [
+          "a wedding ring",
+          "a wedding",
+          "an engagement party",
+          "a fiancé"
+        ],
+        "es": [
+          "una alianza (anillo)",
+          "una boda",
+          "una fiesta de compromiso",
+          "un prometido"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Also \"an alliance\" in politics.",
+        "es": "También «una alianza» en política."
+      }
+    }
+  ],
+  "story": {
+    "title": "Cher journal",
+    "text": "Lyon, le 12 mars. Cher journal, ces derniers temps, je suis triste. Hugo, mon fiancé, est parti travailler à Montréal il y a six mois, et j'ai l'impression qu'il ne m'aime plus comme avant. Nous nous disputons à chaque appel. Il regarde son téléphone même quand nous parlons en vidéo. Il ne me dit plus « Tu me manques ». J'avais pensé que notre amour serait plus fort que la distance. Il dit qu'il a besoin de temps pour lui. Je crois que je pleurerai toute la nuit si j'apprends qu'il est amoureux de quelqu'un d'autre. Je ne sais pas quoi faire. Ma mère dit que si nous ne communiquons pas mieux, nous allons nous séparer. Mais je l'aime encore. Je ne veux pas que mes amis aient pitié de moi : je suis une femme forte. J'ai beaucoup pleuré, et maintenant, je veux sourire à nouveau. Demain, je l'appellerai et je lui dirai tout ce que je ressens. S'il m'aime vraiment, il m'écoutera. Et s'il ne m'aime plus… eh bien, je survivrai. Ce n'est pas un conte de fées, c'est la vie.",
+    "en": "Lyon, March 12. Dear diary, lately I've been sad. Hugo, my fiancé, left to work in Montreal six months ago, and I feel like he doesn't love me the way he used to. We argue on every call. He looks at his phone even when we're on video. He doesn't say “I miss you” anymore. I had thought our love would be stronger than the distance. He says he needs time for himself. I think I'll cry all night if I find out he's in love with someone else. I don't know what to do. My mother says that if we don't communicate better, we're going to break up. But I still love him. I don't want my friends to feel sorry for me: I'm a strong woman. I've cried a lot, and now I want to smile again. Tomorrow, I'll call him and tell him everything I feel. If he really loves me, he'll listen. And if he doesn't love me anymore… well, I'll survive. It's not a fairy tale, it's life.",
+    "es": "Lyon, 12 de marzo. Querido diario: últimamente estoy triste. Hugo, mi prometido, se fue a trabajar a Montreal hace seis meses y tengo la impresión de que ya no me quiere como antes. Discutimos en cada llamada. Mira el móvil incluso cuando hablamos por videollamada. Ya no me dice «Te echo de menos». Había pensado que nuestro amor sería más fuerte que la distancia. Dice que necesita tiempo para él. Creo que lloraré toda la noche si me entero de que está enamorado de otra persona. No sé qué hacer. Mi madre dice que si no nos comunicamos mejor, nos vamos a separar. Pero todavía lo quiero. No quiero que mis amigos me tengan lástima: soy una mujer fuerte. He llorado mucho y ahora quiero volver a sonreír. Mañana lo llamaré y le diré todo lo que siento. Si de verdad me quiere, me escuchará. Y si ya no me quiere… bueno, sobreviviré. No es un cuento de hadas, es la vida.",
+    "highlighted_words": [
+      "fiancé",
+      "il y a six mois",
+      "Nous nous disputons",
+      "même quand",
+      "Tu me manques",
+      "serait plus fort",
+      "je pleurerai",
+      "si j'apprends",
+      "amoureux",
+      "si nous ne communiquons pas",
+      "nous allons nous séparer",
+      "Je ne veux pas que mes amis aient",
+      "S'il m'aime vraiment",
+      "m'écoutera",
+      "conte de fées"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Si tu m'aimes tu resteras",
+      "en": "If you love me you'll stay",
+      "es": "Si me quieres, te quedarás"
+    },
+    {
+      "sentence": "Tu me manques beaucoup",
+      "en": "I miss you a lot",
+      "es": "Te echo mucho de menos"
+    },
+    {
+      "sentence": "Ils vont se marier en juin",
+      "en": "They're going to get married in June",
+      "es": "Se van a casar en junio"
+    },
+    {
+      "sentence": "Je te le promets",
+      "en": "I promise you",
+      "es": "Te lo prometo"
+    },
+    {
+      "sentence": "Elle est tombée amoureuse de lui",
+      "en": "She fell in love with him",
+      "es": "Se enamoró de él"
+    },
+    {
+      "sentence": "Si tu pars je pleurerai",
+      "en": "If you leave I'll cry",
+      "es": "Si te vas, lloraré"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je t'aime",
+      "en": "I love you",
+      "es": "Te quiero"
+    },
+    {
+      "answer": "Veux-tu m'épouser ?",
+      "en": "Will you marry me?",
+      "es": "¿Quieres casarte conmigo?"
+    },
+    {
+      "answer": "Ils ont divorcé",
+      "en": "They got divorced",
+      "es": "Se divorciaron"
+    },
+    {
+      "answer": "Je te pardonne",
+      "en": "I forgive you",
+      "es": "Te perdono"
+    },
+    {
+      "answer": "Tu m'as manqué",
+      "en": "I missed you",
+      "es": "Te he echado de menos"
+    },
+    {
+      "answer": "Je le jure",
+      "en": "I swear",
+      "es": "Lo juro"
+    }
+  ]
+}

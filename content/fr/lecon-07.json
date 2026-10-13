@@ -1,0 +1,547 @@
+{
+  "lesson": 7,
+  "slug": "lecon-07",
+  "icon": "🏠",
+  "title": {
+    "fr": "Chez moi",
+    "es": "En mi casa",
+    "en": "At home"
+  },
+  "source": {
+    "audio": "Lecons 07.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "être en train de + infinitif",
+      "example": "Il est en train de dormir sur le canapé.",
+      "en": "Action in progress",
+      "es": "Acción en curso"
+    },
+    {
+      "structure": "devoir + infinitif",
+      "example": "Je dois passer l'aspirateur.",
+      "en": "Obligation with \"devoir\"",
+      "es": "Obligación con «devoir»"
+    },
+    {
+      "structure": "impératif",
+      "example": "Fais la vaisselle !",
+      "en": "Imperative (tu)",
+      "es": "Imperativo (tu)"
+    },
+    {
+      "structure": "jusqu'à ce que + subjonctif",
+      "example": "La cuisine était propre jusqu'à ce que tu commences à cuisiner.",
+      "en": "\"until\" + subjunctive",
+      "es": "«hasta que» + subjuntivo"
+    },
+    {
+      "structure": "imparfait / futur simple",
+      "example": "La cuisine était propre. / Le vent séchera tes vêtements.",
+      "en": "Imperfect and simple future",
+      "es": "Imperfecto y futuro simple"
+    },
+    {
+      "structure": "se sentir / se souvenir de",
+      "example": "Je me sens à l'aise. / Te souviens-tu de moi ?",
+      "en": "Reflexive verbs",
+      "es": "Verbos pronominales"
+    },
+    {
+      "structure": "ni … ni",
+      "example": "Nous ne sommes ni riches ni pauvres.",
+      "en": "\"neither … nor\"",
+      "es": "«ni … ni»"
+    },
+    {
+      "structure": "comparatif avec un verbe",
+      "example": "Elle aime la lecture plus que moi.",
+      "en": "Comparing actions (plus que)",
+      "es": "Comparar acciones (plus que)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Faire le ménage\" = to do the housework; \"faire la vaisselle\" = to do the dishes; \"faire la cuisine\" = to cook.",
+      "es": "«Faire le ménage» = hacer las tareas de la casa; «faire la vaisselle» = fregar los platos; «faire la cuisine» = cocinar."
+    },
+    {
+      "en": "\"Chez moi / chez toi / chez nous\" means \"at my / your / our place\" — no need for \"maison\".",
+      "es": "«Chez moi / chez toi / chez nous» significa «en mi / tu / nuestra casa», sin necesidad de decir «maison»."
+    },
+    {
+      "en": "\"Les toilettes\" and \"les WC\" are always plural in French.",
+      "es": "«Les toilettes» y «les WC» van siempre en plural en francés."
+    },
+    {
+      "en": "\"Sens dessus dessous\" = upside down / in a total mess.",
+      "es": "«Sens dessus dessous» = patas arriba / todo desordenado."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la maison",
+      "en": "the house",
+      "es": "la casa"
+    },
+    {
+      "word": "le séjour",
+      "en": "the living room",
+      "es": "la sala de estar"
+    },
+    {
+      "word": "le salon",
+      "en": "the lounge",
+      "es": "el salón"
+    },
+    {
+      "word": "la salle à manger",
+      "en": "the dining room",
+      "es": "el comedor"
+    },
+    {
+      "word": "la cuisine",
+      "en": "the kitchen / cooking",
+      "es": "la cocina"
+    },
+    {
+      "word": "la salle de bains",
+      "en": "the bathroom",
+      "es": "el baño"
+    },
+    {
+      "word": "les toilettes",
+      "en": "the toilet",
+      "es": "el inodoro / el aseo"
+    },
+    {
+      "word": "la chambre",
+      "en": "the bedroom",
+      "es": "el dormitorio"
+    },
+    {
+      "word": "la buanderie",
+      "en": "the laundry room",
+      "es": "el lavadero"
+    },
+    {
+      "word": "le garage",
+      "en": "the garage",
+      "es": "el garaje"
+    },
+    {
+      "word": "la cour",
+      "en": "the yard",
+      "es": "el patio"
+    },
+    {
+      "word": "le canapé",
+      "en": "the sofa",
+      "es": "el sofá"
+    },
+    {
+      "word": "le lit",
+      "en": "the bed",
+      "es": "la cama"
+    },
+    {
+      "word": "la bibliothèque",
+      "en": "the bookcase / the library",
+      "es": "la estantería / la biblioteca"
+    },
+    {
+      "word": "la moquette",
+      "en": "the carpet",
+      "es": "la moqueta"
+    },
+    {
+      "word": "le réfrigérateur",
+      "en": "the refrigerator",
+      "es": "el refrigerador"
+    },
+    {
+      "word": "la machine à laver",
+      "en": "the washing machine",
+      "es": "la lavadora"
+    },
+    {
+      "word": "le repas",
+      "en": "the meal",
+      "es": "la comida"
+    },
+    {
+      "word": "la vaisselle",
+      "en": "the dishes",
+      "es": "los platos"
+    },
+    {
+      "word": "nettoyer",
+      "en": "to clean",
+      "es": "limpiar"
+    },
+    {
+      "word": "faire le ménage",
+      "en": "to do the housework",
+      "es": "hacer las tareas de la casa"
+    },
+    {
+      "word": "passer l'aspirateur",
+      "en": "to vacuum",
+      "es": "pasar la aspiradora"
+    },
+    {
+      "word": "faire cuire",
+      "en": "to cook (food)",
+      "es": "cocinar (un alimento)"
+    },
+    {
+      "word": "laver",
+      "en": "to wash",
+      "es": "lavar"
+    },
+    {
+      "word": "sécher",
+      "en": "to dry",
+      "es": "secar"
+    },
+    {
+      "word": "dormir",
+      "en": "to sleep",
+      "es": "dormir"
+    },
+    {
+      "word": "lire",
+      "en": "to read",
+      "es": "leer"
+    },
+    {
+      "word": "propre",
+      "en": "clean / own",
+      "es": "limpio / propio"
+    },
+    {
+      "word": "sale",
+      "en": "dirty",
+      "es": "sucio"
+    },
+    {
+      "word": "à l'aise",
+      "en": "comfortable / at ease",
+      "es": "a gusto / cómodo"
+    },
+    {
+      "word": "accueillant / accueillante",
+      "en": "welcoming",
+      "es": "acogedor / acogedora"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Rentrons à la maison. Ici, je me sens à l'aise.",
+      "en": "Let's go home. Here, I feel at ease.",
+      "es": "Volvamos a casa. Aquí me siento a gusto."
+    },
+    {
+      "phrase": "La moquette est sale.",
+      "en": "The carpet is dirty.",
+      "es": "La moqueta está sucia."
+    },
+    {
+      "phrase": "Cette maison est très accueillante.",
+      "en": "This house is very welcoming.",
+      "es": "Esta casa es muy acogedora."
+    },
+    {
+      "phrase": "Ils sont en train de nettoyer le sol.",
+      "en": "They are cleaning the floor.",
+      "es": "Están limpiando el suelo."
+    },
+    {
+      "phrase": "Le chat est en train de dormir sur le canapé.",
+      "en": "The cat is sleeping on the sofa.",
+      "es": "El gato está durmiendo en el sofá."
+    },
+    {
+      "phrase": "La voiture est dans le garage.",
+      "en": "The car is in the garage.",
+      "es": "El coche está en el garaje."
+    },
+    {
+      "phrase": "Mon fils passe toujours l'aspirateur le samedi.",
+      "en": "My son always vacuums on Saturdays.",
+      "es": "Mi hijo siempre pasa la aspiradora los sábados."
+    },
+    {
+      "phrase": "La cuisine était propre jusqu'à ce que tu commences à cuisiner !",
+      "en": "The kitchen was clean until you started cooking!",
+      "es": "¡La cocina estaba limpia hasta que empezaste a cocinar!"
+    },
+    {
+      "phrase": "Tes vêtements sont sur le lit.",
+      "en": "Your clothes are on the bed.",
+      "es": "Tu ropa está en la cama."
+    },
+    {
+      "phrase": "Fais la vaisselle, s'il te plaît.",
+      "en": "Do the dishes, please.",
+      "es": "Friega los platos, por favor."
+    },
+    {
+      "phrase": "Étends tes vêtements dans la cour : le soleil les séchera.",
+      "en": "Hang your clothes in the yard: the sun will dry them.",
+      "es": "Tiende tu ropa en el patio: el sol la secará."
+    },
+    {
+      "phrase": "Te souviens-tu de moi ? — Oui, je me souviens.",
+      "en": "Do you remember me? — Yes, I remember.",
+      "es": "¿Te acuerdas de mí? — Sí, me acuerdo."
+    },
+    {
+      "phrase": "Qu'as-tu dans ton salon ? — Un canapé, deux fauteuils et une table basse.",
+      "en": "What do you have in your living room? — A sofa, two armchairs and a coffee table.",
+      "es": "¿Qué tienes en tu salón? — Un sofá, dos sillones y una mesa baja."
+    },
+    {
+      "phrase": "Préfères-tu cuisiner ou faire la vaisselle ? — Peu importe, j'aime les deux.",
+      "en": "Do you prefer cooking or doing the dishes? — It doesn't matter, I like both.",
+      "es": "¿Prefieres cocinar o fregar los platos? — Me da igual, me gustan las dos cosas."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Where do you usually find the washing machine?",
+        "es": "¿Dónde suele estar la lavadora?"
+      },
+      "options": [
+        "dans la buanderie",
+        "dans la chambre",
+        "dans le salon",
+        "dans le garage"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"La buanderie\" is the laundry room.",
+        "es": "«La buanderie» es el lavadero."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"to do the dishes\"?",
+        "es": "¿Cómo se dice «fregar los platos»?"
+      },
+      "options": [
+        "faire la vaisselle",
+        "faire le ménage",
+        "faire la cuisine",
+        "faire le lit"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Faire le ménage = housework, faire la cuisine = to cook, faire le lit = to make the bed.",
+        "es": "Faire le ménage = tareas de la casa, faire la cuisine = cocinar, faire le lit = hacer la cama."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il est en train de dormir.\" What does it mean?",
+        "es": "«Il est en train de dormir.» ¿Qué significa?"
+      },
+      "options": {
+        "en": [
+          "He is sleeping (right now).",
+          "He has to sleep.",
+          "He slept on the train.",
+          "He will sleep."
+        ],
+        "es": [
+          "Está durmiendo (ahora).",
+          "Tiene que dormir.",
+          "Durmió en el tren.",
+          "Dormirá."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Être en train de\" has nothing to do with trains: it means \"in the middle of\".",
+        "es": "«Être en train de» no tiene nada que ver con trenes: significa «estar haciendo algo»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"La cuisine était propre jusqu'à ce que tu ___ à cuisiner.\"",
+        "es": "Completa: «La cuisine était propre jusqu'à ce que tu ___ à cuisiner.»"
+      },
+      "options": [
+        "commences",
+        "commençais",
+        "commenceras",
+        "as commencé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Jusqu'à ce que\" is always followed by the subjunctive.",
+        "es": "«Jusqu'à ce que» siempre va seguido de subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Êtes-vous riches ?\" — \"Nous ne sommes ___ riches ___ pauvres.\"",
+        "es": "«Êtes-vous riches ?» — «Nous ne sommes ___ riches ___ pauvres.»"
+      },
+      "options": [
+        "ni … ni",
+        "pas … pas",
+        "ou … ou",
+        "et … et"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … ni … ni\" = neither … nor.",
+        "es": "«Ne … ni … ni» = ni … ni."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"I have to vacuum\"?",
+        "es": "¿Cómo se dice «Tengo que pasar la aspiradora»?"
+      },
+      "options": [
+        "Je dois passer l'aspirateur.",
+        "Je passe l'aspirateur.",
+        "J'ai passé l'aspirateur.",
+        "Je vais passer à l'aspirateur."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Devoir\" + infinitive expresses obligation.",
+        "es": "«Devoir» + infinitivo expresa obligación."
+      }
+    },
+    {
+      "question": {
+        "en": "Answer to \"Te souviens-tu de moi ?\" if you don't remember:",
+        "es": "Respuesta a «Te souviens-tu de moi ?» si no te acuerdas:"
+      },
+      "options": [
+        "Non, je ne me souviens pas.",
+        "Non, je ne souviens pas.",
+        "Non, je me ne souviens pas.",
+        "Non, je souviens pas me."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "With reflexive verbs, \"ne\" goes before the pronoun: je ne me souviens pas.",
+        "es": "Con verbos pronominales, «ne» va antes del pronombre: je ne me souviens pas."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"Je me sens à l'aise\" mean?",
+        "es": "¿Qué significa «Je me sens à l'aise»?"
+      },
+      "options": {
+        "en": [
+          "I feel comfortable.",
+          "I feel lonely.",
+          "I feel sick.",
+          "I feel lazy."
+        ],
+        "es": [
+          "Me siento a gusto.",
+          "Me siento solo.",
+          "Me siento mal.",
+          "Me siento perezoso."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "The opposite is \"Je me sens mal à l'aise\" (uncomfortable).",
+        "es": "Lo contrario es «Je me sens mal à l'aise» (incómodo)."
+      }
+    }
+  ],
+  "story": {
+    "title": "La colocation de Yasmine",
+    "text": "Salut, tu te souviens de moi ? Je suis Yasmine. J'adore être chez moi, dans mon petit appartement de Montpellier. J'habite avec mon amie Clara et notre chien, Biscotte. Le soir, nous aimons regarder des films sur le canapé et préparer des repas ensemble. Clara cuisine mieux que moi, mais j'aime plus la pâtisserie qu'elle ! Nous ne sommes ni riches ni pauvres, mais nous sommes heureuses. Chaque semaine, nous avons des tâches : je dois passer l'aspirateur et sortir le chien ; Clara doit faire la vaisselle et nettoyer la salle de bains. Hier, l'appartement était propre jusqu'à ce que Biscotte rentre de la cour avec les pattes sales. Maintenant, il est en train de dormir sur mon lit ! Demain, nous laverons tout. Chez nous, je me sens toujours à l'aise.",
+    "en": "Hi, do you remember me? I'm Yasmine. I love being at home, in my little apartment in Montpellier. I live with my friend Clara and our dog, Biscotte. In the evening, we like watching movies on the sofa and making meals together. Clara cooks better than me, but I like baking more than she does! We are neither rich nor poor, but we are happy. Every week, we have chores: I have to vacuum and walk the dog; Clara has to do the dishes and clean the bathroom. Yesterday, the apartment was clean until Biscotte came back from the yard with dirty paws. Now he is sleeping on my bed! Tomorrow, we will wash everything. At home, I always feel at ease.",
+    "es": "Hola, ¿te acuerdas de mí? Soy Yasmine. Me encanta estar en casa, en mi pequeño apartamento de Montpellier. Vivo con mi amiga Clara y nuestro perro, Biscotte. Por la noche nos gusta ver películas en el sofá y preparar comidas juntas. Clara cocina mejor que yo, ¡pero a mí me gusta más la repostería que a ella! No somos ni ricas ni pobres, pero somos felices. Cada semana tenemos tareas: yo tengo que pasar la aspiradora y sacar al perro; Clara tiene que fregar los platos y limpiar el baño. Ayer el apartamento estaba limpio hasta que Biscotte volvió del patio con las patas sucias. ¡Ahora está durmiendo en mi cama! Mañana lo lavaremos todo. En casa siempre me siento a gusto.",
+    "highlighted_words": [
+      "tu te souviens",
+      "chez moi",
+      "canapé",
+      "ni riches ni pauvres",
+      "passer l'aspirateur",
+      "faire la vaisselle",
+      "jusqu'à ce que",
+      "en train de dormir",
+      "laverons",
+      "à l'aise"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je me sens à l'aise chez moi",
+      "en": "I feel at ease at home",
+      "es": "Me siento a gusto en casa"
+    },
+    {
+      "sentence": "Le chien est dans la cour",
+      "en": "The dog is in the yard",
+      "es": "El perro está en el patio"
+    },
+    {
+      "sentence": "Ils sont en train de nettoyer la cuisine",
+      "en": "They are cleaning the kitchen",
+      "es": "Están limpiando la cocina"
+    },
+    {
+      "sentence": "Tu dois faire ton lit",
+      "en": "You have to make your bed",
+      "es": "Tienes que hacer tu cama"
+    },
+    {
+      "sentence": "Nous ne sommes ni riches ni pauvres",
+      "en": "We are neither rich nor poor",
+      "es": "No somos ni ricos ni pobres"
+    },
+    {
+      "sentence": "Le soleil séchera tes vêtements",
+      "en": "The sun will dry your clothes",
+      "es": "El sol secará tu ropa"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Fais la vaisselle",
+      "en": "Do the dishes",
+      "es": "Friega los platos"
+    },
+    {
+      "answer": "La voiture est dans le garage",
+      "en": "The car is in the garage",
+      "es": "El coche está en el garaje"
+    },
+    {
+      "answer": "Je suis dans le salon",
+      "en": "I am in the living room",
+      "es": "Estoy en el salón"
+    },
+    {
+      "answer": "Te souviens-tu de moi ?",
+      "en": "Do you remember me?",
+      "es": "¿Te acuerdas de mí?"
+    },
+    {
+      "answer": "La moquette est sale",
+      "en": "The carpet is dirty",
+      "es": "La moqueta está sucia"
+    },
+    {
+      "answer": "Je dois passer l'aspirateur",
+      "en": "I have to vacuum",
+      "es": "Tengo que pasar la aspiradora"
+    }
+  ]
+}

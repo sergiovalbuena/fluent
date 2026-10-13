@@ -1,0 +1,531 @@
+{
+  "lesson": 60,
+  "slug": "lecon-60",
+  "icon": "☀️",
+  "title": {
+    "fr": "Les activités quotidiennes",
+    "es": "Las actividades diarias",
+    "en": "Daily activities"
+  },
+  "source": {
+    "audio": "Lecons 60.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "genre des noms",
+      "example": "un acteur / une actrice, un roi / une reine, un veuf / une veuve, un dieu / une déesse",
+      "en": "Masculine and feminine nouns",
+      "es": "Sustantivos masculinos y femeninos"
+    },
+    {
+      "structure": "présent d'habitude",
+      "example": "Je me lève tôt tous les jours. / Le coq me réveille chaque matin.",
+      "en": "Present for routines",
+      "es": "Presente para rutinas"
+    },
+    {
+      "structure": "tous / toutes les + nom",
+      "example": "tous les dimanches, toutes les nuits, une fois tous les deux jours",
+      "en": "Frequency expressions",
+      "es": "Expresiones de frecuencia"
+    },
+    {
+      "structure": "conditionnel (souhait)",
+      "example": "J'aimerais avoir une vie plus passionnante.",
+      "en": "Wishes",
+      "es": "Deseos"
+    },
+    {
+      "structure": "espérer que + indicatif",
+      "example": "J'espère que nous pourrons le faire bientôt.",
+      "en": "\"To hope\" + indicative",
+      "es": "«Esperar que» + indicativo"
+    },
+    {
+      "structure": "afin de / pour + infinitif",
+      "example": "Je travaille afin d'économiser de l'argent.",
+      "en": "Purpose",
+      "es": "Finalidad"
+    },
+    {
+      "structure": "être en train de",
+      "example": "Les meubles sont en train de s'abîmer.",
+      "en": "Ongoing action",
+      "es": "Acción en curso"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Some feminines are completely different words: le roi / la reine, le coq / la poule, le parrain / la marraine, l'oncle / la tante, le neveu / la nièce.",
+      "es": "Algunos femeninos son palabras totalmente distintas: le roi / la reine, le coq / la poule, le parrain / la marraine, l'oncle / la tante, le neveu / la nièce."
+    },
+    {
+      "en": "Professions are now often feminized: \"une médecin\", \"une professeure\", \"une autrice\". \"Doctoresse\" is old-fashioned.",
+      "es": "Hoy se feminizan a menudo las profesiones: «une médecin», «une professeure», «une autrice». «Doctoresse» está anticuado."
+    },
+    {
+      "en": "\"Espérer que\" takes the indicative (future or present): \"J'espère que tu viendras.\" (In Spanish: \"Espero que vengas.\")",
+      "es": "«Espérer que» va con indicativo (futuro o presente): «J'espère que tu viendras.» (En español: «Espero que vengas».)"
+    },
+    {
+      "en": "Congratulations! You have finished the 60 lessons. \"Félicitations, vous avez terminé le cours !\"",
+      "es": "¡Enhorabuena! Has terminado las 60 lecciones. «Félicitations, vous avez terminé le cours !»"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le commerçant / la commerçante",
+      "en": "the shopkeeper",
+      "es": "el comerciante / la comerciante"
+    },
+    {
+      "word": "l'acteur / l'actrice",
+      "en": "actor / actress",
+      "es": "el actor / la actriz"
+    },
+    {
+      "word": "le vendeur / la vendeuse",
+      "en": "salesman / saleswoman",
+      "es": "el vendedor / la vendedora"
+    },
+    {
+      "word": "l'étudiant / l'étudiante",
+      "en": "student",
+      "es": "el estudiante / la estudiante"
+    },
+    {
+      "word": "le médecin / la médecin",
+      "en": "doctor",
+      "es": "el médico / la médica"
+    },
+    {
+      "word": "le roi / la reine",
+      "en": "king / queen",
+      "es": "el rey / la reina"
+    },
+    {
+      "word": "le prince / la princesse",
+      "en": "prince / princess",
+      "es": "el príncipe / la princesa"
+    },
+    {
+      "word": "le duc / la duchesse",
+      "en": "duke / duchess",
+      "es": "el duque / la duquesa"
+    },
+    {
+      "word": "le dieu / la déesse",
+      "en": "god / goddess",
+      "es": "el dios / la diosa"
+    },
+    {
+      "word": "le veuf / la veuve",
+      "en": "widower / widow",
+      "es": "el viudo / la viuda"
+    },
+    {
+      "word": "le neveu / la nièce",
+      "en": "nephew / niece",
+      "es": "el sobrino / la sobrina"
+    },
+    {
+      "word": "l'oncle / la tante",
+      "en": "uncle / aunt",
+      "es": "el tío / la tía"
+    },
+    {
+      "word": "le cousin / la cousine",
+      "en": "cousin",
+      "es": "el primo / la prima"
+    },
+    {
+      "word": "le grand-père / la grand-mère",
+      "en": "grandfather / grandmother",
+      "es": "el abuelo / la abuela"
+    },
+    {
+      "word": "le fiancé / la fiancée",
+      "en": "fiancé / fiancée",
+      "es": "el prometido / la prometida"
+    },
+    {
+      "word": "le petit ami / la petite amie",
+      "en": "boyfriend / girlfriend",
+      "es": "el novio / la novia"
+    },
+    {
+      "word": "le coq / la poule",
+      "en": "rooster / hen",
+      "es": "el gallo / la gallina"
+    },
+    {
+      "word": "le taureau / la vache",
+      "en": "bull / cow",
+      "es": "el toro / la vaca"
+    },
+    {
+      "word": "le type",
+      "en": "the guy",
+      "es": "el tipo"
+    },
+    {
+      "word": "les meubles",
+      "en": "furniture",
+      "es": "los muebles"
+    },
+    {
+      "word": "la chaise",
+      "en": "the chair",
+      "es": "la silla"
+    },
+    {
+      "word": "se réveiller",
+      "en": "to wake up",
+      "es": "despertarse"
+    },
+    {
+      "word": "se lever",
+      "en": "to get up",
+      "es": "levantarse"
+    },
+    {
+      "word": "arroser",
+      "en": "to water",
+      "es": "regar"
+    },
+    {
+      "word": "traire",
+      "en": "to milk",
+      "es": "ordeñar"
+    },
+    {
+      "word": "rester éveillé",
+      "en": "to stay awake",
+      "es": "quedarse despierto"
+    },
+    {
+      "word": "quotidien / quotidienne",
+      "en": "daily",
+      "es": "cotidiano / cotidiana"
+    },
+    {
+      "word": "monotone",
+      "en": "monotonous",
+      "es": "monótono"
+    },
+    {
+      "word": "passionnant / passionnante",
+      "en": "exciting",
+      "es": "apasionante"
+    },
+    {
+      "word": "ennuyeux / ennuyeuse",
+      "en": "boring",
+      "es": "aburrido / aburrida"
+    },
+    {
+      "word": "la routine",
+      "en": "the routine",
+      "es": "la rutina"
+    },
+    {
+      "word": "tous les jours",
+      "en": "every day",
+      "es": "todos los días"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Mon père m'emmène au lycée tous les jours.",
+      "en": "My father takes me to school every day.",
+      "es": "Mi padre me lleva al instituto todos los días."
+    },
+    {
+      "phrase": "Ma mère a acheté un poisson.",
+      "en": "My mother bought a fish.",
+      "es": "Mi madre ha comprado un pescado."
+    },
+    {
+      "phrase": "Un acteur doit répéter son texte.",
+      "en": "An actor has to rehearse his lines.",
+      "es": "Un actor tiene que ensayar su texto."
+    },
+    {
+      "phrase": "Mon cousin me rend visite tous les dimanches.",
+      "en": "My cousin visits me every Sunday.",
+      "es": "Mi primo me visita todos los domingos."
+    },
+    {
+      "phrase": "Il faut arroser les fleurs une fois tous les deux jours.",
+      "en": "You have to water the flowers once every two days.",
+      "es": "Hay que regar las flores una vez cada dos días."
+    },
+    {
+      "phrase": "Ma grand-mère trait les vaches tous les jours à cinq heures du matin.",
+      "en": "My grandmother milks the cows every day at 5 a.m.",
+      "es": "Mi abuela ordeña las vacas todos los días a las cinco de la mañana."
+    },
+    {
+      "phrase": "Elles sont d'excellentes vendeuses.",
+      "en": "They are excellent saleswomen.",
+      "es": "Son unas vendedoras excelentes."
+    },
+    {
+      "phrase": "Ma fiancée étudie de huit heures du matin à huit heures du soir.",
+      "en": "My fiancée studies from 8 a.m. to 8 p.m.",
+      "es": "Mi prometida estudia de ocho de la mañana a ocho de la noche."
+    },
+    {
+      "phrase": "Les enfants restent éveillés très tard toutes les nuits.",
+      "en": "The children stay up very late every night.",
+      "es": "Los niños se quedan despiertos hasta muy tarde todas las noches."
+    },
+    {
+      "phrase": "La reine doit protéger son peuple. Le prince sera roi, mais seulement s'il est l'aîné.",
+      "en": "The queen must protect her people. The prince will be king, but only if he is the eldest.",
+      "es": "La reina debe proteger a su pueblo. El príncipe será rey, pero solo si es el mayor."
+    },
+    {
+      "phrase": "Le coq me réveille tous les jours à quatre heures pile.",
+      "en": "The rooster wakes me up every day at four on the dot.",
+      "es": "El gallo me despierta todos los días a las cuatro en punto."
+    },
+    {
+      "phrase": "C'est la veuve de M. Marceau ? — Oui.",
+      "en": "Is she Mr. Marceau's widow? — Yes.",
+      "es": "¿Es la viuda del señor Marceau? — Sí."
+    },
+    {
+      "phrase": "Qui est Vénus ? — C'est une déesse. Et Zeus ? — C'est un dieu.",
+      "en": "Who is Venus? — She is a goddess. And Zeus? — He is a god.",
+      "es": "¿Quién es Venus? — Es una diosa. ¿Y Zeus? — Es un dios."
+    },
+    {
+      "phrase": "C'est ta petite amie ? — Non, c'est seulement une amie.",
+      "en": "Is she your girlfriend? — No, she's just a friend.",
+      "es": "¿Es tu novia? — No, solo es una amiga."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What is the feminine of \"roi\"?",
+        "es": "¿Cuál es el femenino de «roi»?"
+      },
+      "options": [
+        "reine",
+        "roie",
+        "royale",
+        "roiesse"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Completely different word.",
+        "es": "Palabra totalmente distinta."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the feminine of \"veuf\"?",
+        "es": "¿Cuál es el femenino de «veuf»?"
+      },
+      "options": [
+        "veuve",
+        "veuffe",
+        "veufe",
+        "veuvesse"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "-f → -ve (neuf → neuve, veuf → veuve).",
+        "es": "-f → -ve (neuf → neuve, veuf → veuve)."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the feminine of \"dieu\"?",
+        "es": "¿Cuál es el femenino de «dieu»?"
+      },
+      "options": [
+        "déesse",
+        "dieue",
+        "dieuse",
+        "divine"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Like prince → princesse, duc → duchesse.",
+        "es": "Como prince → princesse, duc → duchesse."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il faut arroser les plantes une fois ___ les deux jours.\"",
+        "es": "Completa: «Il faut arroser les plantes une fois ___ les deux jours.»"
+      },
+      "options": [
+        "tous",
+        "toutes",
+        "chaque",
+        "tout"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Tous les + plural masculine noun (jours).",
+        "es": "Tous les + sustantivo masculino plural (jours)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'espère que nous ___ partir bientôt.\"",
+        "es": "Completa: «J'espère que nous ___ partir bientôt.»"
+      },
+      "options": [
+        "pourrons",
+        "puissions",
+        "pourrions",
+        "pouvions"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Espérer que\" + indicative (future).",
+        "es": "«Espérer que» + indicativo (futuro)."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you express a wish?",
+        "es": "¿Cómo expresas un deseo?"
+      },
+      "options": [
+        "J'aimerais voyager plus.",
+        "J'aime voyager plus hier.",
+        "J'aimerai voyager hier.",
+        "J'aimais voyager demain."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional of aimer.",
+        "es": "Condicional de aimer."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the feminine of \"coq\"?",
+        "es": "¿Cuál es el femenino de «coq»?"
+      },
+      "options": [
+        "poule",
+        "coquette",
+        "coque",
+        "poulette"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le coq / la poule.",
+        "es": "Le coq / la poule."
+      }
+    },
+    {
+      "question": {
+        "en": "Which form is modern for a female doctor?",
+        "es": "¿Qué forma es la actual para una doctora?"
+      },
+      "options": [
+        "une médecin",
+        "une doctoresse",
+        "une médecine",
+        "une docteuse"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Doctoresse\" is old-fashioned.",
+        "es": "«Doctoresse» está anticuado."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une vie trop monotone",
+    "text": "Je m'appelle Bruno et, en ce moment, je trouve ma vie un peu ennuyeuse. Tous les jours, c'est la même routine : je me réveille à six heures, j'emmène ma femme au travail, je vais à la salle de sport pendant une heure, puis je vais au bureau. Le soir, nous dînons devant la télévision et nous nous couchons tôt. Le week-end, sa mère nous appelle toutes les deux heures pour savoir ce que nous faisons, et son père est toujours en train de me chercher un « meilleur » travail. Pourtant, mon emploi me plaît. Ce n'est pas mon travail qui m'ennuie, c'est cette façon de vivre qui ne me laisse pas profiter du monde et de ses merveilles. J'aimerais avoir une vie plus passionnante : faire des randonnées avec mes amis, voyager en Europe, découvrir de nouvelles cultures avec ma femme. Alors, j'ai un plan : je vais économiser afin d'acheter un petit chalet à la montagne. Je veux vivre sous un grand ciel bleu, entouré d'oiseaux et de fleurs. Ma femme est d'accord : elle aussi veut se reposer et profiter de chaque jour de notre mariage. J'espère que nous pourrons le faire bientôt… sinon, nous allons devenir fous ! Et toi, à quoi ressemble ta journée ?",
+    "en": "My name is Bruno and, right now, I find my life a bit boring. Every day, it's the same routine: I wake up at six, I take my wife to work, I go to the gym for an hour, then I go to the office. In the evening, we have dinner in front of the TV and go to bed early. On weekends, her mother calls us every two hours to find out what we're doing, and her father is always looking for a “better” job for me. And yet, I like my job. It's not my work that bores me, it's this way of living that doesn't let me enjoy the world and its wonders. I'd like a more exciting life: hiking with my friends, traveling around Europe, discovering new cultures with my wife. So I have a plan: I'm going to save money to buy a little chalet in the mountains. I want to live under a big blue sky, surrounded by birds and flowers. My wife agrees: she also wants to rest and enjoy every day of our marriage. I hope we can do it soon… otherwise, we're going to go crazy! And you, what does your day look like?",
+    "es": "Me llamo Bruno y, en este momento, mi vida me parece un poco aburrida. Todos los días es la misma rutina: me despierto a las seis, llevo a mi mujer al trabajo, voy al gimnasio una hora y luego voy a la oficina. Por la noche cenamos delante de la tele y nos acostamos pronto. Los fines de semana, su madre nos llama cada dos horas para saber qué estamos haciendo, y su padre siempre está buscándome un trabajo «mejor». Sin embargo, mi empleo me gusta. No es el trabajo lo que me aburre, es esta forma de vivir que no me deja disfrutar del mundo y de sus maravillas. Me gustaría tener una vida más apasionante: hacer excursiones con mis amigos, viajar por Europa, descubrir nuevas culturas con mi mujer. Así que tengo un plan: voy a ahorrar para comprar una casita en la montaña. Quiero vivir bajo un gran cielo azul, rodeado de pájaros y flores. Mi mujer está de acuerdo: ella también quiere descansar y disfrutar de cada día de nuestro matrimonio. Espero que podamos hacerlo pronto… ¡si no, nos vamos a volver locos! Y tú, ¿cómo es tu día?",
+    "highlighted_words": [
+      "Tous les jours",
+      "routine",
+      "je me réveille",
+      "toutes les deux heures",
+      "est toujours en train de",
+      "Pourtant",
+      "J'aimerais",
+      "afin d'acheter",
+      "ma femme",
+      "J'espère que nous pourrons",
+      "sinon"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je me lève tôt tous les jours",
+      "en": "I get up early every day",
+      "es": "Me levanto temprano todos los días"
+    },
+    {
+      "sentence": "Mon cousin vient tous les dimanches",
+      "en": "My cousin comes every Sunday",
+      "es": "Mi primo viene todos los domingos"
+    },
+    {
+      "sentence": "J'aimerais voyager plus",
+      "en": "I would like to travel more",
+      "es": "Me gustaría viajar más"
+    },
+    {
+      "sentence": "J'espère que tu viendras",
+      "en": "I hope you will come",
+      "es": "Espero que vengas"
+    },
+    {
+      "sentence": "La reine protège son peuple",
+      "en": "The queen protects her people",
+      "es": "La reina protege a su pueblo"
+    },
+    {
+      "sentence": "C'est la veuve de mon oncle",
+      "en": "She's my uncle's widow",
+      "es": "Es la viuda de mi tío"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je me réveille à six heures",
+      "en": "I wake up at six",
+      "es": "Me despierto a las seis"
+    },
+    {
+      "answer": "Ma vie est monotone",
+      "en": "My life is monotonous",
+      "es": "Mi vida es monótona"
+    },
+    {
+      "answer": "C'est une actrice",
+      "en": "She's an actress",
+      "es": "Es actriz"
+    },
+    {
+      "answer": "Il arrose les fleurs",
+      "en": "He waters the flowers",
+      "es": "Riega las flores"
+    },
+    {
+      "answer": "Le coq chante tous les matins",
+      "en": "The rooster crows every morning",
+      "es": "El gallo canta todas las mañanas"
+    },
+    {
+      "answer": "Félicitations !",
+      "en": "Congratulations!",
+      "es": "¡Enhorabuena!"
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "lesson": 2,
+  "slug": "lecon-02",
+  "icon": "🙏",
+  "title": {
+    "fr": "Que dire ? Les formules de politesse",
+    "es": "¿Qué decir? Fórmulas de cortesía",
+    "en": "What to say? Polite expressions"
+  },
+  "source": {
+    "audio": "Lecons 02.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "impératif (vous / tu)",
+      "example": "Entrez, asseyez-vous. / Entre, s'il te plaît.",
+      "en": "Imperative (formal and informal)",
+      "es": "Imperativo (formal e informal)"
+    },
+    {
+      "structure": "impératif négatif",
+      "example": "Ne vous inquiétez pas.",
+      "en": "Negative imperative",
+      "es": "Imperativo negativo"
+    },
+    {
+      "structure": "venir de + infinitif",
+      "example": "Elle vient d'arriver à Nantes.",
+      "en": "Recent past: \"to have just done\"",
+      "es": "Pasado reciente: «acabar de»"
+    },
+    {
+      "structure": "puis-je / pourrais-je + infinitif",
+      "example": "Pourrais-je avoir un thé ?",
+      "en": "Polite requests (inversion, conditional)",
+      "es": "Peticiones corteses (inversión, condicional)"
+    },
+    {
+      "structure": "est-ce que + question",
+      "example": "Est-ce que vous me comprenez ?",
+      "en": "Questions with \"est-ce que\"",
+      "es": "Preguntas con «est-ce que»"
+    },
+    {
+      "structure": "passé composé",
+      "example": "Qu'est-ce que vous avez dit ?",
+      "en": "Past tense (passé composé)",
+      "es": "Pretérito perfecto (passé composé)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Use \"s'il vous plaît\" with people you address as \"vous\", and \"s'il te plaît\" with friends and family.",
+      "es": "Usa «s'il vous plaît» con quien tratas de «vous» y «s'il te plaît» con amigos y familia."
+    },
+    {
+      "en": "To answer \"merci\": \"de rien\", \"ce n'est rien\", \"avec plaisir\" or, more formally, \"je vous en prie\".",
+      "es": "Para responder a «merci»: «de rien», «ce n'est rien», «avec plaisir» o, más formal, «je vous en prie»."
+    },
+    {
+      "en": "To return a wish (\"Bonne année !\"), answer \"Vous aussi !\", \"Toi aussi !\" or \"De même !\".",
+      "es": "Para devolver un deseo («Bonne année !»), responde «Vous aussi !», «Toi aussi !» o «De même !»."
+    },
+    {
+      "en": "\"Pâques\" is feminine plural in greetings: \"Joyeuses Pâques !\". But \"Joyeux Noël\" and \"Joyeux anniversaire\".",
+      "es": "«Pâques» es femenino plural en las felicitaciones: «Joyeuses Pâques !». Pero «Joyeux Noël» y «Joyeux anniversaire»."
+    },
+    {
+      "en": "\"Ça vous dérange si… ?\" means \"Do you mind if…?\". Answering \"Oui\" means it DOES bother you.",
+      "es": "«Ça vous dérange si… ?» significa «¿Le molesta si…?». Responder «Oui» quiere decir que SÍ molesta."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "s'il vous plaît",
+      "en": "please (formal)",
+      "es": "por favor (formal)"
+    },
+    {
+      "word": "s'il te plaît",
+      "en": "please (informal)",
+      "es": "por favor (informal)"
+    },
+    {
+      "word": "merci beaucoup",
+      "en": "thank you very much",
+      "es": "muchas gracias"
+    },
+    {
+      "word": "de rien",
+      "en": "you're welcome",
+      "es": "de nada"
+    },
+    {
+      "word": "ce n'est rien",
+      "en": "it's nothing",
+      "es": "no es nada"
+    },
+    {
+      "word": "avec plaisir",
+      "en": "with pleasure",
+      "es": "con mucho gusto"
+    },
+    {
+      "word": "pardon",
+      "en": "sorry / pardon",
+      "es": "perdón"
+    },
+    {
+      "word": "excusez-moi",
+      "en": "excuse me",
+      "es": "disculpe"
+    },
+    {
+      "word": "je suis désolé / désolée",
+      "en": "I'm sorry",
+      "es": "lo siento"
+    },
+    {
+      "word": "bien sûr",
+      "en": "of course",
+      "es": "por supuesto"
+    },
+    {
+      "word": "aimable",
+      "en": "kind",
+      "es": "amable"
+    },
+    {
+      "word": "joyeux anniversaire",
+      "en": "happy birthday",
+      "es": "feliz cumpleaños"
+    },
+    {
+      "word": "joyeux Noël",
+      "en": "merry Christmas",
+      "es": "feliz Navidad"
+    },
+    {
+      "word": "joyeuses Pâques",
+      "en": "happy Easter",
+      "es": "felices Pascuas"
+    },
+    {
+      "word": "bonne année",
+      "en": "happy new year",
+      "es": "feliz año nuevo"
+    },
+    {
+      "word": "un cadeau",
+      "en": "a gift",
+      "es": "un regalo"
+    },
+    {
+      "word": "offrir",
+      "en": "to give (as a gift)",
+      "es": "regalar"
+    },
+    {
+      "word": "s'excuser",
+      "en": "to apologize",
+      "es": "disculparse"
+    },
+    {
+      "word": "répondre",
+      "en": "to answer",
+      "es": "responder"
+    },
+    {
+      "word": "comprendre",
+      "en": "to understand",
+      "es": "entender"
+    },
+    {
+      "word": "répéter",
+      "en": "to repeat",
+      "es": "repetir"
+    },
+    {
+      "word": "déranger",
+      "en": "to bother",
+      "es": "molestar"
+    },
+    {
+      "word": "s'amuser",
+      "en": "to have fun",
+      "es": "divertirse"
+    },
+    {
+      "word": "le téléphone",
+      "en": "the telephone",
+      "es": "el teléfono"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Puis-je vous aider ?",
+      "en": "May I help you?",
+      "es": "¿Puedo ayudarle?"
+    },
+    {
+      "phrase": "Pourrais-je avoir un thé, s'il vous plaît ?",
+      "en": "Could I have a tea, please?",
+      "es": "¿Podría tomar un té, por favor?"
+    },
+    {
+      "phrase": "Pardon, qu'est-ce que vous avez dit ?",
+      "en": "Sorry, what did you say?",
+      "es": "Perdón, ¿qué ha dicho?"
+    },
+    {
+      "phrase": "Excusez-moi, mais je ne comprends pas.",
+      "en": "Excuse me, but I don't understand.",
+      "es": "Disculpe, pero no entiendo."
+    },
+    {
+      "phrase": "Pouvez-vous répéter, s'il vous plaît ?",
+      "en": "Can you repeat, please?",
+      "es": "¿Puede repetir, por favor?"
+    },
+    {
+      "phrase": "Est-ce que vous me comprenez ?",
+      "en": "Do you understand me?",
+      "es": "¿Me entiende?"
+    },
+    {
+      "phrase": "Où y a-t-il une pharmacie, s'il vous plaît ?",
+      "en": "Where is there a pharmacy, please?",
+      "es": "¿Dónde hay una farmacia, por favor?"
+    },
+    {
+      "phrase": "C'est un cadeau pour toi. — Merci beaucoup !",
+      "en": "It's a gift for you. — Thank you very much!",
+      "es": "Es un regalo para ti. — ¡Muchas gracias!"
+    },
+    {
+      "phrase": "Joyeux Noël et bonne année ! — Vous aussi !",
+      "en": "Merry Christmas and happy new year! — You too!",
+      "es": "¡Feliz Navidad y feliz año nuevo! — ¡Igualmente!"
+    },
+    {
+      "phrase": "Entrez, je vous en prie. Asseyez-vous.",
+      "en": "Come in, please. Have a seat.",
+      "es": "Pase, por favor. Siéntese."
+    },
+    {
+      "phrase": "Ça vous dérange si j'ouvre la fenêtre ?",
+      "en": "Do you mind if I open the window?",
+      "es": "¿Le molesta si abro la ventana?"
+    },
+    {
+      "phrase": "Ne vous inquiétez pas.",
+      "en": "Don't worry.",
+      "es": "No se preocupe."
+    },
+    {
+      "phrase": "Vous êtes chez vous.",
+      "en": "Make yourself at home.",
+      "es": "Está usted en su casa."
+    },
+    {
+      "phrase": "Bonne soirée ! — Merci, amuse-toi bien !",
+      "en": "Have a nice evening! — Thanks, have fun!",
+      "es": "¡Buena noche! — ¡Gracias, diviértete!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Someone says \"Merci beaucoup !\". What do you answer?",
+        "es": "Alguien te dice «Merci beaucoup !». ¿Qué respondes?"
+      },
+      "options": [
+        "De rien.",
+        "Bonne année.",
+        "Pardon.",
+        "Bien sûr."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"De rien\" (or \"Ce n'est rien\", \"Avec plaisir\") answers a thank-you.",
+        "es": "«De rien» (o «Ce n'est rien», «Avec plaisir») responde a un agradecimiento."
+      }
+    },
+    {
+      "question": {
+        "en": "You didn't hear what someone said. What do you say?",
+        "es": "No has oído lo que alguien dijo. ¿Qué dices?"
+      },
+      "options": [
+        "Pardon, qu'est-ce que vous avez dit ?",
+        "Puis-je vous aider ?",
+        "Vous êtes chez vous.",
+        "Ne vous inquiétez pas."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Qu'est-ce que vous avez dit ?\" uses the passé composé: \"What did you say?\"",
+        "es": "«Qu'est-ce que vous avez dit ?» usa el passé composé: «¿Qué ha dicho?»"
+      }
+    },
+    {
+      "question": {
+        "en": "Which is the most polite way to ask for a coffee?",
+        "es": "¿Cuál es la forma más cortés de pedir un café?"
+      },
+      "options": [
+        "Pourrais-je avoir un café, s'il vous plaît ?",
+        "Prenez un café.",
+        "Voulez-vous un café ?",
+        "C'est un café pour vous."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pourrais-je…\" (conditional + inversion) is a very polite request.",
+        "es": "«Pourrais-je…» (condicional + inversión) es una petición muy cortés."
+      }
+    },
+    {
+      "question": {
+        "en": "Which Easter greeting is correct?",
+        "es": "¿Qué felicitación de Pascua es correcta?"
+      },
+      "options": [
+        "Joyeuses Pâques !",
+        "Joyeux Pâques !",
+        "Bonne Pâques !",
+        "Joyeuse Pâque !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pâques\" is feminine plural here, so the adjective is \"joyeuses\".",
+        "es": "Aquí «Pâques» es femenino plural, así que el adjetivo es «joyeuses»."
+      }
+    },
+    {
+      "question": {
+        "en": "Your host says \"Entrez, asseyez-vous.\" What form is this?",
+        "es": "Tu anfitrión dice «Entrez, asseyez-vous.» ¿Qué forma es?"
+      },
+      "options": {
+        "en": [
+          "Formal imperative (vous)",
+          "Informal imperative (tu)",
+          "A question",
+          "The past tense"
+        ],
+        "es": [
+          "Imperativo formal (vous)",
+          "Imperativo informal (tu)",
+          "Una pregunta",
+          "El pasado"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "With \"tu\" it would be \"Entre, assieds-toi.\"",
+        "es": "Con «tu» sería «Entre, assieds-toi.»"
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Do you mind if I open the window?\"",
+        "es": "¿Cómo se dice «¿Le molesta si abro la ventana?»?"
+      },
+      "options": [
+        "Ça vous dérange si j'ouvre la fenêtre ?",
+        "Vous ouvrez la fenêtre ?",
+        "Ouvrez la fenêtre !",
+        "Puis-je fermer la fenêtre ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ça vous dérange si…\" + present tense.",
+        "es": "«Ça vous dérange si…» + presente."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"Il vient d'arriver\" mean?",
+        "es": "¿Qué significa «Il vient d'arriver»?"
+      },
+      "options": {
+        "en": [
+          "He has just arrived.",
+          "He is coming to arrive.",
+          "He will arrive.",
+          "He arrives every day."
+        ],
+        "es": [
+          "Acaba de llegar.",
+          "Viene a llegar.",
+          "Llegará.",
+          "Llega todos los días."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Venir de\" + infinitive expresses something that has just happened.",
+        "es": "«Venir de» + infinitivo expresa algo que acaba de ocurrir."
+      }
+    },
+    {
+      "question": {
+        "en": "A friend says \"Désolé, je suis en retard !\". How do you reassure them?",
+        "es": "Un amigo dice «Désolé, je suis en retard !». ¿Cómo lo tranquilizas?"
+      },
+      "options": [
+        "Ne t'inquiète pas.",
+        "Bonne chance !",
+        "Joyeux anniversaire !",
+        "Je ne comprends pas."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Negative imperative with \"tu\": \"Ne t'inquiète pas.\" With \"vous\": \"Ne vous inquiétez pas.\"",
+        "es": "Imperativo negativo con «tu»: «Ne t'inquiète pas.» Con «vous»: «Ne vous inquiétez pas.»"
+      }
+    }
+  ],
+  "story": {
+    "title": "La nouvelle voisine",
+    "text": "Nadia vient d'arriver à Nantes pour son nouveau travail. Sa voisine, Madame Morel, l'invite à prendre le thé dimanche. Nadia sonne à la porte. « Bonjour, je suis Nadia, votre nouvelle voisine. » « Bonjour Nadia ! Entrez, je vous en prie. Asseyez-vous. Qu'est-ce que vous voulez boire ? » « Un thé, s'il vous plaît. C'est très gentil. » « Mon mari est dans le jardin, il prépare un gâteau. » « Puis-je vous aider ? » « Oui, merci. Apportez ces tasses dans le jardin, s'il vous plaît. » Dans le jardin, Monsieur Morel sourit : « Voilà, Nadia, un bon thé bien chaud. » « Vous êtes très aimable, merci. » « Ce n'est rien, avec plaisir ! Ici, vous êtes chez vous. »",
+    "en": "Nadia has just arrived in Nantes for her new job. Her neighbor, Mrs. Morel, invites her for tea on Sunday. Nadia rings the doorbell. “Hello, I'm Nadia, your new neighbor.” “Hello Nadia! Come in, please. Have a seat. What would you like to drink?” “A tea, please. That's very kind.” “My husband is in the garden, he's making a cake.” “May I help you?” “Yes, thank you. Take these cups to the garden, please.” In the garden, Mr. Morel smiles: “Here you are, Nadia, a nice hot tea.” “You are very kind, thank you.” “It's nothing, with pleasure! Make yourself at home here.”",
+    "es": "Nadia acaba de llegar a Nantes por su nuevo trabajo. Su vecina, la señora Morel, la invita a tomar el té el domingo. Nadia toca el timbre. «Hola, soy Nadia, su nueva vecina.» «¡Hola, Nadia! Pase, por favor. Siéntese. ¿Qué quiere tomar?» «Un té, por favor. Es muy amable.» «Mi marido está en el jardín, está preparando un pastel.» «¿Puedo ayudarle?» «Sí, gracias. Lleve estas tazas al jardín, por favor.» En el jardín, el señor Morel sonríe: «Aquí tiene, Nadia, un buen té bien caliente.» «Es usted muy amable, gracias.» «¡No es nada, con mucho gusto! Aquí está usted en su casa.»",
+    "highlighted_words": [
+      "vient d'arriver",
+      "Entrez",
+      "je vous en prie",
+      "Asseyez-vous",
+      "s'il vous plaît",
+      "Puis-je",
+      "aimable",
+      "Ce n'est rien",
+      "avec plaisir"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Pourrais-je avoir un café s'il vous plaît",
+      "en": "Could I have a coffee please",
+      "es": "¿Podría tomar un café, por favor?"
+    },
+    {
+      "sentence": "Je suis désolé pour le retard",
+      "en": "I'm sorry for being late",
+      "es": "Siento el retraso"
+    },
+    {
+      "sentence": "Entrez et asseyez-vous",
+      "en": "Come in and sit down",
+      "es": "Pase y siéntese"
+    },
+    {
+      "sentence": "Merci beaucoup pour le cadeau",
+      "en": "Thank you very much for the gift",
+      "es": "Muchas gracias por el regalo"
+    },
+    {
+      "sentence": "Je ne comprends pas très bien",
+      "en": "I don't understand very well",
+      "es": "No entiendo muy bien"
+    },
+    {
+      "sentence": "Elle vient d'arriver en ville",
+      "en": "She has just arrived in town",
+      "es": "Acaba de llegar a la ciudad"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "De rien",
+      "en": "You're welcome",
+      "es": "De nada"
+    },
+    {
+      "answer": "Pouvez-vous répéter, s'il vous plaît ?",
+      "en": "Can you repeat, please?",
+      "es": "¿Puede repetir, por favor?"
+    },
+    {
+      "answer": "Joyeux anniversaire !",
+      "en": "Happy birthday!",
+      "es": "¡Feliz cumpleaños!"
+    },
+    {
+      "answer": "Excusez-moi, je ne comprends pas",
+      "en": "Excuse me, I don't understand",
+      "es": "Disculpe, no entiendo"
+    },
+    {
+      "answer": "Ne vous inquiétez pas",
+      "en": "Don't worry (formal)",
+      "es": "No se preocupe"
+    },
+    {
+      "answer": "Il vient d'arriver",
+      "en": "He has just arrived",
+      "es": "Acaba de llegar"
+    }
+  ]
+}

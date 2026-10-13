@@ -1,0 +1,545 @@
+{
+  "lesson": 44,
+  "slug": "lecon-44",
+  "icon": "🛏️",
+  "title": {
+    "fr": "Le colocataire",
+    "es": "El compañero de piso",
+    "en": "The roommate"
+  },
+  "source": {
+    "audio": "Lecons 44.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "si + présent → présent (vérités générales)",
+      "example": "S'il se dispute, il s'excuse toujours. / Si je suis seule, je me repose.",
+      "en": "General truths and habits",
+      "es": "Verdades generales y hábitos"
+    },
+    {
+      "structure": "lorsque / quand + présent",
+      "example": "Elle cuisine uniquement lorsqu'elle n'a pas cours.",
+      "en": "\"When / whenever\"",
+      "es": "«Cuando»"
+    },
+    {
+      "structure": "si + présent → futur",
+      "example": "Si on n'arrive pas à se concentrer à la maison, nous étudierons à la bibliothèque.",
+      "en": "Real condition (future)",
+      "es": "Condición real (futuro)"
+    },
+    {
+      "structure": "impératif négatif (être)",
+      "example": "Ne sois pas triste.",
+      "en": "Negative imperative of être",
+      "es": "Imperativo negativo de être"
+    },
+    {
+      "structure": "faire confiance à",
+      "example": "Je te fais complètement confiance.",
+      "en": "\"To trust\"",
+      "es": "«Confiar en»"
+    },
+    {
+      "structure": "rappeler (qqch / qqn) à qqn",
+      "example": "Mon colocataire me rappelle mon frère. / Tu lui as rappelé de faire le ménage ?",
+      "en": "\"To remind\"",
+      "es": "«Recordar a / parecerse a»"
+    },
+    {
+      "structure": "imparfait + passé composé",
+      "example": "J'essayais d'être gentille, mais elle ne m'a pas parlé.",
+      "en": "Background vs. event",
+      "es": "Fondo frente a hecho"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Un colocataire / une colocataire\" (informal: \"un coloc\") shares an apartment; \"un camarade de chambre\" shares a room.",
+      "es": "«Un colocataire / une colocataire» (coloquial: «un coloc») comparte piso; «un camarade de chambre» comparte habitación."
+    },
+    {
+      "en": "\"Rappeler quelqu'un à quelqu'un\" = to remind (resemble): \"Il me rappelle mon frère.\" \"Rappeler à quelqu'un de faire quelque chose\" = to remind someone to do something.",
+      "es": "«Rappeler quelqu'un à quelqu'un» = recordar (parecerse): «Il me rappelle mon frère.» «Rappeler à quelqu'un de faire quelque chose» = recordarle a alguien que haga algo."
+    },
+    {
+      "en": "\"Faire confiance à quelqu'un\" (not \"confier en\"): \"Je lui fais confiance.\"",
+      "es": "«Faire confiance à quelqu'un» (no «confier en»): «Je lui fais confiance.»"
+    },
+    {
+      "en": "\"Somnambule\" = sleepwalker; \"l'intimité\" = privacy.",
+      "es": "«Somnambule» = sonámbulo; «l'intimité» = la intimidad."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le / la colocataire",
+      "en": "the roommate",
+      "es": "el / la compañero/a de piso"
+    },
+    {
+      "word": "la colocation",
+      "en": "flat-sharing",
+      "es": "el piso compartido"
+    },
+    {
+      "word": "la résidence universitaire",
+      "en": "the student residence",
+      "es": "la residencia universitaria"
+    },
+    {
+      "word": "l'ami / l'amie",
+      "en": "the friend",
+      "es": "el amigo / la amiga"
+    },
+    {
+      "word": "l'amitié",
+      "en": "friendship",
+      "es": "la amistad"
+    },
+    {
+      "word": "le caractère",
+      "en": "personality / temper",
+      "es": "el carácter"
+    },
+    {
+      "word": "la personnalité",
+      "en": "personality",
+      "es": "la personalidad"
+    },
+    {
+      "word": "l'intimité",
+      "en": "privacy",
+      "es": "la intimidad"
+    },
+    {
+      "word": "privé / privée",
+      "en": "private",
+      "es": "privado / privada"
+    },
+    {
+      "word": "partager",
+      "en": "to share",
+      "es": "compartir"
+    },
+    {
+      "word": "échanger",
+      "en": "to exchange",
+      "es": "intercambiar"
+    },
+    {
+      "word": "se disputer",
+      "en": "to argue",
+      "es": "discutir / pelearse"
+    },
+    {
+      "word": "s'excuser",
+      "en": "to apologize",
+      "es": "disculparse"
+    },
+    {
+      "word": "les excuses",
+      "en": "apologies",
+      "es": "las disculpas"
+    },
+    {
+      "word": "pardonner",
+      "en": "to forgive",
+      "es": "perdonar"
+    },
+    {
+      "word": "faire confiance à",
+      "en": "to trust",
+      "es": "confiar en"
+    },
+    {
+      "word": "rappeler",
+      "en": "to remind",
+      "es": "recordar"
+    },
+    {
+      "word": "aider",
+      "en": "to help",
+      "es": "ayudar"
+    },
+    {
+      "word": "cuisiner",
+      "en": "to cook",
+      "es": "cocinar"
+    },
+    {
+      "word": "faire la fête",
+      "en": "to party",
+      "es": "ir de fiesta"
+    },
+    {
+      "word": "se détendre",
+      "en": "to relax",
+      "es": "relajarse"
+    },
+    {
+      "word": "se concentrer",
+      "en": "to concentrate",
+      "es": "concentrarse"
+    },
+    {
+      "word": "les notes",
+      "en": "notes / grades",
+      "es": "los apuntes / las notas"
+    },
+    {
+      "word": "heureux / heureuse",
+      "en": "happy",
+      "es": "feliz"
+    },
+    {
+      "word": "triste",
+      "en": "sad",
+      "es": "triste"
+    },
+    {
+      "word": "la tristesse",
+      "en": "sadness",
+      "es": "la tristeza"
+    },
+    {
+      "word": "découragé / découragée",
+      "en": "discouraged",
+      "es": "desanimado / desanimada"
+    },
+    {
+      "word": "encouragé / encouragée",
+      "en": "encouraged",
+      "es": "animado / animada"
+    },
+    {
+      "word": "somnambule",
+      "en": "sleepwalker",
+      "es": "sonámbulo / sonámbula"
+    },
+    {
+      "word": "l'alcool",
+      "en": "alcohol",
+      "es": "el alcohol"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Je me sens encouragé si tu es mon ami.",
+      "en": "I feel encouraged if you are my friend.",
+      "es": "Me siento animado si eres mi amigo."
+    },
+    {
+      "phrase": "Elle cuisine très bien si quelqu'un l'aide.",
+      "en": "She cooks very well if someone helps her.",
+      "es": "Cocina muy bien si alguien la ayuda."
+    },
+    {
+      "phrase": "S'il se dispute avec quelqu'un, il s'excuse toujours.",
+      "en": "If he argues with someone, he always apologizes.",
+      "es": "Si discute con alguien, siempre pide perdón."
+    },
+    {
+      "phrase": "Elle oublie toujours de faire la vaisselle si tu ne le lui rappelles pas.",
+      "en": "She always forgets to do the dishes if you don't remind her.",
+      "es": "Siempre se olvida de fregar si no se lo recuerdas."
+    },
+    {
+      "phrase": "Si on n'arrive pas à se concentrer à la maison, nous étudierons à la bibliothèque.",
+      "en": "If we can't concentrate at home, we'll study at the library.",
+      "es": "Si no conseguimos concentrarnos en casa, estudiaremos en la biblioteca."
+    },
+    {
+      "phrase": "Si tu es triste, je suis triste aussi.",
+      "en": "If you're sad, I'm sad too.",
+      "es": "Si tú estás triste, yo también."
+    },
+    {
+      "phrase": "J'aime faire la fête, mais pas dans mon appartement !",
+      "en": "I like partying, but not in my apartment!",
+      "es": "Me gusta la fiesta, ¡pero no en mi piso!"
+    },
+    {
+      "phrase": "Elle étudie seulement si elle a un examen important.",
+      "en": "She only studies if she has an important exam.",
+      "es": "Solo estudia si tiene un examen importante."
+    },
+    {
+      "phrase": "C'est une vraie amitié si tu lui fais complètement confiance.",
+      "en": "It's a true friendship if you trust her completely.",
+      "es": "Es una amistad de verdad si confías plenamente en ella."
+    },
+    {
+      "phrase": "Si nous avons un examen, nous partageons nos notes.",
+      "en": "If we have an exam, we share our notes.",
+      "es": "Si tenemos un examen, compartimos los apuntes."
+    },
+    {
+      "phrase": "Ne sois pas triste !",
+      "en": "Don't be sad!",
+      "es": "¡No estés triste!"
+    },
+    {
+      "phrase": "Mon colocataire me rappelle mon frère.",
+      "en": "My roommate reminds me of my brother.",
+      "es": "Mi compañero de piso me recuerda a mi hermano."
+    },
+    {
+      "phrase": "Tu me pardonnes ? — Je te pardonne toujours si tu promets de ne pas recommencer.",
+      "en": "Do you forgive me? — I always forgive you if you promise not to do it again.",
+      "es": "¿Me perdonas? — Siempre te perdono si prometes no volver a hacerlo."
+    },
+    {
+      "phrase": "Où étudies-tu ? — Chez moi, quand il n'y a personne.",
+      "en": "Where do you study? — At home, when there's nobody there.",
+      "es": "¿Dónde estudias? — En casa, cuando no hay nadie."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"S'il fait beau, nous ___ toujours au parc.\" (habit)",
+        "es": "Completa: «S'il fait beau, nous ___ toujours au parc.» (hábito)"
+      },
+      "options": [
+        "allons",
+        "irons",
+        "irions",
+        "allions"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "General truth/habit: si + present → present.",
+        "es": "Verdad general / hábito: si + presente → presente."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si tu as besoin d'aide, je t'___.\" (future)",
+        "es": "Completa: «Si tu as besoin d'aide, je t'___.» (futuro)"
+      },
+      "options": [
+        "aiderai",
+        "aiderais",
+        "aidais",
+        "ai aidé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + present → future.",
+        "es": "Si + presente → futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"I trust you\"?",
+        "es": "¿Cómo se dice «Confío en ti»?"
+      },
+      "options": [
+        "Je te fais confiance.",
+        "Je confie en toi.",
+        "Je te confiance.",
+        "J'ai confiance de toi."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Faire confiance à quelqu'un\".",
+        "es": "«Faire confiance à quelqu'un»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il me rappelle mon frère.\" Meaning?",
+        "es": "«Il me rappelle mon frère.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "He reminds me of my brother.",
+          "He calls my brother back.",
+          "He remembers my brother.",
+          "He calls me brother."
+        ],
+        "es": [
+          "Me recuerda a mi hermano.",
+          "Le devuelve la llamada a mi hermano.",
+          "Se acuerda de mi hermano.",
+          "Me llama hermano."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Rappeler qqn à qqn = to remind (resemble).",
+        "es": "Rappeler qqn à qqn = recordar (parecerse)."
+      }
+    },
+    {
+      "question": {
+        "en": "Negative imperative of \"être\" (tu):",
+        "es": "Imperativo negativo de «être» (tu):"
+      },
+      "options": [
+        "Ne sois pas triste.",
+        "Ne es pas triste.",
+        "N'être pas triste.",
+        "Ne soit pas triste."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Être → sois (tu), soyons, soyez.",
+        "es": "Être → sois (tu), soyons, soyez."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un colocataire\"?",
+        "es": "¿Qué es «un colocataire»?"
+      },
+      "options": {
+        "en": [
+          "a roommate / flatmate",
+          "a landlord",
+          "a colleague",
+          "a neighbor"
+        ],
+        "es": [
+          "un compañero de piso",
+          "un casero",
+          "un compañero de trabajo",
+          "un vecino"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Informal: un coloc.",
+        "es": "Coloquial: un coloc."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle cuisine uniquement ___ elle a le temps.\"",
+        "es": "Completa: «Elle cuisine uniquement ___ elle a le temps.»"
+      },
+      "options": [
+        "lorsqu'",
+        "pendant",
+        "depuis",
+        "pour qu'"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Lorsque\" = when (whenever).",
+        "es": "«Lorsque» = cuando."
+      }
+    },
+    {
+      "question": {
+        "en": "\"L'intimité\" means…",
+        "es": "«L'intimité» significa…"
+      },
+      "options": {
+        "en": [
+          "privacy",
+          "intimidation",
+          "friendship",
+          "interest"
+        ],
+        "es": [
+          "la intimidad",
+          "la intimidación",
+          "la amistad",
+          "el interés"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Respecter l'intimité de quelqu'un = to respect someone's privacy.",
+        "es": "Respecter l'intimité de quelqu'un = respetar la intimidad de alguien."
+      }
+    }
+  ],
+  "story": {
+    "title": "Sommes-nous amies ?",
+    "text": "J'ai emménagé dans une résidence universitaire à Grenoble il y a un mois, et ma colocataire, Anaïs, ne m'aimait pas du tout. Être colocataires ne veut pas forcément dire être amies. J'essayais d'être gentille et de partager mes repas, mais elle préférait rester dans sa chambre. Elle sort seulement si elle a une fête, et elle étudie uniquement lorsqu'elle a un examen important. Hier soir, à onze heures, je l'ai trouvée dans la cuisine, découragée, devant un énorme livre de chimie. « Tu as un examen demain ? » « Oui… J'aurais dû commencer plus tôt. S'il reste un chapitre à étudier, je ne dors pas de la nuit ! » « Je peux t'aider, si tu veux. Avant, je voulais être professeure de chimie. » Elle m'a regardée, surprise. « Tu ferais ça pour moi ? » « Bien sûr ! Si j'explique quelque chose à quelqu'un, je le comprends mieux moi aussi. » « Merci… Je suis une bonne élève si j'ai un bon professeur. » « Alors, ne sois pas triste : tu apprendras vite. » Nous avons étudié jusqu'à deux heures du matin. Ce matin, Anaïs m'a laissé un croissant sur la table avec un petit mot : « Merci, coloc ! »",
+    "en": "I moved into a student residence in Grenoble a month ago, and my roommate, Anaïs, didn't like me at all. Being roommates doesn't necessarily mean being friends. I tried to be nice and share my meals, but she preferred to stay in her room. She only goes out if there's a party, and she only studies when she has an important exam. Last night at eleven, I found her in the kitchen, discouraged, in front of a huge chemistry book. “Do you have an exam tomorrow?” “Yes… I should have started earlier. If there's a chapter left to study, I don't sleep all night!” “I can help you, if you want. I used to want to be a chemistry teacher.” She looked at me, surprised. “You'd do that for me?” “Of course! If I explain something to someone, I understand it better myself.” “Thanks… I'm a good student if I have a good teacher.” “Then don't be sad: you'll learn quickly.” We studied until two in the morning. This morning, Anaïs left me a croissant on the table with a little note: “Thanks, roomie!”",
+    "es": "Me mudé a una residencia universitaria en Grenoble hace un mes y a mi compañera, Anaïs, no le caía nada bien. Ser compañeras de piso no significa necesariamente ser amigas. Yo intentaba ser amable y compartir mis comidas, pero ella prefería quedarse en su cuarto. Solo sale si hay una fiesta y solo estudia cuando tiene un examen importante. Anoche, a las once, la encontré en la cocina, desanimada, delante de un libro enorme de química. «¿Tienes examen mañana?» «Sí… Debería haber empezado antes. ¡Si me queda un capítulo por estudiar, no duermo en toda la noche!» «Puedo ayudarte, si quieres. Antes quería ser profesora de química.» Me miró sorprendida. «¿Harías eso por mí?» «¡Claro! Si le explico algo a alguien, lo entiendo mejor yo también.» «Gracias… Soy buena alumna si tengo un buen profesor.» «Entonces no estés triste: aprenderás rápido.» Estudiamos hasta las dos de la madrugada. Esta mañana, Anaïs me ha dejado un cruasán en la mesa con una notita: «¡Gracias, compi!»",
+    "highlighted_words": [
+      "colocataire",
+      "J'essayais",
+      "si elle a une fête",
+      "lorsqu'elle a un examen",
+      "découragée",
+      "S'il reste un chapitre",
+      "si tu veux",
+      "Si j'explique",
+      "si j'ai un bon professeur",
+      "ne sois pas triste",
+      "coloc"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "S'il pleut je reste à la maison",
+      "en": "If it rains I stay home",
+      "es": "Si llueve, me quedo en casa"
+    },
+    {
+      "sentence": "Ne sois pas triste",
+      "en": "Don't be sad",
+      "es": "No estés triste"
+    },
+    {
+      "sentence": "Je te fais confiance",
+      "en": "I trust you",
+      "es": "Confío en ti"
+    },
+    {
+      "sentence": "Mon colocataire me rappelle mon frère",
+      "en": "My roommate reminds me of my brother",
+      "es": "Mi compañero de piso me recuerda a mi hermano"
+    },
+    {
+      "sentence": "Si tu veux je peux t'aider",
+      "en": "If you want I can help you",
+      "es": "Si quieres, puedo ayudarte"
+    },
+    {
+      "sentence": "Il s'excuse toujours",
+      "en": "He always apologizes",
+      "es": "Siempre pide perdón"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Tu es mon meilleur ami",
+      "en": "You are my best friend",
+      "es": "Eres mi mejor amigo"
+    },
+    {
+      "answer": "Je te pardonne",
+      "en": "I forgive you",
+      "es": "Te perdono"
+    },
+    {
+      "answer": "Nous partageons un appartement",
+      "en": "We share an apartment",
+      "es": "Compartimos un piso"
+    },
+    {
+      "answer": "Ils se disputent souvent",
+      "en": "They argue often",
+      "es": "Discuten a menudo"
+    },
+    {
+      "answer": "Si je suis seule, je me repose",
+      "en": "If I'm alone, I rest",
+      "es": "Si estoy sola, descanso"
+    },
+    {
+      "answer": "Rappelle-moi de faire la vaisselle",
+      "en": "Remind me to do the dishes",
+      "es": "Recuérdame fregar los platos"
+    }
+  ]
+}

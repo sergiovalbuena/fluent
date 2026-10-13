@@ -1,0 +1,568 @@
+{
+  "lesson": 48,
+  "slug": "lecon-48",
+  "icon": "🏦",
+  "title": {
+    "fr": "À la banque",
+    "es": "En el banco",
+    "en": "At the bank"
+  },
+  "source": {
+    "audio": "Lecons 48.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "quand / lorsque + futur",
+      "example": "Lorsqu'ils feront le virement, il partira en voyage. / Quand tu encaisseras le chèque, on te demandera ta carte d'identité.",
+      "en": "Future after \"when\"",
+      "es": "Futuro después de «cuando»"
+    },
+    {
+      "structure": "si + présent → futur",
+      "example": "Si on me refuse le crédit, je devrai chercher une autre banque.",
+      "en": "Real condition",
+      "es": "Condición real"
+    },
+    {
+      "structure": "quand + futur antérieur",
+      "example": "Vous pourrez choisir votre code lorsque vous aurez reçu votre carte.",
+      "en": "Completed future action",
+      "es": "Acción futura terminada"
+    },
+    {
+      "structure": "avant que + (ne) + subjonctif",
+      "example": "Appelle-les avant qu'il n'ait tout dépensé.",
+      "en": "\"Before\" + subjunctive (expletive ne)",
+      "es": "«Antes de que» + subjuntivo (ne expletivo)"
+    },
+    {
+      "structure": "pour que + subjonctif",
+      "example": "J'ai besoin d'argent sur mon compte pour qu'elle me paie.",
+      "en": "\"So that\" + subjunctive",
+      "es": "«Para que» + subjuntivo"
+    },
+    {
+      "structure": "à chaque fois que / lorsque + présent",
+      "example": "Je vais au distributeur à chaque fois que je n'ai plus d'espèces.",
+      "en": "Repeated actions",
+      "es": "Acciones repetidas"
+    },
+    {
+      "structure": "après avoir + participe",
+      "example": "Après avoir envoyé ma demande, j'ai reçu une réponse.",
+      "en": "\"After having done\"",
+      "es": "«Después de haber»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "In French, use the future after \"quand / lorsque / dès que\" when talking about the future: \"Quand j'aurai l'argent, je paierai.\" (Spanish uses the subjunctive here.)",
+      "es": "En francés se usa el futuro después de «quand / lorsque / dès que» cuando se habla del futuro: «Quand j'aurai l'argent, je paierai.» (En español se usa el subjuntivo.)"
+    },
+    {
+      "en": "Banking words: \"le compte courant\" (current account), \"le compte épargne\" (savings account), \"le RIB\" (bank details), \"le virement\" (transfer), \"être à découvert\" (to be overdrawn).",
+      "es": "Vocabulario bancario: «le compte courant» (cuenta corriente), «le compte épargne» (cuenta de ahorro), «le RIB» (datos bancarios), «le virement» (transferencia), «être à découvert» (estar en descubierto)."
+    },
+    {
+      "en": "\"Le distributeur (automatique)\" or \"le DAB\" = ATM; \"retirer de l'argent\" = to withdraw money; \"le code\" = PIN.",
+      "es": "«Le distributeur (automatique)» o «le DAB» = cajero automático; «retirer de l'argent» = sacar dinero; «le code» = PIN."
+    },
+    {
+      "en": "\"Encaisser un chèque\" = to cash a check; \"un chèque sans provision\" = a bounced check.",
+      "es": "«Encaisser un chèque» = cobrar un cheque; «un chèque sans provision» = un cheque sin fondos."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la banque",
+      "en": "the bank",
+      "es": "el banco"
+    },
+    {
+      "word": "l'agence",
+      "en": "the branch",
+      "es": "la sucursal"
+    },
+    {
+      "word": "le guichet",
+      "en": "the counter",
+      "es": "la ventanilla"
+    },
+    {
+      "word": "le caissier / la caissière",
+      "en": "the teller",
+      "es": "el cajero / la cajera"
+    },
+    {
+      "word": "le conseiller bancaire",
+      "en": "the bank advisor",
+      "es": "el asesor bancario"
+    },
+    {
+      "word": "le compte courant",
+      "en": "the current account",
+      "es": "la cuenta corriente"
+    },
+    {
+      "word": "le compte épargne",
+      "en": "the savings account",
+      "es": "la cuenta de ahorro"
+    },
+    {
+      "word": "ouvrir un compte",
+      "en": "to open an account",
+      "es": "abrir una cuenta"
+    },
+    {
+      "word": "le solde",
+      "en": "the balance",
+      "es": "el saldo"
+    },
+    {
+      "word": "le relevé de compte",
+      "en": "the bank statement",
+      "es": "el extracto bancario"
+    },
+    {
+      "word": "être à découvert",
+      "en": "to be overdrawn",
+      "es": "estar en descubierto"
+    },
+    {
+      "word": "le chèque",
+      "en": "the check",
+      "es": "el cheque"
+    },
+    {
+      "word": "le chéquier",
+      "en": "the checkbook",
+      "es": "el talonario"
+    },
+    {
+      "word": "encaisser",
+      "en": "to cash",
+      "es": "cobrar"
+    },
+    {
+      "word": "déposer",
+      "en": "to deposit",
+      "es": "ingresar"
+    },
+    {
+      "word": "le dépôt",
+      "en": "the deposit",
+      "es": "el ingreso"
+    },
+    {
+      "word": "retirer",
+      "en": "to withdraw",
+      "es": "sacar / retirar"
+    },
+    {
+      "word": "le retrait",
+      "en": "the withdrawal",
+      "es": "la retirada"
+    },
+    {
+      "word": "le distributeur",
+      "en": "the ATM",
+      "es": "el cajero automático"
+    },
+    {
+      "word": "les espèces",
+      "en": "cash",
+      "es": "el efectivo"
+    },
+    {
+      "word": "le virement",
+      "en": "the transfer",
+      "es": "la transferencia"
+    },
+    {
+      "word": "virer / transférer",
+      "en": "to transfer",
+      "es": "transferir"
+    },
+    {
+      "word": "la carte bancaire / de crédit",
+      "en": "the bank / credit card",
+      "es": "la tarjeta bancaria / de crédito"
+    },
+    {
+      "word": "le code",
+      "en": "the PIN",
+      "es": "el PIN"
+    },
+    {
+      "word": "le plafond",
+      "en": "the limit",
+      "es": "el límite"
+    },
+    {
+      "word": "le prêt",
+      "en": "the loan",
+      "es": "el préstamo"
+    },
+    {
+      "word": "le crédit",
+      "en": "credit",
+      "es": "el crédito"
+    },
+    {
+      "word": "les intérêts",
+      "en": "interest",
+      "es": "los intereses"
+    },
+    {
+      "word": "épargner / économiser",
+      "en": "to save",
+      "es": "ahorrar"
+    },
+    {
+      "word": "la signature",
+      "en": "the signature",
+      "es": "la firma"
+    },
+    {
+      "word": "signer",
+      "en": "to sign",
+      "es": "firmar"
+    },
+    {
+      "word": "le formulaire",
+      "en": "the form",
+      "es": "el formulario"
+    },
+    {
+      "word": "remplir",
+      "en": "to fill in",
+      "es": "rellenar"
+    },
+    {
+      "word": "les antécédents",
+      "en": "history / record",
+      "es": "el historial"
+    },
+    {
+      "word": "refuser",
+      "en": "to refuse",
+      "es": "rechazar"
+    },
+    {
+      "word": "faire faillite",
+      "en": "to go bankrupt",
+      "es": "quebrar"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Il a toujours des problèmes quand il ouvre un compte.",
+      "en": "He always has problems when he opens an account.",
+      "es": "Siempre tiene problemas cuando abre una cuenta."
+    },
+    {
+      "phrase": "Si elle encaisse ce chèque, il sera à découvert.",
+      "en": "If she cashes this check, he will be overdrawn.",
+      "es": "Si ella cobra este cheque, él quedará en descubierto."
+    },
+    {
+      "phrase": "Lorsqu'ils feront le virement, il partira en voyage.",
+      "en": "When they make the transfer, he will go on a trip.",
+      "es": "Cuando hagan la transferencia, se irá de viaje."
+    },
+    {
+      "phrase": "Quand tu encaisseras le chèque, on te demandera ta carte d'identité.",
+      "en": "When you cash the check, they will ask for your ID.",
+      "es": "Cuando cobres el cheque, te pedirán el documento de identidad."
+    },
+    {
+      "phrase": "Si je veux retirer plus de mille euros, je dois aller à mon agence.",
+      "en": "If I want to withdraw more than a thousand euros, I have to go to my branch.",
+      "es": "Si quiero sacar más de mil euros, tengo que ir a mi sucursal."
+    },
+    {
+      "phrase": "La banque vérifiera tes antécédents lorsque tu demanderas un prêt.",
+      "en": "The bank will check your history when you apply for a loan.",
+      "es": "El banco revisará tu historial cuando pidas un préstamo."
+    },
+    {
+      "phrase": "Nous pourrions économiser si nous ne dépassions pas le plafond de la carte.",
+      "en": "We could save if we didn't exceed the card limit.",
+      "es": "Podríamos ahorrar si no superáramos el límite de la tarjeta."
+    },
+    {
+      "phrase": "Le compte est à découvert quand les dépenses sont supérieures au solde.",
+      "en": "The account is overdrawn when spending is higher than the balance.",
+      "es": "La cuenta está en descubierto cuando los gastos superan el saldo."
+    },
+    {
+      "phrase": "Tu vas faire le dépôt ? — Je le ferai si mon père me donne le chèque.",
+      "en": "Are you going to make the deposit? — I'll do it if my father gives me the check.",
+      "es": "¿Vas a hacer el ingreso? — Lo haré si mi padre me da el cheque."
+    },
+    {
+      "phrase": "Appelle-les avant qu'il n'ait tout dépensé !",
+      "en": "Call them before he has spent everything!",
+      "es": "¡Llámalos antes de que se lo haya gastado todo!"
+    },
+    {
+      "phrase": "Je vais au distributeur à chaque fois que je n'ai plus d'espèces.",
+      "en": "I go to the ATM every time I run out of cash.",
+      "es": "Voy al cajero cada vez que me quedo sin efectivo."
+    },
+    {
+      "phrase": "Je voyagerai quand ma situation financière sera meilleure.",
+      "en": "I will travel when my financial situation is better.",
+      "es": "Viajaré cuando mi situación económica sea mejor."
+    },
+    {
+      "phrase": "Elle lit toujours les contrats quand il s'agit d'une grosse somme.",
+      "en": "She always reads contracts when it's a large sum.",
+      "es": "Siempre lee los contratos cuando se trata de una suma importante."
+    },
+    {
+      "phrase": "Vous pourrez choisir votre code lorsque vous aurez reçu votre carte.",
+      "en": "You will be able to choose your PIN once you have received your card.",
+      "es": "Podrá elegir su PIN cuando haya recibido la tarjeta."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Quand tu ___ à la banque, demande un relevé.\"",
+        "es": "Completa: «Quand tu ___ à la banque, demande un relevé.»"
+      },
+      "options": [
+        "iras",
+        "vas",
+        "ailles",
+        "irais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future after \"quand\" when the action is in the future.",
+        "es": "Futuro tras «quand» cuando la acción es futura."
+      }
+    },
+    {
+      "question": {
+        "en": "Spanish says \"Cuando tenga dinero\"; French says…",
+        "es": "En español se dice «Cuando tenga dinero»; en francés…"
+      },
+      "options": [
+        "Quand j'aurai de l'argent",
+        "Quand j'aie de l'argent",
+        "Quand j'ai eu de l'argent",
+        "Quand j'aurais de l'argent"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "French uses the future, not the subjunctive.",
+        "es": "El francés usa el futuro, no el subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Vous choisirez votre code quand vous ___ votre carte.\"",
+        "es": "Completa: «Vous choisirez votre code quand vous ___ votre carte.»"
+      },
+      "options": [
+        "aurez reçu",
+        "recevez",
+        "avez reçu",
+        "receviez"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Futur antérieur: first you receive the card.",
+        "es": "Futur antérieur: primero se recibe la tarjeta."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Être à découvert\" means…",
+        "es": "«Être à découvert» significa…"
+      },
+      "options": {
+        "en": [
+          "to be overdrawn",
+          "to be discovered",
+          "to open an account",
+          "to be rich"
+        ],
+        "es": [
+          "estar en descubierto",
+          "ser descubierto",
+          "abrir una cuenta",
+          "ser rico"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Your balance is negative.",
+        "es": "El saldo es negativo."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you withdraw cash 24/7?",
+        "es": "¿Dónde sacas efectivo a cualquier hora?"
+      },
+      "options": [
+        "au distributeur",
+        "au guichet",
+        "au chéquier",
+        "au relevé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Also called \"le DAB\".",
+        "es": "También se llama «le DAB»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Appelle-le avant qu'il ___ tout dépensé.\"",
+        "es": "Completa: «Appelle-le avant qu'il ___ tout dépensé.»"
+      },
+      "options": [
+        "n'ait",
+        "n'a",
+        "n'avait",
+        "n'aura"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avant que\" + subjunctive (often with expletive \"ne\").",
+        "es": "«Avant que» + subjuntivo (a menudo con «ne» expletivo)."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un virement\"?",
+        "es": "¿Qué es «un virement»?"
+      },
+      "options": {
+        "en": [
+          "a bank transfer",
+          "a check",
+          "a withdrawal",
+          "a loan"
+        ],
+        "es": [
+          "una transferencia",
+          "un cheque",
+          "una retirada",
+          "un préstamo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Virer de l'argent = to transfer money.",
+        "es": "Virer de l'argent = transferir dinero."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'ai besoin d'argent pour qu'elle me ___.\"",
+        "es": "Completa: «J'ai besoin d'argent pour qu'elle me ___.»"
+      },
+      "options": [
+        "paie",
+        "paye-t-elle",
+        "paiera",
+        "payait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pour que\" + subjunctive.",
+        "es": "«Pour que» + subjuntivo."
+      }
+    }
+  ],
+  "story": {
+    "title": "Un prêt pour un café",
+    "text": "Inès rêve d'ouvrir un petit café à Bordeaux. Après avoir envoyé une demande de prêt en ligne, elle a reçu un message de sa banque qui lui demandait de venir à l'agence la plus proche avec ses trois derniers relevés de compte et une lettre de son ancien employeur. Quand elle est arrivée, la caissière lui a dit d'aller au bureau du conseiller. « Bonjour, Madame Laurent. Asseyez-vous, je vous en prie. Nous devons remplir ces formulaires et vérifier vos antécédents bancaires. » « D'accord, commençons. » « Il y a un petit problème. Sur votre relevé de mars, il y a un retrait de deux mille euros, et votre compte a été à découvert pendant dix jours. » « Oui, mais c'était pour payer un cours de pâtisserie. Mon frère m'a fait un virement la semaine suivante. » Le conseiller vérifie sur son écran. « Vous avez raison. Dans ce cas, si vous signez ici, nous pourrons vous accorder le prêt. Quand nous aurons reçu tous les documents, l'argent sera viré sur votre compte. » « Merci beaucoup ! Je pourrai vous inviter à prendre un café quand j'aurai ouvert ! »",
+    "en": "Inès dreams of opening a small café in Bordeaux. After sending a loan application online, she received a message from her bank asking her to come to the nearest branch with her last three bank statements and a letter from her former employer. When she arrived, the teller told her to go to the advisor's office. “Hello, Ms. Laurent. Please sit down. We need to fill in these forms and check your banking history.” “All right, let's start.” “There's a small problem. On your March statement, there's a withdrawal of two thousand euros, and your account was overdrawn for ten days.” “Yes, but that was to pay for a pastry course. My brother made a transfer to me the following week.” The advisor checks on his screen. “You're right. In that case, if you sign here, we'll be able to grant you the loan. When we have received all the documents, the money will be transferred to your account.” “Thank you very much! I'll be able to invite you for a coffee once I've opened!”",
+    "es": "Inès sueña con abrir un pequeño café en Burdeos. Después de enviar una solicitud de préstamo por internet, recibió un mensaje de su banco en el que le pedían que fuera a la sucursal más cercana con sus tres últimos extractos y una carta de su antiguo empleador. Cuando llegó, la cajera le dijo que fuera al despacho del asesor. «Buenos días, señora Laurent. Siéntese, por favor. Tenemos que rellenar estos formularios y revisar su historial bancario.» «De acuerdo, empecemos.» «Hay un pequeño problema. En su extracto de marzo hay una retirada de dos mil euros, y su cuenta estuvo en descubierto diez días.» «Sí, pero era para pagar un curso de repostería. Mi hermano me hizo una transferencia la semana siguiente.» El asesor lo comprueba en la pantalla. «Tiene razón. En ese caso, si firma aquí, podremos concederle el préstamo. Cuando hayamos recibido todos los documentos, el dinero se transferirá a su cuenta.» «¡Muchas gracias! ¡Podré invitarlo a un café cuando haya abierto!»",
+    "highlighted_words": [
+      "Après avoir envoyé",
+      "agence",
+      "relevés de compte",
+      "caissière",
+      "antécédents bancaires",
+      "retrait",
+      "à découvert",
+      "virement",
+      "si vous signez",
+      "Quand nous aurons reçu",
+      "sera viré",
+      "quand j'aurai ouvert"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je voudrais ouvrir un compte",
+      "en": "I would like to open an account",
+      "es": "Quisiera abrir una cuenta"
+    },
+    {
+      "sentence": "Quand tu iras à la banque appelle-moi",
+      "en": "When you go to the bank call me",
+      "es": "Cuando vayas al banco, llámame"
+    },
+    {
+      "sentence": "Mon compte est à découvert",
+      "en": "My account is overdrawn",
+      "es": "Mi cuenta está en descubierto"
+    },
+    {
+      "sentence": "Je dois retirer de l'argent",
+      "en": "I have to withdraw money",
+      "es": "Tengo que sacar dinero"
+    },
+    {
+      "sentence": "Il a fait un virement hier",
+      "en": "He made a transfer yesterday",
+      "es": "Hizo una transferencia ayer"
+    },
+    {
+      "sentence": "Signez ici s'il vous plaît",
+      "en": "Sign here please",
+      "es": "Firme aquí, por favor"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est le distributeur ?",
+      "en": "Where is the ATM?",
+      "es": "¿Dónde está el cajero?"
+    },
+    {
+      "answer": "Quel est mon solde ?",
+      "en": "What is my balance?",
+      "es": "¿Cuál es mi saldo?"
+    },
+    {
+      "answer": "Je voudrais encaisser ce chèque",
+      "en": "I would like to cash this check",
+      "es": "Quisiera cobrar este cheque"
+    },
+    {
+      "answer": "J'ai oublié mon code",
+      "en": "I forgot my PIN",
+      "es": "He olvidado mi PIN"
+    },
+    {
+      "answer": "Je paierai quand je pourrai",
+      "en": "I will pay when I can",
+      "es": "Pagaré cuando pueda"
+    },
+    {
+      "answer": "Remplissez ce formulaire",
+      "en": "Fill in this form",
+      "es": "Rellene este formulario"
+    }
+  ]
+}

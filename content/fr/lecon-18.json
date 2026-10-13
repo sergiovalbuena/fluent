@@ -1,0 +1,637 @@
+{
+  "lesson": 18,
+  "slug": "lecon-18",
+  "icon": "⚽",
+  "title": {
+    "fr": "Le sport",
+    "es": "El deporte",
+    "en": "Sports"
+  },
+  "source": {
+    "audio": "Lecons 18.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "jouer à / faire de",
+      "example": "jouer au tennis, jouer aux échecs / faire du vélo, faire de la natation",
+      "en": "Playing vs. doing a sport",
+      "es": "«Jugar a» frente a «practicar»"
+    },
+    {
+      "structure": "impératif + pronoms",
+      "example": "Frappe la balle ! Passe-la-moi ! Avance ! Recule !",
+      "en": "Imperative in the game",
+      "es": "Imperativo en el juego"
+    },
+    {
+      "structure": "voix passive",
+      "example": "Le rugby est joué partout en France.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    },
+    {
+      "structure": "bien que + subjonctif",
+      "example": "Bien qu'ils soient violents, ces sports sont populaires.",
+      "en": "\"Although\" + subjunctive",
+      "es": "«Aunque» + subjuntivo"
+    },
+    {
+      "structure": "ne … que",
+      "example": "Tu n'as besoin que d'une paire de baskets.",
+      "en": "\"only\"",
+      "es": "«solo»"
+    },
+    {
+      "structure": "imparfait / présent",
+      "example": "J'essayais de te rattraper, mais tu cours trop vite !",
+      "en": "Ongoing past action",
+      "es": "Acción en curso en el pasado"
+    },
+    {
+      "structure": "c'est à moi de + infinitif",
+      "example": "C'est à moi de frapper.",
+      "en": "\"It's my turn to\"",
+      "es": "«Me toca a mí»"
+    },
+    {
+      "structure": "préférer … plutôt que",
+      "example": "Je préfère le roller plutôt que la trottinette.",
+      "en": "Preferences",
+      "es": "Preferencias"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Jouer à\" for games and ball sports (jouer au foot, aux cartes); \"faire de\" for other activities (faire du ski, de la boxe, du yoga).",
+      "es": "«Jouer à» para juegos y deportes de pelota (jouer au foot, aux cartes); «faire de» para otras actividades (faire du ski, de la boxe, du yoga)."
+    },
+    {
+      "en": "\"Une balle\" is small (tennis, golf); \"un ballon\" is big (football, basketball).",
+      "es": "«Une balle» es pequeña (tenis, golf); «un ballon» es grande (fútbol, baloncesto)."
+    },
+    {
+      "en": "\"Marquer un but\" = to score a goal; \"gagner / perdre un match\" = to win / lose a game; \"match nul\" = a draw.",
+      "es": "«Marquer un but» = marcar un gol; «gagner / perdre un match» = ganar / perder un partido; «match nul» = empate."
+    },
+    {
+      "en": "Informal: \"s'éclater\" = to have a blast.",
+      "es": "Coloquial: «s'éclater» = pasárselo en grande."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'athlétisme",
+      "en": "athletics",
+      "es": "el atletismo"
+    },
+    {
+      "word": "le football",
+      "en": "soccer",
+      "es": "el fútbol"
+    },
+    {
+      "word": "le basket",
+      "en": "basketball",
+      "es": "el baloncesto"
+    },
+    {
+      "word": "le volley",
+      "en": "volleyball",
+      "es": "el voleibol"
+    },
+    {
+      "word": "le handball",
+      "en": "handball",
+      "es": "el balonmano"
+    },
+    {
+      "word": "le rugby",
+      "en": "rugby",
+      "es": "el rugby"
+    },
+    {
+      "word": "le tennis",
+      "en": "tennis",
+      "es": "el tenis"
+    },
+    {
+      "word": "le tennis de table",
+      "en": "table tennis",
+      "es": "el tenis de mesa"
+    },
+    {
+      "word": "le golf",
+      "en": "golf",
+      "es": "el golf"
+    },
+    {
+      "word": "la boxe",
+      "en": "boxing",
+      "es": "el boxeo"
+    },
+    {
+      "word": "la lutte",
+      "en": "wrestling",
+      "es": "la lucha"
+    },
+    {
+      "word": "le judo",
+      "en": "judo",
+      "es": "el judo"
+    },
+    {
+      "word": "la gymnastique",
+      "en": "gymnastics",
+      "es": "la gimnasia"
+    },
+    {
+      "word": "la natation",
+      "en": "swimming",
+      "es": "la natación"
+    },
+    {
+      "word": "le cyclisme",
+      "en": "cycling",
+      "es": "el ciclismo"
+    },
+    {
+      "word": "l'alpinisme",
+      "en": "mountaineering",
+      "es": "el alpinismo"
+    },
+    {
+      "word": "l'équitation",
+      "en": "horse riding",
+      "es": "la equitación"
+    },
+    {
+      "word": "la voile",
+      "en": "sailing",
+      "es": "la vela"
+    },
+    {
+      "word": "la planche à voile",
+      "en": "windsurfing",
+      "es": "el windsurf"
+    },
+    {
+      "word": "le patinage",
+      "en": "skating",
+      "es": "el patinaje"
+    },
+    {
+      "word": "les échecs",
+      "en": "chess",
+      "es": "el ajedrez"
+    },
+    {
+      "word": "la pêche",
+      "en": "fishing",
+      "es": "la pesca"
+    },
+    {
+      "word": "le terrain",
+      "en": "the field / court",
+      "es": "el campo / la cancha"
+    },
+    {
+      "word": "le stade",
+      "en": "the stadium",
+      "es": "el estadio"
+    },
+    {
+      "word": "la piscine",
+      "en": "the swimming pool",
+      "es": "la piscina"
+    },
+    {
+      "word": "la piste",
+      "en": "the track",
+      "es": "la pista"
+    },
+    {
+      "word": "le ballon",
+      "en": "the ball (big)",
+      "es": "el balón"
+    },
+    {
+      "word": "la balle",
+      "en": "the ball (small)",
+      "es": "la pelota"
+    },
+    {
+      "word": "la raquette",
+      "en": "the racket",
+      "es": "la raqueta"
+    },
+    {
+      "word": "le filet",
+      "en": "the net",
+      "es": "la red"
+    },
+    {
+      "word": "le casque",
+      "en": "the helmet",
+      "es": "el casco"
+    },
+    {
+      "word": "le but",
+      "en": "the goal",
+      "es": "la portería / el gol"
+    },
+    {
+      "word": "le gardien de but",
+      "en": "the goalkeeper",
+      "es": "el portero"
+    },
+    {
+      "word": "l'arbitre",
+      "en": "the referee",
+      "es": "el árbitro"
+    },
+    {
+      "word": "l'entraîneur",
+      "en": "the coach",
+      "es": "el entrenador"
+    },
+    {
+      "word": "l'équipe",
+      "en": "the team",
+      "es": "el equipo"
+    },
+    {
+      "word": "le joueur / la joueuse",
+      "en": "the player",
+      "es": "el jugador / la jugadora"
+    },
+    {
+      "word": "le score",
+      "en": "the score",
+      "es": "el marcador"
+    },
+    {
+      "word": "courir",
+      "en": "to run",
+      "es": "correr"
+    },
+    {
+      "word": "nager",
+      "en": "to swim",
+      "es": "nadar"
+    },
+    {
+      "word": "sauter",
+      "en": "to jump",
+      "es": "saltar"
+    },
+    {
+      "word": "lancer",
+      "en": "to throw",
+      "es": "lanzar"
+    },
+    {
+      "word": "attraper",
+      "en": "to catch",
+      "es": "atrapar"
+    },
+    {
+      "word": "frapper",
+      "en": "to hit",
+      "es": "golpear"
+    },
+    {
+      "word": "gagner",
+      "en": "to win",
+      "es": "ganar"
+    },
+    {
+      "word": "perdre",
+      "en": "to lose",
+      "es": "perder"
+    },
+    {
+      "word": "faire du jogging",
+      "en": "to go jogging",
+      "es": "hacer footing"
+    },
+    {
+      "word": "transpirer",
+      "en": "to sweat",
+      "es": "sudar"
+    },
+    {
+      "word": "blessé / blessée",
+      "en": "injured",
+      "es": "lesionado / lesionada"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Tu fais beaucoup d'exercice !",
+      "en": "You do a lot of exercise!",
+      "es": "¡Haces mucho ejercicio!"
+    },
+    {
+      "phrase": "J'aime courir tous les matins.",
+      "en": "I like running every morning.",
+      "es": "Me gusta correr todas las mañanas."
+    },
+    {
+      "phrase": "Mets ton casque !",
+      "en": "Put on your helmet!",
+      "es": "¡Ponte el casco!"
+    },
+    {
+      "phrase": "Jouons au basket !",
+      "en": "Let's play basketball!",
+      "es": "¡Juguemos al baloncesto!"
+    },
+    {
+      "phrase": "Donne-moi la raquette, c'est à moi de servir.",
+      "en": "Give me the racket, it's my turn to serve.",
+      "es": "Dame la raqueta, me toca sacar a mí."
+    },
+    {
+      "phrase": "Attrape la balle si tu peux !",
+      "en": "Catch the ball if you can!",
+      "es": "¡Atrapa la pelota si puedes!"
+    },
+    {
+      "phrase": "Il faut être patient pour jouer aux échecs.",
+      "en": "You have to be patient to play chess.",
+      "es": "Hay que ser paciente para jugar al ajedrez."
+    },
+    {
+      "phrase": "Le handball est très joué en Allemagne.",
+      "en": "Handball is widely played in Germany.",
+      "es": "El balonmano se juega mucho en Alemania."
+    },
+    {
+      "phrase": "Les enfants sont en train de sauter à la corde.",
+      "en": "The children are skipping rope.",
+      "es": "Los niños están saltando a la comba."
+    },
+    {
+      "phrase": "L'arbitre a été injuste !",
+      "en": "The referee was unfair!",
+      "es": "¡El árbitro ha sido injusto!"
+    },
+    {
+      "phrase": "On a besoin d'une autre joueuse : Clara est blessée.",
+      "en": "We need another player: Clara is injured.",
+      "es": "Necesitamos otra jugadora: Clara está lesionada."
+    },
+    {
+      "phrase": "As-tu pêché quelque chose ? — Deux poissons et une vieille chaussure !",
+      "en": "Did you catch anything? — Two fish and an old shoe!",
+      "es": "¿Has pescado algo? — ¡Dos peces y un zapato viejo!"
+    },
+    {
+      "phrase": "Tu transpires ! — J'essayais de te rattraper, mais tu cours trop vite.",
+      "en": "You're sweating! — I was trying to catch up with you, but you run too fast.",
+      "es": "¡Estás sudando! — Intentaba alcanzarte, pero corres demasiado rápido."
+    },
+    {
+      "phrase": "Le stade est plein.",
+      "en": "The stadium is full.",
+      "es": "El estadio está lleno."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Je joue ___ tennis.\"",
+        "es": "Completa: «Je joue ___ tennis.»"
+      },
+      "options": [
+        "au",
+        "du",
+        "le",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Jouer à + le = au.",
+        "es": "Jouer à + le = au."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle fait ___ natation.\"",
+        "es": "Completa: «Elle fait ___ natation.»"
+      },
+      "options": [
+        "de la",
+        "à la",
+        "la",
+        "du"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Faire de + la = de la natation.",
+        "es": "Faire de + la = de la natation."
+      }
+    },
+    {
+      "question": {
+        "en": "Which ball is used in football?",
+        "es": "¿Qué pelota se usa en el fútbol?"
+      },
+      "options": [
+        "un ballon",
+        "une balle",
+        "un filet",
+        "une raquette"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Big balls are \"ballons\".",
+        "es": "Las pelotas grandes son «ballons»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Bien qu'ils ___ violents, ces sports sont populaires.\"",
+        "es": "Completa: «Bien qu'ils ___ violents, ces sports sont populaires.»"
+      },
+      "options": [
+        "soient",
+        "sont",
+        "seront",
+        "étaient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Bien que\" + subjunctive.",
+        "es": "«Bien que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Tu n'as besoin que d'une paire de baskets.\" Meaning?",
+        "es": "«Tu n'as besoin que d'une paire de baskets.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "You only need a pair of sneakers.",
+          "You don't need sneakers.",
+          "You need more than sneakers.",
+          "You never need sneakers."
+        ],
+        "es": [
+          "Solo necesitas unas zapatillas.",
+          "No necesitas zapatillas.",
+          "Necesitas más que zapatillas.",
+          "Nunca necesitas zapatillas."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … que\" = only.",
+        "es": "«Ne … que» = solo."
+      }
+    },
+    {
+      "question": {
+        "en": "Who is in charge of the rules during a match?",
+        "es": "¿Quién hace cumplir las reglas en un partido?"
+      },
+      "options": [
+        "l'arbitre",
+        "l'entraîneur",
+        "le gardien de but",
+        "le joueur"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The coach trains the team; the referee controls the game.",
+        "es": "El entrenador entrena al equipo; el árbitro dirige el partido."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Pass it to me!\" (la balle)?",
+        "es": "¿Cómo se dice «¡Pásamela!» (la balle)?"
+      },
+      "options": [
+        "Passe-la-moi !",
+        "Passe-moi-la !",
+        "La passe-moi !",
+        "Me la passe !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Order in the affirmative imperative: verb-le/la/les-moi.",
+        "es": "Orden en el imperativo afirmativo: verbo-le/la/les-moi."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Match nul\" means…",
+        "es": "«Match nul» significa…"
+      },
+      "options": {
+        "en": [
+          "a draw",
+          "a bad match",
+          "a cancelled match",
+          "a final"
+        ],
+        "es": [
+          "un empate",
+          "un mal partido",
+          "un partido cancelado",
+          "una final"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Gagner = win, perdre = lose, match nul = draw.",
+        "es": "Gagner = ganar, perdre = perder, match nul = empate."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le tournoi du quartier",
+    "text": "Ce samedi, l'équipe de volley d'Inès joue la finale du tournoi du quartier. Malheureusement, leur entraîneur est malade. « Qui va nous diriger ? » demande Léo. « C'est à moi de le faire, je suis la capitaine », répond Inès. Avant le match, elle explique : « Bien que nos adversaires soient plus grands, nous pouvons gagner. Il faut rester calmes et jouer ensemble. » Le stade est plein. Pendant le premier set, l'autre équipe marque beaucoup de points. « Avance ! Recule ! Passe-la-moi ! » crie Inès. Au deuxième set, Clara se blesse à la cheville. « On a besoin d'une autre joueuse ! » Heureusement, la petite sœur d'Inès, qui faisait de la gymnastique quand elle était enfant, saute très haut. Elle n'a que quinze ans, mais elle est incroyable ! Score final : deux sets à un. L'arbitre siffle la fin du match. Tout le monde s'éclate. « Le sport, c'est d'abord pour s'amuser », dit Inès en souriant.",
+    "en": "This Saturday, Inès's volleyball team is playing the final of the neighborhood tournament. Unfortunately, their coach is ill. “Who's going to lead us?” asks Léo. “It's my job, I'm the captain,” answers Inès. Before the game, she explains: “Although our opponents are taller, we can win. We have to stay calm and play together.” The stadium is full. During the first set, the other team scores a lot of points. “Move forward! Move back! Pass it to me!” shouts Inès. In the second set, Clara hurts her ankle. “We need another player!” Luckily, Inès's little sister, who did gymnastics when she was a child, jumps very high. She is only fifteen, but she's amazing! Final score: two sets to one. The referee whistles the end of the game. Everyone has a blast. “Sport is first of all about having fun,” says Inès with a smile.",
+    "es": "Este sábado, el equipo de voleibol de Inès juega la final del torneo del barrio. Por desgracia, su entrenador está enfermo. «¿Quién nos va a dirigir?», pregunta Léo. «Me toca a mí, soy la capitana», responde Inès. Antes del partido, explica: «Aunque nuestros rivales sean más altos, podemos ganar. Hay que mantener la calma y jugar juntos.» El estadio está lleno. Durante el primer set, el otro equipo marca muchos puntos. «¡Avanza! ¡Retrocede! ¡Pásamela!», grita Inès. En el segundo set, Clara se lesiona el tobillo. «¡Necesitamos otra jugadora!» Por suerte, la hermana pequeña de Inès, que hacía gimnasia cuando era niña, salta muy alto. Solo tiene quince años, ¡pero es increíble! Resultado final: dos sets a uno. El árbitro pita el final del partido. Todo el mundo se lo pasa en grande. «El deporte es, ante todo, para divertirse», dice Inès sonriendo.",
+    "highlighted_words": [
+      "entraîneur",
+      "C'est à moi de",
+      "Bien que",
+      "soient",
+      "Il faut",
+      "Passe-la-moi",
+      "faisait de la gymnastique",
+      "n'a que",
+      "L'arbitre",
+      "s'éclate"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je joue au foot le samedi",
+      "en": "I play soccer on Saturdays",
+      "es": "Juego al fútbol los sábados"
+    },
+    {
+      "sentence": "Elle fait de la natation",
+      "en": "She swims",
+      "es": "Practica natación"
+    },
+    {
+      "sentence": "C'est à moi de jouer",
+      "en": "It's my turn to play",
+      "es": "Me toca jugar a mí"
+    },
+    {
+      "sentence": "Il faut être patient",
+      "en": "You have to be patient",
+      "es": "Hay que ser paciente"
+    },
+    {
+      "sentence": "Tu n'as besoin que d'un ballon",
+      "en": "You only need a ball",
+      "es": "Solo necesitas un balón"
+    },
+    {
+      "sentence": "L'arbitre a été injuste",
+      "en": "The referee was unfair",
+      "es": "El árbitro ha sido injusto"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Jouons au basket",
+      "en": "Let's play basketball",
+      "es": "Juguemos al baloncesto"
+    },
+    {
+      "answer": "Mets ton casque",
+      "en": "Put on your helmet",
+      "es": "Ponte el casco"
+    },
+    {
+      "answer": "Le stade est plein",
+      "en": "The stadium is full",
+      "es": "El estadio está lleno"
+    },
+    {
+      "answer": "Nous avons gagné le match",
+      "en": "We won the game",
+      "es": "Hemos ganado el partido"
+    },
+    {
+      "answer": "J'aime faire du vélo",
+      "en": "I like cycling",
+      "es": "Me gusta montar en bici"
+    },
+    {
+      "answer": "Il est blessé",
+      "en": "He is injured",
+      "es": "Está lesionado"
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "lesson": 16,
+  "slug": "lecon-16",
+  "icon": "👕",
+  "title": {
+    "fr": "Les vêtements",
+    "es": "La ropa",
+    "en": "Clothes"
+  },
+  "source": {
+    "audio": "Lecons 16.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "aller à quelqu'un",
+      "example": "Ce béret te va bien. / Cette veste ne me va pas.",
+      "en": "\"To suit someone\"",
+      "es": "«Quedarle bien a alguien»"
+    },
+    {
+      "structure": "en + matière",
+      "example": "une veste en cuir, un pull en laine",
+      "en": "Materials with \"en\"",
+      "es": "Materiales con «en»"
+    },
+    {
+      "structure": "impératif",
+      "example": "Mets ton écharpe et tes gants !",
+      "en": "Imperative",
+      "es": "Imperativo"
+    },
+    {
+      "structure": "sinon + futur proche",
+      "example": "Mets tes baskets, sinon tu vas avoir mal aux pieds.",
+      "en": "\"Otherwise\" + near future",
+      "es": "«Si no» + futuro próximo"
+    },
+    {
+      "structure": "passé composé (pronominal)",
+      "example": "Ton chapeau s'est envolé ! / On m'a volé mon sac.",
+      "en": "Past tense (incl. reflexive)",
+      "es": "Pasado (incluidos los pronominales)"
+    },
+    {
+      "structure": "vouloir que + subjonctif",
+      "example": "Tu veux que je le couse ?",
+      "en": "Offering with \"vouloir que\"",
+      "es": "Ofrecer con «vouloir que»"
+    },
+    {
+      "structure": "pronom « en »",
+      "example": "Je n'en ai pas.",
+      "en": "\"en\" replacing a quantity",
+      "es": "«en» que sustituye una cantidad"
+    },
+    {
+      "structure": "il faut + infinitif",
+      "example": "Il faut bien s'habiller pour un entretien.",
+      "en": "Necessity",
+      "es": "Necesidad"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Porter\" = to wear; \"mettre\" = to put on; \"s'habiller\" = to get dressed.",
+      "es": "«Porter» = llevar puesto; «mettre» = ponerse; «s'habiller» = vestirse."
+    },
+    {
+      "en": "\"Ça te va bien\" = it suits you. \"Ça va avec ton manteau\" = it goes with your coat.",
+      "es": "«Ça te va bien» = te queda bien. «Ça va avec ton manteau» = combina con tu abrigo."
+    },
+    {
+      "en": "Materials use \"en\": \"en coton\", \"en soie\", \"en cuir\". Patterns: \"à manches courtes\", \"sans manches\".",
+      "es": "Los materiales van con «en»: «en coton», «en soie», «en cuir». Detalles: «à manches courtes», «sans manches»."
+    },
+    {
+      "en": "In France, sneakers are \"des baskets\"; in Quebec, \"des espadrilles\". \"Un pantalon\" is singular (one pair of trousers).",
+      "es": "En Francia las zapatillas son «des baskets»; en Quebec, «des espadrilles». «Un pantalon» va en singular."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "un anorak",
+      "en": "a parka",
+      "es": "un anorak"
+    },
+    {
+      "word": "une veste",
+      "en": "a jacket",
+      "es": "una chaqueta"
+    },
+    {
+      "word": "un manteau",
+      "en": "a coat",
+      "es": "un abrigo"
+    },
+    {
+      "word": "un blouson",
+      "en": "a short jacket",
+      "es": "una cazadora"
+    },
+    {
+      "word": "une chemise",
+      "en": "a shirt",
+      "es": "una camisa"
+    },
+    {
+      "word": "un chemisier",
+      "en": "a blouse",
+      "es": "una blusa"
+    },
+    {
+      "word": "un tee-shirt",
+      "en": "a T-shirt",
+      "es": "una camiseta"
+    },
+    {
+      "word": "un pull",
+      "en": "a sweater",
+      "es": "un jersey / un suéter"
+    },
+    {
+      "word": "un gilet",
+      "en": "a cardigan / a vest",
+      "es": "una chaqueta de punto / un chaleco"
+    },
+    {
+      "word": "un pantalon",
+      "en": "trousers",
+      "es": "un pantalón"
+    },
+    {
+      "word": "un jean",
+      "en": "jeans",
+      "es": "un vaquero / unos jeans"
+    },
+    {
+      "word": "un short",
+      "en": "shorts",
+      "es": "un pantalón corto"
+    },
+    {
+      "word": "une jupe",
+      "en": "a skirt",
+      "es": "una falda"
+    },
+    {
+      "word": "une robe",
+      "en": "a dress",
+      "es": "un vestido"
+    },
+    {
+      "word": "un costume",
+      "en": "a suit",
+      "es": "un traje"
+    },
+    {
+      "word": "une cravate",
+      "en": "a tie",
+      "es": "una corbata"
+    },
+    {
+      "word": "un nœud papillon",
+      "en": "a bow tie",
+      "es": "una pajarita"
+    },
+    {
+      "word": "un pyjama",
+      "en": "pajamas",
+      "es": "un pijama"
+    },
+    {
+      "word": "une robe de chambre",
+      "en": "a bathrobe",
+      "es": "una bata"
+    },
+    {
+      "word": "un maillot de bain",
+      "en": "a swimsuit",
+      "es": "un bañador"
+    },
+    {
+      "word": "des chaussures",
+      "en": "shoes",
+      "es": "zapatos"
+    },
+    {
+      "word": "des bottes",
+      "en": "boots",
+      "es": "botas"
+    },
+    {
+      "word": "des sandales",
+      "en": "sandals",
+      "es": "sandalias"
+    },
+    {
+      "word": "des baskets",
+      "en": "sneakers",
+      "es": "zapatillas deportivas"
+    },
+    {
+      "word": "des pantoufles",
+      "en": "slippers",
+      "es": "pantuflas"
+    },
+    {
+      "word": "des chaussettes",
+      "en": "socks",
+      "es": "calcetines"
+    },
+    {
+      "word": "des gants",
+      "en": "gloves",
+      "es": "guantes"
+    },
+    {
+      "word": "une écharpe",
+      "en": "a scarf",
+      "es": "una bufanda"
+    },
+    {
+      "word": "un bonnet",
+      "en": "a beanie",
+      "es": "un gorro"
+    },
+    {
+      "word": "un chapeau",
+      "en": "a hat",
+      "es": "un sombrero"
+    },
+    {
+      "word": "une casquette",
+      "en": "a cap",
+      "es": "una gorra"
+    },
+    {
+      "word": "une ceinture",
+      "en": "a belt",
+      "es": "un cinturón"
+    },
+    {
+      "word": "un sac à main",
+      "en": "a handbag",
+      "es": "un bolso"
+    },
+    {
+      "word": "un parapluie",
+      "en": "an umbrella",
+      "es": "un paraguas"
+    },
+    {
+      "word": "une poche",
+      "en": "a pocket",
+      "es": "un bolsillo"
+    },
+    {
+      "word": "un bouton",
+      "en": "a button",
+      "es": "un botón"
+    },
+    {
+      "word": "une fermeture éclair",
+      "en": "a zipper",
+      "es": "una cremallera"
+    },
+    {
+      "word": "les manches",
+      "en": "sleeves",
+      "es": "las mangas"
+    },
+    {
+      "word": "le col",
+      "en": "the collar",
+      "es": "el cuello"
+    },
+    {
+      "word": "le coton",
+      "en": "cotton",
+      "es": "el algodón"
+    },
+    {
+      "word": "la laine",
+      "en": "wool",
+      "es": "la lana"
+    },
+    {
+      "word": "la soie",
+      "en": "silk",
+      "es": "la seda"
+    },
+    {
+      "word": "le cuir",
+      "en": "leather",
+      "es": "el cuero"
+    },
+    {
+      "word": "le velours",
+      "en": "velvet",
+      "es": "el terciopelo"
+    },
+    {
+      "word": "coudre",
+      "en": "to sew",
+      "es": "coser"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Ce béret te va bien.",
+      "en": "This beret suits you.",
+      "es": "Esta boina te queda bien."
+    },
+    {
+      "phrase": "Cette ceinture est trop grande pour moi.",
+      "en": "This belt is too big for me.",
+      "es": "Este cinturón me queda demasiado grande."
+    },
+    {
+      "phrase": "Le col et les manches de cette chemise sont sales.",
+      "en": "The collar and sleeves of this shirt are dirty.",
+      "es": "El cuello y las mangas de esta camisa están sucios."
+    },
+    {
+      "phrase": "Sa veste en cuir est superbe.",
+      "en": "His leather jacket is superb.",
+      "es": "Su chaqueta de cuero es preciosa."
+    },
+    {
+      "phrase": "Mets tes baskets pour courir, sinon tu vas avoir mal aux pieds.",
+      "en": "Put on your sneakers to run, otherwise your feet will hurt.",
+      "es": "Ponte las zapatillas para correr, si no te van a doler los pies."
+    },
+    {
+      "phrase": "Mets ton écharpe et tes gants : il fait trop froid !",
+      "en": "Put on your scarf and gloves: it's too cold!",
+      "es": "Ponte la bufanda y los guantes: ¡hace demasiado frío!"
+    },
+    {
+      "phrase": "Mets ton pyjama et va dormir.",
+      "en": "Put on your pajamas and go to sleep.",
+      "es": "Ponte el pijama y vete a dormir."
+    },
+    {
+      "phrase": "Cette jupe se lave à la main.",
+      "en": "This skirt must be hand-washed.",
+      "es": "Esta falda se lava a mano."
+    },
+    {
+      "phrase": "Ton chapeau s'est envolé !",
+      "en": "Your hat blew away!",
+      "es": "¡Se te ha volado el sombrero!"
+    },
+    {
+      "phrase": "Au secours, on m'a volé mon sac à main !",
+      "en": "Help, someone stole my handbag!",
+      "es": "¡Socorro, me han robado el bolso!"
+    },
+    {
+      "phrase": "Je voudrais une robe sans manches.",
+      "en": "I would like a sleeveless dress.",
+      "es": "Quisiera un vestido sin mangas."
+    },
+    {
+      "phrase": "Les couleurs de ton gilet vont bien avec ton manteau.",
+      "en": "The colors of your cardigan go well with your coat.",
+      "es": "Los colores de tu chaqueta de punto combinan bien con tu abrigo."
+    },
+    {
+      "phrase": "Tu as perdu un bouton. Tu veux que je le couse ?",
+      "en": "You lost a button. Do you want me to sew it on?",
+      "es": "Has perdido un botón. ¿Quieres que te lo cosa?"
+    },
+    {
+      "phrase": "Tu peux me prêter une serviette ? — Je n'en ai pas, mais je peux te prêter une robe de chambre.",
+      "en": "Can you lend me a towel? — I don't have one, but I can lend you a bathrobe.",
+      "es": "¿Me prestas una toalla? — No tengo, pero puedo prestarte una bata."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "How do you say \"This jacket suits you\"?",
+        "es": "¿Cómo se dice «Esta chaqueta te queda bien»?"
+      },
+      "options": [
+        "Cette veste te va bien.",
+        "Cette veste est bien à toi.",
+        "Cette veste te porte bien.",
+        "Tu vas bien à cette veste."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Aller à quelqu'un\" = to suit someone.",
+        "es": "«Aller à quelqu'un» = quedarle bien a alguien."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"une veste ___ cuir\"",
+        "es": "Completa: «une veste ___ cuir»"
+      },
+      "options": [
+        "en",
+        "de la",
+        "avec",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Materials: en cuir, en laine, en soie.",
+        "es": "Materiales: en cuir, en laine, en soie."
+      }
+    },
+    {
+      "question": {
+        "en": "What do you wear when it rains?",
+        "es": "¿Qué te pones cuando llueve?"
+      },
+      "options": [
+        "un imperméable",
+        "un maillot de bain",
+        "des sandales",
+        "une robe de chambre"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Also: prendre un parapluie.",
+        "es": "También: prendre un parapluie."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Mets ton manteau, ___ tu vas avoir froid.\"",
+        "es": "Completa: «Mets ton manteau, ___ tu vas avoir froid.»"
+      },
+      "options": [
+        "sinon",
+        "si",
+        "mais",
+        "donc"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Sinon\" = otherwise.",
+        "es": "«Sinon» = si no / de lo contrario."
+      }
+    },
+    {
+      "question": {
+        "en": "Which past form is correct?",
+        "es": "¿Qué forma del pasado es correcta?"
+      },
+      "options": [
+        "Mon chapeau s'est envolé.",
+        "Mon chapeau a envolé.",
+        "Mon chapeau s'a envolé.",
+        "Mon chapeau est envolé lui."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Reflexive verbs use \"être\".",
+        "es": "Los verbos pronominales usan «être»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Tu veux que je le ___ ?\" (coudre)",
+        "es": "Completa: «Tu veux que je le ___ ?» (coudre)"
+      },
+      "options": [
+        "couse",
+        "couds",
+        "coudrai",
+        "cousais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Vouloir que\" + subjunctive: coudre → que je couse.",
+        "es": "«Vouloir que» + subjuntivo: coudre → que je couse."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Tu as des gants ?\" — \"Non, je n'___ ai pas.\"",
+        "es": "«Tu as des gants ?» — «Non, je n'___ ai pas.»"
+      },
+      "options": [
+        "en",
+        "les",
+        "y",
+        "leur"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"En\" replaces \"des gants\".",
+        "es": "«En» sustituye a «des gants»."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the difference between \"mettre\" and \"porter\"?",
+        "es": "¿Qué diferencia hay entre «mettre» y «porter»?"
+      },
+      "options": {
+        "en": [
+          "mettre = to put on, porter = to wear",
+          "mettre = to wear, porter = to buy",
+          "They are the same",
+          "porter = to put on, mettre = to take off"
+        ],
+        "es": [
+          "mettre = ponerse, porter = llevar puesto",
+          "mettre = llevar, porter = comprar",
+          "Son lo mismo",
+          "porter = ponerse, mettre = quitarse"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Je mets mon manteau\" (action) / \"Je porte un manteau\" (state).",
+        "es": "«Je mets mon manteau» (acción) / «Je porte un manteau» (estado)."
+      }
+    }
+  ],
+  "story": {
+    "title": "La valise pour Québec",
+    "text": "Théo est étudiant à Marseille. En janvier, il va passer un semestre à Québec, et il prépare sa valise. Sa mère l'aide : « Là-bas, il fait moins vingt en hiver ! Il faut que tu prennes des vêtements chauds. » Théo met dans la valise deux pulls en laine, un anorak, un bonnet, une écharpe et des gants. « Et tes bottes ? Sinon, tu vas avoir froid aux pieds ! » Pour aller à l'université, il préfère être simple : un jean, un tee-shirt et des baskets. Mais pour les présentations, il faut bien s'habiller, alors il prend aussi une chemise blanche et une veste. « Cette veste te va très bien », dit sa mère. Soudain, Théo remarque qu'il a perdu un bouton. « Tu veux que je le couse ? » demande sa mère. « Oui, merci ! » Le soir, la valise ne ferme plus. « Je crois qu'il y a trop de vêtements… », dit Théo. Sa mère rit : « Mieux vaut avoir trop chaud que trop froid ! »",
+    "en": "Théo is a student in Marseille. In January, he is going to spend a semester in Quebec City, and he is packing his suitcase. His mother helps him: “It's minus twenty there in winter! You need to take warm clothes.” Théo puts two wool sweaters, a parka, a beanie, a scarf and gloves in the suitcase. “And your boots? Otherwise your feet will be cold!” To go to university, he prefers to keep it simple: jeans, a T-shirt and sneakers. But for presentations, you have to dress well, so he also takes a white shirt and a jacket. “That jacket really suits you,” says his mother. Suddenly, Théo notices he has lost a button. “Do you want me to sew it on?” his mother asks. “Yes, thanks!” In the evening, the suitcase won't close anymore. “I think there are too many clothes…,” says Théo. His mother laughs: “Better too warm than too cold!”",
+    "es": "Théo es estudiante en Marsella. En enero va a pasar un semestre en Quebec y está haciendo la maleta. Su madre lo ayuda: «¡Allí hace veinte grados bajo cero en invierno! Tienes que llevar ropa de abrigo.» Théo mete en la maleta dos jerséis de lana, un anorak, un gorro, una bufanda y unos guantes. «¿Y tus botas? ¡Si no, se te van a enfriar los pies!» Para ir a la universidad, prefiere ir sencillo: un vaquero, una camiseta y zapatillas. Pero para las presentaciones hay que vestirse bien, así que también lleva una camisa blanca y una chaqueta. «Esa chaqueta te queda muy bien», dice su madre. De repente, Théo se da cuenta de que ha perdido un botón. «¿Quieres que te lo cosa?», pregunta su madre. «¡Sí, gracias!» Por la noche, la maleta ya no cierra. «Creo que hay demasiada ropa…», dice Théo. Su madre se ríe: «¡Más vale tener demasiado calor que demasiado frío!»",
+    "highlighted_words": [
+      "Il faut que tu prennes",
+      "pulls en laine",
+      "anorak",
+      "bonnet",
+      "écharpe",
+      "gants",
+      "Sinon",
+      "il faut bien s'habiller",
+      "te va très bien",
+      "Tu veux que je le couse"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Ce chapeau te va bien",
+      "en": "This hat suits you",
+      "es": "Este sombrero te queda bien"
+    },
+    {
+      "sentence": "Mets ton écharpe et tes gants",
+      "en": "Put on your scarf and gloves",
+      "es": "Ponte la bufanda y los guantes"
+    },
+    {
+      "sentence": "J'ai besoin d'un maillot de bain",
+      "en": "I need a swimsuit",
+      "es": "Necesito un bañador"
+    },
+    {
+      "sentence": "Sa veste est en cuir",
+      "en": "His jacket is made of leather",
+      "es": "Su chaqueta es de cuero"
+    },
+    {
+      "sentence": "Mon chapeau s'est envolé",
+      "en": "My hat blew away",
+      "es": "Se me voló el sombrero"
+    },
+    {
+      "sentence": "Tu veux que je le couse",
+      "en": "Do you want me to sew it",
+      "es": "¿Quieres que te lo cosa?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je porte une robe rouge",
+      "en": "I am wearing a red dress",
+      "es": "Llevo un vestido rojo"
+    },
+    {
+      "answer": "Mets ton manteau",
+      "en": "Put on your coat",
+      "es": "Ponte el abrigo"
+    },
+    {
+      "answer": "Cette veste ne me va pas",
+      "en": "This jacket doesn't suit me",
+      "es": "Esta chaqueta no me queda bien"
+    },
+    {
+      "answer": "Une chemise en coton",
+      "en": "A cotton shirt",
+      "es": "Una camisa de algodón"
+    },
+    {
+      "answer": "Prends le parapluie, il pleut",
+      "en": "Take the umbrella, it's raining",
+      "es": "Llévate el paraguas, está lloviendo"
+    },
+    {
+      "answer": "Je n'ai pas de poche",
+      "en": "I don't have a pocket",
+      "es": "No tengo bolsillo"
+    }
+  ]
+}

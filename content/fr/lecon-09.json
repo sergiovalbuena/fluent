@@ -1,0 +1,572 @@
+{
+  "lesson": 9,
+  "slug": "lecon-09",
+  "icon": "💬",
+  "title": {
+    "fr": "Expressions courantes (1)",
+    "es": "Expresiones habituales (1)",
+    "en": "Everyday expressions (1)"
+  },
+  "source": {
+    "audio": "Lecons 09.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "mots interrogatifs",
+      "example": "Qui ? Quoi ? Où ? Quand ? Comment ? Pourquoi ?",
+      "en": "Question words",
+      "es": "Palabras interrogativas"
+    },
+    {
+      "structure": "impératif (consignes)",
+      "example": "Fermez la porte. Arrêtez-vous tout de suite !",
+      "en": "Imperative for instructions",
+      "es": "Imperativo para instrucciones"
+    },
+    {
+      "structure": "ne pas + infinitif (panneaux)",
+      "example": "Ne pas fumer. Ne pas entrer.",
+      "en": "Negative infinitive on signs",
+      "es": "Infinitivo negativo en carteles"
+    },
+    {
+      "structure": "conditionnel de politesse",
+      "example": "Pourriez-vous me dire où se trouve la gare ?",
+      "en": "Polite conditional",
+      "es": "Condicional de cortesía"
+    },
+    {
+      "structure": "il vaut mieux que + subjonctif",
+      "example": "Il vaut mieux que vous demandiez à quelqu'un d'autre.",
+      "en": "\"It's better that\" + subjunctive",
+      "es": "«Es mejor que» + subjuntivo"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Nous nous reverrons probablement.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "pronom « le » (COD)",
+      "example": "Tu parles français ? — Oui, je le parle un peu.",
+      "en": "Direct object pronoun",
+      "es": "Pronombre de complemento directo"
+    },
+    {
+      "structure": "avoir raison / avoir tort",
+      "example": "Peut-être avez-vous raison et c'est moi qui ai tort.",
+      "en": "\"To be right / wrong\" with avoir",
+      "es": "«Tener razón / estar equivocado» con avoir"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Signs often use the infinitive: \"Ne pas fumer\", \"Ne pas toucher\", \"Tirer / Pousser\" (pull / push).",
+      "es": "Los carteles suelen usar el infinitivo: «Ne pas fumer», «Ne pas toucher», «Tirer / Pousser» (tirar / empujar)."
+    },
+    {
+      "en": "\"Qu'est-ce que ça veut dire ?\" = What does it mean? \"Qu'est-ce que tu veux dire ?\" = What do you mean?",
+      "es": "«Qu'est-ce que ça veut dire ?» = ¿Qué significa eso? «Qu'est-ce que tu veux dire ?» = ¿Qué quieres decir?"
+    },
+    {
+      "en": "After \"peut-être\" at the start of a sentence, formal French inverts: \"Peut-être avez-vous raison.\" Everyday: \"Peut-être que vous avez raison.\"",
+      "es": "Tras «peut-être» al inicio de la frase, el francés formal invierte: «Peut-être avez-vous raison.» En el día a día: «Peut-être que vous avez raison.»"
+    },
+    {
+      "en": "\"Ce ne sont pas vos oignons !\" = It's none of your business! (very familiar, a bit rude).",
+      "es": "«Ce ne sont pas vos oignons !» = ¡No es asunto suyo! (muy coloquial, algo grosero)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "qui",
+      "en": "who",
+      "es": "quién"
+    },
+    {
+      "word": "quoi",
+      "en": "what",
+      "es": "qué"
+    },
+    {
+      "word": "où",
+      "en": "where",
+      "es": "dónde"
+    },
+    {
+      "word": "quand",
+      "en": "when",
+      "es": "cuándo"
+    },
+    {
+      "word": "comment",
+      "en": "how",
+      "es": "cómo"
+    },
+    {
+      "word": "pourquoi",
+      "en": "why",
+      "es": "por qué"
+    },
+    {
+      "word": "l'entrée",
+      "en": "the entrance",
+      "es": "la entrada"
+    },
+    {
+      "word": "la sortie",
+      "en": "the exit",
+      "es": "la salida"
+    },
+    {
+      "word": "attention",
+      "en": "watch out / careful",
+      "es": "cuidado"
+    },
+    {
+      "word": "interdit / interdite",
+      "en": "forbidden",
+      "es": "prohibido / prohibida"
+    },
+    {
+      "word": "l'arrêt",
+      "en": "the stop",
+      "es": "la parada"
+    },
+    {
+      "word": "permettre",
+      "en": "to allow",
+      "es": "permitir"
+    },
+    {
+      "word": "pouvoir",
+      "en": "to be able to / can",
+      "es": "poder"
+    },
+    {
+      "word": "savoir",
+      "en": "to know (a fact)",
+      "es": "saber"
+    },
+    {
+      "word": "connaître",
+      "en": "to know (a person, a place)",
+      "es": "conocer"
+    },
+    {
+      "word": "fermer",
+      "en": "to close",
+      "es": "cerrar"
+    },
+    {
+      "word": "ouvrir",
+      "en": "to open",
+      "es": "abrir"
+    },
+    {
+      "word": "entrer",
+      "en": "to enter",
+      "es": "entrar"
+    },
+    {
+      "word": "traverser",
+      "en": "to cross",
+      "es": "cruzar"
+    },
+    {
+      "word": "pousser",
+      "en": "to push",
+      "es": "empujar"
+    },
+    {
+      "word": "tirer",
+      "en": "to pull",
+      "es": "tirar"
+    },
+    {
+      "word": "écouter",
+      "en": "to listen",
+      "es": "escuchar"
+    },
+    {
+      "word": "prononcer",
+      "en": "to pronounce",
+      "es": "pronunciar"
+    },
+    {
+      "word": "signifier",
+      "en": "to mean",
+      "es": "significar"
+    },
+    {
+      "word": "écrire",
+      "en": "to write",
+      "es": "escribir"
+    },
+    {
+      "word": "la langue",
+      "en": "the language / the tongue",
+      "es": "el idioma / la lengua"
+    },
+    {
+      "word": "libre",
+      "en": "free / vacant",
+      "es": "libre"
+    },
+    {
+      "word": "sûr / sûre",
+      "en": "sure",
+      "es": "seguro / segura"
+    },
+    {
+      "word": "vrai / vraie",
+      "en": "true",
+      "es": "verdadero"
+    },
+    {
+      "word": "faux / fausse",
+      "en": "false / wrong",
+      "es": "falso / falsa"
+    },
+    {
+      "word": "évidemment",
+      "en": "obviously",
+      "es": "evidentemente"
+    },
+    {
+      "word": "peut-être",
+      "en": "maybe",
+      "es": "quizás"
+    },
+    {
+      "word": "probablement",
+      "en": "probably",
+      "es": "probablemente"
+    },
+    {
+      "word": "complètement",
+      "en": "completely",
+      "es": "completamente"
+    },
+    {
+      "word": "lentement",
+      "en": "slowly",
+      "es": "despacio"
+    },
+    {
+      "word": "bienvenue",
+      "en": "welcome",
+      "es": "bienvenido"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Où est l'entrée ? Et la sortie ?",
+      "en": "Where is the entrance? And the exit?",
+      "es": "¿Dónde está la entrada? ¿Y la salida?"
+    },
+    {
+      "phrase": "Stationnement interdit. — Où puis-je me garer, alors ?",
+      "en": "No parking. — Where can I park, then?",
+      "es": "Prohibido aparcar. — ¿Dónde puedo aparcar, entonces?"
+    },
+    {
+      "phrase": "Fermez la porte et ouvrez la fenêtre, s'il vous plaît.",
+      "en": "Close the door and open the window, please.",
+      "es": "Cierre la puerta y abra la ventana, por favor."
+    },
+    {
+      "phrase": "Parlez-vous italien ? — Oui, je le parle un peu.",
+      "en": "Do you speak Italian? — Yes, I speak it a little.",
+      "es": "¿Habla usted italiano? — Sí, lo hablo un poco."
+    },
+    {
+      "phrase": "Tu me comprends maintenant ? — Oui, je te comprends.",
+      "en": "Do you understand me now? — Yes, I understand you.",
+      "es": "¿Me entiendes ahora? — Sí, te entiendo."
+    },
+    {
+      "phrase": "Parle plus lentement, s'il te plaît.",
+      "en": "Speak more slowly, please.",
+      "es": "Habla más despacio, por favor."
+    },
+    {
+      "phrase": "Où est l'arrêt de bus le plus proche ? — Au coin de la rue.",
+      "en": "Where is the nearest bus stop? — At the corner of the street.",
+      "es": "¿Dónde está la parada de autobús más cercana? — En la esquina."
+    },
+    {
+      "phrase": "Pourriez-vous me dire où se trouve la gare ?",
+      "en": "Could you tell me where the station is?",
+      "es": "¿Podría decirme dónde está la estación?"
+    },
+    {
+      "phrase": "Peut-être avez-vous raison et c'est moi qui ai tort.",
+      "en": "Maybe you are right and I'm the one who is wrong.",
+      "es": "Quizás usted tenga razón y sea yo quien se equivoca."
+    },
+    {
+      "phrase": "Nous nous reverrons probablement. Au revoir !",
+      "en": "We will probably see each other again. Goodbye!",
+      "es": "Probablemente nos volveremos a ver. ¡Adiós!"
+    },
+    {
+      "phrase": "Comment dit-on « merci » en allemand ? Comment ça se prononce ?",
+      "en": "How do you say \"thank you\" in German? How do you pronounce it?",
+      "es": "¿Cómo se dice «gracias» en alemán? ¿Cómo se pronuncia?"
+    },
+    {
+      "phrase": "Qu'est-ce que ça veut dire ? — Ça veut dire « sortie ».",
+      "en": "What does it mean? — It means \"exit\".",
+      "es": "¿Qué significa eso? — Significa «salida»."
+    },
+    {
+      "phrase": "Attention, peinture fraîche ! Ne pas toucher.",
+      "en": "Careful, wet paint! Do not touch.",
+      "es": "¡Cuidado, recién pintado! No tocar."
+    },
+    {
+      "phrase": "Arrêtez-vous tout de suite !",
+      "en": "Stop right now!",
+      "es": "¡Deténgase ahora mismo!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Which word asks \"why\"?",
+        "es": "¿Qué palabra pregunta «por qué»?"
+      },
+      "options": [
+        "pourquoi",
+        "pour quoi",
+        "quoi",
+        "comment"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pourquoi\" = why; the answer often starts with \"parce que\".",
+        "es": "«Pourquoi» = por qué; la respuesta suele empezar con «parce que»."
+      }
+    },
+    {
+      "question": {
+        "en": "A sign says \"Ne pas fumer\". What does it mean?",
+        "es": "Un cartel dice «Ne pas fumer». ¿Qué significa?"
+      },
+      "options": {
+        "en": [
+          "No smoking",
+          "Smoking area",
+          "Do not eat",
+          "Do not enter"
+        ],
+        "es": [
+          "Prohibido fumar",
+          "Zona de fumadores",
+          "Prohibido comer",
+          "Prohibido entrar"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Signs use \"ne pas\" + infinitive.",
+        "es": "Los carteles usan «ne pas» + infinitivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Tu parles anglais ?\" — \"Oui, je ___ parle bien.\"",
+        "es": "«Tu parles anglais ?» — «Oui, je ___ parle bien.»"
+      },
+      "options": [
+        "le",
+        "la",
+        "lui",
+        "en"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Le\" replaces \"l'anglais\" (direct object, masculine).",
+        "es": "«Le» sustituye a «l'anglais» (complemento directo, masculino)."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is the most polite way to ask for directions?",
+        "es": "¿Cuál es la forma más cortés de pedir indicaciones?"
+      },
+      "options": [
+        "Pourriez-vous me dire où se trouve la gare ?",
+        "Où est la gare ?",
+        "Dis-moi où est la gare.",
+        "La gare, où ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The conditional \"pourriez-vous\" is very polite.",
+        "es": "El condicional «pourriez-vous» es muy cortés."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il vaut mieux que vous ___ à quelqu'un d'autre.\"",
+        "es": "Completa: «Il vaut mieux que vous ___ à quelqu'un d'autre.»"
+      },
+      "options": [
+        "demandiez",
+        "demandez",
+        "demanderez",
+        "avez demandé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il vaut mieux que\" + subjunctive.",
+        "es": "«Il vaut mieux que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Savoir\" or \"connaître\"? \"Je ne ___ pas cette ville.\"",
+        "es": "¿«Savoir» o «connaître»? «Je ne ___ pas cette ville.»"
+      },
+      "options": [
+        "connais",
+        "sais",
+        "savoir",
+        "connaître"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Connaître\" for people and places; \"savoir\" for facts and skills.",
+        "es": "«Connaître» para personas y lugares; «savoir» para datos y habilidades."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"avoir tort\" mean?",
+        "es": "¿Qué significa «avoir tort»?"
+      },
+      "options": {
+        "en": [
+          "to be wrong",
+          "to be right",
+          "to be hurt",
+          "to be late"
+        ],
+        "es": [
+          "estar equivocado",
+          "tener razón",
+          "estar herido",
+          "llegar tarde"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Avoir raison = to be right; avoir tort = to be wrong.",
+        "es": "Avoir raison = tener razón; avoir tort = estar equivocado."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you ask someone to speak more slowly (tu)?",
+        "es": "¿Cómo pides a alguien que hable más despacio (tu)?"
+      },
+      "options": [
+        "Parle plus lentement, s'il te plaît.",
+        "Parlez plus vite.",
+        "Tu parles lentement.",
+        "Je parle lentement, s'il te plaît."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imperative of \"parler\" with tu: \"parle\" (no -s).",
+        "es": "Imperativo de «parler» con tu: «parle» (sin -s)."
+      }
+    }
+  ],
+  "story": {
+    "title": "Au guichet de la gare",
+    "text": "Ana est espagnole. Elle arrive à la gare de Lille et elle va au guichet. « Bonjour, monsieur. Je voudrais un billet pour Bruges, s'il vous plaît. » « Quoi ? Parlez plus fort ! » « Pardon. Un billet pour Bruges. Pourriez-vous parler plus lentement ? Je ne parle pas très bien français. » « Ce n'est pas mon problème, madame. Il vaut mieux que vous achetiez votre billet sur la machine. » « Mais la machine est en panne ! » « Alors, attendez. Je suis très occupé. » Un homme derrière Ana dit : « Excusez-moi, je peux vous aider ? Je connais bien cette gare. » « Oh, merci beaucoup ! Vous êtes très aimable. » « Avec plaisir. Venez, il y a un autre guichet à côté de la sortie. » Ana sourit. « Peut-être avez-vous raison : tout le monde n'est pas désagréable ! »",
+    "en": "Ana is Spanish. She arrives at Lille station and goes to the ticket office. “Hello, sir. I would like a ticket to Bruges, please.” “What? Speak louder!” “Sorry. A ticket to Bruges. Could you speak more slowly? I don't speak French very well.” “That's not my problem, madam. You had better buy your ticket from the machine.” “But the machine is out of order!” “Then wait. I'm very busy.” A man behind Ana says: “Excuse me, can I help you? I know this station well.” “Oh, thank you very much! You are very kind.” “With pleasure. Come, there is another ticket office next to the exit.” Ana smiles. “Maybe you're right: not everyone is unpleasant!”",
+    "es": "Ana es española. Llega a la estación de Lille y va a la taquilla. «Buenos días, señor. Quisiera un billete para Brujas, por favor.» «¿Qué? ¡Hable más fuerte!» «Perdón. Un billete para Brujas. ¿Podría hablar más despacio? No hablo muy bien francés.» «Ese no es mi problema, señora. Es mejor que compre su billete en la máquina.» «¡Pero la máquina está averiada!» «Entonces espere. Estoy muy ocupado.» Un hombre detrás de Ana dice: «Disculpe, ¿puedo ayudarla? Conozco bien esta estación.» «¡Oh, muchas gracias! Es usted muy amable.» «Con mucho gusto. Venga, hay otra taquilla al lado de la salida.» Ana sonríe. «Quizás tenga usted razón: ¡no todo el mundo es desagradable!»",
+    "highlighted_words": [
+      "Quoi",
+      "Parlez plus fort",
+      "Pourriez-vous",
+      "lentement",
+      "Il vaut mieux que",
+      "achetiez",
+      "attendez",
+      "connais",
+      "sortie",
+      "raison"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Où est la sortie s'il vous plaît",
+      "en": "Where is the exit please",
+      "es": "¿Dónde está la salida, por favor?"
+    },
+    {
+      "sentence": "Fermez la porte",
+      "en": "Close the door",
+      "es": "Cierre la puerta"
+    },
+    {
+      "sentence": "Je ne comprends pas ce mot",
+      "en": "I don't understand this word",
+      "es": "No entiendo esta palabra"
+    },
+    {
+      "sentence": "Pourriez-vous parler plus lentement",
+      "en": "Could you speak more slowly",
+      "es": "¿Podría hablar más despacio?"
+    },
+    {
+      "sentence": "Il vaut mieux que tu partes",
+      "en": "It's better that you leave",
+      "es": "Es mejor que te vayas"
+    },
+    {
+      "sentence": "Vous avez raison",
+      "en": "You are right",
+      "es": "Tiene razón"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Pourquoi pas ?",
+      "en": "Why not?",
+      "es": "¿Por qué no?"
+    },
+    {
+      "answer": "Où est l'entrée ?",
+      "en": "Where is the entrance?",
+      "es": "¿Dónde está la entrada?"
+    },
+    {
+      "answer": "Qu'est-ce que ça veut dire ?",
+      "en": "What does it mean?",
+      "es": "¿Qué significa eso?"
+    },
+    {
+      "answer": "Je ne sais pas",
+      "en": "I don't know",
+      "es": "No lo sé"
+    },
+    {
+      "answer": "Ne pas fumer",
+      "en": "No smoking",
+      "es": "Prohibido fumar"
+    },
+    {
+      "answer": "Peux-tu m'aider ?",
+      "en": "Can you help me?",
+      "es": "¿Puedes ayudarme?"
+    }
+  ]
+}

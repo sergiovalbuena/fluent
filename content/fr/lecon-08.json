@@ -1,0 +1,623 @@
+{
+  "lesson": 8,
+  "slug": "lecon-08",
+  "icon": "🌍",
+  "title": {
+    "fr": "Les pays et les nationalités",
+    "es": "Los países y las nacionalidades",
+    "en": "Countries and nationalities"
+  },
+  "source": {
+    "audio": "Lecons 08.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "genre des pays",
+      "example": "la France, le Japon, les États-Unis",
+      "en": "Gender of countries",
+      "es": "Género de los países"
+    },
+    {
+      "structure": "prépositions de lieu",
+      "example": "en France, au Japon, aux États-Unis, à Paris",
+      "en": "Prepositions: in / to countries and cities",
+      "es": "Preposiciones: en / a países y ciudades"
+    },
+    {
+      "structure": "venir de / d' / du / des",
+      "example": "Je viens d'Italie. / Il vient du Pérou.",
+      "en": "Saying where you come from",
+      "es": "Decir de dónde vienes"
+    },
+    {
+      "structure": "accord des nationalités",
+      "example": "Il est mexicain. / Elle est mexicaine.",
+      "en": "Nationality agreement",
+      "es": "Concordancia de las nacionalidades"
+    },
+    {
+      "structure": "superlatif",
+      "example": "Le Brésil est le plus grand pays d'Amérique du Sud.",
+      "en": "Superlatives with \"de\"",
+      "es": "Superlativo con «de»"
+    },
+    {
+      "structure": "impératif (nous)",
+      "example": "Allons en Chine ! Parcourons le pays !",
+      "en": "Imperative \"let's\"",
+      "es": "Imperativo de 1.ª persona plural"
+    },
+    {
+      "structure": "passé composé / imparfait",
+      "example": "As-tu visité l'Irlande ? / Carlos Gardel était argentin.",
+      "en": "Past tenses",
+      "es": "Tiempos del pasado"
+    },
+    {
+      "structure": "si + présent, présent",
+      "example": "Si nous regardons autour du monde, nous pouvons trouver…",
+      "en": "Real condition (si + present)",
+      "es": "Condición real (si + presente)"
+    },
+    {
+      "structure": "pour que + subjonctif",
+      "example": "Les trains relient les pays pour que le voyage soit plus facile.",
+      "en": "\"so that\" + subjunctive",
+      "es": "«para que» + subjuntivo"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Countries ending in -e are usually feminine (la France, l'Espagne) — exceptions: le Mexique, le Cambodge.",
+      "es": "Los países terminados en -e suelen ser femeninos (la France, l'Espagne). Excepciones: le Mexique, le Cambodge."
+    },
+    {
+      "en": "In / to: \"en\" + feminine or vowel (en France, en Iran), \"au\" + masculine (au Japon), \"aux\" + plural (aux États-Unis), \"à\" + city (à Rome).",
+      "es": "En / a: «en» + femenino o vocal (en France, en Iran), «au» + masculino (au Japon), «aux» + plural (aux États-Unis), «à» + ciudad (à Rome)."
+    },
+    {
+      "en": "Nationality adjectives are lowercase (il est français), but the people are capitalized (les Français).",
+      "es": "Los adjetivos de nacionalidad van en minúscula (il est français), pero los habitantes en mayúscula (les Français)."
+    },
+    {
+      "en": "Languages are masculine and lowercase: \"le portugais\", \"l'arabe\". After \"parler\", the article is optional: \"Il parle (le) grec\".",
+      "es": "Los idiomas son masculinos y van en minúscula: «le portugais», «l'arabe». Después de «parler», el artículo es opcional: «Il parle (le) grec»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'Argentine",
+      "en": "Argentina",
+      "es": "Argentina"
+    },
+    {
+      "word": "l'Allemagne",
+      "en": "Germany",
+      "es": "Alemania"
+    },
+    {
+      "word": "l'Angleterre",
+      "en": "England",
+      "es": "Inglaterra"
+    },
+    {
+      "word": "l'Autriche",
+      "en": "Austria",
+      "es": "Austria"
+    },
+    {
+      "word": "la Belgique",
+      "en": "Belgium",
+      "es": "Bélgica"
+    },
+    {
+      "word": "le Brésil",
+      "en": "Brazil",
+      "es": "Brasil"
+    },
+    {
+      "word": "le Canada",
+      "en": "Canada",
+      "es": "Canadá"
+    },
+    {
+      "word": "le Chili",
+      "en": "Chile",
+      "es": "Chile"
+    },
+    {
+      "word": "la Chine",
+      "en": "China",
+      "es": "China"
+    },
+    {
+      "word": "la Colombie",
+      "en": "Colombia",
+      "es": "Colombia"
+    },
+    {
+      "word": "l'Écosse",
+      "en": "Scotland",
+      "es": "Escocia"
+    },
+    {
+      "word": "l'Équateur",
+      "en": "Ecuador",
+      "es": "Ecuador"
+    },
+    {
+      "word": "l'Espagne",
+      "en": "Spain",
+      "es": "España"
+    },
+    {
+      "word": "les États-Unis",
+      "en": "the United States",
+      "es": "Estados Unidos"
+    },
+    {
+      "word": "la Grèce",
+      "en": "Greece",
+      "es": "Grecia"
+    },
+    {
+      "word": "l'Inde",
+      "en": "India",
+      "es": "India"
+    },
+    {
+      "word": "l'Irlande",
+      "en": "Ireland",
+      "es": "Irlanda"
+    },
+    {
+      "word": "l'Italie",
+      "en": "Italy",
+      "es": "Italia"
+    },
+    {
+      "word": "le Japon",
+      "en": "Japan",
+      "es": "Japón"
+    },
+    {
+      "word": "le Mexique",
+      "en": "Mexico",
+      "es": "México"
+    },
+    {
+      "word": "les Pays-Bas",
+      "en": "the Netherlands",
+      "es": "los Países Bajos"
+    },
+    {
+      "word": "le Pérou",
+      "en": "Peru",
+      "es": "Perú"
+    },
+    {
+      "word": "le Portugal",
+      "en": "Portugal",
+      "es": "Portugal"
+    },
+    {
+      "word": "la Russie",
+      "en": "Russia",
+      "es": "Rusia"
+    },
+    {
+      "word": "la Suède",
+      "en": "Sweden",
+      "es": "Suecia"
+    },
+    {
+      "word": "la Suisse",
+      "en": "Switzerland",
+      "es": "Suiza"
+    },
+    {
+      "word": "la Turquie",
+      "en": "Turkey",
+      "es": "Turquía"
+    },
+    {
+      "word": "l'Europe",
+      "en": "Europe",
+      "es": "Europa"
+    },
+    {
+      "word": "l'Asie",
+      "en": "Asia",
+      "es": "Asia"
+    },
+    {
+      "word": "l'Afrique",
+      "en": "Africa",
+      "es": "África"
+    },
+    {
+      "word": "l'Amérique du Sud",
+      "en": "South America",
+      "es": "América del Sur"
+    },
+    {
+      "word": "Londres",
+      "en": "London",
+      "es": "Londres"
+    },
+    {
+      "word": "Venise",
+      "en": "Venice",
+      "es": "Venecia"
+    },
+    {
+      "word": "américain / américaine",
+      "en": "American",
+      "es": "estadounidense"
+    },
+    {
+      "word": "anglais / anglaise",
+      "en": "English",
+      "es": "inglés / inglesa"
+    },
+    {
+      "word": "allemand / allemande",
+      "en": "German",
+      "es": "alemán / alemana"
+    },
+    {
+      "word": "brésilien / brésilienne",
+      "en": "Brazilian",
+      "es": "brasileño / brasileña"
+    },
+    {
+      "word": "chinois / chinoise",
+      "en": "Chinese",
+      "es": "chino / china"
+    },
+    {
+      "word": "colombien / colombienne",
+      "en": "Colombian",
+      "es": "colombiano / colombiana"
+    },
+    {
+      "word": "espagnol / espagnole",
+      "en": "Spanish",
+      "es": "español / española"
+    },
+    {
+      "word": "français / française",
+      "en": "French",
+      "es": "francés / francesa"
+    },
+    {
+      "word": "grec / grecque",
+      "en": "Greek",
+      "es": "griego / griega"
+    },
+    {
+      "word": "italien / italienne",
+      "en": "Italian",
+      "es": "italiano / italiana"
+    },
+    {
+      "word": "japonais / japonaise",
+      "en": "Japanese",
+      "es": "japonés / japonesa"
+    },
+    {
+      "word": "mexicain / mexicaine",
+      "en": "Mexican",
+      "es": "mexicano / mexicana"
+    },
+    {
+      "word": "russe",
+      "en": "Russian",
+      "es": "ruso / rusa"
+    },
+    {
+      "word": "suisse",
+      "en": "Swiss",
+      "es": "suizo / suiza"
+    },
+    {
+      "word": "turc / turque",
+      "en": "Turkish",
+      "es": "turco / turca"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Je suis colombienne, et toi ? — Je suis irlandais.",
+      "en": "I'm Colombian, and you? — I'm Irish.",
+      "es": "Soy colombiana, ¿y tú? — Soy irlandés."
+    },
+    {
+      "phrase": "D'où viens-tu ? — Je viens d'Italie.",
+      "en": "Where are you from? — I come from Italy.",
+      "es": "¿De dónde vienes? — Vengo de Italia."
+    },
+    {
+      "phrase": "Où habites-tu ? — J'habite au Japon.",
+      "en": "Where do you live? — I live in Japan.",
+      "es": "¿Dónde vives? — Vivo en Japón."
+    },
+    {
+      "phrase": "Tu es d'Espagne ? — Non, je suis du Pérou.",
+      "en": "Are you from Spain? — No, I am from Peru.",
+      "es": "¿Eres de España? — No, soy de Perú."
+    },
+    {
+      "phrase": "L'Espagne est en Europe.",
+      "en": "Spain is in Europe.",
+      "es": "España está en Europa."
+    },
+    {
+      "phrase": "Le Brésil est le plus grand pays d'Amérique du Sud.",
+      "en": "Brazil is the largest country in South America.",
+      "es": "Brasil es el país más grande de América del Sur."
+    },
+    {
+      "phrase": "L'Autriche est à côté de la Suisse.",
+      "en": "Austria is next to Switzerland.",
+      "es": "Austria está al lado de Suiza."
+    },
+    {
+      "phrase": "Mes amis sont de Hong Kong.",
+      "en": "My friends are from Hong Kong.",
+      "es": "Mis amigos son de Hong Kong."
+    },
+    {
+      "phrase": "Je vais voyager à travers l'Europe.",
+      "en": "I am going to travel across Europe.",
+      "es": "Voy a viajar por Europa."
+    },
+    {
+      "phrase": "As-tu visité l'Irlande ? — Oui, l'année dernière.",
+      "en": "Have you visited Ireland? — Yes, last year.",
+      "es": "¿Has visitado Irlanda? — Sí, el año pasado."
+    },
+    {
+      "phrase": "Il est londonien, n'est-ce pas ? — Oui, je crois.",
+      "en": "He's from London, isn't he? — Yes, I think so.",
+      "es": "Es londinense, ¿verdad? — Sí, creo que sí."
+    },
+    {
+      "phrase": "Ma grand-mère était grecque.",
+      "en": "My grandmother was Greek.",
+      "es": "Mi abuela era griega."
+    },
+    {
+      "phrase": "Allons au Portugal cet été !",
+      "en": "Let's go to Portugal this summer!",
+      "es": "¡Vamos a Portugal este verano!"
+    },
+    {
+      "phrase": "Il est né en Turquie, mais il habite aux États-Unis.",
+      "en": "He was born in Turkey, but he lives in the United States.",
+      "es": "Nació en Turquía, pero vive en Estados Unidos."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"J'habite ___ Japon.\"",
+        "es": "Completa: «J'habite ___ Japon.»"
+      },
+      "options": [
+        "au",
+        "en",
+        "aux",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Japon\" is masculine: \"au Japon\".",
+        "es": "«Japon» es masculino: «au Japon»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle travaille ___ États-Unis.\"",
+        "es": "Completa: «Elle travaille ___ États-Unis.»"
+      },
+      "options": [
+        "aux",
+        "au",
+        "en",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plural countries take \"aux\".",
+        "es": "Los países en plural llevan «aux»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je viens ___ Italie.\"",
+        "es": "Completa: «Je viens ___ Italie.»"
+      },
+      "options": [
+        "d'",
+        "du",
+        "de la",
+        "des"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Feminine countries: \"de\" → \"d'\" before a vowel.",
+        "es": "Países femeninos: «de» → «d'» delante de vocal."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is correct for a woman from Mexico?",
+        "es": "¿Qué es correcto para una mujer de México?"
+      },
+      "options": [
+        "Elle est mexicaine.",
+        "Elle est mexicain.",
+        "Elle est Mexicaine.",
+        "Elle est mexicane."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Nationalities agree and are lowercase as adjectives.",
+        "es": "Las nacionalidades concuerdan y van en minúscula como adjetivos."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the feminine of \"grec\"?",
+        "es": "¿Cuál es el femenino de «grec»?"
+      },
+      "options": [
+        "grecque",
+        "grecte",
+        "grèce",
+        "greque"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Irregular: grec → grecque, turc → turque.",
+        "es": "Irregular: grec → grecque, turc → turque."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Let's go to China!\"?",
+        "es": "¿Cómo se dice «¡Vamos a China!»?"
+      },
+      "options": [
+        "Allons en Chine !",
+        "Nous allons à Chine !",
+        "Allez en Chine !",
+        "Va au Chine !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imperative \"nous\": allons, parcourons, visitons.",
+        "es": "Imperativo con «nous»: allons, parcourons, visitons."
+      }
+    },
+    {
+      "question": {
+        "en": "Which country is feminine?",
+        "es": "¿Qué país es femenino?"
+      },
+      "options": [
+        "la Suède",
+        "le Brésil",
+        "le Mexique",
+        "le Portugal"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Most countries ending in -e are feminine, but \"le Mexique\" is an exception.",
+        "es": "La mayoría de los países terminados en -e son femeninos, pero «le Mexique» es una excepción."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Les trains relient les pays pour que le voyage ___ plus facile.\"",
+        "es": "Completa: «Les trains relient les pays pour que le voyage ___ plus facile.»"
+      },
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "était"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pour que\" is always followed by the subjunctive.",
+        "es": "«Pour que» siempre va seguido de subjuntivo."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le tour du monde de Maya",
+    "text": "Maya est canadienne. Elle est née à Montréal, mais sa mère est indienne et son père est chilien. L'année dernière, elle a fait le tour du monde. D'abord, elle est allée au Japon : la technologie l'a beaucoup étonnée. Ensuite, elle a visité l'Inde, le pays de sa mère, où elle a goûté une cuisine délicieuse. En Europe, elle a pris le train pour traverser la France, la Suisse, l'Italie et l'Autriche. Les trains européens relient beaucoup de pays pour que le voyage soit plus facile. Quand elle était petite, Maya rêvait de voir la forêt amazonienne ; alors, elle a fini son voyage au Brésil et au Pérou. Si nous regardons autour de nous, nous pouvons trouver des merveilles partout. Maya dit toujours : « Allons découvrir le monde ! »",
+    "en": "Maya is Canadian. She was born in Montreal, but her mother is Indian and her father is Chilean. Last year, she traveled around the world. First, she went to Japan: the technology amazed her. Then, she visited India, her mother's country, where she tasted delicious food. In Europe, she took the train to cross France, Switzerland, Italy and Austria. European trains connect many countries so that traveling is easier. When she was little, Maya dreamed of seeing the Amazon rainforest; so she ended her trip in Brazil and Peru. If we look around us, we can find wonders everywhere. Maya always says: “Let's go and discover the world!”",
+    "es": "Maya es canadiense. Nació en Montreal, pero su madre es india y su padre es chileno. El año pasado dio la vuelta al mundo. Primero fue a Japón: la tecnología la asombró mucho. Después visitó la India, el país de su madre, donde probó una comida deliciosa. En Europa tomó el tren para atravesar Francia, Suiza, Italia y Austria. Los trenes europeos conectan muchos países para que viajar sea más fácil. Cuando era pequeña, Maya soñaba con ver la selva amazónica; así que terminó su viaje en Brasil y en Perú. Si miramos a nuestro alrededor, podemos encontrar maravillas en todas partes. Maya siempre dice: «¡Vamos a descubrir el mundo!»",
+    "highlighted_words": [
+      "canadienne",
+      "indienne",
+      "chilien",
+      "au Japon",
+      "l'Inde",
+      "En Europe",
+      "pour que",
+      "soit",
+      "au Brésil",
+      "Si nous regardons",
+      "Allons"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je viens d'Italie",
+      "en": "I come from Italy",
+      "es": "Vengo de Italia"
+    },
+    {
+      "sentence": "Elle habite au Mexique",
+      "en": "She lives in Mexico",
+      "es": "Vive en México"
+    },
+    {
+      "sentence": "L'Espagne est en Europe",
+      "en": "Spain is in Europe",
+      "es": "España está en Europa"
+    },
+    {
+      "sentence": "Mon père est chilien",
+      "en": "My father is Chilean",
+      "es": "Mi padre es chileno"
+    },
+    {
+      "sentence": "Allons en Chine cet été",
+      "en": "Let's go to China this summer",
+      "es": "Vamos a China este verano"
+    },
+    {
+      "sentence": "As-tu visité l'Irlande",
+      "en": "Have you visited Ireland",
+      "es": "¿Has visitado Irlanda?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je suis du Pérou",
+      "en": "I am from Peru",
+      "es": "Soy de Perú"
+    },
+    {
+      "answer": "Elle est brésilienne",
+      "en": "She is Brazilian",
+      "es": "Es brasileña"
+    },
+    {
+      "answer": "Il habite aux États-Unis",
+      "en": "He lives in the United States",
+      "es": "Vive en Estados Unidos"
+    },
+    {
+      "answer": "Ma sœur habite à Bogota",
+      "en": "My sister lives in Bogotá",
+      "es": "Mi hermana vive en Bogotá"
+    },
+    {
+      "answer": "Je vais voyager en Europe",
+      "en": "I am going to travel in Europe",
+      "es": "Voy a viajar por Europa"
+    },
+    {
+      "answer": "Je ne suis pas français",
+      "en": "I am not French",
+      "es": "No soy francés"
+    }
+  ]
+}

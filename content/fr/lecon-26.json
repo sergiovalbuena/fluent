@@ -1,0 +1,590 @@
+{
+  "lesson": 26,
+  "slug": "lecon-26",
+  "icon": "🎻",
+  "title": {
+    "fr": "La musique et les instruments",
+    "es": "La música y los instrumentos",
+    "en": "Music and instruments"
+  },
+  "source": {
+    "audio": "Lecons 26.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "jouer de + instrument",
+      "example": "Je joue du piano, de la guitare et de l'harmonica.",
+      "en": "Playing an instrument",
+      "es": "Tocar un instrumento"
+    },
+    {
+      "structure": "imparfait (habitudes)",
+      "example": "Ma mère était danseuse. On allait voir ses spectacles. Il nous chantait des chansons.",
+      "en": "Past habits",
+      "es": "Hábitos pasados"
+    },
+    {
+      "structure": "depuis + présent",
+      "example": "Je suis des cours de piano depuis l'âge de cinq ans.",
+      "en": "Ongoing since",
+      "es": "Desde hace / desde"
+    },
+    {
+      "structure": "passé composé",
+      "example": "J'ai signé un contrat avec l'orchestre et j'y ai joué pendant deux ans.",
+      "en": "Completed actions",
+      "es": "Acciones terminadas"
+    },
+    {
+      "structure": "gérondif",
+      "example": "Nous voyageons en nous amusant et en donnant du bonheur.",
+      "en": "Gerund (manner)",
+      "es": "Gerundio (modo)"
+    },
+    {
+      "structure": "conditionnel",
+      "example": "J'aimerais être dans un groupe de jazz. / Serait-il difficile de jouer du violoncelle ?",
+      "en": "Wishes and polite questions",
+      "es": "Deseos y preguntas corteses"
+    },
+    {
+      "structure": "ne … aucun",
+      "example": "Combien d'instruments joues-tu ? — Aucun.",
+      "en": "\"None\"",
+      "es": "«Ninguno»"
+    },
+    {
+      "structure": "futur simple",
+      "example": "L'orchestre symphonique arrivera bientôt.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Jouer DE\" an instrument (jouer du violon) but \"jouer À\" a game or sport (jouer au foot).",
+      "es": "«Jouer DE» un instrumento (jouer du violon), pero «jouer À» un juego o deporte (jouer au foot)."
+    },
+    {
+      "en": "\"Un groupe\" = a band; \"une fanfare\" = a brass band; \"une chorale\" = a choir.",
+      "es": "«Un groupe» = una banda; «une fanfare» = una charanga; «une chorale» = un coro."
+    },
+    {
+      "en": "\"Allumer / éteindre la radio\" = to turn on / off the radio. \"Monter / baisser le son\" = to turn the volume up / down.",
+      "es": "«Allumer / éteindre la radio» = encender / apagar la radio. «Monter / baisser le son» = subir / bajar el volumen."
+    },
+    {
+      "en": "The Fête de la musique takes place every 21 June in France: free concerts everywhere!",
+      "es": "La Fête de la musique se celebra cada 21 de junio en Francia: ¡conciertos gratuitos por todas partes!"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la musique",
+      "en": "music",
+      "es": "la música"
+    },
+    {
+      "word": "l'instrument",
+      "en": "the instrument",
+      "es": "el instrumento"
+    },
+    {
+      "word": "le piano",
+      "en": "the piano",
+      "es": "el piano"
+    },
+    {
+      "word": "le piano à queue",
+      "en": "the grand piano",
+      "es": "el piano de cola"
+    },
+    {
+      "word": "la guitare",
+      "en": "the guitar",
+      "es": "la guitarra"
+    },
+    {
+      "word": "la basse",
+      "en": "the bass",
+      "es": "el bajo"
+    },
+    {
+      "word": "le violon",
+      "en": "the violin",
+      "es": "el violín"
+    },
+    {
+      "word": "le violoncelle",
+      "en": "the cello",
+      "es": "el violonchelo"
+    },
+    {
+      "word": "la harpe",
+      "en": "the harp",
+      "es": "el arpa"
+    },
+    {
+      "word": "la flûte",
+      "en": "the flute",
+      "es": "la flauta"
+    },
+    {
+      "word": "la clarinette",
+      "en": "the clarinet",
+      "es": "el clarinete"
+    },
+    {
+      "word": "la trompette",
+      "en": "the trumpet",
+      "es": "la trompeta"
+    },
+    {
+      "word": "le saxophone",
+      "en": "the saxophone",
+      "es": "el saxofón"
+    },
+    {
+      "word": "l'accordéon",
+      "en": "the accordion",
+      "es": "el acordeón"
+    },
+    {
+      "word": "l'harmonica",
+      "en": "the harmonica",
+      "es": "la armónica"
+    },
+    {
+      "word": "l'orgue",
+      "en": "the organ",
+      "es": "el órgano"
+    },
+    {
+      "word": "la batterie",
+      "en": "the drums",
+      "es": "la batería"
+    },
+    {
+      "word": "le tambour",
+      "en": "the drum",
+      "es": "el tambor"
+    },
+    {
+      "word": "les cymbales",
+      "en": "the cymbals",
+      "es": "los platillos"
+    },
+    {
+      "word": "l'orchestre",
+      "en": "the orchestra",
+      "es": "la orquesta"
+    },
+    {
+      "word": "le groupe",
+      "en": "the band",
+      "es": "el grupo / la banda"
+    },
+    {
+      "word": "la fanfare",
+      "en": "the brass band",
+      "es": "la charanga"
+    },
+    {
+      "word": "la chorale",
+      "en": "the choir",
+      "es": "el coro"
+    },
+    {
+      "word": "le concert",
+      "en": "the concert",
+      "es": "el concierto"
+    },
+    {
+      "word": "l'opéra",
+      "en": "the opera",
+      "es": "la ópera"
+    },
+    {
+      "word": "le conservatoire",
+      "en": "the music school",
+      "es": "el conservatorio"
+    },
+    {
+      "word": "le chanteur / la chanteuse",
+      "en": "the singer",
+      "es": "el cantante / la cantante"
+    },
+    {
+      "word": "le / la pianiste",
+      "en": "the pianist",
+      "es": "el / la pianista"
+    },
+    {
+      "word": "le musicien / la musicienne",
+      "en": "the musician",
+      "es": "el músico / la música"
+    },
+    {
+      "word": "la chanson",
+      "en": "the song",
+      "es": "la canción"
+    },
+    {
+      "word": "chanter",
+      "en": "to sing",
+      "es": "cantar"
+    },
+    {
+      "word": "danser",
+      "en": "to dance",
+      "es": "bailar"
+    },
+    {
+      "word": "enregistrer",
+      "en": "to record",
+      "es": "grabar"
+    },
+    {
+      "word": "le disque",
+      "en": "the record",
+      "es": "el disco"
+    },
+    {
+      "word": "la radio",
+      "en": "the radio",
+      "es": "la radio"
+    },
+    {
+      "word": "le son",
+      "en": "the sound",
+      "es": "el sonido"
+    },
+    {
+      "word": "allumer",
+      "en": "to turn on",
+      "es": "encender"
+    },
+    {
+      "word": "éteindre",
+      "en": "to turn off",
+      "es": "apagar"
+    },
+    {
+      "word": "classique",
+      "en": "classical",
+      "es": "clásica"
+    },
+    {
+      "word": "le jazz",
+      "en": "jazz",
+      "es": "el jazz"
+    },
+    {
+      "word": "symphonique",
+      "en": "symphonic",
+      "es": "sinfónico"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "L'accordéon est très utilisé dans la musique populaire.",
+      "en": "The accordion is widely used in folk music.",
+      "es": "El acordeón se usa mucho en la música popular."
+    },
+    {
+      "phrase": "As-tu étudié au conservatoire ? — Oui, pendant cinq ans.",
+      "en": "Did you study at the conservatory? — Yes, for five years.",
+      "es": "¿Estudiaste en el conservatorio? — Sí, durante cinco años."
+    },
+    {
+      "phrase": "Quel genre de musique te plaît ? — La musique classique.",
+      "en": "What kind of music do you like? — Classical music.",
+      "es": "¿Qué tipo de música te gusta? — La música clásica."
+    },
+    {
+      "phrase": "Serait-il difficile de jouer du violoncelle ? — Il faut être patient.",
+      "en": "Would it be difficult to play the cello? — You have to be patient.",
+      "es": "¿Sería difícil tocar el violonchelo? — Hay que ser paciente."
+    },
+    {
+      "phrase": "Je joue du piano et de la batterie.",
+      "en": "I play the piano and the drums.",
+      "es": "Toco el piano y la batería."
+    },
+    {
+      "phrase": "Peux-tu me prêter ton micro ? Je dois enregistrer le concert.",
+      "en": "Can you lend me your microphone? I have to record the concert.",
+      "es": "¿Me prestas tu micrófono? Tengo que grabar el concierto."
+    },
+    {
+      "phrase": "L'orchestre symphonique arrivera bientôt à Paris.",
+      "en": "The symphony orchestra will arrive in Paris soon.",
+      "es": "La orquesta sinfónica llegará pronto a París."
+    },
+    {
+      "phrase": "Combien d'instruments joues-tu ? — Aucun. — Je pensais que tu jouais de la flûte !",
+      "en": "How many instruments do you play? — None. — I thought you played the flute!",
+      "es": "¿Cuántos instrumentos tocas? — Ninguno. — ¡Pensaba que tocabas la flauta!"
+    },
+    {
+      "phrase": "Nous formons un groupe, mais nous avons besoin d'une chanteuse.",
+      "en": "We are starting a band, but we need a singer.",
+      "es": "Estamos formando un grupo, pero necesitamos una cantante."
+    },
+    {
+      "phrase": "La harpe a un son merveilleux.",
+      "en": "The harp has a wonderful sound.",
+      "es": "El arpa tiene un sonido maravilloso."
+    },
+    {
+      "phrase": "Arrête de jouer des cymbales, j'ai mal à la tête !",
+      "en": "Stop playing the cymbals, I have a headache!",
+      "es": "¡Deja de tocar los platillos, me duele la cabeza!"
+    },
+    {
+      "phrase": "Peux-tu éteindre la radio ? — Dans une minute, c'est ma chanson préférée !",
+      "en": "Can you turn off the radio? — In a minute, it's my favorite song!",
+      "es": "¿Puedes apagar la radio? — ¡En un minuto, es mi canción favorita!"
+    },
+    {
+      "phrase": "J'ai deux places pour le concert. Tu veux venir avec moi ?",
+      "en": "I have two tickets for the concert. Do you want to come with me?",
+      "es": "Tengo dos entradas para el concierto. ¿Quieres venir conmigo?"
+    },
+    {
+      "phrase": "J'aimerais jouer dans un groupe de jazz.",
+      "en": "I would like to play in a jazz band.",
+      "es": "Me gustaría tocar en un grupo de jazz."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Elle joue ___ violon.\"",
+        "es": "Completa: «Elle joue ___ violon.»"
+      },
+      "options": [
+        "du",
+        "au",
+        "le",
+        "de"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Jouer de + le = du.",
+        "es": "Jouer de + le = du."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il joue ___ guitare.\"",
+        "es": "Completa: «Il joue ___ guitare.»"
+      },
+      "options": [
+        "de la",
+        "à la",
+        "la",
+        "du"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Jouer de + la = de la.",
+        "es": "Jouer de + la = de la."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence describes a habit in the past?",
+        "es": "¿Qué frase describe un hábito pasado?"
+      },
+      "options": [
+        "Mon père nous chantait des chansons.",
+        "Mon père nous a chanté une chanson hier.",
+        "Mon père nous chantera une chanson.",
+        "Mon père nous chante une chanson."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait for repeated past actions.",
+        "es": "Imperfecto para acciones repetidas en el pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je joue du piano ___ dix ans.\" (and still do)",
+        "es": "Completa: «Je joue du piano ___ dix ans.» (y sigo)"
+      },
+      "options": [
+        "depuis",
+        "pendant",
+        "il y a",
+        "pour"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Depuis + present for something still going on.",
+        "es": "Depuis + presente para algo que continúa."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Combien d'instruments joues-tu ? — Aucun.\" Meaning?",
+        "es": "«Combien d'instruments joues-tu ? — Aucun.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "None.",
+          "Only one.",
+          "All of them.",
+          "Some."
+        ],
+        "es": [
+          "Ninguno.",
+          "Solo uno.",
+          "Todos.",
+          "Algunos."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Aucun\" = none.",
+        "es": "«Aucun» = ninguno."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you study music professionally?",
+        "es": "¿Dónde se estudia música de forma profesional?"
+      },
+      "options": [
+        "au conservatoire",
+        "à l'opéra",
+        "à la fanfare",
+        "au disque"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le conservatoire = music school.",
+        "es": "Le conservatoire = el conservatorio."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is a percussion instrument?",
+        "es": "¿Cuál es un instrumento de percusión?"
+      },
+      "options": [
+        "la batterie",
+        "la flûte",
+        "le violon",
+        "la harpe"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "La batterie, le tambour, les cymbales.",
+        "es": "La batterie, le tambour, les cymbales."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"On voyage en ___ et en donnant du bonheur.\"",
+        "es": "Completa: «On voyage en ___ et en donnant du bonheur.»"
+      },
+      "options": [
+        "s'amusant",
+        "amusant",
+        "s'amuser",
+        "amusé"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Gerund of a reflexive verb: en s'amusant.",
+        "es": "Gerundio de un verbo pronominal: en s'amusant."
+      }
+    }
+  ],
+  "story": {
+    "title": "La batteuse",
+    "text": "Je m'appelle Jade et j'ai toujours voulu être musicienne. Je joue de la batterie depuis l'âge de huit ans. Dans ma famille, tout le monde aime la musique. Mon grand-père jouait de l'accordéon dans les bals de village. Le dimanche, nous allions chez lui et il nous jouait de vieilles chansons pendant que ma grand-mère dansait dans la cuisine. Ma mère, elle, chantait dans une chorale, et souvent, nous écoutions du jazz à la radio. Après le lycée, je suis entrée au conservatoire de Lyon, où j'ai appris le solfège et les percussions classiques. Pendant deux ans, j'ai joué des timbales dans l'orchestre symphonique de la ville. Un jour, des amis qui voulaient former un groupe de rock m'ont demandé de les rejoindre : ils n'avaient pas de batteur ! J'ai accepté tout de suite. Depuis, nous voyageons dans toute la France en nous amusant et en donnant du bonheur au public. J'aimerais un jour jouer à l'Olympia, à Paris. Et mon grand-père viendrait sûrement avec son accordéon !",
+    "en": "My name is Jade and I've always wanted to be a musician. I've been playing the drums since I was eight. In my family, everyone loves music. My grandfather used to play the accordion at village dances. On Sundays, we would go to his house and he would play us old songs while my grandmother danced in the kitchen. My mother sang in a choir, and we often listened to jazz on the radio. After high school, I entered the Lyon conservatory, where I learned music theory and classical percussion. For two years, I played the timpani in the city's symphony orchestra. One day, some friends who wanted to start a rock band asked me to join them: they didn't have a drummer! I accepted right away. Since then, we travel all over France having fun and bringing happiness to the audience. One day I would like to play at the Olympia in Paris. And my grandfather would surely come with his accordion!",
+    "es": "Me llamo Jade y siempre he querido ser música. Toco la batería desde los ocho años. En mi familia a todos les gusta la música. Mi abuelo tocaba el acordeón en los bailes del pueblo. Los domingos íbamos a su casa y nos tocaba canciones antiguas mientras mi abuela bailaba en la cocina. Mi madre, por su parte, cantaba en un coro y a menudo escuchábamos jazz en la radio. Después del instituto entré en el conservatorio de Lyon, donde aprendí solfeo y percusión clásica. Durante dos años toqué los timbales en la orquesta sinfónica de la ciudad. Un día, unos amigos que querían formar un grupo de rock me pidieron que me uniera a ellos: ¡no tenían batería! Acepté enseguida. Desde entonces viajamos por toda Francia divirtiéndonos y dando felicidad al público. Me gustaría tocar algún día en el Olympia de París. ¡Y seguro que mi abuelo vendría con su acordeón!",
+    "highlighted_words": [
+      "Je joue de la batterie depuis",
+      "jouait de l'accordéon",
+      "nous allions",
+      "chantait",
+      "conservatoire",
+      "j'ai joué",
+      "orchestre symphonique",
+      "en nous amusant",
+      "en donnant",
+      "J'aimerais",
+      "viendrait"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je joue du piano depuis dix ans",
+      "en": "I've been playing the piano for ten years",
+      "es": "Toco el piano desde hace diez años"
+    },
+    {
+      "sentence": "Elle chante dans une chorale",
+      "en": "She sings in a choir",
+      "es": "Canta en un coro"
+    },
+    {
+      "sentence": "Mon grand-père jouait de l'accordéon",
+      "en": "My grandfather used to play the accordion",
+      "es": "Mi abuelo tocaba el acordeón"
+    },
+    {
+      "sentence": "J'aimerais jouer dans un groupe",
+      "en": "I would like to play in a band",
+      "es": "Me gustaría tocar en un grupo"
+    },
+    {
+      "sentence": "Éteins la radio s'il te plaît",
+      "en": "Turn off the radio please",
+      "es": "Apaga la radio, por favor"
+    },
+    {
+      "sentence": "Il faut être patient",
+      "en": "You have to be patient",
+      "es": "Hay que ser paciente"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je joue de la guitare",
+      "en": "I play the guitar",
+      "es": "Toco la guitarra"
+    },
+    {
+      "answer": "C'est ma chanson préférée",
+      "en": "It's my favorite song",
+      "es": "Es mi canción favorita"
+    },
+    {
+      "answer": "Tu chantes très bien",
+      "en": "You sing very well",
+      "es": "Cantas muy bien"
+    },
+    {
+      "answer": "Allume la radio",
+      "en": "Turn on the radio",
+      "es": "Enciende la radio"
+    },
+    {
+      "answer": "J'aime la musique classique",
+      "en": "I like classical music",
+      "es": "Me gusta la música clásica"
+    },
+    {
+      "answer": "Elle joue du violon",
+      "en": "She plays the violin",
+      "es": "Toca el violín"
+    }
+  ]
+}

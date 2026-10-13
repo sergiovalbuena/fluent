@@ -1,0 +1,577 @@
+{
+  "lesson": 46,
+  "slug": "lecon-46",
+  "icon": "💼",
+  "title": {
+    "fr": "Chercher un emploi",
+    "es": "Buscar trabajo",
+    "en": "Looking for a job"
+  },
+  "source": {
+    "audio": "Lecons 46.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "si + imparfait → conditionnel",
+      "example": "S'il trouvait du travail, il gagnerait plus d'argent.",
+      "en": "Hypothesis (unreal present)",
+      "es": "Hipótesis (presente irreal)"
+    },
+    {
+      "structure": "si j'étais toi / lui…",
+      "example": "Si j'étais lui, je démissionnerais.",
+      "en": "Giving advice with \"si j'étais\"",
+      "es": "Aconsejar con «si yo fuera»"
+    },
+    {
+      "structure": "questions au conditionnel",
+      "example": "Qu'est-ce que tu ferais si tu n'avais pas de travail ?",
+      "en": "Hypothetical questions",
+      "es": "Preguntas hipotéticas"
+    },
+    {
+      "structure": "conditionnel des verbes irréguliers",
+      "example": "je serais, j'aurais, je ferais, je pourrais, je saurais",
+      "en": "Irregular conditional stems",
+      "es": "Raíces irregulares del condicional"
+    },
+    {
+      "structure": "conditionnel passé",
+      "example": "Il aurait pu se reposer un peu.",
+      "en": "Past conditional",
+      "es": "Condicional compuesto"
+    },
+    {
+      "structure": "aller (imparfait) + infinitif",
+      "example": "Il semblait qu'il allait avoir une promotion.",
+      "en": "Was going to",
+      "es": "Iba a"
+    },
+    {
+      "structure": "afin de / pour + infinitif",
+      "example": "Il économise afin de profiter de sa retraite.",
+      "en": "Purpose",
+      "es": "Finalidad"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Hypothesis: \"si\" + imparfait, then conditional. NEVER the conditional after \"si\": \"Si j'avais (not aurais) le temps…\".",
+      "es": "Hipótesis: «si» + imperfecto, luego condicional. NUNCA condicional después de «si»: «Si j'avais (no aurais) le temps…»."
+    },
+    {
+      "en": "Job vocabulary: \"le CV\" (résumé), \"la lettre de motivation\" (cover letter), \"l'entretien d'embauche\" (job interview), \"le CDI / le CDD\" (permanent / fixed-term contract).",
+      "es": "Vocabulario laboral: «le CV» (currículum), «la lettre de motivation» (carta de presentación), «l'entretien d'embauche» (entrevista de trabajo), «le CDI / le CDD» (contrato indefinido / temporal)."
+    },
+    {
+      "en": "\"Démissionner\" = to resign; \"être licencié / renvoyé\" = to be fired; \"prendre sa retraite\" = to retire; \"un arrêt maladie\" = sick leave.",
+      "es": "«Démissionner» = dimitir; «être licencié / renvoyé» = ser despedido; «prendre sa retraite» = jubilarse; «un arrêt maladie» = baja por enfermedad."
+    },
+    {
+      "en": "\"Gagner sa vie\" = to earn a living; \"un salaire\" = a salary; \"une augmentation\" = a raise.",
+      "es": "«Gagner sa vie» = ganarse la vida; «un salaire» = un sueldo; «une augmentation» = un aumento."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'emploi",
+      "en": "the job / employment",
+      "es": "el empleo"
+    },
+    {
+      "word": "le travail",
+      "en": "work / job",
+      "es": "el trabajo"
+    },
+    {
+      "word": "l'agence pour l'emploi",
+      "en": "the employment agency",
+      "es": "la agencia de empleo"
+    },
+    {
+      "word": "l'offre d'emploi",
+      "en": "the job offer",
+      "es": "la oferta de empleo"
+    },
+    {
+      "word": "le CV",
+      "en": "the résumé",
+      "es": "el currículum"
+    },
+    {
+      "word": "la lettre de motivation",
+      "en": "the cover letter",
+      "es": "la carta de presentación"
+    },
+    {
+      "word": "l'entretien d'embauche",
+      "en": "the job interview",
+      "es": "la entrevista de trabajo"
+    },
+    {
+      "word": "embaucher / engager",
+      "en": "to hire",
+      "es": "contratar"
+    },
+    {
+      "word": "le chef du personnel",
+      "en": "the HR manager",
+      "es": "el jefe de personal"
+    },
+    {
+      "word": "l'expérience",
+      "en": "experience",
+      "es": "la experiencia"
+    },
+    {
+      "word": "les références",
+      "en": "references",
+      "es": "las referencias"
+    },
+    {
+      "word": "la recommandation",
+      "en": "the recommendation",
+      "es": "la recomendación"
+    },
+    {
+      "word": "le profil",
+      "en": "the profile",
+      "es": "el perfil"
+    },
+    {
+      "word": "les compétences",
+      "en": "skills",
+      "es": "las competencias"
+    },
+    {
+      "word": "le talent",
+      "en": "talent",
+      "es": "el talento"
+    },
+    {
+      "word": "à plein temps",
+      "en": "full-time",
+      "es": "a tiempo completo"
+    },
+    {
+      "word": "à mi-temps",
+      "en": "part-time",
+      "es": "a media jornada"
+    },
+    {
+      "word": "temporaire",
+      "en": "temporary",
+      "es": "temporal"
+    },
+    {
+      "word": "le salaire",
+      "en": "the salary",
+      "es": "el sueldo"
+    },
+    {
+      "word": "la commission",
+      "en": "the commission",
+      "es": "la comisión"
+    },
+    {
+      "word": "l'augmentation",
+      "en": "the raise",
+      "es": "el aumento"
+    },
+    {
+      "word": "la promotion",
+      "en": "the promotion",
+      "es": "el ascenso"
+    },
+    {
+      "word": "l'assurance",
+      "en": "insurance",
+      "es": "el seguro"
+    },
+    {
+      "word": "la retraite",
+      "en": "retirement",
+      "es": "la jubilación"
+    },
+    {
+      "word": "prendre sa retraite",
+      "en": "to retire",
+      "es": "jubilarse"
+    },
+    {
+      "word": "démissionner",
+      "en": "to resign",
+      "es": "dimitir"
+    },
+    {
+      "word": "licencier",
+      "en": "to fire",
+      "es": "despedir"
+    },
+    {
+      "word": "l'arrêt maladie",
+      "en": "sick leave",
+      "es": "la baja por enfermedad"
+    },
+    {
+      "word": "former",
+      "en": "to train",
+      "es": "formar"
+    },
+    {
+      "word": "la formation",
+      "en": "training",
+      "es": "la formación"
+    },
+    {
+      "word": "taper (à l'ordinateur)",
+      "en": "to type",
+      "es": "teclear"
+    },
+    {
+      "word": "bilingue",
+      "en": "bilingual",
+      "es": "bilingüe"
+    },
+    {
+      "word": "disponible",
+      "en": "available",
+      "es": "disponible"
+    },
+    {
+      "word": "l'ambiance",
+      "en": "the atmosphere",
+      "es": "el ambiente"
+    },
+    {
+      "word": "têtu / têtue",
+      "en": "stubborn",
+      "es": "testarudo / testaruda"
+    },
+    {
+      "word": "ambitieux / ambitieuse",
+      "en": "ambitious",
+      "es": "ambicioso / ambiciosa"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "S'il trouvait du travail, il gagnerait plus d'argent.",
+      "en": "If he found work, he'd earn more money.",
+      "es": "Si encontrara trabajo, ganaría más dinero."
+    },
+    {
+      "phrase": "Elle aurait sûrement le poste si on lui faisait passer un entretien.",
+      "en": "She would surely get the job if they gave her an interview.",
+      "es": "Seguramente conseguiría el puesto si le hicieran una entrevista."
+    },
+    {
+      "phrase": "Si je savais taper plus vite, j'aurais un meilleur travail.",
+      "en": "If I could type faster, I would have a better job.",
+      "es": "Si supiera teclear más rápido, tendría un trabajo mejor."
+    },
+    {
+      "phrase": "Je démissionnerais si je n'avais pas autant de dettes.",
+      "en": "I would resign if I didn't have so many debts.",
+      "es": "Dimitiría si no tuviera tantas deudas."
+    },
+    {
+      "phrase": "Si on vendait plus, on toucherait plus de commissions.",
+      "en": "If we sold more, we would get more commission.",
+      "es": "Si vendiéramos más, cobraríamos más comisiones."
+    },
+    {
+      "phrase": "Si elle avait de l'expérience, le chef du personnel la choisirait.",
+      "en": "If she had experience, the HR manager would choose her.",
+      "es": "Si tuviera experiencia, el jefe de personal la elegiría."
+    },
+    {
+      "phrase": "S'il le voulait, il pourrait avoir un meilleur poste.",
+      "en": "If he wanted to, he could have a better position.",
+      "es": "Si quisiera, podría tener un puesto mejor."
+    },
+    {
+      "phrase": "S'il parlait anglais, l'agence lui trouverait un emploi.",
+      "en": "If he spoke English, the agency would find him a job.",
+      "es": "Si hablara inglés, la agencia le encontraría un empleo."
+    },
+    {
+      "phrase": "J'organiserais très bien les archives si tu me donnais plus de temps.",
+      "en": "I would organize the files very well if you gave me more time.",
+      "es": "Organizaría muy bien el archivo si me dieras más tiempo."
+    },
+    {
+      "phrase": "Qu'est-ce que tu ferais si tu n'avais pas de travail ? — J'en chercherais un autre.",
+      "en": "What would you do if you didn't have a job? — I'd look for another one.",
+      "es": "¿Qué harías si no tuvieras trabajo? — Buscaría otro."
+    },
+    {
+      "phrase": "Où trouverais-tu un travail temporaire si tu n'étais pas bilingue ?",
+      "en": "Where would you find a temporary job if you weren't bilingual?",
+      "es": "¿Dónde encontrarías un trabajo temporal si no fueras bilingüe?"
+    },
+    {
+      "phrase": "Que feriez-vous si vous étiez à sa place ? — Si j'étais lui, je démissionnerais.",
+      "en": "What would you do in his place? — If I were him, I would resign.",
+      "es": "¿Qué haría usted en su lugar? — Si yo fuera él, dimitiría."
+    },
+    {
+      "phrase": "J'ai un entretien d'embauche demain à dix heures.",
+      "en": "I have a job interview tomorrow at ten.",
+      "es": "Tengo una entrevista de trabajo mañana a las diez."
+    },
+    {
+      "phrase": "Il a envoyé son CV et une lettre de motivation.",
+      "en": "He sent his résumé and a cover letter.",
+      "es": "Envió su currículum y una carta de presentación."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Si j'___ riche, je voyagerais.\"",
+        "es": "Completa: «Si j'___ riche, je voyagerais.»"
+      },
+      "options": [
+        "étais",
+        "serais",
+        "suis",
+        "serai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + imparfait → conditional.",
+        "es": "Si + imperfecto → condicional."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"S'il avait le temps, il ___ une formation.\"",
+        "es": "Completa: «S'il avait le temps, il ___ une formation.»"
+      },
+      "options": [
+        "ferait",
+        "fera",
+        "faisait",
+        "fasse"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional of faire: ferait.",
+        "es": "Condicional de faire: ferait."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence is correct?",
+        "es": "¿Qué frase es correcta?"
+      },
+      "options": [
+        "Si j'avais de l'argent, j'achèterais une maison.",
+        "Si j'aurais de l'argent, j'achèterais une maison.",
+        "Si j'avais de l'argent, j'achèterai une maison.",
+        "Si j'ai de l'argent, j'achèterais une maison."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + imparfait → conditionnel présent.",
+        "es": "Si + imperfecto → condicional presente."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you give advice using \"si\"?",
+        "es": "¿Cómo das un consejo usando «si»?"
+      },
+      "options": [
+        "Si j'étais toi, je demanderais une augmentation.",
+        "Si je suis toi, je demande une augmentation.",
+        "Si je serais toi, je demanderais une augmentation.",
+        "Si j'étais toi, je demanderai une augmentation."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Si j'étais toi\" + conditional.",
+        "es": "«Si j'étais toi» + condicional."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un entretien d'embauche\"?",
+        "es": "¿Qué es «un entretien d'embauche»?"
+      },
+      "options": {
+        "en": [
+          "a job interview",
+          "a maintenance job",
+          "a salary raise",
+          "a resignation letter"
+        ],
+        "es": [
+          "una entrevista de trabajo",
+          "un trabajo de mantenimiento",
+          "un aumento de sueldo",
+          "una carta de dimisión"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Embaucher = to hire.",
+        "es": "Embaucher = contratar."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Démissionner\" means…",
+        "es": "«Démissionner» significa…"
+      },
+      "options": {
+        "en": [
+          "to resign",
+          "to be fired",
+          "to retire",
+          "to be promoted"
+        ],
+        "es": [
+          "dimitir",
+          "ser despedido",
+          "jubilarse",
+          "ser ascendido"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Être licencié = to be fired.",
+        "es": "Être licencié = ser despedido."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Qu'est-ce que tu ___ à ma place ?\"",
+        "es": "Completa: «Qu'est-ce que tu ___ à ma place ?»"
+      },
+      "options": [
+        "ferais",
+        "feras",
+        "faisais",
+        "fais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Hypothetical question: conditional.",
+        "es": "Pregunta hipotética: condicional."
+      }
+    },
+    {
+      "question": {
+        "en": "What is a \"CDI\" in France?",
+        "es": "¿Qué es un «CDI» en Francia?"
+      },
+      "options": {
+        "en": [
+          "a permanent contract",
+          "a temporary contract",
+          "an internship",
+          "a resignation"
+        ],
+        "es": [
+          "un contrato indefinido",
+          "un contrato temporal",
+          "unas prácticas",
+          "una dimisión"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "CDD = fixed-term contract.",
+        "es": "CDD = contrato temporal."
+      }
+    }
+  ],
+  "story": {
+    "title": "Sarah a besoin de souffler",
+    "text": "Sarah est ingénieure dans une grande entreprise à Toulouse. Elle a un bon salaire, mais l'ambiance au bureau est terrible. Elle a d'excellentes références et beaucoup d'expérience ; sinon, comment gagnerait-elle autant ? Moi, je travaille dans une agence pour l'emploi, et je lui ai promis de l'aider. Mais en ce moment, il n'y a pas de poste disponible dans son domaine. La semaine dernière, il semblait qu'elle allait avoir une promotion, mais un collègue avec plus d'ancienneté l'a obtenue. Elle a pensé à demander un arrêt maladie ; comme ça, elle aurait pu se reposer un peu. Mais son chef a besoin d'elle pour un projet important. Que feriez-vous si vous étiez à sa place ? Si j'étais elle, je démissionnerais. Elle a trente-cinq ans, et elle a économisé beaucoup d'argent pour acheter une maison à la campagne. Mais Sarah est têtue et ambitieuse : elle préfère rester afin de profiter tranquillement de sa retraite plus tard. Je crois que si on est fort, rien ne peut nous éloigner de nos objectifs. C'est pour ça que j'admire Sarah, même si je ne ferais jamais comme elle !",
+    "en": "Sarah is an engineer at a large company in Toulouse. She has a good salary, but the atmosphere at the office is terrible. She has excellent references and a lot of experience; otherwise, how would she earn so much? I work at an employment agency, and I promised to help her. But at the moment, there's no position available in her field. Last week, it looked like she was going to get a promotion, but a colleague with more seniority got it. She thought of asking for sick leave; that way she could have rested a bit. But her boss needs her for an important project. What would you do in her place? If I were her, I would resign. She's thirty-five, and she has saved a lot of money to buy a house in the countryside. But Sarah is stubborn and ambitious: she prefers to stay so she can enjoy her retirement peacefully later. I believe that if you're strong, nothing can take you away from your goals. That's why I admire Sarah, even if I would never do what she does!",
+    "es": "Sarah es ingeniera en una gran empresa de Toulouse. Tiene un buen sueldo, pero el ambiente en la oficina es terrible. Tiene excelentes referencias y mucha experiencia; si no, ¿cómo ganaría tanto? Yo trabajo en una agencia de empleo y le prometí ayudarla. Pero ahora mismo no hay ningún puesto disponible en su campo. La semana pasada parecía que iba a conseguir un ascenso, pero se lo dieron a un compañero con más antigüedad. Pensó en pedir la baja por enfermedad; así habría podido descansar un poco. Pero su jefe la necesita para un proyecto importante. ¿Qué haría usted en su lugar? Si yo fuera ella, dimitiría. Tiene treinta y cinco años y ha ahorrado mucho dinero para comprarse una casa en el campo. Pero Sarah es testaruda y ambiciosa: prefiere quedarse para disfrutar tranquilamente de su jubilación más adelante. Creo que si uno es fuerte, nada puede alejarlo de sus objetivos. Por eso admiro a Sarah, ¡aunque yo nunca haría lo mismo!",
+    "highlighted_words": [
+      "salaire",
+      "ambiance",
+      "références",
+      "comment gagnerait-elle",
+      "agence pour l'emploi",
+      "allait avoir une promotion",
+      "arrêt maladie",
+      "elle aurait pu",
+      "Que feriez-vous si vous étiez",
+      "Si j'étais elle, je démissionnerais",
+      "afin de profiter",
+      "retraite",
+      "ferais"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Si j'avais le temps je lirais plus",
+      "en": "If I had time I would read more",
+      "es": "Si tuviera tiempo, leería más"
+    },
+    {
+      "sentence": "Si j'étais toi je démissionnerais",
+      "en": "If I were you I would resign",
+      "es": "Si yo fuera tú, dimitiría"
+    },
+    {
+      "sentence": "Qu'est-ce que tu ferais à ma place",
+      "en": "What would you do in my place",
+      "es": "¿Qué harías en mi lugar?"
+    },
+    {
+      "sentence": "J'ai un entretien demain",
+      "en": "I have an interview tomorrow",
+      "es": "Tengo una entrevista mañana"
+    },
+    {
+      "sentence": "Il a envoyé son CV",
+      "en": "He sent his résumé",
+      "es": "Envió su currículum"
+    },
+    {
+      "sentence": "Elle gagnerait plus si elle parlait anglais",
+      "en": "She would earn more if she spoke English",
+      "es": "Ganaría más si hablara inglés"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Je cherche un emploi",
+      "en": "I'm looking for a job",
+      "es": "Busco trabajo"
+    },
+    {
+      "answer": "Il a démissionné",
+      "en": "He resigned",
+      "es": "Ha dimitido"
+    },
+    {
+      "answer": "Si j'étais riche, je ne travaillerais pas",
+      "en": "If I were rich, I wouldn't work",
+      "es": "Si fuera rico, no trabajaría"
+    },
+    {
+      "answer": "Elle travaille à mi-temps",
+      "en": "She works part-time",
+      "es": "Trabaja a media jornada"
+    },
+    {
+      "answer": "Quel est le salaire ?",
+      "en": "What is the salary?",
+      "es": "¿Cuál es el sueldo?"
+    },
+    {
+      "answer": "Il va prendre sa retraite",
+      "en": "He is going to retire",
+      "es": "Se va a jubilar"
+    }
+  ]
+}

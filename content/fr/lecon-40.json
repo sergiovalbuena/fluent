@@ -1,0 +1,560 @@
+{
+  "lesson": 40,
+  "slug": "lecon-40",
+  "icon": "🪩",
+  "title": {
+    "fr": "Une soirée dehors",
+    "es": "Una noche de salida",
+    "en": "A night out"
+  },
+  "source": {
+    "audio": "Lecons 40.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "aller (imparfait) + infinitif",
+      "example": "J'allais sortir quand elle est tombée malade.",
+      "en": "\"Was going to\" (plan that didn't happen)",
+      "es": "«Iba a» (plan que no se cumplió)"
+    },
+    {
+      "structure": "… mais + passé composé",
+      "example": "Elle allait devenir chanteuse, mais elle a eu un accident.",
+      "en": "Interrupted intentions",
+      "es": "Intenciones interrumpidas"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Sa voix sonna au bout du fil et elle m'invita.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    },
+    {
+      "structure": "se rendre compte que",
+      "example": "Je me suis rendu compte que j'avais besoin d'argent.",
+      "en": "\"To realize that\"",
+      "es": "«Darse cuenta de que»"
+    },
+    {
+      "structure": "plus-que-parfait",
+      "example": "Mon ami avait déjà prévu qu'on irait en boîte.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    },
+    {
+      "structure": "si + imparfait (passé)",
+      "example": "Ils allaient casser la porte si le club n'ouvrait pas.",
+      "en": "Condition in a past context",
+      "es": "Condición en contexto pasado"
+    },
+    {
+      "structure": "s'en ficher (familier)",
+      "example": "Elle s'en fiche de tout ça.",
+      "en": "\"Not to care\" (informal)",
+      "es": "«Importarle un pepino» (coloquial)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"J'allais + infinitive\" describes something you were about to do or planned to do in the past — often followed by \"mais…\" or \"quand…\".",
+      "es": "«J'allais + infinitivo» describe algo que ibas a hacer o tenías planeado en el pasado; suele ir seguido de «mais…» o «quand…»."
+    },
+    {
+      "en": "Night out vocabulary: \"sortir en boîte\" (to go clubbing), \"le videur\" (bouncer), \"prendre un verre\" (to have a drink), \"rentrer tard\" (to come home late).",
+      "es": "Vocabulario de salida: «sortir en boîte» (ir de discoteca), «le videur» (portero), «prendre un verre» (tomar algo), «rentrer tard» (volver tarde)."
+    },
+    {
+      "en": "\"S'en ficher\" / \"s'en moquer\" = not to care (informal but polite enough). \"Je m'en fiche !\" = I don't care!",
+      "es": "«S'en ficher» / «s'en moquer» = importar poco (coloquial pero aceptable). «Je m'en fiche !» = ¡Me da igual!"
+    },
+    {
+      "en": "\"Passer prendre / chercher quelqu'un\" = to pick someone up.",
+      "es": "«Passer prendre / chercher quelqu'un» = pasar a recoger a alguien."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "sortir",
+      "en": "to go out",
+      "es": "salir"
+    },
+    {
+      "word": "la soirée",
+      "en": "the evening / party",
+      "es": "la velada / la fiesta"
+    },
+    {
+      "word": "la fête",
+      "en": "the party",
+      "es": "la fiesta"
+    },
+    {
+      "word": "la boîte de nuit",
+      "en": "the nightclub",
+      "es": "la discoteca"
+    },
+    {
+      "word": "le club",
+      "en": "the club",
+      "es": "el club"
+    },
+    {
+      "word": "le bar",
+      "en": "the bar",
+      "es": "el bar"
+    },
+    {
+      "word": "danser",
+      "en": "to dance",
+      "es": "bailar"
+    },
+    {
+      "word": "chanter",
+      "en": "to sing",
+      "es": "cantar"
+    },
+    {
+      "word": "prendre un verre",
+      "en": "to have a drink",
+      "es": "tomar algo"
+    },
+    {
+      "word": "passer chercher",
+      "en": "to pick up",
+      "es": "pasar a recoger"
+    },
+    {
+      "word": "le taxi",
+      "en": "the taxi",
+      "es": "el taxi"
+    },
+    {
+      "word": "le chauffeur",
+      "en": "the driver",
+      "es": "el conductor"
+    },
+    {
+      "word": "la limousine",
+      "en": "the limousine",
+      "es": "la limusina"
+    },
+    {
+      "word": "inviter",
+      "en": "to invite",
+      "es": "invitar"
+    },
+    {
+      "word": "partager",
+      "en": "to share",
+      "es": "compartir"
+    },
+    {
+      "word": "parier",
+      "en": "to bet",
+      "es": "apostar"
+    },
+    {
+      "word": "prêter",
+      "en": "to lend",
+      "es": "prestar"
+    },
+    {
+      "word": "apprendre",
+      "en": "to learn / teach",
+      "es": "aprender / enseñar"
+    },
+    {
+      "word": "enseigner",
+      "en": "to teach",
+      "es": "enseñar"
+    },
+    {
+      "word": "renoncer",
+      "en": "to give up",
+      "es": "renunciar"
+    },
+    {
+      "word": "supporter",
+      "en": "to stand / put up with",
+      "es": "soportar"
+    },
+    {
+      "word": "casser",
+      "en": "to break",
+      "es": "romper"
+    },
+    {
+      "word": "briller",
+      "en": "to shine",
+      "es": "brillar"
+    },
+    {
+      "word": "libre",
+      "en": "free",
+      "es": "libre"
+    },
+    {
+      "word": "avoir honte",
+      "en": "to be ashamed",
+      "es": "tener vergüenza"
+    },
+    {
+      "word": "s'ennuyer",
+      "en": "to be bored",
+      "es": "aburrirse"
+    },
+    {
+      "word": "se retrouver",
+      "en": "to meet up",
+      "es": "quedar / reunirse"
+    },
+    {
+      "word": "le bal de fin d'année",
+      "en": "the prom",
+      "es": "el baile de fin de curso"
+    },
+    {
+      "word": "puni / punie",
+      "en": "grounded / punished",
+      "es": "castigado / castigada"
+    },
+    {
+      "word": "rentrer tard",
+      "en": "to come home late",
+      "es": "volver tarde"
+    },
+    {
+      "word": "gâcher",
+      "en": "to spoil",
+      "es": "estropear"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "On allait sortir quand elle est tombée malade.",
+      "en": "We were going to go out when she fell ill.",
+      "es": "Íbamos a salir cuando se puso enferma."
+    },
+    {
+      "phrase": "J'allais passer te chercher.",
+      "en": "I was going to pick you up.",
+      "es": "Iba a pasar a buscarte."
+    },
+    {
+      "phrase": "Ils allaient l'inviter en boîte, mais ils n'avaient pas assez d'argent.",
+      "en": "They were going to invite her to a club, but they didn't have enough money.",
+      "es": "Iban a invitarla a la discoteca, pero no tenían suficiente dinero."
+    },
+    {
+      "phrase": "Elle allait devenir chanteuse, mais elle a eu un accident.",
+      "en": "She was going to become a singer, but she had an accident.",
+      "es": "Iba a ser cantante, pero tuvo un accidente."
+    },
+    {
+      "phrase": "J'allais te prêter la voiture pour la fête, mais maintenant tu es punie !",
+      "en": "I was going to lend you the car for the party, but now you're grounded!",
+      "es": "Iba a prestarte el coche para la fiesta, ¡pero ahora estás castigada!"
+    },
+    {
+      "phrase": "Le chauffeur allait nous ramener, mais ma copine a décidé d'aller danser.",
+      "en": "The driver was going to take us home, but my girlfriend decided to go dancing.",
+      "es": "El conductor iba a llevarnos a casa, pero mi novia decidió ir a bailar."
+    },
+    {
+      "phrase": "Il allait chanter ce soir, mais il a mal à la gorge.",
+      "en": "He was going to sing tonight, but he has a sore throat.",
+      "es": "Iba a cantar esta noche, pero le duele la garganta."
+    },
+    {
+      "phrase": "Allez, appelle un taxi !",
+      "en": "Come on, call a taxi!",
+      "es": "¡Venga, llama a un taxi!"
+    },
+    {
+      "phrase": "J'allais abandonner, mais je me suis rendu compte que j'avais besoin de ce travail.",
+      "en": "I was going to give up, but I realized I needed this job.",
+      "es": "Iba a rendirme, pero me di cuenta de que necesitaba este trabajo."
+    },
+    {
+      "phrase": "Tu allais danser ce soir ? — Oui, mais je suis trop fatiguée.",
+      "en": "Were you going to go dancing tonight? — Yes, but I'm too tired.",
+      "es": "¿Ibas a ir a bailar esta noche? — Sí, pero estoy demasiado cansada."
+    },
+    {
+      "phrase": "Où est-ce qu'ils allaient se retrouver ? — À minuit, dans un bar du centre.",
+      "en": "Where were they going to meet? — At midnight, in a bar downtown.",
+      "es": "¿Dónde iban a quedar? — A medianoche, en un bar del centro."
+    },
+    {
+      "phrase": "On n'allait pas rester dans ce bar ? — Non, je m'y ennuyais.",
+      "en": "Weren't we going to stay in that bar? — No, I was bored there.",
+      "es": "¿No íbamos a quedarnos en ese bar? — No, me aburría allí."
+    },
+    {
+      "phrase": "Tu n'as pas eu honte d'aller seul au bal ? — Si, mais je me suis bien amusé.",
+      "en": "Weren't you embarrassed to go to the prom alone? — Yes, but I had a great time.",
+      "es": "¿No te dio vergüenza ir solo al baile? — Sí, pero me lo pasé muy bien."
+    },
+    {
+      "phrase": "Elle s'en fiche de tout ça.",
+      "en": "She doesn't care about all that.",
+      "es": "Le da igual todo eso."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "\"J'allais sortir quand il a appelé.\" Meaning?",
+        "es": "«J'allais sortir quand il a appelé.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I was about to go out when he called.",
+          "I went out when he called.",
+          "I will go out when he calls.",
+          "I had gone out when he called."
+        ],
+        "es": [
+          "Iba a salir cuando llamó.",
+          "Salí cuando llamó.",
+          "Saldré cuando llame.",
+          "Había salido cuando llamó."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait of \"aller\" + infinitive = was going to.",
+        "es": "Imperfecto de «aller» + infinitivo = iba a."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle ___ chanter, mais elle a perdu sa voix.\"",
+        "es": "Completa: «Elle ___ chanter, mais elle a perdu sa voix.»"
+      },
+      "options": [
+        "allait",
+        "va",
+        "est allée",
+        "ira"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Intention in the past that didn't happen.",
+        "es": "Intención pasada que no se cumplió."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je me suis rendu compte que j'___ mes clés.\"",
+        "es": "Completa: «Je me suis rendu compte que j'___ mes clés.»"
+      },
+      "options": [
+        "avais oublié",
+        "ai oublié",
+        "oublierai",
+        "oublie"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus-que-parfait: before the moment of realizing.",
+        "es": "Plus-que-parfait: antes del momento de darse cuenta."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Sortir en boîte\" means…",
+        "es": "«Sortir en boîte» significa…"
+      },
+      "options": {
+        "en": [
+          "to go clubbing",
+          "to go out of a box",
+          "to go shopping",
+          "to take a taxi"
+        ],
+        "es": [
+          "ir de discoteca",
+          "salir de una caja",
+          "ir de compras",
+          "tomar un taxi"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Une boîte (de nuit) = a nightclub.",
+        "es": "Une boîte (de nuit) = una discoteca."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Je passe te chercher à huit heures.\" Meaning?",
+        "es": "«Je passe te chercher à huit heures.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I'll pick you up at eight.",
+          "I'll look for you at eight.",
+          "I'll pass by you at eight.",
+          "I'll wait for you at eight."
+        ],
+        "es": [
+          "Paso a buscarte a las ocho.",
+          "Te buscaré a las ocho.",
+          "Pasaré junto a ti a las ocho.",
+          "Te esperaré a las ocho."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Passer chercher = to pick up.",
+        "es": "Passer chercher = pasar a recoger."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence uses the passé simple?",
+        "es": "¿Qué frase usa el passé simple?"
+      },
+      "options": [
+        "Elle m'invita.",
+        "Elle m'a invité.",
+        "Elle m'invitait.",
+        "Elle allait m'inviter."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Inviter → elle invita.",
+        "es": "Inviter → elle invita."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Je m'en fiche.\" Meaning?",
+        "es": "«Je m'en fiche.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I don't care.",
+          "I'm leaving.",
+          "I'm afraid.",
+          "I'm sorry."
+        ],
+        "es": [
+          "Me da igual.",
+          "Me voy.",
+          "Tengo miedo.",
+          "Lo siento."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Informal but not vulgar.",
+        "es": "Coloquial pero no vulgar."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Tu n'as pas eu honte ? — ___, un peu.\"",
+        "es": "Completa: «Tu n'as pas eu honte ? — ___, un peu.»"
+      },
+      "options": [
+        "Si",
+        "Oui",
+        "Non",
+        "Pas"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Si\" contradicts a negative question.",
+        "es": "«Si» contradice una pregunta negativa."
+      }
+    }
+  ],
+  "story": {
+    "title": "La soirée qui a mal commencé",
+    "text": "J'ai rencontré Camille il y a un mois au cours de théâtre, et j'avais très envie de l'inviter. Mais je ne savais ni quoi lui dire ni où l'emmener. Samedi dernier, j'allais sortir avec des copains dans un bar près de chez moi. J'allais monter dans le bus quand mon téléphone sonna : c'était elle ! Elle m'invita à l'anniversaire d'une amie. J'allais mettre une chemise élégante, mais je me suis rappelé qu'elle s'en fiche de ce genre de choses. Alors, j'ai mis un jean et un pull, et je suis passé la chercher. La fête était géniale, mais vers minuit, les voisins se plaignirent du bruit. Tout le monde pensait que la soirée allait se terminer. Heureusement, une amie de Camille avait déjà réservé une table dans une boîte de nuit du centre. Nous allions y aller tous les deux, et finalement, tout le groupe nous a suivis ! Le seul problème : en descendant les escaliers, je suis tombé et je me suis tordu la cheville. J'ai gâché la soirée, et j'ai pensé qu'elle n'allait plus jamais me parler. Mais cette nuit-là, elle resta avec moi aux urgences et elle rit avec moi de toute cette histoire. Aujourd'hui, c'est ma copine.",
+    "en": "I met Camille a month ago at drama class, and I really wanted to ask her out. But I knew neither what to say nor where to take her. Last Saturday, I was going to go out with some friends to a bar near my place. I was about to get on the bus when my phone rang: it was her! She invited me to a friend's birthday party. I was going to wear a smart shirt, but I remembered she doesn't care about that kind of thing. So I put on jeans and a sweater, and went to pick her up. The party was great, but around midnight, the neighbors complained about the noise. Everyone thought the evening was going to end. Fortunately, a friend of Camille's had already booked a table at a club downtown. The two of us were going to go, and in the end the whole group followed us! The only problem: going down the stairs, I fell and twisted my ankle. I ruined the evening, and I thought she would never speak to me again. But that night, she stayed with me at the ER and laughed with me about the whole thing. Today, she's my girlfriend.",
+    "es": "Conocí a Camille hace un mes en la clase de teatro y tenía muchas ganas de invitarla a salir. Pero no sabía ni qué decirle ni adónde llevarla. El sábado pasado iba a salir con unos amigos a un bar cerca de mi casa. Iba a subirme al autobús cuando sonó mi teléfono: ¡era ella! Me invitó al cumpleaños de una amiga. Iba a ponerme una camisa elegante, pero me acordé de que a ella le dan igual esas cosas. Así que me puse un vaquero y un jersey y pasé a buscarla. La fiesta estuvo genial, pero hacia medianoche los vecinos se quejaron del ruido. Todo el mundo pensaba que la noche se iba a acabar. Por suerte, una amiga de Camille ya había reservado una mesa en una discoteca del centro. Íbamos a ir los dos solos y, al final, ¡nos siguió todo el grupo! El único problema: bajando las escaleras, me caí y me torcí el tobillo. Estropeé la noche y pensé que no volvería a hablarme nunca. Pero esa noche se quedó conmigo en urgencias y se rio conmigo de toda la historia. Hoy es mi novia.",
+    "highlighted_words": [
+      "j'allais sortir",
+      "J'allais monter",
+      "sonna",
+      "invita",
+      "J'allais mettre",
+      "s'en fiche",
+      "se plaignirent",
+      "allait se terminer",
+      "avait déjà réservé",
+      "Nous allions y aller",
+      "J'ai gâché",
+      "n'allait plus jamais",
+      "resta"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'allais sortir quand tu as appelé",
+      "en": "I was going to go out when you called",
+      "es": "Iba a salir cuando llamaste"
+    },
+    {
+      "sentence": "Elle allait chanter mais elle était malade",
+      "en": "She was going to sing but she was ill",
+      "es": "Iba a cantar, pero estaba enferma"
+    },
+    {
+      "sentence": "Je passe te chercher à huit heures",
+      "en": "I'll pick you up at eight",
+      "es": "Paso a buscarte a las ocho"
+    },
+    {
+      "sentence": "On va sortir en boîte",
+      "en": "We're going clubbing",
+      "es": "Vamos a ir de discoteca"
+    },
+    {
+      "sentence": "Je me suis rendu compte que c'était tard",
+      "en": "I realized it was late",
+      "es": "Me di cuenta de que era tarde"
+    },
+    {
+      "sentence": "Elle s'en fiche",
+      "en": "She doesn't care",
+      "es": "Le da igual"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Appelle un taxi",
+      "en": "Call a taxi",
+      "es": "Llama a un taxi"
+    },
+    {
+      "answer": "J'allais t'inviter",
+      "en": "I was going to invite you",
+      "es": "Iba a invitarte"
+    },
+    {
+      "answer": "On prend un verre ?",
+      "en": "Shall we have a drink?",
+      "es": "¿Tomamos algo?"
+    },
+    {
+      "answer": "Je m'ennuyais",
+      "en": "I was bored",
+      "es": "Me aburría"
+    },
+    {
+      "answer": "Ils allaient danser",
+      "en": "They were going to dance",
+      "es": "Iban a bailar"
+    },
+    {
+      "answer": "Je suis rentré tard",
+      "en": "I came home late",
+      "es": "Volví tarde"
+    }
+  ]
+}

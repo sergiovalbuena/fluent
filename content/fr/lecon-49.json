@@ -1,0 +1,593 @@
+{
+  "lesson": 49,
+  "slug": "lecon-49",
+  "icon": "🩺",
+  "title": {
+    "fr": "Chez le médecin",
+    "es": "En el médico",
+    "en": "At the doctor's"
+  },
+  "source": {
+    "audio": "Lecons 49.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "à moins que + subjonctif",
+      "example": "Tu ne peux pas t'approcher du chat à moins que tu prennes tes comprimés.",
+      "en": "\"Unless\" + subjunctive",
+      "es": "«A menos que» + subjuntivo"
+    },
+    {
+      "structure": "sinon + futur",
+      "example": "Prends ton médicament, sinon le médecin te donnera un traitement plus fort.",
+      "en": "\"Otherwise\" + future",
+      "es": "«Si no» + futuro"
+    },
+    {
+      "structure": "il faut que + subjonctif",
+      "example": "Il faut que tu ailles voir un spécialiste.",
+      "en": "Necessity + subjunctive",
+      "es": "Necesidad + subjuntivo"
+    },
+    {
+      "structure": "même si + indicatif",
+      "example": "Même si tu te reposes, tu dois prendre les médicaments.",
+      "en": "\"Even if\"",
+      "es": "«Aunque / incluso si»"
+    },
+    {
+      "structure": "si + présent → futur",
+      "example": "Il ira mieux si on l'emmène à l'hôpital.",
+      "en": "Real condition",
+      "es": "Condición real"
+    },
+    {
+      "structure": "dès que + passé composé",
+      "example": "Dès que je suis sorti de l'hôpital, je me suis senti fatigué.",
+      "en": "\"As soon as\" (past)",
+      "es": "«En cuanto» (pasado)"
+    },
+    {
+      "structure": "discours indirect au passé",
+      "example": "Il m'a dit que j'avais la grippe et que je pouvais tomber malade si je ne me reposais pas.",
+      "en": "Reported speech",
+      "es": "Estilo indirecto"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Il me parla quelques minutes et me conseilla de partir en vacances.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"À moins que\" takes the subjunctive (often with \"ne\" in formal French): \"à moins qu'il (ne) pleuve\".",
+      "es": "«À moins que» va con subjuntivo (a menudo con «ne» en francés formal): «à moins qu'il (ne) pleuve»."
+    },
+    {
+      "en": "At the doctor: \"J'ai mal à…\", \"J'ai de la fièvre\", \"Je tousse\", \"J'ai des vertiges\", \"Je suis allergique à…\". The doctor writes \"une ordonnance\" (prescription).",
+      "es": "En el médico: «J'ai mal à…», «J'ai de la fièvre», «Je tousse», «J'ai des vertiges», «Je suis allergique à…». El médico escribe «une ordonnance» (receta)."
+    },
+    {
+      "en": "\"Le médecin traitant\" = family doctor; \"les urgences\" = the ER; \"la carte Vitale\" = French health insurance card.",
+      "es": "«Le médecin traitant» = médico de cabecera; «les urgences» = urgencias; «la carte Vitale» = tarjeta sanitaria francesa."
+    },
+    {
+      "en": "\"Un comprimé / une gélule\" = a tablet / capsule; \"le sirop\" = cough syrup; \"une piqûre\" = a shot.",
+      "es": "«Un comprimé / une gélule» = una pastilla / cápsula; «le sirop» = el jarabe; «une piqûre» = una inyección."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le médecin",
+      "en": "the doctor",
+      "es": "el médico"
+    },
+    {
+      "word": "le / la spécialiste",
+      "en": "the specialist",
+      "es": "el / la especialista"
+    },
+    {
+      "word": "l'infirmier / l'infirmière",
+      "en": "the nurse",
+      "es": "el enfermero / la enfermera"
+    },
+    {
+      "word": "le cabinet médical",
+      "en": "the doctor's office",
+      "es": "la consulta"
+    },
+    {
+      "word": "les urgences",
+      "en": "the ER",
+      "es": "urgencias"
+    },
+    {
+      "word": "l'hôpital",
+      "en": "the hospital",
+      "es": "el hospital"
+    },
+    {
+      "word": "la pharmacie",
+      "en": "the pharmacy",
+      "es": "la farmacia"
+    },
+    {
+      "word": "l'ordonnance",
+      "en": "the prescription",
+      "es": "la receta"
+    },
+    {
+      "word": "le médicament",
+      "en": "the medicine",
+      "es": "el medicamento"
+    },
+    {
+      "word": "le comprimé",
+      "en": "the tablet",
+      "es": "la pastilla"
+    },
+    {
+      "word": "la gélule",
+      "en": "the capsule",
+      "es": "la cápsula"
+    },
+    {
+      "word": "le sirop",
+      "en": "the syrup",
+      "es": "el jarabe"
+    },
+    {
+      "word": "l'aspirine",
+      "en": "aspirin",
+      "es": "la aspirina"
+    },
+    {
+      "word": "la piqûre",
+      "en": "the shot",
+      "es": "la inyección"
+    },
+    {
+      "word": "le vaccin",
+      "en": "the vaccine",
+      "es": "la vacuna"
+    },
+    {
+      "word": "le pansement",
+      "en": "the bandage / dressing",
+      "es": "la venda / el apósito"
+    },
+    {
+      "word": "le plâtre",
+      "en": "the cast",
+      "es": "la escayola"
+    },
+    {
+      "word": "les points de suture",
+      "en": "stitches",
+      "es": "los puntos"
+    },
+    {
+      "word": "les symptômes",
+      "en": "symptoms",
+      "es": "los síntomas"
+    },
+    {
+      "word": "la fièvre",
+      "en": "fever",
+      "es": "la fiebre"
+    },
+    {
+      "word": "la grippe",
+      "en": "the flu",
+      "es": "la gripe"
+    },
+    {
+      "word": "le rhume",
+      "en": "the cold",
+      "es": "el resfriado"
+    },
+    {
+      "word": "l'allergie",
+      "en": "the allergy",
+      "es": "la alergia"
+    },
+    {
+      "word": "allergique",
+      "en": "allergic",
+      "es": "alérgico"
+    },
+    {
+      "word": "l'infection",
+      "en": "the infection",
+      "es": "la infección"
+    },
+    {
+      "word": "la blessure",
+      "en": "the wound",
+      "es": "la herida"
+    },
+    {
+      "word": "la douleur",
+      "en": "the pain",
+      "es": "el dolor"
+    },
+    {
+      "word": "tousser",
+      "en": "to cough",
+      "es": "toser"
+    },
+    {
+      "word": "éternuer",
+      "en": "to sneeze",
+      "es": "estornudar"
+    },
+    {
+      "word": "vomir",
+      "en": "to vomit",
+      "es": "vomitar"
+    },
+    {
+      "word": "avoir des vertiges",
+      "en": "to feel dizzy",
+      "es": "marearse"
+    },
+    {
+      "word": "s'évanouir",
+      "en": "to faint",
+      "es": "desmayarse"
+    },
+    {
+      "word": "les frissons",
+      "en": "chills",
+      "es": "los escalofríos"
+    },
+    {
+      "word": "saigner",
+      "en": "to bleed",
+      "es": "sangrar"
+    },
+    {
+      "word": "examiner",
+      "en": "to examine",
+      "es": "examinar"
+    },
+    {
+      "word": "diagnostiquer",
+      "en": "to diagnose",
+      "es": "diagnosticar"
+    },
+    {
+      "word": "guérir",
+      "en": "to cure / heal",
+      "es": "curar"
+    },
+    {
+      "word": "se remettre",
+      "en": "to recover",
+      "es": "recuperarse"
+    },
+    {
+      "word": "se reposer",
+      "en": "to rest",
+      "es": "descansar"
+    },
+    {
+      "word": "la santé",
+      "en": "health",
+      "es": "la salud"
+    },
+    {
+      "word": "stressé / stressée",
+      "en": "stressed",
+      "es": "estresado / estresada"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Tu ne peux pas t'approcher du chat à moins que tu prennes tes comprimés contre l'allergie.",
+      "en": "You can't go near the cat unless you take your allergy tablets.",
+      "es": "No puedes acercarte al gato a menos que te tomes las pastillas para la alergia."
+    },
+    {
+      "phrase": "Mets un pansement sur cette blessure, même si elle ne saigne plus.",
+      "en": "Put a bandage on that wound, even if it isn't bleeding anymore.",
+      "es": "Ponte una venda en esa herida, aunque ya no sangre."
+    },
+    {
+      "phrase": "Prends ton médicament, sinon le médecin te donnera un traitement plus fort.",
+      "en": "Take your medicine, otherwise the doctor will give you a stronger treatment.",
+      "es": "Tómate el medicamento, si no el médico te dará un tratamiento más fuerte."
+    },
+    {
+      "phrase": "Il faut faire cette piqûre, sinon tu auras encore des vertiges.",
+      "en": "You need this shot, otherwise you'll still feel dizzy.",
+      "es": "Hay que ponerte esta inyección, si no seguirás mareado."
+    },
+    {
+      "phrase": "Il ira mieux si on l'emmène à l'hôpital.",
+      "en": "He'll get better if we take him to the hospital.",
+      "es": "Mejorará si lo llevamos al hospital."
+    },
+    {
+      "phrase": "Il faut que tu ailles voir un spécialiste.",
+      "en": "You need to see a specialist.",
+      "es": "Tienes que ir a un especialista."
+    },
+    {
+      "phrase": "Sa blessure ne guérira pas à moins qu'elle arrête de marcher.",
+      "en": "Her wound won't heal unless she stops walking.",
+      "es": "Su herida no se curará a menos que deje de caminar."
+    },
+    {
+      "phrase": "Dès que je suis sorti de l'hôpital, je me suis senti fatigué.",
+      "en": "As soon as I left the hospital, I felt tired.",
+      "es": "En cuanto salí del hospital, me sentí cansado."
+    },
+    {
+      "phrase": "Les enfants peuvent s'empoisonner s'ils jouent avec les produits ménagers.",
+      "en": "Children can poison themselves if they play with cleaning products.",
+      "es": "Los niños pueden intoxicarse si juegan con los productos de limpieza."
+    },
+    {
+      "phrase": "Je peux aller au lycée aujourd'hui ? — Non, tu n'iras pas mieux si tu ne te reposes pas.",
+      "en": "Can I go to school today? — No, you won't get better if you don't rest.",
+      "es": "¿Puedo ir al instituto hoy? — No, no mejorarás si no descansas."
+    },
+    {
+      "phrase": "Mon bébé est faible. — Quels sont les symptômes ? — Fièvre, mal de gorge et vomissements.",
+      "en": "My baby is weak. — What are the symptoms? — Fever, sore throat and vomiting.",
+      "es": "Mi bebé está débil. — ¿Cuáles son los síntomas? — Fiebre, dolor de garganta y vómitos."
+    },
+    {
+      "phrase": "Le médecin lui a dit de mettre une crème pour l'allergie.",
+      "en": "The doctor told him to put on an allergy cream.",
+      "es": "El médico le dijo que se pusiera una crema para la alergia."
+    },
+    {
+      "phrase": "Pourquoi n'est-elle pas tombée malade ? — Le médecin l'avait vaccinée.",
+      "en": "Why didn't she get sick? — The doctor had vaccinated her.",
+      "es": "¿Por qué no se puso enferma? — El médico la había vacunado."
+    },
+    {
+      "phrase": "Je suis allergique à la pénicilline.",
+      "en": "I am allergic to penicillin.",
+      "es": "Soy alérgico a la penicilina."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Tu ne guériras pas à moins que tu te ___.\"",
+        "es": "Completa: «Tu ne guériras pas à moins que tu te ___.»"
+      },
+      "options": [
+        "reposes",
+        "reposeras",
+        "reposais",
+        "reposerais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"À moins que\" + subjunctive.",
+        "es": "«À moins que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il faut que tu ___ chez le médecin.\"",
+        "es": "Completa: «Il faut que tu ___ chez le médecin.»"
+      },
+      "options": [
+        "ailles",
+        "vas",
+        "iras",
+        "allais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Aller → que tu ailles.",
+        "es": "Aller → que tu ailles."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Prends ce sirop, ___ ta toux ne passera pas.\"",
+        "es": "Completa: «Prends ce sirop, ___ ta toux ne passera pas.»"
+      },
+      "options": [
+        "sinon",
+        "si",
+        "même si",
+        "à moins"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Sinon\" = otherwise.",
+        "es": "«Sinon» = si no."
+      }
+    },
+    {
+      "question": {
+        "en": "What does the doctor give you to take to the pharmacy?",
+        "es": "¿Qué te da el médico para llevar a la farmacia?"
+      },
+      "options": [
+        "une ordonnance",
+        "un pansement",
+        "un plâtre",
+        "une piqûre"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "L'ordonnance = prescription.",
+        "es": "L'ordonnance = receta."
+      }
+    },
+    {
+      "question": {
+        "en": "Reported: \"Vous avez la grippe.\" → Il m'a dit que j'___ la grippe.",
+        "es": "Indirecto: «Vous avez la grippe.» → Il m'a dit que j'___ la grippe."
+      },
+      "options": [
+        "avais",
+        "ai",
+        "aurai",
+        "aie"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Present → imparfait in reported speech.",
+        "es": "Presente → imperfecto en estilo indirecto."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Avoir des vertiges\" means…",
+        "es": "«Avoir des vertiges» significa…"
+      },
+      "options": {
+        "en": [
+          "to feel dizzy",
+          "to have a fever",
+          "to cough",
+          "to faint"
+        ],
+        "es": [
+          "marearse",
+          "tener fiebre",
+          "toser",
+          "desmayarse"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "S'évanouir = to faint.",
+        "es": "S'évanouir = desmayarse."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Même si tu ___ mieux, continue le traitement.\"",
+        "es": "Completa: «Même si tu ___ mieux, continue le traitement.»"
+      },
+      "options": [
+        "vas",
+        "ailles",
+        "iras",
+        "allais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Même si\" + indicative.",
+        "es": "«Même si» + indicativo."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you go in an emergency?",
+        "es": "¿Adónde vas en una emergencia?"
+      },
+      "options": [
+        "aux urgences",
+        "à la pharmacie",
+        "au cabinet",
+        "chez le dentiste"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Les urgences = ER.",
+        "es": "Les urgences = urgencias."
+      }
+    }
+  ],
+  "story": {
+    "title": "Trop de stress",
+    "text": "Depuis quelques semaines, Margaux se sent faible et fatiguée, même si elle dort toute la nuit. Quand elle était adolescente, elle avait souvent mal à la tête et elle s'évanouissait parfois. Mais maintenant, c'est pire : elle a des frissons et des vertiges presque tous les jours. La semaine dernière, elle est allée voir son médecin traitant. Il lui a dit qu'elle avait sûrement un virus et lui a fait une ordonnance, mais les médicaments n'ont rien changé. Avant-hier, elle est allée voir un spécialiste, qui lui a fait faire des analyses. Il n'a rien trouvé. Heureusement, son amie Chloé, qui est psychologue, l'a appelée par hasard pour prendre de ses nouvelles. Margaux lui a raconté ses symptômes, et Chloé lui a proposé de passer la voir. Margaux pensait qu'elle allait l'examiner, mais Chloé lui parla seulement quelques minutes et lui conseilla de partir à la montagne. « Tu es folle ? » a répondu Margaux. « Non, tu es stressée. Si tu ne te reposes pas, tu vas vraiment tomber malade. À moins que tu préfères continuer comme ça ? » Margaux ne sait pas si c'est vrai, mais c'est une excellente excuse pour prendre des vacances !",
+    "en": "For a few weeks now, Margaux has been feeling weak and tired, even though she sleeps all night. When she was a teenager, she often had headaches and sometimes fainted. But now it's worse: she has chills and dizzy spells almost every day. Last week, she went to see her family doctor. He told her she probably had a virus and wrote her a prescription, but the medicine didn't change anything. The day before yesterday, she went to see a specialist, who had some tests done. He found nothing. Luckily, her friend Chloé, who is a psychologist, called her by chance to see how she was. Margaux told her about her symptoms, and Chloé suggested she come over. Margaux thought she was going to examine her, but Chloé only talked to her for a few minutes and advised her to go to the mountains. “Are you crazy?” Margaux replied. “No, you're stressed. If you don't rest, you'll really get sick. Unless you'd rather keep going like this?” Margaux doesn't know if it's true, but it's an excellent excuse to take a vacation!",
+    "es": "Desde hace unas semanas, Margaux se siente débil y cansada, aunque duerme toda la noche. Cuando era adolescente, a menudo le dolía la cabeza y a veces se desmayaba. Pero ahora es peor: tiene escalofríos y mareos casi todos los días. La semana pasada fue a ver a su médico de cabecera. Le dijo que seguramente tenía un virus y le hizo una receta, pero los medicamentos no cambiaron nada. Anteayer fue a un especialista, que le mandó hacer unos análisis. No encontró nada. Por suerte, su amiga Chloé, que es psicóloga, la llamó por casualidad para saber cómo estaba. Margaux le contó sus síntomas y Chloé le propuso que fuera a verla. Margaux pensaba que iba a examinarla, pero Chloé solo le habló unos minutos y le aconsejó irse a la montaña. «¿Estás loca?», respondió Margaux. «No, estás estresada. Si no descansas, vas a enfermar de verdad. ¿A menos que prefieras seguir así?» Margaux no sabe si es verdad, ¡pero es una excusa excelente para tomarse unas vacaciones!",
+    "highlighted_words": [
+      "même si elle dort",
+      "s'évanouissait",
+      "frissons",
+      "vertiges",
+      "médecin traitant",
+      "Il lui a dit qu'elle avait",
+      "ordonnance",
+      "spécialiste",
+      "symptômes",
+      "parla",
+      "conseilla",
+      "stressée",
+      "Si tu ne te reposes pas",
+      "À moins que tu préfères"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'ai mal à la gorge",
+      "en": "I have a sore throat",
+      "es": "Me duele la garganta"
+    },
+    {
+      "sentence": "Il faut que tu te reposes",
+      "en": "You need to rest",
+      "es": "Tienes que descansar"
+    },
+    {
+      "sentence": "Prends ce médicament sinon tu seras malade",
+      "en": "Take this medicine otherwise you'll be sick",
+      "es": "Tómate este medicamento, si no te pondrás enfermo"
+    },
+    {
+      "sentence": "Je suis allergique aux chats",
+      "en": "I am allergic to cats",
+      "es": "Soy alérgico a los gatos"
+    },
+    {
+      "sentence": "Elle ira mieux à moins qu'elle sorte",
+      "en": "She'll get better unless she goes out",
+      "es": "Mejorará a menos que salga"
+    },
+    {
+      "sentence": "Le médecin m'a fait une ordonnance",
+      "en": "The doctor wrote me a prescription",
+      "es": "El médico me hizo una receta"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "J'ai de la fièvre",
+      "en": "I have a fever",
+      "es": "Tengo fiebre"
+    },
+    {
+      "answer": "Je tousse beaucoup",
+      "en": "I cough a lot",
+      "es": "Toso mucho"
+    },
+    {
+      "answer": "Où est la pharmacie ?",
+      "en": "Where is the pharmacy?",
+      "es": "¿Dónde está la farmacia?"
+    },
+    {
+      "answer": "J'ai rendez-vous chez le médecin",
+      "en": "I have a doctor's appointment",
+      "es": "Tengo cita con el médico"
+    },
+    {
+      "answer": "Reposez-vous",
+      "en": "Rest",
+      "es": "Descanse"
+    },
+    {
+      "answer": "Il s'est évanoui",
+      "en": "He fainted",
+      "es": "Se desmayó"
+    }
+  ]
+}

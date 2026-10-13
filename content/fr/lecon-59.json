@@ -1,0 +1,563 @@
+{
+  "lesson": 59,
+  "slug": "lecon-59",
+  "icon": "⚖️",
+  "title": {
+    "fr": "Chez l'avocat",
+    "es": "En el abogado",
+    "en": "At the lawyer's"
+  },
+  "source": {
+    "audio": "Lecons 59.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "connecteurs d'opposition",
+      "example": "cependant, pourtant, néanmoins, en revanche, par contre",
+      "en": "Contrast connectors",
+      "es": "Conectores de oposición"
+    },
+    {
+      "structure": "connecteurs d'addition",
+      "example": "en plus, de plus, en outre",
+      "en": "Adding information",
+      "es": "Conectores de adición"
+    },
+    {
+      "structure": "connecteurs de conséquence",
+      "example": "donc, par conséquent, c'est pourquoi",
+      "en": "Consequence connectors",
+      "es": "Conectores de consecuencia"
+    },
+    {
+      "structure": "bien que + subjonctif",
+      "example": "Bien qu'il ait dix avocats, il ira en prison.",
+      "en": "\"Although\" + subjunctive",
+      "es": "«Aunque» + subjuntivo"
+    },
+    {
+      "structure": "voix passive (passé)",
+      "example": "Elle a été dénoncée sept fois, mais elle n'a jamais été arrêtée.",
+      "en": "Passive in the past",
+      "es": "Pasiva en pasado"
+    },
+    {
+      "structure": "quand + futur",
+      "example": "Elle recevra l'argent quand elle aura dix-huit ans.",
+      "en": "Future after \"quand\"",
+      "es": "Futuro tras «quand»"
+    },
+    {
+      "structure": "plus-que-parfait (récit)",
+      "example": "Il ne savait pas que ce collègue avait été payé pour le piéger.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Il accepta. Quelques semaines plus tard, il fut arrêté.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il trouva, elle sourit) is the literary past of written stories; in conversation, use the passé composé.",
+      "es": "El passé simple (il trouva, elle sourit) es el pasado literario de los relatos escritos; al hablar se usa el passé composé."
+    },
+    {
+      "en": "\"En revanche\" and \"par contre\" both mean \"on the other hand\"; \"par contre\" is more informal.",
+      "es": "«En revanche» y «par contre» significan «en cambio»; «par contre» es más coloquial."
+    },
+    {
+      "en": "\"Bien que\" + subjunctive (\"bien qu'il soit\"); \"même si\" + indicative (\"même s'il est\"). They mean almost the same.",
+      "es": "«Bien que» + subjuntivo («bien qu'il soit»); «même si» + indicativo («même s'il est»). Significan casi lo mismo."
+    },
+    {
+      "en": "Legal words: \"l'avocat(e)\" (lawyer), \"le juge\" (judge), \"le procès\" (trial), \"le témoin\" (witness), \"la preuve\" (evidence), \"coupable / innocent\" (guilty / innocent), \"la caution\" (bail).",
+      "es": "Vocabulario jurídico: «l'avocat(e)» (abogado/a), «le juge» (juez), «le procès» (juicio), «le témoin» (testigo), «la preuve» (prueba), «coupable / innocent» (culpable / inocente), «la caution» (fianza)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'avocat / l'avocate",
+      "en": "the lawyer",
+      "es": "el abogado / la abogada"
+    },
+    {
+      "word": "le juge",
+      "en": "the judge",
+      "es": "el juez"
+    },
+    {
+      "word": "le tribunal",
+      "en": "the court",
+      "es": "el tribunal"
+    },
+    {
+      "word": "le procès",
+      "en": "the trial",
+      "es": "el juicio"
+    },
+    {
+      "word": "la défense",
+      "en": "the defense",
+      "es": "la defensa"
+    },
+    {
+      "word": "l'accusation",
+      "en": "the prosecution / charge",
+      "es": "la acusación"
+    },
+    {
+      "word": "le témoin",
+      "en": "the witness",
+      "es": "el testigo"
+    },
+    {
+      "word": "la preuve",
+      "en": "the evidence",
+      "es": "la prueba"
+    },
+    {
+      "word": "l'argument",
+      "en": "the argument",
+      "es": "el argumento"
+    },
+    {
+      "word": "le suspect",
+      "en": "the suspect",
+      "es": "el sospechoso"
+    },
+    {
+      "word": "coupable",
+      "en": "guilty",
+      "es": "culpable"
+    },
+    {
+      "word": "innocent / innocente",
+      "en": "innocent",
+      "es": "inocente"
+    },
+    {
+      "word": "la prison",
+      "en": "prison",
+      "es": "la cárcel"
+    },
+    {
+      "word": "arrêter",
+      "en": "to arrest",
+      "es": "detener"
+    },
+    {
+      "word": "dénoncer",
+      "en": "to report / denounce",
+      "es": "denunciar"
+    },
+    {
+      "word": "l'enquête",
+      "en": "the investigation",
+      "es": "la investigación"
+    },
+    {
+      "word": "la fraude",
+      "en": "fraud",
+      "es": "el fraude"
+    },
+    {
+      "word": "le vol",
+      "en": "theft",
+      "es": "el robo"
+    },
+    {
+      "word": "le délit",
+      "en": "the offense",
+      "es": "el delito"
+    },
+    {
+      "word": "corrompu / corrompue",
+      "en": "corrupt",
+      "es": "corrupto / corrupta"
+    },
+    {
+      "word": "la caution",
+      "en": "bail",
+      "es": "la fianza"
+    },
+    {
+      "word": "le testament",
+      "en": "the will",
+      "es": "el testamento"
+    },
+    {
+      "word": "l'héritage",
+      "en": "the inheritance",
+      "es": "la herencia"
+    },
+    {
+      "word": "adopté / adoptée",
+      "en": "adopted",
+      "es": "adoptado / adoptada"
+    },
+    {
+      "word": "la transaction",
+      "en": "the transaction",
+      "es": "la transacción"
+    },
+    {
+      "word": "la dette",
+      "en": "the debt",
+      "es": "la deuda"
+    },
+    {
+      "word": "cependant / pourtant",
+      "en": "however / yet",
+      "es": "sin embargo / no obstante"
+    },
+    {
+      "word": "néanmoins",
+      "en": "nevertheless",
+      "es": "no obstante"
+    },
+    {
+      "word": "en revanche / par contre",
+      "en": "on the other hand",
+      "es": "en cambio / por el contrario"
+    },
+    {
+      "word": "en plus / de plus",
+      "en": "moreover",
+      "es": "además"
+    },
+    {
+      "word": "en outre",
+      "en": "furthermore",
+      "es": "además (formal)"
+    },
+    {
+      "word": "par conséquent / donc",
+      "en": "therefore",
+      "es": "por consiguiente / por lo tanto"
+    },
+    {
+      "word": "de toute façon",
+      "en": "anyway",
+      "es": "de todos modos"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Elle a été dénoncée sept fois, mais elle n'a jamais été arrêtée.",
+      "en": "She was reported seven times, but she was never arrested.",
+      "es": "La denunciaron siete veces, pero nunca la detuvieron."
+    },
+    {
+      "phrase": "C'est une bonne avocate ; par contre, son associé n'est pas honnête.",
+      "en": "She's a good lawyer; on the other hand, her partner isn't honest.",
+      "es": "Es una buena abogada; en cambio, su socio no es honrado."
+    },
+    {
+      "phrase": "Bien qu'il ait dix avocats, il ira de toute façon en prison.",
+      "en": "Although he has ten lawyers, he'll go to prison anyway.",
+      "es": "Aunque tiene diez abogados, irá a la cárcel de todos modos."
+    },
+    {
+      "phrase": "Son testament dit que la maison appartient à son petit-fils. Par conséquent, elle n'aura rien.",
+      "en": "His will says the house belongs to his grandson. Therefore, she will get nothing.",
+      "es": "Su testamento dice que la casa pertenece a su nieto. Por consiguiente, ella no tendrá nada."
+    },
+    {
+      "phrase": "Elle recevra l'argent quand elle aura dix-huit ans ; cependant, elle touchera une pension chaque mois.",
+      "en": "She will receive the money when she turns eighteen; however, she will get a monthly allowance.",
+      "es": "Recibirá el dinero cuando cumpla dieciocho años; sin embargo, cobrará una pensión cada mes."
+    },
+    {
+      "phrase": "Il n'avait pas assez de preuves pour prouver son innocence. En plus, trois témoins étaient contre lui.",
+      "en": "He didn't have enough evidence to prove his innocence. Moreover, three witnesses were against him.",
+      "es": "No tenía pruebas suficientes para demostrar su inocencia. Además, tres testigos estaban en su contra."
+    },
+    {
+      "phrase": "L'avocat n'avait pas de bons arguments pour la défense.",
+      "en": "The lawyer didn't have good arguments for the defense.",
+      "es": "El abogado no tenía buenos argumentos para la defensa."
+    },
+    {
+      "phrase": "Tu es un bon avocat ; néanmoins, la partie adverse a une équipe excellente.",
+      "en": "You're a good lawyer; nevertheless, the other side has an excellent team.",
+      "es": "Eres un buen abogado; no obstante, la parte contraria tiene un equipo excelente."
+    },
+    {
+      "phrase": "Comment ? Il a été déclaré innocent ? — Il avait un très bon avocat, donc il a gagné.",
+      "en": "What? He was declared innocent? — He had a very good lawyer, so he won.",
+      "es": "¿Cómo? ¿Lo declararon inocente? — Tenía un abogado muy bueno, así que ganó."
+    },
+    {
+      "phrase": "Elle a un bon avocat ? — Oui, pourtant elle est coupable.",
+      "en": "Does she have a good lawyer? — Yes, and yet she is guilty.",
+      "es": "¿Tiene un buen abogado? — Sí, y sin embargo es culpable."
+    },
+    {
+      "phrase": "Pourquoi a-t-on arrêté ton cousin ? — Il était impliqué dans des affaires illégales.",
+      "en": "Why was your cousin arrested? — He was involved in illegal business.",
+      "es": "¿Por qué detuvieron a tu primo? — Estaba metido en negocios ilegales."
+    },
+    {
+      "phrase": "Est-elle encore en prison ? — Oui, mais elle sortira bientôt.",
+      "en": "Is she still in prison? — Yes, but she will be out soon.",
+      "es": "¿Sigue en la cárcel? — Sí, pero saldrá pronto."
+    },
+    {
+      "phrase": "Ils ont trouvé des preuves contre lui ? — Oui, c'est pourquoi il est en prison.",
+      "en": "Did they find evidence against him? — Yes, that's why he's in prison.",
+      "es": "¿Encontraron pruebas contra él? — Sí, por eso está en la cárcel."
+    },
+    {
+      "phrase": "Elle a gagné le procès ? — Bien sûr ! En plus, elle a reçu des dommages et intérêts.",
+      "en": "Did she win the trial? — Of course! Moreover, she received damages.",
+      "es": "¿Ganó el juicio? — ¡Claro! Además, recibió una indemnización."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Which connector expresses contrast?",
+        "es": "¿Qué conector expresa oposición?"
+      },
+      "options": [
+        "cependant",
+        "en plus",
+        "donc",
+        "par conséquent"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Cependant = however.",
+        "es": "Cependant = sin embargo."
+      }
+    },
+    {
+      "question": {
+        "en": "Which connector expresses consequence?",
+        "es": "¿Qué conector expresa consecuencia?"
+      },
+      "options": [
+        "par conséquent",
+        "en revanche",
+        "pourtant",
+        "en outre"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Par conséquent = therefore.",
+        "es": "Par conséquent = por consiguiente."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Bien qu'il ___ innocent, il est en prison.\"",
+        "es": "Completa: «Bien qu'il ___ innocent, il est en prison.»"
+      },
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "était"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Bien que\" + subjunctive.",
+        "es": "«Bien que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Même s'il ___ innocent, il est en prison.\"",
+        "es": "Completa: «Même s'il ___ innocent, il est en prison.»"
+      },
+      "options": [
+        "est",
+        "soit",
+        "serait",
+        "sera"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Même si\" + indicative.",
+        "es": "«Même si» + indicativo."
+      }
+    },
+    {
+      "question": {
+        "en": "Passive: \"La police a arrêté le voleur.\" → ?",
+        "es": "Pasiva: «La police a arrêté le voleur.» → ?"
+      },
+      "options": [
+        "Le voleur a été arrêté par la police.",
+        "Le voleur est arrêté la police.",
+        "Le voleur a arrêté par la police.",
+        "La police a été arrêtée par le voleur."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "avoir été + participle + par.",
+        "es": "avoir été + participio + par."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un témoin\"?",
+        "es": "¿Qué es «un témoin»?"
+      },
+      "options": {
+        "en": [
+          "a witness",
+          "a judge",
+          "a lawyer",
+          "a thief"
+        ],
+        "es": [
+          "un testigo",
+          "un juez",
+          "un abogado",
+          "un ladrón"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "He or she saw what happened.",
+        "es": "Vio lo que pasó."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle héritera quand elle ___ majeure.\"",
+        "es": "Completa: «Elle héritera quand elle ___ majeure.»"
+      },
+      "options": [
+        "sera",
+        "est",
+        "soit",
+        "serait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future after \"quand\".",
+        "es": "Futuro tras «quand»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"En revanche\" means…",
+        "es": "«En revanche» significa…"
+      },
+      "options": {
+        "en": [
+          "on the other hand",
+          "in revenge",
+          "moreover",
+          "therefore"
+        ],
+        "es": [
+          "en cambio",
+          "como venganza",
+          "además",
+          "por lo tanto"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Synonym: par contre.",
+        "es": "Sinónimo: par contre."
+      }
+    }
+  ],
+  "story": {
+    "title": "Accusé de fraude",
+    "text": "Mon frère Karim est comptable dans une grande entreprise de Marseille. Il a toujours été honnête et apprécié par ses chefs. Cependant, il y a un an, il traversa une période difficile. Bien que son travail lui plaise, son salaire ne suffisait pas à payer ses dettes. Un jour, un collègue lui proposa un moyen de s'en sortir : quelques transactions « un peu spéciales ». Karim hésita ; néanmoins, comme il était désespéré, il accepta. Il ne savait pas que ce collègue avait été payé par un directeur corrompu pour le piéger. Quelques semaines plus tard, après avoir signé des documents qui prouvaient la fraude, il fut arrêté. Il ne savait pas quoi faire, car il savait qu'il avait commis une erreur, même s'il n'avait jamais reçu d'argent. Heureusement, ses anciens chefs payèrent sa caution et lui trouvèrent une excellente avocate. Pendant l'enquête, elle découvrit que le directeur avait organisé tout le piège. Par conséquent, Karim fut libéré, et le directeur et le collègue furent condamnés. Aujourd'hui, Karim a sa propre entreprise. En plus, il aide gratuitement des gens qui ont des problèmes de dettes. Il dit toujours : « Ce ne sont pas les erreurs qui comptent, mais ce qu'on en apprend. »",
+    "en": "My brother Karim is an accountant in a large company in Marseille. He has always been honest and well liked by his bosses. However, a year ago, he went through a difficult time. Although he liked his job, his salary wasn't enough to pay his debts. One day, a colleague offered him a way out: a few “somewhat special” transactions. Karim hesitated; nevertheless, as he was desperate, he accepted. He didn't know that this colleague had been paid by a corrupt director to set him up. A few weeks later, after signing documents that proved the fraud, he was arrested. He didn't know what to do, because he knew he had made a mistake, even though he had never received any money. Fortunately, his former bosses paid his bail and found him an excellent lawyer. During the investigation, she discovered that the director had organized the whole trap. Consequently, Karim was released, and the director and the colleague were convicted. Today, Karim has his own company. Moreover, he helps people with debt problems for free. He always says: “It's not the mistakes that count, but what you learn from them.”",
+    "es": "Mi hermano Karim es contable en una gran empresa de Marsella. Siempre ha sido honrado y apreciado por sus jefes. Sin embargo, hace un año pasó por una época difícil. Aunque le gustaba su trabajo, su sueldo no le alcanzaba para pagar sus deudas. Un día, un compañero le propuso una salida: unas transacciones «un poco especiales». Karim dudó; no obstante, como estaba desesperado, aceptó. No sabía que a ese compañero le había pagado un director corrupto para tenderle una trampa. Unas semanas después, tras firmar unos documentos que demostraban el fraude, lo detuvieron. No sabía qué hacer, porque sabía que había cometido un error, aunque nunca había recibido dinero. Por suerte, sus antiguos jefes pagaron la fianza y le buscaron una abogada excelente. Durante la investigación, ella descubrió que el director había organizado toda la trampa. Por consiguiente, liberaron a Karim y condenaron al director y al compañero. Hoy Karim tiene su propia empresa. Además, ayuda gratis a personas con problemas de deudas. Siempre dice: «No son los errores lo que importa, sino lo que se aprende de ellos.»",
+    "highlighted_words": [
+      "Cependant",
+      "Bien que son travail lui plaise",
+      "dettes",
+      "proposa",
+      "néanmoins",
+      "accepta",
+      "avait été payé",
+      "corrompu",
+      "fut arrêté",
+      "même s'il n'avait jamais reçu",
+      "caution",
+      "avocate",
+      "enquête",
+      "Par conséquent",
+      "furent condamnés",
+      "En plus"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Il a été déclaré innocent",
+      "en": "He was declared innocent",
+      "es": "Lo declararon inocente"
+    },
+    {
+      "sentence": "Bien qu'il soit riche il n'est pas heureux",
+      "en": "Although he's rich he isn't happy",
+      "es": "Aunque es rico, no es feliz"
+    },
+    {
+      "sentence": "Elle n'a pas de preuves par conséquent elle a perdu",
+      "en": "She has no evidence so she lost",
+      "es": "No tiene pruebas, por consiguiente perdió"
+    },
+    {
+      "sentence": "J'ai besoin d'un avocat",
+      "en": "I need a lawyer",
+      "es": "Necesito un abogado"
+    },
+    {
+      "sentence": "Le témoin a tout vu",
+      "en": "The witness saw everything",
+      "es": "El testigo lo vio todo"
+    },
+    {
+      "sentence": "Il est honnête en revanche son frère ne l'est pas",
+      "en": "He's honest whereas his brother isn't",
+      "es": "Él es honrado; en cambio, su hermano no"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Il est coupable",
+      "en": "He is guilty",
+      "es": "Es culpable"
+    },
+    {
+      "answer": "Elle a gagné le procès",
+      "en": "She won the trial",
+      "es": "Ganó el juicio"
+    },
+    {
+      "answer": "Cependant, il a menti",
+      "en": "However, he lied",
+      "es": "Sin embargo, mintió"
+    },
+    {
+      "answer": "Où est le tribunal ?",
+      "en": "Where is the court?",
+      "es": "¿Dónde está el tribunal?"
+    },
+    {
+      "answer": "Il a été arrêté hier",
+      "en": "He was arrested yesterday",
+      "es": "Lo detuvieron ayer"
+    },
+    {
+      "answer": "En plus, il était en retard",
+      "en": "Moreover, he was late",
+      "es": "Además, llegó tarde"
+    }
+  ]
+}

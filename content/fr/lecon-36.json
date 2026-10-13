@@ -1,0 +1,574 @@
+{
+  "lesson": 36,
+  "slug": "lecon-36",
+  "icon": "🚶",
+  "title": {
+    "fr": "Aller se promener",
+    "es": "Ir a pasear",
+    "en": "Going for a walk"
+  },
+  "source": {
+    "audio": "Lecons 36.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "futur simple",
+      "example": "Demain, ils nous emmèneront au théâtre. / Tu sauras ce qu'on ressent.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "futur antérieur",
+      "example": "Elle aura oublié tout ça à la fin de la journée. / Le spectacle aura commencé quand nous arriverons.",
+      "en": "Future perfect (will have done)",
+      "es": "Futuro compuesto (habrá hecho)"
+    },
+    {
+      "structure": "être en train de au futur",
+      "example": "Il sera en train de pleuvoir à ton arrivée.",
+      "en": "Future progressive",
+      "es": "Futuro progresivo («estará + gerundio»)"
+    },
+    {
+      "structure": "futur proche",
+      "example": "Nous allons nous promener ce soir.",
+      "en": "Near future",
+      "es": "Futuro próximo"
+    },
+    {
+      "structure": "quand / dès que + futur",
+      "example": "Qui sortira les gâteaux dès qu'ils seront prêts ?",
+      "en": "Future after time conjunctions",
+      "es": "Futuro tras conjunciones de tiempo"
+    },
+    {
+      "structure": "doubles pronoms",
+      "example": "Je la leur présenterai aujourd'hui.",
+      "en": "Double object pronouns",
+      "es": "Pronombres dobles"
+    },
+    {
+      "structure": "il se peut que + subjonctif",
+      "example": "Il se peut que personne ne te voie.",
+      "en": "\"It may be that\" + subjunctive",
+      "es": "«Puede que» + subjuntivo"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Futur antérieur = futur of avoir/être + past participle: \"j'aurai fini\", \"elle sera partie\". It describes an action completed before another future moment.",
+      "es": "Futur antérieur = futuro de avoir/être + participio: «j'aurai fini», «elle sera partie». Describe una acción terminada antes de otro momento futuro."
+    },
+    {
+      "en": "Order of double pronouns: me/te/se/nous/vous → le/la/les → lui/leur: \"Je te le donne\", \"Je la leur présente\".",
+      "es": "Orden de los pronombres dobles: me/te/se/nous/vous → le/la/les → lui/leur: «Je te le donne», «Je la leur présente»."
+    },
+    {
+      "en": "\"Se plier en deux (de rire)\" = to double up with laughter.",
+      "es": "«Se plier en deux (de rire)» = partirse de risa."
+    },
+    {
+      "en": "\"Être au courant\" = to know about / be informed.",
+      "es": "«Être au courant» = estar al tanto."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "se promener",
+      "en": "to go for a walk",
+      "es": "pasear"
+    },
+    {
+      "word": "la promenade",
+      "en": "the walk",
+      "es": "el paseo"
+    },
+    {
+      "word": "marcher",
+      "en": "to walk",
+      "es": "caminar"
+    },
+    {
+      "word": "dehors",
+      "en": "outside",
+      "es": "fuera"
+    },
+    {
+      "word": "le matin / l'après-midi",
+      "en": "morning / afternoon",
+      "es": "la mañana / la tarde"
+    },
+    {
+      "word": "la soirée",
+      "en": "the evening",
+      "es": "la velada / la noche"
+    },
+    {
+      "word": "chaque",
+      "en": "each / every",
+      "es": "cada"
+    },
+    {
+      "word": "emmener",
+      "en": "to take (someone)",
+      "es": "llevar (a alguien)"
+    },
+    {
+      "word": "ramener",
+      "en": "to bring back",
+      "es": "traer de vuelta"
+    },
+    {
+      "word": "montrer",
+      "en": "to show",
+      "es": "mostrar"
+    },
+    {
+      "word": "garder",
+      "en": "to keep / look after",
+      "es": "guardar / cuidar"
+    },
+    {
+      "word": "guider",
+      "en": "to guide",
+      "es": "guiar"
+    },
+    {
+      "word": "faire attention à",
+      "en": "to pay attention to",
+      "es": "prestar atención a"
+    },
+    {
+      "word": "oublier",
+      "en": "to forget",
+      "es": "olvidar"
+    },
+    {
+      "word": "tomber",
+      "en": "to fall",
+      "es": "caer"
+    },
+    {
+      "word": "se blesser",
+      "en": "to get hurt",
+      "es": "hacerse daño"
+    },
+    {
+      "word": "balayer",
+      "en": "to sweep",
+      "es": "barrer"
+    },
+    {
+      "word": "le balai",
+      "en": "the broom",
+      "es": "la escoba"
+    },
+    {
+      "word": "transpirer",
+      "en": "to sweat",
+      "es": "sudar"
+    },
+    {
+      "word": "souffler",
+      "en": "to blow",
+      "es": "soplar"
+    },
+    {
+      "word": "gonfler",
+      "en": "to inflate",
+      "es": "inflar"
+    },
+    {
+      "word": "le ballon",
+      "en": "the balloon",
+      "es": "el globo"
+    },
+    {
+      "word": "plier",
+      "en": "to fold / bend",
+      "es": "doblar"
+    },
+    {
+      "word": "appuyer",
+      "en": "to press / lean",
+      "es": "apoyar / pulsar"
+    },
+    {
+      "word": "tirer",
+      "en": "to pull",
+      "es": "tirar"
+    },
+    {
+      "word": "lancer",
+      "en": "to throw",
+      "es": "lanzar"
+    },
+    {
+      "word": "gagner",
+      "en": "to win",
+      "es": "ganar"
+    },
+    {
+      "word": "dessiner",
+      "en": "to draw",
+      "es": "dibujar"
+    },
+    {
+      "word": "raconter",
+      "en": "to tell",
+      "es": "contar"
+    },
+    {
+      "word": "partager",
+      "en": "to share",
+      "es": "compartir"
+    },
+    {
+      "word": "se renseigner",
+      "en": "to find out / inquire",
+      "es": "informarse"
+    },
+    {
+      "word": "bon marché",
+      "en": "cheap",
+      "es": "barato"
+    },
+    {
+      "word": "le meilleur",
+      "en": "the best",
+      "es": "el mejor"
+    },
+    {
+      "word": "la foule",
+      "en": "the crowd",
+      "es": "la multitud"
+    },
+    {
+      "word": "le clown",
+      "en": "the clown",
+      "es": "el payaso"
+    },
+    {
+      "word": "être au courant",
+      "en": "to be informed",
+      "es": "estar al tanto"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Allons nous promener !",
+      "en": "Let's go for a walk!",
+      "es": "¡Vamos a pasear!"
+    },
+    {
+      "phrase": "Nous allons garder les enfants, c'est mieux.",
+      "en": "We'll look after the children, it's better.",
+      "es": "Cuidaremos a los niños, es mejor."
+    },
+    {
+      "phrase": "Elle aura oublié tout ça à la fin de la journée.",
+      "en": "She will have forgotten all that by the end of the day.",
+      "es": "Habrá olvidado todo eso al final del día."
+    },
+    {
+      "phrase": "Le spectacle aura commencé quand nous arriverons.",
+      "en": "The show will have started when we arrive.",
+      "es": "El espectáculo habrá empezado cuando lleguemos."
+    },
+    {
+      "phrase": "Demain, ils nous emmèneront au théâtre.",
+      "en": "Tomorrow, they will take us to the theater.",
+      "es": "Mañana nos llevarán al teatro."
+    },
+    {
+      "phrase": "La semaine prochaine, ils passeront « Autant en emporte le vent » au nouveau cinéma.",
+      "en": "Next week, they will show \"Gone with the Wind\" at the new cinema.",
+      "es": "La semana que viene pondrán «Lo que el viento se llevó» en el cine nuevo."
+    },
+    {
+      "phrase": "Cet arbre va tomber si tous ces enfants y grimpent en même temps !",
+      "en": "This tree is going to fall if all these children climb it at the same time!",
+      "es": "¡Este árbol se va a caer si todos esos niños se suben a la vez!"
+    },
+    {
+      "phrase": "Il sera en train de pleuvoir à ton arrivée.",
+      "en": "It will be raining when you arrive.",
+      "es": "Estará lloviendo cuando llegues."
+    },
+    {
+      "phrase": "Dans deux semaines, ils seront en train de dessiner pour une agence internationale.",
+      "en": "In two weeks, they will be drawing for an international agency.",
+      "es": "Dentro de dos semanas estarán dibujando para una agencia internacional."
+    },
+    {
+      "phrase": "Nous allons nous renseigner sur la visite guidée de samedi.",
+      "en": "We're going to find out about Saturday's guided tour.",
+      "es": "Vamos a informarnos sobre la visita guiada del sábado."
+    },
+    {
+      "phrase": "Quand vont-ils connaître ta grand-mère ? — Je la leur présenterai aujourd'hui.",
+      "en": "When will they meet your grandmother? — I'll introduce her to them today.",
+      "es": "¿Cuándo van a conocer a tu abuela? — Se la presentaré hoy."
+    },
+    {
+      "phrase": "Qui sortira les gâteaux dès qu'ils seront prêts ? — Marie s'en chargera.",
+      "en": "Who will take the cakes out as soon as they're ready? — Marie will take care of it.",
+      "es": "¿Quién sacará los pasteles en cuanto estén listos? — Marie se encargará."
+    },
+    {
+      "phrase": "Tu vas te promener ? — Non, je vais peindre un tableau.",
+      "en": "Are you going for a walk? — No, I'm going to paint a picture.",
+      "es": "¿Vas a pasear? — No, voy a pintar un cuadro."
+    },
+    {
+      "phrase": "Qui va parler à ton père quand il sera au courant ? — Mon frère.",
+      "en": "Who will talk to your father when he finds out? — My brother.",
+      "es": "¿Quién hablará con tu padre cuando se entere? — Mi hermano."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Quand tu arriveras, j'___ le dîner.\" (finir)",
+        "es": "Completa: «Quand tu arriveras, j'___ le dîner.» (finir)"
+      },
+      "options": [
+        "aurai fini",
+        "ai fini",
+        "finirai",
+        "avais fini"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Futur antérieur: an action completed before another future action.",
+        "es": "Futur antérieur: acción terminada antes de otra acción futura."
+      }
+    },
+    {
+      "question": {
+        "en": "Which tense is \"elle sera partie\"?",
+        "es": "¿Qué tiempo es «elle sera partie»?"
+      },
+      "options": {
+        "en": [
+          "future perfect",
+          "simple future",
+          "conditional",
+          "past perfect"
+        ],
+        "es": [
+          "futuro compuesto",
+          "futuro simple",
+          "condicional",
+          "pluscuamperfecto"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Futur of \"être\" + past participle.",
+        "es": "Futuro de «être» + participio."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il sera en train de pleuvoir.\" Meaning?",
+        "es": "«Il sera en train de pleuvoir.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "It will be raining.",
+          "It was raining.",
+          "It has rained.",
+          "It is going to stop raining."
+        ],
+        "es": [
+          "Estará lloviendo.",
+          "Estaba lloviendo.",
+          "Ha llovido.",
+          "Va a dejar de llover."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Être en train de in the future.",
+        "es": "«Être en train de» en futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je ___ présenterai.\" (her, to them)",
+        "es": "Completa: «Je ___ présenterai.» (a ella, a ellos)"
+      },
+      "options": [
+        "la leur",
+        "leur la",
+        "lui la",
+        "la lui"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le/la/les before lui/leur.",
+        "es": "Le/la/les antes de lui/leur."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il sortira les gâteaux dès qu'ils ___ prêts.\"",
+        "es": "Completa: «Il sortira les gâteaux dès qu'ils ___ prêts.»"
+      },
+      "options": [
+        "seront",
+        "sont",
+        "soient",
+        "étaient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future after \"dès que\" for a future event.",
+        "es": "Futuro tras «dès que» para un hecho futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il se peut que personne ne te ___.\"",
+        "es": "Completa: «Il se peut que personne ne te ___.»"
+      },
+      "options": [
+        "voie",
+        "voit",
+        "verra",
+        "voyait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il se peut que\" + subjunctive.",
+        "es": "«Il se peut que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Se plier en deux\" means…",
+        "es": "«Se plier en deux» significa…"
+      },
+      "options": {
+        "en": [
+          "to double up with laughter",
+          "to fold a paper",
+          "to bend down to pick something up",
+          "to split in two"
+        ],
+        "es": [
+          "partirse de risa",
+          "doblar un papel",
+          "agacharse a recoger algo",
+          "dividirse en dos"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Often \"se plier en deux de rire\".",
+        "es": "A menudo «se plier en deux de rire»."
+      }
+    },
+    {
+      "question": {
+        "en": "Which verb means \"to take someone somewhere\"?",
+        "es": "¿Qué verbo significa «llevar a alguien a un sitio»?"
+      },
+      "options": [
+        "emmener",
+        "emporter",
+        "apporter",
+        "prendre"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Emmener (people), emporter (things).",
+        "es": "Emmener (personas), emporter (cosas)."
+      }
+    }
+  ],
+  "story": {
+    "title": "Demain, au parc",
+    "text": "Ce soir, Mamie raconte à son petit-fils Noé tout ce qu'ils feront demain. « D'abord, nous irons nous promener au parc de la Tête d'Or. Quand nous arriverons, les jardiniers seront en train d'arroser les fleurs. Tu verras les canards sur le lac et je te montrerai les girafes du petit zoo. À midi, nous aurons déjà marché pendant deux heures, alors nous mangerons une glace. L'après-midi, des clowns raconteront des histoires et feront rire tout le monde jusqu'à ce que les gens se plient en deux. Les enfants seront en train de gonfler des ballons et de courir partout. Tes parents nous rejoindront vers cinq heures ; à ce moment-là, tu auras sûrement déjà mangé deux crêpes ! » Noé sourit : « Et s'il pleut ? » « Il se peut qu'il pleuve un peu, mais ce n'est pas grave : nous marcherons sous la pluie. Je te montrerai le monde en un après-midi, et toi, tu partageras ton bonheur avec moi. » Noé s'endort en rêvant. Demain, il aura oublié la moitié de ce plan, mais Mamie, elle, n'oubliera rien.",
+    "en": "Tonight, Grandma tells her grandson Noé everything they will do tomorrow. “First, we'll go for a walk in the Tête d'Or park. When we arrive, the gardeners will be watering the flowers. You'll see the ducks on the lake and I'll show you the giraffes at the little zoo. By noon, we'll already have walked for two hours, so we'll have an ice cream. In the afternoon, clowns will tell stories and make everyone laugh until people double up. The children will be blowing up balloons and running everywhere. Your parents will join us around five; by then, you'll surely have already eaten two crepes!” Noé smiles: “And what if it rains?” “It may rain a little, but it doesn't matter: we'll walk in the rain. I'll show you the world in one afternoon, and you'll share your happiness with me.” Noé falls asleep dreaming. Tomorrow, he'll have forgotten half of this plan, but Grandma won't forget anything.",
+    "es": "Esta noche, la abuela le cuenta a su nieto Noé todo lo que harán mañana. «Primero iremos a pasear al parque de la Tête d'Or. Cuando lleguemos, los jardineros estarán regando las flores. Verás los patos en el lago y te enseñaré las jirafas del pequeño zoo. A mediodía ya habremos caminado dos horas, así que nos tomaremos un helado. Por la tarde, unos payasos contarán historias y harán reír a todo el mundo hasta que la gente se parta de risa. Los niños estarán inflando globos y corriendo por todas partes. Tus padres se reunirán con nosotros hacia las cinco; para entonces seguro que ya te habrás comido dos crepes.» Noé sonríe: «¿Y si llueve?» «Puede que llueva un poco, pero no pasa nada: caminaremos bajo la lluvia. Te enseñaré el mundo en una tarde y tú compartirás tu felicidad conmigo.» Noé se duerme soñando. Mañana habrá olvidado la mitad de este plan, pero la abuela no olvidará nada.",
+    "highlighted_words": [
+      "nous irons nous promener",
+      "Quand nous arriverons",
+      "seront en train d'arroser",
+      "nous aurons déjà marché",
+      "se plient en deux",
+      "seront en train de gonfler",
+      "tu auras sûrement déjà mangé",
+      "Il se peut qu'il pleuve",
+      "partageras",
+      "il aura oublié"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Allons nous promener au parc",
+      "en": "Let's go for a walk in the park",
+      "es": "Vamos a pasear al parque"
+    },
+    {
+      "sentence": "Quand tu arriveras j'aurai fini",
+      "en": "When you arrive I'll have finished",
+      "es": "Cuando llegues, habré terminado"
+    },
+    {
+      "sentence": "Il sera en train de pleuvoir",
+      "en": "It will be raining",
+      "es": "Estará lloviendo"
+    },
+    {
+      "sentence": "Je la leur présenterai demain",
+      "en": "I'll introduce her to them tomorrow",
+      "es": "Se la presentaré mañana"
+    },
+    {
+      "sentence": "Nous allons garder les enfants",
+      "en": "We're going to look after the children",
+      "es": "Vamos a cuidar a los niños"
+    },
+    {
+      "sentence": "Il se peut qu'il pleuve",
+      "en": "It may rain",
+      "es": "Puede que llueva"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Allons-y !",
+      "en": "Let's go!",
+      "es": "¡Vamos!"
+    },
+    {
+      "answer": "Je vais emmener les enfants au parc",
+      "en": "I'm going to take the children to the park",
+      "es": "Voy a llevar a los niños al parque"
+    },
+    {
+      "answer": "Elle aura oublié",
+      "en": "She will have forgotten",
+      "es": "Habrá olvidado"
+    },
+    {
+      "answer": "Nous marcherons sous la pluie",
+      "en": "We will walk in the rain",
+      "es": "Caminaremos bajo la lluvia"
+    },
+    {
+      "answer": "Fais attention",
+      "en": "Be careful",
+      "es": "Ten cuidado"
+    },
+    {
+      "answer": "Je te montrerai la ville",
+      "en": "I'll show you the city",
+      "es": "Te enseñaré la ciudad"
+    }
+  ]
+}

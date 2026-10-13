@@ -1,0 +1,610 @@
+{
+  "lesson": 3,
+  "slug": "lecon-03",
+  "icon": "📅",
+  "title": {
+    "fr": "Les jours, les mois et le temps",
+    "es": "Los días, los meses y el tiempo",
+    "en": "Days, months and time"
+  },
+  "source": {
+    "audio": "Lecons 03.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "passé composé",
+      "example": "Hier, j'ai parlé avec elle.",
+      "en": "Past tense (completed actions)",
+      "es": "Pretérito perfecto (acciones terminadas)"
+    },
+    {
+      "structure": "imparfait",
+      "example": "À cette époque, les gens se levaient au lever du jour.",
+      "en": "Imperfect (past habits and descriptions)",
+      "es": "Imperfecto (hábitos y descripciones en el pasado)"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Nous partirons demain matin. / Je t'aimerai toujours.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "penser + infinitif",
+      "example": "La semaine prochaine, je pense recommencer.",
+      "en": "\"To plan to\" + infinitive",
+      "es": "«Pensar» + infinitivo"
+    },
+    {
+      "structure": "verbes pronominaux",
+      "example": "Je me réveille au lever du jour.",
+      "en": "Reflexive verbs",
+      "es": "Verbos pronominales"
+    },
+    {
+      "structure": "n'est-ce pas ? / si",
+      "example": "Les Français n'aiment pas manger, n'est-ce pas ? — Si !",
+      "en": "Tag questions; \"si\" to contradict a negative",
+      "es": "Preguntas de confirmación; «si» para contradecir una negación"
+    },
+    {
+      "structure": "prépositions + pays",
+      "example": "au Canada, en Espagne, aux États-Unis, du Mexique",
+      "en": "Prepositions with countries",
+      "es": "Preposiciones con países"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Days and months are written in lowercase in French: \"lundi\", \"janvier\".",
+      "es": "En francés, los días y los meses se escriben en minúscula: «lundi», «janvier»."
+    },
+    {
+      "en": "\"Lundi\" = this (coming) Monday; \"le lundi\" = every Monday.",
+      "es": "«Lundi» = este lunes; «le lundi» = todos los lunes."
+    },
+    {
+      "en": "Dates use \"le\" + number: \"le 22 juin\". The first day is \"le premier\": \"le 1er mai\".",
+      "es": "Las fechas usan «le» + número: «le 22 juin». El día uno es «le premier»: «le 1er mai»."
+    },
+    {
+      "en": "Answer \"si\" (not \"oui\") to contradict a negative question.",
+      "es": "Responde «si» (no «oui») para contradecir una pregunta negativa."
+    },
+    {
+      "en": "Countries: \"au\" + masculine (au Canada), \"en\" + feminine (en France), \"aux\" + plural (aux États-Unis).",
+      "es": "Países: «au» + masculino (au Canada), «en» + femenino (en France), «aux» + plural (aux États-Unis)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "lundi",
+      "en": "Monday",
+      "es": "lunes"
+    },
+    {
+      "word": "mardi",
+      "en": "Tuesday",
+      "es": "martes"
+    },
+    {
+      "word": "mercredi",
+      "en": "Wednesday",
+      "es": "miércoles"
+    },
+    {
+      "word": "jeudi",
+      "en": "Thursday",
+      "es": "jueves"
+    },
+    {
+      "word": "vendredi",
+      "en": "Friday",
+      "es": "viernes"
+    },
+    {
+      "word": "samedi",
+      "en": "Saturday",
+      "es": "sábado"
+    },
+    {
+      "word": "dimanche",
+      "en": "Sunday",
+      "es": "domingo"
+    },
+    {
+      "word": "janvier",
+      "en": "January",
+      "es": "enero"
+    },
+    {
+      "word": "février",
+      "en": "February",
+      "es": "febrero"
+    },
+    {
+      "word": "mars",
+      "en": "March",
+      "es": "marzo"
+    },
+    {
+      "word": "avril",
+      "en": "April",
+      "es": "abril"
+    },
+    {
+      "word": "mai",
+      "en": "May",
+      "es": "mayo"
+    },
+    {
+      "word": "juin",
+      "en": "June",
+      "es": "junio"
+    },
+    {
+      "word": "juillet",
+      "en": "July",
+      "es": "julio"
+    },
+    {
+      "word": "août",
+      "en": "August",
+      "es": "agosto"
+    },
+    {
+      "word": "septembre",
+      "en": "September",
+      "es": "septiembre"
+    },
+    {
+      "word": "octobre",
+      "en": "October",
+      "es": "octubre"
+    },
+    {
+      "word": "novembre",
+      "en": "November",
+      "es": "noviembre"
+    },
+    {
+      "word": "décembre",
+      "en": "December",
+      "es": "diciembre"
+    },
+    {
+      "word": "le jour",
+      "en": "the day",
+      "es": "el día"
+    },
+    {
+      "word": "la semaine",
+      "en": "the week",
+      "es": "la semana"
+    },
+    {
+      "word": "le mois",
+      "en": "the month",
+      "es": "el mes"
+    },
+    {
+      "word": "l'année",
+      "en": "the year",
+      "es": "el año"
+    },
+    {
+      "word": "le matin",
+      "en": "the morning",
+      "es": "la mañana"
+    },
+    {
+      "word": "l'après-midi",
+      "en": "the afternoon",
+      "es": "la tarde"
+    },
+    {
+      "word": "le soir",
+      "en": "the evening",
+      "es": "la noche (temprano)"
+    },
+    {
+      "word": "la nuit",
+      "en": "the night",
+      "es": "la noche"
+    },
+    {
+      "word": "midi",
+      "en": "noon",
+      "es": "mediodía"
+    },
+    {
+      "word": "minuit",
+      "en": "midnight",
+      "es": "medianoche"
+    },
+    {
+      "word": "hier",
+      "en": "yesterday",
+      "es": "ayer"
+    },
+    {
+      "word": "demain",
+      "en": "tomorrow",
+      "es": "mañana"
+    },
+    {
+      "word": "avant-hier",
+      "en": "the day before yesterday",
+      "es": "anteayer"
+    },
+    {
+      "word": "après-demain",
+      "en": "the day after tomorrow",
+      "es": "pasado mañana"
+    },
+    {
+      "word": "la veille",
+      "en": "the day before / the eve",
+      "es": "la víspera"
+    },
+    {
+      "word": "une quinzaine",
+      "en": "about two weeks",
+      "es": "unos quince días"
+    },
+    {
+      "word": "le siècle",
+      "en": "the century",
+      "es": "el siglo"
+    },
+    {
+      "word": "l'époque",
+      "en": "the era / the time",
+      "es": "la época"
+    },
+    {
+      "word": "le lever du jour",
+      "en": "daybreak",
+      "es": "el amanecer"
+    },
+    {
+      "word": "le coucher du soleil",
+      "en": "sunset",
+      "es": "la puesta de sol"
+    },
+    {
+      "word": "prochain / prochaine",
+      "en": "next",
+      "es": "próximo / próxima"
+    },
+    {
+      "word": "dernier / dernière",
+      "en": "last",
+      "es": "último / última"
+    },
+    {
+      "word": "jamais",
+      "en": "never",
+      "es": "nunca"
+    },
+    {
+      "word": "avant",
+      "en": "before",
+      "es": "antes"
+    },
+    {
+      "word": "après",
+      "en": "after",
+      "es": "después"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Quelle date sommes-nous aujourd'hui ? — Le 14 juillet.",
+      "en": "What's the date today? — July 14th.",
+      "es": "¿A qué fecha estamos hoy? — A 14 de julio."
+    },
+    {
+      "phrase": "Quel jour sommes-nous ? — Nous sommes mercredi.",
+      "en": "What day is it? — It is Wednesday.",
+      "es": "¿Qué día es hoy? — Es miércoles."
+    },
+    {
+      "phrase": "Une année bissextile a 366 jours.",
+      "en": "A leap year has 366 days.",
+      "es": "Un año bisiesto tiene 366 días."
+    },
+    {
+      "phrase": "Hier, j'ai parlé avec mon frère.",
+      "en": "Yesterday, I spoke with my brother.",
+      "es": "Ayer hablé con mi hermano."
+    },
+    {
+      "phrase": "La semaine prochaine, je pense recommencer.",
+      "en": "Next week, I plan to start again.",
+      "es": "La semana que viene pienso volver a empezar."
+    },
+    {
+      "phrase": "À midi, on déjeune.",
+      "en": "At noon, we have lunch.",
+      "es": "A mediodía almorzamos."
+    },
+    {
+      "phrase": "Je me réveille au lever du jour.",
+      "en": "I wake up at daybreak.",
+      "es": "Me despierto al amanecer."
+    },
+    {
+      "phrase": "Demain, nous partirons au lever du jour.",
+      "en": "Tomorrow, we will leave at daybreak.",
+      "es": "Mañana saldremos al amanecer."
+    },
+    {
+      "phrase": "Je suis payé tous les quinze jours.",
+      "en": "I get paid every two weeks.",
+      "es": "Me pagan cada quince días."
+    },
+    {
+      "phrase": "Le lundi de Pâques est férié.",
+      "en": "Easter Monday is a public holiday.",
+      "es": "El lunes de Pascua es festivo."
+    },
+    {
+      "phrase": "Il est arrivé une minute en retard.",
+      "en": "He arrived one minute late.",
+      "es": "Llegó un minuto tarde."
+    },
+    {
+      "phrase": "D'où viens-tu ? — Je viens du Mexique.",
+      "en": "Where are you from? — I come from Mexico.",
+      "es": "¿De dónde eres? — Vengo de México."
+    },
+    {
+      "phrase": "Où se trouve Montréal ? — Au Canada.",
+      "en": "Where is Montreal? — In Canada.",
+      "es": "¿Dónde está Montreal? — En Canadá."
+    },
+    {
+      "phrase": "En Espagne, on parle espagnol, et au Brésil, on parle portugais.",
+      "en": "In Spain, people speak Spanish, and in Brazil, Portuguese.",
+      "es": "En España se habla español, y en Brasil, portugués."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What does \"avant-hier\" mean?",
+        "es": "¿Qué significa «avant-hier»?"
+      },
+      "options": {
+        "en": [
+          "the day before yesterday",
+          "the day after tomorrow",
+          "yesterday evening",
+          "last week"
+        ],
+        "es": [
+          "anteayer",
+          "pasado mañana",
+          "ayer por la noche",
+          "la semana pasada"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avant-hier\" = the day before yesterday; \"après-demain\" = the day after tomorrow.",
+        "es": "«Avant-hier» = anteayer; «après-demain» = pasado mañana."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you ask for the date?",
+        "es": "¿Cómo preguntas la fecha?"
+      },
+      "options": [
+        "Quelle date sommes-nous aujourd'hui ?",
+        "Quelle heure est-il ?",
+        "Quel âge as-tu ?",
+        "Quel temps fait-il ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The answer uses \"le\" + number: \"Le 22 juin.\"",
+        "es": "La respuesta usa «le» + número: «Le 22 juin.»"
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence is in the past (passé composé)?",
+        "es": "¿Qué frase está en pasado (passé composé)?"
+      },
+      "options": [
+        "Hier, j'ai parlé avec elle.",
+        "Demain, je parle avec elle.",
+        "Je parlerai avec elle.",
+        "Je parle avec elle."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Passé composé = avoir/être + past participle: \"j'ai parlé\".",
+        "es": "Passé composé = avoir/être + participio: «j'ai parlé»."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence is in the future?",
+        "es": "¿Qué frase está en futuro?"
+      },
+      "options": [
+        "Nous partirons au lever du jour.",
+        "Nous sommes partis hier.",
+        "Nous partons maintenant.",
+        "Nous partions souvent."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Simple future: infinitive + endings (-ai, -as, -a, -ons, -ez, -ont): \"nous partirons\".",
+        "es": "Futuro simple: infinitivo + terminaciones (-ai, -as, -a, -ons, -ez, -ont): «nous partirons»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Les Français n'aiment pas manger, n'est-ce pas ?\" They actually love food. What do you answer?",
+        "es": "«Les Français n'aiment pas manger, n'est-ce pas ?» En realidad les encanta comer. ¿Qué respondes?"
+      },
+      "options": [
+        "Si, ils aiment bien manger.",
+        "Oui, ils aiment bien manger.",
+        "Non, ils aiment bien manger.",
+        "Si, ils n'aiment pas manger."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "To contradict a negative question, answer \"si\".",
+        "es": "Para contradecir una pregunta negativa se responde «si»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Montréal est ___ Canada.\"",
+        "es": "Completa: «Montréal est ___ Canada.»"
+      },
+      "options": [
+        "au",
+        "en",
+        "aux",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Canada\" is masculine, so \"au Canada\". Feminine countries take \"en\": \"en France\".",
+        "es": "«Canada» es masculino, por eso «au Canada». Los países femeninos llevan «en»: «en France»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il vient ___ Portugal.\"",
+        "es": "Completa: «Il vient ___ Portugal.»"
+      },
+      "options": [
+        "du",
+        "de la",
+        "des",
+        "en"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Venir de\" + masculine country = \"du\": \"du Portugal\", \"du Mexique\".",
+        "es": "«Venir de» + país masculino = «du»: «du Portugal», «du Mexique»."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"le lundi\" mean in \"Le lundi, je travaille\"?",
+        "es": "¿Qué significa «le lundi» en «Le lundi, je travaille»?"
+      },
+      "options": {
+        "en": [
+          "every Monday",
+          "last Monday",
+          "next Monday only",
+          "one Monday"
+        ],
+        "es": [
+          "todos los lunes",
+          "el lunes pasado",
+          "solo el próximo lunes",
+          "un lunes"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "With \"le\", the day expresses a habit.",
+        "es": "Con «le», el día expresa un hábito."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le temps de mon arrière-grand-mère",
+    "text": "Mon arrière-grand-mère est née en 1920 dans un petit village de Bretagne. À cette époque, la vie était très différente. Les gens n'avaient pas d'électricité et tout le monde se levait au lever du jour. Le matin, elle aidait ses parents à la ferme. À midi, la famille mangeait ensemble, puis l'après-midi, on travaillait jusqu'au coucher du soleil. Le soir, on se réunissait autour du feu et on racontait les nouvelles de la journée. Au XXe siècle, le monde a beaucoup changé : les voitures, la radio et la télévision sont arrivées. Aujourd'hui, nous avons tout, mais nous n'avons jamais le temps. Demain, je lui demanderai de me raconter encore ses souvenirs.",
+    "en": "My great-grandmother was born in 1920 in a small village in Brittany. At that time, life was very different. People had no electricity and everyone got up at daybreak. In the morning, she helped her parents on the farm. At noon, the family ate together, then in the afternoon, people worked until sunset. In the evening, they gathered around the fire and talked about the news of the day. In the 20th century, the world changed a lot: cars, the radio and television arrived. Today, we have everything, but we never have time. Tomorrow, I will ask her to tell me her memories again.",
+    "es": "Mi bisabuela nació en 1920 en un pueblecito de Bretaña. En aquella época, la vida era muy diferente. La gente no tenía electricidad y todos se levantaban al amanecer. Por la mañana, ella ayudaba a sus padres en la granja. A mediodía, la familia comía junta y, por la tarde, se trabajaba hasta la puesta de sol. Por la noche, se reunían alrededor del fuego y contaban las noticias del día. En el siglo XX, el mundo cambió mucho: llegaron los coches, la radio y la televisión. Hoy lo tenemos todo, pero nunca tenemos tiempo. Mañana le pediré que me vuelva a contar sus recuerdos.",
+    "highlighted_words": [
+      "époque",
+      "lever du jour",
+      "matin",
+      "midi",
+      "l'après-midi",
+      "coucher du soleil",
+      "soir",
+      "siècle",
+      "jamais",
+      "Demain"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Aujourd'hui c'est mercredi",
+      "en": "Today is Wednesday",
+      "es": "Hoy es miércoles"
+    },
+    {
+      "sentence": "Mon anniversaire est en octobre",
+      "en": "My birthday is in October",
+      "es": "Mi cumpleaños es en octubre"
+    },
+    {
+      "sentence": "Hier j'ai parlé avec elle",
+      "en": "Yesterday I spoke with her",
+      "es": "Ayer hablé con ella"
+    },
+    {
+      "sentence": "Nous partirons demain matin",
+      "en": "We will leave tomorrow morning",
+      "es": "Saldremos mañana por la mañana"
+    },
+    {
+      "sentence": "Je me réveille au lever du jour",
+      "en": "I wake up at daybreak",
+      "es": "Me despierto al amanecer"
+    },
+    {
+      "sentence": "À cette époque la vie était difficile",
+      "en": "At that time life was hard",
+      "es": "En aquella época la vida era difícil"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Le 22 juin",
+      "en": "June 22nd",
+      "es": "El 22 de junio"
+    },
+    {
+      "answer": "Après-demain",
+      "en": "The day after tomorrow",
+      "es": "Pasado mañana"
+    },
+    {
+      "answer": "Hier, j'ai parlé avec elle",
+      "en": "Yesterday, I spoke with her",
+      "es": "Ayer hablé con ella"
+    },
+    {
+      "answer": "La semaine prochaine",
+      "en": "Next week",
+      "es": "La semana que viene"
+    },
+    {
+      "answer": "À midi, on déjeune",
+      "en": "At noon, we have lunch",
+      "es": "A mediodía almorzamos"
+    },
+    {
+      "answer": "Je viens du Mexique",
+      "en": "I come from Mexico",
+      "es": "Vengo de México"
+    }
+  ]
+}

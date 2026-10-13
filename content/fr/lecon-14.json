@@ -1,0 +1,639 @@
+{
+  "lesson": 14,
+  "slug": "lecon-14",
+  "icon": "🦊",
+  "title": {
+    "fr": "Les animaux",
+    "es": "Los animales",
+    "en": "Animals"
+  },
+  "source": {
+    "audio": "Lecons 14.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "pluriels irréguliers",
+      "example": "un cheval → des chevaux, un oiseau → des oiseaux",
+      "en": "Irregular plurals",
+      "es": "Plurales irregulares"
+    },
+    {
+      "structure": "superlatif",
+      "example": "La baleine est l'animal le plus grand du monde.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "voix passive",
+      "example": "Beaucoup de baleines ont été tuées. / Les tigres sont chassés.",
+      "en": "Passive voice (present and past)",
+      "es": "Voz pasiva (presente y pasado)"
+    },
+    {
+      "structure": "il faut / on devrait + infinitif",
+      "example": "Il faut respecter les animaux. / Tout cela devrait finir.",
+      "en": "Necessity and advice",
+      "es": "Necesidad y consejo"
+    },
+    {
+      "structure": "ressembler à / être comme",
+      "example": "Tu ressembles à un singe ! / Tu es comme un singe.",
+      "en": "Comparisons with animals",
+      "es": "Comparaciones con animales"
+    },
+    {
+      "structure": "imparfait",
+      "example": "Quand j'étais petit, j'avais un poney.",
+      "en": "Imperfect (past situation)",
+      "es": "Imperfecto (situación pasada)"
+    },
+    {
+      "structure": "passé composé",
+      "example": "Le crapaud a mangé la mouche.",
+      "en": "Past tense",
+      "es": "Pretérito perfecto"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Nouns in -al usually make -aux in the plural: un animal → des animaux, un cheval → des chevaux.",
+      "es": "Los sustantivos en -al suelen hacer el plural en -aux: un animal → des animaux, un cheval → des chevaux."
+    },
+    {
+      "en": "Many animals have one gender for both sexes: \"une girafe\", \"un éléphant\", \"une souris\".",
+      "es": "Muchos animales tienen un solo género para ambos sexos: «une girafe», «un éléphant», «une souris»."
+    },
+    {
+      "en": "Animal idioms: \"avoir une faim de loup\" (to be starving), \"être malin comme un singe\" (very clever), \"poser un lapin\" (to stand someone up).",
+      "es": "Expresiones: «avoir une faim de loup» (tener un hambre feroz), «être malin comme un singe» (ser muy listo), «poser un lapin» (dar plantón)."
+    },
+    {
+      "en": "\"Faire du cheval\" = to ride a horse.",
+      "es": "«Faire du cheval» = montar a caballo."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "une fourmi",
+      "en": "an ant",
+      "es": "una hormiga"
+    },
+    {
+      "word": "une abeille",
+      "en": "a bee",
+      "es": "una abeja"
+    },
+    {
+      "word": "une araignée",
+      "en": "a spider",
+      "es": "una araña"
+    },
+    {
+      "word": "un papillon",
+      "en": "a butterfly",
+      "es": "una mariposa"
+    },
+    {
+      "word": "une mouche",
+      "en": "a fly",
+      "es": "una mosca"
+    },
+    {
+      "word": "une coccinelle",
+      "en": "a ladybug",
+      "es": "una mariquita"
+    },
+    {
+      "word": "un escargot",
+      "en": "a snail",
+      "es": "un caracol"
+    },
+    {
+      "word": "un oiseau",
+      "en": "a bird",
+      "es": "un pájaro"
+    },
+    {
+      "word": "un aigle",
+      "en": "an eagle",
+      "es": "un águila"
+    },
+    {
+      "word": "une chouette",
+      "en": "an owl",
+      "es": "una lechuza"
+    },
+    {
+      "word": "un perroquet",
+      "en": "a parrot",
+      "es": "un loro"
+    },
+    {
+      "word": "un canard",
+      "en": "a duck",
+      "es": "un pato"
+    },
+    {
+      "word": "une poule",
+      "en": "a hen",
+      "es": "una gallina"
+    },
+    {
+      "word": "un coq",
+      "en": "a rooster",
+      "es": "un gallo"
+    },
+    {
+      "word": "un poussin",
+      "en": "a chick",
+      "es": "un pollito"
+    },
+    {
+      "word": "une vache",
+      "en": "a cow",
+      "es": "una vaca"
+    },
+    {
+      "word": "un veau",
+      "en": "a calf",
+      "es": "un ternero"
+    },
+    {
+      "word": "un taureau",
+      "en": "a bull",
+      "es": "un toro"
+    },
+    {
+      "word": "un cheval",
+      "en": "a horse",
+      "es": "un caballo"
+    },
+    {
+      "word": "un âne",
+      "en": "a donkey",
+      "es": "un burro"
+    },
+    {
+      "word": "un cochon",
+      "en": "a pig",
+      "es": "un cerdo"
+    },
+    {
+      "word": "un mouton",
+      "en": "a sheep",
+      "es": "una oveja"
+    },
+    {
+      "word": "une chèvre",
+      "en": "a goat",
+      "es": "una cabra"
+    },
+    {
+      "word": "un lapin",
+      "en": "a rabbit",
+      "es": "un conejo"
+    },
+    {
+      "word": "un chat / un chaton",
+      "en": "a cat / a kitten",
+      "es": "un gato / un gatito"
+    },
+    {
+      "word": "un chien / un chiot",
+      "en": "a dog / a puppy",
+      "es": "un perro / un cachorro"
+    },
+    {
+      "word": "une souris",
+      "en": "a mouse",
+      "es": "un ratón"
+    },
+    {
+      "word": "un écureuil",
+      "en": "a squirrel",
+      "es": "una ardilla"
+    },
+    {
+      "word": "un renard",
+      "en": "a fox",
+      "es": "un zorro"
+    },
+    {
+      "word": "un loup",
+      "en": "a wolf",
+      "es": "un lobo"
+    },
+    {
+      "word": "un ours",
+      "en": "a bear",
+      "es": "un oso"
+    },
+    {
+      "word": "un cerf",
+      "en": "a deer",
+      "es": "un ciervo"
+    },
+    {
+      "word": "un singe",
+      "en": "a monkey",
+      "es": "un mono"
+    },
+    {
+      "word": "un lion",
+      "en": "a lion",
+      "es": "un león"
+    },
+    {
+      "word": "un tigre",
+      "en": "a tiger",
+      "es": "un tigre"
+    },
+    {
+      "word": "un éléphant",
+      "en": "an elephant",
+      "es": "un elefante"
+    },
+    {
+      "word": "une girafe",
+      "en": "a giraffe",
+      "es": "una jirafa"
+    },
+    {
+      "word": "un zèbre",
+      "en": "a zebra",
+      "es": "una cebra"
+    },
+    {
+      "word": "un chameau",
+      "en": "a camel",
+      "es": "un camello"
+    },
+    {
+      "word": "un serpent",
+      "en": "a snake",
+      "es": "una serpiente"
+    },
+    {
+      "word": "une tortue",
+      "en": "a turtle",
+      "es": "una tortuga"
+    },
+    {
+      "word": "un crocodile",
+      "en": "a crocodile",
+      "es": "un cocodrilo"
+    },
+    {
+      "word": "un poisson",
+      "en": "a fish",
+      "es": "un pez"
+    },
+    {
+      "word": "un dauphin",
+      "en": "a dolphin",
+      "es": "un delfín"
+    },
+    {
+      "word": "une baleine",
+      "en": "a whale",
+      "es": "una ballena"
+    },
+    {
+      "word": "un requin",
+      "en": "a shark",
+      "es": "un tiburón"
+    },
+    {
+      "word": "un phoque",
+      "en": "a seal",
+      "es": "una foca"
+    },
+    {
+      "word": "une chauve-souris",
+      "en": "a bat",
+      "es": "un murciélago"
+    },
+    {
+      "word": "un mammifère",
+      "en": "a mammal",
+      "es": "un mamífero"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Les girafes ont un long cou.",
+      "en": "Giraffes have a long neck.",
+      "es": "Las jirafas tienen el cuello largo."
+    },
+    {
+      "phrase": "Les dauphins sont intelligents.",
+      "en": "Dolphins are intelligent.",
+      "es": "Los delfines son inteligentes."
+    },
+    {
+      "phrase": "Les chats sont silencieux et rapides.",
+      "en": "Cats are silent and fast.",
+      "es": "Los gatos son silenciosos y rápidos."
+    },
+    {
+      "phrase": "Les lamas viennent des Andes.",
+      "en": "Llamas come from the Andes.",
+      "es": "Las llamas vienen de los Andes."
+    },
+    {
+      "phrase": "Tu ne peux pas rester tranquille ? Tu es comme un singe !",
+      "en": "Can't you keep still? You're like a monkey!",
+      "es": "¿No puedes estarte quieto? ¡Pareces un mono!"
+    },
+    {
+      "phrase": "Il y a une souris dans la cuisine !",
+      "en": "There's a mouse in the kitchen!",
+      "es": "¡Hay un ratón en la cocina!"
+    },
+    {
+      "phrase": "Les chauves-souris ont leur propre radar.",
+      "en": "Bats have their own radar.",
+      "es": "Los murciélagos tienen su propio radar."
+    },
+    {
+      "phrase": "Les tigres, comme les lions, sont des animaux sauvages.",
+      "en": "Tigers, like lions, are wild animals.",
+      "es": "Los tigres, como los leones, son animales salvajes."
+    },
+    {
+      "phrase": "La laine vient des moutons.",
+      "en": "Wool comes from sheep.",
+      "es": "La lana viene de las ovejas."
+    },
+    {
+      "phrase": "Quand j'étais petite, j'avais un poney.",
+      "en": "When I was little, I had a pony.",
+      "es": "Cuando era pequeña, tenía un poni."
+    },
+    {
+      "phrase": "Les koalas sont une espèce menacée.",
+      "en": "Koalas are an endangered species.",
+      "es": "Los koalas son una especie amenazada."
+    },
+    {
+      "phrase": "La baleine bleue est l'animal le plus grand du monde.",
+      "en": "The blue whale is the largest animal in the world.",
+      "es": "La ballena azul es el animal más grande del mundo."
+    },
+    {
+      "phrase": "Tu sais faire du cheval ? — Oui, mais je dois encore pratiquer.",
+      "en": "Can you ride a horse? — Yes, but I still need to practice.",
+      "es": "¿Sabes montar a caballo? — Sí, pero todavía tengo que practicar."
+    },
+    {
+      "phrase": "Les loups hurlent les nuits de pleine lune.",
+      "en": "Wolves howl on full-moon nights.",
+      "es": "Los lobos aúllan las noches de luna llena."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What is the plural of \"cheval\"?",
+        "es": "¿Cuál es el plural de «cheval»?"
+      },
+      "options": [
+        "chevaux",
+        "chevals",
+        "chevales",
+        "chevaus"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "-al → -aux.",
+        "es": "-al → -aux."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is the largest animal in the world?",
+        "es": "¿Cuál es el animal más grande del mundo?"
+      },
+      "options": [
+        "la baleine bleue",
+        "l'éléphant",
+        "la girafe",
+        "le requin"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The blue whale is larger than any dinosaur.",
+        "es": "La ballena azul es más grande que cualquier dinosaurio."
+      }
+    },
+    {
+      "question": {
+        "en": "Passive voice: \"Hunters kill tigers\" → ?",
+        "es": "Voz pasiva: «Los cazadores matan tigres» → ?"
+      },
+      "options": [
+        "Les tigres sont tués par les chasseurs.",
+        "Les tigres tuent les chasseurs.",
+        "Les tigres ont tué les chasseurs.",
+        "Les chasseurs sont tués par les tigres."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Passive: être + past participle + par.",
+        "es": "Pasiva: être + participio + par."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"faire du cheval\" mean?",
+        "es": "¿Qué significa «faire du cheval»?"
+      },
+      "options": {
+        "en": [
+          "to ride a horse",
+          "to make a horse",
+          "to feed a horse",
+          "to buy a horse"
+        ],
+        "es": [
+          "montar a caballo",
+          "hacer un caballo",
+          "dar de comer a un caballo",
+          "comprar un caballo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Faire du + sport/activity: faire du vélo, faire du ski.",
+        "es": "Faire du + deporte o actividad: faire du vélo, faire du ski."
+      }
+    },
+    {
+      "question": {
+        "en": "Which animal is a mammal?",
+        "es": "¿Qué animal es un mamífero?"
+      },
+      "options": [
+        "le dauphin",
+        "le requin",
+        "le crocodile",
+        "l'aigle"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Dolphins and whales are mammals, not fish.",
+        "es": "Los delfines y las ballenas son mamíferos, no peces."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'ai une faim de loup.\" What does it mean?",
+        "es": "«J'ai une faim de loup.» ¿Qué significa?"
+      },
+      "options": {
+        "en": [
+          "I'm starving.",
+          "I'm afraid of wolves.",
+          "I want to eat a wolf.",
+          "I'm not hungry."
+        ],
+        "es": [
+          "Tengo un hambre feroz.",
+          "Tengo miedo de los lobos.",
+          "Quiero comerme un lobo.",
+          "No tengo hambre."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Literally \"a wolf's hunger\".",
+        "es": "Literalmente «un hambre de lobo»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Quand j'étais petit, j'___ un chien.\"",
+        "es": "Completa: «Quand j'étais petit, j'___ un chien.»"
+      },
+      "options": [
+        "avais",
+        "ai eu",
+        "aurai",
+        "aurais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait for a past situation that lasted.",
+        "es": "Imperfecto para una situación pasada que duraba."
+      }
+    },
+    {
+      "question": {
+        "en": "Which baby animal is \"un chiot\"?",
+        "es": "¿Qué cría es «un chiot»?"
+      },
+      "options": {
+        "en": [
+          "a puppy",
+          "a kitten",
+          "a chick",
+          "a calf"
+        ],
+        "es": [
+          "un cachorro",
+          "un gatito",
+          "un pollito",
+          "un ternero"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Chaton = kitten, poussin = chick, veau = calf.",
+        "es": "Chaton = gatito, poussin = pollito, veau = ternero."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une journée au refuge",
+    "text": "Samedi dernier, Hugo a passé la journée comme bénévole dans un refuge pour animaux sauvages, près de Toulouse. Le directeur lui a expliqué que beaucoup d'animaux sont blessés par les voitures ou trouvés dans des pièges. Le matin, Hugo a nourri un jeune renard et deux écureuils. « Ce renard a été sauvé il y a un mois. Il était très maigre », a dit la vétérinaire. L'après-midi, ils ont soigné une chouette qui ne pouvait plus voler, puis ils ont libéré un hérisson dans la forêt. « Quand j'étais enfant, je pensais que les animaux sauvages étaient dangereux », raconte Hugo. « Maintenant, je sais qu'ils ont plus peur de nous que nous d'eux. » Avant de partir, il a vu une tortue qui ressemblait à une petite pierre. Selon le directeur, il faut respecter la place de chaque animal sur la Terre, car nous faisons tous partie de la même chaîne. Hugo reviendra samedi prochain, c'est sûr !",
+    "en": "Last Saturday, Hugo spent the day as a volunteer at a wildlife shelter near Toulouse. The director explained to him that many animals are injured by cars or found in traps. In the morning, Hugo fed a young fox and two squirrels. “This fox was rescued a month ago. It was very thin,” said the vet. In the afternoon, they treated an owl that couldn't fly anymore, then they released a hedgehog into the forest. “When I was a child, I thought wild animals were dangerous,” Hugo says. “Now I know they are more afraid of us than we are of them.” Before leaving, he saw a turtle that looked like a little stone. According to the director, we must respect every animal's place on Earth, because we are all part of the same chain. Hugo will come back next Saturday, that's for sure!",
+    "es": "El sábado pasado, Hugo pasó el día como voluntario en un refugio de fauna salvaje cerca de Toulouse. El director le explicó que muchos animales son heridos por los coches o encontrados en trampas. Por la mañana, Hugo dio de comer a un zorro joven y a dos ardillas. «Este zorro fue rescatado hace un mes. Estaba muy flaco», dijo la veterinaria. Por la tarde curaron a una lechuza que ya no podía volar y luego soltaron a un erizo en el bosque. «Cuando era niño, pensaba que los animales salvajes eran peligrosos», cuenta Hugo. «Ahora sé que nos tienen más miedo ellos a nosotros que nosotros a ellos.» Antes de irse, vio una tortuga que parecía una piedrecita. Según el director, hay que respetar el lugar de cada animal en la Tierra, porque todos formamos parte de la misma cadena. ¡Hugo volverá el sábado que viene, seguro!",
+    "highlighted_words": [
+      "sont blessés",
+      "trouvés",
+      "renard",
+      "écureuils",
+      "a été sauvé",
+      "chouette",
+      "Quand j'étais enfant",
+      "tortue",
+      "ressemblait à",
+      "il faut respecter"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Les girafes ont un long cou",
+      "en": "Giraffes have a long neck",
+      "es": "Las jirafas tienen el cuello largo"
+    },
+    {
+      "sentence": "Il y a une souris dans la cuisine",
+      "en": "There's a mouse in the kitchen",
+      "es": "Hay un ratón en la cocina"
+    },
+    {
+      "sentence": "Les chevaux courent très vite",
+      "en": "Horses run very fast",
+      "es": "Los caballos corren muy rápido"
+    },
+    {
+      "sentence": "Ce renard a été sauvé",
+      "en": "This fox was rescued",
+      "es": "Este zorro fue rescatado"
+    },
+    {
+      "sentence": "Il faut respecter les animaux",
+      "en": "We must respect animals",
+      "es": "Hay que respetar a los animales"
+    },
+    {
+      "sentence": "Quand j'étais petit j'avais un chat",
+      "en": "When I was little I had a cat",
+      "es": "Cuando era pequeño tenía un gato"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "As-tu un animal ?",
+      "en": "Do you have a pet?",
+      "es": "¿Tienes una mascota?"
+    },
+    {
+      "answer": "J'ai deux chiens",
+      "en": "I have two dogs",
+      "es": "Tengo dos perros"
+    },
+    {
+      "answer": "Les dauphins sont intelligents",
+      "en": "Dolphins are intelligent",
+      "es": "Los delfines son inteligentes"
+    },
+    {
+      "answer": "Le lion est un animal sauvage",
+      "en": "The lion is a wild animal",
+      "es": "El león es un animal salvaje"
+    },
+    {
+      "answer": "J'ai une faim de loup",
+      "en": "I'm starving",
+      "es": "Tengo un hambre feroz"
+    },
+    {
+      "answer": "Les oiseaux chantent",
+      "en": "The birds are singing",
+      "es": "Los pájaros cantan"
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "lesson": 57,
+  "slug": "lecon-57",
+  "icon": "💎",
+  "title": {
+    "fr": "À la bijouterie",
+    "es": "En la joyería",
+    "en": "At the jewelry store"
+  },
+  "source": {
+    "audio": "Lecons 57.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "ni … ni",
+      "example": "Je n'aime ni les rubis ni les opales.",
+      "en": "\"Neither … nor\"",
+      "es": "«Ni … ni»"
+    },
+    {
+      "structure": "l'un ou l'autre / ni l'un ni l'autre / les deux",
+      "example": "Tu préfères l'or ou l'argent ? — Ni l'un ni l'autre ! / Je vais acheter les deux.",
+      "en": "Choosing between two",
+      "es": "Elegir entre dos"
+    },
+    {
+      "structure": "à condition que + subjonctif",
+      "example": "Elle peut aller à la fête à condition qu'elle soit élégante.",
+      "en": "\"On condition that\" + subjunctive",
+      "es": "«Con la condición de que» + subjuntivo"
+    },
+    {
+      "structure": "il faut que / pour que + subjonctif",
+      "example": "Il faut que ce soit en or. / Nettoie-les pour qu'ils brillent.",
+      "en": "Subjunctive after necessity / purpose",
+      "es": "Subjuntivo tras necesidad / finalidad"
+    },
+    {
+      "structure": "plus de … que",
+      "example": "Il a plus de bagues qu'une femme.",
+      "en": "Comparing quantities",
+      "es": "Comparar cantidades"
+    },
+    {
+      "structure": "plus-que-parfait + accord",
+      "example": "La bague qu'on avait vue… / l'argent que j'avais économisé",
+      "en": "Past perfect with agreement",
+      "es": "Pluscuamperfecto con concordancia"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Elle tomba amoureuse de cette bague. Le vendeur sourit.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il trouva, elle sourit) is the literary past of written stories; in conversation, use the passé composé.",
+      "es": "El passé simple (il trouva, elle sourit) es el pasado literario de los relatos escritos; al hablar se usa el passé composé."
+    },
+    {
+      "en": "\"Ni … ni\" replaces \"pas\": \"Je n'aime ni l'or ni l'argent.\" The articles \"un / des\" disappear: \"Il n'a ni bague ni collier.\"",
+      "es": "«Ni … ni» sustituye a «pas»: «Je n'aime ni l'or ni l'argent.» Los artículos «un / des» desaparecen: «Il n'a ni bague ni collier.»"
+    },
+    {
+      "en": "Jewelry: \"une bague\" (ring), \"une alliance\" (wedding ring), \"un collier\" (necklace), \"un bracelet\", \"des boucles d'oreilles\" (earrings), \"un pendentif\" (pendant).",
+      "es": "Joyería: «une bague» (anillo), «une alliance» (alianza), «un collier» (collar), «un bracelet» (pulsera), «des boucles d'oreilles» (pendientes), «un pendentif» (colgante)."
+    },
+    {
+      "en": "\"Demander la main de quelqu'un\" = to ask for someone's hand in marriage.",
+      "es": "«Demander la main de quelqu'un» = pedir la mano de alguien."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la bijouterie",
+      "en": "the jewelry store",
+      "es": "la joyería"
+    },
+    {
+      "word": "le bijoutier / la bijoutière",
+      "en": "the jeweler",
+      "es": "el joyero / la joyera"
+    },
+    {
+      "word": "les bijoux",
+      "en": "jewelry",
+      "es": "las joyas"
+    },
+    {
+      "word": "la bague",
+      "en": "the ring",
+      "es": "el anillo"
+    },
+    {
+      "word": "l'alliance",
+      "en": "the wedding ring",
+      "es": "la alianza"
+    },
+    {
+      "word": "le solitaire",
+      "en": "the solitaire ring",
+      "es": "el solitario"
+    },
+    {
+      "word": "le collier",
+      "en": "the necklace",
+      "es": "el collar"
+    },
+    {
+      "word": "le bracelet",
+      "en": "the bracelet",
+      "es": "la pulsera"
+    },
+    {
+      "word": "les boucles d'oreilles",
+      "en": "earrings",
+      "es": "los pendientes / los aretes"
+    },
+    {
+      "word": "le pendentif",
+      "en": "the pendant",
+      "es": "el colgante"
+    },
+    {
+      "word": "le médaillon",
+      "en": "the locket",
+      "es": "el medallón"
+    },
+    {
+      "word": "la breloque",
+      "en": "the charm",
+      "es": "el dije"
+    },
+    {
+      "word": "la montre",
+      "en": "the watch",
+      "es": "el reloj"
+    },
+    {
+      "word": "le diamant",
+      "en": "diamond",
+      "es": "el diamante"
+    },
+    {
+      "word": "le rubis",
+      "en": "ruby",
+      "es": "el rubí"
+    },
+    {
+      "word": "l'émeraude",
+      "en": "emerald",
+      "es": "la esmeralda"
+    },
+    {
+      "word": "l'opale",
+      "en": "opal",
+      "es": "el ópalo"
+    },
+    {
+      "word": "l'or",
+      "en": "gold",
+      "es": "el oro"
+    },
+    {
+      "word": "l'argent",
+      "en": "silver",
+      "es": "la plata"
+    },
+    {
+      "word": "précieux / précieuse",
+      "en": "precious",
+      "es": "precioso (valioso)"
+    },
+    {
+      "word": "lourd / léger",
+      "en": "heavy / light",
+      "es": "pesado / ligero"
+    },
+    {
+      "word": "briller",
+      "en": "to shine",
+      "es": "brillar"
+    },
+    {
+      "word": "nettoyer",
+      "en": "to clean",
+      "es": "limpiar"
+    },
+    {
+      "word": "le perçage",
+      "en": "the piercing",
+      "es": "el piercing"
+    },
+    {
+      "word": "percer",
+      "en": "to pierce",
+      "es": "perforar"
+    },
+    {
+      "word": "être allergique à",
+      "en": "to be allergic to",
+      "es": "ser alérgico a"
+    },
+    {
+      "word": "économiser",
+      "en": "to save",
+      "es": "ahorrar"
+    },
+    {
+      "word": "le cadeau",
+      "en": "the gift",
+      "es": "el regalo"
+    },
+    {
+      "word": "perdre",
+      "en": "to lose",
+      "es": "perder"
+    },
+    {
+      "word": "effrayé / effrayée",
+      "en": "frightened",
+      "es": "asustado / asustada"
+    },
+    {
+      "word": "la vendeuse",
+      "en": "the saleswoman",
+      "es": "la vendedora"
+    },
+    {
+      "word": "demander la main de",
+      "en": "to propose to",
+      "es": "pedir la mano de"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Elle a une jolie bague et un collier spectaculaire.",
+      "en": "She has a pretty ring and a spectacular necklace.",
+      "es": "Tiene un anillo bonito y un collar espectacular."
+    },
+    {
+      "phrase": "De l'or ou de l'argent ?",
+      "en": "Gold or silver?",
+      "es": "¿Oro o plata?"
+    },
+    {
+      "phrase": "J'aimerais acheter la bague et le médaillon ensemble.",
+      "en": "I would like to buy the ring and the locket together.",
+      "es": "Quisiera comprar el anillo y el medallón juntos."
+    },
+    {
+      "phrase": "Je n'aime ni les rubis ni les opales.",
+      "en": "I like neither rubies nor opals.",
+      "es": "No me gustan ni los rubíes ni los ópalos."
+    },
+    {
+      "phrase": "Cette breloque est jolie, mais elle est très lourde.",
+      "en": "This charm is pretty, but it's very heavy.",
+      "es": "Este dije es bonito, pero pesa mucho."
+    },
+    {
+      "phrase": "Elle peut aller à la fête à condition qu'elle soit élégante.",
+      "en": "She can go to the party on condition that she is elegant.",
+      "es": "Puede ir a la fiesta con la condición de que vaya elegante."
+    },
+    {
+      "phrase": "Il a plus de bagues qu'une star de cinéma !",
+      "en": "He has more rings than a movie star!",
+      "es": "¡Tiene más anillos que una estrella de cine!"
+    },
+    {
+      "phrase": "Ma mère ne porte plus ni bagues ni longues boucles d'oreilles.",
+      "en": "My mother no longer wears rings or long earrings.",
+      "es": "Mi madre ya no lleva ni anillos ni pendientes largos."
+    },
+    {
+      "phrase": "Tu peux m'offrir ce que tu veux, mais il faut que ce soit en or !",
+      "en": "You can give me whatever you want, but it has to be gold!",
+      "es": "Puedes regalarme lo que quieras, ¡pero tiene que ser de oro!"
+    },
+    {
+      "phrase": "Nettoie les bijoux avec ce chiffon pour qu'ils brillent.",
+      "en": "Clean the jewelry with this cloth so that it shines.",
+      "es": "Limpia las joyas con este paño para que brillen."
+    },
+    {
+      "phrase": "Tu vas acheter le collier ou les boucles d'oreilles ? — Je crois que je vais acheter les deux.",
+      "en": "Are you going to buy the necklace or the earrings? — I think I'll buy both.",
+      "es": "¿Vas a comprar el collar o los pendientes? — Creo que voy a comprar los dos."
+    },
+    {
+      "phrase": "Tu préfères les bagues en or ou en argent ? — Ni l'un ni l'autre.",
+      "en": "Do you prefer gold or silver rings? — Neither.",
+      "es": "¿Prefieres los anillos de oro o de plata? — Ni lo uno ni lo otro."
+    },
+    {
+      "phrase": "J'ai perdu le médaillon que mon père m'avait offert.",
+      "en": "I lost the locket my father had given me.",
+      "es": "He perdido el medallón que me había regalado mi padre."
+    },
+    {
+      "phrase": "Pourquoi tu ne portes pas ton alliance ? — Je suis allergique à certains métaux.",
+      "en": "Why don't you wear your wedding ring? — I'm allergic to certain metals.",
+      "es": "¿Por qué no llevas la alianza? — Soy alérgica a algunos metales."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Je n'aime ___ l'or ___ l'argent.\"",
+        "es": "Completa: «Je n'aime ___ l'or ___ l'argent.»"
+      },
+      "options": [
+        "ni … ni",
+        "pas … pas",
+        "ou … ou",
+        "et … et"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Ne … ni … ni = neither … nor.",
+        "es": "Ne … ni … ni = ni … ni."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Tu veux le collier ou la bague ? — Ni l'un ni l'autre.\" Meaning?",
+        "es": "«Tu veux le collier ou la bague ? — Ni l'un ni l'autre.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "Neither.",
+          "Both.",
+          "Either one.",
+          "The other one."
+        ],
+        "es": [
+          "Ninguno de los dos.",
+          "Los dos.",
+          "Cualquiera.",
+          "El otro."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Both = les deux.",
+        "es": "Los dos = les deux."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Tu peux venir à condition que tu ___ à l'heure.\"",
+        "es": "Completa: «Tu peux venir à condition que tu ___ à l'heure.»"
+      },
+      "options": [
+        "sois",
+        "es",
+        "seras",
+        "étais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"À condition que\" + subjunctive.",
+        "es": "«À condition que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il faut que ce ___ en or.\"",
+        "es": "Completa: «Il faut que ce ___ en or.»"
+      },
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "serait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il faut que\" + subjunctive.",
+        "es": "«Il faut que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il a ___ bagues que moi.\"",
+        "es": "Completa: «Il a ___ bagues que moi.»"
+      },
+      "options": [
+        "plus de",
+        "plus des",
+        "plus que",
+        "beaucoup"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Quantities: plus de + noun + que.",
+        "es": "Cantidades: plus de + sustantivo + que."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"une alliance\"?",
+        "es": "¿Qué es «une alliance»?"
+      },
+      "options": {
+        "en": [
+          "a wedding ring",
+          "a necklace",
+          "a watch",
+          "a bracelet"
+        ],
+        "es": [
+          "una alianza (anillo de boda)",
+          "un collar",
+          "un reloj",
+          "una pulsera"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Worn after the wedding.",
+        "es": "Se lleva tras la boda."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"La bague qu'on avait ___ était parfaite.\"",
+        "es": "Completa: «La bague qu'on avait ___ était parfaite.»"
+      },
+      "options": [
+        "vue",
+        "vu",
+        "vues",
+        "voir"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Agreement with \"que\" (la bague) before avoir.",
+        "es": "Concordancia con «que» (la bague) antes de avoir."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Nettoie-les pour qu'ils ___.\"",
+        "es": "Completa: «Nettoie-les pour qu'ils ___.»"
+      },
+      "options": [
+        "brillent",
+        "brillent-ils",
+        "brilleront",
+        "brillaient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pour que\" + subjunctive.",
+        "es": "«Pour que» + subjuntivo."
+      }
+    }
+  ],
+  "story": {
+    "title": "La bague de fiançailles",
+    "text": "Pendant un an, j'avais économisé pour acheter une bague de fiançailles à ma copine, Inès, et lui demander sa main. Elle était tombée amoureuse d'une bague avec un petit diamant qu'on avait vue dans une bijouterie d'Annecy, pendant nos vacances. Le mois dernier, je suis retourné à Annecy afin de l'acheter. Dans la bijouterie, j'ai demandé à la vendeuse la bague qu'Inès aimait. Par chance, c'était exactement sa taille. « Vous voulez aussi un écrin ? » me demanda-t-elle. « Oui, à condition qu'il ne soit pas trop cher ! » Je suis reparti tout content. Mais dans le train du retour, je me suis endormi. En arrivant à Lyon, j'ai cherché l'écrin dans ma poche : il n'était plus là ! J'étais effrayé : j'allais perdre tout l'argent que j'avais économisé. Je n'avais ni la bague ni le ticket de caisse. Soudain, une petite fille s'approcha de moi. « Monsieur, c'est à vous ? C'était tombé sous votre siège. » Je ne pouvais ni parler ni bouger, tellement j'étais soulagé. Le soir même, j'ai demandé Inès en mariage. Elle a dit oui… et elle ne sait toujours pas que la bague a voyagé toute seule sous un siège de train !",
+    "en": "For a year, I had saved up to buy an engagement ring for my girlfriend, Inès, and ask for her hand. She had fallen in love with a ring with a small diamond that we had seen in a jewelry store in Annecy, during our vacation. Last month, I went back to Annecy to buy it. In the store, I asked the saleswoman for the ring Inès liked. Luckily, it was exactly her size. “Would you also like a box?” she asked me. “Yes, as long as it's not too expensive!” I left very happy. But on the train home, I fell asleep. Arriving in Lyon, I looked for the box in my pocket: it wasn't there anymore! I was terrified: I was going to lose all the money I had saved. I had neither the ring nor the receipt. Suddenly, a little girl came up to me. “Sir, is this yours? It had fallen under your seat.” I could neither speak nor move, I was so relieved. That same evening, I asked Inès to marry me. She said yes… and she still doesn't know the ring traveled all alone under a train seat!",
+    "es": "Durante un año había ahorrado para comprarle un anillo de compromiso a mi novia, Inès, y pedirle la mano. Se había enamorado de un anillo con un pequeño diamante que habíamos visto en una joyería de Annecy, durante las vacaciones. El mes pasado volví a Annecy para comprarlo. En la joyería, le pedí a la vendedora el anillo que le gustaba a Inès. Por suerte, era justo de su talla. «¿Quiere también un estuche?», me preguntó. «¡Sí, con la condición de que no sea demasiado caro!» Salí contentísimo. Pero en el tren de vuelta me quedé dormido. Al llegar a Lyon, busqué el estuche en el bolsillo: ¡ya no estaba! Estaba aterrado: iba a perder todo el dinero que había ahorrado. No tenía ni el anillo ni el tique. De repente, una niña se me acercó. «Señor, ¿esto es suyo? Se había caído debajo de su asiento.» No podía ni hablar ni moverme del alivio. Esa misma noche le pedí matrimonio a Inès. Dijo que sí… ¡y todavía no sabe que el anillo viajó solito debajo de un asiento de tren!",
+    "highlighted_words": [
+      "j'avais économisé",
+      "demander sa main",
+      "était tombée amoureuse",
+      "qu'on avait vue",
+      "bijouterie",
+      "afin de",
+      "demanda",
+      "à condition qu'il ne soit pas",
+      "que j'avais économisé",
+      "ni la bague ni le ticket",
+      "s'approcha",
+      "ni parler ni bouger"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je n'aime ni l'or ni l'argent",
+      "en": "I like neither gold nor silver",
+      "es": "No me gustan ni el oro ni la plata"
+    },
+    {
+      "sentence": "Je vais acheter les deux",
+      "en": "I'm going to buy both",
+      "es": "Voy a comprar los dos"
+    },
+    {
+      "sentence": "Il faut que ce soit en or",
+      "en": "It has to be gold",
+      "es": "Tiene que ser de oro"
+    },
+    {
+      "sentence": "Elle a plus de bijoux que moi",
+      "en": "She has more jewelry than me",
+      "es": "Tiene más joyas que yo"
+    },
+    {
+      "sentence": "Cette bague brille beaucoup",
+      "en": "This ring shines a lot",
+      "es": "Este anillo brilla mucho"
+    },
+    {
+      "sentence": "J'ai perdu mon collier",
+      "en": "I lost my necklace",
+      "es": "He perdido mi collar"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "C'est en or ?",
+      "en": "Is it gold?",
+      "es": "¿Es de oro?"
+    },
+    {
+      "answer": "J'aime ces boucles d'oreilles",
+      "en": "I like these earrings",
+      "es": "Me gustan estos pendientes"
+    },
+    {
+      "answer": "Ni l'un ni l'autre",
+      "en": "Neither one",
+      "es": "Ninguno de los dos"
+    },
+    {
+      "answer": "Je voudrais une bague en argent",
+      "en": "I would like a silver ring",
+      "es": "Quisiera un anillo de plata"
+    },
+    {
+      "answer": "Elle a dit oui",
+      "en": "She said yes",
+      "es": "Dijo que sí"
+    },
+    {
+      "answer": "C'est un cadeau pour ma mère",
+      "en": "It's a gift for my mother",
+      "es": "Es un regalo para mi madre"
+    }
+  ]
+}

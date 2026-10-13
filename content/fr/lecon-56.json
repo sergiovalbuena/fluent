@@ -1,0 +1,560 @@
+{
+  "lesson": 56,
+  "slug": "lecon-56",
+  "icon": "💇",
+  "title": {
+    "fr": "Chez le coiffeur",
+    "es": "En la peluquería",
+    "en": "At the hairdresser"
+  },
+  "source": {
+    "audio": "Lecons 56.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "se faire + infinitif",
+      "example": "Elle s'est fait couper les cheveux. / Je voudrais me faire faire une manucure.",
+      "en": "Having something done",
+      "es": "«Hacerse» algo (que otro lo hace)"
+    },
+    {
+      "structure": "voix passive",
+      "example": "Les massages sont faits par Pierre. / Elle a été maquillée par Robert.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    },
+    {
+      "structure": "vouloir que + subjonctif",
+      "example": "Je veux que vous me laviez les cheveux.",
+      "en": "Wanting someone to do something",
+      "es": "Querer que alguien haga algo"
+    },
+    {
+      "structure": "il vaut mieux que + subjonctif",
+      "example": "Il vaut mieux que tu te coupes les cheveux.",
+      "en": "\"It's better that\"",
+      "es": "«Es mejor que»"
+    },
+    {
+      "structure": "accord du participe avec COD",
+      "example": "Qui t'a coupé les cheveux ? — Jean me les a coupés.",
+      "en": "Participle agreement with pronoun",
+      "es": "Concordancia del participio con pronombre"
+    },
+    {
+      "structure": "depuis + présent",
+      "example": "Le salon est ouvert depuis un an.",
+      "en": "Ongoing since",
+      "es": "Desde hace"
+    },
+    {
+      "structure": "venir de + infinitif",
+      "example": "Je viens de me faire masser.",
+      "en": "Recent past",
+      "es": "Pasado reciente"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Se faire + infinitive\" = to have something done by someone else: \"Je me suis fait couper les cheveux\" (not \"J'ai coupé mes cheveux\", which means you did it yourself).",
+      "es": "«Se faire + infinitivo» = que otra persona te haga algo: «Je me suis fait couper les cheveux» (no «J'ai coupé mes cheveux», que significa que te los cortaste tú)."
+    },
+    {
+      "en": "With body parts, French uses the article + a reflexive or indirect pronoun: \"Elle se lave les cheveux\", \"Il me coupe les cheveux\".",
+      "es": "Con partes del cuerpo, el francés usa el artículo + un pronombre: «Elle se lave les cheveux», «Il me coupe les cheveux»."
+    },
+    {
+      "en": "At the hairdresser: \"une coupe\" (haircut), \"un brushing\" (blow-dry), \"une couleur / une teinture\" (dye), \"des mèches\" (highlights), \"rafraîchir\" (to trim).",
+      "es": "En la peluquería: «une coupe» (corte), «un brushing» (secado con cepillo), «une couleur / une teinture» (tinte), «des mèches» (mechas), «rafraîchir» (sanear las puntas)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le coiffeur / la coiffeuse",
+      "en": "the hairdresser",
+      "es": "el peluquero / la peluquera"
+    },
+    {
+      "word": "le salon de coiffure",
+      "en": "the hair salon",
+      "es": "la peluquería"
+    },
+    {
+      "word": "l'institut de beauté",
+      "en": "the beauty salon",
+      "es": "el centro de estética"
+    },
+    {
+      "word": "la coupe de cheveux",
+      "en": "the haircut",
+      "es": "el corte de pelo"
+    },
+    {
+      "word": "la coiffure",
+      "en": "the hairstyle",
+      "es": "el peinado"
+    },
+    {
+      "word": "le brushing",
+      "en": "the blow-dry",
+      "es": "el secado con cepillo"
+    },
+    {
+      "word": "la teinture",
+      "en": "the hair dye",
+      "es": "el tinte"
+    },
+    {
+      "word": "les mèches",
+      "en": "highlights",
+      "es": "las mechas"
+    },
+    {
+      "word": "frisé / bouclé",
+      "en": "curly",
+      "es": "rizado"
+    },
+    {
+      "word": "raide",
+      "en": "straight (hair)",
+      "es": "liso"
+    },
+    {
+      "word": "court / long",
+      "en": "short / long",
+      "es": "corto / largo"
+    },
+    {
+      "word": "le shampoing",
+      "en": "shampoo",
+      "es": "el champú"
+    },
+    {
+      "word": "l'après-shampoing",
+      "en": "conditioner",
+      "es": "el acondicionador"
+    },
+    {
+      "word": "le sèche-cheveux",
+      "en": "the hair dryer",
+      "es": "el secador"
+    },
+    {
+      "word": "la brosse",
+      "en": "the brush",
+      "es": "el cepillo"
+    },
+    {
+      "word": "le peigne",
+      "en": "the comb",
+      "es": "el peine"
+    },
+    {
+      "word": "les ciseaux",
+      "en": "scissors",
+      "es": "las tijeras"
+    },
+    {
+      "word": "le rasoir",
+      "en": "the razor",
+      "es": "la cuchilla de afeitar"
+    },
+    {
+      "word": "le miroir",
+      "en": "the mirror",
+      "es": "el espejo"
+    },
+    {
+      "word": "la manucure",
+      "en": "manicure",
+      "es": "la manicura"
+    },
+    {
+      "word": "la pédicure",
+      "en": "pedicure",
+      "es": "la pedicura"
+    },
+    {
+      "word": "le vernis à ongles",
+      "en": "nail polish",
+      "es": "el esmalte de uñas"
+    },
+    {
+      "word": "la lime à ongles",
+      "en": "nail file",
+      "es": "la lima de uñas"
+    },
+    {
+      "word": "le coupe-ongles",
+      "en": "nail clipper",
+      "es": "el cortaúñas"
+    },
+    {
+      "word": "épiler",
+      "en": "to wax / pluck",
+      "es": "depilar"
+    },
+    {
+      "word": "la cire",
+      "en": "wax",
+      "es": "la cera"
+    },
+    {
+      "word": "les sourcils",
+      "en": "eyebrows",
+      "es": "las cejas"
+    },
+    {
+      "word": "le mascara",
+      "en": "mascara",
+      "es": "el rímel"
+    },
+    {
+      "word": "le rouge à lèvres",
+      "en": "lipstick",
+      "es": "el pintalabios"
+    },
+    {
+      "word": "le maquillage",
+      "en": "makeup",
+      "es": "el maquillaje"
+    },
+    {
+      "word": "se faire masser",
+      "en": "to get a massage",
+      "es": "hacerse un masaje"
+    },
+    {
+      "word": "le magazine",
+      "en": "the magazine",
+      "es": "la revista"
+    },
+    {
+      "word": "pâle",
+      "en": "pale",
+      "es": "pálido"
+    },
+    {
+      "word": "irrégulier / irrégulière",
+      "en": "uneven",
+      "es": "irregular"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Bienvenue au salon de coiffure !",
+      "en": "Welcome to the hair salon!",
+      "es": "¡Bienvenidos a la peluquería!"
+    },
+    {
+      "phrase": "D'abord, je veux que vous me laviez les cheveux.",
+      "en": "First, I want you to wash my hair.",
+      "es": "Primero, quiero que me lave el pelo."
+    },
+    {
+      "phrase": "Tes ongles seront très jolis.",
+      "en": "Your nails will be very pretty.",
+      "es": "Tus uñas quedarán muy bonitas."
+    },
+    {
+      "phrase": "Il vaut mieux que tu te coupes les cheveux.",
+      "en": "You'd better get your hair cut.",
+      "es": "Es mejor que te cortes el pelo."
+    },
+    {
+      "phrase": "Le salon est ouvert depuis un an.",
+      "en": "The salon has been open for a year.",
+      "es": "La peluquería lleva un año abierta."
+    },
+    {
+      "phrase": "Elle veut se faire épiler les sourcils à la cire.",
+      "en": "She wants to have her eyebrows waxed.",
+      "es": "Quiere depilarse las cejas con cera."
+    },
+    {
+      "phrase": "Les massages sont faits par Pierre.",
+      "en": "Massages are done by Pierre.",
+      "es": "Los masajes los hace Pierre."
+    },
+    {
+      "phrase": "Elle a été maquillée par une professionnelle.",
+      "en": "Her makeup was done by a professional.",
+      "es": "La maquilló una profesional."
+    },
+    {
+      "phrase": "Le sèche-cheveux est cassé.",
+      "en": "The hair dryer is broken.",
+      "es": "El secador está roto."
+    },
+    {
+      "phrase": "Les ciseaux ont disparu !",
+      "en": "The scissors have disappeared!",
+      "es": "¡Las tijeras han desaparecido!"
+    },
+    {
+      "phrase": "Qu'est-ce que vous aimeriez ? — J'aimerais me faire faire une manucure.",
+      "en": "What would you like? — I would like a manicure.",
+      "es": "¿Qué desea? — Me gustaría hacerme la manicura."
+    },
+    {
+      "phrase": "Tu es vraiment détendue ! — Je viens de me faire masser.",
+      "en": "You're really relaxed! — I just had a massage.",
+      "es": "¡Estás muy relajada! — Me acaban de dar un masaje."
+    },
+    {
+      "phrase": "Qui t'a coupé les cheveux ? — Jean me les a coupés.",
+      "en": "Who cut your hair? — Jean cut it for me.",
+      "es": "¿Quién te ha cortado el pelo? — Me lo ha cortado Jean."
+    },
+    {
+      "phrase": "Quand vas-tu te faire couper les cheveux ? — Je le ferai demain.",
+      "en": "When are you going to get your hair cut? — I'll do it tomorrow.",
+      "es": "¿Cuándo vas a cortarte el pelo? — Lo haré mañana."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "\"Je me suis fait couper les cheveux.\" Who cut the hair?",
+        "es": "«Je me suis fait couper les cheveux.» ¿Quién cortó el pelo?"
+      },
+      "options": {
+        "en": [
+          "someone else (a hairdresser)",
+          "I did it myself",
+          "nobody",
+          "my hair fell out"
+        ],
+        "es": [
+          "otra persona (un peluquero)",
+          "yo mismo",
+          "nadie",
+          "se me cayó el pelo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Se faire + infinitive\" = someone else does it.",
+        "es": "«Se faire + infinitivo» = lo hace otra persona."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je veux que vous me ___ les cheveux.\"",
+        "es": "Completa: «Je veux que vous me ___ les cheveux.»"
+      },
+      "options": [
+        "laviez",
+        "lavez",
+        "laverez",
+        "laviez-vous"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Vouloir que + subjunctive.",
+        "es": "Vouloir que + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Passive: \"Pierre fait les massages.\" → ?",
+        "es": "Pasiva: «Pierre fait les massages.» → ?"
+      },
+      "options": [
+        "Les massages sont faits par Pierre.",
+        "Les massages font Pierre.",
+        "Pierre est fait par les massages.",
+        "Les massages sont fait par Pierre."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Agreement: faits (masc. plural).",
+        "es": "Concordancia: faits (masculino plural)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Les cheveux ? Jean me les a ___.\"",
+        "es": "Completa: «Les cheveux ? Jean me les a ___.»"
+      },
+      "options": [
+        "coupés",
+        "coupé",
+        "coupées",
+        "couper"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Agreement with \"les\" (= les cheveux, masc. plural).",
+        "es": "Concordancia con «les» (= les cheveux, masculino plural)."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"I wash my hair\"?",
+        "es": "¿Cómo se dice «Me lavo el pelo»?"
+      },
+      "options": [
+        "Je me lave les cheveux.",
+        "Je lave mes cheveux à moi.",
+        "Je me lave mes cheveux.",
+        "Je lave les cheveux de moi."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Reflexive + article with body parts.",
+        "es": "Pronominal + artículo con partes del cuerpo."
+      }
+    },
+    {
+      "question": {
+        "en": "What are \"des mèches\"?",
+        "es": "¿Qué son «des mèches»?"
+      },
+      "options": {
+        "en": [
+          "highlights",
+          "scissors",
+          "curls",
+          "wigs"
+        ],
+        "es": [
+          "mechas",
+          "tijeras",
+          "rizos",
+          "pelucas"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Faire des mèches = to get highlights.",
+        "es": "Faire des mèches = hacerse mechas."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il vaut mieux que tu ___ chez le coiffeur.\"",
+        "es": "Completa: «Il vaut mieux que tu ___ chez le coiffeur.»"
+      },
+      "options": [
+        "ailles",
+        "vas",
+        "iras",
+        "allais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il vaut mieux que\" + subjunctive.",
+        "es": "«Il vaut mieux que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Je viens de me faire masser.\" Meaning?",
+        "es": "«Je viens de me faire masser.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I just had a massage.",
+          "I'm going to get a massage.",
+          "I came to give a massage.",
+          "I massage myself."
+        ],
+        "es": [
+          "Me acaban de dar un masaje.",
+          "Me van a dar un masaje.",
+          "He venido a dar un masaje.",
+          "Me masajeo yo solo."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Venir de = recent past.",
+        "es": "Venir de = pasado reciente."
+      }
+    }
+  ],
+  "story": {
+    "title": "La pire coupe de ma vie",
+    "text": "« Bonsoir, madame. Qu'est-ce que vous aimeriez faire aujourd'hui ? » « Je voudrais me faire couper les cheveux, mais juste un peu. » « Vous voulez aussi que je vous fasse un shampoing ? » « Oui, pourquoi pas. Je ne viens pas souvent ici, mais on m'a dit que c'était bien. » « Vous vous êtes déjà fait faire une couleur ? » « Oui, d'ailleurs, j'aimerais bien essayer quelque chose de différent. » « Je suis très doué pour les couleurs ! Si vous voulez, je vous la fais. » « D'accord, je vous fais confiance. » Une heure plus tard, Léa se regarde dans le miroir. « Mon Dieu ! Qu'est-ce que vous avez fait ? Mes cheveux sont orange ! » « Euh… au moins, c'est original. Laissez-moi les couper un peu, ça ira mieux. » Dix minutes après : « Pourquoi me les avez-vous coupés si court ? Et de façon si irrégulière ! » « Mais vous m'avez dit que vous vouliez du changement ! » « Je vous ai dit que je ne voulais pas changer beaucoup ! » Léa sort du salon en mettant un bonnet. Le lendemain, elle s'est fait faire une nouvelle couleur… dans un autre salon.",
+    "en": "“Good evening, madam. What would you like to have done today?” “I'd like to have my hair cut, but just a little.” “Would you also like me to give you a shampoo?” “Yes, why not. I don't come here often, but I was told it was good.” “Have you ever had your hair colored?” “Yes, actually, I'd like to try something different.” “I'm very good at color! If you want, I'll do it for you.” “All right, I trust you.” An hour later, Léa looks at herself in the mirror. “Oh my God! What have you done? My hair is orange!” “Um… at least it's original. Let me cut it a bit, it'll look better.” Ten minutes later: “Why did you cut it so short? And so unevenly!” “But you told me you wanted a change!” “I told you I didn't want to change much!” Léa leaves the salon putting on a beanie. The next day, she had a new color done… in another salon.",
+    "es": "«Buenas tardes, señora. ¿Qué le gustaría hacerse hoy?» «Quisiera cortarme el pelo, pero solo un poco.» «¿Quiere también que le lave la cabeza?» «Sí, ¿por qué no? No vengo a menudo, pero me han dicho que está bien.» «¿Se ha teñido alguna vez?» «Sí; de hecho, me gustaría probar algo diferente.» «¡Se me dan muy bien los tintes! Si quiere, se lo hago.» «De acuerdo, confío en usted.» Una hora después, Léa se mira en el espejo. «¡Dios mío! ¿Qué ha hecho? ¡Tengo el pelo naranja!» «Eh… al menos es original. Déjeme cortárselo un poco, quedará mejor.» Diez minutos después: «¿Por qué me lo ha cortado tan corto? ¡Y tan irregular!» «¡Pero usted me dijo que quería un cambio!» «¡Le dije que no quería cambiar mucho!» Léa sale de la peluquería poniéndose un gorro. Al día siguiente se hizo un tinte nuevo… en otra peluquería.",
+    "highlighted_words": [
+      "me faire couper les cheveux",
+      "Vous voulez aussi que je vous fasse",
+      "shampoing",
+      "Vous vous êtes déjà fait faire une couleur",
+      "je vous fais confiance",
+      "miroir",
+      "Laissez-moi les couper",
+      "me les avez-vous coupés",
+      "irrégulière",
+      "elle s'est fait faire"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je me suis fait couper les cheveux",
+      "en": "I had my hair cut",
+      "es": "Me he cortado el pelo (en la peluquería)"
+    },
+    {
+      "sentence": "Je veux que vous me laviez les cheveux",
+      "en": "I want you to wash my hair",
+      "es": "Quiero que me lave el pelo"
+    },
+    {
+      "sentence": "Le salon est ouvert depuis un an",
+      "en": "The salon has been open for a year",
+      "es": "La peluquería lleva un año abierta"
+    },
+    {
+      "sentence": "Elle a été maquillée par une amie",
+      "en": "Her makeup was done by a friend",
+      "es": "La maquilló una amiga"
+    },
+    {
+      "sentence": "Je viens de me faire masser",
+      "en": "I just had a massage",
+      "es": "Me acaban de dar un masaje"
+    },
+    {
+      "sentence": "Jean me les a coupés",
+      "en": "Jean cut them for me",
+      "es": "Me lo ha cortado Jean"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Juste un peu, s'il vous plaît",
+      "en": "Just a little, please",
+      "es": "Solo un poco, por favor"
+    },
+    {
+      "answer": "J'aimerais une manucure",
+      "en": "I would like a manicure",
+      "es": "Me gustaría hacerme la manicura"
+    },
+    {
+      "answer": "Le sèche-cheveux est cassé",
+      "en": "The hair dryer is broken",
+      "es": "El secador está roto"
+    },
+    {
+      "answer": "C'est trop court !",
+      "en": "It's too short!",
+      "es": "¡Está demasiado corto!"
+    },
+    {
+      "answer": "Elle a les cheveux bouclés",
+      "en": "She has curly hair",
+      "es": "Tiene el pelo rizado"
+    },
+    {
+      "answer": "Je voudrais prendre rendez-vous",
+      "en": "I would like to make an appointment",
+      "es": "Quisiera pedir cita"
+    }
+  ]
+}

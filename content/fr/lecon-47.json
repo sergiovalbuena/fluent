@@ -1,0 +1,554 @@
+{
+  "lesson": 47,
+  "slug": "lecon-47",
+  "icon": "🤝",
+  "title": {
+    "fr": "Parler avec son chef et ses collègues",
+    "es": "Hablar con el jefe y los compañeros",
+    "en": "Talking with your boss and colleagues"
+  },
+  "source": {
+    "audio": "Lecons 47.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "si + plus-que-parfait → conditionnel passé",
+      "example": "Si tu nous en avais parlé plus tôt, nous aurions pu nous organiser.",
+      "en": "Unreal past (3rd conditional)",
+      "es": "Irreal en el pasado (tercer tipo)"
+    },
+    {
+      "structure": "conditionnel passé négatif",
+      "example": "Si les ouvriers n'avaient pas fait grève, le superviseur n'aurait pas démissionné.",
+      "en": "Negative unreal past",
+      "es": "Irreal pasado negativo"
+    },
+    {
+      "structure": "questions au conditionnel passé",
+      "example": "Qu'aurais-tu fait si Jean n'avait pas résolu le problème ?",
+      "en": "Hypothetical questions about the past",
+      "es": "Preguntas hipotéticas sobre el pasado"
+    },
+    {
+      "structure": "condition mixte",
+      "example": "Si vous aviez plus de formation, nous gagnerions tous plus d'argent.",
+      "en": "Mixed condition (present result)",
+      "es": "Condición mixta (resultado presente)"
+    },
+    {
+      "structure": "ça fait … que",
+      "example": "Ça fait des mois qu'on n'envoie plus de notes de service.",
+      "en": "Duration up to now",
+      "es": "Duración hasta ahora"
+    },
+    {
+      "structure": "grâce à / à cause de",
+      "example": "Grâce à vos efforts… / À cause de cette erreur…",
+      "en": "Positive vs. negative cause",
+      "es": "Causa positiva frente a negativa"
+    },
+    {
+      "structure": "ne … pas … mais",
+      "example": "Nous ne travaillons pas pour un chef, mais pour nous-mêmes.",
+      "en": "\"Not … but\"",
+      "es": "«No … sino»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "3rd conditional: si + plus-que-parfait, then conditionnel passé: \"Si j'avais su, je ne serais pas venu.\"",
+      "es": "Tercer tipo: si + plus-que-parfait, luego conditionnel passé: «Si j'avais su, je ne serais pas venu.»"
+    },
+    {
+      "en": "Office words: \"le / la supérieur(e)\" (boss), \"le / la subordonné(e)\", \"la note de service\" (memo), \"la réunion\" (meeting), \"déléguer\" (to delegate), \"faire grève\" (to strike).",
+      "es": "En la oficina: «le / la supérieur(e)» (superior), «le / la subordonné(e)», «la note de service» (circular), «la réunion» (reunión), «déléguer» (delegar), «faire grève» (hacer huelga)."
+    },
+    {
+      "en": "\"Efficace\" = effective (gets results); \"efficient\" is less common in French — \"efficace\" covers both.",
+      "es": "«Efficace» = eficaz; «efficient» se usa poco en francés: «efficace» cubre ambos sentidos."
+    },
+    {
+      "en": "\"Grâce à\" for good causes, \"à cause de\" for bad ones: \"grâce à toi\" / \"à cause de la pluie\".",
+      "es": "«Grâce à» para causas positivas, «à cause de» para negativas: «grâce à toi» / «à cause de la pluie»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le chef / la cheffe",
+      "en": "the boss",
+      "es": "el jefe / la jefa"
+    },
+    {
+      "word": "le directeur / la directrice",
+      "en": "the director",
+      "es": "el director / la directora"
+    },
+    {
+      "word": "le supérieur",
+      "en": "the superior",
+      "es": "el superior"
+    },
+    {
+      "word": "le subordonné",
+      "en": "the subordinate",
+      "es": "el subordinado"
+    },
+    {
+      "word": "le superviseur",
+      "en": "the supervisor",
+      "es": "el supervisor"
+    },
+    {
+      "word": "le collègue",
+      "en": "the colleague",
+      "es": "el compañero de trabajo"
+    },
+    {
+      "word": "le personnel",
+      "en": "the staff",
+      "es": "el personal"
+    },
+    {
+      "word": "l'équipe",
+      "en": "the team",
+      "es": "el equipo"
+    },
+    {
+      "word": "les employés",
+      "en": "the employees",
+      "es": "los empleados"
+    },
+    {
+      "word": "les ouvriers",
+      "en": "the workers",
+      "es": "los obreros"
+    },
+    {
+      "word": "l'autorité",
+      "en": "authority",
+      "es": "la autoridad"
+    },
+    {
+      "word": "diriger",
+      "en": "to manage / lead",
+      "es": "dirigir"
+    },
+    {
+      "word": "superviser",
+      "en": "to supervise",
+      "es": "supervisar"
+    },
+    {
+      "word": "déléguer",
+      "en": "to delegate",
+      "es": "delegar"
+    },
+    {
+      "word": "collaborer",
+      "en": "to collaborate",
+      "es": "colaborar"
+    },
+    {
+      "word": "coopérer",
+      "en": "to cooperate",
+      "es": "cooperar"
+    },
+    {
+      "word": "organiser",
+      "en": "to organize",
+      "es": "organizar"
+    },
+    {
+      "word": "résoudre",
+      "en": "to solve",
+      "es": "resolver"
+    },
+    {
+      "word": "la tâche",
+      "en": "the task",
+      "es": "la tarea"
+    },
+    {
+      "word": "la note de service",
+      "en": "the memo",
+      "es": "la circular"
+    },
+    {
+      "word": "la réunion",
+      "en": "the meeting",
+      "es": "la reunión"
+    },
+    {
+      "word": "l'instruction",
+      "en": "the instruction",
+      "es": "la instrucción"
+    },
+    {
+      "word": "l'erreur",
+      "en": "the mistake",
+      "es": "el error"
+    },
+    {
+      "word": "efficace",
+      "en": "efficient / effective",
+      "es": "eficaz"
+    },
+    {
+      "word": "productif / productive",
+      "en": "productive",
+      "es": "productivo / productiva"
+    },
+    {
+      "word": "la production",
+      "en": "production",
+      "es": "la producción"
+    },
+    {
+      "word": "la qualité",
+      "en": "quality",
+      "es": "la calidad"
+    },
+    {
+      "word": "récompenser",
+      "en": "to reward",
+      "es": "recompensar"
+    },
+    {
+      "word": "la prime",
+      "en": "the bonus",
+      "es": "la prima / el bono"
+    },
+    {
+      "word": "faire grève",
+      "en": "to go on strike",
+      "es": "hacer huelga"
+    },
+    {
+      "word": "la grève",
+      "en": "the strike",
+      "es": "la huelga"
+    },
+    {
+      "word": "faire faillite",
+      "en": "to go bankrupt",
+      "es": "quebrar"
+    },
+    {
+      "word": "être renvoyé",
+      "en": "to be fired",
+      "es": "ser despedido"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Si tu nous en avais parlé plus tôt, nous aurions pu nous organiser.",
+      "en": "If you had told us earlier, we could have organized ourselves.",
+      "es": "Si nos lo hubieras dicho antes, podríamos habernos organizado."
+    },
+    {
+      "phrase": "S'il avait formé une équipe, nous aurions fini plus tôt.",
+      "en": "If he had formed a team, we would have finished earlier.",
+      "es": "Si hubiera formado un equipo, habríamos terminado antes."
+    },
+    {
+      "phrase": "Ils auraient résolu le problème s'ils avaient été bien supervisés.",
+      "en": "They would have solved the problem if they had been well supervised.",
+      "es": "Habrían resuelto el problema si hubieran estado bien supervisados."
+    },
+    {
+      "phrase": "Elle aurait pu recevoir une prime si elle n'avait pas commis cette erreur.",
+      "en": "She could have received a bonus if she hadn't made that mistake.",
+      "es": "Podría haber recibido una prima si no hubiera cometido ese error."
+    },
+    {
+      "phrase": "Si j'avais reçu la note de service, j'aurais su qu'il fallait travailler plus.",
+      "en": "If I had received the memo, I would have known I had to work harder.",
+      "es": "Si hubiera recibido la circular, habría sabido que había que trabajar más."
+    },
+    {
+      "phrase": "Si les ouvriers n'avaient pas fait grève, le superviseur n'aurait pas démissionné.",
+      "en": "If the workers hadn't gone on strike, the supervisor wouldn't have resigned.",
+      "es": "Si los obreros no hubieran hecho huelga, el supervisor no habría dimitido."
+    },
+    {
+      "phrase": "S'il avait été bien formé, il n'aurait pas été renvoyé.",
+      "en": "If he had been well trained, he wouldn't have been fired.",
+      "es": "Si lo hubieran formado bien, no lo habrían despedido."
+    },
+    {
+      "phrase": "Si vous aviez tous collaboré, la production aurait été meilleure.",
+      "en": "If you had all collaborated, production would have been better.",
+      "es": "Si todos hubieran colaborado, la producción habría sido mejor."
+    },
+    {
+      "phrase": "Le produit aurait pu se vendre dans le monde entier si l'entreprise n'avait pas fait faillite.",
+      "en": "The product could have sold worldwide if the company hadn't gone bankrupt.",
+      "es": "El producto podría haberse vendido en todo el mundo si la empresa no hubiera quebrado."
+    },
+    {
+      "phrase": "Qu'aurais-tu fait si Jean n'avait pas résolu ce problème ? — J'aurais été renvoyé !",
+      "en": "What would you have done if Jean hadn't solved that problem? — I would have been fired!",
+      "es": "¿Qué habrías hecho si Jean no hubiera resuelto ese problema? — ¡Me habrían despedido!"
+    },
+    {
+      "phrase": "Qui aurait organisé l'équipe si tu ne l'avais pas fait ? — Personne.",
+      "en": "Who would have organized the team if you hadn't? — Nobody.",
+      "es": "¿Quién habría organizado el equipo si no lo hubieras hecho tú? — Nadie."
+    },
+    {
+      "phrase": "Il faut savoir déléguer les tâches.",
+      "en": "You have to know how to delegate tasks.",
+      "es": "Hay que saber delegar las tareas."
+    },
+    {
+      "phrase": "Nous avons une réunion avec la directrice à quinze heures.",
+      "en": "We have a meeting with the director at 3 p.m.",
+      "es": "Tenemos una reunión con la directora a las tres de la tarde."
+    },
+    {
+      "phrase": "Grâce à votre travail, nous avons gagné la confiance de nos clients.",
+      "en": "Thanks to your work, we've earned our customers' trust.",
+      "es": "Gracias a su trabajo, nos hemos ganado la confianza de nuestros clientes."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Si j'avais su, je ___ venu.\"",
+        "es": "Completa: «Si j'avais su, je ___ venu.»"
+      },
+      "options": [
+        "serais",
+        "aurais",
+        "suis",
+        "serai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Venir takes être: je serais venu.",
+        "es": "Venir lleva être: je serais venu."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si vous ___ collaboré, nous aurions fini.\"",
+        "es": "Completa: «Si vous ___ collaboré, nous aurions fini.»"
+      },
+      "options": [
+        "aviez",
+        "auriez",
+        "avez",
+        "aurez"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + plus-que-parfait.",
+        "es": "Si + plus-que-parfait."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence is a 3rd conditional (unreal past)?",
+        "es": "¿Qué frase es del tercer tipo (irreal pasado)?"
+      },
+      "options": [
+        "S'il avait étudié, il aurait réussi.",
+        "S'il étudie, il réussira.",
+        "S'il étudiait, il réussirait.",
+        "S'il étudie, il réussit."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus-que-parfait + conditionnel passé.",
+        "es": "Plus-que-parfait + conditionnel passé."
+      }
+    },
+    {
+      "question": {
+        "en": "Mixed condition: \"Si tu avais écouté hier, tu ___ la réponse maintenant.\"",
+        "es": "Condición mixta: «Si tu avais écouté hier, tu ___ la réponse maintenant.»"
+      },
+      "options": [
+        "saurais",
+        "aurais su",
+        "sauras",
+        "savais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Past condition, present result → conditionnel présent.",
+        "es": "Condición pasada, resultado presente → condicional presente."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Faire grève\" means…",
+        "es": "«Faire grève» significa…"
+      },
+      "options": {
+        "en": [
+          "to go on strike",
+          "to go bankrupt",
+          "to make a mistake",
+          "to get a bonus"
+        ],
+        "es": [
+          "hacer huelga",
+          "quebrar",
+          "cometer un error",
+          "cobrar una prima"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Faire faillite = to go bankrupt.",
+        "es": "Faire faillite = quebrar."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ ton aide, nous avons fini à temps.\"",
+        "es": "Completa: «___ ton aide, nous avons fini à temps.»"
+      },
+      "options": [
+        "Grâce à",
+        "À cause de",
+        "Malgré",
+        "Sans"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Positive cause: grâce à.",
+        "es": "Causa positiva: grâce à."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Nous ne travaillons pas pour un chef, ___ pour nous-mêmes.\"",
+        "es": "Completa: «Nous ne travaillons pas pour un chef, ___ pour nous-mêmes.»"
+      },
+      "options": [
+        "mais",
+        "sinon",
+        "ou",
+        "donc"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … pas … mais\" = not … but.",
+        "es": "«Ne … pas … mais» = no … sino."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"une note de service\"?",
+        "es": "¿Qué es «une note de service»?"
+      },
+      "options": {
+        "en": [
+          "an internal memo",
+          "a tip",
+          "a service grade",
+          "a bill"
+        ],
+        "es": [
+          "una circular interna",
+          "una propina",
+          "una nota de servicio",
+          "una factura"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Used to inform all employees.",
+        "es": "Sirve para informar a todos los empleados."
+      }
+    }
+  ],
+  "story": {
+    "title": "Lettre aux employés",
+    "text": "Chers employés, je suis très satisfaite de votre travail et je suis fière de vous. Il y a un an, notre petite boulangerie de Nantes était en difficulté. Si nous n'avions pas changé notre organisation, nous aurions sûrement fait faillite. Comment aurions-nous atteint un tel niveau de qualité si vous n'aviez pas été aussi efficaces et motivés ? Je dois avouer qu'au début, je ne pensais pas que la formation résoudrait nos problèmes. Maintenant, j'en suis certaine. Si nous n'avions pas formé de nouvelles équipes, nous n'aurions jamais ouvert notre deuxième magasin. Et si vous aviez encore plus de formation, nous gagnerions tous plus d'argent ! Aujourd'hui, l'entreprise est plus organisée que jamais. Ça fait des mois qu'on n'envoie plus de notes de service, parce que nous avons compris une chose : nous ne travaillons pas pour une cheffe, mais pour nous-mêmes. Grâce à vos efforts, nous avons gagné la confiance de nos clients. Pour vous remercier, chacun recevra une prime à la fin du mois. Continuons sur cette voie ! Merci. Madame Hélène Declerc, directrice.",
+    "en": "Dear employees, I am very pleased with your work and I am proud of you. A year ago, our little bakery in Nantes was struggling. If we hadn't changed our organization, we would surely have gone bankrupt. How would we have reached such a level of quality if you hadn't been so efficient and motivated? I must admit that at first, I didn't think training would solve our problems. Now I'm certain of it. If we hadn't formed new teams, we would never have opened our second shop. And if you had even more training, we would all earn more money! Today, the company is more organized than ever. We haven't sent memos for months, because we have understood one thing: we don't work for a boss, but for ourselves. Thanks to your efforts, we have earned our customers' trust. To thank you, everyone will receive a bonus at the end of the month. Let's keep going this way! Thank you. Mrs. Hélène Declerc, director.",
+    "es": "Queridos empleados: estoy muy satisfecha con su trabajo y orgullosa de ustedes. Hace un año, nuestra pequeña panadería de Nantes pasaba dificultades. Si no hubiéramos cambiado nuestra organización, seguramente habríamos quebrado. ¿Cómo habríamos alcanzado semejante nivel de calidad si ustedes no hubieran sido tan eficaces y estado tan motivados? Debo confesar que al principio no pensaba que la formación fuera a resolver nuestros problemas. Ahora estoy segura. Si no hubiéramos formado nuevos equipos, nunca habríamos abierto nuestra segunda tienda. ¡Y si tuvieran todavía más formación, todos ganaríamos más dinero! Hoy la empresa está más organizada que nunca. Hace meses que ya no enviamos circulares, porque hemos entendido una cosa: no trabajamos para una jefa, sino para nosotros mismos. Gracias a sus esfuerzos, nos hemos ganado la confianza de nuestros clientes. Para darles las gracias, todos recibirán una prima a fin de mes. ¡Sigamos por este camino! Gracias. Sra. Hélène Declerc, directora.",
+    "highlighted_words": [
+      "Si nous n'avions pas changé",
+      "nous aurions sûrement fait faillite",
+      "Comment aurions-nous atteint",
+      "si vous n'aviez pas été",
+      "résoudrait",
+      "Si nous n'avions pas formé",
+      "nous n'aurions jamais ouvert",
+      "si vous aviez encore plus",
+      "nous gagnerions",
+      "Ça fait des mois qu'on",
+      "mais pour nous-mêmes",
+      "Grâce à",
+      "prime"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Si j'avais su je serais venu",
+      "en": "If I had known I would have come",
+      "es": "Si lo hubiera sabido, habría venido"
+    },
+    {
+      "sentence": "Nous aurions fini plus tôt",
+      "en": "We would have finished earlier",
+      "es": "Habríamos terminado antes"
+    },
+    {
+      "sentence": "Il faut savoir déléguer",
+      "en": "You have to know how to delegate",
+      "es": "Hay que saber delegar"
+    },
+    {
+      "sentence": "Grâce à vous nous avons réussi",
+      "en": "Thanks to you we succeeded",
+      "es": "Gracias a ustedes lo hemos conseguido"
+    },
+    {
+      "sentence": "Les ouvriers ont fait grève",
+      "en": "The workers went on strike",
+      "es": "Los obreros hicieron huelga"
+    },
+    {
+      "sentence": "Qu'aurais-tu fait à ma place",
+      "en": "What would you have done in my place",
+      "es": "¿Qué habrías hecho en mi lugar?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Nous avons une réunion",
+      "en": "We have a meeting",
+      "es": "Tenemos una reunión"
+    },
+    {
+      "answer": "J'ai fait une erreur",
+      "en": "I made a mistake",
+      "es": "Cometí un error"
+    },
+    {
+      "answer": "Si tu m'avais appelé, je t'aurais aidé",
+      "en": "If you had called me, I would have helped you",
+      "es": "Si me hubieras llamado, te habría ayudado"
+    },
+    {
+      "answer": "Il a été renvoyé",
+      "en": "He was fired",
+      "es": "Lo despidieron"
+    },
+    {
+      "answer": "L'équipe est très efficace",
+      "en": "The team is very efficient",
+      "es": "El equipo es muy eficaz"
+    },
+    {
+      "answer": "Merci pour votre travail",
+      "en": "Thank you for your work",
+      "es": "Gracias por su trabajo"
+    }
+  ]
+}

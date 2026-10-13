@@ -1,0 +1,552 @@
+{
+  "lesson": 50,
+  "slug": "lecon-50",
+  "icon": "✉️",
+  "title": {
+    "fr": "Envoyer des lettres et des colis",
+    "es": "Enviar cartas y paquetes",
+    "en": "Sending letters and parcels"
+  },
+  "source": {
+    "audio": "Lecons 50.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "après que + indicatif",
+      "example": "Il m'appellera après qu'il aura reçu le colis. / Je l'ai envoyé après que nous avons parlé.",
+      "en": "\"After\" + indicative (not subjunctive!)",
+      "es": "«Después de que» + indicativo (¡no subjuntivo!)"
+    },
+    {
+      "structure": "imparfait + passé composé",
+      "example": "Pendant qu'il envoyait la lettre, il s'est rendu compte qu'il avait oublié l'adresse.",
+      "en": "Ongoing action interrupted",
+      "es": "Acción en curso interrumpida"
+    },
+    {
+      "structure": "pendant que / quand + imparfait",
+      "example": "Le facteur a sonné pendant qu'elle dormait.",
+      "en": "Background action",
+      "es": "Acción de fondo"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Le facteur frappa à la porte et lui donna un colis.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    },
+    {
+      "structure": "être en train d'être + participe",
+      "example": "Le colis est en train d'être livré.",
+      "en": "Passive in progress",
+      "es": "Pasiva en curso"
+    },
+    {
+      "structure": "avant de + infinitif",
+      "example": "Signe les papiers avant de les envoyer.",
+      "en": "\"Before doing\"",
+      "es": "«Antes de»"
+    },
+    {
+      "structure": "s'assurer que + indicatif",
+      "example": "Avant de poster la lettre, assure-toi que l'adresse est bien écrite.",
+      "en": "\"Make sure that\" + indicative",
+      "es": "«Asegurarse de que» + indicativo"
+    },
+    {
+      "structure": "plus-que-parfait",
+      "example": "Il avait informé tous ses collègues de son départ.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Après que\" takes the INDICATIVE in correct French (\"après qu'il est parti\"), even though many people use the subjunctive by analogy with \"avant que\".",
+      "es": "«Après que» va con INDICATIVO en el francés correcto («après qu'il est parti»), aunque mucha gente usa el subjuntivo por analogía con «avant que»."
+    },
+    {
+      "en": "At the post office: \"un timbre\" (stamp), \"un colis\" (parcel), \"une lettre recommandée\" (registered letter), \"le code postal\" (postcode), \"l'expéditeur / le destinataire\" (sender / recipient).",
+      "es": "En correos: «un timbre» (sello), «un colis» (paquete), «une lettre recommandée» (carta certificada), «le code postal» (código postal), «l'expéditeur / le destinataire» (remitente / destinatario)."
+    },
+    {
+      "en": "\"La Poste\" is the French postal service; \"le facteur / la factrice\" is the mail carrier.",
+      "es": "«La Poste» es el servicio postal francés; «le facteur / la factrice» es el cartero / la cartera."
+    },
+    {
+      "en": "\"Poster une lettre\" = to mail a letter; \"la boîte aux lettres\" = the mailbox.",
+      "es": "«Poster une lettre» = echar una carta al correo; «la boîte aux lettres» = el buzón."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la poste",
+      "en": "the post office",
+      "es": "correos"
+    },
+    {
+      "word": "le facteur / la factrice",
+      "en": "the mail carrier",
+      "es": "el cartero / la cartera"
+    },
+    {
+      "word": "le courrier",
+      "en": "mail",
+      "es": "el correo"
+    },
+    {
+      "word": "la lettre",
+      "en": "the letter",
+      "es": "la carta"
+    },
+    {
+      "word": "la lettre recommandée",
+      "en": "registered letter",
+      "es": "la carta certificada"
+    },
+    {
+      "word": "la carte postale",
+      "en": "the postcard",
+      "es": "la postal"
+    },
+    {
+      "word": "le colis",
+      "en": "the parcel",
+      "es": "el paquete"
+    },
+    {
+      "word": "l'enveloppe",
+      "en": "the envelope",
+      "es": "el sobre"
+    },
+    {
+      "word": "le timbre",
+      "en": "the stamp",
+      "es": "el sello"
+    },
+    {
+      "word": "timbrer",
+      "en": "to stamp",
+      "es": "poner sello"
+    },
+    {
+      "word": "l'adresse",
+      "en": "the address",
+      "es": "la dirección"
+    },
+    {
+      "word": "le code postal",
+      "en": "the postcode",
+      "es": "el código postal"
+    },
+    {
+      "word": "l'expéditeur",
+      "en": "the sender",
+      "es": "el remitente"
+    },
+    {
+      "word": "le destinataire",
+      "en": "the recipient",
+      "es": "el destinatario"
+    },
+    {
+      "word": "la boîte aux lettres",
+      "en": "the mailbox",
+      "es": "el buzón"
+    },
+    {
+      "word": "envoyer",
+      "en": "to send",
+      "es": "enviar"
+    },
+    {
+      "word": "recevoir",
+      "en": "to receive",
+      "es": "recibir"
+    },
+    {
+      "word": "poster",
+      "en": "to mail",
+      "es": "echar al correo"
+    },
+    {
+      "word": "livrer",
+      "en": "to deliver",
+      "es": "entregar"
+    },
+    {
+      "word": "la livraison",
+      "en": "the delivery",
+      "es": "la entrega"
+    },
+    {
+      "word": "peser",
+      "en": "to weigh",
+      "es": "pesar"
+    },
+    {
+      "word": "la balance",
+      "en": "the scale",
+      "es": "la báscula"
+    },
+    {
+      "word": "lourd / lourde",
+      "en": "heavy",
+      "es": "pesado / pesada"
+    },
+    {
+      "word": "léger / légère",
+      "en": "light",
+      "es": "ligero / ligera"
+    },
+    {
+      "word": "par avion",
+      "en": "by airmail",
+      "es": "por avión"
+    },
+    {
+      "word": "en express",
+      "en": "express",
+      "es": "urgente"
+    },
+    {
+      "word": "fragile",
+      "en": "fragile",
+      "es": "frágil"
+    },
+    {
+      "word": "le carton",
+      "en": "the cardboard box",
+      "es": "la caja de cartón"
+    },
+    {
+      "word": "déménager",
+      "en": "to move (house)",
+      "es": "mudarse"
+    },
+    {
+      "word": "signer",
+      "en": "to sign",
+      "es": "firmar"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Il m'appellera après qu'il aura reçu le colis.",
+      "en": "He will call me after he has received the parcel.",
+      "es": "Me llamará después de que haya recibido el paquete."
+    },
+    {
+      "phrase": "Pendant qu'il postait la lettre, il s'est rendu compte qu'il avait oublié l'adresse.",
+      "en": "While he was mailing the letter, he realized he had forgotten the address.",
+      "es": "Mientras echaba la carta, se dio cuenta de que había olvidado la dirección."
+    },
+    {
+      "phrase": "Signe les papiers avant de les envoyer.",
+      "en": "Sign the papers before sending them.",
+      "es": "Firma los papeles antes de enviarlos."
+    },
+    {
+      "phrase": "Pendant que le facteur travaillait, on lui a volé sa camionnette.",
+      "en": "While the mail carrier was working, his van was stolen.",
+      "es": "Mientras el cartero trabajaba, le robaron la furgoneta."
+    },
+    {
+      "phrase": "Quand elle fermait l'enveloppe, elle a vu la lettre sur la table.",
+      "en": "As she was sealing the envelope, she saw the letter on the table.",
+      "es": "Cuando cerraba el sobre, vio la carta en la mesa."
+    },
+    {
+      "phrase": "Après qu'il est parti en vacances, tous les cadeaux d'anniversaire sont arrivés.",
+      "en": "After he left on vacation, all the birthday presents arrived.",
+      "es": "Después de que se fue de vacaciones, llegaron todos los regalos de cumpleaños."
+    },
+    {
+      "phrase": "Le facteur frappa à la porte pendant qu'elle dormait.",
+      "en": "The mail carrier knocked at the door while she was sleeping.",
+      "es": "El cartero llamó a la puerta mientras ella dormía."
+    },
+    {
+      "phrase": "Je suis sûre que le colis est en train d'être livré en ce moment.",
+      "en": "I'm sure the parcel is being delivered right now.",
+      "es": "Seguro que el paquete se está entregando ahora mismo."
+    },
+    {
+      "phrase": "Après avoir comparé les prix, j'ai décidé de t'envoyer le colis par avion.",
+      "en": "After comparing prices, I decided to send you the parcel by airmail.",
+      "es": "Después de comparar precios, decidí enviarte el paquete por avión."
+    },
+    {
+      "phrase": "Avant de poster la lettre, assure-toi que l'adresse est bien écrite.",
+      "en": "Before mailing the letter, make sure the address is written correctly.",
+      "es": "Antes de echar la carta, asegúrate de que la dirección está bien escrita."
+    },
+    {
+      "phrase": "Quand est-ce que tu as envoyé le colis ? — Je l'ai envoyé après que nous avons parlé.",
+      "en": "When did you send the parcel? — I sent it after we talked.",
+      "es": "¿Cuándo enviaste el paquete? — Lo envié después de que habláramos."
+    },
+    {
+      "phrase": "Elle faisait la vaisselle quand la lettre est arrivée.",
+      "en": "She was doing the dishes when the letter arrived.",
+      "es": "Estaba fregando cuando llegó la carta."
+    },
+    {
+      "phrase": "Combien t'a coûté le timbre ? — Ils ont pesé le colis sur la balance.",
+      "en": "How much did the stamp cost you? — They weighed the parcel on the scale.",
+      "es": "¿Cuánto te costó el sello? — Pesaron el paquete en la báscula."
+    },
+    {
+      "phrase": "En combien de temps une lettre arrive-t-elle au Japon ? — Environ une semaine.",
+      "en": "How long does a letter take to get to Japan? — About a week.",
+      "es": "¿Cuánto tarda una carta en llegar a Japón? — Una semana más o menos."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Which is correct in standard French?",
+        "es": "¿Cuál es correcta en francés estándar?"
+      },
+      "options": [
+        "Après qu'il est parti, j'ai pleuré.",
+        "Après qu'il soit parti, j'ai pleuré.",
+        "Après qu'il partirait, j'ai pleuré.",
+        "Après qu'il parte, j'ai pleuré."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Après que\" + indicative.",
+        "es": "«Après que» + indicativo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il t'appellera après qu'il ___ le colis.\"",
+        "es": "Completa: «Il t'appellera après qu'il ___ le colis.»"
+      },
+      "options": [
+        "aura reçu",
+        "ait reçu",
+        "reçoive",
+        "recevait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Future context: futur antérieur.",
+        "es": "Contexto futuro: futur antérieur."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Pendant que je ___, le facteur a sonné.\"",
+        "es": "Completa: «Pendant que je ___, le facteur a sonné.»"
+      },
+      "options": [
+        "dormais",
+        "ai dormi",
+        "dormirai",
+        "dorme"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Background action: imparfait.",
+        "es": "Acción de fondo: imperfecto."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Assure-toi que l'adresse ___ correcte.\"",
+        "es": "Completa: «Assure-toi que l'adresse ___ correcte.»"
+      },
+      "options": [
+        "est",
+        "soit",
+        "serait",
+        "était"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"S'assurer que\" + indicative.",
+        "es": "«S'assurer que» + indicativo."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"le destinataire\"?",
+        "es": "¿Qué es «le destinataire»?"
+      },
+      "options": {
+        "en": [
+          "the recipient",
+          "the sender",
+          "the destination city",
+          "the stamp"
+        ],
+        "es": [
+          "el destinatario",
+          "el remitente",
+          "la ciudad de destino",
+          "el sello"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "L'expéditeur = the sender.",
+        "es": "L'expéditeur = el remitente."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le colis est en train d'être livré.\" Meaning?",
+        "es": "«Le colis est en train d'être livré.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "The parcel is being delivered.",
+          "The parcel was delivered.",
+          "The parcel will be delivered.",
+          "The parcel is a book."
+        ],
+        "es": [
+          "El paquete se está entregando.",
+          "El paquete fue entregado.",
+          "El paquete será entregado.",
+          "El paquete es un libro."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Passive in progress.",
+        "es": "Pasiva en curso."
+      }
+    },
+    {
+      "question": {
+        "en": "What do you put on an envelope to pay for postage?",
+        "es": "¿Qué pones en un sobre para pagar el envío?"
+      },
+      "options": [
+        "un timbre",
+        "un colis",
+        "une balance",
+        "un carton"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Un timbre = a stamp.",
+        "es": "Un timbre = un sello."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le facteur frappa à la porte.\" Which tense?",
+        "es": "«Le facteur frappa à la porte.» ¿Qué tiempo?"
+      },
+      "options": {
+        "en": [
+          "passé simple",
+          "imparfait",
+          "passé composé",
+          "présent"
+        ],
+        "es": [
+          "passé simple",
+          "imperfecto",
+          "passé composé",
+          "presente"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Spoken: \"a frappé\".",
+        "es": "Oral: «a frappé»."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le grand déménagement",
+    "text": "Nora travaillait à Lille, mais elle n'aimait pas vivre si loin de sa famille, qui habite à Marseille. Elle en avait assez de passer par la poste chaque fois qu'elle voulait envoyer un cadeau à ses neveux. Un jour, elle trouva un bon poste à Marseille et elle donna sa démission. Avant de partir, elle s'organisa pour envoyer ses cartons par La Poste, ce qui était moins cher que de payer un supplément de bagages dans le train. Pendant qu'elle fermait le dernier colis, son chef l'appela pour lui demander de rester. Il lui proposa un meilleur salaire. Elle refusa poliment, mais il lui dit que les portes resteraient ouvertes si elle revenait. Alors qu'elle marchait vers le taxi, la factrice lui donna une lettre. Nora fut surprise : elle avait informé tout le monde de son déménagement. C'était sa sœur, Samia, qui lui avait écrit avant de savoir la nouvelle : « Ne viens pas tout de suite, je vais me marier en juin et je veux que tu m'aides à tout préparer ici, à Marseille ! » Nora éclata de rire : elle arriverait juste à temps. Deux jours après qu'elle est arrivée, tous ses cartons étaient déjà là.",
+    "en": "Nora worked in Lille, but she didn't like living so far from her family, who live in Marseille. She was tired of going through the post office every time she wanted to send a gift to her nephews. One day, she found a good job in Marseille and resigned. Before leaving, she arranged to send her boxes by post, which was cheaper than paying for extra luggage on the train. While she was sealing the last parcel, her boss called to ask her to stay. He offered her a better salary. She politely refused, but he told her the doors would remain open if she came back. As she was walking to the taxi, the mail carrier handed her a letter. Nora was surprised: she had told everyone about her move. It was her sister, Samia, who had written to her before hearing the news: “Don't come right away, I'm getting married in June and I want you to help me prepare everything here, in Marseille!” Nora burst out laughing: she would arrive just in time. Two days after she arrived, all her boxes were already there.",
+    "es": "Nora trabajaba en Lille, pero no le gustaba vivir tan lejos de su familia, que vive en Marsella. Estaba harta de pasar por correos cada vez que quería enviarles un regalo a sus sobrinos. Un día encontró un buen puesto en Marsella y presentó su dimisión. Antes de irse, se organizó para enviar sus cajas por correo, lo que era más barato que pagar un suplemento de equipaje en el tren. Mientras cerraba el último paquete, su jefe la llamó para pedirle que se quedara. Le ofreció un sueldo mejor. Ella lo rechazó con educación, pero él le dijo que las puertas seguirían abiertas si volvía. Mientras caminaba hacia el taxi, la cartera le entregó una carta. Nora se sorprendió: había informado a todo el mundo de su mudanza. Era su hermana, Samia, que le había escrito antes de saber la noticia: «No vengas todavía, me caso en junio y quiero que me ayudes a prepararlo todo aquí, en Marsella.» Nora se echó a reír: llegaría justo a tiempo. Dos días después de que llegó, todas sus cajas ya estaban allí.",
+    "highlighted_words": [
+      "travaillait",
+      "trouva",
+      "Avant de partir",
+      "Pendant qu'elle fermait",
+      "l'appela",
+      "resteraient",
+      "Alors qu'elle marchait",
+      "factrice",
+      "avait informé",
+      "lui avait écrit",
+      "après qu'elle est arrivée",
+      "cartons"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je voudrais envoyer ce colis",
+      "en": "I would like to send this parcel",
+      "es": "Quisiera enviar este paquete"
+    },
+    {
+      "sentence": "Il a oublié d'écrire l'adresse",
+      "en": "He forgot to write the address",
+      "es": "Olvidó escribir la dirección"
+    },
+    {
+      "sentence": "Le facteur est passé pendant que je dormais",
+      "en": "The mail carrier came while I was sleeping",
+      "es": "El cartero pasó mientras dormía"
+    },
+    {
+      "sentence": "Signe avant de l'envoyer",
+      "en": "Sign before sending it",
+      "es": "Firma antes de enviarlo"
+    },
+    {
+      "sentence": "Je t'appellerai après que je l'aurai reçu",
+      "en": "I'll call you after I've received it",
+      "es": "Te llamaré después de haberlo recibido"
+    },
+    {
+      "sentence": "Combien coûte un timbre",
+      "en": "How much is a stamp",
+      "es": "¿Cuánto cuesta un sello?"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est la boîte aux lettres ?",
+      "en": "Where is the mailbox?",
+      "es": "¿Dónde está el buzón?"
+    },
+    {
+      "answer": "J'ai reçu ta carte postale",
+      "en": "I received your postcard",
+      "es": "He recibido tu postal"
+    },
+    {
+      "answer": "Le colis est fragile",
+      "en": "The parcel is fragile",
+      "es": "El paquete es frágil"
+    },
+    {
+      "answer": "Une lettre recommandée, s'il vous plaît",
+      "en": "A registered letter, please",
+      "es": "Una carta certificada, por favor"
+    },
+    {
+      "answer": "Le colis est arrivé hier",
+      "en": "The parcel arrived yesterday",
+      "es": "El paquete llegó ayer"
+    },
+    {
+      "answer": "Par avion, s'il vous plaît",
+      "en": "By airmail, please",
+      "es": "Por avión, por favor"
+    }
+  ]
+}

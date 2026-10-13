@@ -1,0 +1,531 @@
+{
+  "lesson": 34,
+  "slug": "lecon-34",
+  "icon": "🛂",
+  "title": {
+    "fr": "L'immigration et la douane",
+    "es": "Inmigración y aduana",
+    "en": "Immigration and customs"
+  },
+  "source": {
+    "audio": "Lecons 34.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "être en train de (présent)",
+      "example": "Je suis en train de faire la queue. / Elle est en train de vérifier les papiers.",
+      "en": "Action in progress (present)",
+      "es": "Acción en curso (presente)"
+    },
+    {
+      "structure": "être en train de (imparfait)",
+      "example": "J'étais en train de chercher mon passeport quand on m'a appelé.",
+      "en": "Action in progress (past)",
+      "es": "Acción en curso (pasado)"
+    },
+    {
+      "structure": "futur proche",
+      "example": "Ils vont aller en France après avoir réglé leurs affaires.",
+      "en": "Near future",
+      "es": "Futuro próximo"
+    },
+    {
+      "structure": "après avoir + participe",
+      "example": "après avoir réglé quelques affaires",
+      "en": "\"After having done\"",
+      "es": "«Después de haber»"
+    },
+    {
+      "structure": "discours indirect (si)",
+      "example": "L'agent m'a demandé si j'avais quelque chose à déclarer.",
+      "en": "Reported yes/no question",
+      "es": "Pregunta indirecta de sí/no"
+    },
+    {
+      "structure": "pronoms « le » et « y »",
+      "example": "Êtes-vous citoyen français ? — Non, je ne le suis pas. / J'irai en prison ? — Non, tu n'y vas pas.",
+      "en": "\"le\" (attribute) and \"y\" (place)",
+      "es": "«le» (atributo) y «y» (lugar)"
+    },
+    {
+      "structure": "il est possible que + subjonctif",
+      "example": "Il est possible qu'on l'envoie ici.",
+      "en": "Possibility + subjunctive",
+      "es": "Posibilidad + subjuntivo"
+    },
+    {
+      "structure": "ne … quoi que ce soit",
+      "example": "Je ne cache quoi que ce soit.",
+      "en": "\"Anything at all\"",
+      "es": "«Nada en absoluto»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "At customs: \"Avez-vous quelque chose à déclarer ?\" — \"Rien à déclarer.\" In airports, follow the green channel (nothing to declare) or the red channel (goods to declare).",
+      "es": "En la aduana: «Avez-vous quelque chose à déclarer ?» — «Rien à déclarer.» En los aeropuertos, sigue el canal verde (nada que declarar) o el rojo (mercancías que declarar)."
+    },
+    {
+      "en": "\"Le titre de séjour / le permis de séjour\" = residence permit; \"le permis d'études\" = study permit (Canada).",
+      "es": "«Le titre de séjour / le permis de séjour» = permiso de residencia; «le permis d'études» = permiso de estudios (Canadá)."
+    },
+    {
+      "en": "\"Être en train de\" stresses that something is happening right now; it's very common in spoken French.",
+      "es": "«Être en train de» insiste en que algo está ocurriendo ahora mismo; es muy frecuente en el francés hablado."
+    },
+    {
+      "en": "\"Vous vous moquez de moi ?\" = Are you kidding me? (formal, annoyed).",
+      "es": "«Vous vous moquez de moi ?» = ¿Se está burlando de mí? (formal, molesto)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'immigration",
+      "en": "immigration",
+      "es": "la inmigración"
+    },
+    {
+      "word": "la douane",
+      "en": "customs",
+      "es": "la aduana"
+    },
+    {
+      "word": "le douanier / la douanière",
+      "en": "customs officer",
+      "es": "el aduanero / la aduanera"
+    },
+    {
+      "word": "l'agent d'immigration",
+      "en": "the immigration officer",
+      "es": "el agente de inmigración"
+    },
+    {
+      "word": "le contrôle des passeports",
+      "en": "passport control",
+      "es": "el control de pasaportes"
+    },
+    {
+      "word": "le citoyen / la citoyenne",
+      "en": "the citizen",
+      "es": "el ciudadano / la ciudadana"
+    },
+    {
+      "word": "la nationalité",
+      "en": "nationality",
+      "es": "la nacionalidad"
+    },
+    {
+      "word": "l'étranger / l'étrangère",
+      "en": "the foreigner",
+      "es": "el extranjero / la extranjera"
+    },
+    {
+      "word": "le passeport",
+      "en": "the passport",
+      "es": "el pasaporte"
+    },
+    {
+      "word": "le visa",
+      "en": "the visa",
+      "es": "el visado / la visa"
+    },
+    {
+      "word": "l'ambassade",
+      "en": "the embassy",
+      "es": "la embajada"
+    },
+    {
+      "word": "le consulat",
+      "en": "the consulate",
+      "es": "el consulado"
+    },
+    {
+      "word": "le titre de séjour",
+      "en": "the residence permit",
+      "es": "el permiso de residencia"
+    },
+    {
+      "word": "les papiers",
+      "en": "documents / ID",
+      "es": "los papeles / la documentación"
+    },
+    {
+      "word": "le document",
+      "en": "the document",
+      "es": "el documento"
+    },
+    {
+      "word": "déclarer",
+      "en": "to declare",
+      "es": "declarar"
+    },
+    {
+      "word": "rien à déclarer",
+      "en": "nothing to declare",
+      "es": "nada que declarar"
+    },
+    {
+      "word": "cacher",
+      "en": "to hide",
+      "es": "esconder"
+    },
+    {
+      "word": "vérifier",
+      "en": "to check",
+      "es": "verificar"
+    },
+    {
+      "word": "fouiller",
+      "en": "to search",
+      "es": "registrar"
+    },
+    {
+      "word": "le motif du voyage",
+      "en": "the reason for travel",
+      "es": "el motivo del viaje"
+    },
+    {
+      "word": "le tourisme",
+      "en": "tourism",
+      "es": "el turismo"
+    },
+    {
+      "word": "les études",
+      "en": "studies",
+      "es": "los estudios"
+    },
+    {
+      "word": "les affaires",
+      "en": "business / belongings",
+      "es": "los negocios / las pertenencias"
+    },
+    {
+      "word": "l'alcool",
+      "en": "alcohol",
+      "es": "el alcohol"
+    },
+    {
+      "word": "l'appareil photo",
+      "en": "the camera",
+      "es": "la cámara de fotos"
+    },
+    {
+      "word": "le séjour",
+      "en": "the stay",
+      "es": "la estancia"
+    },
+    {
+      "word": "le jour férié",
+      "en": "public holiday",
+      "es": "el día festivo"
+    },
+    {
+      "word": "autoriser",
+      "en": "to allow",
+      "es": "autorizar"
+    },
+    {
+      "word": "interdit / interdite",
+      "en": "forbidden",
+      "es": "prohibido / prohibida"
+    },
+    {
+      "word": "la file d'attente",
+      "en": "the queue",
+      "es": "la cola"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Je suis en train de faire la queue au contrôle des passeports.",
+      "en": "I'm queuing at passport control.",
+      "es": "Estoy haciendo cola en el control de pasaportes."
+    },
+    {
+      "phrase": "Elle est en train de parler avec le douanier.",
+      "en": "She is talking to the customs officer.",
+      "es": "Está hablando con el aduanero."
+    },
+    {
+      "phrase": "Ils viennent étudier pendant un an.",
+      "en": "They are coming to study for a year.",
+      "es": "Vienen a estudiar durante un año."
+    },
+    {
+      "phrase": "L'agent m'a demandé si j'avais quelque chose à déclarer.",
+      "en": "The officer asked me if I had anything to declare.",
+      "es": "El agente me preguntó si tenía algo que declarar."
+    },
+    {
+      "phrase": "Je suis citoyen français. — Elle est étudiante étrangère.",
+      "en": "I am a French citizen. — She is a foreign student.",
+      "es": "Soy ciudadano francés. — Ella es estudiante extranjera."
+    },
+    {
+      "phrase": "Le motif de mon voyage, ce sont des affaires familiales.",
+      "en": "The reason for my trip is family matters.",
+      "es": "El motivo de mi viaje son asuntos familiares."
+    },
+    {
+      "phrase": "Montrez-moi vos papiers, s'il vous plaît.",
+      "en": "Show me your documents, please.",
+      "es": "Muéstreme su documentación, por favor."
+    },
+    {
+      "phrase": "Ouvrez le coffre, s'il vous plaît.",
+      "en": "Open the trunk, please.",
+      "es": "Abra el maletero, por favor."
+    },
+    {
+      "phrase": "Ils vont aller en France après avoir réglé quelques affaires au Canada.",
+      "en": "They are going to go to France after sorting out a few things in Canada.",
+      "es": "Van a ir a Francia después de haber resuelto algunos asuntos en Canadá."
+    },
+    {
+      "phrase": "Êtes-vous citoyen européen ? — Non, je ne le suis pas.",
+      "en": "Are you an EU citizen? — No, I'm not.",
+      "es": "¿Es usted ciudadano europeo? — No, no lo soy."
+    },
+    {
+      "phrase": "Pourquoi a-t-elle tant de valises ? — Elle est en train de déménager !",
+      "en": "Why does she have so many suitcases? — She is moving house!",
+      "es": "¿Por qué lleva tantas maletas? — ¡Se está mudando!"
+    },
+    {
+      "phrase": "Tu caches quelque chose dans le coffre ? — Non, je ne cache quoi que ce soit !",
+      "en": "Are you hiding something in the trunk? — No, I'm not hiding anything at all!",
+      "es": "¿Escondes algo en el maletero? — ¡No, no escondo nada en absoluto!"
+    },
+    {
+      "phrase": "Pourquoi va-t-il en France ? — Pour finir ses études.",
+      "en": "Why is he going to France? — To finish his studies.",
+      "es": "¿Por qué va a Francia? — Para terminar sus estudios."
+    },
+    {
+      "phrase": "Profitez bien de votre séjour !",
+      "en": "Enjoy your stay!",
+      "es": "¡Disfrute de su estancia!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Je suis en train ___ chercher mon passeport.\"",
+        "es": "Completa: «Je suis en train ___ chercher mon passeport.»"
+      },
+      "options": [
+        "de",
+        "à",
+        "pour",
+        "en"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Être en train DE + infinitive.",
+        "es": "Être en train DE + infinitivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'___ en train de dormir quand tu as appelé.\"",
+        "es": "Completa: «J'___ en train de dormir quand tu as appelé.»"
+      },
+      "options": [
+        "étais",
+        "ai été",
+        "suis",
+        "serai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait for the ongoing action in the past.",
+        "es": "Imperfecto para la acción en curso en el pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "Reported question: \"Avez-vous quelque chose à déclarer ?\" → Il m'a demandé…",
+        "es": "Pregunta indirecta: «Avez-vous quelque chose à déclarer ?» → Il m'a demandé…"
+      },
+      "options": [
+        "si j'avais quelque chose à déclarer",
+        "que j'avais quelque chose à déclarer",
+        "est-ce que j'ai quelque chose à déclarer",
+        "si j'ai eu quelque chose à déclarer"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + imparfait after a past reporting verb.",
+        "es": "Si + imperfecto tras un verbo introductor en pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Êtes-vous français ?\" — \"Non, je ne ___ suis pas.\"",
+        "es": "«Êtes-vous français ?» — «Non, je ne ___ suis pas.»"
+      },
+      "options": [
+        "le",
+        "la",
+        "y",
+        "en"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Le\" replaces the adjective \"français\".",
+        "es": "«Le» sustituye al adjetivo «français»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il est possible qu'on l'___ ici.\"",
+        "es": "Completa: «Il est possible qu'on l'___ ici.»"
+      },
+      "options": [
+        "envoie",
+        "envoie-t-il",
+        "enverra",
+        "envoyait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il est possible que\" + subjunctive.",
+        "es": "«Il est possible que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "What do you say if you have nothing to declare?",
+        "es": "¿Qué dices si no tienes nada que declarar?"
+      },
+      "options": [
+        "Rien à déclarer.",
+        "Je déclare tout.",
+        "Pas de passeport.",
+        "Je suis en train."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Take the green channel.",
+        "es": "Ve por el canal verde."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you apply for a visa?",
+        "es": "¿Dónde solicitas un visado?"
+      },
+      "options": [
+        "à l'ambassade ou au consulat",
+        "à la douane",
+        "à l'hôtel",
+        "au comptoir d'enregistrement"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Embassy or consulate.",
+        "es": "Embajada o consulado."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le motif de votre voyage ?\" — Which answer fits?",
+        "es": "«Le motif de votre voyage ?» — ¿Qué respuesta encaja?"
+      },
+      "options": [
+        "Le tourisme.",
+        "Le passeport.",
+        "La douane.",
+        "Le coffre."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Motif = reason.",
+        "es": "Motif = motivo."
+      }
+    }
+  ],
+  "story": {
+    "title": "Arrivée à Montréal",
+    "text": "En ce moment, Sofia est en train de parler avec une agente d'immigration à l'aéroport de Montréal. Elle vient du Chili pour étudier un an à l'université. L'agente lui demande ses papiers ; Sofia les sort de son sac. « Votre lettre d'acceptation n'est pas là », dit l'agente. « Je vous jure que je l'avais ! Je l'ai imprimée il y a une semaine… » Sofia était en train de chercher dans toutes ses poches quand elle s'est souvenue : la lettre est aussi dans ses courriels ! Elle la montre sur son téléphone. « Parfait. Il est possible qu'on vous demande l'original plus tard. Bienvenue au Canada et profitez de votre séjour ! » Ensuite, Sofia va à la douane. Un douanier lui demande si elle a quelque chose à déclarer. « Non, rien. » « Pouvez-vous ouvrir cette valise ? » Il trouve un gros fromage et deux saucissons. « C'est un cadeau pour ma famille d'accueil », explique Sofia. « Vous devez déclarer toute la nourriture, mademoiselle. » « Je ne savais pas, je suis désolée ! » Heureusement, le douanier sourit : « Cette fois, ça va. Mais la prochaine fois, lisez bien le formulaire ! »",
+    "en": "Right now, Sofia is talking to an immigration officer at Montreal airport. She has come from Chile to study at the university for a year. The officer asks for her documents; Sofia takes them out of her bag. “Your acceptance letter isn't here,” says the officer. “I swear I had it! I printed it a week ago…” Sofia was searching all her pockets when she remembered: the letter is also in her emails! She shows it on her phone. “Perfect. You may be asked for the original later. Welcome to Canada and enjoy your stay!” Then Sofia goes to customs. A customs officer asks her if she has anything to declare. “No, nothing.” “Can you open this suitcase?” He finds a big cheese and two dry sausages. “It's a gift for my host family,” Sofia explains. “You must declare all food, miss.” “I didn't know, I'm sorry!” Fortunately, the officer smiles: “This time it's OK. But next time, read the form carefully!”",
+    "es": "En este momento, Sofía está hablando con una agente de inmigración en el aeropuerto de Montreal. Viene de Chile para estudiar un año en la universidad. La agente le pide la documentación; Sofía la saca del bolso. «Su carta de admisión no está aquí», dice la agente. «¡Le juro que la tenía! La imprimí hace una semana…» Sofía estaba buscando en todos sus bolsillos cuando se acordó: ¡la carta también está en su correo electrónico! La enseña en el teléfono. «Perfecto. Es posible que más adelante le pidan el original. ¡Bienvenida a Canadá y disfrute de su estancia!» Después, Sofía va a la aduana. Un aduanero le pregunta si tiene algo que declarar. «No, nada.» «¿Puede abrir esta maleta?» Encuentra un queso grande y dos salchichones. «Es un regalo para mi familia de acogida», explica Sofía. «Tiene que declarar toda la comida, señorita.» «¡No lo sabía, lo siento!» Por suerte, el aduanero sonríe: «Esta vez pase. Pero la próxima vez, lea bien el formulario.»",
+    "highlighted_words": [
+      "est en train de parler",
+      "agente d'immigration",
+      "ses papiers",
+      "il y a une semaine",
+      "était en train de chercher",
+      "Il est possible qu'on vous demande",
+      "séjour",
+      "douane",
+      "si elle a quelque chose à déclarer",
+      "déclarer"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je suis en train de faire la queue",
+      "en": "I'm standing in line",
+      "es": "Estoy haciendo cola"
+    },
+    {
+      "sentence": "Avez-vous quelque chose à déclarer",
+      "en": "Do you have anything to declare",
+      "es": "¿Tiene algo que declarar?"
+    },
+    {
+      "sentence": "Montrez-moi votre passeport",
+      "en": "Show me your passport",
+      "es": "Muéstreme su pasaporte"
+    },
+    {
+      "sentence": "Il m'a demandé si j'étais étudiant",
+      "en": "He asked me if I was a student",
+      "es": "Me preguntó si era estudiante"
+    },
+    {
+      "sentence": "Non je ne le suis pas",
+      "en": "No I'm not",
+      "es": "No, no lo soy"
+    },
+    {
+      "sentence": "Profitez de votre séjour",
+      "en": "Enjoy your stay",
+      "es": "Disfrute de su estancia"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Rien à déclarer",
+      "en": "Nothing to declare",
+      "es": "Nada que declarar"
+    },
+    {
+      "answer": "Je viens pour le tourisme",
+      "en": "I am here for tourism",
+      "es": "Vengo por turismo"
+    },
+    {
+      "answer": "Voici mes papiers",
+      "en": "Here are my documents",
+      "es": "Aquí tiene mi documentación"
+    },
+    {
+      "answer": "Ouvrez la valise, s'il vous plaît",
+      "en": "Open the suitcase, please",
+      "es": "Abra la maleta, por favor"
+    },
+    {
+      "answer": "Elle est en train de vérifier les passeports",
+      "en": "She is checking the passports",
+      "es": "Está revisando los pasaportes"
+    },
+    {
+      "answer": "J'ai perdu mon visa",
+      "en": "I lost my visa",
+      "es": "He perdido mi visado"
+    }
+  ]
+}

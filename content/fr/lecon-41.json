@@ -1,0 +1,566 @@
+{
+  "lesson": 41,
+  "slug": "lecon-41",
+  "icon": "🔑",
+  "title": {
+    "fr": "Trouver un logement",
+    "es": "Encontrar un lugar para vivir",
+    "en": "Finding a place to live"
+  },
+  "source": {
+    "audio": "Lecons 41.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "n'est-ce pas ? (tous les temps)",
+      "example": "Tu habites en ville, n'est-ce pas ? / Ils vont déménager, n'est-ce pas ? / Tu as dû verser une caution, n'est-ce pas ?",
+      "en": "Tag questions in every tense",
+      "es": "Preguntas de confirmación en todos los tiempos"
+    },
+    {
+      "structure": "être en train de (passé)",
+      "example": "Elle était en train de chercher un appartement depuis un mois.",
+      "en": "Ongoing past action",
+      "es": "Acción en curso en el pasado"
+    },
+    {
+      "structure": "depuis + présent",
+      "example": "Elle le cherche depuis longtemps.",
+      "en": "Ongoing since",
+      "es": "Desde hace"
+    },
+    {
+      "structure": "pronoms démonstratifs",
+      "example": "Celui-là est bien. / Qu'est-ce que tu penses de celui-ci ?",
+      "en": "celui-ci / celui-là",
+      "es": "Este / aquel"
+    },
+    {
+      "structure": "plus-que-parfait",
+      "example": "Je l'avais vue, mais l'endroit ne m'a pas plu.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    },
+    {
+      "structure": "j'ai bien peur que",
+      "example": "Ils vont démolir l'immeuble ? — J'ai bien peur que oui.",
+      "en": "\"I'm afraid so\"",
+      "es": "«Me temo que sí»"
+    },
+    {
+      "structure": "comparatif",
+      "example": "Tu es plus exigeant que moi.",
+      "en": "Comparatives",
+      "es": "Comparativos"
+    },
+    {
+      "structure": "pronom « en » + quantité",
+      "example": "Il y en a quatre. / Je n'en ai pas encore trouvé un.",
+      "en": "\"en\" with numbers",
+      "es": "«en» con cantidades"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Housing: \"le loyer\" (rent), \"les charges\" (utilities/fees), \"charges comprises\" (utilities included), \"la caution / le dépôt de garantie\" (deposit), \"meublé\" (furnished).",
+      "es": "Vivienda: «le loyer» (alquiler), «les charges» (gastos de comunidad / suministros), «charges comprises» (gastos incluidos), «la caution / le dépôt de garantie» (fianza), «meublé» (amueblado)."
+    },
+    {
+      "en": "In French ads: \"T2 / F2\" = 2 main rooms (living room + 1 bedroom); \"RDC\" = ground floor; \"m²\" = square meters.",
+      "es": "En los anuncios: «T2 / F2» = 2 piezas principales (salón + 1 dormitorio); «RDC» = planta baja; «m²» = metros cuadrados."
+    },
+    {
+      "en": "\"N'est-ce pas ?\" works with any tense and person; in speech people often just say \"… non ?\" or \"… hein ?\".",
+      "es": "«N'est-ce pas ?» funciona con cualquier tiempo y persona; al hablar se dice a menudo «… non ?» o «… hein ?»."
+    },
+    {
+      "en": "\"Le propriétaire\" = landlord; \"le locataire\" = tenant; \"l'agent immobilier\" = real estate agent.",
+      "es": "«Le propriétaire» = el casero; «le locataire» = el inquilino; «l'agent immobilier» = el agente inmobiliario."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le logement",
+      "en": "housing / accommodation",
+      "es": "la vivienda"
+    },
+    {
+      "word": "l'appartement",
+      "en": "the apartment",
+      "es": "el apartamento"
+    },
+    {
+      "word": "le studio",
+      "en": "the studio",
+      "es": "el estudio"
+    },
+    {
+      "word": "l'immeuble",
+      "en": "the apartment building",
+      "es": "el edificio"
+    },
+    {
+      "word": "la résidence",
+      "en": "the residential complex",
+      "es": "el complejo residencial"
+    },
+    {
+      "word": "la petite annonce",
+      "en": "the classified ad",
+      "es": "el anuncio clasificado"
+    },
+    {
+      "word": "l'agence immobilière",
+      "en": "the real estate agency",
+      "es": "la agencia inmobiliaria"
+    },
+    {
+      "word": "l'agent immobilier",
+      "en": "the real estate agent",
+      "es": "el agente inmobiliario"
+    },
+    {
+      "word": "le propriétaire",
+      "en": "the landlord / owner",
+      "es": "el propietario / el casero"
+    },
+    {
+      "word": "le locataire",
+      "en": "the tenant",
+      "es": "el inquilino"
+    },
+    {
+      "word": "le loyer",
+      "en": "the rent",
+      "es": "el alquiler"
+    },
+    {
+      "word": "les charges",
+      "en": "utilities / service charges",
+      "es": "los gastos (comunidad, suministros)"
+    },
+    {
+      "word": "compris / comprise",
+      "en": "included",
+      "es": "incluido / incluida"
+    },
+    {
+      "word": "la caution",
+      "en": "the deposit",
+      "es": "la fianza"
+    },
+    {
+      "word": "le bail",
+      "en": "the lease",
+      "es": "el contrato de alquiler"
+    },
+    {
+      "word": "meublé / meublée",
+      "en": "furnished",
+      "es": "amueblado / amueblada"
+    },
+    {
+      "word": "la moquette",
+      "en": "the carpet",
+      "es": "la moqueta"
+    },
+    {
+      "word": "l'électricité",
+      "en": "electricity",
+      "es": "la electricidad"
+    },
+    {
+      "word": "le gaz",
+      "en": "gas",
+      "es": "el gas"
+    },
+    {
+      "word": "le voisin / la voisine",
+      "en": "the neighbor",
+      "es": "el vecino / la vecina"
+    },
+    {
+      "word": "le quartier",
+      "en": "the neighborhood",
+      "es": "el barrio"
+    },
+    {
+      "word": "proche",
+      "en": "near",
+      "es": "cercano"
+    },
+    {
+      "word": "bruyant / bruyante",
+      "en": "noisy",
+      "es": "ruidoso / ruidosa"
+    },
+    {
+      "word": "calme",
+      "en": "quiet",
+      "es": "tranquilo"
+    },
+    {
+      "word": "déménager",
+      "en": "to move (house)",
+      "es": "mudarse"
+    },
+    {
+      "word": "emménager",
+      "en": "to move in",
+      "es": "instalarse"
+    },
+    {
+      "word": "visiter",
+      "en": "to view (a flat)",
+      "es": "visitar"
+    },
+    {
+      "word": "louer",
+      "en": "to rent",
+      "es": "alquilar"
+    },
+    {
+      "word": "démolir",
+      "en": "to demolish",
+      "es": "derribar"
+    },
+    {
+      "word": "exigeant / exigeante",
+      "en": "demanding",
+      "es": "exigente"
+    },
+    {
+      "word": "la poubelle",
+      "en": "the trash can",
+      "es": "el cubo de basura"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Tu habites dans un appartement, n'est-ce pas ? — Oui, au centre-ville.",
+      "en": "You live in an apartment, don't you? — Yes, downtown.",
+      "es": "Vives en un apartamento, ¿verdad? — Sí, en el centro."
+    },
+    {
+      "phrase": "Elle cherche une maison, n'est-ce pas ? — Oui, elle la cherche depuis longtemps.",
+      "en": "She's looking for a house, isn't she? — Yes, she's been looking for a long time.",
+      "es": "Está buscando una casa, ¿verdad? — Sí, la busca desde hace tiempo."
+    },
+    {
+      "phrase": "Cet appartement est meublé, n'est-ce pas ? — Oui, c'est pour ça qu'il est bien.",
+      "en": "This apartment is furnished, isn't it? — Yes, that's why it's good.",
+      "es": "Este apartamento está amueblado, ¿verdad? — Sí, por eso está bien."
+    },
+    {
+      "phrase": "Tu n'as pas vu l'annonce ? — Si, je l'avais vue, mais l'endroit ne m'a pas plu.",
+      "en": "Didn't you see the ad? — Yes, I had seen it, but I didn't like the place.",
+      "es": "¿No viste el anuncio? — Sí, lo había visto, pero el sitio no me gustó."
+    },
+    {
+      "phrase": "Tu as habité à Montpellier, n'est-ce pas ? — Non, je n'ai jamais habité là-bas.",
+      "en": "You lived in Montpellier, didn't you? — No, I've never lived there.",
+      "es": "Viviste en Montpellier, ¿verdad? — No, nunca he vivido allí."
+    },
+    {
+      "phrase": "Ils vont déménager le mois prochain, n'est-ce pas ? — Non, je crois que c'est demain !",
+      "en": "They're going to move next month, aren't they? — No, I think it's tomorrow!",
+      "es": "Se van a mudar el mes que viene, ¿verdad? — ¡No, creo que es mañana!"
+    },
+    {
+      "phrase": "Les charges sont comprises dans le loyer, n'est-ce pas ? — Non. — Alors c'est trop cher.",
+      "en": "Utilities are included in the rent, aren't they? — No. — Then it's too expensive.",
+      "es": "Los gastos están incluidos en el alquiler, ¿verdad? — No. — Entonces es demasiado caro."
+    },
+    {
+      "phrase": "Votre immeuble va bientôt être démoli, n'est-ce pas ? — J'ai bien peur que oui.",
+      "en": "Your building will soon be demolished, won't it? — I'm afraid so.",
+      "es": "Su edificio va a ser derribado pronto, ¿verdad? — Me temo que sí."
+    },
+    {
+      "phrase": "Tu as dû verser une caution, n'est-ce pas ? — Oui, deux mois de loyer.",
+      "en": "You had to pay a deposit, didn't you? — Yes, two months' rent.",
+      "es": "Tuviste que dejar una fianza, ¿verdad? — Sí, dos meses de alquiler."
+    },
+    {
+      "phrase": "Son appartement a trois salles de bains, n'est-ce pas ? — Je crois qu'il y en a quatre !",
+      "en": "His apartment has three bathrooms, doesn't it? — I think there are four!",
+      "es": "Su apartamento tiene tres baños, ¿verdad? — ¡Creo que tiene cuatro!"
+    },
+    {
+      "phrase": "La poubelle est pleine, n'est-ce pas ? — Non, je viens de la sortir.",
+      "en": "The trash is full, isn't it? — No, I just took it out.",
+      "es": "La basura está llena, ¿verdad? — No, acabo de sacarla."
+    },
+    {
+      "phrase": "Ils allaient acheter une maison, n'est-ce pas ? — Oui, mais ils ont changé d'avis.",
+      "en": "They were going to buy a house, weren't they? — Yes, but they changed their minds.",
+      "es": "Iban a comprar una casa, ¿verdad? — Sí, pero cambiaron de opinión."
+    },
+    {
+      "phrase": "Celui-là me plaît. Il n'a qu'une salle de bains, mais le reste est parfait.",
+      "en": "I like that one. It only has one bathroom, but the rest is perfect.",
+      "es": "Ese me gusta. Solo tiene un baño, pero el resto es perfecto."
+    },
+    {
+      "phrase": "Mon voisin est de mauvaise humeur à cause de la fête de vendredi, n'est-ce pas ? — Oui, je crois.",
+      "en": "My neighbor is in a bad mood because of Friday's party, isn't he? — Yes, I think so.",
+      "es": "Mi vecino está de mal humor por la fiesta del viernes, ¿verdad? — Sí, creo que sí."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What is \"le loyer\"?",
+        "es": "¿Qué es «le loyer»?"
+      },
+      "options": {
+        "en": [
+          "the rent",
+          "the lawyer",
+          "the deposit",
+          "the landlord"
+        ],
+        "es": [
+          "el alquiler",
+          "el abogado",
+          "la fianza",
+          "el casero"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Le loyer = monthly rent.",
+        "es": "Le loyer = alquiler mensual."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Charges comprises\" means…",
+        "es": "«Charges comprises» significa…"
+      },
+      "options": {
+        "en": [
+          "utilities included",
+          "charges understood",
+          "extra charges",
+          "no charges allowed"
+        ],
+        "es": [
+          "gastos incluidos",
+          "cargos entendidos",
+          "cargos adicionales",
+          "sin cargos"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Charges = utilities / service fees.",
+        "es": "Charges = gastos de suministros o comunidad."
+      }
+    },
+    {
+      "question": {
+        "en": "Which tag question is correct?",
+        "es": "¿Qué pregunta de confirmación es correcta?"
+      },
+      "options": [
+        "Tu as déménagé, n'est-ce pas ?",
+        "Tu as déménagé, n'as-tu pas ?",
+        "Tu as déménagé, pas vrai n'est ?",
+        "Tu as déménagé, est-ce pas ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"N'est-ce pas\" never changes.",
+        "es": "«N'est-ce pas» no cambia nunca."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle cherche un appartement ___ un mois.\"",
+        "es": "Completa: «Elle cherche un appartement ___ un mois.»"
+      },
+      "options": [
+        "depuis",
+        "pendant",
+        "il y a",
+        "dans"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Depuis + present: still looking.",
+        "es": "Depuis + presente: sigue buscando."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il y en a quatre.\" What does \"en\" replace?",
+        "es": "«Il y en a quatre.» ¿Qué sustituye «en»?"
+      },
+      "options": {
+        "en": [
+          "a noun with a quantity (e.g., bathrooms)",
+          "a place",
+          "a person",
+          "an adjective"
+        ],
+        "es": [
+          "un sustantivo con cantidad (p. ej., baños)",
+          "un lugar",
+          "una persona",
+          "un adjetivo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"En\" + number replaces a counted noun.",
+        "es": "«En» + número sustituye un sustantivo contado."
+      }
+    },
+    {
+      "question": {
+        "en": "Who pays the rent?",
+        "es": "¿Quién paga el alquiler?"
+      },
+      "options": [
+        "le locataire",
+        "le propriétaire",
+        "l'agent immobilier",
+        "le voisin"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Locataire = tenant; propriétaire = landlord.",
+        "es": "Locataire = inquilino; propriétaire = casero."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'ai bien peur que oui.\" Meaning?",
+        "es": "«J'ai bien peur que oui.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I'm afraid so.",
+          "I'm very scared.",
+          "I'm afraid not.",
+          "I hope so."
+        ],
+        "es": [
+          "Me temo que sí.",
+          "Tengo mucho miedo.",
+          "Me temo que no.",
+          "Eso espero."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Opposite: \"J'ai bien peur que non.\"",
+        "es": "Lo contrario: «J'ai bien peur que non.»"
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Tu es plus exigeant ___ moi.\"",
+        "es": "Completa: «Tu es plus exigeant ___ moi.»"
+      },
+      "options": [
+        "que",
+        "de",
+        "comme",
+        "à"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus … que.",
+        "es": "Plus … que."
+      }
+    }
+  ],
+  "story": {
+    "title": "L'appartement idéal",
+    "text": "Ça faisait un mois que Yanis était en train de chercher un appartement à Lyon, et il n'avait rien trouvé. Un jour, il a croisé son amie Nadia au café. « Tu cherches toujours un logement, n'est-ce pas ? » « Oui, je suis encore en train de chercher, parce que je n'en ai pas trouvé un avec tout ce que je veux. » « Et qu'est-ce que tu veux, exactement ? » « Deux chambres, deux salles de bains, charges comprises, meublé, pas trop de caution… et des voisins calmes ! » Nadia a ri : « Tu veux tout ! Un appartement comme ça, c'est très difficile à trouver. Mais j'ai vu des petites annonces qui pourraient t'intéresser. Regarde. » « Celui-ci a l'air bien, n'est-ce pas ? » « Oui, mais il est en plein centre, c'est un peu bruyant. » « Et celui-là ? Le quartier est plus calme, n'est-ce pas ? » « Oui, mais on dit qu'ils vont bientôt démolir l'immeuble. — J'ai bien peur que oui. » Finalement, Nadia en montre un troisième : « Il n'a qu'une salle de bains, mais tout le reste est parfait. » « Bon… il est un peu petit pour moi, non ? » « Tu es vraiment plus exigeant que moi ! Moi, je l'aurais pris tout de suite. » Le lendemain, Yanis a signé le bail.",
+    "en": "Yanis had been looking for an apartment in Lyon for a month, and he hadn't found anything. One day, he ran into his friend Nadia at a café. “You're still looking for a place, aren't you?” “Yes, I'm still looking, because I haven't found one with everything I want.” “And what do you want, exactly?” “Two bedrooms, two bathrooms, utilities included, furnished, not too big a deposit… and quiet neighbors!” Nadia laughed: “You want everything! An apartment like that is very hard to find. But I've seen some ads that might interest you. Look.” “This one looks good, doesn't it?” “Yes, but it's right in the center, it's a bit noisy.” “And that one? The neighborhood is quieter, isn't it?” “Yes, but they say they're going to demolish the building soon. — I'm afraid so.” Finally, Nadia shows him a third one: “It only has one bathroom, but everything else is perfect.” “Well… it's a bit small for me, isn't it?” “You're really more demanding than I am! I would have taken it right away.” The next day, Yanis signed the lease.",
+    "es": "Yanis llevaba un mes buscando apartamento en Lyon y no había encontrado nada. Un día se cruzó con su amiga Nadia en el café. «Sigues buscando piso, ¿verdad?» «Sí, todavía estoy buscando, porque no he encontrado ninguno con todo lo que quiero.» «¿Y qué quieres exactamente?» «Dos dormitorios, dos baños, gastos incluidos, amueblado, sin mucha fianza… ¡y vecinos tranquilos!» Nadia se rio: «¡Lo quieres todo! Un piso así es muy difícil de encontrar. Pero he visto unos anuncios que podrían interesarte. Mira.» «Este tiene buena pinta, ¿verdad?» «Sí, pero está en pleno centro, es un poco ruidoso.» «¿Y aquel? El barrio es más tranquilo, ¿verdad?» «Sí, pero dicen que pronto van a derribar el edificio. — Me temo que sí.» Al final, Nadia le enseña un tercero: «Solo tiene un baño, pero todo lo demás es perfecto.» «Bueno… es un poco pequeño para mí, ¿no?» «¡De verdad eres más exigente que yo! Yo lo habría alquilado enseguida.» Al día siguiente, Yanis firmó el contrato.",
+    "highlighted_words": [
+      "était en train de chercher",
+      "n'est-ce pas",
+      "je suis encore en train de chercher",
+      "je n'en ai pas trouvé un",
+      "charges comprises",
+      "meublé",
+      "caution",
+      "petites annonces",
+      "Celui-ci",
+      "celui-là",
+      "J'ai bien peur que oui",
+      "plus exigeant que moi",
+      "bail"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Tu habites en ville n'est-ce pas",
+      "en": "You live in town don't you",
+      "es": "Vives en la ciudad, ¿verdad?"
+    },
+    {
+      "sentence": "Les charges sont comprises",
+      "en": "Utilities are included",
+      "es": "Los gastos están incluidos"
+    },
+    {
+      "sentence": "Elle cherche un appartement depuis un mois",
+      "en": "She's been looking for an apartment for a month",
+      "es": "Busca piso desde hace un mes"
+    },
+    {
+      "sentence": "Celui-là est trop petit",
+      "en": "That one is too small",
+      "es": "Aquel es demasiado pequeño"
+    },
+    {
+      "sentence": "J'ai bien peur que oui",
+      "en": "I'm afraid so",
+      "es": "Me temo que sí"
+    },
+    {
+      "sentence": "Ils vont déménager demain",
+      "en": "They're going to move tomorrow",
+      "es": "Se van a mudar mañana"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "L'appartement est meublé",
+      "en": "The apartment is furnished",
+      "es": "El apartamento está amueblado"
+    },
+    {
+      "answer": "Combien est le loyer ?",
+      "en": "How much is the rent?",
+      "es": "¿Cuánto es el alquiler?"
+    },
+    {
+      "answer": "Je cherche un studio",
+      "en": "I'm looking for a studio",
+      "es": "Busco un estudio"
+    },
+    {
+      "answer": "Mes voisins sont bruyants",
+      "en": "My neighbors are noisy",
+      "es": "Mis vecinos son ruidosos"
+    },
+    {
+      "answer": "Nous avons déménagé",
+      "en": "We have moved",
+      "es": "Nos hemos mudado"
+    },
+    {
+      "answer": "Il y en a deux",
+      "en": "There are two (of them)",
+      "es": "Hay dos"
+    }
+  ]
+}

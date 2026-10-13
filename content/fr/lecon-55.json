@@ -1,0 +1,570 @@
+{
+  "lesson": 55,
+  "slug": "lecon-55",
+  "icon": "🛒",
+  "title": {
+    "fr": "Les grands magasins",
+    "es": "Los grandes almacenes",
+    "en": "Department stores"
+  },
+  "source": {
+    "audio": "Lecons 55.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "adverbes en -ment",
+      "example": "rapidement, honnêtement, complètement, heureusement",
+      "en": "Adverbs ending in -ment",
+      "es": "Adverbios en -mente"
+    },
+    {
+      "structure": "place de l'adverbe au passé composé",
+      "example": "J'ai souvent acheté mes vêtements ici. / Elle a vite choisi.",
+      "en": "Adverb placement",
+      "es": "Posición del adverbio"
+    },
+    {
+      "structure": "comparatif",
+      "example": "Ces sandales sont moins lourdes que les tiennes. / C'est plus cher ici qu'ailleurs.",
+      "en": "Comparatives",
+      "es": "Comparativos"
+    },
+    {
+      "structure": "pronom « en »",
+      "example": "Il y a plein de chemises : choisis-en une !",
+      "en": "\"en\" with quantities",
+      "es": "«en» con cantidades"
+    },
+    {
+      "structure": "si / lorsque + futur",
+      "example": "Si tu achètes cette veste maintenant, tu dépenseras moins.",
+      "en": "Conditions and time",
+      "es": "Condiciones y tiempo"
+    },
+    {
+      "structure": "sans que + subjonctif",
+      "example": "Ils sortent sans que personne ne s'en aperçoive.",
+      "en": "\"Without\" + subjunctive",
+      "es": "«Sin que» + subjuntivo"
+    },
+    {
+      "structure": "pronom relatif « dont »",
+      "example": "des jeunes, dont la plupart avaient seize ans",
+      "en": "\"dont\" (of whom / whose)",
+      "es": "«dont» (de los cuales)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Adverbs: feminine adjective + -ment (heureuse → heureusement). Adjectives in -ant / -ent → -amment / -emment (constant → constamment, récent → récemment).",
+      "es": "Adverbios: adjetivo femenino + -ment (heureuse → heureusement). Los adjetivos en -ant / -ent → -amment / -emment (constant → constamment, récent → récemment)."
+    },
+    {
+      "en": "In the passé composé, short adverbs go between \"avoir/être\" and the participle: \"J'ai bien mangé\", \"Il a déjà payé\".",
+      "es": "En el passé composé, los adverbios cortos van entre «avoir/être» y el participio: «J'ai bien mangé», «Il a déjà payé»."
+    },
+    {
+      "en": "\"Le grand magasin\" = department store (Galeries Lafayette); \"la grande surface\" = hypermarket; \"le centre commercial\" = mall.",
+      "es": "«Le grand magasin» = gran almacén (Galeries Lafayette); «la grande surface» = hipermercado; «le centre commercial» = centro comercial."
+    },
+    {
+      "en": "\"Le vol à l'étalage\" = shoplifting; \"le vigile\" = security guard.",
+      "es": "«Le vol à l'étalage» = hurto en tiendas; «le vigile» = guardia de seguridad."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le grand magasin",
+      "en": "the department store",
+      "es": "los grandes almacenes"
+    },
+    {
+      "word": "le centre commercial",
+      "en": "the mall",
+      "es": "el centro comercial"
+    },
+    {
+      "word": "la boutique",
+      "en": "the shop",
+      "es": "la tienda"
+    },
+    {
+      "word": "le rayon",
+      "en": "the department",
+      "es": "la sección"
+    },
+    {
+      "word": "l'acheteur / l'acheteuse",
+      "en": "the shopper",
+      "es": "el comprador / la compradora"
+    },
+    {
+      "word": "le vendeur / la vendeuse",
+      "en": "the salesperson",
+      "es": "el vendedor / la vendedora"
+    },
+    {
+      "word": "la marchandise",
+      "en": "goods",
+      "es": "la mercancía"
+    },
+    {
+      "word": "le prix",
+      "en": "the price",
+      "es": "el precio"
+    },
+    {
+      "word": "la remise / la réduction",
+      "en": "the discount",
+      "es": "el descuento"
+    },
+    {
+      "word": "les soldes",
+      "en": "the sales",
+      "es": "las rebajas"
+    },
+    {
+      "word": "bon marché",
+      "en": "cheap",
+      "es": "barato"
+    },
+    {
+      "word": "cher / chère",
+      "en": "expensive",
+      "es": "caro / cara"
+    },
+    {
+      "word": "comparer",
+      "en": "to compare",
+      "es": "comparar"
+    },
+    {
+      "word": "choisir",
+      "en": "to choose",
+      "es": "elegir"
+    },
+    {
+      "word": "porter",
+      "en": "to carry / wear",
+      "es": "llevar"
+    },
+    {
+      "word": "peser",
+      "en": "to weigh",
+      "es": "pesar"
+    },
+    {
+      "word": "lourd / lourde",
+      "en": "heavy",
+      "es": "pesado / pesada"
+    },
+    {
+      "word": "le sac",
+      "en": "the bag",
+      "es": "la bolsa"
+    },
+    {
+      "word": "le porte-monnaie",
+      "en": "the coin purse",
+      "es": "el monedero"
+    },
+    {
+      "word": "l'argent liquide",
+      "en": "cash",
+      "es": "el efectivo"
+    },
+    {
+      "word": "importer",
+      "en": "to import",
+      "es": "importar"
+    },
+    {
+      "word": "augmenter / monter",
+      "en": "to go up",
+      "es": "subir"
+    },
+    {
+      "word": "baisser",
+      "en": "to go down",
+      "es": "bajar"
+    },
+    {
+      "word": "se dépêcher",
+      "en": "to hurry",
+      "es": "darse prisa"
+    },
+    {
+      "word": "le voleur / la voleuse",
+      "en": "the thief",
+      "es": "el ladrón / la ladrona"
+    },
+    {
+      "word": "le vol à l'étalage",
+      "en": "shoplifting",
+      "es": "el hurto en tiendas"
+    },
+    {
+      "word": "le vigile",
+      "en": "the security guard",
+      "es": "el guardia de seguridad"
+    },
+    {
+      "word": "la caméra de surveillance",
+      "en": "the security camera",
+      "es": "la cámara de vigilancia"
+    },
+    {
+      "word": "le code-barres",
+      "en": "the barcode",
+      "es": "el código de barras"
+    },
+    {
+      "word": "rapidement",
+      "en": "quickly",
+      "es": "rápidamente"
+    },
+    {
+      "word": "souvent",
+      "en": "often",
+      "es": "a menudo"
+    },
+    {
+      "word": "honnêtement",
+      "en": "honestly",
+      "es": "honestamente"
+    },
+    {
+      "word": "complètement",
+      "en": "completely",
+      "es": "completamente"
+    },
+    {
+      "word": "heureusement",
+      "en": "fortunately",
+      "es": "afortunadamente"
+    },
+    {
+      "word": "étonnant / étonnante",
+      "en": "surprising",
+      "es": "sorprendente"
+    },
+    {
+      "word": "charmant / charmante",
+      "en": "charming",
+      "es": "encantador / encantadora"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "En ce moment, elle est en train de faire du shopping.",
+      "en": "Right now, she's out shopping.",
+      "es": "Ahora mismo está de compras."
+    },
+    {
+      "phrase": "Il va souvent au centre commercial.",
+      "en": "He often goes to the mall.",
+      "es": "Va a menudo al centro comercial."
+    },
+    {
+      "phrase": "J'ai souvent acheté mes vêtements dans ce magasin.",
+      "en": "I have often bought my clothes in this store.",
+      "es": "He comprado a menudo mi ropa en esta tienda."
+    },
+    {
+      "phrase": "Il y a beaucoup de modèles : choisis-en un maintenant !",
+      "en": "There are lots of models: choose one now!",
+      "es": "Hay muchos modelos: ¡elige uno ya!"
+    },
+    {
+      "phrase": "Cette chemise a été en solde longtemps, mais personne ne l'a achetée.",
+      "en": "This shirt was on sale for a long time, but nobody bought it.",
+      "es": "Esta camisa estuvo rebajada mucho tiempo, pero nadie la compró."
+    },
+    {
+      "phrase": "Là-bas, ils m'ont demandé plus cher que dans les autres magasins.",
+      "en": "There, they charged me more than in other stores.",
+      "es": "Allí me cobraron más que en las otras tiendas."
+    },
+    {
+      "phrase": "Les prix ont augmenté rapidement.",
+      "en": "Prices went up quickly.",
+      "es": "Los precios subieron rápidamente."
+    },
+    {
+      "phrase": "Ces sandales sont moins lourdes que les tiennes.",
+      "en": "These sandals are lighter than yours.",
+      "es": "Estas sandalias pesan menos que las tuyas."
+    },
+    {
+      "phrase": "Il vaut mieux faire les courses demain : aujourd'hui, il y a trop de monde.",
+      "en": "It's better to go shopping tomorrow: today there are too many people.",
+      "es": "Es mejor ir de compras mañana: hoy hay demasiada gente."
+    },
+    {
+      "phrase": "Si tu achètes rapidement cette veste, tu dépenseras moins.",
+      "en": "If you buy this jacket quickly, you'll spend less.",
+      "es": "Si compras rápido esta chaqueta, gastarás menos."
+    },
+    {
+      "phrase": "Heureusement, il a acheté la bonne taille.",
+      "en": "Fortunately, he bought the right size.",
+      "es": "Afortunadamente, compró la talla correcta."
+    },
+    {
+      "phrase": "Comment as-tu pu acheter un manteau si grand ? — Il était très bon marché !",
+      "en": "How could you buy such a big coat? — It was very cheap!",
+      "es": "¿Cómo pudiste comprar un abrigo tan grande? — ¡Era muy barato!"
+    },
+    {
+      "phrase": "Tu as comparé les prix ? — Oui, il y a une grande différence.",
+      "en": "Did you compare the prices? — Yes, there's a big difference.",
+      "es": "¿Has comparado los precios? — Sí, hay una gran diferencia."
+    },
+    {
+      "phrase": "Dépêche-toi, il n'y aura plus rien à midi !",
+      "en": "Hurry up, there won't be anything left by noon!",
+      "es": "¡Date prisa, a mediodía no quedará nada!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "What is the adverb of \"heureux\"?",
+        "es": "¿Cuál es el adverbio de «heureux»?"
+      },
+      "options": [
+        "heureusement",
+        "heureuxment",
+        "heureusment",
+        "heureux-ment"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Feminine (heureuse) + -ment.",
+        "es": "Femenino (heureuse) + -ment."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the adverb of \"récent\"?",
+        "es": "¿Cuál es el adverbio de «récent»?"
+      },
+      "options": [
+        "récemment",
+        "récentement",
+        "récentment",
+        "récamment"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "-ent → -emment.",
+        "es": "-ent → -emment."
+      }
+    },
+    {
+      "question": {
+        "en": "Where does \"souvent\" go? \"J'ai ___ acheté ___ ici.\"",
+        "es": "¿Dónde va «souvent»? «J'ai ___ acheté ___ ici.»"
+      },
+      "options": [
+        "J'ai souvent acheté ici.",
+        "J'ai acheté souvent ici.",
+        "Souvent j'ai acheté ici souvent.",
+        "J'souvent ai acheté ici."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Short adverbs go between auxiliary and participle.",
+        "es": "Los adverbios cortos van entre el auxiliar y el participio."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Des chemises ? Choisis-___ une.\"",
+        "es": "Completa: «Des chemises ? Choisis-___ une.»"
+      },
+      "options": [
+        "en",
+        "les",
+        "y",
+        "la"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"En\" + number.",
+        "es": "«En» + número."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il est sorti sans que personne ne le ___.\"",
+        "es": "Completa: «Il est sorti sans que personne ne le ___.»"
+      },
+      "options": [
+        "voie",
+        "voit",
+        "verra",
+        "voyait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Sans que\" + subjunctive.",
+        "es": "«Sans que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Ces sandales sont ___ lourdes que les tiennes.\" (lighter)",
+        "es": "Completa: «Ces sandales sont ___ lourdes que les tiennes.» (pesan menos)"
+      },
+      "options": [
+        "moins",
+        "plus",
+        "aussi",
+        "très"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Moins … que = less … than.",
+        "es": "Moins … que = menos … que."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le vol à l'étalage\" is…",
+        "es": "«Le vol à l'étalage» es…"
+      },
+      "options": {
+        "en": [
+          "shoplifting",
+          "a flight sale",
+          "a window display",
+          "a discount"
+        ],
+        "es": [
+          "el hurto en tiendas",
+          "una venta de vuelos",
+          "un escaparate",
+          "un descuento"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "L'étalage = display.",
+        "es": "L'étalage = el expositor."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un grand magasin\"?",
+        "es": "¿Qué es «un grand magasin»?"
+      },
+      "options": {
+        "en": [
+          "a department store",
+          "a big warehouse",
+          "a big magazine",
+          "a market"
+        ],
+        "es": [
+          "unos grandes almacenes",
+          "un gran almacén de mercancías",
+          "una revista grande",
+          "un mercado"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "E.g., Galeries Lafayette.",
+        "es": "P. ej., Galeries Lafayette."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le vigile",
+    "text": "Je m'appelle Marc et je suis vigile dans un grand magasin de Lyon. Chaque jour, je surveille les rayons pour éviter les vols à l'étalage. Les voleurs font semblant de regarder les vêtements, puis ils cachent rapidement quelque chose dans leur sac ou sous leur manteau. Parfois, ils réussissent à sortir sans que personne ne s'en aperçoive. Il est étonnant de voir combien de jeunes sont arrêtés chaque mois, dont la plupart ont entre quinze et dix-sept ans. Souvent, ils ne volent pas par besoin, mais à cause de la pression de leurs amis : ils veulent avoir les mêmes baskets ou le même téléphone que les autres. Hier, j'ai arrêté un garçon qui avait caché un tee-shirt sous son pull. Il était complètement terrorisé. Au lieu d'appeler immédiatement la police, j'ai parlé longtemps avec lui. Il m'a avoué honnêtement qu'il voulait juste impressionner sa bande. Le magasin a installé des caméras et des codes-barres, mais je crois que le plus important, c'est de parler aux jeunes. Il faut leur faire comprendre qu'on n'a pas besoin de voler pour être accepté. Heureusement, ce garçon est revenu aujourd'hui… pour payer le tee-shirt !",
+    "en": "My name is Marc and I'm a security guard in a department store in Lyon. Every day, I watch the departments to prevent shoplifting. Thieves pretend to look at the clothes, then quickly hide something in their bag or under their coat. Sometimes they manage to get out without anyone noticing. It's surprising how many young people are caught every month, most of whom are between fifteen and seventeen. Often, they don't steal out of need, but because of pressure from their friends: they want the same sneakers or the same phone as the others. Yesterday, I stopped a boy who had hidden a T-shirt under his sweater. He was completely terrified. Instead of calling the police right away, I talked with him for a long time. He honestly admitted that he just wanted to impress his group. The store has installed cameras and barcodes, but I think the most important thing is to talk to young people. We have to make them understand that you don't need to steal to be accepted. Fortunately, that boy came back today… to pay for the T-shirt!",
+    "es": "Me llamo Marc y soy guardia de seguridad en unos grandes almacenes de Lyon. Cada día vigilo las secciones para evitar los hurtos. Los ladrones fingen mirar la ropa y luego esconden rápidamente algo en la bolsa o bajo el abrigo. A veces consiguen salir sin que nadie se dé cuenta. Es sorprendente cuántos jóvenes son detenidos cada mes, la mayoría de los cuales tienen entre quince y diecisiete años. A menudo no roban por necesidad, sino por la presión de sus amigos: quieren tener las mismas zapatillas o el mismo móvil que los demás. Ayer detuve a un chico que había escondido una camiseta bajo el jersey. Estaba completamente aterrorizado. En lugar de llamar inmediatamente a la policía, hablé largo rato con él. Me confesó con honestidad que solo quería impresionar a su grupo. La tienda ha instalado cámaras y códigos de barras, pero creo que lo más importante es hablar con los jóvenes. Hay que hacerles entender que no hace falta robar para ser aceptado. Afortunadamente, ese chico ha vuelto hoy… ¡a pagar la camiseta!",
+    "highlighted_words": [
+      "vigile",
+      "grand magasin",
+      "vols à l'étalage",
+      "rapidement",
+      "sans que personne ne s'en aperçoive",
+      "étonnant",
+      "dont la plupart",
+      "Souvent",
+      "complètement",
+      "immédiatement",
+      "longtemps",
+      "honnêtement",
+      "codes-barres",
+      "Heureusement"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'ai souvent acheté ici",
+      "en": "I have often bought here",
+      "es": "He comprado aquí a menudo"
+    },
+    {
+      "sentence": "Les prix ont augmenté rapidement",
+      "en": "Prices went up quickly",
+      "es": "Los precios subieron rápidamente"
+    },
+    {
+      "sentence": "Choisis-en une",
+      "en": "Choose one",
+      "es": "Elige una"
+    },
+    {
+      "sentence": "C'est moins cher qu'ailleurs",
+      "en": "It's cheaper than elsewhere",
+      "es": "Es más barato que en otros sitios"
+    },
+    {
+      "sentence": "Heureusement il a payé",
+      "en": "Fortunately he paid",
+      "es": "Afortunadamente, pagó"
+    },
+    {
+      "sentence": "Il est sorti sans que personne ne le voie",
+      "en": "He left without anyone seeing him",
+      "es": "Salió sin que nadie lo viera"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est le rayon des chaussures ?",
+      "en": "Where is the shoe department?",
+      "es": "¿Dónde está la sección de zapatos?"
+    },
+    {
+      "answer": "Il y a des soldes",
+      "en": "There are sales",
+      "es": "Hay rebajas"
+    },
+    {
+      "answer": "C'est trop cher",
+      "en": "It's too expensive",
+      "es": "Es demasiado caro"
+    },
+    {
+      "answer": "Je paie en liquide",
+      "en": "I'm paying cash",
+      "es": "Pago en efectivo"
+    },
+    {
+      "answer": "Dépêche-toi",
+      "en": "Hurry up",
+      "es": "Date prisa"
+    },
+    {
+      "answer": "Elle parle honnêtement",
+      "en": "She speaks honestly",
+      "es": "Habla con honestidad"
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "lesson": 5,
+  "slug": "lecon-05",
+  "icon": "🎨",
+  "title": {
+    "fr": "Les prénoms, les couleurs et le caractère",
+    "es": "Los nombres, los colores y el carácter",
+    "en": "Names, colors and personality"
+  },
+  "source": {
+    "audio": "Lecons 05.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "accord des adjectifs de couleur",
+      "example": "Marie a les yeux bleus. / une chemise blanche",
+      "en": "Color adjective agreement",
+      "es": "Concordancia de los adjetivos de color"
+    },
+    {
+      "structure": "couleurs invariables",
+      "example": "des chaussettes orange, les cheveux marron foncé",
+      "en": "Invariable colors (marron, orange, compound colors)",
+      "es": "Colores invariables (marron, orange, colores compuestos)"
+    },
+    {
+      "structure": "comparatif",
+      "example": "Cécile est plus petite que Victoire.",
+      "en": "Comparatives (plus / moins / aussi … que)",
+      "es": "Comparativos (plus / moins / aussi … que)"
+    },
+    {
+      "structure": "superlatif",
+      "example": "Sarah est la plus sérieuse de la maison.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "pronom « le » (attribut)",
+      "example": "Est-ce qu'il est fatigué ? — Non, il ne l'est pas.",
+      "en": "\"le\" replacing an adjective",
+      "es": "«le» que sustituye a un adjetivo"
+    },
+    {
+      "structure": "être à (possession)",
+      "example": "Le blouson violet est à Jean.",
+      "en": "Possession with \"être à\"",
+      "es": "Posesión con «être à»"
+    },
+    {
+      "structure": "pronoms possessifs",
+      "example": "Et les tiens, comment sont-ils ?",
+      "en": "Possessive pronouns",
+      "es": "Pronombres posesivos"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Colors usually go after the noun and agree with it: \"une voiture verte\", \"des yeux verts\".",
+      "es": "Los colores suelen ir después del sustantivo y concuerdan con él: «une voiture verte», «des yeux verts»."
+    },
+    {
+      "en": "\"Marron\" and \"orange\" never change: \"des chaussures marron\". Compound colors don't change either: \"des yeux bleu clair\".",
+      "es": "«Marron» y «orange» nunca cambian: «des chaussures marron». Los colores compuestos tampoco: «des yeux bleu clair»."
+    },
+    {
+      "en": "For hair, French says \"châtain\" (light brown), \"brun\" (dark) or \"roux\" (red); for eyes, \"marron\".",
+      "es": "Para el pelo se dice «châtain» (castaño), «brun» (moreno) o «roux» (pelirrojo); para los ojos, «marron»."
+    },
+    {
+      "en": "Answer \"Est-ce qu'il est grand ?\" with \"Oui, il l'est\" / \"Non, il ne l'est pas\" — \"le\" replaces the adjective.",
+      "es": "Responde a «Est-ce qu'il est grand ?» con «Oui, il l'est» / «Non, il ne l'est pas»: «le» sustituye al adjetivo."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le prénom",
+      "en": "the first name",
+      "es": "el nombre de pila"
+    },
+    {
+      "word": "bleu / bleue",
+      "en": "blue",
+      "es": "azul"
+    },
+    {
+      "word": "jaune",
+      "en": "yellow",
+      "es": "amarillo"
+    },
+    {
+      "word": "vert / verte",
+      "en": "green",
+      "es": "verde"
+    },
+    {
+      "word": "blanc / blanche",
+      "en": "white",
+      "es": "blanco / blanca"
+    },
+    {
+      "word": "noir / noire",
+      "en": "black",
+      "es": "negro / negra"
+    },
+    {
+      "word": "rouge",
+      "en": "red",
+      "es": "rojo"
+    },
+    {
+      "word": "orange",
+      "en": "orange",
+      "es": "naranja"
+    },
+    {
+      "word": "marron",
+      "en": "brown",
+      "es": "marrón"
+    },
+    {
+      "word": "rose",
+      "en": "pink",
+      "es": "rosa"
+    },
+    {
+      "word": "gris / grise",
+      "en": "grey",
+      "es": "gris"
+    },
+    {
+      "word": "violet / violette",
+      "en": "purple",
+      "es": "morado / morada"
+    },
+    {
+      "word": "mauve",
+      "en": "mauve",
+      "es": "malva"
+    },
+    {
+      "word": "bleu ciel",
+      "en": "sky blue",
+      "es": "azul celeste"
+    },
+    {
+      "word": "bordeaux",
+      "en": "burgundy",
+      "es": "burdeos"
+    },
+    {
+      "word": "châtain",
+      "en": "light brown (hair)",
+      "es": "castaño (pelo)"
+    },
+    {
+      "word": "roux / rousse",
+      "en": "red-haired",
+      "es": "pelirrojo / pelirroja"
+    },
+    {
+      "word": "foncé",
+      "en": "dark (color)",
+      "es": "oscuro"
+    },
+    {
+      "word": "clair",
+      "en": "light (color)",
+      "es": "claro"
+    },
+    {
+      "word": "pâle",
+      "en": "pale",
+      "es": "pálido"
+    },
+    {
+      "word": "heureux / heureuse",
+      "en": "happy",
+      "es": "feliz"
+    },
+    {
+      "word": "souriant / souriante",
+      "en": "smiling",
+      "es": "sonriente"
+    },
+    {
+      "word": "fatigué / fatiguée",
+      "en": "tired",
+      "es": "cansado / cansada"
+    },
+    {
+      "word": "loyal / loyale",
+      "en": "loyal",
+      "es": "leal"
+    },
+    {
+      "word": "paresseux / paresseuse",
+      "en": "lazy",
+      "es": "perezoso / perezosa"
+    },
+    {
+      "word": "égoïste",
+      "en": "selfish",
+      "es": "egoísta"
+    },
+    {
+      "word": "déprimé / déprimée",
+      "en": "depressed / down",
+      "es": "deprimido / deprimida"
+    },
+    {
+      "word": "digne de confiance",
+      "en": "trustworthy",
+      "es": "de confianza"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Hugo et Malik sont amis.",
+      "en": "Hugo and Malik are friends.",
+      "es": "Hugo y Malik son amigos."
+    },
+    {
+      "phrase": "Emma a les yeux bleus.",
+      "en": "Emma has blue eyes.",
+      "es": "Emma tiene los ojos azules."
+    },
+    {
+      "phrase": "Lina a les cheveux châtains.",
+      "en": "Lina has light-brown hair.",
+      "es": "Lina tiene el pelo castaño."
+    },
+    {
+      "phrase": "Paul a les cheveux marron foncé.",
+      "en": "Paul has dark-brown hair.",
+      "es": "Paul tiene el pelo castaño oscuro."
+    },
+    {
+      "phrase": "Antoine porte une cravate noire.",
+      "en": "Antoine is wearing a black tie.",
+      "es": "Antoine lleva una corbata negra."
+    },
+    {
+      "phrase": "La voiture rose est à Julie.",
+      "en": "The pink car belongs to Julie.",
+      "es": "El coche rosa es de Julie."
+    },
+    {
+      "phrase": "Où est Théo en ce moment ? — Il est à la fac.",
+      "en": "Where is Théo right now? — He is at university.",
+      "es": "¿Dónde está Théo ahora? — Está en la universidad."
+    },
+    {
+      "phrase": "Est-ce que Nathan est plus grand qu'Adam ? — Non, il ne l'est pas.",
+      "en": "Is Nathan taller than Adam? — No, he isn't.",
+      "es": "¿Nathan es más alto que Adam? — No, no lo es."
+    },
+    {
+      "phrase": "Est-ce que Chloé est plus petite que Manon ? — Oui, elle l'est.",
+      "en": "Is Chloé shorter than Manon? — Yes, she is.",
+      "es": "¿Chloé es más baja que Manon? — Sí, lo es."
+    },
+    {
+      "phrase": "Qui êtes-vous ? — Je suis Camille, la nouvelle directrice.",
+      "en": "Who are you? — I am Camille, the new manager.",
+      "es": "¿Quién es usted? — Soy Camille, la nueva directora."
+    },
+    {
+      "phrase": "Ils ne sont pas là : ils sont en vacances.",
+      "en": "They aren't here: they are on vacation.",
+      "es": "No están: están de vacaciones."
+    },
+    {
+      "phrase": "Léa est la meilleure danseuse de la classe.",
+      "en": "Léa is the best dancer in the class.",
+      "es": "Léa es la mejor bailarina de la clase."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Emma a les yeux ___.\" (blue)",
+        "es": "Completa: «Emma a les yeux ___.» (azules)"
+      },
+      "options": [
+        "bleus",
+        "bleu",
+        "bleues",
+        "bleue"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Yeux\" is masculine plural, so \"bleus\".",
+        "es": "«Yeux» es masculino plural, por eso «bleus»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Elle porte une chemise ___.\" (white)",
+        "es": "Completa: «Elle porte une chemise ___.» (blanca)"
+      },
+      "options": [
+        "blanche",
+        "blanc",
+        "blancs",
+        "blanches"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Blanc\" becomes \"blanche\" in the feminine.",
+        "es": "«Blanc» se convierte en «blanche» en femenino."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is correct?",
+        "es": "¿Cuál es correcta?"
+      },
+      "options": [
+        "des chaussures marron",
+        "des chaussures marrons",
+        "des chaussures marronnes",
+        "des chaussures marronne"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Marron\" (like \"orange\") is invariable.",
+        "es": "«Marron» (como «orange») es invariable."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Est-ce que Paul est fatigué ?\" — \"Non, il ne ___ est pas.\"",
+        "es": "«Est-ce que Paul est fatigué ?» — «Non, il ne ___ est pas.»"
+      },
+      "options": [
+        "l'",
+        "le",
+        "la",
+        "les"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Le\" replaces the adjective \"fatigué\"; it becomes \"l'\" before \"est\".",
+        "es": "«Le» sustituye al adjetivo «fatigué»; se convierte en «l'» delante de «est»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Chloé est ___ petite ___ Manon.\"",
+        "es": "Completa: «Chloé est ___ petite ___ Manon.»"
+      },
+      "options": [
+        "plus … que",
+        "plus … de",
+        "très … que",
+        "le plus … que"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Comparative: plus / moins / aussi + adjective + que.",
+        "es": "Comparativo: plus / moins / aussi + adjetivo + que."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"the most intelligent in the class\"?",
+        "es": "¿Cómo se dice «la más inteligente de la clase»?"
+      },
+      "options": [
+        "la plus intelligente de la classe",
+        "la plus intelligente que la classe",
+        "plus intelligente de la classe",
+        "la très intelligente de la classe"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Superlative: le / la / les plus + adjective + de.",
+        "es": "Superlativo: le / la / les plus + adjetivo + de."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"Le blouson violet est à Jean\" mean?",
+        "es": "¿Qué significa «Le blouson violet est à Jean»?"
+      },
+      "options": {
+        "en": [
+          "The purple jacket belongs to Jean.",
+          "The purple jacket is at Jean's house.",
+          "Jean is wearing a purple jacket.",
+          "Jean wants a purple jacket."
+        ],
+        "es": [
+          "La chaqueta morada es de Jean.",
+          "La chaqueta morada está en casa de Jean.",
+          "Jean lleva una chaqueta morada.",
+          "Jean quiere una chaqueta morada."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Être à quelqu'un\" expresses possession.",
+        "es": "«Être à quelqu'un» expresa posesión."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"paresseux\" mean?",
+        "es": "¿Qué significa «paresseux»?"
+      },
+      "options": {
+        "en": [
+          "lazy",
+          "loyal",
+          "happy",
+          "selfish"
+        ],
+        "es": [
+          "perezoso",
+          "leal",
+          "feliz",
+          "egoísta"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Feminine: \"paresseuse\".",
+        "es": "Femenino: «paresseuse»."
+      }
+    }
+  ],
+  "story": {
+    "title": "Mes colocataires",
+    "text": "Je m'appelle Inès. J'étudie le droit à Lille et j'habite avec quatre colocataires. Je voudrais vous parler d'eux. Karim est le plus drôle de la maison : il porte toujours des chaussettes orange. Élodie est rousse et elle a les yeux verts ; elle est toujours souriante et j'adore sa compagnie. Thomas est gentil, mais il est un peu paresseux : on ne peut pas compter sur lui pour faire la vaisselle ! Sarah est la plus sérieuse de nous tous : elle étudie la médecine et elle est toujours fatiguée. Moi, j'essaie de ne pas juger mes amis, mais ce n'est pas facile ! Ma vraie confidente, c'est Élodie, même si elle n'aime pas mon chat noir. Voilà mes colocataires. Et les tiens, comment sont-ils ?",
+    "en": "My name is Inès. I study law in Lille and I live with four roommates. I would like to tell you about them. Karim is the funniest in the house: he always wears orange socks. Élodie has red hair and green eyes; she is always smiling and I love her company. Thomas is nice, but he is a bit lazy: you can't count on him to do the dishes! Sarah is the most serious of us all: she studies medicine and she is always tired. As for me, I try not to judge my friends, but it isn't easy! My true confidant is Élodie, even if she doesn't like my black cat. Those are my roommates. And yours, what are they like?",
+    "es": "Me llamo Inès. Estudio Derecho en Lille y vivo con cuatro compañeros de piso. Me gustaría hablarles de ellos. Karim es el más gracioso de la casa: siempre lleva calcetines naranja. Élodie es pelirroja y tiene los ojos verdes; siempre está sonriente y me encanta su compañía. Thomas es amable, pero un poco perezoso: ¡no se puede contar con él para fregar los platos! Sarah es la más seria de todos: estudia Medicina y siempre está cansada. Yo intento no juzgar a mis amigos, ¡pero no es fácil! Mi verdadera confidente es Élodie, aunque no le guste mi gato negro. Estos son mis compañeros de piso. Y los tuyos, ¿cómo son?",
+    "highlighted_words": [
+      "le plus drôle",
+      "orange",
+      "rousse",
+      "verts",
+      "souriante",
+      "paresseux",
+      "la plus sérieuse",
+      "fatiguée",
+      "noir",
+      "les tiens"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Marie a les yeux bleus",
+      "en": "Marie has blue eyes",
+      "es": "Marie tiene los ojos azules"
+    },
+    {
+      "sentence": "Le blouson violet est à Jean",
+      "en": "The purple jacket belongs to Jean",
+      "es": "La chaqueta morada es de Jean"
+    },
+    {
+      "sentence": "Elle est plus petite que moi",
+      "en": "She is shorter than me",
+      "es": "Es más baja que yo"
+    },
+    {
+      "sentence": "Il est le plus drôle de la classe",
+      "en": "He is the funniest in the class",
+      "es": "Es el más gracioso de la clase"
+    },
+    {
+      "sentence": "Non il ne l'est pas",
+      "en": "No he isn't",
+      "es": "No, no lo es"
+    },
+    {
+      "sentence": "Ils sont en vacances",
+      "en": "They are on vacation",
+      "es": "Están de vacaciones"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Ma voiture est rouge",
+      "en": "My car is red",
+      "es": "Mi coche es rojo"
+    },
+    {
+      "answer": "Elle a les cheveux châtains",
+      "en": "She has light-brown hair",
+      "es": "Tiene el pelo castaño"
+    },
+    {
+      "answer": "Il est plus grand que son frère",
+      "en": "He is taller than his brother",
+      "es": "Es más alto que su hermano"
+    },
+    {
+      "answer": "Non, il ne l'est pas",
+      "en": "No, he isn't",
+      "es": "No, no lo es"
+    },
+    {
+      "answer": "C'est la plus intelligente",
+      "en": "She's the most intelligent",
+      "es": "Es la más inteligente"
+    },
+    {
+      "answer": "Le chat noir est à moi",
+      "en": "The black cat is mine",
+      "es": "El gato negro es mío"
+    }
+  ]
+}

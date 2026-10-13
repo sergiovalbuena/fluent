@@ -1,0 +1,632 @@
+{
+  "lesson": 19,
+  "slug": "lecon-19",
+  "icon": "🪐",
+  "title": {
+    "fr": "Le monde et l'univers",
+    "es": "El mundo y el universo",
+    "en": "The world and the universe"
+  },
+  "source": {
+    "audio": "Lecons 19.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "superlatif",
+      "example": "Le Sahara est le plus grand désert chaud du monde.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "gérondif (en + participe présent)",
+      "example": "En regardant autour de nous, nous trouverons des merveilles.",
+      "en": "Gerund: \"by / while doing\"",
+      "es": "Gerundio: «al / mientras»"
+    },
+    {
+      "structure": "participe présent",
+      "example": "des montagnes formant une chaîne, des baleines sautant hors de l'eau",
+      "en": "Present participle",
+      "es": "Participio presente"
+    },
+    {
+      "structure": "voix passive",
+      "example": "La Terre est menacée par la pollution.",
+      "en": "Passive voice",
+      "es": "Voz pasiva"
+    },
+    {
+      "structure": "croire + infinitif passé",
+      "example": "Je crois avoir vu un OVNI hier soir.",
+      "en": "\"I think I saw…\"",
+      "es": "«Creo haber visto…»"
+    },
+    {
+      "structure": "se produire (passé composé)",
+      "example": "Une catastrophe s'est produite hier soir.",
+      "en": "Reflexive verb in the past",
+      "es": "Verbo pronominal en pasado"
+    },
+    {
+      "structure": "afin de + infinitif",
+      "example": "Il faut agir afin de protéger la planète.",
+      "en": "\"In order to\"",
+      "es": "«Con el fin de»"
+    },
+    {
+      "structure": "espérons que + indicatif",
+      "example": "Espérons que la science nous aidera.",
+      "en": "\"Let's hope that\"",
+      "es": "«Esperemos que» (con indicativo en francés)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Our solar system has eight planets: Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus, Neptune. Pluton has been a dwarf planet since 2006.",
+      "es": "Nuestro sistema solar tiene ocho planetas: Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus, Neptune. Plutón es un planeta enano desde 2006."
+    },
+    {
+      "en": "\"Un fleuve\" flows into the sea; \"une rivière\" flows into another river.",
+      "es": "«Un fleuve» desemboca en el mar; «une rivière» desemboca en otro río."
+    },
+    {
+      "en": "In French schools, people often count five continents (Afrique, Amérique, Asie, Europe, Océanie), sometimes six or seven.",
+      "es": "En los colegios franceses se suelen contar cinco continentes (Afrique, Amérique, Asie, Europe, Océanie), a veces seis o siete."
+    },
+    {
+      "en": "\"Espérer que\" takes the indicative, unlike Spanish: \"J'espère qu'il viendra.\"",
+      "es": "«Espérer que» va con indicativo, a diferencia del español: «J'espère qu'il viendra.»"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'univers",
+      "en": "the universe",
+      "es": "el universo"
+    },
+    {
+      "word": "l'espace",
+      "en": "space",
+      "es": "el espacio"
+    },
+    {
+      "word": "la Terre",
+      "en": "the Earth",
+      "es": "la Tierra"
+    },
+    {
+      "word": "le Soleil",
+      "en": "the Sun",
+      "es": "el Sol"
+    },
+    {
+      "word": "la Lune",
+      "en": "the Moon",
+      "es": "la Luna"
+    },
+    {
+      "word": "une planète",
+      "en": "a planet",
+      "es": "un planeta"
+    },
+    {
+      "word": "une étoile",
+      "en": "a star",
+      "es": "una estrella"
+    },
+    {
+      "word": "une constellation",
+      "en": "a constellation",
+      "es": "una constelación"
+    },
+    {
+      "word": "le système solaire",
+      "en": "the solar system",
+      "es": "el sistema solar"
+    },
+    {
+      "word": "un satellite",
+      "en": "a satellite",
+      "es": "un satélite"
+    },
+    {
+      "word": "l'orbite",
+      "en": "the orbit",
+      "es": "la órbita"
+    },
+    {
+      "word": "un vaisseau spatial",
+      "en": "a spaceship",
+      "es": "una nave espacial"
+    },
+    {
+      "word": "un extraterrestre",
+      "en": "an alien",
+      "es": "un extraterrestre"
+    },
+    {
+      "word": "un OVNI",
+      "en": "a UFO",
+      "es": "un ovni"
+    },
+    {
+      "word": "l'atmosphère",
+      "en": "the atmosphere",
+      "es": "la atmósfera"
+    },
+    {
+      "word": "l'air",
+      "en": "air",
+      "es": "el aire"
+    },
+    {
+      "word": "l'oxygène",
+      "en": "oxygen",
+      "es": "el oxígeno"
+    },
+    {
+      "word": "le ciel",
+      "en": "the sky",
+      "es": "el cielo"
+    },
+    {
+      "word": "un continent",
+      "en": "a continent",
+      "es": "un continente"
+    },
+    {
+      "word": "un océan",
+      "en": "an ocean",
+      "es": "un océano"
+    },
+    {
+      "word": "la mer",
+      "en": "the sea",
+      "es": "el mar"
+    },
+    {
+      "word": "la côte",
+      "en": "the coast",
+      "es": "la costa"
+    },
+    {
+      "word": "la plage",
+      "en": "the beach",
+      "es": "la playa"
+    },
+    {
+      "word": "une île",
+      "en": "an island",
+      "es": "una isla"
+    },
+    {
+      "word": "une baie",
+      "en": "a bay",
+      "es": "una bahía"
+    },
+    {
+      "word": "un lac",
+      "en": "a lake",
+      "es": "un lago"
+    },
+    {
+      "word": "un fleuve",
+      "en": "a (large) river",
+      "es": "un río (que desemboca en el mar)"
+    },
+    {
+      "word": "une rivière",
+      "en": "a river",
+      "es": "un río"
+    },
+    {
+      "word": "la rive",
+      "en": "the bank / shore",
+      "es": "la orilla"
+    },
+    {
+      "word": "une montagne",
+      "en": "a mountain",
+      "es": "una montaña"
+    },
+    {
+      "word": "une colline",
+      "en": "a hill",
+      "es": "una colina"
+    },
+    {
+      "word": "une vallée",
+      "en": "a valley",
+      "es": "un valle"
+    },
+    {
+      "word": "une plaine",
+      "en": "a plain",
+      "es": "una llanura"
+    },
+    {
+      "word": "un désert",
+      "en": "a desert",
+      "es": "un desierto"
+    },
+    {
+      "word": "une grotte",
+      "en": "a cave",
+      "es": "una cueva"
+    },
+    {
+      "word": "un rocher",
+      "en": "a rock",
+      "es": "una roca"
+    },
+    {
+      "word": "le marais",
+      "en": "the marsh",
+      "es": "el pantano"
+    },
+    {
+      "word": "l'horizon",
+      "en": "the horizon",
+      "es": "el horizonte"
+    },
+    {
+      "word": "le paysage",
+      "en": "the landscape",
+      "es": "el paisaje"
+    },
+    {
+      "word": "la marée",
+      "en": "the tide",
+      "es": "la marea"
+    },
+    {
+      "word": "le niveau de la mer",
+      "en": "sea level",
+      "es": "el nivel del mar"
+    },
+    {
+      "word": "un tremblement de terre",
+      "en": "an earthquake",
+      "es": "un terremoto"
+    },
+    {
+      "word": "une tornade",
+      "en": "a tornado",
+      "es": "un tornado"
+    },
+    {
+      "word": "une catastrophe",
+      "en": "a disaster",
+      "es": "una catástrofe"
+    },
+    {
+      "word": "l'ombre",
+      "en": "the shadow / shade",
+      "es": "la sombra"
+    },
+    {
+      "word": "profond / profonde",
+      "en": "deep",
+      "es": "profundo / profunda"
+    },
+    {
+      "word": "sombre",
+      "en": "dark",
+      "es": "oscuro"
+    },
+    {
+      "word": "brillant / brillante",
+      "en": "bright / shiny",
+      "es": "brillante"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "L'air de la montagne est pur.",
+      "en": "The mountain air is pure.",
+      "es": "El aire de la montaña es puro."
+    },
+    {
+      "phrase": "Le Sahara est le plus grand désert chaud du monde.",
+      "en": "The Sahara is the largest hot desert in the world.",
+      "es": "El Sáhara es el desierto cálido más grande del mundo."
+    },
+    {
+      "phrase": "L'océan est plein de mystères et de beauté.",
+      "en": "The ocean is full of mystery and beauty.",
+      "es": "El océano está lleno de misterios y belleza."
+    },
+    {
+      "phrase": "La Lune est le seul satellite naturel de la Terre.",
+      "en": "The Moon is Earth's only natural satellite.",
+      "es": "La Luna es el único satélite natural de la Tierra."
+    },
+    {
+      "phrase": "Une catastrophe s'est produite hier soir quand une tornade a frappé la côte.",
+      "en": "A disaster happened last night when a tornado hit the coast.",
+      "es": "Anoche se produjo una catástrofe cuando un tornado golpeó la costa."
+    },
+    {
+      "phrase": "Le ciel est rempli d'étoiles.",
+      "en": "The sky is full of stars.",
+      "es": "El cielo está lleno de estrellas."
+    },
+    {
+      "phrase": "La marée monte, sortez de l'eau, les enfants !",
+      "en": "The tide is coming in, get out of the water, kids!",
+      "es": "¡La marea está subiendo, salgan del agua, niños!"
+    },
+    {
+      "phrase": "Je crois avoir vu un OVNI hier soir !",
+      "en": "I think I saw a UFO last night!",
+      "es": "¡Creo haber visto un ovni anoche!"
+    },
+    {
+      "phrase": "Faisons du jogging le long de la rive.",
+      "en": "Let's go jogging along the riverbank.",
+      "es": "Hagamos footing por la orilla."
+    },
+    {
+      "phrase": "Elle était assise sur un rocher dans la vallée.",
+      "en": "She was sitting on a rock in the valley.",
+      "es": "Estaba sentada en una roca en el valle."
+    },
+    {
+      "phrase": "Combien de temps la Terre met-elle pour tourner sur elle-même ? — Vingt-quatre heures.",
+      "en": "How long does the Earth take to rotate? — Twenty-four hours.",
+      "es": "¿Cuánto tarda la Tierra en girar sobre sí misma? — Veinticuatro horas."
+    },
+    {
+      "phrase": "La Grande Ourse est une constellation.",
+      "en": "The Big Dipper is a constellation.",
+      "es": "La Osa Mayor es una constelación."
+    },
+    {
+      "phrase": "L'atmosphère protège la Terre des rayons du soleil.",
+      "en": "The atmosphere protects the Earth from the sun's rays.",
+      "es": "La atmósfera protege la Tierra de los rayos del sol."
+    },
+    {
+      "phrase": "Il fait sombre ici. Allume la lumière !",
+      "en": "It's dark in here. Turn on the light!",
+      "es": "Aquí está oscuro. ¡Enciende la luz!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "How many planets are there in our solar system?",
+        "es": "¿Cuántos planetas hay en nuestro sistema solar?"
+      },
+      "options": [
+        "huit",
+        "neuf",
+        "sept",
+        "dix"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Pluton is a dwarf planet since 2006.",
+        "es": "Plutón es un planeta enano desde 2006."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"un fleuve\"?",
+        "es": "¿Qué es «un fleuve»?"
+      },
+      "options": {
+        "en": [
+          "a river that flows into the sea",
+          "a lake",
+          "a stream in the mountains",
+          "a waterfall"
+        ],
+        "es": [
+          "un río que desemboca en el mar",
+          "un lago",
+          "un arroyo de montaña",
+          "una cascada"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "La Seine and la Loire are \"fleuves\".",
+        "es": "El Sena y el Loira son «fleuves»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ regardant le ciel, j'ai vu une étoile filante.\"",
+        "es": "Completa: «___ regardant le ciel, j'ai vu une étoile filante.»"
+      },
+      "options": [
+        "En",
+        "Par",
+        "Pour",
+        "Dans"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Gerund: en + present participle.",
+        "es": "Gerundio: en + participio presente."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"I think I saw a UFO\"?",
+        "es": "¿Cómo se dice «Creo haber visto un ovni»?"
+      },
+      "options": [
+        "Je crois avoir vu un OVNI.",
+        "Je crois voir un OVNI hier.",
+        "Je crois que j'avais vu un OVNI demain.",
+        "Je crois un OVNI vu."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Croire + past infinitive (avoir + past participle).",
+        "es": "Croire + infinitivo compuesto (avoir + participio)."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"J'espère qu'il ___ beau demain.\"",
+        "es": "Completa: «J'espère qu'il ___ beau demain.»"
+      },
+      "options": [
+        "fera",
+        "fasse",
+        "faisait",
+        "ferait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Espérer que\" takes the indicative (here the future).",
+        "es": "«Espérer que» lleva indicativo (aquí el futuro)."
+      }
+    },
+    {
+      "question": {
+        "en": "Passive: \"Pollution threatens the Earth\" → ?",
+        "es": "Pasiva: «La contaminación amenaza la Tierra» → ?"
+      },
+      "options": [
+        "La Terre est menacée par la pollution.",
+        "La Terre menace la pollution.",
+        "La pollution est menacée par la Terre.",
+        "La Terre a menacé la pollution."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "être + past participle + par.",
+        "es": "être + participio + par."
+      }
+    },
+    {
+      "question": {
+        "en": "What is \"une grotte\"?",
+        "es": "¿Qué es «une grotte»?"
+      },
+      "options": {
+        "en": [
+          "a cave",
+          "a hill",
+          "a bay",
+          "a marsh"
+        ],
+        "es": [
+          "una cueva",
+          "una colina",
+          "una bahía",
+          "un pantano"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Also \"une caverne\".",
+        "es": "También «une caverne»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il faut agir ___ protéger la planète.\"",
+        "es": "Completa: «Il faut agir ___ protéger la planète.»"
+      },
+      "options": [
+        "afin de",
+        "afin que",
+        "parce que",
+        "bien que"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Afin de\" + infinitive; \"afin que\" + subjunctive.",
+        "es": "«Afin de» + infinitivo; «afin que» + subjuntivo."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une nuit à l'observatoire",
+    "text": "Pendant les vacances, Jules et sa grand-mère passent une nuit à l'observatoire du Pic du Midi, dans les Pyrénées. En montant en téléphérique, ils voient le paysage changer : les vallées, les lacs, puis les montagnes couvertes de neige. Au sommet, l'air est pur et le ciel est rempli d'étoiles. Une astronome leur montre Jupiter et ses satellites, puis Saturne et ses anneaux. « Saturne est la planète la plus belle du système solaire », dit-elle. Jules regarde la Lune : « On dirait un désert plein de rochers ! » Plus tard, il crie : « Je crois avoir vu un OVNI ! » L'astronome rit : « C'est la Station spatiale internationale. Elle fait le tour de la Terre en quatre-vingt-dix minutes environ. » Avant de dormir, sa grand-mère lui explique que la Terre est menacée par la pollution et qu'il faut agir afin de la protéger. « Espérons que les scientifiques trouveront des solutions », dit Jules. « Et toi aussi, peut-être, un jour ! » répond sa grand-mère.",
+    "en": "During the holidays, Jules and his grandmother spend a night at the Pic du Midi observatory, in the Pyrenees. Going up by cable car, they see the landscape change: the valleys, the lakes, then the snow-covered mountains. At the top, the air is pure and the sky is full of stars. An astronomer shows them Jupiter and its satellites, then Saturn and its rings. “Saturn is the most beautiful planet in the solar system,” she says. Jules looks at the Moon: “It looks like a desert full of rocks!” Later, he shouts: “I think I saw a UFO!” The astronomer laughs: “That's the International Space Station. It goes around the Earth in about ninety minutes.” Before going to sleep, his grandmother explains that the Earth is threatened by pollution and that we must act in order to protect it. “Let's hope scientists will find solutions,” says Jules. “And maybe you too, one day!” his grandmother answers.",
+    "es": "Durante las vacaciones, Jules y su abuela pasan una noche en el observatorio del Pic du Midi, en los Pirineos. Al subir en teleférico, ven cambiar el paisaje: los valles, los lagos y luego las montañas cubiertas de nieve. En la cima, el aire es puro y el cielo está lleno de estrellas. Una astrónoma les enseña Júpiter y sus satélites, y luego Saturno y sus anillos. «Saturno es el planeta más bonito del sistema solar», dice. Jules mira la Luna: «¡Parece un desierto lleno de rocas!». Más tarde, grita: «¡Creo haber visto un ovni!». La astrónoma se ríe: «Es la Estación Espacial Internacional. Da la vuelta a la Tierra en unos noventa minutos.» Antes de dormir, su abuela le explica que la Tierra está amenazada por la contaminación y que hay que actuar para protegerla. «Esperemos que los científicos encuentren soluciones», dice Jules. «¡Y tú también, quizás, algún día!», responde su abuela.",
+    "highlighted_words": [
+      "En montant",
+      "paysage",
+      "rempli d'étoiles",
+      "satellites",
+      "la plus belle",
+      "désert",
+      "Je crois avoir vu",
+      "est menacée par",
+      "afin de",
+      "Espérons que"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Le ciel est rempli d'étoiles",
+      "en": "The sky is full of stars",
+      "es": "El cielo está lleno de estrellas"
+    },
+    {
+      "sentence": "La Lune tourne autour de la Terre",
+      "en": "The Moon goes around the Earth",
+      "es": "La Luna gira alrededor de la Tierra"
+    },
+    {
+      "sentence": "Je crois avoir vu une étoile filante",
+      "en": "I think I saw a shooting star",
+      "es": "Creo haber visto una estrella fugaz"
+    },
+    {
+      "sentence": "Le Nil est un très long fleuve",
+      "en": "The Nile is a very long river",
+      "es": "El Nilo es un río muy largo"
+    },
+    {
+      "sentence": "En marchant sur la plage j'ai trouvé un coquillage",
+      "en": "While walking on the beach I found a shell",
+      "es": "Paseando por la playa encontré una concha"
+    },
+    {
+      "sentence": "Il faut protéger notre planète",
+      "en": "We must protect our planet",
+      "es": "Hay que proteger nuestro planeta"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Une île déserte",
+      "en": "A desert island",
+      "es": "Una isla desierta"
+    },
+    {
+      "answer": "La marée monte",
+      "en": "The tide is coming in",
+      "es": "La marea está subiendo"
+    },
+    {
+      "answer": "C'est la plus haute montagne",
+      "en": "It's the highest mountain",
+      "es": "Es la montaña más alta"
+    },
+    {
+      "answer": "Aimerais-tu voyager dans l'espace ?",
+      "en": "Would you like to travel in space?",
+      "es": "¿Te gustaría viajar al espacio?"
+    },
+    {
+      "answer": "Il y a eu un tremblement de terre",
+      "en": "There was an earthquake",
+      "es": "Hubo un terremoto"
+    },
+    {
+      "answer": "Le paysage est magnifique",
+      "en": "The landscape is magnificent",
+      "es": "El paisaje es magnífico"
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "lesson": 22,
+  "slug": "lecon-22",
+  "icon": "🏖️",
+  "title": {
+    "fr": "Les vacances",
+    "es": "Las vacaciones",
+    "en": "Holidays"
+  },
+  "source": {
+    "audio": "Lecons 22.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "futur proche / futur simple",
+      "example": "Je vais parcourir la Bretagne. / Je resterai à la maison. / Nous dormirons sous la tente.",
+      "en": "Talking about plans",
+      "es": "Hablar de planes"
+    },
+    {
+      "structure": "superlatif",
+      "example": "C'est la plage la plus belle de la région. / C'est la journée la plus chaude de l'année.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "pronoms possessifs",
+      "example": "Mes enfants font des châteaux de sable ; les miens jouent dans les vagues.",
+      "en": "Possessive pronouns (le mien, les miens…)",
+      "es": "Pronombres posesivos (el mío, los míos…)"
+    },
+    {
+      "structure": "conditionnel",
+      "example": "Ça serait parfait ! / On pourrait aller danser.",
+      "en": "Conditional (suggestions)",
+      "es": "Condicional (sugerencias)"
+    },
+    {
+      "structure": "pronoms « y » et « en »",
+      "example": "J'aimerais y aller. / Des lunettes ? En voulez-vous une paire ?",
+      "en": "\"y\" and \"en\"",
+      "es": "«y» y «en»"
+    },
+    {
+      "structure": "imparfait (souvenir, intention)",
+      "example": "Tu adorais ça. / J'allais oublier ! / Je voulais savoir si…",
+      "en": "Imperfect for memories and politeness",
+      "es": "Imperfecto para recuerdos y cortesía"
+    },
+    {
+      "structure": "avoir envie de",
+      "example": "J'ai très envie de te voir.",
+      "en": "\"To feel like / to really want\"",
+      "es": "«Tener ganas de»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "\"Partir en vacances\" = to go on holiday; \"être en vacances\" = to be on holiday. \"Les vacances\" is always plural.",
+      "es": "«Partir en vacances» = irse de vacaciones; «être en vacances» = estar de vacaciones. «Les vacances» va siempre en plural."
+    },
+    {
+      "en": "\"Il pleut à verse / des cordes\" = it's pouring.",
+      "es": "«Il pleut à verse / des cordes» = llueve a cántaros."
+    },
+    {
+      "en": "\"J'allais oublier !\" = I almost forgot! (imparfait of \"aller\" + infinitive).",
+      "es": "«J'allais oublier !» = ¡Casi se me olvida! (imperfecto de «aller» + infinitivo)."
+    },
+    {
+      "en": "\"Sortir en boîte\" = to go clubbing (informal).",
+      "es": "«Sortir en boîte» = salir de discotecas (coloquial)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "les vacances",
+      "en": "the holidays / vacation",
+      "es": "las vacaciones"
+    },
+    {
+      "word": "la plage",
+      "en": "the beach",
+      "es": "la playa"
+    },
+    {
+      "word": "le sable",
+      "en": "sand",
+      "es": "la arena"
+    },
+    {
+      "word": "la vague",
+      "en": "the wave",
+      "es": "la ola"
+    },
+    {
+      "word": "la mer",
+      "en": "the sea",
+      "es": "el mar"
+    },
+    {
+      "word": "la piscine",
+      "en": "the swimming pool",
+      "es": "la piscina"
+    },
+    {
+      "word": "nager",
+      "en": "to swim",
+      "es": "nadar"
+    },
+    {
+      "word": "bronzé / bronzée",
+      "en": "tanned",
+      "es": "bronceado / bronceada"
+    },
+    {
+      "word": "la crème solaire",
+      "en": "sunscreen",
+      "es": "el protector solar"
+    },
+    {
+      "word": "les lunettes de soleil",
+      "en": "sunglasses",
+      "es": "las gafas de sol"
+    },
+    {
+      "word": "le parasol",
+      "en": "the beach umbrella",
+      "es": "la sombrilla"
+    },
+    {
+      "word": "le château de sable",
+      "en": "sandcastle",
+      "es": "el castillo de arena"
+    },
+    {
+      "word": "le seau",
+      "en": "the bucket",
+      "es": "el cubo"
+    },
+    {
+      "word": "le camping",
+      "en": "campsite / camping",
+      "es": "el camping"
+    },
+    {
+      "word": "la tente",
+      "en": "the tent",
+      "es": "la tienda de campaña"
+    },
+    {
+      "word": "le sac de couchage",
+      "en": "the sleeping bag",
+      "es": "el saco de dormir"
+    },
+    {
+      "word": "la caravane",
+      "en": "the caravan",
+      "es": "la caravana"
+    },
+    {
+      "word": "la valise",
+      "en": "the suitcase",
+      "es": "la maleta"
+    },
+    {
+      "word": "le passeport",
+      "en": "the passport",
+      "es": "el pasaporte"
+    },
+    {
+      "word": "voyager",
+      "en": "to travel",
+      "es": "viajar"
+    },
+    {
+      "word": "conduire",
+      "en": "to drive",
+      "es": "conducir / manejar"
+    },
+    {
+      "word": "prendre l'avion",
+      "en": "to fly",
+      "es": "tomar el avión"
+    },
+    {
+      "word": "visiter",
+      "en": "to visit (a place)",
+      "es": "visitar"
+    },
+    {
+      "word": "parcourir",
+      "en": "to travel around",
+      "es": "recorrer"
+    },
+    {
+      "word": "se reposer",
+      "en": "to rest",
+      "es": "descansar"
+    },
+    {
+      "word": "s'amuser",
+      "en": "to have fun",
+      "es": "divertirse"
+    },
+    {
+      "word": "s'ennuyer",
+      "en": "to be bored",
+      "es": "aburrirse"
+    },
+    {
+      "word": "faire la fête",
+      "en": "to party",
+      "es": "ir de fiesta"
+    },
+    {
+      "word": "faire des achats",
+      "en": "to go shopping",
+      "es": "ir de compras"
+    },
+    {
+      "word": "la glace",
+      "en": "ice cream",
+      "es": "el helado"
+    },
+    {
+      "word": "les glaçons",
+      "en": "ice cubes",
+      "es": "los cubitos de hielo"
+    },
+    {
+      "word": "ensoleillé / ensoleillée",
+      "en": "sunny",
+      "es": "soleado / soleada"
+    },
+    {
+      "word": "il y a du vent",
+      "en": "it's windy",
+      "es": "hace viento"
+    },
+    {
+      "word": "il pleut",
+      "en": "it's raining",
+      "es": "llueve"
+    },
+    {
+      "word": "ennuyeux / ennuyeuse",
+      "en": "boring",
+      "es": "aburrido / aburrida"
+    },
+    {
+      "word": "génial",
+      "en": "great / awesome",
+      "es": "genial"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "C'était un jour ensoleillé : il n'y avait pas un nuage.",
+      "en": "It was a sunny day: there wasn't a cloud.",
+      "es": "Era un día soleado: no había ni una nube."
+    },
+    {
+      "phrase": "Il pleut à verse !",
+      "en": "It's pouring!",
+      "es": "¡Llueve a cántaros!"
+    },
+    {
+      "phrase": "C'est la plage la plus belle de la région.",
+      "en": "It's the most beautiful beach in the region.",
+      "es": "Es la playa más bonita de la región."
+    },
+    {
+      "phrase": "Il y a beaucoup de vent, prends un pull.",
+      "en": "It's very windy, take a sweater.",
+      "es": "Hace mucho viento, llévate un jersey."
+    },
+    {
+      "phrase": "C'est la journée la plus chaude de l'année !",
+      "en": "It's the hottest day of the year!",
+      "es": "¡Es el día más caluroso del año!"
+    },
+    {
+      "phrase": "Que vas-tu faire pendant les vacances ? — Je vais parcourir la Bretagne.",
+      "en": "What are you going to do during the holidays? — I'm going to travel around Brittany.",
+      "es": "¿Qué vas a hacer en vacaciones? — Voy a recorrer Bretaña."
+    },
+    {
+      "phrase": "Moi, je resterai à la maison : j'ai beaucoup de travail.",
+      "en": "As for me, I'll stay home: I have a lot of work.",
+      "es": "Yo me quedaré en casa: tengo mucho trabajo."
+    },
+    {
+      "phrase": "Nous dormirons sous la tente.",
+      "en": "We will sleep in the tent.",
+      "es": "Dormiremos en la tienda de campaña."
+    },
+    {
+      "phrase": "Mes enfants font des châteaux de sable ; les miens jouent avec les vagues.",
+      "en": "My children are building sandcastles; mine are playing in the waves.",
+      "es": "Mis hijos hacen castillos de arena; los míos juegan con las olas."
+    },
+    {
+      "phrase": "Tu es bronzé ! D'où viens-tu ? — J'étais en vacances en Corse.",
+      "en": "You're tanned! Where have you been? — I was on holiday in Corsica.",
+      "es": "¡Estás bronceado! ¿De dónde vienes? — Estaba de vacaciones en Córcega."
+    },
+    {
+      "phrase": "Vous êtes allés à Nice en voiture ? — Non, on a pris l'avion.",
+      "en": "Did you drive to Nice? — No, we flew.",
+      "es": "¿Fueron a Niza en coche? — No, tomamos el avión."
+    },
+    {
+      "phrase": "Tu voudrais une glace ? — Ça serait parfait, il fait très chaud !",
+      "en": "Would you like an ice cream? — That would be perfect, it's very hot!",
+      "es": "¿Quieres un helado? — ¡Sería perfecto, hace mucho calor!"
+    },
+    {
+      "phrase": "Je vends des lunettes de soleil. En voulez-vous une paire ?",
+      "en": "I sell sunglasses. Would you like a pair?",
+      "es": "Vendo gafas de sol. ¿Quiere un par?"
+    },
+    {
+      "phrase": "La ville est ennuyeuse pendant les vacances. — C'est toi qui t'ennuies !",
+      "en": "The city is boring during the holidays. — You're the one who's bored!",
+      "es": "La ciudad es aburrida en vacaciones. — ¡Eres tú quien se aburre!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Which sentence is about a near future plan?",
+        "es": "¿Qué frase habla de un plan en futuro próximo?"
+      },
+      "options": [
+        "Je vais visiter Rome.",
+        "J'ai visité Rome.",
+        "Je visitais Rome.",
+        "Je visiterais Rome."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Aller + infinitive = near future.",
+        "es": "Aller + infinitivo = futuro próximo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Tes enfants sont à la plage ? Les ___ sont à la piscine.\"",
+        "es": "Completa: «Tes enfants sont à la plage ? Les ___ sont à la piscine.»"
+      },
+      "options": [
+        "miens",
+        "mes",
+        "mien",
+        "moi"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Possessive pronoun, masculine plural: les miens.",
+        "es": "Pronombre posesivo, masculino plural: les miens."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Londres ? J'aimerais ___ aller.\"",
+        "es": "Completa: «Londres ? J'aimerais ___ aller.»"
+      },
+      "options": [
+        "y",
+        "en",
+        "le",
+        "là"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Y\" replaces a place.",
+        "es": "«Y» sustituye un lugar."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'allais oublier !\" means…",
+        "es": "«J'allais oublier !» significa…"
+      },
+      "options": {
+        "en": [
+          "I almost forgot!",
+          "I will forget!",
+          "I forgot yesterday!",
+          "I never forget!"
+        ],
+        "es": [
+          "¡Casi se me olvida!",
+          "¡Lo olvidaré!",
+          "¡Lo olvidé ayer!",
+          "¡Nunca olvido!"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait of \"aller\" + infinitive.",
+        "es": "Imperfecto de «aller» + infinitivo."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you suggest \"We could go dancing\"?",
+        "es": "¿Cómo sugieres «Podríamos ir a bailar»?"
+      },
+      "options": [
+        "On pourrait aller danser.",
+        "On peut allé danser.",
+        "On pourra danser hier.",
+        "On pouvait aller danser demain."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Conditional of \"pouvoir\" for suggestions.",
+        "es": "Condicional de «pouvoir» para sugerencias."
+      }
+    },
+    {
+      "question": {
+        "en": "What do you sleep in when camping?",
+        "es": "¿En qué duermes cuando acampas?"
+      },
+      "options": [
+        "un sac de couchage",
+        "un seau",
+        "un parasol",
+        "une valise"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Sac de couchage = sleeping bag.",
+        "es": "Sac de couchage = saco de dormir."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"C'est la journée ___ chaude de l'année.\"",
+        "es": "Completa: «C'est la journée ___ chaude de l'année.»"
+      },
+      "options": [
+        "la plus",
+        "plus",
+        "le plus",
+        "très"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Superlative: la plus + adjective + de.",
+        "es": "Superlativo: la plus + adjetivo + de."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'ai envie de te voir.\" Meaning?",
+        "es": "«J'ai envie de te voir.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "I really want to see you.",
+          "I'm jealous of you.",
+          "I saw you.",
+          "I have to see you."
+        ],
+        "es": [
+          "Tengo ganas de verte.",
+          "Te tengo envidia.",
+          "Te vi.",
+          "Tengo que verte."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avoir envie de\" = to feel like / to want. (False friend!)",
+        "es": "«Avoir envie de» = tener ganas de. (¡Falso amigo de «envidia»!)"
+      }
+    }
+  ],
+  "story": {
+    "title": "Lettre à Lucie",
+    "text": "Chère Lucie, ça y est, j'ai enfin fini mes examens et j'ai très envie de te voir ! Ma mère m'a dit que je dois refaire mon passeport cette semaine pour pouvoir partir à Lisbonne samedi prochain. Il fait beau là-bas en ce moment ? À vrai dire, ça m'est égal : tout ce que je veux, c'est être avec toi. Je voudrais visiter le vieux quartier de l'Alfama, les musées et la tour de Belém. Et j'aimerais aussi passer quelques jours sur les plages de l'Algarve. On pourrait louer une voiture et dormir au camping, comme l'été dernier en Bretagne, tu te souviens ? Le soir de mon arrivée, on pourrait sortir dîner et écouter du fado. Tu me manques beaucoup ! Ah, j'allais oublier : Mathis m'a parlé d'un petit marché où on vend les meilleurs pastéis de nata de la ville. J'aimerais y aller le premier matin. Je voulais aussi savoir si tu as encore ton vieux sac de couchage, parce que le mien est cassé. Je t'apporterai des caramels au beurre salé : je sais que tu adorais ça quand on était petites. À très bientôt ! Bisous, Manon.",
+    "en": "Dear Lucie, that's it, I've finally finished my exams and I really want to see you! My mother told me I have to renew my passport this week so I can leave for Lisbon next Saturday. Is the weather nice there at the moment? To be honest, I don't mind: all I want is to be with you. I would like to visit the old Alfama district, the museums and the Belém Tower. And I would also like to spend a few days on the beaches of the Algarve. We could rent a car and sleep at a campsite, like last summer in Brittany, remember? On the evening I arrive, we could go out for dinner and listen to some fado. I miss you a lot! Oh, I almost forgot: Mathis told me about a little market where they sell the best pastéis de nata in town. I would like to go there the first morning. I also wanted to know if you still have your old sleeping bag, because mine is broken. I'll bring you some salted-butter caramels: I know you loved them when we were little. See you very soon! Love, Manon.",
+    "es": "Querida Lucie: ¡por fin he terminado los exámenes y tengo muchas ganas de verte! Mi madre me ha dicho que tengo que renovar el pasaporte esta semana para poder irme a Lisboa el sábado que viene. ¿Hace buen tiempo allí ahora? A decir verdad, me da igual: lo único que quiero es estar contigo. Me gustaría visitar el viejo barrio de la Alfama, los museos y la torre de Belém. Y también me gustaría pasar unos días en las playas del Algarve. Podríamos alquilar un coche y dormir en un camping, como el verano pasado en Bretaña, ¿te acuerdas? La noche que llegue, podríamos salir a cenar y escuchar fado. ¡Te extraño mucho! Ah, casi se me olvida: Mathis me ha hablado de un pequeño mercado donde venden los mejores pastéis de nata de la ciudad. Me gustaría ir la primera mañana. También quería saber si todavía tienes tu viejo saco de dormir, porque el mío está roto. Te llevaré caramelos de mantequilla salada: sé que te encantaban cuando éramos pequeñas. ¡Hasta muy pronto! Besos, Manon.",
+    "highlighted_words": [
+      "j'ai très envie de",
+      "je dois",
+      "Je voudrais",
+      "j'aimerais",
+      "On pourrait",
+      "Tu me manques",
+      "j'allais oublier",
+      "les meilleurs",
+      "y aller",
+      "Je voulais aussi savoir",
+      "le mien",
+      "tu adorais"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je vais partir en vacances",
+      "en": "I'm going to go on holiday",
+      "es": "Me voy a ir de vacaciones"
+    },
+    {
+      "sentence": "Nous dormirons sous la tente",
+      "en": "We will sleep in the tent",
+      "es": "Dormiremos en la tienda de campaña"
+    },
+    {
+      "sentence": "C'est la plus belle plage",
+      "en": "It's the most beautiful beach",
+      "es": "Es la playa más bonita"
+    },
+    {
+      "sentence": "On pourrait aller nager",
+      "en": "We could go swimming",
+      "es": "Podríamos ir a nadar"
+    },
+    {
+      "sentence": "J'ai très envie de te voir",
+      "en": "I really want to see you",
+      "es": "Tengo muchas ganas de verte"
+    },
+    {
+      "sentence": "Le mien est cassé",
+      "en": "Mine is broken",
+      "es": "El mío está roto"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Il pleut à verse",
+      "en": "It's pouring",
+      "es": "Llueve a cántaros"
+    },
+    {
+      "answer": "Allons nager",
+      "en": "Let's go swimming",
+      "es": "Vamos a nadar"
+    },
+    {
+      "answer": "J'ai besoin d'un maillot de bain",
+      "en": "I need a swimsuit",
+      "es": "Necesito un bañador"
+    },
+    {
+      "answer": "Tu es bronzé",
+      "en": "You are tanned",
+      "es": "Estás bronceado"
+    },
+    {
+      "answer": "Je resterai à la maison",
+      "en": "I will stay home",
+      "es": "Me quedaré en casa"
+    },
+    {
+      "answer": "Ça serait parfait",
+      "en": "That would be perfect",
+      "es": "Sería perfecto"
+    }
+  ]
+}

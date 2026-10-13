@@ -1,0 +1,623 @@
+{
+  "lesson": 21,
+  "slug": "lecon-21",
+  "icon": "⏱️",
+  "title": {
+    "fr": "L'heure, le temps et les mesures",
+    "es": "La hora, el tiempo y las medidas",
+    "en": "Time and measurements"
+  },
+  "source": {
+    "audio": "Lecons 21.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "dire l'heure",
+      "example": "Il est midi et demi. / Il est dix heures moins cinq. / Il est quatre heures pile.",
+      "en": "Telling the time",
+      "es": "Decir la hora"
+    },
+    {
+      "structure": "avancer / retarder",
+      "example": "Ta montre a dix minutes d'avance. / Elle retarde de deux heures.",
+      "en": "Fast or slow clocks",
+      "es": "Relojes adelantados o atrasados"
+    },
+    {
+      "structure": "depuis + présent",
+      "example": "Je t'attends depuis une demi-heure.",
+      "en": "Ongoing action since / for",
+      "es": "Acción que dura desde hace"
+    },
+    {
+      "structure": "après avoir + participe passé",
+      "example": "Je me suis couché après avoir lu le livre.",
+      "en": "\"After having done\"",
+      "es": "«Después de haber»"
+    },
+    {
+      "structure": "devoir au passé composé (probabilité)",
+      "example": "J'ai dû oublier de changer les piles.",
+      "en": "\"I must have…\"",
+      "es": "«Debí de…»"
+    },
+    {
+      "structure": "il faut que + subjonctif",
+      "example": "Il faut que la robe soit prête demain.",
+      "en": "Necessity + subjunctive",
+      "es": "Necesidad + subjuntivo"
+    },
+    {
+      "structure": "mesurer / peser / faire … de long",
+      "example": "Elle mesure 1,80 m. Ça pèse deux kilos. La table fait 70 cm de large.",
+      "en": "Measurements",
+      "es": "Medidas"
+    },
+    {
+      "structure": "il est temps de + infinitif",
+      "example": "Il est temps de partir.",
+      "en": "\"It's time to\"",
+      "es": "«Es hora de»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "In everyday speech: \"deux heures et quart\" (2:15), \"deux heures et demie\" (2:30), \"trois heures moins le quart\" (2:45). Officially, the 24-hour clock is used: \"quatorze heures trente\".",
+      "es": "En el habla cotidiana: «deux heures et quart» (2:15), «deux heures et demie» (2:30), «trois heures moins le quart» (2:45). En lo oficial se usa el formato de 24 horas: «quatorze heures trente»."
+    },
+    {
+      "en": "\"Midi et demi\" and \"minuit et demi\" (no -e), but \"une heure et demie\".",
+      "es": "«Midi et demi» y «minuit et demi» (sin -e), pero «une heure et demie»."
+    },
+    {
+      "en": "\"Le temps\" = time AND weather; \"une fois\" = one time (occurrence); \"l'heure\" = the clock time.",
+      "es": "«Le temps» = el tiempo (duración Y clima); «une fois» = una vez; «l'heure» = la hora."
+    },
+    {
+      "en": "\"Une livre\" = half a kilo (500 g) in France, and also the British pound.",
+      "es": "«Une livre» = medio kilo (500 g) en Francia, y también la libra esterlina."
+    },
+    {
+      "en": "\"Le décalage horaire\" = jet lag / time difference.",
+      "es": "«Le décalage horaire» = el desfase horario / la diferencia horaria."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'heure",
+      "en": "the hour / the time",
+      "es": "la hora"
+    },
+    {
+      "word": "la minute",
+      "en": "the minute",
+      "es": "el minuto"
+    },
+    {
+      "word": "la seconde",
+      "en": "the second",
+      "es": "el segundo"
+    },
+    {
+      "word": "une demi-heure",
+      "en": "half an hour",
+      "es": "media hora"
+    },
+    {
+      "word": "un quart d'heure",
+      "en": "a quarter of an hour",
+      "es": "un cuarto de hora"
+    },
+    {
+      "word": "pile",
+      "en": "sharp (time)",
+      "es": "en punto"
+    },
+    {
+      "word": "la montre",
+      "en": "the watch",
+      "es": "el reloj (de pulsera)"
+    },
+    {
+      "word": "l'horloge",
+      "en": "the clock",
+      "es": "el reloj (de pared)"
+    },
+    {
+      "word": "le réveil",
+      "en": "the alarm clock",
+      "es": "el despertador"
+    },
+    {
+      "word": "les aiguilles",
+      "en": "the hands (of a clock)",
+      "es": "las agujas"
+    },
+    {
+      "word": "les piles",
+      "en": "batteries",
+      "es": "las pilas"
+    },
+    {
+      "word": "à l'heure",
+      "en": "on time",
+      "es": "puntual"
+    },
+    {
+      "word": "en retard",
+      "en": "late",
+      "es": "tarde / con retraso"
+    },
+    {
+      "word": "en avance",
+      "en": "early",
+      "es": "temprano / con antelación"
+    },
+    {
+      "word": "le matin",
+      "en": "morning",
+      "es": "la mañana"
+    },
+    {
+      "word": "le soir",
+      "en": "evening",
+      "es": "la noche"
+    },
+    {
+      "word": "hier soir",
+      "en": "last night",
+      "es": "anoche"
+    },
+    {
+      "word": "autrefois",
+      "en": "in the past",
+      "es": "antiguamente"
+    },
+    {
+      "word": "de temps en temps",
+      "en": "from time to time",
+      "es": "de vez en cuando"
+    },
+    {
+      "word": "quelquefois",
+      "en": "sometimes",
+      "es": "a veces"
+    },
+    {
+      "word": "tout le temps",
+      "en": "all the time",
+      "es": "todo el tiempo"
+    },
+    {
+      "word": "à plein temps / à mi-temps",
+      "en": "full-time / part-time",
+      "es": "a tiempo completo / a media jornada"
+    },
+    {
+      "word": "les heures supplémentaires",
+      "en": "overtime",
+      "es": "las horas extra"
+    },
+    {
+      "word": "le décalage horaire",
+      "en": "jet lag / time difference",
+      "es": "el desfase horario"
+    },
+    {
+      "word": "le mètre",
+      "en": "the meter",
+      "es": "el metro"
+    },
+    {
+      "word": "le centimètre",
+      "en": "the centimeter",
+      "es": "el centímetro"
+    },
+    {
+      "word": "le kilomètre",
+      "en": "the kilometer",
+      "es": "el kilómetro"
+    },
+    {
+      "word": "le kilo",
+      "en": "the kilo",
+      "es": "el kilo"
+    },
+    {
+      "word": "le gramme",
+      "en": "the gram",
+      "es": "el gramo"
+    },
+    {
+      "word": "le litre",
+      "en": "the liter",
+      "es": "el litro"
+    },
+    {
+      "word": "le mètre carré",
+      "en": "the square meter",
+      "es": "el metro cuadrado"
+    },
+    {
+      "word": "le poids",
+      "en": "the weight",
+      "es": "el peso"
+    },
+    {
+      "word": "peser",
+      "en": "to weigh",
+      "es": "pesar"
+    },
+    {
+      "word": "mesurer",
+      "en": "to measure / to be (height)",
+      "es": "medir"
+    },
+    {
+      "word": "la taille",
+      "en": "the size / the height / the waist",
+      "es": "la talla / la estatura / la cintura"
+    },
+    {
+      "word": "la longueur",
+      "en": "the length",
+      "es": "la longitud"
+    },
+    {
+      "word": "la largeur",
+      "en": "the width",
+      "es": "la anchura"
+    },
+    {
+      "word": "la hauteur",
+      "en": "the height",
+      "es": "la altura"
+    },
+    {
+      "word": "le thermomètre",
+      "en": "the thermometer",
+      "es": "el termómetro"
+    },
+    {
+      "word": "la température",
+      "en": "the temperature",
+      "es": "la temperatura"
+    },
+    {
+      "word": "le degré",
+      "en": "the degree",
+      "es": "el grado"
+    },
+    {
+      "word": "long / longue",
+      "en": "long",
+      "es": "largo / larga"
+    },
+    {
+      "word": "court / courte",
+      "en": "short",
+      "es": "corto / corta"
+    },
+    {
+      "word": "large",
+      "en": "wide",
+      "es": "ancho"
+    },
+    {
+      "word": "mince",
+      "en": "thin",
+      "es": "delgado"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Il est temps de se lever !",
+      "en": "It's time to get up!",
+      "es": "¡Es hora de levantarse!"
+    },
+    {
+      "phrase": "Hier soir, je me suis couché après avoir lu un chapitre.",
+      "en": "Last night, I went to bed after reading a chapter.",
+      "es": "Anoche me acosté después de haber leído un capítulo."
+    },
+    {
+      "phrase": "Cent centimètres font un mètre.",
+      "en": "A hundred centimeters make a meter.",
+      "es": "Cien centímetros son un metro."
+    },
+    {
+      "phrase": "Quelle heure est-il ? — Il est midi et demi.",
+      "en": "What time is it? — It is half past twelve.",
+      "es": "¿Qué hora es? — Son las doce y media."
+    },
+    {
+      "phrase": "Il est dix heures moins cinq.",
+      "en": "It is five to ten.",
+      "es": "Son las diez menos cinco."
+    },
+    {
+      "phrase": "Ta montre a deux heures de retard.",
+      "en": "Your watch is two hours slow.",
+      "es": "Tu reloj va dos horas atrasado."
+    },
+    {
+      "phrase": "On se verra à midi.",
+      "en": "We'll see each other at noon.",
+      "es": "Nos veremos a mediodía."
+    },
+    {
+      "phrase": "Je me lève à six heures et quart tous les matins.",
+      "en": "I get up at a quarter past six every morning.",
+      "es": "Me levanto a las seis y cuarto todas las mañanas."
+    },
+    {
+      "phrase": "Achète un litre de lait et une livre de sucre, s'il te plaît.",
+      "en": "Buy a liter of milk and a pound of sugar, please.",
+      "es": "Compra un litro de leche y medio kilo de azúcar, por favor."
+    },
+    {
+      "phrase": "Elle mesure un mètre quatre-vingts.",
+      "en": "She is 1.80 m tall.",
+      "es": "Mide un metro ochenta."
+    },
+    {
+      "phrase": "Ta montre ne marche pas ? — Non, j'ai dû oublier de changer les piles.",
+      "en": "Your watch isn't working? — No, I must have forgotten to change the batteries.",
+      "es": "¿Tu reloj no funciona? — No, debí de olvidarme de cambiar las pilas."
+    },
+    {
+      "phrase": "Je t'attends depuis une demi-heure ! Qu'est-ce qui s'est passé ?",
+      "en": "I've been waiting for you for half an hour! What happened?",
+      "es": "¡Te estoy esperando desde hace media hora! ¿Qué ha pasado?"
+    },
+    {
+      "phrase": "Cet appartement fait quatre-vingts mètres carrés.",
+      "en": "This apartment is eighty square meters.",
+      "es": "Este apartamento tiene ochenta metros cuadrados."
+    },
+    {
+      "phrase": "Combien mesure cette table ? — Soixante-dix centimètres de large et un mètre vingt de long.",
+      "en": "How big is this table? — Seventy centimeters wide and 1.20 m long.",
+      "es": "¿Cuánto mide esta mesa? — Setenta centímetros de ancho y un metro veinte de largo."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "How do you say 2:45 in everyday French?",
+        "es": "¿Cómo se dice 2:45 en el francés cotidiano?"
+      },
+      "options": [
+        "trois heures moins le quart",
+        "deux heures moins le quart",
+        "deux heures et quart",
+        "trois heures et quart"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Moins le quart = quarter to.",
+        "es": "Moins le quart = menos cuarto."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is correct?",
+        "es": "¿Cuál es correcta?"
+      },
+      "options": [
+        "Il est midi et demi.",
+        "Il est midi et demie.",
+        "Il est midi et moitié.",
+        "Il est midi demi."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Midi\" is masculine: \"et demi\".",
+        "es": "«Midi» es masculino: «et demi»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Ma montre avance de dix minutes.\" Meaning?",
+        "es": "«Ma montre avance de dix minutes.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "My watch is ten minutes fast.",
+          "My watch is ten minutes slow.",
+          "I am ten minutes early.",
+          "My watch stopped ten minutes ago."
+        ],
+        "es": [
+          "Mi reloj va diez minutos adelantado.",
+          "Mi reloj va diez minutos atrasado.",
+          "Llego diez minutos antes.",
+          "Mi reloj se paró hace diez minutos."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Avancer = to be fast; retarder = to be slow.",
+        "es": "Avancer = adelantarse; retarder = atrasarse."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je t'attends ___ vingt minutes.\"",
+        "es": "Completa: «Je t'attends ___ vingt minutes.»"
+      },
+      "options": [
+        "depuis",
+        "pendant",
+        "il y a",
+        "pour"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Depuis\" + present = still waiting now.",
+        "es": "«Depuis» + presente = todavía esperando."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je me suis couché après ___ lu le livre.\"",
+        "es": "Completa: «Je me suis couché après ___ lu le livre.»"
+      },
+      "options": [
+        "avoir",
+        "être",
+        "ai",
+        "avais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Après + past infinitive.",
+        "es": "Après + infinitivo compuesto."
+      }
+    },
+    {
+      "question": {
+        "en": "\"J'ai dû oublier mes clés.\" What does it express?",
+        "es": "«J'ai dû oublier mes clés.» ¿Qué expresa?"
+      },
+      "options": {
+        "en": [
+          "a probable past fact",
+          "a future obligation",
+          "a wish",
+          "an order"
+        ],
+        "es": [
+          "un hecho pasado probable",
+          "una obligación futura",
+          "un deseo",
+          "una orden"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Devoir in the passé composé often means \"must have\".",
+        "es": "«Devoir» en passé composé suele significar «debí de»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il faut que la robe ___ prête demain.\"",
+        "es": "Completa: «Il faut que la robe ___ prête demain.»"
+      },
+      "options": [
+        "soit",
+        "est",
+        "sera",
+        "serait"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il faut que\" + subjunctive.",
+        "es": "«Il faut que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "How much is \"une livre\" in a French market?",
+        "es": "¿Cuánto es «une livre» en un mercado francés?"
+      },
+      "options": [
+        "500 grammes",
+        "1 kilo",
+        "250 grammes",
+        "100 grammes"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Une livre = half a kilo.",
+        "es": "Une livre = medio kilo."
+      }
+    }
+  ],
+  "story": {
+    "title": "Chaque minute compte",
+    "text": "Je m'appelle Clémence Roy et je suis pâtissière dans un grand hôtel à Paris. Dans mon métier, le temps et les mesures sont essentiels. Si une recette demande deux cent cinquante grammes de farine et un demi-litre de lait, je dois tout peser exactement. Il faut aussi que la température du four soit parfaite : cent quatre-vingts degrés, pas un de plus ! Je me lève tous les jours à quatre heures et quart, mais quelquefois, je n'entends pas mon réveil. Hier, j'ai dû oublier de changer les piles, et je suis arrivée vingt minutes en retard ! Ce mois-ci, nous préparons un gâteau de mariage de un mètre cinquante de haut. Le chef m'attend depuis ce matin pour la décoration. De temps en temps, je voyage pour des concours à l'étranger. Après avoir passé dix heures dans l'avion, le décalage horaire est terrible. Mais j'adore mon travail : quand je vois le sourire des clients, je sais que chaque minute compte.",
+    "en": "My name is Clémence Roy and I'm a pastry chef in a big hotel in Paris. In my job, time and measurements are essential. If a recipe calls for two hundred and fifty grams of flour and half a liter of milk, I have to weigh everything exactly. The oven temperature also has to be perfect: a hundred and eighty degrees, not one more! I get up every day at a quarter past four, but sometimes I don't hear my alarm clock. Yesterday, I must have forgotten to change the batteries, and I arrived twenty minutes late! This month, we are making a wedding cake one meter fifty tall. The chef has been waiting for me since this morning for the decoration. From time to time, I travel abroad for competitions. After spending ten hours on the plane, the jet lag is terrible. But I love my job: when I see the customers' smiles, I know every minute counts.",
+    "es": "Me llamo Clémence Roy y soy pastelera en un gran hotel de París. En mi oficio, el tiempo y las medidas son esenciales. Si una receta pide doscientos cincuenta gramos de harina y medio litro de leche, tengo que pesarlo todo con exactitud. También hace falta que la temperatura del horno sea perfecta: ¡ciento ochenta grados, ni uno más! Me levanto todos los días a las cuatro y cuarto, pero a veces no oigo el despertador. Ayer debí de olvidarme de cambiar las pilas, ¡y llegué veinte minutos tarde! Este mes estamos preparando un pastel de boda de un metro cincuenta de alto. El chef me está esperando desde esta mañana para la decoración. De vez en cuando viajo al extranjero para concursos. Después de pasar diez horas en el avión, el desfase horario es terrible. Pero me encanta mi trabajo: cuando veo la sonrisa de los clientes, sé que cada minuto cuenta.",
+    "highlighted_words": [
+      "grammes",
+      "demi-litre",
+      "peser",
+      "Il faut aussi que",
+      "soit",
+      "degrés",
+      "quatre heures et quart",
+      "j'ai dû oublier",
+      "en retard",
+      "depuis",
+      "Après avoir passé",
+      "décalage horaire"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Il est deux heures et demie",
+      "en": "It is half past two",
+      "es": "Son las dos y media"
+    },
+    {
+      "sentence": "Ma montre a dix minutes de retard",
+      "en": "My watch is ten minutes slow",
+      "es": "Mi reloj va diez minutos atrasado"
+    },
+    {
+      "sentence": "Je t'attends depuis une heure",
+      "en": "I've been waiting for you for an hour",
+      "es": "Te espero desde hace una hora"
+    },
+    {
+      "sentence": "Il est temps de partir",
+      "en": "It's time to leave",
+      "es": "Es hora de irse"
+    },
+    {
+      "sentence": "Elle mesure un mètre soixante",
+      "en": "She is one meter sixty tall",
+      "es": "Mide un metro sesenta"
+    },
+    {
+      "sentence": "Je suis arrivé en retard",
+      "en": "I arrived late",
+      "es": "Llegué tarde"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Quelle heure est-il ?",
+      "en": "What time is it?",
+      "es": "¿Qué hora es?"
+    },
+    {
+      "answer": "Il est minuit",
+      "en": "It is midnight",
+      "es": "Es medianoche"
+    },
+    {
+      "answer": "Combien pèses-tu ?",
+      "en": "How much do you weigh?",
+      "es": "¿Cuánto pesas?"
+    },
+    {
+      "answer": "De temps en temps",
+      "en": "From time to time",
+      "es": "De vez en cuando"
+    },
+    {
+      "answer": "Il est quatre heures pile",
+      "en": "It's four o'clock sharp",
+      "es": "Son las cuatro en punto"
+    },
+    {
+      "answer": "Ça pèse deux kilos",
+      "en": "It weighs two kilos",
+      "es": "Pesa dos kilos"
+    }
+  ]
+}

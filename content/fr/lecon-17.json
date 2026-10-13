@@ -1,0 +1,638 @@
+{
+  "lesson": 17,
+  "slug": "lecon-17",
+  "icon": "🥕",
+  "title": {
+    "fr": "Les fruits et les légumes",
+    "es": "Las frutas y las verduras",
+    "en": "Fruits and vegetables"
+  },
+  "source": {
+    "audio": "Lecons 17.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "articles partitifs",
+      "example": "des tomates, de la laitue, du concombre",
+      "en": "Partitive articles",
+      "es": "Artículos partitivos"
+    },
+    {
+      "structure": "impératif (recettes)",
+      "example": "Fais une salade. Mets le chou-fleur à cuire. Mélange les petits pois avec le riz.",
+      "en": "Imperative in recipes",
+      "es": "Imperativo en recetas"
+    },
+    {
+      "structure": "si + présent → futur",
+      "example": "Si tu manges des fruits et des légumes, tu auras un régime sain.",
+      "en": "Real condition",
+      "es": "Condición real"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Je ferai une soupe de céleri. / Tu profiteras d'une bonne santé.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "il est conseillé de / il faut + infinitif",
+      "example": "Il est conseillé de manger des fruits. / Il faut boire de l'eau.",
+      "en": "Advice and necessity",
+      "es": "Consejo y necesidad"
+    },
+    {
+      "structure": "préférer / aimer plus",
+      "example": "Je préfère plutôt une pomme. / J'aime plus le chou-fleur.",
+      "en": "Expressing preferences",
+      "es": "Expresar preferencias"
+    },
+    {
+      "structure": "passé composé + pronom",
+      "example": "Comment l'as-tu assaisonnée ?",
+      "en": "Past tense with object pronoun (agreement)",
+      "es": "Pasado con pronombre (concordancia)"
+    },
+    {
+      "structure": "ne … pas tant de",
+      "example": "Ne mange pas tant de pistaches !",
+      "en": "\"not so much / many\"",
+      "es": "«no tanto / tantos»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "With a direct object pronoun before \"avoir\", the past participle agrees: \"La salade ? Je l'ai assaisonnée.\"",
+      "es": "Con un pronombre de complemento directo antes de «avoir», el participio concuerda: «La salade ? Je l'ai assaisonnée.»"
+    },
+    {
+      "en": "\"Le raisin\" is the fruit in general (grapes); \"un grain de raisin\" is one grape. \"Les raisins secs\" = raisins.",
+      "es": "«Le raisin» es la uva en general; «un grain de raisin» es una uva. «Les raisins secs» = pasas."
+    },
+    {
+      "en": "\"Une pêche\" = a peach, but \"la pêche\" is also fishing. \"Un avocat\" = an avocado AND a lawyer!",
+      "es": "«Une pêche» = un melocotón, pero «la pêche» también es la pesca. «Un avocat» = un aguacate Y un abogado."
+    },
+    {
+      "en": "Recipes in French often use the infinitive: \"Éplucher les carottes. Couper en dés.\"",
+      "es": "Las recetas en francés suelen usar el infinitivo: «Éplucher les carottes. Couper en dés.»"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "une pomme",
+      "en": "an apple",
+      "es": "una manzana"
+    },
+    {
+      "word": "une poire",
+      "en": "a pear",
+      "es": "una pera"
+    },
+    {
+      "word": "une banane",
+      "en": "a banana",
+      "es": "un plátano / una banana"
+    },
+    {
+      "word": "une orange",
+      "en": "an orange",
+      "es": "una naranja"
+    },
+    {
+      "word": "une mandarine",
+      "en": "a tangerine",
+      "es": "una mandarina"
+    },
+    {
+      "word": "un citron",
+      "en": "a lemon",
+      "es": "un limón"
+    },
+    {
+      "word": "un pamplemousse",
+      "en": "a grapefruit",
+      "es": "un pomelo / una toronja"
+    },
+    {
+      "word": "une pêche",
+      "en": "a peach",
+      "es": "un melocotón / un durazno"
+    },
+    {
+      "word": "un abricot",
+      "en": "an apricot",
+      "es": "un albaricoque"
+    },
+    {
+      "word": "une prune",
+      "en": "a plum",
+      "es": "una ciruela"
+    },
+    {
+      "word": "une cerise",
+      "en": "a cherry",
+      "es": "una cereza"
+    },
+    {
+      "word": "une fraise",
+      "en": "a strawberry",
+      "es": "una fresa"
+    },
+    {
+      "word": "une framboise",
+      "en": "a raspberry",
+      "es": "una frambuesa"
+    },
+    {
+      "word": "une myrtille",
+      "en": "a blueberry",
+      "es": "un arándano"
+    },
+    {
+      "word": "une mûre",
+      "en": "a blackberry",
+      "es": "una mora"
+    },
+    {
+      "word": "le raisin",
+      "en": "grapes",
+      "es": "la uva"
+    },
+    {
+      "word": "une figue",
+      "en": "a fig",
+      "es": "un higo"
+    },
+    {
+      "word": "un ananas",
+      "en": "a pineapple",
+      "es": "una piña"
+    },
+    {
+      "word": "une mangue",
+      "en": "a mango",
+      "es": "un mango"
+    },
+    {
+      "word": "une papaye",
+      "en": "a papaya",
+      "es": "una papaya"
+    },
+    {
+      "word": "un melon",
+      "en": "a melon",
+      "es": "un melón"
+    },
+    {
+      "word": "une noix de coco",
+      "en": "a coconut",
+      "es": "un coco"
+    },
+    {
+      "word": "un avocat",
+      "en": "an avocado",
+      "es": "un aguacate"
+    },
+    {
+      "word": "une tomate",
+      "en": "a tomato",
+      "es": "un tomate"
+    },
+    {
+      "word": "une carotte",
+      "en": "a carrot",
+      "es": "una zanahoria"
+    },
+    {
+      "word": "une pomme de terre",
+      "en": "a potato",
+      "es": "una papa / una patata"
+    },
+    {
+      "word": "un oignon",
+      "en": "an onion",
+      "es": "una cebolla"
+    },
+    {
+      "word": "l'ail",
+      "en": "garlic",
+      "es": "el ajo"
+    },
+    {
+      "word": "un poivron",
+      "en": "a bell pepper",
+      "es": "un pimiento"
+    },
+    {
+      "word": "un concombre",
+      "en": "a cucumber",
+      "es": "un pepino"
+    },
+    {
+      "word": "une courgette",
+      "en": "a zucchini",
+      "es": "un calabacín"
+    },
+    {
+      "word": "une aubergine",
+      "en": "an eggplant",
+      "es": "una berenjena"
+    },
+    {
+      "word": "la laitue",
+      "en": "lettuce",
+      "es": "la lechuga"
+    },
+    {
+      "word": "le chou",
+      "en": "cabbage",
+      "es": "la col / el repollo"
+    },
+    {
+      "word": "le chou-fleur",
+      "en": "cauliflower",
+      "es": "la coliflor"
+    },
+    {
+      "word": "le brocoli",
+      "en": "broccoli",
+      "es": "el brócoli"
+    },
+    {
+      "word": "les épinards",
+      "en": "spinach",
+      "es": "las espinacas"
+    },
+    {
+      "word": "les petits pois",
+      "en": "peas",
+      "es": "los guisantes / las arvejas"
+    },
+    {
+      "word": "les haricots verts",
+      "en": "green beans",
+      "es": "las judías verdes / los ejotes"
+    },
+    {
+      "word": "les lentilles",
+      "en": "lentils",
+      "es": "las lentejas"
+    },
+    {
+      "word": "les pois chiches",
+      "en": "chickpeas",
+      "es": "los garbanzos"
+    },
+    {
+      "word": "le champignon",
+      "en": "mushroom",
+      "es": "el champiñón"
+    },
+    {
+      "word": "le maïs",
+      "en": "corn",
+      "es": "el maíz"
+    },
+    {
+      "word": "le persil",
+      "en": "parsley",
+      "es": "el perejil"
+    },
+    {
+      "word": "la menthe",
+      "en": "mint",
+      "es": "la menta"
+    },
+    {
+      "word": "les cacahuètes",
+      "en": "peanuts",
+      "es": "los cacahuetes / el maní"
+    },
+    {
+      "word": "les amandes",
+      "en": "almonds",
+      "es": "las almendras"
+    },
+    {
+      "word": "mûr / mûre",
+      "en": "ripe",
+      "es": "maduro / madura"
+    },
+    {
+      "word": "pourrir",
+      "en": "to rot",
+      "es": "pudrirse"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Un jus de pomme, s'il vous plaît.",
+      "en": "An apple juice, please.",
+      "es": "Un jugo de manzana, por favor."
+    },
+    {
+      "phrase": "Fais une salade avec des tomates, de la laitue, du concombre et des carottes.",
+      "en": "Make a salad with tomatoes, lettuce, cucumber and carrots.",
+      "es": "Haz una ensalada con tomates, lechuga, pepino y zanahorias."
+    },
+    {
+      "phrase": "Je ferai une soupe de céleri ce soir.",
+      "en": "I'll make a celery soup tonight.",
+      "es": "Esta noche haré una sopa de apio."
+    },
+    {
+      "phrase": "Ces mûres sont parfaites pour faire une tarte.",
+      "en": "These blackberries are perfect for making a pie.",
+      "es": "Estas moras son perfectas para hacer una tarta."
+    },
+    {
+      "phrase": "Tu sens l'ail !",
+      "en": "You smell of garlic!",
+      "es": "¡Hueles a ajo!"
+    },
+    {
+      "phrase": "Les lentilles ont beaucoup de protéines.",
+      "en": "Lentils have a lot of protein.",
+      "es": "Las lentejas tienen muchas proteínas."
+    },
+    {
+      "phrase": "Les mangues sont mes fruits préférés.",
+      "en": "Mangoes are my favorite fruit.",
+      "es": "Los mangos son mis frutas favoritas."
+    },
+    {
+      "phrase": "Les citrons et les oranges contiennent beaucoup de vitamine C.",
+      "en": "Lemons and oranges contain a lot of vitamin C.",
+      "es": "Los limones y las naranjas tienen mucha vitamina C."
+    },
+    {
+      "phrase": "Mets des champignons, de l'avocat et du poivron dans mon sandwich.",
+      "en": "Put mushrooms, avocado and bell pepper in my sandwich.",
+      "es": "Ponme champiñones, aguacate y pimiento en el sándwich."
+    },
+    {
+      "phrase": "Ces abricots sont en train de pourrir : fais-en un jus !",
+      "en": "These apricots are going bad: make a juice with them!",
+      "es": "Estos albaricoques se están pudriendo: ¡haz un jugo con ellos!"
+    },
+    {
+      "phrase": "Tu veux de la papaye ? — Non, je préfère plutôt une pomme.",
+      "en": "Do you want some papaya? — No, I'd rather have an apple.",
+      "es": "¿Quieres papaya? — No, prefiero una manzana."
+    },
+    {
+      "phrase": "Comment l'as-tu assaisonnée ? — Avec du citron, du sel, du poivre et du cumin.",
+      "en": "How did you season it? — With lemon, salt, pepper and cumin.",
+      "es": "¿Cómo la has aliñado? — Con limón, sal, pimienta y comino."
+    },
+    {
+      "phrase": "Tu as mal au ventre ? Attends, je t'ai préparé un thé à la menthe.",
+      "en": "Does your stomach hurt? Wait, I made you a mint tea.",
+      "es": "¿Te duele la barriga? Espera, te he preparado un té de menta."
+    },
+    {
+      "phrase": "Ne mange pas tant de cacahuètes !",
+      "en": "Don't eat so many peanuts!",
+      "es": "¡No comas tantos cacahuetes!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Je voudrais ___ fraises.\"",
+        "es": "Completa: «Je voudrais ___ fraises.»"
+      },
+      "options": [
+        "des",
+        "du",
+        "de la",
+        "de l'"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plural partitive: des.",
+        "es": "Partitivo plural: des."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Un avocat\" can mean…",
+        "es": "«Un avocat» puede significar…"
+      },
+      "options": {
+        "en": [
+          "an avocado or a lawyer",
+          "only a lawyer",
+          "an apricot",
+          "a peach"
+        ],
+        "es": [
+          "un aguacate o un abogado",
+          "solo un abogado",
+          "un albaricoque",
+          "un melocotón"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Same word, two meanings!",
+        "es": "¡Misma palabra, dos significados!"
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si tu manges des légumes, tu ___ en bonne santé.\"",
+        "es": "Completa: «Si tu manges des légumes, tu ___ en bonne santé.»"
+      },
+      "options": [
+        "seras",
+        "serais",
+        "étais",
+        "es été"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + present → future.",
+        "es": "Si + presente → futuro."
+      }
+    },
+    {
+      "question": {
+        "en": "Which is a vegetable?",
+        "es": "¿Cuál es una verdura?"
+      },
+      "options": [
+        "la courgette",
+        "la cerise",
+        "la framboise",
+        "la mangue"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Courgette = zucchini.",
+        "es": "Courgette = calabacín."
+      }
+    },
+    {
+      "question": {
+        "en": "\"La salade ? Je l'ai ___.\" (assaisonner)",
+        "es": "«La salade ? Je l'ai ___.» (assaisonner)"
+      },
+      "options": [
+        "assaisonnée",
+        "assaisonné",
+        "assaisonnés",
+        "assaisonner"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The participle agrees with \"l'\" (= la salade, feminine) placed before \"avoir\".",
+        "es": "El participio concuerda con «l'» (= la salade, femenino) colocado antes de «avoir»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you express a preference politely?",
+        "es": "¿Cómo expresas una preferencia con cortesía?"
+      },
+      "options": [
+        "Je préfère plutôt une pomme.",
+        "Je veux pas de pomme.",
+        "Donne pomme.",
+        "Une pomme, vite !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Plutôt\" = rather.",
+        "es": "«Plutôt» = más bien."
+      }
+    },
+    {
+      "question": {
+        "en": "Which fruit is \"une myrtille\"?",
+        "es": "¿Qué fruta es «une myrtille»?"
+      },
+      "options": {
+        "en": [
+          "a blueberry",
+          "a blackberry",
+          "a raspberry",
+          "a cherry"
+        ],
+        "es": [
+          "un arándano",
+          "una mora",
+          "una frambuesa",
+          "una cereza"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Mûre = blackberry, framboise = raspberry, cerise = cherry.",
+        "es": "Mûre = mora, framboise = frambuesa, cerise = cereza."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il est conseillé ___ manger cinq fruits et légumes par jour.\"",
+        "es": "Completa: «Il est conseillé ___ manger cinq fruits et légumes par jour.»"
+      },
+      "options": [
+        "de",
+        "à",
+        "que",
+        "pour"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il est conseillé de\" + infinitive.",
+        "es": "«Il est conseillé de» + infinitivo."
+      }
+    }
+  ],
+  "story": {
+    "title": "Le marché du samedi",
+    "text": "Tous les samedis, Amélie va au marché de son quartier, à Rennes. Elle dit toujours : « Si tu manges des fruits et des légumes de saison, tu seras en meilleure forme et tu dépenseras moins ! » Ce matin, elle achète des tomates, de la laitue, des courgettes et des oignons chez son maraîcher préféré. « Ces fraises sont bien mûres, elles viennent d'arriver », dit le vendeur. Amélie en prend une barquette. À la maison, elle prépare une ratatouille : « Coupe les aubergines et les poivrons, fais revenir l'oignon et l'ail dans l'huile d'olive, puis ajoute les tomates. » Son fils Noé goûte la sauce. « Comment l'as-tu assaisonnée ? » « Avec du sel, du poivre, du thym et du laurier. » Noé préfère les desserts. « Ne mange pas tant de fraises avant le repas ! » rit sa mère. Il est conseillé de manger des légumes variés et de boire beaucoup d'eau, mais chez Amélie, la règle d'or est simple : il faut que ce soit bon !",
+    "en": "Every Saturday, Amélie goes to her neighborhood market in Rennes. She always says: “If you eat seasonal fruits and vegetables, you'll be healthier and you'll spend less!” This morning, she buys tomatoes, lettuce, zucchini and onions from her favorite vegetable grower. “These strawberries are nice and ripe, they've just arrived,” says the seller. Amélie takes a punnet. At home, she makes a ratatouille: “Cut the eggplants and bell peppers, fry the onion and garlic in olive oil, then add the tomatoes.” Her son Noé tastes the sauce. “How did you season it?” “With salt, pepper, thyme and bay leaf.” Noé prefers desserts. “Don't eat so many strawberries before the meal!” his mother laughs. It's advisable to eat a variety of vegetables and drink plenty of water, but at Amélie's house, the golden rule is simple: it has to taste good!",
+    "es": "Todos los sábados, Amélie va al mercado de su barrio, en Rennes. Siempre dice: «¡Si comes frutas y verduras de temporada, estarás en mejor forma y gastarás menos!». Esta mañana compra tomates, lechuga, calabacines y cebollas a su hortelano favorito. «Estas fresas están bien maduras, acaban de llegar», dice el vendedor. Amélie se lleva una cajita. En casa prepara un pisto: «Corta las berenjenas y los pimientos, sofríe la cebolla y el ajo en aceite de oliva y luego añade los tomates.» Su hijo Noé prueba la salsa. «¿Cómo la has aliñado?» «Con sal, pimienta, tomillo y laurel.» Noé prefiere los postres. «¡No comas tantas fresas antes de la comida!», se ríe su madre. Se recomienda comer verduras variadas y beber mucha agua, pero en casa de Amélie la regla de oro es sencilla: ¡tiene que estar rico!",
+    "highlighted_words": [
+      "Si tu manges",
+      "tu seras",
+      "des tomates",
+      "de la laitue",
+      "mûres",
+      "Coupe",
+      "ajoute",
+      "Comment l'as-tu assaisonnée",
+      "Ne mange pas tant de",
+      "Il est conseillé de",
+      "il faut que ce soit"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Je mange une pomme tous les jours",
+      "en": "I eat an apple every day",
+      "es": "Me como una manzana todos los días"
+    },
+    {
+      "sentence": "Fais une salade avec des tomates",
+      "en": "Make a salad with tomatoes",
+      "es": "Haz una ensalada con tomates"
+    },
+    {
+      "sentence": "Les fraises sont bien mûres",
+      "en": "The strawberries are nice and ripe",
+      "es": "Las fresas están bien maduras"
+    },
+    {
+      "sentence": "Je préfère plutôt une poire",
+      "en": "I'd rather have a pear",
+      "es": "Prefiero una pera"
+    },
+    {
+      "sentence": "Ne mange pas tant de chocolat",
+      "en": "Don't eat so much chocolate",
+      "es": "No comas tanto chocolate"
+    },
+    {
+      "sentence": "Si tu manges bien tu seras en forme",
+      "en": "If you eat well you'll be fit",
+      "es": "Si comes bien, estarás en forma"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "J'aime les fraises",
+      "en": "I like strawberries",
+      "es": "Me gustan las fresas"
+    },
+    {
+      "answer": "Je ne veux pas d'oignons",
+      "en": "I don't want onions",
+      "es": "No quiero cebolla"
+    },
+    {
+      "answer": "Les mangues sont mes fruits préférés",
+      "en": "Mangoes are my favorite fruit",
+      "es": "Los mangos son mis frutas favoritas"
+    },
+    {
+      "answer": "Mets des champignons dans la soupe",
+      "en": "Put mushrooms in the soup",
+      "es": "Pon champiñones en la sopa"
+    },
+    {
+      "answer": "Tu sens l'ail",
+      "en": "You smell of garlic",
+      "es": "Hueles a ajo"
+    },
+    {
+      "answer": "Un jus d'orange, s'il vous plaît",
+      "en": "An orange juice, please",
+      "es": "Un jugo de naranja, por favor"
+    }
+  ]
+}

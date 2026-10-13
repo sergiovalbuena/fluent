@@ -1,0 +1,531 @@
+{
+  "lesson": 6,
+  "slug": "lecon-06",
+  "icon": "👨‍👩‍👧‍👦",
+  "title": {
+    "fr": "La famille",
+    "es": "La familia",
+    "en": "The family"
+  },
+  "source": {
+    "audio": "Lecons 06.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "adjectifs possessifs",
+      "example": "mon père, ma mère, mes grands-parents",
+      "en": "Possessive adjectives",
+      "es": "Adjetivos posesivos"
+    },
+    {
+      "structure": "s'appeler",
+      "example": "Ma mère s'appelle Anne.",
+      "en": "Saying names with \"s'appeler\"",
+      "es": "Decir el nombre con «s'appeler»"
+    },
+    {
+      "structure": "avoir + âge",
+      "example": "Mon père a cinquante ans.",
+      "en": "Age with \"avoir\"",
+      "es": "La edad con «avoir»"
+    },
+    {
+      "structure": "futur proche",
+      "example": "Son fils va se marier en juin.",
+      "en": "Near future (aller + infinitive)",
+      "es": "Futuro próximo (aller + infinitivo)"
+    },
+    {
+      "structure": "superlatif",
+      "example": "Je suis la plus bavarde de ses nièces.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "pronoms possessifs",
+      "example": "Parlez-moi de la vôtre.",
+      "en": "Possessive pronouns",
+      "es": "Pronombres posesivos"
+    },
+    {
+      "structure": "qu'est-ce que + inversion",
+      "example": "Qu'est-ce que fait ton père ?",
+      "en": "Asking what someone does",
+      "es": "Preguntar a qué se dedica alguien"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Possessives agree with the thing possessed, not the owner: \"sa mère\" = his OR her mother.",
+      "es": "Los posesivos concuerdan con lo poseído, no con el poseedor: «sa mère» = la madre de él O de ella."
+    },
+    {
+      "en": "Before a vowel, \"ma / ta / sa\" become \"mon / ton / son\": \"mon amie\", \"son épouse\".",
+      "es": "Delante de vocal, «ma / ta / sa» pasan a «mon / ton / son»: «mon amie», «son épouse»."
+    },
+    {
+      "en": "\"Beau-\" / \"belle-\" covers both in-laws and step-family: \"belle-mère\" = mother-in-law or stepmother.",
+      "es": "«Beau-» / «belle-» sirve para la familia política y para padrastros: «belle-mère» = suegra o madrastra."
+    },
+    {
+      "en": "French uses \"avoir\" for age: \"J'ai vingt ans\" (never \"je suis vingt ans\").",
+      "es": "En francés la edad se dice con «avoir»: «J'ai vingt ans» (nunca «je suis vingt ans»)."
+    },
+    {
+      "en": "\"L'aîné(e)\" = the eldest child; \"le cadet / la cadette\" = the younger one.",
+      "es": "«L'aîné(e)» = el hijo mayor; «le cadet / la cadette» = el menor."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "la famille",
+      "en": "the family",
+      "es": "la familia"
+    },
+    {
+      "word": "les parents",
+      "en": "the parents",
+      "es": "los padres"
+    },
+    {
+      "word": "les grands-parents",
+      "en": "the grandparents",
+      "es": "los abuelos"
+    },
+    {
+      "word": "le grand-père",
+      "en": "the grandfather",
+      "es": "el abuelo"
+    },
+    {
+      "word": "la grand-mère",
+      "en": "the grandmother",
+      "es": "la abuela"
+    },
+    {
+      "word": "le père",
+      "en": "the father",
+      "es": "el padre"
+    },
+    {
+      "word": "la mère",
+      "en": "the mother",
+      "es": "la madre"
+    },
+    {
+      "word": "le fils",
+      "en": "the son",
+      "es": "el hijo"
+    },
+    {
+      "word": "la fille",
+      "en": "the daughter",
+      "es": "la hija"
+    },
+    {
+      "word": "l'époux / l'épouse",
+      "en": "the husband / the wife",
+      "es": "el esposo / la esposa"
+    },
+    {
+      "word": "le frère",
+      "en": "the brother",
+      "es": "el hermano"
+    },
+    {
+      "word": "la sœur",
+      "en": "the sister",
+      "es": "la hermana"
+    },
+    {
+      "word": "les frères et sœurs",
+      "en": "siblings",
+      "es": "los hermanos"
+    },
+    {
+      "word": "le fiancé / la fiancée",
+      "en": "the fiancé / the fiancée",
+      "es": "el prometido / la prometida"
+    },
+    {
+      "word": "l'oncle",
+      "en": "the uncle",
+      "es": "el tío"
+    },
+    {
+      "word": "la tante",
+      "en": "the aunt",
+      "es": "la tía"
+    },
+    {
+      "word": "le cousin / la cousine",
+      "en": "the cousin",
+      "es": "el primo / la prima"
+    },
+    {
+      "word": "le neveu",
+      "en": "the nephew",
+      "es": "el sobrino"
+    },
+    {
+      "word": "la nièce",
+      "en": "the niece",
+      "es": "la sobrina"
+    },
+    {
+      "word": "le beau-père",
+      "en": "the father-in-law / stepfather",
+      "es": "el suegro / el padrastro"
+    },
+    {
+      "word": "la belle-mère",
+      "en": "the mother-in-law / stepmother",
+      "es": "la suegra / la madrastra"
+    },
+    {
+      "word": "le beau-frère",
+      "en": "the brother-in-law",
+      "es": "el cuñado"
+    },
+    {
+      "word": "la belle-sœur",
+      "en": "the sister-in-law",
+      "es": "la cuñada"
+    },
+    {
+      "word": "le gendre",
+      "en": "the son-in-law",
+      "es": "el yerno"
+    },
+    {
+      "word": "la belle-fille",
+      "en": "the daughter-in-law",
+      "es": "la nuera"
+    },
+    {
+      "word": "le parrain",
+      "en": "the godfather",
+      "es": "el padrino"
+    },
+    {
+      "word": "la marraine",
+      "en": "the godmother",
+      "es": "la madrina"
+    },
+    {
+      "word": "le filleul / la filleule",
+      "en": "the godson / the goddaughter",
+      "es": "el ahijado / la ahijada"
+    },
+    {
+      "word": "l'aîné / l'aînée",
+      "en": "the eldest",
+      "es": "el mayor / la mayor"
+    },
+    {
+      "word": "le cadet / la cadette",
+      "en": "the youngest",
+      "es": "el menor / la menor"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Mon père s'appelle Marc. Il est architecte.",
+      "en": "My father is called Marc. He is an architect.",
+      "es": "Mi padre se llama Marc. Es arquitecto."
+    },
+    {
+      "phrase": "Ma mère est infirmière. Elle est patiente et drôle.",
+      "en": "My mother is a nurse. She is patient and funny.",
+      "es": "Mi madre es enfermera. Es paciente y divertida."
+    },
+    {
+      "phrase": "Ma sœur est l'aînée. Elle est très intelligente.",
+      "en": "My sister is the eldest. She is very intelligent.",
+      "es": "Mi hermana es la mayor. Es muy inteligente."
+    },
+    {
+      "phrase": "Mon frère est le cadet et il joue au foot.",
+      "en": "My brother is the youngest and he plays soccer.",
+      "es": "Mi hermano es el menor y juega al fútbol."
+    },
+    {
+      "phrase": "Mon beau-frère est l'époux de ma sœur.",
+      "en": "My brother-in-law is my sister's husband.",
+      "es": "Mi cuñado es el esposo de mi hermana."
+    },
+    {
+      "phrase": "Je suis le neveu de ma tante Claire.",
+      "en": "I am my aunt Claire's nephew.",
+      "es": "Soy el sobrino de mi tía Claire."
+    },
+    {
+      "phrase": "Où habites-tu ? — J'habite en Bretagne.",
+      "en": "Where do you live? — I live in Brittany.",
+      "es": "¿Dónde vives? — Vivo en Bretaña."
+    },
+    {
+      "phrase": "Comment s'appelle ta mère ? — Elle s'appelle Anne.",
+      "en": "What's your mother's name? — Her name is Anne.",
+      "es": "¿Cómo se llama tu madre? — Se llama Anne."
+    },
+    {
+      "phrase": "Qu'est-ce que fait ton père ? — Il est architecte.",
+      "en": "What does your father do? — He is an architect.",
+      "es": "¿A qué se dedica tu padre? — Es arquitecto."
+    },
+    {
+      "phrase": "Voici mon frère Paul et ma belle-sœur Léa.",
+      "en": "This is my brother Paul and my sister-in-law Léa.",
+      "es": "Este es mi hermano Paul y mi cuñada Léa."
+    },
+    {
+      "phrase": "Ma marraine vient nous voir aujourd'hui.",
+      "en": "My godmother is coming to see us today.",
+      "es": "Mi madrina viene a vernos hoy."
+    },
+    {
+      "phrase": "Laissez-moi vous présenter ma famille.",
+      "en": "Let me introduce my family to you.",
+      "es": "Permítanme presentarles a mi familia."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Your mother's brother is your…",
+        "es": "El hermano de tu madre es tu…"
+      },
+      "options": [
+        "oncle",
+        "cousin",
+        "neveu",
+        "grand-père"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"L'oncle\" = uncle; his wife is \"la tante\".",
+        "es": "«L'oncle» = el tío; su esposa es «la tante»."
+      }
+    },
+    {
+      "question": {
+        "en": "Your sister's daughter is your…",
+        "es": "La hija de tu hermana es tu…"
+      },
+      "options": [
+        "nièce",
+        "cousine",
+        "tante",
+        "filleule"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Nephew = \"le neveu\", niece = \"la nièce\".",
+        "es": "Sobrino = «le neveu», sobrina = «la nièce»."
+      }
+    },
+    {
+      "question": {
+        "en": "Your sister's husband is your…",
+        "es": "El esposo de tu hermana es tu…"
+      },
+      "options": [
+        "beau-frère",
+        "beau-père",
+        "frère",
+        "gendre"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Beau-frère\" = brother-in-law.",
+        "es": "«Beau-frère» = cuñado."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"l'aînée\" mean?",
+        "es": "¿Qué significa «l'aînée»?"
+      },
+      "options": {
+        "en": [
+          "the eldest",
+          "the youngest",
+          "the godmother",
+          "the twin"
+        ],
+        "es": [
+          "la mayor",
+          "la menor",
+          "la madrina",
+          "la gemela"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "The youngest is \"la cadette\".",
+        "es": "La menor es «la cadette»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you ask what someone's father does for a living?",
+        "es": "¿Cómo preguntas a qué se dedica el padre de alguien?"
+      },
+      "options": [
+        "Qu'est-ce que fait ton père ?",
+        "Où est ton père ?",
+        "Comment va ton père ?",
+        "Comment s'appelle ton père ?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The answer is a job: \"Il est avocat\", \"Il est architecte\"…",
+        "es": "La respuesta es una profesión: «Il est avocat», «Il est architecte»…"
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"He is 45 years old\"?",
+        "es": "¿Cómo se dice «Tiene 45 años»?"
+      },
+      "options": [
+        "Il a quarante-cinq ans.",
+        "Il est quarante-cinq ans.",
+        "Il fait quarante-cinq ans.",
+        "Il a quarante-cinq années."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Age always uses \"avoir\" + \"ans\".",
+        "es": "La edad siempre usa «avoir» + «ans»."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Sa fille va se marier.\" What tense is this?",
+        "es": "«Sa fille va se marier.» ¿Qué tiempo es?"
+      },
+      "options": {
+        "en": [
+          "near future",
+          "past",
+          "present habit",
+          "conditional"
+        ],
+        "es": [
+          "futuro próximo",
+          "pasado",
+          "presente habitual",
+          "condicional"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Aller (present) + infinitive = near future.",
+        "es": "Aller (presente) + infinitivo = futuro próximo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ sœur et ___ frère\" (my)",
+        "es": "Completa: «___ sœur et ___ frère» (mi)"
+      },
+      "options": [
+        "ma … mon",
+        "mon … ma",
+        "mes … mon",
+        "ma … ma"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Sœur is feminine (ma), frère is masculine (mon).",
+        "es": "Sœur es femenino (ma), frère es masculino (mon)."
+      }
+    }
+  ],
+  "story": {
+    "title": "Ma famille à Marseille",
+    "text": "Laissez-moi vous présenter ma famille. Mon père s'appelle Marc Rivière. Il a cinquante ans et il est cuisinier dans un restaurant du port. Ma mère s'appelle Sophie. Elle a quarante-sept ans, elle est médecin et elle s'occupe beaucoup de nous. Au fait, je m'appelle Camille Rivière, j'ai dix-neuf ans et je suis étudiante à Marseille, où nous habitons. Mon frère aîné, Julien, suit des études d'informatique à Lyon. Ma petite sœur, Zoé, est la cadette. Elle a douze ans et c'est une très bonne danseuse. Nous avons aussi un chat gris qui s'appelle Moustache. Mes grands-parents sont toujours en vie et ils habitent à la campagne, près d'Aix. Ma tante Hélène, du côté de mon père, habite à Nice, à deux heures d'ici. Elle a deux fils : ce sont mes cousins. Ma tante pense que je suis la plus bavarde de ses nièces ! Son fils aîné va se marier en juin. Voilà ma famille. Parlez-moi de la vôtre !",
+    "en": "Let me introduce my family to you. My father is called Marc Rivière. He is fifty years old and he is a cook in a restaurant at the harbor. My mother is called Sophie. She is forty-seven, she is a doctor and she takes great care of us. By the way, my name is Camille Rivière, I am nineteen and I am a student in Marseille, where we live. My older brother, Julien, is studying computer science in Lyon. My little sister, Zoé, is the youngest. She is twelve and she is a very good dancer. We also have a grey cat called Moustache. My grandparents are still alive and they live in the countryside, near Aix. My aunt Hélène, on my father's side, lives in Nice, two hours from here. She has two sons: they are my cousins. My aunt thinks I am the most talkative of her nieces! Her eldest son is going to get married in June. That's my family. Tell me about yours!",
+    "es": "Permítanme presentarles a mi familia. Mi padre se llama Marc Rivière. Tiene cincuenta años y es cocinero en un restaurante del puerto. Mi madre se llama Sophie. Tiene cuarenta y siete años, es médica y nos cuida mucho. Por cierto, me llamo Camille Rivière, tengo diecinueve años y soy estudiante en Marsella, donde vivimos. Mi hermano mayor, Julien, estudia Informática en Lyon. Mi hermana pequeña, Zoé, es la menor. Tiene doce años y es una bailarina muy buena. También tenemos un gato gris que se llama Moustache. Mis abuelos todavía viven y están en el campo, cerca de Aix. Mi tía Hélène, por parte de mi padre, vive en Niza, a dos horas de aquí. Tiene dos hijos: son mis primos. ¡Mi tía piensa que soy la más charlatana de sus sobrinas! Su hijo mayor se va a casar en junio. Esta es mi familia. ¡Háblenme de la suya!",
+    "highlighted_words": [
+      "ma famille",
+      "s'appelle",
+      "a cinquante ans",
+      "aîné",
+      "cadette",
+      "grands-parents",
+      "tante",
+      "cousins",
+      "nièces",
+      "va se marier",
+      "la vôtre"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Mon père a quarante-cinq ans",
+      "en": "My father is forty-five years old",
+      "es": "Mi padre tiene cuarenta y cinco años"
+    },
+    {
+      "sentence": "Ma sœur est l'aînée",
+      "en": "My sister is the eldest",
+      "es": "Mi hermana es la mayor"
+    },
+    {
+      "sentence": "Mes grands-parents habitent près de chez nous",
+      "en": "My grandparents live near us",
+      "es": "Mis abuelos viven cerca de nosotros"
+    },
+    {
+      "sentence": "Mon cousin va se marier en juin",
+      "en": "My cousin is going to get married in June",
+      "es": "Mi primo se va a casar en junio"
+    },
+    {
+      "sentence": "Laissez-moi vous présenter ma famille",
+      "en": "Let me introduce my family to you",
+      "es": "Permítanme presentarles a mi familia"
+    },
+    {
+      "sentence": "Ma tante est la sœur de ma mère",
+      "en": "My aunt is my mother's sister",
+      "es": "Mi tía es la hermana de mi madre"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Ma mère s'appelle Anne",
+      "en": "My mother's name is Anne",
+      "es": "Mi madre se llama Anne"
+    },
+    {
+      "answer": "J'ai deux frères et une sœur",
+      "en": "I have two brothers and a sister",
+      "es": "Tengo dos hermanos y una hermana"
+    },
+    {
+      "answer": "Mon oncle habite à Bordeaux",
+      "en": "My uncle lives in Bordeaux",
+      "es": "Mi tío vive en Burdeos"
+    },
+    {
+      "answer": "Elle a quarante ans",
+      "en": "She is forty years old",
+      "es": "Tiene cuarenta años"
+    },
+    {
+      "answer": "Voici ma belle-sœur",
+      "en": "This is my sister-in-law",
+      "es": "Esta es mi cuñada"
+    },
+    {
+      "answer": "Parlez-moi de votre famille",
+      "en": "Tell me about your family",
+      "es": "Háblenme de su familia"
+    }
+  ]
+}

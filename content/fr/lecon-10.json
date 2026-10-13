@@ -1,0 +1,532 @@
+{
+  "lesson": 10,
+  "slug": "lecon-10",
+  "icon": "🗨️",
+  "title": {
+    "fr": "Expressions courantes (2)",
+    "es": "Expresiones habituales (2)",
+    "en": "Everyday expressions (2)"
+  },
+  "source": {
+    "audio": "Lecons 10.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "subjonctif après un sentiment",
+      "example": "C'est dommage que tu partes. / Je suis heureuse qu'elle soit venue.",
+      "en": "Subjunctive after feelings",
+      "es": "Subjuntivo tras sentimientos"
+    },
+    {
+      "structure": "vouloir que / il est urgent que + subjonctif",
+      "example": "Je veux que tu le saches. / Il est urgent que j'apprenne l'italien.",
+      "en": "Subjunctive after wishes and necessity",
+      "es": "Subjuntivo tras deseos y necesidad"
+    },
+    {
+      "structure": "si + imparfait → conditionnel",
+      "example": "Je serais très heureux si je pouvais parler italien.",
+      "en": "Hypothesis (unreal present)",
+      "es": "Hipótesis (presente irreal)"
+    },
+    {
+      "structure": "passé composé des verbes pronominaux",
+      "example": "Je me suis bien amusé. / Que s'est-il passé ?",
+      "en": "Past tense of reflexive verbs (être)",
+      "es": "Pasado de los verbos pronominales (être)"
+    },
+    {
+      "structure": "imparfait",
+      "example": "Hier, tu étais très heureuse.",
+      "en": "Imperfect (description)",
+      "es": "Imperfecto (descripción)"
+    },
+    {
+      "structure": "futur simple",
+      "example": "Tu seras surpris. / J'irai en Italie l'année prochaine.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "avoir peur de / avoir l'air",
+      "example": "J'ai peur de faire des fautes. / Tu as l'air triste.",
+      "en": "Fixed expressions with avoir",
+      "es": "Expresiones con avoir"
+    },
+    {
+      "structure": "infinitif passé",
+      "example": "Ravi de t'avoir rencontré !",
+      "en": "Past infinitive",
+      "es": "Infinitivo compuesto"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Feelings + \"que\" trigger the subjunctive: \"Je suis content que tu sois là\", \"C'est dommage qu'il parte\".",
+      "es": "Sentimiento + «que» exige subjuntivo: «Je suis content que tu sois là», «C'est dommage qu'il parte»."
+    },
+    {
+      "en": "Hypothesis: \"si\" + imparfait, then conditional. Never the conditional right after \"si\".",
+      "es": "Hipótesis: «si» + imperfecto y luego condicional. Nunca condicional justo después de «si»."
+    },
+    {
+      "en": "\"Ça m'est égal\" = I don't mind / I don't care (neutral). Avoid the vulgar \"je m'en fous\".",
+      "es": "«Ça m'est égal» = me da igual (neutro). Evita el vulgar «je m'en fous»."
+    },
+    {
+      "en": "\"Je suis à ta disposition\" / \"Tu peux compter sur moi\" are warm ways to offer help.",
+      "es": "«Je suis à ta disposition» / «Tu peux compter sur moi» son formas cálidas de ofrecer ayuda."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "au sujet de / à propos de",
+      "en": "about",
+      "es": "acerca de / a propósito de"
+    },
+    {
+      "word": "l'adresse",
+      "en": "the address",
+      "es": "la dirección"
+    },
+    {
+      "word": "admirable",
+      "en": "admirable",
+      "es": "admirable"
+    },
+    {
+      "word": "avoir peur",
+      "en": "to be afraid",
+      "es": "tener miedo"
+    },
+    {
+      "word": "gênant / gênante",
+      "en": "embarrassing",
+      "es": "incómodo / vergonzoso"
+    },
+    {
+      "word": "étonner",
+      "en": "to surprise / amaze",
+      "es": "asombrar"
+    },
+    {
+      "word": "horrible",
+      "en": "horrible",
+      "es": "horrible"
+    },
+    {
+      "word": "mauvais / mauvaise",
+      "en": "bad",
+      "es": "malo / mala"
+    },
+    {
+      "word": "félicitations",
+      "en": "congratulations",
+      "es": "felicidades"
+    },
+    {
+      "word": "le doute",
+      "en": "the doubt",
+      "es": "la duda"
+    },
+    {
+      "word": "drôle",
+      "en": "funny",
+      "es": "gracioso"
+    },
+    {
+      "word": "content / contente",
+      "en": "glad",
+      "es": "contento / contenta"
+    },
+    {
+      "word": "reconnaissant / reconnaissante",
+      "en": "grateful",
+      "es": "agradecido / agradecida"
+    },
+    {
+      "word": "l'aide",
+      "en": "help",
+      "es": "la ayuda"
+    },
+    {
+      "word": "avoir hâte",
+      "en": "to look forward / be eager",
+      "es": "tener ganas / estar deseando"
+    },
+    {
+      "word": "attendre",
+      "en": "to wait",
+      "es": "esperar"
+    },
+    {
+      "word": "l'idée",
+      "en": "the idea",
+      "es": "la idea"
+    },
+    {
+      "word": "incroyable",
+      "en": "incredible",
+      "es": "increíble"
+    },
+    {
+      "word": "magnifique",
+      "en": "magnificent",
+      "es": "magnífico"
+    },
+    {
+      "word": "la faute",
+      "en": "the mistake",
+      "es": "el error / la falta"
+    },
+    {
+      "word": "dommage",
+      "en": "a pity",
+      "es": "una lástima"
+    },
+    {
+      "word": "faire confiance",
+      "en": "to trust",
+      "es": "confiar"
+    },
+    {
+      "word": "triste",
+      "en": "sad",
+      "es": "triste"
+    },
+    {
+      "word": "bizarre",
+      "en": "strange",
+      "es": "raro"
+    },
+    {
+      "word": "la surprise",
+      "en": "the surprise",
+      "es": "la sorpresa"
+    },
+    {
+      "word": "énervant / énervante",
+      "en": "annoying",
+      "es": "irritante"
+    },
+    {
+      "word": "urgent / urgente",
+      "en": "urgent",
+      "es": "urgente"
+    },
+    {
+      "word": "se tromper",
+      "en": "to be mistaken",
+      "es": "equivocarse"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Je peux te demander quelque chose ? — Oui, bien sûr.",
+      "en": "Can I ask you something? — Yes, of course.",
+      "es": "¿Puedo preguntarte algo? — Sí, claro."
+    },
+    {
+      "phrase": "Quelle est ton actrice préférée ? — Juliette Binoche.",
+      "en": "Who is your favorite actress? — Juliette Binoche.",
+      "es": "¿Cuál es tu actriz favorita? — Juliette Binoche."
+    },
+    {
+      "phrase": "À vrai dire, ça m'est égal.",
+      "en": "To be honest, I don't mind.",
+      "es": "A decir verdad, me da igual."
+    },
+    {
+      "phrase": "Tu t'es bien amusé à Rome ? — Oui, mais je me suis plus amusé à Lisbonne.",
+      "en": "Did you have fun in Rome? — Yes, but I had more fun in Lisbon.",
+      "es": "¿Te divertiste en Roma? — Sí, pero me divertí más en Lisboa."
+    },
+    {
+      "phrase": "Tu as l'air triste. Que s'est-il passé ?",
+      "en": "You look sad. What happened?",
+      "es": "Pareces triste. ¿Qué ha pasado?"
+    },
+    {
+      "phrase": "C'est dommage que tu partes, tu es quelqu'un d'incroyable.",
+      "en": "It's a pity you're leaving, you're an incredible person.",
+      "es": "Es una lástima que te vayas, eres una persona increíble."
+    },
+    {
+      "phrase": "Merci ! — De rien. Tu peux toujours compter sur moi.",
+      "en": "Thanks! — You're welcome. You can always count on me.",
+      "es": "¡Gracias! — De nada. Siempre puedes contar conmigo."
+    },
+    {
+      "phrase": "Je suis à ta disposition. Que puis-je faire pour toi ?",
+      "en": "I am at your service. What can I do for you?",
+      "es": "Estoy a tu disposición. ¿Qué puedo hacer por ti?"
+    },
+    {
+      "phrase": "Désolé de vous déranger. — Il n'y a pas de problème.",
+      "en": "Sorry to bother you. — No problem.",
+      "es": "Perdone que le moleste. — No hay problema."
+    },
+    {
+      "phrase": "Quel dommage !",
+      "en": "What a pity!",
+      "es": "¡Qué lástima!"
+    },
+    {
+      "phrase": "J'ai une idée !",
+      "en": "I have an idea!",
+      "es": "¡Tengo una idea!"
+    },
+    {
+      "phrase": "Tu te trompes.",
+      "en": "You are mistaken.",
+      "es": "Te equivocas."
+    },
+    {
+      "phrase": "Je veux que tu le saches.",
+      "en": "I want you to know it.",
+      "es": "Quiero que lo sepas."
+    },
+    {
+      "phrase": "Appelle-moi demain !",
+      "en": "Call me tomorrow!",
+      "es": "¡Llámame mañana!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"C'est dommage que tu ___.\"",
+        "es": "Completa: «C'est dommage que tu ___.»"
+      },
+      "options": [
+        "partes",
+        "pars",
+        "partiras",
+        "es parti"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"C'est dommage que\" expresses a feeling → subjunctive.",
+        "es": "«C'est dommage que» expresa un sentimiento → subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je serais heureux si je ___ parler italien.\"",
+        "es": "Completa: «Je serais heureux si je ___ parler italien.»"
+      },
+      "options": [
+        "pouvais",
+        "pourrais",
+        "peux",
+        "pourrai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "After \"si\": imparfait (pouvais), never the conditional.",
+        "es": "Después de «si»: imperfecto (pouvais), nunca condicional."
+      }
+    },
+    {
+      "question": {
+        "en": "Which past form is correct?",
+        "es": "¿Qué forma del pasado es correcta?"
+      },
+      "options": [
+        "Je me suis bien amusé.",
+        "Je m'ai bien amusé.",
+        "Je me suis bien amuser.",
+        "Je suis me bien amusé."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Reflexive verbs use \"être\" in the passé composé.",
+        "es": "Los verbos pronominales usan «être» en el passé composé."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"Tu as l'air fatigué\" mean?",
+        "es": "¿Qué significa «Tu as l'air fatigué»?"
+      },
+      "options": {
+        "en": [
+          "You look tired.",
+          "You need air.",
+          "You are tired of the air.",
+          "You were tired."
+        ],
+        "es": [
+          "Pareces cansado.",
+          "Necesitas aire.",
+          "Estás cansado del aire.",
+          "Estabas cansado."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avoir l'air\" + adjective = to look / seem.",
+        "es": "«Avoir l'air» + adjetivo = parecer."
+      }
+    },
+    {
+      "question": {
+        "en": "Neutral way to say \"I don't mind\":",
+        "es": "Forma neutra de decir «me da igual»:"
+      },
+      "options": [
+        "Ça m'est égal.",
+        "Je m'en fous.",
+        "C'est horrible.",
+        "Tu te trompes."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Je m'en fous\" means the same but is vulgar.",
+        "es": "«Je m'en fous» significa lo mismo pero es vulgar."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il est urgent que j'___ l'anglais.\"",
+        "es": "Completa: «Il est urgent que j'___ l'anglais.»"
+      },
+      "options": [
+        "apprenne",
+        "apprends",
+        "apprendrai",
+        "apprenais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Il est urgent que\" + subjunctive (apprendre → que j'apprenne).",
+        "es": "«Il est urgent que» + subjuntivo (apprendre → que j'apprenne)."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"Nice to have met you!\"?",
+        "es": "¿Cómo se dice «¡Encantado de haberte conocido!»?"
+      },
+      "options": [
+        "Ravi de t'avoir rencontré !",
+        "Ravi de te rencontrer demain !",
+        "Ravi que je t'ai rencontré !",
+        "Ravi rencontrer toi !"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Past infinitive: avoir + past participle.",
+        "es": "Infinitivo compuesto: avoir + participio."
+      }
+    },
+    {
+      "question": {
+        "en": "What does \"J'ai hâte de te voir\" mean?",
+        "es": "¿Qué significa «J'ai hâte de te voir»?"
+      },
+      "options": {
+        "en": [
+          "I can't wait to see you.",
+          "I hate seeing you.",
+          "I saw you in a hurry.",
+          "I must see you."
+        ],
+        "es": [
+          "Tengo muchas ganas de verte.",
+          "Odio verte.",
+          "Te vi con prisa.",
+          "Tengo que verte."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Avoir hâte de\" = to look forward to (false friend with \"hate\"!).",
+        "es": "«Avoir hâte de» = estar deseando (¡falso amigo del inglés «hate»!)."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une rencontre à l'anniversaire",
+    "text": "« Bonsoir ! Comment tu t'appelles ? » « Je m'appelle Élise. Je suis la cousine de Mathieu, c'est son anniversaire. Et toi ? » « Moi, c'est Karim. Je suis un collègue de Mathieu. Il m'a gentiment invité. » « Super, tu es le bienvenu ! Qu'est-ce que tu fais dans la vie ? » « Je suis photographe pour un journal régional. Et toi ? » « Je suis professeure d'italien au lycée. » « C'est vrai ? J'ai toujours voulu apprendre l'italien, mais j'ai peur de faire des fautes. » « Ce n'est pas si difficile, tu sais. » « Je serais très heureux si je pouvais le parler. En fait, il est urgent que je l'apprenne : j'irai probablement à Rome l'année prochaine pour le travail. » « Alors, je peux te donner quelques cours. Fais-moi confiance, tu seras surpris ! » « Merci, c'est très gentil. Oh, il est tard, je dois partir. C'est dommage que la soirée finisse déjà ! Ravi de t'avoir rencontrée. » « Moi aussi. Appelle-moi ! »",
+    "en": "“Good evening! What's your name?” “My name is Élise. I'm Mathieu's cousin, it's his birthday. And you?” “I'm Karim. I'm a colleague of Mathieu's. He kindly invited me.” “Great, you're welcome here! What do you do for a living?” “I'm a photographer for a regional newspaper. And you?” “I teach Italian at a high school.” “Really? I've always wanted to learn Italian, but I'm afraid of making mistakes.” “It's not that difficult, you know.” “I would be very happy if I could speak it. Actually, it's urgent that I learn it: I'll probably go to Rome next year for work.” “Then I can give you a few lessons. Trust me, you'll be surprised!” “Thanks, that's very kind. Oh, it's late, I have to go. It's a pity the party is already ending! Nice to have met you.” “Me too. Call me!”",
+    "es": "«¡Buenas noches! ¿Cómo te llamas?» «Me llamo Élise. Soy la prima de Mathieu, es su cumpleaños. ¿Y tú?» «Yo soy Karim. Soy un compañero de trabajo de Mathieu. Me invitó muy amablemente.» «¡Genial, bienvenido! ¿A qué te dedicas?» «Soy fotógrafo de un periódico regional. ¿Y tú?» «Soy profesora de italiano en un instituto.» «¿De verdad? Siempre he querido aprender italiano, pero me da miedo cometer errores.» «No es tan difícil, ¿sabes?» «Sería muy feliz si pudiera hablarlo. De hecho, es urgente que lo aprenda: probablemente iré a Roma el año que viene por trabajo.» «Entonces puedo darte algunas clases. ¡Confía en mí, te sorprenderás!» «Gracias, es muy amable. Oh, es tarde, tengo que irme. ¡Qué lástima que la fiesta ya termine! Encantado de haberte conocido.» «Yo también. ¡Llámame!»",
+    "highlighted_words": [
+      "bienvenu",
+      "j'ai peur de",
+      "serais",
+      "si je pouvais",
+      "il est urgent que",
+      "irai",
+      "Fais-moi confiance",
+      "seras surpris",
+      "C'est dommage que",
+      "Ravi de t'avoir rencontrée"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'ai peur de faire des fautes",
+      "en": "I'm afraid of making mistakes",
+      "es": "Me da miedo cometer errores"
+    },
+    {
+      "sentence": "C'est dommage que tu partes",
+      "en": "It's a pity you're leaving",
+      "es": "Es una lástima que te vayas"
+    },
+    {
+      "sentence": "Tu peux compter sur moi",
+      "en": "You can count on me",
+      "es": "Puedes contar conmigo"
+    },
+    {
+      "sentence": "Je me suis bien amusé hier",
+      "en": "I had a lot of fun yesterday",
+      "es": "Me divertí mucho ayer"
+    },
+    {
+      "sentence": "Je serais content si tu venais",
+      "en": "I would be glad if you came",
+      "es": "Me alegraría si vinieras"
+    },
+    {
+      "sentence": "Je veux que tu le saches",
+      "en": "I want you to know it",
+      "es": "Quiero que lo sepas"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Quel dommage !",
+      "en": "What a pity!",
+      "es": "¡Qué lástima!"
+    },
+    {
+      "answer": "J'ai une idée",
+      "en": "I have an idea",
+      "es": "Tengo una idea"
+    },
+    {
+      "answer": "Que s'est-il passé ?",
+      "en": "What happened?",
+      "es": "¿Qué ha pasado?"
+    },
+    {
+      "answer": "Félicitations !",
+      "en": "Congratulations!",
+      "es": "¡Felicidades!"
+    },
+    {
+      "answer": "Tu te trompes",
+      "en": "You are mistaken",
+      "es": "Te equivocas"
+    },
+    {
+      "answer": "Appelle-moi demain",
+      "en": "Call me tomorrow",
+      "es": "Llámame mañana"
+    }
+  ]
+}

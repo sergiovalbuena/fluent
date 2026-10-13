@@ -1,0 +1,563 @@
+{
+  "lesson": 35,
+  "slug": "lecon-35",
+  "icon": "🏨",
+  "title": {
+    "fr": "À l'hôtel",
+    "es": "En el hotel",
+    "en": "At the hotel"
+  },
+  "source": {
+    "audio": "Lecons 35.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "imparfait (description)",
+      "example": "J'étais dans une grande chambre. Elle me souriait. Il pleuvait.",
+      "en": "Imperfect for descriptions",
+      "es": "Imperfecto para descripciones"
+    },
+    {
+      "structure": "être en train de à l'imparfait + passé composé",
+      "example": "J'étais en train de dormir quand tu m'as appelé.",
+      "en": "Interrupted action",
+      "es": "Acción interrumpida"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Le taxi s'arrêta devant l'entrée. Nous partîmes le lendemain.",
+      "en": "Literary past in a narrative",
+      "es": "Pasado literario en el relato"
+    },
+    {
+      "structure": "pendant que / lorsque",
+      "example": "Il a monté les valises pendant que je payais le taxi.",
+      "en": "Simultaneous actions",
+      "es": "Acciones simultáneas"
+    },
+    {
+      "structure": "être sur le point de",
+      "example": "Elle était sur le point de plonger quand elle a vu une méduse.",
+      "en": "\"About to\"",
+      "es": "«A punto de»"
+    },
+    {
+      "structure": "se demander",
+      "example": "Je me demandais où tu étais.",
+      "en": "\"To wonder\"",
+      "es": "«Preguntarse»"
+    },
+    {
+      "structure": "gérondif",
+      "example": "Il est tombé en essayant de rattraper son chapeau.",
+      "en": "Gerund",
+      "es": "Gerundio"
+    },
+    {
+      "structure": "content de + infinitif passé",
+      "example": "Je suis content d'avoir changé de chambre.",
+      "en": "Glad to have done",
+      "es": "«Contento de haber»"
+    },
+    {
+      "structure": "ne … personne d'autre que",
+      "example": "Il n'y avait personne d'autre que nous.",
+      "en": "\"Nobody but\"",
+      "es": "«Nadie más que»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il fut, ils arrivèrent, je fis) is the literary past: you will read it in novels, stories and newspapers, but in conversation people use the passé composé.",
+      "es": "El passé simple (il fut, ils arrivèrent, je fis) es el pasado literario: lo leerás en novelas, cuentos y periódicos, pero al hablar se usa el passé composé."
+    },
+    {
+      "en": "Hotel phrases: \"J'ai une réservation au nom de…\", \"Une chambre avec vue sur la mer\", \"À quelle heure est le petit-déjeuner ?\", \"Je voudrais régler la note\" (to pay the bill).",
+      "es": "En el hotel: «J'ai une réservation au nom de…», «Une chambre avec vue sur la mer», «À quelle heure est le petit-déjeuner ?», «Je voudrais régler la note» (pagar la cuenta)."
+    },
+    {
+      "en": "\"Le hall / la réception\" = lobby / front desk; \"le bagagiste / le groom\" = bellboy; \"le concierge\" = concierge.",
+      "es": "«Le hall / la réception» = vestíbulo / recepción; «le bagagiste / le groom» = botones; «le concierge» = conserje."
+    },
+    {
+      "en": "Imparfait = what was going on (background); passé composé / passé simple = what happened (events).",
+      "es": "Imperfecto = lo que estaba pasando (fondo); passé composé / passé simple = lo que ocurrió (hechos)."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'hôtel",
+      "en": "the hotel",
+      "es": "el hotel"
+    },
+    {
+      "word": "la réception",
+      "en": "the front desk",
+      "es": "la recepción"
+    },
+    {
+      "word": "le / la réceptionniste",
+      "en": "the receptionist",
+      "es": "el / la recepcionista"
+    },
+    {
+      "word": "le hall",
+      "en": "the lobby",
+      "es": "el vestíbulo"
+    },
+    {
+      "word": "le groom / le bagagiste",
+      "en": "the bellboy",
+      "es": "el botones"
+    },
+    {
+      "word": "le concierge",
+      "en": "the concierge",
+      "es": "el conserje"
+    },
+    {
+      "word": "la chambre",
+      "en": "the room",
+      "es": "la habitación"
+    },
+    {
+      "word": "la chambre simple / double",
+      "en": "single / double room",
+      "es": "la habitación individual / doble"
+    },
+    {
+      "word": "la clé",
+      "en": "the key",
+      "es": "la llave"
+    },
+    {
+      "word": "l'ascenseur",
+      "en": "the elevator",
+      "es": "el ascensor"
+    },
+    {
+      "word": "l'étage",
+      "en": "the floor",
+      "es": "el piso"
+    },
+    {
+      "word": "la sortie de secours",
+      "en": "the emergency exit",
+      "es": "la salida de emergencia"
+    },
+    {
+      "word": "la vue",
+      "en": "the view",
+      "es": "la vista"
+    },
+    {
+      "word": "la piscine",
+      "en": "the pool",
+      "es": "la piscina"
+    },
+    {
+      "word": "la balançoire",
+      "en": "the swing",
+      "es": "el columpio"
+    },
+    {
+      "word": "la note",
+      "en": "the bill (hotel)",
+      "es": "la cuenta"
+    },
+    {
+      "word": "s'enregistrer",
+      "en": "to check in",
+      "es": "registrarse"
+    },
+    {
+      "word": "régler",
+      "en": "to pay (a bill)",
+      "es": "pagar"
+    },
+    {
+      "word": "les espèces",
+      "en": "cash",
+      "es": "el efectivo"
+    },
+    {
+      "word": "la carte bancaire",
+      "en": "the bank card",
+      "es": "la tarjeta bancaria"
+    },
+    {
+      "word": "la monnaie",
+      "en": "change (coins)",
+      "es": "el cambio / las monedas"
+    },
+    {
+      "word": "réserver",
+      "en": "to book",
+      "es": "reservar"
+    },
+    {
+      "word": "épeler",
+      "en": "to spell",
+      "es": "deletrear"
+    },
+    {
+      "word": "accrocher",
+      "en": "to hang",
+      "es": "colgar"
+    },
+    {
+      "word": "se raser",
+      "en": "to shave",
+      "es": "afeitarse"
+    },
+    {
+      "word": "nager",
+      "en": "to swim",
+      "es": "nadar"
+    },
+    {
+      "word": "plonger",
+      "en": "to dive",
+      "es": "bucear / zambullirse"
+    },
+    {
+      "word": "rêver",
+      "en": "to dream",
+      "es": "soñar"
+    },
+    {
+      "word": "le cauchemar",
+      "en": "the nightmare",
+      "es": "la pesadilla"
+    },
+    {
+      "word": "sourire",
+      "en": "to smile",
+      "es": "sonreír"
+    },
+    {
+      "word": "regretter",
+      "en": "to regret",
+      "es": "lamentar"
+    },
+    {
+      "word": "cependant / néanmoins",
+      "en": "however / nevertheless",
+      "es": "sin embargo / no obstante"
+    },
+    {
+      "word": "sans souci",
+      "en": "without worry",
+      "es": "sin preocupaciones"
+    },
+    {
+      "word": "l'alarme incendie",
+      "en": "the fire alarm",
+      "es": "la alarma de incendios"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Il y avait des enfants qui jouaient dans le hall.",
+      "en": "There were children playing in the lobby.",
+      "es": "Había niños jugando en el vestíbulo."
+    },
+    {
+      "phrase": "Nous sommes en train d'attendre le groom.",
+      "en": "We are waiting for the bellboy.",
+      "es": "Estamos esperando al botones."
+    },
+    {
+      "phrase": "Ils étaient en train de s'enregistrer quand nous sommes arrivés.",
+      "en": "They were checking in when we arrived.",
+      "es": "Se estaban registrando cuando llegamos."
+    },
+    {
+      "phrase": "J'étais en train de dormir quand tu m'as appelé.",
+      "en": "I was sleeping when you called me.",
+      "es": "Estaba durmiendo cuando me llamaste."
+    },
+    {
+      "phrase": "Elle ferma la fenêtre parce qu'il pleuvait.",
+      "en": "She closed the window because it was raining.",
+      "es": "Cerró la ventana porque llovía."
+    },
+    {
+      "phrase": "Je me demandais où tu étais.",
+      "en": "I was wondering where you were.",
+      "es": "Me preguntaba dónde estabas."
+    },
+    {
+      "phrase": "La vue de l'autre chambre était horrible. Je suis content d'avoir changé.",
+      "en": "The view from the other room was horrible. I'm glad I changed.",
+      "es": "La vista desde la otra habitación era horrible. Me alegro de haber cambiado."
+    },
+    {
+      "phrase": "Elle a réservé des places pour l'opéra pendant que tu prenais ta douche.",
+      "en": "She booked tickets for the opera while you were taking a shower.",
+      "es": "Reservó entradas para la ópera mientras te duchabas."
+    },
+    {
+      "phrase": "Elle était sur le point de plonger quand elle a vu une méduse.",
+      "en": "She was about to dive when she saw a jellyfish.",
+      "es": "Estaba a punto de tirarse al agua cuando vio una medusa."
+    },
+    {
+      "phrase": "J'étais en train de rêver de ma mère quand tu m'as réveillée.",
+      "en": "I was dreaming about my mother when you woke me up.",
+      "es": "Estaba soñando con mi madre cuando me despertaste."
+    },
+    {
+      "phrase": "Cet ascenseur est très lent !",
+      "en": "This elevator is very slow!",
+      "es": "¡Este ascensor es muy lento!"
+    },
+    {
+      "phrase": "Il dormait dans sa chambre ? — Non, il était en train de dormir au bord de la piscine.",
+      "en": "Was he sleeping in his room? — No, he was sleeping by the pool.",
+      "es": "¿Dormía en su habitación? — No, estaba durmiendo junto a la piscina."
+    },
+    {
+      "phrase": "Y a-t-il une autre chambre libre ? — Oui, il en reste deux au deuxième étage.",
+      "en": "Is there another room available? — Yes, there are two left on the second floor.",
+      "es": "¿Hay otra habitación libre? — Sí, quedan dos en el segundo piso."
+    },
+    {
+      "phrase": "J'ai une réservation au nom de Durand. Je vous épelle : D-U-R-A-N-D.",
+      "en": "I have a reservation under the name Durand. Let me spell it: D-U-R-A-N-D.",
+      "es": "Tengo una reserva a nombre de Durand. Se lo deletreo: D-U-R-A-N-D."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"J'___ en train de lire quand le téléphone a sonné.\"",
+        "es": "Completa: «J'___ en train de lire quand le téléphone a sonné.»"
+      },
+      "options": [
+        "étais",
+        "ai été",
+        "suis",
+        "serai"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait for the interrupted action.",
+        "es": "Imperfecto para la acción interrumpida."
+      }
+    },
+    {
+      "question": {
+        "en": "Which verb describes the background?",
+        "es": "¿Qué verbo describe el fondo?"
+      },
+      "options": [
+        "Il pleuvait quand nous sommes arrivés.",
+        "Nous sommes arrivés à l'hôtel.",
+        "Le taxi s'arrêta.",
+        "Nous partîmes le lendemain."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait = background.",
+        "es": "Imperfecto = fondo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Nous partîmes le lendemain.\" Spoken equivalent?",
+        "es": "«Nous partîmes le lendemain.» ¿Equivalente oral?"
+      },
+      "options": [
+        "Nous sommes partis le lendemain.",
+        "Nous partions le lendemain.",
+        "Nous partirons le lendemain.",
+        "Nous partons le lendemain."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Passé simple → passé composé.",
+        "es": "Passé simple → passé composé."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Je suis content d'___ changé de chambre.\"",
+        "es": "Completa: «Je suis content d'___ changé de chambre.»"
+      },
+      "options": [
+        "avoir",
+        "être",
+        "ai",
+        "avais"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Past infinitive: avoir + past participle.",
+        "es": "Infinitivo compuesto: avoir + participio."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il a monté les valises ___ je payais le taxi.\"",
+        "es": "Completa: «Il a monté les valises ___ je payais le taxi.»"
+      },
+      "options": [
+        "pendant que",
+        "pendant",
+        "depuis que",
+        "avant"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pendant que\" + clause; \"pendant\" + noun.",
+        "es": "«Pendant que» + oración; «pendant» + sustantivo."
+      }
+    },
+    {
+      "question": {
+        "en": "Who carries your luggage at a hotel?",
+        "es": "¿Quién lleva tu equipaje en un hotel?"
+      },
+      "options": [
+        "le bagagiste",
+        "le réceptionniste",
+        "le concierge",
+        "le douanier"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Also called \"le groom\".",
+        "es": "También se llama «le groom»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you say \"to pay the bill\" at a hotel?",
+        "es": "¿Cómo se dice «pagar la cuenta» en un hotel?"
+      },
+      "options": [
+        "régler la note",
+        "payer la notice",
+        "faire la facture",
+        "donner le billet"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "La note = the hotel bill.",
+        "es": "La note = la cuenta del hotel."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il n'y avait personne d'autre que nous.\" Meaning?",
+        "es": "«Il n'y avait personne d'autre que nous.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "There was nobody but us.",
+          "There were other people with us.",
+          "Nobody saw us.",
+          "We were not there."
+        ],
+        "es": [
+          "No había nadie más que nosotros.",
+          "Había otras personas con nosotros.",
+          "Nadie nos vio.",
+          "No estábamos allí."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "\"Ne … personne d'autre que\" = nobody except.",
+        "es": "«Ne … personne d'autre que» = nadie más que."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une nuit agitée",
+    "text": "Il pleuvait encore quand nous sommes arrivés à l'hôtel, à Marseille. Le taxi s'arrêta devant l'entrée, et le bagagiste nous ouvrit la portière. Il a monté nos valises pendant que je payais le chauffeur. À la réception, Karine a épelé notre nom et a demandé une chambre avec vue sur la mer. Le réceptionniste nous a donné la clé de la chambre 512, au cinquième étage. Quand j'ai ouvert les rideaux, la vue sur le port était magnifique. Le soir, le ciel se dégagea et nous regardâmes les étoiles depuis le balcon. Vers trois heures du matin, nous étions en train de dormir profondément quand l'alarme incendie a sonné. Nous étions sur le point de prendre l'ascenseur quand Karine a crié : « Non, l'escalier ! » En moins de deux minutes, nous étions dans le hall… en pyjama. Cependant, il n'y avait personne d'autre que nous ! Le réceptionniste, très calme, nous a expliqué que c'était une erreur du système et que cela arrivait de temps en temps. Je me demandais pourquoi les autres clients n'étaient pas descendus. Nous rîmes beaucoup, et nous partîmes le lendemain avec une belle histoire à raconter.",
+    "en": "It was still raining when we arrived at the hotel in Marseille. The taxi stopped in front of the entrance, and the bellboy opened the door for us. He carried our suitcases up while I paid the driver. At the front desk, Karine spelled our name and asked for a room with a sea view. The receptionist gave us the key to room 512, on the fifth floor. When I opened the curtains, the view over the harbor was magnificent. In the evening, the sky cleared and we watched the stars from the balcony. Around three in the morning, we were fast asleep when the fire alarm went off. We were about to take the elevator when Karine shouted: “No, the stairs!” In less than two minutes, we were in the lobby… in our pajamas. However, there was nobody but us! The receptionist, very calm, explained that it was a system error and that it happened from time to time. I wondered why the other guests hadn't come down. We laughed a lot, and we left the next day with a great story to tell.",
+    "es": "Todavía llovía cuando llegamos al hotel, en Marsella. El taxi se detuvo delante de la entrada y el botones nos abrió la puerta. Subió nuestras maletas mientras yo pagaba al taxista. En recepción, Karine deletreó nuestro apellido y pidió una habitación con vistas al mar. El recepcionista nos dio la llave de la habitación 512, en el quinto piso. Cuando abrí las cortinas, la vista del puerto era magnífica. Por la noche, el cielo se despejó y miramos las estrellas desde el balcón. Hacia las tres de la madrugada, estábamos profundamente dormidos cuando sonó la alarma de incendios. Estábamos a punto de tomar el ascensor cuando Karine gritó: «¡No, la escalera!». En menos de dos minutos estábamos en el vestíbulo… en pijama. Sin embargo, ¡no había nadie más que nosotros! El recepcionista, muy tranquilo, nos explicó que era un fallo del sistema y que pasaba de vez en cuando. Yo me preguntaba por qué los demás clientes no habían bajado. Nos reímos mucho y nos fuimos al día siguiente con una buena historia que contar.",
+    "highlighted_words": [
+      "Il pleuvait encore",
+      "s'arrêta",
+      "ouvrit",
+      "pendant que je payais",
+      "a épelé",
+      "se dégagea",
+      "nous étions en train de dormir",
+      "Nous étions sur le point de",
+      "Cependant",
+      "personne d'autre que nous",
+      "Je me demandais",
+      "rîmes",
+      "partîmes"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "J'étais en train de dormir",
+      "en": "I was sleeping",
+      "es": "Estaba durmiendo"
+    },
+    {
+      "sentence": "Il pleuvait quand nous sommes arrivés",
+      "en": "It was raining when we arrived",
+      "es": "Llovía cuando llegamos"
+    },
+    {
+      "sentence": "Je me demandais où tu étais",
+      "en": "I was wondering where you were",
+      "es": "Me preguntaba dónde estabas"
+    },
+    {
+      "sentence": "Je voudrais une chambre avec vue",
+      "en": "I would like a room with a view",
+      "es": "Quisiera una habitación con vistas"
+    },
+    {
+      "sentence": "Il n'y avait personne d'autre",
+      "en": "There was nobody else",
+      "es": "No había nadie más"
+    },
+    {
+      "sentence": "Cet ascenseur est très lent",
+      "en": "This elevator is very slow",
+      "es": "Este ascensor es muy lento"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "J'ai une réservation",
+      "en": "I have a reservation",
+      "es": "Tengo una reserva"
+    },
+    {
+      "answer": "À quel étage est la chambre ?",
+      "en": "What floor is the room on?",
+      "es": "¿En qué piso está la habitación?"
+    },
+    {
+      "answer": "Je voudrais régler la note",
+      "en": "I would like to pay the bill",
+      "es": "Quisiera pagar la cuenta"
+    },
+    {
+      "answer": "La vue est magnifique",
+      "en": "The view is magnificent",
+      "es": "La vista es magnífica"
+    },
+    {
+      "answer": "Il lisait un livre",
+      "en": "He was reading a book",
+      "es": "Leía un libro"
+    },
+    {
+      "answer": "Elle souriait",
+      "en": "She was smiling",
+      "es": "Sonreía"
+    }
+  ]
+}

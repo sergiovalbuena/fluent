@@ -1,0 +1,543 @@
+{
+  "lesson": 52,
+  "slug": "lecon-52",
+  "icon": "🚂",
+  "title": {
+    "fr": "Voyager en train",
+    "es": "Viajar en tren",
+    "en": "Traveling by train"
+  },
+  "source": {
+    "audio": "Lecons 52.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "adjectifs démonstratifs",
+      "example": "Cette dame, ces femmes, cet enfant, ce train",
+      "en": "Demonstrative adjectives",
+      "es": "Adjetivos demostrativos"
+    },
+    {
+      "structure": "démonstratif + relatif",
+      "example": "Cette femme qui est au bureau des objets trouvés est ma belle-sœur. / Ce n'est pas celui où elles doivent voyager.",
+      "en": "Demonstratives with relative clauses",
+      "es": "Demostrativos con relativas"
+    },
+    {
+      "structure": "superlatif",
+      "example": "Le train est le moyen de transport le plus courant en Europe.",
+      "en": "Superlatives",
+      "es": "Superlativos"
+    },
+    {
+      "structure": "futur",
+      "example": "Le train partira dans dix minutes. / Je le ferai quand le bureau sera vide.",
+      "en": "Simple future",
+      "es": "Futuro simple"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Le train partit tard et s'arrêta au milieu de la nuit.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    },
+    {
+      "structure": "plus-que-parfait + accord",
+      "example": "C'était la femme que j'avais remarquée sur le quai.",
+      "en": "Past perfect with agreement",
+      "es": "Pluscuamperfecto con concordancia"
+    },
+    {
+      "structure": "afin que + subjonctif",
+      "example": "Nous avons distribué des couvertures afin que les gens se reposent.",
+      "en": "\"So that\" + subjunctive",
+      "es": "«Para que» + subjuntivo"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il commença, ils eurent peur) is the literary past used in written stories; in conversation, use the passé composé.",
+      "es": "El passé simple (il commença, ils eurent peur) es el pasado literario de los relatos escritos; al hablar se usa el passé composé."
+    },
+    {
+      "en": "Train words: \"le quai\" (platform), \"la voie\" (track), \"le wagon / la voiture\" (car), \"la couchette\" (berth), \"le TGV\" (high-speed train), \"composter\" (to validate a paper ticket).",
+      "es": "En el tren: «le quai» (andén), «la voie» (vía), «le wagon / la voiture» (vagón), «la couchette» (litera), «le TGV» (tren de alta velocidad), «composter» (validar un billete de papel)."
+    },
+    {
+      "en": "\"Cet\" is used before a masculine noun starting with a vowel or mute h: \"cet enfant\", \"cet homme\".",
+      "es": "«Cet» se usa delante de un sustantivo masculino que empieza por vocal o h muda: «cet enfant», «cet homme»."
+    },
+    {
+      "en": "\"Les objets trouvés\" = lost and found; \"la consigne\" = left-luggage office.",
+      "es": "«Les objets trouvés» = objetos perdidos; «la consigne» = consigna."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le train",
+      "en": "the train",
+      "es": "el tren"
+    },
+    {
+      "word": "la gare",
+      "en": "the train station",
+      "es": "la estación"
+    },
+    {
+      "word": "le quai",
+      "en": "the platform",
+      "es": "el andén"
+    },
+    {
+      "word": "la voie (ferrée)",
+      "en": "the track",
+      "es": "la vía"
+    },
+    {
+      "word": "le wagon",
+      "en": "the car / coach",
+      "es": "el vagón"
+    },
+    {
+      "word": "le wagon-lit",
+      "en": "the sleeper car",
+      "es": "el coche cama"
+    },
+    {
+      "word": "la couchette",
+      "en": "the berth",
+      "es": "la litera"
+    },
+    {
+      "word": "le compartiment",
+      "en": "the compartment",
+      "es": "el compartimento"
+    },
+    {
+      "word": "le wagon-restaurant",
+      "en": "the dining car",
+      "es": "el vagón restaurante"
+    },
+    {
+      "word": "le contrôleur",
+      "en": "the ticket inspector",
+      "es": "el revisor"
+    },
+    {
+      "word": "le conducteur",
+      "en": "the train driver",
+      "es": "el maquinista"
+    },
+    {
+      "word": "le panneau d'affichage",
+      "en": "the departures board",
+      "es": "el panel de información"
+    },
+    {
+      "word": "le retard",
+      "en": "the delay",
+      "es": "el retraso"
+    },
+    {
+      "word": "la correspondance",
+      "en": "the connection",
+      "es": "el transbordo"
+    },
+    {
+      "word": "le chariot à bagages",
+      "en": "the luggage cart",
+      "es": "el carrito de equipaje"
+    },
+    {
+      "word": "les objets trouvés",
+      "en": "lost and found",
+      "es": "objetos perdidos"
+    },
+    {
+      "word": "la consigne",
+      "en": "left luggage",
+      "es": "la consigna"
+    },
+    {
+      "word": "monter dans",
+      "en": "to get on",
+      "es": "subir a"
+    },
+    {
+      "word": "descendre de",
+      "en": "to get off",
+      "es": "bajar de"
+    },
+    {
+      "word": "dérailler",
+      "en": "to derail",
+      "es": "descarrilar"
+    },
+    {
+      "word": "se renverser",
+      "en": "to overturn",
+      "es": "volcar"
+    },
+    {
+      "word": "se détacher",
+      "en": "to come loose",
+      "es": "soltarse"
+    },
+    {
+      "word": "égaré / égarée",
+      "en": "lost",
+      "es": "extraviado / extraviada"
+    },
+    {
+      "word": "l'obscurité",
+      "en": "darkness",
+      "es": "la oscuridad"
+    },
+    {
+      "word": "le courage",
+      "en": "courage",
+      "es": "el valor"
+    },
+    {
+      "word": "mal à l'aise",
+      "en": "uncomfortable",
+      "es": "incómodo"
+    },
+    {
+      "word": "la dame",
+      "en": "the lady",
+      "es": "la señora"
+    },
+    {
+      "word": "l'enfant",
+      "en": "the child",
+      "es": "el niño"
+    },
+    {
+      "word": "le pire",
+      "en": "the worst",
+      "es": "lo peor"
+    },
+    {
+      "word": "cacher",
+      "en": "to hide",
+      "es": "esconder"
+    },
+    {
+      "word": "blessé / blessée",
+      "en": "injured",
+      "es": "herido / herida"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Il y a des vaches sur la voie ferrée !",
+      "en": "There are cows on the railway track!",
+      "es": "¡Hay vacas en la vía del tren!"
+    },
+    {
+      "phrase": "Les couchettes sont toutes réservées.",
+      "en": "The berths are all booked.",
+      "es": "Las literas están todas reservadas."
+    },
+    {
+      "phrase": "Elle était sur le quai avec ses trois chiens.",
+      "en": "She was on the platform with her three dogs.",
+      "es": "Estaba en el andén con sus tres perros."
+    },
+    {
+      "phrase": "Cette femme qui est aux objets trouvés est ma belle-sœur.",
+      "en": "That woman at the lost and found is my sister-in-law.",
+      "es": "Esa mujer que está en objetos perdidos es mi cuñada."
+    },
+    {
+      "phrase": "Ces femmes montent dans un wagon qui n'est pas celui où elles doivent voyager.",
+      "en": "Those women are getting on a car that isn't the one they're supposed to travel in.",
+      "es": "Esas mujeres se suben a un vagón que no es en el que deben viajar."
+    },
+    {
+      "phrase": "Les dames d'abord.",
+      "en": "Ladies first.",
+      "es": "Las damas primero."
+    },
+    {
+      "phrase": "Cette dame dort sur ma couchette !",
+      "en": "That lady is sleeping in my berth!",
+      "es": "¡Esa señora está durmiendo en mi litera!"
+    },
+    {
+      "phrase": "Cet enfant me rend fou !",
+      "en": "This child is driving me crazy!",
+      "es": "¡Este niño me está volviendo loco!"
+    },
+    {
+      "phrase": "Je veux les deux places côté fenêtre.",
+      "en": "I want the two window seats.",
+      "es": "Quiero los dos asientos de ventanilla."
+    },
+    {
+      "phrase": "Le train partira dans dix minutes.",
+      "en": "The train will leave in ten minutes.",
+      "es": "El tren saldrá dentro de diez minutos."
+    },
+    {
+      "phrase": "Le train est le moyen de transport le plus courant en Europe.",
+      "en": "The train is the most common means of transport in Europe.",
+      "es": "El tren es el medio de transporte más común en Europa."
+    },
+    {
+      "phrase": "Le train que tu attends est en retard.",
+      "en": "The train you are waiting for is late.",
+      "es": "El tren que esperas lleva retraso."
+    },
+    {
+      "phrase": "Tu as regardé le panneau d'affichage ? — Non, il m'a dit qu'il arrivait à dix heures.",
+      "en": "Did you check the board? — No, he told me he was arriving at ten.",
+      "es": "¿Has mirado el panel? — No, me dijo que llegaba a las diez."
+    },
+    {
+      "phrase": "Où est ton bagage ? — Je ne sais pas, je le demanderai à la consigne quand il n'y aura plus personne.",
+      "en": "Where's your luggage? — I don't know, I'll ask at left luggage when there's no one left.",
+      "es": "¿Dónde está tu equipaje? — No lo sé, lo preguntaré en la consigna cuando no haya nadie."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"___ enfant est très sage.\"",
+        "es": "Completa: «___ enfant est très sage.»"
+      },
+      "options": [
+        "Cet",
+        "Ce",
+        "Cette",
+        "Ces"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Masculine + vowel: cet.",
+        "es": "Masculino + vocal: cet."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"___ dames attendent le train.\"",
+        "es": "Completa: «___ dames attendent le train.»"
+      },
+      "options": [
+        "Ces",
+        "Cettes",
+        "Ce",
+        "Cet"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plural: ces.",
+        "es": "Plural: ces."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you wait for the train?",
+        "es": "¿Dónde esperas el tren?"
+      },
+      "options": [
+        "sur le quai",
+        "sur la voie",
+        "dans la consigne",
+        "au wagon-lit"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Le quai = platform.",
+        "es": "Le quai = andén."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"C'est la femme que j'avais ___ sur le quai.\"",
+        "es": "Completa: «C'est la femme que j'avais ___ sur le quai.»"
+      },
+      "options": [
+        "remarquée",
+        "remarqué",
+        "remarqués",
+        "remarquer"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Agreement with \"que\" (la femme) before avoir.",
+        "es": "Concordancia con «que» (la femme) antes de avoir."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Le TGV est le train ___ rapide de France.\"",
+        "es": "Completa: «Le TGV est le train ___ rapide de France.»"
+      },
+      "options": [
+        "le plus",
+        "plus",
+        "très",
+        "la plus"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Superlative: le plus + adjective + de.",
+        "es": "Superlativo: le plus + adjetivo + de."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Les objets trouvés\" is…",
+        "es": "«Les objets trouvés» es…"
+      },
+      "options": {
+        "en": [
+          "lost and found",
+          "a shop",
+          "the ticket office",
+          "the waiting room"
+        ],
+        "es": [
+          "objetos perdidos",
+          "una tienda",
+          "la taquilla",
+          "la sala de espera"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Where you look for lost items.",
+        "es": "Donde buscas cosas perdidas."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Il a distribué des couvertures afin que les gens ___.\"",
+        "es": "Completa: «Il a distribué des couvertures afin que les gens ___.»"
+      },
+      "options": [
+        "se reposent",
+        "se reposent-ils",
+        "se reposeront",
+        "se reposaient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Afin que\" + subjunctive.",
+        "es": "«Afin que» + subjuntivo."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le train partit tard.\" Which tense?",
+        "es": "«Le train partit tard.» ¿Qué tiempo?"
+      },
+      "options": {
+        "en": [
+          "passé simple",
+          "présent",
+          "imparfait",
+          "futur"
+        ],
+        "es": [
+          "passé simple",
+          "presente",
+          "imperfecto",
+          "futuro"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Spoken: \"est parti\".",
+        "es": "Oral: «est parti»."
+      }
+    }
+  ],
+  "story": {
+    "title": "Une nuit dans le train",
+    "text": "En décembre, Antoine prit le train de nuit de Paris à Nice pour passer Noël chez ses parents. Sur le quai, il avait remarqué une jeune femme aux cheveux roux qui portait un énorme sac à dos et un violon. Le train partit tard le soir. Vers deux heures du matin, il s'arrêta brusquement au milieu de nulle part : un arbre était tombé sur la voie à cause de la tempête. Les lumières s'éteignirent. Dans l'obscurité, certains passagers avaient peur et imaginaient le pire. Antoine sortit dans le couloir avec sa lampe de poche. C'est là qu'il retrouva la jeune femme qu'il avait remarquée sur le quai. Elle s'appelait Léna et elle était musicienne. Ensemble, ils aidèrent le contrôleur à distribuer des couvertures afin que les familles se reposent. Puis Léna sortit son violon et joua quelques chansons de Noël. Les enfants arrêtèrent de pleurer et tout le monde se mit à chanter. Le train repartit à l'aube, avec six heures de retard. En arrivant à Nice, Léna donna son numéro à Antoine. « C'est le meilleur retard de ma vie », pensa-t-il.",
+    "en": "In December, Antoine took the night train from Paris to Nice to spend Christmas with his parents. On the platform, he had noticed a red-haired young woman carrying a huge backpack and a violin. The train left late in the evening. Around two in the morning, it stopped suddenly in the middle of nowhere: a tree had fallen on the track because of the storm. The lights went out. In the dark, some passengers were scared and imagined the worst. Antoine went out into the corridor with his flashlight. That's where he found the young woman he had noticed on the platform. Her name was Léna and she was a musician. Together, they helped the ticket inspector hand out blankets so that families could rest. Then Léna took out her violin and played a few Christmas songs. The children stopped crying and everyone started singing. The train set off again at dawn, six hours late. When they arrived in Nice, Léna gave Antoine her number. “It's the best delay of my life,” he thought.",
+    "es": "En diciembre, Antoine tomó el tren nocturno de París a Niza para pasar la Navidad con sus padres. En el andén se había fijado en una joven pelirroja que llevaba una mochila enorme y un violín. El tren salió tarde por la noche. Hacia las dos de la madrugada se detuvo de golpe en medio de la nada: había caído un árbol en la vía por la tormenta. Se apagaron las luces. En la oscuridad, algunos pasajeros tenían miedo y se imaginaban lo peor. Antoine salió al pasillo con su linterna. Fue allí donde se encontró con la joven en la que se había fijado en el andén. Se llamaba Léna y era música. Juntos ayudaron al revisor a repartir mantas para que las familias pudieran descansar. Luego Léna sacó su violín y tocó unas canciones de Navidad. Los niños dejaron de llorar y todo el mundo se puso a cantar. El tren volvió a arrancar al amanecer, con seis horas de retraso. Al llegar a Niza, Léna le dio su número a Antoine. «Es el mejor retraso de mi vida», pensó.",
+    "highlighted_words": [
+      "prit le train",
+      "quai",
+      "avait remarqué",
+      "partit",
+      "s'arrêta",
+      "était tombé sur la voie",
+      "s'éteignirent",
+      "le pire",
+      "qu'il avait remarquée",
+      "aidèrent le contrôleur",
+      "afin que les familles se reposent",
+      "retard"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Le train partira dans dix minutes",
+      "en": "The train will leave in ten minutes",
+      "es": "El tren saldrá dentro de diez minutos"
+    },
+    {
+      "sentence": "Cette dame est sur ma couchette",
+      "en": "That lady is in my berth",
+      "es": "Esa señora está en mi litera"
+    },
+    {
+      "sentence": "Le train est en retard",
+      "en": "The train is late",
+      "es": "El tren lleva retraso"
+    },
+    {
+      "sentence": "On se retrouve sur le quai",
+      "en": "Let's meet on the platform",
+      "es": "Nos vemos en el andén"
+    },
+    {
+      "sentence": "Cet enfant a perdu sa mère",
+      "en": "This child has lost his mother",
+      "es": "Este niño ha perdido a su madre"
+    },
+    {
+      "sentence": "Je voudrais une place côté fenêtre",
+      "en": "I would like a window seat",
+      "es": "Quisiera un asiento de ventanilla"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "De quel quai part le train ?",
+      "en": "Which platform does the train leave from?",
+      "es": "¿De qué andén sale el tren?"
+    },
+    {
+      "answer": "Un billet pour Nice, s'il vous plaît",
+      "en": "A ticket to Nice, please",
+      "es": "Un billete para Niza, por favor"
+    },
+    {
+      "answer": "Le train a deux heures de retard",
+      "en": "The train is two hours late",
+      "es": "El tren lleva dos horas de retraso"
+    },
+    {
+      "answer": "J'ai perdu ma valise",
+      "en": "I lost my suitcase",
+      "es": "He perdido mi maleta"
+    },
+    {
+      "answer": "Ce train va directement à Paris",
+      "en": "This train goes directly to Paris",
+      "es": "Este tren va directo a París"
+    },
+    {
+      "answer": "J'ai mal dormi",
+      "en": "I slept badly",
+      "es": "He dormido mal"
+    }
+  ]
+}

@@ -1,0 +1,536 @@
+{
+  "lesson": 38,
+  "slug": "lecon-38",
+  "icon": "🍽️",
+  "title": {
+    "fr": "Au restaurant",
+    "es": "En el restaurante",
+    "en": "At the restaurant"
+  },
+  "source": {
+    "audio": "Lecons 38.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "plus-que-parfait",
+      "example": "Il avait réparé la climatisation et tu l'as cassée de nouveau. / Nous étions déjà venus.",
+      "en": "Past perfect",
+      "es": "Pluscuamperfecto"
+    },
+    {
+      "structure": "conditionnel passé",
+      "example": "Le déjeuner aurait pu être meilleur.",
+      "en": "Past conditional (would have)",
+      "es": "Condicional compuesto (habría)"
+    },
+    {
+      "structure": "si + plus-que-parfait → conditionnel passé",
+      "example": "Si tu avais fait cuire la viande plus longtemps, elle aurait été meilleure.",
+      "en": "Unreal past condition",
+      "es": "Condición irreal en el pasado"
+    },
+    {
+      "structure": "passé simple (récit)",
+      "example": "Le serveur tendit l'addition. Heureusement, la bouteille n'explosa pas.",
+      "en": "Literary past",
+      "es": "Pasado literario"
+    },
+    {
+      "structure": "bien que + subjonctif passé",
+      "example": "Bien que le maître d'hôtel nous ait regardés de haut, nous l'avons suivi.",
+      "en": "\"Although\" + past subjunctive",
+      "es": "«Aunque» + subjuntivo pasado"
+    },
+    {
+      "structure": "jusqu'à ce que + subjonctif",
+      "example": "Elle n'avait rien mangé jusqu'à ce que tu la nourrisses.",
+      "en": "\"Until\" + subjunctive",
+      "es": "«Hasta que» + subjuntivo"
+    },
+    {
+      "structure": "discours indirect au passé",
+      "example": "Il nous a demandé si nous avions réservé.",
+      "en": "Reported question (past perfect)",
+      "es": "Pregunta indirecta (pluscuamperfecto)"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Unreal past: si + plus-que-parfait, then conditionnel passé: \"Si j'avais su, je serais venu.\" Never the conditional after \"si\".",
+      "es": "Pasado irreal: si + plus-que-parfait y luego conditionnel passé: «Si j'avais su, je serais venu.» Nunca condicional después de «si»."
+    },
+    {
+      "en": "In a French restaurant: \"la carte\" (the menu), \"le menu\" (set menu), \"l'entrée\" (starter), \"le plat\" (main course), \"l'addition, s'il vous plaît\" (the bill).",
+      "es": "En un restaurante francés: «la carte» (la carta), «le menu» (menú del día), «l'entrée» (entrante), «le plat» (plato principal), «l'addition, s'il vous plaît» (la cuenta)."
+    },
+    {
+      "en": "Steak cooking: \"bleu\" (very rare), \"saignant\" (rare), \"à point\" (medium), \"bien cuit\" (well done).",
+      "es": "Punto de la carne: «bleu» (vuelta y vuelta), «saignant» (poco hecha), «à point» (en su punto), «bien cuit» (muy hecha)."
+    },
+    {
+      "en": "Tips are included in France (\"service compris\"); leaving a little extra is optional.",
+      "es": "En Francia el servicio está incluido («service compris»); dejar algo más es opcional."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "le restaurant",
+      "en": "the restaurant",
+      "es": "el restaurante"
+    },
+    {
+      "word": "la carte",
+      "en": "the menu",
+      "es": "la carta"
+    },
+    {
+      "word": "le menu",
+      "en": "the set menu",
+      "es": "el menú"
+    },
+    {
+      "word": "l'entrée",
+      "en": "the starter",
+      "es": "el entrante"
+    },
+    {
+      "word": "le plat principal",
+      "en": "the main course",
+      "es": "el plato principal"
+    },
+    {
+      "word": "le dessert",
+      "en": "dessert",
+      "es": "el postre"
+    },
+    {
+      "word": "l'apéritif",
+      "en": "the aperitif",
+      "es": "el aperitivo"
+    },
+    {
+      "word": "le serveur / la serveuse",
+      "en": "the waiter / waitress",
+      "es": "el camarero / la camarera"
+    },
+    {
+      "word": "le maître d'hôtel",
+      "en": "the head waiter",
+      "es": "el jefe de sala"
+    },
+    {
+      "word": "l'addition",
+      "en": "the bill",
+      "es": "la cuenta"
+    },
+    {
+      "word": "le pourboire",
+      "en": "the tip",
+      "es": "la propina"
+    },
+    {
+      "word": "réserver une table",
+      "en": "to book a table",
+      "es": "reservar una mesa"
+    },
+    {
+      "word": "commander",
+      "en": "to order",
+      "es": "pedir"
+    },
+    {
+      "word": "servir",
+      "en": "to serve",
+      "es": "servir"
+    },
+    {
+      "word": "goûter",
+      "en": "to taste",
+      "es": "probar"
+    },
+    {
+      "word": "mélanger",
+      "en": "to mix",
+      "es": "mezclar"
+    },
+    {
+      "word": "couper",
+      "en": "to cut",
+      "es": "cortar"
+    },
+    {
+      "word": "brûler",
+      "en": "to burn",
+      "es": "quemar"
+    },
+    {
+      "word": "mordre",
+      "en": "to bite",
+      "es": "morder"
+    },
+    {
+      "word": "le plateau",
+      "en": "the tray",
+      "es": "la bandeja"
+    },
+    {
+      "word": "les restes",
+      "en": "leftovers",
+      "es": "las sobras"
+    },
+    {
+      "word": "avoir faim",
+      "en": "to be hungry",
+      "es": "tener hambre"
+    },
+    {
+      "word": "avoir soif",
+      "en": "to be thirsty",
+      "es": "tener sed"
+    },
+    {
+      "word": "le régime",
+      "en": "the diet",
+      "es": "la dieta"
+    },
+    {
+      "word": "saignant / à point / bien cuit",
+      "en": "rare / medium / well done",
+      "es": "poco hecho / en su punto / muy hecho"
+    },
+    {
+      "word": "délicieux / délicieuse",
+      "en": "delicious",
+      "es": "delicioso / deliciosa"
+    },
+    {
+      "word": "la climatisation",
+      "en": "air conditioning",
+      "es": "el aire acondicionado"
+    },
+    {
+      "word": "de retour",
+      "en": "back",
+      "es": "de vuelta"
+    },
+    {
+      "word": "beurrer",
+      "en": "to butter",
+      "es": "untar con mantequilla"
+    },
+    {
+      "word": "cher / chère",
+      "en": "expensive",
+      "es": "caro / cara"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Il avait réparé la climatisation et tu l'as cassée de nouveau !",
+      "en": "He had fixed the air conditioning and you broke it again!",
+      "es": "¡Había arreglado el aire acondicionado y lo has vuelto a romper!"
+    },
+    {
+      "phrase": "Le serveur m'avait déjà servi un dessert.",
+      "en": "The waiter had already served me a dessert.",
+      "es": "El camarero ya me había servido un postre."
+    },
+    {
+      "phrase": "Nous étions déjà venus dans ce restaurant.",
+      "en": "We had already been to this restaurant.",
+      "es": "Ya habíamos venido a este restaurante."
+    },
+    {
+      "phrase": "Le déjeuner aurait été meilleur si tu avais fait cuire la viande plus longtemps.",
+      "en": "Lunch would have been better if you had cooked the meat longer.",
+      "es": "El almuerzo habría estado mejor si hubieras cocinado la carne más tiempo."
+    },
+    {
+      "phrase": "Nous t'avions laissé du vin, mais il l'a bu.",
+      "en": "We had left you some wine, but he drank it.",
+      "es": "Te habíamos dejado vino, pero se lo bebió."
+    },
+    {
+      "phrase": "J'avais coupé la viande pour mes enfants.",
+      "en": "I had cut the meat for my children.",
+      "es": "Les había cortado la carne a mis hijos."
+    },
+    {
+      "phrase": "Heureusement, la bouteille n'explosa pas.",
+      "en": "Luckily, the bottle didn't explode.",
+      "es": "Por suerte, la botella no explotó."
+    },
+    {
+      "phrase": "Si tu les avais servis avant, ils auraient déjà fini.",
+      "en": "If you had served them earlier, they would already have finished.",
+      "es": "Si los hubieras servido antes, ya habrían terminado."
+    },
+    {
+      "phrase": "Le poulet aurait brûlé si je n'avais pas éteint le four.",
+      "en": "The chicken would have burned if I hadn't turned off the oven.",
+      "es": "El pollo se habría quemado si no hubiera apagado el horno."
+    },
+    {
+      "phrase": "Elle avait mangé avant de venir ? — Non, elle n'avait pas voulu.",
+      "en": "Had she eaten before coming? — No, she hadn't wanted to.",
+      "es": "¿Había comido antes de venir? — No, no había querido."
+    },
+    {
+      "phrase": "Ils connaissaient ce restaurant ? — Pas jusqu'à ce que je les y emmène.",
+      "en": "Did they know this restaurant? — Not until I took them there.",
+      "es": "¿Conocían este restaurante? — No hasta que los llevé."
+    },
+    {
+      "phrase": "Où aviez-vous laissé les restes ? — Sur la table, mais quelqu'un les a mangés.",
+      "en": "Where had you left the leftovers? — On the table, but someone ate them.",
+      "es": "¿Dónde habían dejado las sobras? — En la mesa, pero alguien se las comió."
+    },
+    {
+      "phrase": "Je voudrais le steak à point, s'il vous plaît.",
+      "en": "I would like the steak medium, please.",
+      "es": "Quisiera el filete en su punto, por favor."
+    },
+    {
+      "phrase": "L'addition, s'il vous plaît !",
+      "en": "The bill, please!",
+      "es": "¡La cuenta, por favor!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "Complete: \"Quand je suis arrivé, ils ___ déjà mangé.\"",
+        "es": "Completa: «Quand je suis arrivé, ils ___ déjà mangé.»"
+      },
+      "options": [
+        "avaient",
+        "ont",
+        "auront",
+        "auraient"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Plus-que-parfait: action before another past action.",
+        "es": "Pluscuamperfecto: acción anterior a otra pasada."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Si tu avais réservé, nous ___ une table.\"",
+        "es": "Completa: «Si tu avais réservé, nous ___ une table.»"
+      },
+      "options": [
+        "aurions eu",
+        "avions eu",
+        "aurons eu",
+        "aurions"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Si + plus-que-parfait → conditionnel passé.",
+        "es": "Si + plus-que-parfait → conditionnel passé."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence is correct?",
+        "es": "¿Qué frase es correcta?"
+      },
+      "options": [
+        "Si j'avais su, je serais venu.",
+        "Si j'aurais su, je serais venu.",
+        "Si je savais, je serais venu.",
+        "Si j'avais su, je viendrai."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Never the conditional after \"si\".",
+        "es": "Nunca condicional después de «si»."
+      }
+    },
+    {
+      "question": {
+        "en": "How do you order a steak \"medium\"?",
+        "es": "¿Cómo pides un filete «en su punto»?"
+      },
+      "options": [
+        "à point",
+        "saignant",
+        "bleu",
+        "bien cuit"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Bleu < saignant < à point < bien cuit.",
+        "es": "Bleu < saignant < à point < bien cuit."
+      }
+    },
+    {
+      "question": {
+        "en": "In France, \"le menu\" usually means…",
+        "es": "En Francia, «le menu» suele significar…"
+      },
+      "options": {
+        "en": [
+          "a set menu",
+          "the full list of dishes",
+          "the bill",
+          "the dessert"
+        ],
+        "es": [
+          "un menú cerrado",
+          "la lista completa de platos",
+          "la cuenta",
+          "el postre"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "The list of dishes is \"la carte\".",
+        "es": "La lista de platos es «la carte»."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"Bien qu'il nous ___ regardés de haut, nous sommes restés.\"",
+        "es": "Completa: «Bien qu'il nous ___ regardés de haut, nous sommes restés.»"
+      },
+      "options": [
+        "ait",
+        "a",
+        "avait",
+        "aura"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Bien que\" + past subjunctive.",
+        "es": "«Bien que» + subjuntivo pasado."
+      }
+    },
+    {
+      "question": {
+        "en": "\"La bouteille n'explosa pas.\" Which tense?",
+        "es": "«La bouteille n'explosa pas.» ¿Qué tiempo?"
+      },
+      "options": {
+        "en": [
+          "passé simple",
+          "imparfait",
+          "plus-que-parfait",
+          "futur"
+        ],
+        "es": [
+          "passé simple",
+          "imperfecto",
+          "pluscuamperfecto",
+          "futuro"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Spoken: \"n'a pas explosé\".",
+        "es": "Oral: «n'a pas explosé»."
+      }
+    },
+    {
+      "question": {
+        "en": "Reported: \"Avez-vous réservé ?\" → Il nous a demandé si nous ___ réservé.",
+        "es": "Indirecto: «Avez-vous réservé ?» → Il nous a demandé si nous ___ réservé."
+      },
+      "options": [
+        "avions",
+        "avons",
+        "aurions",
+        "aurons"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Passé composé → plus-que-parfait.",
+        "es": "Passé composé → plus-que-parfait."
+      }
+    }
+  ],
+  "story": {
+    "title": "Notre premier grand restaurant",
+    "text": "Nous n'avions jamais mangé dans un grand restaurant. Mais pour mon anniversaire, mon copain Théo m'a invitée au Pavillon, un restaurant très chic de Lyon où il faut être bien habillé. Nous y sommes allés avec deux amis qui, comme nous, n'avaient jamais goûté la grande cuisine française. Quand nous sommes entrés, un maître d'hôtel très élégant nous a demandé si nous avions réservé. Bien qu'il nous ait regardés de haut, nous l'avons suivi jusqu'à une table magnifique. La carte était entièrement en français gastronomique : nous n'avions rien compris, et nous n'avons pas osé poser de questions. Alors, nous avons commandé au hasard. Les plats furent délicieux, mais très petits ! À la fin, le serveur tendit l'addition à Théo. Il devint tout pâle et la montra à nos amis. Si nous avions regardé les prix avant, nous aurions choisi le menu du jour ! Nous avons dû réunir tout notre argent pour payer. Nous n'avions jamais si bien dîné… mais nous n'avions jamais payé un dîner aussi cher non plus !",
+    "en": "We had never eaten in a fancy restaurant. But for my birthday, my boyfriend Théo invited me to Le Pavillon, a very chic restaurant in Lyon where you have to be well dressed. We went there with two friends who, like us, had never tasted fine French cuisine. When we went in, a very elegant head waiter asked us if we had booked. Although he looked down on us, we followed him to a magnificent table. The menu was entirely in gastronomic French: we hadn't understood anything, and we didn't dare ask questions. So we ordered at random. The dishes were delicious, but very small! At the end, the waiter handed the bill to Théo. He went completely pale and showed it to our friends. If we had looked at the prices beforehand, we would have chosen the set menu! We had to pool all our money to pay. We had never dined so well… but we had never paid so much for a dinner either!",
+    "es": "Nunca habíamos comido en un gran restaurante. Pero, por mi cumpleaños, mi novio Théo me invitó a Le Pavillon, un restaurante muy elegante de Lyon donde hay que ir bien vestido. Fuimos con dos amigos que, como nosotros, nunca habían probado la alta cocina francesa. Cuando entramos, un jefe de sala muy elegante nos preguntó si habíamos reservado. Aunque nos miró por encima del hombro, lo seguimos hasta una mesa magnífica. La carta estaba entera en francés gastronómico: no habíamos entendido nada y no nos atrevimos a preguntar. Así que pedimos al azar. Los platos estaban deliciosos, ¡pero eran muy pequeños! Al final, el camarero le tendió la cuenta a Théo. Se puso pálido y se la enseñó a nuestros amigos. ¡Si hubiéramos mirado los precios antes, habríamos elegido el menú del día! Tuvimos que juntar todo nuestro dinero para pagar. Nunca habíamos cenado tan bien… ¡pero tampoco habíamos pagado nunca tanto por una cena!",
+    "highlighted_words": [
+      "Nous n'avions jamais mangé",
+      "n'avaient jamais goûté",
+      "si nous avions réservé",
+      "Bien qu'il nous ait regardés",
+      "nous n'avions rien compris",
+      "furent",
+      "tendit",
+      "devint",
+      "Si nous avions regardé",
+      "nous aurions choisi"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Nous n'avions jamais mangé ici",
+      "en": "We had never eaten here",
+      "es": "Nunca habíamos comido aquí"
+    },
+    {
+      "sentence": "Si tu avais réservé nous aurions mangé",
+      "en": "If you had booked we would have eaten",
+      "es": "Si hubieras reservado, habríamos comido"
+    },
+    {
+      "sentence": "L'addition s'il vous plaît",
+      "en": "The bill please",
+      "es": "La cuenta, por favor"
+    },
+    {
+      "sentence": "Le dîner aurait pu être meilleur",
+      "en": "Dinner could have been better",
+      "es": "La cena podría haber sido mejor"
+    },
+    {
+      "sentence": "Je voudrais le steak à point",
+      "en": "I would like the steak medium",
+      "es": "Quisiera el filete en su punto"
+    },
+    {
+      "sentence": "Il avait déjà commandé",
+      "en": "He had already ordered",
+      "es": "Ya había pedido"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Une table pour quatre, s'il vous plaît",
+      "en": "A table for four, please",
+      "es": "Una mesa para cuatro, por favor"
+    },
+    {
+      "answer": "J'ai très faim",
+      "en": "I'm very hungry",
+      "es": "Tengo mucha hambre"
+    },
+    {
+      "answer": "C'était délicieux",
+      "en": "It was delicious",
+      "es": "Estaba delicioso"
+    },
+    {
+      "answer": "Si j'avais su, je serais venu",
+      "en": "If I had known, I would have come",
+      "es": "Si lo hubiera sabido, habría venido"
+    },
+    {
+      "answer": "Nous avions déjà mangé",
+      "en": "We had already eaten",
+      "es": "Ya habíamos comido"
+    },
+    {
+      "answer": "Le service est compris",
+      "en": "Service is included",
+      "es": "El servicio está incluido"
+    }
+  ]
+}

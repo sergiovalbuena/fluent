@@ -1,0 +1,572 @@
+{
+  "lesson": 32,
+  "slug": "lecon-32",
+  "icon": "🛫",
+  "title": {
+    "fr": "À l'aéroport",
+    "es": "En el aeropuerto",
+    "en": "At the airport"
+  },
+  "source": {
+    "audio": "Lecons 32.mp3",
+    "course": "HTL Français – Cours de Base"
+  },
+  "grammar": [
+    {
+      "structure": "passé simple",
+      "example": "Le vol fut annulé. Ils arrivèrent à une heure du matin. Je fis la queue.",
+      "en": "Literary past (passé simple)",
+      "es": "Pasado literario (passé simple)"
+    },
+    {
+      "structure": "passé composé",
+      "example": "Nous nous sommes enregistrés il y a une heure. J'ai montré mon passeport.",
+      "en": "Everyday past",
+      "es": "Pasado cotidiano"
+    },
+    {
+      "structure": "imparfait (habitudes)",
+      "example": "Chaque fois qu'ils voyageaient, ils avaient des problèmes.",
+      "en": "Repeated past actions",
+      "es": "Acciones pasadas repetidas"
+    },
+    {
+      "structure": "venir de + infinitif",
+      "example": "L'avion vient d'atterrir.",
+      "en": "Recent past",
+      "es": "Pasado reciente"
+    },
+    {
+      "structure": "faire + infinitif",
+      "example": "Le douanier m'a fait ouvrir toutes les valises.",
+      "en": "Causative \"faire\"",
+      "es": "«Hacer» + infinitivo (causativo)"
+    },
+    {
+      "structure": "pronom relatif « laquelle »",
+      "example": "Je ne trouvais pas la porte à laquelle je devais aller.",
+      "en": "Relative pronoun with preposition",
+      "es": "Pronombre relativo con preposición"
+    },
+    {
+      "structure": "jusqu'à ce que + subjonctif",
+      "example": "Tout allait bien jusqu'à ce qu'ils arrivent à Rome.",
+      "en": "\"Until\" + subjunctive",
+      "es": "«Hasta que» + subjuntivo"
+    },
+    {
+      "structure": "après avoir + participe",
+      "example": "Après avoir vu ma nationalité, il m'a laissé passer.",
+      "en": "\"After having\"",
+      "es": "«Después de haber»"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The passé simple (il fut, ils arrivèrent, je fis) is the literary past: you will read it in novels, stories and newspapers, but in conversation people use the passé composé.",
+      "es": "El passé simple (il fut, ils arrivèrent, je fis) es el pasado literario: lo leerás en novelas, cuentos y periódicos, pero al hablar se usa el passé composé."
+    },
+    {
+      "en": "Airport words: \"s'enregistrer\" (to check in), \"la carte d'embarquement\" (boarding pass), \"la porte\" (gate), \"le tapis à bagages\" (baggage carousel), \"l'escale\" (stopover).",
+      "es": "En el aeropuerto: «s'enregistrer» (facturar), «la carte d'embarquement» (tarjeta de embarque), «la porte» (puerta), «le tapis à bagages» (cinta de equipaje), «l'escale» (escala)."
+    },
+    {
+      "en": "\"Rater / manquer son avion\" = to miss your plane.",
+      "es": "«Rater / manquer son avion» = perder el avión."
+    },
+    {
+      "en": "\"Le vol\" = the flight, but also \"the theft\"!",
+      "es": "«Le vol» = el vuelo, ¡pero también el robo!"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "l'aéroport",
+      "en": "the airport",
+      "es": "el aeropuerto"
+    },
+    {
+      "word": "la compagnie aérienne",
+      "en": "the airline",
+      "es": "la aerolínea"
+    },
+    {
+      "word": "l'avion",
+      "en": "the plane",
+      "es": "el avión"
+    },
+    {
+      "word": "le vol",
+      "en": "the flight",
+      "es": "el vuelo"
+    },
+    {
+      "word": "les arrivées",
+      "en": "arrivals",
+      "es": "las llegadas"
+    },
+    {
+      "word": "les départs",
+      "en": "departures",
+      "es": "las salidas"
+    },
+    {
+      "word": "le tableau des vols",
+      "en": "the flight board",
+      "es": "el panel de vuelos"
+    },
+    {
+      "word": "s'enregistrer",
+      "en": "to check in",
+      "es": "facturar / hacer el check-in"
+    },
+    {
+      "word": "le comptoir d'enregistrement",
+      "en": "the check-in desk",
+      "es": "el mostrador de facturación"
+    },
+    {
+      "word": "la carte d'embarquement",
+      "en": "the boarding pass",
+      "es": "la tarjeta de embarque"
+    },
+    {
+      "word": "l'embarquement",
+      "en": "boarding",
+      "es": "el embarque"
+    },
+    {
+      "word": "embarquer",
+      "en": "to board",
+      "es": "embarcar"
+    },
+    {
+      "word": "la porte",
+      "en": "the gate",
+      "es": "la puerta"
+    },
+    {
+      "word": "la salle d'attente",
+      "en": "the waiting room",
+      "es": "la sala de espera"
+    },
+    {
+      "word": "l'escale",
+      "en": "the stopover",
+      "es": "la escala"
+    },
+    {
+      "word": "la correspondance",
+      "en": "the connection",
+      "es": "la conexión"
+    },
+    {
+      "word": "annulé / annulée",
+      "en": "cancelled",
+      "es": "cancelado / cancelada"
+    },
+    {
+      "word": "en retard",
+      "en": "delayed",
+      "es": "con retraso"
+    },
+    {
+      "word": "les bagages",
+      "en": "luggage",
+      "es": "el equipaje"
+    },
+    {
+      "word": "le bagage à main",
+      "en": "carry-on bag",
+      "es": "el equipaje de mano"
+    },
+    {
+      "word": "le tapis à bagages",
+      "en": "the baggage carousel",
+      "es": "la cinta de equipaje"
+    },
+    {
+      "word": "le poids",
+      "en": "the weight",
+      "es": "el peso"
+    },
+    {
+      "word": "le supplément",
+      "en": "the extra charge",
+      "es": "el suplemento"
+    },
+    {
+      "word": "le passeport",
+      "en": "the passport",
+      "es": "el pasaporte"
+    },
+    {
+      "word": "le visa",
+      "en": "the visa",
+      "es": "el visado / la visa"
+    },
+    {
+      "word": "le passager / la passagère",
+      "en": "the passenger",
+      "es": "el pasajero / la pasajera"
+    },
+    {
+      "word": "atterrir",
+      "en": "to land",
+      "es": "aterrizar"
+    },
+    {
+      "word": "décoller",
+      "en": "to take off",
+      "es": "despegar"
+    },
+    {
+      "word": "survoler",
+      "en": "to fly over",
+      "es": "sobrevolar"
+    },
+    {
+      "word": "rater",
+      "en": "to miss",
+      "es": "perder (un transporte)"
+    },
+    {
+      "word": "faire la queue",
+      "en": "to queue",
+      "es": "hacer cola"
+    },
+    {
+      "word": "perdre",
+      "en": "to lose",
+      "es": "perder"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "Nous nous sommes enregistrés il y a une heure. L'avion vient d'atterrir.",
+      "en": "We checked in an hour ago. The plane has just landed.",
+      "es": "Facturamos hace una hora. El avión acaba de aterrizar."
+    },
+    {
+      "phrase": "On nous a appelés pour l'embarquement il y a quinze minutes.",
+      "en": "They called us for boarding fifteen minutes ago.",
+      "es": "Nos llamaron para embarcar hace quince minutos."
+    },
+    {
+      "phrase": "La limite de poids était de vingt kilos par passager.",
+      "en": "The weight limit was twenty kilos per passenger.",
+      "es": "El límite de peso era de veinte kilos por pasajero."
+    },
+    {
+      "phrase": "On m'a demandé dix euros par kilo supplémentaire.",
+      "en": "They charged me ten euros per extra kilo.",
+      "es": "Me cobraron diez euros por kilo de más."
+    },
+    {
+      "phrase": "Mes valises se perdirent. Le vol fut annulé.",
+      "en": "My suitcases got lost. The flight was cancelled.",
+      "es": "Mis maletas se perdieron. El vuelo fue cancelado."
+    },
+    {
+      "phrase": "Je fis la queue pendant deux heures.",
+      "en": "I queued for two hours.",
+      "es": "Hice cola durante dos horas."
+    },
+    {
+      "phrase": "Nous avons survolé Paris il y a quelques minutes.",
+      "en": "We flew over Paris a few minutes ago.",
+      "es": "Sobrevolamos París hace unos minutos."
+    },
+    {
+      "phrase": "Le douanier m'a fait ouvrir toutes les valises.",
+      "en": "The customs officer made me open all the suitcases.",
+      "es": "El aduanero me hizo abrir todas las maletas."
+    },
+    {
+      "phrase": "J'ai laissé ma carte d'embarquement sur le comptoir !",
+      "en": "I left my boarding pass on the counter!",
+      "es": "¡Me dejé la tarjeta de embarque en el mostrador!"
+    },
+    {
+      "phrase": "Je ne trouvais pas la porte à laquelle je devais aller.",
+      "en": "I couldn't find the gate I had to go to.",
+      "es": "No encontraba la puerta a la que tenía que ir."
+    },
+    {
+      "phrase": "J'ai dû payer un supplément pour mon chien.",
+      "en": "I had to pay an extra charge for my dog.",
+      "es": "Tuve que pagar un suplemento por mi perro."
+    },
+    {
+      "phrase": "Où se trouve le tapis à bagages ? — Suivez les panneaux.",
+      "en": "Where is the baggage carousel? — Follow the signs.",
+      "es": "¿Dónde está la cinta de equipaje? — Siga los carteles."
+    },
+    {
+      "phrase": "À quelle heure arrivèrent-ils ? — Ils arrivèrent à une heure du matin, à cause d'une tempête.",
+      "en": "What time did they arrive? — They arrived at one in the morning, because of a storm.",
+      "es": "¿A qué hora llegaron? — Llegaron a la una de la madrugada por una tormenta."
+    },
+    {
+      "phrase": "Tu es là depuis longtemps ? — Non, nous venons de descendre de l'avion.",
+      "en": "Have you been here long? — No, we just got off the plane.",
+      "es": "¿Llevas mucho tiempo aquí? — No, acabamos de bajar del avión."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "\"Le vol fut annulé.\" Which tense is \"fut\"?",
+        "es": "«Le vol fut annulé.» ¿Qué tiempo es «fut»?"
+      },
+      "options": {
+        "en": [
+          "passé simple",
+          "imparfait",
+          "futur",
+          "subjunctive"
+        ],
+        "es": [
+          "passé simple",
+          "imperfecto",
+          "futuro",
+          "subjuntivo"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Être in the passé simple: il fut. In speech: \"a été\".",
+        "es": "Être en passé simple: il fut. Al hablar: «a été»."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the spoken equivalent of \"ils arrivèrent\"?",
+        "es": "¿Cuál es el equivalente oral de «ils arrivèrent»?"
+      },
+      "options": [
+        "ils sont arrivés",
+        "ils arrivaient",
+        "ils arriveront",
+        "ils arrivent"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Passé simple → passé composé in conversation.",
+        "es": "Passé simple → passé composé en la conversación."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you get your boarding pass?",
+        "es": "¿Dónde obtienes la tarjeta de embarque?"
+      },
+      "options": [
+        "au comptoir d'enregistrement",
+        "au tapis à bagages",
+        "dans la salle d'attente",
+        "à la douane"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "You check in at the check-in desk.",
+        "es": "Se factura en el mostrador de facturación."
+      }
+    },
+    {
+      "question": {
+        "en": "\"L'avion vient d'atterrir.\" Meaning?",
+        "es": "«L'avion vient d'atterrir.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "The plane has just landed.",
+          "The plane is coming to land.",
+          "The plane will land.",
+          "The plane came from the land."
+        ],
+        "es": [
+          "El avión acaba de aterrizar.",
+          "El avión viene a aterrizar.",
+          "El avión aterrizará.",
+          "El avión vino de tierra."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Venir de + infinitive = recent past.",
+        "es": "Venir de + infinitivo = pasado reciente."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Il m'a fait ouvrir mes valises.\" Meaning?",
+        "es": "«Il m'a fait ouvrir mes valises.» ¿Significado?"
+      },
+      "options": {
+        "en": [
+          "He made me open my suitcases.",
+          "He opened my suitcases.",
+          "He helped me open my suitcases.",
+          "He made my suitcases."
+        ],
+        "es": [
+          "Me hizo abrir las maletas.",
+          "Abrió mis maletas.",
+          "Me ayudó a abrir las maletas.",
+          "Hizo mis maletas."
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Faire + infinitive = to make someone do something.",
+        "es": "Faire + infinitivo = hacer que alguien haga algo."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"La porte à ___ je devais aller.\"",
+        "es": "Completa: «La porte à ___ je devais aller.»"
+      },
+      "options": [
+        "laquelle",
+        "lequel",
+        "qui",
+        "que"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Porte is feminine: à laquelle.",
+        "es": "Porte es femenino: à laquelle."
+      }
+    },
+    {
+      "question": {
+        "en": "\"Le vol\" can mean…",
+        "es": "«Le vol» puede significar…"
+      },
+      "options": {
+        "en": [
+          "the flight or the theft",
+          "only the flight",
+          "the wing",
+          "the pilot"
+        ],
+        "es": [
+          "el vuelo o el robo",
+          "solo el vuelo",
+          "el ala",
+          "el piloto"
+        ]
+      },
+      "correct": 0,
+      "explanation": {
+        "en": "Voler = to fly / to steal.",
+        "es": "Voler = volar / robar."
+      }
+    },
+    {
+      "question": {
+        "en": "Which sentence describes a repeated past action?",
+        "es": "¿Qué frase describe una acción pasada repetida?"
+      },
+      "options": [
+        "Chaque fois qu'ils voyageaient, ils perdaient leurs valises.",
+        "Un jour, ils perdirent leurs valises.",
+        "Ils ont perdu leurs valises hier.",
+        "Ils perdront leurs valises."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Imparfait for habits.",
+        "es": "Imperfecto para los hábitos."
+      }
+    }
+  ],
+  "story": {
+    "title": "Les voyageurs malchanceux",
+    "text": "Quand nous habitions à Lille, nous avions des voisins, Bernard et Sylvie, qui adoraient voyager. Mais chaque fois qu'ils partaient, ils avaient des problèmes. Parfois, ils perdaient leurs valises ; d'autres fois, ils rataient leur correspondance et devaient dormir à l'aéroport. Quand ils revenaient, ils nous racontaient leurs aventures en riant. Un été, ils décidèrent de partir en Grèce. Tout allait bien jusqu'à ce qu'ils arrivent à l'aéroport de Rome pour leur escale. Le tableau des vols annonçait un retard de six heures. Bernard fit la queue au comptoir pendant deux heures, mais l'employée lui dit que le vol était annulé. Sylvie, qui ne trouvait plus sa carte d'embarquement, chercha partout. Finalement, ils dormirent sur des chaises dans la salle d'attente. Le lendemain, un autre avion les emmena enfin à Athènes. Mais là-bas, au tapis à bagages, leurs valises n'arrivèrent jamais ! Depuis ce voyage, Bernard et Sylvie ne partent plus qu'en train… et toujours avec un seul petit sac.",
+    "en": "When we lived in Lille, we had neighbors, Bernard and Sylvie, who loved to travel. But every time they went away, they had problems. Sometimes they lost their suitcases; other times they missed their connection and had to sleep at the airport. When they came back, they told us about their adventures, laughing. One summer, they decided to go to Greece. Everything was fine until they arrived at Rome airport for their stopover. The flight board showed a six-hour delay. Bernard queued at the counter for two hours, but the clerk told him the flight was cancelled. Sylvie, who could no longer find her boarding pass, looked everywhere. In the end, they slept on chairs in the waiting room. The next day, another plane finally took them to Athens. But there, at the baggage carousel, their suitcases never arrived! Since that trip, Bernard and Sylvie only travel by train… and always with just one small bag.",
+    "es": "Cuando vivíamos en Lille, teníamos unos vecinos, Bernard y Sylvie, a los que les encantaba viajar. Pero cada vez que se iban, tenían problemas. A veces perdían las maletas; otras veces perdían la conexión y tenían que dormir en el aeropuerto. Cuando volvían, nos contaban sus aventuras riéndose. Un verano decidieron irse a Grecia. Todo iba bien hasta que llegaron al aeropuerto de Roma para hacer escala. El panel de vuelos anunciaba un retraso de seis horas. Bernard hizo cola en el mostrador durante dos horas, pero la empleada le dijo que el vuelo estaba cancelado. Sylvie, que ya no encontraba su tarjeta de embarque, buscó por todas partes. Al final durmieron en unas sillas de la sala de espera. Al día siguiente, otro avión los llevó por fin a Atenas. Pero allí, en la cinta de equipaje, ¡sus maletas no llegaron nunca! Desde aquel viaje, Bernard y Sylvie solo viajan en tren… y siempre con una sola bolsa pequeña.",
+    "highlighted_words": [
+      "chaque fois qu'ils partaient",
+      "perdaient",
+      "rataient",
+      "décidèrent",
+      "jusqu'à ce qu'ils arrivent",
+      "escale",
+      "fit la queue",
+      "dit",
+      "carte d'embarquement",
+      "chercha",
+      "dormirent",
+      "emmena",
+      "tapis à bagages",
+      "n'arrivèrent jamais"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "L'avion vient d'atterrir",
+      "en": "The plane has just landed",
+      "es": "El avión acaba de aterrizar"
+    },
+    {
+      "sentence": "Le vol a été annulé",
+      "en": "The flight was cancelled",
+      "es": "El vuelo fue cancelado"
+    },
+    {
+      "sentence": "J'ai perdu ma carte d'embarquement",
+      "en": "I lost my boarding pass",
+      "es": "He perdido mi tarjeta de embarque"
+    },
+    {
+      "sentence": "Ils arrivèrent très tard",
+      "en": "They arrived very late",
+      "es": "Llegaron muy tarde"
+    },
+    {
+      "sentence": "Il m'a fait ouvrir ma valise",
+      "en": "He made me open my suitcase",
+      "es": "Me hizo abrir la maleta"
+    },
+    {
+      "sentence": "Nous avons raté notre correspondance",
+      "en": "We missed our connection",
+      "es": "Perdimos nuestra conexión"
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Où est la porte douze ?",
+      "en": "Where is gate twelve?",
+      "es": "¿Dónde está la puerta doce?"
+    },
+    {
+      "answer": "Mon vol est en retard",
+      "en": "My flight is delayed",
+      "es": "Mi vuelo tiene retraso"
+    },
+    {
+      "answer": "Je dois enregistrer ma valise",
+      "en": "I have to check my suitcase",
+      "es": "Tengo que facturar mi maleta"
+    },
+    {
+      "answer": "Voici mon passeport",
+      "en": "Here is my passport",
+      "es": "Aquí tiene mi pasaporte"
+    },
+    {
+      "answer": "J'ai raté mon avion",
+      "en": "I missed my plane",
+      "es": "He perdido el avión"
+    },
+    {
+      "answer": "Le vol fut annulé",
+      "en": "The flight was cancelled (literary)",
+      "es": "El vuelo fue cancelado (literario)"
+    }
+  ]
+}
