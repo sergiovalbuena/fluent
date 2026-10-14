@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { LearnContent, type LearnModule } from '@/components/learn/learn-content'
 
@@ -36,12 +37,15 @@ export default async function LearnPage() {
 
   let languageCode = 'es'
   if (user) {
-    const { data: activeLang } = await supabase
+    const { data: activeLang, error: activeLangError } = await supabase
       .from('user_languages')
       .select('language_code')
       .eq('user_id', user.id)
       .eq('is_active', true)
+      .limit(1)
       .maybeSingle()
+    // No course chosen yet: onboarding sets it up
+    if (!activeLang && !activeLangError) redirect('/onboarding')
     if (activeLang?.language_code) languageCode = activeLang.language_code
   }
 

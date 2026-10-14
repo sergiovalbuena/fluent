@@ -253,7 +253,7 @@ export function DashboardContent({ modules, stats, displayName = 'there', langua
             <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
               <BookMarked size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('short_story')}</p>
-              <p className="text-[11px] font-semibold text-white/60">{tc('five_min')} · 🇪🇸</p>
+              <p className="text-[11px] font-semibold text-white/60">{tc('five_min')}</p>
             </Link>
           </Block>
 

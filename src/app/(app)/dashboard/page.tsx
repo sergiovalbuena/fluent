@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { DashboardContent } from '@/components/dashboard/dashboard-content'
 import type { LearnModule } from '@/components/learn/learn-content'
@@ -40,8 +41,9 @@ export default async function DashboardPage() {
           .select('language_code')
           .eq('user_id', user.id)
           .eq('is_active', true)
+          .limit(1)
           .maybeSingle()
-      : Promise.resolve({ data: null }),
+      : Promise.resolve({ data: null, error: null }),
     user
       ? supabase
           .from('user_profiles')
@@ -64,6 +66,9 @@ export default async function DashboardPage() {
           .gte('activity_date', startOfWeekStr)
       : Promise.resolve({ data: [] }),
   ])
+
+  // No course chosen yet: onboarding sets it up
+  if (user && !activeLangResult.data && !activeLangResult.error) redirect('/onboarding')
 
   const languageCode = activeLangResult.data?.language_code ?? 'es'
   const allProgress = (progressResult.data ?? []) as ProgressRow[]

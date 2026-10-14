@@ -1,166 +1,124 @@
 'use client'
 
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useLocale, useTranslations } from 'next-intl'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, Check, ChevronRight, Volume2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { getLanguage, speak } from '@/lib/languages'
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
-const NATIVE_LANGUAGES = [
-  { code: 'en', name: 'English',    flag: '🇬🇧' },
-  { code: 'es', name: 'Spanish',    flag: '🇪🇸' },
-  { code: 'fr', name: 'French',     flag: '🇫🇷' },
-  { code: 'de', name: 'German',     flag: '🇩🇪' },
-  { code: 'pt', name: 'Portuguese', flag: '🇧🇷' },
-  { code: 'it', name: 'Italian',    flag: '🇮🇹' },
-  { code: 'zh', name: 'Chinese',    flag: '🇨🇳' },
-  { code: 'ja', name: 'Japanese',   flag: '🇯🇵' },
-  { code: 'ko', name: 'Korean',     flag: '🇰🇷' },
-  { code: 'ar', name: 'Arabic',     flag: '🇸🇦' },
-]
+// Languages the app can be used in (UI + translations); names come from Intl
+const NATIVE_LANGUAGES = ['en', 'es', 'fr', 'de', 'pt', 'it', 'ja', 'zh']
 
-const LEARNING_LANGUAGES = [
-  { code: 'es', name: 'Spanish',    flag: '🇪🇸', description: 'Over 500 million speakers' },
-  { code: 'fr', name: 'French',     flag: '🇫🇷', description: 'Language of love & culture' },
-  { code: 'de', name: 'German',     flag: '🇩🇪', description: 'Language of innovation' },
-  { code: 'pt', name: 'Portuguese', flag: '🇧🇷', description: 'Spoken across 3 continents' },
-  { code: 'it', name: 'Italian',    flag: '🇮🇹', description: 'Language of art & food' },
-  { code: 'ja', name: 'Japanese',   flag: '🇯🇵', description: 'Unique writing systems' },
-]
+/** Locales with app UI messages (messages/<code>.json) */
+const UI_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
+/** Languages lesson content can be translated into (same list as the profile setting) */
+const TRANSLATION_LANGUAGES = ['es', 'en', 'pt', 'fr', 'de', 'it']
+
+const LEARNING_LANGUAGES = ['es', 'fr', 'de', 'pt', 'it', 'ja']
 
 const MOTIVATIONS = [
-  { code: 'travel',  label: 'Travel',  icon: '✈️', description: 'Survive & thrive abroad',   highlight: true },
-  { code: 'work',    label: 'Work',    icon: '💼', description: 'Career & business',          highlight: false },
-  { code: 'family',  label: 'Family',  icon: '❤️', description: 'Connect with loved ones',   highlight: false },
-  { code: 'culture', label: 'Culture', icon: '🎭', description: 'Art, film & music',         highlight: false },
-  { code: 'brain',   label: 'Brain',   icon: '🧠', description: 'Keep your mind sharp',      highlight: false },
-  { code: 'curious', label: 'Curious', icon: '🌍', description: 'Just exploring',             highlight: false },
+  { code: 'travel',  icon: '✈️', highlight: true },
+  { code: 'work',    icon: '💼', highlight: false },
+  { code: 'family',  icon: '❤️', highlight: false },
+  { code: 'culture', icon: '🎭', highlight: false },
+  { code: 'brain',   icon: '🧠', highlight: false },
+  { code: 'curious', icon: '🌍', highlight: false },
 ]
 
-const DESTINATIONS: Record<string, { name: string; flag: string }[]> = {
-  es: [
-    { name: 'Mexico',        flag: '🇲🇽' }, { name: 'Spain',         flag: '🇪🇸' },
-    { name: 'Colombia',      flag: '🇨🇴' }, { name: 'Argentina',     flag: '🇦🇷' },
-    { name: 'Peru',          flag: '🇵🇪' }, { name: 'Cuba',          flag: '🇨🇺' },
-    { name: 'Costa Rica',    flag: '🇨🇷' }, { name: 'Chile',         flag: '🇨🇱' },
-  ],
-  fr: [
-    { name: 'France',        flag: '🇫🇷' }, { name: 'Canada',        flag: '🇨🇦' },
-    { name: 'Belgium',       flag: '🇧🇪' }, { name: 'Switzerland',   flag: '🇨🇭' },
-    { name: 'Morocco',       flag: '🇲🇦' }, { name: 'Senegal',       flag: '🇸🇳' },
-  ],
-  de: [
-    { name: 'Germany',       flag: '🇩🇪' }, { name: 'Austria',       flag: '🇦🇹' },
-    { name: 'Switzerland',   flag: '🇨🇭' }, { name: 'Luxembourg',    flag: '🇱🇺' },
-  ],
-  pt: [
-    { name: 'Brazil',        flag: '🇧🇷' }, { name: 'Portugal',      flag: '🇵🇹' },
-    { name: 'Cape Verde',    flag: '🇨🇻' }, { name: 'Mozambique',    flag: '🇲🇿' },
-  ],
-  it: [
-    { name: 'Italy',         flag: '🇮🇹' }, { name: 'Vatican',       flag: '🇻🇦' },
-    { name: 'San Marino',    flag: '🇸🇲' }, { name: 'Switzerland',   flag: '🇨🇭' },
-  ],
-  ja: [
-    { name: 'Japan',         flag: '🇯🇵' },
-  ],
+// ISO 3166 region codes; names are localized with Intl.DisplayNames
+const DESTINATIONS: Record<string, string[]> = {
+  es: ['MX', 'ES', 'CO', 'AR', 'PE', 'CU', 'CR', 'CL'],
+  fr: ['FR', 'CA', 'BE', 'CH', 'MA', 'SN'],
+  de: ['DE', 'AT', 'CH', 'LU'],
+  pt: ['BR', 'PT', 'CV', 'MZ'],
+  it: ['IT', 'VA', 'SM', 'CH'],
+  ja: ['JP'],
 }
 
-const TRIP_TIMELINES = [
-  { code: 'week',    label: 'This week',      emoji: '🔥', urgency: 'ultra' },
-  { code: 'month',   label: 'In 2–4 weeks',   emoji: '⚡', urgency: 'high'  },
-  { code: 'quarter', label: 'In 1–3 months',  emoji: '📅', urgency: 'mid'   },
-  { code: 'later',   label: 'In 3+ months',   emoji: '🌱', urgency: 'low'   },
-  { code: 'there',   label: "Already there!", emoji: '😅', urgency: 'ultra' },
-]
+function flagEmoji(region: string): string {
+  return String.fromCodePoint(...[...region].map(c => 0x1f1e6 + c.charCodeAt(0) - 65))
+}
+
+type PhraseKey = 'bathroom' | 'price' | 'dont_speak' | 'help' | 'bill'
 
 type SurvivalPhrase = {
+  key: PhraseKey
   emoji: string
   phrase: string
   phonetic: string
-  translation: string
 }
 
-const SURVIVAL_PHRASES: Record<string, SurvivalPhrase[]> = {
+const PHRASE_EMOJI: Record<PhraseKey, string> = {
+  bathroom: '🚽', price: '💰', dont_speak: '🙏', help: '🆘', bill: '🍽️',
+}
+
+// [key, phrase, phonetic] — the meaning comes from the UI messages (onboarding.phrase_*)
+const SURVIVAL_PHRASES: Record<string, Array<[PhraseKey, string, string]>> = {
   es: [
-    { emoji: '🚽', phrase: '¿Dónde está el baño?',       phonetic: 'don-de es-ta el ba-nyo',          translation: 'Where is the bathroom?' },
-    { emoji: '💰', phrase: '¿Cuánto cuesta esto?',        phonetic: 'kwan-to kwes-ta es-to',           translation: 'How much is this?' },
-    { emoji: '🙏', phrase: 'No hablo español bien.',      phonetic: 'no ab-lo es-pan-yol byen',        translation: "I don't speak Spanish well." },
-    { emoji: '🆘', phrase: '¿Me puede ayudar?',           phonetic: 'me pwe-de a-yu-dar',              translation: 'Can you help me?' },
-    { emoji: '🍽️', phrase: 'La cuenta, por favor.',       phonetic: 'la kwen-ta por fa-bor',           translation: 'The bill, please.' },
+    ['bathroom',   '¿Dónde está el baño?',            'don-de es-ta el ba-nyo'],
+    ['price',      '¿Cuánto cuesta esto?',             'kwan-to kwes-ta es-to'],
+    ['dont_speak', 'No hablo bien español.',           'no ab-lo byen es-pan-yol'],
+    ['help',       '¿Me puede ayudar?',                'me pwe-de a-yu-dar'],
+    ['bill',       'La cuenta, por favor.',            'la kwen-ta por fa-bor'],
   ],
   fr: [
-    { emoji: '🚽', phrase: 'Où sont les toilettes ?',     phonetic: 'oo son lay twa-let',              translation: 'Where is the bathroom?' },
-    { emoji: '💰', phrase: 'Combien ça coûte ?',          phonetic: 'kom-byan sa koot',                translation: 'How much is this?' },
-    { emoji: '🙏', phrase: 'Je ne parle pas bien français.', phonetic: 'zhuh nuh parl pa byan fran-say', translation: "I don't speak French well." },
-    { emoji: '🆘', phrase: 'Pouvez-vous m\'aider ?',      phonetic: 'poo-vay voo may-day',             translation: 'Can you help me?' },
-    { emoji: '🍽️', phrase: "L'addition, s'il vous plaît.", phonetic: 'la-dee-syon seel voo play',      translation: 'The bill, please.' },
+    ['bathroom',   'Où sont les toilettes ?',          'oo son lay twa-let'],
+    ['price',      'Combien ça coûte ?',               'kom-byan sa koot'],
+    ['dont_speak', 'Je ne parle pas bien français.',   'zhuh nuh parl pa byan fran-say'],
+    ['help',       "Pouvez-vous m'aider ?",            'poo-vay voo may-day'],
+    ['bill',       "L'addition, s'il vous plaît.",     'la-dee-syon seel voo play'],
   ],
   de: [
-    { emoji: '🚽', phrase: 'Wo ist die Toilette?',        phonetic: 'vo ist dee toy-le-te',            translation: 'Where is the bathroom?' },
-    { emoji: '💰', phrase: 'Wie viel kostet das?',         phonetic: 'vee feel kos-tet das',            translation: 'How much is this?' },
-    { emoji: '🙏', phrase: 'Ich spreche nicht gut Deutsch.', phonetic: 'ikh shpre-khe nikht goot doytsh', translation: "I don't speak German well." },
-    { emoji: '🆘', phrase: 'Können Sie mir helfen?',      phonetic: 'kö-nen zee meer hel-fen',         translation: 'Can you help me?' },
-    { emoji: '🍽️', phrase: 'Die Rechnung, bitte.',        phonetic: 'dee rekh-noong bi-te',            translation: 'The bill, please.' },
+    ['bathroom',   'Wo ist die Toilette?',             'vo ist dee toy-le-te'],
+    ['price',      'Wie viel kostet das?',             'vee feel kos-tet das'],
+    ['dont_speak', 'Ich spreche nicht gut Deutsch.',   'ikh shpre-khe nikht goot doytsh'],
+    ['help',       'Können Sie mir helfen?',           'kö-nen zee meer hel-fen'],
+    ['bill',       'Die Rechnung, bitte.',             'dee rekh-noong bi-te'],
   ],
   pt: [
-    { emoji: '🚽', phrase: 'Onde fica o banheiro?',       phonetic: 'on-de fee-ka o ban-yey-ro',       translation: 'Where is the bathroom?' },
-    { emoji: '💰', phrase: 'Quanto custa isso?',           phonetic: 'kwan-to koos-ta ee-so',           translation: 'How much is this?' },
-    { emoji: '🙏', phrase: 'Não falo português bem.',      phonetic: 'now fa-lo por-too-gez ben',       translation: "I don't speak Portuguese well." },
-    { emoji: '🆘', phrase: 'Pode me ajudar?',              phonetic: 'po-de me a-zhoo-dar',             translation: 'Can you help me?' },
-    { emoji: '🍽️', phrase: 'A conta, por favor.',         phonetic: 'a kon-ta por fa-vor',             translation: 'The bill, please.' },
+    ['bathroom',   'Onde fica o banheiro?',            'on-de fee-ka o ban-yey-ro'],
+    ['price',      'Quanto custa isso?',               'kwan-to koos-ta ee-so'],
+    ['dont_speak', 'Não falo português bem.',          'now fa-lo por-too-gez ben'],
+    ['help',       'Pode me ajudar?',                  'po-de me a-zhoo-dar'],
+    ['bill',       'A conta, por favor.',              'a kon-ta por fa-vor'],
   ],
   it: [
-    { emoji: '🚽', phrase: "Dov'è il bagno?",             phonetic: 'do-ve il ban-yo',                 translation: 'Where is the bathroom?' },
-    { emoji: '💰', phrase: 'Quanto costa questo?',         phonetic: 'kwan-to kos-ta kwes-to',          translation: 'How much is this?' },
-    { emoji: '🙏', phrase: "Non parlo bene l'italiano.",   phonetic: 'non par-lo be-ne lee-ta-lya-no', translation: "I don't speak Italian well." },
-    { emoji: '🆘', phrase: 'Può aiutarmi?',               phonetic: 'pwo a-yoo-tar-mi',                translation: 'Can you help me?' },
-    { emoji: '🍽️', phrase: 'Il conto, per favore.',       phonetic: 'il kon-to per fa-vo-re',          translation: 'The bill, please.' },
+    ['bathroom',   "Dov'è il bagno?",                  'do-ve il ban-yo'],
+    ['price',      'Quanto costa questo?',             'kwan-to kos-ta kwes-to'],
+    ['dont_speak', "Non parlo bene l'italiano.",       'non par-lo be-ne lee-ta-lya-no'],
+    ['help',       'Può aiutarmi?',                    'pwo a-yoo-tar-mi'],
+    ['bill',       'Il conto, per favore.',            'il kon-to per fa-vo-re'],
   ],
   ja: [
-    { emoji: '🚽', phrase: 'トイレはどこですか？',           phonetic: 'to-i-re wa do-ko des-ka',         translation: 'Where is the bathroom?' },
-    { emoji: '💰', phrase: 'これはいくらですか？',           phonetic: 'ko-re wa i-ku-ra des-ka',         translation: 'How much is this?' },
-    { emoji: '🙏', phrase: '日本語があまり話せません。',      phonetic: 'ni-hon-go ga a-ma-ri ha-na-se-ma-sen', translation: "I don't speak Japanese well." },
-    { emoji: '🆘', phrase: '助けてください。',               phonetic: 'ta-su-ke-te ku-da-sa-i',          translation: 'Please help me.' },
-    { emoji: '🍽️', phrase: 'お会計をお願いします。',         phonetic: 'o-kai-kei o o-ne-gai-shi-mas',   translation: 'The bill, please.' },
+    ['bathroom',   'トイレはどこですか？',              'to-i-re wa do-ko des-ka'],
+    ['price',      'これはいくらですか？',              'ko-re wa i-ku-ra des-ka'],
+    ['dont_speak', '日本語があまり話せません。',         'ni-hon-go ga a-ma-ri ha-na-se-ma-sen'],
+    ['help',       '手伝ってもらえますか？',             'te-tsu-dat-te mo-ra-e-mas-ka'],
+    ['bill',       'お会計をお願いします。',             'o-kai-kei o o-ne-gai-shi-mas'],
   ],
 }
 
 const DAILY_GOALS = [
-  { minutes: 5,  label: 'Casual',    description: '5 min / day',  emoji: '🌱' },
-  { minutes: 10, label: 'Regular',   description: '10 min / day', emoji: '🔥', recommended: true },
-  { minutes: 20, label: 'Intensive', description: '20 min / day', emoji: '⚡' },
-]
-
-const REMINDER_TIMES = [
-  { time: '7:00 AM',  label: 'Early Bird', icon: '🌅' },
-  { time: '8:00 AM',  label: 'Morning',    icon: '☀️' },
-  { time: '12:00 PM', label: 'Midday',     icon: '🌤️' },
-  { time: '6:00 PM',  label: 'After Work', icon: '🌆' },
-  { time: '8:00 PM',  label: 'Evening',    icon: '🌙' },
-  { time: '10:00 PM', label: 'Night Owl',  icon: '🦉' },
-]
+  { minutes: 5,  key: 'goal_casual',    emoji: '🌱' },
+  { minutes: 10, key: 'goal_regular',   emoji: '🔥', recommended: true },
+  { minutes: 20, key: 'goal_intensive', emoji: '⚡' },
+] as const
 
 // ── Step config ───────────────────────────────────────────────────────────────
 
-type StepKey = 'native' | 'learn' | 'motivation' | 'destination' | 'timeline' | 'kit' | 'goal' | 'reminder'
+type StepKey = 'native' | 'learn' | 'motivation' | 'destination' | 'kit' | 'goal'
 
-const ALL_STEPS: StepKey[] = ['native', 'learn', 'motivation', 'destination', 'timeline', 'kit', 'goal', 'reminder']
-const NON_TRAVEL_STEPS: StepKey[] = ['native', 'learn', 'motivation', 'kit', 'goal', 'reminder']
+const ALL_STEPS: StepKey[] = ['native', 'learn', 'motivation', 'destination', 'kit', 'goal']
+const NON_TRAVEL_STEPS: StepKey[] = ['native', 'learn', 'motivation', 'kit', 'goal']
 
-const STEP_META: Record<StepKey, { emoji: string; title: string; subtitle: string }> = {
-  native:      { emoji: '🌏', title: "What's your native language?",  subtitle: "We'll adapt the content for you" },
-  learn:       { emoji: '📚', title: 'What do you want to learn?',    subtitle: "Pick the language you're excited about" },
-  motivation:  { emoji: '⚡', title: "What's driving you?",           subtitle: 'Knowing your why shapes your entire experience' },
-  destination: { emoji: '✈️', title: 'Where are you headed?',         subtitle: "We'll tailor your survival kit to your destination" },
-  timeline:    { emoji: '📅', title: 'When is your trip?',            subtitle: "We'll set the right pace based on your timeline" },
-  kit:         { emoji: '🆘', title: 'Your Survival Kit',             subtitle: 'The 5 phrases that will save you. Learn them now.' },
-  goal:        { emoji: '🎯', title: 'Set your daily goal',           subtitle: 'Consistency beats intensity — pick what fits your life' },
-  reminder:    { emoji: '⏰', title: 'When should we remind you?',    subtitle: "We'll send a gentle nudge at your chosen time" },
+const STEP_EMOJI: Record<StepKey, string> = {
+  native: '🌏', learn: '📚', motivation: '⚡', destination: '✈️', kit: '🆘', goal: '🎯',
 }
 
 // ── Animations ────────────────────────────────────────────────────────────────
@@ -173,8 +131,9 @@ const slideVariants = {
 
 // ── Survival Kit Card ─────────────────────────────────────────────────────────
 
-function PhraseCard({ phrase, index, revealed, onReveal }: {
+function PhraseCard({ phrase, translation, index, revealed, onReveal }: {
   phrase: SurvivalPhrase
+  translation: string
   index: number
   revealed: boolean
   onReveal: () => void
@@ -197,7 +156,7 @@ function PhraseCard({ phrase, index, revealed, onReveal }: {
         <div className="flex-1 min-w-0">
           <p className="font-bold text-base text-slate-900 dark:text-white leading-tight">{phrase.phrase}</p>
           <p className="text-[11px] text-muted-foreground mt-0.5 font-mono tracking-wide">{phrase.phonetic}</p>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 italic">{phrase.translation}</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 italic">{translation}</p>
         </div>
         <div className="shrink-0 mt-0.5">
           {revealed ? (
@@ -219,6 +178,8 @@ function PhraseCard({ phrase, index, revealed, onReveal }: {
 
 export default function OnboardingPage() {
   const router = useRouter()
+  const t = useTranslations('onboarding')
+  const locale = useLocale()
 
   const [stepIdx, setStepIdx]               = useState(0)
   const [direction, setDirection]           = useState(1)
@@ -226,19 +187,46 @@ export default function OnboardingPage() {
   const [learningLanguage, setLearningLanguage] = useState('')
   const [motivation, setMotivation]         = useState('')
   const [destination, setDestination]       = useState('')
-  const [tripTimeline, setTripTimeline]     = useState('')
   const [revealedPhrases, setRevealedPhrases] = useState<Set<number>>(new Set())
   const [dailyGoal, setDailyGoal]           = useState(10)
-  const [reminderTime, setReminderTime]     = useState('8:00 AM')
   const [saving, setSaving]                 = useState(false)
 
   const isTravel = motivation === 'travel'
   const steps: StepKey[] = isTravel ? ALL_STEPS : NON_TRAVEL_STEPS
   const currentKey = steps[stepIdx]
-  const meta = STEP_META[currentKey]
-  const phrases = SURVIVAL_PHRASES[learningLanguage] ?? SURVIVAL_PHRASES['es']
+
+  // Language and country names in the current UI language
+  const names = useMemo(() => ({
+    language: new Intl.DisplayNames([locale], { type: 'language' }),
+    region:   new Intl.DisplayNames([locale], { type: 'region' }),
+  }), [locale])
+  const languageName = (code: string) => {
+    const name = names.language.of(code) ?? getLanguage(code).name
+    return name.charAt(0).toLocaleUpperCase(locale) + name.slice(1)
+  }
+
+  const phrases: SurvivalPhrase[] = (SURVIVAL_PHRASES[learningLanguage] ?? SURVIVAL_PHRASES.es)
+    .map(([key, phrase, phonetic]) => ({ key, emoji: PHRASE_EMOJI[key], phrase, phonetic }))
+  const phraseTranslation = (key: PhraseKey) => key === 'dont_speak'
+    // Inside a sentence, keep the language name as Intl returns it (lowercase in es/fr/it/pt)
+    ? t('phrase_dont_speak', { language: names.language.of(learningLanguage || 'es') ?? '' })
+    : t(`phrase_${key}`)
+
+  // The native language sets the app language and the translation language,
+  // so the rest of the onboarding is already shown in it
+  async function applyNativeLanguage() {
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return
+    await supabase.from('user_profiles').update({
+      app_language_code: UI_LOCALES.includes(nativeLanguage) ? nativeLanguage : 'en',
+      translation_language_code: TRANSLATION_LANGUAGES.includes(nativeLanguage) ? nativeLanguage : 'en',
+    }).eq('user_id', user.id)
+    router.refresh()
+  }
 
   function goNext() {
+    if (currentKey === 'native') void applyNativeLanguage()
     setDirection(1)
     setStepIdx(s => s + 1)
   }
@@ -248,12 +236,10 @@ export default function OnboardingPage() {
     setStepIdx(s => s - 1)
   }
 
-  // When motivation changes, reset travel-specific fields & recompute index
+  // When motivation changes, reset travel-specific fields
   function selectMotivation(code: string) {
     setMotivation(code)
     setDestination('')
-    setTripTimeline('')
-    setRevealedPhrases(new Set())
   }
 
   const canContinue: boolean = (() => {
@@ -261,15 +247,14 @@ export default function OnboardingPage() {
       case 'native':      return !!nativeLanguage
       case 'learn':       return !!learningLanguage
       case 'motivation':  return !!motivation
-      case 'destination': return !!destination
-      case 'timeline':    return !!tripTimeline
-      case 'kit':         return revealedPhrases.size >= phrases.length
+      case 'destination': return !!destination.trim()
+      case 'kit':         return true
       case 'goal':        return true
-      case 'reminder':    return true
     }
   })()
 
-  function revealPhrase(i: number) {
+  function playPhrase(i: number) {
+    speak(phrases[i].phrase, learningLanguage)
     setRevealedPhrases(prev => new Set([...prev, i]))
   }
 
@@ -279,21 +264,18 @@ export default function OnboardingPage() {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) { router.push('/login'); return }
 
+    // Only the onboarding answers: XP, streak and name are left as they are
     const { error: profileError } = await supabase.from('user_profiles').upsert({
       user_id: user.id,
       native_language_code: nativeLanguage,
+      app_language_code: UI_LOCALES.includes(nativeLanguage) ? nativeLanguage : 'en',
+      translation_language_code: TRANSLATION_LANGUAGES.includes(nativeLanguage) ? nativeLanguage : 'en',
       motivation,
       daily_goal_minutes: dailyGoal,
-      reminder_time: reminderTime,
-      travel_destination: isTravel ? destination : null,
-      travel_date: null,
-      display_name: user.user_metadata?.display_name ?? user.email?.split('@')[0] ?? 'Learner',
-      streak_count: 0,
-      longest_streak: 0,
-      total_xp: 0,
+      travel_destination: isTravel ? destination.trim() : null,
     }, { onConflict: 'user_id' })
 
-    if (profileError) { toast.error('Failed to save profile'); setSaving(false); return }
+    if (profileError) { toast.error(t('save_error')); setSaving(false); return }
 
     await supabase.from('user_languages').update({ is_active: false }).eq('user_id', user.id)
 
@@ -304,14 +286,16 @@ export default function OnboardingPage() {
       is_unlocked: true,
     }, { onConflict: 'user_id,language_code' })
 
-    if (langError) { toast.error('Failed to save language preference'); setSaving(false); return }
+    if (langError) { toast.error(t('save_error')); setSaving(false); return }
 
-    toast.success("You're all set! Let's start learning. 🚀")
+    toast.success(t('done'))
     router.push('/learn')
+    router.refresh()
   }
 
   const isLast = stepIdx === steps.length - 1
   const destinations = DESTINATIONS[learningLanguage] ?? []
+  const destinationNames = destinations.map(code => names.region.of(code) ?? code)
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
@@ -333,7 +317,7 @@ export default function OnboardingPage() {
                   : 'bg-primary/10'
               )}
             >
-              {meta.emoji}
+              {STEP_EMOJI[currentKey]}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -347,8 +331,8 @@ export default function OnboardingPage() {
             transition={{ duration: 0.2 }}
             className="text-center"
           >
-            <h1 className="text-2xl font-bold leading-tight">{meta.title}</h1>
-            <p className="text-sm text-muted-foreground mt-1.5 leading-snug">{meta.subtitle}</p>
+            <h1 className="text-2xl font-bold leading-tight">{t(`${currentKey}_title`)}</h1>
+            <p className="text-sm text-muted-foreground mt-1.5 leading-snug">{t(`${currentKey}_subtitle`)}</p>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -384,50 +368,58 @@ export default function OnboardingPage() {
             {/* STEP: Native language */}
             {currentKey === 'native' && (
               <div className="space-y-2">
-                {NATIVE_LANGUAGES.map(lang => (
-                  <button
-                    key={lang.code}
-                    onClick={() => setNativeLanguage(lang.code)}
-                    className={cn(
-                      'w-full flex items-center gap-4 p-4 rounded-2xl border-2 transition-all',
-                      nativeLanguage === lang.code
-                        ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
-                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
-                    )}
-                  >
-                    <span className="text-2xl">{lang.flag}</span>
-                    <span className="font-semibold flex-1 text-left text-sm">{lang.name}</span>
-                    {nativeLanguage === lang.code && (
-                      <div className="size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
-                        <Check size={13} className="text-white" />
-                      </div>
-                    )}
-                  </button>
-                ))}
+                {NATIVE_LANGUAGES.map(code => {
+                  const lang = getLanguage(code)
+                  return (
+                    <button
+                      key={code}
+                      onClick={() => setNativeLanguage(code)}
+                      className={cn(
+                        'w-full flex items-center gap-4 p-4 rounded-2xl border-2 transition-all',
+                        nativeLanguage === code
+                          ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
+                          : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
+                      )}
+                    >
+                      <span className="text-2xl">{lang.flag}</span>
+                      <span className="flex-1 text-left">
+                        <span className="font-semibold text-sm block">{lang.nativeName}</span>
+                        {languageName(code) !== lang.nativeName && (
+                          <span className="text-[11px] text-muted-foreground">{languageName(code)}</span>
+                        )}
+                      </span>
+                      {nativeLanguage === code && (
+                        <div className="size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
+                          <Check size={13} className="text-white" />
+                        </div>
+                      )}
+                    </button>
+                  )
+                })}
               </div>
             )}
 
             {/* STEP: Learning language */}
             {currentKey === 'learn' && (
               <div className="grid grid-cols-2 gap-3">
-                {LEARNING_LANGUAGES.map(lang => (
+                {LEARNING_LANGUAGES.map(code => (
                   <button
-                    key={lang.code}
-                    onClick={() => setLearningLanguage(lang.code)}
-                    disabled={lang.code === nativeLanguage}
+                    key={code}
+                    onClick={() => setLearningLanguage(code)}
+                    disabled={code === nativeLanguage}
                     className={cn(
                       'flex flex-col items-center gap-2.5 p-5 rounded-2xl border-2 transition-all',
-                      learningLanguage === lang.code
+                      learningLanguage === code
                         ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
-                        : lang.code === nativeLanguage
+                        : code === nativeLanguage
                         ? 'border-slate-100 bg-slate-50 dark:border-slate-800 dark:bg-slate-800/20 opacity-30'
                         : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     )}
                   >
-                    <span className="text-3xl">{lang.flag}</span>
-                    <p className="font-bold text-sm">{lang.name}</p>
-                    <p className="text-[11px] text-muted-foreground text-center leading-tight">{lang.description}</p>
-                    {learningLanguage === lang.code && (
+                    <span className="text-3xl">{getLanguage(code).flag}</span>
+                    <p className="font-bold text-sm">{languageName(code)}</p>
+                    <p className="text-[11px] text-muted-foreground text-center leading-tight">{t(`lang_${code}`)}</p>
+                    {learningLanguage === code && (
                       <div className="size-5 rounded-full bg-primary flex items-center justify-center">
                         <Check size={11} className="text-white" />
                       </div>
@@ -453,13 +445,13 @@ export default function OnboardingPage() {
                   >
                     {m.highlight && (
                       <span className="absolute top-2 right-2 text-[8px] font-black uppercase tracking-wider text-primary bg-primary/10 px-1.5 py-0.5 rounded-full">
-                        Popular
+                        {t('popular')}
                       </span>
                     )}
                     <span className="text-3xl">{m.icon}</span>
                     <div className="text-center">
-                      <p className="font-bold text-sm">{m.label}</p>
-                      <p className="text-[11px] text-muted-foreground mt-0.5">{m.description}</p>
+                      <p className="font-bold text-sm">{t(`mot_${m.code}`)}</p>
+                      <p className="text-[11px] text-muted-foreground mt-0.5">{t(`mot_${m.code}_desc`)}</p>
                     </div>
                     {motivation === m.code && (
                       <div className="size-5 rounded-full bg-primary flex items-center justify-center">
@@ -475,20 +467,20 @@ export default function OnboardingPage() {
             {currentKey === 'destination' && (
               <div className="space-y-3">
                 <div className="grid grid-cols-2 gap-3">
-                  {destinations.map(d => (
+                  {destinations.map((code, i) => (
                     <button
-                      key={d.name}
-                      onClick={() => setDestination(d.name)}
+                      key={code}
+                      onClick={() => setDestination(destinationNames[i])}
                       className={cn(
                         'flex items-center gap-3 p-4 rounded-2xl border-2 transition-all',
-                        destination === d.name
+                        destination === destinationNames[i]
                           ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
                           : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                       )}
                     >
-                      <span className="text-2xl">{d.flag}</span>
-                      <span className="font-semibold text-sm flex-1 text-left">{d.name}</span>
-                      {destination === d.name && (
+                      <span className="text-2xl">{flagEmoji(code)}</span>
+                      <span className="font-semibold text-sm flex-1 text-left">{destinationNames[i]}</span>
+                      {destination === destinationNames[i] && (
                         <div className="size-5 rounded-full bg-primary flex items-center justify-center shrink-0">
                           <Check size={11} className="text-white" />
                         </div>
@@ -501,43 +493,12 @@ export default function OnboardingPage() {
                 <div className="relative">
                   <input
                     type="text"
-                    placeholder="Other destination..."
-                    value={destinations.some(d => d.name === destination) ? '' : destination}
+                    placeholder={t('other_destination')}
+                    value={destinationNames.includes(destination) ? '' : destination}
                     onChange={e => setDestination(e.target.value)}
                     className="w-full p-4 rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 text-sm font-medium placeholder:text-slate-400 focus:outline-none focus:border-primary transition-colors"
                   />
                 </div>
-              </div>
-            )}
-
-            {/* STEP: Trip timeline (travel only) */}
-            {currentKey === 'timeline' && (
-              <div className="space-y-3 max-w-sm mx-auto">
-                {TRIP_TIMELINES.map(t => (
-                  <button
-                    key={t.code}
-                    onClick={() => setTripTimeline(t.code)}
-                    className={cn(
-                      'relative w-full flex items-center gap-4 p-5 rounded-2xl border-2 transition-all',
-                      tripTimeline === t.code
-                        ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
-                        : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
-                    )}
-                  >
-                    {(t.urgency === 'ultra' || t.urgency === 'high') && (
-                      <span className="absolute top-2.5 right-3 text-[8px] font-black uppercase tracking-wider text-primary bg-primary/10 px-1.5 py-0.5 rounded-full">
-                        {t.urgency === 'ultra' ? 'Urgent!' : 'Soon'}
-                      </span>
-                    )}
-                    <span className="text-2xl">{t.emoji}</span>
-                    <span className="font-bold text-sm flex-1 text-left">{t.label}</span>
-                    {tripTimeline === t.code && (
-                      <div className="size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
-                        <Check size={13} className="text-white" />
-                      </div>
-                    )}
-                  </button>
-                ))}
               </div>
             )}
 
@@ -547,35 +508,19 @@ export default function OnboardingPage() {
                 {/* Context banner */}
                 <div className="flex items-start gap-2.5 bg-primary/8 border border-primary/15 rounded-2xl p-3.5 mb-4">
                   <span className="text-lg shrink-0">👆</span>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Tap each phrase to mark it learned. These 5 phrases cover{' '}
-                    <span className="font-bold text-foreground">80% of emergency situations</span> abroad.
-                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{t('kit_hint')}</p>
                 </div>
 
                 {phrases.map((phrase, i) => (
                   <PhraseCard
-                    key={i}
+                    key={phrase.key}
                     phrase={phrase}
+                    translation={phraseTranslation(phrase.key)}
                     index={i}
                     revealed={revealedPhrases.has(i)}
-                    onReveal={() => revealPhrase(i)}
+                    onReveal={() => playPhrase(i)}
                   />
                 ))}
-
-                {/* Progress indicator */}
-                <div className="flex items-center gap-2 pt-1">
-                  <div className="flex-1 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-primary rounded-full"
-                      animate={{ width: `${(revealedPhrases.size / phrases.length) * 100}%` }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </div>
-                  <span className="text-[11px] font-bold text-primary tabular-nums shrink-0">
-                    {revealedPhrases.size}/{phrases.length}
-                  </span>
-                </div>
 
                 {revealedPhrases.size === phrases.length && (
                   <motion.div
@@ -586,7 +531,7 @@ export default function OnboardingPage() {
                   >
                     <span className="text-lg">🎉</span>
                     <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 leading-snug">
-                      You already know your first 5 phrases. You&apos;re ready to travel!
+                      {t('kit_done')}
                     </p>
                   </motion.div>
                 )}
@@ -607,15 +552,15 @@ export default function OnboardingPage() {
                         : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     )}
                   >
-                    {g.recommended && (
+                    {'recommended' in g && g.recommended && (
                       <span className="absolute top-2.5 right-3 text-[9px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-1.5 py-0.5 rounded-full">
-                        Recommended
+                        {t('recommended')}
                       </span>
                     )}
                     <span className="text-2xl">{g.emoji}</span>
                     <div className="text-left">
-                      <p className="font-bold text-sm">{g.label}</p>
-                      <p className="text-xs text-muted-foreground">{g.description}</p>
+                      <p className="font-bold text-sm">{t(g.key)}</p>
+                      <p className="text-xs text-muted-foreground">{t('goal_minutes', { minutes: g.minutes })}</p>
                     </div>
                     {dailyGoal === g.minutes && (
                       <div className="ml-auto size-6 rounded-full bg-primary flex items-center justify-center shrink-0">
@@ -627,53 +572,8 @@ export default function OnboardingPage() {
 
                 <div className="flex items-start gap-3 bg-primary/5 border border-primary/10 rounded-2xl p-4">
                   <span className="text-lg mt-0.5">💡</span>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Even 5 minutes a day adds up to over 30 hours of practice per year. Consistency is the key to fluency.
-                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{t('goal_tip')}</p>
                 </div>
-              </div>
-            )}
-
-            {/* STEP: Reminder */}
-            {currentKey === 'reminder' && (
-              <div className="space-y-3 max-w-sm mx-auto">
-                <div className="grid grid-cols-2 gap-3">
-                  {REMINDER_TIMES.map(r => (
-                    <button
-                      key={r.time}
-                      onClick={() => setReminderTime(r.time)}
-                      className={cn(
-                        'flex flex-col items-center gap-2 p-4 rounded-2xl border-2 transition-all',
-                        reminderTime === r.time
-                          ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
-                          : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
-                      )}
-                    >
-                      <span className="text-2xl">{r.icon}</span>
-                      <div className="text-center">
-                        <p className="font-bold text-sm">{r.label}</p>
-                        <p className="text-xs text-muted-foreground">{r.time}</p>
-                      </div>
-                      {reminderTime === r.time && (
-                        <div className="size-5 rounded-full bg-primary flex items-center justify-center">
-                          <Check size={11} className="text-white" />
-                        </div>
-                      )}
-                    </button>
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => setReminderTime('Off')}
-                  className={cn(
-                    'w-full p-4 rounded-2xl border-2 transition-all text-sm font-medium text-muted-foreground',
-                    reminderTime === 'Off'
-                      ? 'border-primary bg-primary/5 text-primary'
-                      : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
-                  )}
-                >
-                  🔕 &nbsp; Skip reminders for now
-                </button>
               </div>
             )}
 
@@ -689,7 +589,7 @@ export default function OnboardingPage() {
             disabled={saving}
             className="w-full flex items-center justify-center gap-2 rounded-2xl h-13 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20 disabled:opacity-60"
           >
-            {saving ? 'Setting up...' : "Let's Start Learning 🚀"}
+            {saving ? t('saving') : t('start')}
           </button>
         ) : (
           <button
@@ -697,13 +597,8 @@ export default function OnboardingPage() {
             disabled={!canContinue}
             className="w-full flex items-center justify-center gap-2 rounded-2xl h-13 bg-primary text-white text-base font-bold transition-transform active:scale-95 shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {currentKey === 'kit' && revealedPhrases.size < phrases.length
-              ? `Tap all phrases (${revealedPhrases.size}/${phrases.length})`
-              : 'Continue'
-            }
-            {(currentKey !== 'kit' || revealedPhrases.size === phrases.length) && (
-              <ChevronRight size={18} />
-            )}
+            {t('continue')}
+            <ChevronRight size={18} />
           </button>
         )}
 
@@ -713,7 +608,7 @@ export default function OnboardingPage() {
             className="w-full flex items-center justify-center gap-1.5 text-sm text-muted-foreground py-2"
           >
             <ArrowLeft size={14} />
-            Back
+            {t('back')}
           </button>
         )}
       </div>
