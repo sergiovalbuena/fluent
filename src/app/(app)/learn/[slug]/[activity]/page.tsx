@@ -1419,7 +1419,7 @@ function ActivityHero({
   iconColorClass: string
   badgeLabel: string
   badgeColorClass: string
-  /** Only when it adds information (e.g. a story's name); the badge already names the activity */
+  /** Lesson name (or the story's name) shown under the activity badge */
   title?: string
   count?: number
   unit?: string
@@ -1589,6 +1589,7 @@ export default function LessonPage() {
   const [lesson,       setLesson]       = useState<{ title: string; content: LessonContent } | null>(null)
   const [lessonId,     setLessonId]     = useState('')
   const [moduleId,     setModuleId]     = useState('')
+  const [moduleTitle,  setModuleTitle]  = useState('')
   const [languageCode, setLanguageCode] = useState('')
   const [loading,      setLoading]      = useState(true)
   const [saving,       setSaving]       = useState(false)
@@ -1682,7 +1683,7 @@ export default function LessonPage() {
 
       const { data: mod } = await supabase
         .from('modules')
-        .select('id, language_code')
+        .select('id, language_code, title')
         .eq('slug', slug)
         .eq('language_code', activeLanguage)
         .limit(1)
@@ -1690,6 +1691,7 @@ export default function LessonPage() {
 
       if (!mod) { setLoading(false); return }
       setLanguageCode(mod.language_code)
+      setModuleTitle(mod.title)
 
       const { data } = await supabase
         .from('lessons')
@@ -2029,6 +2031,7 @@ export default function LessonPage() {
               icon={BookOpen}
               iconColorClass="text-indigo-500"
               badgeLabel="Vocabulary"
+              title={moduleTitle}
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
               count={words.length}
               unit="words"
@@ -2177,6 +2180,7 @@ export default function LessonPage() {
                 icon={MessageSquare}
                 iconColorClass="text-teal-600 dark:text-teal-400"
                 badgeLabel="Phrases"
+                title={moduleTitle}
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
                 count={phrases.length}
                 unit="phrases"
@@ -2342,6 +2346,7 @@ export default function LessonPage() {
                 icon={HelpCircle}
                 iconColorClass="text-violet-500"
                 badgeLabel="Q&A"
+                title={moduleTitle}
                 badgeColorClass="text-violet-500 bg-violet-500/10"
                 count={questions.length}
                 unit="questions"
