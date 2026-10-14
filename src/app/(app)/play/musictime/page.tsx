@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Music, Volume2, CheckCircle2, XCircle, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { getLanguage } from '@/lib/languages'
+import { speak as speakText } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
@@ -62,7 +62,6 @@ async function saveGameResult(correct: number, total: number) {
   return awarded
 }
 
-const hasSpeech = typeof window !== 'undefined' && 'speechSynthesis' in window
 
 function renderDisplayLine(displayLine: string) {
   const parts = displayLine.split('___')
@@ -91,15 +90,7 @@ export default function MusicTimePage() {
   const [reward, setReward] = useState({ xp: 5, gems: 3 })
 
   const speak = useCallback((text: string) => {
-    if (!hasSpeech) return
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = getLanguage(languageCode).speechLocale
-    utterance.rate = 0.82
-    utterance.onstart = () => setIsSpeaking(true)
-    utterance.onend = () => setIsSpeaking(false)
-    utterance.onerror = () => setIsSpeaking(false)
-    window.speechSynthesis.speak(utterance)
+    speakText(text, languageCode, { onStart: () => setIsSpeaking(true), onEnd: () => setIsSpeaking(false) })
   }, [languageCode])
 
   useEffect(() => {

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Mic, Volume2, CheckCircle2, XCircle, ChevronRight, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { getLanguage, pickTranslation } from '@/lib/languages'
+import { pickTranslation, speak as speakText } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
@@ -55,7 +55,8 @@ async function saveGameResult(correct: number, total: number) {
 }
 
 const TOTAL_ROUNDS = 10
-const hasSpeech = typeof window !== 'undefined' && 'speechSynthesis' in window
+// AI voice (with the browser's voice as fallback) works wherever audio does
+const hasSpeech = typeof window !== 'undefined'
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function DictationPage() {
@@ -97,15 +98,10 @@ export default function DictationPage() {
   }, [languageCode, translationLang])
 
   const speak = useCallback((text: string) => {
-    if (!hasSpeech) return
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = getLanguage(languageCode).speechLocale
-    utterance.rate = 0.85
-    utterance.onstart = () => { speakingRef.current = true; setIsSpeaking(true) }
-    utterance.onend = () => { speakingRef.current = false; setIsSpeaking(false) }
-    utterance.onerror = () => { speakingRef.current = false; setIsSpeaking(false) }
-    window.speechSynthesis.speak(utterance)
+    speakText(text, languageCode, {
+      onStart: () => { speakingRef.current = true; setIsSpeaking(true) },
+      onEnd: () => { speakingRef.current = false; setIsSpeaking(false) },
+    })
   }, [languageCode])
 
   // Auto-speak when round changes

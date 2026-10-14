@@ -19,7 +19,7 @@ import { AppTopbar } from '@/components/layout/app-topbar'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { toast } from 'sonner'
 import { cn } from '@/lib/utils'
-import { getLanguage, localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion } from '@/lib/languages'
+import { localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion, type SpeechHandle } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
 import { awardGems, getActiveBoosts } from '@/lib/rewards'
@@ -1634,7 +1634,7 @@ export default function LessonPage() {
   const [showStoryChallenge, setShowStoryChallenge]   = useState(false)
   const [showTranslation, setShowTranslation]         = useState(false)
   const [audioStatus, setAudioStatus]                 = useState<'idle' | 'playing' | 'paused'>('idle')
-  const storyUtteranceRef = useRef<SpeechSynthesisUtterance | null>(null)
+  const storySpeechRef = useRef<SpeechHandle | null>(null)
 
   // Arrange
   const [arrangeIndex,      setArrangeIndex]      = useState(0)
@@ -2576,25 +2576,17 @@ export default function LessonPage() {
                   : null
 
                 function playStory() {
-                  if (typeof window === 'undefined' || !window.speechSynthesis) return
-                  window.speechSynthesis.cancel()
-                  const u = new SpeechSynthesisUtterance(content.story ?? '')
-                  u.lang = getLanguage(languageCode).speechLocale
-                  u.rate = 0.85
-                  u.onend   = () => setAudioStatus('idle')
-                  u.onpause = () => setAudioStatus('paused')
-                  storyUtteranceRef.current = u
                   setAudioStatus('playing')
-                  window.speechSynthesis.speak(u)
+                  storySpeechRef.current = speak(content.story ?? '', languageCode, { onEnd: () => setAudioStatus('idle') })
                 }
                 function pauseStory() {
-                  window.speechSynthesis.pause(); setAudioStatus('paused')
+                  storySpeechRef.current?.pause(); setAudioStatus('paused')
                 }
                 function resumeStory() {
-                  window.speechSynthesis.resume(); setAudioStatus('playing')
+                  storySpeechRef.current?.resume(); setAudioStatus('playing')
                 }
                 function stopStory() {
-                  window.speechSynthesis.cancel(); setAudioStatus('idle')
+                  storySpeechRef.current?.stop(); setAudioStatus('idle')
                 }
 
                 return (

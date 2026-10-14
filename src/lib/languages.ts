@@ -52,24 +52,85 @@ export function getGreeting(langCode: string, hour: number): string | null {
 }
 
 // ── Speech ────────────────────────────────────────────────────────────────────
+// Native-sounding AI voice from /api/tts (cached server-side); falls back to the
+// browser's built-in voice if that isn't available (signed out, offline, not configured).
 
 export function canSpeak(): boolean {
-  return typeof window !== 'undefined' && 'speechSynthesis' in window
+  return typeof window !== 'undefined' && ('Audio' in window || 'speechSynthesis' in window)
 }
 
-export function speak(
-  text: string,
-  langCode: string,
-  options: { rate?: number; onEnd?: () => void } = {},
-): SpeechSynthesisUtterance | null {
-  if (!canSpeak()) return null
-  window.speechSynthesis.cancel()
+export type SpeakOptions = {
+  /** Playback speed, 1 = natural (the AI voice already speaks slowly and clearly) */
+  rate?: number
+  onStart?: () => void
+  onEnd?: () => void
+}
+
+export type SpeechHandle = { pause: () => void; resume: () => void; stop: () => void }
+
+const NOOP_HANDLE: SpeechHandle = { pause() {}, resume() {}, stop() {} }
+
+let currentAudio: HTMLAudioElement | null = null
+
+export function stopSpeaking() {
+  if (typeof window === 'undefined') return
+  if (currentAudio) {
+    currentAudio.pause()
+    currentAudio.removeAttribute('src')
+    currentAudio = null
+  }
+  window.speechSynthesis?.cancel()
+}
+
+export function ttsUrl(text: string, langCode: string): string {
+  return `/api/tts?lang=${encodeURIComponent(langCode)}&text=${encodeURIComponent(text.replace(/\s+/g, ' ').trim())}`
+}
+
+function browserSpeak(text: string, langCode: string, options: SpeakOptions): SpeechHandle {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) { options.onEnd?.(); return NOOP_HANDLE }
   const u = new SpeechSynthesisUtterance(text)
   u.lang = getLanguage(langCode).speechLocale
-  u.rate = options.rate ?? 0.85
-  if (options.onEnd) u.onend = options.onEnd
+  u.rate = 0.85 * (options.rate ?? 1)
+  u.onstart = () => options.onStart?.()
+  u.onend = () => options.onEnd?.()
+  u.onerror = () => options.onEnd?.()
   window.speechSynthesis.speak(u)
-  return u
+  return {
+    pause: () => window.speechSynthesis.pause(),
+    resume: () => window.speechSynthesis.resume(),
+    stop: () => window.speechSynthesis.cancel(),
+  }
+}
+
+export function speak(text: string, langCode: string, options: SpeakOptions = {}): SpeechHandle {
+  if (typeof window === 'undefined' || !text.trim()) return NOOP_HANDLE
+  stopSpeaking()
+
+  const audio = new Audio(ttsUrl(text, langCode))
+  audio.playbackRate = options.rate ?? 1
+  currentAudio = audio
+  let fallback: SpeechHandle | null = null
+  let started = false
+
+  const useFallback = () => {
+    if (currentAudio !== audio || fallback || started) return   // superseded, or already playing
+    currentAudio = null
+    fallback = browserSpeak(text, langCode, options)
+  }
+
+  audio.onplaying = () => { started = true; options.onStart?.() }
+  audio.onended = () => { if (currentAudio === audio) currentAudio = null; options.onEnd?.() }
+  audio.onerror = useFallback
+  audio.play().catch(useFallback)
+
+  return {
+    pause: () => (fallback ? fallback.pause() : audio.pause()),
+    resume: () => (fallback ? fallback.resume() : void audio.play().catch(() => {})),
+    stop: () => {
+      if (fallback) fallback.stop()
+      else { audio.pause(); if (currentAudio === audio) currentAudio = null }
+    },
+  }
 }
 
 // ── Articles ──────────────────────────────────────────────────────────────────
