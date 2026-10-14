@@ -49,7 +49,7 @@ export default function NotFound() {
         {/* Message */}
         <p className="text-lg font-bold text-white">Lost in translation</p>
         <p className="text-sm text-white/35 mt-2 max-w-[22rem] leading-relaxed">
-          This page doesn't exist in any language we know.
+          This page doesn&apos;t exist in any language we know.
         </p>
 
         {/* CTA */}

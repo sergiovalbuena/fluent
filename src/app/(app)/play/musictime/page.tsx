@@ -112,6 +112,8 @@ export default function MusicTimePage() {
     const current = rounds[qIndex]
     if (current) {
       setTimeout(() => speak(current.fullLine), 300)
+      // Reset the round's UI together with the auto-speak side effect
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setAnswerState('idle')
       setSelectedOption(null)
     }

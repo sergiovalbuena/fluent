@@ -207,7 +207,7 @@ export default function ShortStoryPage() {
               className="w-full py-3.5 rounded-2xl text-base font-bold text-white transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
               style={{ background: 'linear-gradient(135deg, #9a3412, #c2410c)' }}
             >
-              I've read it — take the quiz →
+              I&apos;ve read it — take the quiz →
             </button>
           </motion.div>
         )}

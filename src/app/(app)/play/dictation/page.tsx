@@ -119,6 +119,8 @@ export default function DictationPage() {
     const current = rounds[roundIndex]
     if (current) {
       setTimeout(() => speak(current.word), 300)
+      // Reset the round's UI together with the auto-speak side effect
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setInputValue('')
       setAnswerState('idle')
       inputRef.current?.focus()
@@ -198,7 +200,7 @@ export default function DictationPage() {
             {!hasSpeech && (
               <div className="w-full bg-rose-950/50 border border-rose-800/40 rounded-2xl p-4 text-center">
                 <p className="text-rose-300 text-sm">
-                  Your browser doesn't support speech synthesis. Please use Chrome or Safari.
+                  Your browser doesn&apos;t support speech synthesis. Please use Chrome or Safari.
                 </p>
               </div>
             )}

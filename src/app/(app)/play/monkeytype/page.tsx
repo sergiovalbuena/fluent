@@ -367,7 +367,7 @@ export default function MonkeyTypePage() {
               <Keyboard size={44} className="text-white" />
             </div>
 
-            <h2 className="text-3xl font-bold text-white">Time's up!</h2>
+            <h2 className="text-3xl font-bold text-white">Time&apos;s up!</h2>
 
             <div className="grid grid-cols-2 gap-4 w-full max-w-xs">
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-lime-400/20">

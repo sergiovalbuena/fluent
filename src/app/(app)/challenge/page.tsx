@@ -105,6 +105,8 @@ export default function ChallengePage() {
 
   useEffect(() => {
     const days = getWeekDays()
+    // localStorage is only available after mount
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setWeekDays(days)
     const completed: Record<string, boolean> = {}
     days.forEach(({ key }) => {
@@ -131,7 +133,7 @@ export default function ChallengePage() {
             <Trophy className="text-primary" size={26} />
             Daily Challenge
           </h1>
-          <p className="text-muted-foreground text-sm mt-1">A new challenge every day — earn 2× XP while it's live</p>
+          <p className="text-muted-foreground text-sm mt-1">A new challenge every day — earn 2× XP while it&apos;s live</p>
         </div>
 
         <div className="grid grid-flow-dense grid-cols-12 gap-4">
@@ -157,7 +159,7 @@ export default function ChallengePage() {
                 <span className="text-green-300 text-sm font-bold">Challenge completed today!</span>
               </div>
             ) : (
-              <p className="text-slate-400 text-sm">Pick a mode below to start today's challenge</p>
+              <p className="text-slate-400 text-sm">Pick a mode below to start today&apos;s challenge</p>
             )}
           </Block>
 

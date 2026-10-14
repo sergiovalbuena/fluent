@@ -161,7 +161,7 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-2">{moduleTitle}</h2>
           <p className="text-muted-foreground max-w-sm">
-            Prove you've mastered this module. Answer {totalQ} questions — get 70% or more to earn your Crown.
+            Prove you&apos;ve mastered this module. Answer {totalQ} questions — get 70% or more to earn your Crown.
           </p>
         </div>
         <div className="flex gap-3 text-sm text-muted-foreground">
@@ -261,7 +261,7 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
           <>
             <h2 className="text-2xl font-bold text-foreground mb-2">Crown Earned!</h2>
             <p className="text-muted-foreground">
-              You've mastered <strong>{moduleTitle}</strong>. This knowledge is yours for life.
+              You&apos;ve mastered <strong>{moduleTitle}</strong>. This knowledge is yours for life.
             </p>
           </>
         ) : (
@@ -298,12 +298,12 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
             Try Again <Trophy size={16} />
           </button>
         )}
-        <a
+        <Link
           href="/learn"
           className="flex items-center gap-2 bg-muted text-foreground font-bold px-6 py-3 rounded-2xl hover:bg-muted/80 transition-colors"
         >
           Back to Modules
-        </a>
+        </Link>
       </div>
     </motion.div>
   )

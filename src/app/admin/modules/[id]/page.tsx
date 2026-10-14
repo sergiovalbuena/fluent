@@ -98,7 +98,7 @@ export default async function ModuleDetailPage({ params }: PageProps) {
 
   if (!mod) notFound()
 
-  const module = mod as ModuleRow
+  const moduleRow = mod as ModuleRow
   const lessonList = (lessons ?? []) as LessonRow[]
 
   return (
@@ -110,14 +110,14 @@ export default async function ModuleDetailPage({ params }: PageProps) {
         </Link>
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-3">
-            <span className="text-3xl">{module.icon}</span>
+            <span className="text-3xl">{moduleRow.icon}</span>
             <div>
-              <h1 className="text-2xl font-bold text-slate-900">{module.title}</h1>
+              <h1 className="text-2xl font-bold text-slate-900">{moduleRow.title}</h1>
               <div className="flex items-center gap-2 mt-1">
-                <code className="text-xs bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">{module.slug}</code>
-                <span className="text-xs text-slate-400">{module.language_code.toUpperCase()}</span>
-                <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${module.is_published ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-500'}`}>
-                  {module.is_published ? 'Published' : 'Draft'}
+                <code className="text-xs bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">{moduleRow.slug}</code>
+                <span className="text-xs text-slate-400">{moduleRow.language_code.toUpperCase()}</span>
+                <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${moduleRow.is_published ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-500'}`}>
+                  {moduleRow.is_published ? 'Published' : 'Draft'}
                 </span>
               </div>
             </div>

@@ -136,6 +136,8 @@ export default function ShortVideoPage() {
 
   useEffect(() => {
     const stored = localStorage.getItem('fluent-watched-videos')
+    // localStorage is only available after mount
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (stored) setWatchedIds(JSON.parse(stored) as string[])
   }, [])
 

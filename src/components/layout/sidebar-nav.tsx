@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { BarChart2, User, Home, Gamepad2, Gem, Bot, ChevronDown, BookOpen, Video, Users, Bookmark } from 'lucide-react'
@@ -24,11 +24,9 @@ function SidebarContent({ modules }: { modules: Module[] }) {
   const t = useTranslations('nav')
   const pathname = usePathname()
   const { open: sidebarOpen, animate } = useSidebar()
-  const [lessonsOpen, setLessonsOpen] = useState(true)
-
-  useEffect(() => {
-    if (!sidebarOpen) setLessonsOpen(false)
-  }, [sidebarOpen])
+  const [lessonsOpenState, setLessonsOpen] = useState(true)
+  // Lessons collapse whenever the sidebar is collapsed
+  const lessonsOpen = sidebarOpen && lessonsOpenState
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(href + '/')

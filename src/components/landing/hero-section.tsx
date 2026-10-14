@@ -34,6 +34,8 @@ function TypingDemo() {
       return () => clearTimeout(t)
     }
 
+    // Typing animation state machine driven by timers
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (typed.length >= target.length) { setDone(true); return }
 
     const delay = 90 + Math.random() * 70

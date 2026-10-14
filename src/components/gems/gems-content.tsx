@@ -110,6 +110,8 @@ export function GemsPageContent({ totalGems: initialGems, userId }: { totalGems:
     setGems(g => g - boost.cost)
 
     if (boost.durationMs > 0) {
+      // Runs in a click handler, not during render
+      // eslint-disable-next-line react-hooks/purity
       localStorage.setItem(boost.storageKey, String(Date.now() + boost.durationMs))
     } else {
       const current = Number(localStorage.getItem(boost.storageKey) ?? 0)
@@ -157,7 +159,7 @@ export function GemsPageContent({ totalGems: initialGems, userId }: { totalGems:
               </div>
               <div className="flex-1 flex flex-col justify-center gap-2">
                 <p className="text-lg md:text-xl font-bold text-white leading-snug">
-                  "Ser" vs "Estar" — both mean "to be" in Spanish, but they're not interchangeable.
+                  &quot;Ser&quot; vs &quot;Estar&quot; — both mean &quot;to be&quot; in Spanish, but they&apos;re not interchangeable.
                 </p>
                 <p className="text-sm text-white/55 leading-relaxed">
                   Use <strong className="text-white/80 font-bold">ser</strong> for permanent traits (origin, identity, characteristics).{' '}

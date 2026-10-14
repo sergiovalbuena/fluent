@@ -2,13 +2,14 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, RotateCcw, Star } from 'lucide-react'
-import { useMemo } from 'react'
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 const CONFETTI_COLORS = ['#ff8052', '#fbbf24', '#34d399', '#60a5fa', '#a78bfa', '#f472b6', '#fb923c']
 
 function Confetti() {
-  const pieces = useMemo(
+  // Random once per mount (lazy state initializer, not recomputed on render)
+  const [pieces] = useState(
     () =>
       Array.from({ length: 32 }, (_, i) => ({
         id: i,
@@ -20,7 +21,6 @@ function Confetti() {
         h: 4 + Math.random() * 6,
         rot: Math.random() * 360,
       })),
-    [],
   )
 
   return (

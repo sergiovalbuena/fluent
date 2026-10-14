@@ -106,6 +106,8 @@ export default function FlashCardsPage() {
 
   function handleStillLearning() {
     const [head, ...rest] = deck
+    // Runs in a click handler, not during render
+    // eslint-disable-next-line react-hooks/purity
     const insertAt = Math.floor(Math.random() * (rest.length + 1))
     const next = [...rest.slice(0, insertAt), head, ...rest.slice(insertAt)]
     if (next.length === 0) {

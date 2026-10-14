@@ -37,6 +37,8 @@ export function FloatingNav({
 
   // Also show on first paint before any scroll
   useEffect(() => {
+    // window is only available after mount
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setAtTop(window.scrollY < 60)
   }, [])
 

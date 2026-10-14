@@ -105,6 +105,8 @@ export default function MariaPage() {
   // ── Initial greeting ─────────────────────────────────────────────────────────
   useEffect(() => {
     const langName = LANG_NAMES[languageCode] ?? 'your language'
+    // Start a fresh conversation whenever the course language changes
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMessages([{
       role: 'assistant',
       id: 'welcome',
@@ -122,7 +124,7 @@ export default function MariaPage() {
     const userText = text.trim()
     if (!userText || loading) return
 
-    const userMsg: Message = { role: 'user', content: userText, id: Date.now().toString() }
+    const userMsg: Message = { role: 'user', content: userText, id: crypto.randomUUID() }
     const nextMessages = [...messages, userMsg]
     setMessages(nextMessages)
     setInput('')
@@ -156,7 +158,7 @@ export default function MariaPage() {
       setApiReady(true)
 
       // Stream response
-      const assistantId = (Date.now() + 1).toString()
+      const assistantId = crypto.randomUUID()
       setMessages(prev => [...prev, { role: 'assistant', id: assistantId, content: '' }])
       setLoading(false)
 

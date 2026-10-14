@@ -27,7 +27,8 @@ export const TextGenerateEffect = ({
       { opacity: 1, filter: filter ? "blur(0px)" : "none" },
       { duration: duration ?? 1, delay: stagger(0.07) }
     );
-  }, [scope.current]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [words]);
 
   const renderWords = () => (
     <motion.div ref={scope}>

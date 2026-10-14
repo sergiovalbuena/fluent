@@ -586,7 +586,7 @@ export default function OnboardingPage() {
                   >
                     <span className="text-lg">🎉</span>
                     <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 leading-snug">
-                      You already know your first 5 phrases. You're ready to travel!
+                      You already know your first 5 phrases. You&apos;re ready to travel!
                     </p>
                   </motion.div>
                 )}

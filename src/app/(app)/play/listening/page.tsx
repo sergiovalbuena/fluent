@@ -75,6 +75,8 @@ export default function ListeningPage() {
 
   // Check speech support
   useEffect(() => {
+    // speechSynthesis is only known after mount
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setSpeechSupported(typeof window !== 'undefined' && 'speechSynthesis' in window)
   }, [])
 

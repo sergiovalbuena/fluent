@@ -57,7 +57,7 @@ const features: FeatureItem[] = [
   },
 ]
 
-interface LinkProps extends FeatureItem {}
+type LinkProps = FeatureItem
 
 const FeatureLink = memo(({ heading, subheading, emoji, gradient, href }: LinkProps) => {
   const ref = useRef<HTMLAnchorElement | null>(null)
@@ -135,6 +135,7 @@ const FeatureLink = memo(({ heading, subheading, emoji, gradient, href }: LinkPr
     </motion.a>
   )
 })
+FeatureLink.displayName = 'FeatureLink'
 
 export function Features() {
   return (

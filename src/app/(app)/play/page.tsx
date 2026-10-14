@@ -228,7 +228,7 @@ export default function PlayPage() {
               {/* Title */}
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-                  Today's Challenge
+                  Today&apos;s Challenge
                 </h2>
                 <p className="text-sm text-white/55 mt-1">
                   5 mini-games · Earn bonus XP · Resets daily

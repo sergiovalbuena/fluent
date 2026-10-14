@@ -136,6 +136,8 @@ export default function ProfilePage() {
 
   // ── Load user + profile on mount ────────────────────────────────────────────
   useEffect(() => {
+    // Mounted flag for client-only UI
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true)
     const supabase = createClient()
 

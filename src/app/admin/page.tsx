@@ -69,6 +69,8 @@ export default async function AdminOverviewPage() {
 
   function relativeDate(date: string | null): string {
     if (!date) return 'Never'
+    // Server component: rendered once per request
+    // eslint-disable-next-line react-hooks/purity
     const diff = Date.now() - new Date(date).getTime()
     const days = Math.floor(diff / 86400000)
     if (days === 0) return 'Today'
