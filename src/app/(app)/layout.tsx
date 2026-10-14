@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { BottomNav } from '@/components/layout/bottom-nav'
 import { SidebarNav } from '@/components/layout/sidebar-nav'
 import { GemsToastProvider } from '@/components/ui/gems-toast'
+import { MariaWidget } from '@/components/maria/maria-widget'
 import { IntlProvider } from '@/components/providers/intl-provider'
 import { TopbarProvider } from '@/components/providers/topbar-provider'
 import { LanguageProvider } from '@/components/providers/language-provider'
@@ -50,6 +51,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         </div>
         <BottomNav />
         <GemsToastProvider />
+        <MariaWidget />
       </div>
     </TopbarProvider>
     </LanguageProvider>

@@ -124,15 +124,72 @@ function StarArc({ stars }: { stars: number }) {
   )
 }
 
+// ── Locked level tooltip ──────────────────────────────────────────────────────
+
+// Best case per activity, mirroring the lesson player's rules: 10 XP + 20 first
+// completion + 10 for three stars, and 2 gems for a perfect score
+const MAX_XP_PER_ACTIVITY = 40
+const MAX_GEMS_PER_ACTIVITY = 2
+
+type UnlockInfo = { prevNumber: number; prevTitle: string; prevDone: number; prevTotal: number; stepsAway: number }
+
+function LockedTooltip({ mod, unlock, align }: { mod: LearnModule; unlock: UnlockInfo; align: 'left' | 'right' }) {
+  const t = useTranslations('learn')
+  return (
+    <div
+      role="tooltip"
+      className={cn(
+        'pointer-events-none absolute bottom-[calc(100%+16px)] z-50 w-[250px] text-left rounded-2xl bg-[#1c2131] text-white p-3.5 shadow-[0_6px_0_rgba(0,0,0,0.35),0_18px_40px_-12px_rgba(0,0,0,0.6)] border border-white/10',
+        'opacity-0 translate-y-1 scale-95 transition-all duration-150',
+        'group-hover/lock:opacity-100 group-hover/lock:translate-y-0 group-hover/lock:scale-100',
+        'group-focus/lock:opacity-100 group-focus/lock:translate-y-0 group-focus/lock:scale-100',
+        align === 'left' ? 'left-0' : 'right-0',
+      )}
+    >
+      <div className="flex items-center gap-2">
+        <span className="size-7 rounded-lg bg-white/10 flex items-center justify-center"><Lock size={13} strokeWidth={2.6} /></span>
+        <p className="text-[11px] font-black uppercase tracking-widest text-white/70">{t('locked_title')}</p>
+      </div>
+
+      <p className="mt-2.5 text-[13px] font-bold leading-snug">{t('unlock_next', { n: pad2(unlock.prevNumber) })}</p>
+      <div className="mt-2">
+        <p className="text-[11px] text-white/60 truncate">
+          {t('prev_progress', { title: unlock.prevTitle, done: unlock.prevDone, total: unlock.prevTotal })}
+        </p>
+        <ActivityPips done={unlock.prevDone} total={unlock.prevTotal} className="mt-1.5 text-primary" />
+      </div>
+      {unlock.stepsAway > 1 && (
+        <p className="mt-2 text-[11px] font-semibold text-white/70">🏁 {t('unlock_far', { count: unlock.stepsAway })}</p>
+      )}
+
+      <div className="mt-3 pt-3 border-t border-white/10">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mb-1.5">{t('rewards')}</p>
+        <div className="flex flex-wrap gap-1.5 text-[11px] font-bold">
+          <span className="inline-flex items-center gap-0.5 rounded-full bg-amber-400/15 text-amber-300 px-2 py-0.5">
+            <Star size={10} className="fill-amber-300" /><Star size={10} className="fill-amber-300" /><Star size={10} className="fill-amber-300" />
+          </span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-primary/20 text-[#ffb197] px-2 py-0.5">
+            ⚡ {t('reward_xp', { xp: mod.totalLessons * MAX_XP_PER_ACTIVITY })}
+          </span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-sky-400/15 text-sky-300 px-2 py-0.5">
+            <Gem size={10} /> {t('reward_gems', { gems: mod.totalLessons * MAX_GEMS_PER_ACTIVITY })}
+          </span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // ── Level (lesson) ────────────────────────────────────────────────────────────
 
-function Level({ mod, number, x, row, labelSide, world }: {
+function Level({ mod, number, x, row, labelSide, world, unlock }: {
   mod: LearnModule
   number: number
   x: number
   row: number
   labelSide: 'left' | 'right'
   world: World
+  unlock?: UnlockInfo
 }) {
   const t = useTranslations('learn')
   const isDone = mod.state === 'completed'
@@ -247,8 +304,14 @@ function Level({ mod, number, x, row, labelSide, world }: {
 
   const content = (
     <>
-      <div className="absolute z-10" style={{ left: `calc(${x}% - ${half}px)`, top: top - half }}>
-        {node}
+      <div className="absolute z-10 hover:z-40 focus-within:z-40" style={{ left: `calc(${x}% - ${half}px)`, top: top - half }}>
+        {isLocked && unlock ? (
+          // Focusable so a tap on mobile shows the tooltip too
+          <button type="button" className="group/lock relative block cursor-help focus:outline-none" aria-label={t('locked_title')}>
+            <LockedTooltip mod={mod} unlock={unlock} align={x <= 50 ? 'left' : 'right'} />
+            {node}
+          </button>
+        ) : node}
       </div>
       <div
         className="absolute z-10 -translate-y-1/2"
@@ -261,7 +324,7 @@ function Level({ mod, number, x, row, labelSide, world }: {
     </>
   )
 
-  if (isLocked) return <div title={t('locked_hint')}>{content}</div>
+  if (isLocked) return <div>{content}</div>
   return (
     <Link href={`/learn/${mod.slug}`} aria-label={`${t('lesson_number', { n: number })}: ${mod.title}`} className="focus-visible:outline-none">
       {content}
@@ -324,6 +387,19 @@ function WorldSection({ unit, index, modules, translationLang }: {
 }) {
   const t = useTranslations('learn')
   const world = WORLDS[index % WORLDS.length]
+  // Where the learner is now; locked levels say what's needed to reach them
+  const reachIdx = Math.max(modules.findIndex(m => m.state === 'current'), 0)
+  const unlockInfo = (globalIdx: number): UnlockInfo | undefined => {
+    const prev = modules[globalIdx - 1]
+    if (!prev) return undefined
+    return {
+      prevNumber: globalIdx,
+      prevTitle: prev.title,
+      prevDone: prev.lessonsCompleted,
+      prevTotal: prev.totalLessons,
+      stepsAway: globalIdx - reachIdx,
+    }
+  }
   const unitModules = modules.slice(unit.from - 1, unit.to)
   // One extra stop at the end of the road for the chest
   const xs = [...unitModules.map((_, i) => nodeX(unit.from - 1 + i)), nodeX(unit.to)]
@@ -418,7 +494,16 @@ function WorldSection({ unit, index, modules, translationLang }: {
         </svg>
 
         {unitModules.map((mod, i) => (
-          <Level key={mod.id} mod={mod} number={unit.from + i} x={xs[i]} row={i} labelSide={sideOf(xs[i])} world={world} />
+          <Level
+            key={mod.id}
+            mod={mod}
+            number={unit.from + i}
+            x={xs[i]}
+            row={i}
+            labelSide={sideOf(xs[i])}
+            world={world}
+            unlock={mod.state === 'locked' ? unlockInfo(unit.from - 1 + i) : undefined}
+          />
         ))}
         <Chest x={xs[xs.length - 1]} row={xs.length - 1} labelSide={sideOf(xs[xs.length - 1])} world={world} open={isComplete} />
       </div>

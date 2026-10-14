@@ -6,6 +6,7 @@ import { Bot, Send, RotateCcw, Sparkles } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
+import { useActiveLanguage } from '@/components/providers/language-provider'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Role = 'user' | 'assistant'
@@ -77,6 +78,7 @@ function Bubble({ message }: { message: Message }) {
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function MariaPage() {
+  const { translationLang } = useActiveLanguage()
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -140,6 +142,7 @@ export default function MariaPage() {
         body: JSON.stringify({
           messages: nextMessages.map(m => ({ role: m.role, content: m.content })),
           languageCode,
+          explainLanguage: translationLang,
         }),
       })
 

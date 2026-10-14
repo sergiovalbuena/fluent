@@ -7,6 +7,9 @@ import { AppTopbar } from '@/components/layout/app-topbar'
 import { Bookmark, Trash2, ArrowRight, RotateCcw, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { toast } from 'sonner'
+import { useTranslations } from 'next-intl'
+import { Link2 } from 'lucide-react'
+import { StudyLinks } from '@/components/saved/study-links'
 
 type SavedItem = {
   id: string
@@ -140,6 +143,8 @@ export default function SavedPage() {
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState<'all' | SavedItem['type']>('all')
   const [practicing, setPracticing] = useState(false)
+  const [section, setSection] = useState<'items' | 'links'>('items')
+  const t = useTranslations('saved')
 
   useEffect(() => {
     const supabase = createClient()
@@ -186,6 +191,29 @@ export default function SavedPage() {
       <AppTopbar title="Saved" />
 
       <main className="flex-1 px-4 py-5 pb-28 md:pb-8 max-w-2xl mx-auto w-full">
+
+        {/* Section switch: saved words / study links */}
+        <div className="grid grid-cols-2 gap-1 p-1 mb-6 rounded-2xl bg-black/[0.04] dark:bg-white/[0.05]">
+          {([
+            { key: 'items', label: t('tab_items'), icon: Bookmark },
+            { key: 'links', label: t('tab_links'), icon: Link2 },
+          ] as const).map(({ key, label, icon: Icon }) => (
+            <button
+              key={key}
+              onClick={() => setSection(key)}
+              className={cn(
+                'flex items-center justify-center gap-2 h-10 rounded-xl text-sm font-bold transition-all',
+                section === key
+                  ? 'bg-white dark:bg-[#202638] text-primary shadow-sm'
+                  : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300',
+              )}
+            >
+              <Icon size={15} /> {label}
+            </button>
+          ))}
+        </div>
+
+        {section === 'links' ? <StudyLinks /> : <>
 
         {/* Header */}
         <div className="flex items-center justify-between mb-5">
@@ -283,6 +311,7 @@ export default function SavedPage() {
             </AnimatePresence>
           </div>
         )}
+        </>}
       </main>
     </div>
   )
