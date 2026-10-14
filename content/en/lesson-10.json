@@ -1,0 +1,84 @@
+{
+  "lesson": 10,
+  "slug": "lesson-10",
+  "icon": "🗨️",
+  "title": { "en": "Everyday expressions (2)", "es": "Expresiones cotidianas (2)" },
+  "grammar": [
+    { "structure": "he / she / it + verb-s", "example": "Leo plays soccer. Linda works at a school.", "en": "Present simple with he, she, it: add -s", "es": "Presente simple con he, she, it: se agrega -s" },
+    { "structure": "-es after -o, -sh, -ch, -x", "example": "She goes, he watches, she fixes", "en": "Spelling: -es endings", "es": "Ortografía: terminaciones en -es" },
+    { "structure": "has (not \"haves\")", "example": "Laura has a new car.", "en": "\"Have\" becomes \"has\"", "es": "«Have» se convierte en «has»" },
+    { "structure": "doesn't + verb", "example": "Mike doesn't drink coffee.", "en": "Negative with he/she/it", "es": "Negativo con he/she/it" },
+    { "structure": "Does he…? — Yes, he does.", "example": "Does Leo like school? — Yes, he does.", "en": "Questions with he/she/it", "es": "Preguntas con he/she/it" }
+  ],
+  "tips": [
+    { "en": "The -s with he/she/it is the most common mistake in English. Say it out loud: she works, he lives, it rains.", "es": "La -s con he/she/it es el error más común en inglés. Dilo en voz alta: she works, he lives, it rains." },
+    { "en": "With \"doesn't\" and \"does\", the verb loses its -s: She doesn't work. Does she work?", "es": "Con «doesn't» y «does», el verbo pierde la -s: She doesn't work. Does she work?" },
+    { "en": "\"What do you do?\" asks about your job, not what you are doing right now.", "es": "«What do you do?» pregunta a qué te dedicas, no qué estás haciendo ahora." },
+    { "en": "\"How's it going?\", \"What's up?\" and \"How are things?\" are casual greetings among friends.", "es": "«How's it going?», «What's up?» y «How are things?» son saludos informales entre amigos." },
+    { "en": "\"Have a good one!\" is a very common, friendly goodbye in the US.", "es": "«Have a good one!» es una despedida muy común y amable en Estados Unidos." }
+  ],
+  "vocabulary": [
+    { "word": "work", "es": "trabajar / trabajo" },
+    { "word": "live", "es": "vivir" },
+    { "word": "go", "es": "ir" },
+    { "word": "watch", "es": "mirar / ver (TV)" },
+    { "word": "play", "es": "jugar / tocar (instrumento)" },
+    { "word": "drink", "es": "beber / tomar" },
+    { "word": "eat", "es": "comer" },
+    { "word": "read", "es": "leer" },
+    { "word": "cook", "es": "cocinar" },
+    { "word": "walk", "es": "caminar" },
+    { "word": "sleep", "es": "dormir" },
+    { "word": "school", "es": "escuela" },
+    { "word": "always", "es": "siempre" },
+    { "word": "never", "es": "nunca" },
+    { "word": "early", "es": "temprano" },
+    { "word": "late", "es": "tarde" }
+  ],
+  "phrases": [
+    { "phrase": "What do you do?", "es": "¿A qué te dedicas?" },
+    { "phrase": "She works at a hospital.", "es": "Ella trabaja en un hospital." },
+    { "phrase": "Where does he live?", "es": "¿Dónde vive él?" },
+    { "phrase": "He lives near here.", "es": "Vive cerca de aquí." },
+    { "phrase": "Does she speak Spanish?", "es": "¿Ella habla español?" },
+    { "phrase": "Yes, she does.", "es": "Sí, habla." },
+    { "phrase": "He doesn't like vegetables.", "es": "No le gustan las verduras." },
+    { "phrase": "What's up?", "es": "¿Qué onda? / ¿Qué tal?" },
+    { "phrase": "Not much.", "es": "Nada nuevo." },
+    { "phrase": "Have a good one!", "es": "¡Que te vaya bien!" },
+    { "phrase": "It depends.", "es": "Depende." },
+    { "phrase": "Good luck!", "es": "¡Buena suerte!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"Leo ___ soccer on Saturdays.\"", "es": "Completa: «Leo ___ soccer on Saturdays.»" }, "options": ["plays", "play", "playing", "to play"], "correct": 0, "explanation": { "en": "Leo = he → add -s: plays.", "es": "Leo = he → se agrega -s: plays." } },
+    { "question": { "en": "Complete: \"Laura ___ a new car.\"", "es": "Completa: «Laura ___ a new car.»" }, "options": ["has", "have", "haves", "is have"], "correct": 0, "explanation": { "en": "With he/she/it, \"have\" becomes \"has\".", "es": "Con he/she/it, «have» se convierte en «has»." } },
+    { "question": { "en": "Choose the correct negative.", "es": "Elige la negación correcta." }, "options": ["Mike doesn't drink coffee.", "Mike don't drink coffee.", "Mike doesn't drinks coffee.", "Mike not drink coffee."], "correct": 0, "explanation": { "en": "He → doesn't + verb without -s.", "es": "He → doesn't + verbo sin -s." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Does she live here?", "Do she live here?", "Does she lives here?", "She lives here does?"], "correct": 0, "explanation": { "en": "She → Does + verb without -s.", "es": "She → Does + verbo sin -s." } },
+    { "question": { "en": "Complete: \"My grandson ___ TV every evening.\"", "es": "Completa: «My grandson ___ TV every evening.»" }, "options": ["watches", "watchs", "watch", "watching"], "correct": 0, "explanation": { "en": "Verbs ending in -ch add -es: watches.", "es": "Los verbos que terminan en -ch agregan -es: watches." } },
+    { "question": { "en": "Someone asks \"What do you do?\". What do they want to know?", "es": "Alguien pregunta «What do you do?». ¿Qué quiere saber?" }, "options": ["Your job", "What you are doing now", "Your name", "Where you live"], "correct": 0, "explanation": { "en": "\"What do you do?\" asks about your work.", "es": "«What do you do?» pregunta por tu trabajo." } },
+    { "question": { "en": "Short answer: \"Does Linda work at a school?\" (yes)", "es": "Respuesta corta: «Does Linda work at a school?» (sí)" }, "options": ["Yes, she does.", "Yes, she works.", "Yes, she do.", "Yes, does she."], "correct": 0, "explanation": { "en": "Use the helper verb: Yes, she does.", "es": "Se usa el auxiliar: Yes, she does." } },
+    { "question": { "en": "Complete: \"She ___ to work by bus.\"", "es": "Completa: «She ___ to work by bus.»" }, "options": ["goes", "gos", "go", "going"], "correct": 0, "explanation": { "en": "\"Go\" ends in -o, so it takes -es: goes.", "es": "«Go» termina en -o, así que lleva -es: goes." } }
+  ],
+  "story": {
+    "title": "A Day in the Family",
+    "text": "In Carmen's new class, the homework is easy: write about your family. Carmen sits at the kitchen table and writes. \"My daughter Laura is a nurse. She works at a hospital. She goes to work very early, at six. Her husband, Mike, is a mechanic. He fixes cars all day. He doesn't drink coffee, he always drinks tea. My grandson Leo goes to school near the house. He plays soccer and he watches cartoons. He never eats vegetables! And me? I live in San Diego now. I cook, I walk on the beach, and I study English.\" Leo reads it. \"Grandma, it's perfect! But I eat vegetables… sometimes.\" Carmen laughs. \"Sometimes is not every day, my love.\"",
+    "es": "En la nueva clase de Carmen la tarea es fácil: escribir sobre tu familia. Carmen se sienta a la mesa de la cocina y escribe. «Mi hija Laura es enfermera. Trabaja en un hospital. Se va a trabajar muy temprano, a las seis. Su esposo, Mike, es mecánico. Arregla autos todo el día. No toma café, siempre toma té. Mi nieto Leo va a la escuela cerca de la casa. Juega fútbol y ve caricaturas. ¡Nunca come verduras! ¿Y yo? Ahora vivo en San Diego. Cocino, camino por la playa y estudio inglés.» Leo lo lee. «¡Abuela, está perfecto! Pero sí como verduras… a veces.» Carmen se ríe. «A veces no es todos los días, mi amor.»",
+    "highlighted_words": ["She works", "goes", "early", "fixes", "He doesn't drink", "always drinks", "plays", "watches", "never eats", "I live", "I cook", "I walk"]
+  },
+  "arrange": [
+    { "sentence": "She works at a hospital", "es": "Ella trabaja en un hospital." },
+    { "sentence": "He does not drink coffee", "es": "Él no toma café." },
+    { "sentence": "Does she speak Spanish", "es": "¿Ella habla español?" },
+    { "sentence": "Leo plays soccer on Saturdays", "es": "Leo juega fútbol los sábados." },
+    { "sentence": "Where does your daughter live", "es": "¿Dónde vive tu hija?" },
+    { "sentence": "My grandson never eats vegetables", "es": "Mi nieto nunca come verduras." }
+  ],
+  "translate": [
+    { "answer": "She works at a school", "es": "Ella trabaja en una escuela" },
+    { "answer": "He lives near here", "es": "Él vive cerca de aquí" },
+    { "answer": "Does he speak English", "es": "¿Él habla inglés?" },
+    { "answer": "She does not like coffee", "es": "A ella no le gusta el café" },
+    { "answer": "Leo goes to school", "es": "Leo va a la escuela" },
+    { "answer": "My daughter has a car", "es": "Mi hija tiene un auto" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 45,
+  "slug": "lesson-45",
+  "icon": "💍",
+  "title": { "en": "Love and marriage", "es": "El amor y el matrimonio" },
+  "grammar": [
+    { "structure": "will + verb (promises)", "example": "I will always love you.", "en": "\"Will\" for promises", "es": "«Will» para promesas" },
+    { "structure": "will + verb (predictions)", "example": "They will be very happy together.", "en": "\"Will\" for predictions", "es": "«Will» para predicciones" },
+    { "structure": "won't + verb", "example": "I won't forget this day.", "en": "Negative: will not → won't", "es": "Negativo: will not → won't" },
+    { "structure": "get married / be married / marry someone", "example": "They got married in 1994. She married Tom.", "en": "Verbs for marriage", "es": "Verbos para el matrimonio" },
+    { "structure": "I think … will…", "example": "I think it will be a beautiful party.", "en": "Opinions about the future", "es": "Opiniones sobre el futuro" }
+  ],
+  "tips": [
+    { "en": "\"Marry\" doesn't take \"with\": \"She married Tom\" (not \"married with Tom\").", "es": "«Marry» no lleva «with»: «She married Tom» (no «married with Tom»)." },
+    { "en": "\"Get married\" is the action (casarse); \"be married\" is the state (estar casado).", "es": "«Get married» es la acción (casarse); «be married» es el estado (estar casado)." },
+    { "en": "\"Won't\" sounds like \"want\" but longer: won't = will not.", "es": "«Won't» suena parecido a «want» pero más largo: won't = will not." },
+    { "en": "At American weddings, guests often give gifts from a \"registry\" — a list the couple makes.", "es": "En las bodas estadounidenses los invitados suelen regalar algo de una «registry»: una lista que hace la pareja." },
+    { "en": "\"Congratulations!\" is the word for weddings, anniversaries and engagements.", "es": "«Congratulations!» es la palabra para bodas, aniversarios y compromisos." }
+  ],
+  "vocabulary": [
+    { "word": "love", "es": "amor / amar" },
+    { "word": "boyfriend", "es": "novio" },
+    { "word": "girlfriend", "es": "novia" },
+    { "word": "engaged", "es": "comprometido" },
+    { "word": "wedding", "es": "boda" },
+    { "word": "bride", "es": "novia (en la boda)" },
+    { "word": "groom", "es": "novio (en la boda)" },
+    { "word": "ring", "es": "anillo" },
+    { "word": "anniversary", "es": "aniversario" },
+    { "word": "get married", "es": "casarse" },
+    { "word": "married", "es": "casado" },
+    { "word": "divorced", "es": "divorciado" },
+    { "word": "widow", "es": "viuda" },
+    { "word": "promise", "es": "promesa / prometer" },
+    { "word": "couple", "es": "pareja" },
+    { "word": "toast", "es": "brindis" },
+    { "word": "won't", "es": "no (futuro: will not)" }
+  ],
+  "phrases": [
+    { "phrase": "Congratulations!", "es": "¡Felicidades!" },
+    { "phrase": "When did you get married?", "es": "¿Cuándo se casaron?" },
+    { "phrase": "We got married in 1994.", "es": "Nos casamos en 1994." },
+    { "phrase": "Happy anniversary!", "es": "¡Feliz aniversario!" },
+    { "phrase": "I will always love you.", "es": "Siempre te voy a amar." },
+    { "phrase": "I promise I'll be there.", "es": "Te prometo que voy a estar ahí." },
+    { "phrase": "I won't forget this day.", "es": "No voy a olvidar este día." },
+    { "phrase": "They make a lovely couple.", "es": "Hacen una pareja muy linda." },
+    { "phrase": "Let's make a toast!", "es": "¡Hagamos un brindis!" },
+    { "phrase": "To the happy couple!", "es": "¡Por la feliz pareja!" },
+    { "phrase": "I think they'll be very happy.", "es": "Creo que van a ser muy felices." },
+    { "phrase": "Are you married?", "es": "¿Estás casado/a?" }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["She married Tom.", "She married with Tom.", "She married to Tom.", "She got married Tom."], "correct": 0, "explanation": { "en": "\"Marry\" takes no preposition.", "es": "«Marry» no lleva preposición." } },
+    { "question": { "en": "Complete: \"I promise I ___ call you every day.\"", "es": "Completa: «I promise I ___ call you every day.»" }, "options": ["will", "am", "do", "going"], "correct": 0, "explanation": { "en": "Promises → will.", "es": "Promesas → will." } },
+    { "question": { "en": "What is the short form of \"will not\"?", "es": "¿Cuál es la forma corta de «will not»?" }, "options": ["won't", "willn't", "wont'", "wil'nt"], "correct": 0, "explanation": { "en": "will not → won't.", "es": "will not → won't." } },
+    { "question": { "en": "Your friends got married 25 years ago today. You say:", "es": "Tus amigos se casaron hace 25 años hoy. Dices:" }, "options": ["Happy anniversary!", "Happy birthday!", "Get well soon!", "Good luck!"], "correct": 0, "explanation": { "en": "Anniversary = aniversario.", "es": "Anniversary = aniversario." } },
+    { "question": { "en": "\"Be married\" means…", "es": "«Be married» significa…" }, "options": ["estar casado", "casarse (el día de la boda)", "estar comprometido", "estar divorciado"], "correct": 0, "explanation": { "en": "Be married = the state; get married = the event.", "es": "Be married = el estado; get married = el evento." } },
+    { "question": { "en": "Complete: \"I think it ___ rain tomorrow.\" (prediction)", "es": "Completa: «I think it ___ rain tomorrow.» (predicción)" }, "options": ["will", "is", "does", "can to"], "correct": 0, "explanation": { "en": "Predictions with \"I think\" → will.", "es": "Predicciones con «I think» → will." } },
+    { "question": { "en": "A woman whose husband has died is a…", "es": "Una mujer cuyo esposo murió es…" }, "options": ["widow", "bride", "fiancée", "divorced"], "correct": 0, "explanation": { "en": "Widow = viuda.", "es": "Widow = viuda." } },
+    { "question": { "en": "At a wedding party, someone raises a glass and says…", "es": "En una boda, alguien levanta su copa y dice…" }, "options": ["To the happy couple!", "Get well soon!", "Have a good flight!", "No spoilers!"], "correct": 0, "explanation": { "en": "A toast: To the happy couple!", "es": "Un brindis: To the happy couple!" } }
+  ],
+  "story": {
+    "title": "Thirty Years Together",
+    "text": "Grace and Tom are celebrating their thirtieth wedding anniversary. They invite Carmen to the party at the bakery. There are flowers, music and, of course, a big cake. \"When did you get married?\" Carmen asks Grace. \"In 1994. Tom was so nervous he forgot the ring!\" Tom laughs. \"But I didn't forget the most important thing: my promise.\" He takes Grace's hand in front of everybody. \"Grace, thirty years ago I said I will always love you. Today I promise again: I will always love you, and I won't forget your birthday… this year.\" Everybody laughs and claps. Linda raises her glass. \"Let's make a toast! To the happy couple!\" Carmen thinks of her husband, Jorge. They were married for thirty-two years. She smiles. \"I think he was here tonight too,\" she says quietly to Linda.",
+    "es": "Grace y Tom celebran su trigésimo aniversario de bodas. Invitan a Carmen a la fiesta en la panadería. Hay flores, música y, claro, un pastel grande. «¿Cuándo se casaron?», le pregunta Carmen a Grace. «En 1994. ¡Tom estaba tan nervioso que olvidó el anillo!» Tom se ríe. «Pero no olvidé lo más importante: mi promesa.» Toma la mano de Grace frente a todos. «Grace, hace treinta años dije que siempre te iba a amar. Hoy lo prometo otra vez: siempre te voy a amar, y no voy a olvidar tu cumpleaños… este año.» Todos se ríen y aplauden. Linda levanta su copa. «¡Hagamos un brindis! ¡Por la feliz pareja!» Carmen piensa en su esposo, Jorge. Estuvieron casados treinta y dos años. Sonríe. «Creo que él también estuvo aquí esta noche», le dice en voz baja a Linda.",
+    "highlighted_words": ["wedding anniversary", "When did you get married", "ring", "promise", "I will always love you", "I won't forget", "Let's make a toast", "To the happy couple", "husband", "married"]
+  },
+  "arrange": [
+    { "sentence": "I will always love you", "es": "Siempre te voy a amar." },
+    { "sentence": "They got married in 1994", "es": "Se casaron en 1994." },
+    { "sentence": "I promise I will be there", "es": "Te prometo que voy a estar ahí." },
+    { "sentence": "I will not forget this day", "es": "No voy a olvidar este día." },
+    { "sentence": "I think they will be very happy", "es": "Creo que van a ser muy felices." },
+    { "sentence": "Let's make a toast to the couple", "es": "Hagamos un brindis por la pareja." }
+  ],
+  "translate": [
+    { "answer": "Happy anniversary", "es": "Feliz aniversario" },
+    { "answer": "Congratulations", "es": "Felicidades" },
+    { "answer": "I will call you tomorrow", "es": "Te llamaré mañana" },
+    { "answer": "She married a doctor", "es": "Ella se casó con un médico" },
+    { "answer": "I will not forget", "es": "No voy a olvidar" },
+    { "answer": "Are you married", "es": "¿Estás casado?" }
+  ]
+}

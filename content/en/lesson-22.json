@@ -1,0 +1,85 @@
+{
+  "lesson": 22,
+  "slug": "lesson-22",
+  "icon": "🏖️",
+  "title": { "en": "Vacations", "es": "Las vacaciones" },
+  "grammar": [
+    { "structure": "am / is / are + verb-ing", "example": "We are staying at a hotel. Leo is swimming.", "en": "Present continuous: actions happening now", "es": "Presente continuo: acciones que pasan ahora" },
+    { "structure": "-ing spelling", "example": "swim → swimming, make → making, lie → lying", "en": "Spelling rules for -ing", "es": "Reglas de ortografía para -ing" },
+    { "structure": "I'm not / she isn't + verb-ing", "example": "I'm not working this week.", "en": "Negative", "es": "Negativo" },
+    { "structure": "Are you…ing? / What are you doing?", "example": "What are you doing? — I'm reading.", "en": "Questions", "es": "Preguntas" },
+    { "structure": "present simple vs. present continuous", "example": "I usually work, but this week I'm relaxing.", "en": "Habits vs. right now", "es": "Hábitos vs. ahora mismo" }
+  ],
+  "tips": [
+    { "en": "Use the present continuous for \"right now\" and \"these days\": \"I'm reading a good book\".", "es": "Usa el presente continuo para «ahora mismo» y «estos días»: «I'm reading a good book» (estoy leyendo)." },
+    { "en": "Some verbs don't use -ing for states: say \"I like\", \"I know\", \"I want\" (not \"I'm liking\").", "es": "Algunos verbos de estado no usan -ing: se dice «I like», «I know», «I want» (no «I'm liking»)." },
+    { "en": "\"Vacation\" is American; British English says \"holiday\".", "es": "«Vacation» es estadounidense; en inglés británico se dice «holiday»." },
+    { "en": "Postcards and messages often use this tense: \"We're having a great time!\"", "es": "Las postales y los mensajes suelen usar este tiempo: «We're having a great time!» (¡la estamos pasando genial!)." },
+    { "en": "Don't forget sunscreen: the California sun is strong even when it's cool.", "es": "No olvides el protector solar: el sol de California es fuerte aunque esté fresco." }
+  ],
+  "vocabulary": [
+    { "word": "vacation", "es": "vacaciones" },
+    { "word": "trip", "es": "viaje" },
+    { "word": "hotel", "es": "hotel" },
+    { "word": "suitcase", "es": "maleta" },
+    { "word": "passport", "es": "pasaporte" },
+    { "word": "sunscreen", "es": "protector solar" },
+    { "word": "sunglasses", "es": "lentes de sol" },
+    { "word": "swimsuit", "es": "traje de baño" },
+    { "word": "souvenir", "es": "recuerdo" },
+    { "word": "tourist", "es": "turista" },
+    { "word": "relax", "es": "relajarse" },
+    { "word": "swim", "es": "nadar" },
+    { "word": "sunbathe", "es": "tomar el sol" },
+    { "word": "take pictures", "es": "tomar fotos" },
+    { "word": "stay", "es": "quedarse / hospedarse" },
+    { "word": "visit", "es": "visitar" },
+    { "word": "wave", "es": "ola" }
+  ],
+  "phrases": [
+    { "phrase": "We're on vacation!", "es": "¡Estamos de vacaciones!" },
+    { "phrase": "What are you doing?", "es": "¿Qué estás haciendo?" },
+    { "phrase": "I'm relaxing on the beach.", "es": "Estoy descansando en la playa." },
+    { "phrase": "We're staying at a small hotel.", "es": "Nos estamos quedando en un hotel pequeño." },
+    { "phrase": "Leo is swimming in the ocean.", "es": "Leo está nadando en el mar." },
+    { "phrase": "We're having a great time.", "es": "La estamos pasando muy bien." },
+    { "phrase": "Are you enjoying your trip?", "es": "¿Estás disfrutando tu viaje?" },
+    { "phrase": "Don't forget your sunscreen.", "es": "No olvides tu protector solar." },
+    { "phrase": "Can you take a picture of us?", "es": "¿Nos puede tomar una foto?" },
+    { "phrase": "Wish you were here!", "es": "¡Ojalá estuvieras aquí!" },
+    { "phrase": "I'm not working this week.", "es": "No estoy trabajando esta semana." },
+    { "phrase": "The waves are really big today.", "es": "Las olas están muy grandes hoy." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"Look! Leo ___ in the ocean.\"", "es": "Completa: «Look! Leo ___ in the ocean.»" }, "options": ["is swimming", "swims", "swimming", "are swimming"], "correct": 0, "explanation": { "en": "Right now → present continuous: is swimming.", "es": "Ahora mismo → presente continuo: is swimming." } },
+    { "question": { "en": "What is the -ing form of \"swim\"?", "es": "¿Cuál es la forma -ing de «swim»?" }, "options": ["swimming", "swiming", "swimmming", "swimeing"], "correct": 0, "explanation": { "en": "Short vowel + consonant: double it → swimming.", "es": "Vocal corta + consonante: se duplica → swimming." } },
+    { "question": { "en": "Complete: \"I usually work on Mondays, but this week I ___.\"", "es": "Completa: «I usually work on Mondays, but this week I ___.»" }, "options": ["am relaxing", "relax", "relaxes", "relaxing"], "correct": 0, "explanation": { "en": "\"This week\" is temporary → present continuous.", "es": "«This week» es temporal → presente continuo." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["What are you doing?", "What you are doing?", "What do you doing?", "What are you do?"], "correct": 0, "explanation": { "en": "Question: What + are + you + verb-ing?", "es": "Pregunta: What + are + you + verbo-ing?" } },
+    { "question": { "en": "Which sentence is correct?", "es": "¿Qué oración es correcta?" }, "options": ["I like this hotel.", "I'm liking this hotel.", "I liking this hotel.", "I am like this hotel."], "correct": 0, "explanation": { "en": "\"Like\" is a state verb: no -ing.", "es": "«Like» es un verbo de estado: sin -ing." } },
+    { "question": { "en": "You protect your skin from the sun with…", "es": "Proteges tu piel del sol con…" }, "options": ["sunscreen", "a suitcase", "a souvenir", "a passport"], "correct": 0, "explanation": { "en": "Sunscreen = protector solar.", "es": "Sunscreen = protector solar." } },
+    { "question": { "en": "Complete: \"We ___ at a small hotel this week.\"", "es": "Completa: «We ___ at a small hotel this week.»" }, "options": ["are staying", "is staying", "stays", "staying"], "correct": 0, "explanation": { "en": "We → are + staying.", "es": "We → are + staying." } },
+    { "question": { "en": "Something you buy to remember a place is a…", "es": "Algo que compras para recordar un lugar es un…" }, "options": ["souvenir", "swimsuit", "wave", "tourist"], "correct": 0, "explanation": { "en": "A souvenir = un recuerdo.", "es": "A souvenir = un recuerdo." } }
+  ],
+  "story": {
+    "title": "A Message from the Beach",
+    "text": "It's July, and Laura has a week of vacation. The family is staying at a small hotel in Santa Barbara. Carmen is sitting on the beach with her sunglasses and a book. She sends a message to Linda: \"Hi Linda! We're having a great time. Right now I'm sitting on the beach. Leo is swimming with his father. The waves are really big today! Laura is sleeping under an umbrella — she is very tired from work. Tonight we are eating at a fish restaurant. I'm buying a souvenir for you. Wish you were here!\" Five minutes later, Linda answers: \"Enjoy, Carmen! Here it's raining and I'm cleaning the house. Don't forget your sunscreen!\" Carmen laughs and puts on more sunscreen.",
+    "es": "Es julio y Laura tiene una semana de vacaciones. La familia se está quedando en un hotel pequeño en Santa Bárbara. Carmen está sentada en la playa con sus lentes de sol y un libro. Le manda un mensaje a Linda: «¡Hola, Linda! La estamos pasando muy bien. Ahora mismo estoy sentada en la playa. Leo está nadando con su papá. ¡Las olas están muy grandes hoy! Laura está durmiendo bajo una sombrilla: está muy cansada del trabajo. Esta noche vamos a cenar en un restaurante de mariscos. Te estoy comprando un recuerdo. ¡Ojalá estuvieras aquí!» Cinco minutos después, Linda contesta: «¡Disfruta, Carmen! Aquí está lloviendo y yo estoy limpiando la casa. ¡No olvides tu protector solar!» Carmen se ríe y se pone más protector solar.",
+    "highlighted_words": ["vacation", "is staying", "hotel", "sunglasses", "We're having a great time", "I'm sitting", "Leo is swimming", "waves", "is sleeping", "souvenir", "Wish you were here", "it's raining", "sunscreen"]
+  },
+  "arrange": [
+    { "sentence": "We are staying at a small hotel", "es": "Nos estamos quedando en un hotel pequeño." },
+    { "sentence": "What are you doing right now", "es": "¿Qué estás haciendo ahora mismo?" },
+    { "sentence": "Leo is swimming with his father", "es": "Leo está nadando con su papá." },
+    { "sentence": "We are having a great time", "es": "La estamos pasando muy bien." },
+    { "sentence": "I am not working this week", "es": "No estoy trabajando esta semana." },
+    { "sentence": "Can you take a picture of us", "es": "¿Nos puede tomar una foto?" }
+  ],
+  "translate": [
+    { "answer": "We are on vacation", "es": "Estamos de vacaciones" },
+    { "answer": "What are you doing", "es": "¿Qué estás haciendo?" },
+    { "answer": "I am reading a book", "es": "Estoy leyendo un libro" },
+    { "answer": "It is raining", "es": "Está lloviendo" },
+    { "answer": "Leo is swimming", "es": "Leo está nadando" },
+    { "answer": "Do not forget your passport", "es": "No olvides tu pasaporte" }
+  ]
+}

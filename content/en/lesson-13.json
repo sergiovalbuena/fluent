@@ -1,0 +1,86 @@
+{
+  "lesson": 13,
+  "slug": "lesson-13",
+  "icon": "🛋️",
+  "title": { "en": "Rooms and furniture", "es": "Habitaciones y muebles" },
+  "grammar": [
+    { "structure": "in / on / under", "example": "The keys are on the table. The cat is under the bed.", "en": "Basic prepositions of place", "es": "Preposiciones de lugar básicas" },
+    { "structure": "next to / between / behind / in front of", "example": "The lamp is next to the sofa.", "en": "More prepositions of place", "es": "Más preposiciones de lugar" },
+    { "structure": "Where is…? / Where are…?", "example": "Where are my glasses?", "en": "Asking where things are", "es": "Preguntar dónde están las cosas" },
+    { "structure": "It's / They're", "example": "It's in the drawer. They're on the shelf.", "en": "Answering about location", "es": "Responder dónde está algo" },
+    { "structure": "need / don't need", "example": "I need a table. I don't need a TV.", "en": "Talking about what you need", "es": "Hablar de lo que necesitas" }
+  ],
+  "tips": [
+    { "en": "\"On\" is for surfaces (on the table, on the wall), \"in\" is for inside something (in the box, in the drawer).", "es": "«On» es para superficies (on the table, on the wall) e «in» para dentro de algo (in the box, in the drawer)." },
+    { "en": "\"Furniture\" is uncountable: \"some furniture\" or \"a piece of furniture\", never \"furnitures\".", "es": "«Furniture» (muebles) es incontable: «some furniture» o «a piece of furniture», nunca «furnitures»." },
+    { "en": "\"Glasses\" (lentes) is always plural: \"Where are my glasses?\"", "es": "«Glasses» (lentes) siempre va en plural: «Where are my glasses?»" },
+    { "en": "\"Closet\" is a small room or cabinet for clothes. In British English it's often \"wardrobe\".", "es": "«Closet» es el armario o vestidor. En inglés británico se suele decir «wardrobe»." },
+    { "en": "Used furniture is cheap at \"yard sales\" and \"thrift stores\" in the US.", "es": "En Estados Unidos los muebles usados son baratos en las «yard sales» (ventas de garaje) y las «thrift stores»." }
+  ],
+  "vocabulary": [
+    { "word": "furniture", "es": "muebles" },
+    { "word": "sofa", "es": "sofá / sillón" },
+    { "word": "armchair", "es": "sillón individual" },
+    { "word": "table", "es": "mesa" },
+    { "word": "chair", "es": "silla" },
+    { "word": "bed", "es": "cama" },
+    { "word": "lamp", "es": "lámpara" },
+    { "word": "closet", "es": "clóset / armario" },
+    { "word": "shelf", "es": "estante / repisa" },
+    { "word": "drawer", "es": "cajón" },
+    { "word": "mirror", "es": "espejo" },
+    { "word": "rug", "es": "tapete / alfombra" },
+    { "word": "fridge", "es": "refrigerador" },
+    { "word": "stove", "es": "estufa" },
+    { "word": "sink", "es": "fregadero / lavabo" },
+    { "word": "next to", "es": "al lado de" },
+    { "word": "under", "es": "debajo de" },
+    { "word": "behind", "es": "detrás de" }
+  ],
+  "phrases": [
+    { "phrase": "Where are my glasses?", "es": "¿Dónde están mis lentes?" },
+    { "phrase": "They're on the table.", "es": "Están en la mesa." },
+    { "phrase": "The keys are in the drawer.", "es": "Las llaves están en el cajón." },
+    { "phrase": "Put it next to the sofa.", "es": "Ponlo al lado del sofá." },
+    { "phrase": "The cat is under the bed.", "es": "El gato está debajo de la cama." },
+    { "phrase": "I need a new table.", "es": "Necesito una mesa nueva." },
+    { "phrase": "Can you help me move the sofa?", "es": "¿Me ayudas a mover el sofá?" },
+    { "phrase": "It's too heavy.", "es": "Es demasiado pesado." },
+    { "phrase": "Where do you want the lamp?", "es": "¿Dónde quieres la lámpara?" },
+    { "phrase": "Between the bed and the window.", "es": "Entre la cama y la ventana." },
+    { "phrase": "The room looks great!", "es": "¡El cuarto se ve genial!" },
+    { "phrase": "It's a little crowded.", "es": "Está un poco lleno." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"The book is ___ the shelf.\"", "es": "Completa: «The book is ___ the shelf.»" }, "options": ["on", "in", "under", "at"], "correct": 0, "explanation": { "en": "A shelf is a surface → on the shelf.", "es": "Una repisa es una superficie → on the shelf." } },
+    { "question": { "en": "Complete: \"My socks are ___ the drawer.\"", "es": "Completa: «My socks are ___ the drawer.»" }, "options": ["in", "on", "at", "between"], "correct": 0, "explanation": { "en": "Inside something → in the drawer.", "es": "Dentro de algo → in the drawer." } },
+    { "question": { "en": "Which sentence is correct?", "es": "¿Qué oración es correcta?" }, "options": ["I need some new furniture.", "I need some new furnitures.", "I need a furniture.", "I need new furnitures."], "correct": 0, "explanation": { "en": "\"Furniture\" is uncountable: some furniture.", "es": "«Furniture» es incontable: some furniture." } },
+    { "question": { "en": "Where do you keep milk cold?", "es": "¿Dónde mantienes fría la leche?" }, "options": ["in the fridge", "in the closet", "on the stove", "under the bed"], "correct": 0, "explanation": { "en": "The fridge keeps food cold.", "es": "El refrigerador (fridge) mantiene fría la comida." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Where are my keys?", "Where is my keys?", "Where my keys are?", "Where are my key?"], "correct": 0, "explanation": { "en": "\"Keys\" is plural → Where are…?", "es": "«Keys» es plural → Where are…?" } },
+    { "question": { "en": "The lamp is ___ the bed and the window.", "es": "La lámpara está ___ la cama y la ventana." }, "options": ["between", "next", "behind of", "under to"], "correct": 0, "explanation": { "en": "\"Between\" = in the middle of two things.", "es": "«Between» = en medio de dos cosas." } },
+    { "question": { "en": "You look at yourself in a…", "es": "Te miras en un…" }, "options": ["mirror", "drawer", "rug", "sink"], "correct": 0, "explanation": { "en": "A mirror shows your reflection.", "es": "Un espejo (mirror) muestra tu reflejo." } },
+    { "question": { "en": "The sofa is very heavy. What do you say?", "es": "El sofá pesa mucho. ¿Qué dices?" }, "options": ["It's too heavy. Can you help me?", "It's too easy.", "It's next to.", "It's under heavy."], "correct": 0, "explanation": { "en": "\"Too heavy\" = more than you can carry alone.", "es": "«Too heavy» = más de lo que puedes cargar solo." } }
+  ],
+  "story": {
+    "title": "Moving Day",
+    "text": "Today is moving day! Carmen has her new apartment. Mike and Leo help her with the furniture. \"Where do you want the sofa, Mom?\" asks Mike. \"In front of the window, please.\" Mike and Leo carry the sofa. \"It's too heavy!\" says Leo. Next to the sofa there is a small table and a lamp. In the bedroom, the bed is between two windows, and there is a big mirror behind the door. \"Grandma, where are your glasses?\" asks Leo. Carmen looks on the table, in her bag, under the chair… Leo laughs. \"They're on your head!\" Everybody laughs. At the end of the day, the apartment is a little crowded, but it looks great. Carmen makes coffee in her new kitchen. Her first coffee at home.",
+    "es": "¡Hoy es el día de la mudanza! Carmen ya tiene su nuevo departamento. Mike y Leo la ayudan con los muebles. «¿Dónde quieres el sofá, suegra?», pregunta Mike. «Frente a la ventana, por favor.» Mike y Leo cargan el sofá. «¡Pesa demasiado!», dice Leo. Al lado del sofá hay una mesita y una lámpara. En el dormitorio, la cama está entre dos ventanas y hay un espejo grande detrás de la puerta. «Abuela, ¿dónde están tus lentes?», pregunta Leo. Carmen busca en la mesa, en su bolsa, debajo de la silla… Leo se ríe. «¡Los tienes en la cabeza!» Todos se ríen. Al final del día, el departamento está un poco lleno, pero se ve genial. Carmen prepara café en su nueva cocina. Su primer café en casa.",
+    "highlighted_words": ["furniture", "sofa", "In front of", "too heavy", "Next to", "lamp", "between", "mirror", "behind", "where are your glasses", "on the table", "under the chair", "crowded"]
+  },
+  "arrange": [
+    { "sentence": "The keys are in the drawer", "es": "Las llaves están en el cajón." },
+    { "sentence": "Put the lamp next to the sofa", "es": "Pon la lámpara al lado del sofá." },
+    { "sentence": "Where are my glasses", "es": "¿Dónde están mis lentes?" },
+    { "sentence": "The cat is under the bed", "es": "El gato está debajo de la cama." },
+    { "sentence": "I need a new table for the kitchen", "es": "Necesito una mesa nueva para la cocina." },
+    { "sentence": "The mirror is behind the door", "es": "El espejo está detrás de la puerta." }
+  ],
+  "translate": [
+    { "answer": "The book is on the table", "es": "El libro está en la mesa" },
+    { "answer": "Where are my keys", "es": "¿Dónde están mis llaves?" },
+    { "answer": "I need a new sofa", "es": "Necesito un sofá nuevo" },
+    { "answer": "It is too heavy", "es": "Es demasiado pesado" },
+    { "answer": "The cat is under the bed", "es": "El gato está debajo de la cama" },
+    { "answer": "The lamp is next to the bed", "es": "La lámpara está al lado de la cama" }
+  ]
+}

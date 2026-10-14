@@ -301,7 +301,8 @@
     "start": "Los geht's! 🚀",
     "saving": "Wird eingerichtet...",
     "done": "Alles bereit! Lass uns anfangen. 🚀",
-    "save_error": "Deine Auswahl konnte nicht gespeichert werden. Bitte versuche es erneut."
+    "save_error": "Deine Auswahl konnte nicht gespeichert werden. Bitte versuche es erneut.",
+    "lang_en": "Die meistgenutzte Sprache der Welt"
   },
   "saved": {
     "tab_items": "Wörter & Sätze",

@@ -1,0 +1,86 @@
+{
+  "lesson": 20,
+  "slug": "lesson-20",
+  "icon": "🏙️",
+  "title": { "en": "The city", "es": "La ciudad" },
+  "grammar": [
+    { "structure": "Imperatives", "example": "Go straight. Turn left at the light.", "en": "Giving directions with the imperative", "es": "Dar indicaciones con el imperativo" },
+    { "structure": "Don't + verb", "example": "Don't cross here.", "en": "Negative imperative", "es": "Imperativo negativo" },
+    { "structure": "Excuse me, where is…? / How do I get to…?", "example": "Excuse me, how do I get to the library?", "en": "Asking for directions", "es": "Pedir indicaciones" },
+    { "structure": "on the corner of / across from / around the corner", "example": "The bank is across from the park.", "en": "Location in the city", "es": "Ubicación en la ciudad" },
+    { "structure": "Is there a … near here?", "example": "Is there a pharmacy near here?", "en": "Looking for places nearby", "es": "Buscar lugares cercanos" }
+  ],
+  "tips": [
+    { "en": "In the US, people give directions in \"blocks\": \"It's two blocks away.\"", "es": "En Estados Unidos las indicaciones se dan en cuadras («blocks»): «It's two blocks away.»" },
+    { "en": "\"Downtown\" means the city center.", "es": "«Downtown» significa el centro de la ciudad." },
+    { "en": "A \"drugstore\" or \"pharmacy\" sells medicine, but also snacks, cosmetics and more.", "es": "Una «drugstore» o «pharmacy» vende medicinas, pero también botanas, cosméticos y más." },
+    { "en": "Cross the street at the \"crosswalk\" and wait for the walk signal: jaywalking can get you a ticket.", "es": "Cruza la calle por el paso peatonal («crosswalk») y espera la señal: cruzar por donde no se debe puede costar una multa." },
+    { "en": "If you don't understand directions, ask: \"Can you show me on the map?\"", "es": "Si no entiendes las indicaciones, pregunta: «Can you show me on the map?»" }
+  ],
+  "vocabulary": [
+    { "word": "street", "es": "calle" },
+    { "word": "avenue", "es": "avenida" },
+    { "word": "block", "es": "cuadra" },
+    { "word": "corner", "es": "esquina" },
+    { "word": "traffic light", "es": "semáforo" },
+    { "word": "crosswalk", "es": "paso peatonal" },
+    { "word": "downtown", "es": "el centro" },
+    { "word": "library", "es": "biblioteca" },
+    { "word": "bank", "es": "banco" },
+    { "word": "pharmacy", "es": "farmacia" },
+    { "word": "supermarket", "es": "supermercado" },
+    { "word": "post office", "es": "oficina de correos" },
+    { "word": "park", "es": "parque" },
+    { "word": "church", "es": "iglesia" },
+    { "word": "turn left", "es": "dar vuelta a la izquierda" },
+    { "word": "turn right", "es": "dar vuelta a la derecha" },
+    { "word": "go straight", "es": "seguir derecho" },
+    { "word": "across from", "es": "enfrente de" }
+  ],
+  "phrases": [
+    { "phrase": "Excuse me, where is the library?", "es": "Disculpe, ¿dónde está la biblioteca?" },
+    { "phrase": "How do I get to downtown?", "es": "¿Cómo llego al centro?" },
+    { "phrase": "Go straight for two blocks.", "es": "Siga derecho dos cuadras." },
+    { "phrase": "Turn left at the traffic light.", "es": "Dé vuelta a la izquierda en el semáforo." },
+    { "phrase": "It's on your right.", "es": "Está a su derecha." },
+    { "phrase": "It's across from the bank.", "es": "Está enfrente del banco." },
+    { "phrase": "It's on the corner of Main and Fifth.", "es": "Está en la esquina de Main y la Quinta." },
+    { "phrase": "Is there a pharmacy near here?", "es": "¿Hay una farmacia cerca de aquí?" },
+    { "phrase": "It's just around the corner.", "es": "Está a la vuelta de la esquina." },
+    { "phrase": "Is it far?", "es": "¿Está lejos?" },
+    { "phrase": "It's a five-minute walk.", "es": "Está a cinco minutos caminando." },
+    { "phrase": "Can you show me on the map?", "es": "¿Me lo puede mostrar en el mapa?" }
+  ],
+  "qa": [
+    { "question": { "en": "How do you ask for directions politely?", "es": "¿Cómo pides indicaciones amablemente?" }, "options": ["Excuse me, how do I get to the bank?", "Where bank?", "Give me the bank.", "You go bank?"], "correct": 0, "explanation": { "en": "Start with \"Excuse me\" and ask \"How do I get to…?\"", "es": "Empieza con «Excuse me» y pregunta «How do I get to…?»" } },
+    { "question": { "en": "Choose the negative imperative.", "es": "Elige el imperativo negativo." }, "options": ["Don't cross here.", "No cross here.", "Not cross here.", "Doesn't cross here."], "correct": 0, "explanation": { "en": "Negative imperative: Don't + verb.", "es": "Imperativo negativo: Don't + verbo." } },
+    { "question": { "en": "\"It's across from the park\" means…", "es": "«It's across from the park» significa…" }, "options": ["It's on the other side of the street from the park.", "It's inside the park.", "It's behind the park.", "It's far from the park."], "correct": 0, "explanation": { "en": "\"Across from\" = enfrente de.", "es": "«Across from» = enfrente de." } },
+    { "question": { "en": "Where do you borrow books?", "es": "¿Dónde pides libros prestados?" }, "options": ["at the library", "at the bank", "at the pharmacy", "at the church"], "correct": 0, "explanation": { "en": "The library lends books.", "es": "La biblioteca (library) presta libros." } },
+    { "question": { "en": "\"Downtown\" is…", "es": "«Downtown» es…" }, "options": ["the city center", "a small town", "the countryside", "a downstairs room"], "correct": 0, "explanation": { "en": "Downtown = el centro de la ciudad.", "es": "Downtown = el centro de la ciudad." } },
+    { "question": { "en": "Complete: \"___ left at the traffic light.\"", "es": "Completa: «___ left at the traffic light.»" }, "options": ["Turn", "Turns", "Turning", "To turn"], "correct": 0, "explanation": { "en": "Imperatives use the base verb: Turn left.", "es": "El imperativo usa el verbo base: Turn left." } },
+    { "question": { "en": "Where do you cross the street safely?", "es": "¿Dónde cruzas la calle con seguridad?" }, "options": ["at the crosswalk", "in the middle of the block", "behind a bus", "at the library"], "correct": 0, "explanation": { "en": "Use the crosswalk and wait for the signal.", "es": "Usa el paso peatonal y espera la señal." } },
+    { "question": { "en": "\"It's just around the corner\" means…", "es": "«It's just around the corner» significa…" }, "options": ["It's very close.", "It's very far.", "It's closed.", "It's on the map."], "correct": 0, "explanation": { "en": "\"Around the corner\" = muy cerca.", "es": "«Around the corner» = muy cerca." } }
+  ],
+  "story": {
+    "title": "Lost Downtown",
+    "text": "Carmen has an appointment at the public library downtown. She takes the bus alone for the first time. When she gets off, she doesn't know where to go. She sees a woman with a dog. \"Excuse me, how do I get to the library?\" \"Go straight for two blocks. Then turn left at the traffic light. The library is on your right, across from the church.\" \"Thank you! Is it far?\" \"No, it's a five-minute walk.\" Carmen walks two blocks. She waits at the crosswalk, turns left at the traffic light and… there is the church! Across from it is a big building: the library. Carmen smiles. Her first time downtown alone, and she isn't lost. In the library there is a sign: FREE ENGLISH CONVERSATION — WEDNESDAYS.",
+    "es": "Carmen tiene una cita en la biblioteca pública del centro. Toma el autobús sola por primera vez. Cuando se baja, no sabe a dónde ir. Ve a una mujer con un perro. «Disculpe, ¿cómo llego a la biblioteca?» «Siga derecho dos cuadras. Luego dé vuelta a la izquierda en el semáforo. La biblioteca está a su derecha, enfrente de la iglesia.» «¡Gracias! ¿Está lejos?» «No, está a cinco minutos caminando.» Carmen camina dos cuadras. Espera en el paso peatonal, da vuelta a la izquierda en el semáforo y… ¡ahí está la iglesia! Enfrente hay un edificio grande: la biblioteca. Carmen sonríe. Su primera vez sola en el centro, y no está perdida. En la biblioteca hay un letrero: CONVERSACIÓN EN INGLÉS GRATIS — MIÉRCOLES.",
+    "highlighted_words": ["library", "downtown", "how do I get to", "Go straight", "blocks", "turn left at the traffic light", "on your right", "across from the church", "Is it far", "five-minute walk", "crosswalk"]
+  },
+  "arrange": [
+    { "sentence": "How do I get to the library", "es": "¿Cómo llego a la biblioteca?" },
+    { "sentence": "Go straight for two blocks", "es": "Siga derecho dos cuadras." },
+    { "sentence": "Turn right at the traffic light", "es": "Dé vuelta a la derecha en el semáforo." },
+    { "sentence": "The bank is across from the park", "es": "El banco está enfrente del parque." },
+    { "sentence": "Is there a pharmacy near here", "es": "¿Hay una farmacia cerca de aquí?" },
+    { "sentence": "It is just around the corner", "es": "Está a la vuelta de la esquina." }
+  ],
+  "translate": [
+    { "answer": "Where is the bank", "es": "¿Dónde está el banco?" },
+    { "answer": "Turn left", "es": "Dé vuelta a la izquierda" },
+    { "answer": "Go straight", "es": "Siga derecho" },
+    { "answer": "Is it far", "es": "¿Está lejos?" },
+    { "answer": "Is there a supermarket near here", "es": "¿Hay un supermercado cerca de aquí?" },
+    { "answer": "It is on your right", "es": "Está a su derecha" }
+  ]
+}

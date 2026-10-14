@@ -1,0 +1,86 @@
+{
+  "lesson": 19,
+  "slug": "lesson-19",
+  "icon": "🪐",
+  "title": { "en": "The world and the universe", "es": "El mundo y el universo" },
+  "grammar": [
+    { "structure": "short adjective + -er + than", "example": "The sun is bigger than the moon.", "en": "Comparatives with short adjectives", "es": "Comparativos con adjetivos cortos" },
+    { "structure": "more + long adjective + than", "example": "Mexico City is more crowded than San Diego.", "en": "Comparatives with long adjectives", "es": "Comparativos con adjetivos largos" },
+    { "structure": "good → better, bad → worse, far → farther", "example": "The weather here is better than in winter.", "en": "Irregular comparatives", "es": "Comparativos irregulares" },
+    { "structure": "-y → -ier", "example": "happy → happier, easy → easier", "en": "Spelling changes", "es": "Cambios de ortografía" },
+    { "structure": "as … as", "example": "The ocean is as blue as the sky.", "en": "Saying two things are equal", "es": "Decir que dos cosas son iguales" }
+  ],
+  "tips": [
+    { "en": "\"Than\" (que) is different from \"then\" (entonces). Bigger than, not bigger then.", "es": "«Than» (que) es distinto de «then» (entonces). Bigger than, no bigger then." },
+    { "en": "One-syllable adjectives take -er (tall → taller); long ones use \"more\" (beautiful → more beautiful).", "es": "Los adjetivos de una sílaba llevan -er (tall → taller); los largos usan «more» (beautiful → more beautiful)." },
+    { "en": "Double the last letter after a short vowel: big → bigger, hot → hotter.", "es": "Se duplica la última letra después de una vocal corta: big → bigger, hot → hotter." },
+    { "en": "\"Earth\" is our planet; \"world\" is all the countries and people.", "es": "«Earth» es nuestro planeta; «world» es el conjunto de países y personas." },
+    { "en": "Americans measure distance in miles: 1 mile ≈ 1.6 kilometers.", "es": "En Estados Unidos la distancia se mide en millas: 1 milla ≈ 1.6 kilómetros." }
+  ],
+  "vocabulary": [
+    { "word": "world", "es": "mundo" },
+    { "word": "Earth", "es": "la Tierra" },
+    { "word": "sun", "es": "sol" },
+    { "word": "moon", "es": "luna" },
+    { "word": "star", "es": "estrella" },
+    { "word": "planet", "es": "planeta" },
+    { "word": "sky", "es": "cielo" },
+    { "word": "ocean", "es": "océano" },
+    { "word": "mountain", "es": "montaña" },
+    { "word": "river", "es": "río" },
+    { "word": "desert", "es": "desierto" },
+    { "word": "island", "es": "isla" },
+    { "word": "beach", "es": "playa" },
+    { "word": "bigger", "es": "más grande" },
+    { "word": "smaller", "es": "más pequeño" },
+    { "word": "hotter", "es": "más caliente" },
+    { "word": "colder", "es": "más frío" },
+    { "word": "farther", "es": "más lejos" }
+  ],
+  "phrases": [
+    { "phrase": "Look at the stars!", "es": "¡Mira las estrellas!" },
+    { "phrase": "The sun is bigger than the Earth.", "es": "El sol es más grande que la Tierra." },
+    { "phrase": "The moon is beautiful tonight.", "es": "La luna está hermosa esta noche." },
+    { "phrase": "Mars is colder than Earth.", "es": "Marte es más frío que la Tierra." },
+    { "phrase": "Which is bigger?", "es": "¿Cuál es más grande?" },
+    { "phrase": "The Pacific is the biggest ocean.", "es": "El Pacífico es el océano más grande." },
+    { "phrase": "It's farther than I think.", "es": "Está más lejos de lo que pienso." },
+    { "phrase": "Your English is better every day.", "es": "Tu inglés es mejor cada día." },
+    { "phrase": "It's as big as a house!", "es": "¡Es tan grande como una casa!" },
+    { "phrase": "How far is it?", "es": "¿Qué tan lejos está?" },
+    { "phrase": "About fifty miles.", "es": "Como a cincuenta millas." },
+    { "phrase": "What a beautiful sky!", "es": "¡Qué cielo tan bonito!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"The sun is ___ than the moon.\"", "es": "Completa: «The sun is ___ than the moon.»" }, "options": ["bigger", "more big", "biger", "big"], "correct": 0, "explanation": { "en": "Big → bigger (double the g).", "es": "Big → bigger (se duplica la g)." } },
+    { "question": { "en": "Complete: \"This city is ___ than my town.\"", "es": "Completa: «This city is ___ than my town.»" }, "options": ["more beautiful", "beautifuler", "most beautiful", "beautiful more"], "correct": 0, "explanation": { "en": "Long adjectives use \"more\": more beautiful.", "es": "Los adjetivos largos usan «more»: more beautiful." } },
+    { "question": { "en": "What is the comparative of \"good\"?", "es": "¿Cuál es el comparativo de «good»?" }, "options": ["better", "gooder", "more good", "best"], "correct": 0, "explanation": { "en": "Good → better (irregular).", "es": "Good → better (irregular)." } },
+    { "question": { "en": "Choose the correct word: \"She is taller ___ me.\"", "es": "Elige la palabra correcta: «She is taller ___ me.»" }, "options": ["than", "then", "that", "as"], "correct": 0, "explanation": { "en": "Comparisons use \"than\".", "es": "Las comparaciones usan «than»." } },
+    { "question": { "en": "What is the comparative of \"easy\"?", "es": "¿Cuál es el comparativo de «easy»?" }, "options": ["easier", "easyer", "more easy", "easiest"], "correct": 0, "explanation": { "en": "-y becomes -ier: easier.", "es": "La -y cambia a -ier: easier." } },
+    { "question": { "en": "A big area of sand with very little rain is a…", "es": "Una gran zona de arena con muy poca lluvia es un…" }, "options": ["desert", "river", "island", "ocean"], "correct": 0, "explanation": { "en": "That's a desert.", "es": "Es un desierto (desert)." } },
+    { "question": { "en": "Complete: \"Today is as hot ___ yesterday.\"", "es": "Completa: «Today is as hot ___ yesterday.»" }, "options": ["as", "than", "like", "that"], "correct": 0, "explanation": { "en": "Equality: as … as.", "es": "Igualdad: as … as." } },
+    { "question": { "en": "One mile is about…", "es": "Una milla es aproximadamente…" }, "options": ["1.6 kilometers", "1 kilometer", "10 kilometers", "500 meters"], "correct": 0, "explanation": { "en": "1 mile ≈ 1.6 km.", "es": "1 milla ≈ 1.6 km." } }
+  ],
+  "story": {
+    "title": "Stars in the Desert",
+    "text": "Mike takes the family to the desert for a weekend. The desert is about one hundred miles from San Diego. At night the sky is very dark. \"Look at the stars, Grandma!\" says Leo. There are thousands of stars. The sky here is clearer than in the city. \"In Guadalajara the sky is not as dark as this,\" says Carmen. Leo has a book about planets. \"Grandma, the sun is bigger than the Earth. And Jupiter is bigger than all the other planets.\" \"Really? And which is hotter, the sun or the desert?\" Leo laughs. \"The sun, Grandma! Much hotter!\" It is colder at night, so they sit close together. Carmen thinks: the world is bigger than I imagined, but tonight my world is here, with my family.",
+    "es": "Mike lleva a la familia al desierto un fin de semana. El desierto está como a cien millas de San Diego. En la noche el cielo está muy oscuro. «¡Mira las estrellas, abuela!», dice Leo. Hay miles de estrellas. Aquí el cielo está más despejado que en la ciudad. «En Guadalajara el cielo no es tan oscuro como este», dice Carmen. Leo tiene un libro sobre planetas. «Abuela, el sol es más grande que la Tierra. Y Júpiter es más grande que todos los demás planetas.» «¿En serio? ¿Y qué es más caliente, el sol o el desierto?» Leo se ríe. «¡El sol, abuela! ¡Mucho más caliente!» En la noche hace más frío, así que se sientan muy juntos. Carmen piensa: el mundo es más grande de lo que imaginaba, pero esta noche mi mundo está aquí, con mi familia.",
+    "highlighted_words": ["desert", "miles", "sky", "stars", "clearer than", "not as dark as", "planets", "the sun is bigger than the Earth", "hotter", "colder", "world"]
+  },
+  "arrange": [
+    { "sentence": "The sun is bigger than the Earth", "es": "El sol es más grande que la Tierra." },
+    { "sentence": "Your English is better every day", "es": "Tu inglés es mejor cada día." },
+    { "sentence": "The desert is hotter than the beach", "es": "El desierto es más caliente que la playa." },
+    { "sentence": "This city is more expensive than my town", "es": "Esta ciudad es más cara que mi pueblo." },
+    { "sentence": "The sky is as blue as the ocean", "es": "El cielo es tan azul como el océano." },
+    { "sentence": "How far is the mountain", "es": "¿Qué tan lejos está la montaña?" }
+  ],
+  "translate": [
+    { "answer": "The moon is beautiful", "es": "La luna está hermosa" },
+    { "answer": "Mexico is bigger than Spain", "es": "México es más grande que España" },
+    { "answer": "Today is colder than yesterday", "es": "Hoy hace más frío que ayer" },
+    { "answer": "Look at the stars", "es": "Mira las estrellas" },
+    { "answer": "How far is it", "es": "¿Qué tan lejos está?" },
+    { "answer": "My English is better now", "es": "Mi inglés es mejor ahora" }
+  ]
+}

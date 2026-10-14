@@ -1,0 +1,85 @@
+{
+  "lesson": 28,
+  "slug": "lesson-28",
+  "icon": "📅",
+  "title": { "en": "Appointments and visits", "es": "Citas y visitas" },
+  "grammar": [
+    { "structure": "be going to + verb", "example": "I'm going to visit Linda tomorrow.", "en": "Future plans with \"going to\"", "es": "Planes futuros con «going to»" },
+    { "structure": "I'm not going to…", "example": "We're not going to stay long.", "en": "Negative", "es": "Negativo" },
+    { "structure": "Are you going to…?", "example": "Are you going to come to the party?", "en": "Questions about plans", "es": "Preguntar por planes" },
+    { "structure": "make an appointment / reschedule / cancel", "example": "I need to reschedule my appointment.", "en": "Managing appointments", "es": "Gestionar citas" },
+    { "structure": "Are you free on…? / How about…?", "example": "Are you free on Thursday? How about three o'clock?", "en": "Arranging a time", "es": "Acordar una hora" }
+  ],
+  "tips": [
+    { "en": "In fast speech \"going to\" sounds like \"gonna\": \"I'm gonna call you.\" Understand it, but write \"going to\".", "es": "Al hablar rápido, «going to» suena como «gonna»: «I'm gonna call you.» Entiéndelo, pero escribe «going to»." },
+    { "en": "Doctors, hairdressers and banks usually need an appointment. Call ahead or book online.", "es": "Los médicos, las estéticas y los bancos normalmente piden cita. Llama antes o haz la reservación en línea." },
+    { "en": "If you can't go, call to cancel: some offices charge a fee for missed appointments.", "es": "Si no puedes ir, llama para cancelar: algunos consultorios cobran por las citas perdidas." },
+    { "en": "When visiting someone's home in the US, it's polite to say what time you're coming and not arrive too early.", "es": "Al visitar una casa en Estados Unidos, es de buena educación avisar a qué hora llegas y no llegar demasiado temprano." },
+    { "en": "\"Drop by\" means a short, informal visit: \"Drop by anytime!\"", "es": "«Drop by» significa pasar de visita un rato, informalmente: «Drop by anytime!» (¡pasa cuando quieras!)." }
+  ],
+  "vocabulary": [
+    { "word": "appointment", "es": "cita (médico, trámite)" },
+    { "word": "schedule", "es": "horario / agenda" },
+    { "word": "reschedule", "es": "cambiar la cita" },
+    { "word": "cancel", "es": "cancelar" },
+    { "word": "available", "es": "disponible" },
+    { "word": "busy", "es": "ocupado" },
+    { "word": "free", "es": "libre / gratis" },
+    { "word": "visit", "es": "visita / visitar" },
+    { "word": "guest", "es": "invitado" },
+    { "word": "invite", "es": "invitar" },
+    { "word": "reminder", "es": "recordatorio" },
+    { "word": "tomorrow morning", "es": "mañana en la mañana" },
+    { "word": "next week", "es": "la próxima semana" },
+    { "word": "plan", "es": "plan / planear" },
+    { "word": "drop by", "es": "pasar de visita" },
+    { "word": "receptionist", "es": "recepcionista" },
+    { "word": "confirm", "es": "confirmar" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to make an appointment.", "es": "Quisiera hacer una cita." },
+    { "phrase": "Are you available on Thursday?", "es": "¿Tiene disponibilidad el jueves?" },
+    { "phrase": "How about ten thirty?", "es": "¿Qué tal a las diez y media?" },
+    { "phrase": "That works for me.", "es": "Me queda bien." },
+    { "phrase": "I need to reschedule.", "es": "Necesito cambiar la cita." },
+    { "phrase": "I'm going to be a little late.", "es": "Voy a llegar un poco tarde." },
+    { "phrase": "What are you going to do tomorrow?", "es": "¿Qué vas a hacer mañana?" },
+    { "phrase": "I'm going to visit my friend.", "es": "Voy a visitar a mi amiga." },
+    { "phrase": "Can I drop by this afternoon?", "es": "¿Puedo pasar esta tarde?" },
+    { "phrase": "See you at three!", "es": "¡Nos vemos a las tres!" },
+    { "phrase": "Thank you for coming.", "es": "Gracias por venir." },
+    { "phrase": "Please confirm your appointment.", "es": "Por favor, confirme su cita." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"Tomorrow I ___ visit my sister.\"", "es": "Completa: «Tomorrow I ___ visit my sister.»" }, "options": ["am going to", "going to", "go to", "am go"], "correct": 0, "explanation": { "en": "Plans: am/is/are + going to + verb.", "es": "Planes: am/is/are + going to + verbo." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Are you going to come?", "You going to come?", "Do you going to come?", "Are you go to come?"], "correct": 0, "explanation": { "en": "Are + you + going to + verb?", "es": "Are + you + going to + verbo?" } },
+    { "question": { "en": "You can't go to your appointment on Monday, but you can on Wednesday. You want to…", "es": "No puedes ir a tu cita el lunes, pero sí el miércoles. Quieres…" }, "options": ["reschedule", "cancel forever", "confirm", "drop by"], "correct": 0, "explanation": { "en": "Reschedule = change the date or time.", "es": "Reschedule = cambiar la fecha u hora." } },
+    { "question": { "en": "The receptionist suggests 3 p.m. and it's fine for you. You say:", "es": "La recepcionista propone las 3 p.m. y te parece bien. Dices:" }, "options": ["That works for me.", "That's busy.", "I'm going to cancel.", "Drop by."], "correct": 0, "explanation": { "en": "\"That works for me\" = me queda bien.", "es": "«That works for me» = me queda bien." } },
+    { "question": { "en": "Complete: \"She ___ going to come tonight. She's sick.\"", "es": "Completa: «She ___ going to come tonight. She's sick.»" }, "options": ["isn't", "doesn't", "don't", "aren't"], "correct": 0, "explanation": { "en": "She → is not → isn't going to.", "es": "She → is not → isn't going to." } },
+    { "question": { "en": "\"Gonna\" is the spoken form of…", "es": "«Gonna» es la forma hablada de…" }, "options": ["going to", "got to", "want to", "go now"], "correct": 0, "explanation": { "en": "gonna = going to (informal speech).", "es": "gonna = going to (habla informal)." } },
+    { "question": { "en": "How do you ask for a medical appointment politely?", "es": "¿Cómo pides una cita médica amablemente?" }, "options": ["I'd like to make an appointment, please.", "Give me appointment.", "I want doctor now.", "Appointment, yes?"], "correct": 0, "explanation": { "en": "\"I'd like to make an appointment\" is polite and clear.", "es": "«I'd like to make an appointment» es amable y claro." } },
+    { "question": { "en": "\"Drop by anytime\" means…", "es": "«Drop by anytime» significa…" }, "options": ["Visit me whenever you want.", "Don't visit me.", "Call before you come.", "Leave something at my door."], "correct": 0, "explanation": { "en": "It's a friendly invitation to visit.", "es": "Es una invitación amistosa a visitar." } }
+  ],
+  "story": {
+    "title": "A Busy Week",
+    "text": "Carmen's week is going to be very busy. On Monday she's going to have English class. On Tuesday she has an appointment with the dentist at nine. On Wednesday she's going to make tamales for the bakery. Then Linda calls. \"Carmen, my brother is going to visit from Texas. Are you free on Thursday? I'm going to have a small dinner.\" Carmen looks at her calendar. \"Thursday… yes, I'm free. What time?\" \"How about six thirty?\" \"That works for me!\" But on Monday, the dentist's office calls. \"Mrs. Ruiz, the doctor is not going to be here on Tuesday. Can you reschedule?\" \"Of course. Is Friday available?\" \"Yes, Friday at ten.\" Carmen writes everything down. \"Busy week,\" she says, \"but a happy one.\"",
+    "es": "La semana de Carmen va a estar muy ocupada. El lunes va a tener clase de inglés. El martes tiene cita con el dentista a las nueve. El miércoles va a hacer tamales para la panadería. Entonces llama Linda. «Carmen, mi hermano va a venir de visita desde Texas. ¿Estás libre el jueves? Voy a hacer una cena pequeña.» Carmen mira su calendario. «El jueves… sí, estoy libre. ¿A qué hora?» «¿Qué tal a las seis y media?» «¡Me queda bien!» Pero el lunes llaman del consultorio del dentista. «Señora Ruiz, el doctor no va a estar el martes. ¿Puede cambiar la cita?» «Claro. ¿Tiene disponible el viernes?» «Sí, el viernes a las diez.» Carmen lo anota todo. «Semana ocupada», dice, «pero feliz.»",
+    "highlighted_words": ["busy", "she's going to have", "appointment", "is going to visit", "Are you free on Thursday", "How about six thirty", "That works for me", "is not going to be here", "reschedule", "available"]
+  },
+  "arrange": [
+    { "sentence": "I am going to visit my friend", "es": "Voy a visitar a mi amiga." },
+    { "sentence": "Are you free on Thursday", "es": "¿Estás libre el jueves?" },
+    { "sentence": "I would like to make an appointment", "es": "Quisiera hacer una cita." },
+    { "sentence": "We are not going to stay long", "es": "No nos vamos a quedar mucho tiempo." },
+    { "sentence": "How about ten thirty", "es": "¿Qué tal a las diez y media?" },
+    { "sentence": "I need to reschedule my appointment", "es": "Necesito cambiar mi cita." }
+  ],
+  "translate": [
+    { "answer": "I am going to call you", "es": "Te voy a llamar" },
+    { "answer": "What are you going to do", "es": "¿Qué vas a hacer?" },
+    { "answer": "I need to cancel my appointment", "es": "Necesito cancelar mi cita" },
+    { "answer": "That works for me", "es": "Me queda bien" },
+    { "answer": "Thank you for coming", "es": "Gracias por venir" },
+    { "answer": "She is going to be late", "es": "Ella va a llegar tarde" }
+  ]
+}

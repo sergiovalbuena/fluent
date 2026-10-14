@@ -1,0 +1,85 @@
+{
+  "lesson": 47,
+  "slug": "lesson-47",
+  "icon": "🤝",
+  "title": { "en": "At work", "es": "En el trabajo" },
+  "grammar": [
+    { "structure": "must + verb", "example": "You must wash your hands before you cook.", "en": "Strong rules and obligations", "es": "Reglas y obligaciones fuertes" },
+    { "structure": "mustn't + verb", "example": "You mustn't use your phone at the register.", "en": "Prohibition", "es": "Prohibición" },
+    { "structure": "mustn't vs. don't have to", "example": "You mustn't be late. / You don't have to wear a tie.", "en": "Prohibited vs. not necessary", "es": "Prohibido vs. no necesario" },
+    { "structure": "Can I…? / May I…?", "example": "May I take a break now?", "en": "Asking for permission", "es": "Pedir permiso" },
+    { "structure": "I'm in charge of…", "example": "I'm in charge of the tamales.", "en": "Describing responsibilities", "es": "Describir responsabilidades" }
+  ],
+  "tips": [
+    { "en": "\"Mustn't\" = está prohibido. \"Don't have to\" = no es necesario. They are very different!", "es": "«Mustn't» = está prohibido. «Don't have to» = no es necesario. ¡Son muy diferentes!" },
+    { "en": "\"May I…?\" is more formal than \"Can I…?\". Both are fine with a boss.", "es": "«May I…?» es más formal que «Can I…?». Las dos están bien con un jefe." },
+    { "en": "\"Clock in\" and \"clock out\" mean to register when you start and finish your shift.", "es": "«Clock in» y «clock out» significan registrar la entrada y la salida del turno." },
+    { "en": "In US workplaces, people often use first names, even with the boss.", "es": "En los trabajos en Estados Unidos es común usar el nombre de pila, incluso con el jefe." },
+    { "en": "If you don't understand an instruction, ask: \"Just to make sure, you want me to…?\"", "es": "Si no entiendes una instrucción, pregunta: «Just to make sure, you want me to…?» (solo para confirmar, ¿quiere que…?)." }
+  ],
+  "vocabulary": [
+    { "word": "coworker", "es": "compañero de trabajo" },
+    { "word": "manager", "es": "gerente" },
+    { "word": "customer", "es": "cliente" },
+    { "word": "break", "es": "descanso" },
+    { "word": "shift", "es": "turno" },
+    { "word": "clock in", "es": "registrar entrada" },
+    { "word": "clock out", "es": "registrar salida" },
+    { "word": "apron", "es": "delantal / mandil" },
+    { "word": "uniform", "es": "uniforme" },
+    { "word": "must", "es": "deber (obligación fuerte)" },
+    { "word": "mustn't", "es": "no deber (prohibido)" },
+    { "word": "in charge of", "es": "a cargo de" },
+    { "word": "task", "es": "tarea" },
+    { "word": "schedule", "es": "horario" },
+    { "word": "paycheck", "es": "cheque de pago / sueldo" },
+    { "word": "raise", "es": "aumento de sueldo" },
+    { "word": "teamwork", "es": "trabajo en equipo" }
+  ],
+  "phrases": [
+    { "phrase": "Welcome to the team!", "es": "¡Bienvenida al equipo!" },
+    { "phrase": "You must wear an apron.", "es": "Debes usar mandil." },
+    { "phrase": "You mustn't eat behind the counter.", "es": "No debes comer detrás del mostrador." },
+    { "phrase": "You don't have to come on Sundays.", "es": "No tienes que venir los domingos." },
+    { "phrase": "May I take my break now?", "es": "¿Puedo tomar mi descanso ahora?" },
+    { "phrase": "Don't forget to clock in.", "es": "No olvides registrar tu entrada." },
+    { "phrase": "I'm in charge of the morning shift.", "es": "Estoy a cargo del turno de la mañana." },
+    { "phrase": "Just to make sure, you want me to clean the oven?", "es": "Solo para confirmar, ¿quiere que limpie el horno?" },
+    { "phrase": "Can you cover my shift on Friday?", "es": "¿Me cubres el turno del viernes?" },
+    { "phrase": "Great job today!", "es": "¡Buen trabajo hoy!" },
+    { "phrase": "How can I help you?", "es": "¿En qué le puedo ayudar?" },
+    { "phrase": "See you tomorrow, team!", "es": "¡Hasta mañana, equipo!" }
+  ],
+  "qa": [
+    { "question": { "en": "\"You mustn't smoke here\" means…", "es": "«You mustn't smoke here» significa…" }, "options": ["Smoking is prohibited.", "You don't need to smoke.", "You should smoke.", "You can smoke later."], "correct": 0, "explanation": { "en": "Mustn't = prohibited.", "es": "Mustn't = prohibido." } },
+    { "question": { "en": "\"You don't have to wear a tie\" means…", "es": "«You don't have to wear a tie» significa…" }, "options": ["It's not necessary.", "It's prohibited.", "You must wear one.", "Ties are expensive."], "correct": 0, "explanation": { "en": "Don't have to = not necessary.", "es": "Don't have to = no es necesario." } },
+    { "question": { "en": "Complete: \"You ___ wash your hands before cooking.\" (strong rule)", "es": "Completa: «You ___ wash your hands before cooking.» (regla fuerte)" }, "options": ["must", "mustn't", "don't have to", "must to"], "correct": 0, "explanation": { "en": "Strong rule → must + verb.", "es": "Regla fuerte → must + verbo." } },
+    { "question": { "en": "The most formal way to ask permission is…", "es": "La forma más formal de pedir permiso es…" }, "options": ["May I take a break?", "Can I take break?", "I take a break, okay?", "Break now?"], "correct": 0, "explanation": { "en": "\"May I…?\" is formal and polite.", "es": "«May I…?» es formal y amable." } },
+    { "question": { "en": "When you register the start of your shift, you…", "es": "Cuando registras el inicio de tu turno, tú…" }, "options": ["clock in", "clock out", "take a break", "get a raise"], "correct": 0, "explanation": { "en": "Clock in = start; clock out = finish.", "es": "Clock in = entrada; clock out = salida." } },
+    { "question": { "en": "You're responsible for the bread. You say:", "es": "Eres responsable del pan. Dices:" }, "options": ["I'm in charge of the bread.", "I'm in charge for the bread.", "I'm charging the bread.", "I'm on charge of bread."], "correct": 0, "explanation": { "en": "in charge of + noun.", "es": "in charge of + sustantivo." } },
+    { "question": { "en": "More money for the same job is a…", "es": "Más dinero por el mismo trabajo es un…" }, "options": ["raise", "break", "shift", "paycheck stub"], "correct": 0, "explanation": { "en": "Raise = aumento de sueldo.", "es": "Raise = aumento de sueldo." } },
+    { "question": { "en": "Complete: \"You ___ come on Sundays. The bakery is closed.\"", "es": "Completa: «You ___ come on Sundays. The bakery is closed.»" }, "options": ["don't have to", "must", "should", "have to"], "correct": 0, "explanation": { "en": "Not necessary → don't have to.", "es": "No es necesario → don't have to." } }
+  ],
+  "story": {
+    "title": "First Day at the Bakery",
+    "text": "It's Carmen's first Saturday at the bakery. Grace gives her an apron and shows her around. \"Welcome to the team! You must wear this apron and you must wash your hands before you cook. You mustn't use your phone near the ovens.\" \"Do I have to wear a uniform?\" \"No, you don't have to. Just the apron.\" Carmen's coworker is Luis, a young baker from Tijuana. \"Don't forget to clock in,\" he says. \"And you're in charge of the tamales.\" The morning is busy. Many customers come for coffee and bread. At eleven, Carmen asks, \"Grace, may I take my break now?\" \"Of course. Fifteen minutes.\" At the end of the shift, Grace says, \"Great job today, Carmen! The tamales sold out in two hours.\" Carmen takes off her apron, tired but proud. \"See you next Saturday, team!\"",
+    "es": "Es el primer sábado de Carmen en la panadería. Grace le da un mandil y le enseña el lugar. «¡Bienvenida al equipo! Debes usar este mandil y debes lavarte las manos antes de cocinar. No debes usar el teléfono cerca de los hornos.» «¿Tengo que usar uniforme?» «No, no hace falta. Solo el mandil.» El compañero de trabajo de Carmen es Luis, un joven panadero de Tijuana. «No olvides registrar tu entrada», le dice. «Y tú estás a cargo de los tamales.» La mañana es muy movida. Muchos clientes vienen por café y pan. A las once, Carmen pregunta: «Grace, ¿puedo tomar mi descanso ahora?» «Claro. Quince minutos.» Al final del turno, Grace dice: «¡Buen trabajo hoy, Carmen! Los tamales se acabaron en dos horas.» Carmen se quita el mandil, cansada pero orgullosa. «¡Hasta el próximo sábado, equipo!»",
+    "highlighted_words": ["apron", "Welcome to the team", "You must wear", "you must wash your hands", "You mustn't use your phone", "Do I have to wear a uniform", "you don't have to", "coworker", "clock in", "in charge of", "customers", "may I take my break now", "shift", "Great job today"]
+  },
+  "arrange": [
+    { "sentence": "You must wear an apron", "es": "Debes usar mandil." },
+    { "sentence": "You must not use your phone here", "es": "No debes usar el teléfono aquí." },
+    { "sentence": "You do not have to come on Sundays", "es": "No tienes que venir los domingos." },
+    { "sentence": "May I take my break now", "es": "¿Puedo tomar mi descanso ahora?" },
+    { "sentence": "I am in charge of the morning shift", "es": "Estoy a cargo del turno de la mañana." },
+    { "sentence": "Do not forget to clock in", "es": "No olvides registrar tu entrada." }
+  ],
+  "translate": [
+    { "answer": "Welcome to the team", "es": "Bienvenida al equipo" },
+    { "answer": "You must wash your hands", "es": "Debes lavarte las manos" },
+    { "answer": "May I take a break", "es": "¿Puedo tomar un descanso?" },
+    { "answer": "Great job today", "es": "Buen trabajo hoy" },
+    { "answer": "How can I help you", "es": "¿En qué le puedo ayudar?" },
+    { "answer": "I am in charge of the bread", "es": "Estoy a cargo del pan" }
+  ]
+}

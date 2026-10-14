@@ -1,0 +1,85 @@
+{
+  "lesson": 29,
+  "slug": "lesson-29",
+  "icon": "🎭",
+  "title": { "en": "Theater and movies", "es": "El teatro y el cine" },
+  "grammar": [
+    { "structure": "the + adjective-est", "example": "It's the longest movie of the year.", "en": "Superlatives with short adjectives", "es": "Superlativos con adjetivos cortos" },
+    { "structure": "the most + long adjective", "example": "She is the most famous actress in Mexico.", "en": "Superlatives with long adjectives", "es": "Superlativos con adjetivos largos" },
+    { "structure": "the best / the worst", "example": "That was the best show I've ever seen.", "en": "Irregular superlatives", "es": "Superlativos irregulares" },
+    { "structure": "superlative + in / of", "example": "the biggest theater in the city", "en": "\"In\" with places, \"of\" with groups or time", "es": "«In» con lugares, «of» con grupos o tiempo" },
+    { "structure": "What's playing…?", "example": "What's playing at the movies tonight?", "en": "Asking what's on", "es": "Preguntar qué hay en cartelera" }
+  ],
+  "tips": [
+    { "en": "Superlatives always need \"the\": the best, the most beautiful.", "es": "Los superlativos siempre llevan «the»: the best, the most beautiful." },
+    { "en": "In American English you \"go to the movies\" (ir al cine). \"Movie theater\" is the building.", "es": "En inglés estadounidense se dice «go to the movies» (ir al cine). «Movie theater» es el edificio." },
+    { "en": "Many movies have Spanish subtitles or audio: ask \"Is there a Spanish version?\"", "es": "Muchas películas tienen subtítulos o audio en español: pregunta «Is there a Spanish version?»" },
+    { "en": "\"Matinee\" is an afternoon show; tickets are often cheaper.", "es": "«Matinee» es una función de la tarde; los boletos suelen ser más baratos." },
+    { "en": "Watching movies in English with English subtitles is great practice for your ear.", "es": "Ver películas en inglés con subtítulos en inglés es una excelente práctica para el oído." }
+  ],
+  "vocabulary": [
+    { "word": "movie", "es": "película" },
+    { "word": "the movies", "es": "el cine" },
+    { "word": "theater", "es": "teatro" },
+    { "word": "play", "es": "obra de teatro" },
+    { "word": "actor", "es": "actor" },
+    { "word": "actress", "es": "actriz" },
+    { "word": "stage", "es": "escenario" },
+    { "word": "seat", "es": "asiento" },
+    { "word": "screen", "es": "pantalla" },
+    { "word": "subtitles", "es": "subtítulos" },
+    { "word": "comedy", "es": "comedia" },
+    { "word": "drama", "es": "drama" },
+    { "word": "popcorn", "es": "palomitas" },
+    { "word": "show", "es": "función / espectáculo" },
+    { "word": "the best", "es": "el mejor" },
+    { "word": "the worst", "es": "el peor" },
+    { "word": "funniest", "es": "el más gracioso" }
+  ],
+  "phrases": [
+    { "phrase": "What's playing tonight?", "es": "¿Qué hay en cartelera esta noche?" },
+    { "phrase": "Two tickets for the seven o'clock show.", "es": "Dos boletos para la función de las siete." },
+    { "phrase": "Where are our seats?", "es": "¿Dónde están nuestros asientos?" },
+    { "phrase": "Does it have subtitles?", "es": "¿Tiene subtítulos?" },
+    { "phrase": "Let's get some popcorn.", "es": "Vamos por palomitas." },
+    { "phrase": "Please turn off your phone.", "es": "Por favor, apague su teléfono." },
+    { "phrase": "It was the funniest movie of the year!", "es": "¡Fue la película más graciosa del año!" },
+    { "phrase": "She's the best actress.", "es": "Es la mejor actriz." },
+    { "phrase": "What did you think of the movie?", "es": "¿Qué te pareció la película?" },
+    { "phrase": "I loved it!", "es": "¡Me encantó!" },
+    { "phrase": "It was a little boring.", "es": "Estuvo un poco aburrida." },
+    { "phrase": "No spoilers, please!", "es": "¡No me cuentes el final, por favor!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"It's the ___ movie of the year.\"", "es": "Completa: «It's the ___ movie of the year.»" }, "options": ["funniest", "funnyest", "most funny", "funnier"], "correct": 0, "explanation": { "en": "Funny → the funniest (-y → -iest).", "es": "Funny → the funniest (-y → -iest)." } },
+    { "question": { "en": "Complete: \"She is ___ actress in the world.\"", "es": "Completa: «She is ___ actress in the world.»" }, "options": ["the most famous", "the famousest", "most famous", "the more famous"], "correct": 0, "explanation": { "en": "Long adjective: the most famous.", "es": "Adjetivo largo: the most famous." } },
+    { "question": { "en": "What is the superlative of \"good\"?", "es": "¿Cuál es el superlativo de «good»?" }, "options": ["the best", "the goodest", "the better", "the most good"], "correct": 0, "explanation": { "en": "Good → better → the best.", "es": "Good → better → the best." } },
+    { "question": { "en": "Complete: \"It's the biggest theater ___ San Diego.\"", "es": "Completa: «It's the biggest theater ___ San Diego.»" }, "options": ["in", "of", "at", "on"], "correct": 0, "explanation": { "en": "With places we use \"in\".", "es": "Con lugares se usa «in»." } },
+    { "question": { "en": "How do you say \"ir al cine\" in American English?", "es": "¿Cómo se dice «ir al cine» en inglés estadounidense?" }, "options": ["go to the movies", "go to the cinema house", "go to the film", "go to movie"], "correct": 0, "explanation": { "en": "Americans say \"go to the movies\".", "es": "En Estados Unidos se dice «go to the movies»." } },
+    { "question": { "en": "Words at the bottom of the screen that translate the dialogue are…", "es": "Las palabras abajo en la pantalla que traducen los diálogos son…" }, "options": ["subtitles", "tickets", "seats", "stages"], "correct": 0, "explanation": { "en": "Subtitles = subtítulos.", "es": "Subtitles = subtítulos." } },
+    { "question": { "en": "Your friend wants to tell you the end of the movie. You say:", "es": "Tu amigo quiere contarte el final de la película. Dices:" }, "options": ["No spoilers, please!", "Let's get popcorn!", "I loved it!", "Where are our seats?"], "correct": 0, "explanation": { "en": "A spoiler reveals the end.", "es": "Un «spoiler» revela el final." } },
+    { "question": { "en": "What is the superlative of \"bad\"?", "es": "¿Cuál es el superlativo de «bad»?" }, "options": ["the worst", "the baddest", "the worse", "the most bad"], "correct": 0, "explanation": { "en": "Bad → worse → the worst.", "es": "Bad → worse → the worst." } }
+  ],
+  "story": {
+    "title": "Movie Night",
+    "text": "On Friday night, Ana invites Carmen to the movies. \"What's playing?\" asks Carmen. \"A new comedy. People say it's the funniest movie of the year.\" At the theater, Ana buys two tickets for the seven o'clock show. Carmen buys the biggest popcorn on the menu. \"Does it have subtitles?\" she asks. \"Only in English,\" says Ana. \"But that's good practice!\" The movie is about a grandmother who travels to New York alone. The actress is wonderful. Carmen understands most of the jokes and laughs a lot. At the end, everybody claps. \"What did you think?\" asks Ana. \"It was the best movie I've ever seen in English! And the grandmother… she is a little like me.\" Ana laughs. \"Maybe one day you're going to travel to New York too.\"",
+    "es": "El viernes en la noche, Ana invita a Carmen al cine. «¿Qué hay en cartelera?», pregunta Carmen. «Una comedia nueva. La gente dice que es la película más graciosa del año.» En el cine, Ana compra dos boletos para la función de las siete. Carmen compra las palomitas más grandes del menú. «¿Tiene subtítulos?», pregunta. «Solo en inglés», dice Ana. «¡Pero es buena práctica!» La película trata de una abuela que viaja sola a Nueva York. La actriz es maravillosa. Carmen entiende la mayoría de los chistes y se ríe mucho. Al final, todos aplauden. «¿Qué te pareció?», pregunta Ana. «¡Es la mejor película que he visto en inglés! Y la abuela… se parece un poco a mí.» Ana se ríe. «Quizás un día tú también vas a viajar a Nueva York.»",
+    "highlighted_words": ["the movies", "What's playing", "comedy", "the funniest movie of the year", "theater", "tickets", "show", "the biggest popcorn", "subtitles", "actress", "What did you think", "the best movie"]
+  },
+  "arrange": [
+    { "sentence": "It was the funniest movie of the year", "es": "Fue la película más graciosa del año." },
+    { "sentence": "She is the best actress in Mexico", "es": "Es la mejor actriz de México." },
+    { "sentence": "What is playing at the movies tonight", "es": "¿Qué hay en el cine esta noche?" },
+    { "sentence": "Does the movie have subtitles", "es": "¿La película tiene subtítulos?" },
+    { "sentence": "Two tickets for the seven o'clock show", "es": "Dos boletos para la función de las siete." },
+    { "sentence": "This is the biggest theater in the city", "es": "Este es el teatro más grande de la ciudad." }
+  ],
+  "translate": [
+    { "answer": "Let's go to the movies", "es": "Vamos al cine" },
+    { "answer": "It was the best movie", "es": "Fue la mejor película" },
+    { "answer": "I loved it", "es": "Me encantó" },
+    { "answer": "Where are our seats", "es": "¿Dónde están nuestros asientos?" },
+    { "answer": "Does it have subtitles", "es": "¿Tiene subtítulos?" },
+    { "answer": "It was a little boring", "es": "Estuvo un poco aburrida" }
+  ]
+}

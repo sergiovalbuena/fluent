@@ -1,0 +1,84 @@
+{
+  "lesson": 1,
+  "slug": "lesson-01",
+  "icon": "👋",
+  "title": { "en": "Hello and goodbye", "es": "Saludar y despedirse" },
+  "grammar": [
+    { "structure": "I am / you are", "example": "I am Carmen. You are Linda.", "en": "The verb \"to be\": I am, you are", "es": "El verbo «to be» (ser/estar): I am, you are" },
+    { "structure": "he is / she is", "example": "She is my neighbor.", "en": "\"To be\" with he and she", "es": "«To be» con he (él) y she (ella)" },
+    { "structure": "I'm / you're / she's", "example": "I'm fine, thank you.", "en": "Short forms (contractions) of \"to be\"", "es": "Formas cortas (contracciones) de «to be»" },
+    { "structure": "How are you?", "example": "Hi, Linda! How are you?", "en": "Asking how someone is", "es": "Preguntar cómo está alguien" },
+    { "structure": "Nice to meet you", "example": "I'm Carmen. Nice to meet you.", "en": "Meeting someone for the first time", "es": "Conocer a alguien por primera vez" }
+  ],
+  "tips": [
+    { "en": "\"Hi\" is casual and \"hello\" is a little more formal. Both work almost everywhere in the United States.", "es": "«Hi» es informal y «hello» un poco más formal. Los dos sirven casi en cualquier situación en Estados Unidos." },
+    { "en": "\"How are you?\" is often just a greeting. A short answer like \"Good, thanks. And you?\" is perfect.", "es": "«How are you?» muchas veces es solo un saludo. Una respuesta corta como «Good, thanks. And you?» es perfecta." },
+    { "en": "\"Good night\" is only for saying goodbye at night or before bed. To greet someone in the evening, say \"Good evening\".", "es": "«Good night» solo se usa para despedirse de noche o antes de dormir. Para saludar por la noche se dice «Good evening»." },
+    { "en": "\"I\" is always written with a capital letter in English, even in the middle of a sentence.", "es": "«I» (yo) siempre se escribe con mayúscula en inglés, incluso en medio de una oración." },
+    { "en": "\"See you\" and \"Take care\" are friendly, everyday ways to say goodbye.", "es": "«See you» y «Take care» son formas amables y cotidianas de despedirse." }
+  ],
+  "vocabulary": [
+    { "word": "hello", "es": "hola" },
+    { "word": "hi", "es": "hola (informal)" },
+    { "word": "good morning", "es": "buenos días" },
+    { "word": "good afternoon", "es": "buenas tardes" },
+    { "word": "good evening", "es": "buenas noches (al saludar)" },
+    { "word": "good night", "es": "buenas noches (al despedirse)" },
+    { "word": "goodbye", "es": "adiós" },
+    { "word": "bye", "es": "chao / adiós (informal)" },
+    { "word": "see you later", "es": "hasta luego" },
+    { "word": "see you tomorrow", "es": "hasta mañana" },
+    { "word": "take care", "es": "cuídate" },
+    { "word": "nice to meet you", "es": "mucho gusto" },
+    { "word": "fine", "es": "bien" },
+    { "word": "thanks", "es": "gracias" },
+    { "word": "neighbor", "es": "vecino / vecina" },
+    { "word": "name", "es": "nombre" }
+  ],
+  "phrases": [
+    { "phrase": "How are you?", "es": "¿Cómo estás?" },
+    { "phrase": "I'm fine, thank you.", "es": "Estoy bien, gracias." },
+    { "phrase": "And you?", "es": "¿Y tú?" },
+    { "phrase": "What's your name?", "es": "¿Cómo te llamas?" },
+    { "phrase": "My name is Carmen.", "es": "Me llamo Carmen." },
+    { "phrase": "Nice to meet you.", "es": "Mucho gusto." },
+    { "phrase": "Nice to meet you too.", "es": "Igualmente, mucho gusto." },
+    { "phrase": "Have a nice day!", "es": "¡Que tengas un buen día!" },
+    { "phrase": "See you later!", "es": "¡Hasta luego!" },
+    { "phrase": "How's it going?", "es": "¿Qué tal?" },
+    { "phrase": "Not bad, thanks.", "es": "Nada mal, gracias." },
+    { "phrase": "Good night, sleep well.", "es": "Buenas noches, que descanses." }
+  ],
+  "qa": [
+    { "question": { "en": "It's 9 a.m. and you see your neighbor. What do you say?", "es": "Son las 9 de la mañana y ves a tu vecina. ¿Qué le dices?" }, "options": ["Good morning!", "Good night!", "Good evening!", "Goodbye!"], "correct": 0, "explanation": { "en": "In the morning we say \"Good morning\". \"Good night\" is only for saying goodbye at night.", "es": "Por la mañana se dice «Good morning». «Good night» solo es para despedirse de noche." } },
+    { "question": { "en": "Someone says \"How are you?\". What is a good answer?", "es": "Alguien te dice «How are you?». ¿Cuál es una buena respuesta?" }, "options": ["I'm fine, thanks. And you?", "My name is Carmen.", "Nice to meet you.", "See you tomorrow."], "correct": 0, "explanation": { "en": "\"How are you?\" asks how you feel, so answer with \"I'm fine\" and ask back: \"And you?\"", "es": "«How are you?» pregunta cómo estás, así que respondes «I'm fine» y devuelves la pregunta: «And you?»" } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I am Carmen.", "I is Carmen.", "I are Carmen.", "Me am Carmen."], "correct": 0, "explanation": { "en": "With \"I\" the verb \"to be\" is always \"am\": I am.", "es": "Con «I» (yo) el verbo «to be» siempre es «am»: I am." } },
+    { "question": { "en": "You meet a person for the first time. What do you say?", "es": "Conoces a una persona por primera vez. ¿Qué dices?" }, "options": ["Nice to meet you.", "Good night.", "See you later.", "Not bad."], "correct": 0, "explanation": { "en": "\"Nice to meet you\" is what we say when we meet someone new.", "es": "«Nice to meet you» es lo que se dice al conocer a alguien nuevo." } },
+    { "question": { "en": "It's 10 p.m. and you are going to bed. What do you say to your family?", "es": "Son las 10 de la noche y te vas a dormir. ¿Qué le dices a tu familia?" }, "options": ["Good night!", "Good morning!", "Good afternoon!", "Hello!"], "correct": 0, "explanation": { "en": "Before going to bed we say \"Good night\".", "es": "Antes de dormir se dice «Good night»." } },
+    { "question": { "en": "What is the short form of \"I am\"?", "es": "¿Cuál es la forma corta de «I am»?" }, "options": ["I'm", "Im", "I'am", "I'r"], "correct": 0, "explanation": { "en": "The apostrophe replaces the letter \"a\": I am → I'm.", "es": "El apóstrofo reemplaza la letra «a»: I am → I'm." } },
+    { "question": { "en": "Choose the correct sentence about Linda.", "es": "Elige la oración correcta sobre Linda." }, "options": ["She is my neighbor.", "She are my neighbor.", "She am my neighbor.", "She be my neighbor."], "correct": 0, "explanation": { "en": "With \"he\" and \"she\" the verb \"to be\" is \"is\".", "es": "Con «he» y «she» el verbo «to be» es «is»." } },
+    { "question": { "en": "Which one is a friendly way to say goodbye?", "es": "¿Cuál es una forma amable de despedirse?" }, "options": ["Take care!", "Good morning!", "How are you?", "Nice to meet you."], "correct": 0, "explanation": { "en": "\"Take care\" means you wish the other person well when you leave.", "es": "«Take care» significa que le deseas lo mejor a la otra persona al despedirte." } }
+  ],
+  "story": {
+    "title": "A New Neighbor",
+    "text": "Carmen is from Guadalajara, Mexico. Today she is in San Diego. Her daughter Laura lives here. It is eight in the morning, and Carmen is outside with her coffee. A woman opens the door of the next house. \"Good morning!\" says the woman. \"Hello! Good morning,\" says Carmen. \"I'm Linda. I'm your neighbor.\" \"Nice to meet you, Linda. My name is Carmen.\" \"Nice to meet you too, Carmen. How are you?\" \"I'm fine, thank you. And you?\" \"Very well, thanks. Welcome to San Diego!\" Carmen smiles. Her English is not perfect, but she is happy. Linda is nice. \"Have a nice day, Carmen!\" \"Thank you, Linda. See you later!\"",
+    "es": "Carmen es de Guadalajara, México. Hoy está en San Diego. Su hija Laura vive aquí. Son las ocho de la mañana y Carmen está afuera con su café. Una mujer abre la puerta de la casa de al lado. «¡Buenos días!», dice la mujer. «¡Hola! Buenos días», dice Carmen. «Soy Linda. Soy tu vecina.» «Mucho gusto, Linda. Me llamo Carmen.» «Igualmente, Carmen. ¿Cómo estás?» «Estoy bien, gracias. ¿Y tú?» «Muy bien, gracias. ¡Bienvenida a San Diego!» Carmen sonríe. Su inglés no es perfecto, pero está feliz. Linda es amable. «¡Que tengas un buen día, Carmen!» «Gracias, Linda. ¡Hasta luego!»",
+    "highlighted_words": ["Good morning", "Hello", "neighbor", "Nice to meet you", "How are you", "I'm fine", "See you later"]
+  },
+  "arrange": [
+    { "sentence": "My name is Carmen", "es": "Me llamo Carmen." },
+    { "sentence": "How are you today", "es": "¿Cómo estás hoy?" },
+    { "sentence": "She is my neighbor", "es": "Ella es mi vecina." },
+    { "sentence": "Nice to meet you too", "es": "Igualmente, mucho gusto." },
+    { "sentence": "I am fine thank you", "es": "Estoy bien, gracias." },
+    { "sentence": "See you tomorrow Linda", "es": "Hasta mañana, Linda." }
+  ],
+  "translate": [
+    { "answer": "Good morning", "es": "Buenos días" },
+    { "answer": "My name is Carmen", "es": "Me llamo Carmen" },
+    { "answer": "Nice to meet you", "es": "Mucho gusto" },
+    { "answer": "I am fine, thank you", "es": "Estoy bien, gracias" },
+    { "answer": "She is my neighbor", "es": "Ella es mi vecina" },
+    { "answer": "See you tomorrow", "es": "Hasta mañana" }
+  ]
+}

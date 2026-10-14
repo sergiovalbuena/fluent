@@ -1,0 +1,85 @@
+{
+  "lesson": 41,
+  "slug": "lesson-41",
+  "icon": "🔑",
+  "title": { "en": "Finding a place to live", "es": "Buscar dónde vivir" },
+  "grammar": [
+    { "structure": "have / has + past participle + for", "example": "Ana has lived in that room for two years.", "en": "Present perfect with \"for\" (a period of time)", "es": "Presente perfecto con «for» (un periodo de tiempo)" },
+    { "structure": "… since + starting point", "example": "I've lived here since March.", "en": "Present perfect with \"since\" (a starting point)", "es": "Presente perfecto con «since» (desde un momento)" },
+    { "structure": "How long have you…?", "example": "How long have you lived in San Diego?", "en": "Asking about duration up to now", "es": "Preguntar cuánto tiempo llevas haciendo algo" },
+    { "structure": "Is … included?", "example": "Are utilities included in the rent?", "en": "Asking about what the price includes", "es": "Preguntar qué incluye el precio" },
+    { "structure": "a … -bedroom apartment", "example": "a two-bedroom apartment", "en": "Describing apartments", "es": "Describir departamentos" }
+  ],
+  "tips": [
+    { "en": "Spanish uses the present (\"Vivo aquí desde marzo\"), but English uses the present perfect: \"I've lived here since March.\"", "es": "El español usa el presente («Vivo aquí desde marzo»), pero el inglés usa el presente perfecto: «I've lived here since March.»" },
+    { "en": "\"For\" + amount of time (for two years); \"since\" + moment (since 2020, since Monday).", "es": "«For» + cantidad de tiempo (for two years); «since» + momento (since 2020, since Monday)." },
+    { "en": "\"Utilities\" are water, electricity and gas. Ask if they're included in the rent.", "es": "Los «utilities» son agua, luz y gas. Pregunta si están incluidos en la renta." },
+    { "en": "A \"lease\" is the rental contract, usually for 12 months. Read it carefully before you sign.", "es": "El «lease» es el contrato de renta, normalmente por 12 meses. Léelo con cuidado antes de firmar." },
+    { "en": "The \"security deposit\" is money you get back when you leave, if the apartment is in good condition.", "es": "El «security deposit» es el depósito que te devuelven al irte, si el departamento está en buen estado." }
+  ],
+  "vocabulary": [
+    { "word": "rent", "es": "renta / rentar" },
+    { "word": "landlord", "es": "casero / arrendador" },
+    { "word": "tenant", "es": "inquilino" },
+    { "word": "lease", "es": "contrato de renta" },
+    { "word": "security deposit", "es": "depósito de garantía" },
+    { "word": "utilities", "es": "servicios (agua, luz, gas)" },
+    { "word": "furnished", "es": "amueblado" },
+    { "word": "unfurnished", "es": "sin amueblar" },
+    { "word": "studio", "es": "estudio (departamento de un ambiente)" },
+    { "word": "neighborhood", "es": "colonia / vecindario" },
+    { "word": "parking", "es": "estacionamiento" },
+    { "word": "laundry room", "es": "cuarto de lavado" },
+    { "word": "move in", "es": "mudarse (a un lugar)" },
+    { "word": "move out", "es": "mudarse (de un lugar)" },
+    { "word": "for", "es": "durante (tiempo)" },
+    { "word": "since", "es": "desde" },
+    { "word": "sign", "es": "firmar" }
+  ],
+  "phrases": [
+    { "phrase": "How long have you lived here?", "es": "¿Cuánto tiempo llevas viviendo aquí?" },
+    { "phrase": "I've lived here for six months.", "es": "Llevo seis meses viviendo aquí." },
+    { "phrase": "She has worked there since 2019.", "es": "Trabaja ahí desde 2019." },
+    { "phrase": "I'm looking for a one-bedroom apartment.", "es": "Busco un departamento de una recámara." },
+    { "phrase": "How much is the rent?", "es": "¿Cuánto es la renta?" },
+    { "phrase": "Are utilities included?", "es": "¿Los servicios están incluidos?" },
+    { "phrase": "Is it furnished?", "es": "¿Está amueblado?" },
+    { "phrase": "Is there parking?", "es": "¿Hay estacionamiento?" },
+    { "phrase": "When can I move in?", "es": "¿Cuándo me puedo mudar?" },
+    { "phrase": "How much is the security deposit?", "es": "¿De cuánto es el depósito?" },
+    { "phrase": "Can I see the apartment?", "es": "¿Puedo ver el departamento?" },
+    { "phrase": "I'd like to read the lease first.", "es": "Quisiera leer el contrato primero." }
+  ],
+  "qa": [
+    { "question": { "en": "How do you say \"Vivo aquí desde marzo\"?", "es": "¿Cómo se dice «Vivo aquí desde marzo»?" }, "options": ["I've lived here since March.", "I live here since March.", "I've lived here for March.", "I'm living here from March."], "correct": 0, "explanation": { "en": "From a past moment until now → present perfect + since.", "es": "Desde un momento pasado hasta ahora → presente perfecto + since." } },
+    { "question": { "en": "Complete: \"She has worked there ___ ten years.\"", "es": "Completa: «She has worked there ___ ten years.»" }, "options": ["for", "since", "from", "during since"], "correct": 0, "explanation": { "en": "Amount of time → for.", "es": "Cantidad de tiempo → for." } },
+    { "question": { "en": "Complete: \"We've been friends ___ 2015.\"", "es": "Completa: «We've been friends ___ 2015.»" }, "options": ["since", "for", "ago", "by"], "correct": 0, "explanation": { "en": "Starting point → since.", "es": "Punto de inicio → since." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["How long have you lived here?", "How long do you live here?", "How long you have lived here?", "How much time you live here?"], "correct": 0, "explanation": { "en": "How long + have you + past participle?", "es": "How long + have you + participio?" } },
+    { "question": { "en": "Water, electricity and gas are called…", "es": "El agua, la luz y el gas se llaman…" }, "options": ["utilities", "furniture", "deposits", "leases"], "correct": 0, "explanation": { "en": "Utilities = servicios.", "es": "Utilities = servicios." } },
+    { "question": { "en": "The owner of the apartment you rent is the…", "es": "El dueño del departamento que rentas es el…" }, "options": ["landlord", "tenant", "neighbor", "lease"], "correct": 0, "explanation": { "en": "Landlord = owner; tenant = the person who rents.", "es": "Landlord = dueño; tenant = quien renta." } },
+    { "question": { "en": "An apartment with a bed, sofa and table already inside is…", "es": "Un departamento que ya tiene cama, sofá y mesa está…" }, "options": ["furnished", "unfurnished", "utilities", "parking"], "correct": 0, "explanation": { "en": "Furnished = amueblado.", "es": "Furnished = amueblado." } },
+    { "question": { "en": "Complete: \"I ___ known Linda for a year.\"", "es": "Completa: «I ___ known Linda for a year.»" }, "options": ["have", "has", "am", "did"], "correct": 0, "explanation": { "en": "I → have + past participle.", "es": "I → have + participio." } }
+  ],
+  "story": {
+    "title": "Ana Needs a New Place",
+    "text": "Back in San Diego, Ana has a problem. \"I've lived in a small room for two years,\" she tells Carmen. \"But my landlord is selling the house. I need a new place.\" Carmen has lived in her apartment since March, and she knows the neighborhood well. \"Let's look together!\" They visit a one-bedroom apartment near the beach. \"How much is the rent?\" asks Ana. \"Eighteen hundred a month,\" says the landlord. \"Are utilities included?\" \"No, they aren't. And the security deposit is one month's rent.\" Ana looks worried. The next apartment is a studio, furnished, with parking and a laundry room. The rent is lower and utilities are included. \"Can I see the lease?\" asks Carmen. She reads every line. \"It looks good, Ana.\" Ana smiles. \"I've waited for this for a long time. When can I move in?\"",
+    "es": "De vuelta en San Diego, Ana tiene un problema. «Llevo dos años viviendo en un cuarto pequeño», le cuenta a Carmen. «Pero el casero va a vender la casa. Necesito un lugar nuevo.» Carmen vive en su departamento desde marzo y conoce bien el barrio. «¡Busquemos juntas!» Visitan un departamento de una recámara cerca de la playa. «¿Cuánto es la renta?», pregunta Ana. «Mil ochocientos al mes», dice el casero. «¿Los servicios están incluidos?» «No. Y el depósito es de un mes de renta.» Ana se ve preocupada. El siguiente departamento es un estudio amueblado, con estacionamiento y cuarto de lavado. La renta es más baja y los servicios están incluidos. «¿Puedo ver el contrato?», pregunta Carmen. Lee cada línea. «Se ve bien, Ana.» Ana sonríe. «Llevo mucho tiempo esperando esto. ¿Cuándo me puedo mudar?»",
+    "highlighted_words": ["I've lived in a small room for two years", "landlord", "has lived in her apartment since March", "neighborhood", "How much is the rent", "Are utilities included", "security deposit", "studio", "furnished", "parking", "laundry room", "lease", "When can I move in"]
+  },
+  "arrange": [
+    { "sentence": "How long have you lived here", "es": "¿Cuánto tiempo llevas viviendo aquí?" },
+    { "sentence": "I have lived here since March", "es": "Vivo aquí desde marzo." },
+    { "sentence": "She has worked there for ten years", "es": "Lleva diez años trabajando ahí." },
+    { "sentence": "Are utilities included in the rent", "es": "¿Los servicios están incluidos en la renta?" },
+    { "sentence": "I am looking for a furnished apartment", "es": "Busco un departamento amueblado." },
+    { "sentence": "When can I move in", "es": "¿Cuándo me puedo mudar?" }
+  ],
+  "translate": [
+    { "answer": "I have lived here for two years", "es": "Llevo dos años viviendo aquí" },
+    { "answer": "How much is the rent", "es": "¿Cuánto es la renta?" },
+    { "answer": "Is it furnished", "es": "¿Está amueblado?" },
+    { "answer": "She has known me since 2020", "es": "Me conoce desde 2020" },
+    { "answer": "Can I see the apartment", "es": "¿Puedo ver el departamento?" },
+    { "answer": "Is there parking", "es": "¿Hay estacionamiento?" }
+  ]
+}

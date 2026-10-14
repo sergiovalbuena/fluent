@@ -1,0 +1,90 @@
+{
+  "lesson": 4,
+  "slug": "lesson-04",
+  "icon": "🔢",
+  "title": { "en": "Numbers", "es": "Los números" },
+  "grammar": [
+    { "structure": "one, two, three…", "example": "I have two children.", "en": "Cardinal numbers", "es": "Números cardinales" },
+    { "structure": "noun + s (plural)", "example": "one book, three books", "en": "Regular plurals add -s", "es": "Los plurales regulares agregan -s" },
+    { "structure": "How many…?", "example": "How many brothers do you have?", "en": "Asking about quantity", "es": "Preguntar por cantidades" },
+    { "structure": "How old are you? — I'm 58.", "example": "How old is Leo? — He's eight.", "en": "Age uses \"to be\"", "es": "La edad se dice con «to be» (no con «have»)" },
+    { "structure": "-teen vs -ty", "example": "fifteen (15) / fifty (50)", "en": "Teens and tens sound similar", "es": "Los «-teen» y los «-ty» suenan parecido" }
+  ],
+  "tips": [
+    { "en": "In English you are an age: \"I am 58\", never \"I have 58 years\".", "es": "En inglés uno «es» una edad: «I am 58», nunca «I have 58 years»." },
+    { "en": "Stress the end in -teen numbers (fif-TEEN) and the start in -ty numbers (FIF-ty).", "es": "En los números -teen el acento va al final (fif-TEEN) y en los -ty al principio (FIF-ty)." },
+    { "en": "Phone numbers are said one digit at a time: 6-1-9, 5-5-5…", "es": "Los números de teléfono se dicen dígito por dígito: 6-1-9, 5-5-5…" },
+    { "en": "Americans use a period for decimals and a comma for thousands: $1,250.50", "es": "En Estados Unidos se usa punto para los decimales y coma para los miles: $1,250.50" },
+    { "en": "Zero is often said \"oh\" in phone numbers and addresses: 2-0-5 → \"two oh five\".", "es": "El cero se suele decir «oh» en teléfonos y direcciones: 2-0-5 → «two oh five»." }
+  ],
+  "vocabulary": [
+    { "word": "zero", "es": "cero" },
+    { "word": "one", "es": "uno" },
+    { "word": "two", "es": "dos" },
+    { "word": "three", "es": "tres" },
+    { "word": "four", "es": "cuatro" },
+    { "word": "five", "es": "cinco" },
+    { "word": "six", "es": "seis" },
+    { "word": "seven", "es": "siete" },
+    { "word": "eight", "es": "ocho" },
+    { "word": "nine", "es": "nueve" },
+    { "word": "ten", "es": "diez" },
+    { "word": "eleven", "es": "once" },
+    { "word": "twelve", "es": "doce" },
+    { "word": "fifteen", "es": "quince" },
+    { "word": "twenty", "es": "veinte" },
+    { "word": "thirty", "es": "treinta" },
+    { "word": "fifty", "es": "cincuenta" },
+    { "word": "one hundred", "es": "cien" },
+    { "word": "one thousand", "es": "mil" },
+    { "word": "phone number", "es": "número de teléfono" },
+    { "word": "address", "es": "dirección" },
+    { "word": "dollar", "es": "dólar" }
+  ],
+  "phrases": [
+    { "phrase": "How old are you?", "es": "¿Cuántos años tienes?" },
+    { "phrase": "I'm fifty-eight years old.", "es": "Tengo cincuenta y ocho años." },
+    { "phrase": "What's your phone number?", "es": "¿Cuál es tu número de teléfono?" },
+    { "phrase": "My number is 619-555-0142.", "es": "Mi número es 619-555-0142." },
+    { "phrase": "How many children do you have?", "es": "¿Cuántos hijos tienes?" },
+    { "phrase": "I have two children.", "es": "Tengo dos hijos." },
+    { "phrase": "How much is it?", "es": "¿Cuánto cuesta?" },
+    { "phrase": "It's twenty dollars.", "es": "Son veinte dólares." },
+    { "phrase": "What's your address?", "es": "¿Cuál es tu dirección?" },
+    { "phrase": "Can you write it down, please?", "es": "¿Me lo puede escribir, por favor?" },
+    { "phrase": "Fifteen or fifty?", "es": "¿Quince o cincuenta?" },
+    { "phrase": "One more time, please.", "es": "Una vez más, por favor." }
+  ],
+  "qa": [
+    { "question": { "en": "How do you say your age correctly?", "es": "¿Cómo dices tu edad correctamente?" }, "options": ["I am 58 years old.", "I have 58 years.", "I have 58 years old.", "Me 58 years."], "correct": 0, "explanation": { "en": "In English age uses \"to be\": I am 58 (years old).", "es": "En inglés la edad se dice con «to be»: I am 58 (years old)." } },
+    { "question": { "en": "Which number is \"fifty\"?", "es": "¿Qué número es «fifty»?" }, "options": ["50", "15", "5", "500"], "correct": 0, "explanation": { "en": "Fifty is 50. Fifteen is 15.", "es": "Fifty es 50. Fifteen es 15." } },
+    { "question": { "en": "Complete: \"I have three ___.\"", "es": "Completa: «I have three ___.»" }, "options": ["books", "book", "bookes", "a book"], "correct": 0, "explanation": { "en": "More than one: add -s. One book, three books.", "es": "Más de uno: se agrega -s. One book, three books." } },
+    { "question": { "en": "Which question asks about quantity?", "es": "¿Qué pregunta pregunta por una cantidad?" }, "options": ["How many children do you have?", "How old are you?", "What's your name?", "Where are you?"], "correct": 0, "explanation": { "en": "\"How many…?\" asks about quantity.", "es": "«How many…?» pregunta por una cantidad." } },
+    { "question": { "en": "How do you write 1,500 in words?", "es": "¿Cómo se escribe 1,500 en palabras?" }, "options": ["one thousand five hundred", "one hundred fifty", "fifteen thousand", "one thousand fifty"], "correct": 0, "explanation": { "en": "1,500 = one thousand five hundred (or \"fifteen hundred\").", "es": "1,500 = one thousand five hundred (o «fifteen hundred»)." } },
+    { "question": { "en": "How do people usually read the phone number 205-3344?", "es": "¿Cómo se suele leer el número de teléfono 205-3344?" }, "options": ["two oh five, three three four four", "two hundred five, thirty-three forty-four", "twenty five, thirty-four", "two zero five thousand"], "correct": 0, "explanation": { "en": "Phone numbers are read digit by digit, and 0 is often \"oh\".", "es": "Los teléfonos se leen dígito por dígito y el 0 se suele decir «oh»." } },
+    { "question": { "en": "What's the number after twelve?", "es": "¿Qué número sigue después de twelve?" }, "options": ["thirteen", "thirty", "eleven", "twenty"], "correct": 0, "explanation": { "en": "12 twelve, 13 thirteen.", "es": "12 twelve, 13 thirteen." } },
+    { "question": { "en": "In the US, what is $3.50?", "es": "En Estados Unidos, ¿qué es $3.50?" }, "options": ["three dollars and fifty cents", "three thousand fifty dollars", "thirty-five dollars", "three hundred fifty dollars"], "correct": 0, "explanation": { "en": "The period separates dollars and cents: $3.50 = three dollars and fifty cents.", "es": "El punto separa dólares y centavos: $3.50 = tres dólares con cincuenta centavos." } }
+  ],
+  "story": {
+    "title": "Fifteen or Fifty?",
+    "text": "Carmen is at the post office with Leo. She wants to send a small box to her sister in Mexico. \"How much is it?\" she asks. \"Fifteen dollars,\" says the man. Carmen hears \"fifty\". \"Fifty? That's a lot!\" Leo laughs. \"No, Grandma. Fifteen. One, five.\" \"Ah, fifteen! Okay.\" The man needs her phone number and her address. \"My number is six one nine, five five five, oh one four two.\" \"And your address?\" \"Two hundred ten Palm Street.\" \"Perfect. Thank you!\" Outside, Carmen says to Leo: \"English numbers are difficult. Fifteen, fifty, sixteen, sixty…\" \"Don't worry, Grandma. You are a good student. And I'm a good teacher!\" Leo is eight years old, and he is very proud.",
+    "es": "Carmen está en la oficina de correos con Leo. Quiere mandarle una caja pequeña a su hermana en México. «¿Cuánto cuesta?», pregunta. «Quince dólares», dice el hombre. Carmen oye «cincuenta». «¿Cincuenta? ¡Es mucho!» Leo se ríe. «No, abuela. Quince. Uno, cinco.» «¡Ah, quince! Bueno.» El hombre necesita su número de teléfono y su dirección. «Mi número es seis uno nueve, cinco cinco cinco, cero uno cuatro dos.» «¿Y su dirección?» «Palm Street doscientos diez.» «Perfecto. ¡Gracias!» Afuera, Carmen le dice a Leo: «Los números en inglés son difíciles. Fifteen, fifty, sixteen, sixty…» «No te preocupes, abuela. Eres una buena alumna. ¡Y yo soy un buen maestro!» Leo tiene ocho años y está muy orgulloso.",
+    "highlighted_words": ["How much is it", "Fifteen", "fifty", "phone number", "address", "eight years old"]
+  },
+  "arrange": [
+    { "sentence": "I am fifty-eight years old", "es": "Tengo cincuenta y ocho años." },
+    { "sentence": "How many children do you have", "es": "¿Cuántos hijos tienes?" },
+    { "sentence": "What is your phone number", "es": "¿Cuál es tu número de teléfono?" },
+    { "sentence": "It is twenty dollars", "es": "Son veinte dólares." },
+    { "sentence": "I have three grandchildren", "es": "Tengo tres nietos." },
+    { "sentence": "How much is the box", "es": "¿Cuánto cuesta la caja?" }
+  ],
+  "translate": [
+    { "answer": "How old are you", "es": "¿Cuántos años tienes?" },
+    { "answer": "I have two children", "es": "Tengo dos hijos" },
+    { "answer": "How much is it", "es": "¿Cuánto cuesta?" },
+    { "answer": "It is fifteen dollars", "es": "Son quince dólares" },
+    { "answer": "What is your address", "es": "¿Cuál es tu dirección?" },
+    { "answer": "He is eight years old", "es": "Él tiene ocho años" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 21,
+  "slug": "lesson-21",
+  "icon": "⏱️",
+  "title": { "en": "Time and measurements", "es": "La hora y las medidas" },
+  "grammar": [
+    { "structure": "What time is it? — It's…", "example": "It's ten thirty. It's a quarter to six.", "en": "Telling the time", "es": "Decir la hora" },
+    { "structure": "at + time", "example": "My class starts at nine.", "en": "\"At\" with clock times", "es": "«At» con la hora" },
+    { "structure": "a.m. / p.m.", "example": "The store opens at 8 a.m. and closes at 9 p.m.", "en": "Morning and afternoon/night", "es": "Mañana y tarde/noche" },
+    { "structure": "How long…? — It takes…", "example": "How long does it take? — It takes twenty minutes.", "en": "Asking about duration", "es": "Preguntar cuánto tiempo toma algo" },
+    { "structure": "How tall / how heavy / how far", "example": "How tall are you? — I'm five feet four.", "en": "Asking about measurements", "es": "Preguntar medidas" }
+  ],
+  "tips": [
+    { "en": "\"Quarter past\" = :15, \"half past\" = :30, \"quarter to\" = :45. Many people simply say the numbers: \"six forty-five\".", "es": "«Quarter past» = :15, «half past» = :30, «quarter to» = :45. Mucha gente dice solo los números: «six forty-five»." },
+    { "en": "The US uses the 12-hour clock with a.m. and p.m. 15:00 is \"3 p.m.\"", "es": "En Estados Unidos se usa el reloj de 12 horas con a.m. y p.m. Las 15:00 son «3 p.m.»" },
+    { "en": "Height is in feet and inches: 1 foot ≈ 30 cm, 1 inch ≈ 2.5 cm. Weight is in pounds.", "es": "La estatura se mide en pies y pulgadas: 1 pie ≈ 30 cm, 1 pulgada ≈ 2.5 cm. El peso en libras." },
+    { "en": "Temperature is in Fahrenheit: 70°F is about 21°C, 32°F is freezing.", "es": "La temperatura es en Fahrenheit: 70°F son unos 21°C; 32°F es el punto de congelación." },
+    { "en": "Americans are usually on time. \"Five minutes late\" is okay; more than that, send a message.", "es": "En Estados Unidos la gente suele ser puntual. «Cinco minutos tarde» está bien; si es más, manda un mensaje." }
+  ],
+  "vocabulary": [
+    { "word": "hour", "es": "hora" },
+    { "word": "minute", "es": "minuto" },
+    { "word": "second", "es": "segundo" },
+    { "word": "half past", "es": "y media" },
+    { "word": "quarter past", "es": "y cuarto" },
+    { "word": "quarter to", "es": "cuarto para" },
+    { "word": "o'clock", "es": "en punto" },
+    { "word": "noon", "es": "mediodía" },
+    { "word": "midnight", "es": "medianoche" },
+    { "word": "on time", "es": "a tiempo / puntual" },
+    { "word": "foot", "es": "pie (medida)" },
+    { "word": "inch", "es": "pulgada" },
+    { "word": "pound", "es": "libra" },
+    { "word": "mile", "es": "milla" },
+    { "word": "tall", "es": "alto" },
+    { "word": "heavy", "es": "pesado" },
+    { "word": "long", "es": "largo" }
+  ],
+  "phrases": [
+    { "phrase": "What time is it?", "es": "¿Qué hora es?" },
+    { "phrase": "It's ten o'clock.", "es": "Son las diez en punto." },
+    { "phrase": "It's half past four.", "es": "Son las cuatro y media." },
+    { "phrase": "It's a quarter to six.", "es": "Es un cuarto para las seis." },
+    { "phrase": "What time does the store open?", "es": "¿A qué hora abre la tienda?" },
+    { "phrase": "At nine in the morning.", "es": "A las nueve de la mañana." },
+    { "phrase": "How long does it take?", "es": "¿Cuánto tiempo tarda?" },
+    { "phrase": "It takes about twenty minutes.", "es": "Tarda unos veinte minutos." },
+    { "phrase": "I'm sorry I'm late.", "es": "Perdón por llegar tarde." },
+    { "phrase": "Right on time!", "es": "¡Justo a tiempo!" },
+    { "phrase": "How tall is he?", "es": "¿Cuánto mide él?" },
+    { "phrase": "It's seventy degrees today.", "es": "Hoy hace setenta grados (Fahrenheit)." }
+  ],
+  "qa": [
+    { "question": { "en": "It's 4:30. How do you say it?", "es": "Son las 4:30. ¿Cómo se dice?" }, "options": ["It's half past four.", "It's half four past.", "It's four and half.", "It's half to four."], "correct": 0, "explanation": { "en": "4:30 = half past four (or \"four thirty\").", "es": "4:30 = half past four (o «four thirty»)." } },
+    { "question": { "en": "It's 5:45. How do you say it?", "es": "Son las 5:45. ¿Cómo se dice?" }, "options": ["It's a quarter to six.", "It's a quarter past six.", "It's a quarter to five.", "It's half past five."], "correct": 0, "explanation": { "en": "5:45 = a quarter to six (or \"five forty-five\").", "es": "5:45 = a quarter to six (o «five forty-five»)." } },
+    { "question": { "en": "Complete: \"My class starts ___ nine.\"", "es": "Completa: «My class starts ___ nine.»" }, "options": ["at", "on", "in", "to"], "correct": 0, "explanation": { "en": "We use \"at\" with clock times.", "es": "Con la hora se usa «at»." } },
+    { "question": { "en": "3 p.m. is…", "es": "3 p.m. es…" }, "options": ["15:00", "3:00 in the morning", "13:00", "midnight"], "correct": 0, "explanation": { "en": "p.m. is after noon: 3 p.m. = 15:00.", "es": "p.m. es después del mediodía: 3 p.m. = 15:00." } },
+    { "question": { "en": "How do you ask about duration?", "es": "¿Cómo preguntas cuánto tiempo tarda algo?" }, "options": ["How long does it take?", "How much does it take?", "How time does it take?", "What long is it?"], "correct": 0, "explanation": { "en": "\"How long…?\" asks about time.", "es": "«How long…?» pregunta por el tiempo." } },
+    { "question": { "en": "12 a.m. is…", "es": "12 a.m. es…" }, "options": ["midnight", "noon", "morning", "evening"], "correct": 0, "explanation": { "en": "12 a.m. = midnight, 12 p.m. = noon.", "es": "12 a.m. = medianoche, 12 p.m. = mediodía." } },
+    { "question": { "en": "It's 70°F. Is it hot or cold?", "es": "Hace 70°F. ¿Hace calor o frío?" }, "options": ["Nice and warm (about 21°C)", "Very cold", "Freezing", "Extremely hot"], "correct": 0, "explanation": { "en": "70°F is about 21°C: pleasant.", "es": "70°F son unos 21°C: agradable." } },
+    { "question": { "en": "You arrive exactly at 10:00 for a 10:00 meeting. You are…", "es": "Llegas exactamente a las 10:00 a una reunión de las 10:00. Llegas…" }, "options": ["on time", "late", "early", "past"], "correct": 0, "explanation": { "en": "On time = puntual.", "es": "On time = puntual." } }
+  ],
+  "story": {
+    "title": "Right on Time",
+    "text": "On Wednesday, the conversation group at the library starts at ten o'clock. Carmen doesn't want to be late. \"How long does it take by bus?\" she asks Laura. \"It takes about forty minutes. Take the bus at a quarter past nine.\" At nine o'clock Carmen is ready. At a quarter past nine she is at the bus stop. The bus is late. Five minutes… ten minutes… At half past nine the bus finally comes. Carmen looks at her watch all the time. At five to ten she runs into the library. A man at the door smiles. \"Right on time!\" The group leader asks everybody, \"What time do you usually get up?\" \"I get up at six o'clock,\" says Carmen. \"But today… today I run!\" Everybody laughs.",
+    "es": "El miércoles, el grupo de conversación de la biblioteca empieza a las diez en punto. Carmen no quiere llegar tarde. «¿Cuánto tarda en autobús?», le pregunta a Laura. «Unos cuarenta minutos. Toma el autobús a las nueve y cuarto.» A las nueve en punto Carmen ya está lista. A las nueve y cuarto está en la parada. El autobús viene tarde. Cinco minutos… diez minutos… A las nueve y media por fin llega el autobús. Carmen mira su reloj todo el tiempo. A las diez menos cinco entra corriendo a la biblioteca. Un hombre en la puerta sonríe. «¡Justo a tiempo!» La coordinadora del grupo les pregunta a todos: «¿A qué hora se levantan normalmente?» «Me levanto a las seis en punto», dice Carmen. «Pero hoy… ¡hoy corro!» Todos se ríen.",
+    "highlighted_words": ["ten o'clock", "late", "How long does it take", "forty minutes", "a quarter past nine", "half past nine", "watch", "Right on time", "What time", "six o'clock"]
+  },
+  "arrange": [
+    { "sentence": "What time is it now", "es": "¿Qué hora es ahora?" },
+    { "sentence": "It is half past four", "es": "Son las cuatro y media." },
+    { "sentence": "The store opens at nine", "es": "La tienda abre a las nueve." },
+    { "sentence": "How long does it take by bus", "es": "¿Cuánto tarda en autobús?" },
+    { "sentence": "It takes about twenty minutes", "es": "Tarda unos veinte minutos." },
+    { "sentence": "I am sorry I am late", "es": "Perdón por llegar tarde." }
+  ],
+  "translate": [
+    { "answer": "What time is it", "es": "¿Qué hora es?" },
+    { "answer": "It is ten o'clock", "es": "Son las diez en punto" },
+    { "answer": "My class starts at nine", "es": "Mi clase empieza a las nueve" },
+    { "answer": "How long does it take", "es": "¿Cuánto tiempo tarda?" },
+    { "answer": "I am on time", "es": "Llego a tiempo" },
+    { "answer": "It is a quarter to six", "es": "Es un cuarto para las seis" }
+  ]
+}

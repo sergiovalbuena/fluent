@@ -1,0 +1,85 @@
+{
+  "lesson": 60,
+  "slug": "lesson-60",
+  "icon": "☀️",
+  "title": { "en": "Daily routines", "es": "La rutina diaria" },
+  "grammar": [
+    { "structure": "present simple + frequency (review)", "example": "I usually get up at six. I always have coffee first.", "en": "Routines and habits", "es": "Rutinas y hábitos" },
+    { "structure": "get up / wake up / go to bed", "example": "I wake up at six and get up at six fifteen.", "en": "Routine verbs", "es": "Verbos de la rutina" },
+    { "structure": "before / after + verb-ing", "example": "After having breakfast, I walk on the beach.", "en": "Ordering actions", "es": "Ordenar acciones" },
+    { "structure": "used to + verb", "example": "I used to live in Guadalajara. Now I live in San Diego.", "en": "Past habits that changed", "es": "Hábitos del pasado que cambiaron (solía)" },
+    { "structure": "Tenses together (review)", "example": "I have lived here for a year, I'm learning English, and I'll keep studying.", "en": "Present perfect, present continuous and future together", "es": "Presente perfecto, presente continuo y futuro juntos" }
+  ],
+  "tips": [
+    { "en": "\"Wake up\" = abrir los ojos; \"get up\" = levantarse de la cama.", "es": "«Wake up» = despertarse; «get up» = levantarse de la cama." },
+    { "en": "\"Used to\" talks about the past that is no longer true: \"I used to be shy.\"", "es": "«Used to» habla de un pasado que ya no es así: «I used to be shy» (antes era tímida)." },
+    { "en": "After \"before\" and \"after\", use verb + -ing: \"before going to bed\".", "es": "Después de «before» y «after», usa verbo + -ing: «before going to bed»." },
+    { "en": "A routine is the best friend of learning: ten minutes of English every day is better than two hours once a week.", "es": "La rutina es la mejor amiga del aprendizaje: diez minutos de inglés diarios valen más que dos horas una vez por semana." },
+    { "en": "You've finished the course — congratulations! Keep practicing with movies, songs, MarIA and your neighbors.", "es": "Terminaste el curso, ¡felicidades! Sigue practicando con películas, canciones, MarIA y tus vecinos." }
+  ],
+  "vocabulary": [
+    { "word": "routine", "es": "rutina" },
+    { "word": "wake up", "es": "despertarse" },
+    { "word": "get up", "es": "levantarse" },
+    { "word": "take a shower", "es": "bañarse / ducharse" },
+    { "word": "get dressed", "es": "vestirse" },
+    { "word": "brush your teeth", "es": "lavarse los dientes" },
+    { "word": "have breakfast", "es": "desayunar" },
+    { "word": "go to work", "es": "ir a trabajar" },
+    { "word": "take a nap", "es": "tomar una siesta" },
+    { "word": "do the dishes", "es": "lavar los trastes" },
+    { "word": "relax", "es": "relajarse" },
+    { "word": "go to bed", "es": "acostarse" },
+    { "word": "used to", "es": "solía / antes" },
+    { "word": "every morning", "es": "todas las mañanas" },
+    { "word": "on weekends", "es": "los fines de semana" },
+    { "word": "habit", "es": "hábito" },
+    { "word": "busy", "es": "ocupado" }
+  ],
+  "phrases": [
+    { "phrase": "What time do you usually get up?", "es": "¿A qué hora te levantas normalmente?" },
+    { "phrase": "I wake up at six every morning.", "es": "Me despierto a las seis todas las mañanas." },
+    { "phrase": "First, I have a cup of coffee.", "es": "Primero, me tomo una taza de café." },
+    { "phrase": "After breakfast, I walk on the beach.", "es": "Después del desayuno, camino por la playa." },
+    { "phrase": "I work at the bakery on Saturdays.", "es": "Trabajo en la panadería los sábados." },
+    { "phrase": "I take a nap after lunch.", "es": "Tomo una siesta después de comer." },
+    { "phrase": "I practice English every day.", "es": "Practico inglés todos los días." },
+    { "phrase": "I used to be very shy.", "es": "Antes era muy tímida." },
+    { "phrase": "Before going to bed, I read.", "es": "Antes de acostarme, leo." },
+    { "phrase": "I go to bed at ten.", "es": "Me acuesto a las diez." },
+    { "phrase": "My days are busy but happy.", "es": "Mis días son ocupados pero felices." },
+    { "phrase": "I'll never stop learning.", "es": "Nunca voy a dejar de aprender." }
+  ],
+  "qa": [
+    { "question": { "en": "\"Wake up\" or \"get up\": what do you do first?", "es": "«Wake up» o «get up»: ¿qué haces primero?" }, "options": ["wake up", "get up", "go to bed", "take a nap"], "correct": 0, "explanation": { "en": "First you wake up (open your eyes), then you get up (leave the bed).", "es": "Primero te despiertas (wake up) y luego te levantas (get up)." } },
+    { "question": { "en": "Complete: \"After ___ breakfast, I walk on the beach.\"", "es": "Completa: «After ___ breakfast, I walk on the beach.»" }, "options": ["having", "have", "to have", "had"], "correct": 0, "explanation": { "en": "After + verb-ing.", "es": "After + verbo-ing." } },
+    { "question": { "en": "Complete: \"I ___ live in Guadalajara. Now I live in San Diego.\"", "es": "Completa: «I ___ live in Guadalajara. Now I live in San Diego.»" }, "options": ["used to", "use to", "am used", "was use to"], "correct": 0, "explanation": { "en": "Past habit that changed → used to.", "es": "Hábito pasado que cambió → used to." } },
+    { "question": { "en": "Choose the correct position of \"usually\".", "es": "Elige la posición correcta de «usually»." }, "options": ["I usually go to bed at ten.", "I go usually to bed at ten.", "Usually I to bed go at ten.", "I go to bed usually ten."], "correct": 0, "explanation": { "en": "Frequency adverb before the main verb.", "es": "El adverbio de frecuencia va antes del verbo principal." } },
+    { "question": { "en": "Which sentence uses the present perfect?", "es": "¿Qué oración usa el presente perfecto?" }, "options": ["I have lived here for a year.", "I lived here last year.", "I am living here now.", "I will live here."], "correct": 0, "explanation": { "en": "have + past participle = present perfect.", "es": "have + participio = presente perfecto." } },
+    { "question": { "en": "A short sleep in the afternoon is a…", "es": "Un sueño corto en la tarde es una…" }, "options": ["nap", "routine", "shower", "habit"], "correct": 0, "explanation": { "en": "Take a nap = tomar una siesta.", "es": "Take a nap = tomar una siesta." } },
+    { "question": { "en": "Complete: \"Leo ___ his teeth every night.\"", "es": "Completa: «Leo ___ his teeth every night.»" }, "options": ["brushes", "brush", "brushs", "brushing"], "correct": 0, "explanation": { "en": "He + verb ending in -sh → -es: brushes.", "es": "He + verbo terminado en -sh → -es: brushes." } },
+    { "question": { "en": "What's the best habit for learning a language?", "es": "¿Cuál es el mejor hábito para aprender un idioma?" }, "options": ["A little practice every day", "Two hours once a month", "Only before a trip", "Never speaking"], "correct": 0, "explanation": { "en": "Daily practice works best.", "es": "La práctica diaria es lo que mejor funciona." } }
+  ],
+  "story": {
+    "title": "One Year Later",
+    "text": "It has been a year since Carmen arrived in San Diego. Her days are busy now. She wakes up at six every morning, but she gets up at six fifteen — first, a cup of coffee on her balcony. After having breakfast, she walks on the beach with Linda. On Mondays and Wednesdays she goes to English class, and on Thursdays she meets the Coffee Club. On Saturdays she works at the bakery, where her tamales always sell out. In the afternoon she usually picks up Leo from school — now she drives! After lunch she sometimes takes a short nap. In the evening she video calls her sisters in Guadalajara. Before going to bed, she reads a book in English, ten pages every night. \"I used to be very shy,\" she wrote in her last homework. \"I used to think English was impossible. Now I have friends, a job and a new home. I'm still learning, and I will never stop.\"",
+    "es": "Ha pasado un año desde que Carmen llegó a San Diego. Ahora sus días están llenos. Se despierta a las seis todas las mañanas, pero se levanta a las seis y cuarto: primero, una taza de café en su balcón. Después de desayunar, camina por la playa con Linda. Los lunes y miércoles va a su clase de inglés, y los jueves se reúne con el Club del Café. Los sábados trabaja en la panadería, donde sus tamales siempre se acaban. En la tarde normalmente recoge a Leo de la escuela: ¡ahora maneja! Después de comer a veces toma una siestita. En la noche hace videollamada con sus hermanas en Guadalajara. Antes de acostarse, lee un libro en inglés, diez páginas cada noche. «Antes era muy tímida», escribió en su última tarea. «Antes pensaba que el inglés era imposible. Ahora tengo amigos, un trabajo y un hogar nuevo. Sigo aprendiendo, y nunca voy a dejar de hacerlo.»",
+    "highlighted_words": ["It has been a year", "She wakes up at six every morning", "gets up", "After having breakfast", "goes to English class", "usually picks up", "takes a short nap", "Before going to bed", "I used to be very shy", "I'm still learning", "I will never stop"]
+  },
+  "arrange": [
+    { "sentence": "I wake up at six every morning", "es": "Me despierto a las seis todas las mañanas." },
+    { "sentence": "After breakfast I walk on the beach", "es": "Después del desayuno camino por la playa." },
+    { "sentence": "I usually take a nap after lunch", "es": "Normalmente tomo una siesta después de comer." },
+    { "sentence": "I used to be very shy", "es": "Antes era muy tímida." },
+    { "sentence": "Before going to bed I read a book", "es": "Antes de acostarme leo un libro." },
+    { "sentence": "I will never stop learning", "es": "Nunca voy a dejar de aprender." }
+  ],
+  "translate": [
+    { "answer": "I get up at six", "es": "Me levanto a las seis" },
+    { "answer": "I go to bed at ten", "es": "Me acuesto a las diez" },
+    { "answer": "I practice English every day", "es": "Practico inglés todos los días" },
+    { "answer": "I used to live in Mexico", "es": "Antes vivía en México" },
+    { "answer": "I take a shower in the morning", "es": "Me baño en la mañana" },
+    { "answer": "My days are busy but happy", "es": "Mis días son ocupados pero felices" }
+  ]
+}

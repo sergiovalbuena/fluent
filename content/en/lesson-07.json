@@ -1,0 +1,85 @@
+{
+  "lesson": 7,
+  "slug": "lesson-07",
+  "icon": "🏠",
+  "title": { "en": "At home", "es": "En casa" },
+  "grammar": [
+    { "structure": "there is + singular", "example": "There is a big kitchen.", "en": "\"There is\" for one thing", "es": "«There is» para una cosa (hay)" },
+    { "structure": "there are + plural", "example": "There are two bedrooms.", "en": "\"There are\" for several things", "es": "«There are» para varias cosas (hay)" },
+    { "structure": "Is there…? / Are there…?", "example": "Is there a garden? — Yes, there is.", "en": "Questions with there is / there are", "es": "Preguntas con there is / there are" },
+    { "structure": "There isn't / There aren't", "example": "There isn't a garage.", "en": "Negative forms", "es": "Formas negativas" },
+    { "structure": "a / an", "example": "a house, an apartment", "en": "\"An\" before a vowel sound", "es": "«An» delante de sonido de vocal" }
+  ],
+  "tips": [
+    { "en": "Spanish \"hay\" is \"there is\" (one) or \"there are\" (more than one) in English.", "es": "«Hay» en español es «there is» (uno) o «there are» (más de uno) en inglés." },
+    { "en": "\"House\" is the building; \"home\" is the place where you live and feel comfortable.", "es": "«House» es el edificio; «home» es el lugar donde vives y te sientes en casa." },
+    { "en": "Say \"at home\" (en casa) and \"go home\" (ir a casa), without \"to\".", "es": "Se dice «at home» (en casa) y «go home» (ir a casa), sin «to»." },
+    { "en": "In the US, the first floor is the ground floor.", "es": "En Estados Unidos, el «first floor» es la planta baja." },
+    { "en": "\"Apartment\" is American English. In British English it's \"flat\".", "es": "«Apartment» es inglés estadounidense. En inglés británico se dice «flat»." }
+  ],
+  "vocabulary": [
+    { "word": "house", "es": "casa" },
+    { "word": "home", "es": "hogar / casa" },
+    { "word": "apartment", "es": "departamento / apartamento" },
+    { "word": "kitchen", "es": "cocina" },
+    { "word": "bedroom", "es": "dormitorio / recámara" },
+    { "word": "bathroom", "es": "baño" },
+    { "word": "living room", "es": "sala" },
+    { "word": "dining room", "es": "comedor" },
+    { "word": "garden", "es": "jardín" },
+    { "word": "garage", "es": "garaje / cochera" },
+    { "word": "door", "es": "puerta" },
+    { "word": "window", "es": "ventana" },
+    { "word": "stairs", "es": "escaleras" },
+    { "word": "key", "es": "llave" },
+    { "word": "floor", "es": "piso / suelo" },
+    { "word": "big", "es": "grande" },
+    { "word": "small", "es": "pequeño" }
+  ],
+  "phrases": [
+    { "phrase": "Welcome to my home!", "es": "¡Bienvenido a mi casa!" },
+    { "phrase": "Come in, please.", "es": "Pasa, por favor." },
+    { "phrase": "There are three bedrooms.", "es": "Hay tres dormitorios." },
+    { "phrase": "There is a small garden.", "es": "Hay un jardín pequeño." },
+    { "phrase": "Where is the bathroom?", "es": "¿Dónde está el baño?" },
+    { "phrase": "It's upstairs, on the left.", "es": "Está arriba, a la izquierda." },
+    { "phrase": "Is there a garage?", "es": "¿Hay garaje?" },
+    { "phrase": "No, there isn't.", "es": "No, no hay." },
+    { "phrase": "Make yourself at home.", "es": "Siéntete como en tu casa." },
+    { "phrase": "I'm at home.", "es": "Estoy en casa." },
+    { "phrase": "I'm going home.", "es": "Me voy a casa." },
+    { "phrase": "Here are your keys.", "es": "Aquí están tus llaves." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"There ___ two bathrooms.\"", "es": "Completa: «There ___ two bathrooms.»" }, "options": ["are", "is", "am", "be"], "correct": 0, "explanation": { "en": "Two bathrooms = plural → there are.", "es": "Two bathrooms = plural → there are." } },
+    { "question": { "en": "Complete: \"There ___ a big kitchen.\"", "es": "Completa: «There ___ a big kitchen.»" }, "options": ["is", "are", "have", "has"], "correct": 0, "explanation": { "en": "One kitchen = singular → there is.", "es": "One kitchen = singular → there is." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Is there a garden?", "There is a garden?", "Has a garden?", "Is a garden there have?"], "correct": 0, "explanation": { "en": "To ask, put \"is\" first: Is there…?", "es": "Para preguntar se pone «is» primero: Is there…?" } },
+    { "question": { "en": "Where do you usually cook?", "es": "¿Dónde sueles cocinar?" }, "options": ["in the kitchen", "in the bedroom", "in the garage", "in the bathroom"], "correct": 0, "explanation": { "en": "We cook in the kitchen.", "es": "Se cocina en la cocina (kitchen)." } },
+    { "question": { "en": "Choose: \"___ apartment\"", "es": "Elige: «___ apartment»" }, "options": ["an", "a", "the an", "one an"], "correct": 0, "explanation": { "en": "\"Apartment\" starts with a vowel sound, so we use \"an\".", "es": "«Apartment» empieza con sonido de vocal, así que se usa «an»." } },
+    { "question": { "en": "How do you say \"Estoy en casa\"?", "es": "¿Cómo se dice «Estoy en casa»?" }, "options": ["I'm at home.", "I'm in home.", "I'm at the house home.", "I'm to home."], "correct": 0, "explanation": { "en": "We say \"at home\".", "es": "Se dice «at home»." } },
+    { "question": { "en": "A guest arrives. What do you say?", "es": "Llega un invitado. ¿Qué dices?" }, "options": ["Come in, please. Make yourself at home.", "Go home, please.", "There is a door.", "Where is the bathroom?"], "correct": 0, "explanation": { "en": "\"Come in\" and \"Make yourself at home\" are warm ways to receive guests.", "es": "«Come in» y «Make yourself at home» son formas cálidas de recibir invitados." } },
+    { "question": { "en": "Choose the correct negative.", "es": "Elige la negación correcta." }, "options": ["There aren't any chairs.", "There isn't any chairs.", "There no are chairs.", "There not chairs."], "correct": 0, "explanation": { "en": "Chairs are plural → there aren't.", "es": "Chairs es plural → there aren't." } }
+  ],
+  "story": {
+    "title": "A Small Apartment",
+    "text": "Carmen lives with Laura's family now, but she wants her own place. Today she visits an apartment with Linda. The apartment is on the second floor. \"Come in, please,\" says the manager. \"There is a living room with a big window. There are two bedrooms and one bathroom.\" Carmen looks around. The kitchen is small, but it is clean and bright. \"Is there a garden?\" asks Carmen. \"No, there isn't. But there is a small balcony.\" Carmen goes to the balcony. There are flowers and a little table. \"I can have my coffee here every morning,\" she says. Linda smiles. \"And my house is only five minutes away.\" Carmen holds the key. It is a small apartment, but maybe it can be her new home.",
+    "es": "Ahora Carmen vive con la familia de Laura, pero quiere tener su propio lugar. Hoy visita un departamento con Linda. El departamento está en el segundo piso. «Pasen, por favor», dice el administrador. «Hay una sala con una ventana grande. Hay dos dormitorios y un baño.» Carmen mira alrededor. La cocina es pequeña, pero está limpia y luminosa. «¿Hay jardín?», pregunta Carmen. «No, no hay. Pero hay un balcón pequeño.» Carmen va al balcón. Hay flores y una mesita. «Aquí puedo tomar mi café todas las mañanas», dice. Linda sonríe. «Y mi casa está a solo cinco minutos.» Carmen sostiene la llave. Es un departamento pequeño, pero quizás pueda ser su nuevo hogar.",
+    "highlighted_words": ["apartment", "Come in, please", "There is", "There are", "bedrooms", "bathroom", "kitchen", "Is there a garden", "No, there isn't", "key", "home"]
+  },
+  "arrange": [
+    { "sentence": "There are three bedrooms", "es": "Hay tres dormitorios." },
+    { "sentence": "Is there a garden", "es": "¿Hay jardín?" },
+    { "sentence": "The kitchen is small but clean", "es": "La cocina es pequeña pero limpia." },
+    { "sentence": "Where is the bathroom", "es": "¿Dónde está el baño?" },
+    { "sentence": "Make yourself at home", "es": "Siéntete como en tu casa." },
+    { "sentence": "There is a big window", "es": "Hay una ventana grande." }
+  ],
+  "translate": [
+    { "answer": "There is a garden", "es": "Hay un jardín" },
+    { "answer": "There are two bathrooms", "es": "Hay dos baños" },
+    { "answer": "Where is the kitchen", "es": "¿Dónde está la cocina?" },
+    { "answer": "I am at home", "es": "Estoy en casa" },
+    { "answer": "Come in, please", "es": "Pasa, por favor" },
+    { "answer": "Is there a garage", "es": "¿Hay garaje?" }
+  ]
+}

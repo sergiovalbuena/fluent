@@ -1,0 +1,86 @@
+{
+  "lesson": 18,
+  "slug": "lesson-18",
+  "icon": "⚽",
+  "title": { "en": "Sports", "es": "Los deportes" },
+  "grammar": [
+    { "structure": "always / usually / often / sometimes / never", "example": "Leo always plays soccer on Saturdays.", "en": "Adverbs of frequency", "es": "Adverbios de frecuencia" },
+    { "structure": "adverb before the main verb", "example": "I sometimes go swimming.", "en": "Position: before the verb…", "es": "Posición: antes del verbo…" },
+    { "structure": "be + adverb", "example": "He is always tired after the game.", "en": "…but after \"to be\"", "es": "…pero después de «to be»" },
+    { "structure": "play / go / do + sport", "example": "play soccer, go swimming, do yoga", "en": "Which verb goes with each sport", "es": "Qué verbo va con cada deporte" },
+    { "structure": "How often…?", "example": "How often do you exercise? — Three times a week.", "en": "Asking about frequency", "es": "Preguntar con qué frecuencia" }
+  ],
+  "tips": [
+    { "en": "\"Soccer\" is American English for fútbol. In the US, \"football\" is American football.", "es": "«Soccer» es el fútbol en inglés estadounidense. En Estados Unidos, «football» es el fútbol americano." },
+    { "en": "Use \"play\" with ball games (play tennis), \"go\" with -ing activities (go running), and \"do\" with others (do yoga).", "es": "Usa «play» con juegos de pelota (play tennis), «go» con actividades en -ing (go running) y «do» con las demás (do yoga)." },
+    { "en": "\"Once\" = one time, \"twice\" = two times, then \"three times\", \"four times\"…", "es": "«Once» = una vez, «twice» = dos veces, luego «three times», «four times»…" },
+    { "en": "\"Work out\" means to exercise, usually at a gym.", "es": "«Work out» significa hacer ejercicio, normalmente en el gimnasio." },
+    { "en": "Americans love watching sports on TV: football, baseball and basketball are the most popular.", "es": "A los estadounidenses les encanta ver deportes en la TV: el fútbol americano, el béisbol y el básquetbol son los más populares." }
+  ],
+  "vocabulary": [
+    { "word": "soccer", "es": "fútbol" },
+    { "word": "football", "es": "fútbol americano" },
+    { "word": "baseball", "es": "béisbol" },
+    { "word": "basketball", "es": "básquetbol" },
+    { "word": "tennis", "es": "tenis" },
+    { "word": "swimming", "es": "natación" },
+    { "word": "running", "es": "correr (deporte)" },
+    { "word": "yoga", "es": "yoga" },
+    { "word": "gym", "es": "gimnasio" },
+    { "word": "team", "es": "equipo" },
+    { "word": "game", "es": "partido / juego" },
+    { "word": "win", "es": "ganar" },
+    { "word": "lose", "es": "perder" },
+    { "word": "coach", "es": "entrenador" },
+    { "word": "usually", "es": "normalmente" },
+    { "word": "often", "es": "a menudo" },
+    { "word": "sometimes", "es": "a veces" },
+    { "word": "twice", "es": "dos veces" }
+  ],
+  "phrases": [
+    { "phrase": "Do you play any sports?", "es": "¿Practicas algún deporte?" },
+    { "phrase": "I go swimming twice a week.", "es": "Voy a nadar dos veces por semana." },
+    { "phrase": "How often do you exercise?", "es": "¿Qué tan seguido haces ejercicio?" },
+    { "phrase": "I never go to the gym.", "es": "Nunca voy al gimnasio." },
+    { "phrase": "I usually walk in the morning.", "es": "Normalmente camino en la mañana." },
+    { "phrase": "Who's winning?", "es": "¿Quién va ganando?" },
+    { "phrase": "What's the score?", "es": "¿Cómo va el marcador?" },
+    { "phrase": "Go, team, go!", "es": "¡Vamos, equipo!" },
+    { "phrase": "Good game!", "es": "¡Buen partido!" },
+    { "phrase": "We won!", "es": "¡Ganamos!" },
+    { "phrase": "They lost three to one.", "es": "Perdieron tres a uno." },
+    { "phrase": "I'm a big fan.", "es": "Soy muy fan." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct order.", "es": "Elige el orden correcto." }, "options": ["I always walk in the morning.", "I walk always in the morning.", "Always I walk in the morning.", "I walk in the morning always."], "correct": 0, "explanation": { "en": "Frequency adverbs go before the main verb.", "es": "Los adverbios de frecuencia van antes del verbo principal." } },
+    { "question": { "en": "Choose the correct order with \"to be\".", "es": "Elige el orden correcto con «to be»." }, "options": ["He is always tired.", "He always is tired.", "Always he is tired.", "He is tired always."], "correct": 0, "explanation": { "en": "With \"to be\", the adverb goes after: is always.", "es": "Con «to be», el adverbio va después: is always." } },
+    { "question": { "en": "Complete: \"I ___ yoga on Tuesdays.\"", "es": "Completa: «I ___ yoga on Tuesdays.»" }, "options": ["do", "play", "go", "make"], "correct": 0, "explanation": { "en": "We \"do\" yoga.", "es": "Con yoga se usa «do»." } },
+    { "question": { "en": "Complete: \"Leo ___ soccer every Saturday.\"", "es": "Completa: «Leo ___ soccer every Saturday.»" }, "options": ["plays", "does", "goes", "makes"], "correct": 0, "explanation": { "en": "Ball games use \"play\": he plays soccer.", "es": "Los juegos de pelota usan «play»: he plays soccer." } },
+    { "question": { "en": "\"Twice a week\" means…", "es": "«Twice a week» significa…" }, "options": ["two times a week", "one time a week", "every day", "never"], "correct": 0, "explanation": { "en": "Twice = two times.", "es": "Twice = dos veces." } },
+    { "question": { "en": "In the US, what is \"soccer\"?", "es": "En Estados Unidos, ¿qué es «soccer»?" }, "options": ["fútbol", "fútbol americano", "béisbol", "básquetbol"], "correct": 0, "explanation": { "en": "Soccer = fútbol. Football = American football.", "es": "Soccer = fútbol. Football = fútbol americano." } },
+    { "question": { "en": "How do you ask about frequency?", "es": "¿Cómo preguntas por la frecuencia?" }, "options": ["How often do you go to the gym?", "How many do you go to the gym?", "When often you go to the gym?", "How much times you gym?"], "correct": 0, "explanation": { "en": "\"How often…?\" asks about frequency.", "es": "«How often…?» pregunta por la frecuencia." } },
+    { "question": { "en": "Your team scores more goals. Your team…", "es": "Tu equipo mete más goles. Tu equipo…" }, "options": ["wins", "loses", "plays", "coaches"], "correct": 0, "explanation": { "en": "More goals = you win.", "es": "Más goles = ganas (win)." } }
+  ],
+  "story": {
+    "title": "Saturday Soccer",
+    "text": "Leo always plays soccer on Saturday mornings. His team is called the Blue Sharks. Laura usually works on Saturdays, so Carmen often takes Leo to the game. Today the Blue Sharks play against the Red Tigers. Carmen sits with the other parents. She doesn't know all the rules, but she shouts with everybody: \"Go, Sharks, go!\" A father next to her asks, \"Do you play any sports?\" \"Me? I sometimes go swimming, and I walk on the beach every morning. But I never run!\" At the end, the coach shouts, \"We won! Three to two!\" Leo runs to his grandmother. \"Grandma, did you see my goal?\" \"Of course! You are the best player.\" Leo is always happy after a game, but today he is very happy.",
+    "es": "Leo siempre juega fútbol los sábados en la mañana. Su equipo se llama los Tiburones Azules. Laura normalmente trabaja los sábados, así que Carmen a menudo lleva a Leo al partido. Hoy los Tiburones Azules juegan contra los Tigres Rojos. Carmen se sienta con los demás papás. No conoce todas las reglas, pero grita con todos: «¡Vamos, Tiburones!» Un papá a su lado le pregunta: «¿Usted practica algún deporte?» «¿Yo? A veces voy a nadar y camino por la playa todas las mañanas. ¡Pero nunca corro!» Al final, el entrenador grita: «¡Ganamos! ¡Tres a dos!» Leo corre hacia su abuela. «Abuela, ¿viste mi gol?» «¡Claro! Eres el mejor jugador.» Leo siempre está contento después de un partido, pero hoy está muy contento.",
+    "highlighted_words": ["always plays soccer", "team", "usually works", "often takes", "game", "Do you play any sports", "sometimes go swimming", "every morning", "I never run", "coach", "We won", "is always happy"]
+  },
+  "arrange": [
+    { "sentence": "I usually walk in the morning", "es": "Normalmente camino en la mañana." },
+    { "sentence": "He is always tired after work", "es": "Siempre está cansado después del trabajo." },
+    { "sentence": "How often do you go swimming", "es": "¿Qué tan seguido vas a nadar?" },
+    { "sentence": "Leo plays soccer every Saturday", "es": "Leo juega fútbol todos los sábados." },
+    { "sentence": "I never go to the gym", "es": "Nunca voy al gimnasio." },
+    { "sentence": "We go running twice a week", "es": "Salimos a correr dos veces por semana." }
+  ],
+  "translate": [
+    { "answer": "I always walk on the beach", "es": "Siempre camino por la playa" },
+    { "answer": "Do you play any sports", "es": "¿Practicas algún deporte?" },
+    { "answer": "I sometimes go swimming", "es": "A veces voy a nadar" },
+    { "answer": "We won", "es": "Ganamos" },
+    { "answer": "She does yoga twice a week", "es": "Ella hace yoga dos veces por semana" },
+    { "answer": "He never runs", "es": "Él nunca corre" }
+  ]
+}

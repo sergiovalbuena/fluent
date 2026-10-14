@@ -1,0 +1,92 @@
+{
+  "lesson": 3,
+  "slug": "lesson-03",
+  "icon": "📅",
+  "title": { "en": "Days, months and dates", "es": "Días, meses y fechas" },
+  "grammar": [
+    { "structure": "on + day / date", "example": "My class is on Monday. Leo's birthday is on May 12th.", "en": "\"On\" with days and dates", "es": "«On» con días y fechas" },
+    { "structure": "in + month / year", "example": "Laura's birthday is in October.", "en": "\"In\" with months and years", "es": "«In» con meses y años" },
+    { "structure": "Capital letters", "example": "Monday, Tuesday, January, February", "en": "Days and months always start with a capital letter", "es": "Los días y los meses siempre empiezan con mayúscula" },
+    { "structure": "first, second, third…", "example": "Today is the third of June.", "en": "Ordinal numbers for dates", "es": "Números ordinales para las fechas" },
+    { "structure": "What day is today?", "example": "What day is today? — It's Friday.", "en": "Asking about the day and the date", "es": "Preguntar el día y la fecha" }
+  ],
+  "tips": [
+    { "en": "In the US, dates are written month first: 5/12 means May 12th, not December 5th.", "es": "En Estados Unidos las fechas se escriben con el mes primero: 5/12 significa 12 de mayo, no 5 de diciembre." },
+    { "en": "Americans say \"May twelfth\" or \"May twelve\". Both are common in conversation.", "es": "En Estados Unidos se dice «May twelfth» o «May twelve». Las dos formas son comunes al hablar." },
+    { "en": "The week usually starts on Sunday on American calendars.", "es": "En los calendarios estadounidenses la semana suele empezar el domingo." },
+    { "en": "\"The weekend\" is Saturday and Sunday. \"Weekdays\" are Monday to Friday.", "es": "«The weekend» es sábado y domingo. Los «weekdays» son de lunes a viernes." },
+    { "en": "Don't forget: on Monday, in May, in 2025.", "es": "No lo olvides: on Monday, in May, in 2025." }
+  ],
+  "vocabulary": [
+    { "word": "Monday", "es": "lunes" },
+    { "word": "Tuesday", "es": "martes" },
+    { "word": "Wednesday", "es": "miércoles" },
+    { "word": "Thursday", "es": "jueves" },
+    { "word": "Friday", "es": "viernes" },
+    { "word": "Saturday", "es": "sábado" },
+    { "word": "Sunday", "es": "domingo" },
+    { "word": "January", "es": "enero" },
+    { "word": "February", "es": "febrero" },
+    { "word": "March", "es": "marzo" },
+    { "word": "April", "es": "abril" },
+    { "word": "May", "es": "mayo" },
+    { "word": "June", "es": "junio" },
+    { "word": "July", "es": "julio" },
+    { "word": "August", "es": "agosto" },
+    { "word": "September", "es": "septiembre" },
+    { "word": "October", "es": "octubre" },
+    { "word": "November", "es": "noviembre" },
+    { "word": "December", "es": "diciembre" },
+    { "word": "today", "es": "hoy" },
+    { "word": "tomorrow", "es": "mañana" },
+    { "word": "yesterday", "es": "ayer" },
+    { "word": "weekend", "es": "fin de semana" },
+    { "word": "birthday", "es": "cumpleaños" }
+  ],
+  "phrases": [
+    { "phrase": "What day is today?", "es": "¿Qué día es hoy?" },
+    { "phrase": "Today is Monday.", "es": "Hoy es lunes." },
+    { "phrase": "What's the date today?", "es": "¿Qué fecha es hoy?" },
+    { "phrase": "It's the third of June.", "es": "Es tres de junio." },
+    { "phrase": "When is your birthday?", "es": "¿Cuándo es tu cumpleaños?" },
+    { "phrase": "My birthday is in October.", "es": "Mi cumpleaños es en octubre." },
+    { "phrase": "See you on Friday!", "es": "¡Nos vemos el viernes!" },
+    { "phrase": "Have a nice weekend!", "es": "¡Que tengas un buen fin de semana!" },
+    { "phrase": "Happy birthday!", "es": "¡Feliz cumpleaños!" },
+    { "phrase": "I'm free on Saturday.", "es": "Estoy libre el sábado." },
+    { "phrase": "Next week.", "es": "La próxima semana." },
+    { "phrase": "Every Sunday.", "es": "Todos los domingos." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"My class is ___ Monday.\"", "es": "Completa: «My class is ___ Monday.»" }, "options": ["on", "in", "at", "of"], "correct": 0, "explanation": { "en": "We use \"on\" with days: on Monday, on Friday.", "es": "Con los días se usa «on»: on Monday, on Friday." } },
+    { "question": { "en": "Complete: \"Her birthday is ___ October.\"", "es": "Completa: «Her birthday is ___ October.»" }, "options": ["in", "on", "at", "to"], "correct": 0, "explanation": { "en": "We use \"in\" with months: in October.", "es": "Con los meses se usa «in»: in October." } },
+    { "question": { "en": "Which day comes after Tuesday?", "es": "¿Qué día viene después de Tuesday?" }, "options": ["Wednesday", "Monday", "Thursday", "Sunday"], "correct": 0, "explanation": { "en": "Monday, Tuesday, Wednesday, Thursday…", "es": "Monday, Tuesday, Wednesday, Thursday…" } },
+    { "question": { "en": "In the US, what does 7/4 mean?", "es": "En Estados Unidos, ¿qué significa 7/4?" }, "options": ["July 4th", "April 7th", "July 7th", "April 4th"], "correct": 0, "explanation": { "en": "American dates put the month first: 7/4 is July 4th, Independence Day.", "es": "Las fechas estadounidenses ponen el mes primero: 7/4 es el 4 de julio, el Día de la Independencia." } },
+    { "question": { "en": "Which one is written correctly?", "es": "¿Cuál está bien escrito?" }, "options": ["Friday, March 3rd", "friday, march 3rd", "Friday, march 3rd", "friday, March 3rd"], "correct": 0, "explanation": { "en": "Days and months always have a capital letter in English.", "es": "En inglés los días y los meses siempre llevan mayúscula." } },
+    { "question": { "en": "What is \"the weekend\"?", "es": "¿Qué es «the weekend»?" }, "options": ["Saturday and Sunday", "Monday to Friday", "Only Friday", "Only Sunday"], "correct": 0, "explanation": { "en": "The weekend is Saturday and Sunday.", "es": "El fin de semana es sábado y domingo." } },
+    { "question": { "en": "Today is Thursday. What day was yesterday?", "es": "Hoy es jueves. ¿Qué día fue ayer?" }, "options": ["Wednesday", "Friday", "Tuesday", "Saturday"], "correct": 0, "explanation": { "en": "Yesterday is the day before today: Wednesday comes before Thursday.", "es": "Ayer es el día anterior a hoy: Wednesday va antes de Thursday." } },
+    { "question": { "en": "It's your friend's birthday. What do you say?", "es": "Es el cumpleaños de tu amiga. ¿Qué le dices?" }, "options": ["Happy birthday!", "Good birthday!", "Nice birthday!", "Have a birthday!"], "correct": 0, "explanation": { "en": "We say \"Happy birthday!\"", "es": "Se dice «Happy birthday!»" } }
+  ],
+  "story": {
+    "title": "A Busy Calendar",
+    "text": "It is Sunday evening. Carmen and Laura are in the kitchen with a big calendar. \"Mom, what day is today?\" asks Laura. \"Today is Sunday, the third of May.\" \"Okay. Your English class is on Monday and Wednesday. On Tuesday you are with Leo after school.\" Carmen writes everything in Spanish and in English. \"And Friday?\" \"Friday is free. On Saturday we have a party.\" \"A party? Why?\" Laura laughs. \"Mom! Leo's birthday is on May ninth!\" \"Of course! My grandson is eight years old!\" Carmen looks at the calendar again. May is a busy month, but it is a happy month too.",
+    "es": "Es domingo por la noche. Carmen y Laura están en la cocina con un calendario grande. «Mamá, ¿qué día es hoy?», pregunta Laura. «Hoy es domingo, tres de mayo.» «Bueno. Tu clase de inglés es el lunes y el miércoles. El martes estás con Leo después de la escuela.» Carmen lo escribe todo en español y en inglés. «¿Y el viernes?» «El viernes está libre. El sábado tenemos una fiesta.» «¿Una fiesta? ¿Por qué?» Laura se ríe. «¡Mamá! ¡El cumpleaños de Leo es el nueve de mayo!» «¡Claro! ¡Mi nieto cumple ocho años!» Carmen vuelve a mirar el calendario. Mayo es un mes muy ocupado, pero también es un mes feliz.",
+    "highlighted_words": ["Sunday", "what day is today", "on Monday", "Tuesday", "Friday", "Saturday", "birthday", "May"]
+  },
+  "arrange": [
+    { "sentence": "My class is on Monday", "es": "Mi clase es el lunes." },
+    { "sentence": "Her birthday is in October", "es": "Su cumpleaños es en octubre." },
+    { "sentence": "What day is today", "es": "¿Qué día es hoy?" },
+    { "sentence": "I am free on Saturday", "es": "Estoy libre el sábado." },
+    { "sentence": "Have a nice weekend", "es": "Que tengas un buen fin de semana." },
+    { "sentence": "Today is the third of June", "es": "Hoy es tres de junio." }
+  ],
+  "translate": [
+    { "answer": "Today is Friday", "es": "Hoy es viernes" },
+    { "answer": "Happy birthday", "es": "Feliz cumpleaños" },
+    { "answer": "See you on Monday", "es": "Nos vemos el lunes" },
+    { "answer": "My birthday is in May", "es": "Mi cumpleaños es en mayo" },
+    { "answer": "What day is today", "es": "¿Qué día es hoy?" },
+    { "answer": "I am free tomorrow", "es": "Estoy libre mañana" }
+  ]
+}

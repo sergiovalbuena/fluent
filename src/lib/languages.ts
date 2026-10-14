@@ -22,7 +22,7 @@ export const LANGUAGES: LanguageInfo[] = [
 export const DEFAULT_LANGUAGE = 'es'
 
 /** Languages that currently have published course content */
-export const COURSE_LANGUAGES = ['es', 'fr', 'pt', 'de', 'it', 'ja']
+export const COURSE_LANGUAGES = ['es', 'fr', 'en', 'pt', 'de', 'it', 'ja']
 
 export function getLanguage(code: string): LanguageInfo {
   return (

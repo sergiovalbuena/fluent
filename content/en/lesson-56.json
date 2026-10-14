@@ -1,0 +1,85 @@
+{
+  "lesson": 56,
+  "slug": "lesson-56",
+  "icon": "💇",
+  "title": { "en": "At the hair salon", "es": "En la estética" },
+  "grammar": [
+    { "structure": "get / have + something + past participle", "example": "I'm going to get my hair cut. She had her nails done.", "en": "Services done by someone else", "es": "Servicios que otra persona te hace" },
+    { "structure": "I'd like it + comparative", "example": "I'd like it a little shorter.", "en": "Explaining what you want", "es": "Explicar lo que quieres" },
+    { "structure": "not too…", "example": "Not too short, please.", "en": "Setting limits", "es": "Poner límites" },
+    { "structure": "Could you…? (review)", "example": "Could you cut a little more on the sides?", "en": "Polite requests to the stylist", "es": "Pedidos amables a la estilista" },
+    { "structure": "How would you like…?", "example": "How would you like your hair today?", "en": "The stylist's question", "es": "La pregunta de la estilista" }
+  ],
+  "tips": [
+    { "en": "In English you \"get your hair cut\" (someone cuts it). \"I cut my hair\" means you did it yourself!", "es": "En inglés se dice «get your hair cut» (alguien te lo corta). «I cut my hair» significa que tú misma te lo cortaste." },
+    { "en": "Bring a photo of the style you want: it avoids misunderstandings.", "es": "Lleva una foto del corte que quieres: evita malentendidos." },
+    { "en": "\"Trim\" is a small cut, just the ends.", "es": "«Trim» es un corte pequeño, solo las puntas." },
+    { "en": "Tipping 15–20% is common at hair salons in the US.", "es": "En las estéticas de Estados Unidos es común dejar 15–20% de propina." },
+    { "en": "\"Bangs\" are the hair that falls on your forehead (fleco).", "es": "«Bangs» es el pelo que cae sobre la frente (el fleco)." }
+  ],
+  "vocabulary": [
+    { "word": "hair salon", "es": "estética / salón de belleza" },
+    { "word": "hairdresser", "es": "estilista" },
+    { "word": "haircut", "es": "corte de pelo" },
+    { "word": "trim", "es": "despuntar / recorte" },
+    { "word": "bangs", "es": "fleco" },
+    { "word": "layers", "es": "capas" },
+    { "word": "dye", "es": "teñir / tinte" },
+    { "word": "highlights", "es": "luces / rayitos" },
+    { "word": "gray hair", "es": "canas" },
+    { "word": "blow-dry", "es": "secar con secadora" },
+    { "word": "curly", "es": "rizado" },
+    { "word": "straight", "es": "lacio" },
+    { "word": "wavy", "es": "ondulado" },
+    { "word": "shorter", "es": "más corto" },
+    { "word": "manicure", "es": "manicura" },
+    { "word": "mirror", "es": "espejo" },
+    { "word": "appointment", "es": "cita" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to get my hair cut.", "es": "Quisiera cortarme el pelo." },
+    { "phrase": "How would you like it today?", "es": "¿Cómo lo quiere hoy?" },
+    { "phrase": "Just a trim, please.", "es": "Solo despuntar, por favor." },
+    { "phrase": "I'd like it a little shorter.", "es": "Lo quiero un poco más corto." },
+    { "phrase": "Not too short, please.", "es": "No muy corto, por favor." },
+    { "phrase": "Can you cover my gray hair?", "es": "¿Me puede cubrir las canas?" },
+    { "phrase": "Like in this photo.", "es": "Como en esta foto." },
+    { "phrase": "Could you cut my bangs?", "es": "¿Me puede cortar el fleco?" },
+    { "phrase": "I love it!", "es": "¡Me encanta!" },
+    { "phrase": "It looks great on you.", "es": "Se te ve muy bien." },
+    { "phrase": "She had her nails done.", "es": "Se hizo las uñas." },
+    { "phrase": "Can I make an appointment for next month?", "es": "¿Puedo hacer cita para el próximo mes?" }
+  ],
+  "qa": [
+    { "question": { "en": "How do you say \"Me voy a cortar el pelo (en la estética)\"?", "es": "¿Cómo se dice «Me voy a cortar el pelo (en la estética)»?" }, "options": ["I'm going to get my hair cut.", "I'm going to cut my hair myself.", "I'm going to cut me the hair.", "I'm going to hair cut."], "correct": 0, "explanation": { "en": "Someone else does it → get my hair cut.", "es": "Lo hace otra persona → get my hair cut." } },
+    { "question": { "en": "Complete: \"She ___ her nails done yesterday.\"", "es": "Completa: «She ___ her nails done yesterday.»" }, "options": ["had", "has", "did", "made"], "correct": 0, "explanation": { "en": "Past: had + object + past participle.", "es": "Pasado: had + objeto + participio." } },
+    { "question": { "en": "A small cut, just the ends, is a…", "es": "Un corte pequeño, solo las puntas, es un…" }, "options": ["trim", "dye", "layer", "highlight"], "correct": 0, "explanation": { "en": "Trim = despuntar.", "es": "Trim = despuntar." } },
+    { "question": { "en": "The hair over your forehead is your…", "es": "El pelo sobre tu frente es tu…" }, "options": ["bangs", "layers", "highlights", "curls"], "correct": 0, "explanation": { "en": "Bangs = fleco.", "es": "Bangs = fleco." } },
+    { "question": { "en": "You want less length. You say:", "es": "Quieres menos largo. Dices:" }, "options": ["I'd like it a little shorter.", "I'd like it a little longer.", "I'd like it more short.", "I'd like it shortest."], "correct": 0, "explanation": { "en": "Comparative: shorter.", "es": "Comparativo: shorter." } },
+    { "question": { "en": "Hair that is not curly or wavy is…", "es": "El pelo que no es rizado ni ondulado es…" }, "options": ["straight", "gray", "dyed", "blow-dried"], "correct": 0, "explanation": { "en": "Straight = lacio.", "es": "Straight = lacio." } },
+    { "question": { "en": "Your friend has a new haircut. You say:", "es": "Tu amiga tiene un corte nuevo. Le dices:" }, "options": ["It looks great on you!", "It looks great with you!", "It sees great on you!", "It's looking you great!"], "correct": 0, "explanation": { "en": "\"It looks great on you\" is the natural compliment.", "es": "«It looks great on you» es el cumplido natural." } },
+    { "question": { "en": "In the US, the usual tip at a hair salon is…", "es": "En Estados Unidos, la propina habitual en una estética es…" }, "options": ["15–20%", "nothing", "50%", "one dollar"], "correct": 0, "explanation": { "en": "15–20% is common.", "es": "Lo común es 15–20%." } }
+  ],
+  "story": {
+    "title": "A New Look",
+    "text": "Laura and Mike's wedding anniversary is next week, and there's going to be a family dinner. Carmen wants a new look. She goes to a hair salon near the beach. \"Hi! I'd like to get my hair cut.\" \"Sure! How would you like it today?\" says Jasmine, the hairdresser. Carmen shows her a photo. \"Like this, please. A little shorter, but not too short. And can you cover my gray hair?\" \"Of course. Would you like some highlights too?\" Carmen hesitates. \"Highlights? At my age?\" Jasmine smiles. \"Age is just a number!\" One hour later, Carmen looks in the mirror. Her hair is shorter, darker and soft. \"I love it!\" At the dinner, Laura opens her eyes wide. \"Mom! You look amazing! Did you get your hair done?\" Mike adds, \"It looks great on you, Carmen.\" Leo says, \"Grandma, you look like a movie star.\"",
+    "es": "El aniversario de bodas de Laura y Mike es la próxima semana y va a haber una cena familiar. Carmen quiere un cambio de look. Va a una estética cerca de la playa. «¡Hola! Quisiera cortarme el pelo.» «¡Claro! ¿Cómo lo quiere hoy?», dice Jasmine, la estilista. Carmen le enseña una foto. «Así, por favor. Un poco más corto, pero no demasiado. ¿Y me puede cubrir las canas?» «Por supuesto. ¿Quiere también unas luces?» Carmen duda. «¿Luces? ¿A mi edad?» Jasmine sonríe. «¡La edad es solo un número!» Una hora después, Carmen se mira al espejo. Tiene el pelo más corto, más oscuro y suave. «¡Me encanta!» En la cena, Laura abre mucho los ojos. «¡Mamá! ¡Te ves increíble! ¿Fuiste a la estética?» Mike agrega: «Se te ve muy bien, suegra.» Leo dice: «Abuela, pareces estrella de cine.»",
+    "highlighted_words": ["hair salon", "I'd like to get my hair cut", "How would you like it today", "hairdresser", "A little shorter, but not too short", "cover my gray hair", "highlights", "mirror", "I love it", "Did you get your hair done", "It looks great on you"]
+  },
+  "arrange": [
+    { "sentence": "I would like to get my hair cut", "es": "Quisiera cortarme el pelo." },
+    { "sentence": "Just a trim please", "es": "Solo despuntar, por favor." },
+    { "sentence": "I would like it a little shorter", "es": "Lo quiero un poco más corto." },
+    { "sentence": "Can you cover my gray hair", "es": "¿Me puede cubrir las canas?" },
+    { "sentence": "It looks great on you", "es": "Se te ve muy bien." },
+    { "sentence": "She had her nails done yesterday", "es": "Ayer se hizo las uñas." }
+  ],
+  "translate": [
+    { "answer": "Not too short, please", "es": "No muy corto, por favor" },
+    { "answer": "Like in this photo", "es": "Como en esta foto" },
+    { "answer": "I love it", "es": "Me encanta" },
+    { "answer": "Could you cut my bangs", "es": "¿Me puede cortar el fleco?" },
+    { "answer": "I want to get my hair cut", "es": "Quiero cortarme el pelo" },
+    { "answer": "It looks great on you", "es": "Se te ve muy bien" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 34,
+  "slug": "lesson-34",
+  "icon": "🛂",
+  "title": { "en": "Immigration and customs", "es": "Migración y aduana" },
+  "grammar": [
+    { "structure": "have / has + past participle", "example": "I have visited Texas. She has lived here for a year.", "en": "Present perfect: experiences and situations up to now", "es": "Presente perfecto: experiencias y situaciones hasta ahora" },
+    { "structure": "Have you ever…?", "example": "Have you ever been to the United States?", "en": "Asking about life experiences", "es": "Preguntar por experiencias de vida" },
+    { "structure": "I've never…", "example": "I've never been to New York.", "en": "Saying you haven't had an experience", "es": "Decir que nunca has vivido algo" },
+    { "structure": "been / seen / had / done", "example": "go → been, see → seen, have → had, do → done", "en": "Common past participles", "es": "Participios pasados comunes" },
+    { "structure": "Do you have anything to declare?", "example": "No, I have nothing to declare.", "en": "Customs questions", "es": "Preguntas de aduana" }
+  ],
+  "tips": [
+    { "en": "Answer immigration officers briefly and clearly: purpose of visit, how long, where you will stay.", "es": "Responde a los oficiales de migración de forma breve y clara: motivo del viaje, cuánto tiempo y dónde te quedarás." },
+    { "en": "\"Have you ever been to…?\" uses \"been\" (from \"go\"), not \"gone\".", "es": "«Have you ever been to…?» usa «been» (de «go»), no «gone»." },
+    { "en": "At customs, declare food like fruit, meat or seeds. Undeclared food can mean a fine.", "es": "En la aduana declara alimentos como fruta, carne o semillas. No declararlos puede significar una multa." },
+    { "en": "Keep your documents together in one folder: passport, visa, address where you'll stay, return ticket.", "es": "Guarda tus documentos juntos en una carpeta: pasaporte, visa, dirección donde te quedarás y boleto de regreso." },
+    { "en": "If you don't understand, say: \"Sorry, could you repeat the question?\" — it's always okay to ask.", "es": "Si no entiendes, di: «Sorry, could you repeat the question?»: siempre está bien preguntar." }
+  ],
+  "vocabulary": [
+    { "word": "immigration", "es": "migración" },
+    { "word": "customs", "es": "aduana" },
+    { "word": "officer", "es": "oficial" },
+    { "word": "passport", "es": "pasaporte" },
+    { "word": "visa", "es": "visa" },
+    { "word": "purpose", "es": "propósito / motivo" },
+    { "word": "declare", "es": "declarar" },
+    { "word": "line", "es": "fila" },
+    { "word": "form", "es": "formulario" },
+    { "word": "stamp", "es": "sello" },
+    { "word": "citizen", "es": "ciudadano" },
+    { "word": "resident", "es": "residente" },
+    { "word": "border", "es": "frontera" },
+    { "word": "been", "es": "estado / ido (participio de be / go)" },
+    { "word": "ever", "es": "alguna vez" },
+    { "word": "never", "es": "nunca" },
+    { "word": "fine", "es": "multa" }
+  ],
+  "phrases": [
+    { "phrase": "What's the purpose of your visit?", "es": "¿Cuál es el motivo de su visita?" },
+    { "phrase": "I'm visiting my family.", "es": "Vengo a visitar a mi familia." },
+    { "phrase": "How long are you staying?", "es": "¿Cuánto tiempo se va a quedar?" },
+    { "phrase": "Three months.", "es": "Tres meses." },
+    { "phrase": "Where are you staying?", "es": "¿Dónde se va a quedar?" },
+    { "phrase": "With my daughter, in San Diego.", "es": "Con mi hija, en San Diego." },
+    { "phrase": "Have you ever been to the United States?", "es": "¿Ha estado alguna vez en Estados Unidos?" },
+    { "phrase": "Yes, I have. Twice.", "es": "Sí. Dos veces." },
+    { "phrase": "I've never been here before.", "es": "Nunca había estado aquí." },
+    { "phrase": "Do you have anything to declare?", "es": "¿Tiene algo que declarar?" },
+    { "phrase": "I have some dried chiles.", "es": "Traigo unos chiles secos." },
+    { "phrase": "Welcome to the United States.", "es": "Bienvenida a Estados Unidos." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"Have you ever ___ to New York?\"", "es": "Completa: «Have you ever ___ to New York?»" }, "options": ["been", "gone", "went", "be"], "correct": 0, "explanation": { "en": "Experiences of visiting a place use \"been\".", "es": "Las experiencias de visitar un lugar usan «been»." } },
+    { "question": { "en": "Short answer: \"Have you ever been to Canada?\" (no)", "es": "Respuesta corta: «Have you ever been to Canada?» (no)" }, "options": ["No, I haven't.", "No, I didn't.", "No, I don't.", "No, I haven't been gone."], "correct": 0, "explanation": { "en": "Short answer: No, I haven't.", "es": "Respuesta corta: No, I haven't." } },
+    { "question": { "en": "The officer asks \"What's the purpose of your visit?\". A good answer is:", "es": "El oficial pregunta «What's the purpose of your visit?». Una buena respuesta es:" }, "options": ["I'm visiting my family.", "Three months.", "With my daughter.", "Yes, I have."], "correct": 0, "explanation": { "en": "\"Purpose\" asks WHY you are traveling.", "es": "«Purpose» pregunta POR QUÉ viajas." } },
+    { "question": { "en": "Complete: \"She ___ lived in San Diego for one year.\"", "es": "Completa: «She ___ lived in San Diego for one year.»" }, "options": ["has", "have", "is", "did"], "correct": 0, "explanation": { "en": "She → has + past participle.", "es": "She → has + participio." } },
+    { "question": { "en": "What is the past participle of \"see\"?", "es": "¿Cuál es el participio de «see»?" }, "options": ["seen", "saw", "seed", "sawn"], "correct": 0, "explanation": { "en": "see → saw → seen.", "es": "see → saw → seen." } },
+    { "question": { "en": "At customs, you bring mangoes from Mexico. You should…", "es": "En la aduana, traes mangos de México. Deberías…" }, "options": ["declare them", "hide them", "eat them in line", "say nothing"], "correct": 0, "explanation": { "en": "Food must be declared. Not declaring it can mean a fine.", "es": "Los alimentos se deben declarar. No hacerlo puede costar una multa." } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I've never been here before.", "I've ever been here before.", "I never have be here.", "I haven't never been here."], "correct": 0, "explanation": { "en": "I've never + past participle.", "es": "I've never + participio." } },
+    { "question": { "en": "\"How long are you staying?\" asks about…", "es": "«How long are you staying?» pregunta por…" }, "options": ["the length of your visit", "your address", "the reason for your trip", "your luggage"], "correct": 0, "explanation": { "en": "How long = cuánto tiempo.", "es": "How long = cuánto tiempo." } }
+  ],
+  "story": {
+    "title": "The First Day",
+    "text": "Now Carmen is in New York, at her cousin's apartment. Elena asks, \"Was it difficult to come to the United States the first time?\" Carmen remembers that day at the airport in Los Angeles, many months ago. The line at immigration was very long. When it was her turn, the officer looked at her passport. \"What's the purpose of your visit?\" \"I'm visiting my daughter.\" \"Have you ever been to the United States?\" \"No, I've never been here before.\" \"How long are you staying?\" \"Three months.\" Then, at customs: \"Do you have anything to declare?\" \"Yes… I have some dried chiles and chocolate for my grandson.\" The officer smiled. \"That's fine. Welcome to the United States.\" Carmen laughs now. \"My hands were cold, Elena! But I have learned so much since that day.\"",
+    "es": "Ahora Carmen está en Nueva York, en el departamento de su prima. Elena le pregunta: «¿Fue difícil venir a Estados Unidos la primera vez?» Carmen recuerda aquel día en el aeropuerto de Los Ángeles, hace muchos meses. La fila de migración era muy larga. Cuando le tocó, el oficial miró su pasaporte. «¿Cuál es el motivo de su visita?» «Vengo a visitar a mi hija.» «¿Ha estado alguna vez en Estados Unidos?» «No, nunca había estado aquí.» «¿Cuánto tiempo se va a quedar?» «Tres meses.» Luego, en la aduana: «¿Tiene algo que declarar?» «Sí… traigo unos chiles secos y chocolate para mi nieto.» El oficial sonrió. «Está bien. Bienvenida a Estados Unidos.» Ahora Carmen se ríe. «¡Tenía las manos frías, Elena! Pero he aprendido muchísimo desde ese día.»",
+    "highlighted_words": ["immigration", "officer", "passport", "What's the purpose of your visit", "Have you ever been to the United States", "I've never been here before", "How long are you staying", "customs", "Do you have anything to declare", "Welcome to the United States", "I have learned"]
+  },
+  "arrange": [
+    { "sentence": "Have you ever been to Mexico", "es": "¿Has estado alguna vez en México?" },
+    { "sentence": "I have never been here before", "es": "Nunca había estado aquí." },
+    { "sentence": "What is the purpose of your visit", "es": "¿Cuál es el motivo de su visita?" },
+    { "sentence": "I am visiting my daughter", "es": "Vengo a visitar a mi hija." },
+    { "sentence": "Do you have anything to declare", "es": "¿Tiene algo que declarar?" },
+    { "sentence": "She has lived here for a year", "es": "Ella ha vivido aquí un año." }
+  ],
+  "translate": [
+    { "answer": "I am visiting my family", "es": "Vengo a visitar a mi familia" },
+    { "answer": "Have you ever been to Texas", "es": "¿Has estado alguna vez en Texas?" },
+    { "answer": "I have never seen snow", "es": "Nunca he visto la nieve" },
+    { "answer": "I have nothing to declare", "es": "No tengo nada que declarar" },
+    { "answer": "Where are you staying", "es": "¿Dónde se va a quedar?" },
+    { "answer": "She has learned a lot", "es": "Ella ha aprendido mucho" }
+  ]
+}

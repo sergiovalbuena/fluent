@@ -1,0 +1,85 @@
+{
+  "lesson": 42,
+  "slug": "lesson-42",
+  "icon": "🧺",
+  "title": { "en": "At the laundromat", "es": "En la lavandería" },
+  "grammar": [
+    { "structure": "First, … Then, … After that, … Finally, …", "example": "First, sort the clothes. Then, add the soap.", "en": "Sequencing words for instructions", "es": "Palabras para ordenar instrucciones" },
+    { "structure": "Imperatives for instructions", "example": "Put in the coins. Press start.", "en": "Giving step-by-step instructions", "es": "Dar instrucciones paso a paso" },
+    { "structure": "Phrasal verbs: put in, take out, turn on, fold up", "example": "Take out the clothes and fold them up.", "en": "Separable phrasal verbs", "es": "Verbos frasales separables" },
+    { "structure": "How does this work?", "example": "Excuse me, how does this machine work?", "en": "Asking how to use something", "es": "Preguntar cómo se usa algo" },
+    { "structure": "It doesn't work / It's out of order", "example": "This dryer is out of order.", "en": "Saying something is broken", "es": "Decir que algo no funciona" }
+  ],
+  "tips": [
+    { "en": "With pronouns, phrasal verbs separate: \"Take them out\" (not \"Take out them\").", "es": "Con pronombres, los verbos frasales se separan: «Take them out» (no «Take out them»)." },
+    { "en": "Many laundromats use quarters (25-cent coins) or a card. Bring coins!", "es": "Muchas lavanderías usan monedas de 25 centavos (quarters) o una tarjeta. ¡Lleva monedas!" },
+    { "en": "\"Washer\" washes and \"dryer\" dries. Delicate clothes: \"low heat\" or \"air dry\".", "es": "La «washer» lava y la «dryer» seca. Para ropa delicada: «low heat» (calor bajo) o «air dry» (secar al aire)." },
+    { "en": "\"Out of order\" on a sign means the machine is broken.", "es": "«Out of order» en un letrero significa que la máquina no sirve." },
+    { "en": "Sequencing words make your English sound organized: first, then, after that, finally.", "es": "Las palabras de secuencia hacen que tu inglés suene ordenado: first, then, after that, finally." }
+  ],
+  "vocabulary": [
+    { "word": "laundromat", "es": "lavandería (de autoservicio)" },
+    { "word": "laundry", "es": "ropa para lavar / lavado" },
+    { "word": "washer", "es": "lavadora" },
+    { "word": "dryer", "es": "secadora" },
+    { "word": "detergent", "es": "detergente" },
+    { "word": "fabric softener", "es": "suavizante" },
+    { "word": "quarters", "es": "monedas de 25 centavos" },
+    { "word": "load", "es": "carga (de ropa)" },
+    { "word": "fold", "es": "doblar" },
+    { "word": "iron", "es": "planchar / plancha" },
+    { "word": "stain", "es": "mancha" },
+    { "word": "shrink", "es": "encoger" },
+    { "word": "out of order", "es": "fuera de servicio" },
+    { "word": "first", "es": "primero" },
+    { "word": "then", "es": "luego / después" },
+    { "word": "after that", "es": "después de eso" },
+    { "word": "finally", "es": "finalmente" }
+  ],
+  "phrases": [
+    { "phrase": "My washing machine is broken.", "es": "Mi lavadora se descompuso." },
+    { "phrase": "How does this machine work?", "es": "¿Cómo funciona esta máquina?" },
+    { "phrase": "First, put in the clothes.", "es": "Primero, mete la ropa." },
+    { "phrase": "Then, add the detergent.", "es": "Luego, pon el detergente." },
+    { "phrase": "After that, insert the quarters.", "es": "Después, mete las monedas." },
+    { "phrase": "Finally, press start.", "es": "Finalmente, presiona inicio." },
+    { "phrase": "Do you have change for a dollar?", "es": "¿Tiene cambio de un dólar?" },
+    { "phrase": "This dryer is out of order.", "es": "Esta secadora está fuera de servicio." },
+    { "phrase": "Take them out and fold them.", "es": "Sácalas y dóblalas." },
+    { "phrase": "Use cold water for colors.", "es": "Usa agua fría para la ropa de color." },
+    { "phrase": "My sweater shrank!", "es": "¡Se me encogió el suéter!" },
+    { "phrase": "How long does it take?", "es": "¿Cuánto tarda?" }
+  ],
+  "qa": [
+    { "question": { "en": "Put the steps in order: which comes first?", "es": "Ordena los pasos: ¿cuál va primero?" }, "options": ["First, put in the clothes.", "Finally, press start.", "After that, fold them.", "Then, take them out."], "correct": 0, "explanation": { "en": "\"First\" starts the sequence.", "es": "«First» inicia la secuencia." } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["Take them out.", "Take out them.", "Them take out.", "Take out it them."], "correct": 0, "explanation": { "en": "With a pronoun, it goes in the middle: take them out.", "es": "Con pronombre, va en medio: take them out." } },
+    { "question": { "en": "The sign says \"OUT OF ORDER\". It means…", "es": "El letrero dice «OUT OF ORDER». Significa…" }, "options": ["The machine is broken.", "The machine is free.", "The machine is new.", "Wait in line."], "correct": 0, "explanation": { "en": "Out of order = fuera de servicio.", "es": "Out of order = fuera de servicio." } },
+    { "question": { "en": "The machine that dries clothes is the…", "es": "La máquina que seca la ropa es la…" }, "options": ["dryer", "washer", "iron", "detergent"], "correct": 0, "explanation": { "en": "Dryer = secadora.", "es": "Dryer = secadora." } },
+    { "question": { "en": "Your sweater is smaller after washing. It…", "es": "Tu suéter quedó más chico después de lavarlo. Se…" }, "options": ["shrank", "folded", "ironed", "stained"], "correct": 0, "explanation": { "en": "Shrink → shrank = encoger.", "es": "Shrink → shrank = encoger." } },
+    { "question": { "en": "You don't know how to use a machine. You ask:", "es": "No sabes usar una máquina. Preguntas:" }, "options": ["How does this machine work?", "How this machine works?", "How does work this machine?", "What machine work?"], "correct": 0, "explanation": { "en": "How does + subject + work?", "es": "How does + sujeto + work?" } },
+    { "question": { "en": "A 25-cent coin in the US is a…", "es": "Una moneda de 25 centavos en Estados Unidos es un…" }, "options": ["quarter", "dime", "nickel", "penny"], "correct": 0, "explanation": { "en": "Quarter = 25¢. Dime = 10¢. Nickel = 5¢. Penny = 1¢.", "es": "Quarter = 25¢. Dime = 10¢. Nickel = 5¢. Penny = 1¢." } },
+    { "question": { "en": "Which word shows the last step?", "es": "¿Qué palabra indica el último paso?" }, "options": ["Finally", "First", "Then", "After that"], "correct": 0, "explanation": { "en": "Finally = al final.", "es": "Finally = al final." } }
+  ],
+  "story": {
+    "title": "Saturday at the Laundromat",
+    "text": "Carmen's washing machine is broken, so on Saturday she goes to the laundromat with a big bag of laundry. She has never used one before. A young man is folding his clothes. \"Excuse me, how does this washer work?\" \"It's easy. First, put in your clothes. Then, add the detergent here. After that, put in eight quarters. Finally, choose cold water and press start.\" \"Thank you! Do you have change for a dollar?\" \"Sure.\" Thirty minutes later, Carmen takes out her clothes and goes to a dryer. But there's a sign: OUT OF ORDER. She uses the next one. When it finishes, she takes everything out and folds it carefully. Then she sees her favorite sweater. It's very small now. \"Oh no! My sweater shrank!\" The young man laughs. \"Next time, use low heat. Or give it to your grandson!\"",
+    "es": "La lavadora de Carmen se descompuso, así que el sábado va a la lavandería con una bolsa grande de ropa. Nunca ha usado una. Un joven está doblando su ropa. «Disculpa, ¿cómo funciona esta lavadora?» «Es fácil. Primero, mete tu ropa. Luego, pon el detergente aquí. Después, mete ocho monedas de 25. Finalmente, elige agua fría y presiona inicio.» «¡Gracias! ¿Tienes cambio de un dólar?» «Claro.» Treinta minutos después, Carmen saca su ropa y va a una secadora. Pero hay un letrero: FUERA DE SERVICIO. Usa la de al lado. Cuando termina, lo saca todo y lo dobla con cuidado. Entonces ve su suéter favorito. Ahora está muy chico. «¡Ay, no! ¡Se encogió mi suéter!» El joven se ríe. «La próxima vez usa calor bajo. ¡O regálaselo a tu nieto!»",
+    "highlighted_words": ["laundromat", "laundry", "folding", "how does this washer work", "First", "Then", "detergent", "After that", "quarters", "Finally", "change for a dollar", "takes out", "dryer", "OUT OF ORDER", "shrank", "low heat"]
+  },
+  "arrange": [
+    { "sentence": "How does this machine work", "es": "¿Cómo funciona esta máquina?" },
+    { "sentence": "First put in the clothes", "es": "Primero, mete la ropa." },
+    { "sentence": "Then add the detergent", "es": "Luego, pon el detergente." },
+    { "sentence": "This dryer is out of order", "es": "Esta secadora está fuera de servicio." },
+    { "sentence": "Take them out and fold them", "es": "Sácalas y dóblalas." },
+    { "sentence": "Do you have change for a dollar", "es": "¿Tienes cambio de un dólar?" }
+  ],
+  "translate": [
+    { "answer": "My washing machine is broken", "es": "Mi lavadora se descompuso" },
+    { "answer": "First, put in the clothes", "es": "Primero, mete la ropa" },
+    { "answer": "Finally, press start", "es": "Finalmente, presiona inicio" },
+    { "answer": "It is out of order", "es": "Está fuera de servicio" },
+    { "answer": "My sweater shrank", "es": "Se me encogió el suéter" },
+    { "answer": "Use cold water", "es": "Usa agua fría" }
+  ]
+}

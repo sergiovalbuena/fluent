@@ -1,0 +1,85 @@
+{
+  "lesson": 26,
+  "slug": "lesson-26",
+  "icon": "🎻",
+  "title": { "en": "Music and instruments", "es": "La música y los instrumentos" },
+  "grammar": [
+    { "structure": "Irregular past verbs", "example": "go → went, sing → sang, buy → bought", "en": "Past simple of irregular verbs", "es": "Pasado simple de los verbos irregulares" },
+    { "structure": "Common irregulars", "example": "have → had, see → saw, hear → heard, make → made", "en": "The most frequent irregular verbs", "es": "Los verbos irregulares más frecuentes" },
+    { "structure": "play + the + instrument", "example": "She plays the guitar.", "en": "\"The\" with instruments", "es": "«The» con los instrumentos" },
+    { "structure": "ago", "example": "I learned the guitar many years ago.", "en": "\"Ago\" = hace (tiempo)", "es": "«Ago» = hace (tiempo)" },
+    { "structure": "last night / last week / last year", "example": "We went to a concert last night.", "en": "Past time expressions", "es": "Expresiones de tiempo pasado" }
+  ],
+  "tips": [
+    { "en": "Irregular verbs must be memorized, but the most common ones (went, had, saw, made, said, got) appear everywhere — you'll learn them fast.", "es": "Los verbos irregulares hay que memorizarlos, pero los más comunes (went, had, saw, made, said, got) aparecen en todas partes: los aprenderás rápido." },
+    { "en": "\"Ago\" goes after the time: \"two years ago\" (hace dos años).", "es": "«Ago» va después del tiempo: «two years ago» (hace dos años)." },
+    { "en": "With instruments use \"the\": play the piano, play the violin. With sports, no \"the\": play soccer.", "es": "Con instrumentos se usa «the»: play the piano, play the violin. Con deportes, sin «the»: play soccer." },
+    { "en": "\"Last night\" is \"anoche\"; \"last week\" is \"la semana pasada\".", "es": "«Last night» es «anoche»; «last week» es «la semana pasada»." },
+    { "en": "Mariachi music is very popular in the Southwest of the US — especially in San Diego and Los Angeles.", "es": "La música de mariachi es muy popular en el suroeste de Estados Unidos, sobre todo en San Diego y Los Ángeles." }
+  ],
+  "vocabulary": [
+    { "word": "music", "es": "música" },
+    { "word": "song", "es": "canción" },
+    { "word": "singer", "es": "cantante" },
+    { "word": "band", "es": "banda / grupo" },
+    { "word": "concert", "es": "concierto" },
+    { "word": "guitar", "es": "guitarra" },
+    { "word": "piano", "es": "piano" },
+    { "word": "violin", "es": "violín" },
+    { "word": "trumpet", "es": "trompeta" },
+    { "word": "drums", "es": "batería / tambores" },
+    { "word": "dance", "es": "bailar / baile" },
+    { "word": "sing", "es": "cantar" },
+    { "word": "loud", "es": "fuerte (volumen)" },
+    { "word": "went", "es": "fue / fui (pasado de go)" },
+    { "word": "sang", "es": "cantó (pasado de sing)" },
+    { "word": "heard", "es": "oyó (pasado de hear)" },
+    { "word": "ago", "es": "hace (tiempo)" }
+  ],
+  "phrases": [
+    { "phrase": "What kind of music do you like?", "es": "¿Qué tipo de música te gusta?" },
+    { "phrase": "I love mariachi music.", "es": "Me encanta la música de mariachi." },
+    { "phrase": "Do you play an instrument?", "es": "¿Tocas algún instrumento?" },
+    { "phrase": "I played the guitar many years ago.", "es": "Tocaba la guitarra hace muchos años." },
+    { "phrase": "We went to a concert last night.", "es": "Anoche fuimos a un concierto." },
+    { "phrase": "The band was amazing.", "es": "La banda estuvo increíble." },
+    { "phrase": "Everybody sang and danced.", "es": "Todos cantaron y bailaron." },
+    { "phrase": "Turn up the music!", "es": "¡Sube la música!" },
+    { "phrase": "It's too loud.", "es": "Está demasiado fuerte." },
+    { "phrase": "I heard this song on the radio.", "es": "Oí esta canción en la radio." },
+    { "phrase": "Who sings this song?", "es": "¿Quién canta esta canción?" },
+    { "phrase": "Let's dance!", "es": "¡Bailemos!" }
+  ],
+  "qa": [
+    { "question": { "en": "What is the past of \"go\"?", "es": "¿Cuál es el pasado de «go»?" }, "options": ["went", "goed", "gone", "go"], "correct": 0, "explanation": { "en": "Go → went (irregular).", "es": "Go → went (irregular)." } },
+    { "question": { "en": "Complete: \"Last night we ___ a great song.\"", "es": "Completa: «Last night we ___ a great song.»" }, "options": ["heard", "heared", "hear", "hears"], "correct": 0, "explanation": { "en": "Hear → heard (irregular).", "es": "Hear → heard (irregular)." } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["She plays the piano.", "She plays piano the.", "She plays a the piano.", "She play piano."], "correct": 0, "explanation": { "en": "Instruments: play the piano.", "es": "Instrumentos: play the piano." } },
+    { "question": { "en": "How do you say \"hace dos años\"?", "es": "¿Cómo se dice «hace dos años»?" }, "options": ["two years ago", "ago two years", "makes two years", "before two years"], "correct": 0, "explanation": { "en": "\"Ago\" goes after the time.", "es": "«Ago» va después del tiempo." } },
+    { "question": { "en": "What is the past of \"sing\"?", "es": "¿Cuál es el pasado de «sing»?" }, "options": ["sang", "singed", "sung", "sanged"], "correct": 0, "explanation": { "en": "Sing → sang.", "es": "Sing → sang." } },
+    { "question": { "en": "What is the past of \"have\"?", "es": "¿Cuál es el pasado de «have»?" }, "options": ["had", "haved", "has", "hadded"], "correct": 0, "explanation": { "en": "Have → had.", "es": "Have → had." } },
+    { "question": { "en": "\"Last night\" means…", "es": "«Last night» significa…" }, "options": ["anoche", "esta noche", "mañana en la noche", "la última noche del año"], "correct": 0, "explanation": { "en": "Last night = anoche.", "es": "Last night = anoche." } },
+    { "question": { "en": "The music is very strong for your ears. It's…", "es": "La música está muy fuerte para tus oídos. Está…" }, "options": ["too loud", "too quiet", "too slow", "too cheap"], "correct": 0, "explanation": { "en": "Loud = fuerte (volumen).", "es": "Loud = fuerte (volumen)." } }
+  ],
+  "story": {
+    "title": "Mariachi in the Park",
+    "text": "Last Sunday there was a free mariachi concert in the park. Carmen went with Linda and Leo. When they arrived, the band was already on stage: guitars, violins and two trumpets. The music was loud and happy. Carmen sang every song. Linda didn't know the words, but she clapped and smiled. Then the band played \"Cielito Lindo\", and everybody sang together — Mexicans, Americans, children and grandparents. Leo looked at his grandmother. \"Grandma, you know all the songs!\" \"Of course. Many years ago, I played the guitar,\" said Carmen. \"Really? Can you teach me?\" On the way home, Linda said, \"I had a wonderful time. I want to learn one song in Spanish.\" Carmen laughed. \"Ay, ay, ay, ay… that's the first lesson!\"",
+    "es": "El domingo pasado hubo un concierto gratis de mariachi en el parque. Carmen fue con Linda y Leo. Cuando llegaron, la banda ya estaba en el escenario: guitarras, violines y dos trompetas. La música era fuerte y alegre. Carmen cantó todas las canciones. Linda no sabía la letra, pero aplaudía y sonreía. Luego la banda tocó «Cielito Lindo» y todos cantaron juntos: mexicanos, estadounidenses, niños y abuelos. Leo miró a su abuela. «¡Abuela, te sabes todas las canciones!» «Claro. Hace muchos años tocaba la guitarra», dijo Carmen. «¿En serio? ¿Me enseñas?» De regreso a casa, Linda dijo: «La pasé de maravilla. Quiero aprender una canción en español.» Carmen se rió. «Ay, ay, ay, ay… ¡esa es la primera lección!»",
+    "highlighted_words": ["concert", "went", "band", "guitars", "violins", "trumpets", "loud", "sang", "played", "Many years ago", "I played the guitar", "had a wonderful time"]
+  },
+  "arrange": [
+    { "sentence": "We went to a concert last night", "es": "Anoche fuimos a un concierto." },
+    { "sentence": "She plays the violin very well", "es": "Ella toca muy bien el violín." },
+    { "sentence": "I played the guitar many years ago", "es": "Tocaba la guitarra hace muchos años." },
+    { "sentence": "What kind of music do you like", "es": "¿Qué tipo de música te gusta?" },
+    { "sentence": "Everybody sang and danced", "es": "Todos cantaron y bailaron." },
+    { "sentence": "I heard this song on the radio", "es": "Oí esta canción en la radio." }
+  ],
+  "translate": [
+    { "answer": "I went to a concert", "es": "Fui a un concierto" },
+    { "answer": "She sang a song", "es": "Ella cantó una canción" },
+    { "answer": "Do you play an instrument", "es": "¿Tocas algún instrumento?" },
+    { "answer": "The music is too loud", "es": "La música está demasiado fuerte" },
+    { "answer": "We had a great time", "es": "La pasamos muy bien" },
+    { "answer": "I love this song", "es": "Me encanta esta canción" }
+  ]
+}

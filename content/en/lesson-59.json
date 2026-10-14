@@ -1,0 +1,85 @@
+{
+  "lesson": 59,
+  "slug": "lesson-59",
+  "icon": "⚖️",
+  "title": { "en": "Getting help with paperwork", "es": "Ayuda con trámites y papeles" },
+  "grammar": [
+    { "structure": "said (that) + past", "example": "She said, \"I am tired.\" → She said (that) she was tired.", "en": "Reported speech with \"said\"", "es": "Estilo indirecto con «said»" },
+    { "structure": "told + person + (that)…", "example": "The lawyer told me (that) the papers were ready.", "en": "Reported speech with \"told\"", "es": "Estilo indirecto con «told»" },
+    { "structure": "will → would, can → could", "example": "\"I will call you.\" → He said he would call me.", "en": "Changes in reported speech", "es": "Cambios en el estilo indirecto" },
+    { "structure": "asked if / asked me to…", "example": "She asked if I had my passport. She asked me to sign here.", "en": "Reporting questions and requests", "es": "Reportar preguntas y pedidos" },
+    { "structure": "need to + fill out / sign / bring", "example": "You need to fill out this form and sign it.", "en": "Paperwork verbs", "es": "Verbos de trámites" }
+  ],
+  "tips": [
+    { "en": "\"Say\" doesn't need a person: \"She said that…\". \"Tell\" needs one: \"She told me that…\".", "es": "«Say» no necesita persona: «She said that…». «Tell» sí la necesita: «She told me that…»." },
+    { "en": "Many cities have free legal aid and community centers that help immigrants with paperwork in Spanish.", "es": "Muchas ciudades tienen asesoría legal gratuita y centros comunitarios que ayudan a los inmigrantes con trámites en español." },
+    { "en": "Be careful with \"notarios\": in the US a \"notary public\" is NOT a lawyer and can't give legal advice.", "es": "Cuidado con los «notarios»: en Estados Unidos un «notary public» NO es abogado y no puede dar asesoría legal." },
+    { "en": "Always keep copies of every document you sign or send.", "es": "Guarda siempre copias de cada documento que firmes o envíes." },
+    { "en": "\"Fill out a form\" = llenar un formulario. \"Sign\" = firmar. \"Date\" = poner la fecha.", "es": "«Fill out a form» = llenar un formulario. «Sign» = firmar. «Date» = poner la fecha." }
+  ],
+  "vocabulary": [
+    { "word": "lawyer", "es": "abogado" },
+    { "word": "legal aid", "es": "asesoría legal gratuita" },
+    { "word": "paperwork", "es": "trámites / papeleo" },
+    { "word": "document", "es": "documento" },
+    { "word": "form", "es": "formulario" },
+    { "word": "fill out", "es": "llenar (un formulario)" },
+    { "word": "signature", "es": "firma" },
+    { "word": "copy", "es": "copia" },
+    { "word": "deadline", "es": "fecha límite" },
+    { "word": "appointment letter", "es": "carta de cita" },
+    { "word": "residency", "es": "residencia" },
+    { "word": "notary public", "es": "notario público (no es abogado)" },
+    { "word": "advice", "es": "consejo / asesoría" },
+    { "word": "said", "es": "dijo" },
+    { "word": "told", "es": "le dijo / me dijo" },
+    { "word": "asked", "es": "preguntó / pidió" },
+    { "word": "approved", "es": "aprobado" }
+  ],
+  "phrases": [
+    { "phrase": "I need help with some paperwork.", "es": "Necesito ayuda con unos trámites." },
+    { "phrase": "Do you offer free legal aid?", "es": "¿Ofrecen asesoría legal gratuita?" },
+    { "phrase": "What documents do I need to bring?", "es": "¿Qué documentos necesito traer?" },
+    { "phrase": "Please fill out this form.", "es": "Por favor, llene este formulario." },
+    { "phrase": "Sign here and here.", "es": "Firme aquí y aquí." },
+    { "phrase": "When is the deadline?", "es": "¿Cuál es la fecha límite?" },
+    { "phrase": "Can I have a copy, please?", "es": "¿Me da una copia, por favor?" },
+    { "phrase": "The lawyer said it was simple.", "es": "La abogada dijo que era sencillo." },
+    { "phrase": "She told me to wait for a letter.", "es": "Me dijo que esperara una carta." },
+    { "phrase": "He asked if I had my passport.", "es": "Me preguntó si tenía mi pasaporte." },
+    { "phrase": "My application was approved!", "es": "¡Aprobaron mi solicitud!" },
+    { "phrase": "Is there someone who speaks Spanish?", "es": "¿Hay alguien que hable español?" }
+  ],
+  "qa": [
+    { "question": { "en": "Report: \"I am tired,\" Laura said.", "es": "Repórtalo: «I am tired», dijo Laura." }, "options": ["Laura said she was tired.", "Laura said she is tiring.", "Laura told she was tired.", "Laura said I was tired."], "correct": 0, "explanation": { "en": "am → was; I → she.", "es": "am → was; I → she." } },
+    { "question": { "en": "Complete: \"The lawyer ___ me that the papers were ready.\"", "es": "Completa: «The lawyer ___ me that the papers were ready.»" }, "options": ["told", "said", "says", "spoke"], "correct": 0, "explanation": { "en": "\"Told\" + person.", "es": "«Told» + persona." } },
+    { "question": { "en": "Complete: \"She ___ that she would call me.\"", "es": "Completa: «She ___ that she would call me.»" }, "options": ["said", "told", "asked me", "talked"], "correct": 0, "explanation": { "en": "\"Said\" without a person.", "es": "«Said» sin persona." } },
+    { "question": { "en": "Report: \"I will help you,\" he said.", "es": "Repórtalo: «I will help you», dijo él." }, "options": ["He said he would help me.", "He said he will helped me.", "He said I would help you.", "He told he would help."], "correct": 0, "explanation": { "en": "will → would.", "es": "will → would." } },
+    { "question": { "en": "Report the question: \"Do you have your passport?\"", "es": "Reporta la pregunta: «Do you have your passport?»" }, "options": ["He asked if I had my passport.", "He asked do I have my passport.", "He said if I had passport.", "He asked I had my passport?"], "correct": 0, "explanation": { "en": "Yes/no questions → asked if + past.", "es": "Preguntas de sí/no → asked if + pasado." } },
+    { "question": { "en": "In the US, a \"notary public\"…", "es": "En Estados Unidos, un «notary public»…" }, "options": ["is not a lawyer and can't give legal advice", "is a lawyer", "is a judge", "can represent you in court"], "correct": 0, "explanation": { "en": "A notary only certifies signatures.", "es": "Un notary solo certifica firmas." } },
+    { "question": { "en": "The last day to send a document is the…", "es": "El último día para entregar un documento es la…" }, "options": ["deadline", "signature", "copy", "form"], "correct": 0, "explanation": { "en": "Deadline = fecha límite.", "es": "Deadline = fecha límite." } },
+    { "question": { "en": "\"Fill out this form\" means…", "es": "«Fill out this form» significa…" }, "options": ["llene este formulario", "firme este formulario", "tire este formulario", "copie este formulario"], "correct": 0, "explanation": { "en": "Fill out = llenar.", "es": "Fill out = llenar." } }
+  ],
+  "story": {
+    "title": "The Letter",
+    "text": "Carmen wants to stay in the United States near her family, so she needs to do some paperwork. Linda tells her about a community center that offers free legal aid. A lawyer named Ms. Ortiz meets her. \"What documents do I need to bring?\" asks Carmen. Ms. Ortiz gives her a list and a form. \"Please fill out this form. Sign here and here. The deadline is next month.\" At dinner, Laura asks, \"What did the lawyer say?\" \"She said it was a long process, but not difficult. She told me to keep copies of everything. And she asked if I had a letter from you.\" \"Of course I'll write it, Mom.\" Months pass. One afternoon, a letter arrives. Carmen's hands are shaking. Leo reads it aloud slowly: \"Your application… has been… approved.\" Carmen sits down and cries. Leo hugs her. \"Grandma, you said you would stay. Now it's true!\"",
+    "es": "Carmen quiere quedarse en Estados Unidos cerca de su familia, así que necesita hacer unos trámites. Linda le habla de un centro comunitario que ofrece asesoría legal gratuita. La atiende una abogada, la licenciada Ortiz. «¿Qué documentos necesito traer?», pregunta Carmen. La licenciada Ortiz le da una lista y un formulario. «Por favor, llene este formulario. Firme aquí y aquí. La fecha límite es el próximo mes.» En la cena, Laura pregunta: «¿Qué dijo la abogada?» «Dijo que era un proceso largo, pero no difícil. Me dijo que guardara copias de todo. Y me preguntó si tenía una carta tuya.» «Claro que te la escribo, mamá.» Pasan los meses. Una tarde llega una carta. A Carmen le tiemblan las manos. Leo la lee en voz alta, despacio: «Su solicitud… ha sido… aprobada.» Carmen se sienta y llora. Leo la abraza. «Abuela, dijiste que te ibas a quedar. ¡Ahora es verdad!»",
+    "highlighted_words": ["paperwork", "legal aid", "lawyer", "What documents do I need to bring", "fill out this form", "Sign here", "deadline", "She said it was", "She told me to keep copies", "she asked if I had", "approved", "you said you would stay"]
+  },
+  "arrange": [
+    { "sentence": "I need help with some paperwork", "es": "Necesito ayuda con unos trámites." },
+    { "sentence": "Please fill out this form", "es": "Por favor, llene este formulario." },
+    { "sentence": "She said that it was simple", "es": "Dijo que era sencillo." },
+    { "sentence": "The lawyer told me to wait", "es": "La abogada me dijo que esperara." },
+    { "sentence": "He asked if I had my passport", "es": "Me preguntó si tenía mi pasaporte." },
+    { "sentence": "My application was approved", "es": "Aprobaron mi solicitud." }
+  ],
+  "translate": [
+    { "answer": "I need help with some paperwork", "es": "Necesito ayuda con unos trámites" },
+    { "answer": "Sign here, please", "es": "Firme aquí, por favor" },
+    { "answer": "When is the deadline", "es": "¿Cuál es la fecha límite?" },
+    { "answer": "She said she was tired", "es": "Dijo que estaba cansada" },
+    { "answer": "He told me to call him", "es": "Me dijo que lo llamara" },
+    { "answer": "Can I have a copy", "es": "¿Me da una copia?" }
+  ]
+}

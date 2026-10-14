@@ -1,0 +1,397 @@
+{
+  "lesson": 16,
+  "slug": "lesson-16",
+  "icon": "👕",
+  "title": {
+    "en": "Clothes",
+    "es": "La ropa"
+  },
+  "grammar": [
+    {
+      "structure": "this / that (singular)",
+      "example": "I like this dress. That jacket is nice.",
+      "en": "\"This\" (near) and \"that\" (far)",
+      "es": "«This» (cerca) y «that» (lejos)"
+    },
+    {
+      "structure": "these / those (plural)",
+      "example": "These shoes are comfortable. Those jeans are expensive.",
+      "en": "Plural forms",
+      "es": "Formas en plural"
+    },
+    {
+      "structure": "How much is / are…?",
+      "example": "How much is this shirt? How much are these socks?",
+      "en": "Asking prices",
+      "es": "Preguntar precios"
+    },
+    {
+      "structure": "Can I try it on?",
+      "example": "Can I try these pants on?",
+      "en": "Trying clothes in a store",
+      "es": "Probarse ropa en la tienda"
+    },
+    {
+      "structure": "wear",
+      "example": "She always wears a hat.",
+      "en": "\"Wear\" = to have clothes on",
+      "es": "«Wear» = llevar puesto"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Some clothes are always plural: pants, jeans, shorts, glasses, pajamas. Say \"these pants are…\".",
+      "es": "Algunas prendas siempre van en plural: pants, jeans, shorts, glasses, pajamas. Se dice «these pants are…»."
+    },
+    {
+      "en": "In American English, \"pants\" are trousers. (In British English, \"pants\" can mean underwear!)",
+      "es": "En inglés estadounidense, «pants» son pantalones. (¡En inglés británico «pants» puede significar ropa interior!)"
+    },
+    {
+      "en": "\"Wear\" is for clothes you have on; \"carry\" is for things in your hands, like a bag.",
+      "es": "«Wear» es para ropa que llevas puesta; «carry» para cosas en las manos, como una bolsa."
+    },
+    {
+      "en": "\"Fitting room\" is where you try clothes on in a store.",
+      "es": "El «fitting room» es el probador de la tienda."
+    },
+    {
+      "en": "US clothing sizes are different from Mexico's: ask \"What size is this?\" or check the label.",
+      "es": "Las tallas en Estados Unidos son distintas a las de México: pregunta «What size is this?» o revisa la etiqueta."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "shirt",
+      "es": "camisa"
+    },
+    {
+      "word": "T-shirt",
+      "es": "playera / camiseta"
+    },
+    {
+      "word": "blouse",
+      "es": "blusa"
+    },
+    {
+      "word": "sweater",
+      "es": "suéter"
+    },
+    {
+      "word": "jacket",
+      "es": "chaqueta / chamarra"
+    },
+    {
+      "word": "coat",
+      "es": "abrigo"
+    },
+    {
+      "word": "dress",
+      "es": "vestido"
+    },
+    {
+      "word": "skirt",
+      "es": "falda"
+    },
+    {
+      "word": "pants",
+      "es": "pantalones"
+    },
+    {
+      "word": "jeans",
+      "es": "jeans / pantalón de mezclilla"
+    },
+    {
+      "word": "shoes",
+      "es": "zapatos"
+    },
+    {
+      "word": "sneakers",
+      "es": "tenis (zapatos)"
+    },
+    {
+      "word": "socks",
+      "es": "calcetines"
+    },
+    {
+      "word": "hat",
+      "es": "sombrero / gorro"
+    },
+    {
+      "word": "scarf",
+      "es": "bufanda"
+    },
+    {
+      "word": "size",
+      "es": "talla"
+    },
+    {
+      "word": "expensive",
+      "es": "caro"
+    },
+    {
+      "word": "cheap",
+      "es": "barato"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "How much is this sweater?",
+      "es": "¿Cuánto cuesta este suéter?"
+    },
+    {
+      "phrase": "How much are these shoes?",
+      "es": "¿Cuánto cuestan estos zapatos?"
+    },
+    {
+      "phrase": "Can I try it on?",
+      "es": "¿Me lo puedo probar?"
+    },
+    {
+      "phrase": "Where is the fitting room?",
+      "es": "¿Dónde está el probador?"
+    },
+    {
+      "phrase": "What size are you?",
+      "es": "¿Qué talla eres?"
+    },
+    {
+      "phrase": "Do you have it in a medium?",
+      "es": "¿Lo tiene en mediana?"
+    },
+    {
+      "phrase": "It's too small.",
+      "es": "Me queda chico."
+    },
+    {
+      "phrase": "It fits perfectly!",
+      "es": "¡Me queda perfecto!"
+    },
+    {
+      "phrase": "I like that blue dress.",
+      "es": "Me gusta ese vestido azul."
+    },
+    {
+      "phrase": "These jeans are on sale.",
+      "es": "Estos jeans están en oferta."
+    },
+    {
+      "phrase": "I'll take it.",
+      "es": "Me lo llevo."
+    },
+    {
+      "phrase": "Just looking, thanks.",
+      "es": "Solo estoy viendo, gracias."
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "en": "The shoes are next to you. You say:",
+        "es": "Los zapatos están junto a ti. Dices:"
+      },
+      "options": [
+        "These shoes are comfortable.",
+        "This shoes are comfortable.",
+        "Those shoe is comfortable.",
+        "That shoes are comfortable."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Near + plural → these.",
+        "es": "Cerca + plural → these."
+      }
+    },
+    {
+      "question": {
+        "en": "The jacket is far, in the window. You say:",
+        "es": "La chaqueta está lejos, en la vitrina. Dices:"
+      },
+      "options": [
+        "I like that jacket.",
+        "I like this jacket.",
+        "I like these jacket.",
+        "I like those jacket."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Far + singular → that.",
+        "es": "Lejos + singular → that."
+      }
+    },
+    {
+      "question": {
+        "en": "Choose the correct question.",
+        "es": "Elige la pregunta correcta."
+      },
+      "options": [
+        "How much are these pants?",
+        "How much is these pants?",
+        "How many is these pants?",
+        "How much this pants?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Pants\" is plural → How much are these pants?",
+        "es": "«Pants» es plural → How much are these pants?"
+      }
+    },
+    {
+      "question": {
+        "en": "A salesperson asks \"Can I help you?\" and you only want to look. You say:",
+        "es": "Un vendedor pregunta «Can I help you?» y solo quieres mirar. Dices:"
+      },
+      "options": [
+        "Just looking, thanks.",
+        "I'll take it.",
+        "It's too small.",
+        "Yes, I'm a medium."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Just looking, thanks\" is the polite answer.",
+        "es": "«Just looking, thanks» es la respuesta amable."
+      }
+    },
+    {
+      "question": {
+        "en": "Complete: \"She always ___ a hat.\"",
+        "es": "Completa: «She always ___ a hat.»"
+      },
+      "options": [
+        "wears",
+        "carries",
+        "dresses",
+        "puts"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"Wear\" is for clothes and accessories on your body: she wears a hat.",
+        "es": "«Wear» es para la ropa y accesorios que llevas puestos: she wears a hat."
+      }
+    },
+    {
+      "question": {
+        "en": "Where do you try clothes on?",
+        "es": "¿Dónde te pruebas la ropa?"
+      },
+      "options": [
+        "in the fitting room",
+        "in the kitchen",
+        "at the cashier",
+        "in the drawer"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The fitting room is for trying on clothes.",
+        "es": "El probador (fitting room) es para probarse ropa."
+      }
+    },
+    {
+      "question": {
+        "en": "The dress is perfect for you. You say:",
+        "es": "El vestido te queda perfecto. Dices:"
+      },
+      "options": [
+        "It fits perfectly! I'll take it.",
+        "It's too small.",
+        "Just looking.",
+        "How much are they?"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "\"It fits\" = it is the right size. \"I'll take it\" = I'll buy it.",
+        "es": "«It fits» = es de tu talla. «I'll take it» = me lo llevo."
+      }
+    },
+    {
+      "question": {
+        "en": "In American English, \"pants\" means…",
+        "es": "En inglés estadounidense, «pants» significa…"
+      },
+      "options": [
+        "trousers",
+        "underwear",
+        "socks",
+        "shorts"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "In the US, pants = trousers.",
+        "es": "En Estados Unidos, pants = pantalones."
+      }
+    }
+  ],
+  "story": {
+    "title": "A Dress for the Party",
+    "text": "Carmen needs a dress for Leo's birthday party. She goes to a store with Laura. \"Can I help you?\" asks the salesperson. \"Just looking, thanks,\" says Carmen. Then she sees a blue dress. \"Laura, look at that dress!\" \"It's beautiful, Mom. Try it on.\" \"Excuse me, can I try this dress on? Do you have it in a medium?\" \"Sure. The fitting room is over there.\" The dress is too small. The salesperson brings a large. This time it fits perfectly. \"How much is it?\" \"Forty dollars. It's on sale.\" \"I'll take it!\" At the cashier, Laura sees some red socks for Leo. \"And how much are these socks?\" \"Five dollars.\" Carmen laughs. \"A blue dress for me and red socks for Leo. We are ready for the party!\"",
+    "es": "Carmen necesita un vestido para la fiesta de cumpleaños de Leo. Va a una tienda con Laura. «¿Le puedo ayudar?», pregunta la vendedora. «Solo estoy viendo, gracias», dice Carmen. Entonces ve un vestido azul. «¡Laura, mira ese vestido!» «Está precioso, mamá. Pruébatelo.» «Disculpe, ¿me puedo probar este vestido? ¿Lo tiene en mediana?» «Claro. El probador está por allá.» El vestido le queda chico. La vendedora trae una grande. Esta vez le queda perfecto. «¿Cuánto cuesta?» «Cuarenta dólares. Está en oferta.» «¡Me lo llevo!» En la caja, Laura ve unos calcetines rojos para Leo. «¿Y cuánto cuestan estos calcetines?» «Cinco dólares.» Carmen se ríe. «Un vestido azul para mí y calcetines rojos para Leo. ¡Estamos listos para la fiesta!»",
+    "highlighted_words": [
+      "dress",
+      "Just looking, thanks",
+      "that dress",
+      "Try it on",
+      "can I try this dress on",
+      "medium",
+      "fitting room",
+      "too small",
+      "fits perfectly",
+      "How much is it",
+      "on sale",
+      "I'll take it",
+      "these socks"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "How much is this sweater",
+      "es": "¿Cuánto cuesta este suéter?"
+    },
+    {
+      "sentence": "Can I try these jeans on",
+      "es": "¿Me puedo probar estos jeans?"
+    },
+    {
+      "sentence": "Those shoes are too expensive",
+      "es": "Esos zapatos son demasiado caros."
+    },
+    {
+      "sentence": "Do you have it in a large",
+      "es": "¿Lo tiene en grande?"
+    },
+    {
+      "sentence": "She always wears a hat",
+      "es": "Ella siempre usa sombrero."
+    },
+    {
+      "sentence": "The dress fits perfectly",
+      "es": "El vestido le queda perfecto."
+    }
+  ],
+  "translate": [
+    {
+      "answer": "How much is this dress",
+      "es": "¿Cuánto cuesta este vestido?"
+    },
+    {
+      "answer": "These shoes are cheap",
+      "es": "Estos zapatos son baratos"
+    },
+    {
+      "answer": "Can I try it on",
+      "es": "¿Me lo puedo probar?"
+    },
+    {
+      "answer": "It is too small",
+      "es": "Me queda chico"
+    },
+    {
+      "answer": "I like that jacket",
+      "es": "Me gusta esa chaqueta"
+    },
+    {
+      "answer": "Where is the fitting room",
+      "es": "¿Dónde está el probador?"
+    }
+  ]
+}

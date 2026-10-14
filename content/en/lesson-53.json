@@ -1,0 +1,85 @@
+{
+  "lesson": 53,
+  "slug": "lesson-53",
+  "icon": "☕",
+  "title": { "en": "At the coffee shop", "es": "En la cafetería" },
+  "grammar": [
+    { "structure": "I'd rather + verb", "example": "I'd rather have tea than coffee.", "en": "Preferences with \"would rather\"", "es": "Preferencias con «would rather» (preferiría)" },
+    { "structure": "prefer + noun / verb-ing + to", "example": "I prefer hot drinks to cold drinks.", "en": "General preferences with \"prefer\"", "es": "Preferencias generales con «prefer»" },
+    { "structure": "Would you rather…?", "example": "Would you rather sit inside or outside?", "en": "Asking about preferences", "es": "Preguntar por preferencias" },
+    { "structure": "Can I get…?", "example": "Can I get a large latte with oat milk?", "en": "Casual way to order", "es": "Forma informal de pedir" },
+    { "structure": "for here or to go", "example": "For here or to go? — To go, please.", "en": "Eating in or taking away", "es": "Para tomar aquí o para llevar" }
+  ],
+  "tips": [
+    { "en": "\"I'd rather\" is followed by the base verb, without \"to\": I'd rather stay (not \"I'd rather to stay\").", "es": "«I'd rather» va seguido del verbo base, sin «to»: I'd rather stay (no «I'd rather to stay»)." },
+    { "en": "\"Can I get…?\" is the most common way to order at an American coffee shop.", "es": "«Can I get…?» es la forma más común de pedir en una cafetería estadounidense." },
+    { "en": "Baristas often ask your name and write it on the cup. They'll call it when your drink is ready.", "es": "Los baristas suelen preguntar tu nombre y escribirlo en el vaso. Lo dicen en voz alta cuando tu bebida está lista." },
+    { "en": "\"Decaf\" means without caffeine.", "es": "«Decaf» significa descafeinado." },
+    { "en": "There's usually a tip jar or a tip option on the screen. Tipping at coffee shops is optional.", "es": "Suele haber un frasco o una opción de propina en la pantalla. En las cafeterías la propina es opcional." }
+  ],
+  "vocabulary": [
+    { "word": "coffee shop", "es": "cafetería" },
+    { "word": "barista", "es": "barista" },
+    { "word": "latte", "es": "café con leche (latte)" },
+    { "word": "black coffee", "es": "café negro / americano" },
+    { "word": "decaf", "es": "descafeinado" },
+    { "word": "hot chocolate", "es": "chocolate caliente" },
+    { "word": "iced", "es": "con hielo / frío" },
+    { "word": "cream", "es": "crema" },
+    { "word": "oat milk", "es": "leche de avena" },
+    { "word": "muffin", "es": "panquecito / muffin" },
+    { "word": "pastry", "es": "pan dulce / pastelito" },
+    { "word": "to go", "es": "para llevar" },
+    { "word": "for here", "es": "para tomar aquí" },
+    { "word": "rather", "es": "preferiría (would rather)" },
+    { "word": "prefer", "es": "preferir" },
+    { "word": "refill", "es": "otra taza / rellenar" },
+    { "word": "lid", "es": "tapa" }
+  ],
+  "phrases": [
+    { "phrase": "Can I get a medium latte, please?", "es": "¿Me da un latte mediano, por favor?" },
+    { "phrase": "For here or to go?", "es": "¿Para tomar aquí o para llevar?" },
+    { "phrase": "To go, please.", "es": "Para llevar, por favor." },
+    { "phrase": "What's your name?", "es": "¿Cuál es su nombre?" },
+    { "phrase": "I'd rather have tea.", "es": "Preferiría un té." },
+    { "phrase": "Would you rather sit inside or outside?", "es": "¿Prefieres sentarte adentro o afuera?" },
+    { "phrase": "I prefer coffee without sugar.", "es": "Prefiero el café sin azúcar." },
+    { "phrase": "Is it decaf?", "es": "¿Es descafeinado?" },
+    { "phrase": "Could I have a little more milk?", "es": "¿Me podría dar un poco más de leche?" },
+    { "phrase": "A latte for Carmen!", "es": "¡Un latte para Carmen!" },
+    { "phrase": "This one's on me.", "es": "Este lo invito yo." },
+    { "phrase": "Can I have a lid?", "es": "¿Me da una tapa?" }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I'd rather stay home.", "I'd rather to stay home.", "I'd rather staying home.", "I'd rather stays home."], "correct": 0, "explanation": { "en": "would rather + base verb.", "es": "would rather + verbo base." } },
+    { "question": { "en": "Complete: \"I prefer tea ___ coffee.\"", "es": "Completa: «I prefer tea ___ coffee.»" }, "options": ["to", "than", "that", "of"], "correct": 0, "explanation": { "en": "prefer A to B.", "es": "prefer A to B." } },
+    { "question": { "en": "Complete: \"I'd rather have tea ___ coffee.\"", "es": "Completa: «I'd rather have tea ___ coffee.»" }, "options": ["than", "to", "that", "from"], "correct": 0, "explanation": { "en": "would rather A than B.", "es": "would rather A than B." } },
+    { "question": { "en": "The barista asks \"For here or to go?\". You want to take it with you. You say:", "es": "La barista pregunta «For here or to go?». Quieres llevártelo. Dices:" }, "options": ["To go, please.", "For here, please.", "Go, please.", "Take, please."], "correct": 0, "explanation": { "en": "To go = para llevar.", "es": "To go = para llevar." } },
+    { "question": { "en": "Coffee without caffeine is…", "es": "El café sin cafeína es…" }, "options": ["decaf", "iced", "black", "latte"], "correct": 0, "explanation": { "en": "Decaf = descafeinado.", "es": "Decaf = descafeinado." } },
+    { "question": { "en": "What's a casual, common way to order?", "es": "¿Cuál es una forma informal y común de pedir?" }, "options": ["Can I get a latte?", "I demand a latte.", "Give latte.", "Latte you have?"], "correct": 0, "explanation": { "en": "\"Can I get…?\" is the standard casual order.", "es": "«Can I get…?» es la forma habitual e informal." } },
+    { "question": { "en": "You pay for your friend's coffee. You say:", "es": "Pagas el café de tu amiga. Dices:" }, "options": ["This one's on me.", "This one's for here.", "This one's decaf.", "This one's a refill."], "correct": 0, "explanation": { "en": "\"It's on me\" = yo invito.", "es": "«It's on me» = yo invito." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Would you rather sit inside or outside?", "Would you rather to sit inside?", "Do you rather sit inside?", "Would rather you sit inside?"], "correct": 0, "explanation": { "en": "Would you rather + base verb?", "es": "Would you rather + verbo base?" } }
+  ],
+  "story": {
+    "title": "Carmen's Coffee Club",
+    "text": "Every Thursday, Carmen, Ana, Kenji and Linda meet at a coffee shop near the beach. They call it the Coffee Club. Today it's Carmen's turn to order. \"Hi! Can I get a medium latte, a black coffee, a decaf for Linda and… Kenji, what would you like?\" \"I'd rather have tea today. Green tea, please.\" \"And a green tea. For here.\" \"What's the name?\" \"Carmen.\" A few minutes later the barista calls, \"Drinks for Carmen!\" \"Would you rather sit inside or outside?\" asks Ana. \"Outside,\" says Linda. \"I prefer the sun to the air conditioning.\" They talk about everything: Ana's new job, Kenji's garden, Leo's soccer team. When the bill comes, Carmen says, \"This one's on me. Last year I couldn't order a coffee in English. Today I ordered four!\"",
+    "es": "Todos los jueves, Carmen, Ana, Kenji y Linda se reúnen en una cafetería cerca de la playa. Le dicen el Club del Café. Hoy le toca pedir a Carmen. «¡Hola! ¿Me da un latte mediano, un café americano, un descafeinado para Linda y… Kenji, ¿qué quieres?» «Hoy preferiría un té. Té verde, por favor.» «Y un té verde. Para tomar aquí.» «¿A nombre de quién?» «Carmen.» Unos minutos después, el barista dice en voz alta: «¡Bebidas para Carmen!» «¿Prefieren sentarse adentro o afuera?», pregunta Ana. «Afuera», dice Linda. «Prefiero el sol al aire acondicionado.» Hablan de todo: el nuevo trabajo de Ana, el huerto de Kenji, el equipo de fútbol de Leo. Cuando llega la cuenta, Carmen dice: «Esta la invito yo. El año pasado no podía pedir un café en inglés. ¡Hoy pedí cuatro!»",
+    "highlighted_words": ["coffee shop", "Can I get a medium latte", "black coffee", "decaf", "I'd rather have tea", "For here", "barista", "Would you rather sit inside or outside", "I prefer the sun to the air conditioning", "This one's on me"]
+  },
+  "arrange": [
+    { "sentence": "Can I get a medium latte please", "es": "¿Me da un latte mediano, por favor?" },
+    { "sentence": "I would rather have tea", "es": "Preferiría un té." },
+    { "sentence": "I prefer tea to coffee", "es": "Prefiero el té al café." },
+    { "sentence": "Would you rather sit inside or outside", "es": "¿Prefieres sentarte adentro o afuera?" },
+    { "sentence": "For here or to go", "es": "¿Para tomar aquí o para llevar?" },
+    { "sentence": "This one is on me", "es": "Este lo invito yo." }
+  ],
+  "translate": [
+    { "answer": "To go, please", "es": "Para llevar, por favor" },
+    { "answer": "I would rather have tea", "es": "Preferiría un té" },
+    { "answer": "Is it decaf", "es": "¿Es descafeinado?" },
+    { "answer": "I prefer coffee without sugar", "es": "Prefiero el café sin azúcar" },
+    { "answer": "Can I have a lid", "es": "¿Me da una tapa?" },
+    { "answer": "Can I get a hot chocolate", "es": "¿Me da un chocolate caliente?" }
+  ]
+}

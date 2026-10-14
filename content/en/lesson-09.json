@@ -1,0 +1,84 @@
+{
+  "lesson": 9,
+  "slug": "lesson-09",
+  "icon": "💬",
+  "title": { "en": "Everyday expressions (1)", "es": "Expresiones cotidianas (1)" },
+  "grammar": [
+    { "structure": "I / you / we / they + verb", "example": "I drink coffee every morning.", "en": "Present simple for habits", "es": "Presente simple para hábitos" },
+    { "structure": "don't + verb", "example": "I don't understand.", "en": "Negative: do not → don't", "es": "Negativo: do not → don't" },
+    { "structure": "Do you…? — Yes, I do. / No, I don't.", "example": "Do you like tea? — Yes, I do.", "en": "Questions with \"do\"", "es": "Preguntas con «do»" },
+    { "structure": "I think so / I don't think so", "example": "Is it open? — I think so.", "en": "Giving an opinion briefly", "es": "Dar una opinión breve" },
+    { "structure": "I need / I want", "example": "I need help. I want a coffee.", "en": "Expressing needs and wishes", "es": "Expresar necesidades y deseos" }
+  ],
+  "tips": [
+    { "en": "\"I don't know\" and \"I don't understand\" are two of the most useful sentences for a beginner. Practice them!", "es": "«I don't know» y «I don't understand» son dos de las frases más útiles para un principiante. ¡Practícalas!" },
+    { "en": "In questions, \"do\" goes first and the main verb stays simple: Do you speak English? (not \"Do you speaks…\").", "es": "En las preguntas, «do» va primero y el verbo principal queda simple: Do you speak English? (no «Do you speaks…»)." },
+    { "en": "\"Okay\" (OK) is used all the time to agree or to show you understand.", "es": "«Okay» (OK) se usa todo el tiempo para estar de acuerdo o mostrar que entendiste." },
+    { "en": "\"Really?\" shows surprise or interest, like \"¿En serio?\".", "es": "«Really?» muestra sorpresa o interés, como «¿En serio?»." },
+    { "en": "\"Me too\" agrees with a positive sentence; \"Me neither\" agrees with a negative one.", "es": "«Me too» (yo también) va con frases afirmativas; «Me neither» (yo tampoco) con negativas." }
+  ],
+  "vocabulary": [
+    { "word": "I know", "es": "sé / lo sé" },
+    { "word": "I don't know", "es": "no sé" },
+    { "word": "I understand", "es": "entiendo" },
+    { "word": "I think so", "es": "creo que sí" },
+    { "word": "I don't think so", "es": "creo que no" },
+    { "word": "maybe", "es": "quizás / tal vez" },
+    { "word": "really?", "es": "¿en serio?" },
+    { "word": "me too", "es": "yo también" },
+    { "word": "me neither", "es": "yo tampoco" },
+    { "word": "okay", "es": "está bien / de acuerdo" },
+    { "word": "great", "es": "genial" },
+    { "word": "wait", "es": "esperar" },
+    { "word": "need", "es": "necesitar" },
+    { "word": "want", "es": "querer" },
+    { "word": "like", "es": "gustar" },
+    { "word": "every day", "es": "todos los días" }
+  ],
+  "phrases": [
+    { "phrase": "I don't understand.", "es": "No entiendo." },
+    { "phrase": "I don't know.", "es": "No sé." },
+    { "phrase": "Do you speak Spanish?", "es": "¿Hablas español?" },
+    { "phrase": "Yes, I do.", "es": "Sí." },
+    { "phrase": "No, I don't.", "es": "No." },
+    { "phrase": "What does this mean?", "es": "¿Qué significa esto?" },
+    { "phrase": "How do you say \"cuchara\" in English?", "es": "¿Cómo se dice «cuchara» en inglés?" },
+    { "phrase": "Wait a minute, please.", "es": "Espera un minuto, por favor." },
+    { "phrase": "That's great!", "es": "¡Qué bien!" },
+    { "phrase": "Me too!", "es": "¡Yo también!" },
+    { "phrase": "I need help.", "es": "Necesito ayuda." },
+    { "phrase": "No worries.", "es": "No te preocupes." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct negative.", "es": "Elige la negación correcta." }, "options": ["I don't understand.", "I no understand.", "I not understand.", "I doesn't understand."], "correct": 0, "explanation": { "en": "With I/you/we/they the negative is \"don't\" + verb.", "es": "Con I/you/we/they la negación es «don't» + verbo." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Do you speak English?", "You speak English?", "Speak you English?", "Do you speaks English?"], "correct": 0, "explanation": { "en": "Questions start with \"Do\" and the verb stays simple.", "es": "Las preguntas empiezan con «Do» y el verbo queda simple." } },
+    { "question": { "en": "\"I love chocolate.\" — You love it too. What do you say?", "es": "«I love chocolate.» — A ti también te encanta. ¿Qué dices?" }, "options": ["Me too!", "Me neither!", "I don't think so.", "Maybe."], "correct": 0, "explanation": { "en": "To agree with a positive sentence: \"Me too\".", "es": "Para coincidir con una frase afirmativa: «Me too»." } },
+    { "question": { "en": "\"I don't like snow.\" — You don't like it either. What do you say?", "es": "«I don't like snow.» — A ti tampoco te gusta. ¿Qué dices?" }, "options": ["Me neither.", "Me too.", "Yes, I do.", "Really great."], "correct": 0, "explanation": { "en": "To agree with a negative sentence: \"Me neither\".", "es": "Para coincidir con una frase negativa: «Me neither»." } },
+    { "question": { "en": "You don't know a word. What do you ask?", "es": "No conoces una palabra. ¿Qué preguntas?" }, "options": ["What does this mean?", "What this mean?", "What means this?", "What is mean this?"], "correct": 0, "explanation": { "en": "\"What does this mean?\" is the natural question.", "es": "«What does this mean?» es la pregunta natural." } },
+    { "question": { "en": "Short answer: \"Do you like coffee?\" (you do)", "es": "Respuesta corta: «Do you like coffee?» (sí te gusta)" }, "options": ["Yes, I do.", "Yes, I like.", "Yes, I am.", "Yes, do I."], "correct": 0, "explanation": { "en": "Answer with the helper verb: Yes, I do.", "es": "Se responde con el auxiliar: Yes, I do." } },
+    { "question": { "en": "Someone tells you surprising news. What can you say?", "es": "Alguien te cuenta una noticia sorprendente. ¿Qué puedes decir?" }, "options": ["Really?", "Me neither.", "Wait a minute.", "No problem."], "correct": 0, "explanation": { "en": "\"Really?\" shows surprise.", "es": "«Really?» muestra sorpresa." } },
+    { "question": { "en": "Complete: \"We ___ coffee every morning.\"", "es": "Completa: «We ___ coffee every morning.»" }, "options": ["drink", "drinks", "drinking", "to drink"], "correct": 0, "explanation": { "en": "With \"we\" the present simple has no -s: we drink.", "es": "Con «we» el presente simple no lleva -s: we drink." } }
+  ],
+  "story": {
+    "title": "How Do You Say…?",
+    "text": "Every day after class, Carmen and Ana drink coffee together. They practice English. Today Carmen has a question. \"How do you say 'cuchara' in English?\" Ana thinks. \"Spoon. I think so… Yes, spoon.\" \"And what does 'awesome' mean? My grandson says it every day.\" Ana laughs. \"It means 'great' or 'very good'.\" \"Okay! This coffee is awesome!\" A waiter comes to the table. He speaks very fast. Carmen and Ana look at each other. \"Sorry, I don't understand,\" says Carmen. The waiter speaks again, slowly: \"Do you need anything else?\" \"Oh! No, thank you. We don't need anything.\" Ana says, \"I love this place.\" \"Me too!\" says Carmen. \"And I love our English practice.\"",
+    "es": "Todos los días después de clase, Carmen y Ana toman café juntas. Practican inglés. Hoy Carmen tiene una pregunta. «¿Cómo se dice “cuchara” en inglés?» Ana piensa. «Spoon. Creo que sí… Sí, spoon.» «¿Y qué significa “awesome”? Mi nieto lo dice todos los días.» Ana se ríe. «Significa “genial” o “muy bueno”.» «¡Bueno! ¡Este café es awesome!» Un mesero viene a la mesa. Habla muy rápido. Carmen y Ana se miran. «Perdón, no entiendo», dice Carmen. El mesero habla otra vez, despacio: «¿Necesitan algo más?» «¡Ah! No, gracias. No necesitamos nada.» Ana dice: «Me encanta este lugar.» «¡A mí también!», dice Carmen. «Y me encanta nuestra práctica de inglés.»",
+    "highlighted_words": ["Every day", "How do you say", "I think so", "what does", "mean", "Okay", "I don't understand", "Do you need", "Me too"]
+  },
+  "arrange": [
+    { "sentence": "I do not understand", "es": "No entiendo." },
+    { "sentence": "Do you speak Spanish", "es": "¿Hablas español?" },
+    { "sentence": "What does this word mean", "es": "¿Qué significa esta palabra?" },
+    { "sentence": "We drink coffee every day", "es": "Tomamos café todos los días." },
+    { "sentence": "I need help with my homework", "es": "Necesito ayuda con mi tarea." },
+    { "sentence": "How do you say spoon in Spanish", "es": "¿Cómo se dice «spoon» en español?" }
+  ],
+  "translate": [
+    { "answer": "I do not know", "es": "No sé" },
+    { "answer": "I need help", "es": "Necesito ayuda" },
+    { "answer": "Do you speak English", "es": "¿Hablas inglés?" },
+    { "answer": "What does it mean", "es": "¿Qué significa?" },
+    { "answer": "Me too", "es": "Yo también" },
+    { "answer": "Wait a minute, please", "es": "Espera un minuto, por favor" }
+  ]
+}

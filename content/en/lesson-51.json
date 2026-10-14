@@ -1,0 +1,85 @@
+{
+  "lesson": 51,
+  "slug": "lesson-51",
+  "icon": "🛳️",
+  "title": { "en": "On a cruise", "es": "En un crucero" },
+  "grammar": [
+    { "structure": "present continuous for future arrangements", "example": "We're leaving on Friday. We're arriving in Ensenada on Saturday.", "en": "Fixed plans with a date or time", "es": "Planes fijos con fecha u hora" },
+    { "structure": "going to vs. present continuous", "example": "I'm going to relax. / We're sailing at five.", "en": "Intention vs. arrangement", "es": "Intención vs. plan acordado" },
+    { "structure": "What are you doing this weekend?", "example": "What are you doing on Saturday? — I'm visiting my sister.", "en": "Asking about plans", "es": "Preguntar por planes" },
+    { "structure": "on board / on deck", "example": "There's a pool on deck.", "en": "Expressions on a ship", "es": "Expresiones en un barco" },
+    { "structure": "feel seasick", "example": "I feel a little seasick.", "en": "Talking about seasickness", "es": "Hablar del mareo en el barco" }
+  ],
+  "tips": [
+    { "en": "The present continuous can talk about the future when the plan is fixed: \"I'm meeting Linda at six.\"", "es": "El presente continuo puede hablar del futuro cuando el plan está fijo: «I'm meeting Linda at six.»" },
+    { "en": "Short cruises from San Diego to Ensenada are popular weekend trips.", "es": "Los cruceros cortos de San Diego a Ensenada son paseos de fin de semana muy populares." },
+    { "en": "If you get seasick, stay in the middle of the ship and look at the horizon.", "es": "Si te mareas, quédate en el centro del barco y mira el horizonte." },
+    { "en": "\"Shore excursion\" is a tour you take when the ship stops at a port.", "es": "Una «shore excursion» es un recorrido que haces cuando el barco para en un puerto." },
+    { "en": "\"Bon voyage!\" (from French) is used in English to wish someone a good trip.", "es": "«Bon voyage!» (del francés) se usa en inglés para desear buen viaje." }
+  ],
+  "vocabulary": [
+    { "word": "cruise", "es": "crucero" },
+    { "word": "ship", "es": "barco" },
+    { "word": "deck", "es": "cubierta" },
+    { "word": "cabin", "es": "camarote" },
+    { "word": "port", "es": "puerto" },
+    { "word": "captain", "es": "capitán" },
+    { "word": "crew", "es": "tripulación" },
+    { "word": "sail", "es": "navegar / zarpar" },
+    { "word": "board", "es": "abordar" },
+    { "word": "seasick", "es": "mareado (en barco)" },
+    { "word": "life jacket", "es": "chaleco salvavidas" },
+    { "word": "sunset", "es": "puesta de sol" },
+    { "word": "dolphins", "es": "delfines" },
+    { "word": "whale", "es": "ballena" },
+    { "word": "shore excursion", "es": "excursión en tierra" },
+    { "word": "buffet", "es": "bufé" },
+    { "word": "horizon", "es": "horizonte" }
+  ],
+  "phrases": [
+    { "phrase": "We're leaving on Friday.", "es": "Salimos el viernes." },
+    { "phrase": "What are you doing this weekend?", "es": "¿Qué vas a hacer este fin de semana?" },
+    { "phrase": "I'm going on a cruise!", "es": "¡Me voy de crucero!" },
+    { "phrase": "Where is our cabin?", "es": "¿Dónde está nuestro camarote?" },
+    { "phrase": "The ship sails at five.", "es": "El barco zarpa a las cinco." },
+    { "phrase": "Let's go up on deck.", "es": "Subamos a la cubierta." },
+    { "phrase": "I feel a little seasick.", "es": "Estoy un poco mareada." },
+    { "phrase": "Look, dolphins!", "es": "¡Mira, delfines!" },
+    { "phrase": "What a beautiful sunset!", "es": "¡Qué puesta de sol tan bonita!" },
+    { "phrase": "We're arriving in Ensenada tomorrow.", "es": "Llegamos a Ensenada mañana." },
+    { "phrase": "Are you doing a shore excursion?", "es": "¿Van a hacer una excursión en tierra?" },
+    { "phrase": "Bon voyage!", "es": "¡Buen viaje!" }
+  ],
+  "qa": [
+    { "question": { "en": "Which sentence describes a fixed arrangement?", "es": "¿Qué oración describe un plan fijo?" }, "options": ["We're sailing at five tomorrow.", "We sail yesterday.", "We sailing tomorrow.", "We are sail at five."], "correct": 0, "explanation": { "en": "Present continuous for arrangements: we're sailing.", "es": "Presente continuo para planes fijos: we're sailing." } },
+    { "question": { "en": "Choose the correct question about plans.", "es": "Elige la pregunta correcta sobre planes." }, "options": ["What are you doing on Saturday?", "What do you doing on Saturday?", "What you are doing on Saturday?", "What are you do on Saturday?"], "correct": 0, "explanation": { "en": "What + are you + verb-ing?", "es": "What + are you + verbo-ing?" } },
+    { "question": { "en": "Your room on a ship is a…", "es": "Tu cuarto en un barco es un…" }, "options": ["cabin", "deck", "port", "crew"], "correct": 0, "explanation": { "en": "Cabin = camarote.", "es": "Cabin = camarote." } },
+    { "question": { "en": "You feel sick because of the movement of the ship. You are…", "es": "Te sientes mal por el movimiento del barco. Estás…" }, "options": ["seasick", "homesick", "carsick only", "sunburned"], "correct": 0, "explanation": { "en": "Seasick = mareado en el mar.", "es": "Seasick = mareado en el mar." } },
+    { "question": { "en": "The open floor outside on top of the ship is the…", "es": "El piso exterior en la parte de arriba del barco es la…" }, "options": ["deck", "cabin", "buffet", "captain"], "correct": 0, "explanation": { "en": "Deck = cubierta.", "es": "Deck = cubierta." } },
+    { "question": { "en": "All the people who work on a ship are the…", "es": "Todas las personas que trabajan en un barco son la…" }, "options": ["crew", "cruise", "port", "shore"], "correct": 0, "explanation": { "en": "Crew = tripulación.", "es": "Crew = tripulación." } },
+    { "question": { "en": "Your friend is going on a trip. You say:", "es": "Tu amiga se va de viaje. Le dices:" }, "options": ["Bon voyage!", "Get well soon!", "Happy anniversary!", "Good night!"], "correct": 0, "explanation": { "en": "Bon voyage = have a good trip.", "es": "Bon voyage = buen viaje." } },
+    { "question": { "en": "Complete: \"I'm ___ Linda at six tomorrow.\" (it's arranged)", "es": "Completa: «I'm ___ Linda at six tomorrow.» (está acordado)" }, "options": ["meeting", "meet", "met", "to meet"], "correct": 0, "explanation": { "en": "Arrangement → present continuous: I'm meeting.", "es": "Plan acordado → presente continuo: I'm meeting." } }
+  ],
+  "story": {
+    "title": "Three Days at Sea",
+    "text": "Linda has a surprise for Carmen's birthday: two tickets for a short cruise. \"We're leaving on Friday at five and we're arriving in Ensenada on Saturday morning!\" Carmen can't believe it. \"Ensenada? I'm going to Mexico on a ship!\" On Friday they board the ship. Their cabin is small but it has a round window. \"Let's go up on deck,\" says Linda. The ship sails out of the port and San Diego gets smaller. At sunset, someone shouts, \"Look, dolphins!\" Ten dolphins are jumping next to the ship. That night, the sea is rough and Carmen feels a little seasick. A member of the crew gives her some crackers. \"Stay in the middle of the ship and look at the horizon.\" On Saturday, they're doing a shore excursion: fish tacos and a walk by the sea. \"Linda,\" says Carmen, \"this is the best birthday present ever.\"",
+    "es": "Linda tiene una sorpresa para el cumpleaños de Carmen: dos boletos para un crucero corto. «¡Salimos el viernes a las cinco y llegamos a Ensenada el sábado en la mañana!» Carmen no lo puede creer. «¿Ensenada? ¡Voy a ir a México en barco!» El viernes abordan el barco. Su camarote es pequeño, pero tiene una ventana redonda. «Subamos a la cubierta», dice Linda. El barco zarpa del puerto y San Diego se hace más pequeño. En la puesta de sol, alguien grita: «¡Miren, delfines!» Diez delfines saltan junto al barco. Esa noche el mar está agitado y Carmen se marea un poco. Alguien de la tripulación le da unas galletas saladas. «Quédese en el centro del barco y mire el horizonte.» El sábado van a hacer una excursión en tierra: tacos de pescado y un paseo junto al mar. «Linda», dice Carmen, «este es el mejor regalo de cumpleaños de mi vida.»",
+    "highlighted_words": ["cruise", "We're leaving on Friday", "we're arriving in Ensenada", "board the ship", "cabin", "Let's go up on deck", "sails", "port", "sunset", "dolphins", "seasick", "crew", "horizon", "they're doing a shore excursion"]
+  },
+  "arrange": [
+    { "sentence": "We are leaving on Friday", "es": "Salimos el viernes." },
+    { "sentence": "What are you doing this weekend", "es": "¿Qué vas a hacer este fin de semana?" },
+    { "sentence": "The ship sails at five", "es": "El barco zarpa a las cinco." },
+    { "sentence": "I feel a little seasick", "es": "Estoy un poco mareada." },
+    { "sentence": "Let's go up on deck", "es": "Subamos a la cubierta." },
+    { "sentence": "We are arriving in Ensenada tomorrow", "es": "Llegamos a Ensenada mañana." }
+  ],
+  "translate": [
+    { "answer": "I am going on a cruise", "es": "Me voy de crucero" },
+    { "answer": "Where is our cabin", "es": "¿Dónde está nuestro camarote?" },
+    { "answer": "Look, dolphins", "es": "Mira, delfines" },
+    { "answer": "What a beautiful sunset", "es": "¡Qué puesta de sol tan bonita!" },
+    { "answer": "We are leaving tomorrow", "es": "Salimos mañana" },
+    { "answer": "I feel seasick", "es": "Estoy mareada" }
+  ]
+}

@@ -20,7 +20,7 @@ const UI_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
 /** Languages lesson content can be translated into (same list as the profile setting) */
 const TRANSLATION_LANGUAGES = ['es', 'en', 'pt', 'fr', 'de', 'it']
 
-const LEARNING_LANGUAGES = ['es', 'fr', 'de', 'pt', 'it', 'ja']
+const LEARNING_LANGUAGES = ['en', 'es', 'fr', 'de', 'pt', 'it', 'ja']
 
 const MOTIVATIONS = [
   { code: 'travel',  icon: '✈️', highlight: true },
@@ -33,6 +33,7 @@ const MOTIVATIONS = [
 
 // ISO 3166 region codes; names are localized with Intl.DisplayNames
 const DESTINATIONS: Record<string, string[]> = {
+  en: ['US', 'GB', 'CA', 'AU', 'IE', 'NZ'],
   es: ['MX', 'ES', 'CO', 'AR', 'PE', 'CU', 'CR', 'CL'],
   fr: ['FR', 'CA', 'BE', 'CH', 'MA', 'SN'],
   de: ['DE', 'AT', 'CH', 'LU'],
@@ -60,6 +61,14 @@ const PHRASE_EMOJI: Record<PhraseKey, string> = {
 
 // [key, phrase, phonetic] — the meaning comes from the UI messages (onboarding.phrase_*)
 const SURVIVAL_PHRASES: Record<string, Array<[PhraseKey, string, string]>> = {
+  // Phonetics spelled for Spanish speakers, the main audience of the English course
+  en: [
+    ['bathroom',   'Where is the bathroom?',           'güer is de bázrum'],
+    ['price',      'How much is this?',                'jáu mach is dis'],
+    ['dont_speak', "I don't speak English well.",      'ái dont spik ínglish güel'],
+    ['help',       'Can you help me?',                 'can iú jelp mi'],
+    ['bill',       'The check, please.',               'de chek, plis'],
+  ],
   es: [
     ['bathroom',   '¿Dónde está el baño?',            'don-de es-ta el ba-nyo'],
     ['price',      '¿Cuánto cuesta esto?',             'kwan-to kwes-ta es-to'],

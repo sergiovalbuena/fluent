@@ -301,7 +301,8 @@
     "start": "C'est parti ! 🚀",
     "saving": "Préparation...",
     "done": "Tout est prêt ! On commence. 🚀",
-    "save_error": "Impossible d'enregistrer tes choix. Réessaie."
+    "save_error": "Impossible d'enregistrer tes choix. Réessaie.",
+    "lang_en": "La langue la plus utilisée au monde"
   },
   "saved": {
     "tab_items": "Mots et phrases",

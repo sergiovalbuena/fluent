@@ -1,0 +1,85 @@
+{
+  "lesson": 52,
+  "slug": "lesson-52",
+  "icon": "🚂",
+  "title": { "en": "Traveling by train", "es": "Viajar en tren" },
+  "grammar": [
+    { "structure": "What time does … leave / arrive?", "example": "What time does the train to Los Angeles leave?", "en": "Present simple for timetables", "es": "Presente simple para horarios" },
+    { "structure": "at / on / in for time", "example": "at 9:15, on Tuesday, in the morning", "en": "Prepositions of time (review)", "es": "Preposiciones de tiempo (repaso)" },
+    { "structure": "from … to …", "example": "The train goes from San Diego to Los Angeles.", "en": "Routes", "es": "Rutas" },
+    { "structure": "Which platform…?", "example": "Which platform does it leave from?", "en": "Asking for the platform", "es": "Preguntar por el andén" },
+    { "structure": "miss / catch the train", "example": "Hurry, or we'll miss the train!", "en": "Catching and missing transport", "es": "Alcanzar y perder el transporte" }
+  ],
+  "tips": [
+    { "en": "Timetables use the present simple even for the future: \"The train leaves at 9:15 tomorrow.\"", "es": "Los horarios usan el presente simple aunque hablen del futuro: «The train leaves at 9:15 tomorrow.»" },
+    { "en": "The train from San Diego to Los Angeles runs along the coast — sit on the left side going north for ocean views.", "es": "El tren de San Diego a Los Ángeles va por la costa: siéntate del lado izquierdo yendo al norte para ver el mar." },
+    { "en": "\"Catch\" the train = llegar a tiempo; \"miss\" the train = perderlo.", "es": "«Catch» the train = alcanzar el tren; «miss» the train = perderlo." },
+    { "en": "Keep your ticket: the conductor will check it on board.", "es": "Guarda tu boleto: el revisor lo va a verificar a bordo." },
+    { "en": "\"All aboard!\" is what the conductor says before the train leaves.", "es": "«All aboard!» es lo que dice el revisor antes de que salga el tren (¡todos a bordo!)." }
+  ],
+  "vocabulary": [
+    { "word": "train station", "es": "estación de tren" },
+    { "word": "platform", "es": "andén" },
+    { "word": "track", "es": "vía" },
+    { "word": "timetable", "es": "horario" },
+    { "word": "conductor", "es": "revisor / conductor del tren" },
+    { "word": "car", "es": "vagón" },
+    { "word": "leave", "es": "salir / partir" },
+    { "word": "arrive", "es": "llegar" },
+    { "word": "catch", "es": "alcanzar / tomar" },
+    { "word": "miss", "es": "perder (el tren)" },
+    { "word": "on time", "es": "a tiempo" },
+    { "word": "delay", "es": "retraso" },
+    { "word": "coast", "es": "costa" },
+    { "word": "scenery", "es": "paisaje" },
+    { "word": "luggage rack", "es": "portaequipajes" },
+    { "word": "stop", "es": "parada" },
+    { "word": "round trip", "es": "viaje redondo" }
+  ],
+  "phrases": [
+    { "phrase": "What time does the train leave?", "es": "¿A qué hora sale el tren?" },
+    { "phrase": "It leaves at nine fifteen.", "es": "Sale a las nueve y cuarto." },
+    { "phrase": "What time does it arrive in Los Angeles?", "es": "¿A qué hora llega a Los Ángeles?" },
+    { "phrase": "Which platform does it leave from?", "es": "¿De qué andén sale?" },
+    { "phrase": "Platform two.", "es": "Andén dos." },
+    { "phrase": "Is this the train to Los Angeles?", "es": "¿Este es el tren a Los Ángeles?" },
+    { "phrase": "Hurry, we'll miss the train!", "es": "¡Apúrate, vamos a perder el tren!" },
+    { "phrase": "We caught it just in time.", "es": "Lo alcanzamos justo a tiempo." },
+    { "phrase": "Tickets, please.", "es": "Boletos, por favor." },
+    { "phrase": "How many stops are there?", "es": "¿Cuántas paradas hay?" },
+    { "phrase": "The scenery is beautiful.", "es": "El paisaje es precioso." },
+    { "phrase": "All aboard!", "es": "¡Todos a bordo!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"The train ___ at 9:15 tomorrow.\" (timetable)", "es": "Completa: «The train ___ at 9:15 tomorrow.» (horario)" }, "options": ["leaves", "is leave", "leaving", "will leaving"], "correct": 0, "explanation": { "en": "Timetables use the present simple.", "es": "Los horarios usan el presente simple." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["What time does the train arrive?", "What time the train arrives?", "What time does the train arrives?", "What time is the train arrive?"], "correct": 0, "explanation": { "en": "What time does + subject + verb (no -s)?", "es": "What time does + sujeto + verbo (sin -s)?" } },
+    { "question": { "en": "Complete: \"The train leaves ___ Tuesday ___ the morning.\"", "es": "Completa: «The train leaves ___ Tuesday ___ the morning.»" }, "options": ["on / in", "in / on", "at / in", "on / at"], "correct": 0, "explanation": { "en": "on + day, in + part of the day.", "es": "on + día, in + parte del día." } },
+    { "question": { "en": "You arrive after the train left. You…", "es": "Llegas después de que salió el tren. Tú…" }, "options": ["missed the train", "caught the train", "boarded the train", "left the train"], "correct": 0, "explanation": { "en": "Miss = perder.", "es": "Miss = perder." } },
+    { "question": { "en": "The place where you wait for the train is the…", "es": "El lugar donde esperas el tren es el…" }, "options": ["platform", "track", "deck", "gate"], "correct": 0, "explanation": { "en": "Platform = andén.", "es": "Platform = andén." } },
+    { "question": { "en": "The person who checks tickets on the train is the…", "es": "La persona que revisa los boletos en el tren es el…" }, "options": ["conductor", "captain", "pilot", "teller"], "correct": 0, "explanation": { "en": "Conductor = revisor.", "es": "Conductor = revisor." } },
+    { "question": { "en": "\"We caught it just in time\" means…", "es": "«We caught it just in time» significa…" }, "options": ["We got on just before it left.", "We missed it.", "We arrived very early.", "We canceled the trip."], "correct": 0, "explanation": { "en": "Catch = llegar a tiempo para tomarlo.", "es": "Catch = llegar a tiempo para tomarlo." } },
+    { "question": { "en": "What do you see from the window: mountains, sea, fields. That's the…", "es": "Lo que ves por la ventana: montañas, mar, campos. Eso es el…" }, "options": ["scenery", "timetable", "luggage", "track"], "correct": 0, "explanation": { "en": "Scenery = paisaje.", "es": "Scenery = paisaje." } }
+  ],
+  "story": {
+    "title": "The Coast Train",
+    "text": "Kenji invites Carmen and Leo to visit a Japanese garden in Los Angeles. They take the train. \"What time does the train leave?\" asks Carmen at the station. \"At nine fifteen from platform two,\" says the man at the ticket office. \"And what time does it arrive in Los Angeles?\" \"At twelve oh five.\" It's nine ten, and they're still buying coffee. \"Hurry, Grandma, we'll miss the train!\" They run to platform two. The conductor shouts, \"All aboard!\" They catch it just in time. On the train, Leo sits by the window on the left side. The train goes along the coast, and the scenery is beautiful: the ocean, surfers and small beach towns. \"Tickets, please,\" says the conductor. Carmen shows the tickets. \"How many stops are there?\" \"Eight more. Enjoy the ride!\" Leo presses his face to the window. \"Grandma, this is better than a plane!\"",
+    "es": "Kenji invita a Carmen y a Leo a visitar un jardín japonés en Los Ángeles. Van en tren. «¿A qué hora sale el tren?», pregunta Carmen en la estación. «A las nueve y cuarto, del andén dos», dice el señor de la taquilla. «¿Y a qué hora llega a Los Ángeles?» «A las doce y cinco.» Son las nueve y diez, y todavía están comprando café. «¡Apúrate, abuela, vamos a perder el tren!» Corren al andén dos. El revisor grita: «¡Todos a bordo!» Lo alcanzan justo a tiempo. En el tren, Leo se sienta junto a la ventana, del lado izquierdo. El tren va por la costa y el paisaje es precioso: el mar, surfistas y pueblitos de playa. «Boletos, por favor», dice el revisor. Carmen enseña los boletos. «¿Cuántas paradas hay?» «Ocho más. ¡Disfruten el viaje!» Leo pega la cara a la ventana. «¡Abuela, esto es mejor que el avión!»",
+    "highlighted_words": ["What time does the train leave", "platform", "what time does it arrive", "we'll miss the train", "conductor", "All aboard", "catch it just in time", "coast", "scenery", "Tickets, please", "How many stops are there"]
+  },
+  "arrange": [
+    { "sentence": "What time does the train leave", "es": "¿A qué hora sale el tren?" },
+    { "sentence": "It leaves from platform two", "es": "Sale del andén dos." },
+    { "sentence": "The train arrives at twelve", "es": "El tren llega a las doce." },
+    { "sentence": "Hurry or we will miss the train", "es": "Apúrate o vamos a perder el tren." },
+    { "sentence": "Is this the train to Los Angeles", "es": "¿Este es el tren a Los Ángeles?" },
+    { "sentence": "The scenery is beautiful", "es": "El paisaje es precioso." }
+  ],
+  "translate": [
+    { "answer": "What time does it leave", "es": "¿A qué hora sale?" },
+    { "answer": "Which platform is it", "es": "¿Qué andén es?" },
+    { "answer": "We missed the train", "es": "Perdimos el tren" },
+    { "answer": "Tickets, please", "es": "Boletos, por favor" },
+    { "answer": "The train leaves on Monday", "es": "El tren sale el lunes" },
+    { "answer": "How many stops are there", "es": "¿Cuántas paradas hay?" }
+  ]
+}

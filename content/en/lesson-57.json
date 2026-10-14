@@ -1,0 +1,85 @@
+{
+  "lesson": 57,
+  "slug": "lesson-57",
+  "icon": "💎",
+  "title": { "en": "At the jewelry store", "es": "En la joyería" },
+  "grammar": [
+    { "structure": "who (people)", "example": "The woman who works here is very kind.", "en": "Relative clauses with \"who\"", "es": "Oraciones de relativo con «who» (personas)" },
+    { "structure": "that / which (things)", "example": "I want the necklace that has a small heart.", "en": "Relative clauses with \"that\" and \"which\"", "es": "Oraciones de relativo con «that» y «which» (cosas)" },
+    { "structure": "where (places)", "example": "This is the store where I bought my ring.", "en": "Relative clauses with \"where\"", "es": "Oraciones de relativo con «where» (lugares)" },
+    { "structure": "made of + material", "example": "It's made of silver.", "en": "Talking about materials", "es": "Hablar de materiales" },
+    { "structure": "Can I try it on? / Does it come in…?", "example": "Does it come in gold?", "en": "Asking about jewelry", "es": "Preguntar por joyas" }
+  ],
+  "tips": [
+    { "en": "\"Who\" is for people, \"that\" for people or things, \"which\" for things. In conversation, \"that\" is the most common.", "es": "«Who» es para personas, «that» para personas o cosas, «which» para cosas. Al hablar, «that» es el más común." },
+    { "en": "Relative clauses join two ideas: \"I have a friend. She lives in Texas.\" → \"I have a friend who lives in Texas.\"", "es": "Las oraciones de relativo unen dos ideas: «I have a friend. She lives in Texas.» → «I have a friend who lives in Texas.»" },
+    { "en": "\"Engraving\" is writing names or dates on jewelry. Many stores do it for free.", "es": "«Engraving» es grabar nombres o fechas en una joya. Muchas tiendas lo hacen gratis." },
+    { "en": "Ask for a \"certificate\" or \"warranty\" when you buy expensive jewelry.", "es": "Pide un «certificate» o «warranty» (garantía) cuando compres joyas caras." },
+    { "en": "\"Made of\" tells the material: made of gold, made of silver, made of wood.", "es": "«Made of» indica el material: made of gold, made of silver, made of wood." }
+  ],
+  "vocabulary": [
+    { "word": "jewelry store", "es": "joyería" },
+    { "word": "jeweler", "es": "joyero" },
+    { "word": "necklace", "es": "collar" },
+    { "word": "bracelet", "es": "pulsera" },
+    { "word": "earrings", "es": "aretes" },
+    { "word": "ring", "es": "anillo" },
+    { "word": "watch", "es": "reloj (de pulsera)" },
+    { "word": "chain", "es": "cadena" },
+    { "word": "pendant", "es": "dije / colgante" },
+    { "word": "gold", "es": "oro" },
+    { "word": "silver", "es": "plata" },
+    { "word": "diamond", "es": "diamante" },
+    { "word": "pearl", "es": "perla" },
+    { "word": "engrave", "es": "grabar" },
+    { "word": "warranty", "es": "garantía" },
+    { "word": "repair", "es": "reparar / reparación" },
+    { "word": "who / that / which / where", "es": "que / quien / el cual / donde" }
+  ],
+  "phrases": [
+    { "phrase": "I'm looking for a necklace for my daughter.", "es": "Busco un collar para mi hija." },
+    { "phrase": "Is it made of gold or silver?", "es": "¿Es de oro o de plata?" },
+    { "phrase": "Does it come in gold?", "es": "¿Viene en oro?" },
+    { "phrase": "Can I try on the earrings?", "es": "¿Me puedo probar los aretes?" },
+    { "phrase": "I want the one that has a heart.", "es": "Quiero el que tiene un corazón." },
+    { "phrase": "Can you engrave a name on it?", "es": "¿Le puede grabar un nombre?" },
+    { "phrase": "Does it have a warranty?", "es": "¿Tiene garantía?" },
+    { "phrase": "Can you repair this watch?", "es": "¿Me puede reparar este reloj?" },
+    { "phrase": "This is the store where I bought my ring.", "es": "Esta es la tienda donde compré mi anillo." },
+    { "phrase": "The man who helped me was very kind.", "es": "El señor que me atendió fue muy amable." },
+    { "phrase": "It's a gift for someone who is very special.", "es": "Es un regalo para alguien muy especial." },
+    { "phrase": "Could you wrap it, please?", "es": "¿Me lo envuelve, por favor?" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"The woman ___ works here is very kind.\"", "es": "Completa: «The woman ___ works here is very kind.»" }, "options": ["who", "which", "where", "what"], "correct": 0, "explanation": { "en": "People → who.", "es": "Personas → who." } },
+    { "question": { "en": "Complete: \"I want the necklace ___ has a heart.\"", "es": "Completa: «I want the necklace ___ has a heart.»" }, "options": ["that", "who", "where", "what"], "correct": 0, "explanation": { "en": "Things → that / which.", "es": "Cosas → that / which." } },
+    { "question": { "en": "Complete: \"This is the store ___ I bought my ring.\"", "es": "Completa: «This is the store ___ I bought my ring.»" }, "options": ["where", "who", "which", "what"], "correct": 0, "explanation": { "en": "Places → where.", "es": "Lugares → where." } },
+    { "question": { "en": "How do you ask about the material?", "es": "¿Cómo preguntas por el material?" }, "options": ["Is it made of gold?", "Is it made from of gold?", "Is it make of gold?", "Is it gold made?"], "correct": 0, "explanation": { "en": "made of + material.", "es": "made of + material." } },
+    { "question": { "en": "Jewelry you wear on your ears is…", "es": "La joya que usas en las orejas son…" }, "options": ["earrings", "bracelets", "necklaces", "rings"], "correct": 0, "explanation": { "en": "Earrings = aretes.", "es": "Earrings = aretes." } },
+    { "question": { "en": "Writing a name on a ring is…", "es": "Escribir un nombre en un anillo es…" }, "options": ["engraving", "repairing", "wrapping", "polishing"], "correct": 0, "explanation": { "en": "Engrave = grabar.", "es": "Engrave = grabar." } },
+    { "question": { "en": "Join the sentences: \"I have a friend. She lives in Texas.\"", "es": "Une las oraciones: «I have a friend. She lives in Texas.»" }, "options": ["I have a friend who lives in Texas.", "I have a friend which lives in Texas.", "I have a friend she who lives in Texas.", "I have a friend where lives in Texas."], "correct": 0, "explanation": { "en": "Person → who replaces \"she\".", "es": "Persona → who reemplaza a «she»." } },
+    { "question": { "en": "A promise that the store will fix the product if it breaks is a…", "es": "La promesa de que la tienda arreglará el producto si se rompe es una…" }, "options": ["warranty", "receipt", "pendant", "chain"], "correct": 0, "explanation": { "en": "Warranty = garantía.", "es": "Warranty = garantía." } }
+  ],
+  "story": {
+    "title": "A Heart for Laura",
+    "text": "For Laura and Mike's anniversary, Carmen wants to give her daughter something special. She goes to a small jewelry store downtown. The jeweler is an old man who has worked there for forty years. \"I'm looking for a necklace for my daughter,\" says Carmen. He shows her many chains, pendants and earrings. Carmen points. \"I like the one that has a small heart. Is it made of gold?\" \"No, it's made of silver. But it comes in gold too.\" \"Silver is perfect. Can you engrave something on the back?\" \"Of course. What would you like?\" Carmen thinks. \"Laura, the daughter who gave me a new life.\" The jeweler looks at her. \"That's beautiful.\" A week later, at dinner, Laura opens the box and reads the words. She can't speak; she just hugs her mother. Leo whispers to Mike: \"Dad, why is everybody crying? It's a happy day!\"",
+    "es": "Para el aniversario de Laura y Mike, Carmen quiere regalarle a su hija algo especial. Va a una joyería pequeña del centro. El joyero es un señor mayor que lleva cuarenta años trabajando ahí. «Busco un collar para mi hija», dice Carmen. Él le muestra muchas cadenas, dijes y aretes. Carmen señala. «Me gusta el que tiene un corazoncito. ¿Es de oro?» «No, es de plata. Pero también viene en oro.» «La plata es perfecta. ¿Le puede grabar algo atrás?» «Claro. ¿Qué le gustaría?» Carmen piensa. «Laura, la hija que me dio una vida nueva.» El joyero la mira. «Qué bonito.» Una semana después, en la cena, Laura abre la caja y lee las palabras. No puede hablar; solo abraza a su madre. Leo le susurra a Mike: «Papá, ¿por qué todos lloran? ¡Es un día feliz!»",
+    "highlighted_words": ["jewelry store", "jeweler", "who has worked there", "necklace", "chains", "pendants", "earrings", "the one that has a small heart", "made of gold", "silver", "it comes in gold", "engrave", "the daughter who gave me a new life"]
+  },
+  "arrange": [
+    { "sentence": "I am looking for a necklace", "es": "Busco un collar." },
+    { "sentence": "The man who helped me was very kind", "es": "El señor que me atendió fue muy amable." },
+    { "sentence": "I want the one that has a heart", "es": "Quiero el que tiene un corazón." },
+    { "sentence": "This is the store where I bought my ring", "es": "Esta es la tienda donde compré mi anillo." },
+    { "sentence": "Is it made of gold or silver", "es": "¿Es de oro o de plata?" },
+    { "sentence": "Can you engrave a name on it", "es": "¿Le puede grabar un nombre?" }
+  ],
+  "translate": [
+    { "answer": "It is made of silver", "es": "Es de plata" },
+    { "answer": "Does it have a warranty", "es": "¿Tiene garantía?" },
+    { "answer": "Can I try on the earrings", "es": "¿Me puedo probar los aretes?" },
+    { "answer": "I have a friend who lives in Texas", "es": "Tengo una amiga que vive en Texas" },
+    { "answer": "Can you repair this watch", "es": "¿Me puede reparar este reloj?" },
+    { "answer": "Could you wrap it, please", "es": "¿Me lo envuelve, por favor?" }
+  ]
+}

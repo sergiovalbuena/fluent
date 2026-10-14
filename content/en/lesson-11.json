@@ -1,0 +1,87 @@
+{
+  "lesson": 11,
+  "slug": "lesson-11",
+  "icon": "🫀",
+  "title": { "en": "The human body", "es": "El cuerpo humano" },
+  "grammar": [
+    { "structure": "have / has", "example": "I have brown eyes. She has long hair.", "en": "Describing people with have/has", "es": "Describir personas con have/has" },
+    { "structure": "my … hurts / my … hurt", "example": "My back hurts. My feet hurt.", "en": "Talking about pain", "es": "Hablar de dolor" },
+    { "structure": "I have a headache / a cold", "example": "I have a headache.", "en": "Common health problems with \"have\"", "es": "Problemas de salud comunes con «have»" },
+    { "structure": "Irregular plurals", "example": "one foot → two feet, one tooth → two teeth", "en": "Some body words have irregular plurals", "es": "Algunas partes del cuerpo tienen plural irregular" },
+    { "structure": "What's wrong?", "example": "What's wrong? — My knee hurts.", "en": "Asking about a problem", "es": "Preguntar qué le pasa a alguien" }
+  ],
+  "tips": [
+    { "en": "In English we use \"my\", not \"the\": \"My head hurts\" (not \"The head hurts me\").", "es": "En inglés se usa «my», no «the»: «My head hurts» (no «The head hurts me»)." },
+    { "en": "\"Hair\" is usually uncountable: \"She has long hair\" (no \"a\", no -s).", "es": "«Hair» normalmente es incontable: «She has long hair» (sin «a» y sin -s)." },
+    { "en": "\"-ache\" means continuous pain: headache, stomachache, backache, toothache.", "es": "«-ache» significa dolor continuo: headache (cabeza), stomachache (estómago), backache (espalda), toothache (muela)." },
+    { "en": "\"I feel sick\" can mean you feel ill or that you want to vomit; context tells you which.", "es": "«I feel sick» puede significar que te sientes mal o que tienes náuseas; el contexto lo aclara." },
+    { "en": "\"Get well soon!\" is what you say or write to someone who is sick.", "es": "«Get well soon!» es lo que se dice o escribe a alguien enfermo (¡que te mejores!)." }
+  ],
+  "vocabulary": [
+    { "word": "head", "es": "cabeza" },
+    { "word": "hair", "es": "pelo / cabello" },
+    { "word": "face", "es": "cara" },
+    { "word": "eyes", "es": "ojos" },
+    { "word": "ears", "es": "orejas / oídos" },
+    { "word": "nose", "es": "nariz" },
+    { "word": "mouth", "es": "boca" },
+    { "word": "teeth", "es": "dientes" },
+    { "word": "neck", "es": "cuello" },
+    { "word": "shoulder", "es": "hombro" },
+    { "word": "arm", "es": "brazo" },
+    { "word": "hand", "es": "mano" },
+    { "word": "back", "es": "espalda" },
+    { "word": "stomach", "es": "estómago / panza" },
+    { "word": "leg", "es": "pierna" },
+    { "word": "knee", "es": "rodilla" },
+    { "word": "feet", "es": "pies" },
+    { "word": "headache", "es": "dolor de cabeza" },
+    { "word": "cold", "es": "resfriado / frío" }
+  ],
+  "phrases": [
+    { "phrase": "What's wrong?", "es": "¿Qué te pasa?" },
+    { "phrase": "My back hurts.", "es": "Me duele la espalda." },
+    { "phrase": "I have a headache.", "es": "Me duele la cabeza." },
+    { "phrase": "I have a cold.", "es": "Tengo un resfriado." },
+    { "phrase": "I don't feel well.", "es": "No me siento bien." },
+    { "phrase": "Take a rest.", "es": "Descansa." },
+    { "phrase": "Get well soon!", "es": "¡Que te mejores!" },
+    { "phrase": "She has blue eyes.", "es": "Tiene ojos azules." },
+    { "phrase": "He has short black hair.", "es": "Tiene el pelo corto y negro." },
+    { "phrase": "Wash your hands.", "es": "Lávate las manos." },
+    { "phrase": "Be careful!", "es": "¡Ten cuidado!" },
+    { "phrase": "I feel much better.", "es": "Me siento mucho mejor." }
+  ],
+  "qa": [
+    { "question": { "en": "How do you say \"Me duele la espalda\"?", "es": "¿Cómo se dice «Me duele la espalda»?" }, "options": ["My back hurts.", "The back hurts me.", "I hurt the back.", "My back hurt me."], "correct": 0, "explanation": { "en": "English uses \"my\" + body part + \"hurts\".", "es": "En inglés se usa «my» + parte del cuerpo + «hurts»." } },
+    { "question": { "en": "What is the plural of \"foot\"?", "es": "¿Cuál es el plural de «foot»?" }, "options": ["feet", "foots", "feets", "footes"], "correct": 0, "explanation": { "en": "\"Foot\" has an irregular plural: feet.", "es": "«Foot» tiene plural irregular: feet." } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["She has long hair.", "She has a long hair.", "She has long hairs.", "She is long hair."], "correct": 0, "explanation": { "en": "\"Hair\" (on your head) is uncountable: long hair.", "es": "«Hair» (de la cabeza) es incontable: long hair." } },
+    { "question": { "en": "You see with your…", "es": "Ves con tus…" }, "options": ["eyes", "ears", "hands", "knees"], "correct": 0, "explanation": { "en": "We see with our eyes and hear with our ears.", "es": "Vemos con los ojos (eyes) y oímos con los oídos (ears)." } },
+    { "question": { "en": "Your friend is sick. What do you write?", "es": "Tu amiga está enferma. ¿Qué le escribes?" }, "options": ["Get well soon!", "Have a good one!", "Nice to meet you!", "Happy birthday!"], "correct": 0, "explanation": { "en": "\"Get well soon!\" wishes someone a quick recovery.", "es": "«Get well soon!» le desea a alguien una pronta recuperación." } },
+    { "question": { "en": "Complete: \"My feet ___.\"", "es": "Completa: «My feet ___.»" }, "options": ["hurt", "hurts", "hurting", "are hurt me"], "correct": 0, "explanation": { "en": "\"Feet\" is plural, so the verb has no -s: my feet hurt.", "es": "«Feet» es plural, así que el verbo va sin -s: my feet hurt." } },
+    { "question": { "en": "Which one is a pain in your head?", "es": "¿Cuál es un dolor en la cabeza?" }, "options": ["headache", "stomachache", "backache", "toothache"], "correct": 0, "explanation": { "en": "Head + ache = headache.", "es": "Head + ache = headache." } },
+    { "question": { "en": "Someone looks sad and tired. What can you ask?", "es": "Alguien se ve triste y cansado. ¿Qué puedes preguntar?" }, "options": ["What's wrong?", "What do you do?", "Where are you from?", "How old are you?"], "correct": 0, "explanation": { "en": "\"What's wrong?\" asks about a problem.", "es": "«What's wrong?» pregunta qué problema tiene." } }
+  ],
+  "story": {
+    "title": "A Bad Back",
+    "text": "This morning Carmen gets up slowly. Her back hurts. She has a headache too. Leo comes into the kitchen. \"Grandma, what's wrong?\" \"Oh, my back hurts, and I have a headache. I don't feel well.\" Leo puts his small hand on her shoulder. \"Take a rest, Grandma. I can make breakfast.\" Carmen smiles. Leo makes toast and a cup of tea. It is not perfect, but it is made with love. In the afternoon Linda calls. \"I have a cold,\" says Linda. \"My nose is red and my eyes hurt.\" \"Oh no! Get well soon, Linda!\" \"You too!\" In the evening, Carmen feels much better. \"Leo,\" she says, \"you are a very good nurse, like your mother.\"",
+    "es": "Esta mañana Carmen se levanta despacio. Le duele la espalda. También le duele la cabeza. Leo entra a la cocina. «Abuela, ¿qué te pasa?» «Ay, me duele la espalda y me duele la cabeza. No me siento bien.» Leo pone su mano pequeña en el hombro de ella. «Descansa, abuela. Yo puedo hacer el desayuno.» Carmen sonríe. Leo hace pan tostado y una taza de té. No es perfecto, pero está hecho con amor. En la tarde llama Linda. «Tengo un resfriado», dice Linda. «Tengo la nariz roja y me duelen los ojos.» «¡Ay, no! ¡Que te mejores, Linda!» «¡Tú también!» En la noche, Carmen se siente mucho mejor. «Leo», dice, «eres un muy buen enfermero, como tu mamá.»",
+    "highlighted_words": ["Her back hurts", "headache", "what's wrong", "I don't feel well", "hand", "shoulder", "Take a rest", "I have a cold", "nose", "eyes", "Get well soon", "feels much better"]
+  },
+  "arrange": [
+    { "sentence": "My back hurts a lot", "es": "Me duele mucho la espalda." },
+    { "sentence": "I have a terrible headache", "es": "Tengo un dolor de cabeza terrible." },
+    { "sentence": "She has long black hair", "es": "Ella tiene el pelo largo y negro." },
+    { "sentence": "What is wrong with your knee", "es": "¿Qué le pasa a tu rodilla?" },
+    { "sentence": "I feel much better today", "es": "Hoy me siento mucho mejor." },
+    { "sentence": "Wash your hands before dinner", "es": "Lávate las manos antes de cenar." }
+  ],
+  "translate": [
+    { "answer": "My back hurts", "es": "Me duele la espalda" },
+    { "answer": "I have a headache", "es": "Me duele la cabeza" },
+    { "answer": "She has blue eyes", "es": "Ella tiene ojos azules" },
+    { "answer": "I do not feel well", "es": "No me siento bien" },
+    { "answer": "Get well soon", "es": "Que te mejores" },
+    { "answer": "My feet hurt", "es": "Me duelen los pies" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 27,
+  "slug": "lesson-27",
+  "icon": "🌷",
+  "title": { "en": "Flowers and the garden", "es": "Las flores y el jardín" },
+  "grammar": [
+    { "structure": "didn't + verb", "example": "I didn't water the plants yesterday.", "en": "Negative past simple", "es": "Pasado simple negativo" },
+    { "structure": "Did you…? — Yes, I did. / No, I didn't.", "example": "Did you plant the roses? — Yes, I did.", "en": "Past simple questions", "es": "Preguntas en pasado simple" },
+    { "structure": "did + base verb (no -ed)", "example": "Did she buy seeds? (not \"Did she bought\")", "en": "After \"did\", the verb goes back to its base form", "es": "Después de «did», el verbo vuelve a su forma base" },
+    { "structure": "What did you do…?", "example": "What did you do on the weekend?", "en": "Wh- questions in the past", "es": "Preguntas con wh- en pasado" },
+    { "structure": "need to + verb", "example": "The plants need to get more sun.", "en": "Talking about needs", "es": "Hablar de necesidades" }
+  ],
+  "tips": [
+    { "en": "The past is only in \"did\": \"Did you water…?\", never \"Did you watered…?\".", "es": "El pasado va solo en «did»: «Did you water…?», nunca «Did you watered…?»." },
+    { "en": "\"What did you do on the weekend?\" is a classic Monday question at work or class.", "es": "«What did you do on the weekend?» es la pregunta clásica del lunes en el trabajo o en clase." },
+    { "en": "\"Water\" is also a verb: \"water the plants\" = regar las plantas.", "es": "«Water» también es verbo: «water the plants» = regar las plantas." },
+    { "en": "Many US cities have \"community gardens\" where neighbors grow vegetables together.", "es": "Muchas ciudades de Estados Unidos tienen «community gardens» donde los vecinos cultivan verduras juntos." },
+    { "en": "\"Weeds\" are the plants you don't want in your garden.", "es": "«Weeds» son las malas hierbas que no quieres en tu jardín." }
+  ],
+  "vocabulary": [
+    { "word": "flower", "es": "flor" },
+    { "word": "rose", "es": "rosa" },
+    { "word": "sunflower", "es": "girasol" },
+    { "word": "plant", "es": "planta / plantar" },
+    { "word": "tree", "es": "árbol" },
+    { "word": "grass", "es": "pasto" },
+    { "word": "leaf", "es": "hoja" },
+    { "word": "seeds", "es": "semillas" },
+    { "word": "soil", "es": "tierra (para plantas)" },
+    { "word": "pot", "es": "maceta" },
+    { "word": "water", "es": "regar / agua" },
+    { "word": "grow", "es": "crecer / cultivar" },
+    { "word": "weeds", "es": "malas hierbas" },
+    { "word": "hose", "es": "manguera" },
+    { "word": "gardener", "es": "jardinero" },
+    { "word": "bloom", "es": "florecer" },
+    { "word": "herbs", "es": "hierbas (de cocina)" }
+  ],
+  "phrases": [
+    { "phrase": "What did you do on the weekend?", "es": "¿Qué hiciste el fin de semana?" },
+    { "phrase": "I planted some flowers.", "es": "Planté unas flores." },
+    { "phrase": "Did you water the plants?", "es": "¿Regaste las plantas?" },
+    { "phrase": "No, I didn't. I forgot.", "es": "No. Se me olvidó." },
+    { "phrase": "The roses are blooming.", "es": "Las rosas están floreciendo." },
+    { "phrase": "This plant needs more sun.", "es": "Esta planta necesita más sol." },
+    { "phrase": "Don't step on the grass.", "es": "No pises el pasto." },
+    { "phrase": "I grow my own herbs.", "es": "Cultivo mis propias hierbas." },
+    { "phrase": "What a beautiful garden!", "es": "¡Qué jardín tan bonito!" },
+    { "phrase": "Did it rain last night?", "es": "¿Llovió anoche?" },
+    { "phrase": "I didn't have time.", "es": "No tuve tiempo." },
+    { "phrase": "Can I have some seeds?", "es": "¿Me das unas semillas?" }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Did you water the plants?", "Did you watered the plants?", "You watered the plants did?", "Do you watered the plants?"], "correct": 0, "explanation": { "en": "Did + base verb: Did you water…?", "es": "Did + verbo base: Did you water…?" } },
+    { "question": { "en": "Choose the correct negative.", "es": "Elige la negación correcta." }, "options": ["I didn't plant the roses.", "I didn't planted the roses.", "I no planted the roses.", "I not plant the roses."], "correct": 0, "explanation": { "en": "didn't + base verb.", "es": "didn't + verbo base." } },
+    { "question": { "en": "Short answer: \"Did you buy seeds?\" (no)", "es": "Respuesta corta: «Did you buy seeds?» (no)" }, "options": ["No, I didn't.", "No, I don't.", "No, I wasn't.", "No, I didn't buy."], "correct": 0, "explanation": { "en": "Short answer: No, I didn't.", "es": "Respuesta corta: No, I didn't." } },
+    { "question": { "en": "Complete: \"What ___ you do yesterday?\"", "es": "Completa: «What ___ you do yesterday?»" }, "options": ["did", "do", "were", "was"], "correct": 0, "explanation": { "en": "Past questions use \"did\".", "es": "Las preguntas en pasado usan «did»." } },
+    { "question": { "en": "You put soil and a plant in a…", "es": "Pones tierra y una planta en una…" }, "options": ["pot", "hose", "leaf", "rose"], "correct": 0, "explanation": { "en": "A pot = una maceta.", "es": "A pot = una maceta." } },
+    { "question": { "en": "\"Water the plants\" means…", "es": "«Water the plants» significa…" }, "options": ["regar las plantas", "plantar agua", "beber agua", "lavar las plantas con jabón"], "correct": 0, "explanation": { "en": "\"Water\" as a verb = regar.", "es": "«Water» como verbo = regar." } },
+    { "question": { "en": "Plants you don't want in your garden are…", "es": "Las plantas que no quieres en tu jardín son…" }, "options": ["weeds", "herbs", "roses", "seeds"], "correct": 0, "explanation": { "en": "Weeds = malas hierbas.", "es": "Weeds = malas hierbas." } },
+    { "question": { "en": "Complete: \"She ___ go to the garden yesterday.\"", "es": "Completa: «She ___ go to the garden yesterday.»" }, "options": ["didn't", "doesn't", "don't", "wasn't"], "correct": 0, "explanation": { "en": "Past negative: didn't + go.", "es": "Negativo en pasado: didn't + go." } }
+  ],
+  "story": {
+    "title": "The Community Garden",
+    "text": "On Monday, Mr. Park asked the class, \"What did you do on the weekend?\" Kenji said, \"I didn't do much. I watched TV.\" Then it was Carmen's turn. \"On Saturday I went to the community garden with Linda. We planted tomatoes, chiles and herbs.\" \"Did you grow chiles in Mexico too?\" asked Mr. Park. \"Yes, I did. My mother had a big garden with roses and sunflowers.\" \"And did you water the plants on Sunday?\" asked Ana. Carmen laughed. \"No, I didn't. It rained!\" After class, Kenji asked, \"Can I visit the garden? In Japan my grandfather grew vegetables.\" \"Of course,\" said Carmen. \"Come on Saturday. But bring a hose — and patience. The weeds grow faster than the tomatoes!\"",
+    "es": "El lunes, el señor Park le preguntó a la clase: «¿Qué hicieron el fin de semana?» Kenji dijo: «No hice mucho. Vi la tele.» Luego le tocó a Carmen. «El sábado fui al huerto comunitario con Linda. Plantamos jitomates, chiles y hierbas.» «¿También cultivaba chiles en México?», preguntó el señor Park. «Sí. Mi mamá tenía un jardín grande con rosas y girasoles.» «¿Y regaron las plantas el domingo?», preguntó Ana. Carmen se rió. «No. ¡Llovió!» Después de clase, Kenji preguntó: «¿Puedo visitar el huerto? En Japón mi abuelo cultivaba verduras.» «Claro», dijo Carmen. «Ven el sábado. Pero trae una manguera… y paciencia. ¡La mala hierba crece más rápido que los jitomates!»",
+    "highlighted_words": ["What did you do on the weekend", "I didn't do much", "community garden", "planted", "herbs", "Did you grow", "Yes, I did", "roses", "sunflowers", "did you water the plants", "No, I didn't", "hose", "weeds"]
+  },
+  "arrange": [
+    { "sentence": "What did you do on the weekend", "es": "¿Qué hiciste el fin de semana?" },
+    { "sentence": "I did not water the plants", "es": "No regué las plantas." },
+    { "sentence": "Did you plant the roses", "es": "¿Plantaste las rosas?" },
+    { "sentence": "This plant needs more sun", "es": "Esta planta necesita más sol." },
+    { "sentence": "My mother had a big garden", "es": "Mi madre tenía un jardín grande." },
+    { "sentence": "The weeds grow very fast", "es": "Las malas hierbas crecen muy rápido." }
+  ],
+  "translate": [
+    { "answer": "I planted some flowers", "es": "Planté unas flores" },
+    { "answer": "Did you water the plants", "es": "¿Regaste las plantas?" },
+    { "answer": "I did not have time", "es": "No tuve tiempo" },
+    { "answer": "What did you do yesterday", "es": "¿Qué hiciste ayer?" },
+    { "answer": "The roses are beautiful", "es": "Las rosas están hermosas" },
+    { "answer": "It did not rain", "es": "No llovió" }
+  ]
+}

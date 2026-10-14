@@ -1,0 +1,85 @@
+{
+  "lesson": 32,
+  "slug": "lesson-32",
+  "icon": "🛫",
+  "title": { "en": "At the airport", "es": "En el aeropuerto" },
+  "grammar": [
+    { "structure": "have to + verb", "example": "You have to take off your shoes.", "en": "Obligation with \"have to\"", "es": "Obligación con «have to» (tener que)" },
+    { "structure": "has to (he / she)", "example": "She has to show her ID.", "en": "\"Has to\" with he/she/it", "es": "«Has to» con he/she/it" },
+    { "structure": "don't have to", "example": "You don't have to print your boarding pass.", "en": "No obligation (it's not necessary)", "es": "Sin obligación (no es necesario)" },
+    { "structure": "Do I have to…?", "example": "Do I have to check this bag?", "en": "Asking about rules", "es": "Preguntar por reglas" },
+    { "structure": "had to (past)", "example": "We had to run to the gate.", "en": "Past obligation", "es": "Obligación en pasado" }
+  ],
+  "tips": [
+    { "en": "\"Don't have to\" means \"no hace falta\", not \"no debes\". You don't have to come = no es necesario que vengas.", "es": "«Don't have to» significa «no hace falta», no «no debes». You don't have to come = no es necesario que vengas." },
+    { "en": "Arrive at the airport 2 hours before a domestic flight and 3 hours before an international one.", "es": "Llega al aeropuerto 2 horas antes de un vuelo nacional y 3 horas antes de uno internacional." },
+    { "en": "At security, liquids must be in small containers (3.4 oz / 100 ml) in a clear bag.", "es": "En el control de seguridad, los líquidos deben ir en envases pequeños (3.4 oz / 100 ml) en una bolsa transparente." },
+    { "en": "\"Gate\" is where you board; check the screens because gates can change.", "es": "La «gate» es la sala donde abordas; revisa las pantallas porque pueden cambiar." },
+    { "en": "Ask for help: airports have \"wheelchair assistance\" and staff who speak Spanish.", "es": "Pide ayuda: los aeropuertos tienen «wheelchair assistance» (asistencia con silla de ruedas) y personal que habla español." }
+  ],
+  "vocabulary": [
+    { "word": "airport", "es": "aeropuerto" },
+    { "word": "check-in", "es": "documentación / registro" },
+    { "word": "boarding pass", "es": "pase de abordar" },
+    { "word": "luggage", "es": "equipaje" },
+    { "word": "carry-on", "es": "equipaje de mano" },
+    { "word": "check a bag", "es": "documentar una maleta" },
+    { "word": "security", "es": "control de seguridad" },
+    { "word": "gate", "es": "puerta / sala de abordar" },
+    { "word": "terminal", "es": "terminal" },
+    { "word": "boarding", "es": "abordaje" },
+    { "word": "delayed", "es": "retrasado" },
+    { "word": "on time", "es": "a tiempo" },
+    { "word": "canceled", "es": "cancelado" },
+    { "word": "screen", "es": "pantalla" },
+    { "word": "liquids", "es": "líquidos" },
+    { "word": "take off", "es": "quitarse (ropa) / despegar" },
+    { "word": "baggage claim", "es": "reclamo de equipaje" }
+  ],
+  "phrases": [
+    { "phrase": "Where is the check-in counter?", "es": "¿Dónde está el mostrador de documentación?" },
+    { "phrase": "Can I see your ID, please?", "es": "¿Me permite su identificación?" },
+    { "phrase": "Do I have to check this bag?", "es": "¿Tengo que documentar esta maleta?" },
+    { "phrase": "You don't have to. It's a carry-on.", "es": "No hace falta. Es equipaje de mano." },
+    { "phrase": "You have to take off your shoes.", "es": "Tiene que quitarse los zapatos." },
+    { "phrase": "Put your liquids in this bag.", "es": "Ponga sus líquidos en esta bolsa." },
+    { "phrase": "Which gate is it?", "es": "¿Qué puerta es?" },
+    { "phrase": "The flight is delayed.", "es": "El vuelo está retrasado." },
+    { "phrase": "Boarding starts at seven thirty.", "es": "El abordaje empieza a las siete y media." },
+    { "phrase": "We had to run!", "es": "¡Tuvimos que correr!" },
+    { "phrase": "Where is baggage claim?", "es": "¿Dónde está el reclamo de equipaje?" },
+    { "phrase": "Have a good flight!", "es": "¡Buen vuelo!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"You ___ show your ID.\" (it's a rule)", "es": "Completa: «You ___ show your ID.» (es una regla)" }, "options": ["have to", "has to", "having to", "have"], "correct": 0, "explanation": { "en": "Obligation: you have to.", "es": "Obligación: you have to." } },
+    { "question": { "en": "Complete: \"She ___ take off her jacket.\"", "es": "Completa: «She ___ take off her jacket.»" }, "options": ["has to", "have to", "haves to", "must to"], "correct": 0, "explanation": { "en": "She → has to.", "es": "She → has to." } },
+    { "question": { "en": "\"You don't have to print the boarding pass\" means…", "es": "«You don't have to print the boarding pass» significa…" }, "options": ["It's not necessary to print it.", "It's prohibited to print it.", "You must print it.", "You can't fly."], "correct": 0, "explanation": { "en": "Don't have to = not necessary.", "es": "Don't have to = no es necesario." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Do I have to check this bag?", "Have I to check this bag?", "Do I has to check this bag?", "I have to check this bag do?"], "correct": 0, "explanation": { "en": "Questions: Do + I + have to…?", "es": "Preguntas: Do + I + have to…?" } },
+    { "question": { "en": "Your flight leaves later than planned. It's…", "es": "Tu vuelo sale más tarde de lo planeado. Está…" }, "options": ["delayed", "on time", "boarding", "canceled"], "correct": 0, "explanation": { "en": "Delayed = retrasado.", "es": "Delayed = retrasado." } },
+    { "question": { "en": "Where do you pick up your suitcase after the flight?", "es": "¿Dónde recoges tu maleta después del vuelo?" }, "options": ["at baggage claim", "at security", "at the gate", "at check-in"], "correct": 0, "explanation": { "en": "Baggage claim = reclamo de equipaje.", "es": "Baggage claim = reclamo de equipaje." } },
+    { "question": { "en": "Complete: \"Yesterday we ___ run to the gate.\"", "es": "Completa: «Yesterday we ___ run to the gate.»" }, "options": ["had to", "have to", "has to", "must"], "correct": 0, "explanation": { "en": "Past obligation: had to.", "es": "Obligación en pasado: had to." } },
+    { "question": { "en": "A small bag you take on the plane is a…", "es": "Una bolsa pequeña que llevas en el avión es…" }, "options": ["carry-on", "boarding pass", "baggage claim", "gate"], "correct": 0, "explanation": { "en": "Carry-on = equipaje de mano.", "es": "Carry-on = equipaje de mano." } }
+  ],
+  "story": {
+    "title": "Running to Gate 12",
+    "text": "On October fifth, Laura takes Carmen to the airport at six in the morning. At the check-in counter, the agent says, \"Can I see your ID, please?\" Carmen gives her passport. \"Do I have to check this bag?\" \"No, you don't have to. It's a carry-on. Your gate is number twelve.\" At security, there is a long line. \"You have to take off your shoes and your jacket,\" says the officer. \"And put your liquids in this bag.\" Carmen has a big bottle of hot sauce for Elena. \"Sorry, ma'am. You can't take this.\" Carmen is sad, but she smiles. Then she looks at the screen: \"Gate 12 — BOARDING.\" She has to run! She arrives just in time. \"Have a good flight!\" says the agent. Carmen sits by the window. \"No hot sauce,\" she thinks, \"but I'm on the plane!\"",
+    "es": "El cinco de octubre, Laura lleva a Carmen al aeropuerto a las seis de la mañana. En el mostrador de documentación, la agente dice: «¿Me permite su identificación?» Carmen le da su pasaporte. «¿Tengo que documentar esta maleta?» «No hace falta. Es equipaje de mano. Su puerta es la número doce.» En el control de seguridad hay una fila larga. «Tiene que quitarse los zapatos y la chaqueta», dice el oficial. «Y ponga sus líquidos en esta bolsa.» Carmen lleva una botella grande de salsa picante para Elena. «Lo siento, señora. No puede llevar esto.» Carmen se pone triste, pero sonríe. Luego mira la pantalla: «Puerta 12 — ABORDANDO.» ¡Tiene que correr! Llega justo a tiempo. «¡Buen vuelo!», dice la agente. Carmen se sienta junto a la ventana. «Sin salsa picante», piensa, «¡pero ya estoy en el avión!»",
+    "highlighted_words": ["airport", "check-in counter", "Can I see your ID, please", "Do I have to check this bag", "you don't have to", "carry-on", "gate", "security", "You have to take off your shoes", "liquids", "screen", "She has to run", "Have a good flight"]
+  },
+  "arrange": [
+    { "sentence": "Do I have to check this bag", "es": "¿Tengo que documentar esta maleta?" },
+    { "sentence": "You have to take off your shoes", "es": "Tiene que quitarse los zapatos." },
+    { "sentence": "You do not have to print it", "es": "No hace falta imprimirlo." },
+    { "sentence": "Our flight is delayed", "es": "Nuestro vuelo está retrasado." },
+    { "sentence": "We had to run to the gate", "es": "Tuvimos que correr a la puerta." },
+    { "sentence": "Where is baggage claim", "es": "¿Dónde está el reclamo de equipaje?" }
+  ],
+  "translate": [
+    { "answer": "I have to show my ID", "es": "Tengo que mostrar mi identificación" },
+    { "answer": "Which gate is it", "es": "¿Qué puerta es?" },
+    { "answer": "The flight is delayed", "es": "El vuelo está retrasado" },
+    { "answer": "You do not have to pay", "es": "No hace falta pagar" },
+    { "answer": "She has to run", "es": "Ella tiene que correr" },
+    { "answer": "Have a good flight", "es": "Buen vuelo" }
+  ]
+}

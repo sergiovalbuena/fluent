@@ -1,0 +1,85 @@
+{
+  "lesson": 46,
+  "slug": "lesson-46",
+  "icon": "💼",
+  "title": { "en": "Looking for a job", "es": "Buscar trabajo" },
+  "grammar": [
+    { "structure": "I have + past participle (experience)", "example": "I have worked with children. I've taught for thirty years.", "en": "Present perfect to talk about experience", "es": "Presente perfecto para hablar de experiencia" },
+    { "structure": "present perfect vs. past simple", "example": "I've worked in a bakery. I worked there in 2020.", "en": "Experience (no date) vs. finished time (with date)", "es": "Experiencia (sin fecha) vs. tiempo terminado (con fecha)" },
+    { "structure": "Have you ever + past participle?", "example": "Have you ever worked as a cashier?", "en": "Interview questions about experience", "es": "Preguntas de entrevista sobre experiencia" },
+    { "structure": "I'm good at + noun / verb-ing", "example": "I'm good at cooking and organizing.", "en": "Talking about skills", "es": "Hablar de habilidades" },
+    { "structure": "I'm interested in + noun / verb-ing", "example": "I'm interested in working part-time.", "en": "Showing interest", "es": "Mostrar interés" }
+  ],
+  "tips": [
+    { "en": "If you say when (in 2020, last year), use the past simple. If you don't say when, use the present perfect.", "es": "Si dices cuándo (in 2020, last year), usa el pasado simple. Si no dices cuándo, usa el presente perfecto." },
+    { "en": "A \"résumé\" (or resume) is your CV in the US. It's usually one page, without a photo.", "es": "El «résumé» (o resume) es tu currículum en Estados Unidos. Suele ser de una página y sin foto." },
+    { "en": "In interviews, Americans expect you to talk positively about yourself. It's not arrogance; it's normal.", "es": "En las entrevistas en Estados Unidos se espera que hables bien de ti. No es arrogancia; es lo normal." },
+    { "en": "Send a short thank-you email after an interview. It makes a good impression.", "es": "Manda un correo breve de agradecimiento después de una entrevista. Causa buena impresión." },
+    { "en": "\"Hire\" = contratar; \"fire\" = despedir. Careful, they sound similar!", "es": "«Hire» = contratar; «fire» = despedir. ¡Cuidado, suenan parecido!" }
+  ],
+  "vocabulary": [
+    { "word": "job", "es": "trabajo / empleo" },
+    { "word": "résumé", "es": "currículum" },
+    { "word": "interview", "es": "entrevista" },
+    { "word": "experience", "es": "experiencia" },
+    { "word": "skills", "es": "habilidades" },
+    { "word": "apply", "es": "postularse / solicitar" },
+    { "word": "application", "es": "solicitud" },
+    { "word": "hire", "es": "contratar" },
+    { "word": "salary", "es": "salario" },
+    { "word": "per hour", "es": "por hora" },
+    { "word": "full-time", "es": "tiempo completo" },
+    { "word": "shift", "es": "turno" },
+    { "word": "reliable", "es": "confiable" },
+    { "word": "hardworking", "es": "trabajador" },
+    { "word": "references", "es": "referencias" },
+    { "word": "available", "es": "disponible" },
+    { "word": "employer", "es": "empleador" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to apply for the job.", "es": "Quisiera postularme para el trabajo." },
+    { "phrase": "Here is my résumé.", "es": "Aquí está mi currículum." },
+    { "phrase": "Tell me about yourself.", "es": "Hábleme de usted." },
+    { "phrase": "Have you ever worked in a store?", "es": "¿Ha trabajado alguna vez en una tienda?" },
+    { "phrase": "Yes, I have. I worked at a pharmacy for three years.", "es": "Sí. Trabajé en una farmacia tres años." },
+    { "phrase": "I've worked with customers before.", "es": "Ya he trabajado con clientes." },
+    { "phrase": "I'm good at solving problems.", "es": "Soy buena resolviendo problemas." },
+    { "phrase": "I'm very reliable and hardworking.", "es": "Soy muy confiable y trabajadora." },
+    { "phrase": "When can you start?", "es": "¿Cuándo puede empezar?" },
+    { "phrase": "I'm available on weekends.", "es": "Estoy disponible los fines de semana." },
+    { "phrase": "How much is the salary?", "es": "¿Cuánto es el sueldo?" },
+    { "phrase": "Thank you for your time.", "es": "Gracias por su tiempo." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence (no specific time).", "es": "Elige la oración correcta (sin tiempo específico)." }, "options": ["I've worked with children.", "I've worked with children in 2015.", "I work with children since years.", "I worked with children never."], "correct": 0, "explanation": { "en": "Experience without a date → present perfect.", "es": "Experiencia sin fecha → presente perfecto." } },
+    { "question": { "en": "Choose the correct sentence (with a date).", "es": "Elige la oración correcta (con fecha)." }, "options": ["I worked at a hotel in 2018.", "I've worked at a hotel in 2018.", "I have work at a hotel in 2018.", "I'm working at a hotel in 2018."], "correct": 0, "explanation": { "en": "A finished date (in 2018) → past simple.", "es": "Con fecha terminada (in 2018) → pasado simple." } },
+    { "question": { "en": "Complete: \"I'm good ___ cooking.\"", "es": "Completa: «I'm good ___ cooking.»" }, "options": ["at", "in", "for", "on"], "correct": 0, "explanation": { "en": "good at + noun / verb-ing.", "es": "good at + sustantivo / verbo-ing." } },
+    { "question": { "en": "Complete: \"I'm interested ___ this position.\"", "es": "Completa: «I'm interested ___ this position.»" }, "options": ["in", "on", "at", "for"], "correct": 0, "explanation": { "en": "interested in.", "es": "interested in." } },
+    { "question": { "en": "\"Hire\" means…", "es": "«Hire» significa…" }, "options": ["contratar", "despedir", "renunciar", "jubilarse"], "correct": 0, "explanation": { "en": "Hire = contratar; fire = despedir.", "es": "Hire = contratar; fire = despedir." } },
+    { "question": { "en": "A one-page document with your work experience is your…", "es": "Un documento de una página con tu experiencia laboral es tu…" }, "options": ["résumé", "receipt", "lease", "license"], "correct": 0, "explanation": { "en": "Résumé = currículum.", "es": "Résumé = currículum." } },
+    { "question": { "en": "The interviewer says \"Tell me about yourself.\" A good start is:", "es": "El entrevistador dice «Tell me about yourself.». Un buen inicio es:" }, "options": ["I'm a hardworking person with ten years of experience…", "No.", "What do you want?", "I don't know myself."], "correct": 0, "explanation": { "en": "Talk positively about your experience and qualities.", "es": "Habla en positivo de tu experiencia y cualidades." } },
+    { "question": { "en": "Short answer: \"Have you ever managed a team?\" (yes)", "es": "Respuesta corta: «Have you ever managed a team?» (sí)" }, "options": ["Yes, I have.", "Yes, I did.", "Yes, I managed.", "Yes, I am."], "correct": 0, "explanation": { "en": "Short answer: Yes, I have.", "es": "Respuesta corta: Yes, I have." } }
+  ],
+  "story": {
+    "title": "Ana's Interview",
+    "text": "Ana has an interview for a job at a hotel front desk. She's nervous, so Carmen helps her practice. \"Okay, I'm the manager,\" says Carmen. \"Tell me about yourself.\" \"Well, I'm from Brazil. I've lived in San Diego for three years. I've worked as a receptionist before.\" \"Where did you work?\" \"I worked at a dental office from 2021 to 2023.\" \"Have you ever worked at a hotel?\" \"No, I haven't. But I've helped many customers, and I'm good at solving problems.\" \"Do you speak other languages?\" \"Yes! Portuguese, Spanish and English.\" Carmen claps. \"Hired!\" The next day, Ana goes to the real interview. She answers every question with a smile. In the evening she calls Carmen. \"They asked me 'When can you start?' I start on Monday!\" \"Congratulations! I knew it.\"",
+    "es": "Ana tiene una entrevista para un trabajo en la recepción de un hotel. Está nerviosa, así que Carmen la ayuda a practicar. «Bueno, yo soy la gerente», dice Carmen. «Hábleme de usted.» «Pues, soy de Brasil. Llevo tres años viviendo en San Diego. Ya he trabajado como recepcionista.» «¿Dónde trabajó?» «Trabajé en un consultorio dental de 2021 a 2023.» «¿Ha trabajado alguna vez en un hotel?» «No. Pero he atendido a muchos clientes y soy buena resolviendo problemas.» «¿Habla otros idiomas?» «¡Sí! Portugués, español e inglés.» Carmen aplaude. «¡Contratada!» Al día siguiente, Ana va a la entrevista de verdad. Responde cada pregunta con una sonrisa. En la noche llama a Carmen. «Me preguntaron «¿Cuándo puede empezar?» ¡Empiezo el lunes!» «¡Felicidades! Lo sabía.»",
+    "highlighted_words": ["interview", "Tell me about yourself", "I've lived in San Diego for three years", "I've worked as a receptionist before", "I worked at a dental office", "Have you ever worked at a hotel", "No, I haven't", "I'm good at solving problems", "Hired", "When can you start"]
+  },
+  "arrange": [
+    { "sentence": "I would like to apply for the job", "es": "Quisiera postularme para el trabajo." },
+    { "sentence": "Have you ever worked in a store", "es": "¿Ha trabajado alguna vez en una tienda?" },
+    { "sentence": "I have worked with customers before", "es": "Ya he trabajado con clientes." },
+    { "sentence": "I am good at solving problems", "es": "Soy buena resolviendo problemas." },
+    { "sentence": "I worked at a pharmacy in 2020", "es": "Trabajé en una farmacia en 2020." },
+    { "sentence": "When can you start", "es": "¿Cuándo puede empezar?" }
+  ],
+  "translate": [
+    { "answer": "Here is my résumé", "es": "Aquí está mi currículum" },
+    { "answer": "I have worked in a hotel", "es": "He trabajado en un hotel" },
+    { "answer": "I am very reliable", "es": "Soy muy confiable" },
+    { "answer": "I am available on weekends", "es": "Estoy disponible los fines de semana" },
+    { "answer": "Thank you for your time", "es": "Gracias por su tiempo" },
+    { "answer": "I am good at cooking", "es": "Soy buena para cocinar" }
+  ]
+}

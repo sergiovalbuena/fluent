@@ -1,0 +1,85 @@
+{
+  "lesson": 35,
+  "slug": "lesson-35",
+  "icon": "🏨",
+  "title": { "en": "At the hotel", "es": "En el hotel" },
+  "grammar": [
+    { "structure": "Could you + verb, please?", "example": "Could you call a taxi for me, please?", "en": "Polite requests", "es": "Pedidos amables" },
+    { "structure": "Would you mind + verb-ing?", "example": "Would you mind changing my room?", "en": "Very polite requests", "es": "Pedidos muy amables" },
+    { "structure": "I have a reservation under…", "example": "I have a reservation under Ruiz.", "en": "Checking in", "es": "Registrarse en el hotel" },
+    { "structure": "There's a problem with…", "example": "There's a problem with the air conditioning.", "en": "Reporting a problem", "es": "Reportar un problema" },
+    { "structure": "What time is…?", "example": "What time is checkout?", "en": "Asking about hotel times", "es": "Preguntar horarios del hotel" }
+  ],
+  "tips": [
+    { "en": "\"Would you mind…?\" is very polite. If the answer is \"No, not at all\", it means YES, they will do it.", "es": "«Would you mind…?» es muy amable. Si la respuesta es «No, not at all», significa que SÍ lo harán." },
+    { "en": "In US hotels, checkout is usually at 11 a.m. and check-in at 3 or 4 p.m.", "es": "En los hoteles de Estados Unidos, la salida suele ser a las 11 a.m. y la entrada a las 3 o 4 p.m." },
+    { "en": "It's common to leave a small tip for housekeeping: a few dollars per night.", "es": "Es común dejar una propina pequeña para la limpieza: unos dólares por noche." },
+    { "en": "\"Front desk\" is the reception. Call it from your room phone for anything you need.", "es": "La «front desk» es la recepción. Llámala desde el teléfono del cuarto para lo que necesites." },
+    { "en": "Ask for the Wi-Fi password at check-in: \"What's the Wi-Fi password?\"", "es": "Pide la contraseña del wifi al registrarte: «What's the Wi-Fi password?»" }
+  ],
+  "vocabulary": [
+    { "word": "front desk", "es": "recepción" },
+    { "word": "check in", "es": "registrarse (entrada)" },
+    { "word": "check out", "es": "salir del hotel (salida)" },
+    { "word": "room key", "es": "llave del cuarto" },
+    { "word": "single room", "es": "habitación sencilla" },
+    { "word": "double room", "es": "habitación doble" },
+    { "word": "towel", "es": "toalla" },
+    { "word": "air conditioning", "es": "aire acondicionado" },
+    { "word": "heater", "es": "calefacción" },
+    { "word": "elevator", "es": "elevador" },
+    { "word": "floor", "es": "piso" },
+    { "word": "housekeeping", "es": "servicio de limpieza" },
+    { "word": "tip", "es": "propina" },
+    { "word": "view", "es": "vista" },
+    { "word": "noisy", "es": "ruidoso" },
+    { "word": "quiet", "es": "tranquilo / silencioso" },
+    { "word": "Wi-Fi password", "es": "contraseña del wifi" }
+  ],
+  "phrases": [
+    { "phrase": "I have a reservation under Ruiz.", "es": "Tengo una reservación a nombre de Ruiz." },
+    { "phrase": "For how many nights?", "es": "¿Por cuántas noches?" },
+    { "phrase": "Here's your room key.", "es": "Aquí está la llave de su cuarto." },
+    { "phrase": "Your room is on the fifth floor.", "es": "Su cuarto está en el quinto piso." },
+    { "phrase": "What time is checkout?", "es": "¿A qué hora es la salida?" },
+    { "phrase": "What's the Wi-Fi password?", "es": "¿Cuál es la contraseña del wifi?" },
+    { "phrase": "Could I have some extra towels?", "es": "¿Me podría dar toallas extra?" },
+    { "phrase": "There's a problem with the heater.", "es": "Hay un problema con la calefacción." },
+    { "phrase": "Would you mind changing my room?", "es": "¿Le importaría cambiarme de cuarto?" },
+    { "phrase": "No, not at all.", "es": "No, para nada (con gusto)." },
+    { "phrase": "Could you call a taxi for me?", "es": "¿Me podría llamar un taxi?" },
+    { "phrase": "Is breakfast included?", "es": "¿El desayuno está incluido?" }
+  ],
+  "qa": [
+    { "question": { "en": "You arrive at the hotel. You say:", "es": "Llegas al hotel. Dices:" }, "options": ["I have a reservation under Ruiz.", "I have a reservation of Ruiz name.", "Ruiz reservation me.", "My name reservation is."], "correct": 0, "explanation": { "en": "\"A reservation under [name]\" is the standard phrase.", "es": "«A reservation under [nombre]» es la frase estándar." } },
+    { "question": { "en": "Complete: \"Would you mind ___ the window?\"", "es": "Completa: «Would you mind ___ the window?»" }, "options": ["opening", "open", "to open", "opened"], "correct": 0, "explanation": { "en": "Would you mind + verb-ing.", "es": "Would you mind + verbo-ing." } },
+    { "question": { "en": "You ask \"Would you mind helping me?\" The answer \"No, not at all\" means…", "es": "Preguntas «Would you mind helping me?». La respuesta «No, not at all» significa…" }, "options": ["Yes, I'll help you.", "No, I won't help you.", "I don't know.", "Later."], "correct": 0, "explanation": { "en": "\"Not at all\" = it's no problem for me. They will help.", "es": "«Not at all» = no me molesta. Sí te ayudarán." } },
+    { "question": { "en": "Where do you ask for help in a hotel?", "es": "¿Dónde pides ayuda en un hotel?" }, "options": ["at the front desk", "in the elevator", "at housekeeping's cart", "in the view"], "correct": 0, "explanation": { "en": "The front desk is the reception.", "es": "La front desk es la recepción." } },
+    { "question": { "en": "Your room is cold and the heater doesn't work. You say:", "es": "Tu cuarto está frío y la calefacción no funciona. Dices:" }, "options": ["There's a problem with the heater.", "The heater is very good.", "I'd like a heater view.", "Could I check out the heater?"], "correct": 0, "explanation": { "en": "\"There's a problem with…\" reports a problem.", "es": "«There's a problem with…» reporta un problema." } },
+    { "question": { "en": "\"Checkout\" is…", "es": "«Checkout» es…" }, "options": ["when you leave the hotel", "when you arrive", "the hotel restaurant", "the room key"], "correct": 0, "explanation": { "en": "Check out = leave the hotel and pay.", "es": "Check out = salir del hotel y pagar." } },
+    { "question": { "en": "Choose the polite request.", "es": "Elige el pedido amable." }, "options": ["Could you call a taxi for me, please?", "Call taxi.", "You call me taxi.", "Taxi now, please you."], "correct": 0, "explanation": { "en": "Could you…, please? is polite.", "es": "Could you…, please? es amable." } },
+    { "question": { "en": "A room for one person is a…", "es": "Un cuarto para una persona es…" }, "options": ["single room", "double room", "front desk", "suite floor"], "correct": 0, "explanation": { "en": "Single = one person.", "es": "Single = una persona." } }
+  ],
+  "story": {
+    "title": "Room 512",
+    "text": "Elena's apartment is very small, so Carmen stays at a hotel near her for the first two nights. At the front desk, she says, \"Good evening. I have a reservation under Ruiz.\" \"Welcome, Mrs. Ruiz. Two nights in a single room. Here's your room key. You're on the fifth floor, room 512.\" \"Thank you. What time is checkout?\" \"Eleven a.m. And the Wi-Fi password is on the card.\" The room is nice, with a view of the street. But it's very noisy, and the heater doesn't work. Carmen calls the front desk. \"Hello, this is room 512. There's a problem with the heater. And the room is very noisy. Would you mind changing my room?\" \"No, not at all. We have a quiet room on the ninth floor.\" Ten minutes later, Carmen is in a warm, quiet room. \"New York is big,\" she writes to Laura, \"but people are kind.\"",
+    "es": "El departamento de Elena es muy pequeño, así que Carmen se queda las primeras dos noches en un hotel cerca de ella. En la recepción dice: «Buenas noches. Tengo una reservación a nombre de Ruiz.» «Bienvenida, señora Ruiz. Dos noches en habitación sencilla. Aquí está la llave de su cuarto. Está en el quinto piso, cuarto 512.» «Gracias. ¿A qué hora es la salida?» «A las once de la mañana. Y la contraseña del wifi está en la tarjeta.» El cuarto es bonito, con vista a la calle. Pero es muy ruidoso y la calefacción no funciona. Carmen llama a la recepción. «Hola, habla del cuarto 512. Hay un problema con la calefacción. Y el cuarto es muy ruidoso. ¿Le importaría cambiarme de cuarto?» «No, para nada. Tenemos un cuarto tranquilo en el noveno piso.» Diez minutos después, Carmen está en un cuarto cálido y tranquilo. «Nueva York es grande», le escribe a Laura, «pero la gente es amable.»",
+    "highlighted_words": ["hotel", "front desk", "I have a reservation under Ruiz", "single room", "room key", "fifth floor", "What time is checkout", "Wi-Fi password", "view", "noisy", "heater", "There's a problem with the heater", "Would you mind changing my room", "No, not at all", "quiet"]
+  },
+  "arrange": [
+    { "sentence": "I have a reservation under Ruiz", "es": "Tengo una reservación a nombre de Ruiz." },
+    { "sentence": "What time is checkout", "es": "¿A qué hora es la salida?" },
+    { "sentence": "Could I have some extra towels", "es": "¿Me podría dar toallas extra?" },
+    { "sentence": "There is a problem with the heater", "es": "Hay un problema con la calefacción." },
+    { "sentence": "Would you mind changing my room", "es": "¿Le importaría cambiarme de cuarto?" },
+    { "sentence": "Is breakfast included in the price", "es": "¿El desayuno está incluido en el precio?" }
+  ],
+  "translate": [
+    { "answer": "I have a reservation", "es": "Tengo una reservación" },
+    { "answer": "What time is checkout", "es": "¿A qué hora es la salida?" },
+    { "answer": "Could you call a taxi for me", "es": "¿Me podría llamar un taxi?" },
+    { "answer": "The room is very noisy", "es": "El cuarto es muy ruidoso" },
+    { "answer": "Is breakfast included", "es": "¿El desayuno está incluido?" },
+    { "answer": "Could I have some towels", "es": "¿Me podría dar unas toallas?" }
+  ]
+}

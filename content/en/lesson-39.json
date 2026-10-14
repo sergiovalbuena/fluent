@@ -1,0 +1,85 @@
+{
+  "lesson": 39,
+  "slug": "lesson-39",
+  "icon": "🛍️",
+  "title": { "en": "Shopping", "es": "De compras" },
+  "grammar": [
+    { "structure": "too + adjective", "example": "These boots are too expensive.", "en": "\"Too\" = more than you want", "es": "«Too» = demasiado" },
+    { "structure": "adjective + enough", "example": "This coat isn't warm enough.", "en": "\"Enough\" goes after the adjective", "es": "«Enough» (suficiente) va después del adjetivo" },
+    { "structure": "enough + noun", "example": "I don't have enough money.", "en": "\"Enough\" goes before the noun", "es": "«Enough» va antes del sustantivo" },
+    { "structure": "Do you have this in…?", "example": "Do you have this in black?", "en": "Asking for another color or size", "es": "Pedir otro color o talla" },
+    { "structure": "I'm looking for…", "example": "I'm looking for a present for my grandson.", "en": "Telling the clerk what you need", "es": "Decirle al vendedor qué buscas" }
+  ],
+  "tips": [
+    { "en": "\"Too\" has a negative meaning: \"too big\" = it doesn't work for me. \"Very big\" is just a description.", "es": "«Too» tiene sentido negativo: «too big» = no me sirve. «Very big» es solo una descripción." },
+    { "en": "In the US the price on the tag doesn't include sales tax; it's added at the register.", "es": "En Estados Unidos el precio de la etiqueta no incluye el impuesto (sales tax); se suma en la caja." },
+    { "en": "Keep your receipt: most stores accept returns within 30 days.", "es": "Guarda tu recibo: la mayoría de las tiendas aceptan devoluciones en 30 días." },
+    { "en": "Black Friday (after Thanksgiving) has big discounts.", "es": "El Black Friday (después del Día de Acción de Gracias) tiene grandes descuentos." },
+    { "en": "\"Cash or card?\" is the usual question at the register. \"Card, please\" is the common answer.", "es": "«Cash or card?» es la pregunta habitual en la caja. «Card, please» es la respuesta común." }
+  ],
+  "vocabulary": [
+    { "word": "store", "es": "tienda" },
+    { "word": "mall", "es": "centro comercial" },
+    { "word": "clerk", "es": "dependiente / vendedor" },
+    { "word": "register", "es": "caja" },
+    { "word": "receipt", "es": "recibo / ticket" },
+    { "word": "sale", "es": "oferta / rebaja" },
+    { "word": "discount", "es": "descuento" },
+    { "word": "sales tax", "es": "impuesto sobre la venta" },
+    { "word": "return", "es": "devolver / devolución" },
+    { "word": "exchange", "es": "cambiar (un producto)" },
+    { "word": "present", "es": "regalo" },
+    { "word": "cash", "es": "efectivo" },
+    { "word": "too", "es": "demasiado" },
+    { "word": "enough", "es": "suficiente" },
+    { "word": "boots", "es": "botas" },
+    { "word": "bag", "es": "bolsa" },
+    { "word": "souvenir shop", "es": "tienda de recuerdos" }
+  ],
+  "phrases": [
+    { "phrase": "I'm looking for a present.", "es": "Busco un regalo." },
+    { "phrase": "Do you have this in black?", "es": "¿Lo tiene en negro?" },
+    { "phrase": "It's too expensive.", "es": "Está demasiado caro." },
+    { "phrase": "It isn't big enough.", "es": "No es lo suficientemente grande." },
+    { "phrase": "I don't have enough cash.", "es": "No traigo suficiente efectivo." },
+    { "phrase": "Is this on sale?", "es": "¿Esto está en oferta?" },
+    { "phrase": "Cash or card?", "es": "¿Efectivo o tarjeta?" },
+    { "phrase": "Card, please.", "es": "Con tarjeta, por favor." },
+    { "phrase": "Can I have a bag?", "es": "¿Me da una bolsa?" },
+    { "phrase": "Can I return it if it doesn't fit?", "es": "¿Lo puedo devolver si no le queda?" },
+    { "phrase": "Here's your receipt.", "es": "Aquí está su recibo." },
+    { "phrase": "Could you gift-wrap it?", "es": "¿Me lo envuelve para regalo?" }
+  ],
+  "qa": [
+    { "question": { "en": "The shoes cost $300 and you can't pay that. You say:", "es": "Los zapatos cuestan $300 y no puedes pagarlo. Dices:" }, "options": ["They're too expensive.", "They're very expensive enough.", "They're enough expensive.", "They're expensive too much."], "correct": 0, "explanation": { "en": "\"Too expensive\" = more than you can pay.", "es": "«Too expensive» = más de lo que puedes pagar." } },
+    { "question": { "en": "Choose the correct position of \"enough\".", "es": "Elige la posición correcta de «enough»." }, "options": ["This coat isn't warm enough.", "This coat isn't enough warm.", "This coat enough isn't warm.", "This coat isn't warm sufficient."], "correct": 0, "explanation": { "en": "Adjective + enough: warm enough.", "es": "Adjetivo + enough: warm enough." } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I don't have enough money.", "I don't have money enough.", "I haven't enough of money.", "I don't enough have money."], "correct": 0, "explanation": { "en": "Enough + noun: enough money.", "es": "Enough + sustantivo: enough money." } },
+    { "question": { "en": "You want the same sweater in another color. You ask:", "es": "Quieres el mismo suéter en otro color. Preguntas:" }, "options": ["Do you have this in blue?", "Do you have blue this?", "Have you this blue in?", "Is this in blue have?"], "correct": 0, "explanation": { "en": "Do you have this in + color/size?", "es": "Do you have this in + color/talla?" } },
+    { "question": { "en": "The paper that proves what you bought is the…", "es": "El papel que demuestra lo que compraste es el…" }, "options": ["receipt", "register", "discount", "clerk"], "correct": 0, "explanation": { "en": "Receipt = recibo (the p is silent).", "es": "Receipt = recibo (la p no suena)." } },
+    { "question": { "en": "In the US, the price on the tag…", "es": "En Estados Unidos, el precio de la etiqueta…" }, "options": ["usually doesn't include sales tax", "always includes the tip", "is negotiable", "is in pesos"], "correct": 0, "explanation": { "en": "Sales tax is added at the register.", "es": "El impuesto se suma en la caja." } },
+    { "question": { "en": "A clerk asks \"Can I help you?\" You need a gift. You say:", "es": "Un vendedor pregunta «Can I help you?». Necesitas un regalo. Dices:" }, "options": ["Yes, I'm looking for a present.", "Yes, I'm searching a present.", "Yes, I look present.", "Yes, present for looking."], "correct": 0, "explanation": { "en": "I'm looking for + thing.", "es": "I'm looking for + cosa." } },
+    { "question": { "en": "\"Too\" vs \"very\": which one means it's a problem?", "es": "«Too» vs «very»: ¿cuál indica un problema?" }, "options": ["too", "very", "both", "neither"], "correct": 0, "explanation": { "en": "\"Too\" means more than is good.", "es": "«Too» significa más de lo conveniente." } }
+  ],
+  "story": {
+    "title": "Presents for Everyone",
+    "text": "Before she goes home, Carmen wants to buy presents for her family. Elena takes her to a big store. \"Can I help you?\" asks a clerk. \"Yes, I'm looking for a present for my grandson. He's eight.\" The clerk shows her a New York Yankees cap. \"Do you have this in a smaller size?\" \"Sure, here's a kids' size.\" For Laura, Carmen finds beautiful boots, but they are too expensive. \"Is this scarf on sale?\" \"Yes, thirty percent off.\" \"Perfect. Could you gift-wrap it?\" For Mike, a coffee mug that says I ♥ NY. At the register, the total is higher than she thought. \"Oh! The tax.\" \"Cash or card?\" \"Card, please. I don't have enough cash.\" The clerk gives her the bag and the receipt. \"Keep the receipt. You can return it within thirty days.\" \"Thank you! But I'm sure they're going to love everything.\"",
+    "es": "Antes de volver a casa, Carmen quiere comprar regalos para su familia. Elena la lleva a una tienda grande. «¿Le puedo ayudar?», pregunta un vendedor. «Sí, busco un regalo para mi nieto. Tiene ocho años.» El vendedor le enseña una gorra de los Yankees de Nueva York. «¿La tiene en una talla más chica?» «Claro, aquí hay una de niño.» Para Laura, Carmen encuentra unas botas preciosas, pero están demasiado caras. «¿Esta bufanda está en oferta?» «Sí, con treinta por ciento de descuento.» «Perfecto. ¿Me la envuelve para regalo?» Para Mike, una taza que dice I ♥ NY. En la caja, el total es más alto de lo que pensaba. «¡Ah! El impuesto.» «¿Efectivo o tarjeta?» «Con tarjeta, por favor. No traigo suficiente efectivo.» El vendedor le da la bolsa y el recibo. «Guarde el recibo. Puede devolverlo en treinta días.» «¡Gracias! Pero estoy segura de que les va a encantar todo.»",
+    "highlighted_words": ["presents", "store", "clerk", "I'm looking for a present", "Do you have this in a smaller size", "boots", "too expensive", "on sale", "Could you gift-wrap it", "register", "tax", "Cash or card", "I don't have enough cash", "receipt", "return"]
+  },
+  "arrange": [
+    { "sentence": "I am looking for a present", "es": "Busco un regalo." },
+    { "sentence": "These boots are too expensive", "es": "Estas botas están demasiado caras." },
+    { "sentence": "Do you have this in black", "es": "¿Lo tiene en negro?" },
+    { "sentence": "I do not have enough cash", "es": "No traigo suficiente efectivo." },
+    { "sentence": "This coat is not warm enough", "es": "Este abrigo no es lo bastante abrigador." },
+    { "sentence": "Can I return it if it does not fit", "es": "¿Lo puedo devolver si no le queda?" }
+  ],
+  "translate": [
+    { "answer": "It is too expensive", "es": "Está demasiado caro" },
+    { "answer": "Is this on sale", "es": "¿Esto está en oferta?" },
+    { "answer": "Card, please", "es": "Con tarjeta, por favor" },
+    { "answer": "I am looking for a present", "es": "Busco un regalo" },
+    { "answer": "Can I have a bag", "es": "¿Me da una bolsa?" },
+    { "answer": "Here is your receipt", "es": "Aquí está su recibo" }
+  ]
+}

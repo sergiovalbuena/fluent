@@ -1,0 +1,85 @@
+{
+  "lesson": 58,
+  "slug": "lesson-58",
+  "icon": "🚙",
+  "title": { "en": "The car", "es": "El auto" },
+  "grammar": [
+    { "structure": "If + past simple, … would + verb", "example": "If I had a car, I would drive to the beach every day.", "en": "Second conditional: imaginary situations", "es": "Segundo condicional: situaciones imaginarias" },
+    { "structure": "If I were you, I would…", "example": "If I were you, I would take a driving class.", "en": "Giving advice with the second conditional", "es": "Dar consejos con el segundo condicional" },
+    { "structure": "would / wouldn't", "example": "I wouldn't drive on the highway at night.", "en": "Imaginary results", "es": "Resultados imaginarios" },
+    { "structure": "What would you do if…?", "example": "What would you do if your car broke down?", "en": "Hypothetical questions", "es": "Preguntas hipotéticas" },
+    { "structure": "first vs. second conditional", "example": "If it rains, I'll stay. / If I won the lottery, I'd travel.", "en": "Real vs. imaginary", "es": "Real vs. imaginario" }
+  ],
+  "tips": [
+    { "en": "The second conditional uses the past, but it's about the present or future: \"If I had time\" = si tuviera tiempo.", "es": "El segundo condicional usa el pasado, pero habla del presente o futuro: «If I had time» = si tuviera tiempo." },
+    { "en": "\"If I were you\" (with \"were\") is the classic way to give advice.", "es": "«If I were you» (con «were») es la forma clásica de dar consejos (yo que tú…)." },
+    { "en": "To drive in California you need a California license after you become a resident. Classes and tests can be taken in Spanish.", "es": "Para manejar en California necesitas licencia de California cuando ya eres residente. Las clases y los exámenes se pueden hacer en español." },
+    { "en": "\"Flat tire\" = llanta ponchada. \"Break down\" = descomponerse (el auto).", "es": "«Flat tire» = llanta ponchada. «Break down» = descomponerse (el auto)." },
+    { "en": "In the US, you must stop completely at a STOP sign, even if no one is coming.", "es": "En Estados Unidos hay que detenerse por completo en un alto (STOP), aunque no venga nadie." }
+  ],
+  "vocabulary": [
+    { "word": "steering wheel", "es": "volante" },
+    { "word": "brakes", "es": "frenos" },
+    { "word": "tire", "es": "llanta" },
+    { "word": "flat tire", "es": "llanta ponchada" },
+    { "word": "engine", "es": "motor" },
+    { "word": "headlights", "es": "faros" },
+    { "word": "windshield", "es": "parabrisas" },
+    { "word": "seat belt", "es": "cinturón de seguridad" },
+    { "word": "break down", "es": "descomponerse" },
+    { "word": "tow truck", "es": "grúa" },
+    { "word": "mechanic", "es": "mecánico" },
+    { "word": "oil change", "es": "cambio de aceite" },
+    { "word": "driving test", "es": "examen de manejo" },
+    { "word": "stop sign", "es": "señal de alto" },
+    { "word": "park", "es": "estacionar" },
+    { "word": "would", "es": "(condicional) -ría" },
+    { "word": "if I were you", "es": "yo que tú / si yo fuera tú" }
+  ],
+  "phrases": [
+    { "phrase": "If I had a car, I'd visit you more often.", "es": "Si tuviera auto, te visitaría más seguido." },
+    { "phrase": "If I were you, I'd take a driving class.", "es": "Yo que tú, tomaría una clase de manejo." },
+    { "phrase": "What would you do if you won the lottery?", "es": "¿Qué harías si ganaras la lotería?" },
+    { "phrase": "My car broke down.", "es": "Se me descompuso el auto." },
+    { "phrase": "I have a flat tire.", "es": "Tengo una llanta ponchada." },
+    { "phrase": "Can you call a tow truck?", "es": "¿Puede llamar a una grúa?" },
+    { "phrase": "The brakes make a strange noise.", "es": "Los frenos hacen un ruido raro." },
+    { "phrase": "It needs an oil change.", "es": "Necesita cambio de aceite." },
+    { "phrase": "Fasten your seat belt.", "es": "Abróchate el cinturón." },
+    { "phrase": "Where can I park?", "es": "¿Dónde me puedo estacionar?" },
+    { "phrase": "I passed my driving test!", "es": "¡Pasé mi examen de manejo!" },
+    { "phrase": "I wouldn't drive at night.", "es": "Yo no manejaría de noche." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"If I ___ a car, I would drive to the beach.\"", "es": "Completa: «If I ___ a car, I would drive to the beach.»" }, "options": ["had", "have", "will have", "would have"], "correct": 0, "explanation": { "en": "Second conditional: If + past simple.", "es": "Segundo condicional: If + pasado simple." } },
+    { "question": { "en": "Complete: \"If I won the lottery, I ___ travel the world.\"", "es": "Completa: «If I won the lottery, I ___ travel the world.»" }, "options": ["would", "will", "am", "did"], "correct": 0, "explanation": { "en": "Result: would + verb.", "es": "Resultado: would + verbo." } },
+    { "question": { "en": "How do you give advice with the second conditional?", "es": "¿Cómo das un consejo con el segundo condicional?" }, "options": ["If I were you, I'd rest.", "If I am you, I rest.", "If I was you, I will rest.", "If you were me, you rest."], "correct": 0, "explanation": { "en": "If I were you, I'd + verb.", "es": "If I were you, I'd + verbo." } },
+    { "question": { "en": "Which sentence is imaginary (not real now)?", "es": "¿Qué oración es imaginaria (no es real ahora)?" }, "options": ["If I lived in Paris, I'd speak French.", "If it rains, I'll stay home.", "If you call me, I'll answer.", "If I have time, I'll help."], "correct": 0, "explanation": { "en": "Second conditional = imaginary.", "es": "Segundo condicional = imaginario." } },
+    { "question": { "en": "A tire with no air is a…", "es": "Una llanta sin aire es una…" }, "options": ["flat tire", "broken tire", "empty wheel", "dead tire"], "correct": 0, "explanation": { "en": "Flat tire = llanta ponchada.", "es": "Flat tire = llanta ponchada." } },
+    { "question": { "en": "The truck that takes your broken car is a…", "es": "El camión que se lleva tu auto descompuesto es una…" }, "options": ["tow truck", "fire truck", "pickup", "trailer"], "correct": 0, "explanation": { "en": "Tow truck = grúa.", "es": "Tow truck = grúa." } },
+    { "question": { "en": "\"My car broke down\" means…", "es": "«My car broke down» significa…" }, "options": ["My car stopped working.", "My car is new.", "I sold my car.", "My car is clean."], "correct": 0, "explanation": { "en": "Break down = descomponerse.", "es": "Break down = descomponerse." } },
+    { "question": { "en": "At a STOP sign in the US, you must…", "es": "En un alto (STOP) en Estados Unidos, debes…" }, "options": ["stop completely", "slow down a little", "honk", "only stop at night"], "correct": 0, "explanation": { "en": "A full stop is required.", "es": "Es obligatorio detenerse por completo." } }
+  ],
+  "story": {
+    "title": "Behind the Wheel",
+    "text": "Carmen takes the bus everywhere, but sometimes it's difficult. \"If I had a car, I would visit Leo more often,\" she tells Mike. Mike is a mechanic, so he has an idea. \"If I were you, I'd take a driving class. And I have an old car that I don't use.\" \"Me? Driving in California? At my age?\" \"Why not? You can take the test in Spanish.\" Carmen thinks about it for a week. Then she signs up. The first class is scary. The teacher says, \"Hands on the steering wheel. Check the mirrors. Stop completely at the stop sign.\" One day, on a quiet street, they get a flat tire. \"What would you do if this happened and you were alone?\" asks the teacher. \"I would call Mike!\" Two months later, Carmen comes into the house with a big smile. \"I passed my driving test!\" Leo runs to her. \"Grandma, can you drive me to soccer now?\" \"Of course. But fasten your seat belt!\"",
+    "es": "Carmen va en autobús a todas partes, pero a veces es difícil. «Si tuviera auto, visitaría a Leo más seguido», le dice a Mike. Mike es mecánico, así que tiene una idea. «Yo que usted, tomaría una clase de manejo. Y tengo un auto viejo que no uso.» «¿Yo? ¿Manejar en California? ¿A mi edad?» «¿Por qué no? Puede hacer el examen en español.» Carmen lo piensa una semana. Luego se inscribe. La primera clase da miedo. El maestro dice: «Las manos en el volante. Revise los espejos. Deténgase por completo en el alto.» Un día, en una calle tranquila, se les poncha una llanta. «¿Qué haría si le pasara esto y estuviera sola?», pregunta el maestro. «¡Llamaría a Mike!» Dos meses después, Carmen entra a la casa con una gran sonrisa. «¡Pasé mi examen de manejo!» Leo corre hacia ella. «Abuela, ¿ahora me puedes llevar al fútbol?» «Claro. ¡Pero abróchate el cinturón!»",
+    "highlighted_words": ["If I had a car, I would visit", "mechanic", "If I were you, I'd take a driving class", "steering wheel", "mirrors", "stop sign", "flat tire", "What would you do if", "I would call Mike", "I passed my driving test", "fasten your seat belt"]
+  },
+  "arrange": [
+    { "sentence": "If I had a car I would visit you", "es": "Si tuviera auto, te visitaría." },
+    { "sentence": "If I were you I would rest", "es": "Yo que tú, descansaría." },
+    { "sentence": "What would you do if you won the lottery", "es": "¿Qué harías si ganaras la lotería?" },
+    { "sentence": "My car broke down on the highway", "es": "Se me descompuso el auto en la carretera." },
+    { "sentence": "I have a flat tire", "es": "Tengo una llanta ponchada." },
+    { "sentence": "I passed my driving test", "es": "Pasé mi examen de manejo." }
+  ],
+  "translate": [
+    { "answer": "My car broke down", "es": "Se me descompuso el auto" },
+    { "answer": "If I were you, I would call him", "es": "Yo que tú, lo llamaría" },
+    { "answer": "If I had time, I would help you", "es": "Si tuviera tiempo, te ayudaría" },
+    { "answer": "Where can I park", "es": "¿Dónde me puedo estacionar?" },
+    { "answer": "It needs an oil change", "es": "Necesita cambio de aceite" },
+    { "answer": "Fasten your seat belt", "es": "Abróchate el cinturón" }
+  ]
+}

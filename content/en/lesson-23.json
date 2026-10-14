@@ -1,0 +1,85 @@
+{
+  "lesson": 23,
+  "slug": "lesson-23",
+  "icon": "🌦️",
+  "title": { "en": "Seasons and weather", "es": "Las estaciones y el clima" },
+  "grammar": [
+    { "structure": "It's + adjective", "example": "It's sunny. It's cold today.", "en": "Describing the weather with \"it\"", "es": "Describir el clima con «it»" },
+    { "structure": "It's + verb-ing", "example": "It's raining. It's snowing.", "en": "Weather happening now", "es": "Clima que está pasando ahora" },
+    { "structure": "What's the weather like?", "example": "What's the weather like in Guadalajara?", "en": "Asking about the weather", "es": "Preguntar cómo está el clima" },
+    { "structure": "in + season", "example": "It's hot in summer.", "en": "\"In\" with seasons", "es": "«In» con las estaciones" },
+    { "structure": "too / very", "example": "It's very hot. It's too hot to walk.", "en": "\"Very\" (a lot) vs. \"too\" (more than you want)", "es": "«Very» (mucho) vs. «too» (demasiado)" }
+  ],
+  "tips": [
+    { "en": "English always needs a subject: \"It's raining\" (not just \"Is raining\"). \"It\" is the weather.", "es": "El inglés siempre necesita sujeto: «It's raining» (no «Is raining»). «It» es el clima." },
+    { "en": "\"Fall\" is the American word for autumn.", "es": "«Fall» es la palabra estadounidense para otoño." },
+    { "en": "Weather talk is perfect small talk with neighbors and in line at the store.", "es": "Hablar del clima es la charla perfecta con vecinos y en la fila de la tienda." },
+    { "en": "\"Chilly\" means a little cold; \"freezing\" means very, very cold.", "es": "«Chilly» significa un poco frío; «freezing», muchísimo frío." },
+    { "en": "San Diego weather is mild all year, but mornings near the ocean can be foggy in May and June.", "es": "El clima de San Diego es templado todo el año, pero las mañanas cerca del mar pueden tener neblina en mayo y junio." }
+  ],
+  "vocabulary": [
+    { "word": "weather", "es": "clima / tiempo" },
+    { "word": "spring", "es": "primavera" },
+    { "word": "summer", "es": "verano" },
+    { "word": "fall", "es": "otoño" },
+    { "word": "winter", "es": "invierno" },
+    { "word": "sunny", "es": "soleado" },
+    { "word": "cloudy", "es": "nublado" },
+    { "word": "rainy", "es": "lluvioso" },
+    { "word": "windy", "es": "con viento" },
+    { "word": "foggy", "es": "con neblina" },
+    { "word": "snow", "es": "nieve / nevar" },
+    { "word": "rain", "es": "lluvia / llover" },
+    { "word": "hot", "es": "caluroso / caliente" },
+    { "word": "warm", "es": "cálido / templado" },
+    { "word": "chilly", "es": "fresco / frío" },
+    { "word": "umbrella", "es": "paraguas / sombrilla" },
+    { "word": "forecast", "es": "pronóstico" }
+  ],
+  "phrases": [
+    { "phrase": "What's the weather like today?", "es": "¿Cómo está el clima hoy?" },
+    { "phrase": "It's sunny and warm.", "es": "Está soleado y templado." },
+    { "phrase": "It's raining. Take an umbrella.", "es": "Está lloviendo. Lleva paraguas." },
+    { "phrase": "It's a little chilly this morning.", "es": "Está un poco fresco esta mañana." },
+    { "phrase": "It's too hot!", "es": "¡Hace demasiado calor!" },
+    { "phrase": "What a beautiful day!", "es": "¡Qué día tan bonito!" },
+    { "phrase": "What's the forecast for tomorrow?", "es": "¿Cuál es el pronóstico para mañana?" },
+    { "phrase": "My favorite season is spring.", "es": "Mi estación favorita es la primavera." },
+    { "phrase": "It's freezing!", "es": "¡Hace un frío tremendo!" },
+    { "phrase": "Is it cold outside?", "es": "¿Hace frío afuera?" },
+    { "phrase": "Bring a jacket.", "es": "Trae una chaqueta." },
+    { "phrase": "The leaves change color in the fall.", "es": "Las hojas cambian de color en otoño." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["It's raining.", "Is raining.", "Rains now.", "It raining."], "correct": 0, "explanation": { "en": "Weather needs \"it\": It's raining.", "es": "El clima necesita «it»: It's raining." } },
+    { "question": { "en": "What is \"fall\" in American English?", "es": "¿Qué es «fall» en inglés estadounidense?" }, "options": ["autumn", "winter", "spring", "summer"], "correct": 0, "explanation": { "en": "Fall = autumn = otoño.", "es": "Fall = autumn = otoño." } },
+    { "question": { "en": "How do you ask about the weather?", "es": "¿Cómo preguntas por el clima?" }, "options": ["What's the weather like?", "How is weather like?", "What weather is?", "How the weather?"], "correct": 0, "explanation": { "en": "The natural question is \"What's the weather like?\"", "es": "La pregunta natural es «What's the weather like?»" } },
+    { "question": { "en": "Complete: \"It's very hot ___ summer.\"", "es": "Completa: «It's very hot ___ summer.»" }, "options": ["in", "on", "at", "to"], "correct": 0, "explanation": { "en": "Seasons use \"in\".", "es": "Las estaciones usan «in»." } },
+    { "question": { "en": "You need this when it rains.", "es": "Lo necesitas cuando llueve." }, "options": ["an umbrella", "sunscreen", "sunglasses", "a swimsuit"], "correct": 0, "explanation": { "en": "An umbrella keeps you dry.", "es": "Un paraguas (umbrella) te mantiene seco." } },
+    { "question": { "en": "\"It's too hot to walk\" means…", "es": "«It's too hot to walk» significa…" }, "options": ["It's so hot that walking is not a good idea.", "It's a little hot.", "It's nice for walking.", "It's cold."], "correct": 0, "explanation": { "en": "\"Too\" = more than is good or possible.", "es": "«Too» = más de lo conveniente o posible." } },
+    { "question": { "en": "There are many clouds. It's…", "es": "Hay muchas nubes. Está…" }, "options": ["cloudy", "sunny", "snowy", "dry"], "correct": 0, "explanation": { "en": "Clouds → cloudy.", "es": "Nubes (clouds) → cloudy." } },
+    { "question": { "en": "\"Chilly\" means…", "es": "«Chilly» significa…" }, "options": ["a little cold", "very hot", "rainy", "windy"], "correct": 0, "explanation": { "en": "Chilly = un poco frío, fresco.", "es": "Chilly = un poco frío, fresco." } }
+  ],
+  "story": {
+    "title": "Small Talk",
+    "text": "In San Diego, everybody talks about the weather. In the morning, Carmen waits for the bus with an old man. \"It's a little chilly this morning,\" he says. \"Yes, and it's foggy,\" says Carmen. \"But the forecast says it's sunny this afternoon.\" At the bakery, Grace says, \"What a beautiful day!\" In the evening, Carmen calls her sister Rosa in Guadalajara. \"What's the weather like there?\" \"It's raining a lot. It's the rainy season. And in San Diego?\" \"Sunny and warm, like every day. Here every day is like spring.\" \"Lucky you!\" says Rosa. \"Do you miss the rain?\" Carmen thinks. \"I miss the smell of rain in Guadalajara. But I don't miss my wet shoes!\"",
+    "es": "En San Diego todo el mundo habla del clima. En la mañana, Carmen espera el autobús con un señor mayor. «Está un poco fresco esta mañana», dice él. «Sí, y hay neblina», dice Carmen. «Pero el pronóstico dice que en la tarde va a estar soleado.» En la panadería, Grace dice: «¡Qué día tan bonito!» En la noche, Carmen llama a su hermana Rosa en Guadalajara. «¿Cómo está el clima allá?» «Está lloviendo mucho. Es temporada de lluvias. ¿Y en San Diego?» «Soleado y templado, como todos los días. Aquí cada día es como primavera.» «¡Qué suerte!», dice Rosa. «¿Extrañas la lluvia?» Carmen piensa. «Extraño el olor de la lluvia en Guadalajara. ¡Pero no extraño los zapatos mojados!»",
+    "highlighted_words": ["weather", "chilly", "foggy", "forecast", "sunny", "What a beautiful day", "What's the weather like", "raining", "rainy", "warm", "spring"]
+  },
+  "arrange": [
+    { "sentence": "What is the weather like today", "es": "¿Cómo está el clima hoy?" },
+    { "sentence": "It is sunny and warm", "es": "Está soleado y templado." },
+    { "sentence": "It is raining a lot", "es": "Está lloviendo mucho." },
+    { "sentence": "My favorite season is spring", "es": "Mi estación favorita es la primavera." },
+    { "sentence": "Take an umbrella with you", "es": "Lleva un paraguas." },
+    { "sentence": "It is too cold to go out", "es": "Hace demasiado frío para salir." }
+  ],
+  "translate": [
+    { "answer": "It is raining", "es": "Está lloviendo" },
+    { "answer": "It is very hot", "es": "Hace mucho calor" },
+    { "answer": "What a beautiful day", "es": "¡Qué día tan bonito!" },
+    { "answer": "Is it cold outside", "es": "¿Hace frío afuera?" },
+    { "answer": "My favorite season is summer", "es": "Mi estación favorita es el verano" },
+    { "answer": "Bring a jacket", "es": "Trae una chaqueta" }
+  ]
+}

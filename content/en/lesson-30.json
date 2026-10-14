@@ -1,0 +1,85 @@
+{
+  "lesson": 30,
+  "slug": "lesson-30",
+  "icon": "📞",
+  "title": { "en": "On the phone", "es": "Al teléfono" },
+  "grammar": [
+    { "structure": "I'll + verb (offers)", "example": "I'll call you back. I'll get it!", "en": "\"Will\" for offers and quick decisions", "es": "«Will» para ofrecimientos y decisiones rápidas" },
+    { "structure": "I'll + verb (promises)", "example": "I'll be there at five, I promise.", "en": "\"Will\" for promises", "es": "«Will» para promesas" },
+    { "structure": "Could you…? / Can I…?", "example": "Could you speak up, please? Can I leave a message?", "en": "Polite requests on the phone", "es": "Pedidos amables por teléfono" },
+    { "structure": "This is… (not \"I am\")", "example": "Hello, this is Carmen.", "en": "Saying who you are on the phone", "es": "Decir quién eres por teléfono" },
+    { "structure": "Phrasal verbs: call back, hang up, hold on", "example": "Hold on a minute, please.", "en": "Common phone phrasal verbs", "es": "Verbos frasales comunes del teléfono" }
+  ],
+  "tips": [
+    { "en": "On the phone say \"This is Carmen\", not \"I am Carmen\".", "es": "Por teléfono se dice «This is Carmen», no «I am Carmen»." },
+    { "en": "If you don't understand a name, ask the person to spell it, or ask \"Can you text it to me?\".", "es": "Si no entiendes un nombre, pide que lo deletreen o pregunta «Can you text it to me?» (¿me lo mandas por mensaje?)." },
+    { "en": "\"Text\" is also a verb: \"I'll text you\" = Te mando un mensaje.", "es": "«Text» también es verbo: «I'll text you» = Te mando un mensaje." },
+    { "en": "Automated phone menus say \"Press 1 for English, press 2 for Spanish\" — many services have Spanish options.", "es": "Los menús automáticos dicen «Press 1 for English, press 2 for Spanish»: muchos servicios tienen opción en español." },
+    { "en": "Be careful with calls asking for money or personal data. Hang up and call the official number.", "es": "Cuidado con las llamadas que piden dinero o datos personales. Cuelga y llama al número oficial." }
+  ],
+  "vocabulary": [
+    { "word": "phone", "es": "teléfono" },
+    { "word": "cell phone", "es": "celular" },
+    { "word": "call", "es": "llamar / llamada" },
+    { "word": "call back", "es": "devolver la llamada" },
+    { "word": "hang up", "es": "colgar" },
+    { "word": "hold on", "es": "esperar (en la línea)" },
+    { "word": "message", "es": "mensaje / recado" },
+    { "word": "voicemail", "es": "buzón de voz" },
+    { "word": "text", "es": "mensaje de texto / mandar mensaje" },
+    { "word": "wrong number", "es": "número equivocado" },
+    { "word": "speak up", "es": "hablar más fuerte" },
+    { "word": "battery", "es": "batería / pila" },
+    { "word": "charger", "es": "cargador" },
+    { "word": "signal", "es": "señal" },
+    { "word": "video call", "es": "videollamada" },
+    { "word": "answer", "es": "contestar" },
+    { "word": "busy line", "es": "línea ocupada" }
+  ],
+  "phrases": [
+    { "phrase": "Hello, this is Carmen.", "es": "Hola, habla Carmen." },
+    { "phrase": "Can I speak to Grace, please?", "es": "¿Puedo hablar con Grace, por favor?" },
+    { "phrase": "Hold on a minute, please.", "es": "Espere un momento, por favor." },
+    { "phrase": "She's not here right now.", "es": "No está en este momento." },
+    { "phrase": "Can I leave a message?", "es": "¿Le puedo dejar un recado?" },
+    { "phrase": "I'll call you back later.", "es": "Te devuelvo la llamada más tarde." },
+    { "phrase": "Could you speak up, please?", "es": "¿Podría hablar más fuerte, por favor?" },
+    { "phrase": "Sorry, you have the wrong number.", "es": "Perdón, se equivocó de número." },
+    { "phrase": "My battery is dying.", "es": "Se me está acabando la batería." },
+    { "phrase": "I'll text you the address.", "es": "Te mando la dirección por mensaje." },
+    { "phrase": "Thanks for calling.", "es": "Gracias por llamar." },
+    { "phrase": "Talk to you soon!", "es": "¡Hablamos pronto!" }
+  ],
+  "qa": [
+    { "question": { "en": "How do you say who you are on the phone?", "es": "¿Cómo dices quién eres por teléfono?" }, "options": ["Hello, this is Carmen.", "Hello, I am Carmen here.", "Hello, here is Carmen speak.", "Hello, Carmen is me."], "correct": 0, "explanation": { "en": "On the phone: \"This is…\"", "es": "Por teléfono: «This is…»" } },
+    { "question": { "en": "The phone rings. You offer to answer. You say:", "es": "Suena el teléfono. Te ofreces a contestar. Dices:" }, "options": ["I'll get it!", "I get it tomorrow.", "I going to get.", "I got it yesterday."], "correct": 0, "explanation": { "en": "Quick decision or offer → I'll + verb.", "es": "Decisión rápida u ofrecimiento → I'll + verbo." } },
+    { "question": { "en": "You can't hear well. You say:", "es": "No oyes bien. Dices:" }, "options": ["Could you speak up, please?", "Could you hang up, please?", "Could you hold on me?", "Speak down, please."], "correct": 0, "explanation": { "en": "\"Speak up\" = speak louder.", "es": "«Speak up» = hablar más fuerte." } },
+    { "question": { "en": "\"Hang up\" means…", "es": "«Hang up» significa…" }, "options": ["end the call", "wait on the line", "call again", "answer the phone"], "correct": 0, "explanation": { "en": "Hang up = colgar.", "es": "Hang up = colgar." } },
+    { "question": { "en": "The person you want is not there. You ask:", "es": "La persona que buscas no está. Preguntas:" }, "options": ["Can I leave a message?", "Can I hang up a message?", "Can you hold on a message?", "Can I speak up?"], "correct": 0, "explanation": { "en": "\"Leave a message\" = dejar un recado.", "es": "«Leave a message» = dejar un recado." } },
+    { "question": { "en": "Complete: \"I'm busy now. I ___ you back in an hour.\"", "es": "Completa: «I'm busy now. I ___ you back in an hour.»" }, "options": ["'ll call", "call", "calling", "called"], "correct": 0, "explanation": { "en": "Promise/offer → I'll call you back.", "es": "Promesa/ofrecimiento → I'll call you back." } },
+    { "question": { "en": "Someone calls you, but they want another person. You say:", "es": "Alguien te llama, pero busca a otra persona. Dices:" }, "options": ["Sorry, you have the wrong number.", "Sorry, my battery is dying.", "Hold on, I'll text you.", "Thanks for calling, bye."], "correct": 0, "explanation": { "en": "Wrong number = número equivocado.", "es": "Wrong number = número equivocado." } },
+    { "question": { "en": "A stranger calls and asks for your bank password. You should…", "es": "Un desconocido llama y te pide la contraseña del banco. Debes…" }, "options": ["hang up and call the bank's official number", "give it quickly", "text it to them", "leave a message with it"], "correct": 0, "explanation": { "en": "Never share passwords by phone. Hang up.", "es": "Nunca compartas contraseñas por teléfono. Cuelga." } }
+  ],
+  "story": {
+    "title": "The Important Call",
+    "text": "Carmen's phone rings. It's a number she doesn't know. \"Hello?\" \"Hello, this is Grace from the bakery. Can I speak to Carmen?\" \"This is Carmen! Hi, Grace!\" \"Carmen, I have a question. Could you work here on Saturdays? Just in the mornings.\" Carmen's heart beats fast. \"Sorry, could you speak up, please? The signal is bad.\" Grace repeats the question louder. \"Yes! I'd love to!\" says Carmen. \"Great. I'll send you a message with the details.\" \"Thank you so much. I'll be there at seven on Saturday, I promise.\" After she hangs up, Carmen calls Laura. The line is busy, so she leaves a voicemail: \"Laura, call me back! I have big news!\" Two minutes later her phone rings again. \"Mom, what happened?\" \"I have a job!\"",
+    "es": "Suena el teléfono de Carmen. Es un número que no conoce. «¿Bueno?» «Hola, habla Grace, de la panadería. ¿Puedo hablar con Carmen?» «¡Habla Carmen! ¡Hola, Grace!» «Carmen, tengo una pregunta. ¿Podrías trabajar aquí los sábados? Solo en las mañanas.» El corazón de Carmen late rápido. «Perdón, ¿podrías hablar más fuerte, por favor? La señal está mala.» Grace repite la pregunta más fuerte. «¡Sí! ¡Me encantaría!», dice Carmen. «Perfecto. Te mando un mensaje con los detalles.» «Muchísimas gracias. El sábado estoy ahí a las siete, te lo prometo.» Después de colgar, Carmen llama a Laura. La línea está ocupada, así que le deja un mensaje de voz: «¡Laura, regrésame la llamada! ¡Tengo una gran noticia!» Dos minutos después vuelve a sonar su teléfono. «Mamá, ¿qué pasó?» «¡Tengo trabajo!»",
+    "highlighted_words": ["phone rings", "this is Grace", "Can I speak to Carmen", "This is Carmen", "Could you work", "could you speak up, please", "signal", "I'll send you a message", "I'll be there", "hangs up", "busy", "voicemail", "call me back"]
+  },
+  "arrange": [
+    { "sentence": "Hello this is Carmen", "es": "Hola, habla Carmen." },
+    { "sentence": "Can I speak to Grace please", "es": "¿Puedo hablar con Grace, por favor?" },
+    { "sentence": "I will call you back later", "es": "Te devuelvo la llamada más tarde." },
+    { "sentence": "Could you speak up please", "es": "¿Podría hablar más fuerte, por favor?" },
+    { "sentence": "Can I leave a message", "es": "¿Le puedo dejar un recado?" },
+    { "sentence": "Hold on a minute please", "es": "Espere un momento, por favor." }
+  ],
+  "translate": [
+    { "answer": "This is Carmen", "es": "Habla Carmen" },
+    { "answer": "I will call you back", "es": "Te devuelvo la llamada" },
+    { "answer": "Can I leave a message", "es": "¿Puedo dejar un recado?" },
+    { "answer": "You have the wrong number", "es": "Se equivocó de número" },
+    { "answer": "Thanks for calling", "es": "Gracias por llamar" },
+    { "answer": "I will text you", "es": "Te mando un mensaje" }
+  ]
+}

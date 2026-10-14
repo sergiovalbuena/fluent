@@ -1,0 +1,85 @@
+{
+  "lesson": 25,
+  "slug": "lesson-25",
+  "icon": "🚆",
+  "title": { "en": "Transportation", "es": "El transporte" },
+  "grammar": [
+    { "structure": "verb + -ed", "example": "I walked to the station. We waited for the bus.", "en": "Past simple of regular verbs", "es": "Pasado simple de los verbos regulares" },
+    { "structure": "-ed spelling", "example": "stop → stopped, try → tried, arrive → arrived", "en": "Spelling rules for -ed", "es": "Reglas de ortografía para -ed" },
+    { "structure": "Three sounds of -ed", "example": "walked /t/, played /d/, waited /ɪd/", "en": "Pronouncing -ed", "es": "Pronunciar la terminación -ed" },
+    { "structure": "by + transport", "example": "I go to work by bus. She travels by train.", "en": "\"By\" with means of transport", "es": "«By» con medios de transporte" },
+    { "structure": "on foot / get on / get off", "example": "Get off at the third stop.", "en": "Useful transport expressions", "es": "Expresiones útiles de transporte" }
+  ],
+  "tips": [
+    { "en": "The past simple is the same for all persons: I walked, she walked, they walked.", "es": "El pasado simple es igual para todas las personas: I walked, she walked, they walked." },
+    { "en": "Don't say an extra syllable: \"walked\" is one syllable (wokt), not \"walk-ed\". Only after t or d do you add a syllable: wait-ed, need-ed.", "es": "No agregues una sílaba extra: «walked» es una sílaba (uókt), no «walk-ed». Solo después de t o d se agrega sílaba: wait-ed, need-ed." },
+    { "en": "\"Get on\" and \"get off\" are for buses, trains and planes; \"get in\" and \"get out of\" are for cars and taxis.", "es": "«Get on» y «get off» son para autobuses, trenes y aviones; «get in» y «get out of» para autos y taxis." },
+    { "en": "Many US cities have a \"transit app\" with real-time bus times. It's worth installing.", "es": "Muchas ciudades de Estados Unidos tienen una app de transporte con los horarios en tiempo real. Vale la pena instalarla." },
+    { "en": "Senior discounts are common on public transport: ask \"Is there a senior fare?\"", "es": "En el transporte público son comunes los descuentos para adultos mayores: pregunta «Is there a senior fare?»" }
+  ],
+  "vocabulary": [
+    { "word": "bus", "es": "autobús / camión" },
+    { "word": "bus stop", "es": "parada de autobús" },
+    { "word": "train", "es": "tren" },
+    { "word": "station", "es": "estación" },
+    { "word": "trolley", "es": "tranvía" },
+    { "word": "taxi", "es": "taxi" },
+    { "word": "car", "es": "auto / carro" },
+    { "word": "bike", "es": "bicicleta" },
+    { "word": "plane", "es": "avión" },
+    { "word": "ticket", "es": "boleto" },
+    { "word": "fare", "es": "tarifa / pasaje" },
+    { "word": "driver", "es": "conductor" },
+    { "word": "traffic", "es": "tráfico" },
+    { "word": "get on", "es": "subirse (a un autobús, tren)" },
+    { "word": "get off", "es": "bajarse (de un autobús, tren)" },
+    { "word": "on foot", "es": "a pie" },
+    { "word": "transfer", "es": "transbordo" }
+  ],
+  "phrases": [
+    { "phrase": "How do you get to work?", "es": "¿Cómo te vas al trabajo?" },
+    { "phrase": "I usually go by bus.", "es": "Normalmente me voy en autobús." },
+    { "phrase": "Does this bus go downtown?", "es": "¿Este autobús va al centro?" },
+    { "phrase": "Where do I get off?", "es": "¿Dónde me bajo?" },
+    { "phrase": "Get off at the third stop.", "es": "Bájese en la tercera parada." },
+    { "phrase": "One ticket to Old Town, please.", "es": "Un boleto a Old Town, por favor." },
+    { "phrase": "Is there a senior fare?", "es": "¿Hay tarifa para adultos mayores?" },
+    { "phrase": "We waited for twenty minutes.", "es": "Esperamos veinte minutos." },
+    { "phrase": "The train arrived late.", "es": "El tren llegó tarde." },
+    { "phrase": "There was a lot of traffic.", "es": "Había mucho tráfico." },
+    { "phrase": "I walked home.", "es": "Me fui caminando a casa." },
+    { "phrase": "Can you call a taxi for me?", "es": "¿Me puede llamar un taxi?" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"Yesterday I ___ to the station.\"", "es": "Completa: «Yesterday I ___ to the station.»" }, "options": ["walked", "walk", "walking", "walks"], "correct": 0, "explanation": { "en": "Yesterday → past simple: walked.", "es": "Yesterday → pasado simple: walked." } },
+    { "question": { "en": "What is the past of \"stop\"?", "es": "¿Cuál es el pasado de «stop»?" }, "options": ["stopped", "stoped", "stopt", "stopping"], "correct": 0, "explanation": { "en": "Short vowel + consonant: double it → stopped.", "es": "Vocal corta + consonante: se duplica → stopped." } },
+    { "question": { "en": "What is the past of \"try\"?", "es": "¿Cuál es el pasado de «try»?" }, "options": ["tried", "tryed", "tryied", "tride"], "correct": 0, "explanation": { "en": "Consonant + y → -ied: tried.", "es": "Consonante + y → -ied: tried." } },
+    { "question": { "en": "In which word does -ed sound like an extra syllable /ɪd/?", "es": "¿En qué palabra -ed suena como sílaba extra /ɪd/?" }, "options": ["waited", "walked", "played", "called"], "correct": 0, "explanation": { "en": "After t or d, -ed is a new syllable: wait-ed.", "es": "Después de t o d, -ed es una sílaba nueva: wait-ed." } },
+    { "question": { "en": "Complete: \"She goes to work ___ train.\"", "es": "Completa: «She goes to work ___ train.»" }, "options": ["by", "in the", "with", "on a"], "correct": 0, "explanation": { "en": "Transport: by bus, by train, by car.", "es": "Transporte: by bus, by train, by car." } },
+    { "question": { "en": "You are on the bus and it's your stop. You…", "es": "Vas en el autobús y es tu parada. Tú…" }, "options": ["get off", "get on", "get in", "get up"], "correct": 0, "explanation": { "en": "Leave a bus or train → get off.", "es": "Bajarse de un autobús o tren → get off." } },
+    { "question": { "en": "How do you say \"a pie\"?", "es": "¿Cómo se dice «a pie»?" }, "options": ["on foot", "by foot", "in foot", "with feet"], "correct": 0, "explanation": { "en": "The expression is \"on foot\".", "es": "La expresión es «on foot»." } },
+    { "question": { "en": "Complete: \"We ___ for the bus for twenty minutes.\"", "es": "Completa: «We ___ for the bus for twenty minutes.»" }, "options": ["waited", "waitted", "wait", "waits"], "correct": 0, "explanation": { "en": "Past simple: waited.", "es": "Pasado simple: waited." } }
+  ],
+  "story": {
+    "title": "The Trolley to Old Town",
+    "text": "Yesterday Carmen visited Old Town, the historic part of San Diego. She traveled by trolley for the first time. At the station, she asked the driver, \"Does this trolley go to Old Town?\" \"Yes, it does. Get off at the fourth stop.\" She showed her senior pass and paid a low fare. On the trolley, she watched the city through the window and counted the stops: one, two, three, four. She got off and walked to the old plaza. There was music, there were colorful flowers and the restaurants smelled like home. Carmen talked to a man who sold handmade toys. She stayed there for three hours. In the evening she called Laura. \"I traveled alone today, by trolley! And I didn't get lost!\"",
+    "es": "Ayer Carmen visitó Old Town, la parte histórica de San Diego. Viajó en tranvía por primera vez. En la estación le preguntó al conductor: «¿Este tranvía va a Old Town?» «Sí. Bájese en la cuarta parada.» Mostró su pase de adulto mayor y pagó una tarifa baja. En el tranvía miró la ciudad por la ventana y contó las paradas: una, dos, tres, cuatro. Se bajó y caminó hasta la plaza antigua. Había música, había flores de colores y los restaurantes olían a casa. Carmen platicó con un señor que vendía juguetes hechos a mano. Se quedó ahí tres horas. En la noche llamó a Laura. «¡Hoy viajé sola, en tranvía! ¡Y no me perdí!»",
+    "highlighted_words": ["visited", "traveled by trolley", "station", "asked the driver", "Get off", "fare", "watched", "counted the stops", "walked", "talked", "stayed", "called"]
+  },
+  "arrange": [
+    { "sentence": "I usually go to work by bus", "es": "Normalmente me voy al trabajo en autobús." },
+    { "sentence": "We waited for the train for an hour", "es": "Esperamos el tren una hora." },
+    { "sentence": "Get off at the third stop", "es": "Bájese en la tercera parada." },
+    { "sentence": "Does this bus go downtown", "es": "¿Este autobús va al centro?" },
+    { "sentence": "She traveled by train to Los Angeles", "es": "Viajó en tren a Los Ángeles." },
+    { "sentence": "There was a lot of traffic", "es": "Había mucho tráfico." }
+  ],
+  "translate": [
+    { "answer": "I walked home", "es": "Me fui caminando a casa" },
+    { "answer": "The bus arrived late", "es": "El autobús llegó tarde" },
+    { "answer": "Where do I get off", "es": "¿Dónde me bajo?" },
+    { "answer": "We traveled by train", "es": "Viajamos en tren" },
+    { "answer": "She visited her sister", "es": "Ella visitó a su hermana" },
+    { "answer": "I waited for twenty minutes", "es": "Esperé veinte minutos" }
+  ]
+}

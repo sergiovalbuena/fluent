@@ -1,0 +1,85 @@
+{
+  "lesson": 24,
+  "slug": "lesson-24",
+  "icon": "🏛️",
+  "title": { "en": "Art and museums", "es": "El arte y los museos" },
+  "grammar": [
+    { "structure": "was / were", "example": "The museum was beautiful. The paintings were old.", "en": "Past of \"to be\"", "es": "Pasado de «to be»" },
+    { "structure": "I / he / she / it + was", "example": "Frida Kahlo was a Mexican painter.", "en": "\"Was\" with I, he, she, it", "es": "«Was» con I, he, she, it" },
+    { "structure": "you / we / they + were", "example": "We were at the museum all day.", "en": "\"Were\" with you, we, they", "es": "«Were» con you, we, they" },
+    { "structure": "wasn't / weren't", "example": "It wasn't expensive.", "en": "Negative past of \"to be\"", "es": "Negativo del pasado de «to be»" },
+    { "structure": "Was it…? / Were you…?", "example": "Was it interesting? — Yes, it was.", "en": "Questions in the past with \"to be\"", "es": "Preguntas en pasado con «to be»" }
+  ],
+  "tips": [
+    { "en": "\"Was\" and \"were\" mean both \"era/estaba\" and \"fue/estuvo\": English has one past for \"to be\".", "es": "«Was» y «were» significan «era/estaba» y también «fue/estuvo»: el inglés tiene un solo pasado para «to be»." },
+    { "en": "Many museums in the US are free on certain days. Look for \"free admission\" days.", "es": "Muchos museos en Estados Unidos son gratis ciertos días. Busca los días de «free admission»." },
+    { "en": "\"Painting\" is the picture; \"painter\" is the person who paints.", "es": "«Painting» es el cuadro; «painter» es la persona que pinta." },
+    { "en": "In a museum, \"Please don't touch\" signs are serious. Photos are often allowed without flash.", "es": "En un museo, los letreros «Please don't touch» son serios. Las fotos suelen estar permitidas sin flash." },
+    { "en": "\"Gift shop\" is the museum store, usually near the exit.", "es": "La «gift shop» es la tienda del museo, normalmente cerca de la salida." }
+  ],
+  "vocabulary": [
+    { "word": "museum", "es": "museo" },
+    { "word": "art", "es": "arte" },
+    { "word": "painting", "es": "pintura / cuadro" },
+    { "word": "painter", "es": "pintor / pintora" },
+    { "word": "artist", "es": "artista" },
+    { "word": "sculpture", "es": "escultura" },
+    { "word": "exhibition", "es": "exposición" },
+    { "word": "gallery", "es": "galería" },
+    { "word": "ticket", "es": "boleto / entrada" },
+    { "word": "guide", "es": "guía" },
+    { "word": "gift shop", "es": "tienda de recuerdos" },
+    { "word": "famous", "es": "famoso" },
+    { "word": "modern", "es": "moderno" },
+    { "word": "ancient", "es": "antiguo" },
+    { "word": "colorful", "es": "colorido" },
+    { "word": "free admission", "es": "entrada gratis" },
+    { "word": "was / were", "es": "era, estaba, fue, estuvo" }
+  ],
+  "phrases": [
+    { "phrase": "Two tickets, please.", "es": "Dos boletos, por favor." },
+    { "phrase": "Is there a guided tour?", "es": "¿Hay visita guiada?" },
+    { "phrase": "Who is the artist?", "es": "¿Quién es el artista?" },
+    { "phrase": "It was painted in 1940.", "es": "Fue pintado en 1940." },
+    { "phrase": "Please don't touch.", "es": "Por favor, no tocar." },
+    { "phrase": "Can I take pictures?", "es": "¿Puedo tomar fotos?" },
+    { "phrase": "No flash, please.", "es": "Sin flash, por favor." },
+    { "phrase": "The exhibition was amazing.", "es": "La exposición estuvo increíble." },
+    { "phrase": "Where were you yesterday?", "es": "¿Dónde estuviste ayer?" },
+    { "phrase": "I was at the museum.", "es": "Estuve en el museo." },
+    { "phrase": "It wasn't crowded.", "es": "No había mucha gente." },
+    { "phrase": "Where is the gift shop?", "es": "¿Dónde está la tienda de recuerdos?" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"The museum ___ beautiful.\"", "es": "Completa: «The museum ___ beautiful.»" }, "options": ["was", "were", "be", "weres"], "correct": 0, "explanation": { "en": "It (the museum) → was.", "es": "It (el museo) → was." } },
+    { "question": { "en": "Complete: \"We ___ at the gallery yesterday.\"", "es": "Completa: «We ___ at the gallery yesterday.»" }, "options": ["were", "was", "are", "is"], "correct": 0, "explanation": { "en": "We → were.", "es": "We → were." } },
+    { "question": { "en": "Choose the correct negative.", "es": "Elige la negación correcta." }, "options": ["It wasn't expensive.", "It weren't expensive.", "It no was expensive.", "It didn't was expensive."], "correct": 0, "explanation": { "en": "It → was not → wasn't.", "es": "It → was not → wasn't." } },
+    { "question": { "en": "Short answer: \"Was it interesting?\" (yes)", "es": "Respuesta corta: «Was it interesting?» (sí)" }, "options": ["Yes, it was.", "Yes, it did.", "Yes, it is was.", "Yes, was it."], "correct": 0, "explanation": { "en": "Short answer: Yes, it was.", "es": "Respuesta corta: Yes, it was." } },
+    { "question": { "en": "The person who paints is a…", "es": "La persona que pinta es un/a…" }, "options": ["painter", "painting", "paint", "gallery"], "correct": 0, "explanation": { "en": "Painter = la persona; painting = el cuadro.", "es": "Painter = la persona; painting = el cuadro." } },
+    { "question": { "en": "Complete: \"Frida Kahlo ___ a famous Mexican painter.\"", "es": "Completa: «Frida Kahlo ___ a famous Mexican painter.»" }, "options": ["was", "were", "is been", "are"], "correct": 0, "explanation": { "en": "She → was (she lived in the past).", "es": "She → was (vivió en el pasado)." } },
+    { "question": { "en": "Where do you buy souvenirs in a museum?", "es": "¿Dónde compras recuerdos en un museo?" }, "options": ["at the gift shop", "at the exhibition", "at the gallery wall", "at the guide"], "correct": 0, "explanation": { "en": "The gift shop sells souvenirs.", "es": "La gift shop vende recuerdos." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Where were you yesterday?", "Where was you yesterday?", "Where you were yesterday?", "Where did you was yesterday?"], "correct": 0, "explanation": { "en": "You → were. Question: Where were you…?", "es": "You → were. Pregunta: Where were you…?" } }
+  ],
+  "story": {
+    "title": "Frida in San Diego",
+    "text": "Last Saturday was a special day. There was an exhibition of Frida Kahlo's paintings at a museum in Balboa Park. Carmen and Ana were there at ten in the morning. The tickets weren't expensive, and there was a free guided tour. The guide was a young woman from Monterrey. \"Frida was a Mexican painter,\" she said. \"Her paintings were very colorful and very personal.\" Carmen was very emotional. \"When I was a girl, my mother had a book about Frida,\" she told Ana. The museum was crowded, but it wasn't noisy. At the end, they were in the gift shop for half an hour. Carmen bought a postcard for her sister. On Monday, Mr. Park asked, \"Where were you on Saturday?\" \"I was with Frida!\" said Carmen.",
+    "es": "El sábado pasado fue un día especial. Había una exposición de pinturas de Frida Kahlo en un museo del Parque Balboa. Carmen y Ana estuvieron ahí a las diez de la mañana. Los boletos no eran caros y había una visita guiada gratis. La guía era una joven de Monterrey. «Frida fue una pintora mexicana», dijo. «Sus pinturas eran muy coloridas y muy personales.» Carmen estaba muy emocionada. «Cuando yo era niña, mi madre tenía un libro sobre Frida», le contó a Ana. El museo estaba lleno, pero no había ruido. Al final, estuvieron media hora en la tienda de recuerdos. Carmen compró una postal para su hermana. El lunes, el señor Park preguntó: «¿Dónde estuvieron el sábado?» «¡Estuve con Frida!», dijo Carmen.",
+    "highlighted_words": ["was a special day", "exhibition", "paintings", "museum", "were there", "tickets weren't expensive", "guided tour", "guide", "painter", "colorful", "wasn't noisy", "gift shop", "Where were you", "I was"]
+  },
+  "arrange": [
+    { "sentence": "The museum was very beautiful", "es": "El museo era muy bonito." },
+    { "sentence": "We were at the gallery yesterday", "es": "Ayer estuvimos en la galería." },
+    { "sentence": "The tickets were not expensive", "es": "Los boletos no eran caros." },
+    { "sentence": "Who is the artist of this painting", "es": "¿Quién es el artista de este cuadro?" },
+    { "sentence": "Where were you on Saturday", "es": "¿Dónde estuviste el sábado?" },
+    { "sentence": "Is there a guided tour today", "es": "¿Hay visita guiada hoy?" }
+  ],
+  "translate": [
+    { "answer": "I was at the museum", "es": "Estuve en el museo" },
+    { "answer": "It was beautiful", "es": "Fue hermoso" },
+    { "answer": "Where were you yesterday", "es": "¿Dónde estuviste ayer?" },
+    { "answer": "It was not crowded", "es": "No había mucha gente" },
+    { "answer": "Two tickets, please", "es": "Dos boletos, por favor" },
+    { "answer": "Can I take pictures", "es": "¿Puedo tomar fotos?" }
+  ]
+}

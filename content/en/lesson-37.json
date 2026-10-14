@@ -1,0 +1,85 @@
+{
+  "lesson": 37,
+  "slug": "lesson-37",
+  "icon": "🚗",
+  "title": { "en": "Renting a car", "es": "Rentar un auto" },
+  "grammar": [
+    { "structure": "need to + verb", "example": "You need to show your driver's license.", "en": "Necessity with \"need to\"", "es": "Necesidad con «need to»" },
+    { "structure": "need + noun", "example": "We need a bigger car.", "en": "\"Need\" with things", "es": "«Need» con cosas" },
+    { "structure": "How much does it cost to…?", "example": "How much does it cost to rent a car for three days?", "en": "Asking about prices of services", "es": "Preguntar el precio de un servicio" },
+    { "structure": "per day / per week", "example": "It's forty dollars per day.", "en": "Rates", "es": "Tarifas" },
+    { "structure": "fill up / pick up / drop off", "example": "Please fill up the tank before you drop off the car.", "en": "Phrasal verbs for renting a car", "es": "Verbos frasales para rentar un auto" }
+  ],
+  "tips": [
+    { "en": "To rent a car in the US you usually need a driver's license and a credit card (not cash).", "es": "Para rentar un auto en Estados Unidos normalmente necesitas licencia de manejo y tarjeta de crédito (no efectivo)." },
+    { "en": "Most rental cars are automatic. If you want a manual, ask for a \"stick shift\".", "es": "La mayoría de los autos de renta son automáticos. Si quieres estándar, pide un «stick shift»." },
+    { "en": "\"Gas\" is gasoline in American English (\"petrol\" in British English). It's sold by the gallon (≈ 3.8 liters).", "es": "«Gas» es gasolina en inglés estadounidense («petrol» en británico). Se vende por galón (≈ 3.8 litros)." },
+    { "en": "Speed limits are in miles per hour (mph): 65 mph is about 105 km/h.", "es": "Los límites de velocidad están en millas por hora (mph): 65 mph son unos 105 km/h." },
+    { "en": "Many gas stations are self-service: you pay first at the pump or inside.", "es": "Muchas gasolineras son de autoservicio: pagas primero en la bomba o adentro." }
+  ],
+  "vocabulary": [
+    { "word": "rent", "es": "rentar / alquilar" },
+    { "word": "rental car", "es": "auto rentado" },
+    { "word": "driver's license", "es": "licencia de manejo" },
+    { "word": "credit card", "es": "tarjeta de crédito" },
+    { "word": "insurance", "es": "seguro" },
+    { "word": "gas", "es": "gasolina" },
+    { "word": "gas station", "es": "gasolinera" },
+    { "word": "tank", "es": "tanque" },
+    { "word": "fill up", "es": "llenar (el tanque)" },
+    { "word": "pick up", "es": "recoger" },
+    { "word": "drop off", "es": "entregar / dejar" },
+    { "word": "highway", "es": "carretera / autopista" },
+    { "word": "speed limit", "es": "límite de velocidad" },
+    { "word": "GPS", "es": "GPS / navegador" },
+    { "word": "trunk", "es": "cajuela / maletero" },
+    { "word": "per day", "es": "por día" },
+    { "word": "automatic", "es": "automático" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to rent a car.", "es": "Quisiera rentar un auto." },
+    { "phrase": "For how many days?", "es": "¿Por cuántos días?" },
+    { "phrase": "How much does it cost per day?", "es": "¿Cuánto cuesta por día?" },
+    { "phrase": "You need to show your driver's license.", "es": "Necesita mostrar su licencia de manejo." },
+    { "phrase": "Is insurance included?", "es": "¿El seguro está incluido?" },
+    { "phrase": "Is it automatic?", "es": "¿Es automático?" },
+    { "phrase": "Where do I pick up the car?", "es": "¿Dónde recojo el auto?" },
+    { "phrase": "Please fill up the tank before you return it.", "es": "Por favor, llene el tanque antes de devolverlo." },
+    { "phrase": "We need to get gas.", "es": "Tenemos que poner gasolina." },
+    { "phrase": "Put the suitcases in the trunk.", "es": "Pon las maletas en la cajuela." },
+    { "phrase": "What's the speed limit here?", "es": "¿Cuál es el límite de velocidad aquí?" },
+    { "phrase": "Drive safely!", "es": "¡Maneja con cuidado!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"You ___ show your license.\"", "es": "Completa: «You ___ show your license.»" }, "options": ["need to", "need", "needs to", "needing"], "correct": 0, "explanation": { "en": "need to + verb.", "es": "need to + verbo." } },
+    { "question": { "en": "To rent a car in the US you usually need…", "es": "Para rentar un auto en Estados Unidos normalmente necesitas…" }, "options": ["a license and a credit card", "only cash", "a passport photo", "a visa"], "correct": 0, "explanation": { "en": "Driver's license + credit card.", "es": "Licencia de manejo + tarjeta de crédito." } },
+    { "question": { "en": "\"Gas\" in American English is…", "es": "«Gas» en inglés estadounidense es…" }, "options": ["gasolina", "gas natural para cocinar", "aire", "aceite"], "correct": 0, "explanation": { "en": "Gas = gasoline.", "es": "Gas = gasolina." } },
+    { "question": { "en": "Where do you put suitcases in a car?", "es": "¿Dónde pones las maletas en un auto?" }, "options": ["in the trunk", "in the tank", "on the highway", "in the GPS"], "correct": 0, "explanation": { "en": "Trunk = cajuela.", "es": "Trunk = cajuela." } },
+    { "question": { "en": "\"Drop off the car\" means…", "es": "«Drop off the car» significa…" }, "options": ["return/leave the car", "start the car", "buy the car", "wash the car"], "correct": 0, "explanation": { "en": "Drop off = entregar, dejar.", "es": "Drop off = entregar, dejar." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["How much does it cost per day?", "How much it costs per day?", "How many does it cost per day?", "How much cost per day?"], "correct": 0, "explanation": { "en": "How much does it cost…?", "es": "How much does it cost…?" } },
+    { "question": { "en": "65 mph is about…", "es": "65 mph son aproximadamente…" }, "options": ["105 km/h", "65 km/h", "40 km/h", "200 km/h"], "correct": 0, "explanation": { "en": "1 mile ≈ 1.6 km, so 65 mph ≈ 105 km/h.", "es": "1 milla ≈ 1.6 km, así que 65 mph ≈ 105 km/h." } },
+    { "question": { "en": "The tank is almost empty. You say:", "es": "El tanque está casi vacío. Dices:" }, "options": ["We need to get gas.", "We need to drop off the gas.", "We need a trunk.", "We need to speed limit."], "correct": 0, "explanation": { "en": "Get gas = poner gasolina.", "es": "Get gas = poner gasolina." } }
+  ],
+  "story": {
+    "title": "Autumn Colors",
+    "text": "Elena's son, David, wants to show Carmen the autumn colors outside the city. \"We need to rent a car,\" he says. At the rental office, he asks, \"How much does it cost to rent a car for one day?\" \"Fifty dollars per day, with insurance.\" \"Is it automatic?\" \"Yes. You need to show your driver's license and a credit card.\" David picks up the car, and they put a picnic basket in the trunk. On the highway, Carmen looks out of the window. The trees are red, orange and yellow. \"Beautiful! In San Diego the trees don't change color like this.\" After an hour, a light comes on. \"We need to get gas,\" says David. At the gas station, Carmen buys coffee for everybody. In the evening they drop off the car with a full tank. \"Thank you, David. Today I saw the most beautiful trees of my life.\"",
+    "es": "El hijo de Elena, David, quiere enseñarle a Carmen los colores del otoño fuera de la ciudad. «Necesitamos rentar un auto», dice. En la oficina de renta pregunta: «¿Cuánto cuesta rentar un auto por un día?» «Cincuenta dólares por día, con seguro.» «¿Es automático?» «Sí. Necesita mostrar su licencia de manejo y una tarjeta de crédito.» David recoge el auto y ponen una canasta de picnic en la cajuela. En la carretera, Carmen mira por la ventana. Los árboles están rojos, anaranjados y amarillos. «¡Precioso! En San Diego los árboles no cambian de color así.» Después de una hora, se prende una luz. «Tenemos que poner gasolina», dice David. En la gasolinera, Carmen compra café para todos. En la tarde entregan el auto con el tanque lleno. «Gracias, David. Hoy vi los árboles más bonitos de mi vida.»",
+    "highlighted_words": ["We need to rent a car", "How much does it cost", "per day", "insurance", "automatic", "driver's license", "credit card", "picks up", "trunk", "highway", "We need to get gas", "gas station", "drop off", "full tank"]
+  },
+  "arrange": [
+    { "sentence": "I would like to rent a car", "es": "Quisiera rentar un auto." },
+    { "sentence": "How much does it cost per day", "es": "¿Cuánto cuesta por día?" },
+    { "sentence": "You need to show your license", "es": "Necesita mostrar su licencia." },
+    { "sentence": "We need to get gas", "es": "Tenemos que poner gasolina." },
+    { "sentence": "Put the suitcases in the trunk", "es": "Pon las maletas en la cajuela." },
+    { "sentence": "Is insurance included in the price", "es": "¿El seguro está incluido en el precio?" }
+  ],
+  "translate": [
+    { "answer": "I need to rent a car", "es": "Necesito rentar un auto" },
+    { "answer": "Is it automatic", "es": "¿Es automático?" },
+    { "answer": "How much does it cost", "es": "¿Cuánto cuesta?" },
+    { "answer": "We need gas", "es": "Necesitamos gasolina" },
+    { "answer": "Drive safely", "es": "Maneja con cuidado" },
+    { "answer": "Where do I pick up the car", "es": "¿Dónde recojo el auto?" }
+  ]
+}

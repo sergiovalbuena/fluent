@@ -301,7 +301,8 @@
     "start": "Iniziamo! 🚀",
     "saving": "Preparazione...",
     "done": "Tutto pronto! Iniziamo a imparare. 🚀",
-    "save_error": "Impossibile salvare le tue scelte. Riprova."
+    "save_error": "Impossibile salvare le tue scelte. Riprova.",
+    "lang_en": "La lingua più usata al mondo"
   },
   "saved": {
     "tab_items": "Parole e frasi",

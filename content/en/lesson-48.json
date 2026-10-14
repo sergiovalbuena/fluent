@@ -1,0 +1,85 @@
+{
+  "lesson": 48,
+  "slug": "lesson-48",
+  "icon": "🏦",
+  "title": { "en": "At the bank", "es": "En el banco" },
+  "grammar": [
+    { "structure": "If + present, … will + verb", "example": "If you open an account today, you will get a free card.", "en": "First conditional: real possibilities", "es": "Primer condicional: posibilidades reales" },
+    { "structure": "If + present, … can / should + verb", "example": "If you lose your card, you should call the bank.", "en": "First conditional with other modals", "es": "Primer condicional con otros modales" },
+    { "structure": "unless = if not", "example": "You won't pay a fee unless your balance is low.", "en": "\"Unless\"", "es": "«Unless» (a menos que)" },
+    { "structure": "I'd like to + bank action", "example": "I'd like to open a checking account.", "en": "Bank requests", "es": "Pedidos en el banco" },
+    { "structure": "No \"will\" after \"if\"", "example": "If it rains, I'll stay home. (not \"If it will rain\")", "en": "The present goes after \"if\"", "es": "Después de «if» va el presente" }
+  ],
+  "tips": [
+    { "en": "Never put \"will\" right after \"if\": \"If I have time, I'll call you\".", "es": "Nunca pongas «will» justo después de «if»: «If I have time, I'll call you»." },
+    { "en": "A \"checking account\" is for everyday money; a \"savings account\" is for saving.", "es": "La «checking account» es la cuenta para el día a día; la «savings account» es para ahorrar." },
+    { "en": "Your PIN is secret. Bank employees will never ask for it.", "es": "Tu NIP (PIN) es secreto. Los empleados del banco nunca te lo van a pedir." },
+    { "en": "Many banks have Spanish-speaking staff: ask \"Is there someone who speaks Spanish?\"", "es": "Muchos bancos tienen personal que habla español: pregunta «Is there someone who speaks Spanish?»" },
+    { "en": "To send money to Mexico, compare fees: banks, apps and money-transfer services charge differently.", "es": "Para mandar dinero a México, compara comisiones: bancos, apps y servicios de envío cobran distinto." }
+  ],
+  "vocabulary": [
+    { "word": "bank account", "es": "cuenta bancaria" },
+    { "word": "checking account", "es": "cuenta de cheques" },
+    { "word": "savings account", "es": "cuenta de ahorros" },
+    { "word": "deposit", "es": "depositar / depósito" },
+    { "word": "withdraw", "es": "retirar (dinero)" },
+    { "word": "ATM", "es": "cajero automático" },
+    { "word": "PIN", "es": "NIP / PIN" },
+    { "word": "debit card", "es": "tarjeta de débito" },
+    { "word": "balance", "es": "saldo" },
+    { "word": "fee", "es": "comisión / cargo" },
+    { "word": "transfer", "es": "transferencia / transferir" },
+    { "word": "teller", "es": "cajero (de banco)" },
+    { "word": "statement", "es": "estado de cuenta" },
+    { "word": "loan", "es": "préstamo" },
+    { "word": "interest", "es": "interés" },
+    { "word": "if", "es": "si (condición)" },
+    { "word": "unless", "es": "a menos que" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to open an account.", "es": "Quisiera abrir una cuenta." },
+    { "phrase": "What documents do I need?", "es": "¿Qué documentos necesito?" },
+    { "phrase": "I'd like to deposit this check.", "es": "Quisiera depositar este cheque." },
+    { "phrase": "How do I withdraw money?", "es": "¿Cómo retiro dinero?" },
+    { "phrase": "What's my balance?", "es": "¿Cuál es mi saldo?" },
+    { "phrase": "Is there a monthly fee?", "es": "¿Hay comisión mensual?" },
+    { "phrase": "If you keep five hundred dollars, there's no fee.", "es": "Si mantiene quinientos dólares, no hay comisión." },
+    { "phrase": "I'd like to send money to Mexico.", "es": "Quisiera mandar dinero a México." },
+    { "phrase": "Please enter your PIN.", "es": "Por favor, ingrese su NIP." },
+    { "phrase": "I lost my debit card.", "es": "Perdí mi tarjeta de débito." },
+    { "phrase": "If you lose your card, call us right away.", "es": "Si pierde su tarjeta, llámenos de inmediato." },
+    { "phrase": "Is there someone who speaks Spanish?", "es": "¿Hay alguien que hable español?" }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct first conditional.", "es": "Elige el primer condicional correcto." }, "options": ["If it rains, I'll stay home.", "If it will rain, I'll stay home.", "If it rains, I stayed home.", "If it rain, I will stay home."], "correct": 0, "explanation": { "en": "If + present, will + verb.", "es": "If + presente, will + verbo." } },
+    { "question": { "en": "Complete: \"If you ___ your card, call the bank.\"", "es": "Completa: «If you ___ your card, call the bank.»" }, "options": ["lose", "will lose", "lost", "losing"], "correct": 0, "explanation": { "en": "After \"if\" → present: lose.", "es": "Después de «if» → presente: lose." } },
+    { "question": { "en": "\"Unless\" means…", "es": "«Unless» significa…" }, "options": ["if not / a menos que", "because", "although", "when"], "correct": 0, "explanation": { "en": "Unless = if not.", "es": "Unless = if not." } },
+    { "question": { "en": "The amount of money in your account is the…", "es": "La cantidad de dinero en tu cuenta es el…" }, "options": ["balance", "fee", "loan", "PIN"], "correct": 0, "explanation": { "en": "Balance = saldo.", "es": "Balance = saldo." } },
+    { "question": { "en": "Take money out of your account is…", "es": "Sacar dinero de tu cuenta es…" }, "options": ["withdraw", "deposit", "transfer in", "save"], "correct": 0, "explanation": { "en": "Withdraw = retirar. Deposit = depositar.", "es": "Withdraw = retirar. Deposit = depositar." } },
+    { "question": { "en": "Someone on the phone says he's from your bank and asks for your PIN. You should…", "es": "Alguien por teléfono dice que es de tu banco y te pide el NIP. Debes…" }, "options": ["never give it and hang up", "give it if he's polite", "send it by text", "give half of it"], "correct": 0, "explanation": { "en": "Banks never ask for your PIN.", "es": "Los bancos nunca piden tu NIP." } },
+    { "question": { "en": "Complete: \"If you open an account today, you ___ a free card.\"", "es": "Completa: «If you open an account today, you ___ a free card.»" }, "options": ["will get", "get will", "would got", "getting"], "correct": 0, "explanation": { "en": "Result clause → will + verb.", "es": "Resultado → will + verbo." } },
+    { "question": { "en": "The account for saving money is a…", "es": "La cuenta para ahorrar dinero es una…" }, "options": ["savings account", "checking account", "statement", "loan"], "correct": 0, "explanation": { "en": "Savings account = cuenta de ahorros.", "es": "Savings account = cuenta de ahorros." } }
+  ],
+  "story": {
+    "title": "Carmen's First Bank Account",
+    "text": "Now that Carmen works at the bakery, she needs a bank account for her paychecks. She goes to the bank with her passport and a letter from Grace. \"Good morning. I'd like to open a checking account.\" \"Of course,\" says the woman at the desk. \"If you open it today, you'll get a free debit card.\" \"Is there a monthly fee?\" \"There's a ten-dollar fee unless you keep five hundred dollars in the account.\" Carmen thinks. \"And if I want to send money to my sister in Mexico?\" \"You can do it online. If you need help, you can come here and we'll show you.\" Twenty minutes later, Carmen has her new card. \"Please choose a PIN. Don't tell anyone.\" \"Not even my grandson?\" The woman laughs. \"Especially not your grandson!\" Carmen leaves the bank feeling very independent.",
+    "es": "Ahora que Carmen trabaja en la panadería, necesita una cuenta bancaria para sus pagos. Va al banco con su pasaporte y una carta de Grace. «Buenos días. Quisiera abrir una cuenta de cheques.» «Claro», dice la mujer del escritorio. «Si la abre hoy, recibirá una tarjeta de débito gratis.» «¿Hay comisión mensual?» «Hay una comisión de diez dólares, a menos que mantenga quinientos dólares en la cuenta.» Carmen piensa. «¿Y si quiero mandar dinero a mi hermana en México?» «Lo puede hacer en línea. Si necesita ayuda, puede venir aquí y le enseñamos.» Veinte minutos después, Carmen tiene su tarjeta nueva. «Por favor, elija un NIP. No se lo diga a nadie.» «¿Ni a mi nieto?» La mujer se ríe. «¡Sobre todo a su nieto no!» Carmen sale del banco sintiéndose muy independiente.",
+    "highlighted_words": ["bank account", "paychecks", "I'd like to open a checking account", "If you open it today, you'll get", "debit card", "monthly fee", "unless", "send money", "If you need help", "PIN"]
+  },
+  "arrange": [
+    { "sentence": "I would like to open an account", "es": "Quisiera abrir una cuenta." },
+    { "sentence": "If you lose your card call the bank", "es": "Si pierdes tu tarjeta, llama al banco." },
+    { "sentence": "Is there a monthly fee", "es": "¿Hay comisión mensual?" },
+    { "sentence": "If it rains I will stay home", "es": "Si llueve, me quedo en casa." },
+    { "sentence": "I would like to deposit this check", "es": "Quisiera depositar este cheque." },
+    { "sentence": "What documents do I need", "es": "¿Qué documentos necesito?" }
+  ],
+  "translate": [
+    { "answer": "I would like to open an account", "es": "Quisiera abrir una cuenta" },
+    { "answer": "What is my balance", "es": "¿Cuál es mi saldo?" },
+    { "answer": "I lost my card", "es": "Perdí mi tarjeta" },
+    { "answer": "If I have time, I will call you", "es": "Si tengo tiempo, te llamo" },
+    { "answer": "Is there a fee", "es": "¿Hay comisión?" },
+    { "answer": "I want to send money to Mexico", "es": "Quiero mandar dinero a México" }
+  ]
+}

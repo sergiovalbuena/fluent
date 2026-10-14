@@ -1,0 +1,85 @@
+{
+  "lesson": 54,
+  "slug": "lesson-54",
+  "icon": "📱",
+  "title": { "en": "At the phone store", "es": "En la tienda de celulares" },
+  "grammar": [
+    { "structure": "Which one…?", "example": "Which one is better for photos?", "en": "Choosing between options", "es": "Elegir entre opciones" },
+    { "structure": "comparatives (review)", "example": "This phone is cheaper and lighter than that one.", "en": "Comparing two things", "es": "Comparar dos cosas" },
+    { "structure": "superlatives (review)", "example": "This is the easiest phone to use.", "en": "The top of the group", "es": "El máximo del grupo" },
+    { "structure": "one / ones", "example": "I don't want the black one. I want the blue one.", "en": "Avoiding repetition", "es": "Evitar repetir el sustantivo" },
+    { "structure": "easy / hard + to + verb", "example": "It's easy to use.", "en": "Describing how easy something is", "es": "Describir qué tan fácil es algo" }
+  ],
+  "tips": [
+    { "en": "\"One\" replaces a singular noun and \"ones\" a plural: \"the big ones\" = los grandes.", "es": "«One» reemplaza un sustantivo singular y «ones» uno plural: «the big ones» = los grandes." },
+    { "en": "A \"plan\" is the monthly contract for calls and data. Prepaid plans don't need a credit check.", "es": "Un «plan» es el contrato mensual de llamadas y datos. Los planes prepagados no revisan tu historial de crédito." },
+    { "en": "\"Data\" is your internet on the phone. \"Unlimited data\" means no limit.", "es": "«Data» es tu internet en el celular. «Unlimited data» significa sin límite." },
+    { "en": "Ask the clerk to set up your phone in Spanish and transfer your photos and contacts.", "es": "Pídele al vendedor que configure tu teléfono en español y pase tus fotos y contactos." },
+    { "en": "Compare at least two options before you sign a contract.", "es": "Compara al menos dos opciones antes de firmar un contrato." }
+  ],
+  "vocabulary": [
+    { "word": "smartphone", "es": "teléfono inteligente" },
+    { "word": "screen", "es": "pantalla" },
+    { "word": "camera", "es": "cámara" },
+    { "word": "battery life", "es": "duración de la batería" },
+    { "word": "storage", "es": "almacenamiento" },
+    { "word": "data", "es": "datos (internet)" },
+    { "word": "plan", "es": "plan (de telefonía)" },
+    { "word": "prepaid", "es": "prepago" },
+    { "word": "contract", "es": "contrato" },
+    { "word": "case", "es": "funda" },
+    { "word": "screen protector", "es": "mica / protector de pantalla" },
+    { "word": "app", "es": "aplicación" },
+    { "word": "update", "es": "actualizar / actualización" },
+    { "word": "contacts", "es": "contactos" },
+    { "word": "lighter", "es": "más ligero" },
+    { "word": "cheaper", "es": "más barato" },
+    { "word": "the easiest", "es": "el más fácil" }
+  ],
+  "phrases": [
+    { "phrase": "I'm looking for a new phone.", "es": "Busco un celular nuevo." },
+    { "phrase": "Which one is better for photos?", "es": "¿Cuál es mejor para fotos?" },
+    { "phrase": "This one has a bigger screen.", "es": "Este tiene la pantalla más grande." },
+    { "phrase": "That one is cheaper.", "es": "Ese es más barato." },
+    { "phrase": "Which is the easiest to use?", "es": "¿Cuál es el más fácil de usar?" },
+    { "phrase": "How long does the battery last?", "es": "¿Cuánto dura la batería?" },
+    { "phrase": "Is there a prepaid plan?", "es": "¿Hay plan de prepago?" },
+    { "phrase": "Does it include unlimited data?", "es": "¿Incluye datos ilimitados?" },
+    { "phrase": "Can you move my photos and contacts?", "es": "¿Me puede pasar mis fotos y contactos?" },
+    { "phrase": "Can you set it up in Spanish?", "es": "¿Me lo puede configurar en español?" },
+    { "phrase": "I'll take the blue one.", "es": "Me llevo el azul." },
+    { "phrase": "I need a case for it.", "es": "Necesito una funda para él." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"I don't like the black phone. I prefer the blue ___.\"", "es": "Completa: «I don't like the black phone. I prefer the blue ___.»" }, "options": ["one", "ones", "it", "phone one"], "correct": 0, "explanation": { "en": "\"One\" replaces a singular noun.", "es": "«One» reemplaza un sustantivo singular." } },
+    { "question": { "en": "Complete: \"These cases are nice, but I want the red ___.\"", "es": "Completa: «These cases are nice, but I want the red ___.»" }, "options": ["ones", "one", "them", "it"], "correct": 0, "explanation": { "en": "\"Ones\" replaces a plural noun.", "es": "«Ones» reemplaza un sustantivo plural." } },
+    { "question": { "en": "Choose the correct comparative.", "es": "Elige el comparativo correcto." }, "options": ["This phone is lighter than that one.", "This phone is more light than that one.", "This phone is lightest than that one.", "This phone is light than that one."], "correct": 0, "explanation": { "en": "light → lighter than.", "es": "light → lighter than." } },
+    { "question": { "en": "Choose the correct superlative.", "es": "Elige el superlativo correcto." }, "options": ["It's the easiest phone to use.", "It's the most easy phone to use.", "It's the easier phone to use.", "It's easiest phone to use."], "correct": 0, "explanation": { "en": "easy → the easiest.", "es": "easy → the easiest." } },
+    { "question": { "en": "A cover that protects your phone is a…", "es": "Una cubierta que protege tu teléfono es una…" }, "options": ["case", "plan", "storage", "update"], "correct": 0, "explanation": { "en": "Case = funda.", "es": "Case = funda." } },
+    { "question": { "en": "A plan you pay before using, without a credit check, is…", "es": "Un plan que pagas antes de usarlo, sin revisión de crédito, es…" }, "options": ["prepaid", "unlimited", "contract only", "storage"], "correct": 0, "explanation": { "en": "Prepaid = prepago.", "es": "Prepaid = prepago." } },
+    { "question": { "en": "Complete: \"It's easy ___ use.\"", "es": "Completa: «It's easy ___ use.»" }, "options": ["to", "for", "of", "at"], "correct": 0, "explanation": { "en": "easy + to + verb.", "es": "easy + to + verbo." } },
+    { "question": { "en": "You want to choose between two phones. You ask:", "es": "Quieres elegir entre dos teléfonos. Preguntas:" }, "options": ["Which one is better?", "What one is better?", "Who is better?", "Which better one is?"], "correct": 0, "explanation": { "en": "Which one…? for choosing between options.", "es": "Which one…? para elegir entre opciones." } }
+  ],
+  "story": {
+    "title": "A New Phone",
+    "text": "Carmen's old phone is very slow, and the battery doesn't last. Leo goes with her to the phone store. \"I'm looking for a new phone,\" Carmen tells the clerk. \"Something easy to use, with a good camera for photos of my grandson.\" The clerk shows her two phones. \"This one is cheaper and lighter. That one has a bigger screen and the best camera in the store.\" \"Which one is easier to use?\" \"This one. It's the easiest phone we have.\" Leo whispers, \"Grandma, the one with the big screen is better for video calls with Aunt Rosa.\" Carmen thinks. \"How long does the battery last?\" \"Two days.\" \"Okay. I'll take the one with the big screen. Can you set it up in Spanish and move my photos and contacts?\" \"Of course.\" At home, Carmen takes her first photo: Leo, smiling, with the new red case he chose.",
+    "es": "El teléfono viejo de Carmen es muy lento y la batería no le dura. Leo la acompaña a la tienda de celulares. «Busco un celular nuevo», le dice Carmen al vendedor. «Algo fácil de usar, con buena cámara para tomarle fotos a mi nieto.» El vendedor le muestra dos teléfonos. «Este es más barato y más ligero. Ese tiene la pantalla más grande y la mejor cámara de la tienda.» «¿Cuál es más fácil de usar?» «Este. Es el teléfono más fácil que tenemos.» Leo le susurra: «Abuela, el de la pantalla grande es mejor para las videollamadas con la tía Rosa.» Carmen piensa. «¿Cuánto dura la batería?» «Dos días.» «Bueno. Me llevo el de la pantalla grande. ¿Me lo puede configurar en español y pasar mis fotos y contactos?» «Claro.» En casa, Carmen toma su primera foto: Leo, sonriendo, con la funda roja nueva que él escogió.",
+    "highlighted_words": ["phone store", "I'm looking for a new phone", "easy to use", "camera", "This one is cheaper and lighter", "That one has a bigger screen", "the best camera", "Which one is easier to use", "the easiest", "How long does the battery last", "I'll take the one", "contacts", "case"]
+  },
+  "arrange": [
+    { "sentence": "Which one is better for photos", "es": "¿Cuál es mejor para fotos?" },
+    { "sentence": "This one is cheaper than that one", "es": "Este es más barato que ese." },
+    { "sentence": "It is the easiest phone to use", "es": "Es el teléfono más fácil de usar." },
+    { "sentence": "I will take the blue one", "es": "Me llevo el azul." },
+    { "sentence": "How long does the battery last", "es": "¿Cuánto dura la batería?" },
+    { "sentence": "Can you set it up in Spanish", "es": "¿Me lo puede configurar en español?" }
+  ],
+  "translate": [
+    { "answer": "Which one is cheaper", "es": "¿Cuál es más barato?" },
+    { "answer": "I want the red one", "es": "Quiero el rojo" },
+    { "answer": "It is easy to use", "es": "Es fácil de usar" },
+    { "answer": "I need a new phone", "es": "Necesito un celular nuevo" },
+    { "answer": "Is there a prepaid plan", "es": "¿Hay plan de prepago?" },
+    { "answer": "This one has a better camera", "es": "Este tiene mejor cámara" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 50,
+  "slug": "lesson-50",
+  "icon": "✉️",
+  "title": { "en": "At the post office", "es": "En la oficina de correos" },
+  "grammar": [
+    { "structure": "is / are + past participle", "example": "Letters are delivered every day.", "en": "Present passive", "es": "Voz pasiva en presente" },
+    { "structure": "was / were + past participle", "example": "The package was sent on Monday.", "en": "Past passive", "es": "Voz pasiva en pasado" },
+    { "structure": "will be + past participle", "example": "It will be delivered in five days.", "en": "Future passive", "es": "Voz pasiva en futuro" },
+    { "structure": "passive + by", "example": "The box was packed by Leo.", "en": "Saying who did the action", "es": "Decir quién hizo la acción" },
+    { "structure": "How long will it take to arrive?", "example": "How long will it take to get to Mexico?", "en": "Asking about delivery time", "es": "Preguntar el tiempo de entrega" }
+  ],
+  "tips": [
+    { "en": "We use the passive when the action matters more than who does it: \"The package was delivered.\"", "es": "Se usa la voz pasiva cuando importa más la acción que quién la hace: «The package was delivered»." },
+    { "en": "The passive often translates to Spanish with \"se\": \"English is spoken here\" = Aquí se habla inglés.", "es": "La pasiva suele traducirse al español con «se»: «English is spoken here» = Aquí se habla inglés." },
+    { "en": "For international packages you must fill out a customs form describing what's inside.", "es": "Para paquetes internacionales hay que llenar un formulario de aduana que describa el contenido." },
+    { "en": "A \"tracking number\" lets you follow your package online.", "es": "El «tracking number» (número de rastreo) te permite seguir tu paquete en línea." },
+    { "en": "ZIP codes in the US have 5 digits. Always include them in the address.", "es": "Los códigos postales (ZIP codes) en Estados Unidos tienen 5 dígitos. Inclúyelos siempre en la dirección." }
+  ],
+  "vocabulary": [
+    { "word": "post office", "es": "oficina de correos" },
+    { "word": "mail", "es": "correo" },
+    { "word": "letter", "es": "carta" },
+    { "word": "package", "es": "paquete" },
+    { "word": "envelope", "es": "sobre" },
+    { "word": "stamp", "es": "estampilla / timbre" },
+    { "word": "address", "es": "dirección" },
+    { "word": "ZIP code", "es": "código postal" },
+    { "word": "sender", "es": "remitente" },
+    { "word": "recipient", "es": "destinatario" },
+    { "word": "tracking number", "es": "número de rastreo" },
+    { "word": "customs form", "es": "formulario de aduana" },
+    { "word": "fragile", "es": "frágil" },
+    { "word": "deliver", "es": "entregar" },
+    { "word": "weigh", "es": "pesar" },
+    { "word": "express", "es": "exprés / urgente" },
+    { "word": "mailbox", "es": "buzón" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to send this package to Mexico.", "es": "Quisiera mandar este paquete a México." },
+    { "phrase": "How much does it cost to send it?", "es": "¿Cuánto cuesta mandarlo?" },
+    { "phrase": "Let me weigh it.", "es": "Déjeme pesarlo." },
+    { "phrase": "You need to fill out this customs form.", "es": "Necesita llenar este formulario de aduana." },
+    { "phrase": "What's inside the package?", "es": "¿Qué hay dentro del paquete?" },
+    { "phrase": "It's fragile.", "es": "Es frágil." },
+    { "phrase": "How long will it take to arrive?", "es": "¿Cuánto tarda en llegar?" },
+    { "phrase": "It will be delivered in a week.", "es": "Será entregado en una semana." },
+    { "phrase": "Here's your tracking number.", "es": "Aquí está su número de rastreo." },
+    { "phrase": "Can I buy some stamps?", "es": "¿Puedo comprar unas estampillas?" },
+    { "phrase": "Your package was delivered!", "es": "¡Tu paquete fue entregado!" },
+    { "phrase": "Is this the right ZIP code?", "es": "¿Este es el código postal correcto?" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"The package ___ yesterday.\"", "es": "Completa: «The package ___ yesterday.»" }, "options": ["was delivered", "delivered was", "is deliver", "were delivered"], "correct": 0, "explanation": { "en": "Past passive: was + past participle.", "es": "Pasiva en pasado: was + participio." } },
+    { "question": { "en": "Complete: \"Letters ___ every day.\"", "es": "Completa: «Letters ___ every day.»" }, "options": ["are delivered", "is delivered", "delivered are", "are deliver"], "correct": 0, "explanation": { "en": "Plural present passive: are + past participle.", "es": "Pasiva presente en plural: are + participio." } },
+    { "question": { "en": "How do you say \"Aquí se habla español\"?", "es": "¿Cómo se dice «Aquí se habla español»?" }, "options": ["Spanish is spoken here.", "Here speaks Spanish.", "Spanish speaks here.", "Here is spoke Spanish."], "correct": 0, "explanation": { "en": "The passive: is spoken.", "es": "La pasiva: is spoken." } },
+    { "question": { "en": "Complete: \"It ___ delivered next Monday.\"", "es": "Completa: «It ___ delivered next Monday.»" }, "options": ["will be", "will", "is being will", "was"], "correct": 0, "explanation": { "en": "Future passive: will be + past participle.", "es": "Pasiva futura: will be + participio." } },
+    { "question": { "en": "The number to follow your package online is the…", "es": "El número para seguir tu paquete en línea es el…" }, "options": ["tracking number", "ZIP code", "stamp", "PIN"], "correct": 0, "explanation": { "en": "Tracking number = número de rastreo.", "es": "Tracking number = número de rastreo." } },
+    { "question": { "en": "The person who sends a letter is the…", "es": "La persona que manda una carta es el…" }, "options": ["sender", "recipient", "mailbox", "carrier bag"], "correct": 0, "explanation": { "en": "Sender = remitente. Recipient = destinatario.", "es": "Sender = remitente. Recipient = destinatario." } },
+    { "question": { "en": "Complete: \"The box was packed ___ Leo.\"", "es": "Completa: «The box was packed ___ Leo.»" }, "options": ["by", "from", "of", "with"], "correct": 0, "explanation": { "en": "Passive + by + who did it.", "es": "Pasiva + by + quién lo hizo." } },
+    { "question": { "en": "Glasses and plates in a box are…", "es": "Vasos y platos en una caja son…" }, "options": ["fragile", "express", "heavy-duty", "delivered"], "correct": 0, "explanation": { "en": "Fragile = can break easily.", "es": "Fragile = se puede romper fácilmente." } }
+  ],
+  "story": {
+    "title": "A Box for Rosa",
+    "text": "Rosa's birthday is in two weeks. Carmen wants to send her a box from San Diego: a scarf, chocolates and a photo of the family. The box is packed by Leo very carefully. At the post office, the clerk weighs it. \"It's four pounds. Where is it going?\" \"To Guadalajara, Mexico.\" \"You need to fill out this customs form. What's inside?\" \"A scarf, chocolates and a photo. And the photo frame is fragile.\" \"Okay. With express mail, it will be delivered in five days. With regular mail, two weeks.\" \"Express, please. Her birthday is soon!\" \"Here's your tracking number.\" Every day Carmen checks it on her phone. On the fifth day, a message appears: \"Your package was delivered.\" That evening, Rosa calls on video, wearing the scarf. \"Carmen! The photo was the best present.\"",
+    "es": "El cumpleaños de Rosa es en dos semanas. Carmen quiere mandarle una caja desde San Diego: una bufanda, chocolates y una foto de la familia. Leo empaca la caja con mucho cuidado. En la oficina de correos, el empleado la pesa. «Son cuatro libras. ¿A dónde va?» «A Guadalajara, México.» «Necesita llenar este formulario de aduana. ¿Qué hay dentro?» «Una bufanda, chocolates y una foto. Y el marco de la foto es frágil.» «Bueno. Por correo exprés, será entregado en cinco días. Por correo normal, dos semanas.» «Exprés, por favor. ¡Su cumpleaños es pronto!» «Aquí está su número de rastreo.» Todos los días Carmen lo revisa en su teléfono. El quinto día aparece un mensaje: «Su paquete fue entregado.» Esa noche, Rosa llama por video con la bufanda puesta. «¡Carmen! La foto fue el mejor regalo.»",
+    "highlighted_words": ["The box is packed by Leo", "post office", "weighs", "customs form", "fragile", "express mail", "it will be delivered", "tracking number", "Your package was delivered"]
+  },
+  "arrange": [
+    { "sentence": "I would like to send this package", "es": "Quisiera mandar este paquete." },
+    { "sentence": "The letter was sent on Monday", "es": "La carta fue enviada el lunes." },
+    { "sentence": "It will be delivered in five days", "es": "Será entregado en cinco días." },
+    { "sentence": "Spanish is spoken here", "es": "Aquí se habla español." },
+    { "sentence": "You need to fill out this form", "es": "Necesita llenar este formulario." },
+    { "sentence": "How long will it take to arrive", "es": "¿Cuánto tarda en llegar?" }
+  ],
+  "translate": [
+    { "answer": "Your package was delivered", "es": "Su paquete fue entregado" },
+    { "answer": "It is fragile", "es": "Es frágil" },
+    { "answer": "Can I buy some stamps", "es": "¿Puedo comprar unas estampillas?" },
+    { "answer": "English is spoken here", "es": "Aquí se habla inglés" },
+    { "answer": "Here is your tracking number", "es": "Aquí está su número de rastreo" },
+    { "answer": "The box was packed by my grandson", "es": "La caja fue empacada por mi nieto" }
+  ]
+}

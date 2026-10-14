@@ -1,0 +1,87 @@
+{
+  "lesson": 15,
+  "slug": "lesson-15",
+  "icon": "🥖",
+  "title": { "en": "Food and drinks", "es": "Comida y bebidas" },
+  "grammar": [
+    { "structure": "countable / uncountable", "example": "an egg, two eggs / some rice, some milk", "en": "Countable and uncountable nouns", "es": "Sustantivos contables e incontables" },
+    { "structure": "some (affirmative)", "example": "I need some milk and some apples.", "en": "\"Some\" in affirmative sentences", "es": "«Some» en oraciones afirmativas" },
+    { "structure": "any (negatives and questions)", "example": "We don't have any bread. Do you have any eggs?", "en": "\"Any\" in negatives and questions", "es": "«Any» en negaciones y preguntas" },
+    { "structure": "I'd like…", "example": "I'd like a sandwich, please.", "en": "Polite way to order", "es": "Forma amable de pedir" },
+    { "structure": "How much / How many", "example": "How much sugar? How many eggs?", "en": "Quantity: uncountable vs. countable", "es": "Cantidad: incontable vs. contable" }
+  ],
+  "tips": [
+    { "en": "You can count eggs and apples, but not milk, rice or bread: say \"some bread\" or \"a loaf of bread\".", "es": "Puedes contar huevos y manzanas, pero no leche, arroz o pan: se dice «some bread» o «a loaf of bread»." },
+    { "en": "\"I'd like\" (I would like) is softer and more polite than \"I want\".", "es": "«I'd like» (me gustaría) es más suave y amable que «I want» (quiero)." },
+    { "en": "In the US, \"dinner\" is the evening meal, usually around 6 or 7 p.m. — earlier than in Mexico.", "es": "En Estados Unidos, «dinner» es la comida de la noche, normalmente a las 6 o 7: más temprano que en México." },
+    { "en": "\"Lunch\" is the midday meal; it's often quick and light.", "es": "«Lunch» es la comida del mediodía; suele ser rápida y ligera." },
+    { "en": "\"Chicken\" is both the animal and the meat; \"fish\" too.", "es": "«Chicken» es el animal y la carne; «fish» también." }
+  ],
+  "vocabulary": [
+    { "word": "breakfast", "es": "desayuno" },
+    { "word": "lunch", "es": "almuerzo / comida" },
+    { "word": "dinner", "es": "cena" },
+    { "word": "bread", "es": "pan" },
+    { "word": "rice", "es": "arroz" },
+    { "word": "beans", "es": "frijoles" },
+    { "word": "egg", "es": "huevo" },
+    { "word": "cheese", "es": "queso" },
+    { "word": "meat", "es": "carne" },
+    { "word": "soup", "es": "sopa" },
+    { "word": "sugar", "es": "azúcar" },
+    { "word": "salt", "es": "sal" },
+    { "word": "milk", "es": "leche" },
+    { "word": "juice", "es": "jugo" },
+    { "word": "tea", "es": "té" },
+    { "word": "water", "es": "agua" },
+    { "word": "hungry", "es": "hambriento (tener hambre)" },
+    { "word": "thirsty", "es": "sediento (tener sed)" },
+    { "word": "delicious", "es": "delicioso" }
+  ],
+  "phrases": [
+    { "phrase": "I'm hungry.", "es": "Tengo hambre." },
+    { "phrase": "I'm thirsty.", "es": "Tengo sed." },
+    { "phrase": "What's for dinner?", "es": "¿Qué hay de cenar?" },
+    { "phrase": "I'd like a cup of tea, please.", "es": "Quisiera una taza de té, por favor." },
+    { "phrase": "Do we have any eggs?", "es": "¿Tenemos huevos?" },
+    { "phrase": "We don't have any milk.", "es": "No tenemos leche." },
+    { "phrase": "Can you pass the salt, please?", "es": "¿Me pasas la sal, por favor?" },
+    { "phrase": "This is delicious!", "es": "¡Esto está delicioso!" },
+    { "phrase": "Would you like some more?", "es": "¿Quieres más?" },
+    { "phrase": "No, thanks. I'm full.", "es": "No, gracias. Estoy lleno/a." },
+    { "phrase": "Breakfast is ready!", "es": "¡El desayuno está listo!" },
+    { "phrase": "Enjoy your meal!", "es": "¡Buen provecho!" }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I need some bread.", "I need a bread.", "I need two breads.", "I need some breads."], "correct": 0, "explanation": { "en": "\"Bread\" is uncountable: some bread.", "es": "«Bread» es incontable: some bread." } },
+    { "question": { "en": "Complete: \"We don't have ___ milk.\"", "es": "Completa: «We don't have ___ milk.»" }, "options": ["any", "some", "a", "many"], "correct": 0, "explanation": { "en": "In negative sentences we use \"any\".", "es": "En oraciones negativas se usa «any»." } },
+    { "question": { "en": "How do you say \"Tengo hambre\"?", "es": "¿Cómo se dice «Tengo hambre»?" }, "options": ["I'm hungry.", "I have hungry.", "I have hunger.", "I'm hunger."], "correct": 0, "explanation": { "en": "English uses \"to be\": I'm hungry, I'm thirsty.", "es": "El inglés usa «to be»: I'm hungry, I'm thirsty." } },
+    { "question": { "en": "Which is the most polite way to order?", "es": "¿Cuál es la forma más amable de pedir?" }, "options": ["I'd like a coffee, please.", "Give me coffee.", "Coffee now.", "I want coffee."], "correct": 0, "explanation": { "en": "\"I'd like…, please\" is polite.", "es": "«I'd like…, please» es amable." } },
+    { "question": { "en": "Complete: \"How ___ eggs do you need?\"", "es": "Completa: «How ___ eggs do you need?»" }, "options": ["many", "much", "any", "some"], "correct": 0, "explanation": { "en": "Eggs are countable → How many.", "es": "Los huevos son contables → How many." } },
+    { "question": { "en": "Complete: \"How ___ sugar do you want?\"", "es": "Completa: «How ___ sugar do you want?»" }, "options": ["much", "many", "some", "a"], "correct": 0, "explanation": { "en": "Sugar is uncountable → How much.", "es": "El azúcar es incontable → How much." } },
+    { "question": { "en": "You can't eat more. What do you say?", "es": "Ya no puedes comer más. ¿Qué dices?" }, "options": ["No, thanks. I'm full.", "Yes, I'm hungry.", "I'm thirsty.", "Breakfast is ready."], "correct": 0, "explanation": { "en": "\"I'm full\" means you ate enough.", "es": "«I'm full» significa que ya comiste suficiente." } },
+    { "question": { "en": "What is the evening meal called?", "es": "¿Cómo se llama la comida de la noche?" }, "options": ["dinner", "breakfast", "lunch", "snack"], "correct": 0, "explanation": { "en": "Breakfast (morning), lunch (midday), dinner (evening).", "es": "Breakfast (mañana), lunch (mediodía), dinner (noche)." } }
+  ],
+  "story": {
+    "title": "Tamales for Everyone",
+    "text": "Grace, the baker, calls Carmen. \"Can you make tamales for our bakery on Friday?\" Carmen is very excited. On Thursday she goes to the supermarket with Laura. \"We need some corn flour, some meat and some cheese,\" says Carmen. \"Do we need any beans?\" asks Laura. \"Yes, a big bag of beans. And we don't have any salt at home.\" In the evening, the kitchen smells wonderful. Leo comes in. \"I'm hungry! What's for dinner?\" \"Tamales, but only one for you. The rest are for the bakery!\" On Friday, Grace tries a tamale. \"This is delicious! Can you make one hundred for next week?\" Carmen laughs. \"One hundred? I need a lot of corn flour!\"",
+    "es": "Grace, la panadera, llama a Carmen. «¿Puedes hacer tamales para nuestra panadería el viernes?» Carmen está muy emocionada. El jueves va al supermercado con Laura. «Necesitamos harina de maíz, carne y queso», dice Carmen. «¿Necesitamos frijoles?», pregunta Laura. «Sí, una bolsa grande de frijoles. Y no tenemos sal en casa.» En la noche, la cocina huele maravilloso. Entra Leo. «¡Tengo hambre! ¿Qué hay de cenar?» «Tamales, pero solo uno para ti. ¡Los demás son para la panadería!» El viernes, Grace prueba un tamal. «¡Está delicioso! ¿Puedes hacer cien para la próxima semana?» Carmen se ríe. «¿Cien? ¡Necesito mucha harina de maíz!»",
+    "highlighted_words": ["baker", "some corn flour", "some meat", "some cheese", "any beans", "beans", "we don't have any salt", "I'm hungry", "What's for dinner", "delicious"]
+  },
+  "arrange": [
+    { "sentence": "I would like a cup of tea", "es": "Quisiera una taza de té." },
+    { "sentence": "We do not have any milk", "es": "No tenemos leche." },
+    { "sentence": "Do you have any eggs", "es": "¿Tienes huevos?" },
+    { "sentence": "This soup is delicious", "es": "Esta sopa está deliciosa." },
+    { "sentence": "Can you pass the salt please", "es": "¿Me pasas la sal, por favor?" },
+    { "sentence": "We need some bread for breakfast", "es": "Necesitamos pan para el desayuno." }
+  ],
+  "translate": [
+    { "answer": "I am hungry", "es": "Tengo hambre" },
+    { "answer": "I am thirsty", "es": "Tengo sed" },
+    { "answer": "This is delicious", "es": "Esto está delicioso" },
+    { "answer": "We need some rice", "es": "Necesitamos arroz" },
+    { "answer": "What is for dinner", "es": "¿Qué hay de cenar?" },
+    { "answer": "No, thank you. I am full", "es": "No, gracias. Estoy llena" }
+  ]
+}

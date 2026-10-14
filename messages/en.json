@@ -301,7 +301,8 @@
     "start": "Let's start learning 🚀",
     "saving": "Setting up...",
     "done": "You're all set! Let's start learning. 🚀",
-    "save_error": "Couldn't save your choices. Please try again."
+    "save_error": "Couldn't save your choices. Please try again.",
+    "lang_en": "The world's most widely used language"
   },
   "saved": {
     "tab_items": "Words & phrases",

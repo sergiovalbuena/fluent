@@ -1,0 +1,88 @@
+{
+  "lesson": 5,
+  "slug": "lesson-05",
+  "icon": "🎨",
+  "title": { "en": "Names, colors and personality", "es": "Nombres, colores y personalidad" },
+  "grammar": [
+    { "structure": "adjective + noun", "example": "a red car, a kind woman", "en": "Adjectives go before the noun", "es": "Los adjetivos van antes del sustantivo" },
+    { "structure": "adjectives don't change", "example": "a blue shirt, two blue shirts", "en": "Adjectives have no plural or gender", "es": "Los adjetivos no tienen plural ni género" },
+    { "structure": "be + adjective", "example": "Linda is friendly. They are funny.", "en": "Describing with \"to be\"", "es": "Describir con «to be»" },
+    { "structure": "What's your favorite…?", "example": "What's your favorite color?", "en": "Asking about favorites", "es": "Preguntar por favoritos" },
+    { "structure": "How do you spell…?", "example": "How do you spell your last name?", "en": "Spelling names", "es": "Deletrear nombres" }
+  ],
+  "tips": [
+    { "en": "\"First name\" is your name (Carmen). \"Last name\" is your family name (Ruiz). In the US, most people use only one last name.", "es": "«First name» es tu nombre (Carmen). «Last name» es tu apellido (Ruiz). En Estados Unidos la mayoría usa un solo apellido." },
+    { "en": "Practice spelling your name with the English alphabet: it's one of the most useful skills on the phone.", "es": "Practica deletrear tu nombre con el alfabeto en inglés: es de lo más útil por teléfono." },
+    { "en": "\"Nice\" and \"kind\" are both positive. \"Kind\" means good to other people.", "es": "«Nice» y «kind» son positivos. «Kind» significa bondadoso con los demás." },
+    { "en": "Remember: \"a red dress\", not \"a dress red\".", "es": "Recuerda: «a red dress», no «a dress red»." },
+    { "en": "\"Gray\" is the American spelling; British English writes \"grey\".", "es": "«Gray» es la ortografía estadounidense; en inglés británico se escribe «grey»." }
+  ],
+  "vocabulary": [
+    { "word": "red", "es": "rojo" },
+    { "word": "blue", "es": "azul" },
+    { "word": "green", "es": "verde" },
+    { "word": "yellow", "es": "amarillo" },
+    { "word": "black", "es": "negro" },
+    { "word": "white", "es": "blanco" },
+    { "word": "pink", "es": "rosado" },
+    { "word": "purple", "es": "morado" },
+    { "word": "orange", "es": "naranja / anaranjado" },
+    { "word": "gray", "es": "gris" },
+    { "word": "brown", "es": "café / marrón" },
+    { "word": "first name", "es": "nombre" },
+    { "word": "last name", "es": "apellido" },
+    { "word": "friendly", "es": "amigable" },
+    { "word": "kind", "es": "amable / bondadoso" },
+    { "word": "funny", "es": "divertido / gracioso" },
+    { "word": "shy", "es": "tímido" },
+    { "word": "patient", "es": "paciente" },
+    { "word": "smart", "es": "inteligente" },
+    { "word": "quiet", "es": "callado / tranquilo" }
+  ],
+  "phrases": [
+    { "phrase": "What's your last name?", "es": "¿Cuál es tu apellido?" },
+    { "phrase": "How do you spell it?", "es": "¿Cómo se deletrea?" },
+    { "phrase": "R-U-I-Z.", "es": "R-U-I-Z." },
+    { "phrase": "What's your favorite color?", "es": "¿Cuál es tu color favorito?" },
+    { "phrase": "My favorite color is green.", "es": "Mi color favorito es el verde." },
+    { "phrase": "She is very friendly.", "es": "Ella es muy amigable." },
+    { "phrase": "He's a little shy.", "es": "Él es un poco tímido." },
+    { "phrase": "You're so funny!", "es": "¡Eres muy gracioso!" },
+    { "phrase": "I like your blue dress.", "es": "Me gusta tu vestido azul." },
+    { "phrase": "What is she like?", "es": "¿Cómo es ella? (personalidad)" },
+    { "phrase": "She's kind and patient.", "es": "Es amable y paciente." },
+    { "phrase": "Please call me Carmen.", "es": "Por favor, llámame Carmen." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct order.", "es": "Elige el orden correcto." }, "options": ["a red car", "a car red", "a reds car", "red a car"], "correct": 0, "explanation": { "en": "In English the adjective goes before the noun.", "es": "En inglés el adjetivo va antes del sustantivo." } },
+    { "question": { "en": "Choose the correct plural.", "es": "Elige el plural correcto." }, "options": ["two green bags", "two greens bags", "two bags greens", "two green bag"], "correct": 0, "explanation": { "en": "Adjectives never take -s. Only the noun does: green bags.", "es": "Los adjetivos nunca llevan -s. Solo el sustantivo: green bags." } },
+    { "question": { "en": "Carmen Ruiz: what is her last name?", "es": "Carmen Ruiz: ¿cuál es su «last name»?" }, "options": ["Ruiz", "Carmen", "Carmen Ruiz", "Mrs."], "correct": 0, "explanation": { "en": "The last name is the family name: Ruiz.", "es": "El «last name» es el apellido: Ruiz." } },
+    { "question": { "en": "A person who doesn't talk much with new people is…", "es": "Una persona que no habla mucho con gente nueva es…" }, "options": ["shy", "funny", "friendly", "loud"], "correct": 0, "explanation": { "en": "\"Shy\" describes someone who is nervous with new people.", "es": "«Shy» (tímido) describe a alguien nervioso con gente nueva." } },
+    { "question": { "en": "Mix blue and yellow. What color is it?", "es": "Mezcla azul y amarillo. ¿Qué color sale?" }, "options": ["green", "purple", "orange", "brown"], "correct": 0, "explanation": { "en": "Blue + yellow = green.", "es": "Azul + amarillo = verde." } },
+    { "question": { "en": "Which question asks about personality?", "es": "¿Qué pregunta es sobre la personalidad?" }, "options": ["What is she like?", "What does she like?", "How old is she?", "Where is she?"], "correct": 0, "explanation": { "en": "\"What is she like?\" asks about personality. \"What does she like?\" asks about her tastes.", "es": "«What is she like?» pregunta por la personalidad. «What does she like?» pregunta qué le gusta." } },
+    { "question": { "en": "Complete: \"Linda ___ very kind.\"", "es": "Completa: «Linda ___ very kind.»" }, "options": ["is", "are", "am", "be"], "correct": 0, "explanation": { "en": "Linda = she → is.", "es": "Linda = she → is." } },
+    { "question": { "en": "How do you ask someone to spell their name?", "es": "¿Cómo le pides a alguien que deletree su nombre?" }, "options": ["How do you spell your name?", "How do you write you name?", "How you spell name?", "What spell is your name?"], "correct": 0, "explanation": { "en": "\"How do you spell…?\" is the standard question.", "es": "«How do you spell…?» es la pregunta estándar." } }
+  ],
+  "story": {
+    "title": "The Name Tag",
+    "text": "Today is Carmen's first day of English class. The classroom is small and bright, with yellow walls and blue chairs. The teacher is Mr. Park. He is tall, friendly and very patient. \"Welcome! Please write your first name on a name tag.\" Carmen takes a red marker and writes CARMEN. Next to her is a young woman with a green jacket. \"Hi, I'm Ana. I'm from Brazil.\" \"Nice to meet you, Ana. I'm Carmen, from Mexico.\" Mr. Park asks, \"Carmen, what's your last name?\" \"Ruiz.\" \"How do you spell it?\" \"R-U-I-Z.\" \"Thank you!\" Ana is funny and talks a lot. Carmen is a little shy, but she is happy. Her new class is full of kind people.",
+    "es": "Hoy es el primer día de la clase de inglés de Carmen. El salón es pequeño y luminoso, con paredes amarillas y sillas azules. El profesor es el señor Park. Es alto, amigable y muy paciente. «¡Bienvenidos! Por favor, escriban su nombre en una etiqueta.» Carmen toma un marcador rojo y escribe CARMEN. A su lado hay una joven con una chaqueta verde. «Hola, soy Ana. Soy de Brasil.» «Mucho gusto, Ana. Soy Carmen, de México.» El señor Park pregunta: «Carmen, ¿cuál es tu apellido?» «Ruiz.» «¿Cómo se deletrea?» «R-U-I-Z.» «¡Gracias!» Ana es divertida y habla mucho. Carmen es un poco tímida, pero está feliz. Su nueva clase está llena de gente amable.",
+    "highlighted_words": ["yellow", "blue", "friendly", "patient", "first name", "red", "green", "last name", "How do you spell it", "funny", "shy", "kind"]
+  },
+  "arrange": [
+    { "sentence": "My favorite color is green", "es": "Mi color favorito es el verde." },
+    { "sentence": "She is kind and patient", "es": "Ella es amable y paciente." },
+    { "sentence": "I like your blue dress", "es": "Me gusta tu vestido azul." },
+    { "sentence": "How do you spell your name", "es": "¿Cómo se deletrea tu nombre?" },
+    { "sentence": "He is a little shy", "es": "Él es un poco tímido." },
+    { "sentence": "What is your last name", "es": "¿Cuál es tu apellido?" }
+  ],
+  "translate": [
+    { "answer": "My favorite color is blue", "es": "Mi color favorito es el azul" },
+    { "answer": "She is very friendly", "es": "Ella es muy amigable" },
+    { "answer": "What is your last name", "es": "¿Cuál es tu apellido?" },
+    { "answer": "I have a red car", "es": "Tengo un auto rojo" },
+    { "answer": "He is funny", "es": "Él es divertido" },
+    { "answer": "How do you spell it", "es": "¿Cómo se deletrea?" }
+  ]
+}

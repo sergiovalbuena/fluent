@@ -1,0 +1,85 @@
+{
+  "lesson": 43,
+  "slug": "lesson-43",
+  "icon": "🎓",
+  "title": { "en": "Going to school", "es": "Ir a clases" },
+  "grammar": [
+    { "structure": "was / were + verb-ing", "example": "I was studying when you called.", "en": "Past continuous: an action in progress in the past", "es": "Pasado continuo: una acción en progreso en el pasado" },
+    { "structure": "… when + past simple", "example": "We were talking when the teacher came in.", "en": "An action interrupted by another", "es": "Una acción interrumpida por otra" },
+    { "structure": "while + past continuous", "example": "While I was reading, Leo was playing.", "en": "Two actions at the same time", "es": "Dos acciones al mismo tiempo" },
+    { "structure": "What were you doing…?", "example": "What were you doing at eight last night?", "en": "Questions in the past continuous", "es": "Preguntas en pasado continuo" },
+    { "structure": "sign up for / take a class", "example": "I signed up for a computer class.", "en": "Talking about classes", "es": "Hablar de clases" }
+  ],
+  "tips": [
+    { "en": "The past continuous is like the Spanish \"estaba + -ando/-iendo\": I was cooking = estaba cocinando.", "es": "El pasado continuo es como el español «estaba + -ando/-iendo»: I was cooking = estaba cocinando." },
+    { "en": "Community colleges in the US offer cheap or free classes for adults: English, computers, cooking and more.", "es": "Los community colleges en Estados Unidos ofrecen clases baratas o gratis para adultos: inglés, computación, cocina y más." },
+    { "en": "\"Take a class\" = tomar una clase. Don't say \"make a class\".", "es": "«Take a class» = tomar una clase. No se dice «make a class»." },
+    { "en": "It's normal to ask the teacher questions in class: \"Excuse me, could you explain that again?\"", "es": "Es normal hacerle preguntas al maestro en clase: «Excuse me, could you explain that again?»" },
+    { "en": "\"Homework\" is uncountable: \"a lot of homework\", not \"homeworks\".", "es": "«Homework» es incontable: «a lot of homework», no «homeworks»." }
+  ],
+  "vocabulary": [
+    { "word": "class", "es": "clase" },
+    { "word": "course", "es": "curso" },
+    { "word": "community college", "es": "colegio comunitario" },
+    { "word": "student", "es": "estudiante" },
+    { "word": "classmate", "es": "compañero de clase" },
+    { "word": "homework", "es": "tarea" },
+    { "word": "test", "es": "examen" },
+    { "word": "grade", "es": "calificación" },
+    { "word": "notebook", "es": "cuaderno" },
+    { "word": "laptop", "es": "computadora portátil" },
+    { "word": "sign up", "es": "inscribirse" },
+    { "word": "take a class", "es": "tomar una clase" },
+    { "word": "explain", "es": "explicar" },
+    { "word": "learn", "es": "aprender" },
+    { "word": "while", "es": "mientras" },
+    { "word": "email", "es": "correo electrónico" },
+    { "word": "password", "es": "contraseña" }
+  ],
+  "phrases": [
+    { "phrase": "I signed up for a computer class.", "es": "Me inscribí en una clase de computación." },
+    { "phrase": "What were you doing last night?", "es": "¿Qué estabas haciendo anoche?" },
+    { "phrase": "I was doing my homework.", "es": "Estaba haciendo mi tarea." },
+    { "phrase": "I was sleeping when you called.", "es": "Estaba dormida cuando llamaste." },
+    { "phrase": "Could you explain that again?", "es": "¿Podría explicarlo otra vez?" },
+    { "phrase": "Can I borrow your pen?", "es": "¿Me prestas tu pluma?" },
+    { "phrase": "We have a test on Friday.", "es": "Tenemos examen el viernes." },
+    { "phrase": "I passed the test!", "es": "¡Pasé el examen!" },
+    { "phrase": "I forgot my password.", "es": "Olvidé mi contraseña." },
+    { "phrase": "How do I send an email?", "es": "¿Cómo mando un correo?" },
+    { "phrase": "It's never too late to learn.", "es": "Nunca es tarde para aprender." },
+    { "phrase": "See you next class!", "es": "¡Nos vemos la próxima clase!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"I ___ TV when the phone rang.\"", "es": "Completa: «I ___ TV when the phone rang.»" }, "options": ["was watching", "watched", "were watching", "am watching"], "correct": 0, "explanation": { "en": "Action in progress (was watching) interrupted by another (rang).", "es": "Acción en progreso (was watching) interrumpida por otra (rang)." } },
+    { "question": { "en": "Complete: \"They ___ dinner at eight.\"", "es": "Completa: «They ___ dinner at eight.»" }, "options": ["were having", "was having", "having", "were have"], "correct": 0, "explanation": { "en": "They → were + verb-ing.", "es": "They → were + verbo-ing." } },
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["What were you doing?", "What you were doing?", "What did you doing?", "What was you doing?"], "correct": 0, "explanation": { "en": "What + were + you + verb-ing?", "es": "What + were + you + verbo-ing?" } },
+    { "question": { "en": "\"While I was cooking, Leo was playing\" means…", "es": "«While I was cooking, Leo was playing» significa…" }, "options": ["Both actions happened at the same time.", "Leo played after I cooked.", "I cooked after Leo played.", "Nobody did anything."], "correct": 0, "explanation": { "en": "While = at the same time.", "es": "While = al mismo tiempo." } },
+    { "question": { "en": "How do you say \"tomar una clase\"?", "es": "¿Cómo se dice «tomar una clase»?" }, "options": ["take a class", "make a class", "drink a class", "do a class"], "correct": 0, "explanation": { "en": "Take a class.", "es": "Take a class." } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I have a lot of homework.", "I have a lot of homeworks.", "I have many homeworks.", "I have a homework lots."], "correct": 0, "explanation": { "en": "Homework is uncountable.", "es": "Homework es incontable." } },
+    { "question": { "en": "A person in your class is your…", "es": "Una persona de tu clase es tu…" }, "options": ["classmate", "roommate", "teammate", "landlord"], "correct": 0, "explanation": { "en": "Classmate = compañero de clase.", "es": "Classmate = compañero de clase." } },
+    { "question": { "en": "Complete: \"She was sleeping ___ the alarm went off.\"", "es": "Completa: «She was sleeping ___ the alarm went off.»" }, "options": ["when", "while", "during", "for"], "correct": 0, "explanation": { "en": "Interruption → when + past simple.", "es": "Interrupción → when + pasado simple." } }
+  ],
+  "story": {
+    "title": "Never Too Late",
+    "text": "Carmen wants to send emails and video calls to her sisters by herself, so she signs up for a computer class at the community college. On the first day, the teacher, Ms. Lee, asks everybody to create an email account. Carmen was typing her password when the screen went black. \"Oh no! What happened?\" Her classmate, an old man named Walter, laughs. \"You pressed the power button.\" While Ms. Lee was explaining how to restart, Carmen was writing everything in her notebook. At home, Laura calls. \"Mom, what were you doing? I called three times!\" \"I was doing my homework! I was sending my first email!\" On Friday, Carmen sends a photo to her sister Rosa. Rosa answers in five minutes: \"Carmen, you're a computer expert now!\" Carmen smiles at the screen. It's never too late to learn.",
+    "es": "Carmen quiere mandar correos y hacer videollamadas a sus hermanas ella sola, así que se inscribe en una clase de computación en el colegio comunitario. El primer día, la maestra, la señora Lee, les pide a todos crear una cuenta de correo. Carmen estaba escribiendo su contraseña cuando la pantalla se puso negra. «¡Ay, no! ¿Qué pasó?» Su compañero de clase, un señor mayor llamado Walter, se ríe. «Apretaste el botón de apagado.» Mientras la señora Lee explicaba cómo reiniciar, Carmen anotaba todo en su cuaderno. En casa, llama Laura. «Mamá, ¿qué estabas haciendo? ¡Te llamé tres veces!» «¡Estaba haciendo mi tarea! ¡Estaba mandando mi primer correo!» El viernes, Carmen le manda una foto a su hermana Rosa. Rosa le contesta en cinco minutos: «¡Carmen, ahora eres experta en computadoras!» Carmen le sonríe a la pantalla. Nunca es tarde para aprender.",
+    "highlighted_words": ["signs up for a computer class", "community college", "email", "was typing her password when", "classmate", "While Ms. Lee was explaining", "was writing", "notebook", "what were you doing", "I was doing my homework", "never too late to learn"]
+  },
+  "arrange": [
+    { "sentence": "I was cooking when you called", "es": "Estaba cocinando cuando llamaste." },
+    { "sentence": "What were you doing last night", "es": "¿Qué estabas haciendo anoche?" },
+    { "sentence": "I signed up for a computer class", "es": "Me inscribí en una clase de computación." },
+    { "sentence": "While I was reading Leo was playing", "es": "Mientras yo leía, Leo jugaba." },
+    { "sentence": "Could you explain that again", "es": "¿Podría explicarlo otra vez?" },
+    { "sentence": "It is never too late to learn", "es": "Nunca es tarde para aprender." }
+  ],
+  "translate": [
+    { "answer": "I was doing my homework", "es": "Estaba haciendo mi tarea" },
+    { "answer": "What were you doing", "es": "¿Qué estabas haciendo?" },
+    { "answer": "I forgot my password", "es": "Olvidé mi contraseña" },
+    { "answer": "We have a test on Friday", "es": "Tenemos examen el viernes" },
+    { "answer": "She was sleeping when I arrived", "es": "Ella estaba dormida cuando llegué" },
+    { "answer": "I passed the test", "es": "Pasé el examen" }
+  ]
+}

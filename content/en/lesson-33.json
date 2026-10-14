@@ -1,0 +1,85 @@
+{
+  "lesson": 33,
+  "slug": "lesson-33",
+  "icon": "✈️",
+  "title": { "en": "On the plane", "es": "En el avión" },
+  "grammar": [
+    { "structure": "should + verb", "example": "You should drink water on long flights.", "en": "Advice with \"should\"", "es": "Consejos con «should» (deberías)" },
+    { "structure": "shouldn't + verb", "example": "You shouldn't stand up during takeoff.", "en": "Negative advice", "es": "Consejo negativo" },
+    { "structure": "Should I…?", "example": "Should I fasten my seatbelt now?", "en": "Asking for advice", "es": "Pedir consejo" },
+    { "structure": "Would you like…? — I'd like…", "example": "Would you like something to drink? — I'd like some water.", "en": "Offers on the plane", "es": "Ofrecimientos en el avión" },
+    { "structure": "Excuse me, could I…?", "example": "Excuse me, could I get past?", "en": "Polite requests to other passengers", "es": "Pedidos amables a otros pasajeros" }
+  ],
+  "tips": [
+    { "en": "\"Should\" is softer than \"have to\": it's advice, not a rule.", "es": "«Should» es más suave que «have to»: es un consejo, no una regla." },
+    { "en": "\"Flight attendant\" is the modern word (not \"stewardess\").", "es": "«Flight attendant» es la palabra actual para el sobrecargo (no «stewardess»)." },
+    { "en": "If you need to go to the bathroom from a window seat, say \"Excuse me, could I get past?\"", "es": "Si necesitas ir al baño desde la ventana, di «Excuse me, could I get past?» (¿me permite pasar?)." },
+    { "en": "On domestic US flights, drinks and small snacks are usually free; meals often cost extra.", "es": "En los vuelos nacionales de Estados Unidos, las bebidas y botanas pequeñas suelen ser gratis; las comidas suelen costar aparte." },
+    { "en": "\"Turbulence\" is normal. Keep your seatbelt fastened when you're seated.", "es": "La turbulencia es normal. Mantén el cinturón abrochado cuando estés sentado." }
+  ],
+  "vocabulary": [
+    { "word": "plane", "es": "avión" },
+    { "word": "flight attendant", "es": "sobrecargo / azafata" },
+    { "word": "pilot", "es": "piloto" },
+    { "word": "passenger", "es": "pasajero" },
+    { "word": "seatbelt", "es": "cinturón de seguridad" },
+    { "word": "fasten", "es": "abrochar" },
+    { "word": "takeoff", "es": "despegue" },
+    { "word": "landing", "es": "aterrizaje" },
+    { "word": "turbulence", "es": "turbulencia" },
+    { "word": "blanket", "es": "cobija / manta" },
+    { "word": "pillow", "es": "almohada" },
+    { "word": "overhead bin", "es": "compartimento superior" },
+    { "word": "aisle", "es": "pasillo" },
+    { "word": "snack", "es": "botana / bocadillo" },
+    { "word": "should", "es": "debería (consejo)" },
+    { "word": "jet lag", "es": "desfase horario" },
+    { "word": "window shade", "es": "persiana de la ventanilla" }
+  ],
+  "phrases": [
+    { "phrase": "Please fasten your seatbelt.", "es": "Por favor, abróchese el cinturón." },
+    { "phrase": "Would you like something to drink?", "es": "¿Le gustaría algo de tomar?" },
+    { "phrase": "Some water, please.", "es": "Agua, por favor." },
+    { "phrase": "Excuse me, could I get past?", "es": "Disculpe, ¿me permite pasar?" },
+    { "phrase": "Could I have a blanket?", "es": "¿Me podría dar una cobija?" },
+    { "phrase": "Is this seat taken?", "es": "¿Está ocupado este asiento?" },
+    { "phrase": "You should drink a lot of water.", "es": "Deberías tomar mucha agua." },
+    { "phrase": "You shouldn't worry.", "es": "No deberías preocuparte." },
+    { "phrase": "Should I turn off my phone?", "es": "¿Debo apagar mi teléfono?" },
+    { "phrase": "We are starting our descent.", "es": "Estamos iniciando el descenso." },
+    { "phrase": "Welcome to New York!", "es": "¡Bienvenidos a Nueva York!" },
+    { "phrase": "That was a smooth flight.", "es": "Fue un vuelo tranquilo." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"You ___ drink water on a long flight.\" (advice)", "es": "Completa: «You ___ drink water on a long flight.» (consejo)" }, "options": ["should", "should to", "shoulds", "have"], "correct": 0, "explanation": { "en": "Advice: should + verb (no \"to\").", "es": "Consejo: should + verbo (sin «to»)." } },
+    { "question": { "en": "Choose the negative advice.", "es": "Elige el consejo negativo." }, "options": ["You shouldn't stand up now.", "You don't should stand up now.", "You should not to stand up now.", "You no should stand up now."], "correct": 0, "explanation": { "en": "Negative: shouldn't + verb.", "es": "Negativo: shouldn't + verbo." } },
+    { "question": { "en": "You are in the window seat and want to go to the bathroom. You say:", "es": "Estás en la ventana y quieres ir al baño. Dices:" }, "options": ["Excuse me, could I get past?", "Move!", "Bathroom, you.", "Could you fasten?"], "correct": 0, "explanation": { "en": "\"Could I get past?\" is the polite way.", "es": "«Could I get past?» es la forma amable." } },
+    { "question": { "en": "The person who serves drinks on the plane is the…", "es": "La persona que sirve bebidas en el avión es…" }, "options": ["flight attendant", "pilot", "passenger", "agent"], "correct": 0, "explanation": { "en": "Flight attendant = sobrecargo.", "es": "Flight attendant = sobrecargo." } },
+    { "question": { "en": "\"Fasten your seatbelt\" means…", "es": "«Fasten your seatbelt» significa…" }, "options": ["abróchese el cinturón", "quítese el cinturón", "busque su asiento", "apague el teléfono"], "correct": 0, "explanation": { "en": "Fasten = abrochar.", "es": "Fasten = abrochar." } },
+    { "question": { "en": "Choose the question asking for advice.", "es": "Elige la pregunta que pide consejo." }, "options": ["Should I turn off my phone?", "Do I should turn off my phone?", "I should turn off my phone?", "Should I to turn off my phone?"], "correct": 0, "explanation": { "en": "Should + I + verb?", "es": "Should + I + verbo?" } },
+    { "question": { "en": "The moment the plane arrives on the ground is the…", "es": "El momento en que el avión llega a tierra es el…" }, "options": ["landing", "takeoff", "boarding", "turbulence"], "correct": 0, "explanation": { "en": "Landing = aterrizaje. Takeoff = despegue.", "es": "Landing = aterrizaje. Takeoff = despegue." } },
+    { "question": { "en": "\"Should\" expresses…", "es": "«Should» expresa…" }, "options": ["advice", "a strict rule", "the past", "ability"], "correct": 0, "explanation": { "en": "Should = advice (deberías).", "es": "Should = consejo (deberías)." } }
+  ],
+  "story": {
+    "title": "A New Friend at 30,000 Feet",
+    "text": "The plane takes off at eight. Carmen looks out of the window: San Diego becomes small and blue. Next to her sits a young man with headphones. He looks nervous. \"Is this your first flight?\" asks Carmen. \"Yes, I'm going to a job interview in New York,\" he says. \"I'm very nervous.\" \"You shouldn't worry,\" says Carmen. \"You should sleep a little and drink some water.\" A flight attendant comes with a cart. \"Would you like something to drink?\" \"Some water, please. And could I have a blanket?\" During the flight there is a little turbulence. The young man holds his seat. \"Should I be scared?\" \"No, it's normal. Just keep your seatbelt fastened.\" Five hours later, the pilot says, \"Welcome to New York!\" The young man smiles. \"Thank you for your advice. You should be a teacher.\" \"I was one for thirty years!\"",
+    "es": "El avión despega a las ocho. Carmen mira por la ventana: San Diego se vuelve pequeño y azul. A su lado se sienta un joven con audífonos. Se ve nervioso. «¿Es tu primer vuelo?», pregunta Carmen. «Sí, voy a una entrevista de trabajo en Nueva York», dice él. «Estoy muy nervioso.» «No deberías preocuparte», dice Carmen. «Deberías dormir un poco y tomar agua.» Una sobrecargo pasa con un carrito. «¿Les gustaría algo de tomar?» «Agua, por favor. ¿Y me podría dar una cobija?» Durante el vuelo hay un poco de turbulencia. El joven se agarra del asiento. «¿Debería tener miedo?» «No, es normal. Solo mantén el cinturón abrochado.» Cinco horas después, el piloto dice: «¡Bienvenidos a Nueva York!» El joven sonríe. «Gracias por sus consejos. Usted debería ser maestra.» «¡Lo fui durante treinta años!»",
+    "highlighted_words": ["takes off", "You shouldn't worry", "You should sleep", "flight attendant", "Would you like something to drink", "could I have a blanket", "turbulence", "Should I be scared", "seatbelt fastened", "pilot", "Welcome to New York"]
+  },
+  "arrange": [
+    { "sentence": "You should drink a lot of water", "es": "Deberías tomar mucha agua." },
+    { "sentence": "You should not stand up now", "es": "No deberías levantarte ahora." },
+    { "sentence": "Please fasten your seatbelt", "es": "Por favor, abróchese el cinturón." },
+    { "sentence": "Could I have a blanket please", "es": "¿Me podría dar una cobija, por favor?" },
+    { "sentence": "Should I turn off my phone", "es": "¿Debo apagar mi teléfono?" },
+    { "sentence": "Would you like something to drink", "es": "¿Le gustaría algo de tomar?" }
+  ],
+  "translate": [
+    { "answer": "You should rest", "es": "Deberías descansar" },
+    { "answer": "You should not worry", "es": "No deberías preocuparte" },
+    { "answer": "Fasten your seatbelt", "es": "Abróchese el cinturón" },
+    { "answer": "Some water, please", "es": "Agua, por favor" },
+    { "answer": "Is this seat taken", "es": "¿Está ocupado este asiento?" },
+    { "answer": "Should I call her", "es": "¿Debería llamarla?" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 55,
+  "slug": "lesson-55",
+  "icon": "🛒",
+  "title": { "en": "At the mall", "es": "En el centro comercial" },
+  "grammar": [
+    { "structure": "as + adjective + as", "example": "This store is as cheap as the market.", "en": "Equal comparison", "es": "Comparación de igualdad" },
+    { "structure": "not as + adjective + as", "example": "The mall isn't as crowded as on weekends.", "en": "\"Less than\" comparison", "es": "Comparación de inferioridad (no tan… como)" },
+    { "structure": "the same as / different from", "example": "This sweater is the same as mine.", "en": "Same and different", "es": "Igual y diferente" },
+    { "structure": "Where can I find…?", "example": "Where can I find the shoe department?", "en": "Asking where things are in a store", "es": "Preguntar dónde están las cosas en una tienda" },
+    { "structure": "on the first / second floor", "example": "Women's clothing is on the second floor.", "en": "Floors and departments", "es": "Pisos y departamentos" }
+  ],
+  "tips": [
+    { "en": "\"Not as … as\" is a softer way to say something is less: \"It's not as expensive as I thought.\"", "es": "«Not as … as» es una forma más suave de decir que algo es menos: «It's not as expensive as I thought» (no es tan caro como pensaba)." },
+    { "en": "\"Department store\" is a big store with many sections: clothes, kitchen, beauty…", "es": "Una «department store» es una tienda grande con muchas secciones: ropa, cocina, belleza…" },
+    { "en": "Malls have a \"directory\" (a map) near the entrance.", "es": "Los centros comerciales tienen un «directory» (un mapa) cerca de la entrada." },
+    { "en": "\"Food court\" is the area with many fast-food restaurants.", "es": "El «food court» es la zona con muchos restaurantes de comida rápida." },
+    { "en": "Many malls have benches and free events for seniors in the mornings, like \"mall walking\".", "es": "Muchos centros comerciales tienen bancas y actividades gratis para adultos mayores en las mañanas, como el «mall walking» (caminar dentro del centro comercial)." }
+  ],
+  "vocabulary": [
+    { "word": "mall", "es": "centro comercial" },
+    { "word": "department store", "es": "tienda departamental" },
+    { "word": "directory", "es": "directorio / mapa" },
+    { "word": "escalator", "es": "escalera eléctrica" },
+    { "word": "food court", "es": "zona de comida" },
+    { "word": "entrance", "es": "entrada" },
+    { "word": "exit", "es": "salida" },
+    { "word": "restroom", "es": "baño (público)" },
+    { "word": "department", "es": "departamento / sección" },
+    { "word": "jewelry", "es": "joyería / joyas" },
+    { "word": "cosmetics", "es": "cosméticos" },
+    { "word": "kitchenware", "es": "artículos de cocina" },
+    { "word": "crowded", "es": "lleno de gente" },
+    { "word": "same", "es": "mismo / igual" },
+    { "word": "different", "es": "diferente" },
+    { "word": "as … as", "es": "tan … como" },
+    { "word": "parking lot", "es": "estacionamiento" }
+  ],
+  "phrases": [
+    { "phrase": "Where can I find the shoe department?", "es": "¿Dónde encuentro el departamento de zapatos?" },
+    { "phrase": "It's on the second floor.", "es": "Está en el segundo piso." },
+    { "phrase": "Take the escalator.", "es": "Tome la escalera eléctrica." },
+    { "phrase": "Where are the restrooms?", "es": "¿Dónde están los baños?" },
+    { "phrase": "Let's meet at the food court.", "es": "Nos vemos en la zona de comida." },
+    { "phrase": "It's not as expensive as I thought.", "es": "No es tan caro como pensaba." },
+    { "phrase": "This one is as good as that one.", "es": "Este es tan bueno como ese." },
+    { "phrase": "Your bag is the same as mine!", "es": "¡Tu bolsa es igual a la mía!" },
+    { "phrase": "It's different from the picture.", "es": "Es diferente a la foto." },
+    { "phrase": "The mall is very crowded today.", "es": "El centro comercial está muy lleno hoy." },
+    { "phrase": "Let's look at the directory.", "es": "Veamos el directorio." },
+    { "phrase": "Which exit is closest to the parking lot?", "es": "¿Qué salida está más cerca del estacionamiento?" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"This store is as cheap ___ the market.\"", "es": "Completa: «This store is as cheap ___ the market.»" }, "options": ["as", "than", "like", "that"], "correct": 0, "explanation": { "en": "as … as.", "es": "as … as." } },
+    { "question": { "en": "\"It's not as big as my house\" means…", "es": "«It's not as big as my house» significa…" }, "options": ["It's smaller than my house.", "It's bigger than my house.", "It's the same size.", "It's very big."], "correct": 0, "explanation": { "en": "Not as big as = smaller.", "es": "Not as big as = más pequeño." } },
+    { "question": { "en": "Complete: \"Your dress is the same ___ mine.\"", "es": "Completa: «Your dress is the same ___ mine.»" }, "options": ["as", "than", "to", "from"], "correct": 0, "explanation": { "en": "the same as.", "es": "the same as." } },
+    { "question": { "en": "Complete: \"This city is different ___ my hometown.\"", "es": "Completa: «This city is different ___ my hometown.»" }, "options": ["from", "as", "than of", "to as"], "correct": 0, "explanation": { "en": "different from.", "es": "different from." } },
+    { "question": { "en": "Moving stairs in a mall are the…", "es": "Las escaleras que se mueven en el centro comercial son la…" }, "options": ["escalator", "elevator", "directory", "exit"], "correct": 0, "explanation": { "en": "Escalator = escalera eléctrica. Elevator = elevador.", "es": "Escalator = escalera eléctrica. Elevator = elevador." } },
+    { "question": { "en": "A polite word for public bathroom in the US is…", "es": "Una forma educada de decir baño público en Estados Unidos es…" }, "options": ["restroom", "bedroom", "rest area", "toilet room"], "correct": 0, "explanation": { "en": "Restroom is the common polite word.", "es": "Restroom es la palabra educada y común." } },
+    { "question": { "en": "Where do you look for a map of the mall?", "es": "¿Dónde buscas un mapa del centro comercial?" }, "options": ["at the directory", "at the food court", "at the escalator", "at the parking lot"], "correct": 0, "explanation": { "en": "The directory shows where stores are.", "es": "El directorio muestra dónde están las tiendas." } },
+    { "question": { "en": "How do you ask where something is in a store?", "es": "¿Cómo preguntas dónde está algo en una tienda?" }, "options": ["Where can I find the kitchenware?", "Where I can find the kitchenware?", "Where find kitchenware?", "Where is kitchenware find?"], "correct": 0, "explanation": { "en": "Where can I find…?", "es": "Where can I find…?" } }
+  ],
+  "story": {
+    "title": "Mall Walking",
+    "text": "Linda has a new idea: mall walking. Every Tuesday morning, before the stores open, a group of seniors walks inside the mall. \"It's not as hot as walking outside,\" says Linda, \"and there are clean restrooms!\" Carmen likes it. They walk two miles, up the escalators and down again. After the walk, the stores open. Carmen needs a frying pan. \"Where can I find the kitchenware?\" she asks a woman at the department store. \"On the second floor, next to the cosmetics.\" The pan is not as expensive as Carmen thought. At the food court, Linda points at Carmen's bag. \"Your bag is the same as mine!\" They laugh. \"Same bag, different countries,\" says Carmen. \"But the same Tuesday walks.\" A man from the group joins them. \"Ladies, you walk faster than everybody. Same time next week?\"",
+    "es": "Linda tiene una idea nueva: caminar en el centro comercial. Todos los martes en la mañana, antes de que abran las tiendas, un grupo de adultos mayores camina dentro del centro comercial. «No hace tanto calor como caminar afuera», dice Linda, «¡y hay baños limpios!» A Carmen le gusta. Caminan dos millas, suben por las escaleras eléctricas y vuelven a bajar. Después de caminar, abren las tiendas. Carmen necesita un sartén. «¿Dónde encuentro los artículos de cocina?», le pregunta a una mujer en la tienda departamental. «En el segundo piso, junto a los cosméticos.» El sartén no es tan caro como Carmen pensaba. En la zona de comida, Linda señala la bolsa de Carmen. «¡Tu bolsa es igual a la mía!» Se ríen. «Misma bolsa, distintos países», dice Carmen. «Pero las mismas caminatas de los martes.» Un señor del grupo se les une. «Señoras, ustedes caminan más rápido que todos. ¿Mismo horario la próxima semana?»",
+    "highlighted_words": ["mall walking", "It's not as hot as", "restrooms", "escalators", "Where can I find the kitchenware", "department store", "second floor", "cosmetics", "not as expensive as", "food court", "the same as mine", "different"]
+  },
+  "arrange": [
+    { "sentence": "Where can I find the shoe department", "es": "¿Dónde encuentro el departamento de zapatos?" },
+    { "sentence": "It is not as expensive as I thought", "es": "No es tan caro como pensaba." },
+    { "sentence": "Your bag is the same as mine", "es": "Tu bolsa es igual a la mía." },
+    { "sentence": "Let's meet at the food court", "es": "Nos vemos en la zona de comida." },
+    { "sentence": "This store is as cheap as the market", "es": "Esta tienda es tan barata como el mercado." },
+    { "sentence": "Where are the restrooms", "es": "¿Dónde están los baños?" }
+  ],
+  "translate": [
+    { "answer": "Where are the restrooms", "es": "¿Dónde están los baños?" },
+    { "answer": "It is on the second floor", "es": "Está en el segundo piso" },
+    { "answer": "Take the escalator", "es": "Tome la escalera eléctrica" },
+    { "answer": "It is not as big as my house", "es": "No es tan grande como mi casa" },
+    { "answer": "The mall is very crowded", "es": "El centro comercial está muy lleno" },
+    { "answer": "It is different from the picture", "es": "Es diferente a la foto" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 49,
+  "slug": "lesson-49",
+  "icon": "🩺",
+  "title": { "en": "At the doctor's", "es": "En el médico" },
+  "grammar": [
+    { "structure": "How long have you had…?", "example": "How long have you had this cough? — For a week.", "en": "Present perfect for symptoms up to now", "es": "Presente perfecto para síntomas hasta ahora" },
+    { "structure": "I've had … since …", "example": "I've had a headache since Monday.", "en": "Describing how long a problem has lasted", "es": "Decir desde cuándo tienes un problema" },
+    { "structure": "should / shouldn't (advice)", "example": "You should rest. You shouldn't eat spicy food.", "en": "The doctor's advice", "es": "Los consejos del médico" },
+    { "structure": "Take … times a day", "example": "Take one pill twice a day with food.", "en": "Medicine instructions", "es": "Instrucciones de medicamentos" },
+    { "structure": "It hurts when I…", "example": "It hurts when I walk.", "en": "Describing pain more precisely", "es": "Describir el dolor con precisión" }
+  ],
+  "tips": [
+    { "en": "You have the right to a medical interpreter in most US clinics and hospitals. Ask: \"I need a Spanish interpreter, please.\"", "es": "En la mayoría de las clínicas y hospitales de Estados Unidos tienes derecho a un intérprete médico. Pide: «I need a Spanish interpreter, please.»" },
+    { "en": "Bring a list of your medicines and allergies to every appointment.", "es": "Lleva a cada cita una lista de tus medicinas y alergias." },
+    { "en": "\"Prescription\" = receta médica. You pick up the medicine at the pharmacy.", "es": "«Prescription» = receta médica. La medicina se recoge en la farmacia." },
+    { "en": "In an emergency, call 911. For non-urgent problems, an \"urgent care\" clinic is faster than the ER.", "es": "En una emergencia, llama al 911. Para problemas no graves, una clínica de «urgent care» es más rápida que la sala de emergencias." },
+    { "en": "\"Over-the-counter\" medicine is medicine you can buy without a prescription.", "es": "Los medicamentos «over-the-counter» son los que se compran sin receta." }
+  ],
+  "vocabulary": [
+    { "word": "doctor", "es": "médico" },
+    { "word": "nurse", "es": "enfermera" },
+    { "word": "patient", "es": "paciente" },
+    { "word": "appointment", "es": "cita" },
+    { "word": "symptoms", "es": "síntomas" },
+    { "word": "fever", "es": "fiebre" },
+    { "word": "cough", "es": "tos" },
+    { "word": "sore throat", "es": "dolor de garganta" },
+    { "word": "dizzy", "es": "mareado" },
+    { "word": "blood pressure", "es": "presión arterial" },
+    { "word": "prescription", "es": "receta médica" },
+    { "word": "pill", "es": "pastilla" },
+    { "word": "pharmacy", "es": "farmacia" },
+    { "word": "check-up", "es": "chequeo" },
+    { "word": "insurance card", "es": "tarjeta del seguro" },
+    { "word": "interpreter", "es": "intérprete" },
+    { "word": "emergency", "es": "emergencia" }
+  ],
+  "phrases": [
+    { "phrase": "I have an appointment at ten.", "es": "Tengo cita a las diez." },
+    { "phrase": "What brings you here today?", "es": "¿Qué la trae por aquí hoy?" },
+    { "phrase": "I've had a cough for a week.", "es": "Tengo tos desde hace una semana." },
+    { "phrase": "How long have you had this pain?", "es": "¿Desde cuándo tiene este dolor?" },
+    { "phrase": "It hurts when I breathe.", "es": "Me duele cuando respiro." },
+    { "phrase": "I feel dizzy.", "es": "Me siento mareada." },
+    { "phrase": "Are you allergic to any medicine?", "es": "¿Es alérgica a alguna medicina?" },
+    { "phrase": "Take one pill twice a day.", "es": "Tome una pastilla dos veces al día." },
+    { "phrase": "You should rest and drink fluids.", "es": "Debería descansar y tomar líquidos." },
+    { "phrase": "I need a Spanish interpreter, please.", "es": "Necesito un intérprete de español, por favor." },
+    { "phrase": "Here's your prescription.", "es": "Aquí está su receta." },
+    { "phrase": "Come back if you don't feel better.", "es": "Regrese si no se siente mejor." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["How long have you had this cough?", "How long do you have this cough?", "Since when you have this cough?", "How long you had this cough?"], "correct": 0, "explanation": { "en": "Duration up to now → present perfect.", "es": "Duración hasta ahora → presente perfecto." } },
+    { "question": { "en": "How do you say \"Tengo fiebre desde ayer\"?", "es": "¿Cómo se dice «Tengo fiebre desde ayer»?" }, "options": ["I've had a fever since yesterday.", "I have a fever since yesterday.", "I had a fever for yesterday.", "I'm having fever since yesterday."], "correct": 0, "explanation": { "en": "Present perfect + since.", "es": "Presente perfecto + since." } },
+    { "question": { "en": "\"Take one pill twice a day\" means…", "es": "«Take one pill twice a day» significa…" }, "options": ["one pill, two times a day", "two pills, once a day", "one pill every two days", "two pills, twice a day"], "correct": 0, "explanation": { "en": "Twice = two times.", "es": "Twice = dos veces." } },
+    { "question": { "en": "The paper from the doctor for your medicine is a…", "es": "El papel del médico para tu medicina es una…" }, "options": ["prescription", "receipt", "description", "subscription"], "correct": 0, "explanation": { "en": "Prescription = receta médica.", "es": "Prescription = receta médica." } },
+    { "question": { "en": "You don't understand the doctor well. You can say:", "es": "No le entiendes bien al médico. Puedes decir:" }, "options": ["I need a Spanish interpreter, please.", "I'm dizzy, goodbye.", "Here's your prescription.", "Take two pills."], "correct": 0, "explanation": { "en": "You can ask for a medical interpreter.", "es": "Puedes pedir un intérprete médico." } },
+    { "question": { "en": "The doctor gives advice: rest. Complete: \"You ___ rest.\"", "es": "El médico da un consejo: descansar. Completa: «You ___ rest.»" }, "options": ["should", "mustn't", "don't have to", "are"], "correct": 0, "explanation": { "en": "Advice → should.", "es": "Consejo → should." } },
+    { "question": { "en": "In a serious emergency in the US, you call…", "es": "En una emergencia grave en Estados Unidos, llamas al…" }, "options": ["911", "411", "311", "100"], "correct": 0, "explanation": { "en": "911 is the emergency number.", "es": "911 es el número de emergencias." } },
+    { "question": { "en": "\"I feel dizzy\" means…", "es": "«I feel dizzy» significa…" }, "options": ["Me siento mareada.", "Tengo hambre.", "Tengo frío.", "Estoy aburrida."], "correct": 0, "explanation": { "en": "Dizzy = mareado.", "es": "Dizzy = mareado." } }
+  ],
+  "story": {
+    "title": "A Check-up",
+    "text": "Carmen has had a cough for two weeks, and sometimes she feels dizzy. Laura makes an appointment at the clinic. \"Good morning. I have an appointment at ten. Here's my insurance card.\" The nurse checks her blood pressure. \"It's a little high. The doctor will see you now.\" Dr. Martínez is friendly. \"What brings you here today?\" \"I've had a cough since the beginning of the month. And it hurts when I breathe deeply.\" \"Do you have a fever?\" \"No, I don't.\" \"Are you allergic to any medicine?\" \"Yes, to penicillin.\" The doctor listens to her chest. \"It's a small infection. Take one pill twice a day for seven days. You should rest, drink fluids and you shouldn't work this Saturday.\" \"No tamales this week?\" \"No tamales. Doctor's orders.\" Carmen laughs and coughs at the same time.",
+    "es": "Carmen tiene tos desde hace dos semanas y a veces se siente mareada. Laura le hace una cita en la clínica. «Buenos días. Tengo cita a las diez. Aquí está mi tarjeta del seguro.» La enfermera le toma la presión. «Está un poco alta. El doctor la va a ver ahora.» El doctor Martínez es amable. «¿Qué la trae por aquí hoy?» «Tengo tos desde principios de mes. Y me duele cuando respiro hondo.» «¿Tiene fiebre?» «No.» «¿Es alérgica a alguna medicina?» «Sí, a la penicilina.» El doctor le escucha el pecho. «Es una infección pequeña. Tome una pastilla dos veces al día durante siete días. Debería descansar, tomar líquidos y no debería trabajar este sábado.» «¿Sin tamales esta semana?» «Sin tamales. Órdenes del doctor.» Carmen se ríe y tose al mismo tiempo.",
+    "highlighted_words": ["has had a cough for two weeks", "dizzy", "appointment", "insurance card", "nurse", "blood pressure", "What brings you here today", "I've had a cough since", "it hurts when I breathe", "fever", "Are you allergic to any medicine", "Take one pill twice a day", "You should rest", "you shouldn't work"]
+  },
+  "arrange": [
+    { "sentence": "I have had a cough for a week", "es": "Tengo tos desde hace una semana." },
+    { "sentence": "How long have you had this pain", "es": "¿Desde cuándo tiene este dolor?" },
+    { "sentence": "It hurts when I breathe", "es": "Me duele cuando respiro." },
+    { "sentence": "Take one pill twice a day", "es": "Tome una pastilla dos veces al día." },
+    { "sentence": "You should rest and drink fluids", "es": "Debería descansar y tomar líquidos." },
+    { "sentence": "I need a Spanish interpreter please", "es": "Necesito un intérprete de español, por favor." }
+  ],
+  "translate": [
+    { "answer": "I have an appointment at ten", "es": "Tengo cita a las diez" },
+    { "answer": "I have had a fever since Monday", "es": "Tengo fiebre desde el lunes" },
+    { "answer": "I feel dizzy", "es": "Me siento mareada" },
+    { "answer": "I am allergic to penicillin", "es": "Soy alérgica a la penicilina" },
+    { "answer": "Here is my insurance card", "es": "Aquí está mi tarjeta del seguro" },
+    { "answer": "It hurts when I walk", "es": "Me duele cuando camino" }
+  ]
+}

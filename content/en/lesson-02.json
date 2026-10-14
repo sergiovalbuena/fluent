@@ -1,0 +1,84 @@
+{
+  "lesson": 2,
+  "slug": "lesson-02",
+  "icon": "🙏",
+  "title": { "en": "Please and thank you", "es": "Por favor y gracias" },
+  "grammar": [
+    { "structure": "Can I…?", "example": "Can I have a coffee, please?", "en": "Asking for something with \"Can I…?\"", "es": "Pedir algo con «Can I…?» (¿Puedo…?)" },
+    { "structure": "Could you…?", "example": "Could you repeat that, please?", "en": "Polite requests with \"Could you…?\"", "es": "Pedidos amables con «Could you…?» (¿Podría…?)" },
+    { "structure": "please at the end", "example": "A glass of water, please.", "en": "\"Please\" usually goes at the end", "es": "«Please» suele ir al final" },
+    { "structure": "Excuse me / Sorry", "example": "Excuse me, is this seat free?", "en": "Getting attention vs. apologizing", "es": "Llamar la atención vs. pedir perdón" },
+    { "structure": "You're welcome", "example": "Thank you! — You're welcome.", "en": "Answering \"thank you\"", "es": "Responder a «thank you»" }
+  ],
+  "tips": [
+    { "en": "Americans say \"please\" and \"thank you\" a lot, even in quick situations like buying a coffee.", "es": "En Estados Unidos se dice mucho «please» y «thank you», incluso en situaciones rápidas como comprar un café." },
+    { "en": "Use \"Excuse me\" before asking a stranger something, and \"Sorry\" when you make a small mistake or bump into someone.", "es": "Usa «Excuse me» antes de preguntarle algo a un desconocido, y «Sorry» cuando cometes un pequeño error o chocas con alguien." },
+    { "en": "\"No problem\" and \"Sure\" are very common, relaxed answers to \"thank you\".", "es": "«No problem» y «Sure» son respuestas muy comunes y relajadas a «thank you»." },
+    { "en": "If you don't understand, say \"Sorry?\" or \"Could you repeat that, please?\" — people are used to it.", "es": "Si no entiendes, di «Sorry?» o «Could you repeat that, please?»: la gente está acostumbrada." },
+    { "en": "\"Could you…?\" sounds more polite than \"Can you…?\". Use it with people you don't know.", "es": "«Could you…?» suena más amable que «Can you…?». Úsalo con personas que no conoces." }
+  ],
+  "vocabulary": [
+    { "word": "please", "es": "por favor" },
+    { "word": "thank you", "es": "gracias" },
+    { "word": "thank you very much", "es": "muchas gracias" },
+    { "word": "you're welcome", "es": "de nada" },
+    { "word": "no problem", "es": "no hay problema" },
+    { "word": "excuse me", "es": "disculpe / con permiso" },
+    { "word": "sorry", "es": "perdón / lo siento" },
+    { "word": "of course", "es": "claro / por supuesto" },
+    { "word": "sure", "es": "claro / seguro" },
+    { "word": "yes", "es": "sí" },
+    { "word": "no", "es": "no" },
+    { "word": "a coffee", "es": "un café" },
+    { "word": "a glass of water", "es": "un vaso de agua" },
+    { "word": "slowly", "es": "despacio" },
+    { "word": "again", "es": "otra vez / de nuevo" },
+    { "word": "help", "es": "ayuda / ayudar" }
+  ],
+  "phrases": [
+    { "phrase": "Can I have a coffee, please?", "es": "¿Me da un café, por favor?" },
+    { "phrase": "Here you go.", "es": "Aquí tiene." },
+    { "phrase": "Thank you very much!", "es": "¡Muchas gracias!" },
+    { "phrase": "You're welcome.", "es": "De nada." },
+    { "phrase": "Excuse me, can you help me?", "es": "Disculpe, ¿me puede ayudar?" },
+    { "phrase": "Could you repeat that, please?", "es": "¿Podría repetirlo, por favor?" },
+    { "phrase": "Could you speak more slowly?", "es": "¿Podría hablar más despacio?" },
+    { "phrase": "Sorry, I don't understand.", "es": "Perdón, no entiendo." },
+    { "phrase": "I'm sorry, I'm late.", "es": "Perdón, llego tarde." },
+    { "phrase": "No problem!", "es": "¡No hay problema!" },
+    { "phrase": "Yes, please.", "es": "Sí, por favor." },
+    { "phrase": "No, thank you.", "es": "No, gracias." }
+  ],
+  "qa": [
+    { "question": { "en": "The cashier gives you your change. What do you say?", "es": "El cajero te da tu cambio. ¿Qué dices?" }, "options": ["Thank you!", "You're welcome!", "Excuse me!", "Sorry!"], "correct": 0, "explanation": { "en": "When someone gives you something, you say \"Thank you\".", "es": "Cuando alguien te da algo, dices «Thank you»." } },
+    { "question": { "en": "Someone says \"Thank you!\" to you. What do you answer?", "es": "Alguien te dice «Thank you!». ¿Qué respondes?" }, "options": ["You're welcome.", "Thank you.", "Excuse me.", "Please."], "correct": 0, "explanation": { "en": "\"You're welcome\" is the usual answer to \"thank you\". \"No problem\" also works.", "es": "«You're welcome» es la respuesta habitual a «thank you». «No problem» también sirve." } },
+    { "question": { "en": "You want to ask a stranger a question. How do you start?", "es": "Quieres hacerle una pregunta a un desconocido. ¿Cómo empiezas?" }, "options": ["Excuse me…", "You're welcome…", "Good night…", "Bye…"], "correct": 0, "explanation": { "en": "\"Excuse me\" is the polite way to get someone's attention.", "es": "«Excuse me» es la forma amable de llamar la atención de alguien." } },
+    { "question": { "en": "You step on someone's foot by accident. What do you say?", "es": "Pisas a alguien sin querer. ¿Qué dices?" }, "options": ["Sorry!", "Please!", "You're welcome!", "Of course!"], "correct": 0, "explanation": { "en": "\"Sorry\" is for apologizing after a small mistake.", "es": "«Sorry» es para pedir perdón después de un pequeño error." } },
+    { "question": { "en": "The person speaks very fast. What can you say?", "es": "La persona habla muy rápido. ¿Qué puedes decir?" }, "options": ["Could you speak more slowly, please?", "Could you speak more fast, please?", "You speak slowly, please.", "Speak, thank you."], "correct": 0, "explanation": { "en": "\"Could you speak more slowly, please?\" is a polite request.", "es": "«Could you speak more slowly, please?» es un pedido amable." } },
+    { "question": { "en": "Where does \"please\" usually go?", "es": "¿Dónde va normalmente «please»?" }, "options": ["Can I have water, please?", "Please can water I have?", "Can please I have water?", "Can I please water have?"], "correct": 0, "explanation": { "en": "\"Please\" usually goes at the end of the request.", "es": "«Please» normalmente va al final del pedido." } },
+    { "question": { "en": "A waiter asks: \"More coffee?\" You want more. What do you say?", "es": "Un mesero pregunta: «More coffee?». Quieres más. ¿Qué dices?" }, "options": ["Yes, please.", "Yes, you're welcome.", "No, please.", "Sorry, yes."], "correct": 0, "explanation": { "en": "To accept something offered, say \"Yes, please\". To refuse, \"No, thank you\".", "es": "Para aceptar algo que te ofrecen, di «Yes, please». Para rechazarlo, «No, thank you»." } },
+    { "question": { "en": "Which request is the most polite?", "es": "¿Qué pedido es el más amable?" }, "options": ["Could you help me, please?", "Help me.", "You help me.", "Help, now."], "correct": 0, "explanation": { "en": "\"Could you…, please?\" is very polite.", "es": "«Could you…, please?» es muy amable." } }
+  ],
+  "story": {
+    "title": "Coffee, Please",
+    "text": "Carmen is at a small coffee shop near Laura's house. There are many people. A young man is at the counter. \"Hi! What can I get you?\" he asks. Carmen is a little nervous. \"Hello. Can I have a coffee, please?\" \"Sure! Small, medium or large?\" Carmen doesn't understand. \"Sorry? Could you repeat that, please?\" The young man smiles and speaks slowly. \"Small… medium… or large?\" \"Oh! Small, please.\" \"Of course. That's three dollars.\" Carmen gives him the money. \"Here you go. Thank you very much!\" \"You're welcome. Have a nice day!\" Carmen sits by the window with her coffee. It is a small coffee, but it is a big success.",
+    "es": "Carmen está en una pequeña cafetería cerca de la casa de Laura. Hay mucha gente. Un joven está en el mostrador. «¡Hola! ¿Qué le sirvo?», pregunta. Carmen está un poco nerviosa. «Hola. ¿Me da un café, por favor?» «¡Claro! ¿Pequeño, mediano o grande?» Carmen no entiende. «¿Perdón? ¿Podría repetirlo, por favor?» El joven sonríe y habla despacio. «Pequeño… mediano… ¿o grande?» «¡Ah! Pequeño, por favor.» «Por supuesto. Son tres dólares.» Carmen le da el dinero. «Aquí tiene. ¡Muchas gracias!» «De nada. ¡Que tenga un buen día!» Carmen se sienta junto a la ventana con su café. Es un café pequeño, pero es un gran éxito.",
+    "highlighted_words": ["Can I have a coffee, please", "Sure", "Sorry", "Could you repeat that, please", "Of course", "Here you go", "Thank you very much", "You're welcome"]
+  },
+  "arrange": [
+    { "sentence": "Can I have a coffee please", "es": "¿Me da un café, por favor?" },
+    { "sentence": "Could you repeat that please", "es": "¿Podría repetirlo, por favor?" },
+    { "sentence": "Thank you very much", "es": "Muchas gracias." },
+    { "sentence": "Excuse me can you help me", "es": "Disculpe, ¿me puede ayudar?" },
+    { "sentence": "Sorry I do not understand", "es": "Perdón, no entiendo." },
+    { "sentence": "Could you speak more slowly", "es": "¿Podría hablar más despacio?" }
+  ],
+  "translate": [
+    { "answer": "Thank you very much", "es": "Muchas gracias" },
+    { "answer": "Excuse me", "es": "Disculpe" },
+    { "answer": "Can I have a coffee, please", "es": "¿Me da un café, por favor?" },
+    { "answer": "Yes, please", "es": "Sí, por favor" },
+    { "answer": "No, thank you", "es": "No, gracias" },
+    { "answer": "Could you help me, please", "es": "¿Podría ayudarme, por favor?" }
+  ]
+}

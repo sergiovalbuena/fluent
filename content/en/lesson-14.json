@@ -1,0 +1,86 @@
+{
+  "lesson": 14,
+  "slug": "lesson-14",
+  "icon": "🦊",
+  "title": { "en": "Animals", "es": "Los animales" },
+  "grammar": [
+    { "structure": "can + verb", "example": "Birds can fly. Dogs can swim.", "en": "\"Can\" for ability", "es": "«Can» para habilidades (poder / saber)" },
+    { "structure": "can't + verb", "example": "Penguins can't fly.", "en": "Negative: cannot → can't", "es": "Negativo: cannot → can't" },
+    { "structure": "Can you…? — Yes, I can. / No, I can't.", "example": "Can you swim? — Yes, I can.", "en": "Questions with \"can\"", "es": "Preguntas con «can»" },
+    { "structure": "can + verb (no -s, no \"to\")", "example": "She can cook. (not \"she cans cook\")", "en": "\"Can\" never changes", "es": "«Can» nunca cambia" },
+    { "structure": "Do you have a pet?", "example": "Do you have a pet? — Yes, I have a cat.", "en": "Talking about pets", "es": "Hablar de mascotas" }
+  ],
+  "tips": [
+    { "en": "\"Can\" works for every person: I can, she can, they can. No -s and no \"to\" after it.", "es": "«Can» sirve para todas las personas: I can, she can, they can. Sin -s y sin «to» después." },
+    { "en": "\"Can\" also means \"saber hacer algo\": \"I can swim\" = Sé nadar.", "es": "«Can» también significa «saber hacer algo»: «I can swim» = Sé nadar." },
+    { "en": "In the US, many people treat pets like family members. A dog is often \"he\" or \"she\", not \"it\".", "es": "En Estados Unidos muchas personas tratan a sus mascotas como de la familia. A un perro se le dice «he» o «she», no «it»." },
+    { "en": "\"Puppy\" is a baby dog and \"kitten\" a baby cat.", "es": "«Puppy» es un cachorro de perro y «kitten» un gatito." },
+    { "en": "Pronunciation: \"can\" is short and quick; \"can't\" is longer and stressed.", "es": "Pronunciación: «can» es corto y rápido; «can't» es más largo y con más fuerza." }
+  ],
+  "vocabulary": [
+    { "word": "dog", "es": "perro" },
+    { "word": "cat", "es": "gato" },
+    { "word": "bird", "es": "pájaro" },
+    { "word": "fish", "es": "pez / pescado" },
+    { "word": "horse", "es": "caballo" },
+    { "word": "cow", "es": "vaca" },
+    { "word": "chicken", "es": "gallina / pollo" },
+    { "word": "pig", "es": "cerdo" },
+    { "word": "rabbit", "es": "conejo" },
+    { "word": "mouse", "es": "ratón" },
+    { "word": "lion", "es": "león" },
+    { "word": "elephant", "es": "elefante" },
+    { "word": "monkey", "es": "mono" },
+    { "word": "bear", "es": "oso" },
+    { "word": "seal", "es": "foca" },
+    { "word": "pet", "es": "mascota" },
+    { "word": "puppy", "es": "cachorro" },
+    { "word": "zoo", "es": "zoológico" }
+  ],
+  "phrases": [
+    { "phrase": "Do you have a pet?", "es": "¿Tienes mascota?" },
+    { "phrase": "I have a dog. His name is Max.", "es": "Tengo un perro. Se llama Max." },
+    { "phrase": "Can you swim?", "es": "¿Sabes nadar?" },
+    { "phrase": "Yes, I can.", "es": "Sí, sé." },
+    { "phrase": "No, I can't.", "es": "No, no sé." },
+    { "phrase": "Birds can fly.", "es": "Los pájaros pueden volar." },
+    { "phrase": "Is he friendly?", "es": "¿Es amigable? (el perro)" },
+    { "phrase": "Can I pet him?", "es": "¿Puedo acariciarlo?" },
+    { "phrase": "I'm afraid of dogs.", "es": "Les tengo miedo a los perros." },
+    { "phrase": "What a cute puppy!", "es": "¡Qué cachorro tan lindo!" },
+    { "phrase": "Let's go to the zoo.", "es": "Vamos al zoológico." },
+    { "phrase": "Don't feed the animals.", "es": "No alimentes a los animales." }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["She can swim.", "She cans swim.", "She can swims.", "She can to swim."], "correct": 0, "explanation": { "en": "\"Can\" doesn't change, and the verb after it has no -s and no \"to\".", "es": "«Can» no cambia, y el verbo que le sigue no lleva -s ni «to»." } },
+    { "question": { "en": "Which animal can fly?", "es": "¿Qué animal puede volar?" }, "options": ["a bird", "a fish", "a cow", "a pig"], "correct": 0, "explanation": { "en": "Birds can fly.", "es": "Los pájaros (birds) pueden volar." } },
+    { "question": { "en": "Short answer: \"Can you cook?\" (yes)", "es": "Respuesta corta: «Can you cook?» (sí)" }, "options": ["Yes, I can.", "Yes, I do.", "Yes, I cook.", "Yes, can I."], "correct": 0, "explanation": { "en": "Answer with \"can\": Yes, I can.", "es": "Se responde con «can»: Yes, I can." } },
+    { "question": { "en": "Complete: \"Penguins ___ fly.\"", "es": "Completa: «Penguins ___ fly.»" }, "options": ["can't", "don't can", "not can", "doesn't"], "correct": 0, "explanation": { "en": "The negative of \"can\" is \"can't\".", "es": "El negativo de «can» es «can't»." } },
+    { "question": { "en": "A baby dog is a…", "es": "Un perro bebé es un…" }, "options": ["puppy", "kitten", "chicken", "mouse"], "correct": 0, "explanation": { "en": "A puppy is a baby dog; a kitten is a baby cat.", "es": "Un «puppy» es un cachorro de perro; un «kitten» es un gatito." } },
+    { "question": { "en": "You want to touch your neighbor's dog. What do you ask?", "es": "Quieres tocar al perro de tu vecino. ¿Qué preguntas?" }, "options": ["Can I pet him?", "Can I him pet?", "I can pet him?", "Do I can pet him?"], "correct": 0, "explanation": { "en": "Questions: Can + I + verb?", "es": "Preguntas: Can + I + verbo?" } },
+    { "question": { "en": "How do you say \"Sé nadar\"?", "es": "¿Cómo se dice «Sé nadar»?" }, "options": ["I can swim.", "I know swim.", "I swim know.", "I can to swim."], "correct": 0, "explanation": { "en": "For abilities English uses \"can\": I can swim.", "es": "Para habilidades el inglés usa «can»: I can swim." } },
+    { "question": { "en": "Where can you see lions and elephants in a city?", "es": "¿Dónde puedes ver leones y elefantes en una ciudad?" }, "options": ["at the zoo", "at the bakery", "at the bank", "at school"], "correct": 0, "explanation": { "en": "Wild animals live at the zoo in the city.", "es": "En la ciudad, los animales salvajes están en el zoológico (zoo)." } }
+  ],
+  "story": {
+    "title": "A Day at the Zoo",
+    "text": "On Saturday, Carmen goes to the San Diego Zoo with Leo. The zoo is very big. \"Grandma, look! The monkeys can climb so fast!\" Carmen smiles. \"And look at the elephants. They are enormous.\" Near the water there are seals. \"Can seals swim?\" asks Carmen. \"Yes, they can! And they can sleep in the water,\" says Leo. He knows everything about animals. They see lions, bears and many birds. \"Grandma, can you swim?\" \"Yes, I can. But I can't climb like a monkey!\" Leo laughs. At the exit, there is a family with a puppy. \"What a cute puppy!\" says Carmen. \"Can I pet him?\" \"Of course. He's very friendly.\" Leo looks at Carmen. \"Grandma… can we have a pet?\" \"Ask your mother!\"",
+    "es": "El sábado, Carmen va al zoológico de San Diego con Leo. El zoológico es muy grande. «¡Abuela, mira! ¡Los monos pueden trepar muy rápido!» Carmen sonríe. «Y mira los elefantes. Son enormes.» Cerca del agua hay focas. «¿Las focas saben nadar?», pregunta Carmen. «¡Sí! ¡Y pueden dormir en el agua!», dice Leo. Sabe todo sobre los animales. Ven leones, osos y muchos pájaros. «Abuela, ¿tú sabes nadar?» «Sí, sé. ¡Pero no puedo trepar como un mono!» Leo se ríe. A la salida hay una familia con un cachorro. «¡Qué cachorro tan lindo!», dice Carmen. «¿Puedo acariciarlo?» «Claro. Es muy amigable.» Leo mira a Carmen. «Abuela… ¿podemos tener una mascota?» «¡Pregúntale a tu mamá!»",
+    "highlighted_words": ["Zoo", "monkeys", "can climb", "elephants", "seals", "Can seals swim", "they can", "lions", "bears", "birds", "can you swim", "I can't climb", "puppy", "Can I pet him", "pet"]
+  },
+  "arrange": [
+    { "sentence": "Birds can fly very high", "es": "Los pájaros pueden volar muy alto." },
+    { "sentence": "Can you swim", "es": "¿Sabes nadar?" },
+    { "sentence": "I have a dog and two cats", "es": "Tengo un perro y dos gatos." },
+    { "sentence": "Penguins cannot fly", "es": "Los pingüinos no pueden volar." },
+    { "sentence": "Do you have a pet", "es": "¿Tienes mascota?" },
+    { "sentence": "Can I pet your dog", "es": "¿Puedo acariciar a tu perro?" }
+  ],
+  "translate": [
+    { "answer": "I can swim", "es": "Sé nadar" },
+    { "answer": "Do you have a pet", "es": "¿Tienes mascota?" },
+    { "answer": "Birds can fly", "es": "Los pájaros pueden volar" },
+    { "answer": "I cannot cook", "es": "No sé cocinar" },
+    { "answer": "My dog is very friendly", "es": "Mi perro es muy amigable" },
+    { "answer": "Can you help me", "es": "¿Puedes ayudarme?" }
+  ]
+}

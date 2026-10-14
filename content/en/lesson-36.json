@@ -1,0 +1,85 @@
+{
+  "lesson": 36,
+  "slug": "lesson-36",
+  "icon": "🚶",
+  "title": { "en": "Going for a walk", "es": "Salir a pasear" },
+  "grammar": [
+    { "structure": "me, you, him, her, it, us, them", "example": "Elena showed us the park. I love them.", "en": "Object pronouns", "es": "Pronombres de objeto" },
+    { "structure": "Let's + verb", "example": "Let's go for a walk.", "en": "Suggestions with \"Let's\"", "es": "Sugerencias con «Let's» (vamos a…)" },
+    { "structure": "Let's not + verb", "example": "Let's not take the subway.", "en": "Negative suggestions", "es": "Sugerencias negativas" },
+    { "structure": "verb + object pronoun", "example": "Call me. Help them. Look at it!", "en": "Pronouns go after the verb", "es": "Los pronombres van después del verbo" },
+    { "structure": "go for a walk / take a walk", "example": "We took a walk by the river.", "en": "Expressions for walking", "es": "Expresiones para pasear" }
+  ],
+  "tips": [
+    { "en": "In Spanish the object pronoun goes before the verb (te llamo). In English it goes after: I'll call you.", "es": "En español el pronombre va antes del verbo (te llamo). En inglés va después: I'll call you." },
+    { "en": "\"Let's\" = let us. It's the friendliest way to suggest doing something together.", "es": "«Let's» = let us. Es la forma más amistosa de proponer hacer algo juntos." },
+    { "en": "\"Them\" is for people and things in the plural: \"These flowers? I love them.\"", "es": "«Them» sirve para personas y cosas en plural: «These flowers? I love them.»" },
+    { "en": "City parks often have free walking tours on weekends — a great way to practice listening.", "es": "Los parques de las ciudades suelen tener recorridos gratis a pie los fines de semana: una gran forma de practicar el oído." },
+    { "en": "\"Stroll\" means a slow, relaxed walk.", "es": "«Stroll» significa un paseo lento y relajado." }
+  ],
+  "vocabulary": [
+    { "word": "walk", "es": "paseo / caminar" },
+    { "word": "stroll", "es": "paseo tranquilo" },
+    { "word": "path", "es": "sendero / camino" },
+    { "word": "bench", "es": "banca" },
+    { "word": "lake", "es": "lago" },
+    { "word": "bridge", "es": "puente" },
+    { "word": "squirrel", "es": "ardilla" },
+    { "word": "fountain", "es": "fuente" },
+    { "word": "statue", "es": "estatua" },
+    { "word": "neighborhood", "es": "barrio / vecindario" },
+    { "word": "me", "es": "me / mí" },
+    { "word": "him", "es": "lo / le / él" },
+    { "word": "her", "es": "la / le / ella" },
+    { "word": "us", "es": "nos / nosotros" },
+    { "word": "them", "es": "los / las / les / ellos" },
+    { "word": "let's", "es": "vamos a… (sugerencia)" },
+    { "word": "tired", "es": "cansado" }
+  ],
+  "phrases": [
+    { "phrase": "Let's go for a walk.", "es": "Vamos a dar un paseo." },
+    { "phrase": "Let's sit on that bench.", "es": "Sentémonos en esa banca." },
+    { "phrase": "Look at them!", "es": "¡Míralos!" },
+    { "phrase": "Can you take a picture of us?", "es": "¿Nos puede tomar una foto?" },
+    { "phrase": "Wait for me!", "es": "¡Espérame!" },
+    { "phrase": "I'll show you the lake.", "es": "Te voy a enseñar el lago." },
+    { "phrase": "Do you know him?", "es": "¿Lo conoces?" },
+    { "phrase": "I'm a little tired.", "es": "Estoy un poco cansada." },
+    { "phrase": "Let's not walk too far.", "es": "No caminemos demasiado lejos." },
+    { "phrase": "This neighborhood is lovely.", "es": "Este barrio es precioso." },
+    { "phrase": "Follow me.", "es": "Sígueme." },
+    { "phrase": "Let's go back.", "es": "Regresemos." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"Elena called ___ yesterday.\" (Carmen speaking about herself)", "es": "Completa: «Elena called ___ yesterday.» (Carmen habla de sí misma)" }, "options": ["me", "I", "my", "mine"], "correct": 0, "explanation": { "en": "After a verb we use the object pronoun: me.", "es": "Después del verbo se usa el pronombre de objeto: me." } },
+    { "question": { "en": "Complete: \"These shoes? I love ___.\"", "es": "Completa: «These shoes? I love ___.»" }, "options": ["them", "they", "their", "it"], "correct": 0, "explanation": { "en": "Plural object → them.", "es": "Objeto plural → them." } },
+    { "question": { "en": "How do you say \"Te llamo mañana\"?", "es": "¿Cómo se dice «Te llamo mañana»?" }, "options": ["I'll call you tomorrow.", "I you call tomorrow.", "I'll you call tomorrow.", "You I call tomorrow."], "correct": 0, "explanation": { "en": "The pronoun goes after the verb.", "es": "El pronombre va después del verbo." } },
+    { "question": { "en": "Make a suggestion: walk to the lake together.", "es": "Haz una sugerencia: caminar juntos al lago." }, "options": ["Let's walk to the lake.", "Let's to walk to the lake.", "Let walk us to the lake.", "We let's walk to the lake."], "correct": 0, "explanation": { "en": "Let's + base verb.", "es": "Let's + verbo base." } },
+    { "question": { "en": "Complete: \"Do you know Mr. Park? I like ___ a lot.\"", "es": "Completa: «Do you know Mr. Park? I like ___ a lot.»" }, "options": ["him", "he", "his", "her"], "correct": 0, "explanation": { "en": "Mr. Park (a man) as an object → him.", "es": "Mr. Park (hombre) como objeto → him." } },
+    { "question": { "en": "Complete: \"Can you take a picture of ___?\" (you and your cousin)", "es": "Completa: «Can you take a picture of ___?» (tú y tu prima)" }, "options": ["us", "we", "our", "ours"], "correct": 0, "explanation": { "en": "We → us (object).", "es": "We → us (objeto)." } },
+    { "question": { "en": "A long seat in a park is a…", "es": "Un asiento largo en un parque es una…" }, "options": ["bench", "bridge", "fountain", "path"], "correct": 0, "explanation": { "en": "Bench = banca.", "es": "Bench = banca." } },
+    { "question": { "en": "Choose the negative suggestion.", "es": "Elige la sugerencia negativa." }, "options": ["Let's not take the bus.", "Let's don't take the bus.", "Don't let's taking the bus.", "Let's no take the bus."], "correct": 0, "explanation": { "en": "Negative: Let's not + verb.", "es": "Negativo: Let's not + verbo." } }
+  ],
+  "story": {
+    "title": "Central Park",
+    "text": "On Sunday, Elena says, \"Let's go for a walk in Central Park.\" The park is enormous. There are paths, bridges, a big lake and many benches. \"Look at them!\" says Carmen. Two squirrels are running up a tree. Elena laughs. \"There are thousands of them here.\" They walk for an hour. Elena shows her the famous fountain and a statue of Alice in Wonderland. A young woman with a camera passes by. \"Excuse me, can you take a picture of us?\" asks Carmen. \"Sure! Smile!\" After two hours, Carmen is tired. \"Let's sit on that bench,\" she says. \"And let's not walk back. Let's take a taxi!\" Elena takes her hand. \"Carmen, I'm so happy you're here. Twenty years is too long.\" \"I know. I missed you,\" says Carmen. \"I missed you too.\"",
+    "es": "El domingo, Elena dice: «Vamos a dar un paseo por Central Park.» El parque es enorme. Hay senderos, puentes, un lago grande y muchas bancas. «¡Míralas!», dice Carmen. Dos ardillas suben corriendo por un árbol. Elena se ríe. «Aquí hay miles.» Caminan una hora. Elena le enseña la famosa fuente y una estatua de Alicia en el País de las Maravillas. Pasa una joven con una cámara. «Disculpe, ¿nos puede tomar una foto?», pregunta Carmen. «¡Claro! ¡Sonrían!» Después de dos horas, Carmen está cansada. «Sentémonos en esa banca», dice. «Y no regresemos caminando. ¡Tomemos un taxi!» Elena le toma la mano. «Carmen, estoy tan feliz de que estés aquí. Veinte años es demasiado tiempo.» «Lo sé. Te extrañé», dice Carmen. «Yo también te extrañé.»",
+    "highlighted_words": ["Let's go for a walk", "paths", "bridges", "lake", "benches", "Look at them", "squirrels", "fountain", "statue", "can you take a picture of us", "tired", "Let's sit on that bench", "let's not walk back", "I missed you"]
+  },
+  "arrange": [
+    { "sentence": "Let's go for a walk in the park", "es": "Vamos a dar un paseo por el parque." },
+    { "sentence": "Can you take a picture of us", "es": "¿Nos puede tomar una foto?" },
+    { "sentence": "I will call you tomorrow", "es": "Te llamo mañana." },
+    { "sentence": "Let's sit on that bench", "es": "Sentémonos en esa banca." },
+    { "sentence": "Do you know him", "es": "¿Lo conoces?" },
+    { "sentence": "Elena showed us the lake", "es": "Elena nos enseñó el lago." }
+  ],
+  "translate": [
+    { "answer": "Let's go for a walk", "es": "Vamos a dar un paseo" },
+    { "answer": "Wait for me", "es": "Espérame" },
+    { "answer": "I love them", "es": "Me encantan" },
+    { "answer": "Can you help us", "es": "¿Nos puede ayudar?" },
+    { "answer": "I missed you", "es": "Te extrañé" },
+    { "answer": "Follow me", "es": "Sígueme" }
+  ]
+}

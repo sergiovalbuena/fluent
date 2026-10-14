@@ -1,0 +1,85 @@
+{
+  "lesson": 12,
+  "slug": "lesson-12",
+  "icon": "💼",
+  "title": { "en": "Jobs", "es": "Profesiones y oficios" },
+  "grammar": [
+    { "structure": "a / an + job", "example": "She is a nurse. He is an engineer.", "en": "Jobs need \"a\" or \"an\"", "es": "Las profesiones llevan «a» o «an»" },
+    { "structure": "What do you do?", "example": "What do you do? — I'm a teacher.", "en": "Asking about someone's job", "es": "Preguntar a qué se dedica alguien" },
+    { "structure": "work at / work in / work for", "example": "I work at a bakery. She works in a hospital. He works for a big company.", "en": "Prepositions with \"work\"", "es": "Preposiciones con «work»" },
+    { "structure": "retired / unemployed / part-time", "example": "I'm retired. She works part-time.", "en": "Describing your work situation", "es": "Describir tu situación laboral" },
+    { "structure": "like + verb-ing", "example": "I like working with people.", "en": "Talking about what you like in a job", "es": "Hablar de lo que te gusta de un trabajo" }
+  ],
+  "tips": [
+    { "en": "Never forget the article: \"I'm a teacher\", not \"I'm teacher\". This is very different from Spanish.", "es": "No olvides el artículo: «I'm a teacher», no «I'm teacher». Es muy diferente del español." },
+    { "en": "Many job names don't change for men and women: a teacher, a doctor, a nurse.", "es": "Muchas profesiones no cambian para hombres y mujeres: a teacher, a doctor, a nurse." },
+    { "en": "\"Retired\" (jubilado) is a common and respected answer to \"What do you do?\".", "es": "«Retired» (jubilado/a) es una respuesta común y respetada a «What do you do?»." },
+    { "en": "\"Job\" is a specific position; \"work\" is more general: I love my job. I go to work.", "es": "«Job» es un puesto concreto; «work» es más general: I love my job. I go to work." },
+    { "en": "In the US, people often ask \"What do you do?\" soon after meeting. It's normal small talk.", "es": "En Estados Unidos es común preguntar «What do you do?» poco después de conocerse. Es charla normal." }
+  ],
+  "vocabulary": [
+    { "word": "teacher", "es": "maestro / profesor" },
+    { "word": "doctor", "es": "médico / doctor" },
+    { "word": "nurse", "es": "enfermero / enfermera" },
+    { "word": "mechanic", "es": "mecánico" },
+    { "word": "cook", "es": "cocinero" },
+    { "word": "baker", "es": "panadero" },
+    { "word": "engineer", "es": "ingeniero" },
+    { "word": "lawyer", "es": "abogado" },
+    { "word": "salesperson", "es": "vendedor" },
+    { "word": "cashier", "es": "cajero" },
+    { "word": "driver", "es": "conductor / chofer" },
+    { "word": "accountant", "es": "contador" },
+    { "word": "hairdresser", "es": "peluquero / estilista" },
+    { "word": "office", "es": "oficina" },
+    { "word": "boss", "es": "jefe / jefa" },
+    { "word": "retired", "es": "jubilado" },
+    { "word": "part-time", "es": "medio tiempo" }
+  ],
+  "phrases": [
+    { "phrase": "What do you do?", "es": "¿A qué te dedicas?" },
+    { "phrase": "I'm a nurse.", "es": "Soy enfermera." },
+    { "phrase": "Where do you work?", "es": "¿Dónde trabajas?" },
+    { "phrase": "I work at a bakery.", "es": "Trabajo en una panadería." },
+    { "phrase": "I'm retired.", "es": "Estoy jubilada." },
+    { "phrase": "I was a teacher for thirty years.", "es": "Fui maestra durante treinta años." },
+    { "phrase": "Do you like your job?", "es": "¿Te gusta tu trabajo?" },
+    { "phrase": "I love working with children.", "es": "Me encanta trabajar con niños." },
+    { "phrase": "She works part-time.", "es": "Ella trabaja medio tiempo." },
+    { "phrase": "He works from home.", "es": "Él trabaja desde casa." },
+    { "phrase": "It's a hard job.", "es": "Es un trabajo duro." },
+    { "phrase": "What time do you start work?", "es": "¿A qué hora empiezas a trabajar?" }
+  ],
+  "qa": [
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["She is a nurse.", "She is nurse.", "She is an nurse.", "She nurse is."], "correct": 0, "explanation": { "en": "Jobs need an article in English: a nurse.", "es": "En inglés las profesiones llevan artículo: a nurse." } },
+    { "question": { "en": "Complete: \"He is ___ engineer.\"", "es": "Completa: «He is ___ engineer.»" }, "options": ["an", "a", "the a", "one"], "correct": 0, "explanation": { "en": "\"Engineer\" starts with a vowel sound → an.", "es": "«Engineer» empieza con sonido de vocal → an." } },
+    { "question": { "en": "Who fixes cars?", "es": "¿Quién arregla autos?" }, "options": ["a mechanic", "a lawyer", "a baker", "a nurse"], "correct": 0, "explanation": { "en": "A mechanic fixes cars.", "es": "Un mecánico (mechanic) arregla autos." } },
+    { "question": { "en": "Who makes bread?", "es": "¿Quién hace pan?" }, "options": ["a baker", "a cashier", "a driver", "an accountant"], "correct": 0, "explanation": { "en": "A baker makes bread in a bakery.", "es": "Un panadero (baker) hace pan en una panadería (bakery)." } },
+    { "question": { "en": "You don't work anymore because of your age. You are…", "es": "Ya no trabajas por tu edad. Estás…" }, "options": ["retired", "part-time", "a boss", "busy"], "correct": 0, "explanation": { "en": "\"Retired\" means you stopped working, usually because of age.", "es": "«Retired» significa que dejaste de trabajar, normalmente por la edad." } },
+    { "question": { "en": "Complete: \"I work ___ a big company.\"", "es": "Completa: «I work ___ a big company.»" }, "options": ["for", "of", "to", "from"], "correct": 0, "explanation": { "en": "We say \"work for\" a company (the employer).", "es": "Se dice «work for» una empresa (el empleador)." } },
+    { "question": { "en": "Which answer fits \"What do you do?\"", "es": "¿Qué respuesta va con «What do you do?»?" }, "options": ["I'm an accountant.", "I'm doing homework.", "I'm fine, thanks.", "I'm from Mexico."], "correct": 0, "explanation": { "en": "The question asks about your job.", "es": "La pregunta es sobre tu trabajo." } },
+    { "question": { "en": "Complete: \"I like ___ with people.\"", "es": "Completa: «I like ___ with people.»" }, "options": ["working", "work", "works", "to working"], "correct": 0, "explanation": { "en": "After \"like\" we often use verb + -ing: I like working.", "es": "Después de «like» se suele usar verbo + -ing: I like working." } }
+  ],
+  "story": {
+    "title": "Thirty Years of Teaching",
+    "text": "At the park, Carmen meets Linda's friend Tom. Tom is a driver. He drives a school bus. \"Nice to meet you, Carmen. What do you do?\" Carmen thinks for a moment. \"I'm retired. I was a teacher in Mexico for thirty years.\" \"A teacher! That's a hard job.\" \"Yes, but I love working with children.\" Linda says, \"Carmen is a great cook too. Her tamales are amazing.\" Tom laughs. \"My wife is a baker. She works at a bakery on Fifth Avenue. Maybe she needs a cook.\" \"Really?\" says Carmen. \"I don't want a full-time job, but part-time… maybe.\" Tom writes a phone number on a paper. \"Call her. Her name is Grace.\" Carmen puts the paper in her bag. Maybe retired is not forever.",
+    "es": "En el parque, Carmen conoce a Tom, un amigo de Linda. Tom es chofer. Maneja un autobús escolar. «Mucho gusto, Carmen. ¿A qué te dedicas?» Carmen piensa un momento. «Estoy jubilada. Fui maestra en México durante treinta años.» «¡Maestra! Es un trabajo duro.» «Sí, pero me encanta trabajar con niños.» Linda dice: «Carmen también es una gran cocinera. Sus tamales son increíbles.» Tom se ríe. «Mi esposa es panadera. Trabaja en una panadería en la Quinta Avenida. Quizás necesita una cocinera.» «¿En serio?», dice Carmen. «No quiero un trabajo de tiempo completo, pero de medio tiempo… quizás.» Tom escribe un número de teléfono en un papel. «Llámala. Se llama Grace.» Carmen guarda el papel en su bolsa. Quizás jubilada no es para siempre.",
+    "highlighted_words": ["a driver", "What do you do", "I'm retired", "a teacher", "a hard job", "I love working with children", "cook", "baker", "works at a bakery", "part-time"]
+  },
+  "arrange": [
+    { "sentence": "What do you do", "es": "¿A qué te dedicas?" },
+    { "sentence": "My daughter is a nurse", "es": "Mi hija es enfermera." },
+    { "sentence": "He works for a big company", "es": "Él trabaja para una empresa grande." },
+    { "sentence": "I love working with children", "es": "Me encanta trabajar con niños." },
+    { "sentence": "She works part-time at a bakery", "es": "Ella trabaja medio tiempo en una panadería." },
+    { "sentence": "I was a teacher for thirty years", "es": "Fui maestra durante treinta años." }
+  ],
+  "translate": [
+    { "answer": "I am retired", "es": "Estoy jubilada" },
+    { "answer": "She is a teacher", "es": "Ella es maestra" },
+    { "answer": "Where do you work", "es": "¿Dónde trabajas?" },
+    { "answer": "He is an engineer", "es": "Él es ingeniero" },
+    { "answer": "I work at a bakery", "es": "Trabajo en una panadería" },
+    { "answer": "Do you like your job", "es": "¿Te gusta tu trabajo?" }
+  ]
+}

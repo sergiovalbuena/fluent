@@ -1,0 +1,85 @@
+{
+  "lesson": 31,
+  "slug": "lesson-31",
+  "icon": "🧳",
+  "title": { "en": "At the travel agency", "es": "En la agencia de viajes" },
+  "grammar": [
+    { "structure": "would like to + verb", "example": "I'd like to go to New York in October.", "en": "Polite wishes", "es": "Deseos expresados con amabilidad" },
+    { "structure": "want to + verb", "example": "I want to visit my cousin.", "en": "Saying what you want to do", "es": "Decir lo que quieres hacer" },
+    { "structure": "Would you like…?", "example": "Would you like a window seat?", "en": "Polite offers and questions", "es": "Ofrecer y preguntar con amabilidad" },
+    { "structure": "round-trip / one-way", "example": "A round-trip ticket, please.", "en": "Types of tickets", "es": "Tipos de boletos" },
+    { "structure": "from … to …", "example": "from October 5th to October 19th", "en": "Dates and places", "es": "Fechas y lugares" }
+  ],
+  "tips": [
+    { "en": "\"I'd like to…\" is the most useful phrase for traveling: polite and clear.", "es": "«I'd like to…» es la frase más útil para viajar: amable y clara." },
+    { "en": "\"Would you like…?\" is an offer. Answer \"Yes, please\" or \"No, thank you\".", "es": "«Would you like…?» es un ofrecimiento. Responde «Yes, please» o «No, thank you»." },
+    { "en": "\"Round-trip\" = ida y vuelta; \"one-way\" = solo ida.", "es": "«Round-trip» = ida y vuelta; «one-way» = solo ida." },
+    { "en": "Domestic flights inside the US need a valid ID (like a REAL ID or passport), not a visa.", "es": "Los vuelos nacionales dentro de Estados Unidos piden una identificación válida (como REAL ID o pasaporte), no visa." },
+    { "en": "\"Layover\" is a stop between two flights.", "es": "«Layover» es una escala entre dos vuelos." }
+  ],
+  "vocabulary": [
+    { "word": "travel agency", "es": "agencia de viajes" },
+    { "word": "travel agent", "es": "agente de viajes" },
+    { "word": "flight", "es": "vuelo" },
+    { "word": "round-trip", "es": "ida y vuelta" },
+    { "word": "one-way", "es": "solo ida" },
+    { "word": "direct flight", "es": "vuelo directo" },
+    { "word": "layover", "es": "escala" },
+    { "word": "departure", "es": "salida" },
+    { "word": "arrival", "es": "llegada" },
+    { "word": "reservation", "es": "reservación" },
+    { "word": "price", "es": "precio" },
+    { "word": "travel insurance", "es": "seguro de viaje" },
+    { "word": "window seat", "es": "asiento de ventana" },
+    { "word": "aisle seat", "es": "asiento de pasillo" },
+    { "word": "book", "es": "reservar" },
+    { "word": "destination", "es": "destino" },
+    { "word": "ID", "es": "identificación" }
+  ],
+  "phrases": [
+    { "phrase": "I'd like to book a flight to New York.", "es": "Quisiera reservar un vuelo a Nueva York." },
+    { "phrase": "When would you like to travel?", "es": "¿Cuándo le gustaría viajar?" },
+    { "phrase": "From October 5th to the 19th.", "es": "Del 5 al 19 de octubre." },
+    { "phrase": "Round-trip, please.", "es": "Ida y vuelta, por favor." },
+    { "phrase": "Is it a direct flight?", "es": "¿Es un vuelo directo?" },
+    { "phrase": "There's a layover in Chicago.", "es": "Hay una escala en Chicago." },
+    { "phrase": "Would you like a window seat or an aisle seat?", "es": "¿Quiere asiento de ventana o de pasillo?" },
+    { "phrase": "A window seat, please.", "es": "Ventana, por favor." },
+    { "phrase": "How much is the ticket?", "es": "¿Cuánto cuesta el boleto?" },
+    { "phrase": "Does the price include luggage?", "es": "¿El precio incluye equipaje?" },
+    { "phrase": "I want to visit my cousin.", "es": "Quiero visitar a mi prima." },
+    { "phrase": "Here is your reservation.", "es": "Aquí está su reservación." }
+  ],
+  "qa": [
+    { "question": { "en": "Which is the most polite?", "es": "¿Cuál es la más amable?" }, "options": ["I'd like to book a flight.", "I want a flight now.", "Give me a flight.", "Flight!"], "correct": 0, "explanation": { "en": "\"I'd like to…\" is polite.", "es": "«I'd like to…» es amable." } },
+    { "question": { "en": "\"Round-trip\" means…", "es": "«Round-trip» significa…" }, "options": ["ida y vuelta", "solo ida", "vuelo directo", "escala"], "correct": 0, "explanation": { "en": "Round-trip = there and back.", "es": "Round-trip = ida y vuelta." } },
+    { "question": { "en": "The agent asks \"Would you like travel insurance?\" You want it. You say:", "es": "El agente pregunta «Would you like travel insurance?». Lo quieres. Dices:" }, "options": ["Yes, please.", "Yes, I would like.", "Yes, I like.", "Yes, you would."], "correct": 0, "explanation": { "en": "Accept an offer: Yes, please.", "es": "Para aceptar un ofrecimiento: Yes, please." } },
+    { "question": { "en": "Complete: \"I'd like ___ to New York.\"", "es": "Completa: «I'd like ___ to New York.»" }, "options": ["to go", "go", "going", "goes"], "correct": 0, "explanation": { "en": "would like + to + verb.", "es": "would like + to + verbo." } },
+    { "question": { "en": "A stop between two flights is a…", "es": "Una parada entre dos vuelos es una…" }, "options": ["layover", "departure", "arrival", "reservation"], "correct": 0, "explanation": { "en": "Layover = escala.", "es": "Layover = escala." } },
+    { "question": { "en": "You want to look out during the flight. You ask for…", "es": "Quieres mirar afuera durante el vuelo. Pides…" }, "options": ["a window seat", "an aisle seat", "a layover", "a one-way ticket"], "correct": 0, "explanation": { "en": "Window seat = asiento de ventana.", "es": "Window seat = asiento de ventana." } },
+    { "question": { "en": "Complete: \"___ you like a direct flight?\"", "es": "Completa: «___ you like a direct flight?»" }, "options": ["Would", "Do would", "Will", "Are"], "correct": 0, "explanation": { "en": "Polite offer: Would you like…?", "es": "Ofrecimiento amable: Would you like…?" } },
+    { "question": { "en": "For a flight inside the US, you need…", "es": "Para un vuelo dentro de Estados Unidos necesitas…" }, "options": ["a valid ID", "a visa", "a work permit", "nothing"], "correct": 0, "explanation": { "en": "Domestic flights require a valid ID.", "es": "Los vuelos nacionales piden identificación válida." } }
+  ],
+  "story": {
+    "title": "A Dream Trip",
+    "text": "Carmen's cousin Elena lives in New York. They haven't seen each other in twenty years. This year, Carmen wants to visit her. She goes to a travel agency with Laura. \"Good morning. I'd like to book a flight to New York,\" says Carmen. \"Of course. When would you like to travel?\" asks the travel agent. \"From October fifth to the nineteenth.\" \"Round-trip?\" \"Yes, round-trip, please. Is there a direct flight?\" \"There's a direct flight at eight in the morning, or a cheaper one with a layover in Chicago.\" \"The direct flight, please. I don't want to get lost in Chicago!\" The agent laughs. \"Would you like a window seat or an aisle seat?\" \"A window seat. I want to see everything.\" When they leave, Carmen holds the reservation like a treasure.",
+    "es": "La prima de Carmen, Elena, vive en Nueva York. No se ven desde hace veinte años. Este año, Carmen quiere visitarla. Va a una agencia de viajes con Laura. «Buenos días. Quisiera reservar un vuelo a Nueva York», dice Carmen. «Claro. ¿Cuándo le gustaría viajar?», pregunta el agente de viajes. «Del cinco al diecinueve de octubre.» «¿Ida y vuelta?» «Sí, ida y vuelta, por favor. ¿Hay vuelo directo?» «Hay un vuelo directo a las ocho de la mañana, o uno más barato con escala en Chicago.» «El directo, por favor. ¡No me quiero perder en Chicago!» El agente se ríe. «¿Quiere asiento de ventana o de pasillo?» «De ventana. Quiero verlo todo.» Al salir, Carmen sostiene la reservación como un tesoro.",
+    "highlighted_words": ["wants to visit", "travel agency", "I'd like to book a flight", "When would you like to travel", "travel agent", "Round-trip", "direct flight", "layover", "Would you like a window seat", "aisle seat", "reservation"]
+  },
+  "arrange": [
+    { "sentence": "I would like to book a flight", "es": "Quisiera reservar un vuelo." },
+    { "sentence": "When would you like to travel", "es": "¿Cuándo le gustaría viajar?" },
+    { "sentence": "Is it a direct flight", "es": "¿Es un vuelo directo?" },
+    { "sentence": "I want to visit my cousin in New York", "es": "Quiero visitar a mi prima en Nueva York." },
+    { "sentence": "Would you like a window seat", "es": "¿Quiere asiento de ventana?" },
+    { "sentence": "There is a layover in Chicago", "es": "Hay una escala en Chicago." }
+  ],
+  "translate": [
+    { "answer": "I would like to travel in October", "es": "Me gustaría viajar en octubre" },
+    { "answer": "A round-trip ticket, please", "es": "Un boleto de ida y vuelta, por favor" },
+    { "answer": "Is it a direct flight", "es": "¿Es un vuelo directo?" },
+    { "answer": "How much is the ticket", "es": "¿Cuánto cuesta el boleto?" },
+    { "answer": "I want a window seat", "es": "Quiero asiento de ventana" },
+    { "answer": "Would you like some coffee", "es": "¿Le gustaría un café?" }
+  ]
+}

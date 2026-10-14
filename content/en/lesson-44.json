@@ -1,0 +1,85 @@
+{
+  "lesson": 44,
+  "slug": "lesson-44",
+  "icon": "🛏️",
+  "title": { "en": "The roommate", "es": "La compañera de casa" },
+  "grammar": [
+    { "structure": "mine, yours, his, hers, ours, theirs", "example": "This cup is mine. That one is yours.", "en": "Possessive pronouns", "es": "Pronombres posesivos" },
+    { "structure": "my book → mine", "example": "Is this your towel? — No, it's hers.", "en": "Possessive pronoun replaces adjective + noun", "es": "El pronombre posesivo reemplaza al adjetivo + sustantivo" },
+    { "structure": "Whose…?", "example": "Whose shoes are these?", "en": "Asking who something belongs to", "es": "Preguntar de quién es algo" },
+    { "structure": "share", "example": "We share the kitchen and the bathroom.", "en": "Talking about shared spaces", "es": "Hablar de espacios compartidos" },
+    { "structure": "Would you mind not + verb-ing?", "example": "Would you mind not playing music so late?", "en": "Asking someone politely to stop", "es": "Pedir con amabilidad que alguien deje de hacer algo" }
+  ],
+  "tips": [
+    { "en": "Possessive pronouns never have \"the\" or a noun after them: \"It's mine\", not \"It's the mine\".", "es": "Los pronombres posesivos nunca llevan «the» ni sustantivo después: «It's mine», no «It's the mine»." },
+    { "en": "\"Whose\" (de quién) sounds the same as \"who's\" (who is). Context helps.", "es": "«Whose» (de quién) suena igual que «who's» (who is). El contexto ayuda." },
+    { "en": "\"Roommate\" means someone you share a home with (not just a room) in American English.", "es": "En inglés estadounidense, «roommate» es alguien con quien compartes casa (no solo cuarto)." },
+    { "en": "House rules make living together easier: cleaning days, quiet hours, guests.", "es": "Las reglas de la casa facilitan la convivencia: días de limpieza, horas de silencio, visitas." },
+    { "en": "A polite complaint starts softly: \"I hope you don't mind, but…\"", "es": "Una queja amable empieza con suavidad: «I hope you don't mind, but…» (espero que no te moleste, pero…)." }
+  ],
+  "vocabulary": [
+    { "word": "roommate", "es": "compañero/a de casa" },
+    { "word": "share", "es": "compartir" },
+    { "word": "mine", "es": "mío / mía" },
+    { "word": "yours", "es": "tuyo / suyo" },
+    { "word": "his", "es": "suyo (de él)" },
+    { "word": "hers", "es": "suyo (de ella)" },
+    { "word": "ours", "es": "nuestro" },
+    { "word": "theirs", "es": "suyo (de ellos)" },
+    { "word": "whose", "es": "de quién" },
+    { "word": "chores", "es": "quehaceres" },
+    { "word": "dishes", "es": "platos / trastes" },
+    { "word": "trash", "es": "basura" },
+    { "word": "messy", "es": "desordenado" },
+    { "word": "tidy", "es": "ordenado" },
+    { "word": "noise", "es": "ruido" },
+    { "word": "rules", "es": "reglas" },
+    { "word": "split", "es": "dividir (gastos)" }
+  ],
+  "phrases": [
+    { "phrase": "Is this yours?", "es": "¿Esto es tuyo?" },
+    { "phrase": "No, it's hers.", "es": "No, es de ella." },
+    { "phrase": "Whose cup is this?", "es": "¿De quién es esta taza?" },
+    { "phrase": "That shelf is mine.", "es": "Esa repisa es mía." },
+    { "phrase": "We share the kitchen.", "es": "Compartimos la cocina." },
+    { "phrase": "Let's split the bills.", "es": "Dividamos las cuentas." },
+    { "phrase": "Whose turn is it to take out the trash?", "es": "¿A quién le toca sacar la basura?" },
+    { "phrase": "It's your turn to do the dishes.", "es": "Te toca lavar los trastes." },
+    { "phrase": "Would you mind not playing music so late?", "es": "¿Te importaría no poner música tan tarde?" },
+    { "phrase": "Sorry, I didn't know.", "es": "Perdón, no sabía." },
+    { "phrase": "Let's make some house rules.", "es": "Pongamos unas reglas de la casa." },
+    { "phrase": "No problem, I'll keep it down.", "es": "No hay problema, le bajo." }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"This phone isn't mine. It's ___.\" (Ana's)", "es": "Completa: «This phone isn't mine. It's ___.» (de Ana)" }, "options": ["hers", "her", "she", "her's"], "correct": 0, "explanation": { "en": "Ana's phone → hers.", "es": "El teléfono de Ana → hers." } },
+    { "question": { "en": "Complete: \"Is this book ___?\" (you)", "es": "Completa: «Is this book ___?» (tú)" }, "options": ["yours", "your", "you", "your's"], "correct": 0, "explanation": { "en": "Possessive pronoun: yours (no apostrophe).", "es": "Pronombre posesivo: yours (sin apóstrofo)." } },
+    { "question": { "en": "How do you ask who something belongs to?", "es": "¿Cómo preguntas de quién es algo?" }, "options": ["Whose bag is this?", "Who bag is this?", "Who's bag this is?", "Whom bag is this?"], "correct": 0, "explanation": { "en": "Whose + noun?", "es": "Whose + sustantivo?" } },
+    { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["The red towel is mine.", "The red towel is the mine.", "The red towel is my.", "The red towel is mines."], "correct": 0, "explanation": { "en": "Mine, without \"the\" or -s.", "es": "Mine, sin «the» ni -s." } },
+    { "question": { "en": "Housework like washing dishes and taking out the trash is called…", "es": "Las tareas de la casa como lavar trastes y sacar la basura se llaman…" }, "options": ["chores", "rules", "bills", "noise"], "correct": 0, "explanation": { "en": "Chores = quehaceres.", "es": "Chores = quehaceres." } },
+    { "question": { "en": "Your roommate plays loud music at midnight. You ask politely:", "es": "Tu compañera pone música fuerte a medianoche. Le pides con amabilidad:" }, "options": ["Would you mind not playing music so late?", "Stop the music!", "You are noise.", "Music is mine."], "correct": 0, "explanation": { "en": "Would you mind not + verb-ing? is polite.", "es": "Would you mind not + verbo-ing? es amable." } },
+    { "question": { "en": "Complete: \"This house isn't theirs. It's ___.\" (you and me)", "es": "Completa: «This house isn't theirs. It's ___.» (tú y yo)" }, "options": ["ours", "our", "us", "we"], "correct": 0, "explanation": { "en": "We → ours.", "es": "We → ours." } },
+    { "question": { "en": "\"Let's split the bills\" means…", "es": "«Let's split the bills» significa…" }, "options": ["Let's pay half each.", "Let's not pay.", "Let's tear the bills.", "Let's hide the bills."], "correct": 0, "explanation": { "en": "Split = divide between people.", "es": "Split = dividir entre personas." } }
+  ],
+  "story": {
+    "title": "Whose Turn Is It?",
+    "text": "Ana loves her new studio, but the rent is high. So she decides to share it with a roommate: Sofía, a nursing student from Colombia. The first week is wonderful. They cook together and split the bills. But in the second week, problems begin. \"Sofía, whose dishes are these?\" \"Oh, they're mine. Sorry!\" \"And whose turn is it to take out the trash?\" \"Yours, I think…\" \"No, it's yours!\" At night, Sofía studies with music. Ana can't sleep. She asks Carmen for advice. \"Talk to her kindly,\" says Carmen. \"And make some house rules together.\" That evening Ana says, \"Sofía, I hope you don't mind, but would you mind not playing music after ten?\" \"Of course! Sorry, I didn't know.\" They write the rules on a paper on the fridge. At the bottom, Sofía writes: \"Rule number 10: the chocolate in the fridge is ours.\"",
+    "es": "A Ana le encanta su nuevo estudio, pero la renta es alta. Así que decide compartirlo con una compañera: Sofía, una estudiante de enfermería de Colombia. La primera semana es maravillosa. Cocinan juntas y dividen las cuentas. Pero la segunda semana empiezan los problemas. «Sofía, ¿de quién son estos trastes?» «Ay, son míos. ¡Perdón!» «¿Y a quién le toca sacar la basura?» «A ti, creo…» «¡No, te toca a ti!» En la noche, Sofía estudia con música. Ana no puede dormir. Le pide consejo a Carmen. «Háblale con amabilidad», dice Carmen. «Y pongan unas reglas de la casa juntas.» Esa tarde Ana dice: «Sofía, espero que no te moleste, pero ¿te importaría no poner música después de las diez?» «¡Claro! Perdón, no sabía.» Escriben las reglas en un papel en el refrigerador. Al final, Sofía escribe: «Regla número 10: el chocolate del refri es nuestro.»",
+    "highlighted_words": ["share", "roommate", "split the bills", "whose dishes are these", "they're mine", "whose turn is it to take out the trash", "Yours", "it's yours", "house rules", "would you mind not playing music", "Sorry, I didn't know", "ours"]
+  },
+  "arrange": [
+    { "sentence": "Whose cup is this", "es": "¿De quién es esta taza?" },
+    { "sentence": "This shelf is mine and that one is yours", "es": "Esta repisa es mía y esa es tuya." },
+    { "sentence": "We share the kitchen and the bathroom", "es": "Compartimos la cocina y el baño." },
+    { "sentence": "It is your turn to do the dishes", "es": "Te toca lavar los trastes." },
+    { "sentence": "Let's split the bills", "es": "Dividamos las cuentas." },
+    { "sentence": "Would you mind not playing music so late", "es": "¿Te importaría no poner música tan tarde?" }
+  ],
+  "translate": [
+    { "answer": "Is this yours", "es": "¿Esto es tuyo?" },
+    { "answer": "It is mine", "es": "Es mío" },
+    { "answer": "Whose bag is this", "es": "¿De quién es esta bolsa?" },
+    { "answer": "We share the apartment", "es": "Compartimos el departamento" },
+    { "answer": "It is your turn", "es": "Te toca a ti" },
+    { "answer": "The car is theirs", "es": "El auto es de ellos" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 38,
+  "slug": "lesson-38",
+  "icon": "🍽️",
+  "title": { "en": "At the restaurant", "es": "En el restaurante" },
+  "grammar": [
+    { "structure": "I'll have…", "example": "I'll have the chicken soup, please.", "en": "Ordering food", "es": "Pedir comida" },
+    { "structure": "Would you like…? / What would you like?", "example": "What would you like to drink?", "en": "The waiter's questions", "es": "Las preguntas del mesero" },
+    { "structure": "Could we have…?", "example": "Could we have the check, please?", "en": "Asking for things politely", "es": "Pedir cosas con amabilidad" },
+    { "structure": "some for offers", "example": "Would you like some more bread?", "en": "\"Some\" in offers (even in questions)", "es": "«Some» en ofrecimientos (aunque sea pregunta)" },
+    { "structure": "without / with / on the side", "example": "A salad without onions, with the dressing on the side.", "en": "Special requests", "es": "Pedidos especiales" }
+  ],
+  "tips": [
+    { "en": "In the US you ask for \"the check\" (la cuenta). The waiter usually won't bring it until you ask, or brings it when you finish.", "es": "En Estados Unidos se pide «the check» (la cuenta). El mesero normalmente no la trae hasta que la pides, o la trae al terminar." },
+    { "en": "Tipping 15–20% is expected in restaurants with table service.", "es": "En restaurantes con servicio a la mesa se espera una propina del 15 al 20%." },
+    { "en": "Water is free: \"Can I have a glass of water, please?\" Refills of soft drinks are often free too.", "es": "El agua es gratis: «Can I have a glass of water, please?». Rellenar el refresco también suele ser gratis." },
+    { "en": "Portions are big. Ask for \"a to-go box\" to take the rest home.", "es": "Las porciones son grandes. Pide «a to-go box» para llevarte lo que sobre." },
+    { "en": "If you have an allergy, say: \"I'm allergic to…\" — restaurants take it seriously.", "es": "Si tienes una alergia, di: «I'm allergic to…»: los restaurantes lo toman en serio." }
+  ],
+  "vocabulary": [
+    { "word": "waiter", "es": "mesero" },
+    { "word": "waitress", "es": "mesera" },
+    { "word": "menu", "es": "menú / carta" },
+    { "word": "order", "es": "pedir / pedido" },
+    { "word": "appetizer", "es": "entrada" },
+    { "word": "main course", "es": "plato fuerte" },
+    { "word": "dessert", "es": "postre" },
+    { "word": "check", "es": "cuenta" },
+    { "word": "tip", "es": "propina" },
+    { "word": "to-go box", "es": "recipiente para llevar" },
+    { "word": "spicy", "es": "picante" },
+    { "word": "medium", "es": "término medio" },
+    { "word": "well done", "es": "bien cocido" },
+    { "word": "allergic", "es": "alérgico" },
+    { "word": "refill", "es": "rellenar / otro (bebida)" },
+    { "word": "napkin", "es": "servilleta" },
+    { "word": "fork", "es": "tenedor" }
+  ],
+  "phrases": [
+    { "phrase": "A table for two, please.", "es": "Una mesa para dos, por favor." },
+    { "phrase": "Can I see the menu?", "es": "¿Puedo ver el menú?" },
+    { "phrase": "Are you ready to order?", "es": "¿Están listos para ordenar?" },
+    { "phrase": "I'll have the salmon, please.", "es": "Para mí el salmón, por favor." },
+    { "phrase": "What would you like to drink?", "es": "¿Qué les gustaría tomar?" },
+    { "phrase": "Is it spicy?", "es": "¿Pica?" },
+    { "phrase": "Without onions, please.", "es": "Sin cebolla, por favor." },
+    { "phrase": "I'm allergic to nuts.", "es": "Soy alérgica a las nueces." },
+    { "phrase": "Would you like some dessert?", "es": "¿Les gustaría postre?" },
+    { "phrase": "Could we have the check, please?", "es": "¿Nos trae la cuenta, por favor?" },
+    { "phrase": "Can I get a to-go box?", "es": "¿Me da un recipiente para llevar?" },
+    { "phrase": "Everything was delicious.", "es": "Todo estuvo delicioso." }
+  ],
+  "qa": [
+    { "question": { "en": "How do you order food?", "es": "¿Cómo pides comida?" }, "options": ["I'll have the chicken, please.", "I'm having chicken, please.", "I will the chicken.", "Chicken for me give."], "correct": 0, "explanation": { "en": "\"I'll have…\" is the natural way to order.", "es": "«I'll have…» es la forma natural de pedir." } },
+    { "question": { "en": "You finished eating and want to pay. You say:", "es": "Terminaste de comer y quieres pagar. Dices:" }, "options": ["Could we have the check, please?", "Could we have the bill to go?", "Could we have the tip?", "Could we have the menu?"], "correct": 0, "explanation": { "en": "In the US: the check.", "es": "En Estados Unidos: the check." } },
+    { "question": { "en": "In a US restaurant with table service, the usual tip is…", "es": "En un restaurante de Estados Unidos con servicio a la mesa, la propina habitual es…" }, "options": ["15–20%", "0%", "50%", "1 dollar total"], "correct": 0, "explanation": { "en": "15–20% is standard.", "es": "Lo normal es 15–20%." } },
+    { "question": { "en": "You can't eat nuts. You say:", "es": "No puedes comer nueces. Dices:" }, "options": ["I'm allergic to nuts.", "I'm allergy nuts.", "I have allergic nuts.", "Nuts are allergic."], "correct": 0, "explanation": { "en": "I'm allergic to + food.", "es": "I'm allergic to + alimento." } },
+    { "question": { "en": "The sweet course at the end of a meal is…", "es": "El plato dulce al final de la comida es…" }, "options": ["dessert", "desert", "appetizer", "main course"], "correct": 0, "explanation": { "en": "Dessert (double s) = postre. Desert = desierto.", "es": "Dessert (doble s) = postre. Desert = desierto." } },
+    { "question": { "en": "Complete: \"Would you like ___ more bread?\"", "es": "Completa: «Would you like ___ more bread?»" }, "options": ["some", "any", "a", "many"], "correct": 0, "explanation": { "en": "In offers we use \"some\", even in questions.", "es": "En ofrecimientos se usa «some», aunque sea pregunta." } },
+    { "question": { "en": "You can't finish your food and want to take it home. You ask for…", "es": "No terminas tu comida y quieres llevártela. Pides…" }, "options": ["a to-go box", "a refill", "a napkin", "the menu"], "correct": 0, "explanation": { "en": "A to-go box = recipiente para llevar.", "es": "A to-go box = recipiente para llevar." } },
+    { "question": { "en": "The waiter asks \"Are you ready to order?\" but you need more time. You say:", "es": "El mesero pregunta «Are you ready to order?» pero necesitas más tiempo. Dices:" }, "options": ["Not yet. Could we have a few more minutes?", "Yes, the check please.", "I'm allergic.", "Everything was delicious."], "correct": 0, "explanation": { "en": "\"Not yet\" + polite request for more time.", "es": "«Not yet» + pedir amablemente más tiempo." } }
+  ],
+  "story": {
+    "title": "A New York Diner",
+    "text": "On her last night in New York, Carmen invites Elena to dinner at an old diner. \"A table for two, please,\" says Carmen. The waitress gives them the menus. \"What would you like to drink?\" \"Two coffees, please.\" Carmen reads the menu slowly. \"Is the chili spicy?\" \"A little,\" says the waitress. \"Okay. I'll have the chili and a salad without onions.\" Elena orders a turkey sandwich. The portions are enormous! \"Would you like some dessert?\" asks the waitress. \"Apple pie, please. Two forks.\" At the end, Carmen asks, \"Could we have the check, please? And can I get a to-go box?\" She calculates the tip: twenty percent. Elena watches her and smiles. \"You order like a New Yorker now.\" \"Thirty lessons ago I didn't know how to say 'tenedor'!\"",
+    "es": "En su última noche en Nueva York, Carmen invita a Elena a cenar a un diner antiguo. «Una mesa para dos, por favor», dice Carmen. La mesera les da los menús. «¿Qué les gustaría tomar?» «Dos cafés, por favor.» Carmen lee el menú despacio. «¿El chili pica?» «Un poco», dice la mesera. «Bueno. Para mí el chili y una ensalada sin cebolla.» Elena pide un sándwich de pavo. ¡Las porciones son enormes! «¿Les gustaría postre?», pregunta la mesera. «Pay de manzana, por favor. Dos tenedores.» Al final, Carmen pregunta: «¿Nos trae la cuenta, por favor? ¿Y me da un recipiente para llevar?» Calcula la propina: veinte por ciento. Elena la mira y sonríe. «Ahora pides como una neoyorquina.» «¡Hace treinta lecciones no sabía decir «fork»!»",
+    "highlighted_words": ["A table for two, please", "waitress", "menus", "What would you like to drink", "spicy", "I'll have", "without onions", "Would you like some dessert", "forks", "Could we have the check, please", "to-go box", "tip"]
+  },
+  "arrange": [
+    { "sentence": "A table for two please", "es": "Una mesa para dos, por favor." },
+    { "sentence": "I will have the chicken soup", "es": "Para mí la sopa de pollo." },
+    { "sentence": "Could we have the check please", "es": "¿Nos trae la cuenta, por favor?" },
+    { "sentence": "Would you like some dessert", "es": "¿Les gustaría postre?" },
+    { "sentence": "I am allergic to nuts", "es": "Soy alérgica a las nueces." },
+    { "sentence": "Can I get a to-go box", "es": "¿Me da un recipiente para llevar?" }
+  ],
+  "translate": [
+    { "answer": "A table for two, please", "es": "Una mesa para dos, por favor" },
+    { "answer": "Can I see the menu", "es": "¿Puedo ver el menú?" },
+    { "answer": "Is it spicy", "es": "¿Pica?" },
+    { "answer": "The check, please", "es": "La cuenta, por favor" },
+    { "answer": "Everything was delicious", "es": "Todo estuvo delicioso" },
+    { "answer": "Without onions, please", "es": "Sin cebolla, por favor" }
+  ]
+}

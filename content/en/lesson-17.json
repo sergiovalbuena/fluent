@@ -1,0 +1,87 @@
+{
+  "lesson": 17,
+  "slug": "lesson-17",
+  "icon": "🥕",
+  "title": { "en": "Fruits and vegetables", "es": "Frutas y verduras" },
+  "grammar": [
+    { "structure": "like / love / hate + noun", "example": "I love mangoes. Leo hates broccoli.", "en": "Talking about likes and dislikes", "es": "Hablar de gustos" },
+    { "structure": "like + verb-ing", "example": "I like cooking with fresh vegetables.", "en": "Likes with activities", "es": "Gustos con actividades" },
+    { "structure": "don't / doesn't like", "example": "Mike doesn't like onions.", "en": "Negative likes", "es": "Lo que no gusta" },
+    { "structure": "Plural for food in general", "example": "I like apples. (all apples in general)", "en": "General statements use the plural", "es": "Las afirmaciones generales usan el plural" },
+    { "structure": "a pound of / a bunch of / a bag of", "example": "a pound of tomatoes, a bunch of bananas", "en": "Quantities at the market", "es": "Cantidades en el mercado" }
+  ],
+  "tips": [
+    { "en": "In Spanish \"me gustan las manzanas\" — in English the person comes first: \"I like apples\" (no \"the\").", "es": "En español «me gustan las manzanas»; en inglés la persona va primero: «I like apples» (sin «the»)." },
+    { "en": "In the US, fruits and vegetables are sold by the pound (lb). One pound is about 450 grams.", "es": "En Estados Unidos las frutas y verduras se venden por libra (lb). Una libra son unos 450 gramos." },
+    { "en": "\"Produce\" is the section of the supermarket with fresh fruits and vegetables.", "es": "«Produce» es la sección del supermercado con frutas y verduras frescas." },
+    { "en": "\"Farmers' markets\" sell fresh local produce, usually on weekends.", "es": "Los «farmers' markets» venden productos frescos de la región, normalmente los fines de semana." },
+    { "en": "\"Avocado\" and \"tomato\" come from Nahuatl words — your Spanish helps here!", "es": "«Avocado» y «tomato» vienen de palabras en náhuatl: ¡aquí tu español te ayuda!" }
+  ],
+  "vocabulary": [
+    { "word": "apple", "es": "manzana" },
+    { "word": "banana", "es": "plátano" },
+    { "word": "orange", "es": "naranja" },
+    { "word": "lemon", "es": "limón amarillo" },
+    { "word": "lime", "es": "limón verde" },
+    { "word": "mango", "es": "mango" },
+    { "word": "grapes", "es": "uvas" },
+    { "word": "strawberries", "es": "fresas" },
+    { "word": "watermelon", "es": "sandía" },
+    { "word": "tomato", "es": "jitomate / tomate" },
+    { "word": "onion", "es": "cebolla" },
+    { "word": "potato", "es": "papa" },
+    { "word": "carrot", "es": "zanahoria" },
+    { "word": "lettuce", "es": "lechuga" },
+    { "word": "broccoli", "es": "brócoli" },
+    { "word": "avocado", "es": "aguacate" },
+    { "word": "corn", "es": "maíz / elote" },
+    { "word": "fresh", "es": "fresco" },
+    { "word": "ripe", "es": "maduro" }
+  ],
+  "phrases": [
+    { "phrase": "I love mangoes.", "es": "Me encantan los mangos." },
+    { "phrase": "I don't like onions.", "es": "No me gustan las cebollas." },
+    { "phrase": "Do you like avocados?", "es": "¿Te gustan los aguacates?" },
+    { "phrase": "How much are the tomatoes?", "es": "¿A cuánto están los jitomates?" },
+    { "phrase": "Two dollars a pound.", "es": "Dos dólares la libra." },
+    { "phrase": "A bunch of bananas, please.", "es": "Un racimo de plátanos, por favor." },
+    { "phrase": "Are these ripe?", "es": "¿Estos están maduros?" },
+    { "phrase": "They're very fresh.", "es": "Están muy frescos." },
+    { "phrase": "Where is the produce section?", "es": "¿Dónde está la sección de frutas y verduras?" },
+    { "phrase": "Eat your vegetables!", "es": "¡Cómete las verduras!" },
+    { "phrase": "I hate broccoli.", "es": "Odio el brócoli." },
+    { "phrase": "Fruit is good for you.", "es": "La fruta es buena para la salud." }
+  ],
+  "qa": [
+    { "question": { "en": "How do you say \"Me gustan las manzanas\"?", "es": "¿Cómo se dice «Me gustan las manzanas»?" }, "options": ["I like apples.", "Me like apples.", "I like the apples to me.", "Apples like me."], "correct": 0, "explanation": { "en": "The person is the subject: I like apples.", "es": "La persona es el sujeto: I like apples." } },
+    { "question": { "en": "Complete: \"Mike ___ like onions.\"", "es": "Completa: «Mike ___ like onions.»" }, "options": ["doesn't", "don't", "isn't", "not"], "correct": 0, "explanation": { "en": "He → doesn't + verb.", "es": "He → doesn't + verbo." } },
+    { "question": { "en": "Which is a green citrus fruit?", "es": "¿Cuál es un cítrico verde?" }, "options": ["lime", "lemon", "orange", "banana"], "correct": 0, "explanation": { "en": "In the US a \"lime\" is green and a \"lemon\" is yellow.", "es": "En Estados Unidos «lime» es el limón verde y «lemon» el amarillo." } },
+    { "question": { "en": "Complete: \"I like ___ with fresh vegetables.\"", "es": "Completa: «I like ___ with fresh vegetables.»" }, "options": ["cooking", "cook", "cooks", "to cooking"], "correct": 0, "explanation": { "en": "Like + verb-ing: I like cooking.", "es": "Like + verbo-ing: I like cooking." } },
+    { "question": { "en": "About how many grams is one pound?", "es": "¿Cuántos gramos tiene aproximadamente una libra?" }, "options": ["450", "100", "1,000", "250"], "correct": 0, "explanation": { "en": "One pound is about 450 grams.", "es": "Una libra son unos 450 gramos." } },
+    { "question": { "en": "A banana is yellow and soft. It is…", "es": "Un plátano está amarillo y suave. Está…" }, "options": ["ripe", "fresh juice", "expensive", "green"], "correct": 0, "explanation": { "en": "\"Ripe\" means ready to eat.", "es": "«Ripe» significa maduro, listo para comer." } },
+    { "question": { "en": "Which one is a vegetable?", "es": "¿Cuál es una verdura?" }, "options": ["carrot", "grapes", "watermelon", "mango"], "correct": 0, "explanation": { "en": "A carrot is a vegetable. The others are fruits.", "es": "La zanahoria (carrot) es verdura. Las demás son frutas." } },
+    { "question": { "en": "Short answer: \"Do you like avocados?\" (yes)", "es": "Respuesta corta: «Do you like avocados?» (sí)" }, "options": ["Yes, I do.", "Yes, I like.", "Yes, I am.", "Yes, I can."], "correct": 0, "explanation": { "en": "Short answer with \"do\": Yes, I do.", "es": "Respuesta corta con «do»: Yes, I do." } }
+  ],
+  "story": {
+    "title": "The Farmers' Market",
+    "text": "Every Sunday there is a farmers' market near Carmen's apartment. Today she goes with Linda. There are many colors: red tomatoes, green limes, orange carrots and yellow bananas. \"I love farmers' markets,\" says Linda. \"Everything is so fresh.\" Carmen stops at a table with mangoes. \"How much are the mangoes?\" \"Two for three dollars,\" says the farmer. \"Are they ripe?\" \"Yes, they're perfect today.\" Carmen buys four mangoes, a bunch of cilantro and a pound of tomatoes. Linda buys lettuce and strawberries. \"Do you like avocados, Linda?\" \"I love them! But I don't like onions.\" \"No onions? Then my guacamole is not for you!\" Linda laughs. \"Okay, okay. For your guacamole, I can try.\"",
+    "es": "Todos los domingos hay un mercado de productores cerca del departamento de Carmen. Hoy va con Linda. Hay muchos colores: jitomates rojos, limones verdes, zanahorias anaranjadas y plátanos amarillos. «Me encantan los mercados de productores», dice Linda. «Todo está tan fresco.» Carmen se detiene en una mesa con mangos. «¿A cuánto están los mangos?» «Dos por tres dólares», dice el agricultor. «¿Están maduros?» «Sí, hoy están perfectos.» Carmen compra cuatro mangos, un manojo de cilantro y una libra de jitomates. Linda compra lechuga y fresas. «¿Te gustan los aguacates, Linda?» «¡Me encantan! Pero no me gusta la cebolla.» «¿Sin cebolla? ¡Entonces mi guacamole no es para ti!» Linda se ríe. «Bueno, bueno. Por tu guacamole, lo puedo intentar.»",
+    "highlighted_words": ["farmers' market", "tomatoes", "limes", "carrots", "bananas", "I love", "fresh", "How much are the mangoes", "ripe", "a pound of tomatoes", "lettuce", "strawberries", "Do you like avocados", "I don't like onions"]
+  },
+  "arrange": [
+    { "sentence": "I love fresh mangoes", "es": "Me encantan los mangos frescos." },
+    { "sentence": "Mike does not like onions", "es": "A Mike no le gusta la cebolla." },
+    { "sentence": "How much are the tomatoes", "es": "¿A cuánto están los jitomates?" },
+    { "sentence": "Do you like strawberries", "es": "¿Te gustan las fresas?" },
+    { "sentence": "A pound of carrots please", "es": "Una libra de zanahorias, por favor." },
+    { "sentence": "I like cooking with fresh vegetables", "es": "Me gusta cocinar con verduras frescas." }
+  ],
+  "translate": [
+    { "answer": "I like apples", "es": "Me gustan las manzanas" },
+    { "answer": "I do not like onions", "es": "No me gusta la cebolla" },
+    { "answer": "Do you like mangoes", "es": "¿Te gustan los mangos?" },
+    { "answer": "These bananas are ripe", "es": "Estos plátanos están maduros" },
+    { "answer": "How much are the avocados", "es": "¿A cuánto están los aguacates?" },
+    { "answer": "Leo hates broccoli", "es": "Leo odia el brócoli" }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "lesson": 40,
+  "slug": "lesson-40",
+  "icon": "🪩",
+  "title": { "en": "A night out", "es": "Una salida de noche" },
+  "grammar": [
+    { "structure": "Why don't we + verb?", "example": "Why don't we go to a show?", "en": "Making suggestions", "es": "Hacer sugerencias" },
+    { "structure": "How about + verb-ing / noun?", "example": "How about seeing a musical? How about Friday?", "en": "Suggestions with \"How about…?\"", "es": "Sugerencias con «How about…?» (¿qué tal si…?)" },
+    { "structure": "That sounds great! / I'd love to.", "example": "A musical? That sounds great!", "en": "Accepting invitations", "es": "Aceptar invitaciones" },
+    { "structure": "I'd love to, but…", "example": "I'd love to, but I'm busy that night.", "en": "Refusing politely", "es": "Rechazar con amabilidad" },
+    { "structure": "Shall we…?", "example": "Shall we meet at seven?", "en": "Arranging details (a little formal)", "es": "Acordar detalles (un poco formal)" }
+  ],
+  "tips": [
+    { "en": "\"I'd love to, but…\" is the kindest way to say no to an invitation.", "es": "«I'd love to, but…» es la forma más amable de rechazar una invitación." },
+    { "en": "\"How about\" is followed by -ing or a noun: How about going…? How about Saturday?", "es": "«How about» va seguido de -ing o de un sustantivo: How about going…? How about Saturday?" },
+    { "en": "Broadway shows often sell cheaper same-day tickets at the TKTS booth in Times Square.", "es": "Los espectáculos de Broadway suelen vender boletos más baratos para el mismo día en la taquilla TKTS de Times Square." },
+    { "en": "\"Hang out\" means to spend relaxed time with friends.", "es": "«Hang out» significa pasar el rato con amigos." },
+    { "en": "In the US, many bars require you to show ID, even if you look older than 21.", "es": "En Estados Unidos, muchos bares te piden identificación aunque parezcas mayor de 21." }
+  ],
+  "vocabulary": [
+    { "word": "night out", "es": "salida de noche" },
+    { "word": "musical", "es": "musical" },
+    { "word": "show", "es": "espectáculo" },
+    { "word": "club", "es": "club / antro" },
+    { "word": "bar", "es": "bar" },
+    { "word": "lights", "es": "luces" },
+    { "word": "crowd", "es": "multitud" },
+    { "word": "invite", "es": "invitar" },
+    { "word": "invitation", "es": "invitación" },
+    { "word": "accept", "es": "aceptar" },
+    { "word": "suggest", "es": "sugerir" },
+    { "word": "hang out", "es": "pasar el rato" },
+    { "word": "fun", "es": "divertido / diversión" },
+    { "word": "exciting", "es": "emocionante" },
+    { "word": "applause", "es": "aplauso" },
+    { "word": "midnight", "es": "medianoche" },
+    { "word": "subway", "es": "metro" }
+  ],
+  "phrases": [
+    { "phrase": "Why don't we go out tonight?", "es": "¿Por qué no salimos esta noche?" },
+    { "phrase": "How about a Broadway show?", "es": "¿Qué tal un espectáculo de Broadway?" },
+    { "phrase": "That sounds great!", "es": "¡Suena genial!" },
+    { "phrase": "I'd love to!", "es": "¡Me encantaría!" },
+    { "phrase": "I'd love to, but I'm tired.", "es": "Me encantaría, pero estoy cansada." },
+    { "phrase": "Shall we meet at seven?", "es": "¿Nos vemos a las siete?" },
+    { "phrase": "Let's take the subway.", "es": "Vamos en metro." },
+    { "phrase": "What a fun night!", "es": "¡Qué noche tan divertida!" },
+    { "phrase": "The show was exciting.", "es": "El espectáculo fue emocionante." },
+    { "phrase": "Do you want to hang out on Saturday?", "es": "¿Quieres salir el sábado?" },
+    { "phrase": "Maybe next time.", "es": "Quizás la próxima vez." },
+    { "phrase": "Thanks for inviting me!", "es": "¡Gracias por invitarme!" }
+  ],
+  "qa": [
+    { "question": { "en": "Complete: \"How about ___ to a concert?\"", "es": "Completa: «How about ___ to a concert?»" }, "options": ["going", "go", "to go", "goes"], "correct": 0, "explanation": { "en": "How about + verb-ing.", "es": "How about + verbo-ing." } },
+    { "question": { "en": "Choose the correct suggestion.", "es": "Elige la sugerencia correcta." }, "options": ["Why don't we eat out?", "Why we don't eat out?", "Why not we eat out?", "Why don't eat we out?"], "correct": 0, "explanation": { "en": "Why don't we + verb?", "es": "Why don't we + verbo?" } },
+    { "question": { "en": "You can't go, but you want to be polite. You say:", "es": "No puedes ir, pero quieres ser amable. Dices:" }, "options": ["I'd love to, but I'm busy.", "No.", "I don't want.", "That sounds great!"], "correct": 0, "explanation": { "en": "\"I'd love to, but…\" refuses politely.", "es": "«I'd love to, but…» rechaza con amabilidad." } },
+    { "question": { "en": "Someone suggests a musical and you like the idea. You say:", "es": "Alguien propone un musical y te gusta la idea. Dices:" }, "options": ["That sounds great!", "That sounds tired.", "Maybe next time.", "Shall we not?"], "correct": 0, "explanation": { "en": "\"That sounds great!\" accepts with enthusiasm.", "es": "«That sounds great!» acepta con entusiasmo." } },
+    { "question": { "en": "\"Hang out\" means…", "es": "«Hang out» significa…" }, "options": ["spend relaxed time together", "hang clothes outside", "go to work", "leave quickly"], "correct": 0, "explanation": { "en": "Hang out = pasar el rato.", "es": "Hang out = pasar el rato." } },
+    { "question": { "en": "In New York, the underground train is the…", "es": "En Nueva York, el tren subterráneo es el…" }, "options": ["subway", "trolley", "highway", "bus stop"], "correct": 0, "explanation": { "en": "Subway = metro.", "es": "Subway = metro." } },
+    { "question": { "en": "Complete: \"___ we meet at the theater at seven?\"", "es": "Completa: «___ we meet at the theater at seven?»" }, "options": ["Shall", "Do", "Are", "Will to"], "correct": 0, "explanation": { "en": "\"Shall we…?\" suggests or arranges.", "es": "«Shall we…?» propone o acuerda." } },
+    { "question": { "en": "After a party, you thank the host. You say:", "es": "Después de una fiesta, le das las gracias al anfitrión. Dices:" }, "options": ["Thanks for inviting me!", "Thanks for invite me!", "Thank you invited me!", "Thanks to inviting!"], "correct": 0, "explanation": { "en": "Thanks for + verb-ing.", "es": "Thanks for + verbo-ing." } }
+  ],
+  "story": {
+    "title": "Broadway!",
+    "text": "It's Carmen's last night in New York. David has an idea. \"Why don't we go out tonight? How about a Broadway show?\" \"That sounds great!\" says Carmen. Elena laughs. \"I'd love to, but I'm too old for late nights.\" \"Mom, you're coming!\" says David. They buy cheap tickets for a musical in Times Square. \"Shall we take the subway?\" asks David. \"Yes, let's take the subway. It's an adventure!\" Times Square is full of lights and crowds. The musical is exciting: the songs, the dancers, the colors. At the end, there is a long applause and Carmen stands up and claps with everybody. They have hot chocolate before midnight. \"Thanks for inviting me,\" Carmen tells David. \"What a fun night! I want to come back next year.\" Elena smiles. \"Next time, I'm going to San Diego. Why don't we see the ocean together?\"",
+    "es": "Es la última noche de Carmen en Nueva York. David tiene una idea. «¿Por qué no salimos esta noche? ¿Qué tal un espectáculo de Broadway?» «¡Suena genial!», dice Carmen. Elena se ríe. «Me encantaría, pero ya estoy muy grande para desvelarme.» «¡Mamá, vas a venir!», dice David. Compran boletos baratos para un musical en Times Square. «¿Nos vamos en metro?», pregunta David. «Sí, vamos en metro. ¡Es una aventura!» Times Square está lleno de luces y de gente. El musical es emocionante: las canciones, los bailarines, los colores. Al final hay un largo aplauso y Carmen se pone de pie y aplaude con todos. Toman chocolate caliente antes de medianoche. «Gracias por invitarme», le dice Carmen a David. «¡Qué noche tan divertida! Quiero volver el próximo año.» Elena sonríe. «La próxima vez yo voy a San Diego. ¿Por qué no vemos el mar juntas?»",
+    "highlighted_words": ["Why don't we go out tonight", "How about a Broadway show", "That sounds great", "I'd love to, but", "musical", "Shall we take the subway", "lights", "crowds", "exciting", "applause", "midnight", "Thanks for inviting me", "What a fun night"]
+  },
+  "arrange": [
+    { "sentence": "Why don't we go out tonight", "es": "¿Por qué no salimos esta noche?" },
+    { "sentence": "How about seeing a musical", "es": "¿Qué tal si vemos un musical?" },
+    { "sentence": "I would love to but I am busy", "es": "Me encantaría, pero estoy ocupada." },
+    { "sentence": "Shall we meet at seven", "es": "¿Nos vemos a las siete?" },
+    { "sentence": "Thanks for inviting me", "es": "Gracias por invitarme." },
+    { "sentence": "The show was very exciting", "es": "El espectáculo fue muy emocionante." }
+  ],
+  "translate": [
+    { "answer": "That sounds great", "es": "Suena genial" },
+    { "answer": "How about Saturday", "es": "¿Qué tal el sábado?" },
+    { "answer": "Maybe next time", "es": "Quizás la próxima vez" },
+    { "answer": "Thanks for inviting me", "es": "Gracias por invitarme" },
+    { "answer": "Why don't we go to the beach", "es": "¿Por qué no vamos a la playa?" },
+    { "answer": "What a fun night", "es": "¡Qué noche tan divertida!" }
+  ]
+}

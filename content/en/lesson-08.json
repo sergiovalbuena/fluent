@@ -1,0 +1,85 @@
+{
+  "lesson": 8,
+  "slug": "lesson-08",
+  "icon": "🌍",
+  "title": { "en": "Countries and nationalities", "es": "Países y nacionalidades" },
+  "grammar": [
+    { "structure": "Where are you from? — I'm from…", "example": "Where are you from? — I'm from Mexico.", "en": "Asking where someone is from", "es": "Preguntar de dónde es alguien" },
+    { "structure": "Nationalities with a capital letter", "example": "She is Brazilian. He speaks Japanese.", "en": "Nationalities and languages are capitalized", "es": "Nacionalidades e idiomas van con mayúscula" },
+    { "structure": "I'm not / she isn't / they aren't", "example": "I'm not American. She isn't from Spain.", "en": "Negative of \"to be\"", "es": "Negativo de «to be»" },
+    { "structure": "Are you…? — Yes, I am. / No, I'm not.", "example": "Are you Mexican? — Yes, I am.", "en": "Yes/no questions with \"to be\"", "es": "Preguntas de sí/no con «to be»" },
+    { "structure": "speak + language", "example": "I speak Spanish and a little English.", "en": "Talking about languages", "es": "Hablar de idiomas" }
+  ],
+  "tips": [
+    { "en": "In English, nationalities and languages always start with a capital letter: Mexican, Spanish, English.", "es": "En inglés las nacionalidades y los idiomas siempre van con mayúscula: Mexican, Spanish, English." },
+    { "en": "\"Spanish\" is both the language and the nationality of Spain. People from Mexico are \"Mexican\" and speak Spanish.", "es": "«Spanish» es el idioma y también la nacionalidad de España. Los de México son «Mexican» y hablan Spanish." },
+    { "en": "Short answers are very natural: \"Are you Mexican?\" — \"Yes, I am.\" Don't say just \"Yes, I'm.\"", "es": "Las respuestas cortas son muy naturales: «Are you Mexican?» — «Yes, I am.» No digas «Yes, I'm.»" },
+    { "en": "\"American\" usually means from the United States.", "es": "«American» normalmente significa de Estados Unidos." },
+    { "en": "\"A little\" is useful and humble: \"I speak a little English.\"", "es": "«A little» es útil y humilde: «I speak a little English.» (hablo un poco de inglés)." }
+  ],
+  "vocabulary": [
+    { "word": "country", "es": "país" },
+    { "word": "Mexico", "es": "México" },
+    { "word": "Mexican", "es": "mexicano / mexicana" },
+    { "word": "the United States", "es": "Estados Unidos" },
+    { "word": "American", "es": "estadounidense" },
+    { "word": "Spain", "es": "España" },
+    { "word": "Spanish", "es": "español (idioma / de España)" },
+    { "word": "Brazil", "es": "Brasil" },
+    { "word": "Brazilian", "es": "brasileño" },
+    { "word": "Japan", "es": "Japón" },
+    { "word": "Japanese", "es": "japonés" },
+    { "word": "Canada", "es": "Canadá" },
+    { "word": "Canadian", "es": "canadiense" },
+    { "word": "English", "es": "inglés (idioma)" },
+    { "word": "Portuguese", "es": "portugués" },
+    { "word": "language", "es": "idioma" },
+    { "word": "city", "es": "ciudad" }
+  ],
+  "phrases": [
+    { "phrase": "Where are you from?", "es": "¿De dónde eres?" },
+    { "phrase": "I'm from Mexico.", "es": "Soy de México." },
+    { "phrase": "I'm Mexican.", "es": "Soy mexicana." },
+    { "phrase": "Which city?", "es": "¿De qué ciudad?" },
+    { "phrase": "I'm from Guadalajara.", "es": "Soy de Guadalajara." },
+    { "phrase": "What languages do you speak?", "es": "¿Qué idiomas hablas?" },
+    { "phrase": "I speak Spanish and a little English.", "es": "Hablo español y un poco de inglés." },
+    { "phrase": "Are you American?", "es": "¿Eres estadounidense?" },
+    { "phrase": "No, I'm not. I'm Canadian.", "es": "No. Soy canadiense." },
+    { "phrase": "Your English is very good!", "es": "¡Tu inglés es muy bueno!" },
+    { "phrase": "I'm learning English.", "es": "Estoy aprendiendo inglés." },
+    { "phrase": "Welcome to the United States!", "es": "¡Bienvenido a Estados Unidos!" }
+  ],
+  "qa": [
+    { "question": { "en": "Ana is from Brazil. She is…", "es": "Ana es de Brasil. Ella es…" }, "options": ["Brazilian", "Brazil", "Brazilish", "brazilian"], "correct": 0, "explanation": { "en": "The nationality is \"Brazilian\", with a capital B.", "es": "La nacionalidad es «Brazilian», con B mayúscula." } },
+    { "question": { "en": "Choose the correct answer: \"Are you Mexican?\"", "es": "Elige la respuesta correcta: «Are you Mexican?»" }, "options": ["Yes, I am.", "Yes, I'm.", "Yes, I is.", "Yes, am I."], "correct": 0, "explanation": { "en": "The short answer is \"Yes, I am\". The contraction is not used at the end.", "es": "La respuesta corta es «Yes, I am». La contracción no se usa al final." } },
+    { "question": { "en": "Complete: \"Kenji ___ from Mexico. He's from Japan.\"", "es": "Completa: «Kenji ___ from Mexico. He's from Japan.»" }, "options": ["isn't", "aren't", "am not", "don't"], "correct": 0, "explanation": { "en": "He → is not → isn't.", "es": "He → is not → isn't." } },
+    { "question": { "en": "Which is correct?", "es": "¿Cuál es correcto?" }, "options": ["I speak Spanish.", "I speak spanish.", "I speak Spain.", "I speak the Spanish."], "correct": 0, "explanation": { "en": "Languages have a capital letter and no \"the\": I speak Spanish.", "es": "Los idiomas llevan mayúscula y no llevan «the»: I speak Spanish." } },
+    { "question": { "en": "People from the United States are usually called…", "es": "A la gente de Estados Unidos normalmente se le dice…" }, "options": ["American", "United", "Statish", "USA"], "correct": 0, "explanation": { "en": "People from the US are \"American\".", "es": "Los de Estados Unidos son «American»." } },
+    { "question": { "en": "How do you ask about someone's origin?", "es": "¿Cómo preguntas de dónde es alguien?" }, "options": ["Where are you from?", "Where you are from?", "From where you are?", "Where do you from?"], "correct": 0, "explanation": { "en": "The question is \"Where are you from?\"", "es": "La pregunta es «Where are you from?»" } },
+    { "question": { "en": "What language do people speak in Brazil?", "es": "¿Qué idioma se habla en Brasil?" }, "options": ["Portuguese", "Spanish", "Brazilian", "English"], "correct": 0, "explanation": { "en": "In Brazil people speak Portuguese.", "es": "En Brasil se habla portugués." } },
+    { "question": { "en": "Complete: \"We ___ from Mexico.\"", "es": "Completa: «We ___ from Mexico.»" }, "options": ["are", "is", "am", "be"], "correct": 0, "explanation": { "en": "We → are.", "es": "We → are." } }
+  ],
+  "story": {
+    "title": "The World in One Classroom",
+    "text": "In Carmen's English class there are students from many countries. Mr. Park asks everybody, \"Where are you from?\" Ana says, \"I'm from Brazil. I'm Brazilian. I speak Portuguese.\" A quiet man says, \"I'm Kenji. I'm from Japan. I speak Japanese and a little English.\" \"And you, Carmen?\" \"I'm from Mexico, from Guadalajara. I speak Spanish.\" \"Are you from Canada, Mr. Park?\" asks Ana. \"No, I'm not. I'm American. But my parents are from Korea.\" Carmen thinks: Mexico, Brazil, Japan, Korea, the United States… The world is in one small classroom. Kenji smiles at her. \"Your English is very good, Carmen.\" \"Thank you! I'm learning.\"",
+    "es": "En la clase de inglés de Carmen hay estudiantes de muchos países. El señor Park les pregunta a todos: «¿De dónde son?». Ana dice: «Soy de Brasil. Soy brasileña. Hablo portugués.» Un hombre callado dice: «Soy Kenji. Soy de Japón. Hablo japonés y un poco de inglés.» «¿Y tú, Carmen?» «Soy de México, de Guadalajara. Hablo español.» «¿Usted es de Canadá, señor Park?», pregunta Ana. «No. Soy estadounidense. Pero mis padres son de Corea.» Carmen piensa: México, Brasil, Japón, Corea, Estados Unidos… El mundo está en un salón pequeño. Kenji le sonríe. «Tu inglés es muy bueno, Carmen.» «¡Gracias! Estoy aprendiendo.»",
+    "highlighted_words": ["countries", "Where are you from", "Brazilian", "Portuguese", "Japanese", "Mexico", "Spanish", "No, I'm not", "American", "Your English is very good"]
+  },
+  "arrange": [
+    { "sentence": "Where are you from", "es": "¿De dónde eres?" },
+    { "sentence": "I am from Guadalajara Mexico", "es": "Soy de Guadalajara, México." },
+    { "sentence": "She is not from Spain", "es": "Ella no es de España." },
+    { "sentence": "I speak a little English", "es": "Hablo un poco de inglés." },
+    { "sentence": "Are you Canadian", "es": "¿Eres canadiense?" },
+    { "sentence": "My parents are from Korea", "es": "Mis padres son de Corea." }
+  ],
+  "translate": [
+    { "answer": "I am from Mexico", "es": "Soy de México" },
+    { "answer": "Where are you from", "es": "¿De dónde eres?" },
+    { "answer": "She is Brazilian", "es": "Ella es brasileña" },
+    { "answer": "I speak Spanish", "es": "Hablo español" },
+    { "answer": "I am learning English", "es": "Estoy aprendiendo inglés" },
+    { "answer": "He is not American", "es": "Él no es estadounidense" }
+  ]
+}

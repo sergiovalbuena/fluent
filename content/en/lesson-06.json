@@ -1,0 +1,87 @@
+{
+  "lesson": 6,
+  "slug": "lesson-06",
+  "icon": "👨‍👩‍👧‍👦",
+  "title": { "en": "The family", "es": "La familia" },
+  "grammar": [
+    { "structure": "my, your, his, her, our, their", "example": "Her husband is Mike. Their son is Leo.", "en": "Possessive adjectives", "es": "Adjetivos posesivos" },
+    { "structure": "name + 's", "example": "Laura's son, Carmen's daughter", "en": "Possession with 's", "es": "Posesión con 's (de alguien)" },
+    { "structure": "his vs. her", "example": "Leo and his dog. Laura and her car.", "en": "\"His\" for a man, \"her\" for a woman (the owner)", "es": "«His» si el dueño es hombre, «her» si es mujer" },
+    { "structure": "Do you have…? — Yes, I do.", "example": "Do you have brothers or sisters?", "en": "Asking about family with \"have\"", "es": "Preguntar por la familia con «have»" },
+    { "structure": "Who is…?", "example": "Who is that? — That's my sister.", "en": "Asking about people", "es": "Preguntar quién es alguien" }
+  ],
+  "tips": [
+    { "en": "In Spanish \"su\" can mean his, her or their. In English you must choose: his (a man's), her (a woman's), their (several people's).", "es": "En español «su» puede ser de él, de ella o de ellos. En inglés hay que elegir: his (de él), her (de ella), their (de ellos)." },
+    { "en": "\"Parents\" means mother and father, not all your relatives. For all of them, say \"relatives\" or \"family\".", "es": "«Parents» significa padre y madre, no todos tus parientes. Para todos, di «relatives» o «family»." },
+    { "en": "\"In-law\" means family through marriage: mother-in-law, son-in-law, sister-in-law.", "es": "«In-law» indica familia política: mother-in-law (suegra), son-in-law (yerno), sister-in-law (cuñada)." },
+    { "en": "Kids often call their grandparents \"Grandma\" and \"Grandpa\".", "es": "Los niños suelen llamar a sus abuelos «Grandma» y «Grandpa»." },
+    { "en": "\"Children\" is the plural of \"child\": one child, two children.", "es": "«Children» es el plural de «child»: one child, two children." }
+  ],
+  "vocabulary": [
+    { "word": "mother", "es": "madre" },
+    { "word": "father", "es": "padre" },
+    { "word": "parents", "es": "padres (papá y mamá)" },
+    { "word": "daughter", "es": "hija" },
+    { "word": "son", "es": "hijo" },
+    { "word": "children", "es": "hijos / niños" },
+    { "word": "sister", "es": "hermana" },
+    { "word": "brother", "es": "hermano" },
+    { "word": "grandmother", "es": "abuela" },
+    { "word": "grandfather", "es": "abuelo" },
+    { "word": "grandson", "es": "nieto" },
+    { "word": "granddaughter", "es": "nieta" },
+    { "word": "husband", "es": "esposo" },
+    { "word": "wife", "es": "esposa" },
+    { "word": "aunt", "es": "tía" },
+    { "word": "uncle", "es": "tío" },
+    { "word": "cousin", "es": "primo / prima" },
+    { "word": "son-in-law", "es": "yerno" },
+    { "word": "relatives", "es": "parientes" }
+  ],
+  "phrases": [
+    { "phrase": "This is my family.", "es": "Esta es mi familia." },
+    { "phrase": "Do you have any children?", "es": "¿Tienes hijos?" },
+    { "phrase": "I have a daughter and a son.", "es": "Tengo una hija y un hijo." },
+    { "phrase": "Who is that?", "es": "¿Quién es esa persona?" },
+    { "phrase": "That's my brother.", "es": "Ese es mi hermano." },
+    { "phrase": "Her husband is very nice.", "es": "Su esposo (de ella) es muy simpático." },
+    { "phrase": "Their son is eight.", "es": "Su hijo (de ellos) tiene ocho años." },
+    { "phrase": "Are you married?", "es": "¿Estás casado/a?" },
+    { "phrase": "I'm a widow.", "es": "Soy viuda." },
+    { "phrase": "My family lives in Mexico.", "es": "Mi familia vive en México." },
+    { "phrase": "I miss my sister.", "es": "Extraño a mi hermana." },
+    { "phrase": "We are a big family.", "es": "Somos una familia grande." }
+  ],
+  "qa": [
+    { "question": { "en": "Laura is Carmen's daughter. Carmen is Laura's…", "es": "Laura es la hija de Carmen. Carmen es la ___ de Laura." }, "options": ["mother", "sister", "aunt", "grandmother"], "correct": 0, "explanation": { "en": "If Laura is her daughter, Carmen is Laura's mother.", "es": "Si Laura es su hija, Carmen es la madre de Laura." } },
+    { "question": { "en": "Complete: \"Mike loves ___ son.\"", "es": "Completa: «Mike loves ___ son.»" }, "options": ["his", "her", "their", "its"], "correct": 0, "explanation": { "en": "Mike is a man, so it's \"his son\".", "es": "Mike es hombre, así que es «his son»." } },
+    { "question": { "en": "Complete: \"Laura and ___ husband live in San Diego.\"", "es": "Completa: «Laura and ___ husband live in San Diego.»" }, "options": ["her", "his", "she", "hers"], "correct": 0, "explanation": { "en": "The husband belongs to Laura, a woman: \"her husband\".", "es": "El esposo es de Laura, una mujer: «her husband»." } },
+    { "question": { "en": "How do you say \"el hijo de Laura\"?", "es": "¿Cómo se dice «el hijo de Laura»?" }, "options": ["Laura's son", "the son of Laura's", "Laura son", "son's Laura"], "correct": 0, "explanation": { "en": "We usually use 's: Laura's son.", "es": "Normalmente se usa 's: Laura's son." } },
+    { "question": { "en": "Your mother's brother is your…", "es": "El hermano de tu madre es tu…" }, "options": ["uncle", "cousin", "grandfather", "nephew"], "correct": 0, "explanation": { "en": "Your parents' brothers are your uncles.", "es": "Los hermanos de tus padres son tus tíos (uncles)." } },
+    { "question": { "en": "What is the plural of \"child\"?", "es": "¿Cuál es el plural de «child»?" }, "options": ["children", "childs", "childrens", "childes"], "correct": 0, "explanation": { "en": "\"Child\" has an irregular plural: children.", "es": "«Child» tiene un plural irregular: children." } },
+    { "question": { "en": "\"Parents\" means…", "es": "«Parents» significa…" }, "options": ["mother and father", "all your relatives", "brothers and sisters", "grandparents"], "correct": 0, "explanation": { "en": "Parents = mother and father. Other family members are \"relatives\".", "es": "Parents = mamá y papá. Los demás familiares son «relatives»." } },
+    { "question": { "en": "Mike is Laura's husband. For Carmen, Mike is her…", "es": "Mike es el esposo de Laura. Para Carmen, Mike es su…" }, "options": ["son-in-law", "son", "brother-in-law", "grandson"], "correct": 0, "explanation": { "en": "Your daughter's husband is your son-in-law.", "es": "El esposo de tu hija es tu yerno (son-in-law)." } }
+  ],
+  "story": {
+    "title": "Family Photos",
+    "text": "It is Sunday afternoon. Linda visits Carmen, and Carmen shows her some family photos. \"Who is that?\" asks Linda. \"That's my daughter, Laura, with her husband, Mike. And this is their son, Leo.\" \"Your grandson is so cute!\" \"Thank you! He is eight. He is funny and very smart.\" \"And this photo?\" \"These are my sisters in Guadalajara, Rosa and Teresa. Rosa's children are in this photo too.\" \"Do you have a big family?\" \"Oh yes. Many aunts, uncles and cousins.\" Linda smiles. \"My family is small. I have one brother in Texas.\" Carmen looks at the photos and says quietly, \"I miss my sisters.\" Linda takes her hand. \"Now you have a neighbor too.\"",
+    "es": "Es domingo por la tarde. Linda visita a Carmen y Carmen le muestra unas fotos de la familia. «¿Quién es esa?», pregunta Linda. «Es mi hija, Laura, con su esposo, Mike. Y este es su hijo, Leo.» «¡Tu nieto es precioso!» «¡Gracias! Tiene ocho años. Es divertido y muy inteligente.» «¿Y esta foto?» «Son mis hermanas en Guadalajara, Rosa y Teresa. Los hijos de Rosa también están en esta foto.» «¿Tienes una familia grande?» «Ay, sí. Muchos tíos, tías y primos.» Linda sonríe. «Mi familia es pequeña. Tengo un hermano en Texas.» Carmen mira las fotos y dice en voz baja: «Extraño a mis hermanas.» Linda le toma la mano. «Ahora también tienes una vecina.»",
+    "highlighted_words": ["Who is that", "daughter", "her husband", "their son", "grandson", "sisters", "Rosa's children", "aunts", "uncles", "cousins", "brother", "I miss my sisters"]
+  },
+  "arrange": [
+    { "sentence": "This is my family", "es": "Esta es mi familia." },
+    { "sentence": "Her husband is very nice", "es": "Su esposo es muy simpático." },
+    { "sentence": "Do you have any children", "es": "¿Tienes hijos?" },
+    { "sentence": "Leo is Laura's son", "es": "Leo es el hijo de Laura." },
+    { "sentence": "My family lives in Mexico", "es": "Mi familia vive en México." },
+    { "sentence": "I have two sisters and a brother", "es": "Tengo dos hermanas y un hermano." }
+  ],
+  "translate": [
+    { "answer": "This is my daughter", "es": "Esta es mi hija" },
+    { "answer": "Her son is eight", "es": "Su hijo (de ella) tiene ocho" },
+    { "answer": "I have two sisters", "es": "Tengo dos hermanas" },
+    { "answer": "Who is that", "es": "¿Quién es esa persona?" },
+    { "answer": "I miss my family", "es": "Extraño a mi familia" },
+    { "answer": "Do you have children", "es": "¿Tienes hijos?" }
+  ]
+}

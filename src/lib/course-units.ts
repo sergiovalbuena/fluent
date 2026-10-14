@@ -14,6 +14,14 @@ export type CourseUnit = {
 export const UNIT_SIZE = 10
 
 const COURSE_UNITS: Record<string, CourseUnit[]> = {
+  en: [
+    { from: 1,  to: 10, emoji: '🌱', title: 'First steps',          translations: { es: 'Primeros pasos' } },
+    { from: 11, to: 20, emoji: '🧭', title: 'The world around me',  translations: { es: 'El mundo que me rodea' } },
+    { from: 21, to: 30, emoji: '🎭', title: 'Free time',            translations: { es: 'Tiempo libre' } },
+    { from: 31, to: 40, emoji: '🧳', title: 'On the road',          translations: { es: 'De viaje' } },
+    { from: 41, to: 50, emoji: '🏡', title: 'Settling in',          translations: { es: 'Instalarse' } },
+    { from: 51, to: 60, emoji: '☀️', title: 'Everyday life',        translations: { es: 'La vida diaria' } },
+  ],
   fr: [
     { from: 1,  to: 10, emoji: '🌱', title: 'Les premiers pas',          translations: { en: 'First steps',               es: 'Los primeros pasos' } },
     { from: 11, to: 20, emoji: '🧭', title: 'Le monde autour de moi',    translations: { en: 'The world around me',       es: 'El mundo que me rodea' } },
