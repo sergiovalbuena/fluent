@@ -3,16 +3,12 @@
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Fraunces } from 'next/font/google'
 import { useLocale, useTranslations } from 'next-intl'
-import { ArrowRight, Check, Crown, Gem, Gamepad2, Lock, Star } from 'lucide-react'
+import { ArrowRight, Crown, Gem, Gamepad2, Lock, Star } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { getCourseUnits, type CourseUnit } from '@/lib/course-units'
-
-// Editorial display face for unit titles and numerals; body text stays Lexend
-const display = Fraunces({ subsets: ['latin'], style: ['normal', 'italic'], weight: ['400', '600'] })
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -38,11 +34,25 @@ export type Props = {
   languageFlag: string
 }
 
-// ── Path geometry ─────────────────────────────────────────────────────────────
-// Nodes sit on a gentle sine wave; x is a % of the column width, rows are fixed
-// height so the SVG route can be computed without measuring the DOM.
+// ── Worlds ────────────────────────────────────────────────────────────────────
+// Each unit is a "world" on the map with its own colour and scenery
 
-const ROW_H = 116
+type World = { color: string; shade: string; scenery: string[] }
+
+const WORLDS: World[] = [
+  { color: '#22c55e', shade: '#15803d', scenery: ['🌳', '🌼', '🍄', '🌿'] },
+  { color: '#0ea5e9', shade: '#0369a1', scenery: ['🏙️', '🗺️', '🌍', '🚲'] },
+  { color: '#a855f7', shade: '#7e22ce', scenery: ['🎪', '🎨', '🎬', '🎈'] },
+  { color: '#f97316', shade: '#c2410c', scenery: ['☁️', '🏝️', '✈️', '🧭'] },
+  { color: '#f43f5e', shade: '#be123c', scenery: ['🏡', '🌳', '☕', '🔑'] },
+  { color: '#eab308', shade: '#a16207', scenery: ['☀️', '🌻', '🚂', '🥐'] },
+]
+
+// ── Path geometry ─────────────────────────────────────────────────────────────
+// Levels sit on a sine wave; x is a % of the column width, rows have a fixed
+// height so the road can be computed without measuring the DOM.
+
+const ROW_H = 132
 const AMPLITUDE = 24
 
 function nodeX(globalIndex: number): number {
@@ -53,8 +63,7 @@ function routePath(xs: number[]): string {
   return xs.map((x, i) => {
     const y = i * ROW_H + ROW_H / 2
     if (i === 0) return `M ${x} ${y}`
-    const prevY = y - ROW_H
-    const midY = prevY + ROW_H / 2
+    const midY = y - ROW_H / 2
     return `C ${xs[i - 1]} ${midY}, ${x} ${midY}, ${x} ${y}`
   }).join(' ')
 }
@@ -62,21 +71,6 @@ function routePath(xs: number[]): string {
 const pad2 = (n: number) => String(n).padStart(2, '0')
 
 // ── Small pieces ──────────────────────────────────────────────────────────────
-
-function StarRow({ stars, size = 11, muted = 'text-slate-300 dark:text-white/15' }: { stars: number; size?: number; muted?: string }) {
-  return (
-    <span className="inline-flex items-center gap-px">
-      {[1, 2, 3].map(n => (
-        <Star
-          key={n}
-          size={size}
-          strokeWidth={stars >= n ? 0 : 1.6}
-          className={stars >= n ? 'text-amber-400 fill-amber-400' : cn(muted, 'fill-transparent')}
-        />
-      ))}
-    </span>
-  )
-}
 
 /** One segment per activity of the module */
 function ActivityPips({ done, total, className }: { done: number; total: number; className?: string }) {
@@ -89,15 +83,17 @@ function ActivityPips({ done, total, className }: { done: number; total: number;
   )
 }
 
-function ProgressRing({ value, size = 64, stroke = 6 }: { value: number; size?: number; stroke?: number }) {
+function ProgressRing({ value, size = 64, stroke = 6, trackClassName = 'stroke-black/[0.06] dark:stroke-white/[0.08]', className = 'stroke-primary' }: {
+  value: number; size?: number; stroke?: number; trackClassName?: string; className?: string
+}) {
   const r = (size - stroke) / 2
   const circ = 2 * Math.PI * r
   return (
     <svg width={size} height={size} className="-rotate-90">
-      <circle cx={size / 2} cy={size / 2} r={r} fill="none" strokeWidth={stroke} className="stroke-black/[0.06] dark:stroke-white/[0.08]" />
+      <circle cx={size / 2} cy={size / 2} r={r} fill="none" strokeWidth={stroke} className={trackClassName} />
       <motion.circle
         cx={size / 2} cy={size / 2} r={r} fill="none" strokeWidth={stroke} strokeLinecap="round"
-        className="stroke-primary"
+        className={className}
         strokeDasharray={circ}
         initial={{ strokeDashoffset: circ }}
         animate={{ strokeDashoffset: circ - (value / 100) * circ }}
@@ -107,90 +103,110 @@ function ProgressRing({ value, size = 64, stroke = 6 }: { value: number; size?: 
   )
 }
 
-/** Progress traced along a rounded square, matching the node shape */
-function SquircleProgress({ value, size, radius }: { value: number; size: number; radius: number }) {
-  const stroke = 4
+/** Three stars fanned in an arc above a level */
+function StarArc({ stars }: { stars: number }) {
   return (
-    <svg width={size} height={size} className="absolute inset-0 overflow-visible">
-      <rect x={stroke / 2} y={stroke / 2} width={size - stroke} height={size - stroke} rx={radius} fill="none" strokeWidth={stroke} className="stroke-primary/20" />
-      <motion.rect
-        x={stroke / 2} y={stroke / 2} width={size - stroke} height={size - stroke} rx={radius}
-        fill="none" strokeWidth={stroke} strokeLinecap="round" pathLength={100}
-        className="stroke-primary"
-        strokeDasharray="100 100"
-        initial={{ strokeDashoffset: 100 }}
-        animate={{ strokeDashoffset: 100 - value }}
-        transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      />
-    </svg>
+    <span className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-end gap-0.5 z-20">
+      {[1, 2, 3].map(n => (
+        <Star
+          key={n}
+          size={n === 2 ? 17 : 14}
+          strokeWidth={stars >= n ? 1.2 : 1.8}
+          className={cn(
+            n === 2 ? '-translate-y-1.5' : '',
+            stars >= n
+              ? 'text-amber-500 fill-amber-400 drop-shadow-[0_1px_0_rgba(0,0,0,0.25)]'
+              : 'text-slate-300 fill-slate-200 dark:text-white/20 dark:fill-white/10',
+          )}
+        />
+      ))}
+    </span>
   )
 }
 
-// ── Lesson node + label ───────────────────────────────────────────────────────
+// ── Level (lesson) ────────────────────────────────────────────────────────────
 
-function LessonStop({ mod, number, x, row, labelSide }: {
+function Level({ mod, number, x, row, labelSide, world }: {
   mod: LearnModule
   number: number
   x: number
   row: number
   labelSide: 'left' | 'right'
+  world: World
 }) {
   const t = useTranslations('learn')
   const isDone = mod.state === 'completed'
   const isCurrent = mod.state === 'current'
   const isLocked = mod.state === 'locked'
   const top = row * ROW_H + ROW_H / 2
-  const nodeSize = isCurrent ? 72 : 58
+  const size = isCurrent ? 80 : 66
+  const half = size / 2
+
+  // Chunky "3D" button: face colour + darker base
+  const face = isCurrent
+    ? { background: 'linear-gradient(180deg,#ffa47f 0%,#ff8052 100%)', boxShadow: '0 7px 0 #c4612e, 0 16px 26px -10px rgba(255,128,82,0.7)' }
+    : isDone
+    ? { background: `linear-gradient(180deg, ${world.color} 0%, ${world.shade} 140%)`, boxShadow: `0 6px 0 ${world.shade}, 0 12px 20px -10px ${world.shade}` }
+    : undefined
 
   const node = (
     <motion.div
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ type: 'spring', stiffness: 380, damping: 26 }}
-      whileHover={!isLocked ? { y: -3 } : undefined}
-      whileTap={!isLocked ? { scale: 0.93, y: 2 } : undefined}
+      initial={{ opacity: 0, scale: 0.5, y: 10 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true, margin: '-30px' }}
+      transition={{ type: 'spring', stiffness: 420, damping: 22 }}
+      whileHover={!isLocked ? { y: -4, scale: 1.04 } : undefined}
+      whileTap={!isLocked ? { y: 4, scale: 0.97 } : undefined}
       className="relative"
-      style={{ width: nodeSize, height: nodeSize }}
+      style={{ width: size, height: size }}
     >
-      {/* Halo for the lesson to do next */}
       {isCurrent && (
         <>
+          {/* Bouncing call to action, like a "press start" bubble */}
           <motion.span
-            className="absolute -inset-2 rounded-[28px] bg-primary/25"
-            animate={{ scale: [1, 1.22], opacity: [0.6, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: 'easeOut' }}
+            className="absolute left-1/2 -top-12 z-30 -translate-x-1/2 whitespace-nowrap rounded-xl bg-white dark:bg-[#2a3146] px-3 py-1.5 text-[11px] font-black uppercase tracking-wider text-primary shadow-[0_4px_0_rgba(0,0,0,0.12)] border-2 border-primary/30"
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            {mod.lessonsCompleted > 0 ? t('continue') : t('start')}
+            <span className="absolute left-1/2 -bottom-[7px] -translate-x-1/2 size-3 rotate-45 bg-white dark:bg-[#2a3146] border-r-2 border-b-2 border-primary/30" />
+          </motion.span>
+          <motion.span
+            className="absolute -inset-3 rounded-full bg-primary/25"
+            animate={{ scale: [0.9, 1.25], opacity: [0.7, 0] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeOut' }}
           />
           <span className="absolute -inset-[9px]">
-            <SquircleProgress value={mod.progress} size={nodeSize + 18} radius={28} />
+            <ProgressRing value={mod.progress} size={size + 18} stroke={5} trackClassName="stroke-primary/20" />
           </span>
         </>
       )}
 
+      {isDone && <StarArc stars={mod.stars} />}
+
       <div
+        style={face}
         className={cn(
-          'relative z-10 size-full rounded-[22px] flex items-center justify-center select-none transition-colors',
-          isCurrent && 'bg-gradient-to-br from-[#ff9a73] to-primary text-[34px] shadow-[0_6px_0_#c4612e,0_14px_30px_-8px_rgba(255,128,82,0.6)]',
-          isDone && 'bg-white dark:bg-[#262d40] text-[28px] border-2 border-emerald-400/60 shadow-[0_5px_0_rgba(16,185,129,0.35)]',
-          mod.state === 'available' && 'bg-white dark:bg-[#262d40] text-[28px] border-2 border-primary/40 shadow-[0_5px_0_rgba(255,128,82,0.25)]',
-          isLocked && 'bg-[#eeebe8] dark:bg-white/[0.04] text-[26px] border-2 border-dashed border-black/10 dark:border-white/10',
+          'relative z-10 size-full rounded-full flex items-center justify-center select-none',
+          isCurrent && 'text-[36px]',
+          isDone && 'text-[30px]',
+          mod.state === 'available' && 'text-[30px] bg-white dark:bg-[#2a3146] border-4 shadow-[0_6px_0_rgba(0,0,0,0.12)] dark:shadow-[0_6px_0_rgba(0,0,0,0.45)]',
+          isLocked && 'text-[28px] bg-[#e4e0dc] dark:bg-[#262c3d] shadow-[0_6px_0_#c9c4bf] dark:shadow-[0_6px_0_#151925]',
         )}
       >
-        <span className={cn('leading-none', isLocked && 'grayscale opacity-40')}>{mod.icon}</span>
+        {mod.state === 'available' && <span className="absolute inset-0 rounded-full border-4" style={{ borderColor: world.color }} />}
+        {/* Glossy highlight */}
+        {(isDone || isCurrent) && <span className="absolute inset-x-3 top-1.5 h-1/3 rounded-full bg-white/25" />}
+        <span className={cn('relative leading-none', isLocked && 'grayscale opacity-35')}>{mod.icon}</span>
 
-        {isDone && (
-          <span className="absolute -bottom-1.5 -right-1.5 size-6 rounded-full bg-emerald-500 border-[3px] border-[#f6f4f2] dark:border-[#171b28] flex items-center justify-center">
-            <Check size={12} strokeWidth={3.5} className="text-white" />
+        {isLocked && (
+          <span className="absolute -bottom-1 -right-1 size-6 rounded-full bg-slate-400 dark:bg-slate-600 border-[3px] border-[#f6f4f2] dark:border-[#171b28] flex items-center justify-center">
+            <Lock size={10} strokeWidth={3} className="text-white" />
           </span>
         )}
         {isDone && mod.hasCrown && (
-          <span className="absolute -top-2 -right-2 size-6 rounded-full bg-violet-600 border-[3px] border-[#f6f4f2] dark:border-[#171b28] flex items-center justify-center">
-            <Crown size={11} className="text-white fill-white" />
-          </span>
-        )}
-        {isLocked && (
-          <span className="absolute -bottom-1.5 -right-1.5 size-6 rounded-full bg-slate-200 dark:bg-[#2a3146] border-[3px] border-[#f6f4f2] dark:border-[#171b28] flex items-center justify-center">
-            <Lock size={10} strokeWidth={2.8} className="text-slate-400" />
+          <span className="absolute -bottom-1 -right-1 size-7 rounded-full bg-violet-600 border-[3px] border-[#f6f4f2] dark:border-[#171b28] flex items-center justify-center">
+            <Crown size={12} className="text-white fill-white" />
           </span>
         )}
       </div>
@@ -199,20 +215,20 @@ function LessonStop({ mod, number, x, row, labelSide }: {
 
   const label = (
     <motion.div
-      initial={{ opacity: 0, x: labelSide === 'right' ? -8 : 8 }}
+      initial={{ opacity: 0, x: labelSide === 'right' ? -10 : 10 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.4, delay: 0.05 }}
+      viewport={{ once: true, margin: '-30px' }}
+      transition={{ duration: 0.35, delay: 0.08 }}
       className={cn('flex flex-col min-w-0', labelSide === 'left' ? 'items-end text-right' : 'items-start text-left')}
     >
-      <span className={cn(
-        'text-[10px] font-bold uppercase tracking-[0.14em] tabular-nums',
-        isCurrent ? 'text-primary' : isDone ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-400 dark:text-slate-500',
-      )}>
+      <span
+        className={cn('rounded-md px-1.5 py-0.5 text-[10px] font-black tabular-nums tracking-wider text-white', isLocked && 'bg-slate-300 dark:bg-slate-700')}
+        style={isLocked ? undefined : { background: isCurrent ? '#ff8052' : world.color }}
+      >
         {t('lesson_number', { n: pad2(number) })}
       </span>
       <span className={cn(
-        'font-semibold leading-snug line-clamp-2 mt-0.5',
+        'font-bold leading-snug line-clamp-2 mt-1',
         isCurrent ? 'text-[15px] text-slate-900 dark:text-white' : 'text-[13px]',
         isLocked ? 'text-slate-400 dark:text-slate-500' : !isCurrent && 'text-slate-800 dark:text-slate-100',
       )}>
@@ -223,22 +239,12 @@ function LessonStop({ mod, number, x, row, labelSide }: {
           {mod.subtitle}
         </span>
       )}
-      <span className="mt-1.5">
-        {isDone && <StarRow stars={mod.stars} />}
-        {isCurrent && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1 text-[11px] font-bold text-white shadow-[0_3px_0_#c4612e]">
-            {mod.lessonsCompleted > 0 ? t('continue') : t('start')}
-            <ArrowRight size={12} strokeWidth={2.6} />
-          </span>
-        )}
-        {mod.state === 'available' && (
-          <span className="text-[10px] font-semibold text-primary/80">{t('ready')}</span>
-        )}
-      </span>
+      {isCurrent && mod.totalLessons > 0 && (
+        <ActivityPips done={mod.lessonsCompleted} total={mod.totalLessons} className="mt-2 w-28 text-primary" />
+      )}
     </motion.div>
   )
 
-  const half = nodeSize / 2
   const content = (
     <>
       <div className="absolute z-10" style={{ left: `calc(${x}% - ${half}px)`, top: top - half }}>
@@ -247,167 +253,175 @@ function LessonStop({ mod, number, x, row, labelSide }: {
       <div
         className="absolute z-10 -translate-y-1/2"
         style={labelSide === 'right'
-          ? { left: `calc(${x}% + ${half + 16}px)`, right: 4, top }
-          : { right: `calc(${100 - x}% + ${half + 16}px)`, left: 4, top }}
+          ? { left: `calc(${x}% + ${half + 18}px)`, right: 4, top }
+          : { right: `calc(${100 - x}% + ${half + 18}px)`, left: 4, top }}
       >
         {label}
       </div>
     </>
   )
 
-  if (isLocked) {
-    return <div title={t('locked_hint')}>{content}</div>
-  }
+  if (isLocked) return <div title={t('locked_hint')}>{content}</div>
   return (
-    <Link href={`/learn/${mod.slug}`} aria-label={`${t('lesson_number', { n: number })}: ${mod.title}`} className="focus-visible:outline-none group">
+    <Link href={`/learn/${mod.slug}`} aria-label={`${t('lesson_number', { n: number })}: ${mod.title}`} className="focus-visible:outline-none">
       {content}
     </Link>
   )
 }
 
-// ── Unit section ──────────────────────────────────────────────────────────────
+// ── Treasure chest at the end of each world ──────────────────────────────────
 
-function UnitSection({ unit, index, modules, translationLang }: {
+function Chest({ x, row, labelSide, world, open }: { x: number; row: number; labelSide: 'left' | 'right'; world: World; open: boolean }) {
+  const t = useTranslations('learn')
+  const top = row * ROW_H + ROW_H / 2
+  const half = 33
+  return (
+    <Link href="/play" className="focus-visible:outline-none">
+      <motion.div
+        className="absolute z-10"
+        style={{ left: `calc(${x}% - ${half}px)`, top: top - half }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        whileHover={{ rotate: [-4, 4, -4, 0], scale: 1.06 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+      >
+        <div
+          className="size-[66px] rounded-[20px] flex items-center justify-center text-[32px] border-4 border-amber-300"
+          style={{ background: 'linear-gradient(180deg,#fcd34d,#f59e0b)', boxShadow: '0 6px 0 #b45309, 0 14px 24px -10px rgba(245,158,11,0.8)' }}
+        >
+          <span className={cn(!open && 'opacity-90')}>{open ? '🎁' : '🧰'}</span>
+        </div>
+        <span className="absolute -top-2 -right-3 flex items-center gap-0.5 rounded-full bg-sky-500 px-1.5 py-0.5 text-[10px] font-black text-white shadow-[0_2px_0_#0369a1]">
+          <Gem size={9} />+5
+        </span>
+      </motion.div>
+      <div
+        className="absolute z-10 -translate-y-1/2"
+        style={labelSide === 'right'
+          ? { left: `calc(${x}% + ${half + 18}px)`, right: 4, top }
+          : { right: `calc(${100 - x}% + ${half + 18}px)`, left: 4, top }}
+      >
+        <div className={cn('flex flex-col', labelSide === 'left' ? 'items-end text-right' : 'items-start text-left')}>
+          <span className="rounded-md px-1.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-white" style={{ background: world.shade }}>
+            <Gamepad2 size={10} className="inline -mt-0.5 mr-1" />
+            {t('practice_title')}
+          </span>
+          <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">{t('practice_desc', { gems: 5 })}</span>
+        </div>
+      </div>
+    </Link>
+  )
+}
+
+// ── World (unit) ──────────────────────────────────────────────────────────────
+
+function WorldSection({ unit, index, modules, translationLang }: {
   unit: CourseUnit
   index: number
   modules: LearnModule[]
   translationLang: string
 }) {
   const t = useTranslations('learn')
+  const world = WORLDS[index % WORLDS.length]
   const unitModules = modules.slice(unit.from - 1, unit.to)
-  const xs = unitModules.map((_, i) => nodeX(unit.from - 1 + i))
+  // One extra stop at the end of the road for the chest
+  const xs = [...unitModules.map((_, i) => nodeX(unit.from - 1 + i)), nodeX(unit.to)]
   const done = unitModules.filter(m => m.state === 'completed').length
   const pct = Math.round((done / unitModules.length) * 100)
   const isComplete = done === unitModules.length
-  // The route is drawn solid up to the furthest lesson reached in this unit
-  const lastReached = unitModules.reduce((acc, m, i) => (m.state === 'completed' || m.state === 'current' ? i : acc), -1)
   const isLocked = unitModules.every(m => m.state === 'locked')
+  // The road is paved up to the furthest level reached
+  const lastReached = isComplete
+    ? xs.length - 1
+    : unitModules.reduce((acc, m, i) => (m.state === 'completed' || m.state === 'current' ? i : acc), -1)
 
   const title = unit.title || t('unit', { n: index + 1 })
   const translation = unit.translations[translationLang] ?? unit.translations.en
-  const height = unitModules.length * ROW_H
+  const height = xs.length * ROW_H
+  const sideOf = (x: number): 'left' | 'right' => (x <= 50 ? 'right' : 'left')
 
   return (
-    <section id={`unit-${index + 1}`} className="scroll-mt-20">
-      {/* Unit header */}
+    <section id={`unit-${index + 1}`} className="scroll-mt-20 mb-6">
+      {/* World banner */}
       <motion.header
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-60px' }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className={cn(
-          'relative overflow-hidden rounded-[28px] p-5 md:p-6 border',
-          isLocked
-            ? 'bg-white/50 dark:bg-white/[0.02] border-black/[0.05] dark:border-white/[0.05]'
-            : 'bg-white dark:bg-[#202638] border-black/[0.04] dark:border-white/[0.05] shadow-[0_2px_12px_rgba(0,0,0,0.05)]',
-        )}
+        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+        className={cn('relative overflow-hidden rounded-[26px] p-5 text-white', isLocked && 'grayscale-[0.7] opacity-80')}
+        style={{
+          background: `linear-gradient(135deg, ${world.color} 0%, ${world.shade} 100%)`,
+          boxShadow: `0 7px 0 ${world.shade}, 0 18px 30px -16px ${world.shade}`,
+        }}
       >
-        {/* Oversized numeral */}
-        <span
-          aria-hidden
-          className={cn(
-            display.className,
-            'pointer-events-none absolute -right-2 -top-6 text-[8.5rem] font-semibold leading-none tracking-tighter select-none',
-            isLocked ? 'text-black/[0.03] dark:text-white/[0.03]' : 'text-primary/[0.09]',
-          )}
-        >
-          {pad2(index + 1)}
-        </span>
+        {/* Pattern + oversized emoji for depth */}
+        <span aria-hidden className="absolute inset-0 opacity-[0.12]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1.2px, transparent 0)', backgroundSize: '14px 14px' }} />
+        <span aria-hidden className="absolute -right-3 -bottom-6 text-[6.5rem] leading-none opacity-25 rotate-[-10deg] select-none">{unit.emoji}</span>
 
-        <div className="relative flex items-start gap-4">
-          <span className={cn(
-            'size-12 shrink-0 rounded-2xl flex items-center justify-center text-2xl',
-            isComplete ? 'bg-emerald-500/15' : isLocked ? 'bg-black/[0.04] dark:bg-white/[0.05] grayscale' : 'bg-primary/12',
-          )}>
-            {unit.emoji}
+        <div className="relative flex items-center gap-4">
+          <span className="size-14 shrink-0 rounded-2xl bg-white/20 border-2 border-white/30 flex items-center justify-center text-[28px] shadow-[0_4px_0_rgba(0,0,0,0.15)]">
+            {isLocked ? <Lock size={22} strokeWidth={2.6} /> : unit.emoji}
           </span>
           <div className="min-w-0 flex-1">
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/80">
               {t('unit', { n: index + 1 })} · {unit.from}–{unit.to}
             </p>
-            <h2 className={cn(display.className, 'mt-1 text-[1.6rem] md:text-[1.8rem] leading-[1.1] italic', isLocked ? 'text-slate-400 dark:text-slate-500' : 'text-slate-900 dark:text-white')}>
-              {title}
-            </h2>
-            {translation && (
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{translation}</p>
-            )}
+            <h2 className="mt-0.5 text-xl md:text-2xl font-bold leading-tight">{title}</h2>
+            {translation && <p className="text-xs text-white/80 mt-0.5">{translation}</p>}
           </div>
         </div>
 
         <div className="relative mt-4 flex items-center gap-3">
-          <div className="flex-1 h-2 rounded-full bg-black/[0.06] dark:bg-white/[0.07] overflow-hidden">
+          <div className="flex-1 h-3 rounded-full bg-black/20 overflow-hidden p-0.5">
             <motion.div
-              className={cn('h-full rounded-full', isComplete ? 'bg-emerald-500' : 'bg-primary')}
+              className="h-full rounded-full bg-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.12)]"
               initial={{ width: 0 }}
-              whileInView={{ width: `${pct}%` }}
+              whileInView={{ width: `${Math.max(pct, 0)}%` }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             />
           </div>
-          <span className={cn('text-[11px] font-bold tabular-nums', isComplete ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-500')}>
+          <span className="text-xs font-black tabular-nums">
             {isComplete ? `✓ ${t('unit_done')}` : `${done}/${unitModules.length}`}
           </span>
         </div>
       </motion.header>
 
-      {/* Route */}
-      <div className="relative my-4" style={{ height }}>
-        <svg
-          aria-hidden
-          className="absolute inset-0 size-full overflow-visible"
-          viewBox={`0 0 100 ${height}`}
-          preserveAspectRatio="none"
-        >
-          <path
-            d={routePath(xs)}
-            fill="none"
-            strokeWidth={3}
-            strokeLinecap="round"
-            strokeDasharray="0.1 11"
-            vectorEffect="non-scaling-stroke"
-            className="stroke-black/[0.14] dark:stroke-white/[0.14]"
-          />
+      {/* Map */}
+      <div className="relative mt-6" style={{ height }}>
+        {/* Scenery on the open side of every other row */}
+        {xs.slice(0, -1).map((x, i) => i % 2 === 1 ? null : (
+          <motion.span
+            key={`deco-${i}`}
+            aria-hidden
+            className="absolute text-2xl select-none pointer-events-none opacity-60"
+            style={{ top: i * ROW_H + ROW_H / 2 - 14, ...(sideOf(x) === 'right' ? { left: '2%' } : { right: '2%' }) }}
+            animate={{ y: [0, -5, 0] }}
+            transition={{ duration: 3 + (i % 3), repeat: Infinity, ease: 'easeInOut', delay: i * 0.3 }}
+          >
+            {world.scenery[(i / 2) % world.scenery.length]}
+          </motion.span>
+        ))}
+
+        <svg aria-hidden className="absolute inset-0 size-full overflow-visible" viewBox={`0 0 100 ${height}`} preserveAspectRatio="none">
+          {/* Road */}
+          <path d={routePath(xs)} fill="none" strokeWidth={30} strokeLinecap="round" vectorEffect="non-scaling-stroke"
+            className="stroke-[#e7e2dd] dark:stroke-[#232a3b]" />
           {lastReached > 0 && (
-            <path
-              d={routePath(xs.slice(0, lastReached + 1))}
-              fill="none"
-              strokeWidth={5}
-              strokeLinecap="round"
-              vectorEffect="non-scaling-stroke"
-              className={isComplete ? 'stroke-emerald-400/70' : 'stroke-primary/60'}
-            />
+            <path d={routePath(xs.slice(0, lastReached + 1))} fill="none" strokeWidth={30} strokeLinecap="round" vectorEffect="non-scaling-stroke"
+              stroke={world.color} strokeOpacity={0.35} />
           )}
+          {/* Centre line */}
+          <path d={routePath(xs)} fill="none" strokeWidth={3} strokeLinecap="round" strokeDasharray="6 10" vectorEffect="non-scaling-stroke"
+            className="stroke-white/80 dark:stroke-white/15" />
         </svg>
 
         {unitModules.map((mod, i) => (
-          <LessonStop
-            key={mod.id}
-            mod={mod}
-            number={unit.from + i}
-            x={xs[i]}
-            row={i}
-            labelSide={xs[i] <= 50 ? 'right' : 'left'}
-          />
+          <Level key={mod.id} mod={mod} number={unit.from + i} x={xs[i]} row={i} labelSide={sideOf(xs[i])} world={world} />
         ))}
+        <Chest x={xs[xs.length - 1]} row={xs.length - 1} labelSide={sideOf(xs[xs.length - 1])} world={world} open={isComplete} />
       </div>
-
-      {/* Practice break between units */}
-      <Link
-        href="/play"
-        className={cn(
-          'group mx-auto mb-10 flex max-w-xs items-center gap-3 rounded-2xl border-2 border-dashed px-4 py-3 transition-colors',
-          'border-amber-400/40 hover:border-amber-400 hover:bg-amber-400/[0.06]',
-        )}
-      >
-        <span className="size-9 shrink-0 rounded-xl bg-amber-400/15 flex items-center justify-center">
-          <Gamepad2 size={18} className="text-amber-500" />
-        </span>
-        <span className="flex-1 min-w-0">
-          <span className="block text-[13px] font-bold text-slate-800 dark:text-slate-100">{t('practice_title')}</span>
-          <span className="block text-[11px] text-slate-500 dark:text-slate-400">{t('practice_desc', { gems: 5 })}</span>
-        </span>
-        <ArrowRight size={15} className="text-amber-500 transition-transform group-hover:translate-x-0.5" />
-      </Link>
     </section>
   )
 }
@@ -459,7 +473,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
                   <span className="absolute inset-0 flex items-center justify-center text-3xl">{languageFlag}</span>
                 </div>
                 <div className="min-w-0">
-                  <h1 className={cn(display.className, 'text-[1.55rem] leading-tight italic text-slate-900 dark:text-white')}>
+                  <h1 className="text-xl font-bold leading-tight text-slate-900 dark:text-white">
                     {t('journey_title', { language: courseName })}
                   </h1>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
@@ -500,7 +514,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
                   <p className="relative text-[10px] font-bold uppercase tracking-[0.18em] text-white/75">
                     {t('up_next')} · {t('lesson_number', { n: pad2(currentIdx + 1) })}
                   </p>
-                  <h3 className={cn(display.className, 'relative mt-2 text-[1.45rem] leading-tight italic pr-10')}>
+                  <h3 className="relative mt-2 text-xl font-bold leading-tight pr-10">
                     {current.title}
                   </h3>
                   {current.subtitle && <p className="relative text-xs text-white/80 mt-1">{current.subtitle}</p>}
@@ -543,7 +557,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
                       locked && 'opacity-55',
                     )}
                   >
-                    <span className={cn(display.className, 'text-lg font-semibold tabular-nums w-7', active ? 'text-primary' : 'text-slate-300 dark:text-slate-600')}>
+                    <span className={cn('text-base font-black tabular-nums w-7', active ? 'text-primary' : 'text-slate-300 dark:text-slate-600')}>
                       {pad2(i + 1)}
                     </span>
                     <span className="min-w-0 md:flex-1">
@@ -569,7 +583,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
           {/* ── Journey ───────────────────────────────────────────────────── */}
           <div className="min-w-0 md:max-w-2xl md:w-full md:mx-auto">
             {units.map((u, i) => (
-              <UnitSection key={i} unit={u} index={i} modules={modules} translationLang={translationLang} />
+              <WorldSection key={i} unit={u} index={i} modules={modules} translationLang={translationLang} />
             ))}
           </div>
         </div>
