@@ -9,6 +9,7 @@ import { useActiveLanguage } from '@/components/providers/language-provider'
 import { getLanguage } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
+import { addRewards } from '@/lib/rewards'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Phase = 'ready' | 'playing' | 'finished'
@@ -57,13 +58,8 @@ async function saveGameResult(correct: number, total: number) {
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0
   const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5
   const gems = 3
-  const { data: profile } = await supabase
-    .from('user_profiles').select('total_xp, total_gems').eq('user_id', user.id).maybeSingle()
-  await supabase
-    .from('user_profiles')
-    .update({ total_xp: (profile?.total_xp ?? 0) + xp, total_gems: (profile?.total_gems ?? 0) + gems })
-    .eq('user_id', user.id)
-  return { xp, gems }
+  const awarded = await addRewards(supabase, user.id, { xp, gems, reason: 'minigame' })
+  return awarded
 }
 
 const hasSpeech = typeof window !== 'undefined' && 'speechSynthesis' in window

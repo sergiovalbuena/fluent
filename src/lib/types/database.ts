@@ -36,6 +36,8 @@ export type UserProfile = {
   notification_preference: string
   skills: Skills
   last_streak_milestone: number
+  /** Streak freezes bought in the gem shop (max 2) */
+  streak_freezes: number
   created_at: string
   updated_at: string
 }

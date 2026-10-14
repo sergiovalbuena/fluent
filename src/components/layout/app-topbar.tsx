@@ -6,23 +6,27 @@ import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { LanguageSwitcher } from '@/components/dashboard/language-switcher'
 import { ChevronLeft, Flame, Star, Gem, Zap } from 'lucide-react'
 import { useTopbarStats } from '@/components/providers/topbar-provider'
+import { createClient } from '@/lib/supabase/client'
+import { getActiveBoosts, type ActiveBoosts } from '@/lib/rewards'
 
+// Boosts bought in the gem shop live in the database (user_boosts)
 function useActiveBoost() {
-  const [label, setLabel] = useState<string | null>(null)
+  const [boosts, setBoosts] = useState<ActiveBoosts>({ xp: null, gems: null })
+  const [now, setNow] = useState(0)
   useEffect(() => {
-    const check = () => {
-      const now = Date.now()
-      const xp = Number(localStorage.getItem('fluent_boost_xp_expires') ?? 0)
-      const gems = Number(localStorage.getItem('fluent_boost_gems_expires') ?? 0)
-      if (xp > now) { setLabel('2× XP'); return }
-      if (gems > now) { setLabel('2× Gems'); return }
-      setLabel(null)
-    }
-    check()
-    const id = setInterval(check, 5000)
-    return () => clearInterval(id)
+    const supabase = createClient()
+    let cancelled = false
+    const load = () => supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user) getActiveBoosts(supabase, user.id).then(b => { if (!cancelled) setBoosts(b) })
+    })
+    load()
+    const refresh = setInterval(load, 60_000)
+    const tick = setInterval(() => setNow(Date.now()), 5_000)
+    return () => { cancelled = true; clearInterval(refresh); clearInterval(tick) }
   }, [])
-  return label
+  if (boosts.xp && boosts.xp > now) return '2× XP'
+  if (boosts.gems && boosts.gems > now) return '2× 💎'
+  return null
 }
 
 interface AppTopbarProps {
@@ -90,10 +94,10 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
           </div>
 
           {/* Gems */}
-          <div className="hidden md:flex items-center gap-1.5 bg-amber-400/10 text-amber-500 px-3 py-1 rounded-full text-xs font-bold">
+          <Link href="/gems" className="hidden md:flex items-center gap-1.5 bg-sky-500/10 text-sky-500 hover:bg-sky-500/20 transition-colors px-3 py-1 rounded-full text-xs font-bold">
             <Gem size={12} />
             {stats.gems}
-          </div>
+          </Link>
         </div>
         <ThemeToggle />
       </div>

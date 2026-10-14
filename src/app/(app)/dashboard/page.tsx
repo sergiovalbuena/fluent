@@ -138,15 +138,8 @@ export default async function DashboardPage() {
   })
 
   // Compute state (completed → current → available → locked)
-  let lastCompletedIdx = -1
-  for (let i = modulesBase.length - 1; i >= 0; i--) {
-    const m = modulesBase[i]
-    if (m.lessonsCompleted >= m.totalLessons && m.totalLessons > 0) {
-      lastCompletedIdx = i
-      break
-    }
-  }
-  const currentIdx = lastCompletedIdx + 1
+  // The first module not completed yet is 'current' (same rule as the learning path)
+  const currentIdx = modulesBase.findIndex(m => !(m.totalLessons > 0 && m.lessonsCompleted >= m.totalLessons))
 
   const modules: LearnModule[] = modulesBase.map((m, i) => {
     let state: LearnModule['state']

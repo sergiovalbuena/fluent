@@ -69,6 +69,18 @@ export default async function LearnPage() {
     progressData = (pd ?? []) as ProgressRow[]
   }
 
+  // Lessons unlocked early with gems, and the balance to unlock more
+  let unlockedIds = new Set<string>()
+  let gemBalance = 0
+  if (user) {
+    const [{ data: unlocked }, { data: profile }] = await Promise.all([
+      supabase.from('user_unlocked_modules').select('module_id').eq('user_id', user.id),
+      supabase.from('user_profiles').select('total_gems').eq('user_id', user.id).maybeSingle(),
+    ])
+    unlockedIds = new Set((unlocked ?? []).map(u => u.module_id as string))
+    gemBalance = profile?.total_gems ?? 0
+  }
+
   // Aggregate per module
   const moduleProgressMap = new Map<string, {
     completed: number
@@ -108,27 +120,21 @@ export default async function LearnPage() {
     return { id: m.id, slug: m.slug, title: m.title, subtitle: m.description ?? undefined, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
   })
 
-  // Compute state: find last fully-completed module, next is 'current'
-  let lastCompletedIdx = -1
-  for (let i = modulesBase.length - 1; i >= 0; i--) {
-    const m = modulesBase[i]
-    if (m.lessonsCompleted >= m.totalLessons && m.totalLessons > 0) {
-      lastCompletedIdx = i
-      break
-    }
-  }
-  const currentIdx = lastCompletedIdx + 1
+  // The first module not completed yet is 'current' (lessons unlocked early with
+  // gems may be completed out of order, so this can't be "after the last completed")
+  const isDone = (m: { lessonsCompleted: number; totalLessons: number }) => m.totalLessons > 0 && m.lessonsCompleted >= m.totalLessons
+  const currentIdx = modulesBase.findIndex(m => !isDone(m))
 
   const modules: LearnModule[] = modulesBase.map((m, i) => {
     let state: LearnModule['state']
-    if (m.lessonsCompleted >= m.totalLessons && m.totalLessons > 0) {
+    if (isDone(m)) {
       state = 'completed'
     } else if (i === currentIdx) {
       state = 'current'
     } else if (i === currentIdx + 1) {
       state = 'available'
     } else {
-      state = 'locked'
+      state = unlockedIds.has(m.id) ? 'available' : 'locked'
     }
     return { ...m, state }
   })
@@ -140,6 +146,7 @@ export default async function LearnPage() {
       modules={modules}
       languageName={lang.name}
       languageFlag={lang.flag}
+      gemBalance={gemBalance}
     />
   )
 }

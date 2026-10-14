@@ -1,296 +1,348 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { motion, type MotionProps } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useLocale, useTranslations } from 'next-intl'
 import {
-  Gem, BookMarked, Lightbulb, Languages, AlertCircle, Smile,
-  Zap, RotateCcw, Clock, CheckCircle2,
+  ArrowRight, BookOpen, CalendarClock, Gamepad2, Gem, Lightbulb, Lock, Snowflake, Sparkles, Unlock, X, Zap,
   type LucideIcon,
 } from 'lucide-react'
+import { toast } from 'sonner'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
-import { toast } from 'sonner'
-import { useTranslations } from 'next-intl'
+import { buyItem, DAILY_GEM_CAP, MAX_STREAK_FREEZES, PRICES, type ShopItem } from '@/lib/rewards'
 
-// ── Block primitive ────────────────────────────────────────────────────────────
-type BlockProps = { className?: string; children?: React.ReactNode } & MotionProps
-const Block = ({ className, children, ...rest }: BlockProps) => (
-  <motion.div
-    variants={{
-      initial: { scale: 0.5, y: 50, opacity: 0 },
-      animate: { scale: 1, y: 0, opacity: 1 },
-    }}
-    transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
-    className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
-      className
-    )}
-    {...rest}
-  >
-    {children}
-  </motion.div>
-)
+export type GemTransaction = { id: string; amount: number; reason: string; created_at: string }
+export type DailyTip = { text: string; lessonNumber: number; lessonTitle: string; slug: string }
 
-const BOOST_DEFS = [
-  { id: 'xp',    icon: Zap,       cost: 30, durationMs: 10 * 60 * 1000, storageKey: 'fluent_boost_xp_expires',   color: 'from-amber-500 to-yellow-500',  border: 'border-amber-400/20' },
-  { id: 'gems',  icon: Gem,       cost: 50, durationMs: 15 * 60 * 1000, storageKey: 'fluent_boost_gems_expires', color: 'from-emerald-500 to-teal-500',   border: 'border-emerald-400/20' },
-  { id: 'retry', icon: RotateCcw, cost: 15, durationMs: 0,              storageKey: 'fluent_boost_retry_uses',   color: 'from-violet-500 to-purple-600',  border: 'border-violet-400/20' },
-]
-
-type Category = { icon: LucideIcon; titleKey: string; descKey: string; gradient: string; border: string; span: string }
-
-const CATEGORIES: Category[] = [
-  { icon: Lightbulb, titleKey: 'grammar_tips',    descKey: 'grammar_tips_desc',    gradient: 'linear-gradient(135deg, #d97706 0%, #f59e0b 100%)', border: 'border-amber-400/20',   span: 'col-span-6 md:col-span-4' },
-  { icon: Languages, titleKey: 'false_friends',   descKey: 'false_friends_desc',   gradient: 'linear-gradient(135deg, #be123c 0%, #e11d48 100%)', border: 'border-rose-500/20',    span: 'col-span-6 md:col-span-4' },
-  { icon: Smile,     titleKey: 'idioms_slang',    descKey: 'idioms_slang_desc',    gradient: 'linear-gradient(135deg, #059669 0%, #16a34a 100%)', border: 'border-emerald-500/20', span: 'col-span-12 md:col-span-4' },
-  { icon: AlertCircle, titleKey: 'common_mistakes', descKey: 'common_mistakes_desc', gradient: 'linear-gradient(135deg, #ea580c 0%, #f97316 100%)', border: 'border-orange-500/20',  span: 'col-span-6 md:col-span-6' },
-  { icon: BookMarked, titleKey: 'cultural_notes', descKey: 'cultural_notes_desc',  gradient: 'linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%)', border: 'border-violet-500/20',  span: 'col-span-6 md:col-span-6' },
-]
-
-const tiltL = { rotate: '2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
-const tiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
-const lift  = { scale: 1.02, filter: 'brightness(1.06)' } as const
-
-function pad(n: number) { return String(Math.floor(n)).padStart(2, '0') }
-
-function useBoostCountdowns() {
-  const [countdowns, setCountdowns] = useState<Record<string, number>>({})
-  useEffect(() => {
-    const update = () => {
-      const now = Date.now()
-      const next: Record<string, number> = {}
-      for (const b of BOOST_DEFS) {
-        if (b.durationMs === 0) continue
-        const expires = Number(localStorage.getItem(b.storageKey) ?? 0)
-        next[b.id] = Math.max(0, expires - now)
-      }
-      setCountdowns(next)
-    }
-    update()
-    const id = setInterval(update, 1000)
-    return () => clearInterval(id)
-  }, [])
-  return countdowns
+type Props = {
+  signedIn: boolean
+  totalGems: number
+  streakFreezes: number
+  /** Active boosts: boost → expiry (ms) */
+  boosts: Record<string, number>
+  earnedToday: number
+  history: GemTransaction[]
+  dailyTip: DailyTip | null
 }
 
-export function GemsPageContent({ totalGems: initialGems, userId }: { totalGems: number; userId: string | null }) {
-  const t = useTranslations('gems')
-  const [gems, setGems] = useState(initialGems)
-  const [buying, setBuying] = useState<string | null>(null)
-  const countdowns = useBoostCountdowns()
+// One colour for the currency everywhere (matches the 💎 emoji and the topbar chip)
+const GEM = 'text-sky-500'
 
-  const BOOSTS = [
-    { ...BOOST_DEFS[0], title: t('boost_xp'),    description: t('boost_xp_desc') },
-    { ...BOOST_DEFS[1], title: t('boost_gems'),   description: t('boost_gems_desc') },
-    { ...BOOST_DEFS[2], title: t('boost_retry'),  description: t('boost_retry_desc') },
+const ITEMS: { id: ShopItem; icon: LucideIcon; tint: string; boost?: 'xp' | 'gems' }[] = [
+  { id: 'xp_boost',      icon: Zap,       tint: 'bg-amber-400/15 text-amber-500',   boost: 'xp' },
+  { id: 'gems_boost',    icon: Gem,       tint: 'bg-sky-500/15 text-sky-500',       boost: 'gems' },
+  { id: 'streak_freeze', icon: Snowflake, tint: 'bg-cyan-400/15 text-cyan-500' },
+  { id: 'unlock_module', icon: Unlock,    tint: 'bg-violet-500/15 text-violet-500' },
+]
+
+const Card = ({ className, children }: { className?: string; children: React.ReactNode }) => (
+  <motion.section
+    variants={{ initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 } }}
+    transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+    className={cn('rounded-3xl border border-black/[0.04] dark:border-white/[0.06] bg-white dark:bg-[#202638] shadow-[0_2px_10px_rgba(0,0,0,0.04)]', className)}
+  >
+    {children}
+  </motion.section>
+)
+
+function useNow(intervalMs: number) {
+  const [now, setNow] = useState(0)
+  useEffect(() => {
+    const tick = () => setNow(Date.now())
+    tick()
+    const id = setInterval(tick, intervalMs)
+    return () => clearInterval(id)
+  }, [intervalMs])
+  return now
+}
+
+const mmss = (ms: number) => {
+  const s = Math.max(0, Math.ceil(ms / 1000))
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`
+}
+
+function GemAmount({ value, className }: { value: number; className?: string }) {
+  return (
+    <span className={cn('inline-flex items-center gap-1 font-bold tabular-nums', className)}>
+      <Gem size={13} className={GEM} />{value}
+    </span>
+  )
+}
+
+export function GemsPageContent({ signedIn, totalGems, streakFreezes, boosts, earnedToday, history, dailyTip }: Props) {
+  const t = useTranslations('gems')
+  const locale = useLocale()
+  const router = useRouter()
+  const now = useNow(1000)
+  const [gems, setGems] = useState(totalGems)
+  const [freezes, setFreezes] = useState(streakFreezes)
+  const [activeBoosts, setActiveBoosts] = useState(boosts)
+  const [confirming, setConfirming] = useState<ShopItem | null>(null)
+  const [buying, setBuying] = useState(false)
+
+  const unlockPrice = PRICES.unlock_module
+  const goalPct = Math.min(100, Math.round((gems / unlockPrice) * 100))
+  const itemName = (id: ShopItem) => t(`item_${id}`)
+
+  async function confirmPurchase() {
+    if (!confirming) return
+    setBuying(true)
+    const res = await buyItem(createClient(), confirming)
+    setBuying(false)
+    if ('error' in res) {
+      toast.error(t(`err_${res.error}`))
+      setConfirming(null)
+      return
+    }
+    setGems(res.balance)
+    if (confirming === 'streak_freeze') setFreezes(f => f + 1)
+    if (confirming === 'xp_boost') setActiveBoosts(b => ({ ...b, xp: Date.now() + 15 * 60_000 }))
+    if (confirming === 'gems_boost') setActiveBoosts(b => ({ ...b, gems: Date.now() + 30 * 60_000 }))
+    toast.success(t('bought', { item: itemName(confirming) }))
+    setConfirming(null)
+    router.refresh()   // topbar balance, history
+  }
+
+  const earnRows = [
+    { icon: BookOpen,      label: t('earn_lesson'), note: t('earn_lesson_note'), value: '+2' },
+    { icon: Gamepad2,      label: t('earn_game'),   note: null,                  value: '+3' },
+    { icon: Gem,           label: t('earn_boost'),  note: null,                  value: '×2' },
+    { icon: CalendarClock, label: t('earn_cap'),    note: t('today', { earned: earnedToday, cap: DAILY_GEM_CAP }), value: String(DAILY_GEM_CAP) },
   ]
 
-  async function handleBuyBoost(boost: typeof BOOSTS[number]) {
-    if (!userId) { toast.error('Sign in to buy boosts'); return }
-    if (gems < boost.cost) { toast.error(t('not_enough_gems', { cost: boost.cost })); return }
-    if (boost.durationMs > 0 && (countdowns[boost.id] ?? 0) > 0) {
-      toast.info(t('already_active'))
-      return
-    }
-
-    setBuying(boost.id)
-    const supabase = createClient()
-    const { error } = await supabase
-      .from('user_profiles')
-      .update({ total_gems: gems - boost.cost })
-      .eq('user_id', userId)
-
-    if (error) {
-      toast.error('Failed to purchase boost')
-      setBuying(null)
-      return
-    }
-
-    setGems(g => g - boost.cost)
-
-    if (boost.durationMs > 0) {
-      // Runs in a click handler, not during render
-      // eslint-disable-next-line react-hooks/purity
-      localStorage.setItem(boost.storageKey, String(Date.now() + boost.durationMs))
-    } else {
-      const current = Number(localStorage.getItem(boost.storageKey) ?? 0)
-      localStorage.setItem(boost.storageKey, String(current + 1))
-    }
-
-    toast.success(`${boost.title} boost activated! 🚀`)
-    setBuying(null)
-  }
+  const dateFmt = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title={t('title')} />
 
-      <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
+      <main className="flex-1 px-3 md:px-6 py-4 md:py-8 pb-28 md:pb-10">
         <motion.div
           initial="initial"
           animate="animate"
-          transition={{ staggerChildren: 0.05 }}
-          className="mx-auto max-w-6xl grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+          transition={{ staggerChildren: 0.06 }}
+          className="mx-auto max-w-5xl grid grid-cols-12 gap-3 md:gap-4"
         >
 
-          {/* Gem of the Day */}
-          <Block
-            whileHover={lift}
-            className="col-span-12 md:col-span-8 border-amber-400/20 relative overflow-hidden min-h-[200px]"
-            style={{ background: 'linear-gradient(160deg, #78350f 0%, #b45309 55%, #d97706 100%)' }}
+          {/* ── Balance + next goal ─────────────────────────────────────────── */}
+          <motion.section
+            variants={{ initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 } }}
+            className="col-span-12 md:col-span-7 relative overflow-hidden rounded-3xl p-6 md:p-7 text-white shadow-[0_6px_0_#0369a1,0_20px_40px_-18px_rgba(14,165,233,0.8)]"
+            style={{ background: 'linear-gradient(135deg, #38bdf8 0%, #0ea5e9 45%, #0369a1 100%)' }}
           >
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-              style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")", backgroundSize: 'cover' }}
-            />
-            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none select-none">
-              <Gem size={110} className="text-white/[0.06]" />
-            </div>
-            <div className="relative p-6 md:p-8 flex flex-col gap-3 h-full">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/55">
-                  <Gem size={10} className="text-amber-300" />
-                  {t('gem_of_day')}
-                </span>
-                <div className="ml-auto flex gap-1.5">
-                  <span className="text-[10px] font-bold bg-white/15 border border-white/10 text-white px-2.5 py-0.5 rounded-full">Grammar</span>
-                  <span className="text-[10px] font-bold bg-white/15 border border-white/10 text-white px-2.5 py-0.5 rounded-full">Spanish</span>
+            <span aria-hidden className="absolute inset-0 opacity-[0.15]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1.2px, transparent 0)', backgroundSize: '16px 16px' }} />
+            <Gem aria-hidden size={180} strokeWidth={1.2} className="absolute -right-8 -bottom-10 text-white/15 rotate-12" />
+
+            <div className="relative">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/85">{t('balance')}</p>
+              <div className="mt-2 flex items-end gap-3">
+                <motion.span
+                  key={gems}
+                  initial={{ scale: 1.15, opacity: 0.6 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className="text-6xl font-bold leading-none tabular-nums"
+                >
+                  {gems}
+                </motion.span>
+                <span className="text-4xl leading-none mb-1">💎</span>
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold">
+                <span className="rounded-full bg-white/20 px-3 py-1">{t('today', { earned: earnedToday, cap: DAILY_GEM_CAP })}</span>
+                <span className="rounded-full bg-white/20 px-3 py-1">🧊 {t('freezes', { count: freezes, max: MAX_STREAK_FREEZES })}</span>
+              </div>
+
+              {/* Goal: unlocking a lesson early ties gems back into the learning path */}
+              <div className="mt-6 rounded-2xl bg-black/15 p-4">
+                <div className="flex items-center gap-3">
+                  <span className="size-10 shrink-0 rounded-xl bg-white/20 flex items-center justify-center">
+                    {gems >= unlockPrice ? <Unlock size={18} /> : <Lock size={18} />}
+                  </span>
+                  <p className="flex-1 text-sm font-semibold leading-snug">
+                    {gems >= unlockPrice ? t('goal_ready') : t('goal_need', { missing: unlockPrice - gems })}
+                  </p>
+                  <Link href="/learn" className="shrink-0 hidden sm:inline-flex items-center gap-1 rounded-full bg-white text-sky-700 px-3.5 py-1.5 text-xs font-bold shadow-[0_3px_0_rgba(0,0,0,0.15)]">
+                    {t('goal_cta')} <ArrowRight size={13} />
+                  </Link>
                 </div>
-              </div>
-              <div className="flex-1 flex flex-col justify-center gap-2">
-                <p className="text-lg md:text-xl font-bold text-white leading-snug">
-                  &quot;Ser&quot; vs &quot;Estar&quot; — both mean &quot;to be&quot; in Spanish, but they&apos;re not interchangeable.
-                </p>
-                <p className="text-sm text-white/55 leading-relaxed">
-                  Use <strong className="text-white/80 font-bold">ser</strong> for permanent traits (origin, identity, characteristics).{' '}
-                  Use <strong className="text-white/80 font-bold">estar</strong> for temporary states (feelings, location, conditions).
-                </p>
-              </div>
-            </div>
-          </Block>
-
-          {/* Balance */}
-          <Block className="col-span-12 md:col-span-4 p-5 flex flex-col gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{t('balance')}</p>
-            <div className="flex-1 flex flex-col justify-center gap-1">
-              <div className="flex items-end gap-2">
-                <p className="text-4xl font-bold text-slate-900 dark:text-white tabular-nums leading-none">{gems}</p>
-                <Gem size={22} className="text-amber-500 mb-0.5" />
-              </div>
-              <p className="text-sm text-slate-400 dark:text-slate-500 font-semibold">{t('gems_available')}</p>
-              <div className="mt-4 h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
-                <motion.div
-                  className="h-full bg-amber-400 rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: `${Math.min((gems / 200) * 100, 100)}%` }}
-                  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                />
-              </div>
-              <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">{t('milestone_progress', { count: gems })}</p>
-            </div>
-            <div className="pt-3 border-t border-black/[0.05] dark:border-white/[0.05]">
-              <p className="text-xs text-slate-400 dark:text-slate-500 text-center">{t('earn_hint')}</p>
-            </div>
-          </Block>
-
-          {/* Boost Shop */}
-          <div className="col-span-12">
-            <p className="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 px-1 mb-3">{t('shop')}</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              {BOOSTS.map((boost) => {
-                const Icon = boost.icon
-                const remaining = countdowns[boost.id] ?? 0
-                const retryUses = typeof window !== 'undefined' ? Number(localStorage.getItem(boost.storageKey) ?? 0) : 0
-                const isActive = boost.durationMs > 0 ? remaining > 0 : retryUses > 0
-                const canAfford = gems >= boost.cost
-                const mins = Math.floor(remaining / 60000)
-                const secs = Math.floor((remaining % 60000) / 1000)
-
-                return (
+                <div className="mt-3 h-2.5 rounded-full bg-black/20 overflow-hidden p-0.5">
                   <motion.div
-                    key={boost.id}
-                    variants={{ initial: { scale: 0.5, y: 50, opacity: 0 }, animate: { scale: 1, y: 0, opacity: 1 } }}
-                    transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
-                    className={cn('relative rounded-3xl border overflow-hidden', isActive ? 'border-green-400/40' : boost.border)}
-                  >
-                    <div className={cn('absolute inset-0 bg-gradient-to-br opacity-90', boost.color)} />
-                    <div className="relative p-5 flex flex-col gap-3">
-                      <div className="flex items-start justify-between">
-                        <div className="size-11 rounded-2xl bg-white/20 flex items-center justify-center">
-                          <Icon size={22} className="text-white" />
-                        </div>
-                        {isActive && (
-                          <div className="flex items-center gap-1.5 bg-green-500/20 border border-green-400/30 rounded-full px-2.5 py-1">
-                            <CheckCircle2 size={12} className="text-green-300" />
-                            <span className="text-[10px] font-bold text-green-200">{t('active')}</span>
-                          </div>
-                        )}
-                      </div>
-                      <div>
-                        <p className="font-bold text-white">{boost.title}</p>
-                        <p className="text-[11px] text-white/60 mt-0.5 leading-snug">{boost.description}</p>
-                      </div>
-                      {isActive && boost.durationMs > 0 && (
-                        <div className="flex items-center gap-1.5 text-white/70 text-xs">
-                          <Clock size={12} />
-                          <span className="tabular-nums font-bold">{t('remaining', { min: pad(mins), sec: pad(secs) })}</span>
-                        </div>
-                      )}
-                      <button
-                        onClick={() => handleBuyBoost(boost)}
-                        disabled={buying === boost.id || (isActive && boost.durationMs > 0)}
-                        className={cn(
-                          'flex items-center justify-center gap-2 w-full py-2.5 rounded-xl font-bold text-sm transition-all',
-                          (isActive && boost.durationMs > 0)
-                            ? 'bg-white/10 text-white/40 cursor-not-allowed'
-                            : canAfford
-                            ? 'bg-white text-slate-900 hover:bg-white/90 active:scale-95'
-                            : 'bg-white/10 text-white/40 cursor-not-allowed'
-                        )}
-                      >
-                        {buying === boost.id ? t('activating') : (
-                          <>
-                            <Gem size={14} className={canAfford ? 'text-amber-500' : 'text-white/40'} />
-                            {boost.cost} gems
-                          </>
-                        )}
-                      </button>
-                    </div>
-                  </motion.div>
-                )
-              })}
-            </div>
-          </div>
-
-          {/* Language Gems */}
-          <div className="col-span-12">
-            <p className="text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 px-1 mb-3">{t('language_gems')}</p>
-          </div>
-
-          {CATEGORIES.map(({ icon: Icon, titleKey, descKey, gradient, border, span }, i) => (
-            <Block
-              key={titleKey}
-              whileHover={i % 2 === 0 ? tiltL : tiltR}
-              className={cn('relative overflow-hidden cursor-pointer min-h-[160px] flex flex-col', span, border)}
-              style={{ background: gradient }}
-            >
-              <div className="flex flex-col gap-2.5 p-4 h-full">
-                <div className="size-11 rounded-2xl bg-white/15 flex items-center justify-center">
-                  <Icon size={22} className="text-white" />
+                    className="h-full rounded-full bg-white"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${goalPct}%` }}
+                    transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                  />
                 </div>
-                <div className="mt-auto">
-                  <p className="text-sm font-bold text-white leading-tight">{t(titleKey as Parameters<typeof t>[0])}</p>
-                  <p className="text-[11px] text-white/50 mt-0.5 leading-snug">{t(descKey as Parameters<typeof t>[0])}</p>
-                </div>
-                <span className="inline-flex w-fit text-[9px] font-bold uppercase tracking-wider bg-white/10 border border-white/12 text-white/60 px-2 py-0.5 rounded-full">
-                  {t('coming_soon')}
-                </span>
+                <p className="mt-1.5 text-[11px] font-bold text-white/80 tabular-nums">{Math.min(gems, unlockPrice)} / {unlockPrice}</p>
               </div>
-            </Block>
-          ))}
+            </div>
+          </motion.section>
 
+          {/* ── How to earn ─────────────────────────────────────────────────── */}
+          <Card className="col-span-12 md:col-span-5 p-5 md:p-6">
+            <h2 className="text-sm font-bold text-slate-900 dark:text-white">{t('how_title')}</h2>
+            <ul className="mt-4 space-y-3">
+              {earnRows.map(row => (
+                <li key={row.label} className="flex items-center gap-3">
+                  <span className="size-9 shrink-0 rounded-xl bg-sky-500/10 flex items-center justify-center">
+                    <row.icon size={16} className={GEM} />
+                  </span>
+                  <span className="flex-1 min-w-0">
+                    <span className="block text-[13px] font-semibold text-slate-800 dark:text-slate-100">{row.label}</span>
+                    {row.note && <span className="block text-[11px] text-slate-500 dark:text-slate-400">{row.note}</span>}
+                  </span>
+                  <span className={cn('text-sm font-bold tabular-nums', GEM)}>{row.value}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+
+          {/* ── Shop ────────────────────────────────────────────────────────── */}
+          <div className="col-span-12 mt-2">
+            <h2 className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400 px-1">{t('shop')}</h2>
+          </div>
+
+          {ITEMS.map(item => {
+            const price = PRICES[item.id]
+            const boostLeft = item.boost ? (activeBoosts[item.boost] ?? 0) - now : 0
+            const active = !!item.boost && boostLeft > 0
+            const maxed = item.id === 'streak_freeze' && freezes >= MAX_STREAK_FREEZES
+            const missing = Math.max(0, price - gems)
+            const Icon = item.icon
+            return (
+              <Card key={item.id} className="col-span-12 sm:col-span-6 lg:col-span-3 p-5 flex flex-col">
+                <div className="flex items-start justify-between">
+                  <span className={cn('size-11 rounded-2xl flex items-center justify-center', item.tint)}><Icon size={20} /></span>
+                  <GemAmount value={price} className="rounded-full bg-sky-500/10 px-2.5 py-1 text-sm text-slate-800 dark:text-slate-100" />
+                </div>
+                <h3 className="mt-4 text-[15px] font-bold text-slate-900 dark:text-white">{itemName(item.id)}</h3>
+                <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400 flex-1">{t(`item_${item.id}_desc`)}</p>
+                {item.id === 'streak_freeze' && (
+                  <p className="mt-2 text-[11px] font-bold text-cyan-600 dark:text-cyan-400">🧊 {t('owned', { count: freezes, max: MAX_STREAK_FREEZES })}</p>
+                )}
+
+                <div className="mt-4">
+                  {item.id === 'unlock_module' ? (
+                    <Link href="/learn" className="flex items-center justify-center gap-1.5 w-full h-10 rounded-xl bg-violet-500 text-white text-sm font-bold shadow-[0_3px_0_#6d28d9] active:translate-y-0.5 transition-transform">
+                      {t('choose_on_map')} <ArrowRight size={14} />
+                    </Link>
+                  ) : active ? (
+                    <p className="flex items-center justify-center gap-1.5 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-sm font-bold tabular-nums">
+                      <Sparkles size={14} /> {t('active_for', { time: mmss(boostLeft) })}
+                    </p>
+                  ) : maxed ? (
+                    <p className="flex items-center justify-center h-10 rounded-xl bg-slate-100 dark:bg-white/[0.05] text-slate-500 dark:text-slate-400 text-sm font-semibold">{t('max_owned')}</p>
+                  ) : (
+                    <button
+                      onClick={() => signedIn ? setConfirming(item.id) : toast.error(t('sign_in'))}
+                      disabled={missing > 0}
+                      className={cn(
+                        'w-full h-10 rounded-xl text-sm font-bold transition-transform',
+                        missing > 0
+                          ? 'bg-slate-100 dark:bg-white/[0.05] text-slate-500 dark:text-slate-400 cursor-not-allowed'
+                          : 'bg-sky-500 text-white shadow-[0_3px_0_#0369a1] active:translate-y-0.5',
+                      )}
+                    >
+                      {missing > 0 ? t('missing', { missing }) : t('buy')}
+                    </button>
+                  )}
+                </div>
+              </Card>
+            )
+          })}
+
+          {/* ── History ─────────────────────────────────────────────────────── */}
+          <Card className="col-span-12 md:col-span-7 p-5 md:p-6 mt-2">
+            <h2 className="text-sm font-bold text-slate-900 dark:text-white">{t('history')}</h2>
+            {history.length === 0 ? (
+              <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">{t('history_empty')}</p>
+            ) : (
+              <ul className="mt-3 divide-y divide-black/[0.05] dark:divide-white/[0.06]">
+                {history.map(tx => (
+                  <li key={tx.id} className="flex items-center gap-3 py-2.5">
+                    <span className="flex-1 min-w-0">
+                      <span className="block text-[13px] font-semibold text-slate-800 dark:text-slate-100 truncate">
+                        {t.has(`reason_${tx.reason}`) ? t(`reason_${tx.reason}`) : tx.reason}
+                      </span>
+                      <span className="block text-[11px] text-slate-500 dark:text-slate-400">{dateFmt.format(new Date(tx.created_at))}</span>
+                    </span>
+                    <span className={cn('text-sm font-bold tabular-nums', tx.amount > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-500 dark:text-slate-400')}>
+                      {tx.amount > 0 ? `+${tx.amount}` : tx.amount} 💎
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Card>
+
+          {/* ── Tip of the day (from the course) ────────────────────────────── */}
+          {dailyTip && (
+            <Card className="col-span-12 md:col-span-5 p-5 md:p-6 mt-2 bg-amber-50 dark:bg-[#2a2620] border-amber-200/60 dark:border-amber-500/15">
+              <div className="flex items-center gap-2">
+                <Lightbulb size={16} className="text-amber-500" />
+                <h2 className="text-sm font-bold text-slate-900 dark:text-white">{t('tip_of_day')}</h2>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-200">{dailyTip.text}</p>
+              <Link href={`/learn/${dailyTip.slug}`} className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-700 dark:text-amber-400 hover:underline">
+                {t('tip_from', { n: String(dailyTip.lessonNumber).padStart(2, '0'), title: dailyTip.lessonTitle })} <ArrowRight size={12} />
+              </Link>
+            </Card>
+          )}
+
+          {/* ── Extra content (not built yet) ───────────────────────────────── */}
+          <div className="col-span-12 mt-2 flex items-center gap-3 rounded-2xl border border-dashed border-slate-300 dark:border-white/10 px-4 py-3 text-xs text-slate-500 dark:text-slate-400">
+            <Sparkles size={14} className="shrink-0 text-violet-500" />
+            {t('extra_soon')}
+          </div>
         </motion.div>
       </main>
+
+      {/* ── Purchase confirmation ─────────────────────────────────────────── */}
+      <AnimatePresence>
+        {confirming && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+            onClick={e => { if (e.target === e.currentTarget && !buying) setConfirming(null) }}
+          >
+            <motion.div
+              role="dialog"
+              aria-modal="true"
+              initial={{ y: 30, scale: 0.97 }}
+              animate={{ y: 0, scale: 1 }}
+              exit={{ y: 30, scale: 0.97 }}
+              className="relative w-full max-w-sm rounded-3xl bg-white dark:bg-[#202638] p-6 text-center shadow-2xl"
+            >
+              <button onClick={() => setConfirming(null)} aria-label={t('cancel')} className="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <X size={18} />
+              </button>
+              {(() => {
+                const item = ITEMS.find(i => i.id === confirming)!
+                const Icon = item.icon
+                return <span className={cn('mx-auto size-14 rounded-2xl flex items-center justify-center', item.tint)}><Icon size={26} /></span>
+              })()}
+              <h3 className="mt-4 text-lg font-bold text-slate-900 dark:text-white">{t('confirm_title', { item: itemName(confirming) })}</h3>
+              <p className="mt-1.5 text-sm text-slate-500 dark:text-slate-400">
+                {t('confirm_body', { price: PRICES[confirming], after: gems - PRICES[confirming] })}
+              </p>
+              <div className="mt-6 grid grid-cols-2 gap-2">
+                <button onClick={() => setConfirming(null)} disabled={buying} className="h-11 rounded-xl border border-slate-200 dark:border-white/10 text-sm font-semibold text-slate-600 dark:text-slate-300">
+                  {t('cancel')}
+                </button>
+                <button onClick={confirmPurchase} disabled={buying} className="h-11 rounded-xl bg-sky-500 text-white text-sm font-bold shadow-[0_3px_0_#0369a1] disabled:opacity-60">
+                  {t('confirm', { price: PRICES[confirming] })} 💎
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

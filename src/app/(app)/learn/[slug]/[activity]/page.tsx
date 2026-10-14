@@ -22,6 +22,7 @@ import { cn } from '@/lib/utils'
 import { getLanguage, localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
+import { awardGems, getActiveBoosts } from '@/lib/rewards'
 import { ResultScreen } from '@/components/lesson/result-screen'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -1749,11 +1750,8 @@ export default function LessonPage() {
       : [...prevActivities, activity]
 
     const newStars  = calcStars(score)
-    const gemsBoostActive = typeof window !== 'undefined'
-      ? (Number(localStorage.getItem('fluent_boost_gems_expires') ?? 0) > Date.now())
-      : false
-    const rawGems  = calcGems(score, isRepeat)
-    const newGems  = gemsBoostActive ? rawGems * 2 : rawGems
+    // Gems are credited by the database, which applies the 2× gems boost and daily cap
+    const newGems  = await awardGems(supabase, calcGems(score, isRepeat), 'lesson_activity', lessonId)
     const finalStars = Math.max(newStars, existing?.stars ?? 0) as 1 | 2 | 3
 
     const { error: upsertError } = await supabase.from('user_progress').upsert({
@@ -1806,7 +1804,7 @@ export default function LessonPage() {
 
     const { data: profile } = await supabase
       .from('user_profiles')
-      .select('total_xp, total_gems, streak_count, longest_streak, last_activity_date, last_streak_milestone, skills')
+      .select('total_xp, streak_count, longest_streak, last_activity_date, last_streak_milestone, skills, streak_freezes')
       .eq('user_id', user.id)
       .maybeSingle()
 
@@ -1815,8 +1813,15 @@ export default function LessonPage() {
     const yesterdayStr = yesterday.toISOString().split('T')[0]
     const isNewDay  = profile?.last_activity_date !== today
     const prevStreak = profile?.streak_count ?? 0
-    // Only continue streak if last activity was yesterday; otherwise reset to 1
-    const streakContinues = profile?.last_activity_date === yesterdayStr
+    // Only continue streak if last activity was yesterday; otherwise reset to 1 —
+    // unless exactly one day was missed and a streak freeze can cover it
+    const dayBefore = new Date(); dayBefore.setDate(dayBefore.getDate() - 2)
+    const missedOneDay = profile?.last_activity_date === dayBefore.toISOString().split('T')[0]
+    const frozen = isNewDay && missedOneDay && (profile?.streak_freezes ?? 0) > 0
+      ? ((await supabase.rpc('use_streak_freeze')).data === true)
+      : false
+    if (frozen) toast.success(tLesson('streak_frozen'))
+    const streakContinues = profile?.last_activity_date === yesterdayStr || frozen
     const newStreak = isNewDay
       ? (streakContinues || prevStreak === 0 ? prevStreak + 1 : 1)
       : prevStreak
@@ -1827,11 +1832,8 @@ export default function LessonPage() {
     if (stars === 3)       xpEarned += 10      // 3-star bonus
     if (isNewDay)          xpEarned += 5       // streak day bonus
 
-    // Active boost: 2× XP if boost is live (stored in localStorage on client — checked server-side via header is not feasible, so we pass it from client)
-    const xpBoostActive = typeof window !== 'undefined'
-      ? (Number(localStorage.getItem('fluent_boost_xp_expires') ?? 0) > Date.now())
-      : false
-    if (xpBoostActive) xpEarned *= 2
+    // Active boost (bought in the gem shop): 2× XP
+    if ((await getActiveBoosts(supabase, user.id)).xp) xpEarned *= 2
 
     // Streak milestone bonuses (awarded once per milestone; reset when streak breaks)
     const lastMilestone  = profile?.last_streak_milestone ?? 0
@@ -1856,7 +1858,6 @@ export default function LessonPage() {
 
     await supabase.from('user_profiles').update({
       total_xp:             (profile?.total_xp  ?? 0) + xpEarned,
-      total_gems:           (profile?.total_gems ?? 0) + gemsEarned,
       streak_count:          newStreak,
       longest_streak:        Math.max(newStreak, profile?.longest_streak ?? 0),
       last_activity_date:    today,

@@ -1,10 +1,14 @@
 'use client'
 
-import { useMemo } from 'react'
-import { motion } from 'framer-motion'
+import { createContext, useContext, useMemo, useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { AnimatePresence, motion } from 'framer-motion'
+import { toast } from 'sonner'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
-import { ArrowRight, Crown, Gem, Gamepad2, Lock, Star } from 'lucide-react'
+import { ArrowRight, Crown, Gem, Gamepad2, Lock, Star, Unlock, X } from 'lucide-react'
+import { createClient } from '@/lib/supabase/client'
+import { buyItem, PRICES } from '@/lib/rewards'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { useActiveLanguage } from '@/components/providers/language-provider'
@@ -32,6 +36,8 @@ export type Props = {
   modules: LearnModule[]
   languageName: string
   languageFlag: string
+  /** Gems available for unlocking lessons early */
+  gemBalance?: number
 }
 
 // ── Worlds ────────────────────────────────────────────────────────────────────
@@ -124,6 +130,79 @@ function StarArc({ stars }: { stars: number }) {
   )
 }
 
+// ── Early unlock (gems) ──────────────────────────────────────────────────────
+
+type UnlockRequest = { mod: LearnModule; number: number }
+const UnlockContext = createContext<(req: UnlockRequest) => void>(() => {})
+
+function UnlockDialog({ request, balance, onClose, onUnlocked }: {
+  request: UnlockRequest
+  balance: number
+  onClose: () => void
+  onUnlocked: (newBalance: number) => void
+}) {
+  const t = useTranslations('learn')
+  const [busy, setBusy] = useState(false)
+  const price = PRICES.unlock_module
+  const missing = Math.max(0, price - balance)
+  const n = pad2(request.number)
+
+  async function unlock() {
+    setBusy(true)
+    const res = await buyItem(createClient(), 'unlock_module', request.mod.id)
+    setBusy(false)
+    if ('error' in res) { toast.error(t('unlock_error')); return }
+    toast.success(t('unlock_done', { n }))
+    onUnlocked(res.balance)
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+      onClick={e => { if (e.target === e.currentTarget && !busy) onClose() }}
+    >
+      <motion.div
+        role="dialog"
+        aria-modal="true"
+        initial={{ y: 30, scale: 0.97 }}
+        animate={{ y: 0, scale: 1 }}
+        exit={{ y: 30, scale: 0.97 }}
+        className="relative w-full max-w-sm rounded-3xl bg-white dark:bg-[#202638] p-6 text-center shadow-2xl"
+      >
+        <button onClick={onClose} aria-label={t('unlock_cancel')} className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><X size={18} /></button>
+        <span className="relative mx-auto flex size-20 items-center justify-center rounded-full bg-[#e4e0dc] dark:bg-[#262c3d] text-4xl shadow-[0_6px_0_#c9c4bf] dark:shadow-[0_6px_0_#151925]">
+          <span className="grayscale opacity-60">{request.mod.icon}</span>
+          <span className="absolute -bottom-1 -right-1 size-8 rounded-full bg-violet-500 border-4 border-white dark:border-[#202638] flex items-center justify-center">
+            <Unlock size={13} className="text-white" />
+          </span>
+        </span>
+        <h3 className="mt-5 text-lg font-bold text-slate-900 dark:text-white">{t('unlock_title', { n })}</h3>
+        <p className="mt-1.5 text-sm text-slate-500 dark:text-slate-400">
+          {missing > 0 ? t('unlock_missing', { missing }) : t('unlock_body', { title: request.mod.title, price, balance })}
+        </p>
+        <div className="mt-6 grid grid-cols-2 gap-2">
+          {missing > 0 ? (
+            <>
+              <button onClick={onClose} className="h-11 rounded-xl border border-slate-200 dark:border-white/10 text-sm font-semibold text-slate-600 dark:text-slate-300">{t('unlock_cancel')}</button>
+              <Link href="/gems" className="h-11 rounded-xl bg-sky-500 text-white text-sm font-bold flex items-center justify-center shadow-[0_3px_0_#0369a1]">{t('earn_more')}</Link>
+            </>
+          ) : (
+            <>
+              <button onClick={onClose} disabled={busy} className="h-11 rounded-xl border border-slate-200 dark:border-white/10 text-sm font-semibold text-slate-600 dark:text-slate-300">{t('unlock_cancel')}</button>
+              <button onClick={unlock} disabled={busy} className="h-11 rounded-xl bg-violet-500 text-white text-sm font-bold shadow-[0_3px_0_#6d28d9] disabled:opacity-60">
+                {t('unlock_confirm', { price })} 💎
+              </button>
+            </>
+          )}
+        </div>
+      </motion.div>
+    </motion.div>
+  )
+}
+
 // ── Locked level tooltip ──────────────────────────────────────────────────────
 
 // Best case per activity, mirroring the lesson player's rules: 10 XP + 20 first
@@ -176,6 +255,9 @@ function LockedTooltip({ mod, unlock, align }: { mod: LearnModule; unlock: Unloc
           </span>
         </div>
       </div>
+      <p className="mt-3 rounded-xl bg-violet-500/20 px-2.5 py-1.5 text-[11px] font-bold text-violet-200">
+        🔓 {t('unlock_now_hint', { price: PRICES.unlock_module })}
+      </p>
     </div>
   )
 }
@@ -192,6 +274,7 @@ function Level({ mod, number, x, row, labelSide, world, unlock }: {
   unlock?: UnlockInfo
 }) {
   const t = useTranslations('learn')
+  const requestUnlock = useContext(UnlockContext)
   const isDone = mod.state === 'completed'
   const isCurrent = mod.state === 'current'
   const isLocked = mod.state === 'locked'
@@ -307,7 +390,12 @@ function Level({ mod, number, x, row, labelSide, world, unlock }: {
       <div className="absolute z-10 hover:z-40 focus-within:z-40" style={{ left: `calc(${x}% - ${half}px)`, top: top - half }}>
         {isLocked && unlock ? (
           // Focusable so a tap on mobile shows the tooltip too
-          <button type="button" className="group/lock relative block cursor-help focus:outline-none" aria-label={t('locked_title')}>
+          <button
+            type="button"
+            onClick={() => requestUnlock({ mod, number })}
+            className="group/lock relative block cursor-pointer focus:outline-none"
+            aria-label={t('locked_title')}
+          >
             <LockedTooltip mod={mod} unlock={unlock} align={x <= 50 ? 'left' : 'right'} />
             {node}
           </button>
@@ -356,7 +444,7 @@ function Chest({ x, row, labelSide, world, open }: { x: number; row: number; lab
           <span className={cn(!open && 'opacity-90')}>{open ? '🎁' : '🧰'}</span>
         </div>
         <span className="absolute -top-2 -right-3 flex items-center gap-0.5 rounded-full bg-sky-500 px-1.5 py-0.5 text-[10px] font-black text-white shadow-[0_2px_0_#0369a1]">
-          <Gem size={9} />+5
+          <Gem size={9} />+3
         </span>
       </motion.div>
       <div
@@ -370,7 +458,7 @@ function Chest({ x, row, labelSide, world, open }: { x: number; row: number; lab
             <Gamepad2 size={10} className="inline -mt-0.5 mr-1" />
             {t('practice_title')}
           </span>
-          <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">{t('practice_desc', { gems: 5 })}</span>
+          <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">{t('practice_desc', { gems: 3 })}</span>
         </div>
       </div>
     </Link>
@@ -513,7 +601,10 @@ function WorldSection({ unit, index, modules, translationLang }: {
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
-export function LearnContent({ modules, languageName, languageFlag }: Props) {
+export function LearnContent({ modules, languageName, languageFlag, gemBalance = 0 }: Props) {
+  const router = useRouter()
+  const [unlockRequest, setUnlockRequest] = useState<UnlockRequest | null>(null)
+  const [balance, setBalance] = useState(gemBalance)
   const t = useTranslations('learn')
   const tNav = useTranslations('nav')
   const locale = useLocale()
@@ -535,6 +626,7 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
   const currentUnit = current ? units.findIndex(u => currentIdx + 1 >= u.from && currentIdx + 1 <= u.to) : -1
 
   return (
+    <UnlockContext.Provider value={setUnlockRequest}>
     <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title={tNav('lessons')} subtitle={`${languageFlag} ${courseName}`} />
 
@@ -691,6 +783,17 @@ export function LearnContent({ modules, languageName, languageFlag }: Props) {
           </Link>
         </div>
       )}
+      <AnimatePresence>
+        {unlockRequest && (
+          <UnlockDialog
+            request={unlockRequest}
+            balance={balance}
+            onClose={() => setUnlockRequest(null)}
+            onUnlocked={newBalance => { setBalance(newBalance); setUnlockRequest(null); router.refresh() }}
+          />
+        )}
+      </AnimatePresence>
     </div>
+    </UnlockContext.Provider>
   )
 }
