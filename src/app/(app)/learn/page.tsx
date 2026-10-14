@@ -96,7 +96,7 @@ export default async function LearnPage() {
 
   // Build modules with real progress
   const modulesBase = raw.map((m: {
-    id: string; slug: string; title: string; icon: string; lessons: { id: string }[]
+    id: string; slug: string; title: string; icon: string; description: string | null; lessons: { id: string }[]
   }) => {
     const prog = moduleProgressMap.get(m.id)
     const totalLessons = m.lessons?.length ?? 0
@@ -105,7 +105,7 @@ export default async function LearnPage() {
     const hasCrown = prog?.hasCrown ?? false
     const gemsEarned = prog?.gemsEarned ?? 0
     const progress = totalLessons > 0 ? Math.round((lessonsCompleted / totalLessons) * 100) : 0
-    return { id: m.id, slug: m.slug, title: m.title, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
+    return { id: m.id, slug: m.slug, title: m.title, subtitle: m.description ?? undefined, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
   })
 
   // Compute state: find last fully-completed module, next is 'current'
