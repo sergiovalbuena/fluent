@@ -1419,7 +1419,8 @@ function ActivityHero({
   iconColorClass: string
   badgeLabel: string
   badgeColorClass: string
-  title: string
+  /** Only when it adds information (e.g. a story's name); the badge already names the activity */
+  title?: string
   count?: number
   unit?: string
   masteredCount?: number
@@ -1431,60 +1432,13 @@ function ActivityHero({
 
   return (
     <Block className="col-span-12 relative overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] p-0">
-      <div className="relative p-6 md:p-8 pb-5 md:pb-6">
-        {/* Icon watermark */}
-        <div className="absolute right-0 top-0 bottom-0 w-40 md:w-56 flex items-center justify-end overflow-hidden pointer-events-none select-none">
-          <Icon
-            size={160}
-            strokeWidth={1.5}
-            className={cn('opacity-[0.06] dark:opacity-[0.05] translate-x-6 md:translate-x-10', iconColorClass)}
-          />
-        </div>
-
-        <div className="relative flex flex-col gap-5">
-          {/* Row 1: badge + title — mirrors the module hero's title row */}
-          <div>
-            <span className={cn('inline-flex items-center text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3', badgeColorClass)}>
-              {badgeLabel}
-            </span>
-            <h1 className="text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white">
-              {title}
-            </h1>
-          </div>
-
-          {/* Row 2: progress — mirrors the module hero's Progress row */}
-          {count != null && (
-            <div className="flex items-center gap-4 md:justify-end">
-              <div className="min-w-[140px]">
-                <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
-                  <span>{unit}</span>
-                  <span>{masteredCount != null ? `${masteredCount}/${count}` : count}</span>
-                </div>
-                {masteredCount != null && (
-                  <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-primary rounded-full"
-                      initial={{ width: 0 }}
-                      animate={{ width: `${masteryPct}%` }}
-                      transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
-                    />
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <div className="mx-6 md:mx-8 h-px bg-black/[0.04] dark:bg-white/[0.05]" />
-
-      {/* Bottom: all 4 activities — same card language as the module's Essential row.
-          The active one gets a diagonal gradient fill so it reads as "you are here". */}
-      <div className="p-4 md:p-6 pb-5">
+      {/* Top: all 4 activities as tabs — the active one gets its colour bar and filled icon */}
+      <div className="p-4 md:p-6 pb-4 md:pb-5">
         <div className="grid grid-cols-4 gap-2 md:gap-3">
           {activities.map(a => a.active ? (
             <div
               key={a.href}
+              aria-current="page"
               className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#202638] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none"
             >
               <div className={cn('h-[3px] w-full shrink-0', a.barClass)} />
@@ -1511,6 +1465,54 @@ function ActivityHero({
               </motion.div>
             </Link>
           ))}
+        </div>
+      </div>
+
+      <div className="mx-6 md:mx-8 h-px bg-black/[0.04] dark:bg-white/[0.05]" />
+
+      {/* Bottom: activity badge (+ title when meaningful) and progress */}
+      <div className="relative px-6 md:px-8 py-5 md:py-6">
+        {/* Icon watermark */}
+        <div className="absolute right-0 top-0 bottom-0 w-40 md:w-56 flex items-center justify-end overflow-hidden pointer-events-none select-none">
+          <Icon
+            size={120}
+            strokeWidth={1.5}
+            className={cn('opacity-[0.06] dark:opacity-[0.05] translate-x-6 md:translate-x-10', iconColorClass)}
+          />
+        </div>
+
+        <div className="relative flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
+          <div className="min-w-0">
+            <h1>
+              <span className={cn('inline-flex items-center text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full', badgeColorClass)}>
+                {badgeLabel}
+              </span>
+              {title && (
+                <span className="block mt-3 text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white">
+                  {title}
+                </span>
+              )}
+            </h1>
+          </div>
+
+          {count != null && (
+            <div className="min-w-[140px] md:mr-24">
+              <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
+                <span>{unit}</span>
+                <span>{masteredCount != null ? `${masteredCount}/${count}` : count}</span>
+              </div>
+              {masteredCount != null && (
+                <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
+                  <motion.div
+                    className="h-full bg-primary rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${masteryPct}%` }}
+                    transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
+                  />
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </Block>
@@ -2028,7 +2030,6 @@ export default function LessonPage() {
               iconColorClass="text-indigo-500"
               badgeLabel="Vocabulary"
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
-              title={lesson.title}
               count={words.length}
               unit="words"
               masteredCount={masteredCount}
@@ -2177,7 +2178,6 @@ export default function LessonPage() {
                 iconColorClass="text-teal-600 dark:text-teal-400"
                 badgeLabel="Phrases"
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
-                title={lesson.title}
                 count={phrases.length}
                 unit="phrases"
                 masteredCount={masteredPhraseCount}
@@ -2343,7 +2343,6 @@ export default function LessonPage() {
                 iconColorClass="text-violet-500"
                 badgeLabel="Q&A"
                 badgeColorClass="text-violet-500 bg-violet-500/10"
-                title={lesson.title}
                 count={questions.length}
                 unit="questions"
                 masteredCount={masteredQACount}
