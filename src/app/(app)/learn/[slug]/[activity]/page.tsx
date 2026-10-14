@@ -8,7 +8,7 @@ import { motion, type MotionProps, AnimatePresence, usePresence, useAnimate } fr
 import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
-  Layers, Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
+  Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
   GraduationCap, Lightbulb,
   type LucideIcon,
 } from 'lucide-react'
@@ -21,6 +21,7 @@ import { toast } from 'sonner'
 import { cn } from '@/lib/utils'
 import { getLanguage, localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
+import { useLocale, useTranslations } from 'next-intl'
 import { ResultScreen } from '@/components/lesson/result-screen'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -228,13 +229,25 @@ function buildHintSet(target: string, round: ChallengeRound): Set<number> {
   return s
 }
 
-function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spanish', onClose, onMastered }: {
+type ChallengeSession = { index: number; total: number; onSkip: () => void }
+
+function WordChallengeModal({ word, translation, promptLabel, onClose, onMastered, onComplete, session }: {
   word: string
   translation: string
   promptLabel?: string
   onClose: () => void
   onMastered?: () => void
+  /** Called after the third round instead of onClose (used by practice sessions) */
+  onComplete?: () => void
+  session?: ChallengeSession
 }) {
+  const t = useTranslations('lesson')
+  const locale = useLocale()
+  const { languageCode } = useActiveLanguage()
+  const courseLanguage = useMemo(
+    () => new Intl.DisplayNames([locale], { type: 'language' }).of(languageCode) ?? languageCode,
+    [locale, languageCode],
+  )
   const [round, setRound]         = useState<ChallengeRound>(1)
   const [stars, setStars]         = useState(0)
   const [typed, setTyped]         = useState(() => autoAdvance('', word))
@@ -312,7 +325,7 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
   }, [roundDone, target, typed])
 
   const advanceRound = () => {
-    if (round === 3) { onMastered?.(); onClose(); return }
+    if (round === 3) { onMastered?.(); (onComplete ?? onClose)(); return }
     setRound(r => (r + 1) as ChallengeRound)
     setTyped(autoAdvance('', target))
     setRoundDone(false)
@@ -386,6 +399,24 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
             <X size={15} />
           </button>
 
+          {/* Practice session: position + skip */}
+          {session && (
+            <div className="w-full flex items-center gap-3 -mt-2">
+              <div className="flex-1 h-1.5 rounded-full bg-white/10 overflow-hidden">
+                <div className="h-full rounded-full bg-lime-400/70 transition-all" style={{ width: `${(session.index / session.total) * 100}%` }} />
+              </div>
+              <span className="text-[11px] font-bold text-white/50 tabular-nums">
+                {t('practice_word_of', { n: session.index + 1, total: session.total })}
+              </span>
+              <button
+                onClick={(e) => { e.stopPropagation(); session.onSkip() }}
+                className="text-[11px] font-bold text-lime-400/70 hover:text-lime-400 transition-colors mr-6"
+              >
+                {t('practice_skip')} →
+              </button>
+            </div>
+          )}
+
           {/* Header: label + stars */}
           <div className="flex flex-col items-center gap-2 w-full">
             <div className="flex items-center gap-2 text-lime-400/60 text-[10px] font-bold uppercase tracking-widest">
@@ -435,7 +466,7 @@ function WordChallengeModal({ word, translation, promptLabel = 'Type this in Spa
 
           {/* Prompt — context only, not what you type */}
           <div className="text-center">
-            <p className="text-white/35 text-xs mb-1">{promptLabel}</p>
+            <p className="text-white/35 text-xs mb-1">{promptLabel ?? t('type_in', { language: courseLanguage })}</p>
             <p className="text-white text-xl font-bold">{translation}</p>
           </div>
 
@@ -975,18 +1006,66 @@ function VocabRow({
   )
 }
 
+export type PracticeRequest = { mode: 'all' | 'resume'; key: number }
+
+/** Runs the word challenge for each word in a row: every word, or only the ones not mastered yet */
+function PracticeSession({ entries, mode, isMastered, markMastered, onEnd }: {
+  entries: VocabEntry[]
+  mode: PracticeRequest['mode']
+  isMastered: (word: string) => boolean
+  markMastered: (word: string) => void
+  onEnd: () => void
+}) {
+  const t = useTranslations('lesson')
+  // Snapshot of the queue when the session starts
+  const [queue] = useState(() => mode === 'resume' ? entries.filter(e => !isMastered(e.word)) : entries)
+  const [index, setIndex] = useState(0)
+  const [masteredNow, setMasteredNow] = useState(0)
+
+  function next(mastered: boolean) {
+    const done = masteredNow + (mastered ? 1 : 0)
+    setMasteredNow(done)
+    if (index + 1 >= queue.length) {
+      const total = entries.length
+      const masteredTotal = entries.filter(e => isMastered(e.word)).length + (mastered && !isMastered(queue[index].word) ? 1 : 0)
+      toast.success(t('practice_done', { done: masteredTotal, total }))
+      onEnd()
+      return
+    }
+    setIndex(i => i + 1)
+  }
+
+  const entry = queue[index]
+  if (!entry) return null
+  return (
+    <WordChallengeModal
+      key={entry.id}
+      word={entry.word}
+      translation={entry.translation}
+      session={{ index, total: queue.length, onSkip: () => next(false) }}
+      onClose={onEnd}
+      onMastered={() => markMastered(entry.word)}
+      onComplete={() => next(true)}
+    />
+  )
+}
+
 function VocabWordList({
   initialWords,
   isSaved,
   onToggleBookmark,
   languageCode,
   onMasteredCountChange,
+  practice,
+  onPracticeEnd,
 }: {
   initialWords: VocabEntry[]
   isSaved: (type: SavedItemType, original: string) => boolean
   onToggleBookmark: (item: SaveItem) => void
   languageCode: string
   onMasteredCountChange?: (count: number) => void
+  practice?: PracticeRequest | null
+  onPracticeEnd?: () => void
 }) {
   const [entries] = useState<VocabEntry[]>(initialWords)
   const [challengeEntry, setChallengeEntry] = useState<VocabEntry | null>(null)
@@ -1042,6 +1121,16 @@ function VocabWordList({
             translation={challengeEntry.translation}
             onClose={() => setChallengeEntry(null)}
             onMastered={() => handleMastered(challengeEntry.word)}
+          />
+        )}
+        {practice && (
+          <PracticeSession
+            key={`practice-${practice.key}`}
+            entries={entries}
+            mode={practice.mode}
+            isMastered={isMastered}
+            markMastered={markMastered}
+            onEnd={() => onPracticeEnd?.()}
           />
         )}
       </AnimatePresence>
@@ -1517,6 +1606,8 @@ export default function LessonPage() {
   const [vocabIndex,     setVocabIndex]     = useState(0)
   const [vocabFlipped,   setVocabFlipped]   = useState(false)
   const [masteredCount,       setMasteredCount]       = useState(0)
+  const [practice,            setPractice]            = useState<PracticeRequest | null>(null)
+  const tLesson = useTranslations('lesson')
   const [masteredPhraseCount, setMasteredPhraseCount] = useState(0)
   const [masteredQACount,     setMasteredQACount]     = useState(0)
 
@@ -1961,38 +2052,61 @@ export default function LessonPage() {
                 onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
                 languageCode={languageCode}
                 onMasteredCountChange={setMasteredCount}
+                practice={practice}
+                onPracticeEnd={() => setPractice(null)}
               />
             </Block>
 
-            {/* ── FLASHCARDS ───────────────────────────────────────────────── */}
+            {/* ── PRACTICE — every word challenge in a row ───────────────────── */}
             <Block
-              whileHover={{ rotate: '2.5deg', scale: 1.07 }}
-              className="col-span-6 md:col-span-3 bg-primary dark:bg-primary border-primary/20 p-0 min-h-[140px]"
+              whileHover={{ scale: 1.03 }}
+              className="col-span-12 md:col-span-6 bg-primary dark:bg-primary border-primary/20 p-0 overflow-hidden"
             >
-              <Link href={`/learn/${slug}/flashcards`} className="grid h-full place-content-center gap-3 p-5 min-h-[140px]">
-                <Layers size={28} className="text-white mx-auto" />
-                <div className="text-center">
-                  <p className="font-bold text-sm text-white">Flashcards</p>
-                  <p className="text-[11px] text-white/60 mt-0.5">Flip &amp; memorize</p>
-                </div>
-              </Link>
-            </Block>
-
-            {/* ── LISTENING CHALLENGE ──────────────────────────────────────── */}
-            <Block
-              whileHover={{ rotate: '-2.5deg', scale: 1.07 }}
-              className="col-span-6 md:col-span-3 bg-teal-500 dark:bg-teal-600 border-teal-400/20 p-0 min-h-[140px]"
-            >
-              <button
-                onClick={() => toast.info('Listening Challenge — coming soon!')}
-                className="grid h-full place-content-center gap-3 p-5 min-h-[140px] w-full"
-              >
-                <Headphones size={28} className="text-white mx-auto" />
-                <div className="text-center">
-                  <p className="font-bold text-sm text-white">Listening</p>
-                  <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
-                </div>
-              </button>
+              <div className="relative flex flex-col gap-4 p-5 md:p-6">
+                <Zap size={88} aria-hidden className="absolute -right-4 -bottom-5 text-white/10 rotate-12" />
+                <button
+                  type="button"
+                  onClick={() => setPractice({ mode: masteredCount > 0 && masteredCount < words.length ? 'resume' : 'all', key: Date.now() })}
+                  className="relative flex items-center gap-4 text-left"
+                >
+                  <span className="size-14 shrink-0 rounded-2xl bg-white/20 flex items-center justify-center shadow-[0_4px_0_rgba(0,0,0,0.12)]">
+                    <Zap size={26} className="text-white fill-white" />
+                  </span>
+                  <span className="flex-1 min-w-0">
+                    <span className="block text-lg font-bold text-white leading-tight">
+                      {masteredCount === 0
+                        ? tLesson('practice_start')
+                        : masteredCount < words.length ? tLesson('practice_resume') : tLesson('practice_review')}
+                    </span>
+                    <span className="block text-xs text-white/75 mt-0.5">
+                      {masteredCount > 0
+                        ? tLesson('practice_progress', { done: masteredCount, total: words.length })
+                        : tLesson('practice_words', { count: words.length })}
+                    </span>
+                  </span>
+                  <span className="size-10 shrink-0 rounded-full bg-white text-primary flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
+                    <ArrowRight size={18} strokeWidth={2.6} />
+                  </span>
+                </button>
+                {words.length > 0 && (
+                  <div className="relative h-2 rounded-full bg-black/15 overflow-hidden">
+                    <motion.div
+                      className="h-full rounded-full bg-white"
+                      animate={{ width: `${(masteredCount / words.length) * 100}%` }}
+                      transition={{ duration: 0.5 }}
+                    />
+                  </div>
+                )}
+                {masteredCount > 0 && masteredCount < words.length && (
+                  <button
+                    type="button"
+                    onClick={() => setPractice({ mode: 'all', key: Date.now() })}
+                    className="relative self-start text-xs font-semibold text-white/80 underline underline-offset-2 hover:text-white"
+                  >
+                    {tLesson('practice_restart')}
+                  </button>
+                )}
+              </div>
             </Block>
 
             {/* ── GRAMMAR — structures used in this lesson ───────────────────── */}

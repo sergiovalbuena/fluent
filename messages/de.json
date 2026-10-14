@@ -96,7 +96,17 @@
     "back_to_module": "Zurück zum Modul",
     "next_lesson": "Nächste Lektion",
     "try_again": "Nochmal versuchen",
-    "practice_again": "Nochmals üben"
+    "practice_again": "Nochmals üben",
+    "type_in": "Schreib es auf {language}",
+    "practice_start": "Alle Wörter üben",
+    "practice_resume": "Übung fortsetzen",
+    "practice_review": "Alle Wörter wiederholen",
+    "practice_restart": "Von vorne beginnen",
+    "practice_words": "{count} Wörter am Stück",
+    "practice_progress": "{done}/{total} gemeistert",
+    "practice_word_of": "Wort {n} von {total}",
+    "practice_skip": "Überspringen",
+    "practice_done": "Übung abgeschlossen! {done}/{total} Wörter gemeistert 🎉"
   },
   "gems": {
     "title": "Edelsteine",

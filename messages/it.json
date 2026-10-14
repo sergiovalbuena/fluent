@@ -96,7 +96,17 @@
     "back_to_module": "Torna al modulo",
     "next_lesson": "Lezione successiva",
     "try_again": "Riprova",
-    "practice_again": "Pratica di nuovo"
+    "practice_again": "Pratica di nuovo",
+    "type_in": "Scrivilo in {language}",
+    "practice_start": "Pratica tutte le parole",
+    "practice_resume": "Continua la pratica",
+    "practice_review": "Ripassa tutte le parole",
+    "practice_restart": "Ricomincia da capo",
+    "practice_words": "{count} parole di fila",
+    "practice_progress": "{done}/{total} padroneggiate",
+    "practice_word_of": "Parola {n} di {total}",
+    "practice_skip": "Salta",
+    "practice_done": "Pratica completata! {done}/{total} parole padroneggiate 🎉"
   },
   "gems": {
     "title": "Gemme",

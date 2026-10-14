@@ -96,7 +96,17 @@
     "back_to_module": "モジュールに戻る",
     "next_lesson": "次のレッスン",
     "try_again": "もう一度試す",
-    "practice_again": "もう一度練習"
+    "practice_again": "もう一度練習",
+    "type_in": "{language}で入力しよう",
+    "practice_start": "すべての単語を練習",
+    "practice_resume": "練習を続ける",
+    "practice_review": "すべての単語を復習",
+    "practice_restart": "最初から始める",
+    "practice_words": "{count}語を連続で",
+    "practice_progress": "{done}/{total} マスター",
+    "practice_word_of": "{total}語中{n}語目",
+    "practice_skip": "スキップ",
+    "practice_done": "練習完了！{done}/{total}語マスター 🎉"
   },
   "gems": {
     "title": "ジェム",

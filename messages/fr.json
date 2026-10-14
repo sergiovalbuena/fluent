@@ -96,7 +96,17 @@
     "back_to_module": "Retour au module",
     "next_lesson": "Leçon suivante",
     "try_again": "Réessayer",
-    "practice_again": "Pratiquer à nouveau"
+    "practice_again": "Pratiquer à nouveau",
+    "type_in": "Écris-le en {language}",
+    "practice_start": "Pratiquer tous les mots",
+    "practice_resume": "Reprendre la pratique",
+    "practice_review": "Réviser tous les mots",
+    "practice_restart": "Recommencer",
+    "practice_words": "{count} mots d'affilée",
+    "practice_progress": "{done}/{total} maîtrisés",
+    "practice_word_of": "Mot {n} sur {total}",
+    "practice_skip": "Passer",
+    "practice_done": "Pratique terminée ! {done}/{total} mots maîtrisés 🎉"
   },
   "gems": {
     "title": "Gemmes",
