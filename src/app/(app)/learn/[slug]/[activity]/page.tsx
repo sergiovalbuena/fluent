@@ -11,6 +11,7 @@ import {
   Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
   GraduationCap, Lightbulb,
   type LucideIcon,
+  LayoutList, FileText, ZoomIn, ZoomOut,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
 import { useVocabMastery } from '@/hooks/use-vocab-mastery'
@@ -24,6 +25,8 @@ import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
 import { awardGems, getActiveBoosts } from '@/lib/rewards'
 import { ResultScreen } from '@/components/lesson/result-screen'
+import { WordSheet } from '@/components/lesson/word-sheet'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -1010,9 +1013,10 @@ function VocabRow({
 export type PracticeRequest = { mode: 'all' | 'resume'; key: number }
 
 /** Runs the word challenge for each word in a row: every word, or only the ones not mastered yet */
-function PracticeSession({ entries, mode, isMastered, markMastered, onEnd }: {
+function PracticeSession({ entries, mode, isMastered, markMastered, onEnd, promptLabel }: {
   entries: VocabEntry[]
   mode: PracticeRequest['mode']
+  promptLabel?: string
   isMastered: (word: string) => boolean
   markMastered: (word: string) => void
   onEnd: () => void
@@ -1043,6 +1047,7 @@ function PracticeSession({ entries, mode, isMastered, markMastered, onEnd }: {
       key={entry.id}
       word={entry.word}
       translation={entry.translation}
+      promptLabel={promptLabel}
       session={{ index, total: queue.length, onSkip: () => next(false) }}
       onClose={onEnd}
       onMastered={() => markMastered(entry.word)}
@@ -1148,6 +1153,8 @@ function QAQuestionList({
   onToggleBookmark,
   languageCode,
   onMasteredCountChange,
+  practice,
+  onPracticeEnd,
 }: {
   questions: QAQuestion[]
   onStartQuiz: () => void
@@ -1155,6 +1162,8 @@ function QAQuestionList({
   onToggleBookmark: (item: SaveItem) => void
   languageCode: string
   onMasteredCountChange?: (count: number) => void
+  practice?: PracticeRequest | null
+  onPracticeEnd?: () => void
 }) {
   const [challengeQ, setChallengeQ] = useState<QAQuestion | null>(null)
   const { isMastered, markMastered } = useVocabMastery(languageCode, 'qa')
@@ -1251,6 +1260,17 @@ function QAQuestionList({
             onMastered={() => markMastered(challengeQ.question)}
           />
         )}
+        {practice && (
+          <PracticeSession
+            key={`practice-${practice.key}`}
+            entries={questions.map((q, i) => ({ id: `${q.question}-${i}`, word: q.question, translation: q.options[q.correct] }))}
+            mode={practice.mode}
+            isMastered={isMastered}
+            markMastered={markMastered}
+            onEnd={() => onPracticeEnd?.()}
+            promptLabel="Answer"
+          />
+        )}
       </AnimatePresence>
     </div>
   )
@@ -1265,6 +1285,8 @@ function PhraseList({
   onToggleBookmark,
   languageCode,
   onMasteredCountChange,
+  practice,
+  onPracticeEnd,
 }: {
   phrases: Phrase[]
   onPractice: () => void
@@ -1272,6 +1294,8 @@ function PhraseList({
   onToggleBookmark: (item: SaveItem) => void
   languageCode: string
   onMasteredCountChange?: (count: number) => void
+  practice?: PracticeRequest | null
+  onPracticeEnd?: () => void
 }) {
   const [challengePhrase, setChallengePhrase] = useState<Phrase | null>(null)
   const { isMastered, markMastered } = useVocabMastery(languageCode, 'phrase')
@@ -1372,6 +1396,16 @@ function PhraseList({
             onMastered={() => markMastered(challengePhrase.phrase)}
           />
         )}
+        {practice && (
+          <PracticeSession
+            key={`practice-${practice.key}`}
+            entries={phrases.map((p, i) => ({ id: `${p.phrase}-${i}`, word: p.phrase, translation: p.translation }))}
+            mode={practice.mode}
+            isMastered={isMastered}
+            markMastered={markMastered}
+            onEnd={() => onPracticeEnd?.()}
+          />
+        )}
       </AnimatePresence>
     </div>
   )
@@ -1387,6 +1421,9 @@ const ACTIVITIES = [
 ]
 
 // Hoisted constants
+const SHEET_ZOOM_MIN  = 0.8
+const SHEET_ZOOM_MAX  = 1.6
+const SHEET_ZOOM_STEP = 0.2
 const COLOR_CORRECT            = '#22c55e'
 const COLOR_INCORRECT          = '#ef4444'
 
@@ -1412,9 +1449,18 @@ interface ActivityHeroTab {
   active?: boolean
 }
 
+/** The activity's main action, shown in the hero (start / continue / review) */
+interface ActivityHeroCta {
+  icon: LucideIcon
+  label: string
+  sublabel: string
+  /** 0–1; omitted when the activity has no saved progress */
+  progress?: number
+  onClick: () => void
+}
+
 function ActivityHero({
-  icon: Icon, iconColorClass, badgeLabel, badgeColorClass, title,
-  count, unit, masteredCount, activities,
+  icon: Icon, iconColorClass, badgeLabel, badgeColorClass, title, cta, activities,
 }: {
   icon: LucideIcon
   iconColorClass: string
@@ -1422,15 +1468,9 @@ function ActivityHero({
   badgeColorClass: string
   /** Lesson name (or the story's name) shown under the activity badge */
   title?: string
-  count?: number
-  unit?: string
-  masteredCount?: number
+  cta?: ActivityHeroCta
   activities: ActivityHeroTab[]
 }) {
-  const masteryPct = count && count > 0 && masteredCount != null
-    ? Math.round((masteredCount / count) * 100)
-    : 0
-
   return (
     <Block className="col-span-12 relative overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] p-0">
       {/* Top: all 4 activities as tabs — the active one gets its colour bar and filled icon */}
@@ -1496,23 +1536,36 @@ function ActivityHero({
             </h1>
           </div>
 
-          {count != null && (
-            <div className="min-w-[140px] md:mr-24">
-              <div className="flex justify-between text-[11px] font-bold text-slate-400 dark:text-slate-500 mb-1.5">
-                <span>{unit}</span>
-                <span>{masteredCount != null ? `${masteredCount}/${count}` : count}</span>
-              </div>
-              {masteredCount != null && (
-                <div className="h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
+          {cta && (
+            <motion.div
+              whileHover={{ rotate: '1.5deg', scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+              className="relative w-full sm:w-[340px] overflow-hidden rounded-2xl bg-primary p-4 shadow-[0_4px_0_rgba(0,0,0,0.08)]"
+            >
+              <cta.icon size={72} aria-hidden className="absolute -right-3 -bottom-4 text-white/10 rotate-12" />
+              <button type="button" onClick={cta.onClick} className="relative flex w-full items-center gap-3 text-left">
+                <span className="size-11 shrink-0 rounded-xl bg-white/20 flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
+                  <cta.icon size={20} className="text-white fill-white" />
+                </span>
+                <span className="flex-1 min-w-0">
+                  <span className="block text-base font-bold text-white leading-tight">{cta.label}</span>
+                  <span className="block text-xs text-white/75 mt-0.5">{cta.sublabel}</span>
+                </span>
+                <span className="size-9 shrink-0 rounded-full bg-white text-primary flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
+                  <ArrowRight size={17} strokeWidth={2.6} />
+                </span>
+              </button>
+              {cta.progress != null && (
+                <div className="relative mt-3 h-1.5 rounded-full bg-black/15 overflow-hidden">
                   <motion.div
-                    className="h-full bg-primary rounded-full"
+                    className="h-full rounded-full bg-white"
                     initial={{ width: 0 }}
-                    animate={{ width: `${masteryPct}%` }}
-                    transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
+                    animate={{ width: `${cta.progress * 100}%` }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
                   />
                 </div>
               )}
-            </div>
+            </motion.div>
           )}
         </div>
       </div>
@@ -1614,6 +1667,21 @@ export default function LessonPage() {
   const tLesson = useTranslations('lesson')
   const [masteredPhraseCount, setMasteredPhraseCount] = useState(0)
   const [masteredQACount,     setMasteredQACount]     = useState(0)
+  const [phrasePractice,      setPhrasePractice]      = useState<PracticeRequest | null>(null)
+  const [qaPractice,          setQaPractice]          = useState<PracticeRequest | null>(null)
+  const [sheetZoom,           setSheetZoom]           = useState(1)
+
+  /** Hero action for activities tracked by mastery: start → continue → review */
+  function masteryCta(done: number, total: number, countLabel: string, start: (req: PracticeRequest) => void): ActivityHeroCta {
+    const inProgress = done > 0 && done < total
+    return {
+      icon: Zap,
+      label: done === 0 ? tLesson('practice_start') : inProgress ? tLesson('practice_resume') : tLesson('practice_review'),
+      sublabel: done > 0 ? tLesson('practice_progress', { done, total }) : countLabel,
+      progress: total > 0 ? done / total : 0,
+      onClick: () => start({ mode: inProgress ? 'resume' : 'all', key: Date.now() }),
+    }
+  }
 
   // Phrases
   const [phraseMode,     setPhraseMode]     = useState<'overview' | 'practice'>('overview')
@@ -2034,9 +2102,7 @@ export default function LessonPage() {
               badgeLabel="Vocabulary"
               title={moduleTitle}
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
-              count={words.length}
-              unit="words"
-              masteredCount={masteredCount}
+              cta={masteryCta(masteredCount, words.length, tLesson('practice_words', { count: words.length }), setPractice)}
               activities={[
                 { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500', active: true },
                 { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
@@ -2062,56 +2128,69 @@ export default function LessonPage() {
               />
             </Block>
 
-            {/* ── PRACTICE — every word challenge in a row ───────────────────── */}
-            <Block
-              whileHover={{ scale: 1.03 }}
-              className="col-span-12 md:col-span-6 bg-primary dark:bg-primary border-primary/20 p-0 overflow-hidden"
-            >
-              <div className="relative flex flex-col gap-4 p-5 md:p-6">
-                <Zap size={88} aria-hidden className="absolute -right-4 -bottom-5 text-white/10 rotate-12" />
-                <button
-                  type="button"
-                  onClick={() => setPractice({ mode: masteredCount > 0 && masteredCount < words.length ? 'resume' : 'all', key: Date.now() })}
-                  className="relative flex items-center gap-4 text-left"
-                >
-                  <span className="size-14 shrink-0 rounded-2xl bg-white/20 flex items-center justify-center shadow-[0_4px_0_rgba(0,0,0,0.12)]">
-                    <Zap size={26} className="text-white fill-white" />
+            {/* ── ALL WORDS — two versions to compare: dialog (A) vs. own page (B) ── */}
+            <Dialog>
+              <Block
+                whileHover={{ rotate: '-1.5deg', scale: 1.03 }}
+                className="col-span-6 md:col-span-3 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+              >
+                <DialogTrigger className="flex h-full w-full items-center gap-3 p-4 text-left">
+                  <span className="size-10 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center">
+                    <LayoutList size={18} className="text-indigo-500" />
                   </span>
-                  <span className="flex-1 min-w-0">
-                    <span className="block text-lg font-bold text-white leading-tight">
-                      {masteredCount === 0
-                        ? tLesson('practice_start')
-                        : masteredCount < words.length ? tLesson('practice_resume') : tLesson('practice_review')}
-                    </span>
-                    <span className="block text-xs text-white/75 mt-0.5">
-                      {masteredCount > 0
-                        ? tLesson('practice_progress', { done: masteredCount, total: words.length })
-                        : tLesson('practice_words', { count: words.length })}
-                    </span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-bold text-slate-900 dark:text-white">All words</span>
+                    <span className="block text-[11px] text-slate-400 mt-0.5">Quick view</span>
                   </span>
-                  <span className="size-10 shrink-0 rounded-full bg-white text-primary flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
-                    <ArrowRight size={18} strokeWidth={2.6} />
-                  </span>
-                </button>
-                {words.length > 0 && (
-                  <div className="relative h-2 rounded-full bg-black/15 overflow-hidden">
-                    <motion.div
-                      className="h-full rounded-full bg-white"
-                      animate={{ width: `${(masteredCount / words.length) * 100}%` }}
-                      transition={{ duration: 0.5 }}
-                    />
+                </DialogTrigger>
+              </Block>
+              <DialogContent
+                className="sm:max-w-lg max-h-[80vh] overflow-y-auto p-5 md:p-6"
+                style={{ maxWidth: `min(calc(100% - 2rem), ${512 * sheetZoom}px)` }}
+              >
+                <DialogHeader className="flex-row items-start justify-between gap-3 pr-8">
+                  <div className="min-w-0">
+                    <DialogTitle className="font-bold leading-tight" style={{ fontSize: 20 * sheetZoom }}>{moduleTitle}</DialogTitle>
+                    <DialogDescription className="mt-1">{words.length} words</DialogDescription>
                   </div>
-                )}
-                {masteredCount > 0 && masteredCount < words.length && (
-                  <button
-                    type="button"
-                    onClick={() => setPractice({ mode: 'all', key: Date.now() })}
-                    className="relative self-start text-xs font-semibold text-white/80 underline underline-offset-2 hover:text-white"
-                  >
-                    {tLesson('practice_restart')}
-                  </button>
-                )}
-              </div>
+                  <div className="flex shrink-0 items-center gap-1">
+                    <button
+                      type="button"
+                      aria-label="Zoom out"
+                      disabled={sheetZoom <= SHEET_ZOOM_MIN}
+                      onClick={() => setSheetZoom(z => Math.max(SHEET_ZOOM_MIN, +(z - SHEET_ZOOM_STEP).toFixed(2)))}
+                      className="size-8 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 dark:hover:bg-white/[0.08] disabled:opacity-30 disabled:pointer-events-none transition-colors"
+                    >
+                      <ZoomOut size={16} />
+                    </button>
+                    <button
+                      type="button"
+                      aria-label="Zoom in"
+                      disabled={sheetZoom >= SHEET_ZOOM_MAX}
+                      onClick={() => setSheetZoom(z => Math.min(SHEET_ZOOM_MAX, +(z + SHEET_ZOOM_STEP).toFixed(2)))}
+                      className="size-8 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 dark:hover:bg-white/[0.08] disabled:opacity-30 disabled:pointer-events-none transition-colors"
+                    >
+                      <ZoomIn size={16} />
+                    </button>
+                  </div>
+                </DialogHeader>
+                <WordSheet words={words} zoom={sheetZoom} className="columns-2 lg:columns-2 gap-x-6" />
+              </DialogContent>
+            </Dialog>
+
+            <Block
+              whileHover={{ rotate: '1.5deg', scale: 1.03 }}
+              className="col-span-6 md:col-span-3 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+            >
+              <Link href={`/learn/${slug}/words`} className="flex h-full w-full items-center gap-3 p-4">
+                <span className="size-10 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center">
+                  <FileText size={18} className="text-indigo-500" />
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-sm font-bold text-slate-900 dark:text-white">Word sheet</span>
+                  <span className="block text-[11px] text-slate-400 mt-0.5">Full page</span>
+                </span>
+              </Link>
             </Block>
 
             {/* ── GRAMMAR — structures used in this lesson ───────────────────── */}
@@ -2183,9 +2262,7 @@ export default function LessonPage() {
                 badgeLabel="Phrases"
                 title={moduleTitle}
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
-                count={phrases.length}
-                unit="phrases"
-                masteredCount={masteredPhraseCount}
+                cta={masteryCta(masteredPhraseCount, phrases.length, tLesson('practice_phrases', { count: phrases.length }), setPhrasePractice)}
                 activities={[
                   { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
                   { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500', active: true },
@@ -2203,6 +2280,8 @@ export default function LessonPage() {
                   onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
                   languageCode={languageCode}
                   onMasteredCountChange={setMasteredPhraseCount}
+                  practice={phrasePractice}
+                  onPracticeEnd={() => setPhrasePractice(null)}
                 />
               </Block>
 
@@ -2349,9 +2428,7 @@ export default function LessonPage() {
                 badgeLabel="Q&A"
                 title={moduleTitle}
                 badgeColorClass="text-violet-500 bg-violet-500/10"
-                count={questions.length}
-                unit="questions"
-                masteredCount={masteredQACount}
+                cta={masteryCta(masteredQACount, questions.length, tLesson('practice_questions', { count: questions.length }), setQaPractice)}
                 activities={[
                   { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
                   { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
@@ -2369,6 +2446,8 @@ export default function LessonPage() {
                   onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
                   languageCode={languageCode}
                   onMasteredCountChange={setMasteredQACount}
+                  practice={qaPractice}
+                  onPracticeEnd={() => setQaPractice(null)}
                 />
               </Block>
 
@@ -2556,8 +2635,12 @@ export default function LessonPage() {
                 badgeLabel="Story"
                 badgeColorClass="text-amber-600 dark:text-amber-400 bg-amber-500/10"
                 title={lesson.title}
-                count={(content.highlightedWords?.length ?? 0) > 0 ? content.highlightedWords!.length : undefined}
-                unit="key words"
+                cta={{
+                  icon: Zap,
+                  label: tLesson('story_challenge_start'),
+                  sublabel: tLesson('story_challenge_desc', { count: splitStory(content.story).length }),
+                  onClick: () => setShowStoryChallenge(true),
+                }}
                 activities={[
                   { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
                   { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },

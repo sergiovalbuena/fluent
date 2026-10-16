@@ -45,7 +45,8 @@
 - Página de lección:
   - Pestañas arriba en la tarjeta principal.
   - Gramática y consejos en la página de Vocab.
-  - Práctica seguida de palabras (continúa donde te quedaste).
+  - Práctica seguida (continúa donde te quedaste) en Vocabulario, Frases y Q&A, lanzada desde la tarjeta naranja del hero (Empezar / Continuar / Repasar todo).
+  - Prueba A/B para ver todas las palabras: tarjeta "All words" (Dialog con zoom) y "Word sheet" (ruta `/learn/[slug]/words`). Pendiente: elegir una y borrar la otra (comparten `src/components/lesson/word-sheet.tsx`).
   - El vocabulario solo cuenta como completado al dominar todas las palabras.
 - Economía de gemas (en el servidor):
   - Tablas `gem_transactions`, `user_boosts` y `user_unlocked_modules`.
@@ -67,14 +68,14 @@
 1. **Añadir en Vercel** (Settings → Environment Variables → Production): `OPENAI_API_KEY` y `SUPABASE_SERVICE_ROLE_KEY`. Luego redesplegar. Sin ellas, MarIA y la voz con IA no funcionan (se usa la voz del navegador). En `.env.local` también están vacías.
 2. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito.
 3. Probar con una cuenta real: la voz con IA, MarIA, guardar un enlace, comprar en la tienda de gemas y el onboarding de la mamá (nativo Español → aprender Inglés).
-4. **Pregenerar el audio** (dejado para más adelante): `scripts/pregenerate-tts.mts`. Uso: `npx tsx scripts/pregenerate-tts.mts en --dry-run` y luego sin `--dry-run`. Necesita las claves del punto 1. Coste aproximado: inglés 2.024 audios ≈ $1.60; francés 3.219 ≈ $3.
+4. **Pregenerar el audio** (dejado para más adelante): `scripts/pregenerate-tts.mts`. Uso: `npx tsx scripts/pregenerate-tts.mts en --dry-run` y luego sin `--dry-run`. Necesita las claves del punto 1. Coste aproximado: inglés 2.024 audios ≈ $1.60; francés 3.219 ≈ $3. El bucket `tts` ya existe en Supabase: es público, está vacío y no tiene políticas en `storage.objects`, a propósito (comprobado el 2026-10-15). No hay que añadir ninguna.
 5. Revisión de contenido del francés (`content/fr/REVIEW.md`, dejada para el final):
    - Variante del español.
    - Listas de vocabulario largas.
    - "Pensée du jour".
    - Cómo presentar los módulos reemplazados.
 6. Opcional:
-   - Práctica seguida también en Frases y Q&A.
+   - Frases: la tarjeta azul "Practice – Flip & review" y el botón "Start practice" de la lista abren el modo tarjetas, no la práctica del hero; renombrar o quitar.
    - Quitar la extensión `http` si ya no se usa.
    - Qwen3-TTS: descartado por ahora; da más carga que ventaja (ver la conversación del 2026-10-14).
 
