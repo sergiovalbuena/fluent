@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BarChart2, User, Home, Gamepad2, Gem, Bot, ChevronDown, BookOpen, Video, Users, Bookmark } from 'lucide-react'
+import { BarChart2, User, Home, Gamepad2, Gem, BookType, ChevronDown, BookOpen, Video, Users, Bookmark } from 'lucide-react'
 import { motion as m, AnimatePresence } from 'framer-motion'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import {
@@ -41,7 +41,7 @@ function SidebarContent({ modules }: { modules: Module[] }) {
     { href: '/saved', icon: <Bookmark size={20} strokeWidth={1.8} />, label: t('saved') },
     { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: t('play') },
     { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: t('gems') },
-    { href: '/maria', icon: <Bot size={20} strokeWidth={1.8} />, label: t('maria') },
+    { href: '/verbs', icon: <BookType size={20} strokeWidth={1.8} />, label: t('verbs') },
     { href: '/videos', icon: <Video size={20} strokeWidth={1.8} />, label: t('videos') },
     { href: '/community', icon: <Users size={20} strokeWidth={1.8} />, label: t('community') },
     { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: t('progress') },

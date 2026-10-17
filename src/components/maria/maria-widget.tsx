@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLocale, useTranslations } from 'next-intl'
-import { ArrowUp, RotateCcw, Sparkles, X } from 'lucide-react'
+import { ArrowUp, RotateCcw, Bot, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
 import { useActiveLanguage } from '@/components/providers/language-provider'
@@ -31,7 +31,7 @@ function MariaAvatar({ size = 32 }: { size?: number }) {
       className="flex items-center justify-center rounded-full text-white shadow-sm"
       style={{ width: size, height: size, background: MARIA_GRADIENT }}
     >
-      <Sparkles size={size * 0.45} />
+      <Bot size={size * 0.45} />
     </span>
   )
 }
@@ -177,7 +177,7 @@ export function MariaWidget() {
               animate={{ scale: [1, 1.35], opacity: [0.45, 0] }}
               transition={{ duration: 2.2, repeat: Infinity, ease: 'easeOut' }}
             />
-            <Sparkles size={24} className="relative" />
+            <Bot size={24} className="relative" />
             <span className="pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-xl bg-slate-900 px-3 py-1.5 text-xs font-semibold text-white opacity-0 transition-opacity group-hover:opacity-100 hidden md:block">
               {t('fab_label')}
             </span>
@@ -202,7 +202,7 @@ export function MariaWidget() {
           >
             {/* Header */}
             <header className="flex items-center gap-3 px-4 py-3 text-white" style={{ background: MARIA_GRADIENT }}>
-              <span className="size-9 rounded-full bg-white/20 flex items-center justify-center"><Sparkles size={18} /></span>
+              <span className="size-9 rounded-full bg-white/20 flex items-center justify-center"><Bot size={18} /></span>
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-bold leading-tight">MarIA</p>
                 <p className="text-[11px] text-white/80 truncate">

@@ -5,7 +5,7 @@ import { motion, type MotionProps } from 'framer-motion'
 import {
   Zap, Shuffle, Headphones, PenLine, Trophy,
   Star, Gamepad2, Target, Mic, Music, LayoutGrid, Grid3x3,
-  Keyboard, BookOpen, Play,
+  Keyboard, BookOpen, Play, BookType,
   type LucideIcon,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -43,6 +43,16 @@ type Game = {
 }
 
 const ACTIVE_GAMES: Game[] = [
+  {
+    icon: BookType,
+    title: 'Verb Challenge',
+    description: 'Conjugate verbs in every tense',
+    gradient: 'linear-gradient(135deg, #ff8052 0%, #e11d48 100%)',
+    border: 'border-rose-400/20',
+    difficulty: 2,
+    tag: 'Conjugation',
+    href: '/verbs/practice',
+  },
   {
     icon: Zap,
     title: 'Speed Round',

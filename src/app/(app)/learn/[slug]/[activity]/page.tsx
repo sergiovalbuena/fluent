@@ -9,7 +9,6 @@ import {
   Volume2, ArrowRight, Check, X, RotateCcw,
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
   Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
-  GraduationCap, Lightbulb,
   type LucideIcon,
   LayoutList, FileText,
 } from 'lucide-react'
@@ -62,17 +61,8 @@ interface TranslateItem {
   hint?: string
 }
 
-interface GrammarPoint {
-  structure: string
-  example: string
-  /** What the structure is, in the translation language */
-  label: string
-}
-
 interface LessonContent {
   words?: VocabWord[]
-  grammar?: GrammarPoint[]
-  tips?: string[]
   phrases?: Phrase[]
   questions?: QAQuestion[]
   story?: string
@@ -97,10 +87,6 @@ interface RawContent {
   translation?: string
   translations?: Record<string, string>
   highlighted_words?: string[]
-  // Vocabulary lessons of generated courses also carry the lesson's grammar and tips,
-  // each text keyed by language ({ en, es })
-  grammar?: Array<{ structure: string; example: string } & Record<string, string>>
-  tips?: Array<Record<string, string>>
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -114,12 +100,6 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
         emoji: i.icon ?? '📝',
         example: i.example,
       })),
-      grammar: (raw.grammar ?? []).map(g => ({
-        structure: g.structure,
-        example: g.example,
-        label: g[translationLang] ?? g.en ?? '',
-      })),
-      tips: (raw.tips ?? []).map(t => t[translationLang] ?? t.en ?? '').filter(Boolean),
     }
   }
   if (lessonType === 'phrases') {
@@ -1500,7 +1480,7 @@ function AllItemsCard({ titleKey, onClick, iconClass, iconBgClass, className }: 
 }
 
 function ActivityHero({
-  icon: Icon, iconColorClass, badgeLabel, badgeColorClass, title, cta, activities,
+  icon: Icon, iconColorClass, badgeLabel, badgeColorClass, title, titleHref, cta, activities,
 }: {
   icon: LucideIcon
   iconColorClass: string
@@ -1508,6 +1488,8 @@ function ActivityHero({
   badgeColorClass: string
   /** Lesson name (or the story's name) shown under the activity badge */
   title?: string
+  /** Makes the title a link (the lesson name links to the lesson page) */
+  titleHref?: string
   cta?: ActivityHeroCta
   activities: ActivityHeroTab[]
 }) {
@@ -1569,11 +1551,18 @@ function ActivityHero({
               <span className={cn('inline-flex items-center text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full', badgeColorClass)}>
                 {badgeLabel}
               </span>
-              {title && (
+              {title && (titleHref ? (
+                <Link
+                  href={titleHref}
+                  className="block mt-3 text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white hover:text-primary transition-colors"
+                >
+                  {title}
+                </Link>
+              ) : (
                 <span className="block mt-3 text-2xl md:text-[1.75rem] font-bold leading-tight text-slate-900 dark:text-white">
                   {title}
                 </span>
-              )}
+              ))}
             </h1>
           </div>
 
@@ -2034,8 +2023,6 @@ export default function LessonPage() {
 
   const content   = lesson?.content ?? {}
   const words     = content.words     ?? []
-  const grammar   = content.grammar   ?? []
-  const tips      = content.tips      ?? []
   const phrases   = content.phrases   ?? []
   const questions = content.questions ?? []
   const arrangeSentences = content.arrangeSentences ?? []
@@ -2107,7 +2094,7 @@ export default function LessonPage() {
   if (resultData) {
     return (
       <div className="flex flex-col min-h-screen">
-        <AppTopbar back={{ href: `/learn/${slug}`, label: lesson.title }} />
+        <AppTopbar back={{ href: `/learn/${slug}`, label: moduleTitle || lesson.title, subtle: true }} />
         <ResultScreen
           score={resultData.score}
           xpEarned={resultData.xpEarned}
@@ -2133,7 +2120,7 @@ export default function LessonPage() {
   return (
     <TitleHintProvider value={titleHintSettings}>
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
-      <AppTopbar back={{ href: `/learn/${slug}`, label: lesson.title }} />
+      <AppTopbar back={{ href: `/learn/${slug}`, label: moduleTitle || lesson.title, subtle: true }} />
 
 
       {/* ══════════════════════════════════════════════════════════════════════
@@ -2153,6 +2140,7 @@ export default function LessonPage() {
               iconColorClass="text-indigo-500"
               badgeLabel={<SectionTitle k="vocabulary" />}
               title={moduleTitle}
+              titleHref={`/learn/${slug}`}
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
               cta={masteryCta(masteredCount, words.length, tLesson('practice_words', { count: words.length }), setPractice)}
               activities={activityTabs(slug, 'vocabulary')}
@@ -2207,50 +2195,6 @@ export default function LessonPage() {
               </Link>
             </Block>
 
-            {/* ── GRAMMAR — structures used in this lesson ───────────────────── */}
-            {grammar.length > 0 && (
-              <Block whileTap={{}} className="col-span-12 md:col-span-6 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center gap-2">
-                  <GraduationCap size={14} className="text-indigo-500" />
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="grammar" /></p>
-                </div>
-                <ul className="divide-y divide-black/[0.04] dark:divide-white/[0.05]">
-                  {grammar.map((g, i) => (
-                    <li key={i} className="px-5 py-3">
-                      <p className="text-sm font-semibold text-slate-900 dark:text-white">{g.label}</p>
-                      <p className="text-[11px] text-indigo-500 mt-0.5">{g.structure}</p>
-                      <button
-                        type="button"
-                        onClick={() => speak(g.example, languageCode)}
-                        className="mt-1.5 flex items-start gap-1.5 text-left text-sm italic text-slate-600 dark:text-slate-300 hover:text-indigo-500 transition-colors"
-                      >
-                        <Volume2 size={13} className="shrink-0 mt-[3px]" />
-                        {g.example}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </Block>
-            )}
-
-            {/* ── TIPS ─────────────────────────────────────────────────────────── */}
-            {tips.length > 0 && (
-              <Block whileTap={{}} className="col-span-12 md:col-span-6 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center gap-2">
-                  <Lightbulb size={14} className="text-amber-500" />
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="tips" /></p>
-                </div>
-                <ul className="px-5 py-3 space-y-2.5">
-                  {tips.map((tip, i) => (
-                    <li key={i} className="flex gap-2.5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                      <span className="mt-[7px] size-1.5 shrink-0 rounded-full bg-amber-500" />
-                      {tip}
-                    </li>
-                  ))}
-                </ul>
-              </Block>
-            )}
-
           </motion.div>
         </div>
       )}
@@ -2275,6 +2219,7 @@ export default function LessonPage() {
                 iconColorClass="text-teal-600 dark:text-teal-400"
                 badgeLabel={<SectionTitle k="phrases" />}
                 title={moduleTitle}
+                titleHref={`/learn/${slug}`}
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
                 cta={masteryCta(masteredPhraseCount, phrases.length, tLesson('practice_phrases', { count: phrases.length }), setPhrasePractice)}
                 activities={activityTabs(slug, 'phrases')}
@@ -2453,6 +2398,7 @@ export default function LessonPage() {
                 iconColorClass="text-violet-500"
                 badgeLabel={<SectionTitle k="qa" />}
                 title={moduleTitle}
+                titleHref={`/learn/${slug}`}
                 badgeColorClass="text-violet-500 bg-violet-500/10"
                 cta={masteryCta(masteredQACount, questions.length, tLesson('practice_questions', { count: questions.length }), setQaPractice)}
                 activities={activityTabs(slug, 'qa')}

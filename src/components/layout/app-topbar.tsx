@@ -7,6 +7,7 @@ import { LanguageSwitcher } from '@/components/dashboard/language-switcher'
 import { ChevronLeft, Flame, Star, Gem, Zap } from 'lucide-react'
 import { useTopbarStats } from '@/components/providers/topbar-provider'
 import { createClient } from '@/lib/supabase/client'
+import { cn } from '@/lib/utils'
 import { getActiveBoosts, type ActiveBoosts } from '@/lib/rewards'
 
 // Boosts bought in the gem shop live in the database (user_boosts)
@@ -32,7 +33,8 @@ function useActiveBoost() {
 interface AppTopbarProps {
   title?: string
   subtitle?: string
-  back?: { href: string; label?: string }
+  /** subtle: lighter label, for context (e.g. the lesson name) rather than a page title */
+  back?: { href: string; label?: string; subtle?: boolean }
 }
 
 export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
@@ -44,16 +46,19 @@ export function AppTopbar({ title, subtitle, back }: AppTopbarProps) {
       <div className="flex items-center justify-between px-4 md:px-8 h-14">
         {/* Left side */}
         {back ? (
-          <div className="flex items-center gap-1.5">
-            <Link href={back.href}>
-              <button className="w-11 h-11 rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors">
-                <ChevronLeft size={20} />
-              </button>
-            </Link>
+          <Link href={back.href} className="group flex min-w-0 items-center gap-1.5">
+            <span className="w-11 h-11 shrink-0 rounded-full flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+              <ChevronLeft size={20} />
+            </span>
             {back.label && (
-              <span className="text-sm font-semibold text-muted-foreground">{back.label}</span>
+              <span className={cn(
+                'truncate text-sm font-semibold transition-colors group-hover:text-foreground',
+                back.subtle ? 'text-muted-foreground/60' : 'text-muted-foreground',
+              )}>
+                {back.label}
+              </span>
             )}
-          </div>
+          </Link>
         ) : (
           <>
             {/* Mobile logo */}

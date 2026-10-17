@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { LearnContent, type LearnModule } from '@/components/learn/learn-content'
+import { getLanguageSettings } from '@/lib/active-language'
+import { lessonDescription } from '@/lib/lesson-description'
 
 const LANGUAGE_NAMES: Record<string, { name: string; flag: string }> = {
   es: { name: 'Spanish', flag: '🇪🇸' },
@@ -34,6 +36,7 @@ function computeModuleStars(
 export default async function LearnPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
+  const { uiLocale } = await getLanguageSettings()
 
   let languageCode = 'es'
   if (user) {
@@ -117,7 +120,7 @@ export default async function LearnPage() {
     const hasCrown = prog?.hasCrown ?? false
     const gemsEarned = prog?.gemsEarned ?? 0
     const progress = totalLessons > 0 ? Math.round((lessonsCompleted / totalLessons) * 100) : 0
-    return { id: m.id, slug: m.slug, title: m.title, subtitle: m.description ?? undefined, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
+    return { id: m.id, slug: m.slug, title: m.title, subtitle: lessonDescription(languageCode, m.slug, uiLocale, m.description) ?? undefined, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
   })
 
   // The first module not completed yet is 'current' (lessons unlocked early with

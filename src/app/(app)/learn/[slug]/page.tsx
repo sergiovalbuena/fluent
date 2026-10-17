@@ -1,10 +1,11 @@
 import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { getLanguageSettings } from '@/lib/active-language'
+import { lessonDescription } from '@/lib/lesson-description'
 import { localizeQuestion, pickTranslation, type RawQuestion, type Translatable } from '@/lib/languages'
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
-import { ModuleContentView, type ModuleContentData, type VocabItem, type PhraseItem, type QAItem } from '@/components/learn/module-content'
+import { ModuleContentView, type ModuleContentData, type VocabItem, type PhraseItem, type QAItem, type GrammarItem } from '@/components/learn/module-content'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -35,7 +36,7 @@ const getLessonsByModuleId = cache(async (moduleId: string) => {
 export default async function LessonPage({ params }: PageProps) {
   const { slug } = await params
 
-  const { languageCode, translationLang } = await getLanguageSettings()
+  const { languageCode, translationLang, uiLocale } = await getLanguageSettings()
   const { data: lesson } = await getModuleBySlug(slug, languageCode)
   if (!lesson) notFound()
 
@@ -59,6 +60,18 @@ export default async function LessonPage({ params }: PageProps) {
   const qaItems: QAItem[]          = ((qaEx?.content as { questions?: RawQuestion[] })?.questions ?? [])
     .map(q => localizeQuestion(q, translationLang))
   const storyContent               = (storyEx?.content as { text?: string }) ?? {}
+  // Vocabulary lessons of generated courses carry the lesson's grammar and tips,
+  // each text keyed by language ({ en, es })
+  const vocabContent = vocabEx?.content as {
+    grammar?: Array<{ structure: string; example: string } & Record<string, string>>
+    tips?: Array<Record<string, string>>
+  } | undefined
+  const grammarItems: GrammarItem[] = (vocabContent?.grammar ?? []).map(g => ({
+    structure: g.structure,
+    example: g.example,
+    label: g[translationLang] ?? g.en ?? '',
+  }))
+  const tips: string[] = (vocabContent?.tips ?? []).map(t => t[translationLang] ?? t.en ?? '').filter(Boolean)
   const arrangeCount               = (arrangeEx?.content as { sentences?: unknown[] })?.sentences?.length ?? 0
   const translateCount             = (translateEx?.content as { items?: unknown[] })?.items?.length ?? 0
 
@@ -123,7 +136,7 @@ export default async function LessonPage({ params }: PageProps) {
   const data: ModuleContentData = {
     slug,
     title: lesson.title,
-    description: lesson.description,
+    description: lessonDescription(lesson.language_code, slug, uiLocale, lesson.description),
     icon: lesson.icon,
     languageCode: lesson.language_code,
     exerciseCount: exerciseList.length,
@@ -132,6 +145,9 @@ export default async function LessonPage({ params }: PageProps) {
     phraseItems,
     qaItems,
     storyText: storyContent.text,
+    grammarItems,
+    tips,
+    orderIndex: lesson.order_index,
     arrangeCount,
     translateCount,
     hasVocab: !!vocabEx,

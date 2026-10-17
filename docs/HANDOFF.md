@@ -28,6 +28,8 @@
 - Scripts:
   - `scripts/validate-course.mjs <lang>`: valida el contenido.
   - `scripts/generate-course-sql.mjs <lang>`: genera el SQL. El de francés debe salir idéntico al actual.
+  - `scripts/generate-verbs.mjs`: genera `src/data/verbs/<lang>-index.json` y `<lang>-forms.json` para la página `/verbs` (verbos del vocabulario del curso más una lista de esenciales, conjugados con las librerías de RosaeNLG, que son dependencias de desarrollo). Ejecutarlo al añadir o cambiar lecciones. Por ahora cubre francés e inglés. También genera `<lang>-examples.json`: un ejemplo por tiempo verbal (frase real del curso en los tiempos simples cuando existe; si no, plantilla con marcador temporal de `scripts/verb-examples.mjs`), traducido al inglés con `english-verbs-helper` y al español con `scripts/spanish-conjugator.mjs` (conjugador propio: la librería `spanish-verbs` daba formas erróneas). Los verbos de estado en inglés (be, have, know…) no tienen ejemplo en los tiempos continuos.
+  - `scripts/generate-lesson-titles.mjs`: regenera `src/lib/lesson-titles.ts` (título de cada lección en cada idioma). Ejecutarlo al añadir o cambiar lecciones. La descripción de la lección se muestra en el idioma nativo del usuario a partir de esa tabla (`src/lib/lesson-description.ts`). `modules.description` en la base de datos solo tiene el español y ya solo se usa para cursos antiguos sin archivos de contenido.
 - Seeds: `supabase/seed/20261013_french_course.sql` y `supabase/seed/20261014_english_course.sql`.
 
 **App**
@@ -97,7 +99,7 @@ Con commit y desplegado en producción el 2026-10-16 a petición del usuario, pe
 
 **Qué se hizo (archivos)**
 - `src/lib/section-titles.ts`: diccionario de títulos en 7 idiomas. Los títulos se muestran en el idioma del curso.
-- `src/components/lesson/title-hint.tsx`: `SectionTitle`, `TitleHintProvider` y `HINT_AREA`. El tooltip se abre al pasar el cursor por la zona marcada con `HINT_AREA` (tarjeta, pestaña o cabecera). En pantallas táctiles no aparece.
+- `src/components/lesson/title-hint.tsx`: `SectionTitle`, `TitleHintProvider` y `HINT_AREA`. El tooltip se abre al pasar el cursor por la zona marcada con `HINT_AREA` (tarjeta, pestaña o cabecera). En pantallas táctiles no aparece. Tampoco aparece cuando el título y la traducción son iguales (p. ej. "Phrases" en francés con nativo inglés). Es intencionado, confirmado por el usuario.
 - `src/lib/title-hints.ts`: la opción se guarda en `localStorage` (clave `fluent:title-hints`). Por defecto está activada hasta la lección 3. "Lección N" sale de `modules.order_index`.
 - `src/components/lesson/all-items-dialog.tsx`: Dialog reutilizable con zoom y "Escuchar todo".
 - `src/components/lesson/word-sheet.tsx`: resalta el elemento que se está leyendo.
