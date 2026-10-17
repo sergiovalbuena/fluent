@@ -1,111 +1,90 @@
-const sections = [
-  {
-    title: '1. Information We Collect',
-    content: `We collect information you provide directly to us when you create an account, complete onboarding, or use our services. This includes:
+import type { Metadata } from 'next'
+import { LEGAL_CONTACT, LegalDocument, type LegalSection } from '@/components/legal/legal-document'
 
-• Account information: display name, email address, and password (or OAuth token if you sign in with Google)
-• Learning preferences: native language, target language, learning motivation, daily goal, and reminder settings
-• Usage data: lessons completed, XP earned, streak count, quiz scores, and session timestamps
-• Device information: browser type, operating system, and general location (country-level only)`,
-  },
-  {
-    title: '2. How We Use Your Information',
-    content: `We use the information we collect to:
+export const metadata: Metadata = { title: 'Privacy Policy · Fluent' }
 
-• Provide, maintain, and improve our language learning services
-• Personalize your learning experience and recommend lessons
-• Track your progress, maintain streaks, and calculate XP
-• Send reminder notifications at the time you specify
-• Respond to your comments, questions, and support requests
-• Monitor and analyze trends and usage to improve the app`,
-  },
+const sections: LegalSection[] = [
   {
-    title: '3. Information Sharing',
-    content: `We do not sell, trade, or rent your personal information to third parties. We may share information in the following limited circumstances:
+    title: '1. Information we collect',
+    content: `We only collect what we need to run Fluent:
 
-• Service providers: We share data with vendors who help us operate the platform (e.g. Supabase for database hosting)
-• Legal requirements: We may disclose information if required by law or to protect the rights and safety of our users
-• Business transfers: If we merge or are acquired, your information may be transferred as part of that transaction — we will notify you beforehand`,
+• Account data: your email address and display name. If you sign in with Google, we receive your name, email and profile picture from Google. We never see your Google password.
+• Learning settings: your native language, the language you are learning, the language of the app, your motivation, daily goal and reminder time.
+• Progress: lessons and activities completed, scores, stars, XP, gems, streaks, purchases made with gems, and words you have mastered.
+• Content you add: study links you save and the messages you send to MarIA, the AI tutor.
+• Technical data: the information your browser sends with each request (such as browser type and IP address), used to keep the service running and secure.`,
   },
   {
-    title: '4. Data Retention',
-    content: `We retain your personal information for as long as your account is active or as needed to provide services. You can delete your account at any time by contacting us. Upon deletion, we remove your personal data within 30 days, except where retention is required by law.`,
-  },
-  {
-    title: '5. Cookies and Tracking',
-    content: `We use cookies and similar tracking technologies to maintain your session and remember your preferences (such as theme and language). We do not use third-party advertising cookies. You can control cookie settings through your browser, though disabling cookies may affect app functionality.`,
-  },
-  {
-    title: '6. Security',
-    content: `We take reasonable technical and organizational measures to protect your information against unauthorized access, alteration, or destruction. All data is encrypted in transit (HTTPS) and at rest. However, no method of transmission over the internet is 100% secure.`,
-  },
-  {
-    title: '7. Children\'s Privacy',
-    content: `Fluent is not directed at children under 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will delete it promptly.`,
-  },
-  {
-    title: '8. Your Rights',
-    content: `Depending on your location, you may have rights regarding your personal data, including:
+    title: '2. How we use it',
+    content: `We use your information to:
 
-• Access: Request a copy of the data we hold about you
-• Correction: Request that we correct inaccurate data
-• Deletion: Request that we delete your account and associated data
-• Portability: Request an export of your data in a common format
+• Run your account and keep you signed in
+• Show your progress, award XP, gems and stars, and keep your streak
+• Personalize lessons, translations and the language of the app
+• Answer your questions to MarIA and read text aloud with AI voices
+• Fix problems, prevent abuse and improve Fluent
 
-To exercise these rights, contact us at privacy@fluent.app.`,
+We do not use your data for advertising and we do not sell it.`,
   },
   {
-    title: '9. Changes to This Policy',
-    content: `We may update this Privacy Policy from time to time. We will notify you of significant changes by posting a notice in the app or sending an email. Your continued use of Fluent after changes take effect constitutes your acceptance of the revised policy.`,
+    title: '3. Service providers',
+    content: `Fluent relies on a few providers that process data on our behalf, only to provide the service:
+
+• Supabase: database, authentication and file storage
+• Vercel: hosting of the app
+• Google: sign-in, if you choose "Continue with Google"
+• OpenAI: generates MarIA's answers and AI voice audio. Messages you send to MarIA are sent to OpenAI to produce a reply. Text read aloud is sent to create the audio; that text comes from the course, not from your account.
+• YouTube, TikTok and Instagram: previews and players for study links you save. When you play one, that platform may collect data under its own policy.
+
+Audio generated from course content is stored in a public cache so it loads faster. It contains only course text, never personal data.`,
   },
   {
-    title: '10. Contact Us',
-    content: `If you have any questions about this Privacy Policy or our data practices, please contact us at:
+    title: '4. Sharing',
+    content: `We do not sell, rent or trade your personal information. Besides the providers above, we only share information if the law requires it, to protect the safety and rights of our users, or as part of a merger or acquisition (in which case we will tell you first).`,
+  },
+  {
+    title: '5. Cookies and local storage',
+    content: `We use cookies that are strictly necessary to keep you signed in. Your browser also stores a few preferences on your device (such as the theme, title hints and game settings). We do not use advertising or third-party tracking cookies.`,
+  },
+  {
+    title: '6. How long we keep data',
+    content: `We keep your data while your account is active. If you ask us to delete your account, we delete your personal data within 30 days, unless the law requires us to keep something longer.`,
+  },
+  {
+    title: '7. Security',
+    content: `Data is encrypted in transit (HTTPS). Access to the database is restricted with row-level security, so each user can only read and change their own data. No system is completely secure, but we work to protect your information and will notify you of any breach that affects you as required by law.`,
+  },
+  {
+    title: '8. Your rights',
+    content: `You can ask us to:
 
-Email: privacy@fluent.app
-Address: Fluent Inc., 123 Language St., San Francisco, CA 94103`,
+• Access a copy of your data
+• Correct inaccurate data
+• Delete your account and data
+• Export your data in a common format
+• Object to or restrict some processing
+
+Write to ${LEGAL_CONTACT}. We answer within 30 days. If you live in the EU, the UK or another region with data-protection laws, you can also complain to your local authority.`,
+  },
+  {
+    title: '9. Children',
+    content: `Fluent is not intended for children under 13 (or the minimum age in your country). We do not knowingly collect their data, and we delete it if we learn that we have.`,
+  },
+  {
+    title: '10. Changes',
+    content: `If we change this policy in a meaningful way, we will tell you in the app before the change takes effect. The date at the top shows the latest version.`,
   },
 ]
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="flex-1 p-4 md:p-8">
-        <div className="max-w-2xl mx-auto space-y-6">
-          <h1 className="text-2xl md:text-3xl font-bold">Privacy Policy</h1>
-
-          {/* Intro card */}
-          <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 p-5">
-            <div className="flex items-start gap-3">
-              <span className="text-2xl mt-0.5">🔒</span>
-              <div>
-                <h2 className="font-bold text-sm mb-1">Your privacy matters</h2>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  This policy explains how Fluent collects, uses, and protects your personal information.
-                  Last updated: <span className="font-medium text-foreground">March 18, 2026</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Policy sections */}
-          <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 divide-y divide-primary/5 overflow-hidden">
-            {sections.map(section => (
-              <div key={section.title} className="px-5 py-4">
-                <h3 className="font-bold text-sm mb-2">{section.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed whitespace-pre-line">
-                  {section.content}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-xs text-muted-foreground pb-4">
-            Questions? Email us at{' '}
-            <a href="mailto:privacy@fluent.app" className="text-primary hover:underline">
-              privacy@fluent.app
-            </a>
-          </p>
-        </div>
-    </main>
+    <LegalDocument
+      title="Privacy Policy"
+      icon="🔒"
+      intro="This policy explains, in plain words, what Fluent collects, why, and what you can do about it."
+      updated="October 17, 2026"
+      sections={sections}
+      related={{ href: '/terms', label: 'Terms of Service' }}
+    />
   )
 }

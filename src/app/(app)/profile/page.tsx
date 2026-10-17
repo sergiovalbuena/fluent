@@ -45,6 +45,7 @@ import {
   Sun,
   Trophy,
   Zap,
+  FileText,
 } from 'lucide-react'
 
 // ── Data ──────────────────────────────────────────────────────────────────────
@@ -550,6 +551,9 @@ export default function ProfilePage() {
               </Link>
               <Link href="/privacy-policy" className="block">
                 <RowInner icon={Shield} label={t('privacy_policy')} />
+              </Link>
+              <Link href="/terms" className="block">
+                <RowInner icon={FileText} label={t('terms_of_service')} />
               </Link>
             </div>
           </section>

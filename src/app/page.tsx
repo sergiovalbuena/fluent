@@ -185,7 +185,7 @@ export default function LandingPage() {
           <p className="text-xs text-slate-400">© 2026 Fluent. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="text-xs text-slate-400 hover:text-primary transition-colors">Privacy</Link>
-            <a href="#" className="text-xs text-slate-400 hover:text-primary transition-colors">Terms</a>
+            <Link href="/terms" className="text-xs text-slate-400 hover:text-primary transition-colors">Terms</Link>
             <Link href="/login" className="text-xs text-slate-400 hover:text-primary transition-colors">Sign in</Link>
           </div>
         </div>

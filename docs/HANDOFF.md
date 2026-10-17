@@ -1,6 +1,6 @@
 # Fluent — estado del proyecto y plan (handoff)
 
-Última actualización: 2026-10-14. Léelo al empezar una sesión nueva.
+Última actualización: 2026-10-17. Léelo al empezar una sesión nueva.
 
 ## Contexto
 
@@ -62,6 +62,11 @@
   - Tabla `study_links`.
   - `/api/link-preview` obtiene título y miniatura por oEmbed de YouTube/TikTok.
   - Reproductor de YouTube, TikTok e Instagram dentro de la app.
+- **Seguridad de rutas** (2026-10-17): `src/proxy.ts` llama a `updateSession`, que redirige a `/login` todo lo que no está en `publicRoutes` (`src/lib/supabase/middleware.ts`). Antes de esto, todas las rutas de `(app)` eran accesibles sin sesión en producción. Verificado en producción con curl (307 a login).
+- **Páginas legales** en el grupo `(legal)` (sin sidebar, públicas): `/privacy-policy` y `/terms`, con el componente común `src/components/legal/legal-document.tsx`. El footer de la landing y el perfil enlazan a ambas.
+- **Página de lección `/learn/[slug]`:** bento "Bonus" con tres grupos: Repaso (Gramática y Consejos en Dialog, Word sheet, Flashcards; sin recompensas porque son solo información), Práctica (Arrange y Translate con estrellas y gemas; "Práctica de gramática" como Próximamente) y Minijuegos. Solo las tarjetas de acción muestran recompensas.
+- **Verbos `/verbs`** (en el sidebar y la barra inferior, en lugar de MarIA): todos los verbos del curso, buscador, filtro Esenciales, y Dialog con todas las conjugaciones por modo, audio y un ejemplo por tiempo (botón "Ejemplo" junto a cada título de tiempo). Datos en `src/data/verbs/` (ver el script `generate-verbs.mjs`).
+- **Reto de verbos `/verbs/practice`** (también en `/play` y en el Dialog de cada verbo con `?verb=`): rondas de 10, modo Elegir (4 opciones con distractores del mismo verbo) o Escribir (con botones de acentos; un acento mal cuenta como "casi"). Los fallos vuelven al final de la ronda. Recompensas como los demás minijuegos (5/10/15 XP según acierto + 3 gemas, `reason: 'minigame'`); repasar fallos no da recompensas. Lógica en `src/lib/verb-quiz.ts`, UI en `src/components/verbs/verb-practice.tsx`. Los ajustes se recuerdan en `localStorage` (`fluent:verb-game:<idioma>`).
 - **MarIA flotante** en todo el layout (`src/components/maria/maria-widget.tsx`, con shadcn Message y MessageScroller). Usa como contexto la lección abierta. `/api/maria` exige sesión iniciada.
 - **Voz con IA:** `/api/tts` (OpenAI `gpt-4o-mini-tts` con instrucciones de acento nativo), con caché en el bucket público `tts`. `speak()` en `src/lib/languages.ts` usa la voz del navegador como respaldo.
 - Auth: Google OAuth configurado; las URLs de Supabase Auth están configuradas.
@@ -82,6 +87,13 @@
    - Frases (`/learn/[slug]/phrases`, p. ej. `/learn/lecon-01/phrases`): la tarjeta azul "Practice / Flip & review" (a la derecha de la lista de frases) y el botón "Start practice" al pie de esa lista abren el modo tarjetas (voltear y repasar, sin guardar progreso), no la práctica seguida de la tarjeta naranja del hero. Hay dos cosas llamadas "práctica" que hacen cosas distintas. Propuesta: renombrar la azul a "Tarjetas" y quitar el botón del pie.
    - Quitar la extensión `http` si ya no se usa.
    - Qwen3-TTS: descartado por ahora; da más carga que ventaja (ver la conversación del 2026-10-14).
+
+7. **Confirmar el email de contacto legal.** `LEGAL_CONTACT` en `src/components/legal/legal-document.tsx` es `privacy@fluent.app`, que no es un buzón real. Cambiarlo por uno que funcione antes de abrir la app al público. Se quitó la dirección postal inventada que había en la política de privacidad.
+8. **Footer: preguntas abiertas.** Qué es "Claim" y qué debe hacer la página "printer" (con "coming soon" en el navbar). No se crearon hasta tener respuesta.
+9. **Traducir las descripciones de lección a de, it, pt y ja.** `src/lib/lesson-titles.ts` solo tiene en, es y fr; con otro idioma nativo se muestra el inglés.
+10. **Bento de la lección.** Las etiquetas de grupo (Repaso, Práctica, Minijuegos) están en el idioma de la interfaz; decidir si van en el idioma del curso como las tarjetas principales. Diseñar la actividad "Práctica de gramática".
+11. **Prueba A/B de "ver todas las palabras"**: elegir entre el Dialog y la ruta `/words` y borrar la otra.
+12. **Probar en el navegador** `/verbs`, `/verbs/practice` y `/terms` (no se pudieron revisar visualmente: la extensión de Chrome no estaba conectada). Revisar también en móvil.
 
 ## Notas de diseño
 

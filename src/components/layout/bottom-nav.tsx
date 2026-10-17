@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, Home, Trophy, Bot, Menu, Bookmark } from 'lucide-react'
+import { BookOpen, Home, Trophy, BookType, Menu, Bookmark } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 
@@ -15,7 +15,7 @@ export function BottomNav() {
     { type: 'link' as const, href: '/learn', icon: BookOpen, label: t('lessons') },
     { type: 'link' as const, href: '/dashboard', icon: Home, label: t('home') },
     { type: 'link' as const, href: '/saved', icon: Bookmark, label: t('saved') },
-    { type: 'link' as const, href: '/maria', icon: Bot, label: t('maria') },
+    { type: 'link' as const, href: '/verbs', icon: BookType, label: t('verbs') },
   ]
 
   return (
