@@ -27,9 +27,13 @@ export async function updateSession(request: NextRequest) {
 
   const { pathname } = request.nextUrl
 
-  // Public routes
-  const publicRoutes = ['/login', '/signup', '/auth/callback']
-  const isPublicRoute = publicRoutes.some(r => pathname.startsWith(r))
+  // Public routes: landing, auth flow and legal pages. API routes check auth
+  // themselves and answer with JSON errors, so they're never redirected.
+  const publicRoutes = [
+    '/login', '/signup', '/forgot-password', '/reset-password', '/auth/callback',
+    '/privacy-policy', '/terms', '/api',
+  ]
+  const isPublicRoute = pathname === '/' || publicRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))
 
   if (!user && !isPublicRoute) {
     const url = request.nextUrl.clone()

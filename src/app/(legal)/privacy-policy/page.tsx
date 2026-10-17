@@ -1,6 +1,3 @@
-import { ChevronLeft } from 'lucide-react'
-import Link from 'next/link'
-
 const sections = [
   {
     title: '1. Information We Collect',
@@ -72,16 +69,9 @@ Address: Fluent Inc., 123 Language St., San Francisco, CA 94103`,
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="flex items-center gap-3 px-4 md:px-8 py-4 md:py-5 sticky top-0 z-10 border-b border-primary/10 bg-[#f8f6f5] dark:bg-[#1b2030]">
-        <Link href="/profile" className="size-9 rounded-xl flex items-center justify-center hover:bg-primary/10 transition-colors">
-          <ChevronLeft size={18} className="text-muted-foreground" />
-        </Link>
-        <h1 className="text-xl md:text-2xl font-bold">Privacy Policy</h1>
-      </header>
-
-      <main className="flex-1 p-4 md:p-8">
+    <main className="flex-1 p-4 md:p-8">
         <div className="max-w-2xl mx-auto space-y-6">
+          <h1 className="text-2xl md:text-3xl font-bold">Privacy Policy</h1>
 
           {/* Intro card */}
           <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 p-5">
@@ -116,7 +106,6 @@ export default function PrivacyPolicyPage() {
             </a>
           </p>
         </div>
-      </main>
-    </div>
+    </main>
   )
 }
