@@ -11,7 +11,7 @@ import {
   Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
   GraduationCap, Lightbulb,
   type LucideIcon,
-  LayoutList, FileText, ZoomIn, ZoomOut,
+  LayoutList, FileText,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
 import { useVocabMastery } from '@/hooks/use-vocab-mastery'
@@ -25,8 +25,10 @@ import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
 import { awardGems, getActiveBoosts } from '@/lib/rewards'
 import { ResultScreen } from '@/components/lesson/result-screen'
-import { WordSheet } from '@/components/lesson/word-sheet'
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { AllItemsDialog } from '@/components/lesson/all-items-dialog'
+import { HINT_AREA, SectionTitle, TitleHintProvider } from '@/components/lesson/title-hint'
+import type { SectionTitleKey } from '@/lib/section-titles'
+import { useTitleHintSettings } from '@/lib/title-hints'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -193,6 +195,7 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
       'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
       className
     )}
+    {...HINT_AREA}
     {...rest}
   >
     {children}
@@ -1073,6 +1076,7 @@ function VocabWordList({
   practice?: PracticeRequest | null
   onPracticeEnd?: () => void
 }) {
+  const t = useTranslations('lesson')
   const [entries] = useState<VocabEntry[]>(initialWords)
   const [challengeEntry, setChallengeEntry] = useState<VocabEntry | null>(null)
 
@@ -1092,11 +1096,11 @@ function VocabWordList({
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Header */}
-      <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Word List</p>
+      <div {...HINT_AREA} className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="word_list" /></p>
         <div className="flex items-center gap-3">
           <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
-            {masteredCount} / {entries.length} mastered
+            {t('practice_progress', { done: masteredCount, total: entries.length })}
           </span>
         </div>
       </div>
@@ -1165,6 +1169,7 @@ function QAQuestionList({
   practice?: PracticeRequest | null
   onPracticeEnd?: () => void
 }) {
+  const t = useTranslations('lesson')
   const [challengeQ, setChallengeQ] = useState<QAQuestion | null>(null)
   const { isMastered, markMastered } = useVocabMastery(languageCode, 'qa')
   const masteredCount = questions.filter(q => isMastered(q.question)).length
@@ -1175,10 +1180,10 @@ function QAQuestionList({
 
   return (
     <div className="flex flex-col h-full min-h-0">
-      <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Questions</p>
+      <div {...HINT_AREA} className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="questions" /></p>
         <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
-          {questions.length} questions
+          {t('ov_count_questions', { count: questions.length })}
         </span>
       </div>
       <div className="flex-1 overflow-y-auto min-h-0">
@@ -1239,13 +1244,13 @@ function QAQuestionList({
           </div>
         ))}
       </div>
-      <div className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
+      <div {...HINT_AREA} className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
         <button
           onClick={onStartQuiz}
           className="w-full flex items-center justify-center gap-1.5 py-3 text-xs font-bold text-purple-500 hover:text-purple-600 transition-colors"
         >
           <ArrowRight size={13} />
-          Start quiz
+          <SectionTitle k="start_quiz" />
         </button>
       </div>
 
@@ -1297,6 +1302,7 @@ function PhraseList({
   practice?: PracticeRequest | null
   onPracticeEnd?: () => void
 }) {
+  const t = useTranslations('lesson')
   const [challengePhrase, setChallengePhrase] = useState<Phrase | null>(null)
   const { isMastered, markMastered } = useVocabMastery(languageCode, 'phrase')
   const masteredCount = phrases.filter(p => isMastered(p.phrase)).length
@@ -1308,10 +1314,10 @@ function PhraseList({
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Header */}
-      <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Phrase List</p>
+      <div {...HINT_AREA} className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="phrase_list" /></p>
         <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
-          {phrases.length} phrases
+          {t('ov_count_phrases', { count: phrases.length })}
         </span>
       </div>
 
@@ -1376,13 +1382,13 @@ function PhraseList({
       </div>
 
       {/* Practice CTA */}
-      <div className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
+      <div {...HINT_AREA} className="shrink-0 border-t border-black/[0.04] dark:border-white/[0.05]">
         <button
           onClick={onPractice}
           className="w-full flex items-center justify-center gap-1.5 py-3 text-xs font-bold text-blue-500 hover:text-blue-600 transition-colors"
         >
           <ArrowRight size={13} />
-          Start practice
+          <SectionTitle k="start_practice" />
         </button>
       </div>
 
@@ -1421,9 +1427,6 @@ const ACTIVITIES = [
 ]
 
 // Hoisted constants
-const SHEET_ZOOM_MIN  = 0.8
-const SHEET_ZOOM_MAX  = 1.6
-const SHEET_ZOOM_STEP = 0.2
 const COLOR_CORRECT            = '#22c55e'
 const COLOR_INCORRECT          = '#ef4444'
 
@@ -1442,7 +1445,7 @@ function EmptyState({ message }: { message: string }) {
 interface ActivityHeroTab {
   href: string
   icon: LucideIcon
-  label: string
+  label: React.ReactNode
   iconColorClass: string
   iconBgClass: string
   barClass: string
@@ -1459,12 +1462,49 @@ interface ActivityHeroCta {
   onClick: () => void
 }
 
+/** The four lesson activities as hero tabs, with the current one marked active */
+function activityTabs(slug: string, active: 'vocabulary' | 'phrases' | 'qa' | 'story'): ActivityHeroTab[] {
+  return [
+    { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: <SectionTitle k="vocab_tab" />, iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500', active: active === 'vocabulary' },
+    { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: <SectionTitle k="phrases" />, iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500', active: active === 'phrases' },
+    { href: `/learn/${slug}/qa`, icon: HelpCircle, label: <SectionTitle k="qa" />, iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500', active: active === 'qa' },
+    { href: `/learn/${slug}/story`, icon: BookMarked, label: <SectionTitle k="story" />, iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500', active: active === 'story' },
+  ]
+}
+
+/** Card that opens the "all items" dialog of a section */
+function AllItemsCard({ titleKey, onClick, iconClass, iconBgClass, className }: {
+  titleKey: SectionTitleKey
+  onClick: () => void
+  iconClass: string
+  iconBgClass: string
+  className?: string
+}) {
+  const t = useTranslations('lesson')
+  return (
+    <Block
+      whileHover={{ rotate: '-1.5deg', scale: 1.03 }}
+      className={cn('p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]', className)}
+    >
+      <button type="button" onClick={onClick} className="flex h-full w-full items-center gap-3 p-4 text-left">
+        <span className={cn('size-10 shrink-0 rounded-xl flex items-center justify-center', iconBgClass)}>
+          <LayoutList size={18} className={iconClass} />
+        </span>
+        <span className="min-w-0">
+          <span className="block text-sm font-bold text-slate-900 dark:text-white"><SectionTitle k={titleKey} /></span>
+          <span className="block text-[11px] text-slate-400 mt-0.5">{t('ov_quick_view')}</span>
+        </span>
+      </button>
+    </Block>
+  )
+}
+
 function ActivityHero({
   icon: Icon, iconColorClass, badgeLabel, badgeColorClass, title, cta, activities,
 }: {
   icon: LucideIcon
   iconColorClass: string
-  badgeLabel: string
+  badgeLabel: React.ReactNode
   badgeColorClass: string
   /** Lesson name (or the story's name) shown under the activity badge */
   title?: string
@@ -1480,6 +1520,7 @@ function ActivityHero({
             <div
               key={a.href}
               aria-current="page"
+              {...HINT_AREA}
               className="relative flex flex-col h-full overflow-hidden rounded-2xl border border-black/[0.05] dark:border-white/[0.06] bg-white dark:bg-[#202638] shadow-[0_1px_4px_rgba(0,0,0,0.04)] dark:shadow-none"
             >
               <div className={cn('h-[3px] w-full shrink-0', a.barClass)} />
@@ -1491,7 +1532,7 @@ function ActivityHero({
               </div>
             </div>
           ) : (
-            <Link key={a.href} href={a.href} className="block group h-full">
+            <Link key={a.href} href={a.href} {...HINT_AREA} className="block group h-full">
               <motion.div
                 whileHover={{ y: -4, scale: 1.015 }}
                 whileTap={{ scale: 0.97 }}
@@ -1523,7 +1564,7 @@ function ActivityHero({
         </div>
 
         <div className="relative flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
-          <div className="min-w-0">
+          <div className="min-w-0" {...HINT_AREA}>
             <h1>
               <span className={cn('inline-flex items-center text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full', badgeColorClass)}>
                 {badgeLabel}
@@ -1669,7 +1710,10 @@ export default function LessonPage() {
   const [masteredQACount,     setMasteredQACount]     = useState(0)
   const [phrasePractice,      setPhrasePractice]      = useState<PracticeRequest | null>(null)
   const [qaPractice,          setQaPractice]          = useState<PracticeRequest | null>(null)
-  const [sheetZoom,           setSheetZoom]           = useState(1)
+  const [allItemsOpen,        setAllItemsOpen]        = useState(false)
+  const uiLocale = useLocale()
+  const [moduleOrder,         setModuleOrder]         = useState<number | null>(null)
+  const titleHints = useTitleHintSettings()
 
   /** Hero action for activities tracked by mastery: start → continue → review */
   function masteryCta(done: number, total: number, countLabel: string, start: (req: PracticeRequest) => void): ActivityHeroCta {
@@ -1752,7 +1796,7 @@ export default function LessonPage() {
 
       const { data: mod } = await supabase
         .from('modules')
-        .select('id, language_code, title')
+        .select('id, language_code, title, order_index')
         .eq('slug', slug)
         .eq('language_code', activeLanguage)
         .limit(1)
@@ -1761,6 +1805,7 @@ export default function LessonPage() {
       if (!mod) { setLoading(false); return }
       setLanguageCode(mod.language_code)
       setModuleTitle(mod.title)
+      setModuleOrder(mod.order_index)
 
       const { data } = await supabase
         .from('lessons')
@@ -2079,7 +2124,14 @@ export default function LessonPage() {
     )
   }
 
+  const titleHintSettings = {
+    lang: languageCode,
+    hintLang: uiLocale,
+    active: titleHints.enabled && moduleOrder != null && moduleOrder <= titleHints.untilLesson,
+  }
+
   return (
+    <TitleHintProvider value={titleHintSettings}>
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
       <AppTopbar back={{ href: `/learn/${slug}`, label: lesson.title }} />
 
@@ -2099,16 +2151,11 @@ export default function LessonPage() {
             <ActivityHero
               icon={BookOpen}
               iconColorClass="text-indigo-500"
-              badgeLabel="Vocabulary"
+              badgeLabel={<SectionTitle k="vocabulary" />}
               title={moduleTitle}
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
               cta={masteryCta(masteredCount, words.length, tLesson('practice_words', { count: words.length }), setPractice)}
-              activities={[
-                { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500', active: true },
-                { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
-                { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500' },
-                { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500' },
-              ]}
+              activities={activityTabs(slug, 'vocabulary')}
             />
 
             {/* ── WORD LIST — col-6 row-span-4, animated VanishList ────────── */}
@@ -2129,54 +2176,21 @@ export default function LessonPage() {
             </Block>
 
             {/* ── ALL WORDS — two versions to compare: dialog (A) vs. own page (B) ── */}
-            <Dialog>
-              <Block
-                whileHover={{ rotate: '-1.5deg', scale: 1.03 }}
-                className="col-span-6 md:col-span-3 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
-              >
-                <DialogTrigger className="flex h-full w-full items-center gap-3 p-4 text-left">
-                  <span className="size-10 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center">
-                    <LayoutList size={18} className="text-indigo-500" />
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block text-sm font-bold text-slate-900 dark:text-white">All words</span>
-                    <span className="block text-[11px] text-slate-400 mt-0.5">Quick view</span>
-                  </span>
-                </DialogTrigger>
-              </Block>
-              <DialogContent
-                className="sm:max-w-lg max-h-[80vh] overflow-y-auto p-5 md:p-6"
-                style={{ maxWidth: `min(calc(100% - 2rem), ${512 * sheetZoom}px)` }}
-              >
-                <DialogHeader className="flex-row items-start justify-between gap-3 pr-8">
-                  <div className="min-w-0">
-                    <DialogTitle className="font-bold leading-tight" style={{ fontSize: 20 * sheetZoom }}>{moduleTitle}</DialogTitle>
-                    <DialogDescription className="mt-1">{words.length} words</DialogDescription>
-                  </div>
-                  <div className="flex shrink-0 items-center gap-1">
-                    <button
-                      type="button"
-                      aria-label="Zoom out"
-                      disabled={sheetZoom <= SHEET_ZOOM_MIN}
-                      onClick={() => setSheetZoom(z => Math.max(SHEET_ZOOM_MIN, +(z - SHEET_ZOOM_STEP).toFixed(2)))}
-                      className="size-8 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 dark:hover:bg-white/[0.08] disabled:opacity-30 disabled:pointer-events-none transition-colors"
-                    >
-                      <ZoomOut size={16} />
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Zoom in"
-                      disabled={sheetZoom >= SHEET_ZOOM_MAX}
-                      onClick={() => setSheetZoom(z => Math.min(SHEET_ZOOM_MAX, +(z + SHEET_ZOOM_STEP).toFixed(2)))}
-                      className="size-8 rounded-lg flex items-center justify-center text-slate-500 hover:bg-slate-100 dark:hover:bg-white/[0.08] disabled:opacity-30 disabled:pointer-events-none transition-colors"
-                    >
-                      <ZoomIn size={16} />
-                    </button>
-                  </div>
-                </DialogHeader>
-                <WordSheet words={words} zoom={sheetZoom} className="columns-2 lg:columns-2 gap-x-6" />
-              </DialogContent>
-            </Dialog>
+            <AllItemsCard
+              titleKey="all_words"
+              onClick={() => setAllItemsOpen(true)}
+              iconClass="text-indigo-500"
+              iconBgClass="bg-indigo-500/10"
+              className="col-span-6 md:col-span-3"
+            />
+            <AllItemsDialog
+              open={allItemsOpen}
+              onOpenChange={setAllItemsOpen}
+              title={moduleTitle}
+              description={tLesson('ov_count_words', { count: words.length })}
+              entries={words}
+              languageCode={languageCode}
+            />
 
             <Block
               whileHover={{ rotate: '1.5deg', scale: 1.03 }}
@@ -2187,8 +2201,8 @@ export default function LessonPage() {
                   <FileText size={18} className="text-indigo-500" />
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-sm font-bold text-slate-900 dark:text-white">Word sheet</span>
-                  <span className="block text-[11px] text-slate-400 mt-0.5">Full page</span>
+                  <span className="block text-sm font-bold text-slate-900 dark:text-white"><SectionTitle k="word_sheet" /></span>
+                  <span className="block text-[11px] text-slate-400 mt-0.5">{tLesson('ov_full_page')}</span>
                 </span>
               </Link>
             </Block>
@@ -2198,7 +2212,7 @@ export default function LessonPage() {
               <Block whileTap={{}} className="col-span-12 md:col-span-6 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
                 <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center gap-2">
                   <GraduationCap size={14} className="text-indigo-500" />
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Grammar</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="grammar" /></p>
                 </div>
                 <ul className="divide-y divide-black/[0.04] dark:divide-white/[0.05]">
                   {grammar.map((g, i) => (
@@ -2224,7 +2238,7 @@ export default function LessonPage() {
               <Block whileTap={{}} className="col-span-12 md:col-span-6 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
                 <div className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center gap-2">
                   <Lightbulb size={14} className="text-amber-500" />
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Tips</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="tips" /></p>
                 </div>
                 <ul className="px-5 py-3 space-y-2.5">
                   {tips.map((tip, i) => (
@@ -2259,16 +2273,11 @@ export default function LessonPage() {
               <ActivityHero
                 icon={MessageSquare}
                 iconColorClass="text-teal-600 dark:text-teal-400"
-                badgeLabel="Phrases"
+                badgeLabel={<SectionTitle k="phrases" />}
                 title={moduleTitle}
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
                 cta={masteryCta(masteredPhraseCount, phrases.length, tLesson('practice_phrases', { count: phrases.length }), setPhrasePractice)}
-                activities={[
-                  { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
-                  { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500', active: true },
-                  { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500' },
-                  { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500' },
-                ]}
+                activities={activityTabs(slug, 'phrases')}
               />
 
               {/* Phrase list */}
@@ -2296,8 +2305,8 @@ export default function LessonPage() {
                 >
                   <MessageSquare size={28} className="text-white mx-auto" />
                   <div className="text-center">
-                    <p className="font-bold text-sm text-white">Practice</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Flip &amp; review</p>
+                    <p className="font-bold text-sm text-white"><SectionTitle k="practice" /></p>
+                    <p className="text-[11px] text-white/60 mt-0.5">{tLesson('ov_flip_review')}</p>
                   </div>
                 </button>
               </Block>
@@ -2313,11 +2322,28 @@ export default function LessonPage() {
                 >
                   <Headphones size={28} className="text-white mx-auto" />
                   <div className="text-center">
-                    <p className="font-bold text-sm text-white">Listening</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
+                    <p className="font-bold text-sm text-white"><SectionTitle k="listening" /></p>
+                    <p className="text-[11px] text-white/60 mt-0.5">{tLesson('ov_hear_identify')}</p>
                   </div>
                 </button>
               </Block>
+
+              <AllItemsCard
+                titleKey="all_phrases"
+                onClick={() => setAllItemsOpen(true)}
+                iconClass="text-teal-600 dark:text-teal-400"
+                iconBgClass="bg-teal-500/10"
+                className="col-span-12 md:col-span-6"
+              />
+              <AllItemsDialog
+                open={allItemsOpen}
+                onOpenChange={setAllItemsOpen}
+                title={moduleTitle}
+                description={tLesson('ov_count_phrases', { count: phrases.length })}
+                entries={phrases.map(p => ({ word: p.phrase, translation: p.translation }))}
+                languageCode={languageCode}
+                columns={1}
+              />
 
             </motion.div>
           )}
@@ -2425,16 +2451,11 @@ export default function LessonPage() {
               <ActivityHero
                 icon={HelpCircle}
                 iconColorClass="text-violet-500"
-                badgeLabel="Q&A"
+                badgeLabel={<SectionTitle k="qa" />}
                 title={moduleTitle}
                 badgeColorClass="text-violet-500 bg-violet-500/10"
                 cta={masteryCta(masteredQACount, questions.length, tLesson('practice_questions', { count: questions.length }), setQaPractice)}
-                activities={[
-                  { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
-                  { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
-                  { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500', active: true },
-                  { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500' },
-                ]}
+                activities={activityTabs(slug, 'qa')}
               />
 
               {/* Questions list */}
@@ -2462,8 +2483,8 @@ export default function LessonPage() {
                 >
                   <HelpCircle size={28} className="text-white mx-auto" />
                   <div className="text-center">
-                    <p className="font-bold text-sm text-white">Start Quiz</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Test yourself</p>
+                    <p className="font-bold text-sm text-white"><SectionTitle k="start_quiz" /></p>
+                    <p className="text-[11px] text-white/60 mt-0.5">{tLesson('ov_test_yourself')}</p>
                   </div>
                 </button>
               </Block>
@@ -2479,11 +2500,28 @@ export default function LessonPage() {
                 >
                   <Headphones size={28} className="text-white mx-auto" />
                   <div className="text-center">
-                    <p className="font-bold text-sm text-white">Listening</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Hear &amp; identify</p>
+                    <p className="font-bold text-sm text-white"><SectionTitle k="listening" /></p>
+                    <p className="text-[11px] text-white/60 mt-0.5">{tLesson('ov_hear_identify')}</p>
                   </div>
                 </button>
               </Block>
+
+              <AllItemsCard
+                titleKey="all_questions"
+                onClick={() => setAllItemsOpen(true)}
+                iconClass="text-violet-500"
+                iconBgClass="bg-violet-500/10"
+                className="col-span-12 md:col-span-6"
+              />
+              <AllItemsDialog
+                open={allItemsOpen}
+                onOpenChange={setAllItemsOpen}
+                title={moduleTitle}
+                description={tLesson('ov_count_questions', { count: questions.length })}
+                entries={questions.map(q => ({ word: q.question, translation: q.options[q.correct] }))}
+                languageCode={languageCode}
+                columns={1}
+              />
 
             </motion.div>
           )}
@@ -2632,7 +2670,7 @@ export default function LessonPage() {
               <ActivityHero
                 icon={BookMarked}
                 iconColorClass="text-amber-600 dark:text-amber-400"
-                badgeLabel="Story"
+                badgeLabel={<SectionTitle k="story" />}
                 badgeColorClass="text-amber-600 dark:text-amber-400 bg-amber-500/10"
                 title={lesson.title}
                 cta={{
@@ -2641,12 +2679,7 @@ export default function LessonPage() {
                   sublabel: tLesson('story_challenge_desc', { count: splitStory(content.story).length }),
                   onClick: () => setShowStoryChallenge(true),
                 }}
-                activities={[
-                  { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: 'Vocab', iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500' },
-                  { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: 'Phrases', iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500' },
-                  { href: `/learn/${slug}/qa`, icon: HelpCircle, label: 'Q&A', iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500' },
-                  { href: `/learn/${slug}/story`, icon: BookMarked, label: 'Story', iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500', active: true },
-                ]}
+                activities={activityTabs(slug, 'story')}
               />
 
               {/* Story text — left col, row 2 */}
@@ -2675,8 +2708,8 @@ export default function LessonPage() {
                 return (
                   <Block className="col-span-12 md:col-span-6 md:col-start-1 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
                     {/* Card header */}
-                    <div className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-primary/5 gap-2 flex-wrap">
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Story</p>
+                    <div {...HINT_AREA} className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-primary/5 gap-2 flex-wrap">
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="story" /></p>
                       <div className="flex items-center gap-1.5">
                         {/* Audio controls */}
                         {audioStatus === 'idle' && (
@@ -2797,16 +2830,37 @@ export default function LessonPage() {
                 >
                   <Headphones size={26} className="text-white mx-auto" />
                   <div className="text-center">
-                    <p className="font-bold text-sm text-white">Listening</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Hear the story</p>
+                    <p className="font-bold text-sm text-white"><SectionTitle k="listening" /></p>
+                    <p className="text-[11px] text-white/60 mt-0.5">{tLesson('ov_hear_story')}</p>
                   </div>
                 </button>
               </Block>
 
+              {/* Whole story, sentence by sentence */}
+              <AllItemsCard
+                titleKey="whole_story"
+                onClick={() => setAllItemsOpen(true)}
+                iconClass="text-amber-600 dark:text-amber-400"
+                iconBgClass="bg-amber-500/10"
+                className="col-span-12 md:col-span-6"
+              />
+              <AllItemsDialog
+                open={allItemsOpen}
+                onOpenChange={setAllItemsOpen}
+                title={lesson.title}
+                description={tLesson('ov_count_sentences', { count: splitStory(content.story).length })}
+                entries={(() => {
+                  const translations = content.storyTranslation ? splitStory(content.storyTranslation) : []
+                  return splitStory(content.story).map((sentence, i) => ({ word: sentence, translation: translations[i] ?? '' }))
+                })()}
+                languageCode={languageCode}
+                columns={1}
+              />
+
               {/* Key words — left col, row 3 */}
               {(content.highlightedWords?.length ?? 0) > 0 && (
                 <Block className="col-span-12 md:col-span-6 md:col-start-1 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mb-3">Key words</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 mb-3"><SectionTitle k="key_words" /></p>
                   <div className="flex flex-wrap gap-2">
                     {content.highlightedWords!.map((w, i) => (
                       <button
@@ -2830,11 +2884,11 @@ export default function LessonPage() {
 
               {/* Write your sentence — left col, row 4 */}
               <Block className="col-span-12 md:col-span-6 md:col-start-1 p-5 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">Write your own sentence</p>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3"><SectionTitle k="write_sentence" /></p>
                 <textarea
                   value={storyInput}
                   onChange={e => setStoryInput(e.target.value)}
-                  placeholder="Try using one of the key words…"
+                  placeholder={tLesson('ov_sentence_placeholder')}
                   className="w-full p-3 rounded-2xl border-2 border-slate-200 dark:border-white/[0.08] bg-slate-50 dark:bg-white/[0.04] text-sm resize-none h-24 focus:outline-none focus:border-emerald-500/60 transition-colors text-slate-900 dark:text-white placeholder:text-slate-400"
                 />
               </Block>
@@ -2849,7 +2903,7 @@ export default function LessonPage() {
                   className="grid h-full place-content-center gap-2 p-5 min-h-[120px] w-full"
                 >
                   <PenLine size={26} className="text-white mx-auto" />
-                  <p className="font-bold text-xs text-white text-center">Type × 3</p>
+                  <p className="font-bold text-xs text-white text-center"><SectionTitle k="type_x3" /></p>
                 </button>
               </Block>
 
@@ -2874,8 +2928,8 @@ export default function LessonPage() {
                   className="w-full flex items-center justify-between gap-4 px-8 py-5 disabled:opacity-60"
                 >
                   <div className="flex flex-col gap-0.5 text-left">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">All done!</span>
-                    <span className="text-xl font-bold text-white">{saving ? 'Saving…' : 'Finish Lesson 🎉'}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">{tLesson('ov_all_done')}</span>
+                    <span className="text-xl font-bold text-white">{saving ? 'Saving…' : <><SectionTitle k="finish_lesson" /> 🎉</>}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="flex items-center gap-1.5 text-white/70 text-xs font-semibold">
@@ -3142,5 +3196,6 @@ export default function LessonPage() {
         </div>
       )}
     </div>
+    </TitleHintProvider>
   )
 }

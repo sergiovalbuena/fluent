@@ -126,7 +126,21 @@
     "practice_done": "Practice complete! {done}/{total} mastered 🎉",
     "streak_frozen": "🧊 A streak freeze saved your streak!",
     "story_challenge_start": "Start story challenge",
-    "story_challenge_desc": "Type the story sentence by sentence · {count} sentences"
+    "story_challenge_desc": "Type the story sentence by sentence · {count} sentences",
+    "ov_quick_view": "Quick view",
+    "ov_full_page": "Full page",
+    "ov_flip_review": "Flip & review",
+    "ov_hear_identify": "Hear & identify",
+    "ov_test_yourself": "Test yourself",
+    "ov_hear_story": "Hear the story",
+    "ov_count_words": "{count} words",
+    "ov_count_phrases": "{count} phrases",
+    "ov_count_questions": "{count} questions",
+    "ov_count_sentences": "{count} sentences",
+    "ov_all_done": "All done!",
+    "ov_sentence_placeholder": "Try using one of the key words…",
+    "listen_all": "Listen to all",
+    "listen_stop": "Stop"
   },
   "gems": {
     "title": "Gems",
@@ -221,7 +235,11 @@
     "sign_in_desc": "Sync your streak, XP and lessons across devices",
     "sync_note": "Settings sync automatically to your account",
     "version": "Fluent v1.0.0 · Made with ❤️",
-    "soon": "Soon"
+    "soon": "Soon",
+    "title_hints": "Title translations",
+    "title_hints_desc": "Section titles appear in the language you are learning. On a computer, hover over a card to see its title in your language.",
+    "title_hints_off": "Off",
+    "title_hints_until": "Until lesson {n}"
   },
   "progress": {
     "title": "Progress",

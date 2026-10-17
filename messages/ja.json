@@ -126,7 +126,21 @@
     "practice_done": "練習完了！{done}/{total} マスター 🎉",
     "streak_frozen": "🧊 ストリーク保護で連続記録を守りました！",
     "story_challenge_start": "ストーリーチャレンジを始める",
-    "story_challenge_desc": "ストーリーを一文ずつ入力 · {count}文"
+    "story_challenge_desc": "ストーリーを一文ずつ入力 · {count}文",
+    "ov_quick_view": "クイックビュー",
+    "ov_full_page": "全画面",
+    "ov_flip_review": "めくって復習",
+    "ov_hear_identify": "聞いて見分ける",
+    "ov_test_yourself": "腕試し",
+    "ov_hear_story": "ストーリーを聞く",
+    "ov_count_words": "{count}語",
+    "ov_count_phrases": "{count}フレーズ",
+    "ov_count_questions": "{count}問",
+    "ov_count_sentences": "{count}文",
+    "ov_all_done": "完了！",
+    "ov_sentence_placeholder": "キーワードを使ってみよう…",
+    "listen_all": "すべて聞く",
+    "listen_stop": "停止"
   },
   "gems": {
     "title": "ジェム",
@@ -221,7 +235,11 @@
     "sign_in_desc": "連続日数、XP、レッスンをデバイス間で同期",
     "sync_note": "設定は自動的に同期されます",
     "version": "Fluent v1.0.0 · ❤️を込めて制作",
-    "soon": "近日公開"
+    "soon": "近日公開",
+    "title_hints": "タイトルの翻訳",
+    "title_hints_desc": "セクションのタイトルは学習中の言語で表示されます。パソコンでは、カードにカーソルを合わせるとあなたの言語で表示されます。",
+    "title_hints_off": "オフ",
+    "title_hints_until": "レッスン{n}まで"
   },
   "progress": {
     "title": "進捗",

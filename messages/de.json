@@ -126,7 +126,21 @@
     "practice_done": "Übung abgeschlossen! {done}/{total} gemeistert 🎉",
     "streak_frozen": "🧊 Ein Serienschutz hat deine Serie gerettet!",
     "story_challenge_start": "Geschichten-Challenge starten",
-    "story_challenge_desc": "Tippe die Geschichte Satz für Satz · {count} Sätze"
+    "story_challenge_desc": "Tippe die Geschichte Satz für Satz · {count} Sätze",
+    "ov_quick_view": "Schnellansicht",
+    "ov_full_page": "Ganze Seite",
+    "ov_flip_review": "Umdrehen & wiederholen",
+    "ov_hear_identify": "Hören & erkennen",
+    "ov_test_yourself": "Teste dich",
+    "ov_hear_story": "Hör die Geschichte",
+    "ov_count_words": "{count} Wörter",
+    "ov_count_phrases": "{count} Sätze",
+    "ov_count_questions": "{count} Fragen",
+    "ov_count_sentences": "{count} Sätze",
+    "ov_all_done": "Alles erledigt!",
+    "ov_sentence_placeholder": "Versuch, eines der Schlüsselwörter zu verwenden…",
+    "listen_all": "Alles anhören",
+    "listen_stop": "Stopp"
   },
   "gems": {
     "title": "Edelsteine",
@@ -221,7 +235,11 @@
     "sign_in_desc": "Serie, XP und Lektionen geräteübergreifend synchronisieren",
     "sync_note": "Einstellungen werden automatisch synchronisiert",
     "version": "Fluent v1.0.0 · Mit ❤️ gemacht",
-    "soon": "Bald"
+    "soon": "Bald",
+    "title_hints": "Titelübersetzungen",
+    "title_hints_desc": "Abschnittstitel erscheinen in der Sprache, die du lernst. Am Computer zeigt das Überfahren einer Karte ihren Titel in deiner Sprache.",
+    "title_hints_off": "Aus",
+    "title_hints_until": "Bis Lektion {n}"
   },
   "progress": {
     "title": "Fortschritt",

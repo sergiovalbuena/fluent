@@ -126,7 +126,21 @@
     "practice_done": "Pratica completata! {done}/{total} padroneggiate 🎉",
     "streak_frozen": "🧊 Una protezione serie ha salvato la tua serie!",
     "story_challenge_start": "Inizia la sfida della storia",
-    "story_challenge_desc": "Scrivi la storia frase per frase · {count} frasi"
+    "story_challenge_desc": "Scrivi la storia frase per frase · {count} frasi",
+    "ov_quick_view": "Vista rapida",
+    "ov_full_page": "Pagina intera",
+    "ov_flip_review": "Gira e ripassa",
+    "ov_hear_identify": "Ascolta e riconosci",
+    "ov_test_yourself": "Mettiti alla prova",
+    "ov_hear_story": "Ascolta la storia",
+    "ov_count_words": "{count} parole",
+    "ov_count_phrases": "{count} frasi",
+    "ov_count_questions": "{count} domande",
+    "ov_count_sentences": "{count} frasi",
+    "ov_all_done": "Tutto fatto!",
+    "ov_sentence_placeholder": "Prova a usare una delle parole chiave…",
+    "listen_all": "Ascolta tutto",
+    "listen_stop": "Ferma"
   },
   "gems": {
     "title": "Gemme",
@@ -221,7 +235,11 @@
     "sign_in_desc": "Sincronizza la serie, XP e lezioni su tutti i dispositivi",
     "sync_note": "Le impostazioni si sincronizzano automaticamente",
     "version": "Fluent v1.0.0 · Fatto con ❤️",
-    "soon": "Presto"
+    "soon": "Presto",
+    "title_hints": "Traduzione dei titoli",
+    "title_hints_desc": "I titoli delle sezioni appaiono nella lingua che stai imparando. Sul computer, passa sopra una scheda per vedere il titolo nella tua lingua.",
+    "title_hints_off": "Disattivato",
+    "title_hints_until": "Fino alla lezione {n}"
   },
   "progress": {
     "title": "Progressi",

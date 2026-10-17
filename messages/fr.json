@@ -126,7 +126,21 @@
     "practice_done": "Pratique terminée ! {done}/{total} maîtrisés 🎉",
     "streak_frozen": "🧊 Un gel de série a sauvé ta série !",
     "story_challenge_start": "Commencer le défi de l'histoire",
-    "story_challenge_desc": "Écris l'histoire phrase par phrase · {count} phrases"
+    "story_challenge_desc": "Écris l'histoire phrase par phrase · {count} phrases",
+    "ov_quick_view": "Aperçu rapide",
+    "ov_full_page": "Page entière",
+    "ov_flip_review": "Retourne et révise",
+    "ov_hear_identify": "Écoute et identifie",
+    "ov_test_yourself": "Teste-toi",
+    "ov_hear_story": "Écoute l'histoire",
+    "ov_count_words": "{count} mots",
+    "ov_count_phrases": "{count} phrases",
+    "ov_count_questions": "{count} questions",
+    "ov_count_sentences": "{count} phrases",
+    "ov_all_done": "Tout est fait !",
+    "ov_sentence_placeholder": "Essaie d'utiliser un des mots clés…",
+    "listen_all": "Tout écouter",
+    "listen_stop": "Arrêter"
   },
   "gems": {
     "title": "Gemmes",
@@ -221,7 +235,11 @@
     "sign_in_desc": "Synchronisez votre série, XP et leçons sur tous vos appareils",
     "sync_note": "Les paramètres se synchronisent automatiquement",
     "version": "Fluent v1.0.0 · Fait avec ❤️",
-    "soon": "Bientôt"
+    "soon": "Bientôt",
+    "title_hints": "Traduction des titres",
+    "title_hints_desc": "Les titres des sections s'affichent dans la langue que tu apprends. Sur ordinateur, survole une carte pour voir son titre dans ta langue.",
+    "title_hints_off": "Désactivé",
+    "title_hints_until": "Jusqu'à la leçon {n}"
   },
   "progress": {
     "title": "Progrès",

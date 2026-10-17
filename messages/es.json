@@ -126,7 +126,21 @@
     "practice_done": "¡Práctica completa! {done}/{total} dominadas 🎉",
     "streak_frozen": "🧊 ¡Un protector de racha salvó tu racha!",
     "story_challenge_start": "Empezar el reto de la historia",
-    "story_challenge_desc": "Escribe la historia frase por frase · {count} frases"
+    "story_challenge_desc": "Escribe la historia frase por frase · {count} frases",
+    "ov_quick_view": "Vista rápida",
+    "ov_full_page": "Página completa",
+    "ov_flip_review": "Voltea y repasa",
+    "ov_hear_identify": "Escucha e identifica",
+    "ov_test_yourself": "Ponte a prueba",
+    "ov_hear_story": "Escucha la historia",
+    "ov_count_words": "{count} palabras",
+    "ov_count_phrases": "{count} frases",
+    "ov_count_questions": "{count} preguntas",
+    "ov_count_sentences": "{count} frases",
+    "ov_all_done": "¡Todo listo!",
+    "ov_sentence_placeholder": "Intenta usar una de las palabras clave…",
+    "listen_all": "Escuchar todo",
+    "listen_stop": "Detener"
   },
   "gems": {
     "title": "Gemas",
@@ -221,7 +235,11 @@
     "sign_in_desc": "Sincroniza tu racha, XP y lecciones en todos los dispositivos",
     "sync_note": "Los ajustes se sincronizan automáticamente",
     "version": "Fluent v1.0.0 · Hecho con ❤️",
-    "soon": "Pronto"
+    "soon": "Pronto",
+    "title_hints": "Traducción de títulos",
+    "title_hints_desc": "Los títulos de las secciones aparecen en el idioma que aprendes. En el ordenador, pasa el cursor por una tarjeta para ver su título en tu idioma.",
+    "title_hints_off": "Desactivado",
+    "title_hints_until": "Hasta la lección {n}"
   },
   "progress": {
     "title": "Progreso",

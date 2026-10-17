@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
+import { saveTitleHintSettings, useTitleHintSettings } from '@/lib/title-hints'
 import { getLanguage } from '@/lib/languages'
 import { setTranslationLanguage } from '@/app/(app)/actions'
 import { SignOutButton } from '@/components/profile/sign-out-button'
@@ -38,6 +39,7 @@ import {
   Monitor,
   Moon,
   Settings2,
+  Captions,
   Shield,
   Star,
   Sun,
@@ -68,6 +70,9 @@ const DAILY_GOALS = [
   { value: 10, label: '10 min', desc: 'Regular 🔥' },
   { value: 20, label: '20 min', desc: 'Intensive ⚡' },
 ]
+
+/** Lessons the title translations can be kept on until */
+const TITLE_HINT_LESSONS = [1, 2, 3, 4, 5, 6, 8, 10, 15, 20]
 
 const REMINDER_TIMES = [
   '7:00 AM', '8:00 AM', '9:00 AM', '12:00 PM',
@@ -133,6 +138,7 @@ export default function ProfilePage() {
   const [notifications, setNotifications] = useState('Off')
   const [dailyGoal, setDailyGoal]         = useState(10)
   const [reminderTime, setReminderTime]   = useState('8:00 AM')
+  const titleHints = useTitleHintSettings()
 
   // ── Load user + profile on mount ────────────────────────────────────────────
   useEffect(() => {
@@ -495,6 +501,39 @@ export default function ProfilePage() {
                   >
                     Off
                     {reminderTime === 'Off' && <Check size={13} className="text-primary ml-auto" />}
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              {/* Title translations (tooltips on lesson section titles) */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className="w-full text-left cursor-pointer">
+                  <RowInner
+                    icon={Captions}
+                    label={t('title_hints')}
+                    value={titleHints.enabled ? t('title_hints_until', { n: titleHints.untilLesson }) : t('title_hints_off')}
+                  />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="min-w-52 max-w-72">
+                  <p className="px-2 py-1.5 text-xs text-muted-foreground">{t('title_hints_desc')}</p>
+                  <DropdownMenuSeparator />
+                  {TITLE_HINT_LESSONS.map(n => (
+                    <DropdownMenuItem
+                      key={n}
+                      className="justify-between"
+                      onClick={() => saveTitleHintSettings({ enabled: true, untilLesson: n })}
+                    >
+                      {t('title_hints_until', { n })}
+                      {titleHints.enabled && titleHints.untilLesson === n && <Check size={13} className="text-primary" />}
+                    </DropdownMenuItem>
+                  ))}
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    className="text-muted-foreground justify-between"
+                    onClick={() => saveTitleHintSettings({ ...titleHints, enabled: false })}
+                  >
+                    {t('title_hints_off')}
+                    {!titleHints.enabled && <Check size={13} className="text-primary" />}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
