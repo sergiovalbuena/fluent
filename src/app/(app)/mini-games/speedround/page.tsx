@@ -1,13 +1,15 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Zap, Clock, Trophy, Star, ChevronLeft } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -65,8 +67,12 @@ async function saveGameResult(correct: number, total: number) {
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function SpeedRoundPage() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [pool, setPool] = useState<WordPair[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const pool = useMemo<WordPair[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
+  const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
   const [questions, setQuestions] = useState<Question[]>([])
   const [qIndex, setQIndex] = useState(0)
@@ -82,27 +88,6 @@ export default function SpeedRoundPage() {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const lockRef = useRef(false)
 
-  // Fetch vocabulary
-  useEffect(() => {
-    const supabase = createClient()
-    supabase
-      .from('lessons')
-      .select('content, modules!inner(language_code)')
-      .eq('type', 'vocabulary')
-      .eq('is_published', true)
-      .eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        const items: WordPair[] = []
-        data?.forEach((lesson) => {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach((i) => {
-            if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) })
-          })
-        })
-        setPool(items)
-        setLoading(false)
-      })
-  }, [languageCode, translationLang])
 
   const finishGame = useCallback(
     async (finalScore: number, finalAnswered: number) => {
@@ -207,7 +192,7 @@ export default function SpeedRoundPage() {
   if (phase === 'ready') {
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
-        <AppTopbar title="Speed Round" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('speedround_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 gap-8">
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 20 }}
@@ -225,18 +210,20 @@ export default function SpeedRoundPage() {
 
             {/* Title */}
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white">Speed Round</h1>
+              <h1 className="text-4xl font-bold text-white">{tm('speedround_title')}</h1>
               <p className="text-amber-400/70 mt-2 text-base">
-                Answer as many as you can before time runs out!
+                {tm('speedround_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             {/* Stat boxes */}
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Time', value: '60s', icon: Clock },
-                { label: 'Questions', value: '∞', icon: Zap },
-                { label: 'Reward', value: '+3 💎', icon: Trophy },
+                { label: t('stat_time'), value: '60s', icon: Clock },
+                { label: t('stat_questions'), value: '∞', icon: Zap },
+                { label: t('stat_reward'), value: '+3 💎', icon: Trophy },
               ].map(({ label, value, icon: Icon }) => (
                 <div
                   key={label}
@@ -252,7 +239,7 @@ export default function SpeedRoundPage() {
             </div>
 
             {loading && (
-              <p className="text-amber-400/50 text-sm">Loading word pool…</p>
+              <p className="text-amber-400/50 text-sm">{t('loading')}</p>
             )}
 
             <motion.button
@@ -263,7 +250,7 @@ export default function SpeedRoundPage() {
               className="w-full py-4 rounded-2xl text-white text-lg font-bold shadow-xl disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
               style={{ background: 'linear-gradient(135deg, #f59e0b, #f97316)' }}
             >
-              {loading ? 'Loading…' : "Let's Go!"}
+              {loading ? t('loading') : t('start')}
             </motion.button>
           </motion.div>
         </main>
@@ -276,11 +263,11 @@ export default function SpeedRoundPage() {
     const finalAccuracy = answered > 0 ? Math.round((score / answered) * 100) : 0
     const emoji = finalAccuracy >= 80 ? '🏆' : finalAccuracy >= 50 ? '⭐' : '💪'
     const headline =
-      finalAccuracy >= 80 ? 'Blazing Fast!' : finalAccuracy >= 50 ? 'Nice Work!' : 'Keep Practicing!'
+      finalAccuracy >= 80 ? t('headline_great') : finalAccuracy >= 50 ? t('headline_good') : t('headline_keep')
 
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
-        <AppTopbar title="Speed Round" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('speedround_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4">
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
@@ -293,15 +280,15 @@ export default function SpeedRoundPage() {
             <div>
               <h2 className="text-3xl font-bold text-white">{headline}</h2>
               <p className="text-white/50 mt-1">
-                {score} / {answered} correct
+                {t('score_of', { score, total: answered })}
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Correct', value: score.toString() },
-                { label: 'Accuracy', value: `${finalAccuracy}%` },
-                { label: 'XP Earned', value: rewards ? `+${rewards.xp}` : '…' },
+                { label: t('stat_correct'), value: score.toString() },
+                { label: t('stat_accuracy'), value: `${finalAccuracy}%` },
+                { label: t('stat_xp'), value: rewards ? `+${rewards.xp}` : '…' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -328,11 +315,11 @@ export default function SpeedRoundPage() {
                 className="w-full py-3.5 rounded-2xl text-white font-bold text-base shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #f59e0b, #f97316)' }}
               >
-                Play Again
+                {t('play_again')}
               </motion.button>
               <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl bg-white/8 border border-white/12 text-white/70 font-bold text-base hover:bg-white/12 transition-colors">
-                  Back to Mini-games
+                  {t('back_to_games')}
                 </button>
               </Link>
             </div>
@@ -345,7 +332,7 @@ export default function SpeedRoundPage() {
   // ── Playing Screen ─────────────────────────────────────────────────────────────
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
-      <AppTopbar title="Speed Round" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('speedround_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-4 max-w-md mx-auto w-full gap-4">
         {/* Timer bar */}
@@ -354,7 +341,7 @@ export default function SpeedRoundPage() {
             <span className={cn('tabular-nums', timerRed ? 'text-red-400' : 'text-amber-400')}>
               {timeLeft}s
             </span>
-            <span className="text-white/40">{score} correct</span>
+            <span className="text-white/40">{t('n_correct', { n: score })}</span>
           </div>
           <div className="h-2 bg-white/10 rounded-full overflow-hidden">
             <motion.div
@@ -379,7 +366,7 @@ export default function SpeedRoundPage() {
                 className="text-sm font-bold px-4 py-1.5 rounded-full text-white shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #f59e0b, #f97316)' }}
               >
-                x{Math.min(combo, 5)} Combo!
+                {t('combo', { n: Math.min(combo, 5) })}
               </span>
             </motion.div>
           )}
@@ -452,7 +439,7 @@ export default function SpeedRoundPage() {
         {/* Progress indicator */}
         <div className="mt-auto flex items-center justify-center gap-2">
           <span className="text-xs text-white/30 tabular-nums">
-            Question {qIndex + 1} · {answered} answered
+            {t('question_n', { n: qIndex + 1, answered })}
           </span>
         </div>
       </main>

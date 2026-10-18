@@ -4,42 +4,42 @@ import Link from 'next/link'
 import { motion, type Variants } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import {
-  BookOpen, BookType, Gem, Grid3x3, Headphones, Keyboard, LayoutGrid, Mic, Music, PenLine, Play, Shuffle, Zap,
+  BookOpen, BookType, Ear, Eye, Gem, Lightbulb, Sparkles, Headphones, Keyboard, LayoutGrid, Mic, Music, PenLine, Shuffle, Zap,
   type LucideIcon,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 
 // ── Games ─────────────────────────────────────────────────────────────────────
-// size: hero 8×2 · tall 4×2 · wide 8×1 / half 6×1 · third 4×1 · small 3×1 (cols × rows on desktop)
-type Size = 'hero' | 'tall' | 'wide' | 'half' | 'third' | 'small'
+// size: tall 4×2 · wide 8×1 · half 6×1 · third 4×1 · small 3×1 (cols × rows on desktop)
+type Size = 'tall' | 'wide' | 'half' | 'third' | 'small'
 type Game = { id: GameId; icon: LucideIcon; href: string; size: Size; gradient: string; difficulty: 1 | 2 | 3; phoneFull?: boolean }
 type GameId =
-  | 'speedround' | 'verbs' | 'listening' | 'wordscramble' | 'flashcards' | 'musictime' | 'monkeytype'
-  | 'filltheblank' | 'dictation' | 'matching' | 'tictactoe' | 'typex3' | 'shortstory' | 'shortvideo'
+  | 'vocabulary' | 'speedround' | 'verbs' | 'listening' | 'wordscramble' | 'flashcards' | 'musictime' | 'monkeytype'
+  | 'filltheblank' | 'dictation' | 'matching' | 'typex3' | 'shortstory'
 
 // Ordered to pack the 12-column grid (see the layout note above SIZE_CLASS)
 const GAMES: Game[] = [
-  { id: 'speedround', icon: Zap, href: '/mini-games/speedround', size: 'hero', difficulty: 3, gradient: 'linear-gradient(135deg, #f59e0b 0%, #f97316 55%, #ea580c 100%)' },
+  { id: 'vocabulary', icon: Sparkles, href: '/mini-games/vocabulary', size: 'wide', difficulty: 1, gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 55%, #a855f7 100%)' },
+  { id: 'speedround', icon: Zap, href: '/mini-games/speedround', size: 'wide', difficulty: 3, gradient: 'linear-gradient(135deg, #f59e0b 0%, #f97316 55%, #ea580c 100%)' },
   { id: 'verbs', icon: BookType, href: '/verbs/practice', size: 'tall', difficulty: 2, gradient: 'linear-gradient(160deg, #ff8052 0%, #e11d48 100%)' },
   { id: 'monkeytype', icon: Keyboard, href: '/mini-games/monkeytype', size: 'wide', difficulty: 3, gradient: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)' },
+  { id: 'wordscramble', icon: Shuffle, href: '/mini-games/wordscramble', size: 'third', difficulty: 2, gradient: 'linear-gradient(135deg, #3b82f6 0%, #4338ca 100%)' },
+  { id: 'typex3', icon: PenLine, href: '/mini-games/typex3', size: 'third', difficulty: 2, gradient: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%)' },
   { id: 'listening', icon: Headphones, href: '/mini-games/listening', size: 'half', difficulty: 2, gradient: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)' },
-  { id: 'wordscramble', icon: Shuffle, href: '/mini-games/wordscramble', size: 'small', difficulty: 2, gradient: 'linear-gradient(135deg, #3b82f6 0%, #4338ca 100%)' },
-  { id: 'flashcards', icon: BookOpen, href: '/mini-games/flashcards', size: 'small', difficulty: 1, gradient: 'linear-gradient(135deg, #d97706 0%, #b45309 100%)' },
+  { id: 'flashcards', icon: BookOpen, href: '/mini-games/flashcards', size: 'half', difficulty: 1, gradient: 'linear-gradient(135deg, #d97706 0%, #b45309 100%)' },
   { id: 'musictime', icon: Music, href: '/mini-games/musictime', size: 'tall', difficulty: 2, gradient: 'linear-gradient(160deg, #c026d3 0%, #6d28d9 100%)' },
   { id: 'filltheblank', icon: PenLine, href: '/mini-games/filltheblank', size: 'third', difficulty: 1, gradient: 'linear-gradient(135deg, #059669 0%, #0d9488 100%)' },
   { id: 'dictation', icon: Mic, href: '/mini-games/dictation', size: 'third', difficulty: 3, gradient: 'linear-gradient(135deg, #be123c 0%, #e11d48 100%)' },
   { id: 'matching', icon: LayoutGrid, href: '/mini-games/matching', size: 'third', difficulty: 2, gradient: 'linear-gradient(135deg, #0e7490 0%, #0891b2 100%)' },
-  { id: 'tictactoe', icon: Grid3x3, href: '/mini-games/tictactoe', size: 'third', difficulty: 1, gradient: 'linear-gradient(135deg, #4338ca 0%, #6366f1 100%)' },
-  { id: 'typex3', icon: PenLine, href: '/mini-games/typex3', size: 'third', difficulty: 2, gradient: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%)' },
   { id: 'shortstory', icon: BookOpen, href: '/mini-games/shortstory', size: 'third', difficulty: 2, gradient: 'linear-gradient(135deg, #9a3412 0%, #c2410c 100%)' },
-  { id: 'shortvideo', icon: Play, href: '/mini-games/shortvideo', size: 'third', phoneFull: true, difficulty: 1, gradient: 'linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%)' },
 ]
 
-// Desktop rows: intro 4 + speed 8×2 · verbs 4×2 + monkeytype 8 · listening 6 + 3 + 3 ·
-// music 4×2 + four thirds · three thirds
+// Desktop rows: intro 4×2 + vocabulary 8 / speed 8 · verbs 4×2 + monkeytype 8 /
+// scramble 4 + type×3 4 · listening 6 + flashcards 6 · music 4×2 + fill, dictation /
+// matching, story
 const SIZE_CLASS: Record<Size, string> = {
-  hero: 'col-span-12 md:col-span-8 row-span-2',
   tall: 'col-span-6 md:col-span-4 row-span-2',
   wide: 'col-span-12 md:col-span-8',
   half: 'col-span-12 sm:col-span-6',
@@ -75,11 +75,15 @@ export function MiniGamesContent({ stats }: { stats: { gemsFromGames: number; ga
           {/* Intro */}
           <motion.div
             variants={card}
-            className="col-span-12 md:col-span-4 row-span-1 flex flex-col justify-between rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.05)]"
+            className="col-span-12 md:col-span-4 md:row-span-2 flex flex-col justify-between gap-4 rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.05)]"
           >
             <div>
               <h1 className="text-xl font-bold leading-tight text-slate-900 dark:text-white">{t('heading')}</h1>
               <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t('subtitle')}</p>
+            </div>
+            <div>
+              <SourcePicker className="w-full" />
+              <p className="mt-1.5 px-1 text-[11px] text-slate-400">{t('source_hint')}</p>
             </div>
             <div className="flex flex-wrap gap-1.5 text-[11px] font-bold">
               <span className="flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-primary"><Zap size={11} /> {t('reward_xp')}</span>
@@ -102,7 +106,7 @@ export function MiniGamesContent({ stats }: { stats: { gemsFromGames: number; ga
 function GameCard({ game }: { game: Game }) {
   const t = useTranslations('mini_games')
   const Icon = game.icon
-  const big = game.size === 'hero' || game.size === 'tall'
+  const big = game.size === 'tall'
 
   return (
     <Link
@@ -121,7 +125,6 @@ function GameCard({ game }: { game: Game }) {
           aria-hidden
           className={cn(
             'pointer-events-none absolute',
-            game.size === 'hero' && 'inset-y-0 right-0 w-1/2',
             game.size === 'tall' && 'inset-x-0 top-0 h-[58%]',
             (game.size === 'wide' || game.size === 'half') && 'inset-y-0 right-0 w-[48%]',
             game.size === 'third' && 'right-0 top-0 h-[62%] w-[60%] md:h-full md:w-[52%]',
@@ -143,15 +146,10 @@ function GameCard({ game }: { game: Game }) {
             </span>
           </div>
           <div className={cn(game.size === 'third' ? 'md:max-w-[55%]' : game.size === 'small' || game.size === 'tall' ? 'max-w-none' : 'max-w-[60%]')}>
-            <p className={cn('font-bold leading-tight', game.size === 'hero' ? 'text-3xl' : big ? 'text-xl' : 'text-base')}>
+            <p className={cn('font-bold leading-tight', big ? 'text-xl' : 'text-base')}>
               {t(`${game.id}_title`)}
             </p>
             <p className={cn('mt-1 leading-snug text-white/70', big ? 'text-sm' : 'text-xs line-clamp-2')}>{t(`${game.id}_desc`)}</p>
-            {game.size === 'hero' && (
-              <span className="mt-4 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-orange-600 shadow-lg transition-transform group-hover:translate-x-1">
-                {t('play_now')} <Play size={14} className="fill-current" />
-              </span>
-            )}
           </div>
         </div>
       </motion.div>
@@ -163,6 +161,7 @@ function GameCard({ game }: { game: Game }) {
 
 function Illustration({ id }: { id: GameId }) {
   switch (id) {
+    case 'vocabulary': return <VocabIllustration />
     case 'speedround': return <SpeedIllustration />
     case 'verbs': return <VerbsIllustration />
     case 'listening': return <WaveIllustration bars={18} />
@@ -173,10 +172,8 @@ function Illustration({ id }: { id: GameId }) {
     case 'filltheblank': return <BlankIllustration />
     case 'dictation': return <MicIllustration />
     case 'matching': return <MatchIllustration />
-    case 'tictactoe': return <TicTacIllustration />
     case 'typex3': return <TypeX3Illustration />
     case 'shortstory': return <BookIllustration />
-    case 'shortvideo': return <VideoIllustration />
   }
 }
 
@@ -184,11 +181,43 @@ const Center = ({ children, className }: { children: React.ReactNode; className?
   <div className={cn('flex h-full w-full items-center justify-center', className)}>{children}</div>
 )
 
+function VocabIllustration() {
+  const stages = [Lightbulb, Eye, Ear, Keyboard]
+  return (
+    <Center className="gap-3 pr-4 [perspective:700px]">
+      <motion.div
+        className="relative h-20 w-36 [transform-style:preserve-3d] sm:h-24 sm:w-40"
+        variants={{ animate: { rotateY: 0 }, hover: { rotateY: 180, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}
+      >
+        <span className="absolute inset-0 flex flex-col items-center justify-center gap-1 rounded-2xl bg-white text-indigo-700 shadow-2xl [backface-visibility:hidden]">
+          <span className="text-3xl">🍎</span>
+          <span className="text-base font-bold">la pomme</span>
+        </span>
+        <span className="absolute inset-0 flex flex-col items-center justify-center gap-1 rounded-2xl bg-indigo-100 text-indigo-800 shadow-2xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <span className="text-3xl">🍎</span>
+          <span className="text-base font-bold">la manzana</span>
+        </span>
+      </motion.div>
+      <div className="hidden flex-col gap-1.5 lg:flex">
+        {stages.map((Icon, i) => (
+          <motion.span
+            key={i}
+            className="flex size-7 items-center justify-center rounded-lg bg-white/15"
+            variants={{ animate: { scale: 1, backgroundColor: 'rgba(255,255,255,0.15)' }, hover: { scale: [1, 1.2, 1], backgroundColor: 'rgba(255,255,255,0.35)', transition: { duration: 0.4, delay: 0.15 + i * 0.12 } } }}
+          >
+            <Icon size={13} />
+          </motion.span>
+        ))}
+      </div>
+    </Center>
+  )
+}
+
 function SpeedIllustration() {
   const words = ['bonjour', 'merci', 'maison', 'chat']
   return (
     <Center>
-      <div className="relative size-24 sm:size-44 md:size-52 max-sm:-translate-y-10">
+      <div className="relative size-24 sm:size-28">
         <svg viewBox="0 0 100 100" className="absolute inset-0 -rotate-90">
           <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="6" />
           <motion.circle
@@ -201,7 +230,7 @@ function SpeedIllustration() {
           className="absolute inset-0 flex items-center justify-center"
           variants={{ animate: { rotate: 0, scale: 1 }, hover: { rotate: [0, -12, 10, -6, 0], scale: 1.15, transition: { duration: 0.5 } } }}
         >
-          <Zap className="size-9 fill-white text-white drop-shadow-lg sm:size-16" />
+          <Zap className="size-9 fill-white text-white drop-shadow-lg sm:size-11" />
         </motion.div>
         {words.map((w, i) => (
           <motion.span
@@ -406,33 +435,6 @@ function MatchIllustration() {
   )
 }
 
-function TicTacIllustration() {
-  const cells = ['x', '', 'o', '', 'x', '', 'o', '', 'x']
-  return (
-    <Center className="pr-3">
-      <div className="grid grid-cols-3 gap-1">
-        {cells.map((c, i) => (
-          <span key={i} className="flex size-6 items-center justify-center rounded-md bg-white/15 text-xs font-black">
-            {c && (
-              <motion.span
-                variants={{ animate: { scale: c === 'x' && i === 8 ? 0 : 1 }, hover: {
-                  scale: 1,
-                  rotate: [0, 90, 0],
-                  // Springs take only two keyframes: the rotation uses a tween
-                  transition: { scale: { ...spring, delay: i * 0.04 }, rotate: { duration: 0.4, delay: i * 0.04 } },
-                } }}
-                className={c === 'x' ? 'text-white' : 'text-indigo-200'}
-              >
-                {c.toUpperCase()}
-              </motion.span>
-            )}
-          </span>
-        ))}
-      </div>
-    </Center>
-  )
-}
-
 function TypeX3Illustration() {
   return (
     <Center className="pr-3">
@@ -466,29 +468,6 @@ function BookIllustration() {
           <span className="mx-3 mt-2 block h-1 rounded bg-orange-200" />
           <span className="mx-3 mt-2 block h-1 w-2/3 rounded bg-orange-200" />
         </motion.span>
-      </div>
-    </Center>
-  )
-}
-
-function VideoIllustration() {
-  return (
-    <Center className="pr-3">
-      <div className="relative w-32 overflow-hidden rounded-xl bg-black/30 shadow-lg ring-1 ring-white/15">
-        <div className="flex aspect-video items-center justify-center">
-          <motion.span
-            className="flex size-10 items-center justify-center rounded-full bg-white text-red-600"
-            variants={{ animate: { scale: 1 }, hover: { scale: 1.2, transition: spring } }}
-          >
-            <Play size={16} className="ml-0.5 fill-current" />
-          </motion.span>
-        </div>
-        <div className="h-1 bg-white/20">
-          <motion.div
-            className="h-full bg-red-500"
-            variants={{ animate: { width: '15%' }, hover: { width: '85%', transition: { duration: 1.6, ease: 'linear' } } }}
-          />
-        </div>
       </div>
     </Center>
   )

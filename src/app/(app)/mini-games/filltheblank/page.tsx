@@ -1,13 +1,16 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { PenLine, Trophy } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation, stripArticle } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
+import { stripArticle } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -28,27 +31,30 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-const SKIP_WORDS = new Set([
-  'para', 'por', 'que', 'con', 'una', 'está', 'hay', 'los', 'las', 'del',
-  'muy', 'por', 'más', 'pero', 'este', 'esta', 'ese', 'esa', 'sus', 'son',
-])
+// Short function words never make a good blank, per course language
+const SKIP_WORDS: Record<string, Set<string>> = {
+  es: new Set(['para', 'por', 'que', 'con', 'una', 'está', 'hay', 'los', 'las', 'del', 'muy', 'más', 'pero', 'este', 'esta', 'ese', 'esa', 'sus', 'son']),
+  fr: new Set(['dans', 'pour', 'avec', 'sans', 'sous', 'chez', 'mais', 'donc', 'cette', 'ces', 'des', 'les', 'une', 'est', 'sont', 'pas', 'plus', 'très', 'leur', 'leurs', 'nous', 'vous', 'elle', 'elles', 'ils', 'qui', 'que', 'quoi', 'mon', 'ton', 'son', 'mes', 'tes', 'ses', 'aux', 'du']),
+  en: new Set(['the', 'and', 'that', 'this', 'with', 'from', 'have', 'has', 'are', 'was', 'were', 'your', 'their', 'there', 'they', 'what', 'when', 'where', 'which', 'will', 'would', 'about', 'into', 'than', 'then', 'them', 'some']),
+}
 
-function blankWord(phrase: string): BlankResult {
+function blankWord(phrase: string, lang: string): BlankResult {
+  const skip = SKIP_WORDS[lang] ?? new Set<string>()
   const words = phrase.split(' ')
   const candidates = words
     .map((w, i) => ({
       raw: w,
-      clean: w.replace(/[,?.¿¡!]/g, '').toLowerCase(),
+      clean: w.replace(/[,?.¿¡!«»"]/g, '').toLowerCase(),
       i,
     }))
-    .filter(({ clean, i }) => i > 0 && clean.length >= 4 && !SKIP_WORDS.has(clean))
+    .filter(({ clean, i }) => i > 0 && clean.length >= 4 && !skip.has(clean))
 
   const chosen =
     candidates.length > 0
       ? candidates[Math.floor(Math.random() * candidates.length)]
       : {
           raw: words[words.length - 1],
-          clean: words[words.length - 1].replace(/[,?.¿¡!]/g, '').toLowerCase(),
+          clean: words[words.length - 1].replace(/[,?.¿¡!«»"]/g, '').toLowerCase(),
           i: words.length - 1,
         }
 
@@ -74,9 +80,16 @@ const TOTAL_ROUNDS = 10
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function FillTheBlankPage() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [phrases, setPhrases] = useState<PhrasePair[]>([])
-  const [vocabPool, setVocabPool] = useState<WordPair[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  // Phrases (and words for distractors) from the source chosen on /mini-games
+  const practice = usePracticeContent(languageCode, translationLang)
+  const phrases = useMemo<PhrasePair[]>(
+    () => practice.phrases.filter(p => p.phrase.split(' ').length >= 3).map(p => ({ phrase: p.phrase, translation: p.translation })),
+    [practice.phrases],
+  )
+  const vocabPool = useMemo<WordPair[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
+  const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
 
   // Round state
@@ -92,52 +105,6 @@ export default function FillTheBlankPage() {
   const [rewards, setRewards] = useState<{ xp: number; gems: number } | null>(null)
   const [usedIndices, setUsedIndices] = useState<number[]>([])
 
-  // Fetch phrases + vocab
-  useEffect(() => {
-    const supabase = createClient()
-    Promise.all([
-      supabase
-        .from('lessons')
-        .select('content, modules!inner(language_code)')
-        .eq('type', 'phrases')
-        .eq('is_published', true)
-        .eq('modules.language_code', languageCode),
-      supabase
-        .from('lessons')
-        .select('content, modules!inner(language_code)')
-        .eq('type', 'vocabulary')
-        .eq('is_published', true)
-        .eq('modules.language_code', languageCode),
-    ]).then(([phrasesRes, vocabRes]) => {
-      // Collect phrases
-      const phraseItems: PhrasePair[] = []
-      phrasesRes.data?.forEach((lesson) => {
-        const c = lesson.content as {
-          items?: Array<{ phrase: string; translation: string }>
-          phrases?: Array<{ phrase: string; translation: string }>
-        }
-        const arr = c.items ?? c.phrases ?? []
-        arr.forEach((i) => {
-          if (i.phrase && i.translation && i.phrase.split(' ').length >= 3) {
-            phraseItems.push({ phrase: i.phrase, translation: pickTranslation(i, translationLang) })
-          }
-        })
-      })
-
-      // Collect vocab for distractors
-      const vocabItems: WordPair[] = []
-      vocabRes.data?.forEach((lesson) => {
-        const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-        c.items?.forEach((i) => {
-          if (i.word && i.translation) vocabItems.push({ word: i.word, translation: pickTranslation(i, translationLang) })
-        })
-      })
-
-      setPhrases(phraseItems)
-      setVocabPool(vocabItems)
-      setLoading(false)
-    })
-  }, [languageCode, translationLang])
 
   const loadRound = useCallback(
     (currentPhrases: PhrasePair[], currentVocab: WordPair[], used: number[]) => {
@@ -146,9 +113,9 @@ export default function FillTheBlankPage() {
 
       const pickedIdx = available[Math.floor(Math.random() * available.length)]
       const pair = currentPhrases[pickedIdx]
-      const { display, blank: blankWord_ } = blankWord(pair.phrase)
+      const { display, blank: blankWord_ } = blankWord(pair.phrase, languageCode)
 
-      // Build distractors: Spanish words of similar length (±4 chars)
+      // Build distractors: course words of similar length (±4 chars)
       const distractors = shuffle(
         currentVocab
           .map((v) => stripArticle(v.word, languageCode))
@@ -244,7 +211,7 @@ export default function FillTheBlankPage() {
   if (phase === 'ready') {
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#021410' }}>
-        <AppTopbar title="Fill in the Blank" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('filltheblank_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 gap-8">
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 20 }}
@@ -260,17 +227,19 @@ export default function FillTheBlankPage() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white">Fill in the Blank</h1>
+              <h1 className="text-4xl font-bold text-white">{tm('filltheblank_title')}</h1>
               <p className="text-emerald-400/70 mt-2 text-base">
-                Complete the Spanish sentence with the right word!
+                {tm('filltheblank_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Rounds', value: '10' },
-                { label: 'Phrases', value: 'ES' },
-                { label: 'Reward', value: '+3 💎' },
+                { label: t('stat_rounds'), value: '10' },
+                { label: t('stat_phrases'), value: languageCode.toUpperCase() },
+                { label: t('stat_reward'), value: '+3 💎' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -284,7 +253,7 @@ export default function FillTheBlankPage() {
               ))}
             </div>
 
-            {loading && <p className="text-emerald-400/50 text-sm">Loading phrases…</p>}
+            {loading && <p className="text-emerald-400/50 text-sm">{t('loading')}</p>}
 
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -294,7 +263,7 @@ export default function FillTheBlankPage() {
               className="w-full py-4 rounded-2xl text-white text-lg font-bold shadow-xl disabled:opacity-40 disabled:cursor-not-allowed"
               style={{ background: 'linear-gradient(135deg, #059669, #0d9488)' }}
             >
-              {loading ? 'Loading…' : 'Start Game'}
+              {loading ? t('loading') : t('start')}
             </motion.button>
           </motion.div>
         </main>
@@ -308,14 +277,14 @@ export default function FillTheBlankPage() {
     const emoji = accuracy >= 80 ? '🏆' : accuracy >= 50 ? '⭐' : '💪'
     const headline =
       accuracy >= 80
-        ? 'Grammar Guru!'
+        ? t('headline_great')
         : accuracy >= 50
-          ? 'Solid Work!'
-          : 'Keep Practicing!'
+          ? t('headline_good')
+          : t('headline_keep')
 
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#021410' }}>
-        <AppTopbar title="Fill in the Blank" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('filltheblank_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4">
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
@@ -327,15 +296,15 @@ export default function FillTheBlankPage() {
             <div>
               <h2 className="text-3xl font-bold text-white">{headline}</h2>
               <p className="text-white/50 mt-1">
-                {score} / {TOTAL_ROUNDS} correct
+                {t('score_of', { score, total: TOTAL_ROUNDS })}
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Correct', value: score.toString() },
-                { label: 'Accuracy', value: `${accuracy}%` },
-                { label: 'XP Earned', value: rewards ? `+${rewards.xp}` : '…' },
+                { label: t('stat_correct'), value: score.toString() },
+                { label: t('stat_accuracy'), value: `${accuracy}%` },
+                { label: t('stat_xp'), value: rewards ? `+${rewards.xp}` : '…' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -362,11 +331,11 @@ export default function FillTheBlankPage() {
                 className="w-full py-3.5 rounded-2xl text-white font-bold text-base shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #059669, #0d9488)' }}
               >
-                Play Again
+                {t('play_again')}
               </motion.button>
               <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl bg-white/8 border border-white/12 text-white/70 font-bold text-base hover:bg-white/12 transition-colors">
-                  Back to Mini-games
+                  {t('back_to_games')}
                 </button>
               </Link>
             </div>
@@ -381,14 +350,14 @@ export default function FillTheBlankPage() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#021410' }}>
-      <AppTopbar title="Fill in the Blank" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('filltheblank_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-4 max-w-md mx-auto w-full gap-5">
         {/* Progress */}
         <div className="space-y-1.5">
           <div className="flex items-center justify-between text-xs font-bold">
-            <span className="text-emerald-400">Round {round + 1} / {TOTAL_ROUNDS}</span>
-            <span className="text-white/40">{score} correct</span>
+            <span className="text-emerald-400">{t('round_of', { n: round + 1, total: TOTAL_ROUNDS })}</span>
+            <span className="text-white/40">{t('n_correct', { n: score })}</span>
           </div>
           <div className="h-2 bg-white/10 rounded-full overflow-hidden">
             <motion.div
@@ -469,7 +438,7 @@ export default function FillTheBlankPage() {
                     exit={{ opacity: 0 }}
                     className="text-center text-emerald-400 font-bold text-sm mt-3"
                   >
-                    Correct!
+                    {t('correct')}
                   </motion.p>
                 )}
                 {roundState === 'wrong' && (
@@ -479,7 +448,7 @@ export default function FillTheBlankPage() {
                     exit={{ opacity: 0 }}
                     className="text-center text-red-400 font-bold text-sm mt-3"
                   >
-                    The answer was: <span className="text-white">{blank}</span>
+                    {t('answer_was')} <span className="text-white">{blank}</span>
                   </motion.p>
                 )}
               </AnimatePresence>

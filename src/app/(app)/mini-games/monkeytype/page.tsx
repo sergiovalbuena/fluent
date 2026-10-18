@@ -1,12 +1,14 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { Keyboard } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -14,7 +16,6 @@ import { addRewards } from '@/lib/rewards'
 type CharState = 'correct' | 'wrong' | 'pending'
 type WordStatus = 'done-correct' | 'done-wrong' | 'current' | 'upcoming'
 type Phase = 'ready' | 'playing' | 'finished'
-type WordPair = { word: string; translation: string }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function shuffle<T>(arr: T[]): T[] {
@@ -40,8 +41,12 @@ async function saveGameResult(correct: number, total: number) {
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function MonkeyTypePage() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [pool, setPool] = useState<string[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const pool = useMemo<string[]>(() => practice.words.map(w => w.word), [practice.words])
+  const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
   const [timerChoice, setTimerChoice] = useState<30 | 60>(60)
 
@@ -63,20 +68,6 @@ export default function MonkeyTypePage() {
   const currentWordRef = useRef<HTMLSpanElement>(null)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
-  // Load vocab
-  useEffect(() => {
-    const supabase = createClient()
-    supabase.from('lessons').select('content, modules!inner(language_code)').eq('type', 'vocabulary').eq('is_published', true).eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        const items: WordPair[] = []
-        data?.forEach(lesson => {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) }) })
-        })
-        setPool(items.map(i => i.word))
-        setLoading(false)
-      })
-  }, [languageCode, translationLang])
 
   // Scroll current word into view
   useEffect(() => {
@@ -95,7 +86,7 @@ export default function MonkeyTypePage() {
   }, [])
 
   function startGame() {
-    const wordList = buildWordList(pool.length > 0 ? pool : ['hola', 'casa', 'perro', 'gato', 'agua'])
+    const wordList = buildWordList(pool)
     setWords(wordList)
     setWordStatuses(wordList.map(() => 'upcoming' as WordStatus))
     setCurrentIndex(0)
@@ -194,7 +185,7 @@ export default function MonkeyTypePage() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#050e00' }}>
-      <AppTopbar title="MonkeyType" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('monkeytype_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-3xl mx-auto w-full">
 
@@ -214,28 +205,30 @@ export default function MonkeyTypePage() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white mb-2">MonkeyType</h1>
+              <h1 className="text-4xl font-bold text-white mb-2">{tm('monkeytype_title')}</h1>
               <p className="text-white/50 text-sm max-w-sm">
-                Type Spanish words as fast as you can — test your speed and accuracy
+                {tm('monkeytype_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             {/* Timer choice */}
             <div className="flex flex-col items-center gap-3">
-              <p className="text-white/40 text-xs font-bold uppercase tracking-widest">Timer</p>
+              <p className="text-white/40 text-xs font-bold uppercase tracking-widest">{t('stat_time')}</p>
               <div className="flex gap-3">
-                {([30, 60] as const).map(t => (
+                {([30, 60] as const).map(secs => (
                   <button
-                    key={t}
-                    onClick={() => setTimerChoice(t)}
+                    key={secs}
+                    onClick={() => setTimerChoice(secs)}
                     className={cn(
                       'px-6 py-2.5 rounded-xl text-sm font-bold border-2 transition-all',
-                      timerChoice === t
+                      timerChoice === secs
                         ? 'bg-lime-400/20 border-lime-400 text-lime-400'
                         : 'bg-white/5 border-white/10 text-white/40 hover:border-white/20'
                     )}
                   >
-                    {t}s
+                    {secs}s
                   </button>
                 ))}
               </div>
@@ -243,17 +236,17 @@ export default function MonkeyTypePage() {
 
             {/* Reward */}
             <div className="bg-white/5 border border-white/10 rounded-2xl px-8 py-4 text-center">
-              <p className="text-white/40 text-xs font-bold uppercase tracking-widest mb-1">Reward</p>
+              <p className="text-white/40 text-xs font-bold uppercase tracking-widest mb-1">{t('stat_reward')}</p>
               <p className="text-2xl font-bold text-white">+3 💎</p>
             </div>
 
             <button
               onClick={startGame}
-              disabled={loading}
+              disabled={loading || pool.length === 0}
               className="px-10 py-3.5 rounded-2xl text-base font-bold text-white transition-all hover:scale-105 disabled:opacity-40"
               style={{ background: 'linear-gradient(135deg, #4d7c0f, #65a30d)' }}
             >
-              {loading ? 'Loading words…' : 'Start Typing!'}
+              {loading ? t('loading') : t('start')}
             </button>
           </motion.div>
         )}
@@ -336,7 +329,7 @@ export default function MonkeyTypePage() {
               value={inputValue}
               onChange={e => setInputValue(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Type here, press Space to submit…"
+              placeholder={t('type_space')}
               className="w-full bg-transparent border-b-2 border-lime-400/30 focus:border-lime-400 outline-none text-white text-xl font-mono py-3 px-1 placeholder:text-white/20 transition-colors"
               autoComplete="off"
               autoCorrect="off"
@@ -345,7 +338,7 @@ export default function MonkeyTypePage() {
             />
 
             {/* Bottom hint */}
-            <p className="text-white/20 text-xs text-center">Press Space to submit each word</p>
+            <p className="text-white/20 text-xs text-center">{t('space_hint')}</p>
           </div>
         )}
 
@@ -363,7 +356,7 @@ export default function MonkeyTypePage() {
               <Keyboard size={44} className="text-white" />
             </div>
 
-            <h2 className="text-3xl font-bold text-white">Time&apos;s up!</h2>
+            <h2 className="text-3xl font-bold text-white">{t('time_up')}</h2>
 
             <div className="grid grid-cols-2 gap-4 w-full max-w-xs">
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-lime-400/20">
@@ -372,15 +365,15 @@ export default function MonkeyTypePage() {
               </div>
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-white/10">
                 <p className="text-white text-4xl font-bold tabular-nums">{accuracy}%</p>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">Accuracy</p>
+                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">{t('stat_accuracy')}</p>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-white/10">
                 <p className="text-white text-3xl font-bold tabular-nums">{correctWords}</p>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">Correct</p>
+                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">{t('stat_correct')}</p>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-white/10">
                 <p className="text-white text-3xl font-bold tabular-nums">{totalWords}</p>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">Total</p>
+                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">{t('stat_total')}</p>
               </div>
             </div>
 
@@ -401,13 +394,13 @@ export default function MonkeyTypePage() {
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #4d7c0f, #65a30d)' }}
               >
-                Play Again
+                {t('play_again')}
               </button>
               <a
                 href="/mini-games"
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all"
               >
-                Back to Mini-games
+                {t('back_to_games')}
               </a>
             </div>
           </motion.div>

@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       // The games section moved from /play to /mini-games
       { source: '/play', destination: '/mini-games', permanent: true },
       { source: '/play/:path*', destination: '/mini-games/:path*', permanent: true },
+      // Removed mini-games
+      { source: '/mini-games/shortvideo', destination: '/mini-games', permanent: false },
+      { source: '/mini-games/tictactoe', destination: '/mini-games', permanent: false },
     ]
   },
 };

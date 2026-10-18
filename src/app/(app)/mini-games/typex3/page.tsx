@@ -1,12 +1,14 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { PenLine } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -38,8 +40,12 @@ async function saveGameResult(correct: number, total: number) {
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function TypeX3Page() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [pool, setPool] = useState<WordPair[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const pool = useMemo<WordPair[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
+  const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
 
   // Game state
@@ -57,27 +63,9 @@ export default function TypeX3Page() {
 
   const inputRef = useRef<HTMLInputElement>(null)
 
-  // Load vocab
-  useEffect(() => {
-    const supabase = createClient()
-    supabase.from('lessons').select('content, modules!inner(language_code)').eq('type', 'vocabulary').eq('is_published', true).eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        const items: WordPair[] = []
-        data?.forEach(lesson => {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) }) })
-        })
-        setPool(items)
-        setLoading(false)
-      })
-  }, [languageCode, translationLang])
 
   function startGame() {
-    const source = pool.length > 0 ? pool : [
-      { word: 'hola', translation: 'hello' },
-      { word: 'casa', translation: 'house' },
-      { word: 'perro', translation: 'dog' },
-    ]
+    const source = pool
     const w = shuffle(source).slice(0, 10)
     setWords(w)
     setWordIndex(0)
@@ -149,7 +137,7 @@ export default function TypeX3Page() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#001a2e' }}>
-      <AppTopbar title="Type × 3" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('typex3_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full">
 
@@ -168,17 +156,19 @@ export default function TypeX3Page() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white mb-2">Type × 3</h1>
+              <h1 className="text-4xl font-bold text-white mb-2">{tm('typex3_title')}</h1>
               <p className="text-white/50 text-sm max-w-sm">
-                Reinforce vocabulary through muscle memory — type each word 3 times
+                {tm('typex3_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Words', value: '10' },
-                { label: 'Reps each', value: '×3' },
-                { label: 'Reward', value: '+3 💎' },
+                { label: t('stat_words'), value: '10' },
+                { label: t('stat_reps'), value: '×3' },
+                { label: t('stat_reward'), value: '+3 💎' },
               ].map(({ label, value }) => (
                 <div key={label} className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
                   <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-1">{label}</p>
@@ -189,11 +179,11 @@ export default function TypeX3Page() {
 
             <button
               onClick={startGame}
-              disabled={loading}
+              disabled={loading || pool.length === 0}
               className="px-10 py-3.5 rounded-2xl text-base font-bold text-white transition-all hover:scale-105 disabled:opacity-40"
               style={{ background: 'linear-gradient(135deg, #0369a1, #0284c7)' }}
             >
-              {loading ? 'Loading…' : 'Start!'}
+              {loading ? t('loading') : t('start')}
             </button>
           </motion.div>
         )}
@@ -207,7 +197,7 @@ export default function TypeX3Page() {
                 Word <span className="text-white font-bold">{wordIndex + 1}</span> / {words.length}
               </span>
               <span className="text-sky-400 font-bold text-sm">
-                {perfectWords} perfect
+                {t('n_perfect', { n: perfectWords })}
               </span>
             </div>
 
@@ -220,7 +210,7 @@ export default function TypeX3Page() {
                   className="flex flex-col items-center gap-3"
                 >
                   <p className="text-5xl">✓</p>
-                  <p className="text-2xl font-bold text-sky-400">Mastered!</p>
+                  <p className="text-2xl font-bold text-sky-400">{t('mastered_word')}</p>
                 </motion.div>
               ) : (
                 <>
@@ -255,7 +245,7 @@ export default function TypeX3Page() {
                 value={inputValue}
                 onChange={e => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Type the Spanish word…"
+                placeholder={t('type_word')}
                 disabled={showMastered}
                 className={cn(
                   'w-full bg-white/5 border-2 rounded-2xl px-4 py-3.5 text-white text-lg font-mono outline-none transition-all placeholder:text-white/20',
@@ -274,7 +264,7 @@ export default function TypeX3Page() {
               className="w-full py-3.5 rounded-2xl text-base font-bold text-white transition-all hover:scale-[1.02] disabled:opacity-40"
               style={{ background: 'linear-gradient(135deg, #0369a1, #0284c7)' }}
             >
-              Submit
+              {t('submit')}
             </button>
           </div>
         )}
@@ -294,12 +284,12 @@ export default function TypeX3Page() {
             </div>
 
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-white">Practice Complete!</h2>
+              <h2 className="text-3xl font-bold text-white">{t('practice_complete')}</h2>
             </div>
 
             <div className="bg-white/5 border border-sky-400/20 rounded-3xl p-8 text-center w-full max-w-xs">
               <p className="text-sky-400 text-6xl font-bold tabular-nums">{perfectWords}</p>
-              <p className="text-white/40 text-sm mt-2">/ 10 words with no mistakes</p>
+              <p className="text-white/40 text-sm mt-2">{t('perfect_of', { total: 10 })}</p>
             </div>
 
             {result && (
@@ -319,13 +309,13 @@ export default function TypeX3Page() {
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #0369a1, #0284c7)' }}
               >
-                Play Again
+                {t('play_again')}
               </button>
               <a
                 href="/mini-games"
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all"
               >
-                Back to Mini-games
+                {t('back_to_games')}
               </a>
             </div>
           </motion.div>

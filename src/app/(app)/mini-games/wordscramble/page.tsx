@@ -1,13 +1,16 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Shuffle, Trophy, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation, stripArticle } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
+import { stripArticle } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -54,8 +57,12 @@ const TOTAL_ROUNDS = 10
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function WordScramblePage() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [pool, setPool] = useState<WordPair[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const pool = useMemo<WordPair[]>(() => practice.words.filter(w => stripArticle(w.word, languageCode).length >= 3).map(w => ({ word: w.word, translation: w.translation })), [practice.words, languageCode])
+  const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
 
   // Round state
@@ -69,29 +76,6 @@ export default function WordScramblePage() {
   const [rewards, setRewards] = useState<{ xp: number; gems: number } | null>(null)
   const [usedIndices, setUsedIndices] = useState<number[]>([])
 
-  // Fetch vocabulary
-  useEffect(() => {
-    const supabase = createClient()
-    supabase
-      .from('lessons')
-      .select('content, modules!inner(language_code)')
-      .eq('type', 'vocabulary')
-      .eq('is_published', true)
-      .eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        const items: WordPair[] = []
-        data?.forEach((lesson) => {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach((i) => {
-            if (i.word && i.translation && stripArticle(i.word, languageCode).length >= 3) {
-              items.push({ word: i.word, translation: pickTranslation(i, translationLang) })
-            }
-          })
-        })
-        setPool(items)
-        setLoading(false)
-      })
-  }, [languageCode, translationLang])
 
   const loadRound = useCallback(
     (roundIndex: number, currentPool: WordPair[], used: number[]) => {
@@ -189,7 +173,7 @@ export default function WordScramblePage() {
   if (phase === 'ready') {
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#050b1a' }}>
-        <AppTopbar title="Word Scramble" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('wordscramble_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 gap-8">
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 20 }}
@@ -205,17 +189,19 @@ export default function WordScramblePage() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white">Word Scramble</h1>
+              <h1 className="text-4xl font-bold text-white">{tm('wordscramble_title')}</h1>
               <p className="text-blue-400/70 mt-2 text-base">
-                Unscramble the letters to find the Spanish word!
+                {tm('wordscramble_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Rounds', value: '10', icon: Shuffle },
-                { label: 'Letters', value: 'A-Z', icon: Shuffle },
-                { label: 'Reward', value: '+3 💎', icon: Trophy },
+                { label: t('stat_rounds'), value: '10', icon: Shuffle },
+                { label: t('stat_letters'), value: 'A-Z', icon: Shuffle },
+                { label: t('stat_reward'), value: '+3 💎', icon: Trophy },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -229,7 +215,7 @@ export default function WordScramblePage() {
               ))}
             </div>
 
-            {loading && <p className="text-blue-400/50 text-sm">Loading words…</p>}
+            {loading && <p className="text-blue-400/50 text-sm">{t('loading')}</p>}
 
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -239,7 +225,7 @@ export default function WordScramblePage() {
               className="w-full py-4 rounded-2xl text-white text-lg font-bold shadow-xl disabled:opacity-40 disabled:cursor-not-allowed"
               style={{ background: 'linear-gradient(135deg, #3b82f6, #4338ca)' }}
             >
-              {loading ? 'Loading…' : 'Start Game'}
+              {loading ? t('loading') : t('start')}
             </motion.button>
           </motion.div>
         </main>
@@ -252,11 +238,11 @@ export default function WordScramblePage() {
     const accuracy = Math.round((score / TOTAL_ROUNDS) * 100)
     const emoji = accuracy >= 80 ? '🏆' : accuracy >= 50 ? '⭐' : '💪'
     const headline =
-      accuracy >= 80 ? 'Word Wizard!' : accuracy >= 50 ? 'Good Effort!' : 'Keep Scrambling!'
+      accuracy >= 80 ? t('headline_great') : accuracy >= 50 ? t('headline_good') : t('headline_keep')
 
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#050b1a' }}>
-        <AppTopbar title="Word Scramble" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('wordscramble_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4">
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
@@ -268,15 +254,15 @@ export default function WordScramblePage() {
             <div>
               <h2 className="text-3xl font-bold text-white">{headline}</h2>
               <p className="text-white/50 mt-1">
-                {score} / {TOTAL_ROUNDS} correct
+                {t('score_of', { score, total: TOTAL_ROUNDS })}
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Correct', value: score.toString() },
-                { label: 'Accuracy', value: `${accuracy}%` },
-                { label: 'XP Earned', value: rewards ? `+${rewards.xp}` : '…' },
+                { label: t('stat_correct'), value: score.toString() },
+                { label: t('stat_accuracy'), value: `${accuracy}%` },
+                { label: t('stat_xp'), value: rewards ? `+${rewards.xp}` : '…' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -303,11 +289,11 @@ export default function WordScramblePage() {
                 className="w-full py-3.5 rounded-2xl text-white font-bold text-base shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #3b82f6, #4338ca)' }}
               >
-                Play Again
+                {t('play_again')}
               </motion.button>
               <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl bg-white/8 border border-white/12 text-white/70 font-bold text-base hover:bg-white/12 transition-colors">
-                  Back to Mini-games
+                  {t('back_to_games')}
                 </button>
               </Link>
             </div>
@@ -322,14 +308,14 @@ export default function WordScramblePage() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#050b1a' }}>
-      <AppTopbar title="Word Scramble" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('wordscramble_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-4 max-w-md mx-auto w-full gap-5">
         {/* Progress */}
         <div className="space-y-1.5">
           <div className="flex items-center justify-between text-xs font-bold">
-            <span className="text-blue-400">Round {round + 1} / {TOTAL_ROUNDS}</span>
-            <span className="text-white/40">{score} correct</span>
+            <span className="text-blue-400">{t('round_of', { n: round + 1, total: TOTAL_ROUNDS })}</span>
+            <span className="text-white/40">{t('n_correct', { n: score })}</span>
           </div>
           <div className="h-2 bg-white/10 rounded-full overflow-hidden">
             <motion.div
@@ -352,7 +338,7 @@ export default function WordScramblePage() {
             {/* Clue */}
             <div className="rounded-3xl bg-white/5 border border-white/10 p-6 text-center">
               <p className="text-xs font-bold uppercase tracking-widest text-blue-400/60 mb-2">
-                Translate this word
+                {t('translate_word')}
               </p>
               <p className="text-3xl font-bold text-white">{clue}</p>
             </div>
@@ -409,7 +395,7 @@ export default function WordScramblePage() {
                   exit={{ opacity: 0 }}
                   className="text-center text-emerald-400 font-bold text-sm"
                 >
-                  Correct! Well done 🎉
+                  {t('well_done')}
                 </motion.p>
               )}
               {roundState === 'wrong' && (
@@ -419,7 +405,7 @@ export default function WordScramblePage() {
                   exit={{ opacity: 0 }}
                   className="text-center text-red-400 font-bold text-sm"
                 >
-                  The answer was: <span className="text-white">{mainWord}</span>
+                  {t('answer_was')} <span className="text-white">{mainWord}</span>
                 </motion.p>
               )}
             </AnimatePresence>
@@ -454,7 +440,7 @@ export default function WordScramblePage() {
                 className="flex items-center gap-2 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white/50 text-sm font-semibold hover:bg-white/10 disabled:opacity-30 transition-colors"
               >
                 <RotateCcw size={15} />
-                Reset
+                {t('reset')}
               </button>
               <motion.button
                 whileTap={{ scale: 0.97 }}
@@ -463,7 +449,7 @@ export default function WordScramblePage() {
                 className="flex-1 py-3 rounded-xl text-white font-bold text-sm shadow-lg disabled:opacity-30 disabled:cursor-not-allowed transition-opacity"
                 style={{ background: 'linear-gradient(135deg, #3b82f6, #4338ca)' }}
               >
-                Check Answer
+                {t('check')}
               </motion.button>
             </div>
           </motion.div>

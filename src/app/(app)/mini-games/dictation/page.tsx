@@ -1,13 +1,16 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mic, Volume2, CheckCircle2, XCircle, ChevronRight, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation, speak as speakText } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
+import { speak as speakText } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -61,8 +64,12 @@ const hasSpeech = typeof window !== 'undefined'
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function DictationPage() {
   const { languageCode, translationLang } = useActiveLanguage()
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
   const [phase, setPhase] = useState<Phase>('ready')
-  const [vocab, setVocab] = useState<VocabItem[]>([])
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const vocab = useMemo<VocabItem[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
   const [rounds, setRounds] = useState<VocabItem[]>([])
   const [roundIndex, setRoundIndex] = useState(0)
   const [inputValue, setInputValue] = useState('')
@@ -73,29 +80,6 @@ export default function DictationPage() {
   const speakingRef = useRef(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
-  // Load vocab
-  useEffect(() => {
-    const supabase = createClient()
-    supabase
-      .from('lessons')
-      .select('content, modules!inner(language_code)')
-      .eq('type', 'vocabulary')
-      .eq('is_published', true)
-      .eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        if (!data) return
-        const items: VocabItem[] = []
-        for (const lesson of data) {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          if (c?.items) {
-            for (const item of c.items) {
-              if (item.word && item.translation) items.push({ word: item.word, translation: pickTranslation(item, translationLang) })
-            }
-          }
-        }
-        setVocab(items)
-      })
-  }, [languageCode, translationLang])
 
   const speak = useCallback((text: string) => {
     speakText(text, languageCode, {
@@ -165,7 +149,7 @@ export default function DictationPage() {
   if (phase === 'ready') {
     return (
       <div className="min-h-screen flex flex-col" style={{ background: '#130008' }}>
-        <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -183,11 +167,13 @@ export default function DictationPage() {
 
             {/* Title */}
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white">Dictation</h1>
+              <h1 className="text-4xl font-bold text-white">{tm('dictation_title')}</h1>
               <p className="text-rose-300/70 mt-2 text-sm leading-relaxed">
-                Listen and type what you hear in Spanish
+                {tm('dictation_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             {!hasSpeech && (
               <div className="w-full bg-rose-950/50 border border-rose-800/40 rounded-2xl p-4 text-center">
@@ -200,9 +186,9 @@ export default function DictationPage() {
             {/* Stats */}
             <div className="w-full grid grid-cols-3 gap-3">
               {[
-                { label: 'Rounds', value: '10' },
-                { label: 'Skill', value: 'Listen' },
-                { label: 'Reward', value: '+3 💎' },
+                { label: t('stat_rounds'), value: '10' },
+                { label: t('stat_skill'), value: t('skill_listen') },
+                { label: t('stat_reward'), value: '+3 💎' },
               ].map(s => (
                 <div
                   key={s.label}
@@ -222,7 +208,7 @@ export default function DictationPage() {
               className="w-full py-4 rounded-2xl text-white font-bold text-base shadow-lg disabled:opacity-50 disabled:cursor-not-allowed transition-opacity"
               style={{ background: 'linear-gradient(135deg, #9f1239, #e11d48)' }}
             >
-              {vocab.length === 0 ? 'Loading…' : 'Start Game'}
+              {practice.loading ? t('loading') : t('start')}
             </motion.button>
           </motion.div>
         </main>
@@ -234,7 +220,7 @@ export default function DictationPage() {
   if (phase === 'finished') {
     return (
       <div className="min-h-screen flex flex-col" style={{ background: '#130008' }}>
-        <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -250,19 +236,19 @@ export default function DictationPage() {
             </div>
 
             <div className="text-center">
-              <p className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">Game Over</p>
+              <p className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">{t('game_over')}</p>
               <h2 className="text-5xl font-bold text-white tabular-nums">{score}<span className="text-white/30">/{rounds.length}</span></h2>
-              <p className="text-rose-400 mt-1 font-semibold">{accuracy}% accuracy</p>
+              <p className="text-rose-400 mt-1 font-semibold">{t('pct_accuracy', { pct: accuracy })}</p>
             </div>
 
             <div className="w-full grid grid-cols-2 gap-3">
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
                 <p className="text-2xl font-bold text-white">+{reward.xp}</p>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">XP Earned</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_xp')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
                 <p className="text-2xl font-bold text-white">+{reward.gems} 💎</p>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">Gems Earned</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_gems')}</p>
               </div>
             </div>
 
@@ -273,11 +259,11 @@ export default function DictationPage() {
                 className="w-full py-3.5 rounded-2xl text-white font-bold text-sm"
                 style={{ background: 'linear-gradient(135deg, #9f1239, #e11d48)' }}
               >
-                Play Again
+                {t('play_again')}
               </motion.button>
               <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl text-white/60 font-bold text-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                  Back to Mini-games
+                  {t('back_to_games')}
                 </button>
               </Link>
             </div>
@@ -290,15 +276,15 @@ export default function DictationPage() {
   // ── Playing ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#130008' }}>
-      <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar back={{ href: '/mini-games', label: tm('title') }} />
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-8">
         <div className="w-full max-w-sm flex flex-col items-center gap-6">
 
           {/* Round counter */}
           <div className="flex items-center justify-between w-full">
-            <span className="text-white/40 text-xs font-bold uppercase tracking-wider">Round</span>
+            <span className="text-white/40 text-xs font-bold uppercase tracking-wider">{t('round')}</span>
             <span className="text-white font-bold tabular-nums">{roundIndex + 1} / {rounds.length}</span>
-            <span className="text-rose-400 text-xs font-bold tabular-nums">Score: {score}</span>
+            <span className="text-rose-400 text-xs font-bold tabular-nums">{t('score', { n: score })}</span>
           </div>
 
           {/* Progress bar */}
@@ -343,7 +329,7 @@ export default function DictationPage() {
             </AnimatePresence>
           </motion.button>
 
-          <p className="text-white/30 text-xs">Tap to hear again</p>
+          <p className="text-white/30 text-xs">{t('tap_listen_again')}</p>
 
           {/* Input + answer area */}
           <AnimatePresence mode="wait">
@@ -361,7 +347,7 @@ export default function DictationPage() {
                   value={inputValue}
                   onChange={e => setInputValue(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Type what you heard…"
+                  placeholder={t('type_heard')}
                   className="w-full bg-white/8 border border-white/12 rounded-2xl px-4 py-3.5 text-white placeholder-white/25 text-base focus:outline-none focus:border-rose-500/60 focus:bg-white/10 transition-colors"
                   autoComplete="off"
                   autoCorrect="off"
@@ -374,7 +360,7 @@ export default function DictationPage() {
                   className="w-full py-3.5 rounded-2xl text-white font-bold text-sm disabled:opacity-40 transition-opacity"
                   style={{ background: 'linear-gradient(135deg, #9f1239, #e11d48)' }}
                 >
-                  Submit Answer
+                  {t('submit')}
                 </motion.button>
               </motion.div>
             ) : (
@@ -400,17 +386,17 @@ export default function DictationPage() {
                   )}
                   <div>
                     <p className={cn('font-bold text-sm', answerState === 'correct' ? 'text-emerald-300' : 'text-red-300')}>
-                      {answerState === 'correct' ? 'Correct!' : 'Not quite'}
+                      {answerState === 'correct' ? t('correct') : t('not_quite')}
                     </p>
                     {answerState === 'wrong' && (
-                      <p className="text-white/50 text-xs mt-0.5">You typed: <span className="text-white/70">{inputValue}</span></p>
+                      <p className="text-white/50 text-xs mt-0.5">{t('you_typed')} <span className="text-white/70">{inputValue}</span></p>
                     )}
                   </div>
                 </div>
 
                 {/* Word reveal */}
                 <div className="w-full rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
-                  <p className="text-[10px] font-bold uppercase tracking-wider text-white/35 mb-1">The word was</p>
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-white/35 mb-1">{t('word_was')}</p>
                   <p className="text-2xl font-bold text-white">{current?.word}</p>
                   <p className="text-rose-400 text-sm mt-1">{current?.translation}</p>
                 </div>
@@ -421,7 +407,7 @@ export default function DictationPage() {
                   className="w-full py-3.5 rounded-2xl text-white font-bold text-sm flex items-center justify-center gap-2"
                   style={{ background: 'linear-gradient(135deg, #9f1239, #e11d48)' }}
                 >
-                  {roundIndex + 1 >= rounds.length ? 'See Results' : 'Next Round'}
+                  {roundIndex + 1 >= rounds.length ? t('see_results') : t('next_round')}
                   <ChevronRight size={16} />
                 </motion.button>
               </motion.div>

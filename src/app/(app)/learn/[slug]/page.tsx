@@ -106,12 +106,13 @@ export default async function LessonPage({ params }: PageProps) {
       )
     }
 
+    // Mastery is stored per course language; count only this lesson's items
+    // (same keys as the activity pages: word, "phrase:<text>", "qa:<question>")
     if (masteryResult.data) {
-      for (const row of masteryResult.data) {
-        if (row.word.startsWith('phrase:')) masteredPhrases++
-        else if (row.word.startsWith('qa:')) masteredQA++
-        else masteredWords++
-      }
+      const mastered = new Set(masteryResult.data.map(r => r.word as string))
+      masteredWords = vocabItems.filter(i => mastered.has(i.word)).length
+      masteredPhrases = phraseItems.filter(p => mastered.has(`phrase:${p.phrase}`)).length
+      masteredQA = qaItems.filter(q => mastered.has(`qa:${q.question}`)).length
     }
   }
 

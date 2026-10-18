@@ -1,13 +1,15 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { LayoutGrid } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -65,8 +67,12 @@ const PAIRS = 8
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function MatchingPage() {
   const { languageCode, translationLang } = useActiveLanguage()
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
   const [phase, setPhase] = useState<Phase>('ready')
-  const [vocab, setVocab] = useState<VocabItem[]>([])
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const vocab = useMemo<VocabItem[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
   const [cards, setCards] = useState<Card[]>([])
   const [flippedIds, setFlippedIds] = useState<string[]>([])
   const [matchedCount, setMatchedCount] = useState(0)
@@ -77,29 +83,6 @@ export default function MatchingPage() {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const finalTimeRef = useRef(0)
 
-  // Load vocab
-  useEffect(() => {
-    const supabase = createClient()
-    supabase
-      .from('lessons')
-      .select('content, modules!inner(language_code)')
-      .eq('type', 'vocabulary')
-      .eq('is_published', true)
-      .eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        if (!data) return
-        const items: VocabItem[] = []
-        for (const lesson of data) {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          if (c?.items) {
-            for (const item of c.items) {
-              if (item.word && item.translation) items.push({ word: item.word, translation: pickTranslation(item, translationLang) })
-            }
-          }
-        }
-        setVocab(items)
-      })
-  }, [languageCode, translationLang])
 
   const stopTimer = useCallback(() => {
     if (timerRef.current) {
@@ -181,7 +164,7 @@ export default function MatchingPage() {
   if (phase === 'ready') {
     return (
       <div className="min-h-screen flex flex-col" style={{ background: '#001210' }}>
-        <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -197,17 +180,19 @@ export default function MatchingPage() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white">Matching</h1>
+              <h1 className="text-4xl font-bold text-white">{tm('matching_title')}</h1>
               <p className="text-cyan-300/70 mt-2 text-sm leading-relaxed">
-                Flip cards and match each Spanish word with its English translation
+                {tm('matching_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             <div className="w-full grid grid-cols-3 gap-3">
               {[
-                { label: 'Pairs', value: '8' },
-                { label: 'Skill', value: 'Vocab' },
-                { label: 'Reward', value: '+3 💎' },
+                { label: t('stat_pairs'), value: '8' },
+                { label: t('stat_skill'), value: t('skill_vocab') },
+                { label: t('stat_reward'), value: '+3 💎' },
               ].map(s => (
                 <div
                   key={s.label}
@@ -226,7 +211,7 @@ export default function MatchingPage() {
               className="w-full py-4 rounded-2xl text-white font-bold text-base shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               style={{ background: 'linear-gradient(135deg, #0e7490, #0d9488)' }}
             >
-              {vocab.length === 0 ? 'Loading…' : 'Start Game'}
+              {practice.loading ? t('loading') : t('start')}
             </motion.button>
           </motion.div>
         </main>
@@ -238,7 +223,7 @@ export default function MatchingPage() {
   if (phase === 'finished') {
     return (
       <div className="min-h-screen flex flex-col" style={{ background: '#001210' }}>
-        <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -254,27 +239,27 @@ export default function MatchingPage() {
             </div>
 
             <div className="text-center">
-              <p className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">Completed!</p>
+              <p className="text-white/50 text-xs font-bold uppercase tracking-widest mb-2">{t('completed')}</p>
               <h2 className="text-5xl font-bold text-white tabular-nums">{PAIRS}<span className="text-white/30">/{PAIRS}</span></h2>
-              <p className="text-cyan-400 mt-1 font-semibold">All pairs matched</p>
+              <p className="text-cyan-400 mt-1 font-semibold">{t('all_pairs')}</p>
             </div>
 
             <div className="w-full grid grid-cols-2 gap-3">
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
                 <p className="text-2xl font-bold text-white">{formatTime(elapsed)}</p>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">Time Taken</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_time')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
                 <p className="text-2xl font-bold text-white">{mismatches}</p>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">Mismatches</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_misses')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
                 <p className="text-2xl font-bold text-white">+{reward.xp}</p>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">XP Earned</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_xp')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
                 <p className="text-2xl font-bold text-white">+{reward.gems} 💎</p>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">Gems Earned</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_gems')}</p>
               </div>
             </div>
 
@@ -285,11 +270,11 @@ export default function MatchingPage() {
                 className="w-full py-3.5 rounded-2xl text-white font-bold text-sm"
                 style={{ background: 'linear-gradient(135deg, #0e7490, #0d9488)' }}
               >
-                Play Again
+                {t('play_again')}
               </motion.button>
               <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl text-white/60 font-bold text-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                  Back to Mini-games
+                  {t('back_to_games')}
                 </button>
               </Link>
             </div>
@@ -302,7 +287,7 @@ export default function MatchingPage() {
   // ── Playing ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#001210' }}>
-      <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar back={{ href: '/mini-games', label: tm('title') }} />
       <main className="flex-1 flex flex-col items-center px-3 py-5">
         <div className="w-full max-w-lg flex flex-col gap-4">
 
@@ -312,8 +297,8 @@ export default function MatchingPage() {
               <span className="text-cyan-400">{formatTime(elapsed)}</span>
             </div>
             <div className="flex items-center gap-3 text-xs font-bold">
-              <span className="text-white/40">Pairs: <span className="text-cyan-400">{matchedCount}/{PAIRS}</span></span>
-              <span className="text-white/40">Misses: <span className="text-red-400">{mismatches}</span></span>
+              <span className="text-white/40">{t('stat_pairs')}: <span className="text-cyan-400">{matchedCount}/{PAIRS}</span></span>
+              <span className="text-white/40">{t('stat_misses')}: <span className="text-red-400">{mismatches}</span></span>
             </div>
           </div>
 
@@ -365,7 +350,7 @@ export default function MatchingPage() {
           </div>
 
           {/* Bottom hint */}
-          <p className="text-center text-white/25 text-xs">Flip two cards — match the word with its translation</p>
+          <p className="text-center text-white/25 text-xs">{t('matching_hint')}</p>
         </div>
       </main>
     </div>

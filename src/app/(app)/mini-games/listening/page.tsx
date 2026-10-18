@@ -1,13 +1,16 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Headphones, Volume2, Trophy, AlertTriangle } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation, speak } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
+import { speak } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
 
@@ -44,8 +47,12 @@ const TOTAL_ROUNDS = 10
 // ── Main Component ─────────────────────────────────────────────────────────────
 export default function ListeningPage() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [pool, setPool] = useState<WordPair[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const pool = useMemo<WordPair[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
+  const loading = practice.loading
   const [speechSupported, setSpeechSupported] = useState(true)
   const [phase, setPhase] = useState<Phase>('ready')
 
@@ -70,27 +77,6 @@ export default function ListeningPage() {
     setSpeechSupported(typeof window !== 'undefined' && 'speechSynthesis' in window)
   }, [])
 
-  // Fetch vocabulary
-  useEffect(() => {
-    const supabase = createClient()
-    supabase
-      .from('lessons')
-      .select('content, modules!inner(language_code)')
-      .eq('type', 'vocabulary')
-      .eq('is_published', true)
-      .eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        const items: WordPair[] = []
-        data?.forEach((lesson) => {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach((i) => {
-            if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) })
-          })
-        })
-        setPool(items)
-        setLoading(false)
-      })
-  }, [languageCode, translationLang])
 
   const loadRound = useCallback(
     (currentPool: WordPair[], used: number[]) => {
@@ -199,7 +185,7 @@ export default function ListeningPage() {
   if (phase === 'ready') {
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#0d0817' }}>
-        <AppTopbar title="Listening" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('listening_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 gap-8">
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 20 }}
@@ -215,24 +201,26 @@ export default function ListeningPage() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white">Listening</h1>
+              <h1 className="text-4xl font-bold text-white">{tm('listening_title')}</h1>
               <p className="text-violet-400/70 mt-2 text-base">
-                Hear the Spanish word and pick its English meaning!
+                {tm('listening_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             {!speechSupported && (
               <div className="flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-4 py-3 rounded-xl text-sm font-medium">
                 <AlertTriangle size={16} />
-                Audio not supported in this browser
+                {t('audio_unsupported')}
               </div>
             )}
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Rounds', value: '10' },
-                { label: 'Language', value: 'ES' },
-                { label: 'Reward', value: '+3 💎' },
+                { label: t('stat_rounds'), value: '10' },
+                { label: t('stat_language'), value: languageCode.toUpperCase() },
+                { label: t('stat_reward'), value: '+3 💎' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -246,7 +234,7 @@ export default function ListeningPage() {
               ))}
             </div>
 
-            {loading && <p className="text-violet-400/50 text-sm">Loading words…</p>}
+            {loading && <p className="text-violet-400/50 text-sm">{t('loading')}</p>}
 
             <motion.button
               whileHover={{ scale: 1.03 }}
@@ -256,7 +244,7 @@ export default function ListeningPage() {
               className="w-full py-4 rounded-2xl text-white text-lg font-bold shadow-xl disabled:opacity-40 disabled:cursor-not-allowed"
               style={{ background: 'linear-gradient(135deg, #7c3aed, #a21caf)' }}
             >
-              {loading ? 'Loading…' : 'Start Listening'}
+              {loading ? t('loading') : t('start')}
             </motion.button>
           </motion.div>
         </main>
@@ -269,11 +257,11 @@ export default function ListeningPage() {
     const accuracy = Math.round((score / TOTAL_ROUNDS) * 100)
     const emoji = accuracy >= 80 ? '🏆' : accuracy >= 50 ? '⭐' : '💪'
     const headline =
-      accuracy >= 80 ? 'Sharp Ears!' : accuracy >= 50 ? 'Getting Better!' : 'Keep Listening!'
+      accuracy >= 80 ? t('headline_great') : accuracy >= 50 ? t('headline_good') : t('headline_keep')
 
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#0d0817' }}>
-        <AppTopbar title="Listening" back={{ href: '/mini-games', label: 'Mini-games' }} />
+        <AppTopbar title={tm('listening_title')} back={{ href: '/mini-games', label: tm('title') }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4">
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
@@ -285,15 +273,15 @@ export default function ListeningPage() {
             <div>
               <h2 className="text-3xl font-bold text-white">{headline}</h2>
               <p className="text-white/50 mt-1">
-                {score} / {TOTAL_ROUNDS} correct
+                {t('score_of', { score, total: TOTAL_ROUNDS })}
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Correct', value: score.toString() },
-                { label: 'Accuracy', value: `${accuracy}%` },
-                { label: 'XP Earned', value: rewards ? `+${rewards.xp}` : '…' },
+                { label: t('stat_correct'), value: score.toString() },
+                { label: t('stat_accuracy'), value: `${accuracy}%` },
+                { label: t('stat_xp'), value: rewards ? `+${rewards.xp}` : '…' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -320,11 +308,11 @@ export default function ListeningPage() {
                 className="w-full py-3.5 rounded-2xl text-white font-bold text-base shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #7c3aed, #a21caf)' }}
               >
-                Play Again
+                {t('play_again')}
               </motion.button>
               <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl bg-white/8 border border-white/12 text-white/70 font-bold text-base hover:bg-white/12 transition-colors">
-                  Back to Mini-games
+                  {t('back_to_games')}
                 </button>
               </Link>
             </div>
@@ -339,14 +327,14 @@ export default function ListeningPage() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#0d0817' }}>
-      <AppTopbar title="Listening" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('listening_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-4 max-w-md mx-auto w-full gap-5">
         {/* Progress */}
         <div className="space-y-1.5">
           <div className="flex items-center justify-between text-xs font-bold">
-            <span className="text-violet-400">Round {round + 1} / {TOTAL_ROUNDS}</span>
-            <span className="text-white/40">{score} correct</span>
+            <span className="text-violet-400">{t('round_of', { n: round + 1, total: TOTAL_ROUNDS })}</span>
+            <span className="text-white/40">{t('n_correct', { n: score })}</span>
           </div>
           <div className="h-2 bg-white/10 rounded-full overflow-hidden">
             <motion.div
@@ -395,7 +383,7 @@ export default function ListeningPage() {
                 <Volume2 size={52} className="text-white relative z-10" />
               </motion.button>
               <p className="text-sm text-white/40 font-medium">
-                {isPlaying ? 'Playing…' : 'Tap to listen again'}
+                {isPlaying ? t('playing') : t('tap_listen_again')}
               </p>
             </div>
 
@@ -437,7 +425,7 @@ export default function ListeningPage() {
             {!speechSupported && (
               <div className="flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 px-4 py-2.5 rounded-xl text-xs font-medium w-full">
                 <AlertTriangle size={14} />
-                Audio not supported in this browser
+                {t('audio_unsupported')}
               </div>
             )}
           </motion.div>

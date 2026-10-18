@@ -1,13 +1,23 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { BookOpen } from 'lucide-react'
 import { AppTopbar } from '@/components/layout/app-topbar'
+import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
+import { useLocale, useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { pickTranslation } from '@/lib/languages'
+import { usePracticeContent } from '@/lib/practice-source'
+
+/** A language's name in the UI language ("French", "francés"…) */
+function useLanguageName() {
+  const locale = useLocale()
+  return (code: string) => {
+    try { return new Intl.DisplayNames([locale], { type: 'language' }).of(code) ?? code } catch { return code }
+  }
+}
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type WordPair = { word: string; translation: string }
@@ -37,8 +47,20 @@ async function saveGameResult(correct: number, total: number) {
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function FlashCardsPage() {
   const { languageCode, translationLang } = useActiveLanguage()
-  const [pool, setPool] = useState<WordPair[]>([])
-  const [loading, setLoading] = useState(true)
+  const t = useTranslations('games')
+  const tm = useTranslations('mini_games')
+  const languageName = useLanguageName()
+  // Words from the source chosen on /mini-games (all lessons or one)
+  const practice = usePracticeContent(languageCode, translationLang)
+  const pool = useMemo<WordPair[]>(
+    () => [
+      ...practice.words.map(w => ({ word: w.word, translation: w.translation })),
+      // Short phrases work as cards too
+      ...practice.phrases.filter(p => p.phrase.split(' ').length <= 5).map(p => ({ word: p.phrase, translation: p.translation })),
+    ],
+    [practice.words, practice.phrases],
+  )
+  const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
 
   // Game state
@@ -50,27 +72,9 @@ export default function FlashCardsPage() {
   // Result
   const [result, setResult] = useState<{ xp: number; gems: number } | null>(null)
 
-  // Load vocab
-  useEffect(() => {
-    const supabase = createClient()
-    supabase.from('lessons').select('content, modules!inner(language_code)').eq('type', 'vocabulary').eq('is_published', true).eq('modules.language_code', languageCode)
-      .then(({ data }) => {
-        const items: WordPair[] = []
-        data?.forEach(lesson => {
-          const c = lesson.content as { items?: Array<{ word: string; translation: string }> }
-          c.items?.forEach(i => { if (i.word && i.translation) items.push({ word: i.word, translation: pickTranslation(i, translationLang) }) })
-        })
-        setPool(items)
-        setLoading(false)
-      })
-  }, [languageCode, translationLang])
 
   function buildDeck(wordPool: WordPair[]): WordPair[] {
-    const source = wordPool.length > 0 ? wordPool : [
-      { word: 'hola', translation: 'hello' },
-      { word: 'casa', translation: 'house' },
-    ]
-    return shuffle(source).slice(0, Math.min(20, source.length))
+    return shuffle(wordPool).slice(0, Math.min(20, wordPool.length))
   }
 
   function startGame() {
@@ -122,7 +126,7 @@ export default function FlashCardsPage() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#0a0c14' }}>
-      <AppTopbar title="FlashCards" back={{ href: '/mini-games', label: 'Mini-games' }} />
+      <AppTopbar title={tm('flashcards_title')} back={{ href: '/mini-games', label: tm('title') }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full">
 
@@ -141,18 +145,20 @@ export default function FlashCardsPage() {
             </div>
 
             <div className="text-center">
-              <h1 className="text-4xl font-bold text-white mb-2">FlashCards</h1>
+              <h1 className="text-4xl font-bold text-white mb-2">{tm('flashcards_title')}</h1>
               <p className="text-white/50 text-sm max-w-sm">
-                Flip cards to test your vocabulary — mark what you know
+                {tm('flashcards_desc')}
               </p>
             </div>
+            {/* Where the words come from (shared by all mini-games) */}
+            <SourcePicker tone="dark" className="w-full" />
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-3 w-full">
               {[
-                { label: 'Cards', value: loading ? '…' : String(Math.min(20, pool.length)) },
-                { label: 'Skill', value: 'Vocab' },
-                { label: 'Reward', value: '+3 💎' },
+                { label: t('stat_cards'), value: loading ? '…' : String(Math.min(20, pool.length)) },
+                { label: t('stat_skill'), value: t('skill_vocab') },
+                { label: t('stat_reward'), value: '+3 💎' },
               ].map(({ label, value }) => (
                 <div key={label} className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
                   <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-1">{label}</p>
@@ -163,11 +169,11 @@ export default function FlashCardsPage() {
 
             <button
               onClick={startGame}
-              disabled={loading}
+              disabled={loading || pool.length === 0}
               className="px-10 py-3.5 rounded-2xl text-base font-bold text-white transition-all hover:scale-105 disabled:opacity-40"
               style={{ background: 'linear-gradient(135deg, #b45309, #d97706)' }}
             >
-              {loading ? 'Loading…' : 'Start!'}
+              {loading ? t('loading') : t('start')}
             </button>
           </motion.div>
         )}
@@ -178,10 +184,10 @@ export default function FlashCardsPage() {
             {/* Progress */}
             <div className="flex justify-between items-center text-sm">
               <span className="text-white/50">
-                <span className="text-white font-bold">{deck.length}</span> remaining
+                <span className="text-white font-bold">{deck.length}</span> {t('remaining')}
               </span>
               <span className="text-amber-400 font-bold">
-                {masteredCount} mastered
+                {t('n_mastered', { n: masteredCount })}
               </span>
             </div>
 
@@ -202,9 +208,9 @@ export default function FlashCardsPage() {
                   style={{ backfaceVisibility: 'hidden', position: 'absolute', inset: 0 }}
                   className="rounded-3xl bg-amber-900/30 border border-amber-500/30 flex flex-col items-center justify-center p-8"
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-amber-400/50 mb-4">Spanish</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-amber-400/50 mb-4">{languageName(languageCode)}</p>
                   <p className="text-4xl font-bold text-white text-center">{currentCard.word}</p>
-                  <p className="text-xs text-amber-400/40 mt-6">tap to reveal</p>
+                  <p className="text-xs text-amber-400/40 mt-6">{t('tap_reveal')}</p>
                 </div>
 
                 {/* Back face */}
@@ -212,7 +218,7 @@ export default function FlashCardsPage() {
                   style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', position: 'absolute', inset: 0 }}
                   className="rounded-3xl bg-amber-500/20 border border-amber-400/40 flex flex-col items-center justify-center p-8"
                 >
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-amber-400/60 mb-4">English</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-amber-400/60 mb-4">{languageName(translationLang)}</p>
                   <p className="text-3xl font-bold text-amber-300 text-center">{currentCard.translation}</p>
                 </div>
               </motion.div>
@@ -224,14 +230,14 @@ export default function FlashCardsPage() {
                 onClick={handleStillLearning}
                 className="flex-1 py-3.5 rounded-2xl text-sm font-bold bg-white/5 border border-white/10 text-white/60 hover:bg-white/10 transition-all"
               >
-                Still learning 🔁
+                {t('still_learning')}
               </button>
               <button
                 onClick={handleGotIt}
                 className="flex-1 py-3.5 rounded-2xl text-sm font-bold text-white transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #b45309, #d97706)' }}
               >
-                Got it ✅
+                {t('got_it')}
               </button>
             </div>
 
@@ -260,17 +266,17 @@ export default function FlashCardsPage() {
             </div>
 
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-white">Deck Complete! 🎉</h2>
+              <h2 className="text-3xl font-bold text-white">{t('deck_complete')}</h2>
             </div>
 
             <div className="grid grid-cols-2 gap-4 w-full max-w-xs">
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-amber-500/20">
                 <p className="text-amber-400 text-4xl font-bold tabular-nums">{masteredCount}</p>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">Mastered</p>
+                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">{t('stat_mastered')}</p>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 text-center border border-white/10">
                 <p className="text-white text-4xl font-bold tabular-nums">{totalCards}</p>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">Total Cards</p>
+                <p className="text-white/40 text-xs font-bold uppercase tracking-widest mt-1">{t('stat_total_cards')}</p>
               </div>
             </div>
 
@@ -291,13 +297,13 @@ export default function FlashCardsPage() {
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #b45309, #d97706)' }}
               >
-                Play Again
+                {t('play_again')}
               </button>
               <a
                 href="/mini-games"
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all"
               >
-                Back to Mini-games
+                {t('back_to_games')}
               </a>
             </div>
           </motion.div>
