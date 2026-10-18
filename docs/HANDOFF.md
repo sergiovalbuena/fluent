@@ -91,6 +91,11 @@
    - El selector de fuente de los minijuegos ya muestra "Tema de gramática · Pronto" (`src/components/mini-games/source-picker.tsx`).
    - Antes de diseñar, preguntar al usuario qué espera (actividad dentro de la lección, sección propia tipo `/grammar` como `/verbs`, o ambas) y no tocar la base de datos sin permiso.
    - **Sincronizar las canciones de Hora de música** (ver arriba) cuando el usuario mande los tiempos.
+   - **Hora de música: canciones más populares (decisión pendiente del usuario, 2026-10-17).** Al usuario le parecen demasiado infantiles. El límite es la letra: insertar cualquier video de YouTube está permitido, pero mostrar la letra de una canción con derechos necesita licencia del editor. Opciones propuestas:
+     1. *Clásicos libres "de adultos"* cantados por artistas conocidos en YouTube (autores muertos hace más de 70 años). Francés: Le Temps des cerises, Plaisir d'amour, La Marseillaise, Auprès de ma blonde, L'Internationale. Inglés: House of the Rising Sun, Scarborough Fair, Danny Boy, Amazing Grace, When the Saints Go Marching In, Oh! Susanna. Sin riesgo legal, pero no son éxitos actuales. Verificar cada video con el oEmbed antes de añadirlo.
+     2. *"Tu canción"*: el usuario pega un enlace de YouTube y la letra; la app genera los huecos solo para él (contenido privado, no publicado). Guardar en una tabla nueva (pedir permiso antes de la migración) o solo en `localStorage`.
+     3. *Licenciar un catálogo* (Musixmatch, LyricFind): única vía para éxitos actuales para todos; de pago con contrato (el plan gratuito de Musixmatch solo deja mostrar el 30 % de la letra, sin tiempos).
+     Recomendación dada: 1 + 2. Spotify descartado (sin Premium solo 30 s; sus normas prohíben sincronizar sus grabaciones con contenido visual).
 
 1. **Añadir en Vercel** (Settings → Environment Variables → Production): `OPENAI_API_KEY` y `SUPABASE_SERVICE_ROLE_KEY`. Luego redesplegar. Sin ellas, MarIA y la voz con IA no funcionan (se usa la voz del navegador). En `.env.local` también están vacías.
 2. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito.
