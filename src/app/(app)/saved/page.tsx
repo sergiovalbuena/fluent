@@ -143,7 +143,7 @@ export default function SavedPage() {
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState<'all' | SavedItem['type']>('all')
   const [practicing, setPracticing] = useState(false)
-  const [section, setSection] = useState<'items' | 'links'>('items')
+  const [section, setSection] = useState<'items' | 'links'>('links')
   const t = useTranslations('saved')
 
   useEffect(() => {
@@ -195,8 +195,8 @@ export default function SavedPage() {
         {/* Section switch: saved words / study links */}
         <div className="grid grid-cols-2 gap-1 p-1 mb-6 rounded-2xl bg-black/[0.04] dark:bg-white/[0.05]">
           {([
-            { key: 'items', label: t('tab_items'), icon: Bookmark },
             { key: 'links', label: t('tab_links'), icon: Link2 },
+            { key: 'items', label: t('tab_items'), icon: Bookmark },
           ] as const).map(({ key, label, icon: Icon }) => (
             <button
               key={key}

@@ -1,66 +1,64 @@
 'use client'
 
 import React from 'react'
-import { motion, type MotionProps } from 'framer-motion'
 import Link from 'next/link'
+import { motion, type MotionProps } from 'framer-motion'
+import { useLocale, useTranslations } from 'next-intl'
 import {
-  ArrowRight, BookOpen, Flame, Gem, Star, Target, TrendingUp, Zap,
+  ArrowRight, BookOpen, Check, Flame, Gem, MessageCircle, Shield, Shuffle, Sparkles, Star, Target, Trophy, Type, Zap,
+  type LucideIcon,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { getLanguage } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
-export type ProgressRow = {
-  lesson_id: string
-  completed_at: string | null
-  score: number | null
-  lesson: { title: string; type: string; module: { title: string } } | null
-}
-
 export type ProgressData = {
+  languageCode: string
   streak: number
   longestStreak: number
+  freezes: number
   totalXp: number
-  totalCompleted: number
-  avgScore: number
-  wordsLearned: number
-  dailyValues: number[]
-  recentProgress: ProgressRow[]
+  gems: number
+  accuracy: number | null
+  mastered: { words: number; phrases: number; questions: number }
+  course: {
+    modulesDone: number
+    modulesTotal: number
+    activitiesDone: number
+    activitiesTotal: number
+    stars: number
+    next: { slug: string; title: string; position: number } | null
+    units: { emoji: string; title: string; total: number; done: number }[]
+  }
+  skills: { type: string; done: number; total: number }[]
+  /** Heatmap days, oldest first, whole weeks starting on Monday */
+  days: { date: string; count: number; future: boolean }[]
+  recent: { id: string; type: string; moduleTitle: string; slug: string | null; score: number | null; stars: number; completedAt: string }[]
 }
 
-// ── Constants ─────────────────────────────────────────────────────────────────
-const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
-
-const LESSON_TYPE_ICON: Record<string, string> = {
-  vocabulary: '🗂️',
-  phrases: '💬',
-  qa: '❓',
-  story: '📖',
-  arrange: '🔀',
-  translate: '✍️',
+const SKILLS: Record<string, { icon: LucideIcon; color: string }> = {
+  vocabulary: { icon: BookOpen, color: '#ff8052' },
+  phrases: { icon: MessageCircle, color: '#0ea5e9' },
+  qa: { icon: Sparkles, color: '#8b5cf6' },
+  story: { icon: Type, color: '#10b981' },
+  arrange: { icon: Shuffle, color: '#f59e0b' },
+  translate: { icon: Target, color: '#ec4899' },
 }
+const SKILL_ORDER = Object.keys(SKILLS)
 
-const MILESTONES = (d: ProgressData) => [
-  { id: 'first-lesson', label: '1st Lesson',   icon: '🎯', achieved: d.totalCompleted >= 1,  gradient: 'linear-gradient(135deg, #f97316 0%, #fb923c 100%)' },
-  { id: 'ten-lessons',  label: '10 Lessons',   icon: '📚', achieved: d.totalCompleted >= 10, gradient: 'linear-gradient(135deg, #2563eb 0%, #6366f1 100%)' },
-  { id: 'fifty-xp',     label: '50 XP',        icon: '⭐', achieved: d.totalXp >= 50,        gradient: 'linear-gradient(135deg, #d97706 0%, #f59e0b 100%)' },
-  { id: 'week-streak',  label: '7-Day Streak', icon: '🔥', achieved: d.longestStreak >= 7,   gradient: 'linear-gradient(135deg, #dc2626 0%, #f97316 100%)' },
-  { id: 'fifty-words',  label: '50 Words',     icon: '🗂️', achieved: d.wordsLearned >= 50,  gradient: 'linear-gradient(135deg, #7c3aed 0%, #9333ea 100%)' },
-  { id: 'hundred-xp',  label: '100 XP',       icon: '🏆', achieved: d.totalXp >= 100,       gradient: 'linear-gradient(135deg, #059669 0%, #16a34a 100%)' },
-]
-
-// ── Block primitive ───────────────────────────────────────────────────────────
+// ── Block primitive (mirrors dashboard) ───────────────────────────────────────
 type BlockProps = { className?: string; children?: React.ReactNode } & MotionProps
 const Block = ({ className, children, ...rest }: BlockProps) => (
   <motion.div
     variants={{
-      initial: { scale: 0.5, y: 50, opacity: 0 },
+      initial: { scale: 0.96, y: 24, opacity: 0 },
       animate: { scale: 1, y: 0, opacity: 1 },
     }}
-    transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
+    transition={{ type: 'spring', mass: 1, stiffness: 260, damping: 28 }}
     className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
-      className
+      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638] shadow-[0_2px_12px_rgba(0,0,0,0.05)]',
+      className,
     )}
     {...rest}
   >
@@ -68,35 +66,48 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
   </motion.div>
 )
 
-const tiltL = { rotate: '2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
-const tiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
+const Label = ({ children, className }: { children: React.ReactNode; className?: string }) => (
+  <p className={cn('text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500', className)}>{children}</p>
+)
 
 // ── Component ─────────────────────────────────────────────────────────────────
 export function ProgressContent({ data }: { data: ProgressData }) {
-  const {
-    streak, longestStreak, totalXp, totalCompleted,
-    avgScore, wordsLearned, dailyValues, recentProgress,
-  } = data
+  const t = useTranslations('progress')
+  const locale = useLocale()
+  const { course, streak } = data
+  const language = getLanguage(data.languageCode)
+  const languageName = (() => {
+    try { return new Intl.DisplayNames([locale], { type: 'language' }).of(data.languageCode) ?? language.name } catch { return language.name }
+  })()
+  const coursePct = course.modulesTotal ? Math.round((course.modulesDone / course.modulesTotal) * 100) : 0
 
-  const maxActivity     = Math.max(...dailyValues, 1)
-  const weekDaysActive  = dailyValues.filter(v => v > 0).length
-  const todayIdx        = (new Date().getDay() + 6) % 7
-  const totalSessions   = dailyValues.reduce((a, b) => a + b, 0)
-  const bestDayIdx      = dailyValues.indexOf(Math.max(...dailyValues))
-  const avgPerActiveDay = weekDaysActive > 0 ? Math.round(totalSessions / weekDaysActive) : 0
+  // This week = the last 7 heatmap days
+  const week = data.days.slice(-7)
+  const weekday = new Intl.DateTimeFormat(locale, { weekday: 'narrow', timeZone: 'UTC' })
+  const todayKey = new Date().toISOString().slice(0, 10)
 
-  let currentRun = 0
-  for (let i = todayIdx; i >= 0; i--) {
-    if (dailyValues[i] > 0) currentRun++
-    else break
-  }
+  const activeDays = data.days.filter(d => d.count > 0).length
+  const activityTotal = data.days.reduce((s, d) => s + d.count, 0)
+  const maxDay = Math.max(1, ...data.days.map(d => d.count))
+  const level = (n: number) => (n === 0 ? 0 : Math.min(4, Math.ceil((n / maxDay) * 4)))
+  const dateFmt = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', timeZone: 'UTC' })
 
-  const milestones    = MILESTONES(data)
-  const achievedCount = milestones.filter(m => m.achieved).length
+  const firstUnitDone = course.units.length > 0 && course.units[0].done === course.units[0].total
+  const milestones = [
+    { id: 'first', icon: Sparkles, label: t('m_first'), value: course.activitiesDone, target: 1 },
+    { id: 'lesson', icon: BookOpen, label: t('m_lesson'), value: course.modulesDone, target: 1 },
+    { id: 'streak', icon: Flame, label: t('m_streak7'), value: data.longestStreak, target: 7 },
+    { id: 'words', icon: Type, label: t('m_words50'), value: data.mastered.words, target: 50 },
+    { id: 'xp', icon: Zap, label: t('m_xp500'), value: data.totalXp, target: 500 },
+    { id: 'unit', icon: Trophy, label: t('m_unit'), value: firstUnitDone ? 1 : 0, target: 1 },
+  ]
+  const achieved = milestones.filter(m => m.value >= m.target).length
+
+  const skills = [...data.skills].sort((a, b) => SKILL_ORDER.indexOf(a.type) - SKILL_ORDER.indexOf(b.type))
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
-      <AppTopbar title="Progress" />
+      <AppTopbar title={t('title')} />
 
       <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
         <motion.div
@@ -105,212 +116,117 @@ export function ProgressContent({ data }: { data: ProgressData }) {
           transition={{ staggerChildren: 0.05 }}
           className="mx-auto max-w-6xl grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
         >
-
-          {/* ── Streak Hero (row-span-2) ─────────────────────────────────────── */}
-          <Block
-            className="col-span-12 md:col-span-4 md:row-span-2 relative overflow-hidden flex flex-col justify-between p-6 md:p-8 min-h-[200px] md:min-h-0"
-            style={
-              streak > 0
-                ? { background: 'linear-gradient(160deg, #10131c 0%, #7c2d12 55%, #9a3412 100%)' }
-                : { background: 'linear-gradient(160deg, #1e1b4b 0%, #312e81 100%)' }
-            }
-          >
-            {/* Grain */}
-            <div
-              className="absolute inset-0 opacity-[0.03] pointer-events-none"
-              style={{
-                backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-                backgroundSize: 'cover',
-              }}
-            />
-
-            {/* Status label */}
-            <div className="relative">
-              <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/45">
-                <span className={cn('size-1.5 rounded-full', streak > 0 ? 'bg-orange-400 animate-pulse' : 'bg-indigo-400')} />
-                {streak > 0 ? 'Active Streak' : 'No Streak Yet'}
-              </span>
-            </div>
-
-            {/* Main content */}
-            <div className="relative flex-1 flex flex-col justify-center gap-1.5 py-6">
-              {streak > 0 ? (
-                <>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-7xl md:text-8xl font-bold text-white leading-none tabular-nums">{streak}</span>
-                    <span className="text-3xl">🔥</span>
-                  </div>
-                  <p className="text-sm text-white/50 font-semibold mt-1">day streak — keep it up!</p>
-                  <p className="text-[11px] text-white/30 mt-0.5 tabular-nums">Best: {longestStreak} days</p>
-                </>
-              ) : (
-                <>
-                  <div className="text-4xl mb-2">🔥</div>
-                  <p className="text-xl font-bold text-white leading-tight">Start your streak today</p>
-                  <p className="text-sm text-white/45 mt-1 leading-snug">Complete a lesson to light the flame</p>
-                </>
-              )}
-            </div>
-
-            {/* CTA */}
-            <div className="relative">
-              <Link href="/learn">
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="w-full flex items-center justify-center gap-2 bg-white/10 hover:bg-white/[0.18] border border-white/15 text-white text-sm font-bold py-2.5 rounded-xl transition-colors"
-                >
-                  {streak > 0 ? 'Keep going' : 'Start learning'} <ArrowRight size={14} />
-                </motion.button>
-              </Link>
-            </div>
-          </Block>
-
-          {/* ── Total XP ─────────────────────────────────────────────────────── */}
-          <Block
-            whileHover={tiltL}
-            className="col-span-6 md:col-span-5 border-amber-500/20 relative overflow-hidden flex flex-col justify-between p-4 md:p-5 min-h-[120px]"
-            style={{ background: 'linear-gradient(135deg, #92400e 0%, #b45309 100%)' }}
-          >
-            <div className="absolute right-3 bottom-3 pointer-events-none select-none">
-              <Zap size={56} className="text-white/[0.07]" />
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Zap size={12} className="text-amber-300" />
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/50">Total XP</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-bold text-white tabular-nums leading-none">{totalXp}</p>
-              <p className="text-[11px] text-white/40 mt-1">experience points</p>
-            </div>
-          </Block>
-
-          {/* ── Avg Accuracy ─────────────────────────────────────────────────── */}
-          <Block
-            whileHover={tiltR}
-            className="col-span-6 md:col-span-3 border-emerald-500/20 relative overflow-hidden flex flex-col justify-between p-4 md:p-5 min-h-[120px]"
-            style={{ background: 'linear-gradient(135deg, #065f46 0%, #059669 100%)' }}
-          >
-            <div className="absolute right-3 bottom-3 pointer-events-none select-none">
-              <Target size={56} className="text-white/[0.07]" />
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Target size={12} className="text-emerald-300" />
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/50">Accuracy</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-bold text-white tabular-nums leading-none">
-                {avgScore}<span className="text-2xl font-semibold text-white/50">%</span>
-              </p>
-              <p className="text-[11px] text-white/40 mt-1">avg score</p>
-            </div>
-          </Block>
-
-          {/* ── Lessons Done ─────────────────────────────────────────────────── */}
-          <Block
-            whileHover={tiltL}
-            className="col-span-6 md:col-span-4 border-blue-500/20 relative overflow-hidden flex flex-col justify-between p-4 md:p-5 min-h-[120px]"
-            style={{ background: 'linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 100%)' }}
-          >
-            <div className="absolute right-3 bottom-3 pointer-events-none select-none">
-              <BookOpen size={56} className="text-white/[0.07]" />
-            </div>
-            <div className="flex items-center gap-1.5">
-              <BookOpen size={12} className="text-blue-300" />
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/50">Lessons</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-bold text-white tabular-nums leading-none">{totalCompleted}</p>
-              <p className="text-[11px] text-white/40 mt-1">completed</p>
-            </div>
-          </Block>
-
-          {/* ── Words Learned ────────────────────────────────────────────────── */}
-          <Block
-            whileHover={tiltR}
-            className="col-span-6 md:col-span-4 border-violet-500/20 relative overflow-hidden flex flex-col justify-between p-4 md:p-5 min-h-[120px]"
-            style={{ background: 'linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%)' }}
-          >
-            <div className="absolute right-3 bottom-3 pointer-events-none select-none">
-              <Star size={56} className="text-white/[0.07]" />
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Star size={12} className="text-violet-300" />
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/50">Words</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-bold text-white tabular-nums leading-none">{wordsLearned}</p>
-              <p className="text-[11px] text-white/40 mt-1">words learned</p>
-            </div>
-          </Block>
-
-          {/* ── Weekly Activity Chart ────────────────────────────────────────── */}
-          <Block className="col-span-12 md:col-span-8 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            {/* Header */}
-            <div className="flex items-center justify-between mb-4 shrink-0">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">This week</p>
-              <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
-                <span className="size-1.5 rounded-full bg-primary" />
-                <span className="text-[11px] font-bold text-primary tabular-nums">{weekDaysActive} / 7 days</span>
-              </div>
-            </div>
-
-            {/* Stats row */}
-            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0">
-              <div className="flex flex-col gap-0.5">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">sessions</p>
-              </div>
-              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">avg / active day</p>
-              </div>
-              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
-                <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
-                  {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
-                </p>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">
-                  {currentRun > 0 ? 'day run' : 'best day'}
+          {/* ── Journey ────────────────────────────────────────────────────── */}
+          <Block className="col-span-12 lg:col-span-8 relative overflow-hidden p-5 md:p-7 flex flex-col gap-5">
+            <div className="relative flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-widest text-primary">
+                  {language.flag} {t('journey_badge', { language: languageName })}
+                </span>
+                <h2 className="mt-3 text-2xl md:text-3xl font-bold leading-tight text-slate-900 dark:text-white">
+                  {course.next ? t('lesson_of', { n: course.next.position, total: course.modulesTotal }) : t('course_done')}
+                </h2>
+                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                  {t('modules_done', { done: course.modulesDone, total: course.modulesTotal })}
+                  {' · '}
+                  {t('activities_done', { done: course.activitiesDone, total: course.activitiesTotal })}
                 </p>
               </div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-5xl md:text-6xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{coursePct}</span>
+                <span className="text-xl font-bold text-slate-400">%</span>
+              </div>
             </div>
 
-            {/* Chart — animated bars */}
-            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-[80px]">
-              {dailyValues.map((v, i) => {
-                const isToday = i === todayIdx
-                const isBest  = i === bestDayIdx && v > 0
-                const pct     = v / maxActivity
+            {/* Units */}
+            <div className="relative grid gap-2" style={{ gridTemplateColumns: `repeat(${Math.max(course.units.length, 1)}, minmax(0, 1fr))` }}>
+              {course.units.map((u, i) => {
+                const pct = u.total ? u.done / u.total : 0
                 return (
-                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
-                    <motion.span
-                      className={cn(
-                        'text-[10px] font-bold tabular-nums',
-                        v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent'
-                      )}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.5 + i * 0.06 }}
-                    >
-                      {v > 0 ? v : '0'}
-                    </motion.span>
-                    <div className="flex-1 w-full flex items-end">
+                  <div key={i} className="group min-w-0" title={`${u.title} · ${u.done}/${u.total}`}>
+                    <div className="h-2.5 overflow-hidden rounded-full bg-black/[0.06] dark:bg-white/[0.08]">
                       <motion.div
-                        style={{ height: `${Math.max(pct * 100, v > 0 ? 8 : 4)}%` }}
-                        className={cn(
-                          'w-full rounded-lg',
-                          isToday && v > 0 ? 'bg-primary shadow-sm shadow-primary/30'
-                          : isBest            ? 'bg-primary/75'
-                          : v > 0             ? 'bg-primary/45'
-                          : 'bg-slate-100 dark:bg-white/[0.06]'
-                        )}
-                        initial={{ scaleY: 0, originY: '100%' }}
-                        animate={{ scaleY: 1 }}
-                        transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
+                        className="h-full rounded-full bg-primary"
+                        initial={{ width: 0 }}
+                        animate={{ width: `${pct * 100}%` }}
+                        transition={{ delay: 0.3 + i * 0.08, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                       />
                     </div>
-                    <span className={cn('text-[10px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
-                      {DAYS[i]}
+                    <p className="mt-1.5 flex items-center gap-1 truncate text-[11px] font-semibold text-slate-500 dark:text-slate-400">
+                      <span>{u.emoji}</span>
+                      <span className="hidden truncate sm:inline">{u.title}</span>
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="relative flex flex-wrap items-center justify-between gap-3 border-t border-black/[0.05] dark:border-white/[0.06] pt-4">
+              <span className="flex items-center gap-1.5 text-sm font-semibold text-slate-600 dark:text-slate-300">
+                <Star size={16} className="fill-amber-400 text-amber-400" />
+                <span className="tabular-nums">{course.stars}</span>
+                <span className="text-slate-400">/ {course.activitiesTotal * 3} {t('stars_label')}</span>
+              </span>
+              {course.next && (
+                <Link
+                  href={`/learn/${course.next.slug}`}
+                  className="group inline-flex max-w-full items-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/25 transition hover:opacity-95 active:scale-[0.98]"
+                >
+                  <span className="truncate">{course.activitiesDone > 0 ? t('continue') : t('start')}: {course.next.title}</span>
+                  <ArrowRight size={15} className="shrink-0 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              )}
+            </div>
+          </Block>
+
+          {/* ── Streak ─────────────────────────────────────────────────────── */}
+          <Block
+            className="col-span-12 sm:col-span-6 lg:col-span-4 relative overflow-hidden p-5 md:p-6 flex flex-col justify-between gap-4 border-none text-white"
+            style={{ background: streak > 0 ? 'linear-gradient(160deg, #1b1f2e 0%, #7c2d12 70%, #c2410c 100%)' : 'linear-gradient(160deg, #1b1f2e 0%, #2b3150 100%)' }}
+          >
+            <div className="flex items-center justify-between">
+              <Label className="text-white/50">{t('streak_title')}</Label>
+              {data.freezes > 0 && (
+                <span className="flex items-center gap-1 rounded-full bg-white/10 px-2 py-0.5 text-[11px] font-bold text-sky-200">
+                  <Shield size={11} /> {t('freezes', { n: data.freezes })}
+                </span>
+              )}
+            </div>
+            {streak > 0 ? (
+              <div>
+                <div className="flex items-end gap-2">
+                  <motion.span
+                    animate={{ scale: [1, 1.12, 1], rotate: [0, -4, 0] }}
+                    transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+                    className="text-4xl leading-none"
+                  >🔥</motion.span>
+                  <span className="text-6xl font-bold tabular-nums leading-none">{streak}</span>
+                  <span className="pb-1 text-lg font-semibold text-white/60">{t('streak_days', { n: streak })}</span>
+                </div>
+                <p className="mt-2 text-xs text-white/45">{t('streak_best', { n: Math.max(data.longestStreak, streak) })}</p>
+              </div>
+            ) : (
+              <div>
+                <p className="text-xl font-bold leading-tight">{t('streak_none')}</p>
+                <p className="mt-1 text-sm text-white/50">{t('streak_none_hint')}</p>
+              </div>
+            )}
+            <div className="grid grid-cols-7 gap-1.5">
+              {week.map(d => {
+                const isToday = d.date === todayKey
+                return (
+                  <div key={d.date} className="flex flex-col items-center gap-1">
+                    <span
+                      className={cn(
+                        'flex size-7 items-center justify-center rounded-full text-[11px] transition-colors',
+                        d.count > 0 ? 'bg-orange-400 text-white' : d.future ? 'bg-white/[0.04]' : 'bg-white/10',
+                        isToday && 'ring-2 ring-white/70',
+                      )}
+                    >
+                      {d.count > 0 && <Check size={13} strokeWidth={3} />}
+                    </span>
+                    <span className={cn('text-[10px] font-bold', isToday ? 'text-white' : 'text-white/40')}>
+                      {weekday.format(new Date(d.date + 'T00:00:00Z'))}
                     </span>
                   </div>
                 )
@@ -318,145 +234,269 @@ export function ProgressContent({ data }: { data: ProgressData }) {
             </div>
           </Block>
 
-          {/* ── Best Streak ──────────────────────────────────────────────────── */}
-          <Block
-            className="col-span-12 md:col-span-4 border-orange-600/20 relative overflow-hidden flex flex-col justify-between p-5 md:p-6 min-h-[140px]"
-            style={{ background: 'linear-gradient(135deg, #7c2d12 0%, #c2410c 60%, #ea580c 100%)' }}
-          >
-            <div className="absolute right-4 bottom-4 pointer-events-none select-none">
-              <TrendingUp size={64} className="text-white/[0.06]" />
-            </div>
-            <div className="flex items-center gap-1.5">
-              <TrendingUp size={12} className="text-orange-300" />
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/50">Best Streak</p>
-            </div>
-            <div>
-              <div className="flex items-baseline gap-2">
-                <p className="text-5xl font-bold text-white tabular-nums leading-none">{longestStreak}</p>
-                <p className="text-lg text-white/45 font-semibold">days</p>
+          {/* ── Stats ──────────────────────────────────────────────────────── */}
+          <StatTile
+            className="col-span-6 sm:col-span-6 lg:col-span-3"
+            icon={Zap} tone="text-primary bg-primary/10"
+            label={t('xp')} value={data.totalXp.toLocaleString(locale)}
+          />
+          <StatTile
+            className="col-span-6 lg:col-span-3"
+            icon={Type} tone="text-violet-600 bg-violet-500/10 dark:text-violet-300"
+            label={t('words_mastered')} value={data.mastered.words.toLocaleString(locale)}
+            hint={t('words_hint', { phrases: data.mastered.phrases, questions: data.mastered.questions })}
+          />
+          <StatTile
+            className="col-span-6 lg:col-span-3"
+            icon={Gem} tone="text-sky-600 bg-sky-500/10 dark:text-sky-300"
+            label={t('gems')} value={data.gems.toLocaleString(locale)}
+            href="/gems"
+          />
+          <StatTile
+            className="col-span-6 lg:col-span-3"
+            icon={Target} tone="text-emerald-600 bg-emerald-500/10 dark:text-emerald-300"
+            label={t('accuracy')} value={data.accuracy === null ? '—' : `${data.accuracy}%`}
+          />
+
+          {/* ── Heatmap ────────────────────────────────────────────────────── */}
+          <Block className="col-span-12 lg:col-span-8 p-5 md:p-6 flex flex-col gap-4">
+            <div className="flex flex-wrap items-end justify-between gap-2">
+              <div>
+                <Label>{t('activity_title')}</Label>
+                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t('activity_weeks', { n: data.days.length / 7 })}</p>
               </div>
-              <p className="text-[11px] text-white/35 mt-1">personal record</p>
+              <div className="flex gap-4 text-right">
+                <div>
+                  <p className="text-xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{activeDays}</p>
+                  <p className="mt-1 text-[10px] font-semibold text-slate-400">{t('active_days')}</p>
+                </div>
+                <div>
+                  <p className="text-xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{activityTotal}</p>
+                  <p className="mt-1 text-[10px] font-semibold text-slate-400">{t('activities_count')}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-2">
+              <div className="grid grid-rows-7 gap-[3px] pt-px text-[9px] font-bold text-slate-400">
+                {week.map((d, i) => (
+                  <span key={d.date} className={cn('flex items-center leading-none', i % 2 === 1 && 'invisible')}>
+                    {weekday.format(new Date(d.date + 'T00:00:00Z'))}
+                  </span>
+                ))}
+              </div>
+              <div className="grid flex-1 grid-flow-col grid-rows-7 gap-[3px]">
+                {data.days.map((d, i) => (
+                  <motion.span
+                    key={d.date}
+                    initial={{ opacity: 0, scale: 0.4 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.2 + Math.floor(i / 7) * 0.015, duration: 0.25 }}
+                    title={d.future ? undefined : t('day_tooltip', { count: d.count, date: dateFmt.format(new Date(d.date + 'T00:00:00Z')) })}
+                    className={cn(
+                      'aspect-square w-full rounded-[3px]',
+                      d.future && 'opacity-0',
+                      d.date === todayKey && 'ring-2 ring-primary/50 ring-offset-1 ring-offset-white dark:ring-offset-[#202638]',
+                      ['bg-slate-100 dark:bg-white/[0.06]', 'bg-primary/25', 'bg-primary/50', 'bg-primary/75', 'bg-primary'][level(d.count)],
+                    )}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div className="flex items-center justify-end gap-1.5 text-[10px] font-semibold text-slate-400">
+              {t('less')}
+              {['bg-slate-100 dark:bg-white/[0.06]', 'bg-primary/25', 'bg-primary/50', 'bg-primary/75', 'bg-primary'].map(c => (
+                <span key={c} className={cn('size-2.5 rounded-[3px]', c)} />
+              ))}
+              {t('more')}
             </div>
           </Block>
 
-          {/* ── Milestones label ─────────────────────────────────────────────── */}
-          <motion.div
-            variants={{ initial: { opacity: 0, y: 8 }, animate: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.3 }}
-            className="col-span-12 flex items-center justify-between px-1 pt-1"
-          >
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">Milestones</p>
-            <p className="text-[10px] font-bold text-primary tabular-nums">{achievedCount} / {milestones.length} unlocked</p>
-          </motion.div>
+          {/* ── Skills ─────────────────────────────────────────────────────── */}
+          <Block className="col-span-12 sm:col-span-6 lg:col-span-4 p-5 md:p-6 flex flex-col gap-3">
+            <Label>{t('skills_title')}</Label>
+            <ul className="flex flex-col gap-3">
+              {skills.map((s, i) => {
+                const meta = SKILLS[s.type] ?? { icon: BookOpen, color: '#94a3b8' }
+                const Icon = meta.icon
+                const pct = s.total ? s.done / s.total : 0
+                return (
+                  <li key={s.type} className="flex items-center gap-3">
+                    <span className="flex size-8 shrink-0 items-center justify-center rounded-xl" style={{ background: `${meta.color}1a`, color: meta.color }}>
+                      <Icon size={15} />
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="truncate text-sm font-semibold text-slate-800 dark:text-slate-100">{t(`type_${s.type}` as 'type_vocabulary')}</span>
+                        <span className="shrink-0 text-[11px] font-bold tabular-nums text-slate-400">{s.done}/{s.total}</span>
+                      </div>
+                      <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-black/[0.05] dark:bg-white/[0.07]">
+                        <motion.div
+                          className="h-full rounded-full"
+                          style={{ background: meta.color }}
+                          initial={{ width: 0 }}
+                          animate={{ width: `${pct * 100}%` }}
+                          transition={{ delay: 0.4 + i * 0.06, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                        />
+                      </div>
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
+          </Block>
 
-          {/* ── Milestone tiles ──────────────────────────────────────────────── */}
-          {milestones.map(({ id, label, icon, achieved, gradient }, i) => (
-            <Block
-              key={id}
-              whileHover={achieved ? (i % 2 === 0 ? tiltL : tiltR) : {}}
-              className={cn(
-                'col-span-4 md:col-span-2 flex flex-col items-center justify-center gap-2 min-h-[100px] p-3 text-center',
-                !achieved && 'shadow-none'
-              )}
-              style={achieved ? { background: gradient, border: 'none' } : {}}
-            >
-              <span className={cn('text-2xl leading-none', !achieved && 'grayscale opacity-30')}>
-                {icon}
-              </span>
-              <p className={cn(
-                'text-[11px] font-bold leading-tight',
-                achieved ? 'text-white' : 'text-slate-400 dark:text-slate-600'
-              )}>
-                {label}
-              </p>
-              {achieved && (
-                <span className="text-[8px] font-bold uppercase tracking-wider text-white/55 bg-white/10 border border-white/10 px-1.5 py-0.5 rounded-full">
-                  Unlocked
-                </span>
-              )}
-            </Block>
-          ))}
-
-          {/* ── How Points Work ──────────────────────────────────────────────── */}
-          <Link href="/progress/points" className="col-span-12">
-            <Block
-              whileHover={{ scale: 1.015, filter: 'brightness(1.08)' }}
-              whileTap={{ scale: 0.98 }}
-              className="relative overflow-hidden flex items-center justify-between p-5 md:p-6 cursor-pointer"
-              style={{ background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%)' }}
-            >
-              <div className="absolute right-5 bottom-0 pointer-events-none select-none opacity-[0.07]">
-                <Zap size={80} className="text-white" />
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-1.5">
-                  <Star size={16} className="text-amber-400" />
-                  <Gem size={16} className="text-cyan-400" />
-                  <Flame size={16} className="text-orange-400" />
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-white leading-tight">How Points Work</p>
-                  <p className="text-[11px] text-white/45 mt-0.5">XP, stars, gems, streaks & skills explained</p>
-                </div>
-              </div>
-              <ArrowRight size={18} className="text-white/50 shrink-0 relative z-10" />
-            </Block>
-          </Link>
-
-          {/* ── Recent Lessons ───────────────────────────────────────────────── */}
-          <Block className="col-span-12 p-5 flex flex-col gap-1 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-            <div className="flex items-center justify-between mb-3">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">Recent Lessons</p>
-              <Link href="/learn" className="text-[11px] font-semibold text-primary hover:opacity-70 transition-opacity">
-                Browse all →
-              </Link>
+          {/* ── Milestones ─────────────────────────────────────────────────── */}
+          <Block className="col-span-12 p-5 md:p-6">
+            <div className="mb-4 flex items-center justify-between">
+              <Label>{t('milestones_title')}</Label>
+              <span className="text-[11px] font-bold tabular-nums text-primary">{t('milestones_count', { done: achieved, total: milestones.length })}</span>
             </div>
-
-            {recentProgress.length > 0 ? (
-              recentProgress.map(p => (
-                <div
-                  key={p.lesson_id}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-2xl hover:bg-primary/[0.04] dark:hover:bg-primary/[0.06] transition-colors"
-                >
-                  <div className="size-10 rounded-xl bg-primary/[0.08] dark:bg-primary/[0.12] flex items-center justify-center text-lg shrink-0">
-                    {LESSON_TYPE_ICON[p.lesson?.type ?? ''] ?? '📝'}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-sm text-slate-900 dark:text-white truncate">{p.lesson?.title ?? 'Lesson'}</p>
-                    <p className="text-xs text-slate-400 dark:text-slate-500 truncate">{p.lesson?.module?.title}</p>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-sm font-bold text-primary tabular-nums">{p.score ?? 0}%</p>
-                    <p className="text-[10px] text-slate-400 dark:text-slate-500">
-                      {p.completed_at
-                        ? new Date(p.completed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
-                        : ''}
-                    </p>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <div className="flex flex-col items-center justify-center py-12 gap-3 text-center">
-                <span className="text-4xl">📊</span>
-                <p className="font-bold text-slate-900 dark:text-white">No activity yet</p>
-                <p className="text-sm text-slate-400 dark:text-slate-500 max-w-xs">
-                  Complete your first lesson to start tracking progress
-                </p>
-                <Link href="/learn">
-                  <motion.button
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.97 }}
-                    className="mt-2 bg-primary text-white text-sm font-bold px-6 py-2.5 rounded-xl shadow-sm shadow-primary/25"
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-6">
+              {milestones.map(m => {
+                const ok = m.value >= m.target
+                const pct = Math.min(1, m.value / m.target)
+                const Icon = m.icon
+                return (
+                  <motion.div
+                    key={m.id}
+                    whileHover={ok ? { y: -3 } : undefined}
+                    className={cn(
+                      'relative flex flex-col gap-2 rounded-2xl p-3.5 transition-colors',
+                      ok ? 'bg-primary/[0.08] dark:bg-primary/[0.12]' : 'bg-slate-50 dark:bg-white/[0.03]',
+                    )}
                   >
-                    Start learning →
-                  </motion.button>
-                </Link>
+                    <div className="flex items-center justify-between">
+                      <span className={cn('flex size-9 items-center justify-center rounded-xl', ok ? 'bg-primary text-white shadow-md shadow-primary/30' : 'bg-slate-200/70 text-slate-400 dark:bg-white/[0.06]')}>
+                        <Icon size={17} />
+                      </span>
+                      {ok && <Check size={16} strokeWidth={3} className="text-primary" />}
+                    </div>
+                    <p className={cn('text-xs font-bold leading-tight', ok ? 'text-slate-900 dark:text-white' : 'text-slate-500 dark:text-slate-400')}>{m.label}</p>
+                    {!ok && (
+                      <div>
+                        <div className="h-1 overflow-hidden rounded-full bg-black/[0.06] dark:bg-white/[0.08]">
+                          <div className="h-full rounded-full bg-primary/60" style={{ width: `${pct * 100}%` }} />
+                        </div>
+                        <p className="mt-1 text-[10px] font-semibold tabular-nums text-slate-400">{Math.min(m.value, m.target)}/{m.target}</p>
+                      </div>
+                    )}
+                  </motion.div>
+                )
+              })}
+            </div>
+          </Block>
+
+          {/* ── Recent ─────────────────────────────────────────────────────── */}
+          <Block className="col-span-12 lg:col-span-8 p-5 md:p-6">
+            <div className="mb-2 flex items-center justify-between">
+              <Label>{t('recent_title')}</Label>
+              <Link href="/learn" className="text-[11px] font-semibold text-primary hover:opacity-70 transition-opacity">{t('browse')} →</Link>
+            </div>
+            {data.recent.length > 0 ? (
+              <ul>
+                {data.recent.map(r => {
+                  const meta = SKILLS[r.type] ?? { icon: BookOpen, color: '#94a3b8' }
+                  const Icon = meta.icon
+                  const row = (
+                    <>
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl" style={{ background: `${meta.color}1a`, color: meta.color }}>
+                        <Icon size={17} />
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate text-sm font-semibold text-slate-900 dark:text-white">{t(`type_${r.type}` as 'type_vocabulary')}</span>
+                        <span className="block truncate text-xs text-slate-400 dark:text-slate-500">{r.moduleTitle}</span>
+                      </span>
+                      <span className="flex shrink-0 flex-col items-end gap-0.5">
+                        <span className="flex gap-0.5">
+                          {[1, 2, 3].map(n => (
+                            <Star key={n} size={12} className={n <= r.stars ? 'fill-amber-400 text-amber-400' : 'text-slate-200 dark:text-slate-700'} />
+                          ))}
+                        </span>
+                        <span className="text-[10px] text-slate-400">{dateFmt.format(new Date(r.completedAt))}</span>
+                      </span>
+                    </>
+                  )
+                  return (
+                    <li key={r.id}>
+                      {r.slug ? (
+                        <Link href={`/learn/${r.slug}/${r.type}`} className="flex items-center gap-3 rounded-2xl px-2 py-2.5 -mx-2 hover:bg-primary/[0.04] dark:hover:bg-primary/[0.06] transition-colors">{row}</Link>
+                      ) : (
+                        <div className="flex items-center gap-3 px-2 py-2.5 -mx-2">{row}</div>
+                      )}
+                    </li>
+                  )
+                })}
+              </ul>
+            ) : (
+              <div className="flex flex-col items-center justify-center gap-2 py-10 text-center">
+                <span className="flex size-12 items-center justify-center rounded-2xl bg-primary/10 text-primary"><BookOpen size={22} /></span>
+                <p className="font-bold text-slate-900 dark:text-white">{t('recent_empty')}</p>
+                <p className="max-w-xs text-sm text-slate-400">{t('recent_empty_hint')}</p>
               </div>
             )}
           </Block>
 
+          {/* ── How points work ────────────────────────────────────────────── */}
+          <Link href="/progress/points" className="col-span-12 lg:col-span-4">
+            <Block
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.98 }}
+              className="group relative h-full overflow-hidden p-5 md:p-6 flex flex-col justify-between gap-6 border-none text-white"
+              style={{ background: 'linear-gradient(150deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%)' }}
+            >
+              <div className="flex gap-2">
+                {[
+                  { Icon: Star, c: 'text-amber-300 fill-amber-300' },
+                  { Icon: Gem, c: 'text-sky-300' },
+                  { Icon: Flame, c: 'text-orange-300' },
+                  { Icon: Zap, c: 'text-yellow-200' },
+                ].map(({ Icon, c }, i) => (
+                  <span
+                    key={i}
+                    className="flex size-9 items-center justify-center rounded-xl bg-white/10 transition-transform duration-300 group-hover:-translate-y-1"
+                    style={{ transitionDelay: `${i * 50}ms` }}
+                  >
+                    <Icon size={16} className={c} />
+                  </span>
+                ))}
+              </div>
+              <div className="flex items-end justify-between gap-3">
+                <div>
+                  <p className="text-base font-bold leading-tight">{t('points_title')}</p>
+                  <p className="mt-1 text-xs text-white/55">{t('points_hint')}</p>
+                </div>
+                <ArrowRight size={18} className="shrink-0 text-white/60 transition-transform group-hover:translate-x-1" />
+              </div>
+            </Block>
+          </Link>
         </motion.div>
       </main>
     </div>
   )
+}
+
+function StatTile({ className, icon: Icon, tone, label, value, hint, href }: {
+  className?: string
+  icon: LucideIcon
+  tone: string
+  label: string
+  value: string
+  hint?: string
+  href?: string
+}) {
+  const body = (
+    <Block whileHover={{ y: -3 }} className={cn('group h-full p-4 md:p-5 flex flex-col gap-3', !href && className)}>
+      <span className={cn('flex size-9 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6', tone)}>
+        <Icon size={17} />
+      </span>
+      <div>
+        <p className="text-2xl md:text-3xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{value}</p>
+        <p className="mt-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400">{label}</p>
+        {hint && <p className="mt-0.5 truncate text-[11px] text-slate-400">{hint}</p>}
+      </div>
+    </Block>
+  )
+  return href ? <Link href={href} className={className}>{body}</Link> : body
 }

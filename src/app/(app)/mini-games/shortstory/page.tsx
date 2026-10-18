@@ -134,7 +134,7 @@ export default function ShortStoryPage() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#080a10' }}>
-      <AppTopbar title="Short Story" back={{ href: '/play', label: 'Games' }} />
+      <AppTopbar title="Short Story" back={{ href: '/mini-games', label: 'Mini-games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full">
 
@@ -328,10 +328,10 @@ export default function ShortStoryPage() {
                 Try another story
               </button>
               <a
-                href="/play"
+                href="/mini-games"
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all"
               >
-                Back to Games
+                Back to Mini-games
               </a>
             </div>
           </motion.div>

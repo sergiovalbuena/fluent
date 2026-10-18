@@ -149,7 +149,7 @@ export default function TypeX3Page() {
 
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#001a2e' }}>
-      <AppTopbar title="Type × 3" back={{ href: '/play', label: 'Games' }} />
+      <AppTopbar title="Type × 3" back={{ href: '/mini-games', label: 'Mini-games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-6 max-w-lg mx-auto w-full">
 
@@ -322,10 +322,10 @@ export default function TypeX3Page() {
                 Play Again
               </button>
               <a
-                href="/play"
+                href="/mini-games"
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all"
               >
-                Back to Games
+                Back to Mini-games
               </a>
             </div>
           </motion.div>

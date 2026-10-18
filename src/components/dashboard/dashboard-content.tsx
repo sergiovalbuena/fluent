@@ -236,7 +236,7 @@ export function DashboardContent({ modules, stats, displayName = 'there', langua
             style={{ background: 'linear-gradient(135deg, #b45309 0%, #c2410c 100%)' }}
           >
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">⚡</div>
-            <Link href="/play" className="flex flex-col items-center gap-1 w-full relative z-10">
+            <Link href="/mini-games" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Zap size={22} className="text-white" />
               <p className="text-[13px] font-bold text-white text-center leading-tight">{t('quick_practice')}</p>
               <p className="text-[11px] font-semibold text-white/70">{tc('two_min')}</p>
@@ -292,7 +292,7 @@ export function DashboardContent({ modules, stats, displayName = 'there', langua
             style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)' }}
           >
             <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🎵</div>
-            <Link href="/play" className="flex flex-col items-center gap-1 w-full relative z-10">
+            <Link href="/mini-games" className="flex flex-col items-center gap-1 w-full relative z-10">
               <Music size={20} className="text-white" />
               <p className="text-[12px] font-bold text-white text-center leading-tight">{t('music_time')}</p>
               <p className="text-[11px] font-semibold text-white/70">{tc('three_songs')}</p>

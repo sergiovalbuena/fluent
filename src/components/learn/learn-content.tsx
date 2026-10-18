@@ -427,7 +427,7 @@ function Chest({ x, row, labelSide, world, open }: { x: number; row: number; lab
   const top = row * ROW_H + ROW_H / 2
   const half = 33
   return (
-    <Link href="/play" className="focus-visible:outline-none">
+    <Link href="/mini-games" className="focus-visible:outline-none">
       <motion.div
         className="absolute z-10"
         style={{ left: `calc(${x}% - ${half}px)`, top: top - half }}

@@ -3,9 +3,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BarChart2, User, Home, Gamepad2, Gem, BookType, ChevronDown, BookOpen, Video, Users, Bookmark } from 'lucide-react'
+import { Home, Gamepad2, BookType, ChevronDown, LogIn, BookOpen, Users, Bookmark } from 'lucide-react'
 import { motion as m, AnimatePresence } from 'framer-motion'
-import { ThemeToggle } from '@/components/ui/theme-toggle'
 import {
   Sidebar,
   SidebarBody,
@@ -16,11 +15,12 @@ import {
   type SidebarLinkItem,
 } from '@/components/ui/sidebar'
 import { cn } from '@/lib/utils'
+import { AccountMenu, type Account } from '@/components/layout/account-menu'
 import { useTranslations } from 'next-intl'
 
 type Module = { slug: string; title: string; icon: string }
 
-function SidebarContent({ modules }: { modules: Module[] }) {
+function SidebarContent({ modules, account }: { modules: Module[]; account: Account | null }) {
   const t = useTranslations('nav')
   const pathname = usePathname()
   const { open: sidebarOpen, animate } = useSidebar()
@@ -39,19 +39,10 @@ function SidebarContent({ modules }: { modules: Module[] }) {
 
   const bottomLinks: SidebarLinkItem[] = [
     { href: '/saved', icon: <Bookmark size={20} strokeWidth={1.8} />, label: t('saved') },
-    { href: '/play', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: t('play') },
-    { href: '/gems', icon: <Gem size={20} strokeWidth={1.8} />, label: t('gems') },
+    { href: '/mini-games', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: t('mini_games') },
     { href: '/verbs', icon: <BookType size={20} strokeWidth={1.8} />, label: t('verbs') },
-    { href: '/videos', icon: <Video size={20} strokeWidth={1.8} />, label: t('videos') },
     { href: '/community', icon: <Users size={20} strokeWidth={1.8} />, label: t('community') },
-    { href: '/progress', icon: <BarChart2 size={20} strokeWidth={1.8} />, label: t('progress') },
   ]
-
-  const profileLink: SidebarLinkItem = {
-    href: '/profile',
-    icon: <User size={20} strokeWidth={1.8} />,
-    label: t('profile'),
-  }
 
   return (
     <div className="flex flex-col h-full">
@@ -161,24 +152,25 @@ function SidebarContent({ modules }: { modules: Module[] }) {
         </SidebarGroup>
       </nav>
 
-      {/* Footer — Profile + Theme */}
+      {/* Footer — account menu */}
       <SidebarFooter>
-        <SidebarLink link={profileLink} active={isActive('/profile')} />
-        <div className="mt-1 px-1">
-          <ThemeToggle />
-        </div>
+        {account ? (
+          <AccountMenu account={account} active={isActive('/profile')} />
+        ) : (
+          <SidebarLink link={{ href: '/login', icon: <LogIn size={20} strokeWidth={1.8} />, label: t('sign_in') }} />
+        )}
       </SidebarFooter>
     </div>
   )
 }
 
-export function SidebarNav({ modules }: { modules: Module[] }) {
+export function SidebarNav({ modules, account }: { modules: Module[]; account: Account | null }) {
   const [open, setOpen] = useState(false)
 
   return (
     <Sidebar open={open} setOpen={setOpen}>
       <SidebarBody className="border-r border-primary/10 bg-[#f8f6f5] dark:bg-[#1b2030]">
-        <SidebarContent modules={modules} />
+        <SidebarContent modules={modules} account={account} />
       </SidebarBody>
     </Sidebar>
   )

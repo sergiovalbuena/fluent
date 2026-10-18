@@ -3,7 +3,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLocale, useTranslations } from 'next-intl'
-import { ExternalLink, Link2, Loader2, Play, Plus, Trash2, X } from 'lucide-react'
+import { Copy, ExternalLink, Link2, Loader2, MoreHorizontal, Pencil, Play, Plus, Trash2, X } from 'lucide-react'
+import { Menu } from '@base-ui/react/menu'
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { toast } from 'sonner'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
@@ -250,6 +252,155 @@ function Player({ link, onClose }: { link: StudyLink; onClose: () => void }) {
   )
 }
 
+// ── Card menu ─────────────────────────────────────────────────────────────────
+
+const menuItem =
+  'flex items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 outline-none cursor-pointer select-none data-[highlighted]:bg-primary/10 data-[highlighted]:text-primary'
+
+function LinkMenu({ link, onPlay, onEdit, onRemove }: {
+  link: StudyLink
+  onPlay: () => void
+  onEdit: () => void
+  onRemove: () => void
+}) {
+  const t = useTranslations('saved')
+  const platform = PLATFORM_META[link.platform].label
+
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(link.url)
+      toast.success(t('copied'))
+    } catch {
+      toast.error(t('copy_error'))
+    }
+  }
+
+  return (
+    <Menu.Root>
+      <Menu.Trigger
+        aria-label={t('options')}
+        className="shrink-0 -mr-1 -mt-0.5 flex size-8 items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700 data-[popup-open]:bg-slate-100 data-[popup-open]:text-slate-700 dark:hover:bg-white/[0.06] dark:hover:text-white dark:data-[popup-open]:bg-white/[0.06]"
+      >
+        <MoreHorizontal size={18} />
+      </Menu.Trigger>
+      <Menu.Portal>
+        <Menu.Positioner side="bottom" align="end" sideOffset={4} className="z-50 outline-none">
+          <Menu.Popup className="w-52 origin-[var(--transform-origin)] rounded-2xl border border-black/[0.06] dark:border-white/[0.08] bg-white dark:bg-[#202638] p-1.5 shadow-xl shadow-black/10 outline-none transition-[opacity,transform] duration-150 data-[starting-style]:scale-95 data-[starting-style]:opacity-0 data-[ending-style]:scale-95 data-[ending-style]:opacity-0">
+            {embedUrl(link) && (
+              <Menu.Item onClick={onPlay} className={menuItem}>
+                <Play size={15} className="shrink-0 opacity-70" /> {t('play')}
+              </Menu.Item>
+            )}
+            <Menu.LinkItem href={link.url} target="_blank" rel="noopener noreferrer" className={menuItem}>
+              <ExternalLink size={15} className="shrink-0 opacity-70" /> {t('open_in', { platform })}
+            </Menu.LinkItem>
+            <Menu.Item onClick={copy} className={menuItem}>
+              <Copy size={15} className="shrink-0 opacity-70" /> {t('copy_link')}
+            </Menu.Item>
+            <Menu.Item onClick={onEdit} className={menuItem}>
+              <Pencil size={15} className="shrink-0 opacity-70" /> {t('edit')}
+            </Menu.Item>
+            <div className="mx-1 my-1 h-px bg-black/[0.06] dark:bg-white/[0.08]" />
+            <Menu.Item
+              onClick={onRemove}
+              className={cn(menuItem, 'text-red-600 dark:text-red-400 data-[highlighted]:bg-red-500/10 data-[highlighted]:text-red-600')}
+            >
+              <Trash2 size={15} className="shrink-0" /> {t('delete')}
+            </Menu.Item>
+          </Menu.Popup>
+        </Menu.Positioner>
+      </Menu.Portal>
+    </Menu.Root>
+  )
+}
+
+/** Edit title, category and note of a saved link */
+function EditLinkDialog({ link, onClose, onSaved }: {
+  link: StudyLink | null
+  onClose: () => void
+  onSaved: (link: StudyLink) => void
+}) {
+  return (
+    <Dialog open={link != null} onOpenChange={open => { if (!open) onClose() }}>
+      <DialogContent className="sm:max-w-md">
+        {link && <EditLinkForm key={link.id} link={link} onClose={onClose} onSaved={onSaved} />}
+      </DialogContent>
+    </Dialog>
+  )
+}
+
+function EditLinkForm({ link, onClose, onSaved }: {
+  link: StudyLink
+  onClose: () => void
+  onSaved: (link: StudyLink) => void
+}) {
+  const t = useTranslations('saved')
+  const [title, setTitle] = useState(link.title ?? '')
+  const [category, setCategory] = useState<LinkCategory>(link.category)
+  const [note, setNote] = useState(link.note ?? '')
+  const [saving, setSaving] = useState(false)
+
+  async function save(e: React.FormEvent) {
+    e.preventDefault()
+    setSaving(true)
+    const changes = { title: title.trim() || null, category, note: note.trim() || null }
+    const { error } = await createClient().from('study_links').update(changes).eq('id', link.id)
+    setSaving(false)
+    if (error) { toast.error(t('save_error')); return }
+    onSaved({ ...link, ...changes })
+    toast.success(t('updated'))
+    onClose()
+  }
+
+  return (
+    <form onSubmit={save} className="flex flex-col gap-4">
+      <DialogHeader>
+        <DialogTitle>{t('edit_title')}</DialogTitle>
+        <DialogDescription className="truncate">{link.url}</DialogDescription>
+      </DialogHeader>
+      <input
+        value={title}
+        onChange={e => setTitle(e.target.value)}
+        placeholder={t('title_placeholder')}
+        className="w-full h-11 rounded-2xl border border-slate-200 dark:border-white/[0.08] bg-[#f6f4f2] dark:bg-white/[0.04] px-3.5 text-sm focus:outline-none focus:border-primary"
+      />
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">{t('category')}</p>
+        <div className="flex flex-wrap gap-2">
+          {LINK_CATEGORIES.map(c => (
+            <button
+              key={c}
+              type="button"
+              onClick={() => setCategory(c)}
+              className={cn(
+                'px-3 py-1.5 rounded-full text-xs font-semibold border transition-all',
+                category === c ? 'bg-primary text-white border-primary' : 'border-slate-200 dark:border-white/[0.08] text-slate-500 hover:border-primary/40',
+              )}
+            >
+              {CATEGORY_EMOJI[c]} {t(`cat_${c}`)}
+            </button>
+          ))}
+        </div>
+      </div>
+      <textarea
+        value={note}
+        onChange={e => setNote(e.target.value)}
+        placeholder={t('note_placeholder')}
+        rows={3}
+        className="w-full rounded-2xl border border-slate-200 dark:border-white/[0.08] bg-[#f6f4f2] dark:bg-white/[0.04] px-3.5 py-2.5 text-sm resize-none focus:outline-none focus:border-primary"
+      />
+      <DialogFooter>
+        <button type="button" onClick={onClose} className="h-10 px-4 rounded-xl text-sm font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-white">
+          {t('cancel')}
+        </button>
+        <button type="submit" disabled={saving} className="h-10 px-5 rounded-xl bg-primary text-sm font-bold text-white disabled:opacity-50">
+          {saving ? <Loader2 size={15} className="animate-spin" /> : t('save')}
+        </button>
+      </DialogFooter>
+    </form>
+  )
+}
+
 // ── Section ───────────────────────────────────────────────────────────────────
 
 export function StudyLinks() {
@@ -260,6 +411,7 @@ export function StudyLinks() {
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState<LinkCategory | 'all'>('all')
   const [playing, setPlaying] = useState<StudyLink | null>(null)
+  const [editing, setEditing] = useState<StudyLink | null>(null)
 
   const languageName = useMemo(
     () => new Intl.DisplayNames([locale], { type: 'language' }).of(languageCode) ?? languageCode,
@@ -279,10 +431,26 @@ export function StudyLinks() {
       })
   }, [languageCode])
 
-  async function remove(id: string) {
-    setLinks(prev => prev.filter(l => l.id !== id))
-    await createClient().from('study_links').delete().eq('id', id)
-    toast(t('removed'))
+  // Deleted right away; "Undo" puts the same row back
+  async function remove(link: StudyLink) {
+    setLinks(prev => prev.filter(l => l.id !== link.id))
+    const supabase = createClient()
+    const { error } = await supabase.from('study_links').delete().eq('id', link.id)
+    if (error) {
+      setLinks(prev => [link, ...prev].sort((a, b) => b.created_at.localeCompare(a.created_at)))
+      toast.error(t('delete_error'))
+      return
+    }
+    toast(t('removed'), {
+      action: {
+        label: t('undo'),
+        onClick: async () => {
+          const { error: restoreError } = await supabase.from('study_links').insert(link)
+          if (restoreError) { toast.error(t('save_error')); return }
+          setLinks(prev => [link, ...prev].sort((a, b) => b.created_at.localeCompare(a.created_at)))
+        },
+      },
+    })
   }
 
   const usedCategories = LINK_CATEGORIES.filter(c => links.some(l => l.category === c))
@@ -356,9 +524,12 @@ export function StudyLinks() {
                 <div className="p-4">
                   <div className="flex items-start gap-2">
                     <p className="flex-1 min-w-0 text-sm font-bold leading-snug line-clamp-2">{link.title ?? t('untitled')}</p>
-                    <button onClick={() => remove(link.id)} aria-label="Delete" className="shrink-0 p-1 text-slate-300 hover:text-rose-400 transition-colors">
-                      <Trash2 size={14} />
-                    </button>
+                    <LinkMenu
+                      link={link}
+                      onPlay={() => setPlaying(link)}
+                      onEdit={() => setEditing(link)}
+                      onRemove={() => remove(link)}
+                    />
                   </div>
                   <div className="mt-2 flex items-center gap-2 text-[11px]">
                     <span className="rounded-full bg-primary/10 text-primary font-semibold px-2 py-0.5">
@@ -377,6 +548,12 @@ export function StudyLinks() {
       <AnimatePresence>
         {playing && <Player link={playing} onClose={() => setPlaying(null)} />}
       </AnimatePresence>
+
+      <EditLinkDialog
+        link={editing}
+        onClose={() => setEditing(null)}
+        onSaved={updated => setLinks(prev => prev.map(l => (l.id === updated.id ? updated : l)))}
+      />
     </div>
   )
 }

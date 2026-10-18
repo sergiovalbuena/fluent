@@ -27,7 +27,9 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   const { languageCode, uiLocale, translationLang } = await getLanguageSettings()
 
-  const [modulesResult, messages] = await Promise.all([
+  const { data: { user } } = await supabase.auth.getUser()
+
+  const [modulesResult, messages, profileResult] = await Promise.all([
     supabase
       .from('modules')
       .select('slug, title, icon')
@@ -35,16 +37,29 @@ export default async function AppLayout({ children }: { children: React.ReactNod
       .eq('is_published', true)
       .order('order_index'),
     getMessages(uiLocale),
+    user
+      ? supabase.from('user_profiles').select('display_name, total_gems').eq('user_id', user.id).maybeSingle()
+      : Promise.resolve({ data: null }),
   ])
 
   const modules = modulesResult.data ?? []
+  const profile = profileResult.data as { display_name: string | null; total_gems: number | null } | null
+  const meta = (user?.user_metadata ?? {}) as { full_name?: string; avatar_url?: string; picture?: string }
+  const account = user
+    ? {
+        name: profile?.display_name || meta.full_name || user.email?.split('@')[0] || 'Learner',
+        email: user.email ?? null,
+        avatarUrl: meta.avatar_url ?? meta.picture ?? null,
+        gems: profile?.total_gems ?? 0,
+      }
+    : null
 
   return (
     <IntlProvider locale={uiLocale} messages={messages}>
     <LanguageProvider value={{ languageCode, translationLang }}>
     <TopbarProvider>
       <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
-        <SidebarNav modules={modules} />
+        <SidebarNav modules={modules} account={account} />
         {/* Offset for sidebar on md+, bottom padding on mobile */}
         <div className="md:ml-[60px] pb-24 md:pb-0 min-h-screen">
           {children}

@@ -247,7 +247,7 @@ export default function TicTacToePage() {
   if (phase === 'ready') {
     return (
       <div className="min-h-screen flex flex-col" style={{ background: '#060014' }}>
-        <AppTopbar back={{ href: '/play', label: 'Games' }} />
+        <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -305,7 +305,7 @@ export default function TicTacToePage() {
     const cfg = outcomeConfig[outcome]
     return (
       <div className="min-h-screen flex flex-col" style={{ background: '#060014' }}>
-        <AppTopbar back={{ href: '/play', label: 'Games' }} />
+        <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 py-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -354,9 +354,9 @@ export default function TicTacToePage() {
               >
                 Play Again
               </motion.button>
-              <Link href="/play" className="w-full">
+              <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl text-white/60 font-bold text-sm bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                  Back to Games
+                  Back to Mini-games
                 </button>
               </Link>
             </div>
@@ -369,7 +369,7 @@ export default function TicTacToePage() {
   // ── Playing ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#060014' }}>
-      <AppTopbar back={{ href: '/play', label: 'Games' }} />
+      <AppTopbar back={{ href: '/mini-games', label: 'Mini-games' }} />
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-8 relative">
         <div className="w-full max-w-sm flex flex-col items-center gap-6">
 

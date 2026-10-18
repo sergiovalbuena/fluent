@@ -207,7 +207,7 @@ export default function SpeedRoundPage() {
   if (phase === 'ready') {
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
-        <AppTopbar title="Speed Round" back={{ href: '/play', label: 'Games' }} />
+        <AppTopbar title="Speed Round" back={{ href: '/mini-games', label: 'Mini-games' }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4 gap-8">
           <motion.div
             initial={{ scale: 0.8, opacity: 0, y: 20 }}
@@ -280,7 +280,7 @@ export default function SpeedRoundPage() {
 
     return (
       <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
-        <AppTopbar title="Speed Round" back={{ href: '/play', label: 'Games' }} />
+        <AppTopbar title="Speed Round" back={{ href: '/mini-games', label: 'Mini-games' }} />
         <main className="flex-1 flex flex-col items-center justify-center px-4">
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
@@ -330,9 +330,9 @@ export default function SpeedRoundPage() {
               >
                 Play Again
               </motion.button>
-              <Link href="/play" className="w-full">
+              <Link href="/mini-games" className="w-full">
                 <button className="w-full py-3.5 rounded-2xl bg-white/8 border border-white/12 text-white/70 font-bold text-base hover:bg-white/12 transition-colors">
-                  Back to Games
+                  Back to Mini-games
                 </button>
               </Link>
             </div>
@@ -345,7 +345,7 @@ export default function SpeedRoundPage() {
   // ── Playing Screen ─────────────────────────────────────────────────────────────
   return (
     <div className="flex flex-col min-h-screen" style={{ background: '#0d0f18' }}>
-      <AppTopbar title="Speed Round" back={{ href: '/play', label: 'Games' }} />
+      <AppTopbar title="Speed Round" back={{ href: '/mini-games', label: 'Mini-games' }} />
 
       <main className="flex-1 flex flex-col px-4 py-4 max-w-md mx-auto w-full gap-4">
         {/* Timer bar */}

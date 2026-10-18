@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -13,12 +13,20 @@ type SidebarContextType = {
   open: boolean
   setOpen: React.Dispatch<React.SetStateAction<boolean>>
   animate: boolean
+  /** Keeps the desktop sidebar expanded while something anchored to it (a menu) is open */
+  hold: (held: boolean) => void
+  /** Desktop hover: expand on enter, collapse on leave unless held */
+  hoverStart: () => void
+  hoverEnd: () => void
 }
 
 const SidebarContext = createContext<SidebarContextType>({
   open: false,
   setOpen: () => {},
   animate: true,
+  hold: () => {},
+  hoverStart: () => {},
+  hoverEnd: () => {},
 })
 
 export function useSidebar() {
@@ -38,8 +46,18 @@ export function Sidebar({
   setOpen: React.Dispatch<React.SetStateAction<boolean>>
   animate?: boolean
 }) {
+  const held = useRef(false)
+  const hovered = useRef(false)
+  const hold = useCallback((v: boolean) => {
+    held.current = v
+    // Released with the pointer already outside: collapse now (desktop only — on mobile `open` is the drawer)
+    if (!v && !hovered.current && window.matchMedia('(min-width: 768px)').matches) setOpen(false)
+  }, [setOpen])
+  const hoverStart = useCallback(() => { hovered.current = true; setOpen(true) }, [setOpen])
+  const hoverEnd = useCallback(() => { hovered.current = false; if (!held.current) setOpen(false) }, [setOpen])
+
   return (
-    <SidebarContext.Provider value={{ open, setOpen, animate }}>
+    <SidebarContext.Provider value={{ open, setOpen, animate, hold, hoverStart, hoverEnd }}>
       {children}
     </SidebarContext.Provider>
   )
@@ -61,7 +79,7 @@ export function SidebarBody({
 }
 
 function DesktopSidebar({ children, className, ...props }: React.ComponentProps<'div'>) {
-  const { open, setOpen, animate } = useSidebar()
+  const { open, animate, hoverStart, hoverEnd } = useSidebar()
   return (
     <motion.div
       className={cn(
@@ -70,8 +88,8 @@ function DesktopSidebar({ children, className, ...props }: React.ComponentProps<
       )}
       animate={{ width: animate ? (open ? 220 : 60) : 220 }}
       transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={hoverStart}
+      onMouseLeave={hoverEnd}
       {...(props as React.ComponentProps<typeof motion.div>)}
     >
       {children}
