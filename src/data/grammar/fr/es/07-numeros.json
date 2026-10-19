@@ -1,0 +1,630 @@
+{
+  "slug": "numeros",
+  "number": 7,
+  "part": 2,
+  "title": "Los números: reglas y trampas",
+  "tagline": "La lógica del 70 al 99, el et, la s de vingts y cents y cómo cambia su pronunciación.",
+  "goal": "Entender la lógica de los números del 70 al 99, saber cuándo llevan et, guion o s, pronunciar bien six, dix, huit y neuf según lo que sigue y escribir cifras a la francesa.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "igual",
+      "title": "Lo que funciona como en español",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Este módulo no es una lista de números: da por hecho que conoces los básicos y se centra en las **reglas y trampas**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Del 17 al 19 se suma: *dix-sept* (diez-siete), *dix-huit*, *dix-neuf*.",
+            "Las decenas del 20 al 60 se combinan como en español: *trente-deux* (32), *quarante-cinq* (45).",
+            "*cent* y *mille* van sin *un* delante, igual que cien y mil: *cent euros, mille ans*."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70-99",
+      "title": "La lógica del 70 al 99",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "A partir del 70, el francés deja de usar decenas nuevas y **hace cuentas**:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Número",
+            "En francés",
+            "La cuenta"
+          ],
+          "rows": [
+            [
+              "70",
+              "*soixante-dix*",
+              "60 + 10"
+            ],
+            [
+              "71",
+              "*soixante et onze*",
+              "60 + 11"
+            ],
+            [
+              "75",
+              "*soixante-quinze*",
+              "60 + 15"
+            ],
+            [
+              "80",
+              "*quatre-vingts*",
+              "4 × 20"
+            ],
+            [
+              "81",
+              "*quatre-vingt-un*",
+              "4 × 20 + 1"
+            ],
+            [
+              "90",
+              "*quatre-vingt-dix*",
+              "4 × 20 + 10"
+            ],
+            [
+              "97",
+              "*quatre-vingt-dix-sept*",
+              "4 × 20 + 10 + 7"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Del 70 al 79: 60 + un número del 10 al 19. Del 80 al 99: 4 × 20 + algo; del 90 al 99, ese algo también va del 10 al 19: *quatre-vingt-douze* (92), *quatre-vingt-seize* (96)."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "En Bélgica y Suiza se dice *septante* (70) y *nonante* (90), y en parte de Suiza también *huitante* (80)."
+        }
+      ]
+    },
+    {
+      "id": "et",
+      "title": "Cuándo va et",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Con et",
+            "Sin et"
+          ],
+          "rows": [
+            [
+              "21 *vingt et un*",
+              "81 *quatre-vingt-un*"
+            ],
+            [
+              "31 *trente et un*",
+              "91 *quatre-vingt-onze*"
+            ],
+            [
+              "41, 51, 61 *… et un*",
+              "22, 32… *vingt-deux, trente-deux*"
+            ],
+            [
+              "71 *soixante et onze*",
+              "101 *cent un*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*et* solo aparece con el 1 (y con el 11 del 71) detrás de 20, 30, 40, 50 y 60. Nunca con 80 ni con 100."
+        }
+      ]
+    },
+    {
+      "id": "s",
+      "title": "La s de vingts y cents",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Regla",
+            "Con s",
+            "Sin s"
+          ],
+          "rows": [
+            [
+              "*vingt* lleva s solo en 80 exacto",
+              "*quatre-vingts* (80)",
+              "*quatre-vingt-trois* (83)"
+            ],
+            [
+              "*cent* lleva s si se multiplica y no le sigue nada",
+              "*deux cents* (200)",
+              "*deux cent dix* (210) · *cent* (100)"
+            ],
+            [
+              "*mille* es invariable",
+              "—",
+              "*deux mille, trois mille*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "La s aparece solo cuando el número **termina ahí**. Si viene algo detrás, desaparece."
+        }
+      ]
+    },
+    {
+      "id": "guiones",
+      "title": "Los guiones",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Ortografía tradicional:** guion entre las partes menores de 100, salvo con *et*: *dix-sept, quatre-vingt-dix, vingt et un*. Sin guion con *cent* y *mille*: *deux cent trente*.",
+            "**Ortografía reformada (1990):** guiones en todo: *vingt-et-un, deux-cent-trente*."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Las dos son correctas. Elige una y mantenla."
+        }
+      ]
+    },
+    {
+      "id": "pronunciacion",
+      "title": "Números que cambian de sonido",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Número",
+            "Solo",
+            "+ consonante",
+            "+ vocal"
+          ],
+          "rows": [
+            [
+              "*six*",
+              "«sis»",
+              "«si» (*six livres*)",
+              "«siz» (*six ans*)"
+            ],
+            [
+              "*dix*",
+              "«dis»",
+              "«di» (*dix livres*)",
+              "«diz» (*dix ans*)"
+            ],
+            [
+              "*huit*",
+              "«uit»",
+              "«ui» (*huit livres*)",
+              "«uit» (*huit ans*)"
+            ],
+            [
+              "*neuf*",
+              "«neuf»",
+              "«neuf» (*neuf livres*)",
+              "«neuv» solo con *ans* y *heures*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Vingt",
+          "text": "Solo suena «van» (nasal), pero del 21 al 29 se pronuncia la t: *vingt-deux* = «vant-dö». Del 80 al 99 vuelve a ser muda: *quatre-vingt-un* = «katr-van-un»."
+        }
+      ]
+    },
+    {
+      "id": "liaison",
+      "title": "Liaison con números",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Obligatoria** delante de vocal o h muda: *un‿ami, deux‿heures, trois‿enfants, six‿ans, dix‿élèves, vingt‿ans, cent‿ans*.",
+            "**Prohibida** delante de *huit* y *onze*: *les │ huit jours, les │ onze joueurs, le │ onze novembre*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Más detalles en [[14]]."
+        }
+      ]
+    },
+    {
+      "id": "cifras",
+      "title": "Cómo se escriben las cifras",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Uso",
+            "Español (muchos países)",
+            "Francés"
+          ],
+          "rows": [
+            [
+              "Decimales",
+              "3.50 o 3,50",
+              "**3,50** (coma)"
+            ],
+            [
+              "Miles",
+              "1.000 o 1,000",
+              "**1 000** (espacio)"
+            ],
+            [
+              "Precios",
+              "$3.50",
+              "**3,50 €** (símbolo detrás, con espacio)"
+            ],
+            [
+              "Porcentajes",
+              "20%",
+              "**20 %** (con espacio)"
+            ],
+            [
+              "Horas",
+              "14:30",
+              "**14 h 30**"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Teléfonos y precios",
+          "text": "Los teléfonos se leen en pares: 06 12 34 56 78 → *zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit*. Los precios se dicen *trois euros cinquante*, casi siempre sin *centimes*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "70-99",
+      "title": "Del 70 al 99",
+      "instructions": "Elige cómo se dice el número.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "72",
+          "options": [
+            "soixante-douze",
+            "soixante-dix-deux",
+            "septante-deux",
+            "quatre-vingt-douze"
+          ],
+          "answer": "soixante-douze"
+        },
+        {
+          "prompt": "78",
+          "options": [
+            "soixante-dix-huit",
+            "soixante-huit",
+            "quatre-vingt-dix-huit",
+            "soixante et dix-huit"
+          ],
+          "answer": "soixante-dix-huit"
+        },
+        {
+          "prompt": "84",
+          "options": [
+            "quatre-vingt-quatre",
+            "quatre-vingts-quatre",
+            "huitante-quatre",
+            "quatre-vingt et quatre"
+          ],
+          "answer": "quatre-vingt-quatre"
+        },
+        {
+          "prompt": "91",
+          "options": [
+            "quatre-vingt-onze",
+            "quatre-vingt et onze",
+            "quatre-vingt-dix-un",
+            "soixante et onze"
+          ],
+          "answer": "quatre-vingt-onze"
+        },
+        {
+          "prompt": "95",
+          "options": [
+            "quatre-vingt-quinze",
+            "quatre-vingt-cinq",
+            "quatre-vingt-dix-cinq",
+            "soixante-quinze"
+          ],
+          "answer": "quatre-vingt-quinze"
+        },
+        {
+          "prompt": "77",
+          "options": [
+            "soixante-dix-sept",
+            "soixante-sept",
+            "quatre-vingt-dix-sept",
+            "soixante et dix-sept"
+          ],
+          "answer": "soixante-dix-sept"
+        }
+      ],
+      "section": "70-99"
+    },
+    {
+      "id": "en-letras",
+      "title": "En letras",
+      "instructions": "Escribe el número en letras (ortografía tradicional). Ojo con el et y la s.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "21",
+          "answer": "vingt et un",
+          "accept": [
+            "vingt-et-un"
+          ]
+        },
+        {
+          "prompt": "71",
+          "answer": "soixante et onze",
+          "accept": [
+            "soixante-et-onze"
+          ]
+        },
+        {
+          "prompt": "81",
+          "answer": "quatre-vingt-un",
+          "explain": "Sin et."
+        },
+        {
+          "prompt": "80",
+          "answer": "quatre-vingts",
+          "explain": "Con s: termina ahí."
+        },
+        {
+          "prompt": "83",
+          "answer": "quatre-vingt-trois",
+          "explain": "Sin s: le sigue algo."
+        },
+        {
+          "prompt": "200",
+          "answer": "deux cents",
+          "accept": [
+            "deux-cents"
+          ]
+        },
+        {
+          "prompt": "210",
+          "answer": "deux cent dix",
+          "accept": [
+            "deux-cent-dix"
+          ]
+        },
+        {
+          "prompt": "2000",
+          "answer": "deux mille",
+          "accept": [
+            "deux-mille"
+          ],
+          "explain": "*mille* nunca lleva s."
+        },
+        {
+          "prompt": "101",
+          "answer": "cent un",
+          "accept": [
+            "cent-un"
+          ]
+        },
+        {
+          "prompt": "280",
+          "answer": "deux cent quatre-vingts",
+          "accept": [
+            "deux-cent-quatre-vingts"
+          ],
+          "explain": "*cent* sin s porque le sigue algo; *vingts* con s porque termina ahí."
+        }
+      ],
+      "section": "s"
+    },
+    {
+      "id": "sonido",
+      "title": "¿Cómo suena la consonante final?",
+      "instructions": "Elige cómo se pronuncia la última consonante del número.",
+      "kind": "choice",
+      "options": [
+        "[s]",
+        "[z]",
+        "[v]",
+        "[f]",
+        "muda"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "J'ai {six} ans.",
+          "answer": "[z]"
+        },
+        {
+          "prompt": "J'ai {six} livres.",
+          "answer": "muda"
+        },
+        {
+          "prompt": "J'en ai {six}.",
+          "answer": "[s]"
+        },
+        {
+          "prompt": "{dix} enfants",
+          "answer": "[z]"
+        },
+        {
+          "prompt": "{dix} chats",
+          "answer": "muda"
+        },
+        {
+          "prompt": "{neuf} ans",
+          "answer": "[v]"
+        },
+        {
+          "prompt": "{neuf} livres",
+          "answer": "[f]"
+        },
+        {
+          "prompt": "{neuf} heures",
+          "answer": "[v]"
+        }
+      ],
+      "section": "pronunciacion"
+    },
+    {
+      "id": "cifras",
+      "title": "Cifras a la francesa",
+      "instructions": "Elige la forma correcta en francés.",
+      "kind": "choice",
+      "speak": "none",
+      "items": [
+        {
+          "prompt": "Tres euros con cincuenta",
+          "options": [
+            "3,50 €",
+            "€3.50",
+            "3.50€",
+            "3,50€"
+          ],
+          "answer": "3,50 €"
+        },
+        {
+          "prompt": "Mil quinientas personas",
+          "options": [
+            "1 500",
+            "1.500",
+            "1,500",
+            "1500,00"
+          ],
+          "answer": "1 500"
+        },
+        {
+          "prompt": "Veinte por ciento",
+          "options": [
+            "20 %",
+            "20%",
+            "%20",
+            "20 pc"
+          ],
+          "answer": "20 %"
+        },
+        {
+          "prompt": "Las 14:30",
+          "options": [
+            "14 h 30",
+            "14:30 h",
+            "14.30",
+            "2:30 pm"
+          ],
+          "answer": "14 h 30"
+        }
+      ],
+      "section": "cifras"
+    },
+    {
+      "id": "cuentas",
+      "title": "Cuentas rápidas",
+      "instructions": "Resuelve y escribe el resultado en letras.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "vingt + trente",
+          "answer": "cinquante"
+        },
+        {
+          "prompt": "quatre-vingts − dix",
+          "answer": "soixante-dix"
+        },
+        {
+          "prompt": "soixante-dix + onze",
+          "answer": "quatre-vingt-un"
+        },
+        {
+          "prompt": "cent − un",
+          "answer": "quatre-vingt-dix-neuf"
+        },
+        {
+          "prompt": "quarante + quarante",
+          "answer": "quatre-vingts"
+        },
+        {
+          "prompt": "cent + cent",
+          "answer": "deux cents",
+          "accept": [
+            "deux-cents"
+          ]
+        }
+      ],
+      "section": "final"
+    },
+    {
+      "id": "telefono",
+      "title": "Dictado telefónico",
+      "instructions": "Escucha el número y elige el que oíste.",
+      "kind": "choice",
+      "listen": true,
+      "items": [
+        {
+          "say": "zéro six, quarante-cinq, soixante-dix-huit, douze, quatre-vingt-dix-neuf",
+          "options": [
+            "06 45 78 12 99",
+            "06 45 68 12 89",
+            "06 54 78 12 99",
+            "06 45 78 02 99"
+          ],
+          "answer": "06 45 78 12 99"
+        },
+        {
+          "say": "zéro sept, quatre-vingts, soixante et onze, trente-trois, quinze",
+          "options": [
+            "07 80 71 33 15",
+            "07 20 61 33 15",
+            "07 80 71 23 05",
+            "07 90 71 33 15"
+          ],
+          "answer": "07 80 71 33 15"
+        },
+        {
+          "say": "zéro six, quatre-vingt-onze, dix-sept, soixante-quatre, quatre-vingt-deux",
+          "options": [
+            "06 91 17 64 82",
+            "06 81 17 64 92",
+            "06 91 07 74 82",
+            "06 71 17 64 82"
+          ],
+          "answer": "06 91 17 64 82"
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "Entiendo la lógica del 70 al 99.",
+    "Sé cuándo va *et*.",
+    "Sé cuándo llevan s *vingts* y *cents*.",
+    "Pronuncio bien *six, dix, huit, neuf* según el contexto.",
+    "Escribo cifras a la francesa."
+  ],
+  "challenge": {
+    "title": "Dicta tu número",
+    "text": "Di tu número de teléfono en francés, en pares, como lo haría un francés. Luego di en voz alta tres precios que veas hoy (*douze euros quatre-vingt-dix…*)."
+  }
+}

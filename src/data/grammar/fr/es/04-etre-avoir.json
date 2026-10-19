@@ -1,0 +1,469 @@
+{
+  "slug": "etre-avoir",
+  "number": 4,
+  "part": 1,
+  "title": "Être y avoir",
+  "tagline": "Los dos verbos más usados: conjugación, usos y las trampas de «tener».",
+  "goal": "Conjugar être (ser, estar) y avoir (tener) sin pensarlo, distinguir ils sont de ils ont al oído y evitar las trampas del español como «tengo calor» o «tengo 40 años».",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "importancia",
+      "title": "Por qué son tan importantes",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Être* y *avoir* son los verbos más frecuentes del francés. Sirven para presentarse, describir, hablar de la edad y del estado físico, y además son los **auxiliares** del pasado [[10]]. Son irregulares: hay que memorizarlos."
+        }
+      ]
+    },
+    {
+      "id": "etre",
+      "title": "Être: ser y estar",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "être",
+              "meaning": "ser, estar",
+              "forms": [
+                "je {suis}",
+                "tu {es}",
+                "il {est}",
+                "nous {sommes}",
+                "vous {êtes}",
+                "ils {sont}"
+              ],
+              "notes": [
+                "«sui»",
+                "«e»",
+                "«e»",
+                "«som»",
+                "«vu-zet», con la liaison",
+                "«son», con o nasal"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Un solo verbo para ser y estar",
+          "text": "*Je suis colombien* (soy colombiano) y *je suis fatigué* (estoy cansado) usan el mismo verbo."
+        },
+        {
+          "type": "text",
+          "text": "**Usos:** nacionalidad (*Je suis mexicaine*), profesión (*Il est médecin*, sin artículo), descripción (*Elle est grande*), estado (*Nous sommes contents*) y lugar (*Vous êtes à Paris*)."
+        }
+      ]
+    },
+    {
+      "id": "avoir",
+      "title": "Avoir: tener",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "avoir",
+              "meaning": "tener",
+              "forms": [
+                "j'{ai}",
+                "tu {as}",
+                "il {a}",
+                "nous {avons}",
+                "vous {avez}",
+                "ils {ont}"
+              ],
+              "notes": [
+                "«ʒe»",
+                "«a»",
+                "«a»",
+                "«nu-za-vón»",
+                "«vu-za-vé»",
+                "«il-zón»"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "La j francesa",
+          "text": "La *j* de *j'ai* no es la jota española: es un sonido suave, como la «sh» inglesa pero vibrando, parecido a la «y» de Buenos Aires."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*je* + *ai* = *j'ai*. Como *ai* empieza por vocal, *je* pierde la e. Nunca «je ai»."
+        }
+      ]
+    },
+    {
+      "id": "trampas",
+      "title": "Cuando el español dice «tener»… o no",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Expresiones con avoir",
+          "head": [
+            "Francés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "*avoir faim*",
+              "tener hambre"
+            ],
+            [
+              "*avoir soif*",
+              "tener sed"
+            ],
+            [
+              "*avoir chaud / froid*",
+              "tener calor / frío"
+            ],
+            [
+              "*avoir peur*",
+              "tener miedo"
+            ],
+            [
+              "*avoir sommeil*",
+              "tener sueño"
+            ],
+            [
+              "*avoir raison / tort*",
+              "tener razón / estar equivocado"
+            ],
+            [
+              "*avoir … ans*",
+              "tener … años"
+            ],
+            [
+              "*avoir besoin de*",
+              "necesitar"
+            ],
+            [
+              "*avoir envie de*",
+              "tener ganas de"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Los dos errores más típicos",
+          "text": "«Tengo 40 años» = *J'ai quarante ans*, nunca «je suis quarante». «Tengo frío» = *J'ai froid*; *je suis froid* significa «soy frío» (de carácter)."
+        }
+      ]
+    },
+    {
+      "id": "sont-ont",
+      "title": "Ils sont o ils ont",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Se pronuncia",
+            "Significa"
+          ],
+          "rows": [
+            [
+              "*ils {s}ont*",
+              "«il-son», con s sorda",
+              "son, están"
+            ],
+            [
+              "*ils {ont}*",
+              "«il-zon», con s sonora [z]",
+              "tienen"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Si oyes un zumbido [z], es *avoir*. Si oyes una s sorda, es *être*. Ese [z] es una *liaison* [[14]]."
+        }
+      ]
+    },
+    {
+      "id": "negacion",
+      "title": "En negativo",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "ne + verbo + pas",
+          "caption": "*Je {ne} suis {pas} fatigué.*"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Tu n'es pas seul.",
+              "tr": "No estás solo.",
+              "note": "ne → n' delante de vocal"
+            },
+            {
+              "fr": "Je n'ai pas de voiture.",
+              "tr": "No tengo auto.",
+              "note": "un → de en negativo [[6]]"
+            },
+            {
+              "fr": "Nous n'avons pas faim.",
+              "tr": "No tenemos hambre."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "La negación completa está en [[12]]."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "title": "Conjuga",
+      "instructions": "Escribe la forma correcta del verbo.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Je ___ fatigué. (être)",
+          "answer": "suis"
+        },
+        {
+          "prompt": "Tu ___ deux sœurs. (avoir)",
+          "answer": "as"
+        },
+        {
+          "prompt": "Elle ___ médecin. (être)",
+          "answer": "est"
+        },
+        {
+          "prompt": "Nous ___ une voiture. (avoir)",
+          "answer": "avons"
+        },
+        {
+          "prompt": "Vous ___ à Paris ? (être)",
+          "answer": "êtes"
+        },
+        {
+          "prompt": "Ils ___ trois enfants. (avoir)",
+          "answer": "ont"
+        },
+        {
+          "prompt": "Nous ___ contents. (être)",
+          "answer": "sommes"
+        },
+        {
+          "prompt": "Vous ___ raison. (avoir)",
+          "answer": "avez"
+        },
+        {
+          "prompt": "Elles ___ françaises. (être)",
+          "answer": "sont"
+        },
+        {
+          "prompt": "J'___ faim. (avoir)",
+          "answer": "ai"
+        }
+      ],
+      "section": "avoir"
+    },
+    {
+      "id": "traduce",
+      "title": "Sin caer en la trampa",
+      "instructions": "Traduce al francés.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Tengo hambre.",
+          "answer": "J'ai faim."
+        },
+        {
+          "prompt": "Tengo cuarenta años.",
+          "answer": "J'ai quarante ans.",
+          "accept": [
+            "J'ai 40 ans."
+          ]
+        },
+        {
+          "prompt": "Tenemos frío.",
+          "answer": "Nous avons froid.",
+          "accept": [
+            "On a froid."
+          ]
+        },
+        {
+          "prompt": "Tienes razón.",
+          "answer": "Tu as raison.",
+          "accept": [
+            "Vous avez raison."
+          ]
+        },
+        {
+          "prompt": "Estoy cansada.",
+          "answer": "Je suis fatiguée."
+        },
+        {
+          "prompt": "Somos colombianos.",
+          "answer": "Nous sommes colombiens.",
+          "accept": [
+            "On est colombiens."
+          ]
+        },
+        {
+          "prompt": "Ellos tienen miedo.",
+          "answer": "Ils ont peur."
+        },
+        {
+          "prompt": "No tengo sueño.",
+          "answer": "Je n'ai pas sommeil."
+        },
+        {
+          "prompt": "Necesito un café.",
+          "answer": "J'ai besoin d'un café."
+        }
+      ],
+      "section": "trampas"
+    },
+    {
+      "id": "sont-ont",
+      "title": "sont u ont",
+      "instructions": "Completa con sont u ont.",
+      "kind": "choice",
+      "options": [
+        "sont",
+        "ont"
+      ],
+      "items": [
+        {
+          "prompt": "Mes parents ___ très gentils.",
+          "answer": "sont"
+        },
+        {
+          "prompt": "Ils ___ trois enfants.",
+          "answer": "ont"
+        },
+        {
+          "prompt": "Elles ___ faim.",
+          "answer": "ont"
+        },
+        {
+          "prompt": "Les clés ___ sur la table.",
+          "answer": "sont"
+        },
+        {
+          "prompt": "Ils ___ français.",
+          "answer": "sont"
+        },
+        {
+          "prompt": "Elles ___ quarante ans.",
+          "answer": "ont"
+        }
+      ],
+      "section": "sont-ont"
+    },
+    {
+      "id": "oido",
+      "title": "Al oído",
+      "instructions": "Escucha y elige lo que oíste.",
+      "kind": "choice",
+      "listen": true,
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Ils sont là.",
+            "Ils ont là."
+          ],
+          "answer": "Ils sont là."
+        },
+        {
+          "options": [
+            "Elles sont faim.",
+            "Elles ont faim."
+          ],
+          "answer": "Elles ont faim."
+        },
+        {
+          "options": [
+            "Ils sont deux chiens.",
+            "Ils ont deux chiens."
+          ],
+          "answer": "Ils ont deux chiens."
+        },
+        {
+          "options": [
+            "Elles sont contentes.",
+            "Elles ont contentes."
+          ],
+          "answer": "Elles sont contentes."
+        }
+      ],
+      "section": "sont-ont"
+    },
+    {
+      "id": "negativo",
+      "title": "Al negativo",
+      "instructions": "Escribe la frase en negativo.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je suis fatigué.",
+          "answer": "Je ne suis pas fatigué."
+        },
+        {
+          "prompt": "Tu es seul.",
+          "answer": "Tu n'es pas seul."
+        },
+        {
+          "prompt": "Nous avons faim.",
+          "answer": "Nous n'avons pas faim."
+        },
+        {
+          "prompt": "Ils sont à la maison.",
+          "answer": "Ils ne sont pas à la maison."
+        },
+        {
+          "prompt": "Elle a raison.",
+          "answer": "Elle n'a pas raison."
+        }
+      ],
+      "section": "negacion"
+    }
+  ],
+  "checklist": [
+    "Conjugo *être* sin mirar.",
+    "Conjugo *avoir* sin mirar.",
+    "Uso *avoir* para la edad, el hambre, el frío…",
+    "Distingo *ils sont* de *ils ont* al oído.",
+    "Hago frases negativas con *ne… pas*."
+  ],
+  "challenge": {
+    "title": "Tu ficha de presentación",
+    "text": "Preséntate en voz alta en cinco frases: nombre, nacionalidad, edad, dos rasgos de carácter y cómo te sientes ahora (*J'ai faim, j'ai sommeil…*). Usa *être* al menos dos veces y *avoir* al menos tres."
+  }
+}

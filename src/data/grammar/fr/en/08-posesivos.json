@@ -1,0 +1,441 @@
+{
+  "slug": "posesivos",
+  "number": 8,
+  "part": 2,
+  "title": "Mon, ma, mes",
+  "tagline": "Possessives agree with the thing owned, not the owner: the big «his or her» trap.",
+  "goal": "Say whose things are, talk about your family and stop choosing son or sa according to the owner, which is what English «his» and «her» train you to do.",
+  "minutes": 8,
+  "sections": [
+    {
+      "id": "tabla",
+      "title": "The possessives",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Owner",
+            "Masculine singular",
+            "Feminine singular",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "my (je)",
+              "*{mon} livre*",
+              "*{ma} maison*",
+              "*{mes} amis*"
+            ],
+            [
+              "your (tu)",
+              "*{ton} livre*",
+              "*{ta} maison*",
+              "*{tes} amis*"
+            ],
+            [
+              "his, her, its (il, elle)",
+              "*{son} livre*",
+              "*{sa} maison*",
+              "*{ses} amis*"
+            ],
+            [
+              "our (nous)",
+              "*{notre} livre*",
+              "*{notre} maison*",
+              "*{nos} amis*"
+            ],
+            [
+              "your (vous)",
+              "*{votre} livre*",
+              "*{votre} maison*",
+              "*{vos} amis*"
+            ],
+            [
+              "their (ils, elles)",
+              "*{leur} livre*",
+              "*{leur} maison*",
+              "*{leurs} amis*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*notre, votre* and *leur* don't change with gender, only with plural."
+        }
+      ]
+    },
+    {
+      "id": "objeto",
+      "title": "It agrees with the thing owned",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In English, «his» or «her» depends on **the owner**. In French, the possessive agrees with **the thing owned** [[2]]:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Paul aime sa mère.",
+              "tr": "Paul loves his mother.",
+              "note": "sa because mère is feminine, even though Paul is a man"
+            },
+            {
+              "fr": "Marie aime son père.",
+              "tr": "Marie loves her father.",
+              "note": "son because père is masculine"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*sa* does not mean «her» and *son* does not mean «his». Both mean «his» **or** «her»; the context tells you who the owner is. Before choosing, ask yourself: is the thing masculine, feminine or plural?"
+        }
+      ]
+    },
+    {
+      "id": "mon-amie",
+      "title": "Mon amie",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Before a **feminine word starting with a vowel or silent h**, use **mon, ton, son** instead of *ma, ta, sa*, to avoid two vowels clashing:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Wrong",
+            "Right"
+          ],
+          "rows": [
+            [
+              "*ma amie*",
+              "*{mon} amie*"
+            ],
+            [
+              "*ta école*",
+              "*{ton} école*"
+            ],
+            [
+              "*sa histoire*",
+              "*{son} histoire*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Same logic as *cet* [[3]]."
+        }
+      ]
+    },
+    {
+      "id": "su",
+      "title": "Your and their",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English «your» covers one person or several, formal or not. French separates them:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "English",
+            "Meaning",
+            "French"
+          ],
+          "rows": [
+            [
+              "your book",
+              "a friend, family (tu)",
+              "*ton livre*"
+            ],
+            [
+              "your book",
+              "someone you address formally (vous)",
+              "*votre livre*"
+            ],
+            [
+              "your book",
+              "several people (vous)",
+              "*votre livre*"
+            ],
+            [
+              "their book",
+              "belonging to them",
+              "*leur livre*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Match the possessive to how you address the person: if you say *vous* to someone, it's *votre*. «Madam, is this your umbrella?» → *Madame, c'est votre parapluie ?*"
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "leur or leurs",
+          "text": "*leur* = one thing belonging to several people (*leur maison*, their house). *leurs* = several things (*leurs enfants*, their children)."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "elige",
+      "title": "Choose the possessive",
+      "instructions": "Fill in for the owner given. First check whether the thing is masculine, feminine or plural.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "(my) ___ livre",
+          "options": [
+            "mon",
+            "ma",
+            "mes"
+          ],
+          "answer": "mon"
+        },
+        {
+          "prompt": "(my) ___ maison",
+          "options": [
+            "mon",
+            "ma",
+            "mes"
+          ],
+          "answer": "ma"
+        },
+        {
+          "prompt": "(my) ___ amie",
+          "options": [
+            "mon",
+            "ma",
+            "mes"
+          ],
+          "answer": "mon",
+          "explain": "Feminine starting with a vowel: *mon*."
+        },
+        {
+          "prompt": "(your, tu) ___ chaussures",
+          "options": [
+            "ton",
+            "ta",
+            "tes"
+          ],
+          "answer": "tes"
+        },
+        {
+          "prompt": "(Paul's) ___ sœur",
+          "options": [
+            "son",
+            "sa",
+            "ses"
+          ],
+          "answer": "sa"
+        },
+        {
+          "prompt": "(Marie's) ___ père",
+          "options": [
+            "son",
+            "sa",
+            "ses"
+          ],
+          "answer": "son"
+        },
+        {
+          "prompt": "(our) ___ professeur",
+          "options": [
+            "notre",
+            "nos",
+            "votre"
+          ],
+          "answer": "notre"
+        },
+        {
+          "prompt": "(their) ___ enfants",
+          "options": [
+            "leur",
+            "leurs",
+            "ses"
+          ],
+          "answer": "leurs"
+        },
+        {
+          "prompt": "(your, vous) ___ voiture",
+          "options": [
+            "sa",
+            "votre",
+            "leur"
+          ],
+          "answer": "votre"
+        },
+        {
+          "prompt": "(my) ___ école",
+          "options": [
+            "mon",
+            "ma",
+            "mes"
+          ],
+          "answer": "mon"
+        },
+        {
+          "prompt": "(their) ___ maison",
+          "options": [
+            "leur",
+            "leurs",
+            "sa"
+          ],
+          "answer": "leur"
+        },
+        {
+          "prompt": "(her) ___ histoire",
+          "options": [
+            "son",
+            "sa",
+            "ses"
+          ],
+          "answer": "son",
+          "explain": "Feminine with a silent h: *son*."
+        }
+      ],
+      "section": "objeto"
+    },
+    {
+      "id": "objetos",
+      "title": "Lost property",
+      "instructions": "Confirm who each thing belongs to.",
+      "kind": "choice",
+      "options": [
+        "son",
+        "sa",
+        "ses",
+        "leur",
+        "leurs",
+        "mon"
+      ],
+      "items": [
+        {
+          "prompt": "C'est le sac de Marie ? — Oui, c'est ___ sac.",
+          "answer": "son",
+          "explain": "Her bag, but *sac* is masculine: *son*."
+        },
+        {
+          "prompt": "Ce sont les clés de Paul ? — Oui, ce sont ___ clés.",
+          "answer": "ses"
+        },
+        {
+          "prompt": "C'est la guitare de Léa ? — Oui, c'est ___ guitare.",
+          "answer": "sa"
+        },
+        {
+          "prompt": "C'est l'écharpe d'Anna ? — Oui, c'est ___ écharpe.",
+          "answer": "son",
+          "explain": "Feminine starting with a vowel."
+        },
+        {
+          "prompt": "C'est le chien de Tom et Zoé ? — Oui, c'est ___ chien.",
+          "answer": "leur"
+        },
+        {
+          "prompt": "Ce sont les livres des enfants ? — Oui, ce sont ___ livres.",
+          "answer": "leurs"
+        },
+        {
+          "prompt": "C'est votre parapluie, madame ? — Oui, c'est ___ parapluie. Merci !",
+          "answer": "mon"
+        }
+      ],
+      "section": "mon-amie"
+    },
+    {
+      "id": "familia",
+      "title": "Lucas's family",
+      "instructions": "Lucas has a sister, Emma, married to Hugo; their daughter is Lili. Fill in depending on who is speaking.",
+      "kind": "choice",
+      "options": [
+        "mon",
+        "ma",
+        "mes",
+        "votre",
+        "leur",
+        "leurs"
+      ],
+      "items": [
+        {
+          "prompt": "(Lucas) « Henri est ___ grand-père. »",
+          "answer": "mon"
+        },
+        {
+          "prompt": "(Lucas) « Pierre et Sophie sont ___ parents. »",
+          "answer": "mes"
+        },
+        {
+          "prompt": "(Lucas, to Emma and Hugo) « Lili est ___ fille. »",
+          "answer": "votre"
+        },
+        {
+          "prompt": "(Lucas, about Emma and Hugo) « Lili est ___ fille. »",
+          "answer": "leur"
+        },
+        {
+          "prompt": "(Emma) « Hugo est ___ mari. »",
+          "answer": "mon"
+        },
+        {
+          "prompt": "(Lili) « Emma et Hugo sont ___ parents. »",
+          "answer": "mes"
+        },
+        {
+          "prompt": "(Lucas) « Lili est ___ nièce. »",
+          "answer": "ma"
+        }
+      ],
+      "section": "su"
+    },
+    {
+      "id": "traduce",
+      "title": "Translate",
+      "instructions": "Translate into French.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "My friend (a woman) is called Ana.",
+          "answer": "Mon amie s'appelle Ana."
+        },
+        {
+          "prompt": "Sir, is this your suitcase?",
+          "answer": "Monsieur, c'est votre valise ?"
+        },
+        {
+          "prompt": "Their children live in Lyon.",
+          "answer": "Leurs enfants habitent à Lyon.",
+          "accept": [
+            "Leurs enfants vivent à Lyon."
+          ]
+        },
+        {
+          "prompt": "Our house is small.",
+          "answer": "Notre maison est petite."
+        },
+        {
+          "prompt": "Paul calls his mother.",
+          "answer": "Paul appelle sa mère."
+        }
+      ],
+      "section": "su"
+    }
+  ],
+  "checklist": [
+    "I know the six rows of possessives.",
+    "I make the possessive agree with the thing, not the owner.",
+    "I use *mon, ton, son* before a feminine word starting with a vowel.",
+    "I choose between *ton* and *votre* depending on *tu* or *vous*."
+  ],
+  "challenge": {
+    "title": "Introduce your family",
+    "text": "Introduce five people in your family with a possessive and an adjective each: *Ma sœur s'appelle Laura. Elle est très drôle. Son mari est italien.*"
+  }
+}

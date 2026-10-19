@@ -1,0 +1,434 @@
+{
+  "slug": "pronominales",
+  "number": 17,
+  "part": 4,
+  "title": "Los verbos pronominales",
+  "tagline": "Me levanto, me visto: conjugación, trampas con el español y el pasado con être.",
+  "goal": "Contar tu rutina, conjugar los verbos con se y usarlos en negativo, en imperativo y en passé composé.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "que-es",
+      "title": "Qué es un verbo pronominal",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Es un verbo que va con un pronombre reflexivo (*me, te, se…*), igual que en español: levantar**se**, lavar**se**, llamar**se**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "se lever",
+              "tr": "levantarse"
+            },
+            {
+              "fr": "s'appeler",
+              "tr": "llamarse"
+            },
+            {
+              "fr": "se laver",
+              "tr": "lavarse"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "La mayoría funcionan **igual que en español**: la acción recae sobre el propio sujeto."
+        }
+      ]
+    },
+    {
+      "id": "conjugacion",
+      "title": "La conjugación",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "se laver",
+              "meaning": "lavarse",
+              "forms": [
+                "je {me} lave",
+                "tu {te} laves",
+                "il {se} lave",
+                "nous {nous} lavons",
+                "vous {vous} lavez",
+                "ils {se} lavent"
+              ]
+            },
+            {
+              "verb": "s'habiller",
+              "meaning": "vestirse",
+              "forms": [
+                "je {m'}habille",
+                "tu {t'}habilles",
+                "il {s'}habille",
+                "nous {nous} habillons",
+                "vous {vous} habillez",
+                "ils {s'}habillent"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Delante de vocal o h muda, *me, te, se* → *m', t', s'*. De ahí *je m'appelle*. Y *nous nous* o *vous vous* no son un error: el primero es el sujeto y el segundo, el reflexivo."
+        }
+      ]
+    },
+    {
+      "id": "rutina",
+      "title": "La rutina",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Los verbos de la rutina diaria son casi todos pronominales, igual que en español: *se réveiller* (despertarse), *se lever* (levantarse), *se doucher* (ducharse), *s'habiller* (vestirse), *se coucher* (acostarse). **Si en español dices «me…», en francés casi siempre también.** Las excepciones están en la sección siguiente."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Se lever",
+          "text": "Lleva acento grave en las formas cuya terminación es muda: *je me lève, tu te lèves, il se lève, ils se lèvent* (pero *nous nous levons, vous vous levez*)."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Partes del cuerpo",
+          "text": "Como en español, se usa el artículo y no el posesivo: *Je me brosse {les} dents* (no «mes dents»)."
+        }
+      ]
+    },
+    {
+      "id": "trampas",
+      "title": "Cuando el francés y el español no coinciden",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Caso",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "Pronominal en francés, no en español",
+              "pasear → *se promener* · descansar → *se reposer* · darse prisa → *se dépêcher*"
+            ],
+            [
+              "Pronominal en español, no en francés",
+              "quedarse → *rester* · irse → *partir* · caerse → *tomber*"
+            ],
+            [
+              "Cambia de sentido con *se*",
+              "*appeler* (llamar) → *s'appeler* (llamarse) · *ennuyer* (aburrir a alguien) → *s'ennuyer* (aburrirse) · *tromper* (engañar) → *se tromper* (equivocarse)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*Je me suis trompé* = me equivoqué. *Je t'ai trompé* = te engañé. Conviene no confundirlos."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Recíprocos",
+          "text": "También expresan «el uno al otro»: *Ils s'aiment* (se quieren) · *Nous nous parlons tous les jours* (nos hablamos todos los días) · *Elles se téléphonent* (se llaman)."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Negación, futuro e imperativo",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situación",
+            "Regla",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Negación**",
+              "el reflexivo se queda junto al verbo",
+              "*Je ne me lève pas.*"
+            ],
+            [
+              "**Futuro próximo**",
+              "el reflexivo va con el infinitivo y cambia según el sujeto",
+              "*Je vais me coucher. · Tu vas te coucher.*"
+            ],
+            [
+              "**Imperativo afirmativo**",
+              "detrás, con guion; *te* → *toi*",
+              "*Lève-toi ! · Levez-vous ! · Dépêchons-nous !*"
+            ],
+            [
+              "**Imperativo negativo**",
+              "delante, como siempre",
+              "*Ne te lève pas !*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pasado",
+      "title": "En passé composé, siempre con être",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Todos los verbos pronominales usan **être** en el pasado [[10]], así que el participio concuerda con el sujeto:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Sujeto",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "il",
+              "*Il s'est levé à 7 h.*"
+            ],
+            [
+              "elle",
+              "*Elle s'est levé{e} à 7 h.*"
+            ],
+            [
+              "ils",
+              "*Ils se sont levé{s} à 7 h.*"
+            ],
+            [
+              "elles",
+              "*Elles se sont levé{es} à 7 h.*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Negación en pasado:** *Je ne me suis pas réveillé(e).*"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "title": "Conjuga",
+      "instructions": "Escribe el verbo conjugado con su pronombre.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Je ___ à 7 h. (se réveiller)",
+          "answer": "me réveille"
+        },
+        {
+          "prompt": "Tu ___ tard le dimanche. (se lever)",
+          "answer": "te lèves"
+        },
+        {
+          "prompt": "Il ___ très vite. (s'habiller)",
+          "answer": "s'habille"
+        },
+        {
+          "prompt": "Nous ___ les dents. (se brosser)",
+          "answer": "nous brossons"
+        },
+        {
+          "prompt": "Vous ___ ! (se dépêcher)",
+          "answer": "vous dépêchez"
+        },
+        {
+          "prompt": "Elles ___ à minuit. (se coucher)",
+          "answer": "se couchent"
+        },
+        {
+          "prompt": "Je ___ Ana. (s'appeler)",
+          "answer": "m'appelle"
+        },
+        {
+          "prompt": "Ils ___ dans le parc. (se promener)",
+          "answer": "se promènent"
+        }
+      ],
+      "section": "conjugacion"
+    },
+    {
+      "id": "trampas",
+      "title": "¿Con se o sin se?",
+      "instructions": "Traduce al francés. Ojo: no siempre coincide con el español.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Me quedo en casa.",
+          "answer": "Je reste à la maison."
+        },
+        {
+          "prompt": "Me voy.",
+          "answer": "Je pars.",
+          "accept": [
+            "Je m'en vais."
+          ]
+        },
+        {
+          "prompt": "Se cayó (él).",
+          "answer": "Il est tombé."
+        },
+        {
+          "prompt": "Me equivoqué.",
+          "answer": "Je me suis trompé.",
+          "accept": [
+            "Je me suis trompée."
+          ]
+        },
+        {
+          "prompt": "Paseamos por el parque.",
+          "answer": "Nous nous promenons dans le parc.",
+          "accept": [
+            "On se promène dans le parc."
+          ]
+        },
+        {
+          "prompt": "Descanso un poco.",
+          "answer": "Je me repose un peu."
+        }
+      ],
+      "section": "trampas"
+    },
+    {
+      "id": "negativo",
+      "title": "En negativo",
+      "instructions": "Escribe la frase en negativo.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je me lève tôt.",
+          "answer": "Je ne me lève pas tôt."
+        },
+        {
+          "prompt": "Tu t'ennuies.",
+          "answer": "Tu ne t'ennuies pas."
+        },
+        {
+          "prompt": "Nous nous dépêchons.",
+          "answer": "Nous ne nous dépêchons pas."
+        },
+        {
+          "prompt": "Il s'est réveillé.",
+          "answer": "Il ne s'est pas réveillé."
+        },
+        {
+          "prompt": "Lève-toi !",
+          "answer": "Ne te lève pas !"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "imperativo",
+      "title": "Imperativo",
+      "instructions": "Elige el imperativo correcto.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "(a un amigo) Levántate.",
+          "options": [
+            "Lève-toi !",
+            "Lève-te !",
+            "Te lève !"
+          ],
+          "answer": "Lève-toi !"
+        },
+        {
+          "prompt": "(a varias personas) Siéntense.",
+          "options": [
+            "Asseyez-vous !",
+            "Vous asseyez !",
+            "Asseyez-nous !"
+          ],
+          "answer": "Asseyez-vous !"
+        },
+        {
+          "prompt": "(a ti y a tu grupo) Démonos prisa.",
+          "options": [
+            "Dépêchons-nous !",
+            "Nous dépêchons !",
+            "Dépêchez-nous !"
+          ],
+          "answer": "Dépêchons-nous !"
+        },
+        {
+          "prompt": "(a un amigo) No te preocupes.",
+          "options": [
+            "Ne t'inquiète pas !",
+            "Ne inquiète-toi pas !",
+            "Inquiète-toi pas !"
+          ],
+          "answer": "Ne t'inquiète pas !"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "pasado",
+      "title": "Ayer por la mañana",
+      "instructions": "Conjuga en passé composé. Ojo con la concordancia.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Hier matin, Julie ___ à 6 h. (se réveiller)",
+          "answer": "s'est réveillée"
+        },
+        {
+          "prompt": "Elle ___ tout de suite. (se lever)",
+          "answer": "s'est levée"
+        },
+        {
+          "prompt": "Et elle ___. (se doucher)",
+          "answer": "s'est douchée"
+        },
+        {
+          "prompt": "Ses frères, eux, ___ à 9 h ! (se lever)",
+          "answer": "se sont levés"
+        },
+        {
+          "prompt": "Après, nous ___ au parc. (se promener)",
+          "answer": "nous sommes promenés",
+          "accept": [
+            "nous sommes promenées"
+          ]
+        },
+        {
+          "prompt": "Le soir, ils ___ très tard. (se coucher)",
+          "answer": "se sont couchés"
+        }
+      ],
+      "section": "pasado"
+    }
+  ],
+  "checklist": [
+    "Conjugo verbos pronominales en presente.",
+    "Cuento mi rutina diaria.",
+    "Los uso en negativo y en imperativo.",
+    "Los uso en passé composé con *être*.",
+    "Conozco las diferencias con el español (*rester, partir, se promener*)."
+  ],
+  "challenge": {
+    "title": "Tu rutina",
+    "text": "Describe tu mañana de hoy en presente con seis verbos pronominales y luego cuéntala en pasado: *Je me suis réveillé(e) à 7 h, je me suis douché(e)…*"
+  }
+}

@@ -1,0 +1,886 @@
+{
+  "language": "fr",
+  "parts": [
+    {
+      "number": 1,
+      "title": "Sonidos y bases",
+      "description": "Cómo suena el francés, el género de las palabras y los dos verbos esenciales."
+    },
+    {
+      "number": 2,
+      "title": "El presente",
+      "description": "Conjugar, hablar de comida y cantidades, contar y decir de quién es cada cosa."
+    },
+    {
+      "number": 3,
+      "title": "Contar, preguntar, describir",
+      "description": "El pasado, las preguntas, la negación y los adjetivos."
+    },
+    {
+      "number": 4,
+      "title": "Sonar natural",
+      "description": "La liaison, los pronombres, los verbos pronominales y el imparfait."
+    }
+  ],
+  "modules": [
+    {
+      "slug": "vocales",
+      "number": 1,
+      "part": 1,
+      "title": "Las vocales del francés",
+      "tagline": "Los sonidos que el español no tiene, las combinaciones de letras y las nasales.",
+      "minutes": 10,
+      "sections": [
+        "Tres posiciones nuevas para la boca",
+        "Las vocales simples",
+        "Combinaciones de vocales",
+        "Las vocales nasales"
+      ],
+      "exercises": [
+        {
+          "id": "u-ou",
+          "title": "¿ou o u?",
+          "section": "posiciones",
+          "count": 12
+        },
+        {
+          "id": "pares",
+          "title": "Pares mínimos",
+          "section": "simples",
+          "count": 8
+        },
+        {
+          "id": "combinaciones",
+          "title": "¿Cómo suena?",
+          "section": "combinaciones",
+          "count": 8
+        },
+        {
+          "id": "nasal",
+          "title": "¿Nasal o no?",
+          "section": "nasales",
+          "count": 10
+        },
+        {
+          "id": "intruso",
+          "title": "La palabra que no encaja",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "masculino-femenino",
+      "number": 2,
+      "part": 1,
+      "title": "Masculino y femenino",
+      "tagline": "Artículos, terminaciones que delatan el género y las trampas del español.",
+      "minutes": 12,
+      "sections": [
+        "Los artículos",
+        "Pistas por la terminación",
+        "Palabras que cambian de género respecto al español",
+        "El femenino de los adjetivos",
+        "Personas y animales"
+      ],
+      "exercises": [
+        {
+          "id": "terminaciones",
+          "title": "¿Masculino o femenino?",
+          "section": "terminaciones",
+          "count": 14
+        },
+        {
+          "id": "trampas",
+          "title": "Las trampas del español",
+          "section": "trampas",
+          "count": 8
+        },
+        {
+          "id": "corrige",
+          "title": "Corrige la frase",
+          "section": "trampas",
+          "count": 6
+        },
+        {
+          "id": "femenino",
+          "title": "Pásalo al femenino",
+          "section": "adjetivos",
+          "count": 12
+        },
+        {
+          "id": "suena",
+          "title": "¿Suena igual o distinto?",
+          "section": "adjetivos",
+          "count": 9
+        },
+        {
+          "id": "vecina",
+          "title": "De vecino a vecina",
+          "section": "personas",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "slug": "demostrativos",
+      "number": 3,
+      "part": 1,
+      "title": "Ce, cet, cette, ces",
+      "tagline": "Los demostrativos: cuál usar, cómo suenan y cómo no confundirlos con se y ses.",
+      "minutes": 8,
+      "sections": [
+        "Para qué sirven",
+        "La regla",
+        "Pronunciación",
+        "La letra h",
+        "-ci y -là",
+        "No confundir con se y ses"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Elige la forma",
+          "section": "regla",
+          "count": 14
+        },
+        {
+          "id": "corrige",
+          "title": "Corrige el demostrativo",
+          "section": "h",
+          "count": 6
+        },
+        {
+          "id": "mercado",
+          "title": "En el mercado",
+          "section": "ci-la",
+          "count": 6
+        },
+        {
+          "id": "homofonos",
+          "title": "ce, se, ces o ses",
+          "section": "homofonos",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "etre-avoir",
+      "number": 4,
+      "part": 1,
+      "title": "Être y avoir",
+      "tagline": "Los dos verbos más usados: conjugación, usos y las trampas de «tener».",
+      "minutes": 10,
+      "sections": [
+        "Por qué son tan importantes",
+        "Être: ser y estar",
+        "Avoir: tener",
+        "Cuando el español dice «tener»… o no",
+        "Ils sont o ils ont",
+        "En negativo"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjuga",
+          "section": "avoir",
+          "count": 10
+        },
+        {
+          "id": "traduce",
+          "title": "Sin caer en la trampa",
+          "section": "trampas",
+          "count": 9
+        },
+        {
+          "id": "sont-ont",
+          "title": "sont u ont",
+          "section": "sont-ont",
+          "count": 6
+        },
+        {
+          "id": "oido",
+          "title": "Al oído",
+          "section": "sont-ont",
+          "count": 4
+        },
+        {
+          "id": "negativo",
+          "title": "Al negativo",
+          "section": "negacion",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "verbos-regulares",
+      "number": 5,
+      "part": 2,
+      "title": "Verbos regulares en presente",
+      "tagline": "Los grupos -er, -ir y -re, y por qué cuatro formas suenan igual.",
+      "minutes": 10,
+      "sections": [
+        "Raíz + terminación",
+        "Verbos en -er",
+        "Cuatro formas, un solo sonido",
+        "Verbos en -ir tipo finir",
+        "Verbos en -re tipo vendre",
+        "Ajustes de ortografía"
+      ],
+      "exercises": [
+        {
+          "id": "suena",
+          "title": "¿Suena igual?",
+          "section": "sonido",
+          "count": 6
+        },
+        {
+          "id": "conjuga",
+          "title": "Conjuga en presente",
+          "section": "re",
+          "count": 12
+        },
+        {
+          "id": "pronombre",
+          "title": "¿Qué pronombre?",
+          "section": "re",
+          "count": 6
+        },
+        {
+          "id": "sujeto",
+          "title": "Cambia el sujeto",
+          "section": "ortografia",
+          "count": 6
+        },
+        {
+          "id": "sabado",
+          "title": "Un sábado cualquiera",
+          "section": "final",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "partitivos",
+      "number": 6,
+      "part": 2,
+      "title": "Du, de la, de l', des",
+      "tagline": "Los partitivos: hablar de comida y cantidades sin confundir gustos con consumo.",
+      "minutes": 9,
+      "sections": [
+        "Qué es un partitivo",
+        "Las cuatro formas",
+        "Gustos o consumo",
+        "En negativo, todo se vuelve de",
+        "Con cantidades, también de"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "El desayuno",
+          "section": "formas",
+          "count": 8
+        },
+        {
+          "id": "gusto-consumo",
+          "title": "¿Gusto o consumo?",
+          "section": "gusto-consumo",
+          "count": 8
+        },
+        {
+          "id": "negativo",
+          "title": "Responde que no",
+          "section": "negativo",
+          "count": 6
+        },
+        {
+          "id": "cantidades",
+          "title": "Cantidades",
+          "section": "cantidades",
+          "count": 6
+        },
+        {
+          "id": "cafe",
+          "title": "En el café",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "numeros",
+      "number": 7,
+      "part": 2,
+      "title": "Los números: reglas y trampas",
+      "tagline": "La lógica del 70 al 99, el et, la s de vingts y cents y cómo cambia su pronunciación.",
+      "minutes": 10,
+      "sections": [
+        "Lo que funciona como en español",
+        "La lógica del 70 al 99",
+        "Cuándo va et",
+        "La s de vingts y cents",
+        "Los guiones",
+        "Números que cambian de sonido",
+        "Liaison con números",
+        "Cómo se escriben las cifras"
+      ],
+      "exercises": [
+        {
+          "id": "70-99",
+          "title": "Del 70 al 99",
+          "section": "70-99",
+          "count": 6
+        },
+        {
+          "id": "en-letras",
+          "title": "En letras",
+          "section": "s",
+          "count": 10
+        },
+        {
+          "id": "sonido",
+          "title": "¿Cómo suena la consonante final?",
+          "section": "pronunciacion",
+          "count": 8
+        },
+        {
+          "id": "cifras",
+          "title": "Cifras a la francesa",
+          "section": "cifras",
+          "count": 4
+        },
+        {
+          "id": "cuentas",
+          "title": "Cuentas rápidas",
+          "section": "final",
+          "count": 6
+        },
+        {
+          "id": "telefono",
+          "title": "Dictado telefónico",
+          "section": "final",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "slug": "posesivos",
+      "number": 8,
+      "part": 2,
+      "title": "Mon, ma, mes",
+      "tagline": "Los posesivos: concuerdan con lo que se posee, no con quien lo posee.",
+      "minutes": 8,
+      "sections": [
+        "Los posesivos",
+        "Concuerda con el objeto",
+        "Mon amie",
+        "El «su» del español"
+      ],
+      "exercises": [
+        {
+          "id": "elige",
+          "title": "Elige el posesivo",
+          "section": "objeto",
+          "count": 12
+        },
+        {
+          "id": "objetos",
+          "title": "Objetos perdidos",
+          "section": "mon-amie",
+          "count": 7
+        },
+        {
+          "id": "familia",
+          "title": "La familia de Lucas",
+          "section": "su",
+          "count": 7
+        },
+        {
+          "id": "traduce",
+          "title": "Traduce",
+          "section": "su",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "verbos-irregulares",
+      "number": 9,
+      "part": 2,
+      "title": "Aller, faire, vouloir, pouvoir",
+      "tagline": "Cuatro irregulares imprescindibles, au y aux, y el futuro con aller.",
+      "minutes": 10,
+      "sections": [
+        "Los cuatro verbos",
+        "Aller + à: au, à la, à l', aux",
+        "Faire",
+        "Vouloir y pouvoir",
+        "El futuro próximo: aller + infinitivo"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjuga",
+          "section": "conjugacion",
+          "count": 10
+        },
+        {
+          "id": "au-aux",
+          "title": "¿Adónde vas?",
+          "section": "aller-a",
+          "count": 8
+        },
+        {
+          "id": "faire",
+          "title": "¿Faire o no?",
+          "section": "faire",
+          "count": 5
+        },
+        {
+          "id": "cortesia",
+          "title": "Con cortesía",
+          "section": "vouloir-pouvoir",
+          "count": 3
+        },
+        {
+          "id": "futuro",
+          "title": "Al futuro próximo",
+          "section": "futuro",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "passe-compose",
+      "number": 10,
+      "part": 3,
+      "title": "El passé composé",
+      "tagline": "Contar lo que pasó: avoir o être, participios y concordancia.",
+      "minutes": 12,
+      "sections": [
+        "La fórmula",
+        "Participios regulares",
+        "Participios irregulares",
+        "Los verbos que van con être",
+        "Concordancia con être",
+        "Negación y marcadores de tiempo"
+      ],
+      "exercises": [
+        {
+          "id": "participios",
+          "title": "Participios",
+          "section": "irregulares",
+          "count": 12
+        },
+        {
+          "id": "auxiliar",
+          "title": "¿Avoir o être?",
+          "section": "etre",
+          "count": 10
+        },
+        {
+          "id": "concordancia",
+          "title": "Concordancia",
+          "section": "concordancia",
+          "count": 6
+        },
+        {
+          "id": "al-pasado",
+          "title": "Al pasado",
+          "section": "negacion",
+          "count": 7
+        },
+        {
+          "id": "pastel",
+          "title": "¿Quién se comió el pastel?",
+          "section": "final",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "preguntas",
+      "number": 11,
+      "part": 3,
+      "title": "Hacer preguntas",
+      "tagline": "Tres registros para preguntar, la inversión y quel, quelle, quels, quelles.",
+      "minutes": 9,
+      "sections": [
+        "Tres maneras de preguntar",
+        "La inversión y la -t-",
+        "Las palabras interrogativas",
+        "Quel, quelle, quels, quelles"
+      ],
+      "exercises": [
+        {
+          "id": "registro",
+          "title": "Cambia de registro",
+          "section": "registros",
+          "count": 4
+        },
+        {
+          "id": "inversion",
+          "title": "Con inversión",
+          "section": "inversion",
+          "count": 6
+        },
+        {
+          "id": "pregunta",
+          "title": "¿Cuál es la pregunta?",
+          "section": "interrogativos",
+          "count": 7
+        },
+        {
+          "id": "interrogativo",
+          "title": "La palabra que falta",
+          "section": "interrogativos",
+          "count": 6
+        },
+        {
+          "id": "quel",
+          "title": "Quel, quelle, quels, quelles",
+          "section": "quel",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "negacion",
+      "number": 12,
+      "part": 3,
+      "title": "La negación",
+      "tagline": "Ne… pas y su familia, dónde va cada pieza, ne… que y la respuesta si.",
+      "minutes": 10,
+      "sections": [
+        "Ne… pas",
+        "Las demás negaciones",
+        "Dónde va cada pieza",
+        "Rien y personne como sujeto",
+        "Ne… que: solo",
+        "Si: sí, frente a una pregunta negativa",
+        "En la conversación"
+      ],
+      "exercises": [
+        {
+          "id": "responde",
+          "title": "Responde que no",
+          "section": "familia",
+          "count": 6
+        },
+        {
+          "id": "posicion",
+          "title": "¿Dónde va?",
+          "section": "posicion",
+          "count": 6
+        },
+        {
+          "id": "opuestos",
+          "title": "Lo contrario",
+          "section": "sujeto",
+          "count": 7
+        },
+        {
+          "id": "ne-que",
+          "title": "Solo: ne… que",
+          "section": "ne-que",
+          "count": 4
+        },
+        {
+          "id": "oui-si",
+          "title": "¿Oui o si?",
+          "section": "si",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "adjetivos",
+      "number": 13,
+      "part": 3,
+      "title": "Los adjetivos",
+      "tagline": "Plural, posición, bel, nouvel, vieil, adjetivos que cambian de sentido y comparativos.",
+      "minutes": 12,
+      "sections": [
+        "Repaso: el femenino",
+        "El plural",
+        "¿Antes o después?",
+        "Bel, nouvel, vieil",
+        "Adjetivos que cambian de sentido",
+        "Los colores",
+        "Comparar"
+      ],
+      "exercises": [
+        {
+          "id": "plural",
+          "title": "Al plural",
+          "section": "plural",
+          "count": 7
+        },
+        {
+          "id": "orden",
+          "title": "Ordena las palabras",
+          "section": "posicion",
+          "count": 8
+        },
+        {
+          "id": "bel",
+          "title": "Beau o bel",
+          "section": "bel",
+          "count": 6
+        },
+        {
+          "id": "sentido",
+          "title": "¿Antes o después?",
+          "section": "sentido",
+          "count": 6
+        },
+        {
+          "id": "colores",
+          "title": "Los colores",
+          "section": "colores",
+          "count": 6
+        },
+        {
+          "id": "comparar",
+          "title": "Compara",
+          "section": "comparar",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "liaison",
+      "number": 14,
+      "part": 4,
+      "title": "La liaison",
+      "tagline": "Por qué las palabras se unen, qué sonido aparece y cuándo es obligatoria o está prohibida.",
+      "minutes": 10,
+      "sections": [
+        "Qué es la liaison",
+        "Los sonidos de la liaison",
+        "Liaisons obligatorias",
+        "Liaisons prohibidas",
+        "Liaisons opcionales",
+        "El encadenamiento"
+      ],
+      "exercises": [
+        {
+          "id": "sonido",
+          "title": "¿Qué sonido aparece?",
+          "section": "sonidos",
+          "count": 8
+        },
+        {
+          "id": "obligatoria",
+          "title": "¿Liaison o no?",
+          "section": "prohibidas",
+          "count": 14
+        },
+        {
+          "id": "tipo",
+          "title": "Obligatoria, opcional o prohibida",
+          "section": "opcionales",
+          "count": 8
+        },
+        {
+          "id": "oido",
+          "title": "Al oído",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "pronombres",
+      "number": 15,
+      "part": 4,
+      "title": "Los pronombres de objeto",
+      "tagline": "Le, la, les, lui, leur: dónde van y cómo elegir. Y los tónicos moi, toi, lui…",
+      "minutes": 12,
+      "sections": [
+        "Para qué sirven",
+        "Complemento directo: le, la, les",
+        "Complemento indirecto: lui, leur",
+        "¿Directo o indirecto?",
+        "Dónde se ponen",
+        "Los pronombres tónicos"
+      ],
+      "exercises": [
+        {
+          "id": "cod-coi",
+          "title": "¿Le o lui?",
+          "section": "test",
+          "count": 7
+        },
+        {
+          "id": "reemplaza",
+          "title": "Sin repetir",
+          "section": "posicion",
+          "count": 10
+        },
+        {
+          "id": "posicion",
+          "title": "¿Dónde va?",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "tonicos",
+          "title": "Moi aussi, moi non plus",
+          "section": "tonicos",
+          "count": 4
+        },
+        {
+          "id": "mensajes",
+          "title": "Mensajes",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "en-y",
+      "number": 16,
+      "part": 4,
+      "title": "En e y",
+      "tagline": "Los dos pronombres que el español casi no tiene: lugares, cantidades y expresiones.",
+      "minutes": 11,
+      "sections": [
+        "Por qué cuestan",
+        "Y: lugares y cosas con à",
+        "En: cantidades y cosas con de",
+        "¿Y o en?",
+        "Con personas, otros pronombres",
+        "Dónde van",
+        "Expresiones del día a día"
+      ],
+      "exercises": [
+        {
+          "id": "cantidades",
+          "title": "En la tienda",
+          "section": "en",
+          "count": 6
+        },
+        {
+          "id": "y-en",
+          "title": "¿Y o en?",
+          "section": "prueba",
+          "count": 10
+        },
+        {
+          "id": "persona",
+          "title": "¿Cosa o persona?",
+          "section": "personas",
+          "count": 6
+        },
+        {
+          "id": "posicion",
+          "title": "¿Dónde va?",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "expresiones",
+          "title": "Expresiones",
+          "section": "expresiones",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "pronominales",
+      "number": 17,
+      "part": 4,
+      "title": "Los verbos pronominales",
+      "tagline": "Me levanto, me visto: conjugación, trampas con el español y el pasado con être.",
+      "minutes": 10,
+      "sections": [
+        "Qué es un verbo pronominal",
+        "La conjugación",
+        "La rutina",
+        "Cuando el francés y el español no coinciden",
+        "Negación, futuro e imperativo",
+        "En passé composé, siempre con être"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjuga",
+          "section": "conjugacion",
+          "count": 8
+        },
+        {
+          "id": "trampas",
+          "title": "¿Con se o sin se?",
+          "section": "trampas",
+          "count": 6
+        },
+        {
+          "id": "negativo",
+          "title": "En negativo",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "imperativo",
+          "title": "Imperativo",
+          "section": "posicion",
+          "count": 4
+        },
+        {
+          "id": "pasado",
+          "title": "Ayer por la mañana",
+          "section": "pasado",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "imparfait",
+      "number": 18,
+      "part": 4,
+      "title": "L'imparfait",
+      "tagline": "Describir el pasado y contar historias combinándolo con el passé composé.",
+      "minutes": 10,
+      "sections": [
+        "Una ventaja para hispanohablantes",
+        "Cómo se forma",
+        "La única excepción: être",
+        "Para qué sirve",
+        "Imparfait o passé composé"
+      ],
+      "exercises": [
+        {
+          "id": "forma",
+          "title": "Forma el imparfait",
+          "section": "formacion",
+          "count": 10
+        },
+        {
+          "id": "infancia",
+          "title": "Cuando era niño",
+          "section": "usos",
+          "count": 6
+        },
+        {
+          "id": "contraste",
+          "title": "¿Decorado o acción?",
+          "section": "contraste",
+          "count": 7
+        },
+        {
+          "id": "cuento",
+          "title": "Il était une fois…",
+          "section": "contraste",
+          "count": 6
+        },
+        {
+          "id": "antes-ahora",
+          "title": "Antes y ahora",
+          "section": "final",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

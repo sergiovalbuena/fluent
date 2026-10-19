@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, Gamepad2, BookType, ChevronDown, LogIn, BookOpen, Users, Bookmark } from 'lucide-react'
+import { Home, Gamepad2, BookType, ChevronDown, LogIn, BookOpen, Users, Bookmark, GraduationCap } from 'lucide-react'
 import { motion as m, AnimatePresence } from 'framer-motion'
 import {
   Sidebar,
@@ -41,6 +41,7 @@ function SidebarContent({ modules, account }: { modules: Module[]; account: Acco
     { href: '/saved', icon: <Bookmark size={20} strokeWidth={1.8} />, label: t('saved') },
     { href: '/mini-games', icon: <Gamepad2 size={20} strokeWidth={1.8} />, label: t('mini_games') },
     { href: '/verbs', icon: <BookType size={20} strokeWidth={1.8} />, label: t('verbs') },
+    { href: '/grammar', icon: <GraduationCap size={20} strokeWidth={1.8} />, label: t('grammar') },
     { href: '/community', icon: <Users size={20} strokeWidth={1.8} />, label: t('community') },
   ]
 

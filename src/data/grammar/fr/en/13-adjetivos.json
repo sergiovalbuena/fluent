@@ -1,0 +1,652 @@
+{
+  "slug": "adjetivos",
+  "number": 13,
+  "part": 3,
+  "title": "Adjectives",
+  "tagline": "Plural, position, bel, nouvel, vieil, adjectives that change meaning, and comparisons.",
+  "goal": "Make adjectives plural, know whether they go before or after the noun, use bel, nouvel and vieil, understand adjectives that change meaning with their position and compare things.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "femenino",
+      "title": "Recap: the feminine",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Unlike English, French adjectives agree with the noun [[2]]: *un pull noir* → *une robe noire*. And the irregular ones: *beau → belle, vieux → vieille, blanc → blanche, heureux → heureuse*."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "The plural",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Rule",
+            "Singular → plural"
+          ],
+          "rows": [
+            [
+              "General: **+ s**",
+              "*petit → petits · petite → petites*"
+            ],
+            [
+              "Ends in **-s or -x**: no change",
+              "*français → français · heureux → heureux*"
+            ],
+            [
+              "**-eau → -eaux**",
+              "*beau → beaux · nouveau → nouveaux*"
+            ],
+            [
+              "**-al → -aux**",
+              "*normal → normaux · génial → géniaux*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "The plural -s and -x are almost never pronounced; you only see them in writing. In the feminine, *-ale* becomes *-ales*: *des idées géniales*."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Before or after?",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "**The general rule is the opposite of English:** in French the adjective goes **after** the noun. «A red car» = *une voiture rouge*; «an interesting book» = *un livre intéressant*."
+        },
+        {
+          "type": "text",
+          "text": "But a small group of short, very common adjectives goes **before**, as in English. They fall into four ideas, often remembered as **BAGS**:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Idea",
+            "Adjectives",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**B**eauty",
+              "*beau, joli*",
+              "*une jolie maison*"
+            ],
+            [
+              "**A**ge",
+              "*jeune, vieux, nouveau*",
+              "*un vieux quartier*"
+            ],
+            [
+              "**G**oodness",
+              "*bon, mauvais, gentil*",
+              "*un bon restaurant*"
+            ],
+            [
+              "**S**ize",
+              "*grand, petit, gros, long*",
+              "*une petite ville*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "If you're not sure, put it after: that's right for most adjectives, including colours and nationalities. Ordinal numbers go before too: *le premier jour, la deuxième fois*."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "When a plural adjective comes first, careful French turns *des* into *de*: *de beaux châteaux, de bonnes idées*."
+        }
+      ]
+    },
+    {
+      "id": "bel",
+      "title": "Bel, nouvel, vieil",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Before a **masculine singular noun starting with a vowel or silent h**, three adjectives change form:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Normal",
+            "Before a vowel",
+            "Example"
+          ],
+          "rows": [
+            [
+              "*beau*",
+              "*bel*",
+              "*un {bel} homme, un {bel} appartement*"
+            ],
+            [
+              "*nouveau*",
+              "*nouvel*",
+              "*un {nouvel} ordinateur*"
+            ],
+            [
+              "*vieux*",
+              "*vieil*",
+              "*un {vieil} ami*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Same reason as *cet* [[3]] and *mon amie* [[8]]: avoiding two vowels clashing."
+        }
+      ]
+    },
+    {
+      "id": "sentido",
+      "title": "Adjectives that change meaning",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Some adjectives **change meaning** depending on where they go:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Before the noun",
+            "After the noun"
+          ],
+          "rows": [
+            [
+              "*un grand homme*: a great man",
+              "*un homme grand*: a tall man"
+            ],
+            [
+              "*mon ancien professeur*: my former teacher",
+              "*une maison ancienne*: an old (antique) house"
+            ],
+            [
+              "*un pauvre homme*: a poor man (to be pitied)",
+              "*un homme pauvre*: a man with no money"
+            ],
+            [
+              "*ma propre chambre*: my own room",
+              "*une chambre propre*: a clean room"
+            ],
+            [
+              "*un cher ami*: a dear friend",
+              "*un sac cher*: an expensive bag"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colores",
+      "title": "Colours",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Masculine",
+            "Feminine"
+          ],
+          "rows": [
+            [
+              "*blanc*",
+              "*blanche*"
+            ],
+            [
+              "*noir*",
+              "*noire*"
+            ],
+            [
+              "*vert*",
+              "*verte*"
+            ],
+            [
+              "*bleu*",
+              "*bleue*"
+            ],
+            [
+              "*gris*",
+              "*grise*"
+            ],
+            [
+              "*violet*",
+              "*violette*"
+            ],
+            [
+              "*rouge, jaune, rose*",
+              "the same (they already end in -e)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Colours named after a thing (a fruit, a stone…) are **invariable**: they don't change in the feminine or plural. *des chaussures orange · des yeux marron* (brown eyes). *rose* is the exception: it does agree (*des fleurs roses*)."
+        }
+      ]
+    },
+    {
+      "id": "comparar",
+      "title": "Comparing",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "French has no -er or -est endings: everything is built with *plus* (more) and *moins* (less)."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Comparison",
+            "Structure",
+            "Example"
+          ],
+          "rows": [
+            [
+              "More … than",
+              "*plus* + adjective + *que*",
+              "*Le train est {plus} rapide {que} le bus.*"
+            ],
+            [
+              "Less … than",
+              "*moins* + adjective + *que*",
+              "*Le bus est {moins} rapide {que} le train.*"
+            ],
+            [
+              "As … as",
+              "*aussi* + adjective + *que*",
+              "*Paul est {aussi} grand {que} Marie.*"
+            ],
+            [
+              "The most …",
+              "*le / la / les plus* + adjective",
+              "*C'est {la plus} belle ville du monde.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Bon → meilleur",
+          "text": "Like «good → better», never «plus bon»: *Ce vin est meilleur que l'autre. · C'est le meilleur restaurant du quartier.*"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "plural",
+      "title": "Make it plural",
+      "instructions": "Write the adjective in the plural.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "un collègue gentil → des collègues ___",
+          "answer": "gentils"
+        },
+        {
+          "prompt": "un beau château → de ___ châteaux",
+          "answer": "beaux"
+        },
+        {
+          "prompt": "un résultat normal → des résultats ___",
+          "answer": "normaux"
+        },
+        {
+          "prompt": "un client heureux → des clients ___",
+          "answer": "heureux"
+        },
+        {
+          "prompt": "une idée géniale → des idées ___",
+          "answer": "géniales"
+        },
+        {
+          "prompt": "un pull marron → des pulls ___",
+          "answer": "marron",
+          "explain": "*marron* is invariable."
+        },
+        {
+          "prompt": "un nouveau projet → de ___ projets",
+          "answer": "nouveaux"
+        }
+      ],
+      "section": "plural"
+    },
+    {
+      "id": "orden",
+      "title": "Put the words in order",
+      "instructions": "Build the correct phrase. Watch the position and bel, nouvel, vieil.",
+      "kind": "order",
+      "speak": "answer",
+      "items": [
+        {
+          "words": [
+            "une",
+            "petite",
+            "maison"
+          ],
+          "answer": "une petite maison"
+        },
+        {
+          "words": [
+            "un",
+            "chat",
+            "noir"
+          ],
+          "answer": "un chat noir"
+        },
+        {
+          "words": [
+            "un",
+            "livre",
+            "intéressant"
+          ],
+          "answer": "un livre intéressant"
+        },
+        {
+          "words": [
+            "un",
+            "vieil",
+            "homme"
+          ],
+          "answer": "un vieil homme"
+        },
+        {
+          "words": [
+            "le",
+            "premier",
+            "jour"
+          ],
+          "answer": "le premier jour"
+        },
+        {
+          "words": [
+            "un",
+            "nouvel",
+            "appartement"
+          ],
+          "answer": "un nouvel appartement"
+        },
+        {
+          "words": [
+            "une",
+            "nouvelle",
+            "voiture",
+            "rouge"
+          ],
+          "answer": "une nouvelle voiture rouge"
+        },
+        {
+          "words": [
+            "un",
+            "bel",
+            "arbre"
+          ],
+          "answer": "un bel arbre"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "bel",
+      "title": "Beau or bel",
+      "instructions": "Choose the correct form.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "un ___ ami",
+          "options": [
+            "vieux",
+            "vieil",
+            "vieille"
+          ],
+          "answer": "vieil"
+        },
+        {
+          "prompt": "un ___ quartier",
+          "options": [
+            "beau",
+            "bel",
+            "belle"
+          ],
+          "answer": "beau"
+        },
+        {
+          "prompt": "un ___ hôtel",
+          "options": [
+            "nouveau",
+            "nouvel",
+            "nouvelle"
+          ],
+          "answer": "nouvel"
+        },
+        {
+          "prompt": "une ___ amie",
+          "options": [
+            "vieux",
+            "vieil",
+            "vieille"
+          ],
+          "answer": "vieille",
+          "explain": "Feminine: always *vieille*."
+        },
+        {
+          "prompt": "de ___ appartements",
+          "options": [
+            "beaux",
+            "bels",
+            "belles"
+          ],
+          "answer": "beaux",
+          "explain": "There's no special form in the plural: *beaux*."
+        },
+        {
+          "prompt": "un ___ homme",
+          "options": [
+            "beau",
+            "bel",
+            "belle"
+          ],
+          "answer": "bel"
+        }
+      ],
+      "section": "bel"
+    },
+    {
+      "id": "sentido",
+      "title": "Before or after?",
+      "instructions": "Choose the phrase that matches the meaning.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "My ex-boyfriend",
+          "options": [
+            "mon ancien copain",
+            "mon copain ancien"
+          ],
+          "answer": "mon ancien copain"
+        },
+        {
+          "prompt": "An ancient castle",
+          "options": [
+            "un ancien château",
+            "un château ancien"
+          ],
+          "answer": "un château ancien"
+        },
+        {
+          "prompt": "A great man (important)",
+          "options": [
+            "un grand homme",
+            "un homme grand"
+          ],
+          "answer": "un grand homme"
+        },
+        {
+          "prompt": "My own bike",
+          "options": [
+            "mon propre vélo",
+            "mon vélo propre"
+          ],
+          "answer": "mon propre vélo"
+        },
+        {
+          "prompt": "A clean kitchen",
+          "options": [
+            "une propre cuisine",
+            "une cuisine propre"
+          ],
+          "answer": "une cuisine propre"
+        },
+        {
+          "prompt": "An expensive bag",
+          "options": [
+            "un cher sac",
+            "un sac cher"
+          ],
+          "answer": "un sac cher"
+        }
+      ],
+      "section": "sentido"
+    },
+    {
+      "id": "colores",
+      "title": "Colours",
+      "instructions": "Choose the correct form of the colour.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "des chaussures ___",
+          "options": [
+            "orange",
+            "oranges"
+          ],
+          "answer": "orange"
+        },
+        {
+          "prompt": "une robe ___",
+          "options": [
+            "vert",
+            "verte"
+          ],
+          "answer": "verte"
+        },
+        {
+          "prompt": "des yeux ___",
+          "options": [
+            "marron",
+            "marrons"
+          ],
+          "answer": "marron"
+        },
+        {
+          "prompt": "une chemise ___",
+          "options": [
+            "blanc",
+            "blanche"
+          ],
+          "answer": "blanche"
+        },
+        {
+          "prompt": "des fleurs ___",
+          "options": [
+            "rose",
+            "roses"
+          ],
+          "answer": "roses"
+        },
+        {
+          "prompt": "une voiture ___",
+          "options": [
+            "violet",
+            "violette"
+          ],
+          "answer": "violette"
+        }
+      ],
+      "section": "colores"
+    },
+    {
+      "id": "comparar",
+      "title": "Compare",
+      "instructions": "Complete the comparison.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Un éléphant est ___ grand ___ une souris.",
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
+          "answer": "plus … que"
+        },
+        {
+          "prompt": "Le vélo est ___ rapide ___ l'avion.",
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
+          "answer": "moins … que"
+        },
+        {
+          "prompt": "Paul mesure 1,80 m et Marie aussi : Paul est ___ grand ___ Marie.",
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
+          "answer": "aussi … que"
+        },
+        {
+          "prompt": "Ce vin est ___ que l'autre.",
+          "options": [
+            "meilleur",
+            "plus bon",
+            "mieux"
+          ],
+          "answer": "meilleur"
+        },
+        {
+          "prompt": "C'est ___ pizza de la ville !",
+          "options": [
+            "la meilleure",
+            "la plus bonne",
+            "le meilleur"
+          ],
+          "answer": "la meilleure"
+        },
+        {
+          "prompt": "C'est ___ belle ville du monde.",
+          "options": [
+            "la plus",
+            "le plus",
+            "plus"
+          ],
+          "answer": "la plus"
+        }
+      ],
+      "section": "comparar"
+    }
+  ],
+  "checklist": [
+    "I make adjectives plural (-s, -x, -aux).",
+    "I know which adjectives go before the noun.",
+    "I use *bel, nouvel, vieil*.",
+    "I know the adjectives that change meaning.",
+    "I compare with *plus, moins, aussi* and *meilleur*."
+  ],
+  "challenge": {
+    "title": "An ad",
+    "text": "Write an ad to sell or rent something (a flat, a bike, a sofa) with at least eight adjectives, one comparison and one superlative: *À louer : un bel appartement lumineux, plus grand que…*"
+  }
+}

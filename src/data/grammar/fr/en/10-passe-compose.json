@@ -1,0 +1,559 @@
+{
+  "slug": "passe-compose",
+  "number": 10,
+  "part": 3,
+  "title": "The passé composé",
+  "tagline": "Talking about what happened: avoir or être, past participles and agreement.",
+  "goal": "Say what you did yesterday or at the weekend, choose between avoir and être and make the past participle agree.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "formula",
+      "title": "The formula",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "avoir or être in the present + past participle",
+          "caption": "*J'{ai mangé}. · Nous {avons regardé} un film.*"
+        },
+        {
+          "type": "text",
+          "text": "It's built like «I have eaten», but it's used for both «I ate» and «I have eaten». You already know *avoir* and *être* [[4]]; you just need the participle."
+        }
+      ]
+    },
+    {
+      "id": "regulares",
+      "title": "Regular participles",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Infinitive",
+            "Participle",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**-er → -é**",
+              "*parler → parl{é}*",
+              "*J'ai parlé avec Marie.*"
+            ],
+            [
+              "**-ir → -i**",
+              "*finir → fin{i}*",
+              "*Tu as fini ton rapport ?*"
+            ],
+            [
+              "**-re → -u**",
+              "*vendre → vend{u}*",
+              "*Il a vendu sa voiture.*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "Irregular participles",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Verb",
+            "Participle",
+            "Verb",
+            "Participle"
+          ],
+          "rows": [
+            [
+              "*être*",
+              "*été*",
+              "*voir* (to see)",
+              "*vu*"
+            ],
+            [
+              "*avoir*",
+              "*eu*",
+              "*lire* (to read)",
+              "*lu*"
+            ],
+            [
+              "*faire*",
+              "*fait*",
+              "*boire* (to drink)",
+              "*bu*"
+            ],
+            [
+              "*prendre* (to take)",
+              "*pris*",
+              "*vouloir*",
+              "*voulu*"
+            ],
+            [
+              "*écrire* (to write)",
+              "*écrit*",
+              "*pouvoir*",
+              "*pu*"
+            ],
+            [
+              "*mettre* (to put)",
+              "*mis*",
+              "*dire* (to say)",
+              "*dit*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "etre",
+      "title": "Verbs that take être",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Most verbs use *avoir*. A small group uses **être**: almost all of them describe **movement or a change of state**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Verbs",
+            "Participles"
+          ],
+          "rows": [
+            [
+              "*aller / venir*",
+              "*allé / venu*"
+            ],
+            [
+              "*arriver / partir*",
+              "*arrivé / parti*"
+            ],
+            [
+              "*entrer / sortir*",
+              "*entré / sorti*"
+            ],
+            [
+              "*monter / descendre*",
+              "*monté / descendu*"
+            ],
+            [
+              "*tomber*",
+              "*tombé*"
+            ],
+            [
+              "*rester*",
+              "*resté*"
+            ],
+            [
+              "*naître / mourir*",
+              "*né / mort*"
+            ],
+            [
+              "*devenir*",
+              "*devenu*"
+            ],
+            [
+              "*rentrer / retourner / revenir*",
+              "*rentré / retourné / revenu*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Picture a house: you arrive and leave, go in and out, go up and down the stairs, fall, stay, come back. And **every reflexive verb** takes *être* too [[17]]."
+        }
+      ]
+    },
+    {
+      "id": "concordancia",
+      "title": "Agreement with être",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "With *être*, the participle behaves like an adjective and **agrees with the subject**:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Subject",
+            "Example"
+          ],
+          "rows": [
+            [
+              "masculine singular",
+              "*Il est allé à Paris.*"
+            ],
+            [
+              "feminine singular",
+              "*Elle est allé{e} à Paris.*"
+            ],
+            [
+              "masculine plural",
+              "*Ils sont allé{s} à Paris.*"
+            ],
+            [
+              "feminine plural",
+              "*Elles sont allé{es} à Paris.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*allé, allée, allés, allées* sound exactly the same. The difference only shows in writing."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "With *avoir*, the participle doesn't agree with the subject: *Elle a mangé*, no e."
+        }
+      ]
+    },
+    {
+      "id": "negacion",
+      "title": "Negation and time words",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*ne… pas* goes around the **auxiliary**:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je n'ai pas mangé.",
+              "tr": "I haven't eaten. / I didn't eat."
+            },
+            {
+              "fr": "Elle n'est pas venue.",
+              "tr": "She didn't come."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Talking about the past:** *hier* (yesterday) · *avant-hier* (the day before yesterday) · *ce matin* (this morning) · *le week-end dernier* (last weekend) · *la semaine dernière* (last week) · *l'année dernière* (last year) · *il y a deux jours* (two days ago)."
+        },
+        {
+          "type": "text",
+          "text": "To describe the past (what things were like, what was happening) French uses the *imparfait* [[18]]."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "participios",
+      "title": "Participles",
+      "instructions": "Write the past participle.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "manger",
+          "answer": "mangé"
+        },
+        {
+          "prompt": "finir",
+          "answer": "fini"
+        },
+        {
+          "prompt": "vendre",
+          "answer": "vendu"
+        },
+        {
+          "prompt": "choisir",
+          "answer": "choisi"
+        },
+        {
+          "prompt": "attendre",
+          "answer": "attendu"
+        },
+        {
+          "prompt": "faire",
+          "answer": "fait"
+        },
+        {
+          "prompt": "boire",
+          "answer": "bu"
+        },
+        {
+          "prompt": "voir",
+          "answer": "vu"
+        },
+        {
+          "prompt": "prendre",
+          "answer": "pris"
+        },
+        {
+          "prompt": "écrire",
+          "answer": "écrit"
+        },
+        {
+          "prompt": "être",
+          "answer": "été"
+        },
+        {
+          "prompt": "avoir",
+          "answer": "eu"
+        }
+      ],
+      "section": "irregulares"
+    },
+    {
+      "id": "auxiliar",
+      "title": "Avoir or être?",
+      "instructions": "Choose the right auxiliary.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Je ___ allé au cinéma.",
+          "options": [
+            "ai",
+            "suis"
+          ],
+          "answer": "suis"
+        },
+        {
+          "prompt": "Nous ___ mangé des crêpes.",
+          "options": [
+            "avons",
+            "sommes"
+          ],
+          "answer": "avons"
+        },
+        {
+          "prompt": "Elle ___ tombée dans l'escalier.",
+          "options": [
+            "a",
+            "est"
+          ],
+          "answer": "est"
+        },
+        {
+          "prompt": "Ils ___ fait du sport.",
+          "options": [
+            "ont",
+            "sont"
+          ],
+          "answer": "ont"
+        },
+        {
+          "prompt": "Tu ___ arrivé en retard !",
+          "options": [
+            "as",
+            "es"
+          ],
+          "answer": "es"
+        },
+        {
+          "prompt": "Vous ___ vu le film ?",
+          "options": [
+            "avez",
+            "êtes"
+          ],
+          "answer": "avez"
+        },
+        {
+          "prompt": "Elles ___ parties en vacances.",
+          "options": [
+            "ont",
+            "sont"
+          ],
+          "answer": "sont"
+        },
+        {
+          "prompt": "J'___ bu un chocolat chaud.",
+          "options": [
+            "ai",
+            "suis"
+          ],
+          "answer": "ai"
+        },
+        {
+          "prompt": "Il ___ resté à la maison.",
+          "options": [
+            "a",
+            "est"
+          ],
+          "answer": "est"
+        },
+        {
+          "prompt": "Elle ___ née en 1985.",
+          "options": [
+            "a",
+            "est"
+          ],
+          "answer": "est"
+        }
+      ],
+      "section": "etre"
+    },
+    {
+      "id": "concordancia",
+      "title": "Agreement",
+      "instructions": "Choose the correct form of the participle.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Marie est ___ à Lyon.",
+          "options": [
+            "allé",
+            "allée",
+            "allés"
+          ],
+          "answer": "allée"
+        },
+        {
+          "prompt": "Mes parents sont ___ hier.",
+          "options": [
+            "arrivé",
+            "arrivés",
+            "arrivées"
+          ],
+          "answer": "arrivés"
+        },
+        {
+          "prompt": "Elle a ___ une pizza.",
+          "options": [
+            "mangé",
+            "mangée",
+            "mangés"
+          ],
+          "answer": "mangé",
+          "explain": "With *avoir* it doesn't agree with the subject."
+        },
+        {
+          "prompt": "Mes sœurs sont ___ tard.",
+          "options": [
+            "rentré",
+            "rentrés",
+            "rentrées"
+          ],
+          "answer": "rentrées"
+        },
+        {
+          "prompt": "Nous avons ___ le train.",
+          "options": [
+            "pris",
+            "prises",
+            "prise"
+          ],
+          "answer": "pris"
+        },
+        {
+          "prompt": "Anne et Luc sont ___ ensemble.",
+          "options": [
+            "venu",
+            "venus",
+            "venues"
+          ],
+          "answer": "venus",
+          "explain": "A mixed group takes the masculine plural."
+        }
+      ],
+      "section": "concordancia"
+    },
+    {
+      "id": "al-pasado",
+      "title": "Into the past",
+      "instructions": "Put the sentence into the passé composé.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je mange une pomme.",
+          "answer": "J'ai mangé une pomme."
+        },
+        {
+          "prompt": "Nous regardons un film.",
+          "answer": "Nous avons regardé un film."
+        },
+        {
+          "prompt": "Elle va au marché.",
+          "answer": "Elle est allée au marché."
+        },
+        {
+          "prompt": "Ils finissent le travail.",
+          "answer": "Ils ont fini le travail."
+        },
+        {
+          "prompt": "Tu prends le bus.",
+          "answer": "Tu as pris le bus."
+        },
+        {
+          "prompt": "Elles arrivent à 8 h.",
+          "answer": "Elles sont arrivées à 8 h.",
+          "accept": [
+            "Elles sont arrivées à huit heures."
+          ]
+        },
+        {
+          "prompt": "Je ne bois pas de café.",
+          "answer": "Je n'ai pas bu de café."
+        }
+      ],
+      "section": "negacion"
+    },
+    {
+      "id": "pastel",
+      "title": "Who ate the cake?",
+      "instructions": "Yesterday at four the cake vanished from the kitchen. Put the statements into the passé composé and, at the end, say who did it.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "(Grandma) Hier, j'___ un gâteau pour l'anniversaire de Paul. (préparer)",
+          "answer": "ai préparé"
+        },
+        {
+          "prompt": "(Grandma) À 16 h, je ___ de la cuisine cinq minutes. (sortir)",
+          "answer": "suis sortie",
+          "explain": "Grandma is a woman: *sortie*."
+        },
+        {
+          "prompt": "(Paul) Je ___ à la piscine avec mes copains à 15 h. (aller)",
+          "answer": "suis allé"
+        },
+        {
+          "prompt": "(Paul) Je ___ à 17 h. (rentrer)",
+          "answer": "suis rentré"
+        },
+        {
+          "prompt": "(Zoé) J'___ mes devoirs dans ma chambre tout l'après-midi. (faire)",
+          "answer": "ai fait"
+        },
+        {
+          "prompt": "(Zoé) Je n'___ pas ___ ce gâteau au chocolat ! (manger)",
+          "answer": "ai … mangé",
+          "accept": [
+            "ai mangé"
+          ]
+        },
+        {
+          "prompt": "And now, the verdict: who ate the cake?",
+          "answer": "Zoé",
+          "accept": [
+            "Zoe",
+            "zoé"
+          ],
+          "say": "C'est Zoé !",
+          "explain": "Grandma never said what kind of cake it was. So how did Zoé know it was *au chocolat*?",
+          "mixed": false
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "I form regular participles (é, i, u).",
+    "I know the most common irregular participles.",
+    "I know which verbs take *être*.",
+    "I make the participle agree with *être*.",
+    "I can say what I did yesterday."
+  ],
+  "challenge": {
+    "title": "Your weekend",
+    "text": "Write a paragraph about last weekend with at least five verbs with *avoir*, three with *être* and two time words (*samedi matin, hier soir…*)."
+  }
+}

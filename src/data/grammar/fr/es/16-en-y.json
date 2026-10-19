@@ -1,0 +1,542 @@
+{
+  "slug": "en-y",
+  "number": 16,
+  "part": 4,
+  "title": "En e y",
+  "tagline": "Los dos pronombres que el español casi no tiene: lugares, cantidades y expresiones.",
+  "goal": "Usar y para lugares y cosas introducidas por à, usar en para cantidades y cosas introducidas por de, colocarlos en la frase y entender expresiones como on y va o j'en ai marre.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "por-que",
+      "title": "Por qué cuestan",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Son cortos, van delante del verbo y en español muchas veces no tienen equivalente. Pero en francés se usan **constantemente**: sin ellos, las frases suenan forzadas."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Tu vas au cinéma ? — Oui, j'y vais.",
+              "tr": "¿Vas al cine? — Sí, voy."
+            },
+            {
+              "fr": "Tu veux du gâteau ? — Oui, j'en veux.",
+              "tr": "¿Quieres pastel? — Sí, quiero."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y",
+      "title": "Y: lugares y cosas con à",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Reemplaza",
+            "Ejemplo",
+            "Con y"
+          ],
+          "rows": [
+            [
+              "Un **lugar** (*à, au, en, chez, dans, sur…*)",
+              "*Je vais à Paris.*",
+              "*J'{y} vais.*"
+            ],
+            [
+              "",
+              "*Il habite en France.*",
+              "*Il {y} habite.*"
+            ],
+            [
+              "",
+              "*Les clés sont dans le tiroir.*",
+              "*Les clés {y} sont.*"
+            ],
+            [
+              "Una **cosa** introducida por **à**",
+              "*Je pense à mon examen.*",
+              "*J'{y} pense.*"
+            ],
+            [
+              "",
+              "*Tu réponds au message ?*",
+              "*Tu {y} réponds ?*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*y* equivale más o menos a «allí» o «en eso». Ya lo conoces de *il y a* (hay)."
+        }
+      ]
+    },
+    {
+      "id": "en",
+      "title": "En: cantidades y cosas con de",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Reemplaza",
+            "Ejemplo",
+            "Con en"
+          ],
+          "rows": [
+            [
+              "Un **partitivo** [[6]]",
+              "*Tu veux du pain ?*",
+              "*Oui, j'{en} veux.*"
+            ],
+            [
+              "Una **cantidad** (el número se mantiene)",
+              "*J'ai trois chats.*",
+              "*J'{en} ai trois.*"
+            ],
+            [
+              "",
+              "*Il boit beaucoup de café.*",
+              "*Il {en} boit beaucoup.*"
+            ],
+            [
+              "Un **origen** con *de*",
+              "*Je reviens de Paris.*",
+              "*J'{en} reviens.*"
+            ],
+            [
+              "Una cosa con un **verbo + de**",
+              "*Tu parles de ton voyage ?*",
+              "*Oui, j'{en} parle.*"
+            ],
+            [
+              "",
+              "*J'ai besoin de mon téléphone.*",
+              "*J'{en} ai besoin.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Con *en*, la cantidad se dice **al final**: *Tu as des frères ? — Oui, j'en ai deux.* Nunca «j'ai deux» a secas."
+        }
+      ]
+    },
+    {
+      "id": "prueba",
+      "title": "¿Y o en?",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Si hay…",
+            "Usa",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**à** (*au, aux*) o un lugar",
+              "*y*",
+              "*Je pense à mes vacances → J'y pense.*"
+            ],
+            [
+              "**de** (*du, de la, des*) o una cantidad",
+              "*en*",
+              "*Je parle de mes vacances → J'en parle.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Mira bien la preposición del verbo: *penser à* → *y*; *parler de* → *en*."
+        }
+      ]
+    },
+    {
+      "id": "personas",
+      "title": "Con personas, otros pronombres",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*y* y *en* son para **cosas y lugares**. Con **personas** se usan otros pronombres [[15]]:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Con una cosa",
+            "Con una persona"
+          ],
+          "rows": [
+            [
+              "*Je pense à mon examen → J'y pense.*",
+              "*Je pense à Marie → Je pense à elle.*"
+            ],
+            [
+              "*Je parle de mon voyage → J'en parle.*",
+              "*Je parle de Paul → Je parle de lui.*"
+            ],
+            [
+              "*Je réponds à la lettre → J'y réponds.*",
+              "*Je réponds à ma mère → Je lui réponds.*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Dónde van",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situación",
+            "Con y",
+            "Con en"
+          ],
+          "rows": [
+            [
+              "Presente",
+              "*J'y vais.*",
+              "*J'en mange.*"
+            ],
+            [
+              "Negación",
+              "*Je n'y vais pas.*",
+              "*Je n'en mange pas.*"
+            ],
+            [
+              "Futuro próximo",
+              "*Je vais y aller.*",
+              "*Je vais en manger.*"
+            ],
+            [
+              "Passé composé",
+              "*J'y suis allé.*",
+              "*J'en ai mangé.*"
+            ],
+            [
+              "Imperativo",
+              "*Vas-y !*",
+              "*Manges-en !*"
+            ],
+            [
+              "Juntos: siempre *y* antes que *en*",
+              "*Il y en a.* (hay)",
+              "*Il n'y en a plus.* (ya no hay)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "En el imperativo, los verbos en -er recuperan la s delante de *y* y *en* para hacer la liaison [[14]]: *Va !* → *Vas-y !* · *Mange !* → *Manges-en !*"
+        }
+      ]
+    },
+    {
+      "id": "expresiones",
+      "title": "Expresiones del día a día",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Expresión",
+            "Significa"
+          ],
+          "rows": [
+            [
+              "*On y va !*",
+              "¡Vamos!"
+            ],
+            [
+              "*Vas-y ! · Allez-y !*",
+              "¡Adelante!"
+            ],
+            [
+              "*Ça y est !*",
+              "¡Listo! ¡Ya está!"
+            ],
+            [
+              "*Il y a…*",
+              "Hay…"
+            ],
+            [
+              "*Je m'en vais.*",
+              "Me voy."
+            ],
+            [
+              "*J'en ai marre !*",
+              "¡Estoy harto! (coloquial)"
+            ],
+            [
+              "*Je n'y peux rien.*",
+              "No puedo hacer nada."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cantidades",
+      "title": "En la tienda",
+      "instructions": "Responde con en y la cantidad indicada.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Vous voulez combien de croissants ? (3)",
+          "answer": "J'en veux trois.",
+          "accept": [
+            "J'en voudrais trois."
+          ]
+        },
+        {
+          "prompt": "Tu as des frères ? (2)",
+          "answer": "Oui, j'en ai deux."
+        },
+        {
+          "prompt": "Vous avez du fromage ? (beaucoup)",
+          "answer": "Oui, j'en ai beaucoup.",
+          "accept": [
+            "Oui, nous en avons beaucoup.",
+            "Oui, on en a beaucoup."
+          ]
+        },
+        {
+          "prompt": "Elle boit du café ? (no)",
+          "answer": "Non, elle n'en boit pas."
+        },
+        {
+          "prompt": "Il y a des pommes ? (1)",
+          "answer": "Oui, il y en a une."
+        },
+        {
+          "prompt": "Tu as mangé des crêpes ? (5)",
+          "answer": "Oui, j'en ai mangé cinq."
+        }
+      ],
+      "section": "en"
+    },
+    {
+      "id": "y-en",
+      "title": "¿Y o en?",
+      "instructions": "Reescribe la frase con y o en.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je vais au cinéma.",
+          "answer": "J'y vais."
+        },
+        {
+          "prompt": "Tu veux de l'eau ?",
+          "answer": "Tu en veux ?"
+        },
+        {
+          "prompt": "Elle pense à ses vacances.",
+          "answer": "Elle y pense."
+        },
+        {
+          "prompt": "Nous parlons de la fête.",
+          "answer": "Nous en parlons."
+        },
+        {
+          "prompt": "Ils habitent à Madrid.",
+          "answer": "Ils y habitent."
+        },
+        {
+          "prompt": "J'ai trois chats.",
+          "answer": "J'en ai trois."
+        },
+        {
+          "prompt": "Il revient du Japon.",
+          "answer": "Il en revient."
+        },
+        {
+          "prompt": "J'ai besoin d'aide.",
+          "answer": "J'en ai besoin."
+        },
+        {
+          "prompt": "Je réponds à la lettre.",
+          "answer": "J'y réponds."
+        },
+        {
+          "prompt": "Elle mange beaucoup de chocolat.",
+          "answer": "Elle en mange beaucoup."
+        }
+      ],
+      "section": "prueba"
+    },
+    {
+      "id": "persona",
+      "title": "¿Cosa o persona?",
+      "instructions": "Elige el pronombre correcto.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je pense à mes vacances.",
+          "options": [
+            "J'y pense.",
+            "Je pense à elles.",
+            "Je leur pense."
+          ],
+          "answer": "J'y pense."
+        },
+        {
+          "prompt": "Je pense à ma mère.",
+          "options": [
+            "J'y pense.",
+            "Je pense à elle.",
+            "Je lui pense."
+          ],
+          "answer": "Je pense à elle."
+        },
+        {
+          "prompt": "Je parle de mon travail.",
+          "options": [
+            "J'en parle.",
+            "Je parle de lui.",
+            "J'y parle."
+          ],
+          "answer": "J'en parle."
+        },
+        {
+          "prompt": "Je parle de mon frère.",
+          "options": [
+            "J'en parle.",
+            "Je parle de lui.",
+            "Je lui parle."
+          ],
+          "answer": "Je parle de lui."
+        },
+        {
+          "prompt": "Je réponds au message.",
+          "options": [
+            "J'y réponds.",
+            "Je lui réponds.",
+            "J'en réponds."
+          ],
+          "answer": "J'y réponds."
+        },
+        {
+          "prompt": "Je réponds à mon chef.",
+          "options": [
+            "J'y réponds.",
+            "Je lui réponds.",
+            "Je réponds à lui."
+          ],
+          "answer": "Je lui réponds."
+        }
+      ],
+      "section": "personas"
+    },
+    {
+      "id": "posicion",
+      "title": "¿Dónde va?",
+      "instructions": "Elige la frase correcta.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Je n'y vais pas.",
+            "Je ne vais y pas.",
+            "J'y ne vais pas."
+          ],
+          "answer": "Je n'y vais pas."
+        },
+        {
+          "options": [
+            "Je vais en acheter.",
+            "J'en vais acheter.",
+            "Je vais acheter en."
+          ],
+          "answer": "Je vais en acheter."
+        },
+        {
+          "options": [
+            "J'y suis allé.",
+            "Je suis y allé.",
+            "Je suis allé y."
+          ],
+          "answer": "J'y suis allé."
+        },
+        {
+          "options": [
+            "Il n'y en a plus.",
+            "Il n'en y a plus.",
+            "Il y n'en a plus."
+          ],
+          "answer": "Il n'y en a plus."
+        },
+        {
+          "options": [
+            "Vas-y !",
+            "Va-y !",
+            "Y va !"
+          ],
+          "answer": "Vas-y !"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "expresiones",
+      "title": "Expresiones",
+      "instructions": "Elige la expresión adecuada a la situación.",
+      "kind": "choice",
+      "options": [
+        "On y va !",
+        "Ça y est !",
+        "J'en ai marre !",
+        "Je m'en vais.",
+        "Je n'y peux rien."
+      ],
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Por fin terminas un trabajo largo.",
+          "answer": "Ça y est !"
+        },
+        {
+          "prompt": "Llueve por quinto día seguido.",
+          "answer": "J'en ai marre !"
+        },
+        {
+          "prompt": "Todos están listos para salir.",
+          "answer": "On y va !"
+        },
+        {
+          "prompt": "Te despides al salir de una fiesta.",
+          "answer": "Je m'en vais."
+        },
+        {
+          "prompt": "Alguien se queja de algo que no depende de ti.",
+          "answer": "Je n'y peux rien."
+        }
+      ],
+      "section": "expresiones"
+    }
+  ],
+  "checklist": [
+    "Uso *y* para lugares y cosas con *à*.",
+    "Uso *en* para partitivos, cantidades y cosas con *de*.",
+    "Mantengo la cantidad con *en* (*j'en ai deux*).",
+    "Uso pronombres de persona en lugar de *y* y *en*.",
+    "Entiendo *on y va, ça y est, j'en ai marre…*"
+  ],
+  "challenge": {
+    "title": "¿Has estado allí?",
+    "text": "Responde en voz alta con *y*: *Tu es déjà allé(e) en France ? Au Mexique ? À la montagne ce mois-ci ?* (*Oui, j'y suis allé(e) l'année dernière. / Non, je n'y suis jamais allé(e).*). Luego, con *en*: ¿cuántos hermanos, idiomas y mascotas tienes?"
+  }
+}

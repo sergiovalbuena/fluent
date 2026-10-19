@@ -1,0 +1,489 @@
+{
+  "slug": "verbos-regulares",
+  "number": 5,
+  "part": 2,
+  "title": "Regular verbs in the present",
+  "tagline": "The -er, -ir and -re groups, and why four forms sound the same.",
+  "goal": "Conjugate any regular -er, -ir (like finir) and -re (like vendre) verb in the present and know which forms sound the same.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "receta",
+      "title": "Stem + ending",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English verbs barely change (I speak, he speak**s**). French verbs have a different ending for almost every person, but regular verbs follow a simple recipe:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Take the infinitive: *parler* (to speak).",
+            "Remove the ending (-er, -ir, -re) to get the **stem**: *parl-*.",
+            "Add the ending for each person: *je parl{e}*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "This works for thousands of verbs. You can look up any verb in the **Verbs** section."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "The French present covers both «I speak» and «I'm speaking»: *je parle* means either. There's no separate -ing form."
+        }
+      ]
+    },
+    {
+      "id": "er",
+      "title": "-er verbs",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "About 90 % of French verbs belong here."
+        },
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "parler",
+              "meaning": "to speak",
+              "forms": [
+                "je parl{e}",
+                "tu parl{es}",
+                "il parl{e}",
+                "nous parl{ons}",
+                "vous parl{ez}",
+                "ils parl{ent}"
+              ],
+              "notes": [
+                "**-e**",
+                "**-es**",
+                "**-e**",
+                "**-ons**",
+                "**-ez**",
+                "**-ent**"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**To start with:** *aimer* (to love, to like), *manger* (to eat), *regarder* (to watch), *écouter* (to listen), *habiter* (to live), *travailler* (to work), *jouer* (to play), *étudier* (to study)."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*aller* (to go) ends in -er but is irregular: *je vais, tu vas…* See [[9]]."
+        }
+      ]
+    },
+    {
+      "id": "sonido",
+      "title": "Four forms, one sound",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In -er verbs, **je, tu, il and ils sound exactly the same**:"
+        },
+        {
+          "type": "formula",
+          "text": "je parle = tu parles = il parle = ils parlent",
+          "caption": "All are pronounced «parl»."
+        },
+        {
+          "type": "text",
+          "text": "The endings *-e*, *-es* and *-ent* are **silent**. Only *nous parlons* («par-lohn») and *vous parlez* («par-lay») sound different."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "A classic mistake: pronouncing the *-ent* of *ils parlent*. It is never pronounced."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "When writing, the sound won't help you: the subject decides the ending."
+        }
+      ]
+    },
+    {
+      "id": "ir",
+      "title": "-ir verbs like finir",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "You can spot them by the **-iss-** in the plural."
+        },
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "finir",
+              "meaning": "to finish",
+              "forms": [
+                "je fin{is}",
+                "tu fin{is}",
+                "il fin{it}",
+                "nous fin{issons}",
+                "vous fin{issez}",
+                "ils fin{issent}"
+              ],
+              "notes": [
+                "**-is**",
+                "**-is**",
+                "**-it**",
+                "**-issons**",
+                "**-issez**",
+                "**-issent**"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Same group:** *choisir* (to choose), *réussir* (to succeed, to pass), *grandir* (to grow up), *remplir* (to fill), *réfléchir* (to think, to reflect), *obéir* (to obey)."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Not every -ir verb follows this model: *partir, dormir, sortir* are irregular (*je pars, nous partons*). The *-iss-* is the giveaway."
+        }
+      ]
+    },
+    {
+      "id": "re",
+      "title": "-re verbs like vendre",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "vendre",
+              "meaning": "to sell",
+              "forms": [
+                "je vend{s}",
+                "tu vend{s}",
+                "il vend",
+                "nous vend{ons}",
+                "vous vend{ez}",
+                "ils vend{ent}"
+              ],
+              "notes": [
+                "**-s**",
+                "**-s**",
+                "— (nothing)",
+                "**-ons**",
+                "**-ez**",
+                "**-ent**"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Same group:** *attendre* (to wait), *répondre* (to answer), *entendre* (to hear), *perdre* (to lose), *descendre* (to go down)."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "In the singular the d is silent (*je vends* = «vahn», nasal); in the plural you hear it: *ils vendent* = «vahnd»."
+        }
+      ]
+    },
+    {
+      "id": "ortografia",
+      "title": "Spelling adjustments",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Some -er verbs change with *nous* to keep their soft sound:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**-ger → nous -geons**: *manger → nous mang{e}ons*, *voyager → nous voyag{e}ons*.",
+            "**-cer → nous -çons**: *commencer → nous commen{ç}ons*."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "And elision: *je* + *aime* = *j'aime*; *je* + *écoute* = *j'écoute*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "suena",
+      "title": "Same sound?",
+      "instructions": "Are the two forms pronounced the same?",
+      "kind": "choice",
+      "options": [
+        "Same",
+        "Different"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "je parle / ils parlent",
+          "answer": "Same"
+        },
+        {
+          "prompt": "tu chantes / vous chantez",
+          "answer": "Different"
+        },
+        {
+          "prompt": "il aime / tu aimes",
+          "answer": "Same"
+        },
+        {
+          "prompt": "je vends / ils vendent",
+          "answer": "Different",
+          "explain": "You hear the d in *vendent*."
+        },
+        {
+          "prompt": "il finit / ils finissent",
+          "answer": "Different"
+        },
+        {
+          "prompt": "je regarde / il regarde",
+          "answer": "Same"
+        }
+      ],
+      "section": "sonido"
+    },
+    {
+      "id": "conjuga",
+      "title": "Conjugate in the present",
+      "instructions": "Write the correct form.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Je ___ français. (parler)",
+          "answer": "parle"
+        },
+        {
+          "prompt": "Nous ___ à huit heures. (commencer)",
+          "answer": "commençons"
+        },
+        {
+          "prompt": "Tu ___ le menu ? (choisir)",
+          "answer": "choisis"
+        },
+        {
+          "prompt": "Il ___ le bus. (attendre)",
+          "answer": "attend"
+        },
+        {
+          "prompt": "Vous ___ à Lyon ? (habiter)",
+          "answer": "habitez"
+        },
+        {
+          "prompt": "Elles ___ leur travail à six heures. (finir)",
+          "answer": "finissent"
+        },
+        {
+          "prompt": "Nous ___ au restaurant. (manger)",
+          "answer": "mangeons"
+        },
+        {
+          "prompt": "Je ___ ma voiture. (vendre)",
+          "answer": "vends"
+        },
+        {
+          "prompt": "Ils ___ à la question. (répondre)",
+          "answer": "répondent"
+        },
+        {
+          "prompt": "Elle ___ toujours ses examens. (réussir)",
+          "answer": "réussit"
+        },
+        {
+          "prompt": "Vous ___ souvent vos clés ? (perdre)",
+          "answer": "perdez"
+        },
+        {
+          "prompt": "J'___ de la musique. (écouter)",
+          "answer": "écoute"
+        }
+      ],
+      "section": "re"
+    },
+    {
+      "id": "pronombre",
+      "title": "Which pronoun?",
+      "instructions": "Choose the pronoun that matches the form.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "___ finissons",
+          "options": [
+            "je",
+            "nous",
+            "vous",
+            "ils"
+          ],
+          "answer": "nous"
+        },
+        {
+          "prompt": "___ vendez",
+          "options": [
+            "tu",
+            "il",
+            "vous",
+            "elles"
+          ],
+          "answer": "vous"
+        },
+        {
+          "prompt": "___ choisit",
+          "options": [
+            "je",
+            "tu",
+            "elle",
+            "ils"
+          ],
+          "answer": "elle"
+        },
+        {
+          "prompt": "___ parlent",
+          "options": [
+            "il",
+            "nous",
+            "vous",
+            "elles"
+          ],
+          "answer": "elles"
+        },
+        {
+          "prompt": "___ attends",
+          "options": [
+            "tu",
+            "il",
+            "nous",
+            "ils"
+          ],
+          "answer": "tu"
+        },
+        {
+          "prompt": "___ répondons",
+          "options": [
+            "je",
+            "nous",
+            "vous",
+            "ils"
+          ],
+          "answer": "nous"
+        }
+      ],
+      "section": "re"
+    },
+    {
+      "id": "sujeto",
+      "title": "Change the subject",
+      "instructions": "Rewrite the sentence with the new subject.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je parle français. → Nous…",
+          "answer": "Nous parlons français."
+        },
+        {
+          "prompt": "Tu finis ton travail. → Vous…",
+          "answer": "Vous finissez votre travail."
+        },
+        {
+          "prompt": "Il attend le bus. → Ils…",
+          "answer": "Ils attendent le bus."
+        },
+        {
+          "prompt": "Nous mangeons une pizza. → Je…",
+          "answer": "Je mange une pizza."
+        },
+        {
+          "prompt": "Elle choisit une robe. → Elles…",
+          "answer": "Elles choisissent une robe."
+        },
+        {
+          "prompt": "Vous vendez des fleurs. → Tu…",
+          "answer": "Tu vends des fleurs."
+        }
+      ],
+      "section": "ortografia"
+    },
+    {
+      "id": "sabado",
+      "title": "An ordinary Saturday",
+      "instructions": "Complete the text with the verb in the present.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Le samedi, nous ___ au marché. (déjeuner)",
+          "answer": "déjeunons"
+        },
+        {
+          "prompt": "Mon frère ___ au tennis. (jouer)",
+          "answer": "joue"
+        },
+        {
+          "prompt": "Ma sœur ___ un film. (choisir)",
+          "answer": "choisit"
+        },
+        {
+          "prompt": "Mes parents ___ leurs amis. (attendre)",
+          "answer": "attendent"
+        },
+        {
+          "prompt": "Moi, j'___ un podcast. (écouter)",
+          "answer": "écoute"
+        },
+        {
+          "prompt": "Le soir, nous ___ la journée au restaurant. (finir)",
+          "answer": "finissons"
+        },
+        {
+          "prompt": "Et vous, vous ___ le samedi ? (aimer)",
+          "answer": "aimez"
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "I can conjugate -er verbs.",
+    "I know which forms sound the same.",
+    "I don't pronounce the final *-ent*.",
+    "I can conjugate -ir verbs like *finir*.",
+    "I can conjugate -re verbs like *vendre*."
+  ],
+  "challenge": {
+    "title": "Your week in the present",
+    "text": "Write six sentences about your week with six different verbs: two -er, two -ir like *finir* and two -re. Read them aloud, making sure the *-ent* stays silent."
+  }
+}

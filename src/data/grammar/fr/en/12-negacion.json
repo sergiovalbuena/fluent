@@ -1,0 +1,460 @@
+{
+  "slug": "negacion",
+  "number": 12,
+  "part": 3,
+  "title": "Negation",
+  "tagline": "Ne… pas and its family, where each part goes, ne… que and the answer si.",
+  "goal": "Say never, no longer, nothing, nobody, not yet and only; make negatives in the present, past and future, and answer si to a negative question.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "basica",
+      "title": "Ne… pas",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English uses «not» with a helper («don't», «isn't»). French has no helper but uses **two pieces** around the conjugated verb:"
+        },
+        {
+          "type": "formula",
+          "text": "ne + verb + pas",
+          "caption": "*Je {ne} parle {pas} chinois.* (I don't speak Chinese.)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Before a vowel or silent h, *ne* → *n'*: *Je n'aime pas les araignées.*",
+            "In the negative, *un, une, du, de la, des* → *de, d'*: *Je n'ai pas de voiture.* [[6]]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "familia",
+      "title": "The other negatives",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "They all work the same way: only the second piece changes."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Negative",
+            "Meaning",
+            "Example",
+            "Opposite"
+          ],
+          "rows": [
+            [
+              "*ne… pas*",
+              "not",
+              "*Je ne danse pas.*",
+              "—"
+            ],
+            [
+              "*ne… jamais*",
+              "never",
+              "*Il ne mange jamais de légumes.*",
+              "*toujours, souvent*"
+            ],
+            [
+              "*ne… plus*",
+              "no longer, not anymore",
+              "*Je n'habite plus à Londres.*",
+              "*encore, toujours*"
+            ],
+            [
+              "*ne… rien*",
+              "nothing",
+              "*Elle ne voit rien.*",
+              "*quelque chose*"
+            ],
+            [
+              "*ne… personne*",
+              "nobody",
+              "*Je ne connais personne.*",
+              "*quelqu'un*"
+            ],
+            [
+              "*ne… pas encore*",
+              "not yet",
+              "*Il n'est pas encore là.*",
+              "*déjà*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "In the negative, *plus* doesn't mean «more» but **«no longer»**: *Je ne mange plus de viande* = I don't eat meat anymore."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*personne* and *rien* already contain the negative: «I don't know anybody» is *Je ne connais personne*, with no *pas*."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Where each piece goes",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situation",
+            "Rule",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Present**",
+              "ne + verb + pas",
+              "*Je ne mange pas.*"
+            ],
+            [
+              "**Passé composé**",
+              "ne + auxiliary + pas + participle",
+              "*Je n'ai pas mangé. · Il n'a rien dit.*"
+            ],
+            [
+              "… except *personne*",
+              "*personne* goes **after** the participle",
+              "*Je n'ai vu personne.*"
+            ],
+            [
+              "**Near future**",
+              "ne + aller + pas + infinitive",
+              "*Je ne vais pas manger.*"
+            ],
+            [
+              "**Infinitive**",
+              "*ne pas* together, in front",
+              "*Attention à ne pas tomber.*"
+            ],
+            [
+              "**With pronouns**",
+              "the pronoun stays next to the verb",
+              "*Je ne le vois pas.*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sujeto",
+      "title": "Rien and personne as the subject",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "They can also start the sentence. Then *ne* comes right after, and never *pas*:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Personne ne comprend.",
+              "tr": "Nobody understands."
+            },
+            {
+              "fr": "Rien n'est impossible.",
+              "tr": "Nothing is impossible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ne-que",
+      "title": "Ne… que: only",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "It looks negative but it isn't: *ne… que* means **only**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je n'ai que deux euros.",
+              "tr": "I only have two euros."
+            },
+            {
+              "fr": "Il ne mange que des pâtes.",
+              "tr": "He only eats pasta."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Since it isn't a real negative, articles **don't** change to *de*: *Il ne mange que {des} pâtes.*"
+        }
+      ]
+    },
+    {
+      "id": "si",
+      "title": "Si: yes, to a negative question",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Question",
+            "Answering yes"
+          ],
+          "rows": [
+            [
+              "*Tu aimes le chocolat ?* (positive)",
+              "*Oui, j'adore !*"
+            ],
+            [
+              "*Tu n'aimes pas le chocolat ?* (negative)",
+              "*Si, j'adore !*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*si* is like «yes I do!» or «of course I do!» when someone assumed the opposite."
+        }
+      ]
+    },
+    {
+      "id": "oral",
+      "title": "In conversation",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In informal spoken French, the *ne* almost always disappears:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je sais pas.",
+              "tr": "I don't know.",
+              "note": "Sounds like «shay pa»"
+            },
+            {
+              "fr": "C'est pas grave.",
+              "tr": "No big deal."
+            },
+            {
+              "fr": "J'ai rien fait.",
+              "tr": "I didn't do anything."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Understand it when you hear it, but always write the *ne*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "responde",
+      "title": "Say no",
+      "instructions": "Answer in the negative with the negation given.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Tu veux sortir ? (ne… pas)",
+          "answer": "Non, je ne veux pas sortir."
+        },
+        {
+          "prompt": "Tu manges souvent du poisson ? (ne… jamais)",
+          "answer": "Non, je ne mange jamais de poisson."
+        },
+        {
+          "prompt": "Tu habites encore à Paris ? (ne… plus)",
+          "answer": "Non, je n'habite plus à Paris."
+        },
+        {
+          "prompt": "Tu vois quelque chose ? (ne… rien)",
+          "answer": "Non, je ne vois rien."
+        },
+        {
+          "prompt": "Tu attends quelqu'un ? (ne… personne)",
+          "answer": "Non, je n'attends personne."
+        },
+        {
+          "prompt": "Tu as déjà mangé ? (ne… pas encore)",
+          "answer": "Non, je n'ai pas encore mangé."
+        }
+      ],
+      "section": "familia"
+    },
+    {
+      "id": "posicion",
+      "title": "Where does it go?",
+      "instructions": "Choose the correct sentence.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Je n'ai pas mangé.",
+            "Je n'ai mangé pas.",
+            "Je ne pas ai mangé."
+          ],
+          "answer": "Je n'ai pas mangé."
+        },
+        {
+          "options": [
+            "Je n'ai vu personne.",
+            "Je n'ai personne vu.",
+            "Je ne personne ai vu."
+          ],
+          "answer": "Je n'ai vu personne."
+        },
+        {
+          "options": [
+            "Il n'a rien dit.",
+            "Il n'a dit rien.",
+            "Il ne rien a dit."
+          ],
+          "answer": "Il n'a rien dit."
+        },
+        {
+          "options": [
+            "Je ne vais pas partir.",
+            "Je vais ne pas partir.",
+            "Je ne vais partir pas."
+          ],
+          "answer": "Je ne vais pas partir."
+        },
+        {
+          "options": [
+            "Je ne le vois pas.",
+            "Je le ne vois pas.",
+            "Je ne vois le pas."
+          ],
+          "answer": "Je ne le vois pas."
+        },
+        {
+          "options": [
+            "Personne ne vient.",
+            "Personne ne vient pas.",
+            "Personne vient pas."
+          ],
+          "answer": "Personne ne vient."
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "opuestos",
+      "title": "The opposite",
+      "instructions": "Turn the sentence into its negative opposite.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Il mange toujours des légumes.",
+          "answer": "Il ne mange jamais de légumes."
+        },
+        {
+          "prompt": "Je vois quelqu'un.",
+          "answer": "Je ne vois personne."
+        },
+        {
+          "prompt": "Elle veut quelque chose.",
+          "answer": "Elle ne veut rien."
+        },
+        {
+          "prompt": "Nous habitons encore à Paris.",
+          "answer": "Nous n'habitons plus à Paris."
+        },
+        {
+          "prompt": "J'ai vu quelqu'un.",
+          "answer": "Je n'ai vu personne."
+        },
+        {
+          "prompt": "Il a mangé quelque chose.",
+          "answer": "Il n'a rien mangé."
+        },
+        {
+          "prompt": "Quelqu'un comprend.",
+          "answer": "Personne ne comprend."
+        }
+      ],
+      "section": "sujeto"
+    },
+    {
+      "id": "ne-que",
+      "title": "Only: ne… que",
+      "instructions": "Rewrite the sentence with ne… que instead of seulement.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "J'ai seulement un frère.",
+          "answer": "Je n'ai qu'un frère."
+        },
+        {
+          "prompt": "Il mange seulement des pâtes.",
+          "answer": "Il ne mange que des pâtes."
+        },
+        {
+          "prompt": "Nous parlons seulement français.",
+          "answer": "Nous ne parlons que français."
+        },
+        {
+          "prompt": "Elle boit seulement de l'eau.",
+          "answer": "Elle ne boit que de l'eau."
+        }
+      ],
+      "section": "ne-que"
+    },
+    {
+      "id": "oui-si",
+      "title": "Oui or si?",
+      "instructions": "Answer yes.",
+      "kind": "choice",
+      "options": [
+        "Oui",
+        "Si"
+      ],
+      "items": [
+        {
+          "prompt": "Tu parles français ? — ___, je parle français.",
+          "answer": "Oui"
+        },
+        {
+          "prompt": "Tu ne parles pas français ? — ___, je parle français !",
+          "answer": "Si"
+        },
+        {
+          "prompt": "Il n'a pas faim ? — ___, il a très faim !",
+          "answer": "Si"
+        },
+        {
+          "prompt": "Vous aimez les crêpes ? — ___, beaucoup !",
+          "answer": "Oui"
+        },
+        {
+          "prompt": "Tu n'es pas venu hier ? — ___, je suis venu !",
+          "answer": "Si"
+        }
+      ],
+      "section": "si"
+    }
+  ],
+  "checklist": [
+    "I use *ne… pas, jamais, plus, rien, personne*.",
+    "I make negatives in the passé composé and the near future.",
+    "I change the article to *de* in the negative.",
+    "I use *ne… que* to say «only».",
+    "I answer *si* to a negative question."
+  ],
+  "challenge": {
+    "title": "True or false",
+    "text": "Write eight sentences about yourself using the six negatives and *ne… que*, some true and some false: *Je ne bois jamais de café. Je n'ai qu'une sœur…* Ask someone to guess which ones are false."
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "slug": "pronombres",
+  "number": 15,
+  "part": 4,
+  "title": "Object pronouns",
+  "tagline": "Le, la, les, lui, leur: where they go and how to choose. Plus moi, toi, lui…",
+  "goal": "Replace people and things with le, la, les, lui and leur, put them in the right place and use the stressed pronouns moi, toi, lui…",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "para-que",
+      "title": "What they're for",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "To avoid repeating yourself, like «it» or «them» in English. The big difference: in French the pronoun goes **before the verb**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "J'adore la pizza. Je la mange tous les jours.",
+              "tr": "I love pizza. I eat it every day. (literally «I it eat»)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "The pronouns *en* and *y* have their own module [[16]]."
+        }
+      ]
+    },
+    {
+      "id": "cod",
+      "title": "Direct object: le, la, les",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The **direct object** (COD) answers «what?» or «who?» and follows the verb **with no preposition**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Person",
+            "Pronoun",
+            "Example"
+          ],
+          "rows": [
+            [
+              "me",
+              "*me / m'*",
+              "*Il m'aime.*"
+            ],
+            [
+              "you (tu)",
+              "*te / t'*",
+              "*Je {te} vois.*"
+            ],
+            [
+              "him, it / her, it",
+              "*le / la / l'*",
+              "*Je {le} regarde. · Tu {la} connais.*"
+            ],
+            [
+              "us",
+              "*nous*",
+              "*Elle {nous} invite.*"
+            ],
+            [
+              "you (vous)",
+              "*vous*",
+              "*Je {vous} écoute.*"
+            ],
+            [
+              "them",
+              "*les*",
+              "*Il {les} mange.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*le* and *la* also mean «it», depending on the gender of the thing: *la pizza* → *je la mange*. Before a vowel or silent h, they become *l'*: *Je l'aime.*"
+        }
+      ]
+    },
+    {
+      "id": "coi",
+      "title": "Indirect object: lui, leur",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The **indirect object** (COI) is a person introduced by **à** (to): *parler à, téléphoner à, donner à, dire à, écrire à, répondre à*…"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Person",
+            "Pronoun",
+            "Example"
+          ],
+          "rows": [
+            [
+              "(to) me",
+              "*me / m'*",
+              "*Il {me} parle.*"
+            ],
+            [
+              "(to) you (tu)",
+              "*te / t'*",
+              "*Je {te} téléphone.*"
+            ],
+            [
+              "(to) him, (to) her",
+              "*lui*",
+              "*Je {lui} écris.*"
+            ],
+            [
+              "(to) us",
+              "*nous*",
+              "*Tu {nous} réponds.*"
+            ],
+            [
+              "(to) you (vous)",
+              "*vous*",
+              "*Je {vous} dis bonjour.*"
+            ],
+            [
+              "(to) them",
+              "*leur*",
+              "*Elle {leur} donne un cadeau.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*lui* means «to him» **and** «to her»: *Je parle à Marie* → *Je lui parle*."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Don't confuse the pronoun *leur* (never takes an s) with the possessive *leur / leurs* [[8]]: *Je leur parle* (I speak to them) vs *C'est leur maison* (It's their house)."
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "title": "Direct or indirect?",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Look at the **French** verb: does it take **à** before the person?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Is there à?",
+            "Type",
+            "Example",
+            "With a pronoun"
+          ],
+          "rows": [
+            [
+              "No",
+              "COD",
+              "*Je regarde Paul.*",
+              "*Je le regarde.*"
+            ],
+            [
+              "Yes",
+              "COI",
+              "*Je parle à Paul.*",
+              "*Je lui parle.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "English can mislead you",
+          "text": "Some verbs take a preposition in English but not in French: *écouter* (listen to), *attendre* (wait for), *regarder* (look at), *chercher* (look for) are direct: *J'attends le bus* → *Je l'attends*. And the reverse: «call someone» is *téléphoner à quelqu'un* → *Je lui téléphone*."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Where they go",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situation",
+            "Position",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Present**",
+              "before the verb",
+              "*Je la regarde.*"
+            ],
+            [
+              "**Negative**",
+              "between *ne* and the verb",
+              "*Je ne la regarde pas.*"
+            ],
+            [
+              "**Verb + infinitive**",
+              "before the infinitive",
+              "*Je vais la regarder. · Je veux lui parler.*"
+            ],
+            [
+              "**Passé composé**",
+              "before the auxiliary",
+              "*Je l'ai regardée. · Je lui ai parlé.*"
+            ],
+            [
+              "**Positive imperative**",
+              "after, with a hyphen",
+              "*Regarde-la ! · Parle-lui !*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Agreement with avoir",
+          "text": "In the *passé composé* with *avoir*, if the direct object comes **before**, the participle agrees with it: *J'ai mangé la pizza* → *Je l'ai mangée*. Not with the indirect object: *Je lui ai parlé*."
+        }
+      ]
+    },
+    {
+      "id": "tonicos",
+      "title": "Stressed pronouns",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "je",
+            "tu",
+            "il",
+            "elle",
+            "nous",
+            "vous",
+            "ils",
+            "elles"
+          ],
+          "rows": [
+            [
+              "*moi*",
+              "*toi*",
+              "*lui*",
+              "*elle*",
+              "*nous*",
+              "*vous*",
+              "*eux*",
+              "*elles*"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "For **emphasis**: *Moi, j'adore le fromage.* (Me, I love cheese.)",
+            "After a **preposition**: *avec toi, chez moi, pour eux, sans elle*.",
+            "In **short answers**: *Qui veut du café ? — Moi !*",
+            "With *aussi* and *non plus*: *Moi aussi* (me too) · *Moi non plus* (me neither).",
+            "After *c'est*: *C'est lui !* (It's him!)"
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cod-coi",
+      "title": "Le or lui?",
+      "instructions": "Replace Sophie with the right pronoun.",
+      "kind": "choice",
+      "options": [
+        "l'",
+        "la",
+        "lui"
+      ],
+      "items": [
+        {
+          "prompt": "J'aide Sophie. → Je ___ aide.",
+          "answer": "l'",
+          "explain": "*aider* takes no à: direct object."
+        },
+        {
+          "prompt": "Je donne un livre à Sophie. → Je ___ donne un livre.",
+          "answer": "lui"
+        },
+        {
+          "prompt": "J'écoute Sophie. → Je ___ écoute.",
+          "answer": "l'",
+          "explain": "«Listen to» but *écouter* takes no à."
+        },
+        {
+          "prompt": "Je réponds à Sophie. → Je ___ réponds.",
+          "answer": "lui"
+        },
+        {
+          "prompt": "J'appelle Sophie. → Je ___ appelle.",
+          "answer": "l'",
+          "explain": "*appeler* takes no à: direct object."
+        },
+        {
+          "prompt": "Je dis bonjour à Sophie. → Je ___ dis bonjour.",
+          "answer": "lui"
+        },
+        {
+          "prompt": "Je vois Sophie demain. → Je ___ vois demain.",
+          "answer": "la"
+        }
+      ],
+      "section": "test"
+    },
+    {
+      "id": "reemplaza",
+      "title": "No repeating",
+      "instructions": "Replace the highlighted part with a pronoun and write the sentence.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je regarde {la télé}.",
+          "answer": "Je la regarde."
+        },
+        {
+          "prompt": "Tu manges {le gâteau}.",
+          "answer": "Tu le manges."
+        },
+        {
+          "prompt": "Il aime {ses parents}.",
+          "answer": "Il les aime."
+        },
+        {
+          "prompt": "Nous parlons {à Marie}.",
+          "answer": "Nous lui parlons."
+        },
+        {
+          "prompt": "Elle téléphone {à ses amis}.",
+          "answer": "Elle leur téléphone."
+        },
+        {
+          "prompt": "J'écris {à mon frère}.",
+          "answer": "Je lui écris."
+        },
+        {
+          "prompt": "J'attends {le bus}.",
+          "answer": "Je l'attends."
+        },
+        {
+          "prompt": "Je vais voir {le film}.",
+          "answer": "Je vais le voir."
+        },
+        {
+          "prompt": "Je ne connais pas {ta sœur}.",
+          "answer": "Je ne la connais pas."
+        },
+        {
+          "prompt": "J'ai mangé {la pizza}.",
+          "answer": "Je l'ai mangée.",
+          "explain": "The direct object comes first: *mangée* agrees with *la pizza*."
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "posicion",
+      "title": "Where does it go?",
+      "instructions": "Choose the correct sentence.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Je vais le voir.",
+            "Je le vais voir.",
+            "Je vais voir le."
+          ],
+          "answer": "Je vais le voir."
+        },
+        {
+          "options": [
+            "Je ne la connais pas.",
+            "Je la ne connais pas.",
+            "Je ne connais la pas."
+          ],
+          "answer": "Je ne la connais pas."
+        },
+        {
+          "options": [
+            "Je lui ai parlé.",
+            "J'ai lui parlé.",
+            "J'ai parlé lui."
+          ],
+          "answer": "Je lui ai parlé."
+        },
+        {
+          "options": [
+            "Regarde-la !",
+            "La regarde !",
+            "Regarde la !"
+          ],
+          "answer": "Regarde-la !"
+        },
+        {
+          "options": [
+            "Je veux leur écrire.",
+            "Je leur veux écrire.",
+            "Je veux écrire leur."
+          ],
+          "answer": "Je veux leur écrire."
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "tonicos",
+      "title": "Me too, me neither",
+      "instructions": "React to each sentence.",
+      "kind": "choice",
+      "options": [
+        "Moi aussi !",
+        "Moi non plus !",
+        "Pas moi !",
+        "Moi, si !"
+      ],
+      "items": [
+        {
+          "prompt": "J'adore les vacances. (you do too)",
+          "answer": "Moi aussi !"
+        },
+        {
+          "prompt": "Je n'aime pas le lundi. (you don't either)",
+          "answer": "Moi non plus !"
+        },
+        {
+          "prompt": "J'ai peur des araignées. (you're not)",
+          "answer": "Pas moi !"
+        },
+        {
+          "prompt": "Je ne parle pas japonais. (you do)",
+          "answer": "Moi, si !"
+        }
+      ],
+      "section": "tonicos"
+    },
+    {
+      "id": "mensajes",
+      "title": "Messages",
+      "instructions": "Complete Léa and Tom's conversation.",
+      "kind": "choice",
+      "options": [
+        "l'",
+        "le",
+        "lui",
+        "leur",
+        "nous"
+      ],
+      "items": [
+        {
+          "prompt": "Tu as vu le nouveau film d'Ozon ? — Non, je ne ___ ai pas encore vu.",
+          "answer": "l'"
+        },
+        {
+          "prompt": "Tu ___ recommandes ?",
+          "answer": "le"
+        },
+        {
+          "prompt": "Tu connais Hugo, mon cousin ? — Oui, je ___ connais.",
+          "answer": "le"
+        },
+        {
+          "prompt": "On va au cinéma avec ___ samedi. (Hugo)",
+          "answer": "lui"
+        },
+        {
+          "prompt": "Tu viens avec ___ ? (Léa and Hugo)",
+          "answer": "nous"
+        },
+        {
+          "prompt": "Et tes sœurs ? Tu ___ as parlé ?",
+          "answer": "leur"
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "I use *le, la, l', les* (direct object).",
+    "I use *lui, leur* (indirect object).",
+    "I check whether the French verb takes *à*.",
+    "I place the pronoun correctly in negatives, the future and the past.",
+    "I use *moi, toi, lui, eux…*"
+  ],
+  "challenge": {
+    "title": "Rewrite without repeating",
+    "text": "Write five sentences about people around you and what you do with them, then rewrite them with pronouns: *J'appelle ma mère le dimanche → Je l'appelle le dimanche. Je parle à mes collègues → Je leur parle.*"
+  }
+}

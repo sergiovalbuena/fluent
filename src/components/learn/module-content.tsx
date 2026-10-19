@@ -7,11 +7,13 @@ import {
   BookOpen, MessageSquare, HelpCircle,
   BookMarked,
   PlayCircle, Layers, Star, Crown, Lock, ChevronRight,
-  GraduationCap, Lightbulb, Volume2, FileText, ListOrdered, Languages, Gem, PencilRuler,
+  GraduationCap, Lightbulb, Volume2, FileText, ListOrdered, Languages, PencilRuler,
 } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { speak } from '@/lib/languages'
+import { RewardChips } from '@/components/practice/reward-chips'
+import { grammarLinkFor } from '@/lib/grammar'
 import { HINT_AREA, SectionTitle, TitleHintProvider } from '@/components/lesson/title-hint'
 import { useTitleHintSettings } from '@/lib/title-hints'
 import type { SectionTitleKey } from '@/lib/section-titles'
@@ -201,23 +203,6 @@ function CoreCard({ href, icon: Icon, variant, titleKey, total, countKey, master
  */
 type Rewards = { stars?: number; xp?: number; gems?: number }
 
-/** "+15 XP" and gem chips, in the topbar's gem color */
-function RewardChips({ xp, gems }: Rewards) {
-  if (!xp && !gems) return null
-  return (
-    <span className="flex items-center gap-1.5">
-      {xp ? (
-        <span className="rounded-md bg-primary/10 px-1.5 py-0.5 text-[10px] font-bold tabular-nums text-primary">+{xp} XP</span>
-      ) : null}
-      {gems ? (
-        <span className="flex items-center gap-0.5 rounded-md bg-sky-500/10 px-1.5 py-0.5 text-[10px] font-bold tabular-nums text-sky-600 dark:text-sky-400">
-          <Gem size={10} />+{gems}
-        </span>
-      ) : null}
-    </span>
-  )
-}
-
 const bentoCard: Variants = {
   initial: { opacity: 0, y: 24, scale: 0.97 },
   animate: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring', stiffness: 260, damping: 26 } },
@@ -347,7 +332,7 @@ function BentoTile({ group, icon, iconClass, title, sublabel, rewards, art, clas
             <span className="block text-sm font-bold leading-tight text-slate-900 dark:text-white">{title}</span>
             <span className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
               <span className="text-xs text-slate-500 dark:text-slate-400">{sublabel}</span>
-              {rewards && <RewardChips {...rewards} />}
+              {rewards && <RewardChips xp={rewards.xp} gems={rewards.gems} />}
             </span>
           </span>
         </div>
@@ -597,6 +582,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
 
   // Section titles (Grammar, Tips) follow the lesson's title-hint setting
   const uiLocale = useLocale()
+  const tGrammar = useTranslations('grammar')
   const titleHints = useTitleHintSettings()
   const titleHintSettings = {
     lang: languageCode ?? 'en',
@@ -805,9 +791,23 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
               }
             >
               <ul className="divide-y divide-black/[0.04] dark:divide-white/[0.05] pb-2">
-                {grammarItems.map((g, i) => (
+                {grammarItems.map((g, i) => {
+                  // Basic structures link to their theory in /grammar
+                  const theory = languageCode === 'fr' ? grammarLinkFor(g.structure) : null
+                  return (
                   <li key={i} className="px-5 py-3">
-                    <p className="text-sm font-semibold text-slate-900 dark:text-white">{g.label}</p>
+                    <p className="flex items-baseline justify-between gap-3 text-sm font-semibold text-slate-900 dark:text-white">
+                      {g.label}
+                      {theory && (
+                        <Link
+                          href={`/grammar/${theory.slug}`}
+                          title={tGrammar('theory_title', { n: theory.number })}
+                          className="shrink-0 text-[11px] font-bold text-indigo-500 hover:text-indigo-700 hover:underline dark:hover:text-indigo-300"
+                        >
+                          {tGrammar('theory')} · {theory.number}
+                        </Link>
+                      )}
+                    </p>
                     <p className="text-[11px] text-indigo-500 mt-0.5">{g.structure}</p>
                     <button
                       type="button"
@@ -818,7 +818,8 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
                       {g.example}
                     </button>
                   </li>
-                ))}
+                  )
+                })}
               </ul>
             </BentoDialogCard>
           )}

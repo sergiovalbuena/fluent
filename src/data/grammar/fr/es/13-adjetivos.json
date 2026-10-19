@@ -1,0 +1,648 @@
+{
+  "slug": "adjetivos",
+  "number": 13,
+  "part": 3,
+  "title": "Los adjetivos",
+  "tagline": "Plural, posición, bel, nouvel, vieil, adjetivos que cambian de sentido y comparativos.",
+  "goal": "Poner los adjetivos en plural, saber si van antes o después del sustantivo, usar bel, nouvel y vieil, entender los que cambian de sentido según su posición y comparar.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "femenino",
+      "title": "Repaso: el femenino",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El adjetivo concuerda con el sustantivo [[2]]: *un pull noir* → *une robe noire*. Y los irregulares: *beau → belle, vieux → vieille, blanc → blanche, heureux → heureuse*."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "El plural",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Regla",
+            "Singular → plural"
+          ],
+          "rows": [
+            [
+              "General: **+ s**",
+              "*petit → petits · petite → petites*"
+            ],
+            [
+              "Termina en **-s o -x**: no cambia",
+              "*français → français · heureux → heureux*"
+            ],
+            [
+              "**-eau → -eaux**",
+              "*beau → beaux · nouveau → nouveaux*"
+            ],
+            [
+              "**-al → -aux**",
+              "*normal → normaux · génial → géniaux*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "La -s y la -x del plural casi nunca se pronuncian; solo se ven al escribir. En femenino, *-ale* hace *-ales*: *des idées géniales*."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "¿Antes o después?",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "**Regla general:** como en español, el adjetivo va **después** del sustantivo: *une voiture rouge, un livre intéressant*."
+        },
+        {
+          "type": "text",
+          "text": "Pero un grupo de adjetivos cortos y muy frecuentes va **antes**. Se agrupan en cuatro ideas:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Idea",
+            "Adjetivos",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Belleza",
+              "*beau, joli*",
+              "*une jolie maison*"
+            ],
+            [
+              "Edad",
+              "*jeune, vieux, nouveau*",
+              "*un vieux quartier*"
+            ],
+            [
+              "Valor",
+              "*bon, mauvais, gentil*",
+              "*un bon restaurant*"
+            ],
+            [
+              "Tamaño",
+              "*grand, petit, gros, long*",
+              "*une petite ville*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Si describe cómo se ve algo, su edad, si es bueno o malo, o su tamaño, probablemente va delante. También los ordinales: *le premier jour, la deuxième fois*."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Cuando un adjetivo plural va delante, en el francés cuidado *des* se vuelve *de*: *de beaux châteaux, de bonnes idées*."
+        }
+      ]
+    },
+    {
+      "id": "bel",
+      "title": "Bel, nouvel, vieil",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Delante de un sustantivo **masculino singular que empieza por vocal o h muda**, tres adjetivos cambian de forma:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Normal",
+            "Ante vocal",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "*beau*",
+              "*bel*",
+              "*un {bel} homme, un {bel} appartement*"
+            ],
+            [
+              "*nouveau*",
+              "*nouvel*",
+              "*un {nouvel} ordinateur*"
+            ],
+            [
+              "*vieux*",
+              "*vieil*",
+              "*un {vieil} ami*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Es la misma razón que *cet* [[3]] y *mon amie* [[8]]: evitar el choque de vocales."
+        }
+      ]
+    },
+    {
+      "id": "sentido",
+      "title": "Adjetivos que cambian de sentido",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Algunos adjetivos **cambian de significado** según su posición, como en español «un gran hombre» y «un hombre grande»:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Antes del sustantivo",
+            "Después del sustantivo"
+          ],
+          "rows": [
+            [
+              "*un grand homme*: un gran hombre (importante)",
+              "*un homme grand*: un hombre alto"
+            ],
+            [
+              "*mon ancien professeur*: mi exprofesor",
+              "*une maison ancienne*: una casa antigua"
+            ],
+            [
+              "*un pauvre homme*: un pobre hombre (digno de lástima)",
+              "*un homme pauvre*: un hombre sin dinero"
+            ],
+            [
+              "*ma propre chambre*: mi propia habitación",
+              "*une chambre propre*: una habitación limpia"
+            ],
+            [
+              "*un cher ami*: un querido amigo",
+              "*un sac cher*: un bolso caro"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colores",
+      "title": "Los colores",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Masculino",
+            "Femenino"
+          ],
+          "rows": [
+            [
+              "*blanc*",
+              "*blanche*"
+            ],
+            [
+              "*noir*",
+              "*noire*"
+            ],
+            [
+              "*vert*",
+              "*verte*"
+            ],
+            [
+              "*bleu*",
+              "*bleue*"
+            ],
+            [
+              "*gris*",
+              "*grise*"
+            ],
+            [
+              "*violet*",
+              "*violette*"
+            ],
+            [
+              "*rouge, jaune, rose*",
+              "igual (ya terminan en -e)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Los colores que vienen del nombre de una cosa (una fruta, una piedra…) son **invariables**: no cambian en femenino ni en plural. *des chaussures orange · des yeux marron*. *rose* es la excepción: sí concuerda (*des fleurs roses*)."
+        }
+      ]
+    },
+    {
+      "id": "comparar",
+      "title": "Comparar",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Comparación",
+            "Estructura",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Superioridad",
+              "*plus* + adjetivo + *que*",
+              "*Le train est {plus} rapide {que} le bus.*"
+            ],
+            [
+              "Inferioridad",
+              "*moins* + adjetivo + *que*",
+              "*Le bus est {moins} rapide {que} le train.*"
+            ],
+            [
+              "Igualdad",
+              "*aussi* + adjetivo + *que*",
+              "*Paul est {aussi} grand {que} Marie.*"
+            ],
+            [
+              "Superlativo",
+              "*le / la / les plus* + adjetivo",
+              "*C'est {la plus} belle ville du monde.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Bon → meilleur",
+          "text": "Nunca «plus bon»: *Ce vin est meilleur que l'autre. · C'est le meilleur restaurant du quartier.*"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "plural",
+      "title": "Al plural",
+      "instructions": "Escribe el adjetivo en plural.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "un collègue gentil → des collègues ___",
+          "answer": "gentils"
+        },
+        {
+          "prompt": "un beau château → de ___ châteaux",
+          "answer": "beaux"
+        },
+        {
+          "prompt": "un résultat normal → des résultats ___",
+          "answer": "normaux"
+        },
+        {
+          "prompt": "un client heureux → des clients ___",
+          "answer": "heureux"
+        },
+        {
+          "prompt": "une idée géniale → des idées ___",
+          "answer": "géniales"
+        },
+        {
+          "prompt": "un pull marron → des pulls ___",
+          "answer": "marron",
+          "explain": "*marron* es invariable."
+        },
+        {
+          "prompt": "un nouveau projet → de ___ projets",
+          "answer": "nouveaux"
+        }
+      ],
+      "section": "plural"
+    },
+    {
+      "id": "orden",
+      "title": "Ordena las palabras",
+      "instructions": "Forma el grupo correcto. Ojo con la posición y con bel, nouvel, vieil.",
+      "kind": "order",
+      "speak": "answer",
+      "items": [
+        {
+          "words": [
+            "une",
+            "petite",
+            "maison"
+          ],
+          "answer": "une petite maison"
+        },
+        {
+          "words": [
+            "un",
+            "chat",
+            "noir"
+          ],
+          "answer": "un chat noir"
+        },
+        {
+          "words": [
+            "un",
+            "livre",
+            "intéressant"
+          ],
+          "answer": "un livre intéressant"
+        },
+        {
+          "words": [
+            "un",
+            "vieil",
+            "homme"
+          ],
+          "answer": "un vieil homme"
+        },
+        {
+          "words": [
+            "le",
+            "premier",
+            "jour"
+          ],
+          "answer": "le premier jour"
+        },
+        {
+          "words": [
+            "un",
+            "nouvel",
+            "appartement"
+          ],
+          "answer": "un nouvel appartement"
+        },
+        {
+          "words": [
+            "une",
+            "nouvelle",
+            "voiture",
+            "rouge"
+          ],
+          "answer": "une nouvelle voiture rouge"
+        },
+        {
+          "words": [
+            "un",
+            "bel",
+            "arbre"
+          ],
+          "answer": "un bel arbre"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "bel",
+      "title": "Beau o bel",
+      "instructions": "Elige la forma correcta.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "un ___ ami",
+          "options": [
+            "vieux",
+            "vieil",
+            "vieille"
+          ],
+          "answer": "vieil"
+        },
+        {
+          "prompt": "un ___ quartier",
+          "options": [
+            "beau",
+            "bel",
+            "belle"
+          ],
+          "answer": "beau"
+        },
+        {
+          "prompt": "un ___ hôtel",
+          "options": [
+            "nouveau",
+            "nouvel",
+            "nouvelle"
+          ],
+          "answer": "nouvel"
+        },
+        {
+          "prompt": "une ___ amie",
+          "options": [
+            "vieux",
+            "vieil",
+            "vieille"
+          ],
+          "answer": "vieille",
+          "explain": "Femenino: siempre *vieille*."
+        },
+        {
+          "prompt": "de ___ appartements",
+          "options": [
+            "beaux",
+            "bels",
+            "belles"
+          ],
+          "answer": "beaux",
+          "explain": "En plural no hay forma especial: *beaux*."
+        },
+        {
+          "prompt": "un ___ homme",
+          "options": [
+            "beau",
+            "bel",
+            "belle"
+          ],
+          "answer": "bel"
+        }
+      ],
+      "section": "bel"
+    },
+    {
+      "id": "sentido",
+      "title": "¿Antes o después?",
+      "instructions": "Elige la frase que corresponde al significado.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Mi exnovio",
+          "options": [
+            "mon ancien copain",
+            "mon copain ancien"
+          ],
+          "answer": "mon ancien copain"
+        },
+        {
+          "prompt": "Un castillo antiguo",
+          "options": [
+            "un ancien château",
+            "un château ancien"
+          ],
+          "answer": "un château ancien"
+        },
+        {
+          "prompt": "Un gran hombre (importante)",
+          "options": [
+            "un grand homme",
+            "un homme grand"
+          ],
+          "answer": "un grand homme"
+        },
+        {
+          "prompt": "Mi propia bicicleta",
+          "options": [
+            "mon propre vélo",
+            "mon vélo propre"
+          ],
+          "answer": "mon propre vélo"
+        },
+        {
+          "prompt": "Una cocina limpia",
+          "options": [
+            "une propre cuisine",
+            "une cuisine propre"
+          ],
+          "answer": "une cuisine propre"
+        },
+        {
+          "prompt": "Un bolso caro",
+          "options": [
+            "un cher sac",
+            "un sac cher"
+          ],
+          "answer": "un sac cher"
+        }
+      ],
+      "section": "sentido"
+    },
+    {
+      "id": "colores",
+      "title": "Los colores",
+      "instructions": "Elige la forma correcta del color.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "des chaussures ___",
+          "options": [
+            "orange",
+            "oranges"
+          ],
+          "answer": "orange"
+        },
+        {
+          "prompt": "une robe ___",
+          "options": [
+            "vert",
+            "verte"
+          ],
+          "answer": "verte"
+        },
+        {
+          "prompt": "des yeux ___",
+          "options": [
+            "marron",
+            "marrons"
+          ],
+          "answer": "marron"
+        },
+        {
+          "prompt": "une chemise ___",
+          "options": [
+            "blanc",
+            "blanche"
+          ],
+          "answer": "blanche"
+        },
+        {
+          "prompt": "des fleurs ___",
+          "options": [
+            "rose",
+            "roses"
+          ],
+          "answer": "roses"
+        },
+        {
+          "prompt": "une voiture ___",
+          "options": [
+            "violet",
+            "violette"
+          ],
+          "answer": "violette"
+        }
+      ],
+      "section": "colores"
+    },
+    {
+      "id": "comparar",
+      "title": "Compara",
+      "instructions": "Completa la comparación.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Un éléphant est ___ grand ___ une souris.",
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
+          "answer": "plus … que"
+        },
+        {
+          "prompt": "Le vélo est ___ rapide ___ l'avion.",
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
+          "answer": "moins … que"
+        },
+        {
+          "prompt": "Paul mesure 1,80 m et Marie aussi : Paul est ___ grand ___ Marie.",
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
+          "answer": "aussi … que"
+        },
+        {
+          "prompt": "Ce vin est ___ que l'autre.",
+          "options": [
+            "meilleur",
+            "plus bon",
+            "mieux"
+          ],
+          "answer": "meilleur"
+        },
+        {
+          "prompt": "C'est ___ pizza de la ville !",
+          "options": [
+            "la meilleure",
+            "la plus bonne",
+            "le meilleur"
+          ],
+          "answer": "la meilleure"
+        },
+        {
+          "prompt": "C'est ___ belle ville du monde.",
+          "options": [
+            "la plus",
+            "le plus",
+            "plus"
+          ],
+          "answer": "la plus"
+        }
+      ],
+      "section": "comparar"
+    }
+  ],
+  "checklist": [
+    "Pongo los adjetivos en plural (-s, -x, -aux).",
+    "Sé qué adjetivos van delante.",
+    "Uso *bel, nouvel, vieil*.",
+    "Conozco los adjetivos que cambian de sentido.",
+    "Comparo con *plus, moins, aussi* y *meilleur*."
+  ],
+  "challenge": {
+    "title": "Un anuncio",
+    "text": "Escribe un anuncio para vender o alquilar algo (un apartamento, una bicicleta, un sofá) con al menos ocho adjetivos, un comparativo y un superlativo: *À louer : un bel appartement lumineux, plus grand que…*"
+  }
+}

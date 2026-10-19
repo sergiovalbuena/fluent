@@ -1,0 +1,505 @@
+{
+  "slug": "pronombres",
+  "number": 15,
+  "part": 4,
+  "title": "Los pronombres de objeto",
+  "tagline": "Le, la, les, lui, leur: dónde van y cómo elegir. Y los tónicos moi, toi, lui…",
+  "goal": "Reemplazar personas y cosas con le, la, les, lui y leur, colocarlos en el lugar correcto y usar los pronombres tónicos moi, toi, lui…",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "para-que",
+      "title": "Para qué sirven",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Para no repetir. Funcionan casi igual que en español («la como todos los días»): el pronombre va **delante del verbo**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "J'adore la pizza. Je la mange tous les jours.",
+              "tr": "Me encanta la pizza. La como todos los días."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Los pronombres *en* e *y* están en [[16]]."
+        }
+      ]
+    },
+    {
+      "id": "cod",
+      "title": "Complemento directo: le, la, les",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El **complemento directo** (COD) responde a *¿qué?* o *¿a quién?* y va unido al verbo **sin preposición**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Persona",
+            "Pronombre",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "me",
+              "*me / m'*",
+              "*Il m'aime.*"
+            ],
+            [
+              "te",
+              "*te / t'*",
+              "*Je {te} vois.*"
+            ],
+            [
+              "lo, la",
+              "*le / la / l'*",
+              "*Je {le} regarde. · Tu {la} connais.*"
+            ],
+            [
+              "nos",
+              "*nous*",
+              "*Elle {nous} invite.*"
+            ],
+            [
+              "los (a ustedes), lo o la (a usted)",
+              "*vous*",
+              "*Je {vous} écoute.*"
+            ],
+            [
+              "los, las",
+              "*les*",
+              "*Il {les} mange.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Delante de vocal o h muda, *le* y *la* → *l'*: *Je l'aime.* El contexto dice si es «lo» o «la»."
+        }
+      ]
+    },
+    {
+      "id": "coi",
+      "title": "Complemento indirecto: lui, leur",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El **complemento indirecto** (COI) es una persona introducida por **à**: *parler à, téléphoner à, donner à, dire à, écrire à, répondre à*…"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Persona",
+            "Pronombre",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "me",
+              "*me / m'*",
+              "*Il {me} parle.*"
+            ],
+            [
+              "te",
+              "*te / t'*",
+              "*Je {te} téléphone.*"
+            ],
+            [
+              "le (a él, a ella)",
+              "*lui*",
+              "*Je {lui} écris.*"
+            ],
+            [
+              "nos",
+              "*nous*",
+              "*Tu {nous} réponds.*"
+            ],
+            [
+              "les (a ustedes), le (a usted)",
+              "*vous*",
+              "*Je {vous} dis bonjour.*"
+            ],
+            [
+              "les (a ellos, a ellas)",
+              "*leur*",
+              "*Elle {leur} donne un cadeau.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*lui* sirve para él **y** para ella, como el «le» español: *Je parle à Marie* → *Je lui parle*."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "No confundas el pronombre *leur* (nunca lleva s) con el posesivo *leur / leurs* [[8]]: *Je leur parle* frente a *C'est leur maison*."
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "title": "¿Directo o indirecto?",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Mira el verbo francés: ¿lleva **à** delante de la persona?"
+        },
+        {
+          "type": "table",
+          "head": [
+            "¿Hay à?",
+            "Tipo",
+            "Ejemplo",
+            "Con pronombre"
+          ],
+          "rows": [
+            [
+              "No",
+              "COD",
+              "*Je regarde Paul.*",
+              "*Je le regarde.*"
+            ],
+            [
+              "Sí",
+              "COI",
+              "*Je parle à Paul.*",
+              "*Je lui parle.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Trampa del español",
+          "text": "En español decimos «veo **a** Pedro», pero en francés *regarder, voir, aimer, écouter, attendre, aider* y *appeler* van **sin à**: *J'aide mon frère* → *Je l'aide*. Son COD."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Dónde se ponen",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situación",
+            "Posición",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Presente**",
+              "delante del verbo",
+              "*Je la regarde.*"
+            ],
+            [
+              "**Negación**",
+              "entre *ne* y el verbo",
+              "*Je ne la regarde pas.*"
+            ],
+            [
+              "**Verbo + infinitivo**",
+              "delante del infinitivo",
+              "*Je vais la regarder. · Je veux lui parler.*"
+            ],
+            [
+              "**Passé composé**",
+              "delante del auxiliar",
+              "*Je l'ai regardée. · Je lui ai parlé.*"
+            ],
+            [
+              "**Imperativo afirmativo**",
+              "detrás, con guion",
+              "*Regarde-la ! · Parle-lui !*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Concordancia con avoir",
+          "text": "En *passé composé* con *avoir*, si el COD va **antes**, el participio concuerda con él: *J'ai mangé la pizza* → *Je l'ai mangée*. Con el COI no ocurre: *Je lui ai parlé*."
+        }
+      ]
+    },
+    {
+      "id": "tonicos",
+      "title": "Los pronombres tónicos",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "je",
+            "tu",
+            "il",
+            "elle",
+            "nous",
+            "vous",
+            "ils",
+            "elles"
+          ],
+          "rows": [
+            [
+              "*moi*",
+              "*toi*",
+              "*lui*",
+              "*elle*",
+              "*nous*",
+              "*vous*",
+              "*eux*",
+              "*elles*"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Para **enfatizar**: *Moi, j'adore le fromage.*",
+            "Después de **preposición**: *avec toi, chez moi, pour eux, sans elle*.",
+            "En **respuestas cortas**: *Qui veut du café ? — Moi !*",
+            "Con *aussi* y *non plus*: *Moi aussi* (yo también) · *Moi non plus* (yo tampoco).",
+            "Después de *c'est*: *C'est lui !*"
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cod-coi",
+      "title": "¿Le o lui?",
+      "instructions": "Reemplaza a Sophie con el pronombre correcto.",
+      "kind": "choice",
+      "options": [
+        "l'",
+        "la",
+        "lui"
+      ],
+      "items": [
+        {
+          "prompt": "J'aide Sophie. → Je ___ aide.",
+          "answer": "l'",
+          "explain": "*aider* va sin à: COD."
+        },
+        {
+          "prompt": "Je donne un livre à Sophie. → Je ___ donne un livre.",
+          "answer": "lui"
+        },
+        {
+          "prompt": "J'écoute Sophie. → Je ___ écoute.",
+          "answer": "l'"
+        },
+        {
+          "prompt": "Je réponds à Sophie. → Je ___ réponds.",
+          "answer": "lui"
+        },
+        {
+          "prompt": "J'appelle Sophie. → Je ___ appelle.",
+          "answer": "l'",
+          "explain": "*appeler* va sin à: COD."
+        },
+        {
+          "prompt": "Je dis bonjour à Sophie. → Je ___ dis bonjour.",
+          "answer": "lui"
+        },
+        {
+          "prompt": "Je vois Sophie demain. → Je ___ vois demain.",
+          "answer": "la"
+        }
+      ],
+      "section": "test"
+    },
+    {
+      "id": "reemplaza",
+      "title": "Sin repetir",
+      "instructions": "Reemplaza la parte destacada por un pronombre y escribe la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je regarde {la télé}.",
+          "answer": "Je la regarde."
+        },
+        {
+          "prompt": "Tu manges {le gâteau}.",
+          "answer": "Tu le manges."
+        },
+        {
+          "prompt": "Il aime {ses parents}.",
+          "answer": "Il les aime."
+        },
+        {
+          "prompt": "Nous parlons {à Marie}.",
+          "answer": "Nous lui parlons."
+        },
+        {
+          "prompt": "Elle téléphone {à ses amis}.",
+          "answer": "Elle leur téléphone."
+        },
+        {
+          "prompt": "J'écris {à mon frère}.",
+          "answer": "Je lui écris."
+        },
+        {
+          "prompt": "J'attends {le bus}.",
+          "answer": "Je l'attends."
+        },
+        {
+          "prompt": "Je vais voir {le film}.",
+          "answer": "Je vais le voir."
+        },
+        {
+          "prompt": "Je ne connais pas {ta sœur}.",
+          "answer": "Je ne la connais pas."
+        },
+        {
+          "prompt": "J'ai mangé {la pizza}.",
+          "answer": "Je l'ai mangée.",
+          "explain": "El COD va antes: *mangée* concuerda con *la pizza*."
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "posicion",
+      "title": "¿Dónde va?",
+      "instructions": "Elige la frase correcta.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Je vais le voir.",
+            "Je le vais voir.",
+            "Je vais voir le."
+          ],
+          "answer": "Je vais le voir."
+        },
+        {
+          "options": [
+            "Je ne la connais pas.",
+            "Je la ne connais pas.",
+            "Je ne connais la pas."
+          ],
+          "answer": "Je ne la connais pas."
+        },
+        {
+          "options": [
+            "Je lui ai parlé.",
+            "J'ai lui parlé.",
+            "J'ai parlé lui."
+          ],
+          "answer": "Je lui ai parlé."
+        },
+        {
+          "options": [
+            "Regarde-la !",
+            "La regarde !",
+            "Regarde la !"
+          ],
+          "answer": "Regarde-la !"
+        },
+        {
+          "options": [
+            "Je veux leur écrire.",
+            "Je leur veux écrire.",
+            "Je veux écrire leur."
+          ],
+          "answer": "Je veux leur écrire."
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "tonicos",
+      "title": "Moi aussi, moi non plus",
+      "instructions": "Reacciona a cada frase.",
+      "kind": "choice",
+      "options": [
+        "Moi aussi !",
+        "Moi non plus !",
+        "Pas moi !",
+        "Moi, si !"
+      ],
+      "items": [
+        {
+          "prompt": "J'adore les vacances. (tú también)",
+          "answer": "Moi aussi !"
+        },
+        {
+          "prompt": "Je n'aime pas le lundi. (tú tampoco)",
+          "answer": "Moi non plus !"
+        },
+        {
+          "prompt": "J'ai peur des araignées. (tú no)",
+          "answer": "Pas moi !"
+        },
+        {
+          "prompt": "Je ne parle pas japonais. (tú sí)",
+          "answer": "Moi, si !"
+        }
+      ],
+      "section": "tonicos"
+    },
+    {
+      "id": "mensajes",
+      "title": "Mensajes",
+      "instructions": "Completa la conversación de Léa y Tom.",
+      "kind": "choice",
+      "options": [
+        "l'",
+        "le",
+        "lui",
+        "leur",
+        "nous"
+      ],
+      "items": [
+        {
+          "prompt": "Tu as vu le nouveau film d'Ozon ? — Non, je ne ___ ai pas encore vu.",
+          "answer": "l'"
+        },
+        {
+          "prompt": "Tu ___ recommandes ?",
+          "answer": "le"
+        },
+        {
+          "prompt": "Tu connais Hugo, mon cousin ? — Oui, je ___ connais.",
+          "answer": "le"
+        },
+        {
+          "prompt": "On va au cinéma avec ___ samedi. (Hugo)",
+          "answer": "lui"
+        },
+        {
+          "prompt": "Tu viens avec ___ ? (Léa y Hugo)",
+          "answer": "nous"
+        },
+        {
+          "prompt": "Et tes sœurs ? Tu ___ as parlé ?",
+          "answer": "leur"
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "Uso *le, la, l', les* (COD).",
+    "Uso *lui, leur* (COI).",
+    "Sé si un verbo lleva *à* o no.",
+    "Coloco el pronombre en negación, futuro y pasado.",
+    "Uso *moi, toi, lui, eux…*"
+  ],
+  "challenge": {
+    "title": "Reescribe sin repetir",
+    "text": "Escribe cinco frases sobre personas de tu entorno y lo que haces con ellas, y luego reescríbelas con pronombres: *J'appelle ma mère le dimanche → Je l'appelle le dimanche. Je parle à mes collègues → Je leur parle.*"
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "slug": "en-y",
+  "number": 16,
+  "part": 4,
+  "title": "En and y",
+  "tagline": "Two tiny pronouns English barely has: places, quantities and everyday expressions.",
+  "goal": "Use y for places and things introduced by à, use en for quantities and things introduced by de, place them in the sentence and understand expressions like on y va or j'en ai marre.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "por-que",
+      "title": "Why they're tricky",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "They're short, they go before the verb and English often leaves them out. But in French they're used **all the time**, and leaving them out sounds odd."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Tu vas au cinéma ? — Oui, j'y vais.",
+              "tr": "Are you going to the cinema? — Yes, I'm going (there)."
+            },
+            {
+              "fr": "Tu veux du gâteau ? — Oui, j'en veux.",
+              "tr": "Do you want some cake? — Yes, I want some."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y",
+      "title": "Y: places and things with à",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Replaces",
+            "Example",
+            "With y"
+          ],
+          "rows": [
+            [
+              "A **place** (*à, au, en, chez, dans, sur…*)",
+              "*Je vais à Paris.*",
+              "*J'{y} vais.*"
+            ],
+            [
+              "",
+              "*Il habite en France.*",
+              "*Il {y} habite.*"
+            ],
+            [
+              "",
+              "*Les clés sont dans le tiroir.*",
+              "*Les clés {y} sont.*"
+            ],
+            [
+              "A **thing** introduced by **à**",
+              "*Je pense à mon examen.*",
+              "*J'{y} pense.*"
+            ],
+            [
+              "",
+              "*Tu réponds au message ?*",
+              "*Tu {y} réponds ?*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*y* is roughly «there» or «about it». You already know it from *il y a* (there is, there are)."
+        }
+      ]
+    },
+    {
+      "id": "en",
+      "title": "En: quantities and things with de",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Replaces",
+            "Example",
+            "With en"
+          ],
+          "rows": [
+            [
+              "A **partitive** [[6]]",
+              "*Tu veux du pain ?*",
+              "*Oui, j'{en} veux.*"
+            ],
+            [
+              "A **quantity** (the number stays)",
+              "*J'ai trois chats.*",
+              "*J'{en} ai trois.*"
+            ],
+            [
+              "",
+              "*Il boit beaucoup de café.*",
+              "*Il {en} boit beaucoup.*"
+            ],
+            [
+              "An **origin** with *de*",
+              "*Je reviens de Paris.*",
+              "*J'{en} reviens.*"
+            ],
+            [
+              "A thing after a **verb + de**",
+              "*Tu parles de ton voyage ?*",
+              "*Oui, j'{en} parle.*"
+            ],
+            [
+              "",
+              "*J'ai besoin de mon téléphone.*",
+              "*J'{en} ai besoin.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "With *en*, the quantity goes **at the end**: *Tu as des frères ? — Oui, j'en ai deux.* (Yes, I have two.) You can't drop *en* the way English drops «of them»."
+        }
+      ]
+    },
+    {
+      "id": "prueba",
+      "title": "Y or en?",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "If there's…",
+            "Use",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**à** (*au, aux*) or a place",
+              "*y*",
+              "*Je pense à mes vacances → J'y pense.*"
+            ],
+            [
+              "**de** (*du, de la, des*) or a quantity",
+              "*en*",
+              "*Je parle de mes vacances → J'en parle.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Check the preposition of the **French** verb, not the English one: *penser à* (think about) → *y*; *parler de* (talk about) → *en*."
+        }
+      ]
+    },
+    {
+      "id": "personas",
+      "title": "With people, other pronouns",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*y* and *en* are for **things and places**. For **people** you use other pronouns [[15]]:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "With a thing",
+            "With a person"
+          ],
+          "rows": [
+            [
+              "*Je pense à mon examen → J'y pense.*",
+              "*Je pense à Marie → Je pense à elle.*"
+            ],
+            [
+              "*Je parle de mon voyage → J'en parle.*",
+              "*Je parle de Paul → Je parle de lui.*"
+            ],
+            [
+              "*Je réponds à la lettre → J'y réponds.*",
+              "*Je réponds à ma mère → Je lui réponds.*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Where they go",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situation",
+            "With y",
+            "With en"
+          ],
+          "rows": [
+            [
+              "Present",
+              "*J'y vais.*",
+              "*J'en mange.*"
+            ],
+            [
+              "Negative",
+              "*Je n'y vais pas.*",
+              "*Je n'en mange pas.*"
+            ],
+            [
+              "Near future",
+              "*Je vais y aller.*",
+              "*Je vais en manger.*"
+            ],
+            [
+              "Passé composé",
+              "*J'y suis allé.*",
+              "*J'en ai mangé.*"
+            ],
+            [
+              "Imperative",
+              "*Vas-y !*",
+              "*Manges-en !*"
+            ],
+            [
+              "Together: always *y* before *en*",
+              "*Il y en a.* (there is some)",
+              "*Il n'y en a plus.* (there's none left)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "In the imperative, -er verbs get their s back before *y* and *en* to allow the liaison [[14]]: *Va !* → *Vas-y !* · *Mange !* → *Manges-en !*"
+        }
+      ]
+    },
+    {
+      "id": "expresiones",
+      "title": "Everyday expressions",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Expression",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "*On y va !*",
+              "Let's go!"
+            ],
+            [
+              "*Vas-y ! · Allez-y !*",
+              "Go ahead!"
+            ],
+            [
+              "*Ça y est !*",
+              "Done! That's it!"
+            ],
+            [
+              "*Il y a…*",
+              "There is…, there are…"
+            ],
+            [
+              "*Je m'en vais.*",
+              "I'm off. I'm leaving."
+            ],
+            [
+              "*J'en ai marre !*",
+              "I'm fed up! (informal)"
+            ],
+            [
+              "*Je n'y peux rien.*",
+              "There's nothing I can do about it."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cantidades",
+      "title": "At the shop",
+      "instructions": "Answer with en and the quantity given.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Vous voulez combien de croissants ? (3)",
+          "answer": "J'en veux trois.",
+          "accept": [
+            "J'en voudrais trois."
+          ]
+        },
+        {
+          "prompt": "Tu as des frères ? (2)",
+          "answer": "Oui, j'en ai deux."
+        },
+        {
+          "prompt": "Vous avez du fromage ? (beaucoup)",
+          "answer": "Oui, j'en ai beaucoup.",
+          "accept": [
+            "Oui, nous en avons beaucoup.",
+            "Oui, on en a beaucoup."
+          ]
+        },
+        {
+          "prompt": "Elle boit du café ? (no)",
+          "answer": "Non, elle n'en boit pas."
+        },
+        {
+          "prompt": "Il y a des pommes ? (1)",
+          "answer": "Oui, il y en a une."
+        },
+        {
+          "prompt": "Tu as mangé des crêpes ? (5)",
+          "answer": "Oui, j'en ai mangé cinq."
+        }
+      ],
+      "section": "en"
+    },
+    {
+      "id": "y-en",
+      "title": "Y or en?",
+      "instructions": "Rewrite the sentence with y or en.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je vais au cinéma.",
+          "answer": "J'y vais."
+        },
+        {
+          "prompt": "Tu veux de l'eau ?",
+          "answer": "Tu en veux ?"
+        },
+        {
+          "prompt": "Elle pense à ses vacances.",
+          "answer": "Elle y pense."
+        },
+        {
+          "prompt": "Nous parlons de la fête.",
+          "answer": "Nous en parlons."
+        },
+        {
+          "prompt": "Ils habitent à Madrid.",
+          "answer": "Ils y habitent."
+        },
+        {
+          "prompt": "J'ai trois chats.",
+          "answer": "J'en ai trois."
+        },
+        {
+          "prompt": "Il revient du Japon.",
+          "answer": "Il en revient."
+        },
+        {
+          "prompt": "J'ai besoin d'aide.",
+          "answer": "J'en ai besoin."
+        },
+        {
+          "prompt": "Je réponds à la lettre.",
+          "answer": "J'y réponds."
+        },
+        {
+          "prompt": "Elle mange beaucoup de chocolat.",
+          "answer": "Elle en mange beaucoup."
+        }
+      ],
+      "section": "prueba"
+    },
+    {
+      "id": "persona",
+      "title": "Thing or person?",
+      "instructions": "Choose the right pronoun.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je pense à mes vacances.",
+          "options": [
+            "J'y pense.",
+            "Je pense à elles.",
+            "Je leur pense."
+          ],
+          "answer": "J'y pense."
+        },
+        {
+          "prompt": "Je pense à ma mère.",
+          "options": [
+            "J'y pense.",
+            "Je pense à elle.",
+            "Je lui pense."
+          ],
+          "answer": "Je pense à elle."
+        },
+        {
+          "prompt": "Je parle de mon travail.",
+          "options": [
+            "J'en parle.",
+            "Je parle de lui.",
+            "J'y parle."
+          ],
+          "answer": "J'en parle."
+        },
+        {
+          "prompt": "Je parle de mon frère.",
+          "options": [
+            "J'en parle.",
+            "Je parle de lui.",
+            "Je lui parle."
+          ],
+          "answer": "Je parle de lui."
+        },
+        {
+          "prompt": "Je réponds au message.",
+          "options": [
+            "J'y réponds.",
+            "Je lui réponds.",
+            "J'en réponds."
+          ],
+          "answer": "J'y réponds."
+        },
+        {
+          "prompt": "Je réponds à mon chef.",
+          "options": [
+            "J'y réponds.",
+            "Je lui réponds.",
+            "Je réponds à lui."
+          ],
+          "answer": "Je lui réponds."
+        }
+      ],
+      "section": "personas"
+    },
+    {
+      "id": "posicion",
+      "title": "Where does it go?",
+      "instructions": "Choose the correct sentence.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Je n'y vais pas.",
+            "Je ne vais y pas.",
+            "J'y ne vais pas."
+          ],
+          "answer": "Je n'y vais pas."
+        },
+        {
+          "options": [
+            "Je vais en acheter.",
+            "J'en vais acheter.",
+            "Je vais acheter en."
+          ],
+          "answer": "Je vais en acheter."
+        },
+        {
+          "options": [
+            "J'y suis allé.",
+            "Je suis y allé.",
+            "Je suis allé y."
+          ],
+          "answer": "J'y suis allé."
+        },
+        {
+          "options": [
+            "Il n'y en a plus.",
+            "Il n'en y a plus.",
+            "Il y n'en a plus."
+          ],
+          "answer": "Il n'y en a plus."
+        },
+        {
+          "options": [
+            "Vas-y !",
+            "Va-y !",
+            "Y va !"
+          ],
+          "answer": "Vas-y !"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "expresiones",
+      "title": "Expressions",
+      "instructions": "Choose the expression that fits the situation.",
+      "kind": "choice",
+      "options": [
+        "On y va !",
+        "Ça y est !",
+        "J'en ai marre !",
+        "Je m'en vais.",
+        "Je n'y peux rien."
+      ],
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "You've finally finished a long piece of work.",
+          "answer": "Ça y est !"
+        },
+        {
+          "prompt": "It's been raining for five days in a row.",
+          "answer": "J'en ai marre !"
+        },
+        {
+          "prompt": "Everyone is ready to leave.",
+          "answer": "On y va !"
+        },
+        {
+          "prompt": "You say goodbye as you leave a party.",
+          "answer": "Je m'en vais."
+        },
+        {
+          "prompt": "Someone complains about something that isn't up to you.",
+          "answer": "Je n'y peux rien."
+        }
+      ],
+      "section": "expresiones"
+    }
+  ],
+  "checklist": [
+    "I use *y* for places and things with *à*.",
+    "I use *en* for partitives, quantities and things with *de*.",
+    "I keep the quantity with *en* (*j'en ai deux*).",
+    "I use person pronouns instead of *y* and *en* for people.",
+    "I understand *on y va, ça y est, j'en ai marre…*"
+  ],
+  "challenge": {
+    "title": "Have you been there?",
+    "text": "Answer out loud with *y*: *Tu es déjà allé(e) en France ? Au Mexique ? À la montagne ce mois-ci ?* (*Oui, j'y suis allé(e) l'année dernière. / Non, je n'y suis jamais allé(e).*). Then with *en*: how many siblings, languages and pets do you have?"
+  }
+}

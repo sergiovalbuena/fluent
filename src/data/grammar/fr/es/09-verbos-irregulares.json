@@ -1,0 +1,461 @@
+{
+  "slug": "verbos-irregulares",
+  "number": 9,
+  "part": 2,
+  "title": "Aller, faire, vouloir, pouvoir",
+  "tagline": "Cuatro irregulares imprescindibles, au y aux, y el futuro con aller.",
+  "goal": "Conjugar los cuatro irregulares más útiles, decir adónde vas, pedir e invitar con cortesía y hablar del futuro con aller + infinitivo.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "conjugacion",
+      "title": "Los cuatro verbos",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "aller",
+              "meaning": "ir",
+              "forms": [
+                "je vais",
+                "tu vas",
+                "il va",
+                "nous allons",
+                "vous allez",
+                "ils vont"
+              ]
+            },
+            {
+              "verb": "faire",
+              "meaning": "hacer",
+              "forms": [
+                "je fais",
+                "tu fais",
+                "il fait",
+                "nous faisons",
+                "vous {faites}",
+                "ils font"
+              ]
+            },
+            {
+              "verb": "vouloir",
+              "meaning": "querer",
+              "forms": [
+                "je veux",
+                "tu veux",
+                "il veut",
+                "nous voulons",
+                "vous voulez",
+                "ils veulent"
+              ]
+            },
+            {
+              "verb": "pouvoir",
+              "meaning": "poder",
+              "forms": [
+                "je peux",
+                "tu peux",
+                "il peut",
+                "nous pouvons",
+                "vous pouvez",
+                "ils peuvent"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "*vous faites*, nunca «vous faisez». Igual que *vous êtes*.",
+            "*nous faisons* se pronuncia «fe-zón»: la *ai* suena como una e breve.",
+            "*vont, font, sont, ont*: los cuatro verbos más frecuentes terminan igual con *ils*."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aller-a",
+      "title": "Aller + à: au, à la, à l', aux",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Con *aller* casi siempre va *à*, que se contrae con el artículo:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "à + artículo",
+            "Resultado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "à + le",
+              "*au*",
+              "*Je vais {au} cinéma.*"
+            ],
+            [
+              "à + la",
+              "*à la*",
+              "*Tu vas {à la} plage.*"
+            ],
+            [
+              "à + l'",
+              "*à l'*",
+              "*Il va {à l'}école.*"
+            ],
+            [
+              "à + les",
+              "*aux*",
+              "*Nous allons {aux} États-Unis.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Igual que *de + le = du* [[6]], aquí *à + le = au*. Nunca «à le»."
+        }
+      ]
+    },
+    {
+      "id": "faire",
+      "title": "Faire",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Faire + du, de la, de l'** para actividades y deportes: *faire du sport, faire de la natation*. En negativo: *Je ne fais pas de sport.*",
+            "**Il fait** impersonal para el tiempo, como «hace» en español: *Il fait froid.* Para la lluvia y la nieve hay verbos propios: *il pleut, il neige*.",
+            "**«Hacer» no siempre es faire**: hacer una pregunta = *poser une question*; hace dos años = *il y a deux ans*."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vouloir-pouvoir",
+      "title": "Vouloir y pouvoir",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Se conjugan de forma muy parecida (*veux / peux, veulent / peuvent*) y casi siempre van seguidos de un **infinitivo**:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je veux partir.",
+              "tr": "Quiero irme."
+            },
+            {
+              "fr": "Tu peux venir ?",
+              "tr": "¿Puedes venir?"
+            },
+            {
+              "fr": "Nous voulons dîner dehors.",
+              "tr": "Queremos cenar fuera."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "La forma cortés",
+          "text": "En lugar de *je veux*, usa *je voudrais* (quisiera): *Je voudrais un café, s'il vous plaît.* Y para pedir algo: *Vous pourriez m'aider ?* (¿Podría ayudarme?)"
+        }
+      ]
+    },
+    {
+      "id": "futuro",
+      "title": "El futuro próximo: aller + infinitivo",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Funciona exactamente como «ir a + verbo» en español, y es la forma más usada del futuro en la conversación:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Español",
+            "Francés"
+          ],
+          "rows": [
+            [
+              "Voy a comer.",
+              "*Je {vais} manger.*"
+            ],
+            [
+              "Vas a salir.",
+              "*Tu {vas} sortir.*"
+            ],
+            [
+              "Vamos a viajar.",
+              "*Nous {allons} voyager.*"
+            ],
+            [
+              "Van a hacer deporte.",
+              "*Ils {vont} faire du sport.*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "En francés **no** hay *à* entre los dos verbos: «je vais à manger» es incorrecto → *je vais manger*."
+        },
+        {
+          "type": "text",
+          "text": "**Negación:** *ne… pas* rodea a *aller*: *Je ne vais pas manger.*"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "title": "Conjuga",
+      "instructions": "Escribe la forma correcta del verbo.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Je ___ au bureau à pied. (aller)",
+          "answer": "vais"
+        },
+        {
+          "prompt": "Vous ___ du sport ? (faire)",
+          "answer": "faites"
+        },
+        {
+          "prompt": "Ils ___ venir ce soir. (vouloir)",
+          "answer": "veulent"
+        },
+        {
+          "prompt": "Tu ___ m'aider ? (pouvoir)",
+          "answer": "peux"
+        },
+        {
+          "prompt": "Nous ___ à Paris en mai. (aller)",
+          "answer": "allons"
+        },
+        {
+          "prompt": "Elles ___ la cuisine ensemble. (faire)",
+          "answer": "font"
+        },
+        {
+          "prompt": "On ___ entrer ? (pouvoir)",
+          "answer": "peut"
+        },
+        {
+          "prompt": "Ils ___ au cinéma. (aller)",
+          "answer": "vont"
+        },
+        {
+          "prompt": "Nous ___ une pause. (faire)",
+          "answer": "faisons"
+        },
+        {
+          "prompt": "Elles ne ___ pas rester. (pouvoir)",
+          "answer": "peuvent"
+        }
+      ],
+      "section": "conjugacion"
+    },
+    {
+      "id": "au-aux",
+      "title": "¿Adónde vas?",
+      "instructions": "Completa con au, à la, à l' o aux.",
+      "kind": "choice",
+      "options": [
+        "au",
+        "à la",
+        "à l'",
+        "aux"
+      ],
+      "items": [
+        {
+          "prompt": "Je vais ___ cinéma.",
+          "answer": "au"
+        },
+        {
+          "prompt": "Tu vas ___ plage.",
+          "answer": "à la"
+        },
+        {
+          "prompt": "Elle va ___ école.",
+          "answer": "à l'"
+        },
+        {
+          "prompt": "Nous allons ___ États-Unis.",
+          "answer": "aux"
+        },
+        {
+          "prompt": "Vous allez ___ parc.",
+          "answer": "au"
+        },
+        {
+          "prompt": "Ils vont ___ piscine.",
+          "answer": "à la"
+        },
+        {
+          "prompt": "Je vais ___ hôpital.",
+          "answer": "à l'"
+        },
+        {
+          "prompt": "On va ___ toilettes ?",
+          "answer": "aux"
+        }
+      ],
+      "section": "aller-a"
+    },
+    {
+      "id": "faire",
+      "title": "¿Faire o no?",
+      "instructions": "Elige la expresión correcta.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Hace frío.",
+          "options": [
+            "Il fait froid.",
+            "Il est froid.",
+            "Il a froid."
+          ],
+          "answer": "Il fait froid."
+        },
+        {
+          "prompt": "Llueve.",
+          "options": [
+            "Il pleut.",
+            "Il fait pluie.",
+            "Il fait pleuvoir."
+          ],
+          "answer": "Il pleut."
+        },
+        {
+          "prompt": "Quiero hacer una pregunta.",
+          "options": [
+            "Je voudrais poser une question.",
+            "Je voudrais faire une question.",
+            "Je voudrais demander une question."
+          ],
+          "answer": "Je voudrais poser une question."
+        },
+        {
+          "prompt": "Hace dos años.",
+          "options": [
+            "Il y a deux ans.",
+            "Il fait deux ans.",
+            "Ça fait deux ans."
+          ],
+          "answer": "Il y a deux ans.",
+          "explain": "*Ça fait deux ans que…* existe, pero significa «hace dos años que…» (algo que dura)."
+        },
+        {
+          "prompt": "No hago deporte.",
+          "options": [
+            "Je ne fais pas de sport.",
+            "Je ne fais pas du sport.",
+            "Je ne fais sport pas."
+          ],
+          "answer": "Je ne fais pas de sport."
+        }
+      ],
+      "section": "faire"
+    },
+    {
+      "id": "cortesia",
+      "title": "Con cortesía",
+      "instructions": "Elige la forma más adecuada en una tienda o un restaurante.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Pides un café.",
+          "options": [
+            "Je voudrais un café, s'il vous plaît.",
+            "Je veux un café.",
+            "Donne-moi un café."
+          ],
+          "answer": "Je voudrais un café, s'il vous plaît."
+        },
+        {
+          "prompt": "Pides ayuda a un desconocido.",
+          "options": [
+            "Vous pourriez m'aider, s'il vous plaît ?",
+            "Tu peux m'aider ?",
+            "Aide-moi."
+          ],
+          "answer": "Vous pourriez m'aider, s'il vous plaît ?"
+        },
+        {
+          "prompt": "Invitas a una amiga al cine.",
+          "options": [
+            "Tu veux aller au cinéma ?",
+            "Vous voudriez aller au cinéma ?",
+            "Tu vas au cinéma."
+          ],
+          "answer": "Tu veux aller au cinéma ?",
+          "explain": "Con amigos se tutea."
+        }
+      ],
+      "section": "vouloir-pouvoir"
+    },
+    {
+      "id": "futuro",
+      "title": "Al futuro próximo",
+      "instructions": "Reescribe la frase con aller + infinitivo.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je mange une pizza.",
+          "answer": "Je vais manger une pizza."
+        },
+        {
+          "prompt": "Tu regardes un film.",
+          "answer": "Tu vas regarder un film."
+        },
+        {
+          "prompt": "Nous faisons du sport.",
+          "answer": "Nous allons faire du sport."
+        },
+        {
+          "prompt": "Ils vont à la plage.",
+          "answer": "Ils vont aller à la plage."
+        },
+        {
+          "prompt": "Elle finit son rapport.",
+          "answer": "Elle va finir son rapport."
+        },
+        {
+          "prompt": "Vous jouez au tennis.",
+          "answer": "Vous allez jouer au tennis."
+        },
+        {
+          "prompt": "Il ne pleut pas.",
+          "answer": "Il ne va pas pleuvoir."
+        }
+      ],
+      "section": "futuro"
+    }
+  ],
+  "checklist": [
+    "Conjugo *aller, faire, vouloir, pouvoir*.",
+    "Uso *au, à la, à l', aux*.",
+    "Uso *faire du / de la* y el *il fait* impersonal.",
+    "Uso *je voudrais* para pedir con cortesía.",
+    "Hablo del futuro con *aller* + infinitivo."
+  ],
+  "challenge": {
+    "title": "Tus planes",
+    "text": "Escribe ocho cosas que vas a hacer este año con *aller* + infinitivo, y una que no vas a hacer: *Cette année, je vais aller à Lyon. Je ne vais pas arrêter le français !*"
+  }
+}

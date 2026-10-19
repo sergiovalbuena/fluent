@@ -1,0 +1,467 @@
+{
+  "slug": "partitivos",
+  "number": 6,
+  "part": 2,
+  "title": "Du, de la, de l', des",
+  "tagline": "Partitive articles: food and quantities, without mixing up likes and eating.",
+  "goal": "Order food, talk about what you eat and drink, write a shopping list and tell «I like chocolate» apart from «I eat chocolate».",
+  "minutes": 9,
+  "sections": [
+    {
+      "id": "que-es",
+      "title": "What a partitive is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The partitive expresses an **unspecified amount** of something: some of it, not all of it. In English we often say **nothing** («I drink water», «I eat bread») or «some»; in French you **always need an article**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je bois de l'eau.",
+              "tr": "I drink water."
+            },
+            {
+              "fr": "Je mange du pain.",
+              "tr": "I eat bread."
+            },
+            {
+              "fr": "Je veux des fraises.",
+              "tr": "I want (some) strawberries."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formas",
+      "title": "The four forms",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Form",
+            "When",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "*du*",
+              "Masculine singular",
+              "*du pain, du fromage, du lait*"
+            ],
+            [
+              "*de la*",
+              "Feminine singular",
+              "*de la confiture, de la soupe, de la viande*"
+            ],
+            [
+              "*de l'*",
+              "Singular starting with a vowel or silent h",
+              "*de l'eau, de l'huile, de l'ananas*"
+            ],
+            [
+              "*des*",
+              "Plural",
+              "*des fraises, des œufs, des légumes*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*du* is the contraction of *de + le*. You never say «de le»."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Boire (to drink), irregular",
+          "text": "*je bois, tu bois, il boit, nous buvons, vous buvez, ils boivent*"
+        }
+      ]
+    },
+    {
+      "id": "gusto-consumo",
+      "title": "Liking or eating",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "When you talk about…",
+            "Use",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Likes**: *aimer, adorer, détester, préférer*",
+              "*le, la, l', les*",
+              "*J'adore {le} chocolat.* (chocolate in general)"
+            ],
+            [
+              "**Consuming**: *manger, boire, acheter, vouloir, prendre*",
+              "*du, de la, de l', des*",
+              "*Je mange {du} chocolat.* (some chocolate)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "If you could say «some» in English, use the partitive. If you mean the thing in general, use *le, la, les*: English says «I love chocolate» without «the», French says *J'adore le chocolat*."
+        }
+      ]
+    },
+    {
+      "id": "negativo",
+      "title": "In the negative, everything becomes de",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "After *ne… pas*, partitives (and *un, une*) become **de**, or **d'** before a vowel, like English «not any»:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je ne mange pas de viande.",
+              "tr": "I don't eat meat.",
+              "note": "de la → de"
+            },
+            {
+              "fr": "Il ne boit pas de café.",
+              "tr": "He doesn't drink coffee.",
+              "note": "du → de"
+            },
+            {
+              "fr": "Je n'ai pas d'argent.",
+              "tr": "I don't have any money.",
+              "note": "de l' → d'"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Exception: with *être* it doesn't change. *C'est du thé ?* → *Non, ce n'est pas du thé, c'est du café.*"
+        }
+      ]
+    },
+    {
+      "id": "cantidades",
+      "title": "After quantities, also de",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Quantity",
+            "Example"
+          ],
+          "rows": [
+            [
+              "*beaucoup de* (a lot of)",
+              "*beaucoup de sucre*"
+            ],
+            [
+              "*un peu de* (a little)",
+              "*un peu de lait*"
+            ],
+            [
+              "*trop de* (too much)",
+              "*trop de sel*"
+            ],
+            [
+              "*assez de* (enough)",
+              "*assez d'eau*"
+            ],
+            [
+              "*un kilo de*",
+              "*un kilo de tomates*"
+            ],
+            [
+              "*une bouteille de*",
+              "*une bouteille d'eau*"
+            ],
+            [
+              "*un verre de*",
+              "*un verre de vin*"
+            ],
+            [
+              "*une tranche de*",
+              "*une tranche de jambon*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "To replace all of this with a pronoun (*j'en veux*, I want some), see [[16]]."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "title": "Breakfast",
+      "instructions": "Fill in with du, de la, de l' or des.",
+      "kind": "choice",
+      "options": [
+        "du",
+        "de la",
+        "de l'",
+        "des"
+      ],
+      "items": [
+        {
+          "prompt": "Le matin, je mange ___ pain.",
+          "answer": "du"
+        },
+        {
+          "prompt": "Avec ___ confiture.",
+          "answer": "de la"
+        },
+        {
+          "prompt": "Et ___ œufs.",
+          "answer": "des"
+        },
+        {
+          "prompt": "Je bois ___ eau.",
+          "answer": "de l'",
+          "say": "Je bois de l'eau."
+        },
+        {
+          "prompt": "Mon mari prend ___ fromage.",
+          "answer": "du"
+        },
+        {
+          "prompt": "Ma fille boit ___ jus d'orange.",
+          "answer": "du"
+        },
+        {
+          "prompt": "Tu mets ___ huile dans la salade ?",
+          "answer": "de l'",
+          "say": "Tu mets de l'huile dans la salade ?"
+        },
+        {
+          "prompt": "On achète ___ légumes au marché.",
+          "answer": "des"
+        }
+      ],
+      "section": "formas"
+    },
+    {
+      "id": "gusto-consumo",
+      "title": "Liking or eating?",
+      "instructions": "Choose the right article.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "J'adore ___ chocolat.",
+          "options": [
+            "le",
+            "du"
+          ],
+          "answer": "le"
+        },
+        {
+          "prompt": "Je mange ___ chocolat tous les jours.",
+          "options": [
+            "le",
+            "du"
+          ],
+          "answer": "du"
+        },
+        {
+          "prompt": "Elle déteste ___ soupe.",
+          "options": [
+            "la",
+            "de la"
+          ],
+          "answer": "la"
+        },
+        {
+          "prompt": "Tu veux ___ soupe ?",
+          "options": [
+            "la",
+            "de la"
+          ],
+          "answer": "de la"
+        },
+        {
+          "prompt": "Nous préférons ___ eau gazeuse.",
+          "options": [
+            "l'",
+            "de l'"
+          ],
+          "answer": "l'",
+          "say": "Nous préférons l'eau gazeuse."
+        },
+        {
+          "prompt": "Il boit ___ eau.",
+          "options": [
+            "l'",
+            "de l'"
+          ],
+          "answer": "de l'",
+          "say": "Il boit de l'eau."
+        },
+        {
+          "prompt": "Ils aiment ___ fraises.",
+          "options": [
+            "les",
+            "des"
+          ],
+          "answer": "les"
+        },
+        {
+          "prompt": "J'achète ___ fraises au marché.",
+          "options": [
+            "les",
+            "des"
+          ],
+          "answer": "des"
+        }
+      ],
+      "section": "gusto-consumo"
+    },
+    {
+      "id": "negativo",
+      "title": "Say no",
+      "instructions": "Answer in the negative.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Tu manges de la viande ?",
+          "answer": "Non, je ne mange pas de viande."
+        },
+        {
+          "prompt": "Tu bois du café ?",
+          "answer": "Non, je ne bois pas de café."
+        },
+        {
+          "prompt": "Tu as des frères ?",
+          "answer": "Non, je n'ai pas de frères."
+        },
+        {
+          "prompt": "Tu veux de l'eau ?",
+          "answer": "Non, je ne veux pas d'eau."
+        },
+        {
+          "prompt": "Tu achètes des pommes ?",
+          "answer": "Non, je n'achète pas de pommes."
+        },
+        {
+          "prompt": "Tu as une voiture ?",
+          "answer": "Non, je n'ai pas de voiture."
+        }
+      ],
+      "section": "negativo"
+    },
+    {
+      "id": "cantidades",
+      "title": "Quantities",
+      "instructions": "Choose the correct form.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Il y a beaucoup ___ monde.",
+          "options": [
+            "de",
+            "du"
+          ],
+          "answer": "de"
+        },
+        {
+          "prompt": "Un verre ___ vin rouge, s'il vous plaît.",
+          "options": [
+            "de",
+            "du"
+          ],
+          "answer": "de"
+        },
+        {
+          "prompt": "J'ai acheté un kilo ___ tomates.",
+          "options": [
+            "de",
+            "des"
+          ],
+          "answer": "de"
+        },
+        {
+          "prompt": "Il met trop ___ sel.",
+          "options": [
+            "de",
+            "du"
+          ],
+          "answer": "de"
+        },
+        {
+          "prompt": "Une bouteille ___ eau.",
+          "options": [
+            "d'",
+            "de l'"
+          ],
+          "answer": "d'",
+          "say": "Une bouteille d'eau."
+        },
+        {
+          "prompt": "Ajoute un peu ___ lait.",
+          "options": [
+            "de",
+            "du"
+          ],
+          "answer": "de"
+        }
+      ],
+      "section": "cantidades"
+    },
+    {
+      "id": "cafe",
+      "title": "At the café",
+      "instructions": "Complete the dialogue.",
+      "kind": "choice",
+      "options": [
+        "du",
+        "de la",
+        "de",
+        "un",
+        "une"
+      ],
+      "items": [
+        {
+          "prompt": "Je voudrais ___ thé et une tartine, s'il vous plaît.",
+          "answer": "du"
+        },
+        {
+          "prompt": "Avec du beurre et ___ confiture ?",
+          "answer": "de la"
+        },
+        {
+          "prompt": "Avec de la confiture, mais pas ___ beurre, merci.",
+          "answer": "de"
+        },
+        {
+          "prompt": "Et ___ verre d'eau, s'il vous plaît.",
+          "answer": "un"
+        },
+        {
+          "prompt": "Vous voulez ___ croissant aussi ?",
+          "answer": "un"
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "I use *du, de la, de l', des*.",
+    "I tell likes (*le, la*) from consuming (*du, de la*).",
+    "In the negative I use *de* or *d'*.",
+    "After a quantity I use *de* or *d'*.",
+    "I can order at a café."
+  ],
+  "challenge": {
+    "title": "Your shopping list",
+    "text": "Write this week's shopping list in French with eight items, each with a different quantity: *un kilo de tomates, deux bouteilles d'eau, un peu de fromage…*"
+  }
+}

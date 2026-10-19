@@ -1,0 +1,426 @@
+{
+  "slug": "pronominales",
+  "number": 17,
+  "part": 4,
+  "title": "Reflexive verbs",
+  "tagline": "I get up, I get dressed: conjugation, verbs that are reflexive only in French and the past with être.",
+  "goal": "Describe your routine, conjugate verbs with se and use them in the negative, the imperative and the passé composé.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "que-es",
+      "title": "What a reflexive verb is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "It's a verb used with a reflexive pronoun (*me, te, se…*), like «myself», «yourself» in English. The difference is that French uses them **far more often**, including where English uses «get» or no pronoun at all."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "se lever",
+              "tr": "to get up"
+            },
+            {
+              "fr": "s'appeler",
+              "tr": "to be called (literally «to call oneself»)"
+            },
+            {
+              "fr": "se laver",
+              "tr": "to wash (oneself)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conjugacion",
+      "title": "Conjugation",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "se laver",
+              "meaning": "to wash",
+              "forms": [
+                "je {me} lave",
+                "tu {te} laves",
+                "il {se} lave",
+                "nous {nous} lavons",
+                "vous {vous} lavez",
+                "ils {se} lavent"
+              ]
+            },
+            {
+              "verb": "s'habiller",
+              "meaning": "to get dressed",
+              "forms": [
+                "je {m'}habille",
+                "tu {t'}habilles",
+                "il {s'}habille",
+                "nous {nous} habillons",
+                "vous {vous} habillez",
+                "ils {s'}habillent"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Before a vowel or silent h, *me, te, se* → *m', t', s'*. Hence *je m'appelle* (my name is). And *nous nous* or *vous vous* aren't a typo: the first is the subject, the second the reflexive."
+        }
+      ]
+    },
+    {
+      "id": "rutina",
+      "title": "Daily routine",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Almost every routine verb is reflexive in French: *se réveiller* (to wake up), *se lever* (to get up), *se doucher* (to have a shower), *s'habiller* (to get dressed), *se coucher* (to go to bed). **If English says «get…» or «wake up», French often uses a reflexive.**"
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Se lever",
+          "text": "It takes a grave accent in the forms with a silent ending: *je me lève, tu te lèves, il se lève, ils se lèvent* (but *nous nous levons, vous vous levez*)."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Body parts",
+          "text": "French uses the article, not the possessive: «I brush my teeth» = *Je me brosse {les} dents* (not «mes dents»)."
+        }
+      ]
+    },
+    {
+      "id": "trampas",
+      "title": "Where French and English don't match",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Case",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "Reflexive in French, not in English",
+              "to remember → *se souvenir de* · to go for a walk → *se promener* · to rest → *se reposer* · to hurry → *se dépêcher* · to sit down → *s'asseoir*"
+            ],
+            [
+              "Changes meaning with *se*",
+              "*appeler* (to call) → *s'appeler* (to be called) · *ennuyer* (to bore someone) → *s'ennuyer* (to be bored) · *tromper* (to cheat on) → *se tromper* (to be wrong)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*Je me suis trompé* = I made a mistake. *Je t'ai trompé* = I cheated on you. Best not to mix them up."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Each other",
+          "text": "Reflexive verbs also mean «each other»: *Ils s'aiment* (they love each other) · *Nous nous parlons tous les jours* (we talk to each other every day) · *Elles se téléphonent* (they call each other)."
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Negative, future and imperative",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Situation",
+            "Rule",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Negative**",
+              "the reflexive stays next to the verb",
+              "*Je ne me lève pas.*"
+            ],
+            [
+              "**Near future**",
+              "the reflexive goes with the infinitive and matches the subject",
+              "*Je vais me coucher. · Tu vas te coucher.*"
+            ],
+            [
+              "**Positive imperative**",
+              "after, with a hyphen; *te* → *toi*",
+              "*Lève-toi ! · Levez-vous ! · Dépêchons-nous !*"
+            ],
+            [
+              "**Negative imperative**",
+              "before, as usual",
+              "*Ne te lève pas !*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pasado",
+      "title": "In the passé composé, always with être",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Every reflexive verb uses **être** in the past [[10]], so the participle agrees with the subject:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Subject",
+            "Example"
+          ],
+          "rows": [
+            [
+              "il",
+              "*Il s'est levé à 7 h.*"
+            ],
+            [
+              "elle",
+              "*Elle s'est levé{e} à 7 h.*"
+            ],
+            [
+              "ils",
+              "*Ils se sont levé{s} à 7 h.*"
+            ],
+            [
+              "elles",
+              "*Elles se sont levé{es} à 7 h.*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**Negative in the past:** *Je ne me suis pas réveillé(e).*"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "title": "Conjugate",
+      "instructions": "Write the verb with its pronoun.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Je ___ à 7 h. (se réveiller)",
+          "answer": "me réveille"
+        },
+        {
+          "prompt": "Tu ___ tard le dimanche. (se lever)",
+          "answer": "te lèves"
+        },
+        {
+          "prompt": "Il ___ très vite. (s'habiller)",
+          "answer": "s'habille"
+        },
+        {
+          "prompt": "Nous ___ les dents. (se brosser)",
+          "answer": "nous brossons"
+        },
+        {
+          "prompt": "Vous ___ ! (se dépêcher)",
+          "answer": "vous dépêchez"
+        },
+        {
+          "prompt": "Elles ___ à minuit. (se coucher)",
+          "answer": "se couchent"
+        },
+        {
+          "prompt": "Je ___ Ana. (s'appeler)",
+          "answer": "m'appelle"
+        },
+        {
+          "prompt": "Ils ___ dans le parc. (se promener)",
+          "answer": "se promènent"
+        }
+      ],
+      "section": "conjugacion"
+    },
+    {
+      "id": "trampas",
+      "title": "With se or without?",
+      "instructions": "Translate into French. Careful: it doesn't always match English.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "I'm staying at home.",
+          "answer": "Je reste à la maison."
+        },
+        {
+          "prompt": "I'm leaving.",
+          "answer": "Je pars.",
+          "accept": [
+            "Je m'en vais."
+          ]
+        },
+        {
+          "prompt": "He fell.",
+          "answer": "Il est tombé."
+        },
+        {
+          "prompt": "I made a mistake.",
+          "answer": "Je me suis trompé.",
+          "accept": [
+            "Je me suis trompée."
+          ]
+        },
+        {
+          "prompt": "We go for a walk in the park.",
+          "answer": "Nous nous promenons dans le parc.",
+          "accept": [
+            "On se promène dans le parc."
+          ]
+        },
+        {
+          "prompt": "I'm resting a bit.",
+          "answer": "Je me repose un peu."
+        }
+      ],
+      "section": "trampas"
+    },
+    {
+      "id": "negativo",
+      "title": "In the negative",
+      "instructions": "Write the sentence in the negative.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je me lève tôt.",
+          "answer": "Je ne me lève pas tôt."
+        },
+        {
+          "prompt": "Tu t'ennuies.",
+          "answer": "Tu ne t'ennuies pas."
+        },
+        {
+          "prompt": "Nous nous dépêchons.",
+          "answer": "Nous ne nous dépêchons pas."
+        },
+        {
+          "prompt": "Il s'est réveillé.",
+          "answer": "Il ne s'est pas réveillé."
+        },
+        {
+          "prompt": "Lève-toi !",
+          "answer": "Ne te lève pas !"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "imperativo",
+      "title": "Imperative",
+      "instructions": "Choose the correct imperative.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "(to a friend) Get up.",
+          "options": [
+            "Lève-toi !",
+            "Lève-te !",
+            "Te lève !"
+          ],
+          "answer": "Lève-toi !"
+        },
+        {
+          "prompt": "(to several people) Sit down.",
+          "options": [
+            "Asseyez-vous !",
+            "Vous asseyez !",
+            "Asseyez-nous !"
+          ],
+          "answer": "Asseyez-vous !"
+        },
+        {
+          "prompt": "(to your group, including you) Let's hurry.",
+          "options": [
+            "Dépêchons-nous !",
+            "Nous dépêchons !",
+            "Dépêchez-nous !"
+          ],
+          "answer": "Dépêchons-nous !"
+        },
+        {
+          "prompt": "(to a friend) Don't worry.",
+          "options": [
+            "Ne t'inquiète pas !",
+            "Ne inquiète-toi pas !",
+            "Inquiète-toi pas !"
+          ],
+          "answer": "Ne t'inquiète pas !"
+        }
+      ],
+      "section": "posicion"
+    },
+    {
+      "id": "pasado",
+      "title": "Yesterday morning",
+      "instructions": "Conjugate in the passé composé. Watch the agreement.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Hier matin, Julie ___ à 6 h. (se réveiller)",
+          "answer": "s'est réveillée"
+        },
+        {
+          "prompt": "Elle ___ tout de suite. (se lever)",
+          "answer": "s'est levée"
+        },
+        {
+          "prompt": "Et elle ___. (se doucher)",
+          "answer": "s'est douchée"
+        },
+        {
+          "prompt": "Ses frères, eux, ___ à 9 h ! (se lever)",
+          "answer": "se sont levés"
+        },
+        {
+          "prompt": "Après, nous ___ au parc. (se promener)",
+          "answer": "nous sommes promenés",
+          "accept": [
+            "nous sommes promenées"
+          ]
+        },
+        {
+          "prompt": "Le soir, ils ___ très tard. (se coucher)",
+          "answer": "se sont couchés"
+        }
+      ],
+      "section": "pasado"
+    }
+  ],
+  "checklist": [
+    "I conjugate reflexive verbs in the present.",
+    "I can describe my daily routine.",
+    "I use them in the negative and the imperative.",
+    "I use them in the passé composé with *être*.",
+    "I know the verbs that are reflexive only in French (*se souvenir, se promener, se dépêcher*)."
+  ],
+  "challenge": {
+    "title": "Your routine",
+    "text": "Describe this morning in the present with six reflexive verbs, then tell it in the past: *Je me suis réveillé(e) à 7 h, je me suis douché(e)…*"
+  }
+}

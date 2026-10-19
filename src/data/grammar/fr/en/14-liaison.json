@@ -1,0 +1,460 @@
+{
+  "slug": "liaison",
+  "number": 14,
+  "part": 4,
+  "title": "Liaison",
+  "tagline": "Why words run together, which sound appears and when it's required or forbidden.",
+  "goal": "Understand why words join up in speech, know which sound appears in each liaison and when it's required, optional or forbidden.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "que-es",
+      "title": "What liaison is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Many French words end in a **silent** consonant: *les* («lay»), *vous* («voo»), *petit* («ptee»). But if the next word starts with a **vowel or silent h**, that consonant **is pronounced** and attaches to the next word:"
+        },
+        {
+          "type": "formula",
+          "text": "les + amis → les‿amis",
+          "caption": "Pronounced «lay-za-mee»."
+        },
+        {
+          "type": "text",
+          "text": "English does something similar with «an apple» versus «a pear». It's why spoken French often sounds like one long word."
+        }
+      ]
+    },
+    {
+      "id": "sonidos",
+      "title": "The sounds of liaison",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The written letter doesn't always sound the same in liaison:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Written",
+            "Sounds",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "**s, x, z**",
+              "**[z]**",
+              "*les‿amis* (lay-za-mee) · *deux‿enfants* (duh-zahn-fahn) · *chez‿elle*"
+            ],
+            [
+              "**t, d**",
+              "**[t]**",
+              "*petit‿ami* (ptee-ta-mee) · *grand‿homme* (grahn-tom)"
+            ],
+            [
+              "**n**",
+              "**[n]**",
+              "*un‿ami* · *mon‿enfant*"
+            ],
+            [
+              "**f** (in *neuf*)",
+              "**[v]**",
+              "*neuf‿ans* · *neuf‿heures*"
+            ],
+            [
+              "**r**",
+              "**[r]**",
+              "*premier‿étage*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "An s or x in liaison always buzzes like [z], never hisses like [s]."
+        }
+      ]
+    },
+    {
+      "id": "obligatorias",
+      "title": "Required liaisons",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Case",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "Determiner + noun",
+              "*les‿amis, un‿ami, mon‿école, ces‿enfants, deux‿heures, des‿hôtels*"
+            ],
+            [
+              "Pronoun + verb",
+              "*nous‿avons, vous‿êtes, ils‿ont, on‿a, elles‿aiment*"
+            ],
+            [
+              "Verb + pronoun (inversion)",
+              "*Vont‿ils ? Est‿il ?*"
+            ],
+            [
+              "Adjective before the noun",
+              "*petit‿enfant, grand‿homme, bon‿ami, beaux‿yeux*"
+            ],
+            [
+              "After short prepositions",
+              "*chez‿elle, dans‿un parc, en‿Afrique*"
+            ],
+            [
+              "Set phrases",
+              "*Comment‿allez-vous ? · tout‿à coup · de temps‿en temps · les États‿Unis*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "The [z] that separates *ils‿ont* from *ils sont* is a liaison [[4]]."
+        }
+      ]
+    },
+    {
+      "id": "prohibidas",
+      "title": "Forbidden liaisons",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Case",
+            "Examples (│ = no liaison)"
+          ],
+          "rows": [
+            [
+              "After *et*",
+              "*toi et │ elle · un chat et │ un chien*"
+            ],
+            [
+              "Before an aspirated h",
+              "*les │ héros · les │ hiboux · en │ haut*"
+            ],
+            [
+              "After a singular noun",
+              "*un étudiant │ intelligent · un enfant │ adorable*"
+            ],
+            [
+              "Before *oui*, *huit* and *onze*",
+              "*mais │ oui · les │ huit jours · les │ onze joueurs*"
+            ],
+            [
+              "After a proper name",
+              "*Paris │ est beau · Thomas │ arrive*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Heroes and zeros",
+          "text": "With a liaison, *les héros* would sound like *les zéros* (the zeros). It's the classic example of the aspirated h [[3]]."
+        }
+      ]
+    },
+    {
+      "id": "opcionales",
+      "title": "Optional liaisons",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "After verbs and some other words, liaison depends on the **register**: more in a speech or when reading aloud, less in conversation."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Je suis‿allé · Je suis │ allé",
+              "tr": "Both are correct."
+            },
+            {
+              "fr": "C'est‿un ami · C'est │ un ami",
+              "tr": "Both are correct."
+            },
+            {
+              "fr": "pas‿encore · pas │ encore",
+              "tr": "Both are correct."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "To start with, focus on making the required ones and avoiding the forbidden ones. The optional ones will come with listening."
+        }
+      ]
+    },
+    {
+      "id": "encadenamiento",
+      "title": "Enchaînement",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Don't confuse liaison with **enchaînement** (linking): a consonant that is **already pronounced** joins the vowel of the next word."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Il‿a",
+              "tr": "«ee-la»"
+            },
+            {
+              "fr": "Elle‿aime",
+              "tr": "«eh-lem»"
+            },
+            {
+              "fr": "une‿amie",
+              "tr": "«ü-na-mee»"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "The difference: in liaison, the consonant was silent and becomes pronounced; in enchaînement it was already pronounced and just moves to the next word."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "sonido",
+      "title": "Which sound appears?",
+      "instructions": "Choose the sound of the liaison.",
+      "kind": "choice",
+      "options": [
+        "[z]",
+        "[t]",
+        "[n]",
+        "[v]"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "trois‿enfants",
+          "answer": "[z]"
+        },
+        {
+          "prompt": "un grand‿ami",
+          "answer": "[t]",
+          "explain": "The d sounds [t]."
+        },
+        {
+          "prompt": "mon‿anniversaire",
+          "answer": "[n]"
+        },
+        {
+          "prompt": "neuf‿ans",
+          "answer": "[v]"
+        },
+        {
+          "prompt": "six‿oranges",
+          "answer": "[z]",
+          "explain": "The x sounds [z]."
+        },
+        {
+          "prompt": "quand‿il arrive",
+          "answer": "[t]"
+        },
+        {
+          "prompt": "chez‿eux",
+          "answer": "[z]"
+        },
+        {
+          "prompt": "un‿hôtel",
+          "answer": "[n]"
+        }
+      ],
+      "section": "sonidos"
+    },
+    {
+      "id": "obligatoria",
+      "title": "Liaison or not?",
+      "instructions": "Decide whether the two words are linked with a liaison.",
+      "kind": "choice",
+      "options": [
+        "Liaison",
+        "No liaison"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "les amis",
+          "answer": "Liaison"
+        },
+        {
+          "prompt": "et un",
+          "answer": "No liaison",
+          "explain": "Never after *et*."
+        },
+        {
+          "prompt": "les héros",
+          "answer": "No liaison",
+          "explain": "Aspirated h."
+        },
+        {
+          "prompt": "nous avons",
+          "answer": "Liaison"
+        },
+        {
+          "prompt": "un étudiant intelligent",
+          "answer": "No liaison",
+          "explain": "After a singular noun."
+        },
+        {
+          "prompt": "deux heures",
+          "answer": "Liaison",
+          "explain": "Silent h."
+        },
+        {
+          "prompt": "mon école",
+          "answer": "Liaison"
+        },
+        {
+          "prompt": "petit enfant",
+          "answer": "Liaison"
+        },
+        {
+          "prompt": "Paul et Anne",
+          "answer": "No liaison"
+        },
+        {
+          "prompt": "les hiboux",
+          "answer": "No liaison"
+        },
+        {
+          "prompt": "vous êtes",
+          "answer": "Liaison"
+        },
+        {
+          "prompt": "les onze joueurs",
+          "answer": "No liaison"
+        },
+        {
+          "prompt": "chez elle",
+          "answer": "Liaison"
+        },
+        {
+          "prompt": "grand homme",
+          "answer": "Liaison"
+        }
+      ],
+      "section": "prohibidas"
+    },
+    {
+      "id": "tipo",
+      "title": "Required, optional or forbidden",
+      "instructions": "Classify the marked liaison.",
+      "kind": "choice",
+      "options": [
+        "Required",
+        "Optional",
+        "Forbidden"
+      ],
+      "speak": "none",
+      "items": [
+        {
+          "prompt": "Comment‿allez-vous ?",
+          "answer": "Required",
+          "explain": "Set phrase."
+        },
+        {
+          "prompt": "Je suis‿allé.",
+          "answer": "Optional"
+        },
+        {
+          "prompt": "un enfant‿adorable",
+          "answer": "Forbidden",
+          "explain": "Singular noun."
+        },
+        {
+          "prompt": "dans‿un parc",
+          "answer": "Required"
+        },
+        {
+          "prompt": "mais‿oui",
+          "answer": "Forbidden"
+        },
+        {
+          "prompt": "C'est‿un ami.",
+          "answer": "Optional"
+        },
+        {
+          "prompt": "Thomas‿arrive.",
+          "answer": "Forbidden",
+          "explain": "Proper name."
+        },
+        {
+          "prompt": "elles‿aiment",
+          "answer": "Required"
+        }
+      ],
+      "section": "opcionales"
+    },
+    {
+      "id": "oido",
+      "title": "By ear",
+      "instructions": "Listen and choose what you heard.",
+      "kind": "choice",
+      "listen": true,
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "ils ont",
+            "ils sont"
+          ],
+          "answer": "ils ont"
+        },
+        {
+          "options": [
+            "les héros",
+            "les zéros"
+          ],
+          "answer": "les héros"
+        },
+        {
+          "options": [
+            "nous avons",
+            "nous savons"
+          ],
+          "answer": "nous savons"
+        },
+        {
+          "options": [
+            "deux ans",
+            "deux cents"
+          ],
+          "answer": "deux ans"
+        },
+        {
+          "options": [
+            "un ami",
+            "un tamis"
+          ],
+          "answer": "un ami"
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "I know which sound appears in each liaison.",
+    "I make the required liaisons.",
+    "I avoid the forbidden ones (*et*, aspirated h, singular noun…).",
+    "I can tell liaison from enchaînement."
+  ],
+  "challenge": {
+    "title": "Listen closely",
+    "text": "Play one minute of a French podcast or video and note every liaison you hear. Which ones were required? Was there an optional one?"
+  }
+}

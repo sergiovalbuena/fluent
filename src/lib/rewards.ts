@@ -29,7 +29,27 @@ export async function awardGems(supabase: SupabaseClient, amount: number, reason
   return typeof data === 'number' ? data : 0
 }
 
-/** Adds XP to the profile and credits gems; returns what was actually awarded */
+/**
+ * Adds XP to today's row in user_activity (the activity map in /progress and the
+ * weekly XP of study groups). Same UTC date as the lesson player.
+ */
+async function addDailyXp(supabase: SupabaseClient, userId: string, xp: number) {
+  const today = new Date().toISOString().split('T')[0]
+  const { data: existing } = await supabase
+    .from('user_activity')
+    .select('xp_earned')
+    .eq('user_id', userId)
+    .eq('activity_date', today)
+    .maybeSingle()
+  await supabase.from('user_activity').upsert({
+    user_id: userId,
+    activity_date: today,
+    xp_earned: (existing?.xp_earned ?? 0) + xp,
+    updated_at: new Date().toISOString(),
+  }, { onConflict: 'user_id,activity_date' })
+}
+
+/** Adds XP to the profile and today's activity, and credits gems; returns what was actually awarded */
 export async function addRewards(
   supabase: SupabaseClient,
   userId: string,
@@ -38,6 +58,7 @@ export async function addRewards(
   if (xp > 0) {
     const { data: profile } = await supabase.from('user_profiles').select('total_xp').eq('user_id', userId).maybeSingle()
     await supabase.from('user_profiles').update({ total_xp: (profile?.total_xp ?? 0) + xp }).eq('user_id', userId)
+    await addDailyXp(supabase, userId, xp)
   }
   const credited = await awardGems(supabase, gems, reason, ref)
   return { xp, gems: credited }

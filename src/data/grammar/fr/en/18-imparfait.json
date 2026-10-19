@@ -1,0 +1,451 @@
+{
+  "slug": "imparfait",
+  "number": 18,
+  "part": 4,
+  "title": "L'imparfait",
+  "tagline": "Describing the past and telling stories by combining it with the passé composé.",
+  "goal": "Form the imparfait of any verb, describe the past and past habits, and combine it with the passé composé to tell stories.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "espanol",
+      "title": "Two past tenses",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English mostly uses one past tense («I played»). French splits it in two: the *passé composé* [[10]] for **events**, and the *imparfait* for **descriptions, habits and actions in progress**. In English, the imparfait usually matches «was …ing», «used to» or «would»."
+        },
+        {
+          "type": "table",
+          "head": [
+            "English",
+            "French"
+          ],
+          "rows": [
+            [
+              "When I **was** a child, I **used to play** in the park.",
+              "*Quand {j'étais} petit, {je jouais} au parc.*"
+            ],
+            [
+              "Yesterday I **played** football.",
+              "*Hier, {j'ai joué} au foot.*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formacion",
+      "title": "How it's formed",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Take the **nous** form of the present: *nous parlons, nous finissons, nous faisons*.",
+            "Remove **-ons** to get the stem: *parl-, finiss-, fais-*.",
+            "Add the endings."
+          ]
+        },
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "parler",
+              "meaning": "to speak",
+              "forms": [
+                "je parl{ais}",
+                "tu parl{ais}",
+                "il parl{ait}",
+                "nous parl{ions}",
+                "vous parl{iez}",
+                "ils parl{aient}"
+              ]
+            },
+            {
+              "verb": "finir",
+              "meaning": "to finish",
+              "forms": [
+                "je finiss{ais}",
+                "tu finiss{ais}",
+                "il finiss{ait}",
+                "nous finiss{ions}",
+                "vous finiss{iez}",
+                "ils finiss{aient}"
+              ]
+            },
+            {
+              "verb": "faire",
+              "meaning": "to do, to make",
+              "forms": [
+                "je fais{ais}",
+                "tu fais{ais}",
+                "il fais{ait}",
+                "nous fais{ions}",
+                "vous fais{iez}",
+                "ils fais{aient}"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*-ais, -ais, -ait, -aient* sound exactly the same, like the «e» in bed: *parlais = parlait = parlaient*. As in the present [[5]], the subject decides the spelling."
+        },
+        {
+          "type": "text",
+          "text": "**It works for irregular verbs too:** *nous avons → j'avais · nous allons → j'allais · nous voulons → je voulais · nous prenons → je prenais · nous buvons → je buvais*."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Spelling adjustments",
+          "text": "As in the present: *manger → je mang{e}ais*, *commencer → je commen{ç}ais*. But *nous mangions, nous commencions*, because the ending starts with an i."
+        }
+      ]
+    },
+    {
+      "id": "etre",
+      "title": "The only exception: être",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*nous sommes* doesn't work as a stem. *Être* uses **ét-**:"
+        },
+        {
+          "type": "formula",
+          "text": "j'étais · tu étais · il était · nous étions · vous étiez · ils étaient"
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "That's how French fairy tales begin: *Il était une fois…* (Once upon a time…)."
+        }
+      ]
+    },
+    {
+      "id": "usos",
+      "title": "What it's for",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Use",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Describing** people, places, the weather",
+              "*Il faisait beau. La maison était grande.* (It was sunny. The house was big.)"
+            ],
+            [
+              "**Habits** in the past (*avant, tous les jours, d'habitude*)",
+              "*Quand j'étais petit, j'allais à la plage tous les étés.* (I used to go…)"
+            ],
+            [
+              "**An action in progress** (was …ing)",
+              "*Je regardais la télé…* (I was watching TV…)"
+            ],
+            [
+              "**Feelings and states**",
+              "*J'avais peur. Elle était contente.*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contraste",
+      "title": "Imparfait or passé composé",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Think of a film: the *imparfait* is **the set** and the *passé composé* is **the action**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Imparfait: the set",
+            "Passé composé: the action"
+          ],
+          "rows": [
+            [
+              "What things were like, what was going on",
+              "What happened, one-off events"
+            ],
+            [
+              "*Il pleuvait, il faisait nuit…*",
+              "*… soudain, quelqu'un a frappé à la porte.*"
+            ],
+            [
+              "*Je dormais tranquillement…*",
+              "*… quand le téléphone a sonné.*"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Imparfait clues:** *tous les jours, toujours, d'habitude, souvent, avant, quand j'étais petit(e), pendant que*.",
+            "**Passé composé clues:** *soudain, tout à coup, un jour, hier, une fois, ce matin-là*."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Don't translate «was» automatically as *était*: «it was a great trip» (a finished event) is usually *ça a été un super voyage*, while «it was sunny» (description) is *il faisait beau*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "forma",
+      "title": "Form the imparfait",
+      "instructions": "Write the verb in the imparfait.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "j'___ (avoir)",
+          "answer": "avais"
+        },
+        {
+          "prompt": "tu ___ (aller)",
+          "answer": "allais"
+        },
+        {
+          "prompt": "il ___ (manger)",
+          "answer": "mangeait"
+        },
+        {
+          "prompt": "nous ___ (être)",
+          "answer": "étions"
+        },
+        {
+          "prompt": "vous ___ (finir)",
+          "answer": "finissiez"
+        },
+        {
+          "prompt": "ils ___ (faire)",
+          "answer": "faisaient"
+        },
+        {
+          "prompt": "je ___ (commencer)",
+          "answer": "commençais"
+        },
+        {
+          "prompt": "elles ___ (être)",
+          "answer": "étaient"
+        },
+        {
+          "prompt": "on ___ (prendre)",
+          "answer": "prenait"
+        },
+        {
+          "prompt": "nous ___ (manger)",
+          "answer": "mangions"
+        }
+      ],
+      "section": "formacion"
+    },
+    {
+      "id": "infancia",
+      "title": "When I was a child",
+      "instructions": "Fill in with the imparfait.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Quand j'étais petit, je ___ au foot tous les jours. (jouer)",
+          "answer": "jouais"
+        },
+        {
+          "prompt": "Ma sœur ___ un lapin blanc. (avoir)",
+          "answer": "avait"
+        },
+        {
+          "prompt": "Nous ___ dans une petite ville. (habiter)",
+          "answer": "habitions"
+        },
+        {
+          "prompt": "Mes parents ___ beaucoup. (travailler)",
+          "answer": "travaillaient"
+        },
+        {
+          "prompt": "Tous les dimanches, on ___ chez ma grand-mère. (manger)",
+          "answer": "mangeait"
+        },
+        {
+          "prompt": "Mon frère et moi, nous ___ très gourmands. (être)",
+          "answer": "étions"
+        }
+      ],
+      "section": "usos"
+    },
+    {
+      "id": "contraste",
+      "title": "Set or action?",
+      "instructions": "Choose the right tense.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Il ___ quand je suis sorti.",
+          "options": [
+            "pleuvait",
+            "a plu"
+          ],
+          "answer": "pleuvait"
+        },
+        {
+          "prompt": "Il pleuvait quand je ___.",
+          "options": [
+            "sortais",
+            "suis sorti"
+          ],
+          "answer": "suis sorti"
+        },
+        {
+          "prompt": "Quand j'étais petit, j'___ à la plage tous les étés.",
+          "options": [
+            "allais",
+            "suis allé"
+          ],
+          "answer": "allais"
+        },
+        {
+          "prompt": "Hier, j'___ une pizza.",
+          "options": [
+            "mangeais",
+            "ai mangé"
+          ],
+          "answer": "ai mangé"
+        },
+        {
+          "prompt": "Elle lisait quand le chat ___ du canapé.",
+          "options": [
+            "tombait",
+            "est tombé"
+          ],
+          "answer": "est tombé"
+        },
+        {
+          "prompt": "Mon grand-père ___ une longue moustache.",
+          "options": [
+            "avait",
+            "a eu"
+          ],
+          "answer": "avait"
+        },
+        {
+          "prompt": "Soudain, la lumière ___.",
+          "options": [
+            "s'éteignait",
+            "s'est éteinte"
+          ],
+          "answer": "s'est éteinte"
+        }
+      ],
+      "section": "contraste"
+    },
+    {
+      "id": "cuento",
+      "title": "Il était une fois…",
+      "instructions": "Complete the story with the imparfait (set) or the passé composé (action).",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Il était une fois une architecte qui ___ à Lyon.",
+          "options": [
+            "habitait",
+            "a habité"
+          ],
+          "answer": "habitait"
+        },
+        {
+          "prompt": "Elle ___ très douée, mais elle s'ennuyait au travail.",
+          "options": [
+            "était",
+            "a été"
+          ],
+          "answer": "était"
+        },
+        {
+          "prompt": "Tous les soirs, elle ___ des annonces d'emploi.",
+          "options": [
+            "lisait",
+            "a lu"
+          ],
+          "answer": "lisait"
+        },
+        {
+          "prompt": "Un jour, une entreprise de Montréal l'___.",
+          "options": [
+            "appelait",
+            "a appelée"
+          ],
+          "answer": "a appelée"
+        },
+        {
+          "prompt": "Le poste ___ parfait, mais elle avait peur de partir.",
+          "options": [
+            "semblait",
+            "a semblé"
+          ],
+          "answer": "semblait"
+        },
+        {
+          "prompt": "Finalement, elle ___ oui.",
+          "options": [
+            "disait",
+            "a dit"
+          ],
+          "answer": "a dit"
+        }
+      ],
+      "section": "contraste"
+    },
+    {
+      "id": "antes-ahora",
+      "title": "Then and now",
+      "instructions": "Put the sentence in the past with avant + imparfait.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Maintenant, je n'ai plus peur du noir. → Avant, j'…",
+          "answer": "Avant, j'avais peur du noir."
+        },
+        {
+          "prompt": "Maintenant, j'adore les légumes. → Avant, je… (détester)",
+          "answer": "Avant, je détestais les légumes."
+        },
+        {
+          "prompt": "Maintenant, nous habitons à Paris. → Avant, nous… (à Montréal)",
+          "answer": "Avant, nous habitions à Montréal."
+        },
+        {
+          "prompt": "Maintenant, il ne fume plus. → Avant, il…",
+          "answer": "Avant, il fumait."
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "I form the imparfait from the *nous* form.",
+    "I can conjugate *être* in the imparfait.",
+    "I describe the past and past habits.",
+    "I choose between the imparfait and the passé composé."
+  ],
+  "challenge": {
+    "title": "Then and now",
+    "text": "Write six sentences comparing your life ten years ago with now, using *avant* (imparfait) and *maintenant* (present): *Avant, j'habitais chez mes parents. Maintenant, j'habite seul(e).* Use *ne… plus* [[12]] at least once."
+  }
+}

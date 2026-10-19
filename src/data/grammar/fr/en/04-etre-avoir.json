@@ -1,0 +1,472 @@
+{
+  "slug": "etre-avoir",
+  "number": 4,
+  "part": 1,
+  "title": "Être and avoir",
+  "tagline": "The two most used verbs: conjugation, uses and where French says «have» but English says «be».",
+  "goal": "Conjugate être (to be) and avoir (to have) without thinking, tell ils sont from ils ont by ear and avoid the classic traps like «I am hungry» or «I am 40».",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "importancia",
+      "title": "Why they matter so much",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Être* and *avoir* are the most frequent verbs in French. You use them to introduce yourself, describe things, talk about age and how you feel, and they are also the **auxiliaries** of the past tense [[10]], just like «have» in «I have eaten». Both are irregular: they have to be memorised."
+        }
+      ]
+    },
+    {
+      "id": "etre",
+      "title": "Être: to be",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "être",
+              "meaning": "to be",
+              "forms": [
+                "je {suis}",
+                "tu {es}",
+                "il {est}",
+                "nous {sommes}",
+                "vous {êtes}",
+                "ils {sont}"
+              ],
+              "notes": [
+                "«swee»",
+                "«ay»",
+                "«ay»",
+                "«som»",
+                "«voo-zet», with the liaison",
+                "«sohn», with a nasal o"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "On",
+          "text": "*on* means «one», «we» or «people» and takes the same form as *il*. In conversation *on* is the usual way to say «we»: *On est prêts* = We're ready."
+        },
+        {
+          "type": "text",
+          "text": "**Uses:** nationality (*Je suis canadienne*), job (*Il est médecin*: no article, unlike «he's a doctor»), description (*Elle est grande*), state (*Nous sommes contents*) and location (*Vous êtes à Paris*)."
+        }
+      ]
+    },
+    {
+      "id": "avoir",
+      "title": "Avoir: to have",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": [
+            "je",
+            "tu",
+            "il / elle / on",
+            "nous",
+            "vous",
+            "ils / elles"
+          ],
+          "verbs": [
+            {
+              "verb": "avoir",
+              "meaning": "to have",
+              "forms": [
+                "j'{ai}",
+                "tu {as}",
+                "il {a}",
+                "nous {avons}",
+                "vous {avez}",
+                "ils {ont}"
+              ],
+              "notes": [
+                "«zhay»",
+                "«ah»",
+                "«ah»",
+                "«noo-za-vohn»",
+                "«voo-za-vay»",
+                "«eel-zohn»"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "The French j",
+          "text": "The *j* in *j'ai* is not the English «j» of «jam»: it's the soft sound in «measure» or «vision»."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*je* + *ai* = *j'ai*. Because *ai* starts with a vowel, *je* loses its e. Never «je ai»."
+        }
+      ]
+    },
+    {
+      "id": "trampas",
+      "title": "When English says «be» and French says «have»",
+      "blocks": [
+        {
+          "type": "table",
+          "caption": "Expressions with avoir",
+          "head": [
+            "French",
+            "English"
+          ],
+          "rows": [
+            [
+              "*avoir faim*",
+              "to be hungry"
+            ],
+            [
+              "*avoir soif*",
+              "to be thirsty"
+            ],
+            [
+              "*avoir chaud / froid*",
+              "to be hot / cold"
+            ],
+            [
+              "*avoir peur*",
+              "to be afraid"
+            ],
+            [
+              "*avoir sommeil*",
+              "to be sleepy"
+            ],
+            [
+              "*avoir raison / tort*",
+              "to be right / wrong"
+            ],
+            [
+              "*avoir … ans*",
+              "to be … years old"
+            ],
+            [
+              "*avoir besoin de*",
+              "to need"
+            ],
+            [
+              "*avoir envie de*",
+              "to feel like"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "The two classic mistakes",
+          "text": "«I'm 40» = *J'ai quarante ans*, never «je suis quarante». «I'm cold» = *J'ai froid*; *je suis froid* means «I'm a cold person»."
+        }
+      ]
+    },
+    {
+      "id": "sont-ont",
+      "title": "Ils sont or ils ont",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Pronounced",
+            "Means"
+          ],
+          "rows": [
+            [
+              "*ils {s}ont*",
+              "«eel-sohn», with a hissing s",
+              "they are"
+            ],
+            [
+              "*ils {ont}*",
+              "«eel-zohn», with a buzzing z",
+              "they have"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "If you hear a buzz [z], it's *avoir*. If you hear a hiss [s], it's *être*. That [z] is a *liaison* [[14]]."
+        }
+      ]
+    },
+    {
+      "id": "negacion",
+      "title": "In the negative",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "ne + verb + pas",
+          "caption": "*Je {ne} suis {pas} fatigué.*"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Tu n'es pas seul.",
+              "tr": "You're not alone.",
+              "note": "ne → n' before a vowel"
+            },
+            {
+              "fr": "Je n'ai pas de voiture.",
+              "tr": "I don't have a car.",
+              "note": "un → de in the negative [[6]]"
+            },
+            {
+              "fr": "Nous n'avons pas faim.",
+              "tr": "We're not hungry."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "There's more on negation in [[12]]."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "title": "Conjugate",
+      "instructions": "Write the correct form of the verb.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Je ___ fatigué. (être)",
+          "answer": "suis"
+        },
+        {
+          "prompt": "Tu ___ deux sœurs. (avoir)",
+          "answer": "as"
+        },
+        {
+          "prompt": "Elle ___ médecin. (être)",
+          "answer": "est"
+        },
+        {
+          "prompt": "Nous ___ une voiture. (avoir)",
+          "answer": "avons"
+        },
+        {
+          "prompt": "Vous ___ à Paris ? (être)",
+          "answer": "êtes"
+        },
+        {
+          "prompt": "Ils ___ trois enfants. (avoir)",
+          "answer": "ont"
+        },
+        {
+          "prompt": "Nous ___ contents. (être)",
+          "answer": "sommes"
+        },
+        {
+          "prompt": "Vous ___ raison. (avoir)",
+          "answer": "avez"
+        },
+        {
+          "prompt": "Elles ___ françaises. (être)",
+          "answer": "sont"
+        },
+        {
+          "prompt": "J'___ faim. (avoir)",
+          "answer": "ai"
+        }
+      ],
+      "section": "avoir"
+    },
+    {
+      "id": "traduce",
+      "title": "Don't fall into the trap",
+      "instructions": "Translate into French.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "I'm hungry.",
+          "answer": "J'ai faim."
+        },
+        {
+          "prompt": "I'm forty.",
+          "answer": "J'ai quarante ans.",
+          "accept": [
+            "J'ai 40 ans."
+          ]
+        },
+        {
+          "prompt": "We're cold.",
+          "answer": "Nous avons froid.",
+          "accept": [
+            "On a froid."
+          ]
+        },
+        {
+          "prompt": "You're right.",
+          "answer": "Tu as raison.",
+          "accept": [
+            "Vous avez raison."
+          ]
+        },
+        {
+          "prompt": "I'm tired. (said by a woman)",
+          "answer": "Je suis fatiguée."
+        },
+        {
+          "prompt": "We're Canadian. (a group of men)",
+          "answer": "Nous sommes canadiens.",
+          "accept": [
+            "On est canadiens."
+          ]
+        },
+        {
+          "prompt": "They're scared.",
+          "answer": "Ils ont peur.",
+          "accept": [
+            "Elles ont peur."
+          ]
+        },
+        {
+          "prompt": "I'm not sleepy.",
+          "answer": "Je n'ai pas sommeil."
+        },
+        {
+          "prompt": "I need a coffee.",
+          "answer": "J'ai besoin d'un café."
+        }
+      ],
+      "section": "trampas"
+    },
+    {
+      "id": "sont-ont",
+      "title": "sont or ont",
+      "instructions": "Fill in with sont or ont.",
+      "kind": "choice",
+      "options": [
+        "sont",
+        "ont"
+      ],
+      "items": [
+        {
+          "prompt": "Mes parents ___ très gentils.",
+          "answer": "sont"
+        },
+        {
+          "prompt": "Ils ___ trois enfants.",
+          "answer": "ont"
+        },
+        {
+          "prompt": "Elles ___ faim.",
+          "answer": "ont"
+        },
+        {
+          "prompt": "Les clés ___ sur la table.",
+          "answer": "sont"
+        },
+        {
+          "prompt": "Ils ___ français.",
+          "answer": "sont"
+        },
+        {
+          "prompt": "Elles ___ quarante ans.",
+          "answer": "ont"
+        }
+      ],
+      "section": "sont-ont"
+    },
+    {
+      "id": "oido",
+      "title": "By ear",
+      "instructions": "Listen and choose what you heard.",
+      "kind": "choice",
+      "listen": true,
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "Ils sont là.",
+            "Ils ont là."
+          ],
+          "answer": "Ils sont là."
+        },
+        {
+          "options": [
+            "Elles sont faim.",
+            "Elles ont faim."
+          ],
+          "answer": "Elles ont faim."
+        },
+        {
+          "options": [
+            "Ils sont deux chiens.",
+            "Ils ont deux chiens."
+          ],
+          "answer": "Ils ont deux chiens."
+        },
+        {
+          "options": [
+            "Elles sont contentes.",
+            "Elles ont contentes."
+          ],
+          "answer": "Elles sont contentes."
+        }
+      ],
+      "section": "sont-ont"
+    },
+    {
+      "id": "negativo",
+      "title": "Make it negative",
+      "instructions": "Write the sentence in the negative.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Je suis fatigué.",
+          "answer": "Je ne suis pas fatigué."
+        },
+        {
+          "prompt": "Tu es seul.",
+          "answer": "Tu n'es pas seul."
+        },
+        {
+          "prompt": "Nous avons faim.",
+          "answer": "Nous n'avons pas faim."
+        },
+        {
+          "prompt": "Ils sont à la maison.",
+          "answer": "Ils ne sont pas à la maison."
+        },
+        {
+          "prompt": "Elle a raison.",
+          "answer": "Elle n'a pas raison."
+        }
+      ],
+      "section": "negacion"
+    }
+  ],
+  "checklist": [
+    "I can conjugate *être* without looking.",
+    "I can conjugate *avoir* without looking.",
+    "I use *avoir* for age, hunger, cold…",
+    "I can tell *ils sont* from *ils ont* by ear.",
+    "I make negative sentences with *ne… pas*."
+  ],
+  "challenge": {
+    "title": "Introduce yourself",
+    "text": "Introduce yourself out loud in five sentences: name, nationality, age, two personality traits and how you feel right now (*J'ai faim, j'ai sommeil…*). Use *être* at least twice and *avoir* at least three times."
+  }
+}

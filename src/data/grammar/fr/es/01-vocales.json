@@ -1,0 +1,622 @@
+{
+  "slug": "vocales",
+  "number": 1,
+  "part": 1,
+  "title": "Las vocales del francés",
+  "tagline": "Los sonidos que el español no tiene, las combinaciones de letras y las nasales.",
+  "goal": "Distinguir los sonidos vocálicos que no existen en español, leer las combinaciones de vocales como un solo sonido y reconocer las vocales nasales.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "posiciones",
+      "title": "Tres posiciones nuevas para la boca",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El español tiene 5 sonidos vocálicos; el francés, **más de una docena**. La mayoría salen de combinar tres posiciones de los labios que conviene practicar frente a un espejo:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Labios estirados**, como en una sonrisa: la *i* de *lit*.",
+            "**Labios redondeados** y hacia adelante: el sonido «u» español, que en francés se escribe *ou*: *vous*.",
+            "**Labios redondeados diciendo «i»**: la *u* francesa de *tu*, *lune*, *rue*. Es el sonido clave del idioma."
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "lit",
+              "tr": "cama",
+              "note": "labios estirados"
+            },
+            {
+              "fr": "vous",
+              "tr": "ustedes, usted",
+              "note": "labios redondeados"
+            },
+            {
+              "fr": "tu",
+              "tr": "tú",
+              "note": "labios redondeados diciendo «i»"
+            },
+            {
+              "fr": "tout · tu",
+              "tr": "todo · tú",
+              "note": "compáralos"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Cómo encontrar la u francesa",
+          "text": "Di «iiii» y, sin mover la lengua, redondea los labios como para silbar. El sonido que sale es la *u* de *tu*."
+        }
+      ]
+    },
+    {
+      "id": "simples",
+      "title": "Las vocales simples",
+      "blocks": [
+        {
+          "type": "sounds",
+          "items": [
+            {
+              "label": "a",
+              "hint": "Igual que en español",
+              "examples": [
+                "ami",
+                "chat",
+                "la"
+              ],
+              "ipa": "[a]"
+            },
+            {
+              "label": "i / y",
+              "hint": "Igual que en español",
+              "examples": [
+                "lit",
+                "vie",
+                "stylo"
+              ],
+              "ipa": "[i]"
+            },
+            {
+              "label": "o",
+              "hint": "Como la o española; a veces algo más abierta",
+              "examples": [
+                "mot",
+                "vélo",
+                "porte"
+              ],
+              "ipa": "[o] / [ɔ]"
+            },
+            {
+              "label": "u",
+              "hint": "Labios redondeados diciendo «i»",
+              "examples": [
+                "tu",
+                "lune",
+                "rue"
+              ],
+              "ipa": "[y]"
+            },
+            {
+              "label": "é",
+              "hint": "E cerrada, con los labios estirados",
+              "examples": [
+                "été",
+                "café",
+                "bébé"
+              ],
+              "ipa": "[e]"
+            },
+            {
+              "label": "è / ê",
+              "hint": "E más abierta que la española",
+              "examples": [
+                "mère",
+                "fête",
+                "tête"
+              ],
+              "ipa": "[ɛ]"
+            },
+            {
+              "label": "e sin tilde",
+              "hint": "Una e breve y relajada; al final de palabra casi siempre es muda",
+              "examples": [
+                "le",
+                "petit",
+                "table",
+                "porte"
+              ],
+              "ipa": "[ə] o muda"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "La confusión más frecuente",
+          "text": "La *u* francesa no suena como la u española. *tu* (tú) y *tout* (todo) son palabras distintas y suenan distinto."
+        }
+      ]
+    },
+    {
+      "id": "combinaciones",
+      "title": "Combinaciones de vocales",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En francés, varias vocales seguidas suelen formar **un solo sonido**. No se leen letra por letra."
+        },
+        {
+          "type": "sounds",
+          "items": [
+            {
+              "label": "ou",
+              "hint": "La u española",
+              "examples": [
+                "vous",
+                "rouge",
+                "loup"
+              ]
+            },
+            {
+              "label": "oi",
+              "hint": "«ua»",
+              "examples": [
+                "moi",
+                "roi",
+                "voiture"
+              ]
+            },
+            {
+              "label": "au / eau",
+              "hint": "Una o",
+              "examples": [
+                "jaune",
+                "beau",
+                "eau",
+                "chapeau"
+              ]
+            },
+            {
+              "label": "ai / ei",
+              "hint": "Una e abierta, como è",
+              "examples": [
+                "lait",
+                "maison",
+                "neige"
+              ]
+            },
+            {
+              "label": "eu / œu",
+              "hint": "Labios redondeados diciendo «e»",
+              "examples": [
+                "deux",
+                "bleu",
+                "fleur",
+                "sœur"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*eau* son tres letras y suenan como una sola o. El francés escribe mucho más de lo que pronuncia."
+        }
+      ]
+    },
+    {
+      "id": "nasales",
+      "title": "Las vocales nasales",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Cuando una vocal va seguida de **n** o **m** en la misma sílaba, el aire sale también por la nariz y la n o la m dejan de pronunciarse."
+        },
+        {
+          "type": "sounds",
+          "items": [
+            {
+              "label": "an, am, en, em",
+              "hint": "[ɑ̃]: una a nasal",
+              "examples": [
+                "enfant",
+                "chambre",
+                "temps"
+              ]
+            },
+            {
+              "label": "in, im, ain, ein, un",
+              "hint": "[ɛ̃]: una e abierta nasal",
+              "examples": [
+                "vin",
+                "pain",
+                "plein",
+                "simple",
+                "un"
+              ]
+            },
+            {
+              "label": "on, om",
+              "hint": "[ɔ̃]: una o nasal",
+              "examples": [
+                "bon",
+                "nom",
+                "maison",
+                "pont"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*un* tenía antes un sonido propio; en el francés actual de Francia suena casi igual que *in*."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Una prueba rápida",
+          "text": "Tápate la nariz y di *bon*. Si el sonido cambia mucho, estás haciendo bien la nasal."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Cuándo no hay nasal",
+          "text": "No hay nasal si después de la n o la m viene **otra vocal** u **otra n o m**: *bon* → *bonne* (bo-ne), *an* → *année*, *un* → *une*."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "bon · bonne",
+              "tr": "bueno · buena",
+              "note": "Nasal → no nasal"
+            },
+            {
+              "fr": "cousin · cousine",
+              "tr": "primo · prima"
+            },
+            {
+              "fr": "américain · américaine",
+              "tr": "estadounidense (m · f)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Esto se vuelve a ver al formar el femenino [[2]]: muchas veces, al añadir la *-e*, la nasal desaparece."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "u-ou",
+      "title": "¿ou o u?",
+      "instructions": "Escucha la palabra y elige el sonido: [u] como en *vous* o [y] como en *tu*.",
+      "kind": "choice",
+      "listen": true,
+      "options": [
+        "ou [u]",
+        "u [y]"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "tout",
+          "answer": "ou [u]"
+        },
+        {
+          "prompt": "tu",
+          "answer": "u [y]"
+        },
+        {
+          "prompt": "roue",
+          "answer": "ou [u]"
+        },
+        {
+          "prompt": "rue",
+          "answer": "u [y]"
+        },
+        {
+          "prompt": "vous",
+          "answer": "ou [u]"
+        },
+        {
+          "prompt": "vu",
+          "answer": "u [y]"
+        },
+        {
+          "prompt": "dessous",
+          "answer": "ou [u]"
+        },
+        {
+          "prompt": "dessus",
+          "answer": "u [y]"
+        },
+        {
+          "prompt": "loup",
+          "answer": "ou [u]"
+        },
+        {
+          "prompt": "lu",
+          "answer": "u [y]"
+        },
+        {
+          "prompt": "pour",
+          "answer": "ou [u]"
+        },
+        {
+          "prompt": "pur",
+          "answer": "u [y]"
+        }
+      ],
+      "section": "posiciones"
+    },
+    {
+      "id": "pares",
+      "title": "Pares mínimos",
+      "instructions": "Escucha y elige la palabra que oíste.",
+      "kind": "choice",
+      "listen": true,
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "tu",
+            "tout"
+          ],
+          "answer": "tu",
+          "explain": "*tu* = tú · *tout* = todo"
+        },
+        {
+          "options": [
+            "rue",
+            "roue"
+          ],
+          "answer": "roue",
+          "explain": "*rue* = calle · *roue* = rueda"
+        },
+        {
+          "options": [
+            "dessus",
+            "dessous"
+          ],
+          "answer": "dessous",
+          "explain": "*dessus* = encima · *dessous* = debajo"
+        },
+        {
+          "options": [
+            "vin",
+            "vent"
+          ],
+          "answer": "vin",
+          "explain": "*vin* = vino · *vent* = viento"
+        },
+        {
+          "options": [
+            "bon",
+            "banc"
+          ],
+          "answer": "banc",
+          "explain": "*bon* = bueno · *banc* = banco para sentarse"
+        },
+        {
+          "options": [
+            "beau",
+            "bu"
+          ],
+          "answer": "beau",
+          "explain": "*beau* = bonito · *bu* = bebido"
+        },
+        {
+          "options": [
+            "deux",
+            "des"
+          ],
+          "answer": "deux",
+          "explain": "*deux* = dos · *des* = unos"
+        },
+        {
+          "options": [
+            "vu",
+            "vous"
+          ],
+          "answer": "vous",
+          "explain": "*vu* = visto · *vous* = ustedes, usted"
+        }
+      ],
+      "section": "simples"
+    },
+    {
+      "id": "combinaciones",
+      "title": "¿Cómo suena?",
+      "instructions": "Elige el sonido de la parte destacada.",
+      "kind": "choice",
+      "options": [
+        "[o]",
+        "«ua»",
+        "[ɛ] (è)",
+        "[u]"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "{eau}",
+          "answer": "[o]"
+        },
+        {
+          "prompt": "v{oi}ture",
+          "answer": "«ua»"
+        },
+        {
+          "prompt": "m{ai}son",
+          "answer": "[ɛ] (è)"
+        },
+        {
+          "prompt": "r{ou}ge",
+          "answer": "[u]"
+        },
+        {
+          "prompt": "j{au}ne",
+          "answer": "[o]"
+        },
+        {
+          "prompt": "n{ei}ge",
+          "answer": "[ɛ] (è)"
+        },
+        {
+          "prompt": "m{oi}",
+          "answer": "«ua»"
+        },
+        {
+          "prompt": "chap{eau}",
+          "answer": "[o]"
+        }
+      ],
+      "section": "combinaciones"
+    },
+    {
+      "id": "nasal",
+      "title": "¿Nasal o no?",
+      "instructions": "¿La palabra tiene una vocal nasal? Recuerda: si después de la n viene una vocal u otra n, no hay nasal.",
+      "kind": "choice",
+      "options": [
+        "Nasal",
+        "No nasal"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "bon",
+          "answer": "Nasal"
+        },
+        {
+          "prompt": "bonne",
+          "answer": "No nasal"
+        },
+        {
+          "prompt": "an",
+          "answer": "Nasal"
+        },
+        {
+          "prompt": "année",
+          "answer": "No nasal"
+        },
+        {
+          "prompt": "plein",
+          "answer": "Nasal"
+        },
+        {
+          "prompt": "pleine",
+          "answer": "No nasal"
+        },
+        {
+          "prompt": "cousin",
+          "answer": "Nasal"
+        },
+        {
+          "prompt": "cousine",
+          "answer": "No nasal"
+        },
+        {
+          "prompt": "lion",
+          "answer": "Nasal"
+        },
+        {
+          "prompt": "lionne",
+          "answer": "No nasal"
+        }
+      ],
+      "section": "nasales"
+    },
+    {
+      "id": "intruso",
+      "title": "La palabra que no encaja",
+      "instructions": "Tres palabras comparten un sonido. Elige la que no lo tiene.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "beau",
+            "chapeau",
+            "jaune",
+            "lune"
+          ],
+          "answer": "lune",
+          "explain": "Las demás suenan [o]."
+        },
+        {
+          "options": [
+            "moi",
+            "roi",
+            "voir",
+            "vous"
+          ],
+          "answer": "vous",
+          "explain": "Las demás suenan «ua»."
+        },
+        {
+          "options": [
+            "pain",
+            "vin",
+            "main",
+            "pomme"
+          ],
+          "answer": "pomme",
+          "explain": "*pomme* no es nasal: después de la m viene otra m."
+        },
+        {
+          "options": [
+            "enfant",
+            "temps",
+            "chambre",
+            "bon"
+          ],
+          "answer": "bon",
+          "explain": "Las demás tienen la nasal [ɑ̃]; *bon* tiene [ɔ̃]."
+        },
+        {
+          "options": [
+            "deux",
+            "bleu",
+            "feu",
+            "fou"
+          ],
+          "answer": "fou",
+          "explain": "*fou* suena [u]; las demás, [ø]."
+        },
+        {
+          "options": [
+            "tu",
+            "rue",
+            "lune",
+            "loup"
+          ],
+          "answer": "loup",
+          "explain": "*loup* suena [u]; las demás tienen la u francesa [y]."
+        }
+      ],
+      "section": "final"
+    }
+  ],
+  "checklist": [
+    "Distingo *u* de *ou* al oír y al hablar.",
+    "Leo *oi, au, eau, ai, eu* como un solo sonido.",
+    "Reconozco las vocales nasales.",
+    "Sé cuándo desaparece la nasal (*bon* → *bonne*).",
+    "Sé que la *e* final suele ser muda."
+  ],
+  "challenge": {
+    "title": "Grábate 30 segundos",
+    "text": "Graba una nota de voz presentándote y escúchala. Puedes usar este modelo: *Bonjour ! Je m'appelle… J'aime le pain, le vin rouge et la couleur bleue. Au revoir !* Comprueba que la *u* suena con los labios redondeados, que la *e* final de *rouge* no se oye y que las nasales salen por la nariz."
+  }
+}

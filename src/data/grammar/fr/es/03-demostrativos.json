@@ -1,0 +1,413 @@
+{
+  "slug": "demostrativos",
+  "number": 3,
+  "part": 1,
+  "title": "Ce, cet, cette, ces",
+  "tagline": "Los demostrativos: cuál usar, cómo suenan y cómo no confundirlos con se y ses.",
+  "goal": "Elegir sin dudar entre ce, cet, cette y ces, pronunciarlos bien, usar -ci y -là y no confundirlos con se y ses.",
+  "minutes": 8,
+  "sections": [
+    {
+      "id": "para-que",
+      "title": "Para qué sirven",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Son los **demostrativos**: este, ese, aquel y sus femeninos y plurales. El francés los resume en **cuatro formas** y no distingue entre «este», «ese» y «aquel»; solo le importan el **género** y el **número** del sustantivo [[2]]."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Ce livre est super.",
+              "tr": "Este (ese) libro es genial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regla",
+      "title": "La regla",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Forma",
+            "Cuándo",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "*ce*",
+              "Masculino singular que empieza por **consonante**",
+              "*ce livre, ce garçon, ce fromage*"
+            ],
+            [
+              "*cet*",
+              "Masculino singular que empieza por **vocal o h muda**",
+              "*cet ami, cet arbre, cet homme, cet hôtel*"
+            ],
+            [
+              "*cette*",
+              "**Femenino** singular, siempre",
+              "*cette maison, cette amie, cette heure*"
+            ],
+            [
+              "*ces*",
+              "**Plural**, masculino y femenino",
+              "*ces livres, ces amis, ces maisons*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Tres preguntas, en este orden",
+          "text": "1. ¿Es plural? → *ces*. 2. ¿Es femenino? → *cette*. 3. ¿Empieza por vocal o h muda? → *cet*; si no → *ce*."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*cet* existe para evitar el choque de dos vocales (*ce ami*). El francés intercala una t como puente. Verás la misma idea con *mon amie* [[8]] y *bel, nouvel, vieil* [[13]]."
+        }
+      ]
+    },
+    {
+      "id": "pronunciacion",
+      "title": "Pronunciación",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Forma",
+            "Suena como"
+          ],
+          "rows": [
+            [
+              "*ce*",
+              "«se» con una e breve y relajada [sə]"
+            ],
+            [
+              "*cet*",
+              "«set» [sɛt]"
+            ],
+            [
+              "*cette*",
+              "«set» [sɛt]: **igual** que *cet*"
+            ],
+            [
+              "*ces*",
+              "«se» con e cerrada [se]"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Delante de vocal, la *s* de *ces* suena [z] y se une a la palabra siguiente: *ces‿amis* (se-za-mí). Es una *liaison* [[14]]."
+        }
+      ]
+    },
+    {
+      "id": "h",
+      "title": "La letra h",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En francés la h **nunca se pronuncia**, pero hay dos tipos según cómo se comporta:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**h muda**: se comporta como una vocal → *cet homme, cet hôpital, cet hôtel, cette heure*.",
+            "**h aspirada**: se comporta como una consonante → *ce héros, ce hibou, ce haricot, ce hamburger*."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "No hay una regla para saber cuál es cuál: hay que aprenderlas. Muchos diccionarios marcan la h aspirada con un asterisco o un apóstrofo."
+        }
+      ]
+    },
+    {
+      "id": "ci-la",
+      "title": "-ci y -là",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Para distinguir lo cercano de lo lejano se añade **-ci** o **-là** al sustantivo:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "ce livre-ci",
+              "tr": "este libro (aquí)"
+            },
+            {
+              "fr": "ce livre-là",
+              "tr": "ese o aquel libro (allá)"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "En la conversación se usa mucho más *-là*, incluso para cosas cercanas: *Je veux cette robe-là.*"
+        }
+      ]
+    },
+    {
+      "id": "homofonos",
+      "title": "No confundir con se y ses",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Demostrativo",
+            "Suena igual que",
+            "Cómo distinguirlos"
+          ],
+          "rows": [
+            [
+              "*ce* (este)",
+              "*se*: pronombre reflexivo (*il se lave*) [[17]]",
+              "*se* va con un verbo; *ce*, con un sustantivo."
+            ],
+            [
+              "*ces* (estos)",
+              "*ses*: posesivo (*ses amis*, sus amigos) [[8]]",
+              "¿Se puede señalar? → *ces*. ¿Es «de él» o «de ella»? → *ses*."
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "El *ce* de *c'est* y *ce que* es un pronombre («eso»), no un demostrativo que acompaña a un sustantivo."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "title": "Elige la forma",
+      "instructions": "Completa con ce, cet, cette o ces.",
+      "kind": "choice",
+      "options": [
+        "ce",
+        "cet",
+        "cette",
+        "ces"
+      ],
+      "items": [
+        {
+          "prompt": "___ livre",
+          "answer": "ce"
+        },
+        {
+          "prompt": "___ école",
+          "answer": "cette"
+        },
+        {
+          "prompt": "___ arbre",
+          "answer": "cet"
+        },
+        {
+          "prompt": "___ chaussures",
+          "answer": "ces"
+        },
+        {
+          "prompt": "___ homme",
+          "answer": "cet",
+          "explain": "h muda: se comporta como vocal."
+        },
+        {
+          "prompt": "___ héros",
+          "answer": "ce",
+          "explain": "h aspirada: se comporta como consonante."
+        },
+        {
+          "prompt": "___ ordinateur",
+          "answer": "cet"
+        },
+        {
+          "prompt": "___ fille",
+          "answer": "cette"
+        },
+        {
+          "prompt": "___ hôtel",
+          "answer": "cet"
+        },
+        {
+          "prompt": "___ étudiante",
+          "answer": "cette",
+          "explain": "Femenino: siempre *cette*, aunque empiece por vocal."
+        },
+        {
+          "prompt": "___ hibou",
+          "answer": "ce",
+          "explain": "h aspirada."
+        },
+        {
+          "prompt": "___ enfants",
+          "answer": "ces"
+        },
+        {
+          "prompt": "___ avion",
+          "answer": "cet"
+        },
+        {
+          "prompt": "___ hamburger",
+          "answer": "ce",
+          "explain": "h aspirada."
+        }
+      ],
+      "section": "regla"
+    },
+    {
+      "id": "corrige",
+      "title": "Corrige el demostrativo",
+      "instructions": "Escribe la frase corregida.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Ce arbre est très grand.",
+          "answer": "Cet arbre est très grand.",
+          "explain": "Masculino + vocal."
+        },
+        {
+          "prompt": "Cet maison est jolie.",
+          "answer": "Cette maison est jolie.",
+          "explain": "Femenino."
+        },
+        {
+          "prompt": "Cette livres sont intéressants.",
+          "answer": "Ces livres sont intéressants.",
+          "explain": "Plural."
+        },
+        {
+          "prompt": "Cet héros est courageux.",
+          "answer": "Ce héros est courageux.",
+          "explain": "h aspirada."
+        },
+        {
+          "prompt": "Ces homme est mon professeur.",
+          "answer": "Cet homme est mon professeur.",
+          "explain": "Singular con h muda."
+        },
+        {
+          "prompt": "Ce amie est sympa.",
+          "answer": "Cette amie est sympa.",
+          "explain": "Femenino, aunque empiece por vocal."
+        }
+      ],
+      "section": "h"
+    },
+    {
+      "id": "mercado",
+      "title": "En el mercado",
+      "instructions": "Completa el diálogo entre un cliente y el vendedor.",
+      "kind": "choice",
+      "options": [
+        "ce",
+        "cet",
+        "cette",
+        "ces"
+      ],
+      "items": [
+        {
+          "prompt": "Combien coûte ___ fromage ?",
+          "answer": "ce"
+        },
+        {
+          "prompt": "Et ___ pommes ?",
+          "answer": "ces"
+        },
+        {
+          "prompt": "Je voudrais aussi ___ ananas.",
+          "answer": "cet"
+        },
+        {
+          "prompt": "Oui, ___ baguette-là, s'il vous plaît.",
+          "answer": "cette"
+        },
+        {
+          "prompt": "___ achats font douze euros.",
+          "answer": "Ces",
+          "options": [
+            "Ce",
+            "Cet",
+            "Cette",
+            "Ces"
+          ]
+        },
+        {
+          "prompt": "___ marché est vraiment bien.",
+          "answer": "Ce",
+          "options": [
+            "Ce",
+            "Cet",
+            "Cette",
+            "Ces"
+          ]
+        }
+      ],
+      "section": "ci-la"
+    },
+    {
+      "id": "homofonos",
+      "title": "ce, se, ces o ses",
+      "instructions": "¿Señala, es reflexivo o es posesivo?",
+      "kind": "choice",
+      "options": [
+        "ce",
+        "se",
+        "ces",
+        "ses"
+      ],
+      "items": [
+        {
+          "prompt": "Il ___ lève à sept heures.",
+          "answer": "se",
+          "explain": "Va con un verbo: reflexivo."
+        },
+        {
+          "prompt": "Regarde ___ chien ! Il est énorme.",
+          "answer": "ce"
+        },
+        {
+          "prompt": "Tu vois ___ oiseaux, là-bas ?",
+          "answer": "ces"
+        },
+        {
+          "prompt": "Léo dîne avec ___ frères. (sus hermanos)",
+          "answer": "ses",
+          "explain": "Posesivo: los hermanos de Léo."
+        },
+        {
+          "prompt": "Elles ___ promènent dans le parc.",
+          "answer": "se"
+        },
+        {
+          "prompt": "J'adore ___ chansons-là.",
+          "answer": "ces"
+        }
+      ],
+      "section": "homofonos"
+    }
+  ],
+  "checklist": [
+    "Elijo bien entre *ce, cet, cette, ces*.",
+    "Sé cuándo usar *cet* (vocal o h muda).",
+    "Uso *-ci* y *-là*.",
+    "No confundo *ce* con *se* ni *ces* con *ses*."
+  ],
+  "challenge": {
+    "title": "Presenta tu casa",
+    "text": "Recorre una habitación y presenta ocho objetos en voz alta con *ce, cet, cette* y *ces*, cada uno con un adjetivo: *Ce canapé est confortable. Cette lampe est vieille. Ces livres-là sont à moi.*"
+  }
+}

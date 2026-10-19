@@ -1,0 +1,886 @@
+{
+  "language": "fr",
+  "parts": [
+    {
+      "number": 1,
+      "title": "Sounds and basics",
+      "description": "How French sounds, the gender of words and the two essential verbs."
+    },
+    {
+      "number": 2,
+      "title": "The present",
+      "description": "Conjugating, talking about food and quantities, numbers and saying whose things are."
+    },
+    {
+      "number": 3,
+      "title": "Telling, asking, describing",
+      "description": "The past, questions, negation and adjectives."
+    },
+    {
+      "number": 4,
+      "title": "Sounding natural",
+      "description": "Liaison, pronouns, reflexive verbs and the imparfait."
+    }
+  ],
+  "modules": [
+    {
+      "slug": "vocales",
+      "number": 1,
+      "part": 1,
+      "title": "French vowels",
+      "tagline": "The sounds English doesn't have, letter combinations and nasal vowels.",
+      "minutes": 10,
+      "sections": [
+        "Three mouth positions",
+        "Single vowels",
+        "Vowel combinations",
+        "Nasal vowels"
+      ],
+      "exercises": [
+        {
+          "id": "u-ou",
+          "title": "ou or u?",
+          "section": "posiciones",
+          "count": 12
+        },
+        {
+          "id": "pares",
+          "title": "Minimal pairs",
+          "section": "simples",
+          "count": 8
+        },
+        {
+          "id": "combinaciones",
+          "title": "How does it sound?",
+          "section": "combinaciones",
+          "count": 8
+        },
+        {
+          "id": "nasal",
+          "title": "Nasal or not?",
+          "section": "nasales",
+          "count": 10
+        },
+        {
+          "id": "intruso",
+          "title": "The odd one out",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "masculino-femenino",
+      "number": 2,
+      "part": 1,
+      "title": "Masculine and feminine",
+      "tagline": "Articles, endings that give gender away and the words most learners get wrong.",
+      "minutes": 12,
+      "sections": [
+        "Articles",
+        "Clues from the ending",
+        "Everyday words that are easy to get wrong",
+        "Feminine adjectives",
+        "People and animals"
+      ],
+      "exercises": [
+        {
+          "id": "terminaciones",
+          "title": "Masculine or feminine?",
+          "section": "terminaciones",
+          "count": 14
+        },
+        {
+          "id": "trampas",
+          "title": "Everyday traps",
+          "section": "trampas",
+          "count": 8
+        },
+        {
+          "id": "corrige",
+          "title": "Fix the sentence",
+          "section": "trampas",
+          "count": 6
+        },
+        {
+          "id": "femenino",
+          "title": "Make it feminine",
+          "section": "adjetivos",
+          "count": 12
+        },
+        {
+          "id": "suena",
+          "title": "Same sound or not?",
+          "section": "adjetivos",
+          "count": 9
+        },
+        {
+          "id": "vecina",
+          "title": "From neighbour to neighbour",
+          "section": "personas",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "slug": "demostrativos",
+      "number": 3,
+      "part": 1,
+      "title": "Ce, cet, cette, ces",
+      "tagline": "Demonstratives: which one to use, how they sound and how not to confuse them with se and ses.",
+      "minutes": 8,
+      "sections": [
+        "What they're for",
+        "The rule",
+        "Pronunciation",
+        "The letter h",
+        "-ci and -là",
+        "Don't confuse them with se and ses"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Choose the form",
+          "section": "regla",
+          "count": 14
+        },
+        {
+          "id": "corrige",
+          "title": "Fix the demonstrative",
+          "section": "h",
+          "count": 6
+        },
+        {
+          "id": "mercado",
+          "title": "At the market",
+          "section": "ci-la",
+          "count": 6
+        },
+        {
+          "id": "homofonos",
+          "title": "ce, se, ces or ses",
+          "section": "homofonos",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "etre-avoir",
+      "number": 4,
+      "part": 1,
+      "title": "Être and avoir",
+      "tagline": "The two most used verbs: conjugation, uses and where French says «have» but English says «be».",
+      "minutes": 10,
+      "sections": [
+        "Why they matter so much",
+        "Être: to be",
+        "Avoir: to have",
+        "When English says «be» and French says «have»",
+        "Ils sont or ils ont",
+        "In the negative"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjugate",
+          "section": "avoir",
+          "count": 10
+        },
+        {
+          "id": "traduce",
+          "title": "Don't fall into the trap",
+          "section": "trampas",
+          "count": 9
+        },
+        {
+          "id": "sont-ont",
+          "title": "sont or ont",
+          "section": "sont-ont",
+          "count": 6
+        },
+        {
+          "id": "oido",
+          "title": "By ear",
+          "section": "sont-ont",
+          "count": 4
+        },
+        {
+          "id": "negativo",
+          "title": "Make it negative",
+          "section": "negacion",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "verbos-regulares",
+      "number": 5,
+      "part": 2,
+      "title": "Regular verbs in the present",
+      "tagline": "The -er, -ir and -re groups, and why four forms sound the same.",
+      "minutes": 10,
+      "sections": [
+        "Stem + ending",
+        "-er verbs",
+        "Four forms, one sound",
+        "-ir verbs like finir",
+        "-re verbs like vendre",
+        "Spelling adjustments"
+      ],
+      "exercises": [
+        {
+          "id": "suena",
+          "title": "Same sound?",
+          "section": "sonido",
+          "count": 6
+        },
+        {
+          "id": "conjuga",
+          "title": "Conjugate in the present",
+          "section": "re",
+          "count": 12
+        },
+        {
+          "id": "pronombre",
+          "title": "Which pronoun?",
+          "section": "re",
+          "count": 6
+        },
+        {
+          "id": "sujeto",
+          "title": "Change the subject",
+          "section": "ortografia",
+          "count": 6
+        },
+        {
+          "id": "sabado",
+          "title": "An ordinary Saturday",
+          "section": "final",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "partitivos",
+      "number": 6,
+      "part": 2,
+      "title": "Du, de la, de l', des",
+      "tagline": "Partitive articles: food and quantities, without mixing up likes and eating.",
+      "minutes": 9,
+      "sections": [
+        "What a partitive is",
+        "The four forms",
+        "Liking or eating",
+        "In the negative, everything becomes de",
+        "After quantities, also de"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Breakfast",
+          "section": "formas",
+          "count": 8
+        },
+        {
+          "id": "gusto-consumo",
+          "title": "Liking or eating?",
+          "section": "gusto-consumo",
+          "count": 8
+        },
+        {
+          "id": "negativo",
+          "title": "Say no",
+          "section": "negativo",
+          "count": 6
+        },
+        {
+          "id": "cantidades",
+          "title": "Quantities",
+          "section": "cantidades",
+          "count": 6
+        },
+        {
+          "id": "cafe",
+          "title": "At the café",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "numeros",
+      "number": 7,
+      "part": 2,
+      "title": "Numbers: rules and traps",
+      "tagline": "The logic of 70 to 99, et, the s in vingts and cents, and how they change sound.",
+      "minutes": 10,
+      "sections": [
+        "What works like English",
+        "The logic of 70 to 99",
+        "When et appears",
+        "The s in vingts and cents",
+        "Hyphens",
+        "Numbers that change sound",
+        "Liaison with numbers",
+        "Writing figures"
+      ],
+      "exercises": [
+        {
+          "id": "70-99",
+          "title": "From 70 to 99",
+          "section": "70-99",
+          "count": 6
+        },
+        {
+          "id": "en-letras",
+          "title": "In words",
+          "section": "s",
+          "count": 10
+        },
+        {
+          "id": "sonido",
+          "title": "How does the last consonant sound?",
+          "section": "pronunciacion",
+          "count": 8
+        },
+        {
+          "id": "cifras",
+          "title": "Figures the French way",
+          "section": "cifras",
+          "count": 4
+        },
+        {
+          "id": "cuentas",
+          "title": "Quick sums",
+          "section": "final",
+          "count": 6
+        },
+        {
+          "id": "telefono",
+          "title": "Phone dictation",
+          "section": "final",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "slug": "posesivos",
+      "number": 8,
+      "part": 2,
+      "title": "Mon, ma, mes",
+      "tagline": "Possessives agree with the thing owned, not the owner: the big «his or her» trap.",
+      "minutes": 8,
+      "sections": [
+        "The possessives",
+        "It agrees with the thing owned",
+        "Mon amie",
+        "Your and their"
+      ],
+      "exercises": [
+        {
+          "id": "elige",
+          "title": "Choose the possessive",
+          "section": "objeto",
+          "count": 12
+        },
+        {
+          "id": "objetos",
+          "title": "Lost property",
+          "section": "mon-amie",
+          "count": 7
+        },
+        {
+          "id": "familia",
+          "title": "Lucas's family",
+          "section": "su",
+          "count": 7
+        },
+        {
+          "id": "traduce",
+          "title": "Translate",
+          "section": "su",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "verbos-irregulares",
+      "number": 9,
+      "part": 2,
+      "title": "Aller, faire, vouloir, pouvoir",
+      "tagline": "Four essential irregular verbs, au and aux, and the future with aller.",
+      "minutes": 10,
+      "sections": [
+        "The four verbs",
+        "Aller + à: au, à la, à l', aux",
+        "Faire",
+        "Vouloir and pouvoir",
+        "The near future: aller + infinitive"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjugate",
+          "section": "conjugacion",
+          "count": 10
+        },
+        {
+          "id": "au-aux",
+          "title": "Where are you going?",
+          "section": "aller-a",
+          "count": 8
+        },
+        {
+          "id": "faire",
+          "title": "Faire or not?",
+          "section": "faire",
+          "count": 5
+        },
+        {
+          "id": "cortesia",
+          "title": "Politely",
+          "section": "vouloir-pouvoir",
+          "count": 3
+        },
+        {
+          "id": "futuro",
+          "title": "Into the near future",
+          "section": "futuro",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "passe-compose",
+      "number": 10,
+      "part": 3,
+      "title": "The passé composé",
+      "tagline": "Talking about what happened: avoir or être, past participles and agreement.",
+      "minutes": 12,
+      "sections": [
+        "The formula",
+        "Regular participles",
+        "Irregular participles",
+        "Verbs that take être",
+        "Agreement with être",
+        "Negation and time words"
+      ],
+      "exercises": [
+        {
+          "id": "participios",
+          "title": "Participles",
+          "section": "irregulares",
+          "count": 12
+        },
+        {
+          "id": "auxiliar",
+          "title": "Avoir or être?",
+          "section": "etre",
+          "count": 10
+        },
+        {
+          "id": "concordancia",
+          "title": "Agreement",
+          "section": "concordancia",
+          "count": 6
+        },
+        {
+          "id": "al-pasado",
+          "title": "Into the past",
+          "section": "negacion",
+          "count": 7
+        },
+        {
+          "id": "pastel",
+          "title": "Who ate the cake?",
+          "section": "final",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "preguntas",
+      "number": 11,
+      "part": 3,
+      "title": "Asking questions",
+      "tagline": "Three registers, inversion and quel, quelle, quels, quelles.",
+      "minutes": 9,
+      "sections": [
+        "Three ways to ask",
+        "Inversion and the -t-",
+        "Question words",
+        "Quel, quelle, quels, quelles"
+      ],
+      "exercises": [
+        {
+          "id": "registro",
+          "title": "Change the register",
+          "section": "registros",
+          "count": 4
+        },
+        {
+          "id": "inversion",
+          "title": "With inversion",
+          "section": "inversion",
+          "count": 6
+        },
+        {
+          "id": "pregunta",
+          "title": "What's the question?",
+          "section": "interrogativos",
+          "count": 7
+        },
+        {
+          "id": "interrogativo",
+          "title": "The missing word",
+          "section": "interrogativos",
+          "count": 6
+        },
+        {
+          "id": "quel",
+          "title": "Quel, quelle, quels, quelles",
+          "section": "quel",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "slug": "negacion",
+      "number": 12,
+      "part": 3,
+      "title": "Negation",
+      "tagline": "Ne… pas and its family, where each part goes, ne… que and the answer si.",
+      "minutes": 10,
+      "sections": [
+        "Ne… pas",
+        "The other negatives",
+        "Where each piece goes",
+        "Rien and personne as the subject",
+        "Ne… que: only",
+        "Si: yes, to a negative question",
+        "In conversation"
+      ],
+      "exercises": [
+        {
+          "id": "responde",
+          "title": "Say no",
+          "section": "familia",
+          "count": 6
+        },
+        {
+          "id": "posicion",
+          "title": "Where does it go?",
+          "section": "posicion",
+          "count": 6
+        },
+        {
+          "id": "opuestos",
+          "title": "The opposite",
+          "section": "sujeto",
+          "count": 7
+        },
+        {
+          "id": "ne-que",
+          "title": "Only: ne… que",
+          "section": "ne-que",
+          "count": 4
+        },
+        {
+          "id": "oui-si",
+          "title": "Oui or si?",
+          "section": "si",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "adjetivos",
+      "number": 13,
+      "part": 3,
+      "title": "Adjectives",
+      "tagline": "Plural, position, bel, nouvel, vieil, adjectives that change meaning, and comparisons.",
+      "minutes": 12,
+      "sections": [
+        "Recap: the feminine",
+        "The plural",
+        "Before or after?",
+        "Bel, nouvel, vieil",
+        "Adjectives that change meaning",
+        "Colours",
+        "Comparing"
+      ],
+      "exercises": [
+        {
+          "id": "plural",
+          "title": "Make it plural",
+          "section": "plural",
+          "count": 7
+        },
+        {
+          "id": "orden",
+          "title": "Put the words in order",
+          "section": "posicion",
+          "count": 8
+        },
+        {
+          "id": "bel",
+          "title": "Beau or bel",
+          "section": "bel",
+          "count": 6
+        },
+        {
+          "id": "sentido",
+          "title": "Before or after?",
+          "section": "sentido",
+          "count": 6
+        },
+        {
+          "id": "colores",
+          "title": "Colours",
+          "section": "colores",
+          "count": 6
+        },
+        {
+          "id": "comparar",
+          "title": "Compare",
+          "section": "comparar",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "liaison",
+      "number": 14,
+      "part": 4,
+      "title": "Liaison",
+      "tagline": "Why words run together, which sound appears and when it's required or forbidden.",
+      "minutes": 10,
+      "sections": [
+        "What liaison is",
+        "The sounds of liaison",
+        "Required liaisons",
+        "Forbidden liaisons",
+        "Optional liaisons",
+        "Enchaînement"
+      ],
+      "exercises": [
+        {
+          "id": "sonido",
+          "title": "Which sound appears?",
+          "section": "sonidos",
+          "count": 8
+        },
+        {
+          "id": "obligatoria",
+          "title": "Liaison or not?",
+          "section": "prohibidas",
+          "count": 14
+        },
+        {
+          "id": "tipo",
+          "title": "Required, optional or forbidden",
+          "section": "opcionales",
+          "count": 8
+        },
+        {
+          "id": "oido",
+          "title": "By ear",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "pronombres",
+      "number": 15,
+      "part": 4,
+      "title": "Object pronouns",
+      "tagline": "Le, la, les, lui, leur: where they go and how to choose. Plus moi, toi, lui…",
+      "minutes": 12,
+      "sections": [
+        "What they're for",
+        "Direct object: le, la, les",
+        "Indirect object: lui, leur",
+        "Direct or indirect?",
+        "Where they go",
+        "Stressed pronouns"
+      ],
+      "exercises": [
+        {
+          "id": "cod-coi",
+          "title": "Le or lui?",
+          "section": "test",
+          "count": 7
+        },
+        {
+          "id": "reemplaza",
+          "title": "No repeating",
+          "section": "posicion",
+          "count": 10
+        },
+        {
+          "id": "posicion",
+          "title": "Where does it go?",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "tonicos",
+          "title": "Me too, me neither",
+          "section": "tonicos",
+          "count": 4
+        },
+        {
+          "id": "mensajes",
+          "title": "Messages",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "en-y",
+      "number": 16,
+      "part": 4,
+      "title": "En and y",
+      "tagline": "Two tiny pronouns English barely has: places, quantities and everyday expressions.",
+      "minutes": 11,
+      "sections": [
+        "Why they're tricky",
+        "Y: places and things with à",
+        "En: quantities and things with de",
+        "Y or en?",
+        "With people, other pronouns",
+        "Where they go",
+        "Everyday expressions"
+      ],
+      "exercises": [
+        {
+          "id": "cantidades",
+          "title": "At the shop",
+          "section": "en",
+          "count": 6
+        },
+        {
+          "id": "y-en",
+          "title": "Y or en?",
+          "section": "prueba",
+          "count": 10
+        },
+        {
+          "id": "persona",
+          "title": "Thing or person?",
+          "section": "personas",
+          "count": 6
+        },
+        {
+          "id": "posicion",
+          "title": "Where does it go?",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "expresiones",
+          "title": "Expressions",
+          "section": "expresiones",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "pronominales",
+      "number": 17,
+      "part": 4,
+      "title": "Reflexive verbs",
+      "tagline": "I get up, I get dressed: conjugation, verbs that are reflexive only in French and the past with être.",
+      "minutes": 10,
+      "sections": [
+        "What a reflexive verb is",
+        "Conjugation",
+        "Daily routine",
+        "Where French and English don't match",
+        "Negative, future and imperative",
+        "In the passé composé, always with être"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjugate",
+          "section": "conjugacion",
+          "count": 8
+        },
+        {
+          "id": "trampas",
+          "title": "With se or without?",
+          "section": "trampas",
+          "count": 6
+        },
+        {
+          "id": "negativo",
+          "title": "In the negative",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "imperativo",
+          "title": "Imperative",
+          "section": "posicion",
+          "count": 4
+        },
+        {
+          "id": "pasado",
+          "title": "Yesterday morning",
+          "section": "pasado",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "imparfait",
+      "number": 18,
+      "part": 4,
+      "title": "L'imparfait",
+      "tagline": "Describing the past and telling stories by combining it with the passé composé.",
+      "minutes": 10,
+      "sections": [
+        "Two past tenses",
+        "How it's formed",
+        "The only exception: être",
+        "What it's for",
+        "Imparfait or passé composé"
+      ],
+      "exercises": [
+        {
+          "id": "forma",
+          "title": "Form the imparfait",
+          "section": "formacion",
+          "count": 10
+        },
+        {
+          "id": "infancia",
+          "title": "When I was a child",
+          "section": "usos",
+          "count": 6
+        },
+        {
+          "id": "contraste",
+          "title": "Set or action?",
+          "section": "contraste",
+          "count": 7
+        },
+        {
+          "id": "cuento",
+          "title": "Il était une fois…",
+          "section": "contraste",
+          "count": 6
+        },
+        {
+          "id": "antes-ahora",
+          "title": "Then and now",
+          "section": "final",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "slug": "masculino-femenino",
+  "number": 2,
+  "part": 1,
+  "title": "Masculino y femenino",
+  "tagline": "Artículos, terminaciones que delatan el género y las trampas del español.",
+  "goal": "Deducir el género de muchas palabras por su terminación, evitar las palabras que cambian de género respecto al español y pasar adjetivos y profesiones al femenino.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "articulos",
+      "title": "Los artículos",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Masculino",
+            "Femenino",
+            "Ante vocal o h muda",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "**Definido** (el, la)",
+              "*{le} livre*",
+              "*{la} table*",
+              "*{l'}ami, {l'}école*",
+              "*{les} livres*"
+            ],
+            [
+              "**Indefinido** (un, una)",
+              "*{un} livre*",
+              "*{une} table*",
+              "*{un} ami, {une} école*",
+              "*{des} livres*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Aprende cada palabra con su artículo",
+          "text": "Con *l'* y *les* no se ve el género. Por eso conviene memorizar *un ami* y *une école*: el artículo indefinido sí lo muestra."
+        }
+      ]
+    },
+    {
+      "id": "terminaciones",
+      "title": "Pistas por la terminación",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "No hay una regla perfecta, pero estas terminaciones aciertan en la gran mayoría de los casos."
+        },
+        {
+          "type": "table",
+          "caption": "Suelen ser masculinas",
+          "head": [
+            "Terminación",
+            "Ejemplos",
+            "Excepciones frecuentes"
+          ],
+          "rows": [
+            [
+              "**-age**",
+              "*le fromage, le voyage, le garage*",
+              "*la page, la plage, l'image (f), la cage*"
+            ],
+            [
+              "**-ment**",
+              "*le moment, l'appartement, le monument*",
+              "—"
+            ],
+            [
+              "**-eau**",
+              "*le gâteau, le bateau, le chapeau*",
+              "*l'eau (f), la peau*"
+            ],
+            [
+              "**-isme**",
+              "*le tourisme, le réalisme*",
+              "—"
+            ],
+            [
+              "**-oir**",
+              "*le miroir, le soir, le couloir*",
+              "—"
+            ],
+            [
+              "**-ier / -er**",
+              "*le cahier, le dîner, le papier*",
+              "*la mer*"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Suelen ser femeninas",
+          "head": [
+            "Terminación",
+            "Ejemplos",
+            "Excepciones frecuentes"
+          ],
+          "rows": [
+            [
+              "**-tion / -sion**",
+              "*la nation, la natation, la télévision*",
+              "—"
+            ],
+            [
+              "**-té**",
+              "*la liberté, la beauté, la santé*",
+              "*l'été (m), le côté*"
+            ],
+            [
+              "**-ure**",
+              "*la voiture, la culture, la confiture*",
+              "*le murmure*"
+            ],
+            [
+              "**-ette**",
+              "*la baguette, la chaussette, la fourchette*",
+              "*le squelette*"
+            ],
+            [
+              "**-ance / -ence**",
+              "*la chance, la science, la patience*",
+              "*le silence*"
+            ],
+            [
+              "**-ie**",
+              "*la boulangerie, la vie, la pluie*",
+              "*le parapluie, le génie*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Muchas palabras en *-tion* y *-té* se parecen a las españolas en -ción y -dad, y también son femeninas: *la nation* (la nación), *la liberté* (la libertad)."
+        }
+      ]
+    },
+    {
+      "id": "trampas",
+      "title": "Palabras que cambian de género respecto al español",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Se parecen al español, pero **tienen el género contrario**. Son la fuente de errores más común."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Francés",
+            "Español"
+          ],
+          "rows": [
+            [
+              "*le lait* (m)",
+              "la leche (f)"
+            ],
+            [
+              "*le sel* (m)",
+              "la sal (f)"
+            ],
+            [
+              "*le sang* (m)",
+              "la sangre (f)"
+            ],
+            [
+              "*le doute* (m)",
+              "la duda (f)"
+            ],
+            [
+              "*le légume* (m)",
+              "la verdura (f)"
+            ],
+            [
+              "*la mer* (f)",
+              "el mar (m)"
+            ],
+            [
+              "*la dent* (f)",
+              "el diente (m)"
+            ],
+            [
+              "*la couleur* (f)",
+              "el color (m)"
+            ],
+            [
+              "*la douleur* (f)",
+              "el dolor (m)"
+            ],
+            [
+              "*la minute* (f)",
+              "el minuto (m)"
+            ],
+            [
+              "*la planète* (f)",
+              "el planeta (m)"
+            ],
+            [
+              "*la méthode* (f)",
+              "el método (m)"
+            ],
+            [
+              "*l'équipe* (f)",
+              "el equipo (m)"
+            ],
+            [
+              "*la fin* (f)",
+              "el fin, el final (m)"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*le légume* significa **verdura**, no «legumbre» (que es *la légumineuse*)."
+        }
+      ]
+    },
+    {
+      "id": "adjetivos",
+      "title": "El femenino de los adjetivos",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "masculino + -e = femenino",
+          "caption": "*grand → grand{e} · petit → petit{e} · joli → joli{e}*"
+        },
+        {
+          "type": "text",
+          "text": "A veces la *-e* hace que **se oiga** la consonante final (*petit* «pti» → *petite* «ptit»); otras veces no cambia nada (*joli* = *jolie*). Si el adjetivo ya termina en *-e*, no cambia: *rouge, facile*."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Patrón",
+            "Masculino → femenino"
+          ],
+          "rows": [
+            [
+              "**-eux → -euse**",
+              "*heureux → heureuse · sérieux → sérieuse*"
+            ],
+            [
+              "**-if → -ive**",
+              "*sportif → sportive · créatif → créative*"
+            ],
+            [
+              "**-er → -ère**",
+              "*cher → chère · premier → première*"
+            ],
+            [
+              "**-el → -elle**",
+              "*naturel → naturelle · cruel → cruelle*"
+            ],
+            [
+              "**-en → -enne**",
+              "*italien → italienne · ancien → ancienne*"
+            ],
+            [
+              "**-on → -onne**",
+              "*bon → bonne · mignon → mignonne*"
+            ],
+            [
+              "**-il → -ille**",
+              "*gentil → gentille*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Irregulares",
+          "text": "*beau → belle · nouveau → nouvelle · vieux → vieille · blanc → blanche · long → longue · doux → douce · frais → fraîche · fou → folle*"
+        }
+      ]
+    },
+    {
+      "id": "personas",
+      "title": "Personas y animales",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Patrón",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "**+ e**",
+              "*ami → amie · étudiant → étudiante · français → française*"
+            ],
+            [
+              "**-eur → -euse**",
+              "*chanteur → chanteuse · danseur → danseuse*"
+            ],
+            [
+              "**-teur → -trice**",
+              "*acteur → actrice · directeur → directrice*"
+            ],
+            [
+              "**-er → -ère**",
+              "*boulanger → boulangère · infirmier → infirmière*"
+            ],
+            [
+              "**-ien → -ienne**",
+              "*musicien → musicienne · chien → chienne*"
+            ],
+            [
+              "**-on → -onne**",
+              "*lion → lionne · patron → patronne*"
+            ],
+            [
+              "**Otra palabra**",
+              "*homme → femme · roi → reine · garçon → fille · coq → poule*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Fíjate en la nasal [[1]]: *lion* y *italien* son nasales, pero *lionne* e *italienne* no."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "terminaciones",
+      "title": "¿Masculino o femenino?",
+      "instructions": "Elige el artículo usando las pistas de la terminación. Hay cinco excepciones escondidas.",
+      "kind": "choice",
+      "options": [
+        "le",
+        "la"
+      ],
+      "speak": "filled",
+      "items": [
+        {
+          "prompt": "___ garage",
+          "answer": "le"
+        },
+        {
+          "prompt": "___ télévision",
+          "answer": "la"
+        },
+        {
+          "prompt": "___ moment",
+          "answer": "le"
+        },
+        {
+          "prompt": "___ beauté",
+          "answer": "la"
+        },
+        {
+          "prompt": "___ miroir",
+          "answer": "le"
+        },
+        {
+          "prompt": "___ voiture",
+          "answer": "la"
+        },
+        {
+          "prompt": "___ tourisme",
+          "answer": "le"
+        },
+        {
+          "prompt": "___ baguette",
+          "answer": "la"
+        },
+        {
+          "prompt": "___ gâteau",
+          "answer": "le"
+        },
+        {
+          "prompt": "___ page",
+          "answer": "la",
+          "explain": "Excepción: *-age* suele ser masculino, pero *la page* es femenino."
+        },
+        {
+          "prompt": "___ silence",
+          "answer": "le",
+          "explain": "Excepción: *-ence* suele ser femenino, pero *le silence* es masculino."
+        },
+        {
+          "prompt": "___ mer",
+          "answer": "la",
+          "explain": "Excepción: *-er* suele ser masculino, pero *la mer* es femenino."
+        },
+        {
+          "prompt": "___ côté",
+          "answer": "le",
+          "explain": "Excepción: *-té* suele ser femenino, pero *le côté* es masculino."
+        },
+        {
+          "prompt": "___ peau",
+          "answer": "la",
+          "explain": "Excepción: *-eau* suele ser masculino, pero *la peau* (la piel) es femenino."
+        }
+      ],
+      "section": "terminaciones"
+    },
+    {
+      "id": "trampas",
+      "title": "Las trampas del español",
+      "instructions": "Elige el artículo correcto. Ojo: estas palabras tienen el género contrario al español.",
+      "kind": "choice",
+      "options": [
+        "le",
+        "la"
+      ],
+      "speak": "filled",
+      "items": [
+        {
+          "prompt": "J'adore ___ mer.",
+          "answer": "la"
+        },
+        {
+          "prompt": "Passe-moi ___ sel, s'il te plaît.",
+          "answer": "le"
+        },
+        {
+          "prompt": "___ lait est froid.",
+          "answer": "Le",
+          "options": [
+            "Le",
+            "La"
+          ]
+        },
+        {
+          "prompt": "___ couleur de la voiture est jolie.",
+          "answer": "La",
+          "options": [
+            "Le",
+            "La"
+          ]
+        },
+        {
+          "prompt": "J'ai mal à ___ dent.",
+          "answer": "la"
+        },
+        {
+          "prompt": "C'est ___ fin du film.",
+          "answer": "la"
+        },
+        {
+          "prompt": "Il n'y a pas ___ moindre doute.",
+          "answer": "le"
+        },
+        {
+          "prompt": "C'est ___ légume que je préfère.",
+          "answer": "le"
+        }
+      ],
+      "section": "trampas"
+    },
+    {
+      "id": "corrige",
+      "title": "Corrige la frase",
+      "instructions": "Cada frase tiene un error de género. Escríbela corregida.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Le dent de mon chat est blanche.",
+          "answer": "La dent de mon chat est blanche."
+        },
+        {
+          "prompt": "La lait est froid.",
+          "answer": "Le lait est froid."
+        },
+        {
+          "prompt": "Il reste un minute.",
+          "answer": "Il reste une minute."
+        },
+        {
+          "prompt": "L'équipe est très bon.",
+          "answer": "L'équipe est très bonne."
+        },
+        {
+          "prompt": "Le couleur est jolie.",
+          "answer": "La couleur est jolie."
+        },
+        {
+          "prompt": "La douleur est fort.",
+          "answer": "La douleur est forte."
+        }
+      ],
+      "section": "trampas"
+    },
+    {
+      "id": "femenino",
+      "title": "Pásalo al femenino",
+      "instructions": "Escribe el femenino.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "heureux",
+          "answer": "heureuse"
+        },
+        {
+          "prompt": "sportif",
+          "answer": "sportive"
+        },
+        {
+          "prompt": "cher",
+          "answer": "chère"
+        },
+        {
+          "prompt": "italien",
+          "answer": "italienne"
+        },
+        {
+          "prompt": "gentil",
+          "answer": "gentille"
+        },
+        {
+          "prompt": "beau",
+          "answer": "belle"
+        },
+        {
+          "prompt": "vieux",
+          "answer": "vieille"
+        },
+        {
+          "prompt": "blanc",
+          "answer": "blanche"
+        },
+        {
+          "prompt": "acteur",
+          "answer": "actrice"
+        },
+        {
+          "prompt": "chanteur",
+          "answer": "chanteuse"
+        },
+        {
+          "prompt": "boulanger",
+          "answer": "boulangère"
+        },
+        {
+          "prompt": "musicien",
+          "answer": "musicienne"
+        }
+      ],
+      "section": "adjetivos"
+    },
+    {
+      "id": "suena",
+      "title": "¿Suena igual o distinto?",
+      "instructions": "¿El masculino y el femenino se pronuncian igual?",
+      "kind": "choice",
+      "options": [
+        "Igual",
+        "Distinto"
+      ],
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "joli / jolie",
+          "answer": "Igual"
+        },
+        {
+          "prompt": "petit / petite",
+          "answer": "Distinto",
+          "explain": "En *petite* se oye la t."
+        },
+        {
+          "prompt": "ami / amie",
+          "answer": "Igual"
+        },
+        {
+          "prompt": "grand / grande",
+          "answer": "Distinto",
+          "explain": "En *grande* se oye la d."
+        },
+        {
+          "prompt": "bleu / bleue",
+          "answer": "Igual"
+        },
+        {
+          "prompt": "français / française",
+          "answer": "Distinto",
+          "explain": "En *française* se oye la s, con sonido [z]."
+        },
+        {
+          "prompt": "cher / chère",
+          "answer": "Igual"
+        },
+        {
+          "prompt": "noir / noire",
+          "answer": "Igual"
+        },
+        {
+          "prompt": "américain / américaine",
+          "answer": "Distinto",
+          "explain": "La nasal desaparece en *américaine*."
+        }
+      ],
+      "section": "adjetivos"
+    },
+    {
+      "id": "vecina",
+      "title": "De vecino a vecina",
+      "instructions": "Reescribe cada frase hablando de una mujer.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Le voisin de Marc est un acteur français.",
+          "answer": "La voisine de Marc est une actrice française."
+        },
+        {
+          "prompt": "Il est grand, sportif et très gentil.",
+          "answer": "Elle est grande, sportive et très gentille."
+        },
+        {
+          "prompt": "C'est un excellent chanteur.",
+          "answer": "C'est une excellente chanteuse."
+        },
+        {
+          "prompt": "Il est un peu fou, mais il est heureux.",
+          "answer": "Elle est un peu folle, mais elle est heureuse."
+        }
+      ],
+      "section": "personas"
+    }
+  ],
+  "checklist": [
+    "Aprendo cada palabra nueva con su artículo.",
+    "Uso las terminaciones para deducir el género.",
+    "Conozco las trampas: *le lait, la mer, la dent, la couleur…*",
+    "Pongo adjetivos en femenino, incluidos los irregulares.",
+    "Sé cómo cambian las profesiones."
+  ],
+  "challenge": {
+    "title": "Describe a dos personas",
+    "text": "Escribe seis adjetivos para describir a un hombre que conozcas y luego reescribe la descripción para una mujer. Incluye al menos un irregular (*beau, vieux, fou…*)."
+  }
+}

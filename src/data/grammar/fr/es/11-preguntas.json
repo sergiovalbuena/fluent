@@ -1,0 +1,409 @@
+{
+  "slug": "preguntas",
+  "number": 11,
+  "part": 3,
+  "title": "Hacer preguntas",
+  "tagline": "Tres registros para preguntar, la inversión y quel, quelle, quels, quelles.",
+  "goal": "Hacer preguntas en registro informal, neutro y formal, usar todas las palabras interrogativas y concordar quel.",
+  "minutes": 9,
+  "sections": [
+    {
+      "id": "registros",
+      "title": "Tres maneras de preguntar",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Registro",
+            "Cómo se hace",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "**Informal** (conversación)",
+              "Subiendo la entonación al final",
+              "*Tu viens ?*"
+            ],
+            [
+              "**Neutro** (sirve siempre)",
+              "*est-ce que* + frase normal",
+              "*Est-ce que tu viens ?*"
+            ],
+            [
+              "**Formal** (escrito, situaciones formales)",
+              "Inversión verbo-sujeto",
+              "*Viens-tu ?*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*est-ce que* convierte cualquier frase en pregunta sin cambiar el orden. Delante de vocal se vuelve *est-ce qu'*: *Est-ce qu'il vient ?*"
+        }
+      ]
+    },
+    {
+      "id": "inversion",
+      "title": "La inversión y la -t-",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En la inversión, el verbo y el pronombre cambian de lugar y se unen con un **guion**:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Parlez-vous français ?",
+              "tr": "¿Habla usted francés?"
+            },
+            {
+              "fr": "As-tu faim ?",
+              "tr": "¿Tienes hambre?"
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Si el verbo termina en vocal y el pronombre es *il, elle* u *on*, se intercala **-t-** para evitar el choque: *A-t-il un chien ? · Parle-t-elle anglais ? · Va-t-on au parc ?*"
+        },
+        {
+          "type": "text",
+          "text": "Es la misma lógica que *cet* [[3]] y *mon amie* [[8]]."
+        }
+      ]
+    },
+    {
+      "id": "interrogativos",
+      "title": "Las palabras interrogativas",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Francés",
+            "Español",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "*qui*",
+              "quién",
+              "*Qui est-ce ?*"
+            ],
+            [
+              "*que / qu'est-ce que*",
+              "qué",
+              "*Qu'est-ce que tu fais ?*"
+            ],
+            [
+              "*quoi*",
+              "qué (informal, al final)",
+              "*Tu fais quoi ?*"
+            ],
+            [
+              "*où*",
+              "dónde",
+              "*Où habites-tu ?*"
+            ],
+            [
+              "*quand*",
+              "cuándo",
+              "*Quand est-ce que tu pars ?*"
+            ],
+            [
+              "*comment*",
+              "cómo",
+              "*Comment tu t'appelles ?*"
+            ],
+            [
+              "*pourquoi*",
+              "por qué",
+              "*Pourquoi tu ris ?* → *Parce que…* (porque)"
+            ],
+            [
+              "*combien*",
+              "cuánto",
+              "*Combien ça coûte ?*"
+            ],
+            [
+              "*quel / quelle…*",
+              "cuál, qué",
+              "*Quel âge as-tu ?*"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Se combinan con los tres registros: *Où tu habites ?* · *Où est-ce que tu habites ?* · *Où habites-tu ?*"
+        }
+      ]
+    },
+    {
+      "id": "quel",
+      "title": "Quel, quelle, quels, quelles",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*quel* es un adjetivo: concuerda con el sustantivo [[2]]. Las cuatro formas **suenan igual**."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Singular",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "Masculino",
+              "*quel livre ?*",
+              "*quels livres ?*"
+            ],
+            [
+              "Femenino",
+              "*quelle couleur ?*",
+              "*quelles couleurs ?*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*quel* también sirve para exclamar: *Quelle surprise !* (¡Qué sorpresa!) · *Quel beau temps !* (¡Qué buen tiempo!)"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "registro",
+      "title": "Cambia de registro",
+      "instructions": "Escribe la pregunta con est-ce que.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Tu aimes le chocolat ?",
+          "answer": "Est-ce que tu aimes le chocolat ?"
+        },
+        {
+          "prompt": "Il parle français ?",
+          "answer": "Est-ce qu'il parle français ?"
+        },
+        {
+          "prompt": "Vous habitez à Paris ?",
+          "answer": "Est-ce que vous habitez à Paris ?"
+        },
+        {
+          "prompt": "Elle a un chat ?",
+          "answer": "Est-ce qu'elle a un chat ?"
+        }
+      ],
+      "section": "registros"
+    },
+    {
+      "id": "inversion",
+      "title": "Con inversión",
+      "instructions": "Escribe la pregunta con inversión. No olvides la -t- cuando haga falta.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Tu aimes le chocolat ?",
+          "answer": "Aimes-tu le chocolat ?"
+        },
+        {
+          "prompt": "Il parle français ?",
+          "answer": "Parle-t-il français ?"
+        },
+        {
+          "prompt": "Vous habitez à Paris ?",
+          "answer": "Habitez-vous à Paris ?"
+        },
+        {
+          "prompt": "Elle a un chat ?",
+          "answer": "A-t-elle un chat ?"
+        },
+        {
+          "prompt": "On va au parc ?",
+          "answer": "Va-t-on au parc ?"
+        },
+        {
+          "prompt": "Ils sont prêts ?",
+          "answer": "Sont-ils prêts ?"
+        }
+      ],
+      "section": "inversion"
+    },
+    {
+      "id": "pregunta",
+      "title": "¿Cuál es la pregunta?",
+      "instructions": "Elige la pregunta que corresponde a la respuesta.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "J'habite à Lyon.",
+          "options": [
+            "Où est-ce que tu habites ?",
+            "Quand est-ce que tu habites ?",
+            "Comment tu habites ?"
+          ],
+          "answer": "Où est-ce que tu habites ?"
+        },
+        {
+          "prompt": "J'ai quarante ans.",
+          "options": [
+            "Quel âge as-tu ?",
+            "Combien d'ans as-tu ?",
+            "Quelle âge as-tu ?"
+          ],
+          "answer": "Quel âge as-tu ?"
+        },
+        {
+          "prompt": "Je m'appelle Léa.",
+          "options": [
+            "Comment tu t'appelles ?",
+            "Qui tu t'appelles ?",
+            "Quel tu t'appelles ?"
+          ],
+          "answer": "Comment tu t'appelles ?"
+        },
+        {
+          "prompt": "Ça coûte cinq euros.",
+          "options": [
+            "Combien ça coûte ?",
+            "Quand ça coûte ?",
+            "Qu'est-ce que ça coûte ?"
+          ],
+          "answer": "Combien ça coûte ?"
+        },
+        {
+          "prompt": "Je pars demain.",
+          "options": [
+            "Quand est-ce que tu pars ?",
+            "Où est-ce que tu pars ?",
+            "Pourquoi tu pars ?"
+          ],
+          "answer": "Quand est-ce que tu pars ?"
+        },
+        {
+          "prompt": "Parce que j'ai faim !",
+          "options": [
+            "Pourquoi tu manges ?",
+            "Qu'est-ce que tu manges ?",
+            "Quand tu manges ?"
+          ],
+          "answer": "Pourquoi tu manges ?"
+        },
+        {
+          "prompt": "C'est mon collègue, Marc.",
+          "options": [
+            "Qui est-ce ?",
+            "Qu'est-ce que c'est ?",
+            "Quel est-ce ?"
+          ],
+          "answer": "Qui est-ce ?"
+        }
+      ],
+      "section": "interrogativos"
+    },
+    {
+      "id": "interrogativo",
+      "title": "La palabra que falta",
+      "instructions": "Completa con la palabra interrogativa.",
+      "kind": "choice",
+      "options": [
+        "Où",
+        "Quand",
+        "Comment",
+        "Pourquoi",
+        "Combien",
+        "Qui"
+      ],
+      "items": [
+        {
+          "prompt": "___ allez-vous ? — Très bien, merci.",
+          "answer": "Comment"
+        },
+        {
+          "prompt": "___ est la gare ? — Tout droit.",
+          "answer": "Où"
+        },
+        {
+          "prompt": "___ de sucre tu veux ? — Deux morceaux.",
+          "answer": "Combien"
+        },
+        {
+          "prompt": "___ arrive le train ? — À midi.",
+          "answer": "Quand"
+        },
+        {
+          "prompt": "___ tu ne viens pas ? — Parce que je travaille.",
+          "answer": "Pourquoi"
+        },
+        {
+          "prompt": "___ a appelé ? — Ta mère.",
+          "answer": "Qui"
+        }
+      ],
+      "section": "interrogativos"
+    },
+    {
+      "id": "quel",
+      "title": "Quel, quelle, quels, quelles",
+      "instructions": "Elige la forma correcta.",
+      "kind": "choice",
+      "options": [
+        "Quel",
+        "Quelle",
+        "Quels",
+        "Quelles"
+      ],
+      "items": [
+        {
+          "prompt": "___ heure est-il ?",
+          "answer": "Quelle"
+        },
+        {
+          "prompt": "___ est ton film préféré ?",
+          "answer": "Quel"
+        },
+        {
+          "prompt": "___ langues parles-tu ?",
+          "answer": "Quelles"
+        },
+        {
+          "prompt": "___ livres aimes-tu ?",
+          "answer": "Quels"
+        },
+        {
+          "prompt": "___ âge as-tu ?",
+          "answer": "Quel",
+          "explain": "*âge* es masculino."
+        },
+        {
+          "prompt": "___ est ta couleur préférée ?",
+          "answer": "Quelle"
+        },
+        {
+          "prompt": "___ surprise !",
+          "answer": "Quelle"
+        }
+      ],
+      "section": "quel"
+    }
+  ],
+  "checklist": [
+    "Pregunto con entonación, con *est-ce que* y con inversión.",
+    "Sé cuándo poner la *-t-*.",
+    "Uso *qui, que, où, quand, comment, pourquoi, combien*.",
+    "Concuerdo *quel, quelle, quels, quelles*."
+  ],
+  "challenge": {
+    "title": "Una entrevista",
+    "text": "Prepara ocho preguntas para conocer a alguien en un intercambio de idiomas, con ocho palabras interrogativas distintas. Hazlas en registro neutro (*est-ce que*) y luego pásalas al formal."
+  }
+}
