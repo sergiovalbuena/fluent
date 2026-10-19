@@ -1,334 +1,764 @@
 'use client'
 
-import React from 'react'
-import { motion, type MotionProps } from 'framer-motion'
+import { useMemo, useState } from 'react'
 import Link from 'next/link'
+import { useLocale, useTranslations } from 'next-intl'
+import { motion, type Variants } from 'framer-motion'
 import {
-  ArrowRight, BookOpen, Zap,
-  Bot, BookMarked, Trophy, Music,
+  ArrowRight, Bookmark, BookType, Check, Flame, Gamepad2, Gem, GraduationCap, Keyboard, Lock, Map as MapIcon, Shield, ShoppingBag,
+  Sparkles, Target, Trophy, Users, Volume2, Zap,
 } from 'lucide-react'
-import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
-import { type LearnModule } from '@/components/learn/learn-content'
-import { useTranslations } from 'next-intl'
-import { getGreeting } from '@/lib/languages'
+import { GemChip } from '@/components/practice/reward-chips'
+import { getGreeting, speak } from '@/lib/languages'
+import { speakableForm } from '@/lib/verbs'
+import { WEEKLY_XP_PER_MEMBER } from '@/lib/study-group'
+import { cn } from '@/lib/utils'
+import type { LessonState } from '@/lib/course-path'
 
-export type DashboardStats = {
+export type DashboardData = {
+  languageCode: string
+  firstName: string
   streak: number
+  longestStreak: number
+  freezes: number
   totalXp: number
-  lessonsCompleted: number
-  avgAccuracy: number | null
-  weekActivity: number[]
+  gems: number
+  boosts: { xp: boolean; gems: boolean }
+  dailyGoalMinutes: number
+  /** XP per day this week, Monday first */
+  weekXp: number[]
+  weekActive: boolean[]
+  todayIndex: number
+  path: {
+    total: number
+    completed: number
+    currentIndex: number
+    /** Index of the first module in `modules` */
+    start: number
+    modules: { slug: string; title: string; icon: string; progress: number; state: LessonState }[]
+  }
+  grammar: {
+    mastered: number
+    total: number
+    next: { slug: string; number: number; title: string; tagline: string; exercises: boolean[]; gems: number; started: boolean } | null
+  } | null
+  verb: {
+    id: string
+    infinitive: string
+    translation: string
+    aux: 'être' | 'avoir' | null
+    tense: string
+    forms: string[]
+    example: { text: string; translation: string; match: string } | null
+  } | null
+  group: { name: string; members: { id: string; name: string; avatar: string | null; weekXp: number; isMe: boolean }[] } | null
+  saved: { count: number; title: string | null; thumbnail: string | null; platform: string } | null
 }
 
-const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+/** Daily goal in XP: the minutes chosen in the profile, at ~4 XP a minute */
+const XP_PER_GOAL_MINUTE = 4
 
-// ── Block primitive ────────────────────────────────────────────────────────────
-type BlockProps = { className?: string; children?: React.ReactNode; onClick?: () => void } & MotionProps
+// ── Motion (shared with /mini-games, /community and the lesson bento) ─────────
+const card: Variants = {
+  initial: { opacity: 0, y: 24, scale: 0.97 },
+  animate: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring', stiffness: 260, damping: 26 } },
+  hover: { y: -4, transition: { type: 'spring', stiffness: 400, damping: 22 } },
+}
+const spring = { type: 'spring', stiffness: 380, damping: 20 } as const
 
-const Block = ({ className, children, ...rest }: BlockProps) => (
-  <motion.div
-    variants={{
-      initial: { scale: 0.5, y: 50, opacity: 0 },
-      animate: { scale: 1, y: 0, opacity: 1 },
-    }}
-    transition={{ type: 'spring', mass: 3, stiffness: 400, damping: 50 }}
-    className={cn(
-      'rounded-3xl border border-black/[0.04] dark:border-white/[0.05] bg-white dark:bg-[#202638]',
-      className
-    )}
-    {...rest}
-  >
-    {children}
-  </motion.div>
-)
+const SURFACE = 'relative h-full overflow-hidden rounded-3xl border border-black/[0.04] bg-white shadow-[0_2px_12px_rgba(0,0,0,0.05)] dark:border-white/[0.05] dark:bg-[#202638]'
+const LABEL = 'text-[11px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400'
 
-// ── Dashboard ─────────────────────────────────────────────────────────────────
-export function DashboardContent({ modules, stats, displayName = 'there', languageCode }: { modules: LearnModule[]; stats: DashboardStats; displayName?: string; languageCode: string }) {
+/** Narrow weekday names, Monday first, in the UI language (fixed dates: no clock) */
+function useWeekdays(locale: string) {
+  return useMemo(() => {
+    const fmt = new Intl.DateTimeFormat(locale, { weekday: 'narrow', timeZone: 'UTC' })
+    return Array.from({ length: 7 }, (_, i) => fmt.format(new Date(Date.UTC(2024, 0, 1 + i))))
+  }, [locale])
+}
+
+// ── Page ──────────────────────────────────────────────────────────────────────
+
+export function DashboardContent({ data }: { data: DashboardData }) {
   const t = useTranslations('dashboard')
-  const tc = useTranslations('common')
-  const tl = useTranslations('learn')
-
-  const current = modules.find(m => m.state === 'current') ?? modules.find(m => m.state === 'available') ?? modules[0] ?? null
-  const hour = new Date().getHours()
-  // Greet in the language being learned; fall back to the UI language
-  const greeting = getGreeting(languageCode, hour)
-    ?? (hour < 12 ? t('greeting_morning') : hour < 18 ? t('greeting_afternoon') : t('greeting_evening'))
-  const firstName = displayName.split(' ')[0]
-  const weekDaysActive = stats.weekActivity.filter(v => v > 0).length
-  const maxActivity = Math.max(...stats.weekActivity, 1)
-  const todayIdx = (new Date().getDay() + 6) % 7 // Mon=0, Sun=6
-  const totalSessions = stats.weekActivity.reduce((a, b) => a + b, 0)
-  const bestDayIdx = stats.weekActivity.indexOf(maxActivity)
-  const avgPerActiveDay = weekDaysActive > 0 ? Math.round(totalSessions / weekDaysActive) : 0
-  let currentRun = 0
-  for (let i = todayIdx; i >= 0; i--) {
-    if (stats.weekActivity[i] > 0) currentRun++
-    else break
-  }
-
-  const gradientHover = { rotate: '0deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
-  const gradientHoverTiltL = { rotate: '2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
-  const gradientHoverTiltR = { rotate: '-2.5deg', scale: 1.07, filter: 'brightness(1.14) saturate(1.12)' } as const
-
   return (
-    <div className="flex flex-col min-h-screen bg-[#f6f4f2] dark:bg-[#171b28]">
+    <div className="flex min-h-screen flex-col bg-[#f6f4f2] dark:bg-[#171b28]">
       <AppTopbar title={t('title')} />
-
-      <main className="flex-1 px-3 md:px-5 py-4 md:py-6">
+      <main className="flex-1 px-3 py-4 md:px-5 md:py-6">
         <motion.div
           initial="initial"
           animate="animate"
-          transition={{ staggerChildren: 0.05 }}
-          className="mx-auto max-w-6xl grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+          transition={{ staggerChildren: 0.045 }}
+          className="mx-auto grid max-w-6xl grid-flow-dense grid-cols-12 gap-3 md:gap-4"
         >
-
-          {/* HERO */}
-          <Block className="col-span-12 md:col-span-5 md:row-span-2 relative overflow-hidden p-6 md:p-8 flex flex-col justify-center shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
-            <div className="absolute right-0 top-0 bottom-0 w-32 md:w-44 flex items-center justify-end overflow-hidden pointer-events-none select-none">
-              <span className="text-[7rem] md:text-[9rem] leading-none opacity-[0.065] dark:opacity-[0.055] translate-x-4 md:translate-x-8">👋</span>
-            </div>
-            <div className="relative">
-              <span className="inline-flex items-center text-[11px] font-bold uppercase tracking-widest text-primary bg-primary/10 px-2.5 py-1 rounded-full mb-3">
-                {greeting}
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 dark:text-white">
-                {firstName}!
-              </h2>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-[16rem]">
-                {stats.streak > 0
-                  ? t('streak_active', { count: stats.streak })
-                  : t('streak_start')}
-              </p>
-
-              <div className="mt-5 p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.04] border border-black/[0.04] dark:border-white/[0.05]">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2.5">{t('continue_learning')}</p>
-                {current ? (
-                  <>
-                    <div className="flex items-center gap-2.5 mb-3">
-                      <span className="text-2xl leading-none">{current.icon}</span>
-                      <p className="font-bold text-sm text-slate-900 dark:text-white leading-snug line-clamp-2">{current.title}</p>
-                    </div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="flex-1 h-1.5 bg-slate-100 dark:bg-white/[0.07] rounded-full overflow-hidden">
-                        <motion.div
-                          className="h-full bg-primary rounded-full"
-                          initial={{ width: 0 }}
-                          animate={{ width: `${current.progress}%` }}
-                          transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
-                        />
-                      </div>
-                      <span className="text-[11px] font-semibold text-slate-400 tabular-nums shrink-0">{current.progress}%</span>
-                    </div>
-                    <Link href={`/learn/${current.slug}`}>
-                      <motion.button
-                        whileHover={{ scale: 1.02, y: -1 }}
-                        whileTap={{ scale: 0.97, y: 1 }}
-                        className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2.5 rounded-xl text-xs shadow-sm shadow-primary/30"
-                      >
-                        {current.progress === 0 ? tl('start') : t('resume')} <ArrowRight size={13} />
-                      </motion.button>
-                    </Link>
-                  </>
-                ) : (
-                  <Link href="/learn">
-                    <motion.button
-                      whileHover={{ scale: 1.02, y: -1 }}
-                      whileTap={{ scale: 0.97, y: 1 }}
-                      className="w-full flex items-center justify-center gap-2 bg-primary text-white font-bold py-2.5 rounded-xl text-xs shadow-sm shadow-primary/30"
-                    >
-                      {t('browse_lessons')} <ArrowRight size={13} />
-                    </motion.button>
-                  </Link>
-                )}
-              </div>
-            </div>
-          </Block>
-
-          {/* WEEKLY ACTIVITY */}
-          <Block className="col-span-12 md:col-span-7 md:row-span-2 p-5 md:p-6 flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.05)] min-h-[280px] relative overflow-hidden">
-            <div className="absolute -bottom-5 -right-5 text-[6rem] leading-none opacity-[0.04] dark:opacity-[0.06] select-none pointer-events-none">📈</div>
-
-            <div className="flex items-center justify-between mb-4 shrink-0 relative z-10">
-              <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">{t('this_week')}</p>
-              <div className="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full">
-                <span className="size-1.5 rounded-full bg-primary" />
-                <span className="text-[11px] font-bold text-primary tabular-nums">{t('days_active', { count: weekDaysActive })}</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-3 gap-3 mb-4 shrink-0 relative z-10">
-              <div className="flex flex-col gap-0.5">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{totalSessions}</p>
-                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('sessions')}</p>
-              </div>
-              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
-                <p className="text-2xl font-bold tabular-nums text-slate-900 dark:text-white leading-none">{avgPerActiveDay || '—'}</p>
-                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">{t('avg_active_day')}</p>
-              </div>
-              <div className="flex flex-col gap-0.5 border-l border-black/[0.06] dark:border-white/[0.06] pl-3">
-                <p className="text-2xl font-bold tabular-nums leading-none" style={{ color: currentRun > 0 ? 'var(--primary)' : undefined }}>
-                  {currentRun > 0 ? `${currentRun}🔥` : DAYS[bestDayIdx]}
-                </p>
-                <p className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
-                  {currentRun > 0 ? t('day_run') : t('best_day')}
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-end gap-2 md:gap-3 flex-1 min-h-0 relative z-10">
-              {stats.weekActivity.map((v, i) => {
-                const isToday = i === todayIdx
-                const isBest = i === bestDayIdx && v > 0
-                const pct = v / maxActivity
-                return (
-                  <div key={DAYS[i] + i} className="flex flex-col items-center gap-1.5 flex-1 h-full justify-end">
-                    <motion.span
-                      className={cn('text-[11px] font-bold tabular-nums', v > 0 ? (isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500') : 'text-transparent')}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.5 + i * 0.06 }}
-                    >
-                      {v > 0 ? v : '0'}
-                    </motion.span>
-                    <div className="flex-1 w-full flex items-end">
-                      <motion.div
-                        style={{ height: `${Math.max(pct * 100, v > 0 ? 8 : 4)}%` }}
-                        className={cn(
-                          'w-full rounded-lg',
-                          isToday && v > 0 ? 'bg-primary shadow-sm shadow-primary/30'
-                          : isBest ? 'bg-primary/75'
-                          : v > 0 ? 'bg-primary/45'
-                          : 'bg-slate-100 dark:bg-white/[0.06]'
-                        )}
-                        initial={{ scaleY: 0, originY: '100%' }}
-                        animate={{ scaleY: 1 }}
-                        transition={{ delay: 0.3 + i * 0.06, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
-                      />
-                    </div>
-                    <span className={cn('text-[11px] font-bold shrink-0', isToday ? 'text-primary' : 'text-slate-400 dark:text-slate-500')}>
-                      {DAYS[i]}
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
-          </Block>
-
-          {/* MARIA */}
-          <Block
-            whileHover={gradientHoverTiltL}
-            className="col-span-3 md:col-span-2 border-rose-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #e11d48 0%, #db2777 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🤖</div>
-            <Link href="/maria" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <Bot size={22} className="text-white" />
-              <p className="text-[13px] font-bold text-white text-center leading-tight">MarIA</p>
-              <p className="text-[11px] font-semibold text-white/70">{t('ai_tutor')}</p>
-            </Link>
-          </Block>
-
-          {/* QUICK PRACTICE */}
-          <Block
-            whileHover={gradientHoverTiltR}
-            className="col-span-3 md:col-span-2 border-amber-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-4 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #b45309 0%, #c2410c 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">⚡</div>
-            <Link href="/mini-games" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <Zap size={22} className="text-white" />
-              <p className="text-[13px] font-bold text-white text-center leading-tight">{t('quick_practice')}</p>
-              <p className="text-[11px] font-semibold text-white/70">{tc('two_min')}</p>
-            </Link>
-          </Block>
-
-          {/* SHORT STORY */}
-          <Block
-            whileHover={gradientHoverTiltL}
-            className="col-span-6 md:col-span-2 border-indigo-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #4338ca 0%, #1d4ed8 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">📖</div>
-            <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <BookMarked size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('short_story')}</p>
-              <p className="text-[11px] font-semibold text-white/60">{tc('five_min')}</p>
-            </Link>
-          </Block>
-
-          {/* TRAVEL MODE */}
-          <Block
-            whileHover={gradientHoverTiltR}
-            className="col-span-6 md:col-span-2 border-sky-400/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer overflow-hidden relative"
-            style={{ background: 'linear-gradient(135deg, #0369a1 0%, #0284c7 100%)' }}
-          >
-            <Link href="/travel" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <span className="text-xl leading-none">✈️</span>
-              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('travel_mode')}</p>
-              <p className="text-[11px] font-semibold text-white/70">{t('survival_kit')}</p>
-            </Link>
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🌍</div>
-          </Block>
-
-          {/* DAILY CHALLENGE */}
-          <Block
-            whileHover={gradientHoverTiltL}
-            className="col-span-6 md:col-span-2 border-emerald-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #047857 0%, #0f766e 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🏆</div>
-            <Link href="/challenge" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <Trophy size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('daily_challenge')}</p>
-              <p className="text-[11px] font-semibold text-white/70">{t('new_today')}</p>
-            </Link>
-          </Block>
-
-          {/* MUSIC TIME */}
-          <Block
-            whileHover={gradientHoverTiltR}
-            className="col-span-6 md:col-span-2 border-violet-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #7c3aed 0%, #a21caf 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🎵</div>
-            <Link href="/mini-games" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <Music size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('music_time')}</p>
-              <p className="text-[11px] font-semibold text-white/70">{tc('three_songs')}</p>
-            </Link>
-          </Block>
-
-          {/* VIDEO CLIP (coming soon) */}
-          <Block
-            className="col-span-6 md:col-span-2 border-indigo-900/30 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">📺</div>
-            <span className="inline-flex items-center gap-1 text-[9px] font-bold uppercase tracking-widest text-white/40 relative z-10">
-              <span className="size-1 rounded-full bg-white/40" />
-              {tc('coming_soon')}
-            </span>
-            <p className="text-[12px] font-bold text-white text-center leading-tight relative z-10">{t('video_clip')}</p>
-            <p className="text-[11px] font-semibold text-white/60 relative z-10">{t('daily_lesson')}</p>
-          </Block>
-
-          {/* LEARNING PATH */}
-          <Block
-            whileHover={gradientHoverTiltL}
-            className="col-span-6 md:col-span-2 border-cyan-500/20 flex flex-col items-center justify-center gap-1 min-h-[120px] p-3 cursor-pointer relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #0e7490 0%, #115e59 100%)' }}
-          >
-            <div className="absolute -bottom-3 -right-3 text-[3.5rem] leading-none opacity-[0.12] select-none pointer-events-none">🗺️</div>
-            <Link href="/learn" className="flex flex-col items-center gap-1 w-full relative z-10">
-              <BookOpen size={20} className="text-white" />
-              <p className="text-[12px] font-bold text-white text-center leading-tight">{t('learning_path')}</p>
-              <p className="text-[11px] font-semibold text-white/70">{tc('view_all')}</p>
-            </Link>
-          </Block>
-
+          <TodayCard data={data} />
+          <StreakCard data={data} />
+          <WalletCard data={data} />
+          {data.grammar && <GrammarCard grammar={data.grammar} />}
+          {data.verb && <VerbCard verb={data.verb} languageCode={data.languageCode} wide={!data.grammar} />}
+          <GamesCard wide={!data.grammar && !data.verb} />
+          <WeekCard data={data} />
+          <GroupCard group={data.group} />
+          <PathCard path={data.path} />
+          <SavedCard saved={data.saved} />
         </motion.div>
       </main>
     </div>
+  )
+}
+
+/** A bento cell: enters with the page and lifts on hover; a link when href is given */
+function Cell({ className, href, children }: { className: string; href?: string; children: React.ReactNode }) {
+  const inner = (
+    <motion.div variants={card} whileHover={href ? 'hover' : undefined} className="h-full">
+      {children}
+    </motion.div>
+  )
+  return href
+    ? <Link href={href} className={cn('group rounded-3xl outline-none focus-visible:ring-4 focus-visible:ring-primary/40', className)}>{inner}</Link>
+    : <div className={className}>{inner}</div>
+}
+
+// ── Today: greeting, daily goal and the lesson to continue ────────────────────
+
+function TodayCard({ data }: { data: DashboardData }) {
+  const t = useTranslations('dashboard')
+  const [hour] = useState(() => new Date().getHours())
+  const greeting = getGreeting(data.languageCode, hour)
+    ?? (hour < 12 ? t('greeting_morning') : hour < 18 ? t('greeting_afternoon') : t('greeting_evening'))
+  const goal = data.dailyGoalMinutes * XP_PER_GOAL_MINUTE
+  const today = data.weekXp[data.todayIndex] ?? 0
+  const pct = Math.min(today / goal, 1)
+  const reached = today >= goal
+  const current = data.path.modules[data.path.currentIndex - data.path.start]
+  const allDone = data.path.total > 0 && data.path.completed >= data.path.total
+
+  return (
+    <Cell className="col-span-12 lg:col-span-8 lg:row-span-2">
+      <section className={cn(SURFACE, 'flex flex-col justify-between gap-6 p-6 md:p-8')}>
+        <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="min-w-0">
+            <span suppressHydrationWarning className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-widest text-primary">
+              {greeting}
+            </span>
+            <h1 className="mt-3 truncate text-3xl font-bold leading-tight text-slate-900 dark:text-white md:text-[2.5rem]">
+              {data.firstName ? `${data.firstName}!` : '👋'}
+            </h1>
+            <p className="mt-1.5 text-[15px] text-slate-500 dark:text-slate-400">
+              {reached ? t('goal_done') : today > 0 ? t('goal_left', { xp: goal - today }) : t('goal_start', { xp: goal })}
+            </p>
+          </div>
+          <GoalRing pct={pct} today={today} goal={goal} reached={reached} minutes={data.dailyGoalMinutes} />
+        </div>
+
+        {/* Continue */}
+        {current && !allDone ? (
+          <Link
+            href={`/learn/${current.slug}`}
+            className="group/c relative flex items-center gap-4 rounded-2xl bg-gradient-to-r from-primary to-[#f45d48] p-4 text-white shadow-lg shadow-primary/25 transition hover:shadow-xl hover:shadow-primary/30 md:p-5"
+          >
+            <motion.span
+              className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-white/20 text-3xl backdrop-blur-sm"
+              whileHover={{ rotate: -6, scale: 1.06 }}
+              transition={spring}
+            >
+              {current.icon}
+            </motion.span>
+            <span className="min-w-0 flex-1">
+              <span className="block text-[11px] font-black uppercase tracking-widest text-white/75">
+                {t('continue_title')} · {t('lesson_n', { n: data.path.currentIndex + 1 })}
+              </span>
+              <span className="mt-0.5 block truncate text-lg font-bold">{current.title}</span>
+              <span className="mt-2 flex items-center gap-2">
+                <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/25">
+                  <motion.span
+                    className="block h-full rounded-full bg-white"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${Math.max(current.progress, 3)}%` }}
+                    transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  />
+                </span>
+                <span className="text-xs font-bold tabular-nums">{current.progress}%</span>
+              </span>
+            </span>
+            <span className="hidden h-11 shrink-0 items-center gap-1.5 rounded-xl bg-white px-4 text-sm font-bold text-primary shadow-md transition group-hover/c:gap-2.5 sm:flex">
+              {current.progress === 0 ? t('start') : t('resume')} <ArrowRight size={15} />
+            </span>
+          </Link>
+        ) : (
+          <Link href="/learn" className="flex items-center justify-between gap-3 rounded-2xl bg-emerald-500/10 p-5 font-bold text-emerald-700 dark:text-emerald-300">
+            <span className="flex items-center gap-2"><Trophy size={18} /> {allDone ? t('all_done') : t('browse_lessons')}</span>
+            <ArrowRight size={16} />
+          </Link>
+        )}
+      </section>
+    </Cell>
+  )
+}
+
+function GoalRing({ pct, today, goal, reached, minutes }: { pct: number; today: number; goal: number; reached: boolean; minutes: number }) {
+  const t = useTranslations('dashboard')
+  const r = 54
+  const c = 2 * Math.PI * r
+  return (
+    <div className="flex shrink-0 items-center gap-4 sm:flex-col sm:gap-1">
+      <div className="relative size-32">
+        <svg viewBox="0 0 128 128" className="size-full -rotate-90">
+          <circle cx="64" cy="64" r={r} fill="none" strokeWidth="11" className="stroke-black/[0.06] dark:stroke-white/[0.08]" />
+          <motion.circle
+            cx="64" cy="64" r={r} fill="none" strokeWidth="11" strokeLinecap="round"
+            stroke={reached ? '#10b981' : 'url(#today-gradient)'}
+            strokeDasharray={c}
+            initial={{ strokeDashoffset: c }}
+            animate={{ strokeDashoffset: c * (1 - pct) }}
+            transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
+          />
+          <defs>
+            <linearGradient id="today-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#ff8052" />
+              <stop offset="100%" stopColor="#e11d48" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span className="absolute inset-0 flex flex-col items-center justify-center">
+          {reached
+            ? <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ ...spring, delay: 1 }}><Check size={30} strokeWidth={3} className="text-emerald-500" /></motion.span>
+            : <span className="text-2xl font-black tabular-nums text-slate-900 dark:text-white">{today}</span>}
+          <span className="text-[11px] font-bold text-slate-400">/ {goal} XP</span>
+        </span>
+      </div>
+      <div className="sm:text-center">
+        <p className={LABEL}>{t('today_goal')}</p>
+        <p className="text-xs text-slate-400">{t('goal_minutes', { n: minutes })}</p>
+      </div>
+    </div>
+  )
+}
+
+// ── Streak ────────────────────────────────────────────────────────────────────
+
+function StreakCard({ data }: { data: DashboardData }) {
+  const t = useTranslations('dashboard')
+  const locale = useLocale()
+  const days = useWeekdays(locale)
+  const todayDone = data.weekActive[data.todayIndex]
+  return (
+    <Cell className="col-span-12 sm:col-span-6 lg:col-span-4" href="/progress">
+      <section
+        className="relative flex h-full flex-col gap-4 overflow-hidden rounded-3xl p-5 text-white shadow-[0_8px_24px_rgba(249,115,22,0.25)]"
+        style={{ background: 'linear-gradient(140deg, #fb923c 0%, #f97316 45%, #ea580c 100%)' }}
+      >
+        <motion.span
+          aria-hidden
+          className="pointer-events-none absolute -right-4 -top-4 text-white/15"
+          animate={{ scale: [1, 1.06, 1], rotate: [-3, 3, -3] }}
+          transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+        >
+          <Flame size={120} fill="currentColor" />
+        </motion.span>
+        <div className="relative flex items-end gap-3">
+          <motion.span
+            animate={{ scale: [1, 1.12, 1] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+            className="flex size-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm"
+          >
+            <Flame size={26} fill="currentColor" />
+          </motion.span>
+          <div>
+            <p className="text-4xl font-black leading-none tabular-nums">{data.streak}</p>
+            <p className="text-sm font-semibold text-white/85">{t('streak_days', { n: data.streak })}</p>
+          </div>
+          {data.freezes > 0 && (
+            <span className="ml-auto flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-bold backdrop-blur-sm" title={t('streak_freezes', { n: data.freezes })}>
+              <Shield size={11} fill="currentColor" /> ×{data.freezes}
+            </span>
+          )}
+        </div>
+        <div className="relative mt-auto">
+          <div className="flex justify-between gap-1">
+            {days.map((d, i) => (
+              <div key={i} className="flex flex-col items-center gap-1">
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ ...spring, delay: 0.3 + i * 0.04 }}
+                  className={cn(
+                    'flex size-7 items-center justify-center rounded-full text-[11px] font-black',
+                    data.weekActive[i] ? 'bg-white text-orange-500' : i === data.todayIndex ? 'border-2 border-dashed border-white/70' : 'bg-white/15',
+                  )}
+                >
+                  {data.weekActive[i] ? <Check size={13} strokeWidth={3.5} /> : null}
+                </motion.span>
+                <span className={cn('text-[10px] font-bold', i === data.todayIndex ? 'text-white' : 'text-white/60')}>{d}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-2 text-xs font-semibold text-white/80">
+            {data.streak === 0 ? t('streak_zero') : todayDone ? t('streak_today_done') : t('streak_today_pending')}
+            {data.longestStreak > 0 && <span className="text-white/60"> · {t('streak_best', { n: data.longestStreak })}</span>}
+          </p>
+        </div>
+      </section>
+    </Cell>
+  )
+}
+
+// ── Wallet: XP, gems, boosts ──────────────────────────────────────────────────
+
+function WalletCard({ data }: { data: DashboardData }) {
+  const t = useTranslations('dashboard')
+  const locale = useLocale()
+  return (
+    <Cell className="col-span-12 sm:col-span-6 lg:col-span-4" href="/gems">
+      <section className={cn(SURFACE, 'flex flex-col gap-4 p-5')}>
+        <div className="flex items-center justify-between">
+          <p className={LABEL}>{t('wallet_title')}</p>
+          <span className="flex items-center gap-1 text-xs font-bold text-sky-600 transition-colors group-hover:text-sky-500 dark:text-sky-400">
+            <ShoppingBag size={13} /> {t('shop')}
+          </span>
+        </div>
+        <div className="grid grid-cols-2 gap-2.5">
+          <div className="rounded-2xl bg-primary/[0.07] p-3">
+            <Zap size={16} className="text-primary" />
+            <p className="mt-1.5 text-2xl font-black tabular-nums text-slate-900 dark:text-white">{data.totalXp.toLocaleString(locale)}</p>
+            <p className="text-[11px] font-bold uppercase tracking-wider text-primary/80">XP</p>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl bg-sky-500/[0.08] p-3">
+            <motion.span
+              aria-hidden
+              className="absolute -bottom-3 -right-2 text-sky-500/15"
+              animate={{ rotate: [0, 8, 0], y: [0, -3, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <Gem size={56} />
+            </motion.span>
+            <Gem size={16} className="text-sky-500" />
+            <p className="relative mt-1.5 text-2xl font-black tabular-nums text-slate-900 dark:text-white">{data.gems.toLocaleString(locale)}</p>
+            <p className="relative text-[11px] font-bold uppercase tracking-wider text-sky-600/80 dark:text-sky-400/80">{t('gems')}</p>
+          </div>
+        </div>
+        {(data.boosts.xp || data.boosts.gems) && (
+          <div className="mt-auto flex flex-wrap gap-1.5">
+            {data.boosts.xp && <span className="flex items-center gap-1 rounded-md bg-indigo-500/10 px-1.5 py-0.5 text-[10px] font-bold text-indigo-600 dark:text-indigo-300"><Zap size={10} /> ×2 XP</span>}
+            {data.boosts.gems && <span className="flex items-center gap-1 rounded-md bg-sky-500/10 px-1.5 py-0.5 text-[10px] font-bold text-sky-600 dark:text-sky-400"><Gem size={10} /> ×2</span>}
+          </div>
+        )}
+      </section>
+    </Cell>
+  )
+}
+
+// ── Grammar ───────────────────────────────────────────────────────────────────
+
+function GrammarCard({ grammar }: { grammar: NonNullable<DashboardData['grammar']> }) {
+  const t = useTranslations('dashboard')
+  const next = grammar.next
+  return (
+    <Cell className="col-span-12 md:col-span-6 lg:col-span-4" href={next ? `/grammar/${next.slug}` : '/grammar'}>
+      <section className={cn(SURFACE, 'flex flex-col gap-4 p-5')}>
+        <span aria-hidden className="pointer-events-none absolute -right-3 -top-8 select-none text-[7rem] font-black leading-none tracking-tighter text-indigo-500 opacity-[0.07] transition-transform duration-500 group-hover:-translate-x-2">
+          {next ? String(next.number).padStart(2, '0') : '✓'}
+        </span>
+        <div className="relative flex items-center justify-between gap-2">
+          <p className={cn(LABEL, 'flex items-center gap-1.5')}><GraduationCap size={14} className="text-indigo-500" /> {t('grammar_title')}</p>
+          <span className="text-[11px] font-bold tabular-nums text-slate-400">{grammar.mastered}/{grammar.total}</span>
+        </div>
+        {next ? (
+          <>
+            <div className="relative">
+              <p className="text-[11px] font-bold text-indigo-500">{t('grammar_module', { n: next.number })}</p>
+              <p className="text-lg font-bold leading-tight text-slate-900 transition-colors group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-300">{next.title}</p>
+              <p className="mt-1 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">{next.tagline}</p>
+            </div>
+            <div className="relative mt-auto flex flex-col gap-3">
+              <span className="flex gap-1">
+                {next.exercises.map((ok, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ delay: 0.4 + i * 0.05 }}
+                    className={cn('h-1.5 flex-1 origin-left rounded-full', ok ? 'bg-indigo-500' : 'bg-black/[0.06] dark:bg-white/[0.08]')}
+                  />
+                ))}
+              </span>
+              <span className="flex items-center justify-between">
+                <GemChip gems={next.gems} />
+                <span className="flex items-center gap-1 text-sm font-bold text-indigo-600 transition-all group-hover:gap-2 dark:text-indigo-300">
+                  {next.started ? t('resume') : t('start')} <ArrowRight size={14} />
+                </span>
+              </span>
+            </div>
+          </>
+        ) : (
+          <p className="relative mt-auto flex items-center gap-2 font-bold text-emerald-600 dark:text-emerald-400"><Trophy size={16} /> {t('grammar_all_done')}</p>
+        )}
+      </section>
+    </Cell>
+  )
+}
+
+// ── Verb of the day ───────────────────────────────────────────────────────────
+
+function VerbCard({ verb, languageCode, wide }: { verb: NonNullable<DashboardData['verb']>; languageCode: string; wide: boolean }) {
+  const t = useTranslations('dashboard')
+  const [playing, setPlaying] = useState<number | null>(null)
+  function say(i: number) {
+    setPlaying(i)
+    speak(speakableForm(verb.forms[i]), languageCode, { onEnd: () => setPlaying(p => (p === i ? null : p)) })
+  }
+  return (
+    <Cell className={cn('col-span-12 md:col-span-6', wide ? 'lg:col-span-8' : 'lg:col-span-4')}>
+      <section className={cn(SURFACE, 'flex flex-col gap-3 p-5')}>
+        <div className="flex items-center justify-between gap-2">
+          <p className={cn(LABEL, 'flex items-center gap-1.5')}><BookType size={14} className="text-primary" /> {t('verb_title')}</p>
+          {verb.aux && <span className="rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-bold text-amber-700 dark:text-amber-400">{verb.aux}</span>}
+        </div>
+        <button type="button" onClick={() => speak(verb.infinitive, languageCode)} className="group/v flex items-baseline gap-2 text-left">
+          <span className="text-2xl font-black italic text-slate-900 transition-colors group-hover/v:text-primary dark:text-white">{verb.infinitive}</span>
+          <Volume2 size={15} className="shrink-0 text-slate-300 transition-colors group-hover/v:text-primary" />
+        </button>
+        <p className="-mt-2 text-sm text-slate-500 dark:text-slate-400">{verb.translation} · <span className="text-slate-400">{verb.tense}</span></p>
+        <div className="grid grid-cols-2 gap-1">
+          {verb.forms.map((f, i) => (
+            <motion.button
+              key={i}
+              type="button"
+              onClick={() => say(i)}
+              whileTap={{ scale: 0.96 }}
+              className={cn(
+                'truncate rounded-lg px-2 py-1 text-left text-sm font-semibold italic transition-colors',
+                playing === i ? 'bg-primary text-white' : 'bg-slate-50 text-slate-700 hover:bg-primary/10 hover:text-primary dark:bg-white/[0.04] dark:text-slate-200',
+              )}
+            >
+              {speakableForm(f)}
+            </motion.button>
+          ))}
+        </div>
+        <div className="mt-auto flex items-center gap-2 pt-1">
+          <Link
+            href={`/verbs/practice?verb=${verb.id}`}
+            className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl bg-primary text-sm font-bold text-white shadow-md shadow-primary/25 transition hover:opacity-95"
+          >
+            <Zap size={14} /> {t('verb_practice')}
+          </Link>
+          <Link href="/verbs" className="flex h-9 items-center rounded-xl px-3 text-sm font-semibold text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-800 dark:hover:bg-white/[0.06] dark:hover:text-white">
+            {t('verb_all')}
+          </Link>
+        </div>
+      </section>
+    </Cell>
+  )
+}
+
+// ── Mini-games ────────────────────────────────────────────────────────────────
+
+function GamesCard({ wide }: { wide: boolean }) {
+  const t = useTranslations('dashboard')
+  const games = [
+    { href: '/mini-games/vocabulary', icon: Sparkles, label: t('game_vocab') },
+    { href: '/verbs/practice', icon: BookType, label: t('game_verbs') },
+    { href: '/mini-games/speedround', icon: Zap, label: t('game_speed') },
+    { href: '/mini-games/monkeytype', icon: Keyboard, label: t('game_typing') },
+  ]
+  return (
+    <Cell className={cn('col-span-12', wide ? 'lg:col-span-8' : 'md:col-span-12 lg:col-span-4')}>
+      <section
+        className="relative flex h-full flex-col gap-4 overflow-hidden rounded-3xl p-5 text-white shadow-[0_8px_24px_rgba(124,58,237,0.25)]"
+        style={{ background: 'linear-gradient(140deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%)' }}
+      >
+        <div aria-hidden className="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-white/10 blur-xl" />
+        <div className="relative flex items-center justify-between">
+          <p className="text-[11px] font-black uppercase tracking-widest text-white/80">{t('games_title')}</p>
+          <Link href="/mini-games" className="flex items-center gap-1 text-xs font-bold text-white/85 hover:text-white">{t('games_all')} <ArrowRight size={12} /></Link>
+        </div>
+        <p className="relative -mt-2 text-sm text-white/80">{t('games_text')}</p>
+        <GamesArt />
+        <div className="relative mt-auto grid grid-cols-2 gap-2">
+          {games.map(({ href, icon: Icon, label }, i) => (
+            <Link key={href} href={href}>
+              <motion.span
+                whileHover={{ y: -3, scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...spring, delay: 0.35 + i * 0.05 }}
+                className="flex h-full items-center gap-2 rounded-2xl bg-white/15 p-2.5 text-sm font-bold backdrop-blur-sm transition-colors hover:bg-white/25"
+              >
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-white/20"><Icon size={15} /></span>
+                <span className="leading-tight">{label}</span>
+              </motion.span>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </Cell>
+  )
+}
+
+/** Little game tiles floating in the free space of the card */
+function GamesArt() {
+  const tiles = [
+    { icon: Gamepad2, x: '8%', y: 4, r: -8, d: 0 },
+    { icon: Trophy, x: '38%', y: 18, r: 6, d: 0.5 },
+    { icon: Sparkles, x: '66%', y: 0, r: -4, d: 1 },
+  ]
+  return (
+    <div aria-hidden className="pointer-events-none relative hidden h-16 lg:block">
+      {tiles.map(({ icon: Icon, x, y, r, d }, i) => (
+        <motion.span
+          key={i}
+          className="absolute flex size-12 items-center justify-center rounded-2xl bg-white/20 shadow-lg backdrop-blur-sm"
+          style={{ left: x, top: y, rotate: r }}
+          animate={{ y: [0, -6, 0] }}
+          transition={{ duration: 3, repeat: Infinity, delay: d, ease: 'easeInOut' }}
+        >
+          <Icon size={22} />
+        </motion.span>
+      ))}
+    </div>
+  )
+}
+
+// ── This week ─────────────────────────────────────────────────────────────────
+
+function WeekCard({ data }: { data: DashboardData }) {
+  const t = useTranslations('dashboard')
+  const locale = useLocale()
+  const days = useWeekdays(locale)
+  const goal = data.dailyGoalMinutes * XP_PER_GOAL_MINUTE
+  const max = Math.max(...data.weekXp, goal, 1)
+  const total = data.weekXp.reduce((a, b) => a + b, 0)
+  const active = data.weekActive.filter(Boolean).length
+  const best = Math.max(...data.weekXp)
+  return (
+    <Cell className="col-span-12 lg:col-span-7" href="/progress">
+      <section className={cn(SURFACE, 'flex flex-col gap-4 p-5 md:p-6')}>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className={LABEL}>{t('week_title')}</p>
+            <p className="mt-1 text-3xl font-black tabular-nums text-slate-900 dark:text-white">
+              {total.toLocaleString(locale)} <span className="text-base font-bold text-primary">XP</span>
+            </p>
+          </div>
+          <div className="flex gap-4 text-right">
+            <div>
+              <p className="text-lg font-bold tabular-nums text-slate-900 dark:text-white">{active}<span className="text-slate-400">/7</span></p>
+              <p className="text-[11px] font-semibold text-slate-400">{t('week_active')}</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold tabular-nums text-slate-900 dark:text-white">{best.toLocaleString(locale)}</p>
+              <p className="text-[11px] font-semibold text-slate-400">{t('week_best')}</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="relative flex h-32 items-end gap-2 md:gap-3">
+            {/* Daily goal line */}
+            <span aria-hidden className="pointer-events-none absolute inset-x-0 border-t-2 border-dashed border-primary/30" style={{ bottom: `${(goal / max) * 100}%` }} />
+            {data.weekXp.map((xp, i) => {
+              const isToday = i === data.todayIndex
+              const reached = xp >= goal
+              return (
+                <motion.div
+                  key={i}
+                  className={cn(
+                    'flex-1 rounded-lg',
+                    xp === 0 ? 'bg-black/[0.05] dark:bg-white/[0.06]' : reached ? 'bg-gradient-to-t from-primary to-[#f45d48]' : isToday ? 'bg-primary/80' : 'bg-primary/40',
+                  )}
+                  style={{ height: `${Math.max((xp / max) * 100, xp > 0 ? 6 : 3)}%`, originY: 1 }}
+                  initial={{ scaleY: 0 }}
+                  animate={{ scaleY: 1 }}
+                  transition={{ duration: 0.6, delay: 0.3 + i * 0.05, ease: [0.22, 1, 0.36, 1] }}
+                  title={`${xp} XP`}
+                />
+              )
+            })}
+          </div>
+          <div className="mt-1.5 flex gap-2 md:gap-3">
+            {days.map((d, i) => (
+              <span key={i} className={cn('flex-1 text-center text-[11px] font-bold', i === data.todayIndex ? 'text-primary' : 'text-slate-400')}>{d}</span>
+            ))}
+          </div>
+        </div>
+        <p className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-400">
+          <span className="w-5 border-t-2 border-dashed border-primary/40" /> {t('goal_line', { xp: goal })}
+        </p>
+      </section>
+    </Cell>
+  )
+}
+
+// ── Study group ───────────────────────────────────────────────────────────────
+
+function GroupCard({ group }: { group: DashboardData['group'] }) {
+  const t = useTranslations('dashboard')
+  if (!group) {
+    return (
+      <Cell className="col-span-12 lg:col-span-5" href="/community">
+        <section className={cn(SURFACE, 'flex flex-col gap-4 p-5 md:p-6')}>
+          <p className={cn(LABEL, 'flex items-center gap-1.5')}><Users size={14} className="text-primary" /> {t('group_title')}</p>
+          <div className="flex items-center gap-4">
+            <div aria-hidden className="flex -space-x-3">
+              {[['#6366f1', '#a855f7'], ['#0ea5e9', '#22d3ee'], ['#f59e0b', '#f97316']].map(([a, b], i) => (
+                <motion.span
+                  key={i}
+                  animate={{ y: [0, -4, 0] }}
+                  transition={{ duration: 2.8, repeat: Infinity, delay: i * 0.35, ease: 'easeInOut' }}
+                  className="size-11 rounded-full border-[3px] border-white dark:border-[#202638]"
+                  style={{ background: `linear-gradient(135deg, ${a}, ${b})` }}
+                />
+              ))}
+            </div>
+            <div className="min-w-0">
+              <p className="font-bold text-slate-900 dark:text-white">{t('group_cta_title')}</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">{t('group_cta_text')}</p>
+            </div>
+          </div>
+          <span className="mt-auto flex items-center gap-1 text-sm font-bold text-primary transition-all group-hover:gap-2">
+            {t('group_cta_button')} <ArrowRight size={14} />
+          </span>
+        </section>
+      </Cell>
+    )
+  }
+  const ranked = [...group.members].sort((a, b) => b.weekXp - a.weekXp)
+  const myRank = ranked.findIndex(m => m.isMe) + 1
+  const goal = group.members.length * WEEKLY_XP_PER_MEMBER
+  const done = group.members.reduce((n, m) => n + m.weekXp, 0)
+  return (
+    <Cell className="col-span-12 lg:col-span-5" href="/community">
+      <section className={cn(SURFACE, 'flex flex-col gap-4 p-5 md:p-6')}>
+        <div className="flex items-center justify-between gap-2">
+          <p className={cn(LABEL, 'flex items-center gap-1.5')}><Users size={14} className="text-primary" /> {t('group_title')}</p>
+          <span className="truncate text-xs font-bold text-slate-500 dark:text-slate-400">{group.name}</span>
+        </div>
+        <ol className="flex flex-col gap-1.5">
+          {ranked.slice(0, 3).map((m, i) => (
+            <li key={m.id} className={cn('flex items-center gap-2.5 rounded-xl px-2 py-1.5', m.isMe && 'bg-primary/[0.07]')}>
+              <span className={cn('w-4 text-center text-xs font-black', i === 0 ? 'text-amber-500' : 'text-slate-400')}>{i + 1}</span>
+              <MiniAvatar name={m.name} avatar={m.avatar} id={m.id} />
+              <span className="min-w-0 flex-1 truncate text-sm font-semibold text-slate-800 dark:text-slate-100">{m.isMe ? t('you') : m.name}</span>
+              <span className="rounded-md bg-primary/10 px-1.5 py-0.5 text-[10px] font-bold tabular-nums text-primary">+{m.weekXp} XP</span>
+            </li>
+          ))}
+        </ol>
+        {myRank > 3 && <p className="text-xs font-semibold text-slate-500">{t('group_rank', { rank: myRank, n: ranked.length })}</p>}
+        <div className="mt-auto">
+          <div className="mb-1 flex justify-between text-[11px] font-semibold text-slate-400">
+            <span className="flex items-center gap-1"><Target size={11} /> {t('group_goal')}</span>
+            <span className="tabular-nums">{Math.min(Math.round((done / goal) * 100), 100)}%</span>
+          </div>
+          <div className="h-2 overflow-hidden rounded-full bg-black/[0.06] dark:bg-white/[0.08]">
+            <motion.div
+              className={cn('h-full rounded-full', done >= goal ? 'bg-emerald-500' : 'bg-gradient-to-r from-primary to-[#e11d48]')}
+              initial={{ width: 0 }}
+              animate={{ width: `${Math.min((done / goal) * 100, 100)}%` }}
+              transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
+            />
+          </div>
+        </div>
+      </section>
+    </Cell>
+  )
+}
+
+const AVATAR_GRADIENTS = [['#6366f1', '#a855f7'], ['#0ea5e9', '#22d3ee'], ['#f59e0b', '#f97316'], ['#10b981', '#14b8a6'], ['#ec4899', '#f43f5e'], ['#ff8052', '#e11d48']]
+
+function MiniAvatar({ name, avatar, id }: { name: string; avatar: string | null; id: string }) {
+  if (avatar) {
+    // eslint-disable-next-line @next/next/no-img-element -- Google avatar, no next/image domain config needed
+    return <img src={avatar} alt="" referrerPolicy="no-referrer" className="size-7 shrink-0 rounded-full object-cover" />
+  }
+  const [a, b] = AVATAR_GRADIENTS[[...id].reduce((n, c) => n + c.charCodeAt(0), 0) % AVATAR_GRADIENTS.length]
+  return (
+    <span className="flex size-7 shrink-0 items-center justify-center rounded-full text-[11px] font-black text-white" style={{ background: `linear-gradient(135deg, ${a}, ${b})` }}>
+      {name.charAt(0).toUpperCase()}
+    </span>
+  )
+}
+
+// ── Course path ───────────────────────────────────────────────────────────────
+
+function PathCard({ path }: { path: DashboardData['path'] }) {
+  const t = useTranslations('dashboard')
+  const pct = path.total ? Math.round((path.completed / path.total) * 100) : 0
+  return (
+    <Cell className="col-span-12 lg:col-span-8" href="/learn">
+      <section className={cn(SURFACE, 'flex flex-col gap-4 p-5 md:p-6')}>
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <p className={cn(LABEL, 'flex items-center gap-1.5')}><MapIcon size={14} className="text-primary" /> {t('path_title')}</p>
+          <p className="text-xs font-semibold text-slate-400">{t('path_progress', { done: path.completed, total: path.total })} · {pct}%</p>
+        </div>
+        <div className="relative">
+          {/* Track */}
+          <span aria-hidden className="absolute left-6 right-6 top-6 h-1 rounded-full bg-black/[0.06] dark:bg-white/[0.08]" />
+          <ol className="relative flex justify-between gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
+            {path.modules.map((m, i) => {
+              const index = path.start + i
+              const isCurrent = m.state === 'current'
+              return (
+                <li key={m.slug} className="flex w-20 shrink-0 flex-col items-center gap-1.5 text-center">
+                  <motion.span
+                    initial={{ scale: 0 }}
+                    animate={isCurrent ? { scale: [1, 1.08, 1] } : { scale: 1 }}
+                    transition={isCurrent ? { duration: 2, repeat: Infinity, ease: 'easeInOut' } : { ...spring, delay: 0.3 + i * 0.05 }}
+                    className={cn(
+                      'relative flex size-12 items-center justify-center rounded-2xl text-xl',
+                      m.state === 'completed' && 'bg-emerald-500 text-white shadow-md shadow-emerald-500/25',
+                      isCurrent && 'bg-primary text-white shadow-lg shadow-primary/30 ring-4 ring-primary/20',
+                      m.state === 'available' && 'border-2 border-primary/30 bg-white shadow-sm dark:bg-[#202638]',
+                      m.state === 'locked' && 'bg-slate-100 text-slate-300 dark:bg-white/[0.05] dark:text-slate-600',
+                    )}
+                  >
+                    {m.state === 'completed' ? <Check size={20} strokeWidth={3} /> : m.state === 'locked' ? <Lock size={16} /> : m.icon}
+                  </motion.span>
+                  <span className={cn('text-[10px] font-black tabular-nums', isCurrent ? 'text-primary' : 'text-slate-400')}>{t('lesson_n', { n: index + 1 })}</span>
+                  <span className={cn('line-clamp-2 text-[11px] font-semibold leading-tight', isCurrent || m.state === 'available' ? 'text-slate-900 dark:text-white' : 'text-slate-400')}>{m.title}</span>
+                </li>
+              )
+            })}
+          </ol>
+        </div>
+      </section>
+    </Cell>
+  )
+}
+
+// ── Saved study links ─────────────────────────────────────────────────────────
+
+const PLATFORM: Record<string, string> = { youtube: 'YouTube', tiktok: 'TikTok', instagram: 'Instagram', other: 'Link' }
+
+function SavedCard({ saved }: { saved: DashboardData['saved'] }) {
+  const t = useTranslations('dashboard')
+  return (
+    <Cell className="col-span-12 lg:col-span-4" href="/saved">
+      <section className={cn(SURFACE, 'flex flex-col gap-3 p-5')}>
+        <div className="flex items-center justify-between">
+          <p className={cn(LABEL, 'flex items-center gap-1.5')}><Bookmark size={14} className="text-primary" /> {t('saved_title')}</p>
+          {saved && <span className="text-[11px] font-bold text-slate-400">{t('saved_count', { n: saved.count })}</span>}
+        </div>
+        {saved ? (
+          <div className="flex items-center gap-3">
+            <span className="relative h-16 w-24 shrink-0 overflow-hidden rounded-xl bg-slate-100 dark:bg-white/[0.05]">
+              {saved.thumbnail && (
+                // eslint-disable-next-line @next/next/no-img-element -- remote video thumbnail
+                <img src={saved.thumbnail} alt="" className="size-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              )}
+            </span>
+            <span className="min-w-0">
+              <span className="line-clamp-2 text-sm font-semibold text-slate-800 dark:text-slate-100">{saved.title ?? PLATFORM[saved.platform] ?? saved.platform}</span>
+              <span className="text-xs text-slate-400">{PLATFORM[saved.platform] ?? saved.platform}</span>
+            </span>
+          </div>
+        ) : (
+          <p className="text-sm text-slate-500 dark:text-slate-400">{t('saved_empty')}</p>
+        )}
+        <span className="mt-auto flex items-center gap-1 text-sm font-bold text-primary transition-all group-hover:gap-2">
+          {t('saved_open')} <ArrowRight size={14} />
+        </span>
+      </section>
+    </Cell>
   )
 }

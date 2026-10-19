@@ -2,6 +2,14 @@
 
 import { useEffect, useState, useCallback } from 'react'
 import { createClient } from '@/lib/supabase/client'
+import { addRewards } from '@/lib/rewards'
+
+/** XP for each word, phrase or answer mastered in practice */
+export const MASTERY_XP = 1
+
+// Rewards are added one after another, so quick successive words don't overwrite
+// each other's XP (the profile total is read, then written)
+let rewardQueue: Promise<unknown> = Promise.resolve()
 
 export function useVocabMastery(languageCode: string, namespace: 'word' | 'phrase' | 'qa' = 'word') {
   const [masteredSet, setMasteredSet] = useState<Set<string>>(new Set())
@@ -50,11 +58,16 @@ export function useVocabMastery(languageCode: string, namespace: 'word' | 'phras
         uid = session.user.id
         setUserId(uid)
       }
-      await supabase.from('user_vocab_mastery').insert({
+      const { error } = await supabase.from('user_vocab_mastery').insert({
         user_id: uid,
         language_code: languageCode,
         word: key,
       })
+      // Practice counts as today's activity: a little XP and the streak
+      if (!error) {
+        const owner = uid
+        rewardQueue = rewardQueue.then(() => addRewards(supabase, owner, { xp: MASTERY_XP, gems: 0, reason: 'lesson_activity' }))
+      }
     },
     [userId, languageCode, masteredSet, prefix],
   )

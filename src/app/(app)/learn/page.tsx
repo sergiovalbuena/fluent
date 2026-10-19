@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { lessonStates } from '@/lib/course-path'
 import { LearnContent, type LearnModule } from '@/components/learn/learn-content'
 import { getLanguageSettings } from '@/lib/active-language'
 import { lessonDescription } from '@/lib/lesson-description'
@@ -123,24 +124,8 @@ export default async function LearnPage() {
     return { id: m.id, slug: m.slug, title: m.title, subtitle: lessonDescription(languageCode, m.slug, uiLocale, m.description) ?? undefined, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
   })
 
-  // The first module not completed yet is 'current' (lessons unlocked early with
-  // gems may be completed out of order, so this can't be "after the last completed")
-  const isDone = (m: { lessonsCompleted: number; totalLessons: number }) => m.totalLessons > 0 && m.lessonsCompleted >= m.totalLessons
-  const currentIdx = modulesBase.findIndex(m => !isDone(m))
-
-  const modules: LearnModule[] = modulesBase.map((m, i) => {
-    let state: LearnModule['state']
-    if (isDone(m)) {
-      state = 'completed'
-    } else if (i === currentIdx) {
-      state = 'current'
-    } else if (i === currentIdx + 1) {
-      state = 'available'
-    } else {
-      state = unlockedIds.has(m.id) ? 'available' : 'locked'
-    }
-    return { ...m, state }
-  })
+  const states = lessonStates(modulesBase, unlockedIds)
+  const modules: LearnModule[] = modulesBase.map((m, i) => ({ ...m, state: states[i] }))
 
   const lang = LANGUAGE_NAMES[languageCode] ?? { name: languageCode.toUpperCase(), flag: '🌐' }
 
