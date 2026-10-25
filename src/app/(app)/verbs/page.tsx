@@ -12,6 +12,9 @@ import { loadVerbExamples, loadVerbForms, loadVerbIndex, verbTranslation, type V
 import { cn } from '@/lib/utils'
 
 type Filter = 'all' | 'essentials'
+type Ending = NonNullable<VerbEntry['ending']>
+type Kind = 'all' | 'regular' | 'irregular'
+const ENDINGS: Ending[] = ['er', 'ir', 're', 'oir']
 
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 
@@ -27,6 +30,8 @@ export default function VerbsPage() {
   const [open, setOpen] = useState<VerbEntry | null>(null)
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState<Filter>('all')
+  const [ending, setEnding] = useState<Ending | null>(null)
+  const [kind, setKind] = useState<Kind>('all')
   const deferredQuery = useDeferredValue(query)
 
   useEffect(() => {
@@ -47,9 +52,17 @@ export default function VerbsPage() {
     const q = norm(deferredQuery.trim())
     return index.verbs.filter(v =>
       (filter === 'all' || v.essential) &&
+      (!ending || v.ending === ending) &&
+      (kind === 'all' || (kind === 'irregular') === v.irregular) &&
       (!q || norm(v.infinitive).includes(q) || norm(verbTranslation(v, translationLang)).includes(q)),
     )
-  }, [index, deferredQuery, filter, translationLang])
+  }, [index, deferredQuery, filter, ending, kind, translationLang])
+
+  // Endings present in this course (French), with how many verbs each has
+  const endings = useMemo(
+    () => (index ? ENDINGS.map(e => ({ e, count: index.verbs.filter(v => v.ending === e).length })).filter(x => x.count > 0) : []),
+    [index],
+  )
 
   // Without a search, verbs are grouped: essentials first, then by lesson
   const groups = useMemo(() => {
@@ -115,7 +128,7 @@ export default function VerbsPage() {
                       </button>
                     )}
                   </label>
-                  <div className="flex gap-1.5">
+                  <div className="flex flex-wrap gap-1.5">
                     {(['all', 'essentials'] as const).map(f => (
                       <button
                         key={f}
@@ -130,6 +143,25 @@ export default function VerbsPage() {
                       >
                         {f === 'all' ? t('all') : t('essentials')}
                       </button>
+                    ))}
+                  </div>
+                  {/* By ending (French) and regular / irregular */}
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    {endings.length > 0 && (
+                      <>
+                        <span className="pr-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">{t('ending')}</span>
+                        {endings.map(({ e, count }) => (
+                          <FilterChip key={e} active={ending === e} onClick={() => setEnding(ending === e ? null : e)} title={t(`group_${e}`)}>
+                            -{e} <span className="opacity-50">{count}</span>
+                          </FilterChip>
+                        ))}
+                        <span className="mx-0.5 h-4 w-px bg-black/[0.08] dark:bg-white/[0.1]" />
+                      </>
+                    )}
+                    {(['regular', 'irregular'] as const).map(k => (
+                      <FilterChip key={k} active={kind === k} onClick={() => setKind(kind === k ? 'all' : k)} tone={k === 'irregular' ? 'rose' : 'slate'}>
+                        {t(k)}
+                      </FilterChip>
                     ))}
                   </div>
                 </div>
@@ -167,9 +199,14 @@ export default function VerbsPage() {
                     >
                       <span className="flex items-center justify-between gap-2">
                         <span className="truncate text-[15px] font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">{verb.infinitive}</span>
-                        {verb.aux === 'être' && (
-                          <span className="shrink-0 rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-bold text-amber-700 dark:text-amber-400">être</span>
-                        )}
+                        <span className="flex shrink-0 items-center gap-1">
+                          {verb.irregular && (
+                            <span className="rounded-md bg-rose-500/10 px-1.5 py-0.5 text-[10px] font-bold text-rose-600 dark:text-rose-400" title={t('irregular')}>{t('irregular_short')}</span>
+                          )}
+                          {verb.aux === 'être' && (
+                            <span className="rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-bold text-amber-700 dark:text-amber-400">être</span>
+                          )}
+                        </span>
                       </span>
                       <span className="truncate text-xs text-slate-500 dark:text-slate-400">{verbTranslation(verb, translationLang)}</span>
                     </button>
@@ -193,5 +230,26 @@ export default function VerbsPage() {
         />
       )}
     </div>
+  )
+}
+
+function FilterChip({ active, onClick, title, tone = 'slate', children }: { active: boolean; onClick: () => void; title?: string; tone?: 'slate' | 'rose'; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      aria-pressed={active}
+      title={title}
+      onClick={onClick}
+      className={cn(
+        'rounded-full px-2.5 py-1 text-xs font-bold tabular-nums transition-colors',
+        active
+          ? tone === 'rose' ? 'bg-rose-500 text-white' : 'bg-slate-900 text-white dark:bg-white dark:text-slate-900'
+          : tone === 'rose'
+            ? 'bg-rose-500/10 text-rose-600 hover:bg-rose-500/20 dark:text-rose-400'
+            : 'bg-slate-100 text-slate-500 hover:text-slate-700 dark:bg-white/[0.06] dark:text-slate-400',
+      )}
+    >
+      {children}
+    </button>
   )
 }

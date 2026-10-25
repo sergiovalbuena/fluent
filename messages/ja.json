@@ -164,7 +164,21 @@
     "ov_all_done": "完了！",
     "ov_sentence_placeholder": "キーワードを使ってみよう…",
     "listen_all": "すべて聞く",
-    "listen_stop": "停止"
+    "listen_stop": "停止",
+    "round_n": "ラウンド{n}",
+    "round_full": "全文表示",
+    "round_half_letters": "文字の半分",
+    "round_half_words": "単語の半分",
+    "round_blind": "ほぼ見ないで",
+    "story_listen": "文を聞く",
+    "story_restart": "最初から",
+    "story_mastered": "ストーリーをマスター！",
+    "story_mastered_text": "3ラウンドですべての文を入力しました。",
+    "start_typing": "入力を始めよう…",
+    "correct_short": "正解！",
+    "next_phrase": "次へ",
+    "next_round": "次のラウンド",
+    "done": "完了！"
   },
   "gems": {
     "title": "ジェム",
@@ -477,7 +491,15 @@
     "example": "例文",
     "hide_example": "例文を隠す",
     "practice": "練習する",
-    "practice_verb": "この動詞を練習"
+    "practice_verb": "この動詞を練習",
+    "ending": "語尾",
+    "regular": "規則",
+    "irregular": "不規則",
+    "irregular_short": "不規則",
+    "group_er": "第1群：-er動詞（allerを除く）",
+    "group_ir": "第2群（finirのような-issons型の-ir）と一部の第3群",
+    "group_re": "第3群：-re動詞",
+    "group_oir": "第3群：-oir動詞"
   },
   "verb_game": {
     "title": "動詞チャレンジ",

@@ -164,7 +164,21 @@
     "ov_all_done": "¡Todo listo!",
     "ov_sentence_placeholder": "Intenta usar una de las palabras clave…",
     "listen_all": "Escuchar todo",
-    "listen_stop": "Detener"
+    "listen_stop": "Detener",
+    "round_n": "Ronda {n}",
+    "round_full": "Texto completo",
+    "round_half_letters": "Mitad de las letras",
+    "round_half_words": "Mitad de las palabras",
+    "round_blind": "Casi a ciegas",
+    "story_listen": "Escuchar frase",
+    "story_restart": "Empezar de nuevo",
+    "story_mastered": "¡Historia dominada!",
+    "story_mastered_text": "Escribiste cada frase en las 3 rondas.",
+    "start_typing": "Empieza a escribir…",
+    "correct_short": "¡Correcto!",
+    "next_phrase": "Siguiente",
+    "next_round": "Siguiente ronda",
+    "done": "¡Listo!"
   },
   "gems": {
     "title": "Gemas",
@@ -477,7 +491,15 @@
     "example": "Ejemplo",
     "hide_example": "Ocultar ejemplo",
     "practice": "Practicar",
-    "practice_verb": "Practicar este verbo"
+    "practice_verb": "Practicar este verbo",
+    "ending": "Terminación",
+    "regular": "Regulares",
+    "irregular": "Irregulares",
+    "irregular_short": "irreg.",
+    "group_er": "1.er grupo: verbos en -er (salvo aller)",
+    "group_ir": "2.º grupo (-ir con -issons, como finir) y algunos del 3.º",
+    "group_re": "3.er grupo: verbos en -re",
+    "group_oir": "3.er grupo: verbos en -oir"
   },
   "verb_game": {
     "title": "Reto de verbos",

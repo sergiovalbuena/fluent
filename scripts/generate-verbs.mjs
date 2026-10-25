@@ -82,6 +82,14 @@ function* vocabulary(lang) {
 
 // ── French ────────────────────────────────────────────────────────────────────
 
+// -re verbs conjugated like vendre (attendre, répondre…) are taught as regular
+function conjugatesLikeVendre(infinitive, forms) {
+  if (!/dre$/.test(infinitive)) return false
+  const stem = infinitive.slice(0, -2)
+  const present = forms.PRESENT ?? []
+  return /(^|\s)[a-zà-ÿ']*$/.test(stem) && present[3]?.endsWith(` ${stem}ons`) && present[2]?.endsWith(` ${stem}`) && (forms.PASSE_COMPOSE?.[0] ?? '').endsWith(`${stem}u`)
+}
+
 function buildFrench() {
   const fv = require('french-verbs')
   const lefff = require('french-verbs-lefff/dist/conjugations.json')
@@ -165,6 +173,12 @@ function buildFrench() {
     // Drop tenses with no form at all (e.g. the imperative of pouvoir)
     for (const [k, v] of Object.entries(forms)) if (v.every(f => f == null)) delete forms[k]
 
+    // Groups: 1 = -er (except aller), 2 = -ir with -issons (finir), 3 = everything else (irregular)
+    const ending = /oir$/.test(infinitive) ? 'oir' : /er$/.test(infinitive) ? 'er' : /ir$/.test(infinitive) ? 'ir' : /re$/.test(infinitive) ? 're' : null
+    const group = ending === 'er' && infinitive !== 'aller' ? 1
+      : ending === 'ir' && /issons$/.test(forms.PRESENT?.[3] ?? '') ? 2
+      : 3
+
     seen.set(word, {
       id: word,
       infinitive: word,
@@ -172,6 +186,9 @@ function buildFrench() {
       lesson, slug,
       essential: !!essential,
       pronominal,
+      ending,
+      group,
+      irregular: group === 3 && !conjugatesLikeVendre(infinitive, forms),
       aux: aux === 'ETRE' ? 'être' : 'avoir',
       participles: { present: participle('PARTICIPE_PRESENT'), past: participle('PARTICIPE_PASSE') },
       forms,
@@ -192,8 +209,9 @@ function buildFrench() {
 
 function buildEnglish() {
   const ev = require('english-verbs-helper')
+  const IRREGULAR = require('english-verbs-irregular/dist/verbs.json')
   const info = ev.mergeVerbsData(
-    require('english-verbs-irregular/dist/verbs.json'),
+    IRREGULAR,
     require('english-verbs-gerunds/dist/gerunds.json'),
   )
   const PERSONS = ['I', 'you', 'he/she', 'we', 'you', 'they']
@@ -245,6 +263,9 @@ function buildEnglish() {
       lesson, slug,
       essential: !!essential,
       pronominal: false,
+      ending: null,
+      group: null,
+      irregular: Object.hasOwn(IRREGULAR, verb),
       aux: null,
       participles: { present: ev.getIngPart(info, verb), past },
       forms,

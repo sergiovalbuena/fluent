@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, Gamepad2, BookType, ChevronDown, LogIn, BookOpen, Users, Bookmark, GraduationCap } from 'lucide-react'
+import { Home, Gamepad2, BookType, ChevronDown, LogIn, BookOpen, Users, Bookmark, GraduationCap, Lock } from 'lucide-react'
 import { motion as m, AnimatePresence } from 'framer-motion'
 import {
   Sidebar,
@@ -18,7 +18,7 @@ import { cn } from '@/lib/utils'
 import { AccountMenu, type Account } from '@/components/layout/account-menu'
 import { useTranslations } from 'next-intl'
 
-type Module = { slug: string; title: string; icon: string }
+type Module = { slug: string; title: string; icon: string; locked: boolean }
 
 function SidebarContent({ modules, account }: { modules: Module[]; account: Account | null }) {
   const t = useTranslations('nav')
@@ -128,9 +128,12 @@ function SidebarContent({ modules, account }: { modules: Module[]; account: Acco
                   {modules.map(mod => (
                     <SidebarLink
                       key={mod.slug}
+                      // A locked lesson leads to the map, where it can be unlocked with gems
                       link={{
-                        href: `/learn/${mod.slug}`,
-                        icon: <span className="text-base leading-none">{mod.icon}</span>,
+                        href: mod.locked ? '/learn' : `/learn/${mod.slug}`,
+                        icon: mod.locked
+                          ? <span className="flex size-5 items-center justify-center text-slate-400"><Lock size={13} /></span>
+                          : <span className="text-base leading-none">{mod.icon}</span>,
                         label: mod.title,
                       }}
                       active={isActive(`/learn/${mod.slug}`)}

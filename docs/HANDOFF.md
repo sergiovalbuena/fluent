@@ -80,6 +80,16 @@
 - **Guardados:** "Enlaces de estudio" es la pestaña por defecto. Cada tarjeta tiene un menú ⋯ (ver, abrir en la plataforma, copiar enlace, editar título/categoría/nota, eliminar con "Deshacer").
 - **MarIA flotante** en todo el layout (`src/components/maria/maria-widget.tsx`, con shadcn Message y MessageScroller). Usa como contexto la lección abierta. `/api/maria` exige sesión iniciada.
 - **Voz con IA:** `/api/tts` (OpenAI `gpt-4o-mini-tts` con instrucciones de acento nativo), con caché en el bucket público `tts`. `speak()` en `src/lib/languages.ts` usa la voz del navegador como respaldo.
+- **Escritura en frases, historias y Q&A (2026-10-24)** (`src/app/(app)/learn/[slug]/[activity]/page.tsx`):
+  - La puntuación (`? ! « » …`, comillas tipográficas) y los espacios a su lado se escriben solos (`isAutoChar`/`autoAdvance`). Si el usuario los teclea igual, se ignoran. Cualquier espacio vale por cualquier otro (incluido el no separable del francés) y `’` vale por `'`.
+  - Ronda 2: en frases oculta palabras completas, alternas, con un desplazamiento según el texto. En palabras sueltas sigue ocultando letras alternas.
+  - Historias: el progreso se guarda en `localStorage` (`fluent:story:<idioma>:<hash del texto>`), con un botón para empezar de nuevo. Tocar la tarjeta o el botón de audio devuelve el foco al campo de escritura.
+  - Q&A: se escribe la respuesta en francés (`options[correct]`). Las preguntas solo existen en en/es en el contenido. La clave de dominio sigue siendo la pregunta.
+- **Lecciones bloqueadas:** `src/app/(app)/learn/[slug]/layout.tsx` redirige a `/learn` si la lección está bloqueada en el curso activo (`courseLessonStates` en `src/lib/course-path-data.ts`, misma regla que el mapa). En el sidebar, las bloqueadas llevan candado y enlazan a `/learn`.
+- **Verbos: irregulares y terminación:** `generate-verbs.mjs` añade `ending`, `group` e `irregular`:
+  - Francés: grupo 1 = -er salvo aller; grupo 2 = -ir con -issons; grupo 3 = el resto. Irregular = grupo 3, salvo los -re que conjugan como vendre (43 de 256).
+  - Inglés: según `english-verbs-irregular`.
+  - `/verbs` muestra la insignia «irreg.» y, bajo el buscador, filtros por terminación (-er/-ir/-re/-oir) y regulares/irregulares.
 - Auth: Google OAuth configurado; las URLs de Supabase Auth están configuradas.
 - Lint: 0 errores.
 

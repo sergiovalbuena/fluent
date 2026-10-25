@@ -164,7 +164,21 @@
     "ov_all_done": "Tout est fait !",
     "ov_sentence_placeholder": "Essaie d'utiliser un des mots clés…",
     "listen_all": "Tout écouter",
-    "listen_stop": "Arrêter"
+    "listen_stop": "Arrêter",
+    "round_n": "Manche {n}",
+    "round_full": "Texte complet",
+    "round_half_letters": "La moitié des lettres",
+    "round_half_words": "La moitié des mots",
+    "round_blind": "Presque à l'aveugle",
+    "story_listen": "Écouter la phrase",
+    "story_restart": "Recommencer",
+    "story_mastered": "Histoire maîtrisée !",
+    "story_mastered_text": "Tu as écrit chaque phrase sur les 3 manches.",
+    "start_typing": "Commence à écrire…",
+    "correct_short": "Correct !",
+    "next_phrase": "Suivante",
+    "next_round": "Manche suivante",
+    "done": "Terminé !"
   },
   "gems": {
     "title": "Gemmes",
@@ -477,7 +491,15 @@
     "example": "Exemple",
     "hide_example": "Masquer l’exemple",
     "practice": "S'entraîner",
-    "practice_verb": "Pratiquer ce verbe"
+    "practice_verb": "Pratiquer ce verbe",
+    "ending": "Terminaison",
+    "regular": "Réguliers",
+    "irregular": "Irréguliers",
+    "irregular_short": "irrég.",
+    "group_er": "1er groupe : verbes en -er (sauf aller)",
+    "group_ir": "2e groupe (-ir en -issons, comme finir) et quelques-uns du 3e",
+    "group_re": "3e groupe : verbes en -re",
+    "group_oir": "3e groupe : verbes en -oir"
   },
   "verb_game": {
     "title": "Défi des verbes",

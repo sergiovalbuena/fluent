@@ -187,32 +187,73 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
 // Punctuation the user shouldn't need to type — auto-inserted
-const SKIPPABLE = /^[¿¡.,!?;:'"()\-–—…«»]+$/
+const SKIPPABLE = /^[¿¡.,!?;:'"()\-–—…«»’‘“”]+$/
+
+const isSpace = (c: string | undefined) => !!c && /\s/.test(c)
+
+/** Same character for typing purposes: any space matches any space (French uses non-breaking ones), ’ matches ' */
+function sameChar(a: string, b: string): boolean {
+  if (isSpace(a) || isSpace(b)) return isSpace(a) && isSpace(b)
+  return norm(a.replace(/[’‘]/g, "'")) === norm(b.replace(/[’‘]/g, "'"))
+}
+
+const punctuationOnly = (token: string) => token.length > 0 && [...token].every(c => SKIPPABLE.test(c))
+
+/**
+ * Characters the learner never types: punctuation, and the spaces that only sit
+ * next to punctuation — French writes « Bonjour » and « Ça va ? » with spaces
+ * inside the quotes and before ? ! : ;
+ */
+function isAutoChar(target: string, i: number): boolean {
+  const ch = target[i]
+  if (SKIPPABLE.test(ch)) return true
+  if (!isSpace(ch)) return false
+  let a = i - 1
+  while (a >= 0 && !isSpace(target[a])) a--
+  let b = i + 1
+  while (b < target.length && !isSpace(target[b])) b++
+  const before = target.slice(a + 1, i)
+  return before.length === 0 || punctuationOnly(before) || punctuationOnly(target.slice(i + 1, b))
+}
 
 function autoAdvance(current: string, target: string): string {
   let s = current
-  while (s.length < target.length && SKIPPABLE.test(target[s.length])) {
-    s += target[s.length]
-  }
+  while (s.length < target.length && isAutoChar(target, s.length)) s += target[s.length]
   return s
 }
 
+/** A sentence (two or more words) rather than a single word */
+const isSentence = (target: string) => (target.match(/\S+/g) ?? []).filter(w => /\p{L}/u.test(w)).length > 1
+
 type ChallengeRound = 1 | 2 | 3
 
-const ROUND_LABELS: Record<ChallengeRound, string> = {
-  1: 'Full word',
-  2: '50% hidden',
-  3: 'Almost blind',
+/** Round names: in round 2 a sentence hides whole words, a single word hides letters */
+function roundLabelKey(round: ChallengeRound, target: string) {
+  return round === 1 ? 'round_full' : round === 3 ? 'round_blind' : isSentence(target) ? 'round_half_words' : 'round_half_letters'
 }
 
+function textHash(text: string): number {
+  let h = 5381
+  for (let i = 0; i < text.length; i++) h = ((h << 5) + h + text.charCodeAt(i)) | 0
+  return Math.abs(h)
+}
+
+/** Positions shown as a hint (the rest appear as dots). Punctuation and spaces always show. */
 function buildHintSet(target: string, round: ChallengeRound): Set<number> {
   const s = new Set<number>()
   if (round === 1) return s // all chars shown as MonkeyType pending
-  target.split('').forEach((ch, i) => {
-    if (ch === ' ') { s.add(i); return }
-    if (round === 2 && i % 2 === 0) s.add(i)
-    if (round === 3 && i === 0) s.add(i)
-  })
+  target.split('').forEach((ch, i) => { if (isSpace(ch) || SKIPPABLE.test(ch)) s.add(i) })
+  if (round === 3) { s.add(0); return s }
+  if (isSentence(target)) {
+    // Round 2 of a sentence: every other word hidden completely, the rest shown in full
+    let n = textHash(target) % 2
+    for (const m of target.matchAll(/\S+/g)) {
+      if (!/\p{L}/u.test(m[0])) continue
+      if (n++ % 2 === 0) for (let k = 0; k < m[0].length; k++) s.add(m.index + k)
+    }
+  } else {
+    target.split('').forEach((_, i) => { if (i % 2 === 0) s.add(i) })
+  }
   return s
 }
 
@@ -265,7 +306,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
     setTyped(t => {
       if (t.length === 0) return t
       let newLen = t.length - 1
-      while (newLen > 0 && SKIPPABLE.test(target[newLen - 1])) newLen--
+      while (newLen > 0 && isAutoChar(target, newLen - 1)) newLen--
       if (inputRef.current) inputRef.current.value = t.slice(0, newLen)
       return t.slice(0, newLen)
     })
@@ -288,14 +329,14 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
     const added = val.slice(typed.length)
     for (const ch of added) {
       if (next.length >= target.length) break
-      if (norm(ch) === norm(target[next.length])) {
+      if (sameChar(ch, target[next.length])) {
         next = autoAdvance(next + ch, target)
         continue
       }
       // Redundant punctuation the user typed that auto-advance already
       // inserted for them (e.g. a comma right before the cursor) — ignore it
       // instead of treating it as a mistake
-      if (SKIPPABLE.test(ch) && next.length > 0 && norm(ch) === norm(target[next.length - 1])) {
+      if ((SKIPPABLE.test(ch) || isSpace(ch)) && next.length > 0 && sameChar(ch, target[next.length - 1])) {
         continue
       }
       setShake(true)
@@ -327,7 +368,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
     if (ch === ' ') return { display: '\u00A0', cls: 'w-4', isSpace: true }
 
     if (isTyped) {
-      const ok = norm(typed[i]) === norm(ch)
+      const ok = sameChar(typed[i], ch)
       return { display: ch, cls: ok ? 'text-lime-400' : 'text-red-400', isSpace: false }
     }
 
@@ -447,7 +488,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
               ))}
             </div>
             <p className="text-white/35 text-[11px] font-semibold">
-              Round {round} · {ROUND_LABELS[round]}
+              {t('round_n', { n: round })} · {t(roundLabelKey(round, target))}
             </p>
           </div>
 
@@ -520,7 +561,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
                   className="px-7 py-2.5 rounded-2xl text-sm font-bold text-black hover:scale-105 active:scale-95 transition-all"
                   style={{ background: '#a3e635' }}
                 >
-                  {round < 3 ? 'Next Round →' : 'Done!'}
+                  {round < 3 ? `${t('next_round')} →` : t('done')}
                 </button>
               </motion.div>
             ) : (
@@ -531,7 +572,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
                 exit={{ opacity: 0 }}
                 className="text-white/20 text-xs"
               >
-                {typed.length === 0 ? 'Start typing…' : `${typed.length} / ${target.length}`}
+                {typed.length === 0 ? t('start_typing') : `${typed.length} / ${target.length}`}
               </motion.p>
             )}
           </AnimatePresence>
@@ -563,20 +604,56 @@ function splitStory(text: string): string[] {
   return raw.filter(Boolean)
 }
 
+type StoryProgress = { round: ChallengeRound; phraseIdx: number; stars: number }
+
+function readStoryProgress(key: string, phrases: number): StoryProgress | null {
+  try {
+    const p = JSON.parse(localStorage.getItem(key) ?? 'null') as StoryProgress | null
+    if (!p || ![1, 2, 3].includes(p.round) || p.phraseIdx < 0 || p.phraseIdx >= phrases) return null
+    return p.round === 1 && p.phraseIdx === 0 ? null : p
+  } catch {
+    return null
+  }
+}
+
+function writeStoryProgress(key: string, p: StoryProgress) {
+  try { localStorage.setItem(key, JSON.stringify(p)) } catch { /* private mode: not kept */ }
+}
+
+function clearStoryProgress(key: string) {
+  try { localStorage.removeItem(key) } catch { /* private mode */ }
+}
+
 function StoryChallengeModal({ storyText, languageCode, onClose }: {
   storyText: string
   languageCode: string
   onClose: () => void
 }) {
+  const t = useTranslations('lesson')
   const phrases   = useMemo(() => splitStory(storyText), [storyText])
-  const [round, setRound]           = useState<ChallengeRound>(1)
-  const [phraseIdx, setPhraseIdx]   = useState(0)
-  const [typed, setTyped]           = useState(() => autoAdvance('', splitStory(storyText)[0] ?? ''))
+  // Stories are long: where the learner left off is kept on this device
+  const progressKey = `fluent:story:${languageCode}:${textHash(storyText)}`
+  const [saved] = useState(() => readStoryProgress(progressKey, phrases.length))
+  const [round, setRound]           = useState<ChallengeRound>(saved?.round ?? 1)
+  const [phraseIdx, setPhraseIdx]   = useState(saved?.phraseIdx ?? 0)
+  const [typed, setTyped]           = useState(() => autoAdvance('', phrases[saved?.phraseIdx ?? 0] ?? ''))
   const [shake, setShake]           = useState(false)
   const [phraseDone, setPhraseDone] = useState(false)
-  const [stars, setStars]           = useState(0)
+  const [stars, setStars]           = useState(saved?.stars ?? 0)
   const [allDone, setAllDone]       = useState(false)
+  const [resumed, setResumed]       = useState(saved !== null)
   const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    if (allDone) clearStoryProgress(progressKey)
+    else writeStoryProgress(progressKey, { round, phraseIdx, stars })
+  }, [progressKey, round, phraseIdx, stars, allDone])
+
+  function restart() {
+    setRound(1); setPhraseIdx(0); setStars(0); setPhraseDone(false); setResumed(false)
+    setTyped(autoAdvance('', phrases[0] ?? ''))
+    setTimeout(() => inputRef.current?.focus(), 50)
+  }
 
   const target  = phrases[phraseIdx] ?? ''
   const hintSet = useMemo(() => buildHintSet(target, round), [target, round])
@@ -616,7 +693,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
     setTyped(t => {
       if (t.length === 0) return t
       let newLen = t.length - 1
-      while (newLen > 0 && SKIPPABLE.test(target[newLen - 1])) newLen--
+      while (newLen > 0 && isAutoChar(target, newLen - 1)) newLen--
       if (inputRef.current) inputRef.current.value = t.slice(0, newLen)
       return t.slice(0, newLen)
     })
@@ -639,14 +716,14 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
     const added = val.slice(typed.length)
     for (const ch of added) {
       if (next.length >= target.length) break
-      if (norm(ch) === norm(target[next.length])) {
+      if (sameChar(ch, target[next.length])) {
         next = autoAdvance(next + ch, target)
         continue
       }
       // Redundant punctuation the user typed that auto-advance already
       // inserted for them (e.g. a comma right before the cursor) — ignore it
       // instead of treating it as a mistake
-      if (SKIPPABLE.test(ch) && next.length > 0 && norm(ch) === norm(target[next.length - 1])) {
+      if ((SKIPPABLE.test(ch) || isSpace(ch)) && next.length > 0 && sameChar(ch, target[next.length - 1])) {
         continue
       }
       setShake(true); setTimeout(() => setShake(false), 380); break
@@ -677,7 +754,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
       let display: string
       let cls: string
       if (isTyped) {
-        const ok = norm(typed[i]) === norm(ch)
+        const ok = sameChar(typed[i], ch)
         display = ch; cls = ok ? 'text-lime-400' : 'text-red-400'
       } else if (round === 1) {
         display = ch; cls = isCursor ? 'text-white/70' : 'text-white/25'
@@ -713,6 +790,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
           transition={{ type: 'spring', stiffness: 420, damping: 32 }}
           className="relative w-full max-w-2xl rounded-3xl p-8 flex flex-col items-center gap-5"
           style={{ background: '#0a1a05', border: '1px solid rgba(132,204,22,0.15)' }}
+          onClick={() => { if (!phraseDone && !allDone) inputRef.current?.focus() }}
         >
           <button onClick={onClose} className="absolute top-4 right-4 p-1.5 rounded-full text-white/25 hover:text-white/60 transition-colors">
             <X size={15} />
@@ -736,7 +814,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
               ))}
             </div>
             <p className="text-white/35 text-[11px] font-semibold">
-              Round {round} · {ROUND_LABELS[round]}
+              {t('round_n', { n: round })} · {t(roundLabelKey(round, target))}
             </p>
           </div>
 
@@ -763,8 +841,8 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
               className="flex flex-col items-center gap-4 py-4"
             >
               <p className="text-4xl">🏆</p>
-              <p className="text-lime-400 font-bold text-xl text-center">¡Historia dominada!</p>
-              <p className="text-white/40 text-sm text-center">Typed every phrase across 3 rounds</p>
+              <p className="text-lime-400 font-bold text-xl text-center">{t('story_mastered')}</p>
+              <p className="text-white/40 text-sm text-center">{t('story_mastered_text')}</p>
               <button
                 onClick={onClose}
                 className="mt-2 px-8 py-3 rounded-2xl text-sm font-bold text-black hover:scale-105 active:scale-95 transition-all"
@@ -776,13 +854,27 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
           ) : (
             <>
               {/* Audio button */}
-              <button
-                onClick={() => speakWord(target, languageCode)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/40 hover:text-white/70 text-xs font-semibold transition-all active:scale-95 -mb-2"
-              >
-                <Volume2 size={13} />
-                Escuchar frase
-              </button>
+              <div className="flex items-center gap-2 -mb-2">
+                <button
+                  // Keep the keyboard on the text: listening must not end the typing
+                  onMouseDown={e => e.preventDefault()}
+                  onClick={() => { speakWord(target, languageCode); inputRef.current?.focus() }}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/40 hover:text-white/70 text-xs font-semibold transition-all active:scale-95"
+                >
+                  <Volume2 size={13} />
+                  {t('story_listen')}
+                </button>
+                {resumed && (round > 1 || phraseIdx > 0) && (
+                  <button
+                    onMouseDown={e => e.preventDefault()}
+                    onClick={restart}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/40 hover:text-white/70 text-xs font-semibold transition-all active:scale-95"
+                  >
+                    <RotateCcw size={12} />
+                    {t('story_restart')}
+                  </button>
+                )}
+              </div>
 
               {/* Words — no mid-word line breaks */}
               <motion.div
@@ -838,7 +930,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
                 {phraseDone ? (
                   <motion.div key="done" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="flex flex-col items-center gap-3">
                     <p className="text-lime-400 font-bold text-sm">
-                      {phraseIdx < phrases.length - 1 ? '✓ ¡Correcto!' :
+                      {phraseIdx < phrases.length - 1 ? `✓ ${t('correct_short')}` :
                         round === 1 ? '⭐ Round 1 done!' :
                         round === 2 ? '⭐⭐ Halfway there!' : '⭐⭐⭐ ¡Dominado!'}
                     </p>
@@ -847,12 +939,12 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
                       className="px-7 py-2.5 rounded-2xl text-sm font-bold text-black hover:scale-105 active:scale-95 transition-all"
                       style={{ background: '#a3e635' }}
                     >
-                      {phraseIdx < phrases.length - 1 ? 'Siguiente →' : round < 3 ? 'Next Round →' : 'Done!'}
+                      {phraseIdx < phrases.length - 1 ? `${t('next_phrase')} →` : round < 3 ? `${t('next_round')} →` : t('done')}
                     </button>
                   </motion.div>
                 ) : (
                   <motion.p key="hint" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-white/20 text-xs">
-                    {typed.length === 0 ? 'Empieza a escribir…' : `${typed.length} / ${target.length} caracteres`}
+                    {typed.length === 0 ? t('start_typing') : `${typed.length} / ${target.length}`}
                   </motion.p>
                 )}
               </AnimatePresence>
@@ -868,8 +960,11 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
 
 type VocabEntry = {
   id: string | number
+  /** What the learner types */
   word: string
   translation: string
+  /** Mastery key when it isn't the typed text (Q&A: the question) */
+  masteryKey?: string
 }
 
 function speakWord(word: string, langCode: string) {
@@ -1006,7 +1101,8 @@ function PracticeSession({ entries, mode, isMastered, markMastered, onEnd, promp
 }) {
   const t = useTranslations('lesson')
   // Snapshot of the queue when the session starts
-  const [queue] = useState(() => mode === 'resume' ? entries.filter(e => !isMastered(e.word)) : entries)
+  const keyOf = (e: VocabEntry) => e.masteryKey ?? e.word
+  const [queue] = useState(() => mode === 'resume' ? entries.filter(e => !isMastered(keyOf(e))) : entries)
   const [index, setIndex] = useState(0)
   const [masteredNow, setMasteredNow] = useState(0)
 
@@ -1015,7 +1111,7 @@ function PracticeSession({ entries, mode, isMastered, markMastered, onEnd, promp
     setMasteredNow(done)
     if (index + 1 >= queue.length) {
       const total = entries.length
-      const masteredTotal = entries.filter(e => isMastered(e.word)).length + (mastered && !isMastered(queue[index].word) ? 1 : 0)
+      const masteredTotal = entries.filter(e => isMastered(keyOf(e))).length + (mastered && !isMastered(keyOf(queue[index])) ? 1 : 0)
       toast.success(t('practice_done', { done: masteredTotal, total }))
       onEnd()
       return
@@ -1033,7 +1129,7 @@ function PracticeSession({ entries, mode, isMastered, markMastered, onEnd, promp
       promptLabel={promptLabel}
       session={{ index, total: queue.length, onSkip: () => next(false) }}
       onClose={onEnd}
-      onMastered={() => markMastered(entry.word)}
+      onMastered={() => markMastered(keyOf(entry))}
       onComplete={() => next(true)}
     />
   )
@@ -1201,21 +1297,21 @@ function QAQuestionList({
             </div>
             <button
               type="button"
-              onClick={(e) => { e.stopPropagation(); speakWord(q.question, languageCode) }}
+              onClick={(e) => { e.stopPropagation(); speakWord(q.options[q.correct], languageCode) }}
               className="shrink-0 p-2 rounded-lg hover:bg-sky-500/10 active:scale-90 transition-all"
             >
               <Volume2 size={14} className="text-slate-300 dark:text-slate-600 group-hover:text-slate-400 transition-colors" />
             </button>
             <button
               type="button"
-              onClick={() => onToggleBookmark({ type: 'phrase', original: q.question, translation: q.options[q.correct], languageCode: '' })}
+              onClick={() => onToggleBookmark({ type: 'phrase', original: q.options[q.correct], translation: q.question, languageCode: '' })}
               className="shrink-0 p-2 -mr-1 rounded-lg hover:bg-primary/10 active:scale-90 transition-all"
             >
               <Bookmark
                 size={14}
                 className={cn(
                   'transition-colors',
-                  isSaved('phrase', q.question)
+                  isSaved('phrase', q.options[q.correct])
                     ? 'fill-primary text-primary'
                     : 'text-slate-300 dark:text-slate-600 group-hover:text-slate-400'
                 )}
@@ -1238,9 +1334,8 @@ function QAQuestionList({
         {challengeQ && (
           <WordChallengeModal
             key="word-challenge"
-            word={challengeQ.question}
-            translation={challengeQ.options[challengeQ.correct]}
-            promptLabel="Answer"
+            word={challengeQ.options[challengeQ.correct]}
+            translation={challengeQ.question}
             onClose={() => setChallengeQ(null)}
             onMastered={() => markMastered(challengeQ.question)}
           />
@@ -1248,12 +1343,11 @@ function QAQuestionList({
         {practice && (
           <PracticeSession
             key={`practice-${practice.key}`}
-            entries={questions.map((q, i) => ({ id: `${q.question}-${i}`, word: q.question, translation: q.options[q.correct] }))}
+            entries={questions.map((q, i) => ({ id: `${q.question}-${i}`, word: q.options[q.correct], translation: q.question, masteryKey: q.question }))}
             mode={practice.mode}
             isMastered={isMastered}
             markMastered={markMastered}
             onEnd={() => onPracticeEnd?.()}
-            promptLabel="Answer"
           />
         )}
       </AnimatePresence>

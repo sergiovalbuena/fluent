@@ -14,6 +14,12 @@ export type VerbEntry = {
   slug: string | null
   essential: boolean
   pronominal: boolean
+  /** French infinitive ending (null in English) */
+  ending: 'er' | 'ir' | 're' | 'oir' | null
+  /** French verb group: 1 -er, 2 -ir/-issons, 3 the rest (null in English) */
+  group: 1 | 2 | 3 | null
+  /** Doesn't follow the regular pattern (French: 3rd group except vendre-type -re verbs) */
+  irregular: boolean
   /** French auxiliary for compound tenses */
   aux: 'être' | 'avoir' | null
   participles: { present: string | null; past: string | null }

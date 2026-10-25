@@ -164,7 +164,21 @@
     "ov_all_done": "Tutto fatto!",
     "ov_sentence_placeholder": "Prova a usare una delle parole chiave…",
     "listen_all": "Ascolta tutto",
-    "listen_stop": "Ferma"
+    "listen_stop": "Ferma",
+    "round_n": "Round {n}",
+    "round_full": "Testo completo",
+    "round_half_letters": "Metà delle lettere",
+    "round_half_words": "Metà delle parole",
+    "round_blind": "Quasi alla cieca",
+    "story_listen": "Ascolta la frase",
+    "story_restart": "Ricomincia",
+    "story_mastered": "Storia padroneggiata!",
+    "story_mastered_text": "Hai scritto ogni frase in 3 round.",
+    "start_typing": "Inizia a scrivere…",
+    "correct_short": "Giusto!",
+    "next_phrase": "Avanti",
+    "next_round": "Round successivo",
+    "done": "Fatto!"
   },
   "gems": {
     "title": "Gemme",
@@ -477,7 +491,15 @@
     "example": "Esempio",
     "hide_example": "Nascondi esempio",
     "practice": "Esercitati",
-    "practice_verb": "Esercitati con questo verbo"
+    "practice_verb": "Esercitati con questo verbo",
+    "ending": "Desinenza",
+    "regular": "Regolari",
+    "irregular": "Irregolari",
+    "irregular_short": "irreg.",
+    "group_er": "1° gruppo: verbi in -er (tranne aller)",
+    "group_ir": "2° gruppo (-ir con -issons, come finir) e alcuni del 3°",
+    "group_re": "3° gruppo: verbi in -re",
+    "group_oir": "3° gruppo: verbi in -oir"
   },
   "verb_game": {
     "title": "Sfida dei verbi",

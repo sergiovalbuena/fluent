@@ -7,6 +7,7 @@ import { IntlProvider } from '@/components/providers/intl-provider'
 import { TopbarProvider } from '@/components/providers/topbar-provider'
 import { LanguageProvider } from '@/components/providers/language-provider'
 import { getLanguageSettings } from '@/lib/active-language'
+import { courseLessonStates } from '@/lib/course-path-data'
 import type { AbstractIntlMessages } from 'next-intl'
 
 const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
@@ -29,7 +30,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   const { data: { user } } = await supabase.auth.getUser()
 
-  const [modulesResult, messages, profileResult] = await Promise.all([
+  const [modulesResult, messages, profileResult, states] = await Promise.all([
     supabase
       .from('modules')
       .select('slug, title, icon')
@@ -40,9 +41,11 @@ export default async function AppLayout({ children }: { children: React.ReactNod
     user
       ? supabase.from('user_profiles').select('display_name, total_gems').eq('user_id', user.id).maybeSingle()
       : Promise.resolve({ data: null }),
+    // Same lock rule as the map in /learn, so the sidebar doesn't open locked lessons
+    user ? courseLessonStates(supabase, user.id, languageCode) : Promise.resolve(null),
   ])
 
-  const modules = modulesResult.data ?? []
+  const modules = (modulesResult.data ?? []).map(m => ({ ...m, locked: states?.get(m.slug) === 'locked' }))
   const profile = profileResult.data as { display_name: string | null; total_gems: number | null } | null
   const meta = (user?.user_metadata ?? {}) as { full_name?: string; avatar_url?: string; picture?: string }
   const account = user

@@ -164,7 +164,21 @@
     "ov_all_done": "All done!",
     "ov_sentence_placeholder": "Try using one of the key words…",
     "listen_all": "Listen to all",
-    "listen_stop": "Stop"
+    "listen_stop": "Stop",
+    "round_n": "Round {n}",
+    "round_full": "Full text",
+    "round_half_letters": "Half the letters",
+    "round_half_words": "Half the words",
+    "round_blind": "Almost blind",
+    "story_listen": "Listen to the sentence",
+    "story_restart": "Start over",
+    "story_mastered": "Story mastered!",
+    "story_mastered_text": "You typed every sentence across 3 rounds.",
+    "start_typing": "Start typing…",
+    "correct_short": "Correct!",
+    "next_phrase": "Next",
+    "next_round": "Next round",
+    "done": "Done!"
   },
   "gems": {
     "title": "Gems",
@@ -477,7 +491,15 @@
     "example": "Example",
     "hide_example": "Hide example",
     "practice": "Practice",
-    "practice_verb": "Practice this verb"
+    "practice_verb": "Practice this verb",
+    "ending": "Ending",
+    "regular": "Regular",
+    "irregular": "Irregular",
+    "irregular_short": "irreg.",
+    "group_er": "1st group: -er verbs (except aller)",
+    "group_ir": "2nd group (-ir with -issons, like finir) and some of the 3rd",
+    "group_re": "3rd group: -re verbs",
+    "group_oir": "3rd group: -oir verbs"
   },
   "verb_game": {
     "title": "Verb challenge",

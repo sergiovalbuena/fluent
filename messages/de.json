@@ -164,7 +164,21 @@
     "ov_all_done": "Alles erledigt!",
     "ov_sentence_placeholder": "Versuch, eines der Schlüsselwörter zu verwenden…",
     "listen_all": "Alles anhören",
-    "listen_stop": "Stopp"
+    "listen_stop": "Stopp",
+    "round_n": "Runde {n}",
+    "round_full": "Ganzer Text",
+    "round_half_letters": "Die Hälfte der Buchstaben",
+    "round_half_words": "Die Hälfte der Wörter",
+    "round_blind": "Fast blind",
+    "story_listen": "Satz anhören",
+    "story_restart": "Neu beginnen",
+    "story_mastered": "Geschichte gemeistert!",
+    "story_mastered_text": "Du hast jeden Satz in 3 Runden geschrieben.",
+    "start_typing": "Fang an zu tippen…",
+    "correct_short": "Richtig!",
+    "next_phrase": "Weiter",
+    "next_round": "Nächste Runde",
+    "done": "Fertig!"
   },
   "gems": {
     "title": "Edelsteine",
@@ -477,7 +491,15 @@
     "example": "Beispiel",
     "hide_example": "Beispiel ausblenden",
     "practice": "Üben",
-    "practice_verb": "Dieses Verb üben"
+    "practice_verb": "Dieses Verb üben",
+    "ending": "Endung",
+    "regular": "Regelmäßig",
+    "irregular": "Unregelmäßig",
+    "irregular_short": "unregelm.",
+    "group_er": "1. Gruppe: Verben auf -er (außer aller)",
+    "group_ir": "2. Gruppe (-ir mit -issons, wie finir) und einige der 3.",
+    "group_re": "3. Gruppe: Verben auf -re",
+    "group_oir": "3. Gruppe: Verben auf -oir"
   },
   "verb_game": {
     "title": "Verb-Challenge",

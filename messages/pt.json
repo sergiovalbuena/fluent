@@ -164,7 +164,21 @@
     "ov_all_done": "Tudo pronto!",
     "ov_sentence_placeholder": "Tente usar uma das palavras-chave…",
     "listen_all": "Ouvir tudo",
-    "listen_stop": "Parar"
+    "listen_stop": "Parar",
+    "round_n": "Rodada {n}",
+    "round_full": "Texto completo",
+    "round_half_letters": "Metade das letras",
+    "round_half_words": "Metade das palavras",
+    "round_blind": "Quase às cegas",
+    "story_listen": "Ouvir a frase",
+    "story_restart": "Recomeçar",
+    "story_mastered": "História dominada!",
+    "story_mastered_text": "Você escreveu cada frase nas 3 rodadas.",
+    "start_typing": "Comece a digitar…",
+    "correct_short": "Correto!",
+    "next_phrase": "Próxima",
+    "next_round": "Próxima rodada",
+    "done": "Pronto!"
   },
   "gems": {
     "title": "Gemas",
@@ -477,7 +491,15 @@
     "example": "Exemplo",
     "hide_example": "Ocultar exemplo",
     "practice": "Praticar",
-    "practice_verb": "Praticar este verbo"
+    "practice_verb": "Praticar este verbo",
+    "ending": "Terminação",
+    "regular": "Regulares",
+    "irregular": "Irregulares",
+    "irregular_short": "irreg.",
+    "group_er": "1º grupo: verbos em -er (exceto aller)",
+    "group_ir": "2º grupo (-ir com -issons, como finir) e alguns do 3º",
+    "group_re": "3º grupo: verbos em -re",
+    "group_oir": "3º grupo: verbos em -oir"
   },
   "verb_game": {
     "title": "Desafio de verbos",
