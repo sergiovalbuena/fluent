@@ -10,6 +10,7 @@ import { toast } from 'sonner'
 import { useTranslations } from 'next-intl'
 import { Link2 } from 'lucide-react'
 import { StudyLinks } from '@/components/saved/study-links'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 type SavedItem = {
   id: string
@@ -148,7 +149,7 @@ export default function SavedPage() {
 
   useEffect(() => {
     const supabase = createClient()
-    supabase.auth.getUser().then(({ data: { user } }) => {
+    getAuthUser(supabase).then(({ data: { user } }) => {
       if (!user) { setLoading(false); return }
       supabase
         .from('saved_items')

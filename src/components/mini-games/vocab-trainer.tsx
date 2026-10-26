@@ -13,6 +13,7 @@ import { usePracticeContent, type PracticeWord } from '@/lib/practice-source'
 import { addRewards } from '@/lib/rewards'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Vocabulary trainer: every word goes through four stages in one session —
 // meet it, recognise it, hear it, write it. A miss sends that step to the end
@@ -146,7 +147,7 @@ export function VocabTrainer() {
     const values = Object.values(res)
     const pct = values.length ? Math.round((values.filter(Boolean).length / values.length) * 100) : 0
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getAuthUser(supabase)
     if (!user) return
     setRewards(await addRewards(supabase, user.id, { xp: xpFor(pct), gems: GEMS, reason: 'minigame', ref: 'vocabulary' }))
   }, [])

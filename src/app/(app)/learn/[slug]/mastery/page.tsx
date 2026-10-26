@@ -4,6 +4,7 @@ import { localizeQuestion, pickTranslation, type RawQuestion, type Translatable 
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { MasteryContent } from '@/components/learn/mastery-content'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -24,7 +25,7 @@ export default async function MasteryPage({ params }: PageProps) {
 
   if (!module) notFound()
 
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
 
   const { data: lessons } = await supabase
     .from('lessons')

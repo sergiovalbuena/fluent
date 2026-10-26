@@ -11,6 +11,7 @@ import { useActiveLanguage } from '@/components/providers/language-provider'
 import { SONGS, type Song } from '@/data/songs'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Music Time: lyrics training over a YouTube video. The lyrics show with gaps;
 // the learner fills them (choose among 4 or type) while the song plays. Lines
@@ -124,7 +125,7 @@ const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
 
 async function saveGameResult(correct: number, total: number) {
   const supabase = createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) return null
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0
   return addRewards(supabase, user.id, { xp: pct >= 80 ? 15 : pct >= 60 ? 10 : 5, gems: 3, reason: 'minigame', ref: 'musictime' })

@@ -23,7 +23,10 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
-  const { data: { user } } = await supabase.auth.getUser()
+  // getClaims refreshes an expired session (writing the cookies above) and verifies
+  // the token locally with the project's signing keys: no round trip to Supabase Auth.
+  const { data } = await supabase.auth.getClaims()
+  const user = data?.claims?.sub ? data.claims : null
 
   const { pathname } = request.nextUrl
 

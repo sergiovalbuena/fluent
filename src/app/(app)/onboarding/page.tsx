@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, Check, ChevronRight, Volume2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { getLanguage, speak } from '@/lib/languages'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
@@ -225,7 +226,7 @@ export default function OnboardingPage() {
   // so the rest of the onboarding is already shown in it
   async function applyNativeLanguage() {
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getAuthUser(supabase)
     if (!user) return
     await supabase.from('user_profiles').update({
       app_language_code: UI_LOCALES.includes(nativeLanguage) ? nativeLanguage : 'en',
@@ -270,7 +271,7 @@ export default function OnboardingPage() {
   async function handleComplete() {
     setSaving(true)
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getAuthUser(supabase)
     if (!user) { router.push('/login'); return }
 
     // Only the onboarding answers: XP, streak and name are left as they are

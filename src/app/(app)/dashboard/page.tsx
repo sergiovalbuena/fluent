@@ -4,9 +4,10 @@ import { getLanguageSettings } from '@/lib/active-language'
 import { DashboardContent, type DashboardData } from '@/components/dashboard/dashboard-content'
 import { getActiveBoosts } from '@/lib/rewards'
 import { lessonStates } from '@/lib/course-path'
-import { MASTERY, explanationLanguage, gemsLeft, loadGrammarIndex, type GrammarIndex } from '@/lib/grammar'
+import { MASTERY, explanationLanguage, gemsLeft, loadGrammarIndex } from '@/lib/grammar'
 import { loadVerbExamples, loadVerbForms, loadVerbIndex, verbTranslation } from '@/lib/verbs'
 import type { StudyGroup } from '@/lib/study-group'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Everything the dashboard shows comes from here, in one round of queries.
 
@@ -17,7 +18,7 @@ const ymd = (d: Date) => d.toISOString().split('T')[0]
 
 export default async function DashboardPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) redirect('/login')
 
   const { languageCode: activeLanguage, translationLang } = await getLanguageSettings()
@@ -27,7 +28,9 @@ export default async function DashboardPage() {
   monday.setUTCDate(now.getUTCDate() - ((now.getUTCDay() + 6) % 7))
   const weekStart = ymd(monday)
 
-  const [activeLang, profile, progress, activity, boosts, groupRes, savedRes, savedCount, unlocked] = await Promise.all([
+  // The course comes from getLanguageSettings (the active row in user_languages), so
+  // everything that depends on it can go in the same round.
+  const [activeLang, profile, progress, activity, boosts, groupRes, savedRes, savedCount, unlocked, modulesRes, grammarRows, grammarIndex, verbIndex, verbForms, verbExamples] = await Promise.all([
     supabase.from('user_languages').select('language_code').eq('user_id', user.id).eq('is_active', true).limit(1).maybeSingle(),
     supabase
       .from('user_profiles')
@@ -41,11 +44,22 @@ export default async function DashboardPage() {
     supabase.from('study_links').select('title, thumbnail_url, platform').eq('language_code', activeLanguage).order('created_at', { ascending: false }).limit(1).maybeSingle(),
     supabase.from('study_links').select('id', { count: 'exact', head: true }).eq('language_code', activeLanguage),
     supabase.from('user_unlocked_modules').select('module_id').eq('user_id', user.id),
+    supabase
+      .from('modules')
+      .select('id, slug, title, icon, lessons(id)')
+      .eq('language_code', activeLanguage)
+      .eq('is_published', true)
+      .order('order_index'),
+    supabase.from('user_grammar_progress').select('module_slug, best').eq('language_code', activeLanguage),
+    loadGrammarIndex(activeLanguage, explanationLanguage(translationLang, user.id)),
+    loadVerbIndex(activeLanguage),
+    loadVerbForms(activeLanguage),
+    loadVerbExamples(activeLanguage),
   ])
 
   // No course chosen yet: onboarding sets it up
   if (!activeLang.data && !activeLang.error) redirect('/onboarding')
-  const languageCode = activeLang.data?.language_code ?? activeLanguage
+  const languageCode = activeLanguage
   const p = profile.data
 
   // ── Streak (0 if it has lapsed) and this week ──────────────────────────────
@@ -61,12 +75,7 @@ export default async function DashboardPage() {
   const todayIndex = (now.getUTCDay() + 6) % 7
 
   // ── Course path ─────────────────────────────────────────────────────────────
-  const { data: modulesData } = await supabase
-    .from('modules')
-    .select('id, slug, title, icon, lessons(id)')
-    .eq('language_code', languageCode)
-    .eq('is_published', true)
-    .order('order_index')
+  const modulesData = modulesRes.data
   const done = new Map<string, number>()
   for (const r of (progress.data ?? []) as ProgressRow[]) done.set(r.module_id, (done.get(r.module_id) ?? 0) + 1)
   const base = ((modulesData ?? []) as ModuleRow[]).map(m => {
@@ -87,10 +96,8 @@ export default async function DashboardPage() {
 
   // ── Grammar: the module to work on next ────────────────────────────────────
   let grammar: DashboardData['grammar'] = null
-  const grammarIndex: GrammarIndex | null = await loadGrammarIndex(languageCode, explanationLanguage(translationLang, user.id))
   if (grammarIndex) {
-    const { data: rows } = await supabase.from('user_grammar_progress').select('module_slug, best').eq('language_code', languageCode)
-    const best = new Map(((rows ?? []) as { module_slug: string; best: Record<string, number> }[]).map(r => [r.module_slug, r.best ?? {}]))
+    const best = new Map(((grammarRows.data ?? []) as { module_slug: string; best: Record<string, number> }[]).map(r => [r.module_slug, r.best ?? {}]))
     const isMastered = (slug: string, ids: string[]) => ids.every(id => (best.get(slug)?.[id] ?? 0) >= MASTERY)
     const mastered = grammarIndex.modules.filter(m => isMastered(m.slug, m.exercises.map(e => e.id))).length
     const next =
@@ -113,12 +120,12 @@ export default async function DashboardPage() {
 
   // ── Verb of the day: an essential verb, the same for everyone on a given day ──
   let verb: DashboardData['verb'] = null
-  const verbIndex = await loadVerbIndex(languageCode)
   if (verbIndex) {
     const essentials = verbIndex.verbs.filter(v => v.essential)
     const day = Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000)
     const v = essentials[day % essentials.length]
-    const [forms, examples] = await Promise.all([loadVerbForms(languageCode), loadVerbExamples(languageCode)])
+    const forms = verbForms
+    const examples = verbExamples
     const present = forms?.[v.id]?.PRESENT ?? forms?.[v.id]?.[verbIndex.moods[0].tenses[0].key]
     if (present) {
       const example = examples?.[v.id]?.PRESENT

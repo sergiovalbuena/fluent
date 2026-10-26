@@ -9,6 +9,7 @@ import { LanguageProvider } from '@/components/providers/language-provider'
 import { getLanguageSettings } from '@/lib/active-language'
 import { courseLessonStates } from '@/lib/course-path-data'
 import type { AbstractIntlMessages } from 'next-intl'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
 
@@ -28,7 +29,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   const { languageCode, uiLocale, translationLang } = await getLanguageSettings()
 
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
 
   const [modulesResult, messages, profileResult, states] = await Promise.all([
     supabase
@@ -42,7 +43,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
       ? supabase.from('user_profiles').select('display_name, total_gems').eq('user_id', user.id).maybeSingle()
       : Promise.resolve({ data: null }),
     // Same lock rule as the map in /learn, so the sidebar doesn't open locked lessons
-    user ? courseLessonStates(supabase, user.id, languageCode) : Promise.resolve(null),
+    user ? courseLessonStates(user.id, languageCode) : Promise.resolve(null),
   ])
 
   const modules = (modulesResult.data ?? []).map(m => ({ ...m, locked: states?.get(m.slug) === 'locked' }))

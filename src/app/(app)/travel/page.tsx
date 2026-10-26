@@ -1,9 +1,10 @@
 import { createClient } from '@/lib/supabase/server'
 import { TravelContent } from '@/components/travel/travel-content'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 export default async function TravelPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
 
   let languageCode = 'es'
   let destination: string | null = null

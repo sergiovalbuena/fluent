@@ -1,9 +1,10 @@
 import { createClient } from '@/lib/supabase/server'
 import { MiniGamesContent } from '@/components/mini-games/mini-games-content'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 export default async function MiniGamesPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
 
   let stats: { gemsFromGames: number; gamesToday: number } | null = null
   if (user) {

@@ -9,6 +9,7 @@ import { useTopbarStats } from '@/components/providers/topbar-provider'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
 import { getActiveBoosts, type ActiveBoosts } from '@/lib/rewards'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Boosts bought in the gem shop live in the database (user_boosts)
 function useActiveBoost() {
@@ -17,7 +18,7 @@ function useActiveBoost() {
   useEffect(() => {
     const supabase = createClient()
     let cancelled = false
-    const load = () => supabase.auth.getUser().then(({ data: { user } }) => {
+    const load = () => getAuthUser(supabase).then(({ data: { user } }) => {
       if (user) getActiveBoosts(supabase, user.id).then(b => { if (!cancelled) setBoosts(b) })
     })
     load()

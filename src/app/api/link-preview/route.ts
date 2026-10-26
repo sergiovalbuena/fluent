@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import { detectPlatform, parseUrl, youtubeId } from '@/lib/study-links'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 export const dynamic = 'force-dynamic'
 
@@ -36,7 +37,7 @@ async function oembed(endpoint: string): Promise<OEmbed | null> {
 
 export async function POST(req: NextRequest) {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
 
   const body = (await req.json().catch(() => null)) as { url?: string } | null

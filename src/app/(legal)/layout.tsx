@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import { ChevronLeft } from 'lucide-react'
 import { createClient } from '@/lib/supabase/server'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Public legal pages (privacy, terms): no app sidebar, readable signed in or out
 export default async function LegalLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   const back = user ? { href: '/profile', label: 'Back to profile' } : { href: '/', label: 'Back to home' }
 
   return (

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
 import { createClient as createAdminClient } from '@supabase/supabase-js'
 import { createClient } from '@/lib/supabase/server'
+import { getAuthUser } from '@/lib/supabase/auth'
 import {
   TTS_MAX_CHARS, TTS_MODEL, TTS_VOICE, isTtsLanguage, normalizeTtsText, ttsCachePath, ttsInstructions,
 } from '@/lib/tts'
@@ -18,7 +19,7 @@ function publicUrl(path: string) {
 export async function GET(req: NextRequest) {
   // Signed-in users only: generating audio costs API credits
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
 
   const lang = req.nextUrl.searchParams.get('lang') ?? ''

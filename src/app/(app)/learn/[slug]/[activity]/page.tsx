@@ -28,6 +28,7 @@ import { AllItemsDialog } from '@/components/lesson/all-items-dialog'
 import { HINT_AREA, SectionTitle, TitleHintProvider } from '@/components/lesson/title-hint'
 import type { SectionTitleKey } from '@/lib/section-titles'
 import { useTitleHintSettings } from '@/lib/title-hints'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -1923,7 +1924,7 @@ export default function LessonPage() {
 
   async function saveProgress(score: number): Promise<{ stars: 1 | 2 | 3; gems: number; isFirstCompletion: boolean }> {
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getAuthUser(supabase)
 
     const fallbackStars = calcStars(score)
     if (!user || !lessonId || !moduleId) {
@@ -1995,7 +1996,7 @@ export default function LessonPage() {
     isFirstCompletion: boolean,
   ): Promise<{ xpEarned: number; gemsEarned: number; milestoneBonusXp: number }> {
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getAuthUser(supabase)
     if (!user) return { xpEarned: 10, gemsEarned, milestoneBonusXp: 0 }
 
     const { data: profile } = await supabase

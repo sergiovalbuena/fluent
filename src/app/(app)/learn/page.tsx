@@ -4,6 +4,7 @@ import { lessonStates } from '@/lib/course-path'
 import { LearnContent, type LearnModule } from '@/components/learn/learn-content'
 import { getLanguageSettings } from '@/lib/active-language'
 import { lessonDescription } from '@/lib/lesson-description'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 const LANGUAGE_NAMES: Record<string, { name: string; flag: string }> = {
   es: { name: 'Spanish', flag: '🇪🇸' },
@@ -36,7 +37,7 @@ function computeModuleStars(
 
 export default async function LearnPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   const { uiLocale } = await getLanguageSettings()
 
   let languageCode = 'es'

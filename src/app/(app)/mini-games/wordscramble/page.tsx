@@ -13,6 +13,7 @@ import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type WordPair = { word: string; translation: string }
@@ -43,7 +44,7 @@ async function saveGameResult(correct: number, total: number) {
   const supabase = createClient()
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await getAuthUser(supabase)
   if (!user) return { xp: 5, gems: 3 }
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0
   const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5

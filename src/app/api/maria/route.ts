@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import OpenAI from 'openai'
 import { createClient } from '@/lib/supabase/server'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 export const dynamic = 'force-dynamic'
 
@@ -84,7 +85,7 @@ async function lessonContext(path: string, languageCode: string, explainLang: st
 export async function POST(req: NextRequest) {
   // Signed-in users only: every request costs API credits
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
 
   const apiKey = process.env.OPENAI_API_KEY

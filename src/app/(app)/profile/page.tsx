@@ -26,6 +26,7 @@ import {
   DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu'
 import Link from 'next/link'
+import { getAuthUser } from '@/lib/supabase/auth'
 import {
   Bell,
   BookOpen,
@@ -148,7 +149,7 @@ export default function ProfilePage() {
     setMounted(true)
     const supabase = createClient()
 
-    supabase.auth.getUser().then(({ data: { user } }) => {
+    getAuthUser(supabase).then(({ data: { user } }) => {
       if (!user) return
       setUserId(user.id)
 

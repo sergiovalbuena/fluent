@@ -15,6 +15,7 @@ import { loadVerbForms, loadVerbIndex, speakableForm, verbTranslation, type Verb
 import { buildRound, checkTyped, quizTenses, shuffle, type QuizMode, type QuizQuestion } from '@/lib/verb-quiz'
 import { cn } from '@/lib/utils'
 import { ScoreRing, Stat } from '@/components/practice/score'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 type Pool = 'essentials' | 'all' | 'verb'
 type Phase = 'setup' | 'playing' | 'finished'
@@ -140,7 +141,7 @@ export function VerbPractice() {
     const correct = Object.values(results).filter(Boolean).length
     const pct = Math.round((correct / Math.max(Object.keys(results).length, 1)) * 100)
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getAuthUser(supabase)
     if (!user) return
     setRewards(await addRewards(supabase, user.id, { xp: xpFor(pct), gems: GEMS, reason: 'minigame', ref: 'verbs' }))
   }, [])

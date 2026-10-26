@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 import { useActiveLanguage } from '@/components/providers/language-provider'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Role = 'user' | 'assistant'
@@ -90,7 +91,7 @@ export default function MariaPage() {
   // ── Load user's active language ──────────────────────────────────────────────
   useEffect(() => {
     const supabase = createClient()
-    supabase.auth.getUser().then(({ data: { user } }) => {
+    getAuthUser(supabase).then(({ data: { user } }) => {
       if (!user) return
       supabase
         .from('user_languages')

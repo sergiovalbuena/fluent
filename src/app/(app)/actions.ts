@@ -3,12 +3,13 @@
 import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
 import { LANGUAGES } from '@/lib/languages'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 export async function setActiveLanguage(code: string) {
   if (!LANGUAGES.some(l => l.code === code)) throw new Error('Unknown language')
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) throw new Error('Not authenticated')
 
   const { data: language } = await supabase
@@ -32,7 +33,7 @@ export async function setTranslationLanguage(code: string) {
   if (!LANGUAGES.some(l => l.code === code)) throw new Error('Unknown language')
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) throw new Error('Not authenticated')
 
   const { error } = await supabase

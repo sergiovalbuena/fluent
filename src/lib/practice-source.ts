@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { pickTranslation, type Translatable } from '@/lib/languages'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Where the mini-games take their words and phrases from: every lesson the
 // learner can open, or a selection of lessons. Chosen once on /mini-games and remembered
@@ -81,7 +82,7 @@ type CourseContent = {
  */
 async function loadCourse(lang: string, translationLang: string): Promise<CourseContent> {
   const supabase = createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   const [modulesRes, progressRes, unlockedRes] = await Promise.all([
     supabase
       .from('modules')

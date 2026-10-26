@@ -12,6 +12,7 @@ import { speak } from '@/lib/languages'
 import { usePracticeContent, type PracticeStory } from '@/lib/practice-source'
 import { createClient } from '@/lib/supabase/client'
 import { addRewards } from '@/lib/rewards'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Short Story: read one of your lessons' stories, then complete sentences from
 // it with its key expressions. Everything is in the course language.
@@ -59,7 +60,7 @@ function storyQuestions(story: PracticeStory, others: string[]): ChoiceQuestion[
 
 async function saveGameResult(correct: number, total: number) {
   const supabase = createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) return null
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0
   return addRewards(supabase, user.id, { xp: pct >= 80 ? 15 : pct >= 60 ? 10 : 5, gems: 3, reason: 'minigame' })

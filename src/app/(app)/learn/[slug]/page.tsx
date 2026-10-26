@@ -6,6 +6,7 @@ import { localizeQuestion, pickTranslation, type RawQuestion, type Translatable 
 import { notFound } from 'next/navigation'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { ModuleContentView, type ModuleContentData, type VocabItem, type PhraseItem, type QAItem, type GrammarItem } from '@/components/learn/module-content'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -40,7 +41,19 @@ export default async function LessonPage({ params }: PageProps) {
   const { data: lesson } = await getModuleBySlug(slug, languageCode)
   if (!lesson) notFound()
 
-  const { data: exercises } = await getLessonsByModuleId(lesson.id)
+  // The user is read from the session token (no request), so the lesson's exercises,
+  // the stars and the mastered items all load in one round
+  const supabase = await createClient()
+  const { data: { user } } = await getAuthUser(supabase)
+  const [{ data: exercises }, progressResult, masteryResult] = await Promise.all([
+    getLessonsByModuleId(lesson.id),
+    user
+      ? supabase.from('user_progress').select('lesson_id, stars, best_score, has_crown').eq('user_id', user.id).eq('module_id', lesson.id)
+      : Promise.resolve({ data: null }),
+    user
+      ? supabase.from('user_vocab_mastery').select('word').eq('user_id', user.id).eq('language_code', lesson.language_code)
+      : Promise.resolve({ data: null }),
+  ])
   const exerciseList = exercises ?? []
 
   const vocabEx     = exerciseList.find(e => e.type === 'vocabulary')
@@ -75,10 +88,6 @@ export default async function LessonPage({ params }: PageProps) {
   const arrangeCount               = (arrangeEx?.content as { sentences?: unknown[] })?.sentences?.length ?? 0
   const translateCount             = (translateEx?.content as { items?: unknown[] })?.items?.length ?? 0
 
-  // Fetch user progress for star display
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
   const lessonIds = exerciseList.map(e => e.id)
   let progressMap: Record<string, { stars: number; best_score: number; has_crown: boolean }> = {}
 
@@ -87,29 +96,19 @@ export default async function LessonPage({ params }: PageProps) {
   let masteredQA = 0
 
   if (user && lessonIds.length > 0) {
-    const [progressResult, masteryResult] = await Promise.all([
-      supabase
-        .from('user_progress')
-        .select('lesson_id, stars, best_score, has_crown')
-        .eq('user_id', user.id)
-        .in('lesson_id', lessonIds),
-      supabase
-        .from('user_vocab_mastery')
-        .select('word')
-        .eq('user_id', user.id)
-        .eq('language_code', lesson.language_code),
-    ])
-
     if (progressResult.data) {
+      // Rows of lessons since unpublished don't count
       progressMap = Object.fromEntries(
-        progressResult.data.map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score, has_crown: r.has_crown ?? false }])
+        (progressResult.data as { lesson_id: string; stars: number; best_score: number; has_crown: boolean | null }[])
+          .filter(r => lessonIds.includes(r.lesson_id))
+          .map(r => [r.lesson_id, { stars: r.stars, best_score: r.best_score, has_crown: r.has_crown ?? false }])
       )
     }
 
     // Mastery is stored per course language; count only this lesson's items
     // (same keys as the activity pages: word, "phrase:<text>", "qa:<question>")
     if (masteryResult.data) {
-      const mastered = new Set(masteryResult.data.map(r => r.word as string))
+      const mastered = new Set((masteryResult.data as { word: string }[]).map(r => r.word))
       masteredWords = vocabItems.filter(i => mastered.has(i.word)).length
       masteredPhrases = phraseItems.filter(p => mastered.has(`phrase:${p.phrase}`)).length
       masteredQA = qaItems.filter(q => mastered.has(`qa:${q.question}`)).length

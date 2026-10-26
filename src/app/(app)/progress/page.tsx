@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { getLanguageSettings } from '@/lib/active-language'
 import { getCourseUnits } from '@/lib/course-units'
 import { ProgressContent, type ProgressData } from '@/components/progress/progress-content'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 /** Days shown in the activity heatmap (whole weeks, ending this week) */
 const HEATMAP_WEEKS = 26
@@ -19,7 +20,7 @@ type ProgressRow = {
 
 export default async function ProgressPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   const { languageCode, uiLocale } = await getLanguageSettings()
 
   // Monday of the first heatmap week

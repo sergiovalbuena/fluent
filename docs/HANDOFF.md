@@ -90,6 +90,7 @@
   - Francés: grupo 1 = -er salvo aller; grupo 2 = -ir con -issons; grupo 3 = el resto. Irregular = grupo 3, salvo los -re que conjugan como vendre (43 de 256).
   - Inglés: según `english-verbs-irregular`.
   - `/verbs` muestra la insignia «irreg.» y, bajo el buscador, filtros por terminación (-er/-ir/-re/-oir) y regulares/irregulares.
+- **Velocidad (2026-10-26):** las páginas tardaban 8–10 s porque cada navegación llamaba varias veces seguidas a `supabase.auth.getUser()`, que va al servidor de Auth (0,4–4 s cada vez). Ahora el usuario se lee con `getAuthUser()` (`src/lib/supabase/auth.ts`), que usa `getClaims()`: verifica el token en el servidor con las claves ES256 del proyecto, sin red. El proxy también usa `getClaims()` (sigue renovando la sesión). Admin y `requireAdmin` siguen con `getUser()`. Además, el dashboard y la página de lección cargan en una sola ronda, y `courseLessonStates` se guarda en caché por petición. Proxy: de 0,4–4,2 s a 4–16 ms.
 - Auth: Google OAuth configurado; las URLs de Supabase Auth están configuradas.
 - Lint: 0 errores.
 

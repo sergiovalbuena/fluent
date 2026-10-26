@@ -10,6 +10,7 @@ import { addRewards } from '@/lib/rewards'
 import { useLocale, useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { usePracticeContent } from '@/lib/practice-source'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 /** A language's name in the UI language ("French", "francés"…) */
 function useLanguageName() {
@@ -35,7 +36,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 async function saveGameResult(correct: number, total: number) {
   const supabase = createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   if (!user) return { xp: 5, gems: 3 }
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0
   const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5

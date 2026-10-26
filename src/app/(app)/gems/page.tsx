@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { getLanguageSettings } from '@/lib/active-language'
 import { GemsPageContent, type GemTransaction, type DailyTip } from '@/components/gems/gems-content'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 type TipRow = {
   tips: Record<string, string>[] | null
@@ -9,7 +10,7 @@ type TipRow = {
 
 export default async function GemsPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
   const { languageCode, translationLang } = await getLanguageSettings()
 
   const startOfDay = new Date()

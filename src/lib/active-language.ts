@@ -2,6 +2,7 @@ import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { DEFAULT_LANGUAGE } from '@/lib/languages'
 import type { UserProfile } from '@/lib/types/database'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 export type LanguageSettings = {
   /** Language being learned */
@@ -15,7 +16,7 @@ export type LanguageSettings = {
 // Deduplicated per request — layout and pages can both call it.
 export const getLanguageSettings = cache(async (): Promise<LanguageSettings> => {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getAuthUser(supabase)
 
   const settings: LanguageSettings = { languageCode: DEFAULT_LANGUAGE, uiLocale: 'en', translationLang: 'en' }
   if (!user) return settings
