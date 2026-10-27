@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import OpenAI from 'openai'
+import { streamText } from 'ai'
+import { openai } from '@ai-sdk/openai'
 import { createClient } from '@/lib/supabase/server'
 import { getAuthUser } from '@/lib/supabase/auth'
 
@@ -37,6 +38,10 @@ const LANG_NAMES: Record<string, string> = {
 
 const MAX_MESSAGES = 20
 const MAX_CHARS = 2000
+/** Messages per user per UTC day, so one account can't use up the API budget */
+const DAILY_LIMIT = 30
+
+const today = () => new Date().toISOString().slice(0, 10)
 
 type LessonRow = { type: string; content: Record<string, unknown> | null }
 type Translatable = { word?: string; phrase?: string; translation?: string; translations?: Record<string, string> }
@@ -88,8 +93,7 @@ export async function POST(req: NextRequest) {
   const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
 
-  const apiKey = process.env.OPENAI_API_KEY
-  if (!apiKey) {
+  if (!process.env.OPENAI_API_KEY) {
     return NextResponse.json(
       { error: 'MarIA is not configured yet. Add OPENAI_API_KEY to the environment to enable AI chat.' },
       { status: 503 },
@@ -119,29 +123,43 @@ export async function POST(req: NextRequest) {
     context,
   ].filter(Boolean).join('\n\n')
 
-  const openai = new OpenAI({ apiKey })
-  const stream = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
-    stream: true,
-    max_tokens: 500,
-    messages: [{ role: 'system', content: system }, ...messages],
+  // Counted before calling the model. If the counter itself fails, MarIA still
+  // answers: the OpenAI project's spend limit is the backstop.
+  const { data: left, error: usageError } = await supabase.rpc('use_ai_message', { p_limit: DAILY_LIMIT })
+  if (usageError) console.error('[maria] use_ai_message failed:', usageError.message)
+  const remaining = usageError ? null : (left as number)
+  if (remaining === -1) {
+    return NextResponse.json({ error: 'limit', limit: DAILY_LIMIT, remaining: 0 }, { status: 429 })
+  }
+
+  const result = streamText({
+    model: openai('gpt-4o-mini'),
+    instructions: system,
+    messages,
+    maxOutputTokens: 500,
+    onError: ({ error }) => console.error('[maria] stream failed:', error),
   })
 
-  const encoder = new TextEncoder()
-  const readable = new ReadableStream({
-    async start(controller) {
-      for await (const chunk of stream) {
-        const delta = chunk.choices[0]?.delta?.content ?? ''
-        if (delta) controller.enqueue(encoder.encode(delta))
-      }
-      controller.close()
-    },
-  })
-
-  return new NextResponse(readable, {
+  return result.toTextStreamResponse({
     headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      'Transfer-Encoding': 'chunked',
+      'X-Maria-Limit': String(DAILY_LIMIT),
+      ...(remaining !== null && { 'X-Maria-Remaining': String(remaining) }),
     },
   })
+}
+
+/** Messages left today, for the chat footer */
+export async function GET() {
+  const supabase = await createClient()
+  const { data: { user } } = await getAuthUser(supabase)
+  if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
+
+  const { data } = await supabase
+    .from('ai_usage')
+    .select('messages')
+    .eq('user_id', user.id)
+    .eq('usage_date', today())
+    .maybeSingle()
+  const used = (data as { messages: number } | null)?.messages ?? 0
+  return NextResponse.json({ limit: DAILY_LIMIT, remaining: Math.max(0, DAILY_LIMIT - used) })
 }

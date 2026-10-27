@@ -469,7 +469,10 @@
     "s_correct": "Corrígeme una frase",
     "error_config": "MarIA aún no está configurada. Falta la clave de la API de OpenAI.",
     "error_generic": "MarIA no pudo responder. Inténtalo de nuevo.",
-    "lesson_context": "Lección {n}"
+    "lesson_context": "Lección {n}",
+    "remaining": "{count, plural, one {Te queda # mensaje de {limit} hoy} other {Te quedan # mensajes de {limit} hoy}}",
+    "limit_reached": "Llegaste al límite de hoy ({limit} mensajes). Vuelve mañana para seguir practicando conmigo 💪",
+    "limit_placeholder": "Límite de hoy alcanzado · vuelve mañana"
   },
   "verbs": {
     "title": "Verbos",

@@ -17,6 +17,7 @@ import {
   MessageScrollerProvider,
   MessageScrollerViewport,
 } from '@/components/ui/message-scroller'
+import { useMariaUsage } from './use-maria-usage'
 
 type ChatMessage = { id: string; role: 'user' | 'assistant'; content: string }
 
@@ -88,6 +89,7 @@ export function MariaWidget() {
   const [loading, setLoading] = useState(false)
   const inputRef = useRef<HTMLTextAreaElement>(null)
   const { lesson } = useLessonOnScreen(pathname, languageCode)
+  const { usage, limitReached, updateFrom } = useMariaUsage(open)
 
   const languageName = useMemo(
     () => new Intl.DisplayNames([locale], { type: 'language' }).of(languageCode) ?? languageCode,
@@ -111,7 +113,7 @@ export function MariaWidget() {
 
   async function send(text: string) {
     const content = text.trim()
-    if (!content || loading) return
+    if (!content || loading || limitReached) return
     const userMsg: ChatMessage = { id: crypto.randomUUID(), role: 'user', content }
     const history = [...messages, userMsg]
     setMessages(history)
@@ -130,8 +132,11 @@ export function MariaWidget() {
           path: pathname,
         }),
       })
+      updateFrom(res)
       if (!res.ok || !res.body) {
-        const msg = res.status === 503 ? t('error_config') : t('error_generic')
+        const msg = res.status === 503 ? t('error_config')
+          : res.status === 429 ? t('limit_reached', { limit: usage?.limit ?? 30 })
+          : t('error_generic')
         setMessages(prev => [...prev, { id: replyId, role: 'assistant', content: msg }])
         return
       }
@@ -300,12 +305,13 @@ export function MariaWidget() {
                 }}
                 rows={1}
                 maxLength={2000}
-                placeholder={t('placeholder')}
-                className="flex-1 max-h-32 resize-none rounded-2xl bg-slate-100 dark:bg-white/[0.06] px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400/40 [field-sizing:content]"
+                disabled={limitReached}
+                placeholder={limitReached ? t('limit_placeholder') : t('placeholder')}
+                className="flex-1 max-h-32 resize-none rounded-2xl bg-slate-100 dark:bg-white/[0.06] px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-rose-400/40 disabled:opacity-60 [field-sizing:content]"
               />
               <button
                 type="submit"
-                disabled={!input.trim() || loading}
+                disabled={!input.trim() || loading || limitReached}
                 aria-label={t('send')}
                 className="size-10 shrink-0 rounded-full text-white flex items-center justify-center disabled:opacity-40 transition-opacity"
                 style={{ background: MARIA_GRADIENT }}
@@ -313,6 +319,11 @@ export function MariaWidget() {
                 <ArrowUp size={18} strokeWidth={2.6} />
               </button>
             </form>
+            {usage && (
+              <p className={cn('-mt-1.5 pb-2 text-center text-[11px]', usage.remaining <= 5 ? 'text-rose-500' : 'text-slate-400 dark:text-slate-500')}>
+                {t('remaining', { count: usage.remaining, limit: usage.limit })}
+              </p>
+            )}
           </motion.section>
         )}
       </AnimatePresence>

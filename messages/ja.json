@@ -469,7 +469,10 @@
     "s_correct": "文を添削して",
     "error_config": "MarIAはまだ設定されていません。OpenAIのAPIキーが必要です。",
     "error_generic": "MarIAが応答できませんでした。もう一度お試しください。",
-    "lesson_context": "レッスン{n}"
+    "lesson_context": "レッスン{n}",
+    "remaining": "{count, plural, other {今日の残り: {limit}件中#件}}",
+    "limit_reached": "今日の上限（{limit}件）に達しました。また明日一緒に練習しましょう 💪",
+    "limit_placeholder": "今日の上限に達しました · また明日"
   },
   "verbs": {
     "title": "動詞",

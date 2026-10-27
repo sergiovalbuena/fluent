@@ -2,12 +2,14 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { Bot, Send, RotateCcw, Sparkles } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { createClient } from '@/lib/supabase/client'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { useMariaUsage } from '@/components/maria/use-maria-usage'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Role = 'user' | 'assistant'
@@ -79,7 +81,9 @@ function Bubble({ message }: { message: Message }) {
 
 // ── Page ───────────────────────────────────────────────────────────────────────
 export default function MariaPage() {
+  const t = useTranslations('maria')
   const { translationLang } = useActiveLanguage()
+  const { usage, limitReached, updateFrom } = useMariaUsage(true)
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
@@ -125,7 +129,7 @@ export default function MariaPage() {
   // ── Send message ─────────────────────────────────────────────────────────────
   async function sendMessage(text: string) {
     const userText = text.trim()
-    if (!userText || loading) return
+    if (!userText || loading || limitReached) return
 
     const userMsg: Message = { role: 'user', content: userText, id: crypto.randomUUID() }
     const nextMessages = [...messages, userMsg]
@@ -147,13 +151,16 @@ export default function MariaPage() {
         }),
       })
 
+      updateFrom(res)
       if (!res.ok) {
-        const err = await res.json() as { error?: string }
-        setApiReady(false)
+        const err = await res.json() as { error?: string; limit?: number }
+        if (res.status === 503) setApiReady(false)
         setMessages(prev => [...prev, {
           role: 'assistant',
           id: Date.now().toString(),
-          content: err.error ?? 'Something went wrong. Please try again.',
+          content: res.status === 429
+            ? t('limit_reached', { limit: err.limit ?? 30 })
+            : err.error ?? 'Something went wrong. Please try again.',
         }])
         setLoading(false)
         return
@@ -329,13 +336,14 @@ export default function MariaPage() {
                   e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px'
                 }}
                 onKeyDown={handleKeyDown}
-                placeholder="Type in any language… (Enter to send)"
+                disabled={limitReached}
+                placeholder={limitReached ? t('limit_placeholder') : 'Type in any language… (Enter to send)'}
                 rows={1}
                 className="flex-1 resize-none bg-transparent text-sm text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-600 outline-none py-1 leading-relaxed max-h-[120px] overflow-y-auto"
               />
               <button
                 onClick={() => void sendMessage(input)}
-                disabled={!input.trim() || loading}
+                disabled={!input.trim() || loading || limitReached}
                 className="shrink-0 size-8 rounded-xl flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed hover:scale-105 active:scale-95"
                 style={{ background: 'linear-gradient(135deg, #be123c 0%, #db2777 100%)' }}
               >
@@ -344,6 +352,11 @@ export default function MariaPage() {
             </div>
             <p className="text-[10px] text-slate-400 dark:text-slate-600 text-center mt-1.5">
               Shift+Enter for new line · MarIA may make mistakes
+              {usage && (
+                <span className={usage.remaining <= 5 ? 'text-rose-500' : undefined}>
+                  {' · '}{t('remaining', { count: usage.remaining, limit: usage.limit })}
+                </span>
+              )}
             </p>
           </div>
         </motion.div>

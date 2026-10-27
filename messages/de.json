@@ -469,7 +469,10 @@
     "s_correct": "Korrigier mir einen Satz",
     "error_config": "MarIA ist noch nicht eingerichtet. Der OpenAI-API-Schlüssel fehlt.",
     "error_generic": "MarIA konnte nicht antworten. Bitte versuche es erneut.",
-    "lesson_context": "Lektion {n}"
+    "lesson_context": "Lektion {n}",
+    "remaining": "{count, plural, one {Heute noch # von {limit} Nachrichten} other {Heute noch # von {limit} Nachrichten}}",
+    "limit_reached": "Du hast das heutige Limit erreicht ({limit} Nachrichten). Komm morgen wieder, um weiter mit mir zu üben 💪",
+    "limit_placeholder": "Tageslimit erreicht · morgen geht's weiter"
   },
   "verbs": {
     "title": "Verben",

@@ -469,7 +469,10 @@
     "s_correct": "Correct a sentence for me",
     "error_config": "MarIA isn't set up yet. Add the OpenAI API key to enable her.",
     "error_generic": "MarIA couldn't answer. Please try again.",
-    "lesson_context": "Lesson {n}"
+    "lesson_context": "Lesson {n}",
+    "remaining": "{count, plural, one {# of {limit} messages left today} other {# of {limit} messages left today}}",
+    "limit_reached": "You've reached today's limit ({limit} messages). Come back tomorrow to keep practicing with me 💪",
+    "limit_placeholder": "Today's limit reached · come back tomorrow"
   },
   "verbs": {
     "title": "Verbs",
