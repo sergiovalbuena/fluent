@@ -1,0 +1,206 @@
+{
+  "slug": "obligacion",
+  "number": 22,
+  "part": 5,
+  "level": "A2",
+  "title": "La obligación: il faut y devoir",
+  "tagline": "Hay que, tener que, no hace falta y necesitar.",
+  "goal": "Expresar obligación con il faut y devoir, distinguir «no debes» de «no hace falta», y decir lo que necesitas con avoir besoin de.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "il-faut",
+      "title": "Il faut: hay que",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Il faut* es **impersonal**, como «hay que»: no cambia nunca, sea quien sea el que tiene que hacerlo."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Il faut} réserver.", "tr": "Hay que reservar." },
+            { "fr": "Pour ce gâteau, {il faut} trois œufs.", "tr": "Para este pastel hacen falta tres huevos.", "note": "+ sustantivo: hace falta, se necesita" },
+            { "fr": "{Il ne faut pas} fumer ici.", "tr": "No se debe fumar aquí." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Il ne faut pas = está prohibido",
+          "text": "*Il ne faut pas* no significa «no hace falta», sino **«no se debe»**. *Il ne faut pas toucher* = no hay que tocar (¡prohibido!)."
+        },
+        {
+          "type": "text",
+          "text": "Más adelante verás *il faut que* + subjuntivo (*Il faut que tu viennes*), que sirve para decir **quién** tiene que hacerlo. Por ahora, para eso está *devoir*."
+        }
+      ]
+    },
+    {
+      "id": "devoir",
+      "title": "Devoir: tener que, deber",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["je", "tu", "il / elle / on", "nous", "vous", "ils / elles"],
+          "verbs": [
+            { "verb": "devoir", "meaning": "deber, tener que", "forms": ["je {dois}", "tu {dois}", "il {doit}", "nous {devons}", "vous {devez}", "ils {doivent}"], "notes": ["Pasado: j'ai dû"] }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Je {dois} partir.", "tr": "Tengo que irme." },
+            { "fr": "Vous {devez} remplir ce formulaire.", "tr": "Tiene que rellenar este formulario." },
+            { "fr": "Il {doit} être malade.", "tr": "Debe de estar enfermo.", "note": "suposición" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Un consejo amable",
+          "text": "*Tu devrais* (deberías) suaviza la obligación: *Tu {devrais} dormir plus.*"
+        }
+      ]
+    },
+    {
+      "id": "no-hace-falta",
+      "title": "No debes o no hace falta",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En español, «no tienes que venir» puede ser una prohibición o una libertad. El francés lo separa:"
+        },
+        {
+          "type": "table",
+          "head": ["Prohibido", "No es obligatorio"],
+          "rows": [
+            ["*Tu {ne dois pas} venir.*", "*Tu {n'es pas obligé de} venir.*"],
+            ["No debes venir (no vengas).", "No tienes que venir (si no quieres)."],
+            ["*Il ne faut pas* + infinitivo", "*Tu n'as pas besoin de* + infinitivo · *Pas besoin de…*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*obligé* concuerda: *Elle n'est pas obligé{e} de venir. Vous n'êtes pas obligé{s}.*"
+        }
+      ]
+    },
+    {
+      "id": "necesitar",
+      "title": "Avoir besoin de: necesitar",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "«Necesitar» se dice con *avoir*: literalmente, «tener necesidad de». Va con un sustantivo o con un infinitivo."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "J'{ai besoin d'}aide.", "tr": "Necesito ayuda." },
+            { "fr": "Nous {avons besoin de} vacances.", "tr": "Necesitamos vacaciones." },
+            { "fr": "Tu {as besoin de} dormir.", "tr": "Necesitas dormir." },
+            { "fr": "J'{ai besoin de} toi.", "tr": "Te necesito." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Sin artículo partitivo",
+          "text": "Tras *besoin de* va *de*, nunca *du* ni *de la*: *J'ai besoin {d'}argent*, no «besoin de l'argent» (salvo que sea un dinero concreto)."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "faut-o-no",
+      "section": "il-faut",
+      "title": "¿Hay que o no se debe?",
+      "instructions": "Elige según el sentido.",
+      "kind": "choice",
+      "options": ["il faut", "il ne faut pas"],
+      "items": [
+        { "prompt": "Le musée est fermé lundi : ___ y aller mardi.", "answer": "il faut" },
+        { "prompt": "C'est dangereux : ___ toucher ce câble.", "answer": "il ne faut pas" },
+        { "prompt": "Pour voyager en Europe, ___ un passeport.", "answer": "il faut" },
+        { "prompt": "Dans la bibliothèque, ___ parler fort.", "answer": "il ne faut pas" },
+        { "prompt": "Pour apprendre une langue, ___ pratiquer tous les jours.", "answer": "il faut" },
+        { "prompt": "Le train part à 8 h : ___ être en retard.", "answer": "il ne faut pas" }
+      ]
+    },
+    {
+      "id": "devoir-forma",
+      "section": "devoir",
+      "title": "Conjuga devoir",
+      "instructions": "Escribe devoir en presente.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je ___ partir à six heures.", "answer": "dois" },
+        { "prompt": "Nous ___ acheter du pain.", "answer": "devons" },
+        { "prompt": "Vous ___ signer ici.", "answer": "devez" },
+        { "prompt": "Les enfants ___ se coucher tôt.", "answer": "doivent" },
+        { "prompt": "Tu ___ être fatigué après ce voyage.", "answer": "dois" },
+        { "prompt": "Elle ___ appeler sa mère.", "answer": "doit" }
+      ]
+    },
+    {
+      "id": "prohibido-libre",
+      "section": "no-hace-falta",
+      "title": "¿Prohibido o libre?",
+      "instructions": "Elige la opción que tiene sentido.",
+      "kind": "choice",
+      "options": ["tu ne dois pas", "tu n'es pas obligé de"],
+      "items": [
+        { "prompt": "C'est gratuit : ___ payer.", "answer": "tu n'es pas obligé de" },
+        { "prompt": "C'est un secret : ___ en parler.", "answer": "tu ne dois pas" },
+        { "prompt": "Si tu es fatigué, ___ venir ce soir.", "answer": "tu n'es pas obligé de" },
+        { "prompt": "Le médecin a dit : ___ manger de sucre.", "answer": "tu ne dois pas" },
+        { "prompt": "Demain, c'est dimanche : ___ te lever tôt.", "answer": "tu n'es pas obligé de" },
+        { "prompt": "Tu conduis : ___ boire d'alcool.", "answer": "tu ne dois pas" }
+      ]
+    },
+    {
+      "id": "besoin",
+      "section": "necesitar",
+      "title": "Avoir besoin de",
+      "instructions": "Completa con avoir (presente) o con de / d'.",
+      "kind": "type",
+      "items": [
+        { "prompt": "J'___ besoin d'un café.", "answer": "ai" },
+        { "prompt": "Nous ___ besoin de vacances.", "answer": "avons" },
+        { "prompt": "Tu as besoin ___ moi ?", "answer": "de" },
+        { "prompt": "Ils ont besoin ___ argent.", "answer": "d'" },
+        { "prompt": "Vous ___ besoin d'aide ?", "answer": "avez" },
+        { "prompt": "Elle a besoin ___ dormir.", "answer": "de" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Dilo en francés",
+      "instructions": "Traduce la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Hay que trabajar.", "answer": "Il faut travailler." },
+        { "prompt": "Tengo que irme.", "answer": "Je dois partir.", "accept": ["Je dois y aller.", "Je dois m'en aller."] },
+        { "prompt": "No tienes que venir (si no quieres).", "answer": "Tu n'es pas obligé de venir.", "accept": ["Tu n'es pas obligée de venir.", "Tu n'as pas besoin de venir."] },
+        { "prompt": "No se debe fumar aquí.", "answer": "Il ne faut pas fumer ici." },
+        { "prompt": "Necesitamos ayuda.", "answer": "Nous avons besoin d'aide.", "accept": ["On a besoin d'aide."] },
+        { "prompt": "Deben de estar cansados.", "answer": "Ils doivent être fatigués." }
+      ]
+    }
+  ],
+  "checklist": [
+    "Uso *il faut* + infinitivo o sustantivo.",
+    "Conjugo *devoir* y lo uso para obligación y suposición.",
+    "Distingo *tu ne dois pas* (prohibido) de *tu n'es pas obligé de* (no hace falta).",
+    "Digo lo que necesito con *avoir besoin de*."
+  ],
+  "challenge": {
+    "title": "Las reglas de tu casa",
+    "text": "Escribe las reglas de tu casa o de tu trabajo: tres con *il faut* o *on doit*, dos con *il ne faut pas* y una cosa que **no es obligatoria**: *Chez moi, il faut enlever ses chaussures. Il ne faut pas manger dans le salon. On n'est pas obligé de faire son lit le dimanche.*"
+  }
+}

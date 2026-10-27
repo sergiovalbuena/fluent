@@ -9,7 +9,7 @@ import { ArrowDown, ArrowLeft, ArrowRight, Check, Clock, Flame, Headphones, Keyb
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { GrammarBlockView } from '@/components/grammar/grammar-blocks'
 import { GrammarProvider, Rich } from '@/components/grammar/rich-text'
-import { StatusChip } from '@/components/grammar/status-chip'
+import { LevelChip, StatusChip } from '@/components/grammar/status-chip'
 import { ExerciseSession } from '@/components/grammar/exercise-session'
 import { useGrammarIndex, useXpMultipliers } from '@/components/grammar/use-grammar'
 import { ScoreRing } from '@/components/practice/score'
@@ -182,6 +182,7 @@ export default function GrammarModulePage() {
                   <span className="rounded-full bg-indigo-500/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-300">
                     {t('module_n', { n: mod.number })}{part ? ` · ${part.title}` : ''}
                   </span>
+                  <LevelChip level={mod.level} />
                   <StatusChip status={status} />
                 </div>
                 <h1 className="mt-3 text-2xl font-bold leading-tight text-slate-900 dark:text-white md:text-[2rem]">{mod.title}</h1>

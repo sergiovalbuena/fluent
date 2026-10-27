@@ -1,0 +1,206 @@
+{
+  "slug": "obligacion",
+  "number": 22,
+  "part": 5,
+  "level": "A2",
+  "title": "Obligation: il faut and devoir",
+  "tagline": "Must, have to, don't have to and need.",
+  "goal": "Express obligation with il faut and devoir, tell «mustn't» from «don't have to», and say what you need with avoir besoin de.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "il-faut",
+      "title": "Il faut: you have to",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Il faut* is **impersonal**: it never changes, whoever has to do the thing. It's like a general «you have to» or «one must»."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Il faut} réserver.", "tr": "You have to book." },
+            { "fr": "Pour ce gâteau, {il faut} trois œufs.", "tr": "For this cake you need three eggs.", "note": "+ noun: you need" },
+            { "fr": "{Il ne faut pas} fumer ici.", "tr": "You mustn't smoke here." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Il ne faut pas = mustn't",
+          "text": "*Il ne faut pas* is a **prohibition**, not «you don't need to». *Il ne faut pas toucher* = don't touch!"
+        },
+        {
+          "type": "text",
+          "text": "Later you'll meet *il faut que* + subjunctive (*Il faut que tu viennes*), which says **who** has to. For now, use *devoir* for that."
+        }
+      ]
+    },
+    {
+      "id": "devoir",
+      "title": "Devoir: must, have to",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["je", "tu", "il / elle / on", "nous", "vous", "ils / elles"],
+          "verbs": [
+            { "verb": "devoir", "meaning": "must, to have to", "forms": ["je {dois}", "tu {dois}", "il {doit}", "nous {devons}", "vous {devez}", "ils {doivent}"], "notes": ["Past: j'ai dû"] }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Je {dois} partir.", "tr": "I have to go." },
+            { "fr": "Vous {devez} remplir ce formulaire.", "tr": "You must fill in this form." },
+            { "fr": "Il {doit} être malade.", "tr": "He must be ill.", "note": "a guess, like in English" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Friendly advice",
+          "text": "*Tu devrais* (you should) softens it: *Tu {devrais} dormir plus.*"
+        }
+      ]
+    },
+    {
+      "id": "no-hace-falta",
+      "title": "Mustn't or don't have to",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English already makes this difference, and French makes it the same way:"
+        },
+        {
+          "type": "table",
+          "head": ["Forbidden", "Not required"],
+          "rows": [
+            ["*Tu {ne dois pas} venir.*", "*Tu {n'es pas obligé de} venir.*"],
+            ["You mustn't come.", "You don't have to come."],
+            ["*Il ne faut pas* + infinitive", "*Tu n'as pas besoin de* + infinitive · *Pas besoin de…*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*obligé* agrees: *Elle n'est pas obligé{e} de venir. Vous n'êtes pas obligé{s}.*"
+        }
+      ]
+    },
+    {
+      "id": "necesitar",
+      "title": "Avoir besoin de: to need",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "«To need» is said with *avoir*: literally «to have need of». It's followed by a noun or an infinitive."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "J'{ai besoin d'}aide.", "tr": "I need help." },
+            { "fr": "Nous {avons besoin de} vacances.", "tr": "We need a holiday." },
+            { "fr": "Tu {as besoin de} dormir.", "tr": "You need to sleep." },
+            { "fr": "J'{ai besoin de} toi.", "tr": "I need you." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Just de",
+          "text": "After *besoin* comes plain *de*, never *du* or *de la*: *J'ai besoin {d'}argent* (I need money)."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "faut-o-no",
+      "section": "il-faut",
+      "title": "Have to or mustn't?",
+      "instructions": "Choose by the meaning.",
+      "kind": "choice",
+      "options": ["il faut", "il ne faut pas"],
+      "items": [
+        { "prompt": "Le musée est fermé lundi : ___ y aller mardi.", "answer": "il faut" },
+        { "prompt": "C'est dangereux : ___ toucher ce câble.", "answer": "il ne faut pas" },
+        { "prompt": "Pour voyager en Europe, ___ un passeport.", "answer": "il faut" },
+        { "prompt": "Dans la bibliothèque, ___ parler fort.", "answer": "il ne faut pas" },
+        { "prompt": "Pour apprendre une langue, ___ pratiquer tous les jours.", "answer": "il faut" },
+        { "prompt": "Le train part à 8 h : ___ être en retard.", "answer": "il ne faut pas" }
+      ]
+    },
+    {
+      "id": "devoir-forma",
+      "section": "devoir",
+      "title": "Conjugate devoir",
+      "instructions": "Write devoir in the present.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je ___ partir à six heures.", "answer": "dois" },
+        { "prompt": "Nous ___ acheter du pain.", "answer": "devons" },
+        { "prompt": "Vous ___ signer ici.", "answer": "devez" },
+        { "prompt": "Les enfants ___ se coucher tôt.", "answer": "doivent" },
+        { "prompt": "Tu ___ être fatigué après ce voyage.", "answer": "dois" },
+        { "prompt": "Elle ___ appeler sa mère.", "answer": "doit" }
+      ]
+    },
+    {
+      "id": "prohibido-libre",
+      "section": "no-hace-falta",
+      "title": "Forbidden or optional?",
+      "instructions": "Choose the option that makes sense.",
+      "kind": "choice",
+      "options": ["tu ne dois pas", "tu n'es pas obligé de"],
+      "items": [
+        { "prompt": "C'est gratuit : ___ payer.", "answer": "tu n'es pas obligé de" },
+        { "prompt": "C'est un secret : ___ en parler.", "answer": "tu ne dois pas" },
+        { "prompt": "Si tu es fatigué, ___ venir ce soir.", "answer": "tu n'es pas obligé de" },
+        { "prompt": "Le médecin a dit : ___ manger de sucre.", "answer": "tu ne dois pas" },
+        { "prompt": "Demain, c'est dimanche : ___ te lever tôt.", "answer": "tu n'es pas obligé de" },
+        { "prompt": "Tu conduis : ___ boire d'alcool.", "answer": "tu ne dois pas" }
+      ]
+    },
+    {
+      "id": "besoin",
+      "section": "necesitar",
+      "title": "Avoir besoin de",
+      "instructions": "Fill in avoir (present) or de / d'.",
+      "kind": "type",
+      "items": [
+        { "prompt": "J'___ besoin d'un café.", "answer": "ai" },
+        { "prompt": "Nous ___ besoin de vacances.", "answer": "avons" },
+        { "prompt": "Tu as besoin ___ moi ?", "answer": "de" },
+        { "prompt": "Ils ont besoin ___ argent.", "answer": "d'" },
+        { "prompt": "Vous ___ besoin d'aide ?", "answer": "avez" },
+        { "prompt": "Elle a besoin ___ dormir.", "answer": "de" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in French",
+      "instructions": "Translate the sentence.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "You have to work. (in general)", "answer": "Il faut travailler." },
+        { "prompt": "I have to go.", "answer": "Je dois partir.", "accept": ["Je dois y aller.", "Je dois m'en aller."] },
+        { "prompt": "You don't have to come. (tu)", "answer": "Tu n'es pas obligé de venir.", "accept": ["Tu n'es pas obligée de venir.", "Tu n'as pas besoin de venir."] },
+        { "prompt": "You mustn't smoke here. (in general)", "answer": "Il ne faut pas fumer ici." },
+        { "prompt": "We need help.", "answer": "Nous avons besoin d'aide.", "accept": ["On a besoin d'aide."] },
+        { "prompt": "They must be tired.", "answer": "Ils doivent être fatigués." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use *il faut* + infinitive or noun.",
+    "I conjugate *devoir* and use it for obligation and for guesses.",
+    "I tell *tu ne dois pas* (mustn't) from *tu n'es pas obligé de* (don't have to).",
+    "I say what I need with *avoir besoin de*."
+  ],
+  "challenge": {
+    "title": "House rules",
+    "text": "Write the rules of your home or workplace: three with *il faut* or *on doit*, two with *il ne faut pas* and one thing that is **not required**: *Chez moi, il faut enlever ses chaussures. Il ne faut pas manger dans le salon. On n'est pas obligé de faire son lit le dimanche.*"
+  }
+}

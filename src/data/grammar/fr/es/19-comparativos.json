@@ -1,0 +1,246 @@
+{
+  "slug": "comparativos",
+  "number": 19,
+  "part": 5,
+  "level": "A2",
+  "title": "Comparativos y superlativos",
+  "tagline": "Más, menos, igual, mejor y «el más… del mundo».",
+  "goal": "Comparar personas, cosas y acciones, elegir bien entre meilleur y mieux, y decir que algo es el más (o el menos) de su grupo.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "adjetivos",
+      "title": "Más, menos, tan… como",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Con un **adjetivo** o un **adverbio**, la estructura es como en español: una palabra antes y *que* después."
+        },
+        {
+          "type": "table",
+          "head": ["", "Francés", "Ejemplo"],
+          "rows": [
+            ["**+** más… que", "*plus … que*", "*Lyon est {plus} grande {que} Nantes.*"],
+            ["**−** menos… que", "*moins … que*", "*Le bus est {moins} rapide {que} le train.*"],
+            ["**=** tan… como", "*aussi … que*", "*Paul est {aussi} grand {que} Marie.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "«Como» no es «comme»",
+          "text": "En la igualdad, el «como» español se dice *que*: *aussi grand {que} toi*, nunca «aussi grand comme toi»."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Delante de vocal, *que* pierde la e: *plus âgé {qu'}Anne*.",
+            "Con personas se usan los pronombres tónicos: *plus grand que {moi}, que {toi}, que {lui}, qu'{elle}, que {nous}*.",
+            "El adjetivo concuerda como siempre [[13]]: *Ma sœur est plus grand{e} que moi.*"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nombres-verbos",
+      "title": "Con sustantivos y con verbos",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Para comparar **cantidades** (de cosas o de acción) cambia la fórmula. Con un sustantivo aparece *de*; con un verbo, la comparación va **después** del verbo."
+        },
+        {
+          "type": "table",
+          "head": ["", "Con sustantivo", "Con verbo"],
+          "rows": [
+            ["**+**", "*plus {de} livres que toi*", "*Il lit {plus que} toi.*"],
+            ["**−**", "*moins {de} temps qu'avant*", "*Elle dort {moins que} moi.*"],
+            ["**=**", "*autant {de} amis que vous*", "*Je travaille {autant que} lui.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Aussi o autant",
+          "text": "Igual que en español: «**tan** grande como» → *aussi* (adjetivo, adverbio). «**Tanto** como», «**tantos** libros como» → *autant* (verbo, sustantivo)."
+        },
+        {
+          "type": "text",
+          "text": "Delante de un sustantivo, *de* no cambia nunca, ni en femenino ni en plural: *plus {de} voitures, autant {d'}eau*."
+        }
+      ]
+    },
+    {
+      "id": "mejor",
+      "title": "Meilleur o mieux",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El español usa «mejor» para todo. El francés tiene dos palabras, según qué se compara:"
+        },
+        {
+          "type": "table",
+          "head": ["Base", "Mejor", "Acompaña a", "Ejemplo"],
+          "rows": [
+            ["*bon* (bueno)", "*meilleur(e)(s)*", "un **sustantivo**: concuerda", "*Ce gâteau est {meilleur}. Une {meilleure} idée.*"],
+            ["*bien* (bien)", "*mieux*", "un **verbo**: no cambia", "*Elle chante {mieux} que moi.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "El truco",
+          "text": "Cambia «mejor» por «bueno» o «bien». Si queda «más bueno», es *meilleur*; si queda «más bien», es *mieux*. Y tras *c'est* para hablar de una situación: *C'est {mieux} comme ça* (así es mejor)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Nunca «plus bon» ni «plus bien».",
+            "Peor: *pire* o *plus mauvais* (adjetivo), *plus mal* (verbo): *C'est {pire} qu'hier. Il dort {plus mal}.*"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "superlativo",
+      "title": "El más… del mundo",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "le / la / les + plus / moins + adjetivo (+ de …)"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "C'est {la plus} belle ville {du} monde.", "tr": "Es la ciudad más bonita del mundo." },
+            { "fr": "Ce sont {les moins} chers {de} la boutique.", "tr": "Son los menos caros de la tienda." },
+            { "fr": "C'est {le meilleur} film de l'année.", "tr": "Es la mejor película del año." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Si el adjetivo va detrás, el artículo se repite",
+          "text": "La mayoría de adjetivos van detrás del sustantivo [[13]], y entonces el artículo aparece **dos veces**: *le restaurant {le plus} cher du quartier · la montagne {la plus} haute d'Europe*."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Con un verbo, siempre *le*: *C'est elle qui court {le plus} vite.*",
+            "Con un sustantivo: *C'est Marc qui a {le plus de} livres.*",
+            "El grupo va con *de*, como en español: *du monde, de la classe, de l'année*."
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "mas-menos",
+      "section": "adjetivos",
+      "title": "Más, menos o igual",
+      "instructions": "Elige según el símbolo: + más, − menos, = igual.",
+      "kind": "choice",
+      "options": ["plus", "moins", "aussi"],
+      "items": [
+        { "prompt": "Ce roman est ___ intéressant que le film. (+)", "answer": "plus" },
+        { "prompt": "Le bus est ___ rapide que le métro. (−)", "answer": "moins" },
+        { "prompt": "Paul est ___ grand que Marie. (=)", "answer": "aussi" },
+        { "prompt": "Cette robe est ___ chère que la bleue. (−)", "answer": "moins" },
+        { "prompt": "Mon chien est ___ gentil que le tien. (=)", "answer": "aussi" },
+        { "prompt": "En hiver, les nuits sont ___ longues. (+)", "answer": "plus" },
+        { "prompt": "Le français est ___ difficile que l'anglais ? (+)", "answer": "plus" }
+      ]
+    },
+    {
+      "id": "aussi-autant",
+      "section": "nombres-verbos",
+      "title": "Aussi, autant o autant de",
+      "instructions": "Todas son de igualdad (=). Elige la forma que corresponde.",
+      "kind": "choice",
+      "options": ["aussi", "autant", "autant de"],
+      "items": [
+        { "prompt": "Je travaille ___ que toi.", "answer": "autant", "explain": "Compara un verbo (*travailler*) → *autant*." },
+        { "prompt": "Elle est ___ sportive que sa mère.", "answer": "aussi", "explain": "Compara un adjetivo (*sportive*) → *aussi*." },
+        { "prompt": "J'ai ___ livres que ma sœur.", "answer": "autant de", "explain": "Compara un sustantivo (*livres*) → *autant de*." },
+        { "prompt": "Tu dors ___ que moi ?", "answer": "autant" },
+        { "prompt": "Ce café est ___ bon que l'autre.", "answer": "aussi" },
+        { "prompt": "Il y a ___ touristes qu'en été.", "answer": "autant de" },
+        { "prompt": "Ils parlent ___ vite que nous.", "answer": "aussi", "explain": "*vite* es un adverbio → *aussi*." }
+      ]
+    },
+    {
+      "id": "cantidades",
+      "section": "nombres-verbos",
+      "title": "¿Con de o sin de?",
+      "instructions": "Escribe plus, moins, plus de o moins de.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Marc a ___ frères que Julie. (+)", "answer": "plus de" },
+        { "prompt": "Je bois ___ café qu'avant. (−)", "answer": "moins de" },
+        { "prompt": "Mon frère mange ___ que moi. (+)", "answer": "plus" },
+        { "prompt": "Elle lit ___ que lui. (−)", "answer": "moins" },
+        { "prompt": "Paris a ___ musées que Lyon. (+)", "answer": "plus de" },
+        { "prompt": "Le dimanche, il y a ___ voitures. (−)", "answer": "moins de" }
+      ]
+    },
+    {
+      "id": "meilleur-mieux",
+      "section": "mejor",
+      "title": "Meilleur o mieux",
+      "instructions": "Elige la forma correcta.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Elle chante ___ que moi.", "options": ["mieux", "meilleur"], "answer": "mieux", "explain": "Canta **bien** → *mieux*." },
+        { "prompt": "C'est le ___ gâteau de la ville.", "options": ["meilleur", "mieux"], "answer": "meilleur", "explain": "Un pastel **bueno** → *meilleur*." },
+        { "prompt": "Ça va ___ qu'hier ?", "options": ["mieux", "meilleur"], "answer": "mieux" },
+        { "prompt": "Ton idée est ___ que la mienne.", "options": ["meilleure", "mieux"], "answer": "meilleure", "explain": "*idée* es femenino: *meilleure*." },
+        { "prompt": "Il conduit ___ que son père.", "options": ["mieux", "meilleur"], "answer": "mieux" },
+        { "prompt": "Ses notes sont ___ cette année.", "options": ["meilleures", "mieux"], "answer": "meilleures" },
+        { "prompt": "C'est ___ de partir tôt.", "options": ["mieux", "meilleur"], "answer": "mieux", "explain": "Tras *c'est*, para una situación: *mieux*." }
+      ]
+    },
+    {
+      "id": "superlativo",
+      "section": "superlativo",
+      "title": "Ordena el superlativo",
+      "instructions": "Forma el grupo. Ojo con el artículo repetido cuando el adjetivo va detrás.",
+      "kind": "order",
+      "speak": "answer",
+      "items": [
+        { "words": ["c'est", "la", "plus", "belle", "ville", "du", "monde"], "answer": "c'est la plus belle ville du monde" },
+        { "words": ["le", "restaurant", "le", "plus", "cher", "du", "quartier"], "answer": "le restaurant le plus cher du quartier" },
+        { "words": ["la", "montagne", "la", "plus", "haute", "d'Europe"], "answer": "la montagne la plus haute d'Europe" },
+        { "words": ["le", "meilleur", "film", "de", "l'année"], "answer": "le meilleur film de l'année" },
+        { "words": ["l'élève", "le", "moins", "bavard", "de", "la", "classe"], "answer": "l'élève le moins bavard de la classe" },
+        { "words": ["c'est", "elle", "qui", "court", "le", "plus", "vite"], "answer": "c'est elle qui court le plus vite" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Dilo en francés",
+      "instructions": "Traduce la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Mi hermano es más alto que yo.", "answer": "Mon frère est plus grand que moi." },
+        { "prompt": "Este café es mejor que el otro.", "answer": "Ce café est meilleur que l'autre." },
+        { "prompt": "Tengo tantos libros como tú.", "answer": "J'ai autant de livres que toi." },
+        { "prompt": "Es la película más larga del año.", "answer": "C'est le film le plus long de l'année.", "accept": ["C'est le plus long film de l'année."] },
+        { "prompt": "Ella habla francés mejor que yo.", "answer": "Elle parle mieux français que moi.", "accept": ["Elle parle mieux le français que moi.", "Elle parle français mieux que moi."] },
+        { "prompt": "Trabajo menos que antes.", "answer": "Je travaille moins qu'avant." }
+      ]
+    }
+  ],
+  "checklist": [
+    "Comparo adjetivos con *plus, moins, aussi … que*.",
+    "Uso *plus de, moins de, autant de* con sustantivos y *autant* con verbos.",
+    "Distingo *meilleur* (bueno) de *mieux* (bien).",
+    "Formo el superlativo y repito el artículo cuando el adjetivo va detrás."
+  ],
+  "challenge": {
+    "title": "Tu ciudad contra otra",
+    "text": "Compara tu ciudad con otra que conozcas en seis frases: una con *plus*, una con *moins*, una con *aussi*, una con *autant de*, una con *meilleur* o *mieux* y un superlativo: *Bogotá est plus grande que Medellín, mais Medellín a le meilleur climat du pays.*"
+  }
+}

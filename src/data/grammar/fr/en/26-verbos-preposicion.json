@@ -1,0 +1,184 @@
+{
+  "slug": "verbos-preposicion",
+  "number": 26,
+  "part": 6,
+  "level": "B1",
+  "title": "Verbs and prepositions",
+  "tagline": "Listen to, wait for, think about… and décider de.",
+  "goal": "Drop the prepositions English adds, use the right preposition with verbs that differ from English, and know which verbs take de or à before an infinitive.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "a-personal",
+      "title": "No preposition in French",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Many English verbs need a little word after them (listen **to**, look **at**, wait **for**). Their French equivalents take the object **directly**."
+        },
+        {
+          "type": "table",
+          "head": ["English", "French"],
+          "rows": [
+            ["listen **to** music", "*écouter la musique*"],
+            ["look **at** the photos", "*regarder les photos*"],
+            ["wait **for** the bus", "*attendre le bus*"],
+            ["look **for** my keys", "*chercher mes clés*"],
+            ["pay **for** the coffee", "*payer le café*"],
+            ["ask **for** the bill", "*demander l'addition*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "And the other way round",
+          "text": "Some verbs take *à* in French but nothing in English: *téléphoner {à} Paul* (phone Paul), *répondre {à} Marie* (answer Marie), *obéir {à} ses parents*, *ressembler {à} son père* (look like). And *parler {à}* (talk to) [[15]]."
+        }
+      ]
+    },
+    {
+      "id": "otra-preposicion",
+      "title": "Verbs with a different preposition",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "These verbs take a different preposition from English. Learn them as a block, verb + preposition."
+        },
+        {
+          "type": "table",
+          "head": ["English", "French", "Example"],
+          "rows": [
+            ["think **about**", "*penser {à}*", "*Je pense à toi.*"],
+            ["dream **about / of**", "*rêver {de}*", "*Elle rêve de voyager.*"],
+            ["trust (someone)", "*faire confiance {à}*", "*Je fais confiance à mes amis.*"],
+            ["marry (someone)", "*épouser* (direct) · *se marier {avec}*", "*Il a épousé Claire.*"],
+            ["play (an instrument)", "*jouer {de}*", "*Il joue de la guitare.*"],
+            ["play (a sport, a game)", "*jouer {à}*", "*Nous jouons au tennis.*"],
+            ["call, phone", "*appeler* (direct) · *téléphoner {à}*", "*J'appelle Paul. Je téléphone à Paul.*"],
+            ["remember", "*se souvenir {de}* · *se rappeler* (direct)", "*Je me souviens de lui. Je me rappelle ce jour.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Jouer à or jouer de",
+          "text": "If you play it (sport, game): *à*. If it makes music (instrument): *de*. Both merge with the article [[9]]: *jouer {au} foot, jouer {du} piano*."
+        }
+      ]
+    },
+    {
+      "id": "infinitivo",
+      "title": "Verb + de / à + infinitive",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English uses «to» before most infinitives («decide to go»). French uses **de** with many verbs, **à** with some, and **nothing** with others."
+        },
+        {
+          "type": "table",
+          "head": ["+ de", "+ à", "Nothing"],
+          "rows": [
+            ["*décider {de}* (decide to)", "*commencer {à}* (start to)", "*vouloir* (want to)"],
+            ["*oublier {de}* (forget to)", "*apprendre {à}* (learn to)", "*pouvoir* (can)"],
+            ["*essayer {de}* (try to)", "*aider {à}* (help to)", "*devoir* (must)"],
+            ["*arrêter {de}* (stop …ing)", "*réussir {à}* (manage to)", "*aimer, préférer* (like, prefer)"],
+            ["*promettre {de}* (promise to)", "*continuer {à}* (keep …ing)", "*aller, savoir*"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "J'ai décidé {d'}apprendre le français.", "tr": "I decided to learn French." },
+            { "fr": "N'oublie pas {de} fermer la porte.", "tr": "Don't forget to close the door." },
+            { "fr": "Il a réussi {à} trouver un travail.", "tr": "He managed to find a job." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Before a vowel, *de* becomes *d'*: *essayer {d'}ouvrir, arrêter {d'}écrire*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "sin-a",
+      "section": "a-personal",
+      "title": "With or without a preposition?",
+      "instructions": "Choose the right translation.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I'm listening to the radio.", "options": ["J'écoute la radio.", "J'écoute à la radio."], "answer": "J'écoute la radio." },
+        { "prompt": "I'm waiting for my brother.", "options": ["J'attends mon frère.", "J'attends à mon frère.", "J'attends pour mon frère."], "answer": "J'attends mon frère." },
+        { "prompt": "I'm looking for my keys.", "options": ["Je cherche mes clés.", "Je cherche pour mes clés."], "answer": "Je cherche mes clés." },
+        { "prompt": "I'm calling my father.", "options": ["J'appelle mon père.", "J'appelle à mon père."], "answer": "J'appelle mon père." },
+        { "prompt": "I'm talking to Marie.", "options": ["Je parle à Marie.", "Je parle Marie."], "answer": "Je parle à Marie.", "explain": "*parler* does take *à*, like «talk to»." },
+        { "prompt": "I'm looking at the photos.", "options": ["Je regarde les photos.", "Je regarde aux photos."], "answer": "Je regarde les photos." }
+      ]
+    },
+    {
+      "id": "preposicion",
+      "section": "otra-preposicion",
+      "title": "The right preposition",
+      "instructions": "Write à, de, au, du, de la or d'.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je pense souvent ___ toi.", "answer": "à" },
+        { "prompt": "Elle rêve ___ voyager au Japon.", "answer": "de" },
+        { "prompt": "Il joue ___ guitare depuis dix ans.", "answer": "de la" },
+        { "prompt": "Nous jouons ___ tennis le samedi.", "answer": "au" },
+        { "prompt": "Je téléphone ___ ma grand-mère tous les dimanches.", "answer": "à" },
+        { "prompt": "Tu te souviens ___ cette chanson ?", "answer": "de" },
+        { "prompt": "Je fais confiance ___ mes amis.", "answer": "à" },
+        { "prompt": "Mon fils joue ___ piano.", "answer": "du" }
+      ]
+    },
+    {
+      "id": "infinitivo",
+      "section": "infinitivo",
+      "title": "De or à",
+      "instructions": "Choose the preposition the verb needs.",
+      "kind": "choice",
+      "options": ["de", "à"],
+      "items": [
+        { "prompt": "J'ai décidé ___ partir.", "answer": "de" },
+        { "prompt": "Il a commencé ___ pleuvoir.", "answer": "à" },
+        { "prompt": "N'oublie pas ___ fermer la porte.", "answer": "de" },
+        { "prompt": "J'apprends ___ nager.", "answer": "à" },
+        { "prompt": "Elle essaie ___ dormir.", "answer": "de" },
+        { "prompt": "Tu m'aides ___ porter ce sac ?", "answer": "à" },
+        { "prompt": "Arrête ___ crier !", "answer": "de" },
+        { "prompt": "Il a réussi ___ trouver un travail.", "answer": "à" },
+        { "prompt": "Nous avons promis ___ venir.", "answer": "de" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in French",
+      "instructions": "Translate the sentence.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I'm waiting for my sister.", "answer": "J'attends ma sœur." },
+        { "prompt": "I'm thinking about you. (tu)", "answer": "Je pense à toi." },
+        { "prompt": "I forgot to close the door.", "answer": "J'ai oublié de fermer la porte." },
+        { "prompt": "She plays the piano.", "answer": "Elle joue du piano." },
+        { "prompt": "I want to learn to cook.", "answer": "Je veux apprendre à cuisiner.", "accept": ["Je voudrais apprendre à cuisiner.", "Je veux apprendre à faire la cuisine."] },
+        { "prompt": "I listen to my parents.", "answer": "J'écoute mes parents." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I drop the English preposition with *écouter, regarder, attendre, chercher, payer*.",
+    "I use *penser à, rêver de, faire confiance à, jouer à / de*.",
+    "I know which verbs take *de* or *à* before an infinitive.",
+    "I use *vouloir, pouvoir, aimer* + infinitive with no preposition."
+  ],
+  "challenge": {
+    "title": "Your resolutions",
+    "text": "Write five resolutions for this year with verbs from this module: *J'ai décidé d'arrêter de fumer. Je vais essayer de lire plus. Je veux apprendre à jouer de la guitare. Je dois penser à appeler ma grand-mère.*"
+  }
+}

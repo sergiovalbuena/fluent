@@ -1,0 +1,199 @@
+{
+  "slug": "imperativo",
+  "number": 21,
+  "part": 5,
+  "level": "A2",
+  "title": "The imperative",
+  "tagline": "Giving orders, advice and instructions, positive and negative.",
+  "goal": "Form the imperative of any verb, know the four irregular ones, make it negative and place the pronouns.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "Three persons, no subject",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English has one imperative («Speak!»). French has **three**: *tu* (one person you know well), *vous* (several people, or polite) and *nous* (= «let's»). Take the **present** tense [[5]] and drop the subject."
+        },
+        {
+          "type": "conjugation",
+          "persons": ["(tu)", "(nous)", "(vous)"],
+          "verbs": [
+            { "verb": "parler", "meaning": "to speak", "forms": ["parl{e} !", "parl{ons} !", "parl{ez} !"] },
+            { "verb": "finir", "meaning": "to finish", "forms": ["fin{is} !", "finiss{ons} !", "finiss{ez} !"] },
+            { "verb": "prendre", "meaning": "to take", "forms": ["prend{s} !", "pren{ons} !", "pren{ez} !"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "-er verbs lose their s",
+          "text": "*tu parles* → *{Parle} !* · *tu manges* → *{Mange} !* · *tu vas* → *{Va} !* Same with *ouvrir* and *offrir*: *{Ouvre} la porte !*"
+        },
+        {
+          "type": "text",
+          "text": "The s comes back before *y* and *en* [[16]], for the sound: *{Vas-y} ! · Parles-en à ton père.*"
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "The four irregular ones",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Verb", "tu", "nous", "vous"],
+          "rows": [
+            ["*être*", "*sois*", "*soyons*", "*soyez*"],
+            ["*avoir*", "*aie*", "*ayons*", "*ayez*"],
+            ["*savoir*", "*sache*", "*sachons*", "*sachez*"],
+            ["*vouloir*", "—", "—", "*veuillez*"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Sois} patient.", "tr": "Be patient." },
+            { "fr": "N'{aie} pas peur !", "tr": "Don't be afraid!", "note": "French «has» fear: avoir peur" },
+            { "fr": "{Veuillez} patienter.", "tr": "Please wait.", "note": "very formal: announcements, emails" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negativo",
+      "title": "Negative orders",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "No «don't» to add: just wrap the verb in *ne… pas* [[12]], as in any other sentence."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Parle ! → {Ne} parle {pas} !", "tr": "Speak! → Don't speak!" },
+            { "fr": "Touchez ça ! → {Ne} touchez {pas} ça !", "tr": "Touch that! → Don't touch that!" },
+            { "fr": "Oublie ! → {N'}oublie {pas} !", "tr": "Forget! → Don't forget!" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronombres",
+      "title": "Where the pronouns go",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In a **positive** order, the pronoun goes **after** the verb, as in English («Take it!»), joined with a hyphen. In a **negative** order it goes back **in front** [[15]]."
+        },
+        {
+          "type": "table",
+          "head": ["Positive", "Negative"],
+          "rows": [
+            ["*Prends{-le} !* (Take it!)", "*Ne {le} prends pas !*"],
+            ["*Dis{-lui} la vérité.* (Tell him / her)", "*Ne {lui} dis pas.*"],
+            ["*Regarde{-moi} !* (Look at me!)", "*Ne {me} regarde pas !*"],
+            ["*Lève{-toi} !* (Get up!)", "*Ne {te} lève pas !*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Me and te become moi and toi",
+          "text": "Only in positive orders, at the end: *Assieds{-toi}. Excusez{-moi}.* That's why reflexive verbs [[17]] give *Lève-toi*, *Dépêchez-vous* (Hurry up)."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "forma",
+      "section": "formas",
+      "title": "Form the imperative",
+      "instructions": "Write the verb in the imperative for the person given.",
+      "kind": "type",
+      "items": [
+        { "prompt": "___ la porte, s'il te plaît. (fermer, tu)", "answer": "Ferme" },
+        { "prompt": "___ vos livres. (ouvrir, vous)", "answer": "Ouvrez" },
+        { "prompt": "___ ensemble ! (chanter, nous)", "answer": "Chantons" },
+        { "prompt": "___ tes devoirs. (finir, tu)", "answer": "Finis" },
+        { "prompt": "___ le bus 12. (prendre, vous)", "answer": "Prenez" },
+        { "prompt": "___ à la boulangerie ! (aller, tu)", "answer": "Va" },
+        { "prompt": "___ de l'eau. (boire, tu)", "answer": "Bois" },
+        { "prompt": "___ vite, on est en retard ! (venir, vous)", "answer": "Venez" }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "section": "irregulares",
+      "title": "Être, avoir, savoir, vouloir",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "___ sages, les enfants ! (être, vous)", "options": ["Soyez", "Êtes", "Soyons"], "answer": "Soyez" },
+        { "prompt": "N'___ pas peur ! (avoir, tu)", "options": ["aie", "as", "ayez"], "answer": "aie" },
+        { "prompt": "___ patient avec lui. (être, tu)", "options": ["Sois", "Es", "Soit"], "answer": "Sois" },
+        { "prompt": "___ que je suis là pour toi. (savoir, tu)", "options": ["Sache", "Sais", "Sachez"], "answer": "Sache" },
+        { "prompt": "___ du courage ! (avoir, vous)", "options": ["Ayez", "Avez", "Aie"], "answer": "Ayez" },
+        { "prompt": "___ patienter quelques minutes. (vouloir, formal)", "options": ["Veuillez", "Voulez", "Veux"], "answer": "Veuillez" }
+      ]
+    },
+    {
+      "id": "negativo",
+      "section": "negativo",
+      "title": "Make it negative",
+      "instructions": "Write the order in the negative.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Parle fort !", "answer": "Ne parle pas fort !" },
+        { "prompt": "Touchez ça !", "answer": "Ne touchez pas ça !" },
+        { "prompt": "Sois triste !", "answer": "Ne sois pas triste !" },
+        { "prompt": "Allons au cinéma !", "answer": "N'allons pas au cinéma !" },
+        { "prompt": "Oublie ton passeport !", "answer": "N'oublie pas ton passeport !" }
+      ]
+    },
+    {
+      "id": "pronombres",
+      "section": "pronombres",
+      "title": "With pronouns",
+      "instructions": "Turn the advice into an order. Choose the right form.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Tu dois te lever.", "options": ["Lève-toi !", "Lève-te !", "Te lève !"], "answer": "Lève-toi !" },
+        { "prompt": "Vous devez me regarder.", "options": ["Regardez-moi !", "Me regardez !", "Regardez-me !"], "answer": "Regardez-moi !" },
+        { "prompt": "Tu dois le prendre.", "options": ["Prends-le !", "Le prends !", "Prends-lui !"], "answer": "Prends-le !" },
+        { "prompt": "Tu ne dois pas t'inquiéter.", "options": ["Ne t'inquiète pas !", "Ne inquiète-toi pas !", "Inquiète-toi pas !"], "answer": "Ne t'inquiète pas !" },
+        { "prompt": "Vous ne devez pas le toucher.", "options": ["Ne le touchez pas !", "Ne touchez-le pas !", "Touchez-le pas !"], "answer": "Ne le touchez pas !" },
+        { "prompt": "Tu dois lui dire la vérité.", "options": ["Dis-lui la vérité !", "Lui dis la vérité !", "Dis-toi la vérité !"], "answer": "Dis-lui la vérité !" }
+      ]
+    },
+    {
+      "id": "receta",
+      "section": "final",
+      "title": "A recipe",
+      "instructions": "Recipes use vous. Write the verb in the imperative.",
+      "kind": "type",
+      "items": [
+        { "prompt": "___ le four à 180 degrés. (préchauffer)", "answer": "Préchauffez" },
+        { "prompt": "___ les œufs dans un bol. (casser)", "answer": "Cassez" },
+        { "prompt": "___ le sucre et la farine. (ajouter)", "answer": "Ajoutez" },
+        { "prompt": "___ bien. (mélanger)", "answer": "Mélangez" },
+        { "prompt": "N'___ pas la porte du four ! (ouvrir)", "answer": "ouvrez" },
+        { "prompt": "___ trente minutes. (attendre)", "answer": "Attendez" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the imperative with *tu, nous, vous* from the present tense.",
+    "I drop the s of *tu* in -er verbs (*Parle !*).",
+    "I know *sois, aie, sache, veuillez*.",
+    "I put pronouns after the verb in positive orders and before it in negative ones."
+  ],
+  "challenge": {
+    "title": "Your recipe",
+    "text": "Write your favourite recipe in five or six steps with the *vous* imperative: *Coupez les oignons. Ajoutez le riz. Ne mélangez pas trop.* Then give three tips to a friend starting French, with *tu*: *Écoute des podcasts. N'aie pas peur de parler.*"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "slug": "mensajes",
+  "number": 29,
+  "part": 7,
+  "level": "B1",
+  "title": "Texting in French",
+  "tagline": "mdr, tkt, jsp: abbreviations and the informal French of WhatsApp.",
+  "goal": "Understand the most common texting abbreviations, recognise informal grammar (no ne, t'es, y a) and know when to use each register.",
+  "minutes": 9,
+  "sections": [
+    {
+      "id": "abreviaturas",
+      "title": "The abbreviations",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Like English («lol», «idk», «brb»), French shortens words in text messages. These are the ones you'll see every day:"
+        },
+        {
+          "type": "table",
+          "head": ["Abbreviation", "Full form", "English"],
+          "rows": [
+            ["**slt** · **cc** · **bjr**", "*salut* · *coucou* · *bonjour*", "hi"],
+            ["**mdr** · **ptdr**", "*mort de rire* · *pété de rire*", "lol"],
+            ["**stp** · **svp**", "*s'il te plaît* · *s'il vous plaît*", "please"],
+            ["**dsl**", "*désolé(e)*", "sorry"],
+            ["**tkt**", "*t'inquiète (pas)*", "don't worry"],
+            ["**jsp**", "*je (ne) sais pas*", "idk"],
+            ["**pk** · **pq** · **pcq**", "*pourquoi* · *parce que*", "why · because"],
+            ["**bcp** · **tt** · **qd**", "*beaucoup* · *tout* · *quand*", "a lot · all · when"],
+            ["**mtn** · **auj**", "*maintenant* · *aujourd'hui*", "now · today"],
+            ["**rdv**", "*rendez-vous*", "meeting, date"],
+            ["**a+** · **biz**", "*à plus (tard)* · *bisous*", "see you · kisses (xx)"],
+            ["**c** · **t** · **g**", "*c'est* · *t'es* · *j'ai*", "it's · you're · I have"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Many use the **sound** of the letters in French: *c* = «say» = *c'est*, *g* = «zhay» = *j'ai*. Read them aloud and the word appears."
+        }
+      ]
+    },
+    {
+      "id": "oral",
+      "title": "Informal grammar",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Texts copy **spoken** French, which simplifies several things:"
+        },
+        {
+          "type": "table",
+          "head": ["Informal", "Standard", "What changes"],
+          "rows": [
+            ["*Je sais pas.*", "*Je {ne} sais pas.*", "The *ne* of the negation drops [[12]]"],
+            ["*T'es où ? T'as faim ?*", "*Tu es où ? Tu as faim ?*", "*tu* shortens before a vowel"],
+            ["*Y a pas de souci.*", "*{Il n'}y a pas de souci.*", "*il* drops (and the *ne*)"],
+            ["*Chui fatigué.*", "*Je suis fatigué.*", "*je suis* sounds like «shwee»"],
+            ["*On y va ?*", "*Nous y allons ?*", "*on* replaces *nous*"],
+            ["*Tu viens ?*", "*Viens-tu ?*", "Questions without inversion [[11]]"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "In speech, almost every French person says *je sais pas* and *on*. It's normal among friends, but write the standard form in an email or an exam."
+        }
+      ]
+    },
+    {
+      "id": "registro",
+      "title": "When to use it",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Friends and family", "Work, official, strangers"],
+          "rows": [
+            ["*Cc ! Tu fais quoi ce soir ?*", "*Bonjour Madame, …*"],
+            ["*Dsl, chui en retard !*", "*Je vous prie de m'excuser pour ce retard.*"],
+            ["*Merci ! Biz*", "*Merci beaucoup. Cordialement,*"],
+            ["*tu*", "*vous*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Careful with «bisous»",
+          "text": "*Bisous* and *biz* are for friends and family. For colleagues, *Bonne journée* or *À bientôt*; for a formal email, *Cordialement* (Kind regards)."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "descifra",
+      "section": "abreviaturas",
+      "title": "What does it mean?",
+      "instructions": "Choose the full form of the abbreviation.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "mdr", "options": ["mort de rire", "merci de répondre", "mais de rien"], "answer": "mort de rire" },
+        { "prompt": "stp", "options": ["s'il te plaît", "s'il vous plaît", "sans te presser"], "answer": "s'il te plaît" },
+        { "prompt": "tkt", "options": ["t'inquiète", "t'es quitte", "tu quittes"], "answer": "t'inquiète" },
+        { "prompt": "dsl", "options": ["désolé", "dis salut", "des sels"], "answer": "désolé" },
+        { "prompt": "jsp", "options": ["je sais pas", "je suis prêt", "j'en suis pas"], "answer": "je sais pas" },
+        { "prompt": "bcp", "options": ["beaucoup", "bientôt", "bon courage"], "answer": "beaucoup" },
+        { "prompt": "rdv", "options": ["rendez-vous", "rendre visite", "revenez"], "answer": "rendez-vous" },
+        { "prompt": "pk", "options": ["pourquoi", "parce que", "pas question"], "answer": "pourquoi" }
+      ]
+    },
+    {
+      "id": "completa",
+      "section": "abreviaturas",
+      "title": "Write it in full",
+      "instructions": "Write the full word.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "slt → ___", "answer": "salut" },
+        { "prompt": "qd → ___", "answer": "quand" },
+        { "prompt": "mtn → ___", "answer": "maintenant" },
+        { "prompt": "pcq → ___", "answer": "parce que" },
+        { "prompt": "auj → ___", "answer": "aujourd'hui" },
+        { "prompt": "a+ → ___", "answer": "à plus", "accept": ["à plus tard"] }
+      ]
+    },
+    {
+      "id": "estandar",
+      "section": "oral",
+      "title": "From text to standard",
+      "instructions": "Write the sentence in standard French.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Je sais pas.", "answer": "Je ne sais pas." },
+        { "prompt": "T'as faim ?", "answer": "Tu as faim ?", "accept": ["As-tu faim ?", "Est-ce que tu as faim ?"] },
+        { "prompt": "Y a pas de problème.", "answer": "Il n'y a pas de problème." },
+        { "prompt": "C'est pas grave.", "answer": "Ce n'est pas grave." },
+        { "prompt": "J'ai rien compris.", "answer": "Je n'ai rien compris." },
+        { "prompt": "Chui fatigué.", "answer": "Je suis fatigué.", "accept": ["Je suis fatiguée."] }
+      ]
+    },
+    {
+      "id": "registro",
+      "section": "registro",
+      "title": "The right message",
+      "instructions": "Choose the message that fits the situation.",
+      "kind": "choice",
+      "speak": "none",
+      "items": [
+        { "prompt": "You tell your boss you're running late.", "options": ["Bonjour Madame Martin, je serai en retard de dix minutes. Bonne journée.", "Slt, chui en retard, dsl !"], "answer": "Bonjour Madame Martin, je serai en retard de dix minutes. Bonne journée." },
+        { "prompt": "You text your best friend.", "options": ["Cc ! Tu fais quoi ce soir ?", "Madame, Monsieur, je me permets de vous écrire…"], "answer": "Cc ! Tu fais quoi ce soir ?" },
+        { "prompt": "A friend thanks you.", "options": ["De rien ! Biz", "Je vous en prie, Monsieur."], "answer": "De rien ! Biz" },
+        { "prompt": "You write to the university office.", "options": ["Bonjour, je voudrais savoir si mon dossier est complet. Cordialement.", "Slt, pk mon dossier il est pas arrivé ?"], "answer": "Bonjour, je voudrais savoir si mon dossier est complet. Cordialement." }
+      ]
+    },
+    {
+      "id": "entiende",
+      "section": "final",
+      "title": "Read the message",
+      "instructions": "Choose what the message says.",
+      "kind": "choice",
+      "speak": "none",
+      "items": [
+        { "prompt": "Dsl, chui en retard, j'arrive dans 5 min", "options": ["Sorry, I'm late, I'll be there in 5 minutes.", "Sorry, I'm not coming after all.", "I'm here, waiting at the door."], "answer": "Sorry, I'm late, I'll be there in 5 minutes." },
+        { "prompt": "Tkt, c pas grave", "options": ["Don't worry, it's no big deal.", "I love you so much.", "I don't know what's going on."], "answer": "Don't worry, it's no big deal." },
+        { "prompt": "On se voit auj ou demain ?", "options": ["Shall we meet today or tomorrow?", "Did we see each other yesterday?", "Are you coming for dinner today?"], "answer": "Shall we meet today or tomorrow?" },
+        { "prompt": "Mdr t trop drôle", "options": ["Lol, you're so funny.", "I'm dying, I'm ill.", "You're way too weird."], "answer": "Lol, you're so funny." },
+        { "prompt": "Jsp pk il m'a pas répondu", "options": ["Idk why he didn't answer me.", "I know why he didn't answer me.", "He doesn't know how to answer."], "answer": "Idk why he didn't answer me." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I understand *mdr, tkt, dsl, jsp, stp, bcp, rdv, pk*.",
+    "I recognise informal French: *je sais pas, t'es, y a, chui, on*.",
+    "I can turn an informal message into standard French.",
+    "I choose the register depending on who I'm writing to."
+  ],
+  "challenge": {
+    "title": "Your first chat",
+    "text": "Write a short chat (six messages) between two friends making plans for the weekend, using at least five abbreviations. Then write the same conversation as a formal email to someone you don't know."
+  }
+}

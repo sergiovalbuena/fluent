@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Clock, GraduationCap, ListChecks, Trophy } from 'lucide-react'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { useGrammarIndex } from '@/components/grammar/use-grammar'
-import { StatusChip } from '@/components/grammar/status-chip'
+import { LevelChip, StatusChip } from '@/components/grammar/status-chip'
 import { GemChip } from '@/components/practice/reward-chips'
 import { getLanguage } from '@/lib/languages'
 import { MASTERY, gemsLeft, masteredCount, moduleStatus, type GrammarIndexEntry, type ModuleProgress, type ModuleStatus } from '@/lib/grammar'
@@ -158,7 +158,10 @@ function ModuleCard({ module: m, progress, status, span }: { module: GrammarInde
           )}>
             {String(m.number).padStart(2, '0')}
           </span>
-          <StatusChip status={status} />
+          <span className="flex items-center gap-1.5">
+            <StatusChip status={status} />
+            <LevelChip level={m.level} />
+          </span>
         </span>
         <span className="flex-1">
           <span className="block text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-300">{m.title}</span>

@@ -178,7 +178,10 @@
     "correct_short": "Correct !",
     "next_phrase": "Suivante",
     "next_round": "Manche suivante",
-    "done": "Terminé !"
+    "done": "Terminé !",
+    "show_translation": "Voir la traduction",
+    "hide_translation": "Masquer la traduction",
+    "listen": "Écouter"
   },
   "gems": {
     "title": "Gemmes",
@@ -849,7 +852,8 @@
     "rw_repeat": "Refaire ou révision mixte",
     "rw_module": "Maîtriser le module",
     "rewards_left_label": "Restant",
-    "module_bonus": "Bonus du module"
+    "module_bonus": "Bonus du module",
+    "level_hint": "Niveau {level} du CECRL"
   },
   "community": {
     "title": "Communauté",

@@ -1,0 +1,237 @@
+{
+  "slug": "preposiciones-lugar",
+  "number": 20,
+  "part": 5,
+  "level": "A1",
+  "title": "Prepositions of place",
+  "tagline": "Where things are, chez, cities, countries and transport.",
+  "goal": "Say where things and people are, use chez, choose à, en, au or aux with cities and countries, and say how you travel.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "posicion",
+      "title": "Where is it?",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["French", "English", "Example"],
+          "rows": [
+            ["*sur*", "on", "*Les clés sont {sur} la table.*"],
+            ["*sous*", "under", "*Le chat est {sous} le lit.*"],
+            ["*dans*", "in, inside", "*Le lait est {dans} le frigo.*"],
+            ["*devant*", "in front of", "*Je t'attends {devant} le cinéma.*"],
+            ["*derrière*", "behind", "*Le jardin est {derrière} la maison.*"],
+            ["*entre*", "between", "*La poste est {entre} la banque et le café.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "One word each",
+          "text": "«in front **of**» is just *devant*: no *de* after these six. *devant le cinéma*, never «devant de le cinéma»."
+        },
+        {
+          "type": "text",
+          "text": "*Sur* and *sous* are easy to mix up. Think of *sous-marin* (submarine) and *sous-sol* (basement): what's underneath is *sous*."
+        }
+      ]
+    },
+    {
+      "id": "contracciones",
+      "title": "The ones with de",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["French", "English"],
+          "rows": [
+            ["*à côté de*", "next to"],
+            ["*en face de*", "opposite, across from"],
+            ["*près de* · *loin de*", "near · far from"],
+            ["*au milieu de*", "in the middle of"],
+            ["*au fond de*", "at the back / bottom of"],
+            ["*à gauche de* · *à droite de*", "to the left of · to the right of"]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "That *de* merges with the article, like the *à* in [[9]]:"
+        },
+        {
+          "type": "formula",
+          "text": "de + le = du · de + les = des · de la and de l' don't change"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "J'habite en face {du} parc.", "tr": "I live opposite the park." },
+            { "fr": "La gare est près {de la} poste.", "tr": "The station is near the post office." },
+            { "fr": "Le bus s'arrête à côté {des} magasins.", "tr": "The bus stops next to the shops." },
+            { "fr": "C'est à côté {de l'}hôtel.", "tr": "It's next to the hotel." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paises",
+      "title": "Cities and countries",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English uses «in» for being there and «to» for going. French uses **the same word** for both, but it depends on the place:"
+        },
+        {
+          "type": "table",
+          "head": ["Place", "Preposition", "Example"],
+          "rows": [
+            ["City", "*à*", "*J'habite {à} Paris. Je vais {à} Londres.*"],
+            ["Feminine country (almost all ending in -e)", "*en*", "*{en} France, {en} Angleterre, {en} Espagne*"],
+            ["Masculine country starting with a vowel", "*en*", "*{en} Iran, {en} Irak*"],
+            ["Masculine country", "*au*", "*{au} Canada, {au} Japon, {au} Pérou*"],
+            ["Plural country", "*aux*", "*{aux} États-Unis, {aux} Pays-Bas*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*Je suis en France* (I'm in France) and *Je vais en France* (I'm going to France): same preposition."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Exceptions ending in -e",
+          "text": "A few countries end in -e but are masculine: *le Mexique, le Cambodge, le Mozambique*. So: *{au} Mexique*."
+        },
+        {
+          "type": "text",
+          "text": "**To say where you come from**, *de* merges the same way: *Je viens {de} France, {du} Canada, {des} États-Unis, {de} Londres*."
+        }
+      ]
+    },
+    {
+      "id": "chez",
+      "title": "Chez and transport",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Chez* means «at / to someone's place», like the English «at the doctor's». It always goes with a **person**, never with a place."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Je rentre {chez} moi.", "tr": "I'm going home." },
+            { "fr": "On dîne {chez} Marie.", "tr": "We're having dinner at Marie's." },
+            { "fr": "J'ai rendez-vous {chez} le dentiste.", "tr": "I have an appointment at the dentist's." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "À or chez?",
+          "text": "*à la boulangerie* (the place) = *chez le boulanger* (the person): both «at the baker's»."
+        },
+        {
+          "type": "table",
+          "head": ["You sit inside: en", "You sit on top: à"],
+          "rows": [
+            ["*{en} voiture, {en} bus, {en} train* (by car, bus, train)", "*{à} pied, {à} vélo, {à} moto* (on foot, by bike)"],
+            ["*{en} avion, {en} métro*", "*{à} cheval* (on horseback)"]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "donde-esta",
+      "section": "posicion",
+      "title": "Where is it?",
+      "instructions": "Choose the preposition that matches the hint.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Les clés sont ___ la table. (on)", "options": ["sur", "sous", "dans"], "answer": "sur" },
+        { "prompt": "Le chat dort ___ le lit. (under)", "options": ["sur", "sous", "dans"], "answer": "sous" },
+        { "prompt": "Le lait est ___ le frigo. (inside)", "options": ["sur", "sous", "dans"], "answer": "dans" },
+        { "prompt": "La pharmacie est ___ la banque et la poste.", "options": ["entre", "devant", "derrière"], "answer": "entre" },
+        { "prompt": "Je t'attends ___ le cinéma. (in front of)", "options": ["devant", "derrière", "entre"], "answer": "devant" },
+        { "prompt": "Le jardin est ___ la maison. (behind)", "options": ["devant", "derrière", "sur"], "answer": "derrière" }
+      ]
+    },
+    {
+      "id": "contraccion",
+      "section": "contracciones",
+      "title": "Du, de la, de l', des",
+      "instructions": "Write du, de la, de l' or des.",
+      "kind": "type",
+      "items": [
+        { "prompt": "La gare est à côté ___ hôtel.", "answer": "de l'" },
+        { "prompt": "J'habite en face ___ parc.", "answer": "du" },
+        { "prompt": "Le café est près ___ gare.", "answer": "de la" },
+        { "prompt": "Il y a un banc au milieu ___ jardin.", "answer": "du" },
+        { "prompt": "On s'assoit au fond ___ salle.", "answer": "de la" },
+        { "prompt": "Le bus s'arrête en face ___ magasins.", "answer": "des" },
+        { "prompt": "La plage est loin ___ centre-ville.", "answer": "du" }
+      ]
+    },
+    {
+      "id": "paises",
+      "section": "paises",
+      "title": "À, en, au or aux",
+      "instructions": "Choose the preposition for the city or country.",
+      "kind": "choice",
+      "options": ["à", "en", "au", "aux"],
+      "items": [
+        { "prompt": "J'habite ___ Lyon.", "answer": "à" },
+        { "prompt": "Elle travaille ___ Canada.", "answer": "au" },
+        { "prompt": "Nous partons ___ Italie.", "answer": "en" },
+        { "prompt": "Ils vivent ___ États-Unis.", "answer": "aux" },
+        { "prompt": "Tu vas ___ Japon cet été ?", "answer": "au" },
+        { "prompt": "Mon cousin habite ___ Mexique.", "answer": "au", "explain": "*le Mexique* is masculine even though it ends in -e." },
+        { "prompt": "On passe une semaine ___ Espagne.", "answer": "en" },
+        { "prompt": "Je suis né ___ Bogotá.", "answer": "à" },
+        { "prompt": "Ils voyagent ___ Pays-Bas.", "answer": "aux" },
+        { "prompt": "Elle étudie ___ Iran.", "answer": "en", "explain": "*l'Iran* is masculine but starts with a vowel: *en*." }
+      ]
+    },
+    {
+      "id": "chez-transporte",
+      "section": "chez",
+      "title": "Chez, en or à",
+      "instructions": "Choose the right option.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Ce soir, on dîne ___ mes parents.", "options": ["chez", "à", "dans"], "answer": "chez" },
+        { "prompt": "J'ai rendez-vous ___ le coiffeur.", "options": ["chez", "à", "au"], "answer": "chez" },
+        { "prompt": "Je vais au travail ___ vélo.", "options": ["à", "en", "dans"], "answer": "à" },
+        { "prompt": "Ils partent ___ train.", "options": ["en", "à", "dans"], "answer": "en" },
+        { "prompt": "Je rentre ___ moi.", "options": ["chez", "à", "dans"], "answer": "chez" },
+        { "prompt": "On y va ___ pied ?", "options": ["à", "en", "sur"], "answer": "à" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in French",
+      "instructions": "Translate the sentence.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "The cat is under the table.", "answer": "Le chat est sous la table." },
+        { "prompt": "I live near the station.", "answer": "J'habite près de la gare." },
+        { "prompt": "She works in Canada.", "answer": "Elle travaille au Canada." },
+        { "prompt": "We're going to Marie's.", "answer": "On va chez Marie.", "accept": ["Nous allons chez Marie."] },
+        { "prompt": "The bank is opposite the hotel.", "answer": "La banque est en face de l'hôtel." },
+        { "prompt": "I'm going to Italy by train.", "answer": "Je vais en Italie en train." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I say where something is with *sur, sous, dans, devant, derrière, entre*.",
+    "I use *à côté de, en face de, près de* with *du* and *des*.",
+    "I choose *à, en, au, aux* with cities and countries.",
+    "I use *chez* with people and say how I travel (*en train, à pied*)."
+  ],
+  "challenge": {
+    "title": "Your neighbourhood",
+    "text": "Describe in five sentences where your home is and what's around it: *J'habite à Manchester, près du parc. En face de chez moi, il y a une boulangerie.* End with a country you'd like to visit and how you'd go: *Je voudrais aller au Japon en avion.*"
+  }
+}

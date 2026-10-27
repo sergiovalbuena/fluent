@@ -20,15 +20,24 @@ const PARTS = {
       { number: 2, title: 'El presente', description: 'Conjugar, hablar de comida y cantidades, contar y decir de quién es cada cosa.' },
       { number: 3, title: 'Contar, preguntar, describir', description: 'El pasado, las preguntas, la negación y los adjetivos.' },
       { number: 4, title: 'Sonar natural', description: 'La liaison, los pronombres, los verbos pronominales y el imparfait.' },
+      { number: 5, title: 'Comparar, orientarse, planear', description: 'Comparativos, preposiciones de lugar, el imperativo, la obligación y el futuro.' },
+      { number: 6, title: 'Afinar el nivel', description: 'Pronombres posesivos, cuándo usar cada pasado y los verbos que cambian de preposición.' },
+      { number: 7, title: 'Trampas y detalles', description: 'Palabras que cambian de género, acentos, la h aspirada y el francés de los mensajes.' },
     ],
     en: [
       { number: 1, title: 'Sounds and basics', description: 'How French sounds, the gender of words and the two essential verbs.' },
       { number: 2, title: 'The present', description: 'Conjugating, talking about food and quantities, numbers and saying whose things are.' },
       { number: 3, title: 'Telling, asking, describing', description: 'The past, questions, negation and adjectives.' },
       { number: 4, title: 'Sounding natural', description: 'Liaison, pronouns, reflexive verbs and the imparfait.' },
+      { number: 5, title: 'Comparing, finding your way, planning', description: 'Comparatives, prepositions of place, the imperative, obligation and the future.' },
+      { number: 6, title: 'Fine-tuning', description: 'Possessive pronouns, which past tense to use and verbs that take a different preposition.' },
+      { number: 7, title: 'Traps and details', description: 'Tricky genders, accents, the aspirated h and the French of text messages.' },
     ],
   },
 }
+
+// CEFR levels a module can have
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1']
 
 const errors = []
 const results = {}
@@ -62,9 +71,10 @@ function processFolder(expl) {
     const at = file
     if (!file.startsWith(String(m.number).padStart(2, '0'))) errors.push(`${at}: number ${m.number} does not match the file name`)
     if (!file.endsWith(`-${m.slug}.json`)) errors.push(`${at}: slug ${m.slug} does not match the file name`)
-    for (const key of ['title', 'tagline', 'goal', 'minutes', 'part', 'sections', 'exercises', 'checklist']) {
+    for (const key of ['title', 'tagline', 'goal', 'minutes', 'part', 'level', 'sections', 'exercises', 'checklist']) {
       if (m[key] === undefined) errors.push(`${at}: missing ${key}`)
     }
+    if (m.level !== undefined && !LEVELS.includes(m.level)) errors.push(`${at}: level ${m.level} is not one of ${LEVELS.join(', ')}`)
     walk(at, m)
 
     const exIds = new Set()
@@ -107,6 +117,7 @@ function processFolder(expl) {
       slug: m.slug,
       number: m.number,
       part: m.part,
+      level: m.level,
       title: m.title,
       tagline: m.tagline,
       minutes: m.minutes,
@@ -123,7 +134,7 @@ for (const expl of explanations) processFolder(expl)
 
 // Same modules and exercises in every explanation language
 const [base, ...others] = explanations
-const shape = r => r.modules.map(({ data: m }) => `${m.slug}:${m.exercises.map(e => `${e.id}/${e.section}/${e.items.length}`).join(',')}:${m.checklist.length}`)
+const shape = r => r.modules.map(({ data: m }) => `${m.slug}:${m.part}:${m.level}:${m.exercises.map(e => `${e.id}/${e.section}/${e.items.length}`).join(',')}:${m.checklist.length}`)
 for (const other of others) {
   const a = shape(results[base]), b = shape(results[other])
   a.forEach((x, i) => { if (x !== b[i]) errors.push(`${base} ≠ ${other}: ${x}  vs  ${b[i] ?? '(missing)'}`) })

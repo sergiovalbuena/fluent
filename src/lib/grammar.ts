@@ -57,10 +57,14 @@ export type GrammarExercise = {
   items: ExerciseItem[]
 }
 
+/** CEFR level of a module */
+export type GrammarLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1'
+
 export type GrammarModule = {
   slug: string
   number: number
   part: number
+  level: GrammarLevel
   title: string
   tagline: string
   goal: string
@@ -76,6 +80,7 @@ export type GrammarIndexEntry = {
   slug: string
   number: number
   part: number
+  level: GrammarLevel
   title: string
   tagline: string
   minutes: number
@@ -289,7 +294,15 @@ const LESSON_LINKS: { match: RegExp; slug: string; number: number }[] = [
   { match: /adjectifs? démonstratifs?/i, slug: 'demostrativos', number: 3 },
   { match: /nombres cardinaux/i, slug: 'numeros', number: 7 },
   { match: /^futur proche( \/ futur simple)?$/i, slug: 'verbos-irregulares', number: 9 },
-  { match: /^(comparatif|superlatif)$|couleur/i, slug: 'adjetivos', number: 13 },
+  { match: /^(comparatif|superlatif)( avec un verbe)?$|^meilleur \/ mieux$|^plus de … que$/i, slug: 'comparativos', number: 19 },
+  { match: /couleur/i, slug: 'adjetivos', number: 13 },
+  { match: /prépositions (de lieu|\+ pays)|genre des pays/i, slug: 'preposiciones-lugar', number: 20 },
+  { match: /^impératif/i, slug: 'imperativo', number: 21 },
+  { match: /^il faut \+ infinitif$|^devoir (\+ infinitif|\(obligation)/i, slug: 'obligacion', number: 22 },
+  { match: /^futur simple|^futurs irréguliers$/i, slug: 'futur-simple', number: 23 },
+  { match: /pronoms possessifs/i, slug: 'pronombres-posesivos', number: 24 },
+  { match: /^(passé composé \/ imparfait|imparfait \/ passé composé|imparfait \+ passé composé)/i, slug: 'pc-imparfait', number: 25 },
+  { match: /^jouer (à \/ faire de|de \+ instrument)$/i, slug: 'verbos-preposicion', number: 26 },
   { match: /pronoms? « ?(y|en)/i, slug: 'en-y', number: 16 },
   { match: /ne … que|négation \+ de/i, slug: 'negacion', number: 12 },
   { match: /verbes pronominaux|s'appeler/i, slug: 'pronominales', number: 17 },

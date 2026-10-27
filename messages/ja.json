@@ -178,7 +178,10 @@
     "correct_short": "正解！",
     "next_phrase": "次へ",
     "next_round": "次のラウンド",
-    "done": "完了！"
+    "done": "完了！",
+    "show_translation": "翻訳を表示",
+    "hide_translation": "翻訳を隠す",
+    "listen": "聞く"
   },
   "gems": {
     "title": "ジェム",
@@ -849,7 +852,8 @@
     "rw_repeat": "繰り返し・ミックス復習",
     "rw_module": "モジュールをマスター",
     "rewards_left_label": "残り",
-    "module_bonus": "モジュールボーナス"
+    "module_bonus": "モジュールボーナス",
+    "level_hint": "CEFRレベル {level}"
   },
   "community": {
     "title": "コミュニティ",

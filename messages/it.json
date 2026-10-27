@@ -178,7 +178,10 @@
     "correct_short": "Giusto!",
     "next_phrase": "Avanti",
     "next_round": "Round successivo",
-    "done": "Fatto!"
+    "done": "Fatto!",
+    "show_translation": "Mostra traduzione",
+    "hide_translation": "Nascondi traduzione",
+    "listen": "Ascolta"
   },
   "gems": {
     "title": "Gemme",
@@ -849,7 +852,8 @@
     "rw_repeat": "Ripetere o ripasso misto",
     "rw_module": "Padroneggiare il modulo",
     "rewards_left_label": "Restano",
-    "module_bonus": "Bonus del modulo"
+    "module_bonus": "Bonus del modulo",
+    "level_hint": "Livello {level} del QCER"
   },
   "community": {
     "title": "Community",

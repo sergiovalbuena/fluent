@@ -1,0 +1,184 @@
+{
+  "slug": "verbos-preposicion",
+  "number": 26,
+  "part": 6,
+  "level": "B1",
+  "title": "Verbos y preposiciones",
+  "tagline": "La «a» personal que desaparece, penser à, jouer de y décider de.",
+  "goal": "Quitar la «a» personal, usar la preposición correcta con los verbos que cambian respecto al español, y saber qué verbos llevan de o à antes de un infinitivo.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "a-personal",
+      "title": "Adiós a la «a» personal",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En español ponemos «a» delante de una persona: «veo **a** María». En francés **no existe**: el complemento va directo, sea persona o cosa."
+        },
+        {
+          "type": "table",
+          "head": ["Español", "Francés"],
+          "rows": [
+            ["Veo **a** María.", "*Je vois Marie.*"],
+            ["Llamo **a** mi madre.", "*J'appelle ma mère.*"],
+            ["Ayudo **a** mi hermano.", "*J'aide mon frère.*"],
+            ["Espero **a** Juan.", "*J'attends Jean.*"],
+            ["Escucho **a** mis padres.", "*J'écoute mes parents.*"],
+            ["Quiero **a** mi familia.", "*J'aime ma famille.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "¿Y cuando sí hay à?",
+          "text": "Hay *à* cuando el verbo la pide también en español (**dar algo a**, **hablar a**, **decir a**): *Je parle {à} Marie.* Eso es un COI [[15]], no la «a» personal."
+        }
+      ]
+    },
+    {
+      "id": "otra-preposicion",
+      "title": "Verbos que cambian de preposición",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Estos verbos llevan otra preposición distinta de la del español. Apréndelos como bloque, con su preposición."
+        },
+        {
+          "type": "table",
+          "head": ["Español", "Francés", "Ejemplo"],
+          "rows": [
+            ["pensar **en**", "*penser {à}*", "*Je pense à toi.*"],
+            ["soñar **con**", "*rêver {de}*", "*Elle rêve de voyager.*"],
+            ["confiar **en**", "*faire confiance {à}*", "*Je fais confiance à mes amis.*"],
+            ["casarse **con**", "*épouser* (directo) · *se marier {avec}*", "*Il a épousé Claire.*"],
+            ["tocar (un instrumento)", "*jouer {de}*", "*Il joue de la guitare.*"],
+            ["jugar a (un deporte)", "*jouer {à}*", "*Nous jouons au tennis.*"],
+            ["llamar (por teléfono) a", "*appeler* (directo) · *téléphoner {à}*", "*J'appelle Paul. Je téléphone à Paul.*"],
+            ["acordarse **de**", "*se souvenir {de}* · *se rappeler* (directo)", "*Je me souviens de lui. Je me rappelle ce jour.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Jouer à o jouer de",
+          "text": "Si se juega (deporte, juego): *à*. Si suena (instrumento): *de*. Y se contraen [[9]]: *jouer {au} foot, jouer {du} piano*."
+        }
+      ]
+    },
+    {
+      "id": "infinitivo",
+      "title": "Verbo + de / à + infinitivo",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "En español decimos «decidí ir», «olvidé llamar», sin nada en medio. En francés muchos verbos piden **de** antes del infinitivo, y algunos **à**."
+        },
+        {
+          "type": "table",
+          "head": ["+ de", "+ à", "Sin nada"],
+          "rows": [
+            ["*décider {de}* (decidir)", "*commencer {à}* (empezar a)", "*vouloir* (querer)"],
+            ["*oublier {de}* (olvidar)", "*apprendre {à}* (aprender a)", "*pouvoir* (poder)"],
+            ["*essayer {de}* (intentar)", "*aider {à}* (ayudar a)", "*devoir* (deber)"],
+            ["*arrêter {de}* (dejar de)", "*réussir {à}* (lograr)", "*aimer, préférer*"],
+            ["*promettre {de}* (prometer)", "*continuer {à}* (seguir)", "*aller, savoir*"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "J'ai décidé {d'}apprendre le français.", "tr": "Decidí aprender francés." },
+            { "fr": "N'oublie pas {de} fermer la porte.", "tr": "No olvides cerrar la puerta." },
+            { "fr": "Il a réussi {à} trouver un travail.", "tr": "Logró encontrar trabajo." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Delante de vocal, *de* se convierte en *d'*: *essayer {d'}ouvrir, arrêter {d'}écrire*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "sin-a",
+      "section": "a-personal",
+      "title": "¿Con o sin à?",
+      "instructions": "Elige la traducción correcta.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Veo a Marie.", "options": ["Je vois Marie.", "Je vois à Marie."], "answer": "Je vois Marie." },
+        { "prompt": "Espero a mi hermano.", "options": ["J'attends mon frère.", "J'attends à mon frère.", "J'attends pour mon frère."], "answer": "J'attends mon frère." },
+        { "prompt": "Ayudo a mi madre.", "options": ["J'aide ma mère.", "J'aide à ma mère."], "answer": "J'aide ma mère." },
+        { "prompt": "Llamo a mi padre.", "options": ["J'appelle mon père.", "J'appelle à mon père."], "answer": "J'appelle mon père." },
+        { "prompt": "Le hablo a Marie.", "options": ["Je parle à Marie.", "Je parle Marie."], "answer": "Je parle à Marie.", "explain": "*parler* sí pide *à*: es un COI." },
+        { "prompt": "Escucho a mis padres.", "options": ["J'écoute mes parents.", "J'écoute à mes parents."], "answer": "J'écoute mes parents." }
+      ]
+    },
+    {
+      "id": "preposicion",
+      "section": "otra-preposicion",
+      "title": "La preposición correcta",
+      "instructions": "Escribe à, de, au, du, de la o d'.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je pense souvent ___ toi.", "answer": "à" },
+        { "prompt": "Elle rêve ___ voyager au Japon.", "answer": "de" },
+        { "prompt": "Il joue ___ guitare depuis dix ans.", "answer": "de la" },
+        { "prompt": "Nous jouons ___ tennis le samedi.", "answer": "au" },
+        { "prompt": "Je téléphone ___ ma grand-mère tous les dimanches.", "answer": "à" },
+        { "prompt": "Tu te souviens ___ cette chanson ?", "answer": "de" },
+        { "prompt": "Je fais confiance ___ mes amis.", "answer": "à" },
+        { "prompt": "Mon fils joue ___ piano.", "answer": "du" }
+      ]
+    },
+    {
+      "id": "infinitivo",
+      "section": "infinitivo",
+      "title": "De o à",
+      "instructions": "Elige la preposición que pide el verbo.",
+      "kind": "choice",
+      "options": ["de", "à"],
+      "items": [
+        { "prompt": "J'ai décidé ___ partir.", "answer": "de" },
+        { "prompt": "Il a commencé ___ pleuvoir.", "answer": "à" },
+        { "prompt": "N'oublie pas ___ fermer la porte.", "answer": "de" },
+        { "prompt": "J'apprends ___ nager.", "answer": "à" },
+        { "prompt": "Elle essaie ___ dormir.", "answer": "de" },
+        { "prompt": "Tu m'aides ___ porter ce sac ?", "answer": "à" },
+        { "prompt": "Arrête ___ crier !", "answer": "de" },
+        { "prompt": "Il a réussi ___ trouver un travail.", "answer": "à" },
+        { "prompt": "Nous avons promis ___ venir.", "answer": "de" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Dilo en francés",
+      "instructions": "Traduce la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Espero a mi hermana.", "answer": "J'attends ma sœur." },
+        { "prompt": "Pienso en ti.", "answer": "Je pense à toi." },
+        { "prompt": "Olvidé cerrar la puerta.", "answer": "J'ai oublié de fermer la porte." },
+        { "prompt": "Ella toca el piano.", "answer": "Elle joue du piano." },
+        { "prompt": "Quiero aprender a cocinar.", "answer": "Je veux apprendre à cuisiner.", "accept": ["Je voudrais apprendre à cuisiner.", "Je veux apprendre à faire la cuisine."] },
+        { "prompt": "Escucho a mis padres.", "answer": "J'écoute mes parents." }
+      ]
+    }
+  ],
+  "checklist": [
+    "No pongo *à* delante de una persona como en español (*Je vois Marie*).",
+    "Uso *penser à, rêver de, faire confiance à, jouer à / de*.",
+    "Sé qué verbos llevan *de* o *à* antes de un infinitivo.",
+    "Uso *vouloir, pouvoir, aimer* + infinitivo sin preposición."
+  ],
+  "challenge": {
+    "title": "Tus propósitos",
+    "text": "Escribe cinco propósitos para este año con verbos de este módulo: *J'ai décidé d'arrêter de fumer. Je vais essayer de lire plus. Je veux apprendre à jouer de la guitare. Je dois penser à appeler ma grand-mère.*"
+  }
+}

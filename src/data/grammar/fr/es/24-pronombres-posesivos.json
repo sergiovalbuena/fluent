@@ -1,0 +1,179 @@
+{
+  "slug": "pronombres-posesivos",
+  "number": 24,
+  "part": 6,
+  "level": "B1",
+  "title": "Le mien, le tien, le sien",
+  "tagline": "El mío, el tuyo, el suyo… y «es mío» con être à.",
+  "goal": "Usar los pronombres posesivos con su concordancia, combinarlos con à y de, y decir de quién es algo con être à.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "Las formas",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Sustituyen a *mon livre, ta maison…* [[8]] para no repetir el sustantivo. Igual que en español, llevan **artículo** y concuerdan con **la cosa poseída**."
+        },
+        {
+          "type": "table",
+          "head": ["", "masc. sing.", "fem. sing.", "masc. pl.", "fem. pl."],
+          "rows": [
+            ["mío", "*le mien*", "*la mienne*", "*les miens*", "*les miennes*"],
+            ["tuyo", "*le tien*", "*la tienne*", "*les tiens*", "*les tiennes*"],
+            ["suyo (de él / de ella)", "*le sien*", "*la sienne*", "*les siens*", "*les siennes*"],
+            ["nuestro", "*le nôtre*", "*la nôtre*", "*les nôtres*", "*les nôtres*"],
+            ["vuestro, suyo (de usted / ustedes)", "*le vôtre*", "*la vôtre*", "*les vôtres*", "*les vôtres*"],
+            ["suyo (de ellos / ellas)", "*le leur*", "*la leur*", "*les leurs*", "*les leurs*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Nôtre y vôtre llevan acento",
+          "text": "El adjetivo no lo lleva (*notre maison*), el pronombre sí (*la {nôtre}*). Y suena distinto: la ô es cerrada, como en *eau*."
+        }
+      ]
+    },
+    {
+      "id": "concordancia",
+      "title": "Concuerda con la cosa",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Lo que decide la forma es **lo que se posee**, no quién lo posee. Como el español «el suyo / la suya»:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Paul cherche sa voiture. — C'est {la sienne} ?", "tr": "Paul busca su coche. — ¿Es el suyo?", "note": "voiture es femenino" },
+            { "fr": "Marie a pris son sac ? — Oui, {le sien}.", "tr": "¿Marie cogió su bolso? — Sí, el suyo.", "note": "sac es masculino" },
+            { "fr": "Les voisins ont un chien. {Le leur} est gentil.", "tr": "Los vecinos tienen un perro. El suyo es bueno." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*Le sien* es de **una** persona (él o ella); *le leur*, de **varias**. Así se evita la ambigüedad del «suyo» español."
+        }
+      ]
+    },
+    {
+      "id": "a-de",
+      "title": "Au mien, du mien y c'est à moi",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El artículo *le* y *les* se contrae con *à* y *de*, como siempre [[9]]:"
+        },
+        {
+          "type": "table",
+          "head": ["Con à", "Con de"],
+          "rows": [
+            ["*Je pense {au} mien.* (à + le)", "*Ton vélo est différent {du} mien.* (de + le)"],
+            ["*Il parle {aux} siens.* (à + les)", "*Elle parle {des} siens.* (de + les)"],
+            ["*à la mienne* (no cambia)", "*de la mienne* (no cambia)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "«Es mío» = c'est à moi",
+          "text": "Para decir **de quién es** algo, lo más natural es *être à* + persona: *Ce sac est {à moi}. Ces livres sont {à Marie}. Le chat est {aux} voisins.* La pregunta: *{À qui} est ce sac ?*"
+        },
+        {
+          "type": "text",
+          "text": "*C'est le mien* insiste en **cuál** es: *Lequel est ton manteau ? — {Le mien}, c'est le noir.*"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "section": "formas",
+      "title": "Elige el pronombre",
+      "instructions": "Elige la forma que concuerda con la cosa poseída.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "C'est ton stylo ? — Oui, c'est ___.", "options": ["le mien", "la mienne", "les miens"], "answer": "le mien" },
+        { "prompt": "Ce sont tes clés ? — Oui, ce sont ___.", "options": ["les miennes", "les miens", "la mienne"], "answer": "les miennes" },
+        { "prompt": "Ma maison est petite. Et ___ ?", "options": ["la tienne", "le tien", "les tiennes"], "answer": "la tienne" },
+        { "prompt": "J'ai oublié mon parapluie. Tu me prêtes ___ ?", "options": ["le tien", "la tienne", "les tiens"], "answer": "le tien" },
+        { "prompt": "Nos enfants jouent avec ___. (vos enfants)", "options": ["les vôtres", "le vôtre", "la vôtre"], "answer": "les vôtres" },
+        { "prompt": "Leur appartement est plus grand que ___. (notre appartement)", "options": ["le nôtre", "la nôtre", "les nôtres"], "answer": "le nôtre" }
+      ]
+    },
+    {
+      "id": "sien-leur",
+      "section": "concordancia",
+      "title": "Sien o leur",
+      "instructions": "Elige la forma correcta. Piensa: ¿un dueño o varios? ¿Qué cosa?",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Marie a pris son sac ? — Oui, elle a pris ___.", "options": ["le sien", "la sienne", "le leur"], "answer": "le sien" },
+        { "prompt": "Paul cherche sa voiture. — C'est ___, là-bas ?", "options": ["la sienne", "le sien", "la leur"], "answer": "la sienne", "explain": "Un dueño (Paul) y una cosa femenina (*voiture*)." },
+        { "prompt": "Les voisins ont un chien. ___ est très gentil.", "options": ["Le leur", "Le sien", "Les leurs"], "answer": "Le leur", "explain": "Varios dueños (*les voisins*) y un solo perro." },
+        { "prompt": "Mes parents adorent leurs voisins. Et toi, tu aimes ___ ?", "options": ["les tiens", "les leurs", "le tien"], "answer": "les tiens" },
+        { "prompt": "Ils ont vendu leurs vélos, mais nous avons gardé ___.", "options": ["les nôtres", "les leurs", "le nôtre"], "answer": "les nôtres" },
+        { "prompt": "Elle a ses idées, et lui a ___.", "options": ["les siennes", "les siens", "la sienne"], "answer": "les siennes", "explain": "*idées* es femenino plural." }
+      ]
+    },
+    {
+      "id": "sustituye",
+      "section": "concordancia",
+      "title": "No repitas",
+      "instructions": "Escribe el pronombre posesivo que sustituye a lo que está entre paréntesis.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Ta voiture est rouge ; ___ est bleue. (ma voiture)", "answer": "la mienne" },
+        { "prompt": "Mes enfants ont dix ans. Et ___ ? (vos enfants)", "answer": "les vôtres" },
+        { "prompt": "J'ai mon billet. Tu as ___ ? (ton billet)", "answer": "le tien" },
+        { "prompt": "Notre maison est vieille ; ___ est neuve. (leur maison)", "answer": "la leur" },
+        { "prompt": "Il a perdu ses lunettes et il a pris ___. (mes lunettes)", "answer": "les miennes" },
+        { "prompt": "Ce n'est pas mon problème, c'est ___. (ton problème)", "answer": "le tien" }
+      ]
+    },
+    {
+      "id": "a-de",
+      "section": "a-de",
+      "title": "À moi, au mien, du mien",
+      "instructions": "Completa con à, au, aux, du o des más lo que está entre paréntesis.",
+      "kind": "type",
+      "items": [
+        { "prompt": "À qui est ce sac ? — Il est ___. (moi)", "answer": "à moi" },
+        { "prompt": "Ces livres sont ___. (Marie)", "answer": "à Marie" },
+        { "prompt": "Le chat est ___. (les voisins)", "answer": "aux voisins" },
+        { "prompt": "Tu penses à ton avenir ? Je pense souvent ___. (le mien)", "answer": "au mien" },
+        { "prompt": "Ton téléphone est différent ___. (le mien)", "answer": "du mien" },
+        { "prompt": "Elle parle de ses enfants, et moi ___. (les miens)", "answer": "des miens" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Dilo en francés",
+      "instructions": "Traduce la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Este libro es mío.", "answer": "Ce livre est à moi.", "accept": ["C'est mon livre.", "C'est le mien."] },
+        { "prompt": "Tu casa es más grande que la mía.", "answer": "Ta maison est plus grande que la mienne." },
+        { "prompt": "¿Este bolígrafo es tuyo?", "answer": "Ce stylo est à toi ?", "accept": ["Est-ce que ce stylo est à toi ?", "C'est ton stylo ?", "Ce stylo, c'est le tien ?"] },
+        { "prompt": "Nuestros hijos y los suyos (de ellos) son amigos.", "answer": "Nos enfants et les leurs sont amis." },
+        { "prompt": "Olvidé mis llaves; ¿me prestas las tuyas?", "answer": "J'ai oublié mes clés ; tu me prêtes les tiennes ?", "accept": ["J'ai oublié mes clés, tu me prêtes les tiennes ?"] }
+      ]
+    }
+  ],
+  "checklist": [
+    "Conozco *le mien, le tien, le sien, le nôtre, le vôtre, le leur* y sus femeninos y plurales.",
+    "Hago concordar el pronombre con la cosa poseída.",
+    "Distingo *le sien* (un dueño) de *le leur* (varios).",
+    "Digo de quién es algo con *c'est à moi* y uso *au mien, du mien*."
+  ],
+  "challenge": {
+    "title": "Comparaciones de familia",
+    "text": "Compara cinco cosas tuyas con las de un amigo o tu pareja, sin repetir el sustantivo: *Mon téléphone est vieux, le sien est neuf. Sa famille est grande, la mienne est petite. Nos chiens sont amis, mais le sien aboie plus que le mien.*"
+  }
+}

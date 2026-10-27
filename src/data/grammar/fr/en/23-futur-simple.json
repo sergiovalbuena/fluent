@@ -1,0 +1,212 @@
+{
+  "slug": "futur-simple",
+  "number": 23,
+  "part": 5,
+  "level": "A2",
+  "title": "The futur simple",
+  "tagline": "Predictions, promises and plans: I will do, I will be, I will have.",
+  "goal": "Form the futur simple of regular and irregular verbs, use it after quand and si, and know when to prefer it to the near future.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "formacion",
+      "title": "How to form it",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English adds a word («will»). French adds an **ending to the infinitive**, so «will» is built into the verb. The endings look like the present of *avoir*."
+        },
+        {
+          "type": "conjugation",
+          "persons": ["je", "tu", "il / elle / on", "nous", "vous", "ils / elles"],
+          "verbs": [
+            { "verb": "parler", "meaning": "to speak", "forms": ["je parler{ai}", "tu parler{as}", "il parler{a}", "nous parler{ons}", "vous parler{ez}", "ils parler{ont}"] },
+            { "verb": "finir", "meaning": "to finish", "forms": ["je finir{ai}", "tu finir{as}", "il finir{a}", "nous finir{ons}", "vous finir{ez}", "ils finir{ont}"] },
+            { "verb": "prendre", "meaning": "to take", "forms": ["je prendr{ai}", "tu prendr{as}", "il prendr{a}", "nous prendr{ons}", "vous prendr{ez}", "ils prendr{ont}"], "notes": ["-re verbs drop their e: prendr-, écrir-, boir-."] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "There's always an **r** before the ending: it's the sign of the future. *je parle{r}ai, nous fini{r}ons*."
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "Irregular stems",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The endings never change; only the stem does. These are the ones you'll use every day:"
+        },
+        {
+          "type": "table",
+          "head": ["Verb", "Stem", "Example", "English"],
+          "rows": [
+            ["*être*", "*ser-*", "*je {ser}ai*", "I will be"],
+            ["*avoir*", "*aur-*", "*tu {aur}as*", "you will have"],
+            ["*aller*", "*ir-*", "*il {ir}a*", "he will go"],
+            ["*faire*", "*fer-*", "*nous {fer}ons*", "we will do"],
+            ["*venir*", "*viendr-*", "*vous {viendr}ez*", "you will come"],
+            ["*pouvoir*", "*pourr-*", "*ils {pourr}ont*", "they will be able to"],
+            ["*vouloir*", "*voudr-*", "*je {voudr}ai*", "I will want"],
+            ["*savoir*", "*saur-*", "*tu {saur}as*", "you will know"],
+            ["*voir*", "*verr-*", "*on {verr}a*", "we'll see"],
+            ["*devoir*", "*devr-*", "*je {devr}ai*", "I will have to"],
+            ["*falloir*", "*faudr-*", "*il {faudr}a*", "it will be necessary"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "One phrase to remember them",
+          "text": "*On {verr}a !* (We'll see!) is one of the most useful phrases in French."
+        }
+      ]
+    },
+    {
+      "id": "proche-simple",
+      "title": "Near future or futur simple",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The near future [[9]] (*je vais partir*) is «I'm going to leave». The futur simple (*je partirai*) is «I will leave». As in English, both often work."
+        },
+        {
+          "type": "table",
+          "head": ["Futur proche: aller + infinitive", "Futur simple"],
+          "rows": [
+            ["Something **decided** or **about to happen**", "**Predictions**, **promises**, distant plans"],
+            ["*Attention, tu {vas tomber} !*", "*Un jour, {je serai} riche.*"],
+            ["*Ce soir, {on va manger} des pâtes.*", "*{Je t'appellerai} demain, promis.*"],
+            ["More common in speech", "More common in writing"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quand-si",
+      "title": "After quand and si",
+      "blocks": [
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "The big trap: when + future",
+          "text": "English says «when I **am** older» (present). French uses the **future**: *Quand je {serai} grand, je serai pilote.*"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Quand tu {arriveras}, appelle-moi.", "tr": "When you arrive, call me." },
+            { "fr": "Je t'écrirai quand {j'aurai} le temps.", "tr": "I'll write to you when I have time." }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "With *si* (if) it works like English: **si + present → future**."
+        },
+        {
+          "type": "formula",
+          "text": "Si + present, future · S'il {pleut}, je {resterai} à la maison."
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Never the future after *si* meaning «if»: «si il pleuvra» is wrong, just as «if it will rain» is."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "regulares",
+      "section": "formacion",
+      "title": "Regular verbs",
+      "instructions": "Write the verb in the futur simple.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je ___ avec lui demain. (parler)", "answer": "parlerai" },
+        { "prompt": "Tu ___ ton travail ce soir. (finir)", "answer": "finiras" },
+        { "prompt": "Il ___ le train de 9 h. (prendre)", "answer": "prendra" },
+        { "prompt": "Nous ___ au restaurant. (manger)", "answer": "mangerons" },
+        { "prompt": "Vous ___ la couleur. (choisir)", "answer": "choisirez" },
+        { "prompt": "Ils nous ___ une carte postale. (écrire)", "answer": "écriront" },
+        { "prompt": "On ___ à l'hôtel. (dormir)", "answer": "dormira" }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "section": "irregulares",
+      "title": "Irregular verbs",
+      "instructions": "Write the verb in the futur simple. Watch the stem.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je ___ là à huit heures. (être)", "answer": "serai" },
+        { "prompt": "Tu ___ vingt ans en mai. (avoir)", "answer": "auras" },
+        { "prompt": "Nous ___ en Italie cet été. (aller)", "answer": "irons" },
+        { "prompt": "Vous ___ un gâteau ? (faire)", "answer": "ferez" },
+        { "prompt": "Ils ___ dimanche. (venir)", "answer": "viendront" },
+        { "prompt": "Elle ___ t'aider. (pouvoir)", "answer": "pourra" },
+        { "prompt": "Je te ___ demain. (voir)", "answer": "verrai" },
+        { "prompt": "Il ___ partir tôt. (falloir)", "answer": "faudra" }
+      ]
+    },
+    {
+      "id": "proche-a-simple",
+      "section": "proche-simple",
+      "title": "From near future to futur simple",
+      "instructions": "Say the same thing with the futur simple.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Je vais finir ce soir. → Je ___ ce soir.", "answer": "finirai" },
+        { "prompt": "Nous allons voir. → Nous ___.", "answer": "verrons" },
+        { "prompt": "Ils vont être contents. → Ils ___ contents.", "answer": "seront" },
+        { "prompt": "Tu vas avoir froid. → Tu ___ froid.", "answer": "auras" },
+        { "prompt": "Elle va faire les courses. → Elle ___ les courses.", "answer": "fera" },
+        { "prompt": "On va aller à la plage. → On ___ à la plage.", "answer": "ira" }
+      ]
+    },
+    {
+      "id": "quand-si",
+      "section": "quand-si",
+      "title": "Quand and si",
+      "instructions": "Choose the right tense.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Quand tu ___ grand, tu comprendras.", "options": ["seras", "es", "sois"], "answer": "seras" },
+        { "prompt": "Je t'appellerai quand j'___ à Paris.", "options": ["arriverai", "arrive", "arrivais"], "answer": "arriverai" },
+        { "prompt": "S'il ___ demain, on restera à la maison.", "options": ["pleut", "pleuvra", "pleuvait"], "answer": "pleut" },
+        { "prompt": "Si tu étudies, tu ___ l'examen.", "options": ["réussiras", "réussis", "réussissais"], "answer": "réussiras" },
+        { "prompt": "Quand nous ___ le temps, nous voyagerons.", "options": ["aurons", "avons", "ayons"], "answer": "aurons" },
+        { "prompt": "Si j'ai de l'argent, j'___ une voiture.", "options": ["achèterai", "achète", "achetais"], "answer": "achèterai" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in French",
+      "instructions": "Translate the sentence with the futur simple.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "It will rain tomorrow.", "answer": "Demain, il pleuvra.", "accept": ["Il pleuvra demain.", "Demain il pleuvra."] },
+        { "prompt": "When I'm older, I'll be a doctor.", "answer": "Quand je serai grand, je serai médecin.", "accept": ["Quand je serai grande, je serai médecin."] },
+        { "prompt": "I'll write to you.", "answer": "Je t'écrirai." },
+        { "prompt": "If you have time, will you come? (tu)", "answer": "Si tu as le temps, tu viendras ?" },
+        { "prompt": "We'll have a party.", "answer": "Nous ferons une fête.", "accept": ["On fera une fête."] },
+        { "prompt": "They will be able to come.", "answer": "Ils pourront venir.", "accept": ["Elles pourront venir."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the futur simple with the infinitive and the endings *-ai, -as, -a, -ons, -ez, -ont*.",
+    "I know the stems *ser-, aur-, ir-, fer-, viendr-, pourr-, verr-*.",
+    "I use the future after *quand* and the present after *si*.",
+    "I choose between the near future and the futur simple."
+  ],
+  "challenge": {
+    "title": "Your life in ten years",
+    "text": "Write six predictions about your life in ten years, with at least three irregular verbs and one sentence with *quand*: *Dans dix ans, j'habiterai au bord de la mer. J'aurai un chien. Quand je serai à la retraite, je voyagerai.*"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "slug": "genero-trampas",
+  "number": 27,
+  "part": 7,
+  "level": "A2",
+  "title": "Palabras que cambian de género",
+  "tagline": "La leche es «le lait» y el color es «la couleur».",
+  "goal": "Reconocer las palabras que tienen distinto género en español y en francés, usar las terminaciones como pista y distinguir las palabras que cambian de sentido según el género.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "cambian",
+      "title": "Las que cambian",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "La mayoría de palabras tienen el mismo género en los dos idiomas (*la maison*, *le livre*) [[2]]. Estas no, y como el español te empuja hacia el error, conviene aprenderlas con su artículo."
+        },
+        {
+          "type": "table",
+          "head": ["Femenino en español → masculino en francés", "Masculino en español → femenino en francés"],
+          "rows": [
+            ["la leche → *{le} lait*", "el color → *{la} couleur*"],
+            ["la sangre → *{le} sang*", "el dolor → *{la} douleur*"],
+            ["la nariz → *{le} nez*", "el diente → *{la} dent*"],
+            ["la espalda → *{le} dos*", "el mar → *{la} mer*"],
+            ["la cama → *{le} lit*", "el fin → *{la} fin*"],
+            ["la sal → *{le} sel*", "el miedo → *{la} peur*"],
+            ["la sonrisa → *{le} sourire*", "el coche → *{la} voiture*"],
+            ["la nube → *{le} nuage*", "el minuto → *{la} minute*"],
+            ["la fruta → *{le} fruit*", "el equipo → *{l'}équipe* (f.)"],
+            ["la primavera → *{le} printemps*", "el ratón → *{la} souris*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Apréndelas con un adjetivo",
+          "text": "Una frase corta se queda mejor que una lista: *du lait {frais}, une couleur {claire}, la mer {froide}, un beau sourire*."
+        }
+      ]
+    },
+    {
+      "id": "terminaciones",
+      "title": "Pistas en la terminación",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Terminación", "Género", "Ejemplos", "Ojo"],
+          "rows": [
+            ["*-eur* (cualidades, sensaciones)", "femenino", "*la couleur, la chaleur, la douleur, l'odeur, l'erreur*", "en español son masculinas (el color, el calor). Excepciones: *le bonheur, le malheur, l'honneur*"],
+            ["*-eur* (personas, máquinas)", "masculino", "*le chanteur, l'ordinateur, le moteur*", ""],
+            ["*-age*", "masculino", "*le voyage, le fromage, le message*", "excepciones: *la plage, la page, l'image* (f.)"],
+            ["*-ème*", "masculino", "*le problème, le système, le thème*", "acaban en -e pero son masculinas, como en español"],
+            ["*-tion, -sion, -té*", "femenino", "*la décision, la liberté, la beauté*", "igual que -ción, -dad"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Con *l'* no se ve el género: *l'image, l'ordinateur*. Para saberlo, piensa en *une image*, *un ordinateur*."
+        }
+      ]
+    },
+    {
+      "id": "dos-generos",
+      "title": "Un género, un significado",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Algunas palabras existen en los dos géneros, con significados distintos:"
+        },
+        {
+          "type": "table",
+          "head": ["Masculino", "Femenino"],
+          "rows": [
+            ["*le livre* = el libro", "*la livre* = la libra (medio kilo, moneda)"],
+            ["*le tour* = la vuelta, el turno", "*la tour* = la torre"],
+            ["*le poste* = el puesto (de trabajo)", "*la poste* = correos"],
+            ["*le mode* = el modo", "*la mode* = la moda"],
+            ["*le manche* = el mango", "*la manche* = la manga"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "On fait {le} tour de {la} tour Eiffel ?", "tr": "¿Damos la vuelta a la Torre Eiffel?" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "le-la",
+      "section": "cambian",
+      "title": "¿Le o la?",
+      "instructions": "Elige el artículo. ¡No te fíes del español!",
+      "kind": "choice",
+      "options": ["le", "la"],
+      "items": [
+        { "prompt": "___ lait (la leche)", "answer": "le" },
+        { "prompt": "___ couleur (el color)", "answer": "la" },
+        { "prompt": "___ nez (la nariz)", "answer": "le" },
+        { "prompt": "___ mer (el mar)", "answer": "la" },
+        { "prompt": "___ lit (la cama)", "answer": "le" },
+        { "prompt": "___ dent (el diente)", "answer": "la" },
+        { "prompt": "___ sourire (la sonrisa)", "answer": "le" },
+        { "prompt": "___ fin (el fin)", "answer": "la" },
+        { "prompt": "___ sang (la sangre)", "answer": "le" },
+        { "prompt": "___ voiture (el coche)", "answer": "la" },
+        { "prompt": "___ dos (la espalda)", "answer": "le" },
+        { "prompt": "___ peur (el miedo)", "answer": "la" }
+      ]
+    },
+    {
+      "id": "un-une",
+      "section": "terminaciones",
+      "title": "¿Un o une?",
+      "instructions": "Usa la terminación como pista.",
+      "kind": "choice",
+      "options": ["un", "une"],
+      "items": [
+        { "prompt": "___ fromage", "answer": "un" },
+        { "prompt": "___ plage", "answer": "une", "explain": "Excepción de *-age*: *la plage*." },
+        { "prompt": "___ problème", "answer": "un" },
+        { "prompt": "___ chaleur", "answer": "une" },
+        { "prompt": "___ bonheur", "answer": "un", "explain": "Excepción de *-eur*: *le bonheur*." },
+        { "prompt": "___ décision", "answer": "une" },
+        { "prompt": "___ voyage", "answer": "un" },
+        { "prompt": "___ image", "answer": "une", "explain": "Excepción de *-age*: *une image*." },
+        { "prompt": "___ ordinateur", "answer": "un" },
+        { "prompt": "___ odeur", "answer": "une" },
+        { "prompt": "___ système", "answer": "un" },
+        { "prompt": "___ page", "answer": "une" }
+      ]
+    },
+    {
+      "id": "dos-generos",
+      "section": "dos-generos",
+      "title": "El género cambia el sentido",
+      "instructions": "Elige el artículo según el sentido.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "J'ai acheté ___ livre de cuisine.", "options": ["un", "une"], "answer": "un" },
+        { "prompt": "Les cerises coûtent deux euros ___ livre.", "options": ["la", "le"], "answer": "la", "explain": "*la livre* = medio kilo." },
+        { "prompt": "On a visité ___ tour Eiffel.", "options": ["la", "le"], "answer": "la" },
+        { "prompt": "On fait ___ tour du lac ?", "options": ["le", "la"], "answer": "le" },
+        { "prompt": "Je vais à ___ poste pour envoyer un colis.", "options": ["la", "le"], "answer": "la" },
+        { "prompt": "Elle a trouvé ___ nouveau poste à Lyon.", "options": ["un", "une"], "answer": "un" },
+        { "prompt": "Elle adore ___ mode italienne.", "options": ["la", "le"], "answer": "la" }
+      ]
+    },
+    {
+      "id": "concordancia",
+      "section": "final",
+      "title": "El adjetivo te delata",
+      "instructions": "Escribe el adjetivo en la forma correcta.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Cette couleur est très ___. (beau)", "answer": "belle" },
+        { "prompt": "Le lait est ___ ? (frais)", "answer": "frais" },
+        { "prompt": "J'ai une ___ douleur au dos. (grand)", "answer": "grande" },
+        { "prompt": "La mer est ___ aujourd'hui. (froid)", "answer": "froide" },
+        { "prompt": "Il a un ___ sourire. (beau)", "answer": "beau" },
+        { "prompt": "Cette peur est ___. (normal)", "answer": "normale" }
+      ]
+    }
+  ],
+  "checklist": [
+    "Sé que *le lait, le nez, le lit, le dos* son masculinos.",
+    "Sé que *la couleur, la mer, la dent, la peur* son femeninas.",
+    "Uso las terminaciones *-eur, -age, -ème, -tion* como pista.",
+    "Distingo *le livre / la livre, le tour / la tour, le poste / la poste*."
+  ],
+  "challenge": {
+    "title": "Tu lista personal",
+    "text": "Durante una semana, apunta cada palabra francesa cuyo género te sorprenda, siempre con un adjetivo: *une erreur grave, le sel fin, la fin heureuse*. Al final, escribe un mini texto que use al menos cinco de ellas."
+  }
+}

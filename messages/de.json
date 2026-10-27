@@ -178,7 +178,10 @@
     "correct_short": "Richtig!",
     "next_phrase": "Weiter",
     "next_round": "Nächste Runde",
-    "done": "Fertig!"
+    "done": "Fertig!",
+    "show_translation": "Übersetzung zeigen",
+    "hide_translation": "Übersetzung ausblenden",
+    "listen": "Anhören"
   },
   "gems": {
     "title": "Edelsteine",
@@ -849,7 +852,8 @@
     "rw_repeat": "Wiederholen oder gemischt",
     "rw_module": "Das Modul meistern",
     "rewards_left_label": "Übrig",
-    "module_bonus": "Modulbonus"
+    "module_bonus": "Modulbonus",
+    "level_hint": "Niveau {level} nach GER"
   },
   "community": {
     "title": "Community",

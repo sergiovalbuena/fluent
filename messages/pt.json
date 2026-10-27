@@ -178,7 +178,10 @@
     "correct_short": "Correto!",
     "next_phrase": "Próxima",
     "next_round": "Próxima rodada",
-    "done": "Pronto!"
+    "done": "Pronto!",
+    "show_translation": "Ver tradução",
+    "hide_translation": "Ocultar tradução",
+    "listen": "Ouvir"
   },
   "gems": {
     "title": "Gemas",
@@ -849,7 +852,8 @@
     "rw_repeat": "Repetir ou revisão mista",
     "rw_module": "Dominar o módulo",
     "rewards_left_label": "Restam",
-    "module_bonus": "Bônus do módulo"
+    "module_bonus": "Bônus do módulo",
+    "level_hint": "Nível {level} do QECR"
   },
   "community": {
     "title": "Comunidade",

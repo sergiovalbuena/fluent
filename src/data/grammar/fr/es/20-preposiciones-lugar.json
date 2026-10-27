@@ -1,0 +1,237 @@
+{
+  "slug": "preposiciones-lugar",
+  "number": 20,
+  "part": 5,
+  "level": "A1",
+  "title": "Preposiciones de lugar",
+  "tagline": "Dónde está cada cosa, chez, ciudades, países y transporte.",
+  "goal": "Decir dónde están las cosas y las personas, usar chez, elegir à, en, au o aux con ciudades y países, y decir cómo viajas.",
+  "minutes": 11,
+  "sections": [
+    {
+      "id": "posicion",
+      "title": "Dónde está",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Francés", "Español", "Ejemplo"],
+          "rows": [
+            ["*sur*", "encima de, sobre", "*Les clés sont {sur} la table.*"],
+            ["*sous*", "debajo de", "*Le chat est {sous} le lit.*"],
+            ["*dans*", "dentro de, en", "*Le lait est {dans} le frigo.*"],
+            ["*devant*", "delante de", "*Je t'attends {devant} le cinéma.*"],
+            ["*derrière*", "detrás de", "*Le jardin est {derrière} la maison.*"],
+            ["*entre*", "entre", "*La poste est {entre} la banque et le café.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Sin «de»",
+          "text": "En español decimos «encima **de**», «debajo **de**». Estas seis van **solas** en francés: *sur la table*, nunca «sur de la table»."
+        },
+        {
+          "type": "text",
+          "text": "*Sur* y *sous* se confunden fácil: piensa en *sous-sol* (sótano) y *sous-marin* (submarino). Lo de abajo es *sous*."
+        }
+      ]
+    },
+    {
+      "id": "contracciones",
+      "title": "Las que llevan de",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Francés", "Español"],
+          "rows": [
+            ["*à côté de*", "al lado de"],
+            ["*en face de*", "enfrente de"],
+            ["*près de* · *loin de*", "cerca de · lejos de"],
+            ["*au milieu de*", "en medio de"],
+            ["*au fond de*", "al fondo de"],
+            ["*à gauche de* · *à droite de*", "a la izquierda de · a la derecha de"]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ese *de* se une al artículo, como el *à* de [[9]]:"
+        },
+        {
+          "type": "formula",
+          "text": "de + le = du · de + les = des · de la y de l' no cambian"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "J'habite en face {du} parc.", "tr": "Vivo enfrente del parque." },
+            { "fr": "La gare est près {de la} poste.", "tr": "La estación está cerca de correos." },
+            { "fr": "Le bus s'arrête à côté {des} magasins.", "tr": "El bus para al lado de las tiendas." },
+            { "fr": "C'est à côté {de l'}hôtel.", "tr": "Está al lado del hotel." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paises",
+      "title": "Ciudades y países",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El español usa «en» para todo (en París, en Francia). El francés elige según el lugar:"
+        },
+        {
+          "type": "table",
+          "head": ["Lugar", "Preposición", "Ejemplo"],
+          "rows": [
+            ["Ciudad", "*à*", "*J'habite {à} Paris. Je vais {à} Bogotá.*"],
+            ["País femenino (casi todos los que acaban en -e)", "*en*", "*{en} France, {en} Colombie, {en} Espagne*"],
+            ["País masculino que empieza por vocal", "*en*", "*{en} Iran, {en} Équateur*"],
+            ["País masculino", "*au*", "*{au} Canada, {au} Japon, {au} Pérou*"],
+            ["País en plural", "*aux*", "*{aux} États-Unis, {aux} Pays-Bas*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Sirve igual para «estar en» y para «ir a»: *Je suis en France* y *Je vais en France*."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Excepciones con -e",
+          "text": "Algunos países acaban en -e y son masculinos: *le Mexique, le Cambodge, le Mozambique*. Por eso: *{au} Mexique*."
+        },
+        {
+          "type": "text",
+          "text": "**Para decir de dónde vienes**, *de* se contrae igual: *Je viens {de} France, {du} Canada, {des} États-Unis, {de} Lima*."
+        }
+      ]
+    },
+    {
+      "id": "chez",
+      "title": "Chez y el transporte",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Chez* significa «en casa de» o «a casa de», y también «donde» un profesional. Siempre va con una **persona**, nunca con un lugar."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Je rentre {chez} moi.", "tr": "Vuelvo a mi casa." },
+            { "fr": "On dîne {chez} Marie.", "tr": "Cenamos en casa de Marie." },
+            { "fr": "J'ai rendez-vous {chez} le dentiste.", "tr": "Tengo cita con el dentista." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "¿À o chez?",
+          "text": "*à la boulangerie* (el lugar) = *chez le boulanger* (la persona)."
+        },
+        {
+          "type": "table",
+          "head": ["Te sientas dentro: en", "Vas encima: à"],
+          "rows": [
+            ["*{en} voiture, {en} bus, {en} train*", "*{à} pied, {à} vélo, {à} moto*"],
+            ["*{en} avion, {en} métro*", "*{à} cheval*"]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "donde-esta",
+      "section": "posicion",
+      "title": "¿Dónde está?",
+      "instructions": "Elige la preposición que corresponde a la pista.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Les clés sont ___ la table. (encima)", "options": ["sur", "sous", "dans"], "answer": "sur" },
+        { "prompt": "Le chat dort ___ le lit. (debajo)", "options": ["sur", "sous", "dans"], "answer": "sous" },
+        { "prompt": "Le lait est ___ le frigo. (dentro)", "options": ["sur", "sous", "dans"], "answer": "dans" },
+        { "prompt": "La pharmacie est ___ la banque et la poste.", "options": ["entre", "devant", "derrière"], "answer": "entre" },
+        { "prompt": "Je t'attends ___ le cinéma. (delante)", "options": ["devant", "derrière", "entre"], "answer": "devant" },
+        { "prompt": "Le jardin est ___ la maison. (detrás)", "options": ["devant", "derrière", "sur"], "answer": "derrière" }
+      ]
+    },
+    {
+      "id": "contraccion",
+      "section": "contracciones",
+      "title": "Du, de la, de l', des",
+      "instructions": "Escribe du, de la, de l' o des.",
+      "kind": "type",
+      "items": [
+        { "prompt": "La gare est à côté ___ hôtel.", "answer": "de l'" },
+        { "prompt": "J'habite en face ___ parc.", "answer": "du" },
+        { "prompt": "Le café est près ___ gare.", "answer": "de la" },
+        { "prompt": "Il y a un banc au milieu ___ jardin.", "answer": "du" },
+        { "prompt": "On s'assoit au fond ___ salle.", "answer": "de la" },
+        { "prompt": "Le bus s'arrête en face ___ magasins.", "answer": "des" },
+        { "prompt": "La plage est loin ___ centre-ville.", "answer": "du" }
+      ]
+    },
+    {
+      "id": "paises",
+      "section": "paises",
+      "title": "À, en, au o aux",
+      "instructions": "Elige la preposición para la ciudad o el país.",
+      "kind": "choice",
+      "options": ["à", "en", "au", "aux"],
+      "items": [
+        { "prompt": "J'habite ___ Lyon.", "answer": "à" },
+        { "prompt": "Elle travaille ___ Canada.", "answer": "au" },
+        { "prompt": "Nous partons ___ Italie.", "answer": "en" },
+        { "prompt": "Ils vivent ___ États-Unis.", "answer": "aux" },
+        { "prompt": "Tu vas ___ Japon cet été ?", "answer": "au" },
+        { "prompt": "Mon cousin habite ___ Mexique.", "answer": "au", "explain": "*le Mexique* es masculino aunque acabe en -e." },
+        { "prompt": "On passe une semaine ___ Espagne.", "answer": "en" },
+        { "prompt": "Je suis né ___ Bogotá.", "answer": "à" },
+        { "prompt": "Ils voyagent ___ Pays-Bas.", "answer": "aux" },
+        { "prompt": "Elle étudie ___ Iran.", "answer": "en", "explain": "*l'Iran* es masculino, pero empieza por vocal: *en*." }
+      ]
+    },
+    {
+      "id": "chez-transporte",
+      "section": "chez",
+      "title": "Chez, en o à",
+      "instructions": "Elige la opción correcta.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Ce soir, on dîne ___ mes parents.", "options": ["chez", "à", "dans"], "answer": "chez" },
+        { "prompt": "J'ai rendez-vous ___ le coiffeur.", "options": ["chez", "à", "au"], "answer": "chez" },
+        { "prompt": "Je vais au travail ___ vélo.", "options": ["à", "en", "dans"], "answer": "à" },
+        { "prompt": "Ils partent ___ train.", "options": ["en", "à", "dans"], "answer": "en" },
+        { "prompt": "Je rentre ___ moi.", "options": ["chez", "à", "dans"], "answer": "chez" },
+        { "prompt": "On y va ___ pied ?", "options": ["à", "en", "sur"], "answer": "à" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Dilo en francés",
+      "instructions": "Traduce la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "El gato está debajo de la mesa.", "answer": "Le chat est sous la table." },
+        { "prompt": "Vivo cerca de la estación.", "answer": "J'habite près de la gare." },
+        { "prompt": "Ella trabaja en Canadá.", "answer": "Elle travaille au Canada." },
+        { "prompt": "Vamos a casa de Marie.", "answer": "On va chez Marie.", "accept": ["Nous allons chez Marie."] },
+        { "prompt": "El banco está enfrente del hotel.", "answer": "La banque est en face de l'hôtel." },
+        { "prompt": "Voy a Italia en tren.", "answer": "Je vais en Italie en train." }
+      ]
+    }
+  ],
+  "checklist": [
+    "Digo dónde está algo con *sur, sous, dans, devant, derrière, entre*.",
+    "Uso *à côté de, en face de, près de* con *du* y *des*.",
+    "Elijo *à, en, au, aux* con ciudades y países.",
+    "Uso *chez* con personas y digo cómo viajo (*en train, à pied*)."
+  ],
+  "challenge": {
+    "title": "Tu barrio",
+    "text": "Describe en cinco frases dónde está tu casa y qué hay alrededor: *J'habite à Medellín, près du parc. En face de chez moi, il y a une boulangerie.* Termina con un país que quieres visitar y cómo irías: *Je voudrais aller au Japon en avion.*"
+  }
+}

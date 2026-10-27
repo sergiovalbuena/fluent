@@ -1,0 +1,200 @@
+{
+  "slug": "acentos-h",
+  "number": 28,
+  "part": 7,
+  "level": "A1",
+  "title": "Accents and the h",
+  "tagline": "What each accent does, words told apart by an accent, and the aspirated h.",
+  "goal": "Know what each French accent shows, tell a / à, ou / où or la / là apart, and recognise words with an aspirated h, which block elision and liaison.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "acentos",
+      "title": "What accents are for",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "French accents are not decoration and not stress marks: they change **the sound** of a vowel or tell two words apart. Leaving them out is a spelling mistake."
+        },
+        {
+          "type": "table",
+          "head": ["Accent", "What it does", "Examples"],
+          "rows": [
+            ["**é** acute", "closed e, like «ay» without the y", "*été, café, étudiant*"],
+            ["**è** grave", "open e, as in «bed»", "*mère, très, problème*"],
+            ["**ê** circumflex", "open e; often marks a lost s", "*fête* (feast), *forêt* (forest), *tête*"],
+            ["**ç** cedilla", "c sounds like s before a, o, u", "*ça, garçon, français*"],
+            ["**ë, ï** diaeresis", "the vowel is said separately", "*Noël, maïs* (ma-ees)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "The circumflex hides an s",
+          "text": "When you see *â, ê, î, ô, û*, try adding an s: *hôpital* → hospital, *île* → isle, *fête* → feast, *côte* → coast, *bête* → beast, *forêt* → forest."
+        },
+        {
+          "type": "text",
+          "text": "Review the sound of each vowel in [[1]]."
+        }
+      ]
+    },
+    {
+      "id": "distinguen",
+      "title": "One accent, another word",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Sometimes the accent is the only thing that separates two words:"
+        },
+        {
+          "type": "table",
+          "head": ["No accent", "With accent"],
+          "rows": [
+            ["*a* = has (avoir)", "*à* = to, at, in"],
+            ["*ou* = or", "*où* = where"],
+            ["*la* = the (article)", "*là* = there"],
+            ["*sur* = on", "*sûr* = sure"],
+            ["*du* = of the, some", "*dû* = due (past participle of devoir)"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Il {a} une maison {à} Paris.", "tr": "He has a house in Paris." },
+            { "fr": "Thé {ou} café ? — {Où} est le café ?", "tr": "Tea or coffee? — Where's the coffee?" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Capitals keep their accents too: *À bientôt, École*. The keyboard in the app has buttons for all of them."
+        }
+      ]
+    },
+    {
+      "id": "h-aspirada",
+      "title": "Silent h and aspirated h",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The French h is **never pronounced** (*hôtel* = «otel»). But there are two kinds, and you can tell by the words around them:"
+        },
+        {
+          "type": "table",
+          "head": ["", "Silent h (most words)", "Aspirated h"],
+          "rows": [
+            ["Behaves like", "a vowel", "a consonant"],
+            ["Elision", "*{l'}homme, {l'}hôtel, {j'}habite*", "*{le} héros, {la} honte, {le} haricot*"],
+            ["Liaison [[14]]", "*les‿hommes* (lay-zom)", "*les │ héros* (lay ay-ro)"]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "The most common ones with an aspirated h: *le hasard* (chance), *le haricot* (bean), *la honte* (shame), *le héros*, *le hibou* (owl), *le homard* (lobster), *le hamburger*, *le hockey*, *en haut* (upstairs), *le huit*."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Why it matters",
+          "text": "With a liaison, *les‿héros* would sound like «les zéros» (the zeros). So: *les │ héros*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "acento",
+      "section": "acentos",
+      "title": "Which spelling?",
+      "instructions": "Choose the right spelling of the word.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "(summer)", "options": ["été", "ète", "êté"], "answer": "été" },
+        { "prompt": "(mother)", "options": ["mère", "mére", "mêre"], "answer": "mère" },
+        { "prompt": "(party)", "options": ["fête", "fète", "féte"], "answer": "fête" },
+        { "prompt": "(very)", "options": ["très", "trés", "três"], "answer": "très" },
+        { "prompt": "(boy)", "options": ["garçon", "garcon", "garsson"], "answer": "garçon" },
+        { "prompt": "(Christmas)", "options": ["Noël", "Noèl", "Noél"], "answer": "Noël" },
+        { "prompt": "(hospital)", "options": ["hôpital", "hopital", "hòpital"], "answer": "hôpital" },
+        { "prompt": "(forest)", "options": ["forêt", "forèt", "forét"], "answer": "forêt" }
+      ]
+    },
+    {
+      "id": "distinguen",
+      "section": "distinguen",
+      "title": "With or without an accent?",
+      "instructions": "Choose the word that makes sense.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Il ___ un chien.", "options": ["a", "à"], "answer": "a" },
+        { "prompt": "Je vais ___ Paris demain.", "options": ["à", "a"], "answer": "à" },
+        { "prompt": "Tu veux du thé ___ du café ?", "options": ["ou", "où"], "answer": "ou" },
+        { "prompt": "___ est la gare ?", "options": ["Où", "Ou"], "answer": "Où" },
+        { "prompt": "Ton livre est ___, sur la table.", "options": ["là", "la"], "answer": "là" },
+        { "prompt": "Tu es ___ ? Tu ne veux pas venir ?", "options": ["sûr", "sur"], "answer": "sûr" },
+        { "prompt": "Le chat dort ___ le canapé.", "options": ["sur", "sûr"], "answer": "sur" }
+      ]
+    },
+    {
+      "id": "circunflejo",
+      "section": "acentos",
+      "title": "The hidden s",
+      "instructions": "Write the French word. Clue: the circumflex replaces an s.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "isle → ___", "answer": "île" },
+        { "prompt": "feast → ___", "answer": "fête" },
+        { "prompt": "beast → ___", "answer": "bête" },
+        { "prompt": "coast → ___", "answer": "côte" },
+        { "prompt": "hospital → ___", "answer": "hôpital" },
+        { "prompt": "forest → ___", "answer": "forêt" }
+      ]
+    },
+    {
+      "id": "h",
+      "section": "h-aspirada",
+      "title": "L', le or la",
+      "instructions": "Choose the article. An aspirated h blocks the elision.",
+      "kind": "choice",
+      "options": ["l'", "le", "la"],
+      "items": [
+        { "prompt": "___ homme", "answer": "l'" },
+        { "prompt": "___ héros", "answer": "le" },
+        { "prompt": "___ hôtel", "answer": "l'" },
+        { "prompt": "___ haricot", "answer": "le" },
+        { "prompt": "___ honte", "answer": "la" },
+        { "prompt": "___ heure", "answer": "l'" },
+        { "prompt": "___ hasard", "answer": "le" },
+        { "prompt": "___ histoire", "answer": "l'" }
+      ]
+    },
+    {
+      "id": "elision",
+      "section": "final",
+      "title": "Elision or not?",
+      "instructions": "Join the two words the way French writes them.",
+      "kind": "type",
+      "items": [
+        { "prompt": "le + hôpital → ___", "answer": "l'hôpital" },
+        { "prompt": "le + héros → ___", "answer": "le héros" },
+        { "prompt": "je + habite → ___", "answer": "j'habite" },
+        { "prompt": "de + haricots → ___", "answer": "de haricots" },
+        { "prompt": "la + île → ___", "answer": "l'île" },
+        { "prompt": "le + hamburger → ___", "answer": "le hamburger" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I know French accents change the sound, not the stress.",
+    "I tell *é, è, ê* apart and use the *ç*.",
+    "I don't mix up *a / à, ou / où, la / là, sur / sûr*.",
+    "I recognise words with an aspirated h: no elision, no liaison."
+  ],
+  "challenge": {
+    "title": "Circumflex hunt",
+    "text": "Find ten words with *â, ê, î, ô* or *û* in a French text (a news article, a song) and try to guess the hidden English word by adding an s. How many did you get?"
+  }
+}

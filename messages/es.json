@@ -178,7 +178,10 @@
     "correct_short": "¡Correcto!",
     "next_phrase": "Siguiente",
     "next_round": "Siguiente ronda",
-    "done": "¡Listo!"
+    "done": "¡Listo!",
+    "show_translation": "Ver traducción",
+    "hide_translation": "Ocultar traducción",
+    "listen": "Escuchar"
   },
   "gems": {
     "title": "Gemas",
@@ -849,7 +852,8 @@
     "rw_repeat": "Repetir o repaso mixto",
     "rw_module": "Dominar el módulo",
     "rewards_left_label": "Quedan",
-    "module_bonus": "Bonus del módulo"
+    "module_bonus": "Bonus del módulo",
+    "level_hint": "Nivel {level} del Marco Común Europeo (MCER)"
   },
   "community": {
     "title": "Comunidad",

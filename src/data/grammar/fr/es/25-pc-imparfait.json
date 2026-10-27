@@ -1,0 +1,221 @@
+{
+  "slug": "pc-imparfait",
+  "number": 25,
+  "part": 6,
+  "level": "B1",
+  "title": "Passé composé o imparfait",
+  "tagline": "Duraciones, verbos que cambian de sentido y cómo contar una historia.",
+  "goal": "Elegir con seguridad entre passé composé e imparfait: con duraciones, con verbos como savoir o connaître, con pendant que y al contar una historia completa.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "repaso",
+      "title": "La regla de base",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Ya conoces el *passé composé* [[10]] y el *imparfait* [[18]]. La buena noticia: funcionan casi igual que el **pretérito** y el **imperfecto** del español. Si en español dirías «comí», es passé composé; si dirías «comía», imparfait."
+        },
+        {
+          "type": "table",
+          "head": ["Imparfait (comía)", "Passé composé (comí)"],
+          "rows": [
+            ["Descripción, decorado", "Hechos, acciones que avanzan la historia"],
+            ["Costumbre: *souvent, d'habitude, tous les jours*", "Una vez o un número de veces: *hier, un jour, trois fois*"],
+            ["Acción en curso, sin final", "Acción terminada, con final"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "La trampa no es la elección, sino la forma: «comí» **no** es *je mangeai* (passé simple, de los libros), sino *{j'ai mangé}*."
+        }
+      ]
+    },
+    {
+      "id": "duracion",
+      "title": "Duraciones y repeticiones",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Una acción **larga pero con límites** (duró dos horas, diez años, todo el día) va en **passé composé**, igual que «viví diez años» en español."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{J'ai habité} dix ans à Lyon.", "tr": "Viví diez años en Lyon.", "note": "periodo cerrado" },
+            { "fr": "Quand j'étais étudiant, {j'habitais} à Lyon.", "tr": "Cuando era estudiante, vivía en Lyon.", "note": "decorado" },
+            { "fr": "{Il a plu} toute la journée.", "tr": "Llovió todo el día." },
+            { "fr": "{Je suis allé} trois fois à Paris.", "tr": "Fui tres veces a París.", "note": "veces contadas" },
+            { "fr": "{J'allais} souvent à Paris.", "tr": "Iba a menudo a París.", "note": "costumbre" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Pistas",
+          "text": "*pendant deux heures, de 2010 à 2020, toute la journée, trois fois* → passé composé. *souvent, toujours, d'habitude, à l'époque* → imparfait."
+        }
+      ]
+    },
+    {
+      "id": "verbos-estado",
+      "title": "Verbos que cambian de sentido",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Con algunos verbos, el tiempo cambia el significado. El español hace exactamente lo mismo (sabía / supe, conocía / conocí):"
+        },
+        {
+          "type": "table",
+          "head": ["Verbo", "Imparfait", "Passé composé"],
+          "rows": [
+            ["*savoir*", "*je savais* = sabía", "*j'ai su* = me enteré, supe"],
+            ["*connaître*", "*je connaissais* = conocía", "*j'ai connu* = conocí (por primera vez)"],
+            ["*pouvoir*", "*je pouvais* = podía", "*j'ai pu* = pude, logré"],
+            ["*vouloir*", "*je voulais* = quería", "*j'ai voulu* = quise, intenté"],
+            ["*avoir peur*", "*j'avais peur* = tenía miedo", "*j'ai eu peur* = me asusté"],
+            ["*devoir*", "*je devais* = tenía que (¿lo hice?)", "*j'ai dû* = tuve que (y lo hice)"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Je ne {savais} pas qu'il était marié. Je l'{ai su} hier.", "tr": "No sabía que estaba casado. Me enteré ayer." },
+            { "fr": "{J'ai connu} Marie en 2019.", "tr": "Conocí a Marie en 2019." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pendant-que",
+      "title": "Pendant que, quand y être en train de",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "*pendant que* (mientras) + **imparfait**: dos acciones en curso a la vez. *{Pendant qu'}elle faisait la cuisine, il mettait la table.*",
+            "La acción que **interrumpe** va en passé composé, a menudo con *quand*: *Je dormais {quand} le téléphone {a sonné}.*",
+            "*être en train de* + infinitivo, en imparfait, insiste en que estaba **en medio** de algo: *{J'étais en train de} manger quand il est arrivé.*"
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*venir de* en imparfait = «acababa de»: *Le train {venait de} partir.*"
+        }
+      ]
+    },
+    {
+      "id": "relato",
+      "title": "Contar una historia",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Una historia suele tener tres capas:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**El decorado** (imparfait): *C'était un samedi. Il faisait beau.*",
+            "**La cadena de hechos** (passé composé): *Soudain, mon téléphone a sonné. J'ai répondu, je me suis habillé et je suis sorti.*",
+            "**Las reacciones y lo que había alrededor** (imparfait): *Tout le monde m'attendait. J'étais très ému.*"
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Si al leer la historia en voz alta puedes preguntar «¿y luego qué pasó?», ese verbo es passé composé."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "duracion",
+      "section": "duracion",
+      "title": "¿Periodo cerrado o costumbre?",
+      "instructions": "Elige el tiempo correcto.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Hier, il ___ toute la journée.", "options": ["a plu", "pleuvait"], "answer": "a plu" },
+        { "prompt": "J'___ dix ans à Lyon, puis je suis parti.", "options": ["ai habité", "habitais"], "answer": "ai habité" },
+        { "prompt": "Quand j'étais étudiant, j'___ dans une petite chambre.", "options": ["habitais", "ai habité"], "answer": "habitais" },
+        { "prompt": "Nous ___ pendant deux heures.", "options": ["avons attendu", "attendions"], "answer": "avons attendu" },
+        { "prompt": "Je ___ trois fois à Paris.", "options": ["suis allé", "allais"], "answer": "suis allé" },
+        { "prompt": "Avant, j'___ souvent à Paris.", "options": ["allais", "suis allé"], "answer": "allais" }
+      ]
+    },
+    {
+      "id": "sentido",
+      "section": "verbos-estado",
+      "title": "El sentido cambia",
+      "instructions": "Elige la forma que corresponde a la pista.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Je ne ___ pas qu'il était marié. (no lo sabía)", "options": ["savais", "ai su"], "answer": "savais" },
+        { "prompt": "J'___ la nouvelle ce matin. (me enteré)", "options": ["ai su", "savais"], "answer": "ai su" },
+        { "prompt": "J'___ Marie à une fête en 2019. (la conocí)", "options": ["ai connu", "connaissais"], "answer": "ai connu" },
+        { "prompt": "À l'époque, je ne ___ personne en France.", "options": ["connaissais", "ai connu"], "answer": "connaissais" },
+        { "prompt": "Après trois essais, il ___ ouvrir la porte. (logró)", "options": ["a pu", "pouvait"], "answer": "a pu" },
+        { "prompt": "Quand le chien a aboyé, j'___ peur. (me asusté)", "options": ["ai eu", "avais"], "answer": "ai eu" }
+      ]
+    },
+    {
+      "id": "pendant-que",
+      "section": "pendant-que",
+      "title": "En curso o interrupción",
+      "instructions": "Elige el tiempo correcto.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Pendant que je ___, le téléphone a sonné.", "options": ["dormais", "ai dormi"], "answer": "dormais" },
+        { "prompt": "Je regardais un film quand tu ___.", "options": ["as appelé", "appelais"], "answer": "as appelé" },
+        { "prompt": "Pendant qu'elle ___ la cuisine, il mettait la table.", "options": ["faisait", "a fait"], "answer": "faisait" },
+        { "prompt": "J'___ en train de manger quand il est arrivé.", "options": ["étais", "ai été"], "answer": "étais" },
+        { "prompt": "Quand je suis entré, ils ___ en silence.", "options": ["mangeaient", "ont mangé"], "answer": "mangeaient" },
+        { "prompt": "Nous marchions dans la rue quand nous ___ un accident.", "options": ["avons vu", "voyions"], "answer": "avons vu" }
+      ]
+    },
+    {
+      "id": "historia",
+      "section": "relato",
+      "title": "Un samedi matin",
+      "instructions": "Escribe el verbo en passé composé o en imparfait.",
+      "kind": "type",
+      "items": [
+        { "prompt": "C'___ un samedi matin. (être)", "answer": "était" },
+        { "prompt": "Il ___ beau et les oiseaux chantaient. (faire)", "answer": "faisait" },
+        { "prompt": "Soudain, mon téléphone ___. (sonner)", "answer": "a sonné" },
+        { "prompt": "C'___ ma sœur. (être)", "answer": "était" },
+        { "prompt": "Elle m'___ : « Viens vite ! » (dire)", "answer": "a dit" },
+        { "prompt": "Je ___ et je suis parti en courant. (s'habiller)", "answer": "me suis habillé", "accept": ["me suis habillée"] },
+        { "prompt": "Quand je suis arrivé, tout le monde m'___. (attendre)", "answer": "attendait" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Dilo en francés",
+      "instructions": "Traduce la frase.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Viví cinco años en Montreal.", "answer": "J'ai habité cinq ans à Montréal.", "accept": ["J'ai vécu cinq ans à Montréal.", "J'ai habité à Montréal pendant cinq ans.", "J'ai vécu à Montréal pendant cinq ans."] },
+        { "prompt": "No sabía que estabas aquí.", "answer": "Je ne savais pas que tu étais là.", "accept": ["Je ne savais pas que tu étais ici."] },
+        { "prompt": "Mientras cocinaba, escuchaba la radio.", "answer": "Pendant que je cuisinais, j'écoutais la radio.", "accept": ["Pendant que je faisais la cuisine, j'écoutais la radio."] },
+        { "prompt": "Conocí a mi mejor amigo en la escuela.", "answer": "J'ai connu mon meilleur ami à l'école.", "accept": ["J'ai rencontré mon meilleur ami à l'école."] },
+        { "prompt": "Dormía cuando sonó el teléfono.", "answer": "Je dormais quand le téléphone a sonné." }
+      ]
+    }
+  ],
+  "checklist": [
+    "Uso el passé composé para periodos cerrados y veces contadas.",
+    "Distingo *je savais / j'ai su* y *je connaissais / j'ai connu*.",
+    "Uso *pendant que* con imparfait y el passé composé para la interrupción.",
+    "Cuento una historia con decorado, cadena de hechos y reacciones."
+  ],
+  "challenge": {
+    "title": "Un recuerdo",
+    "text": "Cuenta en ocho o diez frases un recuerdo real (un viaje, el día que conociste a alguien, una sorpresa). Empieza con el decorado en imparfait, cuenta los hechos en passé composé y termina con cómo te sentías. Usa al menos una vez *pendant que* y uno de los verbos que cambian de sentido."
+  }
+}

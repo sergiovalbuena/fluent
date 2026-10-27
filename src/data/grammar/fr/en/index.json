@@ -20,6 +20,21 @@
       "number": 4,
       "title": "Sounding natural",
       "description": "Liaison, pronouns, reflexive verbs and the imparfait."
+    },
+    {
+      "number": 5,
+      "title": "Comparing, finding your way, planning",
+      "description": "Comparatives, prepositions of place, the imperative, obligation and the future."
+    },
+    {
+      "number": 6,
+      "title": "Fine-tuning",
+      "description": "Possessive pronouns, which past tense to use and verbs that take a different preposition."
+    },
+    {
+      "number": 7,
+      "title": "Traps and details",
+      "description": "Tricky genders, accents, the aspirated h and the French of text messages."
     }
   ],
   "modules": [
@@ -27,6 +42,7 @@
       "slug": "vocales",
       "number": 1,
       "part": 1,
+      "level": "A1",
       "title": "French vowels",
       "tagline": "The sounds English doesn't have, letter combinations and nasal vowels.",
       "minutes": 10,
@@ -73,6 +89,7 @@
       "slug": "masculino-femenino",
       "number": 2,
       "part": 1,
+      "level": "A1",
       "title": "Masculine and feminine",
       "tagline": "Articles, endings that give gender away and the words most learners get wrong.",
       "minutes": 12,
@@ -126,6 +143,7 @@
       "slug": "demostrativos",
       "number": 3,
       "part": 1,
+      "level": "A1",
       "title": "Ce, cet, cette, ces",
       "tagline": "Demonstratives: which one to use, how they sound and how not to confuse them with se and ses.",
       "minutes": 8,
@@ -168,6 +186,7 @@
       "slug": "etre-avoir",
       "number": 4,
       "part": 1,
+      "level": "A1",
       "title": "Être and avoir",
       "tagline": "The two most used verbs: conjugation, uses and where French says «have» but English says «be».",
       "minutes": 10,
@@ -216,6 +235,7 @@
       "slug": "verbos-regulares",
       "number": 5,
       "part": 2,
+      "level": "A1",
       "title": "Regular verbs in the present",
       "tagline": "The -er, -ir and -re groups, and why four forms sound the same.",
       "minutes": 10,
@@ -264,6 +284,7 @@
       "slug": "partitivos",
       "number": 6,
       "part": 2,
+      "level": "A1",
       "title": "Du, de la, de l', des",
       "tagline": "Partitive articles: food and quantities, without mixing up likes and eating.",
       "minutes": 9,
@@ -311,6 +332,7 @@
       "slug": "numeros",
       "number": 7,
       "part": 2,
+      "level": "A1",
       "title": "Numbers: rules and traps",
       "tagline": "The logic of 70 to 99, et, the s in vingts and cents, and how they change sound.",
       "minutes": 10,
@@ -367,6 +389,7 @@
       "slug": "posesivos",
       "number": 8,
       "part": 2,
+      "level": "A1",
       "title": "Mon, ma, mes",
       "tagline": "Possessives agree with the thing owned, not the owner: the big «his or her» trap.",
       "minutes": 8,
@@ -407,6 +430,7 @@
       "slug": "verbos-irregulares",
       "number": 9,
       "part": 2,
+      "level": "A1",
       "title": "Aller, faire, vouloir, pouvoir",
       "tagline": "Four essential irregular verbs, au and aux, and the future with aller.",
       "minutes": 10,
@@ -454,6 +478,7 @@
       "slug": "passe-compose",
       "number": 10,
       "part": 3,
+      "level": "A2",
       "title": "The passé composé",
       "tagline": "Talking about what happened: avoir or être, past participles and agreement.",
       "minutes": 12,
@@ -502,6 +527,7 @@
       "slug": "preguntas",
       "number": 11,
       "part": 3,
+      "level": "A1",
       "title": "Asking questions",
       "tagline": "Three registers, inversion and quel, quelle, quels, quelles.",
       "minutes": 9,
@@ -548,6 +574,7 @@
       "slug": "negacion",
       "number": 12,
       "part": 3,
+      "level": "A2",
       "title": "Negation",
       "tagline": "Ne… pas and its family, where each part goes, ne… que and the answer si.",
       "minutes": 10,
@@ -597,6 +624,7 @@
       "slug": "adjetivos",
       "number": 13,
       "part": 3,
+      "level": "A2",
       "title": "Adjectives",
       "tagline": "Plural, position, bel, nouvel, vieil, adjectives that change meaning, and comparisons.",
       "minutes": 12,
@@ -652,6 +680,7 @@
       "slug": "liaison",
       "number": 14,
       "part": 4,
+      "level": "A2",
       "title": "Liaison",
       "tagline": "Why words run together, which sound appears and when it's required or forbidden.",
       "minutes": 10,
@@ -694,6 +723,7 @@
       "slug": "pronombres",
       "number": 15,
       "part": 4,
+      "level": "A2",
       "title": "Object pronouns",
       "tagline": "Le, la, les, lui, leur: where they go and how to choose. Plus moi, toi, lui…",
       "minutes": 12,
@@ -742,6 +772,7 @@
       "slug": "en-y",
       "number": 16,
       "part": 4,
+      "level": "B1",
       "title": "En and y",
       "tagline": "Two tiny pronouns English barely has: places, quantities and everyday expressions.",
       "minutes": 11,
@@ -791,6 +822,7 @@
       "slug": "pronominales",
       "number": 17,
       "part": 4,
+      "level": "A2",
       "title": "Reflexive verbs",
       "tagline": "I get up, I get dressed: conjugation, verbs that are reflexive only in French and the past with être.",
       "minutes": 10,
@@ -839,6 +871,7 @@
       "slug": "imparfait",
       "number": 18,
       "part": 4,
+      "level": "A2",
       "title": "L'imparfait",
       "tagline": "Describing the past and telling stories by combining it with the passé composé.",
       "minutes": 10,
@@ -879,6 +912,513 @@
           "title": "Then and now",
           "section": "final",
           "count": 4
+        }
+      ]
+    },
+    {
+      "slug": "comparativos",
+      "number": 19,
+      "part": 5,
+      "level": "A2",
+      "title": "Comparatives and superlatives",
+      "tagline": "More, less, as… as, better and «the most… in the world».",
+      "minutes": 12,
+      "sections": [
+        "More, less, as… as",
+        "With nouns and verbs",
+        "Meilleur or mieux",
+        "The most… in the world"
+      ],
+      "exercises": [
+        {
+          "id": "mas-menos",
+          "title": "More, less or as",
+          "section": "adjetivos",
+          "count": 7
+        },
+        {
+          "id": "aussi-autant",
+          "title": "Aussi, autant or autant de",
+          "section": "nombres-verbos",
+          "count": 7
+        },
+        {
+          "id": "cantidades",
+          "title": "With or without de?",
+          "section": "nombres-verbos",
+          "count": 6
+        },
+        {
+          "id": "meilleur-mieux",
+          "title": "Meilleur or mieux",
+          "section": "mejor",
+          "count": 7
+        },
+        {
+          "id": "superlativo",
+          "title": "Build the superlative",
+          "section": "superlativo",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "preposiciones-lugar",
+      "number": 20,
+      "part": 5,
+      "level": "A1",
+      "title": "Prepositions of place",
+      "tagline": "Where things are, chez, cities, countries and transport.",
+      "minutes": 11,
+      "sections": [
+        "Where is it?",
+        "The ones with de",
+        "Cities and countries",
+        "Chez and transport"
+      ],
+      "exercises": [
+        {
+          "id": "donde-esta",
+          "title": "Where is it?",
+          "section": "posicion",
+          "count": 6
+        },
+        {
+          "id": "contraccion",
+          "title": "Du, de la, de l', des",
+          "section": "contracciones",
+          "count": 7
+        },
+        {
+          "id": "paises",
+          "title": "À, en, au or aux",
+          "section": "paises",
+          "count": 10
+        },
+        {
+          "id": "chez-transporte",
+          "title": "Chez, en or à",
+          "section": "chez",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "imperativo",
+      "number": 21,
+      "part": 5,
+      "level": "A2",
+      "title": "The imperative",
+      "tagline": "Giving orders, advice and instructions, positive and negative.",
+      "minutes": 11,
+      "sections": [
+        "Three persons, no subject",
+        "The four irregular ones",
+        "Negative orders",
+        "Where the pronouns go"
+      ],
+      "exercises": [
+        {
+          "id": "forma",
+          "title": "Form the imperative",
+          "section": "formas",
+          "count": 8
+        },
+        {
+          "id": "irregulares",
+          "title": "Être, avoir, savoir, vouloir",
+          "section": "irregulares",
+          "count": 6
+        },
+        {
+          "id": "negativo",
+          "title": "Make it negative",
+          "section": "negativo",
+          "count": 5
+        },
+        {
+          "id": "pronombres",
+          "title": "With pronouns",
+          "section": "pronombres",
+          "count": 6
+        },
+        {
+          "id": "receta",
+          "title": "A recipe",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "obligacion",
+      "number": 22,
+      "part": 5,
+      "level": "A2",
+      "title": "Obligation: il faut and devoir",
+      "tagline": "Must, have to, don't have to and need.",
+      "minutes": 10,
+      "sections": [
+        "Il faut: you have to",
+        "Devoir: must, have to",
+        "Mustn't or don't have to",
+        "Avoir besoin de: to need"
+      ],
+      "exercises": [
+        {
+          "id": "faut-o-no",
+          "title": "Have to or mustn't?",
+          "section": "il-faut",
+          "count": 6
+        },
+        {
+          "id": "devoir-forma",
+          "title": "Conjugate devoir",
+          "section": "devoir",
+          "count": 6
+        },
+        {
+          "id": "prohibido-libre",
+          "title": "Forbidden or optional?",
+          "section": "no-hace-falta",
+          "count": 6
+        },
+        {
+          "id": "besoin",
+          "title": "Avoir besoin de",
+          "section": "necesitar",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "futur-simple",
+      "number": 23,
+      "part": 5,
+      "level": "A2",
+      "title": "The futur simple",
+      "tagline": "Predictions, promises and plans: I will do, I will be, I will have.",
+      "minutes": 11,
+      "sections": [
+        "How to form it",
+        "Irregular stems",
+        "Near future or futur simple",
+        "After quand and si"
+      ],
+      "exercises": [
+        {
+          "id": "regulares",
+          "title": "Regular verbs",
+          "section": "formacion",
+          "count": 7
+        },
+        {
+          "id": "irregulares",
+          "title": "Irregular verbs",
+          "section": "irregulares",
+          "count": 8
+        },
+        {
+          "id": "proche-a-simple",
+          "title": "From near future to futur simple",
+          "section": "proche-simple",
+          "count": 6
+        },
+        {
+          "id": "quand-si",
+          "title": "Quand and si",
+          "section": "quand-si",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "pronombres-posesivos",
+      "number": 24,
+      "part": 6,
+      "level": "B1",
+      "title": "Le mien, le tien, le sien",
+      "tagline": "Mine, yours, his, hers… and «it's mine» with être à.",
+      "minutes": 10,
+      "sections": [
+        "The forms",
+        "It agrees with the thing",
+        "Au mien, du mien and c'est à moi"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Choose the pronoun",
+          "section": "formas",
+          "count": 6
+        },
+        {
+          "id": "sien-leur",
+          "title": "Sien or leur",
+          "section": "concordancia",
+          "count": 6
+        },
+        {
+          "id": "sustituye",
+          "title": "Don't repeat",
+          "section": "concordancia",
+          "count": 6
+        },
+        {
+          "id": "a-de",
+          "title": "À moi, au mien, du mien",
+          "section": "a-de",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "pc-imparfait",
+      "number": 25,
+      "part": 6,
+      "level": "B1",
+      "title": "Passé composé or imparfait",
+      "tagline": "Durations, verbs that change meaning and how to tell a story.",
+      "minutes": 12,
+      "sections": [
+        "The basic rule",
+        "Durations and repetitions",
+        "Verbs that change meaning",
+        "Pendant que, quand and être en train de",
+        "Telling a story"
+      ],
+      "exercises": [
+        {
+          "id": "duracion",
+          "title": "Closed period or habit?",
+          "section": "duracion",
+          "count": 6
+        },
+        {
+          "id": "sentido",
+          "title": "The meaning changes",
+          "section": "verbos-estado",
+          "count": 6
+        },
+        {
+          "id": "pendant-que",
+          "title": "In progress or interruption",
+          "section": "pendant-que",
+          "count": 6
+        },
+        {
+          "id": "historia",
+          "title": "One Saturday morning",
+          "section": "relato",
+          "count": 7
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "verbos-preposicion",
+      "number": 26,
+      "part": 6,
+      "level": "B1",
+      "title": "Verbs and prepositions",
+      "tagline": "Listen to, wait for, think about… and décider de.",
+      "minutes": 11,
+      "sections": [
+        "No preposition in French",
+        "Verbs with a different preposition",
+        "Verb + de / à + infinitive"
+      ],
+      "exercises": [
+        {
+          "id": "sin-a",
+          "title": "With or without a preposition?",
+          "section": "a-personal",
+          "count": 6
+        },
+        {
+          "id": "preposicion",
+          "title": "The right preposition",
+          "section": "otra-preposicion",
+          "count": 8
+        },
+        {
+          "id": "infinitivo",
+          "title": "De or à",
+          "section": "infinitivo",
+          "count": 9
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in French",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "genero-trampas",
+      "number": 27,
+      "part": 7,
+      "level": "A2",
+      "title": "Tricky genders",
+      "tagline": "Le sourire ends in -e, la mer doesn't: the words that break the pattern.",
+      "minutes": 10,
+      "sections": [
+        "Words that break the pattern",
+        "Clues in the ending",
+        "One gender, one meaning"
+      ],
+      "exercises": [
+        {
+          "id": "le-la",
+          "title": "Le or la?",
+          "section": "cambian",
+          "count": 12
+        },
+        {
+          "id": "un-une",
+          "title": "Un or une?",
+          "section": "terminaciones",
+          "count": 12
+        },
+        {
+          "id": "dos-generos",
+          "title": "Gender changes the meaning",
+          "section": "dos-generos",
+          "count": 7
+        },
+        {
+          "id": "concordancia",
+          "title": "The adjective gives it away",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "acentos-h",
+      "number": 28,
+      "part": 7,
+      "level": "A1",
+      "title": "Accents and the h",
+      "tagline": "What each accent does, words told apart by an accent, and the aspirated h.",
+      "minutes": 10,
+      "sections": [
+        "What accents are for",
+        "One accent, another word",
+        "Silent h and aspirated h"
+      ],
+      "exercises": [
+        {
+          "id": "acento",
+          "title": "Which spelling?",
+          "section": "acentos",
+          "count": 8
+        },
+        {
+          "id": "distinguen",
+          "title": "With or without an accent?",
+          "section": "distinguen",
+          "count": 7
+        },
+        {
+          "id": "circunflejo",
+          "title": "The hidden s",
+          "section": "acentos",
+          "count": 6
+        },
+        {
+          "id": "h",
+          "title": "L', le or la",
+          "section": "h-aspirada",
+          "count": 8
+        },
+        {
+          "id": "elision",
+          "title": "Elision or not?",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "mensajes",
+      "number": 29,
+      "part": 7,
+      "level": "B1",
+      "title": "Texting in French",
+      "tagline": "mdr, tkt, jsp: abbreviations and the informal French of WhatsApp.",
+      "minutes": 9,
+      "sections": [
+        "The abbreviations",
+        "Informal grammar",
+        "When to use it"
+      ],
+      "exercises": [
+        {
+          "id": "descifra",
+          "title": "What does it mean?",
+          "section": "abreviaturas",
+          "count": 8
+        },
+        {
+          "id": "completa",
+          "title": "Write it in full",
+          "section": "abreviaturas",
+          "count": 6
+        },
+        {
+          "id": "estandar",
+          "title": "From text to standard",
+          "section": "oral",
+          "count": 6
+        },
+        {
+          "id": "registro",
+          "title": "The right message",
+          "section": "registro",
+          "count": 4
+        },
+        {
+          "id": "entiende",
+          "title": "Read the message",
+          "section": "final",
+          "count": 5
         }
       ]
     }

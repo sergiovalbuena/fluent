@@ -1,0 +1,202 @@
+{
+  "slug": "acentos-h",
+  "number": 28,
+  "part": 7,
+  "level": "A1",
+  "title": "Los acentos y la h",
+  "tagline": "Qué hace cada acento, palabras que se distinguen por un acento y la h aspirada.",
+  "goal": "Saber qué indica cada acento francés, distinguir a / à, ou / où o la / là, y reconocer las palabras con h aspirada, que no admiten elisión ni liaison.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "acentos",
+      "title": "Para qué sirven los acentos",
+      "blocks": [
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "No marcan la sílaba fuerte",
+          "text": "En español, la tilde dice dónde cae el golpe de voz. En francés **no**: el golpe va casi siempre al final de la palabra. Los acentos franceses cambian **el sonido** de la vocal o distinguen palabras."
+        },
+        {
+          "type": "table",
+          "head": ["Acento", "Qué hace", "Ejemplos"],
+          "rows": [
+            ["**é** agudo", "e cerrada, como la e española", "*été, café, étudiant*"],
+            ["**è** grave", "e abierta, «è»", "*mère, très, problème*"],
+            ["**ê** circunflejo", "e abierta; a menudo recuerda una s perdida", "*fête* (fiesta), *forêt* (floresta), *tête*"],
+            ["**ç** cedilla", "la c suena s delante de a, o, u", "*ça, garçon, français*"],
+            ["**ë, ï** diéresis", "la vocal se pronuncia aparte", "*Noël, maïs* (ma-ís)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "El circunflejo esconde una s",
+          "text": "Si ves *â, ê, î, ô, û*, prueba a añadir una s: *hôpital* → hospital, *île* → isla, *fête* → fiesta, *côte* → costa, *bête* → bestia."
+        },
+        {
+          "type": "text",
+          "text": "Repasa los sonidos de cada vocal en [[1]]."
+        }
+      ]
+    },
+    {
+      "id": "distinguen",
+      "title": "Un acento, otra palabra",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Como «el / él» o «si / sí» en español, a veces el acento es lo único que separa dos palabras:"
+        },
+        {
+          "type": "table",
+          "head": ["Sin acento", "Con acento"],
+          "rows": [
+            ["*a* = tiene (avoir)", "*à* = a, en"],
+            ["*ou* = o", "*où* = dónde"],
+            ["*la* = la (artículo)", "*là* = ahí, allí"],
+            ["*sur* = sobre, encima de", "*sûr* = seguro"],
+            ["*du* = del", "*dû* = debido (participio de devoir)"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Il {a} une maison {à} Paris.", "tr": "Tiene una casa en París." },
+            { "fr": "Thé {ou} café ? — {Où} est le café ?", "tr": "¿Té o café? — ¿Dónde está el café?" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "En mayúsculas también se escriben: *À bientôt, École*. En el teclado de la app tienes botones para todos."
+        }
+      ]
+    },
+    {
+      "id": "h-aspirada",
+      "title": "La h muda y la h aspirada",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "La h francesa **nunca se pronuncia**. Pero hay dos tipos, y se nota en las palabras de alrededor:"
+        },
+        {
+          "type": "table",
+          "head": ["", "h muda (la mayoría)", "h aspirada"],
+          "rows": [
+            ["Se comporta como", "una vocal", "una consonante"],
+            ["Elisión", "*{l'}homme, {l'}hôtel, {j'}habite*", "*{le} héros, {la} honte, {le} haricot*"],
+            ["Liaison [[14]]", "*les‿hommes* (lezóm)", "*les │ héros* (le eró)"]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Las más frecuentes con h aspirada: *le hasard* (el azar), *le haricot* (la judía, el frijol), *la honte* (la vergüenza), *le héros*, *le hibou* (el búho), *le homard* (la langosta), *le hamburger*, *le hockey*, *en haut* (arriba), *le huit*."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Por qué importa",
+          "text": "Con liaison, *les‿héros* sonaría «les zéros» (los ceros). Por eso: *les │ héros*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "acento",
+      "section": "acentos",
+      "title": "¿Cuál se escribe así?",
+      "instructions": "Elige la ortografía correcta de la palabra.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "(verano)", "options": ["été", "ète", "êté"], "answer": "été" },
+        { "prompt": "(madre)", "options": ["mère", "mére", "mêre"], "answer": "mère" },
+        { "prompt": "(fiesta)", "options": ["fête", "fète", "féte"], "answer": "fête" },
+        { "prompt": "(muy)", "options": ["très", "trés", "três"], "answer": "très" },
+        { "prompt": "(chico)", "options": ["garçon", "garcon", "garsson"], "answer": "garçon" },
+        { "prompt": "(Navidad)", "options": ["Noël", "Noèl", "Noél"], "answer": "Noël" },
+        { "prompt": "(hospital)", "options": ["hôpital", "hopital", "hòpital"], "answer": "hôpital" },
+        { "prompt": "(bosque)", "options": ["forêt", "forèt", "forét"], "answer": "forêt" }
+      ]
+    },
+    {
+      "id": "distinguen",
+      "section": "distinguen",
+      "title": "¿Con o sin acento?",
+      "instructions": "Elige la palabra que tiene sentido.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Il ___ un chien.", "options": ["a", "à"], "answer": "a" },
+        { "prompt": "Je vais ___ Paris demain.", "options": ["à", "a"], "answer": "à" },
+        { "prompt": "Tu veux du thé ___ du café ?", "options": ["ou", "où"], "answer": "ou" },
+        { "prompt": "___ est la gare ?", "options": ["Où", "Ou"], "answer": "Où" },
+        { "prompt": "Ton livre est ___, sur la table.", "options": ["là", "la"], "answer": "là" },
+        { "prompt": "Tu es ___ ? Tu ne veux pas venir ?", "options": ["sûr", "sur"], "answer": "sûr" },
+        { "prompt": "Le chat dort ___ le canapé.", "options": ["sur", "sûr"], "answer": "sur" }
+      ]
+    },
+    {
+      "id": "circunflejo",
+      "section": "acentos",
+      "title": "La s escondida",
+      "instructions": "Escribe la palabra francesa. Pista: el circunflejo sustituye a una s.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "isla → ___", "answer": "île" },
+        { "prompt": "fiesta → ___", "answer": "fête" },
+        { "prompt": "bestia → ___", "answer": "bête" },
+        { "prompt": "costa → ___", "answer": "côte" },
+        { "prompt": "hospital → ___", "answer": "hôpital" },
+        { "prompt": "floresta (bosque) → ___", "answer": "forêt" }
+      ]
+    },
+    {
+      "id": "h",
+      "section": "h-aspirada",
+      "title": "L', le o la",
+      "instructions": "Elige el artículo. Con h aspirada no hay elisión.",
+      "kind": "choice",
+      "options": ["l'", "le", "la"],
+      "items": [
+        { "prompt": "___ homme", "answer": "l'" },
+        { "prompt": "___ héros", "answer": "le" },
+        { "prompt": "___ hôtel", "answer": "l'" },
+        { "prompt": "___ haricot", "answer": "le" },
+        { "prompt": "___ honte", "answer": "la" },
+        { "prompt": "___ heure", "answer": "l'" },
+        { "prompt": "___ hasard", "answer": "le" },
+        { "prompt": "___ histoire", "answer": "l'" }
+      ]
+    },
+    {
+      "id": "elision",
+      "section": "final",
+      "title": "¿Elisión o no?",
+      "instructions": "Une las dos palabras como se escriben en francés.",
+      "kind": "type",
+      "items": [
+        { "prompt": "le + hôpital → ___", "answer": "l'hôpital" },
+        { "prompt": "le + héros → ___", "answer": "le héros" },
+        { "prompt": "je + habite → ___", "answer": "j'habite" },
+        { "prompt": "de + haricots → ___", "answer": "de haricots" },
+        { "prompt": "la + île → ___", "answer": "l'île" },
+        { "prompt": "le + hamburger → ___", "answer": "le hamburger" }
+      ]
+    }
+  ],
+  "checklist": [
+    "Sé que los acentos franceses cambian el sonido, no la sílaba fuerte.",
+    "Distingo *é, è, ê* y uso la *ç*.",
+    "No confundo *a / à, ou / où, la / là, sur / sûr*.",
+    "Reconozco las palabras con h aspirada: sin elisión ni liaison."
+  ],
+  "challenge": {
+    "title": "Caza de circunflejos",
+    "text": "Busca en un texto francés (una noticia, una canción) diez palabras con *â, ê, î, ô* o *û* e intenta adivinar la palabra española escondida añadiendo una s. ¿Cuántas acertaste?"
+  }
+}

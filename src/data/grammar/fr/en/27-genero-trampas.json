@@ -1,0 +1,178 @@
+{
+  "slug": "genero-trampas",
+  "number": 27,
+  "part": 7,
+  "level": "A2",
+  "title": "Tricky genders",
+  "tagline": "Le sourire ends in -e, la mer doesn't: the words that break the pattern.",
+  "goal": "Recognise everyday words whose gender breaks the usual pattern, use word endings as clues, and tell apart the words whose meaning changes with their gender.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "cambian",
+      "title": "Words that break the pattern",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In [[2]] you saw the rough rule: words ending in **-e** are often feminine, the rest often masculine. Many common words break it, so it's worth learning them with their article."
+        },
+        {
+          "type": "table",
+          "head": ["Masculine, but ends in -e", "Feminine, but no final -e"],
+          "rows": [
+            ["*{le} sourire* (smile)", "*{la} couleur* (colour)"],
+            ["*{le} musée* (museum)", "*{la} mer* (sea)"],
+            ["*{le} lycée* (high school)", "*{la} dent* (tooth)"],
+            ["*{le} silence*", "*{la} fin* (end)"],
+            ["*{le} modèle* (model)", "*{la} peur* (fear)"],
+            ["*{le} groupe* (group)", "*{la} main* (hand)"],
+            ["*{le} rêve* (dream)", "*{la} nuit* (night)"],
+            ["*{le} visage* (face)", "*{la} souris* (mouse)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Learn them with an adjective",
+          "text": "A short phrase sticks better than a list: *du lait {frais}, une couleur {claire}, la mer {froide}, un beau sourire*."
+        }
+      ]
+    },
+    {
+      "id": "terminaciones",
+      "title": "Clues in the ending",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Ending", "Gender", "Examples", "Watch out"],
+          "rows": [
+            ["*-eur* (qualities, feelings)", "feminine", "*la couleur, la chaleur, la douleur, l'odeur, l'erreur*", "exceptions: *le bonheur, le malheur, l'honneur*"],
+            ["*-eur* (people, machines)", "masculine", "*le chanteur, l'ordinateur, le moteur*", ""],
+            ["*-age*", "masculine", "*le voyage, le fromage, le message*", "exceptions: *la plage, la page, l'image* (f.)"],
+            ["*-ème*", "masculine", "*le problème, le système, le thème*", "they end in -e but are masculine"],
+            ["*-tion, -sion, -té*", "feminine", "*la décision, la liberté, la beauté*", "almost always"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "With *l'* you can't see the gender: *l'image, l'ordinateur*. To check, think of *une image*, *un ordinateur*."
+        }
+      ]
+    },
+    {
+      "id": "dos-generos",
+      "title": "One gender, one meaning",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Some words exist in both genders, with different meanings:"
+        },
+        {
+          "type": "table",
+          "head": ["Masculine", "Feminine"],
+          "rows": [
+            ["*le livre* = the book", "*la livre* = the pound (half a kilo, money)"],
+            ["*le tour* = the tour, the turn", "*la tour* = the tower"],
+            ["*le poste* = the job, the position", "*la poste* = the post office"],
+            ["*le mode* = the mode, the method", "*la mode* = fashion"],
+            ["*le manche* = the handle", "*la manche* = the sleeve"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "On fait {le} tour de {la} tour Eiffel ?", "tr": "Shall we walk around the Eiffel Tower?" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "le-la",
+      "section": "cambian",
+      "title": "Le or la?",
+      "instructions": "Choose the article.",
+      "kind": "choice",
+      "options": ["le", "la"],
+      "items": [
+        { "prompt": "___ lait (milk)", "answer": "le" },
+        { "prompt": "___ couleur (colour)", "answer": "la" },
+        { "prompt": "___ nez (nose)", "answer": "le" },
+        { "prompt": "___ mer (sea)", "answer": "la" },
+        { "prompt": "___ lit (bed)", "answer": "le" },
+        { "prompt": "___ dent (tooth)", "answer": "la" },
+        { "prompt": "___ sourire (smile)", "answer": "le" },
+        { "prompt": "___ fin (end)", "answer": "la" },
+        { "prompt": "___ sang (blood)", "answer": "le" },
+        { "prompt": "___ voiture (car)", "answer": "la" },
+        { "prompt": "___ dos (back)", "answer": "le" },
+        { "prompt": "___ peur (fear)", "answer": "la" }
+      ]
+    },
+    {
+      "id": "un-une",
+      "section": "terminaciones",
+      "title": "Un or une?",
+      "instructions": "Use the ending as a clue.",
+      "kind": "choice",
+      "options": ["un", "une"],
+      "items": [
+        { "prompt": "___ fromage", "answer": "un" },
+        { "prompt": "___ plage", "answer": "une", "explain": "An exception to *-age*: *la plage*." },
+        { "prompt": "___ problème", "answer": "un" },
+        { "prompt": "___ chaleur", "answer": "une" },
+        { "prompt": "___ bonheur", "answer": "un", "explain": "An exception to *-eur*: *le bonheur*." },
+        { "prompt": "___ décision", "answer": "une" },
+        { "prompt": "___ voyage", "answer": "un" },
+        { "prompt": "___ image", "answer": "une", "explain": "An exception to *-age*: *une image*." },
+        { "prompt": "___ ordinateur", "answer": "un" },
+        { "prompt": "___ odeur", "answer": "une" },
+        { "prompt": "___ système", "answer": "un" },
+        { "prompt": "___ page", "answer": "une" }
+      ]
+    },
+    {
+      "id": "dos-generos",
+      "section": "dos-generos",
+      "title": "Gender changes the meaning",
+      "instructions": "Choose the article that fits the meaning.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "J'ai acheté ___ livre de cuisine.", "options": ["un", "une"], "answer": "un" },
+        { "prompt": "Les cerises coûtent deux euros ___ livre.", "options": ["la", "le"], "answer": "la", "explain": "*la livre* = half a kilo." },
+        { "prompt": "On a visité ___ tour Eiffel.", "options": ["la", "le"], "answer": "la" },
+        { "prompt": "On fait ___ tour du lac ?", "options": ["le", "la"], "answer": "le" },
+        { "prompt": "Je vais à ___ poste pour envoyer un colis.", "options": ["la", "le"], "answer": "la" },
+        { "prompt": "Elle a trouvé ___ nouveau poste à Lyon.", "options": ["un", "une"], "answer": "un" },
+        { "prompt": "Elle adore ___ mode italienne.", "options": ["la", "le"], "answer": "la" }
+      ]
+    },
+    {
+      "id": "concordancia",
+      "section": "final",
+      "title": "The adjective gives it away",
+      "instructions": "Write the adjective in the right form.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Cette couleur est très ___. (beau)", "answer": "belle" },
+        { "prompt": "Le lait est ___ ? (frais)", "answer": "frais" },
+        { "prompt": "J'ai une ___ douleur au dos. (grand)", "answer": "grande" },
+        { "prompt": "La mer est ___ aujourd'hui. (froid)", "answer": "froide" },
+        { "prompt": "Il a un ___ sourire. (beau)", "answer": "beau" },
+        { "prompt": "Cette peur est ___. (normal)", "answer": "normale" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I know that *le sourire, le musée, le lycée, le silence* are masculine.",
+    "I know that *la couleur, la mer, la dent, la peur* are feminine.",
+    "I use the endings *-eur, -age, -ème, -tion* as clues.",
+    "I tell apart *le livre / la livre, le tour / la tour, le poste / la poste*."
+  ],
+  "challenge": {
+    "title": "Your own list",
+    "text": "For a week, note down every French word whose gender surprises you, always with an adjective: *une erreur grave, le sel fin, la fin heureuse*. At the end, write a short text that uses at least five of them."
+  }
+}

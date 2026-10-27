@@ -178,7 +178,10 @@
     "correct_short": "Correct!",
     "next_phrase": "Next",
     "next_round": "Next round",
-    "done": "Done!"
+    "done": "Done!",
+    "show_translation": "Show translation",
+    "hide_translation": "Hide translation",
+    "listen": "Listen"
   },
   "gems": {
     "title": "Gems",
@@ -849,7 +852,8 @@
     "rw_repeat": "Repeat or mixed review",
     "rw_module": "Master the module",
     "rewards_left_label": "Left",
-    "module_bonus": "Module bonus"
+    "module_bonus": "Module bonus",
+    "level_hint": "Level {level} on the CEFR scale"
   },
   "community": {
     "title": "Community",
