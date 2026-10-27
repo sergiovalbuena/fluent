@@ -2,6 +2,7 @@
 // Generates the SQL that loads a course from content/<lang>/lecon-NN.json into Supabase.
 //
 // Usage: node scripts/generate-course-sql.mjs fr > supabase/seed/french_course.sql
+//        node scripts/generate-course-sql.mjs fr --only qa   (updates the Q&A activities in place)
 //
 // The authoring JSON keeps translations side by side ({ en, es }).
 // The app reads `translation` (legacy default) plus `translations: { es }`,
@@ -57,19 +58,20 @@ function seededPermutation(n, seedText) {
 }
 
 function questionContent(q, i, lessonNumber) {
-  const enOptions = Array.isArray(q.options) ? q.options : q.options[base]
-  const order = seededPermutation(enOptions.length, `${lessonNumber}-${i}`)
+  const order = seededPermutation(q.options.length, `${lessonNumber}-${i}`)
   const reorder = opts => order.map(k => opts[k])
-  const es = { question: q.question.es, explanation: q.explanation.es }
-  if (!Array.isArray(q.options)) es.options = reorder(q.options.es)
+  // Asked and answered in the course language; the question in the learner's
+  // language is a translation shown on demand
+  const translations = Object.fromEntries(
+    ['en', 'es'].filter(l => l !== lang).map(l => [l, { question: q.question[l], explanation: q.explanation[l] }]),
+  )
   return {
     id: String(i + 1),
-    // Questions are always authored in English too; Spanish is the translation
-    question: q.question.en,
-    options: reorder(enOptions),
+    question: q.question[lang],
+    options: reorder(q.options),
     correct: order.indexOf(q.correct),
     explanation: q.explanation.en,
-    translations: { es },
+    translations,
   }
 }
 
@@ -126,6 +128,18 @@ const out = [
   `delete from modules where language_code = ${sqlString(lang)};`,
   '',
 ]
+
+// --only qa: update just the Q&A activity of each lesson in place, keeping the
+// module and lesson ids (and with them the learners' progress)
+if (process.argv.includes('--only') && process.argv[process.argv.indexOf('--only') + 1] === 'qa') {
+  const updates = files.map(file => {
+    const d = JSON.parse(readFileSync(join(dir, file), 'utf8'))
+    const qa = lessonsFor(d).find(l => l.type === 'qa')
+    return `update lessons set content = ${sqlJson(qa.content)} where type = 'qa' and module_id = (select id from modules where language_code = ${sqlString(lang)} and slug = ${sqlString(d.slug)});`
+  })
+  process.stdout.write(updates.join('\n') + '\n')
+  process.exit(0)
+}
 
 for (const file of files) {
   const d = JSON.parse(readFileSync(join(dir, file), 'utf8'))

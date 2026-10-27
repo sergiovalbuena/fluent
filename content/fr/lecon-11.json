@@ -386,6 +386,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « J'ai mal ___ dos. »",
         "en": "Complete: \"J'ai mal ___ dos.\"",
         "es": "Completa: «J'ai mal ___ dos.»"
       },
@@ -403,6 +404,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle a mal ___ dents. »",
         "en": "Complete: \"Elle a mal ___ dents.\"",
         "es": "Completa: «Elle a mal ___ dents.»"
       },
@@ -420,81 +422,61 @@
     },
     {
       "question": {
-        "en": "\"Ils sont pâles, ils doivent être malades.\" What does \"doivent\" express here?",
-        "es": "«Ils sont pâles, ils doivent être malades.» ¿Qué expresa aquí «doivent»?"
+        "fr": "Tes voisins sont tout pâles. Tu supposes qu'ils sont malades. Qu'est-ce que tu dis ?",
+        "en": "Your neighbours look very pale. You guess they're ill. What do you say?",
+        "es": "Tus vecinos están muy pálidos. Supones que están enfermos. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "probability",
-          "obligation",
-          "the past",
-          "a wish"
-        ],
-        "es": [
-          "probabilidad",
-          "obligación",
-          "el pasado",
-          "un deseo"
-        ]
-      },
+      "options": [
+        "Ils doivent être malades.",
+        "Ils vont être malades.",
+        "Ils ont été malades.",
+        "Ils seront malades."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Devoir\" can mean \"must be / probably are\".",
-        "es": "«Devoir» puede significar «deben de estar / probablemente están»."
+        "en": "\"Devoir\" can express probability: \"ils doivent être malades\" = they must be ill.",
+        "es": "«Devoir» puede expresar probabilidad: «ils doivent être malades» = deben de estar enfermos."
       }
     },
     {
       "question": {
-        "en": "What does \"donner un coup de main\" mean?",
-        "es": "¿Qué significa «donner un coup de main»?"
+        "fr": "Ton ami déménage et tu proposes de l'aider. Qu'est-ce que tu dis ?",
+        "en": "Your friend is moving house and you offer to help. What do you say?",
+        "es": "Tu amigo se muda y te ofreces a ayudarlo. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "to lend a hand",
-          "to hit someone",
-          "to shake hands",
-          "to wave"
-        ],
-        "es": [
-          "echar una mano",
-          "pegar a alguien",
-          "dar la mano",
-          "saludar con la mano"
-        ]
-      },
+      "options": [
+        "Je peux te donner un coup de main.",
+        "Je peux te donner un coup de pied.",
+        "Je peux te donner la main.",
+        "Je peux te prendre la main."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "It's an idiom: to help someone.",
-        "es": "Es una expresión: ayudar a alguien."
+        "en": "\"Donner un coup de main\" = to lend a hand. \"Un coup de pied\" is a kick!",
+        "es": "«Donner un coup de main» = echar una mano. ¡«Un coup de pied» es una patada!"
       }
     },
     {
       "question": {
-        "en": "Which sense is \"l'odorat\"?",
-        "es": "¿Qué sentido es «l'odorat»?"
+        "fr": "Avec quel sens est-ce qu'on sent le parfum des fleurs ?",
+        "en": "Which sense do you use to smell the flowers' perfume?",
+        "es": "¿Con qué sentido hueles el perfume de las flores?"
       },
-      "options": {
-        "en": [
-          "smell",
-          "hearing",
-          "taste",
-          "touch"
-        ],
-        "es": [
-          "el olfato",
-          "el oído",
-          "el gusto",
-          "el tacto"
-        ]
-      },
+      "options": [
+        "l'odorat",
+        "l'ouïe",
+        "le goût",
+        "le toucher"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "La vue, l'ouïe, l'odorat, le goût, le toucher.",
-        "es": "La vue, l'ouïe, l'odorat, le goût, le toucher."
+        "en": "\"L'odorat\" = smell, \"l'ouïe\" = hearing, \"le goût\" = taste, \"le toucher\" = touch.",
+        "es": "«L'odorat» = el olfato, «l'ouïe» = el oído, «le goût» = el gusto, «le toucher» = el tacto."
       }
     },
     {
       "question": {
+        "fr": "Comment demandes-tu la taille de quelqu'un ?",
         "en": "How do you ask someone's height?",
         "es": "¿Cómo preguntas la estatura de alguien?"
       },
@@ -512,6 +494,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase est correcte en français ?",
         "en": "Which sentence is correct in French?",
         "es": "¿Qué frase es correcta en francés?"
       },
@@ -529,6 +512,7 @@
     },
     {
       "question": {
+        "fr": "Où se trouve le cerveau ?",
         "en": "Where is the brain?",
         "es": "¿Dónde está el cerebro?"
       },

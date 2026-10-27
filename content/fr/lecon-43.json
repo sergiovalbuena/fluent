@@ -336,6 +336,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Ton ami a un examen demain et il regarde la télé. Quel conseil lui donnes-tu ?",
         "en": "How do you give advice: \"You should study\"?",
         "es": "¿Cómo das un consejo: «Deberías estudiar»?"
       },
@@ -353,81 +354,61 @@
     },
     {
       "question": {
-        "en": "\"J'aurais pu venir.\" Meaning?",
-        "es": "«J'aurais pu venir.» ¿Significado?"
+        "fr": "Tu n'es pas allé à la fête, mais tu étais libre : c'était possible. Comment le dis-tu ?",
+        "en": "You didn't go to the party, but you were free: it was possible. How do you say it?",
+        "es": "No fuiste a la fiesta, pero estabas libre: era posible. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "I could have come.",
-          "I was able to come.",
-          "I will be able to come.",
-          "I came."
-        ],
-        "es": [
-          "Podría haber venido.",
-          "Pude venir.",
-          "Podré venir.",
-          "Vine."
-        ]
-      },
+      "options": [
+        "J'aurais pu venir.",
+        "J'ai pu venir.",
+        "Je pourrai venir.",
+        "Je pouvais venir demain."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Conditionnel passé of pouvoir.",
-        "es": "Conditionnel passé de pouvoir."
+        "en": "\"J'aurais pu\" + infinitive = I could have (but didn't).",
+        "es": "«J'aurais pu» + infinitivo = podría haber (pero no lo hice)."
       }
     },
     {
       "question": {
-        "en": "\"Elle doit être à la bibliothèque.\" What does \"doit\" express?",
-        "es": "«Elle doit être à la bibliothèque.» ¿Qué expresa «doit»?"
+        "fr": "Ta camarade n'est pas en cours. Elle va souvent étudier à la bibliothèque. Qu'est-ce que tu supposes ?",
+        "en": "Your classmate isn't in class. She often studies at the library. What do you assume?",
+        "es": "Tu compañera no está en clase. Suele estudiar en la biblioteca. ¿Qué supones?"
       },
-      "options": {
-        "en": [
-          "probability",
-          "obligation",
-          "the future",
-          "a wish"
-        ],
-        "es": [
-          "probabilidad",
-          "obligación",
-          "el futuro",
-          "un deseo"
-        ]
-      },
+      "options": [
+        "Elle doit être à la bibliothèque.",
+        "Elle va être à la bibliothèque.",
+        "Elle a dû aller demain.",
+        "Elle devra être à la bibliothèque."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "She is probably at the library.",
-        "es": "Probablemente está en la biblioteca."
+        "en": "Here \"devoir\" expresses probability: she must be at the library.",
+        "es": "Aquí «devoir» expresa probabilidad: debe de estar en la biblioteca."
       }
     },
     {
       "question": {
-        "en": "\"Passer un examen\" means…",
-        "es": "«Passer un examen» significa…"
+        "fr": "Demain matin, tu as ton examen de maths, et tu ne sais pas encore si tu vas réussir. Comment le dis-tu ?",
+        "en": "Tomorrow morning you're sitting your maths exam, and you don't know yet if you'll pass. How do you say it?",
+        "es": "Mañana por la mañana tienes el examen de matemáticas y aún no sabes si aprobarás. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "to take an exam",
-          "to pass an exam",
-          "to skip an exam",
-          "to write an exam"
-        ],
-        "es": [
-          "presentarse a un examen",
-          "aprobar un examen",
-          "saltarse un examen",
-          "redactar un examen"
-        ]
-      },
+      "options": [
+        "Demain, je passe mon examen.",
+        "Demain, je réussis mon examen.",
+        "Demain, je rate mon examen.",
+        "Demain, je donne mon examen."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "To pass = réussir.",
-        "es": "Aprobar = réussir."
+        "en": "Careful: \"passer un examen\" = to take an exam. \"Réussir\" = to pass, \"rater\" = to fail.",
+        "es": "Ojo: «passer un examen» = presentarse a un examen. «Réussir» = aprobar, «rater» = suspender."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Pas avant que j'___ fini. »",
         "en": "Complete: \"Pas avant que j'___ fini.\"",
         "es": "Completa: «Pas avant que j'___ fini.»"
       },
@@ -445,31 +426,25 @@
     },
     {
       "question": {
-        "en": "\"Nous avons intérêt à commencer.\" Meaning?",
-        "es": "«Nous avons intérêt à commencer.» ¿Significado?"
+        "fr": "Il est déjà tard et le projet est long. Tu dis à ton groupe qu'il vaut mieux commencer tout de suite. Qu'est-ce que tu dis ?",
+        "en": "It's already late and the project is long. You tell your group you'd better start right away. What do you say?",
+        "es": "Ya es tarde y el proyecto es largo. Le dices a tu grupo que más vale empezar ya. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "We'd better start.",
-          "We're interested in starting.",
-          "We started with interest.",
-          "We won't start."
-        ],
-        "es": [
-          "Más vale que empecemos.",
-          "Nos interesa empezar como tema.",
-          "Empezamos con interés.",
-          "No empezaremos."
-        ]
-      },
+      "options": [
+        "Nous avons intérêt à commencer.",
+        "Nous avons l'intérêt de commencer.",
+        "Nous sommes intéressés à commencer.",
+        "Nous avons commencé l'intérêt."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Avoir intérêt à\" = had better.",
-        "es": "«Avoir intérêt à» = más vale que."
+        "en": "\"Avoir intérêt à\" + infinitive = had better.",
+        "es": "«Avoir intérêt à» + infinitivo = más vale, nos conviene."
       }
     },
     {
       "question": {
+        "fr": "En France, quelle est la note habituelle pour réussir ?",
         "en": "In France, what is the usual pass mark?",
         "es": "En Francia, ¿cuál es la nota habitual para aprobar?"
       },
@@ -487,6 +462,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Ils ___ donner une conférence, mais ils sont malades. »",
         "en": "Complete: \"Ils ___ donner une conférence, mais ils sont malades.\"",
         "es": "Completa: «Ils ___ donner une conférence, mais ils sont malades.»"
       },

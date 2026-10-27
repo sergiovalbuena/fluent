@@ -332,6 +332,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « J'___ en train de lire quand le téléphone a sonné. »",
         "en": "Complete: \"J'___ en train de lire quand le téléphone a sonné.\"",
         "es": "Completa: «J'___ en train de lire quand le téléphone a sonné.»"
       },
@@ -349,6 +350,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase décrit le décor, l'arrière-plan ?",
         "en": "Which verb describes the background?",
         "es": "¿Qué verbo describe el fondo?"
       },
@@ -366,6 +368,7 @@
     },
     {
       "question": {
+        "fr": "« Nous partîmes le lendemain. » Comment le dit-on à l'oral ?",
         "en": "\"Nous partîmes le lendemain.\" Spoken equivalent?",
         "es": "«Nous partîmes le lendemain.» ¿Equivalente oral?"
       },
@@ -383,6 +386,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je suis content d'___ changé de chambre. »",
         "en": "Complete: \"Je suis content d'___ changé de chambre.\"",
         "es": "Completa: «Je suis content d'___ changé de chambre.»"
       },
@@ -400,6 +404,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il a monté les valises ___ je payais le taxi. »",
         "en": "Complete: \"Il a monté les valises ___ je payais le taxi.\"",
         "es": "Completa: «Il a monté les valises ___ je payais le taxi.»"
       },
@@ -417,6 +422,7 @@
     },
     {
       "question": {
+        "fr": "À l'hôtel, qui porte tes bagages ?",
         "en": "Who carries your luggage at a hotel?",
         "es": "¿Quién lleva tu equipaje en un hotel?"
       },
@@ -434,6 +440,7 @@
     },
     {
       "question": {
+        "fr": "Tu quittes l'hôtel. Qu'est-ce que tu dois faire à la réception ?",
         "en": "How do you say \"to pay the bill\" at a hotel?",
         "es": "¿Cómo se dice «pagar la cuenta» en un hotel?"
       },
@@ -451,27 +458,20 @@
     },
     {
       "question": {
-        "en": "\"Il n'y avait personne d'autre que nous.\" Meaning?",
-        "es": "«Il n'y avait personne d'autre que nous.» ¿Significado?"
+        "fr": "Le restaurant de l'hôtel était vide, à part ta famille. Comment le racontes-tu ?",
+        "en": "The hotel restaurant was empty except for your family. How do you tell it?",
+        "es": "El restaurante del hotel estaba vacío, aparte de tu familia. ¿Cómo lo cuentas?"
       },
-      "options": {
-        "en": [
-          "There was nobody but us.",
-          "There were other people with us.",
-          "Nobody saw us.",
-          "We were not there."
-        ],
-        "es": [
-          "No había nadie más que nosotros.",
-          "Había otras personas con nosotros.",
-          "Nadie nos vio.",
-          "No estábamos allí."
-        ]
-      },
+      "options": [
+        "Il n'y avait personne d'autre que nous.",
+        "Il y avait tout le monde sauf nous.",
+        "Il n'y avait pas de nous.",
+        "Personne n'était pas là."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Ne … personne d'autre que\" = nobody except.",
-        "es": "«Ne … personne d'autre que» = nadie más que."
+        "en": "\"Personne d'autre que\" = nobody but, nobody except.",
+        "es": "«Personne d'autre que» = nadie más que."
       }
     }
   ],

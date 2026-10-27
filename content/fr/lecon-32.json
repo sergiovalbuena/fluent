@@ -316,31 +316,25 @@
   "qa": [
     {
       "question": {
-        "en": "\"Le vol fut annulé.\" Which tense is \"fut\"?",
-        "es": "«Le vol fut annulé.» ¿Qué tiempo es «fut»?"
+        "fr": "Dans « Le vol fut annulé », à quel temps est le verbe « fut » ?",
+        "en": "In \"Le vol fut annulé\", which tense is \"fut\"?",
+        "es": "En «Le vol fut annulé», ¿en qué tiempo está «fut»?"
       },
-      "options": {
-        "en": [
-          "passé simple",
-          "imparfait",
-          "futur",
-          "subjunctive"
-        ],
-        "es": [
-          "passé simple",
-          "imperfecto",
-          "futuro",
-          "subjuntivo"
-        ]
-      },
+      "options": [
+        "au passé simple",
+        "au passé composé",
+        "à l'imparfait",
+        "au futur simple"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Être in the passé simple: il fut. In speech: \"a été\".",
-        "es": "Être en passé simple: il fut. Al hablar: «a été»."
+        "en": "\"Fut\" is être in the passé simple, the past tense of written stories.",
+        "es": "«Fut» es être en passé simple, el pasado de los relatos escritos."
       }
     },
     {
       "question": {
+        "fr": "Comment dit-on « ils arrivèrent » à l'oral ?",
         "en": "What is the spoken equivalent of \"ils arrivèrent\"?",
         "es": "¿Cuál es el equivalente oral de «ils arrivèrent»?"
       },
@@ -358,6 +352,7 @@
     },
     {
       "question": {
+        "fr": "Où est-ce que tu reçois ta carte d'embarquement ?",
         "en": "Where do you get your boarding pass?",
         "es": "¿Dónde obtienes la tarjeta de embarque?"
       },
@@ -375,56 +370,43 @@
     },
     {
       "question": {
-        "en": "\"L'avion vient d'atterrir.\" Meaning?",
-        "es": "«L'avion vient d'atterrir.» ¿Significado?"
+        "fr": "Ta mère t'appelle : l'avion de ton frère s'est posé il y a une minute. Qu'est-ce qu'elle dit ?",
+        "en": "Your mother calls: your brother's plane landed a minute ago. What does she say?",
+        "es": "Tu madre te llama: el avión de tu hermano ha aterrizado hace un minuto. ¿Qué dice?"
       },
-      "options": {
-        "en": [
-          "The plane has just landed.",
-          "The plane is coming to land.",
-          "The plane will land.",
-          "The plane came from the land."
-        ],
-        "es": [
-          "El avión acaba de aterrizar.",
-          "El avión viene a aterrizar.",
-          "El avión aterrizará.",
-          "El avión vino de tierra."
-        ]
-      },
+      "options": [
+        "L'avion vient d'atterrir.",
+        "L'avion va atterrir.",
+        "L'avion atterrira.",
+        "L'avion atterrissait."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Venir de + infinitive = recent past.",
-        "es": "Venir de + infinitivo = pasado reciente."
+        "en": "\"Venir de\" + infinitive = to have just: \"vient d'atterrir\" = has just landed.",
+        "es": "«Venir de» + infinitivo = acabar de: «vient d'atterrir» = acaba de aterrizar."
       }
     },
     {
       "question": {
-        "en": "\"Il m'a fait ouvrir mes valises.\" Meaning?",
-        "es": "«Il m'a fait ouvrir mes valises.» ¿Significado?"
+        "fr": "À la douane, l'agent t'a obligé à ouvrir tes valises. Comment le racontes-tu ?",
+        "en": "At customs, the officer made you open your suitcases. How do you tell it?",
+        "es": "En la aduana, el agente te obligó a abrir las maletas. ¿Cómo lo cuentas?"
       },
-      "options": {
-        "en": [
-          "He made me open my suitcases.",
-          "He opened my suitcases.",
-          "He helped me open my suitcases.",
-          "He made my suitcases."
-        ],
-        "es": [
-          "Me hizo abrir las maletas.",
-          "Abrió mis maletas.",
-          "Me ayudó a abrir las maletas.",
-          "Hizo mis maletas."
-        ]
-      },
+      "options": [
+        "Il m'a fait ouvrir mes valises.",
+        "Il a ouvert mes valises à moi.",
+        "Il m'a ouvert fait mes valises.",
+        "Je lui ai fait ouvrir mes valises."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Faire + infinitive = to make someone do something.",
-        "es": "Faire + infinitivo = hacer que alguien haga algo."
+        "en": "\"Faire\" + infinitive = to make someone do something.",
+        "es": "«Faire» + infinitivo = hacer que alguien haga algo."
       }
     },
     {
       "question": {
+        "fr": "Complète : « La porte à ___ je devais aller. »",
         "en": "Complete: \"La porte à ___ je devais aller.\"",
         "es": "Completa: «La porte à ___ je devais aller.»"
       },
@@ -442,31 +424,25 @@
     },
     {
       "question": {
-        "en": "\"Le vol\" can mean…",
-        "es": "«Le vol» puede significar…"
+        "fr": "Dans le journal : « Le vol a été retardé » et « Le vol du sac a eu lieu hier ». Que peut vouloir dire « le vol » ?",
+        "en": "In the paper: \"Le vol a été retardé\" and \"Le vol du sac a eu lieu hier\". What can \"le vol\" mean?",
+        "es": "En el periódico: «Le vol a été retardé» y «Le vol du sac a eu lieu hier». ¿Qué puede significar «le vol»?"
       },
-      "options": {
-        "en": [
-          "the flight or the theft",
-          "only the flight",
-          "the wing",
-          "the pilot"
-        ],
-        "es": [
-          "el vuelo o el robo",
-          "solo el vuelo",
-          "el ala",
-          "el piloto"
-        ]
-      },
+      "options": [
+        "un trajet en avion ou un cambriolage",
+        "seulement un trajet en avion",
+        "seulement un oiseau",
+        "un billet de train"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Voler = to fly / to steal.",
-        "es": "Voler = volar / robar."
+        "en": "\"Le vol\" = the flight, but also the theft (from \"voler\": to fly / to steal).",
+        "es": "«Le vol» = el vuelo, pero también el robo (de «voler»: volar / robar)."
       }
     },
     {
       "question": {
+        "fr": "Quelle phrase décrit une action répétée dans le passé ?",
         "en": "Which sentence describes a repeated past action?",
         "es": "¿Qué frase describe una acción pasada repetida?"
       },

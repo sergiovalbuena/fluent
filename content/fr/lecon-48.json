@@ -330,6 +330,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Quand tu ___ à la banque, demande un relevé. »",
         "en": "Complete: \"Quand tu ___ à la banque, demande un relevé.\"",
         "es": "Completa: «Quand tu ___ à la banque, demande un relevé.»"
       },
@@ -347,6 +348,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « ___, je ferai le tour du monde. » (le jour où j'en aurai)",
         "en": "Spanish says \"Cuando tenga dinero\"; French says…",
         "es": "En español se dice «Cuando tenga dinero»; en francés…"
       },
@@ -364,6 +366,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Vous choisirez votre code quand vous ___ votre carte. »",
         "en": "Complete: \"Vous choisirez votre code quand vous ___ votre carte.\"",
         "es": "Completa: «Vous choisirez votre code quand vous ___ votre carte.»"
       },
@@ -381,31 +384,25 @@
     },
     {
       "question": {
-        "en": "\"Être à découvert\" means…",
-        "es": "«Être à découvert» significa…"
+        "fr": "Tu as dépensé plus d'argent que tu n'en avais : ton compte est négatif. Qu'est-ce que tu dis ?",
+        "en": "You've spent more money than you had: your account is in the red. What do you say?",
+        "es": "Has gastado más dinero del que tenías: tu cuenta está en negativo. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "to be overdrawn",
-          "to be discovered",
-          "to open an account",
-          "to be rich"
-        ],
-        "es": [
-          "estar en descubierto",
-          "ser descubierto",
-          "abrir una cuenta",
-          "ser rico"
-        ]
-      },
+      "options": [
+        "Je suis à découvert.",
+        "Je suis découvert.",
+        "Je suis à couvert.",
+        "Je suis en épargne."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Your balance is negative.",
-        "es": "El saldo es negativo."
+        "en": "\"Être à découvert\" = to be overdrawn.",
+        "es": "«Être à découvert» = estar en números rojos."
       }
     },
     {
       "question": {
+        "fr": "Il est minuit et tu as besoin d'argent liquide. Où vas-tu ?",
         "en": "Where do you withdraw cash 24/7?",
         "es": "¿Dónde sacas efectivo a cualquier hora?"
       },
@@ -423,6 +420,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Appelle-le avant qu'il ___ tout dépensé. »",
         "en": "Complete: \"Appelle-le avant qu'il ___ tout dépensé.\"",
         "es": "Completa: «Appelle-le avant qu'il ___ tout dépensé.»"
       },
@@ -440,31 +438,25 @@
     },
     {
       "question": {
-        "en": "What is \"un virement\"?",
-        "es": "¿Qué es «un virement»?"
+        "fr": "Tu envoies 200 € de ton compte au compte de ta sœur. Qu'est-ce que tu fais ?",
+        "en": "You send €200 from your account to your sister's account. What are you doing?",
+        "es": "Envías 200 € de tu cuenta a la de tu hermana. ¿Qué haces?"
       },
-      "options": {
-        "en": [
-          "a bank transfer",
-          "a check",
-          "a withdrawal",
-          "a loan"
-        ],
-        "es": [
-          "una transferencia",
-          "un cheque",
-          "una retirada",
-          "un préstamo"
-        ]
-      },
+      "options": [
+        "un virement",
+        "un retrait",
+        "un dépôt de chèque",
+        "un relevé"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Virer de l'argent = to transfer money.",
-        "es": "Virer de l'argent = transferir dinero."
+        "en": "\"Un virement\" = a bank transfer. \"Un retrait\" = a withdrawal.",
+        "es": "«Un virement» = una transferencia. «Un retrait» = un reintegro, una retirada."
       }
     },
     {
       "question": {
+        "fr": "Complète : « J'ai besoin d'argent pour qu'elle me ___. »",
         "en": "Complete: \"J'ai besoin d'argent pour qu'elle me ___.\"",
         "es": "Completa: «J'ai besoin d'argent pour qu'elle me ___.»"
       },

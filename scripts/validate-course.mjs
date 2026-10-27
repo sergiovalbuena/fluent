@@ -63,8 +63,10 @@ for (const file of files) {
   count('phrases', 10).forEach((p, i) => { if (!str(p.phrase) || !hasTr(p)) err(file, `phrases[${i}] needs phrase + ${required.join(', ')}`) })
 
   count('qa', 6).forEach((q, i) => {
-    if (!hasTr(q.question, ['en', 'es'])) err(file, `qa[${i}].question needs en and es`)
+    // Asked and answered in the course language; en / es are the translations shown on demand
+    if (!hasTr(q.question, [...new Set([lang, 'en', 'es'])])) err(file, `qa[${i}].question needs ${lang}, en and es`)
     if (!hasTr(q.explanation, ['en', 'es'])) err(file, `qa[${i}].explanation needs en and es`)
+    if (!Array.isArray(q.options)) err(file, `qa[${i}].options must be a list in the course language`)
     const opts = Array.isArray(q.options) ? q.options : q.options?.[lang === 'en' ? 'es' : 'en']
     if (!Array.isArray(opts) || opts.length < 3) { err(file, `qa[${i}] needs at least 3 options`); return }
     if (new Set(opts).size !== opts.length) err(file, `qa[${i}] has duplicate options`)

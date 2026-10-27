@@ -316,31 +316,25 @@
   "qa": [
     {
       "question": {
-        "en": "\"Je me suis fait couper les cheveux.\" Who cut the hair?",
-        "es": "«Je me suis fait couper les cheveux.» ¿Quién cortó el pelo?"
+        "fr": "Ce matin, tu es allé chez le coiffeur et il t'a coupé les cheveux. Comment le dis-tu ?",
+        "en": "This morning you went to the hairdresser's and he cut your hair. How do you say it?",
+        "es": "Esta mañana fuiste a la peluquería y te cortaron el pelo. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "someone else (a hairdresser)",
-          "I did it myself",
-          "nobody",
-          "my hair fell out"
-        ],
-        "es": [
-          "otra persona (un peluquero)",
-          "yo mismo",
-          "nadie",
-          "se me cayó el pelo"
-        ]
-      },
+      "options": [
+        "Je me suis fait couper les cheveux.",
+        "Je me suis coupé les cheveux.",
+        "J'ai coupé mes cheveux à moi.",
+        "Je me coupe les cheveux."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Se faire + infinitive\" = someone else does it.",
-        "es": "«Se faire + infinitivo» = lo hace otra persona."
+        "en": "\"Se faire\" + infinitive = to have something done (by someone else).",
+        "es": "«Se faire» + infinitivo = hacerse algo (por otra persona)."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Je veux que vous me ___ les cheveux. »",
         "en": "Complete: \"Je veux que vous me ___ les cheveux.\"",
         "es": "Completa: «Je veux que vous me ___ les cheveux.»"
       },
@@ -358,6 +352,7 @@
     },
     {
       "question": {
+        "fr": "Mets à la voix passive : « Pierre fait les massages. »",
         "en": "Passive: \"Pierre fait les massages.\" → ?",
         "es": "Pasiva: «Pierre fait les massages.» → ?"
       },
@@ -375,6 +370,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Les cheveux ? Jean me les a ___. »",
         "en": "Complete: \"Les cheveux ? Jean me les a ___.\"",
         "es": "Completa: «Les cheveux ? Jean me les a ___.»"
       },
@@ -392,6 +388,7 @@
     },
     {
       "question": {
+        "fr": "Comment dis-tu que tu te laves les cheveux ?",
         "en": "How do you say \"I wash my hair\"?",
         "es": "¿Cómo se dice «Me lavo el pelo»?"
       },
@@ -409,31 +406,25 @@
     },
     {
       "question": {
-        "en": "What are \"des mèches\"?",
-        "es": "¿Qué son «des mèches»?"
+        "fr": "Tu veux quelques fines lignes plus claires dans tes cheveux bruns. Qu'est-ce que tu demandes au coiffeur ?",
+        "en": "You want a few thin lighter streaks in your brown hair. What do you ask the hairdresser for?",
+        "es": "Quieres unas mechas finas más claras en tu pelo castaño. ¿Qué le pides al peluquero?"
       },
-      "options": {
-        "en": [
-          "highlights",
-          "scissors",
-          "curls",
-          "wigs"
-        ],
-        "es": [
-          "mechas",
-          "tijeras",
-          "rizos",
-          "pelucas"
-        ]
-      },
+      "options": [
+        "des mèches",
+        "une frange",
+        "une permanente",
+        "un chignon"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Faire des mèches = to get highlights.",
-        "es": "Faire des mèches = hacerse mechas."
+        "en": "\"Des mèches\" = highlights. \"Une frange\" = a fringe, \"un chignon\" = a bun.",
+        "es": "«Des mèches» = mechas. «Une frange» = un flequillo, «un chignon» = un moño."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Il vaut mieux que tu ___ chez le coiffeur. »",
         "en": "Complete: \"Il vaut mieux que tu ___ chez le coiffeur.\"",
         "es": "Completa: «Il vaut mieux que tu ___ chez le coiffeur.»"
       },
@@ -451,27 +442,20 @@
     },
     {
       "question": {
-        "en": "\"Je viens de me faire masser.\" Meaning?",
-        "es": "«Je viens de me faire masser.» ¿Significado?"
+        "fr": "Tu sors du spa : quelqu'un t'a massé il y a cinq minutes. Comment le dis-tu ?",
+        "en": "You're coming out of the spa: someone gave you a massage five minutes ago. How do you say it?",
+        "es": "Sales del spa: alguien te ha dado un masaje hace cinco minutos. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "I just had a massage.",
-          "I'm going to get a massage.",
-          "I came to give a massage.",
-          "I massage myself."
-        ],
-        "es": [
-          "Me acaban de dar un masaje.",
-          "Me van a dar un masaje.",
-          "He venido a dar un masaje.",
-          "Me masajeo yo solo."
-        ]
-      },
+      "options": [
+        "Je viens de me faire masser.",
+        "Je vais me faire masser.",
+        "Je viens de masser.",
+        "Je me suis massé tout seul."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Venir de = recent past.",
-        "es": "Venir de = pasado reciente."
+        "en": "\"Venir de\" (just) + \"se faire masser\" (have a massage).",
+        "es": "«Venir de» (acabar de) + «se faire masser» (que te den un masaje)."
       }
     }
   ],

@@ -357,6 +357,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quelle phrase est correcte ?",
         "en": "Which sentence is correct?",
         "es": "¿Qué frase es correcta?"
       },
@@ -374,6 +375,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le féminin de « acteur » ?",
         "en": "What is the feminine of \"acteur\"?",
         "es": "¿Cuál es el femenino de «acteur»?"
       },
@@ -391,6 +393,7 @@
     },
     {
       "question": {
+        "fr": "Qui répare ta voiture ?",
         "en": "Who repairs your car?",
         "es": "¿Quién repara tu coche?"
       },
@@ -408,6 +411,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Ma mère voudrait que je ___ vétérinaire. »",
         "en": "Complete: \"Ma mère voudrait que je ___ vétérinaire.\"",
         "es": "Completa: «Ma mère voudrait que je ___ vétérinaire.»"
       },
@@ -425,6 +429,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Que se passerait-il si je ___ de devenir chanteur ? »",
         "en": "Complete: \"Que se passerait-il si je ___ de devenir chanteur ?\"",
         "es": "Completa: «Que se passerait-il si je ___ de devenir chanteur ?»"
       },
@@ -442,6 +447,7 @@
     },
     {
       "question": {
+        "fr": "Ton ami écrit de très beaux textes. Comment lui donnes-tu un conseil ?",
         "en": "How do you give advice: \"You should be a poet\"?",
         "es": "¿Cómo das un consejo: «Deberías ser poeta»?"
       },
@@ -459,31 +465,25 @@
     },
     {
       "question": {
-        "en": "\"J'étais sur le point de partir.\" What does it mean?",
-        "es": "«J'étais sur le point de partir.» ¿Qué significa?"
+        "fr": "Ton téléphone a sonné juste au moment où tu allais sortir. Comment le racontes-tu ?",
+        "en": "Your phone rang just as you were going out. How do you tell it?",
+        "es": "Tu teléfono sonó justo cuando ibas a salir. ¿Cómo lo cuentas?"
       },
-      "options": {
-        "en": [
-          "I was about to leave.",
-          "I had just left.",
-          "I was on the way back.",
-          "I left at the point."
-        ],
-        "es": [
-          "Estaba a punto de irme.",
-          "Me acababa de ir.",
-          "Estaba de vuelta.",
-          "Me fui al punto."
-        ]
-      },
+      "options": [
+        "J'étais sur le point de partir.",
+        "J'étais en train de partir demain.",
+        "Je suis parti sur le point.",
+        "J'ai été sur le point."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Être sur le point de\" + infinitive = to be about to.",
-        "es": "«Être sur le point de» + infinitivo = estar a punto de."
+        "en": "\"Être sur le point de\" + infinitive = to be about to do something.",
+        "es": "«Être sur le point de» + infinitivo = estar a punto de hacer algo."
       }
     },
     {
       "question": {
+        "fr": "Où vas-tu pour te faire couper les cheveux ?",
         "en": "Where do you go to get a haircut?",
         "es": "¿Adónde vas a cortarte el pelo?"
       },

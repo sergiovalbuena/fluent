@@ -356,6 +356,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Offre-___ des roses. » (à elle)",
         "en": "Complete: \"Offre-___ des roses.\" (to her)",
         "es": "Completa: «Offre-___ des roses.» (a ella)"
       },
@@ -373,6 +374,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Les graines ? Je les ai ___. »",
         "en": "Complete: \"Les graines ? Je les ai ___.\"",
         "es": "Completa: «Les graines ? Je les ai ___.»"
       },
@@ -390,6 +392,7 @@
     },
     {
       "question": {
+        "fr": "Quelles fleurs est-ce qu'il ne faut PAS offrir en cadeau en France ?",
         "en": "Which flower should you NOT give as a gift in France?",
         "es": "¿Qué flor NO debes regalar en Francia?"
       },
@@ -407,6 +410,7 @@
     },
     {
       "question": {
+        "fr": "Discours indirect : François a dit : « Le muguet est toxique. » → François m'a dit que le muguet ___ toxique.",
         "en": "Reported speech: François said: \"Le muguet est toxique.\" → François m'a dit que le muguet ___ toxique.",
         "es": "Estilo indirecto: François dijo: «Le muguet est toxique.» → François m'a dit que le muguet ___ toxique."
       },
@@ -424,6 +428,7 @@
     },
     {
       "question": {
+        "fr": "« Des mimosas ? Nous n'___ avons pas. »",
         "en": "\"Des mimosas ? Nous n'___ avons pas.\"",
         "es": "«Des mimosas ? Nous n'___ avons pas.»"
       },
@@ -441,77 +446,56 @@
     },
     {
       "question": {
-        "en": "What does a yellow rose symbolize?",
-        "es": "¿Qué simboliza una rosa amarilla?"
+        "fr": "Tu veux offrir une rose à une amie, sans message d'amour. Quelle couleur choisis-tu ?",
+        "en": "You want to give a rose to a friend, with no romantic message. Which colour do you choose?",
+        "es": "Quieres regalarle una rosa a una amiga, sin mensaje romántico. ¿Qué color eliges?"
       },
-      "options": {
-        "en": [
-          "friendship",
-          "love",
-          "death",
-          "purity"
-        ],
-        "es": [
-          "la amistad",
-          "el amor",
-          "la muerte",
-          "la pureza"
-        ]
-      },
+      "options": [
+        "une rose jaune",
+        "une rose rouge",
+        "une rose noire",
+        "une rose fanée"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Red = love, white = purity.",
-        "es": "Roja = amor, blanca = pureza."
+        "en": "In France a yellow rose symbolises friendship; a red one, love.",
+        "es": "En Francia la rosa amarilla simboliza la amistad; la roja, el amor."
       }
     },
     {
       "question": {
-        "en": "What does \"arroser\" mean?",
-        "es": "¿Qué significa «arroser»?"
+        "fr": "Il n'a pas plu depuis une semaine et les plantes ont soif. Qu'est-ce que tu fais ?",
+        "en": "It hasn't rained for a week and the plants are thirsty. What do you do?",
+        "es": "No ha llovido en una semana y las plantas tienen sed. ¿Qué haces?"
       },
-      "options": {
-        "en": [
-          "to water",
-          "to sow",
-          "to pick",
-          "to bloom"
-        ],
-        "es": [
-          "regar",
-          "sembrar",
-          "recoger",
-          "florecer"
-        ]
-      },
+      "options": [
+        "J'arrose les plantes.",
+        "Je cueille les plantes.",
+        "Je plante les plantes.",
+        "Je taille les plantes."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "You water with \"un arrosoir\".",
-        "es": "Se riega con «un arrosoir»."
+        "en": "\"Arroser\" = to water. \"Cueillir\" = to pick, \"tailler\" = to prune.",
+        "es": "«Arroser» = regar. «Cueillir» = coger (flores), «tailler» = podar."
       }
     },
     {
       "question": {
-        "en": "What is \"un tournesol\"?",
-        "es": "¿Qué es «un tournesol»?"
+        "fr": "C'est une grande fleur jaune qui se tourne vers le soleil. Comment s'appelle-t-elle ?",
+        "en": "It's a big yellow flower that turns towards the sun. What's it called?",
+        "es": "Es una flor grande y amarilla que se gira hacia el sol. ¿Cómo se llama?"
       },
-      "options": {
-        "en": [
-          "a sunflower",
-          "a daisy",
-          "a tulip",
-          "a cactus"
-        ],
-        "es": [
-          "un girasol",
-          "una margarita",
-          "un tulipán",
-          "un cactus"
-        ]
-      },
+      "options": [
+        "un tournesol",
+        "une marguerite",
+        "un coquelicot",
+        "une tulipe"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Literally \"it turns (to the) sun\".",
-        "es": "Literalmente «gira (hacia el) sol»."
+        "en": "\"Un tournesol\" = a sunflower (it turns, \"tourne\", towards the sun).",
+        "es": "«Un tournesol» = un girasol (se gira, «tourne», hacia el sol)."
       }
     }
   ],

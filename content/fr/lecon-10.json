@@ -296,6 +296,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « C'est dommage que tu ___. »",
         "en": "Complete: \"C'est dommage que tu ___.\"",
         "es": "Completa: «C'est dommage que tu ___.»"
       },
@@ -313,6 +314,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je serais heureux si je ___ parler italien. »",
         "en": "Complete: \"Je serais heureux si je ___ parler italien.\"",
         "es": "Completa: «Je serais heureux si je ___ parler italien.»"
       },
@@ -330,6 +332,7 @@
     },
     {
       "question": {
+        "fr": "Quelle forme du passé est correcte ?",
         "en": "Which past form is correct?",
         "es": "¿Qué forma del pasado es correcta?"
       },
@@ -347,31 +350,25 @@
     },
     {
       "question": {
-        "en": "What does \"Tu as l'air fatigué\" mean?",
-        "es": "¿Qué significa «Tu as l'air fatigué»?"
+        "fr": "Ta collègue a les yeux rouges et elle bâille. Qu'est-ce que tu lui dis ?",
+        "en": "Your colleague has red eyes and keeps yawning. What do you tell her?",
+        "es": "Tu compañera tiene los ojos rojos y bosteza. ¿Qué le dices?"
       },
-      "options": {
-        "en": [
-          "You look tired.",
-          "You need air.",
-          "You are tired of the air.",
-          "You were tired."
-        ],
-        "es": [
-          "Pareces cansado.",
-          "Necesitas aire.",
-          "Estás cansado del aire.",
-          "Estabas cansado."
-        ]
-      },
+      "options": [
+        "Tu as l'air fatiguée.",
+        "Tu es l'air fatiguée.",
+        "Tu fais fatiguée.",
+        "Tu sembles à fatiguée."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Avoir l'air\" + adjective = to look / seem.",
-        "es": "«Avoir l'air» + adjetivo = parecer."
+        "en": "\"Avoir l'air\" + adjective = to look (tired, happy…).",
+        "es": "«Avoir l'air» + adjetivo = parecer (cansado, contento…)."
       }
     },
     {
       "question": {
+        "fr": "On te demande si tu préfères le cinéma ou le théâtre, et les deux te vont. Qu'est-ce que tu réponds poliment ?",
         "en": "Neutral way to say \"I don't mind\":",
         "es": "Forma neutra de decir «me da igual»:"
       },
@@ -389,6 +386,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il est urgent que j'___ l'anglais. »",
         "en": "Complete: \"Il est urgent que j'___ l'anglais.\"",
         "es": "Completa: «Il est urgent que j'___ l'anglais.»"
       },
@@ -406,6 +404,7 @@
     },
     {
       "question": {
+        "fr": "Tu dis au revoir à une personne que tu viens de rencontrer, et c'était agréable. Qu'est-ce que tu dis ?",
         "en": "How do you say \"Nice to have met you!\"?",
         "es": "¿Cómo se dice «¡Encantado de haberte conocido!»?"
       },
@@ -423,27 +422,20 @@
     },
     {
       "question": {
-        "en": "What does \"J'ai hâte de te voir\" mean?",
-        "es": "¿Qué significa «J'ai hâte de te voir»?"
+        "fr": "Tu vas revoir ta meilleure amie la semaine prochaine et tu es très impatient. Qu'est-ce que tu lui écris ?",
+        "en": "You'll see your best friend next week and you're really excited. What do you write to her?",
+        "es": "Vas a ver a tu mejor amiga la semana que viene y estás impaciente. ¿Qué le escribes?"
       },
-      "options": {
-        "en": [
-          "I can't wait to see you.",
-          "I hate seeing you.",
-          "I saw you in a hurry.",
-          "I must see you."
-        ],
-        "es": [
-          "Tengo muchas ganas de verte.",
-          "Odio verte.",
-          "Te vi con prisa.",
-          "Tengo que verte."
-        ]
-      },
+      "options": [
+        "J'ai hâte de te voir !",
+        "J'ai peur de te voir !",
+        "J'ai fini de te voir !",
+        "J'ai tort de te voir !"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Avoir hâte de\" = to look forward to (false friend with \"hate\"!).",
-        "es": "«Avoir hâte de» = estar deseando (¡falso amigo del inglés «hate»!)."
+        "en": "\"Avoir hâte de\" = to look forward to, can't wait to.",
+        "es": "«Avoir hâte de» = tener muchas ganas de, estar impaciente por."
       }
     }
   ],

@@ -351,6 +351,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Comment proposes-tu à un ami d'aller au cinéma, de façon familière ?",
         "en": "How do you suggest going to the movies informally?",
         "es": "¿Cómo propones ir al cine de forma informal?"
       },
@@ -368,56 +369,43 @@
     },
     {
       "question": {
-        "en": "What is \"l'entracte\"?",
-        "es": "¿Qué es «l'entracte»?"
+        "fr": "Au théâtre, la pièce s'arrête vingt minutes et le public va boire un verre. Comment s'appelle cette pause ?",
+        "en": "At the theatre the play stops for twenty minutes and the audience goes for a drink. What is this break called?",
+        "es": "En el teatro la obra se detiene veinte minutos y el público va a tomar algo. ¿Cómo se llama esa pausa?"
       },
-      "options": {
-        "en": [
-          "the intermission",
-          "the first act",
-          "the entrance",
-          "the curtain"
-        ],
-        "es": [
-          "el entreacto",
-          "el primer acto",
-          "la entrada",
-          "el telón"
-        ]
-      },
+      "options": [
+        "l'entracte",
+        "le rideau",
+        "la séance",
+        "la coulisse"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "The break between two acts.",
-        "es": "La pausa entre dos actos."
+        "en": "\"L'entracte\" = the intermission.",
+        "es": "«L'entracte» = el entreacto, el descanso."
       }
     },
     {
       "question": {
-        "en": "In a French theater, if the audience \"siffle\", it means they…",
-        "es": "En un teatro francés, si el público «siffle», significa que…"
+        "fr": "Le public n'a pas aimé le spectacle. Qu'est-ce qu'il fait ?",
+        "en": "The audience didn't like the show. What does it do?",
+        "es": "Al público no le ha gustado el espectáculo. ¿Qué hace?"
       },
-      "options": {
-        "en": [
-          "disapprove",
-          "love the show",
-          "want an encore",
-          "are laughing"
-        ],
-        "es": [
-          "desaprueba",
-          "le encanta el espectáculo",
-          "quiere un bis",
-          "se está riendo"
-        ]
-      },
+      "options": [
+        "Il siffle.",
+        "Il applaudit.",
+        "Il crie « bravo ».",
+        "Il se lève pour applaudir."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Whistling = booing in France.",
-        "es": "Silbar = abuchear en Francia."
+        "en": "In a French theatre, whistling (\"siffler\") means the audience disapproves.",
+        "es": "En un teatro francés, silbar («siffler») significa que el público desaprueba."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Elle a mis la robe qu'elle avait ___. »",
         "en": "Complete: \"Elle a mis la robe qu'elle avait ___.\"",
         "es": "Completa: «Elle a mis la robe qu'elle avait ___.»"
       },
@@ -435,6 +423,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je préfère ce rôle à ___ de la sorcière. »",
         "en": "Complete: \"Je préfère ce rôle à ___ de la sorcière.\"",
         "es": "Completa: «Je préfère ce rôle à ___ de la sorcière.»"
       },
@@ -452,31 +441,25 @@
     },
     {
       "question": {
-        "en": "\"VO\" at the cinema means…",
-        "es": "«VO» en el cine significa…"
+        "fr": "Tu veux voir un film américain en anglais, avec les sous-titres. Quelle séance choisis-tu ?",
+        "en": "You want to see an American film in English, with subtitles. Which showing do you choose?",
+        "es": "Quieres ver una película estadounidense en inglés, con subtítulos. ¿Qué sesión eliges?"
       },
-      "options": {
-        "en": [
-          "original version (with subtitles)",
-          "dubbed version",
-          "very old film",
-          "VIP seats"
-        ],
-        "es": [
-          "versión original (subtitulada)",
-          "versión doblada",
-          "película muy antigua",
-          "asientos VIP"
-        ]
-      },
+      "options": [
+        "la séance en VO",
+        "la séance en VF",
+        "la séance doublée",
+        "la séance muette"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "VF = dubbed into French.",
-        "es": "VF = doblada al francés."
+        "en": "\"VO\" (version originale) = original language, usually with subtitles; \"VF\" = dubbed into French.",
+        "es": "«VO» (version originale) = versión original, normalmente subtitulada; «VF» = doblada al francés."
       }
     },
     {
       "question": {
+        "fr": "Complète : « ___ avoir dîné, ils sont allés au théâtre. »",
         "en": "Complete: \"___ avoir dîné, ils sont allés au théâtre.\"",
         "es": "Completa: «___ avoir dîné, ils sont allés au théâtre.»"
       },
@@ -494,27 +477,20 @@
     },
     {
       "question": {
-        "en": "\"Il s'est fait siffler.\" Meaning?",
-        "es": "«Il s'est fait siffler.» ¿Significado?"
+        "fr": "L'acteur a oublié son texte et le public l'a sifflé. Comment le racontes-tu ?",
+        "en": "The actor forgot his lines and the audience booed him. How do you tell it?",
+        "es": "El actor olvidó su texto y el público lo abucheó. ¿Cómo lo cuentas?"
       },
-      "options": {
-        "en": [
-          "He got booed.",
-          "He whistled.",
-          "He made someone whistle.",
-          "He learned to whistle."
-        ],
-        "es": [
-          "Lo abuchearon.",
-          "Silbó.",
-          "Hizo silbar a alguien.",
-          "Aprendió a silbar."
-        ]
-      },
+      "options": [
+        "Il s'est fait siffler.",
+        "Il a sifflé.",
+        "Il s'est sifflé.",
+        "Il a fait siffler."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Se faire\" + infinitive: something happens to the subject.",
-        "es": "«Se faire» + infinitivo: algo le pasa al sujeto."
+        "en": "\"Se faire\" + infinitive = something happens to you: \"il s'est fait siffler\" = he got booed.",
+        "es": "«Se faire» + infinitivo = algo te pasa: «il s'est fait siffler» = lo abuchearon."
       }
     }
   ],

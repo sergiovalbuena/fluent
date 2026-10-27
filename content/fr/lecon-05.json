@@ -280,6 +280,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Emma a les yeux ___. » (bleu)",
         "en": "Complete: \"Emma a les yeux ___.\" (blue)",
         "es": "Completa: «Emma a les yeux ___.» (azules)"
       },
@@ -297,6 +298,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle porte une chemise ___. » (blanc)",
         "en": "Complete: \"Elle porte une chemise ___.\" (white)",
         "es": "Completa: «Elle porte une chemise ___.» (blanca)"
       },
@@ -314,6 +316,7 @@
     },
     {
       "question": {
+        "fr": "Quelle forme est correcte ?",
         "en": "Which is correct?",
         "es": "¿Cuál es correcta?"
       },
@@ -331,6 +334,7 @@
     },
     {
       "question": {
+        "fr": "« Est-ce que Paul est fatigué ? » — « Non, il ne ___ est pas. »",
         "en": "\"Est-ce que Paul est fatigué ?\" — \"Non, il ne ___ est pas.\"",
         "es": "«Est-ce que Paul est fatigué ?» — «Non, il ne ___ est pas.»"
       },
@@ -348,6 +352,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Chloé est ___ petite ___ Manon. »",
         "en": "Complete: \"Chloé est ___ petite ___ Manon.\"",
         "es": "Completa: «Chloé est ___ petite ___ Manon.»"
       },
@@ -365,6 +370,7 @@
     },
     {
       "question": {
+        "fr": "Léa est plus intelligente que tous les autres élèves. Elle est…",
         "en": "How do you say \"the most intelligent in the class\"?",
         "es": "¿Cómo se dice «la más inteligente de la clase»?"
       },
@@ -382,52 +388,38 @@
     },
     {
       "question": {
-        "en": "What does \"Le blouson violet est à Jean\" mean?",
-        "es": "¿Qué significa «Le blouson violet est à Jean»?"
+        "fr": "« À qui est ce blouson violet ? » C'est le blouson de Jean. Qu'est-ce que tu réponds ?",
+        "en": "\"Whose purple jacket is this?\" It's Jean's. What do you answer?",
+        "es": "«¿De quién es esta chaqueta morada?» Es de Jean. ¿Qué respondes?"
       },
-      "options": {
-        "en": [
-          "The purple jacket belongs to Jean.",
-          "The purple jacket is at Jean's house.",
-          "Jean is wearing a purple jacket.",
-          "Jean wants a purple jacket."
-        ],
-        "es": [
-          "La chaqueta morada es de Jean.",
-          "La chaqueta morada está en casa de Jean.",
-          "Jean lleva una chaqueta morada.",
-          "Jean quiere una chaqueta morada."
-        ]
-      },
+      "options": [
+        "Il est à Jean.",
+        "Il est de Jean.",
+        "C'est pour Jean.",
+        "Il a Jean."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Être à quelqu'un\" expresses possession.",
-        "es": "«Être à quelqu'un» expresa posesión."
+        "en": "To say who something belongs to: \"être à\" + person. \"Il est à Jean\" = it's Jean's.",
+        "es": "Para decir de quién es algo: «être à» + persona. «Il est à Jean» = es de Jean."
       }
     },
     {
       "question": {
-        "en": "What does \"paresseux\" mean?",
-        "es": "¿Qué significa «paresseux»?"
+        "fr": "Ton colocataire ne fait jamais rien : il reste sur le canapé toute la journée. Comment est-il ?",
+        "en": "Your flatmate never does anything: he stays on the sofa all day. What is he like?",
+        "es": "Tu compañero de piso nunca hace nada: se queda en el sofá todo el día. ¿Cómo es?"
       },
-      "options": {
-        "en": [
-          "lazy",
-          "loyal",
-          "happy",
-          "selfish"
-        ],
-        "es": [
-          "perezoso",
-          "leal",
-          "feliz",
-          "egoísta"
-        ]
-      },
+      "options": [
+        "paresseux",
+        "généreux",
+        "courageux",
+        "travailleur"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Feminine: \"paresseuse\".",
-        "es": "Femenino: «paresseuse»."
+        "en": "\"Paresseux\" = lazy. The opposite is \"travailleur\" (hard-working).",
+        "es": "«Paresseux» = perezoso. Lo contrario es «travailleur» (trabajador)."
       }
     }
   ],

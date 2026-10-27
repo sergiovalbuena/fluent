@@ -168,10 +168,10 @@ export function pickTranslation(item: Translatable, translationLang: string): st
   return item.translations?.[translationLang] ?? item.translation ?? item.translations?.en ?? ''
 }
 
-// Q&A questions carry an optional per-language override of their text:
-// `translations: { es: { question, options?, correct?, explanation? } }`.
-// Options/correct are only overridden when they are in the translation language
-// (options in the course language stay as they are).
+// Q&A questions are asked and answered in the course language. `translations`
+// holds the question (and explanation) in each learner language:
+// `translations: { es: { question, explanation } }`, shown on demand.
+// Older rows may also override options/correct there.
 
 export type RawQuestion = {
   question: string
@@ -186,7 +186,9 @@ export function localizeQuestion(q: RawQuestion, translationLang: string) {
   const options = t.options ?? q.options
   const correct = t.correct ?? q.correct
   return {
-    question: t.question ?? q.question,
+    question: q.question,
+    /** The question in the learner's language (English when there is none for theirs) */
+    translation: t.question ?? q.translations?.en?.question ?? null,
     options,
     correct: typeof correct === 'number' ? correct : options.indexOf(correct),
     explanation: t.explanation ?? q.explanation,

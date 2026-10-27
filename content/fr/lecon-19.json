@@ -396,6 +396,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Combien de planètes y a-t-il dans notre système solaire ?",
         "en": "How many planets are there in our solar system?",
         "es": "¿Cuántos planetas hay en nuestro sistema solar?"
       },
@@ -413,31 +414,25 @@
     },
     {
       "question": {
-        "en": "What is \"un fleuve\"?",
-        "es": "¿Qué es «un fleuve»?"
+        "fr": "La Seine traverse Paris et se jette dans la mer. Qu'est-ce que c'est ?",
+        "en": "The Seine flows through Paris and into the sea. What is it?",
+        "es": "El Sena atraviesa París y desemboca en el mar. ¿Qué es?"
       },
-      "options": {
-        "en": [
-          "a river that flows into the sea",
-          "a lake",
-          "a stream in the mountains",
-          "a waterfall"
-        ],
-        "es": [
-          "un río que desemboca en el mar",
-          "un lago",
-          "un arroyo de montaña",
-          "una cascada"
-        ]
-      },
+      "options": [
+        "un fleuve",
+        "une rivière",
+        "un lac",
+        "un étang"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "La Seine and la Loire are \"fleuves\".",
-        "es": "El Sena y el Loira son «fleuves»."
+        "en": "\"Un fleuve\" flows into the sea; \"une rivière\" flows into another river.",
+        "es": "«Un fleuve» desemboca en el mar; «une rivière» desemboca en otro río."
       }
     },
     {
       "question": {
+        "fr": "Complète : « ___ regardant le ciel, j'ai vu une étoile filante. »",
         "en": "Complete: \"___ regardant le ciel, j'ai vu une étoile filante.\"",
         "es": "Completa: «___ regardant le ciel, j'ai vu une étoile filante.»"
       },
@@ -455,6 +450,7 @@
     },
     {
       "question": {
+        "fr": "Tu penses avoir vu un objet bizarre dans le ciel hier soir. Comment le dis-tu ?",
         "en": "How do you say \"I think I saw a UFO\"?",
         "es": "¿Cómo se dice «Creo haber visto un ovni»?"
       },
@@ -472,6 +468,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « J'espère qu'il ___ beau demain. »",
         "en": "Complete: \"J'espère qu'il ___ beau demain.\"",
         "es": "Completa: «J'espère qu'il ___ beau demain.»"
       },
@@ -489,6 +486,7 @@
     },
     {
       "question": {
+        "fr": "Mets à la voix passive : « La pollution menace la Terre. »",
         "en": "Passive: \"Pollution threatens the Earth\" → ?",
         "es": "Pasiva: «La contaminación amenaza la Tierra» → ?"
       },
@@ -506,31 +504,25 @@
     },
     {
       "question": {
-        "en": "What is \"une grotte\"?",
-        "es": "¿Qué es «une grotte»?"
+        "fr": "C'est un grand trou naturel dans la montagne, sombre et frais. Qu'est-ce que c'est ?",
+        "en": "It's a large natural hole in the mountain, dark and cool. What is it?",
+        "es": "Es un gran agujero natural en la montaña, oscuro y fresco. ¿Qué es?"
       },
-      "options": {
-        "en": [
-          "a cave",
-          "a hill",
-          "a bay",
-          "a marsh"
-        ],
-        "es": [
-          "una cueva",
-          "una colina",
-          "una bahía",
-          "un pantano"
-        ]
-      },
+      "options": [
+        "une grotte",
+        "une colline",
+        "une vallée",
+        "une falaise"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Also \"une caverne\".",
-        "es": "También «une caverne»."
+        "en": "\"Une grotte\" = a cave. \"Une colline\" = a hill, \"une falaise\" = a cliff.",
+        "es": "«Une grotte» = una cueva. «Une colline» = una colina, «une falaise» = un acantilado."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Il faut agir ___ protéger la planète. »",
         "en": "Complete: \"Il faut agir ___ protéger la planète.\"",
         "es": "Completa: «Il faut agir ___ protéger la planète.»"
       },

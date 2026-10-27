@@ -45,7 +45,10 @@ interface Phrase {
 }
 
 interface QAQuestion {
+  /** In the course language */
   question: string
+  /** The question in the learner's language, shown on demand */
+  translation?: string | null
   options: string[]
   correct: number
   explanation?: string
@@ -1248,6 +1251,7 @@ function QAQuestionList({
 }) {
   const t = useTranslations('lesson')
   const [challengeQ, setChallengeQ] = useState<QAQuestion | null>(null)
+  const [showTranslation, setShowTranslation] = useState(false)
   const { isMastered, markMastered } = useVocabMastery(languageCode, 'qa')
   const masteredCount = questions.filter(q => isMastered(q.question)).length
 
@@ -1259,8 +1263,23 @@ function QAQuestionList({
     <div className="flex flex-col h-full min-h-0">
       <div {...HINT_AREA} className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
         <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="questions" /></p>
-        <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
-          {t('ov_count_questions', { count: questions.length })}
+        <span className="flex items-center gap-3">
+          {questions.some(q => q.translation) && (
+            <button
+              type="button"
+              onClick={() => setShowTranslation(v => !v)}
+              aria-pressed={showTranslation}
+              className={cn(
+                'flex items-center gap-1 text-[10px] font-bold transition-colors',
+                showTranslation ? 'text-purple-500' : 'text-slate-400 hover:text-purple-500',
+              )}
+            >
+              <Languages size={12} /> {showTranslation ? t('hide_translation') : t('show_translation')}
+            </button>
+          )}
+          <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
+            {t('ov_count_questions', { count: questions.length })}
+          </span>
         </span>
       </div>
       <div className="flex-1 overflow-y-auto min-h-0">
@@ -1272,6 +1291,9 @@ function QAQuestionList({
             <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums">{i + 1}</span>
             <div className="flex-1 min-w-0">
               <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{q.question}</p>
+              {showTranslation && q.translation && (
+                <p className="text-xs italic text-slate-500 dark:text-slate-400 mt-0.5">{q.translation}</p>
+              )}
               <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5 group-hover:opacity-0 group-hover:transition-none transition-all">
                 {q.options[q.correct]}
               </p>
@@ -1305,7 +1327,7 @@ function QAQuestionList({
             </button>
             <button
               type="button"
-              onClick={() => onToggleBookmark({ type: 'phrase', original: q.options[q.correct], translation: q.question, languageCode: '' })}
+              onClick={() => onToggleBookmark({ type: 'phrase', original: q.options[q.correct], translation: q.translation ?? q.question, languageCode: '' })}
               className="shrink-0 p-2 -mr-1 rounded-lg hover:bg-primary/10 active:scale-90 transition-all"
             >
               <Bookmark
@@ -1824,6 +1846,7 @@ export default function LessonPage() {
   const [checked,      setChecked]      = useState(false)
   const [correctCount, setCorrectCount] = useState(0)
   const [qaDone,       setQaDone]       = useState(false)
+  const [qaShowTr,     setQaShowTr]     = useState(false)
 
   // Story
   const [storyInput, setStoryInput]                   = useState('')
@@ -2606,7 +2629,30 @@ export default function LessonPage() {
 
               {/* Question card */}
               <div className="rounded-3xl p-5 border shadow-sm bg-purple-500/10 border-purple-500/25">
-                <p className="text-base md:text-lg font-bold leading-snug">{questions[qIndex].question}</p>
+                <div className="flex items-start gap-3">
+                  <p className="flex-1 text-base md:text-lg font-bold leading-snug">{questions[qIndex].question}</p>
+                  <button
+                    type="button"
+                    onClick={() => speakWord(questions[qIndex].question, languageCode)}
+                    aria-label={tLesson('listen')}
+                    className="shrink-0 p-2 -m-1 rounded-xl text-purple-500 hover:bg-purple-500/15 active:scale-90 transition-all"
+                  >
+                    <Volume2 size={18} />
+                  </button>
+                </div>
+                {questions[qIndex].translation && (
+                  qaShowTr ? (
+                    <p className="mt-2 text-sm italic text-muted-foreground">{questions[qIndex].translation}</p>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setQaShowTr(true)}
+                      className="mt-2 flex items-center gap-1 text-xs font-semibold text-purple-500 hover:text-purple-600 transition-colors"
+                    >
+                      <Languages size={13} /> {tLesson('show_translation')}
+                    </button>
+                  )
+                )}
               </div>
 
               {/* Options */}
@@ -2676,7 +2722,7 @@ export default function LessonPage() {
                     const correct = selected === questions[qIndex].correct
                     if (correct) setCorrectCount(c => c + 1)
                     if (qIndex + 1 >= questions.length) { setQaDone(true) }
-                    else { setQIndex(i => i + 1); setSelected(null); setChecked(false) }
+                    else { setQIndex(i => i + 1); setSelected(null); setChecked(false); setQaShowTr(false) }
                   }}
                   className="w-full flex items-center justify-center gap-2 rounded-2xl h-14 text-white text-base font-bold active:scale-95 transition-transform"
                   style={{

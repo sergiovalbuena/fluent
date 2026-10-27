@@ -330,6 +330,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Si j'___ riche, je voyagerais. »",
         "en": "Complete: \"Si j'___ riche, je voyagerais.\"",
         "es": "Completa: «Si j'___ riche, je voyagerais.»"
       },
@@ -347,6 +348,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « S'il avait le temps, il ___ une formation. »",
         "en": "Complete: \"S'il avait le temps, il ___ une formation.\"",
         "es": "Completa: «S'il avait le temps, il ___ une formation.»"
       },
@@ -364,6 +366,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase est correcte ?",
         "en": "Which sentence is correct?",
         "es": "¿Qué frase es correcta?"
       },
@@ -381,6 +384,7 @@
     },
     {
       "question": {
+        "fr": "Ta collègue travaille beaucoup et gagne peu. Quel conseil lui donnes-tu avec « si » ?",
         "en": "How do you give advice using \"si\"?",
         "es": "¿Cómo das un consejo usando «si»?"
       },
@@ -398,56 +402,43 @@
     },
     {
       "question": {
-        "en": "What is \"un entretien d'embauche\"?",
-        "es": "¿Qué es «un entretien d'embauche»?"
+        "fr": "Demain, tu rencontres le directeur d'une entreprise qui pourrait t'embaucher. Qu'est-ce que tu as ?",
+        "en": "Tomorrow you're meeting the director of a company that might hire you. What do you have?",
+        "es": "Mañana te reúnes con el director de una empresa que podría contratarte. ¿Qué tienes?"
       },
-      "options": {
-        "en": [
-          "a job interview",
-          "a maintenance job",
-          "a salary raise",
-          "a resignation letter"
-        ],
-        "es": [
-          "una entrevista de trabajo",
-          "un trabajo de mantenimiento",
-          "un aumento de sueldo",
-          "una carta de dimisión"
-        ]
-      },
+      "options": [
+        "un entretien d'embauche",
+        "un contrat de travail",
+        "un congé maladie",
+        "un licenciement"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Embaucher = to hire.",
-        "es": "Embaucher = contratar."
+        "en": "\"Un entretien d'embauche\" = a job interview.",
+        "es": "«Un entretien d'embauche» = una entrevista de trabajo."
       }
     },
     {
       "question": {
-        "en": "\"Démissionner\" means…",
-        "es": "«Démissionner» significa…"
+        "fr": "Tu n'aimes plus ton travail et tu décides de le quitter toi-même. Qu'est-ce que tu fais ?",
+        "en": "You don't like your job any more and you decide to leave it yourself. What do you do?",
+        "es": "Ya no te gusta tu trabajo y decides dejarlo tú mismo. ¿Qué haces?"
       },
-      "options": {
-        "en": [
-          "to resign",
-          "to be fired",
-          "to retire",
-          "to be promoted"
-        ],
-        "es": [
-          "dimitir",
-          "ser despedido",
-          "jubilarse",
-          "ser ascendido"
-        ]
-      },
+      "options": [
+        "Je démissionne.",
+        "Je suis licencié.",
+        "Je suis embauché.",
+        "Je prends ma retraite."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Être licencié = to be fired.",
-        "es": "Être licencié = ser despedido."
+        "en": "\"Démissionner\" = to resign. \"Être licencié\" = to be fired.",
+        "es": "«Démissionner» = dimitir. «Être licencié» = ser despedido."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Qu'est-ce que tu ___ à ma place ? »",
         "en": "Complete: \"Qu'est-ce que tu ___ à ma place ?\"",
         "es": "Completa: «Qu'est-ce que tu ___ à ma place ?»"
       },
@@ -465,27 +456,20 @@
     },
     {
       "question": {
-        "en": "What is a \"CDI\" in France?",
-        "es": "¿Qué es un «CDI» en Francia?"
+        "fr": "Bonne nouvelle : ton nouveau contrat n'a pas de date de fin. Quel contrat as-tu ?",
+        "en": "Good news: your new contract has no end date. Which contract do you have?",
+        "es": "Buenas noticias: tu nuevo contrato no tiene fecha de fin. ¿Qué contrato tienes?"
       },
-      "options": {
-        "en": [
-          "a permanent contract",
-          "a temporary contract",
-          "an internship",
-          "a resignation"
-        ],
-        "es": [
-          "un contrato indefinido",
-          "un contrato temporal",
-          "unas prácticas",
-          "una dimisión"
-        ]
-      },
+      "options": [
+        "un CDI",
+        "un CDD",
+        "un stage",
+        "un intérim"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "CDD = fixed-term contract.",
-        "es": "CDD = contrato temporal."
+        "en": "CDI = permanent contract; CDD = fixed-term contract.",
+        "es": "CDI = contrato indefinido; CDD = contrato temporal."
       }
     }
   ],

@@ -311,6 +311,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Mon appareil est ___ que le tien. »",
         "en": "Complete: \"Mon appareil est ___ que le tien.\"",
         "es": "Completa: «Mon appareil est ___ que le tien.»"
       },
@@ -328,6 +329,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle photographie ___ que moi. »",
         "en": "Complete: \"Elle photographie ___ que moi.\"",
         "es": "Completa: «Elle photographie ___ que moi.»"
       },
@@ -345,6 +347,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Ta photo est belle, mais ___ est plus nette. » (ma photo)",
         "en": "Complete: \"Ta photo est belle, mais ___ est plus nette.\" (mine)",
         "es": "Completa: «Ta photo est belle, mais ___ est plus nette.» (la mía)"
       },
@@ -362,6 +365,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « C'est le meilleur photographe que je ___. »",
         "en": "Complete: \"C'est le meilleur photographe que je ___.\"",
         "es": "Completa: «C'est le meilleur photographe que je ___.»"
       },
@@ -379,6 +383,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « On attendra que le ciel ___ dégagé. »",
         "en": "Complete: \"On attendra que le ciel ___ dégagé.\"",
         "es": "Completa: «On attendra que le ciel ___ dégagé.»"
       },
@@ -396,56 +401,43 @@
     },
     {
       "question": {
-        "en": "What is \"un trépied\"?",
-        "es": "¿Qué es «un trépied»?"
+        "fr": "Pour une photo de nuit, l'appareil ne doit pas bouger. Sur quoi est-ce que tu le poses ?",
+        "en": "For a night photo the camera mustn't move. What do you put it on?",
+        "es": "Para una foto nocturna la cámara no se debe mover. ¿Sobre qué la pones?"
       },
-      "options": {
-        "en": [
-          "a tripod",
-          "a lens",
-          "a flash",
-          "a film"
-        ],
-        "es": [
-          "un trípode",
-          "un objetivo",
-          "un flash",
-          "un carrete"
-        ]
-      },
+      "options": [
+        "sur un trépied",
+        "sur un objectif",
+        "sur un flash",
+        "sur un écran"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Three feet to hold the camera.",
-        "es": "Tres patas para sujetar la cámara."
+        "en": "\"Un trépied\" = a tripod (three feet).",
+        "es": "«Un trépied» = un trípode."
       }
     },
     {
       "question": {
-        "en": "\"Flou\" means…",
-        "es": "«Flou» significa…"
+        "fr": "Tu as bougé au moment de prendre la photo, et on ne voit rien de net. Comment est la photo ?",
+        "en": "You moved as you took the photo, and nothing is sharp. What is the photo like?",
+        "es": "Te moviste al hacer la foto y no se ve nada nítido. ¿Cómo es la foto?"
       },
-      "options": {
-        "en": [
-          "blurry",
-          "bright",
-          "colorful",
-          "sharp"
-        ],
-        "es": [
-          "borroso",
-          "luminoso",
-          "colorido",
-          "nítido"
-        ]
-      },
+      "options": [
+        "Elle est floue.",
+        "Elle est nette.",
+        "Elle est fluide.",
+        "Elle est fleurie."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Opposite: net.",
-        "es": "Lo contrario: net."
+        "en": "\"Flou\" = blurry; \"net\" = sharp.",
+        "es": "«Flou» = borroso; «net» = nítido."
       }
     },
     {
       "question": {
+        "fr": "Complète : « C'est la ___ belle photo de l'album. »",
         "en": "Complete: \"C'est la ___ belle photo de l'album.\"",
         "es": "Completa: «C'est la ___ belle photo de l'album.»"
       },

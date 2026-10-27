@@ -330,6 +330,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quel est l'adverbe de « heureux » ?",
         "en": "What is the adverb of \"heureux\"?",
         "es": "¿Cuál es el adverbio de «heureux»?"
       },
@@ -347,6 +348,7 @@
     },
     {
       "question": {
+        "fr": "Quel est l'adverbe de « récent » ?",
         "en": "What is the adverb of \"récent\"?",
         "es": "¿Cuál es el adverbio de «récent»?"
       },
@@ -364,6 +366,7 @@
     },
     {
       "question": {
+        "fr": "Où se place « souvent » ? Quelle phrase est correcte ?",
         "en": "Where does \"souvent\" go? \"J'ai ___ acheté ___ ici.\"",
         "es": "¿Dónde va «souvent»? «J'ai ___ acheté ___ ici.»"
       },
@@ -381,6 +384,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Des chemises ? Choisis-___ une. »",
         "en": "Complete: \"Des chemises ? Choisis-___ une.\"",
         "es": "Completa: «Des chemises ? Choisis-___ une.»"
       },
@@ -398,6 +402,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il est sorti sans que personne ne le ___. »",
         "en": "Complete: \"Il est sorti sans que personne ne le ___.\"",
         "es": "Completa: «Il est sorti sans que personne ne le ___.»"
       },
@@ -415,6 +420,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Ces sandales sont ___ lourdes que les tiennes. » (elles sont plus légères)",
         "en": "Complete: \"Ces sandales sont ___ lourdes que les tiennes.\" (lighter)",
         "es": "Completa: «Ces sandales sont ___ lourdes que les tiennes.» (pesan menos)"
       },
@@ -432,52 +438,38 @@
     },
     {
       "question": {
-        "en": "\"Le vol à l'étalage\" is…",
-        "es": "«Le vol à l'étalage» es…"
+        "fr": "Un homme met un pull dans son sac et sort du magasin sans payer. Qu'est-ce que c'est ?",
+        "en": "A man puts a jumper in his bag and leaves the shop without paying. What is it?",
+        "es": "Un hombre mete un jersey en su bolsa y sale de la tienda sin pagar. ¿Qué es?"
       },
-      "options": {
-        "en": [
-          "shoplifting",
-          "a flight sale",
-          "a window display",
-          "a discount"
-        ],
-        "es": [
-          "el hurto en tiendas",
-          "una venta de vuelos",
-          "un escaparate",
-          "un descuento"
-        ]
-      },
+      "options": [
+        "du vol à l'étalage",
+        "du lèche-vitrine",
+        "un remboursement",
+        "une promotion"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "L'étalage = display.",
-        "es": "L'étalage = el expositor."
+        "en": "\"Le vol à l'étalage\" = shoplifting.",
+        "es": "«Le vol à l'étalage» = el hurto en tiendas."
       }
     },
     {
       "question": {
-        "en": "What is \"un grand magasin\"?",
-        "es": "¿Qué es «un grand magasin»?"
+        "fr": "Les Galeries Lafayette vendent des vêtements, des parfums et des meubles sur plusieurs étages. Qu'est-ce que c'est ?",
+        "en": "Galeries Lafayette sells clothes, perfume and furniture over several floors. What is it?",
+        "es": "Las Galeries Lafayette venden ropa, perfumes y muebles en varias plantas. ¿Qué son?"
       },
-      "options": {
-        "en": [
-          "a department store",
-          "a big warehouse",
-          "a big magazine",
-          "a market"
-        ],
-        "es": [
-          "unos grandes almacenes",
-          "un gran almacén de mercancías",
-          "una revista grande",
-          "un mercado"
-        ]
-      },
+      "options": [
+        "un grand magasin",
+        "une épicerie",
+        "un marché",
+        "une boutique de quartier"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "E.g., Galeries Lafayette.",
-        "es": "P. ej., Galeries Lafayette."
+        "en": "\"Un grand magasin\" = a department store (not just \"a big shop\").",
+        "es": "«Un grand magasin» = unos grandes almacenes."
       }
     }
   ],

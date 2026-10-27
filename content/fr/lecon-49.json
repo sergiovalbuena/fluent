@@ -361,6 +361,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Tu ne guériras pas à moins que tu te ___. »",
         "en": "Complete: \"Tu ne guériras pas à moins que tu te ___.\"",
         "es": "Completa: «Tu ne guériras pas à moins que tu te ___.»"
       },
@@ -378,6 +379,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il faut que tu ___ chez le médecin. »",
         "en": "Complete: \"Il faut que tu ___ chez le médecin.\"",
         "es": "Completa: «Il faut que tu ___ chez le médecin.»"
       },
@@ -395,6 +397,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Prends ce sirop, ___ ta toux ne passera pas. »",
         "en": "Complete: \"Prends ce sirop, ___ ta toux ne passera pas.\"",
         "es": "Completa: «Prends ce sirop, ___ ta toux ne passera pas.»"
       },
@@ -412,6 +415,7 @@
     },
     {
       "question": {
+        "fr": "Qu'est-ce que le médecin te donne pour aller à la pharmacie ?",
         "en": "What does the doctor give you to take to the pharmacy?",
         "es": "¿Qué te da el médico para llevar a la farmacia?"
       },
@@ -429,6 +433,7 @@
     },
     {
       "question": {
+        "fr": "Discours indirect : « Vous avez la grippe. » → Il m'a dit que j'___ la grippe.",
         "en": "Reported: \"Vous avez la grippe.\" → Il m'a dit que j'___ la grippe.",
         "es": "Indirecto: «Vous avez la grippe.» → Il m'a dit que j'___ la grippe."
       },
@@ -446,31 +451,25 @@
     },
     {
       "question": {
-        "en": "\"Avoir des vertiges\" means…",
-        "es": "«Avoir des vertiges» significa…"
+        "fr": "Quand tu te lèves, tout tourne autour de toi. Qu'est-ce que tu dis au médecin ?",
+        "en": "When you stand up, everything spins around you. What do you tell the doctor?",
+        "es": "Cuando te levantas, todo da vueltas a tu alrededor. ¿Qué le dices al médico?"
       },
-      "options": {
-        "en": [
-          "to feel dizzy",
-          "to have a fever",
-          "to cough",
-          "to faint"
-        ],
-        "es": [
-          "marearse",
-          "tener fiebre",
-          "toser",
-          "desmayarse"
-        ]
-      },
+      "options": [
+        "J'ai des vertiges.",
+        "J'ai des verres.",
+        "J'ai de la fièvre.",
+        "J'ai des vestiges."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "S'évanouir = to faint.",
-        "es": "S'évanouir = desmayarse."
+        "en": "\"Avoir des vertiges\" = to feel dizzy.",
+        "es": "«Avoir des vertiges» = tener mareos."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Même si tu ___ mieux, continue le traitement. »",
         "en": "Complete: \"Même si tu ___ mieux, continue le traitement.\"",
         "es": "Completa: «Même si tu ___ mieux, continue le traitement.»"
       },
@@ -488,6 +487,7 @@
     },
     {
       "question": {
+        "fr": "Où vas-tu en cas d'urgence ?",
         "en": "Where do you go in an emergency?",
         "es": "¿Adónde vas en una emergencia?"
       },

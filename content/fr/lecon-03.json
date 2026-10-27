@@ -374,23 +374,16 @@
   "qa": [
     {
       "question": {
-        "en": "What does \"avant-hier\" mean?",
-        "es": "¿Qué significa «avant-hier»?"
+        "fr": "Aujourd'hui, c'est mercredi. Tu parles de lundi. Quel mot utilises-tu ?",
+        "en": "Today is Wednesday. You're talking about Monday. Which word do you use?",
+        "es": "Hoy es miércoles. Hablas del lunes. ¿Qué palabra usas?"
       },
-      "options": {
-        "en": [
-          "the day before yesterday",
-          "the day after tomorrow",
-          "yesterday evening",
-          "last week"
-        ],
-        "es": [
-          "anteayer",
-          "pasado mañana",
-          "ayer por la noche",
-          "la semana pasada"
-        ]
-      },
+      "options": [
+        "avant-hier",
+        "hier",
+        "demain",
+        "après-demain"
+      ],
       "correct": 0,
       "explanation": {
         "en": "\"Avant-hier\" = the day before yesterday; \"après-demain\" = the day after tomorrow.",
@@ -399,6 +392,7 @@
     },
     {
       "question": {
+        "fr": "Comment est-ce que tu demandes la date ?",
         "en": "How do you ask for the date?",
         "es": "¿Cómo preguntas la fecha?"
       },
@@ -416,6 +410,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase est au passé (passé composé) ?",
         "en": "Which sentence is in the past (passé composé)?",
         "es": "¿Qué frase está en pasado (passé composé)?"
       },
@@ -433,6 +428,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase est au futur ?",
         "en": "Which sentence is in the future?",
         "es": "¿Qué frase está en futuro?"
       },
@@ -450,6 +446,7 @@
     },
     {
       "question": {
+        "fr": "« Les Français n'aiment pas manger, n'est-ce pas ? » En réalité, ils adorent manger. Qu'est-ce que tu réponds ?",
         "en": "\"Les Français n'aiment pas manger, n'est-ce pas ?\" They actually love food. What do you answer?",
         "es": "«Les Français n'aiment pas manger, n'est-ce pas ?» En realidad les encanta comer. ¿Qué respondes?"
       },
@@ -467,6 +464,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Montréal est ___ Canada. »",
         "en": "Complete: \"Montréal est ___ Canada.\"",
         "es": "Completa: «Montréal est ___ Canada.»"
       },
@@ -484,6 +482,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il vient ___ Portugal. »",
         "en": "Complete: \"Il vient ___ Portugal.\"",
         "es": "Completa: «Il vient ___ Portugal.»"
       },
@@ -501,27 +500,20 @@
     },
     {
       "question": {
-        "en": "What does \"le lundi\" mean in \"Le lundi, je travaille\"?",
-        "es": "¿Qué significa «le lundi» en «Le lundi, je travaille»?"
+        "fr": "Tu travailles tous les lundis. Comment le dis-tu ?",
+        "en": "You work every Monday. How do you say it?",
+        "es": "Trabajas todos los lunes. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "every Monday",
-          "last Monday",
-          "next Monday only",
-          "one Monday"
-        ],
-        "es": [
-          "todos los lunes",
-          "el lunes pasado",
-          "solo el próximo lunes",
-          "un lunes"
-        ]
-      },
+      "options": [
+        "Le lundi, je travaille.",
+        "Lundi, j'ai travaillé.",
+        "Un lundi, je travaille.",
+        "Au lundi, je travaille."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "With \"le\", the day expresses a habit.",
-        "es": "Con «le», el día expresa un hábito."
+        "en": "\"Le lundi\" with the article = every Monday. \"Lundi\" alone = this (or last) Monday.",
+        "es": "«Le lundi» con artículo = todos los lunes. «Lundi» solo = este lunes (o el pasado)."
       }
     }
   ],

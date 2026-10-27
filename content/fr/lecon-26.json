@@ -361,6 +361,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Elle joue ___ violon. »",
         "en": "Complete: \"Elle joue ___ violon.\"",
         "es": "Completa: «Elle joue ___ violon.»"
       },
@@ -378,6 +379,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il joue ___ guitare. »",
         "en": "Complete: \"Il joue ___ guitare.\"",
         "es": "Completa: «Il joue ___ guitare.»"
       },
@@ -395,6 +397,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase décrit une habitude du passé ?",
         "en": "Which sentence describes a habit in the past?",
         "es": "¿Qué frase describe un hábito pasado?"
       },
@@ -412,6 +415,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je joue du piano ___ dix ans. » (et je continue)",
         "en": "Complete: \"Je joue du piano ___ dix ans.\" (and still do)",
         "es": "Completa: «Je joue du piano ___ dix ans.» (y sigo)"
       },
@@ -429,31 +433,25 @@
     },
     {
       "question": {
-        "en": "\"Combien d'instruments joues-tu ? — Aucun.\" Meaning?",
-        "es": "«Combien d'instruments joues-tu ? — Aucun.» ¿Significado?"
+        "fr": "« Combien d'instruments joues-tu ? » Tu n'en joues pas. Qu'est-ce que tu réponds ?",
+        "en": "\"How many instruments do you play?\" You don't play any. What do you answer?",
+        "es": "«¿Cuántos instrumentos tocas?» No tocas ninguno. ¿Qué respondes?"
       },
-      "options": {
-        "en": [
-          "None.",
-          "Only one.",
-          "All of them.",
-          "Some."
-        ],
-        "es": [
-          "Ninguno.",
-          "Solo uno.",
-          "Todos.",
-          "Algunos."
-        ]
-      },
+      "options": [
+        "Aucun.",
+        "Aucune.",
+        "Personne.",
+        "Rien."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Aucun\" = none.",
-        "es": "«Aucun» = ninguno."
+        "en": "\"Aucun\" = none, and it agrees: \"un instrument\" is masculine, so \"aucun\".",
+        "es": "«Aucun» = ninguno, y concuerda: «un instrument» es masculino, así que «aucun»."
       }
     },
     {
       "question": {
+        "fr": "Où étudie-t-on la musique de façon professionnelle ?",
         "en": "Where do you study music professionally?",
         "es": "¿Dónde se estudia música de forma profesional?"
       },
@@ -471,6 +469,7 @@
     },
     {
       "question": {
+        "fr": "Quel instrument est une percussion ?",
         "en": "Which is a percussion instrument?",
         "es": "¿Cuál es un instrumento de percusión?"
       },
@@ -488,6 +487,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « On voyage en ___ et en donnant du bonheur. »",
         "en": "Complete: \"On voyage en ___ et en donnant du bonheur.\"",
         "es": "Completa: «On voyage en ___ et en donnant du bonheur.»"
       },

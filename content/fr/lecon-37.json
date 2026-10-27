@@ -321,6 +321,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Tu as ___ conduit en France ? » (une fois dans ta vie)",
         "en": "Complete: \"Tu as ___ conduit en France ?\" (ever)",
         "es": "Completa: «Tu as ___ conduit en France ?» (alguna vez)"
       },
@@ -338,6 +339,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je n'ai ___ eu d'accident. »",
         "en": "Complete: \"Je n'ai ___ eu d'accident.\"",
         "es": "Completa: «Je n'ai ___ eu d'accident.»"
       },
@@ -355,6 +357,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Bien que tu lui ___ dit, il n'a pas écouté. »",
         "en": "Complete: \"Bien que tu lui ___ dit, il n'a pas écouté.\"",
         "es": "Completa: «Bien que tu lui ___ dit, il n'a pas écouté.»"
       },
@@ -372,6 +375,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je cherche une voiture qui ___ sûre. »",
         "en": "Complete: \"Je cherche une voiture qui ___ sûre.\"",
         "es": "Completa: «Je cherche une voiture qui ___ sûre.»"
       },
@@ -389,102 +393,74 @@
     },
     {
       "question": {
-        "en": "What does \"faire le plein\" mean?",
-        "es": "¿Qué significa «faire le plein»?"
+        "fr": "Le réservoir de la voiture est presque vide. Tu t'arrêtes à la station-service. Qu'est-ce que tu fais ?",
+        "en": "The car's tank is almost empty. You stop at the petrol station. What do you do?",
+        "es": "El depósito del coche está casi vacío. Paras en la gasolinera. ¿Qué haces?"
       },
-      "options": {
-        "en": [
-          "to fill up the tank",
-          "to be full after eating",
-          "to clean the car",
-          "to park"
-        ],
-        "es": [
-          "llenar el depósito",
-          "estar lleno tras comer",
-          "limpiar el coche",
-          "aparcar"
-        ]
-      },
+      "options": [
+        "Je fais le plein.",
+        "Je fais le vide.",
+        "Je fais la queue.",
+        "Je fais le tour."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Le plein = full tank.",
-        "es": "Le plein = depósito lleno."
+        "en": "\"Faire le plein\" = to fill up the tank.",
+        "es": "«Faire le plein» = llenar el depósito."
       }
     },
     {
       "question": {
-        "en": "\"Ça fait des années que je conduis.\" Meaning?",
-        "es": "«Ça fait des années que je conduis.» ¿Significado?"
+        "fr": "Tu as ton permis depuis quinze ans. Comment dis-tu que tu as de l'expérience au volant ?",
+        "en": "You've had your licence for fifteen years. How do you say you're an experienced driver?",
+        "es": "Tienes el carné desde hace quince años. ¿Cómo dices que tienes experiencia al volante?"
       },
-      "options": {
-        "en": [
-          "I've been driving for years.",
-          "I drove years ago.",
-          "I haven't driven for years.",
-          "I will drive for years."
-        ],
-        "es": [
-          "Llevo años conduciendo.",
-          "Conduje hace años.",
-          "Hace años que no conduzco.",
-          "Conduciré durante años."
-        ]
-      },
+      "options": [
+        "Ça fait des années que je conduis.",
+        "Il y a des années que j'ai conduit.",
+        "Je conduis pendant des années.",
+        "Je conduisais dans des années."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Ça fait … que + present = still true.",
-        "es": "Ça fait … que + presente = sigue siendo cierto."
+        "en": "\"Ça fait + time + que\" + present = I've been doing it for…",
+        "es": "«Ça fait + tiempo + que» + presente = hace… que lo hago."
       }
     },
     {
       "question": {
-        "en": "What is \"la caution\" at a rental agency?",
-        "es": "¿Qué es «la caution» en una agencia de alquiler?"
+        "fr": "À l'agence de location, on bloque 800 € sur ta carte, que tu récupères si tu rends la voiture intacte. Comment s'appelle cet argent ?",
+        "en": "At the rental agency they hold €800 on your card, which you get back if you return the car undamaged. What is this money called?",
+        "es": "En la agencia de alquiler te bloquean 800 € en la tarjeta, que recuperas si devuelves el coche intacto. ¿Cómo se llama ese dinero?"
       },
-      "options": {
-        "en": [
-          "the deposit",
-          "the caution sign",
-          "the insurance",
-          "the key"
-        ],
-        "es": [
-          "la fianza",
-          "la señal de precaución",
-          "el seguro",
-          "la llave"
-        ]
-      },
+      "options": [
+        "la caution",
+        "l'amende",
+        "le pourboire",
+        "la monnaie"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Money held until you return the car.",
-        "es": "Dinero retenido hasta devolver el coche."
+        "en": "\"La caution\" = the deposit. \"L'amende\" = a fine, \"le pourboire\" = a tip.",
+        "es": "«La caution» = la fianza. «L'amende» = la multa, «le pourboire» = la propina."
       }
     },
     {
       "question": {
-        "en": "\"Jeter un coup d'œil\" means…",
-        "es": "«Jeter un coup d'œil» significa…"
+        "fr": "Avant de signer le contrat, tu veux regarder rapidement la voiture. Qu'est-ce que tu dis ?",
+        "en": "Before signing the contract, you want to have a quick look at the car. What do you say?",
+        "es": "Antes de firmar el contrato, quieres echarle un vistazo al coche. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "to take a quick look",
-          "to throw something",
-          "to hit someone",
-          "to close your eyes"
-        ],
-        "es": [
-          "echar un vistazo",
-          "tirar algo",
-          "pegar a alguien",
-          "cerrar los ojos"
-        ]
-      },
+      "options": [
+        "Je peux jeter un coup d'œil à la voiture ?",
+        "Je peux jeter la voiture ?",
+        "Je peux donner un coup de main à la voiture ?",
+        "Je peux mettre l'œil sur la voiture ?"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Literally \"to throw a stroke of the eye\".",
-        "es": "Literalmente «lanzar un golpe de ojo»."
+        "en": "\"Jeter un coup d'œil\" = to take a quick look.",
+        "es": "«Jeter un coup d'œil» = echar un vistazo."
       }
     }
   ],

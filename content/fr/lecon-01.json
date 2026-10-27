@@ -212,6 +212,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Il est 20 h et tu arrives à un dîner. Qu'est-ce que tu dis ?",
         "en": "It's 8 p.m. and you arrive at a dinner. What do you say?",
         "es": "Son las 8 de la noche y llegas a una cena. ¿Qué dices?"
       },
@@ -229,6 +230,7 @@
     },
     {
       "question": {
+        "fr": "Tu rencontres ta nouvelle cheffe pour la première fois. Quelle question convient le mieux ?",
         "en": "You meet your new boss for the first time. Which question fits best?",
         "es": "Conoces a tu nueva jefa por primera vez. ¿Qué pregunta es la más adecuada?"
       },
@@ -246,56 +248,43 @@
     },
     {
       "question": {
-        "en": "What does \"à tout à l'heure\" mean?",
-        "es": "¿Qué significa «à tout à l'heure»?"
+        "fr": "Tu quittes un collègue et tu vas le revoir dans une heure. Qu'est-ce que tu lui dis ?",
+        "en": "You're leaving a colleague and you'll see them again in an hour. What do you say?",
+        "es": "Te despides de un compañero y lo vas a volver a ver dentro de una hora. ¿Qué le dices?"
       },
-      "options": {
-        "en": [
-          "see you in a bit",
-          "see you tomorrow",
-          "goodbye forever",
-          "good night"
-        ],
-        "es": [
-          "hasta dentro de un rato",
-          "hasta mañana",
-          "adiós para siempre",
-          "buenas noches"
-        ]
-      },
+      "options": [
+        "À tout à l'heure !",
+        "À demain !",
+        "Adieu !",
+        "Bonne nuit !"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "You say it when you'll see the person again later the same day.",
-        "es": "Se dice cuando volverás a ver a la persona más tarde, el mismo día."
+        "en": "\"À tout à l'heure\" means \"see you in a bit\", later the same day.",
+        "es": "«À tout à l'heure» significa «hasta dentro de un rato», más tarde el mismo día."
       }
     },
     {
       "question": {
-        "en": "A friend asks you \"Quoi de neuf ?\". What are they asking?",
-        "es": "Un amigo te pregunta «Quoi de neuf ?». ¿Qué te está preguntando?"
+        "fr": "Un ami te demande « Quoi de neuf ? ». Qu'est-ce que tu réponds ?",
+        "en": "A friend asks you \"Quoi de neuf ?\". What do you answer?",
+        "es": "Un amigo te pregunta «Quoi de neuf ?». ¿Qué le respondes?"
       },
-      "options": {
-        "en": [
-          "What's new?",
-          "What time is it?",
-          "Where are you going?",
-          "What's your name?"
-        ],
-        "es": [
-          "¿Qué hay de nuevo?",
-          "¿Qué hora es?",
-          "¿Adónde vas?",
-          "¿Cómo te llamas?"
-        ]
-      },
+      "options": [
+        "Pas grand-chose, et toi ?",
+        "Il est huit heures.",
+        "Je vais à la gare.",
+        "Je m'appelle Paul."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Neuf\" means \"new\" here: \"Quoi de neuf ?\" = What's new?",
-        "es": "Aquí «neuf» significa «nuevo»: «Quoi de neuf ?» = ¿Qué hay de nuevo?"
+        "en": "\"Quoi de neuf ?\" means \"What's new?\". \"Pas grand-chose\" = not much.",
+        "es": "«Quoi de neuf ?» significa «¿Qué hay de nuevo?». «Pas grand-chose» = no mucho."
       }
     },
     {
       "question": {
+        "fr": "Quelle formule d'adieu veut dire que tu ne reverras plus la personne ?",
         "en": "Which farewell means you won't see the person again?",
         "es": "¿Qué despedida indica que no volverás a ver a la persona?"
       },
@@ -313,6 +302,7 @@
     },
     {
       "question": {
+        "fr": "Comment est-ce que tu présentes quelqu'un de façon formelle ?",
         "en": "How do you introduce someone formally?",
         "es": "¿Cómo presentas a alguien de manera formal?"
       },
@@ -330,6 +320,7 @@
     },
     {
       "question": {
+        "fr": "On te demande « Comment vas-tu ? » et tu ne te sens pas bien. Qu'est-ce que tu réponds ?",
         "en": "Someone asks \"Comment vas-tu ?\" and you feel bad. What do you answer?",
         "es": "Alguien te pregunta «Comment vas-tu ?» y te sientes mal. ¿Qué respondes?"
       },
@@ -347,6 +338,7 @@
     },
     {
       "question": {
+        "fr": "Tu veux que ton ami salue sa sœur de ta part. Qu'est-ce que tu lui dis ?",
         "en": "How do you say \"Say hello to your sister for me\"?",
         "es": "¿Cómo se dice «Saluda a tu hermana de mi parte»?"
       },

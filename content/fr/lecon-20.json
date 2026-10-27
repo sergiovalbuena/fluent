@@ -381,31 +381,25 @@
   "qa": [
     {
       "question": {
-        "en": "What does \"le feu\" mean in \"Tournez à droite au feu\"?",
-        "es": "¿Qué significa «le feu» en «Tournez à droite au feu»?"
+        "fr": "Tu expliques le chemin : il faut tourner à droite là où les voitures s'arrêtent au rouge. Qu'est-ce que tu dis ?",
+        "en": "You're giving directions: turn right where the cars stop at red. What do you say?",
+        "es": "Das indicaciones: hay que girar a la derecha donde los coches paran en rojo. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "the traffic light",
-          "the fire",
-          "the corner",
-          "the bridge"
-        ],
-        "es": [
-          "el semáforo",
-          "el fuego",
-          "la esquina",
-          "el puente"
-        ]
-      },
+      "options": [
+        "Tournez à droite au feu.",
+        "Tournez à droite au feu d'artifice.",
+        "Tournez à droite à la lumière.",
+        "Tournez à droite au rouge."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "In the street, \"le feu\" is the traffic light.",
-        "es": "En la calle, «le feu» es el semáforo."
+        "en": "\"Le feu (rouge)\" = the traffic light.",
+        "es": "«Le feu (rouge)» = el semáforo."
       }
     },
     {
       "question": {
+        "fr": "Mets au passif (passé) : « On a construit cette église en 1880. »",
         "en": "Passive past: \"They built this church in 1880\" → ?",
         "es": "Pasiva en pasado: «Construyeron esta iglesia en 1880» → ?"
       },
@@ -423,6 +417,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « J'aime le marché : j'___ vais tous les samedis. »",
         "en": "Complete: \"J'aime le marché : j'___ vais tous les samedis.\"",
         "es": "Completa: «J'aime le marché : j'___ vais tous les samedis.»"
       },
@@ -440,31 +435,25 @@
     },
     {
       "question": {
-        "en": "\"Ma famille s'est installée ici il y a cent ans.\" Meaning?",
-        "es": "«Ma famille s'est installée ici il y a cent ans.» ¿Significado?"
+        "fr": "Ta famille est arrivée dans cette ville il y a cent ans et elle y est restée. Comment le dis-tu ?",
+        "en": "Your family arrived in this town a hundred years ago and stayed. How do you say it?",
+        "es": "Tu familia llegó a esta ciudad hace cien años y se quedó. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "My family settled here a hundred years ago.",
-          "There are a hundred people in my family.",
-          "My family will settle here in a hundred years.",
-          "My family has a hundred-year-old house."
-        ],
-        "es": [
-          "Mi familia se instaló aquí hace cien años.",
-          "Hay cien personas en mi familia.",
-          "Mi familia se instalará aquí dentro de cien años.",
-          "Mi familia tiene una casa centenaria."
-        ]
-      },
+      "options": [
+        "Ma famille s'est installée ici il y a cent ans.",
+        "Ma famille s'installe ici dans cent ans.",
+        "Ma famille a installé ici depuis cent ans.",
+        "Ma famille va s'installer ici."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Il y a\" + duration = ago.",
-        "es": "«Il y a» + duración = hace."
+        "en": "\"S'installer\" = to settle; \"il y a\" + time = … ago.",
+        "es": "«S'installer» = establecerse; «il y a» + tiempo = hace…"
       }
     },
     {
       "question": {
+        "fr": "Quelle phrase donne un conseil (et pas une obligation) ?",
         "en": "Which sentence gives advice (not an obligation)?",
         "es": "¿Qué frase da un consejo (no una obligación)?"
       },
@@ -482,6 +471,7 @@
     },
     {
       "question": {
+        "fr": "Où vas-tu pour emprunter des livres ?",
         "en": "Where do you go to borrow books?",
         "es": "¿Adónde vas a tomar prestados libros?"
       },
@@ -499,6 +489,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « ___ le bruit, j'adore Paris. »",
         "en": "Complete: \"___ le bruit, j'adore Paris.\"",
         "es": "Completa: «___ le bruit, j'adore Paris.»"
       },
@@ -516,27 +507,20 @@
     },
     {
       "question": {
-        "en": "What is \"un embouteillage\"?",
-        "es": "¿Qué es «un embouteillage»?"
+        "fr": "Tu es en retard : les voitures n'avancent plus du tout sur le périphérique. Qu'est-ce que tu dis ?",
+        "en": "You're late: the cars aren't moving at all on the ring road. What do you say?",
+        "es": "Llegas tarde: los coches no avanzan nada en la circunvalación. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "a traffic jam",
-          "a bottle shop",
-          "a parking lot",
-          "a crossroads"
-        ],
-        "es": [
-          "un atasco",
-          "una tienda de botellas",
-          "un aparcamiento",
-          "un cruce"
-        ]
-      },
+      "options": [
+        "Je suis dans un embouteillage.",
+        "Je suis dans un embouchure.",
+        "Je suis dans une bouteille.",
+        "Je suis dans un emballage."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Also \"un bouchon\" (informal).",
-        "es": "También «un bouchon» (coloquial)."
+        "en": "\"Un embouteillage\" = a traffic jam (from \"bouteille\": traffic squeezed like a bottleneck).",
+        "es": "«Un embouteillage» = un atasco (viene de «bouteille»: un cuello de botella)."
       }
     }
   ],

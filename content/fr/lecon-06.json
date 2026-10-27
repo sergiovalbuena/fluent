@@ -294,6 +294,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Le frère de ta mère est ton…",
         "en": "Your mother's brother is your…",
         "es": "El hermano de tu madre es tu…"
       },
@@ -311,6 +312,7 @@
     },
     {
       "question": {
+        "fr": "La fille de ta sœur est ta…",
         "en": "Your sister's daughter is your…",
         "es": "La hija de tu hermana es tu…"
       },
@@ -328,6 +330,7 @@
     },
     {
       "question": {
+        "fr": "Le mari de ta sœur est ton…",
         "en": "Your sister's husband is your…",
         "es": "El esposo de tu hermana es tu…"
       },
@@ -345,31 +348,25 @@
     },
     {
       "question": {
-        "en": "What does \"l'aînée\" mean?",
-        "es": "¿Qué significa «l'aînée»?"
+        "fr": "Tu as deux sœurs : Julie a 30 ans et Anne a 25 ans. Qui est Julie ?",
+        "en": "You have two sisters: Julie is 30 and Anne is 25. Who is Julie?",
+        "es": "Tienes dos hermanas: Julie tiene 30 años y Anne 25. ¿Quién es Julie?"
       },
-      "options": {
-        "en": [
-          "the eldest",
-          "the youngest",
-          "the godmother",
-          "the twin"
-        ],
-        "es": [
-          "la mayor",
-          "la menor",
-          "la madrina",
-          "la gemela"
-        ]
-      },
+      "options": [
+        "l'aînée",
+        "la cadette",
+        "la jumelle",
+        "la cousine"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "The youngest is \"la cadette\".",
-        "es": "La menor es «la cadette»."
+        "en": "\"L'aîné(e)\" = the eldest; \"le / la cadet(te)\" = the younger one.",
+        "es": "«L'aîné(e)» = el / la mayor; «le / la cadet(te)» = el / la menor."
       }
     },
     {
       "question": {
+        "fr": "Comment demandes-tu quel est le métier du père de quelqu'un ?",
         "en": "How do you ask what someone's father does for a living?",
         "es": "¿Cómo preguntas a qué se dedica el padre de alguien?"
       },
@@ -387,6 +384,7 @@
     },
     {
       "question": {
+        "fr": "Ton oncle est né il y a quarante-cinq ans. Comment dis-tu son âge ?",
         "en": "How do you say \"He is 45 years old\"?",
         "es": "¿Cómo se dice «Tiene 45 años»?"
       },
@@ -404,31 +402,25 @@
     },
     {
       "question": {
-        "en": "\"Sa fille va se marier.\" What tense is this?",
-        "es": "«Sa fille va se marier.» ¿Qué tiempo es?"
+        "fr": "La fille de ta voisine se marie le mois prochain. Comment le dis-tu ?",
+        "en": "Your neighbour's daughter is getting married next month. How do you say it?",
+        "es": "La hija de tu vecina se casa el mes que viene. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "near future",
-          "past",
-          "present habit",
-          "conditional"
-        ],
-        "es": [
-          "futuro próximo",
-          "pasado",
-          "presente habitual",
-          "condicional"
-        ]
-      },
+      "options": [
+        "Sa fille va se marier.",
+        "Sa fille s'est mariée.",
+        "Sa fille se mariait.",
+        "Sa fille vient de se marier."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Aller (present) + infinitive = near future.",
-        "es": "Aller (presente) + infinitivo = futuro próximo."
+        "en": "Near future: \"aller\" + infinitive. \"Va se marier\" = is going to get married.",
+        "es": "Futuro próximo: «aller» + infinitivo. «Va se marier» = se va a casar."
       }
     },
     {
       "question": {
+        "fr": "Complète : « ___ sœur et ___ frère » (les miens)",
         "en": "Complete: \"___ sœur et ___ frère\" (my)",
         "es": "Completa: «___ sœur et ___ frère» (mi)"
       },

@@ -300,6 +300,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « S'il fait beau, nous ___ toujours au parc. » (une habitude)",
         "en": "Complete: \"S'il fait beau, nous ___ toujours au parc.\" (habit)",
         "es": "Completa: «S'il fait beau, nous ___ toujours au parc.» (hábito)"
       },
@@ -317,6 +318,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Si tu as besoin d'aide, je t'___. » (futur)",
         "en": "Complete: \"Si tu as besoin d'aide, je t'___.\" (future)",
         "es": "Completa: «Si tu as besoin d'aide, je t'___.» (futuro)"
       },
@@ -334,6 +336,7 @@
     },
     {
       "question": {
+        "fr": "Ton colocataire te demande s'il peut garder tes clés. Tu as confiance en lui. Qu'est-ce que tu dis ?",
         "en": "How do you say \"I trust you\"?",
         "es": "¿Cómo se dice «Confío en ti»?"
       },
@@ -351,31 +354,25 @@
     },
     {
       "question": {
-        "en": "\"Il me rappelle mon frère.\" Meaning?",
-        "es": "«Il me rappelle mon frère.» ¿Significado?"
+        "fr": "Ton nouveau colocataire te fait penser à ton frère : même humour, même voix. Qu'est-ce que tu dis ?",
+        "en": "Your new flatmate makes you think of your brother: same humour, same voice. What do you say?",
+        "es": "Tu nuevo compañero de piso te recuerda a tu hermano: mismo humor, misma voz. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "He reminds me of my brother.",
-          "He calls my brother back.",
-          "He remembers my brother.",
-          "He calls me brother."
-        ],
-        "es": [
-          "Me recuerda a mi hermano.",
-          "Le devuelve la llamada a mi hermano.",
-          "Se acuerda de mi hermano.",
-          "Me llama hermano."
-        ]
-      },
+      "options": [
+        "Il me rappelle mon frère.",
+        "Il se rappelle mon frère.",
+        "Je rappelle mon frère.",
+        "Il m'appelle mon frère."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Rappeler qqn à qqn = to remind (resemble).",
-        "es": "Rappeler qqn à qqn = recordar (parecerse)."
+        "en": "\"Rappeler quelqu'un à quelqu'un\" = to remind someone of someone.",
+        "es": "«Rappeler quelqu'un à quelqu'un» = recordarle a alguien a otra persona."
       }
     },
     {
       "question": {
+        "fr": "Ton ami est triste. Comment lui dis-tu de ne pas l'être (impératif) ?",
         "en": "Negative imperative of \"être\" (tu):",
         "es": "Imperativo negativo de «être» (tu):"
       },
@@ -393,31 +390,25 @@
     },
     {
       "question": {
-        "en": "What is \"un colocataire\"?",
-        "es": "¿Qué es «un colocataire»?"
+        "fr": "Tu partages l'appartement et le loyer avec Hugo. Qu'est-ce qu'il est pour toi ?",
+        "en": "You share the flat and the rent with Hugo. What is he to you?",
+        "es": "Compartes el piso y el alquiler con Hugo. ¿Qué es él para ti?"
       },
-      "options": {
-        "en": [
-          "a roommate / flatmate",
-          "a landlord",
-          "a colleague",
-          "a neighbor"
-        ],
-        "es": [
-          "un compañero de piso",
-          "un casero",
-          "un compañero de trabajo",
-          "un vecino"
-        ]
-      },
+      "options": [
+        "mon colocataire",
+        "mon propriétaire",
+        "mon locataire",
+        "mon voisin"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Informal: un coloc.",
-        "es": "Coloquial: un coloc."
+        "en": "\"Un colocataire\" (\"un coloc\") = a flatmate, a roommate.",
+        "es": "«Un colocataire» («un coloc») = un compañero de piso."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Elle cuisine uniquement ___ elle a le temps. »",
         "en": "Complete: \"Elle cuisine uniquement ___ elle a le temps.\"",
         "es": "Completa: «Elle cuisine uniquement ___ elle a le temps.»"
       },
@@ -435,27 +426,20 @@
     },
     {
       "question": {
-        "en": "\"L'intimité\" means…",
-        "es": "«L'intimité» significa…"
+        "fr": "Tu as besoin de moments seul, dans ta chambre, sans personne. Qu'est-ce que tu demandes à ton colocataire ?",
+        "en": "You need time alone in your room, without anyone. What do you ask your flatmate for?",
+        "es": "Necesitas momentos a solas en tu habitación, sin nadie. ¿Qué le pides a tu compañero de piso?"
       },
-      "options": {
-        "en": [
-          "privacy",
-          "intimidation",
-          "friendship",
-          "interest"
-        ],
-        "es": [
-          "la intimidad",
-          "la intimidación",
-          "la amistad",
-          "el interés"
-        ]
-      },
+      "options": [
+        "de respecter mon intimité",
+        "de respecter mon amitié",
+        "de respecter mon loyer",
+        "de respecter mon intérêt"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Respecter l'intimité de quelqu'un = to respect someone's privacy.",
-        "es": "Respecter l'intimité de quelqu'un = respetar la intimidad de alguien."
+        "en": "\"L'intimité\" = privacy (and also intimacy).",
+        "es": "«L'intimité» = la intimidad, la privacidad."
       }
     }
   ],

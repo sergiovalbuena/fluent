@@ -311,6 +311,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Je suis en train ___ chercher mon passeport. »",
         "en": "Complete: \"Je suis en train ___ chercher mon passeport.\"",
         "es": "Completa: «Je suis en train ___ chercher mon passeport.»"
       },
@@ -328,6 +329,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « J'___ en train de dormir quand tu as appelé. »",
         "en": "Complete: \"J'___ en train de dormir quand tu as appelé.\"",
         "es": "Completa: «J'___ en train de dormir quand tu as appelé.»"
       },
@@ -345,6 +347,7 @@
     },
     {
       "question": {
+        "fr": "Discours indirect : « Avez-vous quelque chose à déclarer ? » → Il m'a demandé…",
         "en": "Reported question: \"Avez-vous quelque chose à déclarer ?\" → Il m'a demandé…",
         "es": "Pregunta indirecta: «Avez-vous quelque chose à déclarer ?» → Il m'a demandé…"
       },
@@ -362,6 +365,7 @@
     },
     {
       "question": {
+        "fr": "« Êtes-vous français ? » — « Non, je ne ___ suis pas. »",
         "en": "\"Êtes-vous français ?\" — \"Non, je ne ___ suis pas.\"",
         "es": "«Êtes-vous français ?» — «Non, je ne ___ suis pas.»"
       },
@@ -379,6 +383,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il est possible qu'on l'___ ici. »",
         "en": "Complete: \"Il est possible qu'on l'___ ici.\"",
         "es": "Completa: «Il est possible qu'on l'___ ici.»"
       },
@@ -396,6 +401,7 @@
     },
     {
       "question": {
+        "fr": "Qu'est-ce que tu dis à la douane si tu n'as rien à déclarer ?",
         "en": "What do you say if you have nothing to declare?",
         "es": "¿Qué dices si no tienes nada que declarar?"
       },
@@ -413,6 +419,7 @@
     },
     {
       "question": {
+        "fr": "Où est-ce que tu demandes un visa ?",
         "en": "Where do you apply for a visa?",
         "es": "¿Dónde solicitas un visado?"
       },
@@ -430,6 +437,7 @@
     },
     {
       "question": {
+        "fr": "« Le motif de votre voyage ? » Quelle réponse convient ?",
         "en": "\"Le motif de votre voyage ?\" — Which answer fits?",
         "es": "«Le motif de votre voyage ?» — ¿Qué respuesta encaja?"
       },

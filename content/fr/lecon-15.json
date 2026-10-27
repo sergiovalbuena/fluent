@@ -416,6 +416,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Je voudrais ___ eau, s'il vous plaît. »",
         "en": "Complete: \"Je voudrais ___ eau, s'il vous plaît.\"",
         "es": "Completa: «Je voudrais ___ eau, s'il vous plaît.»"
       },
@@ -433,6 +434,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je ne mange pas ___ viande. »",
         "en": "Complete: \"Je ne mange pas ___ viande.\"",
         "es": "Completa: «Je ne mange pas ___ viande.»"
       },
@@ -450,31 +452,25 @@
     },
     {
       "question": {
-        "en": "\"Elle ne boit que du thé.\" What does it mean?",
-        "es": "«Elle ne boit que du thé.» ¿Qué significa?"
+        "fr": "Ta tante boit toujours du thé, jamais de café ni de jus. Comment le dis-tu ?",
+        "en": "Your aunt always drinks tea, never coffee or juice. How do you say it?",
+        "es": "Tu tía siempre bebe té, nunca café ni zumo. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "She only drinks tea.",
-          "She doesn't drink tea.",
-          "She drinks a lot of tea.",
-          "She never drinks tea."
-        ],
-        "es": [
-          "Solo bebe té.",
-          "No bebe té.",
-          "Bebe mucho té.",
-          "Nunca bebe té."
-        ]
-      },
+      "options": [
+        "Elle ne boit que du thé.",
+        "Elle ne boit pas de thé.",
+        "Elle boit que le thé.",
+        "Elle ne boit plus de thé."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Ne … que\" = only.",
-        "es": "«Ne … que» = solo."
+        "en": "\"Ne… que\" = only: \"Elle ne boit que du thé\" = she only drinks tea.",
+        "es": "«Ne… que» = solo: «Elle ne boit que du thé» = solo bebe té."
       }
     },
     {
       "question": {
+        "fr": "À table, comment demandes-tu à quelqu'un (tu) de te passer le pain ?",
         "en": "How do you ask someone to pass you the bread (tu)?",
         "es": "¿Cómo pides a alguien que te pase el pan (tu)?"
       },
@@ -492,31 +488,25 @@
     },
     {
       "question": {
-        "en": "Which meal is \"le déjeuner\" in France?",
-        "es": "¿Qué comida es «le déjeuner» en Francia?"
+        "fr": "En France, il est 12 h 30 et tout le monde mange. Quel repas est-ce ?",
+        "en": "In France it's 12:30 and everyone is eating. Which meal is it?",
+        "es": "En Francia son las 12:30 y todo el mundo come. ¿Qué comida es?"
       },
-      "options": {
-        "en": [
-          "lunch",
-          "breakfast",
-          "dinner",
-          "snack"
-        ],
-        "es": [
-          "el almuerzo",
-          "el desayuno",
-          "la cena",
-          "la merienda"
-        ]
-      },
+      "options": [
+        "le déjeuner",
+        "le petit-déjeuner",
+        "le dîner",
+        "le goûter"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Breakfast = le petit déjeuner.",
-        "es": "El desayuno = le petit déjeuner."
+        "en": "In France: \"le petit-déjeuner\" = breakfast, \"le déjeuner\" = lunch, \"le dîner\" = dinner.",
+        "es": "En Francia: «le petit-déjeuner» = desayuno, «le déjeuner» = almuerzo, «le dîner» = cena."
       }
     },
     {
       "question": {
+        "fr": "Avec quoi est-ce que tu coupes la viande ?",
         "en": "Which one do you use to cut meat?",
         "es": "¿Qué usas para cortar la carne?"
       },
@@ -534,31 +524,25 @@
     },
     {
       "question": {
-        "en": "\"Les croissants viennent de sortir du four.\" Meaning?",
-        "es": "«Les croissants viennent de sortir du four.» ¿Significado?"
+        "fr": "À la boulangerie, les croissants sont encore tout chauds : on les a sortis du four il y a une minute. Qu'est-ce que dit le boulanger ?",
+        "en": "At the bakery the croissants are still hot: they came out of the oven a minute ago. What does the baker say?",
+        "es": "En la panadería los cruasanes aún están calientes: los sacaron del horno hace un minuto. ¿Qué dice el panadero?"
       },
-      "options": {
-        "en": [
-          "The croissants have just come out of the oven.",
-          "The croissants come from the oven.",
-          "The croissants will go in the oven.",
-          "The croissants are in the oven."
-        ],
-        "es": [
-          "Los cruasanes acaban de salir del horno.",
-          "Los cruasanes vienen del horno.",
-          "Los cruasanes irán al horno.",
-          "Los cruasanes están en el horno."
-        ]
-      },
+      "options": [
+        "Ils viennent de sortir du four.",
+        "Ils vont sortir du four.",
+        "Ils sortent du four demain.",
+        "Ils sont sortis du four hier."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Venir de\" + infinitive = just happened.",
-        "es": "«Venir de» + infinitivo = acaba de ocurrir."
+        "en": "\"Venir de\" + infinitive = to have just: \"ils viennent de sortir\" = they've just come out.",
+        "es": "«Venir de» + infinitivo = acabar de: «ils viennent de sortir» = acaban de salir."
       }
     },
     {
       "question": {
+        "fr": "On te propose un thé, mais tu aimerais mieux un café. Comment le dis-tu poliment ?",
         "en": "How do you politely say \"I would prefer a coffee\"?",
         "es": "¿Cómo dices con cortesía «Preferiría un café»?"
       },

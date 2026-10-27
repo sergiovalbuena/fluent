@@ -401,6 +401,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Je joue ___ tennis. »",
         "en": "Complete: \"Je joue ___ tennis.\"",
         "es": "Completa: «Je joue ___ tennis.»"
       },
@@ -418,6 +419,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle fait ___ natation. »",
         "en": "Complete: \"Elle fait ___ natation.\"",
         "es": "Completa: «Elle fait ___ natation.»"
       },
@@ -435,6 +437,7 @@
     },
     {
       "question": {
+        "fr": "Avec quoi joue-t-on au football ?",
         "en": "Which ball is used in football?",
         "es": "¿Qué pelota se usa en el fútbol?"
       },
@@ -452,6 +455,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Bien qu'ils ___ violents, ces sports sont populaires. »",
         "en": "Complete: \"Bien qu'ils ___ violents, ces sports sont populaires.\"",
         "es": "Completa: «Bien qu'ils ___ violents, ces sports sont populaires.»"
       },
@@ -469,31 +473,25 @@
     },
     {
       "question": {
-        "en": "\"Tu n'as besoin que d'une paire de baskets.\" Meaning?",
-        "es": "«Tu n'as besoin que d'une paire de baskets.» ¿Significado?"
+        "fr": "Ton ami veut commencer à courir. Il n'a pas besoin d'autre chose que de bonnes chaussures. Qu'est-ce que tu lui dis ?",
+        "en": "Your friend wants to start running. He doesn't need anything except good shoes. What do you tell him?",
+        "es": "Tu amigo quiere empezar a correr. No necesita nada más que unas buenas zapatillas. ¿Qué le dices?"
       },
-      "options": {
-        "en": [
-          "You only need a pair of sneakers.",
-          "You don't need sneakers.",
-          "You need more than sneakers.",
-          "You never need sneakers."
-        ],
-        "es": [
-          "Solo necesitas unas zapatillas.",
-          "No necesitas zapatillas.",
-          "Necesitas más que zapatillas.",
-          "Nunca necesitas zapatillas."
-        ]
-      },
+      "options": [
+        "Tu n'as besoin que d'une paire de baskets.",
+        "Tu n'as pas besoin de baskets.",
+        "Tu as besoin que de baskets.",
+        "Tu n'as plus besoin de baskets."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Ne … que\" = only.",
-        "es": "«Ne … que» = solo."
+        "en": "\"Ne… que\" = only: \"tu n'as besoin que de…\" = you only need…",
+        "es": "«Ne… que» = solo: «tu n'as besoin que de…» = solo necesitas…"
       }
     },
     {
       "question": {
+        "fr": "Qui fait respecter les règles pendant un match ?",
         "en": "Who is in charge of the rules during a match?",
         "es": "¿Quién hace cumplir las reglas en un partido?"
       },
@@ -511,6 +509,7 @@
     },
     {
       "question": {
+        "fr": "Ton coéquipier a la balle. Comment lui demandes-tu de te la passer ?",
         "en": "How do you say \"Pass it to me!\" (la balle)?",
         "es": "¿Cómo se dice «¡Pásamela!» (la balle)?"
       },
@@ -528,27 +527,20 @@
     },
     {
       "question": {
-        "en": "\"Match nul\" means…",
-        "es": "«Match nul» significa…"
+        "fr": "Le match finit 2 à 2. Quel est le résultat ?",
+        "en": "The match ends 2–2. What's the result?",
+        "es": "El partido termina 2 a 2. ¿Cuál es el resultado?"
       },
-      "options": {
-        "en": [
-          "a draw",
-          "a bad match",
-          "a cancelled match",
-          "a final"
-        ],
-        "es": [
-          "un empate",
-          "un mal partido",
-          "un partido cancelado",
-          "una final"
-        ]
-      },
+      "options": [
+        "un match nul",
+        "une victoire",
+        "une défaite",
+        "un match perdu"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Gagner = win, perdre = lose, match nul = draw.",
-        "es": "Gagner = ganar, perdre = perder, match nul = empate."
+        "en": "\"Un match nul\" = a draw. \"Une victoire\" = a win, \"une défaite\" = a defeat.",
+        "es": "«Un match nul» = un empate. «Une victoire» = una victoria, «une défaite» = una derrota."
       }
     }
   ],

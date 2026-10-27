@@ -391,6 +391,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « En hiver, il ___ froid. »",
         "en": "Complete: \"En hiver, il ___ froid.\"",
         "es": "Completa: «En hiver, il ___ froid.»"
       },
@@ -408,6 +409,7 @@
     },
     {
       "question": {
+        "fr": "Quelle saison s'utilise avec « au » ?",
         "en": "Which season takes \"au\"?",
         "es": "¿Qué estación lleva «au»?"
       },
@@ -425,6 +427,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase est au plus-que-parfait ?",
         "en": "Which sentence uses the plus-que-parfait?",
         "es": "¿Qué frase usa el plus-que-parfait?"
       },
@@ -442,6 +445,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je marchais sous la pluie quand je l'___. »",
         "en": "Complete: \"Je marchais sous la pluie quand je l'___.\"",
         "es": "Completa: «Je marchais sous la pluie quand je l'___.»"
       },
@@ -459,56 +463,43 @@
     },
     {
       "question": {
-        "en": "\"Je ne savais pas qu'elle serait ma femme.\" What does \"serait\" express?",
-        "es": "«Je ne savais pas qu'elle serait ma femme.» ¿Qué expresa «serait»?"
+        "fr": "Tu racontes le jour où tu as rencontré ta femme : à ce moment-là, tu ignorais votre avenir. Qu'est-ce que tu dis ?",
+        "en": "You're telling about the day you met your wife: at that moment you didn't know your future. What do you say?",
+        "es": "Cuentas el día en que conociste a tu mujer: en ese momento no sabías vuestro futuro. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "the future seen from the past",
-          "a polite request",
-          "a present hypothesis",
-          "an order"
-        ],
-        "es": [
-          "el futuro visto desde el pasado",
-          "una petición cortés",
-          "una hipótesis presente",
-          "una orden"
-        ]
-      },
+      "options": [
+        "Je ne savais pas qu'elle serait ma femme.",
+        "Je ne savais pas qu'elle sera ma femme.",
+        "Je ne sais pas qu'elle était ma femme.",
+        "Je n'ai pas su qu'elle soit ma femme."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "The conditional can express a \"future in the past\".",
-        "es": "El condicional puede expresar un «futuro en el pasado»."
+        "en": "The conditional (\"serait\") expresses the future seen from the past.",
+        "es": "El condicional («serait») expresa el futuro visto desde el pasado."
       }
     },
     {
       "question": {
-        "en": "What is \"le brouillard\"?",
-        "es": "¿Qué es «le brouillard»?"
+        "fr": "Ce matin, on ne voit pas à dix mètres : il y a comme un nuage au sol. Quel temps fait-il ?",
+        "en": "This morning you can't see ten metres ahead: it's like a cloud on the ground. What's the weather?",
+        "es": "Esta mañana no se ve a diez metros: es como una nube a ras de suelo. ¿Qué tiempo hace?"
       },
-      "options": {
-        "en": [
-          "fog",
-          "thunder",
-          "hail",
-          "drizzle"
-        ],
-        "es": [
-          "la niebla",
-          "el trueno",
-          "el granizo",
-          "la llovizna"
-        ]
-      },
+      "options": [
+        "Il y a du brouillard.",
+        "Il y a du verglas.",
+        "Il y a de l'orage.",
+        "Il fait du soleil."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Brume = mist (lighter).",
-        "es": "Brume = bruma (más ligera)."
+        "en": "\"Le brouillard\" = fog. \"Le verglas\" = black ice, \"l'orage\" = a storm.",
+        "es": "«Le brouillard» = la niebla. «Le verglas» = el hielo en la carretera, «l'orage» = la tormenta."
       }
     },
     {
       "question": {
+        "fr": "Complète : « C'était comme si nous nous ___ toujours connus. »",
         "en": "Complete: \"C'était comme si nous nous ___ toujours connus.\"",
         "es": "Completa: «C'était comme si nous nous ___ toujours connus.»"
       },
@@ -526,6 +517,7 @@
     },
     {
       "question": {
+        "fr": "Une personne qui a toujours froid est…",
         "en": "Someone who is always cold is…",
         "es": "Alguien que siempre tiene frío es…"
       },

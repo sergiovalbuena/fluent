@@ -401,6 +401,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Je voudrais ___ fraises. »",
         "en": "Complete: \"Je voudrais ___ fraises.\"",
         "es": "Completa: «Je voudrais ___ fraises.»"
       },
@@ -418,31 +419,25 @@
     },
     {
       "question": {
-        "en": "\"Un avocat\" can mean…",
-        "es": "«Un avocat» puede significar…"
+        "fr": "Tu dis « J'ai vu un avocat ce matin ». De quoi peux-tu parler ?",
+        "en": "You say \"J'ai vu un avocat ce matin\". What could you be talking about?",
+        "es": "Dices «J'ai vu un avocat ce matin». ¿De qué puedes estar hablando?"
       },
-      "options": {
-        "en": [
-          "an avocado or a lawyer",
-          "only a lawyer",
-          "an apricot",
-          "a peach"
-        ],
-        "es": [
-          "un aguacate o un abogado",
-          "solo un abogado",
-          "un albaricoque",
-          "un melocotón"
-        ]
-      },
+      "options": [
+        "d'un fruit ou d'un homme de loi",
+        "seulement d'un fruit",
+        "seulement d'un médecin",
+        "d'un oiseau"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Same word, two meanings!",
-        "es": "¡Misma palabra, dos significados!"
+        "en": "\"Un avocat\" is both an avocado and a lawyer. Context tells you which.",
+        "es": "«Un avocat» es a la vez un aguacate y un abogado. El contexto lo aclara."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Si tu manges des légumes, tu ___ en bonne santé. »",
         "en": "Complete: \"Si tu manges des légumes, tu ___ en bonne santé.\"",
         "es": "Completa: «Si tu manges des légumes, tu ___ en bonne santé.»"
       },
@@ -460,6 +455,7 @@
     },
     {
       "question": {
+        "fr": "Lequel est un légume ?",
         "en": "Which is a vegetable?",
         "es": "¿Cuál es una verdura?"
       },
@@ -477,6 +473,7 @@
     },
     {
       "question": {
+        "fr": "« La salade ? Je l'ai ___. » (assaisonner)",
         "en": "\"La salade ? Je l'ai ___.\" (assaisonner)",
         "es": "«La salade ? Je l'ai ___.» (assaisonner)"
       },
@@ -494,6 +491,7 @@
     },
     {
       "question": {
+        "fr": "Comment exprimes-tu une préférence poliment ?",
         "en": "How do you express a preference politely?",
         "es": "¿Cómo expresas una preferencia con cortesía?"
       },
@@ -511,31 +509,25 @@
     },
     {
       "question": {
-        "en": "Which fruit is \"une myrtille\"?",
-        "es": "¿Qué fruta es «une myrtille»?"
+        "fr": "C'est un petit fruit bleu foncé, qu'on met souvent dans les muffins. Qu'est-ce que c'est ?",
+        "en": "It's a small dark blue fruit, often put in muffins. What is it?",
+        "es": "Es una fruta pequeña de color azul oscuro que se pone a menudo en las magdalenas. ¿Qué es?"
       },
-      "options": {
-        "en": [
-          "a blueberry",
-          "a blackberry",
-          "a raspberry",
-          "a cherry"
-        ],
-        "es": [
-          "un arándano",
-          "una mora",
-          "una frambuesa",
-          "una cereza"
-        ]
-      },
+      "options": [
+        "une myrtille",
+        "une fraise",
+        "une cerise",
+        "une framboise"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Mûre = blackberry, framboise = raspberry, cerise = cherry.",
-        "es": "Mûre = mora, framboise = frambuesa, cerise = cereza."
+        "en": "\"Une myrtille\" = a blueberry. \"Une framboise\" = a raspberry.",
+        "es": "«Une myrtille» = un arándano. «Une framboise» = una frambuesa."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Il est conseillé ___ manger cinq fruits et légumes par jour. »",
         "en": "Complete: \"Il est conseillé ___ manger cinq fruits et légumes par jour.\"",
         "es": "Completa: «Il est conseillé ___ manger cinq fruits et légumes par jour.»"
       },

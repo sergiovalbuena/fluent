@@ -315,6 +315,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Si j'avais su, je ___ venu. »",
         "en": "Complete: \"Si j'avais su, je ___ venu.\"",
         "es": "Completa: «Si j'avais su, je ___ venu.»"
       },
@@ -332,6 +333,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Si vous ___ collaboré, nous aurions fini. »",
         "en": "Complete: \"Si vous ___ collaboré, nous aurions fini.\"",
         "es": "Completa: «Si vous ___ collaboré, nous aurions fini.»"
       },
@@ -349,6 +351,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase parle d'un passé qui n'a pas eu lieu (condition irréelle) ?",
         "en": "Which sentence is a 3rd conditional (unreal past)?",
         "es": "¿Qué frase es del tercer tipo (irreal pasado)?"
       },
@@ -366,6 +369,7 @@
     },
     {
       "question": {
+        "fr": "Condition mixte : « Si tu avais écouté hier, tu ___ la réponse maintenant. »",
         "en": "Mixed condition: \"Si tu avais écouté hier, tu ___ la réponse maintenant.\"",
         "es": "Condición mixta: «Si tu avais écouté hier, tu ___ la réponse maintenant.»"
       },
@@ -383,31 +387,25 @@
     },
     {
       "question": {
-        "en": "\"Faire grève\" means…",
-        "es": "«Faire grève» significa…"
+        "fr": "Les employés arrêtent de travailler pour demander de meilleurs salaires. Qu'est-ce qu'ils font ?",
+        "en": "The employees stop working to demand better pay. What are they doing?",
+        "es": "Los empleados dejan de trabajar para pedir mejores salarios. ¿Qué hacen?"
       },
-      "options": {
-        "en": [
-          "to go on strike",
-          "to go bankrupt",
-          "to make a mistake",
-          "to get a bonus"
-        ],
-        "es": [
-          "hacer huelga",
-          "quebrar",
-          "cometer un error",
-          "cobrar una prima"
-        ]
-      },
+      "options": [
+        "Ils font grève.",
+        "Ils font la queue.",
+        "Ils font la fête.",
+        "Ils font des heures sup."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Faire faillite = to go bankrupt.",
-        "es": "Faire faillite = quebrar."
+        "en": "\"Faire grève\" = to go on strike.",
+        "es": "«Faire grève» = hacer huelga."
       }
     },
     {
       "question": {
+        "fr": "Complète : « ___ ton aide, nous avons fini à temps. »",
         "en": "Complete: \"___ ton aide, nous avons fini à temps.\"",
         "es": "Completa: «___ ton aide, nous avons fini à temps.»"
       },
@@ -425,6 +423,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Nous ne travaillons pas pour un chef, ___ pour nous-mêmes. »",
         "en": "Complete: \"Nous ne travaillons pas pour un chef, ___ pour nous-mêmes.\"",
         "es": "Completa: «Nous ne travaillons pas pour un chef, ___ pour nous-mêmes.»"
       },
@@ -442,27 +441,20 @@
     },
     {
       "question": {
-        "en": "What is \"une note de service\"?",
-        "es": "¿Qué es «une note de service»?"
+        "fr": "La direction envoie un court texte à tous les employés pour annoncer un changement d'horaires. Qu'est-ce que c'est ?",
+        "en": "Management sends a short text to all employees announcing a change of hours. What is it?",
+        "es": "La dirección envía un texto breve a todos los empleados para anunciar un cambio de horario. ¿Qué es?"
       },
-      "options": {
-        "en": [
-          "an internal memo",
-          "a tip",
-          "a service grade",
-          "a bill"
-        ],
-        "es": [
-          "una circular interna",
-          "una propina",
-          "una nota de servicio",
-          "una factura"
-        ]
-      },
+      "options": [
+        "une note de service",
+        "une note de frais",
+        "une fiche de paie",
+        "une lettre d'amour"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Used to inform all employees.",
-        "es": "Sirve para informar a todos los empleados."
+        "en": "\"Une note de service\" = an internal memo.",
+        "es": "«Une note de service» = una circular interna."
       }
     }
   ],

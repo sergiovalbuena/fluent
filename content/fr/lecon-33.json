@@ -300,6 +300,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « L'avion ___ dans dix minutes. » (atterrir)",
         "en": "Complete: \"L'avion ___ dans dix minutes.\" (atterrir)",
         "es": "Completa: «L'avion ___ dans dix minutes.» (atterrir)"
       },
@@ -317,6 +318,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le futur de « avoir » avec « nous » ?",
         "en": "What is the future of \"avoir\" with \"nous\"?",
         "es": "¿Cuál es el futuro de «avoir» con «nous»?"
       },
@@ -334,6 +336,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le futur de « faire » avec « je » ?",
         "en": "What is the future of \"faire\" with \"je\"?",
         "es": "¿Cuál es el futuro de «faire» con «je»?"
       },
@@ -351,6 +354,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je t'appellerai dès que j'___. »",
         "en": "Complete: \"Je t'appellerai dès que j'___.\"",
         "es": "Completa: «Je t'appellerai dès que j'___.»"
       },
@@ -368,6 +372,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Si le vol est en retard, nous ___ l'hôtel. »",
         "en": "Complete: \"Si le vol est en retard, nous ___ l'hôtel.\"",
         "es": "Completa: «Si le vol est en retard, nous ___ l'hôtel.»"
       },
@@ -385,6 +390,7 @@
     },
     {
       "question": {
+        "fr": "Dans l'avion, où est-ce que tu mets ton sac ?",
         "en": "Where do you put your bag on a plane?",
         "es": "¿Dónde pones tu bolso en el avión?"
       },
@@ -402,52 +408,38 @@
     },
     {
       "question": {
-        "en": "What is \"le hublot\"?",
-        "es": "¿Qué es «le hublot»?"
+        "fr": "Dans l'avion, tu veux regarder les nuages par la petite fenêtre ronde. Quelle place demandes-tu ?",
+        "en": "On the plane you want to look at the clouds through the little round window. Which seat do you ask for?",
+        "es": "En el avión quieres mirar las nubes por la ventanilla redonda. ¿Qué asiento pides?"
       },
-      "options": {
-        "en": [
-          "the plane window",
-          "the aisle",
-          "the wing",
-          "the engine"
-        ],
-        "es": [
-          "la ventanilla del avión",
-          "el pasillo",
-          "el ala",
-          "el motor"
-        ]
-      },
+      "options": [
+        "une place côté hublot",
+        "une place côté couloir",
+        "une place côté aile",
+        "une place côté porte"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Window seat = côté hublot; aisle seat = côté couloir.",
-        "es": "Asiento de ventanilla = côté hublot; de pasillo = côté couloir."
+        "en": "\"Le hublot\" = the plane window. \"Côté couloir\" = aisle seat.",
+        "es": "«Le hublot» = la ventanilla del avión. «Côté couloir» = asiento de pasillo."
       }
     },
     {
       "question": {
-        "en": "\"Plutôt qu'en première classe\" means…",
-        "es": "«Plutôt qu'en première classe» significa…"
+        "fr": "Tu préfères voyager en classe économique, pas en première classe. Comment le dis-tu ?",
+        "en": "You'd rather travel in economy, not in first class. How do you say it?",
+        "es": "Prefieres viajar en clase turista, no en primera. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "rather than in first class",
-          "more than first class",
-          "only in first class",
-          "before first class"
-        ],
-        "es": [
-          "en lugar de en primera clase",
-          "más que la primera clase",
-          "solo en primera clase",
-          "antes de la primera clase"
-        ]
-      },
+      "options": [
+        "Je voyage en classe économique plutôt qu'en première classe.",
+        "Je voyage en première classe plutôt qu'en classe économique.",
+        "Je voyage plutôt en première classe.",
+        "Je voyage plus tôt en classe économique."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Plutôt que\" = rather than.",
-        "es": "«Plutôt que» = en lugar de."
+        "en": "\"Plutôt que\" = rather than. Careful: \"plus tôt\" (two words) = earlier.",
+        "es": "«Plutôt que» = en lugar de. Ojo: «plus tôt» (separado) = más temprano."
       }
     }
   ],

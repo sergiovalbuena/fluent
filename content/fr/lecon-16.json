@@ -381,6 +381,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Ton amie essaie une veste et elle est très jolie avec. Qu'est-ce que tu lui dis ?",
         "en": "How do you say \"This jacket suits you\"?",
         "es": "¿Cómo se dice «Esta chaqueta te queda bien»?"
       },
@@ -398,6 +399,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « une veste ___ cuir »",
         "en": "Complete: \"une veste ___ cuir\"",
         "es": "Completa: «une veste ___ cuir»"
       },
@@ -415,6 +417,7 @@
     },
     {
       "question": {
+        "fr": "Qu'est-ce que tu mets quand il pleut ?",
         "en": "What do you wear when it rains?",
         "es": "¿Qué te pones cuando llueve?"
       },
@@ -432,6 +435,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Mets ton manteau, ___ tu vas avoir froid. »",
         "en": "Complete: \"Mets ton manteau, ___ tu vas avoir froid.\"",
         "es": "Completa: «Mets ton manteau, ___ tu vas avoir froid.»"
       },
@@ -449,6 +453,7 @@
     },
     {
       "question": {
+        "fr": "Quelle forme du passé est correcte ?",
         "en": "Which past form is correct?",
         "es": "¿Qué forma del pasado es correcta?"
       },
@@ -466,6 +471,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Tu veux que je le ___ ? » (coudre)",
         "en": "Complete: \"Tu veux que je le ___ ?\" (coudre)",
         "es": "Completa: «Tu veux que je le ___ ?» (coudre)"
       },
@@ -483,6 +489,7 @@
     },
     {
       "question": {
+        "fr": "« Tu as des gants ? » — « Non, je n'___ ai pas. »",
         "en": "\"Tu as des gants ?\" — \"Non, je n'___ ai pas.\"",
         "es": "«Tu as des gants ?» — «Non, je n'___ ai pas.»"
       },
@@ -500,27 +507,20 @@
     },
     {
       "question": {
-        "en": "What is the difference between \"mettre\" and \"porter\"?",
-        "es": "¿Qué diferencia hay entre «mettre» y «porter»?"
+        "fr": "Il fait froid. Tu prends ton pull et tu le passes sur toi. Quel verbe utilises-tu ?",
+        "en": "It's cold. You grab your jumper and pull it on. Which verb do you use?",
+        "es": "Hace frío. Coges el jersey y te lo pones. ¿Qué verbo usas?"
       },
-      "options": {
-        "en": [
-          "mettre = to put on, porter = to wear",
-          "mettre = to wear, porter = to buy",
-          "They are the same",
-          "porter = to put on, mettre = to take off"
-        ],
-        "es": [
-          "mettre = ponerse, porter = llevar puesto",
-          "mettre = llevar, porter = comprar",
-          "Son lo mismo",
-          "porter = ponerse, mettre = quitarse"
-        ]
-      },
+      "options": [
+        "Je mets mon pull.",
+        "Je porte mon pull.",
+        "Je m'habille mon pull.",
+        "Je vais mon pull."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Je mets mon manteau\" (action) / \"Je porte un manteau\" (state).",
-        "es": "«Je mets mon manteau» (acción) / «Je porte un manteau» (estado)."
+        "en": "\"Mettre\" = to put on (the action); \"porter\" = to wear (the state).",
+        "es": "«Mettre» = ponerse (la acción); «porter» = llevar puesto (el estado)."
       }
     }
   ],

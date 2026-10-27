@@ -305,31 +305,25 @@
   "qa": [
     {
       "question": {
-        "en": "\"J'allais sortir quand il a appelé.\" Meaning?",
-        "es": "«J'allais sortir quand il a appelé.» ¿Significado?"
+        "fr": "Tu avais ton manteau et tu ouvrais la porte quand ton ami a appelé. Comment le racontes-tu ?",
+        "en": "You had your coat on and were opening the door when your friend called. How do you tell it?",
+        "es": "Tenías el abrigo puesto y abrías la puerta cuando llamó tu amigo. ¿Cómo lo cuentas?"
       },
-      "options": {
-        "en": [
-          "I was about to go out when he called.",
-          "I went out when he called.",
-          "I will go out when he calls.",
-          "I had gone out when he called."
-        ],
-        "es": [
-          "Iba a salir cuando llamó.",
-          "Salí cuando llamó.",
-          "Saldré cuando llame.",
-          "Había salido cuando llamó."
-        ]
-      },
+      "options": [
+        "J'allais sortir quand il a appelé.",
+        "Je suis sorti quand il appelait.",
+        "J'irai sortir quand il appellera.",
+        "Je sortirais quand il a appelé."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Imparfait of \"aller\" + infinitive = was going to.",
-        "es": "Imperfecto de «aller» + infinitivo = iba a."
+        "en": "\"Aller\" in the imparfait + infinitive = was about to.",
+        "es": "«Aller» en imparfait + infinitivo = estaba a punto de, iba a."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Elle ___ chanter, mais elle a perdu sa voix. »",
         "en": "Complete: \"Elle ___ chanter, mais elle a perdu sa voix.\"",
         "es": "Completa: «Elle ___ chanter, mais elle a perdu sa voix.»"
       },
@@ -347,6 +341,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je me suis rendu compte que j'___ mes clés. »",
         "en": "Complete: \"Je me suis rendu compte que j'___ mes clés.\"",
         "es": "Completa: «Je me suis rendu compte que j'___ mes clés.»"
       },
@@ -364,56 +359,43 @@
     },
     {
       "question": {
-        "en": "\"Sortir en boîte\" means…",
-        "es": "«Sortir en boîte» significa…"
+        "fr": "Samedi soir, tu vas danser jusqu'à 4 h du matin dans une discothèque. Comment le dis-tu ?",
+        "en": "On Saturday night you go dancing until 4 a.m. in a nightclub. How do you say it?",
+        "es": "El sábado por la noche vas a bailar hasta las 4 de la madrugada a una discoteca. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "to go clubbing",
-          "to go out of a box",
-          "to go shopping",
-          "to take a taxi"
-        ],
-        "es": [
-          "ir de discoteca",
-          "salir de una caja",
-          "ir de compras",
-          "tomar un taxi"
-        ]
-      },
+      "options": [
+        "Je sors en boîte.",
+        "Je sors en boîte aux lettres.",
+        "Je sors de la boîte.",
+        "Je mets en boîte."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Une boîte (de nuit) = a nightclub.",
-        "es": "Une boîte (de nuit) = una discoteca."
+        "en": "\"Sortir en boîte\" = to go clubbing (\"une boîte de nuit\" = a nightclub).",
+        "es": "«Sortir en boîte» = salir de discotecas («une boîte de nuit» = una discoteca)."
       }
     },
     {
       "question": {
-        "en": "\"Je passe te chercher à huit heures.\" Meaning?",
-        "es": "«Je passe te chercher à huit heures.» ¿Significado?"
+        "fr": "Tu proposes d'aller chercher ton amie chez elle en voiture à 20 h. Qu'est-ce que tu dis ?",
+        "en": "You offer to pick your friend up at her place by car at 8 p.m. What do you say?",
+        "es": "Te ofreces a recoger a tu amiga en su casa en coche a las 8 de la tarde. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "I'll pick you up at eight.",
-          "I'll look for you at eight.",
-          "I'll pass by you at eight.",
-          "I'll wait for you at eight."
-        ],
-        "es": [
-          "Paso a buscarte a las ocho.",
-          "Te buscaré a las ocho.",
-          "Pasaré junto a ti a las ocho.",
-          "Te esperaré a las ocho."
-        ]
-      },
+      "options": [
+        "Je passe te chercher à huit heures.",
+        "Je te cherche partout à huit heures.",
+        "Je passe te voir demain.",
+        "Tu passes me chercher à huit heures."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Passer chercher = to pick up.",
-        "es": "Passer chercher = pasar a recoger."
+        "en": "\"Passer chercher quelqu'un\" = to pick someone up.",
+        "es": "«Passer chercher quelqu'un» = pasar a recoger a alguien."
       }
     },
     {
       "question": {
+        "fr": "Quelle phrase est au passé simple ?",
         "en": "Which sentence uses the passé simple?",
         "es": "¿Qué frase usa el passé simple?"
       },
@@ -431,31 +413,25 @@
     },
     {
       "question": {
-        "en": "\"Je m'en fiche.\" Meaning?",
-        "es": "«Je m'en fiche.» ¿Significado?"
+        "fr": "On te demande si tu préfères le bar ou la discothèque, et ça ne t'intéresse pas du tout. Qu'est-ce que tu réponds, de façon familière ?",
+        "en": "Someone asks if you prefer the bar or the club, and you really don't care. What do you answer, informally?",
+        "es": "Te preguntan si prefieres el bar o la discoteca, y te da completamente igual. ¿Qué respondes, de manera informal?"
       },
-      "options": {
-        "en": [
-          "I don't care.",
-          "I'm leaving.",
-          "I'm afraid.",
-          "I'm sorry."
-        ],
-        "es": [
-          "Me da igual.",
-          "Me voy.",
-          "Tengo miedo.",
-          "Lo siento."
-        ]
-      },
+      "options": [
+        "Je m'en fiche.",
+        "Je m'en vais.",
+        "Je m'en souviens.",
+        "Je m'en occupe."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Informal but not vulgar.",
-        "es": "Coloquial pero no vulgar."
+        "en": "\"Je m'en fiche\" = I don't care (informal).",
+        "es": "«Je m'en fiche» = me da igual, me importa un pepino (informal)."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Tu n'as pas eu honte ? — ___, un peu. »",
         "en": "Complete: \"Tu n'as pas eu honte ? — ___, un peu.\"",
         "es": "Completa: «Tu n'as pas eu honte ? — ___, un peu.»"
       },

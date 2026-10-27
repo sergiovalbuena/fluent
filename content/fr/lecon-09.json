@@ -336,6 +336,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quel mot sert à demander « pourquoi » ?",
         "en": "Which word asks \"why\"?",
         "es": "¿Qué palabra pregunta «por qué»?"
       },
@@ -353,31 +354,25 @@
     },
     {
       "question": {
-        "en": "A sign says \"Ne pas fumer\". What does it mean?",
-        "es": "Un cartel dice «Ne pas fumer». ¿Qué significa?"
+        "fr": "Dans un restaurant, tu vois un panneau qui interdit la cigarette. Qu'est-ce qu'il dit ?",
+        "en": "In a restaurant you see a sign that forbids smoking. What does it say?",
+        "es": "En un restaurante ves un cartel que prohíbe fumar. ¿Qué dice?"
       },
-      "options": {
-        "en": [
-          "No smoking",
-          "Smoking area",
-          "Do not eat",
-          "Do not enter"
-        ],
-        "es": [
-          "Prohibido fumar",
-          "Zona de fumadores",
-          "Prohibido comer",
-          "Prohibido entrar"
-        ]
-      },
+      "options": [
+        "Ne pas fumer",
+        "Ne fumez jamais pas",
+        "Pas de fumer",
+        "Fumer ne pas"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Signs use \"ne pas\" + infinitive.",
-        "es": "Los carteles usan «ne pas» + infinitivo."
+        "en": "Signs use \"ne pas\" + infinitive, both words before the verb: \"Ne pas fumer\" = No smoking.",
+        "es": "Los carteles usan «ne pas» + infinitivo, las dos palabras delante: «Ne pas fumer» = Prohibido fumar."
       }
     },
     {
       "question": {
+        "fr": "« Tu parles anglais ? » — « Oui, je ___ parle bien. »",
         "en": "\"Tu parles anglais ?\" — \"Oui, je ___ parle bien.\"",
         "es": "«Tu parles anglais ?» — «Oui, je ___ parle bien.»"
       },
@@ -395,6 +390,7 @@
     },
     {
       "question": {
+        "fr": "Quelle est la façon la plus polie de demander son chemin ?",
         "en": "Which is the most polite way to ask for directions?",
         "es": "¿Cuál es la forma más cortés de pedir indicaciones?"
       },
@@ -412,6 +408,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il vaut mieux que vous ___ à quelqu'un d'autre. »",
         "en": "Complete: \"Il vaut mieux que vous ___ à quelqu'un d'autre.\"",
         "es": "Completa: «Il vaut mieux que vous ___ à quelqu'un d'autre.»"
       },
@@ -429,6 +426,7 @@
     },
     {
       "question": {
+        "fr": "« Savoir » ou « connaître » ? « Je ne ___ pas cette ville. »",
         "en": "\"Savoir\" or \"connaître\"? \"Je ne ___ pas cette ville.\"",
         "es": "¿«Savoir» o «connaître»? «Je ne ___ pas cette ville.»"
       },
@@ -446,31 +444,25 @@
     },
     {
       "question": {
-        "en": "What does \"avoir tort\" mean?",
-        "es": "¿Qué significa «avoir tort»?"
+        "fr": "Ton ami dit que Paris est la capitale de l'Espagne. Qu'est-ce que tu lui dis ?",
+        "en": "Your friend says Paris is the capital of Spain. What do you tell him?",
+        "es": "Tu amigo dice que París es la capital de España. ¿Qué le dices?"
       },
-      "options": {
-        "en": [
-          "to be wrong",
-          "to be right",
-          "to be hurt",
-          "to be late"
-        ],
-        "es": [
-          "estar equivocado",
-          "tener razón",
-          "estar herido",
-          "llegar tarde"
-        ]
-      },
+      "options": [
+        "Tu as tort.",
+        "Tu as raison.",
+        "Tu as de la chance.",
+        "Tu as sommeil."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Avoir raison = to be right; avoir tort = to be wrong.",
-        "es": "Avoir raison = tener razón; avoir tort = estar equivocado."
+        "en": "\"Avoir tort\" = to be wrong; \"avoir raison\" = to be right.",
+        "es": "«Avoir tort» = estar equivocado; «avoir raison» = tener razón."
       }
     },
     {
       "question": {
+        "fr": "Comment demandes-tu à quelqu'un (tu) de parler plus lentement ?",
         "en": "How do you ask someone to speak more slowly (tu)?",
         "es": "¿Cómo pides a alguien que hable más despacio (tu)?"
       },

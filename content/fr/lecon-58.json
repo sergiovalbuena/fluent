@@ -350,6 +350,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Bien qu'il ___, nous partons. »",
         "en": "Complete: \"Bien qu'il ___, nous partons.\"",
         "es": "Completa: «Bien qu'il ___, nous partons.»"
       },
@@ -367,6 +368,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « ___ la neige, nous sommes arrivés à l'heure. »",
         "en": "Complete: \"___ la neige, nous sommes arrivés à l'heure.\"",
         "es": "Completa: «___ la neige, nous sommes arrivés à l'heure.»"
       },
@@ -384,6 +386,7 @@
     },
     {
       "question": {
+        "fr": "Où se trouve la pédale de frein ?",
         "en": "Where is the brake?",
         "es": "¿Dónde está el freno?"
       },
@@ -401,31 +404,25 @@
     },
     {
       "question": {
-        "en": "What is \"un pneu crevé\"?",
-        "es": "¿Qué es «un pneu crevé»?"
+        "fr": "Sur l'autoroute, tu entends « pchhh » et la voiture penche : une roue est à plat. Qu'est-ce que tu as ?",
+        "en": "On the motorway you hear a hiss and the car leans: one wheel is flat. What do you have?",
+        "es": "En la autopista oyes un «pfff» y el coche se inclina: una rueda está desinflada. ¿Qué tienes?"
       },
-      "options": {
-        "en": [
-          "a flat tire",
-          "a new tire",
-          "a spare tire",
-          "a broken window"
-        ],
-        "es": [
-          "un pinchazo",
-          "un neumático nuevo",
-          "una rueda de repuesto",
-          "una ventanilla rota"
-        ]
-      },
+      "options": [
+        "un pneu crevé",
+        "un pneu neuf",
+        "un volant cassé",
+        "un moteur froid"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Crever = to puncture.",
-        "es": "Crever = pinchar."
+        "en": "\"Un pneu crevé\" = a flat tyre.",
+        "es": "«Un pneu crevé» = una rueda pinchada."
       }
     },
     {
       "question": {
+        "fr": "Dans la voiture, où gardes-tu la carte routière ?",
         "en": "Where do you keep the map in the car?",
         "es": "¿Dónde guardas el mapa en el coche?"
       },
@@ -443,6 +440,7 @@
     },
     {
       "question": {
+        "fr": "Comment dit-on correctement qu'il y a eu une collision avec ta voiture ?",
         "en": "How do you say \"to have an accident\" in standard French?",
         "es": "¿Cómo se dice «tener un accidente» en francés estándar?"
       },
@@ -460,6 +458,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « La voiture est parfaite, ___ la radio. »",
         "en": "Complete: \"La voiture est parfaite, ___ la radio.\"",
         "es": "Completa: «La voiture est parfaite, ___ la radio.»"
       },
@@ -477,27 +476,20 @@
     },
     {
       "question": {
-        "en": "What is \"le rétroviseur\"?",
-        "es": "¿Qué es «le rétroviseur»?"
+        "fr": "Avant de changer de file, tu regardes les voitures derrière toi dans le petit miroir. Comment s'appelle-t-il ?",
+        "en": "Before changing lanes you check the cars behind you in the little mirror. What is it called?",
+        "es": "Antes de cambiar de carril miras los coches de detrás en el espejito. ¿Cómo se llama?"
       },
-      "options": {
-        "en": [
-          "the rearview mirror",
-          "the windshield",
-          "the trunk",
-          "the horn"
-        ],
-        "es": [
-          "el retrovisor",
-          "el parabrisas",
-          "el maletero",
-          "el claxon"
-        ]
-      },
+      "options": [
+        "le rétroviseur",
+        "le pare-brise",
+        "l'essuie-glace",
+        "le clignotant"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Rétro = backwards; viseur = viewer.",
-        "es": "Rétro = atrás; viseur = visor."
+        "en": "\"Le rétroviseur\" = the rear-view mirror. \"Le pare-brise\" = the windscreen.",
+        "es": "«Le rétroviseur» = el retrovisor. «Le pare-brise» = el parabrisas."
       }
     }
   ],

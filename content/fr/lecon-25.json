@@ -367,6 +367,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Je vais au travail ___ vélo. »",
         "en": "Complete: \"Je vais au travail ___ vélo.\"",
         "es": "Completa: «Je vais au travail ___ vélo.»"
       },
@@ -384,6 +385,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Nous partons ___ train. »",
         "en": "Complete: \"Nous partons ___ train.\"",
         "es": "Completa: «Nous partons ___ train.»"
       },
@@ -401,31 +403,25 @@
     },
     {
       "question": {
-        "en": "What does \"atterrir\" mean?",
-        "es": "¿Qué significa «atterrir»?"
+        "fr": "L'avion arrive à l'aéroport et touche le sol. Qu'est-ce qu'il fait ?",
+        "en": "The plane arrives at the airport and touches the ground. What does it do?",
+        "es": "El avión llega al aeropuerto y toca tierra. ¿Qué hace?"
       },
-      "options": {
-        "en": [
-          "to land",
-          "to take off",
-          "to brake",
-          "to overtake"
-        ],
-        "es": [
-          "aterrizar",
-          "despegar",
-          "frenar",
-          "adelantar"
-        ]
-      },
+      "options": [
+        "Il atterrit.",
+        "Il décolle.",
+        "Il embarque.",
+        "Il enterre."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Décoller = to take off.",
-        "es": "Décoller = despegar."
+        "en": "\"Atterrir\" = to land; \"décoller\" = to take off.",
+        "es": "«Atterrir» = aterrizar; «décoller» = despegar."
       }
     },
     {
       "question": {
+        "fr": "Quel billet te permet de revenir ?",
         "en": "Which ticket lets you come back?",
         "es": "¿Qué billete te permite volver?"
       },
@@ -443,6 +439,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Le métro est ___ cher ___ le taxi. »",
         "en": "Complete: \"Le métro est ___ cher ___ le taxi.\"",
         "es": "Completa: «Le métro est ___ cher ___ le taxi.»"
       },
@@ -460,6 +457,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « J'ai remercié les gens qui ___ soin de moi. »",
         "en": "Complete: \"J'ai remercié les gens qui ___ soin de moi.\"",
         "es": "Completa: «J'ai remercié les gens qui ___ soin de moi.»"
       },
@@ -477,6 +475,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Nous les aidons pour qu'ils ___ voyager. »",
         "en": "Complete: \"Nous les aidons pour qu'ils ___ voyager.\"",
         "es": "Completa: «Nous les aidons pour qu'ils ___ voyager.»"
       },
@@ -494,6 +493,7 @@
     },
     {
       "question": {
+        "fr": "« Tu préfères quelle voiture ? » Tu montres une voiture près de toi. Qu'est-ce que tu dis ?",
         "en": "Which demonstrative fits: \"Tu préfères quelle voiture ? — ___.\"",
         "es": "¿Qué demostrativo encaja: «¿Qué coche prefieres? — ___.»"
       },

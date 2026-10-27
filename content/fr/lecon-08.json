@@ -402,6 +402,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « J'habite ___ Japon. »",
         "en": "Complete: \"J'habite ___ Japon.\"",
         "es": "Completa: «J'habite ___ Japon.»"
       },
@@ -419,6 +420,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle travaille ___ États-Unis. »",
         "en": "Complete: \"Elle travaille ___ États-Unis.\"",
         "es": "Completa: «Elle travaille ___ États-Unis.»"
       },
@@ -436,6 +438,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je viens ___ Italie. »",
         "en": "Complete: \"Je viens ___ Italie.\"",
         "es": "Completa: «Je viens ___ Italie.»"
       },
@@ -453,6 +456,7 @@
     },
     {
       "question": {
+        "fr": "Qu'est-ce qui est correct pour une femme du Mexique ?",
         "en": "Which is correct for a woman from Mexico?",
         "es": "¿Qué es correcto para una mujer de México?"
       },
@@ -470,6 +474,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le féminin de « grec » ?",
         "en": "What is the feminine of \"grec\"?",
         "es": "¿Cuál es el femenino de «grec»?"
       },
@@ -487,6 +492,7 @@
     },
     {
       "question": {
+        "fr": "Tu proposes à tes amis de partir en voyage en Chine. Qu'est-ce que tu dis ?",
         "en": "How do you say \"Let's go to China!\"?",
         "es": "¿Cómo se dice «¡Vamos a China!»?"
       },
@@ -504,6 +510,7 @@
     },
     {
       "question": {
+        "fr": "Quel pays est féminin ?",
         "en": "Which country is feminine?",
         "es": "¿Qué país es femenino?"
       },
@@ -521,6 +528,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Les trains relient les pays pour que le voyage ___ plus facile. »",
         "en": "Complete: \"Les trains relient les pays pour que le voyage ___ plus facile.\"",
         "es": "Completa: «Les trains relient les pays pour que le voyage ___ plus facile.»"
       },

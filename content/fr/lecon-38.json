@@ -300,6 +300,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Quand je suis arrivé, ils ___ déjà mangé. »",
         "en": "Complete: \"Quand je suis arrivé, ils ___ déjà mangé.\"",
         "es": "Completa: «Quand je suis arrivé, ils ___ déjà mangé.»"
       },
@@ -317,6 +318,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Si tu avais réservé, nous ___ une table. »",
         "en": "Complete: \"Si tu avais réservé, nous ___ une table.\"",
         "es": "Completa: «Si tu avais réservé, nous ___ une table.»"
       },
@@ -334,6 +336,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase est correcte ?",
         "en": "Which sentence is correct?",
         "es": "¿Qué frase es correcta?"
       },
@@ -351,6 +354,7 @@
     },
     {
       "question": {
+        "fr": "Comment commandes-tu un steak « ni trop cuit ni pas assez » ?",
         "en": "How do you order a steak \"medium\"?",
         "es": "¿Cómo pides un filete «en su punto»?"
       },
@@ -368,31 +372,25 @@
     },
     {
       "question": {
-        "en": "In France, \"le menu\" usually means…",
-        "es": "En Francia, «le menu» suele significar…"
+        "fr": "Au restaurant, tu veux une entrée, un plat et un dessert à prix fixe. Qu'est-ce que tu demandes ?",
+        "en": "At the restaurant you want a starter, main and dessert at a fixed price. What do you ask for?",
+        "es": "En el restaurante quieres un primero, un segundo y un postre a precio fijo. ¿Qué pides?"
       },
-      "options": {
-        "en": [
-          "a set menu",
-          "the full list of dishes",
-          "the bill",
-          "the dessert"
-        ],
-        "es": [
-          "un menú cerrado",
-          "la lista completa de platos",
-          "la cuenta",
-          "el postre"
-        ]
-      },
+      "options": [
+        "le menu",
+        "la carte",
+        "la note",
+        "l'addition"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "The list of dishes is \"la carte\".",
-        "es": "La lista de platos es «la carte»."
+        "en": "In France, \"le menu\" = a set menu at a fixed price; \"la carte\" = the full list of dishes.",
+        "es": "En Francia, «le menu» = el menú del día a precio fijo; «la carte» = la carta completa."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Bien qu'il nous ___ regardés de haut, nous sommes restés. »",
         "en": "Complete: \"Bien qu'il nous ___ regardés de haut, nous sommes restés.\"",
         "es": "Completa: «Bien qu'il nous ___ regardés de haut, nous sommes restés.»"
       },
@@ -410,31 +408,25 @@
     },
     {
       "question": {
-        "en": "\"La bouteille n'explosa pas.\" Which tense?",
-        "es": "«La bouteille n'explosa pas.» ¿Qué tiempo?"
+        "fr": "Dans un roman : « La bouteille n'explosa pas. » À quel temps est « explosa » ?",
+        "en": "In a novel: \"La bouteille n'explosa pas.\" Which tense is \"explosa\"?",
+        "es": "En una novela: «La bouteille n'explosa pas.» ¿En qué tiempo está «explosa»?"
       },
-      "options": {
-        "en": [
-          "passé simple",
-          "imparfait",
-          "plus-que-parfait",
-          "futur"
-        ],
-        "es": [
-          "passé simple",
-          "imperfecto",
-          "pluscuamperfecto",
-          "futuro"
-        ]
-      },
+      "options": [
+        "au passé simple",
+        "à l'imparfait",
+        "au passé composé",
+        "au futur simple"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Spoken: \"n'a pas explosé\".",
-        "es": "Oral: «n'a pas explosé»."
+        "en": "Endings like -a, -ut, -it in a story are the passé simple, the literary past.",
+        "es": "Terminaciones como -a, -ut, -it en un relato son passé simple, el pasado literario."
       }
     },
     {
       "question": {
+        "fr": "Discours indirect : « Avez-vous réservé ? » → Il nous a demandé si nous ___ réservé.",
         "en": "Reported: \"Avez-vous réservé ?\" → Il nous a demandé si nous ___ réservé.",
         "es": "Indirecto: «Avez-vous réservé ?» → Il nous a demandé si nous ___ réservé."
       },

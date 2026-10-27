@@ -371,6 +371,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Cette statue est ___ marbre. »",
         "en": "Complete: \"Cette statue est ___ marbre.\"",
         "es": "Completa: «Cette statue est ___ marbre.»"
       },
@@ -388,6 +389,7 @@
     },
     {
       "question": {
+        "fr": "Mets au passif (passé) : « On a construit la tour en 1200. »",
         "en": "Passive: \"They built the tower in 1200\" → ?",
         "es": "Pasiva: «Construyeron la torre en 1200» → ?"
       },
@@ -405,6 +407,7 @@
     },
     {
       "question": {
+        "fr": "Où est-ce que tu achètes les billets du musée ?",
         "en": "Where do you buy museum tickets?",
         "es": "¿Dónde compras las entradas del museo?"
       },
@@ -422,31 +425,25 @@
     },
     {
       "question": {
-        "en": "\"L'art n'est pas que de la peinture.\" Meaning?",
-        "es": "«L'art n'est pas que de la peinture.» ¿Significado?"
+        "fr": "Ton ami pense que l'art, c'est seulement la peinture. Tu n'es pas d'accord. Qu'est-ce que tu dis ?",
+        "en": "Your friend thinks art is only painting. You disagree. What do you say?",
+        "es": "Tu amigo cree que el arte es solo pintura. No estás de acuerdo. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "Art is not only painting.",
-          "Art is not painting.",
-          "Art is only painting.",
-          "Painting is not art."
-        ],
-        "es": [
-          "El arte no es solo pintura.",
-          "El arte no es pintura.",
-          "El arte es solo pintura.",
-          "La pintura no es arte."
-        ]
-      },
+      "options": [
+        "L'art n'est pas que de la peinture.",
+        "L'art n'est que de la peinture.",
+        "L'art n'est plus de la peinture.",
+        "L'art n'est jamais de la peinture."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Ne … pas que\" = not only.",
-        "es": "«Ne … pas que» = no solo."
+        "en": "\"Ne… pas que\" = not only. \"Ne… que\" alone = only.",
+        "es": "«Ne… pas que» = no solo. «Ne… que» sin más = solo."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Le monastère ? Je vais t'___ emmener. »",
         "en": "Complete: \"Le monastère ? Je vais t'___ emmener.\"",
         "es": "Completa: «Le monastère ? Je vais t'___ emmener.»"
       },
@@ -464,31 +461,25 @@
     },
     {
       "question": {
-        "en": "What is \"un tableau\" in a museum?",
-        "es": "¿Qué es «un tableau» en un museo?"
+        "fr": "Au Louvre, tu admires « La Joconde » sur le mur. Qu'est-ce que c'est ?",
+        "en": "At the Louvre you admire the Mona Lisa on the wall. What is it?",
+        "es": "En el Louvre admiras «La Gioconda» en la pared. ¿Qué es?"
       },
-      "options": {
-        "en": [
-          "a painting",
-          "a table",
-          "a ticket",
-          "a statue"
-        ],
-        "es": [
-          "un cuadro",
-          "una mesa",
-          "una entrada",
-          "una estatua"
-        ]
-      },
+      "options": [
+        "un tableau",
+        "une statue",
+        "une tablette",
+        "une sculpture"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Une table = a table.",
-        "es": "Une table = una mesa."
+        "en": "\"Un tableau\" = a painting. \"Une tablette\" is a tablet or a bar of chocolate!",
+        "es": "«Un tableau» = un cuadro. ¡«Une tablette» es una tableta o una tableta de chocolate!"
       }
     },
     {
       "question": {
+        "fr": "Quelle phrase décrit une habitude du passé ?",
         "en": "Which sentence describes a past habit?",
         "es": "¿Qué frase describe un hábito pasado?"
       },
@@ -506,6 +497,7 @@
     },
     {
       "question": {
+        "fr": "Comment demandes-tu poliment à quelle heure ouvre la cathédrale ?",
         "en": "How do you politely ask when the cathedral opens?",
         "es": "¿Cómo preguntas con cortesía cuándo abre la catedral?"
       },

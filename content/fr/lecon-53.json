@@ -325,31 +325,25 @@
   "qa": [
     {
       "question": {
-        "en": "What is \"un demi\" in a French bar?",
-        "es": "¿Qué es «un demi» en un bar francés?"
+        "fr": "Au bar, tu veux un petit verre de bière pression. Qu'est-ce que tu commandes ?",
+        "en": "At the bar you want a small glass of draught beer. What do you order?",
+        "es": "En el bar quieres un vaso pequeño de cerveza de barril. ¿Qué pides?"
       },
-      "options": {
-        "en": [
-          "a small draft beer",
-          "half a bottle of wine",
-          "half a cocktail",
-          "a glass of water"
-        ],
-        "es": [
-          "una caña",
-          "media botella de vino",
-          "medio cóctel",
-          "un vaso de agua"
-        ]
-      },
+      "options": [
+        "Un demi, s'il vous plaît.",
+        "Une moitié, s'il vous plaît.",
+        "Un quart, s'il vous plaît.",
+        "Une demie bière, s'il vous plaît."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "About 25 cl.",
-        "es": "Unos 25 cl."
+        "en": "\"Un demi\" = a small draught beer (25 cl) in a French bar.",
+        "es": "«Un demi» = una caña (25 cl) en un bar francés."
       }
     },
     {
       "question": {
+        "fr": "Vous levez vos verres ensemble. Qu'est-ce que tu dis ?",
         "en": "How do you say \"Cheers!\"?",
         "es": "¿Cómo se dice «¡Salud!»?"
       },
@@ -367,6 +361,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il buvait comme si c'___ de l'eau. »",
         "en": "Complete: \"Il buvait comme si c'___ de l'eau.\"",
         "es": "Completa: «Il buvait comme si c'___ de l'eau.»"
       },
@@ -384,6 +379,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle faisait tout pour qu'il n'___ plus au bar. »",
         "en": "Complete: \"Elle faisait tout pour qu'il n'___ plus au bar.\"",
         "es": "Completa: «Elle faisait tout pour qu'il n'___ plus au bar.»"
       },
@@ -401,31 +397,25 @@
     },
     {
       "question": {
-        "en": "\"La gueule de bois\" means…",
-        "es": "«La gueule de bois» significa…"
+        "fr": "Le lendemain d'une fête, tu as mal à la tête parce que tu as trop bu. Qu'est-ce que tu as ?",
+        "en": "The morning after a party you have a headache because you drank too much. What do you have?",
+        "es": "Al día siguiente de una fiesta te duele la cabeza porque bebiste demasiado. ¿Qué tienes?"
       },
-      "options": {
-        "en": [
-          "a hangover",
-          "a wooden mouth",
-          "a strong drink",
-          "a bar fight"
-        ],
-        "es": [
-          "una resaca",
-          "una boca de madera",
-          "una bebida fuerte",
-          "una pelea de bar"
-        ]
-      },
+      "options": [
+        "J'ai la gueule de bois.",
+        "J'ai la tête de bois.",
+        "J'ai la gueule de loup.",
+        "J'ai le bois à la tête."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Informal expression.",
-        "es": "Expresión coloquial."
+        "en": "\"Avoir la gueule de bois\" = to have a hangover (informal).",
+        "es": "«Avoir la gueule de bois» = tener resaca (informal)."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Sa femme est enceinte ___ six mois. »",
         "en": "Complete: \"Sa femme est enceinte ___ six mois.\"",
         "es": "Completa: «Sa femme est enceinte ___ six mois.»"
       },
@@ -443,31 +433,25 @@
     },
     {
       "question": {
-        "en": "\"C'est offert par la maison.\" Meaning?",
-        "es": "«C'est offert par la maison.» ¿Significado?"
+        "fr": "Le patron du bar t'offre un verre gratuitement. Qu'est-ce qu'il dit ?",
+        "en": "The bar owner gives you a free drink. What does he say?",
+        "es": "El dueño del bar te invita a una copa. ¿Qué dice?"
       },
-      "options": {
-        "en": [
-          "It's on the house.",
-          "It's a house party.",
-          "It's homemade.",
-          "It's for the owner."
-        ],
-        "es": [
-          "Invita la casa.",
-          "Es una fiesta en casa.",
-          "Es casero.",
-          "Es para el dueño."
-        ]
-      },
+      "options": [
+        "C'est offert par la maison.",
+        "C'est payé par vous.",
+        "C'est la maison qui boit.",
+        "C'est à la maison."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Free, paid by the bar.",
-        "es": "Gratis, lo paga el bar."
+        "en": "\"C'est offert par la maison\" = it's on the house.",
+        "es": "«C'est offert par la maison» = invita la casa."
       }
     },
     {
       "question": {
+        "fr": "Tu proposes à tes amis d'aller boire un verre ensemble. Qu'est-ce que tu dis (impératif avec nous) ?",
         "en": "Imperative \"nous\": \"Let's have a drink!\"",
         "es": "Imperativo «nous»: «¡Tomemos algo!»"
       },

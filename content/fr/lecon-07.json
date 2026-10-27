@@ -311,6 +311,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Où est-ce qu'on trouve d'habitude la machine à laver ?",
         "en": "Where do you usually find the washing machine?",
         "es": "¿Dónde suele estar la lavadora?"
       },
@@ -328,6 +329,7 @@
     },
     {
       "question": {
+        "fr": "Après le dîner, il faut laver les assiettes et les verres. Comment s'appelle cette tâche ?",
         "en": "How do you say \"to do the dishes\"?",
         "es": "¿Cómo se dice «fregar los platos»?"
       },
@@ -345,31 +347,25 @@
     },
     {
       "question": {
-        "en": "\"Il est en train de dormir.\" What does it mean?",
-        "es": "«Il est en train de dormir.» ¿Qué significa?"
+        "fr": "On frappe à la porte de ton frère, mais il dort. Qu'est-ce que tu dis ?",
+        "en": "Someone knocks on your brother's door, but he's asleep. What do you say?",
+        "es": "Alguien llama a la puerta de tu hermano, pero está durmiendo. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "He is sleeping (right now).",
-          "He has to sleep.",
-          "He slept on the train.",
-          "He will sleep."
-        ],
-        "es": [
-          "Está durmiendo (ahora).",
-          "Tiene que dormir.",
-          "Durmió en el tren.",
-          "Dormirá."
-        ]
-      },
+      "options": [
+        "Il est en train de dormir.",
+        "Il va dormir.",
+        "Il vient de dormir.",
+        "Il a dormi."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Être en train de\" has nothing to do with trains: it means \"in the middle of\".",
-        "es": "«Être en train de» no tiene nada que ver con trenes: significa «estar haciendo algo»."
+        "en": "\"Être en train de\" + infinitive = to be doing something right now.",
+        "es": "«Être en train de» + infinitivo = estar haciendo algo ahora mismo."
       }
     },
     {
       "question": {
+        "fr": "Complète : « La cuisine était propre jusqu'à ce que tu ___ à cuisiner. »",
         "en": "Complete: \"La cuisine était propre jusqu'à ce que tu ___ à cuisiner.\"",
         "es": "Completa: «La cuisine était propre jusqu'à ce que tu ___ à cuisiner.»"
       },
@@ -387,6 +383,7 @@
     },
     {
       "question": {
+        "fr": "« Êtes-vous riches ? » — « Nous ne sommes ___ riches ___ pauvres. »",
         "en": "\"Êtes-vous riches ?\" — \"Nous ne sommes ___ riches ___ pauvres.\"",
         "es": "«Êtes-vous riches ?» — «Nous ne sommes ___ riches ___ pauvres.»"
       },
@@ -404,6 +401,7 @@
     },
     {
       "question": {
+        "fr": "Le sol est plein de poussière et c'est ton tour. Comment dis-tu que tu es obligé de le faire ?",
         "en": "How do you say \"I have to vacuum\"?",
         "es": "¿Cómo se dice «Tengo que pasar la aspiradora»?"
       },
@@ -421,6 +419,7 @@
     },
     {
       "question": {
+        "fr": "Que réponds-tu à « Te souviens-tu de moi ? » si tu ne te souviens pas ?",
         "en": "Answer to \"Te souviens-tu de moi ?\" if you don't remember:",
         "es": "Respuesta a «Te souviens-tu de moi ?» si no te acuerdas:"
       },
@@ -438,27 +437,20 @@
     },
     {
       "question": {
-        "en": "What does \"Je me sens à l'aise\" mean?",
-        "es": "¿Qué significa «Je me sens à l'aise»?"
+        "fr": "Tu viens d'arriver chez des amis et tu te sens bien, comme chez toi. Qu'est-ce que tu dis ?",
+        "en": "You've just arrived at your friends' place and you feel good, at home. What do you say?",
+        "es": "Acabas de llegar a casa de unos amigos y te sientes bien, como en casa. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "I feel comfortable.",
-          "I feel lonely.",
-          "I feel sick.",
-          "I feel lazy."
-        ],
-        "es": [
-          "Me siento a gusto.",
-          "Me siento solo.",
-          "Me siento mal.",
-          "Me siento perezoso."
-        ]
-      },
+      "options": [
+        "Je me sens à l'aise.",
+        "Je me sens mal à l'aise.",
+        "Je suis gêné.",
+        "Je m'ennuie."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "The opposite is \"Je me sens mal à l'aise\" (uncomfortable).",
-        "es": "Lo contrario es «Je me sens mal à l'aise» (incómodo)."
+        "en": "\"Se sentir à l'aise\" = to feel comfortable. \"Mal à l'aise\" = uncomfortable.",
+        "es": "«Se sentir à l'aise» = sentirse a gusto. «Mal à l'aise» = incómodo."
       }
     }
   ],

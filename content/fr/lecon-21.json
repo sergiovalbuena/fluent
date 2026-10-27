@@ -385,6 +385,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Il est 2 h 45. Comment le dis-tu dans la vie de tous les jours ?",
         "en": "How do you say 2:45 in everyday French?",
         "es": "¿Cómo se dice 2:45 en el francés cotidiano?"
       },
@@ -402,6 +403,7 @@
     },
     {
       "question": {
+        "fr": "Quelle forme est correcte ?",
         "en": "Which is correct?",
         "es": "¿Cuál es correcta?"
       },
@@ -419,31 +421,25 @@
     },
     {
       "question": {
-        "en": "\"Ma montre avance de dix minutes.\" Meaning?",
-        "es": "«Ma montre avance de dix minutes.» ¿Significado?"
+        "fr": "Ta montre indique 10 h 10, mais il est 10 h. Qu'est-ce que tu dis ?",
+        "en": "Your watch says 10:10, but it's 10:00. What do you say?",
+        "es": "Tu reloj marca las 10:10, pero son las 10:00. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "My watch is ten minutes fast.",
-          "My watch is ten minutes slow.",
-          "I am ten minutes early.",
-          "My watch stopped ten minutes ago."
-        ],
-        "es": [
-          "Mi reloj va diez minutos adelantado.",
-          "Mi reloj va diez minutos atrasado.",
-          "Llego diez minutos antes.",
-          "Mi reloj se paró hace diez minutos."
-        ]
-      },
+      "options": [
+        "Ma montre avance de dix minutes.",
+        "Ma montre retarde de dix minutes.",
+        "Ma montre est à l'heure.",
+        "Ma montre s'est arrêtée."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Avancer = to be fast; retarder = to be slow.",
-        "es": "Avancer = adelantarse; retarder = atrasarse."
+        "en": "\"Avancer\" = to be fast; \"retarder\" = to be slow.",
+        "es": "«Avancer» = adelantar; «retarder» = atrasar."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Je t'attends ___ vingt minutes. »",
         "en": "Complete: \"Je t'attends ___ vingt minutes.\"",
         "es": "Completa: «Je t'attends ___ vingt minutes.»"
       },
@@ -461,6 +457,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Je me suis couché après ___ lu le livre. »",
         "en": "Complete: \"Je me suis couché après ___ lu le livre.\"",
         "es": "Completa: «Je me suis couché après ___ lu le livre.»"
       },
@@ -478,31 +475,25 @@
     },
     {
       "question": {
-        "en": "\"J'ai dû oublier mes clés.\" What does it express?",
-        "es": "«J'ai dû oublier mes clés.» ¿Qué expresa?"
+        "fr": "Tu ne trouves pas tes clés. Tu penses que tu les as probablement oubliées au bureau. Qu'est-ce que tu dis ?",
+        "en": "You can't find your keys. You think you probably left them at the office. What do you say?",
+        "es": "No encuentras tus llaves. Crees que probablemente te las dejaste en la oficina. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "a probable past fact",
-          "a future obligation",
-          "a wish",
-          "an order"
-        ],
-        "es": [
-          "un hecho pasado probable",
-          "una obligación futura",
-          "un deseo",
-          "una orden"
-        ]
-      },
+      "options": [
+        "J'ai dû oublier mes clés au bureau.",
+        "Je dois oublier mes clés au bureau.",
+        "J'ai oublié de devoir mes clés.",
+        "Je devrais oublier mes clés au bureau."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Devoir in the passé composé often means \"must have\".",
-        "es": "«Devoir» en passé composé suele significar «debí de»."
+        "en": "\"J'ai dû\" + infinitive can mean \"I must have…\": a probable past fact.",
+        "es": "«J'ai dû» + infinitivo puede significar «debo de haber…»: un hecho pasado probable."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Il faut que la robe ___ prête demain. »",
         "en": "Complete: \"Il faut que la robe ___ prête demain.\"",
         "es": "Completa: «Il faut que la robe ___ prête demain.»"
       },
@@ -520,6 +511,7 @@
     },
     {
       "question": {
+        "fr": "Au marché, tu demandes « une livre de cerises ». Combien est-ce que ça pèse ?",
         "en": "How much is \"une livre\" in a French market?",
         "es": "¿Cuánto es «une livre» en un mercado francés?"
       },

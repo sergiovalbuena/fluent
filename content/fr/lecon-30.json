@@ -306,6 +306,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Qu'est-ce que tu dis en France quand tu décroches le téléphone ?",
         "en": "What do you say when you pick up the phone in France?",
         "es": "¿Qué dices al descolgar el teléfono en Francia?"
       },
@@ -323,6 +324,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Ça fait une heure ___ tu parles ! »",
         "en": "Complete: \"Ça fait une heure ___ tu parles !\"",
         "es": "Completa: «Ça fait une heure ___ tu parles !»"
       },
@@ -340,56 +342,43 @@
     },
     {
       "question": {
-        "en": "\"Vous vous êtes trompé de numéro.\" Meaning?",
-        "es": "«Vous vous êtes trompé de numéro.» ¿Significado?"
+        "fr": "Quelqu'un t'appelle et demande « Monsieur Durand », mais ce n'est pas toi. Qu'est-ce que tu dis ?",
+        "en": "Someone calls and asks for \"Monsieur Durand\", but that's not you. What do you say?",
+        "es": "Alguien llama y pregunta por «Monsieur Durand», pero no eres tú. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "You have the wrong number.",
-          "Your number changed.",
-          "You forgot the number.",
-          "The number is busy."
-        ],
-        "es": [
-          "Se ha equivocado de número.",
-          "Su número ha cambiado.",
-          "Ha olvidado el número.",
-          "El número está ocupado."
-        ]
-      },
+      "options": [
+        "Vous vous êtes trompé de numéro.",
+        "Vous avez trompé le numéro.",
+        "Vous êtes un mauvais numéro.",
+        "Vous vous êtes trompé de nom."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Se tromper de\" + noun = to get the wrong…",
-        "es": "«Se tromper de» + sustantivo = equivocarse de…"
+        "en": "\"Se tromper de\" + noun = to get the wrong…: \"vous vous êtes trompé de numéro\" = you have the wrong number.",
+        "es": "«Se tromper de» + sustantivo = equivocarse de: «vous vous êtes trompé de numéro» = se ha equivocado de número."
       }
     },
     {
       "question": {
-        "en": "What does \"raccrocher\" mean?",
-        "es": "¿Qué significa «raccrocher»?"
+        "fr": "La conversation est finie. Tu poses le téléphone. Qu'est-ce que tu fais ?",
+        "en": "The conversation is over. You put the phone down. What do you do?",
+        "es": "La conversación ha terminado. Cuelgas el teléfono. ¿Qué haces?"
       },
-      "options": {
-        "en": [
-          "to hang up",
-          "to pick up",
-          "to dial",
-          "to ring"
-        ],
-        "es": [
-          "colgar",
-          "descolgar",
-          "marcar",
-          "sonar"
-        ]
-      },
+      "options": [
+        "Je raccroche.",
+        "Je décroche.",
+        "Je compose le numéro.",
+        "Je rappelle."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Décrocher = to pick up.",
-        "es": "Décrocher = descolgar."
+        "en": "\"Raccrocher\" = to hang up; \"décrocher\" = to pick up.",
+        "es": "«Raccrocher» = colgar; «décrocher» = descolgar, contestar."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Elle m'a regardée jusqu'à ce que je lui ___ ce qui se passait. »",
         "en": "Complete: \"Elle m'a regardée jusqu'à ce que je lui ___ ce qui se passait.\"",
         "es": "Completa: «Elle m'a regardée jusqu'à ce que je lui ___ ce qui se passait.»"
       },
@@ -407,6 +396,7 @@
     },
     {
       "question": {
+        "fr": "Au téléphone, tu veux que la personne attende un moment sans raccrocher. Qu'est-ce que tu dis ?",
         "en": "How do you say \"Hold on\" on the phone?",
         "es": "¿Cómo se dice «No cuelgue» al teléfono?"
       },
@@ -424,6 +414,7 @@
     },
     {
       "question": {
+        "fr": "Comment lis-tu le numéro 06 45 78 12 90 ?",
         "en": "How do you read 06 45 78 12 90?",
         "es": "¿Cómo se lee 06 45 78 12 90?"
       },
@@ -441,27 +432,20 @@
     },
     {
       "question": {
-        "en": "\"Laisse-le sonner.\" What does \"le\" replace?",
-        "es": "«Laisse-le sonner.» ¿Qué sustituye «le»?"
+        "fr": "Le téléphone sonne, mais tu ne veux pas répondre. Qu'est-ce que tu dis, sans répéter « le téléphone » ?",
+        "en": "The phone is ringing but you don't want to answer. What do you say without repeating \"le téléphone\"?",
+        "es": "Suena el teléfono, pero no quieres contestar. ¿Qué dices sin repetir «le téléphone»?"
       },
-      "options": {
-        "en": [
-          "the phone",
-          "the message",
-          "the number",
-          "the person"
-        ],
-        "es": [
-          "el teléfono",
-          "el mensaje",
-          "el número",
-          "la persona"
-        ]
-      },
+      "options": [
+        "Laisse-le sonner.",
+        "Laisse-lui sonner.",
+        "Le laisse sonner.",
+        "Laisse-la sonner."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Le = le téléphone.",
-        "es": "Le = le téléphone."
+        "en": "\"Le\" replaces \"le téléphone\" (masculine). In a positive order it goes after the verb.",
+        "es": "«Le» sustituye a «le téléphone» (masculino). En una orden afirmativa va detrás del verbo."
       }
     }
   ],

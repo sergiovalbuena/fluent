@@ -395,6 +395,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quel est le pluriel de « cheval » ?",
         "en": "What is the plural of \"cheval\"?",
         "es": "¿Cuál es el plural de «cheval»?"
       },
@@ -412,6 +413,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le plus grand animal du monde ?",
         "en": "Which is the largest animal in the world?",
         "es": "¿Cuál es el animal más grande del mundo?"
       },
@@ -429,6 +431,7 @@
     },
     {
       "question": {
+        "fr": "Mets à la voix passive : « Les chasseurs tuent les tigres. »",
         "en": "Passive voice: \"Hunters kill tigers\" → ?",
         "es": "Voz pasiva: «Los cazadores matan tigres» → ?"
       },
@@ -446,31 +449,25 @@
     },
     {
       "question": {
-        "en": "What does \"faire du cheval\" mean?",
-        "es": "¿Qué significa «faire du cheval»?"
+        "fr": "Le samedi, tu montes à cheval dans un club. Comment le dis-tu ?",
+        "en": "On Saturdays you go horse riding at a club. How do you say it?",
+        "es": "Los sábados montas a caballo en un club. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "to ride a horse",
-          "to make a horse",
-          "to feed a horse",
-          "to buy a horse"
-        ],
-        "es": [
-          "montar a caballo",
-          "hacer un caballo",
-          "dar de comer a un caballo",
-          "comprar un caballo"
-        ]
-      },
+      "options": [
+        "Je fais du cheval.",
+        "Je joue au cheval.",
+        "Je fais le cheval.",
+        "Je vais en cheval."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Faire du + sport/activity: faire du vélo, faire du ski.",
-        "es": "Faire du + deporte o actividad: faire du vélo, faire du ski."
+        "en": "\"Faire du cheval\" = to ride horses (as an activity), like \"faire du vélo\".",
+        "es": "«Faire du cheval» = montar a caballo (como actividad), como «faire du vélo»."
       }
     },
     {
       "question": {
+        "fr": "Quel animal est un mammifère ?",
         "en": "Which animal is a mammal?",
         "es": "¿Qué animal es un mamífero?"
       },
@@ -488,31 +485,25 @@
     },
     {
       "question": {
-        "en": "\"J'ai une faim de loup.\" What does it mean?",
-        "es": "«J'ai une faim de loup.» ¿Qué significa?"
+        "fr": "Tu n'as rien mangé depuis ce matin et il est 15 h. Qu'est-ce que tu dis ?",
+        "en": "You haven't eaten anything since this morning and it's 3 p.m. What do you say?",
+        "es": "No has comido nada desde la mañana y son las 3 de la tarde. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "I'm starving.",
-          "I'm afraid of wolves.",
-          "I want to eat a wolf.",
-          "I'm not hungry."
-        ],
-        "es": [
-          "Tengo un hambre feroz.",
-          "Tengo miedo de los lobos.",
-          "Quiero comerme un lobo.",
-          "No tengo hambre."
-        ]
-      },
+      "options": [
+        "J'ai une faim de loup !",
+        "J'ai une faim de chat !",
+        "Je suis un loup !",
+        "J'ai un loup !"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Literally \"a wolf's hunger\".",
-        "es": "Literalmente «un hambre de lobo»."
+        "en": "\"Avoir une faim de loup\" = to be starving (literally: a wolf's hunger).",
+        "es": "«Avoir une faim de loup» = tener un hambre de lobo."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Quand j'étais petit, j'___ un chien. »",
         "en": "Complete: \"Quand j'étais petit, j'___ un chien.\"",
         "es": "Completa: «Quand j'étais petit, j'___ un chien.»"
       },
@@ -530,27 +521,20 @@
     },
     {
       "question": {
-        "en": "Which baby animal is \"un chiot\"?",
-        "es": "¿Qué cría es «un chiot»?"
+        "fr": "Ta chienne vient d'avoir des bébés. Comment s'appelle chaque petit ?",
+        "en": "Your dog has just had babies. What is each little one called?",
+        "es": "Tu perra acaba de tener crías. ¿Cómo se llama cada cachorro?"
       },
-      "options": {
-        "en": [
-          "a puppy",
-          "a kitten",
-          "a chick",
-          "a calf"
-        ],
-        "es": [
-          "un cachorro",
-          "un gatito",
-          "un pollito",
-          "un ternero"
-        ]
-      },
+      "options": [
+        "un chiot",
+        "un chaton",
+        "un poulain",
+        "un agneau"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Chaton = kitten, poussin = chick, veau = calf.",
-        "es": "Chaton = gatito, poussin = pollito, veau = ternero."
+        "en": "\"Un chiot\" = a puppy; \"un chaton\" = a kitten, \"un poulain\" = a foal, \"un agneau\" = a lamb.",
+        "es": "«Un chiot» = un cachorro de perro; «un chaton» = un gatito, «un poulain» = un potro, «un agneau» = un cordero."
       }
     }
   ],

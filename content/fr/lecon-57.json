@@ -310,6 +310,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Je n'aime ___ l'or ___ l'argent. »",
         "en": "Complete: \"Je n'aime ___ l'or ___ l'argent.\"",
         "es": "Completa: «Je n'aime ___ l'or ___ l'argent.»"
       },
@@ -327,31 +328,25 @@
     },
     {
       "question": {
-        "en": "\"Tu veux le collier ou la bague ? — Ni l'un ni l'autre.\" Meaning?",
-        "es": "«Tu veux le collier ou la bague ? — Ni l'un ni l'autre.» ¿Significado?"
+        "fr": "« Tu veux le collier ou la bague ? » Tu ne veux aucun des deux. Qu'est-ce que tu réponds ?",
+        "en": "\"Do you want the necklace or the ring?\" You don't want either. What do you answer?",
+        "es": "«¿Quieres el collar o el anillo?» No quieres ninguno de los dos. ¿Qué respondes?"
       },
-      "options": {
-        "en": [
-          "Neither.",
-          "Both.",
-          "Either one.",
-          "The other one."
-        ],
-        "es": [
-          "Ninguno de los dos.",
-          "Los dos.",
-          "Cualquiera.",
-          "El otro."
-        ]
-      },
+      "options": [
+        "Ni l'un ni l'autre.",
+        "L'un et l'autre.",
+        "L'un ou l'autre.",
+        "Les deux."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Both = les deux.",
-        "es": "Los dos = les deux."
+        "en": "\"Ni l'un ni l'autre\" = neither. \"L'un ou l'autre\" = either one.",
+        "es": "«Ni l'un ni l'autre» = ninguno de los dos. «L'un ou l'autre» = cualquiera."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Tu peux venir à condition que tu ___ à l'heure. »",
         "en": "Complete: \"Tu peux venir à condition que tu ___ à l'heure.\"",
         "es": "Completa: «Tu peux venir à condition que tu ___ à l'heure.»"
       },
@@ -369,6 +364,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il faut que ce ___ en or. »",
         "en": "Complete: \"Il faut que ce ___ en or.\"",
         "es": "Completa: «Il faut que ce ___ en or.»"
       },
@@ -386,6 +382,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il a ___ bagues que moi. »",
         "en": "Complete: \"Il a ___ bagues que moi.\"",
         "es": "Completa: «Il a ___ bagues que moi.»"
       },
@@ -403,31 +400,25 @@
     },
     {
       "question": {
-        "en": "What is \"une alliance\"?",
-        "es": "¿Qué es «une alliance»?"
+        "fr": "Tu achètes deux anneaux en or pour la cérémonie de ton mariage. Qu'est-ce que tu demandes au bijoutier ?",
+        "en": "You're buying two gold rings for your wedding ceremony. What do you ask the jeweller for?",
+        "es": "Compras dos anillos de oro para la ceremonia de tu boda. ¿Qué le pides al joyero?"
       },
-      "options": {
-        "en": [
-          "a wedding ring",
-          "a necklace",
-          "a watch",
-          "a bracelet"
-        ],
-        "es": [
-          "una alianza (anillo de boda)",
-          "un collar",
-          "un reloj",
-          "una pulsera"
-        ]
-      },
+      "options": [
+        "des alliances",
+        "des boucles d'oreilles",
+        "des montres",
+        "des broches"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Worn after the wedding.",
-        "es": "Se lleva tras la boda."
+        "en": "\"Une alliance\" = a wedding ring.",
+        "es": "«Une alliance» = una alianza, un anillo de boda."
       }
     },
     {
       "question": {
+        "fr": "Complète : « La bague qu'on avait ___ était parfaite. »",
         "en": "Complete: \"La bague qu'on avait ___ était parfaite.\"",
         "es": "Completa: «La bague qu'on avait ___ était parfaite.»"
       },
@@ -445,6 +436,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Nettoie-les pour qu'ils ___. »",
         "en": "Complete: \"Nettoie-les pour qu'ils ___.\"",
         "es": "Completa: «Nettoie-les pour qu'ils ___.»"
       },

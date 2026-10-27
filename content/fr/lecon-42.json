@@ -290,6 +290,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « La machine ___ est au coin est en panne. »",
         "en": "Complete: \"La machine ___ est au coin est en panne.\"",
         "es": "Completa: «La machine ___ est au coin est en panne.»"
       },
@@ -307,6 +308,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Le pull ___ tu as lavé a rétréci. »",
         "en": "Complete: \"Le pull ___ tu as lavé a rétréci.\"",
         "es": "Completa: «Le pull ___ tu as lavé a rétréci.»"
       },
@@ -324,6 +326,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « La laverie ___ je vais est près d'ici. »",
         "en": "Complete: \"La laverie ___ je vais est près d'ici.\"",
         "es": "Completa: «La laverie ___ je vais est près d'ici.»"
       },
@@ -341,6 +344,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « La meilleure, c'est ___ qui est en face. » (la laverie)",
         "en": "Complete: \"La meilleure, c'est ___ qui est en face.\" (la laverie)",
         "es": "Completa: «La meilleure, c'est ___ qui est en face.» (la laverie)"
       },
@@ -358,6 +362,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Qu'est-ce que tu veux que je ___ ? »",
         "en": "Complete: \"Qu'est-ce que tu veux que je ___ ?\"",
         "es": "Completa: «Qu'est-ce que tu veux que je ___ ?»"
       },
@@ -375,31 +380,25 @@
     },
     {
       "question": {
-        "en": "What is \"le pressing\"?",
-        "es": "¿Qué es «le pressing»?"
+        "fr": "Ta veste en soie ne va pas dans la machine. Où l'apportes-tu pour la faire nettoyer ?",
+        "en": "Your silk jacket can't go in the machine. Where do you take it to get it cleaned?",
+        "es": "Tu chaqueta de seda no puede ir a la lavadora. ¿Dónde la llevas a limpiar?"
       },
-      "options": {
-        "en": [
-          "the dry cleaner",
-          "the iron",
-          "the dryer",
-          "the detergent"
-        ],
-        "es": [
-          "la tintorería",
-          "la plancha",
-          "la secadora",
-          "el detergente"
-        ]
-      },
+      "options": [
+        "au pressing",
+        "à la laverie",
+        "à la boulangerie",
+        "à la quincaillerie"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Laverie = self-service laundromat.",
-        "es": "Laverie = lavandería de autoservicio."
+        "en": "\"Le pressing\" = the dry cleaner. \"La laverie\" = the laundrette, where you wash it yourself.",
+        "es": "«Le pressing» = la tintorería. «La laverie» = la lavandería de autoservicio."
       }
     },
     {
       "question": {
+        "fr": "Qu'est-ce qu'il ne faut PAS mettre avec les vêtements de couleur ?",
         "en": "What should you NOT put with colored clothes?",
         "es": "¿Qué NO debes echar con la ropa de color?"
       },
@@ -417,27 +416,20 @@
     },
     {
       "question": {
-        "en": "\"Faire de la monnaie\" means…",
-        "es": "«Faire de la monnaie» significa…"
+        "fr": "La machine n'accepte que des pièces de 1 €, et tu as un billet de 10 €. Qu'est-ce que tu demandes ?",
+        "en": "The machine only takes €1 coins, and you have a €10 note. What do you ask?",
+        "es": "La máquina solo acepta monedas de 1 €, y tienes un billete de 10 €. ¿Qué pides?"
       },
-      "options": {
-        "en": [
-          "to get change",
-          "to make money",
-          "to print coins",
-          "to save money"
-        ],
-        "es": [
-          "conseguir cambio",
-          "ganar dinero",
-          "acuñar monedas",
-          "ahorrar dinero"
-        ]
-      },
+      "options": [
+        "Vous pouvez me faire de la monnaie ?",
+        "Vous pouvez me faire de l'argent ?",
+        "Vous pouvez me changer la pièce ?",
+        "Vous pouvez me prêter un billet ?"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "To earn money = gagner de l'argent.",
-        "es": "Ganar dinero = gagner de l'argent."
+        "en": "\"Faire de la monnaie\" = to give change (coins for a note).",
+        "es": "«Faire de la monnaie» = cambiar un billete en monedas."
       }
     }
   ],

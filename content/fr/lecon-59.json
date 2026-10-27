@@ -321,6 +321,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quel connecteur exprime une opposition ?",
         "en": "Which connector expresses contrast?",
         "es": "¿Qué conector expresa oposición?"
       },
@@ -338,6 +339,7 @@
     },
     {
       "question": {
+        "fr": "Quel connecteur exprime une conséquence ?",
         "en": "Which connector expresses consequence?",
         "es": "¿Qué conector expresa consecuencia?"
       },
@@ -355,6 +357,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Bien qu'il ___ innocent, il est en prison. »",
         "en": "Complete: \"Bien qu'il ___ innocent, il est en prison.\"",
         "es": "Completa: «Bien qu'il ___ innocent, il est en prison.»"
       },
@@ -372,6 +375,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Même s'il ___ innocent, il est en prison. »",
         "en": "Complete: \"Même s'il ___ innocent, il est en prison.\"",
         "es": "Completa: «Même s'il ___ innocent, il est en prison.»"
       },
@@ -389,6 +393,7 @@
     },
     {
       "question": {
+        "fr": "Mets à la voix passive : « La police a arrêté le voleur. »",
         "en": "Passive: \"La police a arrêté le voleur.\" → ?",
         "es": "Pasiva: «La police a arrêté le voleur.» → ?"
       },
@@ -406,31 +411,25 @@
     },
     {
       "question": {
-        "en": "What is \"un témoin\"?",
-        "es": "¿Qué es «un témoin»?"
+        "fr": "Tu as vu l'accident de tes propres yeux et le juge veut t'entendre. Qu'est-ce que tu es ?",
+        "en": "You saw the accident with your own eyes and the judge wants to hear you. What are you?",
+        "es": "Viste el accidente con tus propios ojos y el juez quiere escucharte. ¿Qué eres?"
       },
-      "options": {
-        "en": [
-          "a witness",
-          "a judge",
-          "a lawyer",
-          "a thief"
-        ],
-        "es": [
-          "un testigo",
-          "un juez",
-          "un abogado",
-          "un ladrón"
-        ]
-      },
+      "options": [
+        "un témoin",
+        "un avocat",
+        "un accusé",
+        "un juré"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "He or she saw what happened.",
-        "es": "Vio lo que pasó."
+        "en": "\"Un témoin\" = a witness.",
+        "es": "«Un témoin» = un testigo."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Elle héritera quand elle ___ majeure. »",
         "en": "Complete: \"Elle héritera quand elle ___ majeure.\"",
         "es": "Completa: «Elle héritera quand elle ___ majeure.»"
       },
@@ -448,27 +447,20 @@
     },
     {
       "question": {
-        "en": "\"En revanche\" means…",
-        "es": "«En revanche» significa…"
+        "fr": "Tu compares deux avocats : le premier est cher ; le second, au contraire, est bon marché. Comment relies-tu les deux idées ?",
+        "en": "You're comparing two lawyers: the first is expensive; the second, by contrast, is cheap. How do you link the two ideas?",
+        "es": "Comparas dos abogados: el primero es caro; el segundo, en cambio, es barato. ¿Cómo unes las dos ideas?"
       },
-      "options": {
-        "en": [
-          "on the other hand",
-          "in revenge",
-          "moreover",
-          "therefore"
-        ],
-        "es": [
-          "en cambio",
-          "como venganza",
-          "además",
-          "por lo tanto"
-        ]
-      },
+      "options": [
+        "Le premier est cher ; en revanche, le second est bon marché.",
+        "Le premier est cher ; par conséquent, le second est bon marché.",
+        "Le premier est cher ; en plus, le second est bon marché.",
+        "Le premier est cher ; donc le second est bon marché."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Synonym: par contre.",
-        "es": "Sinónimo: par contre."
+        "en": "\"En revanche\" = on the other hand, by contrast.",
+        "es": "«En revanche» = en cambio, por el contrario."
       }
     }
   ],

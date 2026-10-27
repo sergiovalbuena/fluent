@@ -268,6 +268,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quelqu'un te dit « Merci beaucoup ! ». Qu'est-ce que tu réponds ?",
         "en": "Someone says \"Merci beaucoup !\". What do you answer?",
         "es": "Alguien te dice «Merci beaucoup !». ¿Qué respondes?"
       },
@@ -285,6 +286,7 @@
     },
     {
       "question": {
+        "fr": "Tu n'as pas entendu ce que quelqu'un a dit. Qu'est-ce que tu dis ?",
         "en": "You didn't hear what someone said. What do you say?",
         "es": "No has oído lo que alguien dijo. ¿Qué dices?"
       },
@@ -302,6 +304,7 @@
     },
     {
       "question": {
+        "fr": "Quelle est la façon la plus polie de demander un café ?",
         "en": "Which is the most polite way to ask for a coffee?",
         "es": "¿Cuál es la forma más cortés de pedir un café?"
       },
@@ -319,6 +322,7 @@
     },
     {
       "question": {
+        "fr": "Quel vœu de Pâques est correct ?",
         "en": "Which Easter greeting is correct?",
         "es": "¿Qué felicitación de Pascua es correcta?"
       },
@@ -336,31 +340,25 @@
     },
     {
       "question": {
-        "en": "Your host says \"Entrez, asseyez-vous.\" What form is this?",
-        "es": "Tu anfitrión dice «Entrez, asseyez-vous.» ¿Qué forma es?"
+        "fr": "Tu reçois un invité chez toi et tu le vouvoies. Comment l'invites-tu à entrer et à s'asseoir ?",
+        "en": "A guest arrives and you address them as vous. How do you invite them to come in and sit down?",
+        "es": "Llega un invitado y lo tratas de usted (vous). ¿Cómo lo invitas a entrar y a sentarse?"
       },
-      "options": {
-        "en": [
-          "Formal imperative (vous)",
-          "Informal imperative (tu)",
-          "A question",
-          "The past tense"
-        ],
-        "es": [
-          "Imperativo formal (vous)",
-          "Imperativo informal (tu)",
-          "Una pregunta",
-          "El pasado"
-        ]
-      },
+      "options": [
+        "Entrez, asseyez-vous.",
+        "Entre, assieds-toi.",
+        "Vous entrez, vous asseyez.",
+        "Entrer, s'asseoir."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "With \"tu\" it would be \"Entre, assieds-toi.\"",
-        "es": "Con «tu» sería «Entre, assieds-toi.»"
+        "en": "The vous imperative: \"Entrez, asseyez-vous.\" With tu it would be \"Entre, assieds-toi.\"",
+        "es": "Imperativo con vous: «Entrez, asseyez-vous.» Con tu sería «Entre, assieds-toi.»"
       }
     },
     {
       "question": {
+        "fr": "Il fait chaud et tu veux ouvrir la fenêtre. Comment demandes-tu poliment la permission ?",
         "en": "How do you say \"Do you mind if I open the window?\"",
         "es": "¿Cómo se dice «¿Le molesta si abro la ventana?»?"
       },
@@ -378,31 +376,25 @@
     },
     {
       "question": {
-        "en": "What does \"Il vient d'arriver\" mean?",
-        "es": "¿Qué significa «Il vient d'arriver»?"
+        "fr": "On demande où est Paul. Il est entré il y a une minute. Qu'est-ce que tu réponds ?",
+        "en": "Someone asks where Paul is. He came in a minute ago. What do you answer?",
+        "es": "Alguien pregunta dónde está Paul. Entró hace un minuto. ¿Qué respondes?"
       },
-      "options": {
-        "en": [
-          "He has just arrived.",
-          "He is coming to arrive.",
-          "He will arrive.",
-          "He arrives every day."
-        ],
-        "es": [
-          "Acaba de llegar.",
-          "Viene a llegar.",
-          "Llegará.",
-          "Llega todos los días."
-        ]
-      },
+      "options": [
+        "Il vient d'arriver.",
+        "Il va arriver.",
+        "Il arrive demain.",
+        "Il n'est pas venu."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Venir de\" + infinitive expresses something that has just happened.",
-        "es": "«Venir de» + infinitivo expresa algo que acaba de ocurrir."
+        "en": "\"Venir de\" + infinitive = to have just done something: \"Il vient d'arriver\" = he has just arrived.",
+        "es": "«Venir de» + infinitivo = acabar de: «Il vient d'arriver» = acaba de llegar."
       }
     },
     {
       "question": {
+        "fr": "Un ami te dit « Désolé, je suis en retard ! ». Comment le rassures-tu ?",
         "en": "A friend says \"Désolé, je suis en retard !\". How do you reassure them?",
         "es": "Un amigo dice «Désolé, je suis en retard !». ¿Cómo lo tranquilizas?"
       },

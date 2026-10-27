@@ -330,6 +330,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quelle phrase parle d'un projet pour bientôt ?",
         "en": "Which sentence is about a near future plan?",
         "es": "¿Qué frase habla de un plan en futuro próximo?"
       },
@@ -347,6 +348,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Tes enfants sont à la plage ? Les ___ sont à la piscine. »",
         "en": "Complete: \"Tes enfants sont à la plage ? Les ___ sont à la piscine.\"",
         "es": "Completa: «Tes enfants sont à la plage ? Les ___ sont à la piscine.»"
       },
@@ -364,6 +366,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Londres ? J'aimerais ___ aller. »",
         "en": "Complete: \"Londres ? J'aimerais ___ aller.\"",
         "es": "Completa: «Londres ? J'aimerais ___ aller.»"
       },
@@ -381,31 +384,25 @@
     },
     {
       "question": {
-        "en": "\"J'allais oublier !\" means…",
-        "es": "«J'allais oublier !» significa…"
+        "fr": "Tu partais, mais tu te rappelles soudain quelque chose d'important. Qu'est-ce que tu dis ?",
+        "en": "You were leaving, but you suddenly remember something important. What do you say?",
+        "es": "Te ibas, pero de repente te acuerdas de algo importante. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "I almost forgot!",
-          "I will forget!",
-          "I forgot yesterday!",
-          "I never forget!"
-        ],
-        "es": [
-          "¡Casi se me olvida!",
-          "¡Lo olvidaré!",
-          "¡Lo olvidé ayer!",
-          "¡Nunca olvido!"
-        ]
-      },
+      "options": [
+        "J'allais oublier !",
+        "J'ai oublié hier !",
+        "Je vais oublier demain !",
+        "J'oubliais toujours !"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Imparfait of \"aller\" + infinitive.",
-        "es": "Imperfecto de «aller» + infinitivo."
+        "en": "\"J'allais oublier !\" = I almost forgot! (aller in the imparfait + infinitive).",
+        "es": "«J'allais oublier !» = ¡Casi se me olvida! (aller en imparfait + infinitivo)."
       }
     },
     {
       "question": {
+        "fr": "Tu proposes à tes amis d'aller danser ce soir. Qu'est-ce que tu dis ?",
         "en": "How do you suggest \"We could go dancing\"?",
         "es": "¿Cómo sugieres «Podríamos ir a bailar»?"
       },
@@ -423,6 +420,7 @@
     },
     {
       "question": {
+        "fr": "Dans quoi est-ce que tu dors quand tu fais du camping ?",
         "en": "What do you sleep in when camping?",
         "es": "¿En qué duermes cuando acampas?"
       },
@@ -440,6 +438,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « C'est la journée ___ chaude de l'année. »",
         "en": "Complete: \"C'est la journée ___ chaude de l'année.\"",
         "es": "Completa: «C'est la journée ___ chaude de l'année.»"
       },
@@ -457,27 +456,20 @@
     },
     {
       "question": {
-        "en": "\"J'ai envie de te voir.\" Meaning?",
-        "es": "«J'ai envie de te voir.» ¿Significado?"
+        "fr": "Ton ami te manque et tu veux vraiment le voir. Qu'est-ce que tu lui écris ?",
+        "en": "You miss your friend and really want to see him. What do you write to him?",
+        "es": "Echas de menos a tu amigo y tienes muchas ganas de verlo. ¿Qué le escribes?"
       },
-      "options": {
-        "en": [
-          "I really want to see you.",
-          "I'm jealous of you.",
-          "I saw you.",
-          "I have to see you."
-        ],
-        "es": [
-          "Tengo ganas de verte.",
-          "Te tengo envidia.",
-          "Te vi.",
-          "Tengo que verte."
-        ]
-      },
+      "options": [
+        "J'ai envie de te voir.",
+        "J'ai besoin que tu me vois.",
+        "Je suis envie de te voir.",
+        "J'ai l'envie te voir."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Avoir envie de\" = to feel like / to want. (False friend!)",
-        "es": "«Avoir envie de» = tener ganas de. (¡Falso amigo de «envidia»!)"
+        "en": "\"Avoir envie de\" + infinitive = to really want to, to feel like.",
+        "es": "«Avoir envie de» + infinitivo = tener ganas de."
       }
     }
   ],

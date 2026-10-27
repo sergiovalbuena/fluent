@@ -320,6 +320,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Si tu me le demandes, je ___ oui. »",
         "en": "Complete: \"Si tu me le demandes, je ___ oui.\"",
         "es": "Completa: «Si tu me le demandes, je ___ oui.»"
       },
@@ -337,6 +338,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Si elle part, je ___. » (mourir, au futur)",
         "en": "Complete: \"Si elle part, je ___.\" (mourir, future)",
         "es": "Completa: «Si elle part, je ___.» (mourir, futuro)"
       },
@@ -354,6 +356,7 @@
     },
     {
       "question": {
+        "fr": "Ton amoureux est loin depuis un mois et tu penses à lui sans arrêt. Qu'est-ce que tu lui écris ?",
         "en": "How do you say \"I miss you\"?",
         "es": "¿Cómo se dice «Te echo de menos»?"
       },
@@ -371,31 +374,25 @@
     },
     {
       "question": {
-        "en": "\"Tromper quelqu'un\" means…",
-        "es": "«Tromper quelqu'un» significa…"
+        "fr": "Ton amie a découvert que son copain avait une autre relation en secret. Qu'est-ce qu'elle dit ?",
+        "en": "Your friend found out her boyfriend was secretly seeing someone else. What does she say?",
+        "es": "Tu amiga ha descubierto que su novio tenía otra relación en secreto. ¿Qué dice?"
       },
-      "options": {
-        "en": [
-          "to cheat on someone",
-          "to be mistaken",
-          "to trust someone",
-          "to marry someone"
-        ],
-        "es": [
-          "engañar a alguien",
-          "equivocarse",
-          "confiar en alguien",
-          "casarse con alguien"
-        ]
-      },
+      "options": [
+        "Il m'a trompée.",
+        "Il s'est trompé.",
+        "Il m'a quittée de numéro.",
+        "Il m'a manqué."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Se tromper\" = to be mistaken.",
-        "es": "«Se tromper» = equivocarse."
+        "en": "\"Tromper quelqu'un\" = to cheat on someone. \"Se tromper\" = to make a mistake.",
+        "es": "«Tromper quelqu'un» = engañar (ser infiel). «Se tromper» = equivocarse."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Je ne veux pas que mes enfants ___ tristes. »",
         "en": "Complete: \"Je ne veux pas que mes enfants ___ tristes.\"",
         "es": "Completa: «Je ne veux pas que mes enfants ___ tristes.»"
       },
@@ -413,6 +410,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « J'avais pensé que notre amour ___ éternel. »",
         "en": "Complete: \"J'avais pensé que notre amour ___ éternel.\"",
         "es": "Completa: «J'avais pensé que notre amour ___ éternel.»"
       },
@@ -430,52 +428,38 @@
     },
     {
       "question": {
-        "en": "\"Demander quelqu'un en mariage\" means…",
-        "es": "«Demander quelqu'un en mariage» significa…"
+        "fr": "Au restaurant, Marc sort une bague et demande à Julie de l'épouser. Qu'est-ce qu'il fait ?",
+        "en": "At the restaurant, Marc takes out a ring and asks Julie to marry him. What is he doing?",
+        "es": "En el restaurante, Marc saca un anillo y le pide a Julie que se case con él. ¿Qué hace?"
       },
-      "options": {
-        "en": [
-          "to propose to someone",
-          "to invite someone to a wedding",
-          "to ask about a marriage",
-          "to divorce"
-        ],
-        "es": [
-          "pedirle matrimonio a alguien",
-          "invitar a alguien a una boda",
-          "preguntar por un matrimonio",
-          "divorciarse"
-        ]
-      },
+      "options": [
+        "Il la demande en mariage.",
+        "Il lui demande le mariage.",
+        "Il l'épouse en demande.",
+        "Il la marie."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "He proposed = il l'a demandée en mariage.",
-        "es": "Le pidió matrimonio = il l'a demandée en mariage."
+        "en": "\"Demander quelqu'un en mariage\" = to propose to someone.",
+        "es": "«Demander quelqu'un en mariage» = pedirle matrimonio a alguien."
       }
     },
     {
       "question": {
-        "en": "What is \"une alliance\"?",
-        "es": "¿Qué es «une alliance»?"
+        "fr": "Pendant la cérémonie, les mariés échangent des anneaux. Comment s'appellent-ils ?",
+        "en": "During the ceremony the couple exchange rings. What are they called?",
+        "es": "Durante la ceremonia, los novios intercambian anillos. ¿Cómo se llaman?"
       },
-      "options": {
-        "en": [
-          "a wedding ring",
-          "a wedding",
-          "an engagement party",
-          "a fiancé"
-        ],
-        "es": [
-          "una alianza (anillo)",
-          "una boda",
-          "una fiesta de compromiso",
-          "un prometido"
-        ]
-      },
+      "options": [
+        "des alliances",
+        "des bagues de fiançailles",
+        "des colliers",
+        "des bracelets"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Also \"an alliance\" in politics.",
-        "es": "También «una alianza» en política."
+        "en": "\"Une alliance\" = a wedding ring.",
+        "es": "«Une alliance» = una alianza, un anillo de boda."
       }
     }
   ],

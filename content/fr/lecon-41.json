@@ -311,56 +311,43 @@
   "qa": [
     {
       "question": {
-        "en": "What is \"le loyer\"?",
-        "es": "¿Qué es «le loyer»?"
+        "fr": "Chaque mois, tu paies 900 € au propriétaire pour vivre dans l'appartement. Comment s'appelle cet argent ?",
+        "en": "Every month you pay €900 to the landlord to live in the flat. What is this money called?",
+        "es": "Cada mes pagas 900 € al propietario por vivir en el piso. ¿Cómo se llama ese dinero?"
       },
-      "options": {
-        "en": [
-          "the rent",
-          "the lawyer",
-          "the deposit",
-          "the landlord"
-        ],
-        "es": [
-          "el alquiler",
-          "el abogado",
-          "la fianza",
-          "el casero"
-        ]
-      },
+      "options": [
+        "le loyer",
+        "la caution",
+        "la facture",
+        "le salaire"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Le loyer = monthly rent.",
-        "es": "Le loyer = alquiler mensual."
+        "en": "\"Le loyer\" = the rent. \"La caution\" = the deposit.",
+        "es": "«Le loyer» = el alquiler. «La caution» = la fianza."
       }
     },
     {
       "question": {
-        "en": "\"Charges comprises\" means…",
-        "es": "«Charges comprises» significa…"
+        "fr": "Dans l'annonce, l'eau et le chauffage sont inclus dans le prix. Qu'est-ce qui est écrit ?",
+        "en": "In the ad, water and heating are included in the price. What does it say?",
+        "es": "En el anuncio, el agua y la calefacción están incluidas en el precio. ¿Qué pone?"
       },
-      "options": {
-        "en": [
-          "utilities included",
-          "charges understood",
-          "extra charges",
-          "no charges allowed"
-        ],
-        "es": [
-          "gastos incluidos",
-          "cargos entendidos",
-          "cargos adicionales",
-          "sin cargos"
-        ]
-      },
+      "options": [
+        "Charges comprises",
+        "Charges en plus",
+        "Sans charges",
+        "Charges à payer"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Charges = utilities / service fees.",
-        "es": "Charges = gastos de suministros o comunidad."
+        "en": "\"Les charges\" = shared building costs and utilities; \"comprises\" = included.",
+        "es": "«Les charges» = gastos de comunidad y suministros; «comprises» = incluidos."
       }
     },
     {
       "question": {
+        "fr": "Quelle question de confirmation est correcte ?",
         "en": "Which tag question is correct?",
         "es": "¿Qué pregunta de confirmación es correcta?"
       },
@@ -378,6 +365,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Elle cherche un appartement ___ un mois. »",
         "en": "Complete: \"Elle cherche un appartement ___ un mois.\"",
         "es": "Completa: «Elle cherche un appartement ___ un mois.»"
       },
@@ -395,31 +383,25 @@
     },
     {
       "question": {
-        "en": "\"Il y en a quatre.\" What does \"en\" replace?",
-        "es": "«Il y en a quatre.» ¿Qué sustituye «en»?"
+        "fr": "« Combien de salles de bains y a-t-il ? » Il y en a quatre. Réponds sans répéter « salles de bains ».",
+        "en": "\"How many bathrooms are there?\" There are four. Answer without repeating \"salles de bains\".",
+        "es": "«¿Cuántos baños hay?» Hay cuatro. Responde sin repetir «salles de bains»."
       },
-      "options": {
-        "en": [
-          "a noun with a quantity (e.g., bathrooms)",
-          "a place",
-          "a person",
-          "an adjective"
-        ],
-        "es": [
-          "un sustantivo con cantidad (p. ej., baños)",
-          "un lugar",
-          "una persona",
-          "un adjetivo"
-        ]
-      },
+      "options": [
+        "Il y en a quatre.",
+        "Il y a quatre.",
+        "Il les a quatre.",
+        "Il y a quatre en."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"En\" + number replaces a counted noun.",
-        "es": "«En» + número sustituye un sustantivo contado."
+        "en": "\"En\" replaces a noun with a quantity: \"il y en a quatre\" = there are four (of them).",
+        "es": "«En» sustituye a un sustantivo con cantidad: «il y en a quatre» = hay cuatro."
       }
     },
     {
       "question": {
+        "fr": "Qui paie le loyer ?",
         "en": "Who pays the rent?",
         "es": "¿Quién paga el alquiler?"
       },
@@ -437,31 +419,25 @@
     },
     {
       "question": {
-        "en": "\"J'ai bien peur que oui.\" Meaning?",
-        "es": "«J'ai bien peur que oui.» ¿Significado?"
+        "fr": "« L'appartement est déjà loué ? » Malheureusement, oui. Qu'est-ce que tu réponds ?",
+        "en": "\"Is the flat already rented?\" Unfortunately, yes. What do you answer?",
+        "es": "«¿El piso ya está alquilado?» Por desgracia, sí. ¿Qué respondes?"
       },
-      "options": {
-        "en": [
-          "I'm afraid so.",
-          "I'm very scared.",
-          "I'm afraid not.",
-          "I hope so."
-        ],
-        "es": [
-          "Me temo que sí.",
-          "Tengo mucho miedo.",
-          "Me temo que no.",
-          "Eso espero."
-        ]
-      },
+      "options": [
+        "J'ai bien peur que oui.",
+        "J'ai bien peur que non.",
+        "J'ai peur de oui.",
+        "Je crains pas."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Opposite: \"J'ai bien peur que non.\"",
-        "es": "Lo contrario: «J'ai bien peur que non.»"
+        "en": "\"J'ai bien peur que oui\" = I'm afraid so.",
+        "es": "«J'ai bien peur que oui» = me temo que sí."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Tu es plus exigeant ___ moi. »",
         "en": "Complete: \"Tu es plus exigeant ___ moi.\"",
         "es": "Completa: «Tu es plus exigeant ___ moi.»"
       },

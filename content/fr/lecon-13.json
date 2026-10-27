@@ -360,6 +360,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Où est-ce que tu ranges la glace ?",
         "en": "Where do you keep ice cream?",
         "es": "¿Dónde guardas el helado?"
       },
@@ -377,31 +378,25 @@
     },
     {
       "question": {
-        "en": "What is \"le grenier\"?",
-        "es": "¿Qué es «le grenier»?"
+        "fr": "Dans quelle pièce, juste sous le toit, est-ce qu'on garde les vieilles choses ?",
+        "en": "In which room, right under the roof, do people keep old things?",
+        "es": "¿En qué parte de la casa, justo bajo el tejado, se guardan las cosas viejas?"
       },
-      "options": {
-        "en": [
-          "the attic",
-          "the basement",
-          "the garage",
-          "the hallway"
-        ],
-        "es": [
-          "el desván",
-          "el sótano",
-          "el garaje",
-          "el pasillo"
-        ]
-      },
+      "options": [
+        "au grenier",
+        "à la cave",
+        "au salon",
+        "au garage"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "The basement is \"le sous-sol\".",
-        "es": "El sótano es «le sous-sol»."
+        "en": "\"Le grenier\" = the attic, under the roof. \"La cave\" = the cellar, underground.",
+        "es": "«Le grenier» = el desván, bajo el tejado. «La cave» = el sótano, bajo tierra."
       }
     },
     {
       "question": {
+        "fr": "Tu demandes à quelqu'un de mettre le livre dans le tiroir, sans répéter « le livre ». Qu'est-ce que tu dis ?",
         "en": "Put the pronoun in the right place: \"Put it in the drawer!\"",
         "es": "Coloca bien el pronombre: «¡Ponlo en el cajón!»"
       },
@@ -419,6 +414,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Si tu descends, tu ___ le sous-sol. »",
         "en": "Complete: \"Si tu descends, tu ___ le sous-sol.\"",
         "es": "Completa: «Si tu descends, tu ___ le sous-sol.»"
       },
@@ -436,6 +432,7 @@
     },
     {
       "question": {
+        "fr": "Ton ami vit loin et tu penses à lui tout le temps. Qu'est-ce que tu lui écris ?",
         "en": "How do you say \"I miss you\" in French?",
         "es": "¿Cómo se dice «Te echo de menos» en francés?"
       },
@@ -453,6 +450,7 @@
     },
     {
       "question": {
+        "fr": "Quelle phrase décrit une situation passée (imparfait) ?",
         "en": "Which sentence describes a past situation (imparfait)?",
         "es": "¿Qué frase describe una situación pasada (imperfecto)?"
       },
@@ -470,31 +468,25 @@
     },
     {
       "question": {
-        "en": "\"Le rez-de-chaussée\" is…",
-        "es": "«Le rez-de-chaussée» es…"
+        "fr": "Tu habites à l'étage qui est au niveau de la rue. Où habites-tu ?",
+        "en": "You live on the floor that is at street level. Where do you live?",
+        "es": "Vives en la planta que está al nivel de la calle. ¿Dónde vives?"
       },
-      "options": {
-        "en": [
-          "the ground floor",
-          "the first floor up",
-          "the roof",
-          "the garden"
-        ],
-        "es": [
-          "la planta baja",
-          "el primer piso",
-          "el tejado",
-          "el jardín"
-        ]
-      },
+      "options": [
+        "au rez-de-chaussée",
+        "au premier étage",
+        "au sous-sol",
+        "au grenier"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Floors above are \"le premier étage\", \"le deuxième étage\"…",
-        "es": "Las plantas de arriba son «le premier étage», «le deuxième étage»…"
+        "en": "\"Le rez-de-chaussée\" = the ground floor. \"Le premier étage\" is the floor above it.",
+        "es": "«Le rez-de-chaussée» = la planta baja. «Le premier étage» es la de arriba."
       }
     },
     {
       "question": {
+        "fr": "Où est-ce que tu fais la vaisselle ?",
         "en": "Where do you wash the dishes?",
         "es": "¿Dónde friegas los platos?"
       },

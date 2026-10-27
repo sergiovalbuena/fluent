@@ -325,56 +325,43 @@
   "qa": [
     {
       "question": {
-        "en": "What is \"la poupe\"?",
-        "es": "¿Qué es «la poupe»?"
+        "fr": "Sur le bateau, tu veux regarder le sillage, à l'arrière. Où vas-tu ?",
+        "en": "On the boat you want to watch the wake, at the back. Where do you go?",
+        "es": "En el barco quieres mirar la estela, en la parte de atrás. ¿Adónde vas?"
       },
-      "options": {
-        "en": [
-          "the stern (back)",
-          "the bow (front)",
-          "the deck",
-          "the cabin"
-        ],
-        "es": [
-          "la popa (parte trasera)",
-          "la proa (parte delantera)",
-          "la cubierta",
-          "el camarote"
-        ]
-      },
+      "options": [
+        "à la poupe",
+        "à la proue",
+        "au pont inférieur",
+        "à la cabine"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "La proue = the front.",
-        "es": "La proue = la parte delantera."
+        "en": "\"La poupe\" = the stern (back); \"la proue\" = the bow (front).",
+        "es": "«La poupe» = la popa (atrás); «la proue» = la proa (delante)."
       }
     },
     {
       "question": {
-        "en": "\"Lever l'ancre\" means…",
-        "es": "«Lever l'ancre» significa…"
+        "fr": "Le bateau était au port et maintenant il part : on remonte l'ancre. Qu'est-ce que dit le capitaine ?",
+        "en": "The boat was in port and now it's leaving: they raise the anchor. What does the captain say?",
+        "es": "El barco estaba en el puerto y ahora sale: suben el ancla. ¿Qué dice el capitán?"
       },
-      "options": {
-        "en": [
-          "to weigh anchor",
-          "to write with ink",
-          "to raise the flag",
-          "to sink"
-        ],
-        "es": [
-          "levar anclas",
-          "escribir con tinta",
-          "izar la bandera",
-          "hundirse"
-        ]
-      },
+      "options": [
+        "On lève l'ancre !",
+        "On jette l'ancre !",
+        "On coule l'ancre !",
+        "On mange l'ancre !"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "L'ancre (anchor) ≠ l'encre (ink).",
-        "es": "L'ancre (ancla) ≠ l'encre (tinta)."
+        "en": "\"Lever l'ancre\" = to weigh anchor, to set sail. \"Jeter l'ancre\" = to drop anchor.",
+        "es": "«Lever l'ancre» = levar anclas, zarpar. «Jeter l'ancre» = echar el ancla."
       }
     },
     {
       "question": {
+        "fr": "Quelle phrase donne le contexte d'une histoire ?",
         "en": "Which sentence gives the background of a story?",
         "es": "¿Qué frase da el contexto de un relato?"
       },
@@ -392,6 +379,7 @@
     },
     {
       "question": {
+        "fr": "« Les gens eurent peur. » Comment le dit-on à l'oral ?",
         "en": "\"Les gens eurent peur.\" Spoken equivalent?",
         "es": "«Les gens eurent peur.» ¿Equivalente oral?"
       },
@@ -409,6 +397,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Quand le bateau ___ au port, nous descendrons. »",
         "en": "Complete: \"Quand le bateau ___ au port, nous descendrons.\"",
         "es": "Completa: «Quand le bateau ___ au port, nous descendrons.»"
       },
@@ -426,6 +415,7 @@
     },
     {
       "question": {
+        "fr": "Qu'est-ce que tu mets en cas d'urgence en mer ?",
         "en": "What do you wear in an emergency at sea?",
         "es": "¿Qué te pones en una emergencia en el mar?"
       },
@@ -443,6 +433,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Le radar n'enregistre ___ objet. »",
         "en": "Complete: \"Le radar n'enregistre ___ objet.\"",
         "es": "Completa: «Le radar n'enregistre ___ objet.»"
       },
@@ -460,27 +451,20 @@
     },
     {
       "question": {
-        "en": "\"Le mal de mer\" is…",
-        "es": "«Le mal de mer» es…"
+        "fr": "Les vagues sont énormes et tu as envie de vomir. Qu'est-ce que tu as ?",
+        "en": "The waves are huge and you feel like throwing up. What do you have?",
+        "es": "Las olas son enormes y tienes ganas de vomitar. ¿Qué tienes?"
       },
-      "options": {
-        "en": [
-          "seasickness",
-          "a sea monster",
-          "pollution",
-          "a wave"
-        ],
-        "es": [
-          "el mareo",
-          "un monstruo marino",
-          "la contaminación",
-          "una ola"
-        ]
-      },
+      "options": [
+        "J'ai le mal de mer.",
+        "J'ai mal à la mer.",
+        "J'ai la mer malade.",
+        "J'ai mal de la mère."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Avoir le mal de mer.",
-        "es": "Avoir le mal de mer."
+        "en": "\"Avoir le mal de mer\" = to be seasick.",
+        "es": "«Avoir le mal de mer» = estar mareado en el barco."
       }
     }
   ],

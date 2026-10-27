@@ -304,6 +304,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Comment dit-on 70 en France ?",
         "en": "How do you say 70 in France?",
         "es": "¿Cómo se dice 70 en Francia?"
       },
@@ -321,6 +322,7 @@
     },
     {
       "question": {
+        "fr": "Comment dit-on 80 ?",
         "en": "How do you say 80?",
         "es": "¿Cómo se dice 80?"
       },
@@ -338,6 +340,7 @@
     },
     {
       "question": {
+        "fr": "Comment dit-on « 7 × 8 = 56 » ?",
         "en": "How do you say \"7 × 8 = 56\"?",
         "es": "¿Cómo se dice «7 × 8 = 56»?"
       },
@@ -355,31 +358,25 @@
     },
     {
       "question": {
-        "en": "What is \"la moitié\"?",
-        "es": "¿Qué es «la moitié»?"
+        "fr": "Tu partages une pizza en deux parts égales avec un ami. Qu'est-ce que tu manges ?",
+        "en": "You split a pizza into two equal parts with a friend. How much do you eat?",
+        "es": "Compartes una pizza en dos partes iguales con un amigo. ¿Cuánto comes?"
       },
-      "options": {
-        "en": [
-          "half",
-          "a third",
-          "a quarter",
-          "a dozen"
-        ],
-        "es": [
-          "la mitad",
-          "un tercio",
-          "un cuarto",
-          "una docena"
-        ]
-      },
+      "options": [
+        "la moitié",
+        "le quart",
+        "le double",
+        "le tiers"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"La moitié\" = 1/2, \"un tiers\" = 1/3, \"un quart\" = 1/4.",
-        "es": "«La moitié» = 1/2, «un tiers» = 1/3, «un quart» = 1/4."
+        "en": "\"La moitié\" = half. \"Le quart\" = a quarter, \"le tiers\" = a third.",
+        "es": "«La moitié» = la mitad. «Le quart» = un cuarto, «le tiers» = un tercio."
       }
     },
     {
       "question": {
+        "fr": "Tu veux six œufs. Qu'est-ce que tu demandes ?",
         "en": "You want 6 eggs. What do you ask for?",
         "es": "Quieres 6 huevos. ¿Qué pides?"
       },
@@ -397,6 +394,7 @@
     },
     {
       "question": {
+        "fr": "Comment parles-tu d'un anniversaire de 50 ans ?",
         "en": "How do you talk about a 50th birthday?",
         "es": "¿Cómo hablas de un 50.º cumpleaños?"
       },
@@ -414,31 +412,25 @@
     },
     {
       "question": {
-        "en": "What does \"Il est en train de compter\" mean?",
-        "es": "¿Qué significa «Il est en train de compter»?"
+        "fr": "Ne parle pas à Léo maintenant : il compte l'argent de la caisse. Comment le dis-tu ?",
+        "en": "Don't talk to Léo right now: he's counting the money in the till. How do you say it?",
+        "es": "No hables con Léo ahora: está contando el dinero de la caja. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "He is counting (right now).",
-          "He will count.",
-          "He counted.",
-          "He can count."
-        ],
-        "es": [
-          "Está contando (ahora mismo).",
-          "Contará.",
-          "Contó.",
-          "Sabe contar."
-        ]
-      },
+      "options": [
+        "Il est en train de compter.",
+        "Il vient de compter.",
+        "Il va compter.",
+        "Il a compté."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Être en train de\" + infinitive = an action in progress.",
-        "es": "«Être en train de» + infinitivo = una acción en curso."
+        "en": "\"Être en train de\" + infinitive = to be in the middle of doing something.",
+        "es": "«Être en train de» + infinitivo = estar haciendo algo en este momento."
       }
     },
     {
       "question": {
+        "fr": "Quel nombre est bien écrit ?",
         "en": "Which number is written correctly?",
         "es": "¿Qué número está bien escrito?"
       },

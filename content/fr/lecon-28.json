@@ -316,6 +316,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Attendez qu'il ___. »",
         "en": "Complete: \"Attendez qu'il ___.\"",
         "es": "Completa: «Attendez qu'il ___.»"
       },
@@ -333,6 +334,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Partons avant qu'il ___. »",
         "en": "Complete: \"Partons avant qu'il ___.\"",
         "es": "Completa: «Partons avant qu'il ___.»"
       },
@@ -350,6 +352,7 @@
     },
     {
       "question": {
+        "fr": "Quel auxiliaire ? « Il ___ venu hier. »",
         "en": "Which auxiliary? \"Il ___ venu hier.\"",
         "es": "¿Qué auxiliar? «Il ___ venu hier.»"
       },
@@ -367,6 +370,7 @@
     },
     {
       "question": {
+        "fr": "Discours indirect : « Puis-je entrer ? » → Il m'a demandé ___ il pouvait entrer.",
         "en": "Reported question: \"Puis-je entrer ?\" → Il m'a demandé ___ il pouvait entrer.",
         "es": "Pregunta indirecta: «Puis-je entrer ?» → Il m'a demandé ___ il pouvait entrer."
       },
@@ -384,31 +388,25 @@
     },
     {
       "question": {
-        "en": "\"Fais comme chez toi.\" Meaning?",
-        "es": "«Fais comme chez toi.» ¿Significado?"
+        "fr": "Un ami arrive chez toi pour la première fois. Tu veux qu'il se sente à l'aise. Qu'est-ce que tu lui dis ?",
+        "en": "A friend comes to your place for the first time. You want him to feel comfortable. What do you tell him?",
+        "es": "Un amigo viene a tu casa por primera vez. Quieres que se sienta cómodo. ¿Qué le dices?"
       },
-      "options": {
-        "en": [
-          "Make yourself at home.",
-          "Go home.",
-          "Do it at your place.",
-          "Your house is nice."
-        ],
-        "es": [
-          "Estás en tu casa.",
-          "Vete a casa.",
-          "Hazlo en tu casa.",
-          "Tu casa es bonita."
-        ]
-      },
+      "options": [
+        "Fais comme chez toi.",
+        "Fais comme chez moi.",
+        "Rentre chez toi.",
+        "Va chez toi."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "A warm welcome.",
-        "es": "Una bienvenida cálida."
+        "en": "\"Fais comme chez toi\" = make yourself at home.",
+        "es": "«Fais comme chez toi» = estás en tu casa."
       }
     },
     {
       "question": {
+        "fr": "À la poste, il y a beaucoup de monde devant toi. Qu'est-ce que tu dois faire ?",
         "en": "How do you say \"to stand in line\"?",
         "es": "¿Cómo se dice «hacer cola»?"
       },
@@ -426,6 +424,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il est rare qu'une grippe ___ si longtemps. »",
         "en": "Complete: \"Il est rare qu'une grippe ___ si longtemps.\"",
         "es": "Completa: «Il est rare qu'une grippe ___ si longtemps.»"
       },
@@ -443,27 +442,20 @@
     },
     {
       "question": {
-        "en": "\"Rendre visite à\" is used for…",
-        "es": "«Rendre visite à» se usa para…"
+        "fr": "Dimanche, tu vas voir ta grand-mère chez elle. Comment le dis-tu ?",
+        "en": "On Sunday you're going to see your grandmother at her place. How do you say it?",
+        "es": "El domingo vas a ver a tu abuela a su casa. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "visiting a person",
-          "visiting a museum",
-          "giving something back",
-          "making an appointment"
-        ],
-        "es": [
-          "visitar a una persona",
-          "visitar un museo",
-          "devolver algo",
-          "pedir cita"
-        ]
-      },
+      "options": [
+        "Je vais rendre visite à ma grand-mère.",
+        "Je vais visiter ma grand-mère.",
+        "Je vais rendre ma grand-mère.",
+        "Je vais visiter à ma grand-mère."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "For places, use \"visiter\": visiter un musée.",
-        "es": "Para lugares se usa «visiter»: visiter un musée."
+        "en": "\"Rendre visite à\" is for people; \"visiter\" is for places (a museum, a city).",
+        "es": "«Rendre visite à» es para personas; «visiter», para lugares (un museo, una ciudad)."
       }
     }
   ],

@@ -306,6 +306,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quelle phrase est correcte en français standard ?",
         "en": "Which is correct in standard French?",
         "es": "¿Cuál es correcta en francés estándar?"
       },
@@ -323,6 +324,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il t'appellera après qu'il ___ le colis. »",
         "en": "Complete: \"Il t'appellera après qu'il ___ le colis.\"",
         "es": "Completa: «Il t'appellera après qu'il ___ le colis.»"
       },
@@ -340,6 +342,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Pendant que je ___, le facteur a sonné. »",
         "en": "Complete: \"Pendant que je ___, le facteur a sonné.\"",
         "es": "Completa: «Pendant que je ___, le facteur a sonné.»"
       },
@@ -357,6 +360,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Assure-toi que l'adresse ___ correcte. »",
         "en": "Complete: \"Assure-toi que l'adresse ___ correcte.\"",
         "es": "Completa: «Assure-toi que l'adresse ___ correcte.»"
       },
@@ -374,56 +378,43 @@
     },
     {
       "question": {
-        "en": "What is \"le destinataire\"?",
-        "es": "¿Qué es «le destinataire»?"
+        "fr": "Tu envoies une lettre à ta grand-mère. Qui est-elle pour cette lettre ?",
+        "en": "You're sending a letter to your grandmother. Who is she, for this letter?",
+        "es": "Le envías una carta a tu abuela. ¿Qué es ella para esta carta?"
       },
-      "options": {
-        "en": [
-          "the recipient",
-          "the sender",
-          "the destination city",
-          "the stamp"
-        ],
-        "es": [
-          "el destinatario",
-          "el remitente",
-          "la ciudad de destino",
-          "el sello"
-        ]
-      },
+      "options": [
+        "la destinataire",
+        "l'expéditrice",
+        "la factrice",
+        "la propriétaire"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "L'expéditeur = the sender.",
-        "es": "L'expéditeur = el remitente."
+        "en": "\"Le / la destinataire\" = the recipient; \"l'expéditeur / l'expéditrice\" = the sender.",
+        "es": "«Le / la destinataire» = el / la destinatario/a; «l'expéditeur / l'expéditrice» = el / la remitente."
       }
     },
     {
       "question": {
-        "en": "\"Le colis est en train d'être livré.\" Meaning?",
-        "es": "«Le colis est en train d'être livré.» ¿Significado?"
+        "fr": "Tu suis ton colis en ligne : le livreur est en route vers chez toi en ce moment. Qu'est-ce qui est écrit ?",
+        "en": "You're tracking your parcel online: the courier is on the way to you right now. What does it say?",
+        "es": "Sigues tu paquete en internet: el repartidor va de camino a tu casa ahora mismo. ¿Qué pone?"
       },
-      "options": {
-        "en": [
-          "The parcel is being delivered.",
-          "The parcel was delivered.",
-          "The parcel will be delivered.",
-          "The parcel is a book."
-        ],
-        "es": [
-          "El paquete se está entregando.",
-          "El paquete fue entregado.",
-          "El paquete será entregado.",
-          "El paquete es un libro."
-        ]
-      },
+      "options": [
+        "Le colis est en train d'être livré.",
+        "Le colis a été livré.",
+        "Le colis sera envoyé.",
+        "Le colis vient d'être commandé."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Passive in progress.",
-        "es": "Pasiva en curso."
+        "en": "\"Être en train d'être\" + past participle = to be being done right now.",
+        "es": "«Être en train d'être» + participio = estar siendo hecho en este momento."
       }
     },
     {
       "question": {
+        "fr": "Qu'est-ce que tu colles sur une enveloppe pour payer l'envoi ?",
         "en": "What do you put on an envelope to pay for postage?",
         "es": "¿Qué pones en un sobre para pagar el envío?"
       },
@@ -441,27 +432,20 @@
     },
     {
       "question": {
-        "en": "\"Le facteur frappa à la porte.\" Which tense?",
-        "es": "«Le facteur frappa à la porte.» ¿Qué tiempo?"
+        "fr": "Dans un conte : « Le facteur frappa à la porte. » À quel temps est « frappa » ?",
+        "en": "In a tale: \"Le facteur frappa à la porte.\" Which tense is \"frappa\"?",
+        "es": "En un cuento: «Le facteur frappa à la porte.» ¿En qué tiempo está «frappa»?"
       },
-      "options": {
-        "en": [
-          "passé simple",
-          "imparfait",
-          "passé composé",
-          "présent"
-        ],
-        "es": [
-          "passé simple",
-          "imperfecto",
-          "passé composé",
-          "presente"
-        ]
-      },
+      "options": [
+        "au passé simple",
+        "au passé composé",
+        "à l'imparfait",
+        "au présent"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Spoken: \"a frappé\".",
-        "es": "Oral: «a frappé»."
+        "en": "\"Frappa\" is the passé simple, used in written stories.",
+        "es": "«Frappa» es passé simple, el que se usa en los relatos escritos."
       }
     }
   ],

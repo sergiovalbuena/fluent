@@ -320,6 +320,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Quand tu reviendras, j'___ les cadeaux. » (acheter)",
         "en": "Complete: \"Quand tu reviendras, j'___ les cadeaux.\" (acheter)",
         "es": "Completa: «Quand tu reviendras, j'___ les cadeaux.» (acheter)"
       },
@@ -337,31 +338,25 @@
     },
     {
       "question": {
-        "en": "\"Elle aura oublié son portefeuille.\" Here the futur antérieur expresses…",
-        "es": "«Elle aura oublié son portefeuille.» Aquí el futur antérieur expresa…"
+        "fr": "Ta sœur ne paie pas à la caisse. Tu supposes qu'elle a oublié son portefeuille. Qu'est-ce que tu dis ?",
+        "en": "Your sister isn't paying at the till. You assume she's forgotten her wallet. What do you say?",
+        "es": "Tu hermana no paga en la caja. Supones que se ha olvidado la cartera. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "a probable assumption",
-          "an order",
-          "a wish",
-          "a habit"
-        ],
-        "es": [
-          "una suposición probable",
-          "una orden",
-          "un deseo",
-          "un hábito"
-        ]
-      },
+      "options": [
+        "Elle aura oublié son portefeuille.",
+        "Elle oubliera son portefeuille.",
+        "Elle oubliait son portefeuille.",
+        "Elle va oublier son portefeuille."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"She must have forgotten her wallet.\"",
-        "es": "«Se habrá olvidado la cartera.»"
+        "en": "The futur antérieur can express a probable assumption: \"elle aura oublié\" = she must have forgotten.",
+        "es": "El futur antérieur puede expresar una suposición: «elle aura oublié» = se le habrá olvidado."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Tu ___ le cadeau si tu avais cherché ailleurs. »",
         "en": "Complete: \"Tu ___ le cadeau si tu avais cherché ailleurs.\"",
         "es": "Completa: «Tu ___ le cadeau si tu avais cherché ailleurs.»"
       },
@@ -379,6 +374,7 @@
     },
     {
       "question": {
+        "fr": "Dans un magasin de chaussures, qu'est-ce que le vendeur te demande ?",
         "en": "What do you ask for shoes?",
         "es": "¿Qué preguntas para los zapatos?"
       },
@@ -396,6 +392,7 @@
     },
     {
       "question": {
+        "fr": "Qu'est-ce qui arrive à un pull en laine lavé trop chaud ?",
         "en": "What happens to a wool sweater washed too hot?",
         "es": "¿Qué le pasa a un jersey de lana lavado demasiado caliente?"
       },
@@ -413,6 +410,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il aura vendu la robe avant que tu ___ l'acheter. »",
         "en": "Complete: \"Il aura vendu la robe avant que tu ___ l'acheter.\"",
         "es": "Completa: «Il aura vendu la robe avant que tu ___ l'acheter.»"
       },
@@ -430,31 +428,25 @@
     },
     {
       "question": {
-        "en": "\"Faire du lèche-vitrine\" means…",
-        "es": "«Faire du lèche-vitrine» significa…"
+        "fr": "Samedi, tu te promènes en regardant les vitrines des magasins, sans rien acheter. Comment le dis-tu ?",
+        "en": "On Saturday you stroll around looking at shop windows without buying anything. How do you say it?",
+        "es": "El sábado paseas mirando los escaparates, sin comprar nada. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "to window-shop",
-          "to clean windows",
-          "to buy a lot",
-          "to lick ice cream"
-        ],
-        "es": [
-          "mirar escaparates",
-          "limpiar ventanas",
-          "comprar mucho",
-          "chupar un helado"
-        ]
-      },
+      "options": [
+        "Je fais du lèche-vitrine.",
+        "Je fais les vitres.",
+        "Je fais des courses.",
+        "Je fais la vitrine."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Literally \"to lick the windows\"!",
-        "es": "¡Literalmente «lamer los escaparates»!"
+        "en": "\"Faire du lèche-vitrine\" = to go window-shopping (literally, window-licking).",
+        "es": "«Faire du lèche-vitrine» = mirar escaparates (literalmente, lamer escaparates)."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Ce pantalon ne lui ___ pas. » (il ne sera pas à sa taille)",
         "en": "Complete: \"Ce pantalon ne lui ___ pas.\" (fit him)",
         "es": "Completa: «Ce pantalon ne lui ___ pas.» (le quedará bien)"
       },

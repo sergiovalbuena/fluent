@@ -310,6 +310,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Quel est le féminin de « roi » ?",
         "en": "What is the feminine of \"roi\"?",
         "es": "¿Cuál es el femenino de «roi»?"
       },
@@ -327,6 +328,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le féminin de « veuf » ?",
         "en": "What is the feminine of \"veuf\"?",
         "es": "¿Cuál es el femenino de «veuf»?"
       },
@@ -344,6 +346,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le féminin de « dieu » ?",
         "en": "What is the feminine of \"dieu\"?",
         "es": "¿Cuál es el femenino de «dieu»?"
       },
@@ -361,6 +364,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il faut arroser les plantes une fois ___ les deux jours. »",
         "en": "Complete: \"Il faut arroser les plantes une fois ___ les deux jours.\"",
         "es": "Completa: «Il faut arroser les plantes une fois ___ les deux jours.»"
       },
@@ -378,6 +382,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « J'espère que nous ___ partir bientôt. »",
         "en": "Complete: \"J'espère que nous ___ partir bientôt.\"",
         "es": "Completa: «J'espère que nous ___ partir bientôt.»"
       },
@@ -395,6 +400,7 @@
     },
     {
       "question": {
+        "fr": "Comment exprimes-tu un souhait ?",
         "en": "How do you express a wish?",
         "es": "¿Cómo expresas un deseo?"
       },
@@ -412,6 +418,7 @@
     },
     {
       "question": {
+        "fr": "Quel est le féminin de « coq » ?",
         "en": "What is the feminine of \"coq\"?",
         "es": "¿Cuál es el femenino de «coq»?"
       },
@@ -429,6 +436,7 @@
     },
     {
       "question": {
+        "fr": "Quelle forme est moderne pour une femme médecin ?",
         "en": "Which form is modern for a female doctor?",
         "es": "¿Qué forma es la actual para una doctora?"
       },

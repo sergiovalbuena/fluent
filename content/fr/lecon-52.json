@@ -305,6 +305,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « ___ enfant est très sage. »",
         "en": "Complete: \"___ enfant est très sage.\"",
         "es": "Completa: «___ enfant est très sage.»"
       },
@@ -322,6 +323,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « ___ dames attendent le train. »",
         "en": "Complete: \"___ dames attendent le train.\"",
         "es": "Completa: «___ dames attendent le train.»"
       },
@@ -339,6 +341,7 @@
     },
     {
       "question": {
+        "fr": "Où attends-tu le train ?",
         "en": "Where do you wait for the train?",
         "es": "¿Dónde esperas el tren?"
       },
@@ -356,6 +359,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « C'est la femme que j'avais ___ sur le quai. »",
         "en": "Complete: \"C'est la femme que j'avais ___ sur le quai.\"",
         "es": "Completa: «C'est la femme que j'avais ___ sur le quai.»"
       },
@@ -373,6 +377,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Le TGV est le train ___ rapide de France. »",
         "en": "Complete: \"Le TGV est le train ___ rapide de France.\"",
         "es": "Completa: «Le TGV est le train ___ rapide de France.»"
       },
@@ -390,31 +395,25 @@
     },
     {
       "question": {
-        "en": "\"Les objets trouvés\" is…",
-        "es": "«Les objets trouvés» es…"
+        "fr": "Tu as oublié ton parapluie dans le train. Où vas-tu le chercher à la gare ?",
+        "en": "You left your umbrella on the train. Where do you go to look for it at the station?",
+        "es": "Te dejaste el paraguas en el tren. ¿Adónde vas a buscarlo en la estación?"
       },
-      "options": {
-        "en": [
-          "lost and found",
-          "a shop",
-          "the ticket office",
-          "the waiting room"
-        ],
-        "es": [
-          "objetos perdidos",
-          "una tienda",
-          "la taquilla",
-          "la sala de espera"
-        ]
-      },
+      "options": [
+        "aux objets trouvés",
+        "aux objets perdus",
+        "à la consigne",
+        "au guichet des billets"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Where you look for lost items.",
-        "es": "Donde buscas cosas perdidas."
+        "en": "\"Les objets trouvés\" = lost property (literally \"found objects\").",
+        "es": "«Les objets trouvés» = objetos perdidos (literalmente, «objetos encontrados»)."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Il a distribué des couvertures afin que les gens ___. »",
         "en": "Complete: \"Il a distribué des couvertures afin que les gens ___.\"",
         "es": "Completa: «Il a distribué des couvertures afin que les gens ___.»"
       },
@@ -432,27 +431,20 @@
     },
     {
       "question": {
-        "en": "\"Le train partit tard.\" Which tense?",
-        "es": "«Le train partit tard.» ¿Qué tiempo?"
+        "fr": "Dans un roman : « Le train partit tard. » À quel temps est « partit » ?",
+        "en": "In a novel: \"Le train partit tard.\" Which tense is \"partit\"?",
+        "es": "En una novela: «Le train partit tard.» ¿En qué tiempo está «partit»?"
       },
-      "options": {
-        "en": [
-          "passé simple",
-          "présent",
-          "imparfait",
-          "futur"
-        ],
-        "es": [
-          "passé simple",
-          "presente",
-          "imperfecto",
-          "futuro"
-        ]
-      },
+      "options": [
+        "au passé simple",
+        "au présent",
+        "à l'imparfait",
+        "au passé composé"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Spoken: \"est parti\".",
-        "es": "Oral: «est parti»."
+        "en": "\"Partit\" is the passé simple of partir; in speech: \"le train est parti\".",
+        "es": "«Partit» es el passé simple de partir; al hablar: «le train est parti»."
       }
     }
   ],

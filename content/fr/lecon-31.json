@@ -341,6 +341,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Il faut que je ___ mes valises. »",
         "en": "Complete: \"Il faut que je ___ mes valises.\"",
         "es": "Completa: «Il faut que je ___ mes valises.»"
       },
@@ -358,6 +359,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il faut que je ___ demain matin. » (partir)",
         "en": "Complete: \"Il faut que je ___ demain matin.\" (partir)",
         "es": "Completa: «Il faut que je ___ demain matin.» (partir)"
       },
@@ -375,56 +377,43 @@
     },
     {
       "question": {
-        "en": "\"Ce n'est qu'un voyage d'affaires.\" Meaning?",
-        "es": "«Ce n'est qu'un voyage d'affaires.» ¿Significado?"
+        "fr": "Ta collègue pense que tu pars en vacances, mais tu vas juste travailler trois jours à Lyon. Qu'est-ce que tu dis ?",
+        "en": "Your colleague thinks you're going on holiday, but you're just working in Lyon for three days. What do you say?",
+        "es": "Tu compañera cree que te vas de vacaciones, pero solo vas a trabajar tres días a Lyon. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "It's only a business trip.",
-          "It's not a business trip.",
-          "It's a long business trip.",
-          "It's my first business trip."
-        ],
-        "es": [
-          "Solo es un viaje de negocios.",
-          "No es un viaje de negocios.",
-          "Es un viaje de negocios largo.",
-          "Es mi primer viaje de negocios."
-        ]
-      },
+      "options": [
+        "Ce n'est qu'un voyage d'affaires.",
+        "Ce n'est pas un voyage d'affaires.",
+        "Ce n'est plus un voyage d'affaires.",
+        "C'est que un voyage d'affaires."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Ne … que\" = only.",
-        "es": "«Ne … que» = solo."
+        "en": "\"Ne… que\" = only: \"ce n'est qu'un voyage d'affaires\" = it's only a business trip.",
+        "es": "«Ne… que» = solo: «ce n'est qu'un voyage d'affaires» = solo es un viaje de negocios."
       }
     },
     {
       "question": {
-        "en": "What is \"un voyage de noces\"?",
-        "es": "¿Qué es «un voyage de noces»?"
+        "fr": "Juste après leur mariage, Paul et Léa partent deux semaines à Bali. Comment s'appelle ce voyage ?",
+        "en": "Right after their wedding, Paul and Léa are going to Bali for two weeks. What is this trip called?",
+        "es": "Justo después de su boda, Paul y Léa se van dos semanas a Bali. ¿Cómo se llama ese viaje?"
       },
-      "options": {
-        "en": [
-          "a honeymoon",
-          "a night trip",
-          "a business trip",
-          "a school trip"
-        ],
-        "es": [
-          "una luna de miel",
-          "un viaje nocturno",
-          "un viaje de negocios",
-          "un viaje escolar"
-        ]
-      },
+      "options": [
+        "un voyage de noces",
+        "un voyage d'affaires",
+        "un voyage organisé",
+        "un voyage scolaire"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Les noces = the wedding.",
-        "es": "Les noces = la boda."
+        "en": "\"Un voyage de noces\" = a honeymoon (\"les noces\" = the wedding).",
+        "es": "«Un voyage de noces» = un viaje de novios, una luna de miel."
       }
     },
     {
       "question": {
+        "fr": "Ton ami part à l'aéroport. Comment lui rappelles-tu de prendre son passeport ?",
         "en": "How do you say \"Don't forget your passport!\"?",
         "es": "¿Cómo se dice «¡No olvides tu pasaporte!»?"
       },
@@ -442,31 +431,25 @@
     },
     {
       "question": {
-        "en": "\"Petit-déjeuner compris\" means…",
-        "es": "«Petit-déjeuner compris» significa…"
+        "fr": "À l'hôtel, tu ne paies pas le petit-déjeuner en plus : il est dans le prix. Qu'est-ce qui est écrit ?",
+        "en": "At the hotel you don't pay extra for breakfast: it's in the price. What does it say?",
+        "es": "En el hotel no pagas el desayuno aparte: está incluido en el precio. ¿Qué pone?"
       },
-      "options": {
-        "en": [
-          "breakfast included",
-          "breakfast understood",
-          "breakfast extra",
-          "no breakfast"
-        ],
-        "es": [
-          "desayuno incluido",
-          "desayuno entendido",
-          "desayuno aparte",
-          "sin desayuno"
-        ]
-      },
+      "options": [
+        "Petit-déjeuner compris",
+        "Petit-déjeuner en supplément",
+        "Petit-déjeuner payant",
+        "Petit-déjeuner fermé"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "\"Compris\" = included here.",
-        "es": "Aquí «compris» = incluido."
+        "en": "\"Compris\" = included. \"En supplément\" = extra.",
+        "es": "«Compris» = incluido. «En supplément» = aparte, con suplemento."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Nous emportons le ___ de choses possible. »",
         "en": "Complete: \"Nous emportons le ___ de choses possible.\"",
         "es": "Completa: «Nous emportons le ___ de choses possible.»"
       },
@@ -484,27 +467,20 @@
     },
     {
       "question": {
-        "en": "\"À l'étranger\" means…",
-        "es": "«À l'étranger» significa…"
+        "fr": "Tu vas vivre deux ans dans un autre pays que le tien. Comment le dis-tu ?",
+        "en": "You're going to live in another country for two years. How do you say it?",
+        "es": "Vas a vivir dos años en otro país distinto del tuyo. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "abroad",
-          "to a stranger",
-          "strangely",
-          "at the border"
-        ],
-        "es": [
-          "en el extranjero",
-          "a un desconocido",
-          "de forma extraña",
-          "en la frontera"
-        ]
-      },
+      "options": [
+        "Je vais vivre à l'étranger.",
+        "Je vais vivre à l'étrange.",
+        "Je vais vivre en étranger.",
+        "Je vais vivre aux étrangers."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Vivre à l'étranger = to live abroad.",
-        "es": "Vivre à l'étranger = vivir en el extranjero."
+        "en": "\"À l'étranger\" = abroad.",
+        "es": "«À l'étranger» = en el extranjero."
       }
     }
   ],

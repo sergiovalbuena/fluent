@@ -330,6 +330,7 @@
   "qa": [
     {
       "question": {
+        "fr": "Complète : « Quand tu arriveras, j'___ le dîner. » (finir)",
         "en": "Complete: \"Quand tu arriveras, j'___ le dîner.\" (finir)",
         "es": "Completa: «Quand tu arriveras, j'___ le dîner.» (finir)"
       },
@@ -347,56 +348,43 @@
     },
     {
       "question": {
-        "en": "Which tense is \"elle sera partie\"?",
-        "es": "¿Qué tiempo es «elle sera partie»?"
+        "fr": "Dans « Quand tu arriveras, elle sera partie », à quel temps est « sera partie » ?",
+        "en": "In \"Quand tu arriveras, elle sera partie\", which tense is \"sera partie\"?",
+        "es": "En «Quand tu arriveras, elle sera partie», ¿en qué tiempo está «sera partie»?"
       },
-      "options": {
-        "en": [
-          "future perfect",
-          "simple future",
-          "conditional",
-          "past perfect"
-        ],
-        "es": [
-          "futuro compuesto",
-          "futuro simple",
-          "condicional",
-          "pluscuamperfecto"
-        ]
-      },
+      "options": [
+        "au futur antérieur",
+        "au futur simple",
+        "au plus-que-parfait",
+        "au passé composé"
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Futur of \"être\" + past participle.",
-        "es": "Futuro de «être» + participio."
+        "en": "Futur antérieur: an action that will be finished before another future moment.",
+        "es": "Futur antérieur: una acción que estará terminada antes de otro momento futuro."
       }
     },
     {
       "question": {
-        "en": "\"Il sera en train de pleuvoir.\" Meaning?",
-        "es": "«Il sera en train de pleuvoir.» ¿Significado?"
+        "fr": "Demain, à l'heure de la promenade, la météo prévoit de la pluie. Qu'est-ce que tu dis ?",
+        "en": "Tomorrow, at the time of the walk, the forecast says rain. What do you say?",
+        "es": "Mañana, a la hora del paseo, el pronóstico anuncia lluvia. ¿Qué dices?"
       },
-      "options": {
-        "en": [
-          "It will be raining.",
-          "It was raining.",
-          "It has rained.",
-          "It is going to stop raining."
-        ],
-        "es": [
-          "Estará lloviendo.",
-          "Estaba lloviendo.",
-          "Ha llovido.",
-          "Va a dejar de llover."
-        ]
-      },
+      "options": [
+        "Il sera en train de pleuvoir.",
+        "Il était en train de pleuvoir.",
+        "Il vient de pleuvoir.",
+        "Il a plu."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Être en train de in the future.",
-        "es": "«Être en train de» en futuro."
+        "en": "\"Être en train de\" in the future = will be doing something at that moment.",
+        "es": "«Être en train de» en futuro = estará pasando en ese momento."
       }
     },
     {
       "question": {
+        "fr": "Complète : « Je ___ présenterai. » (elle, à eux)",
         "en": "Complete: \"Je ___ présenterai.\" (her, to them)",
         "es": "Completa: «Je ___ présenterai.» (a ella, a ellos)"
       },
@@ -414,6 +402,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il sortira les gâteaux dès qu'ils ___ prêts. »",
         "en": "Complete: \"Il sortira les gâteaux dès qu'ils ___ prêts.\"",
         "es": "Completa: «Il sortira les gâteaux dès qu'ils ___ prêts.»"
       },
@@ -431,6 +420,7 @@
     },
     {
       "question": {
+        "fr": "Complète : « Il se peut que personne ne te ___. »",
         "en": "Complete: \"Il se peut que personne ne te ___.\"",
         "es": "Completa: «Il se peut que personne ne te ___.»"
       },
@@ -448,31 +438,25 @@
     },
     {
       "question": {
-        "en": "\"Se plier en deux\" means…",
-        "es": "«Se plier en deux» significa…"
+        "fr": "La blague est si drôle que ton ami rit très fort, plié en deux. Comment le dis-tu ?",
+        "en": "The joke is so funny your friend laughs really hard, doubled over. How do you say it?",
+        "es": "El chiste es tan gracioso que tu amigo se ríe a carcajadas, doblado. ¿Cómo lo dices?"
       },
-      "options": {
-        "en": [
-          "to double up with laughter",
-          "to fold a paper",
-          "to bend down to pick something up",
-          "to split in two"
-        ],
-        "es": [
-          "partirse de risa",
-          "doblar un papel",
-          "agacharse a recoger algo",
-          "dividirse en dos"
-        ]
-      },
+      "options": [
+        "Il se plie en deux de rire.",
+        "Il se plie en deux de douleur.",
+        "Il plie ses vêtements.",
+        "Il se met en quatre."
+      ],
       "correct": 0,
       "explanation": {
-        "en": "Often \"se plier en deux de rire\".",
-        "es": "A menudo «se plier en deux de rire»."
+        "en": "\"Se plier en deux (de rire)\" = to double up with laughter.",
+        "es": "«Se plier en deux (de rire)» = partirse de risa."
       }
     },
     {
       "question": {
+        "fr": "Quel verbe veut dire « emmener quelqu'un quelque part » ?",
         "en": "Which verb means \"to take someone somewhere\"?",
         "es": "¿Qué verbo significa «llevar a alguien a un sitio»?"
       },
