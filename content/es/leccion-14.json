@@ -1,0 +1,84 @@
+{
+  "lesson": 14,
+  "slug": "leccion-14",
+  "icon": "🐾",
+  "title": { "es": "Los animales", "en": "Animals" },
+  "grammar": [
+    { "structure": "plural: -z → -ces", "example": "un pez → dos peces · una nariz → dos narices", "en": "Nouns ending in -z change to -ces in the plural." },
+    { "structure": "más / menos … que", "example": "El perro es más grande que el gato.", "en": "Comparisons: más + adjective + que (more… than), menos + adjective + que (less… than)." },
+    { "structure": "tan … como", "example": "Mi gato es tan flojo como yo.", "en": "Equality: tan + adjective + como = as… as." },
+    { "structure": "muy / mucho", "example": "Es muy rápido. Corre mucho. Tiene muchos perros.", "en": "«Muy» goes with adjectives and adverbs; «mucho» with verbs and nouns (and agrees with nouns)." },
+    { "structure": "imperfecto: tenía", "example": "Cuando era niña, tenía un conejo.", "en": "The imperfect describes past habits and situations: tenía = I used to have / I had." }
+  ],
+  "tips": [
+    { "en": "«Mascota» = pet. People in Latin America often call their dog «perrito» even when it's huge: the diminutive -ito shows affection." },
+    { "en": "«Pez» is a live fish; «pescado» is fish as food. ¡No es lo mismo!" },
+    { "en": "Many animal expressions: «tener hambre de lobo» (be starving), «ser un gallina» (be a chicken / coward), «estar como pez en el agua» (feel at home)." },
+    { "en": "Animal sounds differ: dogs say «guau guau», cats «miau», roosters «quiquiriquí» and frogs «croac»." },
+    { "en": "In Spain «guay» means cool; in Mexico «chido», in Colombia «chévere», in Argentina «copado»: perfect for describing a cute pet." }
+  ],
+  "vocabulary": [
+    { "word": "el perro", "en": "the dog" },
+    { "word": "el gato", "en": "the cat" },
+    { "word": "el pájaro", "en": "the bird" },
+    { "word": "el pez", "en": "the fish (alive)" },
+    { "word": "el caballo", "en": "the horse" },
+    { "word": "la vaca", "en": "the cow" },
+    { "word": "el cerdo", "en": "the pig" },
+    { "word": "la gallina", "en": "the hen" },
+    { "word": "el conejo", "en": "the rabbit" },
+    { "word": "el ratón", "en": "the mouse" },
+    { "word": "la serpiente", "en": "the snake" },
+    { "word": "el león", "en": "the lion" },
+    { "word": "el elefante", "en": "the elephant" },
+    { "word": "la ballena", "en": "the whale" },
+    { "word": "el cachorro", "en": "the puppy" },
+    { "word": "la mascota", "en": "the pet" }
+  ],
+  "phrases": [
+    { "phrase": "¿Tienes mascotas?", "en": "Do you have pets?" },
+    { "phrase": "Tengo un perro y dos gatos.", "en": "I have a dog and two cats." },
+    { "phrase": "Saco a pasear al perro.", "en": "I take the dog for a walk." },
+    { "phrase": "Me dan miedo las serpientes.", "en": "Snakes scare me." },
+    { "phrase": "El perro es más grande que el gato.", "en": "The dog is bigger than the cat." },
+    { "phrase": "Tengo un hambre de lobo.", "en": "I'm starving." },
+    { "phrase": "Cuando era niño, tenía un conejo.", "en": "When I was a kid, I had a rabbit." },
+    { "phrase": "Monto a caballo los domingos.", "en": "I ride horses on Sundays." },
+    { "phrase": "No le des de comer al perro.", "en": "Don't feed the dog." },
+    { "phrase": "Es un animal en peligro de extinción.", "en": "It's an endangered animal." },
+    { "phrase": "Me siento como pez en el agua.", "en": "I feel right at home." },
+    { "phrase": "¡Qué perrito tan bonito!", "en": "What a cute little dog!" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Cuál es el plural de «pez»?", "en": "What is the plural of «pez»?" }, "options": ["peces", "pezes", "pezs", "pecez"], "correct": 0, "explanation": { "en": "-z → -ces: pez → peces." } },
+    { "question": { "es": "¿Cuál es el animal más grande del mundo?", "en": "Which is the largest animal in the world?" }, "options": ["la ballena azul", "el elefante", "la jirafa", "el tiburón"], "correct": 0, "explanation": { "en": "The blue whale is the largest animal that has ever lived." } },
+    { "question": { "es": "Completa: «El elefante es ___ grande ___ el caballo.»", "en": "Complete: «El elefante es ___ grande ___ el caballo.»" }, "options": ["más … que", "más … de", "tan … que", "muy … como"], "correct": 0, "explanation": { "en": "Más + adjective + que = bigger than." } },
+    { "question": { "es": "Los sábados montas a caballo en un club. ¿Cómo lo dices?", "en": "On Saturdays you go horse riding at a club. How do you say it?" }, "options": ["Monto a caballo los sábados.", "Juego al caballo los sábados.", "Hago el caballo los sábados.", "Voy en caballos el sábado."], "correct": 0, "explanation": { "en": "«Montar a caballo» = to ride a horse." } },
+    { "question": { "es": "¿Qué animal es un mamífero?", "en": "Which animal is a mammal?" }, "options": ["el delfín", "el tiburón", "el cocodrilo", "el águila"], "correct": 0, "explanation": { "en": "Dolphins are mammals; sharks are fish." } },
+    { "question": { "es": "No comiste nada desde la mañana y son las tres de la tarde. ¿Qué dices?", "en": "You haven't eaten anything since morning and it's 3 p.m. What do you say?" }, "options": ["¡Tengo un hambre de lobo!", "¡Soy un lobo!", "¡Tengo un lobo!", "¡Estoy lobo!"], "correct": 0, "explanation": { "en": "«Tener un hambre de lobo» = to be starving." } },
+    { "question": { "es": "Completa: «Cuando era pequeño, ___ un perro.»", "en": "Complete: «Cuando era pequeño, ___ un perro.»" }, "options": ["tenía", "tuve ayer", "tendré", "tendría"], "correct": 0, "explanation": { "en": "A past situation uses the imperfect: tenía." } },
+    { "question": { "es": "Tu perra acaba de tener bebés. ¿Cómo se llama cada bebé?", "en": "Your dog just had babies. What is each baby called?" }, "options": ["un cachorro", "un gatito", "un pollito", "un potro"], "correct": 0, "explanation": { "en": "«Cachorro» = puppy. «Gatito» = kitten, «potro» = foal." } }
+  ],
+  "story": {
+    "title": "Un perrito en la oficina",
+    "text": "Un lunes, Pablo llega a la oficina con una caja. Dentro hay un cachorro blanco y café. «Lo encontré en la calle. Tenía mucha hambre y frío», explica. Todos quieren cargarlo. «¡Qué perrito tan bonito!», dice Valeria. Pero hay un problema: Pablo vive en un departamento muy pequeño y ya tiene dos gatos. Emily piensa un momento. Cuando era niña, en Chicago, tenía un perro que se llamaba Max. Lo extraña mucho. «Yo lo adopto», dice. Diego ríe: «Tu departamento es más pequeño que el de Pablo.» «Sí, pero no tengo gatos», responde Emily. Esa noche, el cachorro duerme debajo de su cama. Lo llama Taco.",
+    "en": "One Monday, Pablo arrives at the office with a box. Inside there's a white and brown puppy. «I found him in the street. He was very hungry and cold», he explains. Everyone wants to hold him. «What a cute little dog!» says Valeria. But there's a problem: Pablo lives in a very small apartment and already has two cats. Emily thinks for a moment. When she was a girl, in Chicago, she had a dog called Max. She misses him a lot. «I'll adopt him», she says. Diego laughs: «Your apartment is smaller than Pablo's.» «Yes, but I don't have cats», Emily answers. That night, the puppy sleeps under her bed. She names him Taco.",
+    "highlighted_words": ["cachorro", "Qué perrito tan bonito", "gatos", "tenía un perro", "más pequeño que", "debajo de su cama"]
+  },
+  "arrange": [
+    { "sentence": "Tengo un perro y dos gatos", "en": "I have a dog and two cats." },
+    { "sentence": "El caballo es más rápido que la vaca", "en": "The horse is faster than the cow." },
+    { "sentence": "Cuando era niña tenía un conejo", "en": "When I was a girl I had a rabbit." },
+    { "sentence": "Me dan miedo las serpientes", "en": "Snakes scare me." },
+    { "sentence": "Saco a pasear al perro por la mañana", "en": "I walk the dog in the morning." },
+    { "sentence": "Mi gato es tan flojo como yo", "en": "My cat is as lazy as me." }
+  ],
+  "translate": [
+    { "answer": "¿Tienes mascotas?", "en": "Do you have pets? (tú)" },
+    { "answer": "Tengo un perro", "en": "I have a dog" },
+    { "answer": "El gato es pequeño", "en": "The cat is small" },
+    { "answer": "Me gustan los caballos", "en": "I like horses" },
+    { "answer": "El perro es más grande que el gato", "en": "The dog is bigger than the cat" },
+    { "answer": "Tenía un conejo", "en": "I used to have a rabbit" }
+  ]
+}

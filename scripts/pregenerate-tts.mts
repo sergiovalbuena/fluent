@@ -51,7 +51,7 @@ type Lesson = {
 // phrases, grammar examples and the full story
 const dir = join('content', lang)
 const texts = new Set<string>()
-for (const file of readdirSync(dir).filter(f => /^(lecon|lesson)-\d+\.json$/.test(f)).sort()) {
+for (const file of readdirSync(dir).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()) {
   const d = JSON.parse(readFileSync(join(dir, file), 'utf8')) as Lesson
   for (const v of d.vocabulary ?? []) if (v.word) texts.add(normalizeTtsText(v.word))
   for (const p of d.phrases ?? []) if (p.phrase) texts.add(normalizeTtsText(p.phrase))

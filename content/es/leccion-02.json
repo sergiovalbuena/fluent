@@ -1,0 +1,84 @@
+{
+  "lesson": 2,
+  "slug": "leccion-02",
+  "icon": "🙏",
+  "title": { "es": "Por favor y gracias", "en": "Please and thank you" },
+  "grammar": [
+    { "structure": "el / la, un / una", "example": "el café, la leche · un café, una mesa", "en": "Every noun is masculine or feminine. «el / un» go with masculine nouns, «la / una» with feminine ones." },
+    { "structure": "plural: -s / -es", "example": "un café → dos cafés · una flor → dos flores", "en": "Add -s after a vowel and -es after a consonant. The articles become «los / las»." },
+    { "structure": "quisiera + nombre", "example": "Quisiera un café, por favor.", "en": "«Quisiera» (I would like) is the polite way to ask for something." },
+    { "structure": "¿puede…? / ¿podría…?", "example": "¿Puede repetir, por favor?", "en": "«¿Puede…?» (can you…?) + infinitive. «¿Podría…?» is even more polite." },
+    { "structure": "perdón / disculpe / con permiso", "example": "Con permiso, ¿puedo pasar?", "en": "«Perdón» or «disculpe» to apologize or get attention; «con permiso» to get past someone." }
+  ],
+  "tips": [
+    { "en": "«De nada» is the standard answer to «gracias». In Mexico you'll also hear «para servirle», and in Colombia «con mucho gusto»." },
+    { "en": "Say «disculpe» (usted) to get a stranger's attention, for example a waiter or someone in the street." },
+    { "en": "«¿Mande?» is how many Mexicans say «Pardon?» when they didn't hear you. Elsewhere, say «¿Perdón?» or «¿Cómo?»." },
+    { "en": "In Spain people often say «vale» for «OK». In Latin America you'll hear «está bien», «dale» (Argentina, Colombia) or «órale» (Mexico)." },
+    { "en": "Spanish speakers say «por favor» a little less than English speakers, but a warm tone and «gracias» matter a lot." }
+  ],
+  "vocabulary": [
+    { "word": "por favor", "en": "please" },
+    { "word": "gracias", "en": "thank you" },
+    { "word": "muchas gracias", "en": "thank you very much" },
+    { "word": "de nada", "en": "you're welcome" },
+    { "word": "perdón", "en": "sorry, excuse me" },
+    { "word": "disculpe", "en": "excuse me (formal)" },
+    { "word": "con permiso", "en": "excuse me (to get past)" },
+    { "word": "lo siento", "en": "I'm sorry" },
+    { "word": "claro", "en": "of course" },
+    { "word": "está bien", "en": "it's OK, all right" },
+    { "word": "el café", "en": "the coffee" },
+    { "word": "el agua", "en": "the water" },
+    { "word": "la cuenta", "en": "the bill, the check" },
+    { "word": "la ventana", "en": "the window" },
+    { "word": "la puerta", "en": "the door" },
+    { "word": "bienvenido", "en": "welcome" }
+  ],
+  "phrases": [
+    { "phrase": "Quisiera un café, por favor.", "en": "I'd like a coffee, please." },
+    { "phrase": "Muchas gracias por todo.", "en": "Thank you very much for everything." },
+    { "phrase": "No hay de qué.", "en": "Don't mention it." },
+    { "phrase": "¿Puede repetir, por favor?", "en": "Can you repeat that, please?" },
+    { "phrase": "¿Puede hablar más despacio?", "en": "Can you speak more slowly?" },
+    { "phrase": "Disculpe, ¿dónde está el baño?", "en": "Excuse me, where is the bathroom?" },
+    { "phrase": "Lo siento mucho.", "en": "I'm very sorry." },
+    { "phrase": "No pasa nada.", "en": "It's no big deal." },
+    { "phrase": "¿Le molesta si abro la ventana?", "en": "Do you mind if I open the window?" },
+    { "phrase": "Con permiso.", "en": "Excuse me (let me through)." },
+    { "phrase": "¡Feliz cumpleaños!", "en": "Happy birthday!" },
+    { "phrase": "¡Buen provecho!", "en": "Enjoy your meal!" }
+  ],
+  "qa": [
+    { "question": { "es": "Alguien te dice «¡Muchas gracias!». ¿Qué respondes?", "en": "Someone says «¡Muchas gracias!». What do you answer?" }, "options": ["De nada.", "Lo siento.", "Igualmente.", "Con permiso."], "correct": 0, "explanation": { "en": "«De nada» = you're welcome." } },
+    { "question": { "es": "No escuchaste bien lo que dijo el mesero. ¿Qué le dices?", "en": "You didn't hear what the waiter said. What do you say to him?" }, "options": ["¿Puede repetir, por favor?", "¡Buen provecho!", "No hay de qué.", "Hasta luego."], "correct": 0, "explanation": { "en": "«¿Puede repetir, por favor?» = can you repeat, please?" } },
+    { "question": { "es": "¿Cuál es la forma más cortés de pedir un café?", "en": "What is the most polite way to ask for a coffee?" }, "options": ["Quisiera un café, por favor.", "¡Un café!", "Dame café.", "Café, ya."], "correct": 0, "explanation": { "en": "«Quisiera» (I would like) + «por favor» is the polite way to order." } },
+    { "question": { "es": "Hay una persona en el pasillo y necesitas pasar. ¿Qué dices?", "en": "Someone is standing in the corridor and you need to get past. What do you say?" }, "options": ["Con permiso.", "De nada.", "Igualmente.", "¡Buen provecho!"], "correct": 0, "explanation": { "en": "«Con permiso» is what you say to get past someone." } },
+    { "question": { "es": "Hace calor y quieres abrir la ventana del autobús. ¿Cómo le preguntas a la señora de al lado?", "en": "It's hot and you want to open the bus window. How do you ask the lady next to you?" }, "options": ["¿Le molesta si abro la ventana?", "¡Abra la ventana!", "La ventana, por favor, ya.", "¿Te molesto la ventana?"], "correct": 0, "explanation": { "en": "«¿Le molesta si…?» = do you mind if…? (usted)." } },
+    { "question": { "es": "Tu amigo llega tarde y te dice «¡Perdón, perdón!». ¿Cómo lo tranquilizas?", "en": "Your friend arrives late and says «Sorry, sorry!». How do you reassure him?" }, "options": ["No pasa nada.", "Lo siento mucho.", "De nada.", "Mucho gusto."], "correct": 0, "explanation": { "en": "«No pasa nada» = it's no big deal, don't worry." } },
+    { "question": { "es": "Las personas en la mesa empiezan a comer. ¿Qué les dices?", "en": "The people at the table start eating. What do you say to them?" }, "options": ["¡Buen provecho!", "¡Feliz cumpleaños!", "¡Con permiso!", "¡Lo siento!"], "correct": 0, "explanation": { "en": "«¡Buen provecho!» = enjoy your meal." } },
+    { "question": { "es": "¿Cuál es el plural de «la flor»?", "en": "What is the plural of «la flor»?" }, "options": ["las flores", "las flors", "los flores", "la flores"], "correct": 0, "explanation": { "en": "After a consonant add -es, and «la» becomes «las»: las flores." } }
+  ],
+  "story": {
+    "title": "El primer café",
+    "text": "Es sábado y Emily entra a una cafetería pequeña cerca de su casa. Hay mucha gente. «Buenos días», dice el mesero. «¿Qué le sirvo?» Emily mira el menú. «Quisiera un café con leche, por favor.» «¿Grande o chico?» Emily no entiende bien. «Perdón, ¿puede repetir, por favor?» «Claro. ¿Grande o chico?» «Grande, gracias.» Unos minutos después, el mesero trae el café y un pan dulce. «Yo no pedí el pan», dice Emily. «No pasa nada, es un regalo de la casa. ¡Bienvenida!» «¡Muchas gracias!» «De nada. ¡Buen provecho!» Al final, Emily pide la cuenta y deja una propina.",
+    "en": "It's Saturday and Emily walks into a small coffee shop near her home. There are a lot of people. «Good morning», says the waiter. «What can I get you?» Emily looks at the menu. «I'd like a coffee with milk, please.» «Large or small?» Emily doesn't quite understand. «Sorry, can you repeat that, please?» «Of course. Large or small?» «Large, thank you.» A few minutes later the waiter brings the coffee and a sweet bread. «I didn't order the bread», says Emily. «It's no big deal, it's on the house. Welcome!» «Thank you very much!» «You're welcome. Enjoy!» At the end, Emily asks for the bill and leaves a tip.",
+    "highlighted_words": ["Quisiera", "por favor", "puede repetir", "Claro", "No pasa nada", "Muchas gracias", "De nada", "la cuenta"]
+  },
+  "arrange": [
+    { "sentence": "Quisiera un café con leche, por favor", "en": "I'd like a coffee with milk, please." },
+    { "sentence": "¿Puede hablar más despacio, por favor?", "en": "Can you speak more slowly, please?" },
+    { "sentence": "Disculpe, ¿dónde está el baño?", "en": "Excuse me, where is the bathroom?" },
+    { "sentence": "Muchas gracias por todo", "en": "Thank you very much for everything." },
+    { "sentence": "Lo siento, no hablo bien español", "en": "I'm sorry, I don't speak Spanish well." },
+    { "sentence": "¿Le molesta si abro la ventana?", "en": "Do you mind if I open the window?" }
+  ],
+  "translate": [
+    { "answer": "Muchas gracias", "en": "Thank you very much" },
+    { "answer": "De nada", "en": "You're welcome" },
+    { "answer": "Quisiera un café, por favor", "en": "I would like a coffee, please" },
+    { "answer": "¿Puede repetir, por favor?", "en": "Can you repeat, please? (usted)" },
+    { "answer": "Lo siento mucho", "en": "I am very sorry" },
+    { "answer": "La cuenta, por favor", "en": "The bill, please" }
+  ]
+}

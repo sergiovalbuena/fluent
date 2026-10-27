@@ -1,0 +1,84 @@
+{
+  "lesson": 22,
+  "slug": "leccion-22",
+  "icon": "🏖️",
+  "title": { "es": "Las vacaciones", "en": "Vacations" },
+  "grammar": [
+    { "structure": "pretérito -ar: viajé, viajaste, viajó", "example": "El verano pasado viajé a Cancún.", "en": "Simple past of -ar verbs: -é, -aste, -ó, -amos, -aron. Finished actions at a specific time." },
+    { "structure": "pretérito -er / -ir: comí, viví", "example": "Comimos mariscos y salimos a bailar.", "en": "-er / -ir verbs share the endings: -í, -iste, -ió, -imos, -ieron." },
+    { "structure": "ir / ser: fui, fuiste, fue", "example": "Fui a la playa. Fue increíble.", "en": "«Ir» and «ser» have the same past forms: fui = I went / I was. Context tells which." },
+    { "structure": "ir a + infinitivo (planes)", "example": "Vamos a visitar Tulum.", "en": "Plans for the near future: ir a + infinitive." },
+    { "structure": "el mío / la tuya", "example": "¿Tu maleta? La mía es la azul.", "en": "Possessive pronouns: el mío, la mía, los tuyos… They agree with the thing owned." }
+  ],
+  "tips": [
+    { "en": "«Vacaciones» is always plural: «ir de vacaciones», «estar de vacaciones»." },
+    { "en": "«Semana Santa» (Easter week) is the biggest holiday in much of Latin America: beaches fill up and cities empty out." },
+    { "en": "«Puente» is a long weekend (a holiday next to a weekend). «Hacer puente» = to take that extra day off." },
+    { "en": "«Alberca» (Mexico), «pileta» (Argentina) and «piscina» (Spain, Colombia) all mean swimming pool." },
+    { "en": "«Bloqueador» or «protector solar» = sunscreen. You'll need it: the sun near the equator is strong." }
+  ],
+  "vocabulary": [
+    { "word": "las vacaciones", "en": "the vacation" },
+    { "word": "la playa", "en": "the beach" },
+    { "word": "el equipaje", "en": "the luggage" },
+    { "word": "el viaje", "en": "the trip" },
+    { "word": "la maleta", "en": "the suitcase" },
+    { "word": "el pasaporte", "en": "the passport" },
+    { "word": "el boleto", "en": "the ticket (Latin America)" },
+    { "word": "la alberca", "en": "the swimming pool (Mexico)" },
+    { "word": "el bloqueador", "en": "the sunscreen" },
+    { "word": "la tienda de campaña", "en": "the tent" },
+    { "word": "el saco de dormir", "en": "the sleeping bag" },
+    { "word": "la cámara", "en": "the camera" },
+    { "word": "el recuerdo", "en": "the souvenir, the memory" },
+    { "word": "descansar", "en": "to rest" },
+    { "word": "nadar", "en": "to swim" },
+    { "word": "broncearse", "en": "to get a tan" }
+  ],
+  "phrases": [
+    { "phrase": "¿Adónde vas de vacaciones?", "en": "Where are you going on vacation?" },
+    { "phrase": "Vamos a ir a la playa.", "en": "We're going to go to the beach." },
+    { "phrase": "El verano pasado fui a Cancún.", "en": "Last summer I went to Cancún." },
+    { "phrase": "¿Qué tal tus vacaciones?", "en": "How was your vacation?" },
+    { "phrase": "¡Fueron increíbles!", "en": "They were amazing!" },
+    { "phrase": "Nadamos todos los días.", "en": "We swam every day." },
+    { "phrase": "Podríamos ir a bailar.", "en": "We could go dancing." },
+    { "phrase": "¡Se me olvidaba!", "en": "I almost forgot!" },
+    { "phrase": "Tengo muchas ganas de verte.", "en": "I really want to see you." },
+    { "phrase": "Es el día más caluroso del año.", "en": "It's the hottest day of the year." },
+    { "phrase": "Mis hijos están en la playa; los tuyos, en la alberca.", "en": "My kids are at the beach; yours are at the pool." },
+    { "phrase": "Me encantaría volver.", "en": "I'd love to go back." }
+  ],
+  "qa": [
+    { "question": { "es": "¿Qué frase habla de un plan para el futuro cercano?", "en": "Which sentence talks about a plan for the near future?" }, "options": ["Voy a visitar Roma.", "Visité Roma.", "Visitaba Roma.", "Visitaría Roma."], "correct": 0, "explanation": { "en": "«Ir a» + infinitive = going to." } },
+    { "question": { "es": "Completa: «¿Tus hijos están en la playa? Los ___ están en la alberca.»", "en": "Complete: «¿Tus hijos están en la playa? Los ___ están en la alberca.»" }, "options": ["míos", "mis", "mío", "mías"], "correct": 0, "explanation": { "en": "«Los míos» = mine, masculine plural like «hijos»." } },
+    { "question": { "es": "Completa: «El verano pasado ___ a Cancún con mi familia.»", "en": "Complete: «El verano pasado ___ a Cancún con mi familia.»" }, "options": ["fui", "voy", "iba", "iré"], "correct": 0, "explanation": { "en": "A finished trip at a specific time: pretérito «fui»." } },
+    { "question": { "es": "Ibas a salir, pero de repente recuerdas algo importante. ¿Qué dices?", "en": "You were about to leave, but suddenly remember something important. What do you say?" }, "options": ["¡Se me olvidaba!", "¡Olvidé ayer!", "¡Voy a olvidar!", "¡Olvido siempre!"], "correct": 0, "explanation": { "en": "«¡Se me olvidaba!» = I almost forgot!" } },
+    { "question": { "es": "Propones a tus amigos ir a bailar esta noche. ¿Qué dices?", "en": "You suggest going dancing tonight to your friends. What do you say?" }, "options": ["Podríamos ir a bailar.", "Pudimos ir a bailar.", "Podremos bailar ayer.", "Podíamos ir bailar mañana."], "correct": 0, "explanation": { "en": "The conditional «podríamos» = we could (a suggestion)." } },
+    { "question": { "es": "¿En qué duermes cuando vas de campamento?", "en": "What do you sleep in when you go camping?" }, "options": ["en un saco de dormir", "en una maleta", "en una alberca", "en una sombrilla"], "correct": 0, "explanation": { "en": "«Saco de dormir» (or «bolsa de dormir») = sleeping bag." } },
+    { "question": { "es": "Completa: «Es el día ___ caluroso del año.»", "en": "Complete: «Es el día ___ caluroso del año.»" }, "options": ["más", "muy", "el más", "tan"], "correct": 0, "explanation": { "en": "Superlative: el día más caluroso (the article is already before «día»)." } },
+    { "question": { "es": "Extrañas a tu amiga y quieres verla pronto. ¿Qué le escribes?", "en": "You miss your friend and want to see her soon. What do you write?" }, "options": ["Tengo muchas ganas de verte.", "Tengo mucha gana verte.", "Estoy ganas de verte.", "Tengo ganas que te veo."], "correct": 0, "explanation": { "en": "«Tener ganas de» + infinitive." } }
+  ],
+  "story": {
+    "title": "Vacaciones en la playa",
+    "text": "En Semana Santa, Emily viajó a la península de Yucatán con Valeria y su esposo. El primer día llegaron a Tulum y visitaron las ruinas mayas junto al mar. «¡Es el lugar más bonito que conozco!», dijo Emily. Después nadaron en un cenote, un río subterráneo de agua fresca y transparente. Comieron pescado y tacos de cochinita pibil. Una noche fueron a bailar salsa, aunque Emily no sabía bailar. «Podríamos tomar clases en la Ciudad de México», propuso Valeria. El último día, Emily compró recuerdos para su familia y para Carmen. En el avión de regreso, miró sus fotos y pensó: «Me encantaría volver el próximo año».",
+    "en": "At Easter, Emily traveled to the Yucatán Peninsula with Valeria and her husband. On the first day they arrived in Tulum and visited the Mayan ruins by the sea. «It's the most beautiful place I know!» said Emily. Then they swam in a cenote, an underground river of fresh, clear water. They ate fish and cochinita pibil tacos. One night they went salsa dancing, even though Emily couldn't dance. «We could take classes in Mexico City», suggested Valeria. On the last day, Emily bought souvenirs for her family and for Carmen. On the plane back, she looked at her photos and thought: «I'd love to come back next year».",
+    "highlighted_words": ["viajó", "llegaron", "visitaron", "nadaron", "fueron a bailar", "Podríamos", "recuerdos", "Me encantaría volver"]
+  },
+  "arrange": [
+    { "sentence": "El año pasado fuimos a la playa", "en": "Last year we went to the beach." },
+    { "sentence": "Vamos a visitar las ruinas mayas", "en": "We're going to visit the Mayan ruins." },
+    { "sentence": "¿Qué tal tus vacaciones en Perú?", "en": "How was your vacation in Peru?" },
+    { "sentence": "No olvides el bloqueador solar", "en": "Don't forget the sunscreen." },
+    { "sentence": "Compré recuerdos para mi familia", "en": "I bought souvenirs for my family." },
+    { "sentence": "Me encantaría volver el próximo año", "en": "I'd love to come back next year." }
+  ],
+  "translate": [
+    { "answer": "Fui a la playa", "en": "I went to the beach" },
+    { "answer": "Vamos a ir a México", "en": "We are going to go to Mexico" },
+    { "answer": "¿Qué tal tus vacaciones?", "en": "How was your vacation? (tú)" },
+    { "answer": "Fueron increíbles", "en": "They were amazing" },
+    { "answer": "Nadamos todos los días", "en": "We swam every day" },
+    { "answer": "Me encantaría volver", "en": "I would love to go back", "accept": ["Me gustaría mucho volver"] }
+  ]
+}

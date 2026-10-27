@@ -1,0 +1,84 @@
+{
+  "lesson": 30,
+  "slug": "leccion-30",
+  "icon": "📞",
+  "title": { "es": "Al teléfono", "en": "On the phone" },
+  "grammar": [
+    { "structure": "estar + gerundio", "example": "Está hablando por teléfono.", "en": "In progress right now: está hablando, estoy manejando." },
+    { "structure": "hace + tiempo + que + presente", "example": "¡Hace una hora que hablas!", "en": "«Hace + time + que» + present = you've been … for (time)." },
+    { "structure": "imperativo negativo usted: no cuelgue", "example": "No cuelgue, por favor.", "en": "Negative formal commands use the subjunctive: no cuelgue, no se preocupe." },
+    { "structure": "pronombres + infinitivo", "example": "Te voy a llamar. / Voy a llamarte.", "en": "Pronouns can go before the conjugated verb or attached to the infinitive. Both are correct." },
+    { "structure": "dejar un recado / un mensaje", "example": "¿Quiere dejarle un recado?", "en": "«Dejar un recado» = to leave a message (for someone)." }
+  ],
+  "tips": [
+    { "en": "How to answer the phone: «¿Bueno?» (Mexico), «¿Aló?» (most of South America), «¿Diga?» or «¿Sí?» (Spain), «¿Hola?» (Argentina)." },
+    { "en": "«Celular» (Latin America) = «móvil» (Spain) = cell phone." },
+    { "en": "WhatsApp is the default way to communicate in Latin America; voice messages (audios) are extremely common." },
+    { "en": "Phone numbers are read in pairs: 55 12 34 56 78 = cincuenta y cinco, doce, treinta y cuatro, cincuenta y seis, setenta y ocho." },
+    { "en": "«Marcar» = to dial; «colgar» (o → ue: cuelgo) = to hang up; «contestar» = to answer." }
+  ],
+  "vocabulary": [
+    { "word": "el teléfono", "en": "the phone" },
+    { "word": "el celular", "en": "the cell phone" },
+    { "word": "la llamada", "en": "the call" },
+    { "word": "llamar", "en": "to call" },
+    { "word": "contestar", "en": "to answer" },
+    { "word": "colgar", "en": "to hang up" },
+    { "word": "marcar", "en": "to dial" },
+    { "word": "el recado", "en": "the message" },
+    { "word": "el buzón de voz", "en": "the voicemail" },
+    { "word": "la señal", "en": "the signal" },
+    { "word": "la contraseña", "en": "the password" },
+    { "word": "el cargador", "en": "the charger" },
+    { "word": "el número equivocado", "en": "the wrong number" },
+    { "word": "la línea", "en": "the line" },
+    { "word": "la videollamada", "en": "the video call" },
+    { "word": "el mensaje de voz", "en": "the voice message" }
+  ],
+  "phrases": [
+    { "phrase": "¿Bueno? ¿Quién habla?", "en": "Hello? Who's speaking? (Mexico)" },
+    { "phrase": "¿Se encuentra Diego?", "en": "Is Diego there?" },
+    { "phrase": "No se encuentra. ¿Quiere dejarle un recado?", "en": "He's not in. Would you like to leave a message?" },
+    { "phrase": "No cuelgue, por favor.", "en": "Please hold." },
+    { "phrase": "Se equivocó de número.", "en": "You have the wrong number." },
+    { "phrase": "Te llamo más tarde.", "en": "I'll call you later." },
+    { "phrase": "No te escucho bien.", "en": "I can't hear you well." },
+    { "phrase": "Se me está acabando la batería.", "en": "My battery is running out." },
+    { "phrase": "¡Hace una hora que hablas!", "en": "You've been talking for an hour!" },
+    { "phrase": "Déjalo sonar.", "en": "Let it ring." },
+    { "phrase": "Mándame un mensaje.", "en": "Send me a message." },
+    { "phrase": "¿Me pasas tu número?", "en": "Can you give me your number?" }
+  ],
+  "qa": [
+    { "question": { "es": "Contestas el teléfono en México. ¿Qué dices?", "en": "You answer the phone in Mexico. What do you say?" }, "options": ["¿Bueno?", "¿Mande?", "¡Adiós!", "¡Hasta luego!"], "correct": 0, "explanation": { "en": "Mexicans answer «¿Bueno?»; in much of South America «¿Aló?»; in Spain «¿Diga?»." } },
+    { "question": { "es": "Completa: «¡Hace una hora ___ hablas por teléfono!»", "en": "Complete: «¡Hace una hora ___ hablas por teléfono!»" }, "options": ["que", "desde", "durante", "cuando"], "correct": 0, "explanation": { "en": "«Hace + time + que» + present." } },
+    { "question": { "es": "Alguien llama y pregunta por «el señor Durán», pero no es tu casa. ¿Qué dices?", "en": "Someone calls asking for «Mr. Durán», but it's not his number. What do you say?" }, "options": ["Se equivocó de número.", "Se equivocó de nombre.", "No cuelgue.", "Déjalo sonar."], "correct": 0, "explanation": { "en": "«Equivocarse de número» = to dial the wrong number." } },
+    { "question": { "es": "La conversación terminó. Pones el teléfono en su lugar. ¿Qué haces?", "en": "The conversation is over. You put the phone down. What do you do?" }, "options": ["Cuelgo.", "Contesto.", "Marco.", "Llamo."], "correct": 0, "explanation": { "en": "«Colgar» (cuelgo) = to hang up." } },
+    { "question": { "es": "Completa: «Me miró hasta que le ___ qué pasaba.» (preguntar, pasado)", "en": "Complete: «Me miró hasta que le ___ qué pasaba.» (preguntar, past)" }, "options": ["pregunté", "pregunte", "preguntara mañana", "preguntaré"], "correct": 0, "explanation": { "en": "For a past fact, «hasta que» takes the indicative: pregunté." } },
+    { "question": { "es": "Quieres que la persona espere un momento sin colgar. ¿Qué dices?", "en": "You want the caller to wait a moment without hanging up. What do you say?" }, "options": ["No cuelgue, por favor.", "No conteste, por favor.", "Cuelgue, por favor.", "Llame después."], "correct": 0, "explanation": { "en": "«No cuelgue» = please hold." } },
+    { "question": { "es": "Tu celular suena, pero no quieres contestar. ¿Qué dices, sin repetir «el celular»?", "en": "Your cell is ringing but you don't want to answer. What do you say without repeating «el celular»?" }, "options": ["Déjalo sonar.", "Déjale sonar.", "Lo deja sonar.", "Déjala sonar."], "correct": 0, "explanation": { "en": "«Lo» replaces «el celular»; in a positive command it attaches: déjalo." } },
+    { "question": { "es": "Hablas con tu mamá y casi no tienes batería. ¿Qué dices?", "en": "You're talking to your mom and your battery is almost dead. What do you say?" }, "options": ["Se me está acabando la batería.", "Se me está acabando la señal de.", "Me acaba la batería a mí.", "Estoy acabando batería."], "correct": 0, "explanation": { "en": "«Se me está acabando» = it's running out on me." } }
+  ],
+  "story": {
+    "title": "¿Bueno?",
+    "text": "El lunes, Emily llama a la oficina de un cliente. «¿Bueno?», contesta una voz. «Buenos días, ¿se encuentra el licenciado Ramírez?» «No se encuentra en este momento. ¿Quiere dejarle un recado?» «Sí, por favor. Dígale que llamó Emily, de la agencia de diseño.» Por la tarde, el celular de Emily suena. Es un número desconocido. «¿Bueno?» «¿Hablo con la pizzería?», pregunta un señor. «No, se equivocó de número», responde Emily, riendo. Por la noche hace una videollamada con su mamá en Chicago. Hablan una hora. «¡Hace una hora que hablamos!», dice su mamá. «Sí, y se me está acabando la batería. ¡Te llamo mañana!»",
+    "en": "On Monday, Emily calls a client's office. «Hello?» a voice answers. «Good morning, is Mr. Ramírez there?» «He's not in at the moment. Would you like to leave him a message?» «Yes, please. Tell him Emily from the design agency called.» In the afternoon, Emily's cell rings. It's an unknown number. «Hello?» «Is this the pizzeria?» asks a man. «No, you have the wrong number», Emily answers, laughing. In the evening she has a video call with her mom in Chicago. They talk for an hour. «We've been talking for an hour!» says her mom. «Yes, and my battery is running out. I'll call you tomorrow!»",
+    "highlighted_words": ["Bueno", "se encuentra", "dejarle un recado", "se equivocó de número", "videollamada", "Hace una hora", "Te llamo mañana"]
+  },
+  "arrange": [
+    { "sentence": "¿Se encuentra la señora López?", "en": "Is Mrs. López in?" },
+    { "sentence": "No cuelgue, por favor, ahorita la comunico", "en": "Please hold, I'll put you through right away." },
+    { "sentence": "Te llamo más tarde, estoy manejando", "en": "I'll call you later, I'm driving." },
+    { "sentence": "Se me está acabando la batería", "en": "My battery is running out." },
+    { "sentence": "¿Me pasas tu número de celular?", "en": "Can you give me your cell number?" },
+    { "sentence": "Creo que se equivocó de número", "en": "I think you have the wrong number." }
+  ],
+  "translate": [
+    { "answer": "¿Quién habla?", "en": "Who is speaking?" },
+    { "answer": "Te llamo más tarde", "en": "I will call you later (tú)", "accept": ["Te llamo luego", "Te llamo después"] },
+    { "answer": "No te escucho", "en": "I can't hear you (tú)", "accept": ["No te oigo"] },
+    { "answer": "No cuelgue, por favor", "en": "Please hold (usted)" },
+    { "answer": "Mándame un mensaje", "en": "Send me a message (tú)" },
+    { "answer": "Se equivocó de número", "en": "You have the wrong number (usted)" }
+  ]
+}

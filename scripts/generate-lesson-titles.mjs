@@ -10,7 +10,7 @@ import { join } from 'node:path'
 
 const titles = {}
 for (const lang of readdirSync('content', { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name).sort()) {
-  for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson)-\d+\.json$/.test(f)).sort()) {
+  for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()) {
     const { slug, title } = JSON.parse(readFileSync(join('content', lang, file), 'utf8'))
     if (slug && title && typeof title === 'object') (titles[lang] ??= {})[slug] = title
   }

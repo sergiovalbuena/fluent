@@ -1,0 +1,84 @@
+{
+  "lesson": 25,
+  "slug": "leccion-25",
+  "icon": "🚌",
+  "title": { "es": "El transporte", "en": "Transportation" },
+  "grammar": [
+    { "structure": "ir en + vehículo / a pie", "example": "Voy al trabajo en bici. Ella va a pie.", "en": "«En» + vehicle (en metro, en carro, en avión), but «a pie» (on foot) and «a caballo»." },
+    { "structure": "tomar el metro / el autobús", "example": "Tomo el metro en la estación Insurgentes.", "en": "«Tomar» = to take (transport). In Spain «coger» is used, but avoid it in Mexico and Argentina, where it's vulgar." },
+    { "structure": "tardar + tiempo", "example": "Tardo media hora en llegar.", "en": "«Tardar» + time (+ en + infinitive) = to take (time)." },
+    { "structure": "más / menos … que", "example": "El metro es más barato que el taxi.", "en": "Comparisons: más / menos + adjective + que." },
+    { "structure": "para que + subjuntivo", "example": "Te doy el boleto para que puedas viajar.", "en": "«Para que» (so that) is always followed by the subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Tomar» is the safest verb for catching transport everywhere. «Coger» is normal in Spain but vulgar in much of Latin America." },
+    { "en": "Bus words: «camión» (Mexico), «colectivo» (Argentina), «micro» (Chile), «guagua» (Cuba, Puerto Rico, Canary Islands), «autobús» everywhere." },
+    { "en": "«Carro» (most of Latin America), «auto» (Southern Cone), «coche» (Spain) = car. «Manejar» (Latin America) = «conducir» (Spain) = to drive." },
+    { "en": "«Boleto» (Latin America) = «billete» (Spain) = ticket. «Viaje redondo» (Mexico) = round trip; «ida y vuelta» is understood everywhere." },
+    { "en": "Ride-hailing apps are very common in Latin American cities; «un Uber» works as a generic word." }
+  ],
+  "vocabulary": [
+    { "word": "el transporte", "en": "the transportation" },
+    { "word": "el autobús", "en": "the bus" },
+    { "word": "el camión", "en": "the bus (Mexico), the truck" },
+    { "word": "el carro", "en": "the car" },
+    { "word": "la bicicleta", "en": "the bicycle" },
+    { "word": "la moto", "en": "the motorcycle" },
+    { "word": "el tren", "en": "the train" },
+    { "word": "el avión", "en": "the plane" },
+    { "word": "el barco", "en": "the boat, the ship" },
+    { "word": "el taxi", "en": "the taxi" },
+    { "word": "la estación", "en": "the station" },
+    { "word": "la parada", "en": "the stop" },
+    { "word": "el boleto de ida y vuelta", "en": "the round-trip ticket" },
+    { "word": "aterrizar", "en": "to land" },
+    { "word": "despegar", "en": "to take off" },
+    { "word": "manejar", "en": "to drive (Latin America)" }
+  ],
+  "phrases": [
+    { "phrase": "¿Cómo vas al trabajo?", "en": "How do you get to work?" },
+    { "phrase": "Voy en metro.", "en": "I go by subway." },
+    { "phrase": "Tardo media hora en llegar.", "en": "It takes me half an hour to get there." },
+    { "phrase": "¿Dónde está la parada del camión?", "en": "Where is the bus stop?" },
+    { "phrase": "Un boleto de ida y vuelta, por favor.", "en": "A round-trip ticket, please." },
+    { "phrase": "¿A qué hora sale el próximo tren?", "en": "What time does the next train leave?" },
+    { "phrase": "El avión acaba de aterrizar.", "en": "The plane has just landed." },
+    { "phrase": "El metro es más barato que el taxi.", "en": "The subway is cheaper than a taxi." },
+    { "phrase": "¿Este camión va al centro?", "en": "Does this bus go downtown?" },
+    { "phrase": "Bájate en la próxima parada.", "en": "Get off at the next stop." },
+    { "phrase": "¿Prefieres este o ese?", "en": "Do you prefer this one or that one?" },
+    { "phrase": "No sé manejar.", "en": "I can't drive." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Voy al trabajo ___ bicicleta.»", "en": "Complete: «Voy al trabajo ___ bicicleta.»" }, "options": ["en", "a", "por", "con"], "correct": 0, "explanation": { "en": "Vehicles use «en»: en bicicleta, en metro." } },
+    { "question": { "es": "Completa: «Mi hermana va al colegio ___ pie.»", "en": "Complete: «Mi hermana va al colegio ___ pie.»" }, "options": ["a", "en", "con", "de"], "correct": 0, "explanation": { "en": "«A pie» = on foot (an exception to «en»)." } },
+    { "question": { "es": "El avión llega al aeropuerto y toca el suelo. ¿Qué hace?", "en": "The plane arrives at the airport and touches the ground. What does it do?" }, "options": ["Aterriza.", "Despega.", "Embarca.", "Maneja."], "correct": 0, "explanation": { "en": "«Aterrizar» = to land; «despegar» = to take off." } },
+    { "question": { "es": "¿Qué boleto te permite regresar?", "en": "Which ticket lets you come back?" }, "options": ["un boleto de ida y vuelta", "un boleto sencillo", "un horario", "una parada"], "correct": 0, "explanation": { "en": "«Ida y vuelta» = round trip; «sencillo» = one way." } },
+    { "question": { "es": "Completa: «El metro es ___ caro ___ el taxi.»", "en": "Complete: «El metro es ___ caro ___ el taxi.»" }, "options": ["menos … que", "menos … de", "más … de", "tan … que"], "correct": 0, "explanation": { "en": "Comparison: menos + adjective + que." } },
+    { "question": { "es": "Completa: «Te presto dinero para que ___ tomar un taxi.»", "en": "Complete: «Te presto dinero para que ___ tomar un taxi.»" }, "options": ["puedas", "puedes", "podrás", "podías"], "correct": 0, "explanation": { "en": "«Para que» + subjunctive: puedas." } },
+    { "question": { "es": "En México quieres subir a un autobús. ¿Qué verbo es más seguro usar?", "en": "In Mexico you want to catch a bus. Which verb is safest to use?" }, "options": ["tomar el camión", "coger el camión", "agarrar la camión", "subir en el camiones"], "correct": 0, "explanation": { "en": "«Tomar» works everywhere; «coger» is vulgar in Mexico and Argentina." } },
+    { "question": { "es": "«¿Qué carro prefieres?» Señalas el carro que está junto a ti. ¿Qué dices?", "en": "«Which car do you prefer?» You point at the car right next to you. What do you say?" }, "options": ["Este.", "Aquel.", "Esa.", "Estos."], "correct": 0, "explanation": { "en": "Near you: «este» (masculine, like «carro»)." } }
+  ],
+  "story": {
+    "title": "Un viaje a Puebla",
+    "text": "Emily quiere visitar Puebla un fin de semana. Pregunta a Diego cómo ir. «Puedes ir en camión desde la terminal TAPO. Tarda unas dos horas y es más barato que ir en carro.» El sábado, Emily toma el metro hasta la terminal. En la taquilla pide: «Un boleto de ida y vuelta a Puebla, por favor». El camión es cómodo y tiene aire acondicionado. Por la ventana ve los volcanes, el Popocatépetl y el Iztaccíhuatl, cubiertos de nieve. En Puebla, visita la catedral y come mole poblano. Para regresar, el último camión sale a las nueve. Emily llega a la terminal a las ocho y media. «¡Justo a tiempo!», piensa.",
+    "en": "Emily wants to visit Puebla one weekend. She asks Diego how to get there. «You can go by bus from the TAPO terminal. It takes about two hours and it's cheaper than going by car.» On Saturday Emily takes the subway to the terminal. At the ticket office she asks: «A round-trip ticket to Puebla, please». The bus is comfortable and has air conditioning. Through the window she sees the volcanoes, Popocatépetl and Iztaccíhuatl, covered in snow. In Puebla she visits the cathedral and eats mole poblano. To come back, the last bus leaves at nine. Emily gets to the terminal at half past eight. «Just in time!» she thinks.",
+    "highlighted_words": ["en camión", "Tarda", "más barato que", "toma el metro", "ida y vuelta", "sale a las nueve"]
+  },
+  "arrange": [
+    { "sentence": "Voy al trabajo en metro todos los días", "en": "I go to work by subway every day." },
+    { "sentence": "Tardo media hora en llegar a la oficina", "en": "It takes me half an hour to get to the office." },
+    { "sentence": "¿Este camión va al centro?", "en": "Does this bus go downtown?" },
+    { "sentence": "El tren sale a las seis de la mañana", "en": "The train leaves at six in the morning." },
+    { "sentence": "Un boleto de ida y vuelta, por favor", "en": "A round-trip ticket, please." },
+    { "sentence": "Bájate en la próxima parada", "en": "Get off at the next stop." }
+  ],
+  "translate": [
+    { "answer": "Voy en metro", "en": "I go by subway" },
+    { "answer": "¿Dónde está la parada?", "en": "Where is the stop?" },
+    { "answer": "Un boleto, por favor", "en": "A ticket, please", "accept": ["Un billete, por favor"] },
+    { "answer": "El avión aterrizó", "en": "The plane landed" },
+    { "answer": "No sé manejar", "en": "I can't drive (I don't know how)", "accept": ["No sé conducir"] },
+    { "answer": "¿A qué hora sale el tren?", "en": "What time does the train leave?" }
+  ]
+}

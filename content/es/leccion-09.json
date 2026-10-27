@@ -1,0 +1,84 @@
+{
+  "lesson": 9,
+  "slug": "leccion-09",
+  "icon": "💬",
+  "title": { "es": "Expresiones cotidianas (1)", "en": "Everyday expressions (1)" },
+  "grammar": [
+    { "structure": "qué, dónde, cuándo, cómo, por qué", "example": "¿Dónde vives? ¿Por qué estudias español?", "en": "Question words always carry a written accent: qué, dónde, cuándo, cómo, cuál, quién, por qué." },
+    { "structure": "por qué / porque", "example": "¿Por qué? — Porque me gusta.", "en": "«¿Por qué?» (two words, accent) asks why; «porque» (one word) means because." },
+    { "structure": "no + verbo", "example": "No entiendo. No hablo francés.", "en": "Negation: put «no» before the verb." },
+    { "structure": "poder + infinitivo", "example": "¿Puedes hablar más despacio?", "en": "«Poder» (can) is irregular: puedo, puedes, puede, podemos, pueden." },
+    { "structure": "saber / conocer", "example": "Sé nadar. Conozco Lima.", "en": "«Saber» = to know facts or how to do something; «conocer» = to know people or places." }
+  ],
+  "tips": [
+    { "en": "«¿Cómo?» is a polite way to ask someone to repeat. «¿Qué?» alone can sound abrupt." },
+    { "en": "«Ahorita» in Mexico can mean «right now» or «in a while» (sometimes much later!). Context and tone tell you which." },
+    { "en": "«Ojalá» (I hope / hopefully) comes from Arabic and is used everywhere: «Ojalá no llueva»." },
+    { "en": "«¿Qué onda?» (Mexico), «¿Qué más?» (Colombia) and «¿Qué hubo?» are casual ways to say «what's up?»." },
+    { "en": "«Vale» (OK) is very Spanish (Spain). In Mexico «sale» or «va», in Argentina «dale», in Colombia «listo»." }
+  ],
+  "vocabulary": [
+    { "word": "qué", "en": "what" },
+    { "word": "dónde", "en": "where" },
+    { "word": "cuándo", "en": "when" },
+    { "word": "cómo", "en": "how" },
+    { "word": "por qué", "en": "why" },
+    { "word": "porque", "en": "because" },
+    { "word": "quién", "en": "who" },
+    { "word": "cuál", "en": "which" },
+    { "word": "entender", "en": "to understand" },
+    { "word": "saber", "en": "to know (facts, how to)" },
+    { "word": "conocer", "en": "to know (people, places)" },
+    { "word": "tener razón", "en": "to be right" },
+    { "word": "equivocarse", "en": "to be wrong" },
+    { "word": "ojalá", "en": "hopefully, I hope" },
+    { "word": "ahorita", "en": "right now, in a bit (Mexico)" },
+    { "word": "el letrero", "en": "the sign" }
+  ],
+  "phrases": [
+    { "phrase": "No entiendo.", "en": "I don't understand." },
+    { "phrase": "¿Qué significa «chamba»?", "en": "What does «chamba» mean?" },
+    { "phrase": "¿Cómo se dice «weekend» en español?", "en": "How do you say «weekend» in Spanish?" },
+    { "phrase": "¿Puedes hablar más despacio?", "en": "Can you speak more slowly?" },
+    { "phrase": "No sé.", "en": "I don't know." },
+    { "phrase": "Tienes razón.", "en": "You're right." },
+    { "phrase": "Te equivocas.", "en": "You're wrong." },
+    { "phrase": "¿Me puede decir dónde está la estación?", "en": "Could you tell me where the station is?" },
+    { "phrase": "Prohibido fumar.", "en": "No smoking." },
+    { "phrase": "¡Qué padre!", "en": "How cool! (Mexico)" },
+    { "phrase": "Ojalá que sí.", "en": "I hope so." },
+    { "phrase": "Más vale tarde que nunca.", "en": "Better late than never." }
+  ],
+  "qa": [
+    { "question": { "es": "¿Qué palabra sirve para preguntar el motivo de algo?", "en": "Which word asks for the reason for something?" }, "options": ["por qué", "porque", "cuándo", "dónde"], "correct": 0, "explanation": { "en": "«¿Por qué?» = why. «Porque» = because." } },
+    { "question": { "es": "En un restaurante ves un letrero que no permite fumar. ¿Qué dice?", "en": "In a restaurant you see a sign that doesn't allow smoking. What does it say?" }, "options": ["Prohibido fumar", "Fumar no prohibido", "No fuma", "Fumen aquí"], "correct": 0, "explanation": { "en": "«Prohibido fumar» = no smoking." } },
+    { "question": { "es": "«¿Hablas inglés?» — «Sí, ___ hablo bien.»", "en": "«¿Hablas inglés?» — «Sí, ___ hablo bien.»" }, "options": ["lo", "la", "le", "me"], "correct": 0, "explanation": { "en": "«Lo» replaces «inglés» (masculine): lo hablo = I speak it." } },
+    { "question": { "es": "¿Cuál es la forma más cortés de preguntar por la estación a un desconocido?", "en": "What's the most polite way to ask a stranger for the station?" }, "options": ["Disculpe, ¿me puede decir dónde está la estación?", "¿Dónde la estación?", "¡Oye, la estación!", "Dime la estación."], "correct": 0, "explanation": { "en": "«Disculpe» + «¿me puede decir…?» (usted) is the polite form." } },
+    { "question": { "es": "«Saber» o «conocer»: «No ___ esta ciudad.»", "en": "«Saber» or «conocer»: «No ___ esta ciudad.»" }, "options": ["conozco", "sé", "sabo", "conoco"], "correct": 0, "explanation": { "en": "Places and people use «conocer»: no conozco esta ciudad." } },
+    { "question": { "es": "Tu amigo dice que Lima es la capital de Chile. ¿Qué le dices?", "en": "Your friend says Lima is the capital of Chile. What do you tell him?" }, "options": ["Te equivocas.", "Tienes razón.", "Ojalá.", "Más vale tarde que nunca."], "correct": 0, "explanation": { "en": "«Te equivocas» = you're wrong. Lima is the capital of Peru." } },
+    { "question": { "es": "Escuchas una palabra nueva: «chamba». ¿Qué preguntas?", "en": "You hear a new word: «chamba». What do you ask?" }, "options": ["¿Qué significa «chamba»?", "¿Cómo se dice «chamba»?", "¿Dónde está «chamba»?", "¿Quién es «chamba»?"], "correct": 0, "explanation": { "en": "«¿Qué significa…?» = what does… mean? (Chamba = job, informal in Mexico.)" } },
+    { "question": { "es": "Tu amiga habla muy rápido. ¿Cómo le pides que hable más lento?", "en": "Your friend talks very fast. How do you ask her to speak more slowly?" }, "options": ["¿Puedes hablar más despacio, por favor?", "¿Puedes hablar más rápido?", "¿Sabes hablar despacio?", "No puedes hablar."], "correct": 0, "explanation": { "en": "«Despacio» = slowly; «más despacio» = more slowly." } }
+  ],
+  "story": {
+    "title": "Palabras nuevas",
+    "text": "En la oficina, Emily aprende palabras nuevas todos los días. Hoy Diego dice: «¡Tengo mucha chamba!». Emily no entiende. «Perdón, ¿qué significa chamba?», pregunta. «Significa trabajo. Es una palabra muy mexicana», explica Diego. Después, Pablo le muestra un video y Emily dice: «¡Qué cool!». Pablo ríe: «Aquí decimos ¡qué padre!». A la hora de comer, Valeria pregunta: «¿Vamos ahorita al restaurante de enfrente?». Emily espera diez minutos, veinte, treinta… «¿No es ahorita?», pregunta. «Sí, ahorita… pero ahorita puede ser en una hora», responde Diego. Todos ríen. «Más vale tarde que nunca», dice Emily, y anota las palabras nuevas en su cuaderno.",
+    "en": "At the office, Emily learns new words every day. Today Diego says: «I have so much chamba!». Emily doesn't understand. «Sorry, what does chamba mean?» she asks. «It means work. It's a very Mexican word», explains Diego. Later, Pablo shows her a video and Emily says: «So cool!». Pablo laughs: «Here we say ¡qué padre!». At lunchtime, Valeria asks: «Shall we go ahorita to the restaurant across the street?». Emily waits ten minutes, twenty, thirty… «Isn't it ahorita?» she asks. «Yes, ahorita… but ahorita can mean in an hour», answers Diego. Everyone laughs. «Better late than never», says Emily, and she writes the new words in her notebook.",
+    "highlighted_words": ["no entiende", "qué significa", "Qué padre", "ahorita", "Más vale tarde que nunca"]
+  },
+  "arrange": [
+    { "sentence": "Perdón, ¿qué significa esa palabra?", "en": "Sorry, what does that word mean?" },
+    { "sentence": "¿Puedes hablar más despacio, por favor?", "en": "Can you speak more slowly, please?" },
+    { "sentence": "No sé dónde está la estación", "en": "I don't know where the station is." },
+    { "sentence": "Estudio español porque vivo aquí", "en": "I study Spanish because I live here." },
+    { "sentence": "No conozco esta ciudad", "en": "I don't know this city." },
+    { "sentence": "¿Cómo se dice «weekend» en español?", "en": "How do you say «weekend» in Spanish?" }
+  ],
+  "translate": [
+    { "answer": "No entiendo", "en": "I don't understand" },
+    { "answer": "No sé", "en": "I don't know" },
+    { "answer": "Tienes razón", "en": "You are right (tú)" },
+    { "answer": "¿Qué significa?", "en": "What does it mean?" },
+    { "answer": "¿Por qué estudias español?", "en": "Why do you study Spanish? (tú)" },
+    { "answer": "Porque me gusta", "en": "Because I like it" }
+  ]
+}

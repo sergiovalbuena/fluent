@@ -1,0 +1,84 @@
+{
+  "lesson": 19,
+  "slug": "leccion-19",
+  "icon": "🪐",
+  "title": { "es": "El mundo y el universo", "en": "The world and the universe" },
+  "grammar": [
+    { "structure": "el / la más … de", "example": "El Aconcagua es la montaña más alta de América.", "en": "Superlative: article + noun + más + adjective + de (not «en»)." },
+    { "structure": "mejor / peor / mayor / menor", "example": "Es la mejor vista del mundo.", "en": "Irregular comparatives: mejor (better / best), peor (worse), mayor (older / bigger), menor (younger / smaller)." },
+    { "structure": "-ísimo", "example": "El desierto es grandísimo.", "en": "«-ísimo» = extremely: grande → grandísimo, rico → riquísimo." },
+    { "structure": "al + infinitivo", "example": "Al mirar el cielo, vi una estrella fugaz.", "en": "«Al» + infinitive = when / upon doing something." },
+    { "structure": "voz pasiva con se", "example": "Se descubrió un planeta nuevo.", "en": "«Se» + verb in the 3rd person is the usual passive: se descubrió = was discovered." }
+  ],
+  "tips": [
+    { "en": "«América» in Spanish usually means the whole continent, from Canada to Argentina. The US is «Estados Unidos»." },
+    { "en": "«Río» covers both rivers that reach the sea and those that don't; Spanish doesn't make the French river distinction." },
+    { "en": "«Tierra» with a capital letter is the planet; «tierra» lowercase is soil or land." },
+    { "en": "«El mundo» is the world; «todo el mundo» means everybody: «Todo el mundo lo sabe»." },
+    { "en": "Latin America has some record-breakers: the Atacama is the driest desert, Angel Falls (Salto Ángel) the highest waterfall, the Amazon the largest rainforest." }
+  ],
+  "vocabulary": [
+    { "word": "el mundo", "en": "the world" },
+    { "word": "la Tierra", "en": "the Earth" },
+    { "word": "el planeta", "en": "the planet" },
+    { "word": "el sol", "en": "the sun" },
+    { "word": "la luna", "en": "the moon" },
+    { "word": "la estrella", "en": "the star" },
+    { "word": "el cielo", "en": "the sky" },
+    { "word": "el mar", "en": "the sea" },
+    { "word": "el océano", "en": "the ocean" },
+    { "word": "el río", "en": "the river" },
+    { "word": "la montaña", "en": "the mountain" },
+    { "word": "el volcán", "en": "the volcano" },
+    { "word": "el desierto", "en": "the desert" },
+    { "word": "la selva", "en": "the jungle, the rainforest" },
+    { "word": "la cueva", "en": "the cave" },
+    { "word": "la isla", "en": "the island" }
+  ],
+  "phrases": [
+    { "phrase": "Es la montaña más alta del mundo.", "en": "It's the highest mountain in the world." },
+    { "phrase": "Hay ocho planetas en el sistema solar.", "en": "There are eight planets in the solar system." },
+    { "phrase": "Esta noche hay luna llena.", "en": "There's a full moon tonight." },
+    { "phrase": "Al mirar el cielo, vi una estrella fugaz.", "en": "Looking at the sky, I saw a shooting star." },
+    { "phrase": "Creo que vi un ovni.", "en": "I think I saw a UFO." },
+    { "phrase": "Ojalá haga buen tiempo mañana.", "en": "I hope the weather's nice tomorrow." },
+    { "phrase": "La Tierra está amenazada por la contaminación.", "en": "The Earth is threatened by pollution." },
+    { "phrase": "Hay que cuidar el planeta.", "en": "We have to look after the planet." },
+    { "phrase": "Es la mejor vista de la ciudad.", "en": "It's the best view of the city." },
+    { "phrase": "El volcán está activo.", "en": "The volcano is active." },
+    { "phrase": "Todo el mundo lo sabe.", "en": "Everybody knows it." },
+    { "phrase": "¡Es grandísimo!", "en": "It's huge!" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Cuántos planetas hay en nuestro sistema solar?", "en": "How many planets are there in our solar system?" }, "options": ["ocho", "nueve", "siete", "diez"], "correct": 0, "explanation": { "en": "Eight planets since Pluto became a dwarf planet in 2006." } },
+    { "question": { "es": "El Amazonas cruza varios países y llega al océano Atlántico. ¿Qué es?", "en": "The Amazon crosses several countries and reaches the Atlantic. What is it?" }, "options": ["un río", "un lago", "un volcán", "un desierto"], "correct": 0, "explanation": { "en": "«Río» = river. The Amazon is one of the longest in the world." } },
+    { "question": { "es": "Completa: «___ mirar el cielo, vi una estrella fugaz.»", "en": "Complete: «___ mirar el cielo, vi una estrella fugaz.»" }, "options": ["Al", "En", "Por", "Para"], "correct": 0, "explanation": { "en": "«Al» + infinitive = when / upon doing something." } },
+    { "question": { "es": "Crees que anoche viste algo raro en el cielo. ¿Cómo lo dices?", "en": "You think you saw something strange in the sky last night. How do you say it?" }, "options": ["Creo que vi un ovni.", "Creo ver un ovni mañana.", "Creo que veré un ovni ayer.", "Creo un ovni visto."], "correct": 0, "explanation": { "en": "«Creo que» + past tense (vi)." } },
+    { "question": { "es": "Completa: «Ojalá ___ buen tiempo mañana.»", "en": "Complete: «Ojalá ___ buen tiempo mañana.»" }, "options": ["haga", "hace", "hará", "hizo"], "correct": 0, "explanation": { "en": "«Ojalá» is followed by the subjunctive: haga." } },
+    { "question": { "es": "Pasa a voz pasiva con «se»: «Descubrieron un planeta nuevo.»", "en": "Make it passive with «se»: «Descubrieron un planeta nuevo.»" }, "options": ["Se descubrió un planeta nuevo.", "Se descubrieron un planeta nuevo.", "Un planeta se descubre ayer.", "Se ha descubrir un planeta."], "correct": 0, "explanation": { "en": "Se + 3rd person singular agreeing with «planeta»: se descubrió." } },
+    { "question": { "es": "Es un gran hueco natural en la montaña, oscuro y fresco. ¿Qué es?", "en": "It's a large natural hole in the mountain, dark and cool. What is it?" }, "options": ["una cueva", "una isla", "una colina", "una playa"], "correct": 0, "explanation": { "en": "«Cueva» = cave." } },
+    { "question": { "es": "Completa: «Hay que actuar ___ proteger el planeta.»", "en": "Complete: «Hay que actuar ___ proteger el planeta.»" }, "options": ["para", "por", "porque", "aunque"], "correct": 0, "explanation": { "en": "«Para» + infinitive = in order to." } }
+  ],
+  "story": {
+    "title": "Una noche en el desierto",
+    "text": "En vacaciones, Emily viaja con su hermano Kevin al desierto de Atacama, en Chile. Dicen que es el desierto más seco del mundo y uno de los mejores lugares para ver las estrellas. Por la noche hacen un tour astronómico. El guía, Ignacio, explica: «Aquí casi nunca llueve y no hay contaminación de luz. Por eso hay tantos telescopios.» Al mirar el cielo, Emily se queda sin palabras. «¡Es grandísimo! Nunca vi tantas estrellas.» Ignacio les muestra la Vía Láctea, Saturno y la luna. De repente, Kevin grita: «¡Una estrella fugaz!». «Pide un deseo», dice Emily. Kevin cierra los ojos: «Ojalá volvamos el próximo año.»",
+    "en": "On vacation, Emily travels with her brother Kevin to the Atacama Desert in Chile. They say it's the driest desert in the world and one of the best places to see the stars. At night they take an astronomy tour. The guide, Ignacio, explains: «It almost never rains here and there's no light pollution. That's why there are so many telescopes.» Looking at the sky, Emily is speechless. «It's huge! I've never seen so many stars.» Ignacio shows them the Milky Way, Saturn and the moon. Suddenly Kevin shouts: «A shooting star!». «Make a wish», says Emily. Kevin closes his eyes: «I hope we come back next year.»",
+    "highlighted_words": ["el desierto más seco del mundo", "mejores", "estrellas", "Al mirar el cielo", "grandísimo", "la luna", "Ojalá"]
+  },
+  "arrange": [
+    { "sentence": "Es la montaña más alta del país", "en": "It's the highest mountain in the country." },
+    { "sentence": "Esta noche hay luna llena", "en": "Tonight there's a full moon." },
+    { "sentence": "Al mirar el cielo vi una estrella", "en": "Looking at the sky I saw a star." },
+    { "sentence": "Hay que cuidar el planeta", "en": "We have to look after the planet." },
+    { "sentence": "Ojalá haga buen tiempo mañana", "en": "I hope the weather's nice tomorrow." },
+    { "sentence": "El río más largo es el Amazonas", "en": "The longest river is the Amazon." }
+  ],
+  "translate": [
+    { "answer": "Es el mejor del mundo", "en": "It is the best in the world" },
+    { "answer": "Hay ocho planetas", "en": "There are eight planets" },
+    { "answer": "Me gusta mirar las estrellas", "en": "I like looking at the stars" },
+    { "answer": "La luna es preciosa", "en": "The moon is beautiful", "accept": ["La luna es hermosa", "La luna es bonita", "La luna es bellísima"] },
+    { "answer": "Hay que cuidar el planeta", "en": "We have to take care of the planet", "accept": ["Tenemos que cuidar el planeta"] },
+    { "answer": "Todo el mundo lo sabe", "en": "Everybody knows it" }
+  ]
+}

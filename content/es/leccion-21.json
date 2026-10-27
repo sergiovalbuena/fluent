@@ -1,0 +1,84 @@
+{
+  "lesson": 21,
+  "slug": "leccion-21",
+  "icon": "⏰",
+  "title": { "es": "La hora y las medidas", "en": "Time and measurements" },
+  "grammar": [
+    { "structure": "es la una / son las dos", "example": "Es la una y media. Son las tres y cuarto.", "en": "«Es la una» for one o'clock, «son las…» for all the others. Add «y cuarto», «y media», «menos cuarto»." },
+    { "structure": "a las + hora", "example": "La reunión es a las nueve.", "en": "At what time: «a la una», «a las cinco»." },
+    { "structure": "hace + tiempo + que / desde hace", "example": "Hace veinte minutos que te espero. Te espero desde hace veinte minutos.", "en": "For an action that started in the past and continues, Spanish uses the present: «hace … que» or «desde hace»." },
+    { "structure": "después de + infinitivo", "example": "Me acosté después de leer el libro.", "en": "«Antes de / después de» + infinitive: before / after doing." },
+    { "structure": "deber de + infinitivo (suposición)", "example": "Debo de haber olvidado las llaves.", "en": "«Deber de» expresses a guess: I must have forgotten the keys." }
+  ],
+  "tips": [
+    { "en": "In Mexico you'll often hear «un cuarto para las tres» (a quarter to three) and «faltan diez para las cinco» instead of «las tres menos cuarto»." },
+    { "en": "The 24-hour clock is used in schedules: «el tren sale a las 18:30» (dieciocho treinta)." },
+    { "en": "«Mediodía» = noon, «medianoche» = midnight. «De la mañana / de la tarde / de la noche» replace a.m. / p.m." },
+    { "en": "«La hora latina»: in many social situations arriving 15–30 minutes late is normal. For work and doctors, be on time." },
+    { "en": "Metric system everywhere: kilos, metros, litros. A «libra» is only used in a few markets (and in Puerto Rico)." }
+  ],
+  "vocabulary": [
+    { "word": "la hora", "en": "the hour, the time" },
+    { "word": "el minuto", "en": "the minute" },
+    { "word": "el segundo", "en": "the second" },
+    { "word": "y cuarto", "en": "quarter past" },
+    { "word": "y media", "en": "half past" },
+    { "word": "menos cuarto", "en": "quarter to" },
+    { "word": "el mediodía", "en": "noon" },
+    { "word": "la medianoche", "en": "midnight" },
+    { "word": "temprano", "en": "early" },
+    { "word": "tarde", "en": "late" },
+    { "word": "puntual", "en": "on time, punctual" },
+    { "word": "el reloj", "en": "the clock, the watch" },
+    { "word": "el kilo", "en": "the kilogram" },
+    { "word": "el litro", "en": "the liter" },
+    { "word": "el centímetro", "en": "the centimeter" },
+    { "word": "medir", "en": "to measure" }
+  ],
+  "phrases": [
+    { "phrase": "¿Qué hora es?", "en": "What time is it?" },
+    { "phrase": "Es la una y media.", "en": "It's half past one." },
+    { "phrase": "Son las tres menos cuarto.", "en": "It's a quarter to three." },
+    { "phrase": "Es un cuarto para las tres.", "en": "It's a quarter to three. (Mexico)" },
+    { "phrase": "¿A qué hora empieza?", "en": "What time does it start?" },
+    { "phrase": "A las ocho en punto.", "en": "At eight o'clock sharp." },
+    { "phrase": "Mi reloj está adelantado.", "en": "My watch is fast." },
+    { "phrase": "Hace veinte minutos que te espero.", "en": "I've been waiting for you for twenty minutes." },
+    { "phrase": "Llego en cinco minutos.", "en": "I'll be there in five minutes." },
+    { "phrase": "Debo de haber olvidado las llaves.", "en": "I must have forgotten the keys." },
+    { "phrase": "Mide dos metros de largo.", "en": "It's two meters long." },
+    { "phrase": "Es necesario que el vestido esté listo mañana.", "en": "The dress needs to be ready tomorrow." }
+  ],
+  "qa": [
+    { "question": { "es": "Son las 2:45. ¿Cómo lo dices?", "en": "It's 2:45. How do you say it?" }, "options": ["Son las tres menos cuarto.", "Son las dos menos cuarto.", "Son las dos y cuarto.", "Es la tres menos cuarto."], "correct": 0, "explanation": { "en": "2:45 = three minus a quarter: «las tres menos cuarto» (or «un cuarto para las tres»)." } },
+    { "question": { "es": "¿Cuál es correcto?", "en": "Which is correct?" }, "options": ["Es la una y media.", "Son la una y media.", "Es las una y media.", "Está la una y media."], "correct": 0, "explanation": { "en": "One o'clock is singular: «es la una»." } },
+    { "question": { "es": "Tu reloj marca las 10:10, pero son las 10:00. ¿Qué dices?", "en": "Your watch says 10:10, but it's 10:00. What do you say?" }, "options": ["Mi reloj está adelantado.", "Mi reloj está atrasado.", "Mi reloj es puntual.", "Mi reloj se paró."], "correct": 0, "explanation": { "en": "«Adelantado» = fast; «atrasado» = slow." } },
+    { "question": { "es": "Completa: «Te espero ___ veinte minutos.» (y sigo esperando)", "en": "Complete: «Te espero ___ veinte minutos.» (and I'm still waiting)" }, "options": ["desde hace", "durante", "hace que", "para"], "correct": 0, "explanation": { "en": "Ongoing action: present + «desde hace»." } },
+    { "question": { "es": "Completa: «Me acosté después de ___ el libro.»", "en": "Complete: «Me acosté después de ___ el libro.»" }, "options": ["leer", "leí", "leyendo", "leo"], "correct": 0, "explanation": { "en": "«Después de» + infinitive." } },
+    { "question": { "es": "No encuentras tus llaves. Crees que probablemente las dejaste en la oficina. ¿Qué dices?", "en": "You can't find your keys. You think you probably left them at the office. What do you say?" }, "options": ["Debo de haberlas dejado en la oficina.", "Debo dejarlas en la oficina.", "Debía de dejar en la oficina.", "Debería las dejar en la oficina."], "correct": 0, "explanation": { "en": "«Deber de» + perfect infinitive = I must have…" } },
+    { "question": { "es": "Completa: «Es necesario que el vestido ___ listo mañana.»", "en": "Complete: «Es necesario que el vestido ___ listo mañana.»" }, "options": ["esté", "está", "estará", "estaría"], "correct": 0, "explanation": { "en": "«Es necesario que» takes the subjunctive: esté." } },
+    { "question": { "es": "La reunión empieza exactamente a las ocho, ni un minuto más tarde. ¿Cómo lo dices?", "en": "The meeting starts at exactly eight, not a minute later. How do you say it?" }, "options": ["A las ocho en punto.", "A las ocho y punto.", "A las ocho puntual de.", "En las ocho exacto."], "correct": 0, "explanation": { "en": "«En punto» = sharp, o'clock exactly." } }
+  ],
+  "story": {
+    "title": "La hora latina",
+    "text": "Diego invita a Emily a una fiesta el sábado «a las ocho». Emily, muy puntual, llega a las ocho en punto. Toca el timbre. Diego abre la puerta en pantalones cortos y con el pelo mojado. «¡Emily! ¿Qué hora es?» «Son las ocho», responde ella. «¡Ah, claro! Es que aquí, a las ocho significa a las nueve, más o menos», ríe Diego. Emily lo ayuda a preparar la botana: guacamole, totopos y unas aguas frescas. A las nueve y cuarto llega el primer invitado. A las diez, la casa está llena. A medianoche, Emily mira su reloj y bosteza. «Hace cuatro horas que estoy aquí», piensa. Pero la fiesta apenas empieza.",
+    "en": "Diego invites Emily to a party on Saturday «at eight». Emily, very punctual, arrives at eight on the dot. She rings the bell. Diego opens the door in shorts with wet hair. «Emily! What time is it?» «It's eight», she answers. «Ah, of course! Here, eight o'clock means nine, more or less», laughs Diego. Emily helps him prepare the snacks: guacamole, tortilla chips and some fruit waters. At a quarter past nine the first guest arrives. By ten the house is full. At midnight, Emily looks at her watch and yawns. «I've been here for four hours», she thinks. But the party is just getting started.",
+    "highlighted_words": ["a las ocho", "puntual", "en punto", "Qué hora es", "Son las ocho", "nueve y cuarto", "medianoche", "Hace cuatro horas"]
+  },
+  "arrange": [
+    { "sentence": "¿A qué hora empieza la película?", "en": "What time does the movie start?" },
+    { "sentence": "Son las seis y media de la tarde", "en": "It's half past six in the evening." },
+    { "sentence": "Hace una hora que te espero", "en": "I've been waiting for you for an hour." },
+    { "sentence": "El tren sale a las ocho en punto", "en": "The train leaves at eight o'clock sharp." },
+    { "sentence": "Me acuesto después de cenar", "en": "I go to bed after having dinner." },
+    { "sentence": "Llego en cinco minutos", "en": "I'll be there in five minutes." }
+  ],
+  "translate": [
+    { "answer": "¿Qué hora es?", "en": "What time is it?" },
+    { "answer": "Es la una", "en": "It is one o'clock" },
+    { "answer": "Son las tres y media", "en": "It is half past three" },
+    { "answer": "Llego tarde", "en": "I am late", "accept": ["Voy tarde", "Estoy llegando tarde"] },
+    { "answer": "A las ocho en punto", "en": "At eight o'clock sharp" },
+    { "answer": "¿A qué hora empieza?", "en": "What time does it start?" }
+  ]
+}

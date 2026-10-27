@@ -1,0 +1,84 @@
+{
+  "lesson": 8,
+  "slug": "leccion-08",
+  "icon": "🌎",
+  "title": { "es": "Países y nacionalidades", "en": "Countries and nationalities" },
+  "grammar": [
+    { "structure": "ser de + país", "example": "Soy de Estados Unidos. Ella es de Perú.", "en": "Origin: «ser de» + country or city." },
+    { "structure": "nacionalidad: -o / -a, -és / -esa", "example": "mexicano, mexicana · inglés, inglesa", "en": "Nationalities agree in gender. Those ending in -és add -a and lose the accent: francés → francesa." },
+    { "structure": "minúsculas", "example": "Soy estadounidense y hablo inglés.", "en": "Nationalities and languages are lowercase in Spanish." },
+    { "structure": "hablar + idioma", "example": "Hablo inglés y un poco de español.", "en": "No article after «hablar»: hablo español (not «el español»)." },
+    { "structure": "ir a + lugar", "example": "Voy a Colombia en mayo.", "en": "«Ir a» + place = to go to. Countries normally don't take an article: a Colombia, a Chile." }
+  ],
+  "tips": [
+    { "en": "«Americano» can mean «from the Americas» for many Latin Americans. «Estadounidense» is the precise word for someone from the US, though «americano» is also common." },
+    { "en": "Some countries take an article: el Perú (optional), los Estados Unidos (often without «los»), la India." },
+    { "en": "There are 21 countries with Spanish as an official language, including Equatorial Guinea in Africa." },
+    { "en": "In Spain the language is often called «castellano»; in Latin America both «español» and «castellano» are used (Argentina and Chile prefer «castellano»)." },
+    { "en": "People from Mexico City are «chilangos» (informal), from Buenos Aires «porteños», from Bogotá «rolos» or «bogotanos»." }
+  ],
+  "vocabulary": [
+    { "word": "el país", "en": "the country" },
+    { "word": "la ciudad", "en": "the city" },
+    { "word": "el idioma", "en": "the language" },
+    { "word": "la nacionalidad", "en": "the nationality" },
+    { "word": "México", "en": "Mexico" },
+    { "word": "Estados Unidos", "en": "the United States" },
+    { "word": "España", "en": "Spain" },
+    { "word": "Colombia", "en": "Colombia" },
+    { "word": "Argentina", "en": "Argentina" },
+    { "word": "mexicano", "en": "Mexican" },
+    { "word": "estadounidense", "en": "American (from the US)" },
+    { "word": "español", "en": "Spanish (person, language)" },
+    { "word": "inglés", "en": "English (person, language)" },
+    { "word": "canadiense", "en": "Canadian" },
+    { "word": "extranjero", "en": "foreigner, foreign" },
+    { "word": "la frontera", "en": "the border" }
+  ],
+  "phrases": [
+    { "phrase": "¿De dónde eres?", "en": "Where are you from?" },
+    { "phrase": "Soy de Estados Unidos.", "en": "I'm from the United States." },
+    { "phrase": "Soy estadounidense.", "en": "I'm American." },
+    { "phrase": "¿Qué idiomas hablas?", "en": "What languages do you speak?" },
+    { "phrase": "Hablo inglés y un poco de español.", "en": "I speak English and a little Spanish." },
+    { "phrase": "Vivo en México desde enero.", "en": "I've lived in Mexico since January." },
+    { "phrase": "¿Conoces Colombia?", "en": "Have you been to Colombia?" },
+    { "phrase": "Mi familia es de origen italiano.", "en": "My family is of Italian descent." },
+    { "phrase": "¡Vamos a Perú!", "en": "Let's go to Peru!" },
+    { "phrase": "Es la capital de Argentina.", "en": "It's the capital of Argentina." },
+    { "phrase": "Tienes un acento muy bonito.", "en": "You have a really nice accent." },
+    { "phrase": "Soy extranjera.", "en": "I'm a foreigner (woman)." }
+  ],
+  "qa": [
+    { "question": { "es": "Alguien te pregunta «¿De dónde eres?». Eres de Canadá. ¿Qué respondes?", "en": "Someone asks «¿De dónde eres?». You're from Canada. What do you answer?" }, "options": ["Soy de Canadá.", "Estoy de Canadá.", "Soy en Canadá.", "Voy a Canadá."], "correct": 0, "explanation": { "en": "Origin: «ser de» + country." } },
+    { "question": { "es": "¿Qué es correcto para una mujer de México?", "en": "Which is correct for a woman from Mexico?" }, "options": ["Es mexicana.", "Es mexicano.", "Es Mexicana.", "Es de mexicana."], "correct": 0, "explanation": { "en": "Feminine -a, and nationalities are lowercase." } },
+    { "question": { "es": "¿Cuál es el femenino de «inglés»?", "en": "What is the feminine of «inglés»?" }, "options": ["inglesa", "inglésa", "ingla", "inglés"], "correct": 0, "explanation": { "en": "-és → -esa, and the written accent disappears: inglesa." } },
+    { "question": { "es": "Hablas inglés muy bien y español solo un poco. ¿Cómo lo dices?", "en": "You speak English very well and only a little Spanish. How do you say it?" }, "options": ["Hablo inglés y un poco de español.", "Hablo el inglés y poco el español.", "Soy inglés y poco español.", "Hablo inglés y un poco español de."], "correct": 0, "explanation": { "en": "No article after «hablar»; «un poco de» = a little." } },
+    { "question": { "es": "Propones a tus amigos un viaje a Perú. ¿Qué dices?", "en": "You suggest a trip to Peru to your friends. What do you say?" }, "options": ["¡Vamos a Perú!", "¡Vamos en Perú!", "¡Vamos de Perú!", "¡Vayan Perú!"], "correct": 0, "explanation": { "en": "«Ir a» + place; «vamos» = let's go." } },
+    { "question": { "es": "Llegaste a México en enero y sigues aquí. ¿Cómo lo dices?", "en": "You arrived in Mexico in January and you're still here. How do you say it?" }, "options": ["Vivo en México desde enero.", "Vivo en México en enero.", "Viví en México desde enero.", "Vivo a México desde enero."], "correct": 0, "explanation": { "en": "Spanish uses the present with «desde»: vivo aquí desde enero = I've lived here since January." } },
+    { "question": { "es": "Alguien de Bogotá te pregunta si has visitado su país. ¿Qué te pregunta?", "en": "Someone from Bogotá asks whether you've visited their country. What do they ask?" }, "options": ["¿Conoces Colombia?", "¿Sabes Colombia?", "¿Eres Colombia?", "¿Hablas Colombia?"], "correct": 0, "explanation": { "en": "«Conocer» a place = to have been there, to know it." } },
+    { "question": { "es": "¿Qué palabra describe a alguien de Estados Unidos con precisión?", "en": "Which word precisely describes someone from the US?" }, "options": ["estadounidense", "estadounido", "unidense", "estadista"], "correct": 0, "explanation": { "en": "«Estadounidense» is the precise term; it's the same for men and women." } }
+  ],
+  "story": {
+    "title": "Una clase internacional",
+    "text": "Los lunes y los miércoles, Emily tiene clase de español en una escuela del centro. Su grupo es muy internacional. Hans es alemán y trabaja en una empresa de autos. Yuki es japonesa, toca el violín y habla cuatro idiomas. Tom y Sarah son canadienses, de Toronto, y viven en México desde hace un año. La profesora, Lucía, es colombiana, de Medellín. El primer día, Lucía pregunta: «¿De dónde son y por qué estudian español?». Emily responde: «Soy estadounidense, de Chicago. Estudio español porque vivo aquí y quiero hablar con mis vecinos.» Al final de la clase, Lucía dice: «En diciembre vamos a hacer una fiesta con comida de todos sus países.»",
+    "en": "On Mondays and Wednesdays, Emily has Spanish class at a school downtown. Her group is very international. Hans is German and works at a car company. Yuki is Japanese, plays the violin and speaks four languages. Tom and Sarah are Canadian, from Toronto, and have lived in Mexico for a year. The teacher, Lucía, is Colombian, from Medellín. On the first day, Lucía asks: «Where are you from and why are you studying Spanish?». Emily answers: «I'm American, from Chicago. I'm studying Spanish because I live here and I want to talk with my neighbors.» At the end of the class, Lucía says: «In December we're going to have a party with food from all your countries.»",
+    "highlighted_words": ["alemán", "japonesa", "idiomas", "canadienses", "colombiana", "De dónde son", "estadounidense"]
+  },
+  "arrange": [
+    { "sentence": "Soy de Chicago, en Estados Unidos", "en": "I'm from Chicago, in the United States." },
+    { "sentence": "Mi profesora es colombiana", "en": "My teacher is Colombian." },
+    { "sentence": "Hablo inglés y un poco de español", "en": "I speak English and a little Spanish." },
+    { "sentence": "Vivo en México desde enero", "en": "I've lived in Mexico since January." },
+    { "sentence": "Yuki habla cuatro idiomas", "en": "Yuki speaks four languages." },
+    { "sentence": "En mayo vamos a Argentina", "en": "In May we're going to Argentina." }
+  ],
+  "translate": [
+    { "answer": "¿De dónde eres?", "en": "Where are you from? (tú)" },
+    { "answer": "Soy estadounidense", "en": "I am American (from the US)", "accept": ["Soy de Estados Unidos"] },
+    { "answer": "Hablo un poco de español", "en": "I speak a little Spanish" },
+    { "answer": "Ella es mexicana", "en": "She is Mexican" },
+    { "answer": "¿Qué idiomas hablas?", "en": "What languages do you speak? (tú)" },
+    { "answer": "Vamos a Colombia", "en": "We are going to Colombia", "accept": ["Vamos a ir a Colombia"] }
+  ]
+}

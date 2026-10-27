@@ -1,0 +1,364 @@
+{
+  "lesson": 24,
+  "slug": "leccion-24",
+  "icon": "🖼️",
+  "title": {
+    "es": "El arte y los museos",
+    "en": "Art and museums"
+  },
+  "grammar": [
+    {
+      "structure": "pretérito irregular: hizo, pintó, fue",
+      "example": "Frida Kahlo pintó muchos autorretratos.",
+      "en": "Some preterites are irregular: hacer → hizo, poner → puso, estar → estuvo, tener → tuvo."
+    },
+    {
+      "structure": "de + material",
+      "example": "Esta escultura es de mármol.",
+      "en": "«Ser de» + material: de madera, de bronce, de mármol."
+    },
+    {
+      "structure": "no solo… sino (también)",
+      "example": "El arte no es solo pintura, sino también música.",
+      "en": "«No solo… sino también» = not only… but also."
+    },
+    {
+      "structure": "imperfecto para hábitos del pasado",
+      "example": "Antes, el arte servía a la religión.",
+      "en": "The imperfect describes what used to happen in general."
+    },
+    {
+      "structure": "¿podría decirme…?",
+      "example": "¿Podría decirme a qué hora abre el museo?",
+      "en": "Polite indirect question: ¿podría decirme + question word…?"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Many museums in Latin America are free on Sundays for residents. In Mexico City, the Museo Nacional de Antropología is a must."
+    },
+    {
+      "en": "«Cuadro» or «pintura» = a painting. «Pintura» also means paint."
+    },
+    {
+      "en": "Muralism (Diego Rivera, Orozco, Siqueiros) put huge paintings on public walls so everyone could see art, not only museum visitors."
+    },
+    {
+      "en": "«Taquilla» = ticket office (Mexico, Spain); «boletería» in much of South America."
+    },
+    {
+      "en": "In museums you'll see «Prohibido tocar» (do not touch) and «No se permite usar flash»."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "el arte",
+      "en": "art"
+    },
+    {
+      "word": "la galería",
+      "en": "the gallery"
+    },
+    {
+      "word": "la exposición",
+      "en": "the exhibition"
+    },
+    {
+      "word": "el cuadro",
+      "en": "the painting"
+    },
+    {
+      "word": "el pintor",
+      "en": "the painter"
+    },
+    {
+      "word": "la pintura",
+      "en": "the painting, the paint"
+    },
+    {
+      "word": "la escultura",
+      "en": "the sculpture"
+    },
+    {
+      "word": "el mural",
+      "en": "the mural"
+    },
+    {
+      "word": "el autorretrato",
+      "en": "the self-portrait"
+    },
+    {
+      "word": "la obra",
+      "en": "the work (of art)"
+    },
+    {
+      "word": "la taquilla",
+      "en": "the ticket office"
+    },
+    {
+      "word": "la entrada",
+      "en": "the entrance, the ticket"
+    },
+    {
+      "word": "el guía",
+      "en": "the guide"
+    },
+    {
+      "word": "el mármol",
+      "en": "the marble"
+    },
+    {
+      "word": "la madera",
+      "en": "the wood"
+    },
+    {
+      "word": "antiguo",
+      "en": "old, ancient"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "¿Dónde se compran las entradas?",
+      "en": "Where do you buy the tickets?"
+    },
+    {
+      "phrase": "Dos entradas, por favor.",
+      "en": "Two tickets, please."
+    },
+    {
+      "phrase": "¿Podría decirme a qué hora cierra?",
+      "en": "Could you tell me what time it closes?"
+    },
+    {
+      "phrase": "¿Hay visitas guiadas?",
+      "en": "Are there guided tours?"
+    },
+    {
+      "phrase": "Este cuadro es de Frida Kahlo.",
+      "en": "This painting is by Frida Kahlo."
+    },
+    {
+      "phrase": "La escultura es de mármol.",
+      "en": "The sculpture is made of marble."
+    },
+    {
+      "phrase": "Me encanta el arte moderno.",
+      "en": "I love modern art."
+    },
+    {
+      "phrase": "No se permite tomar fotos con flash.",
+      "en": "Flash photography isn't allowed."
+    },
+    {
+      "phrase": "El arte no es solo pintura.",
+      "en": "Art isn't only painting."
+    },
+    {
+      "phrase": "La pirámide fue construida hace siglos.",
+      "en": "The pyramid was built centuries ago."
+    },
+    {
+      "phrase": "Te llevo al museo mañana.",
+      "en": "I'll take you to the museum tomorrow."
+    },
+    {
+      "phrase": "¡Qué obra tan impresionante!",
+      "en": "What an impressive work!"
+    }
+  ],
+  "qa": [
+    {
+      "question": {
+        "es": "Completa: «Esta estatua es ___ mármol.»",
+        "en": "Complete: «Esta estatua es ___ mármol.»"
+      },
+      "options": [
+        "de",
+        "en",
+        "con",
+        "del"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "Material: ser de + material."
+      }
+    },
+    {
+      "question": {
+        "es": "Pasa a voz pasiva: «Construyeron la torre en 1200.»",
+        "en": "Make it passive: «Construyeron la torre en 1200.»"
+      },
+      "options": [
+        "La torre fue construida en 1200.",
+        "La torre construyó en 1200.",
+        "La torre era construyendo en 1200.",
+        "La torre fue construido en 1200."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "«Fue construida» agrees with «la torre»."
+      }
+    },
+    {
+      "question": {
+        "es": "¿Dónde compras las entradas del museo?",
+        "en": "Where do you buy museum tickets?"
+      },
+      "options": [
+        "en la taquilla",
+        "en el mural",
+        "en la escultura",
+        "en el autorretrato"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "«Taquilla» = ticket office."
+      }
+    },
+    {
+      "question": {
+        "es": "Tu amigo cree que el arte es solo pintura. No estás de acuerdo. ¿Qué dices?",
+        "en": "Your friend thinks art is only painting. You disagree. What do you say?"
+      },
+      "options": [
+        "El arte no es solo pintura.",
+        "El arte es solo pintura.",
+        "El arte ya no es pintura.",
+        "El arte nunca es pintura."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "«No es solo…» = it isn't only…"
+      }
+    },
+    {
+      "question": {
+        "es": "Completa: «Diego Rivera ___ muchos murales en la Ciudad de México.» (hacer)",
+        "en": "Complete: «Diego Rivera ___ muchos murales en la Ciudad de México.» (hacer)"
+      },
+      "options": [
+        "hizo",
+        "hació",
+        "hacía mañana",
+        "hará"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "«Hacer» has an irregular preterite: hizo."
+      }
+    },
+    {
+      "question": {
+        "es": "En el Museo Frida Kahlo admiras una obra colgada en la pared. ¿Qué es?",
+        "en": "At the Frida Kahlo Museum you admire a work hanging on the wall. What is it?"
+      },
+      "options": [
+        "un cuadro",
+        "una escultura",
+        "una taquilla",
+        "una entrada"
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "«Cuadro» = painting."
+      }
+    },
+    {
+      "question": {
+        "es": "¿Qué frase describe una costumbre del pasado?",
+        "en": "Which sentence describes a past habit?"
+      },
+      "options": [
+        "Antes, el arte servía a la religión.",
+        "En 1200 el arte sirvió a la religión.",
+        "El arte servirá a la religión.",
+        "El arte sirve a la religión."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "The imperfect «servía» describes what used to happen."
+      }
+    },
+    {
+      "question": {
+        "es": "¿Cómo preguntas con cortesía a qué hora abre la catedral?",
+        "en": "How do you ask politely what time the cathedral opens?"
+      },
+      "options": [
+        "¿Podría decirme a qué hora abre la catedral?",
+        "¿A qué hora abre la catedral, tú?",
+        "Dime la catedral.",
+        "La catedral abre cuándo, rápido."
+      ],
+      "correct": 0,
+      "explanation": {
+        "en": "«¿Podría decirme…?» is the polite form."
+      }
+    }
+  ],
+  "story": {
+    "title": "La Casa Azul",
+    "text": "Un domingo, Emily y Nicolás, el fotógrafo, visitan la Casa Azul en Coyoacán, donde vivió Frida Kahlo. Hay una fila larga en la taquilla. «Dos entradas, por favor», pide Nicolás. Dentro, la casa está llena de colores: paredes azules, cocina amarilla y un jardín con plantas enormes. Emily se queda mucho tiempo frente a un autorretrato. «Frida pintó muchos autorretratos porque pasaba mucho tiempo sola, en cama», explica la guía. También ven los vestidos tradicionales que usaba y los pinceles de su estudio. Después, comen en un café de la plaza. «El arte no es solo lo que ves en la pared», dice Nicolás. «También es cómo vivía ella.» Emily está de acuerdo.",
+    "en": "One Sunday, Emily and Nicolás, the photographer, visit the Blue House in Coyoacán, where Frida Kahlo lived. There's a long line at the ticket office. «Two tickets, please», Nicolás asks. Inside, the house is full of color: blue walls, a yellow kitchen and a garden with huge plants. Emily spends a long time in front of a self-portrait. «Frida painted many self-portraits because she spent a lot of time alone, in bed», the guide explains. They also see the traditional dresses she used to wear and the brushes from her studio. Afterwards they eat at a café on the square. «Art isn't only what you see on the wall», says Nicolás. «It's also how she lived.» Emily agrees.",
+    "highlighted_words": [
+      "taquilla",
+      "Dos entradas",
+      "autorretrato",
+      "pintó",
+      "la guía",
+      "El arte no es solo"
+    ]
+  },
+  "arrange": [
+    {
+      "sentence": "Dos entradas para el museo, por favor",
+      "en": "Two tickets for the museum, please."
+    },
+    {
+      "sentence": "Este cuadro es de Diego Rivera",
+      "en": "This painting is by Diego Rivera."
+    },
+    {
+      "sentence": "La escultura es de madera",
+      "en": "The sculpture is made of wood."
+    },
+    {
+      "sentence": "¿Podría decirme a qué hora cierra?",
+      "en": "Could you tell me what time it closes?"
+    },
+    {
+      "sentence": "No se permite tomar fotos con flash",
+      "en": "Flash photography isn't allowed."
+    },
+    {
+      "sentence": "Frida pintó muchos autorretratos",
+      "en": "Frida painted many self-portraits."
+    }
+  ],
+  "translate": [
+    {
+      "answer": "Dos entradas, por favor",
+      "en": "Two tickets, please"
+    },
+    {
+      "answer": "Me encanta el arte",
+      "en": "I love art"
+    },
+    {
+      "answer": "¿Hay visitas guiadas?",
+      "en": "Are there guided tours?"
+    },
+    {
+      "answer": "Es de mármol",
+      "en": "It is made of marble"
+    },
+    {
+      "answer": "¿A qué hora cierra el museo?",
+      "en": "What time does the museum close?"
+    },
+    {
+      "answer": "Es un cuadro muy famoso",
+      "en": "It is a very famous painting"
+    }
+  ]
+}

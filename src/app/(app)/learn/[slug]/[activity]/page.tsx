@@ -62,6 +62,8 @@ interface ArrangeSentence {
 interface TranslateItem {
   prompt: string
   answer: string
+  /** Other correct answers */
+  accept?: string[]
   hint?: string
 }
 
@@ -78,7 +80,7 @@ interface LessonContent {
 
 type RawItem = {
   word?: string; translation?: string; translations?: Record<string, string>; icon?: string; example?: string
-  phrase?: string; prompt?: string; answer?: string; hint?: string
+  phrase?: string; prompt?: string; answer?: string; accept?: string[]; hint?: string
 }
 
 interface RawContent {
@@ -136,6 +138,7 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
         // `translations` on a translate item holds the prompt in other languages
         prompt: i.translations?.[translationLang] ?? i.prompt ?? '',
         answer: i.answer ?? '',
+        accept: i.accept,
         hint: i.hint,
       })),
     }
@@ -143,16 +146,21 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
   return {}
 }
 
-function fuzzyMatch(input: string, answer: string): boolean {
-  const normalize = (s: string) =>
-    s
+// Spanish usually drops the subject pronoun: «Estoy cansado» = «Yo estoy cansado»
+const SPANISH_SUBJECT = /^(yo|tu|el|ella|usted|nosotros|nosotras|ustedes|ellos|ellas|vosotros|vosotras) /
+
+function fuzzyMatch(input: string, answers: string[], languageCode: string): boolean {
+  const normalize = (s: string) => {
+    const plain = s
       .toLowerCase()
       .normalize('NFD')
       .replace(/\p{M}/gu, '')
       .replace(/[¿¡.,!?;:'"]/g, '')
       .replace(/\s+/g, ' ')
       .trim()
-  return normalize(input) === normalize(answer)
+    return languageCode === 'es' ? plain.replace(SPANISH_SUBJECT, '') : plain
+  }
+  return answers.some(a => normalize(input) === normalize(a))
 }
 
 function shuffleArray<T>(arr: T[]): T[] {
@@ -2176,7 +2184,7 @@ export default function LessonPage() {
   function checkTranslateAnswer() {
     const item = translateItems[translateIndex]
     if (!item) return
-    const isCorrect = fuzzyMatch(translateInput, item.answer)
+    const isCorrect = fuzzyMatch(translateInput, [item.answer, ...(item.accept ?? [])], languageCode)
     setTranslateIsCorrect(isCorrect)
     setTranslateChecked(true)
     if (isCorrect) setTranslateCorrectCount(c => c + 1)

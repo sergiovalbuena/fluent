@@ -1,0 +1,84 @@
+{
+  "lesson": 4,
+  "slug": "leccion-04",
+  "icon": "🔢",
+  "title": { "es": "Los números", "en": "Numbers" },
+  "grammar": [
+    { "structure": "tener + años", "example": "Tengo treinta y dos años.", "en": "Age uses «tener» (to have): «tengo 32 años» = I am 32 (years old)." },
+    { "structure": "hay", "example": "Hay tres sillas en la cocina.", "en": "«Hay» = there is / there are. It never changes." },
+    { "structure": "¿cuánto cuesta? / ¿cuánto cuestan?", "example": "¿Cuánto cuesta el pan? · ¿Cuánto cuestan los tomates?", "en": "Use «cuesta» for one thing and «cuestan» for several." },
+    { "structure": "uno → un / una", "example": "un libro, una mesa, veintiún años", "en": "«Uno» becomes «un» before a masculine noun and «una» before a feminine one." },
+    { "structure": "treinta y uno, cuarenta y dos…", "example": "treinta y cinco, noventa y nueve", "en": "From 31 to 99, numbers use «y»: treinta y cinco. 16–29 are one word: dieciséis, veintidós." }
+  ],
+  "tips": [
+    { "en": "In most of Latin America decimals use a point and thousands a comma, like in English (1,500.50). In Spain, Argentina and Colombia it's the other way round (1.500,50)." },
+    { "en": "Phone numbers are usually read in pairs: 55 12 34 56 = «cincuenta y cinco, doce, treinta y cuatro, cincuenta y seis»." },
+    { "en": "«Cien» is exactly 100; from 101 on it's «ciento»: ciento uno, ciento veinte." },
+    { "en": "Hundreds agree with the noun: doscientos pesos, doscientas personas." },
+    { "en": "Ordinals (primero, segundo, tercero…) are mostly used up to «décimo». After that, people use normal numbers: el piso quince." }
+  ],
+  "vocabulary": [
+    { "word": "cero", "en": "zero" },
+    { "word": "uno", "en": "one" },
+    { "word": "cinco", "en": "five" },
+    { "word": "diez", "en": "ten" },
+    { "word": "quince", "en": "fifteen" },
+    { "word": "veinte", "en": "twenty" },
+    { "word": "treinta", "en": "thirty" },
+    { "word": "cincuenta", "en": "fifty" },
+    { "word": "cien", "en": "one hundred" },
+    { "word": "mil", "en": "one thousand" },
+    { "word": "la mitad", "en": "half" },
+    { "word": "la docena", "en": "the dozen" },
+    { "word": "el número", "en": "the number" },
+    { "word": "el precio", "en": "the price" },
+    { "word": "primero", "en": "first" },
+    { "word": "segundo", "en": "second" }
+  ],
+  "phrases": [
+    { "phrase": "¿Cuántos años tienes?", "en": "How old are you?" },
+    { "phrase": "Tengo treinta años.", "en": "I'm thirty years old." },
+    { "phrase": "¿Cuánto cuesta?", "en": "How much is it?" },
+    { "phrase": "Cuesta veinte pesos.", "en": "It costs twenty pesos." },
+    { "phrase": "¿Cuál es tu número de teléfono?", "en": "What's your phone number?" },
+    { "phrase": "¿Cuántos son?", "en": "How many are there?" },
+    { "phrase": "Somos cuatro.", "en": "There are four of us." },
+    { "phrase": "Media docena de huevos.", "en": "Half a dozen eggs." },
+    { "phrase": "Vivo en el tercer piso.", "en": "I live on the third floor." },
+    { "phrase": "Dos más dos son cuatro.", "en": "Two plus two is four." },
+    { "phrase": "Es demasiado caro.", "en": "It's too expensive." },
+    { "phrase": "¿Me hace un descuento?", "en": "Can you give me a discount?" }
+  ],
+  "qa": [
+    { "question": { "es": "Llegas a un restaurante con tres amigos. El mesero pregunta «¿Cuántos son?». ¿Qué respondes?", "en": "You arrive at a restaurant with three friends. The waiter asks «¿Cuántos son?». What do you answer?" }, "options": ["Somos cuatro.", "Somos tres.", "Tengo cuatro.", "Son cuatro años."], "correct": 0, "explanation": { "en": "You plus three friends = four: «Somos cuatro» (there are four of us)." } },
+    { "question": { "es": "Alguien te pregunta tu edad. Tienes 25 años. ¿Qué respondes?", "en": "Someone asks your age. You're 25. What do you answer?" }, "options": ["Tengo veinticinco años.", "Soy veinticinco años.", "Estoy veinticinco.", "Hay veinticinco años."], "correct": 0, "explanation": { "en": "Age uses «tener»: tengo veinticinco años." } },
+    { "question": { "es": "Quieres saber el precio de una camiseta. ¿Qué preguntas?", "en": "You want to know the price of a T-shirt. What do you ask?" }, "options": ["¿Cuánto cuesta?", "¿Cuántos años tiene?", "¿Cuántos son?", "¿Qué número es?"], "correct": 0, "explanation": { "en": "«¿Cuánto cuesta?» = how much is it?" } },
+    { "question": { "es": "Quieres seis huevos. ¿Qué pides en la tienda?", "en": "You want six eggs. What do you ask for at the store?" }, "options": ["media docena de huevos", "una docena de huevos", "la mitad de huevo", "seis docenas de huevos"], "correct": 0, "explanation": { "en": "«Media docena» = half a dozen = six." } },
+    { "question": { "es": "¿Cómo se escribe 45?", "en": "How do you write 45?" }, "options": ["cuarenta y cinco", "cuarentaycinco", "cuarenta cinco", "cuatro y cinco"], "correct": 0, "explanation": { "en": "From 31 to 99: tens + «y» + units, three separate words." } },
+    { "question": { "es": "Partes una pizza en dos partes iguales. ¿Qué comes tú?", "en": "You cut a pizza into two equal parts. How much do you eat?" }, "options": ["la mitad", "la docena", "el doble", "el tercero"], "correct": 0, "explanation": { "en": "«La mitad» = half." } },
+    { "question": { "es": "Completa: «En mi clase ___ veinte estudiantes.»", "en": "Complete: «En mi clase ___ veinte estudiantes.»" }, "options": ["hay", "son", "tienen", "están"], "correct": 0, "explanation": { "en": "«Hay» = there are. It's the same for one or many." } },
+    { "question": { "es": "El precio es muy alto para ti. ¿Qué le dices al vendedor?", "en": "The price is too high for you. What do you say to the seller?" }, "options": ["¿Me hace un descuento?", "¿Cuántos años tiene?", "Es muy barato.", "Somos cuatro."], "correct": 0, "explanation": { "en": "«¿Me hace un descuento?» = can you give me a discount?" } }
+  ],
+  "story": {
+    "title": "En el mercado",
+    "text": "Es domingo y Emily va al mercado con la señora Carmen. Hay muchos puestos de frutas, verduras y flores. «¿Cuánto cuestan los aguacates?», pregunta Emily. «Tres por veinte pesos, güera», responde el vendedor. Emily no entiende la palabra «güera». Carmen sonríe: «En México, así llaman a las personas rubias. Es cariñoso.» Emily compra tres aguacates, un kilo de tomates y media docena de huevos. Todo cuesta noventa y cinco pesos. Paga con un billete de cien. «Son cinco pesos de cambio», dice el vendedor. Después, Carmen compra flores para su nieto Mateo, porque mañana cumple siete años. «¿Siete años? ¡Qué grande!», dice Emily.",
+    "en": "It's Sunday and Emily goes to the market with Mrs. Carmen. There are lots of stalls with fruit, vegetables and flowers. «How much are the avocados?» asks Emily. «Three for twenty pesos, güera», answers the seller. Emily doesn't understand the word «güera». Carmen smiles: «In Mexico that's what they call blond people. It's affectionate.» Emily buys three avocados, a kilo of tomatoes and half a dozen eggs. Everything costs ninety-five pesos. She pays with a hundred-peso bill. «That's five pesos change», says the seller. Afterwards, Carmen buys flowers for her grandson Mateo, because tomorrow he turns seven. «Seven? He's so big!» says Emily.",
+    "highlighted_words": ["Cuánto cuestan", "veinte", "media docena", "noventa y cinco", "cien", "cinco", "siete años"]
+  },
+  "arrange": [
+    { "sentence": "Tengo treinta y dos años", "en": "I'm thirty-two years old." },
+    { "sentence": "¿Cuánto cuestan los tomates?", "en": "How much are the tomatoes?" },
+    { "sentence": "Hay veinte personas en la clase", "en": "There are twenty people in the class." },
+    { "sentence": "Vivo en el tercer piso", "en": "I live on the third floor." },
+    { "sentence": "Quiero media docena de huevos", "en": "I want half a dozen eggs." },
+    { "sentence": "Mi número es el cinco, cinco, doce", "en": "My number is five, five, twelve." }
+  ],
+  "translate": [
+    { "answer": "¿Cuántos años tienes?", "en": "How old are you? (tú)" },
+    { "answer": "Tengo veinte años", "en": "I am twenty years old" },
+    { "answer": "¿Cuánto cuesta?", "en": "How much does it cost?" },
+    { "answer": "Somos cuatro", "en": "There are four of us" },
+    { "answer": "Es demasiado caro", "en": "It is too expensive", "accept": ["Es muy caro"] },
+    { "answer": "Hay diez sillas", "en": "There are ten chairs" }
+  ]
+}

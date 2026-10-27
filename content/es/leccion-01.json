@@ -1,0 +1,84 @@
+{
+  "lesson": 1,
+  "slug": "leccion-01",
+  "icon": "👋",
+  "title": { "es": "Saludar y despedirse", "en": "Hello and goodbye" },
+  "grammar": [
+    { "structure": "ser: soy, eres, es", "example": "Soy Emily. Ella es Carmen.", "en": "The verb «ser» (to be) for who you are: soy (I am), eres (you are), es (he / she is)." },
+    { "structure": "estar: ¿cómo estás?", "example": "¿Cómo estás? — Estoy bien.", "en": "«Estar» (also to be) is for how you feel right now: estoy bien = I'm fine." },
+    { "structure": "tú / usted", "example": "¿Cómo estás tú? · ¿Cómo está usted?", "en": "«Tú» is informal; «usted» is polite (older people, strangers, at work) and takes the he / she form of the verb." },
+    { "structure": "me llamo… / ¿cómo te llamas?", "example": "Me llamo Emily. ¿Cómo te llamas?", "en": "To give your name, say «me llamo» (literally, I call myself)." },
+    { "structure": "¿ … ? / ¡ … !", "example": "¡Hola! ¿Qué tal?", "en": "Spanish opens questions and exclamations with an upside-down mark: ¿ and ¡." }
+  ],
+  "tips": [
+    { "en": "«Hola» works any time of day. Add «buenos días» before noon, «buenas tardes» in the afternoon and «buenas noches» after dark." },
+    { "en": "«Buenas noches» is both «good evening» and «good night»: you can say it when you arrive somewhere at night, not only when you go to bed." },
+    { "en": "In most of Latin America people greet with one kiss on the cheek (or a handshake at work). In Spain it's two kisses." },
+    { "en": "In Spain, «vosotros» is the informal plural «you». In Latin America everyone says «ustedes», formal or not, and that's what this course uses." },
+    { "en": "«Chao» (or «chau» in Argentina) is a very common casual goodbye in Latin America. «Adiós» can sound a bit final in some places." }
+  ],
+  "vocabulary": [
+    { "word": "hola", "en": "hello, hi" },
+    { "word": "buenos días", "en": "good morning" },
+    { "word": "buenas tardes", "en": "good afternoon" },
+    { "word": "buenas noches", "en": "good evening, good night" },
+    { "word": "adiós", "en": "goodbye" },
+    { "word": "chao", "en": "bye (casual)" },
+    { "word": "hasta luego", "en": "see you later" },
+    { "word": "hasta mañana", "en": "see you tomorrow" },
+    { "word": "nos vemos", "en": "see you" },
+    { "word": "bien", "en": "well, fine" },
+    { "word": "mal", "en": "badly, not well" },
+    { "word": "más o menos", "en": "so-so" },
+    { "word": "el vecino", "en": "the neighbor (man)" },
+    { "word": "la vecina", "en": "the neighbor (woman)" },
+    { "word": "el señor", "en": "the gentleman, Mr." },
+    { "word": "la señora", "en": "the lady, Mrs." }
+  ],
+  "phrases": [
+    { "phrase": "¿Cómo estás?", "en": "How are you? (informal)" },
+    { "phrase": "¿Cómo está usted?", "en": "How are you? (formal)" },
+    { "phrase": "¿Qué tal?", "en": "How's it going?" },
+    { "phrase": "Muy bien, gracias. ¿Y tú?", "en": "Very well, thanks. And you?" },
+    { "phrase": "Me llamo Emily.", "en": "My name is Emily." },
+    { "phrase": "¿Cómo te llamas?", "en": "What's your name?" },
+    { "phrase": "Mucho gusto.", "en": "Nice to meet you." },
+    { "phrase": "Igualmente.", "en": "Likewise." },
+    { "phrase": "Soy de Chicago.", "en": "I'm from Chicago." },
+    { "phrase": "Te presento a mi amiga Ana.", "en": "Let me introduce my friend Ana." },
+    { "phrase": "Saludos a tu mamá.", "en": "Say hello to your mom for me." },
+    { "phrase": "¡Que tengas un buen día!", "en": "Have a nice day!" }
+  ],
+  "qa": [
+    { "question": { "es": "Son las nueve de la mañana y ves a tu vecina. ¿Qué le dices?", "en": "It's 9 a.m. and you see your neighbor. What do you say to her?" }, "options": ["¡Buenos días!", "¡Buenas noches!", "¡Hasta mañana!", "¡Adiós!"], "correct": 0, "explanation": { "en": "In the morning you say «buenos días». «Buenas noches» is for the evening." } },
+    { "question": { "es": "Conoces a una señora mayor por primera vez. ¿Qué pregunta es la más adecuada?", "en": "You meet an older lady for the first time. Which question fits best?" }, "options": ["¿Cómo está usted?", "¿Qué onda?", "¿Cómo estás tú?", "¿Qué tal, amiga?"], "correct": 0, "explanation": { "en": "With older people and strangers, use «usted»: «¿Cómo está usted?»." } },
+    { "question": { "es": "Alguien te dice «Mucho gusto». ¿Qué respondes?", "en": "Someone says «Mucho gusto». What do you answer?" }, "options": ["Igualmente.", "De nada.", "Hasta luego.", "Más o menos."], "correct": 0, "explanation": { "en": "«Igualmente» = likewise. «De nada» answers «gracias»." } },
+    { "question": { "es": "Te despides de un compañero y lo vas a ver mañana. ¿Qué le dices?", "en": "You're saying goodbye to a classmate and you'll see him tomorrow. What do you say?" }, "options": ["¡Hasta mañana!", "¡Buenos días!", "¡Mucho gusto!", "¡Bienvenido!"], "correct": 0, "explanation": { "en": "«Hasta mañana» = see you tomorrow." } },
+    { "question": { "es": "Tu amigo te pregunta «¿Qué tal?» y no estás ni bien ni mal. ¿Qué respondes?", "en": "Your friend asks «¿Qué tal?» and you're neither good nor bad. What do you answer?" }, "options": ["Más o menos.", "Muy bien, gracias.", "Me llamo Ana.", "Igualmente."], "correct": 0, "explanation": { "en": "«Más o menos» = so-so." } },
+    { "question": { "es": "Quieres presentar a tu amiga Ana. ¿Qué dices?", "en": "You want to introduce your friend Ana. What do you say?" }, "options": ["Te presento a mi amiga Ana.", "Me llamo mi amiga Ana.", "Ana está de Chicago.", "Hasta luego, Ana."], "correct": 0, "explanation": { "en": "«Te presento a…» = let me introduce… (to you)." } },
+    { "question": { "es": "Llegas a una fiesta a las diez de la noche. ¿Cómo saludas?", "en": "You arrive at a party at 10 p.m. How do you greet people?" }, "options": ["¡Buenas noches!", "¡Buenos días!", "¡Buenas tardes!", "¡Hasta luego!"], "correct": 0, "explanation": { "en": "«Buenas noches» works as a greeting at night too, not only when you go to bed." } },
+    { "question": { "es": "Alguien te pregunta de dónde eres. Eres de Chicago. ¿Qué respondes?", "en": "Someone asks where you're from. You're from Chicago. What do you answer?" }, "options": ["Soy de Chicago.", "Estoy de Chicago.", "Me llamo Chicago.", "Es de Chicago."], "correct": 0, "explanation": { "en": "Origin uses «ser»: «soy de…». «Es de» means he / she is from." } }
+  ],
+  "story": {
+    "title": "La nueva vecina",
+    "text": "Emily es de Chicago, pero hoy está en la Ciudad de México. Es su primer día en el departamento nuevo. Son las nueve de la mañana y Emily sale con su café. Una señora abre la puerta de al lado. «¡Buenos días!», dice la señora. «¡Buenos días! Me llamo Emily. Soy la nueva vecina.» «Mucho gusto, Emily. Yo me llamo Carmen. ¿Cómo está?» «Muy bien, gracias. ¿Y usted?» «Bien, bien. ¡Bienvenida al edificio!» Emily sonríe. Un niño pasa en bicicleta y grita: «¡Hola, abuela!». «Es mi nieto, Mateo», explica Carmen. A las nueve y media, Emily tiene que ir a la oficina. «Hasta luego, señora Carmen.» «Hasta luego, Emily. ¡Que tenga un buen día!»",
+    "en": "Emily is from Chicago, but today she's in Mexico City. It's her first day in the new apartment. It's nine in the morning and Emily goes out with her coffee. A lady opens the door next door. «Good morning!» says the lady. «Good morning! My name is Emily. I'm the new neighbor.» «Nice to meet you, Emily. My name is Carmen. How are you?» «Very well, thank you. And you?» «Fine, fine. Welcome to the building!» Emily smiles. A boy rides past on a bike and shouts: «Hi, grandma!». «That's my grandson, Mateo», Carmen explains. At half past nine, Emily has to go to the office. «See you later, Mrs. Carmen.» «See you later, Emily. Have a nice day!»",
+    "highlighted_words": ["Buenos días", "Me llamo", "Mucho gusto", "Muy bien, gracias", "Hola", "Hasta luego"]
+  },
+  "arrange": [
+    { "sentence": "Me llamo Emily y soy de Chicago", "en": "My name is Emily and I'm from Chicago." },
+    { "sentence": "Mucho gusto, yo me llamo Carmen", "en": "Nice to meet you, my name is Carmen." },
+    { "sentence": "¿Cómo está usted, señora?", "en": "How are you, ma'am?" },
+    { "sentence": "Muy bien, gracias, ¿y tú?", "en": "Very well, thanks, and you?" },
+    { "sentence": "Te presento a mi amiga Ana", "en": "Let me introduce my friend Ana." },
+    { "sentence": "Hasta mañana, que tengas un buen día", "en": "See you tomorrow, have a nice day." }
+  ],
+  "translate": [
+    { "answer": "Buenos días", "en": "Good morning" },
+    { "answer": "Me llamo Emily", "en": "My name is Emily" },
+    { "answer": "¿Cómo estás?", "en": "How are you? (informal)" },
+    { "answer": "Mucho gusto", "en": "Nice to meet you", "accept": ["Encantado", "Encantada"] },
+    { "answer": "Soy de Chicago", "en": "I am from Chicago" },
+    { "answer": "Hasta luego", "en": "See you later", "accept": ["Nos vemos"] }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lesson": 15,
+  "slug": "leccion-15",
+  "icon": "🍽️",
+  "title": { "es": "Comida y bebidas", "en": "Food and drinks" },
+  "grammar": [
+    { "structure": "sin artículo: quiero pan", "example": "Quiero agua. No como carne.", "en": "For an unspecified amount, Spanish uses no article: quiero agua = I want (some) water." },
+    { "structure": "me trae… / ¿me pasas…?", "example": "¿Me trae la cuenta? ¿Me pasas la sal?", "en": "Polite requests with «me» + present: ¿me trae…? (usted), ¿me pasas…? (tú)." },
+    { "structure": "solo / nada más", "example": "Solo bebo té. Nada más un café, gracias.", "en": "«Solo» and «nada más» = only, just." },
+    { "structure": "tener hambre / sed", "example": "Tengo hambre. ¿Tienes sed?", "en": "Hunger and thirst use «tener»." },
+    { "structure": "preferiría / me gustaría", "example": "Preferiría un café.", "en": "The conditional (-ría) makes a preference softer and more polite." }
+  ],
+  "tips": [
+    { "en": "Lunch (la comida, el almuerzo) is the main meal in most of Latin America, usually between 1 and 4 p.m. Dinner (la cena) is lighter." },
+    { "en": "«Desayuno» is breakfast everywhere. In Mexico «la comida» means lunch; in Colombia and Peru it's «el almuerzo»." },
+    { "en": "«Jugo» (Latin America) = «zumo» (Spain) = juice. «Frijoles» (Mexico) = «porotos» (Argentina, Chile) = «judías / alubias» (Spain) = beans." },
+    { "en": "«¡Provecho!» or «¡Buen provecho!» is said to people eating, even strangers in a restaurant as you pass their table." },
+    { "en": "«Picante» = spicy. «¿Pica?» = Is it spicy? In Mexico, «no pica» can still be quite spicy for many visitors." }
+  ],
+  "vocabulary": [
+    { "word": "el desayuno", "en": "breakfast" },
+    { "word": "la comida", "en": "lunch (Mexico), food" },
+    { "word": "la cena", "en": "dinner" },
+    { "word": "el pan", "en": "the bread" },
+    { "word": "el arroz", "en": "the rice" },
+    { "word": "los frijoles", "en": "the beans" },
+    { "word": "la carne", "en": "the meat" },
+    { "word": "el pollo", "en": "the chicken" },
+    { "word": "el pescado", "en": "the fish (food)" },
+    { "word": "el huevo", "en": "the egg" },
+    { "word": "el queso", "en": "the cheese" },
+    { "word": "la leche", "en": "the milk" },
+    { "word": "el jugo", "en": "the juice" },
+    { "word": "el cuchillo", "en": "the knife" },
+    { "word": "la cuchara", "en": "the spoon" },
+    { "word": "el tenedor", "en": "the fork" }
+  ],
+  "phrases": [
+    { "phrase": "Tengo hambre.", "en": "I'm hungry." },
+    { "phrase": "Tengo sed.", "en": "I'm thirsty." },
+    { "phrase": "Quiero un vaso de agua.", "en": "I want a glass of water." },
+    { "phrase": "No como carne.", "en": "I don't eat meat." },
+    { "phrase": "¿Me pasas el pan, por favor?", "en": "Can you pass me the bread, please?" },
+    { "phrase": "¿Pica mucho?", "en": "Is it very spicy?" },
+    { "phrase": "Está riquísimo.", "en": "It's delicious." },
+    { "phrase": "Solo bebo té.", "en": "I only drink tea." },
+    { "phrase": "Preferiría un café.", "en": "I'd prefer a coffee." },
+    { "phrase": "Las tortillas acaban de salir.", "en": "The tortillas have just come out (of the griddle)." },
+    { "phrase": "¿Qué vamos a cenar?", "en": "What are we having for dinner?" },
+    { "phrase": "Ya estoy lleno.", "en": "I'm full." }
+  ],
+  "qa": [
+    { "question": { "es": "En un restaurante quieres agua. ¿Qué dices?", "en": "At a restaurant you want water. What do you say?" }, "options": ["Quiero agua, por favor.", "Quiero el agua de, por favor.", "Quiero unos aguas.", "Agua quiero yo de."], "correct": 0, "explanation": { "en": "No article for an unspecified amount: quiero agua." } },
+    { "question": { "es": "Eres vegetariano. ¿Cómo lo explicas?", "en": "You're vegetarian. How do you explain it?" }, "options": ["No como carne.", "No como la carne de.", "No carne como.", "Como no carne."], "correct": 0, "explanation": { "en": "«No» goes before the verb, no article: no como carne." } },
+    { "question": { "es": "Tu tía siempre bebe té, nunca café ni jugo. ¿Cómo lo dices?", "en": "Your aunt always drinks tea, never coffee or juice. How do you say it?" }, "options": ["Solo bebe té.", "No bebe té.", "Bebe solo de té.", "Ya no bebe té."], "correct": 0, "explanation": { "en": "«Solo» = only." } },
+    { "question": { "es": "En la mesa, ¿cómo le pides a tu amigo que te pase el pan?", "en": "At the table, how do you ask your friend to pass you the bread?" }, "options": ["¿Me pasas el pan, por favor?", "¿Te paso el pan, por favor?", "¿Me pasa pan tú?", "Pásate el pan."], "correct": 0, "explanation": { "en": "«¿Me pasas…?» = can you pass me…? (tú)." } },
+    { "question": { "es": "En México son las dos y media y todos comen la comida principal. ¿Qué comida es?", "en": "In Mexico it's 2:30 and everyone is eating the main meal. Which meal is it?" }, "options": ["la comida", "el desayuno", "la cena", "la merienda"], "correct": 0, "explanation": { "en": "In Mexico «la comida» is the main midday meal (lunch)." } },
+    { "question": { "es": "¿Con qué cortas la carne?", "en": "What do you cut meat with?" }, "options": ["con el cuchillo", "con la cuchara", "con la servilleta", "con el vaso"], "correct": 0, "explanation": { "en": "«El cuchillo» = the knife." } },
+    { "question": { "es": "Te ofrecen un té, pero te gustaría más un café. ¿Cómo lo dices con cortesía?", "en": "They offer you tea, but you'd rather have coffee. How do you say it politely?" }, "options": ["Preferiría un café, gracias.", "Prefiero café, ya.", "Preferiré un café.", "Prefería café mañana."], "correct": 0, "explanation": { "en": "The conditional «preferiría» is softer and polite." } },
+    { "question": { "es": "Comiste mucho y no puedes comer más. ¿Qué dices?", "en": "You ate a lot and can't eat any more. What do you say?" }, "options": ["Ya estoy lleno.", "Tengo hambre.", "Estoy vacío.", "Tengo sed."], "correct": 0, "explanation": { "en": "«Estar lleno / llena» = to be full." } }
+  ],
+  "story": {
+    "title": "La comida en casa de Carmen",
+    "text": "El domingo, la señora Carmen enseña a Emily a cocinar chiles rellenos. En la cocina hay tomates, cebollas, queso, huevos y unos chiles grandes. «¿Pican mucho?», pregunta Emily, un poco nerviosa. «No, casi nada», responde Carmen. Emily prueba uno pequeño y se pone roja. «¡Sí pica!», grita, y bebe un vaso de agua. Mateo se ríe. A las tres comen todos juntos: chiles rellenos, arroz, frijoles y tortillas que acaban de salir del comal. Emily solo bebe agua de jamaica. «Está riquísimo, señora Carmen», dice. Al final, Carmen ofrece flan. «Gracias, pero ya estoy llena.» «¡Siempre hay lugar para el postre!», dice Raúl.",
+    "en": "On Sunday, Mrs. Carmen teaches Emily to cook chiles rellenos (stuffed peppers). In the kitchen there are tomatoes, onions, cheese, eggs and some big peppers. «Are they very spicy?» asks Emily, a bit nervous. «No, hardly at all», answers Carmen. Emily tries a small one and turns red. «It IS spicy!» she shouts, and drinks a glass of water. Mateo laughs. At three they all eat together: stuffed peppers, rice, beans and tortillas fresh off the griddle. Emily only drinks hibiscus water. «It's delicious, Mrs. Carmen», she says. At the end, Carmen offers flan. «Thank you, but I'm already full.» «There's always room for dessert!» says Raúl.",
+    "highlighted_words": ["queso", "huevos", "Pican mucho", "un vaso de agua", "arroz", "frijoles", "riquísimo", "llena"]
+  },
+  "arrange": [
+    { "sentence": "Tengo mucha hambre, ¿comemos ya?", "en": "I'm really hungry, shall we eat now?" },
+    { "sentence": "¿Me pasas la sal, por favor?", "en": "Can you pass me the salt, please?" },
+    { "sentence": "No como carne, soy vegetariana", "en": "I don't eat meat, I'm vegetarian." },
+    { "sentence": "Para el desayuno tomo café con leche", "en": "For breakfast I have coffee with milk." },
+    { "sentence": "Esta sopa está riquísima", "en": "This soup is delicious." },
+    { "sentence": "Preferiría un jugo de naranja", "en": "I'd prefer an orange juice." }
+  ],
+  "translate": [
+    { "answer": "Tengo hambre", "en": "I am hungry" },
+    { "answer": "Tengo sed", "en": "I am thirsty" },
+    { "answer": "No como carne", "en": "I do not eat meat" },
+    { "answer": "Está delicioso", "en": "It is delicious", "accept": ["Está riquísimo", "Está muy rico", "Está rico"] },
+    { "answer": "Quiero agua", "en": "I want water" },
+    { "answer": "Ya estoy lleno", "en": "I am already full (man)", "accept": ["Estoy lleno"] }
+  ]
+}

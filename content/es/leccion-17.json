@@ -1,0 +1,84 @@
+{
+  "lesson": 17,
+  "slug": "leccion-17",
+  "icon": "🥑",
+  "title": { "es": "Frutas y verduras", "en": "Fruits and vegetables" },
+  "grammar": [
+    { "structure": "¿cuánto? / ¿cuántos?", "example": "¿Cuánto arroz? ¿Cuántas manzanas?", "en": "«Cuánto» agrees with the noun: cuánto (uncountable masc.), cuánta, cuántos, cuántas." },
+    { "structure": "un kilo de / medio kilo de", "example": "Un kilo de tomates y medio kilo de uvas.", "en": "Quantities + «de» + noun, no article." },
+    { "structure": "lo / la / los / las", "example": "¿Las fresas? Las compro en el mercado.", "en": "Object pronouns go before a conjugated verb: las compro = I buy them." },
+    { "structure": "si + presente → futuro", "example": "Si comes verduras, vas a estar sano.", "en": "Real conditions: si + present, then future (or ir a + infinitive)." },
+    { "structure": "se recomienda + infinitivo", "example": "Se recomienda comer cinco frutas al día.", "en": "Impersonal advice: se recomienda = it's recommended." }
+  ],
+  "tips": [
+    { "en": "Many fruits change name by country: «fresa» / «frutilla» (Argentina, Chile) = strawberry; «plátano» / «banana» / «banano» = banana; «durazno» (Latin America) / «melocotón» (Spain) = peach." },
+    { "en": "«Aguacate» (Mexico, Colombia) = «palta» (Argentina, Chile, Peru) = avocado." },
+    { "en": "«Papa» (Latin America) = «patata» (Spain) = potato. «Jitomate» in central Mexico = red tomato." },
+    { "en": "At markets it's normal to ask for a taste: «¿Me deja probar?»." },
+    { "en": "«Maduro» = ripe; «verde» also means unripe. «Este mango está verde» = this mango isn't ripe yet." }
+  ],
+  "vocabulary": [
+    { "word": "la manzana", "en": "the apple" },
+    { "word": "el plátano", "en": "the banana" },
+    { "word": "la naranja", "en": "the orange" },
+    { "word": "la fresa", "en": "the strawberry" },
+    { "word": "las uvas", "en": "the grapes" },
+    { "word": "el mango", "en": "the mango" },
+    { "word": "la piña", "en": "the pineapple" },
+    { "word": "el limón", "en": "the lime, the lemon" },
+    { "word": "el aguacate", "en": "the avocado" },
+    { "word": "el tomate", "en": "the tomato" },
+    { "word": "la cebolla", "en": "the onion" },
+    { "word": "el ajo", "en": "the garlic" },
+    { "word": "la papa", "en": "the potato" },
+    { "word": "la zanahoria", "en": "the carrot" },
+    { "word": "la lechuga", "en": "the lettuce" },
+    { "word": "maduro", "en": "ripe" }
+  ],
+  "phrases": [
+    { "phrase": "¿A cómo están las manzanas?", "en": "How much are the apples?" },
+    { "phrase": "Un kilo de tomates, por favor.", "en": "A kilo of tomatoes, please." },
+    { "phrase": "¿Me deja probar?", "en": "Can I taste it?" },
+    { "phrase": "Este mango está muy maduro.", "en": "This mango is very ripe." },
+    { "phrase": "Las fresas, las compro en el mercado.", "en": "Strawberries, I buy them at the market." },
+    { "phrase": "Prefiero una manzana.", "en": "I'd rather have an apple." },
+    { "phrase": "¿Cuántas quiere?", "en": "How many do you want?" },
+    { "phrase": "Medio kilo, nada más.", "en": "Just half a kilo." },
+    { "phrase": "¿Algo más?", "en": "Anything else?" },
+    { "phrase": "Es todo, gracias.", "en": "That's all, thanks." },
+    { "phrase": "Ya le puse sal a la ensalada.", "en": "I've already put salt in the salad." },
+    { "phrase": "¿Están de temporada?", "en": "Are they in season?" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Quiero ___ fresas, por favor.»", "en": "Complete: «Quiero ___ fresas, por favor.»" }, "options": ["unas", "un", "una", "uno"], "correct": 0, "explanation": { "en": "«Fresas» is feminine plural: unas fresas (some strawberries)." } },
+    { "question": { "es": "Completa: «¿___ manzanas quiere?»", "en": "Complete: «¿___ manzanas quiere?»" }, "options": ["Cuántas", "Cuántos", "Cuánta", "Cuánto"], "correct": 0, "explanation": { "en": "«Manzanas» is feminine plural: cuántas." } },
+    { "question": { "es": "Completa: «Si comes verduras, ___ más sano.»", "en": "Complete: «Si comes verduras, ___ más sano.»" }, "options": ["vas a estar", "estarías", "estabas", "estuviste"], "correct": 0, "explanation": { "en": "Si + present → future (or ir a + infinitive)." } },
+    { "question": { "es": "¿Cuál es una verdura?", "en": "Which one is a vegetable?" }, "options": ["la zanahoria", "la fresa", "la piña", "el mango"], "correct": 0, "explanation": { "en": "«Zanahoria» = carrot." } },
+    { "question": { "es": "«¿La ensalada? Ya ___ preparé.»", "en": "«¿La ensalada? Ya ___ preparé.»" }, "options": ["la", "lo", "le", "las"], "correct": 0, "explanation": { "en": "«Ensalada» is feminine singular: la preparé." } },
+    { "question": { "es": "En el mercado quieres saber el precio de las naranjas. ¿Qué preguntas?", "en": "At the market you want the price of the oranges. What do you ask?" }, "options": ["¿A cómo están las naranjas?", "¿Cómo están las naranjas?", "¿Qué tal las naranjas?", "¿Dónde están las naranjas?"], "correct": 0, "explanation": { "en": "«¿A cómo están…?» is a common market way to ask the price." } },
+    { "question": { "es": "Es una fruta pequeña y roja que se pone en los pasteles. ¿Qué es?", "en": "It's a small red fruit you put on cakes. What is it?" }, "options": ["la fresa", "el plátano", "el limón", "la piña"], "correct": 0, "explanation": { "en": "«Fresa» = strawberry (frutilla in Argentina and Chile)." } },
+    { "question": { "es": "Completa: «Se recomienda ___ cinco frutas y verduras al día.»", "en": "Complete: «Se recomienda ___ cinco frutas y verduras al día.»" }, "options": ["comer", "come", "comiendo", "comido"], "correct": 0, "explanation": { "en": "After «se recomienda» use the infinitive." } }
+  ],
+  "story": {
+    "title": "El puesto de don Beto",
+    "text": "Todos los sábados, Emily compra frutas y verduras en el puesto de don Beto, en el mercado. Don Beto siempre está de buen humor. «¡Buenos días, güerita! ¿Qué va a llevar hoy?» «Un kilo de tomates, medio kilo de cebollas y tres aguacates.» «¿Para hoy o para mañana?», pregunta don Beto. Emily no entiende. «Si son para hoy, le doy unos maduros; si son para mañana, unos más verdes.» «¡Ah! Para mañana.» Después pide mangos. «¿Me deja probar?» Don Beto le da un pedazo con limón y chile. «¡Qué rico!» Emily compra cuatro. «¿Algo más?» «Es todo, gracias.» Don Beto le regala una piña pequeña: «Para su perrito Taco no, ¡para usted!».",
+    "en": "Every Saturday, Emily buys fruit and vegetables at Don Beto's stall in the market. Don Beto is always in a good mood. «Good morning, güerita! What are you taking today?» «A kilo of tomatoes, half a kilo of onions and three avocados.» «For today or for tomorrow?» asks Don Beto. Emily doesn't understand. «If they're for today, I'll give you ripe ones; if they're for tomorrow, some greener ones.» «Ah! For tomorrow.» Then she asks for mangoes. «Can I taste one?» Don Beto gives her a piece with lime and chili. «Delicious!» Emily buys four. «Anything else?» «That's all, thanks.» Don Beto gives her a small pineapple as a gift: «Not for your little dog Taco, for you!».",
+    "highlighted_words": ["Un kilo de tomates", "medio kilo", "aguacates", "maduros", "Me deja probar", "Algo más", "Es todo"]
+  },
+  "arrange": [
+    { "sentence": "Quiero un kilo de manzanas, por favor", "en": "I want a kilo of apples, please." },
+    { "sentence": "¿A cómo están las fresas hoy?", "en": "How much are the strawberries today?" },
+    { "sentence": "Este aguacate todavía está verde", "en": "This avocado isn't ripe yet." },
+    { "sentence": "Las naranjas las compro en el mercado", "en": "Oranges, I buy them at the market." },
+    { "sentence": "Prefiero las verduras frescas", "en": "I prefer fresh vegetables." },
+    { "sentence": "Se recomienda comer frutas todos los días", "en": "It's recommended to eat fruit every day." }
+  ],
+  "translate": [
+    { "answer": "Un kilo de tomates", "en": "A kilo of tomatoes" },
+    { "answer": "¿Algo más?", "en": "Anything else?" },
+    { "answer": "Es todo, gracias", "en": "That is all, thank you" },
+    { "answer": "Me gustan las fresas", "en": "I like strawberries" },
+    { "answer": "El mango está maduro", "en": "The mango is ripe" },
+    { "answer": "¿Cuántas quiere?", "en": "How many do you want? (usted, feminine items)", "accept": ["¿Cuántos quiere?"] }
+  ]
+}

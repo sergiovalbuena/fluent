@@ -1,0 +1,84 @@
+{
+  "lesson": 7,
+  "slug": "leccion-07",
+  "icon": "🏠",
+  "title": { "es": "En casa", "en": "At home" },
+  "grammar": [
+    { "structure": "estar + lugar", "example": "La cocina está al fondo.", "en": "Location uses «estar»: ¿Dónde está el baño? — Está a la derecha." },
+    { "structure": "hay / está", "example": "Hay un sofá en la sala. El sofá está en la sala.", "en": "«Hay» introduces something new (a / some); «está» locates something specific (the)." },
+    { "structure": "presente -er / -ir", "example": "como, comes, come · vivo, vives, vive", "en": "Regular -er and -ir verbs: comer → como; vivir → vivo." },
+    { "structure": "tener que + infinitivo", "example": "Tengo que lavar los platos.", "en": "«Tener que» + infinitive = to have to." },
+    { "structure": "al / del", "example": "Voy al baño. Salgo del cuarto.", "en": "a + el = al; de + el = del. These are the only two contractions in Spanish." }
+  ],
+  "tips": [
+    { "en": "Words for «apartment» change by country: «departamento» (Mexico, Argentina, Chile), «apartamento» (Colombia, Venezuela) and «piso» (Spain)." },
+    { "en": "«Recámara» (Mexico), «cuarto», «habitación» and «dormitorio» all mean bedroom." },
+    { "en": "In Spain you'll hear «fregar los platos» for washing the dishes; in Latin America it's «lavar los trastes / los platos»." },
+    { "en": "«Mi casa es su casa» is a real welcome formula, especially in Mexico. Answer «gracias, muy amable»." },
+    { "en": "Many homes in Latin America have a «patio» or an «azotea» (flat roof terrace) where people hang laundry." }
+  ],
+  "vocabulary": [
+    { "word": "la casa", "en": "the house" },
+    { "word": "el departamento", "en": "the apartment (Mexico)" },
+    { "word": "la cocina", "en": "the kitchen" },
+    { "word": "la sala", "en": "the living room" },
+    { "word": "el cuarto", "en": "the bedroom, the room" },
+    { "word": "el baño", "en": "the bathroom" },
+    { "word": "el comedor", "en": "the dining room" },
+    { "word": "el jardín", "en": "the garden, the yard" },
+    { "word": "la escalera", "en": "the stairs" },
+    { "word": "la llave", "en": "the key" },
+    { "word": "limpiar", "en": "to clean" },
+    { "word": "barrer", "en": "to sweep" },
+    { "word": "lavar los platos", "en": "to wash the dishes" },
+    { "word": "la lavadora", "en": "the washing machine" },
+    { "word": "la aspiradora", "en": "the vacuum cleaner" },
+    { "word": "cómodo", "en": "comfortable" }
+  ],
+  "phrases": [
+    { "phrase": "Mi casa es su casa.", "en": "Make yourself at home." },
+    { "phrase": "Pasa, pasa.", "en": "Come in, come in." },
+    { "phrase": "¿Dónde está el baño?", "en": "Where is the bathroom?" },
+    { "phrase": "Está al fondo, a la derecha.", "en": "It's at the end, on the right." },
+    { "phrase": "Tengo que limpiar la cocina.", "en": "I have to clean the kitchen." },
+    { "phrase": "Me toca lavar los platos.", "en": "It's my turn to wash the dishes." },
+    { "phrase": "Hay que sacar la basura.", "en": "The trash needs to go out." },
+    { "phrase": "Vivo en un departamento pequeño.", "en": "I live in a small apartment." },
+    { "phrase": "Tiene dos cuartos y un baño.", "en": "It has two bedrooms and one bathroom." },
+    { "phrase": "Me siento muy cómoda aquí.", "en": "I feel very comfortable here." },
+    { "phrase": "Está durmiendo.", "en": "He / She is sleeping." },
+    { "phrase": "¿Te acuerdas de mí?", "en": "Do you remember me?" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Dónde pones normalmente la ropa sucia para lavarla?", "en": "Where do you normally put dirty clothes to wash them?" }, "options": ["en la lavadora", "en el horno", "en la aspiradora", "en el jardín"], "correct": 0, "explanation": { "en": "«La lavadora» = the washing machine." } },
+    { "question": { "es": "Después de cenar, hay que lavar todo lo que usaste para comer. ¿Cómo se llama esta tarea?", "en": "After dinner, you have to wash everything you used to eat. What is this chore called?" }, "options": ["lavar los platos", "barrer el piso", "sacar la basura", "tender la cama"], "correct": 0, "explanation": { "en": "«Lavar los platos» = to wash the dishes." } },
+    { "question": { "es": "Alguien toca la puerta de tu hermano, pero él duerme. ¿Qué dices?", "en": "Someone knocks on your brother's door, but he's asleep. What do you say?" }, "options": ["Está durmiendo.", "Va a dormir.", "Durmió.", "Es durmiendo."], "correct": 0, "explanation": { "en": "«Estar + gerund» = to be doing something right now: está durmiendo." } },
+    { "question": { "es": "Completa: «___ un sofá muy grande en la sala.»", "en": "Complete: «___ un sofá muy grande en la sala.»" }, "options": ["Hay", "Está", "Es", "Tiene"], "correct": 0, "explanation": { "en": "«Hay» introduces something new (a sofa)." } },
+    { "question": { "es": "Completa: «¿Dónde ___ las llaves?» — «En la mesa.»", "en": "Complete: «¿Dónde ___ las llaves?» — «En la mesa.»" }, "options": ["están", "hay", "son", "tienen"], "correct": 0, "explanation": { "en": "To locate specific things (the keys), use «estar»: ¿dónde están?" } },
+    { "question": { "es": "Hoy es tu turno de lavar los platos. ¿Cómo lo dices?", "en": "Today it's your turn to wash the dishes. How do you say it?" }, "options": ["Me toca lavar los platos.", "Me gusta lavar los platos.", "Tengo lavar los platos.", "Lavo los platos ayer."], "correct": 0, "explanation": { "en": "«Me toca» = it's my turn." } },
+    { "question": { "es": "Un amigo de la escuela te pregunta «¿Te acuerdas de mí?», pero no lo recuerdas. ¿Qué respondes?", "en": "An old school friend asks «¿Te acuerdas de mí?», but you don't remember him. What do you answer?" }, "options": ["No, lo siento, no me acuerdo.", "Sí, me acuerdo muy bien.", "No, no me olvido.", "Sí, te acuerdas."], "correct": 0, "explanation": { "en": "«Acordarse de» = to remember: no me acuerdo = I don't remember." } },
+    { "question": { "es": "Llegas a casa de unos amigos y te sientes muy bien, como en tu casa. ¿Qué dices?", "en": "You arrive at your friends' home and feel really good, as if at home. What do you say?" }, "options": ["Me siento muy cómodo aquí.", "Me siento muy incómodo aquí.", "Estoy aburrido aquí.", "Es muy cómodo yo."], "correct": 0, "explanation": { "en": "«Sentirse cómodo» = to feel comfortable." } }
+  ],
+  "story": {
+    "title": "Un sábado de limpieza",
+    "text": "El departamento de Emily es pequeño pero muy cómodo. Tiene una sala con un sofá azul, una cocina abierta, un cuarto y un baño. Hoy es sábado y Emily tiene que limpiar. Primero barre la sala y pasa la aspiradora por el cuarto. Luego pone la ropa en la lavadora. En la cocina hay muchos platos sucios. «¡Uf! Me toca lavar los platos», dice. A las once alguien toca la puerta. Es Mateo, el nieto de Carmen. «Mi abuela pregunta si quieres tamales.» «¡Claro! Pasa, pasa.» Mateo mira el departamento. «Está muy limpio», dice. «Sí, pero ahora tengo que sacar la basura.» «Yo te ayudo», responde Mateo.",
+    "en": "Emily's apartment is small but very comfortable. It has a living room with a blue sofa, an open kitchen, a bedroom and a bathroom. Today is Saturday and Emily has to clean. First she sweeps the living room and vacuums the bedroom. Then she puts the clothes in the washing machine. In the kitchen there are lots of dirty dishes. «Ugh! It's my turn to wash the dishes», she says. At eleven someone knocks at the door. It's Mateo, Carmen's grandson. «My grandma is asking if you want tamales.» «Of course! Come in, come in.» Mateo looks around the apartment. «It's very clean», he says. «Yes, but now I have to take out the trash.» «I'll help you», answers Mateo.",
+    "highlighted_words": ["departamento", "sala", "cocina", "cuarto", "baño", "lavadora", "Me toca lavar los platos", "Pasa, pasa"]
+  },
+  "arrange": [
+    { "sentence": "El baño está al fondo, a la derecha", "en": "The bathroom is at the end, on the right." },
+    { "sentence": "Hay un sofá azul en la sala", "en": "There's a blue sofa in the living room." },
+    { "sentence": "Tengo que limpiar la cocina hoy", "en": "I have to clean the kitchen today." },
+    { "sentence": "Mi departamento tiene dos cuartos", "en": "My apartment has two bedrooms." },
+    { "sentence": "Me toca sacar la basura", "en": "It's my turn to take out the trash." },
+    { "sentence": "Vivo en una casa con jardín", "en": "I live in a house with a yard." }
+  ],
+  "translate": [
+    { "answer": "¿Dónde está el baño?", "en": "Where is the bathroom?" },
+    { "answer": "Tengo que limpiar", "en": "I have to clean" },
+    { "answer": "Hay dos cuartos", "en": "There are two bedrooms", "accept": ["Hay dos habitaciones", "Hay dos recámaras"] },
+    { "answer": "Mi casa es su casa", "en": "Make yourself at home (literally: my house is your house)" },
+    { "answer": "La cocina es pequeña", "en": "The kitchen is small" },
+    { "answer": "Está durmiendo", "en": "He is sleeping" }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lesson": 13,
+  "slug": "leccion-13",
+  "icon": "🛋️",
+  "title": { "es": "Habitaciones y muebles", "en": "Rooms and furniture" },
+  "grammar": [
+    { "structure": "encima de / debajo de / al lado de", "example": "El gato está debajo de la mesa.", "en": "Place prepositions often end in «de»: encima de, debajo de, al lado de, enfrente de, detrás de." },
+    { "structure": "este / ese / aquel", "example": "Esta silla es nueva; esa es vieja.", "en": "este = this (near me), ese = that (near you), aquel = that (over there). They agree: esta, estos, esas…" },
+    { "structure": "poner: pongo", "example": "Pongo las llaves en el cajón.", "en": "«Poner» (to put) is a -go verb: pongo, pones, pone." },
+    { "structure": "pronombres lo / la / los / las", "example": "¿El libro? Ponlo en el estante.", "en": "Direct object pronouns replace a noun: lo (it, masc.), la (it, fem.). In positive commands they attach to the end." },
+    { "structure": "se + verbo impersonal", "example": "Aquí se come muy bien.", "en": "«Se» + verb for general statements: aquí se come bien = people eat well here." }
+  ],
+  "tips": [
+    { "en": "«Recámara» (Mexico), «dormitorio», «habitación» and «cuarto» = bedroom. «Living» is used in Argentina for the living room." },
+    { "en": "«Closet» (Latin America) = «armario» (Spain) = wardrobe. «Ropero» is also common." },
+    { "en": "«Refrigerador», «refri» (Mexico), «heladera» (Argentina) and «nevera» (Spain, Colombia) all mean fridge." },
+    { "en": "In Latin America, floors are counted from the ground: «primer piso» is usually the ground floor in Mexico but the first floor above ground in Spain." },
+    { "en": "«Estufa» is a stove in Mexico but a heater in Spain. The Spanish word for stove is «cocina» or «fogón»." }
+  ],
+  "vocabulary": [
+    { "word": "la mesa", "en": "the table" },
+    { "word": "la silla", "en": "the chair" },
+    { "word": "el sofá", "en": "the sofa" },
+    { "word": "la cama", "en": "the bed" },
+    { "word": "el closet", "en": "the closet, the wardrobe" },
+    { "word": "el cajón", "en": "the drawer" },
+    { "word": "el estante", "en": "the shelf" },
+    { "word": "la lámpara", "en": "the lamp" },
+    { "word": "el espejo", "en": "the mirror" },
+    { "word": "el refrigerador", "en": "the fridge" },
+    { "word": "el congelador", "en": "the freezer" },
+    { "word": "la estufa", "en": "the stove (Mexico)" },
+    { "word": "el fregadero", "en": "the kitchen sink" },
+    { "word": "el lavabo", "en": "the bathroom sink" },
+    { "word": "la regadera", "en": "the shower (Mexico)" },
+    { "word": "el piso", "en": "the floor" }
+  ],
+  "phrases": [
+    { "phrase": "El gato está debajo de la cama.", "en": "The cat is under the bed." },
+    { "phrase": "Las llaves están encima de la mesa.", "en": "The keys are on the table." },
+    { "phrase": "Ponlo en el cajón.", "en": "Put it in the drawer." },
+    { "phrase": "¿Dónde pongo el sofá?", "en": "Where do I put the sofa?" },
+    { "phrase": "Esta lámpara es nueva.", "en": "This lamp is new." },
+    { "phrase": "Aquella casa es de mi tía.", "en": "That house over there is my aunt's." },
+    { "phrase": "Necesito un estante para los libros.", "en": "I need a shelf for the books." },
+    { "phrase": "Vivo en la planta baja.", "en": "I live on the ground floor." },
+    { "phrase": "La cocina está al lado del comedor.", "en": "The kitchen is next to the dining room." },
+    { "phrase": "¡Qué bonito quedó!", "en": "It turned out so nice!" },
+    { "phrase": "No había lugar para todos.", "en": "There wasn't room for everyone." },
+    { "phrase": "Me mudé en mayo.", "en": "I moved in May." }
+  ],
+  "qa": [
+    { "question": { "es": "¿Dónde guardas el helado?", "en": "Where do you keep ice cream?" }, "options": ["en el congelador", "en la estufa", "en el fregadero", "en el cajón"], "correct": 0, "explanation": { "en": "«El congelador» = the freezer." } },
+    { "question": { "es": "¿Cómo se llama la parte de la casa que está al nivel de la calle?", "en": "What do you call the floor of a building at street level?" }, "options": ["la planta baja", "el segundo piso", "el sótano", "la azotea"], "correct": 0, "explanation": { "en": "«La planta baja» = the ground floor." } },
+    { "question": { "es": "Le pides a alguien que ponga el libro en el cajón, sin repetir «el libro». ¿Qué dices?", "en": "You ask someone to put the book in the drawer without repeating «el libro». What do you say?" }, "options": ["Ponlo en el cajón.", "Lo pon en el cajón.", "Pon lo en el cajón.", "Ponla en el cajón."], "correct": 0, "explanation": { "en": "In a positive command the pronoun attaches: pon + lo = ponlo." } },
+    { "question": { "es": "Completa: «Si bajas, ___ el sótano.» (futuro de encontrar)", "en": "Complete: «Si bajas, ___ el sótano.» (future of encontrar)" }, "options": ["encontrarás", "encontrarías", "encontrabas", "encontraste"], "correct": 0, "explanation": { "en": "Si + present → future: si bajas, encontrarás." } },
+    { "question": { "es": "Buscas un mueble para guardar la ropa colgada. ¿Qué pides en la tienda?", "en": "You're looking for a piece of furniture to hang your clothes in. What do you ask for at the store?" }, "options": ["un closet", "un fregadero", "un espejo", "una estufa"], "correct": 0, "explanation": { "en": "«Closet» (Latin America) = «armario» (Spain): a wardrobe." } },
+    { "question": { "es": "¿Qué frase describe una situación del pasado (imperfecto)?", "en": "Which sentence describes a past situation (imperfect)?" }, "options": ["No había lugar para todos.", "Nos mudamos en mayo.", "Mi mamá eligió el cuarto.", "Abrí la ventana."], "correct": 0, "explanation": { "en": "«Había» (imperfect of «hay») describes a background situation." } },
+    { "question": { "es": "Señalas una silla que está junto a ti. ¿Qué dices?", "en": "You point at a chair right next to you. What do you say?" }, "options": ["esta silla", "aquella silla", "ese silla", "este silla"], "correct": 0, "explanation": { "en": "Near me: «este / esta». «Silla» is feminine: esta silla." } },
+    { "question": { "es": "¿Dónde lavas los platos?", "en": "Where do you wash the dishes?" }, "options": ["en el fregadero", "en el lavabo", "en la regadera", "en el espejo"], "correct": 0, "explanation": { "en": "«El fregadero» is the kitchen sink; «el lavabo» is in the bathroom." } }
+  ],
+  "story": {
+    "title": "Muebles nuevos",
+    "text": "Emily quiere cambiar su departamento. El sábado va con Diego a una tienda de muebles. «Necesito un estante para los libros y una lámpara para la sala», dice. Diego señala una lámpara amarilla: «¿Y esa?». «Esa no, prefiero aquella de allá, la blanca.» También compran un espejo grande. En casa, empiezan a mover todo. «¿Dónde pongo el estante?», pregunta Diego. «Ponlo al lado de la ventana.» El espejo va enfrente de la cama y la lámpara, encima de la mesa pequeña. De repente, Emily ve algo debajo del sofá: ¡son sus llaves perdidas! «Las busqué durante una semana», dice riendo. Al final, el departamento se ve más grande y más bonito.",
+    "en": "Emily wants to change her apartment. On Saturday she goes with Diego to a furniture store. «I need a shelf for the books and a lamp for the living room», she says. Diego points at a yellow lamp: «What about that one?». «Not that one, I prefer that one over there, the white one.» They also buy a big mirror. At home they start moving everything. «Where do I put the shelf?» asks Diego. «Put it next to the window.» The mirror goes opposite the bed and the lamp on the small table. Suddenly Emily sees something under the sofa: her lost keys! «I looked for them for a week», she says, laughing. In the end, the apartment looks bigger and nicer.",
+    "highlighted_words": ["estante", "lámpara", "esa", "aquella", "espejo", "Ponlo", "al lado de", "debajo del sofá"]
+  },
+  "arrange": [
+    { "sentence": "Las llaves están encima de la mesa", "en": "The keys are on the table." },
+    { "sentence": "El gato duerme debajo de la cama", "en": "The cat sleeps under the bed." },
+    { "sentence": "Pongo los libros en el estante", "en": "I put the books on the shelf." },
+    { "sentence": "Esta lámpara es más bonita que esa", "en": "This lamp is prettier than that one." },
+    { "sentence": "La cocina está al lado del comedor", "en": "The kitchen is next to the dining room." },
+    { "sentence": "Necesito un espejo para el baño", "en": "I need a mirror for the bathroom." }
+  ],
+  "translate": [
+    { "answer": "El gato está debajo de la mesa", "en": "The cat is under the table" },
+    { "answer": "Ponlo en el cajón", "en": "Put it in the drawer (tú)" },
+    { "answer": "Esta silla es nueva", "en": "This chair is new" },
+    { "answer": "Necesito una lámpara", "en": "I need a lamp" },
+    { "answer": "¿Dónde pongo el sofá?", "en": "Where do I put the sofa?" },
+    { "answer": "Vivo en la planta baja", "en": "I live on the ground floor" }
+  ]
+}

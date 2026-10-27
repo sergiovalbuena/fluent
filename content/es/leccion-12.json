@@ -1,0 +1,84 @@
+{
+  "lesson": 12,
+  "slug": "leccion-12",
+  "icon": "💼",
+  "title": { "es": "Profesiones y oficios", "en": "Jobs" },
+  "grammar": [
+    { "structure": "ser + profesión (sin artículo)", "example": "Soy diseñadora. Mi papá es médico.", "en": "No «a / an» before a job: soy ingeniero = I'm an engineer. Add «un / una» only with an adjective: es un médico excelente." },
+    { "structure": "masculino / femenino", "example": "el abogado / la abogada · el / la periodista", "en": "Most jobs change -o → -a; those in -ista or -nte usually only change the article." },
+    { "structure": "trabajar de / como / en", "example": "Trabajo de mesera en un restaurante.", "en": "«Trabajar de / como» + job; «trabajar en» + place." },
+    { "structure": "verbos -go: hago, salgo, tengo", "example": "¿Qué haces? — Hago diseño web.", "en": "Some verbs add -g- in the «yo» form: hacer → hago, salir → salgo, poner → pongo." },
+    { "structure": "querer ser", "example": "De niña quería ser astronauta.", "en": "«Querer ser» = to want to be (a job)." }
+  ],
+  "tips": [
+    { "en": "«¿A qué te dedicas?» is the most natural way to ask what someone does. «¿En qué trabajas?» is also common." },
+    { "en": "«Chamba» (Mexico), «curro» (Spain), «laburo» (Argentina) and «camello» (Colombia) are informal words for «job»." },
+    { "en": "Some feminine forms are still debated: «la médica» and «la jefa» are now standard, but you'll also hear «la médico»." },
+    { "en": "«Licenciado» (Mexico) is a common title for people with a university degree, often used before the name: «Licenciado Pérez»." },
+    { "en": "«Plomero» (Latin America) = «fontanero» (Spain) = plumber. «Mesero» (Mexico), «mozo» (Argentina), «camarero» (Spain) = waiter." }
+  ],
+  "vocabulary": [
+    { "word": "el trabajo", "en": "the job, the work" },
+    { "word": "el médico", "en": "the doctor" },
+    { "word": "el enfermero", "en": "the nurse" },
+    { "word": "el maestro", "en": "the teacher (school)" },
+    { "word": "el abogado", "en": "the lawyer" },
+    { "word": "el ingeniero", "en": "the engineer" },
+    { "word": "el mesero", "en": "the waiter" },
+    { "word": "el cocinero", "en": "the cook" },
+    { "word": "el plomero", "en": "the plumber" },
+    { "word": "el mecánico", "en": "the mechanic" },
+    { "word": "el periodista", "en": "the journalist" },
+    { "word": "el peluquero", "en": "the hairdresser" },
+    { "word": "el vendedor", "en": "the salesperson" },
+    { "word": "el jefe", "en": "the boss" },
+    { "word": "la empresa", "en": "the company" },
+    { "word": "el sueldo", "en": "the salary" }
+  ],
+  "phrases": [
+    { "phrase": "¿A qué te dedicas?", "en": "What do you do (for a living)?" },
+    { "phrase": "Soy diseñadora gráfica.", "en": "I'm a graphic designer." },
+    { "phrase": "Trabajo en una empresa de diseño.", "en": "I work at a design company." },
+    { "phrase": "Trabajo desde casa.", "en": "I work from home." },
+    { "phrase": "Estoy buscando trabajo.", "en": "I'm looking for a job." },
+    { "phrase": "Me gusta mucho mi trabajo.", "en": "I really like my job." },
+    { "phrase": "Tengo mucha chamba.", "en": "I have a lot of work. (Mexico)" },
+    { "phrase": "Deberías ser cantante.", "en": "You should be a singer." },
+    { "phrase": "De niño quería ser bombero.", "en": "As a kid I wanted to be a firefighter." },
+    { "phrase": "Estaba a punto de salir.", "en": "I was about to leave." },
+    { "phrase": "Voy al peluquero.", "en": "I'm going to the hairdresser's." },
+    { "phrase": "Trabajo de lunes a viernes.", "en": "I work Monday to Friday." }
+  ],
+  "qa": [
+    { "question": { "es": "¿Qué frase es correcta?", "en": "Which sentence is correct?" }, "options": ["Ella es abogada.", "Ella es una abogada.", "Ella es la abogada de.", "Ella está abogada."], "correct": 0, "explanation": { "en": "No article before a profession: es abogada." } },
+    { "question": { "es": "¿Cuál es el femenino de «actor»?", "en": "What is the feminine of «actor»?" }, "options": ["actriz", "actora", "actrisa", "actoresa"], "correct": 0, "explanation": { "en": "Actor → actriz (irregular)." } },
+    { "question": { "es": "Tu carro hace un ruido raro. ¿Quién lo arregla?", "en": "Your car is making a strange noise. Who fixes it?" }, "options": ["el mecánico", "el plomero", "el peluquero", "el periodista"], "correct": 0, "explanation": { "en": "«El mecánico» repairs cars; «el plomero» fixes pipes." } },
+    { "question": { "es": "Quieres saber en qué trabaja alguien. ¿Qué preguntas?", "en": "You want to know what someone does for work. What do you ask?" }, "options": ["¿A qué te dedicas?", "¿Dónde vives?", "¿Cuánto mides?", "¿Qué te duele?"], "correct": 0, "explanation": { "en": "«¿A qué te dedicas?» = what do you do?" } },
+    { "question": { "es": "Completa: «Los sábados ___ de mesera en un café.»", "en": "Complete: «Los sábados ___ de mesera en un café.»" }, "options": ["trabajo", "soy", "estoy", "hago"], "correct": 0, "explanation": { "en": "«Trabajar de» + job = to work as." } },
+    { "question": { "es": "Tu amiga canta muy bien. ¿Qué consejo le das?", "en": "Your friend sings really well. What advice do you give her?" }, "options": ["Deberías ser cantante.", "Debes ser cantante ayer.", "Eras cantante.", "Serás cantante ayer."], "correct": 0, "explanation": { "en": "«Deberías» (you should) is the conditional of «deber», used for friendly advice." } },
+    { "question": { "es": "Sonó el teléfono justo cuando ibas a salir. ¿Cómo lo cuentas?", "en": "The phone rang just as you were going out. How do you tell it?" }, "options": ["Estaba a punto de salir.", "Estaba punto de salir.", "Salí a punto.", "Estoy a punto de salir ayer."], "correct": 0, "explanation": { "en": "«Estar a punto de» + infinitive = to be about to." } },
+    { "question": { "es": "Completa: «¿Qué ___ tú los fines de semana?» — «___ deporte.»", "en": "Complete: «¿Qué ___ tú los fines de semana?» — «___ deporte.»" }, "options": ["haces … Hago", "haces … Hazo", "hace … Hago", "hagas … Haco"], "correct": 0, "explanation": { "en": "«Hacer» is irregular in the yo form: hago." } }
+  ],
+  "story": {
+    "title": "¿A qué te dedicas?",
+    "text": "El viernes, Emily va a una fiesta en casa de Diego. Conoce a mucha gente. Primero habla con Sofía, una mujer muy simpática. «¿A qué te dedicas?», pregunta Emily. «Soy enfermera en un hospital del centro. Trabajo de noche, por eso hoy estoy un poco cansada.» Luego conoce a Martín, el hermano de Diego. Es cocinero y tiene un pequeño restaurante de comida oaxaqueña. «¿Y tú?», pregunta Martín. «Soy diseñadora gráfica. Trabajo con tu hermano.» «¡Ah, tú eres la gringa simpática!», dice Martín, y los dos ríen. Al final de la noche, un señor mayor cuenta que de niño quería ser astronauta, pero ahora es abogado. «La vida da muchas vueltas», dice.",
+    "en": "On Friday, Emily goes to a party at Diego's house. She meets a lot of people. First she talks to Sofía, a very friendly woman. «What do you do?» Emily asks. «I'm a nurse at a hospital downtown. I work nights, that's why I'm a bit tired today.» Then she meets Martín, Diego's brother. He's a cook and has a small restaurant with food from Oaxaca. «And you?» Martín asks. «I'm a graphic designer. I work with your brother.» «Ah, you're the nice gringa!» says Martín, and they both laugh. At the end of the night, an older man tells them that as a kid he wanted to be an astronaut, but now he's a lawyer. «Life takes many turns», he says.",
+    "highlighted_words": ["A qué te dedicas", "enfermera", "Trabajo de noche", "cocinero", "diseñadora gráfica", "quería ser", "abogado"]
+  },
+  "arrange": [
+    { "sentence": "Mi hermana es enfermera en un hospital", "en": "My sister is a nurse at a hospital." },
+    { "sentence": "Trabajo desde casa tres días a la semana", "en": "I work from home three days a week." },
+    { "sentence": "De niño quería ser astronauta", "en": "As a kid I wanted to be an astronaut." },
+    { "sentence": "¿A qué se dedica tu papá?", "en": "What does your dad do?" },
+    { "sentence": "Estoy buscando un trabajo nuevo", "en": "I'm looking for a new job." },
+    { "sentence": "Mi jefa es muy trabajadora", "en": "My boss is very hard-working." }
+  ],
+  "translate": [
+    { "answer": "Soy diseñadora", "en": "I am a designer (woman)" },
+    { "answer": "¿A qué te dedicas?", "en": "What do you do for a living? (tú)", "accept": ["¿En qué trabajas?"] },
+    { "answer": "Trabajo en un hospital", "en": "I work in a hospital" },
+    { "answer": "Mi papá es médico", "en": "My dad is a doctor" },
+    { "answer": "Estoy buscando trabajo", "en": "I am looking for a job", "accept": ["Busco trabajo"] },
+    { "answer": "Me gusta mi trabajo", "en": "I like my job" }
+  ]
+}

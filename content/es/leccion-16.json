@@ -1,0 +1,84 @@
+{
+  "lesson": 16,
+  "slug": "leccion-16",
+  "icon": "👕",
+  "title": { "es": "La ropa", "en": "Clothes" },
+  "grammar": [
+    { "structure": "llevar / ponerse", "example": "Hoy llevo una camisa azul. Me pongo el abrigo.", "en": "«Llevar» = to wear (state); «ponerse» = to put on (action)." },
+    { "structure": "quedar: me queda bien", "example": "Esta chaqueta te queda bien. Me queda grande.", "en": "«Quedar» works like «gustar» for fit: me queda bien = it fits / suits me." },
+    { "structure": "de + material", "example": "una chaqueta de cuero, un suéter de lana", "en": "Material uses «de»: de algodón, de lana, de cuero." },
+    { "structure": "demasiado", "example": "Es demasiado caro. Me queda demasiado chico.", "en": "«Demasiado» = too (much)." },
+    { "structure": "si no / si", "example": "Ponte el abrigo, si no vas a tener frío.", "en": "«Si no» = otherwise (two words). «Sino» (one word) means «but rather»." }
+  ],
+  "tips": [
+    { "en": "«Playera» (Mexico), «remera» (Argentina), «camiseta» (Spain, Colombia) = T-shirt." },
+    { "en": "«Chamarra» (Mexico), «campera» (Argentina), «chaqueta» (Spain, Colombia) = jacket." },
+    { "en": "«Suéter» (Latin America) = «jersey» (Spain). «Jeans» or «pantalones de mezclilla» (Mexico) = «vaqueros» (Spain)." },
+    { "en": "Shoe sizes: ask «¿Qué número calza?». For clothes: «¿Qué talla usa?»." },
+    { "en": "«Probador» = fitting room. «¿Me lo puedo probar?» = Can I try it on?" }
+  ],
+  "vocabulary": [
+    { "word": "la camisa", "en": "the shirt" },
+    { "word": "la playera", "en": "the T-shirt (Mexico)" },
+    { "word": "los pantalones", "en": "the pants" },
+    { "word": "la falda", "en": "the skirt" },
+    { "word": "el vestido", "en": "the dress" },
+    { "word": "el suéter", "en": "the sweater" },
+    { "word": "la chamarra", "en": "the jacket (Mexico)" },
+    { "word": "el abrigo", "en": "the coat" },
+    { "word": "los zapatos", "en": "the shoes" },
+    { "word": "los tenis", "en": "the sneakers" },
+    { "word": "el impermeable", "en": "the raincoat" },
+    { "word": "los guantes", "en": "the gloves" },
+    { "word": "la gorra", "en": "the cap" },
+    { "word": "la talla", "en": "the size (clothes)" },
+    { "word": "el algodón", "en": "the cotton" },
+    { "word": "el cuero", "en": "the leather" }
+  ],
+  "phrases": [
+    { "phrase": "Esta chamarra te queda muy bien.", "en": "This jacket really suits you." },
+    { "phrase": "Me queda grande.", "en": "It's too big for me." },
+    { "phrase": "¿Me lo puedo probar?", "en": "Can I try it on?" },
+    { "phrase": "¿Dónde están los probadores?", "en": "Where are the fitting rooms?" },
+    { "phrase": "¿Qué talla usa?", "en": "What size do you wear?" },
+    { "phrase": "¿Lo tiene en otro color?", "en": "Do you have it in another color?" },
+    { "phrase": "Ponte el abrigo, si no vas a tener frío.", "en": "Put on your coat, otherwise you'll be cold." },
+    { "phrase": "Hoy llevo tenis.", "en": "Today I'm wearing sneakers." },
+    { "phrase": "Es de algodón.", "en": "It's made of cotton." },
+    { "phrase": "Se me voló el sombrero.", "en": "My hat blew away." },
+    { "phrase": "¿Quieres que te lo cosa?", "en": "Do you want me to sew it for you?" },
+    { "phrase": "No tengo guantes.", "en": "I don't have gloves." }
+  ],
+  "qa": [
+    { "question": { "es": "Tu amiga se prueba una chamarra y se ve muy bien. ¿Qué le dices?", "en": "Your friend tries on a jacket and looks great. What do you tell her?" }, "options": ["Te queda muy bien.", "Te queda muy grande.", "Llevas muy bien.", "Te pones bien."], "correct": 0, "explanation": { "en": "«Quedar bien» = to suit, to fit well." } },
+    { "question": { "es": "Completa: «una chamarra ___ cuero»", "en": "Complete: «una chamarra ___ cuero»" }, "options": ["de", "en", "con", "a"], "correct": 0, "explanation": { "en": "Material uses «de»." } },
+    { "question": { "es": "¿Qué te pones cuando llueve?", "en": "What do you put on when it rains?" }, "options": ["un impermeable", "un traje de baño", "unas sandalias", "una gorra de sol"], "correct": 0, "explanation": { "en": "«Impermeable» = raincoat." } },
+    { "question": { "es": "Completa: «Ponte el abrigo, ___ vas a tener frío.»", "en": "Complete: «Ponte el abrigo, ___ vas a tener frío.»" }, "options": ["si no", "sino", "pero", "porque"], "correct": 0, "explanation": { "en": "«Si no» = otherwise." } },
+    { "question": { "es": "Hacía mucho viento y tu sombrero salió volando. ¿Cómo lo cuentas?", "en": "It was very windy and your hat flew off. How do you tell it?" }, "options": ["Se me voló el sombrero.", "Me volé el sombrero.", "El sombrero me voló a mí.", "Voló mi sombrero de mí."], "correct": 0, "explanation": { "en": "«Se me…» expresses accidents: se me voló = it blew away (on me)." } },
+    { "question": { "es": "Completa: «¿Quieres que te lo ___?» (coser)", "en": "Complete: «¿Quieres que te lo ___?» (coser)" }, "options": ["cosa", "coso", "coseré", "cosía"], "correct": 0, "explanation": { "en": "After «querer que» use the subjunctive: cosa." } },
+    { "question": { "es": "«¿Tienes guantes?» — «No, no ___ tengo.»", "en": "«¿Tienes guantes?» — «No, no ___ tengo.»" }, "options": ["los", "las", "les", "lo"], "correct": 0, "explanation": { "en": "«Guantes» is masculine plural: los." } },
+    { "question": { "es": "Hace frío. Agarras el suéter y te lo pones. ¿Qué verbo usas?", "en": "It's cold. You grab your sweater and put it on. Which verb do you use?" }, "options": ["Me pongo el suéter.", "Llevo el suéter.", "Me visto el suéter.", "Me quedo el suéter."], "correct": 0, "explanation": { "en": "«Ponerse» = to put on (action); «llevar» = to be wearing." } }
+  ],
+  "story": {
+    "title": "De compras con Valeria",
+    "text": "El fin de semana, Valeria invita a Emily a ir de compras. Emily necesita ropa para una boda en Oaxaca. En la primera tienda, se prueba un vestido verde. «Te queda precioso», dice Valeria. Pero el vestido es de seda y es demasiado caro. En otra tienda encuentran uno azul de algodón, más sencillo y más barato. «¿Lo tiene en una talla más chica?», pregunta Emily. La vendedora lo trae y le queda perfecto. Después, Valeria quiere unos zapatos. «¿Qué número calza?», pregunta el vendedor. Al salir empieza a llover y ninguna de las dos lleva paraguas. «¡Corre, si no nos mojamos!», grita Valeria. Llegan al café empapadas pero felices.",
+    "en": "On the weekend, Valeria invites Emily to go shopping. Emily needs clothes for a wedding in Oaxaca. In the first store she tries on a green dress. «It looks gorgeous on you», says Valeria. But the dress is silk and it's too expensive. In another store they find a blue cotton one, simpler and cheaper. «Do you have it a size smaller?» asks Emily. The saleswoman brings it and it fits perfectly. Afterwards Valeria wants some shoes. «What size do you wear?» asks the salesman. As they leave it starts to rain and neither of them has an umbrella. «Run, otherwise we'll get wet!» shouts Valeria. They reach the café soaked but happy.",
+    "highlighted_words": ["se prueba un vestido", "Te queda precioso", "demasiado caro", "de algodón", "talla", "Qué número calza", "si no"]
+  },
+  "arrange": [
+    { "sentence": "Esta camisa te queda muy bien", "en": "This shirt really suits you." },
+    { "sentence": "¿Me puedo probar estos pantalones?", "en": "Can I try on these pants?" },
+    { "sentence": "Hoy llevo un vestido azul", "en": "Today I'm wearing a blue dress." },
+    { "sentence": "El suéter es de lana", "en": "The sweater is made of wool." },
+    { "sentence": "Estos zapatos me quedan chicos", "en": "These shoes are too small for me." },
+    { "sentence": "¿Lo tiene en otro color?", "en": "Do you have it in another color?" }
+  ],
+  "translate": [
+    { "answer": "¿Me lo puedo probar?", "en": "Can I try it on?", "accept": ["¿Puedo probármelo?"] },
+    { "answer": "Me queda grande", "en": "It is too big for me" },
+    { "answer": "Te queda bien", "en": "It suits you (tú)" },
+    { "answer": "Llevo una camisa blanca", "en": "I am wearing a white shirt" },
+    { "answer": "Es de algodón", "en": "It is made of cotton" },
+    { "answer": "¿Qué talla usa?", "en": "What size do you wear? (usted)" }
+  ]
+}

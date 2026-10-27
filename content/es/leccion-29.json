@@ -1,0 +1,84 @@
+{
+  "lesson": 29,
+  "slug": "leccion-29",
+  "icon": "🎬",
+  "title": { "es": "El teatro y el cine", "en": "Theater and movies" },
+  "grammar": [
+    { "structure": "¿qué tal si…? / ¿te late…?", "example": "¿Qué tal si vamos al cine?", "en": "Suggestions: «¿Qué tal si + present?», «¿Por qué no…?», and in Mexico, informally, «¿Te late…?»." },
+    { "structure": "el que / la que", "example": "Prefiero este papel al de la bruja.", "en": "«El de / la de» and «el que / la que» avoid repeating a noun: el papel de la bruja → el de la bruja." },
+    { "structure": "después de + infinitivo compuesto", "example": "Después de haber cenado, fueron al teatro.", "en": "«Después de haber» + participle = after having done." },
+    { "structure": "pasiva refleja: se + verbo", "example": "Se estrenó en 2024.", "en": "«Se» + verb is the most natural passive in Spanish: se estrenó = it premiered / was released." },
+    { "structure": "recomendar que + subjuntivo", "example": "Te recomiendo que la veas.", "en": "Recommending to someone else: recomendar que + subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Película subtitulada» = with subtitles (original version). «Película doblada» = dubbed. In Mexico, most cinemas offer both." },
+    { "en": "«Palomitas» (Mexico, Spain), «pochoclo» (Argentina), «crispetas» (Colombia), «cabritas» (Chile) = popcorn." },
+    { "en": "Booing in the theater is «abuchear». Whistling (silbar) can also mean disapproval in Spanish-speaking countries." },
+    { "en": "«Estrenar» = to premiere / release, but also to wear or use something for the first time: «Hoy estreno zapatos»." },
+    { "en": "Mexican cinema has a strong tradition: from the «Época de Oro» of the 1940s to directors like Cuarón, Iñárritu and del Toro." }
+  ],
+  "vocabulary": [
+    { "word": "el cine", "en": "the cinema, the movies" },
+    { "word": "la película", "en": "the movie" },
+    { "word": "el teatro", "en": "the theater" },
+    { "word": "la obra de teatro", "en": "the play" },
+    { "word": "el actor", "en": "the actor" },
+    { "word": "la actriz", "en": "the actress" },
+    { "word": "el director", "en": "the director" },
+    { "word": "el papel", "en": "the role" },
+    { "word": "el escenario", "en": "the stage" },
+    { "word": "el intermedio", "en": "the intermission" },
+    { "word": "la butaca", "en": "the seat (theater)" },
+    { "word": "la taquilla de cine", "en": "the box office" },
+    { "word": "las palomitas", "en": "the popcorn" },
+    { "word": "subtitulada", "en": "subtitled" },
+    { "word": "doblada", "en": "dubbed" },
+    { "word": "aplaudir", "en": "to clap" }
+  ],
+  "phrases": [
+    { "phrase": "¿Qué tal si vamos al cine?", "en": "How about going to the movies?" },
+    { "phrase": "¿Qué película quieres ver?", "en": "Which movie do you want to see?" },
+    { "phrase": "¿Es subtitulada o doblada?", "en": "Is it subtitled or dubbed?" },
+    { "phrase": "Dos boletos para la función de las ocho.", "en": "Two tickets for the eight o'clock showing." },
+    { "phrase": "¿Compramos palomitas?", "en": "Shall we buy popcorn?" },
+    { "phrase": "Te recomiendo que la veas.", "en": "I recommend you see it." },
+    { "phrase": "La actriz principal es increíble.", "en": "The lead actress is amazing." },
+    { "phrase": "El público lo abucheó.", "en": "The audience booed him." },
+    { "phrase": "Se estrenó el año pasado.", "en": "It came out last year." },
+    { "phrase": "Me aburrí un poco.", "en": "I got a bit bored." },
+    { "phrase": "¡Qué final tan inesperado!", "en": "What an unexpected ending!" },
+    { "phrase": "Prefiero este papel al de la bruja.", "en": "I prefer this role to the witch's." }
+  ],
+  "qa": [
+    { "question": { "es": "¿Cómo propones de manera informal ir al cine?", "en": "How do you suggest going to the movies informally?" }, "options": ["¿Qué tal si vamos al cine?", "Tienes que ir al cine.", "¡Ve al cine!", "¿El cine está abierto?"], "correct": 0, "explanation": { "en": "«¿Qué tal si…?» = how about…?" } },
+    { "question": { "es": "En el teatro, la obra se detiene veinte minutos y el público sale a tomar algo. ¿Cómo se llama esta pausa?", "en": "At the theater the play stops for twenty minutes and the audience goes for a drink. What is this break called?" }, "options": ["el intermedio", "el escenario", "la butaca", "el papel"], "correct": 0, "explanation": { "en": "«El intermedio» (or «el entreacto») = the intermission." } },
+    { "question": { "es": "Al público no le gustó nada el actor y lo abucheó. ¿Cómo lo cuentas?", "en": "The audience didn't like the actor at all and booed him. How do you tell it?" }, "options": ["El público lo abucheó.", "El público le aplaudió.", "El público se abucheó.", "El actor abucheó al público."], "correct": 0, "explanation": { "en": "«Abuchear» = to boo." } },
+    { "question": { "es": "Completa: «Prefiero este papel al ___ la bruja.»", "en": "Complete: «Prefiero este papel al ___ la bruja.»" }, "options": ["de", "que", "del", "a"], "correct": 0, "explanation": { "en": "«Al de la bruja» = to the witch's (one), avoiding repeating «papel»." } },
+    { "question": { "es": "Quieres ver una película estadounidense en inglés, con subtítulos. ¿Qué preguntas?", "en": "You want to see an American movie in English with subtitles. What do you ask?" }, "options": ["¿Es subtitulada?", "¿Es doblada?", "¿Es muda?", "¿Es estrenada?"], "correct": 0, "explanation": { "en": "«Subtitulada» = with subtitles; «doblada» = dubbed." } },
+    { "question": { "es": "Completa: «___ haber cenado, fueron al teatro.»", "en": "Complete: «___ haber cenado, fueron al teatro.»" }, "options": ["Después de", "Antes que", "Durante", "Desde"], "correct": 0, "explanation": { "en": "«Después de haber» + participle = after having done." } },
+    { "question": { "es": "Viste una película genial y quieres que tu amiga la vea. ¿Qué le dices?", "en": "You saw a great movie and want your friend to see it. What do you tell her?" }, "options": ["Te recomiendo que la veas.", "Te recomiendo que la ves.", "Te recomiendo verla ayer.", "Te recomiendo que la verás."], "correct": 0, "explanation": { "en": "«Recomendar que» + subjunctive: veas." } },
+    { "question": { "es": "¿Qué comes normalmente en el cine?", "en": "What do you usually eat at the movies?" }, "options": ["palomitas", "butacas", "taquillas", "escenarios"], "correct": 0, "explanation": { "en": "«Palomitas» = popcorn." } }
+  ],
+  "story": {
+    "title": "Una noche en el teatro",
+    "text": "Nicolás invita a Emily al teatro. «¿Qué tal si vamos a ver una obra el sábado? Es una comedia muy famosa.» Después de haber cenado tacos, llegan al teatro a las ocho. Sus butacas están en la tercera fila, muy cerca del escenario. Los actores hablan rápido y Emily no entiende todos los chistes, pero se ríe con el público. En el intermedio compran agua y hablan de la obra. «La actriz que hace de la abuela es buenísima», dice Emily. «Sí, la vi en una película que se estrenó el año pasado», responde Nicolás. Al final, todos aplauden de pie. «Te recomiendo que vengamos más seguido», dice Emily. Nicolás sonríe: «Trato hecho».",
+    "en": "Nicolás invites Emily to the theater. «How about going to see a play on Saturday? It's a very famous comedy.» After having tacos for dinner, they get to the theater at eight. Their seats are in the third row, very close to the stage. The actors speak fast and Emily doesn't get all the jokes, but she laughs with the audience. At the intermission they buy water and talk about the play. «The actress who plays the grandma is brilliant», says Emily. «Yes, I saw her in a movie that came out last year», answers Nicolás. At the end everyone gives a standing ovation. «I suggest we come more often», says Emily. Nicolás smiles: «Deal».",
+    "highlighted_words": ["Qué tal si", "Después de haber cenado", "butacas", "escenario", "intermedio", "se estrenó", "aplauden"]
+  },
+  "arrange": [
+    { "sentence": "¿Qué tal si vamos al cine esta noche?", "en": "How about going to the movies tonight?" },
+    { "sentence": "Dos boletos para la función de las ocho", "en": "Two tickets for the eight o'clock showing." },
+    { "sentence": "La película se estrenó el año pasado", "en": "The movie came out last year." },
+    { "sentence": "Te recomiendo que veas esta obra", "en": "I recommend you see this play." },
+    { "sentence": "Prefiero las películas subtituladas", "en": "I prefer subtitled movies." },
+    { "sentence": "Al final todos aplaudieron de pie", "en": "At the end everyone clapped standing up." }
+  ],
+  "translate": [
+    { "answer": "Vamos al cine", "en": "Let's go to the movies" },
+    { "answer": "¿Es subtitulada?", "en": "Is it subtitled?" },
+    { "answer": "Me encantó la película", "en": "I loved the movie" },
+    { "answer": "La actriz es increíble", "en": "The actress is amazing" },
+    { "answer": "Me aburrí un poco", "en": "I got a little bored" },
+    { "answer": "¿Qué película quieres ver?", "en": "Which movie do you want to see? (tú)" }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lesson": 26,
+  "slug": "leccion-26",
+  "icon": "🎸",
+  "title": { "es": "La música y los instrumentos", "en": "Music and instruments" },
+  "grammar": [
+    { "structure": "tocar (instrumento) / jugar (deporte)", "example": "Toco la guitarra. Juego al tenis.", "en": "English «play» splits in two: «tocar» for instruments, «jugar» for games and sports." },
+    { "structure": "saber + infinitivo", "example": "Sé tocar el piano.", "en": "«Saber» + infinitive = to know how to (can): sé nadar, sé tocar." },
+    { "structure": "imperfecto: costumbres", "example": "Mi papá nos cantaba canciones antes de dormir.", "en": "The imperfect describes what used to happen repeatedly." },
+    { "structure": "llevar + tiempo + gerundio", "example": "Llevo diez años tocando el piano.", "en": "«Llevar» + time + gerund = to have been doing something for…" },
+    { "structure": "ninguno / ninguna", "example": "¿Cuántos instrumentos tocas? — Ninguno.", "en": "«Ninguno» (none) agrees; before a masculine noun it becomes «ningún»: ningún instrumento." }
+  ],
+  "tips": [
+    { "en": "Latin American rhythms: mariachi and ranchera (Mexico), cumbia and vallenato (Colombia), tango (Argentina), salsa (Cuba, Puerto Rico, Colombia), reggaetón (Puerto Rico)." },
+    { "en": "«Batería» = drum kit, but also battery! «Se me acabó la batería» = my battery died." },
+    { "en": "«Rola» (Mexico), «tema» (Spain, Argentina) and «canción» = song." },
+    { "en": "«Echarse una canción» (Mexico) = to sing a song, often at a party with a guitar." },
+    { "en": "In Spain «concierto» and «bolo» (informal) = gig; in Mexico «toquín» is a small concert." }
+  ],
+  "vocabulary": [
+    { "word": "la música", "en": "music" },
+    { "word": "la canción", "en": "the song" },
+    { "word": "el cantante", "en": "the singer" },
+    { "word": "el concierto", "en": "the concert" },
+    { "word": "la guitarra", "en": "the guitar" },
+    { "word": "el piano", "en": "the piano" },
+    { "word": "el violín", "en": "the violin" },
+    { "word": "la batería", "en": "the drums, the battery" },
+    { "word": "la trompeta", "en": "the trumpet" },
+    { "word": "la flauta", "en": "the flute" },
+    { "word": "la banda", "en": "the band" },
+    { "word": "el ritmo", "en": "the rhythm" },
+    { "word": "la letra", "en": "the lyrics" },
+    { "word": "tocar", "en": "to play (an instrument)" },
+    { "word": "cantar", "en": "to sing" },
+    { "word": "el conservatorio", "en": "the music school" }
+  ],
+  "phrases": [
+    { "phrase": "¿Tocas algún instrumento?", "en": "Do you play an instrument?" },
+    { "phrase": "Toco la guitarra.", "en": "I play the guitar." },
+    { "phrase": "Llevo diez años tocando el piano.", "en": "I've been playing the piano for ten years." },
+    { "phrase": "¿Qué música te gusta?", "en": "What music do you like?" },
+    { "phrase": "Me encanta la salsa.", "en": "I love salsa." },
+    { "phrase": "No sé bailar.", "en": "I can't dance." },
+    { "phrase": "¿Vamos al concierto el viernes?", "en": "Shall we go to the concert on Friday?" },
+    { "phrase": "Mi abuelo nos cantaba boleros.", "en": "My grandpa used to sing us boleros." },
+    { "phrase": "Esta canción me trae recuerdos.", "en": "This song brings back memories." },
+    { "phrase": "No entiendo la letra.", "en": "I don't understand the lyrics." },
+    { "phrase": "Súbele el volumen.", "en": "Turn the volume up." },
+    { "phrase": "Ninguno, no toco nada.", "en": "None, I don't play anything." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Mi hermana ___ el violín.»", "en": "Complete: «Mi hermana ___ el violín.»" }, "options": ["toca", "juega", "hace", "pone"], "correct": 0, "explanation": { "en": "Instruments use «tocar»." } },
+    { "question": { "es": "Completa: «Los domingos ___ al fútbol, y los lunes ___ la guitarra.»", "en": "Complete: «Los domingos ___ al fútbol, y los lunes ___ la guitarra.»" }, "options": ["juego … toco", "toco … juego", "juego … juego", "toco … toco"], "correct": 0, "explanation": { "en": "Sports → jugar; instruments → tocar." } },
+    { "question": { "es": "¿Qué frase describe una costumbre del pasado?", "en": "Which sentence describes a past habit?" }, "options": ["Mi papá nos cantaba canciones.", "Mi papá nos cantó una canción ayer.", "Mi papá nos cantará una canción.", "Mi papá nos canta una canción."], "correct": 0, "explanation": { "en": "The imperfect «cantaba» = used to sing." } },
+    { "question": { "es": "Empezaste a tocar el piano hace diez años y sigues tocando. ¿Cómo lo dices?", "en": "You started playing the piano ten years ago and still play. How do you say it?" }, "options": ["Llevo diez años tocando el piano.", "Toqué el piano diez años.", "Tocaba el piano en diez años.", "Llevo tocar el piano diez años."], "correct": 0, "explanation": { "en": "«Llevar» + time + gerund = have been doing for…" } },
+    { "question": { "es": "«¿Cuántos instrumentos tocas?» No tocas ninguno. ¿Qué respondes?", "en": "«How many instruments do you play?» You don't play any. What do you answer?" }, "options": ["Ninguno.", "Ninguna.", "Nadie.", "Nada de uno."], "correct": 0, "explanation": { "en": "«Ninguno» agrees with «instrumento» (masculine)." } },
+    { "question": { "es": "¿Dónde se estudia música de forma profesional?", "en": "Where do you study music professionally?" }, "options": ["en el conservatorio", "en la batería", "en el concierto", "en la letra"], "correct": 0, "explanation": { "en": "«El conservatorio» = music conservatory." } },
+    { "question": { "es": "¿Qué instrumento es de percusión?", "en": "Which instrument is a percussion instrument?" }, "options": ["la batería", "la flauta", "el violín", "la trompeta"], "correct": 0, "explanation": { "en": "«La batería» = the drums." } },
+    { "question": { "es": "Escuchas una canción, pero no entiendes las palabras. ¿Qué dices?", "en": "You hear a song but don't understand the words. What do you say?" }, "options": ["No entiendo la letra.", "No entiendo el ritmo.", "No sé tocar.", "No entiendo la banda."], "correct": 0, "explanation": { "en": "«La letra» = the lyrics." } }
+  ],
+  "story": {
+    "title": "Noche de mariachis",
+    "text": "Para el cumpleaños de Carmen, su familia contrata un mariachi. A las once de la noche llegan seis músicos con trajes negros y sombreros enormes. Tocan la trompeta, el violín y la guitarra, y cantan «Las mañanitas», la canción de cumpleaños mexicana. Carmen llora de emoción. «Cuando era niña, mi papá nos cantaba esta canción cada año», le explica a Emily. Raúl pide una ranchera y toda la familia canta. Emily no conoce la letra, pero aplaude con el ritmo. «¿Tú tocas algún instrumento?», le pregunta Mateo. «Ninguno, pero sé cantar un poco.» «¡Entonces canta con nosotros!» Al final, Emily canta el coro de «Cielito lindo» con todos.",
+    "en": "For Carmen's birthday, her family hires a mariachi band. At eleven at night six musicians arrive in black suits and huge sombreros. They play the trumpet, the violin and the guitar, and sing «Las mañanitas», the Mexican birthday song. Carmen cries with emotion. «When I was a girl, my dad used to sing us this song every year», she explains to Emily. Raúl requests a ranchera and the whole family sings. Emily doesn't know the lyrics, but she claps to the rhythm. «Do you play an instrument?» Mateo asks her. «None, but I can sing a little.» «Then sing with us!» At the end, Emily sings the chorus of «Cielito lindo» with everyone.",
+    "highlighted_words": ["trompeta", "violín", "guitarra", "canción", "nos cantaba", "la letra", "el ritmo", "Ninguno"]
+  },
+  "arrange": [
+    { "sentence": "Toco la guitarra desde los diez años", "en": "I've played the guitar since I was ten." },
+    { "sentence": "Mi abuelo nos cantaba canciones antiguas", "en": "My grandpa used to sing us old songs." },
+    { "sentence": "¿Vamos al concierto el viernes?", "en": "Shall we go to the concert on Friday?" },
+    { "sentence": "Esta canción me trae muchos recuerdos", "en": "This song brings back lots of memories." },
+    { "sentence": "Llevo cinco años tocando el piano", "en": "I've been playing the piano for five years." },
+    { "sentence": "No entiendo la letra de la canción", "en": "I don't understand the lyrics of the song." }
+  ],
+  "translate": [
+    { "answer": "Toco el piano", "en": "I play the piano" },
+    { "answer": "¿Tocas algún instrumento?", "en": "Do you play an instrument? (tú)" },
+    { "answer": "Me encanta esta canción", "en": "I love this song" },
+    { "answer": "No sé bailar", "en": "I can't dance (don't know how)" },
+    { "answer": "Vamos al concierto", "en": "Let's go to the concert", "accept": ["Vamos a ir al concierto"] },
+    { "answer": "Sé tocar la guitarra", "en": "I know how to play the guitar" }
+  ]
+}

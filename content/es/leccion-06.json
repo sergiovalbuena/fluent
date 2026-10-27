@@ -1,0 +1,84 @@
+{
+  "lesson": 6,
+  "slug": "leccion-06",
+  "icon": "👨‍👩‍👧",
+  "title": { "es": "La familia", "en": "The family" },
+  "grammar": [
+    { "structure": "mi / tu / su", "example": "mi hermano, tus padres, su hija", "en": "Possessives before the noun agree in number only: mi hermano, mis hermanos. «Su» = his, her, your (usted) or their." },
+    { "structure": "nuestro / nuestra", "example": "nuestra casa, nuestros hijos", "en": "«Nuestro» (our) also agrees in gender: nuestra madre, nuestros abuelos." },
+    { "structure": "tener: tengo, tienes, tiene", "example": "Tengo dos hermanos.", "en": "«Tener» (to have) is irregular: tengo, tienes, tiene, tenemos, tienen." },
+    { "structure": "presente -ar: vivo → hablo", "example": "Mi hermana trabaja en un banco.", "en": "Regular -ar verbs: hablo, hablas, habla, hablamos, hablan." },
+    { "structure": "los padres / los hermanos", "example": "mis hermanos = my brothers / my siblings", "en": "The masculine plural covers mixed groups: «los padres» = parents, «los hermanos» = siblings." }
+  ],
+  "tips": [
+    { "en": "Most Spanish speakers have two last names: the father's first and then the mother's. Emily García López → García is from her dad, López from her mom." },
+    { "en": "«Mamá» and «papá» are very common even among adults. In Mexico «mami» and «papi» are also used affectionately." },
+    { "en": "«Parientes» means relatives, not parents. Parents are «los padres»." },
+    { "en": "Family is central in Latin American culture: Sunday lunch with grandparents, aunts and cousins is a classic." },
+    { "en": "In Spain «vuestro» is «your» for a group (vosotros). In Latin America it's «su»: «su casa» can mean your (plural) house." }
+  ],
+  "vocabulary": [
+    { "word": "la madre", "en": "the mother" },
+    { "word": "el padre", "en": "the father" },
+    { "word": "los padres", "en": "the parents" },
+    { "word": "el hermano", "en": "the brother" },
+    { "word": "la hermana", "en": "the sister" },
+    { "word": "el hijo", "en": "the son" },
+    { "word": "la hija", "en": "the daughter" },
+    { "word": "el abuelo", "en": "the grandfather" },
+    { "word": "la abuela", "en": "the grandmother" },
+    { "word": "el tío", "en": "the uncle" },
+    { "word": "la tía", "en": "the aunt" },
+    { "word": "el primo", "en": "the cousin (man)" },
+    { "word": "la prima", "en": "the cousin (woman)" },
+    { "word": "el esposo", "en": "the husband" },
+    { "word": "la esposa", "en": "the wife" },
+    { "word": "el nieto", "en": "the grandson" }
+  ],
+  "phrases": [
+    { "phrase": "¿Tienes hermanos?", "en": "Do you have any siblings?" },
+    { "phrase": "Tengo una hermana mayor.", "en": "I have an older sister." },
+    { "phrase": "Soy hijo único.", "en": "I'm an only child." },
+    { "phrase": "Mis padres viven en Texas.", "en": "My parents live in Texas." },
+    { "phrase": "¿Estás casada?", "en": "Are you married? (to a woman)" },
+    { "phrase": "Estoy soltero.", "en": "I'm single." },
+    { "phrase": "¿A qué se dedica tu papá?", "en": "What does your dad do for a living?" },
+    { "phrase": "Mi hermano menor tiene diez años.", "en": "My younger brother is ten." },
+    { "phrase": "Esta es mi familia.", "en": "This is my family." },
+    { "phrase": "Nos parecemos mucho.", "en": "We look a lot alike." },
+    { "phrase": "Mi abuela cocina muy rico.", "en": "My grandma cooks really well." },
+    { "phrase": "Su hija se va a casar.", "en": "Her daughter is going to get married." }
+  ],
+  "qa": [
+    { "question": { "es": "El hermano de tu mamá es tu…", "en": "Your mom's brother is your…" }, "options": ["tío", "primo", "abuelo", "sobrino"], "correct": 0, "explanation": { "en": "Your parent's brother is your «tío» (uncle)." } },
+    { "question": { "es": "La hija de tu hermana es tu…", "en": "Your sister's daughter is your…" }, "options": ["sobrina", "prima", "nieta", "tía"], "correct": 0, "explanation": { "en": "«Sobrina» = niece. «Prima» = cousin." } },
+    { "question": { "es": "No tienes hermanos ni hermanas. ¿Cómo lo dices?", "en": "You don't have brothers or sisters. How do you say it?" }, "options": ["Soy hijo único.", "Soy hermano solo.", "Tengo cero hermano.", "Soy soltero."], "correct": 0, "explanation": { "en": "«Hijo único / hija única» = only child. «Soltero» means single (not married)." } },
+    { "question": { "es": "Quieres saber en qué trabaja el papá de tu amiga. ¿Qué preguntas?", "en": "You want to know what your friend's dad does for work. What do you ask?" }, "options": ["¿A qué se dedica tu papá?", "¿Cuántos años tiene tu papá?", "¿Cómo se llama tu papá?", "¿Dónde está tu papá?"], "correct": 0, "explanation": { "en": "«¿A qué se dedica…?» = what does… do (for a living)?" } },
+    { "question": { "es": "Completa: «___ abuelos viven en Puebla.» (de nosotros)", "en": "Complete: «___ abuelos viven en Puebla.» (de nosotros)" }, "options": ["Nuestros", "Nuestro", "Nuestras", "Sus"], "correct": 0, "explanation": { "en": "«Abuelos» is masculine plural: nuestros abuelos." } },
+    { "question": { "es": "Tu prima va a celebrar su boda en junio. ¿Cómo lo dices?", "en": "Your cousin is having her wedding in June. How do you say it?" }, "options": ["Mi prima se va a casar en junio.", "Mi prima se casó en junio.", "Mi prima está casada en junio.", "Mi prima casa en junio."], "correct": 0, "explanation": { "en": "Near future: «ir a + infinitive»: se va a casar = she's going to get married." } },
+    { "question": { "es": "Tienes 30 años y tu hermana tiene 35. ¿Qué es ella para ti?", "en": "You're 30 and your sister is 35. What is she to you?" }, "options": ["mi hermana mayor", "mi hermana menor", "mi hermana gemela", "mi hermana pequeña"], "correct": 0, "explanation": { "en": "«Mayor» = older, «menor» = younger." } },
+    { "question": { "es": "Completa: «Mis padres ___ en Texas.» (vivir)", "en": "Complete: «Mis padres ___ en Texas.» (vivir)" }, "options": ["viven", "vive", "vivimos", "vivo"], "correct": 0, "explanation": { "en": "«Mis padres» = ellos → viven." } }
+  ],
+  "story": {
+    "title": "La comida del domingo",
+    "text": "El domingo, la señora Carmen invita a Emily a comer con su familia. En la mesa hay muchas personas. Carmen presenta a todos: «Este es mi esposo, Raúl. Ella es mi hija Lupita, la mamá de Mateo, y él es su esposo, Andrés. Y estos son mis sobrinos, Toño y Paola.» Mateo, el nieto, se sienta al lado de Emily. «¿Tienes hermanos?», pregunta. «Sí, tengo un hermano menor. Se llama Kevin y vive en Chicago con mis padres.» «¿Y abuelos?» «Mi abuela tiene noventa años y todavía cocina muy rico.» Todos ríen. Después de la comida, Raúl saca la guitarra y la familia canta. Emily piensa en su familia y sonríe.",
+    "en": "On Sunday, Mrs. Carmen invites Emily to have lunch with her family. There are lots of people at the table. Carmen introduces everyone: «This is my husband, Raúl. She is my daughter Lupita, Mateo's mom, and he is her husband, Andrés. And these are my nephew and niece, Toño and Paola.» Mateo, the grandson, sits next to Emily. «Do you have siblings?» he asks. «Yes, I have a younger brother. His name is Kevin and he lives in Chicago with my parents.» «And grandparents?» «My grandma is ninety and she still cooks really well.» Everyone laughs. After lunch, Raúl takes out the guitar and the family sings. Emily thinks of her family and smiles.",
+    "highlighted_words": ["esposo", "hija", "sobrinos", "nieto", "hermanos", "hermano menor", "mis padres", "abuela"]
+  },
+  "arrange": [
+    { "sentence": "Tengo un hermano y dos hermanas", "en": "I have a brother and two sisters." },
+    { "sentence": "Mis padres viven en Chicago", "en": "My parents live in Chicago." },
+    { "sentence": "Esta es mi abuela, se llama Rosa", "en": "This is my grandma, her name is Rosa." },
+    { "sentence": "Nuestros primos vienen el domingo", "en": "Our cousins are coming on Sunday." },
+    { "sentence": "¿A qué se dedica tu mamá?", "en": "What does your mom do for a living?" },
+    { "sentence": "Mi hermana mayor está casada", "en": "My older sister is married." }
+  ],
+  "translate": [
+    { "answer": "¿Tienes hermanos?", "en": "Do you have siblings? (tú)" },
+    { "answer": "Soy hija única", "en": "I am an only child (woman)" },
+    { "answer": "Mis padres viven en Texas", "en": "My parents live in Texas" },
+    { "answer": "Esta es mi familia", "en": "This is my family" },
+    { "answer": "Mi abuelo tiene ochenta años", "en": "My grandfather is eighty years old" },
+    { "answer": "Estoy casado", "en": "I am married (man)" }
+  ]
+}

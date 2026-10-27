@@ -1,0 +1,84 @@
+{
+  "lesson": 10,
+  "slug": "leccion-10",
+  "icon": "🗨️",
+  "title": { "es": "Expresiones cotidianas (2)", "en": "Everyday expressions (2)" },
+  "grammar": [
+    { "structure": "me gusta / me gustan", "example": "Me gusta el café. Me gustan los tacos.", "en": "«Gustar» works backwards: the thing you like is the subject. Singular → gusta, plural → gustan." },
+    { "structure": "me, te, le, nos, les + gusta", "example": "¿Te gusta? A Diego le gusta el fútbol.", "en": "The pronoun shows who likes it: me (I), te (you), le (he / she / usted), nos (we), les (they)." },
+    { "structure": "ir a + infinitivo", "example": "Voy a llamar a mi mamá.", "en": "Near future: «ir a» + infinitive = going to." },
+    { "structure": "estar + adjetivo", "example": "Estoy cansada. Estás muy guapo hoy.", "en": "Temporary states and feelings use «estar»." },
+    { "structure": "acabar de + infinitivo", "example": "Acabo de llegar.", "en": "«Acabar de» + infinitive = to have just done something." }
+  ],
+  "tips": [
+    { "en": "«Me encanta» (I love it) is stronger than «me gusta mucho» and works like «gustar»: me encantan los mangos." },
+    { "en": "«Me da igual» = I don't mind. «Me vale» (Mexico) means the same but is rude in some contexts." },
+    { "en": "«Tener ganas de» + infinitive = to feel like: «Tengo ganas de bailar»." },
+    { "en": "«¡Qué pena!» means «what a shame» in most of Latin America, but «how embarrassing» in Colombia." },
+    { "en": "«Echar de menos» (Spain) and «extrañar» (Latin America) both mean to miss someone: «Te extraño»." }
+  ],
+  "vocabulary": [
+    { "word": "gustar", "en": "to like (to be pleasing)" },
+    { "word": "encantar", "en": "to love (things)" },
+    { "word": "cansado", "en": "tired" },
+    { "word": "contento", "en": "happy, glad" },
+    { "word": "triste", "en": "sad" },
+    { "word": "aburrido", "en": "bored, boring" },
+    { "word": "nervioso", "en": "nervous" },
+    { "word": "enojado", "en": "angry" },
+    { "word": "extrañar", "en": "to miss" },
+    { "word": "tener ganas de", "en": "to feel like" },
+    { "word": "acabar de", "en": "to have just" },
+    { "word": "divertirse", "en": "to have fun" },
+    { "word": "la suerte", "en": "the luck" },
+    { "word": "la lástima", "en": "the pity, the shame" },
+    { "word": "de verdad", "en": "really, for real" },
+    { "word": "por supuesto", "en": "of course" }
+  ],
+  "phrases": [
+    { "phrase": "¿Te gusta la comida mexicana?", "en": "Do you like Mexican food?" },
+    { "phrase": "Me encanta.", "en": "I love it." },
+    { "phrase": "Me da igual.", "en": "I don't mind." },
+    { "phrase": "¡Qué lástima que te vayas!", "en": "What a shame you're leaving!" },
+    { "phrase": "Pareces cansado.", "en": "You look tired." },
+    { "phrase": "Tengo muchas ganas de verte.", "en": "I really want to see you." },
+    { "phrase": "Te extraño.", "en": "I miss you." },
+    { "phrase": "¡Buena suerte!", "en": "Good luck!" },
+    { "phrase": "Me divertí mucho.", "en": "I had a lot of fun." },
+    { "phrase": "Fue un placer conocerte.", "en": "It was a pleasure to meet you." },
+    { "phrase": "Acabo de llegar.", "en": "I've just arrived." },
+    { "phrase": "¿De verdad?", "en": "Really?" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Me ___ los tacos.»", "en": "Complete: «Me ___ los tacos.»" }, "options": ["gustan", "gusta", "gusto", "gustamos"], "correct": 0, "explanation": { "en": "«Los tacos» is plural, so: me gustan." } },
+    { "question": { "es": "Completa: «A Diego ___ gusta el fútbol.»", "en": "Complete: «A Diego ___ gusta el fútbol.»" }, "options": ["le", "lo", "se", "les"], "correct": 0, "explanation": { "en": "For one person (he / she): le gusta." } },
+    { "question": { "es": "Tu compañera tiene los ojos rojos y bosteza. ¿Qué le dices?", "en": "Your coworker has red eyes and keeps yawning. What do you tell her?" }, "options": ["Pareces cansada.", "Eres cansada.", "Pareces cansado.", "Tienes cansada."], "correct": 0, "explanation": { "en": "«Parecer» + adjective = to look… and «cansada» agrees with her." } },
+    { "question": { "es": "Te preguntan si prefieres pizza o tacos, y los dos te parecen bien. ¿Qué respondes?", "en": "They ask if you prefer pizza or tacos, and both are fine with you. What do you answer?" }, "options": ["Me da igual.", "Me da pena.", "Me encanta igual.", "No me gusta nada."], "correct": 0, "explanation": { "en": "«Me da igual» = I don't mind, either is fine." } },
+    { "question": { "es": "Entras a casa y alguien te pregunta si llegaste hace mucho. Llegaste hace un minuto. ¿Qué dices?", "en": "You walk in and someone asks if you arrived long ago. You arrived a minute ago. What do you say?" }, "options": ["Acabo de llegar.", "Voy a llegar.", "Llegué ayer.", "Estoy llegando mañana."], "correct": 0, "explanation": { "en": "«Acabar de» + infinitive = to have just: acabo de llegar." } },
+    { "question": { "es": "Tu mejor amiga vive lejos y piensas mucho en ella. ¿Qué le escribes?", "en": "Your best friend lives far away and you think about her a lot. What do you write to her?" }, "options": ["Te extraño mucho.", "Me extrañas mucho.", "Te gusto mucho.", "Me da igual."], "correct": 0, "explanation": { "en": "«Extrañar» = to miss (Latin America). In Spain: «te echo de menos»." } },
+    { "question": { "es": "Te despides de alguien que conociste hoy y fue agradable. ¿Qué dices?", "en": "You're saying goodbye to someone you met today, and it was nice. What do you say?" }, "options": ["Fue un placer conocerte.", "Fue un placer conocerme.", "Es un placer conocido.", "Mucho gusto conocerte mañana."], "correct": 0, "explanation": { "en": "«Fue un placer conocerte» = it was a pleasure to meet you." } },
+    { "question": { "es": "Tu amigo tiene un examen mañana. ¿Qué le dices?", "en": "Your friend has an exam tomorrow. What do you tell him?" }, "options": ["¡Buena suerte!", "¡Buen provecho!", "¡Qué lástima!", "¡Me da igual!"], "correct": 0, "explanation": { "en": "«¡Buena suerte!» = good luck!" } }
+  ],
+  "story": {
+    "title": "Una despedida",
+    "text": "Hoy es el último día de Tom y Sarah en México. Vuelven a Toronto el sábado. La clase de español organiza una pequeña fiesta en un café. «¡Qué lástima que se vayan!», dice Emily. «Sí, estamos un poco tristes», responde Sarah. «Nos gusta mucho la vida aquí. Nos encantan los mercados y la comida.» Hans pregunta: «¿Qué van a extrañar más?». «Los tacos al pastor, por supuesto», dice Tom, y todos ríen. Lucía, la profesora, les da un regalo: un libro de recetas mexicanas. «Para que no extrañen tanto la comida.» Al final, Emily abraza a Sarah. «Fue un placer conocerte. ¡Buena suerte en Toronto!» «Gracias. ¡Me divertí mucho con ustedes!»",
+    "en": "Today is Tom and Sarah's last day in Mexico. They go back to Toronto on Saturday. The Spanish class throws a small party at a café. «What a shame you're leaving!» says Emily. «Yes, we're a bit sad», answers Sarah. «We really like life here. We love the markets and the food.» Hans asks: «What are you going to miss most?». «Tacos al pastor, of course», says Tom, and everyone laughs. Lucía, the teacher, gives them a present: a book of Mexican recipes. «So you don't miss the food so much.» At the end, Emily hugs Sarah. «It was a pleasure to meet you. Good luck in Toronto!» «Thanks. I had a lot of fun with you all!»",
+    "highlighted_words": ["Qué lástima", "tristes", "Nos gusta", "Nos encantan", "extrañar", "por supuesto", "Fue un placer conocerte", "Buena suerte"]
+  },
+  "arrange": [
+    { "sentence": "Me gusta mucho la comida mexicana", "en": "I really like Mexican food." },
+    { "sentence": "A mis amigos les encantan los mercados", "en": "My friends love the markets." },
+    { "sentence": "Acabo de llegar a la oficina", "en": "I've just arrived at the office." },
+    { "sentence": "Esta noche voy a llamar a mi mamá", "en": "Tonight I'm going to call my mom." },
+    { "sentence": "¡Qué lástima que te vayas!", "en": "What a shame you're leaving!" },
+    { "sentence": "Tengo ganas de ir a la playa", "en": "I feel like going to the beach." }
+  ],
+  "translate": [
+    { "answer": "Me gusta el café", "en": "I like coffee" },
+    { "answer": "Me encantan los tacos", "en": "I love tacos" },
+    { "answer": "Estoy cansado", "en": "I am tired (man)" },
+    { "answer": "Te extraño", "en": "I miss you (tú)", "accept": ["Te echo de menos"] },
+    { "answer": "Acabo de llegar", "en": "I have just arrived" },
+    { "answer": "¡Buena suerte!", "en": "Good luck!" }
+  ]
+}

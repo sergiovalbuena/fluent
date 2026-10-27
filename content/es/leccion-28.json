@@ -1,0 +1,84 @@
+{
+  "lesson": 28,
+  "slug": "leccion-28",
+  "icon": "🤝",
+  "title": { "es": "Citas y visitas", "en": "Appointments and visits" },
+  "grammar": [
+    { "structure": "hasta que / antes de que + subjuntivo", "example": "Espere hasta que salga el doctor. Vámonos antes de que llueva.", "en": "For future events, «hasta que» and always «antes de que» take the subjunctive." },
+    { "structure": "a personal", "example": "Voy a visitar a mi abuela.", "en": "When the direct object is a specific person, add «a»: visito a mi abuela (but: visito el museo)." },
+    { "structure": "pregunta indirecta con si", "example": "Me preguntó si podía entrar.", "en": "Yes / no questions in reported speech use «si»: me preguntó si podía…" },
+    { "structure": "es raro que + subjuntivo", "example": "Es raro que una gripa dure tanto.", "en": "Expressions of judgment (es raro, es normal, es importante que) take the subjunctive." },
+    { "structure": "quedar (con alguien)", "example": "Quedamos a las seis en el café.", "en": "«Quedar» = to arrange to meet (Spain and much of Latin America): ¿A qué hora quedamos?" }
+  ],
+  "tips": [
+    { "en": "«Cita» = appointment (doctor, bank) and also a date. «Sacar una cita» = to book an appointment." },
+    { "en": "«Hacer fila» (Latin America) = «hacer cola» (Spain) = to stand in line." },
+    { "en": "When you visit a home in Latin America, it's polite to bring something small: dessert, flowers or a drink." },
+    { "en": "«Estás en tu casa» or «siéntete como en tu casa» = make yourself at home." },
+    { "en": "«Agendar» (Latin America) = to schedule. «Reagendar» or «cambiar la cita» = to reschedule." }
+  ],
+  "vocabulary": [
+    { "word": "la cita", "en": "the appointment, the date" },
+    { "word": "la visita", "en": "the visit" },
+    { "word": "el invitado", "en": "the guest" },
+    { "word": "la sala de espera", "en": "the waiting room" },
+    { "word": "la recepción", "en": "the reception" },
+    { "word": "el recepcionista", "en": "the receptionist" },
+    { "word": "la agenda", "en": "the planner, the schedule" },
+    { "word": "el consultorio", "en": "the doctor's office" },
+    { "word": "cancelar", "en": "to cancel" },
+    { "word": "confirmar", "en": "to confirm" },
+    { "word": "esperar", "en": "to wait" },
+    { "word": "visitar", "en": "to visit" },
+    { "word": "hacer fila", "en": "to stand in line" },
+    { "word": "el timbre", "en": "the doorbell" },
+    { "word": "tocar la puerta", "en": "to knock on the door" },
+    { "word": "agendar", "en": "to schedule" }
+  ],
+  "phrases": [
+    { "phrase": "Quisiera sacar una cita.", "en": "I'd like to make an appointment." },
+    { "phrase": "Tengo cita a las diez.", "en": "I have an appointment at ten." },
+    { "phrase": "Espere hasta que lo llamen.", "en": "Wait until they call you." },
+    { "phrase": "Vámonos antes de que llueva.", "en": "Let's go before it rains." },
+    { "phrase": "Siéntete como en tu casa.", "en": "Make yourself at home." },
+    { "phrase": "¿A qué hora quedamos?", "en": "What time shall we meet?" },
+    { "phrase": "Tengo que cancelar la cita.", "en": "I have to cancel the appointment." },
+    { "phrase": "Me preguntó si podía entrar.", "en": "He asked me if he could come in." },
+    { "phrase": "Voy a visitar a mi abuela.", "en": "I'm going to visit my grandma." },
+    { "phrase": "Hay que hacer fila.", "en": "You have to stand in line." },
+    { "phrase": "Perdón por la tardanza.", "en": "Sorry for being late." },
+    { "phrase": "Gracias por la visita.", "en": "Thanks for coming." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Espere aquí hasta que el doctor ___.»", "en": "Complete: «Espere aquí hasta que el doctor ___.»" }, "options": ["salga", "sale", "saldrá", "salía"], "correct": 0, "explanation": { "en": "A future event after «hasta que» → subjunctive: salga." } },
+    { "question": { "es": "Completa: «Vámonos antes de que ___.»", "en": "Complete: «Vámonos antes de que ___.»" }, "options": ["llueva", "llueve", "lloverá", "llovía"], "correct": 0, "explanation": { "en": "«Antes de que» always takes the subjunctive." } },
+    { "question": { "es": "Completa: «El domingo voy a visitar ___ mi abuela.»", "en": "Complete: «El domingo voy a visitar ___ mi abuela.»" }, "options": ["a", "(nada)", "con", "en"], "correct": 0, "explanation": { "en": "Personal «a» before a specific person: visitar a mi abuela." } },
+    { "question": { "es": "Estilo indirecto: «¿Puedo entrar?» → Me preguntó ___ podía entrar.", "en": "Reported question: «¿Puedo entrar?» → Me preguntó ___ podía entrar." }, "options": ["si", "que", "qué", "sí que"], "correct": 0, "explanation": { "en": "Yes / no questions are reported with «si»." } },
+    { "question": { "es": "Un amigo llega a tu casa por primera vez. Quieres que se sienta cómodo. ¿Qué le dices?", "en": "A friend comes to your home for the first time. You want him to feel comfortable. What do you say?" }, "options": ["Siéntete como en tu casa.", "Siéntate en mi casa de ti.", "Vete a tu casa.", "Sentirse casa."], "correct": 0, "explanation": { "en": "«Siéntete como en tu casa» = make yourself at home." } },
+    { "question": { "es": "En el banco hay mucha gente delante de ti. ¿Qué tienes que hacer?", "en": "At the bank there are lots of people ahead of you. What do you have to do?" }, "options": ["hacer fila", "hacer línea", "esperar la fila de", "poner la cola"], "correct": 0, "explanation": { "en": "«Hacer fila» (Latin America) = «hacer cola» (Spain)." } },
+    { "question": { "es": "Completa: «Es raro que una gripa ___ tanto.»", "en": "Complete: «Es raro que una gripa ___ tanto.»" }, "options": ["dure", "dura", "durará", "duraba"], "correct": 0, "explanation": { "en": "«Es raro que» + subjunctive." } },
+    { "question": { "es": "Llegas veinte minutos tarde a la cita. ¿Qué dices al entrar?", "en": "You arrive twenty minutes late. What do you say as you come in?" }, "options": ["Perdón por la tardanza.", "Gracias por la visita.", "Hasta que salga.", "Antes de que llueva."], "correct": 0, "explanation": { "en": "«Perdón por la tardanza» = sorry for being late." } }
+  ],
+  "story": {
+    "title": "La cita con el dentista",
+    "text": "A Emily le duele una muela. Llama al consultorio: «Buenos días, quisiera sacar una cita con el dentista». «¿Le parece bien mañana a las diez?», pregunta la recepcionista. Al día siguiente, Emily llega puntual, pero la sala de espera está llena. «Espere hasta que la llamen, por favor», le dice la recepcionista. Emily espera cuarenta minutos. Un señor le pregunta si el dentista siempre llega tarde. «No sé, es mi primera vez», responde ella. Por fin la llaman. El dentista es muy amable y el problema no es grave. Al salir, Emily llama a Nicolás: «¿Quedamos para comer?». «Claro, pero vámonos antes de que llueva.»",
+    "en": "Emily has a toothache. She calls the clinic: «Good morning, I'd like to make an appointment with the dentist». «Is tomorrow at ten OK?» asks the receptionist. The next day Emily arrives on time, but the waiting room is full. «Please wait until they call you», the receptionist tells her. Emily waits forty minutes. A man asks her if the dentist is always late. «I don't know, it's my first time», she answers. Finally they call her. The dentist is very kind and the problem isn't serious. As she leaves, Emily calls Nicolás: «Shall we meet for lunch?». «Sure, but let's go before it rains.»",
+    "highlighted_words": ["sacar una cita", "puntual", "sala de espera", "hasta que la llamen", "le pregunta si", "Quedamos", "antes de que llueva"]
+  },
+  "arrange": [
+    { "sentence": "Quisiera sacar una cita para el lunes", "en": "I'd like to make an appointment for Monday." },
+    { "sentence": "Espere hasta que el doctor lo llame", "en": "Wait until the doctor calls you." },
+    { "sentence": "El domingo visito a mis abuelos", "en": "On Sunday I visit my grandparents." },
+    { "sentence": "Me preguntó si podía venir", "en": "He asked me if he could come." },
+    { "sentence": "¿A qué hora quedamos mañana?", "en": "What time shall we meet tomorrow?" },
+    { "sentence": "Vámonos antes de que llueva", "en": "Let's go before it rains." }
+  ],
+  "translate": [
+    { "answer": "Tengo una cita", "en": "I have an appointment" },
+    { "answer": "Quisiera cancelar la cita", "en": "I would like to cancel the appointment" },
+    { "answer": "Siéntete como en tu casa", "en": "Make yourself at home (tú)" },
+    { "answer": "Perdón por la tardanza", "en": "Sorry for being late", "accept": ["Perdón por llegar tarde", "Disculpa la tardanza"] },
+    { "answer": "Voy a visitar a mi abuela", "en": "I am going to visit my grandmother" },
+    { "answer": "Gracias por la visita", "en": "Thanks for the visit" }
+  ]
+}

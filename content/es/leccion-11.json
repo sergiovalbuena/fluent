@@ -1,0 +1,84 @@
+{
+  "lesson": 11,
+  "slug": "leccion-11",
+  "icon": "🫀",
+  "title": { "es": "El cuerpo humano", "en": "The human body" },
+  "grammar": [
+    { "structure": "me duele / me duelen", "example": "Me duele la cabeza. Me duelen los pies.", "en": "«Doler» (to hurt) works like «gustar»: the body part is the subject. One part → duele, several → duelen." },
+    { "structure": "el / la con partes del cuerpo", "example": "Me lavo las manos. Abre la boca.", "en": "Spanish uses «el / la / los / las» with body parts, not «my»: me lavo las manos = I wash my hands." },
+    { "structure": "verbos reflexivos: me lavo", "example": "me lavo, te lavas, se lava", "en": "Reflexive verbs carry a pronoun (me, te, se, nos, se) when you do the action to yourself." },
+    { "structure": "tener frío / calor / hambre / sed", "example": "Tengo frío. ¿Tienes sed?", "en": "Spanish says «have cold / hunger / thirst»: tener frío = to be cold." },
+    { "structure": "estar enfermo / sentirse mal", "example": "Estoy enfermo. Me siento mal.", "en": "«Estar» for temporary health; «sentirse» (e → ie: me siento) = to feel." }
+  ],
+  "tips": [
+    { "en": "«Pelo», «cabello» and «pelo» are all hair; in Spain «pelo» is the everyday word, in Latin America both «pelo» and «cabello» are common." },
+    { "en": "«Estoy constipado» means «I have a cold» in Spain, not «constipated» (that's «estreñido»). In Latin America people say «estoy resfriado» or «tengo gripa / gripe»." },
+    { "en": "«¡Salud!» is what you say when someone sneezes (and also when you toast)." },
+    { "en": "«Echar una mano» (lend a hand) is understood everywhere; in Mexico you'll also hear «echar la mano»." },
+    { "en": "Measurements use the metric system: «mido un metro setenta» = I'm 1.70 m (about 5'7\")." }
+  ],
+  "vocabulary": [
+    { "word": "la cabeza", "en": "the head" },
+    { "word": "la cara", "en": "the face" },
+    { "word": "los ojos", "en": "the eyes" },
+    { "word": "la nariz", "en": "the nose" },
+    { "word": "la boca", "en": "the mouth" },
+    { "word": "los dientes", "en": "the teeth" },
+    { "word": "el cuello", "en": "the neck" },
+    { "word": "la espalda", "en": "the back" },
+    { "word": "el brazo", "en": "the arm" },
+    { "word": "la mano", "en": "the hand" },
+    { "word": "el dedo", "en": "the finger" },
+    { "word": "la pierna", "en": "the leg" },
+    { "word": "la rodilla", "en": "the knee" },
+    { "word": "el pie", "en": "the foot" },
+    { "word": "el estómago", "en": "the stomach" },
+    { "word": "el corazón", "en": "the heart" }
+  ],
+  "phrases": [
+    { "phrase": "Me duele la cabeza.", "en": "I have a headache." },
+    { "phrase": "Me duelen los pies.", "en": "My feet hurt." },
+    { "phrase": "Me siento mal.", "en": "I don't feel well." },
+    { "phrase": "Tengo dolor de estómago.", "en": "I have a stomachache." },
+    { "phrase": "¿Cuánto mides?", "en": "How tall are you?" },
+    { "phrase": "Mido un metro setenta.", "en": "I'm one meter seventy." },
+    { "phrase": "Me lavo las manos.", "en": "I wash my hands." },
+    { "phrase": "Tengo mucho frío.", "en": "I'm very cold." },
+    { "phrase": "¿Me echas una mano?", "en": "Can you give me a hand?" },
+    { "phrase": "Me rompí el brazo.", "en": "I broke my arm." },
+    { "phrase": "¡Salud!", "en": "Bless you! / Cheers!" },
+    { "phrase": "Tiene los ojos grandes.", "en": "He / She has big eyes." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Me ___ la espalda.»", "en": "Complete: «Me ___ la espalda.»" }, "options": ["duele", "duelen", "dolor", "duelo"], "correct": 0, "explanation": { "en": "«La espalda» is singular: me duele." } },
+    { "question": { "es": "Completa: «Me ___ las rodillas después de correr.»", "en": "Complete: «Me ___ las rodillas después de correr.»" }, "options": ["duelen", "duele", "duelo", "dolen"], "correct": 0, "explanation": { "en": "«Las rodillas» is plural: me duelen." } },
+    { "question": { "es": "Tus vecinos están muy pálidos. Supones que están enfermos. ¿Qué dices?", "en": "Your neighbors look very pale. You guess they're sick. What do you say?" }, "options": ["Deben de estar enfermos.", "Van a estar enfermos.", "Son enfermos.", "Estaban enfermos mañana."], "correct": 0, "explanation": { "en": "«Deber de» + infinitive expresses a guess: they must be sick." } },
+    { "question": { "es": "Tu amigo se muda y le ofreces ayuda. ¿Qué dices?", "en": "Your friend is moving and you offer to help. What do you say?" }, "options": ["Te echo una mano.", "Te echo un pie.", "Te doy la cabeza.", "Te rompo la mano."], "correct": 0, "explanation": { "en": "«Echar una mano» = to lend a hand." } },
+    { "question": { "es": "¿Con qué parte del cuerpo hueles las flores?", "en": "Which part of the body do you smell flowers with?" }, "options": ["con la nariz", "con la boca", "con las orejas", "con los ojos"], "correct": 0, "explanation": { "en": "«La nariz» = the nose." } },
+    { "question": { "es": "Quieres saber la estatura de alguien. ¿Qué preguntas?", "en": "You want to know someone's height. What do you ask?" }, "options": ["¿Cuánto mides?", "¿Cuánto pesas?", "¿Cuántos años tienes?", "¿Cómo eres?"], "correct": 0, "explanation": { "en": "«Medir» = to measure: ¿cuánto mides? = how tall are you?" } },
+    { "question": { "es": "¿Qué frase es correcta en español?", "en": "Which sentence is correct in Spanish?" }, "options": ["Me lavo las manos.", "Lavo mis manos de mí.", "Me lavo mis manos mías.", "Lavo las manos yo me."], "correct": 0, "explanation": { "en": "Reflexive pronoun + article: me lavo las manos." } },
+    { "question": { "es": "Estás en la calle en invierno, sin abrigo. ¿Qué dices?", "en": "You're outside in winter without a coat. What do you say?" }, "options": ["Tengo mucho frío.", "Soy muy frío.", "Estoy mucho frío.", "Hace mucho frío yo."], "correct": 0, "explanation": { "en": "«Tener frío» = to be cold (a person). «Hace frío» describes the weather." } }
+  ],
+  "story": {
+    "title": "Un lunes difícil",
+    "text": "El lunes, Emily se despierta con dolor de cabeza. También le duele la garganta y tiene frío. «Creo que estoy resfriada», piensa. Llama a Valeria, su jefa: «Buenos días, Valeria. Me siento mal. Hoy no puedo ir a la oficina.» «No te preocupes, Emily. Descansa y toma mucha agua.» Por la tarde, la señora Carmen toca la puerta con una sopa de pollo. «Mi mamá siempre hacía esta sopa cuando estábamos enfermos», dice. Emily come la sopa y se acuesta temprano. Al día siguiente, ya no le duele la cabeza, pero tiene la nariz roja. «¡Salud!», dice Diego cuando ella estornuda en la oficina.",
+    "en": "On Monday, Emily wakes up with a headache. Her throat hurts too and she's cold. «I think I have a cold», she thinks. She calls Valeria, her boss: «Good morning, Valeria. I don't feel well. I can't go to the office today.» «Don't worry, Emily. Rest and drink lots of water.» In the afternoon, Mrs. Carmen knocks on the door with chicken soup. «My mom always made this soup when we were sick», she says. Emily eats the soup and goes to bed early. The next day her head doesn't hurt any more, but her nose is red. «Bless you!» says Diego when she sneezes at the office.",
+    "highlighted_words": ["dolor de cabeza", "le duele", "tiene frío", "Me siento mal", "enfermos", "la nariz", "Salud"]
+  },
+  "arrange": [
+    { "sentence": "Me duele mucho la cabeza", "en": "My head hurts a lot." },
+    { "sentence": "Después de correr me duelen los pies", "en": "After running my feet hurt." },
+    { "sentence": "Me lavo las manos antes de comer", "en": "I wash my hands before eating." },
+    { "sentence": "Mido un metro sesenta y cinco", "en": "I'm one meter sixty-five." },
+    { "sentence": "Hoy me siento mal, tengo fiebre", "en": "Today I feel bad, I have a fever." },
+    { "sentence": "¿Me echas una mano con la mudanza?", "en": "Can you give me a hand with the move?" }
+  ],
+  "translate": [
+    { "answer": "Me duele la cabeza", "en": "I have a headache", "accept": ["Tengo dolor de cabeza"] },
+    { "answer": "Me siento mal", "en": "I feel bad" },
+    { "answer": "Tengo frío", "en": "I am cold" },
+    { "answer": "Me duelen los pies", "en": "My feet hurt" },
+    { "answer": "Me lavo las manos", "en": "I wash my hands" },
+    { "answer": "¿Cuánto mides?", "en": "How tall are you? (tú)" }
+  ]
+}

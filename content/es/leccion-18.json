@@ -1,0 +1,84 @@
+{
+  "lesson": 18,
+  "slug": "leccion-18",
+  "icon": "⚽",
+  "title": { "es": "Los deportes", "en": "Sports" },
+  "grammar": [
+    { "structure": "jugar (u → ue) + al", "example": "Juego al fútbol. ¿Juegas al tenis?", "en": "«Jugar» changes u → ue (juego, juegas, juega, jugamos, juegan) and takes «a + el = al» before the sport. Many Latin Americans drop the «al»: juego fútbol." },
+    { "structure": "hacer deporte / ejercicio", "example": "Hago ejercicio tres veces por semana.", "en": "«Hacer» is used for general exercise, yoga, natación…: hago yoga, hago natación." },
+    { "structure": "cambio e → ie: preferir, empezar", "example": "Prefiero correr. El partido empieza a las ocho.", "en": "Stem-changing verbs: e → ie in all forms except nosotros (preferimos)." },
+    { "structure": "siempre / a veces / nunca", "example": "Nunca juego golf. A veces nado.", "en": "Frequency adverbs. «Nunca» before the verb needs no «no»." },
+    { "structure": "aunque + indicativo", "example": "Aunque llueve, vamos a jugar.", "en": "«Aunque» = although; with the indicative it's a known fact." }
+  ],
+  "tips": [
+    { "en": "«Fútbol» is soccer. American football is «fútbol americano»." },
+    { "en": "«Partido» = match, game. «Empate» = draw; «ganar» = win, «perder» = lose." },
+    { "en": "«¡Gooool!» Commentators in Latin America are famous for very long goal shouts." },
+    { "en": "«Gimnasio» or «gym». In Spain people «van al gimnasio» or «al gym»; in Mexico you'll hear «ir al gym» too." },
+    { "en": "«Hacer» or «practicar» both work for many sports: practico natación = hago natación." }
+  ],
+  "vocabulary": [
+    { "word": "el fútbol", "en": "soccer" },
+    { "word": "el béisbol", "en": "baseball" },
+    { "word": "el básquetbol", "en": "basketball" },
+    { "word": "el tenis", "en": "tennis" },
+    { "word": "la natación", "en": "swimming" },
+    { "word": "el ciclismo", "en": "cycling" },
+    { "word": "el partido", "en": "the match, the game" },
+    { "word": "el equipo", "en": "the team" },
+    { "word": "el jugador", "en": "the player" },
+    { "word": "el entrenador", "en": "the coach" },
+    { "word": "el árbitro", "en": "the referee" },
+    { "word": "la pelota", "en": "the ball" },
+    { "word": "el gol", "en": "the goal" },
+    { "word": "ganar", "en": "to win" },
+    { "word": "perder", "en": "to lose" },
+    { "word": "el empate", "en": "the draw, the tie" }
+  ],
+  "phrases": [
+    { "phrase": "¿Practicas algún deporte?", "en": "Do you play any sports?" },
+    { "phrase": "Juego al fútbol los domingos.", "en": "I play soccer on Sundays." },
+    { "phrase": "Hago ejercicio en el gimnasio.", "en": "I work out at the gym." },
+    { "phrase": "¿De qué equipo eres?", "en": "Which team do you support?" },
+    { "phrase": "¿Quién va ganando?", "en": "Who's winning?" },
+    { "phrase": "Quedaron empatados.", "en": "It ended in a draw." },
+    { "phrase": "¡Pásamela!", "en": "Pass it to me!" },
+    { "phrase": "Nunca juego al golf.", "en": "I never play golf." },
+    { "phrase": "Aunque llueve, vamos a jugar.", "en": "Even though it's raining, we're going to play." },
+    { "phrase": "Solo necesitas unos tenis.", "en": "You only need a pair of sneakers." },
+    { "phrase": "El partido empieza a las ocho.", "en": "The game starts at eight." },
+    { "phrase": "¡Vamos, equipo!", "en": "Come on, team!" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Los sábados ___ al fútbol con mis amigos.»", "en": "Complete: «Los sábados ___ al fútbol con mis amigos.»" }, "options": ["juego", "jugo", "jogo", "jugamos yo"], "correct": 0, "explanation": { "en": "«Jugar» changes u → ue: yo juego." } },
+    { "question": { "es": "Completa: «Ella ___ natación todos los días.»", "en": "Complete: «Ella ___ natación todos los días.»" }, "options": ["hace", "juega", "toca", "es"], "correct": 0, "explanation": { "en": "Swimming and yoga use «hacer» (or «practicar»), not «jugar»." } },
+    { "question": { "es": "¿Con qué se juega al fútbol?", "en": "What do you play soccer with?" }, "options": ["con una pelota", "con una raqueta", "con una red", "con un bate"], "correct": 0, "explanation": { "en": "«Pelota» (or «balón») = ball." } },
+    { "question": { "es": "Completa: «Aunque ___ cansados, terminaron el partido.»", "en": "Complete: «Aunque ___ cansados, terminaron el partido.»" }, "options": ["estaban", "eran", "estarían", "estuvieran mañana"], "correct": 0, "explanation": { "en": "A known past fact after «aunque»: indicative (estaban)." } },
+    { "question": { "es": "Tu amigo quiere empezar a correr. No necesita nada más que unos buenos tenis. ¿Qué le dices?", "en": "Your friend wants to start running. He needs nothing but good sneakers. What do you tell him?" }, "options": ["Solo necesitas unos tenis.", "No necesitas tenis.", "Necesitas solo de tenis.", "Ya no necesitas tenis."], "correct": 0, "explanation": { "en": "«Solo» = only." } },
+    { "question": { "es": "¿Quién hace respetar las reglas durante el partido?", "en": "Who enforces the rules during the match?" }, "options": ["el árbitro", "el entrenador", "el portero", "el aficionado"], "correct": 0, "explanation": { "en": "«El árbitro» = the referee." } },
+    { "question": { "es": "Tu compañero tiene la pelota. ¿Cómo le pides que te la pase?", "en": "Your teammate has the ball. How do you ask him to pass it to you?" }, "options": ["¡Pásamela!", "¡Pásamelo!", "¡Me la pasa!", "¡Pasa a mí la!"], "correct": 0, "explanation": { "en": "Command + me + la (pelota, feminine): pásamela." } },
+    { "question": { "es": "El partido termina 2 a 2. ¿Cuál es el resultado?", "en": "The match ends 2–2. What's the result?" }, "options": ["un empate", "una victoria", "una derrota", "un gol"], "correct": 0, "explanation": { "en": "«Empate» = draw." } }
+  ],
+  "story": {
+    "title": "El partido del domingo",
+    "text": "Diego juega al fútbol todos los domingos con un equipo de amigos. Esta semana invita a Emily a ver el partido. «¿Tú juegas?», pregunta Diego. «Nunca jugué al fútbol, pero de niña jugaba básquetbol», responde Emily. El partido empieza a las diez. Aunque hace mucho calor, hay mucha gente. Emily grita con los aficionados: «¡Vamos, equipo!». En el primer tiempo, el otro equipo mete un gol. En el segundo, Diego recibe la pelota, corre y… ¡gol! Al final quedan empatados, uno a uno. Después, todos comen tacos en un puesto cerca de la cancha. «La próxima semana tú juegas con nosotros», dice Diego. «¡Ni loca!», ríe Emily.",
+    "en": "Diego plays soccer every Sunday with a team of friends. This week he invites Emily to watch the game. «Do you play?» Diego asks. «I've never played soccer, but as a girl I used to play basketball», answers Emily. The game starts at ten. Even though it's very hot, there are lots of people. Emily shouts with the fans: «Come on, team!». In the first half, the other team scores a goal. In the second, Diego gets the ball, runs and… goal! In the end it's a draw, one all. Afterwards, everyone eats tacos at a stand near the field. «Next week you play with us», says Diego. «No way!» laughs Emily.",
+    "highlighted_words": ["juega al fútbol", "equipo", "básquetbol", "empieza", "Aunque", "gol", "empatados"]
+  },
+  "arrange": [
+    { "sentence": "Juego al tenis los sábados por la mañana", "en": "I play tennis on Saturday mornings." },
+    { "sentence": "Hago ejercicio tres veces por semana", "en": "I work out three times a week." },
+    { "sentence": "El partido empieza a las ocho", "en": "The game starts at eight." },
+    { "sentence": "Nunca juego al golf", "en": "I never play golf." },
+    { "sentence": "Aunque llueve, vamos a jugar", "en": "Even though it's raining, we're going to play." },
+    { "sentence": "¿De qué equipo eres tú?", "en": "Which team do you support?" }
+  ],
+  "translate": [
+    { "answer": "Juego al fútbol", "en": "I play soccer", "accept": ["Juego fútbol"] },
+    { "answer": "Hago ejercicio", "en": "I exercise" },
+    { "answer": "¿Practicas algún deporte?", "en": "Do you play any sport? (tú)", "accept": ["¿Haces algún deporte?", "¿Haces deporte?"] },
+    { "answer": "Nuestro equipo ganó", "en": "Our team won" },
+    { "answer": "El partido empieza a las ocho", "en": "The game starts at eight" },
+    { "answer": "Nunca juego al golf", "en": "I never play golf", "accept": ["Nunca juego golf", "No juego nunca al golf"] }
+  ]
+}

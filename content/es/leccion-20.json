@@ -1,0 +1,84 @@
+{
+  "lesson": 20,
+  "slug": "leccion-20",
+  "icon": "🏙️",
+  "title": { "es": "La ciudad", "en": "The city" },
+  "grammar": [
+    { "structure": "imperativo usted: gire, siga, cruce", "example": "Siga derecho y gire a la izquierda.", "en": "Formal commands: -ar verbs → -e (gire), -er / -ir → -a (siga, suba). Used for directions." },
+    { "structure": "estar a + distancia", "example": "El museo está a dos cuadras.", "en": "Distance: estar a + quantity: está a cinco minutos, a dos cuadras." },
+    { "structure": "ir a pie / en metro", "example": "Voy a pie. Vamos en metro.", "en": "«a pie» = on foot; «en» + vehicle: en metro, en camión, en carro." },
+    { "structure": "pasiva: fue construido", "example": "La catedral fue construida en 1573.", "en": "«Ser» + participle (agreeing) for historical facts: fue construida = was built." },
+    { "structure": "a pesar de", "example": "A pesar del tráfico, me encanta la ciudad.", "en": "«A pesar de» + noun = despite." }
+  ],
+  "tips": [
+    { "en": "«Cuadra» (Latin America) = «manzana» (Spain) = block. «Está a tres cuadras» = it's three blocks away." },
+    { "en": "«Camión» is a bus in Mexico; elsewhere «autobús», «colectivo» (Argentina), «micro» (Chile), «buseta» (Colombia), «guagua» (Caribbean, Canary Islands)." },
+    { "en": "«Derecho» = straight ahead, but «a la derecha» = to the right. Listen for the «a la»!" },
+    { "en": "«El centro» = downtown. Most Latin American cities have a main square called «el Zócalo» (Mexico) or «la Plaza de Armas» (Peru, Chile)." },
+    { "en": "«Semáforo» = traffic light. In Spain they also say «el disco» informally." }
+  ],
+  "vocabulary": [
+    { "word": "la calle", "en": "the street" },
+    { "word": "la avenida", "en": "the avenue" },
+    { "word": "la cuadra", "en": "the block" },
+    { "word": "la esquina", "en": "the corner" },
+    { "word": "el semáforo", "en": "the traffic light" },
+    { "word": "la plaza", "en": "the square" },
+    { "word": "el parque", "en": "the park" },
+    { "word": "la iglesia", "en": "the church" },
+    { "word": "el museo", "en": "the museum" },
+    { "word": "la biblioteca", "en": "the library" },
+    { "word": "la librería", "en": "the bookstore" },
+    { "word": "el banco", "en": "the bank" },
+    { "word": "el metro", "en": "the subway" },
+    { "word": "el tráfico", "en": "the traffic" },
+    { "word": "el centro", "en": "downtown" },
+    { "word": "el barrio", "en": "the neighborhood" }
+  ],
+  "phrases": [
+    { "phrase": "Disculpe, ¿cómo llego al museo?", "en": "Excuse me, how do I get to the museum?" },
+    { "phrase": "Siga derecho dos cuadras.", "en": "Go straight for two blocks." },
+    { "phrase": "Gire a la derecha en el semáforo.", "en": "Turn right at the traffic light." },
+    { "phrase": "Está en la esquina.", "en": "It's on the corner." },
+    { "phrase": "Está a diez minutos a pie.", "en": "It's ten minutes on foot." },
+    { "phrase": "¿Está lejos?", "en": "Is it far?" },
+    { "phrase": "Está muy cerca de aquí.", "en": "It's very close to here." },
+    { "phrase": "Voy al mercado: voy todos los sábados.", "en": "I'm going to the market: I go every Saturday." },
+    { "phrase": "La catedral fue construida en 1573.", "en": "The cathedral was built in 1573." },
+    { "phrase": "Los peatones deberían tener cuidado.", "en": "Pedestrians should be careful." },
+    { "phrase": "Hay mucho tráfico a esta hora.", "en": "There's a lot of traffic at this time." },
+    { "phrase": "A pesar del ruido, me encanta vivir aquí.", "en": "Despite the noise, I love living here." }
+  ],
+  "qa": [
+    { "question": { "es": "Das indicaciones: hay que girar a la derecha donde los carros paran en rojo. ¿Qué dices?", "en": "You're giving directions: turn right where the cars stop at red. What do you say?" }, "options": ["Gire a la derecha en el semáforo.", "Gire derecho en el semáforo.", "Gire a la derecha en la esquina roja.", "Siga a la derecha del rojo."], "correct": 0, "explanation": { "en": "«El semáforo» = the traffic light; «a la derecha» = to the right." } },
+    { "question": { "es": "Pasa a voz pasiva: «Construyeron esta iglesia en 1880.»", "en": "Make it passive: «Construyeron esta iglesia en 1880.»" }, "options": ["Esta iglesia fue construida en 1880.", "Esta iglesia fue construido en 1880.", "Esta iglesia construyó en 1880.", "Esta iglesia era construyendo en 1880."], "correct": 0, "explanation": { "en": "«Ser» + participle agreeing with «iglesia»: fue construida." } },
+    { "question": { "es": "Completa: «Me encanta el mercado: voy ___ mercado todos los sábados.»", "en": "Complete: «Me encanta el mercado: voy ___ mercado todos los sábados.»" }, "options": ["al", "a el", "en el", "del"], "correct": 0, "explanation": { "en": "a + el = al. «Ir a» + place: voy al mercado." } },
+    { "question": { "es": "¿Qué frase da un consejo (y no una obligación)?", "en": "Which sentence gives advice (not an obligation)?" }, "options": ["Los peatones deberían tener cuidado.", "Los peatones deben tener cuidado.", "Los peatones tienen cuidado.", "Los peatones tendrán cuidado."], "correct": 0, "explanation": { "en": "The conditional «deberían» (should) softens it into advice." } },
+    { "question": { "es": "¿Adónde vas a pedir libros prestados?", "en": "Where do you go to borrow books?" }, "options": ["a la biblioteca", "a la librería", "al banco", "al museo"], "correct": 0, "explanation": { "en": "«Biblioteca» = library (borrow); «librería» = bookstore (buy). A classic false friend!" } },
+    { "question": { "es": "Completa: «___ el ruido, me encanta la ciudad.»", "en": "Complete: «___ el ruido, me encanta la ciudad.»" }, "options": ["A pesar de", "Aunque", "Porque", "Desde"], "correct": 0, "explanation": { "en": "«A pesar de» + noun = despite. «Aunque» needs a verb." } },
+    { "question": { "es": "Llegas tarde: los carros no avanzan nada en la avenida. ¿Qué dices?", "en": "You're late: the cars aren't moving at all on the avenue. What do you say?" }, "options": ["Hay mucho tráfico.", "Hay mucho semáforo.", "Hay mucha calle.", "Es mucho tráfico yo."], "correct": 0, "explanation": { "en": "«Hay mucho tráfico» = there's a lot of traffic." } },
+    { "question": { "es": "El museo está a diez minutos caminando. ¿Cómo lo dices?", "en": "The museum is ten minutes away walking. How do you say it?" }, "options": ["Está a diez minutos a pie.", "Está en diez minutos de pie.", "Es diez minutos a pie.", "Está a pie diez minutos de."], "correct": 0, "explanation": { "en": "«Estar a» + distance / time; «a pie» = on foot." } }
+  ],
+  "story": {
+    "title": "Perdida en el centro",
+    "text": "El sábado, Emily quiere visitar el Museo de Arte en el centro de la ciudad. Sale del metro, pero no sabe dónde está. Le pregunta a un señor: «Disculpe, ¿cómo llego al museo?». «Siga derecho por esta avenida tres cuadras. En el semáforo, gire a la izquierda. El museo está en la esquina, enfrente de una plaza.» «¿Está lejos?» «No, está a diez minutos a pie.» Emily camina, pero hay mucha gente y mucho ruido. En el semáforo gira a la derecha, por error, y llega a una iglesia muy antigua. Una señora le explica que fue construida en el siglo dieciséis. Emily entra, toma fotos y luego encuentra el museo. «A pesar de todo, ¡qué buen día!», piensa.",
+    "en": "On Saturday, Emily wants to visit the Art Museum downtown. She comes out of the subway, but she doesn't know where it is. She asks a man: «Excuse me, how do I get to the museum?». «Go straight along this avenue for three blocks. At the traffic light, turn left. The museum is on the corner, opposite a square.» «Is it far?» «No, it's ten minutes on foot.» Emily walks, but there are lots of people and lots of noise. At the traffic light she turns right by mistake and reaches a very old church. A lady explains that it was built in the sixteenth century. Emily goes in, takes photos and then finds the museum. «Despite everything, what a good day!» she thinks.",
+    "highlighted_words": ["cómo llego", "Siga derecho", "cuadras", "semáforo", "gire a la izquierda", "esquina", "a diez minutos a pie", "fue construida"]
+  },
+  "arrange": [
+    { "sentence": "Siga derecho y gire a la izquierda", "en": "Go straight and turn left." },
+    { "sentence": "El banco está en la esquina", "en": "The bank is on the corner." },
+    { "sentence": "El museo está a dos cuadras de aquí", "en": "The museum is two blocks from here." },
+    { "sentence": "Voy al trabajo en metro", "en": "I go to work by subway." },
+    { "sentence": "Esta iglesia fue construida en 1880", "en": "This church was built in 1880." },
+    { "sentence": "A pesar del tráfico, me encanta la ciudad", "en": "Despite the traffic, I love the city." }
+  ],
+  "translate": [
+    { "answer": "¿Cómo llego al museo?", "en": "How do I get to the museum?" },
+    { "answer": "Gire a la derecha", "en": "Turn right (usted)" },
+    { "answer": "Siga derecho", "en": "Go straight ahead (usted)", "accept": ["Siga recto", "Siga todo derecho"] },
+    { "answer": "Está muy cerca", "en": "It is very close" },
+    { "answer": "¿Está lejos?", "en": "Is it far?" },
+    { "answer": "Voy a pie", "en": "I am going on foot", "accept": ["Voy caminando"] }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lesson": 27,
+  "slug": "leccion-27",
+  "icon": "🌻",
+  "title": { "es": "Las flores y el jardín", "en": "Flowers and the garden" },
+  "grammar": [
+    { "structure": "le / les (objeto indirecto)", "example": "Le regalé flores a mi mamá.", "en": "«Le» = to him / her / you (usted); «les» = to them. Spanish often repeats it with «a + person»: le regalé flores a mi mamá." },
+    { "structure": "pronombre con imperativo", "example": "Regálale rosas. No le regales claveles.", "en": "Positive command: pronoun attached (regálale). Negative command: pronoun before (no le regales)." },
+    { "structure": "haber + participio (no concuerda)", "example": "¿Las semillas? Ya las he sembrado.", "en": "With «haber», the participle never changes: he sembrado, has regado." },
+    { "structure": "estilo indirecto: dijo que era", "example": "Me dijo que la planta era tóxica.", "en": "Reported speech in the past: «es» becomes «era»." },
+    { "structure": "para + persona", "example": "Estas flores son para ti.", "en": "«Para» marks who something is for: para ti, para mi mamá. After a preposition, «yo» becomes «mí» and «tú» becomes «ti»." }
+  ],
+  "tips": [
+    { "en": "On the Day of the Dead (1–2 November) Mexicans decorate altars with bright orange marigolds called «cempasúchil»." },
+    { "en": "In Colombia, Medellín celebrates the «Feria de las Flores» every August with a parade of flower displays carried on people's backs." },
+    { "en": "Flower symbolism varies, but yellow flowers can mean friendship… or, in some places, contempt. When in doubt, ask the florist." },
+    { "en": "«Regar» (e → ie) = to water: riego las plantas. «Mojar» is to wet / soak." },
+    { "en": "«Jardín» is a garden; «huerto» or «huerta» is a vegetable garden." }
+  ],
+  "vocabulary": [
+    { "word": "la flor", "en": "the flower" },
+    { "word": "la rosa", "en": "the rose" },
+    { "word": "el girasol", "en": "the sunflower" },
+    { "word": "el clavel", "en": "the carnation" },
+    { "word": "la planta", "en": "the plant" },
+    { "word": "el árbol", "en": "the tree" },
+    { "word": "la hoja", "en": "the leaf" },
+    { "word": "la semilla", "en": "the seed" },
+    { "word": "la maceta", "en": "the flowerpot" },
+    { "word": "el ramo", "en": "the bouquet" },
+    { "word": "el pasto", "en": "the grass, the lawn" },
+    { "word": "regar", "en": "to water" },
+    { "word": "sembrar", "en": "to sow, to plant" },
+    { "word": "florecer", "en": "to bloom" },
+    { "word": "el florista", "en": "the florist" },
+    { "word": "la huerta", "en": "the vegetable garden" }
+  ],
+  "phrases": [
+    { "phrase": "Le regalé un ramo de flores a mi mamá.", "en": "I gave my mom a bouquet of flowers." },
+    { "phrase": "Regálale rosas.", "en": "Give her roses." },
+    { "phrase": "Riego las plantas todas las mañanas.", "en": "I water the plants every morning." },
+    { "phrase": "¿Las semillas? Ya las he sembrado.", "en": "The seeds? I've already planted them." },
+    { "phrase": "Esta planta necesita sol.", "en": "This plant needs sun." },
+    { "phrase": "Las rosas florecen en primavera.", "en": "Roses bloom in spring." },
+    { "phrase": "Me dijo que la planta era tóxica.", "en": "He told me the plant was toxic." },
+    { "phrase": "¿Tienen girasoles? — No, no tenemos.", "en": "Do you have sunflowers? — No, we don't." },
+    { "phrase": "No pises el pasto.", "en": "Don't step on the grass." },
+    { "phrase": "¿Para quién son las flores?", "en": "Who are the flowers for?" },
+    { "phrase": "Huele muy rico.", "en": "It smells really nice." },
+    { "phrase": "Tengo una pequeña huerta.", "en": "I have a small vegetable garden." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Regála___ unas rosas.» (a ella)", "en": "Complete: «Regála___ unas rosas.» (to her)" }, "options": ["le", "la", "lo", "les"], "correct": 0, "explanation": { "en": "Indirect object (to her) = le, attached to the command: regálale." } },
+    { "question": { "es": "Completa: «¿Las semillas? Ya las he ___.» (sembrar)", "en": "Complete: «¿Las semillas? Ya las he ___.» (sembrar)" }, "options": ["sembrado", "sembradas", "sembrada", "sembrar"], "correct": 0, "explanation": { "en": "With «haber» the participle never agrees: he sembrado." } },
+    { "question": { "es": "Estilo indirecto: Lucía dijo: «La flor es tóxica.» → Lucía me dijo que la flor ___ tóxica.", "en": "Reported speech: Lucía said: «La flor es tóxica.» → Lucía me dijo que la flor ___ tóxica." }, "options": ["era", "es sido", "será", "sea"], "correct": 0, "explanation": { "en": "In past reported speech, «es» becomes «era»." } },
+    { "question": { "es": "«¿Tienen girasoles?» No hay. ¿Qué responde el florista?", "en": "«Do you have sunflowers?» There aren't any. What does the florist answer?" }, "options": ["No, no tenemos.", "No, no los tenemos ningunos.", "No, no tenemos de ellos.", "No, nada girasol."], "correct": 0, "explanation": { "en": "Spanish just says «no tenemos» (we don't have any)." } },
+    { "question": { "es": "No llueve desde hace una semana y las plantas tienen sed. ¿Qué haces?", "en": "It hasn't rained for a week and the plants are thirsty. What do you do?" }, "options": ["Riego las plantas.", "Siembro las plantas.", "Corto las plantas.", "Florezco las plantas."], "correct": 0, "explanation": { "en": "«Regar» (riego) = to water." } },
+    { "question": { "es": "Es una flor grande y amarilla que gira hacia el sol. ¿Cómo se llama?", "en": "It's a big yellow flower that turns towards the sun. What's it called?" }, "options": ["un girasol", "un clavel", "una rosa", "una maceta"], "correct": 0, "explanation": { "en": "«Girasol» = sunflower (it turns, gira, to the sun, sol)." } },
+    { "question": { "es": "En un parque ves un letrero que pide no caminar sobre el pasto. ¿Qué dice?", "en": "In a park you see a sign asking you not to walk on the grass. What does it say?" }, "options": ["No pise el pasto.", "No pisa el pasto.", "No pisar pasto el.", "Pise no el pasto."], "correct": 0, "explanation": { "en": "Negative formal command: no + subjunctive: no pise." } },
+    { "question": { "es": "¿Dónde pones una planta pequeña dentro de la casa?", "en": "Where do you put a small plant inside the house?" }, "options": ["en una maceta", "en una semilla", "en un ramo", "en una hoja"], "correct": 0, "explanation": { "en": "«Maceta» = flowerpot." } }
+  ],
+  "story": {
+    "title": "El altar de Día de Muertos",
+    "text": "A finales de octubre, Carmen prepara un altar de Día de Muertos en su sala. Le pide ayuda a Emily. «Primero vamos al mercado a comprar cempasúchil», dice. En el mercado hay montañas de flores naranjas. El olor es muy fuerte. «¿Para quién es el altar?», pregunta Emily. «Para mis papás y para mi hermano. Cada año les pongo su comida favorita.» En casa, ponen las flores, velas, fotos, pan de muerto y una taza de chocolate. Carmen explica que los pétalos marcan el camino para que los muertos encuentren la casa. Emily se queda en silencio, emocionada. «Me gusta mucho esta tradición», dice. «Aquí no olvidamos a nuestros muertos», responde Carmen.",
+    "en": "At the end of October, Carmen sets up a Day of the Dead altar in her living room. She asks Emily for help. «First let's go to the market to buy marigolds», she says. At the market there are mountains of orange flowers. The smell is very strong. «Who is the altar for?» Emily asks. «For my parents and for my brother. Every year I put out their favorite food.» At home they place the flowers, candles, photos, pan de muerto and a cup of chocolate. Carmen explains that the petals mark the way so the dead can find the house. Emily stays silent, moved. «I really like this tradition», she says. «Here we don't forget our dead», Carmen answers.",
+    "highlighted_words": ["Le pide", "flores", "Para quién", "les pongo", "pétalos", "para que"]
+  },
+  "arrange": [
+    { "sentence": "Le regalé un ramo de rosas a mi mamá", "en": "I gave my mom a bouquet of roses." },
+    { "sentence": "Riego las plantas todas las mañanas", "en": "I water the plants every morning." },
+    { "sentence": "Esta planta necesita mucho sol", "en": "This plant needs a lot of sun." },
+    { "sentence": "Las rosas florecen en primavera", "en": "Roses bloom in spring." },
+    { "sentence": "Ya he sembrado las semillas", "en": "I've already sown the seeds." },
+    { "sentence": "Me dijo que la flor era tóxica", "en": "He told me the flower was toxic." }
+  ],
+  "translate": [
+    { "answer": "Me encantan las flores", "en": "I love flowers" },
+    { "answer": "Riego las plantas", "en": "I water the plants" },
+    { "answer": "Le regalé flores", "en": "I gave her flowers" },
+    { "answer": "¿Para quién son?", "en": "Who are they for?" },
+    { "answer": "Huele muy bien", "en": "It smells very good", "accept": ["Huele muy rico"] },
+    { "answer": "Tengo un jardín pequeño", "en": "I have a small garden" }
+  ]
+}

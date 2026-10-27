@@ -1,0 +1,84 @@
+{
+  "lesson": 5,
+  "slug": "leccion-05",
+  "icon": "🎨",
+  "title": { "es": "Nombres, colores y personalidad", "en": "Names, colors and personality" },
+  "grammar": [
+    { "structure": "adjetivo después del nombre", "example": "un carro rojo, una casa grande", "en": "Most adjectives come after the noun: «un carro rojo» (a red car)." },
+    { "structure": "concordancia: -o / -a / -os / -as", "example": "un gato negro, una gata negra, gatos negros", "en": "Adjectives agree with the noun in gender and number." },
+    { "structure": "ser + carácter", "example": "Diego es simpático y trabajador.", "en": "Personality and permanent traits use «ser»." },
+    { "structure": "muy / un poco", "example": "Es muy alto. Es un poco tímida.", "en": "«Muy» = very; «un poco» = a little (often softens a negative trait)." },
+    { "structure": "más… que", "example": "Ana es más alta que su hermano.", "en": "To compare: «más + adjective + que» (taller than)." }
+  ],
+  "tips": [
+    { "en": "Adjectives ending in -e or a consonant don't change for gender: un chico amable, una chica amable; un libro azul, una casa azul." },
+    { "en": "«Café» and «rosa» as colors often stay the same: zapatos café, camisas rosa. You'll also hear «marrón» (Spain) and «castaño» for hair." },
+    { "en": "«Simpático» means friendly / nice, not «sympathetic». «Sensible» means sensitive, not «sensible» (that's «sensato»)." },
+    { "en": "«Moreno» can mean dark-haired or dark-skinned depending on the country; «güero» (Mexico) and «mono» (Colombia) mean blond." },
+    { "en": "In Spain «majo» is a common word for nice / friendly; in Latin America you'll hear «buena onda» (Mexico, Argentina) or «chévere» (Colombia, Venezuela)." }
+  ],
+  "vocabulary": [
+    { "word": "rojo", "en": "red" },
+    { "word": "azul", "en": "blue" },
+    { "word": "verde", "en": "green" },
+    { "word": "amarillo", "en": "yellow" },
+    { "word": "negro", "en": "black" },
+    { "word": "blanco", "en": "white" },
+    { "word": "gris", "en": "gray" },
+    { "word": "alto", "en": "tall" },
+    { "word": "bajo", "en": "short (height)" },
+    { "word": "simpático", "en": "nice, friendly" },
+    { "word": "tímido", "en": "shy" },
+    { "word": "trabajador", "en": "hard-working" },
+    { "word": "flojo", "en": "lazy" },
+    { "word": "divertido", "en": "fun, funny" },
+    { "word": "inteligente", "en": "smart, intelligent" },
+    { "word": "el apellido", "en": "the last name" }
+  ],
+  "phrases": [
+    { "phrase": "¿De qué color es?", "en": "What color is it?" },
+    { "phrase": "Mi color favorito es el azul.", "en": "My favorite color is blue." },
+    { "phrase": "Tiene los ojos verdes.", "en": "He / She has green eyes." },
+    { "phrase": "Tiene el pelo negro.", "en": "He / She has black hair." },
+    { "phrase": "¿Cómo es tu jefe?", "en": "What is your boss like?" },
+    { "phrase": "Es muy simpático.", "en": "He's very nice." },
+    { "phrase": "Es un poco tímida.", "en": "She's a little shy." },
+    { "phrase": "¿Cuál es tu apellido?", "en": "What's your last name?" },
+    { "phrase": "¿Cómo se escribe?", "en": "How do you spell it?" },
+    { "phrase": "Somos muy diferentes.", "en": "We're very different." },
+    { "phrase": "Ella es más alta que yo.", "en": "She's taller than me." },
+    { "phrase": "La chaqueta morada es de Diego.", "en": "The purple jacket is Diego's." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Emily tiene los ojos ___.» (azul)", "en": "Complete: «Emily tiene los ojos ___.» (azul)" }, "options": ["azules", "azul", "azulas", "azulos"], "correct": 0, "explanation": { "en": "«Ojos» is plural, so «azul» becomes «azules»." } },
+    { "question": { "es": "Completa: «Lleva una camisa ___.» (blanco)", "en": "Complete: «Lleva una camisa ___.» (blanco)" }, "options": ["blanca", "blanco", "blancos", "blancas"], "correct": 0, "explanation": { "en": "«Camisa» is feminine singular: blanca." } },
+    { "question": { "es": "¿Cuál es correcto?", "en": "Which one is correct?" }, "options": ["un carro rojo", "un rojo carro", "una carro roja", "un carro roja"], "correct": 0, "explanation": { "en": "The adjective goes after the noun and agrees with it: un carro rojo." } },
+    { "question": { "es": "Tu compañero siempre ayuda y es amable con todos. ¿Cómo es?", "en": "Your coworker always helps and is kind to everyone. What is he like?" }, "options": ["Es muy simpático.", "Es muy flojo.", "Está muy simpático.", "Es muy tímido."], "correct": 0, "explanation": { "en": "Personality uses «ser»; «simpático» = nice, friendly." } },
+    { "question": { "es": "Tu compañero de casa nunca hace nada y duerme todo el día. ¿Cómo es?", "en": "Your housemate never does anything and sleeps all day. What is he like?" }, "options": ["flojo", "trabajador", "divertido", "inteligente"], "correct": 0, "explanation": { "en": "«Flojo» = lazy (Latin America). In Spain you'll hear «vago»." } },
+    { "question": { "es": "Ana mide 1,80 m y su hermano 1,70 m. ¿Qué dices?", "en": "Ana is 1.80 m tall and her brother is 1.70 m. What do you say?" }, "options": ["Ana es más alta que su hermano.", "Ana es más alto que su hermano.", "Ana es alta más su hermano.", "Ana está más alta de su hermano."], "correct": 0, "explanation": { "en": "«Más + adjective + que», and «alta» agrees with Ana." } },
+    { "question": { "es": "«¿De quién es la chaqueta morada?» Es de Diego. ¿Qué respondes?", "en": "«Whose purple jacket is this?» It's Diego's. What do you answer?" }, "options": ["Es de Diego.", "Es Diego.", "Está de Diego.", "Es Diego suya."], "correct": 0, "explanation": { "en": "Possession: «ser de + person» = it's Diego's." } },
+    { "question": { "es": "Quieres saber cómo se escribe el apellido de alguien. ¿Qué preguntas?", "en": "You want to know how to spell someone's last name. What do you ask?" }, "options": ["¿Cómo se escribe?", "¿Cómo se llama?", "¿De qué color es?", "¿Cómo es?"], "correct": 0, "explanation": { "en": "«¿Cómo se escribe?» = how do you spell it?" } }
+  ],
+  "story": {
+    "title": "Los compañeros de oficina",
+    "text": "Emily trabaja en una empresa de diseño. Su oficina es grande y tiene paredes blancas y plantas verdes. Hoy describe a sus compañeros en una carta a su mejor amiga. «Diego es alto, tiene el pelo negro y los ojos cafés. Es muy simpático y divertido, pero un poco desordenado. Valeria es la jefa. Es inteligente y muy trabajadora, y siempre lleva ropa elegante, casi siempre negra. Pablo es el más joven. Es tímido, pero cuando habla de música es otra persona. Su color favorito es el amarillo: ¡su mochila, su taza y su bicicleta son amarillas! Todos son diferentes, pero el equipo es muy bueno.»",
+    "en": "Emily works at a design company. Her office is big and has white walls and green plants. Today she describes her coworkers in a letter to her best friend. «Diego is tall, he has black hair and brown eyes. He's very nice and funny, but a bit messy. Valeria is the boss. She's smart and very hard-working, and she always wears elegant clothes, almost always black. Pablo is the youngest. He's shy, but when he talks about music he's a different person. His favorite color is yellow: his backpack, his mug and his bike are yellow! They're all different, but the team is very good.»",
+    "highlighted_words": ["blancas", "verdes", "alto", "simpático", "inteligente", "tímido", "amarillo"]
+  },
+  "arrange": [
+    { "sentence": "Mi color favorito es el verde", "en": "My favorite color is green." },
+    { "sentence": "Diego tiene los ojos cafés", "en": "Diego has brown eyes." },
+    { "sentence": "Valeria es inteligente y muy trabajadora", "en": "Valeria is smart and very hard-working." },
+    { "sentence": "Ella es más alta que yo", "en": "She's taller than me." },
+    { "sentence": "Tengo una bicicleta amarilla", "en": "I have a yellow bike." },
+    { "sentence": "¿Cómo se escribe tu apellido?", "en": "How do you spell your last name?" }
+  ],
+  "translate": [
+    { "answer": "Es muy simpático", "en": "He is very nice" },
+    { "answer": "Tengo los ojos verdes", "en": "I have green eyes" },
+    { "answer": "Una casa blanca", "en": "A white house" },
+    { "answer": "¿Cómo es tu jefe?", "en": "What is your boss like? (tú)" },
+    { "answer": "Ella es un poco tímida", "en": "She is a little shy" },
+    { "answer": "Mi color favorito es el rojo", "en": "My favorite color is red" }
+  ]
+}

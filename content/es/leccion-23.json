@@ -1,0 +1,84 @@
+{
+  "lesson": 23,
+  "slug": "leccion-23",
+  "icon": "🌦️",
+  "title": { "es": "Las estaciones y el clima", "en": "Seasons and weather" },
+  "grammar": [
+    { "structure": "hace calor / frío / sol / viento", "example": "En verano hace mucho calor.", "en": "Weather often uses «hacer»: hace calor, hace frío, hace sol, hace viento, hace buen tiempo." },
+    { "structure": "llueve / nieva / está nublado", "example": "Hoy está nublado y llueve.", "en": "Rain and snow are verbs (llover, nevar); «estar» for states: está nublado, está húmedo." },
+    { "structure": "estar + gerundio", "example": "Está lloviendo.", "en": "Right now: estar + -ando / -iendo: está lloviendo = it's raining." },
+    { "structure": "imperfecto + pretérito", "example": "Caminaba bajo la lluvia cuando la vi.", "en": "Imperfect for the background (was walking), preterite for the event (saw)." },
+    { "structure": "pluscuamperfecto: había + participio", "example": "Había olvidado el paraguas.", "en": "Past perfect: «había» + participle = had forgotten." }
+  ],
+  "tips": [
+    { "en": "Seasons are reversed in the southern hemisphere: Christmas is in summer in Argentina and Chile." },
+    { "en": "Near the equator (Colombia, Ecuador) there are no real seasons: people talk about «temporada de lluvias» and «temporada seca»." },
+    { "en": "«Hace calor» (the weather is hot), «tengo calor» (I feel hot), «está caliente» (the object is hot). Three different structures!" },
+    { "en": "«Friolento» (Latin America) or «friolero» (Spain) = someone who always feels cold." },
+    { "en": "«Aguacero» = downpour; «llovizna» = drizzle. In Mexico City it rains almost every afternoon from June to September." }
+  ],
+  "vocabulary": [
+    { "word": "la primavera", "en": "spring" },
+    { "word": "el verano", "en": "summer" },
+    { "word": "el otoño", "en": "fall, autumn" },
+    { "word": "el invierno", "en": "winter" },
+    { "word": "el clima", "en": "the weather, the climate" },
+    { "word": "el arcoíris", "en": "the rainbow" },
+    { "word": "la lluvia", "en": "the rain" },
+    { "word": "la nieve", "en": "the snow" },
+    { "word": "el viento", "en": "the wind" },
+    { "word": "la nube", "en": "the cloud" },
+    { "word": "la niebla", "en": "the fog" },
+    { "word": "la tormenta", "en": "the storm" },
+    { "word": "el paraguas", "en": "the umbrella" },
+    { "word": "nublado", "en": "cloudy" },
+    { "word": "húmedo", "en": "humid" },
+    { "word": "friolento", "en": "always cold (person)" }
+  ],
+  "phrases": [
+    { "phrase": "¿Qué tiempo hace?", "en": "What's the weather like?" },
+    { "phrase": "Hace mucho calor.", "en": "It's very hot." },
+    { "phrase": "Está lloviendo.", "en": "It's raining." },
+    { "phrase": "Va a llover esta tarde.", "en": "It's going to rain this afternoon." },
+    { "phrase": "Hay mucha niebla.", "en": "It's very foggy." },
+    { "phrase": "En invierno nieva en la montaña.", "en": "In winter it snows in the mountains." },
+    { "phrase": "Llévate el paraguas.", "en": "Take your umbrella." },
+    { "phrase": "Había olvidado mi paraguas.", "en": "I had forgotten my umbrella." },
+    { "phrase": "No sabía que iba a ser mi esposa.", "en": "I didn't know she was going to be my wife." },
+    { "phrase": "Era como si nos conociéramos de siempre.", "en": "It was as if we'd always known each other." },
+    { "phrase": "Soy muy friolento.", "en": "I always feel cold." },
+    { "phrase": "¡Qué día tan bonito!", "en": "What a beautiful day!" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «En invierno ___ frío.»", "en": "Complete: «En invierno ___ frío.»" }, "options": ["hace", "es", "está", "tiene"], "correct": 0, "explanation": { "en": "Weather: hace frío." } },
+    { "question": { "es": "Miras por la ventana y caen gotas de agua ahora mismo. ¿Qué dices?", "en": "You look out the window and drops are falling right now. What do you say?" }, "options": ["Está lloviendo.", "Hace lluvia.", "Es lloviendo.", "Llueve mañana."], "correct": 0, "explanation": { "en": "Right now: estar + gerund: está lloviendo." } },
+    { "question": { "es": "¿Qué frase usa el pluscuamperfecto?", "en": "Which sentence uses the past perfect (pluscuamperfecto)?" }, "options": ["Había olvidado mi paraguas.", "Olvidé mi paraguas.", "Olvidaba mi paraguas.", "Olvidaré mi paraguas."], "correct": 0, "explanation": { "en": "«Había» + participle = had forgotten." } },
+    { "question": { "es": "Completa: «Caminaba bajo la lluvia cuando la ___.»", "en": "Complete: «Caminaba bajo la lluvia cuando la ___.»" }, "options": ["vi", "veía", "había visto", "veré"], "correct": 0, "explanation": { "en": "The event that happened: pretérito «vi»." } },
+    { "question": { "es": "Cuentas el día que conociste a tu esposa: en ese momento no sabías el futuro. ¿Qué dices?", "en": "You're telling about the day you met your wife: back then you didn't know the future. What do you say?" }, "options": ["No sabía que iba a ser mi esposa.", "No sé que será mi esposa.", "No supe que es mi esposa.", "No sabía que es mi esposa mañana."], "correct": 0, "explanation": { "en": "Future seen from the past: «iba a ser» (or «sería»)." } },
+    { "question": { "es": "Esta mañana no se ve nada a diez metros: es como una nube en el suelo. ¿Qué tiempo hace?", "en": "This morning you can't see ten meters: it's like a cloud on the ground. What's the weather?" }, "options": ["Hay niebla.", "Hay sol.", "Hace tormenta.", "Hay nieve."], "correct": 0, "explanation": { "en": "«Niebla» = fog (also «neblina»)." } },
+    { "question": { "es": "Completa: «Era como si nos ___ de toda la vida.»", "en": "Complete: «Era como si nos ___ de toda la vida.»" }, "options": ["conociéramos", "conocíamos", "conoceremos", "conocemos"], "correct": 0, "explanation": { "en": "«Como si» is always followed by the imperfect subjunctive." } },
+    { "question": { "es": "Una persona que siempre tiene frío es…", "en": "A person who's always cold is…" }, "options": ["friolenta", "calurosa", "nublada", "húmeda"], "correct": 0, "explanation": { "en": "«Friolento / friolenta» (friolero in Spain)." } }
+  ],
+  "story": {
+    "title": "Temporada de lluvias",
+    "text": "En julio, en la Ciudad de México, las mañanas son soleadas y las tardes son de lluvia. Emily todavía no lo sabe. Un martes sale de la oficina a las seis. Hace buen tiempo, así que no lleva paraguas. Diez minutos después, el cielo se pone negro y empieza un aguacero. Emily corre a una parada de autobús. Allí hay un chico que también se había olvidado el paraguas. «¿Siempre llueve así?», pregunta Emily. «Todos los días, de junio a septiembre», responde él, sonriendo. Se llama Nicolás, es fotógrafo y tiene un perro también. Hablan durante media hora mientras llueve. Cuando para la lluvia, intercambian números. «Gracias a la lluvia», piensa Emily.",
+    "en": "In July in Mexico City, the mornings are sunny and the afternoons are rainy. Emily doesn't know this yet. One Tuesday she leaves the office at six. The weather is nice, so she doesn't take an umbrella. Ten minutes later the sky turns black and a downpour starts. Emily runs to a bus stop. There's a guy there who had also forgotten his umbrella. «Does it always rain like this?» Emily asks. «Every day, from June to September», he answers, smiling. His name is Nicolás, he's a photographer and he has a dog too. They talk for half an hour while it rains. When the rain stops, they exchange numbers. «Thanks to the rain», Emily thinks.",
+    "highlighted_words": ["lluvia", "Hace buen tiempo", "paraguas", "aguacero", "se había olvidado", "llueve"]
+  },
+  "arrange": [
+    { "sentence": "Hoy hace mucho calor en la ciudad", "en": "It's very hot in the city today." },
+    { "sentence": "Llévate el paraguas, va a llover", "en": "Take your umbrella, it's going to rain." },
+    { "sentence": "En invierno nieva en las montañas", "en": "In winter it snows in the mountains." },
+    { "sentence": "Estaba lloviendo cuando salí", "en": "It was raining when I left." },
+    { "sentence": "Había olvidado mi chaqueta en casa", "en": "I had forgotten my jacket at home." },
+    { "sentence": "¡Qué día tan bonito hace hoy!", "en": "What a beautiful day it is today!" }
+  ],
+  "translate": [
+    { "answer": "Hace frío", "en": "It is cold" },
+    { "answer": "Está lloviendo", "en": "It is raining", "accept": ["Llueve"] },
+    { "answer": "¿Qué tiempo hace?", "en": "What is the weather like?" },
+    { "answer": "Hace sol", "en": "It is sunny" },
+    { "answer": "Está nublado", "en": "It is cloudy" },
+    { "answer": "Va a nevar", "en": "It is going to snow" }
+  ]
+}

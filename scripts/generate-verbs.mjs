@@ -74,7 +74,7 @@ function* vocabulary(lang) {
     const item = lang === 'fr' ? { word, en: t[0], es: t[1] } : { word, es: t[0] }
     yield { item, lesson: 0, slug: null, essential: true }
   }
-  for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson)-\d+\.json$/.test(f)).sort()) {
+  for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()) {
     const d = JSON.parse(readFileSync(join('content', lang, file), 'utf8'))
     for (const item of d.vocabulary ?? []) yield { item, lesson: d.lesson, slug: d.slug }
   }
@@ -288,7 +288,7 @@ function buildEnglish() {
 
 function courseSentences(lang) {
   const out = []
-  for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson)-\d+\.json$/.test(f)).sort()) {
+  for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()) {
     const d = JSON.parse(readFileSync(join('content', lang, file), 'utf8'))
     const add = (text, item, source) => {
       if (!text) return

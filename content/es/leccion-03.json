@@ -1,0 +1,84 @@
+{
+  "lesson": 3,
+  "slug": "leccion-03",
+  "icon": "📅",
+  "title": { "es": "Días, meses y fechas", "en": "Days, months and dates" },
+  "grammar": [
+    { "structure": "el lunes / los lunes", "example": "El lunes voy al médico. Los lunes trabajo.", "en": "Days take «el» for one specific day and «los» for every week. No «on» needed." },
+    { "structure": "hoy es…", "example": "Hoy es martes, 3 de marzo.", "en": "Dates: «el + number + de + month». Days and months are not capitalized." },
+    { "structure": "en + mes / estación", "example": "Mi cumpleaños es en julio.", "en": "Use «en» with months, seasons and years: en julio, en verano, en 2026." },
+    { "structure": "ayer / hoy / mañana", "example": "Ayer fue lunes. Hoy es martes.", "en": "«Mañana» means both «tomorrow» and «morning»: «mañana por la mañana» = tomorrow morning." },
+    { "structure": "¿qué día es hoy?", "example": "¿Qué día es hoy? — Es viernes.", "en": "Ask the day with «¿Qué día es hoy?» and the date with «¿Qué fecha es hoy?»." }
+  ],
+  "tips": [
+    { "en": "The week starts on Monday (lunes) on most Spanish-speaking calendars." },
+    { "en": "Dates are written day / month / year: 03/04/2026 is the 3rd of April, not March 4th." },
+    { "en": "The first day of the month is often «el primero» in Latin America (el primero de mayo) and «el uno» in Spain." },
+    { "en": "«Anteayer» (or «antier» in Mexico and Colombia) is the day before yesterday; «pasado mañana» is the day after tomorrow." },
+    { "en": "Days of the week and months are written in lowercase in Spanish: lunes, enero." }
+  ],
+  "vocabulary": [
+    { "word": "el lunes", "en": "Monday" },
+    { "word": "el martes", "en": "Tuesday" },
+    { "word": "el miércoles", "en": "Wednesday" },
+    { "word": "el jueves", "en": "Thursday" },
+    { "word": "el viernes", "en": "Friday" },
+    { "word": "el sábado", "en": "Saturday" },
+    { "word": "el domingo", "en": "Sunday" },
+    { "word": "el fin de semana", "en": "the weekend" },
+    { "word": "el mes", "en": "the month" },
+    { "word": "el año", "en": "the year" },
+    { "word": "la semana", "en": "the week" },
+    { "word": "la fecha", "en": "the date" },
+    { "word": "hoy", "en": "today" },
+    { "word": "ayer", "en": "yesterday" },
+    { "word": "mañana", "en": "tomorrow" },
+    { "word": "el cumpleaños", "en": "the birthday" }
+  ],
+  "phrases": [
+    { "phrase": "¿Qué día es hoy?", "en": "What day is it today?" },
+    { "phrase": "Hoy es viernes.", "en": "Today is Friday." },
+    { "phrase": "¿Qué fecha es hoy?", "en": "What's the date today?" },
+    { "phrase": "Es el 15 de agosto.", "en": "It's August 15th." },
+    { "phrase": "¿Cuándo es tu cumpleaños?", "en": "When is your birthday?" },
+    { "phrase": "Mi cumpleaños es en diciembre.", "en": "My birthday is in December." },
+    { "phrase": "Nos vemos el sábado.", "en": "See you on Saturday." },
+    { "phrase": "Los domingos descanso.", "en": "On Sundays I rest." },
+    { "phrase": "La próxima semana.", "en": "Next week." },
+    { "phrase": "El mes pasado.", "en": "Last month." },
+    { "phrase": "Pasado mañana.", "en": "The day after tomorrow." },
+    { "phrase": "¡Buen fin de semana!", "en": "Have a nice weekend!" }
+  ],
+  "qa": [
+    { "question": { "es": "Hoy es miércoles. Hablas del lunes. ¿Qué palabra usas?", "en": "Today is Wednesday. You're talking about Monday. Which word do you use?" }, "options": ["anteayer", "ayer", "mañana", "pasado mañana"], "correct": 0, "explanation": { "en": "«Anteayer» = the day before yesterday. «Pasado mañana» = the day after tomorrow." } },
+    { "question": { "es": "Quieres saber la fecha de hoy. ¿Qué preguntas?", "en": "You want to know today's date. What do you ask?" }, "options": ["¿Qué fecha es hoy?", "¿Qué hora es hoy?", "¿Cuántos años es hoy?", "¿Cómo es hoy?"], "correct": 0, "explanation": { "en": "«¿Qué fecha es hoy?» = what's the date today?" } },
+    { "question": { "es": "Trabajas todos los lunes. ¿Cómo lo dices?", "en": "You work every Monday. How do you say it?" }, "options": ["Los lunes trabajo.", "En lunes trabajo.", "El lunes trabajé.", "Lunes trabajos."], "correct": 0, "explanation": { "en": "«Los lunes» (plural article) = every Monday." } },
+    { "question": { "es": "Tu cumpleaños es el 4 de julio. ¿Cómo lo dices?", "en": "Your birthday is July 4th. How do you say it?" }, "options": ["Mi cumpleaños es el 4 de julio.", "Mi cumpleaños es julio 4.", "Mi cumpleaños es en 4 julio.", "Mi cumpleaños está el julio 4."], "correct": 0, "explanation": { "en": "Dates go «el + number + de + month»." } },
+    { "question": { "es": "Completa: «Mi cumpleaños es ___ diciembre.»", "en": "Complete: «Mi cumpleaños es ___ diciembre.»" }, "options": ["en", "el", "a", "de"], "correct": 0, "explanation": { "en": "Months take «en»: en diciembre." } },
+    { "question": { "es": "Es viernes por la tarde y te despides de tus compañeros. ¿Qué les dices?", "en": "It's Friday afternoon and you're saying goodbye to your coworkers. What do you say?" }, "options": ["¡Buen fin de semana!", "¡Buenos días!", "¡Feliz cumpleaños!", "¡Hasta ayer!"], "correct": 0, "explanation": { "en": "«¡Buen fin de semana!» = have a nice weekend." } },
+    { "question": { "es": "Ves la fecha 05/03 en un documento de México. ¿Qué día es?", "en": "You see the date 05/03 on a document from Mexico. Which day is it?" }, "options": ["el 5 de marzo", "el 3 de mayo", "el 5 de mayo", "el 3 de marzo"], "correct": 0, "explanation": { "en": "Spanish-speaking countries write day / month: 05/03 = March 5th." } },
+    { "question": { "es": "Mañana tienes una reunión a las nueve. ¿Cómo lo dices?", "en": "Tomorrow you have a meeting at nine. How do you say it?" }, "options": ["Mañana por la mañana tengo una reunión.", "Mañana mañana tengo una reunión.", "Ayer por la mañana tengo una reunión.", "La mañana mañana tengo reunión."], "correct": 0, "explanation": { "en": "«Mañana por la mañana» = tomorrow morning." } }
+  ],
+  "story": {
+    "title": "La agenda de Emily",
+    "text": "Emily tiene una agenda nueva. Hoy es lunes, 2 de marzo, y escribe sus planes. Los lunes y los miércoles tiene clase de español a las siete. El jueves tiene una reunión importante en la oficina. El viernes es el cumpleaños de Diego, su compañero de trabajo, y van a cenar todos juntos. El sábado quiere visitar un museo con la señora Carmen. Y el domingo… el domingo descansa. Emily mira el calendario: en abril tiene vacaciones de Semana Santa. «¡Qué bien!», piensa. «Faltan cuatro semanas.» Por la noche llama a su mamá en Chicago. «¿Cuándo vienes?», pregunta su mamá. «En diciembre, para Navidad.»",
+    "en": "Emily has a new planner. Today is Monday, March 2nd, and she writes down her plans. On Mondays and Wednesdays she has Spanish class at seven. On Thursday she has an important meeting at the office. Friday is the birthday of Diego, her coworker, and they're all going to have dinner together. On Saturday she wants to visit a museum with Mrs. Carmen. And on Sunday… on Sunday she rests. Emily looks at the calendar: in April she has Easter vacation. «Great!» she thinks. «Four weeks to go.» In the evening she calls her mom in Chicago. «When are you coming?» asks her mom. «In December, for Christmas.»",
+    "highlighted_words": ["lunes", "miércoles", "jueves", "viernes", "sábado", "domingo", "cumpleaños", "en diciembre"]
+  },
+  "arrange": [
+    { "sentence": "Hoy es lunes, 2 de marzo", "en": "Today is Monday, March 2nd." },
+    { "sentence": "Los sábados voy al mercado", "en": "On Saturdays I go to the market." },
+    { "sentence": "Mi cumpleaños es en julio", "en": "My birthday is in July." },
+    { "sentence": "Nos vemos el próximo viernes", "en": "See you next Friday." },
+    { "sentence": "¿Qué fecha es hoy?", "en": "What's the date today?" },
+    { "sentence": "Pasado mañana tengo clase de español", "en": "The day after tomorrow I have Spanish class." }
+  ],
+  "translate": [
+    { "answer": "Hoy es martes", "en": "Today is Tuesday" },
+    { "answer": "¿Qué día es hoy?", "en": "What day is it today?" },
+    { "answer": "Mi cumpleaños es en mayo", "en": "My birthday is in May" },
+    { "answer": "Nos vemos el sábado", "en": "See you on Saturday" },
+    { "answer": "Los domingos descanso", "en": "On Sundays I rest" },
+    { "answer": "La próxima semana", "en": "Next week", "accept": ["La semana que viene"] }
+  ]
+}

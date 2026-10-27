@@ -15,9 +15,16 @@ if (!lang) {
 }
 
 const dir = join('content', lang)
-const files = readdirSync(dir).filter(f => /^(lecon|lesson)-\d+\.json$/.test(f)).sort()
-// Translations every item must carry: Spanish always, English too unless the course is English
-const required = lang === 'en' ? ['es'] : ['en', 'es']
+const files = readdirSync(dir).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()
+// Learner languages each course is translated into (the course language itself is never one)
+const LEARNER_LANGUAGES = { fr: ['en', 'es'], en: ['es'], es: ['en'] }
+const required = LEARNER_LANGUAGES[lang]
+if (!required) {
+  console.error(`No learner languages for "${lang}" — add them to LEARNER_LANGUAGES`)
+  process.exit(1)
+}
+// Explanations (grammar, tips, Q&A) always exist in English, the fallback for other learners
+const explained = [...new Set(['en', ...required])]
 
 let errors = 0
 let warnings = 0
@@ -36,7 +43,7 @@ for (const file of files) {
   if (d.lesson !== n) err(file, `lesson is ${d.lesson}, expected ${n}`)
   if (!str(d.slug)) err(file, 'missing slug')
   if (!str(d.icon)) err(file, 'missing icon')
-  if (!str(d.title?.[lang]) || !str(d.title?.es)) err(file, `title needs ${lang} and es`)
+  if (!hasTr(d.title, [lang, ...required])) err(file, `title needs ${[lang, ...required].join(', ')}`)
 
   const count = (key, min) => {
     const arr = d[key]
@@ -46,9 +53,9 @@ for (const file of files) {
   }
 
   count('grammar', 3).forEach((g, i) => {
-    if (!str(g.structure) || !str(g.example) || !hasTr(g, ['en', 'es'])) err(file, `grammar[${i}] needs structure, example, en, es`)
+    if (!str(g.structure) || !str(g.example) || !hasTr(g, explained)) err(file, `grammar[${i}] needs structure, example, ${explained.join(', ')}`)
   })
-  count('tips', 3).forEach((t, i) => { if (!hasTr(t, ['en', 'es'])) err(file, `tips[${i}] needs en and es`) })
+  count('tips', 3).forEach((t, i) => { if (!hasTr(t, explained)) err(file, `tips[${i}] needs ${explained.join(', ')}`) })
 
   const words = new Set()
   count('vocabulary', 12).forEach((v, i) => {
@@ -64,8 +71,8 @@ for (const file of files) {
 
   count('qa', 6).forEach((q, i) => {
     // Asked and answered in the course language; en / es are the translations shown on demand
-    if (!hasTr(q.question, [...new Set([lang, 'en', 'es'])])) err(file, `qa[${i}].question needs ${lang}, en and es`)
-    if (!hasTr(q.explanation, ['en', 'es'])) err(file, `qa[${i}].explanation needs en and es`)
+    if (!hasTr(q.question, [lang, ...required])) err(file, `qa[${i}].question needs ${[lang, ...required].join(', ')}`)
+    if (!hasTr(q.explanation, explained)) err(file, `qa[${i}].explanation needs ${explained.join(', ')}`)
     if (!Array.isArray(q.options)) err(file, `qa[${i}].options must be a list in the course language`)
     const opts = Array.isArray(q.options) ? q.options : q.options?.[lang === 'en' ? 'es' : 'en']
     if (!Array.isArray(opts) || opts.length < 3) { err(file, `qa[${i}] needs at least 3 options`); return }
