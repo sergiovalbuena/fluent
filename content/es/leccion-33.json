@@ -1,0 +1,84 @@
+{
+  "lesson": 33,
+  "slug": "leccion-33",
+  "icon": "✈️",
+  "title": { "es": "En el avión", "en": "On the plane" },
+  "grammar": [
+    { "structure": "futuro simple: aterrizará", "example": "Aterrizaremos en veinte minutos.", "en": "Future: infinitive + -é, -ás, -á, -emos, -án. Common in announcements and predictions." },
+    { "structure": "futuro irregular: tendré, haré, podré", "example": "Tendremos turbulencia.", "en": "Irregular stems: tener → tendr-, hacer → har-, poder → podr-, salir → saldr-, decir → dir-." },
+    { "structure": "cuando + subjuntivo", "example": "Cuando llegue, te llamo.", "en": "Key rule: «cuando» + subjunctive for future actions (cuando llegue), not the future tense." },
+    { "structure": "si + presente → futuro", "example": "Si el vuelo se retrasa, llamaremos al hotel.", "en": "Real conditions: si + present, main clause in future or present." },
+    { "structure": "en vez de / en lugar de", "example": "Viajo en turista en vez de en primera.", "en": "«En vez de» / «en lugar de» = instead of, rather than." }
+  ],
+  "tips": [
+    { "en": "«Sobrecargo» (Mexico), «azafata» (Spain) or «auxiliar de vuelo» = flight attendant." },
+    { "en": "«Ventanilla» = window seat (also a ticket window); «pasillo» = aisle." },
+    { "en": "Announcements use «usted / ustedes»: «Abróchense el cinturón» = fasten your seatbelts." },
+    { "en": "«Clase turista» = economy; «clase ejecutiva» = business class." },
+    { "en": "«Marearse» = to feel dizzy / airsick or seasick. «Bolsa para el mareo» = airsickness bag." }
+  ],
+  "vocabulary": [
+    { "word": "el asiento", "en": "the seat" },
+    { "word": "la ventanilla", "en": "the window (seat)" },
+    { "word": "el pasillo", "en": "the aisle" },
+    { "word": "el cinturón de seguridad", "en": "the seatbelt" },
+    { "word": "el compartimento", "en": "the overhead bin" },
+    { "word": "el sobrecargo", "en": "the flight attendant" },
+    { "word": "el piloto", "en": "the pilot" },
+    { "word": "la turbulencia", "en": "the turbulence" },
+    { "word": "la clase turista", "en": "economy class" },
+    { "word": "la manta", "en": "the blanket" },
+    { "word": "la almohada", "en": "the pillow" },
+    { "word": "el chaleco salvavidas", "en": "the life jacket" },
+    { "word": "abrocharse", "en": "to fasten" },
+    { "word": "marearse", "en": "to get dizzy, to feel sick" },
+    { "word": "el ala", "en": "the wing" },
+    { "word": "la cabina", "en": "the cabin, the cockpit" }
+  ],
+  "phrases": [
+    { "phrase": "¿Me cambia de asiento?", "en": "Could I change seats?" },
+    { "phrase": "Prefiero ventanilla.", "en": "I prefer a window seat." },
+    { "phrase": "Abróchense el cinturón, por favor.", "en": "Please fasten your seatbelts." },
+    { "phrase": "Pongan su equipaje en el compartimento.", "en": "Put your luggage in the overhead bin." },
+    { "phrase": "Aterrizaremos en veinte minutos.", "en": "We'll land in twenty minutes." },
+    { "phrase": "Cuando lleguemos, te llamo.", "en": "When we land, I'll call you." },
+    { "phrase": "Me estoy mareando.", "en": "I'm starting to feel sick." },
+    { "phrase": "¿Me trae una manta, por favor?", "en": "Could you bring me a blanket, please?" },
+    { "phrase": "¿Qué hay de comer?", "en": "What is there to eat?" },
+    { "phrase": "Pollo o pasta.", "en": "Chicken or pasta." },
+    { "phrase": "Viajo en turista en vez de en primera.", "en": "I travel economy rather than first." },
+    { "phrase": "Si hay turbulencia, no se levanten.", "en": "If there's turbulence, don't stand up." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «El avión ___ en diez minutos.» (aterrizar, futuro)", "en": "Complete: «El avión ___ en diez minutos.» (aterrizar, future)" }, "options": ["aterrizará", "aterriza ayer", "aterrizaba", "aterrizaría"], "correct": 0, "explanation": { "en": "Future: aterrizará." } },
+    { "question": { "es": "¿Cuál es el futuro de «tener» con «nosotros»?", "en": "What is the future of «tener» with «nosotros»?" }, "options": ["tendremos", "teneremos", "tenemos", "tendríamos"], "correct": 0, "explanation": { "en": "Irregular stem tendr- + -emos." } },
+    { "question": { "es": "¿Cuál es el futuro de «hacer» con «yo»?", "en": "What is the future of «hacer» with «yo»?" }, "options": ["haré", "haceré", "hago", "haría"], "correct": 0, "explanation": { "en": "Irregular stem har- + -é." } },
+    { "question": { "es": "Completa: «Te llamo cuando ___.»", "en": "Complete: «Te llamo cuando ___.»" }, "options": ["llegue", "llegaré", "llego mañana", "llegaría"], "correct": 0, "explanation": { "en": "Future actions after «cuando» take the subjunctive: llegue. Never «cuando llegaré»." } },
+    { "question": { "es": "Completa: «Si el vuelo se retrasa, ___ al hotel.»", "en": "Complete: «Si el vuelo se retrasa, ___ al hotel.»" }, "options": ["llamaremos", "llamaríamos", "llamábamos", "hemos llamado"], "correct": 0, "explanation": { "en": "Si + present → future." } },
+    { "question": { "es": "¿Dónde pones la maleta pequeña en el avión?", "en": "Where do you put your small bag on the plane?" }, "options": ["en el compartimento", "en el ala", "en la cabina del piloto", "en el pasillo"], "correct": 0, "explanation": { "en": "«Compartimento» = overhead bin." } },
+    { "question": { "es": "Quieres mirar las nubes durante el vuelo. ¿Qué asiento pides?", "en": "You want to look at the clouds during the flight. Which seat do you ask for?" }, "options": ["ventanilla", "pasillo", "ala", "cabina"], "correct": 0, "explanation": { "en": "«Ventanilla» = window seat." } },
+    { "question": { "es": "Prefieres viajar en clase turista, no en primera. ¿Cómo lo dices?", "en": "You'd rather travel economy, not first class. How do you say it?" }, "options": ["Viajo en turista en vez de en primera.", "Viajo en primera en vez de en turista.", "Viajo en vez turista.", "Viajo turista y no vez."], "correct": 0, "explanation": { "en": "«En vez de» = instead of." } }
+  ],
+  "story": {
+    "title": "Turbulencia",
+    "text": "En el avión de Bogotá a Cartagena, Emily tiene asiento de ventanilla y Nicolás de pasillo. El piloto anuncia: «Bienvenidos a bordo. Despegaremos en cinco minutos. Por favor, abróchense el cinturón». Media hora después, el avión empieza a moverse mucho. «Estamos pasando por una zona de turbulencia. Permanezcan sentados», dice el sobrecargo. Emily se pone pálida. «Me estoy mareando», dice. Nicolás le pide una bolsa y un vaso de agua al sobrecargo. Poco a poco la turbulencia termina. «Cuando lleguemos, lo primero que quiero es ver el mar», dice Emily. «Aterrizaremos en veinte minutos», anuncia el piloto. Por la ventanilla ya se ven las murallas de Cartagena.",
+    "en": "On the plane from Bogotá to Cartagena, Emily has a window seat and Nicolás an aisle seat. The pilot announces: «Welcome aboard. We'll take off in five minutes. Please fasten your seatbelts». Half an hour later the plane starts shaking a lot. «We're going through some turbulence. Please remain seated», says the flight attendant. Emily goes pale. «I'm starting to feel sick», she says. Nicolás asks the flight attendant for a bag and a glass of water. Little by little the turbulence ends. «When we land, the first thing I want is to see the sea», says Emily. «We'll land in twenty minutes», the pilot announces. Through the window you can already see the walls of Cartagena.",
+    "highlighted_words": ["ventanilla", "pasillo", "Despegaremos", "abróchense el cinturón", "turbulencia", "Me estoy mareando", "Cuando lleguemos", "Aterrizaremos"]
+  },
+  "arrange": [
+    { "sentence": "Prefiero un asiento de ventanilla", "en": "I prefer a window seat." },
+    { "sentence": "Abróchense el cinturón de seguridad, por favor", "en": "Please fasten your seatbelts." },
+    { "sentence": "Aterrizaremos en veinte minutos", "en": "We'll land in twenty minutes." },
+    { "sentence": "Cuando lleguemos, te mando un mensaje", "en": "When we arrive, I'll send you a message." },
+    { "sentence": "¿Me trae una manta, por favor?", "en": "Could you bring me a blanket, please?" },
+    { "sentence": "Si hay turbulencia, no se levanten", "en": "If there's turbulence, don't stand up." }
+  ],
+  "translate": [
+    { "answer": "Prefiero pasillo", "en": "I prefer an aisle seat" },
+    { "answer": "Cuando llegue, te llamo", "en": "When I arrive, I will call you (tú)" },
+    { "answer": "Me estoy mareando", "en": "I am starting to feel sick" },
+    { "answer": "Tendremos turbulencia", "en": "We will have turbulence" },
+    { "answer": "¿Me trae agua, por favor?", "en": "Could you bring me water, please? (usted)" },
+    { "answer": "El avión despegará pronto", "en": "The plane will take off soon" }
+  ]
+}

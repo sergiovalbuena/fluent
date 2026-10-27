@@ -1,0 +1,84 @@
+{
+  "lesson": 39,
+  "slug": "leccion-39",
+  "icon": "🛍️",
+  "title": { "es": "De compras", "en": "Shopping" },
+  "grammar": [
+    { "structure": "me lo llevo / ¿me lo envuelve?", "example": "Me gusta el suéter. Me lo llevo.", "en": "«Llevarse» = to take (buy) it: me lo llevo = I'll take it. Double pronouns: ¿me lo envuelve?" },
+    { "structure": "futuro perfecto de probabilidad", "example": "Habrá olvidado la cartera.", "en": "The future perfect can express a guess about the past: she must have forgotten." },
+    { "structure": "condicional perfecto: habrías encontrado", "example": "Habrías encontrado el regalo si hubieras buscado en otra tienda.", "en": "Habría + participle = would have done." },
+    { "structure": "antes de que + subjuntivo", "example": "Lo vendieron antes de que pudieras comprarlo.", "en": "«Antes de que» always takes the subjunctive." },
+    { "structure": "quedar + pronombre", "example": "Estos pantalones no le quedan.", "en": "«Quedar» for fit: no le quedan = they don't fit him." }
+  ],
+  "tips": [
+    { "en": "«Ver aparadores» (Mexico) or «mirar vitrinas» = window-shopping. In Spain: «ver escaparates»." },
+    { "en": "«Talla» is for clothes; «número» is for shoes: ¿Qué número calza?" },
+    { "en": "«Barato» = cheap; «una ganga» = a bargain; «rebajas» or «ofertas» = sales; «Buen Fin» = Mexico's Black Friday." },
+    { "en": "«Encogerse» = to shrink: «El suéter se encogió» = the sweater shrank." },
+    { "en": "«¿Me hace factura?» is common in Mexico if you need an official invoice; «ticket» or «recibo» is the receipt." }
+  ],
+  "vocabulary": [
+    { "word": "la tienda", "en": "the store" },
+    { "word": "el centro comercial", "en": "the mall" },
+    { "word": "el aparador", "en": "the shop window (Mexico)" },
+    { "word": "el probador", "en": "the fitting room" },
+    { "word": "la caja", "en": "the checkout" },
+    { "word": "el recibo", "en": "the receipt" },
+    { "word": "la ganga", "en": "the bargain" },
+    { "word": "las rebajas", "en": "the sales" },
+    { "word": "el descuento", "en": "the discount" },
+    { "word": "barato", "en": "cheap" },
+    { "word": "caro", "en": "expensive" },
+    { "word": "devolver", "en": "to return (an item)" },
+    { "word": "cambiar", "en": "to exchange" },
+    { "word": "envolver", "en": "to wrap" },
+    { "word": "encogerse", "en": "to shrink" },
+    { "word": "la bolsa", "en": "the bag" }
+  ],
+  "phrases": [
+    { "phrase": "Solo estoy viendo, gracias.", "en": "I'm just looking, thanks." },
+    { "phrase": "¿Cuánto cuesta este?", "en": "How much is this one?" },
+    { "phrase": "Me lo llevo.", "en": "I'll take it." },
+    { "phrase": "¿Me lo envuelve para regalo?", "en": "Could you gift-wrap it for me?" },
+    { "phrase": "¿Puedo pagar con tarjeta?", "en": "Can I pay by card?" },
+    { "phrase": "¿Qué número calza?", "en": "What shoe size do you wear?" },
+    { "phrase": "Quisiera devolver esto.", "en": "I'd like to return this." },
+    { "phrase": "¿Me da el recibo?", "en": "Can I have the receipt?" },
+    { "phrase": "El suéter se encogió.", "en": "The sweater shrank." },
+    { "phrase": "¡Qué ganga!", "en": "What a bargain!" },
+    { "phrase": "Habrá olvidado la cartera.", "en": "She must have forgotten her wallet." },
+    { "phrase": "Me encanta ver aparadores.", "en": "I love window-shopping." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Cuando vuelvas, ya ___ los regalos.» (comprar)", "en": "Complete: «Cuando vuelvas, ya ___ los regalos.» (comprar)" }, "options": ["habré comprado", "compraré", "he comprado", "habría comprado"], "correct": 0, "explanation": { "en": "Future perfect: habré comprado = I'll have bought." } },
+    { "question": { "es": "Tu hermana no paga en la caja. Supones que olvidó la cartera. ¿Qué dices?", "en": "Your sister isn't paying at the checkout. You assume she forgot her wallet. What do you say?" }, "options": ["Habrá olvidado la cartera.", "Olvidará la cartera.", "Olvidaba la cartera.", "Va a olvidar la cartera."], "correct": 0, "explanation": { "en": "Future perfect for a guess about the past: habrá olvidado." } },
+    { "question": { "es": "Completa: «___ el regalo si hubieras buscado en otra tienda.» (tú, encontrar)", "en": "Complete: «___ el regalo si hubieras buscado en otra tienda.» (tú, encontrar)" }, "options": ["Habrías encontrado", "Habrás encontrado", "Habías encontrado", "Encontrarías"], "correct": 0, "explanation": { "en": "Unreal past: habrías encontrado." } },
+    { "question": { "es": "En una zapatería, ¿qué te pregunta el vendedor?", "en": "In a shoe store, what does the salesperson ask you?" }, "options": ["¿Qué número calza?", "¿Qué talla de cabeza tiene?", "¿Qué número de teléfono?", "¿Qué medida usa usted de?"], "correct": 0, "explanation": { "en": "Shoes use «número»: ¿Qué número calza?" } },
+    { "question": { "es": "Lavaste un suéter de lana con agua muy caliente. ¿Qué pasó?", "en": "You washed a wool sweater in very hot water. What happened?" }, "options": ["Se encogió.", "Creció.", "Brilló.", "Se secó."], "correct": 0, "explanation": { "en": "«Encogerse» = to shrink." } },
+    { "question": { "es": "Completa: «Vendieron el vestido antes de que tú ___ comprarlo.»", "en": "Complete: «Vendieron el vestido antes de que tú ___ comprarlo.»" }, "options": ["pudieras", "pudiste", "podrás", "puedes"], "correct": 0, "explanation": { "en": "«Antes de que» + subjunctive; in the past: pudieras." } },
+    { "question": { "es": "El sábado paseas mirando las vitrinas sin comprar nada. ¿Cómo lo dices?", "en": "On Saturday you stroll looking at shop windows without buying anything. How do you say it?" }, "options": ["Veo aparadores.", "Hago compras.", "Hago la vitrina.", "Compro aparadores."], "correct": 0, "explanation": { "en": "«Ver aparadores» (Mexico) = window-shopping." } },
+    { "question": { "es": "Te gusta la chamarra y decides comprarla. ¿Qué le dices a la vendedora?", "en": "You like the jacket and decide to buy it. What do you tell the saleswoman?" }, "options": ["Me la llevo.", "Me lo llevo.", "La me llevo.", "Me llevo la."], "correct": 0, "explanation": { "en": "«Chamarra» is feminine: me la llevo." } }
+  ],
+  "story": {
+    "title": "El regalo perfecto",
+    "text": "El cumpleaños de Nicolás es la próxima semana y Emily busca un regalo. El sábado va a un centro comercial y ve aparadores durante una hora. En una tienda pequeña encuentra una cámara antigua, perfecta para un fotógrafo. «¿Cuánto cuesta esta?», pregunta. «Está en oferta: tiene treinta por ciento de descuento», responde el vendedor. «¡Qué ganga! Me la llevo.» «¿Se la envuelvo para regalo?» «Sí, por favor.» En la caja, Emily busca su cartera y no la encuentra. «¡No puede ser! La habré dejado en el taxi», piensa. Por suerte, tiene el celular y paga con el teléfono. El vendedor sonríe: «Tranquila, aquí tiene su recibo».",
+    "en": "Nicolás's birthday is next week and Emily is looking for a present. On Saturday she goes to a mall and window-shops for an hour. In a small store she finds an old camera, perfect for a photographer. «How much is this one?» she asks. «It's on sale: thirty percent off», answers the salesman. «What a bargain! I'll take it.» «Shall I gift-wrap it for you?» «Yes, please.» At the checkout, Emily looks for her wallet and can't find it. «It can't be! I must have left it in the taxi», she thinks. Luckily she has her phone and pays with it. The salesman smiles: «Don't worry, here's your receipt».",
+    "highlighted_words": ["ve aparadores", "Cuánto cuesta", "descuento", "Qué ganga", "Me la llevo", "envuelvo", "La habré dejado", "recibo"]
+  },
+  "arrange": [
+    { "sentence": "Solo estoy viendo, gracias", "en": "I'm just looking, thanks." },
+    { "sentence": "Me gusta mucho, me lo llevo", "en": "I really like it, I'll take it." },
+    { "sentence": "¿Me lo envuelve para regalo, por favor?", "en": "Could you gift-wrap it for me, please?" },
+    { "sentence": "Quisiera devolver estos zapatos", "en": "I'd like to return these shoes." },
+    { "sentence": "¿Puedo pagar con tarjeta de crédito?", "en": "Can I pay by credit card?" },
+    { "sentence": "El suéter se encogió en la lavadora", "en": "The sweater shrank in the washing machine." }
+  ],
+  "translate": [
+    { "answer": "Me lo llevo", "en": "I will take it (masculine item)" },
+    { "answer": "Solo estoy viendo", "en": "I am just looking", "accept": ["Solo estoy mirando"] },
+    { "answer": "¿Puedo pagar con tarjeta?", "en": "Can I pay by card?" },
+    { "answer": "Quisiera devolver esto", "en": "I would like to return this" },
+    { "answer": "Es muy caro", "en": "It is very expensive" },
+    { "answer": "¡Qué ganga!", "en": "What a bargain!" }
+  ]
+}

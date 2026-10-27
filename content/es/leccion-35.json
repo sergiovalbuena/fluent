@@ -1,0 +1,84 @@
+{
+  "lesson": 35,
+  "slug": "leccion-35",
+  "icon": "🏨",
+  "title": { "es": "En el hotel", "en": "At the hotel" },
+  "grammar": [
+    { "structure": "pretérito vs. imperfecto", "example": "Llovía cuando llegamos al hotel.", "en": "Imperfect for the background (llovía), preterite for the event (llegamos)." },
+    { "structure": "mientras + imperfecto", "example": "El botones subió las maletas mientras yo pagaba el taxi.", "en": "«Mientras» (while) + imperfect for an action in progress." },
+    { "structure": "¿podría…? / ¿sería posible…?", "example": "¿Sería posible cambiar de habitación?", "en": "Very polite requests: ¿podría…?, ¿sería posible…? + infinitive." },
+    { "structure": "nadie más que", "example": "No había nadie más que nosotros.", "en": "«Nadie más que» = nobody but." },
+    { "structure": "contento de + infinitivo", "example": "Estoy contenta de haber cambiado de cuarto.", "en": "«Contento de» + (perfect) infinitive when the subject is the same." }
+  ],
+  "tips": [
+    { "en": "«Habitación sencilla» = single room; «doble» = double; «con vista al mar» = with a sea view." },
+    { "en": "«Botones» = bellhop (the one with buttons on his uniform!). Tipping them is customary." },
+    { "en": "«Hacer el check-in / check-out» is used everywhere. More formally: «registrarse» and «pagar la cuenta»." },
+    { "en": "«Regadera» (Mexico) = «ducha» (elsewhere) = shower. «Toallas» = towels." },
+    { "en": "Hotels often ask for a «depósito» or «garantía» on your card when you check in." }
+  ],
+  "vocabulary": [
+    { "word": "el hotel", "en": "the hotel" },
+    { "word": "la recepción del hotel", "en": "the front desk" },
+    { "word": "la habitación", "en": "the room" },
+    { "word": "la habitación doble", "en": "the double room" },
+    { "word": "la llave electrónica", "en": "the key card" },
+    { "word": "el botones", "en": "the bellhop" },
+    { "word": "la toalla", "en": "the towel" },
+    { "word": "la ducha", "en": "the shower" },
+    { "word": "el aire acondicionado", "en": "the air conditioning" },
+    { "word": "la vista al mar", "en": "the sea view" },
+    { "word": "el servicio a la habitación", "en": "room service" },
+    { "word": "la piscina", "en": "the swimming pool" },
+    { "word": "registrarse", "en": "to check in" },
+    { "word": "pagar la cuenta", "en": "to pay the bill" },
+    { "word": "la noche", "en": "the night (stay)" },
+    { "word": "el ascensor", "en": "the elevator" }
+  ],
+  "phrases": [
+    { "phrase": "Tengo una reserva a nombre de Emily Clark.", "en": "I have a reservation under the name Emily Clark." },
+    { "phrase": "¿A qué hora es el desayuno?", "en": "What time is breakfast?" },
+    { "phrase": "¿Sería posible cambiar de habitación?", "en": "Would it be possible to change rooms?" },
+    { "phrase": "El aire acondicionado no funciona.", "en": "The air conditioning doesn't work." },
+    { "phrase": "¿Me podría traer más toallas?", "en": "Could you bring me more towels?" },
+    { "phrase": "¿Cuál es la clave del wifi?", "en": "What's the wifi password?" },
+    { "phrase": "¿A qué hora hay que dejar la habitación?", "en": "What time is checkout?" },
+    { "phrase": "Llovía cuando llegamos.", "en": "It was raining when we arrived." },
+    { "phrase": "Mientras yo pagaba, él subió las maletas.", "en": "While I was paying, he took the bags up." },
+    { "phrase": "No había nadie más que nosotros.", "en": "There was nobody but us." },
+    { "phrase": "Quisiera pagar la cuenta.", "en": "I'd like to pay the bill." },
+    { "phrase": "Estamos muy contentos con el servicio.", "en": "We're very happy with the service." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Yo ___ leyendo cuando sonó el teléfono.»", "en": "Complete: «Yo ___ leyendo cuando sonó el teléfono.»" }, "options": ["estaba", "estuve", "estoy", "estaré"], "correct": 0, "explanation": { "en": "Background in progress: estaba leyendo." } },
+    { "question": { "es": "¿Qué frase describe el fondo de la escena?", "en": "Which sentence describes the background of the scene?" }, "options": ["Llovía cuando llegamos.", "Llegamos al hotel.", "El taxi se paró.", "Salimos al día siguiente."], "correct": 0, "explanation": { "en": "The imperfect (llovía) sets the scene." } },
+    { "question": { "es": "Completa: «El botones subió las maletas ___ yo pagaba el taxi.»", "en": "Complete: «El botones subió las maletas ___ yo pagaba el taxi.»" }, "options": ["mientras", "durante", "desde que", "antes"], "correct": 0, "explanation": { "en": "«Mientras» + clause = while." } },
+    { "question": { "es": "En el hotel, ¿quién sube tus maletas a la habitación?", "en": "At the hotel, who takes your bags up to the room?" }, "options": ["el botones", "el recepcionista", "el piloto", "el agente de aduana"], "correct": 0, "explanation": { "en": "«El botones» = the bellhop." } },
+    { "question": { "es": "Te vas del hotel. ¿Qué tienes que hacer en recepción?", "en": "You're leaving the hotel. What do you have to do at the front desk?" }, "options": ["pagar la cuenta", "registrarme", "pedir una reserva", "abrocharme el cinturón"], "correct": 0, "explanation": { "en": "«Pagar la cuenta» / «hacer el check-out»." } },
+    { "question": { "es": "El restaurante del hotel estaba vacío, excepto por ustedes. ¿Cómo lo cuentas?", "en": "The hotel restaurant was empty except for you. How do you tell it?" }, "options": ["No había nadie más que nosotros.", "Había todos menos nosotros.", "No había nosotros.", "Nadie no estaba."], "correct": 0, "explanation": { "en": "«Nadie más que» = nobody but." } },
+    { "question": { "es": "Tu habitación tiene mucho ruido. ¿Cómo pides cambiar, con mucha cortesía?", "en": "Your room is very noisy. How do you ask to change, very politely?" }, "options": ["¿Sería posible cambiar de habitación?", "¡Cámbieme la habitación ya!", "Quiero otra, rápido.", "¿Es posible que cambio habitación?"], "correct": 0, "explanation": { "en": "«¿Sería posible…?» is very polite." } },
+    { "question": { "es": "Completa: «Estoy contenta de ___ cambiado de habitación.»", "en": "Complete: «Estoy contenta de ___ cambiado de habitación.»" }, "options": ["haber", "he", "había", "habré"], "correct": 0, "explanation": { "en": "After «de», use the infinitive: haber cambiado." } }
+  ],
+  "story": {
+    "title": "Un hotel con vista al mar",
+    "text": "Cuando llegaron al hotel en Cartagena, llovía muchísimo. Mientras Nicolás pagaba el taxi, el botones subió las maletas. En la recepción, Emily dijo: «Tengo una reserva a nombre de Emily Clark». La habitación era bonita, pero tenía vista al estacionamiento y el aire acondicionado no funcionaba. Emily bajó a recepción. «¿Sería posible cambiar de habitación?» «Claro, señora. Tenemos una con vista al mar.» La nueva habitación era perfecta. Al día siguiente, desayunaron temprano y no había nadie más que ellos en el restaurante. El último día, al pagar la cuenta, Emily le dijo al recepcionista: «Estamos muy contentos con el servicio. ¡Gracias por todo!».",
+    "en": "When they arrived at the hotel in Cartagena, it was pouring with rain. While Nicolás was paying the taxi, the bellhop took the bags up. At the front desk, Emily said: «I have a reservation under the name Emily Clark». The room was nice, but it looked onto the parking lot and the air conditioning didn't work. Emily went down to reception. «Would it be possible to change rooms?» «Of course, ma'am. We have one with a sea view.» The new room was perfect. The next day they had breakfast early and there was nobody but them in the restaurant. On the last day, when paying the bill, Emily told the receptionist: «We're very happy with the service. Thank you for everything!».",
+    "highlighted_words": ["llovía", "Mientras", "botones", "reserva a nombre de", "aire acondicionado", "Sería posible", "vista al mar", "nadie más que"]
+  },
+  "arrange": [
+    { "sentence": "Tengo una reserva a nombre de Clark", "en": "I have a reservation under the name Clark." },
+    { "sentence": "¿A qué hora es el desayuno?", "en": "What time is breakfast?" },
+    { "sentence": "El aire acondicionado no funciona", "en": "The air conditioning doesn't work." },
+    { "sentence": "¿Me podría traer más toallas?", "en": "Could you bring me more towels?" },
+    { "sentence": "Llovía mucho cuando llegamos al hotel", "en": "It was raining a lot when we got to the hotel." },
+    { "sentence": "Quisiera una habitación con vista al mar", "en": "I'd like a room with a sea view." }
+  ],
+  "translate": [
+    { "answer": "Tengo una reserva", "en": "I have a reservation", "accept": ["Tengo una reservación"] },
+    { "answer": "¿Cuál es la clave del wifi?", "en": "What is the wifi password?", "accept": ["¿Cuál es la contraseña del wifi?"] },
+    { "answer": "La ducha no funciona", "en": "The shower does not work", "accept": ["La regadera no funciona"] },
+    { "answer": "Quisiera pagar la cuenta", "en": "I would like to pay the bill" },
+    { "answer": "¿A qué hora es el desayuno?", "en": "What time is breakfast?" },
+    { "answer": "Necesito más toallas", "en": "I need more towels" }
+  ]
+}

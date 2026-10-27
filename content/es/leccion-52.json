@@ -1,0 +1,84 @@
+{
+  "lesson": 52,
+  "slug": "leccion-52",
+  "icon": "🚆",
+  "title": { "es": "Viajar en tren", "en": "Traveling by train" },
+  "grammar": [
+    { "structure": "este / esta / estos / estas", "example": "Este niño es muy tranquilo. Estas señoras esperan el tren.", "en": "Demonstratives agree in gender and number with the noun." },
+    { "structure": "el / la más… de", "example": "Es el tren más antiguo del país.", "en": "Superlative: el / la + noun + más + adjective + de." },
+    { "structure": "que + verbo (sin concordancia del participio)", "example": "Es la mujer que había visto en el andén.", "en": "Unlike French, Spanish participles with «haber» never agree: había visto, never «vista»." },
+    { "structure": "para que + subjuntivo (pasado)", "example": "Repartieron cobijas para que la gente descansara.", "en": "In the past, «para que» takes the imperfect subjunctive: descansara." },
+    { "structure": "pretérito narrativo", "example": "El tren salió tarde, pero llegó a tiempo.", "en": "The preterite tells completed events in a story." }
+  ],
+  "tips": [
+    { "en": "Long-distance passenger trains are rare in much of Latin America; buses are more common. Spain, by contrast, has an extensive high-speed network (AVE)." },
+    { "en": "Famous tourist trains: Tren de la Sabana (Bogotá–Zipaquirá), Chepe (Copper Canyon, Mexico), PeruRail to Machu Picchu." },
+    { "en": "«Andén» = platform; «vía» = track; «vagón» = carriage; «hacer transbordo» = to change trains." },
+    { "en": "«Boleto sencillo» (Mexico) or «de ida» = one way; «redondo» or «de ida y vuelta» = return." },
+    { "en": "«Objetos perdidos» = lost and found. In Spain also «objetos extraviados»." }
+  ],
+  "vocabulary": [
+    { "word": "la estación de tren", "en": "the train station" },
+    { "word": "el andén", "en": "the platform" },
+    { "word": "la vía", "en": "the track" },
+    { "word": "el vagón", "en": "the carriage, the car" },
+    { "word": "el boleto sencillo", "en": "the one-way ticket" },
+    { "word": "el revisor", "en": "the ticket inspector" },
+    { "word": "el asiento reservado", "en": "the reserved seat" },
+    { "word": "el transbordo", "en": "the transfer, the change" },
+    { "word": "el coche cama", "en": "the sleeper car" },
+    { "word": "la locomotora", "en": "the locomotive" },
+    { "word": "la consigna", "en": "the left-luggage office" },
+    { "word": "los objetos perdidos", "en": "lost and found" },
+    { "word": "el maquinista", "en": "the train driver" },
+    { "word": "con retraso", "en": "late, delayed" },
+    { "word": "la cobija", "en": "the blanket (Latin America)" },
+    { "word": "la mina de sal", "en": "the salt mine" }
+  ],
+  "phrases": [
+    { "phrase": "¿De qué andén sale el tren?", "en": "Which platform does the train leave from?" },
+    { "phrase": "Un boleto sencillo a Zipaquirá, por favor.", "en": "A one-way ticket to Zipaquirá, please." },
+    { "phrase": "¿Hay que hacer transbordo?", "en": "Do I have to change trains?" },
+    { "phrase": "El tren llega con veinte minutos de retraso.", "en": "The train is twenty minutes late." },
+    { "phrase": "¿Este asiento está ocupado?", "en": "Is this seat taken?" },
+    { "phrase": "Boletos, por favor.", "en": "Tickets, please." },
+    { "phrase": "Es el tren más antiguo del país.", "en": "It's the oldest train in the country." },
+    { "phrase": "Olvidé mi paraguas en el vagón.", "en": "I left my umbrella in the carriage." },
+    { "phrase": "Pregunte en objetos perdidos.", "en": "Ask at lost and found." },
+    { "phrase": "Esta señora es la que vi en el andén.", "en": "This lady is the one I saw on the platform." },
+    { "phrase": "Nos dieron cobijas para que no tuviéramos frío.", "en": "They gave us blankets so we wouldn't be cold." },
+    { "phrase": "¡Qué paisaje tan bonito!", "en": "What beautiful scenery!" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «___ niño es muy tranquilo.»", "en": "Complete: «___ niño es muy tranquilo.»" }, "options": ["Este", "Esta", "Estos", "Esto"], "correct": 0, "explanation": { "en": "«Niño» is masculine singular: este." } },
+    { "question": { "es": "Completa: «___ señoras esperan el tren.»", "en": "Complete: «___ señoras esperan el tren.»" }, "options": ["Estas", "Estos", "Esta", "Esas de"], "correct": 0, "explanation": { "en": "Feminine plural: estas." } },
+    { "question": { "es": "¿Dónde esperas el tren?", "en": "Where do you wait for the train?" }, "options": ["en el andén", "en la vía", "en la consigna", "en el coche cama"], "correct": 0, "explanation": { "en": "«Andén» = platform." } },
+    { "question": { "es": "Completa: «Es la mujer que había ___ en el andén.»", "en": "Complete: «Es la mujer que había ___ en el andén.»" }, "options": ["visto", "vista", "vistas", "ver"], "correct": 0, "explanation": { "en": "With «haber», the participle never agrees: visto." } },
+    { "question": { "es": "Completa: «Es el tren ___ antiguo del país.»", "en": "Complete: «Es el tren ___ antiguo del país.»" }, "options": ["más", "el más", "muy", "tan"], "correct": 0, "explanation": { "en": "El tren más antiguo (the article is already before «tren»)." } },
+    { "question": { "es": "Dejaste tu paraguas en el tren. ¿Adónde vas a buscarlo en la estación?", "en": "You left your umbrella on the train. Where do you go to look for it at the station?" }, "options": ["a objetos perdidos", "a la consigna", "al andén", "a la locomotora"], "correct": 0, "explanation": { "en": "«Objetos perdidos» = lost and found." } },
+    { "question": { "es": "Completa: «Repartieron cobijas para que la gente ___.»", "en": "Complete: «Repartieron cobijas para que la gente ___.»" }, "options": ["descansara", "descansa", "descansará", "descanse ayer"], "correct": 0, "explanation": { "en": "Past purpose: para que + imperfect subjunctive." } },
+    { "question": { "es": "¿Qué frase está en pretérito?", "en": "Which sentence is in the preterite?" }, "options": ["El tren salió tarde.", "El tren salía tarde.", "El tren saldrá tarde.", "El tren sale tarde."], "correct": 0, "explanation": { "en": "«Salió» = left (completed event)." } }
+  ],
+  "story": {
+    "title": "El Tren de la Sabana",
+    "text": "Un domingo, Emily y Nicolás toman el Tren de la Sabana, un tren turístico que sale de Bogotá hacia Zipaquirá. Es uno de los trenes más antiguos del país y tiene una locomotora de vapor. En el andén hay músicos tocando carranga, la música campesina de la región. «¿Este asiento está ocupado?», pregunta Emily a una señora. «No, mija, siéntese.» El revisor pasa: «Boletos, por favor». Por la ventana ven vacas, montañas verdes y pueblos pequeños. En Zipaquirá visitan la Catedral de Sal, una iglesia construida dentro de una mina de sal. Al regresar, Nicolás se da cuenta de que olvidó su chaqueta en el vagón. Por suerte, la encuentra en objetos perdidos.",
+    "en": "One Sunday, Emily and Nicolás take the Tren de la Sabana, a tourist train that leaves Bogotá for Zipaquirá. It's one of the oldest trains in the country and has a steam locomotive. On the platform there are musicians playing carranga, the region's country music. «Is this seat taken?» Emily asks a lady. «No, dear, sit down.» The inspector comes by: «Tickets, please». Through the window they see cows, green mountains and small towns. In Zipaquirá they visit the Salt Cathedral, a church built inside a salt mine. On the way back, Nicolás realizes he left his jacket in the carriage. Luckily he finds it at lost and found.",
+    "highlighted_words": ["más antiguos", "locomotora", "andén", "Este asiento está ocupado", "revisor", "mina de sal", "vagón", "objetos perdidos"]
+  },
+  "arrange": [
+    { "sentence": "¿De qué andén sale el tren a Zipaquirá?", "en": "Which platform does the train to Zipaquirá leave from?" },
+    { "sentence": "Un boleto sencillo, por favor", "en": "A one-way ticket, please." },
+    { "sentence": "El tren llega con veinte minutos de retraso", "en": "The train is twenty minutes late." },
+    { "sentence": "¿Este asiento está ocupado?", "en": "Is this seat taken?" },
+    { "sentence": "Es el tren más antiguo del país", "en": "It's the oldest train in the country." },
+    { "sentence": "Olvidé mi chaqueta en el vagón", "en": "I left my jacket in the carriage." }
+  ],
+  "translate": [
+    { "answer": "¿Este asiento está ocupado?", "en": "Is this seat taken?" },
+    { "answer": "Boletos, por favor", "en": "Tickets, please", "accept": ["Billetes, por favor"] },
+    { "answer": "¿Hay que hacer transbordo?", "en": "Do I have to change trains?" },
+    { "answer": "El tren llega tarde", "en": "The train is arriving late", "accept": ["El tren viene con retraso", "El tren llega con retraso"] },
+    { "answer": "¿De qué andén sale?", "en": "Which platform does it leave from?" },
+    { "answer": "¡Qué paisaje tan bonito!", "en": "What beautiful scenery!" }
+  ]
+}

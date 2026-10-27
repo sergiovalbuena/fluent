@@ -1,0 +1,84 @@
+{
+  "lesson": 34,
+  "slug": "leccion-34",
+  "icon": "🛂",
+  "title": { "es": "Migración y aduana", "en": "Immigration and customs" },
+  "grammar": [
+    { "structure": "por / para", "example": "Vengo por trabajo. Es para mi hermana.", "en": "«Por» = reason / cause (por trabajo, por turismo); «para» = purpose / recipient (para estudiar, para ti)." },
+    { "structure": "estaba + gerundio", "example": "Estaba durmiendo cuando aterrizamos.", "en": "Past progressive: estaba + gerund = was doing (background)." },
+    { "structure": "me preguntó si…", "example": "Me preguntó si tenía algo que declarar.", "en": "Reported yes / no question: preguntar si + imperfect." },
+    { "structure": "es posible que + subjuntivo", "example": "Es posible que le pidan el boleto de regreso.", "en": "Possibility: es posible / puede que + subjunctive." },
+    { "structure": "quedarse + tiempo", "example": "Me voy a quedar dos semanas.", "en": "«Quedarse» = to stay (for a time)." }
+  ],
+  "tips": [
+    { "en": "Common migration questions: «¿Motivo de su viaje?», «¿Cuánto tiempo se va a quedar?», «¿Dónde se va a hospedar?»." },
+    { "en": "Answer simply and formally (usted). «Turismo», «trabajo» or «visita familiar» are typical answers." },
+    { "en": "«Nada que declarar» = nothing to declare. Food (fruit, meat, seeds) often must be declared." },
+    { "en": "«Hospedarse» or «alojarse» = to stay (at a hotel or a house)." },
+    { "en": "Some countries give you a migration form (FMM in Mexico) you must keep until you leave." }
+  ],
+  "vocabulary": [
+    { "word": "la migración", "en": "immigration (control)" },
+    { "word": "la aduana", "en": "customs" },
+    { "word": "el agente", "en": "the officer" },
+    { "word": "la doble nacionalidad", "en": "dual citizenship" },
+    { "word": "la visa", "en": "the visa" },
+    { "word": "el sello", "en": "the stamp" },
+    { "word": "el formulario", "en": "the form" },
+    { "word": "el motivo", "en": "the reason" },
+    { "word": "declarar", "en": "to declare" },
+    { "word": "hospedarse", "en": "to stay (lodging)" },
+    { "word": "quedarse", "en": "to stay" },
+    { "word": "el turista", "en": "the tourist" },
+    { "word": "la embajada", "en": "the embassy" },
+    { "word": "el consulado", "en": "the consulate" },
+    { "word": "vigente", "en": "valid (document)" },
+    { "word": "revisar", "en": "to check, to inspect" }
+  ],
+  "phrases": [
+    { "phrase": "¿Cuál es el motivo de su viaje?", "en": "What's the purpose of your trip?" },
+    { "phrase": "Vengo por turismo.", "en": "I'm here for tourism." },
+    { "phrase": "¿Cuánto tiempo se va a quedar?", "en": "How long are you going to stay?" },
+    { "phrase": "Me voy a quedar dos semanas.", "en": "I'm going to stay two weeks." },
+    { "phrase": "¿Dónde se va a hospedar?", "en": "Where are you going to stay?" },
+    { "phrase": "En un hotel del centro.", "en": "In a hotel downtown." },
+    { "phrase": "¿Tiene algo que declarar?", "en": "Do you have anything to declare?" },
+    { "phrase": "No, nada que declarar.", "en": "No, nothing to declare." },
+    { "phrase": "Estaba buscando mi pasaporte.", "en": "I was looking for my passport." },
+    { "phrase": "Es posible que le pidan el boleto de regreso.", "en": "They may ask you for your return ticket." },
+    { "phrase": "Mi pasaporte está vigente.", "en": "My passport is valid." },
+    { "phrase": "Bienvenido a Colombia.", "en": "Welcome to Colombia." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Estoy en Colombia ___ trabajo.»", "en": "Complete: «Estoy en Colombia ___ trabajo.»" }, "options": ["por", "para", "de", "en"], "correct": 0, "explanation": { "en": "Reason / cause: por trabajo." } },
+    { "question": { "es": "Completa: «___ durmiendo cuando el avión aterrizó.»", "en": "Complete: «___ durmiendo cuando el avión aterrizó.»" }, "options": ["Estaba", "Estuve", "Estoy", "Estaré"], "correct": 0, "explanation": { "en": "Background in progress: estaba + gerund." } },
+    { "question": { "es": "Estilo indirecto: «¿Tiene algo que declarar?» → Me preguntó…", "en": "Reported speech: «¿Tiene algo que declarar?» → Me preguntó…" }, "options": ["si tenía algo que declarar", "que tenía algo que declarar", "si tengo tenido algo que declarar", "qué tiene algo de declarar"], "correct": 0, "explanation": { "en": "Preguntar si + imperfect: si tenía." } },
+    { "question": { "es": "Completa: «Es posible que le ___ el boleto de regreso.»", "en": "Complete: «Es posible que le ___ el boleto de regreso.»" }, "options": ["pidan", "piden", "pedirán", "pidieron"], "correct": 0, "explanation": { "en": "«Es posible que» + subjunctive." } },
+    { "question": { "es": "El agente te pregunta si tienes algo que declarar. No tienes nada. ¿Qué dices?", "en": "The officer asks if you have anything to declare. You don't. What do you say?" }, "options": ["No, nada que declarar.", "Sí, declaro todo.", "No tengo pasaporte.", "Estoy durmiendo."], "correct": 0, "explanation": { "en": "«Nada que declarar» = nothing to declare." } },
+    { "question": { "es": "¿Dónde pides una visa antes de viajar?", "en": "Where do you apply for a visa before traveling?" }, "options": ["en la embajada o el consulado", "en la aduana", "en el hotel", "en el mostrador de la aerolínea"], "correct": 0, "explanation": { "en": "«Embajada» = embassy; «consulado» = consulate." } },
+    { "question": { "es": "«¿Motivo de su viaje?» ¿Qué respuesta tiene sentido?", "en": "«Purpose of your trip?» Which answer makes sense?" }, "options": ["Turismo.", "El pasaporte.", "La aduana.", "El sello."], "correct": 0, "explanation": { "en": "«Turismo», «trabajo» or «visita familiar» are typical answers." } },
+    { "question": { "es": "Completa: «Me voy a ___ dos semanas en Cartagena.»", "en": "Complete: «Me voy a ___ dos semanas en Cartagena.»" }, "options": ["quedar", "quedo", "quedé", "quede"], "correct": 0, "explanation": { "en": "«Ir a» + infinitive; the pronoun «me» goes before «voy»." } }
+  ],
+  "story": {
+    "title": "Bienvenidos a Colombia",
+    "text": "En el aeropuerto de Bogotá, Emily y Nicolás hacen fila en migración. Nicolás es mexicano y Emily estadounidense, así que van a filas diferentes. La agente mira el pasaporte de Emily. «¿Cuál es el motivo de su viaje?» «Vengo por turismo.» «¿Cuánto tiempo se va a quedar?» «Una semana.» «¿Dónde se va a hospedar?» «En un hotel en Cartagena.» La agente pone un sello en el pasaporte. «Bienvenida a Colombia.» Después, en la aduana, un agente le pregunta si tiene algo que declarar. Emily recuerda el frasco de salsa. «Solo esto, es un regalo.» El agente sonríe: «No hay problema, siga». Nicolás ya la espera con las maletas.",
+    "en": "At Bogotá airport, Emily and Nicolás line up at immigration. Nicolás is Mexican and Emily is American, so they go to different lines. The officer looks at Emily's passport. «What is the purpose of your trip?» «I'm here for tourism.» «How long are you going to stay?» «One week.» «Where are you going to stay?» «In a hotel in Cartagena.» The officer stamps the passport. «Welcome to Colombia.» Then, at customs, an officer asks her if she has anything to declare. Emily remembers the jar of salsa. «Just this, it's a gift.» The officer smiles: «No problem, go ahead». Nicolás is already waiting for her with the suitcases.",
+    "highlighted_words": ["migración", "motivo de su viaje", "por turismo", "se va a quedar", "hospedar", "sello", "aduana", "algo que declarar"]
+  },
+  "arrange": [
+    { "sentence": "Vengo por turismo y me quedo una semana", "en": "I'm here for tourism and staying a week." },
+    { "sentence": "Me voy a hospedar en un hotel", "en": "I'm going to stay in a hotel." },
+    { "sentence": "No tengo nada que declarar", "en": "I have nothing to declare." },
+    { "sentence": "Estaba buscando mi pasaporte", "en": "I was looking for my passport." },
+    { "sentence": "Me preguntó si viajaba solo", "en": "He asked me if I was traveling alone." },
+    { "sentence": "Mi pasaporte está vigente hasta 2030", "en": "My passport is valid until 2030." }
+  ],
+  "translate": [
+    { "answer": "Vengo por turismo", "en": "I am here for tourism" },
+    { "answer": "Me voy a quedar una semana", "en": "I am going to stay one week", "accept": ["Voy a quedarme una semana", "Me quedo una semana"] },
+    { "answer": "Nada que declarar", "en": "Nothing to declare" },
+    { "answer": "Aquí está mi pasaporte", "en": "Here is my passport" },
+    { "answer": "Bienvenida a Colombia", "en": "Welcome to Colombia (to a woman)" },
+    { "answer": "Es para mi hermana", "en": "It is for my sister" }
+  ]
+}

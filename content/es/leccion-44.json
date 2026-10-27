@@ -1,0 +1,84 @@
+{
+  "lesson": 44,
+  "slug": "leccion-44",
+  "icon": "🏡",
+  "title": { "es": "La compañera de casa", "en": "The roommate" },
+  "grammar": [
+    { "structure": "si + presente → presente (hábitos)", "example": "Si hace buen tiempo, siempre vamos al parque.", "en": "General truths and habits: si + present, present." },
+    { "structure": "confiar en", "example": "Confío en ti.", "en": "«Confiar en» = to trust (someone). «Te tengo confianza» is also common." },
+    { "structure": "recordar a (parecerse)", "example": "Me recuerdas a mi hermano.", "en": "«Recordar a alguien» = to remind (someone) of someone." },
+    { "structure": "imperativo negativo tú: no estés", "example": "No estés triste. No te preocupes.", "en": "Negative tú commands use the subjunctive: no estés, no te preocupes." },
+    { "structure": "es importante que + subjuntivo", "example": "Es importante que respetemos el espacio de cada uno.", "en": "Rules and expectations: es importante / es mejor que + subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Roomie» is widely used in Mexico; «compañero/a de cuarto», «de casa» or «de piso» (Spain) also work." },
+    { "en": "Shared houses often have a «rol de limpieza» (cleaning rota) on the fridge." },
+    { "en": "«Hacer la despensa» (Mexico) = to do the grocery shopping. «Hacer la compra» in Spain." },
+    { "en": "«Tener confianza» means to be close / comfortable with someone: «Ya hay confianza» = we're close now." },
+    { "en": "«Me cae bien» = I like him / her (as a person). «Me cae mal» = I don't like him / her." }
+  ],
+  "vocabulary": [
+    { "word": "la compañera de casa", "en": "the roommate (woman)" },
+    { "word": "el roomie", "en": "the roommate (Mexico)" },
+    { "word": "compartir", "en": "to share" },
+    { "word": "la confianza", "en": "trust, closeness" },
+    { "word": "confiar en", "en": "to trust" },
+    { "word": "la privacidad", "en": "privacy" },
+    { "word": "el ruido", "en": "the noise" },
+    { "word": "las reglas", "en": "the rules" },
+    { "word": "el rol de limpieza", "en": "the cleaning rota" },
+    { "word": "la despensa", "en": "the groceries, the pantry" },
+    { "word": "pedir prestado", "en": "to borrow" },
+    { "word": "prestar", "en": "to lend" },
+    { "word": "molestar", "en": "to bother" },
+    { "word": "caer bien", "en": "to like (a person)" },
+    { "word": "ordenado", "en": "tidy" },
+    { "word": "desordenado", "en": "messy" }
+  ],
+  "phrases": [
+    { "phrase": "¿Me prestas tu cargador?", "en": "Can I borrow your charger?" },
+    { "phrase": "Confío en ti.", "en": "I trust you." },
+    { "phrase": "Me recuerdas a mi hermana.", "en": "You remind me of my sister." },
+    { "phrase": "No estés triste.", "en": "Don't be sad." },
+    { "phrase": "No te preocupes.", "en": "Don't worry." },
+    { "phrase": "¿Te molesta si pongo música?", "en": "Do you mind if I play music?" },
+    { "phrase": "Necesito un poco de privacidad.", "en": "I need a bit of privacy." },
+    { "phrase": "Esta semana te toca limpiar el baño.", "en": "This week it's your turn to clean the bathroom." },
+    { "phrase": "Si tienes hambre, hay comida en el refri.", "en": "If you're hungry, there's food in the fridge." },
+    { "phrase": "Me cae muy bien.", "en": "I really like her." },
+    { "phrase": "Es importante que hablemos.", "en": "It's important that we talk." },
+    { "phrase": "Solo cocina cuando tiene tiempo.", "en": "She only cooks when she has time." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Si hace buen tiempo, siempre ___ al parque.» (hábito)", "en": "Complete: «Si hace buen tiempo, siempre ___ al parque.» (habit)" }, "options": ["vamos", "iremos", "iríamos", "fuimos"], "correct": 0, "explanation": { "en": "Habit: si + present, present." } },
+    { "question": { "es": "Completa: «Si necesitas ayuda, te ___.» (futuro)", "en": "Complete: «Si necesitas ayuda, te ___.» (future)" }, "options": ["ayudaré", "ayudaría", "ayudaba", "ayudé"], "correct": 0, "explanation": { "en": "Si + present → future: ayudaré." } },
+    { "question": { "es": "Tu roomie quiere guardar las llaves de tu casa. Confías en ella. ¿Qué le dices?", "en": "Your roommate wants to keep your house keys. You trust her. What do you say?" }, "options": ["Confío en ti.", "Confío a ti.", "Te confianza.", "Confío de ti."], "correct": 0, "explanation": { "en": "«Confiar en» + person." } },
+    { "question": { "es": "Tu nueva compañera tiene el mismo humor que tu hermano. ¿Qué le dices?", "en": "Your new roommate has the same humor as your brother. What do you tell her?" }, "options": ["Me recuerdas a mi hermano.", "Te recuerdas a mi hermano.", "Me acuerdo mi hermano a ti.", "Recuerdo tu hermano."], "correct": 0, "explanation": { "en": "«Recordar a alguien» = to remind of someone." } },
+    { "question": { "es": "Tu amiga está triste. ¿Cómo le dices que no lo esté?", "en": "Your friend is sad. How do you tell her not to be?" }, "options": ["No estés triste.", "No estás triste.", "No está triste.", "No seas triste ayer."], "correct": 0, "explanation": { "en": "Negative tú command: no + subjunctive (estés)." } },
+    { "question": { "es": "Compartes el departamento y la renta con Hugo. ¿Qué es Hugo para ti?", "en": "You share the apartment and rent with Hugo. What is Hugo to you?" }, "options": ["mi roomie", "mi dueño", "mi inquilino", "mi vecino de enfrente"], "correct": 0, "explanation": { "en": "«Roomie» or «compañero de casa»." } },
+    { "question": { "es": "Completa: «Solo cocina ___ tiene tiempo.»", "en": "Complete: «Solo cocina ___ tiene tiempo.»" }, "options": ["cuando", "durante", "desde", "para que"], "correct": 0, "explanation": { "en": "«Cuando» + present for habits." } },
+    { "question": { "es": "Necesitas tiempo solo en tu cuarto, sin que nadie entre. ¿Qué le pides a tu roomie?", "en": "You need time alone in your room, without anyone coming in. What do you ask your roommate?" }, "options": ["Que respete mi privacidad.", "Que respete mi despensa.", "Que respete mi renta.", "Que respete mi cargador."], "correct": 0, "explanation": { "en": "«Privacidad» = privacy." } }
+  ],
+  "story": {
+    "title": "Una roomie nueva",
+    "text": "El departamento nuevo es grande, así que Emily busca una roomie para compartir la renta. Conoce a Mariana, una chica de Guadalajara que estudia Diseño. Le cae bien de inmediato. «Me recuerdas a mi mejor amiga de Chicago», le dice Emily. Antes de mudarse, hablan de las reglas. «Es importante que hagamos un rol de limpieza», propone Mariana. «Y si alguna pone música tarde, que use audífonos», añade Emily. Las primeras semanas todo va bien. Pero un día Mariana usa el cargador de Emily sin pedírselo y lo pierde. Mariana está muy apenada. «No te preocupes», dice Emily. «Confío en ti. Mañana compramos otro.» Esa noche cocinan juntas y ya hay confianza.",
+    "en": "The new apartment is big, so Emily looks for a roommate to share the rent. She meets Mariana, a girl from Guadalajara who studies design. Emily likes her right away. «You remind me of my best friend from Chicago», Emily tells her. Before moving in, they talk about the rules. «It's important that we make a cleaning rota», Mariana suggests. «And if either of us plays music late, she uses headphones», Emily adds. The first weeks everything goes well. But one day Mariana uses Emily's charger without asking and loses it. Mariana is very embarrassed. «Don't worry», says Emily. «I trust you. We'll buy another one tomorrow.» That night they cook together and they're close now.",
+    "highlighted_words": ["roomie", "compartir", "Le cae bien", "Me recuerdas a", "Es importante que", "rol de limpieza", "No te preocupes", "Confío en ti"]
+  },
+  "arrange": [
+    { "sentence": "¿Me prestas tu cargador un momento?", "en": "Can I borrow your charger for a moment?" },
+    { "sentence": "Esta semana te toca limpiar la cocina", "en": "This week it's your turn to clean the kitchen." },
+    { "sentence": "Es importante que respetemos las reglas", "en": "It's important that we respect the rules." },
+    { "sentence": "No te preocupes, confío en ti", "en": "Don't worry, I trust you." },
+    { "sentence": "Me recuerdas mucho a mi hermana", "en": "You really remind me of my sister." },
+    { "sentence": "Si tienes hambre, hay comida en el refri", "en": "If you're hungry, there's food in the fridge." }
+  ],
+  "translate": [
+    { "answer": "Confío en ti", "en": "I trust you (tú)" },
+    { "answer": "No te preocupes", "en": "Don't worry (tú)" },
+    { "answer": "¿Me prestas tu cargador?", "en": "Can I borrow your charger? (tú)" },
+    { "answer": "Me cae muy bien", "en": "I really like him (as a person)" },
+    { "answer": "Necesito privacidad", "en": "I need privacy" },
+    { "answer": "Compartimos la renta", "en": "We share the rent", "accept": ["Compartimos el alquiler"] }
+  ]
+}

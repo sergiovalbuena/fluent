@@ -1,0 +1,84 @@
+{
+  "lesson": 50,
+  "slug": "leccion-50",
+  "icon": "📮",
+  "title": { "es": "En la oficina de correos", "en": "At the post office" },
+  "grammar": [
+    { "structure": "después de que + indicativo (pasado)", "example": "Después de que se fue, lloré.", "en": "For past facts, «después de que» takes the indicative." },
+    { "structure": "después de que + subjuntivo (futuro)", "example": "Te llamará después de que reciba el paquete.", "en": "For the future, it takes the subjunctive: reciba." },
+    { "structure": "mientras + imperfecto", "example": "Mientras dormía, llegó el cartero.", "en": "«Mientras» + imperfect for an action in progress." },
+    { "structure": "asegurarse de que + indicativo", "example": "Asegúrate de que la dirección está bien.", "en": "«Asegurarse de que» states a fact to check: indicative (está)." },
+    { "structure": "estar siendo + participio", "example": "El paquete está siendo entregado.", "en": "Passive in progress (formal, common in tracking): está siendo enviado." }
+  ],
+  "tips": [
+    { "en": "«Correos» = post office (in Spain «Correos» is the company name). In Mexico you'll say «la oficina de correos» or «Correos de México»." },
+    { "en": "«Estampilla» (Latin America), «sello» (Spain) or «timbre» (Mexico) = stamp." },
+    { "en": "«Paquetería» = courier service. Many people use private couriers for international parcels." },
+    { "en": "«Remitente» = sender; «destinatario» = recipient; «código postal» = ZIP code." },
+    { "en": "«Rastrear» = to track: «número de rastreo» = tracking number." }
+  ],
+  "vocabulary": [
+    { "word": "la oficina de correos", "en": "the post office" },
+    { "word": "la postal", "en": "the postcard" },
+    { "word": "la caja de cartón", "en": "the cardboard box" },
+    { "word": "el sobre", "en": "the envelope" },
+    { "word": "la estampilla", "en": "the stamp" },
+    { "word": "el cartero", "en": "the mail carrier" },
+    { "word": "el buzón", "en": "the mailbox" },
+    { "word": "el remitente", "en": "the sender" },
+    { "word": "el destinatario", "en": "the recipient" },
+    { "word": "la dirección", "en": "the address" },
+    { "word": "el código postal", "en": "the ZIP code" },
+    { "word": "el número de rastreo", "en": "the tracking number" },
+    { "word": "enviar", "en": "to send" },
+    { "word": "rastrear", "en": "to track" },
+    { "word": "frágil", "en": "fragile" },
+    { "word": "la báscula", "en": "the scale" }
+  ],
+  "phrases": [
+    { "phrase": "Quiero enviar este paquete a Estados Unidos.", "en": "I want to send this parcel to the US." },
+    { "phrase": "¿Cuánto cuesta enviar una carta?", "en": "How much does it cost to send a letter?" },
+    { "phrase": "¿Cuánto tarda en llegar?", "en": "How long does it take to arrive?" },
+    { "phrase": "Póngalo en la báscula, por favor.", "en": "Put it on the scale, please." },
+    { "phrase": "Es frágil.", "en": "It's fragile." },
+    { "phrase": "¿Me da el número de rastreo?", "en": "Can I have the tracking number?" },
+    { "phrase": "Asegúrate de que la dirección está bien.", "en": "Make sure the address is right." },
+    { "phrase": "Mientras dormía, llegó el cartero.", "en": "While I was sleeping, the mail carrier came." },
+    { "phrase": "Te aviso después de que llegue.", "en": "I'll let you know after it arrives." },
+    { "phrase": "El paquete está en camino.", "en": "The parcel is on its way." },
+    { "phrase": "Necesito una estampilla.", "en": "I need a stamp." },
+    { "phrase": "¿Dónde hay un buzón?", "en": "Where is there a mailbox?" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Qué frase es correcta?", "en": "Which sentence is correct?" }, "options": ["Después de que se fue, lloré.", "Después de que se fuera, lloraré ayer.", "Después de que se irá, lloré.", "Después de que se vaya, lloré."], "correct": 0, "explanation": { "en": "A past fact after «después de que»: indicative (se fue)." } },
+    { "question": { "es": "Completa: «Te llamará después de que ___ el paquete.»", "en": "Complete: «Te llamará después de que ___ el paquete.»" }, "options": ["reciba", "recibe", "recibió", "recibirá"], "correct": 0, "explanation": { "en": "Future event: subjunctive (reciba)." } },
+    { "question": { "es": "Completa: «Mientras ___, el cartero tocó el timbre.»", "en": "Complete: «Mientras ___, el cartero tocó el timbre.»" }, "options": ["dormía", "dormí", "dormiré", "duerma"], "correct": 0, "explanation": { "en": "Action in progress: imperfect (dormía)." } },
+    { "question": { "es": "Completa: «Asegúrate de que la dirección ___ correcta.»", "en": "Complete: «Asegúrate de que la dirección ___ correcta.»" }, "options": ["está", "esté de", "estuviera", "estará ayer"], "correct": 0, "explanation": { "en": "«Asegurarse de que» + indicative in most usage: está." } },
+    { "question": { "es": "Le mandas una carta a tu abuela. ¿Qué es ella para esa carta?", "en": "You send a letter to your grandmother. What is she for this letter?" }, "options": ["la destinataria", "la remitente", "la cartera", "la báscula"], "correct": 0, "explanation": { "en": "«Destinatario/a» = recipient; «remitente» = sender." } },
+    { "question": { "es": "Sigues tu paquete en internet: va de camino a tu casa ahora mismo. ¿Qué dice la página?", "en": "You track your parcel online: it's on the way to your house right now. What does the page say?" }, "options": ["El paquete está en camino.", "El paquete fue entregado ayer.", "El paquete será pedido.", "El paquete acaba de ser comprado."], "correct": 0, "explanation": { "en": "«Estar en camino» = to be on the way." } },
+    { "question": { "es": "¿Qué pegas en un sobre para pagar el envío?", "en": "What do you stick on an envelope to pay the postage?" }, "options": ["una estampilla", "un paquete", "una báscula", "un código postal"], "correct": 0, "explanation": { "en": "«Estampilla» (or «sello», «timbre») = stamp." } },
+    { "question": { "es": "Tu paquete tiene platos de cerámica. ¿Qué le dices al empleado?", "en": "Your parcel contains ceramic plates. What do you tell the clerk?" }, "options": ["Es frágil.", "Es urgente de.", "Es remitente.", "Es rastreado."], "correct": 0, "explanation": { "en": "«Frágil» = fragile." } }
+  ],
+  "story": {
+    "title": "Un paquete para Chicago",
+    "text": "Se acerca la Navidad y Emily quiere mandarle un regalo a su familia en Chicago: café colombiano, unas mochilas tejidas y una carta. Va a la oficina de correos con Nicolás. «Quiero enviar este paquete a Estados Unidos», le dice al empleado. «Póngalo en la báscula, por favor. ¿Qué contiene?» «Café, ropa y unas tazas. Las tazas son frágiles.» El empleado le da un formulario. «Asegúrese de que la dirección y el código postal están bien.» «¿Cuánto tarda en llegar?» «Unas dos semanas.» Emily paga y recibe el número de rastreo. Diez días después, mientras desayuna, recibe un mensaje de su mamá: «¡Llegó el paquete! Te llamo después de que lo abramos todos juntos».",
+    "en": "Christmas is coming and Emily wants to send a present to her family in Chicago: Colombian coffee, some woven bags and a letter. She goes to the post office with Nicolás. «I want to send this parcel to the United States», she tells the clerk. «Put it on the scale, please. What does it contain?» «Coffee, clothes and some mugs. The mugs are fragile.» The clerk gives her a form. «Make sure the address and ZIP code are correct.» «How long does it take to arrive?» «About two weeks.» Emily pays and gets the tracking number. Ten days later, while she's having breakfast, she gets a message from her mom: «The parcel arrived! I'll call you after we all open it together».",
+    "highlighted_words": ["oficina de correos", "enviar este paquete", "báscula", "frágiles", "código postal", "Cuánto tarda en llegar", "número de rastreo", "después de que lo abramos"]
+  },
+  "arrange": [
+    { "sentence": "Quiero enviar este paquete a Chicago", "en": "I want to send this parcel to Chicago." },
+    { "sentence": "¿Cuánto tarda en llegar a Estados Unidos?", "en": "How long does it take to get to the United States?" },
+    { "sentence": "Asegúrate de que la dirección está bien", "en": "Make sure the address is right." },
+    { "sentence": "Mientras dormía llegó el cartero", "en": "While I was sleeping, the mail carrier came." },
+    { "sentence": "Te aviso después de que llegue", "en": "I'll let you know after it arrives." },
+    { "sentence": "¿Me da el número de rastreo, por favor?", "en": "Can I have the tracking number, please?" }
+  ],
+  "translate": [
+    { "answer": "Quiero enviar una carta", "en": "I want to send a letter", "accept": ["Quiero mandar una carta"] },
+    { "answer": "Es frágil", "en": "It is fragile" },
+    { "answer": "Necesito una estampilla", "en": "I need a stamp", "accept": ["Necesito un sello", "Necesito un timbre"] },
+    { "answer": "¿Cuánto tarda en llegar?", "en": "How long does it take to arrive?" },
+    { "answer": "El paquete está en camino", "en": "The parcel is on its way" },
+    { "answer": "¿Dónde hay un buzón?", "en": "Where is there a mailbox?" }
+  ]
+}

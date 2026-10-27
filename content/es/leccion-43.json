@@ -1,0 +1,84 @@
+{
+  "lesson": 43,
+  "slug": "leccion-43",
+  "icon": "🎓",
+  "title": { "es": "Ir a clases", "en": "Going to school" },
+  "grammar": [
+    { "structure": "deberías + infinitivo", "example": "Deberías estudiar más.", "en": "Advice: deberías (you should) + infinitive." },
+    { "structure": "podría haber + participio", "example": "Podría haber venido, pero estaba cansada.", "en": "«Podría haber» + participle = could have (but didn't)." },
+    { "structure": "más vale que + subjuntivo", "example": "Más vale que empecemos ya.", "en": "«Más vale que» = we'd better (+ subjunctive)." },
+    { "structure": "hasta que no + subjuntivo", "example": "No salgo hasta que termine.", "en": "Not until: (no) … hasta que + subjunctive for the future." },
+    { "structure": "iban a + infinitivo, pero…", "example": "Iban a dar una conferencia, pero se enfermaron.", "en": "«Iba(n) a» for plans that didn't happen." }
+  ],
+  "tips": [
+    { "en": "«Aprobar» = to pass; «reprobar» (Mexico) or «suspender» (Spain) = to fail; «presentar un examen» = to take an exam." },
+    { "en": "Grading varies: 0–10 in Mexico (6 to pass), 0–5 in Colombia (3 to pass), 1–7 in Chile (4 to pass)." },
+    { "en": "«Colegio» often means school (not college). University is «la universidad» or «la facultad»." },
+    { "en": "«Carrera» = degree program: «¿Qué carrera estudias?» = What's your major?" },
+    { "en": "«Echarle ganas» (Mexico) = to give it your all. Teachers say it a lot before exams!" }
+  ],
+  "vocabulary": [
+    { "word": "la universidad", "en": "the university" },
+    { "word": "la carrera", "en": "the degree program, the major" },
+    { "word": "la materia", "en": "the subject" },
+    { "word": "el examen", "en": "the exam" },
+    { "word": "la tarea", "en": "the homework" },
+    { "word": "la calificación", "en": "the grade" },
+    { "word": "aprobar", "en": "to pass" },
+    { "word": "reprobar", "en": "to fail (an exam)" },
+    { "word": "el profesor", "en": "the professor, the teacher" },
+    { "word": "el compañero de clase", "en": "the classmate" },
+    { "word": "el salón", "en": "the classroom" },
+    { "word": "la beca", "en": "the scholarship" },
+    { "word": "la conferencia", "en": "the lecture" },
+    { "word": "el título", "en": "the degree, the diploma" },
+    { "word": "inscribirse", "en": "to enroll" },
+    { "word": "estudiar", "en": "to study" }
+  ],
+  "phrases": [
+    { "phrase": "¿Qué carrera estudias?", "en": "What's your major?" },
+    { "phrase": "Estudio Administración.", "en": "I study Business." },
+    { "phrase": "Mañana presento un examen.", "en": "Tomorrow I take an exam." },
+    { "phrase": "Aprobé con nueve.", "en": "I passed with a nine." },
+    { "phrase": "Reprobé matemáticas.", "en": "I failed math." },
+    { "phrase": "Deberías estudiar más.", "en": "You should study more." },
+    { "phrase": "Podría haber venido, pero me quedé dormida.", "en": "I could have come, but I overslept." },
+    { "phrase": "Debe de estar en la biblioteca.", "en": "She must be in the library." },
+    { "phrase": "Más vale que empecemos ya.", "en": "We'd better start now." },
+    { "phrase": "No salgo hasta que termine la tarea.", "en": "I'm not going out until I finish my homework." },
+    { "phrase": "¡Échale ganas!", "en": "Give it your all!" },
+    { "phrase": "Me dieron una beca.", "en": "They gave me a scholarship." }
+  ],
+  "qa": [
+    { "question": { "es": "Tu amigo tiene examen mañana y está viendo la tele. ¿Qué consejo le das?", "en": "Your friend has an exam tomorrow and is watching TV. What advice do you give?" }, "options": ["Deberías estudiar.", "Debes estudiar ayer.", "Has debido estudiar mañana.", "Deberás estudiar ayer."], "correct": 0, "explanation": { "en": "«Deberías» = you should." } },
+    { "question": { "es": "No fuiste a la fiesta, pero tenías tiempo: era posible. ¿Cómo lo dices?", "en": "You didn't go to the party, but you had time: it was possible. How do you say it?" }, "options": ["Podría haber ido.", "Pude ir.", "Podré ir.", "Podía ir mañana."], "correct": 0, "explanation": { "en": "«Podría haber» + participle = could have (but didn't)." } },
+    { "question": { "es": "Tu compañera no está en clase. Suele estudiar en la biblioteca. ¿Qué supones?", "en": "Your classmate isn't in class. She usually studies in the library. What do you assume?" }, "options": ["Debe de estar en la biblioteca.", "Va a estar en la biblioteca.", "Debió ir mañana.", "Deberá estuvo en la biblioteca."], "correct": 0, "explanation": { "en": "«Deber de» + infinitive expresses probability." } },
+    { "question": { "es": "Mañana tienes el examen de historia y todavía no sabes si vas a aprobar. ¿Cómo lo dices?", "en": "Tomorrow you have your history exam and don't know yet if you'll pass. How do you say it?" }, "options": ["Mañana presento el examen.", "Mañana apruebo el examen.", "Mañana repruebo el examen.", "Mañana doy el examen al profesor."], "correct": 0, "explanation": { "en": "«Presentar un examen» = to take an exam. «Aprobar» = to pass." } },
+    { "question": { "es": "Completa: «No salgo hasta que ___ la tarea.»", "en": "Complete: «No salgo hasta que ___ la tarea.»" }, "options": ["termine", "termino", "terminaré", "terminaba"], "correct": 0, "explanation": { "en": "Future after «hasta que»: subjunctive." } },
+    { "question": { "es": "Ya es tarde y el proyecto es largo. ¿Qué le dices a tu equipo?", "en": "It's already late and the project is long. What do you tell your team?" }, "options": ["Más vale que empecemos ya.", "Más vale que empezamos ya.", "Vale más empezaremos.", "Más vale empecemos que."], "correct": 0, "explanation": { "en": "«Más vale que» + subjunctive: empecemos." } },
+    { "question": { "es": "En México, ¿con qué calificación se aprueba normalmente?", "en": "In Mexico, what grade do you usually need to pass?" }, "options": ["6 de 10", "3 de 10", "60 de 70", "1 de 5"], "correct": 0, "explanation": { "en": "In Mexico grades go from 0 to 10, and 6 is a pass." } },
+    { "question": { "es": "Completa: «Los profesores ___ dar una conferencia, pero se enfermaron.»", "en": "Complete: «Los profesores ___ dar una conferencia, pero se enfermaron.»" }, "options": ["iban a", "van a", "fueron a", "irán a"], "correct": 0, "explanation": { "en": "A plan that didn't happen: iban a + infinitive." } }
+  ],
+  "story": {
+    "title": "La clase de español avanzado",
+    "text": "Emily ya habla bastante bien, así que Lucía le recomienda inscribirse en un curso de español en la universidad. El primer día conoce a Sebastián, un estudiante de Ingeniería que quiere practicar inglés. «¿Qué carrera estudias tú?», pregunta él. «Ninguna, ya trabajo. Solo tomo esta materia.» El profesor es exigente: hay tarea todos los días y un examen cada mes. Antes del primer examen, Sebastián le dice: «Más vale que estudiemos juntos». Estudian en la biblioteca hasta que cierra. «Podría haber estudiado sola, pero así es más divertido», piensa Emily. Una semana después, el profesor entrega las calificaciones. Emily sacó un nueve. «¡Le echaste ganas!», dice Sebastián.",
+    "en": "Emily now speaks quite well, so Lucía recommends she enroll in a Spanish course at the university. On the first day she meets Sebastián, an engineering student who wants to practice English. «What's your major?» he asks. «None, I already work. I'm only taking this class.» The professor is demanding: there's homework every day and an exam every month. Before the first exam, Sebastián tells her: «We'd better study together». They study in the library until it closes. «I could have studied alone, but this way it's more fun», Emily thinks. A week later the professor hands out the grades. Emily got a nine. «You gave it your all!» says Sebastián.",
+    "highlighted_words": ["inscribirse", "Qué carrera estudias", "materia", "tarea", "examen", "Más vale que estudiemos", "Podría haber estudiado", "calificaciones"]
+  },
+  "arrange": [
+    { "sentence": "Mañana presento un examen de historia", "en": "Tomorrow I'm taking a history exam." },
+    { "sentence": "Deberías estudiar un poco más", "en": "You should study a bit more." },
+    { "sentence": "Más vale que empecemos ahora", "en": "We'd better start now." },
+    { "sentence": "No salgo hasta que termine la tarea", "en": "I'm not going out until I finish my homework." },
+    { "sentence": "Podría haber venido, pero estaba cansada", "en": "I could have come, but I was tired." },
+    { "sentence": "¿Qué carrera estudias en la universidad?", "en": "What's your major at university?" }
+  ],
+  "translate": [
+    { "answer": "Aprobé el examen", "en": "I passed the exam" },
+    { "answer": "Deberías estudiar", "en": "You should study (tú)" },
+    { "answer": "¿Qué carrera estudias?", "en": "What is your major? (tú)" },
+    { "answer": "Tengo mucha tarea", "en": "I have a lot of homework" },
+    { "answer": "Debe de estar en la biblioteca", "en": "He must be in the library", "accept": ["Debe estar en la biblioteca"] },
+    { "answer": "Reprobé matemáticas", "en": "I failed math", "accept": ["Suspendí matemáticas"] }
+  ]
+}

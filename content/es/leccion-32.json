@@ -1,0 +1,84 @@
+{
+  "lesson": 32,
+  "slug": "leccion-32",
+  "icon": "🛫",
+  "title": { "es": "En el aeropuerto", "en": "At the airport" },
+  "grammar": [
+    { "structure": "imperativo usted: pase, muestre, coloque", "example": "Muestre su pasaporte, por favor.", "en": "Airport staff use formal commands: pase (go through), muestre (show), coloque (place), quítese (take off)." },
+    { "structure": "hacer + infinitivo", "example": "Me hicieron abrir la maleta.", "en": "«Hacer» + infinitive = to make someone do something." },
+    { "structure": "el / la que, a la que", "example": "La puerta a la que tenía que ir estaba lejos.", "en": "Relative pronouns with prepositions: a la que, en el que, con la que." },
+    { "structure": "acabar de + infinitivo", "example": "El avión acaba de aterrizar.", "en": "«Acabar de» = to have just." },
+    { "structure": "imperfecto: acciones repetidas", "example": "Cada vez que viajaban, perdían las maletas.", "en": "Repeated past actions use the imperfect." }
+  ],
+  "tips": [
+    { "en": "«Documentar» (Mexico) or «facturar» (Spain) = to check in your luggage. «Hacer el check-in» is also very common." },
+    { "en": "«Pase de abordar» (Latin America) = «tarjeta de embarque» (Spain) = boarding pass." },
+    { "en": "«Equipaje de mano» = carry-on; «equipaje documentado / facturado» = checked luggage." },
+    { "en": "«Sala de última espera» (Mexico) is the gate waiting area. «Puerta» = gate." },
+    { "en": "«Vuelo» = flight, but «robo» = theft. The verb «volar» (o → ue: vuelo) means to fly." }
+  ],
+  "vocabulary": [
+    { "word": "el aeropuerto", "en": "the airport" },
+    { "word": "la terminal", "en": "the terminal" },
+    { "word": "el mostrador", "en": "the counter" },
+    { "word": "el pase de abordar", "en": "the boarding pass" },
+    { "word": "la puerta de embarque", "en": "the boarding gate" },
+    { "word": "el equipaje de mano", "en": "the carry-on" },
+    { "word": "la banda de equipaje", "en": "the baggage carousel" },
+    { "word": "el control de seguridad", "en": "the security check" },
+    { "word": "documentar", "en": "to check in (luggage)" },
+    { "word": "abordar", "en": "to board" },
+    { "word": "el retraso", "en": "the delay" },
+    { "word": "cancelado", "en": "canceled" },
+    { "word": "la escala", "en": "the layover" },
+    { "word": "el vuelo directo", "en": "the direct flight" },
+    { "word": "la llegada", "en": "the arrival" },
+    { "word": "la salida", "en": "the departure, the exit" }
+  ],
+  "phrases": [
+    { "phrase": "¿Dónde documento la maleta?", "en": "Where do I check my suitcase?" },
+    { "phrase": "Pasaporte y pase de abordar, por favor.", "en": "Passport and boarding pass, please." },
+    { "phrase": "Coloque sus cosas en la bandeja.", "en": "Place your things in the tray." },
+    { "phrase": "Quítese el cinturón, por favor.", "en": "Please take off your belt." },
+    { "phrase": "El vuelo tiene un retraso de una hora.", "en": "The flight is delayed by an hour." },
+    { "phrase": "El vuelo fue cancelado.", "en": "The flight was canceled." },
+    { "phrase": "¿De qué puerta sale el vuelo?", "en": "Which gate does the flight leave from?" },
+    { "phrase": "Es un vuelo directo, sin escalas.", "en": "It's a direct flight, no layovers." },
+    { "phrase": "Me hicieron abrir la maleta.", "en": "They made me open my suitcase." },
+    { "phrase": "El avión acaba de aterrizar.", "en": "The plane has just landed." },
+    { "phrase": "Perdí mi maleta.", "en": "I lost my suitcase." },
+    { "phrase": "¡Buen viaje!", "en": "Have a good trip!" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Dónde te dan el pase de abordar?", "en": "Where do you get your boarding pass?" }, "options": ["en el mostrador de la aerolínea", "en la banda de equipaje", "en la sala de última espera", "en la aduana"], "correct": 0, "explanation": { "en": "At the airline counter (or online)." } },
+    { "question": { "es": "Tu mamá te llama: el avión de tu hermano tocó tierra hace un minuto. ¿Qué dice?", "en": "Your mom calls: your brother's plane touched down a minute ago. What does she say?" }, "options": ["El avión acaba de aterrizar.", "El avión va a aterrizar.", "El avión aterrizará.", "El avión aterrizaba."], "correct": 0, "explanation": { "en": "«Acabar de» + infinitive = has just." } },
+    { "question": { "es": "En la aduana, el agente te obligó a abrir la maleta. ¿Cómo lo cuentas?", "en": "At customs, the officer made you open your suitcase. How do you tell it?" }, "options": ["Me hizo abrir la maleta.", "Me abrió hecho la maleta.", "Hice abrirme la maleta.", "Me hizo abriendo la maleta."], "correct": 0, "explanation": { "en": "«Hacer» + infinitive = to make someone do something." } },
+    { "question": { "es": "Completa: «La puerta a ___ tenía que ir estaba al otro lado de la terminal.»", "en": "Complete: «La puerta a ___ tenía que ir estaba al otro lado de la terminal.»" }, "options": ["la que", "que", "quien", "lo que"], "correct": 0, "explanation": { "en": "After a preposition, use article + que: a la que." } },
+    { "question": { "es": "¿Qué frase describe una acción repetida en el pasado?", "en": "Which sentence describes a repeated past action?" }, "options": ["Cada vez que viajaban, perdían las maletas.", "Un día perdieron las maletas.", "Ayer perdieron las maletas.", "Perderán las maletas."], "correct": 0, "explanation": { "en": "The imperfect (perdían) for repeated past actions." } },
+    { "question": { "es": "En el control de seguridad, el agente quiere que te quites el cinturón. ¿Qué te dice?", "en": "At security, the officer wants you to take off your belt. What does he say?" }, "options": ["Quítese el cinturón, por favor.", "Se quita el cinturón, por favor.", "Quitar el cinturón usted.", "Quítate el cinturones."], "correct": 0, "explanation": { "en": "Formal command with the pronoun attached: quítese." } },
+    { "question": { "es": "Tu vuelo de Bogotá a Lima no para en ninguna otra ciudad. ¿Cómo es?", "en": "Your flight from Bogotá to Lima doesn't stop anywhere else. What kind of flight is it?" }, "options": ["un vuelo directo", "un vuelo con escala", "un vuelo cancelado", "un vuelo retrasado"], "correct": 0, "explanation": { "en": "«Vuelo directo» = direct flight." } },
+    { "question": { "es": "Te despides de tu amiga que se va de viaje. ¿Qué le dices?", "en": "You say goodbye to your friend who's going on a trip. What do you say?" }, "options": ["¡Buen viaje!", "¡Buen provecho!", "¡Buena llegada!", "¡Feliz vuelo cancelado!"], "correct": 0, "explanation": { "en": "«¡Buen viaje!» = have a good trip." } }
+  ],
+  "story": {
+    "title": "Rumbo a Cartagena",
+    "text": "El 8 de diciembre, Emily y Nicolás llegan al aeropuerto a las seis de la mañana. Hay una fila enorme en el mostrador. Por fin documentan las maletas y reciben sus pases de abordar. En el control de seguridad, un agente le dice a Nicolás: «Coloque la cámara en la bandeja y quítese el cinturón». Después, a Emily le hacen abrir la maleta porque lleva un frasco de salsa. «¡Es un regalo para Colombia!», explica, riendo. En la sala de espera escuchan un anuncio: «El vuelo 315 con destino a Bogotá tiene un retraso de cuarenta minutos». Tienen una escala en Bogotá. «No pasa nada», dice Nicolás. «Así desayunamos con calma.»",
+    "en": "On December 8th, Emily and Nicolás get to the airport at six in the morning. There's a huge line at the counter. They finally check their bags and get their boarding passes. At security, an officer tells Nicolás: «Place the camera in the tray and take off your belt». Then they make Emily open her suitcase because she's carrying a jar of salsa. «It's a present for Colombia!» she explains, laughing. In the waiting area they hear an announcement: «Flight 315 to Bogotá is delayed by forty minutes». They have a layover in Bogotá. «No big deal», says Nicolás. «This way we can have breakfast calmly.»",
+    "highlighted_words": ["mostrador", "documentan", "pases de abordar", "Coloque", "quítese", "le hacen abrir", "retraso", "escala"]
+  },
+  "arrange": [
+    { "sentence": "¿Dónde documento mi maleta, por favor?", "en": "Where do I check my suitcase, please?" },
+    { "sentence": "Coloque sus cosas en la bandeja", "en": "Place your things in the tray." },
+    { "sentence": "El vuelo tiene un retraso de una hora", "en": "The flight is delayed by an hour." },
+    { "sentence": "¿De qué puerta sale el vuelo a Lima?", "en": "Which gate does the flight to Lima leave from?" },
+    { "sentence": "Me hicieron abrir la maleta en la aduana", "en": "They made me open my suitcase at customs." },
+    { "sentence": "Es un vuelo directo, sin escalas", "en": "It's a direct flight, no layovers." }
+  ],
+  "translate": [
+    { "answer": "El vuelo fue cancelado", "en": "The flight was canceled", "accept": ["Cancelaron el vuelo", "Se canceló el vuelo"] },
+    { "answer": "¿Dónde está la puerta cinco?", "en": "Where is gate five?" },
+    { "answer": "Perdí mi maleta", "en": "I lost my suitcase" },
+    { "answer": "¡Buen viaje!", "en": "Have a good trip!" },
+    { "answer": "El avión acaba de aterrizar", "en": "The plane has just landed" },
+    { "answer": "Tengo una escala en Bogotá", "en": "I have a layover in Bogotá" }
+  ]
+}

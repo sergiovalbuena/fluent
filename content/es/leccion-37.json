@@ -1,0 +1,84 @@
+{
+  "lesson": 37,
+  "slug": "leccion-37",
+  "icon": "🚗",
+  "title": { "es": "Rentar un auto", "en": "Renting a car" },
+  "grammar": [
+    { "structure": "pretérito perfecto: has manejado", "example": "¿Alguna vez has manejado en México?", "en": "Present perfect: he / has / ha + participle, for life experience («alguna vez» = ever)." },
+    { "structure": "nunca / ya / todavía no", "example": "Nunca he tenido un accidente. Todavía no he pagado.", "en": "With the present perfect: nunca (never), ya (already), todavía no (not yet)." },
+    { "structure": "busco un carro que + subjuntivo", "example": "Busco un carro que sea automático.", "en": "Describing something you're looking for (not sure it exists): que + subjunctive." },
+    { "structure": "aunque + subjuntivo", "example": "Aunque se lo dijeras, no te escucharía.", "en": "«Aunque» + subjunctive for something hypothetical or not accepted as relevant." },
+    { "structure": "hace años que + presente", "example": "Hace años que manejo.", "en": "«Hace + time + que» + present = I've been… for." }
+  ],
+  "tips": [
+    { "en": "«Rentar» (Mexico, Central America), «alquilar» (Spain, most of South America) and «arrendar» (Chile) = to rent." },
+    { "en": "«Manejar» (Latin America) = «conducir» (Spain) = to drive. «Licencia» (Latin America) = «carné de conducir» (Spain)." },
+    { "en": "«Gasolinera» = gas station; «llenar el tanque» = fill up. In Mexico an attendant fills it for you: say «Lleno, por favor»." },
+    { "en": "«Topes» (Mexico), «policías acostados» (Colombia), «lomos de burro» (Argentina), «badenes / resaltos» (Spain) = speed bumps." },
+    { "en": "Most rental cars in Latin America are manual. If you need an automatic, ask: «¿Tiene carros automáticos?»." }
+  ],
+  "vocabulary": [
+    { "word": "rentar", "en": "to rent" },
+    { "word": "la agencia de renta", "en": "the rental agency" },
+    { "word": "la licencia de manejo", "en": "the driver's license" },
+    { "word": "el seguro", "en": "the insurance" },
+    { "word": "el depósito", "en": "the deposit" },
+    { "word": "el tanque", "en": "the gas tank" },
+    { "word": "la gasolina", "en": "the gas, petrol" },
+    { "word": "la gasolinera", "en": "the gas station" },
+    { "word": "automático", "en": "automatic" },
+    { "word": "estándar", "en": "manual (transmission)" },
+    { "word": "el kilometraje", "en": "the mileage" },
+    { "word": "la carretera", "en": "the highway, the road" },
+    { "word": "la caseta", "en": "the toll booth (Mexico)" },
+    { "word": "el tope", "en": "the speed bump (Mexico)" },
+    { "word": "estacionar", "en": "to park" },
+    { "word": "echar un vistazo", "en": "to take a look" }
+  ],
+  "phrases": [
+    { "phrase": "Quisiera rentar un carro por tres días.", "en": "I'd like to rent a car for three days." },
+    { "phrase": "¿Tiene carros automáticos?", "en": "Do you have automatic cars?" },
+    { "phrase": "¿Está incluido el seguro?", "en": "Is insurance included?" },
+    { "phrase": "¿Alguna vez has manejado aquí?", "en": "Have you ever driven here?" },
+    { "phrase": "Nunca he tenido un accidente.", "en": "I've never had an accident." },
+    { "phrase": "Hace años que manejo.", "en": "I've been driving for years." },
+    { "phrase": "Busco un carro que sea económico.", "en": "I'm looking for a car that's economical." },
+    { "phrase": "Lleno, por favor.", "en": "Fill it up, please." },
+    { "phrase": "¿Puedo echarle un vistazo al carro?", "en": "Can I take a look at the car?" },
+    { "phrase": "Hay que devolverlo con el tanque lleno.", "en": "You have to return it with a full tank." },
+    { "phrase": "¿Dónde puedo estacionar?", "en": "Where can I park?" },
+    { "phrase": "¡Cuidado con los topes!", "en": "Watch out for the speed bumps!" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «¿___ manejado alguna vez en México?» (tú)", "en": "Complete: «¿___ manejado alguna vez en México?» (tú)" }, "options": ["Has", "Hayas", "Habías", "Ha"], "correct": 0, "explanation": { "en": "Present perfect with tú: has manejado." } },
+    { "question": { "es": "Completa: «Nunca ___ tenido un accidente.» (yo)", "en": "Complete: «Nunca ___ tenido un accidente.» (yo)" }, "options": ["he", "ha", "había de", "hube"], "correct": 0, "explanation": { "en": "Yo + haber in present: he." } },
+    { "question": { "es": "Completa: «Busco un carro que ___ automático.»", "en": "Complete: «Busco un carro que ___ automático.»" }, "options": ["sea", "es", "será", "era"], "correct": 0, "explanation": { "en": "Something you're looking for (may not exist) → subjunctive: sea." } },
+    { "question": { "es": "Completa: «Aunque se lo ___, no te habría escuchado.»", "en": "Complete: «Aunque se lo ___, no te habría escuchado.»" }, "options": ["hubieras dicho", "has dicho", "dijiste", "dirás"], "correct": 0, "explanation": { "en": "Hypothetical past after «aunque»: pluperfect subjunctive (hubieras dicho)." } },
+    { "question": { "es": "El tanque del carro está casi vacío. Paras en la gasolinera. ¿Qué le dices al empleado?", "en": "The tank is almost empty. You stop at the gas station. What do you tell the attendant?" }, "options": ["Lleno, por favor.", "Vacío, por favor.", "La cuenta, por favor.", "Una caseta, por favor."], "correct": 0, "explanation": { "en": "«Lleno, por favor» = fill it up, please." } },
+    { "question": { "es": "Tienes licencia desde hace quince años. ¿Cómo dices que tienes experiencia?", "en": "You've had your license for fifteen years. How do you say you're experienced?" }, "options": ["Hace años que manejo.", "Hace años que manejé.", "Manejaba en años.", "Llevo manejar años."], "correct": 0, "explanation": { "en": "«Hace + time + que» + present." } },
+    { "question": { "es": "En la agencia te bloquean dinero en la tarjeta, que recuperas si devuelves el carro bien. ¿Qué es?", "en": "At the agency they hold money on your card, which you get back if you return the car fine. What is it?" }, "options": ["el depósito", "la multa", "la propina", "la caseta"], "correct": 0, "explanation": { "en": "«Depósito» (or «garantía») = deposit." } },
+    { "question": { "es": "Antes de firmar, quieres mirar rápidamente el carro. ¿Qué dices?", "en": "Before signing, you want to have a quick look at the car. What do you say?" }, "options": ["¿Puedo echarle un vistazo al carro?", "¿Puedo echar el carro?", "¿Puedo dar una mano al carro?", "¿Puedo mirar ojo el carro?"], "correct": 0, "explanation": { "en": "«Echar un vistazo» = to take a quick look." } }
+  ],
+  "story": {
+    "title": "Rumbo a Valle de Bravo",
+    "text": "Emily quiere ir a Valle de Bravo el fin de semana con Valeria. Van a una agencia de renta. «Quisiera rentar un carro por dos días», dice Emily. «¿Busca algún modelo en especial?» «Busco un carro que sea automático y económico.» El agente pregunta: «¿Alguna vez ha manejado en México?». «No, nunca, pero hace años que manejo en Chicago.» El agente le explica el seguro y el depósito. Antes de firmar, Emily le echa un vistazo al carro y toma fotos de un rayón. En la carretera pagan dos casetas y pasan muchos topes. «¡Cuidado!», grita Valeria cada vez. Al regresar, llenan el tanque en la gasolinera. «Lleno, por favor», pide Emily, orgullosa.",
+    "en": "Emily wants to go to Valle de Bravo for the weekend with Valeria. They go to a rental agency. «I'd like to rent a car for two days», says Emily. «Are you looking for any particular model?» «I'm looking for a car that's automatic and economical.» The agent asks: «Have you ever driven in Mexico?». «No, never, but I've been driving in Chicago for years.» The agent explains the insurance and the deposit. Before signing, Emily takes a look at the car and photographs a scratch. On the highway they pay two tolls and go over lots of speed bumps. «Careful!» Valeria shouts every time. When they get back, they fill up at the gas station. «Fill it up, please», Emily asks, proudly.",
+    "highlighted_words": ["rentar un carro", "que sea automático", "Alguna vez ha manejado", "hace años que manejo", "seguro", "depósito", "le echa un vistazo", "Lleno, por favor"]
+  },
+  "arrange": [
+    { "sentence": "Quisiera rentar un carro por tres días", "en": "I'd like to rent a car for three days." },
+    { "sentence": "¿Alguna vez has manejado en otro país?", "en": "Have you ever driven in another country?" },
+    { "sentence": "Busco un carro que sea automático", "en": "I'm looking for a car that's automatic." },
+    { "sentence": "Nunca he tenido un accidente", "en": "I've never had an accident." },
+    { "sentence": "Hay que devolverlo con el tanque lleno", "en": "You have to return it with a full tank." },
+    { "sentence": "¿Está incluido el seguro en el precio?", "en": "Is insurance included in the price?" }
+  ],
+  "translate": [
+    { "answer": "Quisiera rentar un carro", "en": "I would like to rent a car", "accept": ["Quisiera alquilar un carro", "Quisiera rentar un auto", "Quisiera alquilar un coche"] },
+    { "answer": "¿Está incluido el seguro?", "en": "Is the insurance included?" },
+    { "answer": "Nunca he manejado aquí", "en": "I have never driven here" },
+    { "answer": "Lleno, por favor", "en": "Fill it up, please" },
+    { "answer": "¿Dónde puedo estacionar?", "en": "Where can I park?" },
+    { "answer": "Hace años que manejo", "en": "I have been driving for years" }
+  ]
+}

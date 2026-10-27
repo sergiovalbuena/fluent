@@ -1,0 +1,84 @@
+{
+  "lesson": 49,
+  "slug": "leccion-49",
+  "icon": "🩺",
+  "title": { "es": "En el médico", "en": "At the doctor's" },
+  "grammar": [
+    { "structure": "a menos que + subjuntivo", "example": "No te vas a curar a menos que descanses.", "en": "«A menos que» (unless) always takes the subjunctive." },
+    { "structure": "es necesario que + subjuntivo", "example": "Es necesario que vayas al médico.", "en": "Necessity for someone else: es necesario que + subjunctive." },
+    { "structure": "recomendar que + subjuntivo", "example": "El médico me recomendó que tomara mucha agua.", "en": "Advice in the past: recomendó que + imperfect subjunctive (tomara)." },
+    { "structure": "aunque + subjuntivo", "example": "Aunque te sientas mejor, sigue el tratamiento.", "en": "«Aunque» + subjunctive = even if (hypothetical or not yet known)." },
+    { "structure": "estilo indirecto: me dijo que tenía", "example": "Me dijo que tenía gripa.", "en": "Reported speech: «tiene» becomes «tenía»." }
+  ],
+  "tips": [
+    { "en": "«Gripa» (Mexico, Colombia) = «gripe» (Spain, elsewhere) = flu." },
+    { "en": "«Receta» = prescription (and recipe!). Many medicines need one; pharmacies can also give advice for small problems." },
+    { "en": "«Urgencias» = emergency room. In an emergency in Colombia dial 123; in Mexico and Spain 911 / 112." },
+    { "en": "«Mal de altura» or «soroche» (Andes) = altitude sickness. Bogotá is at 2,600 m, Quito at 2,850 m and La Paz at 3,600 m!" },
+    { "en": "«EPS» in Colombia, «IMSS» in Mexico: public health systems. Expats often get «seguro médico privado»." }
+  ],
+  "vocabulary": [
+    { "word": "el síntoma", "en": "the symptom" },
+    { "word": "el consultorio médico", "en": "the clinic" },
+    { "word": "la receta", "en": "the prescription" },
+    { "word": "la farmacia", "en": "the pharmacy" },
+    { "word": "el jarabe", "en": "the cough syrup" },
+    { "word": "la pastilla", "en": "the pill" },
+    { "word": "la gripa", "en": "the flu" },
+    { "word": "la tos", "en": "the cough" },
+    { "word": "la fiebre", "en": "the fever" },
+    { "word": "el mareo", "en": "the dizziness" },
+    { "word": "la alergia", "en": "the allergy" },
+    { "word": "las urgencias", "en": "the emergency room" },
+    { "word": "el tratamiento", "en": "the treatment" },
+    { "word": "el seguro médico", "en": "the health insurance" },
+    { "word": "curarse", "en": "to get better" },
+    { "word": "el mal de altura", "en": "the altitude sickness" }
+  ],
+  "phrases": [
+    { "phrase": "Necesito una cita con el médico.", "en": "I need a doctor's appointment." },
+    { "phrase": "¿Qué síntomas tiene?", "en": "What symptoms do you have?" },
+    { "phrase": "Tengo fiebre y tos.", "en": "I have a fever and a cough." },
+    { "phrase": "Me mareo cuando me levanto.", "en": "I get dizzy when I stand up." },
+    { "phrase": "Soy alérgica a la penicilina.", "en": "I'm allergic to penicillin." },
+    { "phrase": "Tómese una pastilla cada ocho horas.", "en": "Take one pill every eight hours." },
+    { "phrase": "Es necesario que descanse.", "en": "You need to rest." },
+    { "phrase": "No se va a curar a menos que descanse.", "en": "You won't get better unless you rest." },
+    { "phrase": "Aunque se sienta mejor, siga el tratamiento.", "en": "Even if you feel better, keep up the treatment." },
+    { "phrase": "Me dijo que tenía gripa.", "en": "He told me I had the flu." },
+    { "phrase": "Toma este jarabe, si no, la tos no se te va a quitar.", "en": "Take this syrup, otherwise your cough won't go away." },
+    { "phrase": "¡Que te mejores!", "en": "Get well soon!" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «No te vas a curar a menos que ___.»", "en": "Complete: «No te vas a curar a menos que ___.»" }, "options": ["descanses", "descansas", "descansarás", "descansabas"], "correct": 0, "explanation": { "en": "«A menos que» + subjunctive." } },
+    { "question": { "es": "Completa: «Es necesario que ___ al médico.» (tú, ir)", "en": "Complete: «Es necesario que ___ al médico.» (tú, ir)" }, "options": ["vayas", "vas", "irás", "ibas"], "correct": 0, "explanation": { "en": "«Es necesario que» + subjunctive: vayas." } },
+    { "question": { "es": "Completa: «Toma este jarabe, ___ la tos no se va a quitar.»", "en": "Complete: «Toma este jarabe, ___ la tos no se va a quitar.»" }, "options": ["si no", "sino", "aunque", "a menos"], "correct": 0, "explanation": { "en": "«Si no» = otherwise." } },
+    { "question": { "es": "¿Qué te da el médico para llevar a la farmacia?", "en": "What does the doctor give you to take to the pharmacy?" }, "options": ["una receta", "un jarabe", "un seguro", "una tos"], "correct": 0, "explanation": { "en": "«Receta» = prescription." } },
+    { "question": { "es": "Estilo indirecto: «Usted tiene gripa.» → El médico me dijo que ___ gripa.", "en": "Reported speech: «Usted tiene gripa.» → El médico me dijo que ___ gripa." }, "options": ["tenía", "tengo", "tendré", "tenga"], "correct": 0, "explanation": { "en": "Past reported speech: tiene → tenía." } },
+    { "question": { "es": "Cuando te levantas, todo da vueltas. ¿Qué le dices al médico?", "en": "When you stand up, everything spins. What do you tell the doctor?" }, "options": ["Me mareo.", "Tengo tos.", "Soy alérgico.", "Me curo."], "correct": 0, "explanation": { "en": "«Marearse» = to feel dizzy." } },
+    { "question": { "es": "Completa: «Aunque te ___ mejor, sigue el tratamiento.»", "en": "Complete: «Aunque te ___ mejor, sigue el tratamiento.»" }, "options": ["sientas", "sientes", "sentirás", "sentías"], "correct": 0, "explanation": { "en": "«Aunque» + subjunctive for «even if»." } },
+    { "question": { "es": "¿Adónde vas en una emergencia médica?", "en": "Where do you go in a medical emergency?" }, "options": ["a urgencias", "a la farmacia", "al consultorio de mañana", "al banco"], "correct": 0, "explanation": { "en": "«Urgencias» = emergency room." } }
+  ],
+  "story": {
+    "title": "El mal de altura",
+    "text": "La primera semana en Bogotá, Emily se siente muy cansada. Le duele la cabeza y se marea cuando sube escaleras. Nicolás le pide una cita con el médico. «¿Qué síntomas tiene?», pregunta la doctora. «Cansancio, dolor de cabeza y mareos.» La doctora sonríe: «Es el mal de altura. Bogotá está a más de dos mil seiscientos metros». Le recomienda que tome mucha agua, que no haga ejercicio fuerte por unos días y que coma ligero. «Aunque se sienta mejor mañana, descanse toda la semana. No se va a acostumbrar a menos que vaya despacio.» En la farmacia compran unas pastillas para el dolor. «¡Que te mejores!», le escribe Carmen desde México.",
+    "en": "During her first week in Bogotá, Emily feels very tired. Her head hurts and she gets dizzy when she climbs stairs. Nicolás makes her a doctor's appointment. «What symptoms do you have?» the doctor asks. «Tiredness, headaches and dizziness.» The doctor smiles: «It's altitude sickness. Bogotá is over two thousand six hundred meters high». She recommends that she drink lots of water, avoid hard exercise for a few days and eat light meals. «Even if you feel better tomorrow, rest all week. You won't get used to it unless you take it slowly.» At the pharmacy they buy some painkillers. «Get well soon!» Carmen writes to her from Mexico.",
+    "highlighted_words": ["se marea", "cita con el médico", "Qué síntomas tiene", "mal de altura", "Aunque se sienta mejor", "a menos que", "farmacia", "Que te mejores"]
+  },
+  "arrange": [
+    { "sentence": "Necesito una cita con el médico", "en": "I need a doctor's appointment." },
+    { "sentence": "Tengo fiebre y me duele la garganta", "en": "I have a fever and my throat hurts." },
+    { "sentence": "Tómese una pastilla cada ocho horas", "en": "Take one pill every eight hours." },
+    { "sentence": "Es necesario que descanses unos días", "en": "You need to rest for a few days." },
+    { "sentence": "Soy alérgica a la penicilina", "en": "I'm allergic to penicillin." },
+    { "sentence": "El médico me dijo que tenía gripa", "en": "The doctor told me I had the flu." }
+  ],
+  "translate": [
+    { "answer": "Tengo fiebre", "en": "I have a fever" },
+    { "answer": "Me mareo", "en": "I feel dizzy", "accept": ["Estoy mareado", "Estoy mareada", "Tengo mareos"] },
+    { "answer": "Soy alérgico", "en": "I am allergic (man)" },
+    { "answer": "Necesito una receta", "en": "I need a prescription" },
+    { "answer": "¡Que te mejores!", "en": "Get well soon! (tú)" },
+    { "answer": "Tengo tos", "en": "I have a cough" }
+  ]
+}

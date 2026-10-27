@@ -1,0 +1,84 @@
+{
+  "lesson": 53,
+  "slug": "leccion-53",
+  "icon": "☕",
+  "title": { "es": "En la cafetería", "en": "At the coffee shop" },
+  "grammar": [
+    { "structure": "para llevar / para tomar aquí", "example": "Un capuchino para llevar, por favor.", "en": "To go = «para llevar»; for here = «para tomar aquí» (or «para aquí»)." },
+    { "structure": "¿me regala…? (Colombia)", "example": "¿Me regala un tinto, por favor?", "en": "In Colombia people order with «¿me regala…?» (literally, «will you gift me…?»). It doesn't mean it's free!" },
+    { "structure": "como si + imperfecto de subjuntivo", "example": "Toma café como si fuera agua.", "en": "«Como si» (as if) is always followed by the imperfect subjunctive." },
+    { "structure": "hacer todo para que + subjuntivo", "example": "Hace todo para que su hijo no tome tanto café.", "en": "Purpose with a different subject: para que + subjunctive." },
+    { "structure": "nosotros imperativo: tomemos", "example": "¡Tomemos un café!", "en": "«Let's»: nosotros form of the subjunctive (tomemos, vamos is the exception for ir)." }
+  ],
+  "tips": [
+    { "en": "In Colombia «un tinto» is a small black coffee (not red wine!). «Un perico» is coffee with a little milk." },
+    { "en": "«Café de olla» (Mexico) is brewed with cinnamon and piloncillo (raw cane sugar) in a clay pot." },
+    { "en": "«Leche deslactosada» = lactose-free milk; «leche vegetal» or «de almendra / de avena» = plant milk." },
+    { "en": "«Merendar» = to have an afternoon snack. In Argentina, «la merienda» with coffee and «medialunas» is a ritual." },
+    { "en": "«Barista» is used everywhere. «Mesero / mozo / camarero» if there's table service." }
+  ],
+  "vocabulary": [
+    { "word": "la cafetería", "en": "the coffee shop" },
+    { "word": "el tinto", "en": "black coffee (Colombia)" },
+    { "word": "el capuchino", "en": "the cappuccino" },
+    { "word": "el café americano", "en": "the americano" },
+    { "word": "el té", "en": "the tea" },
+    { "word": "la taza", "en": "the cup, the mug" },
+    { "word": "el azúcar", "en": "the sugar" },
+    { "word": "la leche deslactosada", "en": "the lactose-free milk" },
+    { "word": "el pan de bono", "en": "cheese bread (Colombia)" },
+    { "word": "la galleta", "en": "the cookie" },
+    { "word": "el pastel", "en": "the cake" },
+    { "word": "para llevar", "en": "to go" },
+    { "word": "el barista", "en": "the barista" },
+    { "word": "merendar", "en": "to have an afternoon snack" },
+    { "word": "descafeinado", "en": "decaf" },
+    { "word": "el popote", "en": "the straw (Mexico)" }
+  ],
+  "phrases": [
+    { "phrase": "¿Me regala un tinto, por favor?", "en": "Could I have a black coffee, please? (Colombia)" },
+    { "phrase": "Un capuchino para llevar.", "en": "A cappuccino to go." },
+    { "phrase": "¿Para tomar aquí o para llevar?", "en": "For here or to go?" },
+    { "phrase": "Con leche deslactosada, por favor.", "en": "With lactose-free milk, please." },
+    { "phrase": "Sin azúcar, gracias.", "en": "No sugar, thanks." },
+    { "phrase": "¿Tienen wifi?", "en": "Do you have wifi?" },
+    { "phrase": "¡Salud!", "en": "Cheers!" },
+    { "phrase": "Toma café como si fuera agua.", "en": "He drinks coffee as if it were water." },
+    { "phrase": "¡Tomemos un café!", "en": "Let's have a coffee!" },
+    { "phrase": "Este va por la casa.", "en": "This one's on the house." },
+    { "phrase": "Está embarazada de seis meses.", "en": "She's six months pregnant." },
+    { "phrase": "Tengo una resaca terrible.", "en": "I have a terrible hangover." }
+  ],
+  "qa": [
+    { "question": { "es": "En Bogotá quieres un café negro pequeño. ¿Qué pides?", "en": "In Bogotá you want a small black coffee. What do you order?" }, "options": ["un tinto", "un vino tinto", "un perico negro", "un café de olla"], "correct": 0, "explanation": { "en": "In Colombia «tinto» = small black coffee." } },
+    { "question": { "es": "Levantan las tazas juntos para brindar. ¿Qué dices?", "en": "You all raise your cups to toast. What do you say?" }, "options": ["¡Salud!", "¡Buen provecho!", "¡Felicidades!", "¡Buena suerte!"], "correct": 0, "explanation": { "en": "«¡Salud!» = cheers!" } },
+    { "question": { "es": "Completa: «Toma café como si ___ agua.»", "en": "Complete: «Toma café como si ___ agua.»" }, "options": ["fuera", "es", "sea", "será"], "correct": 0, "explanation": { "en": "«Como si» + imperfect subjunctive: fuera." } },
+    { "question": { "es": "Completa: «Hace todo para que su hijo no ___ tanto café.»", "en": "Complete: «Hace todo para que su hijo no ___ tanto café.»" }, "options": ["tome", "toma", "tomará", "tomó"], "correct": 0, "explanation": { "en": "«Para que» + subjunctive: tome." } },
+    { "question": { "es": "Al día siguiente de una fiesta te duele la cabeza porque tomaste demasiado. ¿Qué tienes?", "en": "The day after a party your head hurts because you drank too much. What do you have?" }, "options": ["una resaca", "un tinto", "una merienda", "un popote"], "correct": 0, "explanation": { "en": "«Resaca» (also «cruda» in Mexico, «guayabo» in Colombia) = hangover." } },
+    { "question": { "es": "Completa: «Su esposa está embarazada ___ seis meses.»", "en": "Complete: «Su esposa está embarazada ___ seis meses.»" }, "options": ["de", "desde", "por", "hace"], "correct": 0, "explanation": { "en": "«Embarazada de» + months." } },
+    { "question": { "es": "El dueño de la cafetería te invita un pastel gratis. ¿Qué dice?", "en": "The coffee shop owner gives you a free cake. What does he say?" }, "options": ["Este va por la casa.", "Este lo paga usted.", "Este es para llevar.", "Este va sin azúcar."], "correct": 0, "explanation": { "en": "«Por la casa» = on the house." } },
+    { "question": { "es": "Propones a tus amigos tomar un café juntos. ¿Qué dices (nosotros)?", "en": "You suggest having a coffee together. What do you say (let's)?" }, "options": ["¡Tomemos un café!", "¡Toma un café!", "¡Tomen un café!", "¡Tomamos café ayer!"], "correct": 0, "explanation": { "en": "«Let's»: nosotros subjunctive form, tomemos." } }
+  ],
+  "story": {
+    "title": "El café de la esquina",
+    "text": "En Bogotá, Emily trabaja muchas mañanas desde un café pequeño cerca de su casa. El barista, Andrés Felipe, ya la conoce. «¿Lo de siempre? ¿Un capuchino con leche deslactosada?» «Sí, y hoy también un pan de bono.» Al lado, un señor mayor toma tinto tras tinto. «Toma café como si fuera agua», le susurra Emily a Nicolás, que acaba de llegar. «Así son los bogotanos», ríe él. «¿Para tomar aquí o para llevar?», pregunta el barista. «Para aquí, hoy no tenemos prisa.» Cuando van a pagar, Andrés Felipe les da dos galletas. «Estas van por la casa. Me dijeron que se casan. ¡Felicitaciones!» «¡Tomemos un café para celebrar!», dice Nicolás.",
+    "en": "In Bogotá, Emily works many mornings from a small café near her home. The barista, Andrés Felipe, already knows her. «The usual? A cappuccino with lactose-free milk?» «Yes, and today a cheese bread too.» Next to them, an older man drinks one black coffee after another. «He drinks coffee as if it were water», Emily whispers to Nicolás, who has just arrived. «That's what people from Bogotá are like», he laughs. «For here or to go?» the barista asks. «For here, we're not in a hurry today.» When they go to pay, Andrés Felipe gives them two cookies. «These are on the house. They told me you're getting married. Congratulations!» «Let's have a coffee to celebrate!» says Nicolás.",
+    "highlighted_words": ["capuchino", "leche deslactosada", "tinto", "como si fuera agua", "Para tomar aquí o para llevar", "por la casa", "Tomemos un café"]
+  },
+  "arrange": [
+    { "sentence": "Un capuchino para llevar, por favor", "en": "A cappuccino to go, please." },
+    { "sentence": "¿Me regala un tinto, por favor?", "en": "Could I have a black coffee, please?" },
+    { "sentence": "Con leche deslactosada y sin azúcar", "en": "With lactose-free milk and no sugar." },
+    { "sentence": "Toma café como si fuera agua", "en": "He drinks coffee as if it were water." },
+    { "sentence": "Estas galletas van por la casa", "en": "These cookies are on the house." },
+    { "sentence": "¡Tomemos un café para celebrar!", "en": "Let's have a coffee to celebrate!" }
+  ],
+  "translate": [
+    { "answer": "Para llevar, por favor", "en": "To go, please" },
+    { "answer": "Sin azúcar, gracias", "en": "No sugar, thanks" },
+    { "answer": "¿Tienen wifi?", "en": "Do you have wifi? (ustedes)" },
+    { "answer": "Un café americano", "en": "An americano" },
+    { "answer": "Tomemos un café", "en": "Let's have a coffee", "accept": ["Vamos a tomar un café"] },
+    { "answer": "Es descafeinado", "en": "It is decaf" }
+  ]
+}

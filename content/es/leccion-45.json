@@ -1,0 +1,84 @@
+{
+  "lesson": 45,
+  "slug": "leccion-45",
+  "icon": "💍",
+  "title": { "es": "El amor y el matrimonio", "en": "Love and marriage" },
+  "grammar": [
+    { "structure": "si + presente → futuro", "example": "Si me lo pides, diré que sí.", "en": "Real condition: si + present, future." },
+    { "structure": "querer que + subjuntivo", "example": "No quiero que mis hijos estén tristes.", "en": "Wanting something for someone else: querer que + subjunctive." },
+    { "structure": "condicional como futuro del pasado", "example": "Pensaba que nuestro amor sería eterno.", "en": "The conditional expresses the future seen from the past: sería = would be." },
+    { "structure": "casarse con / enamorarse de", "example": "Se casó con su novia de la universidad.", "en": "Prepositions differ from English: casarse con (marry), enamorarse de (fall in love with)." },
+    { "structure": "me alegra que + subjuntivo", "example": "Me alegra que estés feliz.", "en": "Emotions about someone else's situation: me alegra / me encanta que + subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Novio / novia» = boyfriend / girlfriend, but also groom / bride on the wedding day." },
+    { "en": "«Pedir matrimonio» or «pedir la mano» = to propose. «Anillo de compromiso» = engagement ring; «argollas» or «alianzas» = wedding bands." },
+    { "en": "Weddings in Latin America often have «padrinos»: godparents who sponsor the rings, the cake, the lasso… and the party lasts until dawn." },
+    { "en": "«Te quiero» is common for partners, family and friends; «te amo» is stronger, mostly for partners and close family." },
+    { "en": "«Pareja» = partner, couple. «Mi media naranja» = my other half (literally, my half orange)." }
+  ],
+  "vocabulary": [
+    { "word": "el amor", "en": "love" },
+    { "word": "el novio", "en": "the boyfriend, the groom" },
+    { "word": "la novia", "en": "the girlfriend, the bride" },
+    { "word": "la pareja", "en": "the partner, the couple" },
+    { "word": "la boda", "en": "the wedding" },
+    { "word": "el matrimonio", "en": "the marriage" },
+    { "word": "el anillo de compromiso", "en": "the engagement ring" },
+    { "word": "las argollas", "en": "the wedding bands" },
+    { "word": "enamorarse de", "en": "to fall in love with" },
+    { "word": "casarse con", "en": "to marry" },
+    { "word": "pedir matrimonio", "en": "to propose" },
+    { "word": "engañar", "en": "to cheat on" },
+    { "word": "divorciarse", "en": "to get divorced" },
+    { "word": "el compromiso", "en": "the engagement, the commitment" },
+    { "word": "el anillo", "en": "the ring" },
+    { "word": "el padrino", "en": "the godparent, the sponsor" }
+  ],
+  "phrases": [
+    { "phrase": "Te quiero mucho.", "en": "I love you very much." },
+    { "phrase": "Te amo.", "en": "I love you (deeply)." },
+    { "phrase": "Me enamoré de él a primera vista.", "en": "I fell in love with him at first sight." },
+    { "phrase": "¿Te quieres casar conmigo?", "en": "Will you marry me?" },
+    { "phrase": "¡Sí, acepto!", "en": "Yes, I do!" },
+    { "phrase": "Se van a casar en junio.", "en": "They're getting married in June." },
+    { "phrase": "Me alegra que estés feliz.", "en": "I'm glad you're happy." },
+    { "phrase": "No quiero que estés triste.", "en": "I don't want you to be sad." },
+    { "phrase": "Pensaba que sería para siempre.", "en": "I thought it would be forever." },
+    { "phrase": "La engañó con otra.", "en": "He cheated on her with another woman." },
+    { "phrase": "Eres mi media naranja.", "en": "You're my other half." },
+    { "phrase": "¡Vivan los novios!", "en": "Long live the bride and groom!" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Si me lo pides, ___ que sí.»", "en": "Complete: «Si me lo pides, ___ que sí.»" }, "options": ["diré", "diría", "decía", "dije"], "correct": 0, "explanation": { "en": "Si + present → future: diré." } },
+    { "question": { "es": "Completa: «Si te vas, me ___ de tristeza.» (morir, futuro)", "en": "Complete: «Si te vas, me ___ de tristeza.» (morir, future)" }, "options": ["moriré", "moriría", "moría", "muero ayer"], "correct": 0, "explanation": { "en": "Future: moriré." } },
+    { "question": { "es": "Tu pareja está lejos hace un mes y piensas en ella sin parar. ¿Qué le escribes?", "en": "Your partner has been away for a month and you think of her constantly. What do you write?" }, "options": ["Te extraño mucho.", "Me extrañas mucho.", "Te extrañé mañana.", "Extraño a mí."], "correct": 0, "explanation": { "en": "«Te extraño» (or «te echo de menos») = I miss you." } },
+    { "question": { "es": "Tu amiga descubrió que su novio tenía otra relación en secreto. ¿Qué dice?", "en": "Your friend found out her boyfriend was secretly seeing someone else. What does she say?" }, "options": ["Me engañó.", "Se engañó.", "Me equivocó.", "Me extrañó."], "correct": 0, "explanation": { "en": "«Engañar» = to cheat on, to deceive." } },
+    { "question": { "es": "Completa: «No quiero que mis hijos ___ tristes.»", "en": "Complete: «No quiero que mis hijos ___ tristes.»" }, "options": ["estén", "están", "estarán", "estaban"], "correct": 0, "explanation": { "en": "«Querer que» + subjunctive: estén." } },
+    { "question": { "es": "Completa: «Pensaba que nuestro amor ___ eterno.»", "en": "Complete: «Pensaba que nuestro amor ___ eterno.»" }, "options": ["sería", "será", "es", "sea"], "correct": 0, "explanation": { "en": "Future from a past viewpoint: conditional (sería)." } },
+    { "question": { "es": "En el restaurante, Marcos saca un anillo y le pregunta a Julia si quiere casarse con él. ¿Qué hace?", "en": "At the restaurant, Marcos takes out a ring and asks Julia to marry him. What is he doing?" }, "options": ["Le pide matrimonio.", "Le pide la cuenta.", "Se divorcia.", "La engaña."], "correct": 0, "explanation": { "en": "«Pedir matrimonio» = to propose." } },
+    { "question": { "es": "Completa: «Laura se casó ___ su novio de la universidad.»", "en": "Complete: «Laura se casó ___ su novio de la universidad.»" }, "options": ["con", "a", "de", "por"], "correct": 0, "explanation": { "en": "«Casarse con» = to marry (someone)." } }
+  ],
+  "story": {
+    "title": "La boda en Oaxaca",
+    "text": "Por fin llega la boda de Valeria en Oaxaca, la boda para la que Emily compró el vestido azul. La ceremonia es en una iglesia antigua llena de flores. Los novios entran entre aplausos y los padrinos llevan las argollas. Después, la fiesta es en una hacienda con música, mezcal y una calenda: un desfile con gigantes de papel y una banda. Emily baila con todos. A la medianoche, Nicolás la lleva al jardín. Está nervioso. «Emily, me enamoré de ti el día de la lluvia, ¿te acuerdas?» Saca un anillo. «¿Te quieres casar conmigo?» Emily se queda sin palabras unos segundos y luego grita: «¡Sí!». Los invitados, que miraban desde la puerta, aplauden: «¡Vivan los novios!».",
+    "en": "At last it's time for Valeria's wedding in Oaxaca, the wedding Emily bought the blue dress for. The ceremony is in an old church full of flowers. The bride and groom walk in to applause and the sponsors carry the wedding bands. Afterwards, the party is at a hacienda with music, mezcal and a calenda: a parade with paper giants and a band. Emily dances with everyone. At midnight, Nicolás takes her to the garden. He's nervous. «Emily, I fell in love with you on the day of the rain, remember?» He takes out a ring. «Will you marry me?» Emily is speechless for a few seconds and then shouts: «Yes!». The guests, who were watching from the door, applaud: «Long live the couple!».",
+    "highlighted_words": ["boda", "novios", "padrinos", "argollas", "me enamoré de ti", "Te quieres casar conmigo", "Vivan los novios"]
+  },
+  "arrange": [
+    { "sentence": "Me enamoré de él a primera vista", "en": "I fell in love with him at first sight." },
+    { "sentence": "Se van a casar en junio", "en": "They're getting married in June." },
+    { "sentence": "Me alegra que estés tan feliz", "en": "I'm glad you're so happy." },
+    { "sentence": "No quiero que estés triste", "en": "I don't want you to be sad." },
+    { "sentence": "Pensaba que sería para siempre", "en": "I thought it would be forever." },
+    { "sentence": "¿Te quieres casar conmigo?", "en": "Will you marry me?" }
+  ],
+  "translate": [
+    { "answer": "Te quiero", "en": "I love you", "accept": ["Te amo"] },
+    { "answer": "¿Te quieres casar conmigo?", "en": "Will you marry me? (tú)", "accept": ["¿Quieres casarte conmigo?"] },
+    { "answer": "Me alegra que estés feliz", "en": "I am glad you are happy (tú)" },
+    { "answer": "Se van a casar", "en": "They are going to get married" },
+    { "answer": "Me enamoré de ella", "en": "I fell in love with her" },
+    { "answer": "Eres mi media naranja", "en": "You are my other half" }
+  ]
+}

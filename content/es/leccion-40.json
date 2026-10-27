@@ -1,0 +1,84 @@
+{
+  "lesson": 40,
+  "slug": "leccion-40",
+  "icon": "🌃",
+  "title": { "es": "Una salida de noche", "en": "A night out" },
+  "grammar": [
+    { "structure": "iba a + infinitivo", "example": "Iba a salir cuando llamaste.", "en": "«Iba a» + infinitive = was going to / was about to (often interrupted)." },
+    { "structure": "darse cuenta de que + pluscuamperfecto", "example": "Me di cuenta de que había olvidado las llaves.", "en": "«Darse cuenta de que» = to realize; the earlier action uses the past perfect." },
+    { "structure": "pasar por (alguien)", "example": "Paso por ti a las ocho.", "en": "«Pasar por» + person = to pick someone up." },
+    { "structure": "¿no? / ¿verdad? — sí", "example": "No te dio vergüenza, ¿verdad? — Sí, un poco.", "en": "Tag questions: ¿no?, ¿verdad? To contradict a negative question, answer «sí»." },
+    { "structure": "me da igual / me vale", "example": "¿Bar o antro? — Me da igual.", "en": "«Me da igual» = I don't mind. «Me vale» (Mexico) is very informal and can sound rude." }
+  ],
+  "tips": [
+    { "en": "«Antro» (Mexico), «boliche» (Argentina), «discoteca» (Spain, Colombia) = nightclub. «Ir de fiesta» or «salir de rumba» (Colombia) = to go partying." },
+    { "en": "Nights out start late: dinner at 9–10 p.m., clubs from midnight, especially in Spain and Argentina." },
+    { "en": "«Cover» is the entrance fee at Mexican clubs. «Barra libre» = open bar." },
+    { "en": "«Echarse unos tragos» (Latin America) or «tomar algo» (everywhere) = to have a few drinks. «Salud» is the toast." },
+    { "en": "«Chido» (Mexico), «chévere» (Colombia), «guay» (Spain), «bacán» (Chile, Peru) = cool." }
+  ],
+  "vocabulary": [
+    { "word": "la barra", "en": "the bar counter" },
+    { "word": "el antro", "en": "the nightclub (Mexico)" },
+    { "word": "el bar", "en": "the bar" },
+    { "word": "la fiesta", "en": "the party" },
+    { "word": "bailar", "en": "to dance" },
+    { "word": "la pista de baile", "en": "the dance floor" },
+    { "word": "el trago", "en": "the drink (alcoholic)" },
+    { "word": "el cover", "en": "the entrance fee" },
+    { "word": "la fila", "en": "the line" },
+    { "word": "el ambiente", "en": "the atmosphere, the vibe" },
+    { "word": "la vergüenza", "en": "embarrassment, shame" },
+    { "word": "darse cuenta", "en": "to realize" },
+    { "word": "pasar por", "en": "to pick up (someone)" },
+    { "word": "trasnochar", "en": "to stay up late" },
+    { "word": "chido", "en": "cool (Mexico)" },
+    { "word": "la madrugada", "en": "the early hours" }
+  ],
+  "phrases": [
+    { "phrase": "¿Salimos esta noche?", "en": "Shall we go out tonight?" },
+    { "phrase": "Paso por ti a las nueve.", "en": "I'll pick you up at nine." },
+    { "phrase": "Iba a salir cuando me llamaste.", "en": "I was about to go out when you called me." },
+    { "phrase": "¿Vamos al antro?", "en": "Shall we go to the club?" },
+    { "phrase": "Me da igual.", "en": "I don't mind." },
+    { "phrase": "El ambiente está muy chido.", "en": "The atmosphere is really cool." },
+    { "phrase": "¿Bailamos?", "en": "Shall we dance?" },
+    { "phrase": "Me di cuenta de que había perdido la chamarra.", "en": "I realized I'd lost my jacket." },
+    { "phrase": "No te dio vergüenza, ¿verdad? — Sí, un poco.", "en": "You weren't embarrassed, were you? — Yes, a little." },
+    { "phrase": "Llegamos a casa en la madrugada.", "en": "We got home in the early hours." },
+    { "phrase": "Esta ronda la pago yo.", "en": "This round is on me." },
+    { "phrase": "¡Qué buena noche!", "en": "What a great night!" }
+  ],
+  "qa": [
+    { "question": { "es": "Tenías la chamarra puesta y abrías la puerta cuando tu amigo llamó. ¿Cómo lo cuentas?", "en": "You had your jacket on and were opening the door when your friend called. How do you tell it?" }, "options": ["Iba a salir cuando llamó.", "Salí cuando llamaba.", "Iré a salir cuando llame.", "Saldría cuando llamó ayer."], "correct": 0, "explanation": { "en": "«Iba a» + infinitive = was about to." } },
+    { "question": { "es": "Completa: «Ella ___ a cantar, pero perdió la voz.»", "en": "Complete: «Ella ___ a cantar, pero perdió la voz.»" }, "options": ["iba", "va", "fue", "irá"], "correct": 0, "explanation": { "en": "An interrupted plan in the past: iba a + infinitive." } },
+    { "question": { "es": "Completa: «Me di cuenta de que ___ las llaves.»", "en": "Complete: «Me di cuenta de que ___ las llaves.»" }, "options": ["había olvidado", "he olvidado", "olvidaré", "olvido"], "correct": 0, "explanation": { "en": "An earlier past action: había olvidado." } },
+    { "question": { "es": "El sábado vas a bailar hasta las cuatro de la mañana en una discoteca de México. ¿Adónde vas?", "en": "On Saturday you dance until 4 a.m. at a nightclub in Mexico. Where are you going?" }, "options": ["al antro", "al museo", "a la biblioteca", "al consultorio"], "correct": 0, "explanation": { "en": "«Antro» = nightclub (Mexico)." } },
+    { "question": { "es": "Ofreces recoger a tu amiga en su casa en carro a las ocho. ¿Qué dices?", "en": "You offer to pick your friend up at her place at eight. What do you say?" }, "options": ["Paso por ti a las ocho.", "Te busco en todas partes a las ocho.", "Tú pasas por mí a las ocho.", "Paso de ti a las ocho."], "correct": 0, "explanation": { "en": "«Pasar por» + person = to pick up." } },
+    { "question": { "es": "¿Qué frase está en pretérito?", "en": "Which sentence is in the preterite?" }, "options": ["Ella me invitó.", "Ella me invitaba.", "Ella me va a invitar.", "Ella me invita."], "correct": 0, "explanation": { "en": "«Invitó» = invited (a completed action)." } },
+    { "question": { "es": "Te preguntan si prefieres el bar o el antro, y no te importa. ¿Qué respondes con educación?", "en": "They ask if you prefer the bar or the club, and you don't care. What do you answer politely?" }, "options": ["Me da igual.", "Me vale.", "Me da vergüenza.", "Me di cuenta."], "correct": 0, "explanation": { "en": "«Me da igual» is neutral; «me vale» can sound rude." } },
+    { "question": { "es": "«No te dio vergüenza, ¿verdad?» Sí te dio un poco. ¿Qué respondes?", "en": "«You weren't embarrassed, were you?» You were, a little. What do you answer?" }, "options": ["Sí, un poco.", "No, un poco.", "Nada, un poco.", "Ni un poco, sí."], "correct": 0, "explanation": { "en": "To contradict a negative question, answer «sí»." } }
+  ],
+  "story": {
+    "title": "Noche de salsa",
+    "text": "El viernes, Valeria propone ir a bailar salsa. «Paso por ti a las diez», le dice a Emily. Emily iba a cancelar porque estaba cansada, pero al final se arregla y sale. El lugar está lleno y el ambiente es muy chido: hay una banda en vivo y la pista de baile está llena. Un señor mayor la invita a bailar. «¿Bailamos?» «No sé bailar muy bien…» «¡No importa! Yo le enseño.» Después de tres canciones, Emily ya da vueltas sin pisar a nadie. A las dos de la madrugada, se da cuenta de que ha perdido su chamarra. La encuentra en una silla, cerca de la barra. «¡Qué buena noche!», dice en el taxi. Valeria se ríe: «La próxima vez, sin chamarra».",
+    "en": "On Friday, Valeria suggests going salsa dancing. «I'll pick you up at ten», she tells Emily. Emily was going to cancel because she was tired, but in the end she gets ready and goes. The place is packed and the atmosphere is great: there's a live band and the dance floor is full. An older man asks her to dance. «Shall we dance?» «I can't dance very well…» «It doesn't matter! I'll teach you.» After three songs Emily is already spinning without stepping on anyone. At two in the morning she realizes she's lost her jacket. She finds it on a chair near the bar. «What a great night!» she says in the taxi. Valeria laughs: «Next time, no jacket».",
+    "highlighted_words": ["Paso por ti", "iba a cancelar", "el ambiente", "chido", "pista de baile", "Bailamos", "se da cuenta de que", "Qué buena noche"]
+  },
+  "arrange": [
+    { "sentence": "Paso por ti a las nueve en punto", "en": "I'll pick you up at nine o'clock sharp." },
+    { "sentence": "Iba a salir cuando empezó a llover", "en": "I was about to go out when it started raining." },
+    { "sentence": "Me di cuenta de que había perdido el celular", "en": "I realized I had lost my phone." },
+    { "sentence": "El ambiente del bar está muy chido", "en": "The vibe at the bar is really cool." },
+    { "sentence": "Llegamos a casa en la madrugada", "en": "We got home in the early hours." },
+    { "sentence": "Esta ronda la pago yo", "en": "This round is on me." }
+  ],
+  "translate": [
+    { "answer": "¿Salimos esta noche?", "en": "Shall we go out tonight?" },
+    { "answer": "Paso por ti", "en": "I will pick you up (tú)", "accept": ["Paso a buscarte", "Te recojo"] },
+    { "answer": "Me da igual", "en": "I don't mind" },
+    { "answer": "¿Bailamos?", "en": "Shall we dance?" },
+    { "answer": "Iba a salir", "en": "I was going to go out" },
+    { "answer": "¡Qué buena noche!", "en": "What a great night!" }
+  ]
+}

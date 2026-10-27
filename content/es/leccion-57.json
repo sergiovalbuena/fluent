@@ -1,0 +1,84 @@
+{
+  "lesson": 57,
+  "slug": "leccion-57",
+  "icon": "💎",
+  "title": { "es": "En la joyería", "en": "At the jewelry store" },
+  "grammar": [
+    { "structure": "ni… ni", "example": "No me gusta ni el oro ni la plata.", "en": "«Ni… ni» = neither… nor. If it goes after the verb, keep «no» before the verb." },
+    { "structure": "ni uno ni otro", "example": "¿El collar o la pulsera? — Ni uno ni otro.", "en": "«Ni uno ni otro» (or «ninguno de los dos») = neither (one)." },
+    { "structure": "con tal de que + subjuntivo", "example": "Puedes venir con tal de que llegues a tiempo.", "en": "«Con tal de que» / «siempre que» (as long as) take the subjunctive." },
+    { "structure": "más … que con sustantivos", "example": "Tiene más anillos que yo.", "en": "With nouns: más + noun + que. Only with numbers use «de»: más de tres anillos." },
+    { "structure": "-ísimo", "example": "Es carísimo. Es bellísima.", "en": "-ísimo intensifies: caro → carísimo; spelling changes: rico → riquísimo." }
+  ],
+  "tips": [
+    { "en": "«Aretes» (Latin America) = «pendientes» (Spain) = «aros» (Argentina) = earrings." },
+    { "en": "Colombia is famous for emeralds (esmeraldas); Taxco in Mexico for silver (plata)." },
+    { "en": "«De oro de 14 / 18 quilates» = 14 / 18 karat gold. Ask for a «certificado» with precious stones." },
+    { "en": "«Grabar» = to engrave: «¿Le podemos grabar las iniciales?»." },
+    { "en": "«Bisutería» = costume jewelry; «joyería» = fine jewelry (and the store)." }
+  ],
+  "vocabulary": [
+    { "word": "la joyería", "en": "the jewelry store" },
+    { "word": "el joyero", "en": "the jeweler" },
+    { "word": "el collar", "en": "the necklace" },
+    { "word": "la pulsera", "en": "the bracelet" },
+    { "word": "los aretes", "en": "the earrings" },
+    { "word": "el oro", "en": "the gold" },
+    { "word": "la plata", "en": "the silver" },
+    { "word": "el diamante", "en": "the diamond" },
+    { "word": "la esmeralda", "en": "the emerald" },
+    { "word": "la perla", "en": "the pearl" },
+    { "word": "el quilate", "en": "the karat" },
+    { "word": "grabar", "en": "to engrave" },
+    { "word": "brillar", "en": "to shine" },
+    { "word": "la bisutería", "en": "costume jewelry" },
+    { "word": "el estuche", "en": "the jewelry case" },
+    { "word": "carísimo", "en": "very expensive" }
+  ],
+  "phrases": [
+    { "phrase": "Estamos buscando argollas de matrimonio.", "en": "We're looking for wedding bands." },
+    { "phrase": "¿Son de oro de dieciocho quilates?", "en": "Are they 18-karat gold?" },
+    { "phrase": "¿Les podemos grabar las iniciales?", "en": "Can we engrave your initials on them?" },
+    { "phrase": "No me gusta ni el oro ni la plata.", "en": "I like neither gold nor silver." },
+    { "phrase": "Ni uno ni otro.", "en": "Neither one." },
+    { "phrase": "Es carísimo.", "en": "It's very expensive." },
+    { "phrase": "Tiene más aretes que yo.", "en": "She has more earrings than me." },
+    { "phrase": "Puedes llevártelo con tal de que lo cuides.", "en": "You can take it as long as you look after it." },
+    { "phrase": "Es necesario que sea de oro.", "en": "It needs to be gold." },
+    { "phrase": "Límpialos para que brillen.", "en": "Clean them so they shine." },
+    { "phrase": "¿Me lo envuelve en un estuche?", "en": "Could you put it in a case?" },
+    { "phrase": "Es una esmeralda colombiana.", "en": "It's a Colombian emerald." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «No me gusta ___ el oro ___ la plata.»", "en": "Complete: «No me gusta ___ el oro ___ la plata.»" }, "options": ["ni … ni", "o … o", "y … y", "no … no"], "correct": 0, "explanation": { "en": "«Ni… ni» = neither… nor." } },
+    { "question": { "es": "«¿Quieres el collar o la pulsera?» No quieres ninguno. ¿Qué respondes?", "en": "«Do you want the necklace or the bracelet?» You want neither. What do you answer?" }, "options": ["Ni uno ni otro.", "Uno y otro.", "Uno u otro.", "Los dos."], "correct": 0, "explanation": { "en": "«Ni uno ni otro» = neither one." } },
+    { "question": { "es": "Completa: «Puedes venir con tal de que ___ a tiempo.»", "en": "Complete: «Puedes venir con tal de que ___ a tiempo.»" }, "options": ["llegues", "llegas", "llegarás", "llegabas"], "correct": 0, "explanation": { "en": "«Con tal de que» + subjunctive." } },
+    { "question": { "es": "Completa: «Es necesario que el anillo ___ de oro.»", "en": "Complete: «Es necesario que el anillo ___ de oro.»" }, "options": ["sea", "es", "será", "sería"], "correct": 0, "explanation": { "en": "«Es necesario que» + subjunctive: sea." } },
+    { "question": { "es": "Completa: «Ella tiene ___ aretes que yo.»", "en": "Complete: «Ella tiene ___ aretes que yo.»" }, "options": ["más", "más de", "mucho de", "tantos de"], "correct": 0, "explanation": { "en": "Más + noun + que. («Más de» only before numbers.)" } },
+    { "question": { "es": "Compras dos anillos de oro para tu boda. ¿Qué le pides al joyero?", "en": "You're buying two gold rings for your wedding. What do you ask the jeweler for?" }, "options": ["argollas de matrimonio", "aretes de perla", "un collar de plata", "bisutería"], "correct": 0, "explanation": { "en": "«Argollas» (or «alianzas») = wedding bands." } },
+    { "question": { "es": "Completa: «Límpialos para que ___.»", "en": "Complete: «Límpialos para que ___.»" }, "options": ["brillen", "brillan", "brillarán", "brillaban"], "correct": 0, "explanation": { "en": "«Para que» + subjunctive: brillen." } },
+    { "question": { "es": "Un collar cuesta diez mil dólares. ¿Qué dices?", "en": "A necklace costs ten thousand dollars. What do you say?" }, "options": ["¡Es carísimo!", "¡Es baratísimo!", "¡Es bisutería!", "¡Es plata!"], "correct": 0, "explanation": { "en": "Caro → carísimo = very expensive." } }
+  ],
+  "story": {
+    "title": "Las argollas",
+    "text": "Emily y Nicolás van a una joyería en el centro de Bogotá. «Estamos buscando argollas de matrimonio», dice Nicolás. El joyero, don Jaime, les muestra muchas. «Estas son de oro de dieciocho quilates. Estas otras son de oro blanco.» Emily se prueba una con un diamante pequeño. «Es bellísima, pero carísima.» «¿Y estas de plata?», pregunta Nicolás. «Ni unas ni otras», dice Emily, riendo. «Quiero algo sencillo.» Al final eligen unas argollas de oro, lisas y elegantes. «¿Les podemos grabar las iniciales y la fecha?», pregunta don Jaime. «¡Sí, por favor!» «Estarán listas el viernes, con tal de que me dejen un anticipo.» Antes de salir, Emily mira las esmeraldas: «Algún día…», suspira.",
+    "en": "Emily and Nicolás go to a jewelry store in downtown Bogotá. «We're looking for wedding bands», says Nicolás. The jeweler, Don Jaime, shows them many. «These are 18-karat gold. These others are white gold.» Emily tries on one with a small diamond. «It's gorgeous, but very expensive.» «And these silver ones?» asks Nicolás. «Neither», says Emily, laughing. «I want something simple.» In the end they choose plain, elegant gold bands. «Can we engrave your initials and the date?» asks Don Jaime. «Yes, please!» «They'll be ready on Friday, as long as you leave me a deposit.» Before leaving, Emily looks at the emeralds: «Someday…» she sighs.",
+    "highlighted_words": ["joyería", "argollas", "quilates", "diamante", "carísima", "Ni unas ni otras", "grabar", "con tal de que", "esmeraldas"]
+  },
+  "arrange": [
+    { "sentence": "Estamos buscando argollas de matrimonio", "en": "We're looking for wedding bands." },
+    { "sentence": "No me gusta ni el oro ni la plata", "en": "I like neither gold nor silver." },
+    { "sentence": "¿Les podemos grabar las iniciales?", "en": "Can we engrave your initials?" },
+    { "sentence": "Estarán listas el viernes", "en": "They'll be ready on Friday." },
+    { "sentence": "Ella tiene más pulseras que yo", "en": "She has more bracelets than me." },
+    { "sentence": "Es una esmeralda colombiana bellísima", "en": "It's a gorgeous Colombian emerald." }
+  ],
+  "translate": [
+    { "answer": "Es carísimo", "en": "It is very expensive" },
+    { "answer": "Ni uno ni otro", "en": "Neither one", "accept": ["Ninguno de los dos"] },
+    { "answer": "¿Es de oro?", "en": "Is it gold?" },
+    { "answer": "Me gustan los aretes", "en": "I like the earrings", "accept": ["Me gustan los pendientes"] },
+    { "answer": "Es de plata", "en": "It is silver" },
+    { "answer": "Quiero algo sencillo", "en": "I want something simple" }
+  ]
+}

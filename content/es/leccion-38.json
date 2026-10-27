@@ -1,0 +1,84 @@
+{
+  "lesson": 38,
+  "slug": "leccion-38",
+  "icon": "🍲",
+  "title": { "es": "En el restaurante", "en": "At the restaurant" },
+  "grammar": [
+    { "structure": "pluscuamperfecto: habían comido", "example": "Cuando llegué, ya habían comido.", "en": "Past perfect: había / habían + participle = had done (before another past moment)." },
+    { "structure": "si + pluscuamperfecto de subjuntivo → condicional perfecto", "example": "Si hubieras reservado, habríamos tenido mesa.", "en": "Unreal past: si hubiera / hubieras + participle, habría + participle." },
+    { "structure": "pronombres dobles: me lo trae", "example": "¿La cuenta? ¿Me la trae, por favor?", "en": "Indirect + direct pronoun together: me lo, te la, se los…" },
+    { "structure": "para mí…", "example": "Para mí, la sopa del día.", "en": "Ordering: «para mí» (for me) + dish." },
+    { "structure": "aunque + subjuntivo (pasado)", "example": "Aunque nos hubieran mirado mal, nos quedamos.", "en": "Concession with a hypothetical past: aunque + pluperfect subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Menú del día» or «comida corrida» (Mexico) = set lunch menu, usually soup, main dish, drink and dessert at a fixed price." },
+    { "en": "Steak doneness: «término rojo / poco cocido» (rare), «término medio» (medium), «tres cuartos», «bien cocido» (well done)." },
+    { "en": "The bill doesn't come until you ask: «¿Me trae la cuenta, por favor?» or make a «writing» gesture in the air." },
+    { "en": "Tipping: around 10–15% in Mexico; in some countries (Colombia, Peru) a «servicio» is suggested on the bill." },
+    { "en": "«Mesero» (Mexico, Colombia), «mozo» (Argentina), «camarero» (Spain), «garzón» (Chile) = waiter." }
+  ],
+  "vocabulary": [
+    { "word": "el restaurante", "en": "the restaurant" },
+    { "word": "la mesa para dos", "en": "the table for two" },
+    { "word": "la carta", "en": "the menu (full list)" },
+    { "word": "el menú del día", "en": "the set menu" },
+    { "word": "el aperitivo", "en": "the appetizer" },
+    { "word": "el plato fuerte", "en": "the main course" },
+    { "word": "el postre", "en": "the dessert" },
+    { "word": "la bebida", "en": "the drink" },
+    { "word": "la propina", "en": "the tip" },
+    { "word": "el término medio", "en": "medium (steak)" },
+    { "word": "bien cocido", "en": "well done" },
+    { "word": "picante", "en": "spicy" },
+    { "word": "pedir", "en": "to order" },
+    { "word": "recomendar", "en": "to recommend" },
+    { "word": "la servilleta", "en": "the napkin" },
+    { "word": "el vaso", "en": "the glass" }
+  ],
+  "phrases": [
+    { "phrase": "Una mesa para dos, por favor.", "en": "A table for two, please." },
+    { "phrase": "¿Me trae la carta, por favor?", "en": "Could you bring me the menu, please?" },
+    { "phrase": "¿Qué me recomienda?", "en": "What do you recommend?" },
+    { "phrase": "Para mí, el menú del día.", "en": "For me, the set menu." },
+    { "phrase": "La carne, término medio, por favor.", "en": "The steak, medium, please." },
+    { "phrase": "¿Es muy picante?", "en": "Is it very spicy?" },
+    { "phrase": "Sin cebolla, por favor.", "en": "No onion, please." },
+    { "phrase": "¿Me trae la cuenta?", "en": "Could you bring me the bill?" },
+    { "phrase": "¿Está incluida la propina?", "en": "Is the tip included?" },
+    { "phrase": "Cuando llegué, ya habían pedido.", "en": "When I arrived, they had already ordered." },
+    { "phrase": "Si hubiéramos reservado, habríamos tenido mesa.", "en": "If we had booked, we'd have had a table." },
+    { "phrase": "Todo estuvo delicioso.", "en": "Everything was delicious." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Cuando llegué, ellos ya ___ comido.»", "en": "Complete: «Cuando llegué, ellos ya ___ comido.»" }, "options": ["habían", "han", "habrán", "habrían"], "correct": 0, "explanation": { "en": "An action before another past action: pluperfect (habían comido)." } },
+    { "question": { "es": "Completa: «Si hubieras reservado, ___ mesa.»", "en": "Complete: «Si hubieras reservado, ___ mesa.»" }, "options": ["habríamos tenido", "habíamos tenido", "tendremos", "tendríamos ayer"], "correct": 0, "explanation": { "en": "Unreal past: si hubieras… → habríamos + participle." } },
+    { "question": { "es": "¿Qué frase es correcta?", "en": "Which sentence is correct?" }, "options": ["Si lo hubiera sabido, habría venido.", "Si lo habría sabido, habría venido.", "Si lo sabía, habría venido.", "Si lo hubiera sabido, vendré."], "correct": 0, "explanation": { "en": "Never «si habría»: si + hubiera, then habría." } },
+    { "question": { "es": "Quieres la carne ni cruda ni muy cocida. ¿Cómo la pides?", "en": "You want your steak neither rare nor well done. How do you order it?" }, "options": ["término medio", "bien cocida", "término rojo", "muy picante"], "correct": 0, "explanation": { "en": "«Término medio» = medium." } },
+    { "question": { "es": "En México, ¿cómo se llama el menú económico con sopa, plato fuerte y postre?", "en": "In Mexico, what's the cheap set menu with soup, main and dessert called?" }, "options": ["la comida corrida", "la carta", "la propina", "la cuenta"], "correct": 0, "explanation": { "en": "«Comida corrida» or «menú del día»." } },
+    { "question": { "es": "Completa: «Aunque el mesero nos ___ mal, nos quedamos.» (mirar, pasado hipotético)", "en": "Complete: «Aunque el mesero nos ___ mal, nos quedamos.» (mirar, hypothetical past)" }, "options": ["hubiera mirado", "ha mirado", "mira", "mirará"], "correct": 0, "explanation": { "en": "Concession with a hypothetical past: hubiera mirado." } },
+    { "question": { "es": "Ya terminaste de comer. ¿Cómo pides la cuenta, sin repetir «la cuenta»?", "en": "You've finished eating. How do you ask for the bill without repeating «la cuenta»?" }, "options": ["¿Me la trae, por favor?", "¿Me lo trae, por favor?", "¿La me trae, por favor?", "¿Me trae la la, por favor?"], "correct": 0, "explanation": { "en": "Indirect «me» + direct «la» (la cuenta): me la trae." } },
+    { "question": { "es": "Estilo indirecto: «¿Tienen reserva?» → Nos preguntó si ___ reserva.", "en": "Reported question: «¿Tienen reserva?» → Nos preguntó si ___ reserva." }, "options": ["teníamos", "tenemos", "tendríamos", "tuviéramos"], "correct": 0, "explanation": { "en": "In past reported speech, present becomes imperfect: teníamos." } }
+  ],
+  "story": {
+    "title": "Cena en Polanco",
+    "text": "Para celebrar su cumpleaños, Emily invita a sus amigos a un restaurante elegante en Polanco. Llega tarde por el tráfico y, cuando llega, sus amigos ya habían pedido las bebidas. El mesero les trae la carta. «¿Qué nos recomienda?», pregunta Diego. «El pescado a la talla está buenísimo.» Emily pide un filete. «¿Término medio?» «Sí, por favor, y sin cebolla.» Valeria comenta: «Si hubiéramos reservado antes, nos habrían dado la mesa de la terraza». La comida está deliciosa. Al final, el mesero trae un pastel con una vela y todos cantan «Las mañanitas». Cuando Emily pide la cuenta, el mesero sonríe: «Sus amigos ya la pagaron».",
+    "en": "To celebrate her birthday, Emily invites her friends to an elegant restaurant in Polanco. She arrives late because of traffic and, when she gets there, her friends had already ordered drinks. The waiter brings them the menu. «What do you recommend?» asks Diego. «The grilled fish is excellent.» Emily orders a steak. «Medium?» «Yes, please, and no onion.» Valeria says: «If we had booked earlier, they would have given us the terrace table». The food is delicious. At the end, the waiter brings a cake with a candle and everyone sings «Las mañanitas». When Emily asks for the bill, the waiter smiles: «Your friends already paid it».",
+    "highlighted_words": ["habían pedido", "la carta", "Qué nos recomienda", "Término medio", "sin cebolla", "Si hubiéramos reservado", "la cuenta"]
+  },
+  "arrange": [
+    { "sentence": "Una mesa para cuatro, por favor", "en": "A table for four, please." },
+    { "sentence": "¿Qué me recomienda de postre?", "en": "What do you recommend for dessert?" },
+    { "sentence": "Para mí, el pescado sin cebolla", "en": "For me, the fish without onion." },
+    { "sentence": "Cuando llegué ya habían pedido", "en": "When I arrived they had already ordered." },
+    { "sentence": "¿Me trae la cuenta, por favor?", "en": "Could you bring me the bill, please?" },
+    { "sentence": "Si hubiéramos reservado, tendríamos mesa", "en": "If we had booked, we'd have a table." }
+  ],
+  "translate": [
+    { "answer": "Una mesa para dos", "en": "A table for two" },
+    { "answer": "¿Qué me recomienda?", "en": "What do you recommend? (usted)" },
+    { "answer": "La cuenta, por favor", "en": "The bill, please", "accept": ["¿Me trae la cuenta?", "¿Me trae la cuenta, por favor?"] },
+    { "answer": "Sin cebolla, por favor", "en": "Without onion, please" },
+    { "answer": "Todo estuvo delicioso", "en": "Everything was delicious" },
+    { "answer": "Para mí, el pollo", "en": "For me, the chicken" }
+  ]
+}

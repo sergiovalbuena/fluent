@@ -1,0 +1,84 @@
+{
+  "lesson": 48,
+  "slug": "leccion-48",
+  "icon": "🏦",
+  "title": { "es": "En el banco", "en": "At the bank" },
+  "grammar": [
+    { "structure": "cuando + subjuntivo (futuro)", "example": "Cuando vayas al banco, pide un estado de cuenta.", "en": "Future actions after «cuando» take the subjunctive: cuando vayas, cuando tenga." },
+    { "structure": "cuando tenga dinero…", "example": "Cuando tenga dinero, compraré una casa.", "en": "English «when I have» = Spanish «cuando tenga» (never «cuando tendré»)." },
+    { "structure": "después de que + subjuntivo", "example": "Podrá elegir su NIP después de que reciba la tarjeta.", "en": "For future events, «después de que» also takes the subjunctive." },
+    { "structure": "antes de que + pretérito perfecto de subjuntivo", "example": "Llámalo antes de que se haya gastado todo.", "en": "«Haya» + participle = present perfect subjunctive." },
+    { "structure": "para que + subjuntivo", "example": "Necesito dinero para que me paguen el depósito.", "en": "«Para que» + subjunctive (purpose)." }
+  ],
+  "tips": [
+    { "en": "«Cajero automático» = ATM. «Sacar / retirar dinero» = to withdraw money." },
+    { "en": "«NIP» (Mexico) or «PIN» / «clave» = PIN number. Never tell anyone your «clave»." },
+    { "en": "«Transferencia» = bank transfer. In Mexico «SPEI», in Colombia «Nequi» or «Daviplata», in Brazil «Pix»… instant transfers are very common." },
+    { "en": "«Estar sobregirado» (Latin America) or «estar en números rojos» = to be overdrawn." },
+    { "en": "«Cuenta de ahorros» = savings account; «cuenta corriente» = checking account." }
+  ],
+  "vocabulary": [
+    { "word": "la sucursal", "en": "the branch (bank, store)" },
+    { "word": "la cuenta de ahorros", "en": "the savings account" },
+    { "word": "abrir una cuenta", "en": "to open an account" },
+    { "word": "el cajero automático", "en": "the ATM" },
+    { "word": "sacar dinero", "en": "to withdraw money" },
+    { "word": "depositar", "en": "to deposit" },
+    { "word": "la transferencia", "en": "the bank transfer" },
+    { "word": "el estado de cuenta", "en": "the bank statement" },
+    { "word": "la tarjeta de débito", "en": "the debit card" },
+    { "word": "la tarjeta de crédito", "en": "the credit card" },
+    { "word": "el saldo", "en": "the balance" },
+    { "word": "la comisión", "en": "the fee" },
+    { "word": "el préstamo", "en": "the loan" },
+    { "word": "el NIP", "en": "the PIN" },
+    { "word": "sobregirado", "en": "overdrawn" },
+    { "word": "el efectivo", "en": "the cash" }
+  ],
+  "phrases": [
+    { "phrase": "Quisiera abrir una cuenta.", "en": "I'd like to open an account." },
+    { "phrase": "¿Qué documentos necesito?", "en": "What documents do I need?" },
+    { "phrase": "¿Dónde hay un cajero automático?", "en": "Where is there an ATM?" },
+    { "phrase": "Quiero sacar dinero.", "en": "I want to withdraw money." },
+    { "phrase": "¿Cuál es mi saldo?", "en": "What's my balance?" },
+    { "phrase": "¿Cobran comisión?", "en": "Do you charge a fee?" },
+    { "phrase": "Te hago una transferencia.", "en": "I'll send you a bank transfer." },
+    { "phrase": "Estoy sobregirada.", "en": "I'm overdrawn." },
+    { "phrase": "¿Aceptan tarjeta o solo efectivo?", "en": "Do you take cards or only cash?" },
+    { "phrase": "Cuando tenga dinero, te pago.", "en": "When I have money, I'll pay you back." },
+    { "phrase": "El cajero se tragó mi tarjeta.", "en": "The ATM swallowed my card." },
+    { "phrase": "Quisiera pedir un préstamo.", "en": "I'd like to apply for a loan." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Cuando ___ al banco, pide un estado de cuenta.»", "en": "Complete: «Cuando ___ al banco, pide un estado de cuenta.»" }, "options": ["vayas", "vas", "irás", "irías"], "correct": 0, "explanation": { "en": "Future action after «cuando»: subjunctive (vayas)." } },
+    { "question": { "es": "En inglés dices «When I have money». ¿Cómo se dice en español?", "en": "In English you say «When I have money». How do you say it in Spanish?" }, "options": ["Cuando tenga dinero", "Cuando tendré dinero", "Cuando tengo dinero mañana", "Cuando tendría dinero"], "correct": 0, "explanation": { "en": "«Cuando» + subjunctive for the future: cuando tenga." } },
+    { "question": { "es": "Completa: «Podrá elegir su NIP después de que ___ la tarjeta.»", "en": "Complete: «Podrá elegir su NIP después de que ___ la tarjeta.»" }, "options": ["reciba", "recibe", "recibirá", "recibía"], "correct": 0, "explanation": { "en": "Future event after «después de que»: subjunctive." } },
+    { "question": { "es": "Gastaste más dinero del que tenías y tu cuenta está en negativo. ¿Qué dices?", "en": "You spent more than you had and your account is negative. What do you say?" }, "options": ["Estoy sobregirada.", "Estoy depositada.", "Estoy en saldo.", "Estoy de comisión."], "correct": 0, "explanation": { "en": "«Estar sobregirado» = to be overdrawn." } },
+    { "question": { "es": "Son las doce de la noche y necesitas efectivo. ¿Adónde vas?", "en": "It's midnight and you need cash. Where do you go?" }, "options": ["al cajero automático", "a la ventanilla del banco", "al estado de cuenta", "al préstamo"], "correct": 0, "explanation": { "en": "The ATM works 24/7." } },
+    { "question": { "es": "Completa: «Llámalo antes de que lo ___ gastado todo.»", "en": "Complete: «Llámalo antes de que lo ___ gastado todo.»" }, "options": ["haya", "ha", "había", "habrá"], "correct": 0, "explanation": { "en": "Present perfect subjunctive: haya gastado." } },
+    { "question": { "es": "Mandas 200,000 pesos de tu cuenta a la de tu hermana. ¿Qué haces?", "en": "You send 200,000 pesos from your account to your sister's. What are you doing?" }, "options": ["una transferencia", "un retiro", "un préstamo", "un estado de cuenta"], "correct": 0, "explanation": { "en": "«Transferencia» = bank transfer." } },
+    { "question": { "es": "Completa: «Necesito dinero para que me ___ el depósito del departamento.» (devolver, ellos)", "en": "Complete: «Necesito dinero para que me ___ el depósito del departamento.» (devolver, ellos)" }, "options": ["devuelvan", "devuelven", "devolverán", "devolvían"], "correct": 0, "explanation": { "en": "«Para que» + subjunctive: devuelvan." } }
+  ],
+  "story": {
+    "title": "Una cuenta en Bogotá",
+    "text": "Emily y Nicolás ya viven en Bogotá. Lo primero que necesitan es abrir una cuenta en un banco colombiano. «¿Qué documentos necesito?», pregunta Emily en la ventanilla. «Su pasaporte, una dirección aquí y un número de celular colombiano.» Mientras esperan, el cajero automático de la entrada se traga la tarjeta de Nicolás. «¡No puede ser!», dice. El empleado lo tranquiliza: «Cuando el técnico abra el cajero, se la devolvemos». Media hora después, Emily ya tiene su cuenta de ahorros y una tarjeta de débito. «Podrá elegir su clave después de que reciba un mensaje en el celular», le explica la asesora. Al salir, Nicolás sonríe: «Cuando tengamos casa, invitamos a la asesora a cenar».",
+    "en": "Emily and Nicolás now live in Bogotá. The first thing they need is to open an account at a Colombian bank. «What documents do I need?» Emily asks at the counter. «Your passport, an address here and a Colombian cell number.» While they wait, the ATM at the entrance swallows Nicolás's card. «It can't be!» he says. The employee reassures him: «When the technician opens the ATM, we'll give it back to you». Half an hour later Emily has her savings account and a debit card. «You can choose your PIN after you receive a text on your phone», the adviser explains. As they leave, Nicolás smiles: «When we have a house, we'll invite the adviser to dinner».",
+    "highlighted_words": ["abrir una cuenta", "Qué documentos necesito", "cajero automático", "Cuando el técnico abra", "cuenta de ahorros", "después de que reciba", "Cuando tengamos casa"]
+  },
+  "arrange": [
+    { "sentence": "Quisiera abrir una cuenta de ahorros", "en": "I'd like to open a savings account." },
+    { "sentence": "¿Dónde hay un cajero automático por aquí?", "en": "Where is there an ATM around here?" },
+    { "sentence": "Cuando tenga dinero, te pago", "en": "When I have money, I'll pay you back." },
+    { "sentence": "Te hago la transferencia esta tarde", "en": "I'll send you the transfer this afternoon." },
+    { "sentence": "El cajero se tragó mi tarjeta", "en": "The ATM swallowed my card." },
+    { "sentence": "¿Aceptan tarjeta o solo efectivo?", "en": "Do you take cards or only cash?" }
+  ],
+  "translate": [
+    { "answer": "Quisiera abrir una cuenta", "en": "I would like to open an account" },
+    { "answer": "Quiero sacar dinero", "en": "I want to withdraw money", "accept": ["Quiero retirar dinero"] },
+    { "answer": "¿Cuál es mi saldo?", "en": "What is my balance?" },
+    { "answer": "Cuando tenga dinero", "en": "When I have money" },
+    { "answer": "¿Cobran comisión?", "en": "Do you charge a fee? (ustedes)" },
+    { "answer": "Solo efectivo", "en": "Cash only" }
+  ]
+}

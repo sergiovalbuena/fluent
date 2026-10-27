@@ -1,0 +1,84 @@
+{
+  "lesson": 41,
+  "slug": "leccion-41",
+  "icon": "🔑",
+  "title": { "es": "Buscar dónde vivir", "en": "Finding a place to live" },
+  "grammar": [
+    { "structure": "busco un lugar que + subjuntivo", "example": "Busco un departamento que tenga balcón.", "en": "When the thing you want may not exist, the description uses the subjunctive: que tenga, que esté." },
+    { "structure": "hay uno que + indicativo", "example": "Hay uno que tiene balcón.", "en": "Once it exists and you know it, use the indicative: que tiene." },
+    { "structure": "¿verdad? / ¿no?", "example": "Te mudaste, ¿verdad?", "en": "Tag questions to confirm: ¿verdad?, ¿no?" },
+    { "structure": "desde hace + presente", "example": "Busca departamento desde hace un mes.", "en": "Ongoing search: present + desde hace." },
+    { "structure": "me temo que…", "example": "Me temo que ya está rentado.", "en": "«Me temo que» = I'm afraid that (bad news, polite)." }
+  ],
+  "tips": [
+    { "en": "«Renta» (Mexico) = «alquiler» (Spain, South America) = rent. «Rentar» / «alquilar» = to rent." },
+    { "en": "«Servicios» = utilities (water, electricity, gas). «Mantenimiento» (Mexico) = building fees." },
+    { "en": "«Aval» or «fiador» = guarantor. Many landlords in Mexico ask for one, or for several months' deposit." },
+    { "en": "«Amueblado» = furnished. «Departamento» (Mexico), «apartamento» (Colombia), «piso» (Spain) = apartment." },
+    { "en": "«Casero» (Spain) or «arrendador» = landlord; «inquilino» = tenant." }
+  ],
+  "vocabulary": [
+    { "word": "la renta", "en": "the rent" },
+    { "word": "el depósito en garantía", "en": "the security deposit" },
+    { "word": "los servicios", "en": "the utilities" },
+    { "word": "el contrato", "en": "the lease, the contract" },
+    { "word": "el inquilino", "en": "the tenant" },
+    { "word": "el dueño", "en": "the owner, the landlord" },
+    { "word": "el aval", "en": "the guarantor" },
+    { "word": "amueblado", "en": "furnished" },
+    { "word": "el balcón", "en": "the balcony" },
+    { "word": "el estacionamiento", "en": "the parking space" },
+    { "word": "el anuncio", "en": "the ad, the listing" },
+    { "word": "mudarse", "en": "to move (house)" },
+    { "word": "la mudanza", "en": "the move" },
+    { "word": "luminoso", "en": "bright, full of light" },
+    { "word": "exigente", "en": "demanding, picky" },
+    { "word": "disponible", "en": "available" }
+  ],
+  "phrases": [
+    { "phrase": "Busco un departamento que tenga dos recámaras.", "en": "I'm looking for an apartment with two bedrooms." },
+    { "phrase": "¿Cuánto es la renta?", "en": "How much is the rent?" },
+    { "phrase": "¿Los servicios están incluidos?", "en": "Are utilities included?" },
+    { "phrase": "¿Está amueblado?", "en": "Is it furnished?" },
+    { "phrase": "¿Cuándo está disponible?", "en": "When is it available?" },
+    { "phrase": "¿Puedo verlo?", "en": "Can I see it?" },
+    { "phrase": "Hay tres baños.", "en": "There are three bathrooms." },
+    { "phrase": "Me temo que ya está rentado.", "en": "I'm afraid it's already rented." },
+    { "phrase": "Te mudaste, ¿verdad?", "en": "You moved, didn't you?" },
+    { "phrase": "Busco desde hace un mes.", "en": "I've been looking for a month." },
+    { "phrase": "Eres más exigente que yo.", "en": "You're pickier than me." },
+    { "phrase": "Firmamos el contrato mañana.", "en": "We sign the lease tomorrow." }
+  ],
+  "qa": [
+    { "question": { "es": "Cada mes pagas 9,000 pesos al dueño por vivir en el departamento. ¿Cómo se llama ese dinero?", "en": "Every month you pay 9,000 pesos to the owner to live in the apartment. What is this money called?" }, "options": ["la renta", "el depósito", "el sueldo", "la propina"], "correct": 0, "explanation": { "en": "«La renta» (Mexico) = «el alquiler» = the rent." } },
+    { "question": { "es": "En el anuncio, el agua y la luz ya están en el precio. ¿Qué dice?", "en": "In the listing, water and electricity are in the price. What does it say?" }, "options": ["Servicios incluidos", "Servicios aparte", "Sin servicios", "Servicios por pagar"], "correct": 0, "explanation": { "en": "«Servicios incluidos» = utilities included." } },
+    { "question": { "es": "¿Qué pregunta de confirmación es correcta?", "en": "Which tag question is correct?" }, "options": ["Te mudaste, ¿verdad?", "Te mudaste, ¿no es verdad no?", "Te mudaste, ¿sí verdad no?", "Te mudaste, ¿verdad sí?"], "correct": 0, "explanation": { "en": "«¿Verdad?» or «¿no?» at the end." } },
+    { "question": { "es": "Completa: «Ella busca departamento ___ un mes.» (y sigue buscando)", "en": "Complete: «Ella busca departamento ___ un mes.» (and is still looking)" }, "options": ["desde hace", "durante", "hace", "en"], "correct": 0, "explanation": { "en": "Present + desde hace = has been doing for." } },
+    { "question": { "es": "Completa: «Busco un departamento que ___ balcón.»", "en": "Complete: «Busco un departamento que ___ balcón.»" }, "options": ["tenga", "tiene", "tendrá", "tenía"], "correct": 0, "explanation": { "en": "You don't know if it exists: subjunctive (tenga)." } },
+    { "question": { "es": "¿Quién paga la renta?", "en": "Who pays the rent?" }, "options": ["el inquilino", "el dueño", "el aval", "el agente"], "correct": 0, "explanation": { "en": "«El inquilino» = the tenant." } },
+    { "question": { "es": "«¿El departamento ya está rentado?» Por desgracia, sí. ¿Qué respondes con cortesía?", "en": "«Is the apartment already rented?» Unfortunately, yes. What do you answer politely?" }, "options": ["Me temo que sí.", "Me temo que no.", "Temo de sí.", "Me da igual que sí."], "correct": 0, "explanation": { "en": "«Me temo que sí» = I'm afraid so." } },
+    { "question": { "es": "Completa: «Eres más exigente ___ yo.»", "en": "Complete: «Eres más exigente ___ yo.»" }, "options": ["que", "de", "como", "a"], "correct": 0, "explanation": { "en": "Más + adjective + que." } }
+  ],
+  "story": {
+    "title": "Un departamento con balcón",
+    "text": "Emily quiere un departamento más grande para ella y Taco, su perro. Desde hace un mes revisa anuncios todos los días. «Busco un departamento que tenga balcón, que esté cerca del metro y que acepte mascotas», le explica a Diego. «Eres muy exigente», dice él. Un sábado ve un anuncio perfecto en la colonia Roma: dos recámaras, luminoso, amueblado y con servicios incluidos. Llama de inmediato. «¿Todavía está disponible?» «Sí. ¿Quiere verlo hoy?» El departamento es precioso, pero el dueño pide un aval. «Me temo que no tengo aval aquí», dice Emily. «Entonces pague tres meses de depósito», responde el dueño. Emily acepta. El lunes firman el contrato.",
+    "en": "Emily wants a bigger apartment for herself and Taco, her dog. For a month she has checked listings every day. «I'm looking for an apartment that has a balcony, that's close to the subway and that accepts pets», she explains to Diego. «You're very picky», he says. One Saturday she sees a perfect listing in the Roma neighborhood: two bedrooms, bright, furnished and utilities included. She calls right away. «Is it still available?» «Yes. Do you want to see it today?» The apartment is gorgeous, but the owner asks for a guarantor. «I'm afraid I don't have a guarantor here», says Emily. «Then pay three months' deposit», the owner answers. Emily agrees. On Monday they sign the lease.",
+    "highlighted_words": ["Desde hace un mes", "que tenga balcón", "exigente", "amueblado", "servicios incluidos", "disponible", "aval", "Me temo que"]
+  },
+  "arrange": [
+    { "sentence": "Busco un departamento que tenga balcón", "en": "I'm looking for an apartment with a balcony." },
+    { "sentence": "¿Los servicios están incluidos en la renta?", "en": "Are the utilities included in the rent?" },
+    { "sentence": "¿Cuándo está disponible el departamento?", "en": "When is the apartment available?" },
+    { "sentence": "Me temo que ya está rentado", "en": "I'm afraid it's already rented." },
+    { "sentence": "Buscamos casa desde hace dos meses", "en": "We've been looking for a house for two months." },
+    { "sentence": "Firmamos el contrato el lunes", "en": "We sign the lease on Monday." }
+  ],
+  "translate": [
+    { "answer": "¿Cuánto es la renta?", "en": "How much is the rent?", "accept": ["¿Cuánto es el alquiler?", "¿Cuánto cuesta la renta?"] },
+    { "answer": "¿Está amueblado?", "en": "Is it furnished?" },
+    { "answer": "¿Puedo verlo?", "en": "Can I see it?" },
+    { "answer": "Me voy a mudar", "en": "I am going to move", "accept": ["Voy a mudarme"] },
+    { "answer": "Busco un departamento", "en": "I am looking for an apartment", "accept": ["Busco un apartamento", "Estoy buscando un departamento"] },
+    { "answer": "Me temo que sí", "en": "I am afraid so" }
+  ]
+}

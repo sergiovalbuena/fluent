@@ -1,0 +1,84 @@
+{
+  "lesson": 55,
+  "slug": "leccion-55",
+  "icon": "🏬",
+  "title": { "es": "En el centro comercial", "en": "At the mall" },
+  "grammar": [
+    { "structure": "adverbios en -mente", "example": "rápido → rápidamente · feliz → felizmente", "en": "Add -mente to the feminine form of the adjective: lenta → lentamente. Accents stay: rápidamente." },
+    { "structure": "posición de los adverbios", "example": "Siempre compro aquí. He comprado aquí muchas veces.", "en": "Frequency adverbs usually go before the verb; with «haber», never between «he» and the participle." },
+    { "structure": "uno / una (sustituto)", "example": "¿Camisas? Escoge una.", "en": "«Uno / una» replaces a noun already mentioned: choose one." },
+    { "structure": "sin que + subjuntivo", "example": "Salió sin que nadie lo viera.", "en": "«Sin que» (without someone doing something) always takes the subjunctive." },
+    { "structure": "menos / más … que", "example": "Estas sandalias son menos pesadas que las tuyas.", "en": "Comparisons: menos + adjective + que." }
+  ],
+  "tips": [
+    { "en": "Malls are called «centro comercial» everywhere, «plaza comercial» or simply «plaza» in Mexico, and «el mall» in parts of South America." },
+    { "en": "«Escaleras eléctricas» (Latin America) = «escaleras mecánicas» (Spain) = escalator." },
+    { "en": "«Patio de comidas» or «zona de comida» = food court." },
+    { "en": "«Hacer una devolución» = to return an item; keep your «ticket» or «factura»." },
+    { "en": "Black Friday has local versions: «El Buen Fin» (Mexico), «CyberLunes» (Colombia)." }
+  ],
+  "vocabulary": [
+    { "word": "la plaza comercial", "en": "the shopping center (Mexico)" },
+    { "word": "las escaleras eléctricas", "en": "the escalator" },
+    { "word": "el patio de comidas", "en": "the food court" },
+    { "word": "la vitrina", "en": "the shop window" },
+    { "word": "la marca", "en": "the brand" },
+    { "word": "la devolución", "en": "the return, the refund" },
+    { "word": "el guardia de seguridad", "en": "the security guard" },
+    { "word": "el robo en tiendas", "en": "shoplifting" },
+    { "word": "la tienda departamental", "en": "the department store" },
+    { "word": "el piso de arriba", "en": "the upper floor" },
+    { "word": "pesado", "en": "heavy" },
+    { "word": "ligero", "en": "light (weight)" },
+    { "word": "rápidamente", "en": "quickly" },
+    { "word": "recientemente", "en": "recently" },
+    { "word": "felizmente", "en": "happily" },
+    { "word": "escoger", "en": "to choose" }
+  ],
+  "phrases": [
+    { "phrase": "¿En qué piso está la tienda de deportes?", "en": "Which floor is the sports store on?" },
+    { "phrase": "Suba por las escaleras eléctricas.", "en": "Go up the escalator." },
+    { "phrase": "Comemos en el patio de comidas.", "en": "We'll eat at the food court." },
+    { "phrase": "¿Camisas? Escoge una.", "en": "Shirts? Pick one." },
+    { "phrase": "Quisiera hacer una devolución.", "en": "I'd like to make a return." },
+    { "phrase": "Siempre compro en esta tienda.", "en": "I always shop at this store." },
+    { "phrase": "Lo compré recientemente.", "en": "I bought it recently." },
+    { "phrase": "Se fue sin que nadie lo viera.", "en": "He left without anyone seeing him." },
+    { "phrase": "Estas son menos pesadas que las tuyas.", "en": "These are lighter than yours." },
+    { "phrase": "Es una tienda departamental enorme.", "en": "It's a huge department store." },
+    { "phrase": "¿Tienen esta marca?", "en": "Do you carry this brand?" },
+    { "phrase": "Caminamos lentamente por las tiendas.", "en": "We walked slowly through the stores." }
+  ],
+  "qa": [
+    { "question": { "es": "¿Cuál es el adverbio de «feliz»?", "en": "What's the adverb of «feliz»?" }, "options": ["felizmente", "felizamente", "felizmento", "feliz-mente"], "correct": 0, "explanation": { "en": "Adjectives without -o just add -mente: felizmente." } },
+    { "question": { "es": "¿Cuál es el adverbio de «rápido»?", "en": "What's the adverb of «rápido»?" }, "options": ["rápidamente", "rápidomente", "rápidamentes", "rápidmente"], "correct": 0, "explanation": { "en": "Feminine form + -mente, keeping the accent: rápidamente." } },
+    { "question": { "es": "¿Dónde va «siempre»? ¿Qué frase es correcta?", "en": "Where does «siempre» go? Which sentence is correct?" }, "options": ["Siempre he comprado aquí.", "He siempre comprado aquí.", "Siempre he comprado siempre aquí.", "He comprado aquí siempre siempre."], "correct": 0, "explanation": { "en": "Never between «he» and the participle: siempre he comprado." } },
+    { "question": { "es": "Completa: «¿Camisas? Escoge ___.»", "en": "Complete: «¿Camisas? Escoge ___.»" }, "options": ["una", "la", "las", "lo"], "correct": 0, "explanation": { "en": "«Una» replaces «una camisa» (pick one)." } },
+    { "question": { "es": "Completa: «Salió de la tienda sin que nadie lo ___.»", "en": "Complete: «Salió de la tienda sin que nadie lo ___.»" }, "options": ["viera", "vio", "ve", "verá"], "correct": 0, "explanation": { "en": "«Sin que» + subjunctive; in the past: viera." } },
+    { "question": { "es": "Completa: «Estas sandalias son ___ pesadas que las tuyas.» (son más ligeras)", "en": "Complete: «Estas sandalias son ___ pesadas que las tuyas.» (they're lighter)" }, "options": ["menos", "más", "tan", "muy"], "correct": 0, "explanation": { "en": "Lighter = menos pesadas." } },
+    { "question": { "es": "Un hombre pone una camisa en su mochila y sale sin pagar. ¿Qué es eso?", "en": "A man puts a shirt in his backpack and leaves without paying. What is that?" }, "options": ["robo en tiendas", "una devolución", "una oferta", "una vitrina"], "correct": 0, "explanation": { "en": "«Robo en tiendas» = shoplifting." } },
+    { "question": { "es": "¿Dónde comes en un centro comercial?", "en": "Where do you eat at a mall?" }, "options": ["en el patio de comidas", "en las escaleras eléctricas", "en la vitrina", "en la devolución"], "correct": 0, "explanation": { "en": "«Patio de comidas» = food court." } }
+  ],
+  "story": {
+    "title": "Sábado en el centro comercial",
+    "text": "El sábado llueve y Emily y Nicolás deciden ir al centro comercial. Nicolás necesita zapatos para la boda. Suben por las escaleras eléctricas hasta el tercer piso. En una tienda departamental hay rebajas. «¿Zapatos negros? Escoge unos», dice Emily. Nicolás se prueba varios pares y finalmente compra unos de una marca colombiana, ligeros y elegantes. Después, Emily quiere hacer una devolución: un suéter que compró recientemente le queda grande. Mientras esperan, ven a un guardia de seguridad correr detrás de un muchacho que salió sin pagar. «Pensó que podía salir sin que nadie lo viera», comenta Nicolás. Al final, comen arepas en el patio de comidas y caminan lentamente mirando vitrinas.",
+    "en": "On Saturday it rains and Emily and Nicolás decide to go to the mall. Nicolás needs shoes for the wedding. They ride the escalator up to the third floor. A department store has a sale. «Black shoes? Pick a pair», says Emily. Nicolás tries on several pairs and finally buys some from a Colombian brand, light and elegant. Then Emily wants to make a return: a sweater she bought recently is too big for her. While they wait, they see a security guard run after a young man who left without paying. «He thought he could leave without anyone seeing him», says Nicolás. In the end they eat arepas at the food court and walk slowly, looking at shop windows.",
+    "highlighted_words": ["escaleras eléctricas", "tienda departamental", "Escoge unos", "marca", "devolución", "recientemente", "sin que nadie lo viera", "patio de comidas"]
+  },
+  "arrange": [
+    { "sentence": "¿En qué piso está la tienda de zapatos?", "en": "Which floor is the shoe store on?" },
+    { "sentence": "Quisiera hacer una devolución, por favor", "en": "I'd like to make a return, please." },
+    { "sentence": "Siempre compro ropa en esta tienda", "en": "I always buy clothes at this store." },
+    { "sentence": "Salió sin que nadie lo viera", "en": "He left without anyone seeing him." },
+    { "sentence": "Comemos algo en el patio de comidas", "en": "Let's eat something at the food court." },
+    { "sentence": "Caminamos lentamente mirando vitrinas", "en": "We walked slowly looking at shop windows." }
+  ],
+  "translate": [
+    { "answer": "Quisiera hacer una devolución", "en": "I would like to make a return" },
+    { "answer": "¿En qué piso está?", "en": "Which floor is it on?" },
+    { "answer": "Escoge una", "en": "Pick one (tú, feminine item)" },
+    { "answer": "Lo compré recientemente", "en": "I bought it recently" },
+    { "answer": "Es muy pesado", "en": "It is very heavy" },
+    { "answer": "Siempre compro aquí", "en": "I always shop here" }
+  ]
+}

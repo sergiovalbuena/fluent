@@ -1,0 +1,84 @@
+{
+  "lesson": 46,
+  "slug": "leccion-46",
+  "icon": "📄",
+  "title": { "es": "Buscar trabajo", "en": "Looking for a job" },
+  "grammar": [
+    { "structure": "si + imperfecto de subjuntivo → condicional", "example": "Si tuviera más tiempo, haría una maestría.", "en": "Unreal present: si + imperfect subjunctive (tuviera, fuera, pudiera), then conditional (haría)." },
+    { "structure": "si yo fuera tú…", "example": "Si yo fuera tú, pediría un aumento.", "en": "Advice: «si yo fuera tú» = if I were you." },
+    { "structure": "¿qué harías…?", "example": "¿Qué harías en mi lugar?", "en": "Conditional for hypothetical questions: harías, dirías, irías." },
+    { "structure": "imperfecto de subjuntivo: -ra", "example": "hablar → hablara · tener → tuviera · ser → fuera", "en": "Formed from the ellos preterite: hablaron → hablara, tuvieron → tuviera." },
+    { "structure": "llevar + tiempo + sin + infinitivo", "example": "Llevo dos meses sin trabajar.", "en": "«Llevar… sin» = to have gone (time) without doing something." }
+  ],
+  "tips": [
+    { "en": "«CV» or «currículum» = résumé. In many Latin American countries a photo on the CV is still common." },
+    { "en": "«Entrevista de trabajo» = job interview. Dress formally and use «usted» unless they switch to «tú»." },
+    { "en": "«Contrato indefinido / por tiempo indeterminado» = permanent contract; «temporal» = temporary." },
+    { "en": "«Renunciar» = to resign (in Spain also «dimitir» for high positions); «despedir» = to fire; «correr» (Mexico, informal) = to fire." },
+    { "en": "«Prestaciones» (Mexico) = benefits: aguinaldo (Christmas bonus), vacaciones, seguro médico." }
+  ],
+  "vocabulary": [
+    { "word": "el currículum", "en": "the résumé, the CV" },
+    { "word": "la entrevista de trabajo", "en": "the job interview" },
+    { "word": "la vacante", "en": "the job opening" },
+    { "word": "el cargo", "en": "the position, the role" },
+    { "word": "la experiencia", "en": "the experience" },
+    { "word": "el aumento", "en": "the raise" },
+    { "word": "las prestaciones", "en": "the benefits" },
+    { "word": "el contrato indefinido", "en": "the permanent contract" },
+    { "word": "contratar", "en": "to hire" },
+    { "word": "despedir", "en": "to fire" },
+    { "word": "renunciar", "en": "to resign, to quit" },
+    { "word": "solicitar", "en": "to apply for" },
+    { "word": "el horario", "en": "the schedule" },
+    { "word": "medio tiempo", "en": "part-time" },
+    { "word": "tiempo completo", "en": "full-time" },
+    { "word": "la maestría", "en": "the master's degree" }
+  ],
+  "phrases": [
+    { "phrase": "Estoy buscando trabajo.", "en": "I'm looking for work." },
+    { "phrase": "Quisiera solicitar el puesto.", "en": "I'd like to apply for the position." },
+    { "phrase": "Le mando mi currículum.", "en": "I'm sending you my résumé." },
+    { "phrase": "Tengo una entrevista mañana.", "en": "I have an interview tomorrow." },
+    { "phrase": "¿Cuál es el horario?", "en": "What are the hours?" },
+    { "phrase": "Si fuera rica, viajaría por el mundo.", "en": "If I were rich, I'd travel the world." },
+    { "phrase": "Si yo fuera tú, pediría un aumento.", "en": "If I were you, I'd ask for a raise." },
+    { "phrase": "¿Qué harías en mi lugar?", "en": "What would you do in my place?" },
+    { "phrase": "Renuncié a mi trabajo.", "en": "I quit my job." },
+    { "phrase": "Me contrataron.", "en": "They hired me." },
+    { "phrase": "Es un contrato indefinido.", "en": "It's a permanent contract." },
+    { "phrase": "Llevo dos meses sin trabajar.", "en": "I've been out of work for two months." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Si ___ rica, viajaría por el mundo.»", "en": "Complete: «Si ___ rica, viajaría por el mundo.»" }, "options": ["fuera", "sería", "soy", "seré"], "correct": 0, "explanation": { "en": "Unreal condition: si + imperfect subjunctive (fuera)." } },
+    { "question": { "es": "Completa: «Si tuviera tiempo, ___ una maestría.»", "en": "Complete: «Si tuviera tiempo, ___ una maestría.»" }, "options": ["haría", "haré", "hacía", "haga"], "correct": 0, "explanation": { "en": "Result clause: conditional (haría)." } },
+    { "question": { "es": "¿Qué frase es correcta?", "en": "Which sentence is correct?" }, "options": ["Si tuviera dinero, compraría una casa.", "Si tendría dinero, compraría una casa.", "Si tuviera dinero, compraré una casa.", "Si tengo dinero, compraría una casa."], "correct": 0, "explanation": { "en": "Never «si tendría»: si + tuviera, then compraría." } },
+    { "question": { "es": "Tu compañera trabaja mucho y gana poco. ¿Qué consejo le das con «si»?", "en": "Your coworker works a lot and earns little. What advice do you give with «si»?" }, "options": ["Si yo fuera tú, pediría un aumento.", "Si soy tú, pido un aumento.", "Si sería tú, pediría un aumento.", "Si fuera tú, pediré un aumento."], "correct": 0, "explanation": { "en": "«Si yo fuera tú» + conditional." } },
+    { "question": { "es": "Mañana hablas con el director de una empresa que te podría contratar. ¿Qué tienes?", "en": "Tomorrow you're meeting the director of a company that might hire you. What do you have?" }, "options": ["una entrevista de trabajo", "un contrato indefinido", "un aumento", "una renuncia"], "correct": 0, "explanation": { "en": "«Entrevista de trabajo» = job interview." } },
+    { "question": { "es": "Ya no te gusta tu trabajo y decides dejarlo tú. ¿Qué haces?", "en": "You don't like your job any more and decide to leave it yourself. What do you do?" }, "options": ["Renuncio.", "Me despiden.", "Me contratan.", "Me jubilo."], "correct": 0, "explanation": { "en": "«Renunciar» = to quit. «Me despiden» = they fire me." } },
+    { "question": { "es": "Completa: «¿Qué ___ tú en mi lugar?»", "en": "Complete: «¿Qué ___ tú en mi lugar?»" }, "options": ["harías", "harás", "hacías", "hagas"], "correct": 0, "explanation": { "en": "Hypothetical question: conditional (harías)." } },
+    { "question": { "es": "Buena noticia: tu nuevo contrato no tiene fecha de fin. ¿Qué contrato tienes?", "en": "Good news: your new contract has no end date. What contract do you have?" }, "options": ["un contrato indefinido", "un contrato temporal", "un contrato de medio tiempo", "un contrato vencido"], "correct": 0, "explanation": { "en": "«Indefinido» = permanent." } }
+  ],
+  "story": {
+    "title": "Una oferta en Bogotá",
+    "text": "Nicolás recibe una llamada: una revista de Bogotá quiere contratarlo como fotógrafo. Es un puesto de tiempo completo, con contrato indefinido y buenas prestaciones. «¿Qué harías en mi lugar?», le pregunta a Emily. Ella piensa un momento. «Si yo fuera tú, iría a la entrevista. Es una oportunidad increíble.» «¿Y tú? ¿Qué harías si yo me fuera a Bogotá?» «Si pudiera trabajar desde allá, me iría contigo», responde Emily. Al día siguiente, Emily habla con Valeria. «Si trabajaras desde Bogotá, ¿tendríamos algún problema?» Valeria sonríe: «Ninguno. Ya trabajas desde casa la mitad del tiempo». Esa noche, Nicolás manda su currículum y Emily empieza a buscar departamentos en Bogotá.",
+    "en": "Nicolás gets a call: a magazine in Bogotá wants to hire him as a photographer. It's a full-time position with a permanent contract and good benefits. «What would you do in my place?» he asks Emily. She thinks for a moment. «If I were you, I'd go to the interview. It's an amazing opportunity.» «And you? What would you do if I went to Bogotá?» «If I could work from there, I'd go with you», Emily answers. The next day Emily talks to Valeria. «If I worked from Bogotá, would we have any problem?» Valeria smiles: «None. You already work from home half the time». That night, Nicolás sends his résumé and Emily starts looking for apartments in Bogotá.",
+    "highlighted_words": ["contratarlo", "tiempo completo", "contrato indefinido", "Qué harías en mi lugar", "Si yo fuera tú", "Si pudiera", "currículum"]
+  },
+  "arrange": [
+    { "sentence": "Quisiera solicitar el puesto de diseñadora", "en": "I'd like to apply for the designer position." },
+    { "sentence": "Si yo fuera tú, aceptaría la oferta", "en": "If I were you, I'd accept the offer." },
+    { "sentence": "¿Qué harías tú en mi lugar?", "en": "What would you do in my place?" },
+    { "sentence": "Si tuviera más tiempo, estudiaría francés", "en": "If I had more time, I'd study French." },
+    { "sentence": "Tengo una entrevista de trabajo mañana", "en": "I have a job interview tomorrow." },
+    { "sentence": "Llevo tres meses sin trabajar", "en": "I've been out of work for three months." }
+  ],
+  "translate": [
+    { "answer": "Estoy buscando trabajo", "en": "I am looking for a job", "accept": ["Busco trabajo"] },
+    { "answer": "Tengo una entrevista", "en": "I have an interview" },
+    { "answer": "Me contrataron", "en": "They hired me" },
+    { "answer": "Si fuera rico, viajaría", "en": "If I were rich, I would travel" },
+    { "answer": "¿Qué harías tú?", "en": "What would you do? (tú)" },
+    { "answer": "Renuncié a mi trabajo", "en": "I quit my job", "accept": ["Renuncié"] }
+  ]
+}

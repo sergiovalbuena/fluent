@@ -1,0 +1,84 @@
+{
+  "lesson": 58,
+  "slug": "leccion-58",
+  "icon": "🚙",
+  "title": { "es": "El auto", "en": "The car" },
+  "grammar": [
+    { "structure": "aunque + subjuntivo / indicativo", "example": "Aunque llueva, salimos. Aunque llueve, salimos.", "en": "«Aunque llueva» = even if it rains (maybe); «aunque llueve» = although it's raining (fact)." },
+    { "structure": "a pesar de + sustantivo", "example": "A pesar de la nieve, llegamos a tiempo.", "en": "«A pesar de» + noun or infinitive = despite." },
+    { "structure": "se me descompuso (se accidental)", "example": "Se nos descompuso el carro en la carretera.", "en": "Unplanned events: se + me / nos / le + verb. Se nos descompuso = our car broke down." },
+    { "structure": "excepto / menos", "example": "El carro está perfecto, excepto el radio.", "en": "«Excepto», «menos» or «salvo» = except." },
+    { "structure": "tener que + infinitivo (pasado)", "example": "Tuvimos que llamar a la grúa.", "en": "«Tuve / tuvimos que» = had to (and did)." }
+  ],
+  "tips": [
+    { "en": "«Llanta» (Latin America) = «rueda» or «neumático» (Spain) = tire. «Llanta ponchada» (Mexico) or «pinchada» = flat tire." },
+    { "en": "«Cofre» (Mexico) = «capó» (Spain) = hood. «Cajuela» (Mexico) = «baúl» (Colombia) = «maletero» (Spain) = trunk." },
+    { "en": "«Estacionarse» (Latin America) = «aparcar» (Spain) = «parquear» (Colombia, Caribbean) = to park." },
+    { "en": "«Grúa» = tow truck. «Taller mecánico» = car repair shop." },
+    { "en": "«Pico y placa» in Bogotá restricts driving on certain days depending on your plate number. Check before you drive!" }
+  ],
+  "vocabulary": [
+    { "word": "el volante", "en": "the steering wheel" },
+    { "word": "el freno", "en": "the brake" },
+    { "word": "el acelerador", "en": "the gas pedal" },
+    { "word": "el embrague", "en": "the clutch" },
+    { "word": "la llanta", "en": "the tire" },
+    { "word": "el cofre", "en": "the hood (Mexico)" },
+    { "word": "la cajuela", "en": "the trunk (Mexico)" },
+    { "word": "el parabrisas", "en": "the windshield" },
+    { "word": "el retrovisor", "en": "the rearview mirror" },
+    { "word": "la guantera", "en": "the glove compartment" },
+    { "word": "el motor", "en": "the engine" },
+    { "word": "la placa", "en": "the license plate" },
+    { "word": "la grúa", "en": "the tow truck" },
+    { "word": "el taller mecánico", "en": "the car repair shop" },
+    { "word": "ponchado", "en": "flat (tire, Mexico)" },
+    { "word": "descomponerse", "en": "to break down" }
+  ],
+  "phrases": [
+    { "phrase": "Se nos ponchó una llanta.", "en": "We got a flat tire." },
+    { "phrase": "Se me descompuso el carro.", "en": "My car broke down." },
+    { "phrase": "Tuvimos que llamar a la grúa.", "en": "We had to call the tow truck." },
+    { "phrase": "El mapa está en la guantera.", "en": "The map is in the glove compartment." },
+    { "phrase": "Mira por el retrovisor antes de cambiar de carril.", "en": "Check the rearview mirror before changing lanes." },
+    { "phrase": "Aunque llueva, salimos temprano.", "en": "Even if it rains, we'll leave early." },
+    { "phrase": "A pesar del tráfico, llegamos a tiempo.", "en": "Despite the traffic, we arrived on time." },
+    { "phrase": "Todo funciona excepto el radio.", "en": "Everything works except the radio." },
+    { "phrase": "¿Dónde hay un taller mecánico?", "en": "Where is there a repair shop?" },
+    { "phrase": "Tuve un accidente.", "en": "I had an accident." },
+    { "phrase": "Pon las maletas en la cajuela.", "en": "Put the suitcases in the trunk." },
+    { "phrase": "Hoy tengo pico y placa.", "en": "Today my car can't be driven (Bogotá plate restriction)." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Aunque ___ mañana, vamos a salir temprano.» (llover, tal vez)", "en": "Complete: «Aunque ___ mañana, vamos a salir temprano.» (llover, maybe)" }, "options": ["llueva", "llueve", "lloverá", "llovió"], "correct": 0, "explanation": { "en": "Possibility (even if): aunque + subjunctive." } },
+    { "question": { "es": "Completa: «___ la nieve, llegamos a tiempo.»", "en": "Complete: «___ la nieve, llegamos a tiempo.»" }, "options": ["A pesar de", "Aunque", "Excepto", "Antes de que"], "correct": 0, "explanation": { "en": "«A pesar de» + noun." } },
+    { "question": { "es": "¿Dónde está el freno?", "en": "Where is the brake?" }, "options": ["entre el acelerador y el embrague", "debajo del cofre", "en la cajuela", "detrás del volante, en el techo"], "correct": 0, "explanation": { "en": "In a manual car: clutch, brake, gas pedal from left to right." } },
+    { "question": { "es": "En la carretera escuchas «pfff» y el carro se inclina: una llanta no tiene aire. ¿Qué pasó?", "en": "On the highway you hear a hiss and the car leans: one tire has no air. What happened?" }, "options": ["Se nos ponchó una llanta.", "Se nos rompió el volante.", "Se nos acabó la grúa.", "Se nos perdió el cofre."], "correct": 0, "explanation": { "en": "«Ponchar(se)» (Mexico) / «pinchar(se)» = to get a flat." } },
+    { "question": { "es": "¿Dónde guardas el mapa en el carro?", "en": "Where do you keep the map in the car?" }, "options": ["en la guantera", "en el motor", "en el parabrisas", "en la llanta"], "correct": 0, "explanation": { "en": "«Guantera» = glove compartment." } },
+    { "question": { "es": "Tu carro dejó de funcionar en la carretera. ¿Cómo lo cuentas?", "en": "Your car stopped working on the highway. How do you tell it?" }, "options": ["Se me descompuso el carro.", "Descompuse el carro a mí.", "El carro me descompuse.", "Me descompuso el carro yo."], "correct": 0, "explanation": { "en": "Unplanned event: se me descompuso." } },
+    { "question": { "es": "Completa: «El carro está perfecto, ___ el radio.»", "en": "Complete: «El carro está perfecto, ___ el radio.»" }, "options": ["excepto", "a pesar de", "aunque", "mientras"], "correct": 0, "explanation": { "en": "«Excepto» = except." } },
+    { "question": { "es": "Antes de cambiar de carril, miras los carros de atrás en el espejito. ¿Cómo se llama?", "en": "Before changing lanes you check the cars behind in the little mirror. What's it called?" }, "options": ["el retrovisor", "el parabrisas", "el volante", "la placa"], "correct": 0, "explanation": { "en": "«Retrovisor» = rearview mirror." } }
+  ],
+  "story": {
+    "title": "Camino a Villa de Leyva",
+    "text": "Dos semanas antes de la boda, Emily y Nicolás compran un carro usado para viajar por Colombia. El primer fin de semana van a Villa de Leyva. A pesar del tráfico de Bogotá, salen temprano. En la carretera, de repente, se oye un ruido: se les ponchó una llanta. «¿Dónde está la llanta de repuesto?», pregunta Emily. «En la cajuela, debajo de las maletas», responde Nicolás. Pero la llanta de repuesto también está vacía. Tienen que llamar a la grúa. El conductor de la grúa los lleva a un taller mecánico en un pueblo pequeño. Mientras arreglan el carro, comen arepas y obleas. «Aunque el viaje sea largo, esto es lo mejor», dice Emily. Llegan a Villa de Leyva al atardecer.",
+    "en": "Two weeks before the wedding, Emily and Nicolás buy a used car to travel around Colombia. The first weekend they go to Villa de Leyva. Despite the Bogotá traffic, they leave early. On the highway there's suddenly a noise: they got a flat tire. «Where's the spare tire?» Emily asks. «In the trunk, under the suitcases», Nicolás answers. But the spare is flat too. They have to call a tow truck. The tow truck driver takes them to a repair shop in a small town. While their car is being fixed, they eat arepas and obleas. «Even if the trip is long, this is the best part», says Emily. They reach Villa de Leyva at sunset.",
+    "highlighted_words": ["A pesar del tráfico", "se les ponchó una llanta", "cajuela", "grúa", "taller mecánico", "Aunque el viaje sea largo"]
+  },
+  "arrange": [
+    { "sentence": "Se nos ponchó una llanta en la carretera", "en": "We got a flat tire on the highway." },
+    { "sentence": "Tuvimos que llamar a la grúa", "en": "We had to call the tow truck." },
+    { "sentence": "A pesar del tráfico llegamos a tiempo", "en": "Despite the traffic we arrived on time." },
+    { "sentence": "Pon las maletas en la cajuela", "en": "Put the suitcases in the trunk." },
+    { "sentence": "Aunque llueva, salimos temprano", "en": "Even if it rains, we'll leave early." },
+    { "sentence": "Todo funciona excepto el radio", "en": "Everything works except the radio." }
+  ],
+  "translate": [
+    { "answer": "Se me descompuso el carro", "en": "My car broke down", "accept": ["Se me descompuso el coche", "Se me dañó el carro", "Se me averió el coche"] },
+    { "answer": "Tengo una llanta ponchada", "en": "I have a flat tire", "accept": ["Tengo una llanta pinchada", "Tengo una rueda pinchada"] },
+    { "answer": "Tuve un accidente", "en": "I had an accident" },
+    { "answer": "¿Dónde hay un taller mecánico?", "en": "Where is there a repair shop?" },
+    { "answer": "Llamamos a la grúa", "en": "We called the tow truck" },
+    { "answer": "A pesar de la lluvia", "en": "Despite the rain" }
+  ]
+}

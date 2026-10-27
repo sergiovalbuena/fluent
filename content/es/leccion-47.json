@@ -1,0 +1,84 @@
+{
+  "lesson": 47,
+  "slug": "leccion-47",
+  "icon": "🗂️",
+  "title": { "es": "En el trabajo", "en": "At work" },
+  "grammar": [
+    { "structure": "si + pluscuamperfecto de subjuntivo → condicional perfecto", "example": "Si hubiera sabido, habría venido.", "en": "Unreal past: si hubiera + participle, habría + participle." },
+    { "structure": "condición mixta", "example": "Si hubieras escuchado ayer, ahora sabrías la respuesta.", "en": "Past condition, present result: si hubieras…, ahora + conditional." },
+    { "structure": "gracias a / por culpa de", "example": "Gracias a tu ayuda, terminamos a tiempo.", "en": "«Gracias a» = thanks to (positive); «por culpa de» = because of (negative)." },
+    { "structure": "no… sino", "example": "No trabajamos para un jefe, sino para nosotros.", "en": "«Sino» = but rather, after a negative." },
+    { "structure": "para que + subjuntivo", "example": "Te mando el archivo para que lo revises.", "en": "Purpose involving someone else: para que + subjunctive." }
+  ],
+  "tips": [
+    { "en": "In Latin American offices people often use «usted» with bosses and clients at first, then switch to «tú» once they know each other." },
+    { "en": "«Junta» (Mexico) = «reunión» = meeting. «Estar en junta» = to be in a meeting." },
+    { "en": "«Hacer home office» is common in Mexico for working from home; «teletrabajo» in Spain." },
+    { "en": "«Quincena» = pay every two weeks, very common in Mexico. «Aguinaldo» = year-end bonus." },
+    { "en": "«Huelga» = strike; «paro» can mean a strike or work stoppage (and also unemployment in Spain)." }
+  ],
+  "vocabulary": [
+    { "word": "la oficina", "en": "the office" },
+    { "word": "la junta", "en": "the meeting (Mexico)" },
+    { "word": "la reunión", "en": "the meeting" },
+    { "word": "el proyecto", "en": "the project" },
+    { "word": "el plazo", "en": "the deadline" },
+    { "word": "el informe", "en": "the report" },
+    { "word": "el correo", "en": "the email" },
+    { "word": "el archivo", "en": "the file" },
+    { "word": "el cliente", "en": "the client" },
+    { "word": "el colega", "en": "the colleague" },
+    { "word": "la huelga", "en": "the strike" },
+    { "word": "la quincena", "en": "the fortnightly pay" },
+    { "word": "el aguinaldo", "en": "the year-end bonus" },
+    { "word": "las horas extra", "en": "the overtime" },
+    { "word": "colaborar", "en": "to collaborate" },
+    { "word": "entregar", "en": "to hand in, to deliver" }
+  ],
+  "phrases": [
+    { "phrase": "Estoy en junta, te llamo después.", "en": "I'm in a meeting, I'll call you later." },
+    { "phrase": "¿Para cuándo es el informe?", "en": "When is the report due?" },
+    { "phrase": "El plazo vence el viernes.", "en": "The deadline is Friday." },
+    { "phrase": "Te mando el archivo para que lo revises.", "en": "I'll send you the file so you can review it." },
+    { "phrase": "Gracias a tu ayuda, terminamos a tiempo.", "en": "Thanks to your help, we finished on time." },
+    { "phrase": "Si hubiera sabido, habría venido.", "en": "If I'd known, I would have come." },
+    { "phrase": "Hoy hago home office.", "en": "Today I'm working from home." },
+    { "phrase": "Tuve que hacer horas extra.", "en": "I had to work overtime." },
+    { "phrase": "Los trabajadores están en huelga.", "en": "The workers are on strike." },
+    { "phrase": "No es mi culpa, sino del sistema.", "en": "It's not my fault, but the system's." },
+    { "phrase": "¿Podemos agendar una reunión?", "en": "Can we schedule a meeting?" },
+    { "phrase": "Ya entregué el proyecto.", "en": "I've already handed in the project." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Si hubiera sabido, ___ venido.»", "en": "Complete: «Si hubiera sabido, ___ venido.»" }, "options": ["habría", "hubiera de", "había", "habré"], "correct": 0, "explanation": { "en": "Result in the unreal past: habría + participle." } },
+    { "question": { "es": "Completa: «Si ustedes ___ colaborado, habríamos terminado.»", "en": "Complete: «Si ustedes ___ colaborado, habríamos terminado.»" }, "options": ["hubieran", "habrían", "han", "habían"], "correct": 0, "explanation": { "en": "Condition in the unreal past: hubieran + participle." } },
+    { "question": { "es": "¿Qué frase habla de un pasado que no ocurrió?", "en": "Which sentence talks about a past that didn't happen?" }, "options": ["Si hubiera estudiado, habría aprobado.", "Si estudia, aprobará.", "Si estudiara, aprobaría.", "Si estudia, aprueba."], "correct": 0, "explanation": { "en": "Pluperfect subjunctive + conditional perfect = unreal past." } },
+    { "question": { "es": "Condición mixta: «Si hubieras escuchado ayer, ahora ___ la respuesta.»", "en": "Mixed condition: «Si hubieras escuchado ayer, ahora ___ la respuesta.»" }, "options": ["sabrías", "habrías sabido", "sabrás", "sabías"], "correct": 0, "explanation": { "en": "Past condition, present result: conditional (sabrías)." } },
+    { "question": { "es": "Los empleados dejan de trabajar para pedir mejores salarios. ¿Qué hacen?", "en": "The employees stop working to demand better pay. What are they doing?" }, "options": ["Están en huelga.", "Están en junta.", "Hacen horas extra.", "Hacen home office."], "correct": 0, "explanation": { "en": "«Estar en huelga» = to be on strike." } },
+    { "question": { "es": "Completa: «___ tu ayuda, terminamos a tiempo.»", "en": "Complete: «___ tu ayuda, terminamos a tiempo.»" }, "options": ["Gracias a", "Por culpa de", "A pesar de", "Sin"], "correct": 0, "explanation": { "en": "Positive cause: gracias a." } },
+    { "question": { "es": "Completa: «No trabajamos para un jefe, ___ para nosotros.»", "en": "Complete: «No trabajamos para un jefe, ___ para nosotros.»" }, "options": ["sino", "si no", "pero", "o"], "correct": 0, "explanation": { "en": "After a negative, «sino» = but rather." } },
+    { "question": { "es": "Te llaman mientras estás en una reunión en México. ¿Qué dices?", "en": "Someone calls while you're in a meeting in Mexico. What do you say?" }, "options": ["Estoy en junta, te llamo después.", "Estoy en huelga, te llamo después.", "Estoy de quincena.", "Estoy entregado."], "correct": 0, "explanation": { "en": "«Estar en junta» (Mexico) = to be in a meeting." } }
+  ],
+  "story": {
+    "title": "El último proyecto",
+    "text": "Antes de mudarse a Bogotá, Emily tiene que terminar un proyecto grande para un cliente importante. El plazo vence el viernes. El miércoles, el sistema se cae y pierden medio día de trabajo. «Si hubiéramos guardado los archivos en la nube, no habríamos perdido nada», dice Pablo. Todo el equipo hace horas extra. Diego trae tacos para todos y Valeria se queda con ellos hasta las once. El jueves en la noche, por fin terminan. «Gracias a ustedes, entregamos a tiempo», dice Emily. El viernes, en la junta con el cliente, todo sale perfecto. Por la tarde, sus colegas le hacen una pequeña fiesta de despedida. «No es un adiós, sino un hasta luego», dice Valeria.",
+    "en": "Before moving to Bogotá, Emily has to finish a big project for an important client. The deadline is Friday. On Wednesday the system crashes and they lose half a day of work. «If we'd saved the files to the cloud, we wouldn't have lost anything», says Pablo. The whole team works overtime. Diego brings tacos for everyone and Valeria stays with them until eleven. On Thursday night they finally finish. «Thanks to you all, we delivered on time», says Emily. On Friday, at the meeting with the client, everything goes perfectly. In the afternoon her colleagues throw her a small farewell party. «It's not goodbye, but see you later», says Valeria.",
+    "highlighted_words": ["plazo", "Si hubiéramos guardado", "no habríamos perdido", "horas extra", "Gracias a ustedes", "junta", "colegas", "sino"]
+  },
+  "arrange": [
+    { "sentence": "Estoy en junta, te llamo en una hora", "en": "I'm in a meeting, I'll call you in an hour." },
+    { "sentence": "El plazo para el informe vence el viernes", "en": "The deadline for the report is Friday." },
+    { "sentence": "Te mando el archivo para que lo revises", "en": "I'll send you the file so you can check it." },
+    { "sentence": "Si hubiera sabido, habría venido antes", "en": "If I'd known, I would have come earlier." },
+    { "sentence": "Gracias a tu ayuda terminamos a tiempo", "en": "Thanks to your help we finished on time." },
+    { "sentence": "No es un adiós, sino un hasta luego", "en": "It's not goodbye, but see you later." }
+  ],
+  "translate": [
+    { "answer": "Estoy en una reunión", "en": "I am in a meeting", "accept": ["Estoy en junta"] },
+    { "answer": "¿Para cuándo es?", "en": "When is it due?" },
+    { "answer": "Ya entregué el proyecto", "en": "I already handed in the project" },
+    { "answer": "Gracias a tu ayuda", "en": "Thanks to your help" },
+    { "answer": "Si hubiera sabido, habría venido", "en": "If I had known, I would have come" },
+    { "answer": "Hoy trabajo desde casa", "en": "Today I am working from home", "accept": ["Hoy hago home office"] }
+  ]
+}

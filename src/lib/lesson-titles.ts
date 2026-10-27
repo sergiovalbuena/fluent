@@ -244,6 +244,248 @@ export const LESSON_TITLES: Record<string, Record<string, Record<string, string>
       "es": "La rutina diaria"
     }
   },
+  "es": {
+    "leccion-01": {
+      "es": "Saludar y despedirse",
+      "en": "Hello and goodbye"
+    },
+    "leccion-02": {
+      "es": "Por favor y gracias",
+      "en": "Please and thank you"
+    },
+    "leccion-03": {
+      "es": "Días, meses y fechas",
+      "en": "Days, months and dates"
+    },
+    "leccion-04": {
+      "es": "Los números",
+      "en": "Numbers"
+    },
+    "leccion-05": {
+      "es": "Nombres, colores y personalidad",
+      "en": "Names, colors and personality"
+    },
+    "leccion-06": {
+      "es": "La familia",
+      "en": "The family"
+    },
+    "leccion-07": {
+      "es": "En casa",
+      "en": "At home"
+    },
+    "leccion-08": {
+      "es": "Países y nacionalidades",
+      "en": "Countries and nationalities"
+    },
+    "leccion-09": {
+      "es": "Expresiones cotidianas (1)",
+      "en": "Everyday expressions (1)"
+    },
+    "leccion-10": {
+      "es": "Expresiones cotidianas (2)",
+      "en": "Everyday expressions (2)"
+    },
+    "leccion-11": {
+      "es": "El cuerpo humano",
+      "en": "The human body"
+    },
+    "leccion-12": {
+      "es": "Profesiones y oficios",
+      "en": "Jobs"
+    },
+    "leccion-13": {
+      "es": "Habitaciones y muebles",
+      "en": "Rooms and furniture"
+    },
+    "leccion-14": {
+      "es": "Los animales",
+      "en": "Animals"
+    },
+    "leccion-15": {
+      "es": "Comida y bebidas",
+      "en": "Food and drinks"
+    },
+    "leccion-16": {
+      "es": "La ropa",
+      "en": "Clothes"
+    },
+    "leccion-17": {
+      "es": "Frutas y verduras",
+      "en": "Fruits and vegetables"
+    },
+    "leccion-18": {
+      "es": "Los deportes",
+      "en": "Sports"
+    },
+    "leccion-19": {
+      "es": "El mundo y el universo",
+      "en": "The world and the universe"
+    },
+    "leccion-20": {
+      "es": "La ciudad",
+      "en": "The city"
+    },
+    "leccion-21": {
+      "es": "La hora y las medidas",
+      "en": "Time and measurements"
+    },
+    "leccion-22": {
+      "es": "Las vacaciones",
+      "en": "Vacations"
+    },
+    "leccion-23": {
+      "es": "Las estaciones y el clima",
+      "en": "Seasons and weather"
+    },
+    "leccion-24": {
+      "es": "El arte y los museos",
+      "en": "Art and museums"
+    },
+    "leccion-25": {
+      "es": "El transporte",
+      "en": "Transportation"
+    },
+    "leccion-26": {
+      "es": "La música y los instrumentos",
+      "en": "Music and instruments"
+    },
+    "leccion-27": {
+      "es": "Las flores y el jardín",
+      "en": "Flowers and the garden"
+    },
+    "leccion-28": {
+      "es": "Citas y visitas",
+      "en": "Appointments and visits"
+    },
+    "leccion-29": {
+      "es": "El teatro y el cine",
+      "en": "Theater and movies"
+    },
+    "leccion-30": {
+      "es": "Al teléfono",
+      "en": "On the phone"
+    },
+    "leccion-31": {
+      "es": "En la agencia de viajes",
+      "en": "At the travel agency"
+    },
+    "leccion-32": {
+      "es": "En el aeropuerto",
+      "en": "At the airport"
+    },
+    "leccion-33": {
+      "es": "En el avión",
+      "en": "On the plane"
+    },
+    "leccion-34": {
+      "es": "Migración y aduana",
+      "en": "Immigration and customs"
+    },
+    "leccion-35": {
+      "es": "En el hotel",
+      "en": "At the hotel"
+    },
+    "leccion-36": {
+      "es": "Salir a pasear",
+      "en": "Going for a walk"
+    },
+    "leccion-37": {
+      "es": "Rentar un auto",
+      "en": "Renting a car"
+    },
+    "leccion-38": {
+      "es": "En el restaurante",
+      "en": "At the restaurant"
+    },
+    "leccion-39": {
+      "es": "De compras",
+      "en": "Shopping"
+    },
+    "leccion-40": {
+      "es": "Una salida de noche",
+      "en": "A night out"
+    },
+    "leccion-41": {
+      "es": "Buscar dónde vivir",
+      "en": "Finding a place to live"
+    },
+    "leccion-42": {
+      "es": "En la lavandería",
+      "en": "At the laundromat"
+    },
+    "leccion-43": {
+      "es": "Ir a clases",
+      "en": "Going to school"
+    },
+    "leccion-44": {
+      "es": "La compañera de casa",
+      "en": "The roommate"
+    },
+    "leccion-45": {
+      "es": "El amor y el matrimonio",
+      "en": "Love and marriage"
+    },
+    "leccion-46": {
+      "es": "Buscar trabajo",
+      "en": "Looking for a job"
+    },
+    "leccion-47": {
+      "es": "En el trabajo",
+      "en": "At work"
+    },
+    "leccion-48": {
+      "es": "En el banco",
+      "en": "At the bank"
+    },
+    "leccion-49": {
+      "es": "En el médico",
+      "en": "At the doctor's"
+    },
+    "leccion-50": {
+      "es": "En la oficina de correos",
+      "en": "At the post office"
+    },
+    "leccion-51": {
+      "es": "En un crucero",
+      "en": "On a cruise"
+    },
+    "leccion-52": {
+      "es": "Viajar en tren",
+      "en": "Traveling by train"
+    },
+    "leccion-53": {
+      "es": "En la cafetería",
+      "en": "At the coffee shop"
+    },
+    "leccion-54": {
+      "es": "En la tienda de celulares",
+      "en": "At the phone store"
+    },
+    "leccion-55": {
+      "es": "En el centro comercial",
+      "en": "At the mall"
+    },
+    "leccion-56": {
+      "es": "En la estética",
+      "en": "At the hair salon"
+    },
+    "leccion-57": {
+      "es": "En la joyería",
+      "en": "At the jewelry store"
+    },
+    "leccion-58": {
+      "es": "El auto",
+      "en": "The car"
+    },
+    "leccion-59": {
+      "es": "Ayuda con trámites y papeles",
+      "en": "Getting help with paperwork"
+    },
+    "leccion-60": {
+      "es": "La rutina diaria",
+      "en": "Daily routines"
+    }
+  },
   "fr": {
     "lecon-01": {
       "fr": "Saluer et dire au revoir",

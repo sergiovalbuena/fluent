@@ -1,0 +1,84 @@
+{
+  "lesson": 36,
+  "slug": "leccion-36",
+  "icon": "🚶",
+  "title": { "es": "Salir a pasear", "en": "Going for a walk" },
+  "grammar": [
+    { "structure": "futuro perfecto: habré terminado", "example": "Cuando vuelvas, habré terminado la cena.", "en": "Future perfect: habré / habrás / habrá + participle = will have done." },
+    { "structure": "pronombres dobles: se lo", "example": "¿Las fotos? Se las mando mañana.", "en": "Two pronouns together: indirect first. «Le / les» becomes «se» before lo / la / los / las: se lo, se las." },
+    { "structure": "llevar / traer", "example": "Te llevo al parque. Tráeme un café.", "en": "«Llevar» = take (away from the speaker); «traer» = bring (toward the speaker)." },
+    { "structure": "estar a punto de", "example": "Estaba a punto de llover.", "en": "«Estar a punto de» + infinitive = to be about to." },
+    { "structure": "puede que + subjuntivo", "example": "Puede que nadie te vea.", "en": "«Puede que» (it may be that) + subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Dar un paseo», «dar una vuelta» and «salir a caminar» all mean going for a walk." },
+    { "en": "«Malecón» = seaside promenade (Cartagena, Havana, Puerto Vallarta). Perfect for walking at sunset." },
+    { "en": "«Partirse de risa» (Spain, Latin America) or «morirse de risa» = to crack up laughing." },
+    { "en": "In Latin American cities the evening «paseo» in the main square is a social tradition, especially on Sundays." },
+    { "en": "«Ahorita vengo» (Mexico) = I'll be right back… usually!" }
+  ],
+  "vocabulary": [
+    { "word": "el paseo", "en": "the walk, the stroll" },
+    { "word": "pasear", "en": "to stroll" },
+    { "word": "caminar", "en": "to walk" },
+    { "word": "el malecón", "en": "the seaside promenade" },
+    { "word": "el muelle", "en": "the pier" },
+    { "word": "la muralla", "en": "the city wall" },
+    { "word": "el atardecer", "en": "the sunset" },
+    { "word": "la banca", "en": "the bench" },
+    { "word": "el puesto", "en": "the stall" },
+    { "word": "la heladería", "en": "the ice cream shop" },
+    { "word": "el vendedor ambulante", "en": "the street vendor" },
+    { "word": "el mapa", "en": "the map" },
+    { "word": "perderse", "en": "to get lost" },
+    { "word": "llevar", "en": "to take (somewhere)" },
+    { "word": "traer", "en": "to bring" },
+    { "word": "la risa", "en": "the laughter" }
+  ],
+  "phrases": [
+    { "phrase": "¿Damos una vuelta?", "en": "Shall we go for a walk?" },
+    { "phrase": "Vamos al malecón a ver el atardecer.", "en": "Let's go to the promenade to watch the sunset." },
+    { "phrase": "Te llevo a mi lugar favorito.", "en": "I'll take you to my favorite place." },
+    { "phrase": "Tráeme un helado, porfa.", "en": "Bring me an ice cream, please." },
+    { "phrase": "Creo que nos perdimos.", "en": "I think we got lost." },
+    { "phrase": "Estaba a punto de llover.", "en": "It was about to rain." },
+    { "phrase": "Cuando vuelvas, habré terminado.", "en": "When you get back, I'll have finished." },
+    { "phrase": "¿Las fotos? Te las mando mañana.", "en": "The photos? I'll send them to you tomorrow." },
+    { "phrase": "Se lo presento mañana.", "en": "I'll introduce him to you tomorrow." },
+    { "phrase": "Me morí de risa.", "en": "I cracked up laughing." },
+    { "phrase": "Sentémonos en esta banca.", "en": "Let's sit on this bench." },
+    { "phrase": "Puede que llueva más tarde.", "en": "It may rain later." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Cuando llegues, yo ya ___ la cena.» (terminar)", "en": "Complete: «Cuando llegues, yo ya ___ la cena.» (terminar)" }, "options": ["habré terminado", "he terminado", "terminaré", "había terminado"], "correct": 0, "explanation": { "en": "Future perfect: habré terminado = I'll have finished." } },
+    { "question": { "es": "¿Qué tiempo es «habrá salido»?", "en": "Which tense is «habrá salido»?" }, "options": ["futuro perfecto", "futuro simple", "pluscuamperfecto", "pretérito perfecto"], "correct": 0, "explanation": { "en": "Habrá + participle = futuro perfecto." } },
+    { "question": { "es": "La guía dice que mañana a la hora del paseo va a estar lloviendo. ¿Qué dice?", "en": "The guide says that tomorrow at walk time it'll be raining. What does she say?" }, "options": ["Estará lloviendo.", "Estaba lloviendo.", "Acaba de llover.", "Llovió."], "correct": 0, "explanation": { "en": "Future progressive: estará + gerund." } },
+    { "question": { "es": "Completa: «¿Las fotos? ___ mando mañana a tus papás.»", "en": "Complete: «¿Las fotos? ___ mando mañana a tus papás.»" }, "options": ["Se las", "Les las", "Las les", "Se los"], "correct": 0, "explanation": { "en": "«Les» + «las» becomes «se las»." } },
+    { "question": { "es": "Completa: «Puede que nadie te ___.» (ver)", "en": "Complete: «Puede que nadie te ___.» (ver)" }, "options": ["vea", "ve", "verá", "veía"], "correct": 0, "explanation": { "en": "«Puede que» + subjunctive: vea." } },
+    { "question": { "es": "El chiste es tan gracioso que tu amigo se ríe muchísimo. ¿Cómo lo dices?", "en": "The joke is so funny your friend laughs like crazy. How do you say it?" }, "options": ["Se murió de risa.", "Se murió de llanto.", "Se rió de muerte.", "Murió la risa."], "correct": 0, "explanation": { "en": "«Morirse de risa» = to crack up laughing." } },
+    { "question": { "es": "¿Qué verbo significa acompañar a alguien a otro lugar?", "en": "Which verb means taking someone to another place?" }, "options": ["llevar", "traer", "quedar", "tomar prestado"], "correct": 0, "explanation": { "en": "«Llevar» = to take (away); «traer» = to bring (here)." } },
+    { "question": { "es": "Propones a tu amigo caminar un rato por la ciudad. ¿Qué dices?", "en": "You suggest walking around the city for a while. What do you say?" }, "options": ["¿Damos una vuelta?", "¿Damos un vuelo?", "¿Hacemos la vuelta de?", "¿Paseamos un paseo de?"], "correct": 0, "explanation": { "en": "«Dar una vuelta» = to go for a walk / a spin." } }
+  ],
+  "story": {
+    "title": "Atardecer en el malecón",
+    "text": "La última tarde en Cartagena, Nicolás le dice a Emily: «Te llevo a mi lugar favorito». Caminan por la ciudad amurallada, entre casas de colores y balcones llenos de flores. Un vendedor ambulante les ofrece fruta y Emily compra mango con limón. Después se pierden un poco en las calles estrechas. «Creo que nos perdimos», dice Emily, riendo. Por fin llegan a la muralla, frente al mar. El atardecer es naranja y rosa. Se sientan en una banca y Nicolás toma muchas fotos. «¿Me las mandas?», pregunta Emily. «Claro, te las mando esta noche.» De repente, un niño pasa con su perro y el perro se roba el helado de Nicolás. ¡Emily se muere de risa!",
+    "en": "On their last afternoon in Cartagena, Nicolás tells Emily: «I'll take you to my favorite place». They walk through the walled city, among colorful houses and balconies full of flowers. A street vendor offers them fruit and Emily buys mango with lime. Then they get a little lost in the narrow streets. «I think we got lost», says Emily, laughing. At last they reach the city wall, facing the sea. The sunset is orange and pink. They sit on a bench and Nicolás takes lots of photos. «Will you send them to me?» Emily asks. «Of course, I'll send them to you tonight.» Suddenly a boy walks by with his dog and the dog steals Nicolás's ice cream. Emily cracks up laughing!",
+    "highlighted_words": ["Te llevo", "vendedor ambulante", "nos perdimos", "muralla", "atardecer", "banca", "te las mando", "se muere de risa"]
+  },
+  "arrange": [
+    { "sentence": "¿Damos una vuelta por el malecón?", "en": "Shall we take a walk along the promenade?" },
+    { "sentence": "Te llevo a mi lugar favorito", "en": "I'll take you to my favorite place." },
+    { "sentence": "Creo que nos perdimos otra vez", "en": "I think we got lost again." },
+    { "sentence": "Las fotos te las mando esta noche", "en": "I'll send you the photos tonight." },
+    { "sentence": "Cuando vuelvas, habré terminado", "en": "When you get back, I'll have finished." },
+    { "sentence": "Sentémonos en esta banca un rato", "en": "Let's sit on this bench for a while." }
+  ],
+  "translate": [
+    { "answer": "¿Damos una vuelta?", "en": "Shall we go for a walk?", "accept": ["¿Damos un paseo?", "¿Vamos a caminar?"] },
+    { "answer": "Nos perdimos", "en": "We got lost" },
+    { "answer": "Te las mando mañana", "en": "I will send them to you tomorrow (the photos, tú)" },
+    { "answer": "Tráeme un helado", "en": "Bring me an ice cream (tú)" },
+    { "answer": "Me morí de risa", "en": "I cracked up laughing" },
+    { "answer": "Puede que llueva", "en": "It may rain" }
+  ]
+}

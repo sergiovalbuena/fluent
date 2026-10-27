@@ -1,0 +1,84 @@
+{
+  "lesson": 54,
+  "slug": "leccion-54",
+  "icon": "📱",
+  "title": { "es": "En la tienda de celulares", "en": "At the phone store" },
+  "grammar": [
+    { "structure": "mejor / peor que", "example": "Este celular es mejor que el tuyo.", "en": "Irregular comparatives: mejor (better), peor (worse). Never «más bueno» for quality." },
+    { "structure": "el mío / el tuyo", "example": "Tu foto es bonita, pero la mía es más nítida.", "en": "Possessive pronouns agree with the thing: el mío, la mía, los míos…" },
+    { "structure": "se me rompió (se accidental)", "example": "Se me rompió la pantalla.", "en": "Accidents: se + me / te / le + verb. It «broke on me» instead of «I broke it»." },
+    { "structure": "el mejor que + subjuntivo", "example": "Es el mejor técnico que conozca.", "en": "After a superlative, «que» can take the subjunctive to sound less absolute (also indicative: que conozco)." },
+    { "structure": "esperar a que + subjuntivo", "example": "Esperaremos a que llegue el repuesto.", "en": "«Esperar a que» + subjunctive = wait until." }
+  ],
+  "tips": [
+    { "en": "«Celular» (Latin America) = «móvil» (Spain) = cell phone. «Cel» is a common short form in Mexico." },
+    { "en": "«Chip» or «SIM» = SIM card. «Recargar saldo» = to top up prepaid credit." },
+    { "en": "«Funda» or «carcasa» = phone case; «mica» (Mexico) or «protector de pantalla» = screen protector." },
+    { "en": "«Plan de datos» = data plan; «prepago» = prepaid; «pospago» = contract." },
+    { "en": "«Se me cayó el celular» is probably the most useful accident phrase you'll ever learn." }
+  ],
+  "vocabulary": [
+    { "word": "la pantalla", "en": "the screen" },
+    { "word": "la funda", "en": "the phone case" },
+    { "word": "el protector de pantalla", "en": "the screen protector" },
+    { "word": "el chip", "en": "the SIM card" },
+    { "word": "el plan de datos", "en": "the data plan" },
+    { "word": "prepago", "en": "prepaid" },
+    { "word": "recargar saldo", "en": "to top up credit" },
+    { "word": "la memoria", "en": "the storage" },
+    { "word": "la aplicación", "en": "the app" },
+    { "word": "descargar", "en": "to download" },
+    { "word": "los audífonos", "en": "the headphones" },
+    { "word": "la garantía", "en": "the warranty" },
+    { "word": "el técnico", "en": "the technician" },
+    { "word": "el repuesto", "en": "the spare part" },
+    { "word": "nítido", "en": "sharp (image)" },
+    { "word": "borroso", "en": "blurry" }
+  ],
+  "phrases": [
+    { "phrase": "Se me cayó el celular.", "en": "I dropped my phone." },
+    { "phrase": "Se me rompió la pantalla.", "en": "My screen broke." },
+    { "phrase": "¿Lo cubre la garantía?", "en": "Is it covered by the warranty?" },
+    { "phrase": "Quisiera un chip prepago.", "en": "I'd like a prepaid SIM card." },
+    { "phrase": "¿Cuántos datos incluye el plan?", "en": "How much data does the plan include?" },
+    { "phrase": "Necesito una funda y un protector de pantalla.", "en": "I need a case and a screen protector." },
+    { "phrase": "Este es mejor que el mío.", "en": "This one is better than mine." },
+    { "phrase": "La foto salió borrosa.", "en": "The photo came out blurry." },
+    { "phrase": "¿Cuánto tarda la reparación?", "en": "How long does the repair take?" },
+    { "phrase": "Esperaremos a que llegue el repuesto.", "en": "We'll wait until the part arrives." },
+    { "phrase": "No tengo memoria para más fotos.", "en": "I don't have storage for more photos." },
+    { "phrase": "Descarga la aplicación del banco.", "en": "Download the bank's app." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Mi celular es ___ que el tuyo.»", "en": "Complete: «Mi celular es ___ que el tuyo.»" }, "options": ["mejor", "más bueno", "bien", "el mejor"], "correct": 0, "explanation": { "en": "Quality comparison: mejor que." } },
+    { "question": { "es": "Completa: «Tu foto es bonita, pero ___ es más nítida.» (mi foto)", "en": "Complete: «Tu foto es bonita, pero ___ es más nítida.» (mi foto)" }, "options": ["la mía", "el mío", "mi", "las mías"], "correct": 0, "explanation": { "en": "«Foto» is feminine: la mía." } },
+    { "question": { "es": "El celular se te cayó y ahora la pantalla está rota. ¿Qué dices?", "en": "Your phone fell and now the screen is broken. What do you say?" }, "options": ["Se me rompió la pantalla.", "Rompí me la pantalla.", "Me rompió la pantalla.", "La pantalla me rompí."], "correct": 0, "explanation": { "en": "Accident: se me rompió." } },
+    { "question": { "es": "Completa: «Esperaremos a que ___ el repuesto.»", "en": "Complete: «Esperaremos a que ___ el repuesto.»" }, "options": ["llegue", "llega", "llegará", "llegó"], "correct": 0, "explanation": { "en": "«Esperar a que» + subjunctive." } },
+    { "question": { "es": "Tomaste una foto moviendo la mano y no se ve nada claro. ¿Cómo salió?", "en": "You took a photo while moving your hand and nothing is clear. How did it come out?" }, "options": ["borrosa", "nítida", "prepago", "descargada"], "correct": 0, "explanation": { "en": "«Borroso» = blurry; «nítido» = sharp." } },
+    { "question": { "es": "Quieres un número local sin contrato. ¿Qué pides?", "en": "You want a local number without a contract. What do you ask for?" }, "options": ["un chip prepago", "un plan pospago", "una funda", "unos audífonos"], "correct": 0, "explanation": { "en": "«Chip prepago» = prepaid SIM." } },
+    { "question": { "es": "Tu celular tiene seis meses y dejó de funcionar. ¿Qué preguntas en la tienda?", "en": "Your phone is six months old and stopped working. What do you ask at the store?" }, "options": ["¿Lo cubre la garantía?", "¿Tiene memoria?", "¿Está nítido?", "¿Me recarga saldo?"], "correct": 0, "explanation": { "en": "«Garantía» = warranty." } },
+    { "question": { "es": "Completa: «Es el mejor técnico que ___.»", "en": "Complete: «Es el mejor técnico que ___.»" }, "options": ["conozco", "conozca de", "conoceré", "conocía mañana"], "correct": 0, "explanation": { "en": "After a superlative, the indicative (conozco) is the most common; «conozca» is also possible." } }
+  ],
+  "story": {
+    "title": "Pantalla rota",
+    "text": "Un lunes, saliendo del metro, a Emily se le cae el celular. La pantalla se rompe en mil pedazos. «¡No puede ser! Tengo todas las fotos de la boda de Valeria ahí», dice. Va a una tienda de celulares en el centro comercial. «¿Lo cubre la garantía?», pregunta. El técnico revisa el teléfono. «Me temo que no. La garantía no cubre caídas. Pero podemos cambiar la pantalla.» «¿Cuánto tarda la reparación?» «Tenemos que esperar a que llegue el repuesto: unos tres días.» Mientras tanto, Nicolás le presta su celular viejo. «El mío es peor que el tuyo, pero funciona», dice. Tres días después, el celular está como nuevo y Emily compra una funda y un protector de pantalla.",
+    "en": "One Monday, coming out of the subway, Emily drops her phone. The screen shatters into a thousand pieces. «It can't be! I have all the photos from Valeria's wedding on it», she says. She goes to a phone store at the mall. «Is it covered by the warranty?» she asks. The technician checks the phone. «I'm afraid not. The warranty doesn't cover drops. But we can replace the screen.» «How long does the repair take?» «We have to wait until the part arrives: about three days.» Meanwhile, Nicolás lends her his old phone. «Mine is worse than yours, but it works», he says. Three days later the phone is as good as new and Emily buys a case and a screen protector.",
+    "highlighted_words": ["se le cae el celular", "pantalla", "garantía", "técnico", "esperar a que llegue el repuesto", "El mío es peor que el tuyo", "funda"]
+  },
+  "arrange": [
+    { "sentence": "Se me cayó el celular en el metro", "en": "I dropped my phone in the subway." },
+    { "sentence": "¿Lo cubre la garantía, por favor?", "en": "Is it covered by the warranty, please?" },
+    { "sentence": "Este celular es mejor que el mío", "en": "This phone is better than mine." },
+    { "sentence": "Esperaremos a que llegue el repuesto", "en": "We'll wait until the part arrives." },
+    { "sentence": "Quisiera un chip prepago con datos", "en": "I'd like a prepaid SIM with data." },
+    { "sentence": "La foto salió muy borrosa", "en": "The photo came out very blurry." }
+  ],
+  "translate": [
+    { "answer": "Se me rompió la pantalla", "en": "My screen broke" },
+    { "answer": "Se me cayó el celular", "en": "I dropped my phone", "accept": ["Se me cayó el teléfono", "Se me cayó el móvil"] },
+    { "answer": "Necesito una funda", "en": "I need a phone case" },
+    { "answer": "¿Cuánto tarda la reparación?", "en": "How long does the repair take?" },
+    { "answer": "Es mejor que el mío", "en": "It is better than mine" },
+    { "answer": "Descarga la aplicación", "en": "Download the app (tú)" }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lesson": 42,
+  "slug": "leccion-42",
+  "icon": "🧺",
+  "title": { "es": "En la lavandería", "en": "At the laundromat" },
+  "grammar": [
+    { "structure": "que / donde (relativos)", "example": "La lavadora que está en la esquina no funciona. La lavandería donde voy está cerca.", "en": "«Que» = that / which / who; «donde» = where." },
+    { "structure": "lo que", "example": "Lo que necesito es más detergente.", "en": "«Lo que» = what (the thing that)." },
+    { "structure": "el / la que", "example": "La mejor es la que está enfrente.", "en": "«La que» = the one that, avoiding repeating the noun." },
+    { "structure": "¿qué quieres que haga?", "example": "¿Qué quieres que haga con la ropa?", "en": "«Querer que» + subjunctive: what do you want me to do?" },
+    { "structure": "se impersonal: se lava a mano", "example": "Esta blusa se lava a mano.", "en": "Instructions: se + verb = it's washed / you wash it." }
+  ],
+  "tips": [
+    { "en": "«Lavandería» = laundromat; «tintorería» = dry cleaner. Many lavanderías in Latin America wash and fold for you by the kilo." },
+    { "en": "«Cloro» (Latin America) = «lejía» (Spain) = bleach. Never mix it with colored clothes!" },
+    { "en": "«Suavizante» = fabric softener; «detergente» or «jabón en polvo» = laundry detergent." },
+    { "en": "«Tender la ropa» = to hang the laundry; «doblar» = to fold; «planchar» = to iron." },
+    { "en": "«Feria» (Mexico) = small change, coins. «¿Tienes feria?» = Do you have change?" }
+  ],
+  "vocabulary": [
+    { "word": "la lavandería", "en": "the laundromat" },
+    { "word": "la tintorería", "en": "the dry cleaner" },
+    { "word": "la secadora", "en": "the dryer" },
+    { "word": "el detergente", "en": "the detergent" },
+    { "word": "el suavizante", "en": "the fabric softener" },
+    { "word": "el cloro", "en": "the bleach" },
+    { "word": "la ropa sucia", "en": "the dirty laundry" },
+    { "word": "la ropa limpia", "en": "the clean laundry" },
+    { "word": "la mancha", "en": "the stain" },
+    { "word": "la plancha", "en": "the iron" },
+    { "word": "planchar", "en": "to iron" },
+    { "word": "doblar", "en": "to fold" },
+    { "word": "tender", "en": "to hang out (laundry)" },
+    { "word": "a mano", "en": "by hand" },
+    { "word": "las monedas", "en": "the coins" },
+    { "word": "descompuesto", "en": "broken, out of order" }
+  ],
+  "phrases": [
+    { "phrase": "La lavadora de la esquina está descompuesta.", "en": "The washing machine in the corner is out of order." },
+    { "phrase": "¿Me cambia este billete por monedas?", "en": "Could you change this bill into coins?" },
+    { "phrase": "¿Cuánto cuesta el kilo?", "en": "How much is it per kilo?" },
+    { "phrase": "Esta blusa se lava a mano.", "en": "This blouse is hand-wash only." },
+    { "phrase": "No le pongas cloro a la ropa de color.", "en": "Don't put bleach on colored clothes." },
+    { "phrase": "El suéter que lavaste se encogió.", "en": "The sweater you washed shrank." },
+    { "phrase": "Lo que necesito es más detergente.", "en": "What I need is more detergent." },
+    { "phrase": "¿Qué quieres que haga?", "en": "What do you want me to do?" },
+    { "phrase": "Esta mancha no sale.", "en": "This stain won't come out." },
+    { "phrase": "Lo llevo a la tintorería.", "en": "I'll take it to the dry cleaner." },
+    { "phrase": "Ya doblé la ropa.", "en": "I already folded the clothes." },
+    { "phrase": "¿Para cuándo está lista?", "en": "When will it be ready?" }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «La lavadora ___ está en la esquina no funciona.»", "en": "Complete: «La lavadora ___ está en la esquina no funciona.»" }, "options": ["que", "quien", "donde", "cual"], "correct": 0, "explanation": { "en": "For things, use «que»." } },
+    { "question": { "es": "Completa: «La lavandería ___ voy está cerca de mi casa.»", "en": "Complete: «La lavandería ___ voy está cerca de mi casa.»" }, "options": ["donde", "que", "quien", "lo que"], "correct": 0, "explanation": { "en": "For places, «donde» (or «a la que»)." } },
+    { "question": { "es": "Completa: «___ necesito es más suavizante.»", "en": "Complete: «___ necesito es más suavizante.»" }, "options": ["Lo que", "Que", "El que de", "Cual"], "correct": 0, "explanation": { "en": "«Lo que» = what (the thing that)." } },
+    { "question": { "es": "Completa: «La mejor lavandería es ___ está enfrente.»", "en": "Complete: «La mejor lavandería es ___ está enfrente.»" }, "options": ["la que", "el que", "lo que", "las que"], "correct": 0, "explanation": { "en": "«Lavandería» is feminine: la que." } },
+    { "question": { "es": "Completa: «¿Qué quieres que ___ con la ropa mojada?»", "en": "Complete: «¿Qué quieres que ___ con la ropa mojada?»" }, "options": ["haga", "hago", "haré", "hacía"], "correct": 0, "explanation": { "en": "«Querer que» + subjunctive: haga." } },
+    { "question": { "es": "Tu saco de seda no se puede meter a la lavadora. ¿Adónde lo llevas?", "en": "Your silk jacket can't go in the washer. Where do you take it?" }, "options": ["a la tintorería", "a la panadería", "a la ferretería", "al cajero"], "correct": 0, "explanation": { "en": "«Tintorería» = dry cleaner." } },
+    { "question": { "es": "¿Qué NO debes ponerle a la ropa de color?", "en": "What should you NOT put on colored clothes?" }, "options": ["cloro", "detergente", "agua", "suavizante"], "correct": 0, "explanation": { "en": "«Cloro» (bleach) removes color." } },
+    { "question": { "es": "La máquina solo acepta monedas y tú tienes un billete. ¿Qué preguntas?", "en": "The machine only takes coins and you have a bill. What do you ask?" }, "options": ["¿Me cambia este billete por monedas?", "¿Me presta un billete?", "¿Me da el cloro?", "¿Me lava el billete?"], "correct": 0, "explanation": { "en": "«Cambiar por monedas» = to change into coins." } }
+  ],
+  "story": {
+    "title": "Desastre en la lavandería",
+    "text": "En su nuevo departamento no hay lavadora, así que Emily va a la lavandería de la esquina. La señora que atiende es muy simpática. «Aquí puede lavar usted misma o dejarnos la ropa por kilo.» Emily decide lavarla ella misma. La máquina que elige está descompuesta, así que usa la de al lado. Pone toda la ropa junta: blanca, negra y roja. Una hora después, sus camisetas blancas son rosas. «¡No puede ser!», grita. La señora se ríe con cariño: «Lo que tiene que hacer es separar los colores, mija. Y esa blusa de seda se lava a mano». Emily suspira: «La próxima vez se la dejo a ustedes». «¿Para cuándo la quiere?», pregunta la señora.",
+    "en": "In her new apartment there's no washing machine, so Emily goes to the laundromat on the corner. The lady who works there is very friendly. «Here you can wash it yourself or leave us the clothes by the kilo.» Emily decides to wash it herself. The machine she chooses is out of order, so she uses the one next to it. She puts all the clothes together: white, black and red. An hour later her white T-shirts are pink. «It can't be!» she shouts. The lady laughs kindly: «What you have to do is separate the colors, dear. And that silk blouse is hand-wash only». Emily sighs: «Next time I'll leave it to you». «When do you need it?» asks the lady.",
+    "highlighted_words": ["lavandería", "que atiende", "descompuesta", "la de al lado", "Lo que tiene que hacer", "se lava a mano"]
+  },
+  "arrange": [
+    { "sentence": "La lavadora de la esquina está descompuesta", "en": "The washing machine in the corner is broken." },
+    { "sentence": "Lo que necesito es más detergente", "en": "What I need is more detergent." },
+    { "sentence": "Esta blusa se lava a mano", "en": "This blouse is hand-wash only." },
+    { "sentence": "No le pongas cloro a la ropa de color", "en": "Don't put bleach on colored clothes." },
+    { "sentence": "¿Para cuándo está lista la ropa?", "en": "When will the clothes be ready?" },
+    { "sentence": "Llevo el traje a la tintorería", "en": "I'm taking the suit to the dry cleaner." }
+  ],
+  "translate": [
+    { "answer": "Esta mancha no sale", "en": "This stain will not come out" },
+    { "answer": "Ya doblé la ropa", "en": "I already folded the clothes" },
+    { "answer": "Se lava a mano", "en": "It is washed by hand" },
+    { "answer": "¿Cuánto cuesta el kilo?", "en": "How much is it per kilo?" },
+    { "answer": "La secadora no funciona", "en": "The dryer does not work" },
+    { "answer": "¿Qué quieres que haga?", "en": "What do you want me to do? (tú)" }
+  ]
+}

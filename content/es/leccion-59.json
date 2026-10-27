@@ -1,0 +1,84 @@
+{
+  "lesson": 59,
+  "slug": "leccion-59",
+  "icon": "📑",
+  "title": { "es": "Ayuda con trámites y papeles", "en": "Getting help with paperwork" },
+  "grammar": [
+    { "structure": "conectores: sin embargo, por lo tanto, además", "example": "Tiene todos los papeles; sin embargo, falta una firma.", "en": "Connectors: sin embargo (however), por lo tanto (therefore), además (also), en cambio (on the other hand)." },
+    { "structure": "aunque + subjuntivo / incluso si", "example": "Aunque sea inocente, tiene que presentarse.", "en": "«Aunque» + subjunctive concedes something without accepting it as relevant." },
+    { "structure": "pasiva con ser", "example": "La solicitud fue aprobada.", "en": "Official language loves the passive: fue aprobada, será revisada." },
+    { "structure": "es necesario que / hace falta que", "example": "Hace falta que traiga dos fotocopias.", "en": "Requirements: es necesario / hace falta que + subjunctive." },
+    { "structure": "cuando + subjuntivo (futuro)", "example": "Cuando tenga la cédula, podrá abrir la cuenta.", "en": "Future steps: cuando + subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Trámite» = paperwork, an official procedure. «Hacer un trámite» can take a whole morning!" },
+    { "en": "«Notaría» = notary's office. In Latin America many documents need to be «autenticados» (certified) there." },
+    { "en": "«Cédula» (Colombia, Ecuador, Venezuela) = ID card; «INE» (Mexico); «DNI» (Spain, Argentina, Peru)." },
+    { "en": "«Comprobante de domicilio» = proof of address (usually a utility bill)." },
+    { "en": "«Apostilla» = apostille, the international certification for foreign documents like birth certificates." }
+  ],
+  "vocabulary": [
+    { "word": "el trámite", "en": "the paperwork, the procedure" },
+    { "word": "la notaría", "en": "the notary's office" },
+    { "word": "el notario", "en": "the notary" },
+    { "word": "la solicitud", "en": "the application" },
+    { "word": "la firma", "en": "the signature" },
+    { "word": "firmar", "en": "to sign" },
+    { "word": "la fotocopia", "en": "the photocopy" },
+    { "word": "la cédula", "en": "the ID card (Colombia)" },
+    { "word": "el acta de nacimiento", "en": "the birth certificate" },
+    { "word": "la apostilla", "en": "the apostille" },
+    { "word": "el comprobante de domicilio", "en": "the proof of address" },
+    { "word": "el permiso de residencia", "en": "the residence permit" },
+    { "word": "renovar", "en": "to renew" },
+    { "word": "vencer", "en": "to expire" },
+    { "word": "el testigo", "en": "the witness" },
+    { "word": "aprobado", "en": "approved" }
+  ],
+  "phrases": [
+    { "phrase": "¿Qué documentos tengo que traer?", "en": "What documents do I need to bring?" },
+    { "phrase": "Hace falta que traiga dos fotocopias.", "en": "You need to bring two photocopies." },
+    { "phrase": "Firme aquí, por favor.", "en": "Sign here, please." },
+    { "phrase": "Mi pasaporte vence en marzo.", "en": "My passport expires in March." },
+    { "phrase": "Tengo que renovar la visa.", "en": "I have to renew my visa." },
+    { "phrase": "Necesitamos dos testigos.", "en": "We need two witnesses." },
+    { "phrase": "Su solicitud fue aprobada.", "en": "Your application was approved." },
+    { "phrase": "Tiene todo; sin embargo, falta una firma.", "en": "You have everything; however, a signature is missing." },
+    { "phrase": "Por lo tanto, tiene que volver mañana.", "en": "Therefore, you have to come back tomorrow." },
+    { "phrase": "Cuando tenga la cédula, avíseme.", "en": "When you have your ID, let me know." },
+    { "phrase": "¿Cuánto tarda el trámite?", "en": "How long does the procedure take?" },
+    { "phrase": "¡Por fin terminamos!", "en": "We're finally done!" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Qué conector expresa contraste?", "en": "Which connector expresses contrast?" }, "options": ["sin embargo", "además", "por lo tanto", "así que"], "correct": 0, "explanation": { "en": "«Sin embargo» = however." } },
+    { "question": { "es": "¿Qué conector expresa consecuencia?", "en": "Which connector expresses a consequence?" }, "options": ["por lo tanto", "en cambio", "sin embargo", "además"], "correct": 0, "explanation": { "en": "«Por lo tanto» = therefore." } },
+    { "question": { "es": "Completa: «Aunque ___ inocente, tiene que ir al juzgado.» (ser, sin importar)", "en": "Complete: «Aunque ___ inocente, tiene que ir al juzgado.» (ser, whether or not)" }, "options": ["sea", "es", "será", "era"], "correct": 0, "explanation": { "en": "Concession, not accepted as relevant: subjunctive." } },
+    { "question": { "es": "Completa: «Aunque ___ inocente, está en la cárcel.» (es un hecho)", "en": "Complete: «Aunque ___ inocente, está en la cárcel.» (it's a fact)" }, "options": ["es", "sea", "fuera", "será"], "correct": 0, "explanation": { "en": "A known fact after «aunque»: indicative." } },
+    { "question": { "es": "Pasa a voz pasiva: «La oficina aprobó la solicitud.»", "en": "Make it passive: «La oficina aprobó la solicitud.»" }, "options": ["La solicitud fue aprobada por la oficina.", "La solicitud fue aprobado por la oficina.", "La solicitud aprobó la oficina.", "La oficina fue aprobada por la solicitud."], "correct": 0, "explanation": { "en": "«Fue aprobada» agrees with «la solicitud»." } },
+    { "question": { "es": "Viste el accidente y la policía quiere hablar contigo. ¿Qué eres?", "en": "You saw the accident and the police want to talk to you. What are you?" }, "options": ["un testigo", "un notario", "un trámite", "una firma"], "correct": 0, "explanation": { "en": "«Testigo» = witness." } },
+    { "question": { "es": "Completa: «Cuando ___ la cédula, podrá abrir la cuenta.»", "en": "Complete: «Cuando ___ la cédula, podrá abrir la cuenta.»" }, "options": ["tenga", "tiene", "tendrá", "tenía"], "correct": 0, "explanation": { "en": "Future after «cuando»: subjunctive." } },
+    { "question": { "es": "Tu pasaporte ya no es válido después de marzo. ¿Cómo lo dices?", "en": "Your passport won't be valid after March. How do you say it?" }, "options": ["Mi pasaporte vence en marzo.", "Mi pasaporte gana en marzo.", "Mi pasaporte renueva en marzo.", "Mi pasaporte firma en marzo."], "correct": 0, "explanation": { "en": "«Vencer» = to expire." } }
+  ],
+  "story": {
+    "title": "Los papeles de la boda",
+    "text": "Para casarse en Colombia, Emily y Nicolás tienen que hacer muchos trámites. En la notaría, la secretaria les explica: «Hace falta que traigan el acta de nacimiento con apostilla, el pasaporte y dos testigos». Emily ya tiene el acta de nacimiento; sin embargo, no está apostillada. «¡Ay, no! Por lo tanto, tengo que pedirla otra vez a Estados Unidos», dice. Su mamá la ayuda desde Chicago y en dos semanas llega el documento. Además, el pasaporte de Nicolás vence pronto, así que también tiene que renovarlo en el consulado de México. Por fin, un viernes, firman todos los papeles. «Su solicitud fue aprobada», dice el notario. «¡Por fin terminamos!», gritan los dos.",
+    "en": "To get married in Colombia, Emily and Nicolás have to deal with a lot of paperwork. At the notary's office, the secretary explains: «You need to bring your birth certificate with an apostille, your passport and two witnesses». Emily already has her birth certificate; however, it isn't apostilled. «Oh no! Therefore I have to request it again from the United States», she says. Her mom helps her from Chicago and in two weeks the document arrives. In addition, Nicolás's passport expires soon, so he also has to renew it at the Mexican consulate. Finally, one Friday, they sign all the papers. «Your application was approved», says the notary. «We're finally done!» they both shout.",
+    "highlighted_words": ["trámites", "notaría", "Hace falta que traigan", "sin embargo", "Por lo tanto", "Además", "vence", "fue aprobada"]
+  },
+  "arrange": [
+    { "sentence": "¿Qué documentos tengo que traer mañana?", "en": "What documents do I need to bring tomorrow?" },
+    { "sentence": "Hace falta que traiga dos fotocopias", "en": "You need to bring two photocopies." },
+    { "sentence": "Tiene todo; sin embargo, falta una firma", "en": "You have everything; however, a signature is missing." },
+    { "sentence": "Mi pasaporte vence el próximo mes", "en": "My passport expires next month." },
+    { "sentence": "Su solicitud fue aprobada ayer", "en": "Your application was approved yesterday." },
+    { "sentence": "Cuando tenga la cédula, avíseme", "en": "When you have your ID, let me know." }
+  ],
+  "translate": [
+    { "answer": "Firme aquí, por favor", "en": "Sign here, please (usted)" },
+    { "answer": "Tengo que renovar la visa", "en": "I have to renew my visa" },
+    { "answer": "¿Cuánto tarda el trámite?", "en": "How long does the procedure take?" },
+    { "answer": "Mi pasaporte vence en marzo", "en": "My passport expires in March" },
+    { "answer": "Necesitamos dos testigos", "en": "We need two witnesses" },
+    { "answer": "¡Por fin terminamos!", "en": "We are finally done!" }
+  ]
+}

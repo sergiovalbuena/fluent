@@ -1,0 +1,84 @@
+{
+  "lesson": 51,
+  "slug": "leccion-51",
+  "icon": "🛳️",
+  "title": { "es": "En un crucero", "en": "On a cruise" },
+  "grammar": [
+    { "structure": "pluscuamperfecto para el contexto", "example": "Habíamos ahorrado durante dos años para este viaje.", "en": "The past perfect sets up what had happened before the story starts." },
+    { "structure": "pretérito para la cadena de hechos", "example": "El barco zarpó, empezó una tormenta y todos se asustaron.", "en": "The preterite moves the story forward: one event after another." },
+    { "structure": "cuando + subjuntivo", "example": "Cuando el barco llegue al puerto, bajaremos.", "en": "Future after «cuando»: subjunctive (llegue)." },
+    { "structure": "ningún / ninguna", "example": "El radar no detecta ningún barco.", "en": "«Ningún» before a masculine singular noun; Spanish keeps «no» before the verb too (double negative)." },
+    { "structure": "a bordo de", "example": "Hay tres mil personas a bordo.", "en": "«A bordo (de)» = on board." }
+  ],
+  "tips": [
+    { "en": "«Zarpar» = to set sail; «atracar» = to dock. «Levar anclas» is the classic sailor phrase." },
+    { "en": "Caribbean cruises often stop in Cartagena, Cozumel, Puerto Rico or the ABC islands (Aruba, Bonaire, Curaçao)." },
+    { "en": "«Estar mareado» = to be seasick / dizzy. Sit in the middle of the ship and look at the horizon." },
+    { "en": "«Babor» = port (left); «estribor» = starboard (right); «proa» = bow; «popa» = stern." },
+    { "en": "«Todo incluido» on cruises usually covers food, but not always drinks or excursions." }
+  ],
+  "vocabulary": [
+    { "word": "el crucero", "en": "the cruise, the cruise ship" },
+    { "word": "la cubierta", "en": "the deck" },
+    { "word": "el camarote", "en": "the cabin" },
+    { "word": "la proa", "en": "the bow" },
+    { "word": "la popa", "en": "the stern" },
+    { "word": "el puerto", "en": "the port" },
+    { "word": "la ola", "en": "the wave" },
+    { "word": "el ancla", "en": "the anchor" },
+    { "word": "zarpar", "en": "to set sail" },
+    { "word": "atracar", "en": "to dock" },
+    { "word": "el capitán", "en": "the captain" },
+    { "word": "la tripulación", "en": "the crew" },
+    { "word": "el bote salvavidas", "en": "the lifeboat" },
+    { "word": "el horizonte", "en": "the horizon" },
+    { "word": "a bordo", "en": "on board" },
+    { "word": "la excursión", "en": "the excursion" }
+  ],
+  "phrases": [
+    { "phrase": "¡Bienvenidos a bordo!", "en": "Welcome aboard!" },
+    { "phrase": "El barco zarpa a las seis.", "en": "The ship sets sail at six." },
+    { "phrase": "Nuestro camarote tiene balcón.", "en": "Our cabin has a balcony." },
+    { "phrase": "Vamos a la cubierta a ver el atardecer.", "en": "Let's go to the deck to watch the sunset." },
+    { "phrase": "Estoy mareada, hay muchas olas.", "en": "I'm seasick, there are lots of waves." },
+    { "phrase": "Mira el horizonte, ayuda.", "en": "Look at the horizon, it helps." },
+    { "phrase": "Cuando atraquemos, haremos la excursión.", "en": "When we dock, we'll do the excursion." },
+    { "phrase": "Habíamos ahorrado mucho para este viaje.", "en": "We had saved a lot for this trip." },
+    { "phrase": "No se ve ningún barco.", "en": "There's no ship in sight." },
+    { "phrase": "Póngase el chaleco salvavidas.", "en": "Put on your life jacket." },
+    { "phrase": "La tripulación es muy amable.", "en": "The crew is very kind." },
+    { "phrase": "¡Levamos anclas!", "en": "We're weighing anchor!" }
+  ],
+  "qa": [
+    { "question": { "es": "Quieres ver la estela del barco, en la parte de atrás. ¿Adónde vas?", "en": "You want to watch the ship's wake, at the back. Where do you go?" }, "options": ["a la popa", "a la proa", "al camarote", "al ancla"], "correct": 0, "explanation": { "en": "«Popa» = stern (back); «proa» = bow (front)." } },
+    { "question": { "es": "El barco estaba en el puerto y ahora sale al mar. ¿Qué hace?", "en": "The ship was in port and is now heading out to sea. What is it doing?" }, "options": ["Zarpa.", "Atraca.", "Se hunde.", "Se marea."], "correct": 0, "explanation": { "en": "«Zarpar» = to set sail; «atracar» = to dock." } },
+    { "question": { "es": "¿Qué frase da el contexto de la historia (algo que pasó antes)?", "en": "Which sentence gives the story's background (something that happened before)?" }, "options": ["Habíamos ahorrado durante años.", "Empezó una tormenta.", "El barco se detuvo.", "Nos rescataron."], "correct": 0, "explanation": { "en": "The past perfect (habíamos ahorrado) sets up earlier events." } },
+    { "question": { "es": "Completa: «Cuando el barco ___ al puerto, bajaremos.»", "en": "Complete: «Cuando el barco ___ al puerto, bajaremos.»" }, "options": ["llegue", "llega", "llegará", "llegaba"], "correct": 0, "explanation": { "en": "Future after «cuando»: subjunctive." } },
+    { "question": { "es": "¿Qué te pones en una emergencia en el mar?", "en": "What do you put on in an emergency at sea?" }, "options": ["el chaleco salvavidas", "el ancla", "el camarote", "la cubierta"], "correct": 0, "explanation": { "en": "«Chaleco salvavidas» = life jacket." } },
+    { "question": { "es": "Completa: «El radar no detecta ___ barco.»", "en": "Complete: «El radar no detecta ___ barco.»" }, "options": ["ningún", "ninguno", "nada", "nunca"], "correct": 0, "explanation": { "en": "«Ningún» before a masculine singular noun." } },
+    { "question": { "es": "Las olas son enormes y tienes ganas de vomitar. ¿Qué dices?", "en": "The waves are huge and you feel like throwing up. What do you say?" }, "options": ["Estoy mareada.", "Estoy a bordo.", "Estoy atracada.", "Estoy zarpada."], "correct": 0, "explanation": { "en": "«Estar mareado / mareada» = to be seasick." } },
+    { "question": { "es": "¿Cómo se llama el grupo de personas que trabaja en el barco?", "en": "What's the group of people who work on the ship called?" }, "options": ["la tripulación", "la excursión", "la cubierta", "el horizonte"], "correct": 0, "explanation": { "en": "«Tripulación» = crew." } }
+  ],
+  "story": {
+    "title": "Tormenta en el Caribe",
+    "text": "Para celebrar su compromiso, Emily y Nicolás hacen un crucero de Cartagena a Aruba. Habían ahorrado durante meses. El barco zarpa a las seis de la tarde y desde la cubierta ven cómo la ciudad se hace pequeña. Su camarote tiene un balcón con vista al mar. La primera noche, empieza una tormenta. Las olas son enormes y el barco se mueve mucho. Emily está mareada. «Mira el horizonte», le dice Nicolás. El capitán anuncia por los altavoces: «No hay ningún peligro. La tripulación está preparada». Al amanecer, el mar está tranquilo y el barco atraca en Aruba. «Cuando bajemos, quiero la playa más bonita de la isla», dice Emily.",
+    "en": "To celebrate their engagement, Emily and Nicolás take a cruise from Cartagena to Aruba. They had saved for months. The ship sets sail at six in the evening and from the deck they watch the city grow small. Their cabin has a balcony with a sea view. On the first night a storm begins. The waves are huge and the ship rocks a lot. Emily is seasick. «Look at the horizon», Nicolás tells her. The captain announces over the speakers: «There is no danger at all. The crew is prepared». At dawn the sea is calm and the ship docks in Aruba. «When we get off, I want the most beautiful beach on the island», says Emily.",
+    "highlighted_words": ["crucero", "Habían ahorrado", "zarpa", "cubierta", "camarote", "mareada", "horizonte", "ningún", "atraca"]
+  },
+  "arrange": [
+    { "sentence": "El barco zarpa a las seis de la tarde", "en": "The ship sets sail at six in the evening." },
+    { "sentence": "Nuestro camarote tiene vista al mar", "en": "Our cabin has a sea view." },
+    { "sentence": "Habíamos ahorrado mucho para este viaje", "en": "We had saved a lot for this trip." },
+    { "sentence": "Cuando atraquemos, haremos una excursión", "en": "When we dock, we'll go on an excursion." },
+    { "sentence": "Estoy mareada, hay muchas olas", "en": "I'm seasick, there are lots of waves." },
+    { "sentence": "¡Bienvenidos a bordo, señores pasajeros!", "en": "Welcome aboard, passengers!" }
+  ],
+  "translate": [
+    { "answer": "Bienvenidos a bordo", "en": "Welcome aboard" },
+    { "answer": "Estoy mareado", "en": "I am seasick (man)", "accept": ["Me mareo"] },
+    { "answer": "El barco zarpa a las seis", "en": "The ship sets sail at six", "accept": ["El barco sale a las seis"] },
+    { "answer": "Vamos a la cubierta", "en": "Let's go to the deck" },
+    { "answer": "No hay ningún peligro", "en": "There is no danger at all" },
+    { "answer": "Cuando lleguemos, te llamo", "en": "When we arrive, I will call you (tú)" }
+  ]
+}

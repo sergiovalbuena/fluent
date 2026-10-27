@@ -1,0 +1,84 @@
+{
+  "lesson": 56,
+  "slug": "leccion-56",
+  "icon": "💇",
+  "title": { "es": "En la estética", "en": "At the hair salon" },
+  "grammar": [
+    { "structure": "hacerse + algo (causativo)", "example": "Me hice un corte de pelo. Me voy a hacer las uñas.", "en": "«Hacerse» + service = to get something done (by someone else): me hice un corte = I got a haircut." },
+    { "structure": "cortarse el pelo", "example": "Mañana me corto el pelo.", "en": "Spanish also says «me corto el pelo» even when a hairdresser does it." },
+    { "structure": "querer que + subjuntivo", "example": "Quiero que me lo deje más corto.", "en": "Telling the stylist what you want: quiero que + subjunctive." },
+    { "structure": "pasiva con ser", "example": "Los masajes son hechos por especialistas.", "en": "Passive with «ser» + participle (agreeing). More natural: «los masajes los hacen especialistas»." },
+    { "structure": "es mejor que + subjuntivo", "example": "Es mejor que te pintes el pelo en la estética.", "en": "Advice: es mejor que + subjunctive." }
+  ],
+  "tips": [
+    { "en": "«Estética» (Mexico), «peluquería» (Spain, Colombia), «salón de belleza» (everywhere) = hair salon." },
+    { "en": "«Fleco» (Mexico) = «flequillo» (Spain) = «capul» (Colombia) = bangs / fringe." },
+    { "en": "«Rayitos» (Mexico) or «mechas» / «iluminaciones» = highlights. «Tinte» = hair dye." },
+    { "en": "«Lacio» (Latin America) = «liso» (Spain) = straight hair; «chino» (Mexico) = «rizado» = curly." },
+    { "en": "«Nada más las puntas» = just a trim (only the ends)." }
+  ],
+  "vocabulary": [
+    { "word": "la estética", "en": "the hair salon (Mexico)" },
+    { "word": "la peluquería", "en": "the hair salon" },
+    { "word": "el corte de pelo", "en": "the haircut" },
+    { "word": "las puntas", "en": "the ends (of hair)" },
+    { "word": "el fleco", "en": "the bangs (Mexico)" },
+    { "word": "los rayitos", "en": "the highlights (Mexico)" },
+    { "word": "el tinte", "en": "the hair dye" },
+    { "word": "el secador", "en": "the hair dryer" },
+    { "word": "el peine", "en": "the comb" },
+    { "word": "el cepillo", "en": "the brush" },
+    { "word": "el peinado", "en": "the hairstyle" },
+    { "word": "lacio", "en": "straight (hair)" },
+    { "word": "rizado", "en": "curly" },
+    { "word": "las uñas", "en": "the nails" },
+    { "word": "el masaje", "en": "the massage" },
+    { "word": "recortar", "en": "to trim" }
+  ],
+  "phrases": [
+    { "phrase": "Quisiera hacer una cita para un corte.", "en": "I'd like to book a haircut." },
+    { "phrase": "Nada más las puntas, por favor.", "en": "Just a trim, please." },
+    { "phrase": "Quiero que me lo deje más corto.", "en": "I want you to leave it shorter." },
+    { "phrase": "¿Me puede hacer rayitos?", "en": "Can you do highlights?" },
+    { "phrase": "Me hice un corte nuevo.", "en": "I got a new haircut." },
+    { "phrase": "Me voy a hacer las uñas.", "en": "I'm going to get my nails done." },
+    { "phrase": "Tengo el pelo rizado.", "en": "I have curly hair." },
+    { "phrase": "¿Me lo seca, por favor?", "en": "Could you blow-dry it, please?" },
+    { "phrase": "Me lavo el pelo todos los días.", "en": "I wash my hair every day." },
+    { "phrase": "Acabo de hacerme un masaje.", "en": "I've just had a massage." },
+    { "phrase": "Es mejor que vayas a la estética.", "en": "It's better if you go to the salon." },
+    { "phrase": "¡Te quedó precioso!", "en": "It looks beautiful on you!" }
+  ],
+  "qa": [
+    { "question": { "es": "Esta mañana fuiste a la estética y te cortaron el pelo. ¿Cómo lo dices?", "en": "This morning you went to the salon and got your hair cut. How do you say it?" }, "options": ["Me hice un corte de pelo.", "Hice un corte a mí.", "Corté mi pelo de mí.", "Me hice cortado."], "correct": 0, "explanation": { "en": "«Hacerse un corte» = to get a haircut." } },
+    { "question": { "es": "Completa: «Quiero que me lo ___ más corto.» (usted, dejar)", "en": "Complete: «Quiero que me lo ___ más corto.» (usted, dejar)" }, "options": ["deje", "deja", "dejará", "dejaba"], "correct": 0, "explanation": { "en": "«Querer que» + subjunctive: deje." } },
+    { "question": { "es": "Pasa a voz pasiva: «Pedro hace los masajes.»", "en": "Make it passive: «Pedro hace los masajes.»" }, "options": ["Los masajes son hechos por Pedro.", "Los masajes son hecho por Pedro.", "Pedro es hecho por los masajes.", "Los masajes hacen Pedro."], "correct": 0, "explanation": { "en": "Ser + participle agreeing with «los masajes»: son hechos." } },
+    { "question": { "es": "«¿El pelo? Juan me ___ cortó ayer.»", "en": "«¿El pelo? Juan me ___ cortó ayer.»" }, "options": ["lo", "la", "le", "los"], "correct": 0, "explanation": { "en": "«El pelo» is masculine singular: me lo cortó." } },
+    { "question": { "es": "¿Qué frase es correcta en español?", "en": "Which sentence is correct in Spanish?" }, "options": ["Me lavo el pelo.", "Lavo mi pelo de mí.", "Me lavo mi pelo mío.", "Lavo el pelo me."], "correct": 0, "explanation": { "en": "Reflexive + article: me lavo el pelo." } },
+    { "question": { "es": "Quieres unas mechas más claras en tu pelo castaño. ¿Qué pides en México?", "en": "You want some lighter streaks in your brown hair. What do you ask for in Mexico?" }, "options": ["rayitos", "un fleco", "un peine", "las uñas"], "correct": 0, "explanation": { "en": "«Rayitos» (Mexico) = highlights; «mechas» elsewhere." } },
+    { "question": { "es": "Completa: «Es mejor que ___ a la estética.» (tú, ir)", "en": "Complete: «Es mejor que ___ a la estética.» (tú, ir)" }, "options": ["vayas", "vas", "irás", "ibas"], "correct": 0, "explanation": { "en": "«Es mejor que» + subjunctive." } },
+    { "question": { "es": "Sales del spa: te dieron un masaje hace cinco minutos. ¿Cómo lo dices?", "en": "You're leaving the spa: you had a massage five minutes ago. How do you say it?" }, "options": ["Acabo de hacerme un masaje.", "Voy a hacerme un masaje.", "Acabo hacer masaje.", "Me hice masajeando."], "correct": 0, "explanation": { "en": "«Acabar de» + hacerse un masaje." } }
+  ],
+  "story": {
+    "title": "Lista para la boda",
+    "text": "La boda de Emily y Nicolás es en un mes, en Bogotá. Emily va a una peluquería para probar peinados. «Tengo el pelo un poco rizado y muy largo», le explica a la estilista, Daniela. «Para el día de la boda quiero algo sencillo y elegante.» Daniela le recomienda cortarse solo las puntas y hacerse unas mechas suaves. «Es mejor que no cambies mucho antes de la boda», dice. Mientras le seca el pelo, Daniela le cuenta que su hermana también se casa en diciembre. Al final, Emily se mira en el espejo. «¡Te quedó precioso!», dice Daniela. Antes de irse, Emily hace otra cita: el día de la boda se va a hacer las uñas y el peinado aquí.",
+    "en": "Emily and Nicolás's wedding is in a month, in Bogotá. Emily goes to a hair salon to try out hairstyles. «My hair is a bit curly and very long», she explains to the stylist, Daniela. «For the wedding day I want something simple and elegant.» Daniela recommends trimming just the ends and getting some soft highlights. «It's better not to change too much before the wedding», she says. While she blow-dries her hair, Daniela tells her that her sister is also getting married in December. At the end, Emily looks in the mirror. «It looks beautiful on you!» says Daniela. Before leaving, Emily books another appointment: on the wedding day she'll get her nails and hair done here.",
+    "highlighted_words": ["peluquería", "peinados", "rizado", "las puntas", "Es mejor que no cambies", "le seca el pelo", "Te quedó precioso", "se va a hacer las uñas"]
+  },
+  "arrange": [
+    { "sentence": "Nada más las puntas, por favor", "en": "Just a trim, please." },
+    { "sentence": "Quiero que me lo deje más corto", "en": "I want you to leave it shorter." },
+    { "sentence": "Me hice un corte de pelo nuevo", "en": "I got a new haircut." },
+    { "sentence": "Mañana me voy a hacer las uñas", "en": "Tomorrow I'm going to get my nails done." },
+    { "sentence": "Es mejor que no cambies mucho", "en": "It's better not to change too much." },
+    { "sentence": "¡Te quedó precioso el peinado!", "en": "Your hairstyle looks beautiful!" }
+  ],
+  "translate": [
+    { "answer": "Me corté el pelo", "en": "I got my hair cut", "accept": ["Me hice un corte de pelo", "Me corté el cabello"] },
+    { "answer": "Solo las puntas", "en": "Just the ends", "accept": ["Nada más las puntas"] },
+    { "answer": "Tengo el pelo rizado", "en": "I have curly hair", "accept": ["Tengo el pelo chino"] },
+    { "answer": "Me voy a hacer las uñas", "en": "I am going to get my nails done" },
+    { "answer": "¡Te quedó precioso!", "en": "It looks beautiful on you! (tú)" },
+    { "answer": "Quisiera hacer una cita", "en": "I would like to make an appointment" }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "lesson": 60,
+  "slug": "leccion-60",
+  "icon": "🌅",
+  "title": { "es": "La rutina diaria", "en": "Daily routines" },
+  "grammar": [
+    { "structure": "verbos reflexivos: me levanto, me ducho", "example": "Me levanto a las seis y me ducho.", "en": "Daily routine verbs are reflexive: levantarse, ducharse, vestirse (e → i: me visto), acostarse (o → ue: me acuesto)." },
+    { "structure": "soler + infinitivo", "example": "Suelo desayunar en casa.", "en": "«Soler» (o → ue) + infinitive = to usually do." },
+    { "structure": "cada + tiempo", "example": "Riego las plantas cada dos días.", "en": "«Cada dos días» = every other day; «cada semana» = every week." },
+    { "structure": "ojalá que + subjuntivo", "example": "Ojalá que podamos viajar pronto.", "en": "Wishes: ojalá (que) + subjunctive." },
+    { "structure": "femenino de sustantivos", "example": "el rey / la reina · el actor / la actriz · el gallo / la gallina", "en": "Some feminines are irregular: reina, actriz, gallina, yegua; others share the word: el / la médico, el / la piloto." }
+  ],
+  "tips": [
+    { "en": "Breakfast times vary, but lunch is late in many countries: 1–3 p.m. in Mexico and Colombia, 2–4 p.m. in Spain." },
+    { "en": "«Echarse una siesta» = to take a nap. The siesta is more of a stereotype than a daily habit in big cities." },
+    { "en": "«Arreglarse» = to get ready (clothes, hair, makeup)." },
+    { "en": "«Bañarse» (Latin America) often means to shower; in Spain «ducharse» is shower and «bañarse» is a bath or a swim." },
+    { "en": "Congratulations! You've completed 60 lessons. Keep practicing with MarIA, the mini-games and the stories." }
+  ],
+  "vocabulary": [
+    { "word": "la rutina", "en": "the routine" },
+    { "word": "despertarse", "en": "to wake up" },
+    { "word": "levantarse", "en": "to get up" },
+    { "word": "ducharse", "en": "to shower" },
+    { "word": "bañarse", "en": "to bathe, to shower (Latin America)" },
+    { "word": "cepillarse los dientes", "en": "to brush your teeth" },
+    { "word": "vestirse", "en": "to get dressed" },
+    { "word": "arreglarse", "en": "to get ready" },
+    { "word": "desayunar", "en": "to have breakfast" },
+    { "word": "almorzar", "en": "to have lunch" },
+    { "word": "acostarse", "en": "to go to bed" },
+    { "word": "dormirse", "en": "to fall asleep" },
+    { "word": "el despertador", "en": "the alarm clock" },
+    { "word": "la siesta", "en": "the nap" },
+    { "word": "soler", "en": "to usually (do)" },
+    { "word": "la reina", "en": "the queen" }
+  ],
+  "phrases": [
+    { "phrase": "Me despierto a las seis.", "en": "I wake up at six." },
+    { "phrase": "Me levanto, me ducho y me visto.", "en": "I get up, shower and get dressed." },
+    { "phrase": "Suelo desayunar en casa.", "en": "I usually have breakfast at home." },
+    { "phrase": "Saco a pasear al perro cada mañana.", "en": "I walk the dog every morning." },
+    { "phrase": "Almorzamos a la una.", "en": "We have lunch at one." },
+    { "phrase": "Los domingos me echo una siesta.", "en": "On Sundays I take a nap." },
+    { "phrase": "Me acuesto a las once.", "en": "I go to bed at eleven." },
+    { "phrase": "Riego las plantas cada dos días.", "en": "I water the plants every other day." },
+    { "phrase": "Ojalá que podamos viajar pronto.", "en": "I hope we can travel soon." },
+    { "phrase": "Me gustaría viajar más.", "en": "I'd like to travel more." },
+    { "phrase": "No sonó el despertador.", "en": "The alarm didn't go off." },
+    { "phrase": "¡Qué rápido pasa el tiempo!", "en": "How time flies!" }
+  ],
+  "qa": [
+    { "question": { "es": "¿Cuál es el femenino de «rey»?", "en": "What is the feminine of «rey»?" }, "options": ["reina", "reya", "reyesa", "reyna"], "correct": 0, "explanation": { "en": "Rey → reina (irregular)." } },
+    { "question": { "es": "¿Cuál es el femenino de «actor»?", "en": "What is the feminine of «actor»?" }, "options": ["actriz", "actora", "actoresa", "actrisa"], "correct": 0, "explanation": { "en": "Actor → actriz." } },
+    { "question": { "es": "¿Cuál es el femenino de «gallo»?", "en": "What is the feminine of «gallo»?" }, "options": ["gallina", "galla", "gallesa", "pollita"], "correct": 0, "explanation": { "en": "Gallo (rooster) → gallina (hen)." } },
+    { "question": { "es": "Completa: «Hay que regar las plantas ___ dos días.»", "en": "Complete: «Hay que regar las plantas ___ dos días.»" }, "options": ["cada", "todos", "cualquier", "por"], "correct": 0, "explanation": { "en": "«Cada dos días» = every other day (also «un día sí y un día no»)." } },
+    { "question": { "es": "Completa: «Ojalá que ___ viajar pronto.» (nosotros, poder)", "en": "Complete: «Ojalá que ___ viajar pronto.» (nosotros, poder)" }, "options": ["podamos", "podemos", "podremos", "podríamos"], "correct": 0, "explanation": { "en": "«Ojalá» + subjunctive." } },
+    { "question": { "es": "¿Cómo expresas un deseo con cortesía?", "en": "How do you express a wish politely?" }, "options": ["Me gustaría viajar más.", "Me gusta viajar más ayer.", "Me gustará viajar ayer.", "Me gustaba viajar mañana."], "correct": 0, "explanation": { "en": "Conditional «me gustaría» = I'd like." } },
+    { "question": { "es": "Completa: «Normalmente ___ desayunar en casa.» (yo, soler)", "en": "Complete: «Normalmente ___ desayunar en casa.» (yo, soler)" }, "options": ["suelo", "solo", "soleo", "suelto"], "correct": 0, "explanation": { "en": "«Soler» (o → ue): suelo + infinitive." } },
+    { "question": { "es": "¿Qué forma es la más usada hoy para una mujer que es médica?", "en": "Which form is most used today for a female doctor?" }, "options": ["la médica", "la médicesa", "la medicina", "la médicotriz"], "correct": 0, "explanation": { "en": "«La médica» is standard today; «la médico» is also heard." } }
+  ],
+  "story": {
+    "title": "Un día normal",
+    "text": "Ya pasaron seis meses desde la boda. Emily y Nicolás viven en un apartamento con vista a las montañas de Bogotá. Su rutina es sencilla. Emily se despierta a las seis, saca a pasear a Taco y prepara un tinto. Nicolás suele levantarse más tarde porque trabaja hasta la noche. Emily se ducha, se viste y trabaja desde casa hasta la una. Almuerzan juntos casi todos los días. Por la tarde, Emily habla con Valeria y Diego por videollamada, y los domingos llama a su familia y a la señora Carmen. Antes de acostarse, escribe en su cuaderno las palabras nuevas del día, como hacía en la Ciudad de México. «¡Qué rápido pasa el tiempo!», piensa. «Ojalá que nunca deje de aprender.»",
+    "en": "Six months have passed since the wedding. Emily and Nicolás live in an apartment with a view of Bogotá's mountains. Their routine is simple. Emily wakes up at six, walks Taco and makes a black coffee. Nicolás usually gets up later because he works until night. Emily showers, gets dressed and works from home until one. They have lunch together almost every day. In the afternoon, Emily talks to Valeria and Diego on video calls, and on Sundays she calls her family and Mrs. Carmen. Before going to bed, she writes the day's new words in her notebook, as she used to do in Mexico City. «How time flies!» she thinks. «I hope I never stop learning.»",
+    "highlighted_words": ["se despierta", "suele levantarse", "se ducha", "se viste", "Almuerzan", "acostarse", "Qué rápido pasa el tiempo", "Ojalá"]
+  },
+  "arrange": [
+    { "sentence": "Me levanto a las seis todos los días", "en": "I get up at six every day." },
+    { "sentence": "Suelo desayunar café con pan", "en": "I usually have coffee and bread for breakfast." },
+    { "sentence": "Me ducho y me visto rápidamente", "en": "I shower and get dressed quickly." },
+    { "sentence": "Los domingos me echo una siesta", "en": "On Sundays I take a nap." },
+    { "sentence": "Riego las plantas cada dos días", "en": "I water the plants every other day." },
+    { "sentence": "Ojalá que podamos viajar pronto", "en": "I hope we can travel soon." }
+  ],
+  "translate": [
+    { "answer": "Me levanto temprano", "en": "I get up early" },
+    { "answer": "Me acuesto a las once", "en": "I go to bed at eleven" },
+    { "answer": "Suelo desayunar en casa", "en": "I usually have breakfast at home" },
+    { "answer": "No sonó el despertador", "en": "The alarm did not go off" },
+    { "answer": "Me gustaría viajar más", "en": "I would like to travel more" },
+    { "answer": "¡Qué rápido pasa el tiempo!", "en": "How time flies!" }
+  ]
+}

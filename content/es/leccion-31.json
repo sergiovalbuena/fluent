@@ -1,0 +1,84 @@
+{
+  "lesson": 31,
+  "slug": "leccion-31",
+  "icon": "🧳",
+  "title": { "es": "En la agencia de viajes", "en": "At the travel agency" },
+  "grammar": [
+    { "structure": "es necesario que + subjuntivo", "example": "Es necesario que hagas la maleta hoy.", "en": "Necessity about someone else: es necesario / hace falta que + subjunctive." },
+    { "structure": "tener que + infinitivo", "example": "Tengo que salir mañana temprano.", "en": "Personal obligation: tener que + infinitive (no subjunctive needed)." },
+    { "structure": "me gustaría + infinitivo", "example": "Me gustaría reservar un vuelo.", "en": "The conditional «me gustaría» = I'd like (to)." },
+    { "structure": "solo es / no es más que", "example": "Solo es un viaje de trabajo.", "en": "«Solo» or «no… más que» = only." },
+    { "structure": "lo menos / lo más + adjetivo + posible", "example": "Llevamos lo menos posible.", "en": "«Lo menos posible» = as little as possible; «lo antes posible» = as soon as possible." }
+  ],
+  "tips": [
+    { "en": "«Paquete todo incluido» = all-inclusive package. Very popular in Cancún and Punta Cana." },
+    { "en": "«Luna de miel» = honeymoon. «Viaje de negocios» or «viaje de trabajo» = business trip." },
+    { "en": "«Reservar» is used everywhere; in Mexico you'll also hear «apartar» for holding something." },
+    { "en": "Many Latin American countries ask for a «tarjeta de turista» or a migration form on arrival, sometimes online before you fly." },
+    { "en": "«En el extranjero» = abroad. «Extranjero» is also the word for foreigner." }
+  ],
+  "vocabulary": [
+    { "word": "la agencia de viajes", "en": "the travel agency" },
+    { "word": "el paquete", "en": "the package (deal)" },
+    { "word": "la reserva", "en": "the reservation" },
+    { "word": "reservar", "en": "to book" },
+    { "word": "el vuelo", "en": "the flight" },
+    { "word": "el destino", "en": "the destination" },
+    { "word": "el itinerario", "en": "the itinerary" },
+    { "word": "el seguro de viaje", "en": "the travel insurance" },
+    { "word": "la temporada alta", "en": "the high season" },
+    { "word": "la luna de miel", "en": "the honeymoon" },
+    { "word": "el viaje de negocios", "en": "the business trip" },
+    { "word": "incluido", "en": "included" },
+    { "word": "el extranjero", "en": "abroad, the foreigner" },
+    { "word": "hacer la maleta", "en": "to pack (a suitcase)" },
+    { "word": "la oferta", "en": "the deal, the offer" },
+    { "word": "el folleto", "en": "the brochure" }
+  ],
+  "phrases": [
+    { "phrase": "Me gustaría reservar un viaje a Cartagena.", "en": "I'd like to book a trip to Cartagena." },
+    { "phrase": "¿Qué incluye el paquete?", "en": "What does the package include?" },
+    { "phrase": "El desayuno está incluido.", "en": "Breakfast is included." },
+    { "phrase": "¿Tienen alguna oferta?", "en": "Do you have any deals?" },
+    { "phrase": "Es temporada alta.", "en": "It's high season." },
+    { "phrase": "Solo es un viaje de negocios.", "en": "It's only a business trip." },
+    { "phrase": "Es nuestra luna de miel.", "en": "It's our honeymoon." },
+    { "phrase": "Tengo que hacer la maleta.", "en": "I have to pack my suitcase." },
+    { "phrase": "No olvides el pasaporte.", "en": "Don't forget your passport." },
+    { "phrase": "Llevamos lo menos posible.", "en": "We're taking as little as possible." },
+    { "phrase": "Voy a vivir en el extranjero.", "en": "I'm going to live abroad." },
+    { "phrase": "Es necesario que confirmes la reserva.", "en": "You need to confirm the reservation." }
+  ],
+  "qa": [
+    { "question": { "es": "Completa: «Es necesario que ___ la maleta esta noche.» (tú, hacer)", "en": "Complete: «Es necesario que ___ la maleta esta noche.» (tú, hacer)" }, "options": ["hagas", "haces", "harás", "hacías"], "correct": 0, "explanation": { "en": "«Es necesario que» + subjunctive: hagas." } },
+    { "question": { "es": "Completa: «Tengo que ___ mañana temprano.»", "en": "Complete: «Tengo que ___ mañana temprano.»" }, "options": ["salir", "salga", "salgo", "saldré"], "correct": 0, "explanation": { "en": "«Tener que» + infinitive." } },
+    { "question": { "es": "Tu compañera cree que te vas de vacaciones, pero solo vas a trabajar tres días a Bogotá. ¿Qué dices?", "en": "Your coworker thinks you're going on vacation, but you're only working in Bogotá for three days. What do you say?" }, "options": ["Solo es un viaje de negocios.", "No es un viaje de negocios.", "Ya no es un viaje de negocios.", "Es solo de negocios viajes."], "correct": 0, "explanation": { "en": "«Solo es» = it's only." } },
+    { "question": { "es": "Justo después de casarse, Pablo y Ana se van dos semanas a Bali. ¿Cómo se llama este viaje?", "en": "Right after their wedding, Pablo and Ana go to Bali for two weeks. What is this trip called?" }, "options": ["la luna de miel", "el viaje de negocios", "el viaje escolar", "la temporada alta"], "correct": 0, "explanation": { "en": "«Luna de miel» = honeymoon." } },
+    { "question": { "es": "Tu amigo sale al aeropuerto. ¿Cómo le recuerdas que lleve el pasaporte?", "en": "Your friend is leaving for the airport. How do you remind him to take his passport?" }, "options": ["¡No olvides el pasaporte!", "¡No olvidas el pasaporte!", "¡Olvida no el pasaporte!", "¡No olvidar tú el pasaporte!"], "correct": 0, "explanation": { "en": "Negative tú command = no + subjunctive: no olvides." } },
+    { "question": { "es": "En el hotel no pagas el desayuno aparte: está en el precio. ¿Qué dice el folleto?", "en": "At the hotel you don't pay extra for breakfast: it's in the price. What does the brochure say?" }, "options": ["Desayuno incluido", "Desayuno aparte", "Desayuno cerrado", "Desayuno pagado extra"], "correct": 0, "explanation": { "en": "«Incluido» = included." } },
+    { "question": { "es": "Completa: «Llevamos lo ___ posible: solo una mochila.»", "en": "Complete: «Llevamos lo ___ posible: solo una mochila.»" }, "options": ["menos", "poco", "mínimo que", "menor"], "correct": 0, "explanation": { "en": "«Lo menos posible» = as little as possible." } },
+    { "question": { "es": "Vas a vivir dos años en otro país. ¿Cómo lo dices?", "en": "You're going to live in another country for two years. How do you say it?" }, "options": ["Voy a vivir en el extranjero.", "Voy a vivir en extraño.", "Voy a vivir al extranjero de.", "Voy a vivir extranjera."], "correct": 0, "explanation": { "en": "«En el extranjero» = abroad." } }
+  ],
+  "story": {
+    "title": "Planes para Cartagena",
+    "text": "Emily quiere ir a Colombia en diciembre con Nicolás. El sábado van a una agencia de viajes. «Me gustaría reservar un viaje a Cartagena para dos personas», dice Emily. La agente, una señora muy amable, les muestra varios folletos. «Este paquete incluye el vuelo, el hotel y el desayuno. Pero es temporada alta y los precios suben mucho.» «¿Tienen alguna oferta?», pregunta Nicolás. «Si viajan del ocho al quince, hay un descuento del veinte por ciento.» Emily mira a Nicolás y sonríe. «¡Perfecto!» Antes de salir, la agente les dice: «Es necesario que confirmen la reserva antes del viernes y que revisen sus pasaportes». Esa noche, Emily ya está pensando qué va a meter en la maleta.",
+    "en": "Emily wants to go to Colombia in December with Nicolás. On Saturday they go to a travel agency. «I'd like to book a trip to Cartagena for two people», says Emily. The agent, a very kind lady, shows them several brochures. «This package includes the flight, the hotel and breakfast. But it's high season and prices go up a lot.» «Do you have any deals?» asks Nicolás. «If you travel from the 8th to the 15th, there's a twenty percent discount.» Emily looks at Nicolás and smiles. «Perfect!» Before they leave, the agent tells them: «You need to confirm the reservation before Friday and check your passports». That night Emily is already thinking about what she'll put in her suitcase.",
+    "highlighted_words": ["Me gustaría reservar", "folletos", "paquete", "temporada alta", "oferta", "Es necesario que", "la maleta"]
+  },
+  "arrange": [
+    { "sentence": "Me gustaría reservar un vuelo a Lima", "en": "I'd like to book a flight to Lima." },
+    { "sentence": "¿Qué incluye el paquete exactamente?", "en": "What exactly does the package include?" },
+    { "sentence": "El desayuno está incluido en el precio", "en": "Breakfast is included in the price." },
+    { "sentence": "Es necesario que confirmes la reserva", "en": "You need to confirm the reservation." },
+    { "sentence": "Tengo que hacer la maleta esta noche", "en": "I have to pack my suitcase tonight." },
+    { "sentence": "Solo es un viaje de negocios", "en": "It's only a business trip." }
+  ],
+  "translate": [
+    { "answer": "Me gustaría reservar un viaje", "en": "I would like to book a trip" },
+    { "answer": "¿Qué incluye?", "en": "What does it include?" },
+    { "answer": "El desayuno está incluido", "en": "Breakfast is included" },
+    { "answer": "Tengo que hacer la maleta", "en": "I have to pack my suitcase" },
+    { "answer": "No olvides el pasaporte", "en": "Do not forget your passport (tú)" },
+    { "answer": "¿Tienen alguna oferta?", "en": "Do you have any deals? (ustedes)" }
+  ]
+}
