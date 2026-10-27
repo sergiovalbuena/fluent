@@ -1,0 +1,157 @@
+{
+  "slug": "reflexivos",
+  "number": 10,
+  "part": 3,
+  "level": "A2",
+  "title": "Reflexive verbs",
+  "tagline": "Me levanto, te duchas, se llama: the daily routine and verbs with se.",
+  "goal": "Conjugate reflexive verbs, place the pronoun correctly (before the verb or attached), and recognize verbs that change meaning with se.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "The pronoun goes with the verb",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Reflexive verbs end in **-se** in the dictionary (*levantarse*). The *se* changes with the person and goes **before** the conjugated verb:"
+        },
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "levantarse", "meaning": "to get up", "forms": ["{me} levanto", "{te} levantas", "{se} levanta", "{nos} levantamos", "{se} levantan"] },
+            { "verb": "vestirse", "meaning": "to get dressed (e → i)", "forms": ["{me} visto", "{te} vistes", "{se} viste", "{nos} vestimos", "{se} visten"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "With an infinitive or a gerund, the pronoun can also go at the end: *Me voy a duchar = Voy a duchar{me}. Me estoy vistiendo = Estoy vistiéndo{me}.*"
+        }
+      ]
+    },
+    {
+      "id": "rutina",
+      "title": "The daily routine",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Verb", "English"],
+          "rows": [
+            ["*despertarse (e → ie)*", "to wake up"],
+            ["*levantarse*", "to get up"],
+            ["*ducharse / bañarse*", "to shower / to bathe (to shower, in much of Latin America)"],
+            ["*lavarse los dientes, cepillarse*", "to brush (teeth, hair)"],
+            ["*vestirse (e → i)*", "to get dressed"],
+            ["*arreglarse*", "to get ready"],
+            ["*acostarse (o → ue)*", "to go to bed"],
+            ["*dormirse (o → ue)*", "to fall asleep"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "No «my» with the body",
+          "text": "*Me lavo {las} manos* (I wash my hands), never «me lavo mis manos». The reflexive pronoun already says whose."
+        }
+      ]
+    },
+    {
+      "id": "significado",
+      "title": "Se changes the meaning",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Without se", "With se"],
+          "rows": [
+            ["*ir* = to go", "*irse* = to leave"],
+            ["*dormir* = to sleep", "*dormirse* = to fall asleep"],
+            ["*llamar* = to call", "*llamarse* = to be called"],
+            ["*quedar* = to arrange to meet", "*quedarse* = to stay"],
+            ["*poner* = to put", "*ponerse* = to put on (clothes), to become"],
+            ["*acordar* = to agree", "*acordarse de* = to remember"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Nos {vemos} mañana.", "tr": "See you tomorrow.", "note": "reciprocal: each other" },
+            { "fr": "Ana y Luis {se quieren} mucho.", "tr": "Ana and Luis love each other a lot." }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "section": "formas",
+      "title": "Conjugate",
+      "instructions": "Write the reflexive verb in the present, with its pronoun.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Yo ___ a las seis. (levantarse)", "answer": "me levanto" },
+        { "prompt": "¿A qué hora ___ tú? (acostarse)", "answer": "te acuestas" },
+        { "prompt": "Mi hermano ___ muy rápido. (vestirse)", "answer": "se viste" },
+        { "prompt": "Nosotros ___ por la noche. (ducharse)", "answer": "nos duchamos" },
+        { "prompt": "Ellos ___ temprano. (despertarse)", "answer": "se despiertan" },
+        { "prompt": "¿Cómo ___ usted? (llamarse)", "answer": "se llama" }
+      ]
+    },
+    {
+      "id": "posicion",
+      "section": "formas",
+      "title": "Where does the pronoun go?",
+      "instructions": "Choose the correct sentence.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "options": ["Me voy a duchar.", "Voy me a duchar.", "Voy a me duchar."], "answer": "Me voy a duchar." },
+        { "options": ["Voy a ducharme.", "Voy a duchar me.", "Voy ducharme a."], "answer": "Voy a ducharme." },
+        { "options": ["Me estoy vistiendo.", "Estoy me vistiendo.", "Estoy vistiendo me."], "answer": "Me estoy vistiendo." },
+        { "options": ["Me lavo las manos.", "Lavo mis manos.", "Me lavo mis manos."], "answer": "Me lavo las manos." }
+      ]
+    },
+    {
+      "id": "con-sin",
+      "section": "significado",
+      "title": "With or without se?",
+      "instructions": "Choose the verb that fits the meaning.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Ya es tarde, ___. (I'm leaving)", "options": ["me voy", "voy"], "answer": "me voy" },
+        { "prompt": "Anoche ___ viendo la tele. (I fell asleep)", "options": ["me dormí", "dormí"], "answer": "me dormí" },
+        { "prompt": "Hoy ___ en casa. (I'm staying)", "options": ["me quedo", "quedo"], "answer": "me quedo" },
+        { "prompt": "¿___ de mí? (Do you remember…)", "options": ["Te acuerdas", "Acuerdas"], "answer": "Te acuerdas" },
+        { "prompt": "Hace frío, ___ el abrigo. (I put on)", "options": ["me pongo", "pongo"], "answer": "me pongo" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I get up at seven.", "answer": "Me levanto a las siete." },
+        { "prompt": "What's your name? (tú)", "answer": "¿Cómo te llamas?" },
+        { "prompt": "We go to bed late.", "answer": "Nos acostamos tarde." },
+        { "prompt": "I brush my teeth.", "answer": "Me lavo los dientes.", "accept": ["Me cepillo los dientes."] },
+        { "prompt": "I'm leaving.", "answer": "Me voy." },
+        { "prompt": "See you tomorrow.", "answer": "Nos vemos mañana." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I conjugate reflexive verbs with me, te, se, nos, se.",
+    "I put the pronoun before the verb or attach it to an infinitive.",
+    "I say me lavo las manos, not «mis manos».",
+    "I know irse, dormirse, quedarse and acordarse de."
+  ],
+  "challenge": {
+    "title": "Your routine",
+    "text": "Describe your weekday routine from waking up to falling asleep with at least six reflexive verbs: *Me despierto a las seis, me levanto a las seis y diez, me ducho…*"
+  }
+}

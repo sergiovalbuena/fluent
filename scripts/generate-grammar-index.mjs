@@ -34,6 +34,15 @@ const PARTS = {
       { number: 7, title: 'Traps and details', description: 'Tricky genders, accents, the aspirated h and the French of text messages.' },
     ],
   },
+  es: {
+    en: [
+      { number: 1, title: 'Sounds and basics', description: 'How Spanish sounds, gender and number, ser and estar, and the regular present.' },
+      { number: 2, title: 'The present in everyday life', description: 'Questions and negation, irregular present, gustar, tener and hay, adjectives and possessives.' },
+      { number: 3, title: 'Telling the past', description: 'Reflexive verbs, the preterite, the imperfect, which one to use, and the perfect tenses.' },
+      { number: 4, title: 'Pronouns, future and more', description: 'Object pronouns, future and conditional, comparisons, commands, and por or para.' },
+      { number: 5, title: 'The subjunctive and beyond', description: 'The present and imperfect subjunctive, if-clauses, the many uses of se, and traps for English speakers.' },
+    ],
+  },
 }
 
 // CEFR levels a module can have

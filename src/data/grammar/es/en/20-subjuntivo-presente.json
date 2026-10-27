@@ -1,0 +1,162 @@
+{
+  "slug": "subjuntivo-presente",
+  "number": 20,
+  "part": 5,
+  "level": "B1",
+  "title": "The present subjunctive",
+  "tagline": "Quiero que vengas, ojalá llueva: wishes, requests and feelings about others.",
+  "goal": "Form the present subjunctive, including irregular verbs, and use it after wishes, requests, emotions and ojalá.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "How to form it",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Take the **yo** form of the present, drop the -o, and switch the vowel: -ar verbs take **e**, -er / -ir verbs take **a**. Irregular yo forms carry over: *tengo → tenga*."
+        },
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "hablar", "meaning": "to speak", "forms": ["habl{e}", "habl{es}", "habl{e}", "habl{emos}", "habl{en}"] },
+            { "verb": "comer", "meaning": "to eat", "forms": ["com{a}", "com{as}", "com{a}", "com{amos}", "com{an}"] },
+            { "verb": "tener", "meaning": "to have (tengo)", "forms": ["teng{a}", "teng{as}", "teng{a}", "teng{amos}", "teng{an}"] }
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["Irregular", "Subjunctive"],
+          "rows": [
+            ["*ser*", "*sea, seas, sea, seamos, sean*"],
+            ["*ir*", "*vaya, vayas, vaya, vayamos, vayan*"],
+            ["*estar*", "*esté, estés, esté, estemos, estén*"],
+            ["*saber*", "*sepa, sepas…*"],
+            ["*haber*", "*haya, hayas…*"],
+            ["*dar*", "*dé, des, dé, demos, den*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deseos",
+      "title": "Wishes and requests about others",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "When one person wants, asks or recommends that **someone else** does something, the second verb goes in the subjunctive. English often uses an infinitive here: «I want **you to come**» = *Quiero que **vengas***."
+        },
+        {
+          "type": "formula",
+          "text": "querer / pedir / recomendar / necesitar + que + subjuntivo"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Quiero que {vengas} a mi fiesta.", "tr": "I want you to come to my party." },
+            { "fr": "Te pido que me {ayudes}.", "tr": "I'm asking you to help me." },
+            { "fr": "El médico recomienda que {descanse}.", "tr": "The doctor recommends that I rest." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Same person → infinitive",
+          "text": "*Quiero ir* (I want to go) but *Quiero que {vayas}* (I want you to go). The subjunctive needs two different people."
+        }
+      ]
+    },
+    {
+      "id": "emociones",
+      "title": "Feelings, judgments and ojalá",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Trigger", "Example", "English"],
+          "rows": [
+            ["*Me alegra que…*", "*Me alegra que {estés} aquí.*", "I'm glad you're here."],
+            ["*Siento que…*", "*Siento que no {puedas} venir.*", "I'm sorry you can't come."],
+            ["*Es importante que…*", "*Es importante que {lleguemos} a tiempo.*", "It's important that we arrive on time."],
+            ["*Es mejor que…*", "*Es mejor que {vayas} al médico.*", "You'd better go to the doctor."],
+            ["*Ojalá (que)…*", "*Ojalá {haga} sol mañana.*", "I hope it's sunny tomorrow."]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "section": "formas",
+      "title": "Form the subjunctive",
+      "instructions": "Write the present subjunctive.",
+      "kind": "type",
+      "items": [
+        { "prompt": "que yo ___ (hablar)", "answer": "hable" },
+        { "prompt": "que tú ___ (comer)", "answer": "comas" },
+        { "prompt": "que ella ___ (vivir)", "answer": "viva" },
+        { "prompt": "que nosotros ___ (tener)", "answer": "tengamos" },
+        { "prompt": "que ellos ___ (hacer)", "answer": "hagan" },
+        { "prompt": "que tú ___ (ser)", "answer": "seas" },
+        { "prompt": "que usted ___ (ir)", "answer": "vaya" },
+        { "prompt": "que yo ___ (estar)", "answer": "esté" }
+      ]
+    },
+    {
+      "id": "deseos",
+      "section": "deseos",
+      "title": "Infinitive or subjunctive?",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Quiero ___ a la playa. (I want to go)", "options": ["ir", "que vaya", "vaya"], "answer": "ir" },
+        { "prompt": "Quiero que tú ___ a la playa.", "options": ["vayas", "vas", "ir"], "answer": "vayas" },
+        { "prompt": "Te pido que me ___ con la mudanza.", "options": ["ayudes", "ayudas", "ayudar"], "answer": "ayudes" },
+        { "prompt": "El médico me recomienda que ___ más agua.", "options": ["tome", "tomo", "tomar"], "answer": "tome" },
+        { "prompt": "Necesito ___ más.", "options": ["dormir", "que duerma", "duermo"], "answer": "dormir" },
+        { "prompt": "Mis padres quieren que yo ___ médico.", "options": ["sea", "soy", "ser"], "answer": "sea" }
+      ]
+    },
+    {
+      "id": "emociones",
+      "section": "emociones",
+      "title": "Feelings and ojalá",
+      "instructions": "Write the verb in the subjunctive.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Me alegra que ___ aquí. (estar, tú)", "answer": "estés" },
+        { "prompt": "Ojalá ___ sol mañana. (hacer)", "answer": "haga" },
+        { "prompt": "Es importante que ___ a tiempo. (llegar, nosotros)", "answer": "lleguemos" },
+        { "prompt": "Siento que no ___ venir. (poder, tú)", "answer": "puedas" },
+        { "prompt": "Es mejor que ___ al médico. (ir, usted)", "answer": "vaya" },
+        { "prompt": "Ojalá que ___ suerte. (tener, ellos)", "answer": "tengan" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I want you to come. (tú)", "answer": "Quiero que vengas." },
+        { "prompt": "I hope you're well. (tú)", "answer": "Espero que estés bien.", "accept": ["Ojalá estés bien.", "Ojalá que estés bien."] },
+        { "prompt": "I'm glad you're here. (tú)", "answer": "Me alegra que estés aquí." },
+        { "prompt": "It's important that you rest. (tú)", "answer": "Es importante que descanses." },
+        { "prompt": "I hope it doesn't rain.", "answer": "Ojalá no llueva.", "accept": ["Ojalá que no llueva.", "Espero que no llueva."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the present subjunctive from the yo form.",
+    "I know sea, vaya, esté, sepa, haya, dé.",
+    "I use querer / pedir / recomendar que + subjunctive, and the infinitive for the same person.",
+    "I use the subjunctive after feelings, judgments and ojalá."
+  ],
+  "challenge": {
+    "title": "Wishes",
+    "text": "Write five wishes for people you love with ojalá or espero que, and three things you want others to do with quiero que: *Ojalá mi hermano encuentre un buen trabajo. Quiero que mis padres vengan a visitarme.*"
+  }
+}

@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils'
 type Filter = 'all' | 'essentials'
 type Ending = NonNullable<VerbEntry['ending']>
 type Kind = 'all' | 'regular' | 'irregular'
-const ENDINGS: Ending[] = ['er', 'ir', 're', 'oir']
+const ENDINGS: Ending[] = ['ar', 'er', 'ir', 're', 'oir']
 
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 
@@ -145,13 +145,13 @@ export default function VerbsPage() {
                       </button>
                     ))}
                   </div>
-                  {/* By ending (French) and regular / irregular */}
+                  {/* By ending (French, Spanish) and regular / irregular */}
                   <div className="flex flex-wrap items-center gap-1.5">
                     {endings.length > 0 && (
                       <>
                         <span className="pr-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">{t('ending')}</span>
                         {endings.map(({ e, count }) => (
-                          <FilterChip key={e} active={ending === e} onClick={() => setEnding(ending === e ? null : e)} title={t(`group_${e}`)}>
+                          <FilterChip key={e} active={ending === e} onClick={() => setEnding(ending === e ? null : e)} title={t(index?.language === 'es' ? `group_es_${e}` : `group_${e}`)}>
                             -{e} <span className="opacity-50">{count}</span>
                           </FilterChip>
                         ))}

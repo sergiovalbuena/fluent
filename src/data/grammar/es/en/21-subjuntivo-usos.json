@@ -1,0 +1,144 @@
+{
+  "slug": "subjuntivo-usos",
+  "number": 21,
+  "part": 5,
+  "level": "B1",
+  "title": "Cuando, para que, aunque",
+  "tagline": "The subjunctive after time words, purpose, doubt and «although».",
+  "goal": "Use the subjunctive after cuando (future), para que, antes de que, aunque, doubt and «looking for something that…», and know when the indicative stays.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "cuando",
+      "title": "Cuando + future = subjunctive",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English says «When I **have** money» (present). Spanish uses the **subjunctive** when *cuando* refers to the future:"
+        },
+        {
+          "type": "table",
+          "head": ["Future → subjunctive", "Habit or past → indicative"],
+          "rows": [
+            ["*Cuando {llegues}, llámame.*", "*Cuando {llego}, siempre te llamo.*"],
+            ["*Cuando {tenga} dinero, viajaré.*", "*Cuando {tenía} dinero, viajaba.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Never the future after *cuando*: «cuando tendré» is wrong. Same with *hasta que*, *en cuanto* (as soon as) and *después de que*."
+        }
+      ]
+    },
+    {
+      "id": "conjunciones",
+      "title": "Always subjunctive",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Conjunction", "Example", "English"],
+          "rows": [
+            ["*para que*", "*Te lo explico {para que} lo {entiendas}.*", "so that you understand"],
+            ["*antes de que*", "*Vámonos {antes de que} {llueva}.*", "before it rains"],
+            ["*sin que*", "*Salió {sin que} nadie lo {viera}.*", "without anyone seeing him"],
+            ["*a menos que*", "*No iré {a menos que} me {inviten}.*", "unless they invite me"],
+            ["*con tal de que*", "*Te lo presto {con tal de que} me lo {devuelvas}.*", "as long as you give it back"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duda",
+      "title": "Doubt, aunque, and «something that…»",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Indicative (certain)", "Subjunctive (doubt, unknown)"],
+          "rows": [
+            ["*Creo que {viene}.*", "*No creo que {venga}.*"],
+            ["*Es verdad que {es} caro.*", "*Dudo que {sea} caro.*"],
+            ["*Aunque {llueve}, salgo.* (it IS raining)", "*Aunque {llueva}, saldré.* (even if it rains)"],
+            ["*Tengo un carro que {es} automático.*", "*Busco un carro que {sea} automático.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "The subjunctive marks what is **not a known fact**: the future, a doubt, a hypothesis, something you're looking for but haven't found."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "cuando",
+      "section": "cuando",
+      "title": "Cuando",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Cuando ___ a casa, te llamo.", "options": ["llegue", "llego mañana", "llegaré"], "answer": "llegue" },
+        { "prompt": "Cuando ___ dinero, viajaré a Japón.", "options": ["tenga", "tendré", "tengo"], "answer": "tenga" },
+        { "prompt": "Siempre desayuno cuando me ___.", "options": ["levanto", "levante", "levantaré"], "answer": "levanto", "explain": "A habit: indicative." },
+        { "prompt": "Te espero hasta que ___.", "options": ["termines", "terminas", "terminarás"], "answer": "termines" },
+        { "prompt": "Cuando era niño, ___ en Texas.", "options": ["vivía", "viviera", "viva"], "answer": "vivía" },
+        { "prompt": "En cuanto ___, te aviso.", "options": ["sepa", "sé", "sabré"], "answer": "sepa" }
+      ]
+    },
+    {
+      "id": "conjunciones",
+      "section": "conjunciones",
+      "title": "Para que, antes de que…",
+      "instructions": "Write the verb in the subjunctive.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Te lo explico para que lo ___. (entender, tú)", "answer": "entiendas" },
+        { "prompt": "Vámonos antes de que ___. (llover)", "answer": "llueva" },
+        { "prompt": "No voy a menos que me ___. (invitar, ellos)", "answer": "inviten" },
+        { "prompt": "Te presto el carro con tal de que lo ___. (cuidar, tú)", "answer": "cuides" },
+        { "prompt": "Habla bajo para que el bebé no se ___. (despertar)", "answer": "despierte" }
+      ]
+    },
+    {
+      "id": "duda",
+      "section": "duda",
+      "title": "Certain or not?",
+      "instructions": "Choose indicative or subjunctive.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Creo que Ana ___ mañana.", "options": ["viene", "venga"], "answer": "viene" },
+        { "prompt": "No creo que Ana ___ mañana.", "options": ["venga", "viene"], "answer": "venga" },
+        { "prompt": "Busco un departamento que ___ balcón.", "options": ["tenga", "tiene"], "answer": "tenga" },
+        { "prompt": "Vivo en un departamento que ___ balcón.", "options": ["tiene", "tenga"], "answer": "tiene" },
+        { "prompt": "Aunque ___ mañana, iremos a la playa. (even if)", "options": ["llueva", "llueve"], "answer": "llueva" },
+        { "prompt": "Dudo que ___ tan caro.", "options": ["sea", "es"], "answer": "sea" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "When you arrive, call me. (tú)", "answer": "Cuando llegues, llámame." },
+        { "prompt": "Let's go before it rains.", "answer": "Vámonos antes de que llueva." },
+        { "prompt": "I don't think it's true.", "answer": "No creo que sea verdad." },
+        { "prompt": "I'm looking for a job that pays well.", "answer": "Busco un trabajo que pague bien.", "accept": ["Estoy buscando un trabajo que pague bien."] },
+        { "prompt": "Even if it rains, I'll go.", "answer": "Aunque llueva, iré.", "accept": ["Aunque llueva, voy a ir.", "Aunque llueva, voy."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use cuando + subjunctive for the future and the indicative for habits.",
+    "I use para que, antes de que, sin que, a menos que with the subjunctive.",
+    "I use the subjunctive after doubt (no creo que, dudo que).",
+    "I tell aunque llueve (fact) from aunque llueva (even if)."
+  ],
+  "challenge": {
+    "title": "Plans with conditions",
+    "text": "Write six sentences about your plans with cuando, en cuanto, antes de que and aunque: *Cuando termine el curso, viajaré a Colombia. Aunque sea caro, iré a Cartagena.*"
+  }
+}

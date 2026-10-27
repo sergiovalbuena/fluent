@@ -1,0 +1,166 @@
+{
+  "slug": "preterito",
+  "number": 11,
+  "part": 3,
+  "level": "A2",
+  "title": "The preterite",
+  "tagline": "Hablé, comí, fui: finished actions in the past.",
+  "goal": "Form the preterite of regular verbs, handle the spelling changes, and memorize the most common irregular preterites (fui, tuve, hice, dije…).",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "regulares",
+      "title": "Regular verbs",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The preterite (*pretérito*) tells **completed actions** at a specific moment: *Ayer hablé con ella* (Yesterday I spoke with her)."
+        },
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "hablar", "meaning": "to speak", "forms": ["habl{é}", "habl{aste}", "habl{ó}", "habl{amos}", "habl{aron}"] },
+            { "verb": "comer", "meaning": "to eat", "forms": ["com{í}", "com{iste}", "com{ió}", "com{imos}", "com{ieron}"] },
+            { "verb": "vivir", "meaning": "to live", "forms": ["viv{í}", "viv{iste}", "viv{ió}", "viv{imos}", "viv{ieron}"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "The accent matters",
+          "text": "*hablo* (I speak) / *habló* (he spoke). *Hablamos* is both «we speak» and «we spoke»: context decides."
+        }
+      ]
+    },
+    {
+      "id": "ortografia",
+      "title": "Spelling changes",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "To keep the same sound, some **yo** forms change their spelling:"
+        },
+        {
+          "type": "table",
+          "head": ["Ending", "yo", "Examples"],
+          "rows": [
+            ["*-car*", "c → qu", "*buscar → bus{qu}é, tocar → to{qu}é*"],
+            ["*-gar*", "g → gu", "*llegar → lle{gu}é, pagar → pa{gu}é*"],
+            ["*-zar*", "z → c", "*empezar → empe{c}é, almorzar → almor{c}é*"],
+            ["vowel + *-er / -ir*", "i → y (he, they)", "*leer → le{y}ó, le{y}eron; oír → o{y}ó*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "Irregular preterites",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "ser / ir", "meaning": "to be / to go", "forms": ["{fui}", "{fuiste}", "{fue}", "{fuimos}", "{fueron}"] },
+            { "verb": "tener", "meaning": "to have", "forms": ["{tuv}e", "{tuv}iste", "{tuv}o", "{tuv}imos", "{tuv}ieron"] },
+            { "verb": "hacer", "meaning": "to do", "forms": ["{hic}e", "{hic}iste", "{hiz}o", "{hic}imos", "{hic}ieron"] }
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["Verb", "Stem", "yo / él"],
+          "rows": [
+            ["*estar*", "estuv-", "*estuve, estuvo*"],
+            ["*poder*", "pud-", "*pude, pudo*"],
+            ["*poner*", "pus-", "*puse, puso*"],
+            ["*querer*", "quis-", "*quise, quiso*"],
+            ["*saber*", "sup-", "*supe, supo*"],
+            ["*venir*", "vin-", "*vine, vino*"],
+            ["*decir*", "dij-", "*dije, dijo, dijeron*"],
+            ["*traer*", "traj-", "*traje, trajo, trajeron*"],
+            ["*dar*", "—", "*di, dio* (like -er verbs)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Irregular preterites have **no accent**: *tuve, hizo, vino*. And -ir stem changers change in he / they: *pedir → pidió, pidieron; dormir → durmió, durmieron*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "regulares",
+      "section": "regulares",
+      "title": "Regular preterite",
+      "instructions": "Write the verb in the preterite.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Ayer ___ con mi mamá. (hablar, yo)", "answer": "hablé" },
+        { "prompt": "¿___ tacos anoche? (comer, tú)", "answer": "Comiste" },
+        { "prompt": "Ella ___ en París dos años. (vivir)", "answer": "vivió" },
+        { "prompt": "Nosotros ___ toda la noche. (bailar)", "answer": "bailamos" },
+        { "prompt": "Ellos ___ una carta. (escribir)", "answer": "escribieron" },
+        { "prompt": "El tren ___ tarde. (salir)", "answer": "salió" }
+      ]
+    },
+    {
+      "id": "ortografia",
+      "section": "ortografia",
+      "title": "Watch the spelling",
+      "instructions": "Write the preterite.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Yo ___ las llaves por todas partes. (buscar)", "answer": "busqué" },
+        { "prompt": "Yo ___ tarde a la oficina. (llegar)", "answer": "llegué" },
+        { "prompt": "Yo ___ a trabajar a las ocho. (empezar)", "answer": "empecé" },
+        { "prompt": "Ella ___ el libro en un día. (leer)", "answer": "leyó" },
+        { "prompt": "Yo ___ la cuenta. (pagar)", "answer": "pagué" }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "section": "irregulares",
+      "title": "Irregular preterites",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "El año pasado ___ a Perú. (ir, yo)", "options": ["fui", "fue", "iba"], "answer": "fui" },
+        { "prompt": "¿Qué ___ el fin de semana? (hacer, tú)", "options": ["hiciste", "haciste", "hizo"], "answer": "hiciste" },
+        { "prompt": "Mi hermano ___ un accidente. (tener)", "options": ["tuvo", "tenió", "tuvió"], "answer": "tuvo" },
+        { "prompt": "Ella me ___ la verdad. (decir)", "options": ["dijo", "dició", "decí"], "answer": "dijo" },
+        { "prompt": "No ___ venir. (poder, yo)", "options": ["pude", "podí", "pudé"], "answer": "pude" },
+        { "prompt": "Ellos ___ en el restaurante. (estar)", "options": ["estuvieron", "estaron", "estuvon"], "answer": "estuvieron" },
+        { "prompt": "La fiesta ___ increíble. (ser)", "options": ["fue", "fui", "era ayer"], "answer": "fue" },
+        { "prompt": "Mis amigos ___ vino. (traer)", "options": ["trajeron", "trajieron", "traieron"], "answer": "trajeron" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate with the preterite.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I went to the beach.", "answer": "Fui a la playa." },
+        { "prompt": "What did you do yesterday? (tú)", "answer": "¿Qué hiciste ayer?" },
+        { "prompt": "We ate at a restaurant.", "answer": "Comimos en un restaurante." },
+        { "prompt": "I arrived late.", "answer": "Llegué tarde." },
+        { "prompt": "She said no.", "answer": "Dijo que no.", "accept": ["Ella dijo que no."] },
+        { "prompt": "They had a party.", "answer": "Tuvieron una fiesta.", "accept": ["Hicieron una fiesta."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the regular preterite with -é, -aste, -ó / -í, -iste, -ió.",
+    "I write busqué, llegué, empecé, leyó.",
+    "I know fui, tuve, hice, estuve, pude, dije, vine.",
+    "I use the preterite for finished actions at a specific time."
+  ],
+  "challenge": {
+    "title": "Your last weekend",
+    "text": "Tell what you did last weekend in eight sentences, with at least four irregular preterites: *El sábado fui al mercado, hice una paella y vinieron mis amigos.*"
+  }
+}

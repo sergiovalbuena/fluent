@@ -793,7 +793,7 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
               <ul className="divide-y divide-black/[0.04] dark:divide-white/[0.05] pb-2">
                 {grammarItems.map((g, i) => {
                   // Basic structures link to their theory in /grammar
-                  const theory = languageCode === 'fr' ? grammarLinkFor(g.structure) : null
+                  const theory = grammarLinkFor(g.structure, languageCode)
                   return (
                   <li key={i} className="px-5 py-3">
                     <p className="flex items-baseline justify-between gap-3 text-sm font-semibold text-slate-900 dark:text-white">

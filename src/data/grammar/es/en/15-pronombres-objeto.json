@@ -1,0 +1,151 @@
+{
+  "slug": "pronombres-objeto",
+  "number": 15,
+  "part": 4,
+  "level": "A2",
+  "title": "Object pronouns",
+  "tagline": "Lo, la, le, se lo: it, him, her, to them… and where they go.",
+  "goal": "Replace nouns with direct (lo, la, los, las) and indirect (le, les) object pronouns, combine them (se lo) and place them correctly.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "directo",
+      "title": "Direct objects: lo, la, los, las",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Direct object pronouns replace the thing or person that receives the action. They agree with the noun they replace and go **before the conjugated verb**:"
+        },
+        {
+          "type": "table",
+          "head": ["Pronoun", "Replaces", "Example"],
+          "rows": [
+            ["*me, te, nos*", "me, you, us", "*¿{Me} llamas mañana?*"],
+            ["*lo*", "him, it (masc.)", "*¿El libro? Ya {lo} leí.*"],
+            ["*la*", "her, it (fem.)", "*¿La película? {La} vi ayer.*"],
+            ["*los / las*", "them", "*¿Las llaves? No {las} encuentro.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "The personal «a»",
+          "text": "A specific person as direct object takes *a*: *Veo {a} María* → *{La} veo*. Things don't: *Veo la casa*."
+        }
+      ]
+    },
+    {
+      "id": "indirecto",
+      "title": "Indirect objects: le, les",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Indirect objects say **to whom** or **for whom**: *le* (to him / her / you-usted), *les* (to them). Spanish usually keeps the pronoun even when the person is named:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Le} di un regalo {a mi mamá}.", "tr": "I gave my mom a present." },
+            { "fr": "¿{Les} escribiste {a tus abuelos}?", "tr": "Did you write to your grandparents?" },
+            { "fr": "{Me} dijo la verdad.", "tr": "He told me the truth." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dobles",
+      "title": "Two pronouns: se lo",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "indirect + direct · le / les + lo / la → se lo / se la"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "¿El libro? Te {lo} presto.", "tr": "The book? I'll lend it to you." },
+            { "fr": "¿Las fotos? {Se las} mando a mis padres.", "tr": "The photos? I'll send them to my parents.", "note": "les + las → se las" },
+            { "fr": "¿La cuenta? ¿{Me la} trae, por favor?", "tr": "The bill? Could you bring it to me, please?" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Where they go",
+          "text": "Before a conjugated verb: *te lo doy*. Attached to an infinitive, a gerund or a positive command: *voy a dártelo, estoy diciéndotelo, dámelo*. Add an accent to keep the stress."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "directo",
+      "section": "directo",
+      "title": "Lo, la, los, las",
+      "instructions": "Replace the noun with a pronoun.",
+      "kind": "choice",
+      "options": ["lo", "la", "los", "las"],
+      "items": [
+        { "prompt": "¿El café? ___ tomo sin azúcar.", "answer": "lo" },
+        { "prompt": "¿La película? ___ vi ayer.", "answer": "la" },
+        { "prompt": "¿Los boletos? ___ compré en línea.", "answer": "los" },
+        { "prompt": "¿Las llaves? No ___ encuentro.", "answer": "las" },
+        { "prompt": "¿Conoces a Diego? Sí, ___ conozco.", "answer": "lo" },
+        { "prompt": "¿Ves a tus primas? Sí, ___ veo los domingos.", "answer": "las" }
+      ]
+    },
+    {
+      "id": "indirecto",
+      "section": "indirecto",
+      "title": "Le or les?",
+      "instructions": "Write le or les.",
+      "kind": "type",
+      "items": [
+        { "prompt": "___ di un regalo a mi mamá.", "answer": "Le" },
+        { "prompt": "___ escribo a mis abuelos cada mes.", "answer": "Les" },
+        { "prompt": "¿___ dijiste la verdad a Ana?", "answer": "Le" },
+        { "prompt": "___ explico la tarea a los niños.", "answer": "Les" },
+        { "prompt": "¿Qué ___ regalaste a tu papá?", "answer": "le" }
+      ]
+    },
+    {
+      "id": "dobles",
+      "section": "dobles",
+      "title": "Two pronouns",
+      "instructions": "Replace both objects. Choose the right combination.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Te presto el libro. → Te ___ presto.", "options": ["lo", "la", "le"], "answer": "lo" },
+        { "prompt": "Le mando las fotos a mi papá. → ___ mando.", "options": ["Se las", "Le las", "Las le"], "answer": "Se las" },
+        { "prompt": "¿Me trae la cuenta? → ¿___ trae?", "options": ["Me la", "La me", "Me lo"], "answer": "Me la" },
+        { "prompt": "Les doy el dinero a ellos. → ___ doy.", "options": ["Se lo", "Les lo", "Lo les"], "answer": "Se lo" },
+        { "prompt": "Dame la sal. → ___", "options": ["Dámela.", "Dame la.", "Mela da."], "answer": "Dámela." }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate using pronouns.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I see her every day.", "answer": "La veo todos los días." },
+        { "prompt": "I gave it (the book) to him.", "answer": "Se lo di." },
+        { "prompt": "Call me tomorrow. (tú)", "answer": "Llámame mañana." },
+        { "prompt": "I don't know him.", "answer": "No lo conozco." },
+        { "prompt": "I'm going to buy it (the shirt).", "answer": "La voy a comprar.", "accept": ["Voy a comprarla."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I replace things and people with lo, la, los, las.",
+    "I use le / les for «to someone», even when the person is named.",
+    "I change le / les to se before lo / la: se lo.",
+    "I attach pronouns to infinitives and positive commands."
+  ],
+  "challenge": {
+    "title": "Gifts",
+    "text": "Write five sentences about presents you gave or received, using double pronouns: *¿El reloj? Me lo regaló mi abuela. ¿Las flores? Se las compré a mi mamá.*"
+  }
+}

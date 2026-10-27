@@ -1,0 +1,161 @@
+{
+  "slug": "gustar",
+  "number": 7,
+  "part": 2,
+  "level": "A1",
+  "title": "Gustar and similar verbs",
+  "tagline": "Me gusta, me gustan, a mí también: the verb that works «backwards».",
+  "goal": "Say what you and others like with gustar, encantar, doler, interesar and molestar, and agree or disagree with también / tampoco.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "estructura",
+      "title": "Gustar works backwards",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Gustar* means «to be pleasing». The thing you like is the **subject**, and the person is an indirect object: *Me gusta el café* = Coffee is pleasing to me."
+        },
+        {
+          "type": "formula",
+          "text": "me / te / le / nos / les + gusta (one thing, a verb) / gustan (several things)"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Me {gusta} el chocolate.", "tr": "I like chocolate." },
+            { "fr": "Me {gustan} los tacos.", "tr": "I like tacos.", "note": "plural thing → gustan" },
+            { "fr": "Nos {gusta} bailar.", "tr": "We like dancing.", "note": "a verb → gusta" },
+            { "fr": "¿Te {gustan} los perros?", "tr": "Do you like dogs?" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Never «yo gusto el café». The verb agrees with the thing, not with you."
+        }
+      ]
+    },
+    {
+      "id": "a-mi",
+      "title": "A mí, a ella, a Diego",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*le* and *les* can mean several people, so Spanish often adds **a + person** to clarify or to stress it:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{A Diego} le gusta el fútbol.", "tr": "Diego likes soccer." },
+            { "fr": "{A mis padres} les encanta viajar.", "tr": "My parents love to travel." },
+            { "fr": "{A mí} me gusta el té; {a ti}, el café.", "tr": "I like tea; you like coffee.", "note": "contrast" }
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["Agree", "Disagree"],
+          "rows": [
+            ["*Me gusta. — A mí {también}.*", "*Me gusta. — A mí {no}.*"],
+            ["*No me gusta. — A mí {tampoco}.*", "*No me gusta. — A mí {sí}.*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "otros",
+      "title": "Other verbs like gustar",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Verb", "Meaning", "Example"],
+          "rows": [
+            ["*encantar*", "to love (things)", "*Me {encanta} esta canción.*"],
+            ["*doler*", "to hurt", "*Me {duelen} los pies.*"],
+            ["*interesar*", "to interest", "*¿Te {interesa} la historia?*"],
+            ["*molestar*", "to bother", "*Me {molesta} el ruido.*"],
+            ["*faltar*", "to be missing", "*Me {faltan} dos euros.*"],
+            ["*quedar*", "to fit, to suit", "*Te {queda} muy bien.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "For people, *gustar* can sound romantic: *Me gustas* = I'm into you. For friends, say *Me cae bien* (I like him / her)."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "gusta-gustan",
+      "section": "estructura",
+      "title": "Gusta or gustan?",
+      "instructions": "Choose the form.",
+      "kind": "choice",
+      "options": ["gusta", "gustan"],
+      "items": [
+        { "prompt": "Me ___ los tacos.", "answer": "gustan" },
+        { "prompt": "Me ___ el café.", "answer": "gusta" },
+        { "prompt": "¿Te ___ bailar?", "answer": "gusta", "explain": "A verb is always singular: gusta." },
+        { "prompt": "Nos ___ las películas de terror.", "answer": "gustan" },
+        { "prompt": "A Ana le ___ la música.", "answer": "gusta" },
+        { "prompt": "A mis hijos les ___ los perros.", "answer": "gustan" }
+      ]
+    },
+    {
+      "id": "pronombre",
+      "section": "a-mi",
+      "title": "Me, te, le, nos, les",
+      "instructions": "Write the missing pronoun.",
+      "kind": "type",
+      "items": [
+        { "prompt": "A mí ___ encanta el mar.", "answer": "me" },
+        { "prompt": "A Diego ___ gusta el fútbol.", "answer": "le" },
+        { "prompt": "A nosotros ___ gusta viajar.", "answer": "nos" },
+        { "prompt": "¿A ti ___ duele la cabeza?", "answer": "te" },
+        { "prompt": "A mis padres ___ encanta cocinar.", "answer": "les" },
+        { "prompt": "A usted, ¿___ interesa el arte?", "answer": "le" }
+      ]
+    },
+    {
+      "id": "tambien",
+      "section": "a-mi",
+      "title": "Agree or disagree",
+      "instructions": "Choose the answer that agrees with the speaker.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Me gusta el chocolate. — A mí ___.", "options": ["también", "tampoco", "sí"], "answer": "también" },
+        { "prompt": "No me gusta el frío. — A mí ___.", "options": ["tampoco", "también", "no"], "answer": "tampoco" },
+        { "prompt": "Me encanta bailar. — A mí ___.", "options": ["también", "tampoco", "sí no"], "answer": "también" },
+        { "prompt": "No me gustan las serpientes. — A mí ___.", "options": ["tampoco", "también", "sí"], "answer": "tampoco" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I like dogs.", "answer": "Me gustan los perros." },
+        { "prompt": "Do you like dancing? (tú)", "answer": "¿Te gusta bailar?" },
+        { "prompt": "My head hurts.", "answer": "Me duele la cabeza." },
+        { "prompt": "She loves this song.", "answer": "Le encanta esta canción.", "accept": ["A ella le encanta esta canción."] },
+        { "prompt": "Me neither.", "answer": "A mí tampoco.", "accept": ["Yo tampoco."] },
+        { "prompt": "The noise bothers me.", "answer": "Me molesta el ruido." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use gusta with one thing or a verb and gustan with several things.",
+    "I choose me, te, le, nos, les for the person.",
+    "I agree with también / tampoco and disagree with sí / no.",
+    "I use encantar, doler, molestar and interesar like gustar."
+  ],
+  "challenge": {
+    "title": "Likes and dislikes",
+    "text": "Write five things you love, five you don't like, and one thing that bothers you, then ask a friend «¿Y a ti?» for each: *Me encantan los mercados. No me gusta el tráfico. Me molesta el ruido.*"
+  }
+}

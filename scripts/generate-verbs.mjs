@@ -18,6 +18,7 @@ import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { createRequire } from 'node:module'
 import { englishTenseExample, frenchTenseExample } from './verb-examples.mjs'
+import * as es from './spanish-conjugator.mjs'
 
 const require = createRequire(import.meta.url)
 const OUT = 'src/data/verbs'
@@ -61,6 +62,15 @@ const ESSENTIAL = {
     ['understand', 'entender'], ['eat', 'comer'], ['drink', 'beber'], ['live', 'vivir'], ['work', 'trabajar'],
     ['like', 'gustar'], ['want', 'querer'], ['need', 'necesitar'], ['buy', 'comprar'],
   ],
+  es: [
+    ['ser', 'to be (identity, origin)'], ['estar', 'to be (state, location)'], ['tener', 'to have'],
+    ['haber', 'to have (auxiliary), there is'], ['ir', 'to go'], ['hacer', 'to do, to make'], ['poder', 'can, to be able to'],
+    ['querer', 'to want, to love'], ['decir', 'to say, to tell'], ['ver', 'to see'], ['dar', 'to give'],
+    ['saber', 'to know (a fact)'], ['conocer', 'to know (someone, a place)'], ['venir', 'to come'], ['poner', 'to put'],
+    ['salir', 'to go out, to leave'], ['hablar', 'to speak'], ['comer', 'to eat'], ['vivir', 'to live'],
+    ['llamarse', 'to be called'], ['gustar', 'to like (to be pleasing)'], ['pensar', 'to think'], ['tomar', 'to take, to drink'],
+    ['trabajar', 'to work'],
+  ],
 }
 
 function translationsOf(item) {
@@ -71,7 +81,7 @@ function translationsOf(item) {
 
 function* vocabulary(lang) {
   for (const [word, ...t] of ESSENTIAL[lang]) {
-    const item = lang === 'fr' ? { word, en: t[0], es: t[1] } : { word, es: t[0] }
+    const item = lang === 'fr' ? { word, en: t[0], es: t[1] } : lang === 'es' ? { word, en: t[0] } : { word, es: t[0] }
     yield { item, lesson: 0, slug: null, essential: true }
   }
   for (const file of readdirSync(join('content', lang)).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()) {
@@ -282,6 +292,114 @@ function buildEnglish() {
   }
 }
 
+// ── Spanish ───────────────────────────────────────────────────────────────────
+// Conjugated by scripts/spanish-conjugator.mjs. Six persons in the tables (vosotros
+// included, with a note); the drill skips vosotros (see verb-quiz.ts).
+
+const ES_SUBJECTS = ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas']
+const ES_REFLEXIVE = ['me', 'te', 'se', 'nos', 'os', 'se']
+const ES_MOODS = [
+  { name: 'Indicativo', tenses: [
+    ['PRESENT', 'Presente', 'INDICATIVE_PRESENT'], ['PRETERITO', 'Pretérito', 'INDICATIVE_PRETERITE'],
+    ['IMPERFECTO', 'Imperfecto', 'INDICATIVE_IMPERFECT'], ['FUTURO', 'Futuro', 'INDICATIVE_FUTURE'],
+    ['PERFECTO', 'Pretérito perfecto', 'INDICATIVE_PERFECT'], ['PLUSCUAMPERFECTO', 'Pluscuamperfecto', 'INDICATIVE_PLUPERFECT'],
+    ['FUTURO_PERFECTO', 'Futuro perfecto', 'INDICATIVE_FUTURE_PERFECT'],
+  ] },
+  { name: 'Condicional', tenses: [['CONDICIONAL', 'Simple', 'CONDITIONAL_PRESENT'], ['CONDICIONAL_PERFECTO', 'Compuesto', 'CONDITIONAL_PERFECT']] },
+  { name: 'Subjuntivo', tenses: [
+    ['SUBJUNTIVO_PRESENTE', 'Presente', 'SUBJUNCTIVE_PRESENT'], ['SUBJUNTIVO_IMPERFECTO', 'Imperfecto', 'SUBJUNCTIVE_IMPERFECT_RA'],
+    ['SUBJUNTIVO_PERFECTO', 'Pretérito perfecto', 'SUBJUNCTIVE_PERFECT'], ['SUBJUNTIVO_PLUSCUAMPERFECTO', 'Pluscuamperfecto', 'SUBJUNCTIVE_PLUPERFECT'],
+  ] },
+  { name: 'Imperativo', tenses: [['IMPERATIVO', 'Afirmativo', null]] },
+]
+
+// Vowel nuclei of a word (strong + strong is two syllables; u after q / g is silent)
+function nuclei(word) {
+  const groups = []
+  const re = /[aeiouáéíóúü]+/g
+  let m
+  while ((m = re.exec(word))) {
+    let g = m[0]
+    let start = m.index
+    if (/[qg]$/.test(word.slice(0, start)) && g.startsWith('u') && g.length > 1) { g = g.slice(1); start++ }
+    // Split hiatus between two strong vowels: le-er, pa-se-o
+    let piece = ''
+    for (const ch of g) {
+      if (piece && /[aeoáéó]/.test(ch) && /[aeoáéó]$/.test(piece)) { groups.push({ text: piece, start }); start += piece.length; piece = '' }
+      piece += ch
+    }
+    groups.push({ text: piece, start })
+  }
+  return groups
+}
+
+const ACUTE = { a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú' }
+
+/** Adds an enclitic pronoun, writing the accent the stress now needs: levanta + te → levántate */
+function withClitic(form, clitic) {
+  // Stressed last syllable (descompón, dé): the clitic makes it a normal paroxytone, so the accent goes
+  if (/[áéíóú][ns]?$/.test(form)) return form.normalize('NFD').replace(/\u0301/g, '').normalize('NFC') + clitic
+  if (/[áéíóú]/.test(form)) return form + clitic
+  const groups = nuclei(form)
+  if (groups.length < 2) return form + clitic // monosyllables: ponte, dame
+  const g = groups[groups.length - 2]
+  const i = g.text.search(/[aeo]/) >= 0 ? g.text.search(/[aeo]/) : g.text.length - 1
+  const pos = g.start + i
+  return form.slice(0, pos) + ACUTE[form[pos]] + form.slice(pos + 1) + clitic
+}
+
+function spanishImperative(verb, base, pronominal) {
+  if (base === 'haber') return [null, null, null, null]
+  if (!pronominal) return es.imperative(base)
+  if (base === 'ir') return ['vete', 'váyase', 'vámonos', 'váyanse']
+  const [tu, usted, nosotros, ustedes] = es.imperative(base)
+  return [withClitic(tu, 'te'), withClitic(usted, 'se'), withClitic(nosotros, 'nos').replace(/snos$/, 'nos'), withClitic(ustedes, 'se')]
+}
+
+function buildSpanish() {
+  const seen = new Map()
+  for (const { item, lesson, slug, essential } of vocabulary('es')) {
+    const word = item.word.trim().toLowerCase()
+    if (!/^[a-záéíóúñü]+$/.test(word) || !/(ar|er|ir|ír)(se)?$/.test(word)) continue
+    if (!essential && !/^to /.test(item.en ?? '')) continue
+    if (seen.has(word)) continue
+    const pronominal = /(ar|er|ir|ír)se$/.test(word)
+    const base = pronominal ? word.slice(0, -2) : word
+
+    const forms = {}
+    for (const mood of ES_MOODS) {
+      for (const [key, , tense] of mood.tenses) {
+        if (key === 'IMPERATIVO') { forms[key] = spanishImperative(word, base, pronominal); continue }
+        forms[key] = ES_SUBJECTS.map((subject, p) => `${subject} ${pronominal ? ES_REFLEXIVE[p] + ' ' : ''}${es.conjugate(base, tense, p)}`)
+      }
+    }
+
+    seen.set(word, {
+      id: word,
+      infinitive: word,
+      translations: translationsOf(item),
+      lesson, slug,
+      essential: !!essential,
+      pronominal,
+      ending: base.endsWith('ar') ? 'ar' : base.endsWith('er') ? 'er' : 'ir',
+      group: null,
+      irregular: es.isIrregular(base),
+      aux: null,
+      participles: { present: es.gerund(base), past: es.participle(base) },
+      forms,
+    })
+  }
+
+  return {
+    persons: ['yo', 'tú', 'él / ella / usted', 'nosotros', 'vosotros', 'ellos / ellas / ustedes'],
+    imperativePersons: ['(tú)', '(usted)', '(nosotros)', '(ustedes)'],
+    moods: ES_MOODS.map(m => ({ name: m.name, tenses: m.tenses.map(([key, name]) => ({ key, name })) })),
+    participleLabels: { present: 'Gerundio', past: 'Participio' },
+    note: 'Vosotros solo se usa en España. En Latinoamérica se usa ustedes para hablar a varias personas.',
+    verbs: [...seen.values()],
+  }
+}
+
 // ── Examples ──────────────────────────────────────────────────────────────────
 // Sentences from the course (phrases, arrange and translate exercises, which come
 // with translations; story sentences as a fallback) that contain a form of the verb.
@@ -321,14 +439,17 @@ function tokens(text) {
 const PRONOUNS = {
   fr: new Set(['je', 'tu', 'il', 'elle', 'on', 'nous', 'vous', 'ils', 'elles']),
   en: new Set(['i', 'you', 'he', 'she', 'it', 'we', 'they']),
+  // Spanish drops the subject, so a pronoun, «no» or a clitic before the form counts too
+  es: new Set(['yo', 'tú', 'él', 'ella', 'usted', 'nosotros', 'nosotras', 'ellos', 'ellas', 'ustedes', 'no', 'me', 'te', 'se', 'nos', 'lo', 'la', 'le', 'les', 'los', 'las']),
 }
 const EN_AUX = new Set(['can', 'could', 'will', 'would', 'should', 'must', 'may', 'might', 'do', 'does', 'did', 'shall'])
 // Simple tenses where a course sentence can be told apart by its verb form
 const COURSE_TENSES = {
   fr: ['PRESENT', 'IMPARFAIT', 'FUTUR', 'CONDITIONNEL_PRESENT'],
   en: ['SIMPLE_PRESENT', 'SIMPLE_PAST'],
+  es: ['PRESENT', 'PRETERITO', 'IMPERFECTO', 'FUTURO', 'CONDICIONAL'],
 }
-const NEEDED_TRANSLATIONS = { fr: ['en', 'es'], en: ['es'] }
+const NEEDED_TRANSLATIONS = { fr: ['en', 'es'], en: ['es'], es: ['en'] }
 
 /** Course sentences per simple tense: "<pronoun> <form>" with the form belonging to that tense only */
 function courseExamplesByTense(lang, verb, sentences) {
@@ -346,7 +467,9 @@ function courseExamplesByTense(lang, verb, sentences) {
     if (!NEEDED_TRANSLATIONS[lang].every(k => sentence.translations[k])) continue
     for (let i = 0; i < n; i++) {
       const { word, elided } = sentence.toks[i]
-      const hasSubject = elided === 'j' || PRONOUNS[lang].has(sentence.toks[i - 1]?.word)
+      // Spanish past and future forms are distinctive enough without a subject
+      const hasSubject = elided === 'j' || PRONOUNS[lang].has(sentence.toks[i - 1]?.word) ||
+        (lang === 'es' && word.length >= 5 && tenseOf(word) && tenseOf(word) !== 'PRESENT')
       // "Can you swim?": a modal before the subject means the verb is a bare infinitive
       if (lang === 'en' && EN_AUX.has(sentence.toks[i - 2]?.word)) break
       const tense = hasSubject && tenseOf(word)
@@ -369,7 +492,8 @@ function buildExamples(lang, verbs) {
     const fromCourse = courseExamplesByTense(lang, verb, sentences)
     const perTense = {}
     for (const tense of Object.keys(verb.forms)) {
-      const example = fromCourse[tense] ?? (lang === 'fr' ? frenchTenseExample(verb, tense, verb.forms) : englishTenseExample(verb, tense))
+      // Spanish examples come only from the course
+      const example = fromCourse[tense] ?? (lang === 'fr' ? frenchTenseExample(verb, tense, verb.forms) : lang === 'en' ? englishTenseExample(verb, tense) : null)
       if (example) perTense[tense] = example
     }
     examples[verb.id] = perTense
@@ -379,7 +503,7 @@ function buildExamples(lang, verbs) {
 
 // ── Write ─────────────────────────────────────────────────────────────────────
 
-for (const [lang, build] of [['fr', buildFrench], ['en', buildEnglish]]) {
+for (const [lang, build] of [['fr', buildFrench], ['en', buildEnglish], ['es', buildSpanish]]) {
   const data = build()
   data.verbs.sort((a, b) => a.lesson - b.lesson || a.infinitive.localeCompare(b.infinitive, lang))
   const index = {

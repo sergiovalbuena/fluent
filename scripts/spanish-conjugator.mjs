@@ -46,7 +46,7 @@ const YO_STEM = {
   contener: 'conteng', detener: 'deteng', proponer: 'propong', componer: 'compong', suponer: 'supong',
   deshacer: 'deshag', satisfacer: 'satisfag', distraer: 'distraig', atraer: 'atraig', recoger: 'recoj',
   escoger: 'escoj', proteger: 'protej', elegir: 'elij', corregir: 'corrij', dirigir: 'dirij', exigir: 'exij',
-  seguir: 'sig', conseguir: 'consig', perseguir: 'persig', distinguir: 'disting',
+  seguir: 'sig', conseguir: 'consig', perseguir: 'persig', distinguir: 'disting', descomponer: 'descompong',
 }
 
 // Strong preterite stems: tuve, hice
@@ -55,7 +55,7 @@ const PRET_STEM = {
   haber: 'hub', querer: 'quis', venir: 'vin', hacer: 'hic', decir: 'dij', traer: 'traj', conducir: 'conduj',
   traducir: 'traduj', producir: 'produj', mantener: 'mantuv', obtener: 'obtuv', contener: 'contuv',
   detener: 'detuv', proponer: 'propus', componer: 'compus', suponer: 'supus', deshacer: 'deshic',
-  satisfacer: 'satisfic', distraer: 'distraj', atraer: 'atraj', prevenir: 'previn',
+  satisfacer: 'satisfic', distraer: 'distraj', atraer: 'atraj', prevenir: 'previn', descomponer: 'descompus',
 }
 
 // Irregular future / conditional stems: tendré
@@ -63,7 +63,7 @@ const FUT_STEM = {
   tener: 'tendr', venir: 'vendr', poner: 'pondr', salir: 'saldr', valer: 'valdr', poder: 'podr', querer: 'querr',
   saber: 'sabr', caber: 'cabr', haber: 'habr', hacer: 'har', decir: 'dir', mantener: 'mantendr', obtener: 'obtendr',
   contener: 'contendr', detener: 'detendr', proponer: 'propondr', componer: 'compondr', suponer: 'supondr',
-  deshacer: 'deshar', satisfacer: 'satisfar', prevenir: 'prevendr',
+  deshacer: 'deshar', satisfacer: 'satisfar', prevenir: 'prevendr', descomponer: 'descompondr',
 }
 
 const PARTICIPLE = {
@@ -71,24 +71,32 @@ const PARTICIPLE = {
   abrir: 'abierto', romper: 'roto', morir: 'muerto', cubrir: 'cubierto', resolver: 'resuelto',
   devolver: 'devuelto', descubrir: 'descubierto', freír: 'frito', imprimir: 'impreso', deshacer: 'deshecho',
   satisfacer: 'satisfecho', suponer: 'supuesto', proponer: 'propuesto', componer: 'compuesto', envolver: 'envuelto',
-  revolver: 'revuelto', prever: 'previsto',
+  revolver: 'revuelto', prever: 'previsto', descomponer: 'descompuesto', inscribir: 'inscrito', describir: 'descrito',
 }
 
-const IMPERATIVE = { ser: 'sé', ir: 've', tener: 'ten', venir: 'ven', poner: 'pon', salir: 'sal', hacer: 'haz', decir: 'di', mantener: 'mantén', obtener: 'obtén', deshacer: 'deshaz' }
+const IMPERATIVE = { ser: 'sé', ir: 've', tener: 'ten', venir: 'ven', poner: 'pon', salir: 'sal', hacer: 'haz', decir: 'di', mantener: 'mantén', obtener: 'obtén', deshacer: 'deshaz', descomponer: 'descompón' }
 
 // Stem-changing verbs (present, except nosotros/vosotros; -ir ones also in the preterite 3rd persons)
 const E_IE = new Set(['pensar', 'querer', 'empezar', 'comenzar', 'entender', 'perder', 'preferir', 'sentir', 'cerrar',
   'despertar', 'encender', 'nevar', 'regar', 'tener', 'venir', 'mentir', 'divertir', 'convertir', 'herir', 'sugerir',
   'defender', 'atravesar', 'calentar', 'confesar', 'fregar', 'gobernar', 'negar', 'recomendar', 'sentar', 'temblar',
-  'tropezar', 'advertir', 'consentir', 'arrepentir', 'hervir', 'mantener', 'obtener', 'contener', 'detener', 'apretar', 'descender', 'ascender', 'extender', 'merendar', 'quebrar'])
+  'tropezar', 'advertir', 'consentir', 'arrepentir', 'hervir', 'mantener', 'obtener', 'contener', 'detener', 'apretar', 'descender', 'ascender', 'extender', 'merendar', 'quebrar', 'sembrar', 'tender', 'despertar'])
 const O_UE = new Set(['poder', 'dormir', 'volver', 'llover', 'encontrar', 'contar', 'mostrar', 'probar', 'recordar',
   'costar', 'devolver', 'soñar', 'morir', 'mover', 'volar', 'colgar', 'acostar', 'almorzar', 'aprobar', 'demostrar',
   'doler', 'envolver', 'forzar', 'morder', 'oler', 'resolver', 'rogar', 'soler', 'sonar', 'tostar', 'torcer', 'llover',
-  'jugar', 'comprobar', 'renovar', 'revolver', 'promover', 'descolgar'])
-const E_I = new Set(['pedir', 'servir', 'repetir', 'seguir', 'vestir', 'elegir', 'medir', 'competir', 'corregir',
+  'jugar', 'comprobar', 'renovar', 'revolver', 'promover', 'descolgar', 'reprobar'])
+const E_I = new Set(['decir', 'pedir', 'servir', 'repetir', 'seguir', 'vestir', 'elegir', 'medir', 'competir', 'corregir',
   'despedir', 'impedir', 'conseguir', 'perseguir', 'reír', 'sonreír', 'freír', 'rendir', 'teñir', 'ceñir', 'gemir', 'desteñir'])
 // e→ie / o→ue -ir verbs also take e→i / o→u in the preterite 3rd persons and the gerund
 const IR_SHIFT = new Set(['preferir', 'sentir', 'mentir', 'divertir', 'convertir', 'herir', 'sugerir', 'advertir', 'consentir', 'arrepentir', 'hervir', 'dormir', 'morir'])
+
+// -iar / -uar verbs that stress the i / u: envío, confías, actúa
+const STRESSED_IU = new Set(['enviar', 'confiar', 'fiar', 'guiar', 'vaciar', 'esquiar', 'criar', 'variar', 'ampliar', 'desafiar', 'continuar', 'actuar', 'graduar', 'evaluar', 'situar'])
+
+function stressIU(verb, stem, p) {
+  if (!STRESSED_IU.has(verb) || p === 3 || p === 4) return stem
+  return stem.replace(/([iu])$/, m => (m === 'i' ? 'í' : 'ú'))
+}
 
 const group = v => (v.endsWith('ar') ? 'ar' : v.endsWith('er') ? 'er' : 'ir')
 const stemOf = v => v.slice(0, -2).replace(/í$/, 'i')
@@ -117,6 +125,7 @@ function spellBeforeAO(verb, stem) {
   if (group(verb) === 'ar') return stem
   if (stem.endsWith('gu') && verb.endsWith('guir')) return stem.slice(0, -1)
   if (stem.endsWith('g')) return stem.slice(0, -1) + 'j'
+  if (/[^aeiou]c$/.test(stem)) return stem.slice(0, -1) + 'z' // venzo, venza
   return stem
 }
 
@@ -128,6 +137,7 @@ function present(verb, p) {
   if (p !== 3 && p !== 4) stem = stemChanged(verb, stem)
   if (verb.endsWith('uir') && !verb.endsWith('guir') && p !== 3 && p !== 4) stem += 'y' // construyo
   if (p === 0) stem = spellBeforeAO(verb, stem)
+  stem = stressIU(verb, stem, p)
   return stem + ENDINGS.present[g][p]
 }
 
@@ -143,6 +153,7 @@ function subjunctive(verb, p) {
   }
   if (verb.endsWith('uir') && !verb.endsWith('guir')) stem += 'y' // construya
   stem = g === 'ar' ? spellBeforeE(stem) : spellBeforeAO(verb, stem)
+  stem = stressIU(verb, stem, p)
   return stem + ENDINGS.subjunctive[g][p]
 }
 
@@ -238,4 +249,18 @@ export function conjugate(verb, tense, p) {
     case 'SUBJUNCTIVE_PLUPERFECT': return `${HABER.imperfectSubjunctive[p]} ${participle(verb)}`
     default: throw new Error(`tense ${tense}`)
   }
+}
+
+/** Doesn't follow the regular -ar / -er / -ir pattern (stem changes and irregular stems count; spelling-only changes like busqué don't) */
+export function isIrregular(verb) {
+  return Boolean(
+    IRREGULAR[verb] || YO_STEM[verb] || STRESSED_IU.has(verb) || PRET_STEM[verb] || FUT_STEM[verb] || PARTICIPLE[verb] || IMPERATIVE[verb] ||
+    E_IE.has(verb) || O_UE.has(verb) || E_I.has(verb) || verb === 'oler' ||
+    (verb.endsWith('uir') && !verb.endsWith('guir')),
+  )
+}
+
+/** Affirmative imperative: tú, usted, nosotros, ustedes */
+export function imperative(verb) {
+  return [imperativeTu(verb), subjunctive(verb, 2), subjunctive(verb, 3), subjunctive(verb, 5)]
 }

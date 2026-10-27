@@ -1,0 +1,156 @@
+{
+  "slug": "preguntas-negacion",
+  "number": 5,
+  "part": 2,
+  "level": "A1",
+  "title": "Questions and negation",
+  "tagline": "¿Qué, dónde, cuándo…?, the upside-down marks, and Spanish double negatives.",
+  "goal": "Ask questions with or without question words, answer in the negative, and use nunca, nada, nadie and ninguno correctly, including double negatives.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "si-no",
+      "title": "Yes / no questions",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "No «do / does» and usually no change of order: a statement becomes a question with **intonation** (and the marks ¿ ? in writing)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Hablas español. → ¿Hablas español?", "tr": "You speak Spanish. → Do you speak Spanish?" },
+            { "fr": "¿Tu hermano vive aquí? / ¿Vive aquí tu hermano?", "tr": "Does your brother live here?", "note": "both orders are fine" },
+            { "fr": "Vienes mañana, ¿verdad? / ¿no?", "tr": "You're coming tomorrow, aren't you?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interrogativos",
+      "title": "Question words",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Spanish", "English", "Example"],
+          "rows": [
+            ["*qué*", "what", "*¿{Qué} haces?*"],
+            ["*cuál / cuáles*", "which, what (from options)", "*¿{Cuál} es tu número?*"],
+            ["*quién / quiénes*", "who", "*¿{Quién} es?*"],
+            ["*dónde* · *adónde* · *de dónde*", "where · where to · where from", "*¿{De dónde} eres?*"],
+            ["*cuándo*", "when", "*¿{Cuándo} llegas?*"],
+            ["*cómo*", "how", "*¿{Cómo} estás?*"],
+            ["*cuánto / cuánta / cuántos / cuántas*", "how much, how many", "*¿{Cuántos} años tienes?*"],
+            ["*por qué*", "why", "*¿{Por qué} estudias español?* — *{Porque}…*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Qué or cuál with «ser»",
+          "text": "English «What is your name / number / address?» uses **cuál**: *¿Cuál es tu dirección?* Use *qué es* only to ask for a definition: *¿Qué es un aguacate?*"
+        }
+      ]
+    },
+    {
+      "id": "negacion",
+      "title": "Negation and double negatives",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Put **no** before the verb (and before object pronouns): *No hablo francés. No lo sé.*"
+        },
+        {
+          "type": "table",
+          "head": ["Positive", "Negative", "Example"],
+          "rows": [
+            ["*siempre* (always)", "*nunca* (never)", "*{No} como {nunca} carne. / {Nunca} como carne.*"],
+            ["*algo* (something)", "*nada* (nothing)", "*{No} quiero {nada}.*"],
+            ["*alguien* (someone)", "*nadie* (nobody)", "*{No} vino {nadie}.*"],
+            ["*algún / alguna* (some)", "*ningún / ninguna* (no, none)", "*{No} tengo {ningún} problema.*"],
+            ["*también* (too)", "*tampoco* (neither)", "*A mí {tampoco}.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Double negatives are correct",
+          "text": "If the negative word comes **after** the verb, keep *no* before it: *No veo nada* (literally «I don't see nothing»). If it comes first, drop *no*: *Nada me gusta*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "interrogativo",
+      "section": "interrogativos",
+      "title": "Choose the question word",
+      "instructions": "Complete the question.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "¿___ años tienes?", "options": ["Cuántos", "Cuánto", "Qué"], "answer": "Cuántos" },
+        { "prompt": "¿___ es tu dirección?", "options": ["Cuál", "Qué", "Dónde"], "answer": "Cuál" },
+        { "prompt": "¿___ eres? — De Canadá.", "options": ["De dónde", "Dónde", "Adónde"], "answer": "De dónde" },
+        { "prompt": "¿___ vas de vacaciones? — A Perú.", "options": ["Adónde", "De dónde", "Cuándo"], "answer": "Adónde" },
+        { "prompt": "¿___ estudias español? — Porque vivo aquí.", "options": ["Por qué", "Porque", "Qué"], "answer": "Por qué" },
+        { "prompt": "¿___ es un aguacate? — Una fruta.", "options": ["Qué", "Cuál", "Quién"], "answer": "Qué" },
+        { "prompt": "¿___ llama? — Es tu mamá.", "options": ["Quién", "Qué", "Cuál"], "answer": "Quién" }
+      ]
+    },
+    {
+      "id": "negativo",
+      "section": "negacion",
+      "title": "Make it negative",
+      "instructions": "Write the opposite with the negative word.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Siempre como carne.", "answer": "Nunca como carne.", "accept": ["No como carne nunca.", "No como nunca carne."] },
+        { "prompt": "Quiero algo.", "answer": "No quiero nada." },
+        { "prompt": "Alguien llamó.", "answer": "Nadie llamó.", "accept": ["No llamó nadie."] },
+        { "prompt": "Tengo algún problema.", "answer": "No tengo ningún problema." },
+        { "prompt": "Yo también.", "answer": "Yo tampoco." }
+      ]
+    },
+    {
+      "id": "doble",
+      "section": "negacion",
+      "title": "Is it correct?",
+      "instructions": "Choose the correct sentence.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "options": ["No veo nada.", "Veo nada.", "No veo algo."], "answer": "No veo nada." },
+        { "options": ["Nadie vino.", "No nadie vino.", "Nadie no vino."], "answer": "Nadie vino." },
+        { "options": ["No tengo ninguna idea.", "Tengo ninguna idea.", "No tengo alguna idea ninguna."], "answer": "No tengo ninguna idea." },
+        { "options": ["No voy nunca al gimnasio.", "Voy nunca al gimnasio.", "No voy siempre nunca."], "answer": "No voy nunca al gimnasio." },
+        { "options": ["A mí tampoco me gusta.", "A mí también no me gusta.", "A mí no también."], "answer": "A mí tampoco me gusta." }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Where do you live? (tú)", "answer": "¿Dónde vives?" },
+        { "prompt": "What's your phone number? (tú)", "answer": "¿Cuál es tu número de teléfono?", "accept": ["¿Cuál es tu número?"] },
+        { "prompt": "I don't know.", "answer": "No sé.", "accept": ["No lo sé."] },
+        { "prompt": "Nobody knows.", "answer": "Nadie sabe.", "accept": ["Nadie lo sabe."] },
+        { "prompt": "I never drink coffee.", "answer": "Nunca tomo café.", "accept": ["No tomo café nunca.", "Nunca bebo café.", "No bebo café nunca."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I ask yes / no questions with intonation, without «do».",
+    "I use qué, cuál, quién, dónde, cuándo, cómo, cuánto and por qué.",
+    "I say ¿Cuál es tu nombre? and not ¿Qué es tu nombre?",
+    "I use double negatives: no… nada, no… nunca, no… nadie."
+  ],
+  "challenge": {
+    "title": "Interview",
+    "text": "Write eight questions to get to know someone, each with a different question word, and answer them about yourself, at least three in the negative: *¿Tienes hermanos? — No, no tengo ningún hermano.*"
+  }
+}

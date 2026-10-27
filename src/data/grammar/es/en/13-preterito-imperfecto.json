@@ -1,0 +1,149 @@
+{
+  "slug": "preterito-imperfecto",
+  "number": 13,
+  "part": 3,
+  "level": "B1",
+  "title": "Preterite or imperfect?",
+  "tagline": "The scene and the action, verbs that change meaning, and how to tell a story.",
+  "goal": "Choose between the preterite and the imperfect in any story, including closed periods, interruptions and verbs like saber, conocer and querer.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "escena",
+      "title": "The scene and the action",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English uses one past («I lived») for both. Spanish splits it: the **imperfect** paints the scene, the **preterite** moves the story forward."
+        },
+        {
+          "type": "table",
+          "head": ["Imperfect: the scene", "Preterite: the events"],
+          "rows": [
+            ["*{Llovía} y {hacía} frío…*", "*…cuando {llegó} el autobús.*"],
+            ["*{Dormía} tranquilamente…*", "*…y de repente {sonó} el teléfono.*"],
+            ["Habits: *siempre, cada día, antes*", "One time or counted times: *ayer, una vez, tres veces*"],
+            ["«was …ing», «used to»", "«did», a finished event"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "If you can ask «and then what happened?» after the verb, it's preterite."
+        }
+      ]
+    },
+    {
+      "id": "duracion",
+      "title": "Long but finished",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "A long action with clear limits is still **preterite**. Length doesn't matter; the limits do."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Viví} diez años en Lima.", "tr": "I lived in Lima for ten years.", "note": "closed period" },
+            { "fr": "Cuando era estudiante, {vivía} en Lima.", "tr": "When I was a student, I lived in Lima.", "note": "background" },
+            { "fr": "{Llovió} toda la tarde.", "tr": "It rained all afternoon." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "significado",
+      "title": "Verbs that change meaning",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Verb", "Imperfect", "Preterite"],
+          "rows": [
+            ["*saber*", "*sabía* = I knew", "*supe* = I found out"],
+            ["*conocer*", "*conocía* = I knew (someone)", "*conocí* = I met"],
+            ["*querer*", "*quería* = I wanted", "*quise* = I tried; *no quise* = I refused"],
+            ["*poder*", "*podía* = I could, I was able", "*pude* = I managed to"],
+            ["*tener*", "*tenía* = I had", "*tuve* = I got, I received"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "No {sabía} que estaba casado. Lo {supe} ayer.", "tr": "I didn't know he was married. I found out yesterday." },
+            { "fr": "{Conocí} a Nicolás en una parada de autobús.", "tr": "I met Nicolás at a bus stop." }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "escena",
+      "section": "escena",
+      "title": "Scene or event?",
+      "instructions": "Choose the right tense.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "___ cuando salí de casa.", "options": ["Llovía", "Llovió"], "answer": "Llovía" },
+        { "prompt": "Dormía cuando ___ el teléfono.", "options": ["sonó", "sonaba"], "answer": "sonó" },
+        { "prompt": "De niño, ___ al fútbol todos los días.", "options": ["jugaba", "jugué"], "answer": "jugaba" },
+        { "prompt": "Ayer ___ una pizza.", "options": ["comí", "comía"], "answer": "comí" },
+        { "prompt": "Mi abuelo ___ un bigote enorme.", "options": ["tenía", "tuvo"], "answer": "tenía" },
+        { "prompt": "De repente, se ___ la luz.", "options": ["fue", "iba"], "answer": "fue" }
+      ]
+    },
+    {
+      "id": "duracion",
+      "section": "duracion",
+      "title": "Closed period or background?",
+      "instructions": "Choose the right tense.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "___ diez años en Lima y después me mudé.", "options": ["Viví", "Vivía"], "answer": "Viví" },
+        { "prompt": "Cuando era estudiante, ___ en un cuarto pequeño.", "options": ["vivía", "viví"], "answer": "vivía" },
+        { "prompt": "Ayer ___ toda la tarde.", "options": ["llovió", "llovía"], "answer": "llovió" },
+        { "prompt": "Antes ___ mucho a Cancún.", "options": ["iba", "fui"], "answer": "iba" },
+        { "prompt": "___ tres veces a México.", "options": ["Fui", "Iba"], "answer": "Fui" }
+      ]
+    },
+    {
+      "id": "significado",
+      "section": "significado",
+      "title": "The meaning changes",
+      "instructions": "Choose the form that matches the English hint.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "No ___ que tenías hermanos. (I didn't know)", "options": ["sabía", "supe"], "answer": "sabía" },
+        { "prompt": "Lo ___ esta mañana. (I found out)", "options": ["supe", "sabía"], "answer": "supe" },
+        { "prompt": "___ a mi esposa en 2020. (I met)", "options": ["Conocí", "Conocía"], "answer": "Conocí" },
+        { "prompt": "Después de tres intentos, ___ abrir la puerta. (I managed)", "options": ["pude", "podía"], "answer": "pude" },
+        { "prompt": "Le pedí ayuda, pero no ___. (he refused)", "options": ["quiso", "quería"], "answer": "quiso" }
+      ]
+    },
+    {
+      "id": "historia",
+      "section": "final",
+      "title": "A story",
+      "instructions": "Write the verb in the preterite or the imperfect.",
+      "kind": "type",
+      "items": [
+        { "prompt": "___ un sábado por la mañana. (ser)", "answer": "Era" },
+        { "prompt": "___ sol y los pájaros cantaban. (hacer)", "answer": "Hacía" },
+        { "prompt": "De repente, mi teléfono ___. (sonar)", "answer": "sonó" },
+        { "prompt": "___ mi hermana. (ser)", "answer": "Era" },
+        { "prompt": "Me ___: «¡Ven rápido!». (decir)", "answer": "dijo" },
+        { "prompt": "Cuando llegué, todos me ___. (esperar)", "answer": "esperaban" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use the imperfect for the scene and the preterite for events.",
+    "I use the preterite for closed periods, even long ones.",
+    "I know sabía / supe, conocía / conocí, quería / quise.",
+    "I tell a story mixing both tenses."
+  ],
+  "challenge": {
+    "title": "How you met",
+    "text": "Tell how you met someone important in eight sentences: start with the scene in the imperfect, then the events in the preterite, and end with how you felt: *Era el verano de 2019. Hacía mucho calor. Entré a una cafetería y…*"
+  }
+}

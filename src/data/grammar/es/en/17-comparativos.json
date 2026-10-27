@@ -1,0 +1,146 @@
+{
+  "slug": "comparativos",
+  "number": 17,
+  "part": 4,
+  "level": "A2",
+  "title": "Comparisons",
+  "tagline": "Más… que, tan… como, mejor, el más alto, and -ísimo.",
+  "goal": "Compare people and things, use the irregular comparatives, form superlatives and intensify adjectives with -ísimo.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "comparar",
+      "title": "More, less, as… as",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Meaning", "Structure", "Example"],
+          "rows": [
+            ["more… than", "*más* + adj. / noun / adv. + *que*", "*Lima es {más} grande {que} Cusco.*"],
+            ["less… than", "*menos* + … + *que*", "*El bus es {menos} caro {que} el taxi.*"],
+            ["as… as (adjective, adverb)", "*tan* + … + *como*", "*Es {tan} alto {como} su papá.*"],
+            ["as much / many… as (noun)", "*tanto / tanta / tantos / tantas* + noun + *como*", "*Tengo {tantos} libros {como} tú.*"],
+            ["as much as (verb)", "verb + *tanto como*", "*Trabajo {tanto como} tú.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Before numbers, «more than» is *más de*: *Hay {más de} cien personas.*"
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "Better, worse, older, younger",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Base", "Comparative", "Example"],
+          "rows": [
+            ["*bueno / bien*", "*mejor* (better)", "*Este café es {mejor}. Cantas {mejor} que yo.*"],
+            ["*malo / mal*", "*peor* (worse)", "*Hoy me siento {peor}.*"],
+            ["*viejo* (people: age)", "*mayor* (older)", "*Mi hermana {mayor}.*"],
+            ["*joven*", "*menor* (younger)", "*Soy {menor} que él.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Never «más bueno» or «más bien» for quality. Spanish uses *mejor* for both «better» (adjective) and «better» (adverb), like English."
+        }
+      ]
+    },
+    {
+      "id": "superlativo",
+      "title": "The most… and -ísimo",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "el / la / los / las + (noun) + más / menos + adjective + de"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "Es la montaña {más alta de} América.", "tr": "It's the highest mountain in the Americas.", "note": "«in» = de" },
+            { "fr": "Es {el mejor} restaurante {de} la ciudad.", "tr": "It's the best restaurant in the city." },
+            { "fr": "La comida está {riquísima}.", "tr": "The food is really delicious.", "note": "-ísimo = very, extremely" }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "**-ísimo** drops the final vowel and sometimes changes spelling: *caro → car{ísimo}, rico → ri{quísimo}, largo → lar{guísimo}, fácil → facil{ísimo}*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "comparar",
+      "section": "comparar",
+      "title": "Más, menos, tan, tanto",
+      "instructions": "Choose the right word.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "El metro es ___ rápido que el bus. (+)", "options": ["más", "tan", "tanto"], "answer": "más" },
+        { "prompt": "Es ___ alto como su papá. (=)", "options": ["tan", "tanto", "más"], "answer": "tan" },
+        { "prompt": "Tengo ___ amigos como tú. (=)", "options": ["tantos", "tan", "tantas"], "answer": "tantos" },
+        { "prompt": "Trabajo ___ como tú. (=)", "options": ["tanto", "tan", "tantos"], "answer": "tanto" },
+        { "prompt": "Este hotel es ___ caro que el otro. (−)", "options": ["menos", "tan", "más de"], "answer": "menos" },
+        { "prompt": "Hay ___ cien personas.", "options": ["más de", "más que", "tan como"], "answer": "más de" }
+      ]
+    },
+    {
+      "id": "mejor",
+      "section": "irregulares",
+      "title": "Mejor, peor, mayor, menor",
+      "instructions": "Choose the right comparative.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Ella canta ___ que yo.", "options": ["mejor", "más bien", "más buena"], "answer": "mejor" },
+        { "prompt": "Este café es ___ que el de ayer.", "options": ["mejor", "más bueno de", "bien"], "answer": "mejor" },
+        { "prompt": "Mi hermana tiene 40 y yo 35. Ella es ___.", "options": ["mayor", "más vieja de", "menor"], "answer": "mayor" },
+        { "prompt": "Hoy me siento ___ que ayer: tengo más fiebre.", "options": ["peor", "mejor", "más mal de"], "answer": "peor" }
+      ]
+    },
+    {
+      "id": "superlativo",
+      "section": "superlativo",
+      "title": "Superlatives and -ísimo",
+      "instructions": "Write the missing word or form.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Es la ciudad más grande ___ país.", "answer": "del" },
+        { "prompt": "Es el ___ restaurante de la ciudad. (bueno)", "answer": "mejor" },
+        { "prompt": "La sopa está ___. (rico, -ísimo)", "answer": "riquísima" },
+        { "prompt": "El vestido es ___. (caro, -ísimo)", "answer": "carísimo" },
+        { "prompt": "Fue un viaje ___. (largo, -ísimo)", "answer": "larguísimo" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "My brother is taller than me.", "answer": "Mi hermano es más alto que yo." },
+        { "prompt": "It's the best day of the year.", "answer": "Es el mejor día del año." },
+        { "prompt": "I'm as tired as you. (tú, man)", "answer": "Estoy tan cansado como tú." },
+        { "prompt": "It's very, very expensive.", "answer": "Es carísimo." },
+        { "prompt": "She is younger than her sister.", "answer": "Es menor que su hermana.", "accept": ["Ella es menor que su hermana."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I compare with más / menos… que and tan… como.",
+    "I use tanto, tanta, tantos, tantas with nouns.",
+    "I use mejor, peor, mayor, menor.",
+    "I form superlatives with de and intensify with -ísimo."
+  ],
+  "challenge": {
+    "title": "Two cities",
+    "text": "Compare your city with another one in six sentences, including a superlative and an -ísimo: *Chicago es más fría que Ciudad de México. La comida mexicana es riquísima. El Zócalo es la plaza más grande de América Latina.*"
+  }
+}

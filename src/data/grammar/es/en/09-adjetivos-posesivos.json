@@ -1,0 +1,152 @@
+{
+  "slug": "adjetivos-posesivos",
+  "number": 9,
+  "part": 2,
+  "level": "A1",
+  "title": "Adjectives and possessives",
+  "tagline": "Agreement, word order, mi / tu / su, and «es mío».",
+  "goal": "Make adjectives agree with nouns, place them after the noun, use possessives (mi, tu, su, nuestro) and say whose something is.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "concordancia",
+      "title": "Agreement",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Adjectives change to match the noun in **gender** and **number**:"
+        },
+        {
+          "type": "table",
+          "head": ["Ending", "masc.", "fem.", "plural"],
+          "rows": [
+            ["**-o**", "*un gato negr{o}*", "*una gata negr{a}*", "*gatos negr{os}, gatas negr{as}*"],
+            ["**-e**", "*un chico amabl{e}*", "*una chica amabl{e}*", "*chicos amabl{es}*"],
+            ["**consonant**", "*un libro azul*", "*una casa azul*", "*casas azul{es}*"],
+            ["**nationality**", "*inglés, español*", "*ingles{a}, español{a}*", "*ingleses, españolas*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posicion",
+      "title": "Where the adjective goes",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The opposite of English: most adjectives go **after** the noun. *una casa grande* (a big house), *el carro rojo* (the red car)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Numbers and quantities go before: *dos perros, muchos amigos, poco tiempo*.",
+            "*bueno* and *malo* often go before and shorten before a masculine noun: *un {buen} día, un {mal} momento*.",
+            "*grande* before a noun becomes *gran* and means «great»: *un {gran} hombre* (a great man) vs *un hombre grande* (a big man)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posesivos",
+      "title": "Possessives",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["English", "Before the noun", "After the noun / alone"],
+          "rows": [
+            ["my", "*mi, mis*", "*mío, mía, míos, mías*"],
+            ["your (tú)", "*tu, tus*", "*tuyo, tuya…*"],
+            ["his, her, its, your (usted), their", "*su, sus*", "*suyo, suya…*"],
+            ["our", "*nuestro, nuestra, nuestros, nuestras*", "*nuestro…*"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Mis} padres viven en Texas.", "tr": "My parents live in Texas." },
+            { "fr": "{Nuestra} casa es pequeña.", "tr": "Our house is small." },
+            { "fr": "¿Es tu bolsa? — Sí, es {mía}.", "tr": "Is it your bag? — Yes, it's mine." },
+            { "fr": "Es la casa de Ana. = Es {su} casa.", "tr": "It's Ana's house. = It's her house." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "No apostrophe-s in Spanish: «Ana's house» is *la casa {de} Ana*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "concordancia",
+      "section": "concordancia",
+      "title": "Make it agree",
+      "instructions": "Write the adjective in the right form.",
+      "kind": "type",
+      "items": [
+        { "prompt": "una casa ___ (blanco)", "answer": "blanca" },
+        { "prompt": "unos zapatos ___ (negro)", "answer": "negros" },
+        { "prompt": "dos chicas ___ (inteligente)", "answer": "inteligentes" },
+        { "prompt": "una camisa ___ (azul)", "answer": "azul" },
+        { "prompt": "mi amiga ___ (inglés)", "answer": "inglesa" },
+        { "prompt": "unas flores ___ (rojo)", "answer": "rojas" }
+      ]
+    },
+    {
+      "id": "orden",
+      "section": "posicion",
+      "title": "Word order",
+      "instructions": "Put the words in order.",
+      "kind": "order",
+      "speak": "answer",
+      "items": [
+        { "words": ["una", "casa", "grande"], "answer": "una casa grande" },
+        { "words": ["el", "carro", "rojo"], "answer": "el carro rojo" },
+        { "words": ["un", "buen", "día"], "answer": "un buen día" },
+        { "words": ["muchos", "amigos", "simpáticos"], "answer": "muchos amigos simpáticos" },
+        { "words": ["un", "gran", "hombre"], "answer": "un gran hombre" }
+      ]
+    },
+    {
+      "id": "posesivos",
+      "section": "posesivos",
+      "title": "Possessives",
+      "instructions": "Choose the possessive.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "___ padres viven en Chicago. (my)", "options": ["Mis", "Mi", "Míos"], "answer": "Mis" },
+        { "prompt": "¿Es ___ perro? (your, tú)", "options": ["tu", "tú", "tuyo"], "answer": "tu" },
+        { "prompt": "___ casa es pequeña. (our)", "options": ["Nuestra", "Nuestro", "Nuestras"], "answer": "Nuestra" },
+        { "prompt": "Es la bolsa de Ana. Es ___ bolsa.", "options": ["su", "sus", "suya"], "answer": "su" },
+        { "prompt": "¿Es tu chamarra? — Sí, es ___.", "options": ["mía", "mi", "mío"], "answer": "mía" },
+        { "prompt": "Son ___ hijos. (their)", "options": ["sus", "su", "suyos"], "answer": "sus" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "a red car", "answer": "un carro rojo", "accept": ["un coche rojo", "un auto rojo"] },
+        { "prompt": "Diego's sister", "answer": "la hermana de Diego" },
+        { "prompt": "our friends", "answer": "nuestros amigos" },
+        { "prompt": "It's mine. (a book)", "answer": "Es mío." },
+        { "prompt": "a great day", "answer": "un gran día" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I make adjectives agree in gender and number.",
+    "I put most adjectives after the noun.",
+    "I use mi, tu, su, nuestro and their plurals.",
+    "I say la casa de Ana instead of «Ana's house»."
+  ],
+  "challenge": {
+    "title": "Describe your people",
+    "text": "Describe three people close to you with at least three adjectives each and a possessive: *Mi hermano es alto, divertido y un poco desordenado. Nuestra vecina es muy amable.*"
+  }
+}

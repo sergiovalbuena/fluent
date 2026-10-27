@@ -505,7 +505,10 @@
     "group_er": "1. Gruppe: Verben auf -er (außer aller)",
     "group_ir": "2. Gruppe (-ir mit -issons, wie finir) und einige der 3.",
     "group_re": "3. Gruppe: Verben auf -re",
-    "group_oir": "3. Gruppe: Verben auf -oir"
+    "group_oir": "3. Gruppe: Verben auf -oir",
+    "group_es_ar": "Verben auf -ar",
+    "group_es_er": "Verben auf -er",
+    "group_es_ir": "Verben auf -ir"
   },
   "verb_game": {
     "title": "Verb-Challenge",

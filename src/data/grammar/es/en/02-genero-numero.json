@@ -1,0 +1,161 @@
+{
+  "slug": "genero-numero",
+  "number": 2,
+  "part": 1,
+  "level": "A1",
+  "title": "Gender and number",
+  "tagline": "Every noun is masculine or feminine: el / la, un / una, and how to make plurals.",
+  "goal": "Guess the gender of most nouns from their ending, use the right article (el, la, los, las, un, una) and make plurals.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "genero",
+      "title": "Masculine or feminine",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In Spanish every noun has a gender, even objects. Learn each new noun **with its article**: *el libro*, *la mesa*. The ending usually gives it away:"
+        },
+        {
+          "type": "table",
+          "head": ["Usually masculine", "Usually feminine"],
+          "rows": [
+            ["**-o**: *el libro, el vaso*", "**-a**: *la casa, la mesa*"],
+            ["**-or**: *el color, el amor*", "**-ción, -sión**: *la canción, la televisión*"],
+            ["**-aje**: *el viaje, el paisaje*", "**-dad, -tad**: *la ciudad, la libertad*"],
+            ["**-ma** (Greek words): *el problema, el idioma, el tema*", "**-umbre**: *la costumbre*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Common exceptions",
+          "text": "*la mano* (hand), *la foto*, *la moto*, *la radio* are feminine; *el día*, *el mapa*, *el sofá* are masculine. *el agua* is feminine but takes *el* because it starts with a stressed a: *el agua fría*."
+        }
+      ]
+    },
+    {
+      "id": "articulos",
+      "title": "The articles",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["", "masculine", "feminine"],
+          "rows": [
+            ["the (singular)", "*{el} libro*", "*{la} mesa*"],
+            ["the (plural)", "*{los} libros*", "*{las} mesas*"],
+            ["a / an", "*{un} libro*", "*{una} mesa*"],
+            ["some", "*{unos} libros*", "*{unas} mesas*"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Spanish uses «the» more than English: *Me gusta {el} café* (I like coffee), *{Los} perros son fieles* (Dogs are loyal).",
+            "No «a» before jobs: *Soy médico* (I'm a doctor).",
+            "*a + el = al*, *de + el = del*: *Voy {al} cine. Es la casa {del} vecino.*"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Plurals",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Ending", "Plural", "Examples"],
+          "rows": [
+            ["vowel", "+ **s**", "*casa → casa{s}, café → café{s}*"],
+            ["consonant", "+ **es**", "*ciudad → ciudad{es}, color → color{es}*"],
+            ["**-z**", "→ **-ces**", "*lápiz → lápi{ces}, vez → ve{ces}*"],
+            ["**-ión**", "+ es, accent drops", "*canción → canci{ones}*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "A mixed group is masculine: *los padres* = parents, *los hermanos* = brothers and sisters, *los niños* = children."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "el-la",
+      "section": "genero",
+      "title": "El or la?",
+      "instructions": "Choose the article.",
+      "kind": "choice",
+      "options": ["el", "la"],
+      "items": [
+        { "prompt": "___ ciudad", "answer": "la" },
+        { "prompt": "___ problema", "answer": "el" },
+        { "prompt": "___ canción", "answer": "la" },
+        { "prompt": "___ viaje", "answer": "el" },
+        { "prompt": "___ mano", "answer": "la", "explain": "An exception: *la mano*." },
+        { "prompt": "___ día", "answer": "el", "explain": "An exception: *el día*." },
+        { "prompt": "___ libertad", "answer": "la" },
+        { "prompt": "___ color", "answer": "el" },
+        { "prompt": "___ foto", "answer": "la", "explain": "*la foto* is short for *la fotografía*." },
+        { "prompt": "___ idioma", "answer": "el" }
+      ]
+    },
+    {
+      "id": "articulos",
+      "section": "articulos",
+      "title": "Al and del",
+      "instructions": "Write al, del, a la or de la.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Voy ___ cine.", "answer": "al" },
+        { "prompt": "Es el carro ___ vecino.", "answer": "del" },
+        { "prompt": "Vamos ___ playa.", "answer": "a la" },
+        { "prompt": "Vengo ___ oficina.", "answer": "de la" },
+        { "prompt": "Llamo ___ médico.", "answer": "al" },
+        { "prompt": "El precio ___ libro es alto.", "answer": "del" }
+      ]
+    },
+    {
+      "id": "plural",
+      "section": "plural",
+      "title": "Make it plural",
+      "instructions": "Write the plural, with its article.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "la casa → ___", "answer": "las casas" },
+        { "prompt": "el color → ___", "answer": "los colores" },
+        { "prompt": "el lápiz → ___", "answer": "los lápices" },
+        { "prompt": "la canción → ___", "answer": "las canciones" },
+        { "prompt": "la ciudad → ___", "answer": "las ciudades" },
+        { "prompt": "el café → ___", "answer": "los cafés" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate. Watch the articles.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I like coffee.", "answer": "Me gusta el café." },
+        { "prompt": "I'm a teacher. (woman)", "answer": "Soy maestra.", "accept": ["Soy profesora."] },
+        { "prompt": "the cold water", "answer": "el agua fría" },
+        { "prompt": "some cities", "answer": "unas ciudades" },
+        { "prompt": "I'm going to the market.", "answer": "Voy al mercado." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I learn every noun with its article.",
+    "I guess the gender from endings like -o, -a, -ción, -dad, -ma.",
+    "I use al and del.",
+    "I make plurals with -s, -es and -ces."
+  ],
+  "challenge": {
+    "title": "Label your home",
+    "text": "Write sticky notes with the article and the noun for ten things in your home: *la puerta, el sofá, la ventana, el refrigerador…*. Say them aloud every time you see them this week."
+  }
+}

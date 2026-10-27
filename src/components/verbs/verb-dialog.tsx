@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 import { BookOpen, Quote, Volume2, X, Zap } from 'lucide-react'
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { speak } from '@/lib/languages'
-import { speakableForm, verbTranslation, type VerbEntry, type VerbExamples, type VerbForms, type VerbIndex } from '@/lib/verbs'
+import { isImperativeTense, speakableForm, verbTranslation, type VerbEntry, type VerbExamples, type VerbForms, type VerbIndex } from '@/lib/verbs'
 import { cn } from '@/lib/utils'
 
 /** The sentence with the verb form highlighted */
@@ -182,7 +182,7 @@ export function VerbDialog({ verb, index, forms, examples, languageCode, transla
                   <p className="mb-2.5 text-[11px] text-slate-400">{t('tap_to_listen')}</p>
                   <div className="grid gap-2.5 sm:grid-cols-2">
                     {mood.tenses.map(tense => {
-                      const imperative = forms[tense.key].length === 3
+                      const imperative = isImperativeTense(tense.key)
                       return (
                         <section key={tense.key} className="rounded-xl border border-black/[0.05] dark:border-white/[0.06] bg-slate-50/60 dark:bg-white/[0.02] px-3 py-2.5">
                           <div className="mb-1 flex items-center justify-between gap-2">

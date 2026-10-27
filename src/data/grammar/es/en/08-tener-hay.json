@@ -1,0 +1,155 @@
+{
+  "slug": "tener-hay",
+  "number": 8,
+  "part": 2,
+  "level": "A1",
+  "title": "Tener and hay",
+  "tagline": "Tengo hambre, tengo que, hay un… and where things are.",
+  "goal": "Use tener for age, sensations and obligation, and choose between hay and está to talk about what exists and where it is.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "tener",
+      "title": "Expressions with tener",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English says «I **am** hungry / 30 / cold». Spanish says «I **have** hunger / 30 years / cold»:"
+        },
+        {
+          "type": "table",
+          "head": ["Spanish", "English"],
+          "rows": [
+            ["*{Tengo} treinta años.*", "I'm thirty."],
+            ["*{Tengo} hambre / sed.*", "I'm hungry / thirsty."],
+            ["*{Tengo} frío / calor.*", "I'm cold / hot."],
+            ["*{Tengo} sueño.*", "I'm sleepy."],
+            ["*{Tengo} miedo.*", "I'm scared."],
+            ["*{Tengo} prisa.*", "I'm in a hurry."],
+            ["*{Tienes} razón.*", "You're right."],
+            ["*{Tengo} ganas de bailar.*", "I feel like dancing."]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "These take *mucho / mucha*, not *muy*: *Tengo {mucha} hambre. Tengo {mucho} frío.*"
+        }
+      ]
+    },
+    {
+      "id": "tener-que",
+      "title": "Tener que: have to",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "tener que + infinitivo"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Tengo que} trabajar mañana.", "tr": "I have to work tomorrow." },
+            { "fr": "No {tienes que} venir.", "tr": "You don't have to come." },
+            { "fr": "{Hay que} reservar.", "tr": "You have to book. (in general)", "note": "impersonal" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hay-esta",
+      "title": "Hay or está?",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "**Hay** (there is / there are) introduces something new, with *un, una, unos, números* or nothing. **Está / están** says where a specific thing is, with *el, la, mi, tu*…"
+        },
+        {
+          "type": "table",
+          "head": ["Hay: does it exist?", "Está: where is it?"],
+          "rows": [
+            ["*¿{Hay} un banco por aquí?*", "*¿Dónde {está} el banco?*"],
+            ["*{Hay} dos baños.*", "*Los baños {están} al fondo.*"],
+            ["*No {hay} leche.*", "*La leche {está} en el refri.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*Hay* never changes: *hay un libro, hay diez libros*. Never «hay el libro»."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "tener",
+      "section": "tener",
+      "title": "Tener expressions",
+      "instructions": "Choose the expression for the situation.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "No comiste nada en todo el día. ___", "options": ["Tengo hambre.", "Soy hambre.", "Estoy hambre."], "answer": "Tengo hambre." },
+        { "prompt": "Es medianoche y bostezas. ___", "options": ["Tengo sueño.", "Tengo prisa.", "Tengo razón."], "answer": "Tengo sueño." },
+        { "prompt": "Tu tren sale en cinco minutos. ___", "options": ["Tengo prisa.", "Tengo calor.", "Tengo ganas."], "answer": "Tengo prisa." },
+        { "prompt": "Tu amigo dice algo correcto. ___", "options": ["Tienes razón.", "Tienes prisa.", "Eres razón."], "answer": "Tienes razón." },
+        { "prompt": "Hace 35 grados. ___", "options": ["Tengo mucho calor.", "Tengo muy calor.", "Soy calor."], "answer": "Tengo mucho calor." },
+        { "prompt": "Ves una serpiente. ___", "options": ["Tengo miedo.", "Estoy miedo.", "Tengo sueño."], "answer": "Tengo miedo." }
+      ]
+    },
+    {
+      "id": "tener-que",
+      "section": "tener-que",
+      "title": "Tener que",
+      "instructions": "Write the right form of tener.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Yo ___ que trabajar el sábado.", "answer": "tengo" },
+        { "prompt": "¿Tú ___ que estudiar hoy?", "answer": "tienes" },
+        { "prompt": "Nosotros ___ que salir temprano.", "answer": "tenemos" },
+        { "prompt": "Ellos ___ que pagar la renta.", "answer": "tienen" },
+        { "prompt": "Mi hermano ___ que ir al médico.", "answer": "tiene" }
+      ]
+    },
+    {
+      "id": "hay-esta",
+      "section": "hay-esta",
+      "title": "Hay or está / están?",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "¿___ una farmacia por aquí?", "options": ["Hay", "Está"], "answer": "Hay" },
+        { "prompt": "¿Dónde ___ la farmacia?", "options": ["está", "hay"], "answer": "está" },
+        { "prompt": "En mi casa ___ tres cuartos.", "options": ["hay", "están"], "answer": "hay" },
+        { "prompt": "Mis llaves ___ en la mesa.", "options": ["están", "hay"], "answer": "están" },
+        { "prompt": "No ___ leche en el refri.", "options": ["hay", "está"], "answer": "hay" },
+        { "prompt": "El baño ___ al fondo.", "options": ["está", "hay"], "answer": "está" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I'm twenty-five.", "answer": "Tengo veinticinco años." },
+        { "prompt": "I'm very thirsty.", "answer": "Tengo mucha sed." },
+        { "prompt": "I have to go.", "answer": "Tengo que irme.", "accept": ["Me tengo que ir.", "Tengo que ir."] },
+        { "prompt": "Is there a bank near here?", "answer": "¿Hay un banco por aquí?", "accept": ["¿Hay un banco cerca?", "¿Hay un banco cerca de aquí?"] },
+        { "prompt": "Where is the bathroom?", "answer": "¿Dónde está el baño?" },
+        { "prompt": "You're right. (tú)", "answer": "Tienes razón." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I say my age and how I feel with tener.",
+    "I use mucho / mucha with these expressions.",
+    "I use tener que and hay que for obligations.",
+    "I choose hay for what exists and está for where it is."
+  ],
+  "challenge": {
+    "title": "Your neighborhood",
+    "text": "Write five sentences with hay about your neighborhood and three with está saying where things are: *Hay un parque muy bonito. El supermercado está a dos cuadras. No hay metro.*"
+  }
+}

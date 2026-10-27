@@ -505,7 +505,10 @@
     "group_er": "第1群：-er動詞（allerを除く）",
     "group_ir": "第2群（finirのような-issons型の-ir）と一部の第3群",
     "group_re": "第3群：-re動詞",
-    "group_oir": "第3群：-oir動詞"
+    "group_oir": "第3群：-oir動詞",
+    "group_es_ar": "-ar 動詞",
+    "group_es_er": "-er 動詞",
+    "group_es_ir": "-ir 動詞"
   },
   "verb_game": {
     "title": "動詞チャレンジ",

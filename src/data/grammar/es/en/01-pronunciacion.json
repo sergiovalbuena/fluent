@@ -1,0 +1,505 @@
+{
+  "slug": "pronunciacion",
+  "number": 1,
+  "part": 1,
+  "level": "A1",
+  "title": "The sounds of Spanish",
+  "tagline": "Five pure vowels, the letters that surprise English speakers, and where the stress goes.",
+  "goal": "Pronounce the five Spanish vowels, read the tricky letters (j, g, h, ll, ñ, rr, c, z), and know which syllable to stress just by looking at a word.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "vocales",
+      "title": "Five vowels, always the same",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "English vowels change all the time (cat, car, care). Spanish has only **five vowel sounds**, short and clean, and each letter always sounds the same. No gliding: *no* is «no», not «noh-oo»."
+        },
+        {
+          "type": "sounds",
+          "items": [
+            {
+              "label": "a",
+              "ipa": "a",
+              "hint": "like the a in «father», but shorter",
+              "examples": [
+                "casa",
+                "mamá",
+                "banana"
+              ]
+            },
+            {
+              "label": "e",
+              "ipa": "e",
+              "hint": "like the e in «bet»",
+              "examples": [
+                "mesa",
+                "leche",
+                "tres"
+              ]
+            },
+            {
+              "label": "i",
+              "ipa": "i",
+              "hint": "like the ee in «see», short",
+              "examples": [
+                "sí",
+                "libro",
+                "vino"
+              ]
+            },
+            {
+              "label": "o",
+              "ipa": "o",
+              "hint": "like the o in «more», without the w at the end",
+              "examples": [
+                "no",
+                "foto",
+                "como"
+              ]
+            },
+            {
+              "label": "u",
+              "ipa": "u",
+              "hint": "like the oo in «food», short",
+              "examples": [
+                "tú",
+                "uno",
+                "luna"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Every vowel is pronounced, even at the end of a word: *noche* has two syllables, «no-che», and *gente* is «gen-te»."
+        }
+      ]
+    },
+    {
+      "id": "consonantes",
+      "title": "The letters that surprise you",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Letter",
+            "Sound",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "**h**",
+              "always silent",
+              "*hola, hotel, ahora*"
+            ],
+            [
+              "**j**, and **g** before e / i",
+              "a raspy h, from the throat",
+              "*jamón, gente, Gijón*"
+            ],
+            [
+              "**g** before a / o / u",
+              "hard g, like «go»",
+              "*gato, amigo, guerra* (gu: silent u)"
+            ],
+            [
+              "**ll** and **y**",
+              "like the y in «yes» in most countries",
+              "*llamar, playa, yo*"
+            ],
+            [
+              "**ñ**",
+              "like the ny in «canyon»",
+              "*niño, mañana, España*"
+            ],
+            [
+              "**rr**, and **r** at the start",
+              "a rolled r (several taps)",
+              "*perro, rojo, Roma*"
+            ],
+            [
+              "**r** between vowels",
+              "one quick tap, like the tt in «butter» (US)",
+              "*pero, cara, para*"
+            ],
+            [
+              "**v** and **b**",
+              "the same sound, a soft b",
+              "*vino, bien, uva*"
+            ],
+            [
+              "**z**, and **c** before e / i",
+              "s in Latin America, th in most of Spain",
+              "*zapato, cine, cena*"
+            ],
+            [
+              "**qu**",
+              "k (the u is silent)",
+              "*queso, quince, aquí*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "pero / perro",
+          "text": "One tap or a roll changes the word: *pero* = but, *perro* = dog. *caro* = expensive, *carro* = car."
+        }
+      ]
+    },
+    {
+      "id": "acento",
+      "title": "Where the stress goes",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Spanish spelling tells you which syllable to stress. Two simple rules, and a written accent (´) whenever a word breaks them:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Word ends in…",
+            "Stress falls on…",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "a vowel, **n** or **s**",
+              "the second-to-last syllable",
+              "*ca{sa}, ha{blan}, za{pa}tos*"
+            ],
+            [
+              "any other consonant",
+              "the last syllable",
+              "*ha{blar}, ciu{dad}, espa{ñol}*"
+            ],
+            [
+              "a written accent",
+              "the accented syllable, always",
+              "*ca{fé}, {lá}piz, can{ción}, {mú}sica*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Accents also separate words that sound the same: *tú* (you) / *tu* (your), *sí* (yes) / *si* (if), *él* (he) / *el* (the). Questions always carry them: *qué, dónde, cómo*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "vocal",
+      "section": "vocales",
+      "title": "Which vowel?",
+      "instructions": "Listen to the word and choose its stressed vowel.",
+      "kind": "choice",
+      "listen": true,
+      "speak": "prompt",
+      "options": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ],
+      "items": [
+        {
+          "prompt": "mesa",
+          "answer": "e"
+        },
+        {
+          "prompt": "libro",
+          "answer": "i"
+        },
+        {
+          "prompt": "luna",
+          "answer": "u"
+        },
+        {
+          "prompt": "casa",
+          "answer": "a"
+        },
+        {
+          "prompt": "foto",
+          "answer": "o"
+        },
+        {
+          "prompt": "leche",
+          "answer": "e"
+        }
+      ]
+    },
+    {
+      "id": "letras",
+      "section": "consonantes",
+      "title": "Read the letters",
+      "instructions": "How is the highlighted letter pronounced?",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "{h}ola",
+          "options": [
+            "silent",
+            "like English h",
+            "like j"
+          ],
+          "answer": "silent"
+        },
+        {
+          "prompt": "{j}amón",
+          "options": [
+            "a raspy h",
+            "like English j",
+            "silent"
+          ],
+          "answer": "a raspy h"
+        },
+        {
+          "prompt": "{g}ente",
+          "options": [
+            "a raspy h",
+            "hard g, like «go»",
+            "like English j"
+          ],
+          "answer": "a raspy h"
+        },
+        {
+          "prompt": "{g}ato",
+          "options": [
+            "hard g, like «go»",
+            "a raspy h",
+            "silent"
+          ],
+          "answer": "hard g, like «go»"
+        },
+        {
+          "prompt": "ma{ñ}ana",
+          "options": [
+            "ny, like «canyon»",
+            "n",
+            "ñ is silent"
+          ],
+          "answer": "ny, like «canyon»"
+        },
+        {
+          "prompt": "{qu}eso",
+          "options": [
+            "k",
+            "kw",
+            "q"
+          ],
+          "answer": "k"
+        },
+        {
+          "prompt": "{ll}amar",
+          "options": [
+            "y, like «yes»",
+            "l",
+            "double l"
+          ],
+          "answer": "y, like «yes»"
+        }
+      ],
+      "speak": "prompt"
+    },
+    {
+      "id": "pero-perro",
+      "section": "consonantes",
+      "title": "One tap or a roll?",
+      "instructions": "Listen and choose the word you hear.",
+      "kind": "choice",
+      "listen": true,
+      "speak": "answer",
+      "items": [
+        {
+          "options": [
+            "perro",
+            "pero"
+          ],
+          "answer": "perro",
+          "say": "perro",
+          "explain": "*perro* (dog) has a rolled rr."
+        },
+        {
+          "options": [
+            "pero",
+            "perro"
+          ],
+          "answer": "pero",
+          "say": "pero",
+          "explain": "*pero* (but) has a single tap."
+        },
+        {
+          "options": [
+            "carro",
+            "caro"
+          ],
+          "answer": "carro",
+          "say": "carro"
+        },
+        {
+          "options": [
+            "caro",
+            "carro"
+          ],
+          "answer": "caro",
+          "say": "caro"
+        },
+        {
+          "options": [
+            "cerro",
+            "cero"
+          ],
+          "answer": "cero",
+          "say": "cero"
+        },
+        {
+          "options": [
+            "perro",
+            "pero"
+          ],
+          "answer": "perro",
+          "say": "perro"
+        }
+      ]
+    },
+    {
+      "id": "silaba",
+      "section": "acento",
+      "title": "Find the stressed syllable",
+      "instructions": "Which syllable is stressed? Use the rules: no accent mark needed.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "hablan",
+          "options": [
+            "HA-blan",
+            "ha-BLAN"
+          ],
+          "answer": "HA-blan",
+          "explain": "Ends in n → second-to-last syllable."
+        },
+        {
+          "prompt": "hablar",
+          "options": [
+            "ha-BLAR",
+            "HA-blar"
+          ],
+          "answer": "ha-BLAR",
+          "explain": "Ends in r → last syllable."
+        },
+        {
+          "prompt": "ciudad",
+          "options": [
+            "ciu-DAD",
+            "CIU-dad"
+          ],
+          "answer": "ciu-DAD"
+        },
+        {
+          "prompt": "zapatos",
+          "options": [
+            "za-PA-tos",
+            "ZA-pa-tos",
+            "za-pa-TOS"
+          ],
+          "answer": "za-PA-tos"
+        },
+        {
+          "prompt": "café",
+          "options": [
+            "ca-FÉ",
+            "CA-fé"
+          ],
+          "answer": "ca-FÉ",
+          "explain": "The written accent marks the stress."
+        },
+        {
+          "prompt": "música",
+          "options": [
+            "MÚ-si-ca",
+            "mu-SI-ca"
+          ],
+          "answer": "MÚ-si-ca"
+        }
+      ],
+      "speak": "prompt"
+    },
+    {
+      "id": "tilde",
+      "section": "final",
+      "title": "With or without an accent?",
+      "instructions": "Choose the word that fits the sentence.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "¿___ eres de Chicago?",
+          "options": [
+            "Tú",
+            "Tu"
+          ],
+          "answer": "Tú",
+          "explain": "*tú* = you; *tu* = your."
+        },
+        {
+          "prompt": "Esta es ___ casa.",
+          "options": [
+            "tu",
+            "tú"
+          ],
+          "answer": "tu"
+        },
+        {
+          "prompt": "¿Quieres café? — ___, gracias.",
+          "options": [
+            "Sí",
+            "Si"
+          ],
+          "answer": "Sí",
+          "explain": "*sí* = yes; *si* = if."
+        },
+        {
+          "prompt": "___ llueve, no salgo.",
+          "options": [
+            "Si",
+            "Sí"
+          ],
+          "answer": "Si"
+        },
+        {
+          "prompt": "¿___ vives?",
+          "options": [
+            "Dónde",
+            "Donde"
+          ],
+          "answer": "Dónde",
+          "explain": "Question words always carry an accent."
+        },
+        {
+          "prompt": "___ es mi hermano.",
+          "options": [
+            "Él",
+            "El"
+          ],
+          "answer": "Él",
+          "explain": "*él* = he; *el* = the."
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    "I pronounce the five vowels short and clean.",
+    "I know that h is silent and j sounds like a raspy h.",
+    "I hear the difference between pero and perro.",
+    "I can tell which syllable is stressed by looking at the word."
+  ],
+  "challenge": {
+    "title": "Read it aloud",
+    "text": "Record yourself reading these words, then compare with the audio in the app: *perro, pero, jamón, gente, mañana, ciudad, música, hablar, hablan, queso*. Pay attention to the r's and the stress."
+  }
+}

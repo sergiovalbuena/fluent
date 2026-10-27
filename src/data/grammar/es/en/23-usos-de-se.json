@@ -1,0 +1,289 @@
+{
+  "slug": "usos-de-se",
+  "number": 23,
+  "part": 5,
+  "level": "B1",
+  "title": "The many uses of se",
+  "tagline": "Se habla español, se vende, se me cayó: impersonal, passive and accidental se.",
+  "goal": "Recognize and use se for general statements, the passive, unplanned accidents, and as a replacement for le before lo / la.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "impersonal",
+      "title": "Impersonal and passive se",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "*Se* + verb in the 3rd person talks about what **people in general** do, or what **is done**, without saying who. It's far more common than the passive with *ser*."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "fr": "Aquí {se habla} español.",
+              "tr": "Spanish is spoken here."
+            },
+            {
+              "fr": "{Se vende} casa.",
+              "tr": "House for sale."
+            },
+            {
+              "fr": "{Se venden} casas.",
+              "tr": "Houses for sale.",
+              "note": "the verb agrees with the thing"
+            },
+            {
+              "fr": "¿Cómo {se dice} «weekend» en español?",
+              "tr": "How do you say «weekend» in Spanish?"
+            },
+            {
+              "fr": "En México {se come} tarde.",
+              "tr": "In Mexico people eat late."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accidental",
+      "title": "Accidents: se me cayó",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "For unplanned events, Spanish makes the **thing** the subject and the person an indirect object. It sounds less like your fault: «it fell (on me)»."
+        },
+        {
+          "type": "formula",
+          "text": "se + me / te / le / nos / les + verbo (agrees with the thing)"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Spanish",
+            "English"
+          ],
+          "rows": [
+            [
+              "*{Se me cayó} el celular.*",
+              "I dropped my phone."
+            ],
+            [
+              "*{Se me olvidaron} las llaves.*",
+              "I forgot my keys."
+            ],
+            [
+              "*{Se nos acabó} la leche.*",
+              "We ran out of milk."
+            ],
+            [
+              "*{Se le rompió} la pantalla.*",
+              "His screen broke."
+            ],
+            [
+              "*{Se me perdió} la cartera.*",
+              "I lost my wallet."
+            ],
+            [
+              "*{Se nos descompuso} el carro.*",
+              "Our car broke down."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "otros",
+      "title": "Two more se's",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Reflexive and reciprocal** [[10]]: *Se levanta temprano. Se quieren mucho.*",
+            "**Le / les before lo / la** [[15]]: *Le doy el libro → {Se lo} doy.*"
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "When you see *se*, ask: is somebody doing it to themselves (reflexive), to each other (reciprocal), is it «people / it is done» (impersonal), or did something just happen (accidental)?"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "impersonal",
+      "section": "impersonal",
+      "title": "Se + singular or plural",
+      "instructions": "Choose the verb form.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "Aquí se ___ inglés.",
+          "options": [
+            "habla",
+            "hablan"
+          ],
+          "answer": "habla"
+        },
+        {
+          "prompt": "Se ___ departamentos.",
+          "options": [
+            "rentan",
+            "renta"
+          ],
+          "answer": "rentan"
+        },
+        {
+          "prompt": "¿Cómo se ___ «avocado» en español?",
+          "options": [
+            "dice",
+            "dicen"
+          ],
+          "answer": "dice"
+        },
+        {
+          "prompt": "Se ___ mucha fruta en este mercado.",
+          "options": [
+            "vende",
+            "venden"
+          ],
+          "answer": "vende"
+        },
+        {
+          "prompt": "En Colombia se ___ arepas en el desayuno.",
+          "options": [
+            "comen",
+            "come"
+          ],
+          "answer": "comen"
+        }
+      ]
+    },
+    {
+      "id": "accidental",
+      "section": "accidental",
+      "title": "Accidents",
+      "instructions": "Write the accidental se form in the preterite.",
+      "kind": "type",
+      "items": [
+        {
+          "prompt": "Se ___ cayó el vaso. (a mí)",
+          "answer": "me"
+        },
+        {
+          "prompt": "Se me ___ las llaves. (olvidar)",
+          "answer": "olvidaron"
+        },
+        {
+          "prompt": "Se ___ acabó el café. (a nosotros)",
+          "answer": "nos"
+        },
+        {
+          "prompt": "A Diego se le ___ la pantalla. (romper)",
+          "answer": "rompió"
+        },
+        {
+          "prompt": "Se me ___ la cartera en el taxi. (perder)",
+          "answer": "perdió"
+        }
+      ]
+    },
+    {
+      "id": "cual",
+      "section": "otros",
+      "title": "Which se is it?",
+      "instructions": "What kind of se is in the sentence?",
+      "kind": "choice",
+      "options": [
+        "reflexive",
+        "reciprocal",
+        "impersonal / passive",
+        "accidental"
+      ],
+      "items": [
+        {
+          "prompt": "Se ducha por la mañana.",
+          "answer": "reflexive"
+        },
+        {
+          "prompt": "Se venden bicicletas.",
+          "answer": "impersonal / passive"
+        },
+        {
+          "prompt": "Se me rompió el vaso.",
+          "answer": "accidental"
+        },
+        {
+          "prompt": "Ana y Luis se escriben cada día.",
+          "answer": "reciprocal"
+        },
+        {
+          "prompt": "Aquí se come muy bien.",
+          "answer": "impersonal / passive"
+        },
+        {
+          "prompt": "Se le olvidó mi cumpleaños.",
+          "answer": "accidental"
+        }
+      ],
+      "speak": "prompt"
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate with se.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        {
+          "prompt": "Spanish is spoken here.",
+          "answer": "Aquí se habla español.",
+          "accept": [
+            "Se habla español aquí.",
+            "Se habla español."
+          ]
+        },
+        {
+          "prompt": "I dropped my phone.",
+          "answer": "Se me cayó el celular.",
+          "accept": [
+            "Se me cayó el teléfono.",
+            "Se me cayó el móvil."
+          ]
+        },
+        {
+          "prompt": "We ran out of milk.",
+          "answer": "Se nos acabó la leche."
+        },
+        {
+          "prompt": "How do you say «cool» in Spanish?",
+          "answer": "¿Cómo se dice «cool» en español?",
+          "accept": [
+            "¿Cómo se dice cool en español?"
+          ]
+        },
+        {
+          "prompt": "Rooms for rent.",
+          "answer": "Se rentan cuartos.",
+          "accept": [
+            "Se alquilan habitaciones.",
+            "Se rentan habitaciones.",
+            "Se alquilan cuartos."
+          ]
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use se + verb for general statements and signs (se vende, se habla).",
+    "I make the verb agree with the thing: se venden casas.",
+    "I describe accidents with se me cayó, se me olvidó, se nos acabó.",
+    "I tell the different kinds of se apart."
+  ],
+  "challenge": {
+    "title": "A bad day",
+    "text": "Write about a day when everything went wrong, with at least five accidental se: *Se me olvidaron las llaves, se me cayó el café y se nos descompuso el carro…*"
+  }
+}

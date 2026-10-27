@@ -1,0 +1,142 @@
+{
+  "slug": "por-para",
+  "number": 19,
+  "part": 4,
+  "level": "B1",
+  "title": "Por or para",
+  "tagline": "Two words for «for»: the reason behind you, and the goal ahead of you.",
+  "goal": "Choose between por and para for purpose, destination, deadlines, causes, exchanges, duration and movement, and learn the fixed expressions.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "para",
+      "title": "Para: looking ahead",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "**Para** points forward, to a goal, a destination or a recipient:"
+        },
+        {
+          "type": "table",
+          "head": ["Use", "Example", "English"],
+          "rows": [
+            ["Purpose (+ infinitive)", "*Estudio {para} aprender.*", "in order to"],
+            ["Recipient", "*Este regalo es {para} ti.*", "for you"],
+            ["Destination", "*Salgo {para} Lima mañana.*", "leaving for"],
+            ["Deadline", "*Es {para} el viernes.*", "due by Friday"],
+            ["Opinion", "*{Para} mí, es caro.*", "in my opinion"],
+            ["Use of an object", "*una taza {para} café*", "a coffee cup"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "por",
+      "title": "Por: looking back, or through",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "**Por** looks at the cause, the means or the path:"
+        },
+        {
+          "type": "table",
+          "head": ["Use", "Example", "English"],
+          "rows": [
+            ["Cause, reason", "*Llegué tarde {por} el tráfico.*", "because of"],
+            ["Exchange, price", "*Lo compré {por} diez dólares.*", "for ten dollars"],
+            ["Duration", "*Estudié {por} dos horas.*", "for two hours"],
+            ["Movement through, along", "*Caminamos {por} el parque.*", "through the park"],
+            ["Means", "*Hablamos {por} teléfono.*", "on the phone, by"],
+            ["Thanks", "*Gracias {por} todo.*", "thanks for"],
+            ["Per", "*cien kilómetros {por} hora*", "per hour"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "The quick test",
+          "text": "If you can say «in order to» → *para*. If you can say «because of», «in exchange for» or «through» → *por*."
+        }
+      ]
+    },
+    {
+      "id": "expresiones",
+      "title": "Fixed expressions",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["With por", "With para"],
+          "rows": [
+            ["*por favor* (please)", "*para siempre* (forever)"],
+            ["*por fin* (finally)", "*para nada* (not at all)"],
+            ["*por supuesto* (of course)", "*para colmo* (to top it all off)"],
+            ["*por ejemplo* (for example)", "*no es para tanto* (it's not a big deal)"],
+            ["*por eso* (that's why)", "*para entonces* (by then)"]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "por-para",
+      "section": "por",
+      "title": "Por or para?",
+      "instructions": "Choose por or para.",
+      "kind": "choice",
+      "options": ["por", "para"],
+      "items": [
+        { "prompt": "Estudio español ___ hablar con mis vecinos.", "answer": "para" },
+        { "prompt": "Gracias ___ tu ayuda.", "answer": "por" },
+        { "prompt": "Este regalo es ___ ti.", "answer": "para" },
+        { "prompt": "Llegué tarde ___ la lluvia.", "answer": "por" },
+        { "prompt": "Compré la chamarra ___ cincuenta dólares.", "answer": "por" },
+        { "prompt": "El informe es ___ el lunes.", "answer": "para" },
+        { "prompt": "Caminamos ___ la playa al atardecer.", "answer": "por" },
+        { "prompt": "Mañana salgo ___ Bogotá.", "answer": "para" },
+        { "prompt": "Viví en Lima ___ cinco años.", "answer": "por", "explain": "Duration. Spanish often drops it: *Viví cinco años en Lima*." },
+        { "prompt": "El español, ___ mí, es fácil.", "answer": "para" }
+      ]
+    },
+    {
+      "id": "expresiones",
+      "section": "expresiones",
+      "title": "Fixed expressions",
+      "instructions": "Choose the expression that fits.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Esperamos tres horas y ___ llegó el tren.", "options": ["por fin", "para siempre", "por favor"], "answer": "por fin" },
+        { "prompt": "¿Me ayudas? — ¡___!", "options": ["Por supuesto", "Para nada", "Por ejemplo"], "answer": "Por supuesto" },
+        { "prompt": "Estaba lloviendo; ___ no salimos.", "options": ["por eso", "para colmo", "por favor"], "answer": "por eso" },
+        { "prompt": "¿Te molesta? — No, ___.", "options": ["para nada", "por fin", "por eso"], "answer": "para nada" },
+        { "prompt": "Te voy a querer ___.", "options": ["para siempre", "por siempre de", "por fin"], "answer": "para siempre" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate with por or para.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "This is for you. (tú)", "answer": "Esto es para ti." },
+        { "prompt": "Thanks for everything.", "answer": "Gracias por todo." },
+        { "prompt": "I'm studying to be a doctor.", "answer": "Estudio para ser médico.", "accept": ["Estudio para ser médica.", "Estoy estudiando para ser médico."] },
+        { "prompt": "We talked on the phone.", "answer": "Hablamos por teléfono." },
+        { "prompt": "I need it by Friday.", "answer": "Lo necesito para el viernes." },
+        { "prompt": "That's why I'm tired.", "answer": "Por eso estoy cansado.", "accept": ["Por eso estoy cansada."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use para for purpose, recipients, destinations, deadlines and opinions.",
+    "I use por for causes, prices, duration, movement and means.",
+    "I apply the test: «in order to» → para; «because of / in exchange» → por.",
+    "I know por fin, por supuesto, por eso, para siempre, para nada."
+  ],
+  "challenge": {
+    "title": "Why and what for",
+    "text": "Write six sentences about your Spanish learning: three with por (why you started, how you practice, thanks) and three with para (what for, deadlines, your goals): *Empecé por mi trabajo. Practico por teléfono. Estudio para viajar a México.*"
+  }
+}

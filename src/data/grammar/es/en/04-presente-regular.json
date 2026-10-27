@@ -1,0 +1,152 @@
+{
+  "slug": "presente-regular",
+  "number": 4,
+  "part": 1,
+  "level": "A1",
+  "title": "The regular present",
+  "tagline": "-ar, -er and -ir verbs, and why Spanish can drop «I» and «you».",
+  "goal": "Conjugate any regular verb in the present, drop the subject pronoun like native speakers do, and use the present for habits, facts and the near future.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "terminaciones",
+      "title": "Three families of verbs",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Every Spanish infinitive ends in **-ar**, **-er** or **-ir**. Remove the ending and add the endings of the person:"
+        },
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "hablar", "meaning": "to speak", "forms": ["habl{o}", "habl{as}", "habl{a}", "habl{amos}", "habl{an}"] },
+            { "verb": "comer", "meaning": "to eat", "forms": ["com{o}", "com{es}", "com{e}", "com{emos}", "com{en}"] },
+            { "verb": "vivir", "meaning": "to live", "forms": ["viv{o}", "viv{es}", "viv{e}", "viv{imos}", "viv{en}"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "-er and -ir verbs are identical except for *nosotros*: *comemos* / *vivimos*."
+        }
+      ]
+    },
+    {
+      "id": "sujeto",
+      "title": "No need for «I» or «you»",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The ending already says who does the action, so Spanish usually **drops the subject pronoun**: *Hablo español* = I speak Spanish. Using *yo*, *tú*… adds emphasis or contrast."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Trabajo} en una oficina.", "tr": "I work in an office." },
+            { "fr": "¿{Vives} aquí?", "tr": "Do you live here?" },
+            { "fr": "Yo {cocino} y tú {lavas} los platos.", "tr": "I cook and YOU wash the dishes.", "note": "contrast" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "No «do / does» in questions or negatives: *¿Hablas inglés?* (Do you speak English?) · *No como carne* (I don't eat meat)."
+        }
+      ]
+    },
+    {
+      "id": "usos",
+      "title": "What the present is for",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Use", "Example", "English"],
+          "rows": [
+            ["Habits and facts", "*{Desayuno} a las siete.*", "I have breakfast at seven."],
+            ["Right now (also estar + -ando)", "*¿Qué {haces}?*", "What are you doing?"],
+            ["Near future, with a time word", "*Mañana {trabajo}.*", "I'm working tomorrow."],
+            ["How long (with desde hace)", "*{Vivo} aquí desde hace un año.*", "I've lived here for a year."]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "conjuga",
+      "section": "terminaciones",
+      "title": "Conjugate",
+      "instructions": "Write the verb in the present.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Yo ___ español. (hablar)", "answer": "hablo" },
+        { "prompt": "Tú ___ mucho. (trabajar)", "answer": "trabajas" },
+        { "prompt": "Ella ___ en Bogotá. (vivir)", "answer": "vive" },
+        { "prompt": "Nosotros ___ a las dos. (comer)", "answer": "comemos" },
+        { "prompt": "Ustedes ___ el periódico. (leer)", "answer": "leen" },
+        { "prompt": "Nosotros ___ en un departamento. (vivir)", "answer": "vivimos" },
+        { "prompt": "Él ___ cartas. (escribir)", "answer": "escribe" },
+        { "prompt": "Yo ___ café todas las mañanas. (tomar)", "answer": "tomo" }
+      ]
+    },
+    {
+      "id": "quien",
+      "section": "sujeto",
+      "title": "Who is it?",
+      "instructions": "No pronoun in the sentence: who is doing the action?",
+      "kind": "choice",
+      "options": ["yo", "tú", "él / ella", "nosotros", "ellos"],
+      "speak": "prompt",
+      "items": [
+        { "prompt": "Bailamos salsa los viernes.", "answer": "nosotros" },
+        { "prompt": "Cocino muy bien.", "answer": "yo" },
+        { "prompt": "¿Comes carne?", "answer": "tú" },
+        { "prompt": "Viven en Lima.", "answer": "ellos" },
+        { "prompt": "Escribe un correo.", "answer": "él / ella" },
+        { "prompt": "Estudiamos español.", "answer": "nosotros" }
+      ]
+    },
+    {
+      "id": "orden",
+      "section": "usos",
+      "title": "Build the sentence",
+      "instructions": "Put the words in order.",
+      "kind": "order",
+      "speak": "answer",
+      "items": [
+        { "words": ["no", "como", "carne"], "answer": "no como carne" },
+        { "words": ["¿hablas", "inglés?"], "answer": "¿hablas inglés?" },
+        { "words": ["mañana", "trabajo", "en", "casa"], "answer": "mañana trabajo en casa" },
+        { "words": ["vivo", "aquí", "desde", "hace", "un", "año"], "answer": "vivo aquí desde hace un año" },
+        { "words": ["desayunamos", "a", "las", "siete"], "answer": "desayunamos a las siete" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate. Leave out the subject pronoun.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I live in Mexico.", "answer": "Vivo en México." },
+        { "prompt": "Do you speak Spanish? (tú)", "answer": "¿Hablas español?" },
+        { "prompt": "We don't eat meat.", "answer": "No comemos carne." },
+        { "prompt": "They work on Saturdays.", "answer": "Trabajan los sábados." },
+        { "prompt": "I'm working tomorrow.", "answer": "Mañana trabajo.", "accept": ["Trabajo mañana."] },
+        { "prompt": "She reads a lot.", "answer": "Lee mucho.", "accept": ["Ella lee mucho."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I conjugate regular -ar, -er and -ir verbs in the present.",
+    "I drop yo, tú… when they aren't needed.",
+    "I make questions and negatives without «do».",
+    "I use the present for habits and the near future."
+  ],
+  "challenge": {
+    "title": "A typical week",
+    "text": "Write six sentences about your week with six different regular verbs and no subject pronouns: *Trabajo de lunes a viernes. Los martes cocino con mi pareja. Los sábados corro en el parque.*"
+  }
+}

@@ -505,7 +505,10 @@
     "group_er": "1er groupe : verbes en -er (sauf aller)",
     "group_ir": "2e groupe (-ir en -issons, comme finir) et quelques-uns du 3e",
     "group_re": "3e groupe : verbes en -re",
-    "group_oir": "3e groupe : verbes en -oir"
+    "group_oir": "3e groupe : verbes en -oir",
+    "group_es_ar": "Verbes en -ar",
+    "group_es_er": "Verbes en -er",
+    "group_es_ir": "Verbes en -ir"
   },
   "verb_game": {
     "title": "Défi des verbes",

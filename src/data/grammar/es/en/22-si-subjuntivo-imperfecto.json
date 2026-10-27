@@ -1,0 +1,149 @@
+{
+  "slug": "si-subjuntivo-imperfecto",
+  "number": 22,
+  "part": 5,
+  "level": "B2",
+  "title": "If I were you…",
+  "tagline": "The imperfect subjunctive and if-clauses: si tuviera, si hubiera sabido.",
+  "goal": "Form the imperfect and pluperfect subjunctive and build real, unreal and past unreal if-clauses, plus como si and quisiera.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "The imperfect subjunctive",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Take the **ellos** form of the preterite, drop **-ron**, and add *-ra, -ras, -ra, -ramos, -ran*. Every irregular preterite carries over:"
+        },
+        {
+          "type": "table",
+          "head": ["Preterite (ellos)", "Imperfect subjunctive"],
+          "rows": [
+            ["*hablaron*", "*habla{ra}, habla{ras}, habla{ra}, hablá{ramos}, habla{ran}*"],
+            ["*tuvieron*", "*tuvie{ra}, tuvie{ras}…*"],
+            ["*fueron* (ser, ir)", "*fue{ra}, fue{ras}…*"],
+            ["*hicieron*", "*hicie{ra}…*"],
+            ["*pudieron*", "*pudie{ra}…*"],
+            ["*dijeron*", "*dije{ra}…*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "You'll also see *-se* forms (*hablase, tuviese*), especially in Spain and in writing. They mean the same."
+        }
+      ]
+    },
+    {
+      "id": "si",
+      "title": "Three kinds of if",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Type", "Structure", "Example"],
+          "rows": [
+            ["Real (possible)", "*si* + present → present / future", "*Si {tengo} tiempo, te {llamo}.*"],
+            ["Unreal (now)", "*si* + imperfect subjunctive → conditional", "*Si {tuviera} tiempo, te {llamaría}.*"],
+            ["Unreal past", "*si* + pluperfect subjunctive → conditional perfect", "*Si {hubiera sabido}, {habría venido}.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "Never the conditional after *si*: «si tendría» is wrong. And never the present subjunctive after *si* either."
+        },
+        {
+          "type": "formula",
+          "text": "pluperfect subjunctive = hubiera / hubieras / hubiera / hubiéramos / hubieran + participle"
+        }
+      ]
+    },
+    {
+      "id": "otros",
+      "title": "Como si, quisiera and the past of wishes",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Use", "Example", "English"],
+          "rows": [
+            ["*como si* + imp. subj.", "*Habla {como si} lo {supiera} todo.*", "as if he knew everything"],
+            ["Polite request", "*{Quisiera} un café, por favor.*", "I'd like a coffee"],
+            ["Wishes in the past", "*Quería que {vinieras}.*", "I wanted you to come"],
+            ["Unlikely wishes", "*Ojalá {fuera} verano.*", "I wish it were summer"]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "section": "formas",
+      "title": "Form it",
+      "instructions": "Write the imperfect subjunctive (-ra).",
+      "kind": "type",
+      "items": [
+        { "prompt": "si yo ___ (tener)", "answer": "tuviera" },
+        { "prompt": "si tú ___ (ser)", "answer": "fueras" },
+        { "prompt": "si ella ___ (poder)", "answer": "pudiera" },
+        { "prompt": "si nosotros ___ (hablar)", "answer": "habláramos" },
+        { "prompt": "si ellos ___ (hacer)", "answer": "hicieran" },
+        { "prompt": "si yo ___ (saber)", "answer": "supiera" }
+      ]
+    },
+    {
+      "id": "si",
+      "section": "si",
+      "title": "Build the if-clause",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Si ___ rica, viajaría por el mundo.", "options": ["fuera", "sería", "soy"], "answer": "fuera" },
+        { "prompt": "Si tuviera tiempo, ___ un curso.", "options": ["haría", "haré", "hiciera"], "answer": "haría" },
+        { "prompt": "Si llueve, ___ en casa.", "options": ["nos quedamos", "nos quedaríamos", "nos quedáramos"], "answer": "nos quedamos" },
+        { "prompt": "Si lo ___ sabido, habría venido.", "options": ["hubiera", "habría", "había"], "answer": "hubiera" },
+        { "prompt": "Si hubieras estudiado, ___.", "options": ["habrías aprobado", "hubieras aprobado mañana", "aprobarás"], "answer": "habrías aprobado" },
+        { "prompt": "Si yo ___ tú, aceptaría el trabajo.", "options": ["fuera", "sería", "soy"], "answer": "fuera" }
+      ]
+    },
+    {
+      "id": "correcta",
+      "section": "si",
+      "title": "Which one is correct?",
+      "instructions": "Choose the correct sentence.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "options": ["Si tuviera dinero, compraría una casa.", "Si tendría dinero, compraría una casa.", "Si tenga dinero, compraría una casa."], "answer": "Si tuviera dinero, compraría una casa." },
+        { "options": ["Si hubiera sabido, te habría llamado.", "Si habría sabido, te habría llamado.", "Si sabría, te llamaría ayer."], "answer": "Si hubiera sabido, te habría llamado." },
+        { "options": ["Habla como si fuera el jefe.", "Habla como si es el jefe.", "Habla como si sea el jefe."], "answer": "Habla como si fuera el jefe." }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "If I were you, I'd go.", "answer": "Si yo fuera tú, iría.", "accept": ["Si fuera tú, iría.", "Yo que tú, iría."] },
+        { "prompt": "If I had time, I'd learn to dance.", "answer": "Si tuviera tiempo, aprendería a bailar." },
+        { "prompt": "If I had known, I would have come.", "answer": "Si hubiera sabido, habría venido.", "accept": ["Si lo hubiera sabido, habría venido.", "Si hubiera sabido, hubiera venido."] },
+        { "prompt": "I wish it were Friday.", "answer": "Ojalá fuera viernes." },
+        { "prompt": "I wanted you to come. (tú)", "answer": "Quería que vinieras." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the imperfect subjunctive from the ellos preterite.",
+    "I build si + imperfect subjunctive → conditional.",
+    "I build si + hubiera + participle → habría + participle.",
+    "I never use the conditional after si."
+  ],
+  "challenge": {
+    "title": "Another life",
+    "text": "Write six sentences about how your life would be different: three unreal present (*Si viviera en la playa, nadaría todos los días*) and three unreal past (*Si hubiera estudiado español antes, habría vivido en México*)."
+  }
+}

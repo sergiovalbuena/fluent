@@ -1,0 +1,991 @@
+{
+  "language": "es",
+  "parts": [
+    {
+      "number": 1,
+      "title": "Sounds and basics",
+      "description": "How Spanish sounds, gender and number, ser and estar, and the regular present."
+    },
+    {
+      "number": 2,
+      "title": "The present in everyday life",
+      "description": "Questions and negation, irregular present, gustar, tener and hay, adjectives and possessives."
+    },
+    {
+      "number": 3,
+      "title": "Telling the past",
+      "description": "Reflexive verbs, the preterite, the imperfect, which one to use, and the perfect tenses."
+    },
+    {
+      "number": 4,
+      "title": "Pronouns, future and more",
+      "description": "Object pronouns, future and conditional, comparisons, commands, and por or para."
+    },
+    {
+      "number": 5,
+      "title": "The subjunctive and beyond",
+      "description": "The present and imperfect subjunctive, if-clauses, the many uses of se, and traps for English speakers."
+    }
+  ],
+  "modules": [
+    {
+      "slug": "pronunciacion",
+      "number": 1,
+      "part": 1,
+      "level": "A1",
+      "title": "The sounds of Spanish",
+      "tagline": "Five pure vowels, the letters that surprise English speakers, and where the stress goes.",
+      "minutes": 10,
+      "sections": [
+        "Five vowels, always the same",
+        "The letters that surprise you",
+        "Where the stress goes"
+      ],
+      "exercises": [
+        {
+          "id": "vocal",
+          "title": "Which vowel?",
+          "section": "vocales",
+          "count": 6
+        },
+        {
+          "id": "letras",
+          "title": "Read the letters",
+          "section": "consonantes",
+          "count": 7
+        },
+        {
+          "id": "pero-perro",
+          "title": "One tap or a roll?",
+          "section": "consonantes",
+          "count": 6
+        },
+        {
+          "id": "silaba",
+          "title": "Find the stressed syllable",
+          "section": "acento",
+          "count": 6
+        },
+        {
+          "id": "tilde",
+          "title": "With or without an accent?",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "genero-numero",
+      "number": 2,
+      "part": 1,
+      "level": "A1",
+      "title": "Gender and number",
+      "tagline": "Every noun is masculine or feminine: el / la, un / una, and how to make plurals.",
+      "minutes": 10,
+      "sections": [
+        "Masculine or feminine",
+        "The articles",
+        "Plurals"
+      ],
+      "exercises": [
+        {
+          "id": "el-la",
+          "title": "El or la?",
+          "section": "genero",
+          "count": 10
+        },
+        {
+          "id": "articulos",
+          "title": "Al and del",
+          "section": "articulos",
+          "count": 6
+        },
+        {
+          "id": "plural",
+          "title": "Make it plural",
+          "section": "plural",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "ser-estar",
+      "number": 3,
+      "part": 1,
+      "level": "A1",
+      "title": "Ser and estar",
+      "tagline": "Two verbs for «to be»: what something is, and how or where it is.",
+      "minutes": 12,
+      "sections": [
+        "The forms",
+        "Ser: what something is",
+        "Estar: how and where"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Conjugate",
+          "section": "formas",
+          "count": 6
+        },
+        {
+          "id": "ser-o-estar",
+          "title": "Ser or estar?",
+          "section": "estar",
+          "count": 8
+        },
+        {
+          "id": "significado",
+          "title": "The meaning changes",
+          "section": "estar",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "presente-regular",
+      "number": 4,
+      "part": 1,
+      "level": "A1",
+      "title": "The regular present",
+      "tagline": "-ar, -er and -ir verbs, and why Spanish can drop «I» and «you».",
+      "minutes": 10,
+      "sections": [
+        "Three families of verbs",
+        "No need for «I» or «you»",
+        "What the present is for"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjugate",
+          "section": "terminaciones",
+          "count": 8
+        },
+        {
+          "id": "quien",
+          "title": "Who is it?",
+          "section": "sujeto",
+          "count": 6
+        },
+        {
+          "id": "orden",
+          "title": "Build the sentence",
+          "section": "usos",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "preguntas-negacion",
+      "number": 5,
+      "part": 2,
+      "level": "A1",
+      "title": "Questions and negation",
+      "tagline": "¿Qué, dónde, cuándo…?, the upside-down marks, and Spanish double negatives.",
+      "minutes": 10,
+      "sections": [
+        "Yes / no questions",
+        "Question words",
+        "Negation and double negatives"
+      ],
+      "exercises": [
+        {
+          "id": "interrogativo",
+          "title": "Choose the question word",
+          "section": "interrogativos",
+          "count": 7
+        },
+        {
+          "id": "negativo",
+          "title": "Make it negative",
+          "section": "negacion",
+          "count": 5
+        },
+        {
+          "id": "doble",
+          "title": "Is it correct?",
+          "section": "negacion",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "presente-irregular",
+      "number": 6,
+      "part": 2,
+      "level": "A1",
+      "title": "The irregular present",
+      "tagline": "Stem changes (quiero, puedo, pido), «yo» forms in -go, and the truly irregular verbs.",
+      "minutes": 12,
+      "sections": [
+        "Stem-changing verbs",
+        "Verbs with an irregular «yo»",
+        "The truly irregular ones"
+      ],
+      "exercises": [
+        {
+          "id": "botas",
+          "title": "Stem changes",
+          "section": "botas",
+          "count": 8
+        },
+        {
+          "id": "yo",
+          "title": "The yo form",
+          "section": "yo-go",
+          "count": 6
+        },
+        {
+          "id": "irregulares",
+          "title": "Ir, dar, saber, ver",
+          "section": "irregulares",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "gustar",
+      "number": 7,
+      "part": 2,
+      "level": "A1",
+      "title": "Gustar and similar verbs",
+      "tagline": "Me gusta, me gustan, a mí también: the verb that works «backwards».",
+      "minutes": 10,
+      "sections": [
+        "Gustar works backwards",
+        "A mí, a ella, a Diego",
+        "Other verbs like gustar"
+      ],
+      "exercises": [
+        {
+          "id": "gusta-gustan",
+          "title": "Gusta or gustan?",
+          "section": "estructura",
+          "count": 6
+        },
+        {
+          "id": "pronombre",
+          "title": "Me, te, le, nos, les",
+          "section": "a-mi",
+          "count": 6
+        },
+        {
+          "id": "tambien",
+          "title": "Agree or disagree",
+          "section": "a-mi",
+          "count": 4
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "tener-hay",
+      "number": 8,
+      "part": 2,
+      "level": "A1",
+      "title": "Tener and hay",
+      "tagline": "Tengo hambre, tengo que, hay un… and where things are.",
+      "minutes": 10,
+      "sections": [
+        "Expressions with tener",
+        "Tener que: have to",
+        "Hay or está?"
+      ],
+      "exercises": [
+        {
+          "id": "tener",
+          "title": "Tener expressions",
+          "section": "tener",
+          "count": 6
+        },
+        {
+          "id": "tener-que",
+          "title": "Tener que",
+          "section": "tener-que",
+          "count": 5
+        },
+        {
+          "id": "hay-esta",
+          "title": "Hay or está / están?",
+          "section": "hay-esta",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "adjetivos-posesivos",
+      "number": 9,
+      "part": 2,
+      "level": "A1",
+      "title": "Adjectives and possessives",
+      "tagline": "Agreement, word order, mi / tu / su, and «es mío».",
+      "minutes": 10,
+      "sections": [
+        "Agreement",
+        "Where the adjective goes",
+        "Possessives"
+      ],
+      "exercises": [
+        {
+          "id": "concordancia",
+          "title": "Make it agree",
+          "section": "concordancia",
+          "count": 6
+        },
+        {
+          "id": "orden",
+          "title": "Word order",
+          "section": "posicion",
+          "count": 5
+        },
+        {
+          "id": "posesivos",
+          "title": "Possessives",
+          "section": "posesivos",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "reflexivos",
+      "number": 10,
+      "part": 3,
+      "level": "A2",
+      "title": "Reflexive verbs",
+      "tagline": "Me levanto, te duchas, se llama: the daily routine and verbs with se.",
+      "minutes": 10,
+      "sections": [
+        "The pronoun goes with the verb",
+        "The daily routine",
+        "Se changes the meaning"
+      ],
+      "exercises": [
+        {
+          "id": "conjuga",
+          "title": "Conjugate",
+          "section": "formas",
+          "count": 6
+        },
+        {
+          "id": "posicion",
+          "title": "Where does the pronoun go?",
+          "section": "formas",
+          "count": 4
+        },
+        {
+          "id": "con-sin",
+          "title": "With or without se?",
+          "section": "significado",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "preterito",
+      "number": 11,
+      "part": 3,
+      "level": "A2",
+      "title": "The preterite",
+      "tagline": "Hablé, comí, fui: finished actions in the past.",
+      "minutes": 12,
+      "sections": [
+        "Regular verbs",
+        "Spelling changes",
+        "Irregular preterites"
+      ],
+      "exercises": [
+        {
+          "id": "regulares",
+          "title": "Regular preterite",
+          "section": "regulares",
+          "count": 6
+        },
+        {
+          "id": "ortografia",
+          "title": "Watch the spelling",
+          "section": "ortografia",
+          "count": 5
+        },
+        {
+          "id": "irregulares",
+          "title": "Irregular preterites",
+          "section": "irregulares",
+          "count": 8
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "imperfecto",
+      "number": 12,
+      "part": 3,
+      "level": "A2",
+      "title": "The imperfect",
+      "tagline": "Hablaba, comía, era: descriptions, habits and «used to».",
+      "minutes": 10,
+      "sections": [
+        "Easy forms",
+        "What it's for"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Form the imperfect",
+          "section": "formas",
+          "count": 7
+        },
+        {
+          "id": "costumbres",
+          "title": "When I was a kid",
+          "section": "usos",
+          "count": 5
+        },
+        {
+          "id": "describe",
+          "title": "Set the scene",
+          "section": "usos",
+          "count": 4
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "preterito-imperfecto",
+      "number": 13,
+      "part": 3,
+      "level": "B1",
+      "title": "Preterite or imperfect?",
+      "tagline": "The scene and the action, verbs that change meaning, and how to tell a story.",
+      "minutes": 12,
+      "sections": [
+        "The scene and the action",
+        "Long but finished",
+        "Verbs that change meaning"
+      ],
+      "exercises": [
+        {
+          "id": "escena",
+          "title": "Scene or event?",
+          "section": "escena",
+          "count": 6
+        },
+        {
+          "id": "duracion",
+          "title": "Closed period or background?",
+          "section": "duracion",
+          "count": 5
+        },
+        {
+          "id": "significado",
+          "title": "The meaning changes",
+          "section": "significado",
+          "count": 5
+        },
+        {
+          "id": "historia",
+          "title": "A story",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "perfecto",
+      "number": 14,
+      "part": 3,
+      "level": "A2",
+      "title": "The perfect tenses",
+      "tagline": "He comido, había llegado: haber + participle, and how Latin America and Spain use them.",
+      "minutes": 10,
+      "sections": [
+        "Haber + participle",
+        "Irregular participles",
+        "When to use them"
+      ],
+      "exercises": [
+        {
+          "id": "perfecto",
+          "title": "Present perfect",
+          "section": "formas",
+          "count": 5
+        },
+        {
+          "id": "participios",
+          "title": "Irregular participles",
+          "section": "irregulares",
+          "count": 7
+        },
+        {
+          "id": "pluscuamperfecto",
+          "title": "Before another past",
+          "section": "usos",
+          "count": 4
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "pronombres-objeto",
+      "number": 15,
+      "part": 4,
+      "level": "A2",
+      "title": "Object pronouns",
+      "tagline": "Lo, la, le, se lo: it, him, her, to them… and where they go.",
+      "minutes": 12,
+      "sections": [
+        "Direct objects: lo, la, los, las",
+        "Indirect objects: le, les",
+        "Two pronouns: se lo"
+      ],
+      "exercises": [
+        {
+          "id": "directo",
+          "title": "Lo, la, los, las",
+          "section": "directo",
+          "count": 6
+        },
+        {
+          "id": "indirecto",
+          "title": "Le or les?",
+          "section": "indirecto",
+          "count": 5
+        },
+        {
+          "id": "dobles",
+          "title": "Two pronouns",
+          "section": "dobles",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "futuro-condicional",
+      "number": 16,
+      "part": 4,
+      "level": "A2",
+      "title": "Future and conditional",
+      "tagline": "Voy a…, hablaré, hablaría: plans, predictions and polite requests.",
+      "minutes": 12,
+      "sections": [
+        "Ir a + infinitive",
+        "The simple future",
+        "The conditional"
+      ],
+      "exercises": [
+        {
+          "id": "ir-a",
+          "title": "Going to",
+          "section": "ir-a",
+          "count": 5
+        },
+        {
+          "id": "futuro",
+          "title": "The simple future",
+          "section": "futuro",
+          "count": 6
+        },
+        {
+          "id": "condicional",
+          "title": "The conditional",
+          "section": "condicional",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "comparativos",
+      "number": 17,
+      "part": 4,
+      "level": "A2",
+      "title": "Comparisons",
+      "tagline": "Más… que, tan… como, mejor, el más alto, and -ísimo.",
+      "minutes": 10,
+      "sections": [
+        "More, less, as… as",
+        "Better, worse, older, younger",
+        "The most… and -ísimo"
+      ],
+      "exercises": [
+        {
+          "id": "comparar",
+          "title": "Más, menos, tan, tanto",
+          "section": "comparar",
+          "count": 6
+        },
+        {
+          "id": "mejor",
+          "title": "Mejor, peor, mayor, menor",
+          "section": "irregulares",
+          "count": 4
+        },
+        {
+          "id": "superlativo",
+          "title": "Superlatives and -ísimo",
+          "section": "superlativo",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "imperativo",
+      "number": 18,
+      "part": 4,
+      "level": "A2",
+      "title": "Commands",
+      "tagline": "Habla, hable, no hables: giving orders, directions and advice.",
+      "minutes": 12,
+      "sections": [
+        "Tú: positive commands",
+        "Usted, ustedes, nosotros and negatives",
+        "Commands with pronouns"
+      ],
+      "exercises": [
+        {
+          "id": "tu",
+          "title": "Tú commands",
+          "section": "tu",
+          "count": 7
+        },
+        {
+          "id": "usted",
+          "title": "Usted, ustedes and negatives",
+          "section": "usted",
+          "count": 6
+        },
+        {
+          "id": "pronombres",
+          "title": "Where do the pronouns go?",
+          "section": "pronombres",
+          "count": 5
+        },
+        {
+          "id": "receta",
+          "title": "A recipe",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "por-para",
+      "number": 19,
+      "part": 4,
+      "level": "B1",
+      "title": "Por or para",
+      "tagline": "Two words for «for»: the reason behind you, and the goal ahead of you.",
+      "minutes": 12,
+      "sections": [
+        "Para: looking ahead",
+        "Por: looking back, or through",
+        "Fixed expressions"
+      ],
+      "exercises": [
+        {
+          "id": "por-para",
+          "title": "Por or para?",
+          "section": "por",
+          "count": 10
+        },
+        {
+          "id": "expresiones",
+          "title": "Fixed expressions",
+          "section": "expresiones",
+          "count": 5
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "slug": "subjuntivo-presente",
+      "number": 20,
+      "part": 5,
+      "level": "B1",
+      "title": "The present subjunctive",
+      "tagline": "Quiero que vengas, ojalá llueva: wishes, requests and feelings about others.",
+      "minutes": 12,
+      "sections": [
+        "How to form it",
+        "Wishes and requests about others",
+        "Feelings, judgments and ojalá"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Form the subjunctive",
+          "section": "formas",
+          "count": 8
+        },
+        {
+          "id": "deseos",
+          "title": "Infinitive or subjunctive?",
+          "section": "deseos",
+          "count": 6
+        },
+        {
+          "id": "emociones",
+          "title": "Feelings and ojalá",
+          "section": "emociones",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "subjuntivo-usos",
+      "number": 21,
+      "part": 5,
+      "level": "B1",
+      "title": "Cuando, para que, aunque",
+      "tagline": "The subjunctive after time words, purpose, doubt and «although».",
+      "minutes": 12,
+      "sections": [
+        "Cuando + future = subjunctive",
+        "Always subjunctive",
+        "Doubt, aunque, and «something that…»"
+      ],
+      "exercises": [
+        {
+          "id": "cuando",
+          "title": "Cuando",
+          "section": "cuando",
+          "count": 6
+        },
+        {
+          "id": "conjunciones",
+          "title": "Para que, antes de que…",
+          "section": "conjunciones",
+          "count": 5
+        },
+        {
+          "id": "duda",
+          "title": "Certain or not?",
+          "section": "duda",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "si-subjuntivo-imperfecto",
+      "number": 22,
+      "part": 5,
+      "level": "B2",
+      "title": "If I were you…",
+      "tagline": "The imperfect subjunctive and if-clauses: si tuviera, si hubiera sabido.",
+      "minutes": 12,
+      "sections": [
+        "The imperfect subjunctive",
+        "Three kinds of if",
+        "Como si, quisiera and the past of wishes"
+      ],
+      "exercises": [
+        {
+          "id": "formas",
+          "title": "Form it",
+          "section": "formas",
+          "count": 6
+        },
+        {
+          "id": "si",
+          "title": "Build the if-clause",
+          "section": "si",
+          "count": 6
+        },
+        {
+          "id": "correcta",
+          "title": "Which one is correct?",
+          "section": "si",
+          "count": 3
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "usos-de-se",
+      "number": 23,
+      "part": 5,
+      "level": "B1",
+      "title": "The many uses of se",
+      "tagline": "Se habla español, se vende, se me cayó: impersonal, passive and accidental se.",
+      "minutes": 10,
+      "sections": [
+        "Impersonal and passive se",
+        "Accidents: se me cayó",
+        "Two more se's"
+      ],
+      "exercises": [
+        {
+          "id": "impersonal",
+          "title": "Se + singular or plural",
+          "section": "impersonal",
+          "count": 5
+        },
+        {
+          "id": "accidental",
+          "title": "Accidents",
+          "section": "accidental",
+          "count": 5
+        },
+        {
+          "id": "cual",
+          "title": "Which se is it?",
+          "section": "otros",
+          "count": 6
+        },
+        {
+          "id": "traduce",
+          "title": "Say it in Spanish",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "slug": "trampas",
+      "number": 24,
+      "part": 5,
+      "level": "B1",
+      "title": "Traps for English speakers",
+      "tagline": "False friends, tú / usted / vos, and words that change between countries.",
+      "minutes": 10,
+      "sections": [
+        "False friends",
+        "Tú, usted, vos and ustedes",
+        "One thing, many words"
+      ],
+      "exercises": [
+        {
+          "id": "falsos",
+          "title": "What does it mean?",
+          "section": "falsos-amigos",
+          "count": 5
+        },
+        {
+          "id": "en-espanol",
+          "title": "Say it right",
+          "section": "falsos-amigos",
+          "count": 5
+        },
+        {
+          "id": "tratamiento",
+          "title": "Tú, usted or ustedes?",
+          "section": "tratamiento",
+          "count": 5
+        },
+        {
+          "id": "paises",
+          "title": "Which country?",
+          "section": "final",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

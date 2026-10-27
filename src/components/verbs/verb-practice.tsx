@@ -28,6 +28,7 @@ const xpFor = (pct: number) => (pct >= 80 ? 15 : pct >= 60 ? 10 : 5)
 
 const ACCENTS: Record<string, string[]> = {
   fr: ['é', 'è', 'ê', 'à', 'â', 'ç', 'ù', 'û', 'î', 'ï', 'ô', 'ë', 'œ'],
+  es: ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü'],
 }
 
 const SETTINGS_KEY = 'fluent:verb-game'

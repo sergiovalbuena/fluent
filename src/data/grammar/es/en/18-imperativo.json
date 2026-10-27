@@ -1,0 +1,154 @@
+{
+  "slug": "imperativo",
+  "number": 18,
+  "part": 4,
+  "level": "A2",
+  "title": "Commands",
+  "tagline": "Habla, hable, no hables: giving orders, directions and advice.",
+  "goal": "Give positive and negative commands with tú, usted, ustedes and nosotros, use the eight irregular tú commands, and attach pronouns.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "tu",
+      "title": "Tú: positive commands",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The positive *tú* command is the same as the **él / ella** form of the present: *habla, come, escribe*."
+        },
+        {
+          "type": "table",
+          "head": ["Eight irregular tú commands", "", "", ""],
+          "rows": [
+            ["*decir → {di}*", "*hacer → {haz}*", "*ir → {ve}*", "*poner → {pon}*"],
+            ["*salir → {sal}*", "*ser → {sé}*", "*tener → {ten}*", "*venir → {ven}*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "A memory trick: «Di, haz, ve, pon, sal, sé, ten, ven», say it as a little chant."
+        }
+      ]
+    },
+    {
+      "id": "usted",
+      "title": "Usted, ustedes, nosotros and negatives",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "All the other commands use the **present subjunctive**: take the yo form, drop -o, and switch the vowel (-ar → e, -er / -ir → a)."
+        },
+        {
+          "type": "table",
+          "head": ["Infinitive", "usted", "ustedes", "nosotros (let's)", "no + tú"],
+          "rows": [
+            ["*hablar*", "*hable*", "*hablen*", "*hablemos*", "*no hables*"],
+            ["*comer*", "*coma*", "*coman*", "*comamos*", "*no comas*"],
+            ["*hacer* (hago)", "*haga*", "*hagan*", "*hagamos*", "*no hagas*"],
+            ["*ir*", "*vaya*", "*vayan*", "*vamos*", "*no vayas*"],
+            ["*ser*", "*sea*", "*sean*", "*seamos*", "*no seas*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Spelling changes keep the sound: *buscar → busque*, *llegar → llegue*, *empezar → empiece*."
+        }
+      ]
+    },
+    {
+      "id": "pronombres",
+      "title": "Commands with pronouns",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Positive commands: pronouns **attach to the end** (add an accent to keep the stress). Negative commands: pronouns go **before** the verb."
+        },
+        {
+          "type": "table",
+          "head": ["Positive", "Negative"],
+          "rows": [
+            ["*Dí{melo}.*", "*No {me lo} digas.*"],
+            ["*Siénta{te}.*", "*No {te} sientes.*"],
+            ["*Lláme{me}, por favor.*", "*No {me} llame.*"],
+            ["*Vámo{nos}.*", "*No {nos} vayamos.*"]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "tu",
+      "section": "tu",
+      "title": "Tú commands",
+      "instructions": "Write the positive tú command.",
+      "kind": "type",
+      "items": [
+        { "prompt": "___ más despacio, por favor. (hablar)", "answer": "Habla" },
+        { "prompt": "___ la tarea. (hacer)", "answer": "Haz" },
+        { "prompt": "___ aquí. (venir)", "answer": "Ven" },
+        { "prompt": "___ paciencia. (tener)", "answer": "Ten" },
+        { "prompt": "___ la verdad. (decir)", "answer": "Di" },
+        { "prompt": "___ las llaves en la mesa. (poner)", "answer": "Pon" },
+        { "prompt": "___ este libro. (leer)", "answer": "Lee" }
+      ]
+    },
+    {
+      "id": "usted",
+      "section": "usted",
+      "title": "Usted, ustedes and negatives",
+      "instructions": "Choose the right command.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Señor, ___ a la derecha. (girar, usted)", "options": ["gire", "gira", "giré"], "answer": "gire" },
+        { "prompt": "Niños, ___ la mesa. (poner, ustedes)", "options": ["pongan", "ponen", "pongen"], "answer": "pongan" },
+        { "prompt": "No ___ tarde. (llegar, tú)", "options": ["llegues", "llegas", "llega"], "answer": "llegues" },
+        { "prompt": "¡___ a la playa! (ir, nosotros)", "options": ["Vamos", "Vayamos a", "Íbamos"], "answer": "Vamos" },
+        { "prompt": "No ___ tan negativo. (ser, tú)", "options": ["seas", "eres", "sé"], "answer": "seas" },
+        { "prompt": "___ su pasaporte, por favor. (mostrar, usted)", "options": ["Muestre", "Muestra", "Mostre"], "answer": "Muestre" }
+      ]
+    },
+    {
+      "id": "pronombres",
+      "section": "pronombres",
+      "title": "Where do the pronouns go?",
+      "instructions": "Turn the advice into a command.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Tienes que sentarte.", "options": ["Siéntate.", "Te sienta.", "Sientate te."], "answer": "Siéntate." },
+        { "prompt": "No tienes que preocuparte.", "options": ["No te preocupes.", "No preocúpate.", "Te no preocupes."], "answer": "No te preocupes." },
+        { "prompt": "Tienes que decírmelo.", "options": ["Dímelo.", "Me lo di.", "Di me lo."], "answer": "Dímelo." },
+        { "prompt": "Usted debe llamarme.", "options": ["Llámeme.", "Me llame.", "Llama me."], "answer": "Llámeme." },
+        { "prompt": "No debes tocarlo.", "options": ["No lo toques.", "No tócalo.", "Lo no toques."], "answer": "No lo toques." }
+      ]
+    },
+    {
+      "id": "receta",
+      "section": "final",
+      "title": "A recipe",
+      "instructions": "Recipes use usted. Write the command.",
+      "kind": "type",
+      "items": [
+        { "prompt": "___ el horno a 180 grados. (calentar)", "answer": "Caliente" },
+        { "prompt": "___ los huevos en un tazón. (poner)", "answer": "Ponga" },
+        { "prompt": "___ el azúcar. (añadir)", "answer": "Añada" },
+        { "prompt": "___ bien. (mezclar)", "answer": "Mezcle" },
+        { "prompt": "No ___ el horno. (abrir)", "answer": "abra" },
+        { "prompt": "___ media hora. (esperar)", "answer": "Espere" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I give tú commands with the él form, and know di, haz, ve, pon, sal, sé, ten, ven.",
+    "I use the subjunctive for usted, ustedes, nosotros and negatives.",
+    "I attach pronouns to positive commands (siéntate) and put them first in negatives (no te sientes).",
+    "I give directions and recipes with usted."
+  ],
+  "challenge": {
+    "title": "Your recipe",
+    "text": "Write your favorite recipe in six steps with usted commands, then give three tips to a friend learning Spanish with tú: *Escucha podcasts. No tengas miedo de hablar. Habla con tus vecinos.*"
+  }
+}

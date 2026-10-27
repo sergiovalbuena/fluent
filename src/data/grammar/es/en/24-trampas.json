@@ -1,0 +1,434 @@
+{
+  "slug": "trampas",
+  "number": 24,
+  "part": 5,
+  "level": "B1",
+  "title": "Traps for English speakers",
+  "tagline": "False friends, tú / usted / vos, and words that change between countries.",
+  "goal": "Avoid the most common false friends, choose between tú, usted and vos, and recognize the vocabulary that differs between Latin America and Spain.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "falsos-amigos",
+      "title": "False friends",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "These words look like English words but mean something else. Some of them can be embarrassing:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Spanish",
+            "Means",
+            "Not",
+            "For that, say"
+          ],
+          "rows": [
+            [
+              "*embarazada*",
+              "pregnant",
+              "embarrassed",
+              "*avergonzado/a, apenado/a*"
+            ],
+            [
+              "*actual / actualmente*",
+              "current / currently",
+              "actual / actually",
+              "*en realidad*"
+            ],
+            [
+              "*realizar*",
+              "to carry out",
+              "to realize",
+              "*darse cuenta de*"
+            ],
+            [
+              "*sensible*",
+              "sensitive",
+              "sensible",
+              "*sensato*"
+            ],
+            [
+              "*librería*",
+              "bookstore",
+              "library",
+              "*biblioteca*"
+            ],
+            [
+              "*éxito*",
+              "success",
+              "exit",
+              "*salida*"
+            ],
+            [
+              "*molestar*",
+              "to bother",
+              "to molest",
+              "*abusar*"
+            ],
+            [
+              "*constipado* (Spain)",
+              "having a cold",
+              "constipated",
+              "*estreñido*"
+            ],
+            [
+              "*carpeta*",
+              "folder",
+              "carpet",
+              "*alfombra*"
+            ],
+            [
+              "*asistir a*",
+              "to attend",
+              "to assist",
+              "*ayudar*"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tratamiento",
+      "title": "Tú, usted, vos and ustedes",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Form",
+            "When",
+            "Where"
+          ],
+          "rows": [
+            [
+              "*tú*",
+              "friends, family, people your age",
+              "everywhere"
+            ],
+            [
+              "*usted*",
+              "older people, strangers, at work, service",
+              "everywhere; in Colombia and Costa Rica even between friends and family"
+            ],
+            [
+              "*vos*",
+              "informal «you»: *vos sos, vos tenés*",
+              "Argentina, Uruguay, much of Central America, parts of Colombia"
+            ],
+            [
+              "*ustedes*",
+              "«you all», formal or not",
+              "all of Latin America"
+            ],
+            [
+              "*vosotros*",
+              "«you all», informal",
+              "only Spain"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "When in doubt, start with *usted*. If the other person uses *tú* with you, or says *tutéame*, switch."
+        }
+      ]
+    },
+    {
+      "id": "paises",
+      "title": "One thing, many words",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "English",
+            "Mexico",
+            "Other Latin America",
+            "Spain"
+          ],
+          "rows": [
+            [
+              "car",
+              "*carro, coche*",
+              "*carro, auto*",
+              "*coche*"
+            ],
+            [
+              "cell phone",
+              "*celular*",
+              "*celular*",
+              "*móvil*"
+            ],
+            [
+              "computer",
+              "*computadora*",
+              "*computador(a)*",
+              "*ordenador*"
+            ],
+            [
+              "bus",
+              "*camión*",
+              "*bus, colectivo, micro*",
+              "*autobús*"
+            ],
+            [
+              "juice",
+              "*jugo*",
+              "*jugo*",
+              "*zumo*"
+            ],
+            [
+              "to drive",
+              "*manejar*",
+              "*manejar*",
+              "*conducir*"
+            ],
+            [
+              "to take (a bus)",
+              "*tomar*",
+              "*tomar*",
+              "*coger*"
+            ],
+            [
+              "cool!",
+              "*¡qué padre! ¡qué chido!*",
+              "*¡qué chévere! (Col.), ¡qué copado! (Arg.)*",
+              "*¡qué guay!*"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "text": "*Coger* is normal in Spain («to take») but vulgar in Mexico and Argentina. Use *tomar* or *agarrar* in Latin America."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "falsos",
+      "section": "falsos-amigos",
+      "title": "What does it mean?",
+      "instructions": "Choose the right meaning.",
+      "kind": "choice",
+      "speak": "prompt",
+      "items": [
+        {
+          "prompt": "Estoy embarazada.",
+          "options": [
+            "I'm pregnant.",
+            "I'm embarrassed.",
+            "I'm in a hurry."
+          ],
+          "answer": "I'm pregnant."
+        },
+        {
+          "prompt": "Actualmente vivo en Bogotá.",
+          "options": [
+            "I currently live in Bogotá.",
+            "I actually live in Bogotá.",
+            "I used to live in Bogotá."
+          ],
+          "answer": "I currently live in Bogotá."
+        },
+        {
+          "prompt": "La película fue un éxito.",
+          "options": [
+            "The movie was a success.",
+            "The movie was an exit.",
+            "The movie was exciting."
+          ],
+          "answer": "The movie was a success."
+        },
+        {
+          "prompt": "Compré el libro en una librería.",
+          "options": [
+            "I bought it at a bookstore.",
+            "I borrowed it from a library.",
+            "I bought it at a market."
+          ],
+          "answer": "I bought it at a bookstore."
+        },
+        {
+          "prompt": "Mi hermano es muy sensible.",
+          "options": [
+            "My brother is very sensitive.",
+            "My brother is very sensible.",
+            "My brother is very sick."
+          ],
+          "answer": "My brother is very sensitive."
+        }
+      ]
+    },
+    {
+      "id": "en-espanol",
+      "section": "falsos-amigos",
+      "title": "Say it right",
+      "instructions": "Choose the right Spanish word.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "I realized I was wrong. → Me ___ de que estaba equivocado.",
+          "options": [
+            "di cuenta",
+            "realicé",
+            "actualicé"
+          ],
+          "answer": "di cuenta"
+        },
+        {
+          "prompt": "I'm so embarrassed! → ¡Qué ___!",
+          "options": [
+            "vergüenza",
+            "embarazada",
+            "éxito"
+          ],
+          "answer": "vergüenza"
+        },
+        {
+          "prompt": "Where's the exit? → ¿Dónde está la ___?",
+          "options": [
+            "salida",
+            "éxito",
+            "exitosa"
+          ],
+          "answer": "salida"
+        },
+        {
+          "prompt": "I study at the library. → Estudio en la ___.",
+          "options": [
+            "biblioteca",
+            "librería",
+            "carpeta"
+          ],
+          "answer": "biblioteca"
+        },
+        {
+          "prompt": "Actually, I don't know. → ___, no sé.",
+          "options": [
+            "En realidad",
+            "Actualmente",
+            "Realizado"
+          ],
+          "answer": "En realidad"
+        }
+      ],
+      "speak": "answer"
+    },
+    {
+      "id": "tratamiento",
+      "section": "tratamiento",
+      "title": "Tú, usted or ustedes?",
+      "instructions": "Choose how to address the person.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "You talk to your best friend.",
+          "options": [
+            "tú",
+            "usted",
+            "vosotros"
+          ],
+          "answer": "tú"
+        },
+        {
+          "prompt": "You talk to an old lady you don't know.",
+          "options": [
+            "usted",
+            "tú",
+            "vos"
+          ],
+          "answer": "usted"
+        },
+        {
+          "prompt": "You talk to a group of friends in Mexico.",
+          "options": [
+            "ustedes",
+            "vosotros",
+            "usted"
+          ],
+          "answer": "ustedes"
+        },
+        {
+          "prompt": "You talk to a group of friends in Madrid.",
+          "options": [
+            "vosotros",
+            "usted",
+            "tú"
+          ],
+          "answer": "vosotros"
+        },
+        {
+          "prompt": "You write to a hotel to make a reservation.",
+          "options": [
+            "usted",
+            "tú",
+            "vos"
+          ],
+          "answer": "usted"
+        }
+      ]
+    },
+    {
+      "id": "paises",
+      "section": "final",
+      "title": "Which country?",
+      "instructions": "Choose the word you'd hear in Mexico.",
+      "kind": "choice",
+      "items": [
+        {
+          "prompt": "computer",
+          "options": [
+            "computadora",
+            "ordenador"
+          ],
+          "answer": "computadora"
+        },
+        {
+          "prompt": "juice",
+          "options": [
+            "jugo",
+            "zumo"
+          ],
+          "answer": "jugo"
+        },
+        {
+          "prompt": "to take the bus",
+          "options": [
+            "tomar el camión",
+            "coger el autobús"
+          ],
+          "answer": "tomar el camión"
+        },
+        {
+          "prompt": "cell phone",
+          "options": [
+            "celular",
+            "móvil"
+          ],
+          "answer": "celular"
+        },
+        {
+          "prompt": "How cool!",
+          "options": [
+            "¡Qué padre!",
+            "¡Qué guay!"
+          ],
+          "answer": "¡Qué padre!"
+        }
+      ]
+    }
+  ],
+  "checklist": [
+    "I don't say embarazada when I mean embarrassed.",
+    "I use en realidad for «actually» and darme cuenta for «realize».",
+    "I choose between tú, usted and ustedes, and recognize vos and vosotros.",
+    "I recognize the main vocabulary differences between Latin America and Spain."
+  ],
+  "challenge": {
+    "title": "Your trap list",
+    "text": "For a week, write down every Spanish word that tricked you because it looked like English, with an example sentence. At the end, teach the list to a friend who's also learning."
+  }
+}

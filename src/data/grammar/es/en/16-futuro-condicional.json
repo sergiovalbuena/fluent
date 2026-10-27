@@ -1,0 +1,153 @@
+{
+  "slug": "futuro-condicional",
+  "number": 16,
+  "part": 4,
+  "level": "A2",
+  "title": "Future and conditional",
+  "tagline": "Voy a…, hablaré, hablaría: plans, predictions and polite requests.",
+  "goal": "Talk about the future with ir a and the simple future, form the conditional, and use both with their irregular stems.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "ir-a",
+      "title": "Ir a + infinitive",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The most common way to talk about the future in conversation, like «going to»:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "fr": "{Voy a} llamar a mi mamá.", "tr": "I'm going to call my mom." },
+            { "fr": "¿Qué {vas a} hacer el sábado?", "tr": "What are you going to do on Saturday?" },
+            { "fr": "{Va a} llover.", "tr": "It's going to rain." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "futuro",
+      "title": "The simple future",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Add the endings to the **whole infinitive**. Same endings for -ar, -er and -ir:"
+        },
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "hablar", "meaning": "to speak", "forms": ["hablar{é}", "hablar{ás}", "hablar{á}", "hablar{emos}", "hablar{án}"] }
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["Verb", "Stem", "Verb", "Stem"],
+          "rows": [
+            ["*tener*", "*tendr-*", "*hacer*", "*har-*"],
+            ["*poder*", "*podr-*", "*decir*", "*dir-*"],
+            ["*salir*", "*saldr-*", "*poner*", "*pondr-*"],
+            ["*venir*", "*vendr-*", "*saber*", "*sabr-*"],
+            ["*querer*", "*querr-*", "*haber*", "*habr-*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "The future also expresses a guess about the present: *¿Dónde está Ana? — {Estará} en el trabajo* (She's probably at work)."
+        }
+      ]
+    },
+    {
+      "id": "condicional",
+      "title": "The conditional",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Same stems as the future, with **-ía** endings: *hablaría, tendría, haría*. It means «would»:"
+        },
+        {
+          "type": "table",
+          "head": ["Use", "Example", "English"],
+          "rows": [
+            ["Polite requests", "*¿{Podría} ayudarme? {Quería / Quisiera} un café.*", "Could you help me? I'd like a coffee."],
+            ["Advice", "*{Deberías} descansar.*", "You should rest."],
+            ["Wishes", "*Me {gustaría} viajar más.*", "I'd like to travel more."],
+            ["Hypothetical situations", "*Con más dinero, {viajaría}.*", "With more money, I'd travel."]
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ir-a",
+      "section": "ir-a",
+      "title": "Going to",
+      "instructions": "Write the right form of ir.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Mañana ___ a visitar a mi abuela. (yo)", "answer": "voy" },
+        { "prompt": "¿Qué ___ a hacer tú esta noche?", "answer": "vas" },
+        { "prompt": "Creo que ___ a llover.", "answer": "va" },
+        { "prompt": "Nosotros ___ a cenar fuera.", "answer": "vamos" },
+        { "prompt": "Mis amigos ___ a venir a las ocho.", "answer": "van" }
+      ]
+    },
+    {
+      "id": "futuro",
+      "section": "futuro",
+      "title": "The simple future",
+      "instructions": "Write the verb in the future.",
+      "kind": "type",
+      "items": [
+        { "prompt": "El avión ___ a las seis. (llegar)", "answer": "llegará" },
+        { "prompt": "Nosotros ___ más tiempo el próximo año. (tener)", "answer": "tendremos" },
+        { "prompt": "¿Me ___ la verdad? (decir, tú)", "answer": "dirás" },
+        { "prompt": "Yo ___ la cena. (hacer)", "answer": "haré" },
+        { "prompt": "Ellos no ___ venir. (poder)", "answer": "podrán" },
+        { "prompt": "¿A qué hora ___ el tren? (salir)", "answer": "saldrá" }
+      ]
+    },
+    {
+      "id": "condicional",
+      "section": "condicional",
+      "title": "The conditional",
+      "instructions": "Choose the polite or hypothetical form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "¿___ ayudarme, por favor? (usted)", "options": ["Podría", "Puede ayer", "Podrá"], "answer": "Podría" },
+        { "prompt": "Me ___ vivir cerca del mar.", "options": ["gustaría", "gustará", "gustaba ahora"], "answer": "gustaría" },
+        { "prompt": "Estás muy cansado. ___ dormir más.", "options": ["Deberías", "Deberás", "Debías mañana"], "answer": "Deberías" },
+        { "prompt": "Con más dinero, ___ una casa.", "options": ["compraría", "compraré", "compro"], "answer": "compraría" },
+        { "prompt": "¿Qué ___ tú en mi lugar?", "options": ["harías", "harás", "hacías"], "answer": "harías" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I'm going to study tonight.", "answer": "Voy a estudiar esta noche." },
+        { "prompt": "It will rain tomorrow.", "answer": "Mañana lloverá.", "accept": ["Lloverá mañana.", "Mañana va a llover."] },
+        { "prompt": "I'd like a coffee.", "answer": "Quisiera un café.", "accept": ["Me gustaría un café.", "Quería un café."] },
+        { "prompt": "Could you repeat? (usted)", "answer": "¿Podría repetir?" },
+        { "prompt": "We'll see.", "answer": "Ya veremos.", "accept": ["Veremos."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I use ir a + infinitive for plans.",
+    "I form the future with the infinitive and -é, -ás, -á, -emos, -án.",
+    "I know the stems tendr-, har-, podr-, dir-, saldr-, vendr-.",
+    "I use the conditional for polite requests, advice and wishes."
+  ],
+  "challenge": {
+    "title": "In ten years",
+    "text": "Write five predictions about your life in ten years with the future and three wishes with me gustaría: *Viviré en la playa. Hablaré español muy bien. Me gustaría tener un perro.*"
+  }
+}

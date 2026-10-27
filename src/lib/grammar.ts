@@ -94,7 +94,7 @@ export type GrammarIndex = {
   modules: GrammarIndexEntry[]
 }
 
-export const GRAMMAR_LANGUAGES = ['fr'] as const
+export const GRAMMAR_LANGUAGES = ['fr', 'es'] as const
 
 /** Explanations exist in Spanish and English; any other native language reads the English ones */
 export type ExplanationLanguage = 'es' | 'en'
@@ -107,6 +107,8 @@ export function explanationLanguage(translationLang: string, userId: string | nu
 }
 
 export async function loadGrammarIndex(lang: string, expl: ExplanationLanguage): Promise<GrammarIndex | null> {
+  // The Spanish course is for English speakers: its explanations only exist in English
+  if (lang === 'es') return (await import('@/data/grammar/es/en/index.json')).default as GrammarIndex
   if (lang !== 'fr') return null
   const data = expl === 'es'
     ? await import('@/data/grammar/fr/es/index.json')
@@ -115,10 +117,12 @@ export async function loadGrammarIndex(lang: string, expl: ExplanationLanguage):
 }
 
 export async function loadGrammarModule(lang: string, slug: string, expl: ExplanationLanguage): Promise<GrammarModule | null> {
-  if (lang !== 'fr') return null
-  const { modules } = expl === 'es'
-    ? await import('@/data/grammar/fr/es/modules')
-    : await import('@/data/grammar/fr/en/modules')
+  if (lang !== 'fr' && lang !== 'es') return null
+  const { modules } = lang === 'es'
+    ? await import('@/data/grammar/es/en/modules')
+    : expl === 'es'
+      ? await import('@/data/grammar/fr/es/modules')
+      : await import('@/data/grammar/fr/en/modules')
   const load = modules[slug]
   return load ? ((await load()).default as GrammarModule) : null
 }
@@ -313,7 +317,35 @@ const LESSON_LINKS: { match: RegExp; slug: string; number: number }[] = [
   { match: /^imparfait( \((habitudes|description)\))?$/i, slug: 'imparfait', number: 18 },
 ]
 
-export function grammarLinkFor(structure: string): { slug: string; number: number } | null {
-  const hit = LESSON_LINKS.find(l => l.match.test(structure))
+/** Spanish course (lessons written for English speakers). Checked in order: specific rules first. */
+const ES_LESSON_LINKS: { match: RegExp; slug: string; number: number }[] = [
+  { match: /^si \+ (presente|imperfecto|pluscuamperfecto)|^si yo fuera|^como si|imperfecto de subjuntivo|condición mixta|condicional perfecto/i, slug: 'si-subjuntivo-imperfecto', number: 22 },
+  { match: /^(cuando|hasta que|antes de que|después de que|para que|sin que|a menos que|con tal de que|aunque|esperar a que|busco un|hacer todo para que|el mejor que)\b.*subjuntivo|^aunque \+ subjuntivo|^cuando tenga|^hay uno que/i, slug: 'subjuntivo-usos', number: 21 },
+  { match: /subjuntivo|^ojalá|^¿qué quieres que haga|hace falta que/i, slug: 'subjuntivo-presente', number: 20 },
+  { match: /se accidental|se me (rompió|descompuso)|pasiva con se|pasiva refleja|se impersonal|se \+ verbo impersonal|^se recomienda/i, slug: 'usos-de-se', number: 23 },
+  { match: /^por \/ para|^para \+ persona|^para mí/i, slug: 'por-para', number: 19 },
+  { match: /imperativo/i, slug: 'imperativo', number: 18 },
+  { match: /lo más \+|más… que|más \/ menos|más … que|tan … como|^mejor|^el \/ la más|-ísimo|menos \/ más/i, slug: 'comparativos', number: 17 },
+  { match: /^futuro|^condicional|^ir a \+ infinitivo|^me gustaría|^preferiría|^deberías|^¿qué harías|^¿podría|^podría haber/i, slug: 'futuro-condicional', number: 16 },
+  { match: /^(pronombres|lo \/ la|le \/ les|me lo|a personal)|pronombres dobles/i, slug: 'pronombres-objeto', number: 15 },
+  { match: /pretérito perfecto|pluscuamperfecto|haber \+ participio|concordancia del participio|^nunca \/ ya \/ todavía/i, slug: 'perfecto', number: 14 },
+  { match: /pretérito vs\. imperfecto|imperfecto \+ pretérito|^mientras \+ imperfecto|pretérito para la cadena|pretérito narrativo/i, slug: 'preterito-imperfecto', number: 13 },
+  { match: /imperfecto|^iba a|^iban a/i, slug: 'imperfecto', number: 12 },
+  { match: /pretérito/i, slug: 'preterito', number: 11 },
+  { match: /reflexivos|^el \/ la con partes del cuerpo|^cortarse|^llevar \/ ponerse/i, slug: 'reflexivos', number: 10 },
+  { match: /^(mi \/ tu \/ su|nuestro|el mío)|^concordancia|^adjetivo|nacionalidad|^ser \+ carácter/i, slug: 'adjetivos-posesivos', number: 9 },
+  { match: /^tener|^hay|hay \/ está|^tener que/i, slug: 'tener-hay', number: 8 },
+  { match: /gusta|^me duele|^quedar: me queda/i, slug: 'gustar', number: 7 },
+  { match: /verbos -go|^poder|^poner: pongo|^saber|^jugar|cambio e → ie|^querer ser/i, slug: 'presente-irregular', number: 6 },
+  { match: /^qué, dónde|^por qué|^no \+ verbo|^¿no\? \/ ¿verdad|^ningún|^ninguno|^ni… ni|^ni uno ni otro|^siempre \/ a veces/i, slug: 'preguntas-negacion', number: 5 },
+  { match: /^presente -/i, slug: 'presente-regular', number: 4 },
+  { match: /^ser[: ]|^estar[: +]|^ser de/i, slug: 'ser-estar', number: 3 },
+  { match: /^el \/ la, un|^plural|^los padres|^al \/ del|^uno → un|^masculino \/ femenino|^femenino de/i, slug: 'genero-numero', number: 2 },
+  { match: /^¿ … \?/i, slug: 'pronunciacion', number: 1 },
+]
+
+export function grammarLinkFor(structure: string, lang = 'fr'): { slug: string; number: number } | null {
+  const links = lang === 'es' ? ES_LESSON_LINKS : lang === 'fr' ? LESSON_LINKS : []
+  const hit = links.find(l => l.match.test(structure))
   return hit ? { slug: hit.slug, number: hit.number } : null
 }

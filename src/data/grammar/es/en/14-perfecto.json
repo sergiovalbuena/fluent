@@ -1,0 +1,137 @@
+{
+  "slug": "perfecto",
+  "number": 14,
+  "part": 3,
+  "level": "A2",
+  "title": "The perfect tenses",
+  "tagline": "He comido, había llegado: haber + participle, and how Latin America and Spain use them.",
+  "goal": "Form the present perfect and the past perfect, use irregular participles, and know when Latin Americans prefer the preterite.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "Haber + participle",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "present perfect", "meaning": "I have eaten", "forms": ["{he} comido", "{has} comido", "{ha} comido", "{hemos} comido", "{han} comido"] },
+            { "verb": "past perfect", "meaning": "I had eaten", "forms": ["{había} comido", "{habías} comido", "{había} comido", "{habíamos} comido", "{habían} comido"] }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Participles: **-ar → -ado** (*hablado*), **-er / -ir → -ido** (*comido, vivido*). The participle **never changes** and nothing goes between *haber* and it: *Nunca he estado* (never «he nunca estado»)."
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "Irregular participles",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Verb", "Participle", "Verb", "Participle"],
+          "rows": [
+            ["*hacer*", "*hecho*", "*decir*", "*dicho*"],
+            ["*ver*", "*visto*", "*escribir*", "*escrito*"],
+            ["*poner*", "*puesto*", "*volver*", "*vuelto*"],
+            ["*abrir*", "*abierto*", "*romper*", "*roto*"],
+            ["*morir*", "*muerto*", "*devolver*", "*devuelto*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usos",
+      "title": "When to use them",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Tense", "Use", "Example"],
+          "rows": [
+            ["Present perfect", "Life experience (*alguna vez, nunca*), things not finished yet (*ya, todavía no*)", "*¿{Has estado} en Perú? Todavía no {he comido}.*"],
+            ["Past perfect", "Something that had happened before another past moment", "*Cuando llegué, ya {habían cenado}.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "title": "Latin America vs Spain",
+          "text": "For something that happened today, Spain uses the present perfect (*Hoy {he comido} paella*) and most of Latin America the preterite (*Hoy {comí} paella*). Both are understood everywhere."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "perfecto",
+      "section": "formas",
+      "title": "Present perfect",
+      "instructions": "Write the present perfect.",
+      "kind": "type",
+      "items": [
+        { "prompt": "¿Alguna vez ___ en Perú? (estar, tú)", "answer": "has estado" },
+        { "prompt": "Nunca ___ sushi. (comer, yo)", "answer": "he comido" },
+        { "prompt": "Todavía no ___ la cuenta. (pagar, nosotros)", "answer": "hemos pagado" },
+        { "prompt": "Ya ___ el correo. (enviar, ella)", "answer": "ha enviado" },
+        { "prompt": "Mis padres nunca ___ en avión. (viajar)", "answer": "han viajado" }
+      ]
+    },
+    {
+      "id": "participios",
+      "section": "irregulares",
+      "title": "Irregular participles",
+      "instructions": "Write the participle.",
+      "kind": "type",
+      "items": [
+        { "prompt": "¿Qué has ___? (hacer)", "answer": "hecho" },
+        { "prompt": "Nunca he ___ el mar. (ver)", "answer": "visto" },
+        { "prompt": "¿Quién ha ___ la ventana? (abrir)", "answer": "abierto" },
+        { "prompt": "Ya he ___ el informe. (escribir)", "answer": "escrito" },
+        { "prompt": "¿Te ha ___ la verdad? (decir)", "answer": "dicho" },
+        { "prompt": "Se ha ___ el vaso. (romper)", "answer": "roto" },
+        { "prompt": "¿Ya han ___ de vacaciones? (volver)", "answer": "vuelto" }
+      ]
+    },
+    {
+      "id": "pluscuamperfecto",
+      "section": "usos",
+      "title": "Before another past",
+      "instructions": "Choose the right tense.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Cuando llegué, ya ___ la película.", "options": ["había empezado", "ha empezado", "empezará"], "answer": "había empezado" },
+        { "prompt": "Me di cuenta de que ___ las llaves.", "options": ["había olvidado", "olvido", "he olvidado mañana"], "answer": "había olvidado" },
+        { "prompt": "¿Alguna vez ___ en un crucero?", "options": ["has estado", "habías estado ahora", "estarás"], "answer": "has estado" },
+        { "prompt": "Nunca ___ tanto como esa noche.", "options": ["había bailado", "he bailado mañana", "bailaré"], "answer": "había bailado" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "Have you ever been to Mexico? (tú)", "answer": "¿Alguna vez has estado en México?", "accept": ["¿Has estado en México?", "¿Has estado alguna vez en México?"] },
+        { "prompt": "I've never seen snow.", "answer": "Nunca he visto la nieve.", "accept": ["Nunca he visto nieve."] },
+        { "prompt": "We haven't eaten yet.", "answer": "Todavía no hemos comido.", "accept": ["Aún no hemos comido."] },
+        { "prompt": "They had already left.", "answer": "Ya se habían ido.", "accept": ["Ya habían salido."] },
+        { "prompt": "What have you done? (tú)", "answer": "¿Qué has hecho?" }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the perfect tenses with haber + participle.",
+    "I know hecho, dicho, visto, escrito, puesto, vuelto, abierto, roto.",
+    "I use the present perfect for experiences and «yet / already».",
+    "I know Latin America often prefers the preterite for today."
+  ],
+  "challenge": {
+    "title": "Bucket list",
+    "text": "Write five things you have done in your life and five you have never done, with alguna vez / nunca: *He visto ballenas. Nunca he subido una montaña de cinco mil metros.*"
+  }
+}

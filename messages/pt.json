@@ -505,7 +505,10 @@
     "group_er": "1º grupo: verbos em -er (exceto aller)",
     "group_ir": "2º grupo (-ir com -issons, como finir) e alguns do 3º",
     "group_re": "3º grupo: verbos em -re",
-    "group_oir": "3º grupo: verbos em -oir"
+    "group_oir": "3º grupo: verbos em -oir",
+    "group_es_ar": "Verbos em -ar",
+    "group_es_er": "Verbos em -er",
+    "group_es_ir": "Verbos em -ir"
   },
   "verb_game": {
     "title": "Desafio de verbos",

@@ -505,7 +505,10 @@
     "group_er": "1st group: -er verbs (except aller)",
     "group_ir": "2nd group (-ir with -issons, like finir) and some of the 3rd",
     "group_re": "3rd group: -re verbs",
-    "group_oir": "3rd group: -oir verbs"
+    "group_oir": "3rd group: -oir verbs",
+    "group_es_ar": "-ar verbs",
+    "group_es_er": "-er verbs",
+    "group_es_ir": "-ir verbs"
   },
   "verb_game": {
     "title": "Verb challenge",

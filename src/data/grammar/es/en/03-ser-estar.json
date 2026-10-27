@@ -1,0 +1,155 @@
+{
+  "slug": "ser-estar",
+  "number": 3,
+  "part": 1,
+  "level": "A1",
+  "title": "Ser and estar",
+  "tagline": "Two verbs for «to be»: what something is, and how or where it is.",
+  "goal": "Conjugate ser and estar in the present and choose between them for identity, origin, jobs, location, feelings and states.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "The forms",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "ser", "meaning": "to be (identity)", "forms": ["{soy}", "{eres}", "{es}", "{somos}", "{son}"] },
+            { "verb": "estar", "meaning": "to be (state, place)", "forms": ["{estoy}", "{estás}", "{está}", "{estamos}", "{están}"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "Spain also uses *vosotros*: *sois*, *estáis*. In Latin America, *ustedes* covers every «you all»."
+        }
+      ]
+    },
+    {
+      "id": "ser",
+      "title": "Ser: what something is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Use **ser** for characteristics that define someone or something:"
+        },
+        {
+          "type": "table",
+          "head": ["Use", "Example"],
+          "rows": [
+            ["Identity and name", "*{Soy} Emily.*"],
+            ["Origin and nationality", "*{Es} de México. {Son} colombianos.*"],
+            ["Job", "*{Es} enfermera.*"],
+            ["Personality and appearance", "*{Eres} muy simpático. {Es} alta.*"],
+            ["Time and dates", "*{Son} las tres. Hoy {es} lunes.*"],
+            ["Material and owner", "*{Es} de madera. {Es} de Diego.*"],
+            ["Where an event takes place", "*La fiesta {es} en mi casa.*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estar",
+      "title": "Estar: how and where",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Use **estar** for location and for states that can change:"
+        },
+        {
+          "type": "table",
+          "head": ["Use", "Example"],
+          "rows": [
+            ["Location of people and things", "*{Estoy} en la oficina. Madrid {está} en España.*"],
+            ["Feelings and moods", "*{Estoy} cansada. ¿{Estás} bien?*"],
+            ["Temporary states", "*La sopa {está} fría. La puerta {está} abierta.*"],
+            ["Actions in progress (estar + -ando / -iendo)", "*{Está} lloviendo.*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Same adjective, different meaning",
+          "text": "*Es aburrido* = he's boring / *Está aburrido* = he's bored. *Es listo* = he's clever / *Está listo* = he's ready. *Es rico* = he's rich / *Está rico* = it's tasty."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "section": "formas",
+      "title": "Conjugate",
+      "instructions": "Write ser or estar in the present.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Yo ___ de Chicago. (ser)", "answer": "soy" },
+        { "prompt": "¿Cómo ___ tú? (estar)", "answer": "estás" },
+        { "prompt": "Nosotros ___ amigos. (ser)", "answer": "somos" },
+        { "prompt": "Ellas ___ en la playa. (estar)", "answer": "están" },
+        { "prompt": "Usted ___ muy amable. (ser)", "answer": "es" },
+        { "prompt": "Yo ___ cansado. (estar)", "answer": "estoy" }
+      ]
+    },
+    {
+      "id": "ser-o-estar",
+      "section": "estar",
+      "title": "Ser or estar?",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Mi hermana ___ médica.", "options": ["es", "está"], "answer": "es", "explain": "A job: ser." },
+        { "prompt": "Mi hermana ___ en el hospital.", "options": ["está", "es"], "answer": "está", "explain": "Location: estar." },
+        { "prompt": "Hoy ___ muy cansado.", "options": ["estoy", "soy"], "answer": "estoy" },
+        { "prompt": "Diego ___ de Puebla.", "options": ["es", "está"], "answer": "es" },
+        { "prompt": "La sopa ___ fría.", "options": ["está", "es"], "answer": "está" },
+        { "prompt": "___ las ocho de la noche.", "options": ["Son", "Están"], "answer": "Son" },
+        { "prompt": "La fiesta ___ en mi casa.", "options": ["es", "está"], "answer": "es", "explain": "Where an event takes place: ser." },
+        { "prompt": "¿Dónde ___ las llaves?", "options": ["están", "son"], "answer": "están" }
+      ]
+    },
+    {
+      "id": "significado",
+      "section": "estar",
+      "title": "The meaning changes",
+      "instructions": "Choose the sentence that matches the meaning.",
+      "kind": "choice",
+      "speak": "answer",
+      "items": [
+        { "prompt": "He's a boring person.", "options": ["Es aburrido.", "Está aburrido."], "answer": "Es aburrido." },
+        { "prompt": "He's bored right now.", "options": ["Está aburrido.", "Es aburrido."], "answer": "Está aburrido." },
+        { "prompt": "We're ready to go.", "options": ["Estamos listos.", "Somos listos."], "answer": "Estamos listos." },
+        { "prompt": "This soup is delicious.", "options": ["Esta sopa está rica.", "Esta sopa es rica."], "answer": "Esta sopa está rica." },
+        { "prompt": "They're very clever kids.", "options": ["Son muy listos.", "Están muy listos."], "answer": "Son muy listos." }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I'm from the United States.", "answer": "Soy de Estados Unidos." },
+        { "prompt": "Where are you? (tú)", "answer": "¿Dónde estás?" },
+        { "prompt": "She is a nurse.", "answer": "Es enfermera.", "accept": ["Ella es enfermera."] },
+        { "prompt": "We are tired.", "answer": "Estamos cansados." },
+        { "prompt": "It's one o'clock.", "answer": "Es la una." },
+        { "prompt": "It's raining.", "answer": "Está lloviendo.", "accept": ["Llueve."] }
+      ]
+    }
+  ],
+  "checklist": [
+    "I conjugate ser and estar in the present.",
+    "I use ser for identity, origin, jobs, time and personality.",
+    "I use estar for location, feelings and changing states.",
+    "I know that es aburrido and está aburrido mean different things."
+  ],
+  "challenge": {
+    "title": "Introduce yourself",
+    "text": "Write five sentences about yourself with ser (name, origin, job, personality) and three with estar (where you are now, how you feel, what you're doing): *Soy Emily. Soy de Chicago. Ahora estoy en un café y estoy muy contenta.*"
+  }
+}

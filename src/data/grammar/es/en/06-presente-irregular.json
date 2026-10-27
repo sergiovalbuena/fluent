@@ -1,0 +1,160 @@
+{
+  "slug": "presente-irregular",
+  "number": 6,
+  "part": 2,
+  "level": "A1",
+  "title": "The irregular present",
+  "tagline": "Stem changes (quiero, puedo, pido), «yo» forms in -go, and the truly irregular verbs.",
+  "goal": "Conjugate stem-changing verbs, the verbs with an irregular yo form, and ir, dar, saber and ver in the present.",
+  "minutes": 12,
+  "sections": [
+    {
+      "id": "botas",
+      "title": "Stem-changing verbs",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In many common verbs the stressed vowel of the stem changes. The change happens in every form **except nosotros** (and vosotros), so the pattern looks like a boot."
+        },
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "querer", "meaning": "to want (e → ie)", "forms": ["qu{ie}ro", "qu{ie}res", "qu{ie}re", "queremos", "qu{ie}ren"] },
+            { "verb": "poder", "meaning": "can (o → ue)", "forms": ["p{ue}do", "p{ue}des", "p{ue}de", "podemos", "p{ue}den"] },
+            { "verb": "pedir", "meaning": "to ask for (e → i)", "forms": ["p{i}do", "p{i}des", "p{i}de", "pedimos", "p{i}den"] }
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["e → ie", "o → ue", "e → i"],
+          "rows": [
+            ["*pensar, empezar, entender, preferir, cerrar, sentir*", "*dormir, volver, encontrar, costar, recordar, almorzar*", "*servir, repetir, seguir, vestir(se), medir*"],
+            ["*Empiezo a las ocho.*", "*¿Cuánto cuesta?*", "*¿Me repites, por favor?*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "*jugar* is unique: u → ue. *Juego al fútbol, juegas, juega, jugamos, juegan.*"
+        }
+      ]
+    },
+    {
+      "id": "yo-go",
+      "title": "Verbs with an irregular «yo»",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Verb", "yo", "the rest"],
+          "rows": [
+            ["*hacer* (to do)", "*{hago}*", "*haces, hace…*"],
+            ["*poner* (to put)", "*{pongo}*", "*pones, pone…*"],
+            ["*salir* (to go out)", "*{salgo}*", "*sales, sale…*"],
+            ["*traer* (to bring)", "*{traigo}*", "*traes, trae…*"],
+            ["*tener* (to have)", "*{tengo}*", "*tienes, tiene… (e → ie too)*"],
+            ["*venir* (to come)", "*{vengo}*", "*vienes, viene…*"],
+            ["*decir* (to say)", "*{digo}*", "*dices, dice… (e → i too)*"],
+            ["*conocer* (to know someone)", "*{conozco}*", "*conoces, conoce…*"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "title": "The truly irregular ones",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "ir", "meaning": "to go", "forms": ["{voy}", "{vas}", "{va}", "{vamos}", "{van}"] },
+            { "verb": "dar", "meaning": "to give", "forms": ["{doy}", "das", "da", "damos", "dan"] },
+            { "verb": "saber", "meaning": "to know (facts)", "forms": ["{sé}", "sabes", "sabe", "sabemos", "saben"] },
+            { "verb": "ver", "meaning": "to see", "forms": ["{veo}", "ves", "ve", "vemos", "ven"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "*ir a* + infinitive is the everyday future: *Voy a comer* = I'm going to eat. See [[16]]."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "botas",
+      "section": "botas",
+      "title": "Stem changes",
+      "instructions": "Write the verb in the present.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Yo ___ un café. (querer)", "answer": "quiero" },
+        { "prompt": "¿___ ayudarme? (poder, tú)", "answer": "Puedes" },
+        { "prompt": "Nosotros ___ a las nueve. (empezar)", "answer": "empezamos" },
+        { "prompt": "Ella ___ ocho horas. (dormir)", "answer": "duerme" },
+        { "prompt": "¿Cuánto ___ estos zapatos? (costar)", "answer": "cuestan" },
+        { "prompt": "Siempre ___ pollo. (pedir, yo)", "answer": "pido" },
+        { "prompt": "Los niños ___ al fútbol. (jugar)", "answer": "juegan" },
+        { "prompt": "¿Qué ___ tú? (pensar)", "answer": "piensas" }
+      ]
+    },
+    {
+      "id": "yo",
+      "section": "yo-go",
+      "title": "The yo form",
+      "instructions": "Write the yo form.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Los sábados ___ la comida. (hacer)", "answer": "hago" },
+        { "prompt": "___ de casa a las siete. (salir)", "answer": "Salgo" },
+        { "prompt": "No ___ a nadie aquí. (conocer)", "answer": "conozco" },
+        { "prompt": "___ treinta años. (tener)", "answer": "Tengo" },
+        { "prompt": "Siempre ___ la verdad. (decir)", "answer": "digo" },
+        { "prompt": "___ las llaves en la mesa. (poner)", "answer": "Pongo" }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "section": "irregulares",
+      "title": "Ir, dar, saber, ver",
+      "instructions": "Choose the right form.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "Mañana ___ al cine. (yo)", "options": ["voy", "vo", "iro"], "answer": "voy" },
+        { "prompt": "No ___ dónde está. (yo)", "options": ["sé", "sabo", "sepo"], "answer": "sé" },
+        { "prompt": "Te ___ mi número. (yo)", "options": ["doy", "do", "dao"], "answer": "doy" },
+        { "prompt": "¿___ esa casa? (tú, ver)", "options": ["Ves", "Vees", "Veas"], "answer": "Ves" },
+        { "prompt": "Nosotros ___ a la playa.", "options": ["vamos", "imos", "vemos"], "answer": "vamos" },
+        { "prompt": "Ellos no ___ nadar.", "options": ["saben", "sabían ahora", "sepan"], "answer": "saben" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I want to sleep.", "answer": "Quiero dormir." },
+        { "prompt": "Can you help me? (tú)", "answer": "¿Puedes ayudarme?", "accept": ["¿Me puedes ayudar?"] },
+        { "prompt": "I don't know.", "answer": "No sé.", "accept": ["No lo sé."] },
+        { "prompt": "I'm going to the beach.", "answer": "Voy a la playa." },
+        { "prompt": "I have two sisters.", "answer": "Tengo dos hermanas." },
+        { "prompt": "The movie starts at eight.", "answer": "La película empieza a las ocho." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I conjugate e → ie, o → ue and e → i verbs, keeping nosotros regular.",
+    "I know the yo forms hago, pongo, salgo, tengo, vengo, digo, conozco.",
+    "I conjugate ir, dar, saber and ver.",
+    "I use jugar with ue: juego, juegas."
+  ],
+  "challenge": {
+    "title": "Your morning",
+    "text": "Describe your morning in six sentences using at least four irregular verbs: *Me despierto a las seis, hago café, salgo de casa a las siete y vuelvo a las cinco.*"
+  }
+}

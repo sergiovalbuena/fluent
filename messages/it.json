@@ -505,7 +505,10 @@
     "group_er": "1° gruppo: verbi in -er (tranne aller)",
     "group_ir": "2° gruppo (-ir con -issons, come finir) e alcuni del 3°",
     "group_re": "3° gruppo: verbi in -re",
-    "group_oir": "3° gruppo: verbi in -oir"
+    "group_oir": "3° gruppo: verbi in -oir",
+    "group_es_ar": "Verbi in -ar",
+    "group_es_er": "Verbi in -er",
+    "group_es_ir": "Verbi in -ir"
   },
   "verb_game": {
     "title": "Sfida dei verbi",

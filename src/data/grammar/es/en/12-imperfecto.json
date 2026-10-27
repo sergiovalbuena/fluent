@@ -1,0 +1,133 @@
+{
+  "slug": "imperfecto",
+  "number": 12,
+  "part": 3,
+  "level": "A2",
+  "title": "The imperfect",
+  "tagline": "Hablaba, comía, era: descriptions, habits and «used to».",
+  "goal": "Form the imperfect (only three irregular verbs!) and use it to describe the past, talk about past habits and set the scene.",
+  "minutes": 10,
+  "sections": [
+    {
+      "id": "formas",
+      "title": "Easy forms",
+      "blocks": [
+        {
+          "type": "conjugation",
+          "persons": ["yo", "tú", "él / ella / usted", "nosotros", "ellos / ellas / ustedes"],
+          "verbs": [
+            { "verb": "hablar", "meaning": "to speak", "forms": ["habl{aba}", "habl{abas}", "habl{aba}", "habl{ábamos}", "habl{aban}"] },
+            { "verb": "comer", "meaning": "to eat", "forms": ["com{ía}", "com{ías}", "com{ía}", "com{íamos}", "com{ían}"] },
+            { "verb": "vivir", "meaning": "to live", "forms": ["viv{ía}", "viv{ías}", "viv{ía}", "viv{íamos}", "viv{ían}"] }
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["Only three irregulars", "Forms"],
+          "rows": [
+            ["*ser*", "*era, eras, era, éramos, eran*"],
+            ["*ir*", "*iba, ibas, iba, íbamos, iban*"],
+            ["*ver*", "*veía, veías, veía, veíamos, veían*"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "note",
+          "text": "No stem changes either: *quería, podía, tenía, hacía*. The yo and él forms are the same, so add the subject when it's unclear: *yo tenía / ella tenía*."
+        }
+      ]
+    },
+    {
+      "id": "usos",
+      "title": "What it's for",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Use", "Example", "English"],
+          "rows": [
+            ["Past habits («used to», «would»)", "*De niño {jugaba} en la calle.*", "As a kid I used to play in the street."],
+            ["Descriptions of people, places, weather", "*La casa {era} grande y {hacía} sol.*", "The house was big and it was sunny."],
+            ["Actions in progress («was …ing»)", "*{Leía} cuando sonó el teléfono.*", "I was reading when the phone rang."],
+            ["Age and time in the past", "*{Tenía} diez años. {Eran} las tres.*", "I was ten. It was three o'clock."],
+            ["Feelings and states", "*{Estaba} cansada. {Quería} dormir.*", "I was tired. I wanted to sleep."]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "Clues for the imperfect: *siempre, todos los días, a menudo, de niño, antes, mientras*."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "formas",
+      "section": "formas",
+      "title": "Form the imperfect",
+      "instructions": "Write the verb in the imperfect.",
+      "kind": "type",
+      "items": [
+        { "prompt": "De niña ___ en Texas. (vivir, yo)", "answer": "vivía" },
+        { "prompt": "Mi abuelo ___ muy alto. (ser)", "answer": "era" },
+        { "prompt": "Nosotros ___ a la playa cada verano. (ir)", "answer": "íbamos" },
+        { "prompt": "¿Qué ___ tú de niño? (comer)", "answer": "comías" },
+        { "prompt": "Antes ___ mucha televisión. (ver, yo)", "answer": "veía" },
+        { "prompt": "Ellos ___ en un banco. (trabajar)", "answer": "trabajaban" },
+        { "prompt": "Nosotros ___ muy contentos. (estar)", "answer": "estábamos" }
+      ]
+    },
+    {
+      "id": "costumbres",
+      "section": "usos",
+      "title": "When I was a kid",
+      "instructions": "Complete the memories with the imperfect.",
+      "kind": "type",
+      "items": [
+        { "prompt": "Cuando ___ diez años, tenía un perro. (tener, yo)", "answer": "tenía" },
+        { "prompt": "Todos los domingos ___ con mis abuelos. (comer, nosotros)", "answer": "comíamos" },
+        { "prompt": "Mi mamá nos ___ cuentos. (leer)", "answer": "leía" },
+        { "prompt": "Mi hermano y yo ___ al fútbol en la calle. (jugar)", "answer": "jugábamos" },
+        { "prompt": "La casa ___ un jardín enorme. (tener)", "answer": "tenía" }
+      ]
+    },
+    {
+      "id": "describe",
+      "section": "usos",
+      "title": "Set the scene",
+      "instructions": "Choose the imperfect form that describes the background.",
+      "kind": "choice",
+      "items": [
+        { "prompt": "___ las once de la noche.", "options": ["Eran", "Fueron", "Son"], "answer": "Eran" },
+        { "prompt": "___ mucho frío.", "options": ["Hacía", "Hizo", "Hace"], "answer": "Hacía" },
+        { "prompt": "La calle ___ vacía.", "options": ["estaba", "estuvo", "está"], "answer": "estaba" },
+        { "prompt": "Yo ___ cansada y ___ dormir.", "options": ["estaba … quería", "estuve … quise", "estoy … quiero"], "answer": "estaba … quería" }
+      ]
+    },
+    {
+      "id": "traduce",
+      "section": "final",
+      "title": "Say it in Spanish",
+      "instructions": "Translate with the imperfect.",
+      "kind": "type",
+      "speak": "answer",
+      "items": [
+        { "prompt": "I used to live in Chicago.", "answer": "Vivía en Chicago.", "accept": ["Antes vivía en Chicago.", "Yo vivía en Chicago."] },
+        { "prompt": "It was sunny.", "answer": "Hacía sol." },
+        { "prompt": "We were very happy.", "answer": "Estábamos muy contentos.", "accept": ["Éramos muy felices.", "Estábamos muy felices."] },
+        { "prompt": "She was twenty.", "answer": "Tenía veinte años.", "accept": ["Ella tenía veinte años."] },
+        { "prompt": "We used to go to the beach.", "answer": "Íbamos a la playa." }
+      ]
+    }
+  ],
+  "checklist": [
+    "I form the imperfect with -aba and -ía.",
+    "I know the three irregulars: era, iba, veía.",
+    "I use it for habits, descriptions and actions in progress.",
+    "I say tenía diez años for past ages."
+  ],
+  "challenge": {
+    "title": "Childhood",
+    "text": "Describe your childhood home and a typical Sunday in six sentences with the imperfect: *Vivíamos en una casa pequeña. Los domingos mi papá cocinaba y mi hermana y yo jugábamos en el jardín.*"
+  }
+}

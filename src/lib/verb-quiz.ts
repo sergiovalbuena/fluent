@@ -1,5 +1,5 @@
 // Questions for the verb challenge (/verbs/practice), built from the generated verb data.
-import type { VerbEntry, VerbForms, VerbIndex } from '@/lib/verbs'
+import { isImperativeTense, type VerbEntry, type VerbForms, type VerbIndex } from '@/lib/verbs'
 
 export type QuizMode = 'choose' | 'type'
 
@@ -24,7 +24,11 @@ const EXCLUDED: Record<string, string[]> = { en: ['IMPERATIVE'] }
 const SUBJECT_RE: Record<string, RegExp> = {
   fr: /^((?:que |qu')?(?:j'|je |tu |il\/elle |nous |vous |ils\/elles ))/,
   en: /^(I |you |he\/she |we |they )/,
+  es: /^(yo |tú |él\/ella |nosotros |vosotros |ellos\/ellas )/,
 }
+
+// Persons left out of the drill: vosotros (only used in Spain; the Spanish course teaches ustedes)
+const SKIPPED_PERSONS: Record<string, number[]> = { es: [4] }
 
 export function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -67,7 +71,7 @@ function question(
   const row = forms[tenseKey]
   const full = row?.[person]
   if (!full) return null
-  const imperative = row.length === 3
+  const imperative = isImperativeTense(tenseKey)
   const { subject, rest } = split(full, index.language, imperative, index.imperativePersons[person] ?? '')
 
   const restOf = (f: string | null | undefined, imp: boolean, p: number) =>
@@ -77,7 +81,7 @@ function question(
   // persons in this tense, then the same slot of other verbs
   const sameVerbOtherTenses = shuffle(
     Object.entries(forms)
-      .filter(([k, r]) => k !== tenseKey && r.length === row.length)
+      .filter(([k, r]) => k !== tenseKey && isImperativeTense(k) === imperative && r.length === row.length)
       .map(([, r]) => restOf(r[person], imperative, person)),
   )
   const sameTenseOtherPersons = shuffle(row.map((f, p) => (p === person ? null : restOf(f, imperative, p))))
@@ -125,7 +129,8 @@ export function buildRound(
     const keys = shuffle(tenseKeys.filter(k => forms[k]))
     if (keys.length === 0) continue
     const row = forms[keys[0]]
-    const persons = shuffle(row.map((f, i) => (f ? i : -1)).filter(i => i >= 0))
+    const skipped = SKIPPED_PERSONS[index.language] ?? []
+    const persons = shuffle(row.map((f, i) => (f && !skipped.includes(i) ? i : -1)).filter(i => i >= 0))
     if (persons.length === 0) continue
     const q = question(verb, forms, keys[0], persons[0], index, pool)
     if (!q || used.has(q.id)) continue

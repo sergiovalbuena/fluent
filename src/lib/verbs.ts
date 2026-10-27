@@ -14,8 +14,8 @@ export type VerbEntry = {
   slug: string | null
   essential: boolean
   pronominal: boolean
-  /** French infinitive ending (null in English) */
-  ending: 'er' | 'ir' | 're' | 'oir' | null
+  /** Infinitive ending: French -er / -ir / -re / -oir, Spanish -ar / -er / -ir (null in English) */
+  ending: 'ar' | 'er' | 'ir' | 're' | 'oir' | null
   /** French verb group: 1 -er, 2 -ir/-issons, 3 the rest (null in English) */
   group: 1 | 2 | 3 | null
   /** Doesn't follow the regular pattern (French: 3rd group except vendre-type -re verbs) */
@@ -43,12 +43,13 @@ export type VerbExample = { text: string; translations: Record<string, string>; 
 /** Tense key → example */
 export type VerbExamples = Record<string, VerbExample>
 
-export const VERB_LANGUAGES = ['fr', 'en'] as const
+export const VERB_LANGUAGES = ['fr', 'en', 'es'] as const
 
 export async function loadVerbIndex(lang: string): Promise<VerbIndex | null> {
   switch (lang) {
     case 'fr': return (await import('@/data/verbs/fr-index.json')).default as VerbIndex
     case 'en': return (await import('@/data/verbs/en-index.json')).default as VerbIndex
+    case 'es': return (await import('@/data/verbs/es-index.json')).default as VerbIndex
     default: return null
   }
 }
@@ -57,6 +58,7 @@ export async function loadVerbForms(lang: string): Promise<Record<string, VerbFo
   switch (lang) {
     case 'fr': return (await import('@/data/verbs/fr-forms.json')).default as Record<string, VerbForms>
     case 'en': return (await import('@/data/verbs/en-forms.json')).default as Record<string, VerbForms>
+    case 'es': return (await import('@/data/verbs/es-forms.json')).default as Record<string, VerbForms>
     default: return null
   }
 }
@@ -65,15 +67,19 @@ export function verbTranslation(verb: VerbEntry, translationLang: string): strin
   return verb.translations[translationLang] ?? verb.translations.en ?? verb.translations.es ?? ''
 }
 
-/** Text to read aloud: "il/elle est" → "il est", "he/she is" → "he is" */
+/** Text to read aloud: "il/elle est" → "il est", "he/she is" → "he is", "él/ella es" → "él es" */
 export function speakableForm(form: string): string {
-  return form.replace(/\b(il|ils|he)\/(elle|elles|she)\b/g, '$1')
+  return form.replace(/\b(il|ils|he)\/(elle|elles|she)\b/g, '$1').replace(/(^|\s)(él|ellos)\/(ella|ellas)(?=\s)/g, '$1$2')
 }
+
+/** Imperative rows have their own persons (tu / nous / vous, tú / usted…) */
+export const isImperativeTense = (key: string) => key.startsWith('IMPERAT')
 
 export async function loadVerbExamples(lang: string): Promise<Record<string, VerbExamples> | null> {
   switch (lang) {
     case 'fr': return (await import('@/data/verbs/fr-examples.json')).default as Record<string, VerbExamples>
     case 'en': return (await import('@/data/verbs/en-examples.json')).default as Record<string, VerbExamples>
+    case 'es': return (await import('@/data/verbs/es-examples.json')).default as Record<string, VerbExamples>
     default: return null
   }
 }
