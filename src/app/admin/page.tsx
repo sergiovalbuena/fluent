@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { requireAdmin } from '@/lib/supabase/admin'
 import { Users, BookOpen, Trophy, Zap, TrendingUp, Globe, Flame } from 'lucide-react'
 
@@ -149,7 +150,7 @@ export default async function AdminOverviewPage() {
             <Users size={15} className="text-slate-400" />
             <h3 className="text-sm font-semibold text-slate-700">Recent Users</h3>
           </div>
-          <a href="/admin/users" className="text-xs text-orange-500 font-semibold hover:underline">View all →</a>
+          <Link href="/admin/users" className="text-xs text-orange-500 font-semibold hover:underline">View all →</Link>
         </div>
         {recentUsers.length === 0 ? (
           <div className="px-5 py-8 text-center text-sm text-slate-400">No users yet</div>

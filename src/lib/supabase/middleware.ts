@@ -30,11 +30,12 @@ export async function updateSession(request: NextRequest) {
 
   const { pathname } = request.nextUrl
 
-  // Public routes: landing, auth flow and legal pages. API routes check auth
-  // themselves and answer with JSON errors, so they're never redirected.
+  // Public routes: marketing site (/es, /en), auth flow and legal pages. API routes
+  // check auth themselves and answer with JSON errors, so they're never redirected.
   const publicRoutes = [
+    '/es', '/en',
     '/login', '/signup', '/forgot-password', '/reset-password', '/auth/callback',
-    '/privacy-policy', '/terms', '/api',
+    '/privacy-policy', '/terms', '/api', '/sitemap.xml', '/robots.txt',
   ]
   const isPublicRoute = pathname === '/' || publicRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))
 

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { BookOpen } from 'lucide-react'
@@ -300,12 +301,12 @@ export default function FlashCardsPage() {
               >
                 {t('play_again')}
               </button>
-              <a
+              <Link
                 href="/mini-games"
                 className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all"
               >
                 {t('back_to_games')}
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

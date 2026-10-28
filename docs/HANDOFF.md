@@ -93,6 +93,15 @@
   - Inglés: según `english-verbs-irregular`.
   - `/verbs` muestra la insignia «irreg.» y, bajo el buscador, filtros por terminación (-er/-ir/-re/-oir) y regulares/irregulares.
 - **Velocidad (2026-10-26):** las páginas tardaban 8–10 s porque cada navegación llamaba varias veces seguidas a `supabase.auth.getUser()`, que va al servidor de Auth (0,4–4 s cada vez). Ahora el usuario se lee con `getAuthUser()` (`src/lib/supabase/auth.ts`), que usa `getClaims()`: verifica el token en el servidor con las claves ES256 del proyecto, sin red. El proxy también usa `getClaims()` (sigue renovando la sesión). Admin y `requireAdmin` siguen con `getUser()`. Además, el dashboard y la página de lección cargan en una sola ronda, y `courseLessonStates` se guarda en caché por petición. Proxy: de 0,4–4,2 s a 4–16 ms.
+- **Sitio de marketing bilingüe (2026-10-27):** `src/app/(marketing)/[locale]/` con `/es` y `/en` (estáticas, `dynamicParams = false`): portada, `/courses/{french,english,spanish}`, `/grammar`, `/verbs` y `/maria`.
+  - `/` no existe como página: el proxy (`src/proxy.ts`) lo reescribe a `/es` o `/en` según la cookie `site_lang` (la pone el selector de idioma) o `Accept-Language`.
+  - Textos en `src/lib/marketing/copy.ts`, no en `messages/*`.
+  - Las cifras y muestras salen del contenido real (`src/lib/marketing/data.ts`, que lee `content/` con fs): nunca escribir números a mano en los textos.
+  - `data.ts` usa `node:fs`: no importarlo desde componentes `'use client'`, ni siquiera de forma indirecta (por eso `LevelBadge` vive en su propio archivo).
+  - `/api/tts` sirve los clips ya cacheados sin sesión (para el audio de estas páginas); generar uno nuevo sigue requiriendo sesión.
+  - Se quitaron la landing vieja (`src/app/page.tsx`, `src/components/landing/`), sus 8 idiomas, cifras y testimonios inventados.
+  - Unidades del curso de español añadidas en `course-units.ts`.
+  - `sitemap.ts` y `robots.ts` usan `NEXT_PUBLIC_SITE_URL` (por defecto fluent-xi.vercel.app).
 - Auth: Google OAuth configurado; las URLs de Supabase Auth están configuradas.
 - Lint: 0 errores.
 

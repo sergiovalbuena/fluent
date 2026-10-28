@@ -17,11 +17,6 @@ function publicUrl(path: string) {
 
 // GET /api/tts?lang=fr&text=bonjour → mp3 (redirects to the cached file when it exists)
 export async function GET(req: NextRequest) {
-  // Signed-in users only: generating audio costs API credits
-  const supabase = await createClient()
-  const { data: { user } } = await getAuthUser(supabase)
-  if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
-
   const lang = req.nextUrl.searchParams.get('lang') ?? ''
   const text = normalizeTtsText(req.nextUrl.searchParams.get('text') ?? '')
   if (!isTtsLanguage(lang) || !text || text.length > TTS_MAX_CHARS) {
@@ -33,6 +28,12 @@ export async function GET(req: NextRequest) {
   if (cached?.ok) {
     return NextResponse.redirect(publicUrl(path), { status: 302, headers: { 'Cache-Control': 'private, max-age=86400' } })
   }
+
+  // Cached clips are public (the marketing pages play them); generating a new
+  // one costs API credits, so that's for signed-in users only
+  const supabase = await createClient()
+  const { data: { user } } = await getAuthUser(supabase)
+  if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
 
   const apiKey = process.env.OPENAI_API_KEY
   if (!apiKey) return NextResponse.json({ error: 'not_configured' }, { status: 503 })

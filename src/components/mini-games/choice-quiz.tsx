@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
@@ -133,9 +134,9 @@ export function QuizResult({ title, correct, total, rewards, onAgain, againLabel
         <button type="button" onClick={onAgain} className={cn('px-6 py-3 rounded-2xl text-sm font-bold text-white transition-all hover:scale-105', accent.button)}>
           {againLabel}
         </button>
-        <a href="/mini-games" className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all">
+        <Link href="/mini-games" className="px-6 py-3 rounded-2xl text-sm font-bold text-white/60 bg-white/5 hover:bg-white/10 transition-all">
           {t('back_to_games')}
-        </a>
+        </Link>
       </div>
     </motion.div>
   )

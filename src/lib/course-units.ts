@@ -30,6 +30,14 @@ const COURSE_UNITS: Record<string, CourseUnit[]> = {
     { from: 41, to: 50, emoji: '🏡', title: 'S\'installer en France',    translations: { en: 'Settling in France',        es: 'Instalarse en Francia' } },
     { from: 51, to: 60, emoji: '☀️', title: 'La vie de tous les jours',  translations: { en: 'Everyday life',             es: 'La vida cotidiana' } },
   ],
+  es: [
+    { from: 1,  to: 10, emoji: '🌱', title: 'Primeros pasos',            translations: { en: 'First steps' } },
+    { from: 11, to: 20, emoji: '🧭', title: 'El mundo que me rodea',     translations: { en: 'The world around me' } },
+    { from: 21, to: 30, emoji: '🎭', title: 'Tiempo libre',              translations: { en: 'Free time' } },
+    { from: 31, to: 40, emoji: '🧳', title: 'De viaje',                  translations: { en: 'On the road' } },
+    { from: 41, to: 50, emoji: '🏡', title: 'Instalarse',                translations: { en: 'Settling in' } },
+    { from: 51, to: 60, emoji: '☀️', title: 'La vida diaria',            translations: { en: 'Everyday life' } },
+  ],
 }
 
 /** Units covering `count` modules of the given course */
