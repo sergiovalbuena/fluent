@@ -198,8 +198,9 @@ const Block = ({ className, children, ...rest }: BlockProps) => (
 
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 
-// Punctuation the user shouldn't need to type — auto-inserted
-const SKIPPABLE = /^[¿¡.,!?;:'"()\-–—…«»’‘“”]+$/
+// Punctuation the user shouldn't need to type — auto-inserted. Includes the
+// slash between alternatives («enchanté / enchantée»), hard to reach on mobile
+const SKIPPABLE = /^[¿¡.,!?;:'"()\-–—…«»’‘“”/·]+$/
 
 const isSpace = (c: string | undefined) => !!c && /\s/.test(c)
 
@@ -207,6 +208,40 @@ const isSpace = (c: string | undefined) => !!c && /\s/.test(c)
 function sameChar(a: string, b: string): boolean {
   if (isSpace(a) || isSpace(b)) return isSpace(a) && isSpace(b)
   return norm(a.replace(/[’‘]/g, "'")) === norm(b.replace(/[’‘]/g, "'"))
+}
+
+/** œ is missing from most keyboards: «oe» types it (the o fills the œ, the e is then skipped) */
+const isLigatureOe = (c: string | undefined) => c === 'œ' || c === 'Œ'
+
+/**
+ * Applies newly inserted characters to what's typed so far, in order (handles
+ * autocomplete, IME composition or paste inserting several at once). Stops at
+ * the first wrong one. `pendingOe` carries the «e» to skip after an «o» for œ.
+ */
+function applyTyped(typed: string, added: string, target: string, pendingOe: { current: boolean }): { next: string; mistake: boolean } {
+  let next = typed
+  for (const ch of added) {
+    if (pendingOe.current) {
+      pendingOe.current = false
+      if (ch === 'e' || ch === 'E') continue
+    }
+    if (next.length >= target.length) break
+    if (isLigatureOe(target[next.length]) && (ch === 'o' || ch === 'O')) {
+      next = autoAdvance(next + target[next.length], target)
+      pendingOe.current = true
+      continue
+    }
+    if (sameChar(ch, target[next.length])) {
+      next = autoAdvance(next + ch, target)
+      continue
+    }
+    // Redundant punctuation the user typed that auto-advance already
+    // inserted for them (e.g. a comma right before the cursor) — ignore it
+    // instead of treating it as a mistake
+    if ((SKIPPABLE.test(ch) || isSpace(ch)) && next.length > 0 && sameChar(ch, target[next.length - 1])) continue
+    return { next, mistake: true }
+  }
+  return { next, mistake: false }
 }
 
 const punctuationOnly = (token: string) => token.length > 0 && [...token].every(c => SKIPPABLE.test(c))
@@ -294,6 +329,8 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
   const [shake, setShake]         = useState(false)
   const [roundDone, setRoundDone] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
+  // Set after an «o» typed for œ: the «e» that follows is skipped
+  const pendingOe = useRef(false)
 
   const target  = word
   const hintSet = useMemo(() => buildHintSet(target, round), [target, round])
@@ -315,6 +352,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
     if (roundDone || e.key !== 'Backspace') return
     e.preventDefault() // deletion is handled entirely below, not via native input diffing
+    pendingOe.current = false
     setTyped(t => {
       if (t.length === 0) return t
       let newLen = t.length - 1
@@ -335,25 +373,10 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
       return
     }
 
-    // Validate every newly-inserted character in order — handles autocomplete,
-    // IME composition, or paste inserting more than one character at once
-    let next = typed
-    const added = val.slice(typed.length)
-    for (const ch of added) {
-      if (next.length >= target.length) break
-      if (sameChar(ch, target[next.length])) {
-        next = autoAdvance(next + ch, target)
-        continue
-      }
-      // Redundant punctuation the user typed that auto-advance already
-      // inserted for them (e.g. a comma right before the cursor) — ignore it
-      // instead of treating it as a mistake
-      if ((SKIPPABLE.test(ch) || isSpace(ch)) && next.length > 0 && sameChar(ch, target[next.length - 1])) {
-        continue
-      }
+    const { next, mistake } = applyTyped(typed, val.slice(typed.length), target, pendingOe)
+    if (mistake) {
       setShake(true)
       setTimeout(() => setShake(false), 380)
-      break
     }
 
     setTyped(next)
@@ -655,6 +678,8 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
   const [allDone, setAllDone]       = useState(false)
   const [resumed, setResumed]       = useState(saved !== null)
   const inputRef = useRef<HTMLInputElement>(null)
+  // Set after an «o» typed for œ: the «e» that follows is skipped
+  const pendingOe = useRef(false)
 
   useEffect(() => {
     if (allDone) clearStoryProgress(progressKey)
@@ -702,6 +727,7 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
   const handleKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
     if (phraseDone || e.key !== 'Backspace') return
     e.preventDefault() // deletion is handled entirely below, not via native input diffing
+    pendingOe.current = false
     setTyped(t => {
       if (t.length === 0) return t
       let newLen = t.length - 1
@@ -722,23 +748,10 @@ function StoryChallengeModal({ storyText, languageCode, onClose }: {
       return
     }
 
-    // Validate every newly-inserted character in order — handles autocomplete,
-    // IME composition, or paste inserting more than one character at once
-    let next = typed
-    const added = val.slice(typed.length)
-    for (const ch of added) {
-      if (next.length >= target.length) break
-      if (sameChar(ch, target[next.length])) {
-        next = autoAdvance(next + ch, target)
-        continue
-      }
-      // Redundant punctuation the user typed that auto-advance already
-      // inserted for them (e.g. a comma right before the cursor) — ignore it
-      // instead of treating it as a mistake
-      if ((SKIPPABLE.test(ch) || isSpace(ch)) && next.length > 0 && sameChar(ch, target[next.length - 1])) {
-        continue
-      }
-      setShake(true); setTimeout(() => setShake(false), 380); break
+    const { next, mistake } = applyTyped(typed, val.slice(typed.length), target, pendingOe)
+    if (mistake) {
+      setShake(true)
+      setTimeout(() => setShake(false), 380)
     }
 
     setTyped(next)

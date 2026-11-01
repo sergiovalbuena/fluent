@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { usePracticeContent } from '@/lib/practice-source'
+import { wordAlternatives } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
@@ -47,7 +48,7 @@ export default function MonkeyTypePage() {
   const tm = useTranslations('mini_games')
   // Words from the source chosen on /mini-games (all lessons or one)
   const practice = usePracticeContent(languageCode, translationLang)
-  const pool = useMemo<string[]>(() => practice.words.map(w => w.word), [practice.words])
+  const pool = useMemo<string[]>(() => practice.words.map(w => wordAlternatives(w.word)[0]), [practice.words])
   const loading = practice.loading
   const [phase, setPhase] = useState<Phase>('ready')
   const [timerChoice, setTimerChoice] = useState<30 | 60>(60)

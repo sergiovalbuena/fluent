@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { useActiveLanguage } from '@/components/providers/language-provider'
-import { speak, stripArticle } from '@/lib/languages'
+import { speak, stripArticle, wordAlternatives } from '@/lib/languages'
 import { usePracticeContent, type PracticeWord } from '@/lib/practice-source'
 import { addRewards } from '@/lib/rewards'
 import { createClient } from '@/lib/supabase/client'
@@ -56,7 +56,8 @@ const bare = (s: string) => fold(s).normalize('NFD').replace(/[̀-ͯ]/g, '')
 function checkWord(input: string, word: string, lang: string): Exclude<Status, 'idle'> {
   const given = fold(input)
   if (!given) return 'wrong'
-  const targets = [fold(word), fold(stripArticle(word, lang))]
+  // Any one of the alternatives («enchanté / enchantée») counts, as does the whole entry
+  const targets = [word, ...wordAlternatives(word)].flatMap(w => [fold(w), fold(stripArticle(w, lang))])
   if (targets.includes(given)) return 'correct'
   if (targets.map(bare).includes(bare(given))) return 'almost'
   return 'wrong'

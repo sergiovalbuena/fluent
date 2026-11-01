@@ -154,6 +154,12 @@ export function splitArticle(word: string, langCode: string): { article: string;
 }
 
 /** Lowercased word without its leading article — used for typing and spelling games. */
+/** «enchanté / enchantée» → ['enchanté', 'enchantée']: each form a learner may type */
+export function wordAlternatives(word: string): string[] {
+  const parts = word.split(/\s*\/\s*/).map(s => s.trim()).filter(Boolean)
+  return parts.length > 1 ? parts : [word]
+}
+
 export function stripArticle(word: string, langCode: string): string {
   return (splitArticle(word, langCode)?.main ?? word).toLowerCase().trim()
 }
