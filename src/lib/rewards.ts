@@ -2,8 +2,9 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import { recordActivity } from '@/lib/activity'
 
 // Gems are credited by the database (award_gems): it applies the 2× gems boost,
-// caps each award and the daily total, and records the transaction. XP is still
-// added by the client.
+// caps each award and the daily total, and records the transaction. XP is computed
+// by the client and added by the database (add_xp) in one statement, so awards that
+// land at the same time (two tabs, a lesson and a mastered word…) are never lost.
 
 export type GemReason = 'lesson_activity' | 'minigame' | 'chest' | 'bonus'
 
@@ -30,19 +31,34 @@ export async function awardGems(supabase: SupabaseClient, amount: number, reason
   return typeof data === 'number' ? data : 0
 }
 
+/**
+ * Adds XP to user_profiles.total_xp and to today's user_activity (xp_earned and,
+ * with lessons = 1, lessons_completed) atomically. Returns the XP credited (0 on error).
+ */
+export async function addXp(supabase: SupabaseClient, xp: number, lessons: 0 | 1 = 0): Promise<number> {
+  const amount = Math.max(0, Math.round(xp))
+  if (amount === 0 && lessons === 0) return 0
+  const { error } = await supabase.rpc('add_xp', { p_xp: amount, p_lessons: lessons })
+  if (error) {
+    console.error('[addXp]', error.message)
+    return 0
+  }
+  return amount
+}
+
 /** Adds XP to the profile and today's activity (keeping the streak), and credits gems; returns what was actually awarded */
 export async function addRewards(
   supabase: SupabaseClient,
   userId: string,
   { xp, gems, reason, ref }: { xp: number; gems: number; reason: GemReason; ref?: string },
 ): Promise<{ xp: number; gems: number }> {
+  let creditedXp = 0
   if (xp > 0) {
-    const { data: profile } = await supabase.from('user_profiles').select('total_xp').eq('user_id', userId).maybeSingle()
-    await supabase.from('user_profiles').update({ total_xp: (profile?.total_xp ?? 0) + xp }).eq('user_id', userId)
-    await recordActivity(supabase, userId, xp)
+    creditedXp = await addXp(supabase, xp)
+    if (creditedXp > 0) await recordActivity(supabase, userId)
   }
   const credited = await awardGems(supabase, gems, reason, ref)
-  return { xp, gems: credited }
+  return { xp: creditedXp, gems: credited }
 }
 
 export type ActiveBoosts = { xp: number | null; gems: number | null }   // expiry timestamps (ms)

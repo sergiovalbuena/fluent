@@ -1,27 +1,15 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 
 // Daily activity outside the lesson player (mini-games, verb and grammar practice,
-// words mastered): adds the XP to today's user_activity row and keeps the streak,
-// with the same rules as the lesson player — a missed day breaks it unless a streak
-// freeze covers exactly one missed day. Dates are UTC, like the lesson player.
+// words mastered): keeps the streak, with the same rules as the lesson player — a
+// missed day breaks it unless a streak freeze covers exactly one missed day. Dates
+// are UTC, like the lesson player. The XP itself is added by add_xp (see addXp in
+// src/lib/rewards.ts), which also creates today's user_activity row.
 
 const day = (offset = 0) => new Date(Date.now() + offset * 86400000).toISOString().split('T')[0]
 
-export async function recordActivity(supabase: SupabaseClient, userId: string, xp: number): Promise<{ frozen: boolean }> {
+export async function recordActivity(supabase: SupabaseClient, userId: string): Promise<{ frozen: boolean }> {
   const today = day()
-
-  const { data: existing } = await supabase
-    .from('user_activity')
-    .select('xp_earned')
-    .eq('user_id', userId)
-    .eq('activity_date', today)
-    .maybeSingle()
-  await supabase.from('user_activity').upsert({
-    user_id: userId,
-    activity_date: today,
-    xp_earned: (existing?.xp_earned ?? 0) + xp,
-    updated_at: new Date().toISOString(),
-  }, { onConflict: 'user_id,activity_date' })
 
   const { data: profile } = await supabase
     .from('user_profiles')

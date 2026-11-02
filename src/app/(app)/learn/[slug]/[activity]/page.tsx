@@ -22,7 +22,7 @@ import { cn } from '@/lib/utils'
 import { localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion, type SpeechHandle } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
-import { awardGems, getActiveBoosts } from '@/lib/rewards'
+import { addXp, awardGems, getActiveBoosts } from '@/lib/rewards'
 import { ResultScreen } from '@/components/lesson/result-screen'
 import { AllItemsDialog } from '@/components/lesson/all-items-dialog'
 import { HINT_AREA, SectionTitle, TitleHintProvider } from '@/components/lesson/title-hint'
@@ -2014,21 +2014,8 @@ export default function LessonPage() {
       toast.error('Could not save progress — ' + upsertError.message)
     }
 
-    // Record session — any activity completion counts
-    const activityDate = new Date().toISOString().split('T')[0]
-    const { data: todayRow } = await supabase
-      .from('user_activity')
-      .select('lessons_completed, xp_earned')
-      .eq('user_id', user.id)
-      .eq('activity_date', activityDate)
-      .maybeSingle()
-    await supabase.from('user_activity').upsert({
-      user_id:           user.id,
-      activity_date:     activityDate,
-      lessons_completed: (todayRow?.lessons_completed ?? 0) + 1,
-      xp_earned:         todayRow?.xp_earned ?? 0,
-      updated_at:        new Date().toISOString(),
-    }, { onConflict: 'user_id,activity_date' })
+    // Record session — any activity completion counts (atomic, see add_xp)
+    await addXp(supabase, 0, 1)
 
     return { stars: finalStars, gems: newGems, isFirstCompletion }
   }
@@ -2045,7 +2032,7 @@ export default function LessonPage() {
 
     const { data: profile } = await supabase
       .from('user_profiles')
-      .select('total_xp, streak_count, longest_streak, last_activity_date, last_streak_milestone, skills, streak_freezes')
+      .select('streak_count, longest_streak, last_activity_date, last_streak_milestone, skills, streak_freezes')
       .eq('user_id', user.id)
       .maybeSingle()
 
@@ -2097,29 +2084,15 @@ export default function LessonPage() {
       grammar:    (currentSkills.grammar    ?? 0) + (skillGains.grammar    ?? 0),
     }
 
+    // XP goes through add_xp (atomic, also today's user_activity.xp_earned)
+    await addXp(supabase, xpEarned)
     await supabase.from('user_profiles').update({
-      total_xp:             (profile?.total_xp  ?? 0) + xpEarned,
       streak_count:          newStreak,
       longest_streak:        Math.max(newStreak, profile?.longest_streak ?? 0),
       last_activity_date:    today,
       last_streak_milestone: newMilestone,
       skills:                updatedSkills,
     }).eq('user_id', user.id)
-
-    // Update xp_earned in user_activity (session count already recorded in saveProgress)
-    const { data: existingActivity } = await supabase
-      .from('user_activity')
-      .select('xp_earned, lessons_completed')
-      .eq('user_id', user.id)
-      .eq('activity_date', today)
-      .maybeSingle()
-    await supabase.from('user_activity').upsert({
-      user_id:           user.id,
-      activity_date:     today,
-      xp_earned:         (existingActivity?.xp_earned ?? 0) + xpEarned,
-      lessons_completed: existingActivity?.lessons_completed ?? 1,
-      updated_at:        new Date().toISOString(),
-    }, { onConflict: 'user_id,activity_date' })
 
     return { xpEarned, gemsEarned, milestoneBonusXp }
   }
