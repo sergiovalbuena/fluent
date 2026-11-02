@@ -3,11 +3,12 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Zap, Clock, Trophy, Star, ChevronLeft } from 'lucide-react'
+import { Zap, Clock, Trophy } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { usePracticeContent } from '@/lib/practice-source'
+import { getLanguage } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
@@ -16,9 +17,14 @@ import { getAuthUser } from '@/lib/supabase/auth'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type WordPair = { word: string; translation: string }
-type Question = { prompt: string; answer: string; options: string[] }
+/** promptLang is the language the prompt is written in (shown as a flag) */
+type Question = { prompt: string; promptLang: string; answer: string; options: string[] }
 type Phase = 'ready' | 'playing' | 'finished'
 type AnswerState = 'idle' | 'correct' | 'wrong'
+type Rewards = { xp: number; gems: number }
+
+const GAME_SECONDS = 60
+const BATCH_SIZE = 40
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function shuffle<T>(arr: T[]): T[] {
@@ -30,39 +36,56 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-function buildQuestions(pool: WordPair[]): Question[] {
-  if (pool.length < 4) return []
-  return shuffle(pool)
-    .slice(0, 40)
-    .map((item, i) => {
-      const wrong = shuffle(pool.filter((p) => p.word !== item.word)).slice(0, 3)
-      if (i % 2 === 0) {
-        return {
-          prompt: item.word,
-          answer: item.translation,
-          options: shuffle([item.translation, ...wrong.map((w) => w.translation)]),
-        }
-      } else {
-        return {
-          prompt: item.translation,
-          answer: item.word,
-          options: shuffle([item.word, ...wrong.map((w) => w.word)]),
-        }
-      }
-    })
+const distinctCount = (values: string[]) => new Set(values).size
+
+/** The game needs at least 4 different values on each side to offer 4 distinct options */
+function canPlay(pool: WordPair[]): boolean {
+  return distinctCount(pool.map(p => p.word)) >= 4 && distinctCount(pool.map(p => p.translation)) >= 4
 }
 
-async function saveGameResult(correct: number, total: number) {
+/**
+ * One shuffled pass over the pool. Directions alternate (target → translation, then
+ * translation → target). Distractors are distinct values that are not also a valid
+ * answer for the same prompt (e.g. two translations of the same word).
+ */
+function buildBatch(pool: WordPair[], targetLang: string, translationLang: string, avoidFirst?: string): Question[] {
+  const items = shuffle(pool).slice(0, BATCH_SIZE)
+  // Don't start a new batch with the prompt the previous one ended on
+  if (avoidFirst && items.length > 1 && (items[0].word === avoidFirst || items[0].translation === avoidFirst)) {
+    items.push(items.shift()!)
+  }
+  const questions: Question[] = []
+  items.forEach((item, i) => {
+    const fromTarget = i % 2 === 0
+    const prompt = fromTarget ? item.word : item.translation
+    const answer = fromTarget ? item.translation : item.word
+    const side = (p: WordPair) => (fromTarget ? p.translation : p.word)
+    const promptSide = (p: WordPair) => (fromTarget ? p.word : p.translation)
+    const validAnswers = new Set(pool.filter(p => promptSide(p) === prompt).map(side))
+    const candidates = [...new Set(pool.map(side))].filter(v => !validAnswers.has(v))
+    const wrong = shuffle(candidates).slice(0, 3)
+    if (wrong.length < 3) return
+    questions.push({
+      prompt,
+      promptLang: fromTarget ? targetLang : translationLang,
+      answer,
+      options: shuffle([answer, ...wrong]),
+    })
+  })
+  return questions
+}
+
+async function saveGameResult(correct: number, total: number): Promise<Rewards> {
+  // Nothing to reward if the player didn't get a single answer right
+  if (correct === 0) return { xp: 0, gems: 0 }
   const supabase = createClient()
   const {
     data: { user },
   } = await getAuthUser(supabase)
-  if (!user) return { xp: 5, gems: 3 }
+  if (!user) return { xp: 0, gems: 0 }
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0
   const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5
-  const gems = 3
-  const awarded = await addRewards(supabase, user.id, { xp, gems, reason: 'minigame' })
-  return awarded
+  return addRewards(supabase, user.id, { xp, gems: 3, reason: 'minigame' })
 }
 
 // ── Main Component ─────────────────────────────────────────────────────────────
@@ -74,119 +97,121 @@ export default function SpeedRoundPage() {
   const practice = usePracticeContent(languageCode, translationLang)
   const pool = useMemo<WordPair[]>(() => practice.words.map(w => ({ word: w.word, translation: w.translation })), [practice.words])
   const loading = practice.loading
+  const playable = canPlay(pool)
   const [phase, setPhase] = useState<Phase>('ready')
   const [questions, setQuestions] = useState<Question[]>([])
   const [qIndex, setQIndex] = useState(0)
   const [score, setScore] = useState(0)
   const [answered, setAnswered] = useState(0)
   const [combo, setCombo] = useState(0)
-  const [timeLeft, setTimeLeft] = useState(60)
+  const [timeLeft, setTimeLeft] = useState(GAME_SECONDS)
   const [answerState, setAnswerState] = useState<AnswerState>('idle')
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
-  const [rewards, setRewards] = useState<{ xp: number; gems: number } | null>(null)
+  const [rewards, setRewards] = useState<Rewards | null>(null)
 
+  // Refs mirror the values the timer and timeouts need, so they never read stale state
   const phaseRef = useRef<Phase>('ready')
+  const scoreRef = useRef(0)
+  const answeredRef = useRef(0)
+  const timeLeftRef = useRef(GAME_SECONDS)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const advanceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const lockRef = useRef(false)
 
+  const stopClocks = useCallback(() => {
+    if (timerRef.current) clearInterval(timerRef.current)
+    if (advanceRef.current) clearTimeout(advanceRef.current)
+    timerRef.current = null
+    advanceRef.current = null
+  }, [])
 
-  const finishGame = useCallback(
-    async (finalScore: number, finalAnswered: number) => {
-      if (timerRef.current) clearInterval(timerRef.current)
-      phaseRef.current = 'finished'
-      setPhase('finished')
-      const result = await saveGameResult(finalScore, finalAnswered)
-      setRewards(result)
-    },
-    [],
-  )
+  // Runs once per game: the phase guard stops the timer and the last answer both finishing it
+  const finishGame = useCallback(async () => {
+    if (phaseRef.current !== 'playing') return
+    phaseRef.current = 'finished'
+    stopClocks()
+    lockRef.current = true
+    setPhase('finished')
+    setRewards(await saveGameResult(scoreRef.current, answeredRef.current))
+  }, [stopClocks])
 
   // Timer
   useEffect(() => {
     if (phase !== 'playing') return
     timerRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current!)
-          setScore((s) => {
-            setAnswered((a) => {
-              finishGame(s, a)
-              return a
-            })
-            return s
-          })
-          return 0
-        }
-        return prev - 1
-      })
+      timeLeftRef.current = Math.max(0, timeLeftRef.current - 1)
+      setTimeLeft(timeLeftRef.current)
+      if (timeLeftRef.current === 0) finishGame()
     }, 1000)
     return () => {
       if (timerRef.current) clearInterval(timerRef.current)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase])
+  }, [phase, finishGame])
+
+  // Leaving the page mid-game cancels the pending timers
+  useEffect(() => stopClocks, [stopClocks])
 
   function startGame() {
-    const qs = buildQuestions(pool)
-    setQuestions(qs)
+    stopClocks()
+    setQuestions(buildBatch(pool, languageCode, translationLang))
     setQIndex(0)
     setScore(0)
     setAnswered(0)
     setCombo(0)
-    setTimeLeft(60)
+    setTimeLeft(GAME_SECONDS)
     setAnswerState('idle')
     setSelectedOption(null)
     setRewards(null)
+    scoreRef.current = 0
+    answeredRef.current = 0
+    timeLeftRef.current = GAME_SECONDS
     lockRef.current = false
     phaseRef.current = 'playing'
     setPhase('playing')
   }
 
   function handleAnswer(option: string) {
-    if (lockRef.current || phase !== 'playing') return
+    if (lockRef.current || phaseRef.current !== 'playing') return
     lockRef.current = true
     const q = questions[qIndex]
     const isCorrect = option === q.answer
     setSelectedOption(option)
-    setAnswered((prev) => prev + 1)
+    answeredRef.current += 1
+    setAnswered(answeredRef.current)
 
     if (isCorrect) {
-      setScore((prev) => prev + 1)
+      scoreRef.current += 1
+      setScore(scoreRef.current)
       setCombo((prev) => prev + 1)
       setAnswerState('correct')
-      setTimeout(() => {
-        advanceQuestion()
-      }, 400)
     } else {
       setCombo(0)
       setAnswerState('wrong')
-      setTimeout(() => {
-        advanceQuestion()
-      }, 800)
     }
+    advanceRef.current = setTimeout(advanceQuestion, isCorrect ? 400 : 800)
   }
 
   function advanceQuestion() {
+    advanceRef.current = null
+    if (phaseRef.current !== 'playing') return
     const next = qIndex + 1
-    if (next >= questions.length) {
-      setScore((s) => {
-        setAnswered((a) => {
-          finishGame(s, a)
-          return a
-        })
-        return s
-      })
-    } else {
-      setQIndex(next)
-      setAnswerState('idle')
-      setSelectedOption(null)
-      lockRef.current = false
+    // Endless: queue a new shuffled pass before the current one runs out
+    if (next >= questions.length - 1) {
+      const last = questions[questions.length - 1]?.prompt
+      setQuestions((prev) => [...prev, ...buildBatch(pool, languageCode, translationLang, last)])
     }
+    if (next >= questions.length) {
+      finishGame()
+      return
+    }
+    setQIndex(next)
+    setAnswerState('idle')
+    setSelectedOption(null)
+    lockRef.current = false
   }
 
   const currentQ = questions[qIndex]
-  const accuracy = answered > 0 ? Math.round((score / answered) * 100) : 0
-  const timerPct = (timeLeft / 60) * 100
+  const timerPct = (timeLeft / GAME_SECONDS) * 100
   const timerRed = timeLeft <= 10
 
   // ── Ready Screen ─────────────────────────────────────────────────────────────
@@ -247,7 +272,7 @@ export default function SpeedRoundPage() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={startGame}
-              disabled={loading || pool.length < 4}
+              disabled={loading || !playable}
               className="w-full py-4 rounded-2xl text-white text-lg font-bold shadow-xl disabled:opacity-40 disabled:cursor-not-allowed transition-opacity"
               style={{ background: 'linear-gradient(135deg, #f59e0b, #f97316)' }}
             >
@@ -303,9 +328,9 @@ export default function SpeedRoundPage() {
               ))}
             </div>
 
-            {rewards && (
+            {rewards && rewards.gems > 0 && (
               <div className="flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 text-amber-400 px-5 py-2.5 rounded-xl font-bold">
-                +{rewards.gems} 💎 Gems earned
+                +{rewards.gems} 💎 {t('stat_gems')}
               </div>
             )}
 
@@ -387,7 +412,7 @@ export default function SpeedRoundPage() {
               {/* Prompt */}
               <div
                 className={cn(
-                  'rounded-3xl p-6 flex items-center justify-center min-h-[140px] transition-colors duration-200',
+                  'relative rounded-3xl p-6 flex items-center justify-center min-h-[140px] transition-colors duration-200',
                   answerState === 'correct'
                     ? 'bg-emerald-500/20 border border-emerald-500/40'
                     : answerState === 'wrong'
@@ -395,6 +420,14 @@ export default function SpeedRoundPage() {
                       : 'bg-white/5 border border-white/10',
                 )}
               >
+                {/* Language of the prompt: it alternates between the course language and the translation */}
+                <span
+                  className="absolute top-3 left-3 flex items-center gap-1.5 rounded-full bg-white/10 border border-white/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white/60"
+                  title={getLanguage(currentQ.promptLang).nativeName}
+                >
+                  <span className="text-base leading-none">{getLanguage(currentQ.promptLang).flag}</span>
+                  {getLanguage(currentQ.promptLang).nativeName}
+                </span>
                 <p className="text-3xl font-bold text-white text-center leading-tight">
                   {currentQ.prompt}
                 </p>
