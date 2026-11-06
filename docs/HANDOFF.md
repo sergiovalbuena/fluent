@@ -43,7 +43,9 @@
   - El idioma nativo se guarda al pulsar Continuar en el paso 1: define el idioma de la app y el de las traducciones, así que el resto sale en ese idioma. Todo está traducido en los 7 idiomas (`onboarding.*` en `messages/*.json`).
   - Nivel (`src/lib/placement.ts`): Básico = A1-A2, Intermedio = B1-B2, Avanzado = C1-C2. Muestra 30 palabras reales del nivel en el idioma que aprende (en francés, las listas que dio el usuario) y 3 palabras inventadas. Cada inventada marcada resta 5 conocidas (`FAKE_PENALTY`). Menos del 30 % → nivel inferior a la banda; 30–69 % → nivel bajo; 70 % o más → nivel alto. «Desde cero» = A0.
   - El nivel se guarda en `user_languages.level` (A0…C2, nulo en cursos anteriores; migración `20261102000002_user_language_level.sql`). Por ahora **solo se guarda**: el curso empieza siempre en la lección 1 (decisión del usuario).
-  - No resetea XP, racha ni nombre. Los usuarios sin idioma activo son redirigidos a él desde `/dashboard` y `/learn`. Se puede repetir desde el perfil para cambiar de curso.
+  - No resetea XP, racha ni nombre. Los usuarios sin idioma activo son redirigidos a él desde `/dashboard` y `/learn`.
+  - Se retoma donde se dejó: el paso y las respuestas se guardan en `localStorage` (`fluent:onboarding:<user id>:<modo>`) y se borran al terminar. Sin borrador, empieza con las respuestas actuales del perfil y del curso activo (el nivel guardado preselecciona Básico/Intermedio/Avanzado).
+  - Desde el perfil: «Configurar perfil» repite todo; «Cambiar el idioma que aprendo» abre `/onboarding?change=course` (solo idioma y nivel; no toca motivación, meta ni idiomas de la app).
 - `/learn`:
   - Mapa estilo videojuego por unidades ("mundos"), definidas en `src/lib/course-units.ts`.
   - Niveles en 3D, tooltip en los niveles bloqueados y desbloqueo anticipado con gemas.
@@ -83,7 +85,7 @@
 - **Fuente de práctica de los minijuegos** (`src/lib/practice-source.ts`, selector en `src/components/mini-games/source-picker.tsx`): "Todas mis lecciones" o una o varias lecciones, solo entre las que el usuario puede abrir (mismo criterio que el mapa de `/learn`). Se elige en `/mini-games` o en la pantalla de inicio de cada juego y se guarda en `localStorage` por curso (`fluent:practice-source:<idioma>`). La usan los juegos con palabras (Tarjetas también usa frases cortas; Completa la frase usa frases) y Historia corta (usa las historias). Pendiente: fuente por tema de gramática (aparece como "Pronto" en el selector; `PracticeSource` en `practice-source.ts` es donde añadir `{ kind: 'grammar', ... }`).
 - **Hora de música = entrenamiento de letras con YouTube** (`src/app/(app)/mini-games/musictime/page.tsx`, datos en `src/data/songs.ts`): solo canciones tradicionales de dominio público (las letras con derechos necesitan licencia, p. ej. Musixmatch; Spotify se descartó: sin Premium solo da 30 s y sus normas prohíben sincronizar sus grabaciones con contenido visual). 8 canciones en francés y 6 en inglés, con videos que permiten insertarse (verificados con el oEmbed de YouTube). Niveles: fácil (elegir entre 4) y difícil (escribir). **Las canciones aún no tienen tiempos por verso**, así que funcionan en modo libre (el video suena y se completan los huecos a su ritmo). Para sincronizar una: abrir `/mini-games/musictime?sync=<id de la canción>`, reproducir y pulsar "Marcar verso" (o Espacio) al inicio de cada verso, copiar el JSON y pegar los `start` en `songs.ts`. Con tiempos, el video se pausa al final de cada verso con hueco. Si un video deja de permitir la inserción, el juego muestra "Abrir en YouTube". Usa la IFrame API de YouTube (`https://www.youtube.com/iframe_api`).
 - **Contadores de dominadas en la página de lección** (corregido 2026-10-17): contaban todas las palabras dominadas del curso; ahora solo las de esa lección (`src/app/(app)/learn/[slug]/page.tsx`). Las claves en `user_vocab_mastery` son la palabra, `phrase:<frase>` y `qa:<pregunta en el idioma del curso>`.
-- **Ronda rápida `/mini-games/speedround` (2026-11-02):** 60 s de 4 opciones. La partida termina una sola vez (antes el tiempo y la última respuesta podían premiar dos veces); sin aciertos no hay premio; las preguntas son infinitas (se añade otra tanda mezclada antes de acabarse); las opciones nunca se repiten ni incluyen otra respuesta válida. La tarjeta muestra la bandera y el nombre del idioma de la palabra, que alterna entre el curso y la traducción. **Los otros minijuegos siguen dando premio con 0 aciertos y muestran +5 XP / +3 gemas falsos sin sesión** (ver Pendiente).
+- **Ronda rápida `/mini-games/speedround` (2026-11-02):** 60 s de 4 opciones. La partida termina una sola vez (antes el tiempo y la última respuesta podían premiar dos veces); sin aciertos no hay premio; las preguntas son infinitas (se añade otra tanda mezclada antes de acabarse); las opciones nunca se repiten ni incluyen otra respuesta válida. La tarjeta muestra la bandera y el nombre del idioma de la palabra, que alterna entre el curso y la traducción. Desde el 2026-11-05 todos los minijuegos (y el reto de verbos y el entrenador de vocabulario) cobran con `awardMinigame` (`src/lib/rewards.ts`): XP según el porcentaje de aciertos + 3 gemas, nada con 0 aciertos ni sin sesión. Dictado cobraba dos veces cada partida (corregido).
 - **Entrenador de vocabulario `/mini-games/vocabulary`** (`src/components/mini-games/vocab-trainer.tsx`): cada palabra pasa por conocer → reconocer (4 opciones) → escuchar → escribir, en bloques de 4. Los fallos vuelven al final. Sesiones de 6, 10 o 15 palabras. Recompensas de minijuego; no marca palabras como dominadas en las lecciones (decisión del usuario).
 - **`/progress` rediseñado:** recorrido del curso por unidades, racha con la semana, XP, palabras dominadas reales (`user_vocab_mastery`), gemas, precisión, mapa de actividad de 26 semanas (`user_activity`), habilidades por tipo de actividad, logros con avance y actividad reciente. Solo cuenta el curso activo.
 - **Página de lección:** el bonus es un bento de tamaños variados (gramática grande con adelanto, consejos con el primer consejo, animaciones en ordenar, traducir, tarjetas y hoja de palabras). Sin minijuegos, a petición del usuario.
@@ -134,46 +136,42 @@
 - **Actividad diaria y racha fuera de las lecciones (2026-10-19, commit ffb40f3).** `addRewards` suma el XP con `add_xp` (total y `user_activity` del día) y `recordActivity` (`src/lib/activity.ts`) actualiza la racha (`streak_count`, `longest_streak`, `last_activity_date`, protector con `use_streak_freeze`) con las mismas reglas que la pantalla de lecciones. La llama `addRewards`, así que cuentan minijuegos, reto de verbos y gramática. La práctica de palabras, frases y preguntas (`src/hooks/use-vocab-mastery.ts`) da +1 XP por elemento dominado (`MASTERY_XP`) y también registra el día (las recompensas se encolan en `rewardQueue`). Antes, solo las actividades de lección terminadas contaban para la racha y el gráfico semanal.
 - **Claves en Vercel (2026-10-26):** `OPENAI_API_KEY` y `SUPABASE_SERVICE_ROLE_KEY` en Production, como Sensitive, y también en `.env.local`. La clave de OpenAI es de una service account, con límite de gasto activado.
 - **Audio pregenerado (2026-10-26):** 2.024 audios en inglés y 3.219 en francés en el bucket `tts` (unos $4,60). Lo que el script no cubre (respuestas de Q&A, frases sueltas de las historias, verbos y gramática) lo genera y guarda `/api/tts` la primera vez que alguien lo reproduce. Si se añaden lecciones, volver a ejecutar `npx tsx scripts/pregenerate-tts.mts <idioma>`: salta lo que ya está guardado, y si algo falla por red basta con relanzarlo.
-- Auth: Google OAuth configurado; las URLs de Supabase Auth están configuradas. Se quitó el atajo de cuenta demo del login (2b38158). Las pantallas de registro y login **siguen solo en inglés**.
+- Auth: Google OAuth configurado; las URLs de Supabase Auth están configuradas. Se quitó el atajo de cuenta demo del login (2b38158). Pantallas de acceso (2026-11-05):
+  - `/login`, `/signup`, `/forgot-password` y `/reset-password` en los 7 idiomas (`auth.*` en `messages/*.json`). El idioma lo elige `src/app/(auth)/layout.tsx`: el del perfil si hay sesión (nueva contraseña), si no la cookie `site_lang` del sitio de marketing, si no el navegador (`negotiateUiLocale` en `src/lib/messages.ts`); chino cae al inglés.
+  - Los errores de Supabase se traducen por código (`useAuthError` en `src/components/auth/auth-parts.tsx`); los códigos sin traducción muestran un mensaje genérico. El login avisa cuando `/auth/callback` vuelve con `?error=`.
+  - Registro: después de crear la cuenta, pantalla «Revisa tu correo» con el email, consejo de spam, «Reenviar» (`auth.resend`, espera de 60 s) y «¿Correo equivocado?». Si el correo ya tiene cuenta (Supabase responde sin error y sin identidades) lo dice; si la confirmación por email está desactivada, va directo a `/onboarding`.
 - Lint: 0 errores.
 
 ## Pendiente (en orden sugerido)
 
 **Probar (solo requiere que el usuario lo use; la extensión de Chrome no estuvo conectada)**
 1. **Terminar una lección** y comprobar que suma XP y 1 lección en `user_activity` del día. Es el único camino de `add_xp` que aún no se ha visto con datos reales.
-2. **El onboarding nuevo**, mejor con el caso de la mamá (nativo español → aprender inglés). Ojo: el paso 1 guarda el idioma de la app y el botón final cambia el curso activo y el nivel.
+2. **El registro y el onboarding nuevos**, mejor con el caso de la mamá (nativo español → aprender inglés): pantallas de acceso en español, «Revisa tu correo» y «Reenviar», retomar la bienvenida a medias y el atajo «Cambiar el idioma que aprendo» del perfil. Ojo: el paso 1 guarda el idioma de la app y el botón final cambia el curso activo y el nivel.
 3. **Revisar las listas de nivel en japonés y alemán** (`src/lib/placement.ts`), sobre todo que las palabras inventadas no existan.
 4. Con una cuenta real: la voz con IA, MarIA, guardar un enlace, comprar en la tienda de gemas, los grupos de estudio, y `/verbs`, `/verbs/practice` y `/terms` (también en móvil).
 
-**Propuesto al usuario, sin aprobar todavía**
-5. **Minijuegos: los mismos fallos que tenía la Ronda rápida.** Los otros 10 dan XP y gemas con 0 aciertos y, sin sesión, muestran +5 XP / +3 gemas que no se guardan (`if (!user) return { xp: 5, gems: 3 }` en cada `page.tsx`).
-6. **Registro y login:**
-   - traducir `/signup`, `/login`, `/forgot-password` y `/reset-password` (hoy en inglés; el idioma se puede sacar del navegador o de la cookie `site_lang` del sitio de marketing);
-   - pantalla de «revisa tu correo» con el email, consejo de spam, «Reenviar» (`supabase.auth.resend`, con espera de unos 60 s) y «¿Correo equivocado?». Hoy solo sale un toast;
-   - onboarding que se pueda retomar (guardar paso y respuestas en `localStorage`) y que, al repetirlo desde el perfil, salga con las respuestas actuales marcadas, más un atajo «Cambiar idioma que aprendo».
-
 **Decisiones del usuario**
-7. **Títulos traducidos de las lecciones:** límite fijo en la lección 5 o configurable (ver «Revisión pendiente» al final), y borrar las dos columnas sin uso de `user_profiles`.
-8. **Hora de música: canciones más populares (2026-10-17).** Al usuario le parecen demasiado infantiles. El límite es la letra: insertar cualquier video de YouTube está permitido, pero mostrar la letra de una canción con derechos necesita licencia del editor. Opciones propuestas:
+5. **Títulos traducidos de las lecciones:** límite fijo en la lección 5 o configurable (ver «Revisión pendiente» al final), y borrar las dos columnas sin uso de `user_profiles`.
+6. **Hora de música: canciones más populares (2026-10-17).** Al usuario le parecen demasiado infantiles. El límite es la letra: insertar cualquier video de YouTube está permitido, pero mostrar la letra de una canción con derechos necesita licencia del editor. Opciones propuestas:
    1. *Clásicos libres «de adultos»* cantados por artistas conocidos en YouTube (autores muertos hace más de 70 años). Francés: Le Temps des cerises, Plaisir d'amour, La Marseillaise, Auprès de ma blonde, L'Internationale. Inglés: House of the Rising Sun, Scarborough Fair, Danny Boy, Amazing Grace, When the Saints Go Marching In, Oh! Susanna. Sin riesgo legal, pero no son éxitos actuales. Verificar cada video con el oEmbed antes de añadirlo.
    2. *«Tu canción»*: el usuario pega un enlace de YouTube y la letra; la app genera los huecos solo para él (contenido privado, no publicado). Guardar en una tabla nueva (pedir permiso antes de la migración) o solo en `localStorage`.
    3. *Licenciar un catálogo* (Musixmatch, LyricFind): única vía para éxitos actuales para todos; de pago con contrato (el plan gratuito de Musixmatch solo deja mostrar el 30 % de la letra, sin tiempos).
    Recomendación dada: 1 + 2. Spotify descartado (sin Premium solo 30 s; sus normas prohíben sincronizar sus grabaciones con contenido visual). Además, **sincronizar las canciones** (ver «Hora de música» arriba) cuando el usuario mande los tiempos.
-9. **Footer:** qué es «Claim» y qué debe hacer la página «printer» (con «coming soon» en el navbar). No se crearon hasta tener respuesta.
-10. **Prueba A/B de «ver todas las palabras»:** elegir entre el Dialog y la ruta `/words` y borrar la otra.
-11. **Bento de la lección:** las etiquetas de grupo (Repaso, Práctica, Minijuegos) están en el idioma de la interfaz; decidir si van en el idioma del curso como las tarjetas principales. Diseñar la actividad «Práctica de gramática».
+7. **Footer:** qué es «Claim» y qué debe hacer la página «printer» (con «coming soon» en el navbar). No se crearon hasta tener respuesta.
+8. **Prueba A/B de «ver todas las palabras»:** elegir entre el Dialog y la ruta `/words` y borrar la otra.
+9. **Bento de la lección:** las etiquetas de grupo (Repaso, Práctica, Minijuegos) están en el idioma de la interfaz; decidir si van en el idioma del curso como las tarjetas principales. Diseñar la actividad «Práctica de gramática».
 
 **Configuración y producción**
-12. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito.
-13. **Email de contacto legal.** `LEGAL_CONTACT` en `src/components/legal/legal-document.tsx` es `privacy@fluent.app`, que no es un buzón real. Cambiarlo antes de abrir la app al público. Se quitó la dirección postal inventada que había en la política de privacidad.
+10. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito.
+11. **Email de contacto legal.** `LEGAL_CONTACT` en `src/components/legal/legal-document.tsx` es `privacy@fluent.app`, que no es un buzón real. Cambiarlo antes de abrir la app al público. Se quitó la dirección postal inventada que había en la política de privacidad.
 
 **Contenido**
-14. Revisión del francés (`content/fr/REVIEW.md`, dejada para el final): variante del español, listas de vocabulario largas, «Pensée du jour» y cómo presentar los módulos reemplazados.
-15. **Traducir las descripciones de lección a de, it, pt y ja.** `src/lib/lesson-titles.ts` solo tiene en, es y fr; con otro idioma nativo se muestra el inglés.
+12. Revisión del francés (`content/fr/REVIEW.md`, dejada para el final): variante del español, listas de vocabulario largas, «Pensée du jour» y cómo presentar los módulos reemplazados.
+13. **Traducir las descripciones de lección a de, it, pt y ja.** `src/lib/lesson-titles.ts` solo tiene en, es y fr; con otro idioma nativo se muestra el inglés.
 
 **Más adelante**
-16. **Racha en el servidor:** pasar `recordActivity` y la racha del reproductor de lecciones a una función de la base de datos, y después proteger `streak_count`, `longest_streak`, `last_activity_date` y `skills` como el XP.
-17. **Usar `user_languages.level`**, por ejemplo para desbloquear lecciones según el nivel. Hoy solo se guarda.
+14. **Racha en el servidor:** pasar `recordActivity` y la racha del reproductor de lecciones a una función de la base de datos, y después proteger `streak_count`, `longest_streak`, `last_activity_date` y `skills` como el XP.
+15. **Usar `user_languages.level`**, por ejemplo para desbloquear lecciones según el nivel. Hoy solo se guarda.
 
 **Opcional**
 - Frases (`/learn/[slug]/phrases`): la tarjeta azul «Practice / Flip & review» y el botón «Start practice» al pie de la lista abren el modo tarjetas (sin guardar progreso), no la práctica seguida de la tarjeta naranja del hero. Propuesta: renombrar la azul a «Tarjetas» y quitar el botón del pie.
