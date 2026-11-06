@@ -12,8 +12,7 @@ import { stripArticle } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
-import { addRewards } from '@/lib/rewards'
-import { getAuthUser } from '@/lib/supabase/auth'
+import { awardMinigame } from '@/lib/rewards'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type WordPair = { word: string; translation: string }
@@ -40,17 +39,9 @@ function scrambleChars(word: string): Tile[] {
   return shuffled.map((char, i) => ({ id: i, char }))
 }
 
-async function saveGameResult(correct: number, total: number) {
-  const supabase = createClient()
-  const {
-    data: { user },
-  } = await getAuthUser(supabase)
-  if (!user) return { xp: 5, gems: 3 }
-  const pct = total > 0 ? Math.round((correct / total) * 100) : 0
-  const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5
-  const gems = 3
-  const awarded = await addRewards(supabase, user.id, { xp, gems, reason: 'minigame' })
-  return awarded
+/** Rewards for the round: nothing without a right answer or a session (see awardMinigame) */
+function saveGameResult(correct: number, total: number) {
+  return awardMinigame(createClient(), { correct, total })
 }
 
 const TOTAL_ROUNDS = 10
@@ -277,9 +268,9 @@ export default function WordScramblePage() {
               ))}
             </div>
 
-            {rewards && (
+            {rewards && rewards.gems > 0 && (
               <div className="flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 text-amber-400 px-5 py-2.5 rounded-xl font-bold">
-                +{rewards.gems} 💎 Gems earned
+                +{rewards.gems} 💎 {t('stat_gems')}
               </div>
             )}
 

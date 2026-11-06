@@ -11,8 +11,7 @@ import { usePracticeContent } from '@/lib/practice-source'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
-import { addRewards } from '@/lib/rewards'
-import { getAuthUser } from '@/lib/supabase/auth'
+import { awardMinigame, type Rewards } from '@/lib/rewards'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Phase = 'ready' | 'playing' | 'finished'
@@ -52,15 +51,9 @@ function buildCards(pairs: VocabItem[]): Card[] {
   return shuffle(cards)
 }
 
-async function saveGameResult(correct: number, total: number) {
-  const supabase = createClient()
-  const { data: { user } } = await getAuthUser(supabase)
-  if (!user) return { xp: 5, gems: 3 }
-  const pct = total > 0 ? Math.round((correct / total) * 100) : 0
-  const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5
-  const gems = 3
-  const awarded = await addRewards(supabase, user.id, { xp, gems, reason: 'minigame' })
-  return awarded
+/** Rewards for the round: nothing without a right answer or a session (see awardMinigame) */
+function saveGameResult(correct: number, total: number) {
+  return awardMinigame(createClient(), { correct, total })
 }
 
 const PAIRS = 8
@@ -80,7 +73,8 @@ export default function MatchingPage() {
   const [mismatches, setMismatches] = useState(0)
   const [lockBoard, setLockBoard] = useState(false)
   const [elapsed, setElapsed] = useState(0)
-  const [reward, setReward] = useState({ xp: 5, gems: 3 })
+  // Null until the round is saved: never show a reward that wasn't credited
+  const [reward, setReward] = useState<Rewards | null>(null)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const finalTimeRef = useRef(0)
 
@@ -138,6 +132,7 @@ export default function MatchingPage() {
         if (newMatchedCount === PAIRS) {
           stopTimer()
           finalTimeRef.current = elapsed
+          setReward(null)
           saveGameResult(PAIRS, PAIRS).then(r => setReward(r))
           setPhase('finished')
         }
@@ -255,11 +250,11 @@ export default function MatchingPage() {
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_misses')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
-                <p className="text-2xl font-bold text-white">+{reward.xp}</p>
+                <p className="text-2xl font-bold text-white">{reward ? `+${reward.xp}` : '…'}</p>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_xp')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
-                <p className="text-2xl font-bold text-white">+{reward.gems} 💎</p>
+                <p className="text-2xl font-bold text-white">{reward ? `+${reward.gems} 💎` : '…'}</p>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_gems')}</p>
               </div>
             </div>

@@ -10,12 +10,11 @@ import { AppTopbar } from '@/components/layout/app-topbar'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { speak } from '@/lib/languages'
 import { createClient } from '@/lib/supabase/client'
-import { addRewards } from '@/lib/rewards'
+import { MINIGAME_GEMS, awardMinigame, minigameXp } from '@/lib/rewards'
 import { loadVerbForms, loadVerbIndex, speakableForm, verbTranslation, type VerbForms, type VerbIndex } from '@/lib/verbs'
 import { buildRound, checkTyped, quizTenses, shuffle, type QuizMode, type QuizQuestion } from '@/lib/verb-quiz'
 import { cn } from '@/lib/utils'
 import { ScoreRing, Stat } from '@/components/practice/score'
-import { getAuthUser } from '@/lib/supabase/auth'
 
 type Pool = 'essentials' | 'all' | 'verb'
 type Phase = 'setup' | 'playing' | 'finished'
@@ -23,8 +22,7 @@ type Status = 'idle' | 'correct' | 'almost' | 'wrong'
 
 const ROUND = 10
 /** Same as the other mini-games: XP by accuracy, +3 gems per full round */
-const GEMS = 3
-const xpFor = (pct: number) => (pct >= 80 ? 15 : pct >= 60 ? 10 : 5)
+const xpFor = minigameXp
 
 const ACCENTS: Record<string, string[]> = {
   fr: ['é', 'è', 'ê', 'à', 'â', 'ç', 'ù', 'û', 'î', 'ï', 'ô', 'ë', 'œ'],
@@ -140,11 +138,7 @@ export function VerbPractice() {
     setPhase('finished')
     if (review) return
     const correct = Object.values(results).filter(Boolean).length
-    const pct = Math.round((correct / Math.max(Object.keys(results).length, 1)) * 100)
-    const supabase = createClient()
-    const { data: { user } } = await getAuthUser(supabase)
-    if (!user) return
-    setRewards(await addRewards(supabase, user.id, { xp: xpFor(pct), gems: GEMS, reason: 'minigame', ref: 'verbs' }))
+    setRewards(await awardMinigame(createClient(), { correct, total: Object.keys(results).length, ref: 'verbs' }))
   }, [])
 
   const next = useCallback(() => {
@@ -266,7 +260,7 @@ export function VerbPractice() {
                 <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{t('subtitle', { n: ROUND })}</p>
                 <div className="mt-3 flex flex-wrap gap-1.5 text-[11px] font-bold">
                   <span className="flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-primary"><Zap size={11} /> {t('xp_up_to', { n: xpFor(100) })}</span>
-                  <span className="flex items-center gap-1 rounded-full bg-sky-500/10 px-2 py-0.5 text-sky-600 dark:text-sky-400"><Gem size={11} /> +{GEMS}</span>
+                  <span className="flex items-center gap-1 rounded-full bg-sky-500/10 px-2 py-0.5 text-sky-600 dark:text-sky-400"><Gem size={11} /> +{MINIGAME_GEMS}</span>
                 </div>
               </div>
             </div>

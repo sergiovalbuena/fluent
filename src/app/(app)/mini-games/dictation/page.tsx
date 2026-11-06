@@ -12,8 +12,7 @@ import { speak as speakText } from '@/lib/languages'
 import { AppTopbar } from '@/components/layout/app-topbar'
 import { SourcePicker } from '@/components/mini-games/source-picker'
 import { createClient } from '@/lib/supabase/client'
-import { addRewards } from '@/lib/rewards'
-import { getAuthUser } from '@/lib/supabase/auth'
+import { awardMinigame, type Rewards } from '@/lib/rewards'
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Phase = 'ready' | 'playing' | 'finished'
@@ -47,15 +46,9 @@ function isCorrectAnswer(typed: string, expected: string): boolean {
   return t === e || normalizeAccents(t) === normalizeAccents(e)
 }
 
-async function saveGameResult(correct: number, total: number) {
-  const supabase = createClient()
-  const { data: { user } } = await getAuthUser(supabase)
-  if (!user) return { xp: 5, gems: 3 }
-  const pct = total > 0 ? Math.round((correct / total) * 100) : 0
-  const xp = pct >= 80 ? 15 : pct >= 60 ? 10 : 5
-  const gems = 3
-  const awarded = await addRewards(supabase, user.id, { xp, gems, reason: 'minigame' })
-  return awarded
+/** Rewards for the round: nothing without a right answer or a session (see awardMinigame) */
+function saveGameResult(correct: number, total: number) {
+  return awardMinigame(createClient(), { correct, total })
 }
 
 const TOTAL_ROUNDS = 10
@@ -77,7 +70,8 @@ export default function DictationPage() {
   const [answerState, setAnswerState] = useState<AnswerState>('idle')
   const [score, setScore] = useState(0)
   const [isSpeaking, setIsSpeaking] = useState(false)
-  const [reward, setReward] = useState({ xp: 5, gems: 3 })
+  // Null until the round is saved: never show a reward that wasn't credited
+  const [reward, setReward] = useState<Rewards | null>(null)
   const speakingRef = useRef(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -126,12 +120,10 @@ export default function DictationPage() {
 
   async function nextRound() {
     if (roundIndex + 1 >= rounds.length) {
-      const r = await saveGameResult(score + (answerState === 'correct' ? 0 : 0), rounds.length)
-      // recalc with updated score
-      const finalScore = answerState === 'correct' ? score : score
-      const r2 = await saveGameResult(finalScore, rounds.length)
-      setReward(r2)
+      // score already includes this answer (submitAnswer ran in an earlier render)
+      setReward(null)
       setPhase('finished')
+      setReward(await saveGameResult(score, rounds.length))
     } else {
       setRoundIndex(i => i + 1)
     }
@@ -244,11 +236,11 @@ export default function DictationPage() {
 
             <div className="w-full grid grid-cols-2 gap-3">
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
-                <p className="text-2xl font-bold text-white">+{reward.xp}</p>
+                <p className="text-2xl font-bold text-white">{reward ? `+${reward.xp}` : '…'}</p>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_xp')}</p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/8 p-4 text-center">
-                <p className="text-2xl font-bold text-white">+{reward.gems} 💎</p>
+                <p className="text-2xl font-bold text-white">{reward ? `+${reward.gems} 💎` : '…'}</p>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/40 mt-1">{t('stat_gems')}</p>
               </div>
             </div>

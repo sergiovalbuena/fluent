@@ -10,10 +10,9 @@ import { SourcePicker } from '@/components/mini-games/source-picker'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { speak, stripArticle, wordAlternatives } from '@/lib/languages'
 import { usePracticeContent, type PracticeWord } from '@/lib/practice-source'
-import { addRewards } from '@/lib/rewards'
+import { MINIGAME_GEMS, awardMinigame, minigameXp } from '@/lib/rewards'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
-import { getAuthUser } from '@/lib/supabase/auth'
 
 // Vocabulary trainer: every word goes through four stages in one session —
 // meet it, recognise it, hear it, write it. A miss sends that step to the end
@@ -26,8 +25,7 @@ type Phase = 'setup' | 'playing' | 'finished'
 
 const SIZES = [6, 10, 15] as const
 const BATCH = 4
-const GEMS = 3
-const xpFor = (pct: number) => (pct >= 80 ? 15 : pct >= 60 ? 10 : 5)
+const xpFor = minigameXp
 
 const ACCENTS: Record<string, string[]> = {
   fr: ['é', 'è', 'ê', 'à', 'â', 'ç', 'ù', 'û', 'î', 'ï', 'ô', 'ë', 'œ'],
@@ -146,11 +144,7 @@ export function VocabTrainer() {
   const finish = useCallback(async (res: Record<number, boolean>) => {
     setPhase('finished')
     const values = Object.values(res)
-    const pct = values.length ? Math.round((values.filter(Boolean).length / values.length) * 100) : 0
-    const supabase = createClient()
-    const { data: { user } } = await getAuthUser(supabase)
-    if (!user) return
-    setRewards(await addRewards(supabase, user.id, { xp: xpFor(pct), gems: GEMS, reason: 'minigame', ref: 'vocabulary' }))
+    setRewards(await awardMinigame(createClient(), { correct: values.filter(Boolean).length, total: values.length, ref: 'vocabulary' }))
   }, [])
 
   const next = useCallback(() => {
@@ -230,7 +224,7 @@ export function VocabTrainer() {
               </ol>
               <div className="mt-4 flex flex-wrap gap-1.5 text-[11px] font-bold">
                 <span className="flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-primary"><Zap size={11} /> {t('xp_up_to', { n: xpFor(100) })}</span>
-                <span className="flex items-center gap-1 rounded-full bg-sky-500/10 px-2 py-0.5 text-sky-600 dark:text-sky-400"><Gem size={11} /> +{GEMS}</span>
+                <span className="flex items-center gap-1 rounded-full bg-sky-500/10 px-2 py-0.5 text-sky-600 dark:text-sky-400"><Gem size={11} /> +{MINIGAME_GEMS}</span>
               </div>
             </div>
           </section>

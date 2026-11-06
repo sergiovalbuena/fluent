@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { recordActivity } from '@/lib/activity'
+import { getAuthUser } from '@/lib/supabase/auth'
 
 // Gems are credited by the database (award_gems): it applies the 2× gems boost,
 // caps each award and the daily total, and records the transaction. XP is computed
@@ -59,6 +60,30 @@ export async function addRewards(
   }
   const credited = await awardGems(supabase, gems, reason, ref)
   return { xp: creditedXp, gems: credited }
+}
+
+export type Rewards = { xp: number; gems: number }
+
+export const NO_REWARDS: Rewards = { xp: 0, gems: 0 }
+
+/** Every mini-game pays the same: XP by share of right answers, plus gems */
+export const MINIGAME_GEMS = 3
+export const minigameXp = (pct: number) => (pct >= 80 ? 15 : pct >= 60 ? 10 : 5)
+
+/**
+ * Credits a finished mini-game round and returns what was actually credited.
+ * Nothing without at least one right answer, or without a session (never shows
+ * rewards that weren't saved).
+ */
+export async function awardMinigame(
+  supabase: SupabaseClient,
+  { correct, total, ref }: { correct: number; total: number; ref?: string },
+): Promise<Rewards> {
+  if (correct <= 0 || total <= 0) return NO_REWARDS
+  const { data: { user } } = await getAuthUser(supabase)
+  if (!user) return NO_REWARDS
+  const pct = Math.round((Math.min(correct, total) / total) * 100)
+  return addRewards(supabase, user.id, { xp: minigameXp(pct), gems: MINIGAME_GEMS, reason: 'minigame', ref })
 }
 
 export type ActiveBoosts = { xp: number | null; gems: number | null }   // expiry timestamps (ms)
