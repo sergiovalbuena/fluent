@@ -1,6 +1,7 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { use, useEffect, useMemo, useState } from 'react'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { createClient } from '@/lib/supabase/client'
@@ -58,8 +59,17 @@ const DAILY_GOALS = [
 
 type StepKey = 'native' | 'learn' | 'motivation' | 'destination' | 'level' | 'words' | 'result' | 'goal'
 
+/**
+ * full: the whole onboarding (new users and "Profile setup").
+ * course: only the course and its level ("Change the language I'm learning" in the profile).
+ */
+type Mode = 'full' | 'course'
+
 /** Destination only for travellers; the word check and its result only when not starting from scratch */
-function stepsFor(travel: boolean, placement: boolean): StepKey[] {
+function stepsFor(mode: Mode, travel: boolean, placement: boolean): StepKey[] {
+  if (mode === 'course') {
+    return ['learn', 'level', ...(placement ? ['words' as const, 'result' as const] : [])]
+  }
   return [
     'native', 'learn', 'motivation',
     ...(travel ? ['destination' as const] : []),
@@ -73,6 +83,38 @@ const STEP_EMOJI: Record<StepKey, string> = {
   native: '🌏', learn: '📚', motivation: '⚡', destination: '✈️', level: '📊', words: '🔤', result: '🏅', goal: '🎯',
 }
 
+// ── Saved answers ─────────────────────────────────────────────────────────────
+
+/** Answers in progress, kept in this browser so a closed tab resumes where it was */
+type Draft = {
+  stepIdx: number
+  nativeLanguage: string
+  learningLanguage: string
+  motivation: string
+  destination: string
+  selfLevel: SelfLevel | ''
+  knownWords: string[]
+  dailyGoal: number
+}
+
+const draftKey = (userId: string, mode: Mode) => `fluent:onboarding:${userId}:${mode}`
+
+function readDraft(key: string): Draft | null {
+  try {
+    const raw = localStorage.getItem(key)
+    return raw ? (JSON.parse(raw) as Draft) : null
+  } catch {
+    return null
+  }
+}
+
+/** Self-reported level that matches a saved CEFR level (to pre-select it when redoing the onboarding) */
+function selfLevelFor(level: string | null): SelfLevel | '' {
+  if (!level) return ''
+  if (level === 'A0') return 'zero'
+  return SELF_LEVELS.find(l => l.band === level[0])?.code ?? ''
+}
+
 // ── Animations ────────────────────────────────────────────────────────────────
 
 const slideVariants = {
@@ -83,7 +125,8 @@ const slideVariants = {
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
-export default function OnboardingPage() {
+export default function OnboardingPage({ searchParams }: { searchParams: Promise<{ change?: string }> }) {
+  const mode: Mode = use(searchParams).change === 'course' ? 'course' : 'full'
   const router = useRouter()
   const t = useTranslations('onboarding')
   const locale = useLocale()
@@ -98,11 +141,69 @@ export default function OnboardingPage() {
   const [knownWords, setKnownWords]         = useState<Set<string>>(new Set())
   const [dailyGoal, setDailyGoal]           = useState(10)
   const [saving, setSaving]                 = useState(false)
+  // Set once the saved draft or the current answers are loaded (see the effect below)
+  const [storageKey, setStorageKey]         = useState<string | null>(null)
 
   const isTravel = motivation === 'travel'
   const band = SELF_LEVELS.find(l => l.code === selfLevel)?.band ?? null
-  const steps = stepsFor(isTravel, band !== null)
-  const currentKey = steps[stepIdx]
+  const steps = stepsFor(mode, isTravel, band !== null)
+  // A resumed draft can point past the end if its answers now give fewer steps
+  const step = Math.min(stepIdx, steps.length - 1)
+  const currentKey = steps[step]
+
+  // Start from the draft left in this browser, else from the current answers
+  // (redoing the onboarding from the profile shows what was chosen before)
+  useEffect(() => {
+    let cancelled = false
+    async function load() {
+      const supabase = createClient()
+      const { data: { user } } = await getAuthUser(supabase)
+      if (!user || cancelled) return
+      const key = draftKey(user.id, mode)
+      const draft = readDraft(key)
+      if (draft) {
+        setNativeLanguage(draft.nativeLanguage)
+        setLearningLanguage(draft.learningLanguage)
+        setMotivation(draft.motivation)
+        setDestination(draft.destination)
+        setSelfLevel(draft.selfLevel)
+        setKnownWords(new Set(draft.knownWords))
+        setDailyGoal(draft.dailyGoal)
+        setStepIdx(draft.stepIdx)
+      } else {
+        const [{ data: profile }, { data: course }] = await Promise.all([
+          supabase.from('user_profiles')
+            .select('native_language_code, motivation, daily_goal_minutes, travel_destination')
+            .eq('user_id', user.id).maybeSingle(),
+          supabase.from('user_languages')
+            .select('language_code, level')
+            .eq('user_id', user.id).eq('is_active', true).limit(1).maybeSingle(),
+        ])
+        if (cancelled) return
+        const p = profile as { native_language_code: string | null; motivation: string | null; daily_goal_minutes: number | null; travel_destination: string | null } | null
+        const c = course as { language_code: string; level: string | null } | null
+        if (p?.native_language_code) setNativeLanguage(p.native_language_code)
+        if (p?.motivation) setMotivation(p.motivation)
+        if (p?.daily_goal_minutes) setDailyGoal(p.daily_goal_minutes)
+        if (p?.travel_destination) setDestination(p.travel_destination)
+        if (c?.language_code) setLearningLanguage(c.language_code)
+        setSelfLevel(selfLevelFor(c?.level ?? null))
+      }
+      setStorageKey(key)
+    }
+    void load()
+    return () => { cancelled = true }
+  }, [mode])
+
+  // Keep the draft up to date (only after loading, so the empty first render never overwrites it)
+  useEffect(() => {
+    if (!storageKey) return
+    const draft: Draft = {
+      stepIdx, nativeLanguage, learningLanguage, motivation, destination, selfLevel,
+      knownWords: [...knownWords], dailyGoal,
+    }
+    try { localStorage.setItem(storageKey, JSON.stringify(draft)) } catch { /* private mode or full: just don't resume */ }
+  }, [storageKey, stepIdx, nativeLanguage, learningLanguage, motivation, destination, selfLevel, knownWords, dailyGoal])
 
   // Placement: words of the chosen band, in the language being learned
   const words = useMemo(() => (band ? placementWords(learningLanguage, band) : []), [band, learningLanguage])
@@ -138,12 +239,12 @@ export default function OnboardingPage() {
   function goNext() {
     if (currentKey === 'native') void applyNativeLanguage()
     setDirection(1)
-    setStepIdx(s => s + 1)
+    setStepIdx(step + 1)
   }
 
   function goBack() {
     setDirection(-1)
-    setStepIdx(s => s - 1)
+    setStepIdx(step - 1)
   }
 
   // When motivation changes, reset travel-specific fields
@@ -191,18 +292,21 @@ export default function OnboardingPage() {
     const { data: { user } } = await getAuthUser(supabase)
     if (!user) { router.push('/login'); return }
 
-    // Only the onboarding answers: XP, streak and name are left as they are
-    const { error: profileError } = await supabase.from('user_profiles').upsert({
-      user_id: user.id,
-      native_language_code: nativeLanguage,
-      app_language_code: UI_LOCALES.includes(nativeLanguage) ? nativeLanguage : 'en',
-      translation_language_code: TRANSLATION_LANGUAGES.includes(nativeLanguage) ? nativeLanguage : 'en',
-      motivation,
-      daily_goal_minutes: dailyGoal,
-      travel_destination: isTravel ? destination.trim() : null,
-    }, { onConflict: 'user_id' })
+    // Only the onboarding answers: XP, streak and name are left as they are.
+    // Changing the course alone leaves the profile answers untouched.
+    if (mode === 'full') {
+      const { error: profileError } = await supabase.from('user_profiles').upsert({
+        user_id: user.id,
+        native_language_code: nativeLanguage,
+        app_language_code: UI_LOCALES.includes(nativeLanguage) ? nativeLanguage : 'en',
+        translation_language_code: TRANSLATION_LANGUAGES.includes(nativeLanguage) ? nativeLanguage : 'en',
+        motivation,
+        daily_goal_minutes: dailyGoal,
+        travel_destination: isTravel ? destination.trim() : null,
+      }, { onConflict: 'user_id' })
 
-    if (profileError) { toast.error(t('save_error')); setSaving(false); return }
+      if (profileError) { toast.error(t('save_error')); setSaving(false); return }
+    }
 
     await supabase.from('user_languages').update({ is_active: false }).eq('user_id', user.id)
 
@@ -216,14 +320,18 @@ export default function OnboardingPage() {
 
     if (langError) { toast.error(t('save_error')); setSaving(false); return }
 
+    if (storageKey) localStorage.removeItem(storageKey)
     toast.success(t('done'))
     router.push('/learn')
     router.refresh()
   }
 
-  const isLast = stepIdx === steps.length - 1
+  const isLast = currentKey === steps[steps.length - 1]
   const destinations = DESTINATIONS[learningLanguage] ?? []
   const destinationNames = destinations.map(code => names.region.of(code) ?? code)
+
+  // Until the draft or the current answers are loaded: don't flash an empty form
+  if (!storageKey) return <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]" />
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
@@ -274,8 +382,8 @@ export default function OnboardingPage() {
             key={s}
             className={cn(
               'h-1.5 rounded-full transition-all duration-300',
-              i <= stepIdx ? 'bg-primary' : 'bg-slate-200 dark:bg-slate-700',
-              i === stepIdx ? 'w-8' : 'w-4'
+              i <= step ? 'bg-primary' : 'bg-slate-200 dark:bg-slate-700',
+              i === step ? 'w-8' : 'w-4'
             )}
           />
         ))}
@@ -588,7 +696,7 @@ export default function OnboardingPage() {
           </button>
         )}
 
-        {stepIdx > 0 && (
+        {step > 0 ? (
           <button
             onClick={goBack}
             className="w-full flex items-center justify-center gap-1.5 text-sm text-muted-foreground py-2"
@@ -596,6 +704,12 @@ export default function OnboardingPage() {
             <ArrowLeft size={14} />
             {t('back')}
           </button>
+        ) : mode === 'course' && (
+          // Only changing the course: a way back without changing anything
+          <Link href="/profile" className="w-full flex items-center justify-center gap-1.5 text-sm text-muted-foreground py-2">
+            <ArrowLeft size={14} />
+            {t('back')}
+          </Link>
         )}
       </div>
 

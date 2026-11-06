@@ -1,122 +1,184 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
+import { ArrowLeft, Mail } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Separator } from '@/components/ui/separator'
+import { GoogleButton, OrDivider, bold, useAuthError } from '@/components/auth/auth-parts'
 import { toast } from 'sonner'
 
+/** Seconds before the confirmation email can be sent again */
+const RESEND_COOLDOWN = 60
+
+// Without emailRedirectTo, Supabase sends users to the project's Site URL after confirming
+const confirmRedirect = () => `${window.location.origin}/auth/callback?next=/onboarding`
+
 export default function SignupPage() {
+  const t = useTranslations('auth')
+  const authError = useAuthError()
+  const router = useRouter()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
+  // Set once the confirmation email is on its way: the form gives way to "check your email"
+  const [sentTo, setSentTo] = useState<string | null>(null)
+  const [cooldown, setCooldown] = useState(0)
   const supabase = createClient()
+
+  useEffect(() => {
+    if (cooldown <= 0) return
+    const id = setTimeout(() => setCooldown(c => c - 1), 1000)
+    return () => clearTimeout(id)
+  }, [cooldown])
 
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: {
-        data: { display_name: name },
-        // Without this, Supabase sends users to the project's Site URL after confirming
-        emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding`,
-      }
+      options: { data: { display_name: name }, emailRedirectTo: confirmRedirect() },
+    })
+    setLoading(false)
+    if (error) {
+      toast.error(authError(error))
+      return
+    }
+    // Email confirmation turned off in Supabase: already signed in
+    if (data.session) {
+      router.push('/onboarding')
+      return
+    }
+    // An existing, confirmed email gets no error and no email (no identities): say so
+    if (data.user && data.user.identities?.length === 0) {
+      toast.error(t('err_user_exists'))
+      return
+    }
+    setSentTo(email)
+    setCooldown(RESEND_COOLDOWN)
+  }
+
+  async function handleResend() {
+    if (!sentTo || cooldown > 0) return
+    const { error } = await supabase.auth.resend({
+      type: 'signup',
+      email: sentTo,
+      options: { emailRedirectTo: confirmRedirect() },
     })
     if (error) {
-      toast.error(error.message)
-    } else {
-      toast.success('Check your email to confirm your account!')
+      toast.error(authError(error))
+      return
     }
-    setLoading(false)
+    toast.success(t('resent'))
+    setCooldown(RESEND_COOLDOWN)
   }
 
   async function handleGoogleLogin() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/auth/callback` }
+      options: { redirectTo: `${window.location.origin}/auth/callback` },
     })
+  }
+
+  if (sentTo) {
+    return (
+      <Card className="w-full max-w-sm border-primary/10">
+        <CardHeader className="text-center">
+          <div className="mx-auto mb-2 size-14 rounded-full bg-primary/10 flex items-center justify-center">
+            <Mail size={26} className="text-primary" />
+          </div>
+          <CardTitle className="text-2xl font-bold">{t('check_title')}</CardTitle>
+          <CardDescription className="leading-relaxed">
+            {t.rich('check_body', { email: sentTo, b: bold })}
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="rounded-xl bg-primary/5 border border-primary/10 p-3 text-xs text-muted-foreground leading-relaxed">
+            💡 {t('check_spam')}
+          </p>
+          <Button
+            variant="outline"
+            className="w-full border-primary/20 tabular-nums"
+            onClick={handleResend}
+            disabled={cooldown > 0}
+          >
+            {cooldown > 0 ? t('resend_in', { s: cooldown }) : t('resend')}
+          </Button>
+          <button
+            type="button"
+            onClick={() => { setSentTo(null); setCooldown(0) }}
+            className="flex w-full items-center justify-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            <ArrowLeft size={14} /> {t('wrong_email')}
+          </button>
+        </CardContent>
+      </Card>
+    )
   }
 
   return (
     <Card className="w-full max-w-sm border-primary/10">
       <CardHeader className="text-center">
         <div className="text-4xl mb-2">🌍</div>
-        <CardTitle className="text-2xl font-bold">Start Learning</CardTitle>
-        <CardDescription>Create your Fluent account</CardDescription>
+        <CardTitle className="text-2xl font-bold">{t('signup_title')}</CardTitle>
+        <CardDescription>{t('signup_subtitle')}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <Button
-          variant="outline"
-          className="w-full border-primary/20 hover:border-primary/40"
-          onClick={handleGoogleLogin}
-        >
-          <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
-            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-          </svg>
-          Continue with Google
-        </Button>
-        <div className="flex items-center gap-2">
-          <Separator className="flex-1" />
-          <span className="text-xs text-muted-foreground">or</span>
-          <Separator className="flex-1" />
-        </div>
+        <GoogleButton onClick={handleGoogleLogin} />
+        <OrDivider />
         <form onSubmit={handleSignup} className="space-y-3">
           <div className="space-y-1">
-            <Label htmlFor="name">Name</Label>
+            <Label htmlFor="name">{t('name')}</Label>
             <Input
               id="name"
               type="text"
+              autoComplete="given-name"
               value={name}
               onChange={e => setName(e.target.value)}
-              placeholder="Your name"
+              placeholder={t('name_placeholder')}
               required
             />
           </div>
           <div className="space-y-1">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">{t('email')}</Label>
             <Input
               id="email"
               type="email"
+              autoComplete="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
-              placeholder="you@example.com"
+              placeholder={t('email_placeholder')}
               required
             />
           </div>
           <div className="space-y-1">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">{t('password')}</Label>
             <Input
               id="password"
               type="password"
+              autoComplete="new-password"
               value={password}
               onChange={e => setPassword(e.target.value)}
-              placeholder="••••••••"
+              placeholder={t('password_hint')}
               minLength={6}
               required
             />
           </div>
-          <Button
-            type="submit"
-            className="w-full bg-primary hover:bg-primary/90 text-white"
-            disabled={loading}
-          >
-            {loading ? 'Creating account...' : 'Create Account'}
+          <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white" disabled={loading}>
+            {loading ? t('signup_loading') : t('signup_submit')}
           </Button>
         </form>
         <p className="text-center text-sm text-muted-foreground">
-          Already have an account?{' '}
+          {t('have_account')}{' '}
           <Link href="/login" className="text-primary font-semibold hover:underline">
-            Sign in
+            {t('login_link')}
           </Link>
         </p>
       </CardContent>

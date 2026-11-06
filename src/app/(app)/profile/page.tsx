@@ -299,6 +299,20 @@ export default function ProfilePage() {
             </div>
           </div>
 
+          {/* ── Change course: only the language and its level ── */}
+          <Link href="/onboarding?change=course">
+            <div className="flex items-center gap-3 bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/20 p-4 hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group">
+              <div className="size-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                <Languages size={18} className="text-primary" />
+              </div>
+              <div className="flex-1">
+                <p className="font-bold text-sm">{t('change_course')}</p>
+                <p className="text-xs text-muted-foreground">{t('change_course_desc')}</p>
+              </div>
+              <ChevronRight size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
+            </div>
+          </Link>
+
           {/* ── Profile Setup ── */}
           <Link href="/onboarding">
             <div className="flex items-center gap-3 bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/20 p-4 hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group">

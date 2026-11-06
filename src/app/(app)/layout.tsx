@@ -8,21 +8,8 @@ import { TopbarProvider } from '@/components/providers/topbar-provider'
 import { LanguageProvider } from '@/components/providers/language-provider'
 import { getLanguageSettings } from '@/lib/active-language'
 import { courseLessonStates } from '@/lib/course-path-data'
-import type { AbstractIntlMessages } from 'next-intl'
+import { getMessages } from '@/lib/messages'
 import { getAuthUser } from '@/lib/supabase/auth'
-
-const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
-
-async function getMessages(locale: string): Promise<AbstractIntlMessages> {
-  const safeLocale = SUPPORTED_LOCALES.includes(locale) ? locale : 'en'
-  try {
-    const msgs = (await import(`../../../messages/${safeLocale}.json`)) as { default: AbstractIntlMessages }
-    return msgs.default
-  } catch {
-    const msgs = (await import('../../../messages/en.json')) as { default: AbstractIntlMessages }
-    return msgs.default
-  }
-}
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
