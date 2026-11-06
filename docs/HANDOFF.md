@@ -57,6 +57,10 @@
   - Funciones `award_gems` (topes de 10 por llamada y 150 al día) y `buy_item`.
   - Trigger `protect_gem_balance`: el cliente no puede escribir `total_gems`.
   - Precios: 2× XP 20, 2× gemas 25, protector de racha 30, desbloquear lección 40.
+- XP (en el servidor, 2026-11-05):
+  - Función `add_xp(p_xp, p_lessons)`: suma `total_xp` y `xp_earned` / `lessons_completed` del día (UTC) en una sola sentencia. Tope 200 XP por llamada.
+  - Desde el cliente usar siempre `addXp` / `addRewards` de `src/lib/rewards.ts`. La racha sigue en el cliente (`recordActivity`).
+  - Triggers `protect_xp` y `protect_activity_xp`: el cliente no puede escribir `total_xp`, `xp_earned` ni `lessons_completed`. Si lo intenta, se ignora en silencio.
   - Página `/gems` rediseñada: saldo, cómo ganar, tienda, historial y consejo del día.
 - Guardados → **Enlaces de estudio**:
   - Tabla `study_links`.
