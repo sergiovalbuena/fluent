@@ -1955,17 +1955,40 @@ export default function LessonPage() {
     load()
   }, [slug, activity, activeLanguage, translationLang])
 
-  // Vocabulary counts as completed once every word in the lesson is mastered
-  // (opening the page alone must not award progress)
-  const vocabSavedRef = useRef(false)
-  const vocabWordCount = activity === 'vocabulary' ? (lesson?.content.words?.length ?? 0) : 0
+  // Vocabulary, phrases and Q&A count as completed once every item is mastered (the
+  // practice from the hero, or one by one). Opening the page alone must not award
+  // progress, and an activity already completed is not saved again (that would add
+  // an attempt and repeat gems on every visit).
+  const masterySavedRef = useRef(false)
+  const masteryTotal =
+    activity === 'vocabulary' ? (lesson?.content.words?.length ?? 0)
+    : activity === 'phrases' ? (lesson?.content.phrases?.length ?? 0)
+    : activity === 'qa' ? (lesson?.content.questions?.length ?? 0)
+    : 0
+  const masteryDone =
+    activity === 'vocabulary' ? masteredCount
+    : activity === 'phrases' ? masteredPhraseCount
+    : activity === 'qa' ? masteredQACount
+    : 0
   useEffect(() => {
-    if (!lessonId || vocabSavedRef.current) return
-    if (vocabWordCount === 0 || masteredCount < vocabWordCount) return
-    vocabSavedRef.current = true
-    saveProgress(100)
+    if (!lessonId || masterySavedRef.current) return
+    if (masteryTotal === 0 || masteryDone < masteryTotal) return
+    masterySavedRef.current = true
+    void (async () => {
+      const supabase = createClient()
+      const { data: { user } } = await getAuthUser(supabase)
+      if (!user) return
+      const { data: existing } = await supabase
+        .from('user_progress')
+        .select('activities_completed')
+        .eq('user_id', user.id)
+        .eq('lesson_id', lessonId)
+        .maybeSingle()
+      const done = (existing?.activities_completed ?? []) as string[]
+      if (!done.includes(activity)) await saveProgress(100)
+    })()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lessonId, vocabWordCount, masteredCount])
+  }, [lessonId, masteryTotal, masteryDone])
 
   // ── DB helpers ────────────────────────────────────────────────────────────
 
