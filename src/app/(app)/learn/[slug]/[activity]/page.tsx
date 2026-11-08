@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import { useParams, useRouter } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
@@ -434,7 +435,9 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
 
   const progress = typed.length / target.length
 
-  return (
+  // In a portal on <body>: the lists that open this modal sit inside animated cards, and a
+  // transformed ancestor (e.g. the tap scale) would make `fixed` relative to the card and clip it
+  return createPortal(
       <motion.div
         key="challenge-overlay"
         initial={{ opacity: 0 }}
@@ -613,7 +616,7 @@ function WordChallengeModal({ word, translation, promptLabel, onClose, onMastere
           </AnimatePresence>
         </motion.div>
       </motion.div>
-  )
+    , document.body)
 }
 
 // ─── Story Challenge Modal ────────────────────────────────────────────────────
@@ -2517,7 +2520,7 @@ export default function LessonPage() {
               />
 
               {/* Questions list */}
-              <Block className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+              <Block whileTap={{}} className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
                 <QAQuestionList
                   questions={questions}
                   onStartQuiz={() => { setQIndex(0); setSelected(null); setChecked(false); setCorrectCount(0); setQaDone(false); setQaMode('quiz') }}
