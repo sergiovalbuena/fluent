@@ -125,7 +125,7 @@ export default async function LearnPage() {
     return { id: m.id, slug: m.slug, title: m.title, subtitle: lessonDescription(languageCode, m.slug, uiLocale, m.description) ?? undefined, icon: m.icon, totalLessons, lessonsCompleted, stars, hasCrown, gemsEarned, progress }
   })
 
-  const states = lessonStates(modulesBase, unlockedIds)
+  const states = lessonStates(modulesBase, unlockedIds, user?.id ?? null)
   const modules: LearnModule[] = modulesBase.map((m, i) => ({ ...m, state: states[i] }))
 
   const lang = LANGUAGE_NAMES[languageCode] ?? { name: languageCode.toUpperCase(), flag: '🌐' }

@@ -21,6 +21,6 @@ export const courseLessonStates = cache(async (userId: string, languageCode: str
     const totalLessons = m.lessons?.length ?? 0
     return { id: m.id, slug: m.slug, totalLessons, lessonsCompleted: Math.min(done.get(m.id) ?? 0, totalLessons) }
   })
-  const states = lessonStates(rows, new Set(((unlocked ?? []) as { module_id: string }[]).map(u => u.module_id)))
+  const states = lessonStates(rows, new Set(((unlocked ?? []) as { module_id: string }[]).map(u => u.module_id)), userId)
   return new Map(rows.map((r, i) => [r.slug, states[i]]))
 })

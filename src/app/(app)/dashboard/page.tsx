@@ -83,7 +83,7 @@ export default async function DashboardPage() {
     return { id: m.id, slug: m.slug, title: m.title, icon: m.icon, totalLessons, lessonsCompleted: Math.min(done.get(m.id) ?? 0, totalLessons) }
   })
   // Same states as the map in /learn
-  const states = lessonStates(base, new Set(((unlocked.data ?? []) as { module_id: string }[]).map(u => u.module_id)))
+  const states = lessonStates(base, new Set(((unlocked.data ?? []) as { module_id: string }[]).map(u => u.module_id)), user.id)
   const modules = base.map((m, i) => ({
     slug: m.slug,
     title: m.title,
