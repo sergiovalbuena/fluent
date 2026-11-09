@@ -160,7 +160,7 @@
     "ov_count_words": "{count} palabras",
     "ov_count_phrases": "{count} frases",
     "ov_count_questions": "{count} preguntas",
-    "ov_count_sentences": "{count} frases",
+    "ov_count_sentences": "{count} oraciones",
     "ov_all_done": "¡Todo listo!",
     "ov_sentence_placeholder": "Intenta usar una de las palabras clave…",
     "listen_all": "Escuchar todo",
@@ -181,7 +181,9 @@
     "done": "¡Listo!",
     "show_translation": "Ver traducción",
     "hide_translation": "Ocultar traducción",
-    "listen": "Escuchar"
+    "listen": "Escuchar",
+    "practice_sentences": "{count} oraciones seguidas",
+    "sentence_question": "Pregunta"
   },
   "gems": {
     "title": "Gemas",

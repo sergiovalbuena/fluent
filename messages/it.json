@@ -181,7 +181,9 @@
     "done": "Fatto!",
     "show_translation": "Mostra traduzione",
     "hide_translation": "Nascondi traduzione",
-    "listen": "Ascolta"
+    "listen": "Ascolta",
+    "practice_sentences": "{count} frasi di fila",
+    "sentence_question": "Domanda"
   },
   "gems": {
     "title": "Gemme",

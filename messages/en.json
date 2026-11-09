@@ -181,7 +181,9 @@
     "done": "Done!",
     "show_translation": "Show translation",
     "hide_translation": "Hide translation",
-    "listen": "Listen"
+    "listen": "Listen",
+    "practice_sentences": "{count} sentences in a row",
+    "sentence_question": "Question"
   },
   "gems": {
     "title": "Gems",

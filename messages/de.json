@@ -181,7 +181,9 @@
     "done": "Fertig!",
     "show_translation": "Übersetzung zeigen",
     "hide_translation": "Übersetzung ausblenden",
-    "listen": "Anhören"
+    "listen": "Anhören",
+    "practice_sentences": "{count} Sätze am Stück",
+    "sentence_question": "Frage"
   },
   "gems": {
     "title": "Edelsteine",

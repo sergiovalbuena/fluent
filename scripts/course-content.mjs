@@ -19,9 +19,9 @@ export function readLesson(path) {
 export function courseBuilder(lang) {
   // Activity titles shown in the lesson, in the course language
   const LESSON_TITLES = {
-    fr: { vocabulary: 'Vocabulaire', phrases: 'Phrases', qa: 'Questions', arrange: 'Construis des phrases', translate: 'Traduis en français' },
-    en: { vocabulary: 'Vocabulary', phrases: 'Phrases', qa: 'Questions', arrange: 'Build sentences', translate: 'Translate into English' },
-    es: { vocabulary: 'Vocabulario', phrases: 'Frases', qa: 'Preguntas', arrange: 'Construye frases', translate: 'Traduce al español' },
+    fr: { vocabulary: 'Vocabulaire', phrases: 'Phrases', qa: 'Questions', sentences: 'Phrases complètes', arrange: 'Construis des phrases', translate: 'Traduis en français' },
+    en: { vocabulary: 'Vocabulary', phrases: 'Phrases', qa: 'Questions', sentences: 'Sentences', arrange: 'Build sentences', translate: 'Translate into English' },
+    es: { vocabulary: 'Vocabulario', phrases: 'Frases', qa: 'Preguntas', sentences: 'Oraciones', arrange: 'Construye frases', translate: 'Traduce al español' },
   }
   const titles = LESSON_TITLES[lang]
   if (!titles) throw new Error(`No lesson titles for "${lang}" — add them to LESSON_TITLES`)
@@ -84,9 +84,17 @@ export function courseBuilder(lang) {
         content: { phrases: d.phrases.map(p => ({ phrase: p.phrase, ...tr(p) })) },
       },
       {
+        // Sentences replace the Q&A (same lesson row, type 'qa'). While the course is being
+        // converted, a converted lesson keeps its old questions too: the published app reads
+        // `questions`, the new one reads `items` when present.
         type: 'qa',
         title: titles.qa,
-        content: { questions: d.qa.map((q, i) => questionContent(q, i, d.lesson)) },
+        content: {
+          ...(d.qa && { questions: d.qa.map((q, i) => questionContent(q, i, d.lesson)) }),
+          ...(d.sentences && {
+            items: d.sentences.map((x, i) => ({ id: String(i + 1), sentence: x.sentence, kind: x.kind, ...tr(x) })),
+          }),
+        },
       },
       {
         type: 'story',

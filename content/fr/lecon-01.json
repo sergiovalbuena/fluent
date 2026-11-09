@@ -355,6 +355,68 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Comment allez-vous ce matin, Madame Leroy ?",
+      "kind": "question",
+      "en": "How are you this morning, Mrs. Leroy?",
+      "es": "¿Cómo está usted esta mañana, señora Leroy?"
+    },
+    {
+      "sentence": "Salut Hugo, quoi de neuf depuis la semaine dernière ?",
+      "kind": "question",
+      "en": "Hi Hugo, what's new since last week?",
+      "es": "Hola, Hugo, ¿qué hay de nuevo desde la semana pasada?"
+    },
+    {
+      "sentence": "Comment se passent tes cours de français à Bordeaux ?",
+      "kind": "question",
+      "en": "How are your French classes going in Bordeaux?",
+      "es": "¿Cómo van tus clases de francés en Burdeos?"
+    },
+    {
+      "sentence": "Quand pars-tu, et à quelle heure est-ce qu'on se revoit ?",
+      "kind": "question",
+      "en": "When are you leaving, and what time will we see each other again?",
+      "es": "¿Cuándo te vas y a qué hora nos volvemos a ver?"
+    },
+    {
+      "sentence": "Est-ce que tu peux dire bonjour à ta mère de ma part ?",
+      "kind": "question",
+      "en": "Can you say hello to your mother for me?",
+      "es": "¿Puedes saludar a tu madre de mi parte?"
+    },
+    {
+      "sentence": "Bonsoir à tous, je suis enchantée de faire votre connaissance.",
+      "kind": "statement",
+      "en": "Good evening, everyone, I'm delighted to meet you.",
+      "es": "Buenas noches a todos, encantada de conocerlos."
+    },
+    {
+      "sentence": "J'ai peur que le train soit en retard ce soir.",
+      "kind": "statement",
+      "en": "I'm afraid the train will be late tonight.",
+      "es": "Me temo que el tren llegue tarde esta noche."
+    },
+    {
+      "sentence": "Nous attendons que le professeur arrive pour commencer le cours.",
+      "kind": "statement",
+      "en": "We're waiting for the teacher to arrive to start the class.",
+      "es": "Esperamos a que llegue el profesor para empezar la clase."
+    },
+    {
+      "sentence": "Je dois partir maintenant, alors à la semaine prochaine !",
+      "kind": "statement",
+      "en": "I have to go now, so see you next week!",
+      "es": "Tengo que irme ya, así que ¡hasta la semana que viene!"
+    },
+    {
+      "sentence": "Bonne journée, et à tout à l'heure devant la librairie !",
+      "kind": "statement",
+      "en": "Have a nice day, and see you in a bit in front of the bookstore!",
+      "es": "¡Que tengas un buen día, y hasta dentro de un rato delante de la librería!"
+    }
+  ],
   "story": {
     "title": "À l'arrêt de bus",
     "text": "Lucía est mexicaine. Cet automne, elle étudie le français à Bordeaux. Ce matin, elle attend le bus quand un garçon s'approche. « Salut ! Ça va ? Je m'appelle Hugo. » « Bonjour Hugo, enchantée. Moi, c'est Lucía. J'attends que le bus arrive pour aller à l'école. » « Tu apprends le français ? Comment ça se passe ? » « Pour l'instant, bien. Et toi, quoi de neuf ? » « Pas grand-chose. Je travaille dans une librairie près d'ici. Mais j'ai peur que la journée soit longue : je n'ai pas dormi cette nuit ! » Le bus arrive. « Courage, et bonne journée ! » « Merci, toi aussi. À la prochaine ! »",

@@ -22,7 +22,9 @@ type LessonFile = {
   title: Translated
   vocabulary: ({ word: string } & Translated)[]
   phrases: ({ phrase: string } & Translated)[]
-  qa: unknown[]
+  /** Old Q&A, replaced lesson by lesson by `sentences` */
+  qa?: unknown[]
+  sentences?: unknown[]
   story: { title: string; text: string }
 }
 
@@ -69,7 +71,8 @@ export async function getCourseSummary(code: CourseCode): Promise<CourseSummary>
     lessons: lessons.length,
     words: lessons.reduce((n, l) => n + l.vocabulary.length, 0),
     phrases: lessons.reduce((n, l) => n + l.phrases.length, 0),
-    questions: lessons.reduce((n, l) => n + l.qa.length, 0),
+    // Q&A items: sentences in converted lessons, the old questions elsewhere
+    questions: lessons.reduce((n, l) => n + (l.sentences ?? l.qa ?? []).length, 0),
     grammarModules: grammar?.modules.length ?? 0,
     verbs: verbs?.verbs.length ?? 0,
   }

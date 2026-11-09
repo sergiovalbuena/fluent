@@ -70,7 +70,11 @@ export default async function LessonPage({ params }: PageProps) {
     .map(i => ({ ...i, translation: pickTranslation(i, translationLang) }))
   const phraseItems: PhraseItem[]  = (phrasesContent?.items ?? phrasesContent?.phrases ?? [])
     .map(i => ({ ...i, translation: pickTranslation(i, translationLang) }))
-  const qaItems: QAItem[]          = ((qaEx?.content as { questions?: RawQuestion[] })?.questions ?? [])
+  // Converted lessons: sentences (in `items`) replace the questions of the Q&A activity
+  const qaContent = qaEx?.content as { questions?: RawQuestion[]; items?: { sentence: string }[] } | undefined
+  const sentenceItems: string[]    = (qaContent?.items ?? []).map(i => i.sentence)
+  const qaIsSentences              = sentenceItems.length > 0
+  const qaItems: QAItem[]          = qaIsSentences ? [] : (qaContent?.questions ?? [])
     .map(q => localizeQuestion(q, translationLang))
   const storyContent               = (storyEx?.content as { text?: string }) ?? {}
   // Vocabulary lessons of generated courses carry the lesson's grammar and tips,
@@ -111,7 +115,9 @@ export default async function LessonPage({ params }: PageProps) {
       const mastered = new Set((masteryResult.data as { word: string }[]).map(r => r.word))
       masteredWords = vocabItems.filter(i => mastered.has(i.word)).length
       masteredPhrases = phraseItems.filter(p => mastered.has(`phrase:${p.phrase}`)).length
-      masteredQA = qaItems.filter(q => mastered.has(`qa:${q.question}`)).length
+      masteredQA = qaIsSentences
+        ? sentenceItems.filter(x => mastered.has(`qa:${x}`)).length
+        : qaItems.filter(q => mastered.has(`qa:${q.question}`)).length
     }
   }
 
@@ -144,6 +150,7 @@ export default async function LessonPage({ params }: PageProps) {
     vocabItems,
     phraseItems,
     qaItems,
+    sentenceCount: sentenceItems.length,
     storyText: storyContent.text,
     grammarItems,
     tips,

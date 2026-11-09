@@ -423,6 +423,68 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Est-ce que Nathan est plus grand que son frère Adam ?",
+      "kind": "question",
+      "en": "Is Nathan taller than his brother Adam?",
+      "es": "¿Nathan es más alto que su hermano Adam?"
+    },
+    {
+      "sentence": "À qui est le blouson violet sur la chaise ?",
+      "kind": "question",
+      "en": "Whose is the purple jacket on the chair?",
+      "es": "¿De quién es la chaqueta morada que está en la silla?"
+    },
+    {
+      "sentence": "Où est Théo en ce moment, à la fac ou à la maison ?",
+      "kind": "question",
+      "en": "Where is Théo right now, at university or at home?",
+      "es": "¿Dónde está Théo ahora mismo, en la universidad o en casa?"
+    },
+    {
+      "sentence": "Comment sont tes colocataires, sympas ou un peu paresseux ?",
+      "kind": "question",
+      "en": "What are your roommates like, nice or a bit lazy?",
+      "es": "¿Cómo son tus compañeros de piso, simpáticos o un poco perezosos?"
+    },
+    {
+      "sentence": "De quelle couleur sont les yeux de ta mère, bleus ou verts ?",
+      "kind": "question",
+      "en": "What color are your mother's eyes, blue or green?",
+      "es": "¿De qué color son los ojos de tu madre, azules o verdes?"
+    },
+    {
+      "sentence": "Ma meilleure amie est rousse et elle a les yeux verts.",
+      "kind": "statement",
+      "en": "My best friend has red hair and green eyes.",
+      "es": "Mi mejor amiga es pelirroja y tiene los ojos verdes."
+    },
+    {
+      "sentence": "Karim porte toujours des chaussettes orange et une chemise blanche.",
+      "kind": "statement",
+      "en": "Karim always wears orange socks and a white shirt.",
+      "es": "Karim siempre lleva calcetines naranjas y una camisa blanca."
+    },
+    {
+      "sentence": "Cécile est plus petite que Victoire, mais elle est aussi drôle qu'elle.",
+      "kind": "statement",
+      "en": "Cécile is shorter than Victoire, but she's as funny as her.",
+      "es": "Cécile es más baja que Victoire, pero es tan divertida como ella."
+    },
+    {
+      "sentence": "Sarah est la plus sérieuse de la maison : elle étudie toujours tard.",
+      "kind": "statement",
+      "en": "Sarah is the most serious one in the house: she always studies late.",
+      "es": "Sarah es la más seria de la casa: siempre estudia hasta tarde."
+    },
+    {
+      "sentence": "Thomas est loyal et digne de confiance, mais il est un peu paresseux.",
+      "kind": "statement",
+      "en": "Thomas is loyal and trustworthy, but he's a bit lazy.",
+      "es": "Thomas es leal y digno de confianza, pero es un poco perezoso."
+    }
+  ],
   "story": {
     "title": "Mes colocataires",
     "text": "Je m'appelle Inès. J'étudie le droit à Lille et j'habite avec quatre colocataires. Je voudrais vous parler d'eux. Karim est le plus drôle de la maison : il porte toujours des chaussettes orange. Élodie est rousse et elle a les yeux verts ; elle est toujours souriante et j'adore sa compagnie. Thomas est gentil, mais il est un peu paresseux : on ne peut pas compter sur lui pour faire la vaisselle ! Sarah est la plus sérieuse de nous tous : elle étudie la médecine et elle est toujours fatiguée. Moi, j'essaie de ne pas juger mes amis, mais ce n'est pas facile ! Ma vraie confidente, c'est Élodie, même si elle n'aime pas mon chat noir. Voilà mes colocataires. Et les tiens, comment sont-ils ?",

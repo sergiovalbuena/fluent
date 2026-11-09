@@ -447,6 +447,68 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "En quelle année êtes-vous né, Monsieur Martin ?",
+      "kind": "question",
+      "en": "What year were you born, Mr. Martin?",
+      "es": "¿En qué año nació usted, señor Martin?"
+    },
+    {
+      "sentence": "Quand est ton anniversaire, en mars ou en avril ?",
+      "kind": "question",
+      "en": "When is your birthday, in March or in April?",
+      "es": "¿Cuándo es tu cumpleaños, en marzo o en abril?"
+    },
+    {
+      "sentence": "C'est combien, la douzaine d'œufs au marché ?",
+      "kind": "question",
+      "en": "How much is a dozen eggs at the market?",
+      "es": "¿Cuánto cuesta la docena de huevos en el mercado?"
+    },
+    {
+      "sentence": "Combien de marches y a-t-il dans l'escalier de ton immeuble ?",
+      "kind": "question",
+      "en": "How many steps are there on the staircase in your building?",
+      "es": "¿Cuántos escalones hay en la escalera de tu edificio?"
+    },
+    {
+      "sentence": "Tu peux couper la pizza en quatre, s'il te plaît ?",
+      "kind": "question",
+      "en": "Can you cut the pizza into four, please?",
+      "es": "¿Puedes cortar la pizza en cuatro, por favor?"
+    },
+    {
+      "sentence": "Mon grand-père fête son soixante-dixième anniversaire samedi prochain.",
+      "kind": "statement",
+      "en": "My grandfather is celebrating his seventieth birthday next Saturday.",
+      "es": "Mi abuelo cumple setenta años el sábado que viene."
+    },
+    {
+      "sentence": "C'est la troisième fois cette semaine que j'arrive en retard au travail.",
+      "kind": "statement",
+      "en": "It's the third time this week that I've been late for work.",
+      "es": "Es la tercera vez esta semana que llego tarde al trabajo."
+    },
+    {
+      "sentence": "La moitié de la classe parle anglais et un quart parle aussi espagnol.",
+      "kind": "statement",
+      "en": "Half of the class speaks English and a quarter also speaks Spanish.",
+      "es": "La mitad de la clase habla inglés y una cuarta parte también habla español."
+    },
+    {
+      "sentence": "Je suis née en mille neuf cent quatre-vingt-dix à Marseille.",
+      "kind": "statement",
+      "en": "I was born in nineteen ninety in Marseille.",
+      "es": "Nací en mil novecientos noventa en Marsella."
+    },
+    {
+      "sentence": "Il est en train de calculer combien coûtent six pommes à deux euros.",
+      "kind": "statement",
+      "en": "He's working out how much six apples at two euros cost.",
+      "es": "Está calculando cuánto cuestan seis manzanas a dos euros."
+    }
+  ],
   "story": {
     "title": "Léo compte tout",
     "text": "Léo a dix ans et il adore compter. Ce matin, il est en train de compter les marches de l'escalier : il y en a quarante-deux ! Au marché, sa mère achète une douzaine d'œufs et une demi-douzaine de pommes. Léo calcule : « Six pommes à deux euros, ça fait douze euros ! » L'après-midi, il regarde le lancement d'une fusée à la télévision avec son grand-père. Ensemble, ils font le compte à rebours : « Dix, neuf, huit, sept, six, cinq, quatre, trois, deux, un, zéro ! » Ce soir, c'est le soixante-dixième anniversaire de son grand-père. « Coupe le gâteau en quatre, s'il te plaît », dit sa mère. Un quart pour chacun : c'est la première fois que Léo fait des fractions à table !",

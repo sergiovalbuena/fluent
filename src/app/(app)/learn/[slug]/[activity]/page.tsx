@@ -43,6 +43,8 @@ interface VocabWord {
 interface Phrase {
   phrase: string
   translation: string
+  /** Sentences only: it's a question (half of each lesson's sentences are) */
+  question?: boolean
 }
 
 interface QAQuestion {
@@ -72,6 +74,8 @@ interface LessonContent {
   words?: VocabWord[]
   phrases?: Phrase[]
   questions?: QAQuestion[]
+  /** Replace `questions` in converted lessons: repeated like phrases */
+  sentences?: Phrase[]
   story?: string
   storyTranslation?: string
   highlightedWords?: string[]
@@ -82,6 +86,7 @@ interface LessonContent {
 type RawItem = {
   word?: string; translation?: string; translations?: Record<string, string>; icon?: string; example?: string
   phrase?: string; prompt?: string; answer?: string; accept?: string[]; hint?: string
+  sentence?: string; kind?: string
 }
 
 interface RawContent {
@@ -118,6 +123,17 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
     }
   }
   if (lessonType === 'qa') {
+    // Converted lessons carry sentences in `items` (and still the old `questions` for the
+    // published app until every lesson is converted): sentences win
+    if (raw.items?.length) {
+      return {
+        sentences: raw.items.map(i => ({
+          phrase: i.sentence ?? '',
+          translation: pickTranslation(i, translationLang),
+          question: i.kind === 'question',
+        })),
+      }
+    }
     return {
       questions: (raw.questions ?? []).map(q => localizeQuestion(q, translationLang)),
     }
@@ -1406,6 +1422,7 @@ function QAQuestionList({
 
 function PhraseList({
   phrases,
+  kind = 'phrases',
   onPractice,
   isSaved,
   onToggleBookmark,
@@ -1415,6 +1432,8 @@ function PhraseList({
   onPracticeEnd,
 }: {
   phrases: Phrase[]
+  /** sentences: the Q&A activity of converted lessons (mastery keys "qa:<sentence>") */
+  kind?: 'phrases' | 'sentences'
   onPractice: () => void
   isSaved: (type: SavedItemType, original: string) => boolean
   onToggleBookmark: (item: SaveItem) => void
@@ -1425,7 +1444,8 @@ function PhraseList({
 }) {
   const t = useTranslations('lesson')
   const [challengePhrase, setChallengePhrase] = useState<Phrase | null>(null)
-  const { isMastered, markMastered } = useVocabMastery(languageCode, 'phrase')
+  const isSentences = kind === 'sentences'
+  const { isMastered, markMastered } = useVocabMastery(languageCode, isSentences ? 'qa' : 'phrase')
   const masteredCount = phrases.filter(p => isMastered(p.phrase)).length
 
   useEffect(() => {
@@ -1436,9 +1456,9 @@ function PhraseList({
     <div className="flex flex-col h-full min-h-0">
       {/* Header */}
       <div {...HINT_AREA} className="px-5 py-3.5 border-b border-black/[0.04] dark:border-white/[0.05] flex items-center justify-between shrink-0">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k="phrase_list" /></p>
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400"><SectionTitle k={isSentences ? 'sentence_list' : 'phrase_list'} /></p>
         <span className="text-[10px] font-semibold text-slate-300 dark:text-slate-600 tabular-nums">
-          {t('ov_count_phrases', { count: phrases.length })}
+          {t(isSentences ? 'ov_count_sentences' : 'ov_count_phrases', { count: phrases.length })}
         </span>
       </div>
 
@@ -1451,7 +1471,14 @@ function PhraseList({
           >
             <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums">{i + 1}</span>
             <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">{p.phrase}</p>
+              <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">
+                {p.phrase}
+                {p.question && (
+                  <span className="ml-2 align-middle inline-flex items-center gap-0.5 rounded-full bg-violet-500/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-violet-500">
+                    <HelpCircle size={9} /> {t('sentence_question')}
+                  </span>
+                )}
+              </p>
               <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5 group-hover:opacity-0 group-hover:transition-none transition-all">
                 {p.translation}
               </p>
@@ -1584,11 +1611,11 @@ interface ActivityHeroCta {
 }
 
 /** The four lesson activities as hero tabs, with the current one marked active */
-function activityTabs(slug: string, active: 'vocabulary' | 'phrases' | 'qa' | 'story'): ActivityHeroTab[] {
+function activityTabs(slug: string, active: 'vocabulary' | 'phrases' | 'qa' | 'story', qaTitle: SectionTitleKey = 'qa'): ActivityHeroTab[] {
   return [
     { href: `/learn/${slug}/vocabulary`, icon: BookOpen, label: <SectionTitle k="vocab_tab" />, iconColorClass: 'text-indigo-500', iconBgClass: 'bg-indigo-500/10', barClass: 'bg-indigo-500', active: active === 'vocabulary' },
     { href: `/learn/${slug}/phrases`, icon: MessageSquare, label: <SectionTitle k="phrases" />, iconColorClass: 'text-teal-600 dark:text-teal-400', iconBgClass: 'bg-teal-500/10', barClass: 'bg-teal-500', active: active === 'phrases' },
-    { href: `/learn/${slug}/qa`, icon: HelpCircle, label: <SectionTitle k="qa" />, iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500', active: active === 'qa' },
+    { href: `/learn/${slug}/qa`, icon: HelpCircle, label: <SectionTitle k={qaTitle} />, iconColorClass: 'text-violet-500', iconBgClass: 'bg-violet-500/10', barClass: 'bg-violet-500', active: active === 'qa' },
     { href: `/learn/${slug}/story`, icon: BookMarked, label: <SectionTitle k="story" />, iconColorClass: 'text-amber-600 dark:text-amber-400', iconBgClass: 'bg-amber-500/10', barClass: 'bg-amber-500', active: active === 'story' },
   ]
 }
@@ -1963,7 +1990,7 @@ export default function LessonPage() {
   const masteryTotal =
     activity === 'vocabulary' ? (lesson?.content.words?.length ?? 0)
     : activity === 'phrases' ? (lesson?.content.phrases?.length ?? 0)
-    : activity === 'qa' ? (lesson?.content.questions?.length ?? 0)
+    : activity === 'qa' ? (lesson?.content.sentences?.length || lesson?.content.questions?.length || 0)
     : 0
   const masteryDone =
     activity === 'vocabulary' ? masteredCount
@@ -2163,6 +2190,9 @@ export default function LessonPage() {
   const words     = content.words     ?? []
   const phrases   = content.phrases   ?? []
   const questions = content.questions ?? []
+  const sentences = content.sentences ?? []
+  // Tab title of the Q&A activity: "Sentences" once this lesson is converted
+  const qaTitle: SectionTitleKey = sentences.length > 0 ? 'sentences' : 'qa'
   const arrangeSentences = content.arrangeSentences ?? []
   const translateItems   = content.translateItems   ?? []
 
@@ -2281,7 +2311,7 @@ export default function LessonPage() {
               titleHref={`/learn/${slug}`}
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
               cta={masteryCta(masteredCount, words.length, tLesson('practice_words', { count: words.length }), setPractice)}
-              activities={activityTabs(slug, 'vocabulary')}
+              activities={activityTabs(slug, 'vocabulary', qaTitle)}
             />
 
             {/* ── WORD LIST — col-6 row-span-4, animated VanishList ────────── */}
@@ -2360,7 +2390,7 @@ export default function LessonPage() {
                 titleHref={`/learn/${slug}`}
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
                 cta={masteryCta(masteredPhraseCount, phrases.length, tLesson('practice_phrases', { count: phrases.length }), setPhrasePractice)}
-                activities={activityTabs(slug, 'phrases')}
+                activities={activityTabs(slug, 'phrases', qaTitle)}
               />
 
               {/* Phrase list */}
@@ -2519,8 +2549,63 @@ export default function LessonPage() {
         </div>
       )}
 
+      {/* ── SENTENCES — converted Q&A: repeated like phrases, no quiz ───────── */}
+      {activity === 'qa' && sentences.length > 0 && (
+        <div className="flex-1 px-3 md:px-5 py-4 md:py-6 overflow-y-auto">
+          <motion.div
+            initial="initial"
+            animate="animate"
+            transition={{ staggerChildren: 0.05 }}
+            className="max-w-6xl mx-auto grid grid-flow-dense grid-cols-12 gap-3 md:gap-4"
+          >
+            <ActivityHero
+              icon={HelpCircle}
+              iconColorClass="text-violet-500"
+              badgeLabel={<SectionTitle k="sentences" />}
+              title={moduleTitle}
+              titleHref={`/learn/${slug}`}
+              badgeColorClass="text-violet-500 bg-violet-500/10"
+              cta={masteryCta(masteredQACount, sentences.length, tLesson('practice_sentences', { count: sentences.length }), setQaPractice)}
+              activities={activityTabs(slug, 'qa', qaTitle)}
+            />
+
+            {/* Sentence list */}
+            <Block whileTap={{}} className="col-span-12 md:col-span-6 md:row-span-4 p-0 overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] flex flex-col" style={{ height: '34rem' }}>
+              <PhraseList
+                kind="sentences"
+                phrases={sentences}
+                onPractice={() => setQaPractice({ mode: masteredQACount > 0 && masteredQACount < sentences.length ? 'resume' : 'all', key: Date.now() })}
+                isSaved={isSaved}
+                onToggleBookmark={(item) => toggleSaved({ ...item, languageCode })}
+                languageCode={languageCode}
+                onMasteredCountChange={setMasteredQACount}
+                practice={qaPractice}
+                onPracticeEnd={() => setQaPractice(null)}
+              />
+            </Block>
+
+            <AllItemsCard
+              titleKey="all_sentences"
+              onClick={() => setAllItemsOpen(true)}
+              iconClass="text-violet-500"
+              iconBgClass="bg-violet-500/10"
+              className="col-span-12 md:col-span-6"
+            />
+            <AllItemsDialog
+              open={allItemsOpen}
+              onOpenChange={setAllItemsOpen}
+              title={moduleTitle}
+              description={tLesson('ov_count_sentences', { count: sentences.length })}
+              entries={sentences.map(x => ({ word: x.phrase, translation: x.translation }))}
+              languageCode={languageCode}
+              columns={1}
+            />
+          </motion.div>
+        </div>
+      )}
+
       {/* ── Q&A — BENTO OVERVIEW ─────────────────────────────────────────────── */}
-      {activity === 'qa' && qaMode === 'overview' && (
+      {activity === 'qa' && sentences.length === 0 && qaMode === 'overview' && (
         <div className="flex-1 px-3 md:px-5 py-4 md:py-6 overflow-y-auto">
           {questions.length === 0 ? (
             <EmptyState message="No questions in this lesson." />
@@ -2539,7 +2624,7 @@ export default function LessonPage() {
                 titleHref={`/learn/${slug}`}
                 badgeColorClass="text-violet-500 bg-violet-500/10"
                 cta={masteryCta(masteredQACount, questions.length, tLesson('practice_questions', { count: questions.length }), setQaPractice)}
-                activities={activityTabs(slug, 'qa')}
+                activities={activityTabs(slug, 'qa', qaTitle)}
               />
 
               {/* Questions list */}
@@ -2786,7 +2871,7 @@ export default function LessonPage() {
                   sublabel: tLesson('story_challenge_desc', { count: splitStory(content.story).length }),
                   onClick: () => setShowStoryChallenge(true),
                 }}
-                activities={activityTabs(slug, 'story')}
+                activities={activityTabs(slug, 'story', qaTitle)}
               />
 
               {/* Story text — left col, row 2 */}

@@ -69,6 +69,26 @@ for (const file of files) {
 
   count('phrases', 10).forEach((p, i) => { if (!str(p.phrase) || !hasTr(p)) err(file, `phrases[${i}] needs phrase + ${required.join(', ')}`) })
 
+  // Sentences (replacing the Q&A, lesson by lesson): 10, half of them questions, to repeat
+  // like phrases. A lesson keeps its old `qa` until the whole course is converted.
+  if (d.sentences !== undefined) {
+    const list = count('sentences', 10)
+    if (list.length !== 10) err(file, `sentences: ${list.length} items, expected 10`)
+    const questions = list.filter(x => x.kind === 'question').length
+    if (questions !== 5) err(file, `sentences: ${questions} questions, expected 5`)
+    const seen = new Set()
+    list.forEach((x, i) => {
+      if (!str(x.sentence) || !hasTr(x)) err(file, `sentences[${i}] needs sentence + ${required.join(', ')}`)
+      if (x.kind !== 'question' && x.kind !== 'statement') err(file, `sentences[${i}].kind must be "question" or "statement"`)
+      if (x.kind === 'question' && !/[?？]$/.test(x.sentence?.trim() ?? '')) err(file, `sentences[${i}] is a question but doesn't end with "?"`)
+      if (x.kind === 'statement' && /[?？]$/.test(x.sentence?.trim() ?? '')) err(file, `sentences[${i}] is a statement but ends with "?"`)
+      if (/"/.test(x.sentence ?? '')) err(file, `sentences[${i}] has a straight double quote`)
+      if (seen.has(x.sentence)) err(file, `duplicate sentence "${x.sentence}"`)
+      seen.add(x.sentence)
+      if ((d.phrases ?? []).some(p => p.phrase === x.sentence)) warn(file, `sentences[${i}] repeats a phrase of the lesson`)
+    })
+  }
+
   count('qa', 6).forEach((q, i) => {
     // Asked and answered in the course language; en / es are the translations shown on demand
     if (!hasTr(q.question, [lang, ...required])) err(file, `qa[${i}].question needs ${[lang, ...required].join(', ')}`)

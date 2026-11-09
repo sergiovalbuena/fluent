@@ -517,6 +517,68 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Quelle date sommes-nous aujourd'hui, le 14 ou le 15 juillet ?",
+      "kind": "question",
+      "en": "What's the date today, the 14th or the 15th of July?",
+      "es": "¿A cuántos estamos hoy, a 14 o a 15 de julio?"
+    },
+    {
+      "sentence": "Quel jour est-ce qu'on part en vacances, vendredi ou samedi ?",
+      "kind": "question",
+      "en": "What day are we leaving on vacation, Friday or Saturday?",
+      "es": "¿Qué día nos vamos de vacaciones, el viernes o el sábado?"
+    },
+    {
+      "sentence": "D'où viens-tu exactement, du Mexique ou des États-Unis ?",
+      "kind": "question",
+      "en": "Where exactly are you from, Mexico or the United States?",
+      "es": "¿De dónde eres exactamente, de México o de Estados Unidos?"
+    },
+    {
+      "sentence": "Tu ne travailles pas le dimanche, n'est-ce pas ?",
+      "kind": "question",
+      "en": "You don't work on Sundays, do you?",
+      "es": "No trabajas los domingos, ¿verdad?"
+    },
+    {
+      "sentence": "Où se trouve Montréal, au Canada ou aux États-Unis ?",
+      "kind": "question",
+      "en": "Where is Montreal, in Canada or in the United States?",
+      "es": "¿Dónde está Montreal, en Canadá o en Estados Unidos?"
+    },
+    {
+      "sentence": "Hier, j'ai parlé avec ma grand-mère pendant tout l'après-midi.",
+      "kind": "statement",
+      "en": "Yesterday I talked with my grandmother all afternoon.",
+      "es": "Ayer hablé con mi abuela toda la tarde."
+    },
+    {
+      "sentence": "À cette époque, les gens se levaient au lever du jour et se couchaient tôt.",
+      "kind": "statement",
+      "en": "Back then, people got up at daybreak and went to bed early.",
+      "es": "En aquella época, la gente se levantaba al amanecer y se acostaba temprano."
+    },
+    {
+      "sentence": "Après-demain, nous partirons en Espagne pour une quinzaine de jours.",
+      "kind": "statement",
+      "en": "The day after tomorrow, we'll leave for Spain for about two weeks.",
+      "es": "Pasado mañana nos iremos a España unos quince días."
+    },
+    {
+      "sentence": "Le mois prochain, je pense commencer un cours de français du soir.",
+      "kind": "statement",
+      "en": "Next month, I plan to start an evening French class.",
+      "es": "El mes que viene pienso empezar una clase nocturna de francés."
+    },
+    {
+      "sentence": "En hiver, le soleil se couche avant six heures du soir.",
+      "kind": "statement",
+      "en": "In winter, the sun sets before six in the evening.",
+      "es": "En invierno, el sol se pone antes de las seis de la tarde."
+    }
+  ],
   "story": {
     "title": "Le temps de mon arrière-grand-mère",
     "text": "Mon arrière-grand-mère est née en 1920 dans un petit village de Bretagne. À cette époque, la vie était très différente. Les gens n'avaient pas d'électricité et tout le monde se levait au lever du jour. Le matin, elle aidait ses parents à la ferme. À midi, la famille mangeait ensemble, puis l'après-midi, on travaillait jusqu'au coucher du soleil. Le soir, on se réunissait autour du feu et on racontait les nouvelles de la journée. Au XXe siècle, le monde a beaucoup changé : les voitures, la radio et la télévision sont arrivées. Aujourd'hui, nous avons tout, mais nous n'avons jamais le temps. Demain, je lui demanderai de me raconter encore ses souvenirs.",

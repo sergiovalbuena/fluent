@@ -76,6 +76,8 @@ export interface ModuleContentData {
   vocabItems: VocabItem[]
   phraseItems: PhraseItem[]
   qaItems: QAItem[]
+  /** Converted lessons: number of sentences replacing the questions (0 when not converted) */
+  sentenceCount: number
   storyText?: string
   arrangeCount: number
   translateCount: number
@@ -135,7 +137,7 @@ const VARIANT_TOKENS: Record<ActivityVariant, {
   },
 }
 
-type CountKey = 'ov_count_words' | 'ov_count_phrases' | 'ov_count_questions'
+type CountKey = 'ov_count_words' | 'ov_count_phrases' | 'ov_count_questions' | 'ov_count_sentences'
 
 interface CoreCardProps {
   href: string
@@ -566,7 +568,7 @@ function CrownBand({ slug, allThreeStars, hasCrown, starsMap, hasVocab, hasPhras
 export function ModuleContentView({ data }: { data: ModuleContentData }) {
   const {
     slug, title, description, icon, languageCode, exerciseCount, firstExType,
-    vocabItems, phraseItems, qaItems, storyText,
+    vocabItems, phraseItems, qaItems, sentenceCount, storyText,
     arrangeCount, translateCount,
     hasVocab, hasPhrases, hasQA, hasStory, hasArrange, hasTranslate,
     starsMap = {},
@@ -623,9 +625,9 @@ export function ModuleContentView({ data }: { data: ModuleContentData }) {
       href: `/learn/${slug}/qa`,
       icon: HelpCircle,
       variant: 'qa',
-      titleKey: 'qa',
-      total: qaItems.length,
-      countKey: 'ov_count_questions',
+      titleKey: sentenceCount > 0 ? 'sentences' : 'qa',
+      total: sentenceCount > 0 ? sentenceCount : qaItems.length,
+      countKey: sentenceCount > 0 ? 'ov_count_sentences' : 'ov_count_questions',
       mastered: masteredQA,
       stars: starsMap['qa'] ?? 0,
       available: hasQA,

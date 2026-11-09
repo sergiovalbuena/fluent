@@ -181,7 +181,9 @@
     "done": "完了！",
     "show_translation": "翻訳を表示",
     "hide_translation": "翻訳を隠す",
-    "listen": "聞く"
+    "listen": "聞く",
+    "practice_sentences": "{count}文を続けて",
+    "sentence_question": "質問"
   },
   "gems": {
     "title": "ジェム",
