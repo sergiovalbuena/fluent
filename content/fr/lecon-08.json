@@ -545,6 +545,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "D'où viens-tu, du Pérou ou du Chili ?",
+      "kind": "question",
+      "bold": [
+        "D'où viens-tu",
+        "du Pérou",
+        "du Chili"
+      ],
+      "en": "Where are you from, Peru or Chile?",
+      "es": "¿De dónde eres, de Perú o de Chile?"
+    },
+    {
+      "sentence": "As-tu visité l'Irlande quand tu habitais à Londres ?",
+      "kind": "question",
+      "bold": [
+        "As-tu visité l'Irlande",
+        "à Londres"
+      ],
+      "en": "Did you visit Ireland when you lived in London?",
+      "es": "¿Visitaste Irlanda cuando vivías en Londres?"
+    },
+    {
+      "sentence": "Ta mère est italienne ou espagnole ?",
+      "kind": "question",
+      "bold": [
+        "italienne",
+        "espagnole"
+      ],
+      "en": "Is your mother Italian or Spanish?",
+      "es": "¿Tu madre es italiana o española?"
+    },
+    {
+      "sentence": "Tu habites toujours au Japon, ou tu es rentré en France ?",
+      "kind": "question",
+      "bold": [
+        "au Japon",
+        "en France"
+      ],
+      "en": "Do you still live in Japan, or did you come back to France?",
+      "es": "¿Sigues viviendo en Japón o has vuelto a Francia?"
+    },
+    {
+      "sentence": "Ton collègue est suisse ou allemand, avec cet accent ?",
+      "kind": "question",
+      "bold": [
+        "suisse",
+        "allemand"
+      ],
+      "en": "Is your colleague Swiss or German, with that accent?",
+      "es": "¿Tu colega es suizo o alemán, con ese acento?"
+    },
+    {
+      "sentence": "Le Brésil est le plus grand pays d'Amérique du Sud, devant l'Argentine.",
+      "kind": "statement",
+      "bold": [
+        "Le Brésil",
+        "le plus grand",
+        "Amérique du Sud",
+        "Argentine"
+      ],
+      "en": "Brazil is the largest country in South America, ahead of Argentina.",
+      "es": "Brasil es el país más grande de Sudamérica, por delante de Argentina."
+    },
+    {
+      "sentence": "Allons au Portugal cet été et parcourons le pays en train !",
+      "kind": "statement",
+      "bold": [
+        "Allons au Portugal",
+        "parcourons"
+      ],
+      "en": "Let's go to Portugal this summer and travel around the country by train!",
+      "es": "¡Vamos a Portugal este verano y recorramos el país en tren!"
+    },
+    {
+      "sentence": "Ma grand-mère était grecque, mais elle est née en Turquie.",
+      "kind": "statement",
+      "bold": [
+        "était grecque",
+        "est née en Turquie"
+      ],
+      "en": "My grandmother was Greek, but she was born in Turkey.",
+      "es": "Mi abuela era griega, pero nació en Turquía."
+    },
+    {
+      "sentence": "Si nous regardons la carte, nous pouvons voir que l'Autriche est à côté de la Suisse.",
+      "kind": "statement",
+      "bold": [
+        "Si nous regardons",
+        "nous pouvons",
+        "l'Autriche",
+        "la Suisse"
+      ],
+      "en": "If we look at the map, we can see that Austria is next to Switzerland.",
+      "es": "Si miramos el mapa, podemos ver que Austria está al lado de Suiza."
+    },
+    {
+      "sentence": "Les trains relient les pays pour que le voyage soit plus facile en Europe.",
+      "kind": "statement",
+      "bold": [
+        "pour que",
+        "soit",
+        "en Europe"
+      ],
+      "en": "Trains connect the countries so that travelling in Europe is easier.",
+      "es": "Los trenes conectan los países para que viajar por Europa sea más fácil."
+    }
+  ],
   "story": {
     "title": "Le tour du monde de Maya",
     "text": "Maya est canadienne. Elle est née à Montréal, mais sa mère est indienne et son père est chilien. L'année dernière, elle a fait le tour du monde. D'abord, elle est allée au Japon : la technologie l'a beaucoup étonnée. Ensuite, elle a visité l'Inde, le pays de sa mère, où elle a goûté une cuisine délicieuse. En Europe, elle a pris le train pour traverser la France, la Suisse, l'Italie et l'Autriche. Les trains européens relient beaucoup de pays pour que le voyage soit plus facile. Quand elle était petite, Maya rêvait de voir la forêt amazonienne ; alors, elle a fini son voyage au Brésil et au Pérou. Si nous regardons autour de nous, nous pouvons trouver des merveilles partout. Maya dit toujours : « Allons découvrir le monde ! »",

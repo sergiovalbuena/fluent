@@ -463,6 +463,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Auriez-vous ce tee-shirt en taille moyenne, ou seulement en extra-large ?",
+      "kind": "question",
+      "bold": [
+        "taille",
+        "moyenne",
+        "extra-large"
+      ],
+      "en": "Would you have this T-shirt in medium, or only in extra-large?",
+      "es": "¿Tendría esta camiseta en talla mediana o solo en extragrande?"
+    },
+    {
+      "sentence": "Vous faites quelle pointure, du trente-huit ou du trente-neuf ?",
+      "kind": "question",
+      "bold": [
+        "pointure"
+      ],
+      "en": "What shoe size are you, thirty-eight or thirty-nine?",
+      "es": "¿Qué número calza, el treinta y ocho o el treinta y nueve?"
+    },
+    {
+      "sentence": "Où se trouve la cabine d'essayage dans ce magasin ?",
+      "kind": "question",
+      "bold": [
+        "cabine d'essayage",
+        "magasin"
+      ],
+      "en": "Where is the fitting room in this store?",
+      "es": "¿Dónde está el probador en esta tienda?"
+    },
+    {
+      "sentence": "Je peux échanger ce pull si je garde le ticket de caisse ?",
+      "kind": "question",
+      "bold": [
+        "échanger",
+        "ticket de caisse"
+      ],
+      "en": "Can I exchange this sweater if I keep the receipt?",
+      "es": "¿Puedo cambiar este jersey si guardo el tique de compra?"
+    },
+    {
+      "sentence": "Tu crois que ce pantalon ira à ton père ?",
+      "kind": "question",
+      "bold": [
+        "ira"
+      ],
+      "en": "Do you think these trousers will suit your father?",
+      "es": "¿Crees que estos pantalones le quedarán bien a tu padre?"
+    },
+    {
+      "sentence": "Quand tu viendras nous chercher, nous aurons fait les courses pour toute la semaine.",
+      "kind": "statement",
+      "bold": [
+        "nous aurons fait",
+        "courses"
+      ],
+      "en": "When you come to pick us up, we'll have done the shopping for the whole week.",
+      "es": "Cuando vengas a buscarnos, habremos hecho la compra de toda la semana."
+    },
+    {
+      "sentence": "Ton frère aura sûrement acheté le cadeau avant notre arrivée.",
+      "kind": "statement",
+      "bold": [
+        "aura",
+        "acheté",
+        "cadeau"
+      ],
+      "en": "Your brother will surely have bought the present before we arrive.",
+      "es": "Seguramente tu hermano habrá comprado el regalo antes de que lleguemos."
+    },
+    {
+      "sentence": "Tu aurais trouvé des bijoux moins chers pendant les soldes.",
+      "kind": "statement",
+      "bold": [
+        "aurais trouvé",
+        "bijoux",
+        "soldes"
+      ],
+      "en": "You would have found cheaper jewelry during the sales.",
+      "es": "Habrías encontrado joyas más baratas durante las rebajas."
+    },
+    {
+      "sentence": "Lave ce tee-shirt à l'eau froide, sinon il va rétrécir et déteindre.",
+      "kind": "statement",
+      "bold": [
+        "rétrécir",
+        "déteindre"
+      ],
+      "en": "Wash this T-shirt in cold water, otherwise it'll shrink and run.",
+      "es": "Lava esta camiseta con agua fría, si no va a encoger y desteñir."
+    },
+    {
+      "sentence": "Je n'achète rien aujourd'hui, puisque tout est trop cher dans ce centre commercial.",
+      "kind": "statement",
+      "bold": [
+        "puisque",
+        "centre commercial"
+      ],
+      "en": "I'm not buying anything today, since everything is too expensive in this mall.",
+      "es": "Hoy no compro nada, ya que todo es demasiado caro en este centro comercial."
+    }
+  ],
   "story": {
     "title": "Ma sœur et les soldes",
     "text": "Demain, c'est le premier jour des soldes, et ma sœur Zoé va faire du shopping. Si je ne fais pas attention, elle aura dépensé tout son salaire avant midi ! Les vendeuses l'adorent… ou plutôt, elles adorent sa carte bancaire. Je crois qu'elle oublie tout quand elle entre dans un centre commercial. Elle achète beaucoup de vêtements, mais comme elle ne lit jamais les étiquettes, les couleurs déteignent et les pulls rétrécissent. Parfois, elle ne sait pas quoi choisir, alors elle prend tout. Ma grand-mère dit qu'elle était exactement pareille quand elle était jeune. Moi, demain à midi, j'irai dans deux magasins et j'achèterai peut-être un tee-shirt. Zoé, par contre, aura parcouru tout le centre commercial et aura rempli trois sacs. Quand je rentrerai, elle aura déjà essayé tous ses nouveaux vêtements devant le miroir. Le bon côté ? Quand elle se fatigue de ses vêtements, elle me les donne. Le problème, c'est qu'ils ne me vont presque jamais ! Si elle m'avait demandé ma taille, elle aurait pu m'acheter quelque chose. Bon, allons faire les soldes !",

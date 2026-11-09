@@ -451,60 +451,97 @@
     {
       "sentence": "En quelle année êtes-vous né, Monsieur Martin ?",
       "kind": "question",
+      "bold": [
+        "êtes-vous né"
+      ],
       "en": "What year were you born, Mr. Martin?",
       "es": "¿En qué año nació usted, señor Martin?"
     },
     {
-      "sentence": "Quand est ton anniversaire, en mars ou en avril ?",
+      "sentence": "Quand est ton anniversaire, le premier ou le quinze mars ?",
       "kind": "question",
-      "en": "When is your birthday, in March or in April?",
-      "es": "¿Cuándo es tu cumpleaños, en marzo o en abril?"
+      "bold": [
+        "premier",
+        "quinze"
+      ],
+      "en": "When is your birthday, March first or March fifteenth?",
+      "es": "¿Cuándo es tu cumpleaños, el primero o el quince de marzo?"
     },
     {
       "sentence": "C'est combien, la douzaine d'œufs au marché ?",
       "kind": "question",
+      "bold": [
+        "douzaine"
+      ],
       "en": "How much is a dozen eggs at the market?",
       "es": "¿Cuánto cuesta la docena de huevos en el mercado?"
     },
     {
-      "sentence": "Combien de marches y a-t-il dans l'escalier de ton immeuble ?",
+      "sentence": "Combien de marches y a-t-il dans ton escalier, quarante ou cinquante ?",
       "kind": "question",
-      "en": "How many steps are there on the staircase in your building?",
-      "es": "¿Cuántos escalones hay en la escalera de tu edificio?"
+      "bold": [
+        "quarante",
+        "cinquante"
+      ],
+      "en": "How many steps are there on your staircase, forty or fifty?",
+      "es": "¿Cuántos escalones hay en tu escalera, cuarenta o cincuenta?"
     },
     {
       "sentence": "Tu peux couper la pizza en quatre, s'il te plaît ?",
       "kind": "question",
+      "bold": [
+        "couper",
+        "en quatre"
+      ],
       "en": "Can you cut the pizza into four, please?",
       "es": "¿Puedes cortar la pizza en cuatro, por favor?"
     },
     {
       "sentence": "Mon grand-père fête son soixante-dixième anniversaire samedi prochain.",
       "kind": "statement",
+      "bold": [
+        "soixante-dixième"
+      ],
       "en": "My grandfather is celebrating his seventieth birthday next Saturday.",
       "es": "Mi abuelo cumple setenta años el sábado que viene."
     },
     {
       "sentence": "C'est la troisième fois cette semaine que j'arrive en retard au travail.",
       "kind": "statement",
+      "bold": [
+        "C'est la troisième fois",
+        "que"
+      ],
       "en": "It's the third time this week that I've been late for work.",
       "es": "Es la tercera vez esta semana que llego tarde al trabajo."
     },
     {
       "sentence": "La moitié de la classe parle anglais et un quart parle aussi espagnol.",
       "kind": "statement",
+      "bold": [
+        "La moitié",
+        "un quart"
+      ],
       "en": "Half of the class speaks English and a quarter also speaks Spanish.",
       "es": "La mitad de la clase habla inglés y una cuarta parte también habla español."
     },
     {
       "sentence": "Je suis née en mille neuf cent quatre-vingt-dix à Marseille.",
       "kind": "statement",
+      "bold": [
+        "Je suis née",
+        "mille",
+        "quatre-vingt-dix"
+      ],
       "en": "I was born in nineteen ninety in Marseille.",
       "es": "Nací en mil novecientos noventa en Marsella."
     },
     {
       "sentence": "Il est en train de calculer combien coûtent six pommes à deux euros.",
       "kind": "statement",
+      "bold": [
+        "est en train de"
+      ],
       "en": "He's working out how much six apples at two euros cost.",
       "es": "Está calculando cuánto cuestan seis manzanas a dos euros."
     }

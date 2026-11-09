@@ -83,6 +83,9 @@ for (const file of files) {
       if (x.kind === 'question' && !/[?？]$/.test(x.sentence?.trim() ?? '')) err(file, `sentences[${i}] is a question but doesn't end with "?"`)
       if (x.kind === 'statement' && /[?？]$/.test(x.sentence?.trim() ?? '')) err(file, `sentences[${i}] is a statement but ends with "?"`)
       if (/"/.test(x.sentence ?? '')) err(file, `sentences[${i}] has a straight double quote`)
+      // Words of the lesson's grammar or vocabulary, shown in bold: each must appear in the sentence
+      if (!Array.isArray(x.bold) || x.bold.length === 0) err(file, `sentences[${i}] needs bold (words of the lesson's grammar or vocabulary)`)
+      for (const b of x.bold ?? []) if (!x.sentence?.includes(b)) err(file, `sentences[${i}] bold "${b}" not in the sentence`)
       if (seen.has(x.sentence)) err(file, `duplicate sentence "${x.sentence}"`)
       seen.add(x.sentence)
       if ((d.phrases ?? []).some(p => p.phrase === x.sentence)) warn(file, `sentences[${i}] repeats a phrase of the lesson`)

@@ -182,8 +182,7 @@
     "show_translation": "Ver tradução",
     "hide_translation": "Ocultar tradução",
     "listen": "Ouvir",
-    "practice_sentences": "{count} orações seguidas",
-    "sentence_question": "Pergunta"
+    "practice_sentences": "{count} orações seguidas"
   },
   "gems": {
     "title": "Gemas",

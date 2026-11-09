@@ -449,6 +449,111 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Quand est-ce que tu as envoyé le colis à ta grand-mère ?",
+      "kind": "question",
+      "bold": [
+        "envoyé",
+        "colis"
+      ],
+      "en": "When did you send the parcel to your grandmother?",
+      "es": "¿Cuándo enviaste el paquete a tu abuela?"
+    },
+    {
+      "sentence": "Combien coûte un timbre pour une carte postale par avion ?",
+      "kind": "question",
+      "bold": [
+        "timbre",
+        "carte postale",
+        "par avion"
+      ],
+      "en": "How much is a stamp for a postcard by airmail?",
+      "es": "¿Cuánto cuesta un sello para una postal por avión?"
+    },
+    {
+      "sentence": "Tu as bien écrit le code postal sur l'enveloppe ?",
+      "kind": "question",
+      "bold": [
+        "code postal",
+        "enveloppe"
+      ],
+      "en": "Did you write the postcode correctly on the envelope?",
+      "es": "¿Escribiste bien el código postal en el sobre?"
+    },
+    {
+      "sentence": "Est-ce que ce paquet est trop lourd pour l'envoyer en express ?",
+      "kind": "question",
+      "bold": [
+        "lourd",
+        "en express"
+      ],
+      "en": "Is this package too heavy to send express?",
+      "es": "¿Es este paquete demasiado pesado para enviarlo exprés?"
+    },
+    {
+      "sentence": "À quelle heure passe le facteur pour relever la boîte aux lettres ?",
+      "kind": "question",
+      "bold": [
+        "facteur",
+        "boîte aux lettres"
+      ],
+      "en": "What time does the postman come to empty the mailbox?",
+      "es": "¿A qué hora pasa el cartero a recoger el buzón?"
+    },
+    {
+      "sentence": "Elle m'appellera après qu'elle aura reçu la lettre recommandée.",
+      "kind": "statement",
+      "bold": [
+        "après qu'",
+        "aura reçu",
+        "lettre recommandée"
+      ],
+      "en": "She'll call me after she has received the registered letter.",
+      "es": "Me llamará después de haber recibido la carta certificada."
+    },
+    {
+      "sentence": "Pendant que je fermais le carton, le facteur a sonné.",
+      "kind": "statement",
+      "bold": [
+        "Pendant que",
+        "fermais",
+        "carton",
+        "a sonné"
+      ],
+      "en": "While I was closing the box, the postman rang.",
+      "es": "Mientras cerraba la caja, el cartero llamó al timbre."
+    },
+    {
+      "sentence": "Assure-toi que le destinataire est bien indiqué avant d'envoyer le colis.",
+      "kind": "statement",
+      "bold": [
+        "Assure-toi que",
+        "destinataire",
+        "avant d'"
+      ],
+      "en": "Make sure the recipient is clearly written before you send the parcel.",
+      "es": "Asegúrate de que el destinatario esté bien indicado antes de enviar el paquete."
+    },
+    {
+      "sentence": "Ton colis est en train d'être livré : il arrivera ce soir.",
+      "kind": "statement",
+      "bold": [
+        "est en train d'être livré"
+      ],
+      "en": "Your parcel is being delivered: it'll arrive this evening.",
+      "es": "Tu paquete está en reparto: llegará esta noche."
+    },
+    {
+      "sentence": "Écris fragile sur le carton, il y a des verres dedans.",
+      "kind": "statement",
+      "bold": [
+        "fragile"
+      ],
+      "en": "Write fragile on the box, there are glasses inside.",
+      "es": "Escribe frágil en la caja, hay vasos dentro."
+    }
+  ],
   "story": {
     "title": "Le grand déménagement",
     "text": "Nora travaillait à Lille, mais elle n'aimait pas vivre si loin de sa famille, qui habite à Marseille. Elle en avait assez de passer par la poste chaque fois qu'elle voulait envoyer un cadeau à ses neveux. Un jour, elle trouva un bon poste à Marseille et elle donna sa démission. Avant de partir, elle s'organisa pour envoyer ses cartons par La Poste, ce qui était moins cher que de payer un supplément de bagages dans le train. Pendant qu'elle fermait le dernier colis, son chef l'appela pour lui demander de rester. Il lui proposa un meilleur salaire. Elle refusa poliment, mais il lui dit que les portes resteraient ouvertes si elle revenait. Alors qu'elle marchait vers le taxi, la factrice lui donna une lettre. Nora fut surprise : elle avait informé tout le monde de son déménagement. C'était sa sœur, Samia, qui lui avait écrit avant de savoir la nouvelle : « Ne viens pas tout de suite, je vais me marier en juin et je veux que tu m'aides à tout préparer ici, à Marseille ! » Nora éclata de rire : elle arriverait juste à temps. Deux jours après qu'elle est arrivée, tous ses cartons étaient déjà là.",

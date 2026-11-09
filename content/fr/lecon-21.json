@@ -528,6 +528,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Quelle heure est-il ? Il est déjà midi et demi ?",
+      "kind": "question",
+      "bold": [
+        "Quelle heure est-il",
+        "midi et demi"
+      ],
+      "en": "What time is it? Is it already half past twelve?",
+      "es": "¿Qué hora es? ¿Ya son las doce y media?"
+    },
+    {
+      "sentence": "Ta montre ne marche plus : tu as dû oublier de changer les piles ?",
+      "kind": "question",
+      "bold": [
+        "montre",
+        "dû oublier",
+        "piles"
+      ],
+      "en": "Your watch doesn't work anymore: did you forget to change the batteries?",
+      "es": "Tu reloj ya no funciona: ¿te habrás olvidado de cambiar las pilas?"
+    },
+    {
+      "sentence": "Combien mesure cette table, et combien pèse-t-elle ?",
+      "kind": "question",
+      "bold": [
+        "Combien mesure",
+        "pèse"
+      ],
+      "en": "How big is this table, and how much does it weigh?",
+      "es": "¿Cuánto mide esta mesa y cuánto pesa?"
+    },
+    {
+      "sentence": "Il y a combien d'heures de décalage horaire entre Paris et Montréal ?",
+      "kind": "question",
+      "bold": [
+        "décalage horaire"
+      ],
+      "en": "How many hours' time difference is there between Paris and Montreal?",
+      "es": "¿Cuántas horas de diferencia horaria hay entre París y Montreal?"
+    },
+    {
+      "sentence": "Tu travailles à plein temps ou à mi-temps cette année ?",
+      "kind": "question",
+      "bold": [
+        "à plein temps",
+        "à mi-temps"
+      ],
+      "en": "Are you working full-time or part-time this year?",
+      "es": "¿Trabajas a tiempo completo o a media jornada este año?"
+    },
+    {
+      "sentence": "Je t'attends depuis une demi-heure devant le cinéma !",
+      "kind": "statement",
+      "bold": [
+        "Je t'attends depuis",
+        "demi-heure"
+      ],
+      "en": "I've been waiting for you for half an hour in front of the cinema!",
+      "es": "¡Llevo media hora esperándote delante del cine!"
+    },
+    {
+      "sentence": "Hier soir, je me suis couchée après avoir lu deux chapitres de mon livre.",
+      "kind": "statement",
+      "bold": [
+        "après avoir lu"
+      ],
+      "en": "Last night I went to bed after reading two chapters of my book.",
+      "es": "Anoche me acosté después de leer dos capítulos de mi libro."
+    },
+    {
+      "sentence": "Il faut que la robe soit prête demain à huit heures pile.",
+      "kind": "statement",
+      "bold": [
+        "Il faut que",
+        "soit",
+        "pile"
+      ],
+      "en": "The dress has to be ready tomorrow at eight o'clock sharp.",
+      "es": "Hace falta que el vestido esté listo mañana a las ocho en punto."
+    },
+    {
+      "sentence": "Mon frère mesure un mètre quatre-vingts et pèse soixante-quinze kilos.",
+      "kind": "statement",
+      "bold": [
+        "mesure",
+        "mètre",
+        "pèse",
+        "kilos"
+      ],
+      "en": "My brother is one meter eighty tall and weighs seventy-five kilos.",
+      "es": "Mi hermano mide un metro ochenta y pesa setenta y cinco kilos."
+    },
+    {
+      "sentence": "Il est temps de partir, sinon nous allons arriver en retard.",
+      "kind": "statement",
+      "bold": [
+        "Il est temps de",
+        "en retard"
+      ],
+      "en": "It's time to leave, otherwise we'll be late.",
+      "es": "Es hora de irnos, si no vamos a llegar tarde."
+    }
+  ],
   "story": {
     "title": "Chaque minute compte",
     "text": "Je m'appelle Clémence Roy et je suis pâtissière dans un grand hôtel à Paris. Dans mon métier, le temps et les mesures sont essentiels. Si une recette demande deux cent cinquante grammes de farine et un demi-litre de lait, je dois tout peser exactement. Il faut aussi que la température du four soit parfaite : cent quatre-vingts degrés, pas un de plus ! Je me lève tous les jours à quatre heures et quart, mais quelquefois, je n'entends pas mon réveil. Hier, j'ai dû oublier de changer les piles, et je suis arrivée vingt minutes en retard ! Ce mois-ci, nous préparons un gâteau de mariage de un mètre cinquante de haut. Le chef m'attend depuis ce matin pour la décoration. De temps en temps, je voyage pour des concours à l'étranger. Après avoir passé dix heures dans l'avion, le décalage horaire est terrible. Mais j'adore mon travail : quand je vois le sourire des clients, je sais que chaque minute compte.",

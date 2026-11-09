@@ -504,6 +504,113 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Quels sont vos symptômes : de la fièvre, des frissons, une toux ?",
+      "kind": "question",
+      "bold": [
+        "symptômes",
+        "fièvre",
+        "frissons"
+      ],
+      "en": "What are your symptoms: fever, chills, a cough?",
+      "es": "¿Cuáles son sus síntomas: fiebre, escalofríos, tos?"
+    },
+    {
+      "sentence": "Est-ce que vous êtes allergique à l'aspirine ou à un autre médicament ?",
+      "kind": "question",
+      "bold": [
+        "allergique",
+        "aspirine",
+        "médicament"
+      ],
+      "en": "Are you allergic to aspirin or any other medicine?",
+      "es": "¿Es usted alérgico a la aspirina o a otro medicamento?"
+    },
+    {
+      "sentence": "Combien de comprimés dois-je prendre par jour avec cette ordonnance ?",
+      "kind": "question",
+      "bold": [
+        "comprimés",
+        "ordonnance"
+      ],
+      "en": "How many tablets should I take a day with this prescription?",
+      "es": "¿Cuántos comprimidos tengo que tomar al día con esta receta?"
+    },
+    {
+      "sentence": "Tu as encore des vertiges, ou tu te sens mieux depuis la piqûre ?",
+      "kind": "question",
+      "bold": [
+        "vertiges",
+        "piqûre"
+      ],
+      "en": "Are you still dizzy, or do you feel better since the injection?",
+      "es": "¿Todavía tienes mareos o te sientes mejor desde la inyección?"
+    },
+    {
+      "sentence": "Pourquoi n'est-elle pas tombée malade cet hiver ? Elle avait eu le vaccin ?",
+      "kind": "question",
+      "bold": [
+        "vaccin"
+      ],
+      "en": "Why didn't she get sick this winter? Had she had the vaccine?",
+      "es": "¿Por qué no se puso enferma este invierno? ¿Se había vacunado?"
+    },
+    {
+      "sentence": "Il faut que tu ailles voir un spécialiste pour ce mal de dos.",
+      "kind": "statement",
+      "bold": [
+        "Il faut que",
+        "ailles",
+        "spécialiste"
+      ],
+      "en": "You need to go and see a specialist for that back pain.",
+      "es": "Tienes que ir a ver a un especialista por ese dolor de espalda."
+    },
+    {
+      "sentence": "Prends ton sirop, sinon tu tousseras toute la nuit.",
+      "kind": "statement",
+      "bold": [
+        "sirop",
+        "sinon",
+        "tousseras"
+      ],
+      "en": "Take your syrup, otherwise you'll cough all night.",
+      "es": "Tómate el jarabe, si no toserás toda la noche."
+    },
+    {
+      "sentence": "Même si tu te sens mieux, tu dois finir les gélules.",
+      "kind": "statement",
+      "bold": [
+        "Même si",
+        "gélules"
+      ],
+      "en": "Even if you feel better, you have to finish the capsules.",
+      "es": "Aunque te sientas mejor, tienes que terminar las cápsulas."
+    },
+    {
+      "sentence": "Dès que je suis sorti des urgences, j'ai appelé ma femme.",
+      "kind": "statement",
+      "bold": [
+        "Dès que",
+        "suis sorti",
+        "urgences"
+      ],
+      "en": "As soon as I left the emergency room, I called my wife.",
+      "es": "En cuanto salí de urgencias, llamé a mi mujer."
+    },
+    {
+      "sentence": "Le médecin m'a dit que j'avais la grippe et que je devais me reposer.",
+      "kind": "statement",
+      "bold": [
+        "m'a dit que",
+        "grippe",
+        "me reposer"
+      ],
+      "en": "The doctor told me I had the flu and that I had to rest.",
+      "es": "El médico me dijo que tenía gripe y que debía descansar."
+    }
+  ],
   "story": {
     "title": "Trop de stress",
     "text": "Depuis quelques semaines, Margaux se sent faible et fatiguée, même si elle dort toute la nuit. Quand elle était adolescente, elle avait souvent mal à la tête et elle s'évanouissait parfois. Mais maintenant, c'est pire : elle a des frissons et des vertiges presque tous les jours. La semaine dernière, elle est allée voir son médecin traitant. Il lui a dit qu'elle avait sûrement un virus et lui a fait une ordonnance, mais les médicaments n'ont rien changé. Avant-hier, elle est allée voir un spécialiste, qui lui a fait faire des analyses. Il n'a rien trouvé. Heureusement, son amie Chloé, qui est psychologue, l'a appelée par hasard pour prendre de ses nouvelles. Margaux lui a raconté ses symptômes, et Chloé lui a proposé de passer la voir. Margaux pensait qu'elle allait l'examiner, mais Chloé lui parla seulement quelques minutes et lui conseilla de partir à la montagne. « Tu es folle ? » a répondu Margaux. « Non, tu es stressée. Si tu ne te reposes pas, tu vas vraiment tomber malade. À moins que tu préfères continuer comme ça ? » Margaux ne sait pas si c'est vrai, mais c'est une excellente excuse pour prendre des vacances !",

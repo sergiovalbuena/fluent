@@ -453,6 +453,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu préfères une bague en or ou en argent ?",
+      "kind": "question",
+      "bold": [
+        "bague",
+        "en or",
+        "en argent"
+      ],
+      "en": "Do you prefer a gold ring or a silver one?",
+      "es": "¿Prefieres un anillo de oro o de plata?"
+    },
+    {
+      "sentence": "Tu vas acheter le collier ou les boucles d'oreilles ?",
+      "kind": "question",
+      "bold": [
+        "collier",
+        "boucles d'oreilles"
+      ],
+      "en": "Are you going to buy the necklace or the earrings?",
+      "es": "¿Vas a comprar el collar o los pendientes?"
+    },
+    {
+      "sentence": "Pourquoi tu ne portes pas ton alliance ? Tu es allergique au métal ?",
+      "kind": "question",
+      "bold": [
+        "alliance",
+        "allergique"
+      ],
+      "en": "Why aren't you wearing your wedding ring? Are you allergic to the metal?",
+      "es": "¿Por qué no llevas tu alianza? ¿Eres alérgico al metal?"
+    },
+    {
+      "sentence": "Combien coûte ce solitaire avec un vrai diamant ?",
+      "kind": "question",
+      "bold": [
+        "solitaire",
+        "diamant"
+      ],
+      "en": "How much is this solitaire with a real diamond?",
+      "es": "¿Cuánto cuesta este solitario con un diamante de verdad?"
+    },
+    {
+      "sentence": "Quand est-ce que tu vas demander la main de ta fiancée ?",
+      "kind": "question",
+      "bold": [
+        "demander la main de"
+      ],
+      "en": "When are you going to ask for your fiancée's hand?",
+      "es": "¿Cuándo vas a pedir la mano de tu prometida?"
+    },
+    {
+      "sentence": "Je n'aime ni les rubis ni les émeraudes : je préfère les perles.",
+      "kind": "statement",
+      "bold": [
+        "ni les rubis ni les émeraudes"
+      ],
+      "en": "I like neither rubies nor emeralds: I prefer pearls.",
+      "es": "No me gustan ni los rubíes ni las esmeraldas: prefiero las perlas."
+    },
+    {
+      "sentence": "Je ne pouvais pas choisir entre les deux bracelets, alors j'ai acheté les deux.",
+      "kind": "statement",
+      "bold": [
+        "bracelets",
+        "les deux"
+      ],
+      "en": "I couldn't choose between the two bracelets, so I bought both.",
+      "es": "No podía elegir entre las dos pulseras, así que compré las dos."
+    },
+    {
+      "sentence": "Tu peux m'offrir un pendentif, à condition qu'il soit en or !",
+      "kind": "statement",
+      "bold": [
+        "pendentif",
+        "à condition qu'",
+        "soit"
+      ],
+      "en": "You can give me a pendant, provided it's gold!",
+      "es": "Puedes regalarme un colgante, ¡siempre que sea de oro!"
+    },
+    {
+      "sentence": "Elle porte toujours la bague que son mari lui avait offerte pour leurs dix ans.",
+      "kind": "statement",
+      "bold": [
+        "bague",
+        "avait offerte"
+      ],
+      "en": "She always wears the ring her husband had given her for their tenth anniversary.",
+      "es": "Siempre lleva el anillo que su marido le había regalado por sus diez años juntos."
+    },
+    {
+      "sentence": "La vendeuse sourit et nettoya le collier pour qu'il brille.",
+      "kind": "statement",
+      "bold": [
+        "sourit",
+        "nettoya",
+        "collier",
+        "brille"
+      ],
+      "en": "The saleswoman smiled and cleaned the necklace so it would shine.",
+      "es": "La vendedora sonrió y limpió el collar para que brillara."
+    }
+  ],
   "story": {
     "title": "La bague de fiançailles",
     "text": "Pendant un an, j'avais économisé pour acheter une bague de fiançailles à ma copine, Inès, et lui demander sa main. Elle était tombée amoureuse d'une bague avec un petit diamant qu'on avait vue dans une bijouterie d'Annecy, pendant nos vacances. Le mois dernier, je suis retourné à Annecy afin de l'acheter. Dans la bijouterie, j'ai demandé à la vendeuse la bague qu'Inès aimait. Par chance, c'était exactement sa taille. « Vous voulez aussi un écrin ? » me demanda-t-elle. « Oui, à condition qu'il ne soit pas trop cher ! » Je suis reparti tout content. Mais dans le train du retour, je me suis endormi. En arrivant à Lyon, j'ai cherché l'écrin dans ma poche : il n'était plus là ! J'étais effrayé : j'allais perdre tout l'argent que j'avais économisé. Je n'avais ni la bague ni le ticket de caisse. Soudain, une petite fille s'approcha de moi. « Monsieur, c'est à vous ? C'était tombé sous votre siège. » Je ne pouvais ni parler ni bouger, tellement j'étais soulagé. Le soir même, j'ai demandé Inès en mariage. Elle a dit oui… et elle ne sait toujours pas que la bague a voyagé toute seule sous un siège de train !",

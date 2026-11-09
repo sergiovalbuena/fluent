@@ -3,7 +3,8 @@
 // existing modules and lessons keep their ids, so learners keep their progress.
 // Modules of that language that no longer exist in content/ are removed with --prune.
 //
-// Usage: node --env-file=.env.local --experimental-strip-types scripts/load-course.mts es [--prune] [--dry-run]
+// Usage: node --env-file=.env.local --experimental-strip-types scripts/load-course.mts es [--prune] [--dry-run] [--only <type>]
+// --only qa: update just that activity of each lesson (module rows and other activities untouched).
 // Needs NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.
 
 import { createClient } from '@supabase/supabase-js'
@@ -14,6 +15,8 @@ type LessonRow = { type: string; title: string; content: unknown }
 const lang = process.argv[2]
 const prune = process.argv.includes('--prune')
 const dryRun = process.argv.includes('--dry-run')
+const onlyIdx = process.argv.indexOf('--only')
+const only = onlyIdx > -1 ? process.argv[onlyIdx + 1] : null
 if (!lang) {
   console.error('Usage: scripts/load-course.mts <language_code> [--prune] [--dry-run]')
   process.exit(1)
@@ -47,7 +50,9 @@ for (const file of courseFiles(lang)) {
     continue
   }
 
-  if (moduleId) {
+  if (only) {
+    if (!moduleId) { console.log(`skip ${row.slug}: not in the database (--only never creates)`); continue }
+  } else if (moduleId) {
     const { error } = await supabase.from('modules').update(row).eq('id', moduleId)
     if (error) throw error
     updated++
@@ -64,17 +69,19 @@ for (const file of courseFiles(lang)) {
 
   const lessons = lessonsFor(d) as LessonRow[]
   for (const [i, l] of lessons.entries()) {
+    if (only && l.type !== only) continue
     const values = { module_id: moduleId, type: l.type, title: l.title, content: l.content, order_index: i + 1, is_published: true }
     const id = byType.get(l.type)
     const { error } = id
       ? await supabase.from('lessons').update(values).eq('id', id)
       : await supabase.from('lessons').insert(values)
     if (error) throw new Error(`${row.slug} ${l.type}: ${error.message}`)
+    if (only) updated++
   }
 }
 
 const stale = [...bySlug].filter(([slug]) => !slugs.has(slug))
-if (stale.length) {
+if (stale.length && !only) {
   if (prune && !dryRun) {
     const { error } = await supabase.from('modules').delete().in('id', stale.map(([, id]) => id))
     if (error) throw error
@@ -83,4 +90,4 @@ if (stale.length) {
     console.log(`${stale.length} modules not in content/${lang} (use --prune to remove): ${stale.map(([s]) => s).join(', ')}`)
   }
 }
-console.log(dryRun ? 'dry run, nothing written' : `${lang}: ${created} modules created, ${updated} updated`)
+console.log(dryRun ? 'dry run, nothing written' : only ? `${lang}: ${updated} "${only}" activities updated` : `${lang}: ${created} modules created, ${updated} updated`)

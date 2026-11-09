@@ -475,6 +475,112 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Y a-t-il une autre chambre double libre, avec une meilleure vue ?",
+      "kind": "question",
+      "bold": [
+        "chambre double",
+        "vue"
+      ],
+      "en": "Is there another double room available, with a better view?",
+      "es": "¿Hay otra habitación doble libre, con mejores vistas?"
+    },
+    {
+      "sentence": "Pouvez-vous épeler votre nom, s'il vous plaît ?",
+      "kind": "question",
+      "bold": [
+        "épeler"
+      ],
+      "en": "Can you spell your name, please?",
+      "es": "¿Puede deletrear su nombre, por favor?"
+    },
+    {
+      "sentence": "Je peux régler la note en espèces ou par carte bancaire ?",
+      "kind": "question",
+      "bold": [
+        "régler",
+        "note",
+        "espèces",
+        "carte bancaire"
+      ],
+      "en": "Can I pay the bill in cash or by card?",
+      "es": "¿Puedo pagar la cuenta en efectivo o con tarjeta?"
+    },
+    {
+      "sentence": "À quel étage se trouve la piscine, et l'ascenseur y va ?",
+      "kind": "question",
+      "bold": [
+        "étage",
+        "piscine",
+        "ascenseur"
+      ],
+      "en": "Which floor is the pool on, and does the lift go there?",
+      "es": "¿En qué planta está la piscina y llega el ascensor hasta allí?"
+    },
+    {
+      "sentence": "Je me demandais où tu étais : tu étais à la réception ?",
+      "kind": "question",
+      "bold": [
+        "Je me demandais",
+        "réception"
+      ],
+      "en": "I was wondering where you were: were you at the reception desk?",
+      "es": "Me preguntaba dónde estabas: ¿estabas en la recepción?"
+    },
+    {
+      "sentence": "J'étais en train de me raser quand l'alarme incendie a sonné.",
+      "kind": "statement",
+      "bold": [
+        "J'étais en train de",
+        "raser",
+        "alarme incendie"
+      ],
+      "en": "I was shaving when the fire alarm went off.",
+      "es": "Me estaba afeitando cuando sonó la alarma de incendios."
+    },
+    {
+      "sentence": "Le bagagiste a monté les valises pendant que je payais le taxi.",
+      "kind": "statement",
+      "bold": [
+        "bagagiste",
+        "pendant que"
+      ],
+      "en": "The porter took the suitcases up while I paid the taxi.",
+      "es": "El botones subió las maletas mientras yo pagaba el taxi."
+    },
+    {
+      "sentence": "Le taxi s'arrêta devant l'hôtel et le groom ouvrit la porte.",
+      "kind": "statement",
+      "bold": [
+        "s'arrêta",
+        "groom",
+        "ouvrit"
+      ],
+      "en": "The taxi stopped in front of the hotel and the bellboy opened the door.",
+      "es": "El taxi se detuvo delante del hotel y el botones abrió la puerta."
+    },
+    {
+      "sentence": "Je suis content d'avoir changé de chambre : la vue est magnifique.",
+      "kind": "statement",
+      "bold": [
+        "Je suis content d'avoir changé",
+        "chambre"
+      ],
+      "en": "I'm glad I changed rooms: the view is magnificent.",
+      "es": "Me alegro de haber cambiado de habitación: las vistas son magníficas."
+    },
+    {
+      "sentence": "À minuit, il n'y avait personne d'autre que nous dans la piscine.",
+      "kind": "statement",
+      "bold": [
+        "il n'y avait personne d'autre que",
+        "piscine"
+      ],
+      "en": "At midnight, there was nobody but us in the pool.",
+      "es": "A medianoche no había nadie más que nosotros en la piscina."
+    }
+  ],
   "story": {
     "title": "Une nuit agitée",
     "text": "Il pleuvait encore quand nous sommes arrivés à l'hôtel, à Marseille. Le taxi s'arrêta devant l'entrée, et le bagagiste nous ouvrit la portière. Il a monté nos valises pendant que je payais le chauffeur. À la réception, Karine a épelé notre nom et a demandé une chambre avec vue sur la mer. Le réceptionniste nous a donné la clé de la chambre 512, au cinquième étage. Quand j'ai ouvert les rideaux, la vue sur le port était magnifique. Le soir, le ciel se dégagea et nous regardâmes les étoiles depuis le balcon. Vers trois heures du matin, nous étions en train de dormir profondément quand l'alarme incendie a sonné. Nous étions sur le point de prendre l'ascenseur quand Karine a crié : « Non, l'escalier ! » En moins de deux minutes, nous étions dans le hall… en pyjama. Cependant, il n'y avait personne d'autre que nous ! Le réceptionniste, très calme, nous a expliqué que c'était une erreur du système et que cela arrivait de temps en temps. Je me demandais pourquoi les autres clients n'étaient pas descendus. Nous rîmes beaucoup, et nous partîmes le lendemain avec une belle histoire à raconter.",

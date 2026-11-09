@@ -415,60 +415,101 @@
     {
       "sentence": "Pardon, pouvez-vous répéter ce que vous avez dit, s'il vous plaît ?",
       "kind": "question",
+      "bold": [
+        "Pardon",
+        "pouvez-vous répéter",
+        "vous avez dit",
+        "s'il vous plaît"
+      ],
       "en": "Sorry, could you repeat what you said, please?",
       "es": "Perdón, ¿puede repetir lo que dijo, por favor?"
     },
     {
       "sentence": "Pourrais-je avoir un thé bien chaud et un morceau de gâteau, s'il vous plaît ?",
       "kind": "question",
+      "bold": [
+        "Pourrais-je avoir",
+        "s'il vous plaît"
+      ],
       "en": "Could I have a nice hot tea and a piece of cake, please?",
       "es": "¿Podría tomar un té bien caliente y un trozo de pastel, por favor?"
     },
     {
       "sentence": "Est-ce que ça vous dérange si j'ouvre un peu la fenêtre ?",
       "kind": "question",
+      "bold": [
+        "Est-ce que",
+        "dérange"
+      ],
       "en": "Do you mind if I open the window a little?",
       "es": "¿Le molesta si abro un poco la ventana?"
     },
     {
       "sentence": "Excusez-moi, où y a-t-il une pharmacie près d'ici, s'il vous plaît ?",
       "kind": "question",
+      "bold": [
+        "Excusez-moi",
+        "s'il vous plaît"
+      ],
       "en": "Excuse me, where is there a pharmacy near here, please?",
       "es": "Disculpe, ¿dónde hay una farmacia cerca de aquí, por favor?"
     },
     {
       "sentence": "Puis-je vous aider à apporter ces tasses dans le jardin ?",
       "kind": "question",
+      "bold": [
+        "Puis-je vous aider"
+      ],
       "en": "May I help you carry these cups to the garden?",
       "es": "¿Puedo ayudarle a llevar estas tazas al jardín?"
     },
     {
       "sentence": "Merci beaucoup pour ce cadeau, c'est vraiment très aimable de votre part.",
       "kind": "statement",
+      "bold": [
+        "Merci beaucoup",
+        "cadeau",
+        "aimable"
+      ],
       "en": "Thank you very much for this gift, it's really very kind of you.",
       "es": "Muchas gracias por este regalo, es muy amable de su parte."
     },
     {
       "sentence": "Je suis désolée, je viens d'arriver et je ne connais personne ici.",
       "kind": "statement",
+      "bold": [
+        "Je suis désolée",
+        "viens d'arriver"
+      ],
       "en": "I'm sorry, I've just arrived and I don't know anyone here.",
       "es": "Lo siento, acabo de llegar y no conozco a nadie aquí."
     },
     {
       "sentence": "Ne vous inquiétez pas, vous ne me dérangez pas du tout.",
       "kind": "statement",
+      "bold": [
+        "Ne vous inquiétez pas",
+        "dérangez"
+      ],
       "en": "Don't worry, you're not bothering me at all.",
       "es": "No se preocupe, no me molesta en absoluto."
     },
     {
       "sentence": "Entrez, asseyez-vous et faites comme chez vous.",
       "kind": "statement",
+      "bold": [
+        "Entrez",
+        "asseyez-vous"
+      ],
       "en": "Come in, sit down and make yourself at home.",
       "es": "Pase, siéntese y siéntase como en su casa."
     },
     {
       "sentence": "Merci pour la soirée : on s'est bien amusés et le gâteau était délicieux.",
       "kind": "statement",
+      "bold": [
+        "on s'est bien amusés"
+      ],
       "en": "Thanks for the evening: we had a great time and the cake was delicious.",
       "es": "Gracias por la velada: nos divertimos mucho y el pastel estaba delicioso."
     }

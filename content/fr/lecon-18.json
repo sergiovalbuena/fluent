@@ -544,6 +544,111 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu joues au tennis le samedi, ou tu fais de la natation ?",
+      "kind": "question",
+      "bold": [
+        "joues au tennis",
+        "fais de la natation"
+      ],
+      "en": "Do you play tennis on Saturdays, or do you go swimming?",
+      "es": "¿Juegas al tenis los sábados o haces natación?"
+    },
+    {
+      "sentence": "Qui est le gardien de but de ton équipe cette saison ?",
+      "kind": "question",
+      "bold": [
+        "gardien de but",
+        "équipe"
+      ],
+      "en": "Who is your team's goalkeeper this season?",
+      "es": "¿Quién es el portero de tu equipo esta temporada?"
+    },
+    {
+      "sentence": "C'est à moi de frapper la balle, ou c'est ton tour ?",
+      "kind": "question",
+      "bold": [
+        "C'est à moi de",
+        "frapper",
+        "balle"
+      ],
+      "en": "Is it my turn to hit the ball, or is it yours?",
+      "es": "¿Me toca a mí golpear la pelota o es tu turno?"
+    },
+    {
+      "sentence": "Tu as pêché quelque chose ce matin au bord de la rivière ?",
+      "kind": "question",
+      "bold": [
+        "pêché"
+      ],
+      "en": "Did you catch anything this morning by the river?",
+      "es": "¿Pescaste algo esta mañana a orillas del río?"
+    },
+    {
+      "sentence": "Pourquoi tu transpires autant ? Tu as fait du jogging ?",
+      "kind": "question",
+      "bold": [
+        "transpires",
+        "fait du jogging"
+      ],
+      "en": "Why are you sweating so much? Have you been jogging?",
+      "es": "¿Por qué sudas tanto? ¿Has salido a correr?"
+    },
+    {
+      "sentence": "Bien que le rugby soit violent, c'est un sport très populaire en France.",
+      "kind": "statement",
+      "bold": [
+        "Bien que",
+        "rugby",
+        "soit"
+      ],
+      "en": "Although rugby is violent, it's a very popular sport in France.",
+      "es": "Aunque el rugby sea violento, es un deporte muy popular en Francia."
+    },
+    {
+      "sentence": "Pour courir, tu n'as besoin que d'une paire de baskets.",
+      "kind": "statement",
+      "bold": [
+        "tu n'as besoin que d'"
+      ],
+      "en": "To run, you only need a pair of sneakers.",
+      "es": "Para correr solo necesitas un par de zapatillas."
+    },
+    {
+      "sentence": "Je préfère l'équitation plutôt que le cyclisme.",
+      "kind": "statement",
+      "bold": [
+        "Je préfère",
+        "équitation",
+        "plutôt que",
+        "cyclisme"
+      ],
+      "en": "I prefer horse riding to cycling.",
+      "es": "Prefiero la equitación al ciclismo."
+    },
+    {
+      "sentence": "J'essayais de te rattraper, mais tu cours trop vite !",
+      "kind": "statement",
+      "bold": [
+        "J'essayais de",
+        "cours"
+      ],
+      "en": "I was trying to catch up with you, but you run too fast!",
+      "es": "Intentaba alcanzarte, ¡pero corres demasiado rápido!"
+    },
+    {
+      "sentence": "L'arbitre a sifflé la fin et notre équipe a gagné deux à un.",
+      "kind": "statement",
+      "bold": [
+        "arbitre",
+        "équipe",
+        "gagné"
+      ],
+      "en": "The referee blew the final whistle and our team won two to one.",
+      "es": "El árbitro pitó el final y nuestro equipo ganó dos a uno."
+    }
+  ],
   "story": {
     "title": "Le tournoi du quartier",
     "text": "Ce samedi, l'équipe de volley d'Inès joue la finale du tournoi du quartier. Malheureusement, leur entraîneur est malade. « Qui va nous diriger ? » demande Léo. « C'est à moi de le faire, je suis la capitaine », répond Inès. Avant le match, elle explique : « Bien que nos adversaires soient plus grands, nous pouvons gagner. Il faut rester calmes et jouer ensemble. » Le stade est plein. Pendant le premier set, l'autre équipe marque beaucoup de points. « Avance ! Recule ! Passe-la-moi ! » crie Inès. Au deuxième set, Clara se blesse à la cheville. « On a besoin d'une autre joueuse ! » Heureusement, la petite sœur d'Inès, qui faisait de la gymnastique quand elle était enfant, saute très haut. Elle n'a que quinze ans, mais elle est incroyable ! Score final : deux sets à un. L'arbitre siffle la fin du match. Tout le monde s'éclate. « Le sport, c'est d'abord pour s'amuser », dit Inès en souriant.",

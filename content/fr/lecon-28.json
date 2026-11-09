@@ -459,6 +459,107 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pourrais-je avoir un rendez-vous jeudi après-midi avec le docteur ?",
+      "kind": "question",
+      "bold": [
+        "Pourrais-je avoir",
+        "rendez-vous"
+      ],
+      "en": "Could I have an appointment with the doctor on Thursday afternoon?",
+      "es": "¿Podría tener una cita con el médico el jueves por la tarde?"
+    },
+    {
+      "sentence": "Est-ce que ton frère est venu hier, ou il est resté chez lui ?",
+      "kind": "question",
+      "bold": [
+        "est venu",
+        "il est resté"
+      ],
+      "en": "Did your brother come yesterday, or did he stay at home?",
+      "es": "¿Tu hermano vino ayer o se quedó en casa?"
+    },
+    {
+      "sentence": "À quelle heure commencent les heures de visite à l'hôpital ?",
+      "kind": "question",
+      "bold": [
+        "heures de visite"
+      ],
+      "en": "What time do visiting hours start at the hospital?",
+      "es": "¿A qué hora empieza el horario de visitas en el hospital?"
+    },
+    {
+      "sentence": "Tu peux m'accompagner chez le dentiste demain matin ?",
+      "kind": "question",
+      "bold": [
+        "accompagner"
+      ],
+      "en": "Can you come with me to the dentist tomorrow morning?",
+      "es": "¿Puedes acompañarme al dentista mañana por la mañana?"
+    },
+    {
+      "sentence": "Qui frappe à la porte à cette heure-ci, c'est le livreur ?",
+      "kind": "question",
+      "bold": [
+        "frappe à la porte",
+        "livreur"
+      ],
+      "en": "Who's knocking at the door at this hour, is it the delivery man?",
+      "es": "¿Quién llama a la puerta a estas horas, es el repartidor?"
+    },
+    {
+      "sentence": "Attendez qu'ils sortent de la réunion avant d'entrer.",
+      "kind": "statement",
+      "bold": [
+        "Attendez qu'",
+        "sortent",
+        "réunion"
+      ],
+      "en": "Wait until they come out of the meeting before going in.",
+      "es": "Esperen a que salgan de la reunión antes de entrar."
+    },
+    {
+      "sentence": "Dépêche-toi avant que les visites finissent !",
+      "kind": "statement",
+      "bold": [
+        "Dépêche-toi",
+        "avant que",
+        "finissent"
+      ],
+      "en": "Hurry up before visiting hours end!",
+      "es": "¡Date prisa antes de que terminen las visitas!"
+    },
+    {
+      "sentence": "Il est rare qu'une grippe dure aussi longtemps.",
+      "kind": "statement",
+      "bold": [
+        "Il est rare qu'",
+        "dure"
+      ],
+      "en": "It's rare for flu to last so long.",
+      "es": "Es raro que una gripe dure tanto tiempo."
+    },
+    {
+      "sentence": "Le médecin m'a dit de rester allongée et de boire beaucoup d'eau.",
+      "kind": "statement",
+      "bold": [
+        "m'a dit de"
+      ],
+      "en": "The doctor told me to stay lying down and drink lots of water.",
+      "es": "El médico me dijo que me quedara acostada y que bebiera mucha agua."
+    },
+    {
+      "sentence": "J'ai dû faire la queue pendant une heure, alors j'ai mis du temps à venir.",
+      "kind": "statement",
+      "bold": [
+        "faire la queue",
+        "j'ai mis du temps à"
+      ],
+      "en": "I had to queue for an hour, so it took me a while to come.",
+      "es": "Tuve que hacer cola durante una hora, así que tardé en venir."
+    }
+  ],
   "story": {
     "title": "Une visite inattendue",
     "text": "Madame Arnaud a quatre-vingts ans et elle habite seule dans un petit appartement à Nantes. Un mardi matin, en descendant de son lit, elle a glissé et elle est tombée. Elle avait très mal à la jambe et son téléphone était resté dans la cuisine. Elle a essayé de se lever, mais c'était impossible. Elle a attendu qu'un voisin passe, mais personne n'est venu. D'un moment à l'autre, quelqu'un a frappé à la porte. « Livraison ! » C'était le livreur qui apportait ses courses, comme tous les mardis. « Entrez, la porte est ouverte ! » a-t-elle crié. Le jeune homme est entré et il l'a trouvée par terre. Il lui a demandé si elle pouvait bouger la jambe, puis il lui a dit de ne pas se lever. Il a appelé les secours et il est resté avec elle jusqu'à ce que l'ambulance arrive. « Il faut que je vous remercie, vous m'avez sauvée ! » lui a-t-elle dit à l'hôpital. Depuis, chaque mardi, le livreur prend cinq minutes pour boire un café avec elle. « Je vous serai toujours reconnaissante », répète Madame Arnaud.",

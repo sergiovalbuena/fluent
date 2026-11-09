@@ -524,6 +524,111 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu as perdu un bouton : tu veux que je le couse ?",
+      "kind": "question",
+      "bold": [
+        "bouton",
+        "tu veux que je le couse"
+      ],
+      "en": "You've lost a button: do you want me to sew it on?",
+      "es": "Has perdido un botón: ¿quieres que te lo cosa?"
+    },
+    {
+      "sentence": "Est-ce que cette veste en cuir me va bien, ou elle est trop grande ?",
+      "kind": "question",
+      "bold": [
+        "veste en cuir",
+        "va bien"
+      ],
+      "en": "Does this leather jacket suit me, or is it too big?",
+      "es": "¿Me queda bien esta chaqueta de cuero, o es demasiado grande?"
+    },
+    {
+      "sentence": "Tu as un parapluie à me prêter, ou tu n'en as pas ?",
+      "kind": "question",
+      "bold": [
+        "parapluie",
+        "tu n'en as pas"
+      ],
+      "en": "Do you have an umbrella to lend me, or don't you have one?",
+      "es": "¿Tienes un paraguas para prestarme o no tienes?"
+    },
+    {
+      "sentence": "Qu'est-ce que je mets pour l'entretien : un costume et une cravate, ou un jean ?",
+      "kind": "question",
+      "bold": [
+        "costume",
+        "cravate",
+        "jean"
+      ],
+      "en": "What should I wear for the interview: a suit and tie, or jeans?",
+      "es": "¿Qué me pongo para la entrevista: traje y corbata, o vaqueros?"
+    },
+    {
+      "sentence": "Où as-tu acheté ce pull en laine et cette écharpe ?",
+      "kind": "question",
+      "bold": [
+        "pull en laine",
+        "écharpe"
+      ],
+      "en": "Where did you buy this wool sweater and this scarf?",
+      "es": "¿Dónde compraste este jersey de lana y esta bufanda?"
+    },
+    {
+      "sentence": "Mets ton bonnet et tes gants, il fait très froid dehors !",
+      "kind": "statement",
+      "bold": [
+        "Mets ton bonnet",
+        "tes gants"
+      ],
+      "en": "Put on your hat and gloves, it's very cold outside!",
+      "es": "¡Ponte el gorro y los guantes, hace mucho frío fuera!"
+    },
+    {
+      "sentence": "Mets tes bottes, sinon tu vas avoir froid aux pieds dans la neige.",
+      "kind": "statement",
+      "bold": [
+        "Mets tes bottes",
+        "sinon tu vas avoir"
+      ],
+      "en": "Put on your boots, otherwise your feet will get cold in the snow.",
+      "es": "Ponte las botas, si no se te van a enfriar los pies en la nieve."
+    },
+    {
+      "sentence": "Il faut bien s'habiller pour un entretien, mais sans nœud papillon !",
+      "kind": "statement",
+      "bold": [
+        "Il faut bien s'habiller",
+        "nœud papillon"
+      ],
+      "en": "You have to dress well for an interview, but without a bow tie!",
+      "es": "Hay que vestirse bien para una entrevista, ¡pero sin pajarita!"
+    },
+    {
+      "sentence": "Dans le métro, on m'a volé mon sac à main avec tout dedans.",
+      "kind": "statement",
+      "bold": [
+        "on m'a volé",
+        "sac à main"
+      ],
+      "en": "On the metro, someone stole my handbag with everything in it.",
+      "es": "En el metro me robaron el bolso con todo dentro."
+    },
+    {
+      "sentence": "Cette robe en soie te va très bien avec ces sandales.",
+      "kind": "statement",
+      "bold": [
+        "robe",
+        "soie",
+        "te va",
+        "sandales"
+      ],
+      "en": "This silk dress looks great on you with those sandals.",
+      "es": "Este vestido de seda te queda muy bien con esas sandalias."
+    }
+  ],
   "story": {
     "title": "La valise pour Québec",
     "text": "Théo est étudiant à Marseille. En janvier, il va passer un semestre à Québec, et il prépare sa valise. Sa mère l'aide : « Là-bas, il fait moins vingt en hiver ! Il faut que tu prennes des vêtements chauds. » Théo met dans la valise deux pulls en laine, un anorak, un bonnet, une écharpe et des gants. « Et tes bottes ? Sinon, tu vas avoir froid aux pieds ! » Pour aller à l'université, il préfère être simple : un jean, un tee-shirt et des baskets. Mais pour les présentations, il faut bien s'habiller, alors il prend aussi une chemise blanche et une veste. « Cette veste te va très bien », dit sa mère. Soudain, Théo remarque qu'il a perdu un bouton. « Tu veux que je le couse ? » demande sa mère. « Oui, merci ! » Le soir, la valise ne ferme plus. « Je crois qu'il y a trop de vêtements… », dit Théo. Sa mère rit : « Mieux vaut avoir trop chaud que trop froid ! »",

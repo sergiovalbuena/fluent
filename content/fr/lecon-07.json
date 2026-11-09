@@ -454,6 +454,112 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Te souviens-tu de la maison de vacances de nos grands-parents ?",
+      "kind": "question",
+      "bold": [
+        "Te souviens-tu de"
+      ],
+      "en": "Do you remember our grandparents' holiday home?",
+      "es": "¿Te acuerdas de la casa de vacaciones de nuestros abuelos?"
+    },
+    {
+      "sentence": "Qu'est-ce que tu as dans ton salon, à part le canapé et la télé ?",
+      "kind": "question",
+      "bold": [
+        "salon",
+        "canapé"
+      ],
+      "en": "What do you have in your living room, besides the sofa and the TV?",
+      "es": "¿Qué tienes en tu salón, además del sofá y la tele?"
+    },
+    {
+      "sentence": "Tu préfères faire cuire le repas ou faire la vaisselle après ?",
+      "kind": "question",
+      "bold": [
+        "faire cuire",
+        "repas",
+        "faire la vaisselle"
+      ],
+      "en": "Do you prefer cooking the meal or doing the dishes afterwards?",
+      "es": "¿Prefieres cocinar la comida o lavar los platos después?"
+    },
+    {
+      "sentence": "Qui doit passer l'aspirateur dans la chambre cette semaine ?",
+      "kind": "question",
+      "bold": [
+        "doit passer l'aspirateur",
+        "la chambre"
+      ],
+      "en": "Who has to vacuum the bedroom this week?",
+      "es": "¿Quién tiene que pasar la aspiradora en el dormitorio esta semana?"
+    },
+    {
+      "sentence": "Pourquoi la moquette du séjour est-elle si sale ?",
+      "kind": "question",
+      "bold": [
+        "la moquette",
+        "séjour",
+        "sale"
+      ],
+      "en": "Why is the living-room carpet so dirty?",
+      "es": "¿Por qué está tan sucia la moqueta del salón?"
+    },
+    {
+      "sentence": "Le chat est en train de dormir sur le lit de mon fils.",
+      "kind": "statement",
+      "bold": [
+        "est en train de dormir",
+        "le lit"
+      ],
+      "en": "The cat is sleeping on my son's bed.",
+      "es": "El gato está durmiendo en la cama de mi hijo."
+    },
+    {
+      "sentence": "La cuisine était propre jusqu'à ce que tu commences à faire des crêpes.",
+      "kind": "statement",
+      "bold": [
+        "La cuisine",
+        "propre",
+        "jusqu'à ce que",
+        "commences"
+      ],
+      "en": "The kitchen was clean until you started making crêpes.",
+      "es": "La cocina estaba limpia hasta que empezaste a hacer crepes."
+    },
+    {
+      "sentence": "Mets tes vêtements dans la machine à laver et fais le ménage, s'il te plaît.",
+      "kind": "statement",
+      "bold": [
+        "la machine à laver",
+        "fais le ménage"
+      ],
+      "en": "Put your clothes in the washing machine and do the housework, please.",
+      "es": "Mete tu ropa en la lavadora y haz la limpieza, por favor."
+    },
+    {
+      "sentence": "Chez mes amis, je me sens toujours à l'aise : leur maison est très accueillante.",
+      "kind": "statement",
+      "bold": [
+        "je me sens",
+        "à l'aise",
+        "accueillante"
+      ],
+      "en": "At my friends' place, I always feel at ease: their house is very welcoming.",
+      "es": "En casa de mis amigos siempre me siento a gusto: su casa es muy acogedora."
+    },
+    {
+      "sentence": "Nous n'avons ni garage ni cour, mais nous avons une grande bibliothèque.",
+      "kind": "statement",
+      "bold": [
+        "ni garage ni cour",
+        "bibliothèque"
+      ],
+      "en": "We have neither a garage nor a yard, but we have a big bookcase.",
+      "es": "No tenemos ni garaje ni patio, pero tenemos una gran estantería."
+    }
+  ],
   "story": {
     "title": "La colocation de Yasmine",
     "text": "Salut, tu te souviens de moi ? Je suis Yasmine. J'adore être chez moi, dans mon petit appartement de Montpellier. J'habite avec mon amie Clara et notre chien, Biscotte. Le soir, nous aimons regarder des films sur le canapé et préparer des repas ensemble. Clara cuisine mieux que moi, mais j'aime plus la pâtisserie qu'elle ! Nous ne sommes ni riches ni pauvres, mais nous sommes heureuses. Chaque semaine, nous avons des tâches : je dois passer l'aspirateur et sortir le chien ; Clara doit faire la vaisselle et nettoyer la salle de bains. Hier, l'appartement était propre jusqu'à ce que Biscotte rentre de la cour avec les pattes sales. Maintenant, il est en train de dormir sur mon lit ! Demain, nous laverons tout. Chez nous, je me sens toujours à l'aise.",

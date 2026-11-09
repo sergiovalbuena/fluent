@@ -539,6 +539,111 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Combien de temps la Terre met-elle pour tourner autour du Soleil ?",
+      "kind": "question",
+      "bold": [
+        "Terre",
+        "Soleil"
+      ],
+      "en": "How long does the Earth take to go around the Sun?",
+      "es": "¿Cuánto tarda la Tierra en dar la vuelta al Sol?"
+    },
+    {
+      "sentence": "Quel est le plus grand désert chaud du monde, le Sahara ou le Kalahari ?",
+      "kind": "question",
+      "bold": [
+        "le plus grand désert"
+      ],
+      "en": "What is the largest hot desert in the world, the Sahara or the Kalahari?",
+      "es": "¿Cuál es el desierto cálido más grande del mundo, el Sáhara o el Kalahari?"
+    },
+    {
+      "sentence": "Tu crois avoir vu un OVNI hier soir, vraiment ?",
+      "kind": "question",
+      "bold": [
+        "crois avoir vu",
+        "OVNI"
+      ],
+      "en": "You think you saw a UFO last night, really?",
+      "es": "¿De verdad crees haber visto un ovni anoche?"
+    },
+    {
+      "sentence": "Est-ce que la marée monte vite sur cette plage ?",
+      "kind": "question",
+      "bold": [
+        "marée",
+        "plage"
+      ],
+      "en": "Does the tide come in fast on this beach?",
+      "es": "¿Sube rápido la marea en esta playa?"
+    },
+    {
+      "sentence": "Combien de planètes y a-t-il dans notre système solaire ?",
+      "kind": "question",
+      "bold": [
+        "planètes",
+        "système solaire"
+      ],
+      "en": "How many planets are there in our solar system?",
+      "es": "¿Cuántos planetas hay en nuestro sistema solar?"
+    },
+    {
+      "sentence": "En regardant le ciel la nuit, on peut voir des milliers d'étoiles.",
+      "kind": "statement",
+      "bold": [
+        "En regardant",
+        "ciel",
+        "étoiles"
+      ],
+      "en": "Looking at the sky at night, you can see thousands of stars.",
+      "es": "Mirando el cielo de noche se pueden ver miles de estrellas."
+    },
+    {
+      "sentence": "La Terre est menacée par la pollution et le changement climatique.",
+      "kind": "statement",
+      "bold": [
+        "Terre",
+        "est menacée par"
+      ],
+      "en": "The Earth is threatened by pollution and climate change.",
+      "es": "La Tierra está amenazada por la contaminación y el cambio climático."
+    },
+    {
+      "sentence": "Un tremblement de terre s'est produit hier près de la côte.",
+      "kind": "statement",
+      "bold": [
+        "tremblement de terre",
+        "s'est produit",
+        "côte"
+      ],
+      "en": "An earthquake happened yesterday near the coast.",
+      "es": "Ayer hubo un terremoto cerca de la costa."
+    },
+    {
+      "sentence": "Il faut agir afin de protéger les océans et les montagnes.",
+      "kind": "statement",
+      "bold": [
+        "afin de",
+        "océans",
+        "montagnes"
+      ],
+      "en": "We must act in order to protect the oceans and the mountains.",
+      "es": "Hay que actuar para proteger los océanos y las montañas."
+    },
+    {
+      "sentence": "Espérons que la science nous aidera à mieux comprendre l'univers.",
+      "kind": "statement",
+      "bold": [
+        "Espérons que",
+        "aidera",
+        "univers"
+      ],
+      "en": "Let's hope science will help us understand the universe better.",
+      "es": "Esperemos que la ciencia nos ayude a entender mejor el universo."
+    }
+  ],
   "story": {
     "title": "Une nuit à l'observatoire",
     "text": "Pendant les vacances, Jules et sa grand-mère passent une nuit à l'observatoire du Pic du Midi, dans les Pyrénées. En montant en téléphérique, ils voient le paysage changer : les vallées, les lacs, puis les montagnes couvertes de neige. Au sommet, l'air est pur et le ciel est rempli d'étoiles. Une astronome leur montre Jupiter et ses satellites, puis Saturne et ses anneaux. « Saturne est la planète la plus belle du système solaire », dit-elle. Jules regarde la Lune : « On dirait un désert plein de rochers ! » Plus tard, il crie : « Je crois avoir vu un OVNI ! » L'astronome rit : « C'est la Station spatiale internationale. Elle fait le tour de la Terre en quatre-vingt-dix minutes environ. » Avant de dormir, sa grand-mère lui explique que la Terre est menacée par la pollution et qu'il faut agir afin de la protéger. « Espérons que les scientifiques trouveront des solutions », dit Jules. « Et toi aussi, peut-être, un jour ! » répond sa grand-mère.",

@@ -524,6 +524,115 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Excusez-moi, savez-vous où se trouve l'hôpital le plus proche ?",
+      "kind": "question",
+      "bold": [
+        "savez-vous où se trouve",
+        "hôpital"
+      ],
+      "en": "Excuse me, do you know where the nearest hospital is?",
+      "es": "Disculpe, ¿sabe dónde está el hospital más cercano?"
+    },
+    {
+      "sentence": "Pour aller au musée, je dois prendre le bus ou le métro ?",
+      "kind": "question",
+      "bold": [
+        "musée",
+        "dois",
+        "bus"
+      ],
+      "en": "To get to the museum, do I have to take the bus or the metro?",
+      "es": "Para ir al museo, ¿tengo que coger el autobús o el metro?"
+    },
+    {
+      "sentence": "Tu habites dans le centre-ville ou dans un quartier plus calme ?",
+      "kind": "question",
+      "bold": [
+        "centre-ville",
+        "quartier"
+      ],
+      "en": "Do you live downtown or in a quieter neighborhood?",
+      "es": "¿Vives en el centro o en un barrio más tranquilo?"
+    },
+    {
+      "sentence": "Quand est-ce que cette église a été construite ?",
+      "kind": "question",
+      "bold": [
+        "église",
+        "a été construite"
+      ],
+      "en": "When was this church built?",
+      "es": "¿Cuándo se construyó esta iglesia?"
+    },
+    {
+      "sentence": "Pourquoi est-ce qu'il y a toujours un embouteillage devant la poste ?",
+      "kind": "question",
+      "bold": [
+        "embouteillage",
+        "poste"
+      ],
+      "en": "Why is there always a traffic jam in front of the post office?",
+      "es": "¿Por qué siempre hay un atasco delante de correos?"
+    },
+    {
+      "sentence": "Prenez la deuxième rue à gauche, puis tournez à droite au feu.",
+      "kind": "statement",
+      "bold": [
+        "Prenez",
+        "rue",
+        "tournez",
+        "feu"
+      ],
+      "en": "Take the second street on the left, then turn right at the traffic light.",
+      "es": "Tome la segunda calle a la izquierda y luego gire a la derecha en el semáforo."
+    },
+    {
+      "sentence": "Avant, ce quartier était calme ; maintenant, il est très bruyant.",
+      "kind": "statement",
+      "bold": [
+        "Avant, ce quartier était",
+        "bruyant"
+      ],
+      "en": "This neighborhood used to be quiet; now it's very noisy.",
+      "es": "Antes este barrio era tranquilo; ahora es muy ruidoso."
+    },
+    {
+      "sentence": "J'adore Paris : on y trouve des musées, des théâtres et des parcs partout.",
+      "kind": "statement",
+      "bold": [
+        "on y trouve",
+        "musées",
+        "théâtres",
+        "parcs"
+      ],
+      "en": "I love Paris: you find museums, theatres and parks everywhere.",
+      "es": "Me encanta París: hay museos, teatros y parques por todas partes."
+    },
+    {
+      "sentence": "Ma famille s'est installée dans cette ville il y a cent ans.",
+      "kind": "statement",
+      "bold": [
+        "ville",
+        "il y a"
+      ],
+      "en": "My family settled in this town a hundred years ago.",
+      "es": "Mi familia se instaló en esta ciudad hace cien años."
+    },
+    {
+      "sentence": "Malgré le bruit et la pollution, je préfère vivre en ville.",
+      "kind": "statement",
+      "bold": [
+        "Malgré",
+        "bruit",
+        "pollution",
+        "ville"
+      ],
+      "en": "Despite the noise and the pollution, I prefer living in the city.",
+      "es": "A pesar del ruido y la contaminación, prefiero vivir en la ciudad."
+    }
+  ],
   "story": {
     "title": "Le premier jour de Sami à Lyon",
     "text": "Sami vient d'arriver à Lyon pour son nouveau travail. Il habite dans un petit appartement au cinquième étage d'un vieil immeuble, dans le quartier de la Croix-Rousse. Ce matin, il veut découvrir la ville. Il demande à une voisine : « Excusez-moi, pour aller au musée des Beaux-Arts ? » « Descendez la rue jusqu'à la place, prenez le métro ligne C, puis marchez tout droit pendant cinq minutes. Le musée est en face de l'hôtel de ville, vous ne pouvez pas le manquer. » Dans le métro, Sami regarde le plan. Il y a beaucoup de monde et de bruit. Le musée est magnifique : il a été construit il y a plus de trois cents ans. L'après-midi, il se promène le long du Rhône. Une dame âgée lui raconte : « Avant, ce quartier était plein d'usines ; maintenant, il y a des parcs et des cafés. » Le soir, Sami est fatigué, mais content. Malgré la circulation et les embouteillages, il aime déjà Lyon : on y trouve de tout !",

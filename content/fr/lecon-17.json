@@ -544,6 +544,113 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu veux de la papaye, ou tu préfères plutôt une pomme ?",
+      "kind": "question",
+      "bold": [
+        "papaye",
+        "tu préfères plutôt",
+        "pomme"
+      ],
+      "en": "Do you want some papaya, or would you rather have an apple?",
+      "es": "¿Quieres papaya o prefieres más bien una manzana?"
+    },
+    {
+      "sentence": "Cette salade de lentilles est délicieuse : comment l'as-tu assaisonnée ?",
+      "kind": "question",
+      "bold": [
+        "lentilles",
+        "comment l'as-tu assaisonnée"
+      ],
+      "en": "This lentil salad is delicious: how did you season it?",
+      "es": "Esta ensalada de lentejas está deliciosa: ¿cómo la aliñaste?"
+    },
+    {
+      "sentence": "Est-ce que ces pêches sont mûres, ou il faut attendre un peu ?",
+      "kind": "question",
+      "bold": [
+        "pêches",
+        "mûres"
+      ],
+      "en": "Are these peaches ripe, or do we need to wait a bit?",
+      "es": "¿Estos melocotones están maduros o hay que esperar un poco?"
+    },
+    {
+      "sentence": "Tu as mal au ventre ? Tu veux un thé à la menthe ?",
+      "kind": "question",
+      "bold": [
+        "menthe"
+      ],
+      "en": "Does your stomach hurt? Do you want a mint tea?",
+      "es": "¿Te duele la barriga? ¿Quieres un té de menta?"
+    },
+    {
+      "sentence": "Qu'est-ce que tu mets dans ta ratatouille : des courgettes, des aubergines et des poivrons ?",
+      "kind": "question",
+      "bold": [
+        "courgettes",
+        "aubergines",
+        "poivrons"
+      ],
+      "en": "What do you put in your ratatouille: zucchini, eggplant and peppers?",
+      "es": "¿Qué le pones a tu ratatouille: calabacines, berenjenas y pimientos?"
+    },
+    {
+      "sentence": "Si tu manges des fraises et des oranges, tu auras beaucoup de vitamine C.",
+      "kind": "statement",
+      "bold": [
+        "Si tu manges",
+        "fraises",
+        "oranges",
+        "tu auras"
+      ],
+      "en": "If you eat strawberries and oranges, you'll get plenty of vitamin C.",
+      "es": "Si comes fresas y naranjas, tendrás mucha vitamina C."
+    },
+    {
+      "sentence": "Ce soir, je ferai une soupe de carottes et de pommes de terre.",
+      "kind": "statement",
+      "bold": [
+        "je ferai",
+        "carottes",
+        "pommes de terre"
+      ],
+      "en": "Tonight I'll make a carrot and potato soup.",
+      "es": "Esta noche haré una sopa de zanahorias y patatas."
+    },
+    {
+      "sentence": "Il est conseillé de manger cinq fruits et légumes par jour.",
+      "kind": "statement",
+      "bold": [
+        "Il est conseillé de",
+        "fruits",
+        "légumes"
+      ],
+      "en": "It's recommended to eat five fruits and vegetables a day.",
+      "es": "Se aconseja comer cinco frutas y verduras al día."
+    },
+    {
+      "sentence": "Ne mange pas tant d'amandes avant le dîner !",
+      "kind": "statement",
+      "bold": [
+        "Ne mange pas tant d'"
+      ],
+      "en": "Don't eat so many almonds before dinner!",
+      "es": "¡No comas tantas almendras antes de la cena!"
+    },
+    {
+      "sentence": "Mélange les petits pois avec le riz et ajoute un peu de persil.",
+      "kind": "statement",
+      "bold": [
+        "Mélange",
+        "petits pois",
+        "persil"
+      ],
+      "en": "Mix the peas with the rice and add a little parsley.",
+      "es": "Mezcla los guisantes con el arroz y añade un poco de perejil."
+    }
+  ],
   "story": {
     "title": "Le marché du samedi",
     "text": "Tous les samedis, Amélie va au marché de son quartier, à Rennes. Elle dit toujours : « Si tu manges des fruits et des légumes de saison, tu seras en meilleure forme et tu dépenseras moins ! » Ce matin, elle achète des tomates, de la laitue, des courgettes et des oignons chez son maraîcher préféré. « Ces fraises sont bien mûres, elles viennent d'arriver », dit le vendeur. Amélie en prend une barquette. À la maison, elle prépare une ratatouille : « Coupe les aubergines et les poivrons, fais revenir l'oignon et l'ail dans l'huile d'olive, puis ajoute les tomates. » Son fils Noé goûte la sauce. « Comment l'as-tu assaisonnée ? » « Avec du sel, du poivre, du thym et du laurier. » Noé préfère les desserts. « Ne mange pas tant de fraises avant le repas ! » rit sa mère. Il est conseillé de manger des légumes variés et de boire beaucoup d'eau, mais chez Amélie, la règle d'or est simple : il faut que ce soit bon !",

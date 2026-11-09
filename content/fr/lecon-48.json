@@ -473,6 +473,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu vas faire le dépôt aujourd'hui, ou quand ton père te donnera le chèque ?",
+      "kind": "question",
+      "bold": [
+        "faire le dépôt",
+        "quand",
+        "donnera",
+        "chèque"
+      ],
+      "en": "Are you going to make the deposit today, or when your father gives you the check?",
+      "es": "¿Vas a hacer el ingreso hoy o cuando tu padre te dé el cheque?"
+    },
+    {
+      "sentence": "Je voudrais ouvrir un compte épargne : quels documents faut-il apporter ?",
+      "kind": "question",
+      "bold": [
+        "ouvrir un compte",
+        "épargne"
+      ],
+      "en": "I'd like to open a savings account: what documents do I need to bring?",
+      "es": "Quisiera abrir una cuenta de ahorro: ¿qué documentos hay que traer?"
+    },
+    {
+      "sentence": "Quel est le plafond de retrait de ma carte bancaire ?",
+      "kind": "question",
+      "bold": [
+        "plafond",
+        "retrait",
+        "carte bancaire"
+      ],
+      "en": "What's the withdrawal limit on my bank card?",
+      "es": "¿Cuál es el límite de retirada de mi tarjeta bancaria?"
+    },
+    {
+      "sentence": "Pourquoi mon compte courant est-il à découvert ce mois-ci ?",
+      "kind": "question",
+      "bold": [
+        "compte courant",
+        "à découvert"
+      ],
+      "en": "Why is my checking account overdrawn this month?",
+      "es": "¿Por qué está mi cuenta corriente en descubierto este mes?"
+    },
+    {
+      "sentence": "Je n'ai plus d'espèces : où est le distributeur le plus proche ?",
+      "kind": "question",
+      "bold": [
+        "espèces",
+        "distributeur"
+      ],
+      "en": "I'm out of cash: where's the nearest ATM?",
+      "es": "No me queda efectivo: ¿dónde está el cajero más cercano?"
+    },
+    {
+      "sentence": "Si la banque me refuse le prêt, je devrai chercher une autre banque.",
+      "kind": "statement",
+      "bold": [
+        "me refuse",
+        "prêt",
+        "je devrai"
+      ],
+      "en": "If the bank refuses me the loan, I'll have to look for another bank.",
+      "es": "Si el banco me niega el préstamo, tendré que buscar otro banco."
+    },
+    {
+      "sentence": "Lorsque tu auras reçu ta nouvelle carte, tu pourras choisir ton code.",
+      "kind": "statement",
+      "bold": [
+        "Lorsque tu auras reçu",
+        "code"
+      ],
+      "en": "When you've received your new card, you'll be able to choose your PIN.",
+      "es": "Cuando hayas recibido tu nueva tarjeta, podrás elegir tu PIN."
+    },
+    {
+      "sentence": "Appelle ton fils avant qu'il n'ait tout dépensé !",
+      "kind": "statement",
+      "bold": [
+        "avant qu'il n'ait",
+        "dépensé"
+      ],
+      "en": "Call your son before he's spent everything!",
+      "es": "¡Llama a tu hijo antes de que se lo haya gastado todo!"
+    },
+    {
+      "sentence": "Après avoir rempli le formulaire, il faut mettre ta signature en bas.",
+      "kind": "statement",
+      "bold": [
+        "Après avoir rempli",
+        "formulaire",
+        "signature"
+      ],
+      "en": "After filling in the form, you have to put your signature at the bottom.",
+      "es": "Después de rellenar el formulario, tienes que poner tu firma abajo."
+    },
+    {
+      "sentence": "J'épargne un peu chaque mois pour que mes enfants puissent faire des études.",
+      "kind": "statement",
+      "bold": [
+        "épargne",
+        "pour que",
+        "puissent"
+      ],
+      "en": "I save a little each month so that my children can go to university.",
+      "es": "Ahorro un poco cada mes para que mis hijos puedan estudiar."
+    }
+  ],
   "story": {
     "title": "Un prêt pour un café",
     "text": "Inès rêve d'ouvrir un petit café à Bordeaux. Après avoir envoyé une demande de prêt en ligne, elle a reçu un message de sa banque qui lui demandait de venir à l'agence la plus proche avec ses trois derniers relevés de compte et une lettre de son ancien employeur. Quand elle est arrivée, la caissière lui a dit d'aller au bureau du conseiller. « Bonjour, Madame Laurent. Asseyez-vous, je vous en prie. Nous devons remplir ces formulaires et vérifier vos antécédents bancaires. » « D'accord, commençons. » « Il y a un petit problème. Sur votre relevé de mars, il y a un retrait de deux mille euros, et votre compte a été à découvert pendant dix jours. » « Oui, mais c'était pour payer un cours de pâtisserie. Mon frère m'a fait un virement la semaine suivante. » Le conseiller vérifie sur son écran. « Vous avez raison. Dans ce cas, si vous signez ici, nous pourrons vous accorder le prêt. Quand nous aurons reçu tous les documents, l'argent sera viré sur votre compte. » « Merci beaucoup ! Je pourrai vous inviter à prendre un café quand j'aurai ouvert ! »",

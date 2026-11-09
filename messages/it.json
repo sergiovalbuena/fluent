@@ -182,8 +182,7 @@
     "show_translation": "Mostra traduzione",
     "hide_translation": "Nascondi traduzione",
     "listen": "Ascolta",
-    "practice_sentences": "{count} frasi di fila",
-    "sentence_question": "Domanda"
+    "practice_sentences": "{count} frasi di fila"
   },
   "gems": {
     "title": "Gemme",

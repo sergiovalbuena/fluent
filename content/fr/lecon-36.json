@@ -473,6 +473,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu vas te promener avec le chien ce soir, ou il pleut trop ?",
+      "kind": "question",
+      "bold": [
+        "vas te promener"
+      ],
+      "en": "Are you going for a walk with the dog tonight, or is it raining too hard?",
+      "es": "¿Vas a pasear con el perro esta noche o llueve demasiado?"
+    },
+    {
+      "sentence": "Qui sortira les gâteaux du four dès qu'ils seront prêts ?",
+      "kind": "question",
+      "bold": [
+        "sortira",
+        "dès qu'",
+        "seront"
+      ],
+      "en": "Who will take the cakes out of the oven as soon as they're ready?",
+      "es": "¿Quién sacará los pasteles del horno en cuanto estén listos?"
+    },
+    {
+      "sentence": "Quand vas-tu leur présenter ta fiancée ?",
+      "kind": "question",
+      "bold": [
+        "vas-tu",
+        "présenter"
+      ],
+      "en": "When are you going to introduce your fiancée to them?",
+      "es": "¿Cuándo vas a presentarles a tu prometida?"
+    },
+    {
+      "sentence": "Tu es au courant de la promenade organisée samedi ?",
+      "kind": "question",
+      "bold": [
+        "es au courant",
+        "promenade"
+      ],
+      "en": "Do you know about the walk organized on Saturday?",
+      "es": "¿Estás al tanto del paseo organizado el sábado?"
+    },
+    {
+      "sentence": "On peut partager un taxi pour ramener les enfants ?",
+      "kind": "question",
+      "bold": [
+        "partager",
+        "ramener"
+      ],
+      "en": "Can we share a taxi to bring the children back?",
+      "es": "¿Podemos compartir un taxi para llevar a los niños de vuelta?"
+    },
+    {
+      "sentence": "Je la leur présenterai dimanche, pendant la promenade au parc.",
+      "kind": "statement",
+      "bold": [
+        "Je la leur présenterai",
+        "promenade"
+      ],
+      "en": "I'll introduce her to them on Sunday, during the walk in the park.",
+      "es": "Se la presentaré el domingo, durante el paseo por el parque."
+    },
+    {
+      "sentence": "Quand nous arriverons, le spectacle aura déjà commencé.",
+      "kind": "statement",
+      "bold": [
+        "aura",
+        "commencé"
+      ],
+      "en": "When we arrive, the show will already have started.",
+      "es": "Cuando lleguemos, el espectáculo ya habrá empezado."
+    },
+    {
+      "sentence": "Demain, mes parents nous emmèneront voir les clowns au cirque.",
+      "kind": "statement",
+      "bold": [
+        "emmèneront",
+        "clowns"
+      ],
+      "en": "Tomorrow, my parents will take us to see the clowns at the circus.",
+      "es": "Mañana mis padres nos llevarán a ver a los payasos al circo."
+    },
+    {
+      "sentence": "Il se peut que personne ne te voie dans cette foule.",
+      "kind": "statement",
+      "bold": [
+        "Il se peut que",
+        "voie",
+        "foule"
+      ],
+      "en": "It's possible no one will see you in this crowd.",
+      "es": "Puede que nadie te vea entre esta multitud."
+    },
+    {
+      "sentence": "Fais attention à ne pas tomber : le sol est glissant.",
+      "kind": "statement",
+      "bold": [
+        "Fais attention à",
+        "tomber"
+      ],
+      "en": "Be careful not to fall: the ground is slippery.",
+      "es": "Ten cuidado de no caerte: el suelo resbala."
+    }
+  ],
   "story": {
     "title": "Demain, au parc",
     "text": "Ce soir, Mamie raconte à son petit-fils Noé tout ce qu'ils feront demain. « D'abord, nous irons nous promener au parc de la Tête d'Or. Quand nous arriverons, les jardiniers seront en train d'arroser les fleurs. Tu verras les canards sur le lac et je te montrerai les girafes du petit zoo. À midi, nous aurons déjà marché pendant deux heures, alors nous mangerons une glace. L'après-midi, des clowns raconteront des histoires et feront rire tout le monde jusqu'à ce que les gens se plient en deux. Les enfants seront en train de gonfler des ballons et de courir partout. Tes parents nous rejoindront vers cinq heures ; à ce moment-là, tu auras sûrement déjà mangé deux crêpes ! » Noé sourit : « Et s'il pleut ? » « Il se peut qu'il pleuve un peu, mais ce n'est pas grave : nous marcherons sous la pluie. Je te montrerai le monde en un après-midi, et toi, tu partageras ton bonheur avec moi. » Noé s'endort en rêvant. Demain, il aura oublié la moitié de ce plan, mais Mamie, elle, n'oubliera rien.",

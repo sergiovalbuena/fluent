@@ -468,6 +468,106 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu veux une boisson sans alcool, ou un demi ?",
+      "kind": "question",
+      "bold": [
+        "boisson",
+        "alcool",
+        "demi"
+      ],
+      "en": "Do you want a soft drink, or a small beer?",
+      "es": "¿Quieres una bebida sin alcohol o una caña?"
+    },
+    {
+      "sentence": "C'est à qui de payer la tournée ce soir ?",
+      "kind": "question",
+      "bold": [
+        "tournée"
+      ],
+      "en": "Whose turn is it to buy the round tonight?",
+      "es": "¿A quién le toca pagar la ronda esta noche?"
+    },
+    {
+      "sentence": "Ce cocktail est trop fort pour toi, ou ça va ?",
+      "kind": "question",
+      "bold": [
+        "cocktail",
+        "fort"
+      ],
+      "en": "Is this cocktail too strong for you, or is it okay?",
+      "es": "¿Este cóctel es demasiado fuerte para ti o está bien?"
+    },
+    {
+      "sentence": "Tu viens à l'enterrement de vie de garçon de Paul samedi ?",
+      "kind": "question",
+      "bold": [
+        "enterrement de vie de garçon"
+      ],
+      "en": "Are you coming to Paul's stag party on Saturday?",
+      "es": "¿Vienes a la despedida de soltero de Paul el sábado?"
+    },
+    {
+      "sentence": "Pourquoi tu as l'air si fatigué ? Tu as la gueule de bois ?",
+      "kind": "question",
+      "bold": [
+        "gueule de bois"
+      ],
+      "en": "Why do you look so tired? Do you have a hangover?",
+      "es": "¿Por qué pareces tan cansado? ¿Tienes resaca?"
+    },
+    {
+      "sentence": "Portons un toast aux futurs mariés : santé !",
+      "kind": "statement",
+      "bold": [
+        "Portons un toast",
+        "santé"
+      ],
+      "en": "Let's raise a toast to the bride and groom: cheers!",
+      "es": "Brindemos por los novios: ¡salud!"
+    },
+    {
+      "sentence": "Elle était assise au comptoir avec un grand verre à la main.",
+      "kind": "statement",
+      "bold": [
+        "Elle était assise",
+        "comptoir"
+      ],
+      "en": "She was sitting at the bar with a big glass in her hand.",
+      "es": "Estaba sentada en la barra con un vaso grande en la mano."
+    },
+    {
+      "sentence": "Il buvait de la bière comme si c'était de l'eau.",
+      "kind": "statement",
+      "bold": [
+        "bière",
+        "comme si c'était"
+      ],
+      "en": "He drank beer as if it were water.",
+      "es": "Bebía cerveza como si fuera agua."
+    },
+    {
+      "sentence": "Ma sœur est enceinte depuis six mois, alors elle ne boit plus de vin.",
+      "kind": "statement",
+      "bold": [
+        "est enceinte depuis",
+        "vin"
+      ],
+      "en": "My sister has been pregnant for six months, so she doesn't drink wine anymore.",
+      "es": "Mi hermana está embarazada de seis meses, así que ya no bebe vino."
+    },
+    {
+      "sentence": "Il s'est rendu compte qu'il buvait trop et il a arrêté l'alcool.",
+      "kind": "statement",
+      "bold": [
+        "Il s'est rendu compte qu'",
+        "alcool"
+      ],
+      "en": "He realized he was drinking too much and he gave up alcohol.",
+      "es": "Se dio cuenta de que bebía demasiado y dejó el alcohol."
+    }
+  ],
   "story": {
     "title": "Un ami en difficulté",
     "text": "Mon meilleur ami, Julien, passait presque tout son temps libre dans les bars de la ville. Au début, c'était juste pour s'amuser avec les copains. Mais petit à petit, la situation devint pire : il buvait du whisky comme si c'était de l'eau, et il était en train de devenir quelqu'un d'autre. Il y a un an, il s'est marié avec Claire, une femme très gentille qui essayait de le convaincre pour qu'il n'aille plus au bar tous les soirs. Pendant quelques mois, ça a marché. Mais ensuite, il commença à retourner à ses vieilles habitudes. Claire est enceinte depuis six mois, et elle était très inquiète. Un soir, elle avait préparé un dîner spécial pour lui annoncer que c'était une fille. Elle l'attendit jusqu'à minuit. Julien n'est jamais arrivé : il s'était endormi sur une chaise du bar. C'est moi qui suis allé le chercher. Le lendemain matin, avec une terrible gueule de bois, il a vu le dîner froid sur la table et le petit mot de Claire. Il s'est enfin rendu compte qu'il pouvait faire du mal aux personnes qu'il aimait à cause de l'alcool. Depuis trois mois, il ne boit plus une goutte, et il va à un groupe de soutien. Je suis fier de lui.",

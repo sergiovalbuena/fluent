@@ -479,6 +479,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Marie n'est pas en cours : elle doit être à la bibliothèque, non ?",
+      "kind": "question",
+      "bold": [
+        "doit être",
+        "bibliothèque"
+      ],
+      "en": "Marie isn't in class: she must be at the library, right?",
+      "es": "Marie no está en clase: debe de estar en la biblioteca, ¿no?"
+    },
+    {
+      "sentence": "À combien de matières est-ce que je dois m'inscrire ce semestre ?",
+      "kind": "question",
+      "bold": [
+        "matières",
+        "dois m'inscrire",
+        "semestre"
+      ],
+      "en": "How many subjects do I have to sign up for this semester?",
+      "es": "¿En cuántas asignaturas tengo que matricularme este semestre?"
+    },
+    {
+      "sentence": "Tu as réussi ton examen, ou tu dois passer le rattrapage ?",
+      "kind": "question",
+      "bold": [
+        "réussi",
+        "examen",
+        "rattrapage"
+      ],
+      "en": "Did you pass your exam, or do you have to take the resit?",
+      "es": "¿Aprobaste el examen o tienes que hacer la recuperación?"
+    },
+    {
+      "sentence": "Quand est-ce que tu vas obtenir ton diplôme ?",
+      "kind": "question",
+      "bold": [
+        "obtenir ton diplôme"
+      ],
+      "en": "When are you going to get your degree?",
+      "es": "¿Cuándo vas a sacar tu título?"
+    },
+    {
+      "sentence": "Vous pourriez commencer l'exposé sans moi ?",
+      "kind": "question",
+      "bold": [
+        "Vous pourriez",
+        "exposé"
+      ],
+      "en": "Could you start the presentation without me?",
+      "es": "¿Podrían empezar la presentación sin mí?"
+    },
+    {
+      "sentence": "Tu devrais étudier davantage si tu veux améliorer ta moyenne.",
+      "kind": "statement",
+      "bold": [
+        "Tu devrais",
+        "moyenne"
+      ],
+      "en": "You should study more if you want to raise your average.",
+      "es": "Deberías estudiar más si quieres subir tu media."
+    },
+    {
+      "sentence": "J'aurais pu m'inscrire plus tôt, mais j'ai oublié le délai.",
+      "kind": "statement",
+      "bold": [
+        "J'aurais pu",
+        "délai"
+      ],
+      "en": "I could have signed up earlier, but I forgot the deadline.",
+      "es": "Podría haberme matriculado antes, pero olvidé el plazo."
+    },
+    {
+      "sentence": "Les professeurs devaient donner une conférence ce matin.",
+      "kind": "statement",
+      "bold": [
+        "devaient",
+        "conférence"
+      ],
+      "en": "The teachers were supposed to give a lecture this morning.",
+      "es": "Los profesores iban a dar una conferencia esta mañana."
+    },
+    {
+      "sentence": "Nous avons intérêt à commencer le travail de groupe aujourd'hui.",
+      "kind": "statement",
+      "bold": [
+        "avons intérêt à",
+        "travail de groupe"
+      ],
+      "en": "We'd better start the group project today.",
+      "es": "Más nos vale empezar el trabajo en grupo hoy."
+    },
+    {
+      "sentence": "Je préfère étudier au laboratoire à travailler seul à la maison.",
+      "kind": "statement",
+      "bold": [
+        "préfère",
+        "laboratoire"
+      ],
+      "en": "I prefer studying in the lab to working alone at home.",
+      "es": "Prefiero estudiar en el laboratorio a trabajar solo en casa."
+    }
+  ],
   "story": {
     "title": "Le projet de groupe",
     "text": "« Écoutez, nous devons rendre le projet vendredi », dit Clara à son groupe. « Il compte pour quarante pour cent de la note finale. » « Et on dit que ce professeur note très sévèrement les derniers travaux », ajoute Mehdi. « Qu'est-ce qu'on fait ? » « Nous avons intérêt à commencer aujourd'hui. Comme ça, nous aurons aussi le temps de réviser pour l'examen. On peut se retrouver chez moi cet après-midi. » « D'accord. J'ai vraiment besoin d'une bonne note, sinon je devrai repasser la matière au rattrapage. » « Moi, je ne suis pas très motivé par ce sujet », soupire Lucas. « J'aurais dû choisir un autre cours. Je crois que je vais devoir refaire le semestre : mes résultats n'ont pas été bons. » « Le problème, c'est que pour ce projet, nous devions étudier le chapitre dix, et le professeur ne l'a pas expliqué ! » « Si nous commençons maintenant, nous pourrons nous renseigner à la bibliothèque. Je suis sûre que nous réussirons. » « Vous pourriez commencer sans moi ? Je dois assister à un cours au laboratoire. Je vous rejoins après. » « Pas de problème. Tu devrais nous trouver à la bibliothèque. »",

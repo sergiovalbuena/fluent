@@ -464,6 +464,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Vous avez déjà conduit en France, ou c'est la première fois ?",
+      "kind": "question",
+      "bold": [
+        "Vous avez déjà conduit"
+      ],
+      "en": "Have you ever driven in France, or is this the first time?",
+      "es": "¿Ha conducido alguna vez en Francia o es la primera vez?"
+    },
+    {
+      "sentence": "Est-ce que l'assurance est comprise, et combien coûte la caution ?",
+      "kind": "question",
+      "bold": [
+        "assurance",
+        "caution"
+      ],
+      "en": "Is insurance included, and how much is the deposit?",
+      "es": "¿Está incluido el seguro y cuánto cuesta la fianza?"
+    },
+    {
+      "sentence": "Tu as fait le plein avant de rendre la voiture ?",
+      "kind": "question",
+      "bold": [
+        "fait le plein",
+        "rendre"
+      ],
+      "en": "Did you fill up the tank before returning the car?",
+      "es": "¿Llenaste el depósito antes de devolver el coche?"
+    },
+    {
+      "sentence": "Le kilométrage est illimité, ou il y a une limite par jour ?",
+      "kind": "question",
+      "bold": [
+        "kilométrage",
+        "illimité"
+      ],
+      "en": "Is the mileage unlimited, or is there a daily limit?",
+      "es": "¿El kilometraje es ilimitado o hay un límite diario?"
+    },
+    {
+      "sentence": "Le mécanicien a jeté un coup d'œil au pare-brise ?",
+      "kind": "question",
+      "bold": [
+        "jeté un coup d'œil",
+        "pare-brise"
+      ],
+      "en": "Did the mechanic take a look at the windshield?",
+      "es": "¿El mecánico le echó un vistazo al parabrisas?"
+    },
+    {
+      "sentence": "Ça fait des années que je loue des voitures à cette agence de location.",
+      "kind": "statement",
+      "bold": [
+        "Ça fait",
+        "que",
+        "agence de location"
+      ],
+      "en": "I've been renting cars from this rental agency for years.",
+      "es": "Hace años que alquilo coches en esta agencia de alquiler."
+    },
+    {
+      "sentence": "Je n'ai jamais conduit une voiture de luxe comme celle-ci.",
+      "kind": "statement",
+      "bold": [
+        "Je n'ai jamais conduit",
+        "voiture de luxe"
+      ],
+      "en": "I've never driven a luxury car like this one.",
+      "es": "Nunca he conducido un coche de lujo como este."
+    },
+    {
+      "sentence": "J'ai besoin d'une voiture qui consomme peu et qui soit spacieuse.",
+      "kind": "statement",
+      "bold": [
+        "consomme",
+        "soit",
+        "spacieuse"
+      ],
+      "en": "I need a car that uses little fuel and is spacious.",
+      "es": "Necesito un coche que gaste poco y que sea espacioso."
+    },
+    {
+      "sentence": "Bien que tu lui aies dit de ralentir, il a continué d'accélérer.",
+      "kind": "statement",
+      "bold": [
+        "Bien que",
+        "aies dit",
+        "accélérer"
+      ],
+      "en": "Although you told him to slow down, he kept accelerating.",
+      "es": "Aunque le dijiste que redujera la velocidad, siguió acelerando."
+    },
+    {
+      "sentence": "Marc vient de louer une voiture économique pour le week-end.",
+      "kind": "statement",
+      "bold": [
+        "vient de",
+        "économique"
+      ],
+      "en": "Marc has just rented an economy car for the weekend.",
+      "es": "Marc acaba de alquilar un coche económico para el fin de semana."
+    }
+  ],
   "story": {
     "title": "À l'agence de location",
     "text": "Inès vient d'arriver à l'aéroport de Nice. Elle doit louer une voiture pour visiter la Provence. Le parking de l'agence est plein, et un employé s'approche. « Bonjour, je peux vous aider ? » « Oui, je voudrais louer une voiture pour deux semaines. » « Nous avons des voitures de luxe et des voitures plus simples. Vous avez déjà conduit en France ? » « Oui, ça fait des années que je voyage, mais je n'ai jamais conduit dans les montagnes. Comme je voyage seule, je n'ai pas besoin de beaucoup d'espace. Je cherche plutôt une voiture qui consomme peu et qui soit sûre. Qu'est-ce que vous me recommandez ? » « J'ai une petite citadine, toute neuve. Elle n'a fait que cinq cents kilomètres depuis qu'on l'a achetée. Si vous la louez plus d'une semaine, le kilométrage est illimité : vous pouvez conduire autant que vous voulez. Elle est livrée avec le plein, et vous pouvez la rendre dans n'importe quelle agence. » « Parfait ! Et l'assurance ? » « Bien qu'elle ne soit pas obligatoire, je vous conseille l'assurance tous risques. » « D'accord, je la prends ! »",

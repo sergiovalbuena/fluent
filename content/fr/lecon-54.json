@@ -454,6 +454,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu peux mettre son visage au premier plan et la mer à l'arrière-plan ?",
+      "kind": "question",
+      "bold": [
+        "premier plan",
+        "arrière-plan"
+      ],
+      "en": "Can you put her face in the foreground and the sea in the background?",
+      "es": "¿Puedes poner su cara en primer plano y el mar al fondo?"
+    },
+    {
+      "sentence": "Où est-ce que je mets le trépied pour le portrait ?",
+      "kind": "question",
+      "bold": [
+        "trépied",
+        "portrait"
+      ],
+      "en": "Where shall I put the tripod for the portrait?",
+      "es": "¿Dónde pongo el trípode para el retrato?"
+    },
+    {
+      "sentence": "Parmi ces trois photos, laquelle est la plus jolie ?",
+      "kind": "question",
+      "bold": [
+        "la plus jolie"
+      ],
+      "en": "Of these three photos, which is the prettiest?",
+      "es": "De estas tres fotos, ¿cuál es la más bonita?"
+    },
+    {
+      "sentence": "Quel type de photos veux-tu que je prenne pour le mariage ?",
+      "kind": "question",
+      "bold": [
+        "veux-tu que je prenne"
+      ],
+      "en": "What kind of photos do you want me to take for the wedding?",
+      "es": "¿Qué tipo de fotos quieres que haga para la boda?"
+    },
+    {
+      "sentence": "Tu préfères les photos en noir et blanc ou en couleur ?",
+      "kind": "question",
+      "bold": [
+        "en noir et blanc",
+        "en couleur"
+      ],
+      "en": "Do you prefer black-and-white or color photos?",
+      "es": "¿Prefieres las fotos en blanco y negro o en color?"
+    },
+    {
+      "sentence": "Ton objectif est bon, mais le sien fait des photos plus nettes.",
+      "kind": "statement",
+      "bold": [
+        "objectif",
+        "le sien",
+        "nettes"
+      ],
+      "en": "Your lens is good, but his takes sharper photos.",
+      "es": "Tu objetivo es bueno, pero el suyo hace fotos más nítidas."
+    },
+    {
+      "sentence": "Elle photographie mieux que moi, surtout les paysages.",
+      "kind": "statement",
+      "bold": [
+        "mieux que",
+        "paysages"
+      ],
+      "en": "She takes photos better than I do, especially landscapes.",
+      "es": "Fotografía mejor que yo, sobre todo los paisajes."
+    },
+    {
+      "sentence": "C'est le plus beau paysage que j'aie jamais photographié.",
+      "kind": "statement",
+      "bold": [
+        "plus beau",
+        "que j'aie"
+      ],
+      "en": "It's the most beautiful landscape I've ever photographed.",
+      "es": "Es el paisaje más bonito que he fotografiado nunca."
+    },
+    {
+      "sentence": "Attends que la lumière soit meilleure, sinon la photo sera floue.",
+      "kind": "statement",
+      "bold": [
+        "Attends que",
+        "soit",
+        "floue"
+      ],
+      "en": "Wait until the light is better, otherwise the photo will be blurry.",
+      "es": "Espera a que la luz sea mejor, si no la foto saldrá borrosa."
+    },
+    {
+      "sentence": "Mets une nouvelle carte mémoire et des piles dans le caméscope.",
+      "kind": "statement",
+      "bold": [
+        "carte mémoire",
+        "piles",
+        "caméscope"
+      ],
+      "en": "Put a new memory card and batteries in the camcorder.",
+      "es": "Pon una tarjeta de memoria nueva y pilas en la videocámara."
+    }
+  ],
   "story": {
     "title": "Le voyage le plus photogénique",
     "text": "Ma sœur et moi sommes parties en Islande pour photographier les paysages les plus spectaculaires d'Europe. Le seul problème, c'est qu'à l'arrivée, la compagnie aérienne avait perdu nos bagages, avec tout notre matériel dedans ! Il ne nous restait que nos passeports et un peu d'argent. D'un côté, nous avions de la chance d'être là ; de l'autre, c'était vraiment difficile. Nous avons dû racheter un appareil photo, un trépied, des cartes mémoire, des piles… et des vêtements chauds. Pendant trois jours, nous avons cherché le meilleur matériel, mais quand il était de bonne qualité, il était trop cher. Finalement, un vieux photographe de Reykjavik nous a vendu son appareil : « C'est le meilleur que vous puissiez trouver ici », nous a-t-il dit. Il avait raison. Nous avons pris des photos de cascades plus hautes que des immeubles, de glaciers plus bleus que le ciel et d'aurores boréales magnifiques. Ce fut le plus beau voyage de notre vie. Et nos valises ? Elles sont arrivées le dernier jour… mais nous avons gardé l'appareil du vieux photographe. Il est meilleur que l'ancien !",

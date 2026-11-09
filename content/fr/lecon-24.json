@@ -514,6 +514,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pourriez-vous me dire quand ouvre la cathédrale le dimanche ?",
+      "kind": "question",
+      "bold": [
+        "Pourriez-vous",
+        "ouvre",
+        "cathédrale"
+      ],
+      "en": "Could you tell me when the cathedral opens on Sundays?",
+      "es": "¿Podría decirme cuándo abre la catedral los domingos?"
+    },
+    {
+      "sentence": "Où se trouve le guichet, et l'entrée est-elle gratuite pour les étudiants ?",
+      "kind": "question",
+      "bold": [
+        "guichet",
+        "entrée",
+        "gratuite"
+      ],
+      "en": "Where is the ticket office, and is admission free for students?",
+      "es": "¿Dónde está la taquilla y la entrada es gratuita para los estudiantes?"
+    },
+    {
+      "sentence": "Quel genre de peinture est-ce que tu préfères, classique ou moderne ?",
+      "kind": "question",
+      "bold": [
+        "peinture"
+      ],
+      "en": "What kind of painting do you prefer, classical or modern?",
+      "es": "¿Qué tipo de pintura prefieres, clásica o moderna?"
+    },
+    {
+      "sentence": "Cette statue est en bronze ou en pierre ?",
+      "kind": "question",
+      "bold": [
+        "statue",
+        "en bronze",
+        "en pierre"
+      ],
+      "en": "Is this statue bronze or stone?",
+      "es": "¿Esta estatua es de bronce o de piedra?"
+    },
+    {
+      "sentence": "Pourquoi le monastère est-il fermé cet été ?",
+      "kind": "question",
+      "bold": [
+        "monastère",
+        "fermé"
+      ],
+      "en": "Why is the monastery closed this summer?",
+      "es": "¿Por qué está cerrado el monasterio este verano?"
+    },
+    {
+      "sentence": "Le musée ouvrira ses portes à neuf heures pour la nouvelle exposition.",
+      "kind": "statement",
+      "bold": [
+        "musée",
+        "ouvrira",
+        "exposition"
+      ],
+      "en": "The museum will open its doors at nine for the new exhibition.",
+      "es": "El museo abrirá sus puertas a las nueve para la nueva exposición."
+    },
+    {
+      "sentence": "Ce château a été construit au seizième siècle par une grande dynastie.",
+      "kind": "statement",
+      "bold": [
+        "château",
+        "a été construit",
+        "dynastie"
+      ],
+      "en": "This castle was built in the sixteenth century by a great dynasty.",
+      "es": "Este castillo fue construido en el siglo dieciséis por una gran dinastía."
+    },
+    {
+      "sentence": "Autrefois, l'art servait la religion, puis les artistes ont commencé à peindre la vie quotidienne.",
+      "kind": "statement",
+      "bold": [
+        "servait",
+        "ont commencé"
+      ],
+      "en": "In the past, art served religion; then artists started to paint everyday life.",
+      "es": "Antiguamente el arte servía a la religión; luego los artistas empezaron a pintar la vida cotidiana."
+    },
+    {
+      "sentence": "L'art n'est pas que de la peinture : il y a aussi la sculpture et la céramique.",
+      "kind": "statement",
+      "bold": [
+        "L'art n'est pas que",
+        "peinture",
+        "sculpture",
+        "céramique"
+      ],
+      "en": "Art isn't just painting: there's also sculpture and ceramics.",
+      "es": "El arte no es solo pintura: también está la escultura y la cerámica."
+    },
+    {
+      "sentence": "Il y a une belle abbaye sur la colline ; je vais t'y emmener demain.",
+      "kind": "statement",
+      "bold": [
+        "abbaye",
+        "t'y emmener"
+      ],
+      "en": "There's a beautiful abbey on the hill; I'll take you there tomorrow.",
+      "es": "Hay una abadía preciosa en la colina; te llevaré mañana."
+    }
+  ],
   "story": {
     "title": "Une visite au musée",
     "text": "Dimanche dernier, Emma a emmené son petit frère Nathan au musée d'Orsay, à Paris. C'était le premier dimanche du mois, alors l'entrée était gratuite. Au guichet, il y avait une longue file d'attente. Le musée se trouve dans une ancienne gare, qui a été construite pour l'Exposition universelle de 1900. « Autrefois, les trains arrivaient ici », explique Emma. Ils ont admiré les tableaux impressionnistes, puis les sculptures en bronze et en marbre. Devant un tableau de Monet, Nathan a demandé : « Pourquoi les peintres peignaient-ils toujours la même cathédrale ? » Un guide a souri : « Monet voulait montrer la lumière à différents moments de la journée. » Emma s'est rendu compte que son frère s'intéressait vraiment à l'art. « L'art n'est pas que de la peinture, lui a-t-elle dit. C'est aussi la musique, le cinéma, la danse… » À la sortie, Nathan a voulu acheter une reproduction pour sa chambre. « La semaine prochaine, il y a une exposition de photos au Centre Pompidou. Je vais t'y emmener ! » a promis Emma.",

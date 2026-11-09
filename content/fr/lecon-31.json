@@ -484,6 +484,108 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pouvez-vous nous faire une réservation pour une croisière en juillet ?",
+      "kind": "question",
+      "bold": [
+        "réservation",
+        "croisière"
+      ],
+      "en": "Can you make us a booking for a cruise in July?",
+      "es": "¿Puede hacernos una reserva para un crucero en julio?"
+    },
+    {
+      "sentence": "Tu ne restes que trois jours : c'est un voyage d'affaires ?",
+      "kind": "question",
+      "bold": [
+        "Tu ne restes que",
+        "voyage d'affaires"
+      ],
+      "en": "You're only staying three days: is it a business trip?",
+      "es": "Solo te quedas tres días: ¿es un viaje de negocios?"
+    },
+    {
+      "sentence": "Est-ce que le petit déjeuner est compris dans le prix de l'hôtel ?",
+      "kind": "question",
+      "bold": [
+        "compris",
+        "hôtel"
+      ],
+      "en": "Is breakfast included in the hotel price?",
+      "es": "¿El desayuno está incluido en el precio del hotel?"
+    },
+    {
+      "sentence": "Que nous conseillez-vous pour un voyage de noces : la mer ou la montagne ?",
+      "kind": "question",
+      "bold": [
+        "voyage de noces"
+      ],
+      "en": "What do you recommend for a honeymoon: the sea or the mountains?",
+      "es": "¿Qué nos aconseja para un viaje de novios: el mar o la montaña?"
+    },
+    {
+      "sentence": "Combien coûte un aller simple pour Bordeaux, et un aller-retour ?",
+      "kind": "question",
+      "bold": [
+        "aller simple",
+        "aller-retour"
+      ],
+      "en": "How much is a one-way ticket to Bordeaux, and a return?",
+      "es": "¿Cuánto cuesta un billete de ida a Burdeos, y uno de ida y vuelta?"
+    },
+    {
+      "sentence": "Il faut que je fasse mes valises ce soir, je pars demain à l'aube.",
+      "kind": "statement",
+      "bold": [
+        "Il faut que je fasse",
+        "valises"
+      ],
+      "en": "I have to pack my suitcases tonight, I'm leaving at dawn tomorrow.",
+      "es": "Tengo que hacer las maletas esta noche, me voy mañana al amanecer."
+    },
+    {
+      "sentence": "N'emporte pas l'ordinateur : c'est un séjour pour se reposer !",
+      "kind": "statement",
+      "bold": [
+        "N'emporte pas",
+        "séjour"
+      ],
+      "en": "Don't take the laptop: this trip is for resting!",
+      "es": "¡No te lleves el ordenador: este viaje es para descansar!"
+    },
+    {
+      "sentence": "L'itinéraire a été organisé par l'agence de voyages avant notre départ.",
+      "kind": "statement",
+      "bold": [
+        "itinéraire",
+        "a été organisé",
+        "agence de voyages",
+        "départ"
+      ],
+      "en": "The itinerary was organized by the travel agency before our departure.",
+      "es": "El itinerario lo organizó la agencia de viajes antes de nuestra salida."
+    },
+    {
+      "sentence": "Nous emportons le moins de bagages possible pour voyager léger.",
+      "kind": "statement",
+      "bold": [
+        "le moins de bagages possible"
+      ],
+      "en": "We take as little luggage as possible to travel light.",
+      "es": "Llevamos el menor equipaje posible para viajar ligeros."
+    },
+    {
+      "sentence": "Faisons les valises à temps : ainsi, nous éviterons d'oublier quelque chose.",
+      "kind": "statement",
+      "bold": [
+        "ainsi",
+        "éviterons d'"
+      ],
+      "en": "Let's pack in time: that way, we'll avoid forgetting something.",
+      "es": "Hagamos las maletas a tiempo: así evitaremos olvidar algo."
+    }
+  ],
   "story": {
     "title": "Une famille voyageuse",
     "text": "Chaque année, pour les vacances de février, notre famille part quelque part. Cette fois, nous allons au Maroc. Il y a deux mois, nous sommes allés à l'agence de voyages, et tout a été organisé par notre agente, Madame Leclerc : les billets d'avion, l'hôtel à Marrakech et une excursion dans le désert. « Il faut que vous fassiez vos valises à l'avance », nous a-t-elle conseillé. Alors, nous les faisons toujours trois jours avant le départ : ainsi, nous évitons d'oublier les choses importantes. Quand nous voyageons à l'étranger, nous nous habillons confortablement et nous emportons le moins de choses possible. Moi, j'aime visiter les sites historiques. Mon mari, lui, préfère engager un guide qui lui explique tout. Et nos enfants adorent jouer avec d'autres enfants qui leur apprennent de nouveaux jeux. Pour nous, voyager a trois avantages. Premièrement, cela rapproche la famille. Deuxièmement, nous apprenons quelques mots d'une autre langue. Et enfin, nous nous faisons des amis partout dans le monde !",

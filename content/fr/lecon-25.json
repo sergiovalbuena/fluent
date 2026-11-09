@@ -510,6 +510,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Est-ce que celle-ci est ta voiture, ou c'est celle de ton père ?",
+      "kind": "question",
+      "bold": [
+        "Est-ce que celle-ci est",
+        "voiture"
+      ],
+      "en": "Is this your car, or is it your father's?",
+      "es": "¿Este es tu coche o es el de tu padre?"
+    },
+    {
+      "sentence": "Où va ce bus : à la gare ou à l'aéroport ?",
+      "kind": "question",
+      "bold": [
+        "bus",
+        "gare",
+        "aéroport"
+      ],
+      "en": "Where does this bus go: to the station or to the airport?",
+      "es": "¿Adónde va este autobús: a la estación o al aeropuerto?"
+    },
+    {
+      "sentence": "Tu as ton permis de conduire, ou tu prends toujours le métro ?",
+      "kind": "question",
+      "bold": [
+        "permis de conduire",
+        "métro"
+      ],
+      "en": "Do you have your driving license, or do you always take the metro?",
+      "es": "¿Tienes el carné de conducir o siempre coges el metro?"
+    },
+    {
+      "sentence": "Combien coûte un aller-retour en train pour Genève ?",
+      "kind": "question",
+      "bold": [
+        "aller-retour",
+        "train"
+      ],
+      "en": "How much is a return train ticket to Geneva?",
+      "es": "¿Cuánto cuesta un billete de ida y vuelta en tren a Ginebra?"
+    },
+    {
+      "sentence": "Pourquoi est-ce que tu freines si fort ? Il y a un problème ?",
+      "kind": "question",
+      "bold": [
+        "freines"
+      ],
+      "en": "Why are you braking so hard? Is there a problem?",
+      "es": "¿Por qué frenas tan fuerte? ¿Hay algún problema?"
+    },
+    {
+      "sentence": "Le taxi est plus lent et plus cher que le métro aux heures de pointe.",
+      "kind": "statement",
+      "bold": [
+        "taxi",
+        "plus lent et plus cher que",
+        "métro"
+      ],
+      "en": "The taxi is slower and more expensive than the metro at rush hour.",
+      "es": "El taxi es más lento y más caro que el metro en hora punta."
+    },
+    {
+      "sentence": "Louons un vélo et traversons la ville jusqu'au port !",
+      "kind": "statement",
+      "bold": [
+        "Louons",
+        "vélo",
+        "traversons",
+        "port"
+      ],
+      "en": "Let's rent a bike and ride across the city to the harbor!",
+      "es": "¡Alquilemos una bici y crucemos la ciudad hasta el puerto!"
+    },
+    {
+      "sentence": "Mets ta ceinture de sécurité avant de démarrer la voiture.",
+      "kind": "statement",
+      "bold": [
+        "ceinture de sécurité",
+        "avant de"
+      ],
+      "en": "Put on your seatbelt before starting the car.",
+      "es": "Ponte el cinturón de seguridad antes de arrancar el coche."
+    },
+    {
+      "sentence": "Restez assis, s'il vous plaît : nous sommes sur le point d'atterrir à Genève.",
+      "kind": "statement",
+      "bold": [
+        "sommes sur le point d'"
+      ],
+      "en": "Please remain seated: we're about to land in Geneva.",
+      "es": "Permanezcan sentados, por favor: estamos a punto de aterrizar en Ginebra."
+    },
+    {
+      "sentence": "Il s'est mis à pleuvoir juste quand l'avion allait décoller.",
+      "kind": "statement",
+      "bold": [
+        "s'est mis à",
+        "décoller"
+      ],
+      "en": "It started to rain just as the plane was about to take off.",
+      "es": "Empezó a llover justo cuando el avión iba a despegar."
+    }
+  ],
   "story": {
     "title": "Le grand voyage de Malik",
     "text": "Je m'appelle Malik Benali. Quand j'avais dix-neuf ans, j'ai décidé de quitter Marseille pour découvrir le monde. Mes parents étaient inquiets, mais ils m'ont laissé partir. D'abord, j'ai pris un ferry pour la Corse et je suis resté là-bas un an en travaillant sur les bateaux du port. En même temps, j'économisais de l'argent pour mon prochain voyage. Quand le jour du départ est arrivé, j'ai dit au revoir aux pêcheurs qui avaient pris soin de moi. Ensuite, j'ai traversé l'Europe en train : c'est moins cher que l'avion et on voit des paysages magnifiques. Un soir, à Lisbonne, j'étais en train de jouer de la guitare dans la rue quand une femme m'a proposé un travail de guide pour des touristes. Comme j'avais appris l'espagnol et l'anglais pendant mes voyages, je me suis mis à faire aussi des traductions. Plus tard, je suis parti au Canada en avion. Aujourd'hui, j'ai une petite agence de voyages à Montréal. Nous organisons des séjours pour des jeunes qui n'ont pas beaucoup d'argent, pour qu'ils puissent, eux aussi, découvrir le monde.",

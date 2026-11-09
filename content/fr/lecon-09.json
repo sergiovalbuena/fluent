@@ -479,6 +479,118 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pourriez-vous me dire où se trouve l'arrêt de bus le plus proche ?",
+      "kind": "question",
+      "bold": [
+        "Pourriez-vous",
+        "où",
+        "l'arrêt"
+      ],
+      "en": "Could you tell me where the nearest bus stop is?",
+      "es": "¿Podría decirme dónde está la parada de autobús más cercana?"
+    },
+    {
+      "sentence": "Comment est-ce qu'on prononce ce mot, et qu'est-ce qu'il signifie ?",
+      "kind": "question",
+      "bold": [
+        "Comment",
+        "prononce",
+        "signifie"
+      ],
+      "en": "How do you pronounce this word, and what does it mean?",
+      "es": "¿Cómo se pronuncia esta palabra y qué significa?"
+    },
+    {
+      "sentence": "Pourquoi l'entrée du musée est-elle fermée aujourd'hui ?",
+      "kind": "question",
+      "bold": [
+        "Pourquoi",
+        "entrée",
+        "fermée"
+      ],
+      "en": "Why is the museum entrance closed today?",
+      "es": "¿Por qué está cerrada hoy la entrada del museo?"
+    },
+    {
+      "sentence": "Excusez-moi, où est la sortie, et est-ce que je dois pousser ou tirer la porte ?",
+      "kind": "question",
+      "bold": [
+        "où",
+        "sortie",
+        "pousser",
+        "tirer"
+      ],
+      "en": "Excuse me, where is the exit, and should I push or pull the door?",
+      "es": "Disculpe, ¿dónde está la salida y tengo que empujar o tirar de la puerta?"
+    },
+    {
+      "sentence": "Je ne connais pas bien la langue : pourriez-vous parler plus lentement ?",
+      "kind": "question",
+      "bold": [
+        "connais",
+        "langue",
+        "pourriez-vous",
+        "lentement"
+      ],
+      "en": "I don't know the language well: could you speak more slowly?",
+      "es": "No conozco bien el idioma: ¿podría hablar más despacio?"
+    },
+    {
+      "sentence": "Il vaut mieux que vous demandiez à quelqu'un d'autre, je ne suis pas sûre.",
+      "kind": "statement",
+      "bold": [
+        "Il vaut mieux que",
+        "demandiez",
+        "sûre"
+      ],
+      "en": "You'd better ask someone else, I'm not sure.",
+      "es": "Es mejor que le pregunte a otra persona, no estoy segura."
+    },
+    {
+      "sentence": "Tu as raison : il est interdit de traverser ici, attention aux voitures !",
+      "kind": "statement",
+      "bold": [
+        "as raison",
+        "interdit",
+        "traverser",
+        "attention"
+      ],
+      "en": "You're right: it's forbidden to cross here, watch out for the cars!",
+      "es": "Tienes razón: está prohibido cruzar aquí, ¡cuidado con los coches!"
+    },
+    {
+      "sentence": "Nous nous reverrons probablement l'année prochaine.",
+      "kind": "statement",
+      "bold": [
+        "Nous nous reverrons probablement"
+      ],
+      "en": "We'll probably see each other again next year.",
+      "es": "Probablemente nos volveremos a ver el año que viene."
+    },
+    {
+      "sentence": "Fermez la fenêtre et écoutez bien : je vais écrire la phrase au tableau.",
+      "kind": "statement",
+      "bold": [
+        "Fermez",
+        "écoutez",
+        "écrire"
+      ],
+      "en": "Close the window and listen carefully: I'm going to write the sentence on the board.",
+      "es": "Cierren la ventana y escuchen bien: voy a escribir la frase en la pizarra."
+    },
+    {
+      "sentence": "Cette information est complètement fausse, mais celle-ci est vraie.",
+      "kind": "statement",
+      "bold": [
+        "complètement fausse",
+        "vraie"
+      ],
+      "en": "This information is completely false, but this one is true.",
+      "es": "Esta información es completamente falsa, pero esta es verdadera."
+    }
+  ],
   "story": {
     "title": "Au guichet de la gare",
     "text": "Ana est espagnole. Elle arrive à la gare de Lille et elle va au guichet. « Bonjour, monsieur. Je voudrais un billet pour Bruges, s'il vous plaît. » « Quoi ? Parlez plus fort ! » « Pardon. Un billet pour Bruges. Pourriez-vous parler plus lentement ? Je ne parle pas très bien français. » « Ce n'est pas mon problème, madame. Il vaut mieux que vous achetiez votre billet sur la machine. » « Mais la machine est en panne ! » « Alors, attendez. Je suis très occupé. » Un homme derrière Ana dit : « Excusez-moi, je peux vous aider ? Je connais bien cette gare. » « Oh, merci beaucoup ! Vous êtes très aimable. » « Avec plaisir. Venez, il y a un autre guichet à côté de la sortie. » Ana sourit. « Peut-être avez-vous raison : tout le monde n'est pas désagréable ! »",

@@ -503,6 +503,116 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu vas prendre une douche maintenant, ou tu prendras un bain ce soir ?",
+      "kind": "question",
+      "bold": [
+        "prendre",
+        "douche",
+        "prendras"
+      ],
+      "en": "Are you going to have a shower now, or will you have a bath tonight?",
+      "es": "¿Te vas a duchar ahora o te darás un baño esta noche?"
+    },
+    {
+      "sentence": "Je ne vois rien : où se trouve l'interrupteur du couloir ?",
+      "kind": "question",
+      "bold": [
+        "se trouve",
+        "interrupteur",
+        "couloir"
+      ],
+      "en": "I can't see a thing: where's the hallway light switch?",
+      "es": "No veo nada: ¿dónde está el interruptor del pasillo?"
+    },
+    {
+      "sentence": "Qui a si bien nettoyé le four et le congélateur ?",
+      "kind": "question",
+      "bold": [
+        "four",
+        "congélateur"
+      ],
+      "en": "Who cleaned the oven and the freezer so well?",
+      "es": "¿Quién limpió tan bien el horno y el congelador?"
+    },
+    {
+      "sentence": "Tu te souviens de l'appartement dont je t'ai parlé, celui avec un grand balcon ?",
+      "kind": "question",
+      "bold": [
+        "dont",
+        "balcon"
+      ],
+      "en": "Do you remember the apartment I told you about, the one with a big balcony?",
+      "es": "¿Te acuerdas del piso del que te hablé, el que tiene un balcón grande?"
+    },
+    {
+      "sentence": "Est-ce que tes vieux jouets sont au grenier ou au sous-sol ?",
+      "kind": "question",
+      "bold": [
+        "grenier",
+        "sous-sol"
+      ],
+      "en": "Are your old toys in the attic or in the basement?",
+      "es": "¿Tus juguetes viejos están en el desván o en el sótano?"
+    },
+    {
+      "sentence": "Mets-le dans le tiroir de la table de nuit, s'il te plaît.",
+      "kind": "statement",
+      "bold": [
+        "Mets-le",
+        "tiroir",
+        "table de nuit"
+      ],
+      "en": "Put it in the bedside table drawer, please.",
+      "es": "Ponlo en el cajón de la mesita de noche, por favor."
+    },
+    {
+      "sentence": "Si tu montes à l'étage, tu trouveras la chambre principale à gauche.",
+      "kind": "statement",
+      "bold": [
+        "Si tu montes",
+        "étage",
+        "tu trouveras",
+        "chambre principale"
+      ],
+      "en": "If you go upstairs, you'll find the master bedroom on the left.",
+      "es": "Si subes al piso de arriba, encontrarás el dormitorio principal a la izquierda."
+    },
+    {
+      "sentence": "Quand nous avons déménagé, on ne pouvait pas faire passer le fauteuil dans l'escalier.",
+      "kind": "statement",
+      "bold": [
+        "nous avons déménagé",
+        "ne pouvait pas",
+        "fauteuil",
+        "escalier"
+      ],
+      "en": "When we moved, we couldn't get the armchair up the stairs.",
+      "es": "Cuando nos mudamos, no podíamos pasar el sillón por la escalera."
+    },
+    {
+      "sentence": "Ma vieille maison et son jardin me manquent beaucoup.",
+      "kind": "statement",
+      "bold": [
+        "jardin",
+        "manquent"
+      ],
+      "en": "I really miss my old house and its garden.",
+      "es": "Echo mucho de menos mi vieja casa y su jardín."
+    },
+    {
+      "sentence": "Éteins le chauffage et ferme les rideaux avant de partir.",
+      "kind": "statement",
+      "bold": [
+        "Éteins",
+        "chauffage",
+        "rideaux"
+      ],
+      "en": "Turn off the heating and close the curtains before you leave.",
+      "es": "Apaga la calefacción y cierra las cortinas antes de irte."
+    }
+  ],
   "story": {
     "title": "Lettre à Inès",
     "text": "Chère Inès, je t'écris pour te parler de notre nouvelle maison. Nous avons déménagé à Annecy le mois dernier, dans un quartier très calme près du lac. Comment ça va à Grenoble ? Vous me manquez beaucoup ! Laisse-moi tout te raconter. Au rez-de-chaussée, il y a un grand salon avec une cheminée, la cuisine, la salle à manger et un garage. Les murs du salon sont peints en vert clair. Derrière la maison, il y a un jardin dont ma mère est tombée amoureuse tout de suite, avec des pommiers et beaucoup de fleurs. À l'étage se trouve la chambre de mes parents, avec une salle de bains et un petit balcon. Mon frère a choisi la chambre la plus grande, mais elle n'a pas de vue. Moi, j'ai une petite chambre sous le toit, avec une fenêtre qui donne sur les montagnes. Tu te souviens de nos fêtes dans l'ancien appartement ? On ne pouvait pas inviter plus de dix personnes, parce qu'il n'y avait pas de place. Maintenant, ce ne sera plus un problème ! Si tu viens cet été, tu dormiras dans la chambre d'amis. J'attends ta visite avec impatience. Bises, Margaux.",

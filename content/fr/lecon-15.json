@@ -559,6 +559,112 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu peux me passer le sel et le poivre, s'il te plaît ?",
+      "kind": "question",
+      "bold": [
+        "me passer le sel",
+        "poivre"
+      ],
+      "en": "Can you pass me the salt and pepper, please?",
+      "es": "¿Me pasas la sal y la pimienta, por favor?"
+    },
+    {
+      "sentence": "Tu veux de la crème dans ton café, ou tu le bois noir ?",
+      "kind": "question",
+      "bold": [
+        "de la crème",
+        "café"
+      ],
+      "en": "Do you want cream in your coffee, or do you drink it black?",
+      "es": "¿Quieres crema en el café o lo tomas solo?"
+    },
+    {
+      "sentence": "Qu'est-ce que tu prends au petit déjeuner, du pain avec du beurre ?",
+      "kind": "question",
+      "bold": [
+        "petit déjeuner",
+        "du pain",
+        "du beurre"
+      ],
+      "en": "What do you have for breakfast, bread and butter?",
+      "es": "¿Qué tomas en el desayuno, pan con mantequilla?"
+    },
+    {
+      "sentence": "Je voudrais une tarte aux pommes : est-ce qu'il en reste ?",
+      "kind": "question",
+      "bold": [
+        "Je voudrais",
+        "tarte aux pommes"
+      ],
+      "en": "I'd like an apple tart: is there any left?",
+      "es": "Querría una tarta de manzana: ¿queda alguna?"
+    },
+    {
+      "sentence": "Pourquoi ta soupe est-elle tiède ? Tu l'as sortie du frigo ?",
+      "kind": "question",
+      "bold": [
+        "tiède"
+      ],
+      "en": "Why is your soup lukewarm? Did you take it out of the fridge?",
+      "es": "¿Por qué está tibia tu sopa? ¿La sacaste de la nevera?"
+    },
+    {
+      "sentence": "Il n'y a plus de lait, mais il reste du jus d'orange.",
+      "kind": "statement",
+      "bold": [
+        "Il n'y a plus de",
+        "lait",
+        "du jus d'orange"
+      ],
+      "en": "There's no more milk, but there's still some orange juice.",
+      "es": "Ya no queda leche, pero todavía hay zumo de naranja."
+    },
+    {
+      "sentence": "Ma sœur ne boit que de l'eau minérale pendant les repas.",
+      "kind": "statement",
+      "bold": [
+        "ne boit que",
+        "eau minérale"
+      ],
+      "en": "My sister only drinks mineral water at meals.",
+      "es": "Mi hermana solo bebe agua mineral en las comidas."
+    },
+    {
+      "sentence": "Ces croissants viennent de sortir du four : ils sont encore chauds.",
+      "kind": "statement",
+      "bold": [
+        "viennent de sortir",
+        "chauds"
+      ],
+      "en": "These croissants have just come out of the oven: they're still warm.",
+      "es": "Estos cruasanes acaban de salir del horno: todavía están calientes."
+    },
+    {
+      "sentence": "Je ne veux pas de dessert, merci, je préférerais un thé.",
+      "kind": "statement",
+      "bold": [
+        "Je ne veux pas de",
+        "dessert",
+        "je préférerais",
+        "thé"
+      ],
+      "en": "I don't want any dessert, thanks, I'd rather have a tea.",
+      "es": "No quiero postre, gracias, preferiría un té."
+    },
+    {
+      "sentence": "Mets la nappe, les assiettes et les verres sur la table, s'il te plaît.",
+      "kind": "statement",
+      "bold": [
+        "nappe",
+        "assiettes",
+        "verres"
+      ],
+      "en": "Put the tablecloth, the plates and the glasses on the table, please.",
+      "es": "Pon el mantel, los platos y los vasos en la mesa, por favor."
+    }
+  ],
   "story": {
     "title": "Le gourmand",
     "text": "Je m'appelle Gaspard Moreau, j'ai cinquante ans et je suis chauffeur de taxi à Lyon. J'adore manger, surtout quand mon mari cuisine. J'aime toutes sortes de viandes : le bœuf, le canard, l'agneau… Rien que d'en parler, j'ai faim ! Au petit déjeuner, je prends généralement deux tartines avec du beurre et de la confiture, un café au lait et un jus d'orange. Si j'ai encore faim, je mange un yaourt avec des fruits. À la pause, mes collègues et moi buvons du café et partageons des croissants qui viennent de sortir du four. À midi, je mange un sandwich au jambon et des frites. Mais mon repas préféré, c'est le dîner. Je rentre vers sept heures, je me lave les mains et je me mets à table. Nous commençons par une soupe, puis il y a de la viande avec des pommes de terre et une salade. Au dessert, mon mari me sert une part de tarte aux pommes. Le problème ? Mon médecin ne cesse de me répéter que je dois manger moins gras. Alors maintenant, le soir, je ne prends que de la salade… enfin, presque !",

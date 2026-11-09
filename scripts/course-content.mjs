@@ -92,7 +92,7 @@ export function courseBuilder(lang) {
         content: {
           ...(d.qa && { questions: d.qa.map((q, i) => questionContent(q, i, d.lesson)) }),
           ...(d.sentences && {
-            items: d.sentences.map((x, i) => ({ id: String(i + 1), sentence: x.sentence, kind: x.kind, ...tr(x) })),
+            items: d.sentences.map((x, i) => ({ id: String(i + 1), sentence: x.sentence, kind: x.kind, bold: x.bold ?? [], ...tr(x) })),
           }),
         },
       },

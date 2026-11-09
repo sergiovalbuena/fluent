@@ -458,6 +458,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Qu'aurais-tu fait si Jean n'avait pas résolu le problème ?",
+      "kind": "question",
+      "bold": [
+        "Qu'aurais-tu fait",
+        "n'avait pas résolu"
+      ],
+      "en": "What would you have done if Jean hadn't solved the problem?",
+      "es": "¿Qué habrías hecho si Jean no hubiera resuelto el problema?"
+    },
+    {
+      "sentence": "Qui dirige la réunion de lundi, toi ou la directrice ?",
+      "kind": "question",
+      "bold": [
+        "dirige",
+        "réunion",
+        "directrice"
+      ],
+      "en": "Who's leading Monday's meeting, you or the director?",
+      "es": "¿Quién dirige la reunión del lunes, tú o la directora?"
+    },
+    {
+      "sentence": "Tu as reçu la note de service sur les nouvelles instructions ?",
+      "kind": "question",
+      "bold": [
+        "note de service",
+        "instructions"
+      ],
+      "en": "Did you get the memo about the new instructions?",
+      "es": "¿Recibiste la circular sobre las nuevas instrucciones?"
+    },
+    {
+      "sentence": "Est-ce que la prime est pour toute l'équipe ou seulement pour le superviseur ?",
+      "kind": "question",
+      "bold": [
+        "prime",
+        "équipe",
+        "superviseur"
+      ],
+      "en": "Is the bonus for the whole team or only for the supervisor?",
+      "es": "¿La prima es para todo el equipo o solo para el supervisor?"
+    },
+    {
+      "sentence": "Pourquoi les ouvriers font grève depuis lundi ?",
+      "kind": "question",
+      "bold": [
+        "ouvriers",
+        "font grève"
+      ],
+      "en": "Why have the workers been on strike since Monday?",
+      "es": "¿Por qué están en huelga los obreros desde el lunes?"
+    },
+    {
+      "sentence": "Si tu avais délégué cette tâche, tu aurais eu plus de temps.",
+      "kind": "statement",
+      "bold": [
+        "avais délégué",
+        "tâche",
+        "aurais eu"
+      ],
+      "en": "If you had delegated this task, you'd have had more time.",
+      "es": "Si hubieras delegado esta tarea, habrías tenido más tiempo."
+    },
+    {
+      "sentence": "Grâce à vos efforts, la production a augmenté de vingt pour cent.",
+      "kind": "statement",
+      "bold": [
+        "Grâce à",
+        "production"
+      ],
+      "en": "Thanks to your efforts, production increased by twenty percent.",
+      "es": "Gracias a vuestro esfuerzo, la producción aumentó un veinte por ciento."
+    },
+    {
+      "sentence": "Ça fait des semaines qu'on ne fait plus de réunion d'équipe.",
+      "kind": "statement",
+      "bold": [
+        "Ça fait des semaines qu'",
+        "réunion"
+      ],
+      "en": "We haven't had a team meeting for weeks.",
+      "es": "Hace semanas que no hacemos reunión de equipo."
+    },
+    {
+      "sentence": "Si vous aviez suivi la formation, vous seriez plus efficaces aujourd'hui.",
+      "kind": "statement",
+      "bold": [
+        "aviez suivi",
+        "formation",
+        "seriez",
+        "efficaces"
+      ],
+      "en": "If you had done the training, you'd be more efficient today.",
+      "es": "Si hubierais hecho la formación, hoy seríais más eficaces."
+    },
+    {
+      "sentence": "Nous ne travaillons pas pour un chef, mais pour toute l'équipe.",
+      "kind": "statement",
+      "bold": [
+        "Nous ne travaillons pas",
+        "mais",
+        "équipe"
+      ],
+      "en": "We don't work for a boss, but for the whole team.",
+      "es": "No trabajamos para un jefe, sino para todo el equipo."
+    }
+  ],
   "story": {
     "title": "Lettre aux employés",
     "text": "Chers employés, je suis très satisfaite de votre travail et je suis fière de vous. Il y a un an, notre petite boulangerie de Nantes était en difficulté. Si nous n'avions pas changé notre organisation, nous aurions sûrement fait faillite. Comment aurions-nous atteint un tel niveau de qualité si vous n'aviez pas été aussi efficaces et motivés ? Je dois avouer qu'au début, je ne pensais pas que la formation résoudrait nos problèmes. Maintenant, j'en suis certaine. Si nous n'avions pas formé de nouvelles équipes, nous n'aurions jamais ouvert notre deuxième magasin. Et si vous aviez encore plus de formation, nous gagnerions tous plus d'argent ! Aujourd'hui, l'entreprise est plus organisée que jamais. Ça fait des mois qu'on n'envoie plus de notes de service, parce que nous avons compris une chose : nous ne travaillons pas pour une cheffe, mais pour nous-mêmes. Grâce à vos efforts, nous avons gagné la confiance de nos clients. Pour vous remercier, chacun recevra une prime à la fin du mois. Continuons sur cette voie ! Merci. Madame Hélène Declerc, directrice.",

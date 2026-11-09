@@ -454,6 +454,111 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Êtes-vous citoyen européen, ou avez-vous besoin d'un visa ?",
+      "kind": "question",
+      "bold": [
+        "Êtes-vous citoyen",
+        "visa"
+      ],
+      "en": "Are you a European citizen, or do you need a visa?",
+      "es": "¿Es usted ciudadano europeo o necesita un visado?"
+    },
+    {
+      "sentence": "Pourquoi est-ce qu'elle a tant de valises ? Elle est en train de déménager ?",
+      "kind": "question",
+      "bold": [
+        "Elle est en train de"
+      ],
+      "en": "Why does she have so many suitcases? Is she moving?",
+      "es": "¿Por qué tiene tantas maletas? ¿Se está mudando?"
+    },
+    {
+      "sentence": "Quel est le motif du voyage : le tourisme, les études ou les affaires ?",
+      "kind": "question",
+      "bold": [
+        "motif du voyage",
+        "tourisme",
+        "études",
+        "affaires"
+      ],
+      "en": "What is the purpose of your trip: tourism, studies or business?",
+      "es": "¿Cuál es el motivo del viaje: turismo, estudios o negocios?"
+    },
+    {
+      "sentence": "Avez-vous de l'alcool ou quelque chose d'autre à déclarer ?",
+      "kind": "question",
+      "bold": [
+        "alcool",
+        "à déclarer"
+      ],
+      "en": "Do you have any alcohol or anything else to declare?",
+      "es": "¿Tiene alcohol u otra cosa que declarar?"
+    },
+    {
+      "sentence": "Où se trouve le consulat, près de l'ambassade ?",
+      "kind": "question",
+      "bold": [
+        "consulat",
+        "ambassade"
+      ],
+      "en": "Where is the consulate, near the embassy?",
+      "es": "¿Dónde está el consulado, cerca de la embajada?"
+    },
+    {
+      "sentence": "J'étais en train de chercher mon passeport quand on m'a appelé.",
+      "kind": "statement",
+      "bold": [
+        "J'étais en train de",
+        "passeport"
+      ],
+      "en": "I was looking for my passport when they called me.",
+      "es": "Estaba buscando mi pasaporte cuando me llamaron."
+    },
+    {
+      "sentence": "L'agent m'a demandé si j'avais un titre de séjour.",
+      "kind": "statement",
+      "bold": [
+        "m'a demandé si",
+        "titre de séjour"
+      ],
+      "en": "The officer asked me if I had a residence permit.",
+      "es": "El agente me preguntó si tenía permiso de residencia."
+    },
+    {
+      "sentence": "Il est possible qu'on fouille nos bagages à la douane.",
+      "kind": "statement",
+      "bold": [
+        "Il est possible qu'",
+        "fouille",
+        "douane"
+      ],
+      "en": "It's possible they'll search our bags at customs.",
+      "es": "Es posible que registren nuestro equipaje en la aduana."
+    },
+    {
+      "sentence": "Ils vont s'installer en France après avoir réglé leurs papiers.",
+      "kind": "statement",
+      "bold": [
+        "vont",
+        "après avoir réglé",
+        "papiers"
+      ],
+      "en": "They're going to settle in France after sorting out their papers.",
+      "es": "Van a instalarse en Francia después de arreglar sus papeles."
+    },
+    {
+      "sentence": "Vous pouvez vérifier : je n'ai rien à déclarer.",
+      "kind": "statement",
+      "bold": [
+        "vérifier",
+        "rien à déclarer"
+      ],
+      "en": "You can check: I have nothing to declare.",
+      "es": "Puede comprobarlo: no tengo nada que declarar."
+    }
+  ],
   "story": {
     "title": "Arrivée à Montréal",
     "text": "En ce moment, Sofia est en train de parler avec une agente d'immigration à l'aéroport de Montréal. Elle vient du Chili pour étudier un an à l'université. L'agente lui demande ses papiers ; Sofia les sort de son sac. « Votre lettre d'acceptation n'est pas là », dit l'agente. « Je vous jure que je l'avais ! Je l'ai imprimée il y a une semaine… » Sofia était en train de chercher dans toutes ses poches quand elle s'est souvenue : la lettre est aussi dans ses courriels ! Elle la montre sur son téléphone. « Parfait. Il est possible qu'on vous demande l'original plus tard. Bienvenue au Canada et profitez de votre séjour ! » Ensuite, Sofia va à la douane. Un douanier lui demande si elle a quelque chose à déclarer. « Non, rien. » « Pouvez-vous ouvrir cette valise ? » Il trouve un gros fromage et deux saucissons. « C'est un cadeau pour ma famille d'accueil », explique Sofia. « Vous devez déclarer toute la nourriture, mademoiselle. » « Je ne savais pas, je suis désolée ! » Heureusement, le douanier sourit : « Cette fois, ça va. Mais la prochaine fois, lisez bien le formulaire ! »",

@@ -182,8 +182,7 @@
     "show_translation": "Voir la traduction",
     "hide_translation": "Masquer la traduction",
     "listen": "Écouter",
-    "practice_sentences": "{count} phrases complètes d’affilée",
-    "sentence_question": "Question"
+    "practice_sentences": "{count} phrases complètes d’affilée"
   },
   "gems": {
     "title": "Gemmes",

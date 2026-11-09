@@ -504,6 +504,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu joues du piano ou de la guitare depuis longtemps ?",
+      "kind": "question",
+      "bold": [
+        "Tu joues du piano",
+        "de la guitare"
+      ],
+      "en": "Have you been playing the piano or the guitar for a long time?",
+      "es": "¿Tocas el piano o la guitarra desde hace mucho tiempo?"
+    },
+    {
+      "sentence": "As-tu étudié au conservatoire quand tu étais jeune ?",
+      "kind": "question",
+      "bold": [
+        "As-tu étudié au conservatoire"
+      ],
+      "en": "Did you study at the conservatory when you were young?",
+      "es": "¿Estudiaste en el conservatorio cuando eras joven?"
+    },
+    {
+      "sentence": "Serait-il difficile d'apprendre à jouer du violoncelle à quarante ans ?",
+      "kind": "question",
+      "bold": [
+        "Serait-il difficile",
+        "jouer du violoncelle"
+      ],
+      "en": "Would it be hard to learn to play the cello at forty?",
+      "es": "¿Sería difícil aprender a tocar el violonchelo a los cuarenta años?"
+    },
+    {
+      "sentence": "Je n'entends rien : tu peux éteindre la radio ?",
+      "kind": "question",
+      "bold": [
+        "éteindre",
+        "radio"
+      ],
+      "en": "I can't hear a thing: can you turn off the radio?",
+      "es": "No oigo nada: ¿puedes apagar la radio?"
+    },
+    {
+      "sentence": "Tu viens avec moi au concert de jazz samedi soir ?",
+      "kind": "question",
+      "bold": [
+        "concert",
+        "jazz"
+      ],
+      "en": "Are you coming with me to the jazz concert on Saturday night?",
+      "es": "¿Vienes conmigo al concierto de jazz el sábado por la noche?"
+    },
+    {
+      "sentence": "Je suis des cours de piano depuis l'âge de cinq ans.",
+      "kind": "statement",
+      "bold": [
+        "piano",
+        "depuis l'âge de"
+      ],
+      "en": "I've been taking piano lessons since I was five.",
+      "es": "Recibo clases de piano desde los cinco años."
+    },
+    {
+      "sentence": "Quand nous étions petits, notre grand-père nous chantait des chansons le soir.",
+      "kind": "statement",
+      "bold": [
+        "nous chantait",
+        "chansons"
+      ],
+      "en": "When we were little, our grandfather used to sing us songs in the evening.",
+      "es": "Cuando éramos pequeños, nuestro abuelo nos cantaba canciones por la noche."
+    },
+    {
+      "sentence": "J'aimerais jouer de la trompette dans une fanfare.",
+      "kind": "statement",
+      "bold": [
+        "J'aimerais",
+        "trompette",
+        "fanfare"
+      ],
+      "en": "I'd like to play the trumpet in a brass band.",
+      "es": "Me gustaría tocar la trompeta en una banda."
+    },
+    {
+      "sentence": "Le groupe a enregistré son premier disque l'année dernière.",
+      "kind": "statement",
+      "bold": [
+        "groupe",
+        "a enregistré",
+        "disque"
+      ],
+      "en": "The band recorded its first album last year.",
+      "es": "El grupo grabó su primer disco el año pasado."
+    },
+    {
+      "sentence": "Je ne joue d'aucun instrument, mais j'adore chanter dans la chorale.",
+      "kind": "statement",
+      "bold": [
+        "Je ne joue d'aucun instrument",
+        "chanter",
+        "chorale"
+      ],
+      "en": "I don't play any instrument, but I love singing in the choir.",
+      "es": "No toco ningún instrumento, pero me encanta cantar en el coro."
+    }
+  ],
   "story": {
     "title": "La batteuse",
     "text": "Je m'appelle Jade et j'ai toujours voulu être musicienne. Je joue de la batterie depuis l'âge de huit ans. Dans ma famille, tout le monde aime la musique. Mon grand-père jouait de l'accordéon dans les bals de village. Le dimanche, nous allions chez lui et il nous jouait de vieilles chansons pendant que ma grand-mère dansait dans la cuisine. Ma mère, elle, chantait dans une chorale, et souvent, nous écoutions du jazz à la radio. Après le lycée, je suis entrée au conservatoire de Lyon, où j'ai appris le solfège et les percussions classiques. Pendant deux ans, j'ai joué des timbales dans l'orchestre symphonique de la ville. Un jour, des amis qui voulaient former un groupe de rock m'ont demandé de les rejoindre : ils n'avaient pas de batteur ! J'ai accepté tout de suite. Depuis, nous voyageons dans toute la France en nous amusant et en donnant du bonheur au public. J'aimerais un jour jouer à l'Olympia, à Paris. Et mon grand-père viendrait sûrement avec son accordéon !",

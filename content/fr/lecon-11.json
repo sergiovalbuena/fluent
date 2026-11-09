@@ -529,6 +529,106 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Depuis quand est-ce que tu as mal aux dents ?",
+      "kind": "question",
+      "bold": [
+        "tu as mal aux dents"
+      ],
+      "en": "How long have you had a toothache?",
+      "es": "¿Desde cuándo te duelen los dientes?"
+    },
+    {
+      "sentence": "Pourquoi est-ce que tu as l'air si fatiguée ce matin ?",
+      "kind": "question",
+      "bold": [
+        "tu as l'air",
+        "fatiguée"
+      ],
+      "en": "Why do you look so tired this morning?",
+      "es": "¿Por qué pareces tan cansada esta mañana?"
+    },
+    {
+      "sentence": "Mon bébé a de la fièvre et mal à la gorge : que pourrais-je faire ?",
+      "kind": "question",
+      "bold": [
+        "mal à la gorge"
+      ],
+      "en": "My baby has a fever and a sore throat: what could I do?",
+      "es": "Mi bebé tiene fiebre y le duele la garganta: ¿qué podría hacer?"
+    },
+    {
+      "sentence": "J'ai mal au dos : peux-tu me donner un coup de main pour porter ce sac ?",
+      "kind": "question",
+      "bold": [
+        "mal au dos",
+        "main"
+      ],
+      "en": "My back hurts: can you give me a hand carrying this bag?",
+      "es": "Me duele la espalda: ¿puedes echarme una mano para llevar esta bolsa?"
+    },
+    {
+      "sentence": "Est-ce que les oreilles se trouvent de chaque côté de la tête chez tous les animaux ?",
+      "kind": "question",
+      "bold": [
+        "oreilles",
+        "se trouvent",
+        "tête"
+      ],
+      "en": "Are the ears on each side of the head in all animals?",
+      "es": "¿Las orejas están a cada lado de la cabeza en todos los animales?"
+    },
+    {
+      "sentence": "J'ai mal au genou depuis que j'ai joué au foot samedi.",
+      "kind": "statement",
+      "bold": [
+        "J'ai mal au genou",
+        "j'ai joué"
+      ],
+      "en": "My knee has hurt since I played football on Saturday.",
+      "es": "Me duele la rodilla desde que jugué al fútbol el sábado."
+    },
+    {
+      "sentence": "Ils sont pâles et ils toussent : ils doivent être malades.",
+      "kind": "statement",
+      "bold": [
+        "doivent être"
+      ],
+      "en": "They're pale and coughing: they must be sick.",
+      "es": "Están pálidos y tosen: deben de estar enfermos."
+    },
+    {
+      "sentence": "Prends ce médicament et lave-toi bien les mains avant de manger.",
+      "kind": "statement",
+      "bold": [
+        "Prends",
+        "mains"
+      ],
+      "en": "Take this medicine and wash your hands well before eating.",
+      "es": "Toma este medicamento y lávate bien las manos antes de comer."
+    },
+    {
+      "sentence": "Mon frère est plus grand que moi, mais j'ai de plus grands pieds que lui.",
+      "kind": "statement",
+      "bold": [
+        "est plus grand que",
+        "pieds"
+      ],
+      "en": "My brother is taller than me, but I have bigger feet than him.",
+      "es": "Mi hermano es más alto que yo, pero tengo los pies más grandes que él."
+    },
+    {
+      "sentence": "Avec ce froid, tu vas avoir mal à la gorge si tu ne mets pas d'écharpe.",
+      "kind": "statement",
+      "bold": [
+        "vas avoir",
+        "gorge"
+      ],
+      "en": "With this cold weather, you're going to get a sore throat if you don't wear a scarf.",
+      "es": "Con este frío, te va a doler la garganta si no te pones bufanda."
+    }
+  ],
   "story": {
     "title": "Le cours de yoga",
     "text": "Ce matin, Nora va à son premier cours de yoga. Elle a l'air un peu nerveuse. Le professeur, Bastien, sourit : « Bienvenue ! Asseyez-vous sur le tapis et fermez les yeux. » Il explique : « Respirez lentement. L'air entre par le nez et va jusqu'aux poumons. Maintenant, levez les bras au-dessus de la tête. Baissez les épaules et tournez le cou doucement. » Nora a mal au dos : hier, elle a beaucoup travaillé devant l'ordinateur. « Pliez les genoux et touchez vos pieds avec les mains. » Une autre élève rit : « Je ne peux pas, mes jambes sont trop longues ! » À la fin du cours, Bastien dit : « Si vous pratiquez tous les jours, votre corps sera plus fort et votre tête plus tranquille. » Nora se sent mieux. Elle doit être plus détendue, car son cœur bat plus lentement. « Merci pour le coup de main, Bastien. Je reviendrai la semaine prochaine ! »",

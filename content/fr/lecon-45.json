@@ -463,6 +463,106 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu iras au mariage de ta cousine si ta femme vient avec toi ?",
+      "kind": "question",
+      "bold": [
+        "Tu iras",
+        "mariage"
+      ],
+      "en": "Will you go to your cousin's wedding if your wife comes with you?",
+      "es": "¿Irás a la boda de tu prima si tu mujer va contigo?"
+    },
+    {
+      "sentence": "Est-ce que tu es en train de tomber amoureux de ta collègue ?",
+      "kind": "question",
+      "bold": [
+        "tomber amoureux"
+      ],
+      "en": "Are you falling in love with your colleague?",
+      "es": "¿Te estás enamorando de tu compañera de trabajo?"
+    },
+    {
+      "sentence": "Quand est-ce que vous allez vous fiancer officiellement ?",
+      "kind": "question",
+      "bold": [
+        "vous fiancer"
+      ],
+      "en": "When are you going to get engaged officially?",
+      "es": "¿Cuándo os vais a prometer oficialmente?"
+    },
+    {
+      "sentence": "Pourquoi es-tu si jalouse quand il parle avec ses amies ?",
+      "kind": "question",
+      "bold": [
+        "jalouse"
+      ],
+      "en": "Why are you so jealous when he talks with his friends?",
+      "es": "¿Por qué estás tan celosa cuando habla con sus amigas?"
+    },
+    {
+      "sentence": "Tu me promets de toujours me dire la vérité ?",
+      "kind": "question",
+      "bold": [
+        "promets"
+      ],
+      "en": "Do you promise to always tell me the truth?",
+      "es": "¿Me prometes que siempre me dirás la verdad?"
+    },
+    {
+      "sentence": "Si tu continues avec cette attitude, tu vas perdre sa confiance.",
+      "kind": "statement",
+      "bold": [
+        "Si tu continues",
+        "tu vas perdre",
+        "confiance"
+      ],
+      "en": "If you keep up this attitude, you're going to lose her trust.",
+      "es": "Si sigues con esa actitud, vas a perder su confianza."
+    },
+    {
+      "sentence": "Tu m'as manqué chaque jour pendant ton voyage.",
+      "kind": "statement",
+      "bold": [
+        "Tu m'as manqué"
+      ],
+      "en": "I missed you every day during your trip.",
+      "es": "Te eché de menos cada día durante tu viaje."
+    },
+    {
+      "sentence": "Je ne veux pas que mes enfants se sentent seuls après le divorce.",
+      "kind": "statement",
+      "bold": [
+        "Je ne veux pas que",
+        "se sentent",
+        "divorce"
+      ],
+      "en": "I don't want my children to feel alone after the divorce.",
+      "es": "No quiero que mis hijos se sientan solos después del divorcio."
+    },
+    {
+      "sentence": "J'avais pensé que notre histoire serait un conte de fées.",
+      "kind": "statement",
+      "bold": [
+        "J'avais pensé",
+        "serait",
+        "conte de fées"
+      ],
+      "en": "I had thought our story would be a fairy tale.",
+      "es": "Había pensado que nuestra historia sería un cuento de hadas."
+    },
+    {
+      "sentence": "Il regarde son téléphone même quand il est avec moi, ça me rend déprimée.",
+      "kind": "statement",
+      "bold": [
+        "même quand",
+        "déprimée"
+      ],
+      "en": "He looks at his phone even when he's with me, it gets me down.",
+      "es": "Mira el móvil incluso cuando está conmigo, eso me deprime."
+    }
+  ],
   "story": {
     "title": "Cher journal",
     "text": "Lyon, le 12 mars. Cher journal, ces derniers temps, je suis triste. Hugo, mon fiancé, est parti travailler à Montréal il y a six mois, et j'ai l'impression qu'il ne m'aime plus comme avant. Nous nous disputons à chaque appel. Il regarde son téléphone même quand nous parlons en vidéo. Il ne me dit plus « Tu me manques ». J'avais pensé que notre amour serait plus fort que la distance. Il dit qu'il a besoin de temps pour lui. Je crois que je pleurerai toute la nuit si j'apprends qu'il est amoureux de quelqu'un d'autre. Je ne sais pas quoi faire. Ma mère dit que si nous ne communiquons pas mieux, nous allons nous séparer. Mais je l'aime encore. Je ne veux pas que mes amis aient pitié de moi : je suis une femme forte. J'ai beaucoup pleuré, et maintenant, je veux sourire à nouveau. Demain, je l'appellerai et je lui dirai tout ce que je ressens. S'il m'aime vraiment, il m'écoutera. Et s'il ne m'aime plus… eh bien, je survivrai. Ce n'est pas un conte de fées, c'est la vie.",

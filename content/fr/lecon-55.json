@@ -473,6 +473,108 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Comment as-tu pu acheter un manteau si grand ? Il était bon marché ?",
+      "kind": "question",
+      "bold": [
+        "bon marché"
+      ],
+      "en": "How could you buy such a big coat? Was it cheap?",
+      "es": "¿Cómo pudiste comprar un abrigo tan grande? ¿Era barato?"
+    },
+    {
+      "sentence": "Tu as comparé les prix avant d'acheter ce sac ?",
+      "kind": "question",
+      "bold": [
+        "comparé",
+        "prix"
+      ],
+      "en": "Did you compare prices before buying this bag?",
+      "es": "¿Comparaste los precios antes de comprar este bolso?"
+    },
+    {
+      "sentence": "À quel étage se trouve le rayon des chaussures dans ce grand magasin ?",
+      "kind": "question",
+      "bold": [
+        "rayon",
+        "grand magasin"
+      ],
+      "en": "Which floor is the shoe department on in this department store?",
+      "es": "¿En qué planta está la sección de zapatos en estos grandes almacenes?"
+    },
+    {
+      "sentence": "Est-ce qu'il y a une remise sur cette marchandise pendant les soldes ?",
+      "kind": "question",
+      "bold": [
+        "remise",
+        "marchandise",
+        "soldes"
+      ],
+      "en": "Is there a discount on these goods during the sales?",
+      "es": "¿Hay descuento en esta mercancía durante las rebajas?"
+    },
+    {
+      "sentence": "Tu paies en argent liquide ou par carte ?",
+      "kind": "question",
+      "bold": [
+        "argent liquide"
+      ],
+      "en": "Are you paying in cash or by card?",
+      "es": "¿Pagas en efectivo o con tarjeta?"
+    },
+    {
+      "sentence": "J'ai souvent acheté mes cadeaux de Noël dans ce centre commercial.",
+      "kind": "statement",
+      "bold": [
+        "J'ai souvent acheté",
+        "centre commercial"
+      ],
+      "en": "I've often bought my Christmas presents in this mall.",
+      "es": "He comprado a menudo mis regalos de Navidad en este centro comercial."
+    },
+    {
+      "sentence": "Il y a plein de cravates : choisis-en une rapidement !",
+      "kind": "statement",
+      "bold": [
+        "choisis-en",
+        "rapidement"
+      ],
+      "en": "There are loads of ties: pick one quickly!",
+      "es": "Hay muchísimas corbatas: ¡elige una rápido!"
+    },
+    {
+      "sentence": "Les prix ici sont plus chers qu'ailleurs, mais la qualité est meilleure.",
+      "kind": "statement",
+      "bold": [
+        "plus chers qu'"
+      ],
+      "en": "Prices here are higher than elsewhere, but the quality is better.",
+      "es": "Los precios aquí son más caros que en otros sitios, pero la calidad es mejor."
+    },
+    {
+      "sentence": "Le voleur est sorti sans que le vigile le voie.",
+      "kind": "statement",
+      "bold": [
+        "voleur",
+        "sans que",
+        "vigile",
+        "voie"
+      ],
+      "en": "The thief got out without the security guard seeing him.",
+      "es": "El ladrón salió sin que el vigilante lo viera."
+    },
+    {
+      "sentence": "Honnêtement, cette robe est complètement démodée.",
+      "kind": "statement",
+      "bold": [
+        "Honnêtement",
+        "complètement"
+      ],
+      "en": "Honestly, this dress is completely out of fashion.",
+      "es": "Sinceramente, este vestido está completamente pasado de moda."
+    }
+  ],
   "story": {
     "title": "Le vigile",
     "text": "Je m'appelle Marc et je suis vigile dans un grand magasin de Lyon. Chaque jour, je surveille les rayons pour éviter les vols à l'étalage. Les voleurs font semblant de regarder les vêtements, puis ils cachent rapidement quelque chose dans leur sac ou sous leur manteau. Parfois, ils réussissent à sortir sans que personne ne s'en aperçoive. Il est étonnant de voir combien de jeunes sont arrêtés chaque mois, dont la plupart ont entre quinze et dix-sept ans. Souvent, ils ne volent pas par besoin, mais à cause de la pression de leurs amis : ils veulent avoir les mêmes baskets ou le même téléphone que les autres. Hier, j'ai arrêté un garçon qui avait caché un tee-shirt sous son pull. Il était complètement terrorisé. Au lieu d'appeler immédiatement la police, j'ai parlé longtemps avec lui. Il m'a avoué honnêtement qu'il voulait juste impressionner sa bande. Le magasin a installé des caméras et des codes-barres, mais je crois que le plus important, c'est de parler aux jeunes. Il faut leur faire comprendre qu'on n'a pas besoin de voler pour être accepté. Heureusement, ce garçon est revenu aujourd'hui… pour payer le tee-shirt !",

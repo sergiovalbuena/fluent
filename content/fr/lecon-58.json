@@ -493,6 +493,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pourquoi ta voiture ne démarre pas ? C'est le démarreur ?",
+      "kind": "question",
+      "bold": [
+        "démarre",
+        "démarreur"
+      ],
+      "en": "Why won't your car start? Is it the starter?",
+      "es": "¿Por qué no arranca tu coche? ¿Es el motor de arranque?"
+    },
+    {
+      "sentence": "Tu as une roue de secours dans le coffre ?",
+      "kind": "question",
+      "bold": [
+        "roue de secours",
+        "coffre"
+      ],
+      "en": "Do you have a spare wheel in the trunk?",
+      "es": "¿Tienes rueda de repuesto en el maletero?"
+    },
+    {
+      "sentence": "Pourquoi ton pare-brise est si sale ? Tes essuie-glaces ne marchent pas ?",
+      "kind": "question",
+      "bold": [
+        "pare-brise",
+        "essuie-glaces"
+      ],
+      "en": "Why is your windshield so dirty? Don't your wipers work?",
+      "es": "¿Por qué está tan sucio tu parabrisas? ¿No funcionan los limpiaparabrisas?"
+    },
+    {
+      "sentence": "Quelle est la limitation de vitesse sur cette route ?",
+      "kind": "question",
+      "bold": [
+        "limitation de vitesse"
+      ],
+      "en": "What's the speed limit on this road?",
+      "es": "¿Cuál es el límite de velocidad en esta carretera?"
+    },
+    {
+      "sentence": "Tu peux mettre le clignotant avant de tourner, s'il te plaît ?",
+      "kind": "question",
+      "bold": [
+        "clignotant"
+      ],
+      "en": "Can you put the indicator on before you turn, please?",
+      "es": "¿Puedes poner el intermitente antes de girar, por favor?"
+    },
+    {
+      "sentence": "Il y a vingt ans que mes parents ont la même camionnette.",
+      "kind": "statement",
+      "bold": [
+        "Il y a",
+        "que",
+        "camionnette"
+      ],
+      "en": "My parents have had the same van for twenty years.",
+      "es": "Hace veinte años que mis padres tienen la misma furgoneta."
+    },
+    {
+      "sentence": "Malgré la neige, nous sommes arrivés sans tomber en panne.",
+      "kind": "statement",
+      "bold": [
+        "Malgré",
+        "tomber en panne"
+      ],
+      "en": "Despite the snow, we arrived without breaking down.",
+      "es": "A pesar de la nieve, llegamos sin averiarnos."
+    },
+    {
+      "sentence": "La voiture est parfaite, sauf la petite rayure sur le pare-chocs.",
+      "kind": "statement",
+      "bold": [
+        "sauf",
+        "rayure",
+        "pare-chocs"
+      ],
+      "en": "The car is perfect, except for the small scratch on the bumper.",
+      "es": "El coche está perfecto, salvo el pequeño arañazo en el parachoques."
+    },
+    {
+      "sentence": "Je roulais vers Paris quand le pneu éclata sur l'autoroute.",
+      "kind": "statement",
+      "bold": [
+        "Je roulais",
+        "pneu",
+        "éclata"
+      ],
+      "en": "I was driving towards Paris when the tire burst on the motorway.",
+      "es": "Iba conduciendo hacia París cuando el neumático reventó en la autopista."
+    },
+    {
+      "sentence": "Avant de partir, vérifie les phares et le rétroviseur.",
+      "kind": "statement",
+      "bold": [
+        "Avant de",
+        "phares",
+        "rétroviseur"
+      ],
+      "en": "Before leaving, check the headlights and the rearview mirror.",
+      "es": "Antes de salir, revisa los faros y el retrovisor."
+    }
+  ],
   "story": {
     "title": "Une nuit sur la route",
     "text": "Je roulais vers Lyon pour un congrès. Bien qu'il n'y ait pas beaucoup de circulation sur l'autoroute, il pleuvait très fort et les essuie-glaces avaient du mal à nettoyer le pare-brise. Soudain, j'entendis un bruit terrible : un pneu venait d'éclater ! La voiture glissa vers la droite et je fus sur le point de perdre le contrôle. Heureusement, je réussis à m'arrêter sur la bande d'arrêt d'urgence. J'avais encore ma ceinture de sécurité et je n'étais pas blessée, mais j'avais très peur. J'ai allumé les feux de détresse et j'ai mis mon gilet jaune avant de sortir. Malgré la pluie, j'ai essayé de changer la roue, mais je n'arrivais pas à dévisser les écrous. Après vingt minutes, un camion s'est arrêté derrière moi. Le chauffeur, un homme très gentil, a sorti la roue de secours du coffre et l'a changée en dix minutes. « Vous devriez vérifier vos pneus plus souvent », m'a-t-il dit en souriant. Je suis arrivée à Lyon avec deux heures de retard, trempée mais saine et sauve. Le lendemain, l'assurance m'a remboursé un pneu neuf. Depuis, je vérifie toujours mes pneus avant de partir !",

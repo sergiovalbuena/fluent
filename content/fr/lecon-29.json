@@ -494,6 +494,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Ça te dit d'aller au cinéma ce soir ?",
+      "kind": "question",
+      "bold": [
+        "Ça te dit d'",
+        "cinéma"
+      ],
+      "en": "Do you feel like going to the cinema tonight?",
+      "es": "¿Te apetece ir al cine esta noche?"
+    },
+    {
+      "sentence": "Où veux-tu t'asseoir, au balcon ou au milieu de la rangée ?",
+      "kind": "question",
+      "bold": [
+        "balcon",
+        "rangée"
+      ],
+      "en": "Where do you want to sit, in the balcony or in the middle of the row?",
+      "es": "¿Dónde quieres sentarte, en el anfiteatro o en el centro de la fila?"
+    },
+    {
+      "sentence": "Quel genre de film aimes-tu, les comédies ou les films d'action ?",
+      "kind": "question",
+      "bold": [
+        "film",
+        "comédies",
+        "films d'action"
+      ],
+      "en": "What kind of film do you like, comedies or action films?",
+      "es": "¿Qué tipo de película te gusta, las comedias o las películas de acción?"
+    },
+    {
+      "sentence": "Tu préfères voir le film avec des sous-titres ou doublé ?",
+      "kind": "question",
+      "bold": [
+        "sous-titres"
+      ],
+      "en": "Do you prefer to watch the film with subtitles or dubbed?",
+      "es": "¿Prefieres ver la película con subtítulos o doblada?"
+    },
+    {
+      "sentence": "Qui est le metteur en scène de cette pièce de théâtre ?",
+      "kind": "question",
+      "bold": [
+        "metteur en scène",
+        "pièce de théâtre"
+      ],
+      "en": "Who is the director of this play?",
+      "es": "¿Quién es el director de esta obra de teatro?"
+    },
+    {
+      "sentence": "Le premier acte a été ennuyeux, mais la fin était très émouvante.",
+      "kind": "statement",
+      "bold": [
+        "acte",
+        "a été",
+        "ennuyeux",
+        "émouvante"
+      ],
+      "en": "The first act was boring, but the ending was very moving.",
+      "es": "El primer acto fue aburrido, pero el final fue muy emotivo."
+    },
+    {
+      "sentence": "L'acteur s'est fait siffler par le public quand il a oublié son texte.",
+      "kind": "statement",
+      "bold": [
+        "s'est fait siffler",
+        "public"
+      ],
+      "en": "The actor got booed by the audience when he forgot his lines.",
+      "es": "El actor fue abucheado por el público cuando olvidó su texto."
+    },
+    {
+      "sentence": "Ce décor est plus beau que celui de la pièce d'hier.",
+      "kind": "statement",
+      "bold": [
+        "décor",
+        "celui de"
+      ],
+      "en": "This set is more beautiful than the one in yesterday's play.",
+      "es": "Este decorado es más bonito que el de la obra de ayer."
+    },
+    {
+      "sentence": "Après avoir fini son travail, elle est allée voir une comédie musicale.",
+      "kind": "statement",
+      "bold": [
+        "Après avoir fini",
+        "comédie musicale"
+      ],
+      "en": "After finishing work, she went to see a musical.",
+      "es": "Después de terminar el trabajo, fue a ver un musical."
+    },
+    {
+      "sentence": "Elle mourait d'envie de voir ce spectacle depuis des mois.",
+      "kind": "statement",
+      "bold": [
+        "mourait d'envie de",
+        "spectacle"
+      ],
+      "en": "She had been dying to see this show for months.",
+      "es": "Se moría de ganas de ver este espectáculo desde hacía meses."
+    }
+  ],
   "story": {
     "title": "Le cadeau de Léa",
     "text": "Aujourd'hui, c'est le quatre-vingtième anniversaire de Robert. Sa petite-fille, Léa, a décidé de l'emmener voir une comédie musicale qu'il mourait d'envie de voir depuis des années. Elle a dû acheter les places trois mois à l'avance, parce que le spectacle ne serait joué qu'une seule fois à Toulouse et que tout le monde voulait le voir. Après avoir fini son travail, Léa est passée chez le coiffeur. Elle a mis la robe bleue qu'elle avait achetée spécialement pour l'occasion. Elle est allée chercher son grand-père vers dix-neuf heures, et ils sont arrivés au théâtre à dix-neuf heures trente. La salle était pleine. Le rideau s'est levé à vingt heures pile. L'orchestre était magnifique et les décors étaient pleins de couleurs. À l'entracte, ils ont partagé un verre de champagne. « Le premier acte a été un peu long, mais les chansons m'ont beaucoup plu », a dit Robert. Le deuxième acte a été encore meilleur : drôle, émouvant et surprenant. À la fin, le public a applaudi pendant dix minutes. « C'est le plus beau cadeau de ma vie », a murmuré Robert.",

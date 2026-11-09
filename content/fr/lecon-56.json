@@ -459,6 +459,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Qu'est-ce que vous aimeriez aujourd'hui : une coupe de cheveux ou un brushing ?",
+      "kind": "question",
+      "bold": [
+        "coupe de cheveux",
+        "brushing"
+      ],
+      "en": "What would you like today: a haircut or a blow-dry?",
+      "es": "¿Qué le gustaría hoy: un corte de pelo o un secado?"
+    },
+    {
+      "sentence": "Ils sont un peu irréguliers : qui t'a coupé les cheveux ?",
+      "kind": "question",
+      "bold": [
+        "irréguliers",
+        "qui t'a coupé les cheveux"
+      ],
+      "en": "They're a bit uneven: who cut your hair?",
+      "es": "Está un poco desigual: ¿quién te cortó el pelo?"
+    },
+    {
+      "sentence": "Vous voulez aussi que je vous fasse un shampoing et un après-shampoing ?",
+      "kind": "question",
+      "bold": [
+        "shampoing",
+        "après-shampoing"
+      ],
+      "en": "Would you also like me to give you a shampoo and conditioner?",
+      "es": "¿Quiere que le haga también un lavado con champú y suavizante?"
+    },
+    {
+      "sentence": "Quand vas-tu te faire couper les cheveux ?",
+      "kind": "question",
+      "bold": [
+        "te faire couper"
+      ],
+      "en": "When are you going to get your hair cut?",
+      "es": "¿Cuándo vas a cortarte el pelo?"
+    },
+    {
+      "sentence": "Vous vous êtes déjà fait faire des mèches ?",
+      "kind": "question",
+      "bold": [
+        "fait faire",
+        "mèches"
+      ],
+      "en": "Have you ever had highlights done?",
+      "es": "¿Se ha hecho mechas alguna vez?"
+    },
+    {
+      "sentence": "Je veux que vous me coupiez les cheveux un peu plus court.",
+      "kind": "statement",
+      "bold": [
+        "Je veux que vous",
+        "coupiez",
+        "court"
+      ],
+      "en": "I'd like you to cut my hair a little shorter.",
+      "es": "Quiero que me corte el pelo un poco más corto."
+    },
+    {
+      "sentence": "Il vaut mieux que tu mettes du vernis à ongles transparent.",
+      "kind": "statement",
+      "bold": [
+        "Il vaut mieux que",
+        "mettes",
+        "vernis à ongles"
+      ],
+      "en": "You'd better put on clear nail polish.",
+      "es": "Es mejor que te pongas esmalte de uñas transparente."
+    },
+    {
+      "sentence": "Ma sœur s'est fait épiler les sourcils à la cire hier.",
+      "kind": "statement",
+      "bold": [
+        "s'est fait épiler",
+        "sourcils",
+        "cire"
+      ],
+      "en": "My sister had her eyebrows waxed yesterday.",
+      "es": "Mi hermana se depiló las cejas con cera ayer."
+    },
+    {
+      "sentence": "Ce salon de coiffure est ouvert depuis dix ans dans notre quartier.",
+      "kind": "statement",
+      "bold": [
+        "salon de coiffure",
+        "est ouvert depuis"
+      ],
+      "en": "This hair salon has been open for ten years in our neighborhood.",
+      "es": "Esta peluquería lleva diez años abierta en nuestro barrio."
+    },
+    {
+      "sentence": "Je suis très détendue : je viens de me faire masser à l'institut de beauté.",
+      "kind": "statement",
+      "bold": [
+        "je viens de me faire masser",
+        "institut de beauté"
+      ],
+      "en": "I'm very relaxed: I've just had a massage at the beauty salon.",
+      "es": "Estoy muy relajada: acabo de recibir un masaje en el centro de estética."
+    }
+  ],
   "story": {
     "title": "La pire coupe de ma vie",
     "text": "« Bonsoir, madame. Qu'est-ce que vous aimeriez faire aujourd'hui ? » « Je voudrais me faire couper les cheveux, mais juste un peu. » « Vous voulez aussi que je vous fasse un shampoing ? » « Oui, pourquoi pas. Je ne viens pas souvent ici, mais on m'a dit que c'était bien. » « Vous vous êtes déjà fait faire une couleur ? » « Oui, d'ailleurs, j'aimerais bien essayer quelque chose de différent. » « Je suis très doué pour les couleurs ! Si vous voulez, je vous la fais. » « D'accord, je vous fais confiance. » Une heure plus tard, Léa se regarde dans le miroir. « Mon Dieu ! Qu'est-ce que vous avez fait ? Mes cheveux sont orange ! » « Euh… au moins, c'est original. Laissez-moi les couper un peu, ça ira mieux. » Dix minutes après : « Pourquoi me les avez-vous coupés si court ? Et de façon si irrégulière ! » « Mais vous m'avez dit que vous vouliez du changement ! » « Je vous ai dit que je ne voulais pas changer beaucoup ! » Léa sort du salon en mettant un bonnet. Le lendemain, elle s'est fait faire une nouvelle couleur… dans un autre salon.",

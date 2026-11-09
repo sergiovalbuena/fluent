@@ -453,6 +453,108 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "C'est la veuve de monsieur Marceau qui habite au premier étage ?",
+      "kind": "question",
+      "bold": [
+        "veuve"
+      ],
+      "en": "Is it Mr. Marceau's widow who lives on the first floor?",
+      "es": "¿Es la viuda del señor Marceau la que vive en el primer piso?"
+    },
+    {
+      "sentence": "À quoi ressemble ta routine quotidienne quand tu travailles ?",
+      "kind": "question",
+      "bold": [
+        "routine",
+        "quotidienne"
+      ],
+      "en": "What does your daily routine look like when you're working?",
+      "es": "¿Cómo es tu rutina diaria cuando trabajas?"
+    },
+    {
+      "sentence": "C'est ta petite amie, ou seulement une amie de la fac ?",
+      "kind": "question",
+      "bold": [
+        "petite amie"
+      ],
+      "en": "Is she your girlfriend, or just a friend from university?",
+      "es": "¿Es tu novia o solo una amiga de la universidad?"
+    },
+    {
+      "sentence": "Tu te lèves à quelle heure tous les jours ?",
+      "kind": "question",
+      "bold": [
+        "te lèves",
+        "tous les jours"
+      ],
+      "en": "What time do you get up every day?",
+      "es": "¿A qué hora te levantas todos los días?"
+    },
+    {
+      "sentence": "Qui va arroser les plantes pendant nos vacances ?",
+      "kind": "question",
+      "bold": [
+        "arroser"
+      ],
+      "en": "Who's going to water the plants during our holidays?",
+      "es": "¿Quién va a regar las plantas durante nuestras vacaciones?"
+    },
+    {
+      "sentence": "La poule et le coq de mes voisins me réveillent tous les matins.",
+      "kind": "statement",
+      "bold": [
+        "poule",
+        "coq",
+        "réveillent",
+        "tous les matins"
+      ],
+      "en": "My neighbors' hen and rooster wake me up every morning.",
+      "es": "La gallina y el gallo de mis vecinos me despiertan todas las mañanas."
+    },
+    {
+      "sentence": "J'aimerais avoir une vie plus passionnante et moins monotone.",
+      "kind": "statement",
+      "bold": [
+        "J'aimerais avoir",
+        "passionnante",
+        "monotone"
+      ],
+      "en": "I'd like to have a more exciting and less monotonous life.",
+      "es": "Me gustaría tener una vida más apasionante y menos monótona."
+    },
+    {
+      "sentence": "J'espère que nous pourrons voyager ensemble l'été prochain.",
+      "kind": "statement",
+      "bold": [
+        "J'espère que",
+        "pourrons"
+      ],
+      "en": "I hope we'll be able to travel together next summer.",
+      "es": "Espero que podamos viajar juntos el verano que viene."
+    },
+    {
+      "sentence": "Ma tante travaille le week-end afin d'économiser pour sa maison.",
+      "kind": "statement",
+      "bold": [
+        "tante",
+        "afin d'"
+      ],
+      "en": "My aunt works at weekends in order to save for her house.",
+      "es": "Mi tía trabaja los fines de semana para ahorrar para su casa."
+    },
+    {
+      "sentence": "Les vieux meubles du grenier sont en train de s'abîmer.",
+      "kind": "statement",
+      "bold": [
+        "meubles",
+        "sont en train de"
+      ],
+      "en": "The old furniture in the attic is getting damaged.",
+      "es": "Los muebles viejos del desván se están estropeando."
+    }
+  ],
   "story": {
     "title": "Une vie trop monotone",
     "text": "Je m'appelle Bruno et, en ce moment, je trouve ma vie un peu ennuyeuse. Tous les jours, c'est la même routine : je me réveille à six heures, j'emmène ma femme au travail, je vais à la salle de sport pendant une heure, puis je vais au bureau. Le soir, nous dînons devant la télévision et nous nous couchons tôt. Le week-end, sa mère nous appelle toutes les deux heures pour savoir ce que nous faisons, et son père est toujours en train de me chercher un « meilleur » travail. Pourtant, mon emploi me plaît. Ce n'est pas mon travail qui m'ennuie, c'est cette façon de vivre qui ne me laisse pas profiter du monde et de ses merveilles. J'aimerais avoir une vie plus passionnante : faire des randonnées avec mes amis, voyager en Europe, découvrir de nouvelles cultures avec ma femme. Alors, j'ai un plan : je vais économiser afin d'acheter un petit chalet à la montagne. Je veux vivre sous un grand ciel bleu, entouré d'oiseaux et de fleurs. Ma femme est d'accord : elle aussi veut se reposer et profiter de chaque jour de notre mariage. J'espère que nous pourrons le faire bientôt… sinon, nous allons devenir fous ! Et toi, à quoi ressemble ta journée ?",

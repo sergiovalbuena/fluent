@@ -182,8 +182,7 @@
     "show_translation": "翻訳を表示",
     "hide_translation": "翻訳を隠す",
     "listen": "聞く",
-    "practice_sentences": "{count}文を続けて",
-    "sentence_question": "質問"
+    "practice_sentences": "{count}文を続けて"
   },
   "gems": {
     "title": "ジェム",

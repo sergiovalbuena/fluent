@@ -443,6 +443,108 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Vous avez réservé une table pour combien de personnes ?",
+      "kind": "question",
+      "bold": [
+        "avez réservé une table"
+      ],
+      "en": "Have you booked a table for how many people?",
+      "es": "¿Ha reservado una mesa para cuántas personas?"
+    },
+    {
+      "sentence": "Comment voulez-vous votre steak : saignant, à point ou bien cuit ?",
+      "kind": "question",
+      "bold": [
+        "saignant",
+        "à point",
+        "bien cuit"
+      ],
+      "en": "How would you like your steak: rare, medium or well done?",
+      "es": "¿Cómo quiere el filete: poco hecho, en su punto o muy hecho?"
+    },
+    {
+      "sentence": "Qu'est-ce que vous nous conseillez comme plat principal ce soir ?",
+      "kind": "question",
+      "bold": [
+        "plat principal"
+      ],
+      "en": "What do you recommend as a main course tonight?",
+      "es": "¿Qué nos aconseja como plato principal esta noche?"
+    },
+    {
+      "sentence": "Où aviez-vous laissé les restes du dîner d'hier ?",
+      "kind": "question",
+      "bold": [
+        "aviez-vous laissé",
+        "restes"
+      ],
+      "en": "Where had you left the leftovers from last night's dinner?",
+      "es": "¿Dónde habíais dejado las sobras de la cena de ayer?"
+    },
+    {
+      "sentence": "On laisse un pourboire au serveur, ou le service est compris ?",
+      "kind": "question",
+      "bold": [
+        "pourboire",
+        "serveur"
+      ],
+      "en": "Do we leave the waiter a tip, or is service included?",
+      "es": "¿Le dejamos propina al camarero o el servicio está incluido?"
+    },
+    {
+      "sentence": "Nous étions déjà venus dans ce restaurant pour notre anniversaire.",
+      "kind": "statement",
+      "bold": [
+        "Nous étions déjà venus"
+      ],
+      "en": "We had already been to this restaurant for our anniversary.",
+      "es": "Ya habíamos venido a este restaurante por nuestro aniversario."
+    },
+    {
+      "sentence": "Si nous avions commandé le poisson, le repas aurait été délicieux.",
+      "kind": "statement",
+      "bold": [
+        "avions commandé",
+        "aurait été",
+        "délicieux"
+      ],
+      "en": "If we had ordered the fish, the meal would have been delicious.",
+      "es": "Si hubiéramos pedido el pescado, la comida habría estado deliciosa."
+    },
+    {
+      "sentence": "Le maître d'hôtel nous tendit la carte avec un grand sourire.",
+      "kind": "statement",
+      "bold": [
+        "maître d'hôtel",
+        "tendit",
+        "carte"
+      ],
+      "en": "The head waiter handed us the menu with a big smile.",
+      "es": "El maître nos tendió la carta con una gran sonrisa."
+    },
+    {
+      "sentence": "Le dîner aurait pu être meilleur, mais le dessert était parfait.",
+      "kind": "statement",
+      "bold": [
+        "aurait pu",
+        "dessert"
+      ],
+      "en": "The dinner could have been better, but the dessert was perfect.",
+      "es": "La cena podría haber sido mejor, pero el postre estaba perfecto."
+    },
+    {
+      "sentence": "J'ai tellement faim que je pourrais manger deux entrées.",
+      "kind": "statement",
+      "bold": [
+        "faim",
+        "entrées"
+      ],
+      "en": "I'm so hungry I could eat two starters.",
+      "es": "Tengo tanta hambre que podría comerme dos entrantes."
+    }
+  ],
   "story": {
     "title": "Notre premier grand restaurant",
     "text": "Nous n'avions jamais mangé dans un grand restaurant. Mais pour mon anniversaire, mon copain Théo m'a invitée au Pavillon, un restaurant très chic de Lyon où il faut être bien habillé. Nous y sommes allés avec deux amis qui, comme nous, n'avaient jamais goûté la grande cuisine française. Quand nous sommes entrés, un maître d'hôtel très élégant nous a demandé si nous avions réservé. Bien qu'il nous ait regardés de haut, nous l'avons suivi jusqu'à une table magnifique. La carte était entièrement en français gastronomique : nous n'avions rien compris, et nous n'avons pas osé poser de questions. Alors, nous avons commandé au hasard. Les plats furent délicieux, mais très petits ! À la fin, le serveur tendit l'addition à Théo. Il devint tout pâle et la montra à nos amis. Si nous avions regardé les prix avant, nous aurions choisi le menu du jour ! Nous avons dû réunir tout notre argent pour payer. Nous n'avions jamais si bien dîné… mais nous n'avions jamais payé un dîner aussi cher non plus !",

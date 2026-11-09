@@ -448,6 +448,108 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu as regardé le panneau d'affichage pour voir s'il y a du retard ?",
+      "kind": "question",
+      "bold": [
+        "panneau d'affichage",
+        "retard"
+      ],
+      "en": "Did you check the departures board to see if there's a delay?",
+      "es": "¿Miraste el panel de información para ver si hay retraso?"
+    },
+    {
+      "sentence": "À quelle heure est-ce que le train partira pour Lyon ?",
+      "kind": "question",
+      "bold": [
+        "train",
+        "partira"
+      ],
+      "en": "What time will the train leave for Lyon?",
+      "es": "¿A qué hora saldrá el tren para Lyon?"
+    },
+    {
+      "sentence": "Où se trouve le wagon-restaurant ? Il y a de quoi manger ?",
+      "kind": "question",
+      "bold": [
+        "wagon-restaurant"
+      ],
+      "en": "Where is the dining car? Is there anything to eat?",
+      "es": "¿Dónde está el vagón restaurante? ¿Hay algo de comer?"
+    },
+    {
+      "sentence": "Est-ce que cette couchette est libre, ou elle est réservée ?",
+      "kind": "question",
+      "bold": [
+        "cette",
+        "couchette"
+      ],
+      "en": "Is this berth free, or is it reserved?",
+      "es": "¿Esta litera está libre o está reservada?"
+    },
+    {
+      "sentence": "Où est-ce que je peux laisser ma valise ? À la consigne ?",
+      "kind": "question",
+      "bold": [
+        "consigne"
+      ],
+      "en": "Where can I leave my suitcase? At the left-luggage office?",
+      "es": "¿Dónde puedo dejar mi maleta? ¿En la consigna?"
+    },
+    {
+      "sentence": "Cette femme qui travaille aux objets trouvés est ma voisine.",
+      "kind": "statement",
+      "bold": [
+        "Cette femme qui",
+        "objets trouvés"
+      ],
+      "en": "The woman who works at the lost-and-found is my neighbor.",
+      "es": "La mujer que trabaja en objetos perdidos es mi vecina."
+    },
+    {
+      "sentence": "Le train est le moyen de transport le plus confortable pour traverser la France.",
+      "kind": "statement",
+      "bold": [
+        "le moyen de transport le plus"
+      ],
+      "en": "The train is the most comfortable means of transport to cross France.",
+      "es": "El tren es el medio de transporte más cómodo para cruzar Francia."
+    },
+    {
+      "sentence": "Le contrôleur vérifia nos billets et nous souhaita bon voyage.",
+      "kind": "statement",
+      "bold": [
+        "contrôleur",
+        "vérifia",
+        "souhaita"
+      ],
+      "en": "The ticket inspector checked our tickets and wished us a good trip.",
+      "es": "El revisor comprobó nuestros billetes y nos deseó buen viaje."
+    },
+    {
+      "sentence": "C'était la dame que j'avais remarquée sur le quai.",
+      "kind": "statement",
+      "bold": [
+        "dame",
+        "que j'avais remarquée",
+        "quai"
+      ],
+      "en": "It was the lady I had noticed on the platform.",
+      "es": "Era la señora en la que me había fijado en el andén."
+    },
+    {
+      "sentence": "Ils ont distribué des couvertures afin que les passagers puissent dormir dans le wagon-lit.",
+      "kind": "statement",
+      "bold": [
+        "afin que",
+        "puissent",
+        "wagon-lit"
+      ],
+      "en": "They handed out blankets so that the passengers could sleep in the sleeping car.",
+      "es": "Repartieron mantas para que los pasajeros pudieran dormir en el coche cama."
+    }
+  ],
   "story": {
     "title": "Une nuit dans le train",
     "text": "En décembre, Antoine prit le train de nuit de Paris à Nice pour passer Noël chez ses parents. Sur le quai, il avait remarqué une jeune femme aux cheveux roux qui portait un énorme sac à dos et un violon. Le train partit tard le soir. Vers deux heures du matin, il s'arrêta brusquement au milieu de nulle part : un arbre était tombé sur la voie à cause de la tempête. Les lumières s'éteignirent. Dans l'obscurité, certains passagers avaient peur et imaginaient le pire. Antoine sortit dans le couloir avec sa lampe de poche. C'est là qu'il retrouva la jeune femme qu'il avait remarquée sur le quai. Elle s'appelait Léna et elle était musicienne. Ensemble, ils aidèrent le contrôleur à distribuer des couvertures afin que les familles se reposent. Puis Léna sortit son violon et joua quelques chansons de Noël. Les enfants arrêtèrent de pleurer et tout le monde se mit à chanter. Le train repartit à l'aube, avec six heures de retard. En arrivant à Nice, Léna donna son numéro à Antoine. « C'est le meilleur retard de ma vie », pensa-t-il.",

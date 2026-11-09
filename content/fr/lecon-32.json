@@ -459,6 +459,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Où se trouve le tapis à bagages pour le vol de Montréal ?",
+      "kind": "question",
+      "bold": [
+        "tapis à bagages",
+        "vol"
+      ],
+      "en": "Where is the baggage carousel for the Montreal flight?",
+      "es": "¿Dónde está la cinta de equipajes del vuelo de Montreal?"
+    },
+    {
+      "sentence": "Tu es là depuis longtemps, ou tu viens d'atterrir ?",
+      "kind": "question",
+      "bold": [
+        "viens d'atterrir"
+      ],
+      "en": "Have you been here long, or have you just landed?",
+      "es": "¿Llevas mucho tiempo aquí o acabas de aterrizar?"
+    },
+    {
+      "sentence": "Est-ce que je peux garder ce sac comme bagage à main ?",
+      "kind": "question",
+      "bold": [
+        "bagage à main"
+      ],
+      "en": "Can I keep this bag as hand luggage?",
+      "es": "¿Puedo llevar esta bolsa como equipaje de mano?"
+    },
+    {
+      "sentence": "À quelle porte a lieu l'embarquement pour Rome ?",
+      "kind": "question",
+      "bold": [
+        "porte",
+        "embarquement"
+      ],
+      "en": "At which gate is boarding for Rome?",
+      "es": "¿En qué puerta es el embarque para Roma?"
+    },
+    {
+      "sentence": "Pourquoi notre vol est-il annulé ? Il y a une tempête ?",
+      "kind": "question",
+      "bold": [
+        "vol",
+        "annulé"
+      ],
+      "en": "Why is our flight cancelled? Is there a storm?",
+      "es": "¿Por qué está cancelado nuestro vuelo? ¿Hay una tormenta?"
+    },
+    {
+      "sentence": "Nous nous sommes enregistrés il y a une heure au comptoir d'enregistrement.",
+      "kind": "statement",
+      "bold": [
+        "Nous nous sommes enregistrés",
+        "comptoir d'enregistrement"
+      ],
+      "en": "We checked in an hour ago at the check-in desk.",
+      "es": "Facturamos hace una hora en el mostrador de facturación."
+    },
+    {
+      "sentence": "Le douanier m'a fait montrer mon passeport et mon visa.",
+      "kind": "statement",
+      "bold": [
+        "m'a fait montrer",
+        "passeport",
+        "visa"
+      ],
+      "en": "The customs officer made me show my passport and my visa.",
+      "es": "El aduanero me hizo enseñar el pasaporte y el visado."
+    },
+    {
+      "sentence": "C'est la porte à laquelle tu dois te présenter avec ta carte d'embarquement.",
+      "kind": "statement",
+      "bold": [
+        "porte",
+        "à laquelle",
+        "carte d'embarquement"
+      ],
+      "en": "This is the gate you must go to with your boarding pass.",
+      "es": "Esta es la puerta a la que tienes que presentarte con tu tarjeta de embarque."
+    },
+    {
+      "sentence": "Le vol fut annulé et les passagers arrivèrent le lendemain matin.",
+      "kind": "statement",
+      "bold": [
+        "fut annulé",
+        "passagers",
+        "arrivèrent"
+      ],
+      "en": "The flight was cancelled and the passengers arrived the next morning.",
+      "es": "El vuelo fue cancelado y los pasajeros llegaron a la mañana siguiente."
+    },
+    {
+      "sentence": "Tout allait bien jusqu'à ce que nous rations notre correspondance à Rome.",
+      "kind": "statement",
+      "bold": [
+        "jusqu'à ce que",
+        "rations",
+        "correspondance"
+      ],
+      "en": "Everything was going well until we missed our connection in Rome.",
+      "es": "Todo iba bien hasta que perdimos nuestra conexión en Roma."
+    }
+  ],
   "story": {
     "title": "Les voyageurs malchanceux",
     "text": "Quand nous habitions à Lille, nous avions des voisins, Bernard et Sylvie, qui adoraient voyager. Mais chaque fois qu'ils partaient, ils avaient des problèmes. Parfois, ils perdaient leurs valises ; d'autres fois, ils rataient leur correspondance et devaient dormir à l'aéroport. Quand ils revenaient, ils nous racontaient leurs aventures en riant. Un été, ils décidèrent de partir en Grèce. Tout allait bien jusqu'à ce qu'ils arrivent à l'aéroport de Rome pour leur escale. Le tableau des vols annonçait un retard de six heures. Bernard fit la queue au comptoir pendant deux heures, mais l'employée lui dit que le vol était annulé. Sylvie, qui ne trouvait plus sa carte d'embarquement, chercha partout. Finalement, ils dormirent sur des chaises dans la salle d'attente. Le lendemain, un autre avion les emmena enfin à Athènes. Mais là-bas, au tapis à bagages, leurs valises n'arrivèrent jamais ! Depuis ce voyage, Bernard et Sylvie ne partent plus qu'en train… et toujours avec un seul petit sac.",

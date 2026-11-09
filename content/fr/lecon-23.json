@@ -534,6 +534,113 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Est-ce qu'il y a eu beaucoup de dégâts après l'orage ?",
+      "kind": "question",
+      "bold": [
+        "Est-ce qu'il y a eu",
+        "dégâts",
+        "orage"
+      ],
+      "en": "Was there a lot of damage after the storm?",
+      "es": "¿Hubo muchos daños después de la tormenta?"
+    },
+    {
+      "sentence": "Quel temps fera-t-il demain : du soleil ou de la pluie ?",
+      "kind": "question",
+      "bold": [
+        "fera",
+        "soleil",
+        "pluie"
+      ],
+      "en": "What will the weather be like tomorrow: sun or rain?",
+      "es": "¿Qué tiempo hará mañana: sol o lluvia?"
+    },
+    {
+      "sentence": "Pourquoi es-tu trempé ? Tu n'avais pas de parapluie ?",
+      "kind": "question",
+      "bold": [
+        "trempé",
+        "parapluie"
+      ],
+      "en": "Why are you soaked? Didn't you have an umbrella?",
+      "es": "¿Por qué estás empapado? ¿No tenías paraguas?"
+    },
+    {
+      "sentence": "Tu préfères le printemps ou l'automne, quand il fait doux ?",
+      "kind": "question",
+      "bold": [
+        "printemps",
+        "automne",
+        "doux"
+      ],
+      "en": "Do you prefer spring or autumn, when it's mild?",
+      "es": "¿Prefieres la primavera o el otoño, cuando el tiempo es templado?"
+    },
+    {
+      "sentence": "Il fait quinze degrés : tu es vraiment si frileuse ?",
+      "kind": "question",
+      "bold": [
+        "degrés",
+        "frileuse"
+      ],
+      "en": "It's fifteen degrees: do you really feel the cold that much?",
+      "es": "Hace quince grados: ¿de verdad eres tan friolera?"
+    },
+    {
+      "sentence": "Il fait froid et il y a du brouillard ce matin : conduis prudemment.",
+      "kind": "statement",
+      "bold": [
+        "Il fait froid",
+        "il y a du brouillard"
+      ],
+      "en": "It's cold and foggy this morning: drive carefully.",
+      "es": "Hace frío y hay niebla esta mañana: conduce con prudencia."
+    },
+    {
+      "sentence": "Je marchais sous la pluie quand j'ai vu un arc-en-ciel.",
+      "kind": "statement",
+      "bold": [
+        "Je marchais",
+        "pluie",
+        "j'ai vu",
+        "arc-en-ciel"
+      ],
+      "en": "I was walking in the rain when I saw a rainbow.",
+      "es": "Caminaba bajo la lluvia cuando vi un arcoíris."
+    },
+    {
+      "sentence": "J'étais triste parce que j'avais raté mon train à cause de la neige.",
+      "kind": "statement",
+      "bold": [
+        "j'avais raté",
+        "neige"
+      ],
+      "en": "I was sad because I had missed my train because of the snow.",
+      "es": "Estaba triste porque había perdido el tren por culpa de la nieve."
+    },
+    {
+      "sentence": "C'était comme si nous nous étions toujours connus.",
+      "kind": "statement",
+      "bold": [
+        "comme si nous nous étions toujours connus"
+      ],
+      "en": "It was as if we had always known each other.",
+      "es": "Era como si nos hubiéramos conocido siempre."
+    },
+    {
+      "sentence": "Ne sors pas pendant la tempête et ferme bien les fenêtres !",
+      "kind": "statement",
+      "bold": [
+        "Ne sors pas",
+        "tempête",
+        "ferme"
+      ],
+      "en": "Don't go out during the storm and close the windows tightly!",
+      "es": "¡No salgas durante la tempestad y cierra bien las ventanas!"
+    }
+  ],
   "story": {
     "title": "L'abribus",
     "text": "J'ai rencontré mon mari il y a douze ans, un soir d'automne, à Lyon. Ce jour-là, il pleuvait à verse et il y avait beaucoup de vent. J'étais de mauvaise humeur, parce que j'avais raté mon train et j'avais oublié mon parapluie. J'ai couru jusqu'à un abribus pour me protéger de l'orage. Un homme était déjà là, trempé jusqu'aux os. Tout à coup, un éclair a illuminé le ciel et le tonnerre a été si fort que j'ai crié. Il a ri, puis il m'a dit : « Calmez-vous, l'orage ne durera pas. » Nous avons commencé à parler de tout et de rien. C'était comme si nous nous étions toujours connus. Quand la pluie s'est arrêtée, un arc-en-ciel est apparu au-dessus du Rhône. Il m'a invitée à boire un chocolat chaud. À ce moment-là, je ne savais pas que cet inconnu serait l'homme de ma vie. Depuis, peu importe le temps qu'il fait : quand je le regarde, le ciel est toujours dégagé.",

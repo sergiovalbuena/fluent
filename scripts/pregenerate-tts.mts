@@ -45,16 +45,18 @@ type Lesson = {
   phrases?: Item[]
   grammar?: { example?: string }[]
   story?: { text?: string }
+  sentences?: { sentence?: string }[]
 }
 
 // Every text the app speaks: vocabulary (also used by Listening and Dictation),
-// phrases, grammar examples and the full story
+// phrases, sentences, grammar examples and the full story
 const dir = join('content', lang)
 const texts = new Set<string>()
 for (const file of readdirSync(dir).filter(f => /^(lecon|lesson|leccion)-\d+\.json$/.test(f)).sort()) {
   const d = JSON.parse(readFileSync(join(dir, file), 'utf8')) as Lesson
   for (const v of d.vocabulary ?? []) if (v.word) texts.add(normalizeTtsText(v.word))
   for (const p of d.phrases ?? []) if (p.phrase) texts.add(normalizeTtsText(p.phrase))
+  for (const x of d.sentences ?? []) if (x.sentence) texts.add(normalizeTtsText(x.sentence))
   for (const g of d.grammar ?? []) if (g.example) texts.add(normalizeTtsText(g.example))
   if (d.story?.text) texts.add(normalizeTtsText(d.story.text))
 }

@@ -437,6 +437,110 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Comment s'appelle ta belle-sœur, celle qui habite à Lyon ?",
+      "kind": "question",
+      "bold": [
+        "Comment s'appelle",
+        "belle-sœur"
+      ],
+      "en": "What's your sister-in-law's name, the one who lives in Lyon?",
+      "es": "¿Cómo se llama tu cuñada, la que vive en Lyon?"
+    },
+    {
+      "sentence": "Qu'est-ce que fait ton oncle depuis qu'il a quitté Paris ?",
+      "kind": "question",
+      "bold": [
+        "Qu'est-ce que fait",
+        "oncle"
+      ],
+      "en": "What does your uncle do now that he's left Paris?",
+      "es": "¿A qué se dedica tu tío desde que dejó París?"
+    },
+    {
+      "sentence": "Quel âge a ta grand-mère, et où habite-t-elle maintenant ?",
+      "kind": "question",
+      "bold": [
+        "Quel âge a",
+        "grand-mère"
+      ],
+      "en": "How old is your grandmother, and where does she live now?",
+      "es": "¿Cuántos años tiene tu abuela y dónde vive ahora?"
+    },
+    {
+      "sentence": "Est-ce que ton cousin va se marier cet été ou l'année prochaine ?",
+      "kind": "question",
+      "bold": [
+        "ton cousin",
+        "va se marier"
+      ],
+      "en": "Is your cousin getting married this summer or next year?",
+      "es": "¿Tu primo se va a casar este verano o el año que viene?"
+    },
+    {
+      "sentence": "Tu es l'aîné ou le cadet de tes frères et sœurs ?",
+      "kind": "question",
+      "bold": [
+        "l'aîné",
+        "le cadet",
+        "tes frères et sœurs"
+      ],
+      "en": "Are you the oldest or the youngest of your siblings?",
+      "es": "¿Eres el mayor o el menor de tus hermanos?"
+    },
+    {
+      "sentence": "Mon père a cinquante ans et ma mère en a quarante-huit.",
+      "kind": "statement",
+      "bold": [
+        "Mon père a cinquante ans",
+        "ma mère"
+      ],
+      "en": "My father is fifty and my mother is forty-eight.",
+      "es": "Mi padre tiene cincuenta años y mi madre cuarenta y ocho."
+    },
+    {
+      "sentence": "Mes grands-parents vont fêter leurs noces d'or au mois de juin.",
+      "kind": "statement",
+      "bold": [
+        "Mes grands-parents",
+        "vont fêter"
+      ],
+      "en": "My grandparents are going to celebrate their golden wedding anniversary in June.",
+      "es": "Mis abuelos van a celebrar sus bodas de oro en junio."
+    },
+    {
+      "sentence": "Ma marraine est la plus généreuse de toute la famille.",
+      "kind": "statement",
+      "bold": [
+        "Ma marraine",
+        "la plus généreuse de",
+        "la famille"
+      ],
+      "en": "My godmother is the most generous person in the whole family.",
+      "es": "Mi madrina es la más generosa de toda la familia."
+    },
+    {
+      "sentence": "Ma sœur et son fiancé viennent dîner chez mes parents dimanche.",
+      "kind": "statement",
+      "bold": [
+        "son fiancé",
+        "mes parents"
+      ],
+      "en": "My sister and her fiancé are coming to dinner at my parents' on Sunday.",
+      "es": "Mi hermana y su prometido vienen a cenar a casa de mis padres el domingo."
+    },
+    {
+      "sentence": "Voici ma famille ; maintenant, parlez-moi de la vôtre.",
+      "kind": "statement",
+      "bold": [
+        "ma famille",
+        "la vôtre"
+      ],
+      "en": "Here's my family; now tell me about yours.",
+      "es": "Esta es mi familia; ahora hábleme de la suya."
+    }
+  ],
   "story": {
     "title": "Ma famille à Marseille",
     "text": "Laissez-moi vous présenter ma famille. Mon père s'appelle Marc Rivière. Il a cinquante ans et il est cuisinier dans un restaurant du port. Ma mère s'appelle Sophie. Elle a quarante-sept ans, elle est médecin et elle s'occupe beaucoup de nous. Au fait, je m'appelle Camille Rivière, j'ai dix-neuf ans et je suis étudiante à Marseille, où nous habitons. Mon frère aîné, Julien, suit des études d'informatique à Lyon. Ma petite sœur, Zoé, est la cadette. Elle a douze ans et c'est une très bonne danseuse. Nous avons aussi un chat gris qui s'appelle Moustache. Mes grands-parents sont toujours en vie et ils habitent à la campagne, près d'Aix. Ma tante Hélène, du côté de mon père, habite à Nice, à deux heures d'ici. Elle a deux fils : ce sont mes cousins. Ma tante pense que je suis la plus bavarde de ses nièces ! Son fils aîné va se marier en juin. Voilà ma famille. Parlez-moi de la vôtre !",

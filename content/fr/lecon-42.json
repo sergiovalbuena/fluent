@@ -433,6 +433,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Vous pouvez me faire de la monnaie pour le sèche-linge ?",
+      "kind": "question",
+      "bold": [
+        "monnaie",
+        "sèche-linge"
+      ],
+      "en": "Can you give me some change for the dryer?",
+      "es": "¿Puede darme cambio para la secadora?"
+    },
+    {
+      "sentence": "À qui appartient ce linge qui est resté dans la machine ?",
+      "kind": "question",
+      "bold": [
+        "À qui appartient",
+        "linge"
+      ],
+      "en": "Who does this laundry left in the machine belong to?",
+      "es": "¿De quién es esta ropa que se ha quedado en la lavadora?"
+    },
+    {
+      "sentence": "Combien de lessive est-ce que je mets pour le linge blanc ?",
+      "kind": "question",
+      "bold": [
+        "lessive",
+        "linge blanc"
+      ],
+      "en": "How much detergent do I put in for the whites?",
+      "es": "¿Cuánto detergente pongo para la ropa blanca?"
+    },
+    {
+      "sentence": "Qu'est-ce que tu veux que je fasse avec tes chemises : je les repasse ?",
+      "kind": "question",
+      "bold": [
+        "Qu'est-ce que tu veux que je fasse",
+        "repasse"
+      ],
+      "en": "What do you want me to do with your shirts: shall I iron them?",
+      "es": "¿Qué quieres que haga con tus camisas: las plancho?"
+    },
+    {
+      "sentence": "Tu vas faire la lessive aujourd'hui, ou tu attends ce week-end ?",
+      "kind": "question",
+      "bold": [
+        "faire la lessive"
+      ],
+      "en": "Are you going to do the laundry today, or are you waiting for the weekend?",
+      "es": "¿Vas a hacer la colada hoy o esperas al fin de semana?"
+    },
+    {
+      "sentence": "La laverie où je lave mon linge est juste en face de chez moi.",
+      "kind": "statement",
+      "bold": [
+        "laverie",
+        "où"
+      ],
+      "en": "The laundromat where I wash my clothes is right across from my place.",
+      "es": "La lavandería donde lavo la ropa está justo enfrente de mi casa."
+    },
+    {
+      "sentence": "Le pull que tu m'as prêté est encore dans la machine à laver.",
+      "kind": "statement",
+      "bold": [
+        "que",
+        "prêté",
+        "machine à laver"
+      ],
+      "en": "The sweater you lent me is still in the washing machine.",
+      "es": "El jersey que me prestaste todavía está en la lavadora."
+    },
+    {
+      "sentence": "La meilleure laverie, c'est celle qui ferme le plus tard.",
+      "kind": "statement",
+      "bold": [
+        "celle qui"
+      ],
+      "en": "The best laundromat is the one that closes the latest.",
+      "es": "La mejor lavandería es la que cierra más tarde."
+    },
+    {
+      "sentence": "Tu auras besoin de pièces de deux euros pour utiliser les machines.",
+      "kind": "statement",
+      "bold": [
+        "Tu auras besoin de",
+        "pièces"
+      ],
+      "en": "You'll need two-euro coins to use the machines.",
+      "es": "Necesitarás monedas de dos euros para usar las máquinas."
+    },
+    {
+      "sentence": "Ne mets pas d'eau de Javel avec le linge de couleur, pour éviter qu'il déteigne.",
+      "kind": "statement",
+      "bold": [
+        "eau de Javel",
+        "linge de couleur",
+        "pour éviter qu'",
+        "déteigne"
+      ],
+      "en": "Don't put bleach in with the colors, so they don't run.",
+      "es": "No pongas lejía con la ropa de color, para evitar que destiña."
+    }
+  ],
   "story": {
     "title": "Jour de lessive",
     "text": "« Sami, tu vas faire la lessive aujourd'hui ? » demande Léo. « Oui, j'irai à la laverie qui vient d'ouvrir au coin de la rue. C'est celle où il y a du wifi. » « Tu peux laver mon linge aussi ? » « Pourquoi tu ne viens pas avec moi ? Pendant que les machines tournent, on pourra discuter. » « Je ne peux pas, je dois finir un exposé. » « Bon. Alors, j'aurai besoin d'argent pour acheter plus de lessive et de monnaie pour les machines. Tu me dois déjà dix euros, tu te souviens ? » « Je sais… Ça me coûte plus cher que prévu ! » « Tu as accumulé du linge pendant trois semaines. Qu'est-ce que tu veux que je fasse ? Ce sont tes chaussettes qui sentent mauvais, pas les miennes ! » Léo rit. « D'accord, prends ce dont tu as besoin. Laisse-moi juste cinq euros. » « Et mon pourboire ? » « Tu sais quoi ? Je vais venir avec toi et je travaillerai à la laverie. Comme ça, tu ne seras pas de mauvaise humeur. » « Je ne suis pas de mauvaise humeur ! Je dois juste m'habituer à vivre avec quelqu'un qui ne fait jamais sa lessive. »",

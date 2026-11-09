@@ -443,6 +443,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pourriez-vous m'apporter une couverture et un verre d'eau, s'il vous plaît ?",
+      "kind": "question",
+      "bold": [
+        "Pourriez-vous",
+        "couverture"
+      ],
+      "en": "Could you bring me a blanket and a glass of water, please?",
+      "es": "¿Podría traerme una manta y un vaso de agua, por favor?"
+    },
+    {
+      "sentence": "Combien de temps durera le vol jusqu'à Tokyo ?",
+      "kind": "question",
+      "bold": [
+        "durera",
+        "vol"
+      ],
+      "en": "How long will the flight to Tokyo last?",
+      "es": "¿Cuánto durará el vuelo hasta Tokio?"
+    },
+    {
+      "sentence": "Tu préfères un siège près du hublot ou côté couloir ?",
+      "kind": "question",
+      "bold": [
+        "siège",
+        "hublot",
+        "couloir"
+      ],
+      "en": "Do you prefer a window seat or an aisle seat?",
+      "es": "¿Prefieres un asiento junto a la ventanilla o de pasillo?"
+    },
+    {
+      "sentence": "C'est un bel avion, n'est-ce pas ?",
+      "kind": "question",
+      "bold": [
+        "avion",
+        "n'est-ce pas"
+      ],
+      "en": "It's a beautiful plane, isn't it?",
+      "es": "Es un avión precioso, ¿verdad?"
+    },
+    {
+      "sentence": "Pourquoi voyagez-vous en classe économique plutôt qu'en première classe ?",
+      "kind": "question",
+      "bold": [
+        "classe économique",
+        "plutôt qu'",
+        "première classe"
+      ],
+      "en": "Why do you travel economy class rather than first class?",
+      "es": "¿Por qué viaja en clase turista en lugar de en primera clase?"
+    },
+    {
+      "sentence": "L'avion atterrira dans dix minutes : attachez votre ceinture de sécurité.",
+      "kind": "statement",
+      "bold": [
+        "atterrira",
+        "ceinture de sécurité"
+      ],
+      "en": "The plane will land in ten minutes: fasten your seatbelt.",
+      "es": "El avión aterrizará en diez minutos: abróchese el cinturón de seguridad."
+    },
+    {
+      "sentence": "Dès que la tour de contrôle nous donnera l'autorisation, nous décollerons.",
+      "kind": "statement",
+      "bold": [
+        "Dès que",
+        "tour de contrôle",
+        "donnera",
+        "décollerons"
+      ],
+      "en": "As soon as the control tower gives us permission, we'll take off.",
+      "es": "En cuanto la torre de control nos dé autorización, despegaremos."
+    },
+    {
+      "sentence": "Si tu as peur des turbulences, tu seras plus tranquille au milieu de l'avion.",
+      "kind": "statement",
+      "bold": [
+        "turbulences",
+        "tu seras"
+      ],
+      "en": "If you're afraid of turbulence, you'll feel calmer in the middle of the plane.",
+      "es": "Si te dan miedo las turbulencias, estarás más tranquilo en el centro del avión."
+    },
+    {
+      "sentence": "J'avais oublié que j'ai toujours le mal de l'air en hélicoptère.",
+      "kind": "statement",
+      "bold": [
+        "J'avais oublié",
+        "le mal de l'air",
+        "hélicoptère"
+      ],
+      "en": "I had forgotten that I always get airsick in a helicopter.",
+      "es": "Había olvidado que siempre me mareo en helicóptero."
+    },
+    {
+      "sentence": "Le commandant de bord et tout l'équipage vous souhaitent un bon vol.",
+      "kind": "statement",
+      "bold": [
+        "commandant de bord",
+        "équipage",
+        "vol"
+      ],
+      "en": "The captain and the whole crew wish you a pleasant flight.",
+      "es": "El comandante y toda la tripulación les desean un buen vuelo."
+    }
+  ],
   "story": {
     "title": "Un voisin de siège",
     "text": "« Bienvenue à bord du vol 218 à destination de Montréal. Restez assis pendant que les passagers rangent leurs bagages. Nous décollerons dans cinq minutes. Attachez vos ceintures et redressez vos sièges. Nous vous souhaitons un agréable vol. » Clara est assise côté hublot, en classe économique. À côté d'elle, un homme âgé regarde l'aile avec un grand sourire. « Excusez-moi, monsieur, quelle heure est-il ? » « Il est midi pile. C'est un bel avion, n'est-ce pas ? » Clara le regarde mieux. « Je vous connais… Vous n'êtes pas le chef Paul Morin, de la télévision ? » « Si, c'est moi ! » « Mais pourquoi voyagez-vous en classe économique plutôt qu'en première classe ? » « J'aime être près de l'aile et entendre le moteur. Et puis ici, on rencontre des gens intéressants ! » Clara rit. « Moi, je ferai n'importe quoi pour devenir cheffe un jour. » « Alors, quand nous arriverons, je vous donnerai l'adresse de mon restaurant. Si vous venez me voir, je vous montrerai la cuisine. » « Vous le ferez vraiment ? » « Bien sûr ! L'argent n'est pas tout dans la vie. »",

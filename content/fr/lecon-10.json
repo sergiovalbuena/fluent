@@ -439,6 +439,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu as l'air triste depuis ce matin : que s'est-il passé ?",
+      "kind": "question",
+      "bold": [
+        "as l'air triste",
+        "que s'est-il passé"
+      ],
+      "en": "You've looked sad since this morning: what happened?",
+      "es": "Pareces triste desde esta mañana: ¿qué ha pasado?"
+    },
+    {
+      "sentence": "Tu t'es bien amusé à Rome avec tes cousins ?",
+      "kind": "question",
+      "bold": [
+        "Tu t'es bien amusé"
+      ],
+      "en": "Did you have a good time in Rome with your cousins?",
+      "es": "¿Te divertiste en Roma con tus primos?"
+    },
+    {
+      "sentence": "Je peux te demander quelque chose au sujet de ton nouveau travail ?",
+      "kind": "question",
+      "bold": [
+        "au sujet de"
+      ],
+      "en": "Can I ask you something about your new job?",
+      "es": "¿Puedo preguntarte algo sobre tu nuevo trabajo?"
+    },
+    {
+      "sentence": "Quelle est ton idée, et pourquoi est-ce si urgent ?",
+      "kind": "question",
+      "bold": [
+        "idée",
+        "urgent"
+      ],
+      "en": "What's your idea, and why is it so urgent?",
+      "es": "¿Cuál es tu idea y por qué es tan urgente?"
+    },
+    {
+      "sentence": "Tu seras chez toi demain, ou j'irai te voir au bureau ?",
+      "kind": "question",
+      "bold": [
+        "Tu seras",
+        "j'irai"
+      ],
+      "en": "Will you be home tomorrow, or shall I come and see you at the office?",
+      "es": "¿Estarás en casa mañana o voy a verte a la oficina?"
+    },
+    {
+      "sentence": "C'est dommage que tu partes si tôt, la soirée était magnifique.",
+      "kind": "statement",
+      "bold": [
+        "C'est dommage que",
+        "partes",
+        "magnifique"
+      ],
+      "en": "It's a shame you're leaving so early, the evening was wonderful.",
+      "es": "Es una pena que te vayas tan pronto, la velada era magnífica."
+    },
+    {
+      "sentence": "Je serais très content si je pouvais parler italien comme toi.",
+      "kind": "statement",
+      "bold": [
+        "Je serais",
+        "content",
+        "si je pouvais"
+      ],
+      "en": "I'd be very happy if I could speak Italian like you.",
+      "es": "Estaría muy contento si pudiera hablar italiano como tú."
+    },
+    {
+      "sentence": "J'ai peur de faire des fautes, alors je parle lentement.",
+      "kind": "statement",
+      "bold": [
+        "J'ai peur de",
+        "fautes"
+      ],
+      "en": "I'm afraid of making mistakes, so I speak slowly.",
+      "es": "Tengo miedo de cometer errores, así que hablo despacio."
+    },
+    {
+      "sentence": "Ravi de t'avoir rencontré ; je te suis très reconnaissant pour ton aide.",
+      "kind": "statement",
+      "bold": [
+        "Ravi de t'avoir rencontré",
+        "reconnaissant",
+        "aide"
+      ],
+      "en": "Delighted to have met you; I'm very grateful for your help.",
+      "es": "Encantado de haberte conocido; te estoy muy agradecido por tu ayuda."
+    },
+    {
+      "sentence": "Il est urgent que j'apprenne l'italien avant mon voyage.",
+      "kind": "statement",
+      "bold": [
+        "Il est urgent que",
+        "apprenne"
+      ],
+      "en": "It's urgent that I learn Italian before my trip.",
+      "es": "Es urgente que aprenda italiano antes de mi viaje."
+    }
+  ],
   "story": {
     "title": "Une rencontre à l'anniversaire",
     "text": "« Bonsoir ! Comment tu t'appelles ? » « Je m'appelle Élise. Je suis la cousine de Mathieu, c'est son anniversaire. Et toi ? » « Moi, c'est Karim. Je suis un collègue de Mathieu. Il m'a gentiment invité. » « Super, tu es le bienvenu ! Qu'est-ce que tu fais dans la vie ? » « Je suis photographe pour un journal régional. Et toi ? » « Je suis professeure d'italien au lycée. » « C'est vrai ? J'ai toujours voulu apprendre l'italien, mais j'ai peur de faire des fautes. » « Ce n'est pas si difficile, tu sais. » « Je serais très heureux si je pouvais le parler. En fait, il est urgent que je l'apprenne : j'irai probablement à Rome l'année prochaine pour le travail. » « Alors, je peux te donner quelques cours. Fais-moi confiance, tu seras surpris ! » « Merci, c'est très gentil. Oh, il est tard, je dois partir. C'est dommage que la soirée finisse déjà ! Ravi de t'avoir rencontrée. » « Moi aussi. Appelle-moi ! »",

@@ -448,6 +448,108 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu allais danser ce soir, ou tu es trop fatiguée ?",
+      "kind": "question",
+      "bold": [
+        "allais danser"
+      ],
+      "en": "Were you going to go dancing tonight, or are you too tired?",
+      "es": "¿Ibas a ir a bailar esta noche o estás demasiado cansada?"
+    },
+    {
+      "sentence": "Où est-ce qu'on se retrouve pour prendre un verre après le travail ?",
+      "kind": "question",
+      "bold": [
+        "se retrouve",
+        "prendre un verre"
+      ],
+      "en": "Where shall we meet for a drink after work?",
+      "es": "¿Dónde quedamos para tomar algo después del trabajo?"
+    },
+    {
+      "sentence": "Tu viens avec nous en boîte de nuit samedi soir ?",
+      "kind": "question",
+      "bold": [
+        "boîte de nuit"
+      ],
+      "en": "Are you coming with us to the nightclub on Saturday night?",
+      "es": "¿Vienes con nosotros a la discoteca el sábado por la noche?"
+    },
+    {
+      "sentence": "Tu n'as pas eu honte d'aller seul au bal de fin d'année ?",
+      "kind": "question",
+      "bold": [
+        "eu honte",
+        "bal de fin d'année"
+      ],
+      "en": "Weren't you embarrassed to go to the prom alone?",
+      "es": "¿No te dio vergüenza ir solo al baile de fin de curso?"
+    },
+    {
+      "sentence": "Qui va passer nous chercher après la fête ?",
+      "kind": "question",
+      "bold": [
+        "passer",
+        "chercher",
+        "fête"
+      ],
+      "en": "Who's going to pick us up after the party?",
+      "es": "¿Quién va a pasar a recogernos después de la fiesta?"
+    },
+    {
+      "sentence": "J'allais sortir quand mon amie est tombée malade.",
+      "kind": "statement",
+      "bold": [
+        "J'allais sortir",
+        "est tombée"
+      ],
+      "en": "I was about to go out when my friend fell ill.",
+      "es": "Iba a salir cuando mi amiga se puso enferma."
+    },
+    {
+      "sentence": "Il allait chanter au club ce soir, mais il a eu mal à la gorge.",
+      "kind": "statement",
+      "bold": [
+        "allait chanter",
+        "club",
+        "mais il a eu"
+      ],
+      "en": "He was going to sing at the club tonight, but he got a sore throat.",
+      "es": "Iba a cantar en el club esta noche, pero le dolió la garganta."
+    },
+    {
+      "sentence": "Sa voix sonna au bout du fil et elle m'invita à sa soirée.",
+      "kind": "statement",
+      "bold": [
+        "sonna",
+        "invita"
+      ],
+      "en": "Her voice rang down the line and she invited me to her party.",
+      "es": "Su voz sonó al otro lado de la línea y me invitó a su fiesta."
+    },
+    {
+      "sentence": "Je me suis rendu compte que je n'avais pas assez d'argent pour le taxi.",
+      "kind": "statement",
+      "bold": [
+        "Je me suis rendu compte que",
+        "taxi"
+      ],
+      "en": "I realized I didn't have enough money for the taxi.",
+      "es": "Me di cuenta de que no tenía suficiente dinero para el taxi."
+    },
+    {
+      "sentence": "Mon ami avait déjà prévu qu'on irait danser après le dîner.",
+      "kind": "statement",
+      "bold": [
+        "avait déjà prévu",
+        "danser"
+      ],
+      "en": "My friend had already planned that we'd go dancing after dinner.",
+      "es": "Mi amigo ya había previsto que iríamos a bailar después de la cena."
+    }
+  ],
   "story": {
     "title": "La soirée qui a mal commencé",
     "text": "J'ai rencontré Camille il y a un mois au cours de théâtre, et j'avais très envie de l'inviter. Mais je ne savais ni quoi lui dire ni où l'emmener. Samedi dernier, j'allais sortir avec des copains dans un bar près de chez moi. J'allais monter dans le bus quand mon téléphone sonna : c'était elle ! Elle m'invita à l'anniversaire d'une amie. J'allais mettre une chemise élégante, mais je me suis rappelé qu'elle s'en fiche de ce genre de choses. Alors, j'ai mis un jean et un pull, et je suis passé la chercher. La fête était géniale, mais vers minuit, les voisins se plaignirent du bruit. Tout le monde pensait que la soirée allait se terminer. Heureusement, une amie de Camille avait déjà réservé une table dans une boîte de nuit du centre. Nous allions y aller tous les deux, et finalement, tout le groupe nous a suivis ! Le seul problème : en descendant les escaliers, je suis tombé et je me suis tordu la cheville. J'ai gâché la soirée, et j'ai pensé qu'elle n'allait plus jamais me parler. Mais cette nuit-là, elle resta avec moi aux urgences et elle rit avec moi de toute cette histoire. Aujourd'hui, c'est ma copine.",

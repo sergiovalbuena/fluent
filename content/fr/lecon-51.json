@@ -468,6 +468,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu as vu les dauphins qui nageaient devant la proue ?",
+      "kind": "question",
+      "bold": [
+        "dauphins",
+        "proue"
+      ],
+      "en": "Did you see the dolphins swimming in front of the bow?",
+      "es": "¿Viste los delfines que nadaban delante de la proa?"
+    },
+    {
+      "sentence": "Tu aimerais faire une croisière, ou tu as le mal de mer ?",
+      "kind": "question",
+      "bold": [
+        "croisière",
+        "mal de mer"
+      ],
+      "en": "Would you like to go on a cruise, or do you get seasick?",
+      "es": "¿Te gustaría hacer un crucero o te mareas en el mar?"
+    },
+    {
+      "sentence": "Pourquoi le canot ne s'approche-t-il pas de la côte ?",
+      "kind": "question",
+      "bold": [
+        "côte"
+      ],
+      "en": "Why isn't the boat getting closer to the coast?",
+      "es": "¿Por qué no se acerca la lancha a la costa?"
+    },
+    {
+      "sentence": "À quelle heure est-ce que le paquebot va lever l'ancre ?",
+      "kind": "question",
+      "bold": [
+        "paquebot",
+        "lever l'ancre"
+      ],
+      "en": "What time is the liner going to weigh anchor?",
+      "es": "¿A qué hora va a levar anclas el transatlántico?"
+    },
+    {
+      "sentence": "Où sont les gilets de sauvetage dans notre cabine ?",
+      "kind": "question",
+      "bold": [
+        "gilets de sauvetage",
+        "cabine"
+      ],
+      "en": "Where are the life jackets in our cabin?",
+      "es": "¿Dónde están los chalecos salvavidas en nuestro camarote?"
+    },
+    {
+      "sentence": "Quand le bateau arrivera au port, nous serons déjà réveillés.",
+      "kind": "statement",
+      "bold": [
+        "arrivera",
+        "port",
+        "serons"
+      ],
+      "en": "When the boat arrives in port, we'll already be awake.",
+      "es": "Cuando el barco llegue al puerto, ya estaremos despiertos."
+    },
+    {
+      "sentence": "Nous avions économisé pendant des années pour faire cette croisière.",
+      "kind": "statement",
+      "bold": [
+        "Nous avions économisé"
+      ],
+      "en": "We had saved for years to go on this cruise.",
+      "es": "Habíamos ahorrado durante años para hacer este crucero."
+    },
+    {
+      "sentence": "Le ciel se couvrit et une tempête commença au milieu de la nuit.",
+      "kind": "statement",
+      "bold": [
+        "se couvrit",
+        "tempête",
+        "commença"
+      ],
+      "en": "The sky clouded over and a storm began in the middle of the night.",
+      "es": "El cielo se cubrió y una tormenta empezó en mitad de la noche."
+    },
+    {
+      "sentence": "Le radar n'enregistre aucun iceberg dans cette zone.",
+      "kind": "statement",
+      "bold": [
+        "radar",
+        "n'enregistre aucun",
+        "iceberg"
+      ],
+      "en": "The radar isn't picking up any icebergs in this area.",
+      "es": "El radar no detecta ningún iceberg en esta zona."
+    },
+    {
+      "sentence": "Grâce aux canots de sauvetage, tous les passagers ont été sauvés.",
+      "kind": "statement",
+      "bold": [
+        "Grâce aux",
+        "canots de sauvetage"
+      ],
+      "en": "Thanks to the lifeboats, all the passengers were saved.",
+      "es": "Gracias a los botes salvavidas, todos los pasajeros se salvaron."
+    }
+  ],
   "story": {
     "title": "La croisière dans les fjords",
     "text": "Mon mari et moi avions attendu toute notre vie pour faire une croisière. Quand il prit sa retraite, le moment arriva enfin. Nos enfants étaient grands, et ils n'avaient pas voulu nous accompagner. Nous avions économisé pendant des années pour faire un voyage de deux semaines dans les fjords de Norvège. Notre cabine était spacieuse et les lits étaient confortables. Tous les matins, nous marchions sur le pont, et le soir, nous dansions sur de vieilles chansons dans la salle de bal. Tout allait bien. Mais un soir, le ciel se couvrit et une terrible tempête commença. On nous demanda de retourner dans nos cabines. Tout à coup, les lumières s'éteignirent et les moteurs s'arrêtèrent. Les passagers eurent peur et commencèrent à crier. Les enfants pleuraient, et l'équipage essayait de garder tout le monde calme afin de faire son travail. Le capitaine annonça qu'il fallait mettre les gilets de sauvetage. Heureusement, il y avait assez de canots pour tout le monde, mais ce ne fut pas nécessaire : deux heures plus tard, les moteurs repartirent. Le lendemain, la mer était calme et des dauphins nageaient devant la proue. Quelle aventure !",

@@ -45,6 +45,8 @@ interface Phrase {
   translation: string
   /** Sentences only: it's a question (half of each lesson's sentences are) */
   question?: boolean
+  /** Sentences only: parts that use the lesson's grammar or vocabulary, shown in bold */
+  bold?: string[]
 }
 
 interface QAQuestion {
@@ -86,7 +88,7 @@ interface LessonContent {
 type RawItem = {
   word?: string; translation?: string; translations?: Record<string, string>; icon?: string; example?: string
   phrase?: string; prompt?: string; answer?: string; accept?: string[]; hint?: string
-  sentence?: string; kind?: string
+  sentence?: string; kind?: string; bold?: string[]
 }
 
 interface RawContent {
@@ -131,6 +133,7 @@ function normalizeContent(raw: RawContent, lessonType: string, translationLang: 
           phrase: i.sentence ?? '',
           translation: pickTranslation(i, translationLang),
           question: i.kind === 'question',
+          bold: i.bold,
         })),
       }
     }
@@ -1420,6 +1423,14 @@ function QAQuestionList({
 
 // ─── Phrase List ──────────────────────────────────────────────────────────────
 
+/** The text with the given parts in bold (sentences: words of the lesson's grammar or vocabulary) */
+function BoldParts({ text, parts }: { text: string; parts?: string[] }) {
+  if (!parts?.length) return <>{text}</>
+  const escaped = [...parts].sort((a, b) => b.length - a.length).map(p => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  const pieces = text.split(new RegExp(`(${escaped.join('|')})`, 'g'))
+  return <>{pieces.map((piece, i) => parts.includes(piece) ? <strong key={i} className="font-bold">{piece}</strong> : piece)}</>
+}
+
 function PhraseList({
   phrases,
   kind = 'phrases',
@@ -1471,13 +1482,8 @@ function PhraseList({
           >
             <span className="text-[11px] font-bold text-slate-300 dark:text-slate-600 w-5 shrink-0 tabular-nums">{i + 1}</span>
             <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm text-slate-900 dark:text-white leading-snug">
-                {p.phrase}
-                {p.question && (
-                  <span className="ml-2 align-middle inline-flex items-center gap-0.5 rounded-full bg-violet-500/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-violet-500">
-                    <HelpCircle size={9} /> {t('sentence_question')}
-                  </span>
-                )}
+              <p className={cn('text-sm text-slate-900 dark:text-white leading-snug', isSentences ? 'font-medium' : 'font-semibold')}>
+                {isSentences ? <BoldParts text={p.phrase} parts={p.bold} /> : p.phrase}
               </p>
               <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5 group-hover:opacity-0 group-hover:transition-none transition-all">
                 {p.translation}

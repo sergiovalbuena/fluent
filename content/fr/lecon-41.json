@@ -454,6 +454,109 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu habites dans un studio, n'est-ce pas ?",
+      "kind": "question",
+      "bold": [
+        "studio",
+        "n'est-ce pas"
+      ],
+      "en": "You live in a studio, don't you?",
+      "es": "Vives en un estudio, ¿verdad?"
+    },
+    {
+      "sentence": "Les charges sont comprises dans le loyer, ou il faut les payer à part ?",
+      "kind": "question",
+      "bold": [
+        "charges",
+        "comprises",
+        "loyer"
+      ],
+      "en": "Are the bills included in the rent, or do you have to pay them separately?",
+      "es": "¿Los gastos están incluidos en el alquiler o hay que pagarlos aparte?"
+    },
+    {
+      "sentence": "L'appartement est meublé, ou je dois apporter mes meubles ?",
+      "kind": "question",
+      "bold": [
+        "meublé"
+      ],
+      "en": "Is the apartment furnished, or do I have to bring my furniture?",
+      "es": "¿El piso está amueblado o tengo que traer mis muebles?"
+    },
+    {
+      "sentence": "Qu'est-ce que tu penses de celui-ci, près du métro ?",
+      "kind": "question",
+      "bold": [
+        "celui-ci"
+      ],
+      "en": "What do you think of this one, near the metro?",
+      "es": "¿Qué te parece este, cerca del metro?"
+    },
+    {
+      "sentence": "Tu as dû verser une caution avant de signer le bail ?",
+      "kind": "question",
+      "bold": [
+        "caution",
+        "bail"
+      ],
+      "en": "Did you have to pay a deposit before signing the lease?",
+      "es": "¿Tuviste que pagar una fianza antes de firmar el contrato de alquiler?"
+    },
+    {
+      "sentence": "Elle était en train de chercher un appartement depuis un mois quand elle a vu cette petite annonce.",
+      "kind": "statement",
+      "bold": [
+        "était en train de",
+        "depuis",
+        "petite annonce"
+      ],
+      "en": "She had been looking for an apartment for a month when she saw this ad.",
+      "es": "Llevaba un mes buscando piso cuando vio este anuncio."
+    },
+    {
+      "sentence": "Je l'avais vue, cette maison, mais le quartier ne m'a pas plu.",
+      "kind": "statement",
+      "bold": [
+        "Je l'avais vue",
+        "quartier"
+      ],
+      "en": "I had seen that house, but I didn't like the neighborhood.",
+      "es": "Había visto esa casa, pero el barrio no me gustó."
+    },
+    {
+      "sentence": "Notre immeuble va être démoli ? J'ai bien peur que oui.",
+      "kind": "statement",
+      "bold": [
+        "immeuble",
+        "démoli",
+        "J'ai bien peur que"
+      ],
+      "en": "Our building is going to be demolished? I'm afraid so.",
+      "es": "¿Van a demoler nuestro edificio? Me temo que sí."
+    },
+    {
+      "sentence": "Tu es plus exigeant que moi : tous les appartements te semblent trop bruyants.",
+      "kind": "statement",
+      "bold": [
+        "plus exigeant que",
+        "bruyants"
+      ],
+      "en": "You're pickier than me: every apartment seems too noisy to you.",
+      "es": "Eres más exigente que yo: todos los pisos te parecen demasiado ruidosos."
+    },
+    {
+      "sentence": "Mon propriétaire a trois appartements et il en loue deux à des étudiants.",
+      "kind": "statement",
+      "bold": [
+        "propriétaire",
+        "il en loue deux"
+      ],
+      "en": "My landlord has three apartments and rents two of them to students.",
+      "es": "Mi casero tiene tres pisos y alquila dos a estudiantes."
+    }
+  ],
   "story": {
     "title": "L'appartement idéal",
     "text": "Ça faisait un mois que Yanis était en train de chercher un appartement à Lyon, et il n'avait rien trouvé. Un jour, il a croisé son amie Nadia au café. « Tu cherches toujours un logement, n'est-ce pas ? » « Oui, je suis encore en train de chercher, parce que je n'en ai pas trouvé un avec tout ce que je veux. » « Et qu'est-ce que tu veux, exactement ? » « Deux chambres, deux salles de bains, charges comprises, meublé, pas trop de caution… et des voisins calmes ! » Nadia a ri : « Tu veux tout ! Un appartement comme ça, c'est très difficile à trouver. Mais j'ai vu des petites annonces qui pourraient t'intéresser. Regarde. » « Celui-ci a l'air bien, n'est-ce pas ? » « Oui, mais il est en plein centre, c'est un peu bruyant. » « Et celui-là ? Le quartier est plus calme, n'est-ce pas ? » « Oui, mais on dit qu'ils vont bientôt démolir l'immeuble. — J'ai bien peur que oui. » Finalement, Nadia en montre un troisième : « Il n'a qu'une salle de bains, mais tout le reste est parfait. » « Bon… il est un peu petit pour moi, non ? » « Tu es vraiment plus exigeant que moi ! Moi, je l'aurais pris tout de suite. » Le lendemain, Yanis a signé le bail.",

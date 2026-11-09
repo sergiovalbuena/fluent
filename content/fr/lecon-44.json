@@ -443,6 +443,106 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Tu me pardonnes si je promets de ne pas recommencer ?",
+      "kind": "question",
+      "bold": [
+        "pardonnes"
+      ],
+      "en": "Will you forgive me if I promise not to do it again?",
+      "es": "¿Me perdonas si prometo no volver a hacerlo?"
+    },
+    {
+      "sentence": "Où est-ce que tu étudies quand ta colocataire fait la fête ?",
+      "kind": "question",
+      "bold": [
+        "quand",
+        "colocataire"
+      ],
+      "en": "Where do you study when your roommate is partying?",
+      "es": "¿Dónde estudias cuando tu compañera de piso hace una fiesta?"
+    },
+    {
+      "sentence": "Tu lui as rappelé de faire le ménage ce week-end ?",
+      "kind": "question",
+      "bold": [
+        "as rappelé"
+      ],
+      "en": "Did you remind him to do the cleaning this weekend?",
+      "es": "¿Le recordaste que hiciera la limpieza este fin de semana?"
+    },
+    {
+      "sentence": "On peut partager nos notes avant l'examen de demain ?",
+      "kind": "question",
+      "bold": [
+        "partager",
+        "notes"
+      ],
+      "en": "Can we share our notes before tomorrow's exam?",
+      "es": "¿Podemos compartir nuestros apuntes antes del examen de mañana?"
+    },
+    {
+      "sentence": "Pourquoi est-ce que vous vous disputez toujours pour la vaisselle ?",
+      "kind": "question",
+      "bold": [
+        "vous disputez"
+      ],
+      "en": "Why do you always argue about the dishes?",
+      "es": "¿Por qué siempre discutís por los platos?"
+    },
+    {
+      "sentence": "S'il se dispute avec quelqu'un, il s'excuse toujours le lendemain.",
+      "kind": "statement",
+      "bold": [
+        "S'il se dispute",
+        "s'excuse"
+      ],
+      "en": "If he argues with someone, he always apologizes the next day.",
+      "es": "Si discute con alguien, siempre se disculpa al día siguiente."
+    },
+    {
+      "sentence": "Mon colocataire me rappelle mon frère : il est somnambule lui aussi !",
+      "kind": "statement",
+      "bold": [
+        "me rappelle",
+        "somnambule"
+      ],
+      "en": "My roommate reminds me of my brother: he sleepwalks too!",
+      "es": "Mi compañero de piso me recuerda a mi hermano: ¡él también es sonámbulo!"
+    },
+    {
+      "sentence": "Ne sois pas triste, on trouvera une solution ensemble.",
+      "kind": "statement",
+      "bold": [
+        "Ne sois pas",
+        "triste"
+      ],
+      "en": "Don't be sad, we'll find a solution together.",
+      "es": "No estés triste, encontraremos una solución juntos."
+    },
+    {
+      "sentence": "Je te fais complètement confiance pour garder mes clés.",
+      "kind": "statement",
+      "bold": [
+        "Je te fais",
+        "confiance"
+      ],
+      "en": "I trust you completely to keep my keys.",
+      "es": "Confío totalmente en ti para guardar mis llaves."
+    },
+    {
+      "sentence": "Si on n'arrive pas à se concentrer ici, nous étudierons à la résidence universitaire.",
+      "kind": "statement",
+      "bold": [
+        "se concentrer",
+        "nous étudierons",
+        "résidence universitaire"
+      ],
+      "en": "If we can't concentrate here, we'll study at the student residence.",
+      "es": "Si no conseguimos concentrarnos aquí, estudiaremos en la residencia universitaria."
+    }
+  ],
   "story": {
     "title": "Sommes-nous amies ?",
     "text": "J'ai emménagé dans une résidence universitaire à Grenoble il y a un mois, et ma colocataire, Anaïs, ne m'aimait pas du tout. Être colocataires ne veut pas forcément dire être amies. J'essayais d'être gentille et de partager mes repas, mais elle préférait rester dans sa chambre. Elle sort seulement si elle a une fête, et elle étudie uniquement lorsqu'elle a un examen important. Hier soir, à onze heures, je l'ai trouvée dans la cuisine, découragée, devant un énorme livre de chimie. « Tu as un examen demain ? » « Oui… J'aurais dû commencer plus tôt. S'il reste un chapitre à étudier, je ne dors pas de la nuit ! » « Je peux t'aider, si tu veux. Avant, je voulais être professeure de chimie. » Elle m'a regardée, surprise. « Tu ferais ça pour moi ? » « Bien sûr ! Si j'explique quelque chose à quelqu'un, je le comprends mieux moi aussi. » « Merci… Je suis une bonne élève si j'ai un bon professeur. » « Alors, ne sois pas triste : tu apprendras vite. » Nous avons étudié jusqu'à deux heures du matin. Ce matin, Anaïs m'a laissé un croissant sur la table avec un petit mot : « Merci, coloc ! »",

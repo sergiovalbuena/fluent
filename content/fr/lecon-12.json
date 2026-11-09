@@ -500,6 +500,111 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Qu'est-ce que ta sœur fait dans la vie, elle est avocate ou journaliste ?",
+      "kind": "question",
+      "bold": [
+        "avocate",
+        "journaliste"
+      ],
+      "en": "What does your sister do for a living, is she a lawyer or a journalist?",
+      "es": "¿A qué se dedica tu hermana, es abogada o periodista?"
+    },
+    {
+      "sentence": "Que se passerait-il si je décidais de devenir chanteur ?",
+      "kind": "question",
+      "bold": [
+        "Que se passerait-il si",
+        "décidais",
+        "chanteur"
+      ],
+      "en": "What would happen if I decided to become a singer?",
+      "es": "¿Qué pasaría si decidiera hacerme cantante?"
+    },
+    {
+      "sentence": "Tu as appelé le plombier pour réparer les tuyaux de la cuisine ?",
+      "kind": "question",
+      "bold": [
+        "plombier"
+      ],
+      "en": "Did you call the plumber to fix the kitchen pipes?",
+      "es": "¿Llamaste al fontanero para arreglar las tuberías de la cocina?"
+    },
+    {
+      "sentence": "Ton père voudrait que tu sois médecin ou ingénieur ?",
+      "kind": "question",
+      "bold": [
+        "voudrait que",
+        "sois",
+        "ingénieur"
+      ],
+      "en": "Would your father like you to be a doctor or an engineer?",
+      "es": "¿Tu padre querría que fueras médico o ingeniero?"
+    },
+    {
+      "sentence": "Depuis quand est-ce que ta mère travaille comme infirmière à l'hôpital ?",
+      "kind": "question",
+      "bold": [
+        "infirmière"
+      ],
+      "en": "How long has your mother been working as a nurse at the hospital?",
+      "es": "¿Desde cuándo trabaja tu madre como enfermera en el hospital?"
+    },
+    {
+      "sentence": "J'aimerais être photographe pour voyager dans le monde entier.",
+      "kind": "statement",
+      "bold": [
+        "J'aimerais être",
+        "photographe"
+      ],
+      "en": "I'd like to be a photographer to travel all over the world.",
+      "es": "Me gustaría ser fotógrafo para viajar por todo el mundo."
+    },
+    {
+      "sentence": "Plus tard, je serai vétérinaire, parce que j'adore les animaux.",
+      "kind": "statement",
+      "bold": [
+        "je serai",
+        "vétérinaire"
+      ],
+      "en": "Later on, I'll be a vet, because I love animals.",
+      "es": "Más adelante seré veterinario, porque me encantan los animales."
+    },
+    {
+      "sentence": "Le marin a été surpris par la tempête alors qu'il était sur le point de rentrer au port.",
+      "kind": "statement",
+      "bold": [
+        "marin",
+        "a été surpris",
+        "était sur le point de"
+      ],
+      "en": "The sailor was caught by the storm just as he was about to return to port.",
+      "es": "El marinero fue sorprendido por la tormenta cuando estaba a punto de volver al puerto."
+    },
+    {
+      "sentence": "C'est notre agent de voyage qui a trouvé cet hôtel au bord de la mer.",
+      "kind": "statement",
+      "bold": [
+        "C'est",
+        "agent de voyage",
+        "qui"
+      ],
+      "en": "It was our travel agent who found this hotel by the sea.",
+      "es": "Fue nuestro agente de viajes quien encontró este hotel junto al mar."
+    },
+    {
+      "sentence": "Avant d'être cuisinier, j'ai été serveur pendant cinq ans.",
+      "kind": "statement",
+      "bold": [
+        "cuisinier",
+        "j'ai été",
+        "serveur"
+      ],
+      "en": "Before becoming a cook, I worked as a waiter for five years.",
+      "es": "Antes de ser cocinero, fui camarero durante cinco años."
+    }
+  ],
   "story": {
     "title": "Quel métier choisir ?",
     "text": "Je m'appelle Lina, j'ai dix-sept ans et je me demande ce que je ferai plus tard. J'aimerais être biologiste marine, mais mon père voudrait que je sois avocate et ma mère voudrait que je devienne pharmacienne, comme elle. Ma meilleure amie dit que je serai une bonne photographe, parce que je prends toujours de belles photos. Mon grand-père pense que je devrais être écrivain, car j'invente des histoires depuis que j'étais petite. L'été dernier, j'ai été serveuse dans un café du port, et l'année d'avant, j'ai aidé un jardinier du quartier. C'est là que j'ai découvert que j'aime travailler dehors. Que se passerait-il si je décidais de faire un métier que personne n'a imaginé pour moi ? Je ne sais pas. Je veux seulement un travail qui me plaise et qui soit utile. Je voudrais que les océans soient plus propres pour les générations futures. Et si un jour je change d'avis, je pourrai toujours apprendre autre chose !",

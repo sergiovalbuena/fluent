@@ -499,6 +499,113 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Pourriez-vous me faire un bouquet de pivoines pour ce soir ?",
+      "kind": "question",
+      "bold": [
+        "bouquet",
+        "pivoines"
+      ],
+      "en": "Could you make me a bouquet of peonies for tonight?",
+      "es": "¿Podría hacerme un ramo de peonías para esta noche?"
+    },
+    {
+      "sentence": "Combien coûte une douzaine de roses chez le fleuriste du coin ?",
+      "kind": "question",
+      "bold": [
+        "roses",
+        "fleuriste"
+      ],
+      "en": "How much is a dozen roses at the florist on the corner?",
+      "es": "¿Cuánto cuesta una docena de rosas en la floristería de la esquina?"
+    },
+    {
+      "sentence": "C'est l'anniversaire de ta mère : offrons-lui des tulipes, tu ne crois pas ?",
+      "kind": "question",
+      "bold": [
+        "offrons-lui",
+        "tulipes"
+      ],
+      "en": "It's your mother's birthday: let's give her some tulips, don't you think?",
+      "es": "Es el cumpleaños de tu madre: regalémosle tulipanes, ¿no crees?"
+    },
+    {
+      "sentence": "Tu as pensé à arroser les géraniums du balcon ?",
+      "kind": "question",
+      "bold": [
+        "arroser",
+        "géraniums"
+      ],
+      "en": "Did you remember to water the geraniums on the balcony?",
+      "es": "¿Te acordaste de regar los geranios del balcón?"
+    },
+    {
+      "sentence": "Quelles fleurs veux-tu planter au printemps, des dahlias ou des narcisses ?",
+      "kind": "question",
+      "bold": [
+        "fleurs",
+        "planter",
+        "dahlias",
+        "narcisses"
+      ],
+      "en": "Which flowers do you want to plant in spring, dahlias or daffodils?",
+      "es": "¿Qué flores quieres plantar en primavera, dalias o narcisos?"
+    },
+    {
+      "sentence": "Regarde, le cactus est en train de fleurir pour la première fois !",
+      "kind": "statement",
+      "bold": [
+        "cactus",
+        "est en train de fleurir"
+      ],
+      "en": "Look, the cactus is blooming for the first time!",
+      "es": "¡Mira, el cactus está floreciendo por primera vez!"
+    },
+    {
+      "sentence": "J'ai trouvé des graines de tournesol et je les ai semées dans le jardin.",
+      "kind": "statement",
+      "bold": [
+        "J'ai trouvé",
+        "graines",
+        "tournesol",
+        "je les ai semées"
+      ],
+      "en": "I found some sunflower seeds and I sowed them in the garden.",
+      "es": "Encontré semillas de girasol y las sembré en el jardín."
+    },
+    {
+      "sentence": "Ma voisine m'a dit que le muguet était toxique pour les chats.",
+      "kind": "statement",
+      "bold": [
+        "m'a dit que",
+        "muguet",
+        "était"
+      ],
+      "en": "My neighbor told me that lily of the valley was toxic for cats.",
+      "es": "Mi vecina me dijo que el muguete era tóxico para los gatos."
+    },
+    {
+      "sentence": "Des mimosas ? Désolée, nous n'en avons pas en cette saison.",
+      "kind": "statement",
+      "bold": [
+        "mimosas",
+        "nous n'en avons pas"
+      ],
+      "en": "Mimosas? Sorry, we don't have any this season.",
+      "es": "¿Mimosas? Lo siento, no tenemos en esta temporada."
+    },
+    {
+      "sentence": "Il me semble que les orchidées ont besoin de peu d'eau.",
+      "kind": "statement",
+      "bold": [
+        "Il me semble que",
+        "orchidées"
+      ],
+      "en": "It seems to me that orchids need little water.",
+      "es": "Me parece que las orquídeas necesitan poca agua."
+    }
+  ],
   "story": {
     "title": "La fleuriste de la rue des Lilas",
     "text": "Depuis vingt ans, Hélène est fleuriste rue des Lilas, à Bordeaux. Au printemps, sa boutique est remplie des plus belles couleurs : des tulipes, des pivoines, du jasmin… En entrant, on sent tout de suite un parfum délicieux. Ce matin, un jeune homme timide arrive. « Bonjour, je voudrais un bouquet pour ma copine. C'est notre premier rendez-vous. » « Offrez-lui des roses rouges, c'est le symbole de l'amour ! » « Euh… ce n'est peut-être pas un peu trop ? » Hélène rit : « Alors, des roses jaunes, pour l'amitié, et quelques marguerites. » Plus tard, une vieille dame demande des chrysanthèmes. « Ma mère m'a toujours dit qu'il ne fallait jamais les offrir en cadeau », explique-t-elle. « Ils sont pour le cimetière. » L'après-midi, Hélène sème des graines dans les pots devant la vitrine. Le mois dernier, elle en a semé d'autres, et les géraniums sont déjà en train de fleurir. Il me semble qu'il n'y a pas de plus joli métier, pense-t-elle en arrosant ses fleurs.",

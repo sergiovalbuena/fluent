@@ -473,6 +473,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Que vas-tu faire pendant les vacances cet été ?",
+      "kind": "question",
+      "bold": [
+        "Que vas-tu faire",
+        "vacances"
+      ],
+      "en": "What are you going to do during the holidays this summer?",
+      "es": "¿Qué vas a hacer en las vacaciones este verano?"
+    },
+    {
+      "sentence": "Tu es tout bronzé ! Tu étais à la plage ?",
+      "kind": "question",
+      "bold": [
+        "bronzé",
+        "plage"
+      ],
+      "en": "You're all tanned! Were you at the beach?",
+      "es": "¡Estás muy moreno! ¿Estabas en la playa?"
+    },
+    {
+      "sentence": "Vous êtes allés en Corse en bateau, ou vous avez pris l'avion ?",
+      "kind": "question",
+      "bold": [
+        "pris l'avion"
+      ],
+      "en": "Did you go to Corsica by boat, or did you fly?",
+      "es": "¿Fuisteis a Córcega en barco o en avión?"
+    },
+    {
+      "sentence": "Tu as pris la crème solaire et les lunettes de soleil ?",
+      "kind": "question",
+      "bold": [
+        "crème solaire",
+        "lunettes de soleil"
+      ],
+      "en": "Did you take the sunscreen and the sunglasses?",
+      "es": "¿Cogiste la crema solar y las gafas de sol?"
+    },
+    {
+      "sentence": "On pourrait louer une caravane et parcourir la côte, non ?",
+      "kind": "question",
+      "bold": [
+        "On pourrait",
+        "caravane",
+        "parcourir"
+      ],
+      "en": "We could rent a caravan and travel along the coast, couldn't we?",
+      "es": "Podríamos alquilar una caravana y recorrer la costa, ¿no?"
+    },
+    {
+      "sentence": "Cette année, nous dormirons sous la tente dans un camping au bord de la mer.",
+      "kind": "statement",
+      "bold": [
+        "nous dormirons",
+        "tente",
+        "camping"
+      ],
+      "en": "This year we'll sleep in a tent at a campsite by the sea.",
+      "es": "Este año dormiremos en una tienda de campaña en un camping junto al mar."
+    },
+    {
+      "sentence": "C'est la plage la plus belle de la région, avec du sable blanc et de grosses vagues.",
+      "kind": "statement",
+      "bold": [
+        "la plage la plus belle",
+        "sable",
+        "vagues"
+      ],
+      "en": "It's the most beautiful beach in the region, with white sand and big waves.",
+      "es": "Es la playa más bonita de la región, con arena blanca y olas grandes."
+    },
+    {
+      "sentence": "Mes enfants construisent un château de sable ; les tiens nagent dans la piscine.",
+      "kind": "statement",
+      "bold": [
+        "château de sable",
+        "les tiens",
+        "nagent",
+        "piscine"
+      ],
+      "en": "My children are building a sandcastle; yours are swimming in the pool.",
+      "es": "Mis hijos construyen un castillo de arena; los tuyos nadan en la piscina."
+    },
+    {
+      "sentence": "J'allais oublier mon passeport dans la valise !",
+      "kind": "statement",
+      "bold": [
+        "J'allais oublier",
+        "passeport",
+        "valise"
+      ],
+      "en": "I almost left my passport in the suitcase!",
+      "es": "¡Casi me dejo el pasaporte en la maleta!"
+    },
+    {
+      "sentence": "J'ai très envie de me reposer et de faire la fête avec mes amis.",
+      "kind": "statement",
+      "bold": [
+        "J'ai très envie de",
+        "me reposer",
+        "faire la fête"
+      ],
+      "en": "I really want to rest and party with my friends.",
+      "es": "Tengo muchas ganas de descansar y de salir de fiesta con mis amigos."
+    }
+  ],
   "story": {
     "title": "Lettre à Lucie",
     "text": "Chère Lucie, ça y est, j'ai enfin fini mes examens et j'ai très envie de te voir ! Ma mère m'a dit que je dois refaire mon passeport cette semaine pour pouvoir partir à Lisbonne samedi prochain. Il fait beau là-bas en ce moment ? À vrai dire, ça m'est égal : tout ce que je veux, c'est être avec toi. Je voudrais visiter le vieux quartier de l'Alfama, les musées et la tour de Belém. Et j'aimerais aussi passer quelques jours sur les plages de l'Algarve. On pourrait louer une voiture et dormir au camping, comme l'été dernier en Bretagne, tu te souviens ? Le soir de mon arrivée, on pourrait sortir dîner et écouter du fado. Tu me manques beaucoup ! Ah, j'allais oublier : Mathis m'a parlé d'un petit marché où on vend les meilleurs pastéis de nata de la ville. J'aimerais y aller le premier matin. Je voulais aussi savoir si tu as encore ton vieux sac de couchage, parce que le mien est cassé. Je t'apporterai des caramels au beurre salé : je sais que tu adorais ça quand on était petites. À très bientôt ! Bisous, Manon.",

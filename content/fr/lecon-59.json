@@ -464,6 +464,114 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Comment ? Il a été déclaré innocent malgré toutes les preuves ?",
+      "kind": "question",
+      "bold": [
+        "innocent",
+        "preuves"
+      ],
+      "en": "What? He was found innocent despite all the evidence?",
+      "es": "¿Cómo? ¿Lo declararon inocente a pesar de todas las pruebas?"
+    },
+    {
+      "sentence": "Elle a un bon avocat, pourtant elle est coupable, non ?",
+      "kind": "question",
+      "bold": [
+        "avocat",
+        "pourtant",
+        "coupable"
+      ],
+      "en": "She has a good lawyer, yet she's guilty, isn't she?",
+      "es": "Tiene un buen abogado y, sin embargo, es culpable, ¿no?"
+    },
+    {
+      "sentence": "Pourquoi a-t-on arrêté ton cousin ? C'est une histoire de fraude ?",
+      "kind": "question",
+      "bold": [
+        "arrêté",
+        "fraude"
+      ],
+      "en": "Why was your cousin arrested? Is it a fraud case?",
+      "es": "¿Por qué detuvieron a tu primo? ¿Es un caso de fraude?"
+    },
+    {
+      "sentence": "Quand commence le procès, et qui sera le juge ?",
+      "kind": "question",
+      "bold": [
+        "procès",
+        "juge"
+      ],
+      "en": "When does the trial start, and who will be the judge?",
+      "es": "¿Cuándo empieza el juicio y quién será el juez?"
+    },
+    {
+      "sentence": "Est-ce que le témoin a dit la vérité au tribunal ?",
+      "kind": "question",
+      "bold": [
+        "témoin",
+        "tribunal"
+      ],
+      "en": "Did the witness tell the truth in court?",
+      "es": "¿El testigo dijo la verdad en el tribunal?"
+    },
+    {
+      "sentence": "Bien qu'elle ait eu un bon argument, la défense n'a pas convaincu le juge.",
+      "kind": "statement",
+      "bold": [
+        "Bien qu'",
+        "ait eu",
+        "argument",
+        "défense"
+      ],
+      "en": "Although she had a good argument, the defense didn't convince the judge.",
+      "es": "Aunque tenía un buen argumento, la defensa no convenció al juez."
+    },
+    {
+      "sentence": "Le suspect a été libéré sous caution hier soir.",
+      "kind": "statement",
+      "bold": [
+        "suspect",
+        "a été libéré",
+        "caution"
+      ],
+      "en": "The suspect was released on bail last night.",
+      "es": "El sospechoso quedó en libertad bajo fianza anoche."
+    },
+    {
+      "sentence": "Elle recevra l'héritage quand elle aura vingt et un ans.",
+      "kind": "statement",
+      "bold": [
+        "recevra",
+        "héritage",
+        "quand elle aura"
+      ],
+      "en": "She'll receive the inheritance when she turns twenty-one.",
+      "es": "Recibirá la herencia cuando cumpla veintiún años."
+    },
+    {
+      "sentence": "Il n'a pas payé ses dettes ; par conséquent, la banque l'a poursuivi.",
+      "kind": "statement",
+      "bold": [
+        "dettes",
+        "par conséquent"
+      ],
+      "en": "He didn't pay his debts; consequently, the bank took him to court.",
+      "es": "No pagó sus deudas; por consiguiente, el banco lo demandó."
+    },
+    {
+      "sentence": "L'enquête est terminée ; en revanche, le testament n'a pas encore été lu.",
+      "kind": "statement",
+      "bold": [
+        "enquête",
+        "en revanche",
+        "testament"
+      ],
+      "en": "The investigation is over; on the other hand, the will hasn't been read yet.",
+      "es": "La investigación ha terminado; en cambio, el testamento todavía no se ha leído."
+    }
+  ],
   "story": {
     "title": "Accusé de fraude",
     "text": "Mon frère Karim est comptable dans une grande entreprise de Marseille. Il a toujours été honnête et apprécié par ses chefs. Cependant, il y a un an, il traversa une période difficile. Bien que son travail lui plaise, son salaire ne suffisait pas à payer ses dettes. Un jour, un collègue lui proposa un moyen de s'en sortir : quelques transactions « un peu spéciales ». Karim hésita ; néanmoins, comme il était désespéré, il accepta. Il ne savait pas que ce collègue avait été payé par un directeur corrompu pour le piéger. Quelques semaines plus tard, après avoir signé des documents qui prouvaient la fraude, il fut arrêté. Il ne savait pas quoi faire, car il savait qu'il avait commis une erreur, même s'il n'avait jamais reçu d'argent. Heureusement, ses anciens chefs payèrent sa caution et lui trouvèrent une excellente avocate. Pendant l'enquête, elle découvrit que le directeur avait organisé tout le piège. Par conséquent, Karim fut libéré, et le directeur et le collègue furent condamnés. Aujourd'hui, Karim a sa propre entreprise. En plus, il aide gratuitement des gens qui ont des problèmes de dettes. Il dit toujours : « Ce ne sont pas les erreurs qui comptent, mais ce qu'on en apprend. »",

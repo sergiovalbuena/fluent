@@ -449,6 +449,107 @@
       }
     }
   ],
+  "sentences": [
+    {
+      "sentence": "Est-ce que je peux parler à Marie, ou je me suis trompé de numéro ?",
+      "kind": "question",
+      "bold": [
+        "je me suis trompé de numéro"
+      ],
+      "en": "Can I speak to Marie, or have I got the wrong number?",
+      "es": "¿Puedo hablar con Marie o me he equivocado de número?"
+    },
+    {
+      "sentence": "Allô ? Excusez-moi, qui est à l'appareil, s'il vous plaît ?",
+      "kind": "question",
+      "bold": [
+        "Allô"
+      ],
+      "en": "Hello? Excuse me, who's calling, please?",
+      "es": "¿Diga? Disculpe, ¿quién llama, por favor?"
+    },
+    {
+      "sentence": "Ma batterie est presque vide : tu peux me rappeler plus tard ?",
+      "kind": "question",
+      "bold": [
+        "batterie",
+        "rappeler"
+      ],
+      "en": "My battery's almost dead: can you call me back later?",
+      "es": "Me queda poca batería: ¿puedes llamarme más tarde?"
+    },
+    {
+      "sentence": "Ton portable sonne depuis cinq minutes : pourquoi tu ne réponds pas ?",
+      "kind": "question",
+      "bold": [
+        "portable",
+        "sonne",
+        "réponds"
+      ],
+      "en": "Your phone has been ringing for five minutes: why aren't you answering?",
+      "es": "Tu móvil lleva cinco minutos sonando: ¿por qué no contestas?"
+    },
+    {
+      "sentence": "Tu me donnes ton numéro de téléphone pour que je t'envoie un texto ?",
+      "kind": "question",
+      "bold": [
+        "numéro de téléphone",
+        "texto"
+      ],
+      "en": "Will you give me your phone number so I can send you a text?",
+      "es": "¿Me das tu número de teléfono para que te mande un mensaje?"
+    },
+    {
+      "sentence": "Ça fait une heure que tu es au téléphone avec ta copine !",
+      "kind": "statement",
+      "bold": [
+        "Ça fait",
+        "que",
+        "téléphone"
+      ],
+      "en": "You've been on the phone with your friend for an hour!",
+      "es": "¡Llevas una hora al teléfono con tu amiga!"
+    },
+    {
+      "sentence": "J'ai laissé un message sur son répondeur, mais il ne m'a pas rappelée.",
+      "kind": "statement",
+      "bold": [
+        "J'ai laissé un message",
+        "répondeur"
+      ],
+      "en": "I left a message on his answering machine, but he didn't call me back.",
+      "es": "Dejé un mensaje en su contestador, pero no me devolvió la llamada."
+    },
+    {
+      "sentence": "Ne quittez pas, je vous passe le poste de Madame Durand.",
+      "kind": "statement",
+      "bold": [
+        "Ne quittez pas",
+        "poste"
+      ],
+      "en": "Hold on, I'll put you through to Mrs. Durand's extension.",
+      "es": "No cuelgue, le paso con la extensión de la señora Durand."
+    },
+    {
+      "sentence": "Elle téléphone à ses amies même si elle les voit tous les jours.",
+      "kind": "statement",
+      "bold": [
+        "téléphone à",
+        "même si"
+      ],
+      "en": "She phones her friends even though she sees them every day.",
+      "es": "Llama por teléfono a sus amigas aunque las ve todos los días."
+    },
+    {
+      "sentence": "C'est ma fille qui avait envoyé mon CV sans me le dire.",
+      "kind": "statement",
+      "bold": [
+        "avait envoyé"
+      ],
+      "en": "It was my daughter who had sent my CV without telling me.",
+      "es": "Fue mi hija quien había enviado mi currículum sin decírmelo."
+    }
+  ],
   "story": {
     "title": "L'appel qui a changé ma vie",
     "text": "Ma fille Chloé passe presque tout son temps libre au téléphone. Elle parle pendant des heures avec ses amies, même si elle les voit tous les jours au lycée. Il y a deux mois, j'ai perdu mon travail, et nous avons commencé à nous disputer à cause de son portable. « Ça fait trois heures que tu es au téléphone ! Raccroche ! » lui répétais-je. Un soir, je suis rentrée épuisée après une journée d'entretiens. Chloé était au téléphone, comme toujours. Je me suis énervée et j'ai crié. Elle n'a rien dit et elle m'a regardée jusqu'à ce que je lui demande ce qui se passait. Elle m'a tendu le téléphone : « Maman, sois gentille, c'est pour toi. » C'était le directeur d'une grande entreprise de la ville, le père d'une de ses amies. Il cherchait quelqu'un avec mon profil et il m'a proposé un poste ! En fait, c'était Chloé qui lui avait envoyé mon CV. Je me suis excusée auprès d'elle. Aujourd'hui, j'ai un travail que j'adore… et je ne dis plus rien quand elle est au téléphone.",
