@@ -307,8 +307,8 @@
     "title_hints_desc": "Section titles appear in the language you are learning. On a computer, hover over a card to see its title in your language.",
     "title_hints_off": "Off",
     "title_hints_until": "Until lesson {n}",
-    "change_course": "Change the language I’m learning",
-    "change_course_desc": "Pick another course and your level, without redoing the rest"
+    "change_course": "Change my level",
+    "change_course_desc": "Measure your level in your course again"
   },
   "progress": {
     "title": "Progress",
@@ -458,7 +458,8 @@
     "cefr_B2": "Upper intermediate",
     "cefr_C1": "Advanced",
     "cefr_C2": "Proficient",
-    "result_fakes": "You ticked {n, plural, one {# word that doesn’t exist} other {# words that don’t exist}}, so we adjusted your level."
+    "result_fakes": "You ticked {n, plural, one {# word that doesn’t exist} other {# words that don’t exist}}, so we adjusted your level.",
+    "learn_locked": "Second language, coming soon"
   },
   "saved": {
     "tab_items": "Words & phrases",

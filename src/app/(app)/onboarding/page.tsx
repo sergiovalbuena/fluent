@@ -7,11 +7,12 @@ import { useLocale, useTranslations } from 'next-intl'
 import { createClient } from '@/lib/supabase/client'
 import { toast } from 'sonner'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowLeft, Check, ChevronRight } from 'lucide-react'
+import { ArrowLeft, Check, ChevronRight, Lock } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { getLanguage } from '@/lib/languages'
 import { SELF_LEVELS, estimateLevel, placementWords, type Cefr, type SelfLevel } from '@/lib/placement'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { isOwner } from '@/lib/owner'
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
@@ -61,14 +62,16 @@ type StepKey = 'native' | 'learn' | 'motivation' | 'destination' | 'level' | 'wo
 
 /**
  * full: the whole onboarding (new users and "Profile setup").
- * course: only the course and its level ("Change the language I'm learning" in the profile).
+ * course: only the level ("Change my level" in the profile). The course chosen the first time
+ * is the free one and the others stay locked until paid, so the language step only shows
+ * for an account without a course yet (or the owner's).
  */
 type Mode = 'full' | 'course'
 
 /** Destination only for travellers; the word check and its result only when not starting from scratch */
-function stepsFor(mode: Mode, travel: boolean, placement: boolean): StepKey[] {
+function stepsFor(mode: Mode, travel: boolean, placement: boolean, hasCourse: boolean): StepKey[] {
   if (mode === 'course') {
-    return ['learn', 'level', ...(placement ? ['words' as const, 'result' as const] : [])]
+    return [...(hasCourse ? [] : ['learn' as const]), 'level', ...(placement ? ['words' as const, 'result' as const] : [])]
   }
   return [
     'native', 'learn', 'motivation',
@@ -143,10 +146,12 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
   const [saving, setSaving]                 = useState(false)
   // Set once the saved draft or the current answers are loaded (see the effect below)
   const [storageKey, setStorageKey]         = useState<string | null>(null)
+  // The account's free course, once chosen: the other courses are locked (null for the owner)
+  const [ownCourse, setOwnCourse]           = useState<string | null>(null)
 
   const isTravel = motivation === 'travel'
   const band = SELF_LEVELS.find(l => l.code === selfLevel)?.band ?? null
-  const steps = stepsFor(mode, isTravel, band !== null)
+  const steps = stepsFor(mode, isTravel, band !== null, ownCourse !== null)
   // A resumed draft can point past the end if its answers now give fewer steps
   const step = Math.min(stepIdx, steps.length - 1)
   const currentKey = steps[step]
@@ -161,9 +166,15 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
       if (!user || cancelled) return
       const key = draftKey(user.id, mode)
       const draft = readDraft(key)
+      const { data: unlocked } = await supabase.from('user_languages')
+        .select('language_code, is_active').eq('user_id', user.id).eq('is_unlocked', true)
+      if (cancelled) return
+      const rows = (unlocked ?? []) as { language_code: string; is_active: boolean }[]
+      const own = isOwner(user.id) ? null : (rows.find(r => r.is_active) ?? rows[0])?.language_code ?? null
+      setOwnCourse(own)
       if (draft) {
         setNativeLanguage(draft.nativeLanguage)
-        setLearningLanguage(draft.learningLanguage)
+        setLearningLanguage(own ?? draft.learningLanguage)
         setMotivation(draft.motivation)
         setDestination(draft.destination)
         setSelfLevel(draft.selfLevel)
@@ -186,7 +197,7 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
         if (p?.motivation) setMotivation(p.motivation)
         if (p?.daily_goal_minutes) setDailyGoal(p.daily_goal_minutes)
         if (p?.travel_destination) setDestination(p.travel_destination)
-        if (c?.language_code) setLearningLanguage(c.language_code)
+        if (own ?? c?.language_code) setLearningLanguage(own ?? c!.language_code)
         setSelfLevel(selfLevelFor(c?.level ?? null))
       }
       setStorageKey(key)
@@ -437,30 +448,36 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
             {/* STEP: Learning language */}
             {currentKey === 'learn' && (
               <div className="grid grid-cols-2 gap-3">
-                {LEARNING_LANGUAGES.map(code => (
+                {LEARNING_LANGUAGES.map(code => {
+                  // Another course than the free one: locked until paid
+                  const locked = ownCourse !== null && code !== ownCourse
+                  return (
                   <button
                     key={code}
                     onClick={() => selectLearningLanguage(code)}
-                    disabled={code === nativeLanguage}
+                    disabled={code === nativeLanguage || locked}
                     className={cn(
                       'flex flex-col items-center gap-2.5 p-5 rounded-2xl border-2 transition-all',
                       learningLanguage === code
                         ? 'border-primary bg-primary/5 shadow-sm shadow-primary/10'
-                        : code === nativeLanguage
-                        ? 'border-slate-100 bg-slate-50 dark:border-slate-800 dark:bg-slate-800/20 opacity-30'
+                        : code === nativeLanguage || locked
+                        ? 'border-slate-100 bg-slate-50 dark:border-slate-800 dark:bg-slate-800/20 opacity-40'
                         : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 hover:border-primary/30'
                     )}
                   >
-                    <span className="text-3xl">{getLanguage(code).flag}</span>
+                    <span className={cn('text-3xl', locked && 'grayscale')}>{getLanguage(code).flag}</span>
                     <p className="font-bold text-sm">{languageName(code)}</p>
-                    <p className="text-[11px] text-muted-foreground text-center leading-tight">{t(`lang_${code}`)}</p>
+                    {locked
+                      ? <p className="flex items-center gap-1 text-[11px] text-muted-foreground text-center leading-tight"><Lock size={10} /> {t('learn_locked')}</p>
+                      : <p className="text-[11px] text-muted-foreground text-center leading-tight">{t(`lang_${code}`)}</p>}
                     {learningLanguage === code && (
                       <div className="size-5 rounded-full bg-primary flex items-center justify-center">
                         <Check size={11} className="text-white" />
                       </div>
                     )}
                   </button>
-                ))}
+                  )
+                })}
               </div>
             )}
 

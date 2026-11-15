@@ -307,8 +307,8 @@
     "title_hints_desc": "セクションのタイトルは学習中の言語で表示されます。パソコンでは、カードにカーソルを合わせるとあなたの言語で表示されます。",
     "title_hints_off": "オフ",
     "title_hints_until": "レッスン{n}まで",
-    "change_course": "学習する言語を変更",
-    "change_course_desc": "ほかの設定はそのままで、コースとレベルだけを選び直す"
+    "change_course": "レベルを変更",
+    "change_course_desc": "コースのレベルをもう一度測定します"
   },
   "progress": {
     "title": "進捗",
@@ -458,7 +458,8 @@
     "cefr_B2": "中上級",
     "cefr_C1": "上級",
     "cefr_C2": "熟達",
-    "result_fakes": "存在しない単語を{n}語選びました。レベルの判定に反映しています。"
+    "result_fakes": "存在しない単語を{n}語選びました。レベルの判定に反映しています。",
+    "learn_locked": "2つ目の言語は近日公開"
   },
   "saved": {
     "tab_items": "単語とフレーズ",

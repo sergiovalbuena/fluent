@@ -307,8 +307,8 @@
     "title_hints_desc": "Abschnittstitel erscheinen in der Sprache, die du lernst. Am Computer zeigt das Überfahren einer Karte ihren Titel in deiner Sprache.",
     "title_hints_off": "Aus",
     "title_hints_until": "Bis Lektion {n}",
-    "change_course": "Lernsprache ändern",
-    "change_course_desc": "Wähle einen anderen Kurs und dein Niveau, ohne alles neu einzurichten"
+    "change_course": "Mein Niveau ändern",
+    "change_course_desc": "Miss dein Niveau in deinem Kurs neu"
   },
   "progress": {
     "title": "Fortschritt",
@@ -458,7 +458,8 @@
     "cefr_B2": "Obere Mittelstufe",
     "cefr_C1": "Fortgeschritten",
     "cefr_C2": "Kompetent",
-    "result_fakes": "Du hast {n, plural, one {# Wort markiert, das es nicht gibt} other {# Wörter markiert, die es nicht gibt}} – das haben wir berücksichtigt."
+    "result_fakes": "Du hast {n, plural, one {# Wort markiert, das es nicht gibt} other {# Wörter markiert, die es nicht gibt}} – das haben wir berücksichtigt.",
+    "learn_locked": "Zweite Sprache, bald verfügbar"
   },
   "saved": {
     "tab_items": "Wörter & Sätze",

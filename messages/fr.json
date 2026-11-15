@@ -307,8 +307,8 @@
     "title_hints_desc": "Les titres des sections s'affichent dans la langue que tu apprends. Sur ordinateur, survole une carte pour voir son titre dans ta langue.",
     "title_hints_off": "Désactivé",
     "title_hints_until": "Jusqu'à la leçon {n}",
-    "change_course": "Changer la langue que j’apprends",
-    "change_course_desc": "Choisissez un autre cours et votre niveau, sans tout refaire"
+    "change_course": "Changer mon niveau",
+    "change_course_desc": "Mesure à nouveau ton niveau dans ton cours"
   },
   "progress": {
     "title": "Progrès",
@@ -458,7 +458,8 @@
     "cefr_B2": "Intermédiaire avancé",
     "cefr_C1": "Avancé",
     "cefr_C2": "Maîtrise",
-    "result_fakes": "Tu as coché {n, plural, one {# mot qui n’existe pas} other {# mots qui n’existent pas}} : nous en avons tenu compte."
+    "result_fakes": "Tu as coché {n, plural, one {# mot qui n’existe pas} other {# mots qui n’existent pas}} : nous en avons tenu compte.",
+    "learn_locked": "Deuxième langue, bientôt"
   },
   "saved": {
     "tab_items": "Mots et phrases",

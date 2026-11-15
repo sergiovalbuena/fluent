@@ -307,8 +307,8 @@
     "title_hints_desc": "Os títulos das seções aparecem no idioma que você está aprendendo. No computador, passe o cursor sobre um cartão para ver o título no seu idioma.",
     "title_hints_off": "Desativado",
     "title_hints_until": "Até a lição {n}",
-    "change_course": "Mudar o idioma que estou aprendendo",
-    "change_course_desc": "Escolha outro curso e seu nível, sem refazer o resto"
+    "change_course": "Mudar meu nível",
+    "change_course_desc": "Meça de novo seu nível no seu curso"
   },
   "progress": {
     "title": "Progresso",
@@ -458,7 +458,8 @@
     "cefr_B2": "Intermediário avançado",
     "cefr_C1": "Avançado",
     "cefr_C2": "Domínio",
-    "result_fakes": "Você marcou {n, plural, one {# palavra que não existe} other {# palavras que não existem}}: levamos isso em conta no seu nível."
+    "result_fakes": "Você marcou {n, plural, one {# palavra que não existe} other {# palavras que não existem}}: levamos isso em conta no seu nível.",
+    "learn_locked": "Segundo idioma, em breve"
   },
   "saved": {
     "tab_items": "Palavras e frases",
