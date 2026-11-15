@@ -60,6 +60,18 @@
     { "question": { "en": "It's 70°F. Is it hot or cold?", "es": "Hace 70°F. ¿Hace calor o frío?" }, "options": ["Nice and warm (about 21°C)", "Very cold", "Freezing", "Extremely hot"], "correct": 0, "explanation": { "en": "70°F is about 21°C: pleasant.", "es": "70°F son unos 21°C: agradable." } },
     { "question": { "en": "You arrive exactly at 10:00 for a 10:00 meeting. You are…", "es": "Llegas exactamente a las 10:00 a una reunión de las 10:00. Llegas…" }, "options": ["on time", "late", "early", "past"], "correct": 0, "explanation": { "en": "On time = puntual.", "es": "On time = puntual." } }
   ],
+  "sentences": [
+    { "sentence": "What time does your English class start, at nine or at ten?", "kind": "question", "bold": ["What time", "at", "at"], "es": "¿A qué hora empieza tu clase de inglés, a las nueve o a las diez?" },
+    { "sentence": "How long does it take to walk to the park?", "kind": "question", "bold": ["How long does it take"], "es": "¿Cuánto se tarda en caminar al parque?" },
+    { "sentence": "How tall is Leo now, four feet?", "kind": "question", "bold": ["How tall", "feet"], "es": "¿Cuánto mide Leo ahora, cuatro pies?" },
+    { "sentence": "Does the store close at midnight or at ten p.m.?", "kind": "question", "bold": ["at", "midnight", "at", "p.m."], "es": "¿La tienda cierra a medianoche o a las diez de la noche?" },
+    { "sentence": "How far is the hospital, one mile or two?", "kind": "question", "bold": ["How far", "mile"], "es": "¿Qué tan lejos está el hospital, una milla o dos?" },
+    { "sentence": "The bus comes at a quarter past eight, so I leave on time.", "kind": "statement", "bold": ["at", "a quarter past", "on time"], "es": "El camión pasa a las ocho y cuarto, así que salgo a tiempo." },
+    { "sentence": "It takes about twenty minutes to drive to Laura's house.", "kind": "statement", "bold": ["It takes", "minutes"], "es": "Se tarda unos veinte minutos en manejar a la casa de Laura." },
+    { "sentence": "We eat lunch at noon and dinner at half past six.", "kind": "statement", "bold": ["at", "noon", "at", "half past"], "es": "Comemos a mediodía y cenamos a las seis y media." },
+    { "sentence": "The bakery opens at 7 a.m. and closes at 3 p.m.", "kind": "statement", "bold": ["at", "a.m.", "at", "p.m."], "es": "La panadería abre a las 7 de la mañana y cierra a las 3 de la tarde." },
+    { "sentence": "This bag is heavy; it's about ten pounds.", "kind": "statement", "bold": ["heavy", "pounds"], "es": "Esta bolsa está pesada; pesa como diez libras." }
+  ],
   "story": {
     "title": "Right on Time",
     "text": "On Wednesday, the conversation group at the library starts at ten o'clock. Carmen doesn't want to be late. \"How long does it take by bus?\" she asks Laura. \"It takes about forty minutes. Take the bus at a quarter past nine.\" At nine o'clock Carmen is ready. At a quarter past nine she is at the bus stop. The bus is late. Five minutes… ten minutes… At half past nine the bus finally comes. Carmen looks at her watch all the time. At five to ten she runs into the library. A man at the door smiles. \"Right on time!\" The group leader asks everybody, \"What time do you usually get up?\" \"I get up at six o'clock,\" says Carmen. \"But today… today I run!\" Everybody laughs.",

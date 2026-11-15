@@ -60,6 +60,18 @@
     { "question": { "en": "The moment the plane arrives on the ground is the…", "es": "El momento en que el avión llega a tierra es el…" }, "options": ["landing", "takeoff", "boarding", "turbulence"], "correct": 0, "explanation": { "en": "Landing = aterrizaje. Takeoff = despegue.", "es": "Landing = aterrizaje. Takeoff = despegue." } },
     { "question": { "en": "\"Should\" expresses…", "es": "«Should» expresa…" }, "options": ["advice", "a strict rule", "the past", "ability"], "correct": 0, "explanation": { "en": "Should = advice (deberías).", "es": "Should = consejo (deberías)." } }
   ],
+  "sentences": [
+    { "sentence": "Should I fasten my seatbelt now?", "kind": "question", "bold": ["Should I", "fasten", "seatbelt"], "es": "¿Debo abrocharme el cinturón ahora?" },
+    { "sentence": "Could I have a blanket and a pillow, please?", "kind": "question", "bold": ["Could I", "blanket", "pillow"], "es": "¿Me podría dar una cobija y una almohada, por favor?" },
+    { "sentence": "Excuse me, could I get past to the aisle?", "kind": "question", "bold": ["Excuse me", "could I", "aisle"], "es": "Disculpe, ¿podría pasar al pasillo?" },
+    { "sentence": "Would you like a snack or something to drink?", "kind": "question", "bold": ["Would you like", "snack"], "es": "¿Le gustaría un bocadillo o algo de tomar?" },
+    { "sentence": "Can I put my bag in the overhead bin?", "kind": "question", "bold": ["overhead bin"], "es": "¿Puedo poner mi maleta en el compartimento de arriba?" },
+    { "sentence": "You should drink a lot of water on long flights.", "kind": "statement", "bold": ["You should", "flights"], "es": "Debería tomar mucha agua en los vuelos largos." },
+    { "sentence": "You shouldn't stand up during takeoff or landing.", "kind": "statement", "bold": ["You shouldn't", "takeoff", "landing"], "es": "No debería levantarse durante el despegue ni el aterrizaje." },
+    { "sentence": "The pilot said there's a little turbulence, but it's fine.", "kind": "statement", "bold": ["pilot", "turbulence"], "es": "El piloto dijo que hay un poco de turbulencia, pero está bien." },
+    { "sentence": "I'd like some water and a blanket, please.", "kind": "statement", "bold": ["I'd like", "blanket"], "es": "Quisiera un poco de agua y una cobija, por favor." },
+    { "sentence": "After the flight, I always have jet lag for two days.", "kind": "statement", "bold": ["flight", "jet lag"], "es": "Después del vuelo, siempre tengo jet lag dos días." }
+  ],
   "story": {
     "title": "A New Friend at 30,000 Feet",
     "text": "The plane takes off at eight. Carmen looks out of the window: San Diego becomes small and blue. Next to her sits a young man with headphones. He looks nervous. \"Is this your first flight?\" asks Carmen. \"Yes, I'm going to a job interview in New York,\" he says. \"I'm very nervous.\" \"You shouldn't worry,\" says Carmen. \"You should sleep a little and drink some water.\" A flight attendant comes with a cart. \"Would you like something to drink?\" \"Some water, please. And could I have a blanket?\" During the flight there is a little turbulence. The young man holds his seat. \"Should I be scared?\" \"No, it's normal. Just keep your seatbelt fastened.\" Five hours later, the pilot says, \"Welcome to New York!\" The young man smiles. \"Thank you for your advice. You should be a teacher.\" \"I was one for thirty years!\"",

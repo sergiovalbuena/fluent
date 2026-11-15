@@ -322,6 +322,18 @@
       }
     }
   ],
+  "sentences": [
+    { "sentence": "How much is this jacket, and how much are those sneakers?", "kind": "question", "bold": ["How much is", "this", "jacket", "how much are", "those", "sneakers"], "es": "¿Cuánto cuesta esta chamarra, y cuánto cuestan esos tenis?" },
+    { "sentence": "Can I try these pants on, please?", "kind": "question", "bold": ["Can I try", "these", "pants", "on"], "es": "¿Me puedo probar estos pantalones, por favor?" },
+    { "sentence": "Do you have this blouse in a smaller size?", "kind": "question", "bold": ["this", "blouse", "size"], "es": "¿Tiene esta blusa en una talla más chica?" },
+    { "sentence": "Is that coat expensive or cheap?", "kind": "question", "bold": ["that", "coat", "expensive", "cheap"], "es": "¿Ese abrigo es caro o barato?" },
+    { "sentence": "What do you usually wear to work, a dress or pants?", "kind": "question", "bold": ["wear", "dress", "pants"], "es": "¿Qué te pones normalmente para trabajar, vestido o pantalón?" },
+    { "sentence": "This sweater is cheap, but that one is expensive.", "kind": "statement", "bold": ["This", "sweater", "cheap", "that", "expensive"], "es": "Este suéter es barato, pero aquel es caro." },
+    { "sentence": "These shoes are comfortable, but those are too small.", "kind": "statement", "bold": ["These", "shoes", "those"], "es": "Estos zapatos son cómodos, pero esos son demasiado chicos." },
+    { "sentence": "Leo always wears jeans and a T-shirt to school.", "kind": "statement", "bold": ["wears", "jeans", "T-shirt"], "es": "Leo siempre se pone jeans y una camiseta para ir a la escuela." },
+    { "sentence": "I need a scarf and a hat for the cold weather.", "kind": "statement", "bold": ["scarf", "hat"], "es": "Necesito una bufanda y un sombrero para el frío." },
+    { "sentence": "My daughter wears a black skirt and a white shirt at work.", "kind": "statement", "bold": ["wears", "skirt", "shirt"], "es": "Mi hija se pone una falda negra y una camisa blanca en el trabajo." }
+  ],
   "story": {
     "title": "A Dress for the Party",
     "text": "Carmen needs a dress for Leo's birthday party. She goes to a store with Laura. \"Can I help you?\" asks the salesperson. \"Just looking, thanks,\" says Carmen. Then she sees a blue dress. \"Laura, look at that dress!\" \"It's beautiful, Mom. Try it on.\" \"Excuse me, can I try this dress on? Do you have it in a medium?\" \"Sure. The fitting room is over there.\" The dress is too small. The salesperson brings a large. This time it fits perfectly. \"How much is it?\" \"Forty dollars. It's on sale.\" \"I'll take it!\" At the cashier, Laura sees some red socks for Leo. \"And how much are these socks?\" \"Five dollars.\" Carmen laughs. \"A blue dress for me and red socks for Leo. We are ready for the party!\"",

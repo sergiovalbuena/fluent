@@ -60,6 +60,18 @@
     { "question": { "en": "A 25-cent coin in the US is a…", "es": "Una moneda de 25 centavos en Estados Unidos es un…" }, "options": ["quarter", "dime", "nickel", "penny"], "correct": 0, "explanation": { "en": "Quarter = 25¢. Dime = 10¢. Nickel = 5¢. Penny = 1¢.", "es": "Quarter = 25¢. Dime = 10¢. Nickel = 5¢. Penny = 1¢." } },
     { "question": { "en": "Which word shows the last step?", "es": "¿Qué palabra indica el último paso?" }, "options": ["Finally", "First", "Then", "After that"], "correct": 0, "explanation": { "en": "Finally = al final.", "es": "Finally = al final." } }
   ],
+  "sentences": [
+    { "sentence": "Excuse me, how does this washer work?", "kind": "question", "bold": ["how does this", "washer", "work"], "es": "Disculpe, ¿cómo funciona esta lavadora?" },
+    { "sentence": "Do you have quarters for the dryer?", "kind": "question", "bold": ["quarters", "dryer"], "es": "¿Tienes monedas de veinticinco centavos para la secadora?" },
+    { "sentence": "How long does one load take in this machine?", "kind": "question", "bold": ["load"], "es": "¿Cuánto tarda una carga en esta máquina?" },
+    { "sentence": "Should I use fabric softener for my sweaters?", "kind": "question", "bold": ["fabric softener"], "es": "¿Debo usar suavizante para mis suéteres?" },
+    { "sentence": "Can you help me fold up these sheets?", "kind": "question", "bold": ["fold up"], "es": "¿Me ayudas a doblar estas sábanas?" },
+    { "sentence": "First, sort the clothes; then, put in the detergent.", "kind": "statement", "bold": ["First", "then", "put in", "detergent"], "es": "Primero, separa la ropa; luego, pon el detergente." },
+    { "sentence": "After that, put in the quarters and press start.", "kind": "statement", "bold": ["After that", "put in", "quarters", "press"], "es": "Después, mete las monedas y presiona el botón de inicio." },
+    { "sentence": "Finally, take out the clothes and fold them.", "kind": "statement", "bold": ["Finally", "take out", "fold"], "es": "Por último, saca la ropa y dóblala." },
+    { "sentence": "This dryer is out of order, so I'm using that one.", "kind": "statement", "bold": ["dryer", "is out of order"], "es": "Esta secadora no funciona, así que voy a usar esa." },
+    { "sentence": "My white shirt has a stain, and my sweater shrank.", "kind": "statement", "bold": ["stain", "shrank"], "es": "Mi camisa blanca tiene una mancha, y mi suéter se encogió." }
+  ],
   "story": {
     "title": "Saturday at the Laundromat",
     "text": "Carmen's washing machine is broken, so on Saturday she goes to the laundromat with a big bag of laundry. She has never used one before. A young man is folding his clothes. \"Excuse me, how does this washer work?\" \"It's easy. First, put in your clothes. Then, add the detergent here. After that, put in eight quarters. Finally, choose cold water and press start.\" \"Thank you! Do you have change for a dollar?\" \"Sure.\" Thirty minutes later, Carmen takes out her clothes and goes to a dryer. But there's a sign: OUT OF ORDER. She uses the next one. When it finishes, she takes everything out and folds it carefully. Then she sees her favorite sweater. It's very small now. \"Oh no! My sweater shrank!\" The young man laughs. \"Next time, use low heat. Or give it to your grandson!\"",

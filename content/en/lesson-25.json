@@ -60,6 +60,18 @@
     { "question": { "en": "How do you say \"a pie\"?", "es": "¿Cómo se dice «a pie»?" }, "options": ["on foot", "by foot", "in foot", "with feet"], "correct": 0, "explanation": { "en": "The expression is \"on foot\".", "es": "La expresión es «on foot»." } },
     { "question": { "en": "Complete: \"We ___ for the bus for twenty minutes.\"", "es": "Completa: «We ___ for the bus for twenty minutes.»" }, "options": ["waited", "waitted", "wait", "waits"], "correct": 0, "explanation": { "en": "Past simple: waited.", "es": "Pasado simple: waited." } }
   ],
+  "sentences": [
+    { "sentence": "How do you get to work, by bus or by train?", "kind": "question", "bold": ["by bus", "by train"], "es": "¿Cómo llegas al trabajo, en camión o en tren?" },
+    { "sentence": "Do I get off at the third stop for the beach?", "kind": "question", "bold": ["get off", "stop"], "es": "¿Me bajo en la tercera parada para la playa?" },
+    { "sentence": "Is there a senior fare for the trolley?", "kind": "question", "bold": ["fare", "trolley"], "es": "¿Hay tarifa para personas mayores en el tranvía?" },
+    { "sentence": "Where do I get on the bus to the station?", "kind": "question", "bold": ["get on", "bus", "station"], "es": "¿Dónde me subo al camión para la estación?" },
+    { "sentence": "Do I need to transfer to another bus to go downtown?", "kind": "question", "bold": ["transfer", "bus"], "es": "¿Tengo que transbordar a otro camión para ir al centro?" },
+    { "sentence": "I walked to the bus stop and waited for twenty minutes.", "kind": "statement", "bold": ["walked", "bus stop", "waited"], "es": "Caminé a la parada del camión y esperé veinte minutos." },
+    { "sentence": "The train arrived late because there was a lot of traffic.", "kind": "statement", "bold": ["train", "arrived", "traffic"], "es": "El tren llegó tarde porque había mucho tráfico." },
+    { "sentence": "We stopped for coffee and then walked to the station.", "kind": "statement", "bold": ["stopped", "walked", "station"], "es": "Paramos por un café y luego caminamos a la estación." },
+    { "sentence": "Leo goes to school by bike, and Laura goes by car.", "kind": "statement", "bold": ["goes", "by bike", "by car"], "es": "Leo va a la escuela en bicicleta, y Laura va en carro." },
+    { "sentence": "The taxi driver tried a different street, but we arrived late.", "kind": "statement", "bold": ["taxi", "driver", "tried", "arrived"], "es": "El taxista intentó otra calle, pero llegamos tarde." }
+  ],
   "story": {
     "title": "The Trolley to Old Town",
     "text": "Yesterday Carmen visited Old Town, the historic part of San Diego. She traveled by trolley for the first time. At the station, she asked the driver, \"Does this trolley go to Old Town?\" \"Yes, it does. Get off at the fourth stop.\" She showed her senior pass and paid a low fare. On the trolley, she watched the city through the window and counted the stops: one, two, three, four. She got off and walked to the old plaza. There was music, there were colorful flowers and the restaurants smelled like home. Carmen talked to a man who sold handmade toys. She stayed there for three hours. In the evening she called Laura. \"I traveled alone today, by trolley! And I didn't get lost!\"",

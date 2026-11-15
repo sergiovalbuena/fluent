@@ -60,6 +60,18 @@
     { "question": { "en": "An apartment with a bed, sofa and table already inside is…", "es": "Un departamento que ya tiene cama, sofá y mesa está…" }, "options": ["furnished", "unfurnished", "utilities", "parking"], "correct": 0, "explanation": { "en": "Furnished = amueblado.", "es": "Furnished = amueblado." } },
     { "question": { "en": "Complete: \"I ___ known Linda for a year.\"", "es": "Completa: «I ___ known Linda for a year.»" }, "options": ["have", "has", "am", "did"], "correct": 0, "explanation": { "en": "I → have + past participle.", "es": "I → have + participio." } }
   ],
+  "sentences": [
+    { "sentence": "How long have you lived in this neighborhood?", "kind": "question", "bold": ["How long have you lived", "neighborhood"], "es": "¿Cuánto tiempo has vivido en este barrio?" },
+    { "sentence": "Are utilities included in the rent?", "kind": "question", "bold": ["Are", "utilities", "included", "rent"], "es": "¿Los servicios están incluidos en la renta?" },
+    { "sentence": "Is the studio furnished or unfurnished?", "kind": "question", "bold": ["studio", "furnished", "unfurnished"], "es": "¿El estudio está amueblado o sin amueblar?" },
+    { "sentence": "How much is the security deposit, and when can I move in?", "kind": "question", "bold": ["security deposit", "move in"], "es": "¿Cuánto es el depósito, y cuándo me puedo mudar?" },
+    { "sentence": "Is there parking and a laundry room in the building?", "kind": "question", "bold": ["parking", "laundry room"], "es": "¿Hay estacionamiento y cuarto de lavado en el edificio?" },
+    { "sentence": "Ana has lived in that room for two years.", "kind": "statement", "bold": ["has lived", "for"], "es": "Ana ha vivido en ese cuarto desde hace dos años." },
+    { "sentence": "I've lived in San Diego since 2019.", "kind": "statement", "bold": ["I've lived", "since"], "es": "He vivido en San Diego desde 2019." },
+    { "sentence": "I'm looking for a two-bedroom apartment near the school.", "kind": "statement", "bold": ["a two-bedroom apartment"], "es": "Estoy buscando un departamento de dos recámaras cerca de la escuela." },
+    { "sentence": "The landlord wants me to sign the lease today.", "kind": "statement", "bold": ["landlord", "sign", "lease"], "es": "El casero quiere que firme el contrato hoy." },
+    { "sentence": "The last tenant moved out last week, so it's ready.", "kind": "statement", "bold": ["tenant", "moved out"], "es": "El último inquilino se mudó la semana pasada, así que está listo." }
+  ],
   "story": {
     "title": "Ana Needs a New Place",
     "text": "Back in San Diego, Ana has a problem. \"I've lived in a small room for two years,\" she tells Carmen. \"But my landlord is selling the house. I need a new place.\" Carmen has lived in her apartment since March, and she knows the neighborhood well. \"Let's look together!\" They visit a one-bedroom apartment near the beach. \"How much is the rent?\" asks Ana. \"Eighteen hundred a month,\" says the landlord. \"Are utilities included?\" \"No, they aren't. And the security deposit is one month's rent.\" Ana looks worried. The next apartment is a studio, furnished, with parking and a laundry room. The rent is lower and utilities are included. \"Can I see the lease?\" asks Carmen. She reads every line. \"It looks good, Ana.\" Ana smiles. \"I've waited for this for a long time. When can I move in?\"",

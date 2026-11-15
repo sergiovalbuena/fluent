@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"This house isn't theirs. It's ___.\" (you and me)", "es": "Completa: «This house isn't theirs. It's ___.» (tú y yo)" }, "options": ["ours", "our", "us", "we"], "correct": 0, "explanation": { "en": "We → ours.", "es": "We → ours." } },
     { "question": { "en": "\"Let's split the bills\" means…", "es": "«Let's split the bills» significa…" }, "options": ["Let's pay half each.", "Let's not pay.", "Let's tear the bills.", "Let's hide the bills."], "correct": 0, "explanation": { "en": "Split = divide between people.", "es": "Split = dividir entre personas." } }
   ],
+  "sentences": [
+    { "sentence": "Whose shoes are these, yours or hers?", "kind": "question", "bold": ["Whose", "yours", "hers"], "es": "¿De quién son estos zapatos, tuyos o de ella?" },
+    { "sentence": "Is this towel mine or yours?", "kind": "question", "bold": ["mine", "yours"], "es": "¿Esta toalla es mía o tuya?" },
+    { "sentence": "Whose turn is it to take out the trash tonight, mine or yours?", "kind": "question", "bold": ["Whose", "trash", "mine", "yours"], "es": "¿A quién le toca sacar la basura esta noche, a mí o a ti?" },
+    { "sentence": "Can we split the bills and share the chores?", "kind": "question", "bold": ["split", "share", "chores"], "es": "¿Podemos dividir las cuentas y compartir los quehaceres?" },
+    { "sentence": "Would you mind not playing music so late at night?", "kind": "question", "bold": ["Would you mind not playing"], "es": "¿Te importaría no poner música tan tarde en la noche?" },
+    { "sentence": "The top shelf is mine, and the bottom one is yours.", "kind": "statement", "bold": ["mine", "yours"], "es": "El estante de arriba es mío, y el de abajo es tuyo." },
+    { "sentence": "We share the kitchen, but the bathroom is ours.", "kind": "statement", "bold": ["share", "ours"], "es": "Compartimos la cocina, pero el baño es nuestro." },
+    { "sentence": "That car isn't theirs; it's his.", "kind": "statement", "bold": ["theirs", "his"], "es": "Ese carro no es de ellos; es de él." },
+    { "sentence": "My roommate is messy, but I'm very tidy.", "kind": "statement", "bold": ["roommate", "messy", "tidy"], "es": "Mi compañera de cuarto es desordenada, pero yo soy muy ordenada." },
+    { "sentence": "It's your turn to do the dishes; I did them yesterday.", "kind": "statement", "bold": ["dishes"], "es": "Te toca lavar los platos; yo los lavé ayer." }
+  ],
   "story": {
     "title": "Whose Turn Is It?",
     "text": "Ana loves her new studio, but the rent is high. So she decides to share it with a roommate: Sofía, a nursing student from Colombia. The first week is wonderful. They cook together and split the bills. But in the second week, problems begin. \"Sofía, whose dishes are these?\" \"Oh, they're mine. Sorry!\" \"And whose turn is it to take out the trash?\" \"Yours, I think…\" \"No, it's yours!\" At night, Sofía studies with music. Ana can't sleep. She asks Carmen for advice. \"Talk to her kindly,\" says Carmen. \"And make some house rules together.\" That evening Ana says, \"Sofía, I hope you don't mind, but would you mind not playing music after ten?\" \"Of course! Sorry, I didn't know.\" They write the rules on a paper on the fridge. At the bottom, Sofía writes: \"Rule number 10: the chocolate in the fridge is ours.\"",

@@ -60,6 +60,18 @@
     { "question": { "en": "Choose the polite request.", "es": "Elige el pedido amable." }, "options": ["Could you call a taxi for me, please?", "Call taxi.", "You call me taxi.", "Taxi now, please you."], "correct": 0, "explanation": { "en": "Could you…, please? is polite.", "es": "Could you…, please? es amable." } },
     { "question": { "en": "A room for one person is a…", "es": "Un cuarto para una persona es…" }, "options": ["single room", "double room", "front desk", "suite floor"], "correct": 0, "explanation": { "en": "Single = one person.", "es": "Single = una persona." } }
   ],
+  "sentences": [
+    { "sentence": "Could you call a taxi for me, please?", "kind": "question", "bold": ["Could you", "call a taxi", "please"], "es": "¿Podría llamarme un taxi, por favor?" },
+    { "sentence": "It's very noisy; would you mind changing my room?", "kind": "question", "bold": ["noisy", "would you mind changing"], "es": "Es muy ruidoso; ¿le importaría cambiarme de cuarto?" },
+    { "sentence": "What time is checkout tomorrow?", "kind": "question", "bold": ["What time is", "checkout"], "es": "¿A qué hora es la salida mañana?" },
+    { "sentence": "What's the Wi-Fi password for the room?", "kind": "question", "bold": ["Wi-Fi password"], "es": "¿Cuál es la contraseña del wifi para el cuarto?" },
+    { "sentence": "Is breakfast included with a double room?", "kind": "question", "bold": ["Is", "double room"], "es": "¿El desayuno está incluido con un cuarto doble?" },
+    { "sentence": "I have a reservation under Ruiz for two nights.", "kind": "statement", "bold": ["I have a reservation under"], "es": "Tengo una reservación a nombre de Ruiz por dos noches." },
+    { "sentence": "There's a problem with the air conditioning in my room.", "kind": "statement", "bold": ["There's a problem with", "air conditioning"], "es": "Hay un problema con el aire acondicionado de mi cuarto." },
+    { "sentence": "Housekeeping left extra towels, so I left a tip.", "kind": "statement", "bold": ["Housekeeping", "towels", "tip"], "es": "Limpieza dejó toallas extra, así que dejé una propina." },
+    { "sentence": "Our room is on the fifth floor, and it has a beautiful view.", "kind": "statement", "bold": ["floor", "view"], "es": "Nuestro cuarto está en el quinto piso, y tiene una vista hermosa." },
+    { "sentence": "The elevator isn't working, so we have to take the stairs.", "kind": "statement", "bold": ["elevator"], "es": "El elevador no funciona, así que tenemos que subir por las escaleras." }
+  ],
   "story": {
     "title": "Room 512",
     "text": "Elena's apartment is very small, so Carmen stays at a hotel near her for the first two nights. At the front desk, she says, \"Good evening. I have a reservation under Ruiz.\" \"Welcome, Mrs. Ruiz. Two nights in a single room. Here's your room key. You're on the fifth floor, room 512.\" \"Thank you. What time is checkout?\" \"Eleven a.m. And the Wi-Fi password is on the card.\" The room is nice, with a view of the street. But it's very noisy, and the heater doesn't work. Carmen calls the front desk. \"Hello, this is room 512. There's a problem with the heater. And the room is very noisy. Would you mind changing my room?\" \"No, not at all. We have a quiet room on the ninth floor.\" Ten minutes later, Carmen is in a warm, quiet room. \"New York is big,\" she writes to Laura, \"but people are kind.\"",

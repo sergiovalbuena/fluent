@@ -60,6 +60,18 @@
     { "question": { "en": "A person in your class is your…", "es": "Una persona de tu clase es tu…" }, "options": ["classmate", "roommate", "teammate", "landlord"], "correct": 0, "explanation": { "en": "Classmate = compañero de clase.", "es": "Classmate = compañero de clase." } },
     { "question": { "en": "Complete: \"She was sleeping ___ the alarm went off.\"", "es": "Completa: «She was sleeping ___ the alarm went off.»" }, "options": ["when", "while", "during", "for"], "correct": 0, "explanation": { "en": "Interruption → when + past simple.", "es": "Interrupción → when + pasado simple." } }
   ],
+  "sentences": [
+    { "sentence": "What were you doing at eight last night?", "kind": "question", "bold": ["What were you doing"], "es": "¿Qué estabas haciendo a las ocho anoche?" },
+    { "sentence": "Were you sleeping when I called you?", "kind": "question", "bold": ["Were you sleeping", "when"], "es": "¿Estabas dormida cuando te llamé?" },
+    { "sentence": "Can you explain the homework again, please?", "kind": "question", "bold": ["explain", "homework"], "es": "¿Puedes explicar la tarea otra vez, por favor?" },
+    { "sentence": "Did you sign up for the computer class at the community college?", "kind": "question", "bold": ["sign up for", "class", "community college"], "es": "¿Te inscribiste en la clase de computación del colegio comunitario?" },
+    { "sentence": "What grade did you get on the test?", "kind": "question", "bold": ["grade", "test"], "es": "¿Qué calificación sacaste en el examen?" },
+    { "sentence": "I was studying when my phone rang.", "kind": "statement", "bold": ["I was studying", "when"], "es": "Estaba estudiando cuando sonó mi teléfono." },
+    { "sentence": "While I was reading, Leo was playing with his laptop.", "kind": "statement", "bold": ["While", "I was reading", "was playing", "laptop"], "es": "Mientras yo leía, Leo jugaba con su laptop." },
+    { "sentence": "We were talking when the teacher came in.", "kind": "statement", "bold": ["were talking", "when"], "es": "Estábamos platicando cuando entró la maestra." },
+    { "sentence": "My classmate helped me with my email password.", "kind": "statement", "bold": ["classmate", "email", "password"], "es": "Mi compañero me ayudó con la contraseña de mi correo." },
+    { "sentence": "I'm taking a class because it's never too late to learn.", "kind": "statement", "bold": ["taking a class", "learn"], "es": "Estoy tomando una clase porque nunca es tarde para aprender." }
+  ],
   "story": {
     "title": "Never Too Late",
     "text": "Carmen wants to send emails and video calls to her sisters by herself, so she signs up for a computer class at the community college. On the first day, the teacher, Ms. Lee, asks everybody to create an email account. Carmen was typing her password when the screen went black. \"Oh no! What happened?\" Her classmate, an old man named Walter, laughs. \"You pressed the power button.\" While Ms. Lee was explaining how to restart, Carmen was writing everything in her notebook. At home, Laura calls. \"Mom, what were you doing? I called three times!\" \"I was doing my homework! I was sending my first email!\" On Friday, Carmen sends a photo to her sister Rosa. Rosa answers in five minutes: \"Carmen, you're a computer expert now!\" Carmen smiles at the screen. It's never too late to learn.",

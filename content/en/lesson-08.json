@@ -60,6 +60,18 @@
     { "question": { "en": "What language do people speak in Brazil?", "es": "¿Qué idioma se habla en Brasil?" }, "options": ["Portuguese", "Spanish", "Brazilian", "English"], "correct": 0, "explanation": { "en": "In Brazil people speak Portuguese.", "es": "En Brasil se habla portugués." } },
     { "question": { "en": "Complete: \"We ___ from Mexico.\"", "es": "Completa: «We ___ from Mexico.»" }, "options": ["are", "is", "am", "be"], "correct": 0, "explanation": { "en": "We → are.", "es": "We → are." } }
   ],
+  "sentences": [
+    { "sentence": "Where are you from, and which city?", "kind": "question", "bold": ["Where are you from", "which", "city"], "es": "¿De dónde eres, y de qué ciudad?" },
+    { "sentence": "Are you Canadian or American?", "kind": "question", "bold": ["Are you", "Canadian", "American"], "es": "¿Eres canadiense o estadounidense?" },
+    { "sentence": "What languages do you speak at home with your family?", "kind": "question", "bold": ["What languages do you speak"], "es": "¿Qué idiomas hablas en casa con tu familia?" },
+    { "sentence": "Is your teacher from Spain or from Mexico?", "kind": "question", "bold": ["Is", "Spain", "Mexico"], "es": "¿Tu maestra es de España o de México?" },
+    { "sentence": "Does your neighbor speak Portuguese? Is she Brazilian?", "kind": "question", "bold": ["speak", "Portuguese", "Brazilian"], "es": "¿Tu vecina habla portugués? ¿Es brasileña?" },
+    { "sentence": "I'm from Mexico, but my grandson is American.", "kind": "statement", "bold": ["I'm from", "Mexico", "American"], "es": "Soy de México, pero mi nieto es estadounidense." },
+    { "sentence": "She isn't Spanish; she's from Brazil.", "kind": "statement", "bold": ["She isn't", "Spanish", "she's", "Brazil"], "es": "Ella no es española; es de Brasil." },
+    { "sentence": "I speak Spanish at home and English at school.", "kind": "statement", "bold": ["I speak", "Spanish", "English"], "es": "Hablo español en casa e inglés en la escuela." },
+    { "sentence": "They aren't from Japan, but they speak Japanese.", "kind": "statement", "bold": ["They aren't", "Japan", "speak", "Japanese"], "es": "No son de Japón, pero hablan japonés." },
+    { "sentence": "English is a difficult language, but I'm not afraid.", "kind": "statement", "bold": ["English", "language", "I'm not"], "es": "El inglés es un idioma difícil, pero no tengo miedo." }
+  ],
   "story": {
     "title": "The World in One Classroom",
     "text": "In Carmen's English class there are students from many countries. Mr. Park asks everybody, \"Where are you from?\" Ana says, \"I'm from Brazil. I'm Brazilian. I speak Portuguese.\" A quiet man says, \"I'm Kenji. I'm from Japan. I speak Japanese and a little English.\" \"And you, Carmen?\" \"I'm from Mexico, from Guadalajara. I speak Spanish.\" \"Are you from Canada, Mr. Park?\" asks Ana. \"No, I'm not. I'm American. But my parents are from Korea.\" Carmen thinks: Mexico, Brazil, Japan, Korea, the United States… The world is in one small classroom. Kenji smiles at her. \"Your English is very good, Carmen.\" \"Thank you! I'm learning.\"",

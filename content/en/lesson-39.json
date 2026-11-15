@@ -60,6 +60,18 @@
     { "question": { "en": "A clerk asks \"Can I help you?\" You need a gift. You say:", "es": "Un vendedor pregunta «Can I help you?». Necesitas un regalo. Dices:" }, "options": ["Yes, I'm looking for a present.", "Yes, I'm searching a present.", "Yes, I look present.", "Yes, present for looking."], "correct": 0, "explanation": { "en": "I'm looking for + thing.", "es": "I'm looking for + cosa." } },
     { "question": { "en": "\"Too\" vs \"very\": which one means it's a problem?", "es": "«Too» vs «very»: ¿cuál indica un problema?" }, "options": ["too", "very", "both", "neither"], "correct": 0, "explanation": { "en": "\"Too\" means more than is good.", "es": "«Too» significa más de lo conveniente." } }
   ],
+  "sentences": [
+    { "sentence": "Do you have this sweater in a bigger size?", "kind": "question", "bold": ["Do you have this", "in"], "es": "¿Tiene este suéter en una talla más grande?" },
+    { "sentence": "Is this coat on sale, or is there a discount?", "kind": "question", "bold": ["on sale", "discount"], "es": "¿Este abrigo está en oferta, o tiene descuento?" },
+    { "sentence": "Can I return it or exchange it if it doesn't fit?", "kind": "question", "bold": ["return", "exchange"], "es": "¿Lo puedo devolver o cambiar si no me queda?" },
+    { "sentence": "Do you pay with cash or with a card at the register?", "kind": "question", "bold": ["cash", "register"], "es": "¿Pagas en efectivo o con tarjeta en la caja?" },
+    { "sentence": "Does the price include sales tax?", "kind": "question", "bold": ["sales tax"], "es": "¿El precio incluye el impuesto?" },
+    { "sentence": "I'm looking for a present for my grandson.", "kind": "statement", "bold": ["I'm looking for", "present"], "es": "Estoy buscando un regalo para mi nieto." },
+    { "sentence": "These boots are too expensive, and they aren't warm enough.", "kind": "statement", "bold": ["boots", "too", "enough"], "es": "Estas botas son demasiado caras, y no son lo bastante calientitas." },
+    { "sentence": "I don't have enough cash, so I'll pay with my card.", "kind": "statement", "bold": ["enough", "cash"], "es": "No tengo suficiente efectivo, así que voy a pagar con tarjeta." },
+    { "sentence": "The clerk gave me the receipt and a small bag.", "kind": "statement", "bold": ["clerk", "receipt", "bag"], "es": "El dependiente me dio el recibo y una bolsita." },
+    { "sentence": "This jacket is too small; it isn't big enough for me.", "kind": "statement", "bold": ["too", "enough"], "es": "Esta chamarra es demasiado chica; no es lo bastante grande para mí." }
+  ],
   "story": {
     "title": "Presents for Everyone",
     "text": "Before she goes home, Carmen wants to buy presents for her family. Elena takes her to a big store. \"Can I help you?\" asks a clerk. \"Yes, I'm looking for a present for my grandson. He's eight.\" The clerk shows her a New York Yankees cap. \"Do you have this in a smaller size?\" \"Sure, here's a kids' size.\" For Laura, Carmen finds beautiful boots, but they are too expensive. \"Is this scarf on sale?\" \"Yes, thirty percent off.\" \"Perfect. Could you gift-wrap it?\" For Mike, a coffee mug that says I ♥ NY. At the register, the total is higher than she thought. \"Oh! The tax.\" \"Cash or card?\" \"Card, please. I don't have enough cash.\" The clerk gives her the bag and the receipt. \"Keep the receipt. You can return it within thirty days.\" \"Thank you! But I'm sure they're going to love everything.\"",

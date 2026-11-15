@@ -60,6 +60,18 @@
     { "question": { "en": "A guest arrives. What do you say?", "es": "Llega un invitado. ¿Qué dices?" }, "options": ["Come in, please. Make yourself at home.", "Go home, please.", "There is a door.", "Where is the bathroom?"], "correct": 0, "explanation": { "en": "\"Come in\" and \"Make yourself at home\" are warm ways to receive guests.", "es": "«Come in» y «Make yourself at home» son formas cálidas de recibir invitados." } },
     { "question": { "en": "Choose the correct negative.", "es": "Elige la negación correcta." }, "options": ["There aren't any chairs.", "There isn't any chairs.", "There no are chairs.", "There not chairs."], "correct": 0, "explanation": { "en": "Chairs are plural → there aren't.", "es": "Chairs es plural → there aren't." } }
   ],
+  "sentences": [
+    { "sentence": "Is there a park near your apartment?", "kind": "question", "bold": ["Is there", "your", "apartment"], "es": "¿Hay un parque cerca de tu departamento?" },
+    { "sentence": "How many bedrooms are there in the house?", "kind": "question", "bold": ["How many", "bedrooms", "are there", "house"], "es": "¿Cuántas recámaras hay en la casa?" },
+    { "sentence": "Are there stairs to the second floor?", "kind": "question", "bold": ["Are there", "stairs", "floor"], "es": "¿Hay escaleras al segundo piso?" },
+    { "sentence": "Is there a window in the bathroom?", "kind": "question", "bold": ["Is there", "a", "window", "bathroom"], "es": "¿Hay una ventana en el baño?" },
+    { "sentence": "Where are the keys to the garage?", "kind": "question", "bold": ["keys", "garage"], "es": "¿Dónde están las llaves del garaje?" },
+    { "sentence": "There is a big kitchen and a small dining room.", "kind": "statement", "bold": ["There is", "a", "big", "kitchen", "a", "small", "dining room"], "es": "Hay una cocina grande y un comedor pequeño." },
+    { "sentence": "There are two bedrooms upstairs and one bathroom.", "kind": "statement", "bold": ["There are", "bedrooms", "bathroom"], "es": "Hay dos recámaras arriba y un baño." },
+    { "sentence": "There isn't a garden, but there is a big window.", "kind": "statement", "bold": ["There isn't", "a", "garden", "there is", "a", "big", "window"], "es": "No hay jardín, pero hay una ventana grande." },
+    { "sentence": "My apartment is small, but it's my home.", "kind": "statement", "bold": ["apartment", "small", "home"], "es": "Mi departamento es pequeño, pero es mi hogar." },
+    { "sentence": "There aren't any chairs in the living room.", "kind": "statement", "bold": ["There aren't", "living room"], "es": "No hay sillas en la sala." }
+  ],
   "story": {
     "title": "A Small Apartment",
     "text": "Carmen lives with Laura's family now, but she wants her own place. Today she visits an apartment with Linda. The apartment is on the second floor. \"Come in, please,\" says the manager. \"There is a living room with a big window. There are two bedrooms and one bathroom.\" Carmen looks around. The kitchen is small, but it is clean and bright. \"Is there a garden?\" asks Carmen. \"No, there isn't. But there is a small balcony.\" Carmen goes to the balcony. There are flowers and a little table. \"I can have my coffee here every morning,\" she says. Linda smiles. \"And my house is only five minutes away.\" Carmen holds the key. It is a small apartment, but maybe it can be her new home.",

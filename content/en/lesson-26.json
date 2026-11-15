@@ -60,6 +60,18 @@
     { "question": { "en": "\"Last night\" means…", "es": "«Last night» significa…" }, "options": ["anoche", "esta noche", "mañana en la noche", "la última noche del año"], "correct": 0, "explanation": { "en": "Last night = anoche.", "es": "Last night = anoche." } },
     { "question": { "en": "The music is very strong for your ears. It's…", "es": "La música está muy fuerte para tus oídos. Está…" }, "options": ["too loud", "too quiet", "too slow", "too cheap"], "correct": 0, "explanation": { "en": "Loud = fuerte (volumen).", "es": "Loud = fuerte (volumen)." } }
   ],
+  "sentences": [
+    { "sentence": "What kind of music did you listen to when you were young?", "kind": "question", "bold": ["What kind of music"], "es": "¿Qué tipo de música escuchabas cuando eras joven?" },
+    { "sentence": "Does Leo play the piano or the drums?", "kind": "question", "bold": ["play the piano", "the drums"], "es": "¿Leo toca el piano o la batería?" },
+    { "sentence": "Who sang that beautiful song at the party?", "kind": "question", "bold": ["sang", "song"], "es": "¿Quién cantó esa canción tan bonita en la fiesta?" },
+    { "sentence": "Where did you buy your old guitar, in Mexico?", "kind": "question", "bold": ["buy", "guitar"], "es": "¿Dónde compraste tu guitarra vieja, en México?" },
+    { "sentence": "Was the concert too loud for you?", "kind": "question", "bold": ["concert", "loud"], "es": "¿El concierto estuvo demasiado fuerte para ti?" },
+    { "sentence": "We went to a mariachi concert last night with Linda.", "kind": "statement", "bold": ["went", "concert", "last night"], "es": "Fuimos a un concierto de mariachi anoche con Linda." },
+    { "sentence": "I played the guitar many years ago, but now I only sing.", "kind": "statement", "bold": ["played the guitar", "ago", "sing"], "es": "Toqué la guitarra hace muchos años, pero ahora solo canto." },
+    { "sentence": "Everybody sang and danced until midnight.", "kind": "statement", "bold": ["sang", "danced"], "es": "Todos cantaron y bailaron hasta la medianoche." },
+    { "sentence": "I heard this song on the radio last week.", "kind": "statement", "bold": ["heard", "song", "last week"], "es": "Escuché esta canción en la radio la semana pasada." },
+    { "sentence": "Mike bought a violin for Leo, and he had his first class.", "kind": "statement", "bold": ["bought", "violin", "had"], "es": "Mike le compró un violín a Leo, y tuvo su primera clase." }
+  ],
   "story": {
     "title": "Mariachi in the Park",
     "text": "Last Sunday there was a free mariachi concert in the park. Carmen went with Linda and Leo. When they arrived, the band was already on stage: guitars, violins and two trumpets. The music was loud and happy. Carmen sang every song. Linda didn't know the words, but she clapped and smiled. Then the band played \"Cielito Lindo\", and everybody sang together — Mexicans, Americans, children and grandparents. Leo looked at his grandmother. \"Grandma, you know all the songs!\" \"Of course. Many years ago, I played the guitar,\" said Carmen. \"Really? Can you teach me?\" On the way home, Linda said, \"I had a wonderful time. I want to learn one song in Spanish.\" Carmen laughed. \"Ay, ay, ay, ay… that's the first lesson!\"",

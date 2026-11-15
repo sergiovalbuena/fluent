@@ -60,6 +60,18 @@
     { "question": { "en": "Where do you look for a map of the mall?", "es": "¿Dónde buscas un mapa del centro comercial?" }, "options": ["at the directory", "at the food court", "at the escalator", "at the parking lot"], "correct": 0, "explanation": { "en": "The directory shows where stores are.", "es": "El directorio muestra dónde están las tiendas." } },
     { "question": { "en": "How do you ask where something is in a store?", "es": "¿Cómo preguntas dónde está algo en una tienda?" }, "options": ["Where can I find the kitchenware?", "Where I can find the kitchenware?", "Where find kitchenware?", "Where is kitchenware find?"], "correct": 0, "explanation": { "en": "Where can I find…?", "es": "Where can I find…?" } }
   ],
+  "sentences": [
+    { "sentence": "Where can I find the jewelry department?", "kind": "question", "bold": ["Where can I find", "jewelry", "department"], "es": "¿Dónde puedo encontrar el departamento de joyería?" },
+    { "sentence": "Is the food court on the second floor or the first?", "kind": "question", "bold": ["food court", "on the second floor"], "es": "¿El área de comida está en el segundo piso o en el primero?" },
+    { "sentence": "Where are the restrooms, near the entrance?", "kind": "question", "bold": ["restrooms", "entrance"], "es": "¿Dónde están los baños, cerca de la entrada?" },
+    { "sentence": "Which exit is closest to the parking lot for the blue cars?", "kind": "question", "bold": ["exit", "parking lot"], "es": "¿Qué salida está más cerca del estacionamiento de los carros azules?" },
+    { "sentence": "Is this bag the same as yours, or is it different?", "kind": "question", "bold": ["the same as", "different"], "es": "¿Esta bolsa es igual a la tuya, o es diferente?" },
+    { "sentence": "This department store is as cheap as the market.", "kind": "statement", "bold": ["department store", "as cheap as"], "es": "Esta tienda departamental es tan barata como el mercado." },
+    { "sentence": "The mall isn't as crowded as it is on weekends.", "kind": "statement", "bold": ["mall", "isn't as crowded as"], "es": "El centro comercial no está tan lleno como los fines de semana." },
+    { "sentence": "Women's clothing is on the second floor; take the escalator.", "kind": "statement", "bold": ["on the second floor", "escalator"], "es": "La ropa de mujer está en el segundo piso; toma la escalera eléctrica." },
+    { "sentence": "This sweater is different from the picture online.", "kind": "statement", "bold": ["different from"], "es": "Este suéter es diferente a la foto de internet." },
+    { "sentence": "Let's look at the directory to find the kitchenware store.", "kind": "statement", "bold": ["directory", "kitchenware"], "es": "Veamos el directorio para encontrar la tienda de artículos de cocina." }
+  ],
   "story": {
     "title": "Mall Walking",
     "text": "Linda has a new idea: mall walking. Every Tuesday morning, before the stores open, a group of seniors walks inside the mall. \"It's not as hot as walking outside,\" says Linda, \"and there are clean restrooms!\" Carmen likes it. They walk two miles, up the escalators and down again. After the walk, the stores open. Carmen needs a frying pan. \"Where can I find the kitchenware?\" she asks a woman at the department store. \"On the second floor, next to the cosmetics.\" The pan is not as expensive as Carmen thought. At the food court, Linda points at Carmen's bag. \"Your bag is the same as mine!\" They laugh. \"Same bag, different countries,\" says Carmen. \"But the same Tuesday walks.\" A man from the group joins them. \"Ladies, you walk faster than everybody. Same time next week?\"",

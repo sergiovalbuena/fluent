@@ -62,6 +62,18 @@
     { "question": { "en": "Which one is a vegetable?", "es": "¿Cuál es una verdura?" }, "options": ["carrot", "grapes", "watermelon", "mango"], "correct": 0, "explanation": { "en": "A carrot is a vegetable. The others are fruits.", "es": "La zanahoria (carrot) es verdura. Las demás son frutas." } },
     { "question": { "en": "Short answer: \"Do you like avocados?\" (yes)", "es": "Respuesta corta: «Do you like avocados?» (sí)" }, "options": ["Yes, I do.", "Yes, I like.", "Yes, I am.", "Yes, I can."], "correct": 0, "explanation": { "en": "Short answer with \"do\": Yes, I do.", "es": "Respuesta corta con «do»: Yes, I do." } }
   ],
+  "sentences": [
+    { "sentence": "Do you like mangoes more than watermelon?", "kind": "question", "bold": ["Do you like", "mangoes", "watermelon"], "es": "¿Te gustan más los mangos que la sandía?" },
+    { "sentence": "How much is a bag of potatoes today?", "kind": "question", "bold": ["How much", "a bag of", "potatoes"], "es": "¿Cuánto cuesta una bolsa de papas hoy?" },
+    { "sentence": "Are the avocados ripe, or do I need to wait?", "kind": "question", "bold": ["avocados", "ripe"], "es": "¿Los aguacates están maduros, o tengo que esperar?" },
+    { "sentence": "Does Mike like onions in his salad?", "kind": "question", "bold": ["Does", "like", "onions"], "es": "¿A Mike le gusta la cebolla en su ensalada?" },
+    { "sentence": "Do you like cooking with fresh vegetables?", "kind": "question", "bold": ["Do you like cooking", "fresh", "vegetables"], "es": "¿Te gusta cocinar con verduras frescas?" },
+    { "sentence": "I love strawberries, but Leo hates broccoli.", "kind": "statement", "bold": ["I love", "strawberries", "hates", "broccoli"], "es": "Me encantan las fresas, pero Leo odia el brócoli." },
+    { "sentence": "I need a pound of tomatoes and a bunch of bananas.", "kind": "statement", "bold": ["a pound of", "tomatoes", "a bunch of", "bananas"], "es": "Necesito una libra de jitomates y un racimo de plátanos." },
+    { "sentence": "Mike doesn't like lettuce, but he loves corn.", "kind": "statement", "bold": ["doesn't like", "lettuce", "loves", "corn"], "es": "A Mike no le gusta la lechuga, pero le encanta el elote." },
+    { "sentence": "I like cooking soup with carrots and potatoes.", "kind": "statement", "bold": ["I like", "cooking", "carrots", "potatoes"], "es": "Me gusta cocinar sopa con zanahorias y papas." },
+    { "sentence": "These grapes are very fresh and sweet.", "kind": "statement", "bold": ["grapes", "fresh"], "es": "Estas uvas están muy frescas y dulces." }
+  ],
   "story": {
     "title": "The Farmers' Market",
     "text": "Every Sunday there is a farmers' market near Carmen's apartment. Today she goes with Linda. There are many colors: red tomatoes, green limes, orange carrots and yellow bananas. \"I love farmers' markets,\" says Linda. \"Everything is so fresh.\" Carmen stops at a table with mangoes. \"How much are the mangoes?\" \"Two for three dollars,\" says the farmer. \"Are they ripe?\" \"Yes, they're perfect today.\" Carmen buys four mangoes, a bunch of cilantro and a pound of tomatoes. Linda buys lettuce and strawberries. \"Do you like avocados, Linda?\" \"I love them! But I don't like onions.\" \"No onions? Then my guacamole is not for you!\" Linda laughs. \"Okay, okay. For your guacamole, I can try.\"",

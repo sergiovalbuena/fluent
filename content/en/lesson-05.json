@@ -63,6 +63,18 @@
     { "question": { "en": "Complete: \"Linda ___ very kind.\"", "es": "Completa: «Linda ___ very kind.»" }, "options": ["is", "are", "am", "be"], "correct": 0, "explanation": { "en": "Linda = she → is.", "es": "Linda = she → is." } },
     { "question": { "en": "How do you ask someone to spell their name?", "es": "¿Cómo le pides a alguien que deletree su nombre?" }, "options": ["How do you spell your name?", "How do you write you name?", "How you spell name?", "What spell is your name?"], "correct": 0, "explanation": { "en": "\"How do you spell…?\" is the standard question.", "es": "«How do you spell…?» es la pregunta estándar." } }
   ],
+  "sentences": [
+    { "sentence": "What's your favorite color, blue or green?", "kind": "question", "bold": ["What's your favorite color", "blue", "green"], "es": "¿Cuál es tu color favorito, azul o verde?" },
+    { "sentence": "How do you spell your last name, please?", "kind": "question", "bold": ["How do you spell", "last name"], "es": "¿Cómo se escribe tu apellido, por favor?" },
+    { "sentence": "What is your new neighbor like?", "kind": "question", "bold": ["What is", "like"], "es": "¿Cómo es tu nuevo vecino?" },
+    { "sentence": "Is your teacher patient with the class?", "kind": "question", "bold": ["Is", "patient"], "es": "¿Tu maestra es paciente con la clase?" },
+    { "sentence": "Is Leo shy or funny at school?", "kind": "question", "bold": ["shy", "funny"], "es": "¿Leo es tímido o gracioso en la escuela?" },
+    { "sentence": "Linda is friendly and very kind with everybody.", "kind": "statement", "bold": ["is", "friendly", "kind"], "es": "Linda es amable y muy buena con todos." },
+    { "sentence": "I have a red car and two white cars.", "kind": "statement", "bold": ["a red car", "two white cars"], "es": "Tengo un carro rojo y dos carros blancos." },
+    { "sentence": "My first name is Carmen and my last name is Ruiz.", "kind": "statement", "bold": ["first name", "last name"], "es": "Mi nombre es Carmen y mi apellido es Ruiz." },
+    { "sentence": "Leo is a smart boy, but he's a little quiet.", "kind": "statement", "bold": ["is", "smart", "quiet"], "es": "Leo es un niño inteligente, pero es un poco callado." },
+    { "sentence": "I like your purple dress and your black shoes.", "kind": "statement", "bold": ["purple", "black"], "es": "Me gusta tu vestido morado y tus zapatos negros." }
+  ],
   "story": {
     "title": "The Name Tag",
     "text": "Today is Carmen's first day of English class. The classroom is small and bright, with yellow walls and blue chairs. The teacher is Mr. Park. He is tall, friendly and very patient. \"Welcome! Please write your first name on a name tag.\" Carmen takes a red marker and writes CARMEN. Next to her is a young woman with a green jacket. \"Hi, I'm Ana. I'm from Brazil.\" \"Nice to meet you, Ana. I'm Carmen, from Mexico.\" Mr. Park asks, \"Carmen, what's your last name?\" \"Ruiz.\" \"How do you spell it?\" \"R-U-I-Z.\" \"Thank you!\" Ana is funny and talks a lot. Carmen is a little shy, but she is happy. Her new class is full of kind people.",

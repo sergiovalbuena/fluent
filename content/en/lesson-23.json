@@ -60,6 +60,18 @@
     { "question": { "en": "There are many clouds. It's…", "es": "Hay muchas nubes. Está…" }, "options": ["cloudy", "sunny", "snowy", "dry"], "correct": 0, "explanation": { "en": "Clouds → cloudy.", "es": "Nubes (clouds) → cloudy." } },
     { "question": { "en": "\"Chilly\" means…", "es": "«Chilly» significa…" }, "options": ["a little cold", "very hot", "rainy", "windy"], "correct": 0, "explanation": { "en": "Chilly = un poco frío, fresco.", "es": "Chilly = un poco frío, fresco." } }
   ],
+  "sentences": [
+    { "sentence": "What's the weather like in Guadalajara in winter?", "kind": "question", "bold": ["What's the weather like", "winter"], "es": "¿Cómo es el clima en Guadalajara en invierno?" },
+    { "sentence": "Is it raining, or is it just cloudy?", "kind": "question", "bold": ["Is it raining", "is it", "cloudy"], "es": "¿Está lloviendo, o solo está nublado?" },
+    { "sentence": "What's the forecast for the weekend, sunny or rainy?", "kind": "question", "bold": ["forecast", "weekend", "sunny", "rainy"], "es": "¿Cuál es el pronóstico para el fin de semana, soleado o lluvioso?" },
+    { "sentence": "Do I need an umbrella today, or is it warm?", "kind": "question", "bold": ["umbrella", "is it", "warm"], "es": "¿Necesito un paraguas hoy, o hace calor?" },
+    { "sentence": "What's your favorite season, spring or fall?", "kind": "question", "bold": ["spring", "fall"], "es": "¿Cuál es tu estación favorita, la primavera o el otoño?" },
+    { "sentence": "It's very hot in summer, but it's chilly at night.", "kind": "statement", "bold": ["It's", "very", "hot", "in summer", "it's", "chilly"], "es": "Hace mucho calor en verano, pero hace fresco de noche." },
+    { "sentence": "It's too windy to walk on the beach today.", "kind": "statement", "bold": ["It's too", "windy"], "es": "Hace demasiado viento para caminar en la playa hoy." },
+    { "sentence": "It's snowing in the mountains, but here it's sunny.", "kind": "statement", "bold": ["It's snowing", "mountains", "it's", "sunny"], "es": "Está nevando en las montañas, pero aquí está soleado." },
+    { "sentence": "In winter it's foggy in the morning and cold at night.", "kind": "statement", "bold": ["In winter", "it's", "foggy", "cold"], "es": "En invierno hay neblina en la mañana y hace frío de noche." },
+    { "sentence": "Take your jacket; it's a little chilly this morning.", "kind": "statement", "bold": ["it's", "chilly"], "es": "Llévate tu chamarra; hace un poco de fresco esta mañana." }
+  ],
   "story": {
     "title": "Small Talk",
     "text": "In San Diego, everybody talks about the weather. In the morning, Carmen waits for the bus with an old man. \"It's a little chilly this morning,\" he says. \"Yes, and it's foggy,\" says Carmen. \"But the forecast says it's sunny this afternoon.\" At the bakery, Grace says, \"What a beautiful day!\" In the evening, Carmen calls her sister Rosa in Guadalajara. \"What's the weather like there?\" \"It's raining a lot. It's the rainy season. And in San Diego?\" \"Sunny and warm, like every day. Here every day is like spring.\" \"Lucky you!\" says Rosa. \"Do you miss the rain?\" Carmen thinks. \"I miss the smell of rain in Guadalajara. But I don't miss my wet shoes!\"",

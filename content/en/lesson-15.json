@@ -62,6 +62,18 @@
     { "question": { "en": "You can't eat more. What do you say?", "es": "Ya no puedes comer más. ¿Qué dices?" }, "options": ["No, thanks. I'm full.", "Yes, I'm hungry.", "I'm thirsty.", "Breakfast is ready."], "correct": 0, "explanation": { "en": "\"I'm full\" means you ate enough.", "es": "«I'm full» significa que ya comiste suficiente." } },
     { "question": { "en": "What is the evening meal called?", "es": "¿Cómo se llama la comida de la noche?" }, "options": ["dinner", "breakfast", "lunch", "snack"], "correct": 0, "explanation": { "en": "Breakfast (morning), lunch (midday), dinner (evening).", "es": "Breakfast (mañana), lunch (mediodía), dinner (noche)." } }
   ],
+  "sentences": [
+    { "sentence": "Do you have any eggs and cheese for breakfast?", "kind": "question", "bold": ["Do you have any", "eggs", "cheese", "breakfast"], "es": "¿Tienes huevos y queso para el desayuno?" },
+    { "sentence": "How much sugar do you want in your tea?", "kind": "question", "bold": ["How much", "sugar", "tea"], "es": "¿Cuánta azúcar quieres en tu té?" },
+    { "sentence": "How many eggs do we need for the cake?", "kind": "question", "bold": ["How many", "eggs"], "es": "¿Cuántos huevos necesitamos para el pastel?" },
+    { "sentence": "Would you like some soup before dinner?", "kind": "question", "bold": ["Would you like", "some", "soup", "dinner"], "es": "¿Quieres un poco de sopa antes de la cena?" },
+    { "sentence": "Are you thirsty? Is there any juice in the fridge?", "kind": "question", "bold": ["thirsty", "any", "juice"], "es": "¿Tienes sed? ¿Hay jugo en el refrigerador?" },
+    { "sentence": "I'd like rice and beans with meat, please.", "kind": "statement", "bold": ["I'd like", "rice", "beans", "meat"], "es": "Quisiera arroz y frijoles con carne, por favor." },
+    { "sentence": "We don't have any bread, so I need to go to the store.", "kind": "statement", "bold": ["We don't have any", "bread"], "es": "No tenemos pan, así que tengo que ir a la tienda." },
+    { "sentence": "I need some milk and some cheese for lunch.", "kind": "statement", "bold": ["I need some", "milk", "some", "cheese", "lunch"], "es": "Necesito un poco de leche y un poco de queso para el almuerzo." },
+    { "sentence": "I'm very hungry, and this soup is delicious!", "kind": "statement", "bold": ["hungry", "soup", "delicious"], "es": "Tengo mucha hambre, ¡y esta sopa está deliciosa!" },
+    { "sentence": "Leo drinks water with lunch and milk with dinner.", "kind": "statement", "bold": ["water", "lunch", "milk", "dinner"], "es": "Leo toma agua con el almuerzo y leche con la cena." }
+  ],
   "story": {
     "title": "Tamales for Everyone",
     "text": "Grace, the baker, calls Carmen. \"Can you make tamales for our bakery on Friday?\" Carmen is very excited. On Thursday she goes to the supermarket with Laura. \"We need some corn flour, some meat and some cheese,\" says Carmen. \"Do we need any beans?\" asks Laura. \"Yes, a big bag of beans. And we don't have any salt at home.\" In the evening, the kitchen smells wonderful. Leo comes in. \"I'm hungry! What's for dinner?\" \"Tamales, but only one for you. The rest are for the bakery!\" On Friday, Grace tries a tamale. \"This is delicious! Can you make one hundred for next week?\" Carmen laughs. \"One hundred? I need a lot of corn flour!\"",

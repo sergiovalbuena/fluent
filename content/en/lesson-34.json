@@ -60,6 +60,18 @@
     { "question": { "en": "Choose the correct sentence.", "es": "Elige la oración correcta." }, "options": ["I've never been here before.", "I've ever been here before.", "I never have be here.", "I haven't never been here."], "correct": 0, "explanation": { "en": "I've never + past participle.", "es": "I've never + participio." } },
     { "question": { "en": "\"How long are you staying?\" asks about…", "es": "«How long are you staying?» pregunta por…" }, "options": ["the length of your visit", "your address", "the reason for your trip", "your luggage"], "correct": 0, "explanation": { "en": "How long = cuánto tiempo.", "es": "How long = cuánto tiempo." } }
   ],
+  "sentences": [
+    { "sentence": "Have you ever been to the United States before?", "kind": "question", "bold": ["Have you ever been"], "es": "¿Ha estado alguna vez en Estados Unidos?" },
+    { "sentence": "What's the purpose of your visit, and where are you staying?", "kind": "question", "bold": ["purpose"], "es": "¿Cuál es el propósito de su visita, y dónde se va a quedar?" },
+    { "sentence": "Do you have anything to declare, like food or plants?", "kind": "question", "bold": ["Do you have anything to declare"], "es": "¿Tiene algo que declarar, como comida o plantas?" },
+    { "sentence": "Are you a citizen or a resident?", "kind": "question", "bold": ["citizen", "resident"], "es": "¿Es ciudadana o residente?" },
+    { "sentence": "Did the officer stamp your passport?", "kind": "question", "bold": ["officer", "stamp", "passport"], "es": "¿El oficial selló su pasaporte?" },
+    { "sentence": "I've never been to New York, but I have visited Texas.", "kind": "statement", "bold": ["I've never been", "I have visited"], "es": "Nunca he estado en Nueva York, pero he visitado Texas." },
+    { "sentence": "My daughter has lived here for ten years.", "kind": "statement", "bold": ["has lived"], "es": "Mi hija ha vivido aquí desde hace diez años." },
+    { "sentence": "I have seen the border many times, but never at night.", "kind": "statement", "bold": ["I have", "seen", "border"], "es": "He visto la frontera muchas veces, pero nunca de noche." },
+    { "sentence": "The line at customs was very long today.", "kind": "statement", "bold": ["line", "customs"], "es": "La fila en la aduana estaba muy larga hoy." },
+    { "sentence": "Please fill out this form and show your visa.", "kind": "statement", "bold": ["form", "visa"], "es": "Por favor llene este formulario y muestre su visa." }
+  ],
   "story": {
     "title": "The First Day",
     "text": "Now Carmen is in New York, at her cousin's apartment. Elena asks, \"Was it difficult to come to the United States the first time?\" Carmen remembers that day at the airport in Los Angeles, many months ago. The line at immigration was very long. When it was her turn, the officer looked at her passport. \"What's the purpose of your visit?\" \"I'm visiting my daughter.\" \"Have you ever been to the United States?\" \"No, I've never been here before.\" \"How long are you staying?\" \"Three months.\" Then, at customs: \"Do you have anything to declare?\" \"Yes… I have some dried chiles and chocolate for my grandson.\" The officer smiled. \"That's fine. Welcome to the United States.\" Carmen laughs now. \"My hands were cold, Elena! But I have learned so much since that day.\"",

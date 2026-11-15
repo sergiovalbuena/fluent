@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"Yesterday we ___ run to the gate.\"", "es": "Completa: «Yesterday we ___ run to the gate.»" }, "options": ["had to", "have to", "has to", "must"], "correct": 0, "explanation": { "en": "Past obligation: had to.", "es": "Obligación en pasado: had to." } },
     { "question": { "en": "A small bag you take on the plane is a…", "es": "Una bolsa pequeña que llevas en el avión es…" }, "options": ["carry-on", "boarding pass", "baggage claim", "gate"], "correct": 0, "explanation": { "en": "Carry-on = equipaje de mano.", "es": "Carry-on = equipaje de mano." } }
   ],
+  "sentences": [
+    { "sentence": "Do I have to check this bag, or is it a carry-on?", "kind": "question", "bold": ["Do I have to", "check", "bag", "carry-on"], "es": "¿Tengo que documentar esta maleta, o es de mano?" },
+    { "sentence": "Which gate is it, and is the flight on time?", "kind": "question", "bold": ["gate", "flight", "on time"], "es": "¿Qué puerta es, y el vuelo está a tiempo?" },
+    { "sentence": "Does Leo have to show his boarding pass too?", "kind": "question", "bold": ["Does", "have to", "boarding pass"], "es": "¿Leo también tiene que mostrar su pase de abordar?" },
+    { "sentence": "Where is baggage claim in this terminal?", "kind": "question", "bold": ["baggage claim", "terminal"], "es": "¿Dónde está el reclamo de equipaje en esta terminal?" },
+    { "sentence": "Why is the flight delayed again?", "kind": "question", "bold": ["flight", "delayed"], "es": "¿Por qué está retrasado el vuelo otra vez?" },
+    { "sentence": "You have to take off your shoes at security.", "kind": "statement", "bold": ["You have to", "take off", "security"], "es": "Tiene que quitarse los zapatos en seguridad." },
+    { "sentence": "You don't have to print your boarding pass; it's on your phone.", "kind": "statement", "bold": ["You don't have to", "boarding pass"], "es": "No tiene que imprimir su pase de abordar; está en su teléfono." },
+    { "sentence": "She has to put her liquids in a small bag.", "kind": "statement", "bold": ["She has to", "liquids"], "es": "Ella tiene que poner sus líquidos en una bolsa pequeña." },
+    { "sentence": "The screen says our flight is canceled!", "kind": "statement", "bold": ["screen", "flight", "canceled"], "es": "¡La pantalla dice que nuestro vuelo está cancelado!" },
+    { "sentence": "We had to run to the gate because boarding started early.", "kind": "statement", "bold": ["We had to", "gate", "boarding"], "es": "Tuvimos que correr a la puerta porque el abordaje empezó temprano." }
+  ],
   "story": {
     "title": "Running to Gate 12",
     "text": "On October fifth, Laura takes Carmen to the airport at six in the morning. At the check-in counter, the agent says, \"Can I see your ID, please?\" Carmen gives her passport. \"Do I have to check this bag?\" \"No, you don't have to. It's a carry-on. Your gate is number twelve.\" At security, there is a long line. \"You have to take off your shoes and your jacket,\" says the officer. \"And put your liquids in this bag.\" Carmen has a big bottle of hot sauce for Elena. \"Sorry, ma'am. You can't take this.\" Carmen is sad, but she smiles. Then she looks at the screen: \"Gate 12 — BOARDING.\" She has to run! She arrives just in time. \"Have a good flight!\" says the agent. Carmen sits by the window. \"No hot sauce,\" she thinks, \"but I'm on the plane!\"",

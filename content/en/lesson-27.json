@@ -60,6 +60,18 @@
     { "question": { "en": "Plants you don't want in your garden are…", "es": "Las plantas que no quieres en tu jardín son…" }, "options": ["weeds", "herbs", "roses", "seeds"], "correct": 0, "explanation": { "en": "Weeds = malas hierbas.", "es": "Weeds = malas hierbas." } },
     { "question": { "en": "Complete: \"She ___ go to the garden yesterday.\"", "es": "Completa: «She ___ go to the garden yesterday.»" }, "options": ["didn't", "doesn't", "don't", "wasn't"], "correct": 0, "explanation": { "en": "Past negative: didn't + go.", "es": "Negativo en pasado: didn't + go." } }
   ],
+  "sentences": [
+    { "sentence": "Did you water the plants yesterday, or did it rain?", "kind": "question", "bold": ["Did you water", "plants", "did", "rain"], "es": "¿Regaste las plantas ayer, o llovió?" },
+    { "sentence": "What did you do in the garden on the weekend?", "kind": "question", "bold": ["What did you do", "garden"], "es": "¿Qué hiciste en el jardín el fin de semana?" },
+    { "sentence": "Did Mike plant the roses or the sunflowers?", "kind": "question", "bold": ["Did", "plant", "roses", "sunflowers"], "es": "¿Mike plantó las rosas o los girasoles?" },
+    { "sentence": "Did you buy seeds and soil at the store?", "kind": "question", "bold": ["Did you buy", "seeds", "soil"], "es": "¿Compraste semillas y tierra en la tienda?" },
+    { "sentence": "Does this plant need to get more sun?", "kind": "question", "bold": ["plant", "need to"], "es": "¿Esta planta necesita recibir más sol?" },
+    { "sentence": "I didn't water the flowers because I didn't have time.", "kind": "statement", "bold": ["I didn't water", "flowers", "didn't have"], "es": "No regué las flores porque no tuve tiempo." },
+    { "sentence": "The roses are blooming, but the grass needs water.", "kind": "statement", "bold": ["roses", "blooming", "grass", "needs"], "es": "Las rosas están floreciendo, pero el pasto necesita agua." },
+    { "sentence": "I grow my own herbs in a small pot in the kitchen.", "kind": "statement", "bold": ["grow", "herbs", "pot"], "es": "Cultivo mis propias hierbas en una maceta pequeña en la cocina." },
+    { "sentence": "The gardener didn't come, so I pulled the weeds myself.", "kind": "statement", "bold": ["gardener", "didn't", "weeds"], "es": "El jardinero no vino, así que yo misma arranqué la maleza." },
+    { "sentence": "The leaves of this tree need to be on the ground, not on the car.", "kind": "statement", "bold": ["leaves", "tree", "need to"], "es": "Las hojas de este árbol deben estar en el suelo, no en el carro." }
+  ],
   "story": {
     "title": "The Community Garden",
     "text": "On Monday, Mr. Park asked the class, \"What did you do on the weekend?\" Kenji said, \"I didn't do much. I watched TV.\" Then it was Carmen's turn. \"On Saturday I went to the community garden with Linda. We planted tomatoes, chiles and herbs.\" \"Did you grow chiles in Mexico too?\" asked Mr. Park. \"Yes, I did. My mother had a big garden with roses and sunflowers.\" \"And did you water the plants on Sunday?\" asked Ana. Carmen laughed. \"No, I didn't. It rained!\" After class, Kenji asked, \"Can I visit the garden? In Japan my grandfather grew vegetables.\" \"Of course,\" said Carmen. \"Come on Saturday. But bring a hose — and patience. The weeds grow faster than the tomatoes!\"",

@@ -60,6 +60,18 @@
     { "question": { "en": "How do you ask for a medical appointment politely?", "es": "¿Cómo pides una cita médica amablemente?" }, "options": ["I'd like to make an appointment, please.", "Give me appointment.", "I want doctor now.", "Appointment, yes?"], "correct": 0, "explanation": { "en": "\"I'd like to make an appointment\" is polite and clear.", "es": "«I'd like to make an appointment» es amable y claro." } },
     { "question": { "en": "\"Drop by anytime\" means…", "es": "«Drop by anytime» significa…" }, "options": ["Visit me whenever you want.", "Don't visit me.", "Call before you come.", "Leave something at my door."], "correct": 0, "explanation": { "en": "It's a friendly invitation to visit.", "es": "Es una invitación amistosa a visitar." } }
   ],
+  "sentences": [
+    { "sentence": "Are you going to come to Leo's birthday party?", "kind": "question", "bold": ["Are you going to"], "es": "¿Vas a venir a la fiesta de cumpleaños de Leo?" },
+    { "sentence": "Are you free on Thursday, or are you busy?", "kind": "question", "bold": ["Are you free", "are you", "busy"], "es": "¿Estás libre el jueves, o estás ocupada?" },
+    { "sentence": "How about ten thirty for your appointment?", "kind": "question", "bold": ["How about", "appointment"], "es": "¿Qué tal a las diez y media para su cita?" },
+    { "sentence": "What are you going to do tomorrow morning?", "kind": "question", "bold": ["What are you going to do", "tomorrow morning"], "es": "¿Qué vas a hacer mañana en la mañana?" },
+    { "sentence": "Can I drop by your house this afternoon?", "kind": "question", "bold": ["drop by"], "es": "¿Puedo pasar a tu casa esta tarde?" },
+    { "sentence": "I'm going to visit Linda next week with Leo.", "kind": "statement", "bold": ["I'm going to visit", "next week"], "es": "Voy a visitar a Linda la próxima semana con Leo." },
+    { "sentence": "I need to reschedule my appointment with the doctor.", "kind": "statement", "bold": ["I need to", "reschedule", "appointment"], "es": "Necesito reprogramar mi cita con el doctor." },
+    { "sentence": "We're not going to stay long; we have other plans.", "kind": "statement", "bold": ["We're not going to", "plans"], "es": "No nos vamos a quedar mucho; tenemos otros planes." },
+    { "sentence": "The receptionist called to confirm my appointment.", "kind": "statement", "bold": ["receptionist", "confirm", "appointment"], "es": "La recepcionista llamó para confirmar mi cita." },
+    { "sentence": "I'm going to cancel the visit because I'm busy.", "kind": "statement", "bold": ["I'm going to", "cancel", "I'm", "busy"], "es": "Voy a cancelar la visita porque estoy ocupada." }
+  ],
   "story": {
     "title": "A Busy Week",
     "text": "Carmen's week is going to be very busy. On Monday she's going to have English class. On Tuesday she has an appointment with the dentist at nine. On Wednesday she's going to make tamales for the bakery. Then Linda calls. \"Carmen, my brother is going to visit from Texas. Are you free on Thursday? I'm going to have a small dinner.\" Carmen looks at her calendar. \"Thursday… yes, I'm free. What time?\" \"How about six thirty?\" \"That works for me!\" But on Monday, the dentist's office calls. \"Mrs. Ruiz, the doctor is not going to be here on Tuesday. Can you reschedule?\" \"Of course. Is Friday available?\" \"Yes, Friday at ten.\" Carmen writes everything down. \"Busy week,\" she says, \"but a happy one.\"",

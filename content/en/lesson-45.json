@@ -60,6 +60,18 @@
     { "question": { "en": "A woman whose husband has died is a…", "es": "Una mujer cuyo esposo murió es…" }, "options": ["widow", "bride", "fiancée", "divorced"], "correct": 0, "explanation": { "en": "Widow = viuda.", "es": "Widow = viuda." } },
     { "question": { "en": "At a wedding party, someone raises a glass and says…", "es": "En una boda, alguien levanta su copa y dice…" }, "options": ["To the happy couple!", "Get well soon!", "Have a good flight!", "No spoilers!"], "correct": 0, "explanation": { "en": "A toast: To the happy couple!", "es": "Un brindis: To the happy couple!" } }
   ],
+  "sentences": [
+    { "sentence": "When did your parents get married?", "kind": "question", "bold": ["get married"], "es": "¿Cuándo se casaron tus papás?" },
+    { "sentence": "Will you marry me?", "kind": "question", "bold": ["Will", "marry"], "es": "¿Te casarías conmigo?" },
+    { "sentence": "Who will make the toast at the wedding?", "kind": "question", "bold": ["will", "toast", "wedding"], "es": "¿Quién va a hacer el brindis en la boda?" },
+    { "sentence": "Are they engaged, or are they already married?", "kind": "question", "bold": ["engaged", "married"], "es": "¿Están comprometidos, o ya están casados?" },
+    { "sentence": "Do you think they will be happy together?", "kind": "question", "bold": ["think", "will"], "es": "¿Crees que van a ser felices juntos?" },
+    { "sentence": "We got married in 1994, and I will always love him.", "kind": "statement", "bold": ["got married", "will", "love"], "es": "Nos casamos en 1994, y siempre lo voy a querer." },
+    { "sentence": "I promise I won't forget our anniversary this year.", "kind": "statement", "bold": ["promise", "won't", "anniversary"], "es": "Te prometo que no voy a olvidar nuestro aniversario este año." },
+    { "sentence": "The bride wore a white dress, and the groom was very nervous.", "kind": "statement", "bold": ["bride", "groom"], "es": "La novia llevaba un vestido blanco, y el novio estaba muy nervioso." },
+    { "sentence": "I think it will be a beautiful wedding.", "kind": "statement", "bold": ["think", "will", "wedding"], "es": "Creo que va a ser una boda hermosa." },
+    { "sentence": "They are a lovely couple, and her ring is beautiful.", "kind": "statement", "bold": ["couple", "ring"], "es": "Son una pareja encantadora, y su anillo es precioso." }
+  ],
   "story": {
     "title": "Thirty Years Together",
     "text": "Grace and Tom are celebrating their thirtieth wedding anniversary. They invite Carmen to the party at the bakery. There are flowers, music and, of course, a big cake. \"When did you get married?\" Carmen asks Grace. \"In 1994. Tom was so nervous he forgot the ring!\" Tom laughs. \"But I didn't forget the most important thing: my promise.\" He takes Grace's hand in front of everybody. \"Grace, thirty years ago I said I will always love you. Today I promise again: I will always love you, and I won't forget your birthday… this year.\" Everybody laughs and claps. Linda raises her glass. \"Let's make a toast! To the happy couple!\" Carmen thinks of her husband, Jorge. They were married for thirty-two years. She smiles. \"I think he was here tonight too,\" she says quietly to Linda.",

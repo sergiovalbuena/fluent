@@ -59,6 +59,18 @@
     { "question": { "en": "Short answer: \"Does Linda work at a school?\" (yes)", "es": "Respuesta corta: «Does Linda work at a school?» (sí)" }, "options": ["Yes, she does.", "Yes, she works.", "Yes, she do.", "Yes, does she."], "correct": 0, "explanation": { "en": "Use the helper verb: Yes, she does.", "es": "Se usa el auxiliar: Yes, she does." } },
     { "question": { "en": "Complete: \"She ___ to work by bus.\"", "es": "Completa: «She ___ to work by bus.»" }, "options": ["goes", "gos", "go", "going"], "correct": 0, "explanation": { "en": "\"Go\" ends in -o, so it takes -es: goes.", "es": "«Go» termina en -o, así que lleva -es: goes." } }
   ],
+  "sentences": [
+    { "sentence": "Does Leo play soccer after school?", "kind": "question", "bold": ["Does", "play", "school"], "es": "¿Leo juega fútbol después de la escuela?" },
+    { "sentence": "Where does Linda work in the city?", "kind": "question", "bold": ["Where does", "work"], "es": "¿Dónde trabaja Linda en la ciudad?" },
+    { "sentence": "Does your husband cook dinner on Sundays?", "kind": "question", "bold": ["Does", "cook"], "es": "¿Tu esposo cocina la cena los domingos?" },
+    { "sentence": "What time does Mike go to work?", "kind": "question", "bold": ["does", "go"], "es": "¿A qué hora se va Mike al trabajo?" },
+    { "sentence": "Does she read in English or in Spanish?", "kind": "question", "bold": ["Does", "read"], "es": "¿Ella lee en inglés o en español?" },
+    { "sentence": "Laura works late, so Mike cooks dinner.", "kind": "statement", "bold": ["works", "late", "cooks"], "es": "Laura trabaja hasta tarde, así que Mike cocina la cena." },
+    { "sentence": "Leo watches TV after school and plays with his dog.", "kind": "statement", "bold": ["watches", "school", "plays"], "es": "Leo ve la tele después de la escuela y juega con su perro." },
+    { "sentence": "Mike doesn't drink coffee; he always drinks tea.", "kind": "statement", "bold": ["doesn't", "drink", "always", "drinks"], "es": "Mike no toma café; siempre toma té." },
+    { "sentence": "Carmen walks in the park early every morning.", "kind": "statement", "bold": ["walks", "early"], "es": "Carmen camina en el parque temprano todas las mañanas." },
+    { "sentence": "My neighbor has a cat, and it never sleeps at night.", "kind": "statement", "bold": ["has", "never", "sleeps"], "es": "Mi vecina tiene un gato, y nunca duerme de noche." }
+  ],
   "story": {
     "title": "A Day in the Family",
     "text": "In Carmen's new class, the homework is easy: write about your family. Carmen sits at the kitchen table and writes. \"My daughter Laura is a nurse. She works at a hospital. She goes to work very early, at six. Her husband, Mike, is a mechanic. He fixes cars all day. He doesn't drink coffee, he always drinks tea. My grandson Leo goes to school near the house. He plays soccer and he watches cartoons. He never eats vegetables! And me? I live in San Diego now. I cook, I walk on the beach, and I study English.\" Leo reads it. \"Grandma, it's perfect! But I eat vegetables… sometimes.\" Carmen laughs. \"Sometimes is not every day, my love.\"",

@@ -61,6 +61,18 @@
     { "question": { "en": "You look at yourself in a…", "es": "Te miras en un…" }, "options": ["mirror", "drawer", "rug", "sink"], "correct": 0, "explanation": { "en": "A mirror shows your reflection.", "es": "Un espejo (mirror) muestra tu reflejo." } },
     { "question": { "en": "The sofa is very heavy. What do you say?", "es": "El sofá pesa mucho. ¿Qué dices?" }, "options": ["It's too heavy. Can you help me?", "It's too easy.", "It's next to.", "It's under heavy."], "correct": 0, "explanation": { "en": "\"Too heavy\" = more than you can carry alone.", "es": "«Too heavy» = más de lo que puedes cargar solo." } }
   ],
+  "sentences": [
+    { "sentence": "Where are my glasses? Are they on the shelf?", "kind": "question", "bold": ["Where are", "they", "on", "shelf"], "es": "¿Dónde están mis lentes? ¿Están en el estante?" },
+    { "sentence": "Is the cat under the bed or behind the sofa?", "kind": "question", "bold": ["under", "bed", "behind", "sofa"], "es": "¿El gato está debajo de la cama o detrás del sofá?" },
+    { "sentence": "Where is the lamp, next to the armchair?", "kind": "question", "bold": ["Where is", "lamp", "next to", "armchair"], "es": "¿Dónde está la lámpara, junto al sillón?" },
+    { "sentence": "Do you need a new fridge or a new stove?", "kind": "question", "bold": ["need", "fridge", "stove"], "es": "¿Necesitas un refrigerador nuevo o una estufa nueva?" },
+    { "sentence": "Can you put the mirror between the closet and the door?", "kind": "question", "bold": ["mirror", "between", "closet"], "es": "¿Puedes poner el espejo entre el clóset y la puerta?" },
+    { "sentence": "The keys are in the drawer next to the sink.", "kind": "statement", "bold": ["The keys are", "in", "drawer", "next to", "sink"], "es": "Las llaves están en el cajón junto al fregadero." },
+    { "sentence": "It's behind the sofa, under the rug.", "kind": "statement", "bold": ["It's", "behind", "sofa", "under", "rug"], "es": "Está detrás del sofá, debajo del tapete." },
+    { "sentence": "I need a table and two chairs for the kitchen.", "kind": "statement", "bold": ["I need", "table", "chairs"], "es": "Necesito una mesa y dos sillas para la cocina." },
+    { "sentence": "I don't need new furniture; my sofa is fine.", "kind": "statement", "bold": ["I don't need", "furniture", "sofa"], "es": "No necesito muebles nuevos; mi sofá está bien." },
+    { "sentence": "The TV is in front of the sofa, and the books are on the shelf.", "kind": "statement", "bold": ["in front of", "sofa", "on", "shelf"], "es": "La tele está enfrente del sofá, y los libros están en el estante." }
+  ],
   "story": {
     "title": "Moving Day",
     "text": "Today is moving day! Carmen has her new apartment. Mike and Leo help her with the furniture. \"Where do you want the sofa, Mom?\" asks Mike. \"In front of the window, please.\" Mike and Leo carry the sofa. \"It's too heavy!\" says Leo. Next to the sofa there is a small table and a lamp. In the bedroom, the bed is between two windows, and there is a big mirror behind the door. \"Grandma, where are your glasses?\" asks Leo. Carmen looks on the table, in her bag, under the chair… Leo laughs. \"They're on your head!\" Everybody laughs. At the end of the day, the apartment is a little crowded, but it looks great. Carmen makes coffee in her new kitchen. Her first coffee at home.",

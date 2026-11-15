@@ -60,6 +60,18 @@
     { "question": { "en": "Your friend has a new haircut. You say:", "es": "Tu amiga tiene un corte nuevo. Le dices:" }, "options": ["It looks great on you!", "It looks great with you!", "It sees great on you!", "It's looking you great!"], "correct": 0, "explanation": { "en": "\"It looks great on you\" is the natural compliment.", "es": "«It looks great on you» es el cumplido natural." } },
     { "question": { "en": "In the US, the usual tip at a hair salon is…", "es": "En Estados Unidos, la propina habitual en una estética es…" }, "options": ["15–20%", "nothing", "50%", "one dollar"], "correct": 0, "explanation": { "en": "15–20% is common.", "es": "Lo común es 15–20%." } }
   ],
+  "sentences": [
+    { "sentence": "How would you like your hair today, Carmen?", "kind": "question", "bold": ["How would you like", "hair"], "es": "¿Cómo quiere su cabello hoy, Carmen?" },
+    { "sentence": "Could you cut a little more on the sides and my bangs?", "kind": "question", "bold": ["Could you", "bangs"], "es": "¿Podría cortar un poco más de los lados y mi fleco?" },
+    { "sentence": "Can you dye my gray hair and add some highlights?", "kind": "question", "bold": ["dye", "gray hair", "highlights"], "es": "¿Me puede pintar las canas y hacerme unas luces?" },
+    { "sentence": "Do you think layers look good with curly hair?", "kind": "question", "bold": ["layers", "curly"], "es": "¿Crees que las capas se ven bien con el pelo rizado?" },
+    { "sentence": "It looks great! Where did you get your hair cut?", "kind": "question", "bold": ["get your hair cut"], "es": "¡Se ve genial! ¿Dónde te cortaste el pelo?" },
+    { "sentence": "I'm going to get my hair cut before the wedding.", "kind": "statement", "bold": ["I'm going to get my hair cut"], "es": "Me voy a cortar el pelo antes de la boda." },
+    { "sentence": "I'd like it a little shorter, but not too short, please.", "kind": "statement", "bold": ["I'd like it", "a little shorter", "not too short"], "es": "Lo quiero un poco más corto, pero no demasiado, por favor." },
+    { "sentence": "Laura had her nails done and got a manicure for her birthday.", "kind": "statement", "bold": ["had her nails done", "manicure"], "es": "Laura se arregló las uñas y se hizo un manicure para su cumpleaños." },
+    { "sentence": "The hairdresser gave me a trim and a blow-dry.", "kind": "statement", "bold": ["hairdresser", "trim", "blow-dry"], "es": "La estilista me cortó las puntas y me hizo un secado." },
+    { "sentence": "My hair is straight, but I'd like it a little wavy.", "kind": "statement", "bold": ["straight", "wavy"], "es": "Mi pelo es lacio, pero lo quisiera un poco ondulado." }
+  ],
   "story": {
     "title": "A New Look",
     "text": "Laura and Mike's wedding anniversary is next week, and there's going to be a family dinner. Carmen wants a new look. She goes to a hair salon near the beach. \"Hi! I'd like to get my hair cut.\" \"Sure! How would you like it today?\" says Jasmine, the hairdresser. Carmen shows her a photo. \"Like this, please. A little shorter, but not too short. And can you cover my gray hair?\" \"Of course. Would you like some highlights too?\" Carmen hesitates. \"Highlights? At my age?\" Jasmine smiles. \"Age is just a number!\" One hour later, Carmen looks in the mirror. Her hair is shorter, darker and soft. \"I love it!\" At the dinner, Laura opens her eyes wide. \"Mom! You look amazing! Did you get your hair done?\" Mike adds, \"It looks great on you, Carmen.\" Leo says, \"Grandma, you look like a movie star.\"",

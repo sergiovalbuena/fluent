@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"We ___ at a small hotel this week.\"", "es": "Completa: «We ___ at a small hotel this week.»" }, "options": ["are staying", "is staying", "stays", "staying"], "correct": 0, "explanation": { "en": "We → are + staying.", "es": "We → are + staying." } },
     { "question": { "en": "Something you buy to remember a place is a…", "es": "Algo que compras para recordar un lugar es un…" }, "options": ["souvenir", "swimsuit", "wave", "tourist"], "correct": 0, "explanation": { "en": "A souvenir = un recuerdo.", "es": "A souvenir = un recuerdo." } }
   ],
+  "sentences": [
+    { "sentence": "What are you doing this week, are you working?", "kind": "question", "bold": ["What are you doing", "are you working"], "es": "¿Qué estás haciendo esta semana, estás trabajando?" },
+    { "sentence": "Are you staying at a hotel or with your family?", "kind": "question", "bold": ["Are you staying", "hotel"], "es": "¿Te estás quedando en un hotel o con tu familia?" },
+    { "sentence": "Is Leo swimming in the ocean or playing on the beach?", "kind": "question", "bold": ["Is", "swimming", "playing"], "es": "¿Leo está nadando en el océano o jugando en la playa?" },
+    { "sentence": "Who is taking pictures of the kids?", "kind": "question", "bold": ["is taking pictures"], "es": "¿Quién está tomando fotos de los niños?" },
+    { "sentence": "Are you enjoying your trip, or are you tired?", "kind": "question", "bold": ["Are you enjoying", "trip"], "es": "¿Estás disfrutando tu viaje, o estás cansada?" },
+    { "sentence": "We're staying at a small hotel near the beach.", "kind": "statement", "bold": ["We're staying", "hotel"], "es": "Nos estamos quedando en un hotelito cerca de la playa." },
+    { "sentence": "I'm not working this week; I'm relaxing at home.", "kind": "statement", "bold": ["I'm not working", "I'm relaxing"], "es": "No estoy trabajando esta semana; estoy descansando en casa." },
+    { "sentence": "I usually work on Mondays, but this week I'm visiting my sister.", "kind": "statement", "bold": ["usually", "this week", "I'm visiting"], "es": "Normalmente trabajo los lunes, pero esta semana estoy visitando a mi hermana." },
+    { "sentence": "Laura is lying in the sun and Mike is reading a book.", "kind": "statement", "bold": ["is lying", "is reading"], "es": "Laura está acostada al sol y Mike está leyendo un libro." },
+    { "sentence": "Don't forget your passport, your sunglasses and your swimsuit!", "kind": "statement", "bold": ["passport", "sunglasses", "swimsuit"], "es": "¡No olvides tu pasaporte, tus lentes de sol y tu traje de baño!" }
+  ],
   "story": {
     "title": "A Message from the Beach",
     "text": "It's July, and Laura has a week of vacation. The family is staying at a small hotel in Santa Barbara. Carmen is sitting on the beach with her sunglasses and a book. She sends a message to Linda: \"Hi Linda! We're having a great time. Right now I'm sitting on the beach. Leo is swimming with his father. The waves are really big today! Laura is sleeping under an umbrella — she is very tired from work. Tonight we are eating at a fish restaurant. I'm buying a souvenir for you. Wish you were here!\" Five minutes later, Linda answers: \"Enjoy, Carmen! Here it's raining and I'm cleaning the house. Don't forget your sunscreen!\" Carmen laughs and puts on more sunscreen.",

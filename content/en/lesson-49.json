@@ -60,6 +60,18 @@
     { "question": { "en": "In a serious emergency in the US, you call…", "es": "En una emergencia grave en Estados Unidos, llamas al…" }, "options": ["911", "411", "311", "100"], "correct": 0, "explanation": { "en": "911 is the emergency number.", "es": "911 es el número de emergencias." } },
     { "question": { "en": "\"I feel dizzy\" means…", "es": "«I feel dizzy» significa…" }, "options": ["Me siento mareada.", "Tengo hambre.", "Tengo frío.", "Estoy aburrida."], "correct": 0, "explanation": { "en": "Dizzy = mareado.", "es": "Dizzy = mareado." } }
   ],
+  "sentences": [
+    { "sentence": "How long have you had this cough and fever?", "kind": "question", "bold": ["How long have you had", "cough", "fever"], "es": "¿Cuánto tiempo ha tenido esta tos y fiebre?" },
+    { "sentence": "Does it hurt when you walk or when you sit down?", "kind": "question", "bold": ["hurt when you"], "es": "¿Le duele cuando camina o cuando se sienta?" },
+    { "sentence": "Are you allergic to any pills or medicine?", "kind": "question", "bold": ["pills"], "es": "¿Es alérgica a alguna pastilla o medicina?" },
+    { "sentence": "Can I have a Spanish interpreter for my appointment?", "kind": "question", "bold": ["interpreter", "appointment"], "es": "¿Me pueden dar un intérprete de español para mi cita?" },
+    { "sentence": "Should I go to the emergency room if I feel dizzy?", "kind": "question", "bold": ["Should", "emergency", "dizzy"], "es": "¿Debo ir a urgencias si me siento mareada?" },
+    { "sentence": "I've had a sore throat since Monday.", "kind": "statement", "bold": ["I've had", "sore throat", "since"], "es": "He tenido dolor de garganta desde el lunes." },
+    { "sentence": "It hurts when I breathe, and I feel very tired.", "kind": "statement", "bold": ["It hurts when I"], "es": "Me duele cuando respiro, y me siento muy cansada." },
+    { "sentence": "Take one pill twice a day with food.", "kind": "statement", "bold": ["Take", "pill", "twice a day"], "es": "Tome una pastilla dos veces al día con comida." },
+    { "sentence": "You should rest, and you shouldn't eat spicy food.", "kind": "statement", "bold": ["You should", "you shouldn't"], "es": "Debe descansar, y no debe comer comida picante." },
+    { "sentence": "The nurse checked my blood pressure and gave me a prescription.", "kind": "statement", "bold": ["nurse", "blood pressure", "prescription"], "es": "La enfermera me tomó la presión y me dio una receta." }
+  ],
   "story": {
     "title": "A Check-up",
     "text": "Carmen has had a cough for two weeks, and sometimes she feels dizzy. Laura makes an appointment at the clinic. \"Good morning. I have an appointment at ten. Here's my insurance card.\" The nurse checks her blood pressure. \"It's a little high. The doctor will see you now.\" Dr. Martínez is friendly. \"What brings you here today?\" \"I've had a cough since the beginning of the month. And it hurts when I breathe deeply.\" \"Do you have a fever?\" \"No, I don't.\" \"Are you allergic to any medicine?\" \"Yes, to penicillin.\" The doctor listens to her chest. \"It's a small infection. Take one pill twice a day for seven days. You should rest, drink fluids and you shouldn't work this Saturday.\" \"No tamales this week?\" \"No tamales. Doctor's orders.\" Carmen laughs and coughs at the same time.",

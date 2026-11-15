@@ -60,6 +60,18 @@
     { "question": { "en": "More money for the same job is a…", "es": "Más dinero por el mismo trabajo es un…" }, "options": ["raise", "break", "shift", "paycheck stub"], "correct": 0, "explanation": { "en": "Raise = aumento de sueldo.", "es": "Raise = aumento de sueldo." } },
     { "question": { "en": "Complete: \"You ___ come on Sundays. The bakery is closed.\"", "es": "Completa: «You ___ come on Sundays. The bakery is closed.»" }, "options": ["don't have to", "must", "should", "have to"], "correct": 0, "explanation": { "en": "Not necessary → don't have to.", "es": "No es necesario → don't have to." } }
   ],
+  "sentences": [
+    { "sentence": "May I take my break now, or after lunch?", "kind": "question", "bold": ["May I", "break"], "es": "¿Puedo tomar mi descanso ahora, o después del almuerzo?" },
+    { "sentence": "Who is in charge of the morning shift today?", "kind": "question", "bold": ["in charge of", "shift"], "es": "¿Quién está a cargo del turno de la mañana hoy?" },
+    { "sentence": "Do we have to wear a uniform, or only an apron?", "kind": "question", "bold": ["have to", "uniform", "apron"], "es": "¿Tenemos que usar uniforme, o solo un mandil?" },
+    { "sentence": "Can I see my schedule for next week?", "kind": "question", "bold": ["Can I", "schedule"], "es": "¿Puedo ver mi horario de la próxima semana?" },
+    { "sentence": "When do we get our paycheck, on Friday?", "kind": "question", "bold": ["paycheck"], "es": "¿Cuándo nos pagan, el viernes?" },
+    { "sentence": "You must wash your hands before you cook.", "kind": "statement", "bold": ["You must"], "es": "Debes lavarte las manos antes de cocinar." },
+    { "sentence": "You mustn't use your phone when you are with a customer.", "kind": "statement", "bold": ["You mustn't", "customer"], "es": "No debes usar tu teléfono cuando estás con un cliente." },
+    { "sentence": "You don't have to come on Sundays, but you mustn't be late.", "kind": "statement", "bold": ["You don't have to", "you mustn't"], "es": "No tienes que venir los domingos, pero no debes llegar tarde." },
+    { "sentence": "I'm in charge of the tamales, and my coworker makes the coffee.", "kind": "statement", "bold": ["I'm in charge of", "coworker"], "es": "Yo estoy a cargo de los tamales, y mi compañero hace el café." },
+    { "sentence": "Don't forget to clock in when you arrive and clock out when you leave.", "kind": "statement", "bold": ["clock in", "clock out"], "es": "No olvides checar al llegar y checar al salir." }
+  ],
   "story": {
     "title": "First Day at the Bakery",
     "text": "It's Carmen's first Saturday at the bakery. Grace gives her an apron and shows her around. \"Welcome to the team! You must wear this apron and you must wash your hands before you cook. You mustn't use your phone near the ovens.\" \"Do I have to wear a uniform?\" \"No, you don't have to. Just the apron.\" Carmen's coworker is Luis, a young baker from Tijuana. \"Don't forget to clock in,\" he says. \"And you're in charge of the tamales.\" The morning is busy. Many customers come for coffee and bread. At eleven, Carmen asks, \"Grace, may I take my break now?\" \"Of course. Fifteen minutes.\" At the end of the shift, Grace says, \"Great job today, Carmen! The tamales sold out in two hours.\" Carmen takes off her apron, tired but proud. \"See you next Saturday, team!\"",

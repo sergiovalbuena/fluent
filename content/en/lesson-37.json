@@ -60,6 +60,18 @@
     { "question": { "en": "65 mph is about…", "es": "65 mph son aproximadamente…" }, "options": ["105 km/h", "65 km/h", "40 km/h", "200 km/h"], "correct": 0, "explanation": { "en": "1 mile ≈ 1.6 km, so 65 mph ≈ 105 km/h.", "es": "1 milla ≈ 1.6 km, así que 65 mph ≈ 105 km/h." } },
     { "question": { "en": "The tank is almost empty. You say:", "es": "El tanque está casi vacío. Dices:" }, "options": ["We need to get gas.", "We need to drop off the gas.", "We need a trunk.", "We need to speed limit."], "correct": 0, "explanation": { "en": "Get gas = poner gasolina.", "es": "Get gas = poner gasolina." } }
   ],
+  "sentences": [
+    { "sentence": "How much does it cost to rent a car for a week?", "kind": "question", "bold": ["How much does it cost to", "rent"], "es": "¿Cuánto cuesta rentar un carro por una semana?" },
+    { "sentence": "Is insurance included, or do I need to pay extra?", "kind": "question", "bold": ["insurance", "need to"], "es": "¿El seguro está incluido, o tengo que pagar extra?" },
+    { "sentence": "Where do I pick up the car, and where do I drop it off?", "kind": "question", "bold": ["pick up", "drop", "off"], "es": "¿Dónde recojo el carro, y dónde lo entrego?" },
+    { "sentence": "Is the rental car automatic, and does it have GPS?", "kind": "question", "bold": ["rental car", "automatic", "GPS"], "es": "¿El carro rentado es automático, y tiene GPS?" },
+    { "sentence": "What's the speed limit on this highway?", "kind": "question", "bold": ["speed limit", "highway"], "es": "¿Cuál es el límite de velocidad en esta carretera?" },
+    { "sentence": "You need to show your driver's license and a credit card.", "kind": "statement", "bold": ["You need to", "driver's license", "credit card"], "es": "Necesita mostrar su licencia de manejo y una tarjeta de crédito." },
+    { "sentence": "It's forty dollars per day, or two hundred per week.", "kind": "statement", "bold": ["per day", "per week"], "es": "Son cuarenta dólares por día, o doscientos por semana." },
+    { "sentence": "Please fill up the tank before you drop off the car.", "kind": "statement", "bold": ["fill up", "tank", "drop off"], "es": "Por favor llene el tanque antes de entregar el carro." },
+    { "sentence": "We need a bigger car; the suitcases don't fit in the trunk.", "kind": "statement", "bold": ["We need", "trunk"], "es": "Necesitamos un carro más grande; las maletas no caben en la cajuela." },
+    { "sentence": "We need to stop at a gas station before the highway.", "kind": "statement", "bold": ["We need to", "gas station", "highway"], "es": "Tenemos que parar en una gasolinera antes de la carretera." }
+  ],
   "story": {
     "title": "Autumn Colors",
     "text": "Elena's son, David, wants to show Carmen the autumn colors outside the city. \"We need to rent a car,\" he says. At the rental office, he asks, \"How much does it cost to rent a car for one day?\" \"Fifty dollars per day, with insurance.\" \"Is it automatic?\" \"Yes. You need to show your driver's license and a credit card.\" David picks up the car, and they put a picnic basket in the trunk. On the highway, Carmen looks out of the window. The trees are red, orange and yellow. \"Beautiful! In San Diego the trees don't change color like this.\" After an hour, a light comes on. \"We need to get gas,\" says David. At the gas station, Carmen buys coffee for everybody. In the evening they drop off the car with a full tank. \"Thank you, David. Today I saw the most beautiful trees of my life.\"",

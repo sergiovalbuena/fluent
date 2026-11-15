@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"Leo ___ his teeth every night.\"", "es": "Completa: «Leo ___ his teeth every night.»" }, "options": ["brushes", "brush", "brushs", "brushing"], "correct": 0, "explanation": { "en": "He + verb ending in -sh → -es: brushes.", "es": "He + verbo terminado en -sh → -es: brushes." } },
     { "question": { "en": "What's the best habit for learning a language?", "es": "¿Cuál es el mejor hábito para aprender un idioma?" }, "options": ["A little practice every day", "Two hours once a month", "Only before a trip", "Never speaking"], "correct": 0, "explanation": { "en": "Daily practice works best.", "es": "La práctica diaria es lo que mejor funciona." } }
   ],
+  "sentences": [
+    { "sentence": "What time do you usually wake up on weekends?", "kind": "question", "bold": ["wake up", "on weekends"], "es": "¿A qué hora te despiertas normalmente los fines de semana?" },
+    { "sentence": "Do you take a nap after lunch, or are you too busy?", "kind": "question", "bold": ["take a nap", "busy"], "es": "¿Tomas una siesta después del almuerzo, o estás muy ocupada?" },
+    { "sentence": "What do you do before going to bed?", "kind": "question", "bold": ["before going to bed"], "es": "¿Qué haces antes de irte a dormir?" },
+    { "sentence": "Did you use to live in Guadalajara before San Diego?", "kind": "question", "bold": ["Did you use to"], "es": "¿Antes vivías en Guadalajara, antes de San Diego?" },
+    { "sentence": "What's your favorite habit every morning?", "kind": "question", "bold": ["habit", "every morning"], "es": "¿Cuál es tu costumbre favorita todas las mañanas?" },
+    { "sentence": "I wake up at six and get up at six fifteen.", "kind": "statement", "bold": ["wake up", "get up"], "es": "Me despierto a las seis y me levanto a las seis y cuarto." },
+    { "sentence": "After having breakfast, I walk on the beach with Linda.", "kind": "statement", "bold": ["After having breakfast"], "es": "Después de desayunar, camino en la playa con Linda." },
+    { "sentence": "I used to be very shy, but now I talk to everybody.", "kind": "statement", "bold": ["used to"], "es": "Antes era muy tímida, pero ahora hablo con todos." },
+    { "sentence": "I take a shower, get dressed and brush my teeth before work.", "kind": "statement", "bold": ["take a shower", "get dressed", "brush my teeth"], "es": "Me baño, me visto y me lavo los dientes antes del trabajo." },
+    { "sentence": "I have lived here for a year, I'm learning English, and I'll keep studying.", "kind": "statement", "bold": ["I have lived", "I'm learning", "I'll"], "es": "He vivido aquí un año, estoy aprendiendo inglés, y voy a seguir estudiando." }
+  ],
   "story": {
     "title": "One Year Later",
     "text": "It has been a year since Carmen arrived in San Diego. Her days are busy now. She wakes up at six every morning, but she gets up at six fifteen — first, a cup of coffee on her balcony. After having breakfast, she walks on the beach with Linda. On Mondays and Wednesdays she goes to English class, and on Thursdays she meets the Coffee Club. On Saturdays she works at the bakery, where her tamales always sell out. In the afternoon she usually picks up Leo from school — now she drives! After lunch she sometimes takes a short nap. In the evening she video calls her sisters in Guadalajara. Before going to bed, she reads a book in English, ten pages every night. \"I used to be very shy,\" she wrote in her last homework. \"I used to think English was impossible. Now I have friends, a job and a new home. I'm still learning, and I will never stop.\"",

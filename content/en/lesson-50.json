@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"The box was packed ___ Leo.\"", "es": "Completa: «The box was packed ___ Leo.»" }, "options": ["by", "from", "of", "with"], "correct": 0, "explanation": { "en": "Passive + by + who did it.", "es": "Pasiva + by + quién lo hizo." } },
     { "question": { "en": "Glasses and plates in a box are…", "es": "Vasos y platos en una caja son…" }, "options": ["fragile", "express", "heavy-duty", "delivered"], "correct": 0, "explanation": { "en": "Fragile = can break easily.", "es": "Fragile = se puede romper fácilmente." } }
   ],
+  "sentences": [
+    { "sentence": "How long will it take to arrive in Guadalajara?", "kind": "question", "bold": ["How long will it take"], "es": "¿Cuánto tiempo va a tardar en llegar a Guadalajara?" },
+    { "sentence": "Was the package delivered yesterday or today?", "kind": "question", "bold": ["package", "delivered"], "es": "¿El paquete fue entregado ayer o hoy?" },
+    { "sentence": "Do I need to fill out a customs form for this box?", "kind": "question", "bold": ["customs form"], "es": "¿Necesito llenar un formulario de aduana para esta caja?" },
+    { "sentence": "What's the ZIP code for this address?", "kind": "question", "bold": ["ZIP code", "address"], "es": "¿Cuál es el código postal de esta dirección?" },
+    { "sentence": "Can you weigh this envelope and sell me some stamps?", "kind": "question", "bold": ["weigh", "envelope", "stamps"], "es": "¿Puede pesar este sobre y venderme unas estampillas?" },
+    { "sentence": "Letters are delivered every day except Sunday.", "kind": "statement", "bold": ["Letters are delivered"], "es": "Las cartas se entregan todos los días menos el domingo." },
+    { "sentence": "The package was sent on Monday by express mail.", "kind": "statement", "bold": ["The package was sent", "express"], "es": "El paquete se envió el lunes por correo exprés." },
+    { "sentence": "It will be delivered in five days to the recipient.", "kind": "statement", "bold": ["It will be delivered", "recipient"], "es": "Será entregado al destinatario en cinco días." },
+    { "sentence": "The box was packed by Leo, so it's a little messy.", "kind": "statement", "bold": ["The box was packed by"], "es": "La caja la empacó Leo, así que está un poco desordenada." },
+    { "sentence": "This package is fragile; here is the tracking number.", "kind": "statement", "bold": ["package", "fragile", "tracking number"], "es": "Este paquete es frágil; aquí está el número de rastreo." }
+  ],
   "story": {
     "title": "A Box for Rosa",
     "text": "Rosa's birthday is in two weeks. Carmen wants to send her a box from San Diego: a scarf, chocolates and a photo of the family. The box is packed by Leo very carefully. At the post office, the clerk weighs it. \"It's four pounds. Where is it going?\" \"To Guadalajara, Mexico.\" \"You need to fill out this customs form. What's inside?\" \"A scarf, chocolates and a photo. And the photo frame is fragile.\" \"Okay. With express mail, it will be delivered in five days. With regular mail, two weeks.\" \"Express, please. Her birthday is soon!\" \"Here's your tracking number.\" Every day Carmen checks it on her phone. On the fifth day, a message appears: \"Your package was delivered.\" That evening, Rosa calls on video, wearing the scarf. \"Carmen! The photo was the best present.\"",

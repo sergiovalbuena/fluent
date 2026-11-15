@@ -67,6 +67,18 @@
     { "question": { "en": "Today is Thursday. What day was yesterday?", "es": "Hoy es jueves. ¿Qué día fue ayer?" }, "options": ["Wednesday", "Friday", "Tuesday", "Saturday"], "correct": 0, "explanation": { "en": "Yesterday is the day before today: Wednesday comes before Thursday.", "es": "Ayer es el día anterior a hoy: Wednesday va antes de Thursday." } },
     { "question": { "en": "It's your friend's birthday. What do you say?", "es": "Es el cumpleaños de tu amiga. ¿Qué le dices?" }, "options": ["Happy birthday!", "Good birthday!", "Nice birthday!", "Have a birthday!"], "correct": 0, "explanation": { "en": "We say \"Happy birthday!\"", "es": "Se dice «Happy birthday!»" } }
   ],
+  "sentences": [
+    { "sentence": "What day is today, Monday or Tuesday?", "kind": "question", "bold": ["What day is today", "Monday", "Tuesday"], "es": "¿Qué día es hoy, lunes o martes?" },
+    { "sentence": "Is your birthday in March or in April?", "kind": "question", "bold": ["birthday", "in", "March", "in", "April"], "es": "¿Tu cumpleaños es en marzo o en abril?" },
+    { "sentence": "Are you free on Saturday or on Sunday?", "kind": "question", "bold": ["on Saturday", "on Sunday"], "es": "¿Estás libre el sábado o el domingo?" },
+    { "sentence": "When is Leo's birthday, in May?", "kind": "question", "bold": ["When is", "birthday", "in", "May"], "es": "¿Cuándo es el cumpleaños de Leo, en mayo?" },
+    { "sentence": "What's the date tomorrow?", "kind": "question", "bold": ["What's the date", "tomorrow"], "es": "¿Qué fecha es mañana?" },
+    { "sentence": "My English class is on Monday and Wednesday.", "kind": "statement", "bold": ["on", "Monday", "Wednesday"], "es": "Mi clase de inglés es los lunes y miércoles." },
+    { "sentence": "Laura's birthday is on the third of October.", "kind": "statement", "bold": ["birthday", "on", "the third of", "October"], "es": "El cumpleaños de Laura es el tres de octubre." },
+    { "sentence": "Yesterday was Friday, so today is Saturday.", "kind": "statement", "bold": ["Yesterday", "Friday", "today", "Saturday"], "es": "Ayer fue viernes, así que hoy es sábado." },
+    { "sentence": "We are at the park every weekend in July.", "kind": "statement", "bold": ["weekend", "in", "July"], "es": "Estamos en el parque todos los fines de semana en julio." },
+    { "sentence": "Today is the first of December.", "kind": "statement", "bold": ["Today", "the first of", "December"], "es": "Hoy es el primero de diciembre." }
+  ],
   "story": {
     "title": "A Busy Calendar",
     "text": "It is Sunday evening. Carmen and Laura are in the kitchen with a big calendar. \"Mom, what day is today?\" asks Laura. \"Today is Sunday, the third of May.\" \"Okay. Your English class is on Monday and Wednesday. On Tuesday you are with Leo after school.\" Carmen writes everything in Spanish and in English. \"And Friday?\" \"Friday is free. On Saturday we have a party.\" \"A party? Why?\" Laura laughs. \"Mom! Leo's birthday is on May ninth!\" \"Of course! My grandson is eight years old!\" Carmen looks at the calendar again. May is a busy month, but it is a happy month too.",

@@ -60,6 +60,18 @@
     { "question": { "en": "You pay for your friend's coffee. You say:", "es": "Pagas el café de tu amiga. Dices:" }, "options": ["This one's on me.", "This one's for here.", "This one's decaf.", "This one's a refill."], "correct": 0, "explanation": { "en": "\"It's on me\" = yo invito.", "es": "«It's on me» = yo invito." } },
     { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Would you rather sit inside or outside?", "Would you rather to sit inside?", "Do you rather sit inside?", "Would rather you sit inside?"], "correct": 0, "explanation": { "en": "Would you rather + base verb?", "es": "Would you rather + verbo base?" } }
   ],
+  "sentences": [
+    { "sentence": "Would you rather sit inside or outside on the patio?", "kind": "question", "bold": ["Would you rather"], "es": "¿Prefieres sentarte adentro o afuera en el patio?" },
+    { "sentence": "Can I get a large latte with oat milk, please?", "kind": "question", "bold": ["Can I get", "latte", "oat milk"], "es": "¿Me da un latte grande con leche de avena, por favor?" },
+    { "sentence": "Is this coffee decaf, or is it regular?", "kind": "question", "bold": ["decaf"], "es": "¿Este café es descafeinado, o es normal?" },
+    { "sentence": "For here or to go? And do you want a muffin?", "kind": "question", "bold": ["For here or to go", "muffin"], "es": "¿Para tomar aquí o para llevar? ¿Y quiere un panqué?" },
+    { "sentence": "Can I have a lid and a refill, please?", "kind": "question", "bold": ["lid", "refill"], "es": "¿Me da una tapa y otra taza, por favor?" },
+    { "sentence": "I'd rather have tea than coffee in the afternoon.", "kind": "statement", "bold": ["I'd rather", "than"], "es": "Prefiero tomar té que café en la tarde." },
+    { "sentence": "I prefer hot drinks to iced drinks, even in summer.", "kind": "statement", "bold": ["I prefer", "to", "iced"], "es": "Prefiero las bebidas calientes a las frías, incluso en verano." },
+    { "sentence": "Leo always orders a hot chocolate and a pastry.", "kind": "statement", "bold": ["hot chocolate", "pastry"], "es": "Leo siempre pide un chocolate caliente y un pan dulce." },
+    { "sentence": "The barista wrote my name on the cup: Carmen.", "kind": "statement", "bold": ["barista"], "es": "El barista escribió mi nombre en el vaso: Carmen." },
+    { "sentence": "I'd like a black coffee to go, without cream.", "kind": "statement", "bold": ["black coffee", "to go", "cream"], "es": "Quisiera un café negro para llevar, sin crema." }
+  ],
   "story": {
     "title": "Carmen's Coffee Club",
     "text": "Every Thursday, Carmen, Ana, Kenji and Linda meet at a coffee shop near the beach. They call it the Coffee Club. Today it's Carmen's turn to order. \"Hi! Can I get a medium latte, a black coffee, a decaf for Linda and… Kenji, what would you like?\" \"I'd rather have tea today. Green tea, please.\" \"And a green tea. For here.\" \"What's the name?\" \"Carmen.\" A few minutes later the barista calls, \"Drinks for Carmen!\" \"Would you rather sit inside or outside?\" asks Ana. \"Outside,\" says Linda. \"I prefer the sun to the air conditioning.\" They talk about everything: Ana's new job, Kenji's garden, Leo's soccer team. When the bill comes, Carmen says, \"This one's on me. Last year I couldn't order a coffee in English. Today I ordered four!\"",

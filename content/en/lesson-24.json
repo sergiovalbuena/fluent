@@ -60,6 +60,18 @@
     { "question": { "en": "Where do you buy souvenirs in a museum?", "es": "¿Dónde compras recuerdos en un museo?" }, "options": ["at the gift shop", "at the exhibition", "at the gallery wall", "at the guide"], "correct": 0, "explanation": { "en": "The gift shop sells souvenirs.", "es": "La gift shop vende recuerdos." } },
     { "question": { "en": "Choose the correct question.", "es": "Elige la pregunta correcta." }, "options": ["Where were you yesterday?", "Where was you yesterday?", "Where you were yesterday?", "Where did you was yesterday?"], "correct": 0, "explanation": { "en": "You → were. Question: Where were you…?", "es": "You → were. Pregunta: Where were you…?" } }
   ],
+  "sentences": [
+    { "sentence": "Was the museum crowded on Sunday?", "kind": "question", "bold": ["Was", "museum", "crowded"], "es": "¿El museo estaba lleno el domingo?" },
+    { "sentence": "Were you at the exhibition yesterday with Linda?", "kind": "question", "bold": ["Were you", "exhibition"], "es": "¿Estuviste en la exposición ayer con Linda?" },
+    { "sentence": "Who was the artist of this painting?", "kind": "question", "bold": ["Who was", "artist", "painting"], "es": "¿Quién fue el artista de esta pintura?" },
+    { "sentence": "Was the ticket expensive, or was it free admission?", "kind": "question", "bold": ["Was", "ticket", "was", "free admission"], "es": "¿El boleto era caro, o la entrada era gratis?" },
+    { "sentence": "Were the sculptures modern or ancient?", "kind": "question", "bold": ["Were", "sculptures", "modern", "ancient"], "es": "¿Las esculturas eran modernas o antiguas?" },
+    { "sentence": "Frida Kahlo was a famous Mexican painter.", "kind": "statement", "bold": ["was", "famous", "painter"], "es": "Frida Kahlo fue una pintora mexicana famosa." },
+    { "sentence": "We were at the museum all day, and it was amazing.", "kind": "statement", "bold": ["We were", "museum", "was"], "es": "Estuvimos en el museo todo el día, y estuvo increíble." },
+    { "sentence": "The paintings were very colorful and beautiful.", "kind": "statement", "bold": ["paintings", "were", "colorful"], "es": "Las pinturas eran muy coloridas y bonitas." },
+    { "sentence": "The guide was very nice, and the tour wasn't long.", "kind": "statement", "bold": ["guide", "was", "wasn't"], "es": "La guía fue muy amable, y el recorrido no fue largo." },
+    { "sentence": "The gift shop wasn't open, so I was a little sad.", "kind": "statement", "bold": ["gift shop", "wasn't", "was"], "es": "La tienda de regalos no estaba abierta, así que estaba un poco triste." }
+  ],
   "story": {
     "title": "Frida in San Diego",
     "text": "Last Saturday was a special day. There was an exhibition of Frida Kahlo's paintings at a museum in Balboa Park. Carmen and Ana were there at ten in the morning. The tickets weren't expensive, and there was a free guided tour. The guide was a young woman from Monterrey. \"Frida was a Mexican painter,\" she said. \"Her paintings were very colorful and very personal.\" Carmen was very emotional. \"When I was a girl, my mother had a book about Frida,\" she told Ana. The museum was crowded, but it wasn't noisy. At the end, they were in the gift shop for half an hour. Carmen bought a postcard for her sister. On Monday, Mr. Park asked, \"Where were you on Saturday?\" \"I was with Frida!\" said Carmen.",

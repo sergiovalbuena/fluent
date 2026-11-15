@@ -62,6 +62,18 @@
     { "question": { "en": "Which one is a pain in your head?", "es": "¿Cuál es un dolor en la cabeza?" }, "options": ["headache", "stomachache", "backache", "toothache"], "correct": 0, "explanation": { "en": "Head + ache = headache.", "es": "Head + ache = headache." } },
     { "question": { "en": "Someone looks sad and tired. What can you ask?", "es": "Alguien se ve triste y cansado. ¿Qué puedes preguntar?" }, "options": ["What's wrong?", "What do you do?", "Where are you from?", "How old are you?"], "correct": 0, "explanation": { "en": "\"What's wrong?\" asks about a problem.", "es": "«What's wrong?» pregunta qué problema tiene." } }
   ],
+  "sentences": [
+    { "sentence": "What's wrong with your knee? Does it hurt a lot?", "kind": "question", "bold": ["What's wrong", "knee", "hurt"], "es": "¿Qué le pasa a tu rodilla? ¿Te duele mucho?" },
+    { "sentence": "Do you have a headache or a cold?", "kind": "question", "bold": ["have a headache", "a cold"], "es": "¿Tienes dolor de cabeza o un resfriado?" },
+    { "sentence": "Does Leo have brown eyes like his mother?", "kind": "question", "bold": ["have", "eyes"], "es": "¿Leo tiene los ojos cafés como su mamá?" },
+    { "sentence": "Do your feet hurt after work?", "kind": "question", "bold": ["Do", "feet", "hurt"], "es": "¿Te duelen los pies después del trabajo?" },
+    { "sentence": "Why does your stomach hurt, Leo?", "kind": "question", "bold": ["stomach", "hurt"], "es": "¿Por qué te duele el estómago, Leo?" },
+    { "sentence": "My back hurts, so I can't carry the bags today.", "kind": "statement", "bold": ["My back hurts"], "es": "Me duele la espalda, así que hoy no puedo cargar las bolsas." },
+    { "sentence": "Laura has long black hair and a beautiful face.", "kind": "statement", "bold": ["has", "hair", "face"], "es": "Laura tiene el pelo largo y negro y una cara bonita." },
+    { "sentence": "Leo has two new teeth and he's very happy.", "kind": "statement", "bold": ["has", "teeth"], "es": "Leo tiene dos dientes nuevos y está muy contento." },
+    { "sentence": "After the long walk, my legs and my feet hurt.", "kind": "statement", "bold": ["my", "legs", "my", "feet", "hurt"], "es": "Después de la larga caminata, me duelen las piernas y los pies." },
+    { "sentence": "I have a cold, and my nose and ears hurt.", "kind": "statement", "bold": ["have a cold", "nose", "ears", "hurt"], "es": "Tengo un resfriado, y me duelen la nariz y los oídos." }
+  ],
   "story": {
     "title": "A Bad Back",
     "text": "This morning Carmen gets up slowly. Her back hurts. She has a headache too. Leo comes into the kitchen. \"Grandma, what's wrong?\" \"Oh, my back hurts, and I have a headache. I don't feel well.\" Leo puts his small hand on her shoulder. \"Take a rest, Grandma. I can make breakfast.\" Carmen smiles. Leo makes toast and a cup of tea. It is not perfect, but it is made with love. In the afternoon Linda calls. \"I have a cold,\" says Linda. \"My nose is red and my eyes hurt.\" \"Oh no! Get well soon, Linda!\" \"You too!\" In the evening, Carmen feels much better. \"Leo,\" she says, \"you are a very good nurse, like your mother.\"",

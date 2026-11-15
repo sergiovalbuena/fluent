@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"___ you like a direct flight?\"", "es": "Completa: «___ you like a direct flight?»" }, "options": ["Would", "Do would", "Will", "Are"], "correct": 0, "explanation": { "en": "Polite offer: Would you like…?", "es": "Ofrecimiento amable: Would you like…?" } },
     { "question": { "en": "For a flight inside the US, you need…", "es": "Para un vuelo dentro de Estados Unidos necesitas…" }, "options": ["a valid ID", "a visa", "a work permit", "nothing"], "correct": 0, "explanation": { "en": "Domestic flights require a valid ID.", "es": "Los vuelos nacionales piden identificación válida." } }
   ],
+  "sentences": [
+    { "sentence": "Would you like a window seat or an aisle seat on the flight to Chicago?", "kind": "question", "bold": ["Would you like", "a window seat", "an aisle seat", "flight"], "es": "¿Quiere asiento de ventana o de pasillo en el vuelo a Chicago?" },
+    { "sentence": "Is it a direct flight, or is there a layover?", "kind": "question", "bold": ["a direct flight", "a layover"], "es": "¿Es un vuelo directo, o hay una escala?" },
+    { "sentence": "Would you like to buy travel insurance for your trip?", "kind": "question", "bold": ["Would you like to", "travel insurance", "trip"], "es": "¿Le gustaría comprar un seguro de viaje para su viaje?" },
+    { "sentence": "Does the price include one bag, or do I pay extra?", "kind": "question", "bold": ["price"], "es": "¿El precio incluye una maleta, o pago extra?" },
+    { "sentence": "What's the departure time from San Diego to New York?", "kind": "question", "bold": ["departure", "from", "to"], "es": "¿A qué hora es la salida de San Diego a Nueva York?" },
+    { "sentence": "I'd like to book a round-trip flight to Guadalajara.", "kind": "statement", "bold": ["I'd like to", "book", "round-trip", "flight"], "es": "Quisiera reservar un vuelo de ida y vuelta a Guadalajara." },
+    { "sentence": "I want to visit my cousin from May 5th to May 20th.", "kind": "statement", "bold": ["I want to", "visit", "from", "to"], "es": "Quiero visitar a mi prima del 5 al 20 de mayo." },
+    { "sentence": "The travel agent gave me a good price for a one-way ticket.", "kind": "statement", "bold": ["travel agent", "price", "one-way"], "es": "El agente de viajes me dio un buen precio por un boleto sencillo." },
+    { "sentence": "Please bring your ID to confirm the reservation.", "kind": "statement", "bold": ["ID", "reservation"], "es": "Por favor traiga su identificación para confirmar la reservación." },
+    { "sentence": "The arrival is at ten p.m., after a layover in Chicago.", "kind": "statement", "bold": ["arrival", "layover"], "es": "La llegada es a las diez de la noche, después de una escala en Chicago." }
+  ],
   "story": {
     "title": "A Dream Trip",
     "text": "Carmen's cousin Elena lives in New York. They haven't seen each other in twenty years. This year, Carmen wants to visit her. She goes to a travel agency with Laura. \"Good morning. I'd like to book a flight to New York,\" says Carmen. \"Of course. When would you like to travel?\" asks the travel agent. \"From October fifth to the nineteenth.\" \"Round-trip?\" \"Yes, round-trip, please. Is there a direct flight?\" \"There's a direct flight at eight in the morning, or a cheaper one with a layover in Chicago.\" \"The direct flight, please. I don't want to get lost in Chicago!\" The agent laughs. \"Would you like a window seat or an aisle seat?\" \"A window seat. I want to see everything.\" When they leave, Carmen holds the reservation like a treasure.",

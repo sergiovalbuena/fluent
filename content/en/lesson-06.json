@@ -62,6 +62,18 @@
     { "question": { "en": "\"Parents\" means…", "es": "«Parents» significa…" }, "options": ["mother and father", "all your relatives", "brothers and sisters", "grandparents"], "correct": 0, "explanation": { "en": "Parents = mother and father. Other family members are \"relatives\".", "es": "Parents = mamá y papá. Los demás familiares son «relatives»." } },
     { "question": { "en": "Mike is Laura's husband. For Carmen, Mike is her…", "es": "Mike es el esposo de Laura. Para Carmen, Mike es su…" }, "options": ["son-in-law", "son", "brother-in-law", "grandson"], "correct": 0, "explanation": { "en": "Your daughter's husband is your son-in-law.", "es": "El esposo de tu hija es tu yerno (son-in-law)." } }
   ],
+  "sentences": [
+    { "sentence": "Who is the man next to your daughter in the photo?", "kind": "question", "bold": ["Who is", "your", "daughter"], "es": "¿Quién es el hombre junto a tu hija en la foto?" },
+    { "sentence": "Do you have any cousins in Mexico?", "kind": "question", "bold": ["Do you have", "cousins"], "es": "¿Tienes primos en México?" },
+    { "sentence": "Is that Laura's husband or her brother?", "kind": "question", "bold": ["Laura's", "husband", "her", "brother"], "es": "¿Ese es el esposo de Laura o su hermano?" },
+    { "sentence": "Do your parents live with you or in another city?", "kind": "question", "bold": ["Do", "your", "parents"], "es": "¿Tus papás viven contigo o en otra ciudad?" },
+    { "sentence": "Who is your favorite aunt?", "kind": "question", "bold": ["Who is", "your", "aunt"], "es": "¿Quién es tu tía favorita?" },
+    { "sentence": "My son-in-law is Mike and his mother is very kind.", "kind": "statement", "bold": ["My", "son-in-law", "his"], "es": "Mi yerno es Mike y su mamá es muy amable." },
+    { "sentence": "Carmen's grandson is eight and his dog is two.", "kind": "statement", "bold": ["Carmen's", "grandson", "his"], "es": "El nieto de Carmen tiene ocho años y su perro tiene dos." },
+    { "sentence": "Our relatives live in Mexico, but we live here.", "kind": "statement", "bold": ["Our", "relatives", "we"], "es": "Nuestros parientes viven en México, pero nosotros vivimos aquí." },
+    { "sentence": "Laura and her husband have one son, Leo.", "kind": "statement", "bold": ["her", "husband", "son"], "es": "Laura y su esposo tienen un hijo, Leo." },
+    { "sentence": "Their grandmother is from Guadalajara.", "kind": "statement", "bold": ["Their", "grandmother"], "es": "Su abuela es de Guadalajara." }
+  ],
   "story": {
     "title": "Family Photos",
     "text": "It is Sunday afternoon. Linda visits Carmen, and Carmen shows her some family photos. \"Who is that?\" asks Linda. \"That's my daughter, Laura, with her husband, Mike. And this is their son, Leo.\" \"Your grandson is so cute!\" \"Thank you! He is eight. He is funny and very smart.\" \"And this photo?\" \"These are my sisters in Guadalajara, Rosa and Teresa. Rosa's children are in this photo too.\" \"Do you have a big family?\" \"Oh yes. Many aunts, uncles and cousins.\" Linda smiles. \"My family is small. I have one brother in Texas.\" Carmen looks at the photos and says quietly, \"I miss my sisters.\" Linda takes her hand. \"Now you have a neighbor too.\"",

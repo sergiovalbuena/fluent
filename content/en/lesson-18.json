@@ -61,6 +61,18 @@
     { "question": { "en": "How do you ask about frequency?", "es": "¿Cómo preguntas por la frecuencia?" }, "options": ["How often do you go to the gym?", "How many do you go to the gym?", "When often you go to the gym?", "How much times you gym?"], "correct": 0, "explanation": { "en": "\"How often…?\" asks about frequency.", "es": "«How often…?» pregunta por la frecuencia." } },
     { "question": { "en": "Your team scores more goals. Your team…", "es": "Tu equipo mete más goles. Tu equipo…" }, "options": ["wins", "loses", "plays", "coaches"], "correct": 0, "explanation": { "en": "More goals = you win.", "es": "Más goles = ganas (win)." } }
   ],
+  "sentences": [
+    { "sentence": "How often do you go swimming with your friends?", "kind": "question", "bold": ["How often", "go swimming"], "es": "¿Qué tan seguido vas a nadar con tus amigos?" },
+    { "sentence": "Does Leo play soccer or basketball at school?", "kind": "question", "bold": ["play soccer", "basketball"], "es": "¿Leo juega fútbol o básquetbol en la escuela?" },
+    { "sentence": "Who usually wins the game, your team or theirs?", "kind": "question", "bold": ["usually", "wins", "game", "team"], "es": "¿Quién gana normalmente el partido, tu equipo o el de ellos?" },
+    { "sentence": "Do you do yoga often, or only sometimes?", "kind": "question", "bold": ["do yoga", "often", "sometimes"], "es": "¿Haces yoga seguido, o solo a veces?" },
+    { "sentence": "Is the coach always this angry when they lose?", "kind": "question", "bold": ["coach", "always", "lose"], "es": "¿El entrenador siempre se enoja tanto cuando pierden?" },
+    { "sentence": "Leo always plays soccer on Saturday mornings.", "kind": "statement", "bold": ["always", "plays soccer"], "es": "Leo siempre juega fútbol los sábados en la mañana." },
+    { "sentence": "I usually walk in the park and sometimes go running.", "kind": "statement", "bold": ["usually", "sometimes", "go running"], "es": "Normalmente camino en el parque y a veces voy a correr." },
+    { "sentence": "Mike goes to the gym twice a week after work.", "kind": "statement", "bold": ["goes", "gym", "twice"], "es": "Mike va al gimnasio dos veces por semana después del trabajo." },
+    { "sentence": "My grandson is always tired after basketball.", "kind": "statement", "bold": ["is", "always", "basketball"], "es": "Mi nieto siempre está cansado después del básquetbol." },
+    { "sentence": "We never watch baseball, but we often watch tennis.", "kind": "statement", "bold": ["never", "baseball", "often", "tennis"], "es": "Nunca vemos béisbol, pero seguido vemos tenis." }
+  ],
   "story": {
     "title": "Saturday Soccer",
     "text": "Leo always plays soccer on Saturday mornings. His team is called the Blue Sharks. Laura usually works on Saturdays, so Carmen often takes Leo to the game. Today the Blue Sharks play against the Red Tigers. Carmen sits with the other parents. She doesn't know all the rules, but she shouts with everybody: \"Go, Sharks, go!\" A father next to her asks, \"Do you play any sports?\" \"Me? I sometimes go swimming, and I walk on the beach every morning. But I never run!\" At the end, the coach shouts, \"We won! Three to two!\" Leo runs to his grandmother. \"Grandma, did you see my goal?\" \"Of course! You are the best player.\" Leo is always happy after a game, but today he is very happy.",

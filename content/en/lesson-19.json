@@ -61,6 +61,18 @@
     { "question": { "en": "Complete: \"Today is as hot ___ yesterday.\"", "es": "Completa: «Today is as hot ___ yesterday.»" }, "options": ["as", "than", "like", "that"], "correct": 0, "explanation": { "en": "Equality: as … as.", "es": "Igualdad: as … as." } },
     { "question": { "en": "One mile is about…", "es": "Una milla es aproximadamente…" }, "options": ["1.6 kilometers", "1 kilometer", "10 kilometers", "500 meters"], "correct": 0, "explanation": { "en": "1 mile ≈ 1.6 km.", "es": "1 milla ≈ 1.6 km." } }
   ],
+  "sentences": [
+    { "sentence": "Is the moon smaller than the Earth?", "kind": "question", "bold": ["moon", "smaller than", "Earth"], "es": "¿La luna es más pequeña que la Tierra?" },
+    { "sentence": "Which is hotter, the desert or the beach?", "kind": "question", "bold": ["hotter", "desert", "beach"], "es": "¿Qué es más caliente, el desierto o la playa?" },
+    { "sentence": "Is Mexico City more crowded than San Diego?", "kind": "question", "bold": ["more crowded than"], "es": "¿La Ciudad de México está más llena de gente que San Diego?" },
+    { "sentence": "Is the river as long as the mountain road?", "kind": "question", "bold": ["river", "as long as", "mountain"], "es": "¿El río es tan largo como el camino de la montaña?" },
+    { "sentence": "Why is the sky blue and the ocean green today?", "kind": "question", "bold": ["sky", "ocean"], "es": "¿Por qué el cielo está azul y el océano verde hoy?" },
+    { "sentence": "The sun is much bigger than the Earth and the moon.", "kind": "statement", "bold": ["sun", "bigger than", "Earth", "moon"], "es": "El sol es mucho más grande que la Tierra y la luna." },
+    { "sentence": "Mars is colder than Earth, and it's farther from the sun.", "kind": "statement", "bold": ["colder than", "farther", "sun"], "es": "Marte es más frío que la Tierra, y está más lejos del sol." },
+    { "sentence": "This island is smaller than our city, but it's more beautiful.", "kind": "statement", "bold": ["island", "smaller than", "more beautiful"], "es": "Esta isla es más pequeña que nuestra ciudad, pero es más bonita." },
+    { "sentence": "My English is better now, and the lessons are easier.", "kind": "statement", "bold": ["better", "easier"], "es": "Mi inglés es mejor ahora, y las lecciones son más fáciles." },
+    { "sentence": "At night the stars are as bright as small lights.", "kind": "statement", "bold": ["stars", "as", "as"], "es": "De noche las estrellas son tan brillantes como lucecitas." }
+  ],
   "story": {
     "title": "Stars in the Desert",
     "text": "Mike takes the family to the desert for a weekend. The desert is about one hundred miles from San Diego. At night the sky is very dark. \"Look at the stars, Grandma!\" says Leo. There are thousands of stars. The sky here is clearer than in the city. \"In Guadalajara the sky is not as dark as this,\" says Carmen. Leo has a book about planets. \"Grandma, the sun is bigger than the Earth. And Jupiter is bigger than all the other planets.\" \"Really? And which is hotter, the sun or the desert?\" Leo laughs. \"The sun, Grandma! Much hotter!\" It is colder at night, so they sit close together. Carmen thinks: the world is bigger than I imagined, but tonight my world is here, with my family.",

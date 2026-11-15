@@ -61,6 +61,18 @@
     { "question": { "en": "Where do you cross the street safely?", "es": "¿Dónde cruzas la calle con seguridad?" }, "options": ["at the crosswalk", "in the middle of the block", "behind a bus", "at the library"], "correct": 0, "explanation": { "en": "Use the crosswalk and wait for the signal.", "es": "Usa el paso peatonal y espera la señal." } },
     { "question": { "en": "\"It's just around the corner\" means…", "es": "«It's just around the corner» significa…" }, "options": ["It's very close.", "It's very far.", "It's closed.", "It's on the map."], "correct": 0, "explanation": { "en": "\"Around the corner\" = muy cerca.", "es": "«Around the corner» = muy cerca." } }
   ],
+  "sentences": [
+    { "sentence": "Excuse me, how do I get to the post office?", "kind": "question", "bold": ["Excuse me", "how do I get to", "post office"], "es": "Disculpe, ¿cómo llego a la oficina de correos?" },
+    { "sentence": "Is there a pharmacy near here, or is it downtown?", "kind": "question", "bold": ["Is there a", "pharmacy", "near here", "downtown"], "es": "¿Hay una farmacia cerca de aquí, o está en el centro?" },
+    { "sentence": "Where is the library, across from the park?", "kind": "question", "bold": ["Where is", "library", "across from", "park"], "es": "¿Dónde está la biblioteca, enfrente del parque?" },
+    { "sentence": "Is the bank on the corner of Main and Fifth?", "kind": "question", "bold": ["bank", "on the corner of"], "es": "¿El banco está en la esquina de Main y la Quinta?" },
+    { "sentence": "How many blocks is the supermarket from here?", "kind": "question", "bold": ["blocks", "supermarket"], "es": "¿A cuántas cuadras está el supermercado de aquí?" },
+    { "sentence": "Go straight for two blocks and turn left at the traffic light.", "kind": "statement", "bold": ["Go straight", "blocks", "turn left", "traffic light"], "es": "Siga derecho dos cuadras y dé vuelta a la izquierda en el semáforo." },
+    { "sentence": "Don't cross here; use the crosswalk on the corner.", "kind": "statement", "bold": ["Don't cross", "crosswalk", "corner"], "es": "No cruce aquí; use el paso peatonal de la esquina." },
+    { "sentence": "The church is across from the library, around the corner.", "kind": "statement", "bold": ["church", "across from", "library", "around the corner"], "es": "La iglesia está enfrente de la biblioteca, a la vuelta de la esquina." },
+    { "sentence": "Turn right on Fifth Avenue, and the bank is on your left.", "kind": "statement", "bold": ["Turn right", "Avenue", "bank"], "es": "Dé vuelta a la derecha en la Quinta Avenida, y el banco está a su izquierda." },
+    { "sentence": "Don't turn left here; go straight to the next street.", "kind": "statement", "bold": ["Don't", "turn left", "go straight", "street"], "es": "No dé vuelta a la izquierda aquí; siga derecho hasta la siguiente calle." }
+  ],
   "story": {
     "title": "Lost Downtown",
     "text": "Carmen has an appointment at the public library downtown. She takes the bus alone for the first time. When she gets off, she doesn't know where to go. She sees a woman with a dog. \"Excuse me, how do I get to the library?\" \"Go straight for two blocks. Then turn left at the traffic light. The library is on your right, across from the church.\" \"Thank you! Is it far?\" \"No, it's a five-minute walk.\" Carmen walks two blocks. She waits at the crosswalk, turns left at the traffic light and… there is the church! Across from it is a big building: the library. Carmen smiles. Her first time downtown alone, and she isn't lost. In the library there is a sign: FREE ENGLISH CONVERSATION — WEDNESDAYS.",

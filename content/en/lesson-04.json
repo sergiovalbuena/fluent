@@ -65,6 +65,18 @@
     { "question": { "en": "What's the number after twelve?", "es": "¿Qué número sigue después de twelve?" }, "options": ["thirteen", "thirty", "eleven", "twenty"], "correct": 0, "explanation": { "en": "12 twelve, 13 thirteen.", "es": "12 twelve, 13 thirteen." } },
     { "question": { "en": "In the US, what is $3.50?", "es": "En Estados Unidos, ¿qué es $3.50?" }, "options": ["three dollars and fifty cents", "three thousand fifty dollars", "thirty-five dollars", "three hundred fifty dollars"], "correct": 0, "explanation": { "en": "The period separates dollars and cents: $3.50 = three dollars and fifty cents.", "es": "El punto separa dólares y centavos: $3.50 = tres dólares con cincuenta centavos." } }
   ],
+  "sentences": [
+    { "sentence": "How old is your granddaughter, ten or eleven?", "kind": "question", "bold": ["How old", "ten", "eleven"], "es": "¿Cuántos años tiene tu nieta, diez u once?" },
+    { "sentence": "How many children does your neighbor have?", "kind": "question", "bold": ["How many", "children", "neighbor"], "es": "¿Cuántos hijos tiene tu vecina?" },
+    { "sentence": "What's your phone number and your address?", "kind": "question", "bold": ["phone number", "address"], "es": "¿Cuál es tu número de teléfono y tu dirección?" },
+    { "sentence": "Is it fifteen or fifty dollars?", "kind": "question", "bold": ["fifteen", "fifty", "dollars"], "es": "¿Son quince o cincuenta dólares?" },
+    { "sentence": "How old are you, if I can ask?", "kind": "question", "bold": ["How old are you"], "es": "¿Cuántos años tienes, si puedo preguntar?" },
+    { "sentence": "I have two children and three grandchildren.", "kind": "statement", "bold": ["have", "two", "children", "three", "grandchildren"], "es": "Tengo dos hijos y tres nietos." },
+    { "sentence": "The coffee is three dollars and the cake is five.", "kind": "statement", "bold": ["three", "dollars", "five"], "es": "El café cuesta tres dólares y el pastel cinco." },
+    { "sentence": "My address is twenty Palm Street.", "kind": "statement", "bold": ["address", "twenty"], "es": "Mi dirección es calle Palm número veinte." },
+    { "sentence": "I'm fifty-eight and my husband is sixty.", "kind": "statement", "bold": ["I'm", "fifty-eight", "sixty"], "es": "Tengo cincuenta y ocho y mi esposo tiene sesenta." },
+    { "sentence": "I need twelve eggs and two books for school.", "kind": "statement", "bold": ["twelve", "two", "books"], "es": "Necesito doce huevos y dos libros para la escuela." }
+  ],
   "story": {
     "title": "Fifteen or Fifty?",
     "text": "Carmen is at the post office with Leo. She wants to send a small box to her sister in Mexico. \"How much is it?\" she asks. \"Fifteen dollars,\" says the man. Carmen hears \"fifty\". \"Fifty? That's a lot!\" Leo laughs. \"No, Grandma. Fifteen. One, five.\" \"Ah, fifteen! Okay.\" The man needs her phone number and her address. \"My number is six one nine, five five five, oh one four two.\" \"And your address?\" \"Two hundred ten Palm Street.\" \"Perfect. Thank you!\" Outside, Carmen says to Leo: \"English numbers are difficult. Fifteen, fifty, sixteen, sixty…\" \"Don't worry, Grandma. You are a good student. And I'm a good teacher!\" Leo is eight years old, and he is very proud.",

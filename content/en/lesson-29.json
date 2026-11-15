@@ -60,6 +60,18 @@
     { "question": { "en": "Your friend wants to tell you the end of the movie. You say:", "es": "Tu amigo quiere contarte el final de la película. Dices:" }, "options": ["No spoilers, please!", "Let's get popcorn!", "I loved it!", "Where are our seats?"], "correct": 0, "explanation": { "en": "A spoiler reveals the end.", "es": "Un «spoiler» revela el final." } },
     { "question": { "en": "What is the superlative of \"bad\"?", "es": "¿Cuál es el superlativo de «bad»?" }, "options": ["the worst", "the baddest", "the worse", "the most bad"], "correct": 0, "explanation": { "en": "Bad → worse → the worst.", "es": "Bad → worse → the worst." } }
   ],
+  "sentences": [
+    { "sentence": "What's playing at the movies tonight?", "kind": "question", "bold": ["What's playing", "the movies"], "es": "¿Qué dan en el cine esta noche?" },
+    { "sentence": "Who is the most famous actress in Mexico?", "kind": "question", "bold": ["the most famous", "actress"], "es": "¿Quién es la actriz más famosa de México?" },
+    { "sentence": "Does the movie have subtitles in Spanish?", "kind": "question", "bold": ["movie", "subtitles"], "es": "¿La película tiene subtítulos en español?" },
+    { "sentence": "Was it the funniest comedy of the year?", "kind": "question", "bold": ["the funniest", "comedy"], "es": "¿Fue la comedia más graciosa del año?" },
+    { "sentence": "Where are our seats, near the screen?", "kind": "question", "bold": ["seats", "screen"], "es": "¿Dónde están nuestros asientos, cerca de la pantalla?" },
+    { "sentence": "It was the longest movie of the year, but I loved it.", "kind": "statement", "bold": ["the longest", "movie"], "es": "Fue la película más larga del año, pero me encantó." },
+    { "sentence": "This is the biggest theater in the city.", "kind": "statement", "bold": ["the biggest", "theater", "in"], "es": "Este es el teatro más grande de la ciudad." },
+    { "sentence": "That actor is the best, but the play was the worst.", "kind": "statement", "bold": ["actor", "the best", "play", "the worst"], "es": "Ese actor es el mejor, pero la obra fue la peor." },
+    { "sentence": "We bought popcorn before the show.", "kind": "statement", "bold": ["popcorn", "show"], "es": "Compramos palomitas antes de la función." },
+    { "sentence": "The drama was sad, but it was the most beautiful show of the year.", "kind": "statement", "bold": ["drama", "the most beautiful", "show", "of"], "es": "El drama fue triste, pero fue la función más bonita del año." }
+  ],
   "story": {
     "title": "Movie Night",
     "text": "On Friday night, Ana invites Carmen to the movies. \"What's playing?\" asks Carmen. \"A new comedy. People say it's the funniest movie of the year.\" At the theater, Ana buys two tickets for the seven o'clock show. Carmen buys the biggest popcorn on the menu. \"Does it have subtitles?\" she asks. \"Only in English,\" says Ana. \"But that's good practice!\" The movie is about a grandmother who travels to New York alone. The actress is wonderful. Carmen understands most of the jokes and laughs a lot. At the end, everybody claps. \"What did you think?\" asks Ana. \"It was the best movie I've ever seen in English! And the grandmother… she is a little like me.\" Ana laughs. \"Maybe one day you're going to travel to New York too.\"",

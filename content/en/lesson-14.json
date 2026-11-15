@@ -61,6 +61,18 @@
     { "question": { "en": "You learned to swim as a child and you still know how. How do you say it?", "es": "Aprendiste a nadar de pequeño y sigues sabiendo. ¿Cómo lo dices?" }, "options": ["I can swim.", "I know swim.", "I swim know.", "I can to swim."], "correct": 0, "explanation": { "en": "For abilities English uses \"can\": I can swim.", "es": "Para habilidades el inglés usa «can»: I can swim." } },
     { "question": { "en": "Where can you see lions and elephants in a city?", "es": "¿Dónde puedes ver leones y elefantes en una ciudad?" }, "options": ["at the zoo", "at the bakery", "at the bank", "at school"], "correct": 0, "explanation": { "en": "Wild animals live at the zoo in the city.", "es": "En la ciudad, los animales salvajes están en el zoológico (zoo)." } }
   ],
+  "sentences": [
+    { "sentence": "Can your dog swim in the lake?", "kind": "question", "bold": ["Can", "dog", "swim"], "es": "¿Tu perro puede nadar en el lago?" },
+    { "sentence": "Do you have a pet at home, a cat or a dog?", "kind": "question", "bold": ["Do you have a pet", "cat", "dog"], "es": "¿Tienes una mascota en casa, un gato o un perro?" },
+    { "sentence": "Can elephants and bears swim?", "kind": "question", "bold": ["Can", "elephants", "bears", "swim"], "es": "¿Los elefantes y los osos pueden nadar?" },
+    { "sentence": "Can Leo ride a horse?", "kind": "question", "bold": ["Can", "ride", "horse"], "es": "¿Leo puede montar a caballo?" },
+    { "sentence": "Are there lions and bears at the zoo?", "kind": "question", "bold": ["lions", "bears", "zoo"], "es": "¿Hay leones y osos en el zoológico?" },
+    { "sentence": "Birds can fly, but chickens can't fly very well.", "kind": "statement", "bold": ["Birds", "can", "fly", "chickens", "can't", "fly"], "es": "Los pájaros pueden volar, pero las gallinas no pueden volar muy bien." },
+    { "sentence": "My grandson has a puppy, and it can't sleep alone.", "kind": "statement", "bold": ["puppy", "can't", "sleep"], "es": "Mi nieto tiene un cachorro, y no puede dormir solo." },
+    { "sentence": "At the zoo, the monkeys can do funny things.", "kind": "statement", "bold": ["zoo", "monkeys", "can"], "es": "En el zoológico, los monos pueden hacer cosas graciosas." },
+    { "sentence": "Linda can cook, but she can't swim.", "kind": "statement", "bold": ["can", "cook", "can't", "swim"], "es": "Linda sabe cocinar, pero no sabe nadar." },
+    { "sentence": "The seals can swim fast, and the kids love them.", "kind": "statement", "bold": ["seals", "can", "swim"], "es": "Las focas pueden nadar rápido, y a los niños les encantan." }
+  ],
   "story": {
     "title": "A Day at the Zoo",
     "text": "On Saturday, Carmen goes to the San Diego Zoo with Leo. The zoo is very big. \"Grandma, look! The monkeys can climb so fast!\" Carmen smiles. \"And look at the elephants. They are enormous.\" Near the water there are seals. \"Can seals swim?\" asks Carmen. \"Yes, they can! And they can sleep in the water,\" says Leo. He knows everything about animals. They see lions, bears and many birds. \"Grandma, can you swim?\" \"Yes, I can. But I can't climb like a monkey!\" Leo laughs. At the exit, there is a family with a puppy. \"What a cute puppy!\" says Carmen. \"Can I pet him?\" \"Of course. He's very friendly.\" Leo looks at Carmen. \"Grandma… can we have a pet?\" \"Ask your mother!\"",

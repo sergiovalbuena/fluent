@@ -60,6 +60,18 @@
     { "question": { "en": "Join the sentences: \"I have a friend. She lives in Texas.\"", "es": "Une las oraciones: «I have a friend. She lives in Texas.»" }, "options": ["I have a friend who lives in Texas.", "I have a friend which lives in Texas.", "I have a friend she who lives in Texas.", "I have a friend where lives in Texas."], "correct": 0, "explanation": { "en": "Person → who replaces \"she\".", "es": "Persona → who reemplaza a «she»." } },
     { "question": { "en": "A promise that the store will fix the product if it breaks is a…", "es": "La promesa de que la tienda arreglará el producto si se rompe es una…" }, "options": ["warranty", "receipt", "pendant", "chain"], "correct": 0, "explanation": { "en": "Warranty = garantía.", "es": "Warranty = garantía." } }
   ],
+  "sentences": [
+    { "sentence": "Is this necklace made of gold or silver?", "kind": "question", "bold": ["necklace", "made of", "gold", "silver"], "es": "¿Este collar es de oro o de plata?" },
+    { "sentence": "Does it come in gold, or only in silver?", "kind": "question", "bold": ["Does it come in", "gold", "silver"], "es": "¿Viene en oro, o solo en plata?" },
+    { "sentence": "Can you engrave my granddaughter's name on this bracelet?", "kind": "question", "bold": ["engrave", "bracelet"], "es": "¿Puede grabar el nombre de mi nieta en esta pulsera?" },
+    { "sentence": "Does this watch have a warranty, or can you repair it?", "kind": "question", "bold": ["watch", "warranty", "repair"], "es": "¿Este reloj tiene garantía, o lo puede reparar?" },
+    { "sentence": "Can I try on the pearl earrings that are in the window?", "kind": "question", "bold": ["pearl", "earrings", "that"], "es": "¿Me puedo probar los aretes de perla que están en el aparador?" },
+    { "sentence": "I want the pendant that has a small heart.", "kind": "statement", "bold": ["pendant", "that"], "es": "Quiero el dije que tiene un corazoncito." },
+    { "sentence": "This is the store where my husband bought my ring.", "kind": "statement", "bold": ["where", "ring"], "es": "Esta es la tienda donde mi esposo compró mi anillo." },
+    { "sentence": "The jeweler who works here is very kind and patient.", "kind": "statement", "bold": ["jeweler", "who"], "es": "El joyero que trabaja aquí es muy amable y paciente." },
+    { "sentence": "It's a gift for someone who is very special to me.", "kind": "statement", "bold": ["who"], "es": "Es un regalo para alguien que es muy especial para mí." },
+    { "sentence": "The chain which you showed me is too long for her.", "kind": "statement", "bold": ["chain", "which"], "es": "La cadena que me mostró es demasiado larga para ella." }
+  ],
   "story": {
     "title": "A Heart for Laura",
     "text": "For Laura and Mike's anniversary, Carmen wants to give her daughter something special. She goes to a small jewelry store downtown. The jeweler is an old man who has worked there for forty years. \"I'm looking for a necklace for my daughter,\" says Carmen. He shows her many chains, pendants and earrings. Carmen points. \"I like the one that has a small heart. Is it made of gold?\" \"No, it's made of silver. But it comes in gold too.\" \"Silver is perfect. Can you engrave something on the back?\" \"Of course. What would you like?\" Carmen thinks. \"Laura, the daughter who gave me a new life.\" The jeweler looks at her. \"That's beautiful.\" A week later, at dinner, Laura opens the box and reads the words. She can't speak; she just hugs her mother. Leo whispers to Mike: \"Dad, why is everybody crying? It's a happy day!\"",

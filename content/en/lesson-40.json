@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"___ we meet at the theater at seven?\"", "es": "Completa: «___ we meet at the theater at seven?»" }, "options": ["Shall", "Do", "Are", "Will to"], "correct": 0, "explanation": { "en": "\"Shall we…?\" suggests or arranges.", "es": "«Shall we…?» propone o acuerda." } },
     { "question": { "en": "After a party, you thank the host. You say:", "es": "Después de una fiesta, le das las gracias al anfitrión. Dices:" }, "options": ["Thanks for inviting me!", "Thanks for invite me!", "Thank you invited me!", "Thanks to inviting!"], "correct": 0, "explanation": { "en": "Thanks for + verb-ing.", "es": "Thanks for + verbo-ing." } }
   ],
+  "sentences": [
+    { "sentence": "Why don't we go to a musical on Saturday night?", "kind": "question", "bold": ["Why don't we", "musical"], "es": "¿Por qué no vamos a un musical el sábado en la noche?" },
+    { "sentence": "How about seeing a show after dinner?", "kind": "question", "bold": ["How about", "seeing", "show"], "es": "¿Qué tal si vemos un espectáculo después de cenar?" },
+    { "sentence": "Shall we meet at the subway station at seven?", "kind": "question", "bold": ["Shall we", "subway"], "es": "¿Nos vemos en la estación del metro a las siete?" },
+    { "sentence": "Do you want to hang out with us on Friday?", "kind": "question", "bold": ["hang out"], "es": "¿Quieres salir con nosotros el viernes?" },
+    { "sentence": "Did you accept Elena's invitation to the party?", "kind": "question", "bold": ["accept", "invitation"], "es": "¿Aceptaste la invitación de Elena a la fiesta?" },
+    { "sentence": "A night out in the city? That sounds great!", "kind": "statement", "bold": ["night out", "That sounds great"], "es": "¿Una noche de fiesta en la ciudad? ¡Suena genial!" },
+    { "sentence": "I'd love to, but I'm very tired tonight.", "kind": "statement", "bold": ["I'd love to", "but"], "es": "Me encantaría, pero estoy muy cansada esta noche." },
+    { "sentence": "The lights were beautiful, and the crowd was very exciting.", "kind": "statement", "bold": ["lights", "crowd", "exciting"], "es": "Las luces eran hermosas, y el público era muy emocionante." },
+    { "sentence": "After the show, the applause lasted five minutes.", "kind": "statement", "bold": ["show", "applause"], "es": "Después del espectáculo, el aplauso duró cinco minutos." },
+    { "sentence": "We came home after midnight, but it was so much fun.", "kind": "statement", "bold": ["midnight", "fun"], "es": "Llegamos a casa después de medianoche, pero fue muy divertido." }
+  ],
   "story": {
     "title": "Broadway!",
     "text": "It's Carmen's last night in New York. David has an idea. \"Why don't we go out tonight? How about a Broadway show?\" \"That sounds great!\" says Carmen. Elena laughs. \"I'd love to, but I'm too old for late nights.\" \"Mom, you're coming!\" says David. They buy cheap tickets for a musical in Times Square. \"Shall we take the subway?\" asks David. \"Yes, let's take the subway. It's an adventure!\" Times Square is full of lights and crowds. The musical is exciting: the songs, the dancers, the colors. At the end, there is a long applause and Carmen stands up and claps with everybody. They have hot chocolate before midnight. \"Thanks for inviting me,\" Carmen tells David. \"What a fun night! I want to come back next year.\" Elena smiles. \"Next time, I'm going to San Diego. Why don't we see the ocean together?\"",

@@ -60,6 +60,18 @@
     { "question": { "en": "The interviewer says \"Tell me about yourself.\" A good start is:", "es": "El entrevistador dice «Tell me about yourself.». Un buen inicio es:" }, "options": ["I'm a hardworking person with ten years of experience…", "No.", "What do you want?", "I don't know myself."], "correct": 0, "explanation": { "en": "Talk positively about your experience and qualities.", "es": "Habla en positivo de tu experiencia y cualidades." } },
     { "question": { "en": "Short answer: \"Have you ever managed a team?\" (yes)", "es": "Respuesta corta: «Have you ever managed a team?» (sí)" }, "options": ["Yes, I have.", "Yes, I did.", "Yes, I managed.", "Yes, I am."], "correct": 0, "explanation": { "en": "Short answer: Yes, I have.", "es": "Respuesta corta: Yes, I have." } }
   ],
+  "sentences": [
+    { "sentence": "Have you ever worked as a cashier or in a store?", "kind": "question", "bold": ["Have you ever worked", "cashier"], "es": "¿Alguna vez ha trabajado como cajera o en una tienda?" },
+    { "sentence": "Are you interested in a full-time job or part-time?", "kind": "question", "bold": ["Are you interested in", "full-time", "part-time"], "es": "¿Le interesa un trabajo de tiempo completo o de medio tiempo?" },
+    { "sentence": "What skills do you have for this job?", "kind": "question", "bold": ["skills", "job"], "es": "¿Qué habilidades tiene para este trabajo?" },
+    { "sentence": "Are you available for the night shift on weekends?", "kind": "question", "bold": ["available", "shift"], "es": "¿Está disponible para el turno de noche los fines de semana?" },
+    { "sentence": "How much is the salary per hour?", "kind": "question", "bold": ["salary", "per hour"], "es": "¿Cuánto es el sueldo por hora?" },
+    { "sentence": "I've worked in a bakery, and I worked there until 2020.", "kind": "statement", "bold": ["I've worked", "I worked"], "es": "He trabajado en una panadería, y trabajé ahí hasta 2020." },
+    { "sentence": "I'm good at cooking and organizing the kitchen.", "kind": "statement", "bold": ["I'm good at"], "es": "Soy buena para cocinar y organizar la cocina." },
+    { "sentence": "I've taught children for thirty years, so I'm very patient.", "kind": "statement", "bold": ["I've taught"], "es": "He enseñado a niños durante treinta años, así que soy muy paciente." },
+    { "sentence": "I'm reliable and hardworking, and I have good references.", "kind": "statement", "bold": ["reliable", "hardworking", "references"], "es": "Soy confiable y trabajadora, y tengo buenas referencias." },
+    { "sentence": "I sent my résumé and my application, and they want to hire me!", "kind": "statement", "bold": ["résumé", "application", "hire"], "es": "Mandé mi currículum y mi solicitud, ¡y me quieren contratar!" }
+  ],
   "story": {
     "title": "Ana's Interview",
     "text": "Ana has an interview for a job at a hotel front desk. She's nervous, so Carmen helps her practice. \"Okay, I'm the manager,\" says Carmen. \"Tell me about yourself.\" \"Well, I'm from Brazil. I've lived in San Diego for three years. I've worked as a receptionist before.\" \"Where did you work?\" \"I worked at a dental office from 2021 to 2023.\" \"Have you ever worked at a hotel?\" \"No, I haven't. But I've helped many customers, and I'm good at solving problems.\" \"Do you speak other languages?\" \"Yes! Portuguese, Spanish and English.\" Carmen claps. \"Hired!\" The next day, Ana goes to the real interview. She answers every question with a smile. In the evening she calls Carmen. \"They asked me 'When can you start?' I start on Monday!\" \"Congratulations! I knew it.\"",

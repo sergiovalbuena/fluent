@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"It's easy ___ use.\"", "es": "Completa: «It's easy ___ use.»" }, "options": ["to", "for", "of", "at"], "correct": 0, "explanation": { "en": "easy + to + verb.", "es": "easy + to + verbo." } },
     { "question": { "en": "You want to choose between two phones. You ask:", "es": "Quieres elegir entre dos teléfonos. Preguntas:" }, "options": ["Which one is better?", "What one is better?", "Who is better?", "Which better one is?"], "correct": 0, "explanation": { "en": "Which one…? for choosing between options.", "es": "Which one…? para elegir entre opciones." } }
   ],
+  "sentences": [
+    { "sentence": "Which one takes better photos, this one or that one?", "kind": "question", "bold": ["Which one", "one", "one"], "es": "¿Cuál toma mejores fotos, este o ese?" },
+    { "sentence": "How long does the battery life last on this smartphone?", "kind": "question", "bold": ["battery life", "smartphone"], "es": "¿Cuánto dura la batería de este teléfono inteligente?" },
+    { "sentence": "Is there a prepaid plan, or do I need a contract?", "kind": "question", "bold": ["prepaid", "plan", "contract"], "es": "¿Hay un plan de prepago, o necesito un contrato?" },
+    { "sentence": "Can you move my photos and contacts to the new phone?", "kind": "question", "bold": ["contacts"], "es": "¿Puede pasar mis fotos y contactos al teléfono nuevo?" },
+    { "sentence": "Does it have enough storage for my apps?", "kind": "question", "bold": ["storage", "apps"], "es": "¿Tiene suficiente almacenamiento para mis aplicaciones?" },
+    { "sentence": "This phone is cheaper and lighter than that one.", "kind": "statement", "bold": ["cheaper", "lighter"], "es": "Este teléfono es más barato y más ligero que ese." },
+    { "sentence": "This is the easiest phone to use, and the screen is big.", "kind": "statement", "bold": ["the easiest", "screen"], "es": "Este es el teléfono más fácil de usar, y la pantalla es grande." },
+    { "sentence": "I don't want the black one; I want the blue one.", "kind": "statement", "bold": ["one", "one"], "es": "No quiero el negro; quiero el azul." },
+    { "sentence": "It's easy to use, but it's hard to read the small letters.", "kind": "statement", "bold": ["easy to", "hard to"], "es": "Es fácil de usar, pero es difícil leer las letras chiquitas." },
+    { "sentence": "I need a case and a screen protector for my new phone.", "kind": "statement", "bold": ["case", "screen protector"], "es": "Necesito una funda y un protector de pantalla para mi teléfono nuevo." }
+  ],
   "story": {
     "title": "A New Phone",
     "text": "Carmen's old phone is very slow, and the battery doesn't last. Leo goes with her to the phone store. \"I'm looking for a new phone,\" Carmen tells the clerk. \"Something easy to use, with a good camera for photos of my grandson.\" The clerk shows her two phones. \"This one is cheaper and lighter. That one has a bigger screen and the best camera in the store.\" \"Which one is easier to use?\" \"This one. It's the easiest phone we have.\" Leo whispers, \"Grandma, the one with the big screen is better for video calls with Aunt Rosa.\" Carmen thinks. \"How long does the battery last?\" \"Two days.\" \"Okay. I'll take the one with the big screen. Can you set it up in Spanish and move my photos and contacts?\" \"Of course.\" At home, Carmen takes her first photo: Leo, smiling, with the new red case he chose.",

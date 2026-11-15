@@ -59,6 +59,18 @@
     { "question": { "en": "Someone tells you surprising news. What can you say?", "es": "Alguien te cuenta una noticia sorprendente. ¿Qué puedes decir?" }, "options": ["Really?", "Me neither.", "Wait a minute.", "No problem."], "correct": 0, "explanation": { "en": "\"Really?\" shows surprise.", "es": "«Really?» muestra sorpresa." } },
     { "question": { "en": "Complete: \"We ___ coffee every morning.\"", "es": "Completa: «We ___ coffee every morning.»" }, "options": ["drink", "drinks", "drinking", "to drink"], "correct": 0, "explanation": { "en": "With \"we\" the present simple has no -s: we drink.", "es": "Con «we» el presente simple no lleva -s: we drink." } }
   ],
+  "sentences": [
+    { "sentence": "Do you like coffee in the morning or tea?", "kind": "question", "bold": ["Do you", "like"], "es": "¿Te gusta el café en la mañana o el té?" },
+    { "sentence": "Do you understand the teacher every day?", "kind": "question", "bold": ["Do you", "understand", "every day"], "es": "¿Entiendes a la maestra todos los días?" },
+    { "sentence": "Do you need help with your bags?", "kind": "question", "bold": ["Do you", "need"], "es": "¿Necesitas ayuda con tus bolsas?" },
+    { "sentence": "Do you know if the store is open now?", "kind": "question", "bold": ["Do you", "know"], "es": "¿Sabes si la tienda está abierta ahora?" },
+    { "sentence": "Do you want a coffee or a glass of water?", "kind": "question", "bold": ["Do you", "want"], "es": "¿Quieres un café o un vaso de agua?" },
+    { "sentence": "I don't know the word, but I understand the sentence.", "kind": "statement", "bold": ["I don't know", "I understand"], "es": "No conozco la palabra, pero entiendo la oración." },
+    { "sentence": "I need a new phone, and I want a big one.", "kind": "statement", "bold": ["I need", "I want"], "es": "Necesito un teléfono nuevo, y quiero uno grande." },
+    { "sentence": "I don't like cold coffee. — Me neither!", "kind": "statement", "bold": ["I don't", "like", "Me neither"], "es": "No me gusta el café frío. — ¡A mí tampoco!" },
+    { "sentence": "We drink coffee together every day at nine.", "kind": "statement", "bold": ["We", "every day"], "es": "Tomamos café juntas todos los días a las nueve." },
+    { "sentence": "Wait, I don't think so; the store is closed today.", "kind": "statement", "bold": ["Wait", "I don't think so"], "es": "Espera, creo que no; la tienda está cerrada hoy." }
+  ],
   "story": {
     "title": "How Do You Say…?",
     "text": "Every day after class, Carmen and Ana drink coffee together. They practice English. Today Carmen has a question. \"How do you say 'cuchara' in English?\" Ana thinks. \"Spoon. I think so… Yes, spoon.\" \"And what does 'awesome' mean? My grandson says it every day.\" Ana laughs. \"It means 'great' or 'very good'.\" \"Okay! This coffee is awesome!\" A waiter comes to the table. He speaks very fast. Carmen and Ana look at each other. \"Sorry, I don't understand,\" says Carmen. The waiter speaks again, slowly: \"Do you need anything else?\" \"Oh! No, thank you. We don't need anything.\" Ana says, \"I love this place.\" \"Me too!\" says Carmen. \"And I love our English practice.\"",

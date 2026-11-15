@@ -1427,7 +1427,9 @@ function QAQuestionList({
 function BoldParts({ text, parts }: { text: string; parts?: string[] }) {
   if (!parts?.length) return <>{text}</>
   const escaped = [...parts].sort((a, b) => b.length - a.length).map(p => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-  const pieces = text.split(new RegExp(`(${escaped.join('|')})`, 'g'))
+  // Whole words only: "a" or "is" must not light up inside "park" or "This". A part
+  // ending in an apostrophe (French "qu'", "d'") is glued to the next word.
+  const pieces = text.split(new RegExp(`(?<![\\p{L}\\p{N}])(${escaped.join('|')})(?:(?<=['’])|(?![\\p{L}\\p{N}]))`, 'gu'))
   return <>{pieces.map((piece, i) => parts.includes(piece) ? <strong key={i} className="font-bold">{piece}</strong> : piece)}</>
 }
 

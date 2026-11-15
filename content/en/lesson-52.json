@@ -60,6 +60,18 @@
     { "question": { "en": "\"We caught it just in time\" means…", "es": "«We caught it just in time» significa…" }, "options": ["We got on just before it left.", "We missed it.", "We arrived very early.", "We canceled the trip."], "correct": 0, "explanation": { "en": "Catch = llegar a tiempo para tomarlo.", "es": "Catch = llegar a tiempo para tomarlo." } },
     { "question": { "en": "What do you see from the window: mountains, sea, fields. That's the…", "es": "Lo que ves por la ventana: montañas, mar, campos. Eso es el…" }, "options": ["scenery", "timetable", "luggage", "track"], "correct": 0, "explanation": { "en": "Scenery = paisaje.", "es": "Scenery = paisaje." } }
   ],
+  "sentences": [
+    { "sentence": "What time does the train to Los Angeles leave?", "kind": "question", "bold": ["What time does", "leave"], "es": "¿A qué hora sale el tren a Los Ángeles?" },
+    { "sentence": "Which platform does it leave from, one or two?", "kind": "question", "bold": ["Which platform", "does", "leave"], "es": "¿De qué andén sale, el uno o el dos?" },
+    { "sentence": "How many stops are there from San Diego to Los Angeles?", "kind": "question", "bold": ["stops", "from", "to"], "es": "¿Cuántas paradas hay de San Diego a Los Ángeles?" },
+    { "sentence": "Is the train on time, or is there a delay?", "kind": "question", "bold": ["on time", "delay"], "es": "¿El tren va a tiempo, o hay retraso?" },
+    { "sentence": "Can I put my suitcase on the luggage rack?", "kind": "question", "bold": ["luggage rack"], "es": "¿Puedo poner mi maleta en el portaequipaje?" },
+    { "sentence": "The train leaves at 9:15 on Tuesday morning.", "kind": "statement", "bold": ["leaves", "at", "on", "morning"], "es": "El tren sale a las 9:15 el martes en la mañana." },
+    { "sentence": "Hurry, or we'll miss the train!", "kind": "statement", "bold": ["miss"], "es": "¡Apúrate, o vamos a perder el tren!" },
+    { "sentence": "We caught the train just in time and found two seats.", "kind": "statement", "bold": ["caught"], "es": "Alcanzamos el tren justo a tiempo y encontramos dos asientos." },
+    { "sentence": "The conductor checked our tickets in the second car.", "kind": "statement", "bold": ["conductor", "car"], "es": "El conductor revisó nuestros boletos en el segundo vagón." },
+    { "sentence": "The scenery along the coast is beautiful in the morning.", "kind": "statement", "bold": ["scenery", "coast", "morning"], "es": "El paisaje a lo largo de la costa es hermoso en la mañana." }
+  ],
   "story": {
     "title": "The Coast Train",
     "text": "Kenji invites Carmen and Leo to visit a Japanese garden in Los Angeles. They take the train. \"What time does the train leave?\" asks Carmen at the station. \"At nine fifteen from platform two,\" says the man at the ticket office. \"And what time does it arrive in Los Angeles?\" \"At twelve oh five.\" It's nine ten, and they're still buying coffee. \"Hurry, Grandma, we'll miss the train!\" They run to platform two. The conductor shouts, \"All aboard!\" They catch it just in time. On the train, Leo sits by the window on the left side. The train goes along the coast, and the scenery is beautiful: the ocean, surfers and small beach towns. \"Tickets, please,\" says the conductor. Carmen shows the tickets. \"How many stops are there?\" \"Eight more. Enjoy the ride!\" Leo presses his face to the window. \"Grandma, this is better than a plane!\"",

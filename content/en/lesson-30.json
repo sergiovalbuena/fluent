@@ -60,6 +60,18 @@
     { "question": { "en": "Someone calls you, but they want another person. You say:", "es": "Alguien te llama, pero busca a otra persona. Dices:" }, "options": ["Sorry, you have the wrong number.", "Sorry, my battery is dying.", "Hold on, I'll text you.", "Thanks for calling, bye."], "correct": 0, "explanation": { "en": "Wrong number = número equivocado.", "es": "Wrong number = número equivocado." } },
     { "question": { "en": "A stranger calls and asks for your bank password. You should…", "es": "Un desconocido llama y te pide la contraseña del banco. Debes…" }, "options": ["hang up and call the bank's official number", "give it quickly", "text it to them", "leave a message with it"], "correct": 0, "explanation": { "en": "Never share passwords by phone. Hang up.", "es": "Nunca compartas contraseñas por teléfono. Cuelga." } }
   ],
+  "sentences": [
+    { "sentence": "Can I leave a message for Grace, please?", "kind": "question", "bold": ["Can I", "leave a message"], "es": "¿Puedo dejar un mensaje para Grace, por favor?" },
+    { "sentence": "The signal is bad; could you speak up, please?", "kind": "question", "bold": ["signal", "could you", "speak up"], "es": "La señal está mala; ¿podría hablar más fuerte, por favor?" },
+    { "sentence": "My battery is dying; do you have a charger?", "kind": "question", "bold": ["battery", "charger"], "es": "Mi batería se está acabando; ¿tienes un cargador?" },
+    { "sentence": "Can I speak to Laura, or is she busy?", "kind": "question", "bold": ["Can I"], "es": "¿Puedo hablar con Laura, o está ocupada?" },
+    { "sentence": "Why didn't you answer my video call last night?", "kind": "question", "bold": ["answer", "video call"], "es": "¿Por qué no contestaste mi videollamada anoche?" },
+    { "sentence": "Hello, this is Carmen, Laura's mother.", "kind": "statement", "bold": ["this is"], "es": "Hola, habla Carmen, la mamá de Laura." },
+    { "sentence": "Hold on a minute, please; I'll get a pen.", "kind": "statement", "bold": ["Hold on", "I'll"], "es": "Espere un momento, por favor; voy por una pluma." },
+    { "sentence": "I'll call you back in ten minutes, I promise.", "kind": "statement", "bold": ["I'll call you back"], "es": "Te devuelvo la llamada en diez minutos, te lo prometo." },
+    { "sentence": "Sorry, you have the wrong number; please don't hang up so fast.", "kind": "statement", "bold": ["wrong number", "hang up"], "es": "Perdón, tiene el número equivocado; por favor no cuelgue tan rápido." },
+    { "sentence": "I'll text you the address and I'll be there at five.", "kind": "statement", "bold": ["I'll", "text", "I'll"], "es": "Te mando el domicilio por mensaje y estaré ahí a las cinco." }
+  ],
   "story": {
     "title": "The Important Call",
     "text": "Carmen's phone rings. It's a number she doesn't know. \"Hello?\" \"Hello, this is Grace from the bakery. Can I speak to Carmen?\" \"This is Carmen! Hi, Grace!\" \"Carmen, I have a question. Could you work here on Saturdays? Just in the mornings.\" Carmen's heart beats fast. \"Sorry, could you speak up, please? The signal is bad.\" Grace repeats the question louder. \"Yes! I'd love to!\" says Carmen. \"Great. I'll send you a message with the details.\" \"Thank you so much. I'll be there at seven on Saturday, I promise.\" After she hangs up, Carmen calls Laura. The line is busy, so she leaves a voicemail: \"Laura, call me back! I have big news!\" Two minutes later her phone rings again. \"Mom, what happened?\" \"I have a job!\"",

@@ -59,6 +59,18 @@
     { "question": { "en": "Choose the correct sentence about Linda.", "es": "Elige la oración correcta sobre Linda." }, "options": ["She is my neighbor.", "She are my neighbor.", "She am my neighbor.", "She be my neighbor."], "correct": 0, "explanation": { "en": "With \"he\" and \"she\" the verb \"to be\" is \"is\".", "es": "Con «he» y «she» el verbo «to be» es «is»." } },
     { "question": { "en": "Which one is a friendly way to say goodbye?", "es": "¿Cuál es una forma amable de despedirse?" }, "options": ["Take care!", "Good morning!", "How are you?", "Nice to meet you."], "correct": 0, "explanation": { "en": "\"Take care\" means you wish the other person well when you leave.", "es": "«Take care» significa que le deseas lo mejor a la otra persona al despedirte." } }
   ],
+  "sentences": [
+    { "sentence": "Hi, I'm Carmen and you are my new neighbor, right?", "kind": "question", "bold": ["Hi", "you are", "neighbor"], "es": "Hola, soy Carmen y tú eres mi nueva vecina, ¿verdad?" },
+    { "sentence": "Good morning, Linda! How are you today?", "kind": "question", "bold": ["Good morning", "How are you"], "es": "¡Buenos días, Linda! ¿Cómo estás hoy?" },
+    { "sentence": "Are you Laura's friend from work?", "kind": "question", "bold": ["Are you"], "es": "¿Eres la amiga de Laura del trabajo?" },
+    { "sentence": "Is she your neighbor too?", "kind": "question", "bold": ["Is she", "neighbor"], "es": "¿Ella también es tu vecina?" },
+    { "sentence": "What's your name, and are you new here?", "kind": "question", "bold": ["name", "are you"], "es": "¿Cómo te llamas, y eres nuevo aquí?" },
+    { "sentence": "I'm fine, thanks, but I'm a little tired today.", "kind": "statement", "bold": ["I'm fine", "thanks", "I'm"], "es": "Estoy bien, gracias, pero estoy un poco cansada hoy." },
+    { "sentence": "She's my neighbor and she is very nice.", "kind": "statement", "bold": ["She's", "neighbor", "she is"], "es": "Ella es mi vecina y es muy amable." },
+    { "sentence": "Nice to meet you, Linda. I am Laura's mother.", "kind": "statement", "bold": ["Nice to meet you", "I am"], "es": "Mucho gusto, Linda. Soy la mamá de Laura." },
+    { "sentence": "Good night, Leo. See you tomorrow at school.", "kind": "statement", "bold": ["Good night", "See you tomorrow"], "es": "Buenas noches, Leo. Nos vemos mañana en la escuela." },
+    { "sentence": "Goodbye for now, and take care!", "kind": "statement", "bold": ["Goodbye", "take care"], "es": "¡Adiós por ahora, y cuídate!" }
+  ],
   "story": {
     "title": "A New Neighbor",
     "text": "Carmen is from Guadalajara, Mexico. Today she is in San Diego. Her daughter Laura lives here. It is eight in the morning, and Carmen is outside with her coffee. A woman opens the door of the next house. \"Good morning!\" says the woman. \"Hello! Good morning,\" says Carmen. \"I'm Linda. I'm your neighbor.\" \"Nice to meet you, Linda. My name is Carmen.\" \"Nice to meet you too, Carmen. How are you?\" \"I'm fine, thank you. And you?\" \"Very well, thanks. Welcome to San Diego!\" Carmen smiles. Her English is not perfect, but she is happy. Linda is nice. \"Have a nice day, Carmen!\" \"Thank you, Linda. See you later!\"",

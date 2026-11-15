@@ -60,6 +60,18 @@
     { "question": { "en": "Your friend is going on a trip. You say:", "es": "Tu amiga se va de viaje. Le dices:" }, "options": ["Bon voyage!", "Get well soon!", "Happy anniversary!", "Good night!"], "correct": 0, "explanation": { "en": "Bon voyage = have a good trip.", "es": "Bon voyage = buen viaje." } },
     { "question": { "en": "Complete: \"I'm ___ Linda at six tomorrow.\" (it's arranged)", "es": "Completa: «I'm ___ Linda at six tomorrow.» (está acordado)" }, "options": ["meeting", "meet", "met", "to meet"], "correct": 0, "explanation": { "en": "Arrangement → present continuous: I'm meeting.", "es": "Plan acordado → presente continuo: I'm meeting." } }
   ],
+  "sentences": [
+    { "sentence": "What are you doing this weekend? Are you going on the cruise?", "kind": "question", "bold": ["What are you doing", "Are you going", "cruise"], "es": "¿Qué vas a hacer este fin de semana? ¿Vas a ir en el crucero?" },
+    { "sentence": "What time does the ship sail, and when do we board?", "kind": "question", "bold": ["ship", "sail", "board"], "es": "¿A qué hora zarpa el barco, y cuándo abordamos?" },
+    { "sentence": "Is there a pool on deck or only inside?", "kind": "question", "bold": ["on deck"], "es": "¿Hay alberca en la cubierta o solo adentro?" },
+    { "sentence": "Are you doing a shore excursion in Ensenada?", "kind": "question", "bold": ["Are you doing", "shore excursion"], "es": "¿Vas a hacer una excursión en tierra en Ensenada?" },
+    { "sentence": "Where are the life jackets in our cabin?", "kind": "question", "bold": ["life jackets", "cabin"], "es": "¿Dónde están los chalecos salvavidas en nuestro camarote?" },
+    { "sentence": "We're leaving on Friday and we're arriving in Ensenada on Saturday.", "kind": "statement", "bold": ["We're leaving", "we're arriving"], "es": "Salimos el viernes y llegamos a Ensenada el sábado." },
+    { "sentence": "I'm going to relax on deck and watch the sunset.", "kind": "statement", "bold": ["I'm going to", "on deck", "sunset"], "es": "Voy a relajarme en la cubierta y ver el atardecer." },
+    { "sentence": "I feel a little seasick, so I'm staying in the cabin.", "kind": "statement", "bold": ["I feel", "seasick", "cabin"], "es": "Me siento un poco mareada, así que me quedo en el camarote." },
+    { "sentence": "The captain said we can see dolphins and maybe a whale.", "kind": "statement", "bold": ["captain", "dolphins", "whale"], "es": "El capitán dijo que podemos ver delfines y tal vez una ballena." },
+    { "sentence": "The crew is very kind, and the buffet is delicious.", "kind": "statement", "bold": ["crew", "buffet"], "es": "La tripulación es muy amable, y el bufé está delicioso." }
+  ],
   "story": {
     "title": "Three Days at Sea",
     "text": "Linda has a surprise for Carmen's birthday: two tickets for a short cruise. \"We're leaving on Friday at five and we're arriving in Ensenada on Saturday morning!\" Carmen can't believe it. \"Ensenada? I'm going to Mexico on a ship!\" On Friday they board the ship. Their cabin is small but it has a round window. \"Let's go up on deck,\" says Linda. The ship sails out of the port and San Diego gets smaller. At sunset, someone shouts, \"Look, dolphins!\" Ten dolphins are jumping next to the ship. That night, the sea is rough and Carmen feels a little seasick. A member of the crew gives her some crackers. \"Stay in the middle of the ship and look at the horizon.\" On Saturday, they're doing a shore excursion: fish tacos and a walk by the sea. \"Linda,\" says Carmen, \"this is the best birthday present ever.\"",

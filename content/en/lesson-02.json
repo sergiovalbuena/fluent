@@ -59,6 +59,18 @@
     { "question": { "en": "A waiter asks: \"More coffee?\" You want more. What do you say?", "es": "Un mesero pregunta: «More coffee?». Quieres más. ¿Qué dices?" }, "options": ["Yes, please.", "Yes, you're welcome.", "No, please.", "Sorry, yes."], "correct": 0, "explanation": { "en": "To accept something offered, say \"Yes, please\". To refuse, \"No, thank you\".", "es": "Para aceptar algo que te ofrecen, di «Yes, please». Para rechazarlo, «No, thank you»." } },
     { "question": { "en": "Which request is the most polite?", "es": "¿Qué pedido es el más amable?" }, "options": ["Could you help me, please?", "Help me.", "You help me.", "Help, now."], "correct": 0, "explanation": { "en": "\"Could you…, please?\" is very polite.", "es": "«Could you…, please?» es muy amable." } }
   ],
+  "sentences": [
+    { "sentence": "Excuse me, can I sit here, please?", "kind": "question", "bold": ["Excuse me", "can I", "please"], "es": "Disculpe, ¿me puedo sentar aquí, por favor?" },
+    { "sentence": "Could you say your name again, please?", "kind": "question", "bold": ["Could you", "again", "please"], "es": "¿Podría decir su nombre otra vez, por favor?" },
+    { "sentence": "Can I have a glass of water and a coffee, please?", "kind": "question", "bold": ["Can I have", "a glass of water", "a coffee", "please"], "es": "¿Me da un vaso de agua y un café, por favor?" },
+    { "sentence": "Could you help me with this bag, please?", "kind": "question", "bold": ["Could you", "help", "please"], "es": "¿Me podría ayudar con esta bolsa, por favor?" },
+    { "sentence": "Sorry, could you speak more slowly?", "kind": "question", "bold": ["Sorry", "could you", "slowly"], "es": "Perdón, ¿podría hablar más despacio?" },
+    { "sentence": "Thank you very much for your help today.", "kind": "statement", "bold": ["Thank you very much", "help"], "es": "Muchas gracias por tu ayuda hoy." },
+    { "sentence": "Sorry, I don't understand, but I'm learning English.", "kind": "statement", "bold": ["Sorry"], "es": "Perdón, no entiendo, pero estoy aprendiendo inglés." },
+    { "sentence": "Of course, it's no problem at all.", "kind": "statement", "bold": ["Of course", "no problem"], "es": "Claro, no es ningún problema." },
+    { "sentence": "No, thank you, I'm fine with a glass of water.", "kind": "statement", "bold": ["No, thank you", "a glass of water"], "es": "No, gracias, estoy bien con un vaso de agua." },
+    { "sentence": "Thank you! — You're welcome, Carmen.", "kind": "statement", "bold": ["Thank you", "You're welcome"], "es": "¡Gracias! — De nada, Carmen." }
+  ],
   "story": {
     "title": "Coffee, Please",
     "text": "Carmen is at a small coffee shop near Laura's house. There are many people. A young man is at the counter. \"Hi! What can I get you?\" he asks. Carmen is a little nervous. \"Hello. Can I have a coffee, please?\" \"Sure! Small, medium or large?\" Carmen doesn't understand. \"Sorry? Could you repeat that, please?\" The young man smiles and speaks slowly. \"Small… medium… or large?\" \"Oh! Small, please.\" \"Of course. That's three dollars.\" Carmen gives him the money. \"Here you go. Thank you very much!\" \"You're welcome. Have a nice day!\" Carmen sits by the window with her coffee. It is a small coffee, but it is a big success.",

@@ -60,6 +60,18 @@
     { "question": { "en": "Complete: \"If you open an account today, you ___ a free card.\"", "es": "Completa: «If you open an account today, you ___ a free card.»" }, "options": ["will get", "get will", "would got", "getting"], "correct": 0, "explanation": { "en": "Result clause → will + verb.", "es": "Resultado → will + verbo." } },
     { "question": { "en": "The account for saving money is a…", "es": "La cuenta para ahorrar dinero es una…" }, "options": ["savings account", "checking account", "statement", "loan"], "correct": 0, "explanation": { "en": "Savings account = cuenta de ahorros.", "es": "Savings account = cuenta de ahorros." } }
   ],
+  "sentences": [
+    { "sentence": "What's my balance in my savings account?", "kind": "question", "bold": ["What's my balance", "savings account"], "es": "¿Cuál es el saldo de mi cuenta de ahorros?" },
+    { "sentence": "Is there a monthly fee for a checking account?", "kind": "question", "bold": ["fee", "checking account"], "es": "¿Hay una comisión mensual por una cuenta de cheques?" },
+    { "sentence": "How can I transfer money to my sister in Mexico?", "kind": "question", "bold": ["transfer"], "es": "¿Cómo puedo transferir dinero a mi hermana en México?" },
+    { "sentence": "Where is the nearest ATM to withdraw some cash?", "kind": "question", "bold": ["ATM", "withdraw"], "es": "¿Dónde está el cajero automático más cercano para sacar efectivo?" },
+    { "sentence": "Is there a teller who speaks Spanish?", "kind": "question", "bold": ["teller"], "es": "¿Hay algún cajero que hable español?" },
+    { "sentence": "I'd like to open a checking account and a savings account.", "kind": "statement", "bold": ["I'd like to", "checking account", "savings account"], "es": "Quisiera abrir una cuenta de cheques y una cuenta de ahorros." },
+    { "sentence": "If you open an account today, you will get a free card.", "kind": "statement", "bold": ["If you open", "you will get"], "es": "Si abre una cuenta hoy, recibirá una tarjeta gratis." },
+    { "sentence": "If you lose your debit card, you should call the bank right away.", "kind": "statement", "bold": ["If you lose", "debit card", "you should"], "es": "Si pierde su tarjeta de débito, debe llamar al banco de inmediato." },
+    { "sentence": "You won't pay a fee unless your balance is very low.", "kind": "statement", "bold": ["fee", "unless", "balance"], "es": "No pagará comisión a menos que su saldo esté muy bajo." },
+    { "sentence": "Please enter your PIN and choose the amount to withdraw.", "kind": "statement", "bold": ["PIN", "withdraw"], "es": "Por favor ingrese su NIP y elija la cantidad a retirar." }
+  ],
   "story": {
     "title": "Carmen's First Bank Account",
     "text": "Now that Carmen works at the bakery, she needs a bank account for her paychecks. She goes to the bank with her passport and a letter from Grace. \"Good morning. I'd like to open a checking account.\" \"Of course,\" says the woman at the desk. \"If you open it today, you'll get a free debit card.\" \"Is there a monthly fee?\" \"There's a ten-dollar fee unless you keep five hundred dollars in the account.\" Carmen thinks. \"And if I want to send money to my sister in Mexico?\" \"You can do it online. If you need help, you can come here and we'll show you.\" Twenty minutes later, Carmen has her new card. \"Please choose a PIN. Don't tell anyone.\" \"Not even my grandson?\" The woman laughs. \"Especially not your grandson!\" Carmen leaves the bank feeling very independent.",

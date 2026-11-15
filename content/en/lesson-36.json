@@ -60,6 +60,18 @@
     { "question": { "en": "A long seat in a park is a…", "es": "Un asiento largo en un parque es una…" }, "options": ["bench", "bridge", "fountain", "path"], "correct": 0, "explanation": { "en": "Bench = banca.", "es": "Bench = banca." } },
     { "question": { "en": "Choose the negative suggestion.", "es": "Elige la sugerencia negativa." }, "options": ["Let's not take the bus.", "Let's don't take the bus.", "Don't let's taking the bus.", "Let's no take the bus."], "correct": 0, "explanation": { "en": "Negative: Let's not + verb.", "es": "Negativo: Let's not + verbo." } }
   ],
+  "sentences": [
+    { "sentence": "Do you want to go for a walk by the lake with us?", "kind": "question", "bold": ["go for a walk", "lake", "us"], "es": "¿Quieres ir a caminar junto al lago con nosotros?" },
+    { "sentence": "Can you take a picture of me next to the statue?", "kind": "question", "bold": ["me", "statue"], "es": "¿Me puedes tomar una foto junto a la estatua?" },
+    { "sentence": "That man on the bench, do you know him?", "kind": "question", "bold": ["bench", "him"], "es": "Ese señor de la banca, ¿lo conoces?" },
+    { "sentence": "The squirrels near the fountain, can you see them?", "kind": "question", "bold": ["squirrels", "fountain", "them"], "es": "Las ardillas junto a la fuente, ¿las ves?" },
+    { "sentence": "Are you tired, or can we cross the bridge?", "kind": "question", "bold": ["tired", "bridge"], "es": "¿Estás cansada, o podemos cruzar el puente?" },
+    { "sentence": "Elena showed us the fountain and the old bridge.", "kind": "statement", "bold": ["us", "fountain", "bridge"], "es": "Elena nos mostró la fuente y el puente viejo." },
+    { "sentence": "Let's sit on that bench and look at the lake.", "kind": "statement", "bold": ["Let's", "bench", "lake"], "es": "Sentémonos en esa banca a ver el lago." },
+    { "sentence": "Let's not take the subway; let's walk home.", "kind": "statement", "bold": ["Let's not", "let's", "walk"], "es": "No tomemos el metro; caminemos a casa." },
+    { "sentence": "We took a walk around the neighborhood after dinner.", "kind": "statement", "bold": ["took a walk", "neighborhood"], "es": "Dimos una caminata por el barrio después de cenar." },
+    { "sentence": "Wait for me! I want to see it too.", "kind": "statement", "bold": ["me", "it"], "es": "¡Espérame! Yo también quiero verlo." }
+  ],
   "story": {
     "title": "Central Park",
     "text": "On Sunday, Elena says, \"Let's go for a walk in Central Park.\" The park is enormous. There are paths, bridges, a big lake and many benches. \"Look at them!\" says Carmen. Two squirrels are running up a tree. Elena laughs. \"There are thousands of them here.\" They walk for an hour. Elena shows her the famous fountain and a statue of Alice in Wonderland. A young woman with a camera passes by. \"Excuse me, can you take a picture of us?\" asks Carmen. \"Sure! Smile!\" After two hours, Carmen is tired. \"Let's sit on that bench,\" she says. \"And let's not walk back. Let's take a taxi!\" Elena takes her hand. \"Carmen, I'm so happy you're here. Twenty years is too long.\" \"I know. I missed you,\" says Carmen. \"I missed you too.\"",

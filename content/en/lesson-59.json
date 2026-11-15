@@ -60,6 +60,18 @@
     { "question": { "en": "The last day to send a document is the…", "es": "El último día para entregar un documento es la…" }, "options": ["deadline", "signature", "copy", "form"], "correct": 0, "explanation": { "en": "Deadline = fecha límite.", "es": "Deadline = fecha límite." } },
     { "question": { "en": "\"Fill out this form\" means…", "es": "«Fill out this form» significa…" }, "options": ["llene este formulario", "firme este formulario", "tire este formulario", "copie este formulario"], "correct": 0, "explanation": { "en": "Fill out = llenar.", "es": "Fill out = llenar." } }
   ],
+  "sentences": [
+    { "sentence": "What documents do I need to bring to my appointment?", "kind": "question", "bold": ["documents", "appointment"], "es": "¿Qué documentos necesito traer a mi cita?" },
+    { "sentence": "Do you offer free legal aid for residency paperwork?", "kind": "question", "bold": ["legal aid", "residency", "paperwork"], "es": "¿Ofrecen asesoría legal gratuita para trámites de residencia?" },
+    { "sentence": "When is the deadline to fill out the form?", "kind": "question", "bold": ["deadline", "fill out", "form"], "es": "¿Cuándo es la fecha límite para llenar el formulario?" },
+    { "sentence": "Can I have a copy of my signature page, please?", "kind": "question", "bold": ["copy", "signature"], "es": "¿Me da una copia de la página de mi firma, por favor?" },
+    { "sentence": "Do I need a notary public for this document?", "kind": "question", "bold": ["notary public", "document"], "es": "¿Necesito un notario público para este documento?" },
+    { "sentence": "The lawyer said that the papers were ready.", "kind": "statement", "bold": ["lawyer", "said", "were"], "es": "La abogada dijo que los papeles estaban listos." },
+    { "sentence": "She told me that I needed to sign two forms.", "kind": "statement", "bold": ["told me", "needed to", "sign", "forms"], "es": "Me dijo que tenía que firmar dos formularios." },
+    { "sentence": "He said he would call me next week with an answer.", "kind": "statement", "bold": ["said", "would"], "es": "Dijo que me llamaría la próxima semana con una respuesta." },
+    { "sentence": "The woman asked if I had my passport and asked me to wait.", "kind": "statement", "bold": ["asked if", "asked me to"], "es": "La señora me preguntó si tenía mi pasaporte y me pidió que esperara." },
+    { "sentence": "After many months, my application was approved!", "kind": "statement", "bold": ["approved"], "es": "¡Después de muchos meses, aprobaron mi solicitud!" }
+  ],
   "story": {
     "title": "The Letter",
     "text": "Carmen wants to stay in the United States near her family, so she needs to do some paperwork. Linda tells her about a community center that offers free legal aid. A lawyer named Ms. Ortiz meets her. \"What documents do I need to bring?\" asks Carmen. Ms. Ortiz gives her a list and a form. \"Please fill out this form. Sign here and here. The deadline is next month.\" At dinner, Laura asks, \"What did the lawyer say?\" \"She said it was a long process, but not difficult. She told me to keep copies of everything. And she asked if I had a letter from you.\" \"Of course I'll write it, Mom.\" Months pass. One afternoon, a letter arrives. Carmen's hands are shaking. Leo reads it aloud slowly: \"Your application… has been… approved.\" Carmen sits down and cries. Leo hugs her. \"Grandma, you said you would stay. Now it's true!\"",

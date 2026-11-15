@@ -60,6 +60,18 @@
     { "question": { "en": "\"My car broke down\" means…", "es": "«My car broke down» significa…" }, "options": ["My car stopped working.", "My car is new.", "I sold my car.", "My car is clean."], "correct": 0, "explanation": { "en": "Break down = descomponerse.", "es": "Break down = descomponerse." } },
     { "question": { "en": "At a STOP sign in the US, you must…", "es": "En un alto (STOP) en Estados Unidos, debes…" }, "options": ["stop completely", "slow down a little", "honk", "only stop at night"], "correct": 0, "explanation": { "en": "A full stop is required.", "es": "Es obligatorio detenerse por completo." } }
   ],
+  "sentences": [
+    { "sentence": "What would you do if your car broke down on the highway?", "kind": "question", "bold": ["What would you do if", "broke down"], "es": "¿Qué harías si tu carro se descompusiera en la carretera?" },
+    { "sentence": "I have a flat tire; can you call a tow truck?", "kind": "question", "bold": ["flat tire", "tow truck"], "es": "Tengo una llanta ponchada; ¿puedes llamar a una grúa?" },
+    { "sentence": "When does the car need an oil change?", "kind": "question", "bold": ["oil change"], "es": "¿Cuándo necesita el carro un cambio de aceite?" },
+    { "sentence": "Why do the brakes make a strange noise?", "kind": "question", "bold": ["brakes"], "es": "¿Por qué hacen un ruido raro los frenos?" },
+    { "sentence": "If you had a car, would you drive to the beach every day?", "kind": "question", "bold": ["If you had", "would", "drive"], "es": "Si tuvieras carro, ¿manejarías a la playa todos los días?" },
+    { "sentence": "If I had a car, I would visit Linda every weekend.", "kind": "statement", "bold": ["If I had", "I would"], "es": "Si tuviera carro, visitaría a Linda todos los fines de semana." },
+    { "sentence": "If I were you, I would take a driving class first.", "kind": "statement", "bold": ["If I were you", "I would"], "es": "Yo que tú, tomaría primero una clase de manejo." },
+    { "sentence": "I wouldn't drive at night because the headlights are weak.", "kind": "statement", "bold": ["I wouldn't", "headlights"], "es": "No manejaría de noche porque los faros están débiles." },
+    { "sentence": "The mechanic said the engine is fine, but the tire is old.", "kind": "statement", "bold": ["mechanic", "engine", "tire"], "es": "El mecánico dijo que el motor está bien, pero la llanta está vieja." },
+    { "sentence": "Stop at the stop sign and don't forget your seat belt.", "kind": "statement", "bold": ["stop sign", "seat belt"], "es": "Párate en el alto y no olvides tu cinturón de seguridad." }
+  ],
   "story": {
     "title": "Behind the Wheel",
     "text": "Carmen takes the bus everywhere, but sometimes it's difficult. \"If I had a car, I would visit Leo more often,\" she tells Mike. Mike is a mechanic, so he has an idea. \"If I were you, I'd take a driving class. And I have an old car that I don't use.\" \"Me? Driving in California? At my age?\" \"Why not? You can take the test in Spanish.\" Carmen thinks about it for a week. Then she signs up. The first class is scary. The teacher says, \"Hands on the steering wheel. Check the mirrors. Stop completely at the stop sign.\" One day, on a quiet street, they get a flat tire. \"What would you do if this happened and you were alone?\" asks the teacher. \"I would call Mike!\" Two months later, Carmen comes into the house with a big smile. \"I passed my driving test!\" Leo runs to her. \"Grandma, can you drive me to soccer now?\" \"Of course. But fasten your seat belt!\"",

@@ -60,6 +60,18 @@
     { "question": { "en": "You can't finish your food and want to take it home. You ask for…", "es": "No terminas tu comida y quieres llevártela. Pides…" }, "options": ["a to-go box", "a refill", "a napkin", "the menu"], "correct": 0, "explanation": { "en": "A to-go box = recipiente para llevar.", "es": "A to-go box = recipiente para llevar." } },
     { "question": { "en": "The waiter asks \"Are you ready to order?\" but you need more time. You say:", "es": "El mesero pregunta «Are you ready to order?» pero necesitas más tiempo. Dices:" }, "options": ["Not yet. Could we have a few more minutes?", "Yes, the check please.", "I'm allergic.", "Everything was delicious."], "correct": 0, "explanation": { "en": "\"Not yet\" + polite request for more time.", "es": "«Not yet» + pedir amablemente más tiempo." } }
   ],
+  "sentences": [
+    { "sentence": "What would you like for your main course, chicken or fish?", "kind": "question", "bold": ["What would you like", "main course"], "es": "¿Qué le gustaría de plato fuerte, pollo o pescado?" },
+    { "sentence": "Could we have some more napkins and a fork, please?", "kind": "question", "bold": ["Could we have", "napkins", "fork"], "es": "¿Nos podría dar más servilletas y un tenedor, por favor?" },
+    { "sentence": "Would you like some dessert or a coffee?", "kind": "question", "bold": ["Would you like", "some", "dessert"], "es": "¿Le gustaría algo de postre o un café?" },
+    { "sentence": "Is the soup spicy, or is it mild?", "kind": "question", "bold": ["spicy"], "es": "¿La sopa es picante, o es suave?" },
+    { "sentence": "Could we have the check and a to-go box, please?", "kind": "question", "bold": ["Could we have", "the check", "to-go box"], "es": "¿Nos podría traer la cuenta y una caja para llevar, por favor?" },
+    { "sentence": "I'll have the steak, medium, with rice on the side.", "kind": "statement", "bold": ["I'll have", "medium", "with", "on the side"], "es": "Voy a pedir el filete, término medio, con arroz aparte." },
+    { "sentence": "I'm allergic to nuts, so please make it without them.", "kind": "statement", "bold": ["I'm allergic", "without"], "es": "Soy alérgica a las nueces, así que por favor hágalo sin ellas." },
+    { "sentence": "The waiter brought the menu and asked for our order.", "kind": "statement", "bold": ["waiter", "menu", "order"], "es": "El mesero trajo el menú y nos pidió la orden." },
+    { "sentence": "I'll have a salad without onions and a refill of water.", "kind": "statement", "bold": ["I'll have", "without", "refill"], "es": "Voy a pedir una ensalada sin cebolla y más agua." },
+    { "sentence": "We left a good tip because the waitress was very kind.", "kind": "statement", "bold": ["tip", "waitress"], "es": "Dejamos una buena propina porque la mesera fue muy amable." }
+  ],
   "story": {
     "title": "A New York Diner",
     "text": "On her last night in New York, Carmen invites Elena to dinner at an old diner. \"A table for two, please,\" says Carmen. The waitress gives them the menus. \"What would you like to drink?\" \"Two coffees, please.\" Carmen reads the menu slowly. \"Is the chili spicy?\" \"A little,\" says the waitress. \"Okay. I'll have the chili and a salad without onions.\" Elena orders a turkey sandwich. The portions are enormous! \"Would you like some dessert?\" asks the waitress. \"Apple pie, please. Two forks.\" At the end, Carmen asks, \"Could we have the check, please? And can I get a to-go box?\" She calculates the tip: twenty percent. Elena watches her and smiles. \"You order like a New Yorker now.\" \"Thirty lessons ago I didn't know how to say 'tenedor'!\"",
