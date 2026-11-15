@@ -9,10 +9,11 @@ import { LANGUAGES, COURSE_LANGUAGES, getLanguage } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { setActiveLanguage } from '@/app/(app)/actions'
 
-const OPTIONS = LANGUAGES.map(l => ({ ...l, available: COURSE_LANGUAGES.includes(l.code) }))
-
 export function LanguageSwitcher() {
-  const { languageCode } = useActiveLanguage()
+  const { languageCode, unlockedLanguages } = useActiveLanguage()
+  // Unlocked: the course chosen at sign-up (all of them for the owner). Other courses
+  // show with a lock, like the languages that have no course yet.
+  const options = LANGUAGES.map(l => ({ ...l, available: COURSE_LANGUAGES.includes(l.code) && unlockedLanguages.includes(l.code) }))
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(languageCode)
   const [isPending, startTransition] = useTransition()
@@ -83,7 +84,7 @@ export function LanguageSwitcher() {
 
               {/* Available */}
               <div className="space-y-0.5">
-                {OPTIONS.filter(l => l.available).map(lang => (
+                {options.filter(l => l.available).map(lang => (
                   <button
                     key={lang.code}
                     onClick={() => select(lang.code)}
@@ -105,7 +106,7 @@ export function LanguageSwitcher() {
 
               {/* Coming soon */}
               <div className="space-y-0.5">
-                {OPTIONS.filter(l => !l.available).map(lang => (
+                {options.filter(l => !l.available).map(lang => (
                   <div
                     key={lang.code}
                     className="flex items-center gap-3 px-2.5 py-2 rounded-xl opacity-45 cursor-not-allowed"

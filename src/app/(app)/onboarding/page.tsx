@@ -11,6 +11,7 @@ import { ArrowLeft, Check, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { getLanguage } from '@/lib/languages'
 import { SELF_LEVELS, estimateLevel, placementWords, type Cefr, type SelfLevel } from '@/lib/placement'
+import { isOwner } from '@/lib/owner'
 import { getAuthUser } from '@/lib/supabase/auth'
 
 // ── Data ──────────────────────────────────────────────────────────────────────
@@ -319,6 +320,12 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
     }, { onConflict: 'user_id,language_code' })
 
     if (langError) { toast.error(t('save_error')); setSaving(false); return }
+
+    // One course per account: choosing another one swaps it (progress is kept). The owner keeps them all.
+    if (!isOwner(user.id)) {
+      await supabase.from('user_languages').update({ is_unlocked: false })
+        .eq('user_id', user.id).neq('language_code', learningLanguage)
+    }
 
     if (storageKey) localStorage.removeItem(storageKey)
     toast.success(t('done'))

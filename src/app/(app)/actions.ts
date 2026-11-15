@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
 import { LANGUAGES } from '@/lib/languages'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { isOwner } from '@/lib/owner'
 
 export async function setActiveLanguage(code: string) {
   if (!LANGUAGES.some(l => l.code === code)) throw new Error('Unknown language')
@@ -18,6 +19,17 @@ export async function setActiveLanguage(code: string) {
     .eq('code', code)
     .maybeSingle()
   if (!language?.is_available) throw new Error('Language not available')
+
+  // Each account learns the course chosen at sign-up; only the owner switches freely
+  if (!isOwner(user.id)) {
+    const { data: own } = await supabase
+      .from('user_languages')
+      .select('is_unlocked')
+      .eq('user_id', user.id)
+      .eq('language_code', code)
+      .maybeSingle()
+    if (!own?.is_unlocked) throw new Error('Language locked')
+  }
 
   await supabase.from('user_languages').update({ is_active: false }).eq('user_id', user.id)
   const { error } = await supabase.from('user_languages').upsert(

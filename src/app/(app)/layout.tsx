@@ -14,7 +14,7 @@ import { getAuthUser } from '@/lib/supabase/auth'
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
 
-  const { languageCode, uiLocale, translationLang } = await getLanguageSettings()
+  const { languageCode, uiLocale, translationLang, unlockedLanguages } = await getLanguageSettings()
 
   const { data: { user } } = await getAuthUser(supabase)
 
@@ -47,7 +47,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
 
   return (
     <IntlProvider locale={uiLocale} messages={messages}>
-    <LanguageProvider value={{ languageCode, translationLang }}>
+    <LanguageProvider value={{ languageCode, translationLang, unlockedLanguages }}>
     <TopbarProvider>
       <div className="min-h-screen bg-[#f8f6f5] dark:bg-[#1b2030]">
         <SidebarNav modules={modules} account={account} />
