@@ -11,7 +11,13 @@ export const MASTERY_XP = 1
 // each other's XP (the profile total is read, then written)
 let rewardQueue: Promise<unknown> = Promise.resolve()
 
-export function useVocabMastery(languageCode: string, namespace: 'word' | 'phrase' | 'qa' = 'word') {
+/**
+ * Mastery keys in user_vocab_mastery: the word itself, "phrase:<text>", "qa:<sentence>",
+ * and for pronunciation "say:word:<word>" / "say:phrase:<text>" (said well out loud).
+ */
+export type MasteryNamespace = 'word' | 'phrase' | 'qa' | 'say:word' | 'say:phrase'
+
+export function useVocabMastery(languageCode: string, namespace: MasteryNamespace = 'word') {
   const [masteredSet, setMasteredSet] = useState<Set<string>>(new Set())
   const [userId, setUserId] = useState<string | null>(null)
 
@@ -31,7 +37,7 @@ export function useVocabMastery(languageCode: string, namespace: 'word' | 'phras
         .eq('language_code', languageCode)
 
       const filtered = namespace === 'word'
-        ? query.not('word', 'like', 'phrase:%').not('word', 'like', 'qa:%')
+        ? query.not('word', 'like', 'phrase:%').not('word', 'like', 'qa:%').not('word', 'like', 'say:%')
         : query.like('word', `${namespace}:%`)
 
       filtered.then(({ data }) => {

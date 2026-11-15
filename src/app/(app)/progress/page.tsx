@@ -99,6 +99,7 @@ export default async function ProgressPage() {
   // ── Mastery ─────────────────────────────────────────────────────────────────
   let words = 0, phrases = 0, questions = 0
   for (const { word } of (masteryRes.data ?? []) as { word: string }[]) {
+    if (word.startsWith('say:')) continue // pronunciation, not a separate item
     if (word.startsWith('phrase:')) phrases++
     else if (word.startsWith('qa:')) questions++
     else words++

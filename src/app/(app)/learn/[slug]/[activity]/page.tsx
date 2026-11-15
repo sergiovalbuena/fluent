@@ -11,7 +11,7 @@ import {
   BookOpen, MessageSquare, HelpCircle, BookMarked, Shuffle, PenLine,
   Headphones, Keyboard, Bookmark, Zap, RotateCw, Star, Languages,
   type LucideIcon,
-  LayoutList, FileText,
+  LayoutList, FileText, Mic,
 } from 'lucide-react'
 import { useSavedItems, type SaveItem, type SavedItemType } from '@/hooks/use-saved-items'
 import { useVocabMastery } from '@/hooks/use-vocab-mastery'
@@ -25,6 +25,8 @@ import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
 import { addXp, awardGems, getActiveBoosts } from '@/lib/rewards'
 import { ResultScreen } from '@/components/lesson/result-screen'
+import { SpeakModal } from '@/components/lesson/speak-modal'
+import { speechAvailable } from '@/lib/speech'
 import { AllItemsDialog } from '@/components/lesson/all-items-dialog'
 import { HINT_AREA, SectionTitle, TitleHintProvider } from '@/components/lesson/title-hint'
 import type { SectionTitleKey } from '@/lib/section-titles'
@@ -1025,6 +1027,8 @@ function VocabRow({
   onChallenge,
   mastered,
   langCode,
+  spoken,
+  onSpeak,
 }: {
   entry: VocabEntry
   bookmarked: boolean
@@ -1032,7 +1036,12 @@ function VocabRow({
   onChallenge: (entry: VocabEntry) => void
   mastered: boolean
   langCode: string
+  /** Said well out loud (pronunciation practice) */
+  spoken?: boolean
+  /** Opens pronunciation practice; absent when it isn't available for the course */
+  onSpeak?: (entry: VocabEntry) => void
 }) {
+  const t = useTranslations('lesson')
   const [speaking, setSpeaking] = useState(false)
   const [isPresent, safeToRemove] = usePresence()
   const [scope, animate] = useAnimate()
@@ -1091,6 +1100,26 @@ function VocabRow({
           >
             <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
           </motion.span>
+        )}
+        {spoken && (
+          <motion.span
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+            title="Pronounced"
+          >
+            <Mic size={13} className="text-violet-500 dark:text-violet-400" />
+          </motion.span>
+        )}
+        {onSpeak && (
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); onSpeak(entry) }}
+            className="flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-violet-600 dark:text-violet-400 bg-violet-500/10 hover:bg-violet-500/20 active:scale-95 transition-all"
+          >
+            <Mic size={10} />
+            <span className="hidden md:inline">{t('speak_row')}</span>
+          </button>
         )}
         <button
           type="button"
@@ -1190,6 +1219,8 @@ function VocabWordList({
   onMasteredCountChange,
   practice,
   onPracticeEnd,
+  isSpoken,
+  onSpeak,
 }: {
   initialWords: VocabEntry[]
   isSaved: (type: SavedItemType, original: string) => boolean
@@ -1198,6 +1229,8 @@ function VocabWordList({
   onMasteredCountChange?: (count: number) => void
   practice?: PracticeRequest | null
   onPracticeEnd?: () => void
+  isSpoken?: (word: string) => boolean
+  onSpeak?: (entry: VocabEntry) => void
 }) {
   const t = useTranslations('lesson')
   const [entries] = useState<VocabEntry[]>(initialWords)
@@ -1240,6 +1273,8 @@ function VocabWordList({
               onChallenge={setChallengeEntry}
               mastered={isMastered(entry.word)}
               langCode={languageCode}
+              spoken={isSpoken?.(entry.word)}
+              onSpeak={onSpeak}
             />
           ))}
         </AnimatePresence>
@@ -1443,6 +1478,8 @@ function PhraseList({
   onMasteredCountChange,
   practice,
   onPracticeEnd,
+  isSpoken,
+  onSpeak,
 }: {
   phrases: Phrase[]
   /** sentences: the Q&A activity of converted lessons (mastery keys "qa:<sentence>") */
@@ -1454,6 +1491,9 @@ function PhraseList({
   onMasteredCountChange?: (count: number) => void
   practice?: PracticeRequest | null
   onPracticeEnd?: () => void
+  /** Pronunciation practice: absent when it isn't available for the course */
+  isSpoken?: (phrase: string) => boolean
+  onSpeak?: (phrase: Phrase) => void
 }) {
   const t = useTranslations('lesson')
   const [challengePhrase, setChallengePhrase] = useState<Phrase | null>(null)
@@ -1501,6 +1541,26 @@ function PhraseList({
                 >
                   <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
                 </motion.span>
+              )}
+              {isSpoken?.(p.phrase) && (
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+                  title="Pronounced"
+                >
+                  <Mic size={13} className="text-violet-500 dark:text-violet-400" />
+                </motion.span>
+              )}
+              {onSpeak && (
+                <button
+                  type="button"
+                  onClick={() => onSpeak(p)}
+                  className="flex md:hidden md:group-hover:flex items-center gap-1 p-2 md:px-2.5 md:py-1 rounded-lg text-[11px] font-bold text-violet-600 dark:text-violet-400 bg-violet-500/10 hover:bg-violet-500/20 active:scale-95 transition-all"
+                >
+                  <Mic size={10} />
+                  <span className="hidden md:inline">{t('speak_row')}</span>
+                </button>
               )}
               <button
                 type="button"
@@ -1839,7 +1899,42 @@ function calcGems(score: number, isRepeat: boolean): number {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
+type SpeakItem = { text: string; translation: string }
+
+/** Bento card for pronunciation practice: progress and the button to start or continue */
+function SpeakCard({ done, total, onStart }: { done: number; total: number; onStart: () => void }) {
+  const t = useTranslations('lesson')
+  const label = done === 0 ? t('speak_start') : done < total ? t('speak_resume') : t('speak_review')
+  return (
+    <Block whileTap={{}} className="col-span-12 md:col-span-6 p-5 flex flex-col gap-3 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
+      <div className="flex items-center gap-3">
+        <span className="size-10 shrink-0 rounded-xl bg-violet-500/10 flex items-center justify-center">
+          <Mic size={18} className="text-violet-500" />
+        </span>
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-bold text-slate-900 dark:text-white">{t('speak_card_title')}</p>
+          <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">{t('speak_card_desc')}</p>
+        </div>
+        {done >= total && total > 0 && <Star size={16} className="shrink-0 fill-yellow-500 text-yellow-500" />}
+      </div>
+      <div className="flex items-center gap-3">
+        <div className="flex-1 h-1.5 rounded-full bg-violet-500/10 overflow-hidden">
+          <div className="h-full rounded-full bg-violet-500 transition-all" style={{ width: `${total > 0 ? (done / total) * 100 : 0}%` }} />
+        </div>
+        <span className="text-[11px] font-semibold text-slate-400 tabular-nums">{t('speak_progress', { done, total })}</span>
+      </div>
+      <button
+        onClick={onStart}
+        className="flex items-center justify-center gap-2 rounded-xl bg-violet-500 hover:bg-violet-600 text-white text-sm font-bold py-2.5 active:scale-[0.98] transition-all"
+      >
+        <Mic size={15} /> {label}
+      </button>
+    </Block>
+  )
+}
+
 export default function LessonPage() {
+  const tLessonTop = useTranslations('lesson')
   const params  = useParams()
   const router  = useRouter()
   const slug     = params.slug     as string
@@ -1855,6 +1950,36 @@ export default function LessonPage() {
   const [saving,       setSaving]       = useState(false)
 
   const { isSaved, toggle: toggleSaved } = useSavedItems(languageCode)
+
+  // Pronunciation practice (Mots and Phrases, courses listed in NEXT_PUBLIC_SPEECH_LANGUAGES).
+  // Typing every item gives 2 stars; saying them all well out loud too gives the 3rd.
+  const speechOn = speechAvailable(languageCode) && (activity === 'vocabulary' || activity === 'phrases')
+  const { isMastered: isSpoken, markMastered: markSpoken } = useVocabMastery(
+    speechOn ? languageCode : '',
+    activity === 'phrases' ? 'say:phrase' : 'say:word',
+  )
+  const speakItems: SpeakItem[] = !speechOn || !lesson ? []
+    : activity === 'phrases'
+      ? (lesson.content.phrases ?? []).map(p => ({ text: p.phrase, translation: p.translation }))
+      : (lesson.content.words ?? []).map(w => ({ text: w.word, translation: w.translation }))
+  const spokenCount = speakItems.filter(i => isSpoken(i.text)).length
+  const [speakItem,  setSpeakItem]  = useState<SpeakItem | null>(null)
+  const [speakQueue, setSpeakQueue] = useState<{ items: SpeakItem[]; index: number } | null>(null)
+  function startSpeaking() {
+    // Continue with the ones not said yet; once all are, go through them all again
+    const pending = speakItems.filter(i => !isSpoken(i.text))
+    setSpeakQueue({ items: pending.length > 0 ? pending : speakItems, index: 0 })
+  }
+  function nextSpeak() {
+    setSpeakQueue(q => {
+      if (!q) return null
+      if (q.index + 1 >= q.items.length) {
+        toast.success(tLessonTop('speak_done', { done: speakItems.filter(i => isSpoken(i.text)).length, total: speakItems.length }))
+        return null
+      }
+      return { ...q, index: q.index + 1 }
+    })
+  }
 
   // Result screen
   const [resultData, setResultData] = useState<{
@@ -1994,7 +2119,7 @@ export default function LessonPage() {
   // practice from the hero, or one by one). Opening the page alone must not award
   // progress, and an activity already completed is not saved again (that would add
   // an attempt and repeat gems on every visit).
-  const masterySavedRef = useRef(false)
+  const masterySavedRef = useRef<Set<string>>(new Set())
   const masteryTotal =
     activity === 'vocabulary' ? (lesson?.content.words?.length ?? 0)
     : activity === 'phrases' ? (lesson?.content.phrases?.length ?? 0)
@@ -2005,10 +2130,16 @@ export default function LessonPage() {
     : activity === 'phrases' ? masteredPhraseCount
     : activity === 'qa' ? masteredQACount
     : 0
+  // With pronunciation on, typing everything is 2 stars and saying everything too is 3
+  // ("<activity>:speak" in activities_completed records the second part, saved once).
+  const speakAllDone = speechOn && masteryTotal > 0 && spokenCount >= masteryTotal
   useEffect(() => {
-    if (!lessonId || masterySavedRef.current) return
+    if (!lessonId) return
     if (masteryTotal === 0 || masteryDone < masteryTotal) return
-    masterySavedRef.current = true
+    const speakMarker = `${activity}:speak`
+    const wanted = [activity, ...(speakAllDone ? [speakMarker] : [])].filter(m => !masterySavedRef.current.has(m))
+    if (wanted.length === 0) return
+    wanted.forEach(m => masterySavedRef.current.add(m))
     void (async () => {
       const supabase = createClient()
       const { data: { user } } = await getAuthUser(supabase)
@@ -2020,18 +2151,25 @@ export default function LessonPage() {
         .eq('lesson_id', lessonId)
         .maybeSingle()
       const done = (existing?.activities_completed ?? []) as string[]
-      if (!done.includes(activity)) await saveProgress(100)
+      const markers = wanted.filter(m => !done.includes(m))
+      if (markers.length === 0) return
+      const stars = !speechOn || speakAllDone ? 3 : 2
+      await saveProgress(100, { stars, markers })
     })()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lessonId, masteryTotal, masteryDone])
+  }, [lessonId, masteryTotal, masteryDone, speakAllDone])
 
   // ── DB helpers ────────────────────────────────────────────────────────────
 
-  async function saveProgress(score: number): Promise<{ stars: 1 | 2 | 3; gems: number; isFirstCompletion: boolean }> {
+  /** opts.stars overrides the score-based stars; opts.markers are added to activities_completed (default: the activity) */
+  async function saveProgress(
+    score: number,
+    opts: { stars?: 1 | 2 | 3; markers?: string[] } = {},
+  ): Promise<{ stars: 1 | 2 | 3; gems: number; isFirstCompletion: boolean }> {
     const supabase = createClient()
     const { data: { user } } = await getAuthUser(supabase)
 
-    const fallbackStars = calcStars(score)
+    const fallbackStars = opts.stars ?? calcStars(score)
     if (!user || !lessonId || !moduleId) {
       console.warn('[saveProgress] skipped — missing context', { hasUser: !!user, lessonId, moduleId })
       return { stars: fallbackStars, gems: calcGems(score, false), isFirstCompletion: true }
@@ -2047,11 +2185,9 @@ export default function LessonPage() {
     const isRepeat          = (existing?.attempts ?? 0) > 0
     const isFirstCompletion = !existing?.completed_at
     const prevActivities    = existing?.activities_completed ?? []
-    const updatedActivities = prevActivities.includes(activity)
-      ? prevActivities
-      : [...prevActivities, activity]
+    const updatedActivities = [...new Set([...prevActivities, ...(opts.markers ?? [activity])])]
 
-    const newStars  = calcStars(score)
+    const newStars  = opts.stars ?? calcStars(score)
     // Gems are credited by the database, which applies the 2× gems boost and daily cap
     const newGems  = await awardGems(supabase, calcGems(score, isRepeat), 'lesson_activity', lessonId)
     const finalStars = Math.max(newStars, existing?.stars ?? 0) as 1 | 2 | 3
@@ -2336,8 +2472,12 @@ export default function LessonPage() {
                 onMasteredCountChange={setMasteredCount}
                 practice={practice}
                 onPracticeEnd={() => setPractice(null)}
+                isSpoken={speechOn ? isSpoken : undefined}
+                onSpeak={speechOn ? (e) => setSpeakItem({ text: e.word, translation: e.translation }) : undefined}
               />
             </Block>
+
+            {speechOn && <SpeakCard done={spokenCount} total={speakItems.length} onStart={startSpeaking} />}
 
             {/* ── ALL WORDS — two versions to compare: dialog (A) vs. own page (B) ── */}
             <AllItemsCard
@@ -2412,8 +2552,12 @@ export default function LessonPage() {
                   onMasteredCountChange={setMasteredPhraseCount}
                   practice={phrasePractice}
                   onPracticeEnd={() => setPhrasePractice(null)}
+                  isSpoken={speechOn ? isSpoken : undefined}
+                  onSpeak={speechOn ? (p) => setSpeakItem({ text: p.phrase, translation: p.translation }) : undefined}
                 />
               </Block>
+
+              {speechOn && <SpeakCard done={spokenCount} total={speakItems.length} onStart={startSpeaking} />}
 
               {/* Practice */}
               <Block
@@ -3395,6 +3539,33 @@ export default function LessonPage() {
           )}
         </div>
       )}
+
+      {/* Pronunciation: one item from a list row, or a run through the list */}
+      <AnimatePresence>
+        {speakItem && (
+          <SpeakModal
+            key={`speak-${speakItem.text}`}
+            text={speakItem.text}
+            translation={speakItem.translation}
+            languageCode={languageCode}
+            onListen={() => speakWord(speakItem.text, languageCode)}
+            onPassed={() => markSpoken(speakItem.text)}
+            onClose={() => setSpeakItem(null)}
+          />
+        )}
+        {speakQueue && speakQueue.items[speakQueue.index] && (
+          <SpeakModal
+            key={`speak-queue-${speakQueue.index}`}
+            text={speakQueue.items[speakQueue.index].text}
+            translation={speakQueue.items[speakQueue.index].translation}
+            languageCode={languageCode}
+            onListen={() => speakWord(speakQueue.items[speakQueue.index].text, languageCode)}
+            onPassed={() => markSpoken(speakQueue.items[speakQueue.index].text)}
+            onClose={() => setSpeakQueue(null)}
+            session={{ index: speakQueue.index, total: speakQueue.items.length, onSkip: nextSpeak, onNext: nextSpeak }}
+          />
+        )}
+      </AnimatePresence>
     </div>
     </TitleHintProvider>
   )
