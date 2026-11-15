@@ -59,6 +59,18 @@
     { "question": { "es": "En un parque ves un letrero que pide no caminar sobre el pasto. ¿Qué dice?", "en": "In a park you see a sign asking you not to walk on the grass. What does it say?" }, "options": ["No pise el pasto.", "No pisa el pasto.", "No pisar pasto el.", "Pise no el pasto."], "correct": 0, "explanation": { "en": "Negative formal command: no + subjunctive: no pise." } },
     { "question": { "es": "¿Dónde pones una planta pequeña dentro de la casa?", "en": "Where do you put a small plant inside the house?" }, "options": ["en una maceta", "en una semilla", "en un ramo", "en una hoja"], "correct": 0, "explanation": { "en": "«Maceta» = flowerpot." } }
   ],
+  "sentences": [
+    { "sentence": "¿Le regalaste flores a tu mamá en su cumpleaños?", "kind": "question", "bold": ["Le", "regalaste"], "en": "Did you give your mom flowers on her birthday?" },
+    { "sentence": "¿Ya has sembrado las semillas de girasol?", "kind": "question", "bold": ["has", "sembrado", "semillas", "girasol"], "en": "Have you already planted the sunflower seeds?" },
+    { "sentence": "¿Cada cuándo riegas las plantas de la terraza?", "kind": "question", "bold": ["riegas", "plantas"], "en": "How often do you water the plants on the terrace?" },
+    { "sentence": "¿Para quién es este ramo de rosas?", "kind": "question", "bold": ["Para", "ramo", "rosas"], "en": "Who is this bouquet of roses for?" },
+    { "sentence": "¿En qué estación florecen estos árboles?", "kind": "question", "bold": ["florecen", "árboles"], "en": "In what season do these trees bloom?" },
+    { "sentence": "Le regalé un ramo de claveles a Carmen.", "kind": "statement", "bold": ["Le regalé", "ramo", "claveles"], "en": "I gave Carmen a bouquet of carnations." },
+    { "sentence": "Regálale rosas, pero no le regales claveles.", "kind": "statement", "bold": ["Regálale", "rosas", "le", "regales", "claveles"], "en": "Give her roses, but don't give her carnations." },
+    { "sentence": "¿Las semillas? Ya las he sembrado en la huerta.", "kind": "statement", "bold": ["semillas", "las he sembrado", "huerta"], "en": "The seeds? I've already planted them in the vegetable garden." },
+    { "sentence": "El florista me dijo que la planta era tóxica para los gatos.", "kind": "statement", "bold": ["florista", "dijo que", "planta", "era"], "en": "The florist told me the plant was toxic for cats." },
+    { "sentence": "Estas flores son para ti; ponlas en una maceta con sol.", "kind": "statement", "bold": ["flores", "para", "maceta"], "en": "These flowers are for you; put them in a pot with sun." }
+  ],
   "story": {
     "title": "El altar de Día de Muertos",
     "text": "A finales de octubre, Carmen prepara un altar de Día de Muertos en su sala. Le pide ayuda a Emily. «Primero vamos al mercado a comprar cempasúchil», dice. En el mercado hay montañas de flores naranjas. El olor es muy fuerte. «¿Para quién es el altar?», pregunta Emily. «Para mis papás y para mi hermano. Cada año les pongo su comida favorita.» En casa, ponen las flores, velas, fotos, pan de muerto y una taza de chocolate. Carmen explica que los pétalos marcan el camino para que los muertos encuentren la casa. Emily se queda en silencio, emocionada. «Me gusta mucho esta tradición», dice. «Aquí no olvidamos a nuestros muertos», responde Carmen.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Te preguntan si prefieres el bar o el antro, y no te importa. ¿Qué respondes con educación?", "en": "They ask if you prefer the bar or the club, and you don't care. What do you answer politely?" }, "options": ["Me da igual.", "Me vale.", "Me da vergüenza.", "Me di cuenta."], "correct": 0, "explanation": { "en": "«Me da igual» is neutral; «me vale» can sound rude." } },
     { "question": { "es": "«No te dio vergüenza, ¿verdad?» Sí te dio un poco. ¿Qué respondes?", "en": "«You weren't embarrassed, were you?» You were, a little. What do you answer?" }, "options": ["Sí, un poco.", "No, un poco.", "Nada, un poco.", "Ni un poco, sí."], "correct": 0, "explanation": { "en": "To contradict a negative question, answer «sí»." } }
   ],
+  "sentences": [
+    { "sentence": "¿Salimos esta noche al antro o a un bar?", "kind": "question", "bold": ["Salimos", "antro", "bar"], "en": "Shall we go out tonight to a club or a bar?" },
+    { "sentence": "¿Pasas por mí a las nueve?", "kind": "question", "bold": ["Pasas por"], "en": "Will you pick me up at nine?" },
+    { "sentence": "¿Cuánto cuesta el cover y hay mucha fila?", "kind": "question", "bold": ["cover", "fila"], "en": "How much is the cover charge and is there a long line?" },
+    { "sentence": "No te dio vergüenza bailar, ¿verdad?", "kind": "question", "bold": ["vergüenza", "verdad"], "en": "You weren't embarrassed to dance, right?" },
+    { "sentence": "¿Bailamos en la pista de baile o pedimos un trago?", "kind": "question", "bold": ["pista de baile", "trago"], "en": "Shall we dance on the dance floor or order a drink?" },
+    { "sentence": "Iba a salir con Diego cuando empezó a llover.", "kind": "statement", "bold": ["Iba a salir"], "en": "I was going to go out with Diego when it started to rain." },
+    { "sentence": "Me di cuenta de que había olvidado las llaves en la barra.", "kind": "statement", "bold": ["Me di cuenta de que", "había olvidado", "barra"], "en": "I realized I had forgotten my keys at the bar." },
+    { "sentence": "¿Bar o antro? Me da igual, el ambiente es lo importante.", "kind": "statement", "bold": ["Me da igual", "ambiente"], "en": "Bar or club? I don't mind, the atmosphere is what matters." },
+    { "sentence": "La fiesta estuvo muy chida y llegamos a casa en la madrugada.", "kind": "statement", "bold": ["fiesta", "chida", "madrugada"], "en": "The party was really cool and we got home in the early morning." },
+    { "sentence": "No me gusta trasnochar, pero hoy vale la pena.", "kind": "statement", "bold": ["trasnochar"], "en": "I don't like staying up late, but tonight it's worth it." }
+  ],
   "story": {
     "title": "Noche de salsa",
     "text": "El viernes, Valeria propone ir a bailar salsa. «Paso por ti a las diez», le dice a Emily. Emily iba a cancelar porque estaba cansada, pero al final se arregla y sale. El lugar está lleno y el ambiente es muy chido: hay una banda en vivo y la pista de baile está llena. Un señor mayor la invita a bailar. «¿Bailamos?» «No sé bailar muy bien…» «¡No importa! Yo le enseño.» Después de tres canciones, Emily ya da vueltas sin pisar a nadie. A las dos de la madrugada, se da cuenta de que ha perdido su chamarra. La encuentra en una silla, cerca de la barra. «¡Qué buena noche!», dice en el taxi. Valeria se ríe: «La próxima vez, sin chamarra».",

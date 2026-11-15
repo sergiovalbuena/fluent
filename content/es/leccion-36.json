@@ -59,6 +59,18 @@
     { "question": { "es": "¿Qué verbo significa acompañar a alguien a otro lugar?", "en": "Which verb means taking someone to another place?" }, "options": ["llevar", "traer", "quedar", "tomar prestado"], "correct": 0, "explanation": { "en": "«Llevar» = to take (away); «traer» = to bring (here)." } },
     { "question": { "es": "Propones a tu amigo caminar un rato por la ciudad. ¿Qué dices?", "en": "You suggest walking around the city for a while. What do you say?" }, "options": ["¿Damos una vuelta?", "¿Damos un vuelo?", "¿Hacemos la vuelta de?", "¿Paseamos un paseo de?"], "correct": 0, "explanation": { "en": "«Dar una vuelta» = to go for a walk / a spin." } }
   ],
+  "sentences": [
+    { "sentence": "¿Damos un paseo por el malecón al atardecer?", "kind": "question", "bold": ["paseo", "malecón", "atardecer"], "en": "Shall we take a walk along the boardwalk at sunset?" },
+    { "sentence": "¿Me llevas a la heladería que está junto al muelle?", "kind": "question", "bold": ["llevas", "heladería", "muelle"], "en": "Will you take me to the ice cream shop next to the pier?" },
+    { "sentence": "¿Las fotos del paseo? ¿Se las mandaste a Carmen?", "kind": "question", "bold": ["paseo", "Se las"], "en": "The photos from the walk? Did you send them to Carmen?" },
+    { "sentence": "¿Tienes un mapa, o crees que nos perdimos?", "kind": "question", "bold": ["mapa", "nos perdimos"], "en": "Do you have a map, or do you think we got lost?" },
+    { "sentence": "¿Nos sentamos en esa banca frente a la muralla?", "kind": "question", "bold": ["banca", "muralla"], "en": "Shall we sit on that bench in front of the wall?" },
+    { "sentence": "Cuando vuelvas, ya habré terminado la cena.", "kind": "statement", "bold": ["Cuando vuelvas", "habré terminado"], "en": "When you come back, I'll have finished dinner." },
+    { "sentence": "Tráeme un elote del puesto de la esquina, porfa.", "kind": "statement", "bold": ["Tráeme", "puesto"], "en": "Bring me a corn on the cob from the stand on the corner, please." },
+    { "sentence": "Estaba a punto de llover, así que regresamos a casa.", "kind": "statement", "bold": ["Estaba a punto de"], "en": "It was about to rain, so we went back home." },
+    { "sentence": "Puede que haya muchos vendedores ambulantes en el centro.", "kind": "statement", "bold": ["Puede que", "haya", "vendedores ambulantes"], "en": "There may be a lot of street vendors downtown." },
+    { "sentence": "Me encanta pasear por la playa y caminar sin prisa.", "kind": "statement", "bold": ["pasear", "caminar"], "en": "I love strolling on the beach and walking without hurrying." }
+  ],
   "story": {
     "title": "Atardecer en el malecón",
     "text": "La última tarde en Cartagena, Nicolás le dice a Emily: «Te llevo a mi lugar favorito». Caminan por la ciudad amurallada, entre casas de colores y balcones llenos de flores. Un vendedor ambulante les ofrece fruta y Emily compra mango con limón. Después se pierden un poco en las calles estrechas. «Creo que nos perdimos», dice Emily, riendo. Por fin llegan a la muralla, frente al mar. El atardecer es naranja y rosa. Se sientan en una banca y Nicolás toma muchas fotos. «¿Me las mandas?», pregunta Emily. «Claro, te las mando esta noche.» De repente, un niño pasa con su perro y el perro se roba el helado de Nicolás. ¡Emily se muere de risa!",

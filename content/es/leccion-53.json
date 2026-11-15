@@ -59,6 +59,18 @@
     { "question": { "es": "El dueño de la cafetería te invita un pastel gratis. ¿Qué dice?", "en": "The coffee shop owner gives you a free cake. What does he say?" }, "options": ["Este va por la casa.", "Este lo paga usted.", "Este es para llevar.", "Este va sin azúcar."], "correct": 0, "explanation": { "en": "«Por la casa» = on the house." } },
     { "question": { "es": "Propones a tus amigos tomar un café juntos. ¿Qué dices (nosotros)?", "en": "You suggest having a coffee together. What do you say (let's)?" }, "options": ["¡Tomemos un café!", "¡Toma un café!", "¡Tomen un café!", "¡Tomamos café ayer!"], "correct": 0, "explanation": { "en": "«Let's»: nosotros subjunctive form, tomemos." } }
   ],
+  "sentences": [
+    { "sentence": "¿Me regala un tinto y un pan de bono, por favor?", "kind": "question", "bold": ["Me regala", "tinto", "pan de bono"], "en": "Can I have a black coffee and a cheese bread, please?" },
+    { "sentence": "¿Es para llevar o para tomar aquí?", "kind": "question", "bold": ["para llevar", "para tomar aquí"], "en": "Is it to go or for here?" },
+    { "sentence": "¿Tienen leche deslactosada para el capuchino?", "kind": "question", "bold": ["leche deslactosada", "capuchino"], "en": "Do you have lactose-free milk for the cappuccino?" },
+    { "sentence": "Ya tomé tres tazas; ¿este café es descafeinado?", "kind": "question", "bold": ["tazas", "descafeinado"], "en": "I've already had three cups; is this coffee decaf?" },
+    { "sentence": "¿Vamos a merendar a la cafetería de la esquina?", "kind": "question", "bold": ["merendar", "cafetería"], "en": "Shall we go for an afternoon snack at the café on the corner?" },
+    { "sentence": "Diego toma café como si fuera agua.", "kind": "statement", "bold": ["toma", "como si fuera"], "en": "Diego drinks coffee as if it were water." },
+    { "sentence": "Carmen hace todo para que su hijo no tome tanto café.", "kind": "statement", "bold": ["hace todo para que", "tome"], "en": "Carmen does everything so that her son doesn't drink so much coffee." },
+    { "sentence": "¡Tomemos un café antes de trabajar!", "kind": "statement", "bold": ["¡Tomemos"], "en": "Let's have a coffee before work!" },
+    { "sentence": "El barista me dio un café americano sin azúcar y sin popote.", "kind": "statement", "bold": ["barista", "café americano", "azúcar", "popote"], "en": "The barista gave me an americano without sugar and without a straw." },
+    { "sentence": "Hoy no tomo café; prefiero un té con una galleta.", "kind": "statement", "bold": ["té", "galleta"], "en": "Today I'm not having coffee; I prefer a tea with a cookie." }
+  ],
   "story": {
     "title": "El café de la esquina",
     "text": "En Bogotá, Emily trabaja muchas mañanas desde un café pequeño cerca de su casa. El barista, Andrés Felipe, ya la conoce. «¿Lo de siempre? ¿Un capuchino con leche deslactosada?» «Sí, y hoy también un pan de bono.» Al lado, un señor mayor toma tinto tras tinto. «Toma café como si fuera agua», le susurra Emily a Nicolás, que acaba de llegar. «Así son los bogotanos», ríe él. «¿Para tomar aquí o para llevar?», pregunta el barista. «Para aquí, hoy no tenemos prisa.» Cuando van a pagar, Andrés Felipe les da dos galletas. «Estas van por la casa. Me dijeron que se casan. ¡Felicitaciones!» «¡Tomemos un café para celebrar!», dice Nicolás.",

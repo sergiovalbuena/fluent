@@ -59,6 +59,18 @@
     { "question": { "es": "Llegas a una fiesta a las diez de la noche. ¿Cómo saludas?", "en": "You arrive at a party at 10 p.m. How do you greet people?" }, "options": ["¡Buenas noches!", "¡Buenos días!", "¡Buenas tardes!", "¡Hasta luego!"], "correct": 0, "explanation": { "en": "«Buenas noches» works as a greeting at night too, not only when you go to bed." } },
     { "question": { "es": "Alguien te pregunta de dónde eres. Eres de Chicago. ¿Qué respondes?", "en": "Someone asks where you're from. You're from Chicago. What do you answer?" }, "options": ["Soy de Chicago.", "Estoy de Chicago.", "Me llamo Chicago.", "Es de Chicago."], "correct": 0, "explanation": { "en": "Origin uses «ser»: «soy de…». «Es de» means he / she is from." } }
   ],
+  "sentences": [
+    { "sentence": "¡Buenos días, señora! ¿Cómo está usted hoy?", "kind": "question", "bold": ["¡Buenos días", "señora", "Cómo está usted"], "en": "Good morning, ma'am! How are you today?" },
+    { "sentence": "¿Eres la nueva vecina del tercer piso?", "kind": "question", "bold": ["Eres", "vecina"], "en": "Are you the new neighbor on the third floor?" },
+    { "sentence": "Hola, me llamo Emily. ¿Y tú, cómo te llamas?", "kind": "question", "bold": ["Hola", "me llamo", "cómo te llamas"], "en": "Hi, my name is Emily. And you, what's your name?" },
+    { "sentence": "¿Cómo estás, Diego? ¿Bien o más o menos?", "kind": "question", "bold": ["Cómo estás", "Bien", "más o menos"], "en": "How are you, Diego? Good or so-so?" },
+    { "sentence": "¿Usted es el señor García, el vecino de Carmen?", "kind": "question", "bold": ["es", "señor", "vecino"], "en": "Are you Mr. García, Carmen's neighbor?" },
+    { "sentence": "Soy Emily, de Chicago, y soy la nueva vecina.", "kind": "statement", "bold": ["Soy", "soy", "vecina"], "en": "I'm Emily, from Chicago, and I'm the new neighbor." },
+    { "sentence": "Estoy bien, gracias, pero un poco cansada.", "kind": "statement", "bold": ["Estoy", "bien"], "en": "I'm fine, thanks, but a little tired." },
+    { "sentence": "Carmen es muy amable y es mi vecina.", "kind": "statement", "bold": ["es", "es", "vecina"], "en": "Carmen is very kind and she's my neighbor." },
+    { "sentence": "Buenas noches, Carmen. ¡Hasta mañana!", "kind": "statement", "bold": ["Buenas noches", "¡Hasta mañana"], "en": "Good night, Carmen. See you tomorrow!" },
+    { "sentence": "Adiós, Diego, ¡nos vemos el lunes!", "kind": "statement", "bold": ["Adiós", "¡nos vemos"], "en": "Bye, Diego, see you on Monday!" }
+  ],
   "story": {
     "title": "La nueva vecina",
     "text": "Emily es de Chicago, pero hoy está en la Ciudad de México. Es su primer día en el departamento nuevo. Son las nueve de la mañana y Emily sale con su café. Una señora abre la puerta de al lado. «¡Buenos días!», dice la señora. «¡Buenos días! Me llamo Emily. Soy la nueva vecina.» «Mucho gusto, Emily. Yo me llamo Carmen. ¿Cómo está?» «Muy bien, gracias. ¿Y usted?» «Bien, bien. ¡Bienvenida al edificio!» Emily sonríe. Un niño pasa en bicicleta y grita: «¡Hola, abuela!». «Es mi nieto, Mateo», explica Carmen. A las nueve y media, Emily tiene que ir a la oficina. «Hasta luego, señora Carmen.» «Hasta luego, Emily. ¡Que tenga un buen día!»",

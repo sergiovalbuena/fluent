@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Es mejor que ___ a la estética.» (tú, ir)", "en": "Complete: «Es mejor que ___ a la estética.» (tú, ir)" }, "options": ["vayas", "vas", "irás", "ibas"], "correct": 0, "explanation": { "en": "«Es mejor que» + subjunctive." } },
     { "question": { "es": "Sales del spa: te dieron un masaje hace cinco minutos. ¿Cómo lo dices?", "en": "You're leaving the spa: you had a massage five minutes ago. How do you say it?" }, "options": ["Acabo de hacerme un masaje.", "Voy a hacerme un masaje.", "Acabo hacer masaje.", "Me hice masajeando."], "correct": 0, "explanation": { "en": "«Acabar de» + hacerse un masaje." } }
   ],
+  "sentences": [
+    { "sentence": "¿Me puede cortar las puntas y el fleco, por favor?", "kind": "question", "bold": ["las puntas", "fleco"], "en": "Can you trim the ends and the bangs, please?" },
+    { "sentence": "¡Te quedó precioso! ¿Te hiciste un corte de pelo nuevo?", "kind": "question", "bold": ["hiciste", "corte de pelo"], "en": "It looks beautiful! Did you get a new haircut?" },
+    { "sentence": "¿Me puede hacer rayitos o prefiere un tinte completo?", "kind": "question", "bold": ["rayitos", "tinte"], "en": "Can you give me highlights, or do you prefer a full dye?" },
+    { "sentence": "¿Tienes el pelo lacio o rizado de nacimiento?", "kind": "question", "bold": ["lacio", "rizado"], "en": "Is your hair naturally straight or curly?" },
+    { "sentence": "¿Cuándo te vas a cortar el pelo, antes de la boda?", "kind": "question", "bold": ["cortar el pelo"], "en": "When are you going to get your hair cut, before the wedding?" },
+    { "sentence": "Mañana me corto el pelo en la estética de la esquina.", "kind": "statement", "bold": ["me corto el pelo", "estética"], "en": "Tomorrow I'm getting my hair cut at the salon on the corner." },
+    { "sentence": "Quiero que me lo deje más corto, pero no mucho.", "kind": "statement", "bold": ["Quiero que", "deje"], "en": "I want you to leave it shorter, but not too much." },
+    { "sentence": "Me voy a hacer las uñas y un masaje el sábado.", "kind": "statement", "bold": ["Me voy a hacer", "las uñas", "masaje"], "en": "I'm going to get my nails done and a massage on Saturday." },
+    { "sentence": "Es mejor que te pintes el pelo en la peluquería, no en casa.", "kind": "statement", "bold": ["Es mejor que", "pintes", "peluquería"], "en": "It's better for you to dye your hair at the hairdresser's, not at home." },
+    { "sentence": "Los masajes son hechos por especialistas con mucha experiencia.", "kind": "statement", "bold": ["masajes", "son hechos"], "en": "The massages are given by very experienced specialists." }
+  ],
   "story": {
     "title": "Lista para la boda",
     "text": "La boda de Emily y Nicolás es en un mes, en Bogotá. Emily va a una peluquería para probar peinados. «Tengo el pelo un poco rizado y muy largo», le explica a la estilista, Daniela. «Para el día de la boda quiero algo sencillo y elegante.» Daniela le recomienda cortarse solo las puntas y hacerse unas mechas suaves. «Es mejor que no cambies mucho antes de la boda», dice. Mientras le seca el pelo, Daniela le cuenta que su hermana también se casa en diciembre. Al final, Emily se mira en el espejo. «¡Te quedó precioso!», dice Daniela. Antes de irse, Emily hace otra cita: el día de la boda se va a hacer las uñas y el peinado aquí.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «No trabajamos para un jefe, ___ para nosotros.»", "en": "Complete: «No trabajamos para un jefe, ___ para nosotros.»" }, "options": ["sino", "si no", "pero", "o"], "correct": 0, "explanation": { "en": "After a negative, «sino» = but rather." } },
     { "question": { "es": "Te llaman mientras estás en una reunión en México. ¿Qué dices?", "en": "Someone calls while you're in a meeting in Mexico. What do you say?" }, "options": ["Estoy en junta, te llamo después.", "Estoy en huelga, te llamo después.", "Estoy de quincena.", "Estoy entregado."], "correct": 0, "explanation": { "en": "«Estar en junta» (Mexico) = to be in a meeting." } }
   ],
+  "sentences": [
+    { "sentence": "¿Para cuándo es el informe del proyecto?", "kind": "question", "bold": ["informe", "proyecto"], "en": "When is the project report due?" },
+    { "sentence": "¿Podemos agendar una reunión con el cliente el lunes?", "kind": "question", "bold": ["reunión", "cliente"], "en": "Can we schedule a meeting with the client on Monday?" },
+    { "sentence": "¿Ya entregaste el archivo, o todavía falta?", "kind": "question", "bold": ["entregaste", "archivo"], "en": "Have you already turned in the file, or is it still pending?" },
+    { "sentence": "¿Cuándo pagan la quincena y el aguinaldo?", "kind": "question", "bold": ["quincena", "aguinaldo"], "en": "When do they pay the biweekly salary and the Christmas bonus?" },
+    { "sentence": "¿Por qué hiciste horas extra toda la semana?", "kind": "question", "bold": ["horas extra"], "en": "Why did you work overtime all week?" },
+    { "sentence": "Si hubiera sabido de la junta, habría venido temprano.", "kind": "statement", "bold": ["Si hubiera sabido", "junta", "habría venido"], "en": "If I had known about the meeting, I would have come early." },
+    { "sentence": "Si hubieras escuchado ayer, ahora sabrías la respuesta.", "kind": "statement", "bold": ["Si hubieras escuchado", "sabrías"], "en": "If you had listened yesterday, you would know the answer now." },
+    { "sentence": "Gracias a tu ayuda, terminamos antes del plazo.", "kind": "statement", "bold": ["Gracias a", "plazo"], "en": "Thanks to your help, we finished before the deadline." },
+    { "sentence": "No es culpa de mi colega, sino del sistema.", "kind": "statement", "bold": ["No", "colega", "sino"], "en": "It's not my colleague's fault, but the system's." },
+    { "sentence": "Te mando el correo para que lo revises antes de la reunión.", "kind": "statement", "bold": ["correo", "para que", "revises", "reunión"], "en": "I'm sending you the email so that you review it before the meeting." }
+  ],
   "story": {
     "title": "El último proyecto",
     "text": "Antes de mudarse a Bogotá, Emily tiene que terminar un proyecto grande para un cliente importante. El plazo vence el viernes. El miércoles, el sistema se cae y pierden medio día de trabajo. «Si hubiéramos guardado los archivos en la nube, no habríamos perdido nada», dice Pablo. Todo el equipo hace horas extra. Diego trae tacos para todos y Valeria se queda con ellos hasta las once. El jueves en la noche, por fin terminan. «Gracias a ustedes, entregamos a tiempo», dice Emily. El viernes, en la junta con el cliente, todo sale perfecto. Por la tarde, sus colegas le hacen una pequeña fiesta de despedida. «No es un adiós, sino un hasta luego», dice Valeria.",

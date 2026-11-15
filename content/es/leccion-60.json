@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Normalmente ___ desayunar en casa.» (yo, soler)", "en": "Complete: «Normalmente ___ desayunar en casa.» (yo, soler)" }, "options": ["suelo", "solo", "soleo", "suelto"], "correct": 0, "explanation": { "en": "«Soler» (o → ue): suelo + infinitive." } },
     { "question": { "es": "¿Qué forma es la más usada hoy para una mujer que es médica?", "en": "Which form is most used today for a female doctor?" }, "options": ["la médica", "la médicesa", "la medicina", "la médicotriz"], "correct": 0, "explanation": { "en": "«La médica» is standard today; «la médico» is also heard." } }
   ],
+  "sentences": [
+    { "sentence": "¿A qué hora te despiertas y a qué hora te levantas?", "kind": "question", "bold": ["te despiertas", "te levantas"], "en": "What time do you wake up and what time do you get up?" },
+    { "sentence": "¿Sueles desayunar en casa o en la oficina?", "kind": "question", "bold": ["Sueles", "desayunar"], "en": "Do you usually have breakfast at home or at the office?" },
+    { "sentence": "¿Te echas una siesta después de almorzar?", "kind": "question", "bold": ["echas", "siesta", "almorzar"], "en": "Do you take a nap after lunch?" },
+    { "sentence": "¿A qué hora te acuestas entre semana?", "kind": "question", "bold": ["te acuestas"], "en": "What time do you go to bed during the week?" },
+    { "sentence": "¿Por qué no sonó el despertador esta mañana?", "kind": "question", "bold": ["despertador"], "en": "Why didn't the alarm clock go off this morning?" },
+    { "sentence": "Me levanto a las seis, me ducho y me visto rápido.", "kind": "statement", "bold": ["Me levanto", "me ducho", "me visto"], "en": "I get up at six, I shower and I get dressed quickly." },
+    { "sentence": "Suelo cepillarme los dientes después de cada comida.", "kind": "statement", "bold": ["Suelo", "cepillarme los dientes"], "en": "I usually brush my teeth after every meal." },
+    { "sentence": "Riego las plantas cada dos días y saco al perro cada mañana.", "kind": "statement", "bold": ["cada", "cada"], "en": "I water the plants every two days and take the dog out every morning." },
+    { "sentence": "Ojalá que podamos viajar juntos pronto.", "kind": "statement", "bold": ["Ojalá que", "podamos"], "en": "I hope we can travel together soon." },
+    { "sentence": "Mi rutina es sencilla, pero me hace feliz.", "kind": "statement", "bold": ["rutina"], "en": "My routine is simple, but it makes me happy." }
+  ],
   "story": {
     "title": "Un día normal",
     "text": "Ya pasaron seis meses desde la boda. Emily y Nicolás viven en un apartamento con vista a las montañas de Bogotá. Su rutina es sencilla. Emily se despierta a las seis, saca a pasear a Taco y prepara un tinto. Nicolás suele levantarse más tarde porque trabaja hasta la noche. Emily se ducha, se viste y trabaja desde casa hasta la una. Almuerzan juntos casi todos los días. Por la tarde, Emily habla con Valeria y Diego por videollamada, y los domingos llama a su familia y a la señora Carmen. Antes de acostarse, escribe en su cuaderno las palabras nuevas del día, como hacía en la Ciudad de México. «¡Qué rápido pasa el tiempo!», piensa. «Ojalá que nunca deje de aprender.»",

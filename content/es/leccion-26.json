@@ -59,6 +59,18 @@
     { "question": { "es": "¿Qué instrumento es de percusión?", "en": "Which instrument is a percussion instrument?" }, "options": ["la batería", "la flauta", "el violín", "la trompeta"], "correct": 0, "explanation": { "en": "«La batería» = the drums." } },
     { "question": { "es": "Escuchas una canción, pero no entiendes las palabras. ¿Qué dices?", "en": "You hear a song but don't understand the words. What do you say?" }, "options": ["No entiendo la letra.", "No entiendo el ritmo.", "No sé tocar.", "No entiendo la banda."], "correct": 0, "explanation": { "en": "«La letra» = the lyrics." } }
   ],
+  "sentences": [
+    { "sentence": "¿Tocas la guitarra o el piano?", "kind": "question", "bold": ["Tocas", "guitarra", "piano"], "en": "Do you play the guitar or the piano?" },
+    { "sentence": "¿Cuánto tiempo llevas tocando el violín?", "kind": "question", "bold": ["llevas", "tocando", "violín"], "en": "How long have you been playing the violin?" },
+    { "sentence": "¿Sabes tocar la batería o solo cantar?", "kind": "question", "bold": ["Sabes", "tocar", "batería", "cantar"], "en": "Do you know how to play the drums or just sing?" },
+    { "sentence": "¿Vamos al concierto de la banda el viernes?", "kind": "question", "bold": ["concierto", "banda"], "en": "Shall we go to the band's concert on Friday?" },
+    { "sentence": "¿Entiendes la letra de esta canción?", "kind": "question", "bold": ["letra", "canción"], "en": "Do you understand the lyrics of this song?" },
+    { "sentence": "Llevo diez años tocando el piano y todavía me encanta.", "kind": "statement", "bold": ["Llevo", "tocando", "piano"], "en": "I've been playing the piano for ten years and I still love it." },
+    { "sentence": "Mi abuelo nos cantaba boleros antes de dormir.", "kind": "statement", "bold": ["cantaba"], "en": "My grandfather used to sing boleros to us before bed." },
+    { "sentence": "Diego sabe tocar la trompeta, pero no sabe bailar.", "kind": "statement", "bold": ["sabe", "tocar", "trompeta", "sabe"], "en": "Diego knows how to play the trumpet, but he doesn't know how to dance." },
+    { "sentence": "¿Instrumentos? No toco ninguno, pero me encanta la música.", "kind": "statement", "bold": ["ninguno", "música"], "en": "Instruments? I don't play any, but I love music." },
+    { "sentence": "Mi hermana estudia flauta en el conservatorio y tiene muy buen ritmo.", "kind": "statement", "bold": ["flauta", "conservatorio", "ritmo"], "en": "My sister studies flute at the conservatory and has very good rhythm." }
+  ],
   "story": {
     "title": "Noche de mariachis",
     "text": "Para el cumpleaños de Carmen, su familia contrata un mariachi. A las once de la noche llegan seis músicos con trajes negros y sombreros enormes. Tocan la trompeta, el violín y la guitarra, y cantan «Las mañanitas», la canción de cumpleaños mexicana. Carmen llora de emoción. «Cuando era niña, mi papá nos cantaba esta canción cada año», le explica a Emily. Raúl pide una ranchera y toda la familia canta. Emily no conoce la letra, pero aplaude con el ritmo. «¿Tú tocas algún instrumento?», le pregunta Mateo. «Ninguno, pero sé cantar un poco.» «¡Entonces canta con nosotros!» Al final, Emily canta el coro de «Cielito lindo» con todos.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «En mi clase ___ veinte estudiantes.»", "en": "Complete: «En mi clase ___ veinte estudiantes.»" }, "options": ["hay", "son", "tienen", "están"], "correct": 0, "explanation": { "en": "«Hay» = there are. It's the same for one or many." } },
     { "question": { "es": "El precio es muy alto para ti. ¿Qué le dices al vendedor?", "en": "The price is too high for you. What do you say to the seller?" }, "options": ["¿Me hace un descuento?", "¿Cuántos años tiene?", "Es muy barato.", "Somos cuatro."], "correct": 0, "explanation": { "en": "«¿Me hace un descuento?» = can you give me a discount?" } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuántos años tienes, Diego? ¿Veinte o treinta?", "kind": "question", "bold": ["Cuántos años tienes", "Veinte", "treinta"], "en": "How old are you, Diego? Twenty or thirty?" },
+    { "sentence": "¿Cuánto cuesta la docena de huevos?", "kind": "question", "bold": ["Cuánto cuesta", "la docena"], "en": "How much is a dozen eggs?" },
+    { "sentence": "¿Cuánto cuestan los tomates hoy?", "kind": "question", "bold": ["Cuánto cuestan"], "en": "How much are the tomatoes today?" },
+    { "sentence": "¿Hay cinco o diez personas en la cocina?", "kind": "question", "bold": ["Hay", "cinco", "diez"], "en": "Are there five or ten people in the kitchen?" },
+    { "sentence": "¿Cuál es tu número de teléfono, por favor?", "kind": "question", "bold": ["número"], "en": "What's your phone number, please?" },
+    { "sentence": "Tengo treinta y dos años y vivo en el segundo piso.", "kind": "statement", "bold": ["Tengo", "treinta y dos", "años", "segundo"], "en": "I'm thirty-two years old and I live on the second floor." },
+    { "sentence": "Hay tres sillas en la cocina y una mesa.", "kind": "statement", "bold": ["Hay", "tres", "una"], "en": "There are three chairs in the kitchen and one table." },
+    { "sentence": "El pan cuesta quince pesos y el café cincuenta.", "kind": "statement", "bold": ["cuesta", "quince", "cincuenta"], "en": "The bread costs fifteen pesos and the coffee fifty." },
+    { "sentence": "Carmen tiene sesenta y cinco años y un gato.", "kind": "statement", "bold": ["sesenta y cinco", "años", "un"], "en": "Carmen is sixty-five years old and has one cat." },
+    { "sentence": "La mitad de la clase tiene veintiún años.", "kind": "statement", "bold": ["La mitad", "veintiún", "años"], "en": "Half of the class is twenty-one years old." }
+  ],
   "story": {
     "title": "En el mercado",
     "text": "Es domingo y Emily va al mercado con la señora Carmen. Hay muchos puestos de frutas, verduras y flores. «¿Cuánto cuestan los aguacates?», pregunta Emily. «Tres por veinte pesos, güera», responde el vendedor. Emily no entiende la palabra «güera». Carmen sonríe: «En México, así llaman a las personas rubias. Es cariñoso.» Emily compra tres aguacates, un kilo de tomates y media docena de huevos. Todo cuesta noventa y cinco pesos. Paga con un billete de cien. «Son cinco pesos de cambio», dice el vendedor. Después, Carmen compra flores para su nieto Mateo, porque mañana cumple siete años. «¿Siete años? ¡Qué grande!», dice Emily.",

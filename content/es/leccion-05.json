@@ -59,6 +59,18 @@
     { "question": { "es": "«¿De quién es la chaqueta morada?» Es de Diego. ¿Qué respondes?", "en": "«Whose purple jacket is this?» It's Diego's. What do you answer?" }, "options": ["Es de Diego.", "Es Diego.", "Está de Diego.", "Es Diego suya."], "correct": 0, "explanation": { "en": "Possession: «ser de + person» = it's Diego's." } },
     { "question": { "es": "Quieres saber cómo se escribe el apellido de alguien. ¿Qué preguntas?", "en": "You want to know how to spell someone's last name. What do you ask?" }, "options": ["¿Cómo se escribe?", "¿Cómo se llama?", "¿De qué color es?", "¿Cómo es?"], "correct": 0, "explanation": { "en": "«¿Cómo se escribe?» = how do you spell it?" } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuál es tu color favorito, el azul o el verde?", "kind": "question", "bold": ["azul", "verde"], "en": "What's your favorite color, blue or green?" },
+    { "sentence": "¿Cómo es Diego, simpático o tímido?", "kind": "question", "bold": ["simpático", "tímido"], "en": "What is Diego like, friendly or shy?" },
+    { "sentence": "¿Cómo se escribe tu apellido, por favor?", "kind": "question", "bold": ["apellido"], "en": "How do you spell your last name, please?" },
+    { "sentence": "¿Tu hermano es más alto que tú?", "kind": "question", "bold": ["más alto que"], "en": "Is your brother taller than you?" },
+    { "sentence": "¿Es muy trabajador o un poco flojo?", "kind": "question", "bold": ["muy", "trabajador", "un poco", "flojo"], "en": "Is he very hardworking or a little lazy?" },
+    { "sentence": "Tengo un carro rojo y una casa blanca.", "kind": "statement", "bold": ["un", "carro", "rojo", "una", "casa", "blanca"], "en": "I have a red car and a white house." },
+    { "sentence": "Diego es simpático y trabajador, pero un poco tímido.", "kind": "statement", "bold": ["es", "simpático", "trabajador", "un poco", "tímido"], "en": "Diego is friendly and hardworking, but a little shy." },
+    { "sentence": "Ana es más alta que su hermano y muy divertida.", "kind": "statement", "bold": ["es", "más alta que", "muy", "divertida"], "en": "Ana is taller than her brother and very fun." },
+    { "sentence": "Carmen tiene un gato negro y dos gatas blancas.", "kind": "statement", "bold": ["un", "gato", "negro", "dos", "gatas", "blancas"], "en": "Carmen has a black cat and two white cats." },
+    { "sentence": "Emily es inteligente y muy divertida.", "kind": "statement", "bold": ["es", "inteligente", "muy", "divertida"], "en": "Emily is smart and very funny." }
+  ],
   "story": {
     "title": "Los compañeros de oficina",
     "text": "Emily trabaja en una empresa de diseño. Su oficina es grande y tiene paredes blancas y plantas verdes. Hoy describe a sus compañeros en una carta a su mejor amiga. «Diego es alto, tiene el pelo negro y los ojos cafés. Es muy simpático y divertido, pero un poco desordenado. Valeria es la jefa. Es inteligente y muy trabajadora, y siempre lleva ropa elegante, casi siempre negra. Pablo es el más joven. Es tímido, pero cuando habla de música es otra persona. Su color favorito es el amarillo: ¡su mochila, su taza y su bicicleta son amarillas! Todos son diferentes, pero el equipo es muy bueno.»",

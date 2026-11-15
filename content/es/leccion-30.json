@@ -59,6 +59,18 @@
     { "question": { "es": "Tu celular suena, pero no quieres contestar. ¿Qué dices, sin repetir «el celular»?", "en": "Your cell is ringing but you don't want to answer. What do you say without repeating «el celular»?" }, "options": ["Déjalo sonar.", "Déjale sonar.", "Lo deja sonar.", "Déjala sonar."], "correct": 0, "explanation": { "en": "«Lo» replaces «el celular»; in a positive command it attaches: déjalo." } },
     { "question": { "es": "Hablas con tu mamá y casi no tienes batería. ¿Qué dices?", "en": "You're talking to your mom and your battery is almost dead. What do you say?" }, "options": ["Se me está acabando la batería.", "Se me está acabando la señal de.", "Me acaba la batería a mí.", "Estoy acabando batería."], "correct": 0, "explanation": { "en": "«Se me está acabando» = it's running out on me." } }
   ],
+  "sentences": [
+    { "sentence": "¿Bueno? ¿Se encuentra Diego, por favor?", "kind": "question", "bold": ["Bueno"], "en": "Hello? Is Diego there, please?" },
+    { "sentence": "¿Quiere dejar un recado o le llamo más tarde?", "kind": "question", "bold": ["dejar un recado", "llamo"], "en": "Do you want to leave a message or shall I call later?" },
+    { "sentence": "¿Me escuchas bien, o no hay señal?", "kind": "question", "bold": ["escuchas", "señal"], "en": "Can you hear me well, or is there no signal?" },
+    { "sentence": "¿Me pasas tu número? Te voy a llamar mañana.", "kind": "statement", "bold": ["número", "Te voy a llamar"], "en": "Can you give me your number? I'm going to call you tomorrow." },
+    { "sentence": "¿Por qué no contestas mis llamadas?", "kind": "question", "bold": ["contestas", "llamadas"], "en": "Why don't you answer my calls?" },
+    { "sentence": "No cuelgue, por favor; ahorita lo comunico.", "kind": "statement", "bold": ["No cuelgue"], "en": "Don't hang up, please; I'll put you through right away." },
+    { "sentence": "Hace una hora que hablas por teléfono con tu mamá.", "kind": "statement", "bold": ["Hace", "que", "hablas", "teléfono"], "en": "You've been talking on the phone with your mom for an hour." },
+    { "sentence": "Diego está hablando por celular; te llama en cinco minutos.", "kind": "statement", "bold": ["está hablando", "celular", "te llama"], "en": "Diego is talking on his cell phone; he'll call you in five minutes." },
+    { "sentence": "Perdón, se equivocó de número; aquí no vive ninguna Ana.", "kind": "statement", "bold": ["se equivocó", "número"], "en": "Sorry, you have the wrong number; no Ana lives here." },
+    { "sentence": "Se me está acabando la batería; ¿tienes un cargador?", "kind": "question", "bold": ["cargador"], "en": "My battery is running out; do you have a charger?" }
+  ],
   "story": {
     "title": "¿Bueno?",
     "text": "El lunes, Emily llama a la oficina de un cliente. «¿Bueno?», contesta una voz. «Buenos días, ¿se encuentra el licenciado Ramírez?» «No se encuentra en este momento. ¿Quiere dejarle un recado?» «Sí, por favor. Dígale que llamó Emily, de la agencia de diseño.» Por la tarde, el celular de Emily suena. Es un número desconocido. «¿Bueno?» «¿Hablo con la pizzería?», pregunta un señor. «No, se equivocó de número», responde Emily, riendo. Por la noche hace una videollamada con su mamá en Chicago. Hablan una hora. «¡Hace una hora que hablamos!», dice su mamá. «Sí, y se me está acabando la batería. ¡Te llamo mañana!»",

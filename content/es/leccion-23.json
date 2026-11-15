@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Era como si nos ___ de toda la vida.»", "en": "Complete: «Era como si nos ___ de toda la vida.»" }, "options": ["conociéramos", "conocíamos", "conoceremos", "conocemos"], "correct": 0, "explanation": { "en": "«Como si» is always followed by the imperfect subjunctive." } },
     { "question": { "es": "Una persona que siempre tiene frío es…", "en": "A person who's always cold is…" }, "options": ["friolenta", "calurosa", "nublada", "húmeda"], "correct": 0, "explanation": { "en": "«Friolento / friolenta» (friolero in Spain)." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué tiempo hace hoy? ¿Hace calor o frío?", "kind": "question", "bold": ["hace", "Hace", "calor", "frío"], "en": "What's the weather like today? Is it hot or cold?" },
+    { "sentence": "¿Está lloviendo o solo está nublado?", "kind": "question", "bold": ["Está lloviendo", "nublado"], "en": "Is it raining or is it just cloudy?" },
+    { "sentence": "¿Viste el arcoíris después de la tormenta?", "kind": "question", "bold": ["arcoíris", "tormenta"], "en": "Did you see the rainbow after the storm?" },
+    { "sentence": "¿En qué estación nieva en la montaña?", "kind": "question", "bold": ["nieva"], "en": "In what season does it snow in the mountains?" },
+    { "sentence": "¿Por qué no trajiste el paraguas?", "kind": "question", "bold": ["paraguas"], "en": "Why didn't you bring your umbrella?" },
+    { "sentence": "En verano hace mucho calor y el clima es húmedo.", "kind": "statement", "bold": ["verano", "hace", "calor", "clima", "húmedo"], "en": "In summer it's very hot and the climate is humid." },
+    { "sentence": "Caminaba bajo la lluvia cuando vi a Diego.", "kind": "statement", "bold": ["Caminaba", "lluvia", "vi"], "en": "I was walking in the rain when I saw Diego." },
+    { "sentence": "Había olvidado el paraguas, así que llegué mojada.", "kind": "statement", "bold": ["Había olvidado", "paraguas"], "en": "I had forgotten my umbrella, so I arrived wet." },
+    { "sentence": "En otoño hace viento y hay mucha niebla en la mañana.", "kind": "statement", "bold": ["otoño", "hace", "viento", "niebla"], "en": "In fall it's windy and there's a lot of fog in the morning." },
+    { "sentence": "Soy muy friolenta: en invierno siempre llevo dos suéteres.", "kind": "statement", "bold": ["friolenta", "invierno"], "en": "I get cold easily: in winter I always wear two sweaters." }
+  ],
   "story": {
     "title": "Temporada de lluvias",
     "text": "En julio, en la Ciudad de México, las mañanas son soleadas y las tardes son de lluvia. Emily todavía no lo sabe. Un martes sale de la oficina a las seis. Hace buen tiempo, así que no lleva paraguas. Diez minutos después, el cielo se pone negro y empieza un aguacero. Emily corre a una parada de autobús. Allí hay un chico que también se había olvidado el paraguas. «¿Siempre llueve así?», pregunta Emily. «Todos los días, de junio a septiembre», responde él, sonriendo. Se llama Nicolás, es fotógrafo y tiene un perro también. Hablan durante media hora mientras llueve. Cuando para la lluvia, intercambian números. «Gracias a la lluvia», piensa Emily.",

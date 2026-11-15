@@ -59,6 +59,18 @@
     { "question": { "es": "¿Qué pegas en un sobre para pagar el envío?", "en": "What do you stick on an envelope to pay the postage?" }, "options": ["una estampilla", "un paquete", "una báscula", "un código postal"], "correct": 0, "explanation": { "en": "«Estampilla» (or «sello», «timbre») = stamp." } },
     { "question": { "es": "Tu paquete tiene platos de cerámica. ¿Qué le dices al empleado?", "en": "Your parcel contains ceramic plates. What do you tell the clerk?" }, "options": ["Es frágil.", "Es urgente de.", "Es remitente.", "Es rastreado."], "correct": 0, "explanation": { "en": "«Frágil» = fragile." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuánto cuesta enviar una postal a Chicago?", "kind": "question", "bold": ["enviar", "postal"], "en": "How much does it cost to send a postcard to Chicago?" },
+    { "sentence": "¿Cuánto tarda en llegar la caja de cartón a Estados Unidos?", "kind": "question", "bold": ["caja de cartón"], "en": "How long does it take for the cardboard box to arrive in the United States?" },
+    { "sentence": "¿Me da el número de rastreo para rastrear el paquete?", "kind": "question", "bold": ["número de rastreo", "rastrear"], "en": "Can you give me the tracking number to track the package?" },
+    { "sentence": "¿Dónde pongo el nombre del remitente en el sobre?", "kind": "question", "bold": ["remitente", "sobre"], "en": "Where do I put the sender's name on the envelope?" },
+    { "sentence": "¿Hay un buzón cerca de aquí?", "kind": "question", "bold": ["buzón"], "en": "Is there a mailbox near here?" },
+    { "sentence": "Asegúrate de que la dirección y el código postal están bien.", "kind": "statement", "bold": ["Asegúrate de que", "dirección", "código postal", "están"], "en": "Make sure the address and the ZIP code are correct." },
+    { "sentence": "Mientras dormía, llegó el cartero con una carta.", "kind": "statement", "bold": ["Mientras dormía", "cartero"], "en": "While I was sleeping, the mail carrier arrived with a letter." },
+    { "sentence": "Te llamará después de que reciba el paquete.", "kind": "statement", "bold": ["llamará", "después de que", "reciba"], "en": "She'll call you after she receives the package." },
+    { "sentence": "Después de que se fue el cartero, abrí el sobre.", "kind": "statement", "bold": ["Después de que", "fue"], "en": "After the mail carrier left, I opened the envelope." },
+    { "sentence": "El paquete está siendo entregado al destinatario hoy.", "kind": "statement", "bold": ["está siendo entregado", "destinatario"], "en": "The package is being delivered to the recipient today." }
+  ],
   "story": {
     "title": "Un paquete para Chicago",
     "text": "Se acerca la Navidad y Emily quiere mandarle un regalo a su familia en Chicago: café colombiano, unas mochilas tejidas y una carta. Va a la oficina de correos con Nicolás. «Quiero enviar este paquete a Estados Unidos», le dice al empleado. «Póngalo en la báscula, por favor. ¿Qué contiene?» «Café, ropa y unas tazas. Las tazas son frágiles.» El empleado le da un formulario. «Asegúrese de que la dirección y el código postal están bien.» «¿Cuánto tarda en llegar?» «Unas dos semanas.» Emily paga y recibe el número de rastreo. Diez días después, mientras desayuna, recibe un mensaje de su mamá: «¡Llegó el paquete! Te llamo después de que lo abramos todos juntos».",

@@ -59,6 +59,18 @@
     { "question": { "es": "¿Qué NO debes ponerle a la ropa de color?", "en": "What should you NOT put on colored clothes?" }, "options": ["cloro", "detergente", "agua", "suavizante"], "correct": 0, "explanation": { "en": "«Cloro» (bleach) removes color." } },
     { "question": { "es": "La máquina solo acepta monedas y tú tienes un billete. ¿Qué preguntas?", "en": "The machine only takes coins and you have a bill. What do you ask?" }, "options": ["¿Me cambia este billete por monedas?", "¿Me presta un billete?", "¿Me da el cloro?", "¿Me lava el billete?"], "correct": 0, "explanation": { "en": "«Cambiar por monedas» = to change into coins." } }
   ],
+  "sentences": [
+    { "sentence": "¿Me cambia este billete por monedas para la secadora?", "kind": "question", "bold": ["monedas", "secadora"], "en": "Can you change this bill into coins for the dryer?" },
+    { "sentence": "¿Qué quieres que haga con la ropa limpia?", "kind": "question", "bold": ["Qué quieres que haga", "ropa limpia"], "en": "What do you want me to do with the clean clothes?" },
+    { "sentence": "¿Esta blusa se lava a mano o en la lavadora?", "kind": "question", "bold": ["se lava a mano"], "en": "Is this blouse hand-wash or machine-wash?" },
+    { "sentence": "¿Para cuándo está lista la chamarra en la tintorería?", "kind": "question", "bold": ["tintorería"], "en": "When will the jacket be ready at the dry cleaner's?" },
+    { "sentence": "¿Por qué la que está en la esquina siempre está descompuesta?", "kind": "question", "bold": ["la que", "descompuesta"], "en": "Why is the one on the corner always broken?" },
+    { "sentence": "La lavadora que está en la esquina no funciona.", "kind": "statement", "bold": ["que"], "en": "The washing machine on the corner doesn't work." },
+    { "sentence": "La lavandería donde lavo mi ropa está a dos cuadras.", "kind": "statement", "bold": ["lavandería", "donde"], "en": "The laundromat where I wash my clothes is two blocks away." },
+    { "sentence": "Lo que necesito es más detergente y un poco de suavizante.", "kind": "statement", "bold": ["Lo que", "detergente", "suavizante"], "en": "What I need is more detergent and a bit of fabric softener." },
+    { "sentence": "No le pongas cloro a la ropa de color; esta mancha no sale.", "kind": "statement", "bold": ["cloro", "mancha"], "en": "Don't put bleach on colored clothes; this stain won't come out." },
+    { "sentence": "Ya doblé la ropa, pero todavía tengo que planchar las camisas.", "kind": "statement", "bold": ["doblé", "planchar"], "en": "I already folded the clothes, but I still have to iron the shirts." }
+  ],
   "story": {
     "title": "Desastre en la lavandería",
     "text": "En su nuevo departamento no hay lavadora, así que Emily va a la lavandería de la esquina. La señora que atiende es muy simpática. «Aquí puede lavar usted misma o dejarnos la ropa por kilo.» Emily decide lavarla ella misma. La máquina que elige está descompuesta, así que usa la de al lado. Pone toda la ropa junta: blanca, negra y roja. Una hora después, sus camisetas blancas son rosas. «¡No puede ser!», grita. La señora se ríe con cariño: «Lo que tiene que hacer es separar los colores, mija. Y esa blusa de seda se lava a mano». Emily suspira: «La próxima vez se la dejo a ustedes». «¿Para cuándo la quiere?», pregunta la señora.",

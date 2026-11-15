@@ -296,6 +296,18 @@
       }
     }
   ],
+  "sentences": [
+    { "sentence": "¿Podría decirme a qué hora abre la galería?", "kind": "question", "bold": ["Podría decirme", "galería"], "en": "Could you tell me what time the gallery opens?" },
+    { "sentence": "¿Dónde está la taquilla para comprar las entradas?", "kind": "question", "bold": ["taquilla", "entradas"], "en": "Where is the ticket office to buy the tickets?" },
+    { "sentence": "¿Quién pintó este cuadro, Frida Kahlo o Diego Rivera?", "kind": "question", "bold": ["pintó", "cuadro"], "en": "Who painted this painting, Frida Kahlo or Diego Rivera?" },
+    { "sentence": "¿La escultura es de mármol o de madera?", "kind": "question", "bold": ["escultura", "de", "mármol", "de", "madera"], "en": "Is the sculpture made of marble or wood?" },
+    { "sentence": "¿Hay un guía que hable inglés para la exposición?", "kind": "question", "bold": ["guía", "exposición"], "en": "Is there a guide who speaks English for the exhibition?" },
+    { "sentence": "Frida Kahlo pintó muchos autorretratos en su casa.", "kind": "statement", "bold": ["pintó", "autorretratos"], "en": "Frida Kahlo painted many self-portraits in her house." },
+    { "sentence": "El arte no es solo pintura, sino también música.", "kind": "statement", "bold": ["arte", "no", "solo", "pintura", "sino también"], "en": "Art isn't only painting, but also music." },
+    { "sentence": "Antes, el arte servía a la religión y a los reyes.", "kind": "statement", "bold": ["arte", "servía"], "en": "In the past, art served religion and kings." },
+    { "sentence": "Diego Rivera hizo un mural enorme en el Palacio Nacional.", "kind": "statement", "bold": ["hizo", "mural"], "en": "Diego Rivera made a huge mural in the National Palace." },
+    { "sentence": "Esta obra es muy antigua y fue un regalo de España.", "kind": "statement", "bold": ["obra", "antigua", "fue"], "en": "This work is very old and was a gift from Spain." }
+  ],
   "story": {
     "title": "La Casa Azul",
     "text": "Un domingo, Emily y Nicolás, el fotógrafo, visitan la Casa Azul en Coyoacán, donde vivió Frida Kahlo. Hay una fila larga en la taquilla. «Dos entradas, por favor», pide Nicolás. Dentro, la casa está llena de colores: paredes azules, cocina amarilla y un jardín con plantas enormes. Emily se queda mucho tiempo frente a un autorretrato. «Frida pintó muchos autorretratos porque pasaba mucho tiempo sola, en cama», explica la guía. También ven los vestidos tradicionales que usaba y los pinceles de su estudio. Después, comen en un café de la plaza. «El arte no es solo lo que ves en la pared», dice Nicolás. «También es cómo vivía ella.» Emily está de acuerdo.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Te ofrecen un té, pero te gustaría más un café. ¿Cómo lo dices con cortesía?", "en": "They offer you tea, but you'd rather have coffee. How do you say it politely?" }, "options": ["Preferiría un café, gracias.", "Prefiero café, ya.", "Preferiré un café.", "Prefería café mañana."], "correct": 0, "explanation": { "en": "The conditional «preferiría» is softer and polite." } },
     { "question": { "es": "Comiste mucho y no puedes comer más. ¿Qué dices?", "en": "You ate a lot and can't eat any more. What do you say?" }, "options": ["Ya estoy lleno.", "Tengo hambre.", "Estoy vacío.", "Tengo sed."], "correct": 0, "explanation": { "en": "«Estar lleno / llena» = to be full." } }
   ],
+  "sentences": [
+    { "sentence": "¿Me trae la cuenta y un poco más de pan, por favor?", "kind": "question", "bold": ["Me trae", "pan"], "en": "Can you bring me the check and a little more bread, please?" },
+    { "sentence": "¿Me pasas el queso y la cuchara?", "kind": "question", "bold": ["Me pasas", "el queso", "la cuchara"], "en": "Can you pass me the cheese and the spoon?" },
+    { "sentence": "¿Qué prefieres para la cena, pollo o pescado?", "kind": "question", "bold": ["cena", "pollo", "pescado"], "en": "What do you prefer for dinner, chicken or fish?" },
+    { "sentence": "Hay arroz y frijoles; ¿tienes hambre?", "kind": "question", "bold": ["arroz", "frijoles", "tienes hambre"], "en": "There's rice and beans; are you hungry?" },
+    { "sentence": "¿Te gustaría un jugo de naranja con el desayuno?", "kind": "question", "bold": ["Te gustaría", "jugo", "desayuno"], "en": "Would you like an orange juice with breakfast?" },
+    { "sentence": "Quiero agua y no como carne, gracias.", "kind": "statement", "bold": ["Quiero", "agua", "no como", "carne"], "en": "I want water and I don't eat meat, thanks." },
+    { "sentence": "Solo bebo té en la mañana, nada más.", "kind": "statement", "bold": ["Solo", "nada más"], "en": "I only drink tea in the morning, nothing else." },
+    { "sentence": "Para el desayuno como huevo con pan y queso.", "kind": "statement", "bold": ["desayuno", "huevo", "pan", "queso"], "en": "For breakfast I eat eggs with bread and cheese." },
+    { "sentence": "Preferiría un café con leche, por favor.", "kind": "statement", "bold": ["Preferiría", "leche"], "en": "I'd prefer a coffee with milk, please." },
+    { "sentence": "Necesito un cuchillo y un tenedor para la carne.", "kind": "statement", "bold": ["cuchillo", "tenedor", "carne"], "en": "I need a knife and a fork for the meat." }
+  ],
   "story": {
     "title": "La comida en casa de Carmen",
     "text": "El domingo, la señora Carmen enseña a Emily a cocinar chiles rellenos. En la cocina hay tomates, cebollas, queso, huevos y unos chiles grandes. «¿Pican mucho?», pregunta Emily, un poco nerviosa. «No, casi nada», responde Carmen. Emily prueba uno pequeño y se pone roja. «¡Sí pica!», grita, y bebe un vaso de agua. Mateo se ríe. A las tres comen todos juntos: chiles rellenos, arroz, frijoles y tortillas que acaban de salir del comal. Emily solo bebe agua de jamaica. «Está riquísimo, señora Carmen», dice. Al final, Carmen ofrece flan. «Gracias, pero ya estoy llena.» «¡Siempre hay lugar para el postre!», dice Raúl.",

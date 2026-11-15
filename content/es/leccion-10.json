@@ -59,6 +59,18 @@
     { "question": { "es": "Te despides de alguien que conociste hoy y fue agradable. ¿Qué dices?", "en": "You're saying goodbye to someone you met today, and it was nice. What do you say?" }, "options": ["Fue un placer conocerte.", "Fue un placer conocerme.", "Es un placer conocido.", "Mucho gusto conocerte mañana."], "correct": 0, "explanation": { "en": "«Fue un placer conocerte» = it was a pleasure to meet you." } },
     { "question": { "es": "Tu amigo tiene un examen mañana. ¿Qué le dices?", "en": "Your friend has an exam tomorrow. What do you tell him?" }, "options": ["¡Buena suerte!", "¡Buen provecho!", "¡Qué lástima!", "¡Me da igual!"], "correct": 0, "explanation": { "en": "«¡Buena suerte!» = good luck!" } }
   ],
+  "sentences": [
+    { "sentence": "¿Te gusta la comida mexicana o te gustan más los tacos?", "kind": "question", "bold": ["Te gusta", "te gustan"], "en": "Do you like Mexican food or do you like tacos more?" },
+    { "sentence": "¿Estás cansada o estás aburrida?", "kind": "question", "bold": ["Estás", "cansada", "estás", "aburrida"], "en": "Are you tired or are you bored?" },
+    { "sentence": "¿Vas a llamar a tu mamá esta noche?", "kind": "question", "bold": ["Vas a", "llamar"], "en": "Are you going to call your mom tonight?" },
+    { "sentence": "¿A Diego le gusta el fútbol o el béisbol?", "kind": "question", "bold": ["A Diego le gusta"], "en": "Does Diego like soccer or baseball?" },
+    { "sentence": "¿De verdad acabas de llegar de Chicago?", "kind": "question", "bold": ["De verdad", "acabas de"], "en": "Did you really just arrive from Chicago?" },
+    { "sentence": "Me gusta el café, pero me encantan los churros.", "kind": "statement", "bold": ["Me gusta", "me encantan"], "en": "I like coffee, but I love churros." },
+    { "sentence": "Acabo de llegar y estoy muy cansada.", "kind": "statement", "bold": ["Acabo de", "estoy", "cansada"], "en": "I just arrived and I'm very tired." },
+    { "sentence": "Voy a llamar a mi mamá porque la extraño mucho.", "kind": "statement", "bold": ["Voy a", "llamar", "extraño"], "en": "I'm going to call my mom because I miss her a lot." },
+    { "sentence": "Tengo ganas de ir al cine con ustedes.", "kind": "statement", "bold": ["Tengo ganas de"], "en": "I feel like going to the movies with you." },
+    { "sentence": "A Carmen le gustan las flores y nos gusta visitarla.", "kind": "statement", "bold": ["le gustan", "nos gusta"], "en": "Carmen likes flowers and we like to visit her." }
+  ],
   "story": {
     "title": "Una despedida",
     "text": "Hoy es el último día de Tom y Sarah en México. Vuelven a Toronto el sábado. La clase de español organiza una pequeña fiesta en un café. «¡Qué lástima que se vayan!», dice Emily. «Sí, estamos un poco tristes», responde Sarah. «Nos gusta mucho la vida aquí. Nos encantan los mercados y la comida.» Hans pregunta: «¿Qué van a extrañar más?». «Los tacos al pastor, por supuesto», dice Tom, y todos ríen. Lucía, la profesora, les da un regalo: un libro de recetas mexicanas. «Para que no extrañen tanto la comida.» Al final, Emily abraza a Sarah. «Fue un placer conocerte. ¡Buena suerte en Toronto!» «Gracias. ¡Me divertí mucho con ustedes!»",

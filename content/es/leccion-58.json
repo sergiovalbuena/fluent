@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «El carro está perfecto, ___ el radio.»", "en": "Complete: «El carro está perfecto, ___ el radio.»" }, "options": ["excepto", "a pesar de", "aunque", "mientras"], "correct": 0, "explanation": { "en": "«Excepto» = except." } },
     { "question": { "es": "Antes de cambiar de carril, miras los carros de atrás en el espejito. ¿Cómo se llama?", "en": "Before changing lanes you check the cars behind in the little mirror. What's it called?" }, "options": ["el retrovisor", "el parabrisas", "el volante", "la placa"], "correct": 0, "explanation": { "en": "«Retrovisor» = rearview mirror." } }
   ],
+  "sentences": [
+    { "sentence": "¿Dónde hay un taller mecánico cerca de aquí?", "kind": "question", "bold": ["taller mecánico"], "en": "Where is there a repair shop near here?" },
+    { "sentence": "¿Pusiste las maletas en la cajuela o en el asiento?", "kind": "question", "bold": ["cajuela"], "en": "Did you put the suitcases in the trunk or on the seat?" },
+    { "sentence": "¿Por qué hace ruido el freno cuando paro?", "kind": "question", "bold": ["freno"], "en": "Why does the brake make noise when I stop?" },
+    { "sentence": "El mapa está en la guantera; ¿me lo pasas?", "kind": "question", "bold": ["guantera"], "en": "The map is in the glove compartment; can you pass it to me?" },
+    { "sentence": "¿Llamaste a la grúa cuando se te descompuso el carro?", "kind": "question", "bold": ["grúa", "se te descompuso"], "en": "Did you call the tow truck when your car broke down?" },
+    { "sentence": "Se nos ponchó una llanta en la carretera y tuvimos que cambiarla.", "kind": "statement", "bold": ["Se nos ponchó", "llanta", "tuvimos que"], "en": "We got a flat tire on the highway and we had to change it." },
+    { "sentence": "Aunque llueva, salimos temprano mañana.", "kind": "statement", "bold": ["Aunque llueva"], "en": "Even if it rains, we'll leave early tomorrow." },
+    { "sentence": "A pesar de la nieve, llegamos a tiempo a casa.", "kind": "statement", "bold": ["A pesar de", "nieve"], "en": "Despite the snow, we got home on time." },
+    { "sentence": "El carro está perfecto, excepto el radio y el retrovisor.", "kind": "statement", "bold": ["excepto", "retrovisor"], "en": "The car is perfect, except for the radio and the rearview mirror." },
+    { "sentence": "El motor se calentó, así que abrí el cofre y revisé el agua.", "kind": "statement", "bold": ["motor", "cofre"], "en": "The engine overheated, so I opened the hood and checked the water." }
+  ],
   "story": {
     "title": "Camino a Villa de Leyva",
     "text": "Dos semanas antes de la boda, Emily y Nicolás compran un carro usado para viajar por Colombia. El primer fin de semana van a Villa de Leyva. A pesar del tráfico de Bogotá, salen temprano. En la carretera, de repente, se oye un ruido: se les ponchó una llanta. «¿Dónde está la llanta de repuesto?», pregunta Emily. «En la cajuela, debajo de las maletas», responde Nicolás. Pero la llanta de repuesto también está vacía. Tienen que llamar a la grúa. El conductor de la grúa los lleva a un taller mecánico en un pueblo pequeño. Mientras arreglan el carro, comen arepas y obleas. «Aunque el viaje sea largo, esto es lo mejor», dice Emily. Llegan a Villa de Leyva al atardecer.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Un amigo de la escuela te pregunta «¿Te acuerdas de mí?», pero no lo recuerdas. ¿Qué respondes?", "en": "An old school friend asks «¿Te acuerdas de mí?», but you don't remember him. What do you answer?" }, "options": ["No, lo siento, no me acuerdo.", "Sí, me acuerdo muy bien.", "No, no me olvido.", "Sí, te acuerdas."], "correct": 0, "explanation": { "en": "«Acordarse de» = to remember: no me acuerdo = I don't remember." } },
     { "question": { "es": "Llegas a casa de unos amigos y te sientes muy bien, como en tu casa. ¿Qué dices?", "en": "You arrive at your friends' home and feel really good, as if at home. What do you say?" }, "options": ["Me siento muy cómodo aquí.", "Me siento muy incómodo aquí.", "Estoy aburrido aquí.", "Es muy cómodo yo."], "correct": 0, "explanation": { "en": "«Sentirse cómodo» = to feel comfortable." } }
   ],
+  "sentences": [
+    { "sentence": "¿Dónde está el baño, al fondo o arriba?", "kind": "question", "bold": ["Dónde está", "el baño"], "en": "Where is the bathroom, at the back or upstairs?" },
+    { "sentence": "¿Hay un jardín en tu casa?", "kind": "question", "bold": ["Hay", "jardín", "casa"], "en": "Is there a garden at your house?" },
+    { "sentence": "¿Tienes que limpiar la cocina hoy o mañana?", "kind": "question", "bold": ["Tienes que", "limpiar", "la cocina"], "en": "Do you have to clean the kitchen today or tomorrow?" },
+    { "sentence": "¿Dónde están las llaves del departamento?", "kind": "question", "bold": ["están", "las llaves", "del", "departamento"], "en": "Where are the keys to the apartment?" },
+    { "sentence": "¿Quién vive en el cuarto de arriba?", "kind": "question", "bold": ["vive", "el cuarto"], "en": "Who lives in the room upstairs?" },
+    { "sentence": "Hay un sofá muy cómodo en la sala.", "kind": "statement", "bold": ["Hay", "cómodo", "la sala"], "en": "There's a very comfortable sofa in the living room." },
+    { "sentence": "Tengo que lavar los platos y barrer la cocina.", "kind": "statement", "bold": ["Tengo que", "lavar los platos", "barrer", "la cocina"], "en": "I have to wash the dishes and sweep the kitchen." },
+    { "sentence": "La lavadora está en el baño, junto a la escalera.", "kind": "statement", "bold": ["La lavadora", "está", "el baño", "la escalera"], "en": "The washing machine is in the bathroom, next to the stairs." },
+    { "sentence": "Emily come en el comedor y vive en un departamento pequeño.", "kind": "statement", "bold": ["come", "el comedor", "vive", "departamento"], "en": "Emily eats in the dining room and lives in a small apartment." },
+    { "sentence": "Voy al jardín y después salgo del edificio.", "kind": "statement", "bold": ["al", "jardín", "del"], "en": "I'm going to the garden and then I'm leaving the building." }
+  ],
   "story": {
     "title": "Un sábado de limpieza",
     "text": "El departamento de Emily es pequeño pero muy cómodo. Tiene una sala con un sofá azul, una cocina abierta, un cuarto y un baño. Hoy es sábado y Emily tiene que limpiar. Primero barre la sala y pasa la aspiradora por el cuarto. Luego pone la ropa en la lavadora. En la cocina hay muchos platos sucios. «¡Uf! Me toca lavar los platos», dice. A las once alguien toca la puerta. Es Mateo, el nieto de Carmen. «Mi abuela pregunta si quieres tamales.» «¡Claro! Pasa, pasa.» Mateo mira el departamento. «Está muy limpio», dice. «Sí, pero ahora tengo que sacar la basura.» «Yo te ayudo», responde Mateo.",

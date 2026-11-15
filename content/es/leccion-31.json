@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Llevamos lo ___ posible: solo una mochila.»", "en": "Complete: «Llevamos lo ___ posible: solo una mochila.»" }, "options": ["menos", "poco", "mínimo que", "menor"], "correct": 0, "explanation": { "en": "«Lo menos posible» = as little as possible." } },
     { "question": { "es": "Vas a vivir dos años en otro país. ¿Cómo lo dices?", "en": "You're going to live in another country for two years. How do you say it?" }, "options": ["Voy a vivir en el extranjero.", "Voy a vivir en extraño.", "Voy a vivir al extranjero de.", "Voy a vivir extranjera."], "correct": 0, "explanation": { "en": "«En el extranjero» = abroad." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué incluye el paquete a Cartagena, el vuelo y el hotel?", "kind": "question", "bold": ["paquete", "vuelo"], "en": "What does the Cartagena package include, the flight and the hotel?" },
+    { "sentence": "¿Tienen alguna oferta para la temporada alta?", "kind": "question", "bold": ["oferta", "temporada alta"], "en": "Do you have any deals for high season?" },
+    { "sentence": "¿Es necesario que compre un seguro de viaje?", "kind": "question", "bold": ["Es necesario que", "compre", "seguro de viaje"], "en": "Is it necessary for me to buy travel insurance?" },
+    { "sentence": "¿Cuál es el destino de su luna de miel?", "kind": "question", "bold": ["destino", "luna de miel"], "en": "What's the destination of your honeymoon?" },
+    { "sentence": "¿Me puede dar un folleto con el itinerario?", "kind": "question", "bold": ["folleto", "itinerario"], "en": "Can you give me a brochure with the itinerary?" },
+    { "sentence": "Me gustaría reservar un viaje a Oaxaca para diciembre.", "kind": "statement", "bold": ["Me gustaría", "reservar", "viaje"], "en": "I'd like to book a trip to Oaxaca for December." },
+    { "sentence": "Tengo que hacer la maleta hoy porque salgo mañana temprano.", "kind": "statement", "bold": ["Tengo que", "hacer la maleta"], "en": "I have to pack my suitcase today because I leave early tomorrow." },
+    { "sentence": "No es vacación: solo es un viaje de negocios.", "kind": "statement", "bold": ["solo es", "viaje de negocios"], "en": "It's not a vacation: it's just a business trip." },
+    { "sentence": "Llevamos lo menos posible para viajar más cómodos.", "kind": "statement", "bold": ["lo menos posible"], "en": "We're taking as little as possible to travel more comfortably." },
+    { "sentence": "Es necesario que confirmes la reserva antes del viernes.", "kind": "statement", "bold": ["Es necesario que", "confirmes", "reserva"], "en": "You need to confirm the reservation before Friday." }
+  ],
   "story": {
     "title": "Planes para Cartagena",
     "text": "Emily quiere ir a Colombia en diciembre con Nicolás. El sábado van a una agencia de viajes. «Me gustaría reservar un viaje a Cartagena para dos personas», dice Emily. La agente, una señora muy amable, les muestra varios folletos. «Este paquete incluye el vuelo, el hotel y el desayuno. Pero es temporada alta y los precios suben mucho.» «¿Tienen alguna oferta?», pregunta Nicolás. «Si viajan del ocho al quince, hay un descuento del veinte por ciento.» Emily mira a Nicolás y sonríe. «¡Perfecto!» Antes de salir, la agente les dice: «Es necesario que confirmen la reserva antes del viernes y que revisen sus pasaportes». Esa noche, Emily ya está pensando qué va a meter en la maleta.",

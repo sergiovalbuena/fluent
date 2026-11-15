@@ -59,6 +59,18 @@
     { "question": { "es": "Tu celular tiene seis meses y dejó de funcionar. ¿Qué preguntas en la tienda?", "en": "Your phone is six months old and stopped working. What do you ask at the store?" }, "options": ["¿Lo cubre la garantía?", "¿Tiene memoria?", "¿Está nítido?", "¿Me recarga saldo?"], "correct": 0, "explanation": { "en": "«Garantía» = warranty." } },
     { "question": { "es": "Completa: «Es el mejor técnico que ___.»", "en": "Complete: «Es el mejor técnico que ___.»" }, "options": ["conozco", "conozca de", "conoceré", "conocía mañana"], "correct": 0, "explanation": { "en": "After a superlative, the indicative (conozco) is the most common; «conozca» is also possible." } }
   ],
+  "sentences": [
+    { "sentence": "¿Lo cubre la garantía si se me rompió la pantalla?", "kind": "question", "bold": ["garantía", "se me rompió", "pantalla"], "en": "Does the warranty cover it if my screen broke?" },
+    { "sentence": "¿Cuántos datos incluye el plan de datos prepago?", "kind": "question", "bold": ["plan de datos", "prepago"], "en": "How much data does the prepaid data plan include?" },
+    { "sentence": "¿Dónde puedo recargar saldo para mi chip?", "kind": "question", "bold": ["recargar saldo", "chip"], "en": "Where can I top up credit for my SIM card?" },
+    { "sentence": "¿Cuánto tarda el técnico en cambiar la pantalla?", "kind": "question", "bold": ["técnico", "pantalla"], "en": "How long does the technician take to change the screen?" },
+    { "sentence": "¿Tu celular es mejor que el mío para tomar fotos?", "kind": "question", "bold": ["mejor que", "el mío"], "en": "Is your phone better than mine for taking photos?" },
+    { "sentence": "Se me cayó el celular y se me rompió la pantalla.", "kind": "statement", "bold": ["Se me cayó", "se me rompió", "pantalla"], "en": "I dropped my phone and the screen broke." },
+    { "sentence": "Tu foto es bonita, pero la mía es más nítida; la tuya salió borrosa.", "kind": "statement", "bold": ["la mía", "nítida", "borrosa"], "en": "Your photo is pretty, but mine is sharper; yours came out blurry." },
+    { "sentence": "Es el mejor técnico que conozca en toda la ciudad.", "kind": "statement", "bold": ["el mejor", "que", "conozca"], "en": "He's the best technician I know in the whole city." },
+    { "sentence": "Esperaremos a que llegue el repuesto la próxima semana.", "kind": "statement", "bold": ["Esperaremos a que", "llegue", "repuesto"], "en": "We'll wait for the spare part to arrive next week." },
+    { "sentence": "Necesito una funda, un protector de pantalla y unos audífonos.", "kind": "statement", "bold": ["funda", "protector de pantalla", "audífonos"], "en": "I need a case, a screen protector and some headphones." }
+  ],
   "story": {
     "title": "Pantalla rota",
     "text": "Un lunes, saliendo del metro, a Emily se le cae el celular. La pantalla se rompe en mil pedazos. «¡No puede ser! Tengo todas las fotos de la boda de Valeria ahí», dice. Va a una tienda de celulares en el centro comercial. «¿Lo cubre la garantía?», pregunta. El técnico revisa el teléfono. «Me temo que no. La garantía no cubre caídas. Pero podemos cambiar la pantalla.» «¿Cuánto tarda la reparación?» «Tenemos que esperar a que llegue el repuesto: unos tres días.» Mientras tanto, Nicolás le presta su celular viejo. «El mío es peor que el tuyo, pero funciona», dice. Tres días después, el celular está como nuevo y Emily compra una funda y un protector de pantalla.",

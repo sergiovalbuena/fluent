@@ -59,6 +59,18 @@
     { "question": { "es": "Mandas 200,000 pesos de tu cuenta a la de tu hermana. ¿Qué haces?", "en": "You send 200,000 pesos from your account to your sister's. What are you doing?" }, "options": ["una transferencia", "un retiro", "un préstamo", "un estado de cuenta"], "correct": 0, "explanation": { "en": "«Transferencia» = bank transfer." } },
     { "question": { "es": "Completa: «Necesito dinero para que me ___ el depósito del departamento.» (devolver, ellos)", "en": "Complete: «Necesito dinero para que me ___ el depósito del departamento.» (devolver, ellos)" }, "options": ["devuelvan", "devuelven", "devolverán", "devolvían"], "correct": 0, "explanation": { "en": "«Para que» + subjunctive: devuelvan." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué documentos necesito para abrir una cuenta de ahorros?", "kind": "question", "bold": ["abrir una cuenta de ahorros"], "en": "What documents do I need to open a savings account?" },
+    { "sentence": "¿Dónde hay un cajero automático para sacar dinero?", "kind": "question", "bold": ["cajero automático", "sacar dinero"], "en": "Where is there an ATM to take out money?" },
+    { "sentence": "¿Cobran comisión por cada transferencia?", "kind": "question", "bold": ["comisión", "transferencia"], "en": "Do you charge a fee for each transfer?" },
+    { "sentence": "¿Cuál es el saldo de mi tarjeta de débito?", "kind": "question", "bold": ["saldo", "tarjeta de débito"], "en": "What's the balance on my debit card?" },
+    { "sentence": "¿Aceptan tarjeta de crédito o solo efectivo?", "kind": "question", "bold": ["tarjeta de crédito", "efectivo"], "en": "Do you accept credit cards or only cash?" },
+    { "sentence": "Cuando vayas al banco, pide un estado de cuenta.", "kind": "statement", "bold": ["Cuando vayas", "estado de cuenta"], "en": "When you go to the bank, ask for a statement." },
+    { "sentence": "Cuando tenga dinero, compraré una casa con jardín.", "kind": "statement", "bold": ["Cuando tenga", "compraré"], "en": "When I have money, I'll buy a house with a garden." },
+    { "sentence": "Podrá elegir su NIP después de que reciba la tarjeta.", "kind": "statement", "bold": ["NIP", "después de que", "reciba"], "en": "You'll be able to choose your PIN after you receive the card." },
+    { "sentence": "Estoy sobregirada, así que no puedo depositar la renta hoy.", "kind": "statement", "bold": ["sobregirada", "depositar"], "en": "I'm overdrawn, so I can't deposit the rent today." },
+    { "sentence": "Quisiera pedir un préstamo en esta sucursal.", "kind": "statement", "bold": ["préstamo", "sucursal"], "en": "I'd like to ask for a loan at this branch." }
+  ],
   "story": {
     "title": "Una cuenta en Bogotá",
     "text": "Emily y Nicolás ya viven en Bogotá. Lo primero que necesitan es abrir una cuenta en un banco colombiano. «¿Qué documentos necesito?», pregunta Emily en la ventanilla. «Su pasaporte, una dirección aquí y un número de celular colombiano.» Mientras esperan, el cajero automático de la entrada se traga la tarjeta de Nicolás. «¡No puede ser!», dice. El empleado lo tranquiliza: «Cuando el técnico abra el cajero, se la devolvemos». Media hora después, Emily ya tiene su cuenta de ahorros y una tarjeta de débito. «Podrá elegir su clave después de que reciba un mensaje en el celular», le explica la asesora. Al salir, Nicolás sonríe: «Cuando tengamos casa, invitamos a la asesora a cenar».",

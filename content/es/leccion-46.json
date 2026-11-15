@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «¿Qué ___ tú en mi lugar?»", "en": "Complete: «¿Qué ___ tú en mi lugar?»" }, "options": ["harías", "harás", "hacías", "hagas"], "correct": 0, "explanation": { "en": "Hypothetical question: conditional (harías)." } },
     { "question": { "es": "Buena noticia: tu nuevo contrato no tiene fecha de fin. ¿Qué contrato tienes?", "en": "Good news: your new contract has no end date. What contract do you have?" }, "options": ["un contrato indefinido", "un contrato temporal", "un contrato de medio tiempo", "un contrato vencido"], "correct": 0, "explanation": { "en": "«Indefinido» = permanent." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué harías en mi lugar: aceptarías el trabajo o no?", "kind": "question", "bold": ["¿Qué harías", "en mi lugar"], "en": "What would you do in my place: would you accept the job or not?" },
+    { "sentence": "¿El horario es de medio tiempo o de tiempo completo?", "kind": "question", "bold": ["horario", "medio tiempo", "tiempo completo"], "en": "Is the schedule part-time or full-time?" },
+    { "sentence": "¿Qué prestaciones tiene la vacante?", "kind": "question", "bold": ["prestaciones", "vacante"], "en": "What benefits does the opening have?" },
+    { "sentence": "¿Ya mandaste tu currículum para solicitar el cargo?", "kind": "question", "bold": ["currículum", "solicitar", "cargo"], "en": "Have you already sent your résumé to apply for the position?" },
+    { "sentence": "¿Cuántos años de experiencia piden para la entrevista de trabajo?", "kind": "question", "bold": ["experiencia", "entrevista de trabajo"], "en": "How many years of experience do they ask for the job interview?" },
+    { "sentence": "Si tuviera más tiempo, haría una maestría en diseño.", "kind": "statement", "bold": ["Si tuviera", "haría", "maestría"], "en": "If I had more time, I would do a master's in design." },
+    { "sentence": "Si yo fuera tú, pediría un aumento este año.", "kind": "statement", "bold": ["Si yo fuera tú", "pediría", "aumento"], "en": "If I were you, I would ask for a raise this year." },
+    { "sentence": "Llevo dos meses sin trabajar, pero mañana tengo una entrevista.", "kind": "statement", "bold": ["Llevo", "sin trabajar"], "en": "I've been out of work for two months, but tomorrow I have an interview." },
+    { "sentence": "Diego renunció a su trabajo y lo contrataron en otra empresa.", "kind": "statement", "bold": ["renunció", "contrataron"], "en": "Diego quit his job and another company hired him." },
+    { "sentence": "Me ofrecieron un contrato indefinido; ¡no me pueden despedir tan fácil!", "kind": "statement", "bold": ["contrato indefinido", "despedir"], "en": "They offered me a permanent contract; they can't fire me so easily!" }
+  ],
   "story": {
     "title": "Una oferta en Bogotá",
     "text": "Nicolás recibe una llamada: una revista de Bogotá quiere contratarlo como fotógrafo. Es un puesto de tiempo completo, con contrato indefinido y buenas prestaciones. «¿Qué harías en mi lugar?», le pregunta a Emily. Ella piensa un momento. «Si yo fuera tú, iría a la entrevista. Es una oportunidad increíble.» «¿Y tú? ¿Qué harías si yo me fuera a Bogotá?» «Si pudiera trabajar desde allá, me iría contigo», responde Emily. Al día siguiente, Emily habla con Valeria. «Si trabajaras desde Bogotá, ¿tendríamos algún problema?» Valeria sonríe: «Ninguno. Ya trabajas desde casa la mitad del tiempo». Esa noche, Nicolás manda su currículum y Emily empieza a buscar departamentos en Bogotá.",

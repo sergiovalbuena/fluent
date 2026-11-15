@@ -59,6 +59,18 @@
     { "question": { "es": "Tienes 30 años y tu hermana tiene 35. ¿Qué es ella para ti?", "en": "You're 30 and your sister is 35. What is she to you?" }, "options": ["mi hermana mayor", "mi hermana menor", "mi hermana gemela", "mi hermana pequeña"], "correct": 0, "explanation": { "en": "«Mayor» = older, «menor» = younger." } },
     { "question": { "es": "Completa: «Mis padres ___ en Texas.» (vivir)", "en": "Complete: «Mis padres ___ en Texas.» (vivir)" }, "options": ["viven", "vive", "vivimos", "vivo"], "correct": 0, "explanation": { "en": "«Mis padres» = ellos → viven." } }
   ],
+  "sentences": [
+    { "sentence": "¿Tienes hermanos o eres hija única?", "kind": "question", "bold": ["Tienes", "hermanos"], "en": "Do you have siblings or are you an only child?" },
+    { "sentence": "¿Dónde viven tus padres, en Chicago o en Texas?", "kind": "question", "bold": ["tus", "padres"], "en": "Where do your parents live, in Chicago or in Texas?" },
+    { "sentence": "¿Cuántos nietos tiene Carmen?", "kind": "question", "bold": ["nietos", "tiene"], "en": "How many grandchildren does Carmen have?" },
+    { "sentence": "¿Su esposo trabaja en un banco o en una escuela?", "kind": "question", "bold": ["Su", "esposo", "trabaja"], "en": "Does her husband work at a bank or at a school?" },
+    { "sentence": "¿Tu abuela cocina tan rico como tu madre?", "kind": "question", "bold": ["Tu", "abuela", "tu", "madre"], "en": "Does your grandmother cook as well as your mother?" },
+    { "sentence": "Mi hermana trabaja en un banco y mi hermano estudia.", "kind": "statement", "bold": ["Mi", "hermana", "trabaja", "mi", "hermano", "estudia"], "en": "My sister works at a bank and my brother studies." },
+    { "sentence": "Nuestra casa es pequeña, pero nuestros hijos están felices.", "kind": "statement", "bold": ["Nuestra", "nuestros", "hijos"], "en": "Our house is small, but our children are happy." },
+    { "sentence": "Tengo dos primos en México y una tía en Texas.", "kind": "statement", "bold": ["Tengo", "primos", "tía"], "en": "I have two cousins in Mexico and an aunt in Texas." },
+    { "sentence": "Carmen y su esposo hablan con sus nietos todos los domingos.", "kind": "statement", "bold": ["su", "esposo", "hablan", "sus", "nietos"], "en": "Carmen and her husband talk with their grandchildren every Sunday." },
+    { "sentence": "Mis padres viven en Chicago con mi abuelo.", "kind": "statement", "bold": ["Mis", "padres", "viven", "mi", "abuelo"], "en": "My parents live in Chicago with my grandfather." }
+  ],
   "story": {
     "title": "La comida del domingo",
     "text": "El domingo, la señora Carmen invita a Emily a comer con su familia. En la mesa hay muchas personas. Carmen presenta a todos: «Este es mi esposo, Raúl. Ella es mi hija Lupita, la mamá de Mateo, y él es su esposo, Andrés. Y estos son mis sobrinos, Toño y Paola.» Mateo, el nieto, se sienta al lado de Emily. «¿Tienes hermanos?», pregunta. «Sí, tengo un hermano menor. Se llama Kevin y vive en Chicago con mis padres.» «¿Y abuelos?» «Mi abuela tiene noventa años y todavía cocina muy rico.» Todos ríen. Después de la comida, Raúl saca la guitarra y la familia canta. Emily piensa en su familia y sonríe.",

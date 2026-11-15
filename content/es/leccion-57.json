@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Límpialos para que ___.»", "en": "Complete: «Límpialos para que ___.»" }, "options": ["brillen", "brillan", "brillarán", "brillaban"], "correct": 0, "explanation": { "en": "«Para que» + subjunctive: brillen." } },
     { "question": { "es": "Un collar cuesta diez mil dólares. ¿Qué dices?", "en": "A necklace costs ten thousand dollars. What do you say?" }, "options": ["¡Es carísimo!", "¡Es baratísimo!", "¡Es bisutería!", "¡Es plata!"], "correct": 0, "explanation": { "en": "Caro → carísimo = very expensive." } }
   ],
+  "sentences": [
+    { "sentence": "¿Los aretes son de oro o de plata?", "kind": "question", "bold": ["aretes", "oro", "plata"], "en": "Are the earrings gold or silver?" },
+    { "sentence": "¿Cuántos quilates tiene el diamante del anillo?", "kind": "question", "bold": ["quilates", "diamante"], "en": "How many carats does the ring's diamond have?" },
+    { "sentence": "¿Nos puede grabar las iniciales en las argollas?", "kind": "question", "bold": ["grabar"], "en": "Can you engrave our initials on the wedding rings?" },
+    { "sentence": "¿El collar o la pulsera? ¿Cuál te gusta más?", "kind": "question", "bold": ["collar", "pulsera"], "en": "The necklace or the bracelet? Which one do you like more?" },
+    { "sentence": "¿Me lo envuelve en un estuche para regalo?", "kind": "question", "bold": ["estuche"], "en": "Can you wrap it in a gift box for me?" },
+    { "sentence": "No me gusta ni el oro ni la plata; prefiero la bisutería.", "kind": "statement", "bold": ["ni", "oro", "ni", "plata", "bisutería"], "en": "I don't like gold or silver; I prefer costume jewelry." },
+    { "sentence": "¿El collar o la pulsera? Ni uno ni otro: son carísimos.", "kind": "statement", "bold": ["Ni uno ni otro", "carísimos"], "en": "The necklace or the bracelet? Neither: they're very expensive." },
+    { "sentence": "Puedes llevarte mi anillo con tal de que lo cuides mucho.", "kind": "statement", "bold": ["con tal de que", "cuides"], "en": "You can take my ring as long as you take good care of it." },
+    { "sentence": "Carmen tiene más perlas que yo, y todas brillan.", "kind": "statement", "bold": ["más", "perlas", "que", "brillan"], "en": "Carmen has more pearls than I do, and they all shine." },
+    { "sentence": "Esta esmeralda colombiana es bellísima.", "kind": "statement", "bold": ["esmeralda", "bellísima"], "en": "This Colombian emerald is beautiful." }
+  ],
   "story": {
     "title": "Las argollas",
     "text": "Emily y Nicolás van a una joyería en el centro de Bogotá. «Estamos buscando argollas de matrimonio», dice Nicolás. El joyero, don Jaime, les muestra muchas. «Estas son de oro de dieciocho quilates. Estas otras son de oro blanco.» Emily se prueba una con un diamante pequeño. «Es bellísima, pero carísima.» «¿Y estas de plata?», pregunta Nicolás. «Ni unas ni otras», dice Emily, riendo. «Quiero algo sencillo.» Al final eligen unas argollas de oro, lisas y elegantes. «¿Les podemos grabar las iniciales y la fecha?», pregunta don Jaime. «¡Sí, por favor!» «Estarán listas el viernes, con tal de que me dejen un anticipo.» Antes de salir, Emily mira las esmeraldas: «Algún día…», suspira.",

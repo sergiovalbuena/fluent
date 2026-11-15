@@ -59,6 +59,18 @@
     { "question": { "es": "Un hombre pone una camisa en su mochila y sale sin pagar. ¿Qué es eso?", "en": "A man puts a shirt in his backpack and leaves without paying. What is that?" }, "options": ["robo en tiendas", "una devolución", "una oferta", "una vitrina"], "correct": 0, "explanation": { "en": "«Robo en tiendas» = shoplifting." } },
     { "question": { "es": "¿Dónde comes en un centro comercial?", "en": "Where do you eat at a mall?" }, "options": ["en el patio de comidas", "en las escaleras eléctricas", "en la vitrina", "en la devolución"], "correct": 0, "explanation": { "en": "«Patio de comidas» = food court." } }
   ],
+  "sentences": [
+    { "sentence": "¿En qué piso está la tienda de deportes, en el piso de arriba?", "kind": "question", "bold": ["piso de arriba"], "en": "What floor is the sporting goods store on, upstairs?" },
+    { "sentence": "¿Comemos en el patio de comidas o en un restaurante?", "kind": "question", "bold": ["patio de comidas"], "en": "Shall we eat at the food court or at a restaurant?" },
+    { "sentence": "¿Camisas? ¿Ya escogiste una?", "kind": "question", "bold": ["escogiste", "una"], "en": "Shirts? Have you already picked one?" },
+    { "sentence": "¿Dónde puedo hacer una devolución en esta tienda departamental?", "kind": "question", "bold": ["devolución", "tienda departamental"], "en": "Where can I make a return in this department store?" },
+    { "sentence": "¿Tienen esta marca en la vitrina de la entrada?", "kind": "question", "bold": ["marca", "vitrina"], "en": "Do you have this brand in the display case at the entrance?" },
+    { "sentence": "Siempre compro en esta plaza comercial porque está cerca.", "kind": "statement", "bold": ["Siempre", "plaza comercial"], "en": "I always shop at this shopping center because it's close." },
+    { "sentence": "Recientemente abrieron una tienda nueva junto a las escaleras eléctricas.", "kind": "statement", "bold": ["Recientemente", "escaleras eléctricas"], "en": "Recently they opened a new store next to the escalators." },
+    { "sentence": "El ladrón salió sin que nadie lo viera, pero el guardia de seguridad lo detuvo.", "kind": "statement", "bold": ["sin que", "viera", "guardia de seguridad"], "en": "The thief left without anyone seeing him, but the security guard stopped him." },
+    { "sentence": "Estas sandalias son menos pesadas que las tuyas; son muy ligeras.", "kind": "statement", "bold": ["menos", "pesadas", "que", "ligeras"], "en": "These sandals are less heavy than yours; they're very light." },
+    { "sentence": "Caminamos lentamente por las tiendas y felizmente encontramos todo.", "kind": "statement", "bold": ["lentamente", "felizmente"], "en": "We walked slowly through the stores and luckily we found everything." }
+  ],
   "story": {
     "title": "Sábado en el centro comercial",
     "text": "El sábado llueve y Emily y Nicolás deciden ir al centro comercial. Nicolás necesita zapatos para la boda. Suben por las escaleras eléctricas hasta el tercer piso. En una tienda departamental hay rebajas. «¿Zapatos negros? Escoge unos», dice Emily. Nicolás se prueba varios pares y finalmente compra unos de una marca colombiana, ligeros y elegantes. Después, Emily quiere hacer una devolución: un suéter que compró recientemente le queda grande. Mientras esperan, ven a un guardia de seguridad correr detrás de un muchacho que salió sin pagar. «Pensó que podía salir sin que nadie lo viera», comenta Nicolás. Al final, comen arepas en el patio de comidas y caminan lentamente mirando vitrinas.",

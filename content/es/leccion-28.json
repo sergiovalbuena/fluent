@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Es raro que una gripa ___ tanto.»", "en": "Complete: «Es raro que una gripa ___ tanto.»" }, "options": ["dure", "dura", "durará", "duraba"], "correct": 0, "explanation": { "en": "«Es raro que» + subjunctive." } },
     { "question": { "es": "Llegas veinte minutos tarde a la cita. ¿Qué dices al entrar?", "en": "You arrive twenty minutes late. What do you say as you come in?" }, "options": ["Perdón por la tardanza.", "Gracias por la visita.", "Hasta que salga.", "Antes de que llueva."], "correct": 0, "explanation": { "en": "«Perdón por la tardanza» = sorry for being late." } }
   ],
+  "sentences": [
+    { "sentence": "¿A qué hora quedamos en el café, a las seis?", "kind": "question", "bold": ["quedamos"], "en": "What time shall we meet at the café, at six?" },
+    { "sentence": "¿Tengo que esperar en la sala de espera hasta que me llamen?", "kind": "question", "bold": ["esperar", "sala de espera", "hasta que"], "en": "Do I have to wait in the waiting room until they call me?" },
+    { "sentence": "¿Puedo agendar una cita con el doctor para el jueves?", "kind": "question", "bold": ["agendar", "cita"], "en": "Can I schedule an appointment with the doctor for Thursday?" },
+    { "sentence": "¿Me preguntó si podía entrar al consultorio?", "kind": "question", "bold": ["preguntó si", "podía", "entrar", "consultorio"], "en": "Did she ask me if I could come into the office?" },
+    { "sentence": "¿Quién tocó la puerta? ¿Es un invitado?", "kind": "question", "bold": ["tocó la puerta", "invitado"], "en": "Who knocked on the door? Is it a guest?" },
+    { "sentence": "Espere hasta que salga el doctor, por favor.", "kind": "statement", "bold": ["Espere", "hasta que", "salga"], "en": "Please wait until the doctor comes out." },
+    { "sentence": "Vámonos antes de que llueva; ya está nublado.", "kind": "statement", "bold": ["antes de que", "llueva"], "en": "Let's go before it rains; it's already cloudy." },
+    { "sentence": "Mañana voy a visitar a mi abuela en Puebla.", "kind": "statement", "bold": ["voy a visitar a"], "en": "Tomorrow I'm going to visit my grandmother in Puebla." },
+    { "sentence": "Es raro que una gripa dure tanto tiempo.", "kind": "statement", "bold": ["Es raro que", "dure"], "en": "It's strange for a flu to last so long." },
+    { "sentence": "Tengo que cancelar la cita y confirmar otra con la recepcionista.", "kind": "statement", "bold": ["cancelar", "cita", "confirmar", "recepcionista"], "en": "I have to cancel the appointment and confirm another one with the receptionist." }
+  ],
   "story": {
     "title": "La cita con el dentista",
     "text": "A Emily le duele una muela. Llama al consultorio: «Buenos días, quisiera sacar una cita con el dentista». «¿Le parece bien mañana a las diez?», pregunta la recepcionista. Al día siguiente, Emily llega puntual, pero la sala de espera está llena. «Espere hasta que la llamen, por favor», le dice la recepcionista. Emily espera cuarenta minutos. Un señor le pregunta si el dentista siempre llega tarde. «No sé, es mi primera vez», responde ella. Por fin la llaman. El dentista es muy amable y el problema no es grave. Al salir, Emily llama a Nicolás: «¿Quedamos para comer?». «Claro, pero vámonos antes de que llueva.»",

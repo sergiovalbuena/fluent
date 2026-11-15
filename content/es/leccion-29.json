@@ -59,6 +59,18 @@
     { "question": { "es": "Viste una película genial y quieres que tu amiga la vea. ¿Qué le dices?", "en": "You saw a great movie and want your friend to see it. What do you tell her?" }, "options": ["Te recomiendo que la veas.", "Te recomiendo que la ves.", "Te recomiendo verla ayer.", "Te recomiendo que la verás."], "correct": 0, "explanation": { "en": "«Recomendar que» + subjunctive: veas." } },
     { "question": { "es": "¿Qué comes normalmente en el cine?", "en": "What do you usually eat at the movies?" }, "options": ["palomitas", "butacas", "taquillas", "escenarios"], "correct": 0, "explanation": { "en": "«Palomitas» = popcorn." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué tal si vamos al cine el sábado?", "kind": "question", "bold": ["¿Qué tal si", "cine"], "en": "What if we go to the movies on Saturday?" },
+    { "sentence": "¿La película es subtitulada o doblada?", "kind": "question", "bold": ["película", "subtitulada", "doblada"], "en": "Is the movie subtitled or dubbed?" },
+    { "sentence": "¿Te late ver una obra de teatro en el centro?", "kind": "question", "bold": ["Te late", "obra de teatro"], "en": "Do you feel like seeing a play downtown?" },
+    { "sentence": "¿Quién es el director y quién es la actriz principal?", "kind": "question", "bold": ["director", "actriz"], "en": "Who is the director and who is the lead actress?" },
+    { "sentence": "¿Compramos palomitas antes de entrar a la butaca?", "kind": "question", "bold": ["palomitas", "butaca"], "en": "Shall we buy popcorn before going to our seat?" },
+    { "sentence": "Te recomiendo que veas esta película; es buenísima.", "kind": "statement", "bold": ["Te recomiendo que", "veas", "película"], "en": "I recommend you watch this movie; it's great." },
+    { "sentence": "Después de haber cenado, fuimos al teatro.", "kind": "statement", "bold": ["Después de haber cenado", "teatro"], "en": "After having dinner, we went to the theater." },
+    { "sentence": "La película se estrenó el año pasado en Guadalajara.", "kind": "statement", "bold": ["película", "se estrenó"], "en": "The movie premiered last year in Guadalajara." },
+    { "sentence": "El actor que hace de rey es mejor que el que hace de bruja.", "kind": "statement", "bold": ["actor", "que", "que", "el que"], "en": "The actor who plays the king is better than the one who plays the witch." },
+    { "sentence": "Al final, todo el público aplaudió de pie frente al escenario.", "kind": "statement", "bold": ["aplaudió", "escenario"], "en": "At the end, the whole audience gave a standing ovation in front of the stage." }
+  ],
   "story": {
     "title": "Una noche en el teatro",
     "text": "Nicolás invita a Emily al teatro. «¿Qué tal si vamos a ver una obra el sábado? Es una comedia muy famosa.» Después de haber cenado tacos, llegan al teatro a las ocho. Sus butacas están en la tercera fila, muy cerca del escenario. Los actores hablan rápido y Emily no entiende todos los chistes, pero se ríe con el público. En el intermedio compran agua y hablan de la obra. «La actriz que hace de la abuela es buenísima», dice Emily. «Sí, la vi en una película que se estrenó el año pasado», responde Nicolás. Al final, todos aplauden de pie. «Te recomiendo que vengamos más seguido», dice Emily. Nicolás sonríe: «Trato hecho».",

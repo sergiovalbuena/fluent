@@ -59,6 +59,18 @@
     { "question": { "es": "Las olas son enormes y tienes ganas de vomitar. ¿Qué dices?", "en": "The waves are huge and you feel like throwing up. What do you say?" }, "options": ["Estoy mareada.", "Estoy a bordo.", "Estoy atracada.", "Estoy zarpada."], "correct": 0, "explanation": { "en": "«Estar mareado / mareada» = to be seasick." } },
     { "question": { "es": "¿Cómo se llama el grupo de personas que trabaja en el barco?", "en": "What's the group of people who work on the ship called?" }, "options": ["la tripulación", "la excursión", "la cubierta", "el horizonte"], "correct": 0, "explanation": { "en": "«Tripulación» = crew." } }
   ],
+  "sentences": [
+    { "sentence": "¿A qué hora zarpa el crucero y desde qué puerto?", "kind": "question", "bold": ["zarpa", "crucero", "puerto"], "en": "What time does the cruise ship set sail and from which port?" },
+    { "sentence": "¿Nuestro camarote está en la proa o en la popa?", "kind": "question", "bold": ["camarote", "proa", "popa"], "en": "Is our cabin at the bow or at the stern?" },
+    { "sentence": "¿Cuántas personas hay a bordo del barco?", "kind": "question", "bold": ["a bordo"], "en": "How many people are there on board the ship?" },
+    { "sentence": "¿Vamos a la cubierta a ver el horizonte?", "kind": "question", "bold": ["cubierta", "horizonte"], "en": "Shall we go to the deck to see the horizon?" },
+    { "sentence": "¿Qué excursión vamos a hacer cuando atraquemos?", "kind": "question", "bold": ["excursión", "cuando", "atraquemos"], "en": "What excursion are we going to do when we dock?" },
+    { "sentence": "Habíamos ahorrado durante dos años para este viaje.", "kind": "statement", "bold": ["Habíamos ahorrado"], "en": "We had saved for two years for this trip." },
+    { "sentence": "El barco zarpó, empezó una tormenta y todos se asustaron.", "kind": "statement", "bold": ["zarpó", "empezó", "se asustaron"], "en": "The ship set sail, a storm began and everyone got scared." },
+    { "sentence": "Cuando el barco llegue al puerto, bajaremos a comer.", "kind": "statement", "bold": ["Cuando", "llegue", "puerto", "bajaremos"], "en": "When the ship arrives at the port, we'll get off to eat." },
+    { "sentence": "El radar no detecta ningún barco cerca de nosotros.", "kind": "statement", "bold": ["ningún"], "en": "The radar doesn't detect any ship near us." },
+    { "sentence": "El capitán y la tripulación nos enseñaron dónde están los botes salvavidas.", "kind": "statement", "bold": ["capitán", "tripulación", "botes salvavidas"], "en": "The captain and the crew showed us where the lifeboats are." }
+  ],
   "story": {
     "title": "Tormenta en el Caribe",
     "text": "Para celebrar su compromiso, Emily y Nicolás hacen un crucero de Cartagena a Aruba. Habían ahorrado durante meses. El barco zarpa a las seis de la tarde y desde la cubierta ven cómo la ciudad se hace pequeña. Su camarote tiene un balcón con vista al mar. La primera noche, empieza una tormenta. Las olas son enormes y el barco se mueve mucho. Emily está mareada. «Mira el horizonte», le dice Nicolás. El capitán anuncia por los altavoces: «No hay ningún peligro. La tripulación está preparada». Al amanecer, el mar está tranquilo y el barco atraca en Aruba. «Cuando bajemos, quiero la playa más bonita de la isla», dice Emily.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Es un gran hueco natural en la montaña, oscuro y fresco. ¿Qué es?", "en": "It's a large natural hole in the mountain, dark and cool. What is it?" }, "options": ["una cueva", "una isla", "una colina", "una playa"], "correct": 0, "explanation": { "en": "«Cueva» = cave." } },
     { "question": { "es": "Completa: «Hay que actuar ___ proteger el planeta.»", "en": "Complete: «Hay que actuar ___ proteger el planeta.»" }, "options": ["para", "por", "porque", "aunque"], "correct": 0, "explanation": { "en": "«Para» + infinitive = in order to." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuál es la montaña más alta de América?", "kind": "question", "bold": ["la montaña más alta de"], "en": "What's the highest mountain in the Americas?" },
+    { "sentence": "¿Cuántos planetas hay alrededor del sol?", "kind": "question", "bold": ["planetas", "sol"], "en": "How many planets are there around the sun?" },
+    { "sentence": "¿El volcán está activo? ¿Se puede subir?", "kind": "question", "bold": ["volcán", "Se"], "en": "Is the volcano active? Can you climb it?" },
+    { "sentence": "¿Viste la luna llena al salir de casa?", "kind": "question", "bold": ["luna", "al", "salir"], "en": "Did you see the full moon when you left the house?" },
+    { "sentence": "¿Es el río más largo del mundo?", "kind": "question", "bold": ["el", "río", "más", "del", "mundo"], "en": "Is it the longest river in the world?" },
+    { "sentence": "Al llegar a la playa, vimos el sol sobre el océano.", "kind": "statement", "bold": ["Al llegar", "sol", "océano"], "en": "When we arrived at the beach, we saw the sun over the ocean." },
+    { "sentence": "Esta isla tiene la mejor vista del mar.", "kind": "statement", "bold": ["isla", "la mejor", "del", "mar"], "en": "This island has the best view of the sea." },
+    { "sentence": "El desierto es grandísimo y hace mucho calor.", "kind": "statement", "bold": ["desierto", "grandísimo"], "en": "The desert is huge and it's very hot." },
+    { "sentence": "Se descubrió un planeta nuevo cerca de una estrella.", "kind": "statement", "bold": ["Se descubrió", "planeta", "estrella"], "en": "A new planet was discovered near a star." },
+    { "sentence": "En la selva hay una cueva muy antigua.", "kind": "statement", "bold": ["selva", "cueva", "muy"], "en": "In the jungle there's a very old cave." }
+  ],
   "story": {
     "title": "Una noche en el desierto",
     "text": "En vacaciones, Emily viaja con su hermano Kevin al desierto de Atacama, en Chile. Dicen que es el desierto más seco del mundo y uno de los mejores lugares para ver las estrellas. Por la noche hacen un tour astronómico. El guía, Ignacio, explica: «Aquí casi nunca llueve y no hay contaminación de luz. Por eso hay tantos telescopios.» Al mirar el cielo, Emily se queda sin palabras. «¡Es grandísimo! Nunca vi tantas estrellas.» Ignacio les muestra la Vía Láctea, Saturno y la luna. De repente, Kevin grita: «¡Una estrella fugaz!». «Pide un deseo», dice Emily. Kevin cierra los ojos: «Ojalá volvamos el próximo año.»",

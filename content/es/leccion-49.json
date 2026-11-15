@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Aunque te ___ mejor, sigue el tratamiento.»", "en": "Complete: «Aunque te ___ mejor, sigue el tratamiento.»" }, "options": ["sientas", "sientes", "sentirás", "sentías"], "correct": 0, "explanation": { "en": "«Aunque» + subjunctive for «even if»." } },
     { "question": { "es": "¿Adónde vas en una emergencia médica?", "en": "Where do you go in a medical emergency?" }, "options": ["a urgencias", "a la farmacia", "al consultorio de mañana", "al banco"], "correct": 0, "explanation": { "en": "«Urgencias» = emergency room." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué síntomas tiene, tos o fiebre?", "kind": "question", "bold": ["síntomas", "tos", "fiebre"], "en": "What symptoms do you have, cough or fever?" },
+    { "sentence": "¿Es alérgica a alguna medicina, como la penicilina?", "kind": "question", "bold": ["alérgica"], "en": "Are you allergic to any medicine, like penicillin?" },
+    { "sentence": "¿Cada cuántas horas me tomo la pastilla?", "kind": "question", "bold": ["pastilla"], "en": "Every how many hours do I take the pill?" },
+    { "sentence": "¿Su seguro médico cubre las urgencias?", "kind": "question", "bold": ["seguro médico", "urgencias"], "en": "Does your health insurance cover the emergency room?" },
+    { "sentence": "¿Tienes mal de altura o solo un poco de mareo?", "kind": "question", "bold": ["mal de altura", "mareo"], "en": "Do you have altitude sickness or just a little dizziness?" },
+    { "sentence": "No te vas a curar a menos que descanses.", "kind": "statement", "bold": ["No te vas a curar", "a menos que", "descanses"], "en": "You won't get better unless you rest." },
+    { "sentence": "Es necesario que vayas al médico por esa gripa.", "kind": "statement", "bold": ["Es necesario que", "vayas", "gripa"], "en": "You need to go to the doctor for that flu." },
+    { "sentence": "El médico me recomendó que tomara mucha agua.", "kind": "statement", "bold": ["me recomendó que", "tomara"], "en": "The doctor recommended that I drink lots of water." },
+    { "sentence": "Aunque te sientas mejor, sigue el tratamiento.", "kind": "statement", "bold": ["Aunque te sientas", "tratamiento"], "en": "Even if you feel better, continue the treatment." },
+    { "sentence": "Me dijo que tenía gripa y me dio una receta para la farmacia.", "kind": "statement", "bold": ["Me dijo que", "tenía", "gripa", "receta", "farmacia"], "en": "She told me I had the flu and gave me a prescription for the pharmacy." }
+  ],
   "story": {
     "title": "El mal de altura",
     "text": "La primera semana en Bogotá, Emily se siente muy cansada. Le duele la cabeza y se marea cuando sube escaleras. Nicolás le pide una cita con el médico. «¿Qué síntomas tiene?», pregunta la doctora. «Cansancio, dolor de cabeza y mareos.» La doctora sonríe: «Es el mal de altura. Bogotá está a más de dos mil seiscientos metros». Le recomienda que tome mucha agua, que no haga ejercicio fuerte por unos días y que coma ligero. «Aunque se sienta mejor mañana, descanse toda la semana. No se va a acostumbrar a menos que vaya despacio.» En la farmacia compran unas pastillas para el dolor. «¡Que te mejores!», le escribe Carmen desde México.",

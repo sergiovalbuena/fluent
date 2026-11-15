@@ -59,6 +59,18 @@
     { "question": { "es": "Escuchas una palabra nueva: «chamba». ¿Qué preguntas?", "en": "You hear a new word: «chamba». What do you ask?" }, "options": ["¿Qué significa «chamba»?", "¿Cómo se dice «chamba»?", "¿Dónde está «chamba»?", "¿Quién es «chamba»?"], "correct": 0, "explanation": { "en": "«¿Qué significa…?» = what does… mean? (Chamba = job, informal in Mexico.)" } },
     { "question": { "es": "Tu amiga habla muy rápido. ¿Cómo le pides que hable más lento?", "en": "Your friend talks very fast. How do you ask her to speak more slowly?" }, "options": ["¿Puedes hablar más despacio, por favor?", "¿Puedes hablar más rápido?", "¿Sabes hablar despacio?", "No puedes hablar."], "correct": 0, "explanation": { "en": "«Despacio» = slowly; «más despacio» = more slowly." } }
   ],
+  "sentences": [
+    { "sentence": "¿Dónde vives y por qué estudias español?", "kind": "question", "bold": ["Dónde", "por qué"], "en": "Where do you live and why do you study Spanish?" },
+    { "sentence": "¿Sabes cuándo abre la tienda?", "kind": "question", "bold": ["Sabes", "cuándo"], "en": "Do you know when the store opens?" },
+    { "sentence": "¿Conoces a la nueva vecina del segundo piso?", "kind": "question", "bold": ["Conoces"], "en": "Do you know the new neighbor on the second floor?" },
+    { "sentence": "No entiendo la palabra; ¿qué dice ese letrero?", "kind": "question", "bold": ["entiendo", "qué", "letrero"], "en": "I don't understand the word; what does that sign say?" },
+    { "sentence": "¿Puedes entender a Carmen cuando habla rápido?", "kind": "question", "bold": ["Puedes", "entender"], "en": "Can you understand Carmen when she speaks fast?" },
+    { "sentence": "No entiendo mucho porque hablan muy rápido.", "kind": "statement", "bold": ["No", "entiendo", "porque"], "en": "I don't understand much because they speak very fast." },
+    { "sentence": "Sé nadar, pero no conozco las playas de aquí.", "kind": "statement", "bold": ["Sé", "no", "conozco"], "en": "I know how to swim, but I don't know the beaches here." },
+    { "sentence": "Tienes razón: el mercado abre a las ocho.", "kind": "statement", "bold": ["Tienes razón"], "en": "You're right: the market opens at eight." },
+    { "sentence": "Perdón, me equivoqué de calle; ahorita llego.", "kind": "statement", "bold": ["me equivoqué", "ahorita"], "en": "Sorry, I got the wrong street; I'll be there in a minute." },
+    { "sentence": "Ojalá que mañana pueda ir al museo contigo.", "kind": "statement", "bold": ["Ojalá", "pueda"], "en": "I hope I can go to the museum with you tomorrow." }
+  ],
   "story": {
     "title": "Palabras nuevas",
     "text": "En la oficina, Emily aprende palabras nuevas todos los días. Hoy Diego dice: «¡Tengo mucha chamba!». Emily no entiende. «Perdón, ¿qué significa chamba?», pregunta. «Significa trabajo. Es una palabra muy mexicana», explica Diego. Después, Pablo le muestra un video y Emily dice: «¡Qué cool!». Pablo ríe: «Aquí decimos ¡qué padre!». A la hora de comer, Valeria pregunta: «¿Vamos ahorita al restaurante de enfrente?». Emily espera diez minutos, veinte, treinta… «¿No es ahorita?», pregunta. «Sí, ahorita… pero ahorita puede ser en una hora», responde Diego. Todos ríen. «Más vale tarde que nunca», dice Emily, y anota las palabras nuevas en su cuaderno.",

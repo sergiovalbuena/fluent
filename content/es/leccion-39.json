@@ -59,6 +59,18 @@
     { "question": { "es": "El sábado paseas mirando las vitrinas sin comprar nada. ¿Cómo lo dices?", "en": "On Saturday you stroll looking at shop windows without buying anything. How do you say it?" }, "options": ["Veo aparadores.", "Hago compras.", "Hago la vitrina.", "Compro aparadores."], "correct": 0, "explanation": { "en": "«Ver aparadores» (Mexico) = window-shopping." } },
     { "question": { "es": "Te gusta la chamarra y decides comprarla. ¿Qué le dices a la vendedora?", "en": "You like the jacket and decide to buy it. What do you tell the saleswoman?" }, "options": ["Me la llevo.", "Me lo llevo.", "La me llevo.", "Me llevo la."], "correct": 0, "explanation": { "en": "«Chamarra» is feminine: me la llevo." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuánto cuesta el suéter del aparador?", "kind": "question", "bold": ["aparador"], "en": "How much is the sweater in the window?" },
+    { "sentence": "¿Me lo envuelve para regalo, por favor?", "kind": "question", "bold": ["lo", "envuelve"], "en": "Can you gift-wrap it for me, please?" },
+    { "sentence": "¿Dónde está el probador y dónde está la caja?", "kind": "question", "bold": ["probador", "caja"], "en": "Where is the fitting room and where is the register?" },
+    { "sentence": "¿Puedo devolver o cambiar esto si no me queda?", "kind": "question", "bold": ["devolver", "cambiar"], "en": "Can I return or exchange this if it doesn't fit me?" },
+    { "sentence": "¿Hay rebajas o algún descuento esta semana?", "kind": "question", "bold": ["rebajas", "descuento"], "en": "Are there sales or any discount this week?" },
+    { "sentence": "Me gusta mucho el vestido: me lo llevo.", "kind": "statement", "bold": ["me lo llevo"], "en": "I really like the dress: I'll take it." },
+    { "sentence": "Diego no trae dinero; habrá olvidado la cartera.", "kind": "statement", "bold": ["habrá olvidado"], "en": "Diego doesn't have money; he must have forgotten his wallet." },
+    { "sentence": "Habrías encontrado el regalo si hubieras buscado en otra tienda.", "kind": "statement", "bold": ["Habrías encontrado", "hubieras buscado", "tienda"], "en": "You would have found the gift if you had looked in another store." },
+    { "sentence": "Lo vendieron antes de que pudieras comprarlo.", "kind": "statement", "bold": ["antes de que", "pudieras"], "en": "They sold it before you could buy it." },
+    { "sentence": "Estos pantalones no le quedan, y el suéter se encogió.", "kind": "statement", "bold": ["le quedan", "se encogió"], "en": "These pants don't fit him, and the sweater shrank." }
+  ],
   "story": {
     "title": "El regalo perfecto",
     "text": "El cumpleaños de Nicolás es la próxima semana y Emily busca un regalo. El sábado va a un centro comercial y ve aparadores durante una hora. En una tienda pequeña encuentra una cámara antigua, perfecta para un fotógrafo. «¿Cuánto cuesta esta?», pregunta. «Está en oferta: tiene treinta por ciento de descuento», responde el vendedor. «¡Qué ganga! Me la llevo.» «¿Se la envuelvo para regalo?» «Sí, por favor.» En la caja, Emily busca su cartera y no la encuentra. «¡No puede ser! La habré dejado en el taxi», piensa. Por suerte, tiene el celular y paga con el teléfono. El vendedor sonríe: «Tranquila, aquí tiene su recibo».",

@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Cuando era pequeño, ___ un perro.»", "en": "Complete: «Cuando era pequeño, ___ un perro.»" }, "options": ["tenía", "tuve ayer", "tendré", "tendría"], "correct": 0, "explanation": { "en": "A past situation uses the imperfect: tenía." } },
     { "question": { "es": "Tu perra acaba de tener bebés. ¿Cómo se llama cada bebé?", "en": "Your dog just had babies. What is each baby called?" }, "options": ["un cachorro", "un gatito", "un pollito", "un potro"], "correct": 0, "explanation": { "en": "«Cachorro» = puppy. «Gatito» = kitten, «potro» = foal." } }
   ],
+  "sentences": [
+    { "sentence": "¿Tienes alguna mascota, un perro o un gato?", "kind": "question", "bold": ["Tienes", "mascota", "perro", "gato"], "en": "Do you have a pet, a dog or a cat?" },
+    { "sentence": "¿El elefante es más grande que la ballena?", "kind": "question", "bold": ["elefante", "más grande que", "ballena"], "en": "Is the elephant bigger than the whale?" },
+    { "sentence": "¿Cuántos peces hay en el acuario?", "kind": "question", "bold": ["peces"], "en": "How many fish are there in the aquarium?" },
+    { "sentence": "¿Tu gato es tan flojo como tú?", "kind": "question", "bold": ["tan flojo como"], "en": "Is your cat as lazy as you?" },
+    { "sentence": "¿Tenías un conejo cuando eras niña?", "kind": "question", "bold": ["Tenías", "conejo"], "en": "Did you have a rabbit when you were a girl?" },
+    { "sentence": "Carmen tiene dos perros y muchos pájaros.", "kind": "statement", "bold": ["tiene", "perros", "muchos", "pájaros"], "en": "Carmen has two dogs and lots of birds." },
+    { "sentence": "El caballo corre más rápido que el perro.", "kind": "statement", "bold": ["caballo", "más", "que", "perro"], "en": "The horse runs faster than the dog." },
+    { "sentence": "Cuando era niña, tenía un conejo blanco.", "kind": "statement", "bold": ["tenía", "conejo"], "en": "When I was a girl, I had a white rabbit." },
+    { "sentence": "El cachorro de Diego es muy juguetón y come mucho.", "kind": "statement", "bold": ["cachorro", "muy", "mucho"], "en": "Diego's puppy is very playful and eats a lot." },
+    { "sentence": "En la granja hay vacas, gallinas y cerdos.", "kind": "statement", "bold": ["vacas", "gallinas", "cerdos"], "en": "On the farm there are cows, chickens and pigs." }
+  ],
   "story": {
     "title": "Un perrito en la oficina",
     "text": "Un lunes, Pablo llega a la oficina con una caja. Dentro hay un cachorro blanco y café. «Lo encontré en la calle. Tenía mucha hambre y frío», explica. Todos quieren cargarlo. «¡Qué perrito tan bonito!», dice Valeria. Pero hay un problema: Pablo vive en un departamento muy pequeño y ya tiene dos gatos. Emily piensa un momento. Cuando era niña, en Chicago, tenía un perro que se llamaba Max. Lo extraña mucho. «Yo lo adopto», dice. Diego ríe: «Tu departamento es más pequeño que el de Pablo.» «Sí, pero no tengo gatos», responde Emily. Esa noche, el cachorro duerme debajo de su cama. Lo llama Taco.",

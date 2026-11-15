@@ -59,6 +59,18 @@
     { "question": { "es": "«¿Motivo de su viaje?» ¿Qué respuesta tiene sentido?", "en": "«Purpose of your trip?» Which answer makes sense?" }, "options": ["Turismo.", "El pasaporte.", "La aduana.", "El sello."], "correct": 0, "explanation": { "en": "«Turismo», «trabajo» or «visita familiar» are typical answers." } },
     { "question": { "es": "Completa: «Me voy a ___ dos semanas en Cartagena.»", "en": "Complete: «Me voy a ___ dos semanas en Cartagena.»" }, "options": ["quedar", "quedo", "quedé", "quede"], "correct": 0, "explanation": { "en": "«Ir a» + infinitive; the pronoun «me» goes before «voy»." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuál es el motivo de su viaje, turismo o trabajo?", "kind": "question", "bold": ["motivo"], "en": "What's the reason for your trip, tourism or work?" },
+    { "sentence": "¿Cuánto tiempo se va a quedar y dónde se va a hospedar?", "kind": "question", "bold": ["se va a quedar", "se va a hospedar"], "en": "How long are you going to stay and where are you going to stay?" },
+    { "sentence": "¿Tiene algo que declarar en la aduana?", "kind": "question", "bold": ["declarar", "aduana"], "en": "Do you have anything to declare at customs?" },
+    { "sentence": "¿Su visa está vigente?", "kind": "question", "bold": ["visa", "vigente"], "en": "Is your visa valid?" },
+    { "sentence": "¿Tiene doble nacionalidad, mexicana y estadounidense?", "kind": "question", "bold": ["doble nacionalidad"], "en": "Do you have dual citizenship, Mexican and American?" },
+    { "sentence": "Vengo por trabajo, y este regalo es para mi hermana.", "kind": "statement", "bold": ["por", "para"], "en": "I'm coming for work, and this gift is for my sister." },
+    { "sentence": "Estaba durmiendo cuando aterrizamos en Bogotá.", "kind": "statement", "bold": ["Estaba durmiendo"], "en": "I was sleeping when we landed in Bogotá." },
+    { "sentence": "El agente me preguntó si tenía algo que declarar.", "kind": "statement", "bold": ["agente", "me preguntó si", "declarar"], "en": "The officer asked me if I had anything to declare." },
+    { "sentence": "Es posible que el agente revise su maleta en la aduana.", "kind": "statement", "bold": ["Es posible que", "agente", "revise", "aduana"], "en": "The officer may check your suitcase at customs." },
+    { "sentence": "Me voy a quedar dos semanas con mi familia en Medellín.", "kind": "statement", "bold": ["Me voy a quedar"], "en": "I'm going to stay two weeks with my family in Medellín." }
+  ],
   "story": {
     "title": "Bienvenidos a Colombia",
     "text": "En el aeropuerto de Bogotá, Emily y Nicolás hacen fila en migración. Nicolás es mexicano y Emily estadounidense, así que van a filas diferentes. La agente mira el pasaporte de Emily. «¿Cuál es el motivo de su viaje?» «Vengo por turismo.» «¿Cuánto tiempo se va a quedar?» «Una semana.» «¿Dónde se va a hospedar?» «En un hotel en Cartagena.» La agente pone un sello en el pasaporte. «Bienvenida a Colombia.» Después, en la aduana, un agente le pregunta si tiene algo que declarar. Emily recuerda el frasco de salsa. «Solo esto, es un regalo.» El agente sonríe: «No hay problema, siga». Nicolás ya la espera con las maletas.",

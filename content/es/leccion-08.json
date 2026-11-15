@@ -59,6 +59,18 @@
     { "question": { "es": "Alguien de Bogotá te pregunta si has visitado su país. ¿Qué te pregunta?", "en": "Someone from Bogotá asks whether you've visited their country. What do they ask?" }, "options": ["¿Conoces Colombia?", "¿Sabes Colombia?", "¿Eres Colombia?", "¿Hablas Colombia?"], "correct": 0, "explanation": { "en": "«Conocer» a place = to have been there, to know it." } },
     { "question": { "es": "¿Qué palabra describe a alguien de Estados Unidos con precisión?", "en": "Which word precisely describes someone from the US?" }, "options": ["estadounidense", "estadounido", "unidense", "estadista"], "correct": 0, "explanation": { "en": "«Estadounidense» is the precise term; it's the same for men and women." } }
   ],
+  "sentences": [
+    { "sentence": "¿De dónde eres, de Estados Unidos o de Canadá?", "kind": "question", "bold": ["De dónde eres", "Estados Unidos", "Canadá"], "en": "Where are you from, the United States or Canada?" },
+    { "sentence": "¿Qué idiomas hablas en tu país?", "kind": "question", "bold": ["idiomas", "hablas", "país"], "en": "What languages do you speak in your country?" },
+    { "sentence": "¿Eres mexicana o estadounidense?", "kind": "question", "bold": ["mexicana", "estadounidense"], "en": "Are you Mexican or American?" },
+    { "sentence": "¿Cuándo vas a Colombia, en mayo o en junio?", "kind": "question", "bold": ["vas a", "Colombia"], "en": "When are you going to Colombia, in May or in June?" },
+    { "sentence": "¿Tu amiga es española o argentina?", "kind": "question", "bold": ["española", "argentina"], "en": "Is your friend Spanish or Argentinian?" },
+    { "sentence": "Soy de Chicago, soy estadounidense y hablo inglés.", "kind": "statement", "bold": ["Soy de", "soy", "estadounidense", "hablo", "inglés"], "en": "I'm from Chicago, I'm American and I speak English." },
+    { "sentence": "Hablo inglés y un poco de español, pero aprendo rápido.", "kind": "statement", "bold": ["Hablo", "inglés", "español"], "en": "I speak English and a little Spanish, but I learn fast." },
+    { "sentence": "Diego es mexicano, pero su madre es española.", "kind": "statement", "bold": ["es", "mexicano", "es", "española"], "en": "Diego is Mexican, but his mother is Spanish." },
+    { "sentence": "Voy a Argentina en diciembre con mi familia.", "kind": "statement", "bold": ["Voy a", "Argentina"], "en": "I'm going to Argentina in December with my family." },
+    { "sentence": "Soy extranjera, pero me siento en casa en esta ciudad.", "kind": "statement", "bold": ["extranjera", "ciudad"], "en": "I'm a foreigner, but I feel at home in this city." }
+  ],
   "story": {
     "title": "Una clase internacional",
     "text": "Los lunes y los miércoles, Emily tiene clase de español en una escuela del centro. Su grupo es muy internacional. Hans es alemán y trabaja en una empresa de autos. Yuki es japonesa, toca el violín y habla cuatro idiomas. Tom y Sarah son canadienses, de Toronto, y viven en México desde hace un año. La profesora, Lucía, es colombiana, de Medellín. El primer día, Lucía pregunta: «¿De dónde son y por qué estudian español?». Emily responde: «Soy estadounidense, de Chicago. Estudio español porque vivo aquí y quiero hablar con mis vecinos.» Al final de la clase, Lucía dice: «En diciembre vamos a hacer una fiesta con comida de todos sus países.»",

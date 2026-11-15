@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Solo cocina ___ tiene tiempo.»", "en": "Complete: «Solo cocina ___ tiene tiempo.»" }, "options": ["cuando", "durante", "desde", "para que"], "correct": 0, "explanation": { "en": "«Cuando» + present for habits." } },
     { "question": { "es": "Necesitas tiempo solo en tu cuarto, sin que nadie entre. ¿Qué le pides a tu roomie?", "en": "You need time alone in your room, without anyone coming in. What do you ask your roommate?" }, "options": ["Que respete mi privacidad.", "Que respete mi despensa.", "Que respete mi renta.", "Que respete mi cargador."], "correct": 0, "explanation": { "en": "«Privacidad» = privacy." } }
   ],
+  "sentences": [
+    { "sentence": "El mío se descompuso; ¿me prestas tu cargador?", "kind": "question", "bold": ["me prestas"], "en": "Mine broke; will you lend me your charger?" },
+    { "sentence": "¿Te molesta si pongo música mientras cocino?", "kind": "question", "bold": ["Te molesta"], "en": "Do you mind if I play music while I cook?" },
+    { "sentence": "¿A quién le toca el rol de limpieza esta semana?", "kind": "question", "bold": ["rol de limpieza"], "en": "Whose turn is it on the cleaning schedule this week?" },
+    { "sentence": "¿Puedo pedir prestado un poco de arroz de la despensa?", "kind": "question", "bold": ["pedir prestado", "despensa"], "en": "Can I borrow a little rice from the pantry?" },
+    { "sentence": "¿Por qué tu roomie es tan desordenado?", "kind": "question", "bold": ["roomie", "desordenado"], "en": "Why is your roommate so messy?" },
+    { "sentence": "Si tengo visitas, siempre te aviso antes.", "kind": "statement", "bold": ["Si", "tengo", "aviso"], "en": "If I have visitors, I always let you know first." },
+    { "sentence": "Confío en ti, pero necesito un poco de privacidad.", "kind": "statement", "bold": ["Confío en", "privacidad"], "en": "I trust you, but I need a little privacy." },
+    { "sentence": "Me recuerdas a mi hermana: eres muy ordenada.", "kind": "statement", "bold": ["Me recuerdas a", "ordenada"], "en": "You remind me of my sister: you're very tidy." },
+    { "sentence": "No estés triste; no te preocupes por el ruido.", "kind": "statement", "bold": ["No estés", "no te preocupes", "ruido"], "en": "Don't be sad; don't worry about the noise." },
+    { "sentence": "Es importante que respetemos las reglas de la casa.", "kind": "statement", "bold": ["Es importante que", "respetemos", "reglas"], "en": "It's important that we respect the house rules." }
+  ],
   "story": {
     "title": "Una roomie nueva",
     "text": "El departamento nuevo es grande, así que Emily busca una roomie para compartir la renta. Conoce a Mariana, una chica de Guadalajara que estudia Diseño. Le cae bien de inmediato. «Me recuerdas a mi mejor amiga de Chicago», le dice Emily. Antes de mudarse, hablan de las reglas. «Es importante que hagamos un rol de limpieza», propone Mariana. «Y si alguna pone música tarde, que use audífonos», añade Emily. Las primeras semanas todo va bien. Pero un día Mariana usa el cargador de Emily sin pedírselo y lo pierde. Mariana está muy apenada. «No te preocupes», dice Emily. «Confío en ti. Mañana compramos otro.» Esa noche cocinan juntas y ya hay confianza.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Es el día ___ caluroso del año.»", "en": "Complete: «Es el día ___ caluroso del año.»" }, "options": ["más", "muy", "el más", "tan"], "correct": 0, "explanation": { "en": "Superlative: el día más caluroso (the article is already before «día»)." } },
     { "question": { "es": "Extrañas a tu amiga y quieres verla pronto. ¿Qué le escribes?", "en": "You miss your friend and want to see her soon. What do you write?" }, "options": ["Tengo muchas ganas de verte.", "Tengo mucha gana verte.", "Estoy ganas de verte.", "Tengo ganas que te veo."], "correct": 0, "explanation": { "en": "«Tener ganas de» + infinitive." } }
   ],
+  "sentences": [
+    { "sentence": "¿Adónde fuiste de vacaciones el verano pasado?", "kind": "question", "bold": ["fuiste", "vacaciones"], "en": "Where did you go on vacation last summer?" },
+    { "sentence": "¿Qué tal el viaje? ¿Descansaste mucho?", "kind": "question", "bold": ["el viaje", "Descansaste"], "en": "How was the trip? Did you rest a lot?" },
+    { "sentence": "¿Vas a llevar la tienda de campaña y el saco de dormir?", "kind": "question", "bold": ["Vas a", "tienda de campaña", "saco de dormir"], "en": "Are you going to take the tent and the sleeping bag?" },
+    { "sentence": "La mía es la azul; ¿tu maleta es la roja?", "kind": "question", "bold": ["La mía", "maleta"], "en": "Mine is the blue one; is your suitcase the red one?" },
+    { "sentence": "¿Dónde está mi pasaporte, y quién tiene los boletos?", "kind": "question", "bold": ["pasaporte", "boletos"], "en": "Where is my passport, and who has the tickets?" },
+    { "sentence": "El verano pasado viajé a Cancún con mi familia.", "kind": "statement", "bold": ["viajé"], "en": "Last summer I traveled to Cancún with my family." },
+    { "sentence": "Comimos mariscos en la playa y salimos a bailar.", "kind": "statement", "bold": ["Comimos", "la playa", "salimos"], "en": "We ate seafood on the beach and went out dancing." },
+    { "sentence": "Fui a Tulum en camión y fue increíble.", "kind": "statement", "bold": ["Fui", "fue"], "en": "I went to Tulum by bus and it was incredible." },
+    { "sentence": "Nadamos en la alberca y después nos bronceamos.", "kind": "statement", "bold": ["Nadamos", "alberca", "nos bronceamos"], "en": "We swam in the pool and then we sunbathed." },
+    { "sentence": "No olvides el bloqueador y la cámara, ¡vamos a visitar las ruinas!", "kind": "statement", "bold": ["bloqueador", "cámara", "vamos a"], "en": "Don't forget the sunscreen and the camera, we're going to visit the ruins!" }
+  ],
   "story": {
     "title": "Vacaciones en la playa",
     "text": "En Semana Santa, Emily viajó a la península de Yucatán con Valeria y su esposo. El primer día llegaron a Tulum y visitaron las ruinas mayas junto al mar. «¡Es el lugar más bonito que conozco!», dijo Emily. Después nadaron en un cenote, un río subterráneo de agua fresca y transparente. Comieron pescado y tacos de cochinita pibil. Una noche fueron a bailar salsa, aunque Emily no sabía bailar. «Podríamos tomar clases en la Ciudad de México», propuso Valeria. El último día, Emily compró recuerdos para su familia y para Carmen. En el avión de regreso, miró sus fotos y pensó: «Me encantaría volver el próximo año».",

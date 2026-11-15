@@ -59,6 +59,18 @@
     { "question": { "es": "Es una fruta pequeña y roja que se pone en los pasteles. ¿Qué es?", "en": "It's a small red fruit you put on cakes. What is it?" }, "options": ["la fresa", "el plátano", "el limón", "la piña"], "correct": 0, "explanation": { "en": "«Fresa» = strawberry (frutilla in Argentina and Chile)." } },
     { "question": { "es": "Completa: «Se recomienda ___ cinco frutas y verduras al día.»", "en": "Complete: «Se recomienda ___ cinco frutas y verduras al día.»" }, "options": ["comer", "come", "comiendo", "comido"], "correct": 0, "explanation": { "en": "After «se recomienda» use the infinitive." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuántas manzanas quiere, y cuánto limón?", "kind": "question", "bold": ["Cuántas", "manzanas", "cuánto", "limón"], "en": "How many apples do you want, and how much lime?" },
+    { "sentence": "¿A cómo está el kilo de aguacate hoy?", "kind": "question", "bold": ["el kilo de", "aguacate"], "en": "How much is a kilo of avocado today?" },
+    { "sentence": "¿Este mango está maduro o necesito esperar?", "kind": "question", "bold": ["mango", "maduro"], "en": "Is this mango ripe or do I need to wait?" },
+    { "sentence": "¿Las fresas? ¿Dónde las compras?", "kind": "question", "bold": ["fresas", "las"], "en": "The strawberries? Where do you buy them?" },
+    { "sentence": "¿Le pones ajo y cebolla a la salsa?", "kind": "question", "bold": ["ajo", "cebolla"], "en": "Do you put garlic and onion in the salsa?" },
+    { "sentence": "Quiero un kilo de tomates y medio kilo de uvas.", "kind": "statement", "bold": ["un kilo de", "tomates", "medio kilo de", "uvas"], "en": "I want a kilo of tomatoes and half a kilo of grapes." },
+    { "sentence": "Las naranjas, las compro en el mercado los sábados.", "kind": "statement", "bold": ["naranjas", "las"], "en": "Oranges, I buy them at the market on Saturdays." },
+    { "sentence": "Si comes verduras, vas a estar más sano.", "kind": "statement", "bold": ["Si comes", "vas a estar"], "en": "If you eat vegetables, you'll be healthier." },
+    { "sentence": "Se recomienda comer cinco frutas al día, como plátano o piña.", "kind": "statement", "bold": ["Se recomienda", "plátano", "piña"], "en": "Eating five fruits a day is recommended, like banana or pineapple." },
+    { "sentence": "Para la sopa necesito papas, zanahorias y una lechuga.", "kind": "statement", "bold": ["papas", "zanahorias", "lechuga"], "en": "For the soup I need potatoes, carrots and a lettuce." }
+  ],
   "story": {
     "title": "El puesto de don Beto",
     "text": "Todos los sábados, Emily compra frutas y verduras en el puesto de don Beto, en el mercado. Don Beto siempre está de buen humor. «¡Buenos días, güerita! ¿Qué va a llevar hoy?» «Un kilo de tomates, medio kilo de cebollas y tres aguacates.» «¿Para hoy o para mañana?», pregunta don Beto. Emily no entiende. «Si son para hoy, le doy unos maduros; si son para mañana, unos más verdes.» «¡Ah! Para mañana.» Después pide mangos. «¿Me deja probar?» Don Beto le da un pedazo con limón y chile. «¡Qué rico!» Emily compra cuatro. «¿Algo más?» «Es todo, gracias.» Don Beto le regala una piña pequeña: «Para su perrito Taco no, ¡para usted!».",

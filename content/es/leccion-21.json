@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Es necesario que el vestido ___ listo mañana.»", "en": "Complete: «Es necesario que el vestido ___ listo mañana.»" }, "options": ["esté", "está", "estará", "estaría"], "correct": 0, "explanation": { "en": "«Es necesario que» takes the subjunctive: esté." } },
     { "question": { "es": "La reunión empieza exactamente a las ocho, ni un minuto más tarde. ¿Cómo lo dices?", "en": "The meeting starts at exactly eight, not a minute later. How do you say it?" }, "options": ["A las ocho en punto.", "A las ocho y punto.", "A las ocho puntual de.", "En las ocho exacto."], "correct": 0, "explanation": { "en": "«En punto» = sharp, o'clock exactly." } }
   ],
+  "sentences": [
+    { "sentence": "¿A qué hora es la clase, a las nueve o a las diez?", "kind": "question", "bold": ["A qué hora", "a las", "a las"], "en": "What time is the class, at nine or at ten?" },
+    { "sentence": "¿Cuánto mide la mesa, un metro o ochenta centímetros?", "kind": "question", "bold": ["mide", "centímetros"], "en": "How long is the table, one meter or eighty centimeters?" },
+    { "sentence": "¿Desde cuándo esperas? ¿Hace mucho que estás aquí?", "kind": "question", "bold": ["Hace", "que"], "en": "Since when have you been waiting? Have you been here long?" },
+    { "sentence": "¿Llegas temprano o tarde los lunes?", "kind": "question", "bold": ["temprano", "tarde"], "en": "Do you arrive early or late on Mondays?" },
+    { "sentence": "¿Por qué tu reloj siempre está adelantado?", "kind": "question", "bold": ["reloj"], "en": "Why is your watch always fast?" },
+    { "sentence": "Son las tres y cuarto y Diego todavía no llega.", "kind": "statement", "bold": ["Son las", "y cuarto"], "en": "It's a quarter past three and Diego still hasn't arrived." },
+    { "sentence": "Hace veinte minutos que te espero en la esquina.", "kind": "statement", "bold": ["Hace", "minutos", "que"], "en": "I've been waiting for you on the corner for twenty minutes." },
+    { "sentence": "Me acosté después de leer el libro, a la medianoche.", "kind": "statement", "bold": ["después de", "la medianoche"], "en": "I went to bed after reading the book, at midnight." },
+    { "sentence": "Debo de haber olvidado las llaves en la oficina.", "kind": "statement", "bold": ["Debo de"], "en": "I must have forgotten the keys at the office." },
+    { "sentence": "Carmen siempre es puntual: llega a las ocho en punto.", "kind": "statement", "bold": ["puntual", "a las"], "en": "Carmen is always punctual: she arrives at eight o'clock sharp." }
+  ],
   "story": {
     "title": "La hora latina",
     "text": "Diego invita a Emily a una fiesta el sábado «a las ocho». Emily, muy puntual, llega a las ocho en punto. Toca el timbre. Diego abre la puerta en pantalones cortos y con el pelo mojado. «¡Emily! ¿Qué hora es?» «Son las ocho», responde ella. «¡Ah, claro! Es que aquí, a las ocho significa a las nueve, más o menos», ríe Diego. Emily lo ayuda a preparar la botana: guacamole, totopos y unas aguas frescas. A las nueve y cuarto llega el primer invitado. A las diez, la casa está llena. A medianoche, Emily mira su reloj y bosteza. «Hace cuatro horas que estoy aquí», piensa. Pero la fiesta apenas empieza.",

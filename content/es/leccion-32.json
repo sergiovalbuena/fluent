@@ -59,6 +59,18 @@
     { "question": { "es": "Tu vuelo de Bogotá a Lima no para en ninguna otra ciudad. ¿Cómo es?", "en": "Your flight from Bogotá to Lima doesn't stop anywhere else. What kind of flight is it?" }, "options": ["un vuelo directo", "un vuelo con escala", "un vuelo cancelado", "un vuelo retrasado"], "correct": 0, "explanation": { "en": "«Vuelo directo» = direct flight." } },
     { "question": { "es": "Te despides de tu amiga que se va de viaje. ¿Qué le dices?", "en": "You say goodbye to your friend who's going on a trip. What do you say?" }, "options": ["¡Buen viaje!", "¡Buen provecho!", "¡Buena llegada!", "¡Feliz vuelo cancelado!"], "correct": 0, "explanation": { "en": "«¡Buen viaje!» = have a good trip." } }
   ],
+  "sentences": [
+    { "sentence": "¿Dónde documento la maleta, en este mostrador?", "kind": "question", "bold": ["documento", "mostrador"], "en": "Where do I check my suitcase, at this counter?" },
+    { "sentence": "¿De qué puerta de embarque sale el vuelo a Bogotá?", "kind": "question", "bold": ["puerta de embarque", "vuelo"], "en": "What boarding gate does the flight to Bogotá leave from?" },
+    { "sentence": "¿Es un vuelo directo o tiene escala en Panamá?", "kind": "question", "bold": ["vuelo directo", "escala"], "en": "Is it a direct flight or does it have a layover in Panama?" },
+    { "sentence": "¿Puedo llevar esta bolsa como equipaje de mano?", "kind": "question", "bold": ["equipaje de mano"], "en": "Can I take this bag as carry-on luggage?" },
+    { "sentence": "¿Por qué el vuelo tiene un retraso de dos horas?", "kind": "question", "bold": ["retraso"], "en": "Why is the flight delayed by two hours?" },
+    { "sentence": "Muestre su pasaporte y su pase de abordar, por favor.", "kind": "statement", "bold": ["Muestre", "pase de abordar"], "en": "Show your passport and boarding pass, please." },
+    { "sentence": "En el control de seguridad me hicieron abrir la maleta.", "kind": "statement", "bold": ["control de seguridad", "me hicieron abrir"], "en": "At the security check they made me open my suitcase." },
+    { "sentence": "La puerta a la que tenía que ir estaba en otra terminal.", "kind": "statement", "bold": ["a la que", "terminal"], "en": "The gate I had to go to was in another terminal." },
+    { "sentence": "El avión acaba de aterrizar; las maletas salen en la banda de equipaje tres.", "kind": "statement", "bold": ["acaba de", "banda de equipaje"], "en": "The plane just landed; the suitcases come out on baggage belt three." },
+    { "sentence": "Cada vez que viajaban, perdían las maletas.", "kind": "statement", "bold": ["viajaban", "perdían"], "en": "Every time they traveled, they lost their suitcases." }
+  ],
   "story": {
     "title": "Rumbo a Cartagena",
     "text": "El 8 de diciembre, Emily y Nicolás llegan al aeropuerto a las seis de la mañana. Hay una fila enorme en el mostrador. Por fin documentan las maletas y reciben sus pases de abordar. En el control de seguridad, un agente le dice a Nicolás: «Coloque la cámara en la bandeja y quítese el cinturón». Después, a Emily le hacen abrir la maleta porque lleva un frasco de salsa. «¡Es un regalo para Colombia!», explica, riendo. En la sala de espera escuchan un anuncio: «El vuelo 315 con destino a Bogotá tiene un retraso de cuarenta minutos». Tienen una escala en Bogotá. «No pasa nada», dice Nicolás. «Así desayunamos con calma.»",

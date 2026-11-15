@@ -59,6 +59,18 @@
     { "question": { "es": "En México quieres subir a un autobús. ¿Qué verbo es más seguro usar?", "en": "In Mexico you want to catch a bus. Which verb is safest to use?" }, "options": ["tomar el camión", "coger el camión", "agarrar la camión", "subir en el camiones"], "correct": 0, "explanation": { "en": "«Tomar» works everywhere; «coger» is vulgar in Mexico and Argentina." } },
     { "question": { "es": "«¿Qué carro prefieres?» Señalas el carro que está junto a ti. ¿Qué dices?", "en": "«Which car do you prefer?» You point at the car right next to you. What do you say?" }, "options": ["Este.", "Aquel.", "Esa.", "Estos."], "correct": 0, "explanation": { "en": "Near you: «este» (masculine, like «carro»)." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cómo vas al trabajo, en metro o en bicicleta?", "kind": "question", "bold": ["vas", "en", "metro", "en", "bicicleta"], "en": "How do you go to work, by subway or by bike?" },
+    { "sentence": "¿Cuánto tardas en llegar a la oficina?", "kind": "question", "bold": ["tardas", "en"], "en": "How long does it take you to get to the office?" },
+    { "sentence": "¿Dónde está la parada del camión que va al centro?", "kind": "question", "bold": ["parada", "camión"], "en": "Where is the stop for the bus that goes downtown?" },
+    { "sentence": "¿A qué hora sale el próximo tren a Querétaro?", "kind": "question", "bold": ["tren"], "en": "What time does the next train to Querétaro leave?" },
+    { "sentence": "¿El metro es más barato que el taxi?", "kind": "question", "bold": ["metro", "más", "que", "taxi"], "en": "Is the subway cheaper than a taxi?" },
+    { "sentence": "Tomo el metro en la estación Insurgentes todas las mañanas.", "kind": "statement", "bold": ["Tomo el metro", "estación"], "en": "I take the subway at Insurgentes station every morning." },
+    { "sentence": "Tardo media hora en llegar, pero voy a pie si hace sol.", "kind": "statement", "bold": ["Tardo", "en", "voy a pie"], "en": "It takes me half an hour to get there, but I walk if it's sunny." },
+    { "sentence": "El avión despegó tarde, pero aterrizó a tiempo.", "kind": "statement", "bold": ["avión", "despegó", "aterrizó"], "en": "The plane took off late, but it landed on time." },
+    { "sentence": "Te doy un boleto de ida y vuelta para que puedas visitar a tu familia.", "kind": "statement", "bold": ["boleto de ida y vuelta", "para que", "puedas"], "en": "I'm giving you a round-trip ticket so you can visit your family." },
+    { "sentence": "Diego no sabe manejar, así que va en moto con su hermano.", "kind": "statement", "bold": ["manejar", "en", "moto"], "en": "Diego can't drive, so he rides a motorcycle with his brother." }
+  ],
   "story": {
     "title": "Un viaje a Puebla",
     "text": "Emily quiere visitar Puebla un fin de semana. Pregunta a Diego cómo ir. «Puedes ir en camión desde la terminal TAPO. Tarda unas dos horas y es más barato que ir en carro.» El sábado, Emily toma el metro hasta la terminal. En la taquilla pide: «Un boleto de ida y vuelta a Puebla, por favor». El camión es cómodo y tiene aire acondicionado. Por la ventana ve los volcanes, el Popocatépetl y el Iztaccíhuatl, cubiertos de nieve. En Puebla, visita la catedral y come mole poblano. Para regresar, el último camión sale a las nueve. Emily llega a la terminal a las ocho y media. «¡Justo a tiempo!», piensa.",

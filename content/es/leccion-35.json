@@ -59,6 +59,18 @@
     { "question": { "es": "Tu habitación tiene mucho ruido. ¿Cómo pides cambiar, con mucha cortesía?", "en": "Your room is very noisy. How do you ask to change, very politely?" }, "options": ["¿Sería posible cambiar de habitación?", "¡Cámbieme la habitación ya!", "Quiero otra, rápido.", "¿Es posible que cambio habitación?"], "correct": 0, "explanation": { "en": "«¿Sería posible…?» is very polite." } },
     { "question": { "es": "Completa: «Estoy contenta de ___ cambiado de habitación.»", "en": "Complete: «Estoy contenta de ___ cambiado de habitación.»" }, "options": ["haber", "he", "había", "habré"], "correct": 0, "explanation": { "en": "After «de», use the infinitive: haber cambiado." } }
   ],
+  "sentences": [
+    { "sentence": "Esta no tiene vista al mar; ¿sería posible cambiar de habitación?", "kind": "question", "bold": ["vista al mar", "sería posible", "habitación"], "en": "This one has no ocean view; would it be possible to change rooms?" },
+    { "sentence": "¿Podría traerme más toallas, por favor?", "kind": "question", "bold": ["Podría", "toallas"], "en": "Could you bring me more towels, please?" },
+    { "sentence": "¿A qué hora abre la piscina del hotel?", "kind": "question", "bold": ["piscina", "hotel"], "en": "What time does the hotel pool open?" },
+    { "sentence": "¿El servicio a la habitación funciona en la noche?", "kind": "question", "bold": ["servicio a la habitación", "noche"], "en": "Does room service work at night?" },
+    { "sentence": "¿Dónde está el ascensor para el quinto piso?", "kind": "question", "bold": ["ascensor"], "en": "Where is the elevator to the fifth floor?" },
+    { "sentence": "Llovía cuando llegamos al hotel.", "kind": "statement", "bold": ["Llovía", "llegamos", "hotel"], "en": "It was raining when we arrived at the hotel." },
+    { "sentence": "El botones subió las maletas mientras yo pagaba el taxi.", "kind": "statement", "bold": ["botones", "subió", "mientras", "pagaba"], "en": "The bellhop took the bags up while I was paying for the taxi." },
+    { "sentence": "No había nadie más que nosotros en la piscina.", "kind": "statement", "bold": ["nadie más que", "piscina"], "en": "There was no one but us at the pool." },
+    { "sentence": "Estoy contenta de haber cambiado de habitación.", "kind": "statement", "bold": ["contenta de", "haber cambiado", "habitación"], "en": "I'm happy to have changed rooms." },
+    { "sentence": "El aire acondicionado no funciona y la ducha está fría.", "kind": "statement", "bold": ["aire acondicionado", "ducha"], "en": "The air conditioning doesn't work and the shower is cold." }
+  ],
   "story": {
     "title": "Un hotel con vista al mar",
     "text": "Cuando llegaron al hotel en Cartagena, llovía muchísimo. Mientras Nicolás pagaba el taxi, el botones subió las maletas. En la recepción, Emily dijo: «Tengo una reserva a nombre de Emily Clark». La habitación era bonita, pero tenía vista al estacionamiento y el aire acondicionado no funcionaba. Emily bajó a recepción. «¿Sería posible cambiar de habitación?» «Claro, señora. Tenemos una con vista al mar.» La nueva habitación era perfecta. Al día siguiente, desayunaron temprano y no había nadie más que ellos en el restaurante. El último día, al pagar la cuenta, Emily le dijo al recepcionista: «Estamos muy contentos con el servicio. ¡Gracias por todo!».",

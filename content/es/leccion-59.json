@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Cuando ___ la cédula, podrá abrir la cuenta.»", "en": "Complete: «Cuando ___ la cédula, podrá abrir la cuenta.»" }, "options": ["tenga", "tiene", "tendrá", "tenía"], "correct": 0, "explanation": { "en": "Future after «cuando»: subjunctive." } },
     { "question": { "es": "Tu pasaporte ya no es válido después de marzo. ¿Cómo lo dices?", "en": "Your passport won't be valid after March. How do you say it?" }, "options": ["Mi pasaporte vence en marzo.", "Mi pasaporte gana en marzo.", "Mi pasaporte renueva en marzo.", "Mi pasaporte firma en marzo."], "correct": 0, "explanation": { "en": "«Vencer» = to expire." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué documentos necesito para el trámite del permiso de residencia?", "kind": "question", "bold": ["trámite", "permiso de residencia"], "en": "What documents do I need for the residence permit process?" },
+    { "sentence": "¿Hace falta que traiga el acta de nacimiento con apostilla?", "kind": "question", "bold": ["acta de nacimiento", "apostilla"], "en": "Do I need to bring my birth certificate with an apostille?" },
+    { "sentence": "¿Cuándo vence tu pasaporte? ¿Tienes que renovarlo?", "kind": "question", "bold": ["vence", "renovarlo"], "en": "When does your passport expire? Do you have to renew it?" },
+    { "sentence": "¿Necesitamos dos testigos en la notaría?", "kind": "question", "bold": ["testigos", "notaría"], "en": "Do we need two witnesses at the notary's office?" },
+    { "sentence": "¿Cuánto tarda en ser aprobada la solicitud?", "kind": "question", "bold": ["aprobada", "solicitud"], "en": "How long does it take for the application to be approved?" },
+    { "sentence": "Hace falta que traiga dos fotocopias y un comprobante de domicilio.", "kind": "statement", "bold": ["Hace falta que", "traiga", "fotocopias", "comprobante de domicilio"], "en": "You need to bring two photocopies and a proof of address." },
+    { "sentence": "Tiene todos los papeles; sin embargo, falta una firma.", "kind": "statement", "bold": ["sin embargo", "firma"], "en": "You have all the papers; however, a signature is missing." },
+    { "sentence": "Por lo tanto, tiene que volver mañana con el notario.", "kind": "statement", "bold": ["Por lo tanto", "notario"], "en": "Therefore, you have to come back tomorrow with the notary." },
+    { "sentence": "La solicitud fue aprobada después de tres meses.", "kind": "statement", "bold": ["La solicitud fue aprobada"], "en": "The application was approved after three months." },
+    { "sentence": "Cuando tenga la cédula, podrá abrir una cuenta en el banco.", "kind": "statement", "bold": ["Cuando tenga", "cédula", "podrá"], "en": "When you have your ID card, you'll be able to open a bank account." }
+  ],
   "story": {
     "title": "Los papeles de la boda",
     "text": "Para casarse en Colombia, Emily y Nicolás tienen que hacer muchos trámites. En la notaría, la secretaria les explica: «Hace falta que traigan el acta de nacimiento con apostilla, el pasaporte y dos testigos». Emily ya tiene el acta de nacimiento; sin embargo, no está apostillada. «¡Ay, no! Por lo tanto, tengo que pedirla otra vez a Estados Unidos», dice. Su mamá la ayuda desde Chicago y en dos semanas llega el documento. Además, el pasaporte de Nicolás vence pronto, así que también tiene que renovarlo en el consulado de México. Por fin, un viernes, firman todos los papeles. «Su solicitud fue aprobada», dice el notario. «¡Por fin terminamos!», gritan los dos.",

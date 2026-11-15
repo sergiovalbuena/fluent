@@ -59,6 +59,18 @@
     { "question": { "es": "Sonó el teléfono justo cuando ibas a salir. ¿Cómo lo cuentas?", "en": "The phone rang just as you were going out. How do you tell it?" }, "options": ["Estaba a punto de salir.", "Estaba punto de salir.", "Salí a punto.", "Estoy a punto de salir ayer."], "correct": 0, "explanation": { "en": "«Estar a punto de» + infinitive = to be about to." } },
     { "question": { "es": "Completa: «¿Qué ___ tú los fines de semana?» — «___ deporte.»", "en": "Complete: «¿Qué ___ tú los fines de semana?» — «___ deporte.»" }, "options": ["haces … Hago", "haces … Hazo", "hace … Hago", "hagas … Haco"], "correct": 0, "explanation": { "en": "«Hacer» is irregular in the yo form: hago." } }
   ],
+  "sentences": [
+    { "sentence": "¿A qué te dedicas, y dónde trabajas?", "kind": "question", "bold": ["A qué te dedicas", "trabajas"], "en": "What do you do, and where do you work?" },
+    { "sentence": "¿Tu papá es médico o ingeniero?", "kind": "question", "bold": ["es", "médico", "ingeniero"], "en": "Is your dad a doctor or an engineer?" },
+    { "sentence": "¿Qué haces los fines de semana, trabajas?", "kind": "question", "bold": ["Qué haces"], "en": "What do you do on weekends, do you work?" },
+    { "sentence": "¿Qué querías ser de niña?", "kind": "question", "bold": ["querías ser"], "en": "What did you want to be as a girl?" },
+    { "sentence": "¿Cuánto es el sueldo de un enfermero aquí?", "kind": "question", "bold": ["sueldo", "enfermero"], "en": "How much is a nurse's salary here?" },
+    { "sentence": "Soy diseñadora y trabajo en una empresa de diseño.", "kind": "statement", "bold": ["Soy", "trabajo en", "empresa"], "en": "I'm a designer and I work at a design company." },
+    { "sentence": "Diego trabaja de mesero en un restaurante del centro.", "kind": "statement", "bold": ["trabaja de", "mesero"], "en": "Diego works as a waiter at a restaurant downtown." },
+    { "sentence": "Salgo de casa a las ocho y hago mi trabajo en un café.", "kind": "statement", "bold": ["Salgo", "hago", "trabajo"], "en": "I leave home at eight and I do my work at a café." },
+    { "sentence": "Mi prima es abogada y su esposo es periodista.", "kind": "statement", "bold": ["es", "abogada", "es", "periodista"], "en": "My cousin is a lawyer and her husband is a journalist." },
+    { "sentence": "De niño, Diego quería ser cocinero, como su abuelo.", "kind": "statement", "bold": ["quería ser", "cocinero"], "en": "As a boy, Diego wanted to be a cook, like his grandfather." }
+  ],
   "story": {
     "title": "¿A qué te dedicas?",
     "text": "El viernes, Emily va a una fiesta en casa de Diego. Conoce a mucha gente. Primero habla con Sofía, una mujer muy simpática. «¿A qué te dedicas?», pregunta Emily. «Soy enfermera en un hospital del centro. Trabajo de noche, por eso hoy estoy un poco cansada.» Luego conoce a Martín, el hermano de Diego. Es cocinero y tiene un pequeño restaurante de comida oaxaqueña. «¿Y tú?», pregunta Martín. «Soy diseñadora gráfica. Trabajo con tu hermano.» «¡Ah, tú eres la gringa simpática!», dice Martín, y los dos ríen. Al final de la noche, un señor mayor cuenta que de niño quería ser astronauta, pero ahora es abogado. «La vida da muchas vueltas», dice.",

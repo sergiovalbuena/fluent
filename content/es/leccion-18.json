@@ -59,6 +59,18 @@
     { "question": { "es": "Tu compañero tiene la pelota. ¿Cómo le pides que te la pase?", "en": "Your teammate has the ball. How do you ask him to pass it to you?" }, "options": ["¡Pásamela!", "¡Pásamelo!", "¡Me la pasa!", "¡Pasa a mí la!"], "correct": 0, "explanation": { "en": "Command + me + la (pelota, feminine): pásamela." } },
     { "question": { "es": "El partido termina 2 a 2. ¿Cuál es el resultado?", "en": "The match ends 2–2. What's the result?" }, "options": ["un empate", "una victoria", "una derrota", "un gol"], "correct": 0, "explanation": { "en": "«Empate» = draw." } }
   ],
+  "sentences": [
+    { "sentence": "¿Juegas al fútbol o al tenis los domingos?", "kind": "question", "bold": ["Juegas al", "fútbol", "al", "tenis"], "en": "Do you play soccer or tennis on Sundays?" },
+    { "sentence": "¿A qué hora empieza el partido?", "kind": "question", "bold": ["empieza", "partido"], "en": "What time does the game start?" },
+    { "sentence": "¿Prefieres la natación o el ciclismo?", "kind": "question", "bold": ["Prefieres", "natación", "ciclismo"], "en": "Do you prefer swimming or cycling?" },
+    { "sentence": "¿Cuántas veces por semana haces ejercicio?", "kind": "question", "bold": ["haces ejercicio"], "en": "How many times a week do you exercise?" },
+    { "sentence": "¿Quién ganó, tu equipo o el otro? ¿Fue un empate?", "kind": "question", "bold": ["ganó", "equipo", "empate"], "en": "Who won, your team or the other one? Was it a tie?" },
+    { "sentence": "Hago ejercicio tres veces por semana en el parque.", "kind": "statement", "bold": ["Hago ejercicio"], "en": "I exercise three times a week in the park." },
+    { "sentence": "Diego juega al béisbol, pero nunca juega al básquetbol.", "kind": "statement", "bold": ["juega al", "béisbol", "nunca", "juega al", "básquetbol"], "en": "Diego plays baseball, but he never plays basketball." },
+    { "sentence": "Aunque llueve, vamos a jugar el partido.", "kind": "statement", "bold": ["Aunque", "partido"], "en": "Even though it's raining, we're going to play the game." },
+    { "sentence": "El árbitro no vio el gol, y el entrenador se enojó.", "kind": "statement", "bold": ["árbitro", "gol", "entrenador"], "en": "The referee didn't see the goal, and the coach got angry." },
+    { "sentence": "A veces ganamos y a veces perdemos, pero nos divertimos.", "kind": "statement", "bold": ["A veces", "ganamos", "a veces", "perdemos"], "en": "Sometimes we win and sometimes we lose, but we have fun." }
+  ],
   "story": {
     "title": "El partido del domingo",
     "text": "Diego juega al fútbol todos los domingos con un equipo de amigos. Esta semana invita a Emily a ver el partido. «¿Tú juegas?», pregunta Diego. «Nunca jugué al fútbol, pero de niña jugaba básquetbol», responde Emily. El partido empieza a las diez. Aunque hace mucho calor, hay mucha gente. Emily grita con los aficionados: «¡Vamos, equipo!». En el primer tiempo, el otro equipo mete un gol. En el segundo, Diego recibe la pelota, corre y… ¡gol! Al final quedan empatados, uno a uno. Después, todos comen tacos en un puesto cerca de la cancha. «La próxima semana tú juegas con nosotros», dice Diego. «¡Ni loca!», ríe Emily.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Ya terminaste de comer. ¿Cómo pides la cuenta, sin repetir «la cuenta»?", "en": "You've finished eating. How do you ask for the bill without repeating «la cuenta»?" }, "options": ["¿Me la trae, por favor?", "¿Me lo trae, por favor?", "¿La me trae, por favor?", "¿Me trae la la, por favor?"], "correct": 0, "explanation": { "en": "Indirect «me» + direct «la» (la cuenta): me la trae." } },
     { "question": { "es": "Estilo indirecto: «¿Tienen reserva?» → Nos preguntó si ___ reserva.", "en": "Reported question: «¿Tienen reserva?» → Nos preguntó si ___ reserva." }, "options": ["teníamos", "tenemos", "tendríamos", "tuviéramos"], "correct": 0, "explanation": { "en": "In past reported speech, present becomes imperfect: teníamos." } }
   ],
+  "sentences": [
+    { "sentence": "¿Me trae la carta y una bebida, por favor?", "kind": "question", "bold": ["la carta", "bebida"], "en": "Can you bring me the menu and a drink, please?" },
+    { "sentence": "¿Qué nos recomienda como plato fuerte?", "kind": "question", "bold": ["recomienda", "plato fuerte"], "en": "What do you recommend as a main course?" },
+    { "sentence": "¿El menú del día incluye postre?", "kind": "question", "bold": ["menú del día", "postre"], "en": "Does the set menu include dessert?" },
+    { "sentence": "¿La cuenta? ¿Me la trae, por favor?", "kind": "question", "bold": ["Me la"], "en": "The check? Can you bring it to me, please?" },
+    { "sentence": "¿Está incluida la propina en la cuenta?", "kind": "question", "bold": ["propina"], "en": "Is the tip included in the check?" },
+    { "sentence": "Para mí, la carne término medio y una ensalada.", "kind": "statement", "bold": ["Para mí", "término medio"], "en": "For me, the steak medium and a salad." },
+    { "sentence": "Cuando llegué, mis amigos ya habían pedido el aperitivo.", "kind": "statement", "bold": ["habían pedido", "aperitivo"], "en": "When I arrived, my friends had already ordered the appetizer." },
+    { "sentence": "Si hubiéramos reservado, habríamos tenido mesa junto a la ventana.", "kind": "statement", "bold": ["Si hubiéramos reservado", "habríamos tenido", "mesa"], "en": "If we had made a reservation, we would have had a table by the window." },
+    { "sentence": "Aunque nos hubieran mirado mal, nos quedamos hasta el postre.", "kind": "statement", "bold": ["Aunque nos hubieran mirado", "postre"], "en": "Even if they had looked at us badly, we stayed until dessert." },
+    { "sentence": "La salsa era muy picante, así que pedí otro vaso de agua.", "kind": "statement", "bold": ["picante", "pedí", "vaso"], "en": "The salsa was very spicy, so I ordered another glass of water." }
+  ],
   "story": {
     "title": "Cena en Polanco",
     "text": "Para celebrar su cumpleaños, Emily invita a sus amigos a un restaurante elegante en Polanco. Llega tarde por el tráfico y, cuando llega, sus amigos ya habían pedido las bebidas. El mesero les trae la carta. «¿Qué nos recomienda?», pregunta Diego. «El pescado a la talla está buenísimo.» Emily pide un filete. «¿Término medio?» «Sí, por favor, y sin cebolla.» Valeria comenta: «Si hubiéramos reservado antes, nos habrían dado la mesa de la terraza». La comida está deliciosa. Al final, el mesero trae un pastel con una vela y todos cantan «Las mañanitas». Cuando Emily pide la cuenta, el mesero sonríe: «Sus amigos ya la pagaron».",

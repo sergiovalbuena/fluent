@@ -59,6 +59,18 @@
     { "question": { "es": "Completa: «Repartieron cobijas para que la gente ___.»", "en": "Complete: «Repartieron cobijas para que la gente ___.»" }, "options": ["descansara", "descansa", "descansará", "descanse ayer"], "correct": 0, "explanation": { "en": "Past purpose: para que + imperfect subjunctive." } },
     { "question": { "es": "¿Qué frase está en pretérito?", "en": "Which sentence is in the preterite?" }, "options": ["El tren salió tarde.", "El tren salía tarde.", "El tren saldrá tarde.", "El tren sale tarde."], "correct": 0, "explanation": { "en": "«Salió» = left (completed event)." } }
   ],
+  "sentences": [
+    { "sentence": "¿De qué andén sale el tren a Zipaquirá?", "kind": "question", "bold": ["andén"], "en": "What platform does the train to Zipaquirá leave from?" },
+    { "sentence": "¿Hay que hacer transbordo, o es directo?", "kind": "question", "bold": ["transbordo"], "en": "Do you have to transfer, or is it direct?" },
+    { "sentence": "¿Este asiento está ocupado, o es un asiento reservado?", "kind": "question", "bold": ["Este", "asiento reservado"], "en": "Is this seat taken, or is it a reserved seat?" },
+    { "sentence": "¿Dónde está la consigna para dejar las maletas?", "kind": "question", "bold": ["consigna"], "en": "Where is the luggage storage to leave the suitcases?" },
+    { "sentence": "¿Por qué el tren llega con retraso otra vez?", "kind": "question", "bold": ["con retraso"], "en": "Why is the train arriving late again?" },
+    { "sentence": "Es el tren más antiguo del país, y la locomotora es preciosa.", "kind": "statement", "bold": ["Es el tren más antiguo del", "locomotora"], "en": "It's the oldest train in the country, and the locomotive is beautiful." },
+    { "sentence": "Esta señora es la que vi ayer en la estación de tren.", "kind": "statement", "bold": ["Esta", "que", "estación de tren"], "en": "This lady is the one I saw yesterday at the train station." },
+    { "sentence": "Repartieron cobijas para que la gente descansara en el coche cama.", "kind": "statement", "bold": ["cobijas", "para que", "descansara", "coche cama"], "en": "They handed out blankets so that people could rest in the sleeping car." },
+    { "sentence": "El tren salió tarde, pero llegó a tiempo a la mina de sal.", "kind": "statement", "bold": ["salió", "llegó", "mina de sal"], "en": "The train left late, but it arrived on time at the salt mine." },
+    { "sentence": "Olvidé mi paraguas en el vagón; voy a objetos perdidos.", "kind": "statement", "bold": ["vagón", "objetos perdidos"], "en": "I left my umbrella on the train car; I'm going to lost and found." }
+  ],
   "story": {
     "title": "El Tren de la Sabana",
     "text": "Un domingo, Emily y Nicolás toman el Tren de la Sabana, un tren turístico que sale de Bogotá hacia Zipaquirá. Es uno de los trenes más antiguos del país y tiene una locomotora de vapor. En el andén hay músicos tocando carranga, la música campesina de la región. «¿Este asiento está ocupado?», pregunta Emily a una señora. «No, mija, siéntese.» El revisor pasa: «Boletos, por favor». Por la ventana ven vacas, montañas verdes y pueblos pequeños. En Zipaquirá visitan la Catedral de Sal, una iglesia construida dentro de una mina de sal. Al regresar, Nicolás se da cuenta de que olvidó su chaqueta en el vagón. Por suerte, la encuentra en objetos perdidos.",

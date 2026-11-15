@@ -59,6 +59,18 @@
     { "question": { "es": "«¿Tienes guantes?» — «No, no ___ tengo.»", "en": "«¿Tienes guantes?» — «No, no ___ tengo.»" }, "options": ["los", "las", "les", "lo"], "correct": 0, "explanation": { "en": "«Guantes» is masculine plural: los." } },
     { "question": { "es": "Hace frío. Agarras el suéter y te lo pones. ¿Qué verbo usas?", "en": "It's cold. You grab your sweater and put it on. Which verb do you use?" }, "options": ["Me pongo el suéter.", "Llevo el suéter.", "Me visto el suéter.", "Me quedo el suéter."], "correct": 0, "explanation": { "en": "«Ponerse» = to put on (action); «llevar» = to be wearing." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué talla usa, chica o mediana?", "kind": "question", "bold": ["talla"], "en": "What size do you wear, small or medium?" },
+    { "sentence": "¿Esta falda me queda bien o me queda demasiado chica?", "kind": "question", "bold": ["falda", "me queda", "me queda", "demasiado"], "en": "Does this skirt fit me well or is it too small?" },
+    { "sentence": "¿El suéter es de algodón o de lana?", "kind": "question", "bold": ["suéter", "de", "algodón", "de"], "en": "Is the sweater cotton or wool?" },
+    { "sentence": "Hace frío; ¿por qué no te pones los guantes?", "kind": "question", "bold": ["te pones", "guantes"], "en": "It's cold; why don't you put on your gloves?" },
+    { "sentence": "¿Llevas tenis o zapatos a la oficina?", "kind": "question", "bold": ["Llevas", "tenis", "zapatos"], "en": "Do you wear sneakers or shoes to the office?" },
+    { "sentence": "Hoy llevo una camisa azul y unos pantalones negros.", "kind": "statement", "bold": ["llevo", "camisa", "pantalones"], "en": "Today I'm wearing a blue shirt and black pants." },
+    { "sentence": "Esta chamarra de cuero te queda muy bien.", "kind": "statement", "bold": ["chamarra", "de", "cuero", "te queda"], "en": "This leather jacket looks great on you." },
+    { "sentence": "Ponte el impermeable, si no te vas a mojar.", "kind": "statement", "bold": ["Ponte", "impermeable", "si no"], "en": "Put on your raincoat, otherwise you'll get wet." },
+    { "sentence": "El vestido es bonito, pero es demasiado caro.", "kind": "statement", "bold": ["vestido", "demasiado"], "en": "The dress is pretty, but it's too expensive." },
+    { "sentence": "Diego siempre lleva una gorra y una playera blanca.", "kind": "statement", "bold": ["lleva", "gorra", "playera"], "en": "Diego always wears a cap and a white T-shirt." }
+  ],
   "story": {
     "title": "De compras con Valeria",
     "text": "El fin de semana, Valeria invita a Emily a ir de compras. Emily necesita ropa para una boda en Oaxaca. En la primera tienda, se prueba un vestido verde. «Te queda precioso», dice Valeria. Pero el vestido es de seda y es demasiado caro. En otra tienda encuentran uno azul de algodón, más sencillo y más barato. «¿Lo tiene en una talla más chica?», pregunta Emily. La vendedora lo trae y le queda perfecto. Después, Valeria quiere unos zapatos. «¿Qué número calza?», pregunta el vendedor. Al salir empieza a llover y ninguna de las dos lleva paraguas. «¡Corre, si no nos mojamos!», grita Valeria. Llegan al café empapadas pero felices.",

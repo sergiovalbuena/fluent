@@ -59,6 +59,18 @@
     { "question": { "es": "En México, ¿con qué calificación se aprueba normalmente?", "en": "In Mexico, what grade do you usually need to pass?" }, "options": ["6 de 10", "3 de 10", "60 de 70", "1 de 5"], "correct": 0, "explanation": { "en": "In Mexico grades go from 0 to 10, and 6 is a pass." } },
     { "question": { "es": "Completa: «Los profesores ___ dar una conferencia, pero se enfermaron.»", "en": "Complete: «Los profesores ___ dar una conferencia, pero se enfermaron.»" }, "options": ["iban a", "van a", "fueron a", "irán a"], "correct": 0, "explanation": { "en": "A plan that didn't happen: iban a + infinitive." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué carrera estudias en la universidad?", "kind": "question", "bold": ["carrera", "universidad"], "en": "What degree are you studying at the university?" },
+    { "sentence": "¿Aprobaste el examen de matemáticas o lo reprobaste?", "kind": "question", "bold": ["Aprobaste", "examen", "reprobaste"], "en": "Did you pass the math exam or did you fail it?" },
+    { "sentence": "¿Ya te inscribiste a las materias del próximo semestre?", "kind": "question", "bold": ["inscribiste", "materias"], "en": "Have you already signed up for next semester's subjects?" },
+    { "sentence": "¿Dónde está Diego? ¿Debe de estar en la biblioteca?", "kind": "question", "bold": ["Debe de estar"], "en": "Where is Diego? He must be in the library?" },
+    { "sentence": "¿Cuántas horas al día deberías estudiar para sacar buenas calificaciones?", "kind": "question", "bold": ["deberías estudiar", "calificaciones"], "en": "How many hours a day should you study to get good grades?" },
+    { "sentence": "Deberías estudiar más si quieres la beca.", "kind": "statement", "bold": ["Deberías", "estudiar", "beca"], "en": "You should study more if you want the scholarship." },
+    { "sentence": "Podría haber venido a la conferencia, pero estaba cansada.", "kind": "statement", "bold": ["Podría haber venido", "conferencia"], "en": "I could have come to the lecture, but I was tired." },
+    { "sentence": "Más vale que empecemos la tarea ya.", "kind": "statement", "bold": ["Más vale que", "empecemos", "tarea"], "en": "We'd better start the homework now." },
+    { "sentence": "No salgo hasta que termine el trabajo para el profesor.", "kind": "statement", "bold": ["No salgo hasta que", "termine", "profesor"], "en": "I'm not going out until I finish the assignment for the professor." },
+    { "sentence": "Iban a dar la clase en otro salón, pero no había lugar.", "kind": "statement", "bold": ["Iban a", "salón", "pero"], "en": "They were going to give the class in another classroom, but there was no room." }
+  ],
   "story": {
     "title": "La clase de español avanzado",
     "text": "Emily ya habla bastante bien, así que Lucía le recomienda inscribirse en un curso de español en la universidad. El primer día conoce a Sebastián, un estudiante de Ingeniería que quiere practicar inglés. «¿Qué carrera estudias tú?», pregunta él. «Ninguna, ya trabajo. Solo tomo esta materia.» El profesor es exigente: hay tarea todos los días y un examen cada mes. Antes del primer examen, Sebastián le dice: «Más vale que estudiemos juntos». Estudian en la biblioteca hasta que cierra. «Podría haber estudiado sola, pero así es más divertido», piensa Emily. Una semana después, el profesor entrega las calificaciones. Emily sacó un nueve. «¡Le echaste ganas!», dice Sebastián.",

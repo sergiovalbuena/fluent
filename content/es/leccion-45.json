@@ -59,6 +59,18 @@
     { "question": { "es": "En el restaurante, Marcos saca un anillo y le pregunta a Julia si quiere casarse con él. ¿Qué hace?", "en": "At the restaurant, Marcos takes out a ring and asks Julia to marry him. What is he doing?" }, "options": ["Le pide matrimonio.", "Le pide la cuenta.", "Se divorcia.", "La engaña."], "correct": 0, "explanation": { "en": "«Pedir matrimonio» = to propose." } },
     { "question": { "es": "Completa: «Laura se casó ___ su novio de la universidad.»", "en": "Complete: «Laura se casó ___ su novio de la universidad.»" }, "options": ["con", "a", "de", "por"], "correct": 0, "explanation": { "en": "«Casarse con» = to marry (someone)." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuándo se casa tu hermano con su novia?", "kind": "question", "bold": ["se casa", "con", "novia"], "en": "When is your brother marrying his girlfriend?" },
+    { "sentence": "¿Cómo te pidió matrimonio? ¿Con un anillo de compromiso?", "kind": "question", "bold": ["pidió matrimonio", "anillo de compromiso"], "en": "How did he propose to you? With an engagement ring?" },
+    { "sentence": "¿Quién va a ser el padrino de la boda?", "kind": "question", "bold": ["padrino", "boda"], "en": "Who is going to be the best man at the wedding?" },
+    { "sentence": "¿Te enamoraste de él a primera vista?", "kind": "question", "bold": ["enamoraste de"], "en": "Did you fall in love with him at first sight?" },
+    { "sentence": "¿Ya compraron las argollas para el matrimonio?", "kind": "question", "bold": ["argollas", "matrimonio"], "en": "Have you already bought the wedding rings?" },
+    { "sentence": "Si me lo pides, diré que sí.", "kind": "statement", "bold": ["Si me lo pides", "diré"], "en": "If you ask me, I'll say yes." },
+    { "sentence": "No quiero que mis hijos estén tristes por el divorcio.", "kind": "statement", "bold": ["No quiero que", "estén", "divorcio"], "en": "I don't want my children to be sad about the divorce." },
+    { "sentence": "Pensaba que nuestro amor sería eterno.", "kind": "statement", "bold": ["Pensaba que", "amor", "sería"], "en": "I thought our love would be eternal." },
+    { "sentence": "Carmen se casó con su novio de la universidad.", "kind": "statement", "bold": ["se casó con", "novio"], "en": "Carmen married her college boyfriend." },
+    { "sentence": "Me alegra que estés feliz con tu pareja.", "kind": "statement", "bold": ["Me alegra que", "estés", "pareja"], "en": "I'm glad you're happy with your partner." }
+  ],
   "story": {
     "title": "La boda en Oaxaca",
     "text": "Por fin llega la boda de Valeria en Oaxaca, la boda para la que Emily compró el vestido azul. La ceremonia es en una iglesia antigua llena de flores. Los novios entran entre aplausos y los padrinos llevan las argollas. Después, la fiesta es en una hacienda con música, mezcal y una calenda: un desfile con gigantes de papel y una banda. Emily baila con todos. A la medianoche, Nicolás la lleva al jardín. Está nervioso. «Emily, me enamoré de ti el día de la lluvia, ¿te acuerdas?» Saca un anillo. «¿Te quieres casar conmigo?» Emily se queda sin palabras unos segundos y luego grita: «¡Sí!». Los invitados, que miraban desde la puerta, aplauden: «¡Vivan los novios!».",

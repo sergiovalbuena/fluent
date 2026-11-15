@@ -59,6 +59,18 @@
     { "question": { "es": "Ves la fecha 05/03 en un documento de México. ¿Qué día es?", "en": "You see the date 05/03 on a document from Mexico. Which day is it?" }, "options": ["el 5 de marzo", "el 3 de mayo", "el 5 de mayo", "el 3 de marzo"], "correct": 0, "explanation": { "en": "Spanish-speaking countries write day / month: 05/03 = March 5th." } },
     { "question": { "es": "Mañana tienes una reunión a las nueve. ¿Cómo lo dices?", "en": "Tomorrow you have a meeting at nine. How do you say it?" }, "options": ["Mañana por la mañana tengo una reunión.", "Mañana mañana tengo una reunión.", "Ayer por la mañana tengo una reunión.", "La mañana mañana tengo reunión."], "correct": 0, "explanation": { "en": "«Mañana por la mañana» = tomorrow morning." } }
   ],
+  "sentences": [
+    { "sentence": "¿Qué día es hoy, el martes o el miércoles?", "kind": "question", "bold": ["Qué día es hoy", "el martes", "el miércoles"], "en": "What day is today, Tuesday or Wednesday?" },
+    { "sentence": "¿Cuándo es tu cumpleaños, en julio o en agosto?", "kind": "question", "bold": ["Cuándo", "cumpleaños", "en", "en"], "en": "When is your birthday, in July or in August?" },
+    { "sentence": "¿Trabajas los sábados o solo los lunes?", "kind": "question", "bold": ["los sábados", "los lunes"], "en": "Do you work on Saturdays or only on Mondays?" },
+    { "sentence": "¿Qué haces el fin de semana?", "kind": "question", "bold": ["el fin de semana"], "en": "What do you do on the weekend?" },
+    { "sentence": "¿Qué fecha es mañana?", "kind": "question", "bold": ["Qué fecha", "mañana"], "en": "What's the date tomorrow?" },
+    { "sentence": "El lunes voy al médico y el jueves voy al mercado.", "kind": "statement", "bold": ["El lunes", "el jueves"], "en": "On Monday I go to the doctor and on Thursday I go to the market." },
+    { "sentence": "Hoy es viernes, 3 de marzo, y mañana es sábado.", "kind": "statement", "bold": ["Hoy es", "viernes", "mañana", "sábado"], "en": "Today is Friday, March 3rd, and tomorrow is Saturday." },
+    { "sentence": "Ayer fue domingo y descansé todo el día.", "kind": "statement", "bold": ["Ayer", "domingo"], "en": "Yesterday was Sunday and I rested all day." },
+    { "sentence": "Mi cumpleaños es en diciembre, al final del año.", "kind": "statement", "bold": ["cumpleaños", "en", "año"], "en": "My birthday is in December, at the end of the year." },
+    { "sentence": "Los domingos como con la familia de Carmen.", "kind": "statement", "bold": ["Los domingos"], "en": "On Sundays I eat with Carmen's family." }
+  ],
   "story": {
     "title": "La agenda de Emily",
     "text": "Emily tiene una agenda nueva. Hoy es lunes, 2 de marzo, y escribe sus planes. Los lunes y los miércoles tiene clase de español a las siete. El jueves tiene una reunión importante en la oficina. El viernes es el cumpleaños de Diego, su compañero de trabajo, y van a cenar todos juntos. El sábado quiere visitar un museo con la señora Carmen. Y el domingo… el domingo descansa. Emily mira el calendario: en abril tiene vacaciones de Semana Santa. «¡Qué bien!», piensa. «Faltan cuatro semanas.» Por la noche llama a su mamá en Chicago. «¿Cuándo vienes?», pregunta su mamá. «En diciembre, para Navidad.»",

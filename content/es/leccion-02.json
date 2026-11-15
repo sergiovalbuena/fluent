@@ -59,6 +59,18 @@
     { "question": { "es": "Las personas en la mesa empiezan a comer. ¿Qué les dices?", "en": "The people at the table start eating. What do you say to them?" }, "options": ["¡Buen provecho!", "¡Feliz cumpleaños!", "¡Con permiso!", "¡Lo siento!"], "correct": 0, "explanation": { "en": "«¡Buen provecho!» = enjoy your meal." } },
     { "question": { "es": "¿Cuál es el plural de «la flor»?", "en": "What is the plural of «la flor»?" }, "options": ["las flores", "las flors", "los flores", "la flores"], "correct": 0, "explanation": { "en": "After a consonant add -es, and «la» becomes «las»: las flores." } }
   ],
+  "sentences": [
+    { "sentence": "Disculpe, ¿dónde está la puerta del edificio?", "kind": "question", "bold": ["Disculpe", "la puerta"], "en": "Excuse me, where is the door of the building?" },
+    { "sentence": "¿Puede traer la cuenta, por favor?", "kind": "question", "bold": ["Puede", "la cuenta", "por favor"], "en": "Can you bring the check, please?" },
+    { "sentence": "Hace frío; ¿podría cerrar la ventana, por favor?", "kind": "question", "bold": ["podría", "la ventana", "por favor"], "en": "It's cold; could you close the window, please?" },
+    { "sentence": "Perdón, ¿puede hablar más despacio?", "kind": "question", "bold": ["Perdón", "puede"], "en": "Sorry, can you speak more slowly?" },
+    { "sentence": "Con permiso, ¿puedo pasar a la cocina?", "kind": "question", "bold": ["Con permiso", "la cocina"], "en": "Excuse me, may I go into the kitchen?" },
+    { "sentence": "Quisiera un café y un agua, por favor.", "kind": "statement", "bold": ["Quisiera", "un café", "un agua", "por favor"], "en": "I'd like a coffee and a water, please." },
+    { "sentence": "Muchas gracias por el café, Carmen. — ¡De nada!", "kind": "statement", "bold": ["Muchas gracias", "el café", "¡De nada"], "en": "Thank you very much for the coffee, Carmen. — You're welcome!" },
+    { "sentence": "Lo siento, no entiendo, pero estoy aprendiendo.", "kind": "statement", "bold": ["Lo siento"], "en": "I'm sorry, I don't understand, but I'm learning." },
+    { "sentence": "Claro, está bien, no hay problema.", "kind": "statement", "bold": ["Claro", "está bien"], "en": "Of course, that's fine, no problem." },
+    { "sentence": "Queremos dos cafés y dos flores para la mesa.", "kind": "statement", "bold": ["dos cafés", "dos flores"], "en": "We want two coffees and two flowers for the table." }
+  ],
   "story": {
     "title": "El primer café",
     "text": "Es sábado y Emily entra a una cafetería pequeña cerca de su casa. Hay mucha gente. «Buenos días», dice el mesero. «¿Qué le sirvo?» Emily mira el menú. «Quisiera un café con leche, por favor.» «¿Grande o chico?» Emily no entiende bien. «Perdón, ¿puede repetir, por favor?» «Claro. ¿Grande o chico?» «Grande, gracias.» Unos minutos después, el mesero trae el café y un pan dulce. «Yo no pedí el pan», dice Emily. «No pasa nada, es un regalo de la casa. ¡Bienvenida!» «¡Muchas gracias!» «De nada. ¡Buen provecho!» Al final, Emily pide la cuenta y deja una propina.",

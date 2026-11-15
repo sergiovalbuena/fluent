@@ -59,6 +59,18 @@
     { "question": { "es": "En la agencia te bloquean dinero en la tarjeta, que recuperas si devuelves el carro bien. ¿Qué es?", "en": "At the agency they hold money on your card, which you get back if you return the car fine. What is it?" }, "options": ["el depósito", "la multa", "la propina", "la caseta"], "correct": 0, "explanation": { "en": "«Depósito» (or «garantía») = deposit." } },
     { "question": { "es": "Antes de firmar, quieres mirar rápidamente el carro. ¿Qué dices?", "en": "Before signing, you want to have a quick look at the car. What do you say?" }, "options": ["¿Puedo echarle un vistazo al carro?", "¿Puedo echar el carro?", "¿Puedo dar una mano al carro?", "¿Puedo mirar ojo el carro?"], "correct": 0, "explanation": { "en": "«Echar un vistazo» = to take a quick look." } }
   ],
+  "sentences": [
+    { "sentence": "¿Alguna vez has manejado en la Ciudad de México?", "kind": "question", "bold": ["Alguna vez has manejado"], "en": "Have you ever driven in Mexico City?" },
+    { "sentence": "¿El carro es automático o estándar?", "kind": "question", "bold": ["automático", "estándar"], "en": "Is the car automatic or manual?" },
+    { "sentence": "¿Está incluido el seguro, y cuánto es el depósito?", "kind": "question", "bold": ["seguro", "depósito"], "en": "Is insurance included, and how much is the deposit?" },
+    { "sentence": "¿Dónde hay una gasolinera antes de la carretera?", "kind": "question", "bold": ["gasolinera", "carretera"], "en": "Where is there a gas station before the highway?" },
+    { "sentence": "¿Puedo echarle un vistazo al carro antes de firmar?", "kind": "question", "bold": ["echarle un vistazo"], "en": "Can I take a look at the car before signing?" },
+    { "sentence": "Busco un carro que sea automático y económico.", "kind": "statement", "bold": ["Busco un carro que sea", "automático"], "en": "I'm looking for a car that's automatic and cheap." },
+    { "sentence": "Nunca he tenido un accidente, y hace años que manejo.", "kind": "statement", "bold": ["Nunca he tenido", "hace años que", "manejo"], "en": "I've never had an accident, and I've been driving for years." },
+    { "sentence": "Todavía no he pagado la caseta, y no tengo cambio.", "kind": "statement", "bold": ["Todavía no he pagado", "caseta"], "en": "I haven't paid the toll yet, and I don't have change." },
+    { "sentence": "Hay que devolverlo con el tanque lleno de gasolina.", "kind": "statement", "bold": ["tanque", "gasolina"], "en": "You have to return it with the tank full of gas." },
+    { "sentence": "¡Cuidado con los topes! Y no estaciones aquí.", "kind": "statement", "bold": ["topes", "estaciones"], "en": "Watch out for the speed bumps! And don't park here." }
+  ],
   "story": {
     "title": "Rumbo a Valle de Bravo",
     "text": "Emily quiere ir a Valle de Bravo el fin de semana con Valeria. Van a una agencia de renta. «Quisiera rentar un carro por dos días», dice Emily. «¿Busca algún modelo en especial?» «Busco un carro que sea automático y económico.» El agente pregunta: «¿Alguna vez ha manejado en México?». «No, nunca, pero hace años que manejo en Chicago.» El agente le explica el seguro y el depósito. Antes de firmar, Emily le echa un vistazo al carro y toma fotos de un rayón. En la carretera pagan dos casetas y pasan muchos topes. «¡Cuidado!», grita Valeria cada vez. Al regresar, llenan el tanque en la gasolinera. «Lleno, por favor», pide Emily, orgullosa.",

@@ -59,6 +59,18 @@
     { "question": { "es": "«¿El departamento ya está rentado?» Por desgracia, sí. ¿Qué respondes con cortesía?", "en": "«Is the apartment already rented?» Unfortunately, yes. What do you answer politely?" }, "options": ["Me temo que sí.", "Me temo que no.", "Temo de sí.", "Me da igual que sí."], "correct": 0, "explanation": { "en": "«Me temo que sí» = I'm afraid so." } },
     { "question": { "es": "Completa: «Eres más exigente ___ yo.»", "en": "Complete: «Eres más exigente ___ yo.»" }, "options": ["que", "de", "como", "a"], "correct": 0, "explanation": { "en": "Más + adjective + que." } }
   ],
+  "sentences": [
+    { "sentence": "¿Cuánto es la renta y el depósito en garantía?", "kind": "question", "bold": ["renta", "depósito en garantía"], "en": "How much is the rent and the security deposit?" },
+    { "sentence": "¿El departamento está amueblado y tiene estacionamiento?", "kind": "question", "bold": ["amueblado", "estacionamiento"], "en": "Is the apartment furnished and does it have parking?" },
+    { "sentence": "¿Cuándo está disponible? ¿Puedo verlo el sábado?", "kind": "question", "bold": ["disponible"], "en": "When is it available? Can I see it on Saturday?" },
+    { "sentence": "Te mudaste al centro, ¿verdad?", "kind": "question", "bold": ["mudaste", "¿verdad?"], "en": "You moved downtown, right?" },
+    { "sentence": "¿El dueño pide un aval para firmar el contrato?", "kind": "question", "bold": ["dueño", "aval", "contrato"], "en": "Does the owner ask for a guarantor to sign the contract?" },
+    { "sentence": "Busco un departamento que tenga balcón y mucha luz.", "kind": "statement", "bold": ["Busco un departamento que tenga", "balcón"], "en": "I'm looking for an apartment that has a balcony and lots of light." },
+    { "sentence": "Hay uno que tiene balcón, pero es más caro.", "kind": "statement", "bold": ["Hay uno que tiene", "balcón"], "en": "There's one that has a balcony, but it's more expensive." },
+    { "sentence": "Diego busca departamento desde hace dos meses.", "kind": "statement", "bold": ["busca", "desde hace"], "en": "Diego has been looking for an apartment for two months." },
+    { "sentence": "Me temo que ya está rentado; el anuncio es viejo.", "kind": "statement", "bold": ["Me temo que", "anuncio"], "en": "I'm afraid it's already rented; the ad is old." },
+    { "sentence": "El último inquilino dejó el lugar muy luminoso y limpio.", "kind": "statement", "bold": ["inquilino", "luminoso"], "en": "The last tenant left the place very bright and clean." }
+  ],
   "story": {
     "title": "Un departamento con balcón",
     "text": "Emily quiere un departamento más grande para ella y Taco, su perro. Desde hace un mes revisa anuncios todos los días. «Busco un departamento que tenga balcón, que esté cerca del metro y que acepte mascotas», le explica a Diego. «Eres muy exigente», dice él. Un sábado ve un anuncio perfecto en la colonia Roma: dos recámaras, luminoso, amueblado y con servicios incluidos. Llama de inmediato. «¿Todavía está disponible?» «Sí. ¿Quiere verlo hoy?» El departamento es precioso, pero el dueño pide un aval. «Me temo que no tengo aval aquí», dice Emily. «Entonces pague tres meses de depósito», responde el dueño. Emily acepta. El lunes firman el contrato.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Señalas una silla que está junto a ti. ¿Qué dices?", "en": "You point at a chair right next to you. What do you say?" }, "options": ["esta silla", "aquella silla", "ese silla", "este silla"], "correct": 0, "explanation": { "en": "Near me: «este / esta». «Silla» is feminine: esta silla." } },
     { "question": { "es": "¿Dónde lavas los platos?", "en": "Where do you wash the dishes?" }, "options": ["en el fregadero", "en el lavabo", "en la regadera", "en el espejo"], "correct": 0, "explanation": { "en": "«El fregadero» is the kitchen sink; «el lavabo» is in the bathroom." } }
   ],
+  "sentences": [
+    { "sentence": "¿Dónde pongo la lámpara, al lado de la cama?", "kind": "question", "bold": ["Dónde pongo", "la lámpara", "al lado de", "la cama"], "en": "Where do I put the lamp, next to the bed?" },
+    { "sentence": "¿El gato está debajo de la mesa o encima de la silla?", "kind": "question", "bold": ["debajo de", "la mesa", "encima de", "la silla"], "en": "Is the cat under the table or on the chair?" },
+    { "sentence": "¿Esta silla es nueva o es vieja?", "kind": "question", "bold": ["Esta", "silla"], "en": "Is this chair new or is it old?" },
+    { "sentence": "¿Las llaves? ¿Las pusiste en el cajón?", "kind": "question", "bold": ["Las", "pusiste", "el cajón"], "en": "The keys? Did you put them in the drawer?" },
+    { "sentence": "¿Cómo se dice «closet» en español?", "kind": "question", "bold": ["se", "dice"], "en": "How do you say \"closet\" in Spanish?" },
+    { "sentence": "Pongo las llaves en el cajón al lado de la puerta.", "kind": "statement", "bold": ["Pongo", "el cajón", "al lado de"], "en": "I put the keys in the drawer next to the door." },
+    { "sentence": "Esta lámpara es nueva, pero esa es de mi abuela.", "kind": "statement", "bold": ["Esta", "lámpara", "esa"], "en": "This lamp is new, but that one is my grandmother's." },
+    { "sentence": "Aquel sofá es muy cómodo, pero no cabe en mi sala.", "kind": "statement", "bold": ["Aquel", "sofá"], "en": "That sofa over there is very comfortable, but it doesn't fit in my living room." },
+    { "sentence": "¿El libro? Ponlo en el estante, encima de los otros.", "kind": "statement", "bold": ["Ponlo", "el estante", "encima de"], "en": "The book? Put it on the shelf, on top of the others." },
+    { "sentence": "El refrigerador está al lado de la estufa.", "kind": "statement", "bold": ["El refrigerador", "al lado de", "la estufa"], "en": "The fridge is next to the stove." }
+  ],
   "story": {
     "title": "Muebles nuevos",
     "text": "Emily quiere cambiar su departamento. El sábado va con Diego a una tienda de muebles. «Necesito un estante para los libros y una lámpara para la sala», dice. Diego señala una lámpara amarilla: «¿Y esa?». «Esa no, prefiero aquella de allá, la blanca.» También compran un espejo grande. En casa, empiezan a mover todo. «¿Dónde pongo el estante?», pregunta Diego. «Ponlo al lado de la ventana.» El espejo va enfrente de la cama y la lámpara, encima de la mesa pequeña. De repente, Emily ve algo debajo del sofá: ¡son sus llaves perdidas! «Las busqué durante una semana», dice riendo. Al final, el departamento se ve más grande y más bonito.",

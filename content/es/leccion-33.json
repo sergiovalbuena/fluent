@@ -59,6 +59,18 @@
     { "question": { "es": "Quieres mirar las nubes durante el vuelo. ¿Qué asiento pides?", "en": "You want to look at the clouds during the flight. Which seat do you ask for?" }, "options": ["ventanilla", "pasillo", "ala", "cabina"], "correct": 0, "explanation": { "en": "«Ventanilla» = window seat." } },
     { "question": { "es": "Prefieres viajar en clase turista, no en primera. ¿Cómo lo dices?", "en": "You'd rather travel economy, not first class. How do you say it?" }, "options": ["Viajo en turista en vez de en primera.", "Viajo en primera en vez de en turista.", "Viajo en vez turista.", "Viajo turista y no vez."], "correct": 0, "explanation": { "en": "«En vez de» = instead of." } }
   ],
+  "sentences": [
+    { "sentence": "Prefiero ventanilla; ¿me cambia de asiento, por favor?", "kind": "question", "bold": ["ventanilla", "asiento"], "en": "I prefer a window; can you change my seat, please?" },
+    { "sentence": "¿Me trae una manta y una almohada, por favor?", "kind": "question", "bold": ["manta", "almohada"], "en": "Can you bring me a blanket and a pillow, please?" },
+    { "sentence": "¿Cuándo aterrizaremos en Cancún?", "kind": "question", "bold": ["aterrizaremos"], "en": "When will we land in Cancún?" },
+    { "sentence": "¿Dónde está el chaleco salvavidas, debajo del asiento?", "kind": "question", "bold": ["chaleco salvavidas", "asiento"], "en": "Where is the life jacket, under the seat?" },
+    { "sentence": "¿Tendremos turbulencia durante el vuelo?", "kind": "question", "bold": ["Tendremos", "turbulencia"], "en": "Will we have turbulence during the flight?" },
+    { "sentence": "Aterrizaremos en veinte minutos; abróchense el cinturón de seguridad.", "kind": "statement", "bold": ["Aterrizaremos", "abróchense", "cinturón de seguridad"], "en": "We'll land in twenty minutes; fasten your seat belts." },
+    { "sentence": "Cuando llegue al hotel, te llamaré.", "kind": "statement", "bold": ["Cuando", "llegue", "llamaré"], "en": "When I get to the hotel, I'll call you." },
+    { "sentence": "Si el vuelo se retrasa, llamaremos al hotel.", "kind": "statement", "bold": ["Si", "se retrasa", "llamaremos"], "en": "If the flight is delayed, we'll call the hotel." },
+    { "sentence": "Viajo en clase turista en vez de en primera para ahorrar.", "kind": "statement", "bold": ["clase turista", "en vez de"], "en": "I travel economy class instead of first to save money." },
+    { "sentence": "El sobrecargo guardó mi maleta en el compartimento.", "kind": "statement", "bold": ["sobrecargo", "compartimento"], "en": "The flight attendant put my suitcase in the compartment." }
+  ],
   "story": {
     "title": "Turbulencia",
     "text": "En el avión de Bogotá a Cartagena, Emily tiene asiento de ventanilla y Nicolás de pasillo. El piloto anuncia: «Bienvenidos a bordo. Despegaremos en cinco minutos. Por favor, abróchense el cinturón». Media hora después, el avión empieza a moverse mucho. «Estamos pasando por una zona de turbulencia. Permanezcan sentados», dice el sobrecargo. Emily se pone pálida. «Me estoy mareando», dice. Nicolás le pide una bolsa y un vaso de agua al sobrecargo. Poco a poco la turbulencia termina. «Cuando lleguemos, lo primero que quiero es ver el mar», dice Emily. «Aterrizaremos en veinte minutos», anuncia el piloto. Por la ventanilla ya se ven las murallas de Cartagena.",

@@ -59,6 +59,18 @@
     { "question": { "es": "Llegas tarde: los carros no avanzan nada en la avenida. ¿Qué dices?", "en": "You're late: the cars aren't moving at all on the avenue. What do you say?" }, "options": ["Hay mucho tráfico.", "Hay mucho semáforo.", "Hay mucha calle.", "Es mucho tráfico yo."], "correct": 0, "explanation": { "en": "«Hay mucho tráfico» = there's a lot of traffic." } },
     { "question": { "es": "El museo está a diez minutos caminando. ¿Cómo lo dices?", "en": "The museum is ten minutes away walking. How do you say it?" }, "options": ["Está a diez minutos a pie.", "Está en diez minutos de pie.", "Es diez minutos a pie.", "Está a pie diez minutos de."], "correct": 0, "explanation": { "en": "«Estar a» + distance / time; «a pie» = on foot." } }
   ],
+  "sentences": [
+    { "sentence": "Disculpe, ¿cómo llego al museo desde la plaza?", "kind": "question", "bold": ["museo", "plaza"], "en": "Excuse me, how do I get to the museum from the square?" },
+    { "sentence": "¿La biblioteca está a dos cuadras o más?", "kind": "question", "bold": ["biblioteca", "está a", "cuadras"], "en": "Is the library two blocks away or more?" },
+    { "sentence": "¿Vas a pie o en metro al centro?", "kind": "question", "bold": ["a pie", "en metro", "centro"], "en": "Do you go to downtown on foot or by subway?" },
+    { "sentence": "¿Cuándo fue construida la iglesia de la esquina?", "kind": "question", "bold": ["fue construida", "iglesia", "esquina"], "en": "When was the church on the corner built?" },
+    { "sentence": "¿Hay un banco cerca de aquí, en esta avenida?", "kind": "question", "bold": ["banco", "avenida"], "en": "Is there a bank near here, on this avenue?" },
+    { "sentence": "Siga derecho dos cuadras y gire a la izquierda.", "kind": "statement", "bold": ["Siga", "cuadras", "gire"], "en": "Go straight two blocks and turn left." },
+    { "sentence": "Cruce la calle en el semáforo y la librería está ahí.", "kind": "statement", "bold": ["Cruce", "calle", "semáforo", "librería"], "en": "Cross the street at the traffic light and the bookstore is there." },
+    { "sentence": "El parque está a diez minutos a pie de mi casa.", "kind": "statement", "bold": ["parque", "está a", "a pie"], "en": "The park is ten minutes on foot from my house." },
+    { "sentence": "La catedral fue construida en 1573, en el centro.", "kind": "statement", "bold": ["fue construida", "centro"], "en": "The cathedral was built in 1573, downtown." },
+    { "sentence": "A pesar del tráfico, me encanta vivir en este barrio.", "kind": "statement", "bold": ["A pesar del", "tráfico", "barrio"], "en": "Despite the traffic, I love living in this neighborhood." }
+  ],
   "story": {
     "title": "Perdida en el centro",
     "text": "El sábado, Emily quiere visitar el Museo de Arte en el centro de la ciudad. Sale del metro, pero no sabe dónde está. Le pregunta a un señor: «Disculpe, ¿cómo llego al museo?». «Siga derecho por esta avenida tres cuadras. En el semáforo, gire a la izquierda. El museo está en la esquina, enfrente de una plaza.» «¿Está lejos?» «No, está a diez minutos a pie.» Emily camina, pero hay mucha gente y mucho ruido. En el semáforo gira a la derecha, por error, y llega a una iglesia muy antigua. Una señora le explica que fue construida en el siglo dieciséis. Emily entra, toma fotos y luego encuentra el museo. «A pesar de todo, ¡qué buen día!», piensa.",

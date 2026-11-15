@@ -59,6 +59,18 @@
     { "question": { "es": "¿Qué frase es correcta en español?", "en": "Which sentence is correct in Spanish?" }, "options": ["Me lavo las manos.", "Lavo mis manos de mí.", "Me lavo mis manos mías.", "Lavo las manos yo me."], "correct": 0, "explanation": { "en": "Reflexive pronoun + article: me lavo las manos." } },
     { "question": { "es": "Estás en la calle en invierno, sin abrigo. ¿Qué dices?", "en": "You're outside in winter without a coat. What do you say?" }, "options": ["Tengo mucho frío.", "Soy muy frío.", "Estoy mucho frío.", "Hace mucho frío yo."], "correct": 0, "explanation": { "en": "«Tener frío» = to be cold (a person). «Hace frío» describes the weather." } }
   ],
+  "sentences": [
+    { "sentence": "¿Te duele la cabeza o el estómago?", "kind": "question", "bold": ["duele", "la cabeza", "el estómago"], "en": "Does your head hurt or your stomach?" },
+    { "sentence": "¿Tienes frío? ¿Quieres mi chamarra?", "kind": "question", "bold": ["Tienes frío"], "en": "Are you cold? Do you want my jacket?" },
+    { "sentence": "¿Por qué te duelen las piernas, Diego?", "kind": "question", "bold": ["te duelen", "las piernas"], "en": "Why do your legs hurt, Diego?" },
+    { "sentence": "¿Te sientes mal o solo estás cansada?", "kind": "question", "bold": ["Te sientes mal"], "en": "Do you feel sick or are you just tired?" },
+    { "sentence": "¿Te lavas las manos antes de comer?", "kind": "question", "bold": ["Te lavas", "las manos"], "en": "Do you wash your hands before eating?" },
+    { "sentence": "Me duele la espalda y no puedo cargar las bolsas.", "kind": "statement", "bold": ["Me duele", "la espalda"], "en": "My back hurts and I can't carry the bags." },
+    { "sentence": "Me duelen los pies después de caminar todo el día.", "kind": "statement", "bold": ["Me duelen", "los pies"], "en": "My feet hurt after walking all day." },
+    { "sentence": "Carmen está enferma y se siente mal desde ayer.", "kind": "statement", "bold": ["está enferma", "se siente mal"], "en": "Carmen is sick and has felt bad since yesterday." },
+    { "sentence": "Tengo mucha sed y también tengo hambre.", "kind": "statement", "bold": ["Tengo", "sed", "tengo hambre"], "en": "I'm very thirsty and I'm also hungry." },
+    { "sentence": "Abre la boca y saca la lengua, por favor.", "kind": "statement", "bold": ["la boca"], "en": "Open your mouth and stick out your tongue, please." }
+  ],
   "story": {
     "title": "Un lunes difícil",
     "text": "El lunes, Emily se despierta con dolor de cabeza. También le duele la garganta y tiene frío. «Creo que estoy resfriada», piensa. Llama a Valeria, su jefa: «Buenos días, Valeria. Me siento mal. Hoy no puedo ir a la oficina.» «No te preocupes, Emily. Descansa y toma mucha agua.» Por la tarde, la señora Carmen toca la puerta con una sopa de pollo. «Mi mamá siempre hacía esta sopa cuando estábamos enfermos», dice. Emily come la sopa y se acuesta temprano. Al día siguiente, ya no le duele la cabeza, pero tiene la nariz roja. «¡Salud!», dice Diego cuando ella estornuda en la oficina.",
