@@ -22,12 +22,28 @@ const ACCENTS: Record<string, string> = {
 
 export const isTtsLanguage = (lang: string) => lang in ACCENTS
 
+const LANGUAGE_NAMES: Record<string, string> = {
+  fr: 'French', es: 'Spanish', pt: 'Portuguese', de: 'German', it: 'Italian', ja: 'Japanese', en: 'English', zh: 'Mandarin Chinese',
+}
+
+// Words spelled the same in English: on their own, the model tends to read them the
+// English way ("taxi", "restaurant"), so the instructions name a few as examples
+const COGNATES: Record<string, string> = {
+  fr: '"restaurant", "taxi", "orange", "important", "table", "animal", "concert"',
+  es: '"hotel", "chocolate", "taxi", "animal", "normal", "doctor", "hospital"',
+  pt: '"hotel", "animal", "taxi", "normal", "hospital"',
+  de: '"Hotel", "Taxi", "Computer", "Hand", "Name", "Problem"',
+  it: '"hotel", "taxi", "computer", "radio", "pizza"',
+}
+
 export function ttsInstructions(lang: string): string {
+  const name = LANGUAGE_NAMES[lang]
   return [
     `Voice: ${ACCENTS[lang]}.`,
+    lang !== 'en' && `Language: the text is ${name}. Pronounce every word with ${name} phonetics and stress, including words that also exist in English${COGNATES[lang] ? ` (for example ${COGNATES[lang]})` : ''}. Never use an English pronunciation.`,
     'Audience: someone learning the language — pronounce every word clearly and naturally, at a calm, slightly slower than conversational pace.',
     'Read exactly the given text, with no additions or commentary. Single words get a natural, neutral intonation.',
-  ].join(' ')
+  ].filter(Boolean).join(' ')
 }
 
 export function ttsCachePath(lang: string, text: string): string {

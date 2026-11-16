@@ -89,10 +89,31 @@ export function ttsUrl(text: string, langCode: string): string {
   return `/api/tts?lang=${encodeURIComponent(langCode)}&text=${encodeURIComponent(text.replace(/\s+/g, ' ').trim())}`
 }
 
+/**
+ * A system voice for the language: the exact locale first (fr-FR), then any of the
+ * language (fr-CA). Without one, setting only `lang` lets some browsers read French
+ * with their default English voice, which sounds like an English accent.
+ */
+function browserVoice(locale: string): SpeechSynthesisVoice | null {
+  const voices = window.speechSynthesis.getVoices()
+  const lang = locale.split('-')[0].toLowerCase()
+  const norm = (v: SpeechSynthesisVoice) => v.lang.replace('_', '-').toLowerCase()
+  const ofLang = voices.filter(v => norm(v).split('-')[0] === lang)
+  return ofLang.find(v => norm(v) === locale.toLowerCase() && v.localService)
+    ?? ofLang.find(v => norm(v) === locale.toLowerCase())
+    ?? ofLang[0]
+    ?? null
+}
+
 function browserSpeak(text: string, langCode: string, options: SpeakOptions): SpeechHandle {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) { options.onEnd?.(); return NOOP_HANDLE }
+  const locale = getLanguage(langCode).speechLocale
+  const voice = browserVoice(locale)
+  // No voice for this language on the device: stay silent rather than read it with an English accent
+  if (!voice && window.speechSynthesis.getVoices().length > 0) { options.onEnd?.(); return NOOP_HANDLE }
   const u = new SpeechSynthesisUtterance(text)
-  u.lang = getLanguage(langCode).speechLocale
+  u.lang = locale
+  if (voice) u.voice = voice
   u.rate = 0.85 * (options.rate ?? 1)
   u.onstart = () => options.onStart?.()
   u.onend = () => options.onEnd?.()
