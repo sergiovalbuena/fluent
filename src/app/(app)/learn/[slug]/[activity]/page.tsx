@@ -1660,8 +1660,10 @@ interface ActivityHeroTab {
 /** The activity's main action, shown in the hero (start / continue / review) */
 interface ActivityHeroCta {
   icon: LucideIcon
-  label: string
+  label: React.ReactNode
   sublabel: string
+  /** Card colour: the writing practice is orange, pronunciation violet */
+  tone?: 'primary' | 'violet'
   /** 0–1; omitted when the activity has no saved progress */
   progress?: number
   onClick: () => void
@@ -1715,9 +1717,11 @@ function ActivityHero({
   title?: string
   /** Makes the title a link (the lesson name links to the lesson page) */
   titleHref?: string
-  cta?: ActivityHeroCta
+  /** One card, or several side by side as equals (writing and pronunciation) */
+  cta?: ActivityHeroCta | ActivityHeroCta[]
   activities: ActivityHeroTab[]
 }) {
+  const ctas = cta ? (Array.isArray(cta) ? cta : [cta]) : []
   return (
     <Block className="col-span-12 relative overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] p-0">
       {/* Top: all 4 activities as tabs — the active one gets its colour bar and filled icon */}
@@ -1791,36 +1795,47 @@ function ActivityHero({
             </h1>
           </div>
 
-          {cta && (
-            <motion.div
-              whileHover={{ rotate: '1.5deg', scale: 1.02 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 18 }}
-              className="relative w-full sm:w-[340px] overflow-hidden rounded-2xl bg-primary p-4 shadow-[0_4px_0_rgba(0,0,0,0.08)]"
-            >
-              <cta.icon size={72} aria-hidden className="absolute -right-3 -bottom-4 text-white/10 rotate-12" />
-              <button type="button" onClick={cta.onClick} className="relative flex w-full items-center gap-3 text-left">
-                <span className="size-11 shrink-0 rounded-xl bg-white/20 flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
-                  <cta.icon size={20} className="text-white fill-white" />
-                </span>
-                <span className="flex-1 min-w-0">
-                  <span className="block text-base font-bold text-white leading-tight">{cta.label}</span>
-                  <span className="block text-xs text-white/75 mt-0.5">{cta.sublabel}</span>
-                </span>
-                <span className="size-9 shrink-0 rounded-full bg-white text-primary flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
-                  <ArrowRight size={17} strokeWidth={2.6} />
-                </span>
-              </button>
-              {cta.progress != null && (
-                <div className="relative mt-3 h-1.5 rounded-full bg-black/15 overflow-hidden">
-                  <motion.div
-                    className="h-full rounded-full bg-white"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${cta.progress * 100}%` }}
-                    transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
-                  />
-                </div>
-              )}
-            </motion.div>
+          {ctas.length > 0 && (
+            <div className={cn('grid gap-3 w-full', ctas.length > 1 ? 'grid-cols-2 sm:w-[480px]' : 'sm:w-[340px]')}>
+              {ctas.map((c, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ rotate: '1.5deg', scale: 1.02 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 18 }}
+                  className={cn(
+                    'relative overflow-hidden rounded-2xl p-4 shadow-[0_4px_0_rgba(0,0,0,0.08)]',
+                    c.tone === 'violet' ? 'bg-violet-500' : 'bg-primary',
+                  )}
+                >
+                  <c.icon size={72} aria-hidden className="absolute -right-3 -bottom-4 text-white/10 rotate-12" />
+                  <button type="button" onClick={c.onClick} className="relative flex w-full items-center gap-3 text-left">
+                    <span className="size-11 shrink-0 rounded-xl bg-white/20 flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
+                      <c.icon size={20} className="text-white" />
+                    </span>
+                    <span className="flex-1 min-w-0">
+                      <span className="block text-base font-bold text-white leading-tight truncate">{c.label}</span>
+                      <span className="block text-xs text-white/75 mt-0.5 tabular-nums">{c.sublabel}</span>
+                    </span>
+                    <span className={cn(
+                      'hidden sm:flex size-9 shrink-0 rounded-full bg-white items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]',
+                      c.tone === 'violet' ? 'text-violet-500' : 'text-primary',
+                    )}>
+                      <ArrowRight size={17} strokeWidth={2.6} />
+                    </span>
+                  </button>
+                  {c.progress != null && (
+                    <div className="relative mt-3 h-1.5 rounded-full bg-black/15 overflow-hidden">
+                      <motion.div
+                        className="h-full rounded-full bg-white"
+                        initial={{ width: 0 }}
+                        animate={{ width: `${c.progress * 100}%` }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
+                      />
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
           )}
         </div>
       </div>
@@ -1889,38 +1904,6 @@ function calcGems(score: number, isRepeat: boolean): number {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 type SpeakItem = { text: string; translation: string }
-
-/** Bento card for pronunciation practice: progress and the button to start or continue */
-function SpeakCard({ done, total, onStart }: { done: number; total: number; onStart: () => void }) {
-  const t = useTranslations('lesson')
-  const label = done === 0 ? t('speak_start') : done < total ? t('speak_resume') : t('speak_review')
-  return (
-    <Block whileTap={{}} className="col-span-12 md:col-span-6 p-5 flex flex-col gap-3 shadow-[0_2px_8px_rgba(0,0,0,0.05)]">
-      <div className="flex items-center gap-3">
-        <span className="size-10 shrink-0 rounded-xl bg-violet-500/10 flex items-center justify-center">
-          <Mic size={18} className="text-violet-500" />
-        </span>
-        <div className="min-w-0 flex-1">
-          <p className="text-sm font-bold text-slate-900 dark:text-white">{t('speak_card_title')}</p>
-          <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">{t('speak_card_desc')}</p>
-        </div>
-        {done >= total && total > 0 && <Star size={16} className="shrink-0 fill-yellow-500 text-yellow-500" />}
-      </div>
-      <div className="flex items-center gap-3">
-        <div className="flex-1 h-1.5 rounded-full bg-violet-500/10 overflow-hidden">
-          <div className="h-full rounded-full bg-violet-500 transition-all" style={{ width: `${total > 0 ? (done / total) * 100 : 0}%` }} />
-        </div>
-        <span className="text-[11px] font-semibold text-slate-400 tabular-nums">{t('speak_progress', { done, total })}</span>
-      </div>
-      <button
-        onClick={onStart}
-        className="flex items-center justify-center gap-2 rounded-xl bg-violet-500 hover:bg-violet-600 text-white text-sm font-bold py-2.5 active:scale-[0.98] transition-all"
-      >
-        <Mic size={15} /> {label}
-      </button>
-    </Block>
-  )
-}
 
 export default function LessonPage() {
   const tLessonTop = useTranslations('lesson')
@@ -1994,15 +1977,27 @@ export default function LessonPage() {
   const [moduleOrder,         setModuleOrder]         = useState<number | null>(null)
   const titleHints = useTitleHintSettings()
 
-  /** Hero action for activities tracked by mastery: start → continue → review */
-  function masteryCta(done: number, total: number, countLabel: string, start: (req: PracticeRequest) => void): ActivityHeroCta {
+  /** Hero card for the typing practice (mastery): "Writing" in the course language, progress as numbers */
+  function masteryCta(done: number, total: number, start: (req: PracticeRequest) => void): ActivityHeroCta {
     const inProgress = done > 0 && done < total
     return {
-      icon: Zap,
-      label: done === 0 ? tLesson('practice_start') : inProgress ? tLesson('practice_resume') : tLesson('practice_review'),
-      sublabel: done > 0 ? tLesson('practice_progress', { done, total }) : countLabel,
+      icon: PenLine,
+      label: <SectionTitle k="writing" />,
+      sublabel: `${done} / ${total}`,
       progress: total > 0 ? done / total : 0,
       onClick: () => start({ mode: inProgress ? 'resume' : 'all', key: Date.now() }),
+    }
+  }
+
+  /** Twin hero card for pronunciation, shown next to Writing when it's available */
+  function speakCta(): ActivityHeroCta {
+    return {
+      icon: Mic,
+      tone: 'violet',
+      label: <SectionTitle k="pronunciation" />,
+      sublabel: `${spokenCount} / ${speakItems.length}`,
+      progress: speakItems.length > 0 ? spokenCount / speakItems.length : 0,
+      onClick: startSpeaking,
     }
   }
 
@@ -2418,7 +2413,7 @@ export default function LessonPage() {
               title={moduleTitle}
               titleHref={`/learn/${slug}`}
               badgeColorClass="text-indigo-500 bg-indigo-500/10"
-              cta={masteryCta(masteredCount, words.length, tLesson('practice_words', { count: words.length }), setPractice)}
+              cta={speechOn ? [masteryCta(masteredCount, words.length, setPractice), speakCta()] : masteryCta(masteredCount, words.length, setPractice)}
               activities={activityTabs(slug, 'vocabulary', qaTitle)}
             />
 
@@ -2440,8 +2435,6 @@ export default function LessonPage() {
                 onSpeak={speechOn ? (e) => setSpeakItem({ text: e.word, translation: e.translation }) : undefined}
               />
             </Block>
-
-            {speechOn && <SpeakCard done={spokenCount} total={speakItems.length} onStart={startSpeaking} />}
 
             {/* ── ALL WORDS — two versions to compare: dialog (A) vs. own page (B) ── */}
             <AllItemsCard
@@ -2501,7 +2494,7 @@ export default function LessonPage() {
                 title={moduleTitle}
                 titleHref={`/learn/${slug}`}
                 badgeColorClass="text-teal-600 dark:text-teal-400 bg-teal-500/10"
-                cta={masteryCta(masteredPhraseCount, phrases.length, tLesson('practice_phrases', { count: phrases.length }), setPhrasePractice)}
+                cta={speechOn ? [masteryCta(masteredPhraseCount, phrases.length, setPhrasePractice), speakCta()] : masteryCta(masteredPhraseCount, phrases.length, setPhrasePractice)}
                 activities={activityTabs(slug, 'phrases', qaTitle)}
               />
 
@@ -2520,8 +2513,6 @@ export default function LessonPage() {
                   onSpeak={speechOn ? (p) => setSpeakItem({ text: p.phrase, translation: p.translation }) : undefined}
                 />
               </Block>
-
-              {speechOn && <SpeakCard done={spokenCount} total={speakItems.length} onStart={startSpeaking} />}
 
               {/* Practice */}
               <Block
@@ -2681,7 +2672,7 @@ export default function LessonPage() {
               title={moduleTitle}
               titleHref={`/learn/${slug}`}
               badgeColorClass="text-violet-500 bg-violet-500/10"
-              cta={masteryCta(masteredQACount, sentences.length, tLesson('practice_sentences', { count: sentences.length }), setQaPractice)}
+              cta={masteryCta(masteredQACount, sentences.length, setQaPractice)}
               activities={activityTabs(slug, 'qa', qaTitle)}
             />
 
@@ -2739,7 +2730,7 @@ export default function LessonPage() {
                 title={moduleTitle}
                 titleHref={`/learn/${slug}`}
                 badgeColorClass="text-violet-500 bg-violet-500/10"
-                cta={masteryCta(masteredQACount, questions.length, tLesson('practice_questions', { count: questions.length }), setQaPractice)}
+                cta={masteryCta(masteredQACount, questions.length, setQaPractice)}
                 activities={activityTabs(slug, 'qa', qaTitle)}
               />
 

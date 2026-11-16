@@ -207,7 +207,8 @@
     "speak_resume": "続けて話す",
     "speak_review": "もう一度練習する",
     "speak_done": "{total}個中{done}個クリア",
-    "speak_preparing": "マイクを準備しています…"
+    "speak_preparing": "マイクを準備しています…",
+    "speak_space_hint": "押している間話す"
   },
   "gems": {
     "title": "ジェム",

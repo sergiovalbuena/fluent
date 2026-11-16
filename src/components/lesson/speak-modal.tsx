@@ -38,6 +38,8 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
   const recordingUrlRef = useRef<string | null>(null)
   const passedRef = useRef(false)
   const micHeldRef = useRef(false)
+  /** This recording was started with the space bar (push to talk) */
+  const spaceWasUsedRef = useRef(false)
 
   // Release the mic and the recording when the modal closes. The mic itself stays
   // open a few seconds, so the next item of a practice run starts instantly.
@@ -48,6 +50,7 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
   }, [])
 
   async function start() {
+    spaceWasUsedRef.current = spaceHeldRef.current
     // The native audio must not end up in the recording
     stopSpeaking()
     try {
@@ -58,6 +61,8 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
       }
       recorderRef.current = startRecording(SPEECH_MAX_SECONDS, () => void stop())
       setPhase({ kind: 'recording' })
+      // Space released while the mic was getting ready: what was said is in the pre-roll
+      if (spaceWasUsedRef.current && !spaceHeldRef.current) void stop()
     } catch {
       setPhase({ kind: 'error', message: t('speak_mic_denied') })
     }
@@ -94,6 +99,36 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
       setPhase({ kind: 'error', message: t('speak_error') })
     }
   }
+
+  // Push to talk (desktop): hold the space bar to record, release to send. The
+  // handlers read the latest start/stop/phase through a ref (updated after render).
+  const spaceHeldRef = useRef(false)
+  const doneInRun = phase.kind === 'result' && phase.result.score >= SPEECH_PASS_SCORE && !!session
+  const latest = useRef({ start, stop, phase, doneInRun })
+  useEffect(() => { latest.current = { start, stop, phase, doneInRun } })
+  useEffect(() => {
+    const isSpace = (e: KeyboardEvent) => e.code === 'Space' || e.key === ' '
+    function down(e: KeyboardEvent) {
+      if (!isSpace(e)) return
+      e.preventDefault()   // no page scroll, no "click" on the focused button
+      if (e.repeat || spaceHeldRef.current) return
+      const { phase: p, start: begin, doneInRun: finished } = latest.current
+      // Busy, or passed in a practice run (the "Next" button is showing)
+      if (p.kind === 'recording' || p.kind === 'checking' || p.kind === 'preparing' || finished) return
+      spaceHeldRef.current = true
+      void begin()
+    }
+    function up(e: KeyboardEvent) {
+      if (!isSpace(e)) return
+      e.preventDefault()
+      if (!spaceHeldRef.current) return
+      spaceHeldRef.current = false
+      if (latest.current.phase.kind === 'recording') void latest.current.stop()
+    }
+    window.addEventListener('keydown', down)
+    window.addEventListener('keyup', up)
+    return () => { window.removeEventListener('keydown', down); window.removeEventListener('keyup', up) }
+  }, [])
 
   function playMine() {
     if (recordingUrlRef.current) void new Audio(recordingUrlRef.current).play()
@@ -213,6 +248,13 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
             : result || phase.kind === 'error' ? t('speak_again')
             : t('speak_tap')}
         </p>
+
+        {phase.kind !== 'recording' && phase.kind !== 'checking' && phase.kind !== 'preparing' && !(passed && session) && (
+          <p className="hidden md:flex items-center gap-1.5 text-white/30 text-[11px] -mt-3">
+            <kbd className="px-1.5 py-0.5 rounded border border-white/15 bg-white/5 font-sans text-[10px] text-white/50">space</kbd>
+            {t('speak_space_hint')}
+          </p>
+        )}
 
         {result && (
           <button onClick={playMine} className="flex items-center gap-1.5 text-xs font-bold text-white/50 hover:text-white/80 transition-colors">

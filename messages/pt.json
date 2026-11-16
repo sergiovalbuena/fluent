@@ -207,7 +207,8 @@
     "speak_resume": "Continuar falando",
     "speak_review": "Praticar de novo",
     "speak_done": "{done} de {total} ditas bem",
-    "speak_preparing": "Preparando o microfone…"
+    "speak_preparing": "Preparando o microfone…",
+    "speak_space_hint": "mantenha pressionada para falar"
   },
   "gems": {
     "title": "Gemas",

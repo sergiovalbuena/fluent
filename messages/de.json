@@ -207,7 +207,8 @@
     "speak_resume": "Weiter sprechen",
     "speak_review": "Nochmal üben",
     "speak_done": "{done} von {total} gut gesagt",
-    "speak_preparing": "Mikrofon wird vorbereitet…"
+    "speak_preparing": "Mikrofon wird vorbereitet…",
+    "speak_space_hint": "gedrückt halten zum Sprechen"
   },
   "gems": {
     "title": "Edelsteine",

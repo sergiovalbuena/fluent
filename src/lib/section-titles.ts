@@ -28,6 +28,8 @@ const TITLES = {
   key_words:      { en: 'Key words', es: 'Palabras clave', fr: 'Mots clés', de: 'Schlüsselwörter', it: 'Parole chiave', pt: 'Palavras-chave', ja: 'キーワード' },
   write_sentence: { en: 'Write your own sentence', es: 'Escribe tu propia frase', fr: 'Écris ta propre phrase', de: 'Schreib deinen eigenen Satz', it: 'Scrivi la tua frase', pt: 'Escreva sua própria frase', ja: '自分で文を書こう' },
   type_x3:        { en: 'Type × 3', es: 'Escribe × 3', fr: 'Écris × 3', de: 'Tippe × 3', it: 'Scrivi × 3', pt: 'Escreva × 3', ja: '3回入力' },
+  writing:        { en: 'Writing', es: 'Escritura', fr: 'Écriture', de: 'Schreiben', it: 'Scrittura', pt: 'Escrita', ja: '書く' },
+  pronunciation:  { en: 'Pronunciation', es: 'Pronunciación', fr: 'Prononciation', de: 'Aussprache', it: 'Pronuncia', pt: 'Pronúncia', ja: '発音' },
   finish_lesson:  { en: 'Finish lesson', es: 'Terminar la lección', fr: 'Terminer la leçon', de: 'Lektion beenden', it: 'Termina la lezione', pt: 'Concluir a lição', ja: 'レッスンを終える' },
 } as const
 
