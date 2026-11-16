@@ -311,12 +311,16 @@ function Level({ mod, number, x, row, labelSide, world, unlock }: {
             {mod.lessonsCompleted > 0 ? t('continue') : t('start')}
             <span className="absolute left-1/2 -bottom-[7px] -translate-x-1/2 size-3 rotate-45 bg-white dark:bg-[#2a3146] border-r-2 border-b-2 border-primary/30" />
           </motion.span>
-          <motion.span
-            className="absolute -inset-3 rounded-full bg-primary/25"
-            // Each loop starts invisible (fades in, grows, fades out to 0), so the restart doesn't jump
-            animate={{ scale: [0.9, 1.02, 1.3], opacity: [0, 0.6, 0] }}
-            transition={{ duration: 2.2, times: [0, 0.25, 1], repeat: Infinity, ease: 'easeOut', repeatDelay: 0.2 }}
-          />
+          {/* Two waves, half a cycle apart. Each loop starts invisible (fades in, grows,
+              fades out to 0), so the restart doesn't jump */}
+          {[0, 1].map(i => (
+            <motion.span
+              key={i}
+              className="absolute -inset-3 rounded-full bg-primary/25"
+              animate={{ scale: [0.9, 1.02, 1.35], opacity: [0, 0.6, 0] }}
+              transition={{ duration: 2.4, times: [0, 0.25, 1], repeat: Infinity, ease: 'easeOut', delay: i * 1.2 }}
+            />
+          ))}
           <span className="absolute -inset-[9px]">
             <ProgressRing value={mod.progress} size={size + 18} stroke={5} trackClassName="stroke-primary/20" />
           </span>
@@ -635,7 +639,9 @@ export function LearnContent({ modules, languageName, languageFlag, gemBalance =
         <div className="mx-auto max-w-6xl grid grid-cols-[minmax(0,1fr)] gap-5 md:gap-8 md:grid-cols-[320px_minmax(0,1fr)] lg:grid-cols-[360px_minmax(0,1fr)]">
 
           {/* ── Side panel: overview, up next, units ──────────────────────── */}
-          <aside className="min-w-0 md:sticky md:top-20 md:self-start space-y-4">
+          {/* Sticky next to the map, so it needs its own scroll: taller than the screen
+              (many units), the bottom was out of reach. Padding keeps the card shadows. */}
+          <aside className="min-w-0 md:sticky md:top-20 md:self-start space-y-4 md:max-h-[calc(100dvh-6rem)] md:overflow-y-auto md:overscroll-contain md:-mx-2 md:px-2 md:pb-6 [scrollbar-width:thin]">
 
             {/* Course overview */}
             <motion.div

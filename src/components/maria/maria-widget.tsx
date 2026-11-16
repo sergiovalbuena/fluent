@@ -176,13 +176,17 @@ export function MariaWidget() {
             className="group fixed z-40 bottom-24 right-4 md:bottom-6 md:right-6 size-14 rounded-full text-white flex items-center justify-center shadow-[0_8px_24px_-6px_rgba(219,39,119,0.65)]"
             style={{ background: MARIA_GRADIENT }}
           >
-            <motion.span
-              className="absolute inset-0 rounded-full"
-              style={{ background: MARIA_GRADIENT }}
-              // Each loop starts invisible (fades in, grows, fades out to 0), so the restart doesn't jump
-              animate={{ scale: [1, 1.12, 1.45], opacity: [0, 0.4, 0] }}
-              transition={{ duration: 2.6, times: [0, 0.25, 1], repeat: Infinity, ease: 'easeOut', repeatDelay: 0.3 }}
-            />
+            {/* Two waves, half a cycle apart. Each loop starts invisible (fades in, grows,
+                fades out to 0), so the restart doesn't jump */}
+            {[0, 1].map(i => (
+              <motion.span
+                key={i}
+                className="absolute inset-0 rounded-full"
+                style={{ background: MARIA_GRADIENT }}
+                animate={{ scale: [1, 1.12, 1.5], opacity: [0, 0.4, 0] }}
+                transition={{ duration: 2.8, times: [0, 0.25, 1], repeat: Infinity, ease: 'easeOut', delay: i * 1.4 }}
+              />
+            ))}
             <Bot size={24} className="relative" />
             <span className="pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-xl bg-slate-900 px-3 py-1.5 text-xs font-semibold text-white opacity-0 transition-opacity group-hover:opacity-100 hidden md:block">
               {t('fab_label')}
