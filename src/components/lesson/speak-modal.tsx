@@ -7,10 +7,12 @@ import { useTranslations } from 'next-intl'
 import { Mic, Square, Volume2, RotateCcw, ArrowRight, X, Loader2, Play } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { SPEECH_MAX_SECONDS, SPEECH_PASS_SCORE, type SpeechError, type SpeechResult, type SpokenWord } from '@/lib/speech'
-import { startWavRecorder, type WavRecorder } from '@/lib/wav-recorder'
+import { acquireMic, releaseMic, startRecording, type WavRecorder } from '@/lib/wav-recorder'
+import { stopSpeaking } from '@/lib/languages'
 
 type Phase =
   | { kind: 'idle' }
+  | { kind: 'preparing' }
   | { kind: 'recording' }
   | { kind: 'checking' }
   | { kind: 'result'; result: Extract<SpeechResult, { status: 'ok' }> }
@@ -35,16 +37,26 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
   const recorderRef = useRef<WavRecorder | null>(null)
   const recordingUrlRef = useRef<string | null>(null)
   const passedRef = useRef(false)
+  const micHeldRef = useRef(false)
 
-  // Release the mic and the recording when the modal closes
+  // Release the mic and the recording when the modal closes. The mic itself stays
+  // open a few seconds, so the next item of a practice run starts instantly.
   useEffect(() => () => {
     recorderRef.current?.cancel()
+    if (micHeldRef.current) releaseMic()
     if (recordingUrlRef.current) URL.revokeObjectURL(recordingUrlRef.current)
   }, [])
 
   async function start() {
+    // The native audio must not end up in the recording
+    stopSpeaking()
     try {
-      recorderRef.current = await startWavRecorder(SPEECH_MAX_SECONDS, () => void stop())
+      if (!micHeldRef.current) {
+        setPhase({ kind: 'preparing' })
+        await acquireMic()
+        micHeldRef.current = true
+      }
+      recorderRef.current = startRecording(SPEECH_MAX_SECONDS, () => void stop())
       setPhase({ kind: 'recording' })
     } catch {
       setPhase({ kind: 'error', message: t('speak_mic_denied') })
@@ -172,7 +184,7 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
             <span className="absolute inset-0 rounded-full bg-rose-500/40 animate-ping" />
             <Square size={26} className="relative fill-white" />
           </button>
-        ) : phase.kind === 'checking' ? (
+        ) : phase.kind === 'checking' || phase.kind === 'preparing' ? (
           <div className="size-20 rounded-full bg-violet-500/20 flex items-center justify-center">
             <Loader2 size={28} className="text-violet-300 animate-spin" />
           </div>
@@ -195,6 +207,7 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
 
         <p className="text-white/35 text-xs text-center -mt-2">
           {phase.kind === 'recording' ? t('speak_listening')
+            : phase.kind === 'preparing' ? t('speak_preparing')
             : phase.kind === 'checking' ? t('speak_checking')
             : passed && session ? ''
             : result || phase.kind === 'error' ? t('speak_again')

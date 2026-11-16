@@ -185,7 +185,7 @@
     "practice_sentences": "{count}文を続けて",
     "speak_title": "言ってみよう",
     "speak_tap": "タップして声に出して言ってください",
-    "speak_listening": "聞いています… タップして終了",
+    "speak_listening": "今話してください！タップで終了",
     "speak_checking": "発音をチェックしています…",
     "speak_again": "もう一度",
     "speak_next": "次へ",
@@ -206,7 +206,8 @@
     "speak_start": "発音を練習する",
     "speak_resume": "続けて話す",
     "speak_review": "もう一度練習する",
-    "speak_done": "{total}個中{done}個クリア"
+    "speak_done": "{total}個中{done}個クリア",
+    "speak_preparing": "マイクを準備しています…"
   },
   "gems": {
     "title": "ジェム",

@@ -185,7 +185,7 @@
     "practice_sentences": "{count} phrases complètes d’affilée",
     "speak_title": "Dis-le",
     "speak_tap": "Touche et dis-le à voix haute",
-    "speak_listening": "J'écoute… touche pour arrêter",
+    "speak_listening": "Parle maintenant ! Touche pour arrêter",
     "speak_checking": "Vérification de ta prononciation…",
     "speak_again": "Réessayer",
     "speak_next": "Suivant",
@@ -206,7 +206,8 @@
     "speak_start": "Pratiquer la prononciation",
     "speak_resume": "Continuer à parler",
     "speak_review": "Pratiquer encore",
-    "speak_done": "{done} sur {total} bien dits"
+    "speak_done": "{done} sur {total} bien dits",
+    "speak_preparing": "Préparation du micro…"
   },
   "gems": {
     "title": "Gemmes",

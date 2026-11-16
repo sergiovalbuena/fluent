@@ -1022,6 +1022,31 @@ function speakWord(word: string, langCode: string) {
   speak(word, langCode)
 }
 
+/**
+ * Item star. With pronunciation on: white once typed (Challenge) or said well, gold
+ * when both. Without it: gold once typed, as before.
+ */
+function ItemStar({ typed, spoken, speech }: { typed: boolean; spoken: boolean; speech: boolean }) {
+  const gold = speech ? typed && spoken : typed
+  if (!typed && !spoken) return null
+  return (
+    <motion.span
+      key={gold ? 'gold' : 'white'}
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ type: 'spring', stiffness: 500, damping: 20 }}
+      title={gold ? 'Mastered' : typed ? 'Typed — say it too for the gold star' : 'Said — type it too for the gold star'}
+    >
+      <Star
+        size={13}
+        className={gold
+          ? 'fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400'
+          : 'fill-white text-slate-300 dark:fill-white dark:text-white/60'}
+      />
+    </motion.span>
+  )
+}
+
 function VocabRow({
   entry,
   bookmarked,
@@ -1093,26 +1118,7 @@ function VocabRow({
         {entry.translation}
       </span>
       <div className="shrink-0 flex items-center gap-1">
-        {mastered && (
-          <motion.span
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-            title="Mastered"
-          >
-            <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-          </motion.span>
-        )}
-        {spoken && (
-          <motion.span
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-            title="Pronounced"
-          >
-            <Mic size={13} className="text-violet-500 dark:text-violet-400" />
-          </motion.span>
-        )}
+        <ItemStar typed={mastered} spoken={!!spoken} speech={!!onSpeak} />
         {onSpeak && (
           <button
             type="button"
@@ -1534,26 +1540,7 @@ function PhraseList({
               </p>
             </div>
             <div className="shrink-0 flex items-center gap-1">
-              {isMastered(p.phrase) && (
-                <motion.span
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                  title="Mastered"
-                >
-                  <Star size={13} className="fill-yellow-500 text-yellow-500 dark:fill-yellow-400 dark:text-yellow-400" />
-                </motion.span>
-              )}
-              {isSpoken?.(p.phrase) && (
-                <motion.span
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                  title="Pronounced"
-                >
-                  <Mic size={13} className="text-violet-500 dark:text-violet-400" />
-                </motion.span>
-              )}
+              <ItemStar typed={isMastered(p.phrase)} spoken={!!isSpoken?.(p.phrase)} speech={!!onSpeak} />
               {onSpeak && (
                 <button
                   type="button"

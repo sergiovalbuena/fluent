@@ -185,7 +185,7 @@
     "practice_sentences": "{count} frasi di fila",
     "speak_title": "Dillo",
     "speak_tap": "Tocca e dillo ad alta voce",
-    "speak_listening": "Ti ascolto… tocca per finire",
+    "speak_listening": "Parla ora! Tocca per finire",
     "speak_checking": "Controllo la tua pronuncia…",
     "speak_again": "Riprova",
     "speak_next": "Avanti",
@@ -206,7 +206,8 @@
     "speak_start": "Esercita la pronuncia",
     "speak_resume": "Continua a parlare",
     "speak_review": "Esercitati di nuovo",
-    "speak_done": "{done} su {total} dette bene"
+    "speak_done": "{done} su {total} dette bene",
+    "speak_preparing": "Preparo il microfono…"
   },
   "gems": {
     "title": "Gemme",

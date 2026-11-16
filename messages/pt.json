@@ -185,7 +185,7 @@
     "practice_sentences": "{count} orações seguidas",
     "speak_title": "Diga",
     "speak_tap": "Toque e diga em voz alta",
-    "speak_listening": "Ouvindo… toque para terminar",
+    "speak_listening": "Fale agora! Toque para terminar",
     "speak_checking": "Verificando sua pronúncia…",
     "speak_again": "Tentar de novo",
     "speak_next": "Próximo",
@@ -206,7 +206,8 @@
     "speak_start": "Praticar pronúncia",
     "speak_resume": "Continuar falando",
     "speak_review": "Praticar de novo",
-    "speak_done": "{done} de {total} ditas bem"
+    "speak_done": "{done} de {total} ditas bem",
+    "speak_preparing": "Preparando o microfone…"
   },
   "gems": {
     "title": "Gemas",

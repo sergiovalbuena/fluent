@@ -4,8 +4,108 @@
 // recognition takes directly. MediaRecorder would give webm/mp4 (Safari), which
 // Azure's REST endpoint doesn't accept, so the samples are captured with the Web
 // Audio API and encoded here.
+//
+// Opening the mic takes a moment (permission, audio context), and a short word said
+// right after the tap was lost. So the mic stays open while practicing (shared, and
+// closed a few seconds after the last user lets go), keeps the last PREROLL seconds
+// at all times, and each recording starts with them. Stopping waits a little so the
+// end of the word isn't cut off either.
 
 const TARGET_RATE = 16000
+/** Audio kept from before the tap, in seconds */
+const PREROLL = 0.6
+/** Extra audio captured after the stop tap, in milliseconds */
+const TAIL_MS = 350
+/** How long the mic stays open after the last user releases it */
+const IDLE_CLOSE_MS = 4000
+
+type Mic = {
+  stream: MediaStream
+  ctx: AudioContext
+  source: MediaStreamAudioSourceNode
+  processor: ScriptProcessorNode
+  rate: number
+  /** Last PREROLL seconds, always filled */
+  ring: Float32Array[]
+  ringLength: number
+  /** Chunks of the recording in progress (null when not recording) */
+  take: Float32Array[] | null
+  /** Resolves once audio is flowing (the first buffer arrived) */
+  live: Promise<void>
+}
+
+let mic: Mic | null = null
+let opening: Promise<Mic> | null = null
+let users = 0
+let closeTimer: ReturnType<typeof setTimeout> | null = null
+
+async function openMic(): Promise<Mic> {
+  const stream = await navigator.mediaDevices.getUserMedia({
+    audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
+  })
+  const AudioCtx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext
+  const ctx = new AudioCtx()
+  // iOS starts contexts suspended
+  if (ctx.state === 'suspended') await ctx.resume().catch(() => {})
+  const source = ctx.createMediaStreamSource(stream)
+  // ScriptProcessor is deprecated but works everywhere without a separate worklet file
+  const processor = ctx.createScriptProcessor(2048, 1, 1)
+  let markLive: () => void = () => {}
+  const m: Mic = {
+    stream, ctx, source, processor, rate: ctx.sampleRate,
+    ring: [], ringLength: 0, take: null,
+    live: new Promise<void>(resolve => { markLive = resolve }),
+  }
+  const maxRing = Math.ceil(PREROLL * ctx.sampleRate)
+  processor.onaudioprocess = e => {
+    markLive()
+    const chunk = new Float32Array(e.inputBuffer.getChannelData(0))
+    if (m.take) m.take.push(chunk)
+    m.ring.push(chunk)
+    m.ringLength += chunk.length
+    while (m.ring.length > 1 && m.ringLength - m.ring[0].length >= maxRing) {
+      m.ringLength -= m.ring.shift()!.length
+    }
+  }
+  source.connect(processor)
+  processor.connect(ctx.destination)
+  return m
+}
+
+function closeMic() {
+  if (!mic) return
+  mic.processor.disconnect()
+  mic.source.disconnect()
+  mic.stream.getTracks().forEach(t => t.stop())
+  void mic.ctx.close()
+  mic = null
+}
+
+/**
+ * Opens the mic (or reuses the open one) and resolves once audio is flowing.
+ * Must first be called from a tap (iOS). Call releaseMic() when done.
+ */
+export async function acquireMic(): Promise<void> {
+  users++
+  if (closeTimer) { clearTimeout(closeTimer); closeTimer = null }
+  try {
+    if (!mic) {
+      opening ??= openMic().finally(() => { opening = null })
+      mic = await opening
+    }
+    await mic.live
+  } catch (err) {
+    users = Math.max(0, users - 1)
+    throw err
+  }
+}
+
+/** Lets go of the mic; it closes a few seconds later unless someone acquires it again */
+export function releaseMic() {
+  users = Math.max(0, users - 1)
+  if (users > 0 || closeTimer) return
+  closeTimer = setTimeout(() => { closeTimer = null; if (users === 0) closeMic() }, IDLE_CLOSE_MS)
+}
 
 export type WavRecorder = {
   /** Stops recording and returns the WAV (null if nothing was captured) */
@@ -14,46 +114,36 @@ export type WavRecorder = {
   cancel: () => void
 }
 
-/** Asks for the microphone and starts recording. Must be called from a tap (iOS). */
-export async function startWavRecorder(maxSeconds: number, onAutoStop: () => void): Promise<WavRecorder> {
-  const stream = await navigator.mediaDevices.getUserMedia({
-    audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true },
-  })
-  const AudioCtx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext
-  const ctx = new AudioCtx()
-  const source = ctx.createMediaStreamSource(stream)
-  // ScriptProcessor is deprecated but works everywhere without a separate worklet file
-  const processor = ctx.createScriptProcessor(4096, 1, 1)
-  const chunks: Float32Array[] = []
-  processor.onaudioprocess = e => { chunks.push(new Float32Array(e.inputBuffer.getChannelData(0))) }
-  source.connect(processor)
-  processor.connect(ctx.destination)
-
+/** Starts a recording on the acquired mic, beginning with the last PREROLL seconds */
+export function startRecording(maxSeconds: number, onAutoStop: () => void): WavRecorder {
+  if (!mic) throw new Error('Microphone not acquired')
+  const m: Mic = mic
+  m.take = [...m.ring]
   let done = false
   const timer = setTimeout(() => { if (!done) onAutoStop() }, maxSeconds * 1000)
 
-  function release() {
+  function finish(): Float32Array[] {
     done = true
     clearTimeout(timer)
-    processor.disconnect()
-    source.disconnect()
-    stream.getTracks().forEach(t => t.stop())
-    void ctx.close()
+    const chunks = m.take ?? []
+    m.take = null
+    return chunks
   }
 
   return {
     async stop() {
       if (done) return null
-      const rate = ctx.sampleRate
-      release()
+      // Keep listening a moment: the end of a short word arrives after the tap
+      await new Promise(r => setTimeout(r, TAIL_MS))
+      const chunks = finish()
       const length = chunks.reduce((n, c) => n + c.length, 0)
       if (length === 0) return null
       const samples = new Float32Array(length)
       let offset = 0
       for (const c of chunks) { samples.set(c, offset); offset += c.length }
-      return encodeWav(downsample(samples, rate, TARGET_RATE), TARGET_RATE)
+      return encodeWav(downsample(samples, m.rate, TARGET_RATE), TARGET_RATE)
     },
-    cancel() { if (!done) release() },
+    cancel() { if (!done) finish() },
   }
 }
 

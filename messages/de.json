@@ -185,7 +185,7 @@
     "practice_sentences": "{count} Sätze am Stück",
     "speak_title": "Sag es",
     "speak_tap": "Tippe und sag es laut",
-    "speak_listening": "Ich höre zu… tippe zum Beenden",
+    "speak_listening": "Sprich jetzt! Tippe zum Beenden",
     "speak_checking": "Deine Aussprache wird geprüft…",
     "speak_again": "Nochmal versuchen",
     "speak_next": "Weiter",
@@ -206,7 +206,8 @@
     "speak_start": "Aussprache üben",
     "speak_resume": "Weiter sprechen",
     "speak_review": "Nochmal üben",
-    "speak_done": "{done} von {total} gut gesagt"
+    "speak_done": "{done} von {total} gut gesagt",
+    "speak_preparing": "Mikrofon wird vorbereitet…"
   },
   "gems": {
     "title": "Edelsteine",

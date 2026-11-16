@@ -185,7 +185,7 @@
     "practice_sentences": "{count} sentences in a row",
     "speak_title": "Say it",
     "speak_tap": "Tap and say it out loud",
-    "speak_listening": "Listening… tap to stop",
+    "speak_listening": "Speak now! Tap to stop",
     "speak_checking": "Checking your pronunciation…",
     "speak_again": "Try again",
     "speak_next": "Next",
@@ -206,7 +206,8 @@
     "speak_start": "Practice speaking",
     "speak_resume": "Keep speaking",
     "speak_review": "Practice again",
-    "speak_done": "{done} of {total} said well"
+    "speak_done": "{done} of {total} said well",
+    "speak_preparing": "Getting the mic ready…"
   },
   "gems": {
     "title": "Gems",
