@@ -57,7 +57,8 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         </div>
         <BottomNav />
         <GemsToastProvider />
-        <MariaWidget />
+        {/* MarIA is for accounts; a guest trying lesson 1 doesn't see the bubble */}
+        {!user?.is_anonymous && <MariaWidget />}
       </div>
     </TopbarProvider>
     </LanguageProvider>

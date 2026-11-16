@@ -315,7 +315,7 @@ export default function ProfilePage() {
           </Link>
 
           {/* ── Profile Setup ── */}
-          <Link href="/onboarding">
+          <Link href="/onboarding?change=details">
             <div className="flex items-center gap-3 bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/20 p-4 hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group">
               <div className="size-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                 <Settings2 size={18} className="text-primary" />

@@ -62,25 +62,24 @@ const DAILY_GOALS = [
 type StepKey = 'native' | 'learn' | 'motivation' | 'destination' | 'level' | 'words' | 'result' | 'goal'
 
 /**
- * full: the whole onboarding (new users and "Profile setup").
+ * full: the welcome — native language, course and level (3 steps, plus the word check
+ *   when not starting from scratch), so a new learner reaches lesson 1 quickly.
  * course: only the level ("Change my level" in the profile). The course chosen the first time
- * is the free one and the others stay locked until paid, so the language step only shows
- * for an account without a course yet (or the owner's).
+ *   is the free one and the others stay locked until paid, so the language step only shows
+ *   for an account without a course yet (or the owner's).
+ * details: motivation, destination and daily goal ("Profile setup" in the profile).
  */
-type Mode = 'full' | 'course'
+type Mode = 'full' | 'course' | 'details'
 
 /** Destination only for travellers; the word check and its result only when not starting from scratch */
 function stepsFor(mode: Mode, travel: boolean, placement: boolean, hasCourse: boolean): StepKey[] {
   if (mode === 'course') {
     return [...(hasCourse ? [] : ['learn' as const]), 'level', ...(placement ? ['words' as const, 'result' as const] : [])]
   }
-  return [
-    'native', 'learn', 'motivation',
-    ...(travel ? ['destination' as const] : []),
-    'level',
-    ...(placement ? ['words' as const, 'result' as const] : []),
-    'goal',
-  ]
+  if (mode === 'details') {
+    return ['motivation', ...(travel ? ['destination' as const] : []), 'goal']
+  }
+  return ['native', 'learn', 'level', ...(placement ? ['words' as const, 'result' as const] : [])]
 }
 
 const STEP_EMOJI: Record<StepKey, string> = {
@@ -127,10 +126,24 @@ const slideVariants = {
   exit:  (dir: number) => ({ x: dir > 0 ? -60 : 60, opacity: 0 }),
 }
 
+/** First lesson of a course (where a guest starts), or the course map if it can't be found */
+async function firstLessonHref(languageCode: string): Promise<string> {
+  const { data } = await createClient()
+    .from('modules')
+    .select('slug')
+    .eq('language_code', languageCode)
+    .eq('is_published', true)
+    .order('order_index')
+    .limit(1)
+    .maybeSingle()
+  return data?.slug ? `/learn/${data.slug}/vocabulary` : '/learn'
+}
+
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function OnboardingPage({ searchParams }: { searchParams: Promise<{ change?: string }> }) {
-  const mode: Mode = use(searchParams).change === 'course' ? 'course' : 'full'
+  const change = use(searchParams).change
+  const mode: Mode = change === 'course' ? 'course' : change === 'details' ? 'details' : 'full'
   const router = useRouter()
   const t = useTranslations('onboarding')
   const locale = useLocale()
@@ -304,17 +317,29 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
     const { data: { user } } = await getAuthUser(supabase)
     if (!user) { router.push('/login'); return }
 
-    // Only the onboarding answers: XP, streak and name are left as they are.
-    // Changing the course alone leaves the profile answers untouched.
+    // Profile setup: only the motivation, destination and daily goal
+    if (mode === 'details') {
+      const { error } = await supabase.from('user_profiles').update({
+        motivation,
+        daily_goal_minutes: dailyGoal,
+        travel_destination: isTravel ? destination.trim() : null,
+      }).eq('user_id', user.id)
+      if (error) { toast.error(t('save_error')); setSaving(false); return }
+      if (storageKey) localStorage.removeItem(storageKey)
+      toast.success(t('done'))
+      router.push('/profile')
+      router.refresh()
+      return
+    }
+
+    // The welcome: the languages (XP, streak and name are left as they are).
+    // Changing the level alone leaves the profile untouched.
     if (mode === 'full') {
       const { error: profileError } = await supabase.from('user_profiles').upsert({
         user_id: user.id,
         native_language_code: nativeLanguage,
         app_language_code: UI_LOCALES.includes(nativeLanguage) ? nativeLanguage : 'en',
         translation_language_code: TRANSLATION_LANGUAGES.includes(nativeLanguage) ? nativeLanguage : 'en',
-        motivation,
-        daily_goal_minutes: dailyGoal,
-        travel_destination: isTravel ? destination.trim() : null,
       }, { onConflict: 'user_id' })
 
       if (profileError) { toast.error(t('save_error')); setSaving(false); return }
@@ -332,7 +357,8 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
     trackEvent('onboarding_completed', { course: learningLanguage, level: estimatedLevel ?? 'unknown' })
     if (storageKey) localStorage.removeItem(storageKey)
     toast.success(t('done'))
-    router.push('/learn')
+    // A guest (trying it before signing up) goes straight into lesson 1
+    router.push(user.is_anonymous ? await firstLessonHref(learningLanguage) : '/learn')
     router.refresh()
   }
 

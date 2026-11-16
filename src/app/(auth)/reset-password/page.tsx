@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { use, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { createClient } from '@/lib/supabase/client'
@@ -11,12 +11,14 @@ import { Label } from '@/components/ui/label'
 import { useAuthError } from '@/components/auth/auth-parts'
 import { toast } from 'sonner'
 
-export default function ResetPasswordPage() {
+export default function ResetPasswordPage({ searchParams }: { searchParams: Promise<{ new?: string }> }) {
   const t = useTranslations('auth')
   const authError = useAuthError()
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
   const [loading, setLoading] = useState(false)
+  // ?new=1: a guest who just confirmed their email creates the password (not a reset)
+  const isNew = use(searchParams).new === '1'
   const router = useRouter()
 
   async function handleSubmit(e: React.FormEvent) {
@@ -37,16 +39,16 @@ export default function ResetPasswordPage() {
       setLoading(false)
       return
     }
-    toast.success(t('password_updated'))
-    router.push('/dashboard')
+    toast.success(t(isNew ? 'account_ready' : 'password_updated'))
+    router.push(isNew ? '/learn' : '/dashboard')
   }
 
   return (
     <Card className="w-full max-w-sm border-primary/10">
       <CardHeader className="text-center">
         <div className="text-4xl mb-2">🔒</div>
-        <CardTitle className="text-2xl font-bold">{t('reset_title')}</CardTitle>
-        <CardDescription>{t('reset_subtitle')}</CardDescription>
+        <CardTitle className="text-2xl font-bold">{t(isNew ? 'set_password_title' : 'reset_title')}</CardTitle>
+        <CardDescription>{t(isNew ? 'set_password_subtitle' : 'reset_subtitle')}</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-3">

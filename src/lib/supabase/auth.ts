@@ -1,6 +1,12 @@
 import type { SupabaseClient, UserMetadata } from '@supabase/supabase-js'
 
-export type AuthUser = { id: string; email: string | null; user_metadata: UserMetadata }
+export type AuthUser = {
+  id: string
+  email: string | null
+  user_metadata: UserMetadata
+  /** A guest trying lesson 1 before signing up (Supabase anonymous sign-in) */
+  is_anonymous: boolean
+}
 
 /**
  * The signed-in user, read from the session token and verified here with the
@@ -13,5 +19,5 @@ export async function getAuthUser(supabase: SupabaseClient): Promise<{ data: { u
   const { data } = await supabase.auth.getClaims()
   const claims = data?.claims
   if (!claims?.sub) return { data: { user: null } }
-  return { data: { user: { id: claims.sub, email: claims.email ?? null, user_metadata: claims.user_metadata ?? {} } } }
+  return { data: { user: { id: claims.sub, email: claims.email ?? null, user_metadata: claims.user_metadata ?? {}, is_anonymous: claims.is_anonymous === true } } }
 }

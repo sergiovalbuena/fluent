@@ -117,7 +117,7 @@ export function CtaBanner({ locale }: { locale: SiteLocale }) {
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">{c.title}</h2>
             <p className="mx-auto mb-8 max-w-md text-lg leading-relaxed text-white/75">{c.body}</p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link href="/signup"
+              <Link href="/start"
                 className="rounded-xl bg-white px-10 py-4 text-base font-bold text-primary shadow-xl shadow-black/20 transition-all hover:bg-white/90 active:scale-95">
                 {getCopy(locale).startFree} →
               </Link>

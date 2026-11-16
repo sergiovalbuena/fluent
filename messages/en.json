@@ -208,7 +208,8 @@
     "speak_review": "Practice again",
     "speak_done": "{done} of {total} said well",
     "speak_preparing": "Getting the mic ready…",
-    "speak_space_hint": "hold to speak"
+    "speak_space_hint": "hold to speak",
+    "speak_signup": "Create your account to practice pronunciation."
   },
   "gems": {
     "title": "Gems",
@@ -1044,6 +1045,12 @@
     "err_email_invalid": "That email doesn’t look valid.",
     "err_same_password": "Your new password must be different from the old one.",
     "err_callback": "The link isn’t valid or has expired. Please try again.",
-    "err_generic": "Something went wrong. Please try again."
+    "err_generic": "Something went wrong. Please try again.",
+    "start_loading": "Getting your first lesson ready…",
+    "guest_title": "Save your progress",
+    "guest_subtitle": "Create your account to keep what you've learned and continue with the next lessons.",
+    "set_password_title": "Create your password",
+    "set_password_subtitle": "Your email is confirmed. Choose a password to sign in next time.",
+    "account_ready": "Your account is ready!"
   }
 }

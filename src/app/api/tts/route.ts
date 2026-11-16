@@ -39,6 +39,8 @@ export async function GET(req: NextRequest) {
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
+  // Guests play the pregenerated audio only: new clips cost credits
+  if (user.is_anonymous) return NextResponse.json({ error: 'signup_required' }, { status: 403 })
 
   const apiKey = process.env.OPENAI_API_KEY
   if (!apiKey) return NextResponse.json({ error: 'not_configured' }, { status: 503 })

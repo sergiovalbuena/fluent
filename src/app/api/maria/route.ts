@@ -92,6 +92,8 @@ export async function POST(req: NextRequest) {
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
+  // MarIA costs credits: for accounts, not guests trying lesson 1
+  if (user.is_anonymous) return NextResponse.json({ error: 'signup_required' }, { status: 403 })
 
   if (!process.env.OPENAI_API_KEY) {
     return NextResponse.json(

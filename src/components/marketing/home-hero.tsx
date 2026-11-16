@@ -134,7 +134,7 @@ export function HomeHero({ locale }: { locale: SiteLocale }) {
             <p className="max-w-[520px] text-lg leading-relaxed text-slate-500 dark:text-slate-400">{h.sub}</p>
 
             <div className="flex flex-col gap-3 pt-1 sm:flex-row">
-              <Link href="/signup"
+              <Link href="/start"
                 className="rounded-xl bg-primary px-8 py-4 text-center text-base font-bold text-white shadow-xl shadow-primary/25 transition-all hover:bg-primary/90 active:scale-95">
                 {c.startFree} →
               </Link>

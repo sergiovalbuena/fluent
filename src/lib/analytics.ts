@@ -5,7 +5,7 @@ import { track } from '@vercel/analytics'
 // (Returning users and lessons per day come from user_activity in the database.)
 type Events = {
   /** Sign-up form sent or Google button pressed */
-  signup_started: { method: 'email' | 'google' }
+  signup_started: { method: 'email' | 'google' | 'guest' }
   /** Onboarding finished: the account has a course */
   onboarding_completed: { course: string; level: string }
   /** A lesson activity finished and saved (activation = the first one) */

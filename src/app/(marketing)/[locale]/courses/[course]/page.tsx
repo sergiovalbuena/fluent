@@ -55,7 +55,7 @@ export default async function CoursePage({ params }: Props) {
           </p>
         )}
         <StatRow items={stats} />
-        <div className="mt-8"><PrimaryButton href="/signup">{c.startFree} →</PrimaryButton></div>
+        <div className="mt-8"><PrimaryButton href="/start">{c.startFree} →</PrimaryButton></div>
       </PageHero>
 
       {/* Lesson 1 sample */}

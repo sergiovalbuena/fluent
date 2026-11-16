@@ -24,7 +24,7 @@ export default async function MariaPage({ params }: Props) {
   return (
     <>
       <PageHero eyebrow={m.eyebrow} title={m.title} sub={m.sub}>
-        <div className="mt-8"><PrimaryButton href="/signup">{c.startFree} →</PrimaryButton></div>
+        <div className="mt-8"><PrimaryButton href="/start">{c.startFree} →</PrimaryButton></div>
       </PageHero>
 
       <section className="pb-16 md:pb-20">

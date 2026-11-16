@@ -208,7 +208,8 @@
     "speak_review": "Pratiquer encore",
     "speak_done": "{done} sur {total} bien dits",
     "speak_preparing": "Préparation du micro…",
-    "speak_space_hint": "maintiens pour parler"
+    "speak_space_hint": "maintiens pour parler",
+    "speak_signup": "Crée ton compte pour pratiquer la prononciation."
   },
   "gems": {
     "title": "Gemmes",
@@ -1044,6 +1045,12 @@
     "err_email_invalid": "Cet e-mail ne semble pas valide.",
     "err_same_password": "Le nouveau mot de passe doit être différent de l’ancien.",
     "err_callback": "Le lien n’est pas valide ou a expiré. Réessaie.",
-    "err_generic": "Une erreur est survenue. Réessaie."
+    "err_generic": "Une erreur est survenue. Réessaie.",
+    "start_loading": "Préparation de ta première leçon…",
+    "guest_title": "Garde ta progression",
+    "guest_subtitle": "Crée ton compte pour garder ce que tu as appris et continuer avec les leçons suivantes.",
+    "set_password_title": "Crée ton mot de passe",
+    "set_password_subtitle": "Ton e-mail est confirmé. Choisis un mot de passe pour te connecter la prochaine fois.",
+    "account_ready": "Ton compte est prêt !"
   }
 }

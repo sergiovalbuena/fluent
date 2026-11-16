@@ -86,7 +86,7 @@ export function SpeakModal({ text, translation, languageCode, onListen, onPassed
       const res = await fetch('/api/pronunciation', { method: 'POST', body: form })
       const data = await res.json() as SpeechResult | { error: SpeechError }
       if ('error' in data) {
-        setPhase({ kind: 'error', message: t(data.error === 'limit' ? 'speak_limit' : 'speak_error') })
+        setPhase({ kind: 'error', message: t(data.error === 'limit' ? 'speak_limit' : data.error === 'signup_required' ? 'speak_signup' : 'speak_error') })
         return
       }
       if (data.status === 'not_heard') { setPhase({ kind: 'error', message: t('speak_not_heard') }); return }

@@ -6,6 +6,7 @@
 --
 --   * module_available(user, module): the /learn rule (src/lib/course-path.ts) —
 --     done, current, the next one, the first 10, unlocked with gems, or the owner.
+--     A guest (anonymous sign-in) gets lesson 1 only.
 --   * save_activity_progress(lesson, score, stars, markers): the only way to
 --     complete an activity. Refuses locked lessons, computes stars from the score
 --     (a lower value may be passed: typing without pronunciation is 2 stars) and
@@ -35,7 +36,12 @@ as $$
   cur as (
     select coalesce(min(idx) filter (where not (total > 0 and done >= total)), 1000000) as idx from mods
   )
-  select p_user = '3c8a6d64-5446-4acb-936a-8347b2ed0344'::uuid
+  select case
+    -- A guest (anonymous sign-in, trying it before signing up) gets lesson 1 only
+    when coalesce((auth.jwt() ->> 'is_anonymous')::boolean, false) then
+      exists (select 1 from mods where mods.id = p_module and mods.idx = 0)
+    else
+      p_user = '3c8a6d64-5446-4acb-936a-8347b2ed0344'::uuid
       or exists (select 1 from public.user_unlocked_modules u where u.user_id = p_user and u.module_id = p_module)
       or exists (
         select 1 from mods, cur
@@ -43,7 +49,8 @@ as $$
            and (mods.idx < 10                              -- FREE_LESSONS
                 or mods.idx <= cur.idx + 1                 -- done, current or the next one
                 or (mods.total > 0 and mods.done >= mods.total))
-      );
+      )
+  end;
 $$;
 
 revoke all on function public.module_available(uuid, uuid) from public, anon, authenticated;

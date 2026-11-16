@@ -208,7 +208,8 @@
     "speak_review": "もう一度練習する",
     "speak_done": "{total}個中{done}個クリア",
     "speak_preparing": "マイクを準備しています…",
-    "speak_space_hint": "押している間話す"
+    "speak_space_hint": "押している間話す",
+    "speak_signup": "発音を練習するにはアカウントを作成してください。"
   },
   "gems": {
     "title": "ジェム",
@@ -1044,6 +1045,12 @@
     "err_email_invalid": "メールアドレスが正しくないようです。",
     "err_same_password": "新しいパスワードは以前と違うものにしてください。",
     "err_callback": "リンクが無効か期限切れです。もう一度お試しください。",
-    "err_generic": "問題が発生しました。もう一度お試しください。"
+    "err_generic": "問題が発生しました。もう一度お試しください。",
+    "start_loading": "最初のレッスンを準備しています…",
+    "guest_title": "進捗を保存しましょう",
+    "guest_subtitle": "アカウントを作成すると、学んだ内容を保存して次のレッスンに進めます。",
+    "set_password_title": "パスワードを作成",
+    "set_password_subtitle": "メールアドレスが確認されました。次回のログイン用にパスワードを設定してください。",
+    "account_ready": "アカウントの準備ができました！"
   }
 }

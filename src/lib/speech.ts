@@ -45,4 +45,4 @@ export type SpeechResult =
   | { status: 'not_heard' }
 
 /** Errors the route answers with, besides a SpeechResult */
-export type SpeechError = 'not_configured' | 'limit' | 'unauthenticated' | 'bad_request' | 'failed'
+export type SpeechError = 'not_configured' | 'limit' | 'unauthenticated' | 'signup_required' | 'bad_request' | 'failed'

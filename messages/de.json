@@ -208,7 +208,8 @@
     "speak_review": "Nochmal üben",
     "speak_done": "{done} von {total} gut gesagt",
     "speak_preparing": "Mikrofon wird vorbereitet…",
-    "speak_space_hint": "gedrückt halten zum Sprechen"
+    "speak_space_hint": "gedrückt halten zum Sprechen",
+    "speak_signup": "Erstelle dein Konto, um die Aussprache zu üben."
   },
   "gems": {
     "title": "Edelsteine",
@@ -1044,6 +1045,12 @@
     "err_email_invalid": "Diese E-Mail scheint ungültig zu sein.",
     "err_same_password": "Das neue Passwort muss sich vom alten unterscheiden.",
     "err_callback": "Der Link ist ungültig oder abgelaufen. Versuch es erneut.",
-    "err_generic": "Etwas ist schiefgelaufen. Versuch es erneut."
+    "err_generic": "Etwas ist schiefgelaufen. Versuch es erneut.",
+    "start_loading": "Deine erste Lektion wird vorbereitet…",
+    "guest_title": "Speichere deinen Fortschritt",
+    "guest_subtitle": "Erstelle dein Konto, um das Gelernte zu behalten und mit den nächsten Lektionen weiterzumachen.",
+    "set_password_title": "Erstelle dein Passwort",
+    "set_password_subtitle": "Deine E-Mail ist bestätigt. Wähle ein Passwort für die nächste Anmeldung.",
+    "account_ready": "Dein Konto ist bereit!"
   }
 }

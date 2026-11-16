@@ -34,7 +34,7 @@ export async function updateSession(request: NextRequest) {
   // check auth themselves and answer with JSON errors, so they're never redirected.
   const publicRoutes = [
     '/es', '/en',
-    '/login', '/signup', '/forgot-password', '/reset-password', '/auth/callback',
+    '/login', '/signup', '/start', '/forgot-password', '/reset-password', '/auth/callback',
     '/privacy-policy', '/terms', '/api', '/sitemap.xml', '/robots.txt',
   ]
   const isPublicRoute = pathname === '/' || publicRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))
@@ -45,7 +45,24 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url)
   }
 
-  if (user && (pathname === '/login' || pathname === '/signup')) {
+  // A guest (anonymous sign-in from /start) tries the welcome and lesson 1 before signing
+  // up. Anything else asks them to create the account, which keeps their progress.
+  // Every course's first lesson slug ends in -01 (lecon-01, lesson-01, leccion-01).
+  if (user?.is_anonymous === true) {
+    const guestAllowed =
+      isPublicRoute ||
+      pathname === '/onboarding' ||
+      /^\/learn\/[a-z]+-01(\/|$)/.test(pathname)
+    if (!guestAllowed) {
+      const url = request.nextUrl.clone()
+      url.pathname = '/signup'
+      url.search = '?guest=1'
+      return NextResponse.redirect(url)
+    }
+    return supabaseResponse
+  }
+
+  if (user && (pathname === '/login' || pathname === '/signup' || pathname === '/start')) {
     const url = request.nextUrl.clone()
     url.pathname = '/dashboard'
     return NextResponse.redirect(url)

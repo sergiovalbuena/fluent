@@ -35,6 +35,8 @@ export async function POST(req: NextRequest) {
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
   if (!user) return fail('unauthenticated', 401)
+  // Paid per second: for accounts, not guests trying lesson 1
+  if (user.is_anonymous) return fail('signup_required', 403)
 
   const form = await req.formData().catch(() => null)
   const audio = form?.get('audio')

@@ -67,7 +67,7 @@ export function SiteHeader({ locale }: { locale: SiteLocale }) {
             <Link href="/login" className="hidden px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:text-primary dark:text-slate-300 sm:block">
               {c.signIn}
             </Link>
-            <Link href="/signup"
+            <Link href="/start"
               className="hidden rounded-xl bg-primary px-4 py-2 text-sm font-bold text-white shadow-md shadow-primary/25 transition-colors hover:bg-primary/90 active:scale-95 sm:block">
               {c.getStarted}
             </Link>
@@ -112,7 +112,7 @@ export function SiteHeader({ locale }: { locale: SiteLocale }) {
                     className="flex items-center justify-center rounded-xl border border-primary/20 px-4 py-3 text-sm font-bold text-slate-600 transition-colors hover:border-primary/40 dark:text-slate-300">
                     {c.signIn}
                   </Link>
-                  <Link href="/signup" onClick={() => setMenuOpen(false)}
+                  <Link href="/start" onClick={() => setMenuOpen(false)}
                     className="flex items-center justify-center rounded-xl bg-primary px-4 py-3 text-sm font-bold text-white shadow-md shadow-primary/20 transition-colors hover:bg-primary/90">
                     {c.startFree} →
                   </Link>

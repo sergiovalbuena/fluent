@@ -19,6 +19,8 @@ const RESEND_COOLDOWN = 60
 
 // Without emailRedirectTo, Supabase sends users to the project's Site URL after confirming
 const confirmRedirect = () => `${window.location.origin}/auth/callback?next=/onboarding`
+// A guest confirms the email added to their account, then sets the password
+const guestConfirmRedirect = () => `${window.location.origin}/auth/callback?next=${encodeURIComponent('/reset-password?new=1')}`
 
 export default function SignupPage() {
   const t = useTranslations('auth')
@@ -31,7 +33,15 @@ export default function SignupPage() {
   // Set once the confirmation email is on its way: the form gives way to "check your email"
   const [sentTo, setSentTo] = useState<string | null>(null)
   const [cooldown, setCooldown] = useState(0)
+  // A guest who tried lesson 1: creating the account keeps the same user and progress
+  const [isGuest, setIsGuest] = useState(false)
   const supabase = createClient()
+
+  useEffect(() => {
+    void supabase.auth.getSession().then(({ data: { session } }) => {
+      setIsGuest(session?.user.is_anonymous === true)
+    })
+  }, [supabase])
 
   useEffect(() => {
     if (cooldown <= 0) return
@@ -42,6 +52,19 @@ export default function SignupPage() {
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
+    if (isGuest) {
+      // Adds the email to the guest account; the password is set after confirming it
+      const { error } = await supabase.auth.updateUser(
+        { email, data: { display_name: name } },
+        { emailRedirectTo: guestConfirmRedirect() },
+      )
+      setLoading(false)
+      if (error) { toast.error(authError(error)); return }
+      trackEvent('signup_started', { method: 'email' })
+      setSentTo(email)
+      setCooldown(RESEND_COOLDOWN)
+      return
+    }
     trackEvent('signup_started', { method: 'email' })
     const { data, error } = await supabase.auth.signUp({
       email,
@@ -69,11 +92,9 @@ export default function SignupPage() {
 
   async function handleResend() {
     if (!sentTo || cooldown > 0) return
-    const { error } = await supabase.auth.resend({
-      type: 'signup',
-      email: sentTo,
-      options: { emailRedirectTo: confirmRedirect() },
-    })
+    const { error } = isGuest
+      ? await supabase.auth.updateUser({ email: sentTo }, { emailRedirectTo: guestConfirmRedirect() })
+      : await supabase.auth.resend({ type: 'signup', email: sentTo, options: { emailRedirectTo: confirmRedirect() } })
     if (error) {
       toast.error(authError(error))
       return
@@ -84,6 +105,15 @@ export default function SignupPage() {
 
   async function handleGoogleLogin() {
     trackEvent('signup_started', { method: 'google' })
+    if (isGuest) {
+      // Links Google to the guest account (needs "manual linking" on in Supabase Auth)
+      const { error } = await supabase.auth.linkIdentity({
+        provider: 'google',
+        options: { redirectTo: `${window.location.origin}/auth/callback?next=/learn` },
+      })
+      if (error) toast.error(authError(error))
+      return
+    }
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: `${window.location.origin}/auth/callback` },
@@ -130,8 +160,8 @@ export default function SignupPage() {
     <Card className="w-full max-w-sm border-primary/10">
       <CardHeader className="text-center">
         <div className="text-4xl mb-2">🌍</div>
-        <CardTitle className="text-2xl font-bold">{t('signup_title')}</CardTitle>
-        <CardDescription>{t('signup_subtitle')}</CardDescription>
+        <CardTitle className="text-2xl font-bold">{t(isGuest ? 'guest_title' : 'signup_title')}</CardTitle>
+        <CardDescription>{t(isGuest ? 'guest_subtitle' : 'signup_subtitle')}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <GoogleButton onClick={handleGoogleLogin} />
@@ -161,19 +191,22 @@ export default function SignupPage() {
               required
             />
           </div>
-          <div className="space-y-1">
-            <Label htmlFor="password">{t('password')}</Label>
-            <Input
-              id="password"
-              type="password"
-              autoComplete="new-password"
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              placeholder={t('password_hint')}
-              minLength={6}
-              required
-            />
-          </div>
+          {/* A guest sets the password after confirming the email */}
+          {!isGuest && (
+            <div className="space-y-1">
+              <Label htmlFor="password">{t('password')}</Label>
+              <Input
+                id="password"
+                type="password"
+                autoComplete="new-password"
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                placeholder={t('password_hint')}
+                minLength={6}
+                required
+              />
+            </div>
+          )}
           <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white" disabled={loading}>
             {loading ? t('signup_loading') : t('signup_submit')}
           </Button>
