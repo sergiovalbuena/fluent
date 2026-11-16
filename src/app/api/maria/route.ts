@@ -123,11 +123,14 @@ export async function POST(req: NextRequest) {
     context,
   ].filter(Boolean).join('\n\n')
 
-  // Counted before calling the model. If the counter itself fails, MarIA still
-  // answers: the OpenAI project's spend limit is the backstop.
+  // Counted before calling the model. If the counter itself fails, refuse, like
+  // the voice and pronunciation routes: an uncounted request is an unlimited one.
   const { data: left, error: usageError } = await supabase.rpc('use_ai_message', { p_limit: DAILY_LIMIT })
-  if (usageError) console.error('[maria] use_ai_message failed:', usageError.message)
-  const remaining = usageError ? null : (left as number)
+  if (usageError) {
+    console.error('[maria] use_ai_message failed:', usageError.message)
+    return NextResponse.json({ error: 'unavailable' }, { status: 500 })
+  }
+  const remaining = left as number
   if (remaining === -1) {
     return NextResponse.json({ error: 'limit', limit: DAILY_LIMIT, remaining: 0 }, { status: 429 })
   }
@@ -143,7 +146,7 @@ export async function POST(req: NextRequest) {
   return result.toTextStreamResponse({
     headers: {
       'X-Maria-Limit': String(DAILY_LIMIT),
-      ...(remaining !== null && { 'X-Maria-Remaining': String(remaining) }),
+      'X-Maria-Remaining': String(remaining),
     },
   })
 }

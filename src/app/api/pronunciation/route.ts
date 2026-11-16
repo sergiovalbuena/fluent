@@ -9,8 +9,8 @@ export const dynamic = 'force-dynamic'
 // Pronunciation Assessment (short-audio REST API). The key never leaves the
 // server, and every attempt counts against a daily limit per user.
 
-/** Attempts per user and UTC day (about 4 s of audio each) */
-const DAILY_LIMIT = 150
+/** Attempts per user and UTC day (about 4 s of audio each, paid per second) */
+const DAILY_LIMIT = 60
 const MAX_TEXT = 200
 // 16 kHz × 16-bit mono, plus the WAV header and some slack
 const MAX_BYTES = SPEECH_MAX_SECONDS * 16000 * 2 + 4096
