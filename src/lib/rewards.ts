@@ -56,8 +56,9 @@ export async function addRewards(
 ): Promise<{ xp: number; gems: number }> {
   let creditedXp = 0
   if (xp > 0) {
+    // First the day (it stores the learner's time zone, which add_xp files the XP under)
+    await recordActivity(supabase)
     creditedXp = await addXp(supabase, xp)
-    if (creditedXp > 0) await recordActivity(supabase, userId)
   }
   const credited = await awardGems(supabase, gems, reason, ref)
   return { xp: creditedXp, gems: credited }

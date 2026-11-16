@@ -14,6 +14,8 @@ export type LanguageSettings = {
   translationLang: string
   /** Courses the user may switch to: the one chosen at sign-up (every course for the owner) */
   unlockedLanguages: string[]
+  /** The learner's time zone as last sent by their browser (null until their first activity) */
+  timeZone: string | null
 }
 
 // Deduplicated per request — layout and pages can both call it.
@@ -21,7 +23,7 @@ export const getLanguageSettings = cache(async (): Promise<LanguageSettings> => 
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
 
-  const settings: LanguageSettings = { languageCode: DEFAULT_LANGUAGE, uiLocale: 'en', translationLang: 'en', unlockedLanguages: [] }
+  const settings: LanguageSettings = { languageCode: DEFAULT_LANGUAGE, uiLocale: 'en', translationLang: 'en', unlockedLanguages: [], timeZone: null }
   if (!user) return settings
 
   const [langData, profileData] = await Promise.all([
@@ -46,5 +48,6 @@ export const getLanguageSettings = cache(async (): Promise<LanguageSettings> => 
   const profile = profileData.data as Partial<UserProfile> | null
   if (profile?.app_language_code) settings.uiLocale = profile.app_language_code
   settings.translationLang = profile?.translation_language_code ?? settings.uiLocale
+  settings.timeZone = profile?.timezone ?? null
   return settings
 })

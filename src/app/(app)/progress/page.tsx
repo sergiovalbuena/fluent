@@ -3,6 +3,7 @@ import { getLanguageSettings } from '@/lib/active-language'
 import { getCourseUnits } from '@/lib/course-units'
 import { ProgressContent, type ProgressData } from '@/components/progress/progress-content'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { dateIn } from '@/lib/dates'
 
 /** Days shown in the activity heatmap (whole weeks, ending this week) */
 const HEATMAP_WEEKS = 26
@@ -21,11 +22,12 @@ type ProgressRow = {
 export default async function ProgressPage() {
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
-  const { languageCode, uiLocale } = await getLanguageSettings()
+  const { languageCode, uiLocale, timeZone } = await getLanguageSettings()
 
   // Monday of the first heatmap week
-  const today = new Date()
-  today.setUTCHours(0, 0, 0, 0)
+  // The learner's local day, as a UTC-midnight Date for the calendar arithmetic
+  const todayKey = dateIn(timeZone)
+  const today = new Date(todayKey + 'T00:00:00Z')
   const start = new Date(today)
   start.setUTCDate(today.getUTCDate() - ((today.getUTCDay() + 6) % 7) - (HEATMAP_WEEKS - 1) * 7)
 
@@ -143,6 +145,7 @@ export default async function ProgressPage() {
     },
     skills: [...skillTotals.entries()].map(([type, s]) => ({ type, ...s })),
     days,
+    today: todayKey,
     recent,
   }
 

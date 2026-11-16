@@ -34,6 +34,8 @@ export type ProgressData = {
   skills: { type: string; done: number; total: number }[]
   /** Heatmap days, oldest first, whole weeks starting on Monday */
   days: { date: string; count: number; future: boolean }[]
+  /** The learner's local day (YYYY-MM-DD) */
+  today: string
   recent: { id: string; type: string; moduleTitle: string; slug: string | null; score: number | null; stars: number; completedAt: string }[]
 }
 
@@ -84,7 +86,7 @@ export function ProgressContent({ data }: { data: ProgressData }) {
   // This week = the last 7 heatmap days
   const week = data.days.slice(-7)
   const weekday = new Intl.DateTimeFormat(locale, { weekday: 'narrow', timeZone: 'UTC' })
-  const todayKey = new Date().toISOString().slice(0, 10)
+  const todayKey = data.today
 
   const activeDays = data.days.filter(d => d.count > 0).length
   const activityTotal = data.days.reduce((s, d) => s + d.count, 0)

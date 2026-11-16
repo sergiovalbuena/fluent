@@ -8,25 +8,26 @@ import { MASTERY, explanationLanguage, gemsLeft, loadGrammarIndex } from '@/lib/
 import { loadVerbExamples, loadVerbForms, loadVerbIndex, verbTranslation } from '@/lib/verbs'
 import type { StudyGroup } from '@/lib/study-group'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { addDays, dateIn, weekdayIndex } from '@/lib/dates'
 
 // Everything the dashboard shows comes from here, in one round of queries.
 
 type ProgressRow = { module_id: string }
 type ModuleRow = { id: string; slug: string; title: string; icon: string; lessons: { id: string }[] }
 
-const ymd = (d: Date) => d.toISOString().split('T')[0]
 
 export default async function DashboardPage() {
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
   if (!user) redirect('/login')
 
-  const { languageCode: activeLanguage, translationLang } = await getLanguageSettings()
+  const { languageCode: activeLanguage, translationLang, timeZone } = await getLanguageSettings()
 
+  // Days are the learner's local days (see src/lib/dates.ts)
   const now = new Date()
-  const monday = new Date(now)
-  monday.setUTCDate(now.getUTCDate() - ((now.getUTCDay() + 6) % 7))
-  const weekStart = ymd(monday)
+  const today = dateIn(timeZone, now)
+  const todayIndex = weekdayIndex(today)
+  const weekStart = addDays(today, -todayIndex)
 
   // The course comes from getLanguageSettings (the active row in user_languages), so
   // everything that depends on it can go in the same round.
@@ -63,16 +64,14 @@ export default async function DashboardPage() {
   const p = profile.data
 
   // ── Streak (0 if it has lapsed) and this week ──────────────────────────────
-  const yesterday = ymd(new Date(now.getTime() - 86400000))
-  const streakAlive = !!p?.last_activity_date && p.last_activity_date >= yesterday
+  const streakAlive = !!p?.last_activity_date && p.last_activity_date >= addDays(today, -1)
   const weekXp = [0, 0, 0, 0, 0, 0, 0]
   const weekActive = [false, false, false, false, false, false, false]
   for (const row of (activity.data ?? []) as { activity_date: string; xp_earned: number; lessons_completed: number }[]) {
-    const i = (new Date(row.activity_date + 'T00:00:00Z').getUTCDay() + 6) % 7
+    const i = weekdayIndex(row.activity_date)
     weekXp[i] += row.xp_earned
     if (row.xp_earned > 0 || row.lessons_completed > 0) weekActive[i] = true
   }
-  const todayIndex = (now.getUTCDay() + 6) % 7
 
   // ── Course path ─────────────────────────────────────────────────────────────
   const modulesData = modulesRes.data
@@ -122,7 +121,7 @@ export default async function DashboardPage() {
   let verb: DashboardData['verb'] = null
   if (verbIndex) {
     const essentials = verbIndex.verbs.filter(v => v.essential)
-    const day = Math.floor(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86400000)
+    const day = Math.floor(Date.parse(today + 'T00:00:00Z') / 86400000)
     const v = essentials[day % essentials.length]
     const forms = verbForms
     const examples = verbExamples

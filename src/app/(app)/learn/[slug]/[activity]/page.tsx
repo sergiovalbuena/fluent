@@ -24,6 +24,7 @@ import { localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestio
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
 import { addXp, awardGems, getActiveBoosts } from '@/lib/rewards'
+import { recordActivity } from '@/lib/activity'
 import { ResultScreen } from '@/components/lesson/result-screen'
 import { SpeakModal } from '@/components/lesson/speak-modal'
 import { speechAvailable } from '@/lib/speech'
@@ -2232,47 +2233,26 @@ export default function LessonPage() {
 
     const { data: profile } = await supabase
       .from('user_profiles')
-      .select('streak_count, longest_streak, last_activity_date, last_streak_milestone, skills, streak_freezes')
+      .select('skills')
       .eq('user_id', user.id)
       .maybeSingle()
 
-    const today   = new Date().toISOString().split('T')[0]
-    const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1)
-    const yesterdayStr = yesterday.toISOString().split('T')[0]
-    const isNewDay  = profile?.last_activity_date !== today
-    const prevStreak = profile?.streak_count ?? 0
-    // Only continue streak if last activity was yesterday; otherwise reset to 1 —
-    // unless exactly one day was missed and a streak freeze can cover it
-    const dayBefore = new Date(); dayBefore.setDate(dayBefore.getDate() - 2)
-    const missedOneDay = profile?.last_activity_date === dayBefore.toISOString().split('T')[0]
-    const frozen = isNewDay && missedOneDay && (profile?.streak_freezes ?? 0) > 0
-      ? ((await supabase.rpc('use_streak_freeze')).data === true)
-      : false
-    if (frozen) toast.success(tLesson('streak_frozen'))
-    const streakContinues = profile?.last_activity_date === yesterdayStr || frozen
-    const newStreak = isNewDay
-      ? (streakContinues || prevStreak === 0 ? prevStreak + 1 : 1)
-      : prevStreak
+    // The database moves the streak for the learner's local day, spends a streak
+    // freeze if one day was missed and credits the milestone bonus (record_activity)
+    const day = await recordActivity(supabase)
+    if (day.frozen) toast.success(tLesson('streak_frozen'))
 
     // XP formula v1
     let xpEarned = 10                          // core activity
     if (isFirstCompletion) xpEarned += 20      // lesson completion bonus
     if (stars === 3)       xpEarned += 10      // 3-star bonus
-    if (isNewDay)          xpEarned += 5       // streak day bonus
+    if (day.newDay)        xpEarned += 5       // streak day bonus
 
     // Active boost (bought in the gem shop): 2× XP
     if ((await getActiveBoosts(supabase, user.id)).xp) xpEarned *= 2
 
-    // Streak milestone bonuses (awarded once per milestone; reset when streak breaks)
-    const lastMilestone  = profile?.last_streak_milestone ?? 0
-    // If streak broke (reset to 1), reset milestone tracker too
-    const milestoneBasis = (isNewDay && !streakContinues && prevStreak > 0) ? 0 : lastMilestone
-    let milestoneBonusXp = 0
-    let newMilestone     = milestoneBasis
-    if      (newStreak >= 14 && milestoneBasis < 14) { milestoneBonusXp = 50; newMilestone = 14 }
-    else if (newStreak >= 7  && milestoneBasis < 7)  { milestoneBonusXp = 20; newMilestone = 7  }
-    else if (newStreak >= 3  && milestoneBasis < 3)  { milestoneBonusXp = 10; newMilestone = 3  }
-    xpEarned += milestoneBonusXp
+    // Streak milestone bonus (3, 7, 14 days): already credited by the database
+    const milestoneBonusXp = day.milestoneXp
 
     // Skill gains
     const skillGains     = SKILL_MAP[activity] ?? {}
@@ -2286,15 +2266,9 @@ export default function LessonPage() {
 
     // XP goes through add_xp (atomic, also today's user_activity.xp_earned)
     await addXp(supabase, xpEarned)
-    await supabase.from('user_profiles').update({
-      streak_count:          newStreak,
-      longest_streak:        Math.max(newStreak, profile?.longest_streak ?? 0),
-      last_activity_date:    today,
-      last_streak_milestone: newMilestone,
-      skills:                updatedSkills,
-    }).eq('user_id', user.id)
+    await supabase.from('user_profiles').update({ skills: updatedSkills }).eq('user_id', user.id)
 
-    return { xpEarned, gemsEarned, milestoneBonusXp }
+    return { xpEarned: xpEarned + milestoneBonusXp, gemsEarned, milestoneBonusXp }
   }
 
   async function handleFinishLesson(score = 100) {

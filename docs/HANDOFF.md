@@ -1,6 +1,6 @@
 # Fluent — estado del proyecto y plan (handoff)
 
-Última actualización: 2026-11-05 (deploy `6e5fe68`; `95f8031` solo añadió la migración `protect_xp`, ya aplicada, y esta nota). Léelo al empezar una sesión nueva.
+Última actualización: 2026-11-16 (deploy `a959ad9`, preparación de la beta; después hay trabajo en local sin commit, ver «Bloque en local»). Léelo al empezar una sesión nueva.
 
 ## Contexto
 
@@ -154,7 +154,40 @@
 - **Eventos:** `trackEvent` en `src/lib/analytics.ts` (Vercel Web Analytics): `signup_started`, `onboarding_completed`, `activity_completed`, `minigame_completed`, `account_deleted`.
 - **Verificado:** Supabase está en el **plan gratuito** (sin copias de seguridad, se pausa tras 7 días sin uso, 1 GB de almacenamiento y el bucket `tts` ya ocupa 599 MB). No se pudo comprobar el SMTP de Auth ni el plan de Vercel.
 
+## Bloque en local: tests, CI, límites y racha en el servidor (2026-11-15, sin commit: espera a aplicar la migración)
+
+- **Tests:** `npm test` (vitest, `tests/*.test.ts`, 29 pruebas de lógica pura: nivel de la bienvenida, corrección de respuestas, recompensas de gramática, estados de la ruta, enlaces de estudio y fechas). `npm run typecheck` = `tsc --noEmit`.
+- **CI:** `.github/workflows/ci.yml` ejecuta tipos, lint, tests y build en cada push a `main` y en cada PR. El build usa variables de Supabase de relleno. Sigue pendiente conectar el repo en Vercel (Settings → Git) para que el push despliegue.
+- **Límites:** pronunciación, 60 intentos por día (antes 150). MarIA ya no responde si falla el contador (`use_ai_message`).
+- **Racha en el servidor y por día local** (migración `20261115000003_server_streak.sql`, **probada en producción con rollback, sin aplicar todavía**; el código de este apartado no funciona sin ella):
+  - `record_activity(p_tz)` mueve la racha con el día local del usuario (zona horaria del navegador, guardada en `user_profiles.timezone`), gasta un protector si faltó exactamente un día y abona el bono de 3, 7 y 14 días (10, 20 y 50 XP). Devuelve `{ streak, new_day, frozen, milestone_xp }`. En el cliente: `recordActivity` en `src/lib/activity.ts`.
+  - `add_xp` guarda el XP en el día local (misma firma).
+  - Trigger `protect_streak`: el cliente ya no puede escribir `streak_count`, `longest_streak`, `last_activity_date` ni `last_streak_milestone`. `skills` sigue siendo escribible.
+  - Fechas: `src/lib/dates.ts` (`dateIn`, `addDays`, `weekdayIndex`). El dashboard y `/progress` usan el día local (`timeZone` en `getLanguageSettings`).
+  - Las fechas guardadas antes en UTC pueden ir un día por delante del día local: `record_activity` las trata como «hoy» (un día sin sumar racha, sin romperla).
+
 ## Pendiente (en orden sugerido)
+
+**De la revisión de lanzamiento (2026-11-15).** Veredicto: beta cerrada con 15–30 personas, no lanzamiento público. Hoy hay 7 cuentas, 3 con actividad, y ningún usuario de fuera del círculo del dueño. Las acciones 1–9 de la revisión están en producción; esto es lo que queda, por orden:
+
+A. **Aplicar la migración de la racha y desplegar el bloque en local** (`supabase/migrations/20261115000003_server_streak.sql`). Pedir permiso al usuario antes de aplicarla. Después: commit de todo el bloque (tests, CI, límites, racha), push a `main` y `french-ready`, y deploy. No desplegar el código sin la migración: `record_activity` no existiría y la racha dejaría de moverse.
+B. **Decisión del usuario: lección 1 sin registro y bienvenida de 3 pasos** (idioma nativo, curso, nivel; el resto al perfil). Es lo que más pesa contra el riesgo principal (que nadie vuelva tras el primer día). Hoy hay que confirmar el correo y pasar hasta 8 pasos antes de la primera lección. Falta que el usuario diga qué pasos se quedan.
+C. **Guardar el progreso de las lecciones en una función de la base de datos.** `user_progress` sigue siendo escribible por el cliente (estrellas, nota, `completed_at`), así que se pueden desbloquear lecciones sin gastar gemas. Mismo patrón que `add_xp` y `record_activity`. Añadir también un tope diario a `add_xp` (hoy 200 XP por llamada, sin límite de llamadas) y pasar `skills` al servidor.
+D. **Monitorización de errores.** `@sentry/nextjs` está instalado y apagado. Crear el proyecto en Sentry y poner `NEXT_PUBLIC_SENTRY_DSN` en Vercel. Sin mapas de código por ahora (no se usa `withSentryConfig`).
+E. **Correo de contacto** (`NEXT_PUBLIC_CONTACT_EMAIL`). Aplazado por el usuario hasta comprar un dominio. Mientras tanto no se muestra ningún correo y los textos legales remiten al Centro de ayuda.
+F. **Nombre y dominio.** «Fluent» es genérico y choca con marcas existentes; decidirlo antes de comprar dominio. La app sigue en `fluent-xi.vercel.app`.
+G. **Supabase está en el plan gratuito:** sin copias de seguridad, se pausa tras 7 días sin uso y tiene 1 GB de almacenamiento (el bucket `tts` ocupa 599 MB). Decidir cuándo pasar a Pro; como mínimo antes de invitar a gente de fuera.
+H. **Comprobar el SMTP de Supabase Auth** (Authentication → Emails). Con el correo por defecto, el límite de envíos por hora frena los registros con confirmación. También comprobar el plan de Vercel: los eventos de `trackEvent` pueden necesitar un plan de pago para verse.
+I. **Probar con una cuenta real lo nuevo:** eliminar la cuenta desde el perfil (usar una cuenta de prueba), el límite de voz (80 audios nuevos al día), las pantallas de error y de carga, y los textos legales en español.
+J. **Centro de ayuda:** sigue solo en inglés y fuera de `messages/*.json`. Traducirlo o quitarlo del perfil.
+K. **Lint:** `eslint-config-next` (16.1.7) y `eslint-plugin-react-hooks` (7.0.1) están fijos. Las versiones nuevas marcan 7 errores en código existente (`learn/[slug]/[activity]/page.tsx`, `mini-games/monkeytype`, `mini-games/listening`, `mini-games/matching`, `challenge`, `admin/sidebar`, `language-switcher`). Corregirlos y quitar el fijado.
+L. **Tests que faltan:** un e2e de registro → bienvenida → terminar una actividad → ver el XP, y guardar como script las pruebas SQL con rollback de `add_xp`, `award_gems`, `buy_item`, `choose_course` y `record_activity` (hoy se hacen a mano).
+M. **Cabeceras de seguridad** (CSP, `X-Frame-Options`) en `next.config.ts`, y activar la protección de contraseñas filtradas en Supabase Auth.
+N. **Avisos de Supabase sin resolver:** 27 políticas RLS que reevalúan `auth.uid()` por fila (cambiar a `(select auth.uid())`), 2 índices duplicados (`user_activity`, `user_progress`), `anon` con permisos de tabla que no necesita y `handle_new_user` ejecutable por `anon`.
+O. **Recortar funciones sin terminar:** las páginas `travel`, `challenge` y `videos` siguen en el repo; decidir si se borran. Los cursos demo (pt, de, it, ja) siguen en la base de datos, ocultos.
+P. **Antes de cobrar:** restringir la lectura de `lessons` al curso desbloqueado (hoy `lessons_public_read` deja leer todo con la clave anónima; el bloqueo de cursos es solo de interfaz), y replantear el modelo: cobrar por el segundo curso da pocos ingresos; la propuesta fue un plan premium por uso de IA y pronunciación.
+Q. **Partir el reproductor** (`src/app/(app)/learn/[slug]/[activity]/page.tsx`, 3.572 líneas), mejor después de C.
+R. **Validación con usuarios:** medir la retención del día 7 con 15–20 personas del nicho (hispanohablantes que aprenden inglés), hacer 5 entrevistas y probar un precio con lista de espera antes de montar Stripe.
 
 **Probar (solo requiere que el usuario lo use; la extensión de Chrome no estuvo conectada)**
 1. **Terminar una lección** y comprobar que suma XP y 1 lección en `user_activity` del día. Es el único camino de `add_xp` que aún no se ha visto con datos reales.
@@ -174,15 +207,15 @@
 9. **Bento de la lección:** las etiquetas de grupo (Repaso, Práctica, Minijuegos) están en el idioma de la interfaz; decidir si van en el idioma del curso como las tarjetas principales. Diseñar la actividad «Práctica de gramática».
 
 **Configuración y producción**
-10. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito.
-11. **Email de contacto.** Definir `NEXT_PUBLIC_CONTACT_EMAIL` en Vercel con un buzón real (ver «Preparación de la beta»).
+10. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito. Lo tiene que hacer el usuario en el panel. El CI de GitHub (`.github/workflows/ci.yml`) ya está escrito, dentro del bloque en local.
+11. **Email de contacto.** Ver el punto E.
 
 **Contenido**
 12. Revisión del francés (`content/fr/REVIEW.md`, dejada para el final): variante del español, listas de vocabulario largas, «Pensée du jour» y cómo presentar los módulos reemplazados.
 13. **Traducir las descripciones de lección a de, it, pt y ja.** `src/lib/lesson-titles.ts` solo tiene en, es y fr; con otro idioma nativo se muestra el inglés.
 
 **Más adelante**
-14. **Racha en el servidor:** pasar `recordActivity` y la racha del reproductor de lecciones a una función de la base de datos, y después proteger `streak_count`, `longest_streak`, `last_activity_date` y `skills` como el XP.
+14. **Racha en el servidor:** hecha, falta aplicar la migración (punto A). `skills` sigue en el cliente (punto C).
 15. **Usar `user_languages.level`**, por ejemplo para desbloquear lecciones según el nivel. Hoy solo se guarda.
 
 **Opcional**

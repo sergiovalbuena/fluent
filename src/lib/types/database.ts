@@ -38,6 +38,8 @@ export type UserProfile = {
   last_streak_milestone: number
   /** Streak freezes bought in the gem shop (max 2) */
   streak_freezes: number
+  /** IANA time zone, stored by record_activity */
+  timezone: string | null
   created_at: string
   updated_at: string
 }

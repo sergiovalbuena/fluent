@@ -1,35 +1,30 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
+import { browserTimeZone } from '@/lib/dates'
 
-// Daily activity outside the lesson player (mini-games, verb and grammar practice,
-// words mastered): keeps the streak, with the same rules as the lesson player — a
-// missed day breaks it unless a streak freeze covers exactly one missed day. Dates
-// are UTC, like the lesson player. The XP itself is added by add_xp (see addXp in
-// src/lib/rewards.ts), which also creates today's user_activity row.
+// The streak lives in the database: record_activity registers activity for the
+// learner's local day, moves the streak (a missed day breaks it unless a streak
+// freeze covers exactly one), and credits the 3 / 7 / 14-day bonus XP. Clients
+// can't write the streak columns (trigger protect_streak). Every place that
+// rewards practice calls this: lessons, mini-games, verbs, grammar, words mastered.
 
-const day = (offset = 0) => new Date(Date.now() + offset * 86400000).toISOString().split('T')[0]
+export type DayActivity = {
+  streak: number
+  /** First activity of the learner's day: the streak just moved */
+  newDay: boolean
+  /** A streak freeze was spent to cover one missed day */
+  frozen: boolean
+  /** Bonus XP the database already credited for a streak milestone */
+  milestoneXp: number
+}
 
-export async function recordActivity(supabase: SupabaseClient, userId: string): Promise<{ frozen: boolean }> {
-  const today = day()
+const NOTHING: DayActivity = { streak: 0, newDay: false, frozen: false, milestoneXp: 0 }
 
-  const { data: profile } = await supabase
-    .from('user_profiles')
-    .select('streak_count, longest_streak, last_activity_date, streak_freezes')
-    .eq('user_id', userId)
-    .maybeSingle()
-  if (!profile || profile.last_activity_date === today) return { frozen: false }
-
-  const prev = profile.streak_count ?? 0
-  const frozen = profile.last_activity_date === day(-2) && (profile.streak_freezes ?? 0) > 0
-    ? (await supabase.rpc('use_streak_freeze')).data === true
-    : false
-  const continues = profile.last_activity_date === day(-1) || frozen
-  const streak = continues || prev === 0 ? prev + 1 : 1
-
-  await supabase.from('user_profiles').update({
-    streak_count: streak,
-    longest_streak: Math.max(streak, profile.longest_streak ?? 0),
-    last_activity_date: today,
-  }).eq('user_id', userId)
-
-  return { frozen }
+export async function recordActivity(supabase: SupabaseClient): Promise<DayActivity> {
+  const { data, error } = await supabase.rpc('record_activity', { p_tz: browserTimeZone() })
+  if (error || !data) {
+    if (error) console.error('[recordActivity] failed:', error.message)
+    return NOTHING
+  }
+  const r = data as { streak: number; new_day: boolean; frozen: boolean; milestone_xp: number }
+  return { streak: r.streak, newDay: r.new_day, frozen: r.frozen, milestoneXp: r.milestone_xp }
 }
