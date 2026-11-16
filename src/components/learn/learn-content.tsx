@@ -313,8 +313,9 @@ function Level({ mod, number, x, row, labelSide, world, unlock }: {
           </motion.span>
           <motion.span
             className="absolute -inset-3 rounded-full bg-primary/25"
-            animate={{ scale: [0.9, 1.25], opacity: [0.7, 0] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeOut' }}
+            // Each loop starts invisible (fades in, grows, fades out to 0), so the restart doesn't jump
+            animate={{ scale: [0.9, 1.02, 1.3], opacity: [0, 0.6, 0] }}
+            transition={{ duration: 2.2, times: [0, 0.25, 1], repeat: Infinity, ease: 'easeOut', repeatDelay: 0.2 }}
           />
           <span className="absolute -inset-[9px]">
             <ProgressRing value={mod.progress} size={size + 18} stroke={5} trackClassName="stroke-primary/20" />

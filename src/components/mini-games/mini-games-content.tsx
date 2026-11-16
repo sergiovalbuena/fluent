@@ -401,7 +401,7 @@ function MicIllustration() {
             className="absolute inset-0 rounded-full border-2 border-white/60"
             variants={{
               animate: { scale: 1, opacity: 0 },
-              hover: { scale: [1, 1.9], opacity: [0.8, 0], transition: { duration: 1.2, repeat: Infinity, delay: i * 0.6 } },
+              hover: { scale: [1, 1.2, 1.9], opacity: [0, 0.8, 0], transition: { duration: 1.2, times: [0, 0.2, 1], repeat: Infinity, ease: 'easeOut', delay: i * 0.6 } },
             }}
           />
         ))}
