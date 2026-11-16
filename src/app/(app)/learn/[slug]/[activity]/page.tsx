@@ -1796,7 +1796,7 @@ function ActivityHero({
           </div>
 
           {ctas.length > 0 && (
-            <div className={cn('grid gap-3 w-full', ctas.length > 1 ? 'grid-cols-2 sm:w-[480px]' : 'sm:w-[340px]')}>
+            <div className={cn('grid gap-3 w-full', ctas.length > 1 ? 'grid-cols-2 sm:w-[520px]' : 'sm:w-[340px]')}>
               {ctas.map((c, i) => (
                 <motion.div
                   key={i}
@@ -1809,18 +1809,18 @@ function ActivityHero({
                 >
                   <c.icon size={72} aria-hidden className="absolute -right-3 -bottom-4 text-white/10 rotate-12" />
                   <button type="button" onClick={c.onClick} className="relative flex w-full items-center gap-3 text-left">
-                    <span className="size-11 shrink-0 rounded-xl bg-white/20 flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
-                      <c.icon size={20} className="text-white" />
+                    <span className="size-10 shrink-0 rounded-xl bg-white/20 flex items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]">
+                      <c.icon size={18} className="text-white" />
                     </span>
                     <span className="flex-1 min-w-0">
-                      <span className="block text-base font-bold text-white leading-tight truncate">{c.label}</span>
+                      <span className="block text-base font-bold text-white leading-tight break-words">{c.label}</span>
                       <span className="block text-xs text-white/75 mt-0.5 tabular-nums">{c.sublabel}</span>
                     </span>
                     <span className={cn(
-                      'hidden sm:flex size-9 shrink-0 rounded-full bg-white items-center justify-center shadow-[0_3px_0_rgba(0,0,0,0.12)]',
+                      'hidden sm:flex size-6 shrink-0 rounded-full bg-white items-center justify-center shadow-[0_2px_0_rgba(0,0,0,0.12)]',
                       c.tone === 'violet' ? 'text-violet-500' : 'text-primary',
                     )}>
-                      <ArrowRight size={17} strokeWidth={2.6} />
+                      <ArrowRight size={13} strokeWidth={2.8} />
                     </span>
                   </button>
                   {c.progress != null && (
