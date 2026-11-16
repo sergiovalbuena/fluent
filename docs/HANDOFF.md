@@ -1,6 +1,6 @@
 # Fluent — estado del proyecto y plan (handoff)
 
-Última actualización: 2026-11-16 (deploy `a959ad9`, preparación de la beta; después hay trabajo en local sin commit, ver «Bloque en local»). Léelo al empezar una sesión nueva.
+Última actualización: 2026-11-16 (deploy `db30657`: racha en el servidor, tests y CI, pronunciación con Azure en fr, en y es). Léelo al empezar una sesión nueva.
 
 ## Contexto
 
@@ -154,12 +154,19 @@
 - **Eventos:** `trackEvent` en `src/lib/analytics.ts` (Vercel Web Analytics): `signup_started`, `onboarding_completed`, `activity_completed`, `minigame_completed`, `account_deleted`.
 - **Verificado:** Supabase está en el **plan gratuito** (sin copias de seguridad, se pausa tras 7 días sin uso, 1 GB de almacenamiento y el bucket `tts` ya ocupa 599 MB). No se pudo comprobar el SMTP de Auth ni el plan de Vercel.
 
-## Bloque en local: tests, CI, límites y racha en el servidor (2026-11-15, sin commit: espera a aplicar la migración)
+## Oraciones, un idioma por cuenta y pronunciación (2026-11-14 a 16, en producción)
+
+- **Oraciones (Sentences):** 600 por curso en fr, en y es (10 por lección, 5 preguntas, palabras de la lección en negrita), cargadas con `load-course.mts <lang> --only qa` y con audio pregenerado. Las negritas solo marcan palabras completas (`BoldParts` y el validador usan la misma regla).
+- **Un idioma por cuenta:** el curso elegido en el onboarding es el gratis; los demás quedan bloqueados hasta que se paguen (Stripe, pendiente). En la base: trigger `protect_course_unlock` (el cliente no puede tocar `is_unlocked` ni activar un curso bloqueado) y `choose_course(p_language, p_level)`, que acepta solo el primer curso o uno ya desbloqueado. El perfil ofrece «Cambiar mi nivel», sin cambiar de idioma. La cuenta del dueño (`src/lib/owner.ts`) tiene todos los cursos y lecciones.
+- **Pronunciación (Azure Pronunciation Assessment):** botón 🎤 y tarjeta «Pronunciación» en Mots y Phrases. El navegador graba WAV de 16 kHz (`src/lib/wav-recorder.ts`), `/api/pronunciation` lo manda a Azure y cuenta el intento (`use_speech_attempt`, 60 al día). Con 80 o más la palabra queda «dicha» (claves `say:word:` y `say:phrase:`). Con la pronunciación activa, escribir todo da 2 estrellas y decirlo todo bien da la 3.ª (marca `<actividad>:speak`). Variables: `AZURE_SPEECH_KEY` (Secret), `AZURE_SPEECH_ENDPOINT`, `NEXT_PUBLIC_SPEECH_LANGUAGES=fr,en,es`. Probado contra Azure con un audio (96/100 bien dicho, 54 con otra frase); **falta probarlo con micrófono real, sobre todo en móvil**.
+- **Audio:** la voz de respaldo del navegador ahora elige una voz del idioma (antes podía leer francés con la voz inglesa). Las instrucciones de OpenAI TTS nombran palabras que existen igual en inglés; los audios guardados no se regeneraron.
+
+## Tests, CI, límites y racha en el servidor (2026-11-16, en producción)
 
 - **Tests:** `npm test` (vitest, `tests/*.test.ts`, 29 pruebas de lógica pura: nivel de la bienvenida, corrección de respuestas, recompensas de gramática, estados de la ruta, enlaces de estudio y fechas). `npm run typecheck` = `tsc --noEmit`.
 - **CI:** `.github/workflows/ci.yml` ejecuta tipos, lint, tests y build en cada push a `main` y en cada PR. El build usa variables de Supabase de relleno. Sigue pendiente conectar el repo en Vercel (Settings → Git) para que el push despliegue.
 - **Límites:** pronunciación, 60 intentos por día (antes 150). MarIA ya no responde si falla el contador (`use_ai_message`).
-- **Racha en el servidor y por día local** (migración `20261115000003_server_streak.sql`, **probada en producción con rollback, sin aplicar todavía**; el código de este apartado no funciona sin ella):
+- **Racha en el servidor y por día local** (migración `20261115000003_server_streak.sql`, **aplicada el 2026-11-16**):
   - `record_activity(p_tz)` mueve la racha con el día local del usuario (zona horaria del navegador, guardada en `user_profiles.timezone`), gasta un protector si faltó exactamente un día y abona el bono de 3, 7 y 14 días (10, 20 y 50 XP). Devuelve `{ streak, new_day, frozen, milestone_xp }`. En el cliente: `recordActivity` en `src/lib/activity.ts`.
   - `add_xp` guarda el XP en el día local (misma firma).
   - Trigger `protect_streak`: el cliente ya no puede escribir `streak_count`, `longest_streak`, `last_activity_date` ni `last_streak_milestone`. `skills` sigue siendo escribible.
@@ -170,7 +177,7 @@
 
 **De la revisión de lanzamiento (2026-11-15).** Veredicto: beta cerrada con 15–30 personas, no lanzamiento público. Hoy hay 7 cuentas, 3 con actividad, y ningún usuario de fuera del círculo del dueño. Las acciones 1–9 de la revisión están en producción; esto es lo que queda, por orden:
 
-A. **Aplicar la migración de la racha y desplegar el bloque en local** (`supabase/migrations/20261115000003_server_streak.sql`). Pedir permiso al usuario antes de aplicarla. Después: commit de todo el bloque (tests, CI, límites, racha), push a `main` y `french-ready`, y deploy. No desplegar el código sin la migración: `record_activity` no existiría y la racha dejaría de moverse.
+A. ~~Aplicar la migración de la racha y desplegar el bloque en local~~ Hecho el 2026-11-16 (deploy `db30657`).
 B. **Decisión del usuario: lección 1 sin registro y bienvenida de 3 pasos** (idioma nativo, curso, nivel; el resto al perfil). Es lo que más pesa contra el riesgo principal (que nadie vuelva tras el primer día). Hoy hay que confirmar el correo y pasar hasta 8 pasos antes de la primera lección. Falta que el usuario diga qué pasos se quedan.
 C. **Guardar el progreso de las lecciones en una función de la base de datos.** `user_progress` sigue siendo escribible por el cliente (estrellas, nota, `completed_at`), así que se pueden desbloquear lecciones sin gastar gemas. Mismo patrón que `add_xp` y `record_activity`. Añadir también un tope diario a `add_xp` (hoy 200 XP por llamada, sin límite de llamadas) y pasar `skills` al servidor.
 D. **Monitorización de errores.** `@sentry/nextjs` está instalado y apagado. Crear el proyecto en Sentry y poner `NEXT_PUBLIC_SENTRY_DSN` en Vercel. Sin mapas de código por ahora (no se usa `withSentryConfig`).
@@ -215,7 +222,7 @@ R. **Validación con usuarios:** medir la retención del día 7 con 15–20 pers
 13. **Traducir las descripciones de lección a de, it, pt y ja.** `src/lib/lesson-titles.ts` solo tiene en, es y fr; con otro idioma nativo se muestra el inglés.
 
 **Más adelante**
-14. **Racha en el servidor:** hecha, falta aplicar la migración (punto A). `skills` sigue en el cliente (punto C).
+14. **Racha en el servidor:** hecha y en producción. `skills` sigue en el cliente (punto C).
 15. **Usar `user_languages.level`**, por ejemplo para desbloquear lecciones según el nivel. Hoy solo se guarda.
 
 **Opcional**
