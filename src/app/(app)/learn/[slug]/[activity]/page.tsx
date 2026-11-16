@@ -23,7 +23,7 @@ import { cn } from '@/lib/utils'
 import { localizeQuestion, pickTranslation, speak, splitArticle, type RawQuestion, type SpeechHandle } from '@/lib/languages'
 import { useActiveLanguage } from '@/components/providers/language-provider'
 import { useLocale, useTranslations } from 'next-intl'
-import { addXp, awardGems, getActiveBoosts } from '@/lib/rewards'
+import { addXp, getActiveBoosts } from '@/lib/rewards'
 import { recordActivity } from '@/lib/activity'
 import { ResultScreen } from '@/components/lesson/result-screen'
 import { SpeakModal } from '@/components/lesson/speak-modal'
@@ -2159,46 +2159,25 @@ export default function LessonPage() {
       return { stars: fallbackStars, gems: calcGems(score, false), isFirstCompletion: true }
     }
 
-    const { data: existing } = await supabase
-      .from('user_progress')
-      .select('attempts, stars, best_score, activities_completed, completed_at')
-      .eq('user_id', user.id)
-      .eq('lesson_id', lessonId)
-      .maybeSingle()
-
-    const isRepeat          = (existing?.attempts ?? 0) > 0
-    const isFirstCompletion = !existing?.completed_at
-    const prevActivities    = existing?.activities_completed ?? []
-    const updatedActivities = [...new Set([...prevActivities, ...(opts.markers ?? [activity])])]
-
-    const newStars  = opts.stars ?? calcStars(score)
-    // Gems are credited by the database, which applies the 2× gems boost and daily cap
-    const newGems  = await awardGems(supabase, calcGems(score, isRepeat), 'lesson_activity', lessonId)
-    const finalStars = Math.max(newStars, existing?.stars ?? 0) as 1 | 2 | 3
-
-    const { error: upsertError } = await supabase.from('user_progress').upsert({
-      user_id: user.id,
-      lesson_id: lessonId,
-      module_id: moduleId,
-      completed_at: new Date().toISOString(),
-      score,
-      best_score: Math.max(score, existing?.best_score ?? 0),
-      stars: finalStars,
-      gems_earned: newGems,
-      activities_completed: updatedActivities,
-      attempts: (existing?.attempts ?? 0) + 1,
-      updated_at: new Date().toISOString(),
-    }, { onConflict: 'user_id,lesson_id' })
-
-    if (upsertError) {
-      console.error('[saveProgress] upsert failed:', upsertError)
-      toast.error('Could not save progress — ' + upsertError.message)
+    // The database checks the lesson is open, computes the stars and credits the gems
+    // (+1 repeat, +2 perfect) and today's lesson count: see save_activity_progress
+    const { data, error } = await supabase.rpc('save_activity_progress', {
+      p_lesson: lessonId,
+      p_score: score,
+      p_stars: opts.stars ?? null,
+      p_markers: opts.markers ?? null,
+    })
+    if (error || !data) {
+      console.error('[saveProgress] failed:', error?.message)
+      toast.error('Could not save progress' + (error ? ' — ' + error.message : ''))
+      return { stars: fallbackStars, gems: 0, isFirstCompletion: false }
     }
+    const saved = data as { stars: number; gems: number; first_completion: boolean }
+    const finalStars = Math.min(3, Math.max(1, saved.stars)) as 1 | 2 | 3
+    const newGems = saved.gems
+    const isFirstCompletion = saved.first_completion
 
-    if (!upsertError) trackEvent('activity_completed', { course: languageCode, activity, first: isFirstCompletion })
-
-    // Record session — any activity completion counts (atomic, see add_xp)
-    await addXp(supabase, 0, 1)
+    trackEvent('activity_completed', { course: languageCode, activity, first: isFirstCompletion })
 
     return { stars: finalStars, gems: newGems, isFirstCompletion }
   }

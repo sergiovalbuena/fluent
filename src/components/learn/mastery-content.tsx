@@ -21,7 +21,8 @@ interface Props {
   allThreeStars: boolean
   hasCrown: boolean
   userId: string | null
-  lessonIds: string[]
+  /** The module (unit) the crown is for */
+  moduleId: string
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -35,7 +36,7 @@ function buildOptions(items: QuizItem[], correct: string): string[] {
 
 type Phase = 'locked' | 'crowned' | 'intro' | 'quiz' | 'result'
 
-export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeStars, hasCrown, userId, lessonIds }: Props) {
+export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeStars, hasCrown, userId, moduleId }: Props) {
   const [phase, setPhase] = useState<Phase>(hasCrown ? 'crowned' : allThreeStars ? 'intro' : 'locked')
   const [current, setCurrent] = useState(0)
   const [selected, setSelected] = useState<string | null>(null)
@@ -50,26 +51,17 @@ export function MasteryContent({ moduleTitle, moduleIcon, quizItems, allThreeSta
   const totalQ = questions.length
 
   async function awardCrown() {
-    if (!userId || lessonIds.length === 0) return
+    if (!userId || !moduleId) return
     const supabase = createClient()
-    // Mark all lessons with has_crown = true
-    await supabase
-      .from('user_progress')
-      .upsert(
-        lessonIds.map(id => ({ user_id: userId, lesson_id: id, has_crown: true })),
-        { onConflict: 'user_id,lesson_id' }
-      )
-    // Increment user crown count
-    const { data: profile } = await supabase
-      .from('user_profiles')
-      .select('total_crowns')
-      .eq('user_id', userId)
-      .maybeSingle()
-    await supabase
-      .from('user_profiles')
-      .update({ total_crowns: (profile?.total_crowns ?? 0) + 1 })
-      .eq('user_id', userId)
-    window.dispatchEvent(new CustomEvent('gems-earned', { detail: { amount: 20, reason: `Crown earned: ${moduleTitle}! 👑` } }))
+    // The database checks every lesson has 3 stars, marks the crown and counts it once
+    const { data: awarded, error } = await supabase.rpc('award_crown', { p_module: moduleId })
+    if (error) {
+      console.error('[awardCrown] failed:', error.message)
+      return
+    }
+    if (awarded === true) {
+      window.dispatchEvent(new CustomEvent('gems-earned', { detail: { amount: 20, reason: `Crown earned: ${moduleTitle}! 👑` } }))
+    }
     setCrownEarned(true)
   }
 

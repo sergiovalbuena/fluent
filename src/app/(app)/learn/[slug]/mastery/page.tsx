@@ -108,7 +108,7 @@ export default async function MasteryPage({ params }: PageProps) {
             allThreeStars={allThreeStars}
             hasCrown={hasCrown}
             userId={user?.id ?? null}
-            lessonIds={lessonIds}
+            moduleId={module.id}
           />
         </div>
       </main>
