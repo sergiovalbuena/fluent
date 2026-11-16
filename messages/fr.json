@@ -308,7 +308,16 @@
     "title_hints_off": "Désactivé",
     "title_hints_until": "Jusqu'à la leçon {n}",
     "change_course": "Changer mon niveau",
-    "change_course_desc": "Mesure à nouveau ton niveau dans ton cours"
+    "change_course_desc": "Mesure à nouveau ton niveau dans ton cours",
+    "delete_account": "Supprimer mon compte",
+    "delete_account_title": "Supprimer votre compte ?",
+    "delete_account_desc": "Votre profil, vos progrès, votre série, vos gemmes, vos liens enregistrés et vos messages sont supprimés définitivement. Cette action est irréversible.",
+    "delete_account_type": "Écrivez {word} pour confirmer.",
+    "delete_account_word": "supprimer",
+    "delete_account_cancel": "Annuler",
+    "delete_account_confirm": "Supprimer le compte",
+    "delete_account_deleting": "Suppression…",
+    "delete_account_error": "Impossible de supprimer votre compte. Réessayez."
   },
   "progress": {
     "title": "Progrès",
@@ -385,7 +394,9 @@
     "view_all": "Voir tout",
     "five_min": "5 min",
     "two_min": "2 min",
-    "three_songs": "3 chansons"
+    "three_songs": "3 chansons",
+    "error_desc": "Vos progrès sont enregistrés. Réessayez dans un instant.",
+    "back_home": "Retour à l'accueil"
   },
   "onboarding": {
     "native_title": "Quelle est ta langue maternelle ?",

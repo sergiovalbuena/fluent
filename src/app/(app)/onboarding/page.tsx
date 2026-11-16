@@ -9,10 +9,11 @@ import { toast } from 'sonner'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowLeft, Check, ChevronRight, Lock } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { getLanguage } from '@/lib/languages'
+import { COURSE_LANGUAGES, getLanguage } from '@/lib/languages'
 import { SELF_LEVELS, estimateLevel, placementWords, type Cefr, type SelfLevel } from '@/lib/placement'
 import { getAuthUser } from '@/lib/supabase/auth'
 import { isOwner } from '@/lib/owner'
+import { trackEvent } from '@/lib/analytics'
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
@@ -24,7 +25,7 @@ const UI_LOCALES = ['en', 'es', 'fr', 'pt', 'de', 'it', 'ja']
 /** Languages lesson content can be translated into (same list as the profile setting) */
 const TRANSLATION_LANGUAGES = ['es', 'en', 'pt', 'fr', 'de', 'it']
 
-const LEARNING_LANGUAGES = ['en', 'es', 'fr', 'de', 'pt', 'it', 'ja']
+const LEARNING_LANGUAGES = ['en', 'es', 'fr'].filter(code => COURSE_LANGUAGES.includes(code))
 
 const MOTIVATIONS = [
   { code: 'travel',  icon: '✈️', highlight: true },
@@ -328,6 +329,7 @@ export default function OnboardingPage({ searchParams }: { searchParams: Promise
 
     if (langError) { toast.error(t('save_error')); setSaving(false); return }
 
+    trackEvent('onboarding_completed', { course: learningLanguage, level: estimatedLevel ?? 'unknown' })
     if (storageKey) localStorage.removeItem(storageKey)
     toast.success(t('done'))
     router.push('/learn')

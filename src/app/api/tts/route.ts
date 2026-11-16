@@ -10,6 +10,11 @@ import {
 export const dynamic = 'force-dynamic'
 
 const BUCKET = 'tts'
+/**
+ * New clips per user and UTC day. The course audio is pregenerated, so a learner
+ * only generates what the script doesn't cover (answers, verb forms, grammar).
+ */
+const DAILY_LIMIT = 80
 
 function publicUrl(path: string) {
   return `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${path}`
@@ -37,6 +42,16 @@ export async function GET(req: NextRequest) {
 
   const apiKey = process.env.OPENAI_API_KEY
   if (!apiKey) return NextResponse.json({ error: 'not_configured' }, { status: 503 })
+
+  // Counted before calling OpenAI. If the counter fails, refuse: the caller falls
+  // back to the browser's voice, and one account can't run up the bill or fill the
+  // public cache with arbitrary text.
+  const { data: left, error: usageError } = await supabase.rpc('use_tts_generation', { p_limit: DAILY_LIMIT })
+  if (usageError) {
+    console.error('[tts] use_tts_generation failed:', usageError.message)
+    return NextResponse.json({ error: 'failed' }, { status: 503 })
+  }
+  if (left === -1) return NextResponse.json({ error: 'limit' }, { status: 429 })
 
   let audio: ArrayBuffer
   try {

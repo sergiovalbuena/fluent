@@ -142,6 +142,18 @@
   - Registro: después de crear la cuenta, pantalla «Revisa tu correo» con el email, consejo de spam, «Reenviar» (`auth.resend`, espera de 60 s) y «¿Correo equivocado?». Si el correo ya tiene cuenta (Supabase responde sin error y sin identidades) lo dice; si la confirmación por email está desactivada, va directo a `/onboarding`.
 - Lint: 0 errores.
 
+## Preparación de la beta (2026-11-15)
+
+- **Dependencias:** `next` 16.4.6 (la 16.1.7 tenía un aviso crítico) y `npm audit fix`. Quedan 6 avisos bajos o moderados, todos de `shadcn`. `eslint-config-next` y `eslint-plugin-react-hooks` se quedan fijos en 16.1.7 y 7.0.1: las versiones nuevas marcan 7 errores en código existente (reproductor de lecciones, monkeytype, language-switcher) que aún no se han corregido.
+- **Límite de voz con IA:** `/api/tts` cuenta cada audio nuevo con `use_tts_generation` (80 por usuario y día, `DAILY_LIMIT`; los audios ya guardados no cuentan). Si el contador falla, no genera y suena la voz del navegador. Migración `20261115000001_tts_usage.sql`, aplicada en producción.
+- **Contacto:** una sola dirección, `NEXT_PUBLIC_CONTACT_EMAIL` (`src/lib/contact.ts`). Sin ella, los textos legales remiten al Centro de ayuda y no se muestra ningún correo. Ya no aparece `@fluent.app` en ningún sitio.
+- **Eliminar cuenta:** Perfil → «Eliminar mi cuenta» (`deleteAccount` en `src/app/(app)/actions.ts`, botón en `src/components/profile/delete-account-button.tsx`). Sale del grupo de estudio y borra el usuario de Auth; todas las tablas de usuario borran en cascada. No probado con una cuenta real.
+- **Legales en español e inglés:** textos en `src/lib/legal/content.ts`, idioma en `src/lib/legal/locale.ts` (app en español → español; sin sesión, cookie del sitio o navegador). Añadidos Azure (voz), estadísticas de Vercel, Sentry, grupos de estudio y el borrado desde el perfil.
+- **Cursos:** `COURSE_LANGUAGES` = es, fr, en. Los cursos demo (pt, de, it, ja) ya no se ofrecen en la bienvenida. En la base de datos tienen `is_available = false` (migración `20261115000002_hide_demo_courses.sql`, aplicada).
+- **Errores y carga:** `src/app/(app)/error.tsx`, `src/app/(app)/loading.tsx` y `src/app/global-error.tsx`. Sentry (`@sentry/nextjs`, `src/instrumentation*.ts`) está apagado hasta definir `NEXT_PUBLIC_SENTRY_DSN`; solo errores, sin trazas ni mapas de código.
+- **Eventos:** `trackEvent` en `src/lib/analytics.ts` (Vercel Web Analytics): `signup_started`, `onboarding_completed`, `activity_completed`, `minigame_completed`, `account_deleted`.
+- **Verificado:** Supabase está en el **plan gratuito** (sin copias de seguridad, se pausa tras 7 días sin uso, 1 GB de almacenamiento y el bucket `tts` ya ocupa 599 MB). No se pudo comprobar el SMTP de Auth ni el plan de Vercel.
+
 ## Pendiente (en orden sugerido)
 
 **Probar (solo requiere que el usuario lo use; la extensión de Chrome no estuvo conectada)**
@@ -163,7 +175,7 @@
 
 **Configuración y producción**
 10. **Conectar el repo de GitHub en Vercel** (Settings → Git) para que los push desplieguen solos. Funciona en el plan gratuito.
-11. **Email de contacto legal.** `LEGAL_CONTACT` en `src/components/legal/legal-document.tsx` es `privacy@fluent.app`, que no es un buzón real. Cambiarlo antes de abrir la app al público. Se quitó la dirección postal inventada que había en la política de privacidad.
+11. **Email de contacto.** Definir `NEXT_PUBLIC_CONTACT_EMAIL` en Vercel con un buzón real (ver «Preparación de la beta»).
 
 **Contenido**
 12. Revisión del francés (`content/fr/REVIEW.md`, dejada para el final): variante del español, listas de vocabulario largas, «Pensée du jour» y cómo presentar los módulos reemplazados.

@@ -5,6 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 import { LANGUAGES } from '@/lib/languages'
 import { getAuthUser } from '@/lib/supabase/auth'
 import { isOwner } from '@/lib/owner'
+import { createAdminClient } from '@/lib/supabase/admin'
 
 export async function setActiveLanguage(code: string) {
   if (!LANGUAGES.some(l => l.code === code)) throw new Error('Unknown language')
@@ -39,6 +40,32 @@ export async function setActiveLanguage(code: string) {
   if (error) throw new Error(error.message)
 
   revalidatePath('/', 'layout')
+}
+
+/**
+ * Deletes the signed-in user's account and everything tied to it. Every user
+ * table references auth.users with ON DELETE CASCADE, so removing the auth user
+ * removes the profile, progress, gems, saved links, AI usage and group
+ * membership. Irreversible.
+ */
+export async function deleteAccount(): Promise<{ ok: true } | { ok: false }> {
+  const supabase = await createClient()
+  // getUser() asks Supabase Auth (not just the token): this must be a live session
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) return { ok: false }
+
+  // Leaving first hands a study group over to its next member; the cascade alone
+  // would delete a group the user created, for everyone in it
+  await supabase.rpc('leave_study_group')
+
+  const { error } = await createAdminClient().auth.admin.deleteUser(user.id)
+  if (error) {
+    console.error('[deleteAccount] failed:', error.message)
+    return { ok: false }
+  }
+
+  await supabase.auth.signOut()
+  return { ok: true }
 }
 
 export async function setTranslationLanguage(code: string) {

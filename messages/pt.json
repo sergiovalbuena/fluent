@@ -308,7 +308,16 @@
     "title_hints_off": "Desativado",
     "title_hints_until": "Até a lição {n}",
     "change_course": "Mudar meu nível",
-    "change_course_desc": "Meça de novo seu nível no seu curso"
+    "change_course_desc": "Meça de novo seu nível no seu curso",
+    "delete_account": "Excluir minha conta",
+    "delete_account_title": "Excluir sua conta?",
+    "delete_account_desc": "Seu perfil, progresso, sequência, gemas, links salvos e mensagens são excluídos para sempre. Não é possível desfazer.",
+    "delete_account_type": "Digite {word} para confirmar.",
+    "delete_account_word": "excluir",
+    "delete_account_cancel": "Cancelar",
+    "delete_account_confirm": "Excluir conta",
+    "delete_account_deleting": "Excluindo…",
+    "delete_account_error": "Não foi possível excluir sua conta. Tente de novo."
   },
   "progress": {
     "title": "Progresso",
@@ -385,7 +394,9 @@
     "view_all": "Ver tudo",
     "five_min": "5 min",
     "two_min": "2 min",
-    "three_songs": "3 músicas"
+    "three_songs": "3 músicas",
+    "error_desc": "Seu progresso está salvo. Tente de novo em instantes.",
+    "back_home": "Voltar ao início"
   },
   "onboarding": {
     "native_title": "Qual é a sua língua materna?",

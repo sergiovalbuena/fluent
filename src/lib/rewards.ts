@@ -1,6 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
 import { recordActivity } from '@/lib/activity'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { trackEvent } from '@/lib/analytics'
 
 // Gems are credited by the database (award_gems): it applies the 2× gems boost,
 // caps each award and the daily total, and records the transaction. XP is computed
@@ -83,6 +84,8 @@ export async function awardMinigame(
   const { data: { user } } = await getAuthUser(supabase)
   if (!user) return NO_REWARDS
   const pct = Math.round((Math.min(correct, total) / total) * 100)
+  // Games without a ref are named after their page (/mini-games/<game>)
+  trackEvent('minigame_completed', { game: ref ?? window.location.pathname.split('/').filter(Boolean).pop() ?? 'unknown' })
   return addRewards(supabase, user.id, { xp: minigameXp(pct), gems: MINIGAME_GEMS, reason: 'minigame', ref })
 }
 

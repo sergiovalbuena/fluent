@@ -308,7 +308,16 @@
     "title_hints_off": "Aus",
     "title_hints_until": "Bis Lektion {n}",
     "change_course": "Mein Niveau ändern",
-    "change_course_desc": "Miss dein Niveau in deinem Kurs neu"
+    "change_course_desc": "Miss dein Niveau in deinem Kurs neu",
+    "delete_account": "Mein Konto löschen",
+    "delete_account_title": "Konto löschen?",
+    "delete_account_desc": "Dein Profil, dein Fortschritt, deine Serie, deine Edelsteine, gespeicherten Links und Nachrichten werden endgültig gelöscht. Das lässt sich nicht rückgängig machen.",
+    "delete_account_type": "Gib zur Bestätigung {word} ein.",
+    "delete_account_word": "löschen",
+    "delete_account_cancel": "Abbrechen",
+    "delete_account_confirm": "Konto löschen",
+    "delete_account_deleting": "Wird gelöscht…",
+    "delete_account_error": "Dein Konto konnte nicht gelöscht werden. Versuch es noch einmal."
   },
   "progress": {
     "title": "Fortschritt",
@@ -385,7 +394,9 @@
     "view_all": "Alle ansehen",
     "five_min": "5 Min",
     "two_min": "2 Min",
-    "three_songs": "3 Songs"
+    "three_songs": "3 Songs",
+    "error_desc": "Dein Fortschritt ist gespeichert. Versuch es gleich noch einmal.",
+    "back_home": "Zur Startseite"
   },
   "onboarding": {
     "native_title": "Was ist deine Muttersprache?",

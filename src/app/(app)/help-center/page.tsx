@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDown, ChevronLeft, Mail, MessageCircle } from 'lucide-react'
+import { ChevronDown, ChevronLeft, Mail } from 'lucide-react'
 import Link from 'next/link'
+import { CONTACT_EMAIL } from '@/lib/contact'
 
 const faqs = [
   {
@@ -15,11 +16,11 @@ const faqs = [
       },
       {
         q: 'What languages are available?',
-        a: 'Currently Spanish, French, Portuguese, Italian, German, and Japanese. More are on the way — check back soon!',
+        a: 'French, English and Spanish: 60 lessons each. More are on the way.',
       },
       {
         q: 'Do I need to create an account?',
-        a: "You can explore freely without an account. Signing in lets us sync your streak, XP, and progress across devices so you never lose your place.",
+        a: 'Yes. Your account keeps your streak, XP and progress in sync on every device. You can delete it at any time from your profile.',
       },
     ],
   },
@@ -136,39 +137,29 @@ export default function HelpCenterPage() {
             </section>
           ))}
 
-          {/* Contact */}
-          <section>
-            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">Still need help?</h3>
-            <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 divide-y divide-primary/5 overflow-hidden">
-              <a
-                href="mailto:support@fluent.app"
-                className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors"
-              >
-                <div className="size-9 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Mail size={16} className="text-primary" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm font-medium">Email Support</p>
-                  <p className="text-xs text-muted-foreground">support@fluent.app</p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors"
-              >
-                <div className="size-9 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <MessageCircle size={16} className="text-primary" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm font-medium">Community Forum</p>
-                  <p className="text-xs text-muted-foreground">Join other learners</p>
-                </div>
-              </a>
-            </div>
-          </section>
+          {/* Contact: only when there is a mailbox that is really read (NEXT_PUBLIC_CONTACT_EMAIL) */}
+          {CONTACT_EMAIL && (
+            <section>
+              <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 px-1">Still need help?</h3>
+              <div className="bg-white dark:bg-slate-800/50 rounded-2xl border border-primary/5 overflow-hidden">
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="flex items-center gap-3 px-4 py-3.5 hover:bg-primary/5 transition-colors"
+                >
+                  <div className="size-9 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail size={16} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium">Email Support</p>
+                    <p className="text-xs text-muted-foreground">{CONTACT_EMAIL}</p>
+                  </div>
+                </a>
+              </div>
+            </section>
+          )}
 
           <p className="text-center text-xs text-muted-foreground pb-4">
-            Fluent v1.0.0 · We typically respond within 24 hours
+            Fluent v1.0.0
           </p>
         </div>
       </main>

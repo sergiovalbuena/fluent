@@ -2,12 +2,15 @@ import Link from 'next/link'
 import { ChevronLeft } from 'lucide-react'
 import { createClient } from '@/lib/supabase/server'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { LEGAL_UI } from '@/lib/legal/content'
+import { legalLocale } from '@/lib/legal/locale'
 
 // Public legal pages (privacy, terms): no app sidebar, readable signed in or out
 export default async function LegalLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
   const { data: { user } } = await getAuthUser(supabase)
-  const back = user ? { href: '/profile', label: 'Back to profile' } : { href: '/', label: 'Back to home' }
+  const ui = LEGAL_UI[await legalLocale()]
+  const back = user ? { href: '/profile', label: ui.backToProfile } : { href: '/', label: ui.backToHome }
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8f6f5] dark:bg-[#1b2030]">

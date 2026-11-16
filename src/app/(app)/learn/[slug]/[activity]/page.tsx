@@ -32,6 +32,7 @@ import { HINT_AREA, SectionTitle, TitleHintProvider } from '@/components/lesson/
 import type { SectionTitleKey } from '@/lib/section-titles'
 import { useTitleHintSettings } from '@/lib/title-hints'
 import { getAuthUser } from '@/lib/supabase/auth'
+import { trackEvent } from '@/lib/analytics'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -2210,6 +2211,8 @@ export default function LessonPage() {
       console.error('[saveProgress] upsert failed:', upsertError)
       toast.error('Could not save progress — ' + upsertError.message)
     }
+
+    if (!upsertError) trackEvent('activity_completed', { course: languageCode, activity, first: isFirstCompletion })
 
     // Record session — any activity completion counts (atomic, see add_xp)
     await addXp(supabase, 0, 1)

@@ -308,7 +308,16 @@
     "title_hints_off": "オフ",
     "title_hints_until": "レッスン{n}まで",
     "change_course": "レベルを変更",
-    "change_course_desc": "コースのレベルをもう一度測定します"
+    "change_course_desc": "コースのレベルをもう一度測定します",
+    "delete_account": "アカウントを削除",
+    "delete_account_title": "アカウントを削除しますか？",
+    "delete_account_desc": "プロフィール、学習の進み具合、連続記録、ジェム、保存したリンク、メッセージがすべて完全に削除されます。元に戻すことはできません。",
+    "delete_account_type": "確認のため「{word}」と入力してください。",
+    "delete_account_word": "削除",
+    "delete_account_cancel": "キャンセル",
+    "delete_account_confirm": "アカウントを削除",
+    "delete_account_deleting": "削除中…",
+    "delete_account_error": "アカウントを削除できませんでした。もう一度お試しください。"
   },
   "progress": {
     "title": "進捗",
@@ -385,7 +394,9 @@
     "view_all": "すべて見る",
     "five_min": "5分",
     "two_min": "2分",
-    "three_songs": "3曲"
+    "three_songs": "3曲",
+    "error_desc": "学習の記録は保存されています。少ししてからもう一度お試しください。",
+    "back_home": "ホームに戻る"
   },
   "onboarding": {
     "native_title": "あなたの母語は何ですか？",

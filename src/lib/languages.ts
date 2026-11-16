@@ -21,8 +21,11 @@ export const LANGUAGES: LanguageInfo[] = [
 
 export const DEFAULT_LANGUAGE = 'es'
 
-/** Languages that currently have published course content */
-export const COURSE_LANGUAGES = ['es', 'fr', 'en', 'pt', 'de', 'it', 'ja']
+/**
+ * Languages with a complete course (60 lessons). Portuguese, German, Italian and
+ * Japanese only have the 10 lessons of the old demo, so they aren't offered.
+ */
+export const COURSE_LANGUAGES = ['es', 'fr', 'en']
 
 export function getLanguage(code: string): LanguageInfo {
   return (

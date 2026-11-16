@@ -308,7 +308,16 @@
     "title_hints_off": "Desactivado",
     "title_hints_until": "Hasta la lección {n}",
     "change_course": "Cambiar mi nivel",
-    "change_course_desc": "Vuelve a medir tu nivel en tu curso"
+    "change_course_desc": "Vuelve a medir tu nivel en tu curso",
+    "delete_account": "Eliminar mi cuenta",
+    "delete_account_title": "¿Eliminar tu cuenta?",
+    "delete_account_desc": "Tu perfil, progreso, racha, gemas, enlaces guardados y mensajes se eliminan para siempre. No se puede deshacer.",
+    "delete_account_type": "Escribe {word} para confirmar.",
+    "delete_account_word": "eliminar",
+    "delete_account_cancel": "Cancelar",
+    "delete_account_confirm": "Eliminar cuenta",
+    "delete_account_deleting": "Eliminando…",
+    "delete_account_error": "No pudimos eliminar tu cuenta. Inténtalo de nuevo."
   },
   "progress": {
     "title": "Progreso",
@@ -385,7 +394,9 @@
     "view_all": "Ver todo",
     "five_min": "5 min",
     "two_min": "2 min",
-    "three_songs": "3 canciones"
+    "three_songs": "3 canciones",
+    "error_desc": "Tu progreso está guardado. Inténtalo de nuevo en un momento.",
+    "back_home": "Volver al inicio"
   },
   "onboarding": {
     "native_title": "¿Cuál es tu idioma nativo?",

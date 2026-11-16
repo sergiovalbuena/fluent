@@ -308,7 +308,16 @@
     "title_hints_off": "Off",
     "title_hints_until": "Until lesson {n}",
     "change_course": "Change my level",
-    "change_course_desc": "Measure your level in your course again"
+    "change_course_desc": "Measure your level in your course again",
+    "delete_account": "Delete my account",
+    "delete_account_title": "Delete your account?",
+    "delete_account_desc": "Your profile, progress, streak, gems, saved links and messages are deleted for good. This cannot be undone.",
+    "delete_account_type": "Type {word} to confirm.",
+    "delete_account_word": "delete",
+    "delete_account_cancel": "Cancel",
+    "delete_account_confirm": "Delete account",
+    "delete_account_deleting": "Deleting…",
+    "delete_account_error": "We could not delete your account. Try again."
   },
   "progress": {
     "title": "Progress",
@@ -385,7 +394,9 @@
     "view_all": "View all",
     "five_min": "5 min",
     "two_min": "2 min",
-    "three_songs": "3 songs"
+    "three_songs": "3 songs",
+    "error_desc": "Your progress is saved. Try again in a moment.",
+    "back_home": "Back to home"
   },
   "onboarding": {
     "native_title": "What's your native language?",

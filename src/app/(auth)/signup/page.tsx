@@ -12,6 +12,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { GoogleButton, OrDivider, bold, useAuthError } from '@/components/auth/auth-parts'
 import { toast } from 'sonner'
+import { trackEvent } from '@/lib/analytics'
 
 /** Seconds before the confirmation email can be sent again */
 const RESEND_COOLDOWN = 60
@@ -41,6 +42,7 @@ export default function SignupPage() {
   async function handleSignup(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
+    trackEvent('signup_started', { method: 'email' })
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -81,6 +83,7 @@ export default function SignupPage() {
   }
 
   async function handleGoogleLogin() {
+    trackEvent('signup_started', { method: 'google' })
     await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: { redirectTo: `${window.location.origin}/auth/callback` },
