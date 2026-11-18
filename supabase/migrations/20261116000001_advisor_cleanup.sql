@@ -2,8 +2,7 @@
 --
 -- 1. RLS policies called auth.uid() once per row; wrapped in a sub-select it is
 --    evaluated once per query (same rule, faster on big tables).
--- 2. Duplicate unique constraints on user_activity and user_progress, and two plain
---    indexes already covered by them.
+-- 2. (The duplicate indexes are dropped separately: 20261116000003_drop_duplicate_indexes.sql)
 -- 3. Indexes for foreign keys without one.
 -- 4. update_updated_at gets a fixed search_path; the handle_new_user trigger
 --    function can't be called through the API.
@@ -38,11 +37,6 @@ alter policy user_progress_update_own on public.user_progress using ((select aut
 alter policy user_unlocked_modules_select_own on public.user_unlocked_modules using ((select auth.uid()) = user_id);
 alter policy vocab_mastery_insert on public.user_vocab_mastery with check ((select auth.uid()) = user_id);
 alter policy vocab_mastery_select on public.user_vocab_mastery using ((select auth.uid()) = user_id);
-
-alter table public.user_activity drop constraint if exists user_activity_user_date_unique;
-alter table public.user_progress drop constraint if exists user_progress_user_lesson_unique;
-drop index if exists public.idx_user_activity_user_date;
-drop index if exists public.idx_user_progress_user_id;
 
 create index if not exists saved_items_source_lesson_id_idx on public.saved_items (source_lesson_id);
 create index if not exists study_groups_created_by_idx on public.study_groups (created_by);
